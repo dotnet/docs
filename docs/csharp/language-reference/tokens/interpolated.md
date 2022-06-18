@@ -2,10 +2,10 @@
 title: "$ - string interpolation - C# reference"
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
 ms.date: 04/15/2022
-f1_keywords: 
+f1_keywords:
   - "$_CSharpKeyword"
   - "$"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "$ special character [C#]"
   - "string interpolation [C#]"
   - "interpolated string [C#]"
@@ -129,6 +129,7 @@ For more information, see the [Interpolated strings](~/_csharpstandard/standard/
 
 ## See also
 
+- [Simplify interpolation (style rule IDE0071)](../../../fundamentals/code-analysis/style-rules/ide0071.md)
 - [C# reference](../index.md)
 - [C# special characters](index.md)
 - [Strings](../../programming-guide/strings/index.md)

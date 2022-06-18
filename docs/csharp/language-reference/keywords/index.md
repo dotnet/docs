@@ -134,12 +134,12 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [let](let-clause.md)  
         [managed (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [nameof](../operators/nameof.md)  
-        [nint](../builtin-types/nint-nuint.md)  
+        [nint](../builtin-types/integral-numeric-types.md)  
         [not](../operators/patterns.md#logical-patterns)  
     :::column-end:::
     :::column:::
         [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)  
-        [nuint](../builtin-types/nint-nuint.md)  
+        [nuint](../builtin-types/integral-numeric-types.md)  
         [on](on.md)  
         [or](../operators/patterns.md#logical-patterns)  
         [orderby](orderby-clause.md)  

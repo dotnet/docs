@@ -149,13 +149,13 @@ The command pushes an existing package. It doesn't create a package. To create a
   ```dotnetcli
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
-- In the example below pushing nupkgs to Azure DevOps Artifacts from dev box, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely, in order to authentication to work you need to install [cred provider](https://github.com/microsoft/artifacts-credprovider). Below command trigger open Cred Provider window if authentication is necessary, it's suitable for pushing from dev box, but not for CI.
+- In the example below pushing "Foo" version "5.0.2" to Azure DevOps Artifacts from dev box, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely, in order to authentication to work you need to install [cred provider](https://github.com/microsoft/artifacts-credprovider). Below command trigger open Cred Provider window if authentication is necessary, it's suitable for pushing from dev box, but not for CI.
 
   ```dotnetcli
-  dotnet nuget push *.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
+  dotnet nuget push Foo.5.0.2.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
   ```
   
-- In the example below pushing nupkg to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.
+- In the example belowg "Foo" version "1.1.5" nupkg to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.
 
   ```bashcli
     - task: NuGetAuthenticate@1
@@ -163,9 +163,9 @@ The command pushes an existing package. It doesn't create a package. To create a
         nuGetServiceConnections: MyServiceConnection_ExternalServer
         
     - bash: |
-        dotnet build src/src.csproj -c Release
-        dotnet pack src/src.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
-        dotnet nuget push nupkgs/src.1.1.5.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
+        dotnet build foo/foo.csproj -c Release
+        dotnet pack foo/foo.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
+        dotnet nuget push nupkgs/foo.1.1.5.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
       displayName: "Pack and push"          
   ```
 

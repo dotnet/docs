@@ -2,9 +2,9 @@
 title: "Assignment operators - C# reference"
 description: "Learn about various C# assignment operators."
 ms.date: 09/10/2019
-f1_keywords: 
+f1_keywords:
   - "=_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "= operator [C#]"
 ms.assetid: d802a6d5-32f0-42b8-b180-12f5a081bfc1
 ---
@@ -72,6 +72,7 @@ For more information about the ref assignment operator `= ref`, see the [feature
 
 ## See also
 
+- [Use compound assignment (style rules IDE0054 and IDE0074)](../../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [ref keyword](../keywords/ref.md)

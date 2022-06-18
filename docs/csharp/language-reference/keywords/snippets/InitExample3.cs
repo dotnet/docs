@@ -1,4 +1,4 @@
-class InitExampleExpressionBodied
+class Person_InitExampleExpressionBodied
 {
     private double _yearOfBirth;
 

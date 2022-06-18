@@ -1,10 +1,10 @@
 class InitExampleExpressionBodied
 {
-    private double _seconds;
+    private double _yearOfBirth;
 
-    public double Seconds
+    public double YearOfBirth
     {
-        get => _seconds;
-        init => _seconds = value;
+        get => _yearOfBirth;
+        init => _yearOfBirth = value;
     }
 }

@@ -22,9 +22,11 @@ Programmers should throw exceptions when one or more of the following conditions
 
   :::code language="csharp" source="snippets/exceptions/ProgramLog.cs" ID="ProgramLog":::
 
-- When an argument to a method causes an exception. In this case, the original exception should be caught and an <xref:System.ArgumentException> instance should be created. The original exception should be passed to the constructor of the <xref:System.ArgumentException> as the <xref:System.Exception.InnerException%2A> parameter:
+- When an argument to a method causes an exception. In this case, the original exception should be caught and an <xref:System.ArgumentException> instance should be created. The original exception should be passed to the constructor of the <xref:System.ArgumentException> as the <xref:System.Exception.InnerException%2A> parameter.
 
   :::code language="csharp" source="snippets/exceptions/Program.cs" ID="InvalidArg":::
+  
+[!NOTE]The example above is for illustrative purpose, it's usually more desirable to check if an index is not out of range the normal way, without rellying on exceptions. Exceptions should be reserved for exceptional program conditions.
 
 Exceptions contain a property named <xref:System.Exception.StackTrace%2A>. This string contains the name of the methods on the current call stack, together with the file name and line number where the exception was thrown for each method. A <xref:System.Exception.StackTrace%2A> object is created automatically by the common language runtime (CLR) from the point of the `throw` statement, so that exceptions must be thrown from the point where the stack trace should begin.
 

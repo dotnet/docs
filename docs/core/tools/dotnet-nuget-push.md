@@ -155,7 +155,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push Foo.5.0.2.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
   ```
   
-- In the example belowg "Foo" version "1.1.5" nupkg to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.
+- In the example below "Foo" version "1.1.5" nupkg to Azure DevOps Artifacts from CI, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely. You need to setup [NuGet Authenticate task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops) with [NuGet service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#nuget-service-connection) for authenticate with external Azure DevOps Artifacts server.
 
   ```bashcli
     - task: NuGetAuthenticate@1

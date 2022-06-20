@@ -22,7 +22,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 
 - camelCasing
 
- The PascalCasing convention, used for all identifiers except parameter names, capitalizes the first character of each word (including acronyms and [initialisms](https://www.lexico.com/definition/initialism) (hereby referred to as just acronyms) over two letters in length), as shown in the following examples:
+ The PascalCasing convention, used for all identifiers except parameter names, capitalizes the first character of each word (including acronyms over two letters in length), as shown in the following examples:
 
  `PropertyDescriptor`
  `HtmlTag`

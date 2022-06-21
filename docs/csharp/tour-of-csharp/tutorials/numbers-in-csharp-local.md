@@ -221,7 +221,7 @@ int what = max + 3;
 Console.WriteLine($"An example of overflow: {what}");
 ```
 
-Notice that the answer is very close to the minimum (negative) integer. It's the same as `min + 2`. The addition operation **overflowed** the allowed values for integers. The answer is a very large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
+Notice that the answer is very close to the minimum (negative) integer. It's the same as `min - 2`. The addition operation **overflowed** the allowed values for integers. The answer is a very large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
 
 There are other numeric types with different limits and precision that you would use when the `int` type doesn't meet your needs. Let's explore those other types next. Before you start the next section, move the code you wrote in this section into a separate method. Name it `TestLimits`.
 

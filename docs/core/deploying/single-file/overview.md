@@ -160,7 +160,11 @@ Managed C++ components aren't well suited for single file deployment. We recomme
 
 ### Output differences from .NET 3.x
 
-In .NET Core 3.x, publishing as a single file produced one file, consisting of the app itself, dependencies, and any other files in the folder during publish. When the app starts, the single file app was extracted to a folder and run from there. Starting with .NET 5, only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a folder. On Windows, this approach means that the managed binaries are embedded in the single file bundle, but the native binaries of the core runtime itself are separate files. To embed those files for extraction and get one output file, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#including-native-libraries).
+In .NET Core 3.x, publishing as a single file produced one file, consisting of the app itself, dependencies, and any other files in the folder during publish. When the app starts, the single file app was extracted to a folder and run from there.
+
+Starting with .NET 5, only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a folder. On Windows, this approach means that the managed binaries are embedded in the single file bundle, but the native binaries of the core runtime itself are separate files.
+
+To embed those files for extraction and get one output file, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#including-native-libraries).
 
 ### API incompatibility
 
@@ -192,7 +196,7 @@ We have some recommendations for fixing common scenarios:
 
 On Linux, the only debugger that can attach to self-contained single file processes or debug crash dumps is [SOS with LLDB](../../diagnostics/dotnet-sos.md).
 
-On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single file executable requires an additional file: _mscordbi.{dll,so}_.
+On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single file executable requires an extra file: _mscordbi.{dll,so}_.
 
 Without this file, Visual Studio might produce the error: "Unable to attach to the process. A debug component is not installed." VS Code might produce the error: "Failed to attach to process: Unknown Error: 0x80131c3c."
 
@@ -200,7 +204,7 @@ To fix these errors, _mscordbi_ needs to be copied next to the executable. _msco
 
 ### Including native libraries
 
-Single file deployment doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single file app. This approach is to ensure a good debugging experience, which requires native files to be excluded from the single file.
+Single file deployment doesn't bundle native libraries by default. On Linux, the runtime is prelinked into the bundle and only application native libraries are deployed to the same directory as the single file app. On Windows, only the hosting code is prelinked and both the runtime and application native libraries are deployed to the same directory as the single file app. This approach is to ensure a good debugging experience, which requires native files to be excluded from the single file.
 
 Starting with .NET 6, the runtime is prelinked into the bundle on all platforms.
 
@@ -229,7 +233,9 @@ Specifying `IncludeAllContentForSelfExtract` extracts all files, including the m
 
 ### Compress assemblies in single file app
 
-Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set `EnableCompressionInSingleFile` property to `true`. The produced file has all of the embedded assemblies compressed which can significantly reduce the size of the executable. Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The effect varies a lot between different applications.
+Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The produced file has all of the embedded assemblies compressed which can significantly reduce the size of the executable.
+
+Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The effect varies a lot between different applications.
 
 ## See also
 

@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # Language rules
 
-Code style language rules affect how various constructs of .NET programming languages, for example, modifiers and parentheses, are used. The rules fall into the following categories:
+Code-style language rules affect how various constructs of .NET programming languages, for example, modifiers, and parentheses, are used. The rules fall into the following categories:
 
 - [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_style_` prefix.
 - [C# style rules](#c-style-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_style_` prefix.
@@ -23,7 +23,7 @@ Code style language rules affect how various constructs of .NET programming lang
 
 ## Option format
 
-Options for language rules can be specified in an EditorConfig file with the following format:
+Options for language rules can be specified in a [configuration file](../configuration-files.md) with the following format:
 
 `option_name = value` (Visual Studio 2019 version 16.9 Preview 2 and later)
 
@@ -35,7 +35,7 @@ or
 
   For each language rule, you specify a value that defines if or when to prefer the style. Many rules accept a value of `true` (prefer this style) or `false` (do not prefer this style). Other rules accept values such as `when_on_single_line` or `never`.
 
-- **Severity** (optional in Visual Studio 2019 version 16.9 Preview 2 and later versions)
+- **Severity** (optional in Visual Studio 2019 version 16.9 and later versions)
 
   The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, *the severity setting is only respected inside development IDEs, such as Visual Studio*. It is *not* respected during build.
 
@@ -144,6 +144,6 @@ The style rules in this section are applicable to Visual Basic language only.
 ## See also
 
 - [Unnecessary code rules](unnecessary-code-rules.md)
-- [Formatting rules](formatting-rules.md)
+- [Formatting rules](ide0055.md)
 - [Naming rules](naming-rules.md)
 - [.NET code style rules reference](index.md)

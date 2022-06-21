@@ -16,4 +16,32 @@ For better performance and fewer allocations, use the <xref:System.Drawing.Graph
 - <xref:System.Drawing.Graphics.GetContextInfo(System.Drawing.PointF@)?displayProperty=fullName>
 - <xref:System.Drawing.Graphics.GetContextInfo(System.Drawing.PointF@,System.Drawing.Region@)?displayProperty=fullName>
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
+## Suppress a warning
+
+If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+
+To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB0016
+
+// Code that uses obsolete API.
+// ...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB0016
+```
+
+To suppress all the `SYSLIB0016` warnings in your project, add a `<NoWarn>` property to your project file.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   ...
+   <NoWarn>$(NoWarn);SYSLIB0016</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
+For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).

@@ -1,7 +1,7 @@
 ---
 title: Pattern matching overview - C# guide
 description: Learn about pattern matching expressions in C#
-ms.date: 05/14/2021
+ms.date: 06/02/2022
 ---
 
 # Pattern matching overview
@@ -40,7 +40,11 @@ The previous example demonstrates a method dispatch based on the value of an enu
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformStringOperation":::
 
-The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. In all these examples, the *discard pattern* ensures that you handle every input. The compiler helps you by making sure every possible input value is handled.
+The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. Starting with C# 11, you can also use a `Span<char>` or a `ReadOnlySpan<char>`to test for constant string values, as shown in the following sample:
+
+:::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformSpanOperation":::
+
+In all these examples, the *discard pattern* ensures that you handle every input. The compiler helps you by making sure every possible input value is handled.
 
 ## Relational patterns
 
@@ -84,6 +88,7 @@ You can check elements in a list or an array using a *list pattern*. A list patt
 
 ## See also
 
+- [Use pattern matching to avoid 'is' check followed by a cast (style rules IDE0020 and IDE0038)](../../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md)
 - [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

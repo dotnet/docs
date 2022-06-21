@@ -515,6 +515,20 @@ let function1 arg1 arg2 arg3 arg4 =
     arg3 + arg4
 ```
 
+This rule also applies to units of measures in types and constant annotations:
+
+```fsharp
+// ✔️ OK
+type Test =
+    { WorkHoursPerWeek: uint<hr / (staff weeks)> }
+    static member create = { WorkHoursPerWeek = 40u<hr / (staff weeks)> }
+
+// ❌ Not OK
+type Test =
+    { WorkHoursPerWeek: uint<hr/(staff weeks)> }
+    static member create = { WorkHoursPerWeek = 40u<hr/(staff weeks)> }
+```
+
 The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. The following list summarizes the recommended F# operators.
 
 ```fsharp

@@ -34,9 +34,11 @@ class DateCommand : Command
         });
         // </dateoption>
 
-        this.SetHandler((string subject, DateTime date) => {
-            Console.WriteLine($"Scheduled \"{subject}\" for {date}");
-        }, subjectArgument, dateOption);
+        this.SetHandler((subject, date) =>
+            {
+                Console.WriteLine($"Scheduled \"{subject}\" for {date}");
+            },
+            subjectArgument, dateOption);
     }
 }
 // </all>

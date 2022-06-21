@@ -82,9 +82,9 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
   
 ## General recommendations  
 
- Consider the following guidelines when using multiple threads:  
+Consider the following guidelines when using multiple threads:  
   
-- Don't use <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to terminate other threads. Calling **Abort** on another thread is akin to throwing an exception on that thread, without knowing what point that thread has reached in its processing.  
+- Don't use <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to terminate other threads. Calling `Abort` on another thread is akin to throwing an exception on that thread, without knowing what point that thread has reached in its processing.  
   
 - Don't use <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.Resume%2A?displayProperty=nameWithType> to synchronize the activities of multiple threads. Do use <xref:System.Threading.Mutex>, <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent>, and <xref:System.Threading.Monitor>.  
   
@@ -163,7 +163,7 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
   
 ## Recommendations for class libraries  
 
- Consider the following guidelines when designing class libraries for multithreading:  
+Consider the following guidelines when designing class libraries for multithreading:  
   
 - Avoid the need for synchronization, if possible. This is especially true for heavily used code. For example, an algorithm might be adjusted to tolerate a race condition rather than eliminate it. Unnecessary synchronization decreases performance and creates the possibility of deadlocks and race conditions.  
   

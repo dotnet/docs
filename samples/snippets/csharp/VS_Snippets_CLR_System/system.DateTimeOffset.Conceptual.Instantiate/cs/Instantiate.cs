@@ -161,7 +161,7 @@ public class Class1
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM failed.
 
-      // Instantiate a DateTimeOffset value with an arbitary time zone.
+      // Instantiate a DateTimeOffset value with an arbitrary time zone.
       string timeZoneName = "Central Standard Time";
       TimeSpan offset = TimeZoneInfo.FindSystemTimeZoneById(timeZoneName).
                                GetUtcOffset(sourceDate);

@@ -39,6 +39,12 @@ The following table shows the literal types in F#. Characters that represent dig
 
 Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
+Named literals are useful for:
+
+- Pattern matching without a `when` clause.
+- Attribute arguments.
+- Static type provider arguments.
+
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
 ```fsharp
@@ -62,11 +68,11 @@ let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 
 Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code (0000 - FFFF), or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents any Unicode code point (00000000 - 0010FFFF).
 
-The use of other bitwise operators other than `|||` isn't allowed.
+The use of bitwise operators other than `|||` isn't allowed.
 
 ## Integers in other bases
 
-Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
+Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix, respectively.
 
 ```fsharp
 let numbers = (0x9F, 0o77, 0b1010)

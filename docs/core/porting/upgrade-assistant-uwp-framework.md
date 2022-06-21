@@ -13,9 +13,6 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - A demonstration of how to run the tool against a UWP app
 - Troubleshooting tips
 
-> [!NOTE]
-> .NET Upgrade Assistant with UWP support capabilities will soon be available on nuget.org as mentioned here [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md). In order to use .NET Upgrade Assistant for migration of UWP apps, please get the tool from the public AZDO pipeline feeds [here](https://dev.azure.com/dnceng/public/_artifacts/feed/dotnet-tools).
-
 For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 ## What to expect

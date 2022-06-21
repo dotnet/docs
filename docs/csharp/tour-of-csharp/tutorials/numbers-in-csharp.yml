@@ -157,7 +157,7 @@ items:
     ```
 
     Notice that the answer is very close to the minimum (negative) integer. It's
-    the same as `min + 2`.
+    the same as `min - 2`.
     The addition operation **overflowed** the allowed values for integers.
     The answer is a very large negative number because an overflow "wraps around"
     from the largest possible integer value to the smallest.

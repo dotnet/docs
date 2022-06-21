@@ -55,7 +55,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 - **`-k|--api-key <API_KEY>`**
 
   The API key for the server.
-  - Azure Artifacts feeds do not accept a personal access token (PAT) specified by this command-line argument. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section). For hosted builds that interfact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task.
+  - Azure Artifacts feeds do not accept a personal access token (PAT) specified by this command-line argument. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section). For Azure hosted builds that interfact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task.
 
 - **`-n|--no-symbols`**
 

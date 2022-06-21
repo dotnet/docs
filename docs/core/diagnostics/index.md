@@ -29,7 +29,7 @@ This article helps you find the various tools you need.
 
 ### Logs
 
-[Logging](logging-tracing.md) is a technique where code is instrumented to produce a log, a record of interesting events that occured while the program was running. Often a baseline set of log events are configured on by default and more extensive logging can be enabled on-demand to diagnose particular problems. Performance overhead is variable depending on how much data is being logged.
+[Logging](logging-tracing.md) is a technique where code is instrumented to produce a log, a record of interesting events that occurred while the program was running. Often a baseline set of log events are configured on by default and more extensive logging can be enabled on-demand to diagnose particular problems. Performance overhead is variable depending on how much data is being logged.
 
 ### Distributed traces
 

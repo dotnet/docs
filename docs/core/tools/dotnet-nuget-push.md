@@ -164,7 +164,7 @@ The command pushes an existing package. It doesn't create a package. To create a
         nuGetServiceConnections: MyServiceConnection_ExternalServer
         
     - bash: |
-        dotnet build foo/foo.csproj -c Release
+        dotnet build mypackage/mypackage.csproj -c Release
         dotnet pack foo/foo.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
         dotnet nuget push nupkgs/foo.1.1.5.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
       displayName: "Pack and push"          

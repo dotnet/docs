@@ -150,7 +150,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
   
-- In the example below pushing "Foo" version "5.0.2" to Azure DevOps Artifacts from dev box, here AZ is just a placeholder for ApiKey, this prevents authentication fail prematurely, in order to authentication to work you need to install [cred provider](https://github.com/microsoft/artifacts-credprovider). Below command trigger open Cred Provider window if authentication is necessary, it's suitable for pushing from dev box, but not for CI.
+- In the example below, pushing "MyPackage" version "5.0.2" to an Azure Artifacts feed from a local development environment, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to be installed to properly authenticate.
 
   ```dotnetcli
   dotnet nuget push Foo.5.0.2.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ

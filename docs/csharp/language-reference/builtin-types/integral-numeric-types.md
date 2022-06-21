@@ -63,7 +63,7 @@ The native-sized integer types are represented internally as the .NET types <xre
 
 The default value of each integral type is zero, `0`.
 
-Each of the integral types has `MinValue` and `MaxValue` properties, that provide the minimum and maximum value of that type. These properties are compile-time constants, except for the case of the native-sized types (`nint and `nuint), for which `MinValue` and `MaxValue` are calculated at runtime, and depend on whether the running process is 32-bit or 64-bit.
+Each of the integral types has `MinValue` and `MaxValue` properties that provide the minimum and maximum value of that type. These properties are compile-time constants except for the case of the native-sized types (`nint and `nuint`). The `MinValue` and `MaxValue` properties are calculated at runtime for native-sized types. The sizes of those types depend on the processor.
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 

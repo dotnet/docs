@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 06/20/2022
+ms.date: 06/21/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"

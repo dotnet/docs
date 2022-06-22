@@ -54,7 +54,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-k|--api-key <API_KEY>`**
 
-The API key for the server.
+- The API key for the server.
 
 - **`-n|--no-symbols`**
 

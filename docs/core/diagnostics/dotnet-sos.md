@@ -85,3 +85,6 @@ Uninstalls the [SOS extension](sos-debugging-extension.md) and, on Linux and mac
 ```console
 dotnet-sos uninstall
 ```
+## See also
+
+- [Install LLDB on Linux or macOS](install-lldb.md)

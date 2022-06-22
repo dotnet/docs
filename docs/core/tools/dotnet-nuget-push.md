@@ -149,4 +149,4 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
   
-- For Azure DevOps Artifacts related push examples, see [Azure Devops examples](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops#examples).
+- For Azure DevOps Artifacts push examples, see [Azure Devops examples](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops#examples).

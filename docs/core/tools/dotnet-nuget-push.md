@@ -56,6 +56,8 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-n|--no-symbols`**
 
+The API key for the server.
+
   Doesn't push symbols (even if present).
 
 - **`--no-service-endpoint`**

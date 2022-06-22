@@ -13,7 +13,7 @@ There are two ways to download and install `dotnet-dsrouter`:
 
 - **dotnet global tool:**
 
-  To install the latest release version of the `dotnet-dsrouter` [NuGet package](https://www.nuget.org/packages/dotnet-trace), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+  To install the latest release version of the `dotnet-dsrouter` [NuGet package](https://www.nuget.org/packages/dotnet-dsrouter), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
   ```dotnetcli
   dotnet tool install --global dotnet-dsrouter
@@ -25,7 +25,7 @@ There are two ways to download and install `dotnet-dsrouter`:
 
   | OS | Platform |
   |--|--|
-  | Windows | [x86](https://aka.ms/dotnet-dsrouter/win-x86) or [x64](https://aka.ms/dotnet-trace/win-x64) |
+  | Windows | [x86](https://aka.ms/dotnet-dsrouter/win-x86) or [x64](https://aka.ms/dotnet-dsrouter/win-x64) |
   | macOS | [x64](https://aka.ms/dotnet-dsrouter/osx-x64) |
   | Linux | [x64](https://aka.ms/dotnet-dsrouter/linux-x64) |
 

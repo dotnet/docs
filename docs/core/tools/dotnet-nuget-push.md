@@ -54,9 +54,6 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-k|--api-key <API_KEY>`**
 
-  The API key for the server.
-  - Azure Artifacts feeds do not accept a personal access token (PAT) specified by this command-line argument. When using a local development environment, you must have the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) installed which provides authentication when pushing or downloading packages (see examples section). For Azure hosted builds that interfact with Azure Artifacts feeds, you must use the [NuGet Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate) task.
-
 - **`-n|--no-symbols`**
 
   Doesn't push symbols (even if present).
@@ -150,24 +147,4 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
   
-- In the example below, pushing "MyPackage" version "5.0.2" to an Azure Artifacts feed from a local development environment, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) to be installed to properly authenticate.
-
-  ```dotnetcli
-  dotnet nuget push MyPackage.5.0.2.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
-  ```
-  
-- In the example below, pushing "MyPackage" version "1.1.5" to an Azure Artifacts feed from a hosted build, the API key "AZ" is only used as a placeholder. An Azure Artifacts feed still requires your pipeline to use the [NuGet Authenticate task](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget-authenticate?view=azure-devops).
-
-  ```bashcli
-    - task: NuGetAuthenticate@1
-      inputs:
-        nuGetServiceConnections: MyServiceConnection_ExternalServer
-        
-    - bash: |
-        dotnet build mypackage/mypackage.csproj -c Release
-        dotnet pack mypackage/mypackage.csproj /property:PackageVersion=1.1.5 -o nupkgs -c Release
-        dotnet nuget push nupkgs/mypackage.1.1.5.nupkg --source https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json -k AZ
-      displayName: "Pack and push"          
-  ```
-
-  This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  
+- For Azure DevOps Artifacts related push examples, see [Azure Devops examples](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops#examples).

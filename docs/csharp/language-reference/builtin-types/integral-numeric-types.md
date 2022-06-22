@@ -47,8 +47,8 @@ C# supports the following predefined integral types:
 |`uint`|0 to 4,294,967,295|Unsigned 32-bit integer|<xref:System.UInt32?displayProperty=nameWithType>|
 |`long`|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|<xref:System.Int64?displayProperty=nameWithType>|
 |`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|<xref:System.UInt64?displayProperty=nameWithType>|
-|`nint`|Depends on platform|Signed 32-bit or 64-bit integer|<xref:System.IntPtr?displayProperty=nameWithType>|
-|`nuint`|Depends on platform|Unsigned 32-bit or 64-bit integer|<xref:System.UIntPtr?displayProperty=nameWithType>|
+|`nint`|Depends on platform (computed at runtime)|Signed 32-bit or 64-bit integer|<xref:System.IntPtr?displayProperty=nameWithType>|
+|`nuint`|Depends on platform (computed at runtime)|Unsigned 32-bit or 64-bit integer|<xref:System.UIntPtr?displayProperty=nameWithType>|
 
 In all of the table rows except the last two, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. The keyword and .NET type name are interchangeable. For example, the following declarations declare variables of the same type:
 
@@ -61,7 +61,9 @@ The `nint` and `nuint` types in the last two rows of the table are native-sized 
 
 The native-sized integer types are represented internally as the .NET types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. Starting in C# 11, the `nint` and `nuint` types are aliases for the underlying types.
 
-The default value of each integral type is zero, `0`. Each of the integral types except the native-sized types has `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
+The default value of each integral type is zero, `0`.
+
+Each of the integral types has `MinValue` and `MaxValue` properties that provide the minimum and maximum value of that type. These properties are compile-time constants except for the case of the native-sized types (`nint` and `nuint`). The `MinValue` and `MaxValue` properties are calculated at runtime for native-sized types. The sizes of those types depend on the processor.
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 

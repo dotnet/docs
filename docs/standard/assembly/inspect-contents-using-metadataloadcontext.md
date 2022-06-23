@@ -33,7 +33,7 @@ The following code sample creates <xref:System.Reflection.MetadataLoadContext>, 
 
 [!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#CreateContext)]
 
-If you need to test types in <xref:System.Reflection.MetadataLoadContext> for equality or assignability, only use type objects loaded into that context. Mixing <xref:System.Reflection.MetadataLoadContext> types with runtime types is not supported. For example, suppose we have a type `testedType` in <xref:System.Reflection.MetadataLoadContext>. If you need to test whether another type is assignable from it, do not use code like `typeof(MyType).IsAssignableFrom(testedType)`. Use code like this instead:
+If you need to test types in <xref:System.Reflection.MetadataLoadContext> for equality or assignability, only use type objects loaded into that context. Mixing <xref:System.Reflection.MetadataLoadContext> types with runtime types is not supported. For example, consider a type `testedType` in <xref:System.Reflection.MetadataLoadContext>. If you need to test whether another type is assignable from it, don't use code like `typeof(MyType).IsAssignableFrom(testedType)`. Use code like this instead:
 
 [!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#Assignability)]
 

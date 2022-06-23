@@ -19,16 +19,6 @@ There are two ways to download and install `dotnet-dsrouter`:
   dotnet tool install --global dotnet-dsrouter
   ```
 
-- **Direct download:**
-
-  Download the tool executable that matches your platform:
-
-  | OS | Platform |
-  |--|--|
-  | Windows | [x86](https://aka.ms/dotnet-dsrouter/win-x86) or [x64](https://aka.ms/dotnet-dsrouter/win-x64) |
-  | macOS | [x64](https://aka.ms/dotnet-dsrouter/osx-x64) |
-  | Linux | [x64](https://aka.ms/dotnet-dsrouter/linux-x64) |
-
 ## Synopsis
 
 ```console

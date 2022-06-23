@@ -49,7 +49,7 @@ The change was made to add new functionality to SignalR. It is non-breaking in n
 
 ## Recommended action
 
-Update test code to use the `ISingleClientProxy` interface when using reflection or reflection-based test code.
+Update test code to use the `ISingleClientProxy` interface when using reflection or reflection-based code.
 
 ## Affected APIs
 

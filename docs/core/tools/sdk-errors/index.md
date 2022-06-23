@@ -59,19 +59,19 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1054|only supports .NET Core.|
 |NETSDK1055|DotnetTool does not support target framework lower than netcoreapp2.1.|
 |NETSDK1056|Project is targeting runtime '{0}' but did not resolve any runtime-specific packages. This runtime may not be supported by the target framework.|
-|NETSDK1057|You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy|
+|NETSDK1057|You are using a preview version of .NET. See: aka.ms/dotnet-support-policy|
 |NETSDK1058|Invalid value for ItemSpecToUse parameter: '{0}'.  This property must be blank or set to 'Left' or 'Right'|
-|[NETSDK1059](netsdk1059.md)|The tool '{0}' is now included in the .NET SDK. Information on resolving this warning is available at (https://aka.ms/dotnetclitools-in-box).|
+|[NETSDK1059](netsdk1059.md)|The tool '{0}' is now included in the .NET SDK. Information on resolving this warning is available at (aka.ms/dotnetclitools-in-box).|
 |NETSDK1060|Error reading assets file: {0}|
-|NETSDK1061|The project was restored using {0} version {1}, but with current settings, version {2} would be used instead. To resolve this issue, make sure the same settings are used for restore and for subsequent operations such as build or publish. Typically this issue can occur if the RuntimeIdentifier property is set during build or publish but not during restore. For more information, see https://aka.ms/dotnet-runtime-patch-selection.|
+|NETSDK1061|The project was restored using {0} version {1}, but with current settings, version {2} would be used instead. To resolve this issue, make sure the same settings are used for restore and for subsequent operations such as build or publish. Typically this issue can occur if the RuntimeIdentifier property is set during build or publish but not during restore. For more information, see aka.ms/dotnet-runtime-patch-selection.|
 |NETSDK1063|The path to the project assets file was not set. Run a NuGet package restore to generate this file.|
 |[NETSDK1064](netsdk1064.md)|Package {0}, version {1} was not found. It might have been deleted since NuGet restore. Otherwise, NuGet restore might have only partially completed, which might have been due to maximum path length restrictions.|
-|NETSDK1065|Cannot find app host for {0}. {0} could be an invalid runtime identifier (RID). For more information about RID, see https://aka.ms/rid-catalog.|
+|NETSDK1065|Cannot find app host for {0}. {0} could be an invalid runtime identifier (RID). For more information about RID, see aka.ms/rid-catalog.|
 |NETSDK1067|Self-contained applications are required to use the application host. Either set SelfContained to false or set UseAppHost to true.|
 |NETSDK1068|The framework-dependent application host requires a target framework of at least 'netcoreapp2.1'.|
-|NETSDK1069|This project uses a library that targets .NET Standard 1.5 or higher, and the project targets a version of .NET Framework that doesn't have built-in support for that version of .NET Standard. Visit https://aka.ms/net-standard-known-issues for a set of known issues. Consider retargeting to .NET Framework 4.7.2.|
+|NETSDK1069|This project uses a library that targets .NET Standard 1.5 or higher, and the project targets a version of .NET Framework that doesn't have built-in support for that version of .NET Standard. Visit aka.ms/net-standard-known-issues for a set of known issues. Consider retargeting to .NET Framework 4.7.2.|
 |NETSDK1070|The application configuration file must have root configuration element.|
-|[NETSDK1071](netsdk1071.md)|A PackageReference to '{0}' specified a Version of `{1}`. Specifying the version of this package is not recommended. For more information, see https://aka.ms/sdkimplicitrefs|
+|[NETSDK1071](netsdk1071.md)|A PackageReference to '{0}' specified a Version of `{1}`. Specifying the version of this package is not recommended. For more information, see aka.ms/sdkimplicitrefs|
 |NETSDK1072|Unable to use '{0}' as application host executable because it's not a Windows executable for the CUI (Console) subsystem.|
 |[NETSDK1073](netsdk1073.md)|The FrameworkReference '{0}' was not recognized|
 |NETSDK1074|The application host executable will not be customized because adding resources requires that the build be performed on Windows (excluding Nano Server).|
@@ -107,8 +107,8 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1105|Windows desktop applications are only supported on .NET Core 3.0 or higher.|
 |NETSDK1106|Microsoft.NET.Sdk.WindowsDesktop requires 'UseWpf' or 'UseWindowsForms' to be set to 'true'|
 |NETSDK1107|Microsoft.NET.Sdk.WindowsDesktop is required to build Windows desktop applications. 'UseWpf' and 'UseWindowsForms' are not supported by the current SDK.|
-|NETSDK1109|Runtime list file '{0}' was not found. Report this error to the .NET team here: https://aka.ms/dotnet-sdk-issue.|
-|NETSDK1110|More than one asset in the runtime pack has the same destination sub-path of '{0}'. Report this error to the .NET team here: https://aka.ms/dotnet-sdk-issue.|
+|NETSDK1109|Runtime list file '{0}' was not found. Report this error to the .NET team here: aka.ms/dotnet-sdk-issue.|
+|NETSDK1110|More than one asset in the runtime pack has the same destination sub-path of '{0}'. Report this error to the .NET team here: aka.ms/dotnet-sdk-issue.|
 |NETSDK1111|Failed to delete output apphost: {0}|
 |NETSDK1112|The runtime pack for {0} was not downloaded. Try running a NuGet restore with the RuntimeIdentifier '{1}'.|
 |NETSDK1113|Failed to create apphost (attempt {0} out of {1}): {2}|
@@ -128,7 +128,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1127|The targeting pack {0} is not installed. Please restore and try again.|
 |NETSDK1128|COM hosting does not support self-contained deployments.|
 |NETSDK1129|The 'Publish' target is not supported without specifying a target framework. The current project targets multiple frameworks, you must specify the framework for the published application.|
-|[NETSDK1130](netsdk1130.md)|{1} cannot be referenced. Referencing a Windows Metadata component directly when targeting .NET 5 or higher is not supported. For more information, see https://aka.ms/netsdk1130|
+|[NETSDK1130](netsdk1130.md)|{1} cannot be referenced. Referencing a Windows Metadata component directly when targeting .NET 5 or higher is not supported. For more information, see aka.ms/netsdk1130|
 |NETSDK1131|Producing a managed Windows Metadata component with WinMDExp is not supported when targeting {0}.|
 |NETSDK1132|No runtime pack information was available for {0}.|
 |NETSDK1133|There was conflicting information about runtime packs available for {0}:|
@@ -143,13 +143,13 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1142|Including symbols in a single file bundle is not supported when publishing for .NET5 or higher.|
 |NETSDK1143|Including all content in a single file bundle also includes native libraries. If IncludeAllContentForSelfExtract is true, IncludeNativeLibrariesForSelfExtract must not be false.|
 |NETSDK1144|Optimizing assemblies for size failed. Optimization can be disabled by setting the PublishTrimmed property to false.|
-|[NETSDK1145](netsdk1145.md)|The {0} pack is not installed and NuGet package restore is not supported. Upgrade Visual Studio, remove global.json if it specifies a certain SDK version, and uninstall the newer SDK. For more options visit   https://aka.ms/targeting-apphost-pack-missing  Pack Type:{0}, Pack directory: {1}, targetframework: {2}, Pack PackageId: {3}, Pack Package Version: {4}|
+|[NETSDK1145](netsdk1145.md)|The {0} pack is not installed and NuGet package restore is not supported. Upgrade Visual Studio, remove global.json if it specifies a certain SDK version, and uninstall the newer SDK. For more options visit   aka.ms/targeting-apphost-pack-missing  Pack Type:{0}, Pack directory: {1}, targetframework: {2}, Pack PackageId: {3}, Pack Package Version: {4}|
 |NETSDK1146|PackAsTool does not support TargetPlatformIdentifier being set. For example, TargetFramework cannot be net5.0-windows, only net5.0. PackAsTool also does not support UseWPF or UseWindowsForms when targeting .NET 5 and higher.|
 |[NETSDK1147](netsdk1147.md)|To build this project, the following workloads must be installed: {0}|
 |NETSDK1148|A referenced assembly was compiled using a newer version of Microsoft.Windows.SDK.NET.dll. Please update to a newer .NET SDK in order to reference this assembly.|
-|[NETSDK1149](netsdk1149.md)|{0} cannot be referenced because it uses built-in support for WinRT, which is no longer supported in .NET 5 and higher.  An updated version of the component supporting .NET 5 is needed. For more information, see https://aka.ms/netsdk1149|
-|NETSDK1150|The referenced project '{0}' is a non self-contained executable.  A non self-contained executable cannot be referenced by a self-contained executable.  For more information, see https://aka.ms/netsdk1150|
-|NETSDK1151|The referenced project '{0}' is a self-contained executable.  A self-contained executable cannot be referenced by a non self-contained executable.  For more information, see https://aka.ms/netsdk1151|
+|[NETSDK1149](netsdk1149.md)|{0} cannot be referenced because it uses built-in support for WinRT, which is no longer supported in .NET 5 and higher.  An updated version of the component supporting .NET 5 is needed. For more information, see aka.ms/netsdk1149|
+|NETSDK1150|The referenced project '{0}' is a non self-contained executable.  A non self-contained executable cannot be referenced by a self-contained executable.  For more information, see aka.ms/netsdk1150|
+|NETSDK1151|The referenced project '{0}' is a self-contained executable.  A self-contained executable cannot be referenced by a non self-contained executable.  For more information, see aka.ms/netsdk1151|
 |NETSDK1152|Found multiple publish output files with the same relative path: {0}.|
 |NETSDK1153|CrossgenTool not specified in PDB compilation mode.|
 |NETSDK1154|Crossgen2Tool must be specified when UseCrossgen2 is set to true.|
@@ -166,14 +166,14 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1165|Missing output R2R image path (OutputR2RImage metadata).|
 |NETSDK1166|Cannot emit symbols when publishing for .NET 5 with Crossgen2 using composite mode.|
 |NETSDK1167|Compression in a single file bundle is only supported when publishing for .NET6 or higher.|
-|NETSDK1168|WPF is not supported or recommended with trimming enabled. Please go to https://aka.ms/dotnet-illink/wpf for more details.|
+|NETSDK1168|WPF is not supported or recommended with trimming enabled. Please go to aka.ms/dotnet-illink/wpf for more details.|
 |NETSDK1169|The same resource ID {0} was specified for two type libraries '{1}' and '{2}'. Duplicate type library IDs are not allowed.|
 |NETSDK1170|The provided type library ID '{0}' for type libary '{1}' is invalid. The ID must be a positive integer less than 65536.|
 |NETSDK1171|An integer ID less than 65536 must be provided for type library '{0}' because more than one type library is specified.|
 |NETSDK1172|The provided type library '{0}' does not exist.|
 |NETSDK1173|The provided type library '{0}' is in an invalid format.|
 |[NETSDK1174](netsdk1174.md)|The abbreviation of -p for --project is deprecated. Please use --project.|
-|NETSDK1175|Windows Forms is not supported or recommended with trimming enabled. Please go to https://aka.ms/dotnet-illink/windows-forms for more details.|
+|NETSDK1175|Windows Forms is not supported or recommended with trimming enabled. Please go to aka.ms/dotnet-illink/windows-forms for more details.|
 |NETSDK1176|Compression in a single file bundle is only supported when publishing a self-contained application.|
 |NETSDK1177|Failed to sign apphost with error code {1}: {0}|
 |NETSDK1178|The project depends on the following workload packs that do not exist in any of the workloads available in this installation: {0}|

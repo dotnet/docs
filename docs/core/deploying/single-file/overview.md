@@ -13,6 +13,7 @@ Single file deployment is available for both the [framework-dependent deployment
 
 > [IMPORTANT]
 > To run a single file app on Windows 7, you must use .NET Runtime 6.0.3 or later.
+
 ## Output differences from .NET 3.x
 
 In .NET Core 3.x, publishing as a single file produced exactly one file, consisting of the app itself, dependencies, and any other files in the folder during publish. When the app starts, the single file app was extracted to a folder and run from there. Starting with .NET 5, only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a folder. On Windows, this means that the managed binaries are embedded in the single-file bundle, but the native binaries of the core runtime itself are separate files. To embed those files for extraction and get exactly one output file, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#including-native-libraries).

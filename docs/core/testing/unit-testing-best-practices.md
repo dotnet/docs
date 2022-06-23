@@ -139,7 +139,7 @@ Tests are more than just making sure your code works, they also provide document
 
 **Arrange, Act, Assert** is a common pattern when unit testing. As the name implies, it consists of three main actions:
 
-- *Arrange* your objects, creating and setting them up as necessary.
+- *Arrange* your objects, create and set them up as necessary.
 - *Act* on an object.
 - *Assert* that something is as expected.
 

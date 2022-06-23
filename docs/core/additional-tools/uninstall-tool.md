@@ -18,7 +18,7 @@ On Windows, the tool can only uninstall SDKs and runtimes that were installed us
 
 On macOS, the tool can only uninstall SDKs and runtimes located in the */usr/local/share/dotnet* folder.
 
-Because of these limitations, the tool might not be able to uninstall all of the .NET SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET SDKs and runtimes installed, including those SDKs and runtimes that this tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool. Versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or earlier, and previous versions of the tool can uninstall 3.1 and earlier.
+Because of these limitations, the tool might not be able to uninstall all of the .NET SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET SDKs and runtimes installed, including those SDKs and runtimes that the tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool. Versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or earlier, and previous versions of the tool can uninstall 3.1 and earlier.
 
 ## Install the tool
 
@@ -207,6 +207,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
   Must be used with `--sdk`, `--runtime`, and `--aspnet-runtime` to remove x86 SDKs or runtimes.
 
 - **`--force`**
+
   Forces removal of versions that might be used by Visual Studio.
 
 > [!NOTE]
@@ -261,6 +262,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
   
 - **`--force`**
+
   Forces removal of versions that might be used by Visual Studio or SDKs.
 
 > [!NOTE]
@@ -290,7 +292,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 `dotnet-core-uninstall remove` uninstalls .NET SDKs and runtimes that are specified by a collection of options. Versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or earlier, and previous versions of the tool can uninstall 3.1 and earlier.
 
-Since this tool has a destructive behavior, it's **highly** recommended that you do a dry run before running the remove command. The dry run will show you what .NET SDKs and runtimes will be removed when you use the `remove` command. For more information on which SDKs and runtimes are safe to remove, see [Should I remove a version?](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version).
+Since this tool has a destructive behavior, it's **highly** recommended that you do a dry run before running the remove command. The dry run will show you what .NET SDKs and runtimes will be removed when you use the `remove` command. For more information on which SDKs and runtimes are safe to remove, see [Should I remove a version?](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version)
 
 > [!CAUTION]
 > Keep in mind the following caveats:
@@ -388,6 +390,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
   Executes the command without requiring a yes or no confirmation.
 
 - **`--force`**
+
   Forces removal of versions that might be used by Visual Studio.
 
 > [!NOTE]
@@ -445,6 +448,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
   Executes the command without requiring yes or no confirmation.
   
 - **`--force`**
+
   Forces removal of versions that might be used by Visual Studio or SDKs.
 
 > [!NOTE]

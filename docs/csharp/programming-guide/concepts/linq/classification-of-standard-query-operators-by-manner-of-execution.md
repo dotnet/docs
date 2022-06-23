@@ -12,7 +12,7 @@ The LINQ to Objects implementations of the standard query operator methods execu
   
 ### Immediate  
 
- Immediate execution means that the data source is read and the operation is performed at the point in the code where the query is declared. All the standard query operators that return a single, non-enumerable result execute immediately. You can force a query to execute immediately of by calling ToList, ToArray methods. Immediate execution doesn't provide the facility of query re-usability, since it always contains the same data which is fetched at the time of query declaration.
+ Immediate execution means that the data source is read and the operation is performed once. All the standard query operators that return a scalar result execute immediately. You can force a query to execute immediately using the <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> methods. Immediate execution provides reuse of query results, not query declaration. The results are retrieved once, then stored for future use.
   
 ### Deferred  
 

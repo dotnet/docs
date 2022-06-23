@@ -149,6 +149,6 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
   
-- For pushing to Azure Artifacts, [see Azure Artifacts' push documentation](https://docs.microsoft.com/azure/devops/artifacts/nuget/dotnet-exe?view=azure-devops#examples).
+- For pushing to Azure Artifacts, [see Azure Artifacts' push documentation](/azure/devops/artifacts/nuget/dotnet-exe#examples).
 
   This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

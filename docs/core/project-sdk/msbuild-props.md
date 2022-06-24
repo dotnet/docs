@@ -317,7 +317,7 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to leverage `Release` configuration instead of `Debug` by default. Add it to a `Directory.Build.props` file.
+The `PublishRelease` property informs `dotnet publish` to leverage the `Release` configuration instead of the `Debug` configuration. We recommend adding this property to a `Directory.Build.props` file instead of a project file so that it's evaluated early enough for the configuration change to propagate.
 
 ```xml
 <PropertyGroup>

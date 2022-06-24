@@ -99,7 +99,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://api.nuget.org/v3/index.json
   ```
   
-  * Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
+- Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/

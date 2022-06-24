@@ -139,12 +139,13 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 </PropertyGroup>
 ```
 
-### PackRelease 
+### PackRelease
 
 The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
+
 ```xml
 <PropertyGroup>
-	<PackRelease>true</PackRelease>
+  <PackRelease>true</PackRelease>
 </PropertyGroup>
 ```
 
@@ -317,11 +318,13 @@ For more information, see [Write reference assemblies to intermediate output](..
 ### PublishRelease
 
 The `PublishRelease` property informs `dotnet publish` to leverage `Release` configuration instead of `Debug` by default. Add it to a `Directory.Build.props` file.
+
 ```xml
 <PropertyGroup>
-	<PublishRelease>true</PublishRelease>
+  <PublishRelease>true</PublishRelease>
 </PropertyGroup>
 ```
+
 > [!NOTE]
 > This property does not affect the behavior of `dotnet build /t:Publish`.
 

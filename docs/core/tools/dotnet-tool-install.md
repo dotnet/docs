@@ -105,7 +105,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--prerelease`**
 
-  Include prerelease packages. 
+  Include prerelease packages.
 
 - **`--tool-manifest <PATH>`**
 

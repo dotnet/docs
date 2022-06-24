@@ -33,15 +33,15 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1017|Asset preprocessor must be configured before assets are processed.|
 |NETSDK1018|Invalid NuGet version string: '{0}'.|
 |NETSDK1019|{0} is an unsupported framework.|
-|NETSDK1020|Package Root {0} was incorrectly given for Resolved library {1}|
+|NETSDK1020|Package Root {0} was incorrectly given for Resolved library {1}.|
 |NETSDK1021|More than one file found for {0}|
-|[NETSDK1022](netsdk1022.md)|Duplicate '{0}' items were included. The .NET SDK includes '{0}' items from your project directory by default. You can either remove these items from your project file, or set the '{1}' property to '{2}' if you want to explicitly include them in your project file. For more information, see {4}. The duplicate items were: {3}|
-|NETSDK1023|A PackageReference for '{0}' was included in your project. This package is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see {1}|
+|[NETSDK1022](netsdk1022.md)|Duplicate '{0}' items were included. The .NET SDK includes '{0}' items from your project directory by default. You can either remove these items from your project file, or set the '{1}' property to '{2}' if you want to explicitly include them in your project file. For more information, see {4}. The duplicate items were: {3}.|
+|NETSDK1023|A PackageReference for '{0}' was included in your project. This package is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see {1}.|
 |NETSDK1024|Folder '{0}' already exists - either delete it or provide a different ComposeWorkingDir.|
-|NETSDK1025|The target manifest {0} provided is of not the correct format|
-|NETSDK1028|Specify a RuntimeIdentifier|
+|NETSDK1025|The target manifest {0} provided is of not the correct format.|
+|NETSDK1028|Specify a RuntimeIdentifier.|
 |NETSDK1029|Unable to use '{0}' as application host executable as it does not contain the expected placeholder byte sequence '{1}' that would mark where the application name would be written.|
-|NETSDK1030|Given file name '{0}' is longer than 1024 bytes|
+|NETSDK1030|Given file name '{0}' is longer than 1024 bytes.|
 |NETSDK1031|It is not supported to build or publish a self-contained application without specifying a RuntimeIdentifier. You must either specify a RuntimeIdentifier or set SelfContained to false.|
 |NETSDK1032|The RuntimeIdentifier platform '{0}' and the PlatformTarget '{1}' must be compatible.|
 |NETSDK1042|Could not load PlatformManifest from '{0}' because it did not exist.|
@@ -51,7 +51,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1046|The TargetFramework value '{0}' is not valid. To multi-target, use the 'TargetFrameworks' property instead.|
 |NETSDK1047|Assets file '{0}' doesn't have a target for '{1}'. Ensure that restore has run and that you have included '{2}' in the TargetFrameworks for your project. You may also need to include '{3}' in your project's RuntimeIdentifiers.|
 |NETSDK1048|'AdditionalProbingPaths' were specified for GenerateRuntimeConfigurationFiles, but are being skipped because 'RuntimeConfigDevPath' is empty.|
-|NETSDK1049|Resolved file has a bad image, no metadata, or is otherwise inaccessible. {0} {1}|
+|NETSDK1049|Resolved file has a bad image, no metadata, or is otherwise inaccessible. {0} {1}.|
 |NETSDK1050|The version of Microsoft.NET.Sdk used by this project is insufficient to support references to libraries targeting .NET Standard 1.5 or higher.  Please install version 2.0 or higher of the .NET Core SDK.|
 |NETSDK1051|Error parsing FrameworkList from '{0}'.  {1} '{2}' was invalid.|
 |NETSDK1052|Framework list file path '{0}' is not rooted. Only full paths are supported.|
@@ -73,7 +73,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1070|The application configuration file must have root configuration element.|
 |[NETSDK1071](netsdk1071.md)|A PackageReference to '{0}' specified a Version of `{1}`. Specifying the version of this package is not recommended. For more information, see <https://aka.ms/sdkimplicitrefs>.|
 |NETSDK1072|Unable to use '{0}' as application host executable because it's not a Windows executable for the CUI (Console) subsystem.|
-|[NETSDK1073](netsdk1073.md)|The FrameworkReference '{0}' was not recognized|
+|[NETSDK1073](netsdk1073.md)|The FrameworkReference '{0}' was not recognized.|
 |NETSDK1074|The application host executable will not be customized because adding resources requires that the build be performed on Windows (excluding Nano Server).|
 |NETSDK1075|Update handle is invalid. This instance may not be used for further updates.|
 |NETSDK1076|AddResource can only be used with integer resource types.|
@@ -86,7 +86,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1083|The specified RuntimeIdentifier '{0}' is not recognized.|
 |NETSDK1084|There is no application host available for the specified RuntimeIdentifier '{0}'.|
 |NETSDK1085|The 'NoBuild' property was set to true but the 'Build' target was invoked.|
-|NETSDK1086|A FrameworkReference for '{0}' was included in the project. This is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see {1}|
+|NETSDK1086|A FrameworkReference for '{0}' was included in the project. This is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see {1}.|
 |NETSDK1087|Multiple FrameworkReference items for '{0}' were included in the project.|
 |NETSDK1088|The COMVisible class '{0}' must have a GuidAttribute with the CLSID of the class to be made visible to COM in .NET Core.|
 |NETSDK1089|The '{0}' and '{1}' types have the same CLSID '{2}' set in their GuidAttribute. Each COMVisible class needs to have a distinct guid for their CLSID.|
@@ -105,13 +105,13 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1103|RollForward setting is only supported on .NET Core 3.0 or higher.|
 |NETSDK1104|RollForward value '{0}' is invalid. Allowed values are {1}.|
 |NETSDK1105|Windows desktop applications are only supported on .NET Core 3.0 or higher.|
-|NETSDK1106|Microsoft.NET.Sdk.WindowsDesktop requires 'UseWpf' or 'UseWindowsForms' to be set to 'true'|
+|NETSDK1106|Microsoft.NET.Sdk.WindowsDesktop requires 'UseWpf' or 'UseWindowsForms' to be set to 'true'.|
 |NETSDK1107|Microsoft.NET.Sdk.WindowsDesktop is required to build Windows desktop applications. 'UseWpf' and 'UseWindowsForms' are not supported by the current SDK.|
 |NETSDK1109|Runtime list file '{0}' was not found. Report this error to the .NET team here: <https://aka.ms/dotnet-sdk-issue>.|
 |NETSDK1110|More than one asset in the runtime pack has the same destination sub-path of '{0}'. Report this error to the .NET team here: <https://aka.ms/dotnet-sdk-issue>.|
-|NETSDK1111|Failed to delete output apphost: {0}|
+|NETSDK1111|Failed to delete output apphost: {0}.|
 |NETSDK1112|The runtime pack for {0} was not downloaded. Try running a NuGet restore with the RuntimeIdentifier '{1}'.|
-|NETSDK1113|Failed to create apphost (attempt {0} out of {1}): {2}|
+|NETSDK1113|Failed to create apphost (attempt {0} out of {1}): {2}.|
 |NETSDK1114|Unable to find a .NET Core IJW host. The .NET Core IJW host is only available on .NET Core 3.1 or higher when targeting Windows.|
 |NETSDK1115|The current .NET SDK does not support .NET Framework without using .NET SDK Defaults. It is likely due to a mismatch between C++/CLI project CLRSupport property and TargetFramework.|
 |NETSDK1116|C++/CLI projects targeting .NET Core must be dynamic libraries.|
@@ -145,7 +145,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1144|Optimizing assemblies for size failed. Optimization can be disabled by setting the PublishTrimmed property to false.|
 |[NETSDK1145](netsdk1145.md)|The {0} pack is not installed and NuGet package restore is not supported. Upgrade Visual Studio, remove global.json if it specifies a certain SDK version, and uninstall the newer SDK. For more options visit <https://aka.ms/targeting-apphost-pack-missing>. Pack Type:{0}, Pack directory: {1}, targetframework: {2}, Pack PackageId: {3}, Pack Package Version: {4}.|
 |NETSDK1146|PackAsTool does not support TargetPlatformIdentifier being set. For example, TargetFramework cannot be net5.0-windows, only net5.0. PackAsTool also does not support UseWPF or UseWindowsForms when targeting .NET 5 and higher.|
-|[NETSDK1147](netsdk1147.md)|To build this project, the following workloads must be installed: {0}|
+|[NETSDK1147](netsdk1147.md)|To build this project, the following workloads must be installed: {0}.|
 |NETSDK1148|A referenced assembly was compiled using a newer version of Microsoft.Windows.SDK.NET.dll. Please update to a newer .NET SDK in order to reference this assembly.|
 |[NETSDK1149](netsdk1149.md)|{0} cannot be referenced because it uses built-in support for WinRT, which is no longer supported in .NET 5 and higher. An updated version of the component supporting .NET 5 is needed. For more information, see <https://aka.ms/netsdk1149>.|
 |NETSDK1150|The referenced project '{0}' is a non self-contained executable.  A non self-contained executable cannot be referenced by a self-contained executable.  For more information, see <https://aka.ms/netsdk1150>.|
@@ -175,8 +175,8 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |[NETSDK1174](netsdk1174.md)|The abbreviation of -p for --project is deprecated. Please use --project.|
 |NETSDK1175|Windows Forms is not supported or recommended with trimming enabled. Please go to <https://aka.ms/dotnet-illink/windows-forms> for more details.|
 |NETSDK1176|Compression in a single file bundle is only supported when publishing a self-contained application.|
-|NETSDK1177|Failed to sign apphost with error code {1}: {0}|
-|NETSDK1178|The project depends on the following workload packs that do not exist in any of the workloads available in this installation: {0}|
+|NETSDK1177|Failed to sign apphost with error code {1}: {0}.|
+|NETSDK1178|The project depends on the following workload packs that do not exist in any of the workloads available in this installation: {0}.|
 |NETSDK1179|One of '--self-contained' or '--no-self-contained' options are required when '--runtime' is used.|
 |NETSDK1181|Error getting pack version: Pack '{0}' was not present in workload manifests.|
 |NETSDK1182|Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.|

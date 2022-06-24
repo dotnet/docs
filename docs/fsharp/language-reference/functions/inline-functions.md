@@ -59,12 +59,12 @@ arr  |> iterateTwice (fun x ->
 Then after inlining and other optimizations, the code becomes:
 
 ```fsharp
-let arr = [| 1.. 100 |]
+let arr = [| 1..100 |]
 let mutable sum = 0
-for j = 0 to array.Length-1 do
-    sum <- array[i] + x
-for j = 0 to array.Length-1 do
-    sum <- array[i] + x
+for j = 0 to arr.Length - 1 do
+    sum <- sum + arr[j] 
+for j = 0 to arr.Length - 1 do
+    sum <- sum + arr[j] 
 ```
 
 This optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.

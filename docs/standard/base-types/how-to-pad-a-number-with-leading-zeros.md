@@ -1,7 +1,8 @@
 ---
 title: "How to: Pad a Number with Leading Zeros"
 description: Learn to pad a number with leading zeros. Add leading zeros to integers or numeric values to a specific total length or a specific number of leading zeros.
-ms.date: "02/25/2019"
+ms.date: "06/24/2022"
+ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
   - "vb"
@@ -27,7 +28,7 @@ You can add leading zeros to an integer by using the "D" [standard numeric forma
 
     - To display the integer as a hexadecimal value, call its `ToString(String)` method and pass the string "X*n*" as the value of the format parameter, where *n* represents the minimum length of the string.
 
-You can also use the format string in an interpolated string in both [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md), or you can call a method, such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, that uses [composite formatting](composite-formatting.md).
+You can also use the format string in an interpolated string in both [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md). Alternatively, you can also call a method such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> that uses [composite formatting](composite-formatting.md).
 
 The following example formats several integer values with leading zeros so that the total length of the formatted number is at least eight characters.
 
@@ -50,7 +51,7 @@ The following example formats several integer values with leading zeros so that 
 
 1. Call the integer value's `ToString(String)` method, and pass the string "D*n*" for decimal strings and "X*n*" for hexadecimal strings, where *n* represents the total length of the padded string. You can also use the "D*n*" or "X*n*" format string in a method that supports composite formatting.
 
-The following example pads an integer value with five leading zeros.
+The following example pads an integer value with five leading zeros:
 
 [!code-csharp[Formatting.HowTo.PadNumber#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.PadNumber/cs/Pad1.cs#2)]
 [!code-vb[Formatting.HowTo.PadNumber#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.PadNumber/vb/Pad1.vb#2)]
@@ -90,7 +91,7 @@ The following example formats several numeric values with leading zeros. As a re
 
 1. Supply the custom format string as a parameter either to the number's `ToString(String)` method or to a method that supports composite formatting.
 
-The following example pads two <xref:System.Double> values with five leading zeros.
+The following example pads two <xref:System.Double> values with five leading zeros:
 
 [!code-csharp[Formatting.HowTo.PadNumber#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.PadNumber/cs/Pad1.cs#4)]
 [!code-vb[Formatting.HowTo.PadNumber#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.PadNumber/vb/Pad1.vb#4)]

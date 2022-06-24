@@ -2,7 +2,8 @@
 title: Unit testing C# with NUnit and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
-ms.date: 08/31/2018
+ms.date: 06/24/2022
+ms.custom: devdivchpfy22
 ---
 # Unit testing C# with NUnit and .NET Core
 
@@ -146,7 +147,7 @@ The `[TestFixture]` attribute denotes a class that contains unit tests. The `[Te
 
 Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The NUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
-Your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `PrimeService` class that works:
+Your test fails. You haven't created the implementation yet. Make the test pass by writing the simplest code in the `PrimeService` class that works:
 
 ```csharp
 public bool IsPrime(int candidate)
@@ -159,7 +160,7 @@ public bool IsPrime(int candidate)
 }
 ```
 
-In the *unit-testing-using-nunit* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `PrimeService` project and then for the `PrimeService.Tests` project. After building both projects, it runs this single test. It passes.
+In the *unit-testing-using-nunit* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `PrimeService` project and then for the `PrimeService.Tests` project. After you build both the projects, it runs this single test. It passes.
 
 ## Adding more features
 

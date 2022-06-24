@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 06/21/2022
+ms.date: 06/24/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -152,7 +152,7 @@ Because objects in generations 0 and 1 are short-lived, these generations are kn
 
 Ephemeral generations are allocated in the memory segment that's known as the ephemeral segment. Each new segment acquired by the garbage collector becomes the new ephemeral segment and contains the objects that survived a generation 0 garbage collection. The old ephemeral segment becomes the new generation 2 segment.
 
-The size of the ephemeral segment varies depending on whether a system is 32-bit or 64-bit and on the type of garbage collector it's running ([workstation or server GC](workstation-server-gc.md)). The following table shows the default sizes of the ephemeral segment.
+The size of the ephemeral segment varies depending on whether a system is 32-bit or 64-bit and on the type of garbage collector it's running ([workstation or server GC](workstation-server-gc.md)). The following table shows the default sizes of the ephemeral segment:
 
 |Workstation/server GC|32-bit|64-bit|
 |-|-------------|-------------|

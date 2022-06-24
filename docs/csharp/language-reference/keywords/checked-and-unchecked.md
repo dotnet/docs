@@ -29,7 +29,7 @@ The following operations are affected by the overflow checking:
 
 - Explicit numeric conversions between integral types, or from `float` or `double` to an integral type.
 
-Beginning with C# 11, you can define a `checked` variant for operators that are affected by overflow checking. If you define a `checked` operator, you must also defined an operator without the `checked` keyword. For more information on checked and unchecked operators, see the article on [Arithmetic operators](../operators/arithmetic-operators.md).
+Beginning with C# 11, you can define a `checked` variant for operators that are affected by overflow checking. If you define a `checked` operator, you must also define an operator without the `checked` keyword. For more information on checked and unchecked operators, see [Arithmetic operators](../operators/arithmetic-operators.md).
 
 If neither `checked` nor `unchecked` is specified, the default context for non-constant expressions (expressions that are evaluated at run time) is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. By default the value of that option is unset and arithmetic operations are executed in an unchecked context.
 

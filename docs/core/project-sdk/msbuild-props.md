@@ -139,6 +139,16 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 </PropertyGroup>
 ```
 
+### PackRelease
+
+The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
+
+```xml
+<PropertyGroup>
+  <PackRelease>true</PackRelease>
+</PropertyGroup>
+```
+
 ## Publish-related properties
 
 The following MSBuild properties are documented in this section:
@@ -155,6 +165,7 @@ The following MSBuild properties are documented in this section:
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [ProduceReferenceAssemblyInOutDir](#producereferenceassemblyinoutdir)
+- [PublishRelease](#publishrelease)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
@@ -303,6 +314,19 @@ In .NET 5 and earlier versions, reference assemblies are always written to the `
 ```
 
 For more information, see [Write reference assemblies to intermediate output](../compatibility/sdk/6.0/write-reference-assemblies-to-obj.md).
+
+### PublishRelease
+
+The `PublishRelease` property informs `dotnet publish` to leverage the `Release` configuration instead of the `Debug` configuration. We recommend adding this property to a `Directory.Build.props` file instead of a project file so that it's evaluated early enough for the configuration change to propagate.
+
+```xml
+<PropertyGroup>
+  <PublishRelease>true</PublishRelease>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> This property does not affect the behavior of `dotnet build /t:Publish`.
 
 ### RollForward
 

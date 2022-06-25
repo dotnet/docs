@@ -13,7 +13,7 @@ ASP.NET Core 7.0 Preview 6
 
 ## Previous behavior
 
-Previously, if no values for the address and port were specified explicitly but a local development certificate was available, Kestrel defaulted to binding to both http://localhost:5000 and https://localhost:5001.
+Previously, if no values for the address and port were specified explicitly but a local development certificate was available, Kestrel defaulted to binding to both `http://localhost:5000` and `https://localhost:5001`.
 
 ## New behavior
 

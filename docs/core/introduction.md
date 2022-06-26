@@ -122,7 +122,7 @@ The .NET Team at Microsoft works collaboratively with other organizations to dis
 
 [Samsung supports .NET](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.
 
-## Runtime technology
+## Runtime
 
 The [Common Language Runtime (CLR)](../standard/clr.md) is the foundation all .NET apps are built on. The [fundamental features of the runtime](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/intro-to-clr.md) are:
 

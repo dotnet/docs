@@ -157,7 +157,7 @@ IL needs to be compiled to native code in order to execute on a CPU, for example
 
 * On Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
 * On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
-* In Wasm environments, AOT is mandatory.
+* In WebAssembly (Wasm) environments, AOT is mandatory.
 
 The advantage of the JIT is that it can compile an app (unmodified) to the CPU instructions and calling conventions in a given environment, per the underlying operating system and hardware. It can also compile code at higher or lower levels of quality to enable better startup and steady-state throughput performance.
 

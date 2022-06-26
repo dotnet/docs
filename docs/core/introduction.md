@@ -240,7 +240,7 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 
 * **.NET Framework** -- It provides access to the broad capabilities of Windows and Windows Server. Also extensively used for Windows-based cloud computing. The original .NET.
 * **Mono** -- A cross-platform implementation of .NET Framework. The original community and open source .NET. Used for Android, iOS, and Wasm apps.
-* **.NET (Core)** -- A cross-platform and open source implementation of .NET, re-thought for the cloud age while remaining significantly compatible with .NET Framework. Uses for Linux, macOS, and Windows support.
+* **.NET (Core)** -- A cross-platform and open source implementation of .NET, rethought for the cloud age while remaining significantly compatible with .NET Framework. Used for Linux, macOS, and Windows apps.
 
 ## Next steps
 

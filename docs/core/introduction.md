@@ -131,7 +131,7 @@ The [Common Language Runtime (CLR)](../standard/clr.md) is the foundation all .N
 * High level support for programming languages.
 * Cross-platform design.
 
-.NET is sometimes called a "managed code" runtime. It is called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR is also virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions.
+.NET is sometimes called a "managed code" runtime. It is called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions.
 
 The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments. Instead, you just need to install a different runtime to run your app.
 

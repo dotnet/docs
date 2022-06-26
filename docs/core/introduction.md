@@ -100,8 +100,8 @@ Hello, World!
 
 You can download .NET from:
 
-* [The Microsoft download site](https://dotnet.microsoft.com/download/)
-* [Containers](https://mcr.microsoft.com/catalog?search=dotnet/)
+* [The Microsoft download site](https://dotnet.microsoft.com/download/).
+* [Containers](https://mcr.microsoft.com/catalog?search=dotnet/).
 * [Linux package managers](install/linux.md).
 
 ## Free and open source

@@ -135,9 +135,9 @@ The [Common Language Runtime (CLR)](../standard/clr.md) is the foundation all .N
 
 The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments. Instead, you just need to install a different runtime to run your app.
 
-The runtime exposes various [diagnostics](https://docs.microsoft.com/dotnet/core/diagnostics/) services and APIs for debuggers, [dump](diagnostics/dumps/) and [tracing](diagnostics/logging-tracing/) tools, and [observability](diagnostics/#instrumentation-for-observability). The observability implementation is primarily [built around OpenTelemetry](https://devblogs.microsoft.com/dotnet/opentelemetry-net-reaches-v1-0/), enabling [flexible application monitoring](https://devblogs.microsoft.com/dotnet/announcing-dotnet-monitor-in-net-6/) and site reliability engineering (SRE).
+The runtime exposes various [diagnostics](/dotnet/core/diagnostics/) services and APIs for debuggers, [dumps](diagnostics/dumps.md) and [tracing](diagnostics/logging-tracing.md) tools, and [observability](diagnostics/index.md#instrumentation-for-observability). The observability implementation is primarily [built around OpenTelemetry](https://devblogs.microsoft.com/dotnet/opentelemetry-net-reaches-v1-0/), enabling [flexible application monitoring](https://devblogs.microsoft.com/dotnet/announcing-dotnet-monitor-in-net-6/) and site reliability engineering (SRE).
 
-The runtime offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types) values across the native/managed-code boundary.
+The runtime offers low-level C-style interop functionality, via a combination of [P/Invoke](../standard/native-interop/index.md), value types, and the ability to [blit](../framework/interop/blittable-and-non-blittable-types.md) values across the native/managed-code boundary.
 
 ## Languages
 
@@ -153,9 +153,9 @@ The runtime is designed to support multiple programming languages. C#, F#, and V
 
 .NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or architecture. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
-IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models. 
+IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models.
 
-* On Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploy/ready-to-run.md)).
+* On Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
 * On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
 * In Wasm environments, AOT is mandatory.
 
@@ -217,7 +217,7 @@ For more information, see [Using .NET SDK and tools in Continuous Integration (C
 
 .NET apps can be [published in two different modes](deploying/index.md):
 
-* *Self-contained* apps include the .NET runtime and dependent libraries. They can be [single-file](deploying/single-file/overview) or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps always target a single operating system and architecture configuration.
+* *Self-contained* apps include the .NET runtime and dependent libraries. They can be [single-file](deploying/single-file/overview.md) or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps always target a single operating system and architecture configuration.
 * *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally. Framework-dependent apps can be published for a single operating system and architecture configuration or as "portable," targeting all supported configurations.
 
 .NET apps are launched with a native executable, by default. The executable is both operating system and architecture-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).

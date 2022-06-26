@@ -6,7 +6,7 @@ ms.date: 08/24/2021
 ---
 # Runtime libraries overview
 
-The [.NET runtime](../core/introduction.md#sdk-and-runtimes), which is installed on a machine for use by [framework-dependent apps](../core/introduction.md#deployment-models), has an expansive standard set of class libraries, known as [runtime libraries](glossary.md#runtime), [framework libraries](glossary.md#framework-libraries), or the [base class library (BCL)](glossary.md#bcl). In addition, there are extensions to the runtime libraries, provided in NuGet packages.
+The [.NET runtime](../core/introduction.md), which is installed on a machine for use by [framework-dependent apps](../core/introduction.md#deployment-models), has an expansive standard set of class libraries, known as [runtime libraries](glossary.md#runtime), [framework libraries](glossary.md#framework-libraries), or the [base class library (BCL)](glossary.md#bcl). In addition, there are extensions to the runtime libraries, provided in NuGet packages.
 
 These libraries provide implementations for many general and app-specific types, algorithms, and utility functionality.
 

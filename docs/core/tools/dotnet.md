@@ -1,11 +1,11 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 07/19/2021
+ms.date: 05/06/2022
 ---
 # dotnet command
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -39,8 +39,6 @@ dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 ```
-
-`--roll-forward` is available since .NET Core 3.x. Use `--roll-forward-on-no-candidate-fx` for .NET Core 2.x.
 
 ## Description
 
@@ -106,7 +104,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
 ### Runtime options
 
-The following options are available when `dotnet` runs an application. For example, `dotnet myapp.dll --roll-forward Major`.
+The following options are available when `dotnet` runs an application. For example, `dotnet --roll-forward Major myapp.dll`.
 
 - **`--additionalprobingpath <PATH>`**
 
@@ -124,7 +122,7 @@ The following options are available when `dotnet` runs an application. For examp
 
   Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
-- **`--roll-forward <SETTING>`** **Available starting with .NET Core SDK 3.0.**
+- **`--roll-forward <SETTING>`** **
 
   Controls how roll forward is applied to the app. The `SETTING` can be one of the following values. If not specified, `Minor` is the default.
 
@@ -138,18 +136,6 @@ The following options are available when `dotnet` runs an application. For examp
   With the exception of `Disable`, all settings will use the highest available patch version.
 
   Roll forward behavior can also be configured in a project file property, a runtime configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
-
-- **`--roll-forward-on-no-candidate-fx <N>`** **Available in .NET Core 2.x SDK.**
-
-  Defines behavior when the required shared framework is not available. `N` can be:
-
-  - `0` - Disable even minor version roll forward.
-  - `1` - Roll forward on minor version, but not on major version. This is the default behavior.
-  - `2` - Roll forward on minor and major versions.
-
-  For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
-
-  Starting with .NET Core 3.0, this option is superseded by `--roll-forward`, and that option should be used instead.
 
 - **`--fx-version <VERSION>`**
 
@@ -221,26 +207,26 @@ Command | Function
 
 ### Global, tool-path, and local tools commands
 
-Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md). Global and tool-path tools are available starting with .NET Core SDK 2.1. Local tools are available starting with .NET Core SDK 3.0.
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
 
 Command | Function
 --- | ---
 [dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
 [dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
-[dotnet tool search](dotnet-tool-list.md) | Searches NuGet.org for tools that have the specified search term in their name or metadata.
+[dotnet tool search](dotnet-tool-search.md) | Searches NuGet.org for tools that have the specified search term in their name or metadata.
 [dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
 [dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
 
 ### Additional tools
 
-Starting with .NET Core SDK 2.1.300, a number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET SDK. These tools are listed in the following table:
+The following additional tools are available as part of the .NET SDK:
 
 | Tool                                              | Function                                                     |
 | ------------------------------------------------- | ------------------------------------------------------------ |
 | dev-certs                                         | Creates and manages development certificates.                |
 | [ef](/ef/core/miscellaneous/cli/dotnet)           | Entity Framework Core command-line tools.                    |
 | [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
-| [watch](/aspnet/core/tutorials/dotnet-watch)      | Starts a file watcher that runs a command when files change. |
+| [watch](dotnet-watch.md)                          | A file watcher that restarts or hot reloads an application when it detects changes in the source code. |
 
 For more information about each tool, type `dotnet <tool-name> --help`.
 

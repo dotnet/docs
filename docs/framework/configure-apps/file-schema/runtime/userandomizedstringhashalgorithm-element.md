@@ -95,6 +95,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

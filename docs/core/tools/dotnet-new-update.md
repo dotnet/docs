@@ -5,13 +5,13 @@ ms.date: 04/29/2021
 ---
 # dotnet new update
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet new --update-check` checks for available updates for installed template packages.
+`dotnet new --update-check` - Checks for available updates for installed template packages.
 
-`dotnet new --update-apply` applies updates to installed template packages.
+`dotnet new --update-apply` - Applies updates to installed template packages.
 
 ## Synopsis
 

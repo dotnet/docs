@@ -1,38 +1,42 @@
 ---
-title: Code style rules overview
-description: Learn about the different .NET code style rules and categories.
+title: Code-style rules overview
+description: Learn about the different .NET code-style rules and categories.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 ---
-# Code style rules
+# Code-style rules
 
-.NET code style analysis provides rules that aim to maintain consistent *code style* in your codebase. These rules have an "IDE" prefix in the rule ID. Most of the rules have associated options to customize the preferred style. The rules are organized into the following subcategories:
+.NET code-style analysis provides rules that aim to maintain consistent *style* in your codebase. These rules have an "IDE" prefix in the rule ID.
+
+Most of the rules have one or more associated options to customize the preferred style. For example, [Use simple 'using' statement (IDE0063)](ide0063.md) has the associated option `csharp_prefer_simple_using_statement` that lets you define whether you prefer a `using` declaration or a `using` statement. The rule enforces whichever options you choose at a specified level (for example, warning or error).
+
+The code-style rules are organized into the following subcategories:
 
 - [Language rules](language-rules.md)
 
-   Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred.
+  Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred.
 
 - [Unnecessary code rules](unnecessary-code-rules.md)
 
-   Rules that pertain to unnecessary code that indicates a potential readability, maintainability, performance, or functional problem. For example, unreachable code within methods or unused private fields, properties, or methods is unnecessary code.
+  Rules that pertain to unnecessary code that indicates a potential readability, maintainability, performance, or functional problem. For example, unreachable code within methods or unused private fields, properties, or methods is unnecessary code.
 
-- [Formatting rules](formatting-rules.md)
+- [Formatting rules](ide0055.md)
 
-   Rules that pertain to the layout and structure of your code in order to make it easier to read. For example, you can specify rules that regard Allman braces, or whether spaces in control blocks are preferred.
+  Rules that pertain to the layout and structure of your code in order to make it easier to read. For example, you can specify a formatting option that defines whether spaces in control blocks are preferred or not.
 
 - [Naming rules](naming-rules.md)
 
-   Rules that pertain to the naming of code elements. For example, you can specify that `async` method names must have an "Async" suffix.
+  Rules that pertain to the naming of code elements. For example, you can specify that `async` method names must have an "Async" suffix.
 
 - [Miscellaneous rules](miscellaneous-rules.md)
 
-   Rules that do not belong in other categories.
+  Rules that do not belong in other categories.
 
 ## Index
 
-The following table list all the code style rules by ID and options, if any.
+The following table list all the code-style rules by ID and [options](../code-style-rule-options.md), if any.
 
 > [!div class="mx-tdCol3BreakAll"]
 > | Rule ID | Title | Option |
@@ -85,7 +89,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0052](ide0052.md) | Remove unread private member | |
 > | [IDE0053](ide0053.md) | Use expression body for lambdas | [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas) |
 > | [IDE0054](ide0054-ide0074.md) | Use compound assignment | [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment) |
-> | [IDE0055](formatting-rules.md) | Fix formatting | |
+> | [IDE0055](ide0055.md) | Fix formatting | (Too many to list here. See [.NET formatting options](dotnet-formatting-options.md) and [C# formatting options](csharp-formatting-options.md).) |
 > | [IDE0056](ide0056.md) | Use index operator | [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator) |
 > | [IDE0057](ide0057.md) | Use range operator | [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator) |
 > | [IDE0058](ide0058.md) | Remove unused expression value | [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)<br/> [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference) |
@@ -121,25 +125,17 @@ The following table list all the code style rules by ID and options, if any.
 
 ## Legend
 
-The following table shows the type of information that is provided for each rule in the reference documentation.
+The following table shows the type of information that's provided for each rule in the reference documentation.
 
-|Item|Description|
-|----------|-----------------|
-| **Rule ID** |The unique identifier for the rule. The rule ID is used for configuring rule severity and suppressing warnings in the code file.|
-| **Title** |The title for the rule.|
-| **Category** | The category for the rule. |
-| **Subcategory** | The sub-category for the rule, such as Language rules, Formatting rules or Naming rules. |
-| **Applicable languages** |Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.|
-| **Introduced version** |Version of the .NET SDK or Visual Studio when the rule was first introduced.|
-
-For each option for the rule, following information is provided.
-
-|Item|Description|
-|----------|-----------------|
-| **Option name** |The code style option name for the rule, if any. Options for customizing style are specified in an EditorConfig file.|
-| **Option values** |The code style option values for the rule option, if any.|
-| **Default option value** |Default code style option value for the rule option, if any.
-| **Examples** |Examples for the code style corresponding to the option.|
+| Item                     | Description                                                                                                       |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Rule ID**              | The unique identifier for the rule. Used for configuring rule severity and suppressing warnings in the code file. |
+| **Title**                | The title for the rule.                                                                                           |
+| **Category**             | The category for the rule.                                                                                        |
+| **Subcategory**          | The subcategory for the rule, such as Language rules, Formatting rules, or Naming rules.                          |
+| **Applicable languages** | Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.           |
+| **Introduced version**   | Version of the .NET SDK or Visual Studio when the rule was first introduced.                                      |
+| **Options**              | Any available options for the rule.                                                                               |
 
 ## See also
 

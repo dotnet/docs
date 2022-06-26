@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ `dotnet-dump` version 3.0.47001 and later versions
 
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
@@ -62,6 +62,7 @@ The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux 
 | ------------------------------------------- |
 | [dotnet-dump collect](#dotnet-dump-collect) |
 | [dotnet-dump analyze](#dotnet-dump-analyze) |
+| [dotnet-dump ps](#dotnet-dump-ps)           |
 
 ## dotnet-dump collect
 
@@ -185,6 +186,28 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 > [!NOTE]
 > Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md).
+
+## dotnet-dump ps
+
+ Lists the dotnet processes that dumps can be collected from.
+ `dotnet-dump` version 6.0.320703 and later versions also display the command-line arguments that each process was started with, if available.
+
+### Synopsis
+
+```console
+dotnet-dump ps [-h|--help]
+```
+
+### Example
+
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-dump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-dump` version 6.0.320703 and later.
+
+```console
+> dotnet-dump ps
+  
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
+```
 
 ## Using `dotnet-dump`
 

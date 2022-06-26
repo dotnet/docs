@@ -90,5 +90,6 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

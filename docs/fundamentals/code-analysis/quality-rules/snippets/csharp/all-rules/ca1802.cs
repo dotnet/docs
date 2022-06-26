@@ -1,4 +1,6 @@
-﻿namespace ca1802
+﻿using System;
+
+namespace ca1802
 {
     //<snippet1>
     // This class violates the rule.
@@ -7,6 +9,11 @@
         static readonly int x = 3;
         static readonly double y = x + 2.1;
         static readonly string s = "readonly";
+
+        public void Print()
+        {
+            Console.WriteLine(s);
+        }
     }
 
     // This class satisfies the rule.

@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/16/2022
+ms.date: 05/18/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -78,7 +78,7 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
+The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For information about what is preinstalled in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it's possible to run .NET CLI commands from the GitHub Action workflows, for a more fully functioning .NET-based GitHub Action, we recommend that you containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
@@ -124,6 +124,12 @@ The preceding *action.yml* file defines:
 - The `runs` node, which tells GitHub that the app is a `docker` application and what arguments to pass to it
 
 For more information, see [Metadata syntax for GitHub Actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions).
+
+### Pre-defined environment variables
+
+With GitHub Actions, you'll get a lot of [environment variables](https://docs.github.com/actions/learn-github-actions/environment-variables#default-environment-variables) by default. For instance, the variable `GITHUB_REF` will always contain a reference to the branch or tag that triggered the workflow run. `GITHUB_REPOSITORY` has the owner and repository name, for example, `dotnet/docs`.
+
+You should explore the pre-defined environment variables and use them accordingly.
 
 ## Workflow composition
 
@@ -184,13 +190,35 @@ The workflow specifies that `on` a `push` to the `main` branch, the action is tr
 
 :::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Action log":::
 
-## See also
+## Performance improvements
 
-<!-- TODO: Add DevOps eBook link when published -->
+If you followed along the sample, you might have noticed that every time this action is used, it will do a **docker build** for that image. So, every trigger is faced with some time to build the container before running it. Before releasing your GitHub Action to the marketplace, you should:
+
+1. (automatically) Build the Docker image
+2. Push the docker image to the GitHub Container Registry (or any other public container registry)
+3. Change the action to not build the image, but to use an image from a public registry.
+
+```yaml
+# Rest of action.yml content removed for readability
+# using Dockerfile
+runs:
+  using: 'docker'
+  image: 'Dockerfile' # Change this line
+# using container image from public registry
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/some-user/some-registry' # Starting with docker:// is important!!
+```
+
+For more information, see [GitHub Docs: Working with the Container registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
+
+## See also
 
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)
+- [DevOps for ASP.NET Core Developers](../architecture/devops-for-aspnet-developers/index.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
+- [Open-source GitHub Action build in .NET](https://github.com/svrooij/dotnet-feeder/) with a [workflow](https://github.com/svrooij/dotnet-feeder/blob/main/.github/workflows/build.yml) for building and pushing the docker image automatically.
 
 ## Next steps
 

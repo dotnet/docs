@@ -29,6 +29,8 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: IHubClients and IHubCallerClients hide members
+          href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
         - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
@@ -43,6 +45,10 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
+        - name: Collectible Assembly in non-collectible AssemblyLoadContext
+          href: core-libraries/7.0/collectible-assemblies.md
+        - name: Equals method behavior change for NaN
+          href: core-libraries/7.0/equals-nan.md
         - name: FullPath and OldFullPath return fully qualified path
           href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
@@ -51,6 +57,12 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Cryptography
+        items:
+        - name: EnvelopedCms.Decrypt doesn't double unwrap
+          href: cryptography/7.0/decrypt-envelopedcms.md
+        - name: X500DistinguishedName parsing of friendly names
+          href: cryptography/7.0/x500-distinguished-names.md
       - name: Deployment
         items:
         - name: Multi-level lookup is disabled
@@ -61,10 +73,12 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
-      - name: SDK
+      - name: SDK and MSBuild
         items:
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: Serialization
         items:
         - name: Deserialize Version type with leading or trailing whitespace
@@ -79,6 +93,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: ActionResult<T> sets StatusCode to 200
+          href: aspnet-core/6.0/actionresult-statuscode.md
         - name: AddDataAnnotationsValidation method made obsolete
           href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
@@ -173,6 +189,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: StringBuilder.Append overloads and evaluation order
           href: core-libraries/6.0/stringbuilder-append-evaluation-order.md
+        - name: Strong-name APIs throw PlatformNotSupportedException
+          href: core-libraries/6.0/strong-name-signing-exceptions.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: System.Security.SecurityContext is marked obsolete
@@ -239,6 +257,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK
@@ -557,6 +577,8 @@ items:
             href: aspnet-core/7.0/api-controller-action-parameters-di.md
           - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
             href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+          - name: IHubClients and IHubCallerClients hide members
+            href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
           - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
           - name: Microsoft.Data.SqlClient updated to 4.0.1
@@ -567,6 +589,8 @@ items:
             href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
         items:
+        - name: ActionResult<T> sets StatusCode to 200
+          href: aspnet-core/6.0/actionresult-statuscode.md
         - name: AddDataAnnotationsValidation method made obsolete
           href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
@@ -727,6 +751,10 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
+        - name: Collectible Assembly in non-collectible AssemblyLoadContext
+          href: core-libraries/7.0/collectible-assemblies.md
+        - name: Equals method behavior change for NaN
+          href: core-libraries/7.0/equals-nan.md
         - name: FullPath and OldFullPath return fully qualified path
           href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
@@ -775,6 +803,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: StringBuilder.Append overloads and evaluation order
           href: core-libraries/6.0/stringbuilder-append-evaluation-order.md
+        - name: Strong-name APIs throw PlatformNotSupportedException
+          href: core-libraries/6.0/strong-name-signing-exceptions.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: System.Security.SecurityContext is marked obsolete
@@ -849,6 +879,12 @@ items:
         href: corefx.md
     - name: Cryptography
       items:
+      - name: .NET 7
+        items:
+        - name: EnvelopedCms.Decrypt doesn't double unwrap
+          href: cryptography/7.0/decrypt-envelopedcms.md
+        - name: X500DistinguishedName parsing of friendly names
+          href: cryptography/7.0/x500-distinguished-names.md
       - name: .NET 6
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
@@ -963,6 +999,8 @@ items:
         items:
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
+        - name: Serialization of custom types in .NET 7
+          href: sdk/7.0/custom-serialization.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated
@@ -985,6 +1023,8 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: Publish ReadyToRun with --no-restore requires changes
           href: sdk/6.0/publish-readytorun-requires-restore-change.md
+        - name: runtimeconfig.dev.json file not generated
+          href: sdk/6.0/runtimeconfigdev-file.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK

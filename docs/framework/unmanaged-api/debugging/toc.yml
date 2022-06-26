@@ -1,3 +1,4 @@
+items:
 - name: Debugging
   href: index.md
   items:
@@ -1492,6 +1493,8 @@
       href: clrdatacreateinstance-function.md
     - name: PFN_CLRDataCreateInstance Function Pointer
       href: pfn-clrdatacreateinstance-function-pointer.md
+    - name: PSTARTUP_CALLBACK Function Pointer
+      href: pstartup_callback-function-pointer.md
   - name: Debugging Enumerations
     href: debugging-enumerations.md
     items:
@@ -1569,6 +1572,8 @@
       href: corgcreferencetype-enumeration.md
     - name: ILCodeKind Enumeration
       href: ilcodekind-enumeration.md
+    - name: LIBRARY_PROVIDER_INDEX_TYPE Enumeration
+      href: libraryproviderindextype-enumeration.md
     - name: LoggingLevelEnum Enumeration
       href: logginglevelenum-enumeration.md
     - name: LogSwitchCallReason Enumeration

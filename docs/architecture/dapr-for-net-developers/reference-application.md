@@ -381,7 +381,7 @@ public class CatalogService : ICatalogService
 }
 ```
 
-Notice how no Dapr specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
+Notice how no Dapr-specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
 
 The Dapr HttpClient is configured for the `CatalogService` class on program startup:
 

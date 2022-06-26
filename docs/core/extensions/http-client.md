@@ -1,20 +1,23 @@
 ---
-title: HTTP with .NET
+title: IHttpClientFactory with .NET
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
 ms.date: 11/12/2021
 ---
 
-# HTTP with .NET
+# IHttpClientFactory with .NET
 
 In this article, you'll learn how to use the `IHttpClientFactory` and the `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for a while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
-## Explore the `IHttpClientFactory` type
+> [!NOTE]
+> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
 
-All of the sample source code in this article relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, [The Internet Chuck Norris Database](https://www.icndb.com) free API is used to make HTTP GET requests for "nerdy" jokes.
+## The `IHttpClientFactory` type
+
+All of the sample source code in this article relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, [The Internet Chuck Norris Database](https://www.icndb.com) free API is used to make HTTP `GET` requests for "nerdy" jokes.
 
 When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
 
@@ -145,16 +148,16 @@ The defined interface can be consumed where necessary, with the implementation p
 
 ## Make POST, PUT, and DELETE requests
 
-In the preceding examples, all HTTP requests use the GET HTTP verb. `HttpClient` also supports other HTTP verbs, including:
+In the preceding examples, all HTTP requests use the `GET` HTTP verb. `HttpClient` also supports other HTTP verbs, including:
 
-- POST
-- PUT
-- DELETE
-- PATCH
+- `POST`
+- `PUT`
+- `DELETE`
+- `PATCH`
 
 For a complete list of supported HTTP verbs, see <xref:System.Net.Http.HttpMethod>.
 
-The following example shows how to make an HTTP POST request:
+The following example shows how to make an HTTP `POST` request:
 
 :::code source="snippets/http/basic/ItemService.cs" id="Create":::
 
@@ -167,13 +170,13 @@ In the preceding code, the `CreateItemAsync` method:
 
 `HttpClient` also supports other types of content. For example, <xref:System.Net.Http.MultipartContent> and <xref:System.Net.Http.StreamContent>. For a complete list of supported content, see <xref:System.Net.Http.HttpContent>.
 
-The following example shows an HTTP PUT request:
+The following example shows an HTTP `PUT` request:
 
 :::code source="snippets/http/basic/ItemService.cs" id="Update":::
 
-The preceding code is very similar to the POST example. The `UpdateItemAsync` method calls <xref:System.Net.Http.HttpClient.PutAsync%2A> instead of `PostAsync`.
+The preceding code is very similar to the `POST` example. The `UpdateItemAsync` method calls <xref:System.Net.Http.HttpClient.PutAsync%2A> instead of `PostAsync`.
 
-The following example shows an HTTP DELETE request:
+The following example shows an HTTP `DELETE` request:
 
 :::code source="snippets/http/basic/ItemService.cs" id="Delete":::
 
@@ -199,7 +202,7 @@ services.AddHttpClient("Named.Client")
 > [!IMPORTANT]
 > You can generally treat `HttpClient` instances as objects that **do not** require disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
 
-Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. This pattern becomes unnecessary after migrating to `IHttpClientFactory`.
+Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
 
 ## Configure the `HttpMessageHandler`
 

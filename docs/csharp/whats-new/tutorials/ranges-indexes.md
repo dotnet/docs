@@ -36,7 +36,7 @@ string[] words = new string[]
     "quick",    // 1                   ^8
     "brown",    // 2                   ^7
     "fox",      // 3                   ^6
-    "jumped",   // 4                   ^5
+    "jumps",    // 4                   ^5
     "over",     // 5                   ^4
     "the",      // 6                   ^3
     "lazy",     // 7                   ^2
@@ -50,7 +50,7 @@ You can retrieve the last word with the `^1` index. Add the following code below
 
 A range specifies the *start* and *end* of a range. Ranges are exclusive, meaning the *end* isn't included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
 
-The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range. Add the following code to the same method. Copy and paste it at the bottom of the interactive window.
+The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range.
 
 [!code-csharp[Range](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Range)]
 
@@ -98,3 +98,23 @@ In all cases, the range operator for <xref:System.Array> allocates an array to s
 You'll often use ranges and indices when you want to analyze a portion of a larger sequence. The new syntax is clearer in reading exactly what portion of the sequence is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in your project:
 
 [!code-csharp[MovingAverages](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]
+
+## A Note on Range Indices and Arrays
+
+When taking a range from an array, the result is an array that is copied from the initial array, rather than referenced. Modifying values in the resulting array will not change values in the initial array.
+
+For example:
+
+```csharp
+var arrayOfFiveItems = new[] { 1, 2, 3, 4, 5 };
+
+var firstThreeItems = arrayOfFiveItems[..3]; // contains 1,2,3
+firstThreeItems[0] =  11; // now contains 11,2,3
+
+Console.WriteLine(string.Join(",", firstThreeItems));
+Console.WriteLine(string.Join(",", arrayOfFiveItems));
+
+// output:
+// 11,2,3
+// 1,2,3,4,5
+```

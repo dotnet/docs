@@ -13,7 +13,9 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_LegacySecurityPolicy>**  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_LegacySecurityPolicy>**
+
+[!INCLUDE [cas-deprecated](../../../../../includes/cas-deprecated.md)]
 
 ## Syntax
 
@@ -85,5 +87,6 @@ The following example shows how to enable legacy CAS policy for an application.
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

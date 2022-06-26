@@ -67,9 +67,9 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
   <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) isn't supported in .NET.
 
-- Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF)
+- Windows Workflow Foundation (WF)
 
-  WF and WCF aren't supported in .NET 5+ (including .NET Core). For alternatives, see [CoreWF](https://github.com/UiPath/corewf) and [CoreWCF](https://github.com/CoreWCF/CoreWCF).
+  WF isn't supported in .NET 5+ (including .NET Core). For an alternative, see [CoreWF](https://github.com/UiPath/corewf).
 
 For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](net-framework-tech-unavailable.md).
 

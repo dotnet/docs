@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 08/23/2021
+ms.date: 06/02/2022
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -70,6 +70,10 @@ Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the fol
 
 Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the conditions listed above.
 
+You can also use this pattern for a clear, concise `null` check:
+
+:::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NotNull":::
+
 For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
 
 ## Constant pattern
@@ -81,11 +85,14 @@ Beginning with C# 7.0, you use a *constant pattern* to test if an expression res
 In a constant pattern, you can use any constant expression, such as:
 
 - an [integer](../builtin-types/integral-numeric-types.md) or [floating-point](../builtin-types/floating-point-numeric-types.md) numerical literal
-- a [char](../builtin-types/char.md) or a [string](../builtin-types/reference-types.md#the-string-type) literal
+- a [char](../builtin-types/char.md)
+- a [string](../builtin-types/reference-types.md#the-string-type) literal.
 - a Boolean value `true` or `false`
 - an [enum](../builtin-types/enum.md) value
 - the name of a declared [const](../keywords/const.md) field or local
 - `null`
+
+The expression must be a type that is convertible to the constant type, with one exception: An expression whose type is `Span<char>` or `ReadOnlySpan<char>` can be matched against constant strings in C# 11 and later versions.
 
 Use a constant pattern to check for `null`, as the following example shows:
 
@@ -288,13 +295,13 @@ Consider the following excerpt from a text file containing bank transactions:
 04-15-2020, FEE,                                       5.55
 ```
 
-It's a CSV format, but some of the rows more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
+It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
 
 :::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DataRecordExample":::
 
 The preceding example takes a string array, where each element is one field in the row. The switch expression keys on the second field, which determines the kind of transaction, and the number of remaining columns. Each row ensures the data is in the correct format. The discard pattern (`_`) skips the first field, with the date of the transaction. The second field matches the type of transaction. Remaining element matches skip to the field with the amount. The final match uses the *var* pattern to capture the string representation of the amount. The expression calculates the amount to add or subtract from the balance.
 
-*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You any other pattern to match characteristics about individual elements.
+*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You use other patterns to match characteristics about individual elements.
 
 ## C# language specification
 

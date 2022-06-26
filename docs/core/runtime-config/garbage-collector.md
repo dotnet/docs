@@ -19,7 +19,7 @@ Settings are arranged into groups on this page. The settings within each group a
 
 ## Ways to specify the configuration
 
-For different versions of the the .NET runtime, there are different ways to specify the configuration values. The following table shows a summary.
+For different versions of the .NET runtime, there are different ways to specify the configuration values. The following table shows a summary.
 
 | Config location      | .NET versions this location applies to | Formats  | How it's interpreted                                         |
 | -------------------- | -------------------------------------- | -------- | ------------------------------------------------------------ |
@@ -565,7 +565,7 @@ Example:
 | **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 2.0 |
 | **Environment variable** | `DOTNET_GCName` | *string_path* | .NET 6 |
 
-## Conserve Memory
+## Conserve memory
 
 - Configures the garbage collector to conserve memory at the expense of more frequent garbage collections and possibly longer pause times.
 - Default value is 0 - this implies no change.
@@ -576,7 +576,6 @@ Example:
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
-| **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |
 

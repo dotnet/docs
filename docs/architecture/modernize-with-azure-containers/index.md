@@ -180,7 +180,7 @@ This guide doesn't show you how to create Cloud-Native applications, such as how
 
 ## Who should use this guide
 
-This guide was written for developers and solution architects who want to modernize existing ASP.NET web applications or WCF services that are based on the .NET Framework, for improved agility in shipping and releasing applications.
+This guide was written for developers and solution architects who want to modernize existing ASP.NET web applications or WCF services that are based on .NET Framework, for improved agility in shipping and releasing applications.
 
 You also might find this guide useful if you are a technical decision maker, such as an enterprise architect or a development lead/director who just wants an overview of the benefits that you can get by using Windows Containers, and by deploying to the cloud when using Microsoft Azure.
 

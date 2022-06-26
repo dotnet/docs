@@ -23,7 +23,7 @@ When behavioral changes are externally visible and modify a type's public contra
 
 ## Binary compatibility
 
-Binary compatibility refers to the ability of a consumer of an API to use the API on a newer version without recompilation. Such changes as adding methods or adding a new interface implementation to a type do not affect binary compatibility. However, removing or altering an assembly's public signatures so that consumers can no longer access the same interface exposed by the assembly does affect binary compatibility. A change of this kind is termed a *binary incompatible change*.
+Binary compatibility refers to the ability of a consumer of an API to use the API on a newer version without recompilation. Changes such as adding methods or adding a new interface implementation to a type do not affect binary compatibility. However, removing or altering an assembly's public signatures so that consumers can no longer access the same interface exposed by the assembly does affect binary compatibility. A change of this kind is termed a *binary incompatible change*.
 
 ## Source compatibility
 

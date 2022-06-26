@@ -1,7 +1,7 @@
 ---
 title: "Exception handling (Task Parallel Library)"
 description: Explore exception handling using the Task Parallel Library (TPL) in .NET. See nested aggregate exceptions, inner exceptions, unobserved task exceptions, & more.
-ms.date: 04/20/2020
+ms.date: 06/08/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,6 +26,9 @@ If you do not want to call the <xref:System.Threading.Tasks.Task.Wait%2A?display
 
 [!code-csharp[TPL_Exceptions#29](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/handling22.cs#29)]
 [!code-vb[TPL_Exceptions#29](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/handling22.vb#29)]
+
+> [!CAUTION]
+> The preceding example code includes a `while` loop that polls the task's <xref:System.Threading.Tasks.Task.IsCompleted%2A?displayProperty=nameWithType> property to determine when the task has completed. This should never be done in production code as it is very inefficient.
 
 If you do not wait on a task that propagates an exception, or access its <xref:System.Threading.Tasks.Task.Exception%2A> property, the exception is escalated according to the .NET exception policy when the task is garbage-collected.
 
@@ -91,6 +94,12 @@ In a meaningful application, the continuation delegate could log detailed inform
 - `task.GetAwaiter().GetResult()`
 
 Use a [`try-catch`](../../csharp/language-reference/keywords/try-catch.md) statement to handle and observe thrown exceptions. Alternatively, observe the exception by accessing the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property.
+
+> [!IMPORTANT]
+> The <xref:System.AggregateException> cannot be explicitly caught when using the following expressions:
+>
+> - `await task`
+> - `task.GetAwaiter().GetResult()`
 
 ## UnobservedTaskException event
 

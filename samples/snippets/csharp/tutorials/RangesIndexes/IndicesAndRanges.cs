@@ -56,7 +56,7 @@ namespace RangesIndexes
             // <SnippetIndicesAndRanges_PartialRanges>
             string[] allWords = words[..]; // contains "The" through "dog".
             string[] firstPhrase = words[..4]; // contains "The" through "fox"
-            string[] lastPhrase = words[6..]; // contains "the, "lazy" and "dog"
+            string[] lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
             foreach (var word in allWords)
                 Console.Write($"< {word} >");
             Console.WriteLine();

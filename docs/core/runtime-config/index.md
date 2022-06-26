@@ -59,6 +59,8 @@ If you're placing the options in the output JSON file, nest them under the `runt
       "version": "3.1.0"
     },
     "configProperties": {
+      "System.Drawing.EnableUnixSupport": true,
+      "System.Net.DisableIPv6": true,
       "System.GC.Concurrent": false,
       "System.Threading.ThreadPool.MinThreads": 4,
       "System.Threading.ThreadPool.MaxThreads": 25
@@ -74,6 +76,8 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 ```json
 {
   "configProperties": {
+    "System.Drawing.EnableUnixSupport": true,
+    "System.Net.DisableIPv6": true,
     "System.GC.Concurrent": false,
     "System.Threading.ThreadPool.MinThreads": "4",
     "System.Threading.ThreadPool.MaxThreads": "25"
@@ -101,10 +105,17 @@ Here is an example SDK-style project file with MSBuild properties for configurin
     <ThreadPoolMaxThreads>25</ThreadPoolMaxThreads>
   </PropertyGroup>
 
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Drawing.EnableUnixSupport" Value="true" />
+    <RuntimeHostConfigurationOption Include="System.Net.DisableIPv6" Value="true" />
+  </ItemGroup>
+
 </Project>
 ```
 
 MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They are also listed in the [Runtime configuration](../project-sdk/msbuild-props.md#runtime-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
+
+For runtime configuration settings that don't have a specific MSBuild property, the `RuntimeHostConfigurationOption` MSBuild item may be used instead.
 
 ## Environment variables
 

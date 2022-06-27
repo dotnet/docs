@@ -156,8 +156,8 @@ The install scripts do not update the registry on Windows. They just download th
   For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
   For a runtime installation, use `channel` in `A.B` format.
 
-  The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
-
+  It is forbidden to use of `version` simultaneously with `quality` parameter. When `quality` is specified the script determines the proper version by it's own.
+  
   Available since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**

@@ -67,6 +67,10 @@ items:
         items:
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+      - name: Extensions
+        items:
+        - name: ContentRootPath for apps launched by Windows Shell
+          href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -919,6 +923,10 @@ items:
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Extensions
       items:
+      - name: .NET 7
+        items:
+        - name: ContentRootPath for apps launched by Windows Shell
+          href: extensions/7.0/contentrootpath-hosted-app.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider

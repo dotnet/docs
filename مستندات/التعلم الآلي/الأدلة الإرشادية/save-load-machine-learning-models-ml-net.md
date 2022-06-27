@@ -1,4 +1,4 @@
----
+METACABAN
 title: Save and load trained models
 description: Learn how to save and load trained models
 ms.date: 12/15/2021
@@ -87,7 +87,9 @@ With the stream created, we can call the [`ConvertToOnnx`](xref:Microsoft.ML.Onn
 
 ```csharp
 mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
-```
+```AWS511
+ch would output a single [`ITransformer`](xref:Microsoft.ML.ITransformer) or separate them thus creating a separate [`ITransformer`](xref:Microsoft.ML.ITransformer) for each.
+
 
 ## Load a model stored locally
 

@@ -59,7 +59,7 @@ You're encouraged to install .NET from the official archive for your distributio
 Installation information is also provided for other distributions.
 
 - [Alpine](linux-alpine.md)
-- [Containers](/dotnet/core/docker/introduction#net-core-images)
+- [Containers](../docker/introduction.md#net-core-images)
 - [Snap](linux-snap.md)
 
 ## Next steps

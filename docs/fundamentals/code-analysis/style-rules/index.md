@@ -135,6 +135,7 @@ The following table shows the type of information that's provided for each rule 
 | **Subcategory**          | The subcategory for the rule, such as Language rules, Formatting rules, or Naming rules.                          |
 | **Applicable languages** | Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.           |
 | **Introduced version**   | Version of the .NET SDK or Visual Studio when the rule was first introduced.                                      |
+| **Options**              | Any available options for the rule.                                                                               |
 
 ## See also
 

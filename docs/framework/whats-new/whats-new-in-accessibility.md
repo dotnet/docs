@@ -31,7 +31,7 @@ The new accessibility features are enabled by default for applications that targ
 
 ```xml
 <runtime>
-    <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
+    <!-- AppContextSwitchOverrides value attribute is in the form of key1=true|false;key2=true|false  -->
     <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false" />
 </runtime>
 ```
@@ -40,7 +40,7 @@ If you choose to opt in to accessibility features in a later .NET Framework vers
 
 ```xml
 <runtime>
-    <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
+    <!-- AppContextSwitchOverrides value attribute is in the form of key1=true|false;key2=true|false  -->
     <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false" />
 </runtime>
 ```
@@ -49,8 +49,8 @@ To configure your app to take advantage of accessibility improvements in .NET Fr
 
 ```xml
 <runtime>
-    <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
-    <AppContextSwitchOverrides value=Switch.UseLegacyAccessibilityFeatures=false|Switch.UseLegacyAccessibilityFeatures.2=false|Switch.UseLegacyAccessibilityFeatures.3=false|Switch.UseLegacyAccessibilityFeatures.4=false"/>
+    <!-- AppContextSwitchOverrides value attribute is in the form of key1=true|false;key2=true|false  -->
+    <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false;Switch.UseLegacyAccessibilityFeatures.4=false"/>
 </runtime>
 ```
 
@@ -60,7 +60,7 @@ Applications that target versions of .NET Framework starting with 4.7.1 can disa
 
 ```xml
 <runtime>
-    <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
+    <!-- AppContextSwitchOverrides value attribute is in the form of key1=true|false;key2=true|false  -->
     <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures.2=true" />
 </runtime>
 ```
@@ -169,7 +169,7 @@ In applications that target .NET Framework 4.7.2 and earlier versions, a control
       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1"/>
    </startup>
    <runtime>
-      <!-- AppContextSwitchOverrides values are in the form of 'key1=true|false;key2=true|false  -->
+      <!-- AppContextSwitchOverrides values are in the form of key1=true|false;key2=true|false  -->
       <!-- Please note that disabling Switch.UseLegacyAccessibilityFeatures, Switch.UseLegacyAccessibilityFeatures.2 and Switch.UseLegacyAccessibilityFeatures.3 is required to disable Switch.System.Windows.Forms.UseLegacyToolTipDisplay -->
       <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false;Switch.System.Windows.Forms.UseLegacyToolTipDisplay=false"/>
    </runtime>

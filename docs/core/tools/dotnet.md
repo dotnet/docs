@@ -104,7 +104,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
 ### Runtime options
 
-The following options are available when `dotnet` runs an application. For example, `dotnet myapp.dll --roll-forward Major`.
+The following options are available when `dotnet` runs an application. For example, `dotnet --roll-forward Major myapp.dll`.
 
 - **`--additionalprobingpath <PATH>`**
 

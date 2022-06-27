@@ -64,7 +64,7 @@ dotnet run
 You get the following output.
 
 ```console
-Hello World with C#!
+Hello World with C#
 ```
 
 You can delete the _obj_ and _bin_ folders created by using `dotnet run`. Deleting these files ensures your template only includes the files related to your template and not any files that result from a build action.

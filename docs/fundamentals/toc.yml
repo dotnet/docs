@@ -201,6 +201,8 @@ items:
       href: ../core/tools/telemetry.md
     - name: Error messages
       items:
+      - name: List of all SDK errors
+        href: ../core/tools/sdk-errors/index.md
       - name: NETSDK1004
         href: ../core/tools/sdk-errors/netsdk1004.md
       - name: NETSDK1005 and NETSDK1047
@@ -1613,7 +1615,16 @@ items:
           - name: IDE0077
             href: code-analysis/style-rules/ide0077.md
         - name: Formatting rules
-          href: code-analysis/style-rules/formatting-rules.md
+          items:
+          - name: IDE0055
+            items:
+            - name: Overview
+              displayName: formatting rule, ide0055
+              href: code-analysis/style-rules/ide0055.md
+            - name: .NET formatting options
+              href: code-analysis/style-rules/dotnet-formatting-options.md
+            - name: C# formatting options
+              href: code-analysis/style-rules/csharp-formatting-options.md
         - name: Naming rules
           href: code-analysis/style-rules/naming-rules.md
     - name: Platform compatibility analyzer

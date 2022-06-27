@@ -58,7 +58,7 @@ The following table shows the predefined explicit conversions between the built-
 
 |From|To|
 |----------|--------|
-|[sbyte](integral-numeric-types.md)|`byte`, `ushort`, `uint`, or `ulong`, or `nuint`|
+|[sbyte](integral-numeric-types.md)|`byte`, `ushort`, `uint`, `ulong`, or `nuint`|
 |[byte](integral-numeric-types.md)|`sbyte`|
 |[short](integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint`|
 |[ushort](integral-numeric-types.md)|`sbyte`, `byte`, or `short`|
@@ -75,7 +75,7 @@ The following table shows the predefined explicit conversions between the built-
 > [!NOTE]
 > An explicit numeric conversion might result in data loss or throw an exception, typically an <xref:System.OverflowException>.
 
-Also note that
+Also note that:
 
 - When you convert a value of an integral type to another integral type, the result depends on the overflow [checking context](../keywords/checked-and-unchecked.md). In a checked context, the conversion succeeds if the source value is within the range of the destination type. Otherwise, an <xref:System.OverflowException> is thrown. In an unchecked context, the conversion always succeeds, and proceeds as follows:
 
@@ -91,7 +91,7 @@ Also note that
 
 - When you convert `double` to `float`, the `double` value is rounded to the nearest `float` value. If the `double` value is too small or too large to fit into the `float` type, the result is zero or infinity.
 
-- When you convert `float` or `double` to `decimal`, the source value is converted to `decimal` representation and rounded to the nearest number after the 28th decimal place if required. Depending on the value of the source value, one of the following results may occur:
+- When you convert `float` or `double` to `decimal`, the source value is converted to `decimal` representation and rounded to the nearest number after the 28th decimal place if necessary. Depending on the value of the source value, one of the following results may occur:
 
   - If the source value is too small to be represented as a `decimal`, the result becomes zero.
 

@@ -15,7 +15,7 @@ The most common option you'll configure is a [rule's severity](#severity-level).
 You can also configure additional options to customize rule behavior:
 
 - Code quality rules have [options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
-- Code style rules have [custom code style options](code-style-rule-options.md).
+- Code style rules have [options](code-style-rule-options.md) to define style preferences, such as where new lines are desirable.
 - Third-party analyzer rules can define their own configuration options, with custom key names and value formats.
 
 ## General options

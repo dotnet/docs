@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 01/06/2022
+ms.date: 06/27/2022
 ---
 
 # Logging in .NET
@@ -531,24 +531,41 @@ The `loggerFactory` object is used to create an <xref:Microsoft.Extensions.Loggi
 The following code logs in `Main` by getting an `ILogger` instance from DI after building the host:
 
 ```csharp
-using System;
-using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-class Program
-{
-    static Task Main(string[] args)
-    {
-        IHost host = Host.CreateDefaultBuilder(args).Build();
+IHost host = Host.CreateDefaultBuilder(args).Build();
 
-        var logger = host.Services.GetRequiredService<ILogger<Program>>();
-        logger.LogInformation("Host created.");
+var logger = host.Services.GetRequiredService<ILogger<Program>>();
+logger.LogInformation("Host created.");
 
-        return host.RunAsync();
-    }
-}
+await host.RunAsync();
+```
+
+The preceding code relies on two NuGet packages:
+
+- [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting)
+- [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
+
+It's project file would look similar to the following:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
 ```
 
 ### No asynchronous logger methods

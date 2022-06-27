@@ -43,7 +43,7 @@ These properties have the following functions:
 - `RuntimeIdentifier`. Specifies the [OS and CPU type](../../rid-catalog.md) you're targeting. Also sets `<SelfContained>true</SelfContained>` by default.
 - `PublishReadyToRun`. Enables [ahead-of-time (AOT) compilation](../ready-to-run.md).
 
-Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux ARM64, Windows x64, and so forth.
+Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
 
 Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file. If an extra configuration file is needed, you can place it beside the single file.
 
@@ -152,7 +152,40 @@ For example, add the following property to the project file of an assembly to em
 </PropertyGroup>
 ```
 
-## Other considerations
+## Compress assemblies in single file app
+
+Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set `EnableCompressionInSingleFile` property to `true` to achieve this. The produced single-file will have all of the embedded assemblies compressed which can significantly reduce the size of the executable. Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. It's recommended to measure both the size impact and startup cost impact of enabling compression before using it as the impact varies a lot between different applications.
+
+## Publish a single file app - sample project file
+
+Here's a sample project file that specifies single-file publishing:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+</Project>
+```
+
+These properties have the following functions:
+
+* `PublishSingleFile` - Enables single-file publishing. Also enables single-file warnings during `dotnet build`.
+* `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
+* `RuntimeIdentifier` - Specifies the [OS and CPU type](../../rid-catalog.md) you are targeting. Also sets `<SelfContained>true</SelfContained>` by default.
+* `PublishReadyToRun` - Enables [ahead-of-time (AOT) compilation](../ready-to-run.md).
+
+**Notes:**
+
+* Single-file apps are always OS and architecture-specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
+* Runtime configuration files, such as *\*.runtimeconfig.json* and *\*.deps.json*, are included in the single file. If an additional configuration file is needed, you can place it beside the single file.
 
 Single file applications have all related PDB files alongside the application, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
 

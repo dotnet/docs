@@ -14,8 +14,66 @@ recommendations: false
 
 * [Cloud native apps](../architecture/cloud-native/index.md)
 * [Console apps](tutorials/with-visual-studio-code.md)
-* [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
-* [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
+* [Windows services](/aspnet/core/host-and-deploy/windows-service)
+
+Share functionality among different apps and app types by using [class libraries](../standard/class-libraries.md).
+
+With .NET, your code and project files look and feel the same no matter which type of app you're building. You have access to the same runtime, API, and language capabilities with each app.
+
+## Cross platform
+
+You can create .NET apps for many operating systems, including:
+
+* Windows
+* macOS
+* Linux
+* Android
+* iOS
+* tvOS
+* watchOS
+
+Supported processor architectures include:
+
+* x64
+* x86
+* Arm32
+* Arm64
+
+.NET lets you use platform-specific capabilities, such as operating system APIs. Examples are Windows Forms and WPF on Windows and the native bindings to each mobile platform from Xamarin.
+
+For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
+
+## Free and open source
+
+.NET is free and open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
+
+For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
+
+## Support
+
+.NET is supported by Microsoft on Windows, macOS, and Linux. It's updated regularly for security and quality, on the second Tuesday of each month.
+
+.NET binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
+
+[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+
+[Tizen supports .NET](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.
+
+For more information, see [Releases and support for .NET Core and .NET 5+](releases-and-support.md).
+
+## .NET Core, .NET Framework, Mono, UWP
+
+.NET comes in different flavors, more formally known as *implementations*. .NET 5+ (including .NET Core) is the latest implementation and runs on any platform. .NET Framework is the original implementation of .NET, and runs only on Windows. [Mono](../standard/glossary.md#mono) is used when a small runtime is required. [Universal Windows Platform (UWP)](../standard/glossary.md#uwp) is used to build modern Windows apps.
+
+Each implementation includes a runtime and a class library. It may also include application frameworks and development tools.
+
+.NET Standard is not an implementation of .NET, but rather an API specification that lets you develop class libraries for multiple implementations of .NET.
+
+For more information, see [.NET implementations](../fundamentals/implementations.md).
+
+## Tools and productivity
+
+.NET gives you a choice of languages, integrated development environments (IDEs), and other tools.
 
 **Cross-platform client apps**
 

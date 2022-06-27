@@ -22,7 +22,7 @@ Starting in .NET 6, if implicit conversion is not allowed, then the JIT compiler
 
 ## Reason for change
 
-The previous behavior caused silent, bad code generation on some platforms, including ARM64 Apple.
+The previous behavior caused silent, bad code generation on some platforms, including Arm64 Apple.
 
 ## Recommended action
 

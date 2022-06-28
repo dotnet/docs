@@ -162,24 +162,24 @@ The following options are available only when `dotnet` runs an application by us
 
 ### General
 
-| Command                                       | Function                                                            |
-| --------------------------------------------- | ------------------------------------------------------------------- |
-| [dotnet build](dotnet-build.md)               | Builds a .NET application.                                          |
-| [dotnet build-server](dotnet-build-server.md) | Interacts with servers started by a build.                          |
-| [dotnet clean](dotnet-clean.md)               | Clean build outputs.                                                |
-| [dotnet exec](dotnet-clean.md)                | Runs a .NET application.                                            |
-| [dotnet help](dotnet-help.md)                 | Shows more detailed documentation online for the command.           |
-| [dotnet migrate](dotnet-migrate.md)           | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
-| [dotnet msbuild](dotnet-msbuild.md)           | Provides access to the MSBuild command line.                        |
-| [dotnet new](dotnet-new.md)                   | Initializes a C# or F# project for a given template.                |
-| [dotnet pack](dotnet-pack.md)                 | Creates a NuGet package of your code.                               |
-| [dotnet publish](dotnet-publish.md)           | Publishes a .NET framework-dependent or self-contained application. |
-| [dotnet restore](dotnet-restore.md)           | Restores the dependencies for a given application.                  |
-| [dotnet run](dotnet-run.md)                   | Runs the application from source.                                   |
-| [dotnet sdk check](dotnet-sdk-check.md)       | Shows up-to-date status of installed SDK and Runtime versions.      |
-| [dotnet sln](dotnet-sln.md)                   | Options to add, remove, and list projects in a solution file.       |
-| [dotnet store](dotnet-store.md)               | Stores assemblies in the runtime package store.                     |
-| [dotnet test](dotnet-test.md)                 | Runs tests using a test runner.                                     |
+| Command                                            | Function                                                            |
+|----------------------------------------------------|---------------------------------------------------------------------|
+| [dotnet build](dotnet-build.md)                    | Builds a .NET application.                                          |
+| [dotnet build-server](dotnet-build-server.md)      | Interacts with servers started by a build.                          |
+| [dotnet clean](dotnet-clean.md)                    | Clean build outputs.                                                |
+| [dotnet exec](#options-for-running-an-application) | Runs a .NET application.                                            |
+| [dotnet help](dotnet-help.md)                      | Shows more detailed documentation online for the command.           |
+| [dotnet migrate](dotnet-migrate.md)                | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
+| [dotnet msbuild](dotnet-msbuild.md)                | Provides access to the MSBuild command line.                        |
+| [dotnet new](dotnet-new.md)                        | Initializes a C# or F# project for a given template.                |
+| [dotnet pack](dotnet-pack.md)                      | Creates a NuGet package of your code.                               |
+| [dotnet publish](dotnet-publish.md)                | Publishes a .NET framework-dependent or self-contained application. |
+| [dotnet restore](dotnet-restore.md)                | Restores the dependencies for a given application.                  |
+| [dotnet run](dotnet-run.md)                        | Runs the application from source.                                   |
+| [dotnet sdk check](dotnet-sdk-check.md)            | Shows up-to-date status of installed SDK and Runtime versions.      |
+| [dotnet sln](dotnet-sln.md)                        | Options to add, remove, and list projects in a solution file.       |
+| [dotnet store](dotnet-store.md)                    | Stores assemblies in the runtime package store.                     |
+| [dotnet test](dotnet-test.md)                      | Runs tests using a test runner.                                     |
 
 ### Project references
 

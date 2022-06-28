@@ -5,7 +5,7 @@ ms.date: 06/24/2022
 ---
 # Kestrel: Default HTTPS binding removed
 
-The default HTTPS address and port have been removed from Kestrel in .NET 7. This change is part of [dotnet/aspnetcore#42016](https://github.com/dotnet/aspnetcore/issues/42016), which will improve overall developer experience when dealing with HTTPS.
+The default HTTPS address and port have been removed from Kestrel in .NET 7. This change is part of [dotnet/aspnetcore#42016](https://github.com/dotnet/aspnetcore/issues/42016), which will improve the overall developer experience when dealing with HTTPS.
 
 ## Version introduced
 
@@ -33,7 +33,7 @@ This change affects [binary compatibility](../../categories.md#binary-compatibil
 
 ## Reason for change
 
-The previous eager-binding behavior occurs without regard to the configured environment and can lead to experience issues on developer machines when the certificate has not yet been trusted (that is, trusted as root certificate authority because it's self-signed). Clients often produce a poor user experience when hitting an HTTPS endpoint with an untrusted certificate, for example, silent failure or an unnerving error or warning screen.
+The previous eager-binding behavior occurs without regard to the configured environment and can lead to a poor developer experience when the certificate has not yet been trusted (that is, trusted as root certificate authority because it's self-signed). Clients often produce a poor user experience when hitting an HTTPS endpoint with an untrusted certificate. For example, they might fail silently or show an error or warning screen that alarms the user.
 
 ## Recommended action
 

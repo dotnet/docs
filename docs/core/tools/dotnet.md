@@ -74,7 +74,7 @@ The following options are available when the `dotnet` is used by itself, without
 
 - **`--version`**
 
- Prints out the version of the .NET SDK used by dotnet commands. Includes the effects of any global.json
+ Prints out the version of the .NET SDK used by `dotnet` commands. Includes the effects of any *global.json* file. Available only when the SDK is installed.
 
 - **`--list-runtimes`**
 

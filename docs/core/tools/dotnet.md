@@ -113,6 +113,8 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
 The following options are available when `dotnet` runs an application with or without the `exec` command. For example, `dotnet exec --roll-forward Major myapp.dll` or `dotnet --roll-forward Major myapp.dll`.
 
+<a name="additionalprobingpath"></a>
+
 - **`--additionalprobingpath <PATH>`**
 
   Path containing probing policy and assemblies to probe. Repeat the option to specify multiple paths.
@@ -120,6 +122,8 @@ The following options are available when `dotnet` runs an application with or wi
 - **`--additional-deps <PATH>`**
 
   Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) on GitHub.
+
+<a name="rollforward"></a>
 
 - **`--roll-forward <SETTING>`** **
 

@@ -2,6 +2,119 @@
 title: Resolve nullable warnings
 description: Enabling nullable reference types causes the compiler to issue warnings related to null safety. Learn techniques to address them.
 ms.technology: csharp-null-safety
+f1_keywords:
+# Possible dereference of null
+  - "CS8602" # WRN_NullReferenceReceiver: Dereference of a possibly null reference.
+  - "CS8670" # WRN_NullReferenceInitializer: Object or collection initializer implicitly dereferences possibly null member '{0}'.
+  - "CS8655" # WRN_SwitchExpressionNotExhaustiveForNull: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.
+  - "CS8847" # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
+# Possible null assigned to a nonnullable reference
+  - "CS8601" # WRN_NullReferenceAssignment: Possible null reference assignment.
+  - "CS8602" # WRN_NullReferenceReturn: Possible null reference return.
+  - "CS8604" # WRN_NullReferenceArgument: Possible null reference argument for parameter '{0}' in '{1}'
+  - "CS8625" # WRN_NullAsNonNullable: Cannot convert null literal to non-nullable reference type.
+  - "CS8629" # WRN_NullableValueTypeMayBeNull: Nullable value type may be null.
+  - "CS8597" # WRN_ThrowPossibleNull: Thrown value may be null.
+  - "CS8605" # WRN_UnboxPossibleNull: Unboxing a possibly null value.
+  - "CS8600" # WRN_ConvertingNullableToNonNullable: Converting null literal or possible null value to non-nullable type.
+# Nonnullable reference not initialized
+  - "CS8618" # WRN_UninitializedNonNullableField: Non-nullable {0} '{1}' must contain a non-null value when exiting constructor. Consider declaring the {0} as nullable.
+  - "CS8762" # WRN_ParameterConditionallyDisallowsNull: Parameter '{0}' must have a non-null value when exiting with '{1}'.
+# Mismatch in nullability declaration
+  - "CS8619" # WRN_NullabilityMismatchInAssignment: Nullability of reference types in value of type '{0}' doesn't match target type '{1}'.
+  - "CS8620" # WRN_NullabilityMismatchInArgument: Argument of type '{0}' cannot be used for parameter '{2}' of type '{1}' in '{3}' due to differences in the nullability of reference types.
+  - "CS8624" # WRN_NullabilityMismatchInArgumentForOutput: Argument of type '{0}' cannot be used as an output of type '{1}' for parameter '{2}' in '{3}' due to differences in the nullability of reference types.
+  - "CS8621" # WRN_NullabilityMismatchInReturnTypeOfTargetDelegate: Nullability of reference types in return type of '{0}' doesn't match the target delegate '{1}' (possibly because of nullability attributes).
+  - "CS8622" # WRN_NullabilityMismatchInParameterTypeOfTargetDelegate: Nullability of reference types in type of parameter '{0}' of '{1}' doesn't match the target delegate '{2}' (possibly because of nullability attributes).
+  - "CS8631" # WRN_NullabilityMismatchInTypeParameterConstraint: The type '{3}' cannot be used as type parameter '{2}' in the generic type or method '{0}'. Nullability of type argument '{3}' doesn't match constraint type '{1}'.
+  - "CS8634" # WRN_NullabilityMismatchInTypeParameterReferenceTypeConstraint: The type '{2}' cannot be used as type parameter '{1}' in the generic type or method '{0}'. Nullability of type argument '{2}' doesn't match 'class' constraint.
+  - "CS8714" # WRN_NullabilityMismatchInTypeParameterNotNullConstraint: The type '{2}' cannot be used as type parameter '{1}' in the generic type or method '{0}'. Nullability of type argument '{2}' doesn't match 'notnull' constraint.
+  - "CS8608" # WRN_NullabilityMismatchInTypeOnOverride: Nullability of reference types in type doesn't match overridden member.
+  - "CS8609" # WRN_NullabilityMismatchInReturnTypeOnOverride: Nullability of reference types in return type doesn't match overridden member.
+  - "CS8819" # WRN_NullabilityMismatchInReturnTypeOnPartial: Nullability of reference types in return type doesn't match partial method declaration.
+  - "CS8610" # WRN_NullabilityMismatchInParameterTypeOnOverride: Nullability of reference types in type of parameter '{0}' doesn't match overridden member.
+  - "CS8611" # WRN_NullabilityMismatchInParameterTypeOnPartial: Nullability of reference types in type of parameter '{0}' doesn't match partial method declaration.
+  - "CS8612" # WRN_NullabilityMismatchInTypeOnImplicitImplementation: Nullability of reference types in type of '{0}' doesn't match implicitly implemented member '{1}'.
+  - "CS8613" # WRN_NullabilityMismatchInReturnTypeOnImplicitImplementation: Nullability of reference types in return type of '{0}' doesn't match implicitly implemented member '{1}'.
+  - "CS8614" # WRN_NullabilityMismatchInParameterTypeOnImplicitImplementation: Nullability of reference types in type of parameter '{0}' of '{1}' doesn't match implicitly implemented member '{2}'.
+  - "CS8615" # WRN_NullabilityMismatchInTypeOnExplicitImplementation: Nullability of reference types in type doesn't match implemented member '{0}'.
+  - "CS8616" # WRN_NullabilityMismatchInReturnTypeOnExplicitImplementation: Nullability of reference types in return type doesn't match implemented member '{0}'.
+  - "CS8617" # WRN_NullabilityMismatchInParameterTypeOnExplicitImplementation: Nullability of reference types in type of parameter '{0}' doesn't match implemented member '{1}'.
+  - "CS8633" # WRN_NullabilityMismatchInConstraintsOnImplicitImplementation: Nullability in constraints for type parameter '{0}' of method '{1}' doesn't match the constraints for type parameter '{2}' of interface method '{3}'. Consider using an explicit interface implementation instead.
+  - "CS8643" # WRN_NullabilityMismatchInExplicitlyImplementedInterface: Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.
+  - "CS8644" # WRN_NullabilityMismatchInInterfaceImplementedByBase:  '{0}' does not implement interface member '{1}'. Nullability of reference types in interface implemented by the base type doesn't match.
+  - "CS8645" # WRN_DuplicateInterfaceWithNullabilityMismatchInBaseList: '{0}' is already listed in the interface list on type '{1}' with different nullability of reference types.
+  - "CS8667" # WRN_NullabilityMismatchInConstraintsOnPartialImplementation: Partial method declarations of '{0}' have inconsistent nullability in constraints for type parameter '{1}'
+# Code doesn't match attribute declaration
+  - "CS8607" # WRN_DisallowNullAttributeForbidsMaybeNullAssignment: A possible null value may not be used for a type marked with [NotNull] or [DisallowNull]
+  - "CS8763" # WRN_ShouldNotReturn: A method marked [DoesNotReturn] should not return.
+  - "CS8770" # WRN_DoesNotReturnMismatch: Method '{0}' lacks `[DoesNotReturn]` annotation to match implemented or overridden member.
+  - "CS8769" # WRN_TopLevelNullabilityMismatchInParameterTypeOnExplicitImplementation: Nullability of reference types in type of parameter '{0}' doesn't match implemented member '{1}' (possibly because of nullability attributes).
+  - "CS8767" # WRN_TopLevelNullabilityMismatchInParameterTypeOnImplicitImplementation: Nullability of reference types in type of parameter '{0}' of '{1}' doesn't match implicitly implemented member '{2}' (possibly because of nullability attributes).
+  - "CS8765" # WRN_TopLevelNullabilityMismatchInParameterTypeOnOverride: Nullability of type of parameter '{0}' doesn't match overridden member (possibly because of nullability attributes).
+  - "CS8768" # WRN_TopLevelNullabilityMismatchInReturnTypeOnExplicitImplementation: Nullability of reference types in return type doesn't match implemented member '{0}' (possibly because of nullability attributes).
+  - "CS8766" # WRN_TopLevelNullabilityMismatchInReturnTypeOnImplicitImplementation: Nullability of reference types in return type of '{0}' doesn't match implicitly implemented member '{1}' (possibly because of nullability attributes).
+  - "CS8764" # WRN_TopLevelNullabilityMismatchInReturnTypeOnOverride:  Nullability of return type doesn't match overridden member (possibly because of nullability attributes).
+  - "CS8774" # WRN_MemberNotNull: Member '{0}' must have a non-null value when exiting.
+  - "CS8776" # WRN_MemberNotNullBadMember:  Member '{0}' cannot be used in this attribute.
+  - "CS8775" # WRN_MemberNotNullWhen: Member '{0}' must have a non-null value when exiting with '{1}'.
+  - "CS8777" # WRN_ParameterDisallowsNull: Parameter '{0}' must have a non-null value when exiting.
+  - "CS8824" # WRN_ParameterNotNullIfNotNull: Parameter '{0}' must have a non-null value when exiting because parameter '{1}' is non-null.
+  - "CS8825" # WRN_ReturnNotNullIfNotNull: Return value must be non-null because parameter '{0}' is non-null.
+helpviewer_keywords:
+  - "CS8602"
+  - "CS8670"
+  - "CS8655"
+  - "CS8847"
+  - "CS8601"
+  - "CS8602"
+  - "CS8604"
+  - "CS8625"
+  - "CS8629"
+  - "CS8597"
+  - "CS8605"
+  - "CS8600"
+  - "CS8618"
+  - "CS8762"
+  - "CS8619"
+  - "CS8620"
+  - "CS8624"
+  - "CS8621"
+  - "CS8622"
+  - "CS8631"
+  - "CS8634"
+  - "CS8714"
+  - "CS8608"
+  - "CS8609"
+  - "CS8819"
+  - "CS8610"
+  - "CS8611"
+  - "CS8612"
+  - "CS8613"
+  - "CS8614"
+  - "CS8615"
+  - "CS8616"
+  - "CS8617"
+  - "CS8633"
+  - "CS8643"
+  - "CS8644"
+  - "CS8645"
+  - "CS8667"
+  - "CS8607"
+  - "CS8763"
+  - "CS8770"
+  - "CS8769"
+  - "CS8767"
+  - "CS8765"
+  - "CS8768"
+  - "CS8766"
+  - "CS8764"
+  - "CS8774"
+  - "CS8776"
+  - "CS8775"
+  - "CS8777"
+  - "CS8824"
+  - "CS8825"
 ms.date: 09/17/2021
 ---
 # Learn techniques to resolve nullable warnings

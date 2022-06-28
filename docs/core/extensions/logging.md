@@ -548,7 +548,7 @@ The preceding code relies on two NuGet packages:
 - [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting)
 - [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
 
-It's project file would look similar to the following:
+Its project file would look similar to the following:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

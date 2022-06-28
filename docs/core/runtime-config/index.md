@@ -59,7 +59,7 @@ If you're placing the options in the output JSON file, nest them under the `runt
       "version": "3.1.0"
     },
     "configProperties": {
-      "System.Drawing.EnableUnixSupport": true,
+      "System.Globalization.UseNls": true,
       "System.Net.DisableIPv6": true,
       "System.GC.Concurrent": false,
       "System.Threading.ThreadPool.MinThreads": 4,
@@ -76,7 +76,7 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 ```json
 {
   "configProperties": {
-    "System.Drawing.EnableUnixSupport": true,
+    "System.Globalization.UseNls": true,
     "System.Net.DisableIPv6": true,
     "System.GC.Concurrent": false,
     "System.Threading.ThreadPool.MinThreads": "4",
@@ -108,7 +108,7 @@ Here is an example SDK-style project file with MSBuild properties for configurin
   </PropertyGroup>
 
   <ItemGroup>
-    <RuntimeHostConfigurationOption Include="System.Drawing.EnableUnixSupport" Value="true" />
+    <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
     <RuntimeHostConfigurationOption Include="System.Net.DisableIPv6" Value="true" />
   </ItemGroup>
 

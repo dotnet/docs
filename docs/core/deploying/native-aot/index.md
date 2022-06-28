@@ -62,7 +62,7 @@ On Linux, install clang and developer packages for libraries that .NET runtime d
 
 The app will be available in the publish directory and will contain all the code needed to run in it, including a stripped-down version of the coreclr runtime.
 
-Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples includes [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
+Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples include [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
 
 ### Native Debug Information
 
@@ -78,7 +78,7 @@ Set the `StripSymbols` property to `true` to produce the debug information in a 
 
 ## Limitations of Native AOT deployment
 
-Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:
+Native AOT applications come with a few fundamental limitations and compatibility issues. The key limitations include:
 
 - No dynamic loading (for example, `Assembly.LoadFile`)
 - No runtime code generation (for example, `System.Reflection.Emit`)

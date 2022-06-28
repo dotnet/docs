@@ -89,6 +89,8 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 
 Some runtime configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file.
 
+For runtime configuration settings that don't have a specific MSBuild property, you can use the `RuntimeHostConfigurationOption` MSBuild item instead.
+
 Here is an example SDK-style project file with MSBuild properties for configuring run-time behavior:
 
 ```xml
@@ -114,8 +116,6 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 ```
 
 MSBuild properties for configuring the behavior of the runtime are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They are also listed in the [Runtime configuration](../project-sdk/msbuild-props.md#runtime-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
-
-For runtime configuration settings that don't have a specific MSBuild property, you can use the `RuntimeHostConfigurationOption` MSBuild item instead.
 
 ## Environment variables
 

@@ -69,6 +69,8 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 - [Vitess](https://vitess.io/)
 
+- [Importance of using the right unstructured data management strategy](https://algoscale.com/blog/why-is-it-so-important-to-use-the-right-unstructured-data-management-strategy/)
+
 - [Elasticsearch: The Definitive Guide](https://shop.oreilly.com/product/0636920028505.do)
   
 - [Introduction to Apache Lucene](https://www.baeldung.com/lucene)

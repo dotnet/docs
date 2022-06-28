@@ -329,7 +329,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
 | Microsoft.Azure.Functions.Worker | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.6.0)<br>NuGet [1.8.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.8.0-preview3) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.3.0)<br>NuGet [1.5.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.5.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.3.0)<br>NuGet [1.7.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.7.0-preview1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |

@@ -164,7 +164,7 @@ In .NET Core 3.x, publishing as a single file produced one file, consisting of t
 
 Starting with .NET 5, only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a folder. On Windows, this approach means that the managed binaries are embedded in the single file bundle, but the native binaries of the core runtime itself are separate files.
 
-To embed those files for extraction and get one output file, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#including-native-libraries).
+To embed those files for extraction and get one output file, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#include-native-libraries).
 
 ### API incompatibility
 
@@ -233,9 +233,9 @@ Specifying `IncludeAllContentForSelfExtract` extracts all files, including the m
 
 ### Compress assemblies in single-file apps
 
-Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The produced file has all of the embedded assemblies compressed which can significantly reduce the size of the executable.
+Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced will have all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
 
-Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The effect varies a lot between different applications.
+Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The impact can vary significantly between different applications.
 
 ## See also
 

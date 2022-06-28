@@ -60,8 +60,7 @@ Different options are available for:
 
 * Displaying information about the environment.
 * Running a command.
-* Running an application with or without the `exec` command.
-* Running an application with the `exec` command.
+* Running an application.
 
 ### Options for displaying environment information and available commands
 

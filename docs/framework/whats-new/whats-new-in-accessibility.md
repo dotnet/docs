@@ -36,7 +36,7 @@ The new accessibility features are enabled by default for applications that targ
 </runtime>
 ```
 
-If you choose to opt in to accessibility features in a later .NET Framework version, you must also explicitly opt in to the features from earlier versions. To configure your app to take advantage of accessibility improvements in both .NET Framework 4.7.1 and 4.7.2, add the the following [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
+If you choose to opt in to accessibility features in a later .NET Framework version, you must also explicitly opt in to the features from earlier versions. To configure your app to take advantage of accessibility improvements in both .NET Framework 4.7.1 and 4.7.2, add the following [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
 
 ```xml
 <runtime>
@@ -253,7 +253,7 @@ To enable this feature, an application needs to target .NET Framework 4.8 or opt
 </configuration>
 ```
 
-Once enabled, all controls that contain a tooltip display it once the control receives keyboard focus. The tooltip can be dismissed over time or when the keyboard focus changes. Users can also dismiss the tooltip manually by using a new keyboard shortcut, Ctrl + Shift + F10. Once the tooltip has been dismissed it can be displayed again by using the same keyboard shortcut.
+Once enabled, all controls that contain a tooltip display it once the control receives keyboard focus. The tooltip can be dismissed over time or when the keyboard focus changes. Users can also dismiss the tooltip manually by using a new keyboard shortcut, **Ctrl** + **Shift** + **F10**. Once the tooltip has been dismissed, it can be displayed again by using the same keyboard shortcut.
 
 > [!NOTE]
 > [Ribbon tooltips](xref:System.Windows.Controls.Ribbon.RibbonToolTip) on <xref:System.Windows.Controls.Ribbon.Ribbon> controls won’t show on keyboard focus; they only show via the keyboard shortcut.
@@ -281,7 +281,7 @@ Starting with .NET Framework 4.8, WPF  exposes these two properties to UIAutomat
 
 - By overriding AutomationPeer virtual methods.
 
-  The <xref:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSetCore> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSetCore> virtual methods been added to the AutomationPeer class. A developer can provide values for `SizeOfSet` and `PositionInSet` by overriding these methods, as shown in the following example:
+  The <xref:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSetCore> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSetCore> virtual methods were added to the `AutomationPeer` class. A developer can provide values for `SizeOfSet` and `PositionInSet` by overriding these methods, as shown in the following example:
 
   ```csharp
   public class MyButtonAutomationPeer : ButtonAutomationPeer
@@ -556,7 +556,7 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   ![Screenshot of sort indicator arrow after improvements.](./media/whats-new-in-accessibility/sort-indicator-after.png)
 
-  In addition, in .NET Framework 4.7 and earlier versions, the default link style changed to an incorrect color on mouse over in high contrast modes. This is resolved starting with .NET Framework 4.7.1. Similarly, <xref:System.Windows.Controls.DataGrid> checkbox columns uses the expected colors for keyboard focus feedback starting with .NET Framework 4.7.1.
+  In addition, in .NET Framework 4.7 and earlier versions, the default link style changed to an incorrect color on mouse over in high contrast modes. This is resolved starting with .NET Framework 4.7.1. Similarly, <xref:System.Windows.Controls.DataGrid> checkbox columns use the expected colors for keyboard focus feedback starting with .NET Framework 4.7.1.
 
   Before:
 
@@ -576,7 +576,7 @@ In .NET Framework 4.7.1, Windows Forms (WinForms) includes accessibility changes
 
 **Improved display in High Contrast mode**
 
-Starting with .NET Framework 4.7.1, various WinForms controls offer improved rendering in the HighContrast modes available in the operating system. Windows 10 has changed the values for some high contrast system colors, and Windows Forms is based on the Windows 10 Win32 framework. For the best experience, run on the latest version of Windows and opt in to the latest OS changes by adding an app.manifest file in a test application and un-comment the Windows 10 supported OS  line so that it looks the following:
+Starting with .NET Framework 4.7.1, various WinForms controls offer improved rendering in the HighContrast modes available in the operating system. Windows 10 has changed the values for some high contrast system colors, and Windows Forms is based on the Windows 10 Win32 framework. For the best experience, run on the latest version of Windows and opt in to the latest OS changes by adding an app.manifest file in a test application and uncomment the Windows 10 supported OS  line so that it looks the following:
 
 ```xml
 <!-- Windows 10 -->

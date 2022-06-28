@@ -110,7 +110,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
 ### Options for running an application
 
-The following options are available when `dotnet` runs an application with or without the `exec` command. For example, `dotnet exec --roll-forward Major myapp.dll` or `dotnet --roll-forward Major myapp.dll`.
+The following options are available when `dotnet` runs an application. For example, `dotnet --roll-forward Major myapp.dll`.
 
 <a name="additionalprobingpath"></a>
 

@@ -7,9 +7,9 @@ ms.date: 06/21/2022
 ms.custom: kr2b-contr-experiment
 ---
 
-# Single file deployment and executable
+# Single-file deployment and executable
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single file deployment is available for both the [framework-dependent deployment model](../index.md#publish-framework-dependent) and [self-contained applications](../index.md#publish-self-contained).
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#publish-framework-dependent) and [self-contained applications](../index.md#publish-self-contained).
 
 This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5. Previously in .NET Core 3.0, when a user runs your single file app, .NET Core host first extracts all files to a directory before running the application. .NET 5 improves this experience by directly running the code without the need to extract the files from the app.
 
@@ -47,7 +47,7 @@ Single file apps are always OS and architecture specific. You need to publish fo
 
 Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file. If an extra configuration file is needed, you can place it beside the single file.
 
-## Publish a single file app
+## Publish a single-file app
 
 # [CLI](#tab/cli)
 
@@ -152,40 +152,7 @@ For example, add the following property to the project file of an assembly to em
 </PropertyGroup>
 ```
 
-## Compress assemblies in single file app
-
-Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set `EnableCompressionInSingleFile` property to `true` to achieve this. The produced single-file will have all of the embedded assemblies compressed which can significantly reduce the size of the executable. Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. It's recommended to measure both the size impact and startup cost impact of enabling compression before using it as the impact varies a lot between different applications.
-
-## Publish a single file app - sample project file
-
-Here's a sample project file that specifies single-file publishing:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishReadyToRun>true</PublishReadyToRun>
-  </PropertyGroup>
-
-</Project>
-```
-
-These properties have the following functions:
-
-* `PublishSingleFile` - Enables single-file publishing. Also enables single-file warnings during `dotnet build`.
-* `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
-* `RuntimeIdentifier` - Specifies the [OS and CPU type](../../rid-catalog.md) you are targeting. Also sets `<SelfContained>true</SelfContained>` by default.
-* `PublishReadyToRun` - Enables [ahead-of-time (AOT) compilation](../ready-to-run.md).
-
-**Notes:**
-
-* Single-file apps are always OS and architecture-specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
-* Runtime configuration files, such as *\*.runtimeconfig.json* and *\*.deps.json*, are included in the single file. If an additional configuration file is needed, you can place it beside the single file.
+## Other considerations
 
 Single file applications have all related PDB files alongside the application, not bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded`. See [Include PDB files inside the bundle](#include-pdb-files-inside-the-bundle).
 
@@ -225,7 +192,7 @@ We have some recommendations for fixing common scenarios:
 
 - To avoid shipping loose files entirely, consider using [embedded resources](../../extensions/create-resource-files.md).
 
-### Attaching a debugger
+### Attach a debugger
 
 On Linux, the only debugger that can attach to self-contained single file processes or debug crash dumps is [SOS with LLDB](../../diagnostics/dotnet-sos.md).
 
@@ -235,7 +202,7 @@ Without this file, Visual Studio might produce the error: "Unable to attach to t
 
 To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if you publish a self-contained single file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_.
 
-### Including native libraries
+### Include native libraries
 
 Single file deployment doesn't bundle native libraries by default. On Linux, the runtime is prelinked into the bundle and only application native libraries are deployed to the same directory as the single file app. On Windows, only the hosting code is prelinked and both the runtime and application native libraries are deployed to the same directory as the single file app. This approach is to ensure a good debugging experience, which requires native files to be excluded from the single file.
 
@@ -264,7 +231,7 @@ Specifying `IncludeAllContentForSelfExtract` extracts all files, including the m
 > Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net"
 > ```
 
-### Compress assemblies in single file app
+### Compress assemblies in single-file apps
 
 Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The produced file has all of the embedded assemblies compressed which can significantly reduce the size of the executable.
 

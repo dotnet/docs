@@ -8,7 +8,7 @@ f1_keywords:
   - "CS8670" # WRN_NullReferenceInitializer: Object or collection initializer implicitly dereferences possibly null member '{0}'.
 # Possible null assigned to a nonnullable reference
   - "CS8601" # WRN_NullReferenceAssignment: Possible null reference assignment.
-  - "CS8602" # WRN_NullReferenceReturn: Possible null reference return.
+  - "CS8603" # WRN_NullReferenceReturn: Possible null reference return.
   - "CS8604" # WRN_NullReferenceArgument: Possible null reference argument for parameter '{0}' in '{1}'
   - "CS8605" # WRN_UnboxPossibleNull: Unboxing a possibly null value.
   - "CS8600" # WRN_ConvertingNullableToNonNullable: Converting null literal or possible null value to non-nullable type.
@@ -68,7 +68,6 @@ helpviewer_keywords:
   - "CS8655"
   - "CS8847"
   - "CS8601"
-  - "CS8602"
   - "CS8604"
   - "CS8625"
   - "CS8629"
@@ -116,7 +115,7 @@ helpviewer_keywords:
   - "CS8777"
   - "CS8824"
   - "CS8825"
-ms.date: 09/17/2021
+ms.date: 06/28/2022
 ---
 # Learn techniques to resolve nullable warnings
 
@@ -177,7 +176,7 @@ This set of warnings alert you that you're assigning a variable whose type is no
 
 - **CS8601** - *Possible null reference assignment.*
 - **CS8605** - *Unboxing a possibly null value.*
-- **CS8602** - *Possible null reference return.*
+- **CS8603** - *Possible null reference return.*
 - **CS8604** - *Possible null reference argument for parameter.*
 - **CS8600** - *Converting null literal or possible null value to non-nullable type.*
 - **CS8597** - *Thrown value may be null.*

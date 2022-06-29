@@ -378,7 +378,7 @@ logger.LogInformation("{{Number}}: {Number}", 3);           // {Number}: 3
 logger.LogInformation($"{{{{Number}}}}: {{Number}}", 5);    // {Number}: 5
 ```
 
-> [!NOTE]
+> [!TIP]
 > You should always use log message template formatting when logging. You should avoid string interpolation as it can cause performance issues.
 
 ## Log exceptions

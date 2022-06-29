@@ -120,6 +120,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
+> | [IDE0160](ide0160-ide0161.md) | Use block-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
+> | [IDE0161](ide0160-ide0161.md) | Use file-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

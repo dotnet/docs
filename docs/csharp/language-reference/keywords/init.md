@@ -14,7 +14,7 @@ In C# 9 and later, the `init` keyword defines an *accessor* method in a property
 
 For more information and examples, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
 
-The following example defines both a `get` and an `init` accessor for a property named `Seconds`. It uses a private field named `_seconds` to back the property value.
+The following example defines both a `get` and an `init` accessor for a property named `YearOfBirth`. It uses a private field named `_yearOfBirth` to back the property value.
 
 [!code-csharp[init#1](snippets/InitExample1.cs)]
 
@@ -26,7 +26,7 @@ var john = new Person_InitExample
     YearOfBirth = 1984
 };
 
-john.YearOfBirth = 1926; //Not allowed, as it's value can only be set once in the constructor
+john.YearOfBirth = 1926; //Not allowed, as its value can only be set once in the constructor
 ```
 
 The `init` accessor can be used as an expression-bodied member. Example:

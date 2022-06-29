@@ -1,6 +1,6 @@
 ---
 title: "Converting times between time zones"
-description: Learn to convert times between from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
+description: Learn to convert times from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
 ms.date: "04/10/2017"
 dev_langs: 
   - "csharp"

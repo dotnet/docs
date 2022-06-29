@@ -608,7 +608,7 @@ In the .NET CLI, some Boolean options result in the same behavior when you pass 
 
 ### Kebab case
 
-In some cases, the .NET CLI doesn't use kebab case for command, option, or argument names. For example, there is a .NET CLI option that is named [`--additionalprobingpath`](../../core/tools/dotnet.md#runtime-options) instead of `--additional-probing-path`.
+In some cases, the .NET CLI doesn't use kebab case for command, option, or argument names. For example, there is a .NET CLI option that is named [`--additionalprobingpath`](../../core/tools/dotnet.md#additionalprobingpath) instead of `--additional-probing-path`.
 
 ## See also
 

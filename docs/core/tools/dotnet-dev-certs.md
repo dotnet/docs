@@ -79,7 +79,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   successfully removed from the machine.
   ```
 
-  <a name=export-path></a>
+  <a name=exportpath></a>
 
 - **`-ep|--export-path <PATH>`**
 
@@ -106,7 +106,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
   The file format is independent of the file name extension. For example, if you specify `--format pfx` and `--export-path ./cert.pem` you will get a file named *cert.pem* in `PFX` format.
 
-  For information about the effect of this option when used with `--password`, `--no-password`, or without either of those options, see [--export-path](#export-path) earlier in this article.
+  For information about the effect of this option when used with `--password`, `--no-password`, or without either of those options, see [--export-path](#exportpath) earlier in this article.
 
   - **`-i|--import <PATH>`**
 

@@ -66,7 +66,7 @@ Different options are available for:
 
 <!-- markdownlint-disable MD012 -->
 
-The following options are available when the `dotnet` is used by itself, without specifying a command or an application to run. For example, `dotnet --info` or `dotnet --version`. They print out information about the environment.
+The following options are available when `dotnet` is used by itself, without specifying a command or an application to run. For example, `dotnet --info` or `dotnet --version`. They print out information about the environment.
 
 - **`--info`**
 

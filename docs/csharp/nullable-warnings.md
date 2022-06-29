@@ -6,24 +6,20 @@ f1_keywords:
 # Possible dereference of null
   - "CS8602" # WRN_NullReferenceReceiver: Dereference of a possibly null reference.
   - "CS8670" # WRN_NullReferenceInitializer: Object or collection initializer implicitly dereferences possibly null member '{0}'.
-  - "CS8655" # WRN_SwitchExpressionNotExhaustiveForNull: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.
-  - "CS8847" # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
 # Possible null assigned to a nonnullable reference
   - "CS8601" # WRN_NullReferenceAssignment: Possible null reference assignment.
   - "CS8602" # WRN_NullReferenceReturn: Possible null reference return.
   - "CS8604" # WRN_NullReferenceArgument: Possible null reference argument for parameter '{0}' in '{1}'
+  - "CS8605" # WRN_UnboxPossibleNull: Unboxing a possibly null value.
+  - "CS8600" # WRN_ConvertingNullableToNonNullable: Converting null literal or possible null value to non-nullable type.
   - "CS8625" # WRN_NullAsNonNullable: Cannot convert null literal to non-nullable reference type.
   - "CS8629" # WRN_NullableValueTypeMayBeNull: Nullable value type may be null.
   - "CS8597" # WRN_ThrowPossibleNull: Thrown value may be null.
-  - "CS8605" # WRN_UnboxPossibleNull: Unboxing a possibly null value.
-  - "CS8600" # WRN_ConvertingNullableToNonNullable: Converting null literal or possible null value to non-nullable type.
 # Nonnullable reference not initialized
   - "CS8618" # WRN_UninitializedNonNullableField: Non-nullable {0} '{1}' must contain a non-null value when exiting constructor. Consider declaring the {0} as nullable.
   - "CS8762" # WRN_ParameterConditionallyDisallowsNull: Parameter '{0}' must have a non-null value when exiting with '{1}'.
 # Mismatch in nullability declaration
   - "CS8619" # WRN_NullabilityMismatchInAssignment: Nullability of reference types in value of type '{0}' doesn't match target type '{1}'.
-  - "CS8620" # WRN_NullabilityMismatchInArgument: Argument of type '{0}' cannot be used for parameter '{2}' of type '{1}' in '{3}' due to differences in the nullability of reference types.
-  - "CS8624" # WRN_NullabilityMismatchInArgumentForOutput: Argument of type '{0}' cannot be used as an output of type '{1}' for parameter '{2}' in '{3}' due to differences in the nullability of reference types.
   - "CS8621" # WRN_NullabilityMismatchInReturnTypeOfTargetDelegate: Nullability of reference types in return type of '{0}' doesn't match the target delegate '{1}' (possibly because of nullability attributes).
   - "CS8622" # WRN_NullabilityMismatchInParameterTypeOfTargetDelegate: Nullability of reference types in type of parameter '{0}' of '{1}' doesn't match the target delegate '{2}' (possibly because of nullability attributes).
   - "CS8631" # WRN_NullabilityMismatchInTypeParameterConstraint: The type '{3}' cannot be used as type parameter '{2}' in the generic type or method '{0}'. Nullability of type argument '{3}' doesn't match constraint type '{1}'.
@@ -43,24 +39,29 @@ f1_keywords:
   - "CS8633" # WRN_NullabilityMismatchInConstraintsOnImplicitImplementation: Nullability in constraints for type parameter '{0}' of method '{1}' doesn't match the constraints for type parameter '{2}' of interface method '{3}'. Consider using an explicit interface implementation instead.
   - "CS8643" # WRN_NullabilityMismatchInExplicitlyImplementedInterface: Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.
   - "CS8644" # WRN_NullabilityMismatchInInterfaceImplementedByBase:  '{0}' does not implement interface member '{1}'. Nullability of reference types in interface implemented by the base type doesn't match.
+  - "CS8620" # WRN_NullabilityMismatchInArgument: Argument of type '{0}' cannot be used for parameter '{2}' of type '{1}' in '{3}' due to differences in the nullability of reference types.
+  - "CS8624" # WRN_NullabilityMismatchInArgumentForOutput: Argument of type '{0}' cannot be used as an output of type '{1}' for parameter '{2}' in '{3}' due to differences in the nullability of reference types.
   - "CS8645" # WRN_DuplicateInterfaceWithNullabilityMismatchInBaseList: '{0}' is already listed in the interface list on type '{1}' with different nullability of reference types.
   - "CS8667" # WRN_NullabilityMismatchInConstraintsOnPartialImplementation: Partial method declarations of '{0}' have inconsistent nullability in constraints for type parameter '{1}'
-# Code doesn't match attribute declaration
+  - "CS8764" # WRN_TopLevelNullabilityMismatchInReturnTypeOnOverride:  Nullability of return type doesn't match overridden member (possibly because of nullability attributes).
+  - "CS8765" # WRN_TopLevelNullabilityMismatchInParameterTypeOnOverride: Nullability of type of parameter '{0}' doesn't match overridden member (possibly because of nullability attributes).
+  - "CS8768" # WRN_TopLevelNullabilityMismatchInReturnTypeOnExplicitImplementation: Nullability of reference types in return type doesn't match implemented member '{0}' (possibly because of nullability attributes).
+  - "CS8767" # WRN_TopLevelNullabilityMismatchInParameterTypeOnImplicitImplementation: Nullability of reference types in type of parameter '{0}' of '{1}' doesn't match implicitly implemented member '{2}' (possibly because of nullability attributes).
+  - "CS8766" # WRN_TopLevelNullabilityMismatchInReturnTypeOnImplicitImplementation: Nullability of reference types in return type of '{0}' doesn't match implicitly implemented member '{1}' (possibly because of nullability attributes).
+  # Code doesn't match attribute declaration
   - "CS8607" # WRN_DisallowNullAttributeForbidsMaybeNullAssignment: A possible null value may not be used for a type marked with [NotNull] or [DisallowNull]
   - "CS8763" # WRN_ShouldNotReturn: A method marked [DoesNotReturn] should not return.
   - "CS8770" # WRN_DoesNotReturnMismatch: Method '{0}' lacks `[DoesNotReturn]` annotation to match implemented or overridden member.
   - "CS8769" # WRN_TopLevelNullabilityMismatchInParameterTypeOnExplicitImplementation: Nullability of reference types in type of parameter '{0}' doesn't match implemented member '{1}' (possibly because of nullability attributes).
-  - "CS8767" # WRN_TopLevelNullabilityMismatchInParameterTypeOnImplicitImplementation: Nullability of reference types in type of parameter '{0}' of '{1}' doesn't match implicitly implemented member '{2}' (possibly because of nullability attributes).
-  - "CS8765" # WRN_TopLevelNullabilityMismatchInParameterTypeOnOverride: Nullability of type of parameter '{0}' doesn't match overridden member (possibly because of nullability attributes).
-  - "CS8768" # WRN_TopLevelNullabilityMismatchInReturnTypeOnExplicitImplementation: Nullability of reference types in return type doesn't match implemented member '{0}' (possibly because of nullability attributes).
-  - "CS8766" # WRN_TopLevelNullabilityMismatchInReturnTypeOnImplicitImplementation: Nullability of reference types in return type of '{0}' doesn't match implicitly implemented member '{1}' (possibly because of nullability attributes).
-  - "CS8764" # WRN_TopLevelNullabilityMismatchInReturnTypeOnOverride:  Nullability of return type doesn't match overridden member (possibly because of nullability attributes).
   - "CS8774" # WRN_MemberNotNull: Member '{0}' must have a non-null value when exiting.
   - "CS8776" # WRN_MemberNotNullBadMember:  Member '{0}' cannot be used in this attribute.
   - "CS8775" # WRN_MemberNotNullWhen: Member '{0}' must have a non-null value when exiting with '{1}'.
   - "CS8777" # WRN_ParameterDisallowsNull: Parameter '{0}' must have a non-null value when exiting.
   - "CS8824" # WRN_ParameterNotNullIfNotNull: Parameter '{0}' must have a non-null value when exiting because parameter '{1}' is non-null.
   - "CS8825" # WRN_ReturnNotNullIfNotNull: Return value must be non-null because parameter '{0}' is non-null.
+# Exhaustive switch expression
+  - "CS8655" # WRN_SwitchExpressionNotExhaustiveForNull: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.
+  - "CS8847" # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
 helpviewer_keywords:
   - "CS8602"
   - "CS8670"
@@ -130,20 +131,20 @@ You'll address almost all warnings using one of four techniques:
 
 ## Possible dereference of null
 
-One set of warnings alert you that you're dereferencing a variable whose *null-state* is *maybe-null*. One example might be:
+This set of warnings alert you that you're dereferencing a variable whose *null-state* is *maybe-null*. These warnings are:
 
-```csharp
-string message = null;
-Console.WriteLine(message.Length);
-```
+- **CS8602** - *Dereference of a possibly null reference.*
+- **CS8670** - *Object or collection initializer implicitly dereferences possibly null member.*
 
-To remove these warnings, you need to add code to change that variable's *null-state* to *not-null* before dereferencing it.
+The following code demonstrates one example of each of the preceding warnings:
+
+:::code language="csharp" source="snippets/null-warnings/NullWarnings.cs" id="PossibleNullDereference":::
+
+To remove these warnings, you need to add code to change that variable's *null-state* to *not-null* before dereferencing it.The collection initializer warning may be harder to spot. The compiler detects that the collection *maybe-null* when the initializer adds elements to it.
 
 In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. For example, the above example could be rewritten as:
 
 :::code language="csharp" source="snippets/null-warnings/Program.cs" id="ProvideNullCheck":::
-
-When your code generates a warning that it may be dereferencing a *maybe-null* reference, make sure you've done a null check. If you haven't, add one. The compiler warning helped you address a possible bug.
 
 Other instances when you get these warnings may be false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example that uses a private utility method, `IsNotNull`:
 
@@ -172,9 +173,22 @@ Fixing a warning for dereferencing a *maybe-null* variable involves one of three
 
 ## Possible null assigned to a nonnullable reference
 
+This set of warnings alert you that you're assigning a variable whose type is nonnullable to an expressions whose *null-state* is *maybe-null*. These warnings are:
+
+- **CS8601** - *Possible null reference assignment.*
+- **CS8605** - *Unboxing a possibly null value.*
+- **CS8602** - *Possible null reference return.*
+- **CS8604** - *Possible null reference argument for parameter.*
+- **CS8600** - *Converting null literal or possible null value to non-nullable type.*
+- **CS8597** - *Thrown value may be null.*
+- **CS8625** - *Cannot convert null literal to non-nullable reference type.*
+- **CS8629** - *Nullable value type may be null.*
+
 The compiler emits these warnings when you attempt to assign an expression that is *maybe-null* to a variable that is nonnullable. For example:
 
 :::code language="csharp" source="./snippets/null-warnings/Program.cs" id="PossibleNullAssignment":::
+
+The different warnings indicate different constructs where an expression must be *not-null*, such as assignment, unboxing assignment, return statements, arguments to methods, and throw expressions.
 
 You can take one of three actions to address these warnings. One is to add the `?` annotation to make the variable a nullable reference type. That change may cause other warnings. Changing a variable from a non-nullable reference to a nullable reference changes its default *null-state* from *not-null* to *maybe-null*. The compiler's static analysis may find instances where you dereference a variable that is *maybe-null*.
 
@@ -197,7 +211,12 @@ Fixing a warning for assigning a *maybe-null* expression to a *not-null* variabl
 
 ## Nonnullable reference not initialized
 
-Other warnings are generated when a nonnullable reference variable isn't initialized when declared, or in a constructor. Consider the following class as an example:
+This set of warnings alert you that you're assigning a variable whose type is nonnullable to an expressions whose *null-state* is *maybe-null*. These warnings are:
+
+- **CS8618** - *Non-nullable variable must contain a non-null value when exiting constructor. Consider declaring it as nullable.*
+- **CS8762** - *Parameter  must have a non-null value when exiting.*
+
+Consider the following class as an example:
 
 :::code language="csharp" source="./snippets/null-warnings/PersonExamples.cs" id="PersonExample":::
 
@@ -232,7 +251,40 @@ Fixing a warning for not initializing a nonnullable member involves one of four 
 
 ## Mismatch in nullability declaration
 
-Other warnings indicate nullability mismatches between signatures for methods, delegates, or type parameters. For example:
+Many warnings indicate nullability mismatches between signatures for methods, delegates, or type parameters.
+
+- **CS8619** - *Nullability of reference types in value doesn't match target type.*
+- **CS8621** - *Nullability of reference types in return type doesn't match the target delegate (possibly because of nullability attributes).*
+- **CS8622** - *Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).*
+- **CS8631** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.*
+- **CS8634** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'class' constraint.*
+- **CS8714** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'notnull' constraint.*
+- **CS8608** - *Nullability of reference types in type doesn't match overridden member.*
+- **CS8609** - *Nullability of reference types in return type doesn't match overridden member.*
+- **CS8819** - *Nullability of reference types in return type doesn't match partial method declaration.*
+- **CS8610** - *Nullability of reference types in type parameter doesn't match overridden member.*
+- **CS8611** - *Nullability of reference types in type parameter doesn't match partial method declaration.*
+- **CS8612** - *Nullability of reference types in type doesn't match implicitly implemented member.*
+- **CS8613** - *Nullability of reference types in return type doesn't match implicitly implemented member.*
+- **CS8614** - *Nullability of reference types in type of parameter doesn't match implicitly implemented member.*
+- **CS8615** - *Nullability of reference types in type doesn't match implemented member.*
+- **CS8616** - *Nullability of reference types in return type doesn't match implemented member.*
+- **CS8617** - *Nullability of reference types in type of parameter doesn't match implemented member.*
+- **CS8633** - *Nullability in constraints for type parameter of method doesn't match the constraints for type parameter of interface method. Consider using an explicit interface implementation instead.*
+- **CS8643** - *Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.*
+- **CS8644** - *Type does not implement interface member. Nullability of reference types in interface implemented by the base type doesn't match.*
+- **CS8620** - *Argument cannot be used for parameter due to differences in the nullability of reference types.*
+- **CS8624** - *Argument cannot be used as an output due to differences in the nullability of reference types.*
+- **CS8645** - *Member is already listed in the interface list on type with different nullability of reference types.*
+- **CS8667** - *Partial method declarations have inconsistent nullability in constraints for type parameter.*
+- **CS8764** - *Nullability of return type doesn't match overridden member (possibly because of nullability attributes).*
+- **CS8765** - *Nullability of type of parameter doesn't match overridden member (possibly because of nullability attributes).*
+- **CS8768** - *Nullability of reference types in return type doesn't match implemented member (possibly because of nullability attributes).*
+- **CS8767** - *Nullability of reference types in type of parameter of doesn't match implicitly implemented member (possibly because of nullability attributes).*
+- **CS8766** - *Nullability of reference types in return type of doesn't match implicitly implemented member (possibly because of nullability attributes).*
+- **CS8769** - *Nullability of reference types in type of parameter doesn't match implemented member (possibly because of nullability attributes).*
+
+The following code demonstrates *CS8764*:
 
 :::code language="csharp" source="snippets/null-warnings/Hierarchy.cs" id="Hierarchy":::
 
@@ -244,10 +296,35 @@ To fix these warnings, update the appropriate declaration.
 
 ## Code doesn't match attribute declaration
 
-The preceding sections have discussed how you can use [Attributes for nullable static analysis](language-reference/attributes/nullable-analysis.md) to inform the compiler about the null semantics of your code. The compiler warns you if the code doesn't adhere to the promises of that attribute. Consider the following method:
+The preceding sections have discussed how you can use [Attributes for nullable static analysis](language-reference/attributes/nullable-analysis.md) to inform the compiler about the null semantics of your code. The compiler warns you if the code doesn't adhere to the promises of that attribute:
+
+- **CS8607** - *A possible null value may not be used for a type marked with `[NotNull]` or `[DisallowNull]`*
+- **CS8763** - *A method marked `[DoesNotReturn]` should not return.*
+- **CS8770** - *Method lacks `[DoesNotReturn]` annotation to match implemented or overridden member.*
+- **CS8774** - *Member must have a non-null value when exiting.*
+- **CS8776** - *Member cannot be used in this attribute.*
+- **CS8775** - *Member must have a non-null value when exiting.*
+- **CS8777** - *Parameter must have a non-null value when exiting.*
+- **CS8824** - *Parameter must have a non-null value when exiting because parameter is non-null.*
+- **CS8825** - *Return value must be non-null because parameter is non-null.*
+
+Consider the following method:
 
 :::code language="csharp" source="snippets/null-warnings/NullTests.cs" id="ViolateAttribute":::
 
 The compiler produces a warning because the `message` parameter is assigned `null` *and* the method returns `true`. The `NotNullWhen` attribute indicates that shouldn't happen.
 
 To address these warnings, update your code so it matches the expectations of the attributes you've applied. You may change the attributes, or the algorithm.
+
+# Exhaustive switch expression
+
+Switch expressions must be *exhaustive*, meaning that all input values must be handled. Even for non-nullable reference types, the `null` value must be accounted for. The compiler issues warnings when the null value isn't handled:
+
+- **CS8655** # WRN_SwitchExpressionNotExhaustiveForNull: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.
+- **CS8847** # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
+
+The following example code demonstrates this condition:
+
+:::code language="csharp" source="snippets/null-warnings/NullWarnings.cs" id="NullExhaustiveSwitch":::
+
+Note that the input expression is a `string`, not a `string?`. The compiler still generates this warning. The `{ }` pattern handles all non-null values, but doesn't match `null`. To address these errors, you can either add a explicit `null` case, or replace the `{ }` with the `_` (discard) pattern. The discard pattern matches null as well as any other value.

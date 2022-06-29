@@ -31,6 +31,8 @@ items:
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: IHubClients and IHubCallerClients hide members
           href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
+        - name: "Kestrel: Default HTTPS binding removed"
+          href: aspnet-core/7.0/https-binding-kestrel.md
         - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
@@ -67,6 +69,10 @@ items:
         items:
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+      - name: Extensions
+        items:
+        - name: ContentRootPath for apps launched by Windows Shell
+          href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -579,6 +585,8 @@ items:
             href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
           - name: IHubClients and IHubCallerClients hide members
             href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
+          - name: "Kestrel: Default HTTPS binding removed"
+            href: aspnet-core/7.0/https-binding-kestrel.md
           - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
           - name: Microsoft.Data.SqlClient updated to 4.0.1
@@ -919,6 +927,10 @@ items:
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Extensions
       items:
+      - name: .NET 7
+        items:
+        - name: ContentRootPath for apps launched by Windows Shell
+          href: extensions/7.0/contentrootpath-hosted-app.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider

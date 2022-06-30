@@ -98,7 +98,7 @@ In the following example, the right-hand operand of the `&&` operator is a metho
 
 [!code-csharp-interactive[conditional logical AND](snippets/shared/BooleanLogicalOperators.cs#ConditionalAnd)]
 
-The [logical AND operator](#logical-and-operator-) `&` also computes the logical AND of its operands, but always evaluates both operands.
+The [Conditional AND operator](#logical-and-operator-) `&&` also computes the logical AND of its operands, but always evaluates both operands.
 
 ## Conditional logical OR operator ||
 
@@ -108,7 +108,7 @@ In the following example, the right-hand operand of the `||` operator is a metho
 
 [!code-csharp-interactive[conditional logical OR](snippets/shared/BooleanLogicalOperators.cs#ConditionalOr)]
 
-The [logical OR operator](#logical-or-operator-) `|` also computes the logical OR of its operands, but always evaluates both operands.
+The [Conditional OR operator](#logical-or-operator-) `||` also computes the logical OR of its operands, but always evaluates both operands.
 
 ## Nullable Boolean logical operators
 

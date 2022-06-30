@@ -121,6 +121,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
 > | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |
+> | [IDE0170](ide0170.md) | Simplify property pattern | [csharp_style_prefer_extended_property_pattern](ide0170.md#csharp_style_prefer_extended_property_pattern) |
+> | [IDE0180](ide0180.md) | Use tuple to swap values | [csharp_style_prefer_tuple_swap](ide0180.md#csharp_style_prefer_tuple_swap) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

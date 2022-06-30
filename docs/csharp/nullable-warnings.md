@@ -315,7 +315,7 @@ The compiler produces a warning because the `message` parameter is assigned `nul
 
 To address these warnings, update your code so it matches the expectations of the attributes you've applied. You may change the attributes, or the algorithm.
 
-# Exhaustive switch expression
+## Exhaustive switch expression
 
 Switch expressions must be *exhaustive*, meaning that all input values must be handled. Even for non-nullable reference types, the `null` value must be accounted for. The compiler issues warnings when the null value isn't handled:
 

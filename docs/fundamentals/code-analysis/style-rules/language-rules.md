@@ -97,6 +97,7 @@ The style rules in this section are applicable to C# language only.
   - [Use switch expression (IDE0066)](ide0066.md)
   - [Use pattern matching (IDE0078)](ide0078.md)
   - [Use pattern matching (`not` operator) (IDE0083)](ide0083.md)
+  - [Simplify property pattern (IDE0170)](ide0170.md)
 - [Expression-level preferences](expression-level-preferences.md#c-expression-level-preferences)
   - [Inline variable declaration (IDE0018)](ide0018.md)
   - [Simplify 'default' expression (IDE0034)](ide0034.md)

@@ -192,18 +192,18 @@ The following example formats a <xref:System.Double> and an <xref:System.Int32> 
 
 The general ("G") format specifier converts a number to the more compact of either fixed-point or scientific notation, depending on the type of the number and whether a precision specifier is present. The precision specifier defines the maximum number of significant digits that can appear in the result string. If the precision specifier is omitted or zero, the type of the number determines the default precision, as indicated in the following table.
 
-|Numeric type|Default precision|
-|------------------|-----------------------|
-|<xref:System.Byte> or <xref:System.SByte>|3 digits|
+|Numeric type                               | Default precision |
+|-------------------------------------------|-------------------|
+|<xref:System.Byte> or <xref:System.SByte>  |3 digits|
 |<xref:System.Int16> or <xref:System.UInt16>|5 digits|
 |<xref:System.Int32> or <xref:System.UInt32>|10 digits|
-|<xref:System.Int64>|19 digits|
-|<xref:System.UInt64>|20 digits|
-|<xref:System.Numerics.BigInteger>|Unlimited (same as ["R"](#RFormatString))|
-|<xref:System.Half>|3 digits|
-|<xref:System.Single>|7 digits|
-|<xref:System.Double>|15 digits|
-|<xref:System.Decimal>|29 digits|
+|<xref:System.Int64>                        |19 digits|
+|<xref:System.UInt64>                       |20 digits|
+|<xref:System.Numerics.BigInteger>          |Unlimited (same as ["R"](#RFormatString))|
+|<xref:System.Half>                         |3 digits|
+|<xref:System.Single>                       |9 digits (7 digits in .NET Framework)|
+|<xref:System.Double>                       |17 digits (15 digits in .NET Framework)|
+|<xref:System.Decimal>                      |29 digits|
 
 Fixed-point notation is used if the exponent that would result from expressing the number in scientific notation is greater than -5 and less than the precision specifier; otherwise, scientific notation is used. The result contains a decimal point if required, and trailing zeros after the decimal point are omitted. If the precision specifier is present and the number of significant digits in the result exceeds the specified precision, the excess trailing digits are removed by rounding.
 

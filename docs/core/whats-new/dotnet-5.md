@@ -1,7 +1,8 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 11/30/2020
+ms.date: 06/30/2022
+ms.custom: devdivchpfy22
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -12,7 +13,7 @@ author: IEvangelist
 .NET 5 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4 for two reasons:
 
 - We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
-- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+- We dropped "Core" from the name to emphasize that it's the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 
@@ -46,7 +47,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 ### Windows Communication Foundation
 
-The original implementation of [Windows Communication Foundation (WCF)](../../framework/wcf/index.md) was only supported on Windows. However, there is a client port available from the .NET Foundation. It is entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
+The original implementation of [Windows Communication Foundation (WCF)](../../framework/wcf/index.md) was only supported on Windows. However, there's a client port available from the .NET Foundation. It's entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
 
 - [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex)
 - [System.ServiceModel.Federation](https://www.nuget.org/packages/System.ServiceModel.Federation)
@@ -67,9 +68,9 @@ For .NET 5 apps and libraries, the `net5.0` Target Framework Moniker (TFM) combi
 
 Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9, which brings many new features to the language. Here are a few highlights:
 
-- Records: reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
+- Records: Reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
 - Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
-- Top-level statements: As a means for accelerating adoption and learning of C#, the `Main` method can be omitted and application as simple as the following is valid:
+- Top-level statements: As a means for accelerating adoption and learning of C#, the `Main` method can be omitted and application as simple as the following code is valid:
 
    ```csharp
    System.Console.Write("Hello world!");
@@ -103,7 +104,7 @@ let age = 36
 let message = $"%s{name} is %d{age} years old."
 ```
 
-This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs.
+This format is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs.
 
 For more information, see [What's new in F# 5](../../fsharp/whats-new/fsharp-50.md).
 

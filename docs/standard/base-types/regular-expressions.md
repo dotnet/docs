@@ -2,7 +2,8 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: conceptual
-ms.date: "06/30/2020"
+ms.date: "06/30/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -35,7 +36,7 @@ For many applications that deal with strings or that parse large blocks of text,
   
 ## How regular expressions work
 
- The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine be provided with the following two items of information:  
+ The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine is provided with the following two items of information:  
   
 - The regular expression pattern to identify in the text.  
   
@@ -60,7 +61,7 @@ For more information about the regular expression language, see [Regular Express
   
 ## Regular expression examples
 
-The <xref:System.String> class includes a number of string search and replacement methods that you can use when you want to locate literal strings in a larger string. Regular expressions are most useful either when you want to locate one of several substrings in a larger string, or when you want to identify patterns in a string, as the following examples illustrate.
+The <xref:System.String> class includes many string search and replacement methods that you can use when you want to locate literal strings in a larger string. Regular expressions are most useful either when you want to locate one of several substrings in a larger string, or when you want to identify patterns in a string, as the following examples illustrate.
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
@@ -69,7 +70,7 @@ The <xref:System.String> class includes a number of string search and replacemen
 
 ### Example 1: Replace substrings  
 
- Assume that a mailing list contains names that sometimes include a title (Mr., Mrs., Miss, or Ms.) along with a first and last name. If you do not want to include the titles when you generate envelope labels from the list, you can use a regular expression to remove the titles, as the following example illustrates.  
+ Assume that a mailing list contains names that sometimes include a title (Mr., Mrs., Miss, or Ms.) along with a first and last name. If you don't want to include the titles when you generate envelope labels from the list, you can use a regular expression to remove the titles, as the following example illustrates.
   
  [!code-csharp[Conceptual.Regex#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example1.cs#2)]
  [!code-vb[Conceptual.Regex#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example1.vb#2)]  
@@ -78,7 +79,7 @@ The <xref:System.String> class includes a number of string search and replacemen
   
 ### Example 2: Identify duplicated words  
 
- Accidentally duplicating words is a common error that writers make. A regular expression can be used to identify duplicated words, as the following example shows.  
+ Accidentally duplicating words is a common error that writers make. A regular expression can be used to identify duplicated words, as the following example shows:
   
  [!code-csharp[Conceptual.Regex#3](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example2.cs#3)]
  [!code-vb[Conceptual.Regex#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example2.vb#3)]  
@@ -96,11 +97,11 @@ The <xref:System.String> class includes a number of string search and replacemen
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
   
- The input string includes the substring "this? This". However, because of the intervening punctuation mark, it is not identified as a duplication.  
+ The input string includes the substring "this? This". However, because of the intervening punctuation mark, it isn't identified as a duplication.  
   
 ### Example 3: Dynamically build a culture-sensitive regular expression  
 
- The following example illustrates the power of regular expressions combined with the flexibility offered by .NET's globalization features. It uses the <xref:System.Globalization.NumberFormatInfo> object to determine the format of currency values in the system's current culture. It then uses that information to dynamically construct a regular expression that extracts currency values from the text. For each match, it extracts the subgroup that contains the numeric string only, converts it to a <xref:System.Decimal> value, and calculates a running total.  
+ The following example illustrates the power of regular expressions combined with the flexibility offered by .NET's globalization features. It uses the <xref:System.Globalization.NumberFormatInfo> object to determine the format of currency values in the system's current culture. It then uses that information to dynamically construct a regular expression that extracts currency values from the text. For each match, it extracts the subgroup that contains the numeric string only, converts it to a <xref:System.Decimal> value, and calculates a running total.
   
  [!code-csharp[Conceptual.Regex#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example.cs#1)]
  [!code-vb[Conceptual.Regex#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example.vb#1)]  
@@ -110,19 +111,19 @@ The <xref:System.String> class includes a number of string search and replacemen
 > [!div class="mx-tdCol2BreakAll"]
 > |Pattern|Interpretation|  
 > |-|-|  
-> |`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. (The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string.) To ensure that the current culture's currency symbol is not misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  
+> |`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string. To ensure that the current culture's currency symbol isn't misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  
 > |`\s*`|Look for zero or more occurrences of a white-space character.|  
 > |`[-+]?`|Look for zero or one occurrence of either a positive sign or a negative sign.|  
-> |`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. (The first element in the collection represents the entire match.)|  
+> |`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The first element in the collection represents the entire match.|  
 > |`[0-9]{0,3}`|Look for zero to three occurrences of the decimal digits 0 through 9.|  
 > |`(,[0-9]{3})*`|Look for zero or more occurrences of a group separator followed by three decimal digits.|  
 > |`\.`|Look for a single occurrence of the decimal separator.|  
 > |`[0-9]+`|Look for one or more decimal digits.|  
 > |`(\.[0-9]+)?`|Look for zero or one occurrence of the decimal separator followed by at least one decimal digit.|  
   
- If each of these subpatterns is found in the input string, the match succeeds, and a <xref:System.Text.RegularExpressions.Match> object that contains information about the match is added to the <xref:System.Text.RegularExpressions.MatchCollection> object.  
+ If each of the subpatterns is found in the input string, the match succeeds, and a <xref:System.Text.RegularExpressions.Match> object that contains information about the match is added to the <xref:System.Text.RegularExpressions.MatchCollection> object.  
   
-## Related topics  
+## Related sections  
   
 |Title|Description|  
 |-----------|-----------------|  

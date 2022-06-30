@@ -3,7 +3,7 @@ title: Worker Services in .NET
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/24/2022
+ms.date: 06/30/2022
 ms.topic: overview
 ---
 
@@ -11,7 +11,7 @@ ms.topic: overview
 
 There are numerous reasons for creating long-running services such as:
 
-- Processing CPU intensive data.
+- Processing CPU-intensive data.
 - Queuing work items in the background.
 - Performing a time-based operation on a schedule.
 

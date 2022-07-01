@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for exceptions - .NET"
 description: Learn best practices for exceptions, such as using try/catch/finally, handling common conditions without exceptions, and using predefined .NET exception types.
-ms.date: "06/29/2022"
+ms.date: "07/01/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -44,7 +44,7 @@ The method to choose depends on how often you expect the event to occur.
 
 ## Design classes so that exceptions can be avoided
 
-A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. This kind of approach can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
+A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. This approach can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
 
 [!code-cpp[Conceptual.Exception.Handling#5](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#5)]
 [!code-csharp[Conceptual.Exception.Handling#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]

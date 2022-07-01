@@ -2,7 +2,7 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: conceptual
-ms.date: "06/30/2022"
+ms.date: "07/01/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -79,7 +79,7 @@ The <xref:System.String> class includes many string search and replacement metho
   
 ### Example 2: Identify duplicated words  
 
- Accidentally duplicating words is a common error that writers make. A regular expression can be used to identify duplicated words, as the following example shows:
+ Accidentally duplicating words is a common error that writers make. Use a regular expression to identify duplicated words, as the following example shows:
   
  [!code-csharp[Conceptual.Regex#3](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example2.cs#3)]
  [!code-vb[Conceptual.Regex#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example2.vb#3)]  

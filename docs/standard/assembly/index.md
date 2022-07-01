@@ -1,7 +1,7 @@
 ---
 title: "Assemblies in .NET"
 description: Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
-ms.date: 06/29/2022
+ms.date: 07/01/2022
 ms.custom: devdivchpfy22
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 helpviewer_keywords:
@@ -78,7 +78,7 @@ Every assembly has an *assembly manifest* file. Similar to a table of contents, 
 
 - An *assembly reference list*, which is a list of all external dependencies, such as *.dll*s or other files. Assembly references contain references to both global and private objects. Global objects are available to all other applications. In .NET Core, global objects are coupled with a particular .NET Core runtime. In .NET Framework, global objects reside in the global assembly cache (GAC). *System.IO.dll* is an example of an assembly in the GAC. Private objects must be in a directory level at or below the directory in which your app is installed.
 
-Typically assemblies contain information about content, versioning, and dependencies. And the applications that use them doesn't require to rely on external sources, such as the registry on Windows systems, to function properly. Assemblies reduce *.dll* conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information, see [Assembly manifest](manifest.md).
+Typically assemblies contain information about content, versioning, and dependencies. And the applications that use them need not rely on external sources, such as the registry on Windows systems, to function properly. Assemblies reduce *.dll* conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information, see [Assembly manifest](manifest.md).
 
 ## Add a reference to an assembly
 

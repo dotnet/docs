@@ -47,7 +47,7 @@ There are several options for executing code on the view model in response to in
 The view model implements properties and commands to which the view can data bind to, and notifies the view of any state changes through change notification events. The properties and commands that the view model provides define the functionality to be offered by the UI, but the view determines how that functionality is to be displayed.
 
 > [!TIP]
-> Keep the UI responsive with asynchronous operations
+> Keep the UI responsive with asynchronous operations.
 
 Mobile apps should keep the UI thread unblocked to improve the user's perception of performance. Therefore, in the view model, use asynchronous methods for I/O operations and raise events to asynchronously notify views of property changes.
 

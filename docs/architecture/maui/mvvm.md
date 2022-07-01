@@ -6,7 +6,7 @@ no-loc: [MAUI]
 ms.date: 07/01/2022
 ---
 
-# MVVM
+# Model-View-ViewModel (MVVM)
 
 The .NET MAUI developer experience typically involves creating a user interface in XAML, and then adding code-behind that operates on the user interface. Complex maintenance issues can arise as apps are modified and grow in size and scope. These issues include the tight coupling between the UI controls and the business logic, which increases the cost of making UI modifications, and the difficulty of unit testing such code.
 

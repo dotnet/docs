@@ -122,7 +122,7 @@ All view model and model classes that are accessible to a view should implement 
 
 App's should be architected for the correct use of property change notification, by meeting the following requirements:
 
-- Always raising a PropertyChanged event if a public property's value changes. Do not assume that raising the PropertyChanged event can be ignored because of knowledge of how XAML binding occurs.
+- Always raising a `PropertyChanged` event if a public property's value changes. Do not assume that raising the `PropertyChanged` event can be ignored because of knowledge of how XAML binding occurs.
 - Always raising a PropertyChanged event for any calculated properties whose values are used by other properties in the view model or model.
 - Always raising the PropertyChanged event at the end of the method that makes a property change, or when the object is known to be in a safe state. Raising the event interrupts the operation by invoking the event's handlers synchronously. If this happens in the middle of an operation, it might expose the object to callback functions when it is in an unsafe, partially updated state. In addition, it's possible for cascading changes to be triggered by PropertyChanged events. Cascading changes generally require updates to be complete before the cascading change is safe to execute.
 - Never raising a PropertyChanged event if the property does not change. This means that you must compare the old and new values before raising the PropertyChanged event.

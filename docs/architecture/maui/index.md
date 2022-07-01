@@ -3,7 +3,7 @@ title: Enterprise Application Patterns Using .NET MAUI
 description: Learn how to design adaptable, maintainable, and testable MAUI applications.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/12/2022
+ms.date: 06/12/2022
 ---
 
 # Enterprise Application Patterns Using .NET MAUI

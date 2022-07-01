@@ -79,7 +79,7 @@ With view first composition the app is conceptually composed of views that conne
 With view model first composition, the app is conceptually composed of view models, with a service responsible for locating the view for a view model. View model first composition feels more natural to some developers, since the view creation can be abstracted away, allowing them to focus on the logical non-UI structure of the app. In addition, it allows view models to be created by other view models. However, this approach is often complex, and it can become difficult to understand how the various parts of the app are created and associated.
 
 > [!TIP]
-> Keep view models and views independent
+> Keep view models and views independent.
 
 The binding of views to a property in a data source should be the view's principal dependency on its corresponding view model. Specifically, don't reference view types, such as Button and ListView, from view models. By following the principles outlined here, view models can be tested in isolation, therefore reducing the likelihood of software defects by limiting scope.
 

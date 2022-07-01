@@ -94,7 +94,7 @@ The simplest approach is for the view to declaratively instantiate its correspon
     <ContentPage.BindingContext>
         <local:LoginViewModel />
     </ContentPage.BindingContext>
-    ...
+    <!-- Omitted for brevity... -->
 </ContentPage>
 ```
 

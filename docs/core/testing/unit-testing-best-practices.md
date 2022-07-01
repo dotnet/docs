@@ -3,7 +3,7 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 06/16/2022
+ms.date: 07/01/2022
 ms.custom: devdivchpfy22
 ---
 
@@ -19,7 +19,7 @@ By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https:/
 
 ### Less time performing functional tests
 
-Functional tests are expensive. They typically involve opening up the application and performing a series of steps that you (or someone else), must follow in order to validate the expected behavior. These steps might not always be known to the tester. They'll have to reach out to someone more knowledgeable in the area in order to carry out the test. Testing itself could take seconds for trivial changes, or minutes for larger changes. Lastly, this process must be repeated for every change that you make in the system.
+Functional tests are expensive. They typically involve opening up the application and performing a series of steps that you (or someone else) must follow in order to validate the expected behavior. These steps might not always be known to the tester. They'll have to reach out to someone more knowledgeable in the area in order to carry out the test. Testing itself could take seconds for trivial changes, or minutes for larger changes. Lastly, this process must be repeated for every change that you make in the system.
 
 Unit tests, on the other hand, take milliseconds, can be run at the press of a button, and don't necessarily require any knowledge of the system at large. Whether or not the test passes or fails is up to the test runner, not the individual.
 
@@ -89,7 +89,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-By renaming the class to `FakeOrder`, you've made the class a lot more generic, the class can be used as a mock or a stub. Whichever is better for the test case. In the above example, `FakeOrder` is used as a stub. You're not using the `FakeOrder` in any shape or form during the assert. `FakeOrder` was passed into the `Purchase` class to satisfy the requirements of the constructor.
+By renaming the class to `FakeOrder`, you've made the class a lot more generic and the class can be used as a mock or a stub, whichever is better for the test case. In the preceding example, `FakeOrder` is used as a stub. You're not using the `FakeOrder` in any shape or form during the assert. `FakeOrder` was passed into the `Purchase` class to satisfy the requirements of the constructor.
 
 To use it as a Mock, you could do something like the following code:
 
@@ -102,7 +102,7 @@ purchase.ValidateOrders();
 Assert.True(mockOrder.Validated);
 ```
 
-In this case, you're checking a property on the Fake (asserting against it), so in the above code snippet, the `mockOrder` is a Mock.
+In this case, you're checking a property on the Fake (asserting against it), so in the preceding code snippet, the `mockOrder` is a Mock.
 
 > [!IMPORTANT]
 > It's important to get this terminology correct. If you call your stubs "mocks," other developers are going to make false assumptions about your intent.
@@ -123,9 +123,7 @@ The name of your test should consist of three parts:
 
 #### Why?
 
-- Naming standards are important because they explicitly express the intent of the test.
-
-Tests are more than just making sure your code works, they also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code without even looking at the code itself. Additionally, when tests fail, you can see exactly which scenarios don't meet your expectations.
+Naming standards are important because they explicitly express the intent of the test. Tests are more than just making sure your code works, they also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code without even looking at the code itself. Additionally, when tests fail, you can see exactly which scenarios don't meet your expectations.
 
 #### Bad:
 
@@ -201,7 +199,7 @@ Magic strings can cause confusion to the reader of your tests. If a string looks
 
 ### Avoid logic in tests
 
-When writing your unit tests avoid manual string concatenation and logical conditions such as `if`, `while`, `for`, `switch`, etc.
+When writing your unit tests avoid manual string concatenation, logical conditions such as `if`, `while`, `for`, `switch`, and other conditions.
 
 #### Why?
 
@@ -258,18 +256,18 @@ In unit testing frameworks, `Setup` is called before each and every unit test wi
 
 ### Avoid multiple acts
 
-When writing your tests, try to only include one Act per test. Common approaches to using only one act include:
+When writing your tests, try to only include one act per test. Common approaches to using only one act include:
 
 - Create a separate test for each act.
 - Use parameterized tests.
 
 #### Why?
 
-- When the test fails, it isn't clear which Act is failing.
+- When the test fails, it isn't clear which act is failing.
 - Ensures that the test is focused on just a single case.
 - Gives you the entire picture as to why your tests are failing.
 
-Multiple Acts need to be individually Asserted and it isn't guaranteed that all of the Asserts will be executed. In most unit testing frameworks, once an Assert fails in a unit test, the proceeding tests are automatically considered to be failing. This kind of process can be confusing as functionality that is actually working, will be shown as failing.
+Multiple acts need to be individually Asserted and it isn't guaranteed that all of the Asserts will be executed. In most unit testing frameworks, once an Assert fails in a unit test, the proceeding tests are automatically considered to be failing. This kind of process can be confusing as functionality that is actually working, will be shown as failing.
 
 #### Bad:
 
@@ -355,7 +353,7 @@ public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 }
 ```
 
-Unfortunately, you'll quickly realize that there are a couple problems with your tests.
+Unfortunately, you'll quickly realize that there are a couple of problems with your tests.
 
 - If the test suite is run on a Tuesday, the second test will pass, but the first test will fail.
 - If the test suite is run on any other day, the first test will pass, but the second test will fail.

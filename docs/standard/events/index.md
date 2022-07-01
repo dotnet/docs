@@ -1,7 +1,7 @@
 ---
 title: "Handling and Raising Events"
 description: Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
-ms.date: "06/09/2022"
+ms.date: "07/01/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -26,7 +26,7 @@ An event is a message sent by an object to signal the occurrence of an action. T
   
 To define an event, you use the C# [`event`](../../csharp/language-reference/keywords/event.md) or the Visual Basic [`Event`](../../visual-basic/language-reference/statements/event-statement.md) keyword in the signature of your event class, and specify the type of delegate for the event. Delegates are described in the next section.  
   
-Typically, to raise an event, you add a method that is marked as `protected` and `virtual` (in C#) or `Protected` and `Overridable` (in Visual Basic). Name this method `On`*EventName*; for example, `OnDataReceived`. The method should take one parameter that specifies an event data object, which is an object of type <xref:System.EventArgs> or a derived type. You provide this method to enable derived classes to override the logic for raising the event. A derived class should always call the `On`*EventName* method of the base class to ensure that registered delegates receive the event.  
+Typically, to raise an event, you add a method that is marked as `protected` and `virtual` (in C#) or `Protected` and `Overridable` (in Visual Basic). Name this method `OnEventName`; for example, `OnDataReceived`. The method should take one parameter that specifies an event data object, which is an object of type <xref:System.EventArgs> or a derived type. You provide this method to enable derived classes to override the logic for raising the event. A derived class should always call the `On`*EventName* method of the base class to ensure that registered delegates receive the event.  
 
 The following example shows how to declare an event named `ThresholdReached`. The event is associated with the <xref:System.EventHandler> delegate and raised in a method named `OnThresholdReached`.  
   
@@ -81,7 +81,7 @@ The following example shows an event handler method named `c_ThresholdReached` t
  Event properties consist of event declarations accompanied by event accessors. Event accessors are methods that you define to add or remove event delegate instances from the storage data structure.
 
 >[!NOTE]
->The event properties are slower than the event fields, because each event delegate must be retrieved before it can be invoked.
+>The event properties are slower than the event fields because each event delegate must be retrieved before it can be invoked.
 
 The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you'll want to implement event properties. For more information, see [How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md).  
   
@@ -91,7 +91,7 @@ The trade-off is between memory and speed. If your class defines many events tha
 |-----------|-----------------|  
 |[How to: Raise and Consume Events](how-to-raise-and-consume-events.md)|Contains examples of raising and consuming events.|  
 |[How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md)|Shows how to use event properties to handle multiple events.|  
-|[Observer Design Pattern](observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with, and receive notifications from, a provider.|
+|[Observer Design Pattern](observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with and receive notifications from a provider.|
   
 ## See also
 

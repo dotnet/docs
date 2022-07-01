@@ -1,7 +1,7 @@
 ---
 title: "Trimming and Removing Characters from Strings in .NET"
 description: Learn to trim blank spaces from the beginning or end of a string, or remove any number of spaces or characters from a specified position in the string in .NET.
-ms.date: "06/14/2022"
+ms.date: "07/01/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "removing characters"
 ms.assetid: ab248dab-70d4-4413-81c6-542d153fd195
 ---
-# Trimming and Removing Characters from Strings in .NET
+# Trimming and removing characters from strings in .NET
 
-If you're parsing a sentence into individual words, you might end up with words that have blank spaces (also called white spaces) on either end of the word. In this situation, you can use one of the trim methods in the **System.String** class to remove any number of spaces or other characters from a specified position in the string. The following table describes the available trim methods:
+If you're parsing a sentence into individual words, you might end up with words that have blank spaces (also called white spaces) on either end of the word. In this situation, you can use one of the trim methods in the `System.String` class to remove any number of spaces or other characters from a specified position in the string. The following table describes the available trim methods:
   
 |Method name|Use|  
 |-----------------|---------|  
@@ -43,9 +43,9 @@ If you're parsing a sentence into individual words, you might end up with words 
   
 ## TrimEnd
 
- The **String.TrimEnd** method removes characters from the end of a string, creating a new string object. An array of characters is passed to this method to specify the characters to be removed. The order of the elements in the character array doesn't affect the trim operation. The trim stops when a character not specified in the array is found.
+ The `String.TrimEnd` method removes characters from the end of a string, creating a new string object. An array of characters is passed to this method to specify the characters to be removed. The order of the elements in the character array doesn't affect the trim operation. The trim stops when a character not specified in the array is found.
   
- The following example removes the last letters of a string using the **TrimEnd** method. In this example, the position of the `'r'` character and the `'W'` character are reversed to illustrate that the order of characters in the array doesn't matter. Notice that this code removes the last word of `MyString` plus part of the first.
+ The following example removes the last letters of a string using the `TrimEnd` method. In this example, the position of the `'r'` character and the `'W'` character are reversed to illustrate that the order of characters in the array doesn't matter. Notice that this code removes the last word of `MyString` plus part of the first.
   
  [!code-cpp[Conceptual.String.BasicOps#18](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#18)]
  [!code-csharp[Conceptual.String.BasicOps#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#18)]
@@ -53,7 +53,7 @@ If you're parsing a sentence into individual words, you might end up with words 
   
  This code displays `He` to the console.
   
- The following example removes the last word of a string using the **TrimEnd** method. In this code, a comma follows the word `Hello` and, because the comma isn't specified in the array of characters to trim, the trim ends at the comma.
+ The following example removes the last word of a string using the `TrimEnd` method. In this code, a comma follows the word `Hello` and because the comma isn't specified in the array of characters to trim, the trim ends at the comma.
   
  [!code-cpp[Conceptual.String.BasicOps#19](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#19)]
  [!code-csharp[Conceptual.String.BasicOps#19](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#19)]
@@ -63,7 +63,7 @@ If you're parsing a sentence into individual words, you might end up with words 
   
 ## TrimStart
 
- The **String.TrimStart** method is similar to the **String.TrimEnd** method except that it creates a new string by removing characters from the beginning of an existing string object. An array of characters is passed to the **TrimStart** method to specify the characters to be removed. As with the **TrimEnd** method, the order of the elements in the character array doesn't affect the trim operation. The trim stops when a character not specified in the array is found.
+ The `String.TrimStart` method is similar to the `String.TrimEnd` method except that it creates a new string by removing characters from the beginning of an existing string object. An array of characters is passed to the `TrimStart` method to specify the characters to be removed. As with the `TrimEnd` method, the order of the elements in the character array doesn't affect the trim operation. The trim stops when a character not specified in the array is found.
   
  The following example removes the first word of a string. In this example, the position of the `'l'` character and the `'H'` character are reversed to illustrate that the order of characters in the array doesn't matter.
   
@@ -92,4 +92,4 @@ If you're parsing a sentence into individual words, you might end up with words 
   
 ## See also
 
-- [Basic String Operations](basic-string-operations.md)
+[Basic String Operations](basic-string-operations.md)

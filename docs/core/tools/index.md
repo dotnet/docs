@@ -3,7 +3,7 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 06/08/2022
+ms.date: 07/01/2022
 ms.custom: devdivchpfy22
 ---
 # .NET CLI overview
@@ -59,11 +59,11 @@ The following commands are installed by default:
 - [`tool run`](global-tools.md#invoke-a-local-tool) Available since .NET Core SDK 3.0.
 - [`tool uninstall`](dotnet-tool-uninstall.md)
 
-Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third-parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
 
 ## Command structure
 
-CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was executed from a directory named *my_app*:
 
 ```dotnetcli
 dotnet new console
@@ -75,7 +75,7 @@ dotnet ./build_output/my_app.dll
 
 The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command.
 
-To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, just execute `dotnet my_app.dll`. If you want to use a specific version of the .NET Runtime, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference).
+To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, just execute `dotnet my_app.dll`. If you want to use a specific version of the .NET runtime, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference).
 
 When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
 
@@ -83,7 +83,7 @@ When you supply a command to the driver, `dotnet.exe` starts the CLI command exe
 dotnet build
 ```
 
-First, the driver determines the version of the SDK to use. If there's no [global.json](global-json.md) file, the latest version of the SDK available is used. Depending on what is latest on the machine, the SDK's version might be either a preview or stable version. Once the SDK version is determined, it executes the command.
+First, the driver determines the version of the SDK to use. If there's no [global.json](global-json.md) file, the latest version of the SDK available is used. Depending on what is latest on the machine, the SDK's version might be either a preview or stable version. After the SDK version is determined, it executes the command.
 
 ### Command
 

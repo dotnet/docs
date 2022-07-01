@@ -1,7 +1,7 @@
 ---
 title: Convert strings to DateTime
 description: "Learn techniques to parse strings that represent dates and times to create a DateTime from the date and time string."
-ms.date: 06/08/2022
+ms.date: 07/01/2022
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 ---
 # Parse date and time strings in .NET
 
-Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and the time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:
+Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:
 
 1. You must specify the expected format of the text representing a date and time.
 1. You might specify the culture for the format of a date time.
@@ -32,7 +32,7 @@ The text representing a date or time might be missing some information. For exam
 - When only the time is present, the date portion uses the current date.
 - When only the date is present, the time portion is midnight.
 - When the year isn't specified in a date, the current year is used.
-- When the day of the month isn't specified, the first of the month is used.
+- When the day of the month isn't specified, the first day of the month is used.
 
 If the date is present in the string, it must include the month and one of the day or year. If the time is present, it must include the hour, and either the minutes or the AM/PM designator.
 

@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 06/24/2022
+ms.date: 07/01/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -64,7 +64,7 @@ Allocating memory from the managed heap is faster than unmanaged memory allocati
 
 ### Memory release
 
-The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made. When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application. It determines which objects are no longer being used by examining the application's *roots*. An application's roots include static fields, local variables on a thread's stack, CPU registers, GC handles, and the finalize queue. Each root either refers to an object on the managed heap or is set to null. The garbage collector can ask the rest of the runtime for these roots. The garbage collector uses this list to create a graph that contains all the objects that are reachable from the roots.
+The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made. When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application. It determines which objects are no longer being used by examining the application's *roots*. An application's roots include static fields, local variables on a thread's stack, CPU registers, GC handles, and the finalized queue. Each root either refers to an object on the managed heap or is set to null. The garbage collector can ask the rest of the runtime for these roots. The garbage collector uses this list to create a graph that contains all the objects that are reachable from the roots.
 
 Objects that aren't in the graph are unreachable from the application's roots. The garbage collector considers unreachable objects garbage and releases the memory allocated for them. During a collection, the garbage collector examines the managed heap, looking for the blocks of address space occupied by unreachable objects. As it discovers each unreachable object, it uses a memory-copying function to compact the reachable objects in memory, freeing up the blocks of address spaces allocated to unreachable objects. Once the memory for the reachable objects has been compacted, the garbage collector makes the necessary pointer corrections so that the application's roots point to the objects in their new locations. It also positions the managed heap's pointer after the last reachable object.
 
@@ -80,15 +80,15 @@ Garbage collection occurs when one of the following conditions is true:
 
 - The memory that's used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
-- The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you don't have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
+- The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you don't have to call this method because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
 
 ## The managed heap
 
-After the garbage collector is initialized by the CLR, it allocates a segment of memory to store and manage objects. This memory is called the managed heap, as opposed to a native heap in the operating system.
+After the CLR initializes the garbage collector, it allocates a segment of memory to store and manage objects. This memory is called the managed heap, instead of a native heap in the operating system.
 
 There's a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.
 
-To reserve memory, the garbage collector calls the Windows [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) function and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments, as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Windows [VirtualFree](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree) function.
+To reserve memory, the garbage collector calls the Windows [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) function and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed and releases segments back to the operating system (after clearing them of any objects) by calling the Windows [VirtualFree](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree) function.
 
 > [!IMPORTANT]
 > The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.
@@ -99,7 +99,7 @@ When a garbage collection is triggered, the garbage collector reclaims the memor
 
 The intrusiveness (frequency and duration) of garbage collections is the result of the volume of allocations and the amount of survived memory on the managed heap.
 
-The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap. The large object heap contains objects that are 85,000 bytes and larger, which are usually arrays. It's rare for an instance object to be extra large.
+The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap. The large object heap contains objects that are 85,000 bytes and larger, which are usually arrays. It's rare for an instance object to be extra-large.
 
 > [!TIP]
 > You can [configure the threshold size](../../core/runtime-config/garbage-collector.md#large-object-heap-threshold) for objects to go on the large object heap.
@@ -109,24 +109,24 @@ The heap can be considered as the accumulation of two heaps: the [large object h
 The GC algorithm is based on several considerations:
 
 - It's faster to compact the memory for a portion of the managed heap than for the entire managed heap.
-- Newer objects have shorter lifetimes and older objects have longer lifetimes.
-- Newer objects tend to be related to each other and accessed by the application around the same time.
+- Newer objects have shorter lifetimes, and older objects have longer lifetimes.
+- Newer objects tend to be related to each other and accessed by the application simultaneously.
 
 Garbage collection primarily occurs with the reclamation of short-lived objects. To optimize the performance of the garbage collector, the managed heap is divided into three generations, 0, 1, and 2, so it can handle long-lived and short-lived objects separately. The garbage collector stores new objects in generation 0. Objects created early in the application's lifetime that survives collections are promoted and stored in generations 1 and 2. Because it's faster to compact a portion of the managed heap than the entire heap, this scheme allows the garbage collector to release the memory. The memory is released in a specific generation rather than releasing the memory for the entire managed heap each time it performs a collection.
 
-- **Generation 0**: This generation is the youngest generation and contains short-lived objects. An example of a short-lived object is a temporary variable. Garbage collection occurs most frequently in this generation.
+- **Generation 0**: This generation is the youngest and contains short-lived objects. An example of a short-lived object is a temporary variable. Garbage collection occurs most frequently in this generation.
 
   Newly allocated objects form a new generation of objects and are implicitly generation 0 collections. However, if they're large objects, they go on the large object heap (LOH), which is sometimes referred to as *generation 3*. Generation 3 is a physical generation that's logically collected as part of generation 2.
 
   Most objects are reclaimed for garbage collection in generation 0 and don't survive to the next generation.
 
-  If an application attempts to create a new object when generation 0 is full, the garbage collector performs a collection in an attempt to free address space for the object. The garbage collector starts by examining the objects in generation 0 rather than all objects in the managed heap. A collection of generation 0 alone often reclaims enough memory to enable the application to continue creating new objects.
+  If an application attempts to create a new object when generation 0 is full, the garbage collector performs a collection to free address space for the object. The garbage collector starts by examining the objects in generation 0 rather than all objects in the managed heap. A collection of generation 0 alone often reclaims enough memory to enable the application to continue creating new objects.
 
 - **Generation 1**: This generation contains short-lived objects and serves as a buffer between short-lived objects and long-lived objects.
 
   After the garbage collector performs a collection of generation 0, it compacts the memory for the reachable objects and promotes them to generation 1. Because objects that survive collections tend to have longer lifetimes, it makes sense to promote them to a higher generation. The garbage collector doesn't have to reexamine the objects in generations 1 and 2 each time it performs a collection of generation 0.
 
-  If a collection of generation 0 doesn't reclaim enough memory for the application to create a new object, the garbage collector can perform a collection of generation 1, and then generation 2. Objects in generation 1 that survive collections are promoted to generation 2.
+  If a collection of generation 0 doesn't reclaim enough memory for the application to create a new object, the garbage collector can perform a collection of generation 1 and then generation 2. Objects in generation 1 that survive collections are promoted to generation 2.
 
 - **Generation 2**: This generation contains long-lived objects. An example of a long-lived object is an object in a server application that contains static data that's live during the process.
 
@@ -134,7 +134,7 @@ Garbage collection primarily occurs with the reclamation of short-lived objects.
 
   Objects on the large object heap (which is sometimes referred to as *generation 3*) are also collected in generation 2.
 
-Garbage collections occur on specific generations as conditions warrant. Collecting a generation means collecting objects in that generation and all its younger generations. A generation 2 garbage collection is also known as a full garbage collection, because it reclaims objects in all generations (that is, all objects in the managed heap).
+Garbage collections occur in specific generations as conditions warrant. Collecting a generation means collecting objects in that generation and all its younger generations. A generation 2 garbage collection is also known as a full garbage collection because it reclaims objects in all generations (that is, all objects in the managed heap).
 
 ### Survival and promotions
 
@@ -161,9 +161,9 @@ The size of the ephemeral segment varies depending on whether a system is 32-bit
 |Server GC with > 4 logical CPUs|32 MB|2 GB|
 |Server GC with > 8 logical CPUs|16 MB|1 GB|
 
-The ephemeral segment can include generation 2 objects. Generation 2 objects can use multiple segments as many as your process requires and memory allows for.
+The ephemeral segment can include generation 2 objects. Generation 2 objects can use multiple segments as much as your process requires and memory allows.
 
-The amount of freed memory from an ephemeral garbage collection is limited to the size of the ephemeral segment. The amount of memory that is freed is proportional to the space that was occupied by the dead objects.
+The amount of freed memory from an ephemeral garbage collection is limited to the size of the ephemeral segment. The amount of memory that's freed is proportional to the space that was occupied by the dead objects.
 
 ## What happens during a garbage collection
 
@@ -175,9 +175,9 @@ A garbage collection has the following phases:
 
 - A compacting phase that reclaims the space occupied by the dead objects and compacts the surviving objects. The compacting phase moves objects that have survived a garbage collection towards the older end of the segment.
 
-  Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they're promoted to generation 2.
+  Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment because they're promoted to generation 2.
 
-  Ordinarily, the large object heap (LOH) isn't compacted, because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
+  Ordinarily, the large object heap (LOH) isn't compacted because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework version 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
 
   - A memory limit on a container.
   - The [GCHeapHardLimit](../../core/runtime-config/garbage-collector.md#heap-limit) or [GCHeapHardLimitPercent](../../core/runtime-config/garbage-collector.md#heap-limit-percent) runtime configuration options.
@@ -186,7 +186,7 @@ The garbage collector uses the following information to determine whether object
 
 - **Stack roots**: Stack variables provided by the just-in-time (JIT) compiler and stack walker. JIT optimizations can lengthen or shorten regions of code within which stack variables are reported to the garbage collector.
 
-- **Garbage collection handles**: Handles that point to managed objects and that can be allocated by user code or by the common language runtime.
+- **Garbage collection handles**: Handles that point to managed objects and that can be allocated by user code or the common language runtime.
 
 - **Static data**: Static objects in application domains that could be referencing other objects. Each application domain keeps track of its static objects.
 
@@ -198,7 +198,7 @@ The following illustration shows a thread that triggers a garbage collection and
 
 ## Unmanaged resources
 
-For most of the objects that your application creates, you can rely on garbage collection to automatically perform the necessary memory management tasks. However, unmanaged resources require explicit cleanup. The most common type of unmanaged resource is an object that wraps an operating system resource, such as a file handle, window handle, or network connection. Although the garbage collector is able to track the lifetime of a managed object that encapsulates an unmanaged resource, it doesn't have specific knowledge about how to clean up the resource.
+For most of the objects your application creates, you can rely on garbage collection to perform the necessary memory management tasks automatically. However, unmanaged resources require explicit cleanup. The most common type of unmanaged resource is an object that wraps an operating system resource, such as a file handle, window handle, or network connection. Although the garbage collector can track the lifetime of a managed object that encapsulates an unmanaged resource, it doesn't have specific knowledge about how to clean up the resource.
 
 When you define an object that encapsulates an unmanaged resource, it's recommended that you provide the necessary code to clean up the unmanaged resource in a public `Dispose` method. By providing a `Dispose` method, you enable users of your object to explicitly release the resource when they're finished with the object. When you use an object that encapsulates an unmanaged resource, make sure to call `Dispose` as necessary.
 

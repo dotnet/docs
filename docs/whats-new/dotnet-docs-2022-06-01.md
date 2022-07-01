@@ -57,7 +57,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Burgyn](https://github.com/Burgyn) - Miňo Martiniak (1)
 - [CollinAlpert](https://github.com/CollinAlpert) - Collin Alpert (1)
 - [dutts](https://github.com/dutts) - Richard D (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [gralp-1](https://github.com/gralp-1) - gralp (1)
 - [HolisticDeveloper](https://github.com/HolisticDeveloper) - Brian Baker (1)
 - [HugoRoss](https://github.com/HugoRoss) - Christoph Hafner (1)

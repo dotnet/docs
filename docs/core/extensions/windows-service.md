@@ -24,6 +24,8 @@ In this tutorial, you'll learn how to:
 
 [!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
+[!INCLUDE [worker-template-workloads](includes/worker-template-workloads.md)]
+
 ## Prerequisites
 
 - The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)

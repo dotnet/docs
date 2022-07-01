@@ -1,11 +1,10 @@
 ---
 title: A preface to enterprise architecture for MAUI applications
-description: Guidance for what the book will cover, reference materials, and how to approach the book
+description: Guidance for what the book will cover, reference materials, and how to approach the book.
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 06/18/2022
 ---
-# Introduction
 
 ## Purpose
 
@@ -25,10 +24,10 @@ The guide is complementary to [.NET Microservices: Architecture for Containerize
 
 The audience for this guide is mainly developers and architects who would like to learn how to architect and implement cross-platform enterprise apps using .NET MAUI.
 
-A secondary audience is technical decision makers who would like to receive an architectural and technology overview before deciding on what approach to select for cross-platform enterprise app development using .NET MAUI.
+A secondary audience is technical decision-makers who would like to receive an architectural and technology overview before deciding on what approach to select for cross-platform enterprise app development using .NET MAUI.
 
 ### How to use this guide
 
-This guide focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The guide, along with its sample app, can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app, or to see how to organize an app's component parts. Then, refer back to this guide for architectural guidance.
+This guide focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The guide and its sample app can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app or see how to organize an app's component parts. Then, refer back to this guide for architectural guidance.
 
 Feel free to forward this guide to team members to help ensure a common understanding of cross-platform enterprise app development using .NET MAUI. Having everybody working from a common set of terminologies and underlying principles will help ensure a consistent application of architectural patterns and practices.

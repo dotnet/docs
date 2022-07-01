@@ -104,7 +104,7 @@ This declarative construction and assignment of the view model by the view has t
 
 ## Creating a view model programmatically
 
-A view can have code in the code-behind file, resulting in the view model being assigned to its BindingContext property. This is often accomplished in the view's constructor, as shown in the following code example:
+A view can have code in the code-behind file, resulting in the view-model being assigned to its `BindingContext` property. This is often accomplished in the view's constructor, as shown in the following code example:
 
 ```csharp
 public LoginView()

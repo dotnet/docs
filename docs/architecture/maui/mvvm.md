@@ -56,7 +56,7 @@ The view model is also responsible for coordinating the view's interactions with
 Each view model provides data from a model in a form that the view can easily consume. To accomplish this, the view model sometimes performs data conversion. Placing this data conversion in the view model is a good idea because it provides properties that the view can bind to. For example, the view model might combine the values of two properties to make it easier to display by the view.
 
 > [!TIP]
-> Centralize data conversions in a conversion layer
+> Centralize data conversions in a conversion layer.
 
 It's also possible to use converters as a separate data conversion layer that sits between the view model and the view. This can be necessary, for example, when data requires special formatting that the view model doesn't provide.
 

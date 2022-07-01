@@ -36,7 +36,7 @@ The view is responsible for defining the structure, layout, and appearance of wh
 In a .NET MAUI application, a view is typically a Page-derived or ContentView-derived class. However, views can also be represented by a data template, which specifies the UI elements to be used to visually represent an object when it's displayed. A data template as a view does not have any code-behind, and is designed to bind to a specific view model type.
 
 > [!TIP]
-> Avoid enabling and disabling UI elements in the code-behind
+> Avoid enabling and disabling UI elements in the code-behind.
 
 Ensure that the view models are responsible for defining logical state changes that affect some aspects of the view's display, such as whether a command is available, or an indication that an operation is pending. Therefore, enable and disable UI elements by binding to view model properties, rather than enabling and disabling them in code-behind.
 

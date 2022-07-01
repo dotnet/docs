@@ -98,7 +98,7 @@ The simplest approach is for the view to declaratively instantiate its correspon
 </ContentPage>
 ```
 
-When the ContentPage is created, an instance of the LoginViewModel is automatically constructed and set as the view's BindingContext.
+When the `ContentPage` is created, an instance of the `LoginViewModel` is automatically constructed and set as the view's `BindingContext`.
 
 This declarative construction and assignment of the view model by the view has the advantage that it's simple, but has the disadvantage that it requires a default (parameter-less) constructor in the view model.
 

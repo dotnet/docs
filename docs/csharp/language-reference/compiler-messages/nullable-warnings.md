@@ -188,7 +188,7 @@ The other actions instruct the compiler that the right-hand-side of the assignme
 
 :::code language="csharp" source="./snippets/null-warnings/Program.cs" id="NullGuard":::
 
-The previous examples demonstrate assignment to the return value of a method. You may annotate the method (or property) to indicate when a method returns a not-null value. The <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute?displayProperty=nameWithType> often specifies that a return value is *not-null* when an input argument is *not-null*. Another alternative is to add the null forgiving operator, `!` to the right-hand side:
+The previous examples demonstrate assignment of the return value of a method. You may annotate the method (or property) to indicate when a method returns a not-null value. The <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute?displayProperty=nameWithType> often specifies that a return value is *not-null* when an input argument is *not-null*. Another alternative is to add the null forgiving operator, `!` to the right-hand side:
 
 ```csharp
 string msg = TryGetMessage(42)!;
@@ -312,8 +312,8 @@ To address these warnings, update your code so it matches the expectations of th
 
 Switch expressions must be *exhaustive*, meaning that all input values must be handled. Even for non-nullable reference types, the `null` value must be accounted for. The compiler issues warnings when the null value isn't handled:
 
-- **CS8655** - *The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.*
-- **CS8847** - *The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.*
+- **CS8655** - *The switch expression does not handle some null inputs (it is not exhaustive).*
+- **CS8847** - *The switch expression does not handle some null inputs (it is not exhaustive). However, a pattern with a 'when' clause might successfully match this value.*
 
 The following example code demonstrates this condition:
 

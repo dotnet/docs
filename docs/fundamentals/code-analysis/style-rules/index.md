@@ -74,7 +74,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0036](ide0036.md) | Order modifiers | [csharp_preferred_modifier_order](ide0036.md#csharp_preferred_modifier_order)<br/> [visual_basic_preferred_modifier_order](ide0036.md#visual_basic_preferred_modifier_order)<br/> |
 > | [IDE0037](ide0037.md) | Use inferred member name | [dotnet_style_prefer_inferred_tuple_names](ide0037.md#dotnet_style_prefer_inferred_tuple_names)<br/> [dotnet_style_prefer_inferred_anonymous_type_member_names](ide0037.md#dotnet_style_prefer_inferred_anonymous_type_member_names) |
 > | [IDE0038](ide0020-ide0038.md) | Use pattern matching to avoid `is` check followed by a cast (without variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
-> | [IDE0039](ide0039.md) | Use local function instead of lambda | [csharp_style_pattern_local_over_anonymous_function](ide0039.md#csharp_style_pattern_local_over_anonymous_function) |
+> | [IDE0039](ide0039.md) | Use local function instead of lambda | [csharp_style_prefer_local_over_anonymous_function](ide0039.md#csharp_style_prefer_local_over_anonymous_function) |
 > | [IDE0040](ide0040.md) | Add accessibility modifiers | [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers) |
 > | [IDE0041](ide0041.md) | Use is null check | [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method) |
 > | [IDE0042](ide0042.md) | Deconstruct variable declaration | [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration) |
@@ -120,8 +120,11 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
+> | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |
 > | [IDE0160](ide0160-ide0161.md) | Use block-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
 > | [IDE0161](ide0160-ide0161.md) | Use file-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
+> | [IDE0170](ide0170.md) | Simplify property pattern | [csharp_style_prefer_extended_property_pattern](ide0170.md#csharp_style_prefer_extended_property_pattern) |
+> | [IDE0180](ide0180.md) | Use tuple to swap values | [csharp_style_prefer_tuple_swap](ide0180.md#csharp_style_prefer_tuple_swap) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

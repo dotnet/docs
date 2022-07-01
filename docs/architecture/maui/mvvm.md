@@ -142,7 +142,7 @@ public abstract class ExtendedBindableObject : BindableObject
 
     private MemberInfo GetMemberInfo(Expression expression)
     {
-        ...
+        // Omitted for brevity ...
     }
 }
 ```

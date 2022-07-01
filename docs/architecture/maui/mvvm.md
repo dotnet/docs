@@ -259,7 +259,7 @@ The eShopOnContainers mobile app includes an [EventToCommandBehavior](/dotnet/co
 /// </summary>
 public class EventToCommandBehavior : BaseBehavior<VisualElement>
 {
-    ...
+    // Omitted for brevity...
 
     /// <inheritdoc/>
     protected override void OnAttachedTo(VisualElement bindable)

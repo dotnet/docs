@@ -129,7 +129,7 @@ Because your app includes the .NET runtime and all of your app dependencies, the
   > [IL trimming](trimming/trim-self-contained.md) can further reduce the size of your deployment.
 
 - **Harder to update the .NET version**\
-.NET Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET will update critical security patches as needed for the framework library in the  machine that your app runs on. You are responsible for end to end validation for this security patch scenario.
+.NET Runtime (distributed with your app) can only be upgraded by releasing a new version of your app.
 
 ### Examples
 

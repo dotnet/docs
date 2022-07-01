@@ -73,4 +73,4 @@ The native host can now call the managed method and pass it the desired paramete
 
 ## Limitations
 
-Right now there only one runtime that can be loaded inside single process. It does not matter how it is loaded, either via standard hosting process, or via custom .NET Host, or if you load DLL created using NativeAOT, all of these variants is the same flavour of the runtimes, and as such you cannot mix them inside single process.
+Only one runtime can be loaded inside a single process. Even if multiple runtimes are loaded in different ways (for example, via the standard hosting process or a custom .NET Host, or loading an assembly created using NativeAOT), they're still the same flavor and can't be mixed inside a single process.

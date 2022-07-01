@@ -42,12 +42,6 @@ Welcome to what's new in the .NET docs for June 2022. This article lists some of
 
 - [Logging with the Azure SDK for .NET](../azure/sdk/logging.md) - Document logging with AddAzureClientsCore
 
-## C# language
-
-### Updated articles
-
-- [C# Keywords](../csharp/language-reference/keywords/index.md) - Code-fence keywords
-
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).

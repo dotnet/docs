@@ -312,8 +312,8 @@ To address these warnings, update your code so it matches the expectations of th
 
 Switch expressions must be *exhaustive*, meaning that all input values must be handled. Even for non-nullable reference types, the `null` value must be accounted for. The compiler issues warnings when the null value isn't handled:
 
-- **CS8655** # WRN_SwitchExpressionNotExhaustiveForNull: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.
-- **CS8847** # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
+- **CS8655** - *The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered.*
+- **CS8847** - *The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.*
 
 The following example code demonstrates this condition:
 

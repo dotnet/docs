@@ -154,10 +154,7 @@ View model classes can then derive from the ExtendedBindableObject class. Theref
 ```csharp
 public bool IsLogin
 {
-    get
-    {
-        return _isLogin;
-    }
+    get => _isLogin;
     set
     {
         _isLogin = value;

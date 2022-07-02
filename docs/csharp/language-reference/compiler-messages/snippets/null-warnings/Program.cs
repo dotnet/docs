@@ -1,8 +1,10 @@
 ﻿// <ProvideNullCheck>
-string message = null;
-if (message is not null)
+void WriteMessageLength(string? message)
 {
-    Console.WriteLine(message.Length);
+    if (message is not null)
+    {
+        Console.WriteLine(message.Length);
+    }
 }
 // </ProvideNullCheck>
 

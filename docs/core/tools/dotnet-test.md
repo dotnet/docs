@@ -149,7 +149,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--no-build`**
 
-  Doesn't build the test project before running it. It also implicitly sets the - `--no-restore` flag.
+  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
 
 - **`--nologo`**
 

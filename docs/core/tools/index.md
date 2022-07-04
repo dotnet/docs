@@ -3,7 +3,7 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 07/01/2022
+ms.date: 07/04/2022
 ms.custom: devdivchpfy22
 ---
 # .NET CLI overview
@@ -75,7 +75,7 @@ dotnet ./build_output/my_app.dll
 
 The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command.
 
-To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, just execute `dotnet my_app.dll`. If you want to use a specific version of the .NET runtime, use the `--fx-version <VERSION>` option (see the [dotnet command](dotnet.md) reference).
+To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, just execute `dotnet my_app.dll`. If you want to use a specific version of the .NET runtime, use the `--fx-version <VERSION>` option. For more information, see the [dotnet command](dotnet.md).
 
 When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
 

@@ -1,7 +1,7 @@
 ---
 title: How to ignore properties with System.Text.Json
 description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
-ms.date: 07/01/2022
+ms.date: 07/04/2022
 ms.custom: devdivchpfy22
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -109,7 +109,7 @@ To ignore all null-value properties when serializing or deserializing, set the <
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs" id="Serialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeExcludeNullValueProperties.vb" id="Serialize":::
 
-Here's an example object to serialize and JSON output:
+Here's an example object to serialize and the JSON output:
 
 | Property             | Value                         |
 |----------------------|-------------------------------|

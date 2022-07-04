@@ -2,12 +2,12 @@
 title: Uninstall Tool
 description: An overview of the .NET Uninstall Tool, a guided tool that enables the controlled clean-up of .NET SDKs and runtimes.
 author: sfoslund
-ms.date: 07/01/2022
+ms.date: 07/04/2022
 ms.custom: devdivchpfy22
 ---
 # .NET Uninstall tool
 
-The [.NET Uninstall Tool](https://aka.ms/dotnet-core-uninstall-tool) (`dotnet-core-uninstall`) lets you remove .NET SDKs and Runtimes from a system. A collection of options is available to specify which versions you want to uninstall.
+The [.NET Uninstall tool](https://aka.ms/dotnet-core-uninstall-tool) (`dotnet-core-uninstall`) lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions you want to uninstall.
 
 The tool supports Windows and macOS. Linux is currently not supported.
 
@@ -22,7 +22,7 @@ Because of these limitations, the tool might not be able to uninstall all of the
 
 ## Install the tool
 
-You can download the .NET Uninstall Tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
+You can download the .NET Uninstall tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
 
 > [!NOTE]
 > The tool requires elevation to uninstall .NET SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. For more information, see the [Elevated access for dotnet commands](../tools/elevated-access.md). For more installation instructions, see the [detailed installation instructions](https://aka.ms/dotnet-core-uninstall-tool).
@@ -33,7 +33,7 @@ The following steps show the recommended approach for running the uninstall tool
 
 - [Step 1 - Display installed .NET SDKs and runtimes](#step-1---display-installed-net-sdks-and-runtimes)
 - [Step 2 - Do a dry run](#step-2---do-a-dry-run)
-- [Step 3 - Uninstall .NET SDKs and Runtimes](#step-3---uninstall-net-sdks-and-runtimes)
+- [Step 3 - Uninstall .NET SDKs and runtimes](#step-3---uninstall-net-sdks-and-runtimes)
 - [Step 4 - Delete the NuGet fallback folder (optional)](#step-4---delete-the-nuget-fallback-folder-optional)
 
 ### Step 1 - Display installed .NET SDKs and runtimes
@@ -41,7 +41,7 @@ The following steps show the recommended approach for running the uninstall tool
 The `dotnet-core-uninstall list` command lists the installed .NET SDKs and runtimes that can be removed with this tool. Some SDKs and runtimes might be required by Visual Studio and they're displayed with a note of why it isn't recommended to uninstall them.
 
 > [!NOTE]
-> The output of the `dotnet-core-uninstall list` command won't match the list of installed versions in the output of `dotnet --info` in most cases. Specifically, this tool won't display versions installed by zip files or managed by Visual Studio (any version installed with Visual Studio version 2019 16.3 or later). One way to check if a version is managed by Visual Studio is to view it in `Add or Remove Programs`, where Visual Studio managed versions are marked as such in their display names.
+> The output of the `dotnet-core-uninstall list` command won't match the list of installed versions in the output of `dotnet --info` in most cases. Specifically, this tool won't display versions installed by zip files or managed by Visual Studio (any version installed with Visual Studio 2019 version 16.3 or later). One way to check if a version is managed by Visual Studio is to view it in `Add or Remove Programs`, where Visual Studio managed versions are marked as such in their display names.
 
 #### dotnet-core-uninstall list
 
@@ -243,7 +243,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 - **`--all-previews-but-latest`**
 
-  Removes the .NET SDKs and runtimes marked as previews except the one highest preview.
+  Removes the .NET SDKs and runtimes marked as previews except the highest preview.
 
 - **`--major-minor <MAJOR_MINOR>`**
 
@@ -340,7 +340,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 - **`--all-but-latest`**
 
-  Removes the .NET SDKs and runtimes, except the one highest version.
+  Removes the .NET SDKs and runtimes, except the highest version.
 
 - **`--all-lower-patches`**
 
@@ -352,7 +352,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 - **`--all-previews-but-latest`**
 
-  Removes the .NET SDKs and runtimes marked as previews except the one highest preview.
+  Removes the .NET SDKs and runtimes marked as previews except the highest preview.
 
 - **`--aspnet-runtime`**
 
@@ -415,7 +415,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 - **`--all-but-latest`**
 
-  Removes the .NET SDKs and runtimes, except the one highest version.
+  Removes the .NET SDKs and runtimes, except the highest version.
 
 - **`--all-lower-patches`**
 
@@ -427,7 +427,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 - **`--all-previews-but-latest`**
 
-  Removes the .NET SDKs and runtimes marked as previews except the one highest preview.
+  Removes the .NET SDKs and runtimes marked as previews except the highest preview.
 
 - **`--major-minor <MAJOR_MINOR>`**
 
@@ -516,7 +516,7 @@ In some cases, you no longer need the `NuGetFallbackFolder` and might wish to de
 ## [Windows](#tab/windows)
 
 1. Open **Add or Remove Programs**.
-2. Search for `Microsoft .NET SDK Uninstall Tool`.
+2. Search for `Microsoft .NET SDK Uninstall tool`.
 3. Select **Uninstall**.
 
 ## [macOS](#tab/macos)

@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET 6
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
-ms.date: 07/01/2022
+ms.date: 07/04/2022
 ms.custom: devdivchpfy22
 no-loc: ["package.config", PackageReference]
 ---
@@ -58,11 +58,11 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
 - [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
 
-  CAS was a sandboxing technique supported by .NET Framework but deprecated in .NET Framework 4.0. It was replaced by Security Transparency and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+  CAS was a sandboxing technique supported by .NET Framework but deprecated in .NET Framework 4.0. It was replaced by Security Transparency and it isn't supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
 
 - [Security transparency](net-framework-tech-unavailable.md#security-transparency)
 
-  Similar to CAS, the security transparency sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+  Similar to CAS, the security transparency sandboxing technique is no longer recommended for .NET Framework applications and it isn't supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
   
 - <xref:System.EnterpriseServices?displayProperty=fullName>
 

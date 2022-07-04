@@ -3,7 +3,7 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 07/01/2022
+ms.date: 07/04/2022
 ms.custom: devdivchpfy22
 ---
 
@@ -76,7 +76,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-The preceding example would be of stub being referred to as a mock. In this case, it's a stub. You're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also misleading because again, the order isn't a mock.
+The preceding example would be of a stub being referred to as a mock. In this case, it's a stub. You're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also misleading because again, the order isn't a mock.
 
 A better approach would be:
 

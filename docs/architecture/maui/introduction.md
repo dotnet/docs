@@ -112,22 +112,22 @@ All of the projects use folders to organize the source code and other resources 
 
 The eShopOnContainers project contains the following folders:
 
-| Folder | Description |
-| ----------- | ----------- |
-| Animations | Contains classes that enable animations to be consumed in XAML. |
-| Behaviors | Contains behaviors that are exposed to view classes. |
-| Controls | Contains custom controls used by the app. |
-| Converters | Contains value converters that apply custom logic to a binding. |
-| Exceptions | Contains the custom ServiceAuthenticationException. |
-| Extensions | Contains extension methods for the VisualElement and IEnumerable<T> classes. |
-| Helpers | Contains helper classes for the app. |
-| Models | Contains the model classes for the app. |
-| Properties | Contains AssemblyInfo.cs, a .NET assembly metadata file. |
-| Services | Contains interfaces and classes that implement services that are provided to the app. |
-| Triggers | Contains the BeginAnimation trigger, which is used to invoke an animation in XAML. |
-| Validations | Contains classes involved in validating data input. |
-| ViewModels | Contains the application logic that's exposed to pages. |
-| Views | Contains the pages for the app. |
+| Folder        | Description                                                                           |
+|---------------|---------------------------------------------------------------------------------------|
+| _Animations_  | Contains classes that enable animations to be consumed in XAML.                       |
+| _Behaviors_   | Contains behaviors that are exposed to view classes.                                  |
+| _Controls_    | Contains custom controls used by the app.                                             |
+| _Converters_  | Contains value converters that apply custom logic to a binding.                       |
+| _Exceptions_  | Contains the custom ServiceAuthenticationException.                                   |
+| _Extensions_  | Contains extension methods for the VisualElement and IEnumerable<T> classes.          |
+| _Helpers_     | Contains helper classes for the app.                                                  |
+| _Models_      | Contains the model classes for the app.                                               |
+| _Properties_  | Contains AssemblyInfo.cs, a .NET assembly metadata file.                              |
+| _Services_    | Contains interfaces and classes that implement services that are provided to the app. |
+| _Triggers_    | Contains the BeginAnimation trigger, which is used to invoke an animation in XAML.    |
+| _Validations_ | Contains classes involved in validating data input.                                   |
+| _ViewModels_  | Contains the application logic that's exposed to pages.                               |
+| _Views_       | Contains the pages for the app.                                                       |
 
 ## Summary
 

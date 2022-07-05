@@ -50,6 +50,10 @@ Authors:
 
 > **[Javier Suarez Ruiz](https://github.com/jsuarezruiz)**, Developer/Writer, Microsoft Corp.
 
+Reviewers:
+
+> **[David Pine](https://github.com/IEvangelist)**, Developer/Writer, Microsoft Corp.
+
 ## Introduction
 
 Enterprise applications face a number of difficult problems to solve including ever changing business requirements, the need for quick turn around time, support for multiple platforms, and integration with multiple systems. Due to the varying nature of these problems, it's important that our application's architecture allows it to be modular, modifiable and extensible over time.

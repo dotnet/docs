@@ -122,7 +122,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
   
-  On Windows (x86, x64 and arm64), Linux (x64) and macOS (x64), you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).  
+  On Windows (x86, x64 and Arm64), Linux (x64) and macOS (x64), you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).  
 
   To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) and use the `--collect "XPlat Code Coverage"` option.
 
@@ -149,7 +149,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--no-build`**
 
-  Doesn't build the test project before running it. It also implicitly sets the - `--no-restore` flag.
+  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
 
 - **`--nologo`**
 

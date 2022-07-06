@@ -33,6 +33,7 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Project Orleans - Actor Model framework](https://www.slideshare.net/nmackenzie/project-orleans)
 - [A look at Microsoft Orleans through Erlang-tinted glasses](https://theburningmonk.com/2014/12/a-look-at-microsoft-orleans-through-erlang-tinted-glasses/)
 - [Using Codename "Orleans" in Enterprise Applications](https://blogs.msdn.com/b/msarchitecture/archive/2014/06/09/using-codename-orleans-in-enterprise-applications.aspx)
+- [Intro to Virtual Actors By Microsoft Orleans](https://bogdan-dina03.medium.com/intro-to-virtual-actors-by-microsoft-orleans-6ae3264f138d)
 
 ### Beyond the introduction
 

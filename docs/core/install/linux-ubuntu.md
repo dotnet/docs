@@ -21,7 +21,6 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                 | .NET       |
 |------------------------|------------|
 | [22.04 (LTS)](#2204)   | 6+         |
-| [21.10](#2110)         | 3.1, 6     |
 | [20.04 (LTS)](#2004)   | 3.1, 6     |
 | [18.04 (LTS)](#1804)   | 3.1, 6     |
 | [16.04 (LTS)](#1604)   | 3.1, 6     |
@@ -49,18 +48,6 @@ rm packages-microsoft-prod.deb
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 Note: [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. [.NET 6 supports OpenSSL 3](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security) while earlier .NET versions do not. Microsoft does not test or support using OpenSSL 1.x on Ubuntu 22.04.
-
-## 21.10
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/21.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## 20.04
 

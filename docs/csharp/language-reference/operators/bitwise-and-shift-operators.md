@@ -39,7 +39,7 @@ helpviewer_keywords:
 The following operators perform bitwise or shift operations with operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type:
 
 - Unary [`~` (bitwise complement)](#bitwise-complement-operator-) operator
-- Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-) shift, and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators
+- Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-), and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
 
 Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The compound operators (such as `>>=`) don't convert their arguments to `int` or have the result type as `int`.

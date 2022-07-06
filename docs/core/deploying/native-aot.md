@@ -7,7 +7,7 @@ ms.date: 06/09/2022
 ---
 # Native AOT Deployment
 
-Publishing your app as *native AOT* produces an app that is [*self-contained*](index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+Publishing your app as *native AOT* produces an app that is [self-contained](index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
 
 The benefit of native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. It is currently not supported with ASP.NET Core, but only console apps.
 
@@ -18,13 +18,31 @@ There are some limitations in the .NET native AOT deployment model, with the mai
 > [!WARNING]
 > Native AOT is supported in .NET 7 but only a limited number of libraries are fully compatible with native AOT in .NET 7.
 
-## Publish Native AOT - CLI
+## Prerequisites
 
-Publish a native AOT application using the [dotnet publish](../tools/dotnet-publish.md) command.
+The following prerequisites need to be installed before publishing .NET projects with native AOT.
+
+On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
+
+On Linux, install clang and developer packages for libraries that .NET runtime depends on.
+
+- Ubuntu (18.04+)
+
+    ```sh
+    sudo apt-get install clang zlib1g-dev
+    ```
+
+- Alpine (3.15+)
+
+    ```sh
+    sudo apk add clang gcc lld musl-dev build-base zlib-dev
+    ```
+
+## Publish Native AOT - CLI
 
 01. Add `<PublishAot>true</PublishAot>` to your project file.
 
-    This will produce a native AOT app and shows PublishAot compatibility warnings during build.
+    This will produce a native AOT app and show any potential compatibility warnings during the publish process.
 
     ```xml
     <PropertyGroup>
@@ -32,27 +50,9 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
     </PropertyGroup>
     ```
 
-02. Ensure pre-requisites that are needed for publishing a native AOT application are in the machine.
+02. Publish the app for a specific runtime identifier using `dotnet publish -r <RID>`.
 
-    On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
-
-    On Linux, install clang and developer packages for libraries that .NET runtime depends on.
-
-    *Ubuntu (18.04+)*
-
-    ```sh
-    sudo apt-get install clang zlib1g-dev
-    ```
-
-    *Alpine (3.15+)*
-
-    ```sh
-    sudo apk add clang gcc lld musl-dev build-base zlib-dev
-    ```
-
-03. Publish the app for a specific runtime identifier using `dotnet publish -r <RID>`.
-
-    The following example publishes the app for Windows as a native AOT application on a machine with the required pre-requisites installed.
+    The following example publishes the app for Windows as a native AOT application on a machine with the required prerequisites installed.
 
     `dotnet publish -r win-x64 -c Release`
 
@@ -61,6 +61,8 @@ Publish a native AOT application using the [dotnet publish](../tools/dotnet-publ
     `dotnet publish -r linux-arm64 -c Release`
 
 The app will be available in the publish directory and will contain all the code needed to run in it, including a stripped-down version of the coreclr runtime.
+
+Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples includes [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
 
 ## Limitations of Native AOT deployment
 

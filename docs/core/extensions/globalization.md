@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Globalization"
 title: "Globalization"
-ms.date: 08/11/2021
+ms.date: 06/30/2022
 dev_langs:
   - "csharp"
   - "vb"

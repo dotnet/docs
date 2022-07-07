@@ -98,7 +98,7 @@ The **ProduceReferenceAssembly** and [**ProduceOnlyReferenceAssembly**](./code-g
 
 You generally don't need to work directly with reference assembly files. By default, reference assemblies are generated in a `ref` subfolder of the intermediate path (i.e. `obj/ref/`). To generate them under the output directory instead (i.e. `bin/ref/`) set `ProduceReferenceAssemblyInOutDir` to `true` in your project.
 
-.NET SDK 6.0.200 made a [change](../../../core/compatibility/sdk/6.0/write-reference-assemblies-to-obj) that moved reference assemblies from the output directory to the intermediate directory by default.
+.NET SDK 6.0.200 made a [change](../../../core/compatibility/sdk/6.0/write-reference-assemblies-to-obj.md) that moved reference assemblies from the output directory to the intermediate directory by default.
 
 ## TargetType
 

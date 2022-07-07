@@ -39,13 +39,13 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 - **`https`**
 
-  The `dotnet dev-certs` command has only one subcommand: `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the current user's certificate store on the machine. If the command finds a development certificate, it displays a message like the following example:
+  `dotnet dev-certs` has only one command: `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the current user's certificate store on the machine. If the command finds a development certificate, it displays a message like the following example:
 
   ```output
   A valid HTTPS certificate is already present.
   ```
 
-  If the command doesn't find a development certificate, it creates one in the current user's certificate store, the store named `My` in the location `CurrentUser`. The physical location of the certificate is an implementation detail of the .NET runtime that could change at any time. On macOS in .NET 7.0, the certificate is stored in the user key chain and as a PFX file under *~/.aspnet/https-aspnetcore-localhost-\<Thumbprint[0..5]>.pfx*.
+  If the command doesn't find a development certificate, it creates one in the current user's certificate store, the store named `My` in the location `CurrentUser`. The physical location of the certificate is an implementation detail of the .NET runtime that could change at any time. On macOS in .NET 7.0, the certificate is stored in the user key chain and as a PFX file: *~/.aspnet/https-aspnetcore-localhost-\<Thumbprint[0..5]>.pfx*.
 
   After creating a certificate, the command displays a message like the following example:
 
@@ -65,9 +65,9 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 - **`--clean`**
 
-  Removes all HTTPS development certificates from the certificate store. The Doesn't remove any physical file unless the Certificate Store implementation in .NET does so. On macOS in .NET 7.0, we create the certificate on a path on disk, and we remove that certificate file as part of the clean operation.
+  Removes all HTTPS development certificates from the certificate store by using the .NET certificate store API. Doesn't remove any physical files that were created by using the `--export-path` option. On macOS in .NET 7.0, the `dotnet dev-certs` command creates the certificate on a path on disk, and the clean operation removes that certificate file.
 
-  If there is at least one certificate in the certificate store, the command displays a message like the following example:
+  If there's at least one certificate in the certificate store, the command displays a message like the following example:
 
   ```output
   Cleaning HTTPS development certificates
@@ -83,7 +83,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 - **`-ep|--export-path <PATH>`**
 
-  Exports the certificate to a file so that it can be used by other tools. Specifies the full path to the exported certificate file, including the file name. The type of certificate files that are created depends on which options are used with `--export-path`:
+  Exports the certificate to a file so that it can be used by other tools. Specify the full path to the exported certificate file, including the file name. The type of certificate files that are created depends on which options are used with `--export-path`:
 
   | Options | What is exported |
   |---------|---------|
@@ -91,16 +91,9 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   |`--export-path --format PEM` | The public part of the certificate in PEM format. No separate *.key* file is created.|
   |`--export-path --password` | The public and private parts of the certificate as a PFX file. |
   |`--export-path --password --format PEM` | The public and private parts of the certificate as a pair of files in PEM format. The key file has the *.key* extension and is protected by the given password. |
-  |`--export-path --no-password --format PEM` | The public and private parts of the certificate as a pair of files in PEM format. The key file has the *.key* extension and is exported in plain text. |
+  |`--export-path --no-password --format PEM` | The public and private parts of the certificate as a pair of files in PEM format. The key file has the *.key* extension and is exported in plain text. The `--no-password` option is intended for internal testing use only.|
 
-  When you specify this option on Linux, the command:
-
-  * Exports the file to the path you specify.
-  * Puts a PFX file, with the filename set to the fingerprint of the certificate, in the default directory.
-
-  The Linux behavior is functionally identical to Windows and macOS from the perspective of .NET application code.
-
-- **`--format`**
+  - **`--format`**
 
   When used with `--export-path`, specifies the format of the exported certificate file. Valid values are `PFX` and `PEM`, case-insensitive. `PFX` is the default.
 
@@ -116,13 +109,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 - **`-np|--no-password`**
 
-  Doesn't use a password for the key when exporting a certificate to a PEM format. The key file is exported in plain text. This option is not applicable to PFX files.
-
-  In addition to the file name specified for the `--export-path` option, the command creates another file in the same directory with the same name but a *.key* extension. For example, the following command will generate a file named *localhost.pem* and a file named *localhost.key* in the */home/user* directory:
-
-  ```dotnetcli
-  dotnet dev-certs https --format pem -ep /home/user/localhost.pem -np 
-  ```
+  Doesn't use a password for the key when exporting a certificate to PEM format files. The key file is exported in plain text. This option is not applicable to PFX files and is intended for internal testing use only.
 
 - **`-p|--password`**
 
@@ -153,7 +140,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 - **`-v|--verbose`**
 
-  Display more debug information.
+  Display debug information.
 
 ## Examples
 
@@ -186,22 +173,20 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 - Create a certificate, trust it, and export it to a PFX file.
 
   ```dotnetcli
-  dotnet dev-certs https -ep ./certificate.pfx -p password --trust
+  dotnet dev-certs https -ep ./certificate.pfx -p $CREDENTIAL_PLACEHOLDER$ --trust
   ```
 
 - Create a certificate, trust it, and export it to a PEM file.
 
   ```dotnetcli
-  dotnet dev-certs https -ep ./certificate.crt --trust --format Pem
+  dotnet dev-certs https -ep ./certificate.crt --trust --format PEM
   ```
 
 - Create a certificate, trust it, and export it to a PEM file:
 
   ```dotnetcli
-  dotnet dev-certs https -ep ./certificate.crt -p $CREDENTIAL_PLACEHOLDER$ --trust --key-format Pem
+  dotnet dev-certs https -ep ./certificate.crt -p $CREDENTIAL_PLACEHOLDER$ --trust --format PEM
   ```
-
-  In the preceding example, `$CREDENTIAL_PLACEHOLDER$` represents a password.
 
 ## See also
 

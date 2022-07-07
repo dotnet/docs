@@ -1,4 +1,6 @@
-﻿public class Person
+using System;
+
+public class Person
 {
     // Constructor that takes no arguments:
     public Person()

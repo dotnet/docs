@@ -60,7 +60,7 @@ For more information about explicit interface implementation, see [Explicit Inte
 
 The following example demonstrates interface implementation. In this example, the interface contains the property declaration and the class contains the implementation. Any instance of a class that implements `IPoint` has integer properties `x` and `y`.
 
-[!code-csharp[csrefKeywordsTypes#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#15)]
+:::code language="csharp" source="./snippets/DefineTypes.cs" id="Snippet15":::
 
 ## C# language specification
 

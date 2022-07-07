@@ -136,7 +136,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1135|SupportedOSPlatformVersion {0} cannot be higher than TargetPlatformVersion {1}.|
 |NETSDK1136|The target platform must be set to Windows (usually by including '-windows' in the TargetFramework property) when using Windows Forms or WPF, or referencing projects or packages that do so.|
 |NETSDK1137|It is no longer necessary to use the Microsoft.NET.Sdk.WindowsDesktop SDK. Consider changing the Sdk attribute of the root Project element to 'Microsoft.NET.Sdk'.|
-|NETSDK1138|The target framework '{0}' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.|
+|[NETSDK1138](netsdk1138.md)|The target framework '{0}' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.|
 |NETSDK1139|The target platform identifier {0} was not recognized.|
 |NETSDK1140|{0} is not a valid TargetPlatformVersion for {1}. Valid versions include:|
 |[NETSDK1141](netsdk1141.md)|Unable to resolve the .NET SDK version as specified in the global.json located at {0}.|

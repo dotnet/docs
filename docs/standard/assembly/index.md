@@ -1,7 +1,7 @@
 ---
 title: "Assemblies in .NET"
 description: Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
-ms.date: 07/01/2022
+ms.date: 07/07/2022
 ms.custom: devdivchpfy22
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 helpviewer_keywords:
@@ -47,7 +47,7 @@ An assembly defines the following information:
 
 - Security boundary. An assembly is the unit at which permissions are requested and granted. For more information about security boundaries in assemblies, see [Assembly security considerations](security-considerations.md).
 
-- Type boundary. Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that is loaded in the scope of one assembly isn't the same as a type called `MyType` that's loaded in the scope of another assembly.
+- Type boundary. Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that's loaded in the scope of one assembly isn't the same as a type called `MyType` that's loaded in the scope of another assembly.
 
 - Reference scope boundary. The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly, and enumerates other assemblies on which it depends. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
 
@@ -82,7 +82,7 @@ Typically assemblies contain information about content, versioning, and dependen
 
 ## Add a reference to an assembly
 
-To use an assembly in an application, you must add a reference to it. Once an assembly is referenced, all the accessible types, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.
+To use an assembly in an application, you must add a reference to it. When an assembly is referenced, all the accessible types, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.
 
 > [!NOTE]
 > Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of the following ways:

@@ -1,7 +1,7 @@
 ---
 title: "How to: Pad a Number with Leading Zeros"
 description: Learn to pad a number with leading zeros. Add leading zeros to integers or numeric values to a specific total length or a specific number of leading zeros.
-ms.date: "06/24/2022"
+ms.date: "07/07/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -77,11 +77,7 @@ The following example formats several numeric values with leading zeros. As a re
 
     1. Determine whether the string representation of a number includes a decimal point symbol.
 
-    1. If it does include a decimal point symbol, determine the number of characters to the left of the decimal point.
-
-         -or-
-
-         If it doesn't include a decimal point symbol, determine the string's length.
+    1. If it does include a decimal point symbol, determine the number of characters to the left of the decimal point. If it doesn't include a decimal point symbol, determine the string's length.
 
 1. Create a custom format string that uses:
 

@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for exceptions - .NET"
 description: Learn best practices for exceptions, such as using try/catch/finally, handling common conditions without exceptions, and using predefined .NET exception types.
-ms.date: "07/01/2022"
+ms.date: "07/07/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -18,9 +18,9 @@ A well-designed app handles exceptions and errors to prevent app crashes. This s
 
 ## Use try/catch/finally blocks to recover from errors or release resources
 
-Use `try`/`catch` blocks around code that can potentially generate an exception ***and*** your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from <xref:System.Exception>. More derived exceptions aren't handled by a catch clause that is preceded by a catch clause for a base exception class. When your code can't recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
+Use `try`/`catch` blocks around code that can potentially generate an exception ***and*** your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from <xref:System.Exception>. More derived exceptions aren't handled by a catch clause that's preceded by a catch clause for a base exception class. When your code can't recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
 
-Clean up resources allocated with either `using` statements, or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` clause is almost always executed even when exceptions are thrown.
+Clean up resources are allocated with either `using` statements or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` clause is almost always executed even when exceptions are thrown.
 
 ## Handle common conditions without throwing exceptions
 
@@ -44,7 +44,7 @@ The method to choose depends on how often you expect the event to occur.
 
 ## Design classes so that exceptions can be avoided
 
-A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. This approach can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
+A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. This approach can be used to avoid the exception that's thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception:
 
 [!code-cpp[Conceptual.Exception.Handling#5](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#5)]
 [!code-csharp[Conceptual.Exception.Handling#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]
@@ -88,13 +88,11 @@ For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-
 
 ## Ensure that exception data is available when code executes remotely
 
-When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely.
+When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that's executing remotely.
 
-For example, on .NET implementations that support App Domains, exceptions might occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A won't be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
+For example, on .NET implementations that support App Domains, exceptions might occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A won't be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in either of the two ways:
 
 - Put the assembly into a common application base shared by both app domains.
-
-    \- or -
 
 - If the domains don't share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.
 
@@ -151,7 +149,7 @@ Public Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
 End Sub
 ```
 
-The above method doesn't directly throw any exceptions. However, the method must be written defensively so that if the deposit operation fails, the withdrawal is reversed.
+The preceding method doesn't directly throw any exceptions. However, the method must be written defensively so that if the deposit operation fails, the withdrawal is reversed.
 
 One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.
 
@@ -183,7 +181,7 @@ Private Shared Sub TransferFunds(from As Account, [to] As Account, amount As Dec
 End Sub
 ```
 
-This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception:
+This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception.
 
 ```csharp
 catch (Exception ex)

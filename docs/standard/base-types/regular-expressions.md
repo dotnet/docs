@@ -2,7 +2,7 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: conceptual
-ms.date: "07/01/2022"
+ms.date: "07/07/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -50,11 +50,11 @@ The methods of the <xref:System.Text.RegularExpressions.Regex> class let you per
   
 - Retrieve one or all occurrences of text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method. The former method returns a <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object that provides information about the matching text. The latter returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains one <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object for each match found in the parsed text.  
   
-- Replace text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method. For examples that use the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](how-to-strip-invalid-characters-from-a-string.md) and [Example: Changing Date Formats](regular-expression-example-changing-date-formats.md).  
+- Replace text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method. For an example that uses the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](how-to-strip-invalid-characters-from-a-string.md) and [Example: Changing Date Formats](regular-expression-example-changing-date-formats.md).  
   
 For an overview of the regular expression object model, see [The Regular Expression Object Model](the-regular-expression-object-model.md).  
   
-For more information about the regular expression language, see [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md) or download and print one of these brochures:  
+For more information about the regular expression language, see [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md) or download and print one of the following brochures:  
   
 - [Quick Reference in Word (.docx) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
 - [Quick Reference in PDF (.pdf) format](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
@@ -70,7 +70,7 @@ The <xref:System.String> class includes many string search and replacement metho
 
 ### Example 1: Replace substrings  
 
- Assume that a mailing list contains names that sometimes include a title (Mr., Mrs., Miss, or Ms.) along with a first and last name. If you don't want to include the titles when you generate envelope labels from the list, you can use a regular expression to remove the titles, as the following example illustrates.
+ Assume that a mailing list contains names that sometimes include a title (Mr., Mrs., Miss, or Ms.) along with a first and last name. If you don't want to include the titles when you generate envelope labels from the list, you can use a regular expression to remove the titles, as the following example illustrates:
   
  [!code-csharp[Conceptual.Regex#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example1.cs#2)]
  [!code-vb[Conceptual.Regex#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example1.vb#2)]  
@@ -92,12 +92,12 @@ The <xref:System.String> class includes many string search and replacement metho
 > |`\b`|Start at a word boundary.|  
 > |`(\w+?)`|Match one or more word characters, but as few characters as possible. Together, they form a group that can be referred to as `\1`.|  
 > |`\s`|Match a white-space character.|  
-> |`\1`|Match the substring that is equal to the group named `\1`.|  
+> |`\1`|Match the substring that's equal to the group named `\1`.|  
 > |`\b`|Match a word boundary.|  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
   
- The input string includes the substring "this? This". However, because of the intervening punctuation mark, it isn't identified as a duplication.  
+ The input string includes the substring "this? This." However, because of the intervening punctuation mark, it isn't identified as a duplication.  
   
 ### Example 3: Dynamically build a culture-sensitive regular expression  
 

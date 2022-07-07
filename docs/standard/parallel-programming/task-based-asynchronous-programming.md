@@ -1,7 +1,7 @@
 ---
 title: "Task-based asynchronous programming - .NET"
 description: In this article, learn about task-based asynchronous programming through the Task Parallel Library (TPL) in .NET.
-ms.date: "06/28/2022"
+ms.date: "07/07/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -16,7 +16,7 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
 
 - More efficient and more scalable use of system resources.
 
-     Behind the scenes, tasks are queued to the <xref:System.Threading.ThreadPool>, which has been enhanced with algorithms that determine and adjust to the number of threads that provide load balancing to maximize throughput. This process makes tasks relatively lightweight, and you can create many of them to enable fine-grained parallelism.
+     Behind the scenes, tasks are queued to the <xref:System.Threading.ThreadPool>, which has been enhanced with algorithms that determine and adjust to the number of threads. These threads provide load balancing to maximize throughput. This process makes tasks relatively lightweight, and you can create many of them to enable fine-grained parallelism.
 
 - More programmatic control that's possible with a thread or work item.
 
@@ -35,7 +35,7 @@ The <xref:System.Threading.Tasks.Parallel.Invoke%2A?displayProperty=nameWithType
 [!code-vb[TPL#21](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl/vb/tpl_vb.vb#21)]
 
 > [!NOTE]
-> The number of <xref:System.Threading.Tasks.Task> instances that are created behind the scenes by <xref:System.Threading.Tasks.Parallel.Invoke%2A> is not necessarily equal to the number of delegates that are provided. The TPL might employ various optimizations, especially with large numbers of delegates.
+> The number of <xref:System.Threading.Tasks.Task> instances that are created behind the scenes by <xref:System.Threading.Tasks.Parallel.Invoke%2A> isn't necessarily equal to the number of delegates that are provided. The TPL might employ various optimizations, especially with large numbers of delegates.
 
 For more information, see [How to: Use Parallel.Invoke to Execute Parallel Operations](how-to-use-parallel-invoke-to-execute-parallel-operations.md).
 
@@ -45,7 +45,7 @@ For greater control over task execution or to return a value from the task, you 
 
 A task that doesn't return a value is represented by the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class. A task that returns a value is represented by the <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> class, which inherits from <xref:System.Threading.Tasks.Task>. The task object handles the infrastructure details and provides methods and properties that are accessible from the calling thread throughout the lifetime of the task. For example, you can access the <xref:System.Threading.Tasks.Task.Status%2A> property of a task at any time to determine whether it has started running, ran to completion, was canceled, or has thrown an exception. The status is represented by a <xref:System.Threading.Tasks.TaskStatus> enumeration.
 
-When you create a task, you give it a user delegate that encapsulates the code that the task will execute. The delegate can be expressed as a named delegate, an anonymous method, or a lambda expression. Lambda expressions can contain a call to a named method, as shown in the following example.
+When you create a task, you give it a user delegate that encapsulates the code that the task will execute. The delegate can be expressed as a named delegate, an anonymous method, or a lambda expression. Lambda expressions can contain a call to a named method, as shown in the following example:
 
 > [!NOTE]
 > The example includes a call to the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method to ensure that the task completes execution before the console mode application ends.
@@ -93,7 +93,7 @@ Every task receives an integer ID that uniquely identifies it in an application 
 
 Most APIs that create tasks provide overloads that accept a <xref:System.Threading.Tasks.TaskCreationOptions> parameter. By specifying one or more of these options, you tell the task scheduler how to schedule the task on the thread pool. Options might be combined by using a bitwise **OR** operation.
 
-The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness> options.
+The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness> options:
 
 [!code-csharp[TPL_TaskIntro#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#03)]
 [!code-vb[TPL_TaskIntro#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#03)]
@@ -104,7 +104,7 @@ Each thread has an associated culture and UI culture, which are defined by the <
 
 The system culture defines the default culture and UI culture of a thread. Unless you specify a default culture for all the threads in an application domain by using the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> properties. If you explicitly set a thread's culture and launch a new thread, the new thread doesn't inherit the culture of the calling thread; instead, its culture is the default system culture. However, in task-based programming, tasks use the calling thread's culture, even if the task runs asynchronously on a different thread.
 
-The following example provides a simple illustration. It changes the app's current culture to French (France) or, if French (France) is already the current culture, to English (United States). It then invokes a delegate named `formatDelegate` that returns some numbers formatted as currency values in the new culture. Whether the delegate is invoked by a task either synchronously or asynchronously, the task uses the culture of the calling thread.
+The following example provides a simple illustration. It changes the app's current culture to French (France). If French (France) is already the current culture, then it changes to English (United States). It then invokes a delegate named `formatDelegate` that returns some numbers formatted as currency values in the new culture. Whether the delegate is invoked by a task either synchronously or asynchronously, the task uses the culture of the calling thread.
 
 :::code language="csharp" source="snippets/cs/asyncculture1.cs" id="1":::
 
@@ -138,7 +138,7 @@ For more information, see [Chaining Tasks by Using Continuation Tasks](chaining-
 
 ## Creating detached child tasks
 
-When user code that is running in a task creates a new task and doesn't specify the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option, the new task isn't synchronized with the parent task in any special way. This type of non-synchronized task is called a *detached nested task* or *detached child task*. The following example shows a task that creates one detached child task:
+When user code that's running in a task creates a new task and doesn't specify the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option, the new task isn't synchronized with the parent task in any special way. This type of non-synchronized task is called a *detached nested task* or *detached child task*. The following example shows a task that creates one detached child task:
 
 [!code-csharp[TPL_TaskIntro#07](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#07)]
 [!code-vb[TPL_TaskIntro#07](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#07)]
@@ -148,10 +148,10 @@ When user code that is running in a task creates a new task and doesn't specify 
 
 ## Creating child tasks
 
-When user code that is running in a task creates a task with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option, the new task is known as an *attached child task* of the parent task. You can use the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option to express structured task parallelism, because the parent task implicitly waits for all attached child tasks to finish. The following example shows a parent task that creates 10 attached child tasks.
+When user code that's running in a task creates a task with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option, the new task is known as an *attached child task* of the parent task. You can use the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent> option to express structured task parallelism, because the parent task implicitly waits for all attached child tasks to finish. The following example shows a parent task that creates 10 attached child tasks:
 
 > [!NOTE]
-> Although the example calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method to wait for the parent task to finish, it doesn't have to explicitly wait for the attached child tasks to complete.
+> The example calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method to wait for the parent task to finish, it doesn't have to explicitly wait for the attached child tasks to complete.
 
 [!code-csharp[TPL_TaskIntro#8](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/child1.cs#8)]
 [!code-vb[TPL_TaskIntro#8](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/child1.vb#8)]
@@ -247,21 +247,21 @@ The default <xref:System.Threading.Tasks.TaskFactory> can be accessed as a stati
 
 ## Tasks without delegates
 
-In some cases, you might want to use a <xref:System.Threading.Tasks.Task> to encapsulate some asynchronous operation that is performed by an external component instead of your own user delegate. If the operation is based on the Asynchronous Programming Model Begin/End pattern, you can use the <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> methods. If that isn't the case, you can use the <xref:System.Threading.Tasks.TaskCompletionSource%601> object to wrap the operation in a task and thereby gain some of the benefits of <xref:System.Threading.Tasks.Task> programmability. For example, support for exception propagation and continuations. For more information, see <xref:System.Threading.Tasks.TaskCompletionSource%601>.
+In some cases, you might want to use a <xref:System.Threading.Tasks.Task> to encapsulate some asynchronous operation that's performed by an external component instead of your own user delegate. If the operation is based on the Asynchronous Programming Model Begin/End pattern, you can use the <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> methods. If that's not the case, you can use the <xref:System.Threading.Tasks.TaskCompletionSource%601> object to wrap the operation in a task and thereby gain some of the benefits of <xref:System.Threading.Tasks.Task> programmability. For example, support for exception propagation and continuations. For more information, see <xref:System.Threading.Tasks.TaskCompletionSource%601>.
 
 ## Custom schedulers
 
-Most application or library developers don't care which processor the task runs on, how it synchronizes its work with other tasks, or how it's scheduled on the <xref:System.Threading.ThreadPool?displayProperty=nameWithType>. They only require that it execute as efficiently as possible on the host computer. If you require more fine-grained control over the scheduling details, the Task Parallel Library lets you configure some settings on the default task scheduler, and even lets you supply a custom scheduler. For more information, see <xref:System.Threading.Tasks.TaskScheduler>.
+Most application or library developers don't care which processor the task runs on, how it synchronizes its work with other tasks, or how it's scheduled on the <xref:System.Threading.ThreadPool?displayProperty=nameWithType>. They only require that it execute as efficiently as possible on the host computer. If you require more fine-grained control over the scheduling details, the TPL lets you configure some settings on the default task scheduler, and even lets you supply a custom scheduler. For more information, see <xref:System.Threading.Tasks.TaskScheduler>.
 
 ## Related data structures
 
-The TPL has several new public types that are useful in both parallel and sequential scenarios. These include several thread-safe, fast and scalable collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, and several new synchronization types. For example, <xref:System.Threading.Semaphore?displayProperty=nameWithType> and <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>, which are more efficient than their predecessors for specific kinds of workloads. Other new types in the .NET Framework 4, for example, <xref:System.Threading.Barrier?displayProperty=nameWithType> and <xref:System.Threading.SpinLock?displayProperty=nameWithType>, provide functionality that wasn't available in earlier releases. For more information, see [Data Structures for Parallel Programming](data-structures-for-parallel-programming.md).
+The TPL has several new public types that are useful in both parallel and sequential scenarios. These include several thread-safe, fast, and scalable collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace and several new synchronization types. For example, <xref:System.Threading.Semaphore?displayProperty=nameWithType> and <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>, which are more efficient than their predecessors for specific kinds of workloads. Other new types in the .NET Framework 4, for example, <xref:System.Threading.Barrier?displayProperty=nameWithType> and <xref:System.Threading.SpinLock?displayProperty=nameWithType>, provide functionality that wasn't available in earlier releases. For more information, see [Data Structures for Parallel Programming](data-structures-for-parallel-programming.md).
 
 ## Custom task types
 
 We recommend that you don't inherit from <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> or <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>. Instead, we recommend that you use the <xref:System.Threading.Tasks.Task.AsyncState%2A> property to associate additional data or state with a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> object. You can also use extension methods to extend the functionality of the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> classes. For more information about extension methods, see [Extension Methods](../../csharp/programming-guide/classes-and-structs/extension-methods.md) and [Extension Methods](../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).
 
-If you must inherit from <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you can't use <xref:System.Threading.Tasks.Task.Run%2A>, or the <xref:System.Threading.Tasks.TaskFactory?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskFactory%601?displayProperty=nameWithType>, or <xref:System.Threading.Tasks.TaskCompletionSource%601?displayProperty=nameWithType> classes to create instances of your custom task type. Because these mechanisms create only <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. In addition, you can't use the task continuation mechanisms that are provided by <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.TaskFactory>, and <xref:System.Threading.Tasks.TaskFactory%601> to create instances of your custom task type. Because these mechanisms also create only <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects.
+If you must inherit from <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you can't use <xref:System.Threading.Tasks.Task.Run%2A>, or the <xref:System.Threading.Tasks.TaskFactory?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskFactory%601?displayProperty=nameWithType>, or <xref:System.Threading.Tasks.TaskCompletionSource%601?displayProperty=nameWithType> classes to create instances of your custom task type. Because these classes create only <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. In addition, you can't use the task continuation mechanisms that are provided by <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.TaskFactory>, and <xref:System.Threading.Tasks.TaskFactory%601> to create instances of your custom task type. Because these classes also create only <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects.
 
 ## Related sections
 
@@ -269,7 +269,7 @@ If you must inherit from <xref:System.Threading.Tasks.Task> or <xref:System.Thre
 |-|-|
 |[Chaining Tasks by Using Continuation Tasks](chaining-tasks-by-using-continuation-tasks.md)|Describes how continuations work.|
 |[Attached and Detached Child Tasks](attached-and-detached-child-tasks.md)|Describes the difference between attached and detached child tasks.|
-|[Task Cancellation](task-cancellation.md)|Describes the cancellation support that is built into the <xref:System.Threading.Tasks.Task> object.|
+|[Task Cancellation](task-cancellation.md)|Describes the cancellation support that's built into the <xref:System.Threading.Tasks.Task> object.|
 |[Exception Handling](exception-handling-task-parallel-library.md)|Describes how exceptions on concurrent threads are handled.|
 |[How to: Use Parallel.Invoke to Execute Parallel Operations](how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Describes how to use <xref:System.Threading.Tasks.Parallel.Invoke%2A>.|
 |[How to: Return a Value from a Task](how-to-return-a-value-from-a-task.md)|Describes how to return values from tasks.|

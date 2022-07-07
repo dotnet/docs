@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 06/30/2022
+ms.date: 07/07/2022
 ms.custom: devdivchpfy22
 ms.topic: overview
 ms.author: dapine
@@ -42,7 +42,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 | Technology            | Recommended alternative                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------|
-| Web Forms             | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
+| Web Forms             | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor pages](/aspnet/core/tutorials/razor-pages) |
 | Windows Workflow (WF) | [Elsa-Workflows](https://github.com/elsa-workflows/elsa-core)                                   |
 
 ### Windows Communication Foundation
@@ -60,9 +60,9 @@ The server components that complement the aforementioned client libraries are av
 
 ## .NET 5 doesn't replace .NET Standard
 
-New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
+New application development can specify the `net5.0` Target Framework Moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-For .NET 5 apps and libraries, the `net5.0` Target Framework Moniker (TFM) combines and replaces the `netcoreapp` and `netstandard` TFMs. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [.NET Standard](../../standard/net-standard.md).
+For .NET 5 apps and libraries, the `net5.0` TFM combines and replaces the `netcoreapp` and `netstandard` TFMs. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [.NET Standard](../../standard/net-standard.md).
 
 ## C# updates
 

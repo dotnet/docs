@@ -1,7 +1,7 @@
 ---
 title: Write a simple parallel program using Parallel.ForEach
 description: In this article, learn how to enable data parallelism in .NET. Write a Parallel.ForEach loop over any IEnumerable or IEnumerable<T> data source.
-ms.date: 06/24/2022
+ms.date: 07/07/2022
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -13,10 +13,10 @@ ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
 ---
 # How to: Write a simple Parallel.ForEach loop
 
-This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop to enable data parallelism over any <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> data source.
+This article shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop to enable data parallelism over any <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> data source.
 
 > [!NOTE]
-> This documentation uses lambda expressions to define delegates in PLINQ. If you are'nt familiar with lambda expressions in C# or Visual Basic, see [Lambda expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).
+> This documentation uses lambda expressions to define delegates in PLINQ. If you aren't familiar with lambda expressions in C# or Visual Basic, see [Lambda expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 ## Example
 
@@ -42,7 +42,7 @@ You can compile the code as a console application for .NET Framework or as a con
 
 In Visual Studio, there's Visual Basic and C# console application templates for Windows Desktop and .NET Core.
 
-From the command line, you can use either the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
+From the command line, you can either use the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
 
 To run a .NET Core console application from the command line, use `dotnet run` from the folder that contains your application.
 

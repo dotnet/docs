@@ -1,7 +1,7 @@
 ---
 title: "Converting times between time zones"
 description: Learn to convert times between from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
-ms.date: "06/29/2022"
+ms.date: "07/07/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -33,7 +33,7 @@ The easiest way to convert a time to UTC is to call the `static` (`Shared` in Vi
 | `DateTimeKind.Unspecified` | Assumes the `dateTime` parameter is local time and converts local time to UTC. |
 | `DateTimeKind.Utc`         | Returns the `dateTime` parameter unchanged.                                    |
 
-The following code converts the current local time to UTC and displays the result to the console.
+The following code converts the current local time to UTC and displays the result to the console:
 
 [!code-csharp[System.TimeZone2.Concepts#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#6)]
 [!code-vb[System.TimeZone2.Concepts#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#6)]
@@ -46,7 +46,7 @@ If the date and time value doesn't represent the local time or UTC, the <xref:Sy
 > [!NOTE]
 > The <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A?displayProperty=nameWithType> method throws an <xref:System.ArgumentException> if the <xref:System.DateTime> object's <xref:System.DateTime.Kind%2A> property and the time zone are mismatched. A mismatch occurs if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> but the <xref:System.TimeZoneInfo> object doesn't represent the local time zone, or if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType> but the <xref:System.TimeZoneInfo> object doesn't equal <xref:System.TimeZoneInfo.Utc?displayProperty=nameWithType>.
 
-All of these methods take <xref:System.DateTime> values as parameters and return a <xref:System.DateTime> value. For <xref:System.DateTimeOffset> values, the <xref:System.DateTimeOffset> structure has a <xref:System.DateTimeOffset.ToUniversalTime%2A> instance method that converts the date and time of the current instance to UTC. The following example calls the <xref:System.DateTimeOffset.ToUniversalTime%2A> method to convert a local time and several other times to Coordinated Universal Time (UTC):
+All of these methods take <xref:System.DateTime> values as parameters and return a <xref:System.DateTime> value. For <xref:System.DateTimeOffset> values, the <xref:System.DateTimeOffset> structure has a <xref:System.DateTimeOffset.ToUniversalTime%2A> instance method that converts the date and time of the current instance to UTC. The following example calls the <xref:System.DateTimeOffset.ToUniversalTime%2A> method to convert a local time and several other times to UTC:
 
 [!code-csharp[System.DateTimeOffset.Methods#16](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Methods/cs/Methods.cs#16)]
 [!code-vb[System.DateTimeOffset.Methods#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Methods/vb/Methods.vb#16)]

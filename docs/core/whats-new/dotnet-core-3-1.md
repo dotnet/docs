@@ -22,7 +22,7 @@ For more information about the release, see the [.NET Core 3.1 announcement](htt
 
 ## Long-term support
 
-.NET Core 3.1 is an LTS release with support from Microsoft for three years after its release. It's highly recommended that you move your apps to the latest LTS release. See the [.NET and .NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) for a list of supported releases.
+.NET Core 3.1 is an LTS release with support from Microsoft for three years after its release. It's highly recommended that you move your apps to the latest LTS release. See the [.NET and .NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page for a list of supported releases.
 
 | Release | End of life date |
 | ------- | ---------------- |

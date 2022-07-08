@@ -38,7 +38,7 @@ Creates a handle that wraps a specified object.
 
 Following are the expected usages depending on the specified `COR_PRF_HANDLE_TYPE` value:
  - COR_PRF_HANDLE_TYPE_WEAK: monitors if an object stays in memory over time. If the wrapped object has been collected, [ICorProfilerInfo13::GetObjectIDFromHandle](icorprofilerinfo13-getobjectidfromhandle-method.md) will return a null `ObjectID` for its wrapping weak handle.
- - COR_PRF_HANDLE_TYPE_STRONG: enforces that an object survives garbage collections even though no other object references it.
+- `COR_PRF_HANDLE_TYPE_STRONG`: Enforces that an object survives garbage collections even though no other object references it.
  - COR_PRF_HANDLE_TYPE_PINNED: same as a strong handle while ensuring that the object stays at the same address in memory during garbage collections.
 
  To ensure that the `object` reference is valid, this method has to be called from a `ICorProfilerCallback` method such as [ICorProfilerCallback::ObjectAllocated](icorprofilercallback-objectallocated-method.md). It is not allowed to call `CreateHandle` from an EventPipe asynchronous listener. The object received via an event payload might have been disposed or moved in memory if a garbage collection occured between the time the event has been emitted and when it has been received.

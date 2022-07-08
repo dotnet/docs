@@ -27,7 +27,7 @@ Destroys a handle that wraps an object.
 
 ## Remarks
 
-Once destroyed, a handle cannot be used anymore.
+Once destroyed, a handle can no longer be used.
 
 ## Requirements  
 

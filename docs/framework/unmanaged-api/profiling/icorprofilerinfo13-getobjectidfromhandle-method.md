@@ -12,7 +12,7 @@ api_type:
 ---
 # ICorProfilerInfo13::GetObjectIDFromHandle Method
 
-Returns the object wrapped by the a given handle.
+Returns the object wrapped by a specified handle.
   
 ## Syntax  
   

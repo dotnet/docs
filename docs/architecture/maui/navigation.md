@@ -201,7 +201,7 @@ The `QueryProperty` attribute allows us to provide a parameter for a property to
 Navigation is usually triggered from a view by a user interaction. For example, the `LoginView` performs navigation following successful authentication. The following code example shows how the navigation is invoked by a behavior:
 
 ```xml
-<WebView ...>
+<WebView>
     <WebView.Behaviors>
         <behaviors:EventToCommandBehavior
             EventName="Navigating"

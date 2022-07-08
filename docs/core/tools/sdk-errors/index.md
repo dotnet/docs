@@ -134,7 +134,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1133|There was conflicting information about runtime packs available for {0}.|
 |NETSDK1134|Building a solution with a specific RuntimeIdentifier is not supported. If you would like to publish for a single RID, specify the RID at the individual project level instead.|
 |NETSDK1135|SupportedOSPlatformVersion {0} cannot be higher than TargetPlatformVersion {1}.|
-|NETSDK1136|The target platform must be set to Windows (usually by including '-windows' in the TargetFramework property) when using Windows Forms or WPF, or referencing projects or packages that do so.|
+|[NETSDK1136](netsdk1136.md)|The target platform must be set to Windows (usually by including '-windows' in the TargetFramework property) when using Windows Forms or WPF, or referencing projects or packages that do so.|
 |NETSDK1137|It is no longer necessary to use the Microsoft.NET.Sdk.WindowsDesktop SDK. Consider changing the Sdk attribute of the root Project element to 'Microsoft.NET.Sdk'.|
 |[NETSDK1138](netsdk1138.md)|The target framework '{0}' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.|
 |NETSDK1139|The target platform identifier {0} was not recognized.|

@@ -2,7 +2,7 @@
 title: "NETSDK1082: There was no runtime pack available"
 description: Learn about .NET SDK error NETSDK1082, which warns about an unavailable runtime pack for the specified RID.
 ms.topic: error-reference
-ms.date: 02/25/2021
+ms.date: 07/08/2022
 f1_keywords:
 - NETSDK1082
 ---

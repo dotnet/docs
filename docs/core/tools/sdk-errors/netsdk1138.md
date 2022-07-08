@@ -4,7 +4,7 @@ description: How to resolve the `framework out of support' error message.
 author: tdykstra
 ms.author: tdykstra
 ms.topic: error-reference
-ms.date: 06/29/2021
+ms.date: 07/08/2022
 f1_keywords:
 - NETSDK1138
 ---

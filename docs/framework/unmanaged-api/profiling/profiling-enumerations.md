@@ -73,7 +73,10 @@ Contains values that indicate how the [ICorProfilerInfo10::RequestReJITWithInlin
 
  [COR_PRF_EVENTPIPE_LEVEL](cor-prf-eventpipe-level-enumeration.md)
  Indicates the level of an EventPipe event.
-  
+
+ [COR_PRF_HANDLE_TYPE](cor-prf-handle-type-enumeration.md)
+ Indicates the type of a handle in the [ICorProfilerInfo13::CreateHandle](icorprofilerinfo13-createhandle-method.md) API.
+
 ## Related Sections  
 
  [Profiling Overview](profiling-overview.md)  

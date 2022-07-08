@@ -32,7 +32,7 @@ Creates a handle that wraps a specified object.
 [in] The type of handle to create.
 
 `pHandle`
-[out] A caller provided pointer that will be filled with the handle created to wrap the given `object`.
+[out] A caller-provided pointer that will point to the handle created to wrap the specified `object`.
 
 ## Remarks
 

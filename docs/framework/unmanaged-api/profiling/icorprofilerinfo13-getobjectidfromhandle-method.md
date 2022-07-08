@@ -28,7 +28,7 @@ Returns the object wrapped by a specified handle.
 [in] The handle wrapping an object.
 
 `pObject`
-[out] A caller provided pointer that will be filled with the object wrapped by the given `handle`.
+[out] A caller-provided pointer that will point to the object wrapped by the specified `handle`.
 
 ## Remarks
 

@@ -11,7 +11,7 @@ Developing client-server applications has resulted in a focus on building tiered
 
 Particularly concerning, in the age of the cloud, is that individual components can't be easily scaled. A monolithic application contains domain-specific functionality and is typically divided by functional layers such as front-end, business logic, and data storage. The image below illustrates that a monolithic application is scaled by cloning the entire application onto multiple machines.
 
-:::image type="content" source="media/monolith-application-scaling.png" alt-text="Monolithic application scaling approach":::
+:::image type="content" source="media/monolith-application-scaling.png" alt-text="Monolithic application scaling approach.":::
 
 ## Microservices
 

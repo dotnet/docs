@@ -110,7 +110,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1109|Runtime list file '{0}' was not found. Report this error to the .NET team here: <https://aka.ms/dotnet-sdk-issue>.|
 |NETSDK1110|More than one asset in the runtime pack has the same destination sub-path of '{0}'. Report this error to the .NET team here: <https://aka.ms/dotnet-sdk-issue>.|
 |NETSDK1111|Failed to delete output apphost: {0}.|
-|NETSDK1112|The runtime pack for {0} was not downloaded. Try running a NuGet restore with the RuntimeIdentifier '{1}'.|
+|[NETSDK1112](netsdk1112.md)|The runtime pack for {0} was not downloaded. Try running a NuGet restore with the RuntimeIdentifier '{1}'.|
 |NETSDK1113|Failed to create apphost (attempt {0} out of {1}): {2}.|
 |NETSDK1114|Unable to find a .NET Core IJW host. The .NET Core IJW host is only available on .NET Core 3.1 or higher when targeting Windows.|
 |NETSDK1115|The current .NET SDK does not support .NET Framework without using .NET SDK Defaults. It is likely due to a mismatch between C++/CLI project CLRSupport property and TargetFramework.|

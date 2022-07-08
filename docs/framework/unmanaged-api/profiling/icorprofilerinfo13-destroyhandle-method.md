@@ -12,7 +12,7 @@ api_type:
 ---
 # ICorProfilerInfo13::DestroyHandle Method
 
-Destroy a handle wrapping an object.
+Destroys a handle that wraps an object.
   
 ## Syntax  
   

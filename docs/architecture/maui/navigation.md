@@ -46,7 +46,7 @@ This interface specifies that an implementing class must provide the following m
 | ----------- | ----------- |
 | `InitializeAsync` | Performs navigation to one of two pages when the app is launched. |
 | `NavigateToAsync(string route, IDictionary<string, object> routeParameters = null)` | Performs hierarchical navigation to a specified page using a registered navigation route. Can optionally pass named route parameters to use for processing on the destination page |
-| PopAsync | Removes the current page from the navigation stack. |
+| `PopAsync` | Removes the current page from the navigation stack. |
 
 > [!NOTE]
 > An `INavigationService` interface would usually also specify a `GoBackAsync` method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShopOnContainers mobile app because it's not required.

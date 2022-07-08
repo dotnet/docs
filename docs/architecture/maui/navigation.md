@@ -172,7 +172,7 @@ For example, the `ProfileViewModel` class contains an `OrderDetailCommand` that'
 ```csharp
 private async Task OrderDetailAsync(Order order)
 {
-    if(order is null)
+    if (order is null)
     {
         return;
     }

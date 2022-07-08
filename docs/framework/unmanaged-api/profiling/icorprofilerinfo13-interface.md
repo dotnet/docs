@@ -19,7 +19,7 @@ api_type:
 |Method|Description|  
 |------------|-----------------|  
 |[CreateHandle Method](icorprofilerinfo13-createhandle-method.md)|Creates a weak, strong, or pinned handle wrapping an object.|
-|[DestroyHandle Method](icorprofilerinfo13-destroyhandle-method.md)|Destroy a handle.|
+|[DestroyHandle Method](icorprofilerinfo13-destroyhandle-method.md)|Destroys a handle.|
 |[GetObjectIDFromHandle Method](icorprofilerinfo13-getobjectidfromhandle-method.md)|Get the object wrapped by a handle.|
 
 ## Requirements  

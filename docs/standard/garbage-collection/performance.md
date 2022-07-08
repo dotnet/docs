@@ -595,7 +595,7 @@ This section describes the following procedures to isolate the cause of your per
           2      10       3       1                1
           3      11       4       1                1
           4      11       4       1                1
-          5      11       4       2                20
+          5      11       4       2               20
   ```
 
   The second generation 2 garbage collection started during the fourth interval and finished at the fifth interval. Assuming the worst case, the last garbage collection was for a generation 0 collection that finished at the start of the third interval, and the generation 2 garbage collection finished at the end of the fifth interval. Therefore, the time between the end of the generation 0 garbage collection and the end of the generation 2 garbage collection is 4 seconds. Because the `% Time in GC` counter is 20%, the maximum amount of time the generation 2 garbage collection could have taken is (4 seconds * 20% = 800ms).

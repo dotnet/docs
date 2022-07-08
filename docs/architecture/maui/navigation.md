@@ -155,10 +155,9 @@ The following code example shows the implementation of the `MauiNavigationServic
 ```csharp
 public Task InitializeAsync()
 {
-    if (string.IsNullOrEmpty(_settingsService.AuthAccessToken))
-        return NavigateToAsync("//Login");
-    else
-        return NavigateToAsync("//Main/Catalog");
+        return NavigateToAsync(string.IsNullOrEmpty(_settingsService.AuthAccessToken)
+            ? "//Login"
+            : "//Main/Catalog";
 }
 ```
 

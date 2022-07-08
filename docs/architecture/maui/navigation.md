@@ -141,7 +141,7 @@ protected override async void OnParentSet()
 {
     base.OnParentSet();
 
-    if (this.Parent is not null)
+    if (Parent is not null)
     {
         await _navigationService.InitializeAsync();
     }

@@ -5,7 +5,7 @@ ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
-  - "DocumentationFile compiler option [C#]"
+  - "GenerateDocumentationFile compiler option [C#]"
   - "OutputAssembly compiler option [C#]"
   - "PlatformTarget compiler option [C#]"
   - "ProduceReferenceAssembly compiler option [C#]"
@@ -17,26 +17,30 @@ The following options control compiler output generation.
 
 | MSBuild | *csc.exe* | Description |
 |---|---|---|
-| **DocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |
+| **GenerateDocumentationFile** | `-doc:` | Generate XML doc file from `///` comments. |
 | **OutputAssembly** | `-out:` | Specify the output assembly file. |
 | **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
 | **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
 | **TargetType** | `-target:` | Specify the type of the output assembly. |
 
-## DocumentationFile
+## GenerateDocumentationFile
 
-The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../xmldoc/recommended-tags.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
+The **GenerateDocumentationFile** option generates an XML file containing the documentation comments from the source code files of the compilation. This file allows consumers of your binaries to read API-level documentation directly in their IDE. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../xmldoc/recommended-tags.md).
+
+The easiest way to enable this for your project is via the `GenerateDocumentationFile` property:
 
 ```xml
-<DocumentationFile>path/to/file.xml</DocumentationFile>
+<GenerateDocumentationFile>true</GenerateDocumentationFile>
 ```
+
+By default, the documentation file shared the name of the assembly it is documenting, with the `.dll` extension substituted for `.xml`. In the rare case that you need to customise the documentation file's path, you can use `<DocumentationFile>` to override the default path.
 
 The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../xmldoc/index.md).
 
 > [!NOTE]
-> The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
+> The **GenerateDocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
 
-This option can be used in any .NET SDK-style project. For more information, see [DocumentationFile property](../../../core/project-sdk/msbuild-props.md#documentationfile).
+This option can be used in any .NET SDK-style project. For more information, see [GenerateDocumentationFile property](../../../core/project-sdk/msbuild-props.md#generatedocumentationfile).
 
 ## OutputAssembly
 

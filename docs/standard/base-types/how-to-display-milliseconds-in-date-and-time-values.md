@@ -1,7 +1,7 @@
 ---
 title: "How to: Display Milliseconds in Date and Time Values"
 description: In this article, learn how to include a date and time's millisecond component in formatted date and time strings in .NET.
-ms.date: "07/05/2022"
+ms.date: "07/08/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

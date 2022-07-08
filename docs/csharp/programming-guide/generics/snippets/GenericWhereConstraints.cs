@@ -1,6 +1,6 @@
-﻿using static generics.UnmanagedExtensions;
+using static Generics.UnmanagedExtensions;
 
-namespace generics
+namespace Generics
 {
     // <Snippet1>
     public class AGenericClass<T> where T : IComparable<T> { }

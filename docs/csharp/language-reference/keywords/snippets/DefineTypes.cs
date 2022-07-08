@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace keywords;
+namespace Keywords;
 //<snippet15>
 interface IPoint
 {
@@ -29,7 +29,6 @@ class Point : IPoint
     // Property implementation
     public double Distance =>
        Math.Sqrt(X * X + Y * Y);
-
 }
 
 class MainClass

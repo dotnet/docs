@@ -1,4 +1,4 @@
-﻿namespace generics.interfaces;
+namespace Generics.Interfaces;
 
 
 //<GenericLists>

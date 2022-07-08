@@ -79,7 +79,7 @@ If you determine that the exception is not legitimate, contact Microsoft Custome
 
 ### Issue: The Process Uses Too Much Memory
 
-A common assumption is that the memory usage display on the `Performance` tab of Windows Task Manager can indicate when too much memory is being used. However, that display pertains to the working set; it does not provide information about virtual memory usage.
+A common assumption is that the memory usage display on the **Performance** tab of Windows Task Manager can indicate when too much memory is being used. However, that display pertains to the working set; it does not provide information about virtual memory usage.
 
 If you determine that the issue is caused by the managed heap, you must measure the managed heap over time to determine any patterns.
 
@@ -218,9 +218,9 @@ This section describes the following procedures to isolate the cause of your per
 
 - Examine the following two memory performance counters:
 
-  - `% Time in GC`. Displays the percentage of elapsed time that was spent performing a garbage collection after the last garbage collection cycle. Use this counter to determine whether the garbage collector is spending too much time to make managed heap space available. If the time spent in garbage collection is relatively low, that could indicate a resource problem outside the managed heap. This counter may not be accurate when concurrent or background garbage collection is involved.
+  - **% Time in GC**. Displays the percentage of elapsed time that was spent performing a garbage collection after the last garbage collection cycle. Use this counter to determine whether the garbage collector is spending too much time to make managed heap space available. If the time spent in garbage collection is relatively low, that could indicate a resource problem outside the managed heap. This counter may not be accurate when concurrent or background garbage collection is involved.
 
-  - `# Total committed Bytes`. Displays the amount of virtual memory currently committed by the garbage collector. Use this counter to determine whether the memory consumed by the garbage collector is an excessive portion of the memory that your application uses.
+  - **# Total committed Bytes**. Displays the amount of virtual memory currently committed by the garbage collector. Use this counter to determine whether the memory consumed by the garbage collector is an excessive portion of the memory that your application uses.
 
   Most of the memory performance counters are updated at the end of each garbage collection. Therefore, they may not reflect the current conditions that you want information about.
 
@@ -242,7 +242,7 @@ This section describes the following procedures to isolate the cause of your per
     StackTrace (generated):
     ```
 
-2. If the output does not specify an exception, you have to determine which thread the out-of-memory exception is from. enter the following command in the debugger to show all the threads with their call stacks:
+2. If the output does not specify an exception, you have to determine which thread the out-of-memory exception is from. Enter the following command in the debugger to show all the threads with their call stacks:
 
     `~\*kb`
 

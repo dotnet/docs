@@ -40,7 +40,7 @@ public interface ISettingsService
 }
 ```
 
-## Adding a Setting
+## Adding Settings
 
 Our application will need to implement the `ISettingsService` interface. The code below shows how the eShopOnContainers mobile app's `SettingsService` implements the `AuthTokenAccess` and `UseMocks` properties:
 

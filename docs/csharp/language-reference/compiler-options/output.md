@@ -33,7 +33,7 @@ The easiest way to enable this for your project is via the `GenerateDocumentatio
 <GenerateDocumentationFile>true</GenerateDocumentationFile>
 ```
 
-By default, the documentation file shared the name of the assembly it is documenting, with the `.dll` extension substituted for `.xml`. In the rare case that you need to customise the documentation file's path, you can use `<DocumentationFile>` to override the default path.
+By default, the documentation file shares the name of the assembly it is documenting, with the `.dll` extension substituted for `.xml`. In the rare case that you need to customise the documentation file's path, you can use the `<DocumentationFile>` property to override the default path.
 
 The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../xmldoc/index.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "Trimming and Removing Characters from Strings in .NET"
 description: Learn to trim blank spaces from the beginning or end of a string, or remove any number of spaces or characters from a specified position in the string in .NET.
-ms.date: "07/01/2022"
+ms.date: "07/08/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -77,7 +77,7 @@ If you're parsing a sentence into individual words, you might end up with words 
 
  The <xref:System.String.Remove%2A?displayProperty=nameWithType> method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.
   
- The following example removes 10 characters from a string beginning at position five of a zero-based indexes of the string.
+ The following example removes 10 characters from a string beginning at position five of a zero-based index of the string.
   
  [!code-cpp[Conceptual.String.BasicOps#21](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#21)]
  [!code-csharp[Conceptual.String.BasicOps#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#21)]

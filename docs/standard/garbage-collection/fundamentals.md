@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 07/01/2022
+ms.date: 07/08/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -14,7 +14,7 @@ ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 ---
 # Fundamentals of garbage collection
 
-In the common language runtime (CLR), the garbage collector (GC) serves as an automatic memory manager. The garbage collector manages the allocation and release of memory for an application. Therefore, developers working with managed code don't have to write code to perform memory management tasks. Automatic memory management can eliminate common problems such as forgetting to free an object and causing a memory leak or attempting to access a freed memory for an object.
+In the common language runtime (CLR), the garbage collector (GC) serves as an automatic memory manager. The garbage collector manages the allocation and release of memory for an application. Therefore, developers working with managed code don't have to write code to perform memory management tasks. Automatic memory management can eliminate common problems such as forgetting to free an object and causing a memory leak or attempting to access a freed memory for an object that's already been freed.
 
 This article describes the core concepts of garbage collection.
 
@@ -50,7 +50,7 @@ The following list summarizes important CLR memory concepts:
   | Reserved | The block of memory is available for your use and can't be used for any other allocation request. However, you can't store data to this memory block until it's committed. |
   | Committed | The block of memory is assigned to physical storage. |
 
-- Virtual address space can get fragmented which means that there are free blocks known as holes in the address space. When a virtual memory allocation is requested, the virtual memory manager has to find a single free block that is large enough to satisfy the allocation request. Even if you have 2 GB of free space, an allocation that requires 2 GB will be unsuccessful unless all of that free space is in a single address block.
+- Virtual address space can get fragmented, which means that there are free blocks known as holes in the address space. When a virtual memory allocation is requested, the virtual memory manager has to find a single free block that is large enough to satisfy the allocation request. Even if you have 2 GB of free space, an allocation that requires 2 GB will be unsuccessful unless all of that free space is in a single address block.
 
 - You can run out of memory if there isn't enough virtual address space to reserve or physical space to commit.
 
@@ -64,7 +64,7 @@ Allocating memory from the managed heap is faster than unmanaged memory allocati
 
 ### Memory release
 
-The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made. When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application. It determines which objects are no longer being used by examining the application's *roots*. An application's roots include static fields, local variables on a thread's stack, CPU registers, GC handles, and the finalized queue. Each root either refers to an object on the managed heap or is set to null. The garbage collector can ask the rest of the runtime for these roots. The garbage collector uses this list to create a graph that contains all the objects that are reachable from the roots.
+The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made. When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application. It determines which objects are no longer being used by examining the application's *roots*. An application's roots include static fields, local variables on a thread's stack, CPU registers, GC handles, and the finalize queue. Each root either refers to an object on the managed heap or is set to null. The garbage collector can ask the rest of the runtime for these roots. The garbage collector uses this list to create a graph that contains all the objects that are reachable from the roots.
 
 Objects that aren't in the graph are unreachable from the application's roots. The garbage collector considers unreachable objects garbage and releases the memory allocated for them. During a collection, the garbage collector examines the managed heap, looking for the blocks of address space occupied by unreachable objects. As it discovers each unreachable object, it uses a memory-copying function to compact the reachable objects in memory, freeing up the blocks of address spaces allocated to unreachable objects. Once the memory for the reachable objects has been compacted, the garbage collector makes the necessary pointer corrections so that the application's roots point to the objects in their new locations. It also positions the managed heap's pointer after the last reachable object.
 
@@ -84,7 +84,7 @@ Garbage collection occurs when one of the following conditions is true:
 
 ## The managed heap
 
-After the CLR initializes the garbage collector, it allocates a segment of memory to store and manage objects. This memory is called the managed heap, instead of a native heap in the operating system.
+After the CLR initializes the garbage collector, it allocates a segment of memory to store and manage objects. This memory is called the managed heap, as opposed to a native heap in the operating system.
 
 There's a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.
 
@@ -99,7 +99,7 @@ When a garbage collection is triggered, the garbage collector reclaims the memor
 
 The intrusiveness (frequency and duration) of garbage collections is the result of the volume of allocations and the amount of survived memory on the managed heap.
 
-The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap. The large object heap contains objects that are 85,000 bytes and larger, which are usually arrays. It's rare for an instance object to be extra-large.
+The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap. The large object heap contains objects that are 85,000 bytes and larger, which are usually arrays. It's rare for an instance object to be extra large.
 
 > [!TIP]
 > You can [configure the threshold size](../../core/runtime-config/garbage-collector.md#large-object-heap-threshold) for objects to go on the large object heap.
@@ -110,7 +110,7 @@ The GC algorithm is based on several considerations:
 
 - It's faster to compact the memory for a portion of the managed heap than for the entire managed heap.
 - Newer objects have shorter lifetimes, and older objects have longer lifetimes.
-- Newer objects tend to be related to each other and accessed by the application simultaneously.
+- Newer objects tend to be related to each other and accessed by the application around the same time.
 
 Garbage collection primarily occurs with the reclamation of short-lived objects. To optimize the performance of the garbage collector, the managed heap is divided into three generations, 0, 1, and 2, so it can handle long-lived and short-lived objects separately. The garbage collector stores new objects in generation 0. Objects created early in the application's lifetime that survives collections are promoted and stored in generations 1 and 2. Because it's faster to compact a portion of the managed heap than the entire heap, this scheme allows the garbage collector to release the memory. The memory is released in a specific generation rather than releasing the memory for the entire managed heap each time it performs a collection.
 

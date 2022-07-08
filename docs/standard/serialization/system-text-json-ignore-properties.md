@@ -1,7 +1,7 @@
 ---
 title: How to ignore properties with System.Text.Json
 description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
-ms.date: 07/04/2022
+ms.date: 07/08/2022
 ms.custom: devdivchpfy22
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -90,7 +90,7 @@ This option applies only to serialization. During deserialization, read-only pro
 ::: zone-end
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-This option applies only to serialization and properties. During deserialization, read-only properties are ignored by default. To ignore read-only fields when [serializing fields](system-text-json-how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
+This option applies only to serialization of properties. During deserialization, read-only properties are ignored by default. To ignore read-only fields when [serializing fields](system-text-json-how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
 ## Ignore all null-value properties

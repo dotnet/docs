@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET 6
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
-ms.date: 07/04/2022
+ms.date: 07/08/2022
 ms.custom: devdivchpfy22
 no-loc: ["package.config", PackageReference]
 ---
@@ -42,7 +42,7 @@ For more information, see [Use the Windows Compatibility Pack to port code to .N
 
 ## .NET Framework compatibility mode
 
-The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows .NET Standard, .NET 5+, and .NET Core 3.1 projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses WPF APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
+The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows .NET Standard, .NET 5+, and .NET Core 3.1 projects to reference .NET Framework libraries on Windows only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses WPF APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
 
 ## Unavailable technologies
 

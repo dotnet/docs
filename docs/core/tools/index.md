@@ -3,7 +3,7 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 07/04/2022
+ms.date: 07/08/2022
 ms.custom: devdivchpfy22
 ---
 # .NET CLI overview
@@ -59,7 +59,7 @@ The following commands are installed by default:
 - [`tool run`](global-tools.md#invoke-a-local-tool) Available since .NET Core SDK 3.0.
 - [`tool uninstall`](dotnet-tool-uninstall.md)
 
-Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third-parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
 
 ## Command structure
 

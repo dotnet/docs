@@ -5,22 +5,11 @@ namespace keywords;
 interface IPoint
 {
     // Property signatures:
-    int X
-    {
-        get;
-        set;
-    }
+    int X { get; set; }
 
-    int Y
-    {
-        get;
-        set;
-    }
+    int Y { get; set; }
 
-    double Distance
-    {
-        get;
-    }
+    double Distance { get; }
 }
 
 class Point : IPoint

@@ -102,7 +102,7 @@ Asynchronous messaging-based event-driven communication is critical when propaga
 
 An event bus allows publish-subscribe communication between microservices without requiring the components to be explicitly aware of each other, as shown below.
 
-:::image type="content" source="media/publish-subscribe-with-event-bus.png" alt-text="Publish-subscribe with an event bus":::
+:::image type="content" source="media/publish-subscribe-with-event-bus.png" alt-text="Publish-subscribe with an event bus.":::
 
 From an application perspective, the event bus is simply a publish-subscribe channel exposed via an interface. However, the way the event bus is implemented can vary. For example, an event bus implementation could use RabbitMQ, Azure Service Bus, or other service buses such as NServiceBus and MassTransit. The diagram below shows how an event bus is used in the eShopOnContainers reference application.
 

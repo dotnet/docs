@@ -1,7 +1,7 @@
 ---
 title: "Constraints on type parameters - C# Programming Guide"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 04/28/2021
+ms.date: 07/08/2022
 helpviewer_keywords: 
   - "generics [C#], type constraints"
   - "type constraints [C#]"
@@ -85,7 +85,7 @@ Beginning with C# 8.0, the `class` constraint in a nullable context specifies th
 
 ## `default` constraint
 
-The addition of nullable reference types complicates the use of `T?` in a generic type or method. Prior to C# 8, `T?` could only be used when the `struct` constraint applied to `T`. In that context, `T?` refers to the <xref:System.Nullable%601> type for `T`. Starting with C# 8, `T?` could be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted the same as in C# 8 for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
+The addition of nullable reference types complicates the use of `T?` in a generic type or method. Prior to C# 8, `T?` could only be used when the `struct` constraint applied to `T`. In that context, `T?` refers to the <xref:System.Nullable%601> type for `T`. Beginning with C# 8, `T?` could be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted the same as in C# 8 for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
 
 Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. That's when the derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` nor `struct` constraint.
 
@@ -124,6 +124,24 @@ You could use it as shown in the following sample to create an enum and build a 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet19":::
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet20":::
+
+## Type arguments implement declared interface
+
+Some scenarios require that an argument supplied for a type parameter implement that interface. For example:
+
+:::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="SelfConstraint":::
+
+This pattern enables the C# compiler to determine the containing type for the overloaded operators, or any `static virtual` or `static abstract` method. It provides the syntax so that the addition and subtraction operators can be defined on a containing type. Without this constraint, the parameters and arguments would be required to be declared as the interface, rather than the type parameter:
+
+```csharp
+public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
+{
+    public abstract static IAdditionSubtraction<T> operator +(IAdditionSubtraction<T> left, IAdditionSubtraction<T> right);
+    public abstract static IAdditionSubtraction<T> operator -(IAdditionSubtraction<T> left, IAdditionSubtraction<T> right);
+}
+```
+
+The preceding syntax would require implementers to use [explicit interface implementation](../interfaces/explicit-interface-implementation.md) for those methods. Providing the extra constraint enables the interface to define the operators in terms of the type parameters. Types that implement the interface can implicitly implement the interface methods.
 
 ## See also
 

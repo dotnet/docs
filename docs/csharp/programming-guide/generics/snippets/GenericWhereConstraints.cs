@@ -1,4 +1,4 @@
-using static generics.UnmanagedExtensions;
+﻿using static generics.UnmanagedExtensions;
 
 namespace generics
 {
@@ -275,4 +275,12 @@ namespace generics
             // </Snippet20>
         }
     }
+
+    // <SelfConstraint>
+    public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
+    {
+        public abstract static T operator +(T left, T right);
+        public abstract static T operator -(T left, T right);
+    }
+    // </SelfConstraint>
 }

@@ -30,7 +30,7 @@ This tool migrates your app by:
 We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you'll always be in control of your migration. And for the APIs where complete automation isn't possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Check the Task list within the Visual Studio to see all the action items as TODO comments.
 
 > [!NOTE]
-> After a successful run of the tool, you may chose to do the following if needed: move your code from _App.xaml.old.cs_ to _App.xaml.cs_ and move AssemblyInfo.cs from backup
+> After a successful run of the tool, you may choose to do the following if needed: move your code from _App.xaml.old.cs_ to _App.xaml.cs_ and move AssemblyInfo.cs from backup
 
 ## Things to know before starting
 
@@ -381,7 +381,7 @@ Once the packages are updated, the next step is to update any template files. In
 The next step for the tool is to update the UWP app to the new Windows Desktop Project.
 
 > [!IMPORTANT]
-> You may chose to skip the step for back button insertion as per your wish. Inserting back button may cause the UI to behave differently. If this happens, remove the stack panel that is inserted as a parent of the back button and reposition the back button where it seems .
+> You may choose to skip the step for back button insertion as per your wish. Inserting back button may cause the UI to behave differently. If this happens, remove the stack panel that is inserted as a parent of the back button and reposition the back button where it seems .
 
 ```
 [02:36:53 INF] Applying upgrade step Update WinUI namespaces

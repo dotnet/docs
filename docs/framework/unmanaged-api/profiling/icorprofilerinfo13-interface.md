@@ -12,7 +12,7 @@ api_type:
 ---
 # ICorProfilerInfo13 Interface
 
- A subclass of [ICorProfilerInfo12](icorprofilerinfo12-interface.md) that provides methods to manage weak, strong and pinned handles wrapping objects.
+ A subclass of [ICorProfilerInfo12](icorprofilerinfo12-interface.md) that provides methods to manage weak, strong, and pinned handles that wrap objects.
   
 ## Methods  
   

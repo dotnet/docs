@@ -179,7 +179,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1178|The project depends on the following workload packs that do not exist in any of the workloads available in this installation: {0}.|
 |NETSDK1179|One of '--self-contained' or '--no-self-contained' options are required when '--runtime' is used.|
 |NETSDK1181|Error getting pack version: Pack '{0}' was not present in workload manifests.|
-|NETSDK1182|Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.|
+|[NETSDK1182](netsdk1182.md)|Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.|
 |NETSDK1183|Unable to optimize assemblies for Ahead of time compilation: a valid runtime package was not found. Either set the PublishAot property to false, or use a supported runtime identifier when publishing. When targeting .NET 7 or higher, make sure to restore packages with the PublishAot property set to true.|
 |NETSDK1184|The Targeting Pack for FrameworkReference '{0}' was not available. This may be because DisableTransitiveFrameworkReferenceDownloads was set to true.|
 |NETSDK1185|The Runtime Pack for FrameworkReference '{0}' was not available. This may be because DisableTransitiveFrameworkReferenceDownloads was set to true.|

@@ -19,7 +19,7 @@ Microservices offer a different approach to application development and deployme
 
 Microservices can scale independently compared to giant monolithic applications that scale together. This means that a specific functional area that requires more processing power or network bandwidth to support demand can be scaled rather than unnecessarily scaling out other application areas. The image below illustrates this approach, where microservices are deployed and scaled independently, creating instances of services across machines.
 
-:::image type="content" source="media/microservices-application-scaling.png" alt-text="Microservices application scaling approach":::
+:::image type="content" source="media/microservices-application-scaling.png" alt-text="Microservices application scaling approach.":::
 
 Microservice scale-out can be nearly instantaneous, allowing an application to adapt to changing loads. For example, a single microservice in the web-facing functionality of an application might be the only microservice that needs to scale out to handle additional incoming traffic.
 

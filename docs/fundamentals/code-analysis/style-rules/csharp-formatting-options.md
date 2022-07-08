@@ -1156,50 +1156,6 @@ namespace Conventions
 }
 ```
 
-## Namespace options
-
-This category contains one formatting option that concerns how namespaces are declared.
-
-- [csharp_style_namespace_declarations](#csharp_style_namespace_declarations)
-
-Example *.editorconfig* file:
-
-```ini
-#  CSharp formatting rules:
-[*.cs]
-csharp_style_namespace_declarations = file_scoped
-```
-
-### csharp_style_namespace_declarations
-
-| Property                 | Value                               | Description |
-|--------------------------|-------------------------------------|-------------|
-| **Option name**          | csharp_style_namespace_declarations |             |
-| **Applicable languages** | C#                                  |             |
-| **Introduced version**   | Visual Studio 2019 version 16.10    |             |
-| **Option values**        | `block_scoped` | Namespace declarations should use block scopes for declaration. |
-|                          | `file_scoped` | Namespace declarations should be file scoped. For more information, see the [file-scoped namespaces specification](/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces). |
-
-```csharp
-// csharp_style_namespace_declarations = block_scoped
-using System;
-
-namespace Convention
-{
-    class C
-    {
-    }
-}
-
-// csharp_style_namespace_declarations = file_scoped
-using System;
-
-namespace Convention;
-class C
-{
-}
-```
-
 ## See also
 
 - [Formatting rule (IDE0055)](ide0055.md)

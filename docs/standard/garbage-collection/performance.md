@@ -155,7 +155,7 @@ The duration of a collection is primarily a factor of the number of objects that
 
 |Performance checks|
 |------------------------|
-|[Determine if high CPU usage is caused by garbage collection.](#HighCPU)<br />[Set a breakpoint at the end of garbage collection.](#GenBreak)|
+|[Determine if high CPU usage is caused by garbage collection.](#HighCPU)<br />[Set a breakpoint at the end of garbage collection.](#to-set-a-breakpoint-at-the-end-of-garbage-collection)|
 
 ## Troubleshooting guidelines
 

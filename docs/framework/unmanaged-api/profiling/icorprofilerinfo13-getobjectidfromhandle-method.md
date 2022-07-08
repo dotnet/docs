@@ -32,7 +32,7 @@ Returns the object wrapped by a specified handle.
 
 ## Remarks
 
-If `*pObject` is null, the object wrapped by this handle is no more alive and has been collected.
+If `*pObject` is null, the object wrapped by this handle is no longer alive and has been collected.
 
 ## Requirements  
 

@@ -12,7 +12,7 @@ api_type:
 ---
 # ICorProfilerInfo13::CreateHandle Method
 
-Create a handle wrapping the given object.
+Creates a handle that wraps a specified object.
   
 ## Syntax  
   

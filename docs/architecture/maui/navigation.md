@@ -223,7 +223,7 @@ private async Task NavigateAsync(string url)
     {
         _settingsService.AuthAccessToken = accessToken;
         _settingsService.AuthIdToken = authResponse.IdentityToken;
-        await NavigationService.NavigateToAsync ("//Main/Catalog");
+        await NavigationService.NavigateToAsync("//Main/Catalog");
     }
 }
 ```

@@ -218,7 +218,7 @@ In turn, the `NavigationCommand` executes the `NavigateAsync` method, which is s
 ```csharp
 private async Task NavigateAsync(string url)
 {
-    //omitted for brevity 
+    // Omitted for brevity.
     if (!string.IsNullOrWhiteSpace(accessToken))
     {
         _settingsService.AuthAccessToken = accessToken;

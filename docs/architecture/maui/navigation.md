@@ -45,7 +45,7 @@ This interface specifies that an implementing class must provide the following m
 | Method | Purpose |
 | ----------- | ----------- |
 | `InitializeAsync` | Performs navigation to one of two pages when the app is launched. |
-| NavigateToAsync (string route, IDictionary<string, object> routeParameters = null) | Performs hierarchical navigation to a specified page using a registered navigation route. Can optionally pass named route parameters to use for processing on the destination page |
+| `NavigateToAsync(string route, IDictionary<string, object> routeParameters = null)` | Performs hierarchical navigation to a specified page using a registered navigation route. Can optionally pass named route parameters to use for processing on the destination page |
 | PopAsync | Removes the current page from the navigation stack. |
 
 > [!NOTE]

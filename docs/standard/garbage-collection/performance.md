@@ -585,7 +585,7 @@ This section describes the following procedures to isolate the cause of your per
           4      11       3       1               3
   ```
 
-  This information does not show when the garbage collection occurred, but you can determine the number of garbage collections that occurred in an interval of time. Assuming the worst case, the tenth generation 0 garbage collection finished at the start of the second interval, and the eleventh generation 0 garbage collection finished at the end of the fourth interval. The time between the end of the tenth and the end of the eleventh garbage collection is about 4 seconds, and the performance counter shows 3%, so the duration of the eleventh generation 0 garbage collection was (4 seconds * 3% = 120ms).
+  This information does not show when the garbage collection occurred, but you can determine the number of garbage collections that occurred in an interval of time. Assuming the worst case, the tenth generation 0 garbage collection finished at the start of the second interval, and the eleventh generation 0 garbage collection finished at the end of the third interval. The time between the end of the tenth and the end of the eleventh garbage collection is about 2 seconds, and the performance counter shows 3%, so the duration of the eleventh generation 0 garbage collection was (2 seconds * 3% = 60ms).
 
   In the next example, there are five intervals.
 

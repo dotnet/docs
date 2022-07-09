@@ -1,12 +1,12 @@
 ---
 title: Explore static abstract members in interfaces - preview
-description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces. You can explore the preview feature to learn and provide feedback before general release.
-ms.date: 12/11/2021
+description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces.
+ms.date: 07/08/2022
 ms.technology: csharp-advanced-concepts
 ---
-# Tutorial: Explore C# 10 preview feature - static abstract members in interfaces
+# Tutorial: Explore C# 11 feature - static abstract members in interfaces
 
-C# 10 and .NET 6 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
+C# 11 and .NET 7 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
 
 In this tutorial, you'll learn how to:
 
@@ -18,10 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET 6, which supports C# 10. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
-
-> [!IMPORTANT]
-> *static abstract members in interfaces* is a preview feature. You must Add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. See [Preview features](https://aka.ms/dotnet-warnings/preview-features) for more information. You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature, including possibly making changes, before its general release.
+You'll need to set up your machine to run .NET 7, which supports C# 11. The C# 11 compiler is available starting with [Visual Studio 2022, version 17.3](https://visualstudio.microsoft.com/downloads/) or the [.NET 7 SDK](https://dotnet.microsoft.com/download).
 
 ## Static abstract interface methods
 
@@ -36,7 +33,7 @@ The same logic would work for any numeric type: `int`, `short`, `long`, `float` 
 
 :::code language="csharp" source="./snippets/staticinterfaces/Utilities.cs" id="MidPoint":::
 
-Any type that implements the `INumber` interface must include a definition for `operator +`, and `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters. Note that this implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.
+Any type that implements the `INumber` interface must include a definition for `operator +`, and `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters. This implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.
 
 You define static abstract members in an interface using familiar syntax: You add the `static` and `abstract` modifiers to any static member that doesn't provide an implementation. The following example defines an `IGetNext<T>` interface that can be applied to any type that overrides `operator ++`:
 
@@ -107,7 +104,7 @@ For the previous code to compile, you'll need to declare that `T` supports the `
 public record Point<T>(T X, T Y) where T : IAdditionOperators<T, T, T>
 ```
 
-After adding that constraint, your `Point<T>` class can use the `+` for its addition operator. Add the same constraint on the `Translation<T>` declaration:
+After you add that constraint, your `Point<T>` class can use the `+` for its addition operator. Add the same constraint on the `Translation<T>` declaration:
 
 ```csharp
 public record Translation<T>(T XOffset, T YOffset) where T : IAdditionOperators<T, T, T>;
@@ -124,7 +121,7 @@ public record Point<T>(T X, T Y) : IAdditionOperators<Point<T>, Translation<T>, 
     where T : IAdditionOperators<T, T, T>
 ```
 
-Finally, when you're performing addition, it's useful to have a property that defines the additive identity value for that type. There's a new experimental interface for that feature: `IAdditiveIdentity<TSelf, TResult>`. A translation of `{0, 0}` is the additive identity: The resulting point is the same as the left operand. The `IAdditiveIdentity<TSelf, TResult>` interface defines one readonly property: `AdditiveIdentity`, that returns the identity value. The `Translation<T>` needs a few changes to implement this interface:
+Finally, when you're performing addition, it's useful to have a property that defines the additive identity value for that type. There's a new experimental interface for that feature: `IAdditiveIdentity<TSelf, TResult>`. A translation of `{0, 0}` is the additive identity: The resulting point is the same as the left operand. The `IAdditiveIdentity<TSelf, TResult>` interface defines one readonly property: `AdditiveIdentity` that returns the identity value. The `Translation<T>` needs a few changes to implement this interface:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Translation.cs":::
 

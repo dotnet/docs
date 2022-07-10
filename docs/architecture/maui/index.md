@@ -70,7 +70,7 @@ This book focuses on building cross-platform enterprise apps using .NET MAUI. As
 
 ## What this book doesn't cover
 
-This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your first app](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app) guide in the .NET MAUI Documentation
+This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your first app](/dotnet/maui/get-started/first-app) guide in the .NET MAUI Documentation
 
 ### Additional resources
 

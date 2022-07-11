@@ -23,7 +23,7 @@ The `RazorEngine` APIs are obsolete.
 
 ## Reason for change
 
-The `RazorEngine` type has been deprecated as compatibility cannot be guaranteed.
+The `RazorEngine` type has been deprecated as compatibility can't be guaranteed.
 
 ## Recommended action
 

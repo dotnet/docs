@@ -28,7 +28,7 @@ If you want to suppress the message without targeting a later framework, set the
     <CheckEolTargetFramework>false</CheckEolTargetFramework>
   </PropertyGroup>
 </Project>
-  ```
+```
 
 Here's an example .NET CLI command:
 

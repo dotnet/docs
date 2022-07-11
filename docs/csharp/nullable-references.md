@@ -75,12 +75,12 @@ The null state analysis doesn't trace into called methods. As a result, fields i
 
 You can address these warnings in one of two ways: *Constructor chaining*, or *nullable attributes* on the helper method. The following code shows an example of each. The `Person` class uses a common constructor called by all other constructors. The `Student` class has a helper method annotated with the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> attribute:
 
-:::code language="csharp" source="./snippets/null-warnings/PersonExamples.cs" id="ConstructorChainingAndMemberNotNull":::
+:::code language="csharp" source="./language-reference/compiler-messages/snippets/null-warnings/PersonExamples.cs" id="ConstructorChainingAndMemberNotNull":::
 
 > [!NOTE]
 > A number of improvements to definite assignment and null state analysis were added in C# 10. When you upgrade to C# 10, you may find fewer nullable warnings that are false positives. You can learn more about the improvements in the [features specification for definite assignment improvements](~/_csharplang/proposals/csharp-10.0/improved-definite-assignment.md).
 
-Nullable state analysis and the warnings the compiler generates help you avoid program errors by dereferencing `null`. The article on [resolving nullable warnings](nullable-warnings.md) provides techniques for correcting the warnings you'll likely see in your code.
+Nullable state analysis and the warnings the compiler generates help you avoid program errors by dereferencing `null`. The article on [resolving nullable warnings](language-reference/compiler-messages/nullable-warnings.md) provides techniques for correcting the warnings you'll likely see in your code.
 
 ## Attributes on API signatures
 

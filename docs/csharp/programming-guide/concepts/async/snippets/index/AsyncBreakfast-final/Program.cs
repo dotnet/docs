@@ -4,6 +4,13 @@ using System.Threading.Tasks;
 
 namespace AsyncBreakfast
 {
+    // These classes are intentionally empty for the purpose of this example. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
+    internal class Bacon { }
+    internal class Coffee { }
+    internal class Egg { }
+    internal class Juice { }
+    internal class Toast { }
+
     class Program
     {
         static async Task Main(string[] args)
@@ -97,7 +104,7 @@ namespace AsyncBreakfast
             Console.WriteLine("cooking the eggs ...");
             await Task.Delay(3000);
             Console.WriteLine("Put eggs on plate");
-            
+
             return new Egg();
         }
 

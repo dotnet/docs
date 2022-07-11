@@ -19,7 +19,7 @@ api_type:
 |Method|Description|  
 |------------|-----------------|  
 |[EventPipeEventDelivered Method](icorprofilercallback10-eventpipeeventdelivered-method.md)|Notifies the profiler that an EventPipe event has been delivered to the session that the profiler has open.|
-|[EventPipeProviderCreated Method](icorprofilercallback10-eventpipeprovidercreated-method.md)|Notifies the profiler that an EventPipe provider has been created, allowing the profiler to add that provider the their session.|  
+|[EventPipeProviderCreated Method](icorprofilercallback10-eventpipeprovidercreated-method.md)|Notifies the profiler that an EventPipe provider has been created, allowing the profiler to add that provider to their session.|  
   
 ## Requirements  
 

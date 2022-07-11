@@ -192,7 +192,7 @@ View models typically expose public properties, for binding from the view, which
 
 The `ICommand` interface defines an `Execute` method, which encapsulates the operation itself, a `CanExecute` method, which indicates whether the command can be invoked, and a `CanExecuteChanged` event that occurs when changes occur that affect whether the command should execute. In most cases, we will only supply the `Execute` method for our commands. For a more detailed overview of `ICommand`, refer to the [Commanding](/dotnet/maui/fundamentals/data-binding/commanding) documentation for .NET MAUI.
 
-Provided with .NET MAUI are the `Command` and `Command<T>` classes that implement the `ICommand` interface, where `T` is the type of the arguments to `Execute` and `CanExecute`. `Command` and `Command<T>` are basic implementations that provide the minimal set of functionality needed for the `ICommand` interface. 
+Provided with .NET MAUI are the `Command` and `Command<T>` classes that implement the `ICommand` interface, where `T` is the type of the arguments to `Execute` and `CanExecute`. `Command` and `Command<T>` are basic implementations that provide the minimal set of functionality needed for the `ICommand` interface.
 
 > [!NOTE]
 > Many MVVM frameworks offer more feature rich implementations of the `ICommand` interface.
@@ -245,7 +245,7 @@ A command parameter can also be optionally defined using the `CommandParameter` 
 
 Behaviors allow functionality to be added to UI controls without having to subclass them. Instead, the functionality is implemented in a behavior class and attached to the control as if it was part of the control itself. Behaviors enable you to implement code that you would typically have to write as code-behind, because it directly interacts with the API of the control, in such a way that it can be concisely attached to the control, and packaged for reuse across more than one view or app. In the context of MVVM, behaviors are a useful approach for connecting controls to commands.
 
-A behavior that's attached to a control through attached properties is known as an *attached behavior*. The behavior can then use the exposed API of the element to which it is attached to add functionality to that control, or other controls, in the visual tree of the view. 
+A behavior that's attached to a control through attached properties is known as an *attached behavior*. The behavior can then use the exposed API of the element to which it is attached to add functionality to that control, or other controls, in the visual tree of the view.
 
 A .NET MAUI behavior is a class that derives from the `Behavior` or `Behavior<T>` class, where T is the type of the control to which the behavior should apply. These classes provide `OnAttachedTo` and `OnDetachingFrom` methods, which should be overridden to provide logic that will be executed when the behavior is attached to and detached from controls.
 

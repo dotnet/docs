@@ -99,6 +99,7 @@ let doThingsAsync url otherUrl =
         ...
     }
 ```
+
 If you use `and!` then each computation expression may be bound in parallel, therefore the bindings may not depend on other bindings. All of the values will be retrieved and then collated at the end of the computation expression.
 
 ### `do!`

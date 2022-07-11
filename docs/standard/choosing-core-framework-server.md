@@ -1,7 +1,8 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 04/20/2021
+ms.date: 07/11/2022
+ms.custom: devdivchpfy22
 ---
 # .NET vs. .NET Framework for server apps
 
@@ -37,7 +38,7 @@ The following sections give a more detailed explanation of the previously stated
 
 If your web or service application needs to run on multiple platforms, for example, Windows, Linux, and macOS, use .NET.
 
-.NET supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET CLI](../core/tools/index.md), available for all supported platforms.
+.NET supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET CLI](../core/tools/index.md) available for all supported platforms.
 
 ### Microservices architecture
 
@@ -49,7 +50,7 @@ For more information about microservices architecture, see [.NET Microservices. 
 
 ### Containers
 
-Containers are commonly used in conjunction with a microservices architecture. Containers can also be used to containerize web apps or services that follow any architectural pattern. .NET Framework can be used on Windows containers, but the modularity and lightweight nature of .NET makes it a better choice for containers. When creating and deploying a container, the size of its image is much smaller with .NET than with .NET Framework. Because it's cross-platform, you can deploy server apps to Linux Docker containers, for example.
+Containers are commonly used with a microservices architecture. Containers can also be used to containerize web apps or services that follow any architectural pattern. .NET Framework can be used on Windows containers, but the modularity and lightweight nature of .NET makes it a better choice for containers. When you're creating and deploying a container, the size of its image is much smaller with .NET than with .NET Framework. Because it's cross-platform, you can deploy server apps to Linux Docker containers.
 
 Docker containers can be hosted in your own Linux or Windows infrastructure, or in a cloud service such as [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Azure Kubernetes Service can manage, orchestrate, and scale container-based applications in the cloud.
 
@@ -57,7 +58,7 @@ Docker containers can be hosted in your own Linux or Windows infrastructure, or 
 
 When your system needs the best possible performance and scalability, .NET and ASP.NET Core are your best options. The high-performance server runtime for Windows Server and Linux makes ASP.NET Core a top performing web framework on [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#hw=ph&test=plaintext).
 
-Performance and scalability are especially relevant for microservices architectures, where hundreds of microservices may be running. With ASP.NET Core, systems run with a much lower number of servers/Virtual Machines (VM). The reduced servers/VMs save costs in infrastructure and hosting.
+Performance and scalability are especially relevant for microservices architectures, where hundreds of microservices might be running. With ASP.NET Core, systems run with a much lower number of servers/Virtual Machines (VM). The reduced servers/VMs save costs in infrastructure and hosting.
 
 ### Side by side .NET versions per application level
 
@@ -71,7 +72,7 @@ Side-by-side installation isn't possible with .NET Framework. It's a Windows com
 
 ### Current .NET Framework applications
 
-In most cases, you don't need to migrate your existing applications to .NET. Instead, a recommended approach is to use .NET as you extend an existing application, such as writing a new web service in ASP.NET Core.
+In most cases, you don't need to migrate your existing applications to .NET. Instead, we recommend you to use .NET as you extend an existing application, such as writing a new web service in ASP.NET Core.
 
 ### Third-party libraries or NuGet packages not available for .NET
 
@@ -83,7 +84,7 @@ You need to use .NET Framework only in cases where the libraries or NuGet packag
 
 Some .NET Framework technologies aren't available in .NET. The following list shows the most common technologies not found in .NET:
 
-- ASP.NET Web Forms applications: ASP.NET Web Forms are only available in .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms.
+- ASP.NET Web Forms applications: ASP.NET Web Forms are only available in .NET Framework. ASP.NET Core can't be used for ASP.NET Web Forms.
 
 - ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core.
 

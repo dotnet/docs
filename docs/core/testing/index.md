@@ -3,7 +3,8 @@ title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/19/2020
+ms.date: 07/11/2022
+ms.custom: devdivchpfy22
 ---
 
 # Testing in .NET
@@ -16,7 +17,7 @@ Having automated tests is a great way to ensure that application code does what 
 
 ### Unit tests
 
-A *unit test* is a test that exercises individual software components or methods, also known as "unit of work". Unit tests should only test code within the developer's control. They do not test infrastructure concerns. Infrastructure concerns include interacting with databases, file systems, and network resources.
+A *unit test* is a test that exercises individual software components or methods, also known as "unit of work." Unit tests should only test code within the developer's control. They don't test infrastructure concerns. Infrastructure concerns include interacting with databases, file systems, and network resources.
 
 For more information on creating unit tests, see [Testing tools](#testing-tools).
 
@@ -26,11 +27,11 @@ An *integration test* differs from a unit test in that it exercises two or more 
 
 ### Load tests
 
-A *load test* aims to determine whether or not a system can handle a specified load, for example, the number of concurrent users using an application and the app's ability to handle interactions responsively. For more information on load testing of web applications, see [ASP.NET Core load/stress testing](/aspnet/core/test/load-tests).
+A *load test* aims to determine whether or not a system can handle a specified load. For example, the number of concurrent users using an application and the app's ability to handle interactions responsively. For more information on load testing of web applications, see [ASP.NET Core load/stress testing](/aspnet/core/test/load-tests).
 
 ## Test considerations
 
-Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development) is when a unit test is written before the code it's meant to check. TDD is like creating an outline for a book before you write it. It is meant to help developers write simpler, more readable, and efficient code.
+Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development) is when a unit test is written before the code it's meant to check. TDD is like creating an outline for a book before you write it. It's meant to help developers write simpler, more readable, and efficient code.
 
 ## Testing tools
 
@@ -38,7 +39,7 @@ Keep in mind there are [best practices](unit-testing-best-practices.md) for writ
 
 ### xUnit
 
-[xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for .NET. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing .NET apps. xUnit.net works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). It is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under their code of conduct.
+[xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 writes xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. xUnit.net works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). It's a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under their code of conduct.
 
 For more information, see the following resources:
 
@@ -48,7 +49,7 @@ For more information, see the following resources:
 
 ### NUnit
 
-[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially ported from JUnit, the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It is a project of the [.NET Foundation](https://dotnetfoundation.org).
+[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially NUnit is ported from JUnit, the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org).
 
 For more information, see the following resources:
 
@@ -66,7 +67,7 @@ For more information, see the following resources:
 
 ### .NET CLI
 
-You can run a solutions unit tests from the [.NET CLI](../tools/index.md), with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes a majority of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
+You can run a solutions unit test from the [.NET CLI](../tools/index.md), with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes most of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
 
 ### IDE
 

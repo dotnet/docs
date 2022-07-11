@@ -45,7 +45,7 @@ public interface ISettingsService
 Our application will use the `Preferences` class need to implement the `ISettingsService` interface. The code below shows how the eShopOnContainers mobile app's `SettingsService` implements the `AuthTokenAccess` and `UseMocks` properties:
 
 ```csharp
-public class SettingsService : ISettingsService
+public sealed class SettingsService : ISettingsService
 {
     private const string AccessToken = "access_token";
     private const string AccessTokenDefault = string.Empty;
@@ -107,7 +107,7 @@ public string IdentityEndpoint
     {
         SetProperty(ref _identityEndpoint, value);
 
-        if (!string.IsNullOrEmpty(value))
+        if (!string.IsNullOrWhiteSpace(value))
         {
             UpdateIdentityEndpoint();
         }

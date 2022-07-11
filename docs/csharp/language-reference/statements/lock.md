@@ -69,4 +69,4 @@ For more information, see [The lock statement](~/_csharpstandard/standard/statem
 - <xref:System.Threading.SpinLock?displayProperty=nameWithType>
 - <xref:System.Threading.Interlocked?displayProperty=nameWithType>
 - [Overview of synchronization primitives](../../../standard/threading/overview-of-synchronization-primitives.md)
-- [System.Threading.Channels](https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels/) which can provide a more efficient locking mechanism for some problems.
+- [Introduction to System.Threading.Channels](https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels)

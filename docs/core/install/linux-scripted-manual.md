@@ -124,7 +124,7 @@ export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-export PATH=$PATH:$DOTNET_ROOT
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
 > [!TIP]

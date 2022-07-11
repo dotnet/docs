@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -92,6 +92,9 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 > ```dockerfile
 > FROM mcr.microsoft.com/dotnet/runtime:6.0
 > ```
+
+> [!WARNING]
+> Pay close attention to every step within the _Dockerfile_, as it does differ from the standard _Dockerfile_ created from the "add docker support" functionality. In particular, the last few steps vary by not specifying a new `WORKDIR` which would change the path to the app's `ENTRYPOINT`.
 
 The preceding *Dockerfile* steps include:
 

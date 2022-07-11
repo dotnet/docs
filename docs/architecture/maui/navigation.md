@@ -34,7 +34,7 @@ public interface INavigationService
 {
     Task InitializeAsync();
 
-    Task NavigateToAsync (string route, IDictionary<string, object> routeParameters = null);
+    Task NavigateToAsync(string route, IDictionary<string, object> routeParameters = null);
 
     Task PopAsync();
 }
@@ -62,7 +62,7 @@ mauiAppBuilder.Services.AddSingleton<INavigationService, MauiNavigationService>(
 The `INavigationService` interface can then be resolved by adding it to the constructor of our views and view-models, as demonstrated in the following code example:
 
 ```csharp
-public AppShell (INavigationService navigationService)
+public AppShell(INavigationService navigationService)
 ```
 
 This returns a reference to the `MauiNavigationService` object that's stored in the dependency injection container.
@@ -82,7 +82,7 @@ await NavigationService.NavigateToAsync("//Main");
 The following code example shows the `NavigateToAsync` method provided by the `MauiNavigationService` class:
 
 ```csharp
-public Task NavigateToAsync (string route, IDictionary<string, object> routeParameters = null)
+public Task NavigateToAsync(string route, IDictionary<string, object> routeParameters = null)
 {
     return
         routeParameters != null

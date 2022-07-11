@@ -24,7 +24,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 - [System.Text.Json new features](#systemtextjson-new-features)
 - [Single file apps](../deploying/single-file/overview.md)
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
-- Windows ARM64 and ARM64 intrinsics
+- Windows Arm64 and Arm64 intrinsics
 - Tooling support for dump debugging
 - The runtime libraries are 80% annotated for [nullable reference types](../../csharp/nullable-references.md)
 - Performance improvements:

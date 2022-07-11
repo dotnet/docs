@@ -207,7 +207,35 @@ The complete list of obsolete CAS APIs is as follows:
 
 - If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [SYSLIB0002: PrincipalPermissionAttribute is obsolete](syslib0002.md#workarounds). That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
+## Suppress a warning
+
+If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+
+To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB0003
+
+// Code that uses obsolete API.
+// ...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB0003
+```
+
+To suppress all the `SYSLIB0003` warnings in your project, add a `<NoWarn>` property to your project file.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   ...
+   <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
+For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
 
 ## See also
 

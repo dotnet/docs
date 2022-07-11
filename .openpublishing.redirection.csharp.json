@@ -1,6 +1,18 @@
 {
     "redirections": [
         {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.0/binary-literals.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
+        },
+        {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.0/digit-separators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
+        },
+        {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.3/leading-digit-separator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
+        },
+        {
             "source_path_from_root": "/docs/csharp/basic-types.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types"
         },
@@ -150,6 +162,10 @@
         {
             "source_path_from_root": "/docs/csharp/lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/builtin-types/nint-nuint.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#native-sized-integers"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8892.md",
@@ -983,6 +999,10 @@
         {
             "source_path_from_root": "/docs/csharp/nullable-attributes.md",
             "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/nullable-warnings.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/nullable-warnings"
         },
         {
             "source_path_from_root": "/docs/csharp/parallel.md",

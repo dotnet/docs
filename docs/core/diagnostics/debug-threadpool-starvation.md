@@ -284,8 +284,9 @@ public ActionResult<string> TaskWait()
     Customer c = PretendQueryCustomerFromDbAsync("Dana").Result;
     return "success:taskwait";
 }
+```
 
-In this case the code can be readily changed to use the async/await instead as shown in the TaskAsyncWait() endpoint. Using await allows the current thread to service other workitems while the database query is in progress. When the database lookup is complete a ThreadPool thread will resume execution. This way no thread is blocked in the code during each request:
+In this case the code can be readily changed to use the async/await instead as shown in the `TaskAsyncWait()` endpoint. Using await allows the current thread to service other workitems while the database query is in progress. When the database lookup is complete a ThreadPool thread will resume execution. This way no thread is blocked in the code during each request:
 
 ```csharp
 public async Task<ActionResult<string>> TaskAsyncWait()
@@ -294,6 +295,7 @@ public async Task<ActionResult<string>> TaskAsyncWait()
     Customer c = await PretendQueryCustomerFromDbAsync("Dana");
     return "success:taskasyncwait";
 }
+```
 
 Running Bombadier to send load to the `api/diagscenario/taskasyncwait` endpoint shows that the ThreadPool thread count stays much lower and average latency remains near 500ms when using the async/await approach:
 

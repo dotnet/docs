@@ -3,7 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/24/2022
+ms.date: 06/29/2022
 ms.topic: reference
 ---
 
@@ -73,7 +73,7 @@ The application writes the following sample output:
 
 The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at run time. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
 
-The following code demonstrates configuration of XML files using the XML configuration provider.
+The following code demonstrates the configuration of XML files using the XML configuration provider.
 
 :::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-18,36-41" highlight="7-18":::
 
@@ -84,13 +84,16 @@ The preceding code:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
 - Configures the environment variables configuration provider.
-- Configures the command-line configuration provider if the given `args` contains arguments.
+- Configures the command-line configuration provider if the given `args` contain arguments.
 
 The XML settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 
 An example *appsettings.xml* file with various configuration settings follows:
 
 :::code language="xml" source="snippets/configuration/console-xml/appsettings.xml":::
+
+> [!TIP]
+> To use the `IConfiguration` type in WinForms apps, add a reference to the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package. Instantiate the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and chain calls to <xref:Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile%2A> and <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build>. For more information, see [.NET Docs Issue #29679](https://github.com/dotnet/docs/issues/29679#issuecomment-1169017078).
 
 In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element.
 

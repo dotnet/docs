@@ -10,7 +10,7 @@ RID is short for *Runtime Identifier*. RID values are used to identify target pl
 They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
-A single RID can be set in the [<RuntimeIdentifier>](project-sdk/msbuild-props.md#runtimeidentifier) element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's [<RuntimeIdentifiers>](project-sdk/msbuild-props.md#runtimeidentifiers) element. They're also used via the `--runtime` option with the following [.NET CLI commands](./tools/index.md):
+A single RID can be set in the [`<RuntimeIdentifier>`](project-sdk/msbuild-props.md#runtimeidentifier) element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's [`<RuntimeIdentifiers>`](project-sdk/msbuild-props.md#runtimeidentifiers) element. They're also used via the `--runtime` option with the following [.NET CLI commands](./tools/index.md):
 
 - [dotnet build](./tools/dotnet-build.md)
 - [dotnet clean](./tools/dotnet-clean.md)
@@ -26,7 +26,7 @@ RIDs that represent concrete operating systems usually follow this pattern: `[os
 
 - `[version]` is the operating system version in the form of a dot-separated (`.`) version number. For example, `15.10`.
 
-  The version **shouldn't** be a marketing version, as they often represent multiple discrete versions of the operating system with varying platform API surface area.
+  The version **shouldn't** be a marketing version, as marketing versions often represent multiple discrete versions of the operating system with varying platform API surface area.
 
 - `[architecture]` is the processor architecture. For example: `x86`, `x64`, `arm`, or `arm64`.
 

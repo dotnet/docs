@@ -1,6 +1,4 @@
-﻿using System;
-
-public struct Point
+﻿public struct Point
 {
     public Point(byte tag, double x, double y) => (Tag, X, Y) = (tag, x, y);
 

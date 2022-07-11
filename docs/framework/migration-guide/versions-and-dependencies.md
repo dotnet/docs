@@ -139,7 +139,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 |--------------------|------------------------------------------------------------------------------------------------------------|
 | **CLR**            | 4                                                                                                          |
 | **Windows**        | ✔️ 10 Anniversary Update (Version 1607)<br/>➕ 10 November Update (Version 1511)<br/>➕ 10<br/>➕ 8.1<br />➕ 7 |
-| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1                                                |
+| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2                           |
 
 To determine the installed .NET version, use the following `Release` DWORD:
 

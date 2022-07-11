@@ -1,67 +1,64 @@
-﻿using System;
+﻿namespace operators;
 
-namespace operators
+public static class ComparisonOperators
 {
-    public static class ComparisonOperators
+    public static void Examples()
     {
-        public static void Examples()
-        {
-            Console.WriteLine("--- >");
-            Greater();
-            Console.WriteLine("--- <");
-            Less();
-            Console.WriteLine("--- >=");
-            GreaterOrEqual();
-            Console.WriteLine("--- <=");
-            LessOrEqual();
-        }
+        Console.WriteLine("--- >");
+        Greater();
+        Console.WriteLine("--- <");
+        Less();
+        Console.WriteLine("--- >=");
+        GreaterOrEqual();
+        Console.WriteLine("--- <=");
+        LessOrEqual();
+    }
 
-        private static void Greater()
-        {
-            // <SnippetGreater>
-            Console.WriteLine(7.0 > 5.1);   // output: True
-            Console.WriteLine(5.1 > 5.1);   // output: False
-            Console.WriteLine(0.0 > 5.1);   // output: False
+    private static void Greater()
+    {
+        // <SnippetGreater>
+        Console.WriteLine(7.0 > 5.1);   // output: True
+        Console.WriteLine(5.1 > 5.1);   // output: False
+        Console.WriteLine(0.0 > 5.1);   // output: False
 
-            Console.WriteLine(double.NaN > 5.1);   // output: False
-            Console.WriteLine(double.NaN <= 5.1);  // output: False
-            // </SnippetGreater>
-        }
+        Console.WriteLine(double.NaN > 5.1);   // output: False
+        Console.WriteLine(double.NaN <= 5.1);  // output: False
+        // </SnippetGreater>
+    }
 
-        private static void Less()
-        {
-            // <SnippetLess>
-            Console.WriteLine(7.0 < 5.1);   // output: False
-            Console.WriteLine(5.1 < 5.1);   // output: False
-            Console.WriteLine(0.0 < 5.1);   // output: True
+    private static void Less()
+    {
+        // <SnippetLess>
+        Console.WriteLine(7.0 < 5.1);   // output: False
+        Console.WriteLine(5.1 < 5.1);   // output: False
+        Console.WriteLine(0.0 < 5.1);   // output: True
 
-            Console.WriteLine(double.NaN < 5.1);   // output: False
-            Console.WriteLine(double.NaN >= 5.1);  // output: False
-            // </SnippetLess>
-        }
+        Console.WriteLine(double.NaN < 5.1);   // output: False
+        Console.WriteLine(double.NaN >= 5.1);  // output: False
+        // </SnippetLess>
+    }
 
-        private static void GreaterOrEqual()
-        {
-            // <SnippetGreaterOrEqual>
-            Console.WriteLine(7.0 >= 5.1);   // output: True
-            Console.WriteLine(5.1 >= 5.1);   // output: True
-            Console.WriteLine(0.0 >= 5.1);   // output: False
+    private static void GreaterOrEqual()
+    {
+        // <SnippetGreaterOrEqual>
+        Console.WriteLine(7.0 >= 5.1);   // output: True
+        Console.WriteLine(5.1 >= 5.1);   // output: True
+        Console.WriteLine(0.0 >= 5.1);   // output: False
 
-            Console.WriteLine(double.NaN < 5.1);   // output: False
-            Console.WriteLine(double.NaN >= 5.1);  // output: False
-            // </SnippetGreaterOrEqual>
-        }
+        Console.WriteLine(double.NaN < 5.1);   // output: False
+        Console.WriteLine(double.NaN >= 5.1);  // output: False
+        // </SnippetGreaterOrEqual>
+    }
 
-        private static void LessOrEqual()
-        {
-            // <SnippetLessOrEqual>
-            Console.WriteLine(7.0 <= 5.1);   // output: False
-            Console.WriteLine(5.1 <= 5.1);   // output: True
-            Console.WriteLine(0.0 <= 5.1);   // output: True
+    private static void LessOrEqual()
+    {
+        // <SnippetLessOrEqual>
+        Console.WriteLine(7.0 <= 5.1);   // output: False
+        Console.WriteLine(5.1 <= 5.1);   // output: True
+        Console.WriteLine(0.0 <= 5.1);   // output: True
 
-            Console.WriteLine(double.NaN > 5.1);   // output: False
-            Console.WriteLine(double.NaN <= 5.1);  // output: False
-            // </SnippetLessOrEqual>
-        }
+        Console.WriteLine(double.NaN > 5.1);   // output: False
+        Console.WriteLine(double.NaN <= 5.1);  // output: False
+        // </SnippetLessOrEqual>
     }
 }

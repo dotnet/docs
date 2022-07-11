@@ -1,6 +1,4 @@
-﻿using System;
-
-public readonly struct Fraction
+﻿public readonly struct Fraction
 {
     private readonly int num;
     private readonly int den;

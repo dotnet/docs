@@ -17,7 +17,7 @@ The two recommended ways of collecting dumps on Linux are:
 
 ### Managed dumps with `dotnet-dump`
 
-The [`dotnet-dump`](dotnet-dump.md) tool is simple to use, and does not have a dependency on any native debuggers. `dotnet-dump` works on a wide variety of Linux platforms (like Alpine or ARM32/ARM64) where traditional debugging tools may not be available. However, `dotnet-dump` only captures managed state so it can't be used for debugging issues in native code. Dumps collected by `dotnet-dump` are analyzed in an environment with the same OS and architecture the dump was created on. The [`dotnet-gcdump`](dotnet-gcdump.md) tool can be used as an alternative that only captures GC heap information but produces dumps that can be analyzed on Windows.
+The [`dotnet-dump`](dotnet-dump.md) tool is simple to use, and does not have a dependency on any native debuggers. `dotnet-dump` works on a wide variety of Linux platforms (like Alpine or Arm32/Arm64) where traditional debugging tools may not be available. However, `dotnet-dump` only captures managed state so it can't be used for debugging issues in native code. Dumps collected by `dotnet-dump` are analyzed in an environment with the same OS and architecture the dump was created on. The [`dotnet-gcdump`](dotnet-gcdump.md) tool can be used as an alternative that only captures GC heap information but produces dumps that can be analyzed on Windows.
 
 ### Core dumps with `createdump`
 

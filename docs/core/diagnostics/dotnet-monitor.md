@@ -53,7 +53,7 @@ The `dotnet-monitor` global tool is a way to monitor .NET applications in produc
 | Command                                                   |
 | --------------------------------------------------------- |
 | [dotnet monitor collect](#dotnet-monitor-collect)         |
-| [dotnet monitor config show](#dotnet-monitor-config-show)    |
+| [dotnet monitor config show](#dotnet-monitor-config-show) |
 | [dotnet monitor generatekey](#dotnet-monitor-generatekey) |
 
 ## dotnet-monitor collect
@@ -104,7 +104,7 @@ dotnet-monitor collect [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls] [--
 
 - **`--no-http-egress`**
 
-  Disables egress of diagnostic artifacts via the HTTP response. When specified, artifacts must be egress using an egress provider.
+  Disables egress of diagnostic artifacts via the HTTP response. When specified, artifacts must be egressed using an egress provider.
 
 ## dotnet-monitor config show
 
@@ -130,7 +130,7 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
 
 - **`-m|--metrics [true|false]`**
 
-  Enable publishing of metrics to `/metrics` route. Default is `true`
+  Enable publishing of metrics to `/metrics` route. Default is `true`.
 
   This value is mapped into configuration as the `Metrics:Enabled` key.
 
@@ -166,7 +166,7 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
 
 - **`--no-http-egress`**
 
-  Disables egress of diagnostic artifacts via the HTTP response. When specified, artifacts must be egress using an egress provider.
+  Disables egress of diagnostic artifacts via the HTTP response. When specified, artifacts must be egressed using an egress provider.
 
   This value is not mapped into configuration.
 
@@ -175,7 +175,7 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
   Configuration level. `Full` configuration can show sensitive information. There are two levels:
 
   - `Full` - The full configuration without any redaction of any values.
-  - `Redacted` - The full configuration but sensitive information, such as know secrets, is redacted.
+  - `Redacted` - The full configuration but sensitive information, such as known secrets, is redacted.
 
 - **`--show-sources`**
 

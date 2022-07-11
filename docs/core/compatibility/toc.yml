@@ -51,10 +51,10 @@ items:
           href: core-libraries/7.0/collectible-assemblies.md
         - name: Equals method behavior change for NaN
           href: core-libraries/7.0/equals-nan.md
-        - name: FullPath and OldFullPath return fully qualified path
-          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Reflection invoke API exceptions
+          href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
@@ -69,6 +69,8 @@ items:
         items:
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
       - name: Extensions
         items:
         - name: ContentRootPath for apps launched by Windows Shell
@@ -213,6 +215,10 @@ items:
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
           href: cryptography/6.0/cfb-mode-feedback-size-exception.md
+      - name: Deployment
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
       - name: Entity Framework Core
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
@@ -763,10 +769,10 @@ items:
           href: core-libraries/7.0/collectible-assemblies.md
         - name: Equals method behavior change for NaN
           href: core-libraries/7.0/equals-nan.md
-        - name: FullPath and OldFullPath return fully qualified path
-          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Reflection invoke API exceptions
+          href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
@@ -917,6 +923,16 @@ items:
         items:
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: .NET 6
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: .NET Core 3.1
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
     - name: Entity Framework Core
       items:
       - name: EF Core 6

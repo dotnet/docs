@@ -733,6 +733,8 @@ items:
         href: ../core/diagnostics/dotnet-dump.md
       - name: dotnet-gcdump
         href: ../core/diagnostics/dotnet-gcdump.md
+      - name: dotnet-monitor
+        href: ../core/diagnostics/dotnet-monitor.md
       - name: dotnet-trace
         href: ../core/diagnostics/dotnet-trace.md
       - name: dotnet-stack
@@ -1494,6 +1496,10 @@ items:
               href: code-analysis/style-rules/ide0090.md
             - name: IDE0180
               href: code-analysis/style-rules/ide0180.md
+          - name: Namespace declaration preferences
+            items:
+            - name: IDE0160 and IDE0161
+              href: code-analysis/style-rules/ide0160-ide0161.md
           - name: Null-checking preferences
             items:
             - name: Overview

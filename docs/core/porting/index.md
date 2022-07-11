@@ -41,7 +41,7 @@ For more information, see [Use the Windows Compatibility Pack to port code to .N
 
 ## .NET Framework compatibility mode
 
-The .NET Framework compatibility mode was introduced in .NET Standard 2.0. This compatibility mode allows .NET Standard and .NET 5+ (and .NET Core 3.1) projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
+The .NET Framework compatibility mode was introduced in .NET Standard 2.0. This compatibility mode allows .NET Standard and .NET (since .NET Core 3.1) projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
 
 ## Unavailable technologies
 
@@ -69,7 +69,7 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
 - Windows Workflow Foundation (WF)
 
-  WF isn't supported in .NET 5+ (including .NET Core). For an alternative, see [CoreWF](https://github.com/UiPath/corewf).
+  WF isn't supported in .NET. For an alternative, see [CoreWF](https://github.com/UiPath/corewf).
 
 For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](net-framework-tech-unavailable.md).
 
@@ -100,7 +100,7 @@ Even if you use a tool to help port your application, you should review the [Con
 
 ### .NET Upgrade Assistant
 
-The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
+The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
 
 - Windows Forms
 - WPF
@@ -112,7 +112,7 @@ This tool uses the other tools listed in this article and guides the migration p
 
 ### try-convert
 
-The try-convert tool is a .NET global tool that can convert a project or entire solution to the .NET SDK, including moving desktop apps to .NET 5. However, this tool isn't recommended if your project has a complicated build process such as custom tasks, targets, or imports.
+The try-convert tool is a .NET global tool that can convert a project or entire solution to the .NET SDK, including moving desktop apps to .NET. However, this tool isn't recommended if your project has a complicated build process such as custom tasks, targets, or imports.
 
 For more information, see the [try-convert GitHub repository](https://github.com/dotnet/try-convert).
 
@@ -136,7 +136,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
 
-✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET 5, .NET Standard, or .NET Core.
+✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET, .NET Standard, or .NET Core.
 
 ✔️ DO migrate from a NuGet _packages.config_ file to [PackageReference](/nuget/consume-packages/package-references-in-project-files) settings in the project file. Use Visual Studio to [convert the _package.config_ file](/nuget/consume-packages/migrate-packages-config-to-package-reference#migration-steps).
 
@@ -144,9 +144,9 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO retarget your .NET Framework project to at least .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
-✔️ CONSIDER targeting .NET 5 instead of .NET Core 3.1. While .NET Core 3.1 is under long-term support (LTS), .NET 5 is the latest and .NET 6 will be LTS when released.
+✔️ CONSIDER targeting .NET 6 which is under long-term support (LTS).
 
-✔️ DO target .NET 5 for **Windows Forms and WPF** projects. .NET 5 contains many improvements for Desktop apps.
+✔️ DO target .NET 6 for **Windows Forms and WPF** projects. .NET 6 contains many improvements for Desktop apps.
 
 ✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that may also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 

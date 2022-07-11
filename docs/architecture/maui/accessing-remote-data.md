@@ -39,7 +39,7 @@ The eShopOnContainers mobile app uses the `HttpClient` class to make requests ov
 
 ## Making a GET request
 
-The `CatalogService` class is used to manage the data retrieval process from the catalog microservice. In the `RegisterViewModels` method in the `MauiProgram` class, the `CatalogService` class is registered as a type mapping against the `ICatalogService` type with the dependency injection container. Then, when an instance of the `CatalogViewModel` class is created, its constructor accepts an `ICatalogService type`, which the dependency injection container resolves, returning an instance of the `CatalogService` class. For more information about dependency injection, see [Introduction to dependency injection](#introduction-to-dependency-injection).
+The `CatalogService` class is used to manage the data retrieval process from the catalog microservice. In the `RegisterViewModels` method in the `MauiProgram` class, the `CatalogService` class is registered as a type mapping against the `ICatalogService` type with the dependency injection container. Then, when an instance of the `CatalogViewModel` class is created, its constructor accepts an `ICatalogService type`, which the dependency injection container resolves, returning an instance of the `CatalogService` class. For more information about dependency injection, see [Dependency Injection](dependency-injection.md).
 
 The image below shows the interaction of classes that read catalog data from the catalog microservice for displaying by the CatalogView.
 
@@ -146,7 +146,7 @@ This method retrieves the catalog data from the SQL database using [EntityFramew
 
 ## Making a POST request
 
-The `BasketService` class is used to manage the data retrieval and update process with the basket microservice. In the `RegisterAppServices` method in the `MauiProgram` class, the `BasketService` class is registered as a type mapping against the `IBasketService` type with the dependency injection container. Then, when an instance of the `BasketViewModel` class is created, its constructor accepts an `IBasketService` type, which the dependency injection container resolves, returning an instance of the `BasketService` class. For more information about dependency injection, see [Dependency Injection](#introduction-to-dependency-injection).
+The `BasketService` class is used to manage the data retrieval and update process with the basket microservice. In the `RegisterAppServices` method in the `MauiProgram` class, the `BasketService` class is registered as a type mapping against the `IBasketService` type with the dependency injection container. Then, when an instance of the `BasketViewModel` class is created, its constructor accepts an `IBasketService` type, which the dependency injection container resolves, returning an instance of the `BasketService` class. For more information about dependency injection, see [Dependency Injection](dependency-injection.md).
 
 The image below shows the interaction of classes that send the basket data displayed by the BasketView, to the basket microservice.
 

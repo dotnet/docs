@@ -13,11 +13,6 @@ App settings are data that an app creates and manages. It can include data such 
 
 User settings are the customizable settings of an app that affect the app's behavior and don't require frequent re-adjustment. For example, an app might let the user specify where to retrieve data and how to display it on the screen.
 
-.NET MAUI includes a preferences manager that provides a way to store runtime settings for a user. This feature can be accessed from anywhere within your application using the `Microsoft.Maui.Storage.Preferences` class. The preferences manager provides a consistent, type-safe, cross-platform approach for persisting and retrieving app and user settings, while using the native settings management provided by each platform. In addition, it's straightforward to use data binding to access settings data exposed by the library. For more information, see the [Preferences](/dotnet/maui/platform-integration/storage/preferences) on the Microsoft Developer Center.
-
-> [!TIP]
-> Preferences is meant for storing relatively small data. If you need to store larger or more complex data, consider using a local database or filesystem to store the data.
-
 ## Creating a Settings Interface
 
 While the preferences manager can be used directly in your application, it does come with the drawback of making your application tightly coupled to the preferences manager implementation. This coupling means that creating unit tests or extending the functionality of preferences management will be limited since your application will not have a direct way to intercept the behavior. To address this concern, an interface can be created to work as a proxy for preferences management. The interface will allow us to supply an implementation that fits our needs. For example, when writing a unit test, we may want to set specific settings, and the interface will give us an easy way to consistently set this data for the test. The following code example shows the `ISettingsService` interface in the eShopOnContainers mobile app:
@@ -42,7 +37,12 @@ public interface ISettingsService
 
 ## Adding Settings
 
-Our application will need to implement the `ISettingsService` interface. The code below shows how the eShopOnContainers mobile app's `SettingsService` implements the `AuthTokenAccess` and `UseMocks` properties:
+.NET MAUI includes a preferences manager that provides a way to store runtime settings for a user. This feature can be accessed from anywhere within your application using the `Microsoft.Maui.Storage.Preferences` class. The preferences manager provides a consistent, type-safe, cross-platform approach for persisting and retrieving app and user settings, while using the native settings management provided by each platform. In addition, it's straightforward to use data binding to access settings data exposed by the library. For more information, see the [Preferences](/dotnet/maui/platform-integration/storage/preferences) on the Microsoft Developer Center.
+
+> [!TIP]
+> Preferences is meant for storing relatively small data. If you need to store larger or more complex data, consider using a local database or filesystem to store the data.
+
+Our application will use the `Preferences` class need to implement the `ISettingsService` interface. The code below shows how the eShopOnContainers mobile app's `SettingsService` implements the `AuthTokenAccess` and `UseMocks` properties:
 
 ```csharp
 public class SettingsService : ISettingsService

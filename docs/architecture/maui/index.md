@@ -3,7 +3,7 @@ title: Enterprise Application Patterns Using .NET MAUI
 description: Learn how to design adaptable, maintainable, and testable MAUI applications.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/12/2022
+ms.date: 07/12/2022
 ---
 
 # Enterprise Application Patterns Using .NET MAUI
@@ -70,11 +70,11 @@ This book focuses on building cross-platform enterprise apps using .NET MAUI. As
 
 ## What this book doesn't cover
 
-This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your first app](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app) guide in the .NET MAUI Documentation
+This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your first app](/dotnet/maui/get-started/first-app) guide in the .NET MAUI Documentation
 
 ### Additional resources
 
-You can find the official .NET MAUI home page and documentation at <https://docs.microsoft.com/en-us/dotnet/maui/>.
+You can find the official .NET MAUI home page and documentation at <https://docs.microsoft.com/dotnet/maui/>.
 
 ## Send your feedback
 

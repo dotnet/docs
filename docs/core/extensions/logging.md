@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 01/06/2022
+ms.date: 06/27/2022
 ---
 
 # Logging in .NET
@@ -368,6 +368,19 @@ In the preceding example, the `DateTimeOffset` instance is the type that corresp
 
 For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../standard/base-types/custom-date-and-time-format-strings.md).
 
+### Log message template formatting examples
+
+Log message templates allow placeholder formatting. The following examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
+
+```csharp
+logger.LogInformation("Number: {Number}", 1);               // Number: 1
+logger.LogInformation("{{Number}}: {Number}", 3);           // {Number}: 3
+logger.LogInformation($"{{{{Number}}}}: {{Number}}", 5);    // {Number}: 5
+```
+
+> [!TIP]
+> You should always use log message template formatting when logging. You should avoid string interpolation as it can cause performance issues.
+
 ## Log exceptions
 
 The logger methods have overloads that take an exception parameter:
@@ -423,21 +436,16 @@ class Program
 A filter function is invoked for all providers and categories that don't have rules assigned to them by configuration or code:
 
 ```csharp
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
-
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-                logging.AddFilter((provider, category, logLevel) =>
-                {
-                    return provider.Contains("ConsoleLoggerProvider")
-                        && (category.Contains("Example") || category.Contains("Microsoft"))
-                        && logLevel >= LogLevel.Information;
-                }));
-}
+await Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging =>
+        logging.AddFilter((provider, category, logLevel) =>
+        {
+            return provider.Contains("ConsoleLoggerProvider")
+                && (category.Contains("Example") || category.Contains("Microsoft"))
+                && logLevel >= LogLevel.Information;
+        }))
+    .Build()
+    .RunAsync();
 ```
 
 The preceding code displays console logs when the category contains `Example` or `Microsoft` and the log level is `Information` or higher.
@@ -487,17 +495,12 @@ The following JSON enables scopes for the console provider:
 The following code enables scopes for the console provider:
 
 ```csharp
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
-
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging((_, logging) =>
-                logging.ClearProviders()
-                    .AddConsole(options => options.IncludeScopes = true));
-}
+await Host.CreateDefaultBuilder(args)
+    .ConfigureLogging((_, logging) =>
+        logging.ClearProviders()
+            .AddConsole(options => options.IncludeScopes = true))
+    .Build()
+    .RunAsync();
 ```
 
 ## Non-host console app
@@ -505,23 +508,17 @@ class Program
 Logging code for apps without a [Generic Host](generic-host.md) differs in the way [providers are added](logging-providers.md#built-in-logging-providers) and [loggers are created](#create-logs). In a non-host console app, call the provider's `Add{provider name}` extension method while creating a `LoggerFactory`:
 
 ```csharp
-class Program
+using var loggerFactory = LoggerFactory.Create(builder =>
 {
-    static void Main(string[] args)
-    {
-        using var loggerFactory = LoggerFactory.Create(builder =>
-        {
-            builder
-                .AddFilter("Microsoft", LogLevel.Warning)
-                .AddFilter("System", LogLevel.Warning)
-                .AddFilter("LoggingConsoleApp.Program", LogLevel.Debug)
-                .AddConsole();
-        });
+    builder
+        .AddFilter("Microsoft", LogLevel.Warning)
+        .AddFilter("System", LogLevel.Warning)
+        .AddFilter("LoggingConsoleApp.Program", LogLevel.Debug)
+        .AddConsole();
+});
 
-        ILogger logger = loggerFactory.CreateLogger<Program>();
-        logger.LogInformation("Example log message");
-    }
-}
+ILogger logger = loggerFactory.CreateLogger<Program>();
+logger.LogInformation("Example log message");
 ```
 
 The `loggerFactory` object is used to create an <xref:Microsoft.Extensions.Logging.ILogger> instance.
@@ -531,24 +528,41 @@ The `loggerFactory` object is used to create an <xref:Microsoft.Extensions.Loggi
 The following code logs in `Main` by getting an `ILogger` instance from DI after building the host:
 
 ```csharp
-using System;
-using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-class Program
-{
-    static Task Main(string[] args)
-    {
-        IHost host = Host.CreateDefaultBuilder(args).Build();
+IHost host = Host.CreateDefaultBuilder(args).Build();
 
-        var logger = host.Services.GetRequiredService<ILogger<Program>>();
-        logger.LogInformation("Host created.");
+var logger = host.Services.GetRequiredService<ILogger<Program>>();
+logger.LogInformation("Host created.");
 
-        return host.RunAsync();
-    }
-}
+await host.RunAsync();
+```
+
+The preceding code relies on two NuGet packages:
+
+- [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting)
+- [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
+
+Its project file would look similar to the following:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
 ```
 
 ### No asynchronous logger methods
@@ -573,18 +587,13 @@ The preferred approach for setting log filter rules is by using [Configuration](
 The following example shows how to register filter rules in code:
 
 ```csharp
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
-
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-               logging.AddFilter("System", LogLevel.Debug)
-                  .AddFilter<DebugLoggerProvider>("Microsoft", LogLevel.Information)
-                  .AddFilter<ConsoleLoggerProvider>("Microsoft", LogLevel.Trace));
-}
+await Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging =>
+        logging.AddFilter("System", LogLevel.Debug)
+            .AddFilter<DebugLoggerProvider>("Microsoft", LogLevel.Information)
+            .AddFilter<ConsoleLoggerProvider>("Microsoft", LogLevel.Trace))
+    .Build()
+    .RunAsync();
 ```
 
 `logging.AddFilter("System", LogLevel.Debug)` specifies the `System` category and log level `Debug`. The filter is applied to all providers because a specific provider was not configured.

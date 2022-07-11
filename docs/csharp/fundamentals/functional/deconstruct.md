@@ -54,7 +54,7 @@ You must assign each element of the tuple to a variable. If you omit any element
 
 Often when deconstructing a tuple, you're interested in the values of only some elements. Starting with C# 7.0, you can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is chosen by an underscore character ("\_") in an assignment. You can discard as many values as you like; all are represented by the single discard, `_`.
 
-The following example illustrates the use of tuples with discards. The `QueryCityDataForYears` method returns a six-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.  
+The following example illustrates the use of tuples with discards. The `QueryCityDataForYears` method returns a six-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/discard-tuple1.cs":::
 
@@ -114,5 +114,6 @@ When you declare a [record](../../language-reference/builtin-types/record.md) ty
 
 ## See also
 
+- [Deconstruct variable declaration (style rule IDE0042)](../../../fundamentals/code-analysis/style-rules/ide0042.md)
 - [Discards](discards.md)
 - [Tuple types](../../language-reference/builtin-types/value-tuples.md)

@@ -271,7 +271,7 @@ You may have similar requirements working with memory created using [`stackalloc
 
 ## Use `nint` and `nuint` types
 
-[Native-sized integer types](language-reference/builtin-types/nint-nuint.md) are 32-bit integers in a 32-bit process or 64-bit integers in a 64-bit process. Use them for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
+[Native-sized integer types](language-reference/builtin-types/integral-numeric-types.md#native-sized-integers) are 32-bit integers in a 32-bit process or 64-bit integers in a 64-bit process. Use them for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
 
 ## Conclusions
 

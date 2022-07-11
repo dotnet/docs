@@ -119,7 +119,7 @@ The eShopOnContainers project contains the following folders:
 | _Controls_    | Contains custom controls used by the app.                                             |
 | _Converters_  | Contains value converters that apply custom logic to a binding.                       |
 | _Exceptions_  | Contains the custom ServiceAuthenticationException.                                   |
-| _Extensions_  | Contains extension methods for the VisualElement and IEnumerable<T> classes.          |
+| _Extensions_  | Contains extension methods for the `VisualElement` and `IEnumerable<T>` classes.          |
 | _Helpers_     | Contains helper classes for the app.                                                  |
 | _Models_      | Contains the model classes for the app.                                               |
 | _Properties_  | Contains AssemblyInfo.cs, a .NET assembly metadata file.                              |

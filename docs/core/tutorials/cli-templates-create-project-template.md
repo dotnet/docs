@@ -64,7 +64,7 @@ dotnet run
 You get the following output.
 
 ```console
-Hello World with C#!
+Hello World with C#
 ```
 
 You can delete the _obj_ and _bin_ folders created by using `dotnet run`. Deleting these files ensures your template only includes the files related to your template and not any files that result from a build action.
@@ -153,7 +153,7 @@ Now that you have a project template installed, test it.
     You get the following output.
 
     ```console
-    Hello World with C#!
+    Hello World with C#
     ```
 
 Congratulations! You created and deployed a project template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.

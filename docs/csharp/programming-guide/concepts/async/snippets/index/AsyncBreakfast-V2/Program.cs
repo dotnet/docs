@@ -6,6 +6,13 @@ namespace AsyncBreakfast
     class Program
     {
         // <SnippetMain>
+        // These classes are intentionally empty for the purpose of this example. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
+        internal class Bacon { }
+        internal class Coffee { }
+        internal class Egg { }
+        internal class Juice { }
+        internal class Toast { }
+
         static async Task Main(string[] args)
         {
             Coffee cup = PourCoffee();

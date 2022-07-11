@@ -21,6 +21,8 @@ The [.NET Uninstall Tool](https://github.com/dotnet/cli-lab/releases) (`dotnet-c
 
 [dotnet-gcdump](../diagnostics/dotnet-gcdump.md) provides a way to collect GC (Garbage Collector) dumps of live .NET processes.
 
+[dotnet-monitor](../diagnostics/dotnet-monitor.md) provides a way to monitor .NET applications in production environments and to collect diagnostic artifacts (for example, dumps, traces, logs, and metrics) on-demand or using automated rules for collecting under specified conditions.
+
 [dotnet-trace](../diagnostics/dotnet-trace.md) collects profiling data from your app that can help in scenarios where you need to find out what causes an app to run slow.
 
 ## .NET Install tool for extension authors

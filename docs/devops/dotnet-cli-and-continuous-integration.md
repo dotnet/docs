@@ -1,7 +1,7 @@
 ---
 title: Continuous Integration (CI) with .NET SDK and tools
 description: Learn how to use the .NET SDK and its tools on the build server with continuous integration.
-ms.date: 05/18/2017
+ms.date: 07/08/2022
 ---
 # Using the .NET SDK and tools in Continuous Integration (CI)
 
@@ -34,7 +34,7 @@ This section describes a manual setup using a PowerShell or bash script, along w
 
 ### Manual setup
 
-Each SaaS service has its own methods for creating and configuring a build process. If you use different SaaS solution than those listed or require customization beyond the pre-packaged support, you must perform at least some manual configuration.
+Each SaaS service has its methods for creating and configuring a build process. If you use a different SaaS solution than those listed or require customization beyond the pre-packaged support, you must perform at least some manual configuration.
 
 In general, a manual setup requires you to acquire a version of the tools (or the latest nightly builds of the tools) and run your build script. You can use a PowerShell or bash script to orchestrate the .NET commands or use a project file that outlines the build process. The [orchestration section](#orchestrating-the-build) provides more detail on these options.
 
@@ -85,7 +85,7 @@ $LocalDotnet = "$InstallDir/dotnet"
 # Run the build process now. Implement your build script here.
 ```
 
-You provide the implementation for your build process at the end of the script. The script acquires the tools and then executes your build process. For UNIX machines, the following bash script performs the actions described in the PowerShell script in a similar manner:
+You provide the implementation for your build process at the end of the script. The script acquires the tools and then executes your build process. For UNIX machines, the following bash script performs the actions similarly described in the PowerShell script:
 
 ```bash
 #!/bin/bash

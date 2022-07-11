@@ -1,66 +1,64 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace operators
+namespace operators;
+
+// <SnippetPersonClass>
+#nullable enable
+public class Person
 {
-    // <SnippetPersonClass>
-    #nullable enable
-    public class Person
-    {
-        public Person(string name) => Name = name ?? throw new ArgumentNullException(nameof(name));
+    public Person(string name) => Name = name ?? throw new ArgumentNullException(nameof(name));
 
-        public string Name { get; }
+    public string Name { get; }
+}
+// </SnippetPersonClass>
+
+[TestClass]
+public class PersonTests
+{
+    // <SnippetTestPerson>
+    [TestMethod, ExpectedException(typeof(ArgumentNullException))]
+    public void NullNameShouldThrowTest()
+    {
+        var person = new Person(null!);
     }
-    // </SnippetPersonClass>
+    // </SnippetTestPerson>
+}
 
-    [TestClass]
-    public class PersonTests
+public static class UseNullForgivingExample
+{
+    // <SnippetUseNullForgiving>
+    public static void Main()
     {
-        // <SnippetTestPerson>
-        [TestMethod, ExpectedException(typeof(ArgumentNullException))]
-        public void NullNameShouldThrowTest()
+        Person? p = Find("John");
+        if (IsValid(p))
         {
-            var person = new Person(null!);
+            Console.WriteLine($"Found {p!.Name}");
         }
-        // </SnippetTestPerson>
     }
 
-    public static class UseNullForgivingExample
+    public static bool IsValid(Person? person)
+        => person is not null && person.Name is not null;
+    // </SnippetUseNullForgiving>
+
+    public static Person? Find(string name) => null;
+}
+
+public static class UseAttributeExample
+{
+    // <SnippetUseAttribute>
+    public static void Main()
     {
-        // <SnippetUseNullForgiving>
-        public static void Main()
+        Person? p = Find("John");
+        if (IsValid(p))
         {
-            Person? p = Find("John");
-            if (IsValid(p))
-            {
-                Console.WriteLine($"Found {p!.Name}");
-            }
+            Console.WriteLine($"Found {p.Name}");
         }
-
-        public static bool IsValid(Person? person)
-            => person is not null && person.Name is not null;
-        // </SnippetUseNullForgiving>
-
-        public static Person? Find(string name) => null;
     }
 
-    public static class UseAttributeExample
-    {
-        // <SnippetUseAttribute>
-        public static void Main()
-        {
-            Person? p = Find("John");
-            if (IsValid(p))
-            {
-                Console.WriteLine($"Found {p.Name}");
-            }
-        }
+    public static bool IsValid([NotNullWhen(true)] Person? person)
+        => person is not null && person.Name is not null;
+    // </SnippetUseAttribute>
 
-        public static bool IsValid([NotNullWhen(true)] Person? person)
-            => person is not null && person.Name is not null;
-        // </SnippetUseAttribute>
-
-        public static Person? Find(string name) => null;
-    }
+    public static Person? Find(string name) => null;
 }

@@ -87,7 +87,7 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 :::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="24":::
 
 > [!NOTE]
-> The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
+> The .NET app in this tutorial relies on the .NET SDK as part of its functionality. The _Dockerfile_ creates a new set of Docker layers, independent from the previous ones. It starts from scratch with the SDK image, and adds the build output from the previous set of layers. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
 > FROM mcr.microsoft.com/dotnet/runtime:6.0

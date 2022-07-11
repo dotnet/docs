@@ -26,9 +26,9 @@ There are two ways to download and install `dotnet-sos`:
 
   | OS  | Platform |
   | --- | -------- |
-  | Windows | [x86](https://aka.ms/dotnet-sos/win-x86) \| [x64](https://aka.ms/dotnet-sos/win-x64) \| [arm](https://aka.ms/dotnet-sos/win-arm) \| [arm-x64](https://aka.ms/dotnet-sos/win-arm64) |
+  | Windows | [x86](https://aka.ms/dotnet-sos/win-x86) \| [x64](https://aka.ms/dotnet-sos/win-x64) \| [Arm](https://aka.ms/dotnet-sos/win-arm) \| [Arm-x64](https://aka.ms/dotnet-sos/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-sos/osx-x64) |
-  | Linux   | [x64](https://aka.ms/dotnet-sos/linux-x64) \| [arm](https://aka.ms/dotnet-sos/linux-arm) \| [arm64](https://aka.ms/dotnet-sos/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-sos/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-sos/linux-musl-arm64) |
+  | Linux   | [x64](https://aka.ms/dotnet-sos/linux-x64) \| [Arm](https://aka.ms/dotnet-sos/linux-arm) \| [Arm64](https://aka.ms/dotnet-sos/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-sos/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-sos/linux-musl-arm64) |
 
 ## Synopsis
 

@@ -2,7 +2,7 @@
 description: "using directive - C# Reference"
 title: "using directive - C# Reference"
 ms.date: 08/19/2021
-f1_keywords: 
+f1_keywords:
   - "using_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
@@ -176,6 +176,8 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
+- [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)
+- [Style rule IDE0065 - 'using' directive placement](../../../fundamentals/code-analysis/style-rules/ide0065.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

@@ -100,7 +100,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1097|It is not supported to publish an application to a single-file without specifying a RuntimeIdentifier. You must either specify a RuntimeIdentifier or set PublishSingleFile to false.|
 |NETSDK1098|Applications published to a single-file are required to use the application host. You must either set PublishSingleFile to false or set UseAppHost to true.|
 |NETSDK1099|Publishing to a single-file is only supported for executable applications.|
-|NETSDK1100|To build a project targeting Windows on this operating system, set the EnableWindowsTargeting property to true.|
+|[NETSDK1100](netsdk1100.md)|To build a project targeting Windows on this operating system, set the EnableWindowsTargeting property to true.|
 |NETSDK1102|Optimizing assemblies for size is not supported for the selected publish configuration. Please ensure that you are publishing a self-contained app.|
 |NETSDK1103|RollForward setting is only supported on .NET Core 3.0 or higher.|
 |NETSDK1104|RollForward value '{0}' is invalid. Allowed values are {1}.|

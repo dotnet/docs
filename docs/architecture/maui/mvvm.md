@@ -345,13 +345,13 @@ The EventToCommandBehavior is particularly useful for attaching a command to a c
 <Entry
     IsPassword="True"
     Text="{Binding Password.Value, Mode=TwoWay}">
-    // Omitted for brevity...
+    <!-- Omitted for brevity... -->
     <Entry.Behaviors>
         <mct:EventToCommandBehavior
             EventName="TextChanged"
             Command="{Binding ValidateCommand}" />
     </Entry.Behaviors>
-    // Omitted for brevity...
+    <!-- Omitted for brevity... -->
 </Entry>
 ```
 

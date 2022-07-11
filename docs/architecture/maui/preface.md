@@ -16,9 +16,9 @@ The guide comes with source code for the [eShopOnContainers mobile app](https://
 
 ### What's left out of this guide's scope
 
-This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the [.NET MAUI documentation](https://docs.microsoft.com/en-us/dotnet/maui/) on the Microsoft Developer Center, and [Creating Mobile Apps with .NET MAUI](https://aka.ms/mauiebook).
+This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the [.NET MAUI documentation](/dotnet/maui/) on the Microsoft Developer Center, and [Creating Mobile Apps with .NET MAUI](https://aka.ms/mauiebook).
 
-The guide is complementary to [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook), which focuses on developing and deploying containerized microservices. Other guides worth reading include [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](http://aka.ms/WebAppEbook), [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](http://aka.ms/dockerlifecycleebook), and [Microsoft Platform and Tools for Mobile App Development](http://aka.ms/MobAppDev/StndPDF).
+The guide is complementary to [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook), which focuses on developing and deploying containerized microservices. Other guides worth reading include [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](https://aka.ms/WebAppEbook), [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://aka.ms/dockerlifecycleebook), and [Microsoft Platform and Tools for Mobile App Development](https://aka.ms/MobAppDev/StndPDF).
 
 ### Who should use this guide
 

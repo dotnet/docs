@@ -78,7 +78,7 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For information about what is preinstalled in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it's possible to run .NET CLI commands from the GitHub Action workflows, for a more fully functioning .NET-based GitHub Action, we recommend that you containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
+The virtual environment where the GitHub Action is hosted may or may not have .NET installed. For information about what is preinstalled in the target environment, see [GitHub Actions Virtual Environments](https://github.com/actions/virtual-environments). While it's possible to run .NET CLI commands from the GitHub Actions workflows, for a more fully functioning .NET-based GitHub Action, we recommend that you containerize the app. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
@@ -107,7 +107,7 @@ The preceding *Dockerfile* steps include:
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
 
 > [!CAUTION]
-> If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Action when a new minor revision is released.
+> If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Actions when a new minor revision is released.
 
 ## Define action inputs and outputs
 
@@ -188,11 +188,11 @@ The hierarchy progresses from:
 
 The workflow specifies that `on` a `push` to the `main` branch, the action is triggered to run. When it runs, the **Actions** tab in GitHub will report the live log stream of its execution. Here is an example log from the `.NET code metrics` run:
 
-:::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Action log":::
+:::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Actions log":::
 
 ## Performance improvements
 
-If you followed along the sample, you might have noticed that every time this action is used, it will do a **docker build** for that image. So, every trigger is faced with some time to build the container before running it. Before releasing your GitHub Action to the marketplace, you should:
+If you followed along the sample, you might have noticed that every time this action is used, it will do a **docker build** for that image. So, every trigger is faced with some time to build the container before running it. Before releasing your GitHub Actions to the marketplace, you should:
 
 1. (automatically) Build the Docker image
 2. Push the docker image to the GitHub Container Registry (or any other public container registry)
@@ -223,4 +223,4 @@ For more information, see [GitHub Docs: Working with the Container registry](htt
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [.NET GitHub Action sample code](/samples/dotnet/samples/create-dotnet-github-action)
+> [.NET GitHub Actions sample code](/samples/dotnet/samples/create-dotnet-github-action)

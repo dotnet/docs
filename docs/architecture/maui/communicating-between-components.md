@@ -32,7 +32,7 @@ The eShopOnContainers mobile app uses the `MessagingCenter` class to communicate
 In the eShopOnContainers mobile app, `MessagingCenter` is used to update in the UI in response to an action occurring in another class. Therefore, messages are published on the UI thread, with subscribers receiving the message on the same thread.
 
 > [!TIP]
-> Optional information to help a user be more successfulMarshal to the UI thread when performing UI updates
+> Marshal to the UI or main thread when performing UI updates. If updates to user interfaces are not made on this thread, it can cause the application to crash or become unstable.
 
 If a message that's sent from a background thread is required to update the UI, process the message on the UI thread in the subscriber by invoking the `MainThread.BeginInvokeOnMainThread` method.
 
@@ -80,7 +80,7 @@ Subscribers can register to receive a message using one of the `MessagingCenter.
 MessagingCenter.Subscribe<CatalogViewModel>(
     this,
     MessengerKeys.AddProduct,
-    (sender) =>
+    _ =>
     {
         MainThread.BeginInvokeOnMainThread(
             async () =>
@@ -91,7 +91,7 @@ MessagingCenter.Subscribe<CatalogViewModel>(
     });
 ```
 
-In this example, the Subscribe method subscribes to the `AddProduct` message, and executes a callback delegate in response to receiving the message. This callback delegate, specified as a lambda expression, executes code that updates the UI.
+In the preceding example, the Subscribe method subscribes to the `AddProduct` message, and executes a callback delegate in response to receiving the message. This callback delegate, specified as a lambda expression, executes code that updates the UI.
 
 If payload data is supplied, don't attempt to modify the payload data from within a callback delegate because several threads could be accessing the received data simultaneously. In this scenario, the payload data should be immutable to avoid concurrency errors.
 
@@ -102,7 +102,8 @@ A subscriber might not need to handle every instance of a published message, and
 Subscribers can unsubscribe from messages they no longer want to receive. This is achieved with one of the `MessagingCenter`.Unsubscribe overloads, as demonstrated in the following code example:
 
 ```csharp
-MessagingCenter.Unsubscribe<CatalogViewModel>(this, MessengerKeys.AddProduct);
+MessagingCenter.Unsubscribe<CatalogViewModel>(
+    this, MessengerKeys.AddProduct);
 ```
 
 In this example, the Unsubscribe method syntax reflects the type arguments specified when subscribing to receive the AddProduct message.

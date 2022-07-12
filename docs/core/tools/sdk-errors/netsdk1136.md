@@ -10,7 +10,7 @@ f1_keywords:
 ---
 # NETSDK1136: The target framework must be Windows
 
-If `UseWindowsForms` or `UseWPF` is `true`, .NET assumes that your project is a Windows app and so the platform has to be set to Windows. This error can happen if you have a project-to-project reference where one is set to Windows and the other is not. The full error message is similar to the following example:
+If `UseWindowsForms` or `UseWPF` is `true`, .NET assumes that your project is a Windows app, and so the platform has to be set to Windows. This error can happen if you have a project-to-project reference where one is set to Windows and the other is not. The full error message is similar to the following example:
 
 >The target platform must be set to Windows (usually by including `-windows` in the `TargetFramework` property) when using Windows Forms or WPF, or referencing projects or packages that do so.
 

@@ -1,6 +1,6 @@
 ---
-title: "NETSDK1100: The target framework is out of support"
-description: How to resolve the `framework out of support' error message.
+title: "NETSDK1100: Set the `EnableWindowsTargeting` property to true"
+description: Learn about the .NET SDK error message that instructs you to set the EnableWindowsTargeting property to true.
 author: tdykstra
 ms.author: tdykstra
 ms.topic: error-reference
@@ -14,6 +14,16 @@ NETSDK1100 indicates that you're building a project that targets Windows on Linu
 
 > To build a project targeting Windows on this operating system, set the `EnableWindowsTargeting` property to true.
 
-To resolve this error, set the `EnableWindowsTargeting` property to true.
+To resolve this error, set the `EnableWindowsTargeting` property to true. You can set it in the project file or by passing `/p:EnableWindowsTargeting=false` to a .NET CLI command, such as `dotnet build`. Here's an example project file:
 
-By default, we download all targeting packs (and runtime packs for self-contained builds) for the current target framework whether they are needed or not, because they might be brought in by a transitive framework reference. We didn't want to ship the Windows targeting packs with the non-Windows SDK builds, but we also didn't want a vanilla Console or ASP.NET Core app to automatically download these targeting and runtime packs the first time you build. The `EnableWindowsTargeting` property enables them to only be downloaded if you opt in.
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+</Project>
+```
+
+By default, we download all targeting packs (and runtime packs for self-contained builds) for the current target framework whether they're needed or not, because they might be brought in by a transitive framework reference. We didn't want to ship the Windows targeting packs with the non-Windows SDK builds, but we also didn't want a vanilla Console or ASP.NET Core app to automatically download these targeting and runtime packs the first time you build. The `EnableWindowsTargeting` property enables them to only be downloaded if you opt in.

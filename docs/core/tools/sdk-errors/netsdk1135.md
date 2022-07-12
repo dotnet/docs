@@ -1,6 +1,6 @@
 ---
 title: "NETSDK1135: SupportedOSPlatformVersion can't be higher than TargetPlatformVersion"
-description: How to resolve the `SupportedOSPlatformVersion can't be higher than TargetPlatformVersion' error message.
+description: How to resolve the `SupportedOSPlatformVersion can't be higher than TargetPlatformVersion' error.
 author: tdykstra
 ms.author: tdykstra
 ms.topic: error-reference
@@ -14,4 +14,4 @@ The value that your project file specifies for `SupportedOSPlatformVersion` is t
 
 > SupportedOSPlatformVersion `<Version>` cannot be higher than `TargetPlatformVersion` `<Version>`.
 
-Check your project files for `SupportedOSPlatformVersion`. `TargetPlatformVersion` (TPV) is inferred from the `TargetFramework` value. So `net6.0-windows10.0.19041` will set the TPV to be `10.0.19041`. .NET uses `TargetPlatformVersion` to determine which apis are available at compile time.
+Check your project files for `SupportedOSPlatformVersion`. `TargetPlatformVersion` (TPV) is inferred from the `TargetFramework` value. For example, `net6.0-windows10.0.19041` will set the TPV to be `10.0.19041`. .NET uses `TargetPlatformVersion` to determine which apis are available at compile time.

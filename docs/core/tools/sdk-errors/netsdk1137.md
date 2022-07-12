@@ -14,4 +14,4 @@ NETSDK1137 indicates that your project specifies an outdated project SDK. The fu
 
 > It is no longer necessary to use the Microsoft.NET.Sdk.WindowsDesktop SDK. Consider changing the Sdk attribute of the root Project element to 'Microsoft.NET.Sdk'.
 
-To resolve this error, modify your project file to have `<Project Sdk="Microsoft.NET.Sdk">` instead of the `WindowsDesktop` SDK. This was changed in 5.0.
+To resolve this error, modify your project file to have `<Project Sdk="Microsoft.NET.Sdk">` instead of the `WindowsDesktop` SDK.

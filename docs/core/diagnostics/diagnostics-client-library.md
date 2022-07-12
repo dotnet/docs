@@ -10,7 +10,7 @@ ms.author: tommcdon
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions for target apps, .NET Standard 2.0 to use the library.
 
-Microsoft.Diagnostics.NETCore.Client (also known as the Diagnostics client library) is a managed library that lets you interact with .NET Core runtime (CoreCLR) for various diagnostics related tasks, such as tracing via [EventPipe](eventpipe.md), requesting a dump, or attaching an ICorProfiler. This library is the backing library behind many diagnostics tools such as [`dotnet-counters`](dotnet-counters.md), [`dotnet-trace`](dotnet-trace.md), [`dotnet-gcdump`](dotnet-gcdump.md), and [`dotnet-dump`](dotnet-dump.md). Using this library, you can write your own diagnostics tools customized for your particular scenario.
+`Microsoft.Diagnostics.NETCore.Client` (also known as the Diagnostics client library) is a managed library that lets you interact with .NET Core runtime (CoreCLR) for various diagnostics related tasks, such as tracing via [EventPipe](eventpipe.md), requesting a dump, or attaching an `ICorProfiler`. This library is the backing library behind many diagnostics tools such as [dotnet-counters](dotnet-counters.md), [dotnet-trace](dotnet-trace.md), [dotnet-gcdump](dotnet-gcdump.md), [dotnet-dump](dotnet-dump.md), and [dotnet-monitor](dotnet-monitor.md). Using this library, you can write your own diagnostics tools customized for your particular scenario.
 
 You can acquire [Microsoft.Diagnostics.NETCore.Client](https://www.nuget.org/packages/Microsoft.Diagnostics.NETCore.Client/) by adding a `PackageReference` to your project. The package is hosted on `NuGet.org`.
 

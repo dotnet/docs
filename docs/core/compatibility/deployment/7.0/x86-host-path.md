@@ -27,7 +27,7 @@ Going forward, the x86 host location is only added to the `PATH` environment var
 
 Currently, the x86 host location is added to `PATH`, even on x64/Arm64 systems. Depending on which .NET architecture installer is run first, a user's machine could have either the native (x64/Arm64) or the x86 host as the first location in the `PATH` list. This ambiguity causes problems with the initial .NET installation and during .NET servicing events. Any of these installation scenarios can modify the order of .NET hosts in `PATH`, making it non-deterministic. There's a high chance of behavior regression of the .NET runtime.
 
-This change streamlines the `dotnet` host experience on Windows 64-bit systems. Only 64-bit hosts will be available in the system's `PATH` environment variable: the x64 host on x64 systems and the Arm64 host on Arm64 systems. We removed the ambiguity in the of order of `dotnet` hosts in `PATH`, and only one host will be present.
+This change streamlines the `dotnet` host experience on Windows 64-bit systems. Only 64-bit hosts will be available in the system's `PATH` environment variable: the x64 host on x64 systems and the Arm64 host on Arm64 systems. We removed the ambiguity in the order of `dotnet` hosts in `PATH`, and only one host will be present.
 
 ## Recommended action
 

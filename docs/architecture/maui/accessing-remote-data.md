@@ -48,7 +48,7 @@ The image below shows the interaction of classes that read catalog data from the
 When the `CatalogView` is navigated to, the `OnInitialize` method in the CatalogViewModel class is called. This method retrieves catalog data from the catalog microservice, as demonstrated in the following code example:
 
 ```csharp
-public override async Task InitializeAsync(object navigationData)
+public override async Task InitializeAsync()
 {
     Products = await _productsService.GetCatalogAsync();
 } 
@@ -63,7 +63,7 @@ public async Task<ObservableCollection<CatalogItem>> GetCatalogAsync()
     builder.Path = "api/v1/catalog/items";
     string uri = builder.ToString();
 
-    CatalogRoot catalog = await _requestProvider.GetAsync<CatalogRoot>(uri);
+    CatalogRoot? catalog = await _requestProvider.GetAsync<CatalogRoot>(uri);
 
     return catalog?.Data;          
 } 
@@ -76,60 +76,68 @@ The following code example shows the `GetAsync` method in the `RequestProvider` 
 ```csharp
 public async Task<TResult> GetAsync<TResult>(string uri, string token = "")
 {
-    HttpClient httpClient = CreateHttpClient(token);
-    HttpResponseMessage response = await httpClient.GetAsync(uri);
+    HttpClient httpClient = GetOrCreateHttpClient(token);
+    HttpResponseMessage response = await httpClient.GetAsync(uri).ConfigureAwait(false);
 
-    await HandleResponse(response);
-    string serialized = await response.Content.ReadAsStringAsync();
+    await HandleResponse(response).ConfigureAwait(false);
+    string serialized = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-    TResult result = await Task.Run(() => 
-        JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings));
+    TResult result = JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings);
 
     return result;
 }
 ```
 
-This method calls the `CreateHttpClient` method, which returns an instance of the `HttpClient` class with the appropriate headers set. It then submits an asynchronous `GET` request to the resource identified by the URI, with the response being stored in the `HttpResponseMessage` instance. The `HandleResponse` method is then invoked, which throws an exception if the response doesn't include a success HTTP status code. Then the response is read as a string, converted from JSON to a `CatalogRoot` object, and returned to the `CatalogService`.
+This method calls the `GetOrCreateHttpClient` method, which returns an instance of the `HttpClient` class with the appropriate headers set. It then submits an asynchronous `GET` request to the resource identified by the URI, with the response being stored in the `HttpResponseMessage` instance. The `HandleResponse` method is then invoked, which throws an exception if the response doesn't include a success HTTP status code. Then the response is read as a string, converted from JSON to a `CatalogRoot` object, and returned to the `CatalogService`.
 
-The `CreateHttpClient` method is shown in the following code example:
+The `GetOrCreateHttpClient` method is shown in the following code example:
 
 ```csharp
-private HttpClient _httpClient;
+private readonly Lazy<HttpClient> _httpClient =
+    new Lazy<HttpClient>(
+        () =>
+        {
+            var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            return httpClient;
+        },
+        LazyThreadSafetyMode.ExecutionAndPublication);
 
-private HttpClient CreateHttpClient(string token = "")
-{
-    if(_httpClient == null)
+private HttpClient GetOrCreateHttpClient(string token = "")
     {
-        _httpClient = new HttpClient();
-        _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-    }
+        var httpClient = _httpClient.Value;
 
-    if (!string.IsNullOrEmpty(token))
-    {
-        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-    }
+        if (!string.IsNullOrEmpty(token))
+        {
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        }
+        else
+        {
+            httpClient.DefaultRequestHeaders.Authorization = null;
+        }
 
-    return _httpClient;
-}
+        return httpClient;
+    }
 ```
 
-This method uses creates a new instance or retrieves a cached instance of the `HttpClient` class, and sets the Accept header of any requests made by the `HttpClient` instance to `application/json`, which indicates that it expects the content of any response to be formatted using JSON. Then, if an access token was passed as an argument to the `CreateHttpClient` method, it's added to the `Authorization` header of any requests made by the `HttpClient` instance, prefixed with the string `Bearer`. For more information about authorization, see [Authorization](authentication-and-authorization.md).
+This method uses creates a new instance or retrieves a cached instance of the `HttpClient` class, and sets the Accept header of any requests made by the `HttpClient` instance to `application/json`, which indicates that it expects the content of any response to be formatted using JSON. Then, if an access token was passed as an argument to the `GetOrCreateHttpClient` method, it's added to the `Authorization` header of any requests made by the `HttpClient` instance, prefixed with the string `Bearer`. For more information about authorization, see [Authorization](authentication-and-authorization.md).
 
 > [!TIP]
-> It is highly recommended to cache and reuse instances of the `HttpClient` for better application performance.
+> It is highly recommended to cache and reuse instances of the `HttpClient` for better application performance. Creating a new `HttpClient` for each operation can lead to issue with socket exhaustion. For more information, see [HttpClient Instancing](/dotnet/api/system.net.http.httpclient#instancing) on the Microsoft Developer Center.
 
 When the `GetAsync` method in the `RequestProvider` class calls `HttpClient.GetAsync`, the `Items` method in the `CatalogController` class in the `Catalog.API` project is invoked, which is shown in the following code example:
 
 ```csharp
 [HttpGet]
 [Route("[action]")]
-public async Task<IActionResult> Items([FromQuery]int pageSize = 10, [FromQuery]int pageIndex = 0)
+public async Task<IActionResult> Items(
+    [FromQuery]int pageSize = 10, [FromQuery]int pageIndex = 0)
 {
     var totalItems = await _catalogContext.CatalogItems
         .LongCountAsync();
 
     var itemsOnPage = await _catalogContext.CatalogItems
-        .OrderBy(c=>c.Name)
+        .OrderBy(c => c.Name)
         .Skip(pageSize * pageIndex)
         .Take(pageSize)
         .ToListAsync();
@@ -157,7 +165,6 @@ When an item is added to the shopping basket, the `ReCalculateTotalAsync` method
 ```csharp
 private async Task ReCalculateTotalAsync()
 {
-
     // Omitted for brevity...
 
     await _basketService.UpdateBasketAsync(
@@ -173,7 +180,8 @@ private async Task ReCalculateTotalAsync()
 This method calls the `UpdateBasketAsync` method of the `BasketService` instance that was injected into the `BasketViewModel` by the dependency injection container. The following method shows the `UpdateBasketAsync` method:
 
 ```csharp
-public async Task<CustomerBasket> UpdateBasketAsync(CustomerBasket customerBasket, string token)
+public async Task<CustomerBasket> UpdateBasketAsync(
+    CustomerBasket customerBasket, string token)
 {
     UriBuilder builder = new UriBuilder(GlobalSetting.Instance.BasketEndpoint);
     string uri = builder.ToString();
@@ -190,7 +198,7 @@ The following code example shows one of the `PostAsync` methods in the `RequestP
 public async Task<TResult> PostAsync<TResult>(
     string uri, TResult data, string token = "", string header = "")
 {
-    HttpClient httpClient = CreateHttpClient(token);
+    HttpClient httpClient = GetOrCreateHttpClient(token);
 
     var content = new StringContent(JsonConvert.SerializeObject(data));
     content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
@@ -205,13 +213,13 @@ public async Task<TResult> PostAsync<TResult>(
 }
 ```
 
-This method calls the `CreateHttpClient` method, which returns an instance of the `HttpClient` class with the appropriate headers set. It then submits an asynchronous POST request to the resource identified by the URI, with the serialized basket data being sent in JSON format, and the response being stored in the `HttpResponseMessage` instance. The `HandleResponse` method is then invoked, which throws an exception if the response doesn't include a success HTTP status code. Then, the response is read as a string, converted from JSON to a `CustomerBasket` object, and returned to the BasketService. For more information about the CreateHttpClient method, see [Making a GET request](#making-a-get-request).
+This method calls the `GetOrCreateHttpClient` method, which returns an instance of the `HttpClient` class with the appropriate headers set. It then submits an asynchronous POST request to the resource identified by the URI, with the serialized basket data being sent in JSON format, and the response being stored in the `HttpResponseMessage` instance. The `HandleResponse` method is then invoked, which throws an exception if the response doesn't include a success HTTP status code. Then, the response is read as a string, converted from JSON to a `CustomerBasket` object, and returned to the BasketService. For more information about the `GetOrCreateHttpClient` method, see [Making a GET request](#making-a-get-request).
 
 When the `PostAsync` method in the `RequestProvider` class calls `HttpClient.PostAsync`, the `Post` method in the `BasketController` class in the `Basket.API` project is invoked, which is shown in the following code example:
 
 ```csharp
 [HttpPost]
-public async Task<IActionResult> Post([FromBody]CustomerBasket value)
+public async Task<IActionResult> Post([FromBody] CustomerBasket value)
 {
     var basket = await _repository.UpdateBasketAsync(value);
     return Ok(basket);
@@ -233,7 +241,8 @@ private async Task CheckoutAsync()
 {
     // Omitted for brevity...
 
-    await _basketService.ClearBasketAsync(_shippingAddress.Id.ToString(), authToken);
+    await _basketService.ClearBasketAsync(
+        _shippingAddress.Id.ToString(), authToken);
 }
 ```
 
@@ -242,7 +251,7 @@ This method calls the `ClearBasketAsync` method of the `BasketService` instance 
 ```csharp
 public async Task ClearBasketAsync(string guidUser, string token)
 {
-    UriBuilder builder = new UriBuilder(GlobalSetting.Instance.BasketEndpoint);
+    UriBuilder builder = new(GlobalSetting.Instance.BasketEndpoint);
     builder.Path = guidUser;
     string uri = builder.ToString();
     await _requestProvider.DeleteAsync(uri, token).ConfigureAwait(false);
@@ -256,21 +265,19 @@ The following code example shows the `DeleteAsync` method in the `RequestProvide
 ```csharp
 public async Task DeleteAsync(string uri, string token = "")
 {
-    HttpClient httpClient = CreateHttpClient(token);
-    await httpClient.DeleteAsync(uri);
+    HttpClient httpClient = GetOrCreateHttpClient(token);
+    await httpClient.DeleteAsync(uri).ConfigureAwait(false);
 }
 ```
 
-This method calls the `CreateHttpClient` method, which returns an instance of the `HttpClient` class with the appropriate headers set. It then submits an asynchronous `DELETE` request to the resource identified by the URI. For more information about the CreateHttpClient method, see [Making a GET request](#making-a-get-request).
+This method calls the `GetOrCreateHttpClient` method, which returns an instance of the `HttpClient` class with the appropriate headers set. It then submits an asynchronous `DELETE` request to the resource identified by the URI. For more information about the `GetOrCreateHttpClient` method, see [Making a GET request](#making-a-get-request).
 
 When the `DeleteAsync` method in the `RequestProvider` class calls `HttpClient.DeleteAsync`, the `Delete` method in the `BasketController` class in the `Basket.API` project is invoked, which is shown in the following code example:
 
 ```csharp
 [HttpDelete("{id}")]
-public void Delete(string id)
-{
+public void Delete(string id) =>
     _repository.DeleteBasketAsync(id);
-}
 ```
 
 This method uses an instance of the `RedisBasketRepository` class to delete the basket data from the Redis cache.
@@ -282,7 +289,7 @@ The performance of an app can be improved by caching frequently accessed data to
 The most common form of caching is read-through caching, where an app retrieves data by referencing the cache. If the data isn't in the cache, it's retrieved from the data store and added to the cache. Apps can implement read-through caching with the cache-aside pattern. This pattern determines whether the item is currently in the cache. If the item isn't in the cache, it's read from the data store and added to the cache. For more information, see the [Cache-Aside](/azure/architecture/patterns/cache-aside) pattern on Microsoft Docs.
 
 > [!TIP]
-> Cache data that's read frequently and that changes infrequently
+> Cache data that's read frequently and changes infrequently.
 
 This data can be added to the cache on demand the first time it is retrieved by an app. This means that the app needs to fetch the data only once from the data store, and that subsequent access can be satisfied by using the cache.
 
@@ -294,7 +301,7 @@ Distributed applications, such as the eShopOnContainers reference application, s
 The eShopOnContainers mobile app uses a private cache, where data is held locally on the device that's running an instance of the app. For information about the cache used by the eShopOnContainers reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 > [!TIP]
-> Think of the cache as a transient data store that could disappear at any time
+> Think of the cache as a transient data store that could disappear at any time.
 
 Ensure that data is maintained in the original data store as well as the cache. The chances of losing data are then minimized if the cache becomes unavailable.
 
@@ -303,7 +310,7 @@ Ensure that data is maintained in the original data store as well as the cache. 
 It's impractical to expect that cached data will always be consistent with the original data. Data in the original data store might change after it's been cached, causing the cached data to become stale. Therefore, apps should implement a strategy that helps to ensure that the data in the cache is as up-to-date as possible, but can also detect and handle situations that arise when the data in the cache has become stale. Most caching mechanisms enable the cache to be configured to expire data, and hence reduce the period for which data might be out of date.
 
 > [!TIP]
-> Set a default expiration time when configuring a cache
+> Set a default expiration time when configuring a cache.
 
 Many caches implement expiration, which invalidates data and removes it from the cache if it's not accessed for a specified period. However, care must be taken when choosing the expiration period. If it's made too short, data will expire too quickly and the benefits of caching will be reduced. If it's made too long, the data risks becoming stale. Therefore, the expiration time should match the pattern of access for apps that use the data.
 
@@ -343,7 +350,7 @@ The retry strategy should be tuned to match the business requirements of the app
 If a request still fails after a number of retries, it's better for the app to prevent further requests going to the same resource and to report a failure. Then, after a set period, the app can make one or more requests to the resource to see if they're successful. For more information, see [Circuit breaker pattern](#circuit-breaker-pattern).
 
 > [!TIP]
-> Never implement an endless retry mechanism
+> Never implement an endless retry mechanism. Instead, prefer an exponential backoff.
 
 Use a finite number of retries, or implement the [Circuit Breaker](/azure/architecture/patterns/circuit-breaker) pattern to allow a service to recover.
 
@@ -365,7 +372,7 @@ A circuit breaker acts as a proxy for operations that might fail. The proxy shou
 The eShopOnContainers mobile app does not currently implement the circuit breaker pattern. However, the eShopOnContainers does. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 > [!TIP]
-> Combine the retry and circuit breaker patterns
+> Combine the retry and circuit breaker patterns.
 
 An app can combine the retry and circuit breaker patterns by using the retry pattern to invoke an operation through a circuit breaker. However, the retry logic should be sensitive to any exceptions returned by the circuit breaker and abandon retry attempts if the circuit breaker indicates that a fault is not transient.
 

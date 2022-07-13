@@ -156,19 +156,19 @@ To use a manual setup script in Azure DevOps Services, create a new build defini
 
 1. Start by creating a new build definition. Once you reach the screen that provides you an option to define what kind of a build you wish to create, select the **Empty** option.
 
-   ![Selecting an empty build definition](./media/using-ci-with-cli/select-empty-build-definition.png)
+   ![Selecting an empty build definition](./media/dotnet-cli-and-ci/select-empty-build-definition.png)
 
 1. After configuring the repository to build, you're directed to the build definitions. Select **Add build step**:
 
-   ![Adding a build step](./media/using-ci-with-cli/add-build-step.png)
+   ![Adding a build step](./media/dotnet-cli-and-ci/add-build-step.png)
 
 1. You're presented with the **Task catalog**. The catalog contains tasks that you use in the build. Since you have a script, select the **Add** button for **PowerShell: Run a PowerShell script**.
 
-   ![Adding a PowerShell script step](./media/using-ci-with-cli/add-powershell-script.png)
+   ![Adding a PowerShell script step](./media/dotnet-cli-and-ci/add-powershell-script.png)
 
 1. Configure the build step. Add the script from the repository that you're building:
 
-   ![Specifying the PowerShell script to run](./media/using-ci-with-cli/powershell-script-path.png)
+   ![Specifying the PowerShell script to run](./media/dotnet-cli-and-ci/powershell-script-path.png)
 
 ## Orchestrating the build
 

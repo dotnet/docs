@@ -122,6 +122,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
+        [`field`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification)  
         [`from`](from-clause.md)  
     :::column-end:::
     :::column:::
@@ -133,6 +134,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`join`](join-clause.md)  
         [`let`](let-clause.md)  
         [`managed` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
+        [`method`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification)  
         [`nameof`](../operators/nameof.md)  
         [`nint`](../builtin-types/integral-numeric-types.md)  
         [`not`](../operators/patterns.md#logical-patterns)  
@@ -143,14 +145,18 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`on`](on.md)  
         [`or`](../operators/patterns.md#logical-patterns)  
         [`orderby`](orderby-clause.md)  
+        [`param`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification)  
         [`partial` (type)](partial-type.md)  
         [`partial` (method)](partial-method.md)  
+        [`property`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification)  
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`select`](select-clause.md)  
     :::column-end:::
     :::column:::
         [`set`](set.md)  
+        [`type`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification)  
+        [`typevar`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes#213-attribute-specification)  
         [`unmanaged` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`unmanaged` (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)  
         [`value`](value.md)  

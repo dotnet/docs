@@ -7,7 +7,7 @@ IConfiguration config = new ConfigurationBuilder()
     .Build();
 
 // Get values from the config given their key and their target type.
-Settings settings = config.GetRequiredSection("Settings").Get<Settings>();
+Settings settings => config.GetRequiredSection("Settings").Get<Settings>();
 
 // Write the values to the console.
 Console.WriteLine($"KeyOne = {settings.KeyOne}");

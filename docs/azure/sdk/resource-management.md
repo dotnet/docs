@@ -35,7 +35,7 @@ For example:
 ```PowerShell
 Install-Package Azure.ResourceManager
 Install-Package Azure.ResourceManager.Resources
-Install-Package Azure.ResourceManage
+Install-Package Azure.ResourceManager.Compute
 Install-Package Azure.ResourceManager.Network
 ```
 

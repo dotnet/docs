@@ -182,7 +182,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   dotnet dev-certs https -ep ./certificate.crt --trust --format PEM
   ```
 
-- Create a certificate, trust it, and export it to a PEM file:
+- Create a certificate, trust it, and export it to a PEM file including the private key:
 
   ```dotnetcli
   dotnet dev-certs https -ep ./certificate.crt -p $CREDENTIAL_PLACEHOLDER$ --trust --format PEM

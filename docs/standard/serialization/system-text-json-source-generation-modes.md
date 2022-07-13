@@ -71,7 +71,7 @@ The performance improvements provided by source generation can be substantial. F
 
 ## Source generation - known issues
 
-Reflection mode supports the use of non-public accessors of public properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter. Source generation mode supports only public or internal accessors of public properties. Use of `[JsonInclude]` on non-public accessors in source generation mode results in a `NotSupportedException` at run time.
+Reflection mode supports the use of non-public accessors of public properties. For example, you can't apply [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter. Source generation mode supports only public or internal accessors of public properties. Use of `[JsonInclude]` on non-public accessors in source generation mode results in a `NotSupportedException` at run time.
 
 Reflection mode also supports deserialization to init-only properties. Source generation doesn't support this, because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer uses run-time reflection to set properties after construction.
 

@@ -33,10 +33,10 @@ For example:
 # [PowerShell](#tab/PowerShell)
 
 ```PowerShell
-Install-Package Azure.ResourceManager -Version 1.0.0
-Install-Package Azure.ResourceManager.Resources -Version 1.0.0
-Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.8
-Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.7
+Install-Package Azure.ResourceManager -Version 1.2.0
+Install-Package Azure.ResourceManager.Resources -Version 1.2.0
+Install-Package Azure.ResourceManager.Compute -Version 1.0.0
+Install-Package Azure.ResourceManager.Network -Version 1.0.0
 ```
 
 # [.NET CLI](#tab/dotnetcli)
@@ -44,8 +44,8 @@ Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.7
 ```dotnetcli
 dotnet add package Azure.ResourceManager
 dotnet add package Azure.ResourceManager.Resources
-dotnet add package Azure.ResourceManager.Compute  --prerelease
-dotnet add package Azure.ResourceManager.Network --prerelease
+dotnet add package Azure.ResourceManager.Compute
+dotnet add package Azure.ResourceManager.Network
 ```
 
 ---

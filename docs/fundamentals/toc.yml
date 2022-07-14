@@ -377,8 +377,6 @@ items:
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion
       href: ../core/tools/enable-tab-autocomplete.md
-    - name: Continuous integration with the CLI
-      href: ../core/tools/using-ci-with-cli.md
     - name: Develop libraries with the CLI
       href: ../core/tutorials/libraries.md
     - name: Create templates for the CLI
@@ -1985,6 +1983,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: .NET CLI and Continuous Integration
+    href: ../devops/dotnet-cli-and-continuous-integration.md
   - name: Official .NET GitHub Actions
     href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials

@@ -346,3 +346,7 @@ Be sure to clean up the self-signed certificates once done testing.
 ```powershell
 Get-ChildItem $certFilePath | Remove-Item
 ```
+
+## See also
+
+- [dotnet dev-certs](../tools/dotnet-dev-certs.md)

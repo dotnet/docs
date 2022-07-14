@@ -1,12 +1,12 @@
 ---
-title: Use the .NET SDK with Continuous Integration (CI)
+title: Use the .NET SDK in Continuous Integration (CI) environments
 description: Learn how to use the .NET SDK and its tools on the build server with continuous integration.
 ms.date: 07/13/2022
 ---
 
-# Use the .NET SDK with Continuous Integration (CI)
+# Use the .NET SDK in Continuous Integration (CI) environments
 
-This document outlines using the .NET SDK and its tools on a build server. The .NET toolset works both interactively, where a developer types commands at a command prompt, or automatically, where a Continuous Integration (CI) server runs a build script. The commands, options, inputs, and outputs are the same, and the only things you supply are a way to acquire the tooling and a system to build your app. This document focuses on scenarios of tool acquisition for CI with recommendations on how to design and structure your build scripts.
+This article outlines how to use the .NET SDK and its tools on a build server. The .NET toolset works both interactively, where a developer types commands at a command prompt, and automatically, where a Continuous Integration (CI) server runs a build script. The commands, options, inputs, and outputs are the same, and the only things you supply are a way to acquire the tooling and a system to build your app. This article focuses on scenarios of tool acquisition for CI with recommendations on how to design and structure your build scripts.
 
 ## Installation options for CI build servers
 

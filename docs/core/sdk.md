@@ -29,7 +29,7 @@ Install scripts, on the other hand, don't require administrative privileges. How
 prerequisites on the machine; you need to install all of the prerequisites manually. The scripts are meant mostly for
 setting up build servers or when you wish to install the tools without admin privileges (do note the prerequisites
 caveat above). You can find more information in the [install script reference](tools/dotnet-install-script.md) article. If you're
-interested in how to set up the SDK on your CI build server, see the [Use the .NET SDK in Continuous Integration (CI) environments](../devops/dotnet-cli-and-continuous-integration.md) article.
+interested in how to set up the SDK on your CI build server, see [Use the .NET SDK in Continuous Integration (CI) environments](../devops/dotnet-cli-and-continuous-integration.md).
 
 By default, the SDK installs in a "side-by-side" (SxS) manner, which means multiple versions
 can coexist at any given time on a single machine. For information about how the version gets picked when you're running CLI commands, see [Select the .NET version to use](versions/selection.md).

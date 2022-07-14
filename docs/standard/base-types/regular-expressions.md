@@ -2,7 +2,7 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: conceptual
-ms.date: "07/07/2022"
+ms.date: "07/14/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -66,11 +66,11 @@ The <xref:System.String> class includes many string search and replacement metho
 [!INCLUDE [regex](../../../includes/regex.md)]
 
 > [!TIP]
-> The <xref:System.Web.RegularExpressions> namespace contains a number of regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.
+> The <xref:System.Web.RegularExpressions> namespace contains a number of regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string, and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.
 
 ### Example 1: Replace substrings  
 
- Assume that a mailing list contains names that sometimes include a title (Mr., Mrs., Miss, or Ms.) along with a first and last name. If you don't want to include the titles when you generate envelope labels from the list, you can use a regular expression to remove the titles, as the following example illustrates:
+ Assume that a mailing list contains names that sometimes include a title (Mr., Mrs., Miss, or Ms.) along with a first and last name. Suppose you don't want to include the titles when you generate envelope labels from the list. In that case, you can use a regular expression to remove the titles, as the following example illustrates:
   
  [!code-csharp[Conceptual.Regex#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example1.cs#2)]
  [!code-vb[Conceptual.Regex#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example1.vb#2)]  
@@ -113,15 +113,15 @@ The <xref:System.String> class includes many string search and replacement metho
 > |-|-|  
 > |`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string. To ensure that the current culture's currency symbol isn't misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  
 > |`\s*`|Look for zero or more occurrences of a white-space character.|  
-> |`[-+]?`|Look for zero or one occurrence of either a positive sign or a negative sign.|  
-> |`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The first element in the collection represents the entire match.|  
+> |`[-+]?`|Look for zero or one occurrence of either a positive or a negative sign.|  
+> |`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses define this expression as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The first element in the collection represents the entire match.|  
 > |`[0-9]{0,3}`|Look for zero to three occurrences of the decimal digits 0 through 9.|  
 > |`(,[0-9]{3})*`|Look for zero or more occurrences of a group separator followed by three decimal digits.|  
 > |`\.`|Look for a single occurrence of the decimal separator.|  
 > |`[0-9]+`|Look for one or more decimal digits.|  
 > |`(\.[0-9]+)?`|Look for zero or one occurrence of the decimal separator followed by at least one decimal digit.|  
   
- If each of the subpatterns is found in the input string, the match succeeds, and a <xref:System.Text.RegularExpressions.Match> object that contains information about the match is added to the <xref:System.Text.RegularExpressions.MatchCollection> object.  
+ If each subpattern is found in the input string, the match succeeds, and a <xref:System.Text.RegularExpressions.Match> object that contains information about the match is added to the <xref:System.Text.RegularExpressions.MatchCollection> object.  
   
 ## Related sections  
   

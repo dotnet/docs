@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for exceptions - .NET"
 description: Learn best practices for exceptions, such as using try/catch/finally, handling common conditions without exceptions, and using predefined .NET exception types.
-ms.date: "07/07/2022"
+ms.date: "07/14/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -18,7 +18,7 @@ A well-designed app handles exceptions and errors to prevent app crashes. This s
 
 ## Use try/catch/finally blocks to recover from errors or release resources
 
-Use `try`/`catch` blocks around code that can potentially generate an exception ***and*** your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from <xref:System.Exception>. More derived exceptions aren't handled by a catch clause that's preceded by a catch clause for a base exception class. When your code can't recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
+Use `try`/`catch` blocks around code that can potentially generate an exception, and your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from the <xref:System.Exception> class. More derived exceptions aren't handled by a catch clause that's preceded by a catch clause for a base exception class. When your code can't recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
 
 Clean up resources are allocated with either `using` statements or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` clause is almost always executed even when exceptions are thrown.
 
@@ -30,7 +30,7 @@ For conditions that are likely to occur but might trigger an exception, consider
 [!code-csharp[Conceptual.Exception.Handling#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#2)]
 [!code-vb[Conceptual.Exception.Handling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#2)]
 
-If you don't check connection state before closing, you can catch the `InvalidOperationException` exception.
+If you don't check the connection state before closing, you can catch the `InvalidOperationException` exception.
 
 [!code-cpp[Conceptual.Exception.Handling#3](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#3)]
 [!code-csharp[Conceptual.Exception.Handling#3](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#3)]
@@ -50,13 +50,13 @@ A class can provide methods or properties that enable you to avoid making a call
 [!code-csharp[Conceptual.Exception.Handling#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]
 [!code-vb[Conceptual.Exception.Handling#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#5)]
 
-Another way to avoid exceptions is to return null (or default) for most common error cases instead of throwing an exception. A common error case can be considered normal flow of control. By returning null (or default) in these cases, you minimize the performance impact to an app.
+Another way to avoid exceptions is to return null (or default) for most common error cases instead of throwing an exception. A common error case can be considered a normal flow of control. By returning null (or default) in these cases, you minimize the performance impact to an app.
 
-For value types, whether to use `Nullable<T>` or default as your error indicator is something to consider for your particular app. By using `Nullable<Guid>`, `default` becomes `null` instead of `Guid.Empty`. Some times, adding `Nullable<T>` can make it clearer when a value is present or absent. Other times, adding `Nullable<T>` can create extra cases to check that aren't necessary, and only serve to create potential sources of errors.
+For value types, using `Nullable<T>` or default as your error indicator is something to consider for your app. By using `Nullable<Guid>`, `default` becomes `null` instead of `Guid.Empty`. Sometimes, adding `Nullable<T>` can make it clearer when a value is present or absent. Other times, adding `Nullable<T>` can create extra cases to check that aren't necessary and only serve to create potential sources of errors.
 
 ## Throw exceptions instead of returning an error code
 
-Exceptions ensure that failures don't go unnoticed because calling code didn't check a return code.
+Exceptions ensure that failures don't go unnoticed because the calling code didn't check a return code.
 
 ## Use the predefined .NET exception types
 
@@ -102,7 +102,7 @@ Write clear sentences and include ending punctuation. Each sentence in the strin
 
 ## Include a localized string message in every exception
 
-The error message that the user sees is derived from the <xref:System.Exception.Message?displayProperty=nameWithType> property of the exception that was thrown, and not from the name of the exception class. Typically, you assign a value to the <xref:System.Exception.Message?displayProperty=nameWithType> property by passing the message string to the `message` argument of an [Exception constructor](xref:System.Exception.%23ctor%2A).
+The error message the user sees is derived from the <xref:System.Exception.Message?displayProperty=nameWithType> property of the exception that was thrown, and not from the name of the exception class. Typically, you assign a value to the <xref:System.Exception.Message?displayProperty=nameWithType> property by passing the message string to the `message` argument of an [Exception constructor](xref:System.Exception.%23ctor%2A).
 
 For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see the following articles:
 
@@ -149,7 +149,7 @@ Public Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
 End Sub
 ```
 
-The preceding method doesn't directly throw any exceptions. However, the method must be written defensively so that if the deposit operation fails, the withdrawal is reversed.
+The preceding method doesn't directly throw any exceptions. However, you must write the method defensively so that the withdrawal is reversed if the deposit operation fails.
 
 One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.
 
@@ -181,7 +181,7 @@ Private Shared Sub TransferFunds(from As Account, [to] As Account, amount As Dec
 End Sub
 ```
 
-This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception.
+This example illustrates the use of `throw` to re-throw the original exception, making it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception.
 
 ```csharp
 catch (Exception ex)

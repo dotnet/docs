@@ -1,7 +1,7 @@
 ---
 title: Write a simple parallel program using Parallel.ForEach
 description: In this article, learn how to enable data parallelism in .NET. Write a Parallel.ForEach loop over any IEnumerable or IEnumerable<T> data source.
-ms.date: 07/07/2022
+ms.date: 07/14/2022
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -20,7 +20,7 @@ This article shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A
 
 ## Example
 
-This example demonstrates <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> for CPU intensive operations. When you run the example, it randomly generates 2 million numbers and tries to filter to prime numbers. The first case iterates over the collection via a `for` loop. The second case iterates over the collection via <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. The resulting time taken by each iteration is displayed when the application is finished.
+This example demonstrates <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> for CPU-intensive operations. When you run the example, it randomly generates 2 million numbers and tries to filter to prime numbers. The first case iterates over the collection via a `for` loop. The second case iterates over the collection via <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. The resulting time taken by each iteration is displayed when the application is finished.
 
 [!code-csharp[TPL_Parallel#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/simpleforeach.cs#03)]
 [!code-vb[TPL_Parallel#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/simpleforeach.vb#03)]
@@ -29,12 +29,12 @@ A <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>
 
 For more information about parallel loops, see [How to: Write a simple Parallel.For loop](how-to-write-a-simple-parallel-for-loop.md).
 
-To use <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> with a non-generic collection, you can use the <xref:System.Linq.Enumerable.Cast%2A?displayProperty=nameWithType> extension method to convert the collection to a generic collection, as shown in the following example:
+To use the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop with a non-generic collection, you can use the <xref:System.Linq.Enumerable.Cast%2A?displayProperty=nameWithType> extension method to convert the collection to a generic collection, as shown in the following example:
 
 [!code-csharp[TPL_Parallel#07](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/nongeneric.cs#07)]
 [!code-vb[TPL_Parallel#07](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/nongeneric.vb#07)]
 
-You can also use Parallel LINQ (PLINQ) to parallelize processing of <xref:System.Collections.Generic.IEnumerable%601> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](introduction-to-plinq.md).
+You can also use Parallel LINQ (PLINQ) to parallelize the processing of <xref:System.Collections.Generic.IEnumerable%601> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](introduction-to-plinq.md).
 
 ## Compile and run the code
 
@@ -42,7 +42,7 @@ You can compile the code as a console application for .NET Framework or as a con
 
 In Visual Studio, there's Visual Basic and C# console application templates for Windows Desktop and .NET Core.
 
-From the command line, you can either use the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
+From the command line, you can either use the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`) or create the file and use the command-line compiler for a .NET Framework application.
 
 To run a .NET Core console application from the command line, use `dotnet run` from the folder that contains your application.
 

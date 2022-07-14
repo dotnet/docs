@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 07/07/2022
+ms.date: 07/14/2022
 ms.custom: devdivchpfy22
 ms.topic: overview
 ms.author: dapine
@@ -47,7 +47,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 ### Windows Communication Foundation
 
-The original implementation of [Windows Communication Foundation (WCF)](../../framework/wcf/index.md) was only supported on Windows. However, there's a client port available from the .NET Foundation. It's entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
+Only Windows supported the original implementation of the [Windows Communication Foundation (WCF)](../../framework/wcf/index.md). However, there's a client port available from the .NET Foundation. It's entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
 
 - [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex)
 - [System.ServiceModel.Federation](https://www.nuget.org/packages/System.ServiceModel.Federation)
@@ -60,7 +60,7 @@ The server components that complement the aforementioned client libraries are av
 
 ## .NET 5 doesn't replace .NET Standard
 
-New application development can specify the `net5.0` Target Framework Moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
+New application development can specify the `net5.0` Target Framework Moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified: all you need is the `net5.0` TFM.
 
 For .NET 5 apps and libraries, the `net5.0` TFM combines and replaces the `netcoreapp` and `netstandard` TFMs. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [.NET Standard](../../standard/net-standard.md).
 
@@ -68,15 +68,15 @@ For .NET 5 apps and libraries, the `net5.0` TFM combines and replaces the `netco
 
 Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9, which brings many new features to the language. Here are a few highlights:
 
-- Records: Reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
-- Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
-- Top-level statements: As a means for accelerating adoption and learning of C#, the `Main` method can be omitted and application as simple as the following code is valid:
+- **Records**: Reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
+- **Relational pattern matching**: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
+- **Top-level statements**: As a means for accelerating the adoption and learning of C#, the `Main` method can be omitted, and application as simple as the following code is valid:
 
    ```csharp
    System.Console.Write("Hello world!");
    ```
 
-- Function pointers: Language constructs that expose the following intermediate language (IL) opcodes: `ldftn` and `calli`.
+- **Function pointers**: Language constructs that expose the following intermediate language (IL) opcodes: `ldftn` and `calli`.
 
 For more information on the available C# 9 features, see [What's new in C# 9](../../csharp/whats-new/csharp-9.md).
 
@@ -88,7 +88,7 @@ For more information on source generators, see [Introducing C# source generators
 
 ## F# updates
 
-F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. One of the new features is interpolated strings, which is similar to interpolated string in C#, and even JavaScript.
+F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. One of the new features is interpolated strings, similar to interpolated string in C#, and even JavaScript.
 
 ```fsharp
 let name = "David"

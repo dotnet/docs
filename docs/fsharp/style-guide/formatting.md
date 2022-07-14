@@ -1951,4 +1951,4 @@ When applied to a parameter, place attributes on the same line and separate them
 
 ### Acknowledgments
 
-These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
+These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs-old/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).

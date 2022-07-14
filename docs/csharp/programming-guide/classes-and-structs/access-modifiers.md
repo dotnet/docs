@@ -2,7 +2,7 @@
 title: "Access Modifiers - C# Programming Guide"
 description: All types and type members in C# have an accessibility level which controls whether they can be used from other code. Review this list of access modifiers.
 ms.date: 03/08/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
@@ -34,7 +34,7 @@ The following examples demonstrate how to specify access modifiers on a type and
 
 Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of a type member is constrained by the accessibility of its containing type.
 
-## Class, record, and struct accessibility  
+## Class, record, and struct accessibility
 
 Classes, records, and structs declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
 
@@ -44,7 +44,7 @@ Derived classes and derived records can't have greater accessibility than their 
 
 You can enable specific other assemblies to access your internal types by using the `InternalsVisibleToAttribute`. For more information, see [Friend Assemblies](../../../standard/assembly/friend.md).
 
-## Class, record, and struct member accessibility  
+## Class, record, and struct member accessibility
 
 Class and record members (including nested classes, records and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
 
@@ -70,10 +70,11 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
 
+- [Specify modifier order (style rule IDE0036)](../../../fundamentals/code-analysis/style-rules/ide0036.md)
 - [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

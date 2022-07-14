@@ -5,7 +5,7 @@ Option Infer On
 ' <Snippet21>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module Ecma2Example
     Dim pattern As String
 
     Public Sub Main()
@@ -20,8 +20,8 @@ Module Example
     End Sub
 
     Private Sub AnalyzeMatch(m As Match)
-        If m.Success
-            Console.WriteLine("'{0}' matches {1} at position {2}.", _
+        If m.Success Then
+            Console.WriteLine("'{0}' matches {1} at position {2}.",
                               pattern, m.Value, m.Index)
             Dim grpCtr As Integer = 0
             For Each grp As Group In m.Groups

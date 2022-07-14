@@ -2,10 +2,10 @@
 description: "readonly keyword - C# Reference"
 title: "readonly keyword - C# Reference"
 ms.date: 04/14/2020
-f1_keywords: 
+f1_keywords:
   - "readonly_CSharpKeyword"
   - "readonly"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "readonly keyword [C#]"
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 ---
@@ -14,9 +14,9 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 The `readonly` keyword is a modifier that can be used in four contexts:
 
 - In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor.
-  
+
   A `readonly` field can't be assigned after the constructor exits. This rule has different implications for value types and reference types:
-  
+
   - Because value types directly contain their data, a field that is a  `readonly` value type is immutable.
   - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object isn't immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier doesn't prevent the instance data of the field from being modified through the read-only field.
 
@@ -86,6 +86,7 @@ You can also see the language specification proposals:
 
 ## See also
 
+- [Add readonly modifier (style rule IDE0044)](../../../fundamentals/code-analysis/style-rules/ide0044.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

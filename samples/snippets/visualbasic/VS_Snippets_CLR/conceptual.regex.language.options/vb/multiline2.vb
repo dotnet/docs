@@ -5,13 +5,13 @@ Option Strict On
 Imports System.Collections.Generic
 Imports System.Text.RegularExpressions
 
-Module Example
+Module Multiline2Example
     Public Sub Main()
         Dim scores As New SortedList(Of Integer, String)(New DescendingComparer(Of Integer)())
 
-        Dim input As String = "Joe 164" + vbCrLf + _
-                              "Sam 208" + vbCrLf + _
-                              "Allison 211" + vbCrLf + _
+        Dim input As String = "Joe 164" + vbCrLf +
+                              "Sam 208" + vbCrLf +
+                              "Allison 211" + vbCrLf +
                               "Gwen 171" + vbCrLf
         Dim pattern As String = "(?m)^(\w+)\s(\d+)\r*$"
 

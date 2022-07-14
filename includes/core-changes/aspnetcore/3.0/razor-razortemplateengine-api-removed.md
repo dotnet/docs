@@ -1,6 +1,6 @@
 ### Razor: RazorTemplateEngine API removed
 
-The `RazorTemplateEngine` API was removed and replaced with <xref:Microsoft.AspNetCore.Razor.Language.RazorProjectEngine>.
+The `RazorTemplateEngine` API was removed and replaced with `Microsoft.AspNetCore.Razor.Language.RazorProjectEngine`.
 
 For discussion, see GitHub issue [dotnet/aspnetcore#25215](https://github.com/dotnet/aspnetcore/issues/25215).
 

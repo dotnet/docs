@@ -57,7 +57,7 @@ We recommend rebuilding apps and testing them with a newer major runtime version
 
 Servicing updates are treated differently from major releases. An application built to target .NET 6.0.0 will automatically roll-forward to use a newer patch -- like 6.0.1 -- when that servicing update is installed.
 
-## Feature bands (SDK only)
+### Feature bands (SDK only)
 
 Versioning for the .NET SDK works slightly differently from the .NET runtime. To align with new Visual Studio releases, .NET SDK updates sometimes include new features or new versions of components like MSBuild and NuGet.
 

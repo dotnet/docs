@@ -207,7 +207,7 @@ class TypeCollection
 {
     Type[] types;
 
-    // Ensure that only types with ctors are stored in the array
+    // Ensure that only types with preserved constructors are stored in the array
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
     public Type this[int i]
     {
@@ -246,6 +246,27 @@ public Type this[int i]
         Justification = "The list only contains types stored through the annotated setter.")]
     get => types[i];
     set => types[i] = value;
+}
+```
+
+It is important to underline that it is only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It is not sufficient that the member was simply a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that are not visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that will break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
+
+```csharp
+[UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
+    // Invalid justification and suppression: property being non-reflectively
+    // used by the app doesn't guarantee that the property will be available
+    // for reflection. Properties that are not visible targets of reflection
+    // are already optimized away with Native AOT trimming and may be
+    // optimized away for non-native deployment in the future as well.
+    Justification = "Only need to serialize properties that are used by the app.")]
+public string Serialize(object o)
+{
+    StringBuilder sb = new StringBuilder();
+    foreach (var property in o.GetType.GetProperties())
+    {
+        AppendProperty(sb, property, o);
+    }
+    return sb.ToString();
 }
 ```
 

@@ -201,6 +201,8 @@ items:
       href: ../core/tools/telemetry.md
     - name: Error messages
       items:
+      - name: List of all SDK errors
+        href: ../core/tools/sdk-errors/index.md
       - name: NETSDK1004
         href: ../core/tools/sdk-errors/netsdk1004.md
       - name: NETSDK1005 and NETSDK1047
@@ -264,6 +266,8 @@ items:
       href: ../core/tools/dotnet-build-server.md
     - name: dotnet clean
       href: ../core/tools/dotnet-clean.md
+    - name: dotnet dev-certs
+      href: ../core/tools/dotnet-dev-certs.md
     - name: dotnet format
       href: ../core/tools/dotnet-format.md
     - name: dotnet help
@@ -731,6 +735,8 @@ items:
         href: ../core/diagnostics/dotnet-dump.md
       - name: dotnet-gcdump
         href: ../core/diagnostics/dotnet-gcdump.md
+      - name: dotnet-monitor
+        href: ../core/diagnostics/dotnet-monitor.md
       - name: dotnet-trace
         href: ../core/diagnostics/dotnet-trace.md
       - name: dotnet-stack
@@ -1075,6 +1081,8 @@ items:
             href: code-analysis/quality-rules/ca1850.md
           - name: CA1851
             href: code-analysis/quality-rules/ca1851.md
+          - name: CA1854
+            href: code-analysis/quality-rules/ca1854.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1488,6 +1496,12 @@ items:
               href: code-analysis/style-rules/ide0082.md
             - name: IDE0090
               href: code-analysis/style-rules/ide0090.md
+            - name: IDE0180
+              href: code-analysis/style-rules/ide0180.md
+          - name: Namespace declaration preferences
+            items:
+            - name: IDE0160 and IDE0161
+              href: code-analysis/style-rules/ide0160-ide0161.md
           - name: Null-checking preferences
             items:
             - name: Overview
@@ -1502,6 +1516,8 @@ items:
               href: code-analysis/style-rules/ide0031.md
             - name: IDE0041
               href: code-analysis/style-rules/ide0041.md
+            - name: IDE0150
+              href: code-analysis/style-rules/ide0150.md
             - name: IDE1005
               href: code-analysis/style-rules/ide1005.md
           - name: var preferences
@@ -1550,6 +1566,8 @@ items:
               href: code-analysis/style-rules/ide0083.md
             - name: IDE0084
               href: code-analysis/style-rules/ide0084.md
+            - name: IDE0170
+              href: code-analysis/style-rules/ide0170.md
           - name: Code block preferences
             items:
             - name: Overview
@@ -1611,7 +1629,16 @@ items:
           - name: IDE0077
             href: code-analysis/style-rules/ide0077.md
         - name: Formatting rules
-          href: code-analysis/style-rules/formatting-rules.md
+          items:
+          - name: IDE0055
+            items:
+            - name: Overview
+              displayName: formatting rule, ide0055
+              href: code-analysis/style-rules/ide0055.md
+            - name: .NET formatting options
+              href: code-analysis/style-rules/dotnet-formatting-options.md
+            - name: C# formatting options
+              href: code-analysis/style-rules/csharp-formatting-options.md
         - name: Naming rules
           href: code-analysis/style-rules/naming-rules.md
     - name: Platform compatibility analyzer
@@ -1937,6 +1964,8 @@ items:
           href: ../core/deploying/trimming/trim-warnings/il2115.md
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
+  - name: Native AOT deployment model
+    href: ../core/deploying/native-aot.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog

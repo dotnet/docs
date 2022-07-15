@@ -1,6 +1,4 @@
-﻿using System;
-
-public struct LaunchStatus
+﻿public struct LaunchStatus
 {
     public static readonly LaunchStatus Green = new LaunchStatus(0);
     public static readonly LaunchStatus Yellow = new LaunchStatus(1);

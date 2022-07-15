@@ -29,6 +29,10 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: IHubClients and IHubCallerClients hide members
+          href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
+        - name: "Kestrel: Default HTTPS binding removed"
+          href: aspnet-core/7.0/https-binding-kestrel.md
         - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
@@ -47,10 +51,10 @@ items:
           href: core-libraries/7.0/collectible-assemblies.md
         - name: Equals method behavior change for NaN
           href: core-libraries/7.0/equals-nan.md
-        - name: FullPath and OldFullPath return fully qualified path
-          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Reflection invoke API exceptions
+          href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
@@ -65,6 +69,12 @@ items:
         items:
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: Extensions
+        items:
+        - name: ContentRootPath for apps launched by Windows Shell
+          href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -187,6 +197,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: StringBuilder.Append overloads and evaluation order
           href: core-libraries/6.0/stringbuilder-append-evaluation-order.md
+        - name: Strong-name APIs throw PlatformNotSupportedException
+          href: core-libraries/6.0/strong-name-signing-exceptions.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: System.Security.SecurityContext is marked obsolete
@@ -203,6 +215,10 @@ items:
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
           href: cryptography/6.0/cfb-mode-feedback-size-exception.md
+      - name: Deployment
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
       - name: Entity Framework Core
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
@@ -573,6 +589,10 @@ items:
             href: aspnet-core/7.0/api-controller-action-parameters-di.md
           - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
             href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+          - name: IHubClients and IHubCallerClients hide members
+            href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
+          - name: "Kestrel: Default HTTPS binding removed"
+            href: aspnet-core/7.0/https-binding-kestrel.md
           - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
             href: aspnet-core/7.0/libuv-transport-dll-removed.md
           - name: Microsoft.Data.SqlClient updated to 4.0.1
@@ -749,10 +769,10 @@ items:
           href: core-libraries/7.0/collectible-assemblies.md
         - name: Equals method behavior change for NaN
           href: core-libraries/7.0/equals-nan.md
-        - name: FullPath and OldFullPath return fully qualified path
-          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Reflection invoke API exceptions
+          href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
@@ -797,6 +817,8 @@ items:
           href: core-libraries/6.0/static-abstract-interface-methods.md
         - name: StringBuilder.Append overloads and evaluation order
           href: core-libraries/6.0/stringbuilder-append-evaluation-order.md
+        - name: Strong-name APIs throw PlatformNotSupportedException
+          href: core-libraries/6.0/strong-name-signing-exceptions.md
         - name: System.Drawing.Common only supported on Windows
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: System.Security.SecurityContext is marked obsolete
@@ -901,6 +923,16 @@ items:
         items:
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: .NET 6
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: .NET Core 3.1
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
     - name: Entity Framework Core
       items:
       - name: EF Core 6
@@ -911,6 +943,10 @@ items:
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Extensions
       items:
+      - name: .NET 7
+        items:
+        - name: ContentRootPath for apps launched by Windows Shell
+          href: extensions/7.0/contentrootpath-hosted-app.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider

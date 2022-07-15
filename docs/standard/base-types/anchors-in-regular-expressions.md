@@ -27,7 +27,7 @@ Anchors, or atomic zero-width assertions, specify a position in the string where
 |`\A`|The match must occur at the beginning of the string only (no multiline support). For more information, see [Start of String Only](#start-of-string-only-a).|  
 |`\Z`|The match must occur at the end of the string, or before `\n` at the end of the string. For more information, see [End of String or Before Ending Newline](#end-of-string-or-before-ending-newline-z).|  
 |`\z`|The match must occur at the end of the string only. For more information, see [End of String Only](#end-of-string-only-z).|  
-|`\G`|The match must start at the position where the previous match ended. For more information, see [Contiguous Matches](#contiguous-matches-g).|  
+|`\G`|The match must start at the position where the previous match ended, or if there was no previous match, at the position in the string where matching started. For more information, see [Contiguous Matches](#contiguous-matches-g).|
 |`\b`|The match must occur on a word boundary. For more information, see [Word Boundary](#word-boundary-b).|  
 |`\B`|The match must not occur on a word boundary. For more information, see [Non-Word Boundary](#non-word-boundary-b).|  
 
@@ -100,7 +100,10 @@ Anchors, or atomic zero-width assertions, specify a position in the string where
 
 ## Contiguous Matches: \G  
 
- The `\G` anchor specifies that a match must occur at the point where the previous match ended. When you use this anchor with the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method, it ensures that all matches are contiguous.  
+The `\G` anchor specifies that a match must occur at the point where the previous match ended, or if there was no previous match, at the position in the string where matching started. When you use this anchor with the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method, it ensures that all matches are contiguous.
+
+> [!TIP]
+> Typically, you place a `\G` anchor at the left end of your pattern. In the uncommon case you're performing a right-to-left search, place the `\G` anchor at the right end of your pattern.
   
  The following example uses a regular expression to extract the names of rodent species from a comma-delimited string.  
   

@@ -1,73 +1,68 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿namespace operators;
 
-namespace operators
+public static class NullCoalescingOperator
 {
-    public static class NullCoalescingOperator
+    public static void Examples()
     {
-        public static void Examples()
+        WithNullConditional();
+        WithNullableTypes();
+        NullCoalescingAssignment();
+    }
+
+    private static void WithNullConditional()
+    {
+        // <SnippetWithNullConditional>
+        double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
         {
-            WithNullConditional();
-            WithNullableTypes();
-            NullCoalescingAssignment();
+            return setsOfNumbers?[indexOfSetToSum]?.Sum() ?? double.NaN;
         }
 
-        private static void WithNullConditional()
+        var sum = SumNumbers(null, 0);
+        Console.WriteLine(sum);  // output: NaN
+        // </SnippetWithNullConditional>
+    }
+
+    private static void WithNullableTypes()
+    {
+        // <SnippetWithNullableTypes>
+        int? a = null;
+        int b = a ?? -1;
+        Console.WriteLine(b);  // output: -1
+        // </SnippetWithNullableTypes>
+    }
+
+    private class Person
+    {
+        string name;
+
+        // <SnippetWithThrowExpression>
+        public string Name
         {
-            // <SnippetWithNullConditional>
-            double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
-            {
-                return setsOfNumbers?[indexOfSetToSum]?.Sum() ?? double.NaN;
-            }
-
-            var sum = SumNumbers(null, 0);
-            Console.WriteLine(sum);  // output: NaN
-            // </SnippetWithNullConditional>
+            get => name;
+            set => name = value ?? throw new ArgumentNullException(nameof(value), "Name cannot be null");
         }
+        // </SnippetWithThrowExpression>
+    }
 
-        private static void WithNullableTypes()
-        {
-            // <SnippetWithNullableTypes>
-            int? a = null;
-            int b = a ?? -1;
-            Console.WriteLine(b);  // output: -1
-            // </SnippetWithNullableTypes>
-        }
+    // <SnippetUnconstrainedType>
+    private static void Display<T>(T a, T backup)
+    {
+        Console.WriteLine(a ?? backup);
+    }
+    // </SnippetUnconstrainedType>
 
-        private class Person
-        {
-            string name;
+    private static void NullCoalescingAssignment()
+    {
+        // <SnippetAssignment>
+        List<int> numbers = null;
+        int? a = null;
 
-            // <SnippetWithThrowExpression>
-            public string Name
-            {
-                get => name;
-                set => name = value ?? throw new ArgumentNullException(nameof(value), "Name cannot be null");
-            }
-            // </SnippetWithThrowExpression>
-        }
+        (numbers ??= new List<int>()).Add(5);
+        Console.WriteLine(string.Join(" ", numbers));  // output: 5
 
-        // <SnippetUnconstrainedType>
-        private static void Display<T>(T a, T backup)
-        {
-            Console.WriteLine(a ?? backup);
-        }
-        // </SnippetUnconstrainedType>
-
-        private static void NullCoalescingAssignment()
-        {
-            // <SnippetAssignment>
-            List<int> numbers = null;
-            int? a = null;
-
-            (numbers ??= new List<int>()).Add(5);
-            Console.WriteLine(string.Join(" ", numbers));  // output: 5
-
-            numbers.Add(a ??= 0);
-            Console.WriteLine(string.Join(" ", numbers));  // output: 5 0
-            Console.WriteLine(a);  // output: 0
-            // </SnippetAssignment>
-        }
+        numbers.Add(a ??= 0);
+        Console.WriteLine(string.Join(" ", numbers));  // output: 5 0
+        Console.WriteLine(a);  // output: 0
+        // </SnippetAssignment>
     }
 }

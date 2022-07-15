@@ -2,7 +2,7 @@
 title: "Local functions - C# Programming Guide"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
 ms.date: 10/16/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "local functions [C#]"
 ---
 # Local functions (C# Programming Guide)
@@ -68,7 +68,7 @@ If you put iterator logic into a local function, argument validation exceptions 
 
 ## Local functions vs. lambda expressions
 
-At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a matter of style and personal preference. However, there are real differences in where you can use one or the other that you should be aware of.
+At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a [matter of style and personal preference](../../../fundamentals/code-analysis/style-rules/ide0039.md). However, there are real differences in where you can use one or the other that you should be aware of.
 
 Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. Here's the version using a local function:
 
@@ -135,6 +135,9 @@ The instantiation necessary for lambda expressions means extra memory allocation
 
 If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function. Note that this feature is available in C# 8.0 and newer.
 
+> [!TIP]
+> Enable .NET code style rule [IDE0062](../../../fundamentals/code-analysis/style-rules/ide0062.md) to ensure that local functions are always marked `static`.
+
 > [!NOTE]
 > The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
 
@@ -152,4 +155,5 @@ While local functions may seem redundant to lambda expressions, they actually se
 
 ## See also
 
+- [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
 - [Methods](methods.md)

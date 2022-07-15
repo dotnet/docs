@@ -2,12 +2,12 @@
 title: Uninstall Tool
 description: An overview of the .NET Uninstall Tool, a guided tool that enables the controlled clean-up of .NET SDKs and runtimes.
 author: sfoslund
-ms.date: 07/04/2022
+ms.date: 07/15/2022
 ms.custom: devdivchpfy22
 ---
-# .NET Uninstall tool
+# .NET uninstall tool
 
-The [.NET Uninstall tool](https://aka.ms/dotnet-core-uninstall-tool) (`dotnet-core-uninstall`) lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions you want to uninstall.
+The [.NET uninstall tool](https://aka.ms/dotnet-core-uninstall-tool) (`dotnet-core-uninstall`) lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions you want to uninstall.
 
 The tool supports Windows and macOS. Linux is currently not supported.
 
@@ -22,10 +22,10 @@ Because of these limitations, the tool might not be able to uninstall all of the
 
 ## Install the tool
 
-You can download the .NET Uninstall tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
+You can download .NET uninstall tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
 
 > [!NOTE]
-> The tool requires elevation to uninstall .NET SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. For more information, see the [Elevated access for dotnet commands](../tools/elevated-access.md). For more installation instructions, see the [detailed installation instructions](https://aka.ms/dotnet-core-uninstall-tool).
+> The tool requires elevation to uninstall .NET SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. For more information, see the [Elevated access for dotnet commands](../tools/elevated-access.md) and the [detailed installation instructions](https://aka.ms/dotnet-core-uninstall-tool).
 
 ## Run the tool
 
@@ -137,7 +137,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 **`VERSION`**
 
-  The specified version to uninstall. You might list several versions one after the other, separated by spaces. Response files are also supported.
+  The specified version to uninstall. You can list several versions one after the other, separated by spaces. Response files are also supported.
 
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line. They're text files, typically with a *\*.rsp* extension, and each version is listed on a separate line. To specify a response file for the `VERSION` argument, use the \@ character immediately followed by the response file name.
@@ -164,7 +164,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 - **`--all-lower-patches`**
 
-  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects `global.json` file.
+  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects _global.json_ file.
 
 - **`--all-previews`**
 
@@ -235,7 +235,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 - **`--all-lower-patches`**
 
-  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects `global.json` file.
+  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects _global.json_ file.
 
 - **`--all-previews`**
 
@@ -297,7 +297,7 @@ Because this tool has a destructive behavior, it's **highly** recommended that y
 > [!CAUTION]
 > Keep in mind the following caveats:
 >
->- This tool can uninstall versions of the .NET SDK that are required by `global.json` files on your machine. You can reinstall .NET SDKs from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
+>- This tool can uninstall versions of the .NET SDK that are required by _global.json_ files on your machine. You can reinstall .NET SDKs from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
 >- This tool can uninstall versions of the .NET runtime that are required by framework dependent applications on your machine. You can reinstall the .NET runtimes from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
 >- This tool can uninstall versions of the .NET SDK and runtime that Visual Studio relies on. If you break your Visual Studio installation, run **Repair** in the Visual Studio installer to get back to a working state.
 
@@ -344,7 +344,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 - **`--all-lower-patches`**
 
-  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects `global.json` file.
+  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects _global.json_ file.
 
 - **`--all-previews`**
 
@@ -419,7 +419,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 - **`--all-lower-patches`**
 
-  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects `global.json` file.
+  Removes the .NET SDKs and runtimes superseded by higher patches. This option protects _global.json_ file.
 
 - **`--all-previews`**
 
@@ -516,7 +516,7 @@ In some cases, you no longer need the `NuGetFallbackFolder` and might wish to de
 ## [Windows](#tab/windows)
 
 1. Open **Add or Remove Programs**.
-2. Search for `Microsoft .NET SDK Uninstall tool`.
+2. Search for `Microsoft .NET SDK uninstall tool`.
 3. Select **Uninstall**.
 
 ## [macOS](#tab/macos)

@@ -3,7 +3,7 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 07/08/2022
+ms.date: 07/15/2022
 ms.custom: devdivchpfy22
 ---
 # .NET CLI overview
@@ -63,7 +63,7 @@ Tools are console applications that are installed from NuGet packages and are in
 
 ## Command structure
 
-CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was executed from a directory named *my_app*:
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was run from a directory named *my_app*:
 
 ```dotnetcli
 dotnet new console

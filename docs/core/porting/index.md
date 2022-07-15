@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET 6
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
-ms.date: 07/08/2022
+ms.date: 07/15/2022
 ms.custom: devdivchpfy22
 no-loc: ["package.config", PackageReference]
 ---
@@ -34,7 +34,7 @@ For tutorials on migrating your desktop application to .NET 6, see one of the fo
 
 Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
 
-When you're porting an application from .NET Framework to .NET, your application probably used a library provided with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
+When you're porting an application from .NET Framework to .NET, your application probably used a library provided by .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
 
 The **Windows Compatibility Pack** provides a large portion of the .NET Framework API surface to .NET and is provided via the [Microsoft.Windows.Compatibility NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility).
 
@@ -42,7 +42,7 @@ For more information, see [Use the Windows Compatibility Pack to port code to .N
 
 ## .NET Framework compatibility mode
 
-The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows .NET Standard, .NET 5+, and .NET Core 3.1 projects to reference .NET Framework libraries on Windows only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses WPF APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
+The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows .NET Standard and .NET (including .NET Core 3.1) projects to reference .NET Framework libraries on Windows only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses WPF APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
 
 ## Unavailable technologies
 

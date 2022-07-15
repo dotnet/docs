@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 07/08/2022
+ms.date: 07/15/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -14,7 +14,7 @@ ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 ---
 # Fundamentals of garbage collection
 
-In the common language runtime (CLR), the garbage collector (GC) serves as an automatic memory manager. The garbage collector manages the allocation and release of memory for an application. Therefore, developers working with managed code don't have to write code to perform memory management tasks. Automatic memory management can eliminate common problems such as forgetting to free an object and causing a memory leak or attempting to access a freed memory for an object that's already been freed.
+In the common language runtime (CLR), the garbage collector (GC) serves as an automatic memory manager. The garbage collector manages the allocation and release of memory for an application. Therefore, developers working with managed code don't have to write code to perform memory management tasks. Automatic memory management can eliminate common problems such as forgetting to free an object and causing a memory leak or attempting to access freed memory for an object that's already been freed.
 
 This article describes the core concepts of garbage collection.
 

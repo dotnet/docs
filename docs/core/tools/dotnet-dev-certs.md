@@ -1,7 +1,7 @@
 ---
 title: dotnet dev-certs command
 description: The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
-ms.date: 06/28/2022
+ms.date: 07/14/2022
 ---
 # dotnet dev-certs
 
@@ -79,7 +79,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   successfully removed from the machine.
   ```
 
-  <a name=exportpath></a>
+  <a name="exportpath"></a>
 
 - **`-ep|--export-path <PATH>`**
 

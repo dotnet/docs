@@ -2,7 +2,7 @@
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
 author: tdykstra
-ms.date: 02/24/2022
+ms.date: 07/14/2022
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
@@ -211,7 +211,7 @@ MSBuild and the .NET CLI can be used with various continuous integration tools a
 * [CAKE for C#](https://cakebuild.net/)
 * [FAKE for F#](https://fake.build/)
 
-For more information, see [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md)
+For more information, see [Use the .NET SDK in Continuous Integration (CI) environments](../devops/dotnet-cli-and-continuous-integration.md).
 
 ## Deployment models
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 07/14/2022
+ms.date: 07/15/2022
 ms.custom: devdivchpfy22
 ms.topic: overview
 ms.author: dapine
@@ -38,7 +38,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 ## .NET 5 doesn't replace .NET Framework
 
-.NET 5 and later versions are the main implementation of .NET going forward but .NET Framework 4.x is still supported. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are alternatives in .NET:
+.NET 5 and later versions are the main implementation of .NET going forward, but .NET Framework 4.x is still supported. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are alternatives in .NET:
 
 | Technology            | Recommended alternative                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------|
@@ -96,7 +96,7 @@ let age = 36
 let message = $"{name} is {age} years old."
 ```
 
-In addition to basic string interpolation, there's typed interpolation. With typed interpolation, a given type must match the format specifier.
+In addition to basic string interpolation, there's a typed interpolation. With typed interpolation, a given type must match the format specifier.
 
 ```fsharp
 let name = "David"

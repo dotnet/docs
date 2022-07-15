@@ -1,7 +1,7 @@
 ---
 title: "How to: Pad a Number with Leading Zeros"
 description: Learn to pad a number with leading zeros. Add leading zeros to integers or numeric values to a specific total length or a specific number of leading zeros.
-ms.date: "07/14/2022"
+ms.date: "07/15/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -60,7 +60,7 @@ The following example pads an integer value with five leading zeros:
 
 1. Determine how many digits to the left of the decimal you want the string representation of the number to have. Include any leading zeros in this total number of digits.
 
-1. Define a custom numeric format string that uses the zero placeholder "0" to represent the minimum number of zeros.
+1. Define a custom numeric format string that uses the zero placeholder (0) to represent the minimum number of zeros.
 
 1. Call the number's `ToString(String)` method and pass it to the custom format string. You can also use the custom format string with string interpolation or a method that supports composite formatting.
 

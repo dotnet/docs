@@ -1,7 +1,7 @@
 ---
 title: "Converting times between time zones"
 description: Learn to convert times between from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
-ms.date: "07/14/2022"
+ms.date: "07/15/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -53,7 +53,7 @@ All of these methods take <xref:System.DateTime> values as parameters and return
 
 ## Converting UTC to a designated time zone
 
-To convert UTC to local time, see the "Converting UTC to Local Time" section that follows. To convert UTC to the time in any time zone that you designate, call the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> method. The method takes two parameters:
+To convert UTC to local time, see the [Converting UTC to local time](#converting-utc-to-local-time) section that follows. To convert UTC to the time in any time zone that you designate, call the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> method. The method takes two parameters:
 
 - The UTC to convert. The value must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to `Unspecified` or `Utc`.
 

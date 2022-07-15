@@ -91,7 +91,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [NikRimington](https://github.com/NikRimington) - Nik (1)
 - [omarjuul](https://github.com/omarjuul) - Camiel Egbers (1)
 - [pbachmann](https://github.com/pbachmann) (1)
-- [Prajwal-Koirala](https://github.com/Prajwal-Koirala) - Prajwal Koirala (1)
+- Prajwal Koirala (1)
 - QHopp (1)
 - [renbaoshuo](https://github.com/renbaoshuo) - Baoshuo Ren (1)
 - [sameercarpenter](https://github.com/sameercarpenter) - Sameer Carpenter (1)

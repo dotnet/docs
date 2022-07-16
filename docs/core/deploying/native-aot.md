@@ -70,11 +70,11 @@ The native AOT publishing follows platform conventions for native toolchains. Th
 
 Set `StripSymbols` property to true to produce the debug information in a separate .dbg file and exclude it from the native binary on Linux. This property has no effect on Windows.
 
-    ```xml
-    <PropertyGroup>
-        <StripSymbols>true</StripSymbols>
-    </PropertyGroup>
-    ```
+```xml
+<PropertyGroup>
+    <StripSymbols>true</StripSymbols>
+</PropertyGroup>
+```
 
 ## Limitations of Native AOT deployment
 

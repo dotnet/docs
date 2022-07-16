@@ -64,6 +64,18 @@ The app will be available in the publish directory and will contain all the code
 
 Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples includes [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
 
+### Native Debug Information
+
+The native AOT publishing follows platform conventions for native toolchains. The default behavior of native toolchains on Windows is to produce debug information in separate .pdb file. The default behavior of native toolchains on Linux is to include the debug information in the native binary that makes the native binary significantly larger.
+
+Set `StripSymbols` property to true to produce the debug information in a separate .dbg file and exclude it from the native binary on Linux. This property has no effect on Windows.
+
+    ```xml
+    <PropertyGroup>
+        <StripSymbols>true</StripSymbols>
+    </PropertyGroup>
+    ```
+
 ## Limitations of Native AOT deployment
 
 Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:

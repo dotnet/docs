@@ -7,6 +7,7 @@ f1_keywords:
   - "~_CSharpKeyword"
   - "<<_CSharpKeyword"
   - ">>_CSharpKeyword"
+  - ">>>_CSharpKeyword"
   - "&_CSharpKeyword"
   - "^_CSharpKeyword"
   - "|_CSharpKeyword"
@@ -24,6 +25,7 @@ helpviewer_keywords:
   - "<< operator [C#]"
   - "right shift operator [C#]"
   - ">> operator [C#]"
+  - "unsigned right shift operator [C#]"
   - ">>> operator [C#]"
   - "bitwise logical AND operator [C#]"
   - "ampersand operator [C#]"
@@ -91,7 +93,7 @@ The high-order empty bit positions are set based on the type of the left-hand op
 
 ## Unsigned right-shift operator >>>
 
-The `>>>` operator, available starting in C# 11, performs a *logical* shift on all integer types. The high-order bits are always set to zero, regardless of the type of the left side argument. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift on signed types, where the high-order bit is propagated to the high-order bit empty positions. The following example demonstrates the difference between `>>` and `>>>` for a negative integer value:
+Available in C# 11 and later, the `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. The `>>>` operator always performs a *logical* shift. That is, the high-order empty bit positions are always set to zero, regardless of the type of the left-hand operand. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift (that is, the value of the most significant bit (the sign bit) is propagated to the high-order empty bit positions) if the left-hand operand is of a signed type. The following example demonstrates the difference between `>>` and `>>>` operators for a negative left-hand operand:
 
 :::code language="csharp" source="./snippets/shared/BitwiseAndShiftOperators.cs" id="SnippetUnsignedRightShift":::
 
@@ -137,7 +139,7 @@ except that `x` is only evaluated once.
 
 The following example demonstrates the usage of compound assignment with bitwise and shift operators:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="CompoundAssignment":::
+:::code language="csharp" source="snippets/shared/BitwiseAndShiftOperators.cs" id="CompoundAssignment":::
 
 Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
@@ -148,7 +150,7 @@ Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1147-n
 The following list orders bitwise and shift operators starting from the highest precedence to the lowest:
 
 - Bitwise complement operator `~`
-- Shift operators `<<` and `>>`
+- Shift operators `<<`, `>>`, and `>>>`
 - Logical AND operator `&`
 - Logical exclusive OR operator `^`
 - Logical OR operator `|`
@@ -161,9 +163,9 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 ## Shift count of the shift operators
 
-Prior to C# 11, for the shift operators `<<` and `>>`, the type of the right-hand operand must be `int` or a type that has a [predefined implicit numeric conversion](../builtin-types/numeric-conversions.md#implicit-numeric-conversions) to `int`. This restriction is removed in C# 11.
+For the built-in shift operators `<<`, `>>`, and `>>>`, the type of the right-hand operand must be `int` or a type that has a [predefined implicit numeric conversion](../builtin-types/numeric-conversions.md#implicit-numeric-conversions) to `int`.
 
-For the `x << count` and `x >> count` expressions, the actual shift count depends on the type of `x` as follows:
+For the `x << count`, `x >> count`, and `x >>> count` expressions, the actual shift count depends on the type of `x` as follows:
 
 - If the type of `x` is `int` or `uint`, the shift count is defined by the low-order *five* bits of the right-hand operand. That is, the shift count is computed from `count & 0x1F` (or `count & 0b_1_1111`).
 
@@ -184,9 +186,9 @@ You typically use bitwise logical operators with an enumeration type that is def
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `~`, `<<`, `>>`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type can't explicitly overload a compound assignment operator.
+A user-defined type can [overload](operator-overloading.md) the `~`, `<<`, `>>`, `>>>`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type can't explicitly overload a compound assignment operator.
 
-If a user-defined type `T` overloads the `<<` or `>>` operator, the type of the left-hand operand must be `T` and the type of the right-hand operand must be `int`.
+If a user-defined type `T` overloads the `<<`, `>>`, or `>>>` operator, the type of the left-hand operand must be `T`. In C# 10 and earlier, the type of the right-hand operand must be `int`; beginning with C# 11, the type of the right-hand operand of an overloaded shift operator can be any.
 
 ## C# language specification
 

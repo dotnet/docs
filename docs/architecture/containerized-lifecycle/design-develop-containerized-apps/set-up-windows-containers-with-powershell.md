@@ -17,6 +17,7 @@ LABEL Description="IIS" Vendor="Microsoft" Version="10"
 RUN powershell Get-WindowsFeature web-server
 RUN powershell Install-windowsfeature web-server
 RUN powershell add-windowsfeature web-asp-net45
+CMD [ "ping", "localhost", "-t" ]
 ```
 
 In this case, we're using Windows PowerShell to install a Windows Server Core base image as well as IIS.

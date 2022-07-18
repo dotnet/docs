@@ -161,10 +161,10 @@ namespace TourOfCsharp
             F();            // Invokes F()
             F(1);           // Invokes F(int)
             F(1.0);         // Invokes F(double)
-            F("abc");       // Invokes F<string>(string)
+            F("abc");       // Invokes F<T>(T)
             F((double)1);   // Invokes F(double)
             F((object)1);   // Invokes F(object)
-            F<int>(1);      // Invokes F<int>(int)
+            F<int>(1);      // Invokes F<T>(T)
             F(1, 1);        // Invokes F(double, double)
         }
     }

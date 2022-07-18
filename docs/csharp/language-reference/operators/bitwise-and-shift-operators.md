@@ -89,11 +89,13 @@ The high-order empty bit positions are set based on the type of the left-hand op
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LogicalRightShift":::
 
 > [!NOTE]
-> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on signed integer types. This is preferred to casting the signed type to an unsigned type and casting back after the shift.
+> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. This is preferred to casting a left-hand operand to an unsigned type and then casting the shift operation result back to a signed type.
 
 ## Unsigned right-shift operator >>>
 
-Available in C# 11 and later, the `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. The `>>>` operator always performs a *logical* shift. That is, the high-order empty bit positions are always set to zero, regardless of the type of the left-hand operand. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift (that is, the value of the most significant bit (the sign bit) is propagated to the high-order empty bit positions) if the left-hand operand is of a signed type. The following example demonstrates the difference between `>>` and `>>>` operators for a negative left-hand operand:
+Available in C# 11 and later, the `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
+
+The `>>>` operator always performs a *logical* shift. That is, the high-order empty bit positions are always set to zero, regardless of the type of the left-hand operand. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift (that is, the value of the most significant bit is propagated to the high-order empty bit positions) if the left-hand operand is of a signed type. The following example demonstrates the difference between `>>` and `>>>` operators for a negative left-hand operand:
 
 :::code language="csharp" source="./snippets/shared/BitwiseAndShiftOperators.cs" id="SnippetUnsignedRightShift":::
 

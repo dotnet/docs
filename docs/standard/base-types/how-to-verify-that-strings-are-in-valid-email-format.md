@@ -1,7 +1,7 @@
 ---
 title: "How to verify that strings are in valid email format"
 description: Read an example of how a regular expression verifies that strings are in a valid email format in .NET.
-ms.date: "07/13/2022"
+ms.date: "07/18/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -48,7 +48,7 @@ To verify that the email address is valid, the `IsValidEmail` method calls the <
 | `(.+)`  | Match one or more occurrences of any character. This part is the second capturing group. |
 | `$`     | End the match at the end of the string.                                             |
 
-The domain name along with the @ character is passed to the `DomainMapper` method, which uses the <xref:System.Globalization.IdnMapping> class to translate Unicode characters that are outside the US-ASCII character range to Punycode. The method also sets the `invalid` flag to `True` if the <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method detects any invalid characters in the domain name. The method returns the Punycode domain name preceded by the @ symbol to the `IsValidEmail` method.
+The domain name along with the @ character is passed to the `DomainMapper` method. The method then uses the <xref:System.Globalization.IdnMapping> class to translate Unicode characters that are outside the US-ASCII character range to Punycode. The method also sets the `invalid` flag to `True` if the <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method detects any invalid characters in the domain name. The method returns the Punycode domain name preceded by the @ symbol to the `IsValidEmail` method.
 
 > [!TIP]
 > It's recommended that you use the simple `(@)(.+)$` regular expression pattern to normalize the domain and then return a value indicating that it passed or failed. However, the example in this article describes how to further use a regular expression to validate the email. Regardless of how you validate an email, you should always send a test email to the address to ensure that it exists.
@@ -74,7 +74,7 @@ In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is 
 | `$`       | End the match at the end of the string.                                                  |
 
 > [!IMPORTANT]
-> This regular expression isn't intended to cover every aspect of a valid email address. It's provided as an example for you to extend as needed.
+> The regular expression isn't intended to cover every aspect of a valid email address. It's provided as an example for you to extend as needed.
 
 ## See also
 

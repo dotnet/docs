@@ -1,7 +1,7 @@
 ---
 title: "How to: Write text to a file"
 description: Learn ways to write or append text to a file for a .NET app. Use methods from the StreamWriter or File classes to write text synchronously or asynchronously.
-ms.date: "07/08/2022"
+ms.date: "07/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -39,7 +39,7 @@ The following example shows how to use the <xref:System.IO.StreamWriter> class t
 
 ## Example: Synchronously append text with StreamWriter
 
-The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example.
+The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example:
 
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/append.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/append.vb)]  

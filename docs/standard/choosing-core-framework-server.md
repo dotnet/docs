@@ -1,7 +1,7 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 07/11/2022
+ms.date: 07/18/2022
 ms.custom: devdivchpfy22
 ---
 # .NET vs. .NET Framework for server apps
@@ -13,7 +13,7 @@ There are two supported [.NET implementations](glossary.md#implementation-of-net
 | .NET | .NET Core 1.0 - 3.1, .NET 5, and later versions of .NET. |
 | .NET Framework | .NET Framework 1.0 - 4.8 |
 
-Both share many of the same components, and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
+Both share many of the same components and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
 
 Use .NET for your server application when:
 
@@ -62,13 +62,13 @@ Performance and scalability are especially relevant for microservices architectu
 
 ### Side by side .NET versions per application level
 
-To install applications with dependencies on different versions of .NET, we recommend .NET. This implementation supports side-by-side installation of different versions of the .NET runtime on the same machine. This side-by-side installation allows multiple services on the same server, each of them on its own version of .NET. It also lowers risks and saves money in application upgrades and IT operations.
+To install applications with dependencies on different versions of .NET, we recommend .NET. This implementation supports side-by-side installation of different versions of the .NET runtime on the same machine. The side-by-side installation allows multiple services on the same server, each of them on its own version of .NET. It also lowers risks and saves money in application upgrades and IT operations.
 
-Side-by-side installation isn't possible with .NET Framework. It's a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
+Side-by-side installation isn't possible with .NET Framework. It's a Windows component and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
 
 ## When to choose .NET Framework
 
-.NET offers significant benefits for new applications and application patterns. However, .NET Framework continues to be the natural choice for many existing scenarios, and as such, .NET Framework isn't replaced by .NET for all server applications.
+.NET offers significant benefits for new applications and application patterns. However, .NET Framework continues to be the natural choice for many existing scenarios and as such, .NET Framework isn't replaced by .NET for all server applications.
 
 ### Current .NET Framework applications
 
@@ -84,13 +84,13 @@ You need to use .NET Framework only in cases where the libraries or NuGet packag
 
 Some .NET Framework technologies aren't available in .NET. The following list shows the most common technologies not found in .NET:
 
-- ASP.NET Web Forms applications: ASP.NET Web Forms are only available in .NET Framework. ASP.NET Core can't be used for ASP.NET Web Forms.
+- **ASP.NET Web Forms applications**: ASP.NET Web Forms are only available in .NET Framework. ASP.NET Core can't be used for ASP.NET Web Forms.
 
-- ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core.
+- **ASP.NET Web Pages applications**: ASP.NET Web Pages aren't included in ASP.NET Core.
 
-- Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in .NET Framework.
+- **Workflow-related services**: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in .NET Framework.
 
-- Language support: Visual Basic and F# are currently supported in .NET, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
+- **Language support**: Visual Basic and F# are currently supported in .NET, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
 For more information, see [.NET Framework technologies unavailable in .NET](../core/porting/net-framework-tech-unavailable.md).
 

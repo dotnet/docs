@@ -258,11 +258,11 @@ It is important to underline that it is only valid to suppress a warning if ther
     // for reflection. Properties that are not visible targets of reflection
     // are already optimized away with Native AOT trimming and may be
     // optimized away for non-native deployment in the future as well.
-    Justification = "Only need to serialize properties that are used by the app.")]
+    Justification = "*INVALID* Only need to serialize properties that are used by the app. *INVALID*")]
 public string Serialize(object o)
 {
     StringBuilder sb = new StringBuilder();
-    foreach (var property in o.GetType.GetProperties())
+    foreach (var property in o.GetType().GetProperties())
     {
         AppendProperty(sb, property, o);
     }

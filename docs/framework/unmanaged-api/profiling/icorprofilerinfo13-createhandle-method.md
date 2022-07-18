@@ -38,7 +38,7 @@ Creates a handle that wraps a specified object.
 
 Following are the expected usages depending on the specified `COR_PRF_HANDLE_TYPE` value:
 
-- COR_PRF_HANDLE_TYPE_WEAK: Monitors if an object stays in memory over time. If the wrapped object has been collected, [ICorProfilerInfo13::GetObjectIDFromHandle](icorprofilerinfo13-getobjectidfromhandle-method.md) will return a null `ObjectID` for its wrapping weak handle.
+- `COR_PRF_HANDLE_TYPE_WEAK`: Monitors if an object stays in memory over time. If the wrapped object has been collected, [ICorProfilerInfo13::GetObjectIDFromHandle](icorprofilerinfo13-getobjectidfromhandle-method.md) returns a null `ObjectID`.
 - `COR_PRF_HANDLE_TYPE_STRONG`: Enforces that an object survives garbage collections even though no other object references it.
 - `COR_PRF_HANDLE_TYPE_PINNED`: Same as a strong handle but also ensures that the object stays at the same address in memory during garbage collections.
 

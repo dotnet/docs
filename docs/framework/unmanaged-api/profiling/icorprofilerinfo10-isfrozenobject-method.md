@@ -26,10 +26,10 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 
 ## Parameters
 
-`objectId`
+`objectId`\
 [in] The object to examine.
 
-`pbFrozen`
+`pbFrozen`\
 [out] A `BOOL` indicating if the object is in a read-only segment.
 
 ## Requirements

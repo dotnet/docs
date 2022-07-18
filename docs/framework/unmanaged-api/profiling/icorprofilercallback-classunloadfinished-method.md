@@ -31,10 +31,10 @@ HRESULT ClassUnloadFinished(
   
 ## Parameters
 
-`classId`
+`classId`\
 [in] Identifies the class that was unloaded.
 
-`hrStatus`
+`hrStatus`\
 [in] An HRESULT that indicates whether the class was unloaded successfully.
   
 ## Remarks  

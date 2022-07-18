@@ -27,13 +27,13 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
 
 ## Parameters
 
-`objectId`
+`objectId`\
 [in] The object to enumerate references on.
 
-`callback`
+`callback`\
 [in] The function that will be called with the references for the object.
 
-`clientData`
+`clientData`\
 [in] Profiler-provided data to pass to the `callback` function.
 
 ## Remarks

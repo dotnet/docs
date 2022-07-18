@@ -34,40 +34,40 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
   
 ## Parameters
 
-`provider`
+`provider`\
 [in] The provider that this event originated from.
 
-`eventId`
+`eventId`\
 [in] The ID of the event being delivered.
 
-`eventVersion`
+`eventVersion`\
 [in] The version of the event being delivered.
 
-`cbMetadataBlob`
+`cbMetadataBlob`\
 [in] The length, in bytes, of `metadataBlob`.
 
-`metadataBlob`
+`metadataBlob`\
 [in] A pointer to the metadata blob for the event.
 
-`cbEventData`
+`cbEventData`\
 [in] The length, in bytes, of `eventData`.
 
-`eventData`
+`eventData`\
 [in] The payload for the event.
 
-`pActivityId`
+`pActivityId`\
 [in] A pointer to the GUID that represents the event's activity ID, or NULL.
 
-`pRelatedActivityId`
+`pRelatedActivityId`\
 [in] A pointer to the GUID that represents the event's related activity ID, or NULL.
 
-`eventThread`
+`eventThread`\
 [in] The ID of the thread the event occurred on.
 
-`numStackFrames`
+`numStackFrames`\
 [in] The number of elements in the `stackFrames` array.
 
-`stackFrames`
+`stackFrames`\
 [in] An array of code addresses representing the managed callstack of the event.
 
 ## Requirements  

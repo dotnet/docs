@@ -31,10 +31,10 @@ HRESULT AssemblyLoadFinished(
   
 ## Parameters
 
-`assemblyId`
+`assemblyId`\
 [in] Identifies the assembly that was loaded.
 
-`hrStatus`
+`hrStatus`\
 [in] An HRESULT that indicates whether the assembly finished loading successfully.
 
 ## Remarks  

@@ -31,10 +31,10 @@ HRESULT JITCachedFunctionSearchFinished(
   
 ## Parameters
 
-`functionId`
+`functionId`\
 [in] The ID of the function for which the search was performed.
 
-`result`
+`result`\
 [in] A value of the [COR_PRF_JIT_CACHE](cor-prf-jit-cache-enumeration.md) enumeration that indicates the result of the search.
 
 ## Remarks  

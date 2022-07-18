@@ -28,19 +28,19 @@ Writes an EventPipe event to any listeners who have enabled this event.
   
 ## Parameters
 
-`event`
+`event`\
 [in] The ID of the event being written.
 
-`cData`
+`cData`\
 [in] The number of elements in `data`.
 
-`data`
+`data`\
 [in] An array of `COR_PRF_EVENT_DATA` containing the event arguments.
 
-`pActivityId`
+`pActivityId`\
 [in] A pointer to a GUID specifying the event's activity ID.
 
-`pRelatedActivityId`
+`pRelatedActivityId`\
 [in] A pointer to a GUID specifying the event's related activity ID.
 
 ## Requirements  

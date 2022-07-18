@@ -38,5 +38,5 @@ Once destroyed, a handle can no longer be used.
 ## See also
 
 - [Profiling Interfaces](profiling-interfaces.md)
-- [ICorProfilerInfo13 Interface](ICorProfilerInfo13-interface.md)
+- [ICorProfilerInfo13 Interface](icorprofilerinfo13-interface.md)
 - [CreateHandle Method](icorprofilerinfo13-createhandle-method.md)

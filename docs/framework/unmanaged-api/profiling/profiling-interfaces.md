@@ -93,7 +93,7 @@ Provides methods to get and set environment variables in the process.
 Provides methods to create EventPipe sessions, events, and providers.
 
 [ICorProfilerInfo13 Interface](icorprofilerinfo13-interface.md)
-provides methods to manage weak, strong and pinned handles wrapping objects.
+Provides methods to manage weak, strong, and pinned handles that wrap objects.
 
 [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)  
 Provides methods to sequentially iterate through a collection of modules loaded by the application or the profiler.  

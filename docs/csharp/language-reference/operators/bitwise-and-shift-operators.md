@@ -89,7 +89,7 @@ The high-order empty bit positions are set based on the type of the left-hand op
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LogicalRightShift":::
 
 > [!NOTE]
-> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. This is preferred to casting a left-hand operand to an unsigned type and then casting the shift operation result back to a signed type.
+> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. This is preferred to casting a left-hand operand to an unsigned type and then casting the result of a shift operation back to a signed type.
 
 ## Unsigned right-shift operator >>>
 

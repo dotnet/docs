@@ -1,7 +1,8 @@
 ---
 title: "How to: Return a Value from a Task"
 description: See how to use the System.Threading.Tasks.Task<TResult> type to return a value from the Result property in .NET.
-ms.date: "03/30/2017"
+ms.date: "07/18/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"

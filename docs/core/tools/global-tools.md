@@ -3,7 +3,8 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 02/12/2020
+ms.date: 07/18/2022
+ms.custom: devdivchpfy22
 ---
 # How to manage .NET tools
 
@@ -13,7 +14,7 @@ A .NET tool is a special NuGet package that contains a console application. A to
 
 * As a global tool.
 
-  The tool binaries are installed in a default directory that is added to the PATH environment variable. You can invoke the tool from any directory on the machine without specifying its location. One version of a tool is used for all directories on the machine.
+  The tool binaries are installed in a default directory that's added to the PATH environment variable. You can invoke the tool from any directory on the machine without specifying its location. One version of a tool is used for all directories on the machine.
 
 * As a global tool in a custom location (also known as a tool-path tool).
 
@@ -21,25 +22,25 @@ A .NET tool is a special NuGet package that contains a console application. A to
 
 * As a local tool (applies to .NET Core SDK 3.0 and later).
 
-  The tool binaries are installed in a default directory. You invoke the tool from the installation directory or any of its subdirectories. Different directories can use different versions of the same tool.
+  The tool binaries are installed in a default directory. You can invoke the tool from the installation directory or any of its subdirectories. Different directories can use different versions of the same tool.
   
   The .NET CLI uses manifest files to keep track of which tools are installed as local to a directory. When the manifest file is saved in the root directory of a source code repository, a contributor can clone the repository and invoke a single .NET CLI command that installs all of the tools listed in the manifest files.
 
 > [!IMPORTANT]
-> .NET tools run in full trust. Do not install a .NET tool unless you trust the author.
+> .NET tools run in full trust. Don't install a .NET tool unless you trust the author.
 
 ## Find a tool
 
 Here are some ways to find tools:
 
-* Use the [dotnet tool search](dotnet-tool-search.md) command to find a tool that is published to NuGet.org.
+* Use the [dotnet tool search](dotnet-tool-search.md) command to find a tool that's published to NuGet.org.
 * Search the [NuGet](https://www.nuget.org) website by using the ".NET tool" package type filter. For more information, see [Finding and choosing packages](/nuget/consume-packages/finding-and-choosing-packages).
 * See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/main/src/Tools).
 * Learn about diagnostic tools at [.NET diagnostic tools](../diagnostics/index.md#net-core-diagnostic-global-tools).
 
 ## Check the author and statistics
 
-Since .NET tools run in full trust, and global tools are added to the PATH environment variable, they can be very powerful. Don't download tools from people you don't trust.
+Since .NET tools run in full trust and global tools are added to the PATH environment variable, they can be powerful. Don't download tools from people you don't trust.
 
 If the tool is hosted on NuGet, you can check the author and statistics by searching for the tool.
 
@@ -65,7 +66,7 @@ The default location for a tool's binaries depends on the operating system:
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-This location is added to the user's path when the SDK is first run, so global tools can be invoked from any directory without specifying the tool location.
+This location is added to the user's path when the SDK is first run. So, global tools can be invoked from any directory without specifying the tool location.
 
 Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
 
@@ -85,7 +86,7 @@ On Linux or macOS:
 dotnet tool install dotnetsay --tool-path ~/bin
 ```
 
-The .NET SDK doesn't add this location automatically to the PATH environment variable. To [invoke a tool-path tool](#invoke-a-tool-path-tool), you have to make sure the command is available by using one of the following methods:
+The .NET SDK doesn't add this location automatically to the PATH environment variable. To [invoke a tool-path tool](#invoke-a-tool-path-tool), you have to ensure that the command is available by using one of the following methods:
 
 * Add the installation directory to the PATH environment variable.
 * Specify the full path to the tool when you invoke it.
@@ -107,7 +108,7 @@ This command creates a manifest file named *dotnet-tools.json* under the *.confi
 dotnet tool install dotnetsay
 ```
 
-The command output shows which manifest file the newly installed tool is in, similar to the following example:
+The command output shows, which manifest file the newly installed tool is in, similar to the following example:
 
 ```console
 You can invoke the tool from this directory using the following command:
@@ -139,7 +140,7 @@ The following example shows a manifest file with two local tools installed:
 }
 ```
 
-You typically add a local tool to the root directory of the repository. After you check in the manifest file to the repository, developers who check out code from the repository get the latest manifest file. To install all of the tools listed in the manifest file, they run the `dotnet tool restore` command:
+You typically add a local tool to the root directory of the repository. After you check in the manifest file to the repository, developers who check out code from the repository gets the latest manifest file. To install all of the tools listed in the manifest file, they run the `dotnet tool restore` command:
 
 ```dotnetcli
 dotnet tool restore
@@ -169,7 +170,7 @@ dotnet tool install --global dotnetsay --version "*-rc*"
 
 ## Use a tool
 
-The command that you use to invoke a tool may be different from the name of the package that you install. To display all of the tools currently installed on the machine for the current user, use the [dotnet tool list](dotnet-tool-list.md) command:
+The command that you use to invoke a tool might be different from the name of the package that you install. To display all of the tools currently installed on the machine for the current user, use the [dotnet tool list](dotnet-tool-list.md) command:
 
 ```dotnetcli
 dotnet tool list
@@ -184,7 +185,7 @@ botsay          1.0.0        botsay         /home/name/repository/.config/dotnet
 dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
 ```
 
-As shown in this example, the list shows local tools. To see global tools, use the `--global` option, and to see tool-path tools, use the `--tool-path` option.
+As shown in this example, the list shows local tools. To see global tools, use the `--global` option. To see tool-path tools, use the `--tool-path` option.
 
 ### Invoke a global tool
 
@@ -204,7 +205,7 @@ dotnet doc
 However, in the following scenario you can't use the `dotnet` command to invoke a global tool:
 
 * A global tool and a local tool have the same command prefixed by `dotnet-`.
-* You want to invoke the global tool from a directory that is in scope for the local tool.
+* You want to invoke the global tool from a directory that's in scope for the local tool.
 
 In this scenario, `dotnet doc` and `dotnet dotnet-doc` invoke the local tool. To invoke the global tool, use the command by itself:
 
@@ -214,7 +215,7 @@ dotnet-doc
 
 ### Invoke a tool-path tool
 
-To invoke a global tool that is installed by using the `tool-path` option, make sure the command is available, as explained [earlier in this article](#install-a-global-tool-in-a-custom-location).
+To invoke a global tool that's installed by using the `tool-path` option, ensure that the command is available as explained [earlier in this article](#install-a-global-tool-in-a-custom-location).
 
 ### Invoke a local tool
 
@@ -243,7 +244,7 @@ dotnet tool update --tool-path <packagename>
 dotnet tool update <packagename>
 ```
 
-For a local tool, the SDK finds the first manifest file that contains the package ID by looking in the current directory and parent directories. If there is no such package ID in any manifest file, the SDK adds a new entry to the closest manifest file.
+For a local tool, the SDK finds the first manifest file that contains the package ID by looking in the current directory and parent directories. If there's no such package ID in any manifest file, the SDK adds a new entry to the closest manifest file.
 
 ## Uninstall a tool
 
@@ -274,6 +275,6 @@ dotnet <command> --help
 
 ## See also
 
-- [Tutorial: Create a .NET tool using the .NET CLI](global-tools-how-to-create.md)
-- [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
-- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)
+* [Tutorial: Create a .NET tool using the .NET CLI](global-tools-how-to-create.md)
+* [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
+* [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

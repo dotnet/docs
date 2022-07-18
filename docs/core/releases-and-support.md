@@ -14,9 +14,9 @@ This article describes release types, servicing updates, SDK feature bands, supp
 
 New major .NET versions are released annually in November, at [.NET Conf](https://www.dotnetconf.net/).
 
-Patch updates are released monthly on the second tuesday of each month, also known as Patch Tuesday.
+Patch updates are released monthly on the second Tuesday of each month, also known as Patch Tuesday.
 
-Minor versions of the .NET SDK are releases approximately quarterly. These are known as [feature bands](#feature-bands-sdk-only).
+Minor versions of the .NET SDK are released approximately quarterly. These are known as [feature bands](#feature-bands-sdk-only).
 
 ## Release types
 
@@ -24,21 +24,21 @@ Each .NET release is defined as either  **Short Term Support (STS)** or **Long T
 
 The release types:
 
-* **STS** releases are supported for eighteen months, released in even-numbered years. They are intended for users that want to take advantage of the newest features and improvements and to stay on the leading edge of .NET innovation.
-* **LTS** releases are supported for three years, released in odd-numbered years. They are intended for users that want the stability and lower cost of maintaining an application for an extended period, only needing to upgrade their .NET version for security patches.
+* **STS** releases are  released in even-numbered years and are supported for eighteen months. They are intended for users that want to take advantage of the newest features and improvements and to stay on the leading edge of .NET innovation.
+* **LTS** releases are released in odd-numbered years and are supported for three years. They are intended for users that want the stability and lower cost of maintaining an application for an extended period, only needing to upgrade their .NET version for security patches.
 
 Note: **STS** releases were previously called **Current**.
 
-LTS and STS releases differ only by support duration. The .NET team follows the same software engineering and release processes for both release types, including for security, compatibility, and reliability. Both releases may contain major new features and breaking changes. The .NET team aspires to enable straightforward migration from one release to another, independent of release type.
+LTS and STS releases differ only by support duration. The .NET team follows the same software engineering and release processes for both release types, including for security, compatibility, and reliability. Both release types may contain major new features and breaking changes. The .NET team aspires to enable straightforward migration from one release to another, independent of release type.
 
 ## Support phases
 
 .NET releases go through multiple support phases, with varying support levels.
 
 * **Preview** releases are not supported but are offered for public testing and for the opportunity to give feedback.
-* **Go-live** support enables users to deploy a pre-release build in production, and are supported by Microsoft. These are typically Release Candidate (RC) releases.
-* **Active** support is provided for the majority of the period after a release is Generally Available (GA). Functional and security improvements will be provided, including support for new operating system versions.
-* **Maintenance** support is provided for the last six months of support. Improvements are limited to security fixes. Support for new operating system versions will be provided on a best-effort basis.
+* **Go-live** support enables users to deploy a pre-release build in production and be supported by Microsoft. These are typically Release Candidate (RC) releases.
+* **Active** support is provided for the majority of the period after a release is Generally Available (GA) and before support ends. Functional and security improvements are provided, including support for new operating system versions.
+* **Maintenance** support is provided for the last six months of support. Improvements are limited to security fixes. Support for new operating system versions are provided on a best-effort basis.
 * **End-of-life (EOL)** marks the point where a release is no longer supported.
 
 .NET uses the [modern lifecycle](/lifecycle/policies/modern) for support and servicing. It is also used for .NET Framework.
@@ -77,4 +77,4 @@ You need to be on a supported servicing level (the latest available servicing up
 
 ### Community support
 
-For community support, see [dotnet/core](https://github.com/dotnet/core) or our [Community page](https://dotnet.microsoft.com/platform/community).
+For community support, open an issue in the [dotnet/core](https://github.com/dotnet/core) GitHub repo or on our [Community page](https://dotnet.microsoft.com/platform/community).

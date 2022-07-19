@@ -4,8 +4,7 @@ description: Create a Hello World .NET app.
 author: adegeo
 ms.author: adegeo
 ms.date: 07/19/2022
-ms.custom: devdivchpfy22
-ms.custom: vs-dotnet
+ms.custom: vs-dotnet, devdivchpfy22
 ms.topic: tutorial
 ---
 # Get started with .NET

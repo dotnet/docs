@@ -27,16 +27,16 @@ Creates an EventPipe provider that the profiler can use to write events for othe
   
 ## Parameters
 
-`provider`
+`provider`\
 [in] The ID of the provider to provide the name for.
 
-`cchName`
+`cchName`\
 [in] The size, in characters, of `providerName`.
 
-`pcchName`
+`pcchName`\
 [out] A pointer to the total character length of `providerName`.
 
-`providerName`
+`providerName`\
 [out] A caller provided wide character buffer. When the function returns the buffer will contain the name of the provider.
 
 ## Requirements  

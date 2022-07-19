@@ -31,10 +31,10 @@ HRESULT JITCachedFunctionSearchStarted(
   
 ## Parameters
 
-`functionId`
+`functionId`\
 [in] The ID of the function for which the search is being performed.
 
-`pbUseCachedFunction`
+`pbUseCachedFunction`\
 [out] `true` if the execution engine should use the cached version of a function (if available); otherwise `false`. If the value is `false`, the execution engine JIT-compiles the function instead of using a version that is not JIT-compiled.
 
 ## Remarks  

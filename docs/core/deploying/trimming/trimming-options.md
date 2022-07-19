@@ -81,6 +81,12 @@ In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level 
 
 The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
 
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+In .NET 7, `<TrimMode>full</TrimMode>` is the default, but if you change the trim mode to `partial`, you can
+opt-in individual assemblies to trimming.
+
 ```xml
 <ItemGroup>
   <TrimmableAssembly Include="MyAssembly" />
@@ -89,7 +95,6 @@ The framework libraries have this attribute. In .NET 6+, you can also opt in to 
 
 This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
 
-:::zone-end
 
 ## Trimming settings for individual assemblies
 

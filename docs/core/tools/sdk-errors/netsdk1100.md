@@ -8,7 +8,7 @@ ms.date: 07/08/2022
 f1_keywords:
 - NETSDK1100
 ---
-# NETSDK1100: The target framework is out of support
+# NETSDK1100: Set the EnableWindowsTargeting property to true
 
 NETSDK1100 indicates that you're building a project that targets Windows on Linux or macOS. The full error message is similar to the following example:
 
@@ -26,4 +26,4 @@ To resolve this error, set the `EnableWindowsTargeting` property to true. You ca
 </Project>
 ```
 
-By default, we download all targeting packs (and runtime packs for self-contained builds) for the current target framework whether they're needed or not, because they might be brought in by a transitive framework reference. We didn't want to ship the Windows targeting packs with the non-Windows SDK builds, but we also didn't want a vanilla Console or ASP.NET Core app to automatically download these targeting and runtime packs the first time you build. The `EnableWindowsTargeting` property enables them to only be downloaded if you opt in.
+By default, .NET downloads all targeting packs (and runtime packs for self-contained builds) for the current target framework whether they're needed or not, because they might be brought in by a transitive framework reference. We didn't want to ship the Windows targeting packs with the non-Windows SDK builds, but we also didn't want a vanilla Console or ASP.NET Core app to automatically download these targeting and runtime packs the first time you build. The `EnableWindowsTargeting` property enables them to only be downloaded if you opt in.

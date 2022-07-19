@@ -66,7 +66,7 @@ Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/c
 
 ### Native Debug Information
 
-The native AOT publishing follows platform conventions for native toolchains. The default behavior of native toolchains on Windows is to produce debug information in separate .pdb file. The default behavior of native toolchains on Linux is to include the debug information in the native binary that makes the native binary significantly larger.
+The native AOT publishing follows platform conventions for native toolchains. The default behavior of native toolchains on Windows is to produce debug information in a separate _.pdb_ file. The default behavior of native toolchains on Linux is to include the debug information in the native binary which makes the native binary significantly larger.
 
 Set the `StripSymbols` property to `true` to produce the debug information in a separate _.dbg_ file and exclude it from the native binary on Linux. This property has no effect on Windows.
 

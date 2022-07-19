@@ -16,5 +16,5 @@ A runtime pack that your project requires was not downloaded. The full error mes
 
 This can happen in the following scenarios:
 
-* You tried to publish without building first and so the runtime pack was not available. Try running `dotnet build` before running `dotnet publish`.
+* The publish parameters are different than what’s in the project file. Review publish parameters and change any instances where publish parameters differ from the project file.
 * You used Debug configuration to build an app that is set up to require Release configuration. Try building with Release configuration.

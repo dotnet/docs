@@ -89,10 +89,10 @@ Provides methods to modify function IL, query information from the runtime, and 
 [ICorProfilerInfo11 Interface](icorprofilerinfo11-interface.md)  
 Provides methods to get and set environment variables in the process.
 
-[ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)
+[ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)\
 Provides methods to create EventPipe sessions, events, and providers.
 
-[ICorProfilerInfo13 Interface](icorprofilerinfo13-interface.md)
+[ICorProfilerInfo13 Interface](icorprofilerinfo13-interface.md)\
 Provides methods to manage weak, strong, and pinned handles that wrap objects.
 
 [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)  

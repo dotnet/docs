@@ -25,13 +25,13 @@ Creates a handle that wraps a specified object.
   
 ## Parameters
 
-`object`
+`object`\
 [in] The object reference to wrap with a handle.
 
-`type`
+`type`\
 [in] The type of handle to create.
 
-`pHandle`
+`pHandle`\
 [out] A caller-provided pointer that will point to the handle created to wrap the specified `object`.
 
 ## Remarks
@@ -50,7 +50,9 @@ It is recommended to have less than 4096 handles allocated at the same time to a
 ## Requirements  
 
 **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
+
 **Header:** CorProf.idl, CorProf.h
+
 **.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-70-md.md)]
   
 ## See also

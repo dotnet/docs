@@ -24,10 +24,10 @@ Returns the object wrapped by a specified handle.
   
 ## Parameters
 
-`handle`
+`handle`\
 [in] The handle wrapping an object.
 
-`pObject`
+`pObject`\
 [out] A caller-provided pointer that will point to the object wrapped by the specified `handle`.
 
 ## Remarks
@@ -37,7 +37,9 @@ If `*pObject` is null, the object wrapped by this handle is no longer alive and 
 ## Requirements  
 
 **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
+
 **Header:** CorProf.idl, CorProf.h
+
 **.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-70-md.md)]
   
 ## See also

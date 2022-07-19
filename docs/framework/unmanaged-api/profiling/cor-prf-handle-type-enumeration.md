@@ -40,7 +40,9 @@ typedef enum
 ## Requirements  
 
 **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
+
 **Header:** CorProf.idl, CorProf.h
+
 **.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-70-md.md)]
   
 ## See also

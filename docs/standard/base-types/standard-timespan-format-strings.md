@@ -95,11 +95,11 @@ Elements in square brackets ([ and ]) are optional. The colon (:) is a literal s
 
 ## The General Long ("G") Format Specifier  
 
- The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
+The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
   
- [-]*d*:*hh*:*mm*:*ss*.*fffffff*  
+`[-]d:hh:mm:ss.fffffff`  
   
- Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
+Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
   
 |Element|Description|  
 |-------------|-----------------|  

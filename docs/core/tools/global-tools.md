@@ -3,7 +3,7 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 07/18/2022
+ms.date: 07/19/2022
 ms.custom: devdivchpfy22
 ---
 # How to manage .NET tools
@@ -66,7 +66,7 @@ The default location for a tool's binaries depends on the operating system:
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-This location is added to the user's path when the SDK is first run. So, global tools can be invoked from any directory without specifying the tool location.
+This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
 
 Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
 
@@ -108,7 +108,7 @@ This command creates a manifest file named *dotnet-tools.json* under the *.confi
 dotnet tool install dotnetsay
 ```
 
-The command output shows, which manifest file the newly installed tool is in, similar to the following example:
+The command output shows which manifest file the newly installed tool is in, similar to the following example:
 
 ```console
 You can invoke the tool from this directory using the following command:
@@ -140,7 +140,7 @@ The following example shows a manifest file with two local tools installed:
 }
 ```
 
-You typically add a local tool to the root directory of the repository. After you check in the manifest file to the repository, developers who check out code from the repository gets the latest manifest file. To install all of the tools listed in the manifest file, they run the `dotnet tool restore` command:
+You typically add a local tool to the root directory of the repository. After you check in the manifest file to the repository, developers who check out code from the repository get the latest manifest file. To install all of the tools listed in the manifest file, they run the `dotnet tool restore` command:
 
 ```dotnetcli
 dotnet tool restore

@@ -1,7 +1,7 @@
 ---
 title: "Composite formatting"
 description: Learn about .NET composite formatting, which takes as input a list of objects and a composite format string, containing fixed text with indexed placeholders.
-ms.date: "07/18/2022"
+ms.date: "07/19/2022"
 ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs: 
@@ -23,7 +23,7 @@ The .NET composite formatting feature takes a list of objects and a composite fo
 > [!IMPORTANT]
 > Instead of using composite format strings, you can use *interpolated strings* if the language and language version that you're using support them. An interpolated string is a string that contains *interpolated expressions*. Each interpolated expression is resolved with the expression's value and included in the result string when the string is assigned. For more information, see [String interpolation (C# Reference)](../../csharp/language-reference/tokens/interpolated.md) and [Interpolated strings (Visual Basic Reference)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md).
 
-The composite formatting feature is supported by methods as follows:  
+The composite formatting feature is supported by the following methods:  
   
 - <xref:System.String.Format%2A?displayProperty=nameWithType>, which returns a formatted result string.  
   
@@ -40,14 +40,14 @@ The composite formatting feature is supported by methods as follows:
   
 ## Composite Format String  
 
- A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.  
+ A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.  
   
  Consider the following <xref:System.String.Format%2A> code fragment:  
   
  [!code-csharp[Formatting.Composite#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#1)]
  [!code-vb[Formatting.Composite#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#1)]  
   
- The fixed text is "`Name =` " and "`, hours =`." The format items are "`{0}`", whose index is 0, which corresponds to the object `name`, and "`{1:hh}`", whose index is 1, which corresponds to the object `DateTime.Now`.  
+ The fixed text is "`Name =` " and "`, hours =`". The format items are "`{0}`", whose index is 0, which corresponds to the object `name`, and "`{1:hh}`", whose index is 1, which corresponds to the object `DateTime.Now`.  
   
 ## Format Item Syntax  
 
@@ -59,12 +59,12 @@ The composite formatting feature is supported by methods as follows:
   
 ### Index Component  
 
- The mandatory *index* component, also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is 0 formats the first object in the list. The format item whose parameter specifier is 1 formats the second object in the list and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:  
+ The mandatory *index* component, also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is 0 formats the first object in the list. The format item whose parameter specifier is 1 formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:  
   
  [!code-csharp[Formatting.Composite#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#7)]
  [!code-vb[Formatting.Composite#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/index1.vb#7)]  
   
- Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string such as, "0x{0:X} {0:E} {0:N}", as the following example shows:
+ Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string such as "0x{0:X} {0:E} {0:N}", as the following example shows:
   
  [!code-csharp[Formatting.Composite#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#10)]
  [!code-vb[Formatting.Composite#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/index1.vb#10)]  
@@ -87,10 +87,7 @@ The composite formatting feature is supported by methods as follows:
 
  The optional *formatString* component is a format string that's appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value. Specify a standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object, or an [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value. If *formatString* isn't specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
   
- The following table lists types or categories of types in the .NET class library that support a predefined set of format strings, and provides links to the articles that list the supported format strings.
-
->[!NOTE]
-> The string formatting is an extensible mechanism that defines new format strings for all existing types as well as defines a set of format strings supported by an application-defined type.
+ The following table lists types or categories of types in the .NET class library that support a predefined set of format strings, and provides links to the articles that list the supported format strings. String formatting is an extensible mechanism that makes it possible to define new format strings for all existing types as well as to define a set of format strings supported by an application-defined type.
 
 For more information, see the <xref:System.IFormattable> and <xref:System.ICustomFormatter> interface articles.  
   
@@ -104,9 +101,9 @@ For more information, see the <xref:System.IFormattable> and <xref:System.ICusto
   
 ### Escaping Braces  
 
- Opening and closing braces are interpreted as starting and ending a format item. So, you must use an escape sequence to display a literal opening brace or closing brace. Specify two opening braces ("{{") in the fixed text to display one opening brace ("{"), or two closing braces ("}}") to display one closing brace ("}"). Braces in a format item are interpreted sequentially in the order they're encountered. Interpreting nested braces isn't supported.  
+ Opening and closing braces are interpreted as starting and ending a format item. So you must use an escape sequence to display a literal opening brace or closing brace. Specify two opening braces ("{{") in the fixed text to display one opening brace ("{"), or two closing braces ("}}") to display one closing brace ("}"). Braces in a format item are interpreted sequentially in the order they're encountered. Interpreting nested braces isn't supported.  
   
- The way escaped braces are interpreted can lead to unexpected results. For example, consider the format item "{{{0:D}}}", which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. However, the format item is interpreted in the following manner:  
+ The way escaped braces are interpreted can lead to unexpected results. For example, consider the format item "{{{0:D}}}", which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. However, the format item is actually interpreted in the following manner:  
   
 1. The first two opening braces ("{{") are escaped and yield one opening brace.  
   
@@ -125,7 +122,7 @@ For more information, see the <xref:System.IFormattable> and <xref:System.ICusto
   
 ### Processing Order  
 
- If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value isn't `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it's cached during the call of the composite formatting method.
+ If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value isn't `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it's cached for the duration of the call of the composite formatting method.
   
  Each value in the parameter list that corresponds to a format item is converted to a string as follows:  
   

@@ -43,11 +43,11 @@ The following table lists the standard time interval format specifiers.
 
 ## The Constant ("c") Format Specifier  
 
- The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
+The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
   
- [-][*d*.]*hh*:*mm*:*ss*[.*fffffff*]  
+`[-][d.]hh:mm:ss[.fffffff]`  
   
- Elements in square brackets ([ and ]) are optional. The period (.) and colon (:) are literal symbols. The following table describes the remaining elements.  
+Elements in square brackets ([ and ]) are optional. The period (.) and colon (:) are literal symbols. The following table describes the remaining elements.  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -70,11 +70,11 @@ The following table lists the standard time interval format specifiers.
 
 ## The General Short ("g") Format Specifier  
 
- The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
+The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
   
- [-][*d*:]*h*:*mm*:*ss*[.*FFFFFFF*]  
+`[-][d:]h:mm:ss[.FFFFFFF]`  
   
- Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
+Elements in square brackets ([ and ]) are optional. The colon (:) is a literal symbol. The following table describes the remaining elements.  
   
 |Element|Description|  
 |-------------|-----------------|  

@@ -1,7 +1,8 @@
 ---
 title: "How to: Compress and extract files"
 description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
-ms.date: "01/14/2019"
+ms.date: "07/19/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +14,7 @@ ms.assetid: e9876165-3c60-4c84-a272-513e47acf579
 ---
 # How to: Compress and extract files
 
-The <xref:System.IO.Compression> namespace contains the following types for compressing and decompressing files and streams. You can also use these types to read and modify the contents of a compressed file.
+The <xref:System.IO.Compression> namespace contains the following types for compressing and decompressing files and streams. You can also use these types to read and modify the contents of a compressed file:
 
 - <xref:System.IO.Compression.ZipFile>
 - <xref:System.IO.Compression.ZipArchive>

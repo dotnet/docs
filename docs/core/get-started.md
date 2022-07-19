@@ -3,7 +3,8 @@ title: Get started with .NET
 description: Create a Hello World .NET app.
 author: adegeo
 ms.author: adegeo
-ms.date: 09/29/2020
+ms.date: 07/19/2022
+ms.custom: devdivchpfy22
 ms.custom: vs-dotnet
 ms.topic: tutorial
 ---
@@ -35,4 +36,4 @@ Congratulations! You've created a simple .NET application.
 
 ## Next steps
 
-Get started developing .NET applications by following a [step-by-step tutorial](../standard/get-started.md) or by watching [.NET 101 videos](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) on YouTube.
+Get started on developing .NET applications by following a [step-by-step tutorial](../standard/get-started.md) or by watching [.NET 101 videos](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) on YouTube.

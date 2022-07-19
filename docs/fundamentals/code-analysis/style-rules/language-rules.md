@@ -81,7 +81,7 @@ The style rules in this section are applicable to both C# and Visual Basic.
 
 The style rules in this section are applicable to C# language only.
 
-- ['var' preferences](ide0007-ide0008.md)
+- ['var' preferences (IDE0007 and IDE0008)](ide0007-ide0008.md)
 - [Expression-bodied members](expression-bodied-members.md)
   - [Use expression body for constructors (IDE0021)](ide0021.md)
   - [Use expression body for methods (IDE0022)](ide0022.md)
@@ -115,10 +115,11 @@ The style rules in this section are applicable to C# language only.
 - [Code block preferences](code-block-preferences.md)
   - [Add braces (IDE0011)](ide0011.md)
   - [Use simple 'using' statement (IDE0063)](ide0063.md)
-- ['using' directive preferences](ide0065.md)
+- ['using' directive preferences (IDE0065)](ide0065.md)
 - [Modifier preferences](modifier-preferences.md#c-modifier-preferences)
   - [Make local function static (IDE0062)](ide0062.md)
   - [Make struct fields writable (IDE0064)](ide0064.md)
+- [Namespace declaration preferences (IDE0160 and IDE0161)](ide0160-ide0161.md)
 
 ## Visual Basic style rules
 

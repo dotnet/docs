@@ -2,7 +2,7 @@
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
 author: tdykstra
-ms.date: 02/24/2022
+ms.date: 07/14/2022
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
@@ -108,11 +108,11 @@ You can download .NET from:
 
 .NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) [project](https://dotnetfoundation.org/projects/netcore/). .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
-.NET source and and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
+.NET source and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
 
 ## Support
 
-[Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 architectures. It is also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
+[Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 architectures. It's also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
 
 New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-term Support (STS) releases and are supported for 18 months. The quality level, breaking change policies, and all other aspects of the releases are the same. For more information, see [Releases and support](releases-and-support.md).
 
@@ -131,7 +131,7 @@ The [Common Language Runtime (CLR)](../standard/clr.md) is the foundation all .N
 * High level support for programming languages.
 * Cross-platform design.
 
-.NET is sometimes called a "managed code" runtime. It is called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR virtualizes (or abstracts) a variety of operating system and hardware concepts, such as memory, threads, and exceptions.
+.NET is sometimes called a "managed code" runtime. It's called *managed* primarily because it uses a garbage collector for memory management and because it enforces type and memory safety. The CLR virtualizes (or abstracts) various operating system and hardware concepts, such as memory, threads, and exceptions.
 
 The CLR was designed to be a cross-platform runtime from its inception. It has been ported to multiple operating systems and architectures. Cross-platform .NET code typically does not need to be recompiled to run in new environments. Instead, you just need to install a different runtime to run your app.
 
@@ -211,7 +211,7 @@ MSBuild and the .NET CLI can be used with various continuous integration tools a
 * [CAKE for C#](https://cakebuild.net/)
 * [FAKE for F#](https://fake.build/)
 
-For more information, see [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md)
+For more information, see [Use the .NET SDK in Continuous Integration (CI) environments](../devops/dotnet-cli-and-continuous-integration.md).
 
 ## Deployment models
 
@@ -222,7 +222,7 @@ For more information, see [Using .NET SDK and tools in Continuous Integration (C
 
 .NET apps are launched with a native executable, by default. The executable is both operating system and architecture-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).
 
-Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://mcr.microsoft.com/catalog?search=dotnet) for a variety of target environments.
+Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://mcr.microsoft.com/catalog?search=dotnet) for various target environments.
 
 ## .NET history
 

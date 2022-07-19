@@ -1,7 +1,7 @@
-﻿namespace GenericsTwo
-{
+namespace Generics.Interfaces;
 
-//<Snippet29>
+
+//<GenericLists>
 //Type parameter T in angle brackets.
 public class GenericList<T> : System.Collections.Generic.IEnumerable<T>
 {
@@ -197,5 +197,42 @@ public class Program
         System.Console.WriteLine("Done with sorted list");
     }
 }
-//</Snippet29>
+//</GenericLists>
+
+//<GenericStack>
+class Stack<T> where T : System.IComparable<T>, IEnumerable<T>
+{
 }
+//</GenericStack>
+
+//<GenericDictionary>
+interface IDictionary<K, V>
+{
+}
+//</GenericDictionary>
+
+//<Months>
+interface IMonth<T> { }
+
+interface IJanuary : IMonth<int> { }  //No error
+interface IFebruary<T> : IMonth<int> { }  //No error
+interface IMarch<T> : IMonth<T> { }    //No error
+                                       //interface IApril<T>  : IMonth<T, U> {}  //Error
+//</Months>
+
+
+//<BaseInterfaces>
+interface IBaseInterface<T> { }
+
+class SampleClass : IBaseInterface<string> { }
+//</BaseInterfaces>
+
+//<InterfaceInheritance>
+interface IBaseInterface1<T> { }
+interface IBaseInterface2<T, U> { }
+
+class SampleClass1<T> : IBaseInterface1<T> { }          //No error
+class SampleClass2<T> : IBaseInterface2<T, string> { }  //No error
+//</InterfaceInheritance>
+
+

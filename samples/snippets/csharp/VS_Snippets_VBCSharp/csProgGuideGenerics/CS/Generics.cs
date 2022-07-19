@@ -359,45 +359,6 @@ namespace CsCsrefProgrammingGenerics
     }
 
     //---------------------------------------------------------------------------
-    class WrapInterfaces
-    {
-        //<Snippet30>
-        class Stack<T> where T : System.IComparable<T>, IEnumerable<T>
-        {
-        }
-        //</Snippet30>
-
-        //<Snippet31>
-        interface IDictionary<K, V>
-        {
-        }
-        //</Snippet31>
-
-        //<Snippet32>
-        interface IMonth<T> { }
-
-        interface IJanuary     : IMonth<int> { }  //No error
-        interface IFebruary<T> : IMonth<int> { }  //No error
-        interface IMarch<T>    : IMonth<T> { }    //No error
-        //interface IApril<T>  : IMonth<T, U> {}  //Error
-        //</Snippet32>
-
-        //<Snippet33>
-        interface IBaseInterface<T> { }
-
-        class SampleClass : IBaseInterface<string> { }
-        //</Snippet33>
-
-        //<Snippet34>
-        interface IBaseInterface1<T> { }
-        interface IBaseInterface2<T, U> { }
-
-        class SampleClass1<T> : IBaseInterface1<T> { }          //No error
-        class SampleClass2<T> : IBaseInterface2<T, string> { }  //No error
-        //</Snippet34>
-    }
-
-    //---------------------------------------------------------------------------
     namespace WrapMethods
     {
         public class Test

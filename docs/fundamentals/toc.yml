@@ -266,6 +266,8 @@ items:
       href: ../core/tools/dotnet-build-server.md
     - name: dotnet clean
       href: ../core/tools/dotnet-clean.md
+    - name: dotnet dev-certs
+      href: ../core/tools/dotnet-dev-certs.md
     - name: dotnet format
       href: ../core/tools/dotnet-format.md
     - name: dotnet help
@@ -375,8 +377,6 @@ items:
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion
       href: ../core/tools/enable-tab-autocomplete.md
-    - name: Continuous integration with the CLI
-      href: ../core/tools/using-ci-with-cli.md
     - name: Develop libraries with the CLI
       href: ../core/tutorials/libraries.md
     - name: Create templates for the CLI
@@ -733,6 +733,8 @@ items:
         href: ../core/diagnostics/dotnet-dump.md
       - name: dotnet-gcdump
         href: ../core/diagnostics/dotnet-gcdump.md
+      - name: dotnet-monitor
+        href: ../core/diagnostics/dotnet-monitor.md
       - name: dotnet-trace
         href: ../core/diagnostics/dotnet-trace.md
       - name: dotnet-stack
@@ -1494,6 +1496,10 @@ items:
               href: code-analysis/style-rules/ide0090.md
             - name: IDE0180
               href: code-analysis/style-rules/ide0180.md
+          - name: Namespace declaration preferences
+            items:
+            - name: IDE0160 and IDE0161
+              href: code-analysis/style-rules/ide0160-ide0161.md
           - name: Null-checking preferences
             items:
             - name: Overview
@@ -1977,6 +1983,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: .NET CLI and Continuous Integration
+    href: ../devops/dotnet-cli-and-continuous-integration.md
   - name: Official .NET GitHub Actions
     href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials

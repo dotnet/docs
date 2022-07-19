@@ -72,4 +72,5 @@ The *Directory.build.props* file is an optional MSBuild file that can set global
 
 ## See also
 
+- [.NET Downloads](https://dotnet.microsoft.com/download/dotnet)
 - [The Current .NET SDK does not support targeting .NET Core 3.0 – Fix](https://www.ryadel.com/current-net-sdk-not-support-net-core-3-0-fix/)

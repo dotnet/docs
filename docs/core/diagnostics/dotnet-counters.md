@@ -76,11 +76,11 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`-p|--process-id <PID>`**
 
-  The ID of the process to be collect counter data from.
+  The ID of the process to collect counter data from.
 
 - **`-n|--name <name>`**
 
-  The name of the process to be collect counter data from.
+  The name of the process to collect counter data from.
 
 - **`--diagnostic-port`**
 

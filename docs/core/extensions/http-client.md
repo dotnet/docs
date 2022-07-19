@@ -118,9 +118,6 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 1. Create an instance of `HttpClient`.
 1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
 
-> [!TIP]
-> A call to `AddHttpClient<TClient>` doesn't add the `TClient` service to the `IServiceCollection`. You still need to explicitly add it with `Add{ServiceLifetime}`.
-
 ### Generated clients
 
 `IHttpClientFactory` can be used in combination with third-party libraries such as [Refit](https://github.com/paulcbetts/refit). Refit is a REST library for .NET. It allows for declarative REST API definitions, mapping interface methods to endpoints. An implementation of the interface is generated dynamically by the `RestService`, using `HttpClient` to make the external HTTP calls.

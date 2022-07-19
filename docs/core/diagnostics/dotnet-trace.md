@@ -421,7 +421,7 @@ On Windows, you can view *.nettrace* files in [Visual Studio](/visualstudio/prof
 
 On Linux, you can view the trace by changing the output format of `dotnet-trace` to `speedscope`. Change the output file format by using the `-f|--format` option. You can choose between `nettrace` (the default option) and `speedscope`. The option `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. `Speedscope` files can be opened at <https://www.speedscope.app>.
 
-For traces collected on non-Windows platforms, you can also move the trace file to a Windows machine to be view it in Visual Studio or PerfView.
+For traces collected on non-Windows platforms, you can also move the trace file to a Windows machine and view it in Visual Studio or PerfView.
 
 > [!NOTE]
 > The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.

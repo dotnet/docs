@@ -15,6 +15,12 @@ You can customize help for a specific command, option, or argument, and you can 
 
 The examples in this article work with the following command-line application:
 
+This code requires a `using` directive:
+
+```csharp
+using System.CommandLine;
+```
+
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
 
 Without customization, the following help output is produced:
@@ -35,7 +41,7 @@ Options:
   Magenta|DarkRed|DarkYellow|Gray|Green|Magenta|Red|White|Ye
   llow>
   --version                                                   Show version information
-  -?, -h, --help
+  -?, -h, --help                                              Show help and usage information
 ```
 
 ## Customize help for a single option or argument
@@ -48,9 +54,19 @@ To customize the name of an option's argument, use the option's <xref:System.Com
 * The second column text.
 * The way a default value is described.
 
-In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead of `<file>`. For the `--color` option, you can shorten the list of available colors in column one, and in column two you can add a warning that some colors won't work with some backgrounds. The following example makes these changes:
+In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead of `<file>`. For the `--color` option, you can shorten the list of available colors in column one, and in column two you can add a warning that some colors won't work with some backgrounds.
+
+To make these changes, delete the `await rootCommand.InvokeAsync(args);` line shown in the preceding code and add in its place the following code:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="first2columns" :::
+
+The additional code requires additional `using` directives:
+
+```csharp
+using System.CommandLine.Builder;
+using System.CommandLine.Help;
+using System.CommandLine.Parsing;
+```
 
 The app now produces the following help output:
 
@@ -83,6 +99,12 @@ Change the layout by adding a call to <xref:System.CommandLine.Help.HelpBuilder.
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="description" highlight="14-22" :::
 
+The preceding code requires an additional `using` directive:
+
+```csharp
+using Spectre.Console;
+```
+
 The <xref:System.CommandLine.Help.HelpBuilder.Default?displayProperty=nameWithType> class lets you reuse pieces of existing help formatting functionality and compose them into your custom help.
 
 The help output now looks like this:
@@ -108,6 +130,13 @@ Options:
   llow>                                                       light mode background.
   --version                                                   Show version information
   -?, -h, --help
+```
+
+If you want to just use a string as the replacement section text instead of formatting it with `Spectre.Console`, replace the `Prepend` code in the preceding example with the following code:
+
+```csharp
+.Prepend(
+    _ => _.Output.WriteLine("**New command description section**")
 ```
 
 ## See also

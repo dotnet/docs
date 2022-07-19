@@ -5,6 +5,7 @@ author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
 ms.topic: reference
+zone-pivot-groups: dotnet-version
 ---
 # Trimming options
 
@@ -20,11 +21,43 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
+:::zone pivot="dotnet-7-0"
+
+This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies which opted-in
+to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` would be trimmed by default. You can return to the
+previous behavior by using `<TrimMode>partial</TrimMode>`.
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0"
+
 This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
 Starting in .NET 6, this setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
 
+:::zone-end
+
 ## Trimming granularity
+
+:::zone pivot="dotnet-7-0"
+
+The default is to trim all assemblies in the app. This can be changed using the `TrimMode` property.
+
+To only trim assemblies which have opted-in to trimming, set
+
+```C#
+<TrimMode>partial</TrimMode>
+```
+
+The default setting is 
+
+```C#
+<TrimMode>full</TrimMode>
+```
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0"
 
 The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies), which overrides the property setting.
 
@@ -56,7 +89,9 @@ The framework libraries have this attribute. In .NET 6+, you can also opt in to 
 
 This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
 
-## Trimmed assemblies
+:::zone-end
+
+## Trimming settings for individual assemblies
 
 When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
 
@@ -79,9 +114,13 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
   Control whether the given assembly is trimmed.
 
+:::zone pivot="dotnet-6-0,dotnet-5-0"
+
 - `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
 
   Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
+
+:::zone-end
 
 - `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False</TrimmerSingleWarn>`
 
@@ -134,14 +173,6 @@ Setting `PublishTrimmed` in .NET 6+ also enables a Roslyn analyzer that shows a 
 - `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>`
 
   Enable a Roslyn analyzer for a subset of trim analysis warnings.
-
-## Warning versions
-
-Trim analysis respects the [`AnalysisLevel`](../../project-sdk/msbuild-props.md#analysislevel) property that controls the version of analysis warnings across the SDK. The `ILLinkWarningLevel` property controls the version of trim analysis warnings independently (similar to `WarningLevel` for the compiler):
-
-- `<ILLinkWarningLevel>5</ILLinkWarningLevel>`
-
-  Emit only warnings of the given level or lower. To include all warning versions, set the value to `9999`.
 
 ## Suppress warnings
 

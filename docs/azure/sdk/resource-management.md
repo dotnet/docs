@@ -89,7 +89,7 @@ To get started with the Azure management SDK for .NET, imagine you have a task t
 ```csharp
 using Azure.Identity;
 using Azure.ResourceManager;
-using Azure.ResourceManager.ServiceBus;1. Authenticate to the subscription and resource group that you want to work on.
+using Azure.ResourceManager.ServiceBus;
 
 var armClient = new ArmClient(new DefaultAzureCredential());
 SubscriptionResource subscription = armClient.GetDefaultSubscription();

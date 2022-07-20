@@ -63,6 +63,8 @@ items:
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: Cryptography
         items:
+        - name: Dynamic X509ChainPolicy verification time
+          href: cryptography/7.0/x509chainpolicy-verification-time.md
         - name: EnvelopedCms.Decrypt doesn't double unwrap
           href: cryptography/7.0/decrypt-envelopedcms.md
         - name: X500DistinguishedName parsing of friendly names
@@ -899,6 +901,8 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: Dynamic X509ChainPolicy verification time
+          href: cryptography/7.0/x509chainpolicy-verification-time.md
         - name: EnvelopedCms.Decrypt doesn't double unwrap
           href: cryptography/7.0/decrypt-envelopedcms.md
         - name: X500DistinguishedName parsing of friendly names

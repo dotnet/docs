@@ -95,6 +95,8 @@ opt-in individual assemblies to trimming.
 
 This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
 
+:::zone pivot="dotnet-6-0,dotnet-5-0"
+
 ## Trimming settings for individual assemblies
 
 When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
@@ -118,17 +120,15 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
   Control whether the given assembly is trimmed.
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
-
 - `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
 
   Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
 
-:::zone-end
-
 - `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False</TrimmerSingleWarn>`
 
   Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
+
+:::zone-end
 
 ## Root assemblies
 
@@ -193,8 +193,6 @@ In .NET 6+, trim analysis produces at most one warning for each assembly that co
 - `<TrimmerSingleWarn>false</TrimmerSingleWarn>`
 
   Show all detailed warnings, instead of collapsing them to a single warning per assembly.
-
-The defaults show detailed warnings for the project assembly and `ProjectReference` items. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 
 ## Remove symbols
 

@@ -465,7 +465,6 @@ Aside from the lifetime, type system, and functional features that are discussed
 [api_comwrappers_getiunknownimpl]:/dotnet/api/system.runtime.interopservices.comwrappers.getiunknownimpl
 [api_comwrappers_getorregisterobjectforcominstance]:/dotnet/api/system.runtime.interopservices.comwrappers.getorregisterobjectforcominstance
 [api_cominterfaceentry]:/dotnet/api/system.runtime.interopservices.comwrappers.cominterfaceentry
-[api_dynamicinterfacecastableimplementation]:/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
 [api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
 [api_iunknown]:/windows/win32/api/unknwn/nn-unknwn-iunknown
 [api_marshalqueryinterface]:/dotnet/api/system.runtime.interopservices.marshal.queryinterface
@@ -479,9 +478,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 [doc_garbage_collection]:../garbage-collection/index.md
 [doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
 [doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown
-[doc_nullable]:../../csharp/nullable-references.md
 [doc_unloadability]:../assembly/unloadability.md
-[doc_unsafekeyword]:../../csharp/language-reference/keywords/unsafe.md
 
 [repo_cswinrt]:https://github.com/microsoft/CsWinRT
 

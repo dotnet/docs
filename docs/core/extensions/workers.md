@@ -145,7 +145,7 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 In most common scenarios, you do not need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To achieve this, consider the following `Worker` class:
 
-:::code source="snippets/workers/signal-completion-service/Program.cs":::
+:::code source="snippets/workers/signal-completion-service/App.SignalCompletionService/Program.cs":::
 
 In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
 

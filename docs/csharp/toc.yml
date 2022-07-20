@@ -1062,6 +1062,8 @@ items:
         href: language-reference/keywords/partial-method.md
       - name: remove
         href: language-reference/keywords/remove.md
+      - name: required
+        href: language-reference/keywords/required.md
       - name: set
         href: language-reference/keywords/set.md
       - name: when (filter condition)
@@ -1233,7 +1235,7 @@ items:
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
     - name: Miscellaneous
-      displayName: Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+      displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
     displayName: unsafe code, pointers, fixed buffer, function pointer

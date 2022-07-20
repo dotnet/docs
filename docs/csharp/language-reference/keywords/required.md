@@ -24,4 +24,3 @@ The `required` modifier and the `SetsRequiredMembers` attribute enable developer
 The following code shows a class hierarchy that uses the `required` modifier for the `FirstName` and `LastName` properties:
 
 :::code language="csharp" source="./snippets/RequiredExamples.cs" id="SnippetRequired":::
-

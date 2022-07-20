@@ -76,20 +76,30 @@ You can add any restrictive access modifier to either the set or get accessors. 
 
 It's also legal to place the more restrictive modifier on the `get` accessor. For example, you could have a `public` property, but restrict the `get` accessor to `private`. That scenario is rarely done in practice.
 
-You can also restrict modifications to a property so that it can only be set in a constructor or a property initializer. You can modify the `Person` class so as follows:
+## Read-only
+
+You can also restrict modifications to a property so that it can only be set in a constructor. You can modify the `Person` class so as follows:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Snippet9":::
 
-This feature is most commonly used for initializing collections that are exposed as read-only properties:
+## Init-only
 
-```csharp
-public class Measurements
-{
-    public ICollection<DataPoint> points { get; } = new List<DataPoint>();
-}
-```
+The preceding example requires callers to use the constructor that includes the `FirstName` parameter. Callers can't use [object initializers](./programming-guide/classes-and-structs/object-and-collection-initializers.md) to assign a value to the property. To support initializers, you can make the `set` accessor an `init` accessor, as shown in the following code:
 
-## Read only and Init only
+:::code language="csharp" source="./snippets/properties/Person.cs" id="Snippet9.1":::
+
+The preceding example allows a caller to create a `Person` using the default constructor, even when that code doesn't set the `FirstName` property. Beginning in C# 11, you can *require* callers to set that property:
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="Snippet9.2":::
+
+The preceding code makes two addition to the `Person` class. First, the `FirstName` property declaration includes the `required` modifier. That means any code that creates a new `Person` must set this property. Second, the constructor that takes a `firstName` parameter has the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute. This attribute informs the compiler that this constructor sets *all* `required` members.
+
+> [!IMPORTANT]
+> Don't confuse `required` with *non-nullable*. It's valid to set a `required` property to `null` or `default`. If the type is non-nullable, such as `string` in these examples, the compiler issues a warning.
+
+Callers must either use the constructor with `SetsRequiredMembers` or set the `FirstName` property using an object initializer, as shown in the following code:
+
+:::code language="csharp" source="./snippets/properties/Program.cs" id="SnippetInitialize":::
 
 ## Computed properties
 

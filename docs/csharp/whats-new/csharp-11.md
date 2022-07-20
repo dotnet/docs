@@ -15,6 +15,7 @@ The following features are available in Visual Studio 2022 version 17.3:
 - [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
+- [Required members](#required-members)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
@@ -168,3 +169,9 @@ You've been able to test if a `string` had a specific constant value using patte
 ## Extended nameof scope
 
 Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
+
+## Required members
+
+You can add the `required` modifier to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
+
+See [init-only](../properties.md#init-only)

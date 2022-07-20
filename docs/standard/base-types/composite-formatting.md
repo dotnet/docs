@@ -50,11 +50,11 @@ The composite formatting feature is supported by methods such as the following:
   
 ## Format Item Syntax  
 
- Each format item takes the following form and consists of the following components:  
+Each format item takes the following form and consists of the following components:  
   
- `{` *index*[`,`*alignment*][`:`*formatString*]`}`  
+`{index[,alignment][:formatString]}`  
   
- The matching braces ("{" and "}") are required.  
+The matching braces ("{" and "}") are required.  
   
 ### Index Component  
 

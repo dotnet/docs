@@ -10,7 +10,7 @@
             BitwiseXor();
             BitwiseOr();
 
-            Console.WriteLine("==== << and >> operators");
+            Console.WriteLine("==== <<, >>, and >>> operators");
             LeftShift();
             RightShift();
             ShiftCount();
@@ -134,19 +134,20 @@
         {
             // <SnippetUnsignedRightShift>
             int x = -8;
-            Console.WriteLine($"Before:    {x,11}, hex: {x,8:x}, binary: {Convert.ToString(x, toBase: 2),33}");
+            Console.WriteLine($"Before:    {x,11}, hex: {x,8:x}, binary: {Convert.ToString(x, toBase: 2), 32}");
 
             int y = x >> 2;
-            Console.WriteLine($"After  >>: {y,11}, hex: {y,8:x}, binary: {Convert.ToString(y, toBase: 2),33}");
+            Console.WriteLine($"After  >>: {y,11}, hex: {y,8:x}, binary: {Convert.ToString(y, toBase: 2), 32}");
 
             int z = x >>> 2;
-            Console.WriteLine($"After >>>: {z,11}, hex: {z,8:x}, binary: {Convert.ToString(z, toBase: 2),33}");
+            Console.WriteLine($"After >>>: {z,11}, hex: {z,8:x}, binary: {Convert.ToString(z, toBase: 2), 32}");
             // Output:
-            // Before:             -8, hex: fffffff8, binary:  11111111111111111111111111111000
-            // After  >>:          -2, hex: fffffffe, binary:  11111111111111111111111111111110
-            // After >>>:  1073741822, hex: 3ffffffe, binary:    111111111111111111111111111110            
+            // Before:             -8, hex: fffffff8, binary: 11111111111111111111111111111000
+            // After  >>:          -2, hex: fffffffe, binary: 11111111111111111111111111111110
+            // After >>>:  1073741822, hex: 3ffffffe, binary:   111111111111111111111111111110
             // </SnippetUnsignedRightShift>
         }
+
         private static void ShiftCount()
         {
             // <SnippetShiftCount>
@@ -188,6 +189,10 @@
 
             a = INITIAL_VALUE;
             a >>= 4;
+            Display(a);  // output: 1111
+
+            a = INITIAL_VALUE;
+            a >>>= 4;
             Display(a);  // output: 1111
 
             void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2), 8}");

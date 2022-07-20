@@ -37,6 +37,8 @@ items:
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
           href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: Middleware no longer defers to endpoint with null request delegate
+          href: aspnet-core/7.0/middleware-null-requestdelegate.md
         - name: MVC's detection of an empty body in model binding changed
           href: aspnet-core/7.0/mvc-empty-body-model-binding.md
         - name: SignalR Hub methods try to resolve parameters from DI
@@ -585,22 +587,24 @@ items:
       items:
       - name: .NET 7
         items:
-          - name: API controller actions try to infer parameters from DI
-            href: aspnet-core/7.0/api-controller-action-parameters-di.md
-          - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
-            href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
-          - name: IHubClients and IHubCallerClients hide members
-            href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
-          - name: "Kestrel: Default HTTPS binding removed"
-            href: aspnet-core/7.0/https-binding-kestrel.md
-          - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
-            href: aspnet-core/7.0/libuv-transport-dll-removed.md
-          - name: Microsoft.Data.SqlClient updated to 4.0.1
-            href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
-          - name: MVC's detection of an empty body in model binding changed
-            href: aspnet-core/7.0/mvc-empty-body-model-binding.md
-          - name: SignalR Hub methods try to resolve parameters from DI
-            href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
+        - name: API controller actions try to infer parameters from DI
+          href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
+          href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: IHubClients and IHubCallerClients hide members
+          href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
+        - name: "Kestrel: Default HTTPS binding removed"
+          href: aspnet-core/7.0/https-binding-kestrel.md
+        - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
+          href: aspnet-core/7.0/libuv-transport-dll-removed.md
+        - name: Microsoft.Data.SqlClient updated to 4.0.1
+          href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: Middleware no longer defers to endpoint with null request delegate
+          href: aspnet-core/7.0/middleware-null-requestdelegate.md
+        - name: MVC's detection of an empty body in model binding changed
+          href: aspnet-core/7.0/mvc-empty-body-model-binding.md
+        - name: SignalR Hub methods try to resolve parameters from DI
+          href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
         items:
         - name: ActionResult<T> sets StatusCode to 200

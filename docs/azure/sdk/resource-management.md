@@ -81,6 +81,7 @@ For more information about the `Azure.Identity.DefaultAzureCredential` class, se
 
 ### Management SDK Cheat Sheet
 
+
 To get started with the Azure management SDK for .NET, imagine you have a task to create/list/update/delete a typical Azure service bus namespace, follow these steps:
 
 1. Authenticate to the subscription and resource group that you want to work on.

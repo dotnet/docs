@@ -213,7 +213,6 @@ ResourceIdentifier resourceId =
         "resourceGroupName", 
         "resourceName"); 
 ```
-
 #### Example: ResourceIdentifier TryGet methods
 
 ```csharp

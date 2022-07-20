@@ -5,9 +5,9 @@ ms.date: 07/20/2022
 ---
 # Dynamic X509ChainPolicy verification time
 
-In previous versions of .NET, the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime?displayProperty=nameWithType> value was assigned to <xref:System.DateTime.Now?displayProperty=nameWithType> when the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> object was constructed. Using the same `X509ChainPolicy` object for multiple calls to <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType> resulted in all chain builds using that same value of "now", no matter how much time had passed since the object was created.
+In previous versions of .NET, the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime?displayProperty=nameWithType> value was assigned to <xref:System.DateTime.Now?displayProperty=nameWithType> when the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> object was constructed. Using the same `X509ChainPolicy` object for multiple calls to <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType> resulted in all chain builds using that same value as the verification time, no matter how much time had passed since the object was created.
 
-The new default behavior is to use the value of `DateTime.Now` as the verification time when `X509Chain.Build()` is invoked. This change doesn't affect chain builds that explicitly assign `X509ChainPolicy.VerificationTime`.
+The new default behavior is to use the value of `DateTime.Now` when `X509Chain.Build()` is invoked as the verification time. This change doesn't affect chain builds that explicitly assign `X509ChainPolicy.VerificationTime`.
 
 ## Previous behavior
 
@@ -15,7 +15,7 @@ The <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.Verifica
 
 ## New behavior
 
-The <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime?displayProperty=nameWithType> value is assigned to <xref:System.DateTime.Now?displayProperty=nameWithType> when the `X509ChainPolicy` object is constructed, but the new `X509ChainPolicy.VerificationTimeIgnored` property defaults to `true`. When this property has a value of `true`, the <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType> method uses `DateTime.Now` instead of `X509ChainPolicy.VerificationTime` when building the chain.
+The <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime?displayProperty=nameWithType> value is assigned to <xref:System.DateTime.Now?displayProperty=nameWithType> when the `X509ChainPolicy` object is constructed, but the new `X509ChainPolicy.VerificationTimeIgnored` property defaults to `true`. When this property has a value of `true`, the <xref:System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType> method uses `DateTime.Now` as the verification time instead of `X509ChainPolicy.VerificationTime` when building the chain.
 
 Assigning a value to the `X509ChainPolicy.VerificationTime` property automatically sets `VerificationTimeIgnored` to `false`.
 

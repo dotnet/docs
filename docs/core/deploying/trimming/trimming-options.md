@@ -132,7 +132,7 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
 ## Root assemblies
 
-All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered roots for the analysis, which means that they and all of their statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
+If an assembly is not trimmed it is considered "rooted", which means that it and all of its statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
 
 ```xml
 <ItemGroup>

@@ -40,6 +40,8 @@ A field can be declared [readonly](../../language-reference/keywords/readonly.md
 
 A field can be declared [required](../../language-reference/keywords/required.md). A required field must be initialized by the constructor, or by an [object initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) when an object is created. You add the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute to any constructor declaration that initializes all required members.
 
+The `required` modifier can't be combined with the `readonly` modifier on the same field.
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

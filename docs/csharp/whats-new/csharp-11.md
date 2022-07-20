@@ -172,6 +172,6 @@ Type parameter names and parameter names are now in scope when used in a `nameof
 
 ## Required members
 
-You can add the `required` modifier to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
+You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
 See [init-only](../properties.md#init-only) for more information.

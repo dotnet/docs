@@ -3,21 +3,21 @@ title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/18/2022
+ms.date: 07/20/2022
 ms.custom: devdivchpfy22
 ---
 
 # Testing in .NET
 
-This article introduces the concept of testing and illustrates how different kinds of tests can be used to validate code. There are various tools available for testing .NET applications, such as the [.NET CLI](#net-cli) or [Integrated Development Environments (IDEs)](#ide).
+This article introduces the concept of testing and illustrates how different kinds of tests can be used to validate code. Various tools are available for testing .NET applications, such as the [.NET CLI](#net-cli) or [Integrated Development Environments (IDEs)](#ide).
 
 ## Test types
 
-Having automated tests is a great way to ensure that the application code does what its authors intend it to do. This article covers unit tests, integration tests, and load tests.
+Automated tests are a great way to ensure that the application code does what its authors intend. This article covers unit tests, integration tests, and load tests.
 
 ### Unit tests
 
-A *unit test* is a test that exercises individual software components or methods, also known as "unit of work." Unit tests should only test code within the developer's control. They don't test infrastructure concerns. Infrastructure concerns include interacting with databases, file systems, and network resources.
+A *unit test* is a test that exercises individual software components or methods, also known as a "unit of work." Unit tests should only test code within the developer's control. They don't test infrastructure concerns. Infrastructure concerns include interacting with databases, file systems, and network resources.
 
 For more information on creating unit tests, see [Testing tools](#testing-tools).
 
@@ -31,7 +31,7 @@ A *load test* aims to determine whether or not a system can handle a specified l
 
 ## Test considerations
 
-Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development) is when a unit test is written before the code it's meant to check. TDD is like creating an outline for a book before you write it. It's meant to help developers write simpler, readable, and efficient code.
+Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development) is when you write a unit test before the code it's meant to check. TDD is like creating an outline for a book before you write it. The unit test helps developers write simpler, readable, and efficient code.
 
 ## Testing tools
 
@@ -39,7 +39,7 @@ Keep in mind there are [best practices](unit-testing-best-practices.md) for writ
 
 ### xUnit
 
-[xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 writes xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). It's a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under their code of conduct.
+[xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 writes xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). It's a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under it's code of conduct.
 
 For more information, see the following resources:
 
@@ -49,7 +49,7 @@ For more information, see the following resources:
 
 ### NUnit
 
-[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially NUnit is ported from JUnit, the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org).
+[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org).
 
 For more information, see the following resources:
 
@@ -67,11 +67,11 @@ For more information, see the following resources:
 
 ### .NET CLI
 
-You can run a solutions unit test from the [.NET CLI](../tools/index.md), with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes most of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
+You can run a solutions unit test from the [.NET CLI](../tools/index.md) with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes most of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
 
 ### IDE
 
-Whether you're using Visual Studio, Visual Studio for Mac, or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
+Whether you're using Visual Studio, Visual Studio for Mac, or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example, [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
 
 ## See also
 

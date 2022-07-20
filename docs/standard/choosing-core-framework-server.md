@@ -1,7 +1,7 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 07/18/2022
+ms.date: 07/20/2022
 ms.custom: devdivchpfy22
 ---
 # .NET vs. .NET Framework for server apps
@@ -13,7 +13,7 @@ There are two supported [.NET implementations](glossary.md#implementation-of-net
 | .NET | .NET Core 1.0 - 3.1, .NET 5, and later versions of .NET. |
 | .NET Framework | .NET Framework 1.0 - 4.8 |
 
-Both share many of the same components and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
+Both share many of the same components, and you can share code across the two. However, there are fundamental differences between the two, and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
 
 Use .NET for your server application when:
 
@@ -25,7 +25,7 @@ Use .NET for your server application when:
 
 Use .NET Framework for your server application when:
 
-- Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
+- Your app currently uses the .NET Framework (recommendation is to extend instead of migrating).
 - Your app uses third-party libraries or NuGet packages not available for .NET.
 - Your app uses .NET Framework technologies that aren't available for .NET.
 - Your app uses a platform that doesn't support .NET.
@@ -44,35 +44,35 @@ If your web or service application needs to run on multiple platforms, for examp
 
 A microservices architecture allows a mix of technologies across a service boundary. This technology mix enables a gradual embrace of .NET for new microservices that work with other microservices or services. For example, you can mix microservices or services developed with .NET Framework, Java, Ruby, or other monolithic technologies.
 
-There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker fit any kind of microservices approach, as explained in the [Containers](#containers) section. All these platforms support .NET and make them ideal for hosting your microservices.
+There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker, fit any microservices approach, as explained in the [Containers](#containers) section. All these platforms support .NET and make them ideal for hosting your microservices.
 
 For more information about microservices architecture, see [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md).
 
 ### Containers
 
-Containers are commonly used with a microservices architecture. Containers can also be used to containerize web apps or services that follow any architectural pattern. .NET Framework can be used on Windows containers, but the modularity and lightweight nature of .NET makes it a better choice for containers. When you're creating and deploying a container, the size of its image is much smaller with .NET than with .NET Framework. Because it's cross-platform, you can deploy server apps to Linux Docker containers.
+Containers are commonly used with a microservices architecture. Containers can also be used to containerize web apps or services that follow any architectural pattern. .NET Framework can be used on Windows containers. Still, the modularity and lightweight nature of .NET make it a better choice for containers. When you're creating and deploying a container, the size of its image is much smaller with .NET than with .NET Framework. Because it's cross-platform, you can deploy server apps to Linux Docker containers.
 
-Docker containers can be hosted in your own Linux or Windows infrastructure, or in a cloud service such as [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Azure Kubernetes Service can manage, orchestrate, and scale container-based applications in the cloud.
+Docker containers can be hosted in your own Linux or Windows infrastructure or in a cloud service such as [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Azure Kubernetes Service can manage, orchestrate, and scale container-based applications in the cloud.
 
 ### High-performance and scalable systems
 
-When your system needs the best possible performance and scalability, .NET and ASP.NET Core are your best options. The high-performance server runtime for Windows Server and Linux makes ASP.NET Core a top performing web framework on [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#hw=ph&test=plaintext).
+When your system needs the best possible performance and scalability, .NET and ASP.NET Core are your best options. The high-performance server runtime for Windows Server and Linux makes ASP.NET Core a top-performing web framework on [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#hw=ph&test=plaintext).
 
-Performance and scalability are especially relevant for microservices architectures, where hundreds of microservices might be running. With ASP.NET Core, systems run with a much lower number of servers/Virtual Machines (VM). The reduced servers/VMs save costs in infrastructure and hosting.
+Performance and scalability are especially relevant for microservices architectures, where hundreds of microservices might be running. With ASP.NET Core, systems run with a much lower number of servers/Virtual Machines (VM). The reduced servers/VMs save costs on infrastructure and hosting.
 
-### Side by side .NET versions per application level
+### Side-by-side .NET versions per application level
 
-To install applications with dependencies on different versions of .NET, we recommend .NET. This implementation supports side-by-side installation of different versions of the .NET runtime on the same machine. The side-by-side installation allows multiple services on the same server, each of them on its own version of .NET. It also lowers risks and saves money in application upgrades and IT operations.
+To install applications with dependencies on different versions of .NET, we recommend .NET. This implementation supports the side-by-side installation of different versions of the .NET runtime on the same machine. The side-by-side installation allows multiple services on the same server, each on its own version of .NET. It also lowers risks and saves money in application upgrades and IT operations.
 
-Side-by-side installation isn't possible with .NET Framework. It's a Windows component and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
+Side-by-side installation isn't possible with .NET Framework. It's a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine because the previous version was replaced.
 
 ## When to choose .NET Framework
 
-.NET offers significant benefits for new applications and application patterns. However, .NET Framework continues to be the natural choice for many existing scenarios and as such, .NET Framework isn't replaced by .NET for all server applications.
+.NET offers significant benefits for new applications and application patterns. However, .NET Framework continues to be the natural choice for many existing scenarios, and as such, .NET Framework isn't replaced by .NET for all server applications.
 
 ### Current .NET Framework applications
 
-In most cases, you don't need to migrate your existing applications to .NET. Instead, we recommend you to use .NET as you extend an existing application, such as writing a new web service in ASP.NET Core.
+In most cases, you don't need to migrate your existing applications to .NET. Instead, we recommend using .NET as you extend an existing application, such as writing a new web service in ASP.NET Core.
 
 ### Third-party libraries or NuGet packages not available for .NET
 
@@ -90,7 +90,7 @@ Some .NET Framework technologies aren't available in .NET. The following list sh
 
 - **Workflow-related services**: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in .NET Framework.
 
-- **Language support**: Visual Basic and F# are currently supported in .NET, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
+- **Language support**: Visual Basic and F# are currently supported in .NET but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
 For more information, see [.NET Framework technologies unavailable in .NET](../core/porting/net-framework-tech-unavailable.md).
 

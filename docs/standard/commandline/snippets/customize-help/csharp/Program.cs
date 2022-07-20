@@ -88,7 +88,7 @@ class Program
             foregroundColorOption);
 
         // <first2columns>
-        fileOption.ArgumentHelpName = "<FILEPATH>";
+        fileOption.ArgumentHelpName = "FILEPATH";
 
         var parser = new CommandLineBuilder(rootCommand)
                 .UseDefaults()
@@ -144,7 +144,7 @@ class Program
             foregroundColorOption);
 
         // <description>
-        fileOption.ArgumentHelpName = "<FILEPATH>";
+        fileOption.ArgumentHelpName = "FILEPATH";
 
         var parser = new CommandLineBuilder(rootCommand)
                 .UseDefaults()

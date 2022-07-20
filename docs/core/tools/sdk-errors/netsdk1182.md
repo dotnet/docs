@@ -10,7 +10,7 @@ f1_keywords:
 ---
 # NETSDK1182: Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported
 
-NETSDK1182 indicates that you're trying to open a .NET 6+ project in Visual Studio 2019. The full error message is similar to the following example:
+NETSDK1182 indicates that you're trying to open a .NET 6+ project in Visual Studio 2019. Or you might be trying to build from the command line using MSBuild from Visual Studio 2019. The full error message is similar to the following example:
 
 > Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.
 

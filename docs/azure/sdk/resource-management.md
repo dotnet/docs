@@ -93,7 +93,8 @@ using Azure.ResourceManager.ServiceBus;
 
 var armClient = new ArmClient(new DefaultAzureCredential());
 SubscriptionResource subscription = armClient.GetDefaultSubscription();
-ResourceGroupResource resourceGroupResource = client.GetDefaultSubscription().GetResourceGroup(resourceGroupName);
+ResourceGroupResource resourceGroupResource = 
+    client.GetDefaultSubscription().GetResourceGroup(resourceGroupName);
 ```
 
 2. Find the corresponding method to manage your Azure resource
@@ -166,7 +167,8 @@ var armClient = new ArmClient(new DefaultAzureCredential());
 // Next we get a resource group object
 // ResourceGroup is a {ResourceName}Resource object from above
 SubscriptionResource subscription = await armClient.GetDefaultSubscriptionAsync();
-ResourceGroupResource resourceGroup = await subscription.GetResourceGroups().GetAsync("myRgName");
+ResourceGroupResource resourceGroup = 
+    await subscription.GetResourceGroups().GetAsync("myRgName");
 
 // Next we get the collection for the virtual machines
 // vmCollection is a {ResourceName}Collection object from above

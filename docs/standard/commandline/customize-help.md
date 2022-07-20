@@ -60,7 +60,7 @@ To make these changes, delete the `await rootCommand.InvokeAsync(args);` line sh
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="first2columns" :::
 
-The additional code requires additional `using` directives:
+The updated code requires additional `using` directives:
 
 ```csharp
 using System.CommandLine.Builder;

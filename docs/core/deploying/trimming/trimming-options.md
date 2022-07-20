@@ -45,13 +45,13 @@ The default is to trim all assemblies in the app. This can be changed using the 
 
 To only trim assemblies which have opted-in to trimming, set
 
-```C#
+```csharp
 <TrimMode>partial</TrimMode>
 ```
 
 The default setting is 
 
-```C#
+```csharp
 <TrimMode>full</TrimMode>
 ```
 
@@ -94,7 +94,6 @@ opt-in individual assemblies to trimming.
 ```
 
 This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
-
 
 ## Trimming settings for individual assemblies
 

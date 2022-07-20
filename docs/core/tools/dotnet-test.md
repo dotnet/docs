@@ -23,7 +23,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_NAME>]
     [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
-    [ -e|--environment <NAME="VALUE">]
+    [-e|--environment <NAME="VALUE">]
     [--filter <EXPRESSION>] [--interactive]
     [-l|--logger <LOGGER>] [--no-build]
     [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
@@ -132,7 +132,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
-- **`-e|--environment <NAME="VALUE">]`**
+- **`-e|--environment <NAME="VALUE">`**
 
   Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
   

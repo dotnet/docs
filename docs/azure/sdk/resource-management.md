@@ -130,7 +130,7 @@ ArmClient armClient = new ArmClient(new DefaultAzureCredential());
 string rgName = "myResourceGroup";
 SubscriptionResource subscription = await armClient.GetDefaultSubscriptionAsync();
 ResourceGroupCollection rg = await subscription.GetResourceGroups().GetAsync(rgName);
-await foreach (VirtualMachineResource vm in rg.GetVirtualMachines())
+await foreach (VirtualMachineResource vm in rg.GetVirtualMachinesAsync())
 {
     //previously we would have to take the resourceGroupName and the vmName from the vm object
     //and pass those into the powerOff method as well as we would need to execute that on a separate compute client
@@ -172,7 +172,7 @@ ResourceGroupResource resourceGroup =
 
 // Next we get the collection for the virtual machines
 // vmCollection is a {ResourceName}Collection object from above
-VirtualMachineCollection vmCollection = resourceGroup.GetVirtualMachines();
+VirtualMachineCollection vmCollection = await resourceGroup.GetVirtualMachinesAsync();
 
 // Next we loop over all vms in the collection
 // Each vm is a {ResourceName}Resource object from above

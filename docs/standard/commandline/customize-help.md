@@ -78,15 +78,13 @@ Usage:
   scl [options]
 
 Options:
-  --file <FILEPATH>                                           The file to print out. [default: scl.runtimeconfig.json]
-  --light-mode                                                Determines whether the background color will be black or
-                                                              white [default: True]
-  --color                                                     Specifies the foreground color. Choose a color that
-  <Black|Blue|Cyan|DarkBlue|DarkCyan|DarkGray|DarkGreen|Dark  provides enough contrast with the background color. For
-  Magenta|DarkRed|DarkYellow|Gray|Green|Magenta|Red|White|Ye  example, a yellow foreground can't be read against a
-  llow>                                                       light mode background.
-  --version                                                   Show version information
-  -?, -h, --help                                              Show help and usage information
+  --file <FILEPATH>                       The file to print out. [default: CustomHelp.runtimeconfig.json]
+  --light-mode                            Determines whether the background color will be black or white
+  --color <Black, White, Red, or Yellow>  Specifies the foreground color. Choose a color that provides enough contrast
+                                          with the background color. For example, a yellow foreground can't be read
+                                          against a light mode background.
+  --version                               Show version information
+  -?, -h, --help                          Show help and usage information
 ```
 
 This output shows that the `firstColumnText` and `secondColumnText` parameters support word wrapping within their columns.
@@ -121,15 +119,13 @@ Usage:
   scl [options]
 
 Options:
-  --file <FILEPATH>                                           The file to print out. [default: scl.runtimeconfig.json]
-  --light-mode                                                Determines whether the background color will be black or
-                                                              white [default: True]
-  --color                                                     Specifies the foreground color. Choose a color that
-  <Black|Blue|Cyan|DarkBlue|DarkCyan|DarkGray|DarkGreen|Dark  provides enough contrast with the background color. For
-  Magenta|DarkRed|DarkYellow|Gray|Green|Magenta|Red|White|Ye  example, a yellow foreground can't be read against a
-  llow>                                                       light mode background.
-  --version                                                   Show version information
-  -?, -h, --help
+  --file <FILEPATH>                       The file to print out. [default: CustomHelp.runtimeconfig.json]
+  --light-mode                            Determines whether the background color will be black or white
+  --color <Black, White, Red, or Yellow>  Specifies the foreground color. Choose a color that provides enough contrast
+                                          with the background color. For example, a yellow foreground can't be read
+                                          against a light mode background.
+  --version                               Show version information
+  -?, -h, --help                          Show help and usage information
 ```
 
 If you want to just use a string as the replacement section text instead of formatting it with `Spectre.Console`, replace the `Prepend` code in the preceding example with the following code:

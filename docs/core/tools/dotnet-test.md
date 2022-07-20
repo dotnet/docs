@@ -134,7 +134,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-e|--environment <NAME="VALUE">]`**
 
-  Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The argument can be specified multiple times to provide multiple variables.
+  Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
   
 - **`-f|--framework <FRAMEWORK>`**
 

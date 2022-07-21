@@ -5,7 +5,7 @@ author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
 ms.topic: reference
-zone-pivot-groups: dotnet-version
+zone_pivot_groups: dotnet-version
 ---
 # Trimming options
 
@@ -59,7 +59,7 @@ The default setting is
 
 :::zone pivot="dotnet-6-0,dotnet-5-0"
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trim-settings-for-individual-assemblies), which overrides the property setting.
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimming-settings-for-individual-assemblies), which overrides the property setting.
 
 - `<TrimMode>link</TrimMode>`
 
@@ -94,6 +94,8 @@ opt-in individual assemblies to trimming.
 ```
 
 This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
+
+:::zone-end
 
 :::zone pivot="dotnet-6-0,dotnet-5-0"
 

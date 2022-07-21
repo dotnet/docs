@@ -7,11 +7,14 @@ ms.date: 08/25/2020
 ms.topic: reference
 zone_pivot_groups: dotnet-version
 ---
+
+:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-3-1"
 # Trimming options
 
 The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and later versions.
+
 
 ## Enable trimming
 
@@ -20,6 +23,8 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
   Enable trimming during publish. This also turns off trim-incompatible features and enables [trim analysis](#roslyn-analyzer) during build.
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
+
+:::end-zone
 
 :::zone pivot="dotnet-7-0"
 

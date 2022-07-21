@@ -16,7 +16,6 @@ The following MSBuild properties and items influence the behavior of [trimmed se
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and later versions.
 
-
 ## Enable trimming
 
 - `<PublishTrimmed>true</PublishTrimmed>`

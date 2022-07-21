@@ -8,64 +8,51 @@ ms.date: 07/09/2022
 
 # Validation
 
-Any app that accepts input from users should ensure that the input is valid. An app could, for example, check for input that contains only characters in a particular range, is of a certain length, or matches a particular format. Without validation, a user can supply data that causes the app to fail. Validation enforces business rules, and prevents an attacker from injecting malicious data.
+Any app that accepts input from users should ensure that the input is valid. An app could, for example, check for input that contains only characters in a particular range, is of a certain length, or matches a particular format. Without validation, a user can supply data that causes the app to fail. Proper validation enforces business rules and could help to prevent an attacker from injecting malicious data.
 
 In the context of the Model-ViewModel-Model (MVVM) pattern, a view model or model will often be required to perform data validation and signal any validation errors to the view so that the user can correct them. The eShopOnContainers mobile app performs synchronous client-side validation of view model properties and notifies the user of any validation errors by highlighting the control that contains the invalid data, and by displaying error messages that inform the user of why the data is invalid. The image below shows the classes involved in performing validation in the eShopOnContainers mobile app.
 
 :::image type="content" source="media/validation-workflow.png" alt-text="Validation classes in the eShopOnContainers mobile app.":::
 
-View model properties that require validation are of type `ValidatableObject<T>`, and each `ValidatableObject<T>` instance has validation rules added to its `Validations` property. Validation is invoked from the view model by calling the `Validate` method of the `ValidatableObject<T>` instance, which retrieves the validation rules and executes them against the `ValidatableObject<T>` Value property. Any validation errors are placed into the `Errors` property of the `ValidatableObject<T>` instance, and the `IsValid` property of the `ValidatableObject<T>` instance is updated to indicate whether validation succeeded or failed. The following code shows the implementation of the `ValidatableObject<T>`:
+View model properties that require validation are of type `ValidatableObject<T>`, and each `ValidatableObject<T>` instance has validation rules added to its `Validations` property. Validation is invoked from the view model by calling the `Validate` method of the `ValidatableObject<T>` instance, which retrieves the validation rules and executes them against the `ValidatableObject<T>.Value` property. Any validation errors are placed into the `Errors` property of the `ValidatableObject<T>` instance, and the `IsValid` property of the `ValidatableObject<T>` instance is updated to indicate whether the validation succeeded or failed. The following code shows the implementation of the `ValidatableObject<T>`:
 
 ```csharp
 using CommunityToolkit.Mvvm.ComponentModel;
-
 namespace eShopOnContainers.Validations;
-
 public class ValidatableObject<T> : ObservableObject, IValidity
 {
-    private readonly List<IValidationRule<T>> _validations;
-
     private IEnumerable<string> _errors;
     private bool _isValid;
     private T _value;
-
-    public List<IValidationRule<T>> Validations => _validations;
-
+    public List<IValidationRule<T>> Validations { get; } = new();
     public IEnumerable<string> Errors
     {
         get => _errors;
         private set => SetProperty(ref _errors, value);
     }
-
     public bool IsValid
     {
         get => _isValid;
         private set => SetProperty(ref _isValid, value);
     }
-
     public T Value
     {
         get => _value;
         set => SetProperty(ref _value, value);
     }
-
     public ValidatableObject()
     {
         _isValid = true;
         _errors = Enumerable.Empty<string>();
-        _validations = new List<IValidationRule<T>>();
     }
-
     public bool Validate()
     {
-        Errors = _validations
+        Errors = Validations
             ?.Where(v => !v.Check(Value))
             ?.Select(v => v.ValidationMessage)
             ?.ToArray()
             ?? Enumerable.Empty<string>();
-
         IsValid = !Errors.Any();
-
         return IsValid;
     }
 }
@@ -94,16 +81,8 @@ public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
 {
     public string ValidationMessage { get; set; }
 
-    public bool Check(T value)
-    {
-        if (value == null)
-        {
-            return false;
-        }
-
-        var str = value as string;
-        return !string.IsNullOrWhiteSpace(str);
-    }
+    public bool Check(T value) =>
+        value is string str && !string.IsNullOrWhiteSpace(str);
 }
 ```
 
@@ -114,25 +93,16 @@ Although not used by the eShopOnContainers mobile app, the following code exampl
 ```csharp
 public class EmailRule<T> : IValidationRule<T>
 {
+    private readonly Regex _regex = new(@"^([w.-]+)@([w-]+)((.(w){2,3})+)$");
+
     public string ValidationMessage { get; set; }
 
-    public bool Check(T value)
-    {
-        if (value == null)
-        {
-            return false;
-        }
-
-        var str = value as string;
-        Regex regex = new Regex(@"^([w.-]+)@([w-]+)((.(w){2,3})+)$");
-        Match match = regex.Match(str);
-
-        return match.Success;
-    }
+    public bool Check(T value) =>
+        value is string str && _regex.IsMatch(str);
 }
 ```
 
-The `Check` method returns a boolean indicating whether or not the value argument is a valid email address. This is achieved by searching the value argument for the first occurrence of the regular expression pattern specified in the Regex constructor. Whether the regular expression pattern has been found in the input string can be determined by checking the value of the Match object's Success property.
+The `Check` method returns a boolean indicating whether or not the value argument is a valid email address. This is achieved by searching the value argument for the first occurrence of the regular expression pattern specified in the `Regex` constructor. Whether the regular expression pattern has been found in the input string can be determined by checking the `value` against <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>.
 
 > [!NOTE]
 > Property validation can sometimes involve dependent properties. An example of dependent properties is when the set of valid values for property A depends on the particular value that has been set in property B. To check that the value of property A is one of the allowed values would involve retrieving the value of property B. In addition, when the value of property B changes, property A would need to be revalidated.
@@ -142,18 +112,8 @@ The `Check` method returns a boolean indicating whether or not the value argumen
 In the eShopOnContainers mobile app, view model properties that require validation are declared to be of type `ValidatableObject<T>`, where `T` is the type of the data to be validated. The following code example shows an example of two such properties:
 
 ```csharp
-private readonly ValidatableObject<string> _userName;
-private readonly ValidatableObject<string> _password;
-
-public ValidatableObject<string> UserName
-{
-    get => _userName;
-}
-
-public ValidatableObject<string> Password
-{
-    get => _password;
-}
+public ValidatableObject<string> UserName { get; private set; }
+public ValidatableObject<string> Password { get; private set; }
 ```
 
 For validation to occur, validation rules must be added to the Validations collection of each `ValidatableObject<T>` instance, as demonstrated in the following code example:
@@ -279,7 +239,7 @@ The `DataTrigger` specifies the following properties:
 | `Binding` | The data `Binding` markup which will provide change notifications and value for the trigger condition. |
 | `Value` | The data value to specify when the trigger's condition has been met. |
 
-For this `Entry`, we will be listening for changes to the `LoginViewModel.UserName.IsValid` property. Each time this property raises a change, the value will be compared against the `Value` property set in the `DataTrigger`. If the values are equal, then the trigger condition will be met and any `Setter` objects provided to the `DataTrigger` will be executed. This control has a single `Setter` object that updates the `BackgroundColor` property to a custom color defined using the `StaticResource` markup. When a `Trigger` condition is no longer met, the control will revert the properties set by the `Setter` object to their previous state. For more information about `Triggers`, see [Triggers](/dotnet/maui/fundamentals/triggers) on the Microsoft Developer Center.
+For this `Entry`, we will be listening for changes to the `LoginViewModel.UserName.IsValid` property. Each time this property raises a change, the value will be compared against the `Value` property set in the `DataTrigger`. If the values are equal, then the trigger condition will be met and any `Setter` objects provided to the `DataTrigger` will be executed. This control has a single `Setter` object that updates the `BackgroundColor` property to a custom color defined using the `StaticResource` markup. When a `Trigger` condition is no longer met, the control will revert the properties set by the `Setter` object to their previous state. For more information about `Triggers`, see [.NET MAUI Docs: Triggers](/dotnet/maui/fundamentals/triggers).
 
 ### Displaying error messages
 

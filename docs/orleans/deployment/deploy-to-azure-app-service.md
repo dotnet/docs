@@ -362,7 +362,7 @@ output connectionString string = '${protocol};${accountBits};${endpointSuffix}'
 
 Bicep files accept parameters, which are declared using the `param` keyword. Likewise, they can also declare outputs using the `output` keyword. The storage `resource` relies on the `Microsoft.Storage/storageAccounts@2021-08-01` type and version. It will be provisioned in the resource group's location, as a `StorageV2` and `Standard_LRS` SKU. The storage bicep defines its connection string as an `output`. This `connectionString` is later used by the silo bicep to connect to the storage account.
 
-Next, the _logs-and-analytics.bicep_ file defines the Azure Log Analytics and Application Insights resources:
+Next, the _logs-and-insights.bicep_ file defines the Azure Log Analytics and Application Insights resources:
 
 ```bicep
 param operationalInsightsName string

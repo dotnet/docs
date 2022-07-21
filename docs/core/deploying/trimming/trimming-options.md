@@ -24,7 +24,7 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-:::end-zone
+:::zone-end
 
 :::zone pivot="dotnet-7-0"
 

@@ -59,7 +59,7 @@ The default setting is
 
 :::zone pivot="dotnet-6-0,dotnet-5-0"
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies), which overrides the property setting.
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trim-settings-for-individual-assemblies), which overrides the property setting.
 
 - `<TrimMode>link</TrimMode>`
 

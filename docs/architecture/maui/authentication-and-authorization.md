@@ -29,7 +29,7 @@ OpenID Connect is an authentication layer on top of the OAuth 2.0 protocol. OAut
 
 OpenID Connect and OAuth 2.0 combine the two fundamental security concerns of authentication and API access, and IdentityServer 4 is an implementation of these protocols.
 
-In applications that use direct client-to-microservice communication, such as the eShopOnContainers reference application, a dedicated authentication microservice acting as a Security Token Service (STS) can be used to authenticate users, as shown in the diagram below. For more information about direct client-to-microservice communication, see [Microservices](micro-services.md).
+In applications that use direct client-to-microservice communication, such as the eShopOnContainers reference application, a dedicated authentication microservice acting as a Security Token Service (STS) can be used to authenticate users, as shown in the following diagram. For more information about direct client-to-microservice communication, see [Microservices](micro-services.md).
 
 :::image type="content" source="media/authentication-dedicated-authentication-microservice.png" alt-text="Authentication by a dedicated authentication microservice.":::
 
@@ -39,7 +39,7 @@ The eShopOnContainers mobile app communicates with the identity microservice, wh
 - Accessing a resource with IdentityServer is achieved by the mobile app requesting an _access_ token, which allows access to an API resource. Clients request access tokens and forward them to the API. Access tokens contain information about the client and the user, if present. APIs then use that information to authorize access to their data.
 
 > [!NOTE]
-> A client must be registered with IdentityServer before it can request tokens.
+> A client must be registered with IdentityServer before it can successfully request tokens. For more information on adding clients, see [Defining Clients](https://identityserver4.readthedocs.io/en/latest/topics/clients.html).
 
 ### Adding IdentityServer to a web application
 
@@ -90,7 +90,7 @@ For information about configuring IdentityServer to use ASP.NET Core Identity, s
 
 ### Configuring API resources
 
-When configuring API resources, the `AddInMemoryApiResources` method expects an `IEnumerable<ApiResource>` collection. The following code example shows the GetApis method that provides this collection in the eShopOnContainers reference application:
+When configuring API resources, the `AddInMemoryApiResources` method expects an `IEnumerable<ApiResource>` collection. The following code example shows the `GetApis` method that provides this collection in the eShopOnContainers reference application:
 
 ```csharp
 public static IEnumerable<ApiResource> GetApis()
@@ -103,7 +103,7 @@ public static IEnumerable<ApiResource> GetApis()
 }
 ```
 
-This method specifies that IdentityServer should protect the orders and basket APIs. Therefore, IdentityServer-managed access tokens will be required when making calls to these APIs. For more information about the ApiResource type, see [API Resource](https://identityserver4.readthedocs.io/en/latest/reference/api_resource.html#refapiresource) in the IdentityServer 4 documentation.
+This method specifies that IdentityServer should protect the orders and basket APIs. Therefore, IdentityServer-managed access tokens will be required when making calls to these APIs. For more information about the `ApiResource` type, see [API Resource](https://identityserver4.readthedocs.io/en/latest/reference/api_resource.html#refapiresource) in the IdentityServer 4 documentation.
 
 ### Configuring identity resources
 
@@ -177,17 +177,17 @@ This configuration specifies data for the following properties:
 
 | Property | Description |
 |---------|---------|
-| ClientId | A unique ID for the client. |
-| ClientName | The client display name, which is used for logging and the consent screen. |
-| AllowedGrantTypes | Specifies how a client wants to interact with IdentityServer. For more information see [Configuring the authentication flow](#configuring-the-authentication-flow). |
-| ClientSecrets | Specifies the client secret credentials that are used when requesting tokens from the token endpoint. |
-| RedirectUris | Specifies the allowed URIs to which to return tokens or authorization codes. |
-| RequireConsent | Specifies whether a consent screen is required. |
-| RequirePkce | Specifies whether clients using an authorization code must send a proof key. |
-| PostLogoutRedirectUris | Specifies the allowed URIs to redirect to after logout. |
-| AllowedCorsOrigins | Specifies the origin of the client so that IdentityServer can allow cross-origin calls from the origin. |
-| AllowedScopes | Specifies the resources the client has access to. By default, a client has no access to any resources. |
-| AllowOfflineAccess | Specifies whether the client can request refresh tokens. |
+| `ClientId` | A unique ID for the client. |
+| `ClientName` | The client display name, which is used for logging and the consent screen. |
+| `AllowedGrantTypes` | Specifies how a client wants to interact with IdentityServer. For more information see [Configuring the authentication flow](#configuring-the-authentication-flow). |
+| `ClientSecrets` | Specifies the client secret credentials that are used when requesting tokens from the token endpoint. |
+| `RedirectUris` | Specifies the allowed URIs to which to return tokens or authorization codes. |
+| `RequireConsent` | Specifies whether a consent screen is required. |
+| `RequirePkce` | Specifies whether clients using an authorization code must send a proof key. |
+| `PostLogoutRedirectUris` | Specifies the allowed URIs to redirect to after logout. |
+| `AllowedCorsOrigins` | Specifies the origin of the client so that IdentityServer can allow cross-origin calls from the origin. |
+| `AllowedScopes` | Specifies the resources the client has access to. By default, a client has no access to any resources. |
+| `AllowOfflineAccess` | Specifies whether the client can request refresh tokens. |
 
 ### Configuring the authentication flow
 
@@ -299,7 +299,7 @@ private async Task NavigateAsync(string url)
             {
                 _settingsService.AuthAccessToken = accessToken;
                 _settingsService.AuthIdToken = authResponse.IdentityToken;
-                await NavigationService.NavigateToAsync ("//Main/Catalog");
+                await NavigationService.NavigateToAsync("//Main/Catalog");
             }
         }
     }
@@ -340,17 +340,17 @@ private void Logout()
 }
 ```
 
-This method invokes the `CreateLogoutRequest` method in the `IdentityService` class, passing the identity token retrieved from application settings as a parameter. For more information about application settings, see [Configuration management](configuration-management.md). The following code example shows the `CreateLogoutRequest method:`
+This method invokes the `CreateLogoutRequest` method in the `IdentityService` class, passing the identity token retrieved from application settings as a parameter. For more information about application settings, see [Configuration management](configuration-management.md). The following code example shows the `CreateLogoutRequest` method:
 
 ```csharp
 public string CreateLogoutRequest(string token)
 {
     // Omitted for brevity
 
-    return string.Format("{0}?id_token_hint={1}&post_logout_redirect_uri={2}", 
-        GlobalSetting.Instance.LogoutEndpoint,
-        token,
-        GlobalSetting.Instance.LogoutCallback);
+    var (endpoint, callback) =
+        (GlobalSetting.Instance.LogoutEndpoint, GlobalSetting.Instance.LogoutCallback);
+
+    return $"{endpoint}?id_token_hint={token}&post_logout_redirect_uri={callback}";
 }
 ```
 
@@ -377,7 +377,7 @@ private async Task NavigateAsync(string url)
 }
 ```
 
-This method clears both the identity token and the access token from application settings. It sets the `IsLogin` property to false, which causes the `WebView` on the `LoginView` page to become invisible. Finally, the `LoginUrl` property is set to the URI of IdentityServer's [authorization endpoint](https://identityserver4.readthedocs.io/en/release/endpoints/authorize.html), with the required parameters, in preparation for the next time the user initiates a sign-in.
+This method clears both the identity token and the access token from application settings. It sets the `IsLogin` property to false, which causes the `WebView` on the `LoginView` page to become invisible. Finally, the `LoginUrl` property is set to the URI of IdentityServer's [authorization endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/authorize.html), with the required parameters, in preparation for the next time the user initiates a sign-in.
 
 For information about page navigation, see [Navigation](navigation.md). For information about how `WebView` navigation causes a view model method to be executed, see [Invoking navigation using behaviors](navigation.md#invoking-navigation-using-behaviors). For information about application settings, see [Configuration management](configuration-management.md).
 
@@ -392,7 +392,7 @@ Restricting access to an ASP.NET Core route can be achieved by applying an Autho
 
 ```csharp
 [Authorize]
-public class BasketController : Controller
+public sealed class BasketController : Controller
 {
     // Omitted for brevity
 }
@@ -400,7 +400,8 @@ public class BasketController : Controller
 
 If an unauthorized user attempts to access a controller or action marked with the Authorize attribute, the API framework returns a `401 (unauthorized)` HTTP status code.
 
-**Note:** Parameters can be specified on the Authorize attribute to restrict an API to specific users. For more information, see [Authorization](/aspnet/core/security/authorization/introduction) on the Microsoft Documentation Center.
+> [!NOTE]
+> Parameters can be specified on the Authorize attribute to restrict an API to specific users. For more information, see [Authorization](/aspnet/core/security/authorization/introduction) on the Microsoft Documentation Center.
 
 IdentityServer can be integrated into the authorization workflow so that the access tokens it provides control authorization. This approach is shown in the diagram below.
 
@@ -432,11 +433,11 @@ This method ensures that the API can only be accessed with a valid access token.
 
 ## Making access requests to APIs
 
-When making requests to the ordering and basket microservices, the access token, obtained from IdentityServer during the authentication process, must be included in the request, as shown in the following code example:
+When making requests to the ordering and basket microservices, the access token obtained from IdentityServer during the authentication process must be included in the request, as shown in the following code example:
 
 ```csharp
 var authToken = Settings.AuthAccessToken;
-Order = await _ordersService.GetOrderAsync(Convert.ToInt32(order.OrderNumber), authToken);
+Order = await _ordersService.GetOrderAsync(order.OrderNumber, authToken);
 ```
 
 The access token is stored as an application setting and is retrieved from platform-specific storage and included in the call to the `GetOrderAsync` method in the `OrderService` class.

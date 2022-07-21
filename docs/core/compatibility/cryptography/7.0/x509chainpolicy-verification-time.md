@@ -43,7 +43,7 @@ Callers that have a long-lived `X509ChainPolicy` object that wish to use the pre
 ```csharp
 X509ChainPolicy policy = new X509ChainPolicy
 {
-   ...,
+   // ...
    VerificationTime = DateTime.Now,
 };
 ```
@@ -53,7 +53,7 @@ or
 ```csharp
 X509ChainPolicy policy = new X509ChainPolicy
 {
-    ...
+    // ...
     VerificationTimeIgnored = false,
 };
 ```

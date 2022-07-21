@@ -13,11 +13,10 @@ Previously, users were required to set the default authentication scheme, which 
 builder.Services.AddAuthentication("MyDefaultScheme");
 ```
 
-Moving forward, when a *single* authentication scheme is registered, that scheme will be treated as the default scheme. For example, "myscheme" will be treated as the default scheme in the following code.
+Moving forward, when a *single* authentication scheme is registered, that scheme will be treated as the default scheme. For example, "MyDefaultScheme" will be treated as the default scheme in the following code.
 
 ```csharp
-builder.Services.AddAuthentication().AddOAuth("myscheme");
-```
+builder.Services.AddAuthentication().AddOAuth("MyDefaultScheme");
 
 This change might expose unintended behavior changes in applications, such as authentication options being validated earlier than expected.
 

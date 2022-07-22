@@ -3,7 +3,7 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 07/04/2022
+ms.date: 07/22/2022
 ms.custom: devdivchpfy22
 ---
 
@@ -199,7 +199,7 @@ Magic strings can cause confusion to the reader of your tests. If a string looks
 
 ### Avoid logic in tests
 
-When writing your unit tests avoid manual string concatenation, logical conditions such as `if`, `while`, `for`, `switch`, and other conditions.
+When writing your unit tests, avoid manual string concatenation, logical conditions, such as `if`, `while`, `for`, and `switch`, and other conditions.
 
 #### Why?
 
@@ -279,7 +279,7 @@ Multiple acts need to be individually Asserted and it isn't guaranteed that all 
 
 ### Validate private methods by unit testing public methods
 
-In most cases, there shouldn't be a need to test a private method. Private methods are an implementation detail. You can think of it as, private methods never exist in isolation. At some point, there's going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one.
+In most cases, there shouldn't be a need to test a private method. Private methods are an implementation detail and never exist in isolation. At some point, there's going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one.
 
 Consider the following case:
 

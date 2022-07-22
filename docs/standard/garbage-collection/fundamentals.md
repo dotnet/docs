@@ -1,7 +1,7 @@
 ---
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
-ms.date: 07/15/2022
+ms.date: 07/22/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -70,7 +70,7 @@ Objects that aren't in the graph are unreachable from the application's roots. T
 
 Memory is compacted only if a collection discovers a significant number of unreachable objects. If all the objects in the managed heap survive a collection, then there's no need for memory compaction.
 
-To improve performance, the runtime allocates memory for large objects in a separate heap. The garbage collector automatically releases the memory for large objects. However, to avoid moving large objects in memory, the memory isn't compacted.
+To improve performance, the runtime allocates memory for large objects in a separate heap. The garbage collector automatically releases the memory for large objects. However, to avoid moving large objects in memory, this memory is usually not compacted.
 
 ## Conditions for a garbage collection
 
@@ -112,7 +112,7 @@ The GC algorithm is based on several considerations:
 - Newer objects have shorter lifetimes, and older objects have longer lifetimes.
 - Newer objects tend to be related to each other and accessed by the application around the same time.
 
-Garbage collection primarily occurs with the reclamation of short-lived objects. To optimize the performance of the garbage collector, the managed heap is divided into three generations, 0, 1, and 2, so it can handle long-lived and short-lived objects separately. The garbage collector stores new objects in generation 0. Objects created early in the application's lifetime that survives collections are promoted and stored in generations 1 and 2. Because it's faster to compact a portion of the managed heap than the entire heap, this scheme allows the garbage collector to release the memory. The memory is released in a specific generation rather than releasing the memory for the entire managed heap each time it performs a collection.
+Garbage collection primarily occurs with the reclamation of short-lived objects. To optimize the performance of the garbage collector, the managed heap is divided into three generations, 0, 1, and 2, so it can handle long-lived and short-lived objects separately. The garbage collector stores new objects in generation 0. Objects created early in the application's lifetime that survive collections are promoted and stored in generations 1 and 2. Because it's faster to compact a portion of the managed heap than the entire heap, this scheme allows the garbage collector to release the memory in a specific generation rather than release the memory for the entire managed heap each time it performs a collection.
 
 - **Generation 0**: This generation is the youngest and contains short-lived objects. An example of a short-lived object is a temporary variable. Garbage collection occurs most frequently in this generation.
 
@@ -128,7 +128,7 @@ Garbage collection primarily occurs with the reclamation of short-lived objects.
 
   If a collection of generation 0 doesn't reclaim enough memory for the application to create a new object, the garbage collector can perform a collection of generation 1 and then generation 2. Objects in generation 1 that survive collections are promoted to generation 2.
 
-- **Generation 2**: This generation contains long-lived objects. An example of a long-lived object is an object in a server application that contains static data that's live during the process.
+- **Generation 2**: This generation contains long-lived objects. An example of a long-lived object is an object in a server application that contains static data that's live for the duration of the process.
 
   Objects in generation 2 that survive a collection remain in generation 2 until they're determined to be unreachable in a future collection.
 
@@ -161,7 +161,7 @@ The size of the ephemeral segment varies depending on whether a system is 32-bit
 |Server GC with > 4 logical CPUs|32 MB|2 GB|
 |Server GC with > 8 logical CPUs|16 MB|1 GB|
 
-The ephemeral segment can include generation 2 objects. Generation 2 objects can use multiple segments as much as your process requires and memory allows.
+The ephemeral segment can include generation 2 objects. Generation 2 objects can use multiple segments as many as your process requires and memory allows for.
 
 The amount of freed memory from an ephemeral garbage collection is limited to the size of the ephemeral segment. The amount of memory that's freed is proportional to the space that was occupied by the dead objects.
 

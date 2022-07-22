@@ -2,7 +2,7 @@
 title: Uninstall Tool
 description: An overview of the .NET Uninstall Tool, a guided tool that enables the controlled clean-up of .NET SDKs and runtimes.
 author: sfoslund
-ms.date: 07/15/2022
+ms.date: 07/22/2022
 ms.custom: devdivchpfy22
 ---
 # .NET uninstall tool
@@ -43,15 +43,13 @@ The `dotnet-core-uninstall list` command lists the installed .NET SDKs and runti
 > [!NOTE]
 > The output of the `dotnet-core-uninstall list` command won't match the list of installed versions in the output of `dotnet --info` in most cases. Specifically, this tool won't display versions installed by zip files or managed by Visual Studio (any version installed with Visual Studio 2019 version 16.3 or later). One way to check if a version is managed by Visual Studio is to view it in `Add or Remove Programs`, where Visual Studio managed versions are marked as such in their display names.
 
-#### dotnet-core-uninstall list
-
-##### Synopsis
+#### Synopsis
 
 ```console
 dotnet-core-uninstall list [options]
 ```
 
-##### Options
+#### Options
 
 ## [Windows](#tab/windows)
 
@@ -99,7 +97,7 @@ dotnet-core-uninstall list [options]
   
 ---
 
-##### Examples
+#### Examples
 
 - List all the .NET SDKs and runtimes that can be removed with this tool:
 
@@ -123,9 +121,7 @@ dotnet-core-uninstall list [options]
 
 The `dotnet-core-uninstall dry-run` and `dotnet-core-uninstall whatif` commands display the .NET SDKs and runtimes that will be removed based on the options provided without performing the uninstall. These commands are synonyms.
 
-#### dotnet-core-uninstall dry-run and dotnet-core-uninstall whatif
-
-##### Synopsis
+#### Synopsis
 
 ```console
 dotnet-core-uninstall dry-run [options] [<VERSION>...]
@@ -133,7 +129,7 @@ dotnet-core-uninstall dry-run [options] [<VERSION>...]
 dotnet-core-uninstall whatif [options] [<VERSION>...]
 ```
 
-##### Arguments
+#### Arguments
 
 **`VERSION`**
 
@@ -142,7 +138,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line. They're text files, typically with a *\*.rsp* extension, and each version is listed on a separate line. To specify a response file for the `VERSION` argument, use the \@ character immediately followed by the response file name.
 
-##### Options
+#### Options
 
 ## [Windows](#tab/windows)
 
@@ -271,7 +267,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 ---
 
-##### Examples
+#### Examples
 
 > [!NOTE]
 > By default, .NET SDKs and runtimes that might be required by Visual Studio or other SDKs aren't included in the `dotnet-core-uninstall dry-run` output. In the following examples, depending on the state of the machine, some of the specified SDKs and runtimes might not be included in the output. To include all the SDKs and runtimes, list them explicitly as arguments or use the `--force` option.
@@ -305,15 +301,13 @@ By default, all commands keep the .NET SDKs and runtimes that might be required 
 
 The tool requires elevation to uninstall .NET SDKs and runtimes. Run the tool in an Administrator command prompt on Windows and with `sudo` on macOS. The `dry-run` and `whatif` commands don't require elevation.
 
-#### dotnet-core-uninstall remove
-
-##### Synopsis
+#### Synopsis
 
 ```console
 dotnet-core-uninstall remove [options] [<VERSION>...]
 ```
 
-##### Arguments
+#### Arguments
 
 **`VERSION`**
 
@@ -322,7 +316,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line. They're text files, typically with a *\*.rsp* extension, and each version is listed on a separate line. To specify a response file for the `VERSION` argument, use the \@ character immediately followed by the response file name.
 
-##### Options
+#### Options
 
 ## [Windows](#tab/windows)
 
@@ -459,7 +453,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 ---
 
-##### Examples
+#### Examples
 
 > [!NOTE]
 > By default, .NET SDKs and runtimes that might be required by Visual Studio or other SDKs are kept. In the following examples, depending on the state of the machine, some of the specified SDKs and runtimes might remain. To remove all the SDKs and runtimes, list them explicitly as arguments or use the `--force` option.

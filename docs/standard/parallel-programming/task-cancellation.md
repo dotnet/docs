@@ -1,7 +1,7 @@
 ---
 title: "Task Cancellation"
 description: Understand task cancellation, which is supported in the Task and Task<TResult> classes through the use of cancellation tokens in .NET.
-ms.date: "07/19/2022"
+ms.date: "07/22/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -17,9 +17,9 @@ The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:Sy
   
 - By returning from the delegate. In many scenarios, this option is sufficient. However, a task instance that's canceled in this way transitions to the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType> state, not to the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.  
   
-- By throwing a <xref:System.OperationCanceledException> and passing it the token on which cancellation was requested. The preferred way to perform this is to use the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A> method. A task that's canceled in this way transitions to the Canceled state, which the calling code can use to verify that the task responded to its cancellation request.  
+- By throwing a <xref:System.OperationCanceledException> and passing it the token on which cancellation was requested. The preferred way to perform is to use the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A> method. A task that's canceled in this way transitions to the Canceled state, which the calling code can use to verify that the task responded to its cancellation request.  
   
- The following example shows the basic pattern for task cancellation that throws the exception.
+ The following example shows the basic pattern for task cancellation that throws the exception:
 
 >[!NOTE]
 > The token is passed to the user delegate and to the task instance.  

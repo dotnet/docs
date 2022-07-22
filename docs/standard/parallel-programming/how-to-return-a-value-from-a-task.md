@@ -1,7 +1,7 @@
 ---
 title: "How to: Return a Value from a Task"
 description: See how to use the System.Threading.Tasks.Task<TResult> type to return a value from the Result property in .NET.
-ms.date: "07/18/2022"
+ms.date: "07/22/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -12,7 +12,7 @@ ms.assetid: c4bc0f44-eba2-4e96-9e03-1cc787461e61
 ---
 # How to: Return a Value from a Task
 
-This example shows how to use the <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> type to return a value from the <xref:System.Threading.Tasks.Task%601.Result%2A> property. It requires that the C:\Users\Public\Pictures\Sample Pictures\ directory exists, and that it contains files.  
+This example shows how to use the <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> type to return a value from the <xref:System.Threading.Tasks.Task%601.Result%2A> property. It requires that the `C:\Users\Public\Pictures\Sample Pictures\` directory exists, and that it contains files.  
   
 ## Example  
 

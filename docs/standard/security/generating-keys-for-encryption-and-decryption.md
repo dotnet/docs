@@ -1,7 +1,7 @@
 ---
 title: "Generating Keys for Encryption and Decryption"
 description: Understand how to create and manage symmetric and asymmetric keys for encryption and decryption in .NET.
-ms.date: 07/19/2022
+ms.date: 07/22/2022
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -22,9 +22,9 @@ Creating and managing keys is an important part of the cryptographic process. Sy
   
 ## Symmetric Keys  
 
- The symmetric encryption classes supplied by .NET require a key and a new initialization vector (IV) to encrypt and decrypt data. Whenever you create a new instance of one of the managed symmetric cryptographic classes using the parameterless `Create()` method, a new key and IV are automatically created. Anyone that you allow to decrypt your data must possess the same key and IV and use the same algorithm. Generally, a new key and IV should be created for every session, and neither the key nor IV should be stored for use in a later session.  
+ The symmetric encryption classes supplied by .NET require a key and a new IV to encrypt and decrypt data. Whenever you create a new instance of one of the managed symmetric cryptographic classes using the parameterless `Create()` method, a new key and IV are automatically created. Anyone that you allow to decrypt your data must possess the same key and IV and use the same algorithm. Generally, a new key and IV should be created for every session, and neither the key nor the IV should be stored for use in a later session.  
   
- To communicate a symmetric key and IV to a remote party, you would usually encrypt the symmetric key by using asymmetric encryption. Sending the key across an insecure network without encrypting it's unsafe, because anyone who intercepts the key and IV can then decrypt your data.  
+ To communicate a symmetric key and IV to a remote party, you would usually encrypt the symmetric key by using asymmetric encryption. Sending the key across an insecure network without encrypting is unsafe, because anyone who intercepts the key and IV can then decrypt your data.  
   
  The following example shows the creation of a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm:
   
@@ -58,7 +58,7 @@ aes.GenerateKey();
 
  .NET provides the <xref:System.Security.Cryptography.RSA> class for asymmetric encryption. This class creates a public/private key pair when you use the parameterless `Create()` method to create a new instance. Asymmetric keys can be either stored for use in multiple sessions or generated for one session only. While the public key can be made generally available, the private key should be closely guarded.  
   
- A public/private key pair is generated whenever a new instance of an asymmetric algorithm class is created. After a new instance of the class is created, the key information can be extracted using the <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method, which returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information. The method accepts a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information.
+ A public/private key pair is generated whenever a new instance of an asymmetric algorithm class is created. After a new instance of the class is created, the key information can be extracted using the <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method. This method returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information. The method also accepts a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information.
 
 There are also other methods that let you extract key information, such as:
 
@@ -70,7 +70,7 @@ There are also other methods that let you extract key information, such as:
 
 An `RSA` instance can be initialized to the value of an `RSAParameters` structure by using the <xref:System.Security.Cryptography.RSA.ImportParameters%2A> method. Or create a new instance by using the <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParameters)?displayProperty=nameWithType> method.  
   
- Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, you should use a key container. For more information about how to store a private key in a key container, see [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md).  
+ Asymmetric private keys should never be stored verbatim or as plain text on the local computer. If you need to store a private key, you should use a key container. For more information about how to store a private key in a key container, see [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md).  
   
  The following code example creates a new instance of the `RSA` class, creating a public/private key pair, and saves the public key information to an `RSAParameters` structure.  
   

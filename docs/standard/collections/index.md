@@ -1,7 +1,7 @@
 ---
 title: "Collections and Data Structures"
 description: Learn how to use collections and data structures in .NET. Use generic and non-generic collections in thread-safe operations.
-ms.date: 07/19/2022
+ms.date: 07/22/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "grouping data in collections"
@@ -19,7 +19,7 @@ Similar data can often be handled more efficiently when stored and manipulated a
 
 There are two main types of collections; generic collections and non-generic collections. Generic collections are type-safe at compile time. Because of this, generic collections typically offer better performance. Generic collections accept a type parameter when they're constructed. They don't require that you cast to and from the <xref:System.Object> type when you add or remove items from the collection. In addition, most generic collections are supported in Windows Store apps. Non-generic collections store items as <xref:System.Object>, require casting, and most aren't supported for Windows Store app development. However, you might see non-generic collections in older code.
 
-With .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the <xref:System.Collections.Immutable> namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection and the original collection can't be modified.
+In .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the <xref:System.Collections.Immutable> namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection and the original collection can't be modified.
 
 <a name="BKMK_Commoncollectionfeatures"></a>
 
@@ -57,7 +57,7 @@ In addition, many collection classes contain the following features:
 
 ## Choose a collection
 
-In general, you should use generic collections. The following table describes some common collection scenarios and the collection classes you can use for those scenarios. If you're new to generic collections, this table will help you choose the generic collection that works the best for your task.
+In general, you should use generic collections. The following table describes some common collection scenarios and the collection classes you can use for those scenarios. If you're new to generic collections, the following table will help you choose the generic collection that works best for your task:
 
 |I want to…|Generic collection options|Non-generic collection options|Thread-safe or immutable collection options|
 |-|-|-|-|
@@ -87,7 +87,7 @@ When choosing a [collection class](selecting-a-collection-class.md), it's worth 
 | `Dictionary<T>` lookup    | O(1)       | O(1) – or strictly O(`n`) | `ImmutableDictionary<T>` lookup    | O(log `n`) |
 | `SortedDictionary<T>.Add` | O(log `n`) | O(`n` log `n`)            | `ImmutableSortedDictionary<T>.Add` | O(log `n`) |
 
-A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop. An `ImmutableList<T>`, however, does a poor job inside a `for` loop, due to the O(log `n`) time for its indexer. Enumerating an `ImmutableList<T>` using a `foreach` loop is efficient because `ImmutableList<T>` uses a binary tree to store its data instead of a simple array like `List<T>` uses. An array can be quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
+A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop. An `ImmutableList<T>`, however, does a poor job inside a `for` loop, due to the O(log `n`) time for its indexer. Enumerating an `ImmutableList<T>` using a `foreach` loop is efficient because `ImmutableList<T>` uses a binary tree to store its data instead of an array like `List<T>` uses. An array can be quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
 
 Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>` because they both use binary trees. The significant difference is that `ImmutableSortedSet<T>` uses an immutable binary tree. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> class that allows mutation, you can have both immutability and performance.
 
@@ -101,7 +101,7 @@ Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>` 
 |[Commonly Used Collection Types](commonly-used-collection-types.md)|Describes commonly used generic and non-generic collection types such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.|
 |[When to Use Generic Collections](when-to-use-generic-collections.md)|Discusses the use of generic collection types.|
 |[Comparisons and Sorts Within Collections](comparisons-and-sorts-within-collections.md)|Discusses the use of equality comparisons and sorting comparisons in collections.|
-|[Sorted Collection Types](sorted-collection-types.md)|Describes sorted collections performance and characteristics|
+|[Sorted Collection Types](sorted-collection-types.md)|Describes sorted collections performance and characteristics.|
 |[Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)|Describes the features of generic and non-generic hash-based dictionary types.|
 |[Thread-Safe Collections](thread-safe/index.md)|Describes collection types such as <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType> that support safe and efficient concurrent access from multiple threads.|
 |<xref:System.Collections.Immutable>|Introduces the immutable collections and provides links to the collection types.|

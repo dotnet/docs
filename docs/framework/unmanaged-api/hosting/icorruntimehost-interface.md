@@ -20,7 +20,7 @@ topic_type:
 
 Provides methods that enable the host to start and stop the common language runtime (CLR) explicitly, to create and configure application domains, to access the default domain, and to enumerate all domains running in the process.  
   
- In the .NET Framework version 2.0, this interface is superseded by [ICLRRuntimeHost](iclrruntimehost-interface.md).  
+ In .NET Framework version 2.0, this interface is superseded by [ICLRRuntimeHost](iclrruntimehost-interface.md).  
   
 ## Methods  
   

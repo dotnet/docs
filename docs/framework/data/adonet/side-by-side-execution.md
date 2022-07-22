@@ -22,13 +22,13 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
   
  If you have an application developed for the .NET Framework version 1.0 that uses the ODBC data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.1 or a later version, you must update the namespace for the ODBC data provider to **System.Data.Odbc**. You then must recompile it for the newer version of the .NET Framework.  
   
- If you have an application developed for the .NET Framework version 2.0 or later that uses the ODBC data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.0, you must download the ODBC data provider and install it on the .NET Framework version 1.0 system. You then must change the namespace for the ODBC data provider to **Microsoft.Data.Odbc**, and recompile the application for the .NET Framework version 1.0.  
+ If you have an application developed for the .NET Framework version 2.0 or later that uses the ODBC data provider to connect to your data source, and you want to run that application on .NET Framework version 1.0, you must download the ODBC data provider and install it on the .NET Framework version 1.0 system. You then must change the namespace for the ODBC data provider to **Microsoft.Data.Odbc**, and recompile the application for .NET Framework version 1.0.  
   
 ## The .NET Framework Data Provider for Oracle  
 
  Starting with version 1.1, the .NET Framework Data Provider for Oracle (<xref:System.Data.OracleClient>) is included as a part of the .NET Framework.
   
- If you have an application developed for the .NET Framework version 2.0 or later that uses the data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.0, you must download the data provider and install it on the .NET Framework version 1.0 system.  
+ If you have an application developed for the .NET Framework version 2.0 or later that uses the data provider to connect to your data source, and you want to run that application on .NET Framework version 1.0, you must download the data provider and install it on the .NET Framework version 1.0 system.  
   
 ## Code Access Security
   
@@ -38,9 +38,9 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
   
 ## SqlCommand Execution  
 
- Starting with the .NET Framework version 1.1, the way that <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executes commands at the data source was changed.  
+ Starting with .NET Framework version 1.1, the way that <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executes commands at the data source was changed.  
   
- In the .NET Framework version 1.0, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executed all commands in the context of the **sp_executesql** stored procedure. As a result, commands that affect the state of the connection (for example, SET NOCOUNT ON), only apply to the execution of the current command. The state of the connection is not modified for any subsequent commands executed while the connection is open.  
+ In .NET Framework version 1.0, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executed all commands in the context of the **sp_executesql** stored procedure. As a result, commands that affect the state of the connection (for example, SET NOCOUNT ON), only apply to the execution of the current command. The state of the connection is not modified for any subsequent commands executed while the connection is open.  
   
  In the .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the **sp_executesql** stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.  
   
@@ -51,7 +51,7 @@ SET NOCOUNT ON;
 SELECT * FROM dbo.Customers;  
 ```  
   
- In the .NET Framework version 1.1 and later, NOCOUNT will remain ON for any subsequent commands executed while the connection is open. In the .NET Framework version 1.0, NOCOUNT is only ON for the current command execution.  
+ In the .NET Framework version 1.1 and later, NOCOUNT will remain ON for any subsequent commands executed while the connection is open. In .NET Framework version 1.0, NOCOUNT is only ON for the current command execution.  
   
  This change can affect both the forward and backward compatibility of your application if you depend on the behavior of <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> for either version of the .NET Framework.  
   

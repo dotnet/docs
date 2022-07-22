@@ -44,7 +44,7 @@ public class Service : IEcho
   
 ## Performance impact caused by loading the ServiceModel HttpModule  
 
- In the .NET Framework 3.0, the WCF `HttpModule` was installed in the root Web.config file such that every ASP.NET application was WCF enabled. This might affect performance, so you can remove `ServiceModel` for the Web.config file as shown in the following example.  
+ In .NET Framework 3.0, the WCF `HttpModule` was installed in the root Web.config file such that every ASP.NET application was WCF enabled. This might affect performance, so you can remove `ServiceModel` for the Web.config file as shown in the following example.  
   
 ```xml  
 <httpModules>  

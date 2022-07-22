@@ -351,7 +351,7 @@ To determine the installed .NET version, use `Release` DWORD 378389. For more in
 
 The following guidelines apply:
 
-- In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has the .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.
+- In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.
 
 - In Visual Studio, you can choose .NET Framework 4.5.1 as the target framework for a project to compile it as a .NET Framework 4.5.1 assembly or executable. Only run this assembly or executable on computers that have .NET Framework 4.5.1 or later installed. An executable that targets .NET Framework 4.5.1 will be blocked from running on a computer that only has an earlier version of .NET Framework, such as .NET Framework 4.5, installed. The user will be prompted to install .NET Framework 4.5.1. In addition, .NET Framework 4.5.1 assemblies should not be called from an app that targets an earlier version of .NET Framework, such as .NET Framework 4.5.
 

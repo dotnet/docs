@@ -216,7 +216,7 @@ By default, logging of the aforementioned content is disabled. To enable logging
     };
     ```
 
-1. Set an [event level](/dotnet/api/system.diagnostics.tracing.eventlevel?view=net-6.0) of either `Verbose` or `LogAlways`. For example:
+1. Set an [event level](/dotnet/api/system.diagnostics.tracing.eventlevel) of either `Verbose` or `LogAlways`. For example:
 
     ```csharp
     using AzureEventSourceListener listener = 

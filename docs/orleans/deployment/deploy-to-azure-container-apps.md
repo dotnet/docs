@@ -1,21 +1,15 @@
 ---
 title: Deploy Orleans to Azure Container Apps
 description: Learn how to deploy an updated Orleans shopping cart app to Azure Container Apps.
-ms.date: 07/21/2022
+ms.date: 07/22/2022
 ms.topic: tutorial
 ---
 
 # Deploy Orleans to Azure Container Apps
 
-In this tutorial, you learn how to deploy an Orleans shopping cart app to Azure Container Apps. The tutorial walks you through a sample application that supports the following features:
+In this tutorial, you learn how to deploy an Orleans shopping cart app to Azure Container Apps. The tutorial expands the functionality of the [Orleans shopping cart app](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service), introduced in [Deploy Orleans to Azure App Service](deploy-to-azure-app-service.md). It adds Azure Active Directory (AAD) business-to-consumer (B2C) authentication and instead deploys to Azure Container Apps.
 
-- **Shopping cart**: A simple shopping cart application that uses Orleans for its cross-platform framework support, and its scalable distributed applications capabilities.
-
-  - **Inventory management**: Edit and/or create product inventory.
-  - **Shop inventory**: Explore purchasable products and add them to your cart.
-  - **Cart**: View a summary of all the items in your cart, and manage these items; either removing or changing the quantity of each item.
-
-With an understanding of the app and its features, you will then learn how to deploy the app to Azure Container Apps using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the Container App's HTTP ingress.
+You'll learn how to deploy using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the Container App's HTTP ingress.
 
 In this tutorial, you learn how to:
 
@@ -46,16 +40,20 @@ For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the
 
 ## Deploy to Azure Container Apps
 
-A typical Orleans application consists of a cluster of server processes (silos) where grains live, and a set of client processes, usually web servers, that receive external requests, turn them into grain method calls and return results. Hence, the first thing one needs to do to run an Orleans application is to start a cluster of silos. For testing purposes, a cluster can consist of a single silo.
-
-> [!NOTE]
-> For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
+To deploy the app to Azure Container Apps, the repository makes use of GitHub Actions. Before this deployment can take place you'll need a few Azure resources and you'll need to configure the GitHub repository correctly.
 
 [!INCLUDE [create-azure-resources](includes/deployment/create-azure-resources.md)]
 
 [!INCLUDE [create-service-principal](includes/deployment/create-service-principal.md)]
 
 [!INCLUDE [create-github-secret](includes/deployment/create-github-secret.md)]
+
+### AAD B2C
+
+While it is beyond the scope of this tutorial, you can learn how to [Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant), and then you can [Register a web app](/azure/active-directory-b2c/tutorial-register-applications) to consume it. In the case of this shopping cart example app, the resulting deployed Container Apps' URL will need to be registered in the B2C tenant. For more information, see [ASP.NET Core Blazor authentication and authorization](/aspnet/core/blazor/security).
+
+> [!IMPORTANT]
+> After your Container App is deployed, you'll need to register the app's URL in the B2C tenant. In most production scenarios, you will only need to register the app's URL once as it shouldn't change.
 
 ### Prepare for Azure deployment
 
@@ -71,7 +69,7 @@ The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Si
 There are many ways to deploy a .NET app to Azure Container Apps. In this tutorial, you use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs. Consider the _./github/workflows/deploy.yml_ file in the root of the GitHub repository:
 
 ```yml
-name: Deploy to Azure Container App
+name: Deploy to Azure Container Apps
 
 on:
   push:
@@ -149,7 +147,7 @@ jobs:
             -n ${{ env.UNIQUE_APP_NAME }} \
             -g ${{ env.AZURE_RESOURCE_GROUP_NAME }} \
             --server ${{ env.ACR_LOGIN_SERVER }}
-          az containerapp update \
+          az containerapp up \
             -n ${{ env.UNIQUE_APP_NAME }} \
             -g ${{ env.AZURE_RESOURCE_GROUP_NAME }} \
             -i ${{ env.ACR_LOGIN_SERVER }}/${{ env.SILO_IMAGE_NAME }}:${{ github.sha }}
@@ -163,7 +161,11 @@ The preceding GitHub workflow will:
 - Publish the shopping cart app as a zip file, using the [dotnet publish](../../core/tools/dotnet-publish.md) command.
 - Login to Azure using the credentials from the [Create a service principal](#create-a-service-principal) step.
 - Evaluate the _main.bicep_ file and start a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
-- Deploy the _silo.zip_ file to Azure Container Apps using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
+- Get the Azure Container Registry (ACR) login server from the deployment group.
+- Login to ACR using the repositories `AZURE_CREDENTIALS` secret.
+- Build and publish the silo image to the ACR.
+- Install the Container Apps extension.
+- Deploy the silo
 
 The workflow is triggered by a push to the _main_ branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
 
@@ -412,13 +414,11 @@ As you update the source code and `push` changes to the `main` branch of the rep
 
 In addition to the visualizer from the bicep extension, the Azure portal resource group page would look similar to the following example after provisioning and deploying the application:
 
-:::image type="content" source="media/shopping-cart-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources." lightbox="media/shopping-cart-resources.png":::
+:::image type="content" source="media/shopping-cart-aca-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources for Azure Container Apps." lightbox="media/shopping-cart-aca-resources.png":::
 -->
 
 ## See also
 
 - [Orleans deployment overview](index.md)
 - [GitHub Actions and .NET](../../devops/github-actions-overview.md)
-- [Quickstart: Deploy an ASP.NET web app](/azure/app-service/quickstart-dotnetcore)
-- [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
-- [Enable virtual network integration in Azure Container Apps](/azure/app-service/configure-vnet-integration-enable)
+- [Publish revisions with GitHub Actions in Azure Container Apps](/azure/container-apps/github-actions-cli)

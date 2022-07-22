@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 
 ## Run the app locally
 
-To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
+To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise, you can run the app using the following .NET CLI command:
 
 ```dotnetcli
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
@@ -84,7 +84,7 @@ When you haven't added anything to your cart, the page renders a message that in
 
 :::image type="content" source="media/empty-shopping-cart-page.png" lightbox="media/empty-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, empty cart page.":::
 
-**Items added to cart while on the shop inventory page**
+**Items added to the cart while on the shop inventory page**
 
 When items are added to your cart while on the shop inventory page, the app displays a message that indicates the item was added to the cart.
 
@@ -102,7 +102,7 @@ When a user clicks the **Create new product** button, the app displays a dialog 
 
 :::image type="content" source="media/product-management-page-new.png" lightbox="media/product-management-page-new.png" alt-text="Orleans: Shopping Cart sample app, product management page - create new product dialog.":::
 
-**Items in cart page**
+**Items in the cart page**
 
 When items are in your cart, you can view them and change their quantity, and even remove them from the cart. The user is shown a summary of the items in the cart and the pretax total cost.
 
@@ -128,7 +128,7 @@ Make note of the resource group name you choose, you'll need it later to deploy 
 
 ### Create a service principal
 
-To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permissions to manage Azure resources on your behalf.
+To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permission to manage Azure resources on your behalf.
 
 ```azurecli
 az ad sp create-for-rbac --sdk-auth --role Contributor \
@@ -156,7 +156,7 @@ Copy the output of the command into your clipboard, and continue to the next ste
 
 ### Create a GitHub secret
 
-GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how a GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. For more information, see [What is Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep). Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
+GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Bicep is a domain-specific language (DSL) that uses a declarative syntax to deploy Azure resources. For more information, see [What is Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep). Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
 
 Within the GitHub repository, select **Settings** > **Secrets** > **Create a new secret**. Enter the name `AZURE_CREDENTIALS` and paste the JSON credentials from the previous step into the **Value** field.
 
@@ -166,7 +166,7 @@ For more information, see [GitHub: Encrypted Secrets](https://docs.github.com/ac
 
 ### Prepare for Azure deployment
 
-The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Silos` project, we define a `Target` element that runs after the `Publish` step. This will zip the publish directory into a _silo.zip_ file:
+The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Silos` project we define a `Target` element that runs after the `Publish` step. This will zip the publish directory into a _silo.zip_ file:
 
 ```xml
 <Target Name="ZipPublishOutput" AfterTargets="Publish">
@@ -458,7 +458,7 @@ resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
 }
 ```
 
-This bicep file configures the Azure App Service as a .NET 6 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally the resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
+This bicep file configures the Azure App Service as a .NET 6 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally, the resource is configured to use the `vnetSubnetId` subnet and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
 
 The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these bicep files are visualized as follows:
 

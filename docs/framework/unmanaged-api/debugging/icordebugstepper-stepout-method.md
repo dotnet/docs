@@ -33,7 +33,7 @@ HRESULT StepOut ();
   
  If `StepOut` is called when in unmanaged code, the step will complete when the current frame returns to the managed code that called it.  
   
- In the .NET Framework version 2.0, do not use `StepOut` with the STOP_UNMANAGED flag set because it will fail. (Use [ICorDebugStepper::SetUnmappedStopMask](icordebugstepper-setunmappedstopmask-method.md) to set flags for stepping.) Interop debuggers must step out to native code themselves.  
+ In .NET Framework version 2.0, do not use `StepOut` with the STOP_UNMANAGED flag set because it will fail. (Use [ICorDebugStepper::SetUnmappedStopMask](icordebugstepper-setunmappedstopmask-method.md) to set flags for stepping.) Interop debuggers must step out to native code themselves.  
   
 ## Requirements  
 

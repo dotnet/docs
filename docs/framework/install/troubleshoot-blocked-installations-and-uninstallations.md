@@ -65,7 +65,7 @@ The .NET Framework installer cannot run in Program Compatibility mode. To resolv
 
    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers
 
-1. In the Name column, look for the .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, or 4.7.2 download names, depending on which version you are installing, and delete these entries. For download names, see [Install the .NET Framework for developers](guide-for-developers.md) article.
+1. In the Name column, look for .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, or 4.7.2 download names, depending on which version you are installing, and delete these entries. For download names, see [Install the .NET Framework for developers](guide-for-developers.md) article.
 
 1. Rerun the .NET Framework installer for version 4.5, 4.5.1, 4.5.2, or 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, or 4.7.2.
 

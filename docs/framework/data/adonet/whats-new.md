@@ -1,6 +1,6 @@
 ---
 title: "What's New"
-description: Learn about the new features in ADO.NET in the .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
+description: Learn about the new features in ADO.NET in .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
 ms.date: "03/30/2017"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
 ---

@@ -26,7 +26,7 @@ Extends the capabilities of the [ICorDebugRegisterSet](icordebugregisterset-inte
 |------------|-----------------|  
 |[GetRegisters Method](icordebugregisterset2-getregisters-method.md)|Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.|  
 |[GetRegistersAvailable Method](icordebugregisterset2-getregistersavailable-method.md)|Gets an array of bytes that provides a bitmap of the available registers.|  
-|[SetRegisters Method](icordebugregisterset2-setregisters-method.md)|Not implemented in the .NET Framework version 2.0.|  
+|[SetRegisters Method](icordebugregisterset2-setregisters-method.md)|Not implemented in .NET Framework version 2.0.|  
   
 ## Remarks  
   

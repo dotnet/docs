@@ -15,7 +15,7 @@ In this tutorial, you learn how to deploy an Orleans shopping cart app to Azure 
   - **Shop inventory**: Explore purchasable products and add them to your cart.
   - **Cart**: View a summary of all the items in your cart, and manage these items; either removing or changing the quantity of each item.
 
-With an understanding of the app and its features, you will then learn how to deploy the app to Azure Container Apps using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the virtual network for the app within Azure.
+With an understanding of the app and its features, you will then learn how to deploy the app to Azure Container Apps using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the Container App's HTTP ingress.
 
 In this tutorial, you learn how to:
 
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 >
 > - Deploy an Orleans application to Azure Container Apps
 > - Automate deployment using GitHub Actions and Azure Bicep
-> - Configure the virtual network for the app within Azure
+> - Configure HTTP ingress
 
 ## Prerequisites
 
@@ -36,17 +36,13 @@ In this tutorial, you learn how to:
 
 ## Run the app locally
 
-To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure Container Apps](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise, you can run the app using the following .NET CLI command:
+To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure Container Apps](https://github.com/Azure-Samples/orleans-blazor-server-shopping-cart-on-container-apps) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise, you can run the app using the following .NET CLI command:
 
 ```dotnetcli
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
 ```
 
 For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the app running, you can navigate around and you're free to test out its capabilities. All of the app's functionality when running locally relies on in-memory persistence, local clustering, and it uses the [Bogus NuGet](https://www.nuget.org/packages/Bogus) package to generate fake products. Stop the app either by selecting the **Stop Debugging** option in Visual Studio or by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the .NET CLI.
-
-## Configure the Container App's ingress
-
-:::image type="content" source="media/azure-container-apps-http-ingress-diagram.png" lightbox="media/azure-container-apps-http-ingress-diagram.png" alt-text="Orleans: Shopping Cart sample Container App ingress architecture diagram.":::
 
 ## Deploy to Azure Container Apps
 
@@ -55,51 +51,11 @@ A typical Orleans application consists of a cluster of server processes (silos) 
 > [!NOTE]
 > For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
 
-Before deploying the app to Azure Container Apps, you need to create an Azure Resource Group (or you could choose to use an existing one). To create a new Azure Resource Group, use one of the following articles:
+[!INCLUDE [create-azure-resources](includes/deployment/create-azure-resources.md)]
 
-- [Azure Portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
-- [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#create-resource-groups)
-- [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#create-resource-groups)
+[!INCLUDE [create-service-principal](includes/deployment/create-service-principal.md)]
 
-Make note of the resource group name you choose, you'll need it later to deploy the app.
-
-### Create a service principal
-
-To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permission to manage Azure resources on your behalf.
-
-```azurecli
-az ad sp create-for-rbac --sdk-auth --role Contributor \
-  --name "<display-name>"  --scopes /subscriptions/<your-subscription-id>
-```
-
-The JSON credentials created will look similar to the following, but with actual values for your client, subscription, and tenant:
-
-```json
-{
-  "clientId": "<your client id>",
-  "clientSecret": "<your client secret>",
-  "subscriptionId": "<your subscription id>",
-  "tenantId": "<your tenant id>",
-  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com/",
-  "resourceManagerEndpointUrl": "https://brazilus.management.azure.com",
-  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-  "galleryEndpointUrl": "https://gallery.azure.com",
-  "managementEndpointUrl": "https://management.core.windows.net"
-}
-```
-
-Copy the output of the command into your clipboard, and continue to the next step.
-
-### Create a GitHub secret
-
-GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Bicep is a domain-specific language (DSL) that uses a declarative syntax to deploy Azure resources. For more information, see [What is Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep). Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
-
-Within the GitHub repository, select **Settings** > **Secrets** > **Create a new secret**. Enter the name `AZURE_CREDENTIALS` and paste the JSON credentials from the previous step into the **Value** field.
-
-:::image type="content" source="media/github-secret.png" alt-text="GitHub Repository: Settings > Secrets" lightbox="media/github-secret.png":::
-
-For more information, see [GitHub: Encrypted Secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).
+[!INCLUDE [create-github-secret](includes/deployment/create-github-secret.md)]
 
 ### Prepare for Azure deployment
 

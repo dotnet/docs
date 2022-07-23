@@ -22,7 +22,7 @@ topic_type:
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  
   
 > [!IMPORTANT]
-> Starting with the .NET Framework 4.5, you can set segment size and maximum generation 0 size to values greater than `DWORD` by using the [ICLRGCManager2::SetGCStartupLimitsEx](iclrgcmanager2-setgcstartuplimitsex-method.md) method.  
+> Starting with .NET Framework 4.5, you can set segment size and maximum generation 0 size to values greater than `DWORD` by using the [ICLRGCManager2::SetGCStartupLimitsEx](iclrgcmanager2-setgcstartuplimitsex-method.md) method.  
   
 ## Syntax  
   

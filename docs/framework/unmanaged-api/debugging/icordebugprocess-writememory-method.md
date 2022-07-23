@@ -47,7 +47,7 @@ HRESULT WriteMemory(
   
 ## Remarks  
 
- Data is automatically written behind any breakpoints. In the .NET Framework version 2.0, native debuggers should not use this method to inject breakpoints into the instruction stream. Use [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md) instead.  
+ Data is automatically written behind any breakpoints. In .NET Framework version 2.0, native debuggers should not use this method to inject breakpoints into the instruction stream. Use [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md) instead.  
   
  The `WriteMemory` method should be used only outside of managed code. This method can corrupt the runtime if used improperly.  
   

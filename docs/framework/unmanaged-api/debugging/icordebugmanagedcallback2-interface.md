@@ -35,7 +35,7 @@ Provides methods to support debugger exception handling and managed debugging as
   
 ## Remarks  
 
- The `ICorDebugManagedCallback2` interface extends the `ICorDebugManagedCallback` interface to handle new debug events introduced in the .NET Framework version 2.0.  
+ The `ICorDebugManagedCallback2` interface extends the `ICorDebugManagedCallback` interface to handle new debug events introduced in .NET Framework version 2.0.  
   
  A debugger must implement `ICorDebugManagedCallback2` if it is debugging .NET Framework 2.0 applications. An instance of `ICorDebugManagedCallback` or `ICorDebugManagedCallback2` is passed as the callback object to [ICorDebug::SetManagedHandler](icordebug-setmanagedhandler-method.md).  
   

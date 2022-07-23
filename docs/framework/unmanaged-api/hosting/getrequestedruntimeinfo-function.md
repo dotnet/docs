@@ -89,7 +89,7 @@ HRESULT GetRequestedRuntimeInfo (
 
  The `GetRequestedRuntimeInfo` method returns run-time information about the version loaded into the process, which is not necessarily the latest version installed on the computer.  
   
- In the .NET Framework version 2.0, you can get information about the latest installed version by using the `GetRequestedRuntimeInfo` method as follows:  
+ In .NET Framework version 2.0, you can get information about the latest installed version by using the `GetRequestedRuntimeInfo` method as follows:  
   
 - Specify the `pExe`, `pwszVersion`, and `pConfigurationFile` parameters as null.  
   

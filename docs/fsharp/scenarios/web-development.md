@@ -35,7 +35,7 @@ Other web development options are documented in the F# Software Foundation's [Gu
 
 ## Falco 
 
-[Falco](https://github.com/pimbrouwers/Falco) is a community-driven toolkit for building _fast_, functional-first and fault-tolerant web applications using F#. It is built upon the high-performance components of ASP.NET Core, optimized for building HTTP applications quickly, has a built-in view engine, and seamlessly integrates with existing .NET Core middleware and frameworks.
+[Falco](https://github.com/pimbrouwers/Falco) is a community-driven toolkit for building _fast_, functional-first, and fault-tolerant web applications using F#. It's built upon the high-performance components of ASP.NET Core and is optimized for building HTTP applications quickly. Falco has a built-in view engine and seamlessly integrates with existing .NET Core middleware and frameworks.
 
 ## See also
 

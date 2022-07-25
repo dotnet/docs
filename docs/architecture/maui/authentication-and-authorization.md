@@ -401,7 +401,7 @@ public sealed class BasketController : Controller
 If an unauthorized user attempts to access a controller or action marked with the Authorize attribute, the API framework returns a `401 (unauthorized)` HTTP status code.
 
 > [!NOTE]
-> Parameters can be specified on the Authorize attribute to restrict an API to specific users. For more information, see [Authorization](/aspnet/core/security/authorization/introduction) on the Microsoft Documentation Center.
+> Parameters can be specified on the Authorize attribute to restrict an API to specific users. For more information, see [ASP.NET Core Docs: Authorization](/aspnet/core/security/authorization/introduction).
 
 IdentityServer can be integrated into the authorization workflow so that the access tokens it provides control authorization. This approach is shown in the diagram below.
 

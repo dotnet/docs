@@ -41,7 +41,7 @@ The following callers aren't impacted by the change:
 Callers that have a long-lived `X509ChainPolicy` object that wish to use the previous behavior can either assign the new `X509ChainPolicy.VerificationTimeIgnored` property to `false` or assign the `X509ChainPolicy.VerificationTime` property to `DateTime.Now`.
 
 ```csharp
-X509ChainPolicy policy = new X509ChainPolicy
+var policy = new X509ChainPolicy
 {
    // ...
    VerificationTime = DateTime.Now,
@@ -51,7 +51,7 @@ X509ChainPolicy policy = new X509ChainPolicy
 or
 
 ```csharp
-X509ChainPolicy policy = new X509ChainPolicy
+var policy = new X509ChainPolicy
 {
     // ...
     VerificationTimeIgnored = false,

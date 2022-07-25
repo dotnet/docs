@@ -405,7 +405,7 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
 
 The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these bicep files are visualized as follows:
 
-:::image type="content" source="media/shopping-cart-container-app-bicep-visualizer" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-container-app-bicep-visualizer":::
+:::image type="content" source="media/shopping-cart-container-app-bicep-visualizer.png" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-container-app-bicep-visualizer.png":::
 
 ## Summary
 

@@ -1,7 +1,7 @@
 ---
 title: "Arithmetic operators - C# reference"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
-ms.date: 06/10/2022
+ms.date: 07/25/2022
 author: pkulikov
 f1_keywords: 
   - "++_CSharpKeyword"
@@ -15,6 +15,7 @@ f1_keywords:
   - "*=_CSharpKeyword"
 helpviewer_keywords: 
   - "arithmetic operators [C#]"
+  - "checked operators [C#]"
   - "increment operator [C#]"
   - "++ operator [C#]"
   - "decrement operator [C#]"
@@ -39,15 +40,7 @@ The following operators perform arithmetic operations with operands of numeric t
 
 Those operators are supported by all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
-Beginning with C# 11, you can define a `checked` variant for operators that are affected by overflow checking. If you define a `checked` operator, you must also define an operator without the `checked` keyword. For more information on checked and unchecked operators, see the article on [Arithmetic operators](../operators/arithmetic-operators.md). Arithmetic operators except the `%` and unary `+` operators support a `checked` operator. Generally, a `checked` operator is expected to throw an exception when the result overflows the destination type. An unchecked operator generally doesn't throw an exception. The overflow behavior depends on the specific type. Some types, like `int` *truncate*, or wrap around. Other types, like `float` *clamp* to the maximum or minimum value. Still other types, like `decimal` throw exceptions even in an unchecked context. The types in the .NET runtime follow these semantics. The compiler doesn't enforce these requirements, but developers should follow those guidelines in their types. The `checked` operator includes the `checked` keyword. The unchecked operator doesn't include that modifier, as the following example shows:
-
-:::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
-
-The previous example declares that the `checked` operator executes in a `checked` context. For more information on `checked` and `unchecked` contexts, see the article on [checked and unchecked contexts](../keywords/checked-and-unchecked.md).
-
-If you provide an operator with the `checked` modifier, you must also provide an implementation of that operator without the `checked` modifier. When you provide both versions, the `checked` operator is called in a `checked` context; the operator without the `checked` modifier is called in an `unchecked` contest. For this reason, it is typically referred to as an *unchecked operator*. If you only provide the operator without the `checked` keyword, it is call in both a `checked` and `unchecked` context.
-
-Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The `++`, `--`, and all compound arithmetic operators (such as `+=`), dont convert their arguments to `int` or have the result type as `int`.
+In the case of integral types, those operators (except the `++` and `--` operators) are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The result type of a [compound assignment expression](#compound-assignment) is the type of the left-hand operand.
 
 ## Increment operator ++
 
@@ -250,6 +243,30 @@ For more information, see remarks at the [System.Double](/dotnet/api/system.doub
 ## Operator overloadability
 
 A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type can't explicitly overload a compound assignment operator.
+
+### User-defined checked operators
+
+Beginning with C# 11, when you overload an arithmetic operator, you can use the `checked` keyword to define the *checked* version of that operator. The following example shows how to do that:
+
+:::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
+
+When you define a checked operator, you must also define the corresponding operator without the `checked` modifier. The checked operator is called in a [checked context](../keywords/checked-and-unchecked.md); the operator without the `checked` modifier is called in a [unchecked context](../keywords/checked-and-unchecked.md). If you only provide the operator without the `checked` modifier, it's called in both a `checked` and `unchecked` context.
+
+When you define both versions of an operator, it's expected that their behavior differs only when the result of an operation is too large to represent in the result type as follows:
+
+- A checked operator throws an <xref:System.OverflowException>.
+- An operator without the `checked` modifier returns an instance representing a *truncated* result.
+
+For information about the difference in behavior of the built-in arithmetic operators, see the [Arithmetic overflow and division by zero](#arithmetic-overflow-and-division-by-zero) section.
+
+You can use the `checked` modifier only when you overload any of the following operators:
+
+- Unary `++`, `--`, and `-` operators
+- Binary `*`, `/`, `+`, and `-` operators
+- [Explicit conversion operators](user-defined-conversion-operators.md)
+
+> [!NOTE]
+> An overflow checking context within the body of a checked operator is not affected by the presence of the `checked` modifier. The default context is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. Use the [`checked` and `unchecked` statements](../keywords/checked-and-unchecked.md) to explicitly specify an overflow checking context, as the example at the beginning of this section demonstrates.
 
 ## C# language specification
 

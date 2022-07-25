@@ -45,7 +45,7 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[]
 1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
 1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
 
-Adding a configuration provider overrides previous key settings. For example, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all other providers because it is added last. If `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used because it was added after *appsettings.json*.
+Adding a configuration provider overrides previous configuration values. For example, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all values from other providers because it is added last. If `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used because it was added after *appsettings.json*.
 
 ### Binding
 

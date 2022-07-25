@@ -48,8 +48,6 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 .NET Framework 4.5 adds APIs that enable new scenarios when working with Entity Framework 5.0. For more information about improvements and features that were added to Entity Framework 5.0, see the following articles: [What’s New](/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
 
-[![My image](media/ado-1-bpuedev11.png)](index.md)
-
 ## See also
 
 - [ADO.NET](index.md)

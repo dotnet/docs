@@ -42,7 +42,7 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
   
  In .NET Framework version 1.0, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executed all commands in the context of the **sp_executesql** stored procedure. As a result, commands that affect the state of the connection (for example, SET NOCOUNT ON), only apply to the execution of the current command. The state of the connection is not modified for any subsequent commands executed while the connection is open.  
   
- In the .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the **sp_executesql** stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.  
+ In .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the **sp_executesql** stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.  
   
  Consider the following batch of commands executed in a call to <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>.  
   

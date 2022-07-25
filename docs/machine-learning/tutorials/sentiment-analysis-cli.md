@@ -32,7 +32,7 @@ You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) to gen
 ## Pre-requisites
 
 - [.NET Core 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or later
-- (Optional) [Visual Studio 2012](https://visualstudio.microsoft.com/vs/)
+- (Optional) [Visual Studio](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 
 You can either run the generated C# code projects from Visual Studio or with `dotnet run` (.NET CLI).

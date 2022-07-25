@@ -1,13 +1,13 @@
 ---
 title: Deploy Orleans to Azure Container Apps
 description: Learn how to deploy an updated Orleans shopping cart app to Azure Container Apps.
-ms.date: 07/22/2022
+ms.date: 07/25/2022
 ms.topic: tutorial
 ---
 
 # Deploy Orleans to Azure Container Apps
 
-In this tutorial, you learn how to deploy an Orleans shopping cart app to Azure Container Apps. The tutorial expands the functionality of the [Orleans shopping cart app](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service), introduced in [Deploy Orleans to Azure App Service](deploy-to-azure-app-service.md). It adds Azure Active Directory (AAD) business-to-consumer (B2C) authentication and instead deploys to Azure Container Apps.
+In this tutorial, you'll learn how to deploy an example Orleans shopping cart application to Azure Container Apps. This tutorial expands the functionality of the [sample Orleans shopping cart app](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service), introduced in [Deploy Orleans to Azure App Service](deploy-to-azure-app-service.md). The sample app adds Azure Active Directory (AAD) business-to-consumer (B2C) authentication and deploys to Azure Container Apps.
 
 You'll learn how to deploy using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the Container App's HTTP ingress.
 
@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 - The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
 - The [Azure CLI](/cli/azure/install-azure-cli)
 - A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio 2022](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
 
 ## Run the app locally
 
@@ -405,7 +405,7 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
 
 The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these bicep files are visualized as follows:
 
-:::image type="content" source="media/shopping-cart-flexing.png" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-flexing.png":::
+:::image type="content" source="media/shopping-cart-container-app-bicep-visualizer" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-container-app-bicep-visualizer":::
 
 ## Summary
 

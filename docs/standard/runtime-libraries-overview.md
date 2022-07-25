@@ -28,7 +28,7 @@ Some libraries are provided in NuGet packages rather than included in the runtim
 | [Localization](../core/extensions/localization.md)                 | [`Microsoft.Extensions.Localization`][loc]            |
 | [Logging](../core/extensions/logging.md)                           | [`Microsoft.Extensions.Logging`][log]                 |
 
-<sup>†</sup> For some target frameworks, including `net6.0`, these types are part of the shared framework and don't need to be installed separately.
+<sup>†</sup> For some target frameworks, including `net6.0`, these libraries are part of the shared framework and don't need to be installed separately.
 
 [configuration]: https://www.nuget.org/packages/Microsoft.Extensions.Configuration
 [di]: https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection

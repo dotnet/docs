@@ -43,20 +43,20 @@ The following table lists the available values for `<RuleCategory>`.
 
 :::row:::
     :::column:::
-        Design
-        Documentation
-        Globalization
+        Design\
+        Documentation\
+        Globalization\
         Interoperability
     :::column-end:::
     :::column:::
-        Maintainability
-        Naming
-        Performance
+        Maintainability\
+        Naming\
+        Performance\
         SingleFile
     :::column-end:::
     :::column:::
-        Reliability
-        Security
+        Reliability\
+        Security\
         Usage
     :::column-end:::
 :::row-end:::

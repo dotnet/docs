@@ -36,7 +36,7 @@ tlbexp assemblyName [options]
 |**/help**|Displays command syntax and options for the tool.|  
 |**/names:** *filename*|Specifies the capitalization of names in a type library. The *filename* argument is a text file. Each line in the file specifies the capitalization of one name in the type library.|  
 |**/nologo**|Suppresses the Microsoft startup banner display.|  
-|**/oldnames**|Forces Tlbexp.exe to export decorated type names if there is a type name conflict. Note that this was the default behavior in versions prior to the .NET Framework version 2.0.|  
+|**/oldnames**|Forces Tlbexp.exe to export decorated type names if there is a type name conflict. Note that this was the default behavior in versions prior to .NET Framework version 2.0.|  
 |**/out:** *file*|Specifies the name of the type library file to generate. If you omit this option, Tlbexp.exe generates a type library with the same name as the assembly (the actual assembly name, which might not necessarily be the same as the file containing the assembly) and a .tlb extension.|  
 |**/silence:** `warningnumber`|Suppresses the display of the specified warning. This option cannot be used with **/silent**.|  
 |**/silent**|Suppresses the display of success messages. This option cannot be used with **/silence**.|  

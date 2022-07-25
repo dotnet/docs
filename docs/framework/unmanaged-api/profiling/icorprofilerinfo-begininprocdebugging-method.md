@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorProfilerInfo::BeginInprocDebugging Method
 
-Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.  
+Initializes in-process debugging support. This method is obsolete in .NET Framework version 2.0.  
   
 ## Syntax  
   

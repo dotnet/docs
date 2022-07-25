@@ -22,7 +22,7 @@ topic_type:
 Sets a code map for the specified function using the specified Microsoft intermediate language (MSIL) map entries.
 
 > [!NOTE]
-> In the .NET Framework version 2.0, calling `SetILInstrumentedCodeMap` on a `FunctionID` that represents a generic function in a particular application domain will affect all instances of that function in the application domain.
+> In .NET Framework version 2.0, calling `SetILInstrumentedCodeMap` on a `FunctionID` that represents a generic function in a particular application domain will affect all instances of that function in the application domain.
 
 ## Syntax
 

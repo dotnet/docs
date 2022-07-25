@@ -10,7 +10,7 @@ ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
 ---
 # Obsolete Types in the .NET Framework
 
-<a name="introduction"></a> The tables in this article list the types that are obsolete in the .NET Framework 4.5 and the .NET Framework 4.6, organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
+<a name="introduction"></a> The tables in this article list the types that are obsolete in the .NET Framework 4.5 and .NET Framework 4.6, organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
 
 - [Obsolete types in system assemblies](#obsolete_types_in_system_assemblies)
 
@@ -80,7 +80,7 @@ The following tables list the types that have been declared obsolete in system a
 |<xref:System.Collections.CaseInsensitiveHashCodeProvider?displayProperty=nameWithType>|Please use <xref:System.StringComparer?displayProperty=nameWithType> instead.|
 |<xref:System.Collections.IHashCodeProvider?displayProperty=nameWithType>|Please use <xref:System.Collections.IEqualityComparer?displayProperty=nameWithType> instead.|
 |<xref:System.Configuration.Assemblies.AssemblyHash?displayProperty=nameWithType>|The <xref:System.Configuration.Assemblies.AssemblyHash> class has been deprecated.|
-|<xref:System.Diagnostics.Contracts.Internal.ContractHelper?displayProperty=nameWithType>|First deprecated in the .NET Framework 4.5. Use the <xref:System.Runtime.CompilerServices.ContractHelper?displayProperty=nameWithType> class in the System.Runtime.CompilerServices namespace instead.|
+|<xref:System.Diagnostics.Contracts.Internal.ContractHelper?displayProperty=nameWithType>|First deprecated in .NET Framework 4.5. Use the <xref:System.Runtime.CompilerServices.ContractHelper?displayProperty=nameWithType> class in the System.Runtime.CompilerServices namespace instead.|
 |<xref:System.Reflection.Emit.UnmanagedMarshal?displayProperty=nameWithType>|An alternate API is available: Emit the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> custom attribute instead.|
 |<xref:System.Runtime.InteropServices.BIND_OPTS?displayProperty=nameWithType>|Use <xref:System.Runtime.InteropServices.ComTypes.BIND_OPTS?displayProperty=nameWithType> instead.|
 |<xref:System.Runtime.InteropServices.BINDPTR?displayProperty=nameWithType>|Use <xref:System.Runtime.InteropServices.ComTypes.BINDPTR?displayProperty=nameWithType> instead.|

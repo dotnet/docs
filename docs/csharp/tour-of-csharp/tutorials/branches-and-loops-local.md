@@ -181,7 +181,7 @@ while (counter < 10)
 }
 ```
 
-The `while` statement checks a condition and executes the statement or statement block following the `while`. It repeatedly checks the condition and executing those statements until the condition is false.
+The `while` statement checks a condition and executes the statement or statement block following the `while`. It repeatedly checks the condition, executing those statements until the condition is false.
 
 There's one other new operator in this example. The `++` after the `counter` variable is the **increment** operator. It adds 1 to the value of `counter` and stores that value in the `counter` variable.
 

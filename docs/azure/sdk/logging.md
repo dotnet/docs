@@ -216,12 +216,13 @@ By default, logging of the aforementioned content is disabled. To enable logging
     };
     ```
 
-1. Set an [event level](/dotnet/api/system.diagnostics.tracing.eventlevel) of either `Verbose` or `LogAlways`. For example:
+1. Use your preferred logging approach with an event/log level of verbose/debug or higher. Find your approach in the following table for specific instructions.
 
-    ```csharp
-    using AzureEventSourceListener listener = 
-        AzureEventSourceListener.CreateConsoleLogger(EventLevel.Verbose);
-    ```
+    |Approach |Instructions |
+    |---------|-------------|
+    |[Enable logging with built-in methods](#enable-logging-with-built-in-methods) |Pass `EventLevel.Verbose` or `EventLevel.LogAlways` to `AzureEventSourceListener.CreateConsoleLogger` or `AzureEventSourceListener.CreateTraceLogger` |
+    |[Configure custom logging](#configure-custom-logging) |Set the `AzureEventSourceListener` class' `level` constructor parameter to `EventLevel.Verbose` or `EventLevel.LogAlways` |
+    |[Map to ASP.NET Core logging](#map-to-aspnet-core-logging) |Add `"Azure.Core": "Debug"` to *appsettings.json* |
 
 ## Next steps
 

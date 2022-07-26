@@ -40,7 +40,7 @@ For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the
 
 ### AAD B2C
 
-While it is beyond the scope of this tutorial, you can learn how to [Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant), and then you can [Register a web app](/azure/active-directory-b2c/tutorial-register-applications) to consume it. In the case of this shopping cart example app, the resulting deployed Container Apps' URL will need to be registered in the B2C tenant. For more information, see [ASP.NET Core Blazor authentication and authorization](/aspnet/core/blazor/security).
+While teaching the concepts of authentication are beyond the scope of this tutorial, you can learn how to [Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant), and then you can [Register a web app](/azure/active-directory-b2c/tutorial-register-applications) to consume it. In the case of this shopping cart example app, the resulting deployed Container Apps' URL will need to be registered in the B2C tenant. For more information, see [ASP.NET Core Blazor authentication and authorization](/aspnet/core/blazor/security).
 
 > [!IMPORTANT]
 > After your Container App is deployed, you'll need to register the app's URL in the B2C tenant. In most production scenarios, you will only need to register the app's URL once as it shouldn't change.

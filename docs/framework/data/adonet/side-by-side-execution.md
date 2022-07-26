@@ -36,32 +36,18 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
   
  Because each installation of .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
   
-## SqlCommand Execution  
+## SqlCommand Execution
+  
+In .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the **sp_executesql** stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.  
+  
+Consider the following batch of commands executed in a call to <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>.
 
- Starting with .NET Framework version 1.1, the way that <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executes commands at the data source was changed.  
-  
- In .NET Framework version 1.0, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executed all commands in the context of the **sp_executesql** stored procedure. As a result, commands that affect the state of the connection (for example, SET NOCOUNT ON), only apply to the execution of the current command. The state of the connection is not modified for any subsequent commands executed while the connection is open.  
-  
- In the .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the **sp_executesql** stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.  
-  
- Consider the following batch of commands executed in a call to <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>.  
-  
 ```sql
 SET NOCOUNT ON;  
 SELECT * FROM dbo.Customers;  
 ```  
   
- In the .NET Framework version 1.1 and later, NOCOUNT will remain ON for any subsequent commands executed while the connection is open. In .NET Framework version 1.0, NOCOUNT is only ON for the current command execution.  
-  
- This change can affect both the forward and backward compatibility of your application if you depend on the behavior of <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> for either version of the .NET Framework.  
-  
- For applications that run on both earlier and later versions of the .NET Framework, you can write your code to make sure that the behavior is the same regardless of the version you are running on. If you want to make sure that a command modifies the state of the connection for all subsequent commands, we recommend that you execute your command using <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>. If you want to make sure that a command does not modify the connection for all subsequent commands, we recommend that you include the commands to reset the state of the connection in your command. For example:  
-  
-```sql
-SET NOCOUNT ON;  
-SELECT * FROM dbo.Customers;  
-SET NOCOUNT OFF;  
-```  
+`NOCOUNT` will remain `ON` for any subsequent commands executed while the connection is open.
   
 ## See also
 

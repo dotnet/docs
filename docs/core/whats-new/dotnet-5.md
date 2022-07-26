@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 07/15/2022
+ms.date: 07/26/2022
 ms.custom: devdivchpfy22
 ms.topic: overview
 ms.author: dapine
@@ -13,7 +13,7 @@ author: IEvangelist
 .NET 5 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4 for two reasons:
 
 - We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
-- We dropped "Core" from the name to emphasize that it's the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 
@@ -47,7 +47,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 
 ### Windows Communication Foundation
 
-Only Windows supported the original implementation of the [Windows Communication Foundation (WCF)](../../framework/wcf/index.md). However, there's a client port available from the .NET Foundation. It's entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
+The original implementation of [Windows Communication Foundation (WCF)](../../framework/wcf/index.md) was only supported on Windows. However, there's a client port available from the .NET Foundation. It's entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
 
 - [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex)
 - [System.ServiceModel.Federation](https://www.nuget.org/packages/System.ServiceModel.Federation)
@@ -70,7 +70,7 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
 
 - **Records**: Reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
 - **Relational pattern matching**: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
-- **Top-level statements**: As a means for accelerating the adoption and learning of C#, the `Main` method can be omitted, and application as simple as the following code is valid:
+- **Top-level statements**: As a means for accelerating the adoption and learning of C#, the `Main` method can be omitted, and an application as simple as the following example is valid:
 
    ```csharp
    System.Console.Write("Hello world!");
@@ -88,7 +88,7 @@ For more information on source generators, see [Introducing C# source generators
 
 ## F# updates
 
-F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. One of the new features is interpolated strings, similar to interpolated string in C#, and even JavaScript.
+F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. One of the new features is interpolated strings, similar to interpolated strings in C#, and even JavaScript.
 
 ```fsharp
 let name = "David"
@@ -96,7 +96,7 @@ let age = 36
 let message = $"{name} is {age} years old."
 ```
 
-In addition to basic string interpolation, there's a typed interpolation. With typed interpolation, a given type must match the format specifier.
+In addition to basic string interpolation, there's typed interpolation. With typed interpolation, a given type must match the format specifier.
 
 ```fsharp
 let name = "David"

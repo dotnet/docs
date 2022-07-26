@@ -1,7 +1,7 @@
 ---
 title: Write a simple parallel program using Parallel.ForEach
 description: In this article, learn how to enable data parallelism in .NET. Write a Parallel.ForEach loop over any IEnumerable or IEnumerable<T> data source.
-ms.date: 07/14/2022
+ms.date: 07/26/2022
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -40,9 +40,9 @@ You can also use Parallel LINQ (PLINQ) to parallelize the processing of <xref:Sy
 
 You can compile the code as a console application for .NET Framework or as a console application for .NET Core.
 
-In Visual Studio, there's Visual Basic and C# console application templates for Windows Desktop and .NET Core.
+In Visual Studio, there are Visual Basic and C# console application templates for Windows Desktop and .NET Core.
 
-From the command line, you can either use the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`) or create the file and use the command-line compiler for a .NET Framework application.
+From the command line, you can use the .NET CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`) or create the file and use the command-line compiler for a .NET Framework application.
 
 To run a .NET Core console application from the command line, use `dotnet run` from the folder that contains your application.
 

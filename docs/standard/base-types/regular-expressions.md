@@ -2,7 +2,7 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: conceptual
-ms.date: "07/14/2022"
+ms.date: "07/26/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -36,7 +36,7 @@ For many applications that deal with strings or that parse large blocks of text,
   
 ## How regular expressions work
 
- The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine is provided with the following two items of information:  
+ The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine be provided with the following two items of information:  
   
 - The regular expression pattern to identify in the text.  
   
@@ -50,7 +50,7 @@ The methods of the <xref:System.Text.RegularExpressions.Regex> class let you per
   
 - Retrieve one or all occurrences of text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method. The former method returns a <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object that provides information about the matching text. The latter returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains one <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object for each match found in the parsed text.  
   
-- Replace text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method. For an example that uses the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](how-to-strip-invalid-characters-from-a-string.md) and [Example: Changing Date Formats](regular-expression-example-changing-date-formats.md).  
+- Replace text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method. For examples that use the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](how-to-strip-invalid-characters-from-a-string.md) and [Example: Changing Date Formats](regular-expression-example-changing-date-formats.md).  
   
 For an overview of the regular expression object model, see [The Regular Expression Object Model](the-regular-expression-object-model.md).  
   
@@ -97,7 +97,7 @@ The <xref:System.String> class includes many string search and replacement metho
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
   
- The input string includes the substring "this? This." However, because of the intervening punctuation mark, it isn't identified as a duplication.  
+ The input string includes the substring "this? This". However, because of the intervening punctuation mark, it isn't identified as a duplication.  
   
 ### Example 3: Dynamically build a culture-sensitive regular expression  
 
@@ -123,7 +123,7 @@ The <xref:System.String> class includes many string search and replacement metho
   
  If each subpattern is found in the input string, the match succeeds, and a <xref:System.Text.RegularExpressions.Match> object that contains information about the match is added to the <xref:System.Text.RegularExpressions.MatchCollection> object.  
   
-## Related sections  
+## Related articles  
   
 |Title|Description|  
 |-----------|-----------------|  

@@ -1,7 +1,7 @@
 ---
 title: "How to: Pad a Number with Leading Zeros"
 description: Learn to pad a number with leading zeros. Add leading zeros to integers or numeric values to a specific total length or a specific number of leading zeros.
-ms.date: "07/15/2022"
+ms.date: "07/26/2022"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -28,7 +28,7 @@ You can add leading zeros to an integer by using the "D" [standard numeric forma
 
     - To display the integer as a hexadecimal value, call its `ToString(String)` method and pass the string "X*n*" as the value of the format parameter, where *n* represents the minimum length of the string.
 
-You can also use the format string in an interpolated string in both [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md). Alternatively, you can also call a method such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> that uses [composite formatting](composite-formatting.md).
+You can also use the format string in an interpolated string in both [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md). Alternatively, you can call a method such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> that uses [composite formatting](composite-formatting.md).
 
 The following example formats several integer values with leading zeros so that the total length of the formatted number is at least eight characters.
 
@@ -41,9 +41,9 @@ The following example formats several integer values with leading zeros so that 
 
 1. Determine whether you want to display the integer as a decimal or a hexadecimal value.
 
-    - Formatting it as a decimal value requires using the "D" standard format specifier.
+    - Formatting it as a decimal value requires the "D" standard format specifier.
 
-    - Formatting it as a hexadecimal value requires using the "X" standard format specifier.
+    - Formatting it as a hexadecimal value requires the "X" standard format specifier.
 
 1. Determine the length of the unpadded numeric string by calling the integer value's `ToString("D").Length` or `ToString("X").Length` method.
 
@@ -62,7 +62,7 @@ The following example pads an integer value with five leading zeros:
 
 1. Define a custom numeric format string that uses the zero placeholder (0) to represent the minimum number of zeros.
 
-1. Call the number's `ToString(String)` method and pass it to the custom format string. You can also use the custom format string with string interpolation or a method that supports composite formatting.
+1. Call the number's `ToString(String)` method and pass it the custom format string. You can also use the custom format string with string interpolation or a method that supports composite formatting.
 
 The following example formats several numeric values with leading zeros. As a result, the total length of the formatted number is at least eight digits to the left of the decimal.
 

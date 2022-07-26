@@ -2,7 +2,7 @@
 title: Unit testing C# with NUnit and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
-ms.date: 07/14/2022
+ms.date: 07/26/2022
 ms.custom: devdivchpfy22
 ---
 # Unit testing C# with NUnit and .NET Core
@@ -84,7 +84,7 @@ The [dotnet new](../tools/dotnet-new.md) command creates a test project that use
 
 [!code-xml[Packages](~/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests/PrimeService.Tests.csproj#Packages)]
 
-The test project requires other packages to create and run unit tests. `dotnet new` command in the previous step added the Microsoft test SDK, the NUnit test framework, and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+The test project requires other packages to create and run unit tests. The `dotnet new` command in the previous step added the Microsoft test SDK, the NUnit test framework, and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
 dotnet add reference ../PrimeService/PrimeService.csproj
@@ -160,11 +160,11 @@ public bool IsPrime(int candidate)
 }
 ```
 
-In the *unit-testing-using-nunit* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `PrimeService` project and then for the `PrimeService.Tests` project. After you build both the projects, it runs this single test. It passes.
+In the *unit-testing-using-nunit* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `PrimeService` project and then for the `PrimeService.Tests` project. After you build both projects, it runs this single test. It passes.
 
 ## Adding more features
 
-Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add new tests with the `[Test]` attribute, which quickly becomes tedious. There are other NUnit attributes that enable you to write a suite of similar tests.  A `[TestCase]` attribute is used to create a suite of tests that execute the same code but have different input arguments. You can use the `[TestCase]` attribute to specify values for those inputs.
+Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add new tests with the `[Test]` attribute, but that quickly becomes tedious. There are other NUnit attributes that enable you to write a suite of similar tests.  A `[TestCase]` attribute is used to create a suite of tests that execute the same code but have different input arguments. You can use the `[TestCase]` attribute to specify values for those inputs.
 
 Instead of creating new tests, apply this attribute to create a single data-driven test. The data driven test is a method that tests several values less than two, which is the lowest prime number:
 

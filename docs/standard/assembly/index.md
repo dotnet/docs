@@ -1,7 +1,7 @@
 ---
 title: "Assemblies in .NET"
 description: Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
-ms.date: 07/14/2022
+ms.date: 07/26/2022
 ms.custom: devdivchpfy22
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 helpviewer_keywords:
@@ -18,7 +18,7 @@ helpviewer_keywords:
 
 # Assemblies in .NET
 
-Assemblies build the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and create a logical unit of functionality. Assemblies take the form of executable (*.exe*) or dynamic link library (*.dll*) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations.
+Assemblies are the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (*.exe*) or dynamic link library (*.dll*) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations.
 
 In .NET and .NET Framework, you can build an assembly from one or more source code files. In .NET Framework, assemblies can contain one or more modules. This way, larger projects can be planned so that several developers can work on separate source code files or modules, which are combined to create a single assembly. For more information about modules, see [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md).
 
@@ -78,7 +78,7 @@ Every assembly has an *assembly manifest* file. Similar to a table of contents, 
 
 - An *assembly reference list*, which is a list of all external dependencies, such as *.dll*s or other files. Assembly references contain references to both global and private objects. Global objects are available to all other applications. In .NET Core, global objects are coupled with a particular .NET Core runtime. In .NET Framework, global objects reside in the global assembly cache (GAC). *System.IO.dll* is an example of an assembly in the GAC. Private objects must be in a directory level at or below the directory in which your app is installed.
 
-Typically assemblies contain information about content, versioning, and dependencies. And the applications that use them need not rely on external sources, such as the registry on Windows systems, to function properly. Assemblies reduce *.dll* conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information, see [Assembly manifest](manifest.md).
+Assemblies contain information about content, versioning, and dependencies. So the applications that use them don't need to rely on external sources, such as the registry on Windows systems, to function properly. Assemblies reduce *.dll* conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information, see [Assembly manifest](manifest.md).
 
 ## Add a reference to an assembly
 
@@ -87,7 +87,7 @@ To use an assembly in an application, you must add a reference to it. When an as
 > [!NOTE]
 > Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of the following ways:
 >
-> - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio or add an [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
+> - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
 > - For .NET Framework, add a reference to the assembly by using the **Add Reference** dialog in Visual Studio or the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
 
 In C#, you can use two versions of the same assembly in a single application. For more information, see [extern alias](../../csharp/language-reference/keywords/extern-alias.md).

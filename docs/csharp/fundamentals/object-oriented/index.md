@@ -90,7 +90,7 @@ In situations where it isn't convenient or necessary to create a named class you
   
 ## Extension Methods  
 
-You can "extend" a class without creating a derived class by creating a separate type. That type contains methods that can be called as if they belonged to the original type. For more information, see [Extension methods)](../../programming-guide/classes-and-structs/extension-methods.md).
+You can "extend" a class without creating a derived class by creating a separate type. That type contains methods that can be called as if they belonged to the original type. For more information, see [Extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
   
 ## Implicitly Typed Local Variables  
 

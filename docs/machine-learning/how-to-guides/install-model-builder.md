@@ -3,7 +3,7 @@ title: How to install Model Builder
 description: Learn how to install the ML.NET Model Builder tool
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/20/2022
+ms.date: 07/27/2022
 ms.custom: mvc, how-to, mlnet-tooling
 ms.topic: how-to
 #Customer intent: As a non-developer I want know how to install Model Builder to add machine learning to my .NET application.
@@ -21,7 +21,6 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 ## Limitations
 
 - ML.NET Model Builder Extension currently only works on Visual Studio on Windows.
-- Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
 
 ## Install Model Builder
 

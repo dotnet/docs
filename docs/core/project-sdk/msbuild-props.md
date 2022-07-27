@@ -971,7 +971,7 @@ The `DisableTransitiveProjectReferences` property controls implicit project refe
 
 This has a similar effect to that of [`PrivateAssets="All"`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) on all of the dependencies of the depended-upon project.
 
-Set this property to `true` to disable implicit `ProjectReference` items. If you set this property to `true`, you can add explicit references to just the projects you need.
+If you set this property to `true`, you can add explicit references to just the projects you need.
 
 ```xml
 <PropertyGroup>

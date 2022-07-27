@@ -1,7 +1,7 @@
 ---
 title: "Assemblies in .NET"
 description: Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
-ms.date: 07/26/2022
+ms.date: 07/27/2022
 ms.custom: devdivchpfy22
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 helpviewer_keywords:
@@ -41,9 +41,6 @@ Assemblies provide the common language runtime with the information it needs to 
 An assembly defines the following information:
 
 - Code that the common language runtime executes.
-
-   > [!NOTE]
-   > Each assembly can have only one entry point: `DllMain`, `WinMain`, or `Main`.
 
 - **Security boundary**: An assembly is the unit at which permissions are requested and granted. For more information about security boundaries in assemblies, see [Assembly security considerations](security-considerations.md).
 

@@ -1,19 +1,19 @@
 ---
-title: Explore static abstract members in interfaces - preview
+title: Explore static abstract members in interfaces
 description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces.
 ms.date: 07/08/2022
 ms.technology: csharp-advanced-concepts
 ---
 # Tutorial: Explore C# 11 feature - static abstract members in interfaces
 
-C# 11 and .NET 7 include a preview version of *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md), or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
+C# 11 and .NET 7 include *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md) or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
 
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >
 > * Define interfaces with static members.
-> * Use experimental interfaces to define classes that implement interfaces with operators defined.
+> * Use interfaces to define classes that implement interfaces with operators defined.
 > * Create generic algorithms that rely on static interface methods.
 
 ## Prerequisites
@@ -29,17 +29,17 @@ public static double MidPoint(double left, double right) =>
     (left + right) / (2.0);
 ```
 
-The same logic would work for any numeric type: `int`, `short`, `long`, `float` `decimal`, or any type that represents a number. You need to have a way to use the `+` operator, `/` operator, and define a value for `2`. You can use the `System.INumber` interface in the `System.Runtime.Experimental` NuGet package to write the preceding method as the following generic method:
+The same logic would work for any numeric type: `int`, `short`, `long`, `float` `decimal`, or any type that represents a number. You need to have a way to use the `+` and `/` operators, and to define a value for `2`. You can use the <xref:System.Numerics.INumber%601?displayProperty=fullName> interface to write the preceding method as the following generic method:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Utilities.cs" id="MidPoint":::
 
-Any type that implements the `INumber` interface must include a definition for `operator +`, and `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters. This implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.
+Any type that implements the <xref:System.Numerics.INumber%601> interface must include a definition for `operator +`, and for `operator /`. The denominator is defined by `(T.One + T.One)` to create the value `2` for any numeric type. The readonly properties `Zero` and `One` are also implemented by every type that implements `INumber`. Using that property rather than `2` forces the denominator to be the same type as the two parameters. (This implementation has the potential for overflow if `left` and `right` are both large enough values. There are alternative algorithms that can avoid this potential issue.)
 
 You define static abstract members in an interface using familiar syntax: You add the `static` and `abstract` modifiers to any static member that doesn't provide an implementation. The following example defines an `IGetNext<T>` interface that can be applied to any type that overrides `operator ++`:
 
 :::code language="csharp" source="./snippets/staticinterfaces/GetNext.cs":::
 
-The constraint that the type argument, `T` implements `IGetNext<T>` ensures that the signature for the operator includes the containing type, or its type argument. Many operators enforce that its parameters must match the type, or be the type parameter constrained to implement the containing type. Without this constraint, the `++` operator couldn't be defined in the `IGetNext<T>` interface.
+The constraint that the type argument, `T`, implements `IGetNext<T>` ensures that the signature for the operator includes the containing type, or its type argument. Many operators enforce that its parameters must match the type, or be the type parameter constrained to implement the containing type. Without this constraint, the `++` operator couldn't be defined in the `IGetNext<T>` interface.
 
 You can create a structure that creates a string of 'A' characters where each increment adds another character to the string using the following code:
 
@@ -66,14 +66,14 @@ AAAAAAAAAA
 
 This small example demonstrates the motivation for this feature. You can use natural syntax for operators, constant values, and other static operations. You can explore these techniques when you create multiple types that rely on static members, including overloaded operators. Define the interfaces that match your types' capabilities and then declare those types' support for the new interface.
 
-## Generic math and experimental features
+## Generic math
 
-The motivating scenario for allowing static methods, including operators, in interfaces is to support *generic math* algorithms. The [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental/) NuGet package contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` record that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.
+The motivating scenario for allowing static methods, including operators, in interfaces is to support *generic math* algorithms. The .NET 7 base class library contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` record that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.
 
-Start by creating a new Console application, either by using `dotnet new` or Visual Studio. Next, add the `System.Runtime.Experimental` NuGet package to your project. You'll need to enable preview features to use the types in this package. Enabling preview features also sets the C# language version to "preview", which enables C# 10 preview features. Add the following element to your *csproj* file inside a `<PropertyGroup>` element:
+Start by creating a new Console application, either by using `dotnet new` or Visual Studio. Set the C# language version to "preview", which enables C# 11 preview features. Add the following element to your *csproj* file inside a `<PropertyGroup>` element:
 
 ```xml
-<EnablePreviewFeatures>true</EnablePreviewFeatures>
+<LangVersion>preview</LangVersion>
 ```
 
 > [!NOTE]
@@ -121,7 +121,7 @@ public record Point<T>(T X, T Y) : IAdditionOperators<Point<T>, Translation<T>, 
     where T : IAdditionOperators<T, T, T>
 ```
 
-Finally, when you're performing addition, it's useful to have a property that defines the additive identity value for that type. There's a new experimental interface for that feature: `IAdditiveIdentity<TSelf, TResult>`. A translation of `{0, 0}` is the additive identity: The resulting point is the same as the left operand. The `IAdditiveIdentity<TSelf, TResult>` interface defines one readonly property: `AdditiveIdentity` that returns the identity value. The `Translation<T>` needs a few changes to implement this interface:
+Finally, when you're performing addition, it's useful to have a property that defines the additive identity value for that type. There's a new interface for that feature: <xref:System.Numerics.IAdditiveIdentity%602>. A translation of `{0, 0}` is the additive identity: The resulting point is the same as the left operand. The `IAdditiveIdentity<TSelf, TResult>` interface defines one readonly property, `AdditiveIdentity`, that returns the identity value. The `Translation<T>` needs a few changes to implement this interface:
 
 :::code language="csharp" source="./snippets/staticinterfaces/Translation.cs":::
 
@@ -157,4 +157,4 @@ This sample has given you a look at how the interfaces for generic math compose.
 > * Build a type that relies on the addition interfaces to implement a type that only supports one mathematical operation.
 >   That type declares its support for those same interfaces so it can be composed in other ways. The algorithms are written using the most natural syntax of mathematical operators.
 
-Experiment with these features and register feedback while they're still in preview. You can use the *Send Feedback* menu item in Visual Studio, or create a new [issue](https://github.com/dotnet/roslyn/issues/new/choose) in the roslyn repository on GitHub.  Build generic algorithms that work with any numeric type. Build algorithms using these interfaces where the type argument may only implement a subset of number-like capabilities. Even if you don't build new interfaces that use these capabilities, but you can experiment with using them in your algorithms.
+Experiment with these features and register feedback. You can use the *Send Feedback* menu item in Visual Studio, or create a new [issue](https://github.com/dotnet/roslyn/issues/new/choose) in the roslyn repository on GitHub. Build generic algorithms that work with any numeric type. Build algorithms using these interfaces where the type argument may only implement a subset of number-like capabilities. Even if you don't build new interfaces that use these capabilities, you can experiment with using them in your algorithms.

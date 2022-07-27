@@ -1,8 +1,8 @@
 ---
 description: "Learn more about interfaces for generic types in .NET."
 title: Generic interfaces
-titleSuffix: .NET
-ms.date: 03/30/2022
+titleSuffix: ""
+ms.date: 07/25/2022
 helpviewer_keywords: 
   - "generic interfaces [.NET]"
   - "equality comparisons [.NET]"
@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 This article provides an overview of .NET's generic interfaces that provide common functionality across families of generic types.  
   
-Generic interfaces provide type-safe counterparts to nongeneric interfaces for ordering and equality comparisons, and for functionality that's shared by generic collection types.  
+Generic interfaces provide type-safe counterparts to nongeneric interfaces for ordering and equality comparisons, and for functionality that's shared by generic collection types. .NET 7 introduces generic interfaces for number-like types, for example, <xref:System.Numerics.INumber%601?displayProperty=fullName>. These interfaces let you define generic methods that provide mathematical functionality, where the generic type parameter is constrained to be a type that implements a generic, numeric interface.
   
 > [!NOTE]
 > The type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. For more information, see [Covariance and Contravariance](covariance-and-contravariance.md).  
@@ -36,13 +36,21 @@ Generic interfaces provide type-safe counterparts to nongeneric interfaces for o
   
 - The **<xref:System.Collections.Generic.IDictionary%602>** generic interface extends the <xref:System.Collections.Generic.ICollection%601> generic interface with methods for keyed retrieval. Generic dictionary types in the .NET base class library also implement the nongeneric <xref:System.Collections.IDictionary> interface.  
   
-- The **<xref:System.Collections.Generic.IEnumerable%601>** generic interface provides a generic enumerator structure. The <xref:System.Collections.Generic.IEnumerator%601> generic interface implemented by generic enumerators inherits the nongeneric <xref:System.Collections.IEnumerator> interface; the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> members, which do not depend on the type parameter `T`, appear only on the nongeneric interface. This means that any consumer of the nongeneric interface can also consume the generic interface.  
+- The **<xref:System.Collections.Generic.IEnumerable%601>** generic interface provides a generic enumerator structure. The <xref:System.Collections.Generic.IEnumerator%601> generic interface implemented by generic enumerators inherits the nongeneric <xref:System.Collections.IEnumerator> interface; the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> members, which do not depend on the type parameter `T`, appear only on the nongeneric interface. This means that any consumer of the nongeneric interface can also consume the generic interface.
+
+## Mathematical functionality
+
+.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describe number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, have been updated to implement these interfaces.
+
+The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, meaning you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
+
+For more information, see [Generic math](math.md).
   
 ## See also
 
 - <xref:System.Collections.Generic?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
 - [Generics](index.md)
-- [Generic Collections in .NET](collections.md)
-- [Generic Delegates for Manipulating Arrays and Lists](delegates-for-manipulating-arrays-and-lists.md)
-- [Covariance and Contravariance](covariance-and-contravariance.md)
+- [Generic collections in .NET](collections.md)
+- [Generic delegates for manipulating arrays and lists](delegates-for-manipulating-arrays-and-lists.md)
+- [Covariance and contravariance](covariance-and-contravariance.md)

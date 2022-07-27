@@ -57,7 +57,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. In **Solution Explorer**, select **Show all files**.
 
-1. In the project folder, expand *bin/Release/net5.0/publish*.
+1. In the project folder, expand *bin/Release/net6.0/publish*.
 
    :::image type="content" source="media/publishing-with-visual-studio/published-files-output-net6.png" alt-text="Solution Explorer showing published files":::
 

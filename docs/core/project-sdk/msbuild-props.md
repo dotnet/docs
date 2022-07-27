@@ -969,7 +969,7 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 
 The `DisableTransitiveProjectReferences` property controls implicit project references. Set this property to `true` to disable implicit `ProjectReference` items. Disabling implicit project references results in non-transitive behavior similar to the [legacy project system](https://github.com/dotnet/project-system/blob/main/docs/feature-comparison.md).
 
-This has a similar effect to that of [`PrivateAssets="All"`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) on all of the dependencies of the depended-upon project.
+When this property is `true`, it has a similar effect to that of setting [`PrivateAssets="All"`](/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) on all of the dependencies of the depended-upon project.
 
 If you set this property to `true`, you can add explicit references to just the projects you need.
 

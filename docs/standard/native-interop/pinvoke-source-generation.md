@@ -6,15 +6,18 @@ ms.date: 07/25/2022
 
 # Source generation for platform invokes
 
-.NET 7 introduces a [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for P/Invokes which recognizes the <xref:System.Runtime.InteropServices.LibraryImportAttribute>.
+.NET 7 introduces a [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for P/Invokes in C# which recognizes the <xref:System.Runtime.InteropServices.LibraryImportAttribute>.
 
-When a P/Invoke is defined and called like below, the built-in interop system in the .NET runtime generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash; at run time to facilitate the transition from managed to unmanaged.
+When a P/Invoke is defined and called as shown in the following code, the built-in interop system in the .NET runtime generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run time to facilitate the transition from managed to unmanaged.
 
 ```csharp
-[DllImport("nativelib", EntryPoint = "to_lower", CharSet = CharSet.Unicode)]
+[DllImport(
+    "nativelib",
+    EntryPoint = "to_lower",
+    CharSet = CharSet.Unicode)]
 internal static extern string ToLower(string str);
 
-string lower = ToLower("StringToConvert");
+// string lower = ToLower("StringToConvert");
 ```
 
 The IL stub handles [marshalling](type-marshalling.md) of parameters and return values and calling the unmanaged code while respecting settings on <xref:System.Runtime.InteropServices.DllImportAttribute> that affect how the unmanaged code should be invoked (for example, <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError>). Since this IL stub is generated at run time, it is not available for ahead-of-time (AOT) compiler or IL trimming scenarios. Debugging the marshalling logic is also a non-trivial exercise.
@@ -26,7 +29,10 @@ The P/Invoke source generator, included with the .NET 7 SDK and enabled by defau
 The <xref:System.Runtime.InteropServices.LibraryImportAttribute> is designed to be similar to <xref:System.Runtime.InteropServices.DllImportAttribute> in usage. We can convert the example above to use P/Invoke source generation by using the <xref:System.Runtime.InteropServices.LibraryImportAttribute> and marking the method as `partial` instead of `extern`:
 
 ```csharp
-[LibraryImport("nativelib", EntryPoint = "to_lower", StringMarshalling = StringMarshalling.Utf16)]
+[LibraryImport(
+    "nativelib",
+    EntryPoint = "to_lower",
+    StringMarshalling = StringMarshalling.Utf16)]
 internal static partial string ToLower(string str);
 ```
 
@@ -34,23 +40,30 @@ During compilation, the source generator will trigger to generate an implementat
 
 ### `MarshalAs`
 
-The source generator also respects usage of <xref:System.Runtime.InteropServices.MarshalAsAttribute>. The above could also have been written as:
+The source generator also respects the <xref:System.Runtime.InteropServices.MarshalAsAttribute>. The preceding code could also be written as:
 
 ```csharp
-[LibraryImport("nativelib", EntryPoint = "to_lower")]
+[LibraryImport(
+    "nativelib",
+    EntryPoint = "to_lower")]
 [return: MarshalAs(UnmanagedType.LPWStr)]
-internal static partial string ToLower([MarshalAs(UnmanagedType.LPWStr)] string str);
+internal static partial string ToLower(
+    [MarshalAs(UnmanagedType.LPWStr)] string str);
 ```
 
-Some settings for <xref:System.Runtime.InteropServices.MarshalAsAttribute> are not supported. The source generator will emit an error if you try to use unsupported settings. For more details, see [Differences from `DllImport`](#differences-from-dllimport).
+Some settings for <xref:System.Runtime.InteropServices.MarshalAsAttribute> are not supported. The source generator will emit an error if you try to use unsupported settings. For more details, see [Differences from DllImport](#differences-from-dllimport).
 
 ### Calling convention
 
-To specify the calling convention, use <xref:System.Runtime.InteropServices.UnmanagedCallConvAttribute>. For example:
+To specify the calling convention, use <xref:System.Runtime.InteropServices.UnmanagedCallConvAttribute>, for example:
 
 ```csharp
-[LibraryImport("nativelib", EntryPoint = "to_lower", StringMarshalling = StringMarshalling.Utf16)]
-[UnmanagedCallConv(CallConvs = new[] { typeof(CallConvStdcall) })]
+[LibraryImport(
+    "nativelib",
+    EntryPoint = "to_lower",
+    StringMarshalling = StringMarshalling.Utf16)]
+[UnmanagedCallConv(
+    CallConvs = new[] { typeof(CallConvStdcall) })]
 internal static partial string ToLower(string str);
 ```
 

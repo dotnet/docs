@@ -202,7 +202,7 @@
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites/1.0.0) |  |  |
 | Microsoft.Azure.Management.ProviderHub | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ProviderHub/1.0.0-beta.1) |  |  |
-| Microsoft.Azure.Management.Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |
+| Microsoft.Azure.Management.Purview | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.2) |  |  |
 | Microsoft.Azure.Management.Quantum | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Quantum/1.0.0-beta.2) |  |  |
 | Microsoft.Azure.Management.Quota | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Quota/1.0.0-preview) |  |  |
 | Microsoft.Azure.Management.ServiceFabricManagedClusters | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabricManagedClusters/1.0.0) |  |  |

@@ -224,13 +224,13 @@ Specifies whether the .NET runtime, shared framework, or SDK are resolved from t
 
 ### `DOTNET_ROLL_FORWARD`
 
-Determines roll forward behavior. For more information, see [the `--roll-forward` option for the dotnet CLI command](dotnet.md#options-for-running-an-application).
+Determines roll forward behavior. For more information, see [the `--roll-forward` option for the dotnet command](dotnet.md#rollforward).
 
 ### `DOTNET_ROLL_FORWARD_TO_PRERELEASE`
 
 If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
-For more information, see [the `--roll-forward` option for the dotnet CLI command](dotnet.md#options-for-running-an-application)
+For more information, see [the `--roll-forward` option for the dotnet command](dotnet.md#rollforward)
 
 ### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 

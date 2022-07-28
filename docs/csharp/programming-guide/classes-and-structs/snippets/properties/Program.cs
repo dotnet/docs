@@ -22,3 +22,19 @@ Console.WriteLine(person.Name);
 var item = new SaleItem { Name = "Shoes", Price = 19.95m };
 Console.WriteLine($"{item.Name}: sells for {item.Price:C2}");
 // </RequiredExample>
+
+//<GetAccessor>
+var employee= new Employee();
+//...
+
+System.Console.Write(employee.Name);  // the get accessor is invoked here
+//</GetAccessor>
+
+//<SetAccessor>
+var student = new Student();
+student.Name = "Joe";  // the set accessor is invoked here
+
+System.Console.Write(student.Name);  // the get accessor is invoked here
+//</SetAccessor>
+
+HidingExample.TestHiding.Test();

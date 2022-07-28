@@ -41,7 +41,7 @@ ReDim numbers(15)
 Dim matrix(5, 5) As Double
 
 ' Declare a 4 x 3 multidimensional array and set array element values.
-Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}
+Dim matrix = New Integer(4, 3) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}
 
 ' Declare a jagged array
 Dim sales()() As Double = New Double(11)() {}

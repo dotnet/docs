@@ -38,58 +38,6 @@
     }
 
 
-    //---------------------------------------------------------------------------
-    namespace WrapUsingExample2
-    {
-        //<Snippet3>
-        public class Employee
-        {
-            private string _name;
-            public string Name
-            {
-                get => _name;
-                set => _name = value;
-            }
-        }
-
-        public class Manager : Employee
-        {
-            private string _name;
-
-            // Notice the use of the new modifier:
-            //<Snippet4>
-            public new string Name
-            //</Snippet4>
-            {
-                get => _name;
-                set => _name = value + ", Manager";
-            }
-        }
-
-        class TestHiding
-        {
-            static void Main()
-            {
-                Manager m1 = new Manager();
-
-                // Derived class property.
-                m1.Name = "John";
-
-                // Base class property.
-                //<Snippet5>
-                ((Employee)m1).Name = "Mary";
-                //</Snippet5>
-
-                System.Console.WriteLine("Name in the derived class is: {0}", m1.Name);
-                System.Console.WriteLine("Name in the base class is: {0}", ((Employee)m1).Name);
-            }
-        }
-        /* Output:
-            Name in the derived class is: John, Manager
-            Name in the base class is: Mary
-        */
-        //</Snippet3>
-    }
 
     //---------------------------------------------------------------------------
     namespace WrapUsingExample3

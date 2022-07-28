@@ -52,6 +52,8 @@ If a property has both a `get` and a `set` (or a `get` and an `init`) accessor, 
 
 :::code language="csharp" source="./snippets/properties/SaleItem.cs" id="SaleItemV2":::
 
+Auto-implemented properties can declare different accessibilities for the `get` and `set` accessors. You common use is to declare a `public get` accessor and a `private set` accessors. You can learn more in the article on [restricting accessor accessibility](./restricting-accessor-accessibility.md).
+
 ## Required properties
 
 Beginning with C# 11, you can add the `required` member to force client code to initialize any property or field:

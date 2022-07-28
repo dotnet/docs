@@ -150,7 +150,7 @@ In most common scenarios, you do not need to explicitly signal the completion of
 In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
 
 > [!IMPORTANT]
-> This will signal to the host that is should stop, and without this call to `StopApplication` the host will continue to run indefinitely.
+> This will signal to the host that it should stop, and without this call to `StopApplication` the host will continue to run indefinitely.
 
 For more information, see:
 

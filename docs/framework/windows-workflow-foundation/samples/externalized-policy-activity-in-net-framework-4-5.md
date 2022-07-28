@@ -55,7 +55,7 @@ The Policy activity allows you to create and execute a .NET Framework 3.5 RuleSe
 
 ## Use this sample
 
-No special set-up is required to run this sample. Open the solution in Visual Studio, and then press **F5** to run the application.
+No special set-up is required to run this sample. Open the solution in Visual Studio, and then press <kbd>F5</kbd> to run the application.
 
 This sample contains two client applications: ImperativeCodeClientSample and DesignerClientSample. The ImperativeCodeClientSample client shows how to configure and run the ExternalizedPolicy4 activity using C# imperative code. The DesignerClientSample shows how to configure and run the ExternalizedPolicy4 activity using the designer.
 
@@ -65,7 +65,7 @@ This sample contains two client applications: ImperativeCodeClientSample and Des
 
 2. In **Solution Explorer**, right-click the **ImperativeCodeClientSample** project and then select **Set as startup project**.
 
-3. To run the project, press **Ctrl**+**F5**.
+3. To run the project, press <kbd>Ctrl</kbd>+<kbd>F5</kbd>.
 
 ### Run the DesignerClientSample application
 
@@ -73,6 +73,6 @@ This sample contains two client applications: ImperativeCodeClientSample and Des
 
 2. In **Solution Explorer**, right-click the **DesignerClientSample** project and then select **Set as startup project**.
 
-3. Press **Ctrl**+**Shift**+**B** to compile the project.
+3. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to compile the project.
 
-4. Press **Ctrl**+**F5** to run the project.
+4. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the project.

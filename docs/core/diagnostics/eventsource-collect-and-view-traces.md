@@ -93,7 +93,7 @@ that have been collected in advance by other tools, such as [dotnet-trace](./dot
 Most of Visual Studio's profiling tools use predefined sets of events that serve a particular purpose, such as analyzing CPU usage or allocations. To
 collect a trace with customized events, you'll use the [Events Viewer](/visualstudio/profiling/events-viewer) tool.
 
-1. To open the Performance Profiler in Visual Studio, select **Alt**+**F2**.
+1. To open the Performance Profiler in Visual Studio, select <kbd>Alt</kbd>+<kbd>F2</kbd>.
 
 2. Select the **Events Viewer** check box.
 

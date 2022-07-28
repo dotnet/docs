@@ -8,7 +8,8 @@ namespace VersionOne
     public class Person
     {
         public string FirstName;
-        // remaining implementation removed from listing
+
+        // Omitted for bevity.
     }
     // </Snippet1>
 }
@@ -20,7 +21,7 @@ namespace VersionTwo
     {
         public string FirstName { get; set; }
 
-        // remaining implementation removed from listing
+        // Omitted for bevity.
     }
     // </Snippet2>
 }
@@ -32,7 +33,7 @@ namespace VersionThree
     {
         public string FirstName { get; set; } = string.Empty;
 
-        // remaining implementation removed from listing
+        // Omitted for bevity.
     }
     // </Snippet3>
 }
@@ -43,11 +44,12 @@ namespace VersionFour
     {
         public string FirstName
         {
-            get { return firstName; }
-            set { firstName = value; }
+            get { return _firstName; }
+            set { _firstName = value; }
         }
-        private string firstName;
-        // remaining implementation removed from listing
+        private string _firstName;
+
+        // Omitted for bevity.
     }
     // </Snippet4>
 }
@@ -58,11 +60,12 @@ namespace VersionFive
     {
         public string FirstName
         {
-            get => firstName;
-            set => firstName = value;
+            get => _firstName;
+            set => _firstName = value;
         }
-        private string firstName;
-        // remaining implementation removed from listing
+        private string _firstName;
+
+        // Omitted for bevity.
     }
     // </Snippet5>
 }
@@ -74,16 +77,17 @@ namespace VersionSix
     {
         public string FirstName
         {
-            get => firstName;
+            get => _firstName;
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentException("First name must not be blank");
-                firstName = value;
+                _firstName = value;
             }
         }
-        private string firstName;
-        // remaining implementation removed from listing
+        private string _firstName;
+
+        // Omitted for bevity.
     }
     // </Snippet6>
 }
@@ -94,11 +98,12 @@ namespace VersionSeven
     {
         public string FirstName
         {
-            get => firstName;
-            set => firstName = (!string.IsNullOrWhiteSpace(value)) ? value : throw new ArgumentException("First name must not be blank");
+            get => _firstName;
+            set => _firstName = (!string.IsNullOrWhiteSpace(value)) ? value : throw new ArgumentException("First name must not be blank");
         }
-        private string firstName;
-        // remaining implementation removed from listing
+        private string _firstName;
+
+        // Omitted for bevity.
     }
     // </Snippet7>
 }
@@ -109,7 +114,7 @@ namespace VersionEight
     {
         public string FirstName { get; private set; }
 
-        // remaining implementation removed from listing
+        // Omitted for bevity.
     }
     // </Snippet8>
 }
@@ -118,11 +123,11 @@ namespace VersionNine
     // <Snippet9>
     public class Person
     {
-        public Person(string firstName) => this.FirstName = firstName;
+        public Person(string firstName) => FirstName = firstName;
 
         public string FirstName { get; }
 
-        // remaining implementation removed from listing
+        // Omitted for bevity.
     }
     // </Snippet9>
 }
@@ -132,11 +137,11 @@ namespace VersionNinePoint1
     public class Person
     {
         public Person() { }
-        public Person(string firstName) => this.FirstName = firstName;
+        public Person(string firstName) => FirstName = firstName;
 
         public string FirstName { get; init; }
 
-        // remaining implementation removed from listing
+        // Omitted for bevity.
     }
     // </Snippet9.1>
 }
@@ -148,11 +153,11 @@ namespace VersionNinePoint2
         public Person() { }
 
         [SetsRequiredMembers]
-        public Person(string firstName) => this.FirstName = firstName;
+        public Person(string firstName) => FirstName = firstName;
 
         public required string FirstName { get; init; }
 
-        // remaining implementation removed from listing
+        // Omitted for bevity.
     }
     // </Snippet9.2>
 }
@@ -191,14 +196,14 @@ namespace VersionTwelve
 
         public string LastName { get; set; }
 
-        private string fullName;
+        private string _fullName;
         public string FullName
         {
             get
             {
-                if (fullName == null)
-                    fullName = $"{FirstName} {LastName}";
-                return fullName;
+                if (_fullName is null)
+                    _fullName = $"{FirstName} {LastName}";
+                return _fullName;
             }
         }
     }
@@ -209,36 +214,36 @@ namespace VersionThirteen
     // <Snippet13>
     public class Person
     {
-        private string firstName;
+        private string _firstName;
         public string FirstName
         {
-            get => firstName;
+            get => _firstName;
             set
             {
-                firstName = value;
-                fullName = null;
+                _firstName = value;
+                _fullName = null;
             }
         }
 
-        private string lastName;
+        private string _lastName;
         public string LastName
         {
-            get => lastName;
+            get => _lastName;
             set
             {
-                lastName = value;
-                fullName = null;
+                _lastName = value;
+                _fullName = null;
             }
         }
 
-        private string fullName;
+        private string _fullName;
         public string FullName
         {
             get
             {
-                if (fullName == null)
-                    fullName = $"{FirstName} {LastName}";
-                return fullName;
+                if (_fullName is null)
+                    _fullName = $"{FirstName} {LastName}";
+                return _fullName;
             }
         }
     }
@@ -267,23 +272,22 @@ namespace VersionFifteen
     {
         public string FirstName
         {
-            get => firstName;
+            get => _firstName;
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentException("First name must not be blank");
-                if (value != firstName)
+                if (value != _firstName)
                 {
-                    firstName = value;
+                    _firstName = value;
                     PropertyChanged?.Invoke(this,
                         new PropertyChangedEventArgs(nameof(FirstName)));
                 }
             }
         }
-        private string firstName;
+        private string _firstName;
 
         public event PropertyChangedEventHandler PropertyChanged;
-        // remaining implementation removed from listing
     }
     // </Snippet15>
 }

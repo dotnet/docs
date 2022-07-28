@@ -21,15 +21,14 @@ public class Student : Person
 {
     public Student() : base()
     {
-
     }
 
     [SetsRequiredMembers]
     public Student(string firstName, string lastName) :
         base(firstName, lastName)
     {
-
     }
+
     public double GPA { get; set; }
 }
 // </SnippetRequired>

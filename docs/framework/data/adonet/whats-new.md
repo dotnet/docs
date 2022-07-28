@@ -1,6 +1,6 @@
 ---
 title: "What's New"
-description: Learn about the new features in ADO.NET in the .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
+description: Learn about the new features in ADO.NET in .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
 ms.date: "03/30/2017"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
 ---
@@ -30,9 +30,9 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
   - Issue a certificate that specifies the short name in the Common Name (CN) or Subject Alternative Name (SAN) field. This solution will work for database mirroring.
 
-  - Add an alias that maps the short name to the fully-qualified domain name.
+  - Add an alias that maps the short name to the fully qualified domain name.
 
-  - Use the fully-qualified domain name in the connection string.
+  - Use the fully qualified domain name in the connection string.
 
 - SqlClient supports Extended Protection. For more information about Extended Protection, see [Connecting to the Database Engine Using Extended Protection](/sql/database-engine/configure-windows/connect-to-the-database-engine-using-extended-protection).
 
@@ -46,7 +46,7 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 ## ADO.NET Entity Framework
 
-The .NET Framework 4.5 adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
+.NET Framework 4.5 adds APIs that enable new scenarios when working with Entity Framework 5.0. For more information about improvements and features that were added to Entity Framework 5.0, see the following articles: [What’s New](/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
 
 ## See also
 

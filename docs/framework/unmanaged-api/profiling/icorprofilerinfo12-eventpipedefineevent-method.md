@@ -34,37 +34,37 @@ Defines an EventPipe event on an existing provider. This provider can be used to
   
 ## Parameters
 
-`provider`
+`provider`\
 [in] The ID of the provider to define an event on.
 
-`eventName`
+`eventName`\
 [in] A pointer to a null terminated wide character string that contains the event name.
 
-`eventID`
+`eventID`\
 [in] The ID of the event being defined.
 
-`keywords`
+`keywords`\
 [in] The keywords of the event being defined.
 
-`eventVersion`
+`eventVersion`\
 [in] The version of the event being defined.
 
-`level`
+`level`\
 [in] The level of the event being defined.
 
-`opcode`
+`opcode`\
 [in] The opcode of the event being defined.
 
-`needStack`
+`needStack`\
 [in] A `BOOL` indicating whether managed stacks should be collected each time this event fires.
 
-`cParamDescs`
+`cParamDescs`\
 [in] The count of the number of parameters in `pParamDescs`.
 
-`pParamDescs`
+`pParamDescs`\
 [in] An array of `COR_PRF_EVENTPIPE_PARAM_DESC` defining the parameter types to the event being defined.
 
-`pEvent`
+`pEvent`\
 [out] A caller provided pointer that will be filled with the ID of the event being defined when the function returns.
 
 ## Requirements  

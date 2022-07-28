@@ -48,7 +48,7 @@ The `foreach` statement can be used to enumerate the elements of any collection.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="EnumerateArray":::
 
-The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%601> interface, so can work with any collection.
+The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%601> interface, so it can work with any collection.
 
 ## String interpolation
 

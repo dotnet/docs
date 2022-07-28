@@ -90,7 +90,7 @@ This section describes the unmanaged global static functions that earlier versio
  Deprecated. Starts the application at the specified network path, using the specified manifests and other application data.  
   
  [CorMarkThreadInThreadPool Function](cormarkthreadinthreadpool-function.md)  
- Deprecated. Marks the currently executing thread-pool thread for the execution of managed code. Starting with the .NET Framework version 2.0, this function has no effect. It is not required, and can be removed from your code.  
+ Deprecated. Marks the currently executing thread-pool thread for the execution of managed code. Starting with .NET Framework version 2.0, this function has no effect. It is not required, and can be removed from your code.  
   
  [CoUninitializeCor Function](couninitializecor-function.md)  
  Obsolete. The CLR cannot be unloaded from a process.  

@@ -43,7 +43,7 @@ In practice, this compatibility can be broken by seemingly inconsequential chang
 
 If your app or component doesn't work as expected on the .NET Framework 4.5 (including its point releases, the .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8), use the following checklists:
 
-- If your app was developed to run on any version of the .NET Framework starting with the .NET Framework 4.0, see [Application compatibility](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.
+- If your app was developed to run on any version of the .NET Framework starting with .NET Framework 4.0, see [Application compatibility](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.
 
 - If you have a .NET Framework 3.5 app, also see [.NET Framework 4 Migration Issues](net-framework-4-migration-issues.md).
 

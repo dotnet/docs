@@ -1,7 +1,7 @@
 ---
 title: "Collections and Data Structures"
 description: Learn how to use collections and data structures in .NET. Use generic and non-generic collections in thread-safe operations.
-ms.date: 07/22/2022
+ms.date: 07/28/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "grouping data in collections"
@@ -19,7 +19,7 @@ Similar data can often be handled more efficiently when stored and manipulated a
 
 There are two main types of collections; generic collections and non-generic collections. Generic collections are type-safe at compile time. Because of this, generic collections typically offer better performance. Generic collections accept a type parameter when they're constructed. They don't require that you cast to and from the <xref:System.Object> type when you add or remove items from the collection. In addition, most generic collections are supported in Windows Store apps. Non-generic collections store items as <xref:System.Object>, require casting, and most aren't supported for Windows Store app development. However, you might see non-generic collections in older code.
 
-In .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the <xref:System.Collections.Immutable> namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection and the original collection can't be modified.
+In .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the <xref:System.Collections.Immutable> namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection, and the original collection can't be modified.
 
 <a name="BKMK_Commoncollectionfeatures"></a>
 

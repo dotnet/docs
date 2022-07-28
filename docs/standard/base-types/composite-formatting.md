@@ -1,7 +1,7 @@
 ---
 title: "Composite formatting"
 description: Learn about .NET composite formatting, which takes as input a list of objects and a composite format string, containing fixed text with indexed placeholders.
-ms.date: "07/22/2022"
+ms.date: "07/28/2022"
 ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs: 
@@ -55,7 +55,7 @@ The composite formatting feature is supported by the following methods:
   
  `{` *index*[`,`*alignment*][`:`*formatString*]`}`  
   
- The matching braces ("{" and "}") are required.  
+ The matching braces ("`{`" and "`}`") are required.  
   
 ### Index Component  
 
@@ -64,28 +64,36 @@ The composite formatting feature is supported by the following methods:
  [!code-csharp[Formatting.Composite#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#7)]
  [!code-vb[Formatting.Composite#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/index1.vb#7)]  
   
- Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string such as "0x{0:X} {0:E} {0:N}", as the following example shows:
+ Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string, such as "`0x{0:X} {0:E} {0:N}`", as the following example shows:
   
  [!code-csharp[Formatting.Composite#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#10)]
  [!code-vb[Formatting.Composite#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/index1.vb#10)]  
   
- Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string like this: "{1} {0} {2}". An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.  
+ Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and the third object by specifying a composite format string, such as `{1} {0} {2}`. An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.  
   
 ### Alignment Component  
 
  The optional *alignment* component is a signed integer indicating the preferred formatted field width. If the value of *alignment* is less than the length of the formatted string, *alignment* is ignored, and the length of the formatted string is used as the field width. The formatted data in the field is right-aligned if *alignment* is positive and left-aligned if *alignment* is negative. If padding is necessary, white space is used. The comma is required if *alignment*  is specified.  
   
- The following example defines two arrays, one containing the names of employees and the other containing the hours they worked over a two-week period. The composite format string left-aligns the names in a 20-character field, and right-aligns their hours in a 5-character field.
+ The following example defines two arrays, one containing the names of employees and the other containing the hours they worked over a two-week period. The composite format string left-aligns the names in a 20-character field and right-aligns their hours in a 5-character field.
 
 >[!NOTE]
-> The "N1" standard format string is also used to format the hours with one fractional digit.
+> You can use the "N1" standard format string to format the hours with one fractional digit.
 
  [!code-csharp[Formatting.Composite#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/alignment1.cs#8)]
  [!code-vb[Formatting.Composite#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/alignment1.vb#8)]  
   
 ### Format String Component  
 
- The optional *formatString* component is a format string that's appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value. Specify a standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object, or an [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value. If *formatString* isn't specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
+ The optional *formatString* component is a format string that's appropriate for the type of object being formatted. You can specify:
+
+- A standard or custom numeric format string if the corresponding object is a numeric value.
+
+- A standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object.
+
+- An [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value.
+
+If *formatString* isn't specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
   
  The following table lists types or categories of types in the .NET class library that support a predefined set of format strings, and provides links to the articles that list the supported format strings. String formatting is an extensible mechanism that makes it possible to define new format strings for all existing types and to define a set of format strings supported by an application-defined type.
 
@@ -101,19 +109,19 @@ For more information, see the <xref:System.IFormattable> and <xref:System.ICusto
   
 ### Escaping Braces  
 
- Opening and closing braces are interpreted as starting and ending a format item. So you must use an escape sequence to display a literal opening brace or closing brace. Specify two opening braces ("{{") in the fixed text to display one opening brace ("{"), or two closing braces ("}}") to display one closing brace ("}"). Braces in a format item are interpreted sequentially in the order they're encountered. Interpreting nested braces isn't supported.  
+ Opening and closing braces are interpreted as starting and ending a format item. So you must use an escape sequence to display a literal opening brace or closing brace. Specify two opening braces ("`{{`") in the fixed text to display one opening brace ("`{`"), or two closing braces ("`}}`") to display one closing brace ("`}`"). Braces in a format item are interpreted sequentially in the order they're encountered. Interpreting nested braces isn't supported.  
   
- The way escaped braces are interpreted can lead to unexpected results. For example, consider the format item "{{{0:D}}}", which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. However, the format item is actually interpreted in the following manner:  
+ The way escaped braces are interpreted can lead to unexpected results. For example, consider the format item "`{{{0:D}}}`", which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. However, the format item is actually interpreted in the following manner:  
   
-1. The first two opening braces ("{{") are escaped and yield one opening brace.  
+1. The first two opening braces ("`{{`") are escaped and yield one opening brace.  
   
-1. The next three characters ("{0:") are interpreted as the start of a format item.  
+1. The next three characters ("`{0:`") are interpreted as the start of a format item.  
   
-1. The next character ("D") would be interpreted as the Decimal standard numeric format specifier, but the next two escaped braces ("}}") yield a single brace. Because the resulting string ("D}") isn't a standard numeric format specifier, the resulting string is interpreted as a custom format string that means display the literal string "D}".  
+1. The next character ("`D`") would be interpreted as the Decimal standard numeric format specifier, but the next two escaped braces ("`}}`") yield a single brace. Because the resulting string ("`D}`") isn't a standard numeric format specifier, the resulting string is interpreted as a custom format string that means display the literal string "`D}`".  
   
-1. The last brace ("}") is interpreted as the end of the format item.  
+1. The last brace ("`}`") is interpreted as the end of the format item.  
   
-1. The final result that's displayed is the literal string, "{D}". The numeric value to be formatted isn't displayed.  
+1. The final result that's displayed is the literal string, "`{D}`". The numeric value to be formatted isn't displayed.  
   
  One way to write your code to avoid misinterpreting escaped braces and format items is to format the braces and format item separately. That is, in the first format operation display a literal opening brace. In the next operation, display the result of the format item, then in the final operation display a literal closing brace. The following example illustrates this approach:
   
@@ -128,17 +136,17 @@ For more information, see the <xref:System.IFormattable> and <xref:System.ICusto
   
 1. If the value to be formatted is `null`, an empty string <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
-1. If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. If one is present, it passes the method the format item's *formatString* value, or `null` if it's not, along with the <xref:System.IFormatProvider> implementation. If the call to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method returns `null`, execution proceeds to the next step. Otherwise, the result of the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> call is returned.
+1. If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. If one is present, the runtime passes the format item's *formatString* value to the method. If one is not present, the runtime passes `null` and the <xref:System.IFormatProvider> implementation to the method. If the call to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method returns `null`, execution proceeds to the next step. Otherwise, the result of the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> call is returned.
   
-1. If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. If one is present in the format item, the method is passed the *formatString* value, or `null` if it's not. The <xref:System.IFormatProvider> argument is determined as follows:  
+1. If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. If one is present in the format item, the *formatString* value is passed to the method. Otherwise, `null` is passed. The <xref:System.IFormatProvider> argument is determined as follows:  
   
     - For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.  
   
-    - For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current culture is used.  
+    - For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. Suppose the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method is unable to supply a <xref:System.Globalization.DateTimeFormatInfo> object either because the value of the argument is `null` or the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter. In that case, the <xref:System.Globalization.DateTimeFormatInfo> object for the current culture is used.
   
     - For objects of other types, if a composite formatting method is called with an <xref:System.IFormatProvider> argument, its value is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation. Otherwise, `null` is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
   
-1. The type's parameterless `ToString` method is called which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class. In this case, the format string specified by the *formatString* component in the format item, if it's present, is ignored.  
+1. The type's parameterless `ToString` method is called, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class. In this case, the format string specified by the *formatString* component in the format item, if it's present, is ignored.  
   
  Alignment is applied after the preceding steps have been performed.  
   

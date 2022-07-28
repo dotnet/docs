@@ -46,11 +46,12 @@ This section describes the interfaces in <xref:System.Numerics?displayProperty=f
 | <xref:System.Numerics.INumberBase%601>                 | Exposes APIs common to all number types (effectively the "complex" number domain).                     |
 | <xref:System.Numerics.ISignedNumber%601>               | Exposes APIs common to all signed number types (such as the concept of `NegativeOne`).                 |
 | <xref:System.Numerics.IUnsignedNumber%601>             | Exposes APIs common to all unsigned number types.                                                      |
-| <xref:System.Numerics.IAdditiveIdentity%601>           | Exposes the concept of `(x + T.AdditiveIdentity) == x`.                                                |
+| <xref:System.Numerics.IAdditiveIdentity%602>           | Exposes the concept of `(x + T.AdditiveIdentity) == x`.                                                |
 | <xref:System.Numerics.IMinMaxValue%601>                | Exposes the concept of `T.MinValue` and `T.MaxValue`.                                                  |
-| <xref:System.Numerics.IMultiplicativeIdentity%601>     | Exposes the concept of `(x * T.MultiplicativeIdentity) == x`.                                          |
+| <xref:System.Numerics.IMultiplicativeIdentity%602>     | Exposes the concept of `(x * T.MultiplicativeIdentity) == x`.                                          |
 
 <sup>1</sup>The binary floating-point types are <xref:System.Double> (`double`), <xref:System.Half>, and <xref:System.Single> (`float`).
+
 <sup>2</sup>The binary integer types are <xref:System.Byte> (`byte`), <xref:System.Int16> (`short`), <xref:System.Int32> (`int`), <xref:System.Int64> (`long`), <xref:System.IntPtr> (`nint`), <xref:System.SByte> (`sbyte`), <xref:System.UInt16> (`ushort`), <xref:System.UInt32> (`uint`), <xref:System.UInt64> (`ulong`), and <xref:System.UIntPtr> (`nuint`).
 
 The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, and you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
@@ -67,7 +68,7 @@ The following table shows some of the core APIs exposed by each interface.
 |                                                  | `RotateLeft`         | Rotates bits left, sometimes also called a circular left shift.                                          |
 |                                                  | `RotateRight`        | Rotates bits right, sometimes also called a circular right shift.                                        |
 |                                                  | `TrailingZeroCount`  | Counts the number of trailing zero bits in the binary representation.                                    |
-| <xref:System.Numerics.IFloatingPoint&601>        | `Ceiling`            | Rounds the value towards positive infinity. +4.5 becomes +5, and -4.5 becomes -4.                        |
+| <xref:System.Numerics.IFloatingPoint%601>        | `Ceiling`            | Rounds the value towards positive infinity. +4.5 becomes +5, and -4.5 becomes -4.                        |
 |                                                  | `Floor`              | Rounds the value towards negative infinity. +4.5 becomes +4, and -4.5 becomes -5.                        |
 |                                                  | `Round`              | Rounds the value using the specified rounding mode.                                                      |
 |                                                  | `Truncate`           | Rounds the value towards zero. +4.5 becomes +4, and -4.5 becomes -4.                                     |
@@ -119,21 +120,21 @@ The operator interfaces correspond to the various operators available to the C# 
 
 | Interface name                                     | Defined operators                        |
 |----------------------------------------------------|------------------------------------------|
-| <xref:System.Numerics.IAdditionOperators%601>      | `x + y`                                  |
-| <xref:System.Numerics.IBitwiseOperators%601>       | `x & y`, `x | y`, `x ^ y`, and `~x`      |
-| <xref:System.Numerics.IComparisonOperators%601>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
+| <xref:System.Numerics.IAdditionOperators%603>      | `x + y`                                  |
+| <xref:System.Numerics.IBitwiseOperators%603>       | `x & y`, `x | y`, `x ^ y`, and `~x`      |
+| <xref:System.Numerics.IComparisonOperators%602>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
 | <xref:System.Numerics.IDecrementOperators%601>     | `--x` and `x--`                          |
-| <xref:System.Numerics.IDivisionOperators%601>      | `x / y`                                  |
-| <xref:System.Numerics.IEqualityOperators%601>      | `x == y` and `x != y`                    |
+| <xref:System.Numerics.IDivisionOperators%603>      | `x / y`                                  |
+| <xref:System.Numerics.IEqualityOperators%602>      | `x == y` and `x != y`                    |
 | <xref:System.Numerics.IIncrementOperators%601>     | `++x` and `x++`                          |
-| <xref:System.Numerics.IModulusOperators%601>       | `x % y`                                  |
-| <xref:System.Numerics.IMultiplyOperators%601>      | `x * y`                                  |
-| <xref:System.Numerics.IShiftOperators%601>         | `x << y` and `x >> y`                    |
-| <xref:System.Numerics.ISubtractionOperators%601>   | `x - y`                                  |
-| <xref:System.Numerics.IUnaryNegationOperators%601> | `-x`                                     |
-| <xref:System.Numerics.IUnaryPlusOperators%601>     | `+x`                                     |
+| <xref:System.Numerics.IModulusOperators%603>       | `x % y`                                  |
+| <xref:System.Numerics.IMultiplyOperators%603>      | `x * y`                                  |
+| <xref:System.Numerics.IShiftOperators%602>         | `x << y` and `x >> y`                    |
+| <xref:System.Numerics.ISubtractionOperators%603>   | `x - y`                                  |
+| <xref:System.Numerics.IUnaryNegationOperators%602> | `-x`                                     |
+| <xref:System.Numerics.IUnaryPlusOperators%602>     | `+x`                                     |
 
-> ![NOTE]
+> [!NOTE]
 > Some of the interfaces define a checked operator in addition to a regular unchecked operator. Checked operators are called in checked contexts and allow a user-defined type to define overflow behavior. If you implement a checked operator, for example, <xref:System.Numerics.ISubtractionOperators%603.op_CheckedSubtraction(%600,%601)>, you must also implement the unchecked operator, for example, <xref:System.Numerics.ISubtractionOperators%603.op_Subtraction(%600,%601)>.
 
 ### Function interfaces
@@ -149,14 +150,12 @@ The function interfaces define common mathematical APIs that apply more broadly 
 | <xref:System.Numerics.IRootFunctions%601>          | Exposes root functions supporting `cbrt(x)` and `sqrt(x)`.                                                               |
 | <xref:System.Numerics.ITrigonometricFunctions%601> | Exposes trigonometric functions supporting `acos(x)`, `asin(x)`, `atan(x)`, `cos(x)`, `sin(x)`, and `tan(x)`.            |
 
-### Parsing and formatting interfaces
+### Parsing interfaces
 
-Parsing and formatting are common programming concepts. They're typically used to support converting user input to a specified type, displaying a value to the user, or serializing to a file. These interfaces are in the <xref:System> namespace.
+Parsing is a common programming concept. It's typically used to support converting user input to a specified type, or deserializing data from a file. These interfaces are in the <xref:System> namespace.
 
 | Interface name                     | Description                                                                                      |
 |------------------------------------|--------------------------------------------------------------------------------------------------|
-| <xref:System.IFormattable%601>     | Exposes support for `value.ToString(string, IFormatProvider)`.                                   |
-| <xref:System.ISpanFormattable%601> | Exposes support for `value.TryFormat(Span<char>, out int, ReadOnlySpan<char>, IFormatProvider)`. |
 | <xref:System.IParsable%601>        | Exposes support for `T.Parse(string, IFormatProvider)`.                                          |
 | <xref:System.ISpanParsable%601>    | Exposes support for `T.Parse(ReadOnlySpan<char>, IFormatProvider)`.                              |
 

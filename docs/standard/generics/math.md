@@ -29,7 +29,7 @@ When designing the interfaces, it was important that they were both fine-grained
 - [Numeric interfaces](#numeric-interfaces)
 - [Operator interfaces](#operator-interfaces)
 - [Function interfaces](#function-interfaces)
-- [Parsing and formatting interfaces](#parsing-and-formatting-interfaces)
+- [Parsing and formatting interfaces](#parsing-interfaces)
 
 ### Numeric interfaces
 

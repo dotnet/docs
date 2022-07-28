@@ -47,7 +47,7 @@ The following example formats several integer values with leading zeros so that 
 
 1. Determine the length of the unpadded numeric string by calling the integer value's `ToString("D").Length` or `ToString("X").Length` method.
 
-1. Add the number of leading zeros you want to include in the formatted string to the length of the unpadded numeric string. Adding the number of leading zeros defines the total length of the padded string.
+1. Add to the length of the unpadded numeric string the number of leading zeros that you want. The result is the total length of the padded string.
 
 1. Call the integer value's `ToString(String)` method, and pass the string "D*n*" for decimal strings and "X*n*" for hexadecimal strings, where *n* represents the total length of the padded string. You can also use the "D*n*" or "X*n*" format string in a method that supports composite formatting.
 

@@ -56,7 +56,7 @@ if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
 
 Navigate to the *.cs* file that contains the UDF that you plan to debug, and [set a breakpoint](/visualstudio/debugger/using-breakpoints). The breakpoint will say `The breakpoint will not currently be hit` because the worker hasn't loaded the assembly that contains UDF yet.
 
-Hit `F5` to continue your application and the breakpoint will eventually be hit.
+Hit <kbd>F5</kbd> to continue your application and the breakpoint will eventually be hit.
 
 > [!NOTE]
 > The Choose Just-In-Time Debugger window pops up for each task. To avoid excessive pop-ups, set the number of executors to a low number. For example, you can use the **--master local[1]** option for spark-submit to set the number of tasks to 1, which launches a single debugger instance.

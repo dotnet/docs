@@ -40,11 +40,9 @@ Generic interfaces provide type-safe counterparts to nongeneric interfaces for o
 
 ## Mathematical functionality
 
-.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describe number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, have been updated to implement these interfaces.
+.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describe number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, have been updated to implement these interfaces. The most prominent of these interfaces is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number.
 
-The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, meaning you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
-
-For more information, see [Generic math](math.md).
+For more information about these interfaces, see [Generic math](math.md).
   
 ## See also
 

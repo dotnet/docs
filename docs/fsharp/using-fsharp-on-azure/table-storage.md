@@ -56,7 +56,7 @@ open Azure.Data.Tables
 
 Add the following `open` statements to the top of the `tables.fsx` file:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L1-L5)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="3-5":::
 
 ### Get your Azure Storage connection string
 
@@ -68,13 +68,13 @@ If you're connecting to Azure Cosmos DB, you'll need your connection string for 
 
 For the tutorial, enter your connection string in your script, like the following example:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L11-L11)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="11":::
 
 ### Create the table service client
 
 The `TableServiceClient` class enables you to retrieve tables and entities in Table storage. Here's one way to create the service client:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L18)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="18":::
 
 Now you are ready to write code that reads data from and writes data to Table storage.
 
@@ -82,7 +82,7 @@ Now you are ready to write code that reads data from and writes data to Table st
 
 This example shows how to create a table if it does not already exist:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L24-L28)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="24-28":::
 
 ### Add an entity to a table
 
@@ -92,11 +92,11 @@ An entity's partition and row key uniquely identify the entity in the table. Ent
 
 Here's an example of a `Customer` that uses the `lastName` as the partition key and the `firstName` as the row key.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L34-L60)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="37-48":::
 
 Now add `Customer` to the table. To do so, we can use the AddEntity() method.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L62-L63)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="50-51":::
 
 ### Insert a batch of entities
 
@@ -109,73 +109,65 @@ You can insert a batch of entities into a table using a single write operation. 
 
 Here's some code that combines two inserts into a batch operation:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L69-L84)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="57-66":::
 
 ### Retrieve all entities in a partition
 
 To query a table for all entities in a partition, use a `Query<T>` object. Here, you filter for entities where "Smith" is the partition key.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L90)]
-
-You now print the results:
-
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L92-L93)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="72":::
 
 ### Retrieve a range of entities in a partition
 
 If you don't want to query all the entities in a partition, you can specify a range by combining the partition key filter with a row key filter. Here, you use two filters to get all entities in the "Smith" partition where the row key (first name) starts with a letter earlier than "M" in the alphabet.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L99)]
-
-You now print the results:
-
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L101-L102)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="78":::
 
 ### Retrieve a single entity
 
 To retrieve a single, specific entity, use `GetEntityAsync` to specify the customer "Ben Smith". Instead of a collection, you get back a `Customer`. Specifying both the partition key and the row key in a query is the fastest way to retrieve a single entity from the Table service.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L108)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="84":::
 
 You now print the results:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L111)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="86-87":::
 
 ### Update an entity
 
 To update an entity, retrieve it from the Table service, modify the entity object, and then save the changes back to the Table service using a `TableUpdateMode.Replace` operation. This causes the entity to be fully replaced on the server, unless the entity on the server has changed since it was retrieved, in which case the operation fails. This failure is to prevent your application from inadvertently overwriting changes from other sources.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L117-L122)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="93-99":::
 
 ### Upsert an entity
 
 Sometimes, you don't know whether an entity exists in the table. And if it does, the current values stored in it are no longer needed. You can use `UpsertEntity` method to create the entity, or replace it if it exists, regardless of its state.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L128-L133)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="105-106":::
 
 ### Query a subset of entity properties
 
 A table query can retrieve just a few properties from an entity instead of all of them. This technique, called projection, can improve query performance, especially for large entities. Here, you return only email addresses using `Query<T>` and `Select`. Projection is not supported on the local storage emulator, so this code runs only when you're using an account on the Table service.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L139-L142)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="112-115":::
 
 ### Retrieve entities in pages asynchronously
 
 If you are reading a large number of entities, and you want to process them as they are retrieved rather than waiting for them all to return, you can use a segmented query. Here, you return results in pages by using an async workflow so that execution is not blocked while you're waiting for a large set of results to return.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L148-L153)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="121-126":::
 
 ### Delete an entity
 
 You can delete an entity after you have retrieved it. As with updating an entity, this fails if the entity has changed since you retrieved it.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L159)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="132":::
 
 ### Delete a table
 
 You can delete a table from a storage account. A table that has been deleted will be unavailable to be re-created for a period of time following the deletion.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L165)]
+:::code language="fsharp" source="../../../samples/snippets/fsharp/azure/table-storage.fsx" range="138":::
 
 ## See also
 

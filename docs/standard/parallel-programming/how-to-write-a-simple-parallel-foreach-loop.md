@@ -45,7 +45,7 @@ From the command line, you can use either the .NET CLI commands (for example, `d
 
 To run a .NET Core console application from the command line, use `dotnet run` from the folder that contains your application.
 
-To run your console application from Visual Studio, press **F5**.
+To run your console application from Visual Studio, press <kbd>F5</kbd>.
 
 ## See also
 

@@ -25,7 +25,7 @@ The Northwind sample database for Microsoft Access is not available on the Micro
 
 1. Open Access.
 
-1. Enter **Northwind** in the **Search for Online Templates** box, and then select **Enter**.
+1. Enter **Northwind** in the **Search for Online Templates** box, and then select <kbd>Enter</kbd>.
 
 1. On the results screen, select **Northwind**. A new window opens with a description of the Northwind database.
 

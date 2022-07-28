@@ -36,7 +36,7 @@ Now add the following code to it:
 
 This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin). The next step is to evaluate it using F# Interactive (FSI).
 
-Highlight the entire function (it should be 11 lines long). Once it's highlighted, hold the **Alt** key and hit **Enter**. You'll notice a terminal window pop up on the bottom of the screen, and it should look similar to this:
+Highlight the entire function (it should be 11 lines long). Once it's highlighted, hold the <kbd>Alt</kbd> key and hit <kbd>Enter</kbd>. You'll notice a terminal window pop up on the bottom of the screen, and it should look similar to this:
 
 ![Example of F# Interactive output with Ionide](./media/getting-started-vscode/vscode-fsi.png)
 

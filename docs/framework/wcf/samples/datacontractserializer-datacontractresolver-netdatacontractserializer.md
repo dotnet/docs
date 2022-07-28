@@ -63,6 +63,6 @@ class MyDataContractResolver : DataContractResolver
 
 6. Click **OK** to close the dialog.
 
-7. To build the solution, press **Ctrl**+**Shift**+**B**.
+7. To build the solution, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
-8. To run the solution, press **Ctrl**+**F5**.
+8. To run the solution, press <kbd>Ctrl</kbd>+<kbd>F5</kbd>.

@@ -190,7 +190,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 ## See also
 
-* [Generate self-signed certificates with the .NET CLI](/dotnet/core/additional-tools/self-signed-certificates-guide)
+* [Generate self-signed certificates with the .NET CLI](../additional-tools/self-signed-certificates-guide.md)
 * [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl)
 * [Troubleshoot certificate problems such as certificate not trusted](/aspnet/core/security/enforcing-ssl#troubleshoot-certificate-problems-such-as-certificate-not-trusted)
 * [Hosting ASP.NET Core images with Docker over HTTPS](/aspnet/core/security/docker-https)

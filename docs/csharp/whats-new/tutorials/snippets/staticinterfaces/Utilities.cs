@@ -1,4 +1,6 @@
-﻿public static class Utilities
+﻿using System.Numerics;
+
+public static class Utilities
 {
     // <MidPoint>
     public static T MidPoint<T>(T left, T right)

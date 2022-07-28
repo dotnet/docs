@@ -19,7 +19,7 @@ The <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface was in
 It is typical when implementing the <xref:System.IAsyncDisposable> interface that classes will also implement the <xref:System.IDisposable> interface. A good implementation pattern of the <xref:System.IAsyncDisposable> interface is to be prepared for either synchronous or asynchronous disposal. All of the guidance for implementing the dispose pattern also applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
 
 > [!CAUTION]
-> If you implement the <xref:System.IAsyncDisposable> interface, you should also implement the <xref:System.IDisposable> interface. This can help to avoid potential resource-leaks when consumers synchronously dispose (but do not asynchronously dispose). Imagine that a class implements <xref:System.IAsyncDisposable>, but doesn't implement <xref:System.IDisposable>. In this case, imagine that the consumer only calls `Dispose` &mdash; this would mean that your implementation never calls `DisposeAsync`. This would result in a resource leak.
+> If you implement the <xref:System.IAsyncDisposable> interface but not the <xref:System.IDisposable> interface, your app can potentially leak resources. If a class implements <xref:System.IAsyncDisposable>, but not <xref:System.IDisposable>, and a consumer only calls `Dispose`, your implementation would never call `DisposeAsync`. This would result in a resource leak.
 
 [!INCLUDE [disposables-and-dependency-injection](includes/disposables-and-dependency-injection.md)]
 

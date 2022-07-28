@@ -1,7 +1,7 @@
 ---
 title: "How to: Extract the Day of the Week from a Specific Date"
 description: Learn how to determine the ordinal day of the week for a particular date in .NET. Learn how to display the localized weekday name for a particular date.
-ms.date: "07/25/2022"
+ms.date: "07/29/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -30,7 +30,7 @@ ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
   
 ## Extract a number indicating the day of the week
   
-1. If you're working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method.  
+1. Use the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method to convert the string representation of a date to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value.  
   
 1. Use the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.DayOfWeek%2A?displayProperty=nameWithType> property to retrieve a <xref:System.DayOfWeek> value that indicates the day of the week.  
   
@@ -43,7 +43,7 @@ ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
   
 ## Extract the abbreviated weekday name
   
-1. If you're working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method.  
+1. Use the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method to convert the string representation of a date to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value.  
   
 1. You can extract the abbreviated weekday name of the current culture or of a specific culture:  
   
@@ -59,7 +59,7 @@ ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
   
 ## Extract the full weekday name
   
-1. If you're working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method.  
+1. Use the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method to convert the string representation of a date to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value.  
   
 1. You can extract the full weekday name of the current culture or of a specific culture:  
   
@@ -75,7 +75,7 @@ ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
   
 ## Example  
 
- The example illustrates calls to the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.DayOfWeek%2A?displayProperty=nameWithType> properties. It also includes calls to the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=nameWithType> methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date.  
+ The following example illustrates calls to the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.DayOfWeek%2A?displayProperty=nameWithType> properties. It also includes calls to the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=nameWithType> methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date.  
   
  [!code-csharp[Formatting.Howto.WeekdayName#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/example6.cs#6)]
  [!code-vb[Formatting.Howto.WeekdayName#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/example6.vb#6)]  

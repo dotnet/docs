@@ -1,7 +1,7 @@
 ---
 title: "Writing Custom Attributes"
 description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
-ms.date: "07/21/2022"
+ms.date: "07/29/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -20,7 +20,7 @@ ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
 ---
 # Writing Custom Attributes
 
-To design your custom attributes, you don't need to learn many new concepts. If you're familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are traditional classes that derive directly or indirectly from the <xref:System.Attribute?displayProperty=nameWithType>. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
+To design your custom attributes, you don't need to learn many new concepts. If you're familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are traditional classes that derive directly or indirectly from the <xref:System.Attribute?displayProperty=nameWithType> class. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
   
  The primary steps to properly design custom attribute classes are as follows:  
   
@@ -36,7 +36,7 @@ To design your custom attributes, you don't need to learn many new concepts. If 
   
 ## Applying the AttributeUsageAttribute  
 
- A custom attribute declaration begins with the <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>, which defines some of the key characteristics of your attribute class. For example, you can specify whether your attribute can be inherited by other classes or which elements the attribute can be applied to. The following code fragment demonstrates how to use the <xref:System.AttributeUsageAttribute>:  
+ A custom attribute declaration begins with the <xref:System.AttributeUsageAttribute?displayProperty=nameWithType> attribute, which defines some of the key characteristics of your attribute class. For example, you can specify whether your attribute can be inherited by other classes or which elements the attribute can be applied to. The following code fragment demonstrates how to use the <xref:System.AttributeUsageAttribute>:  
   
  [!code-cpp[Conceptual.Attributes.Usage#5](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#5)]
  [!code-csharp[Conceptual.Attributes.Usage#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#5)]
@@ -46,7 +46,7 @@ To design your custom attributes, you don't need to learn many new concepts. If 
   
 ### AttributeTargets Member  
 
- In the previous example, <xref:System.AttributeTargets.All?displayProperty=nameWithType> is specified, indicating that this attribute can be applied to all program elements. Alternatively, you can specify <xref:System.AttributeTargets.Class?displayProperty=nameWithType>, indicating that your attribute can be applied only to a class, or <xref:System.AttributeTargets.Method?displayProperty=nameWithType>, indicating that your attribute can be applied only to a method. All program elements can be marked for description by a custom attribute in this manner.  
+ In the preceding example, <xref:System.AttributeTargets.All?displayProperty=nameWithType> is specified, indicating that this attribute can be applied to all program elements. Alternatively, you can specify <xref:System.AttributeTargets.Class?displayProperty=nameWithType>, indicating that your attribute can be applied only to a class, or <xref:System.AttributeTargets.Method?displayProperty=nameWithType>, indicating that your attribute can be applied only to a method. All program elements can be marked for description by a custom attribute in this manner.  
   
  You can also pass multiple <xref:System.AttributeTargets> values. The following code fragment specifies that a custom attribute can be applied to any class or method:
   
@@ -56,19 +56,19 @@ To design your custom attributes, you don't need to learn many new concepts. If 
   
 ### Inherited Property  
 
- The <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a `true` (the default) or `false` flag. In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited%2A> value of `true`, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited%2A> value of `false`.  
+ The <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a `true` (the default) or `false` flag. In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited%2A> value of `true`, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited%2A> value of `false`:  
   
  [!code-cpp[Conceptual.Attributes.Usage#7](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#7)]
  [!code-csharp[Conceptual.Attributes.Usage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#7)]
  [!code-vb[Conceptual.Attributes.Usage#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#7)]  
   
- The two attributes are then applied to a method in the base class `MyClass`.  
+ The two attributes are then applied to a method in the base class `MyClass`:
   
  [!code-cpp[Conceptual.Attributes.Usage#9](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#9)]
  [!code-csharp[Conceptual.Attributes.Usage#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#9)]
  [!code-vb[Conceptual.Attributes.Usage#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#9)]  
   
- Finally, the class `YourClass` is inherited from the base class `MyClass`. The method `MyMethod` shows `MyAttribute`, but not `YourAttribute`.  
+ Finally, the class `YourClass` is inherited from the base class `MyClass`. The method `MyMethod` shows `MyAttribute` but not `YourAttribute`:
   
  [!code-cpp[Conceptual.Attributes.Usage#10](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#10)]
  [!code-csharp[Conceptual.Attributes.Usage#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#10)]
@@ -76,9 +76,9 @@ To design your custom attributes, you don't need to learn many new concepts. If 
   
 ### AllowMultiple Property  
 
- The <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to `true`, multiple instances are allowed; if set to `false` (the default), only one instance is allowed.  
+ The <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to `true`, multiple instances are allowed. If set to `false` (the default), only one instance is allowed.  
   
- In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple%2A> value of `false`, while `YourAttribute` has a value of `true`.  
+ In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple%2A> value of `false`, while `YourAttribute` has a value of `true`:
   
  [!code-cpp[Conceptual.Attributes.Usage#11](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#11)]
  [!code-csharp[Conceptual.Attributes.Usage#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#11)]
@@ -106,13 +106,13 @@ To design your custom attributes, you don't need to learn many new concepts. If 
   
 - By convention, the name of the attribute class ends with the word **Attribute**. While not required, this convention is recommended for readability. When the attribute is applied, the inclusion of the word Attribute is optional.  
   
-- All attribute classes must inherit directly or indirectly from <xref:System.Attribute?displayProperty=nameWithType>.  
+- All attribute classes must inherit directly or indirectly from the <xref:System.Attribute?displayProperty=nameWithType> class.  
   
 - In Microsoft Visual Basic, all custom attribute classes must have the <xref:System.AttributeUsageAttribute?displayProperty=nameWithType> attribute.  
   
 ## Declaring Constructors  
 
- Attributes are initialized with constructors in the same way as traditional classes. The following code fragment illustrates a typical attribute constructor. This public constructor takes a parameter and sets a member variable equal to its value.  
+ Just like traditional classes, attributes are initialized with constructors. The following code fragment illustrates a typical attribute constructor. This public constructor takes a parameter and sets a member variable equal to its value.
   
  [!code-cpp[Conceptual.Attributes.Usage#15](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#15)]
  [!code-csharp[Conceptual.Attributes.Usage#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#15)]
@@ -121,7 +121,7 @@ To design your custom attributes, you don't need to learn many new concepts. If 
  You can overload the constructor to accommodate different combinations of values. If you also define a [property](/previous-versions/visualstudio/visual-studio-2013/65zdfbdt(v=vs.120)) for your custom attribute class, you can use a combination of named and positional parameters when initializing the attribute. Typically, you define all required parameters as positional and all optional parameters as named. In this case, the attribute can't be initialized without the required parameter. All other parameters are optional.
 
 > [!NOTE]
-> In Visual Basic, constructors for an attribute class shouldn't use a ParamArray argument.  
+> In Visual Basic, constructors for an attribute class shouldn't use a `ParamArray` argument.  
   
  The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.  
   
@@ -151,7 +151,7 @@ To design your custom attributes, you don't need to learn many new concepts. If 
  [!code-csharp[Conceptual.Attributes.Usage#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#12)]
  [!code-vb[Conceptual.Attributes.Usage#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#12)]  
   
- The first example shows the attribute applied with only the required named parameters, while the second example shows the attribute applied with both the required and optional parameters.  
+ The first example shows the attribute applied with only the required named parameters. The second example shows the attribute applied with both the required and optional parameters.
   
 ## See also
 

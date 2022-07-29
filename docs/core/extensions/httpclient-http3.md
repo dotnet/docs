@@ -3,7 +3,7 @@ title: Use HTTP/3 with HttpClient
 description: Learn how to use the HttpClient to access HTTP/3 servers in .NET 6
 author: IEvangelist
 ms.author: samsp
-ms.date: 04/19/2022
+ms.date: 7/28/2022
 ---
 
 # Use HTTP/3 with HttpClient
@@ -24,7 +24,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 >
 > Apps configured to take advantage of HTTP/3 should be designed to also support HTTP/1.1 and HTTP/2. If issues are identified in HTTP/3, we recommended disabling HTTP/3 until the issues are resolved in a future release of .NET.
 
-## HttpClient Settings
+## HttpClient settings
 
 HTTP/3 support is in preview, and needs to be enabled via a configuration flag which can be set in the project with:
 
@@ -43,7 +43,7 @@ The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.
 
 The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard is not final and therefore may change after .NET 6 is released.
 
-## Platform Dependencies
+## Platform dependencies
 
 HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. MsQuic is included in specific builds of windows and as a library for Linux. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3 then it's disabled.
 

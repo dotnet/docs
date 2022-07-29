@@ -20,7 +20,7 @@ This is a WCF client that accesses the service after successful authentication. 
 
 1. Open the CryptoAgility.sln solution in Visual Studio 2012.
 
-2. Press **Ctrl**+**Shift**+**B** to build the solution.
+2. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution.
 
 3. Open File Explorer and navigate to the \WCF\Basic\Security\CryptoAgility\Service\bin directory and run the service.exe file with administrator privileges by right-clicking service.exe and selecting **Run as administrator**.
 

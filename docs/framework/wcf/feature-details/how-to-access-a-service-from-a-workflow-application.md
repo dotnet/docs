@@ -22,7 +22,7 @@ This topic describes how to call a workflow service from a workflow console appl
 
 4. After the project is created, the Workflow1.xaml file is opened in the designer. Click the **Toolbox** tab to open the toolbox if it is not already open and click the pushpin to keep the toolbox window open.
 
-5. Press **Ctrl**+**F5** to build and launch the service. As before, the ASP.NET Development Server is launched and Internet Explorer displays the WCF Help Page. Notice the URI for this page as you must use it in the next step.
+5. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and launch the service. As before, the ASP.NET Development Server is launched and Internet Explorer displays the WCF Help Page. Notice the URI for this page as you must use it in the next step.
 
      ![IE displaying WCF help page and URI](./media/how-to-access-a-service-from-a-workflow-application/ie-wcf-help-page-uri.jpg)
 

@@ -148,7 +148,7 @@ To perform the communication between service and client, a service reference is 
 
          This specifies that the Client project is executed after the Service project.
 
-3. To run the solution, press **F5**.
+3. To run the solution, press <kbd>F5</kbd>.
 
 > [!NOTE]
 > If these steps don't work, then make sure that your environment has been properly set up, using the following steps:

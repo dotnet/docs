@@ -16,7 +16,7 @@ If analytic tracing is enabled in a Windows Communication Foundation (WCF) appli
   
 3. Next, open a WCF application that includes a service project and a client project that interacts with that service.  You can create such an application by following the [Getting Started Tutorial](../../getting-started-tutorial.md).  If you have the WCF samples installed, you can open the [Getting Started](../../samples/getting-started-sample.md), which contains the completed project created in the tutorial.  
   
-4. Execute the server application by pressing **F5**. Execute the client application by right-clicking on the **Client** project and selecting **Debug**, **Start New Instance**.  
+4. Execute the server application by pressing <kbd>F5</kbd>. Execute the client application by right-clicking on the **Client** project and selecting **Debug**, **Start New Instance**.  
   
 5. In Event Viewer, refresh the Analytic log and sort the events by Event ID.  Look for events with Event ID [214 - OperationCompleted](214-operationcompleted.md).  These events will show which operations have completed, and what the duration of the operation was.  The following event shows the duration of an Add operation.  
   

@@ -64,7 +64,7 @@ public static class ListPattern
                 [_, "WITHDRAWAL", .., var amount] => -decimal.Parse(amount),
                 [_, "INTEREST", var amount]       => decimal.Parse(amount),
                 [_, "FEE", var fee]               => -decimal.Parse(fee),
-                _                                 => throw new InvalidOperationException($"Record {record} is not in the expected format!"),
+                _                                 => throw new InvalidOperationException($"Record {transaction} is not in the expected format!"),
             };
             Console.WriteLine($"Record: {transaction}, New balance: {balance:C}");
         }

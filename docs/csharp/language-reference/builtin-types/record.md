@@ -115,7 +115,7 @@ To implement value equality, the compiler synthesizes several methods, including
 
 * A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. This method can be declared explicitly.
 
-* If the record type is derived from a base record type Base, `Equals(Base? other)`. It is an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
+* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It is an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
 
 * An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
 

@@ -54,7 +54,7 @@ This section describes the interfaces in <xref:System.Numerics?displayProperty=f
 
 <sup>2</sup>The binary [integer types](../../csharp/language-reference/builtin-types/integral-numeric-types.md) are <xref:System.Byte> (`byte`), <xref:System.Int16> (`short`), <xref:System.Int32> (`int`), <xref:System.Int64> (`long`), <xref:System.Int128>, <xref:System.IntPtr> (`nint`), <xref:System.SByte> (`sbyte`), <xref:System.UInt16> (`ushort`), <xref:System.UInt32> (`uint`), <xref:System.UInt64> (`ulong`), <xref:System.UInt128>, and <xref:System.UIntPtr> (`nuint`).
 
-The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, and you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number types&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
+The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a *real* number. If a type implements this interface, it means that a value has a sign (this includes `unsigned` types, which are considered positive) and can be compared to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as *complex* and *imaginary* numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number types&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
 
 Several of the interfaces are also implemented by various other types, including <xref:System.Char>, <xref:System.DateOnly>, <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.Decimal>, <xref:System.Guid>, <xref:System.TimeOnly>, and <xref:System.TimeSpan>.
 
@@ -91,9 +91,9 @@ The following table shows some of the core APIs exposed by each interface.
 | <xref:System.Numerics.INumberBase%601>           | `One`                | Gets the value 1 for the type.                                                                           |
 |                                                  | `Radix`              | Gets the radix, or base, for the type. <xref:System.Int32> returns 2. <xref:System.Decimal> returns 10.  |
 |                                                  | `Zero`               | Gets the value 0 for the type.                                                                           |
-|                                                  | `CreateChecked`      | Creates a value from another value, throwing if the other value can't be represented.                    |
-|                                                  | `CreateSaturating`   | Creates a value from another value, clamping if the other value can't be represented.                    |
-|                                                  | `CreateTruncating`   | Creates a value from another value, truncating (wrapping) if the other value can't be represented.       |
+|                                                  | `CreateChecked`      | Creates a value, throwing an <xref:System.OverflowException> if the input cannot fit.<sup>1</sup>        |
+|                                                  | `CreateSaturating`   | Creates a value, clamping to `T.MinValue` or `T.MaxValue` if the input cannot fit.<sup>1</sup>           |
+|                                                  | `CreateTruncating`   | Creates a value from another value, wrapping around if the input cannot fit.<sup>1</sup>                 |
 |                                                  | `IsComplexNumber`    | Returns true if the value has a non-zero real part and a non-zero imaginary part.                        |
 |                                                  | `IsEvenInteger`      | Returns true if the value is an even integer. 2.0 returns `true`, and 2.2 returns `false`.               |
 |                                                  | `IsFinite`           | Returns true if the value is not infinite and not `NaN`.                                                 |
@@ -110,6 +110,22 @@ The following table shows some of the core APIs exposed by each interface.
 |                                                  | `MinMagnitude`       | Returns the value with a lesser absolute value, returning `NaN` if either input is `NaN`.                |
 |                                                  | `MinMagnitudeNumber` | Returns the value with a lesser absolute value, returning the number if one input is `NaN`.              |
 | <xref:System.Numerics.ISignedNumber%601>         | `NegativeOne`        | Gets the value -1 for the type.                                                                          |
+
+<sup>1</sup>To help understand the behavior of the three `Create*` methods, consider the following examples.
+
+Example when given a value that's too large:
+
+- `byte.CreateChecked(384)` will throw an <xref:System.OverflowException>.
+- `byte.CreateSaturating(384)` returns 255 because 384 is greater than <xref:System.Byte.MaxValue?displayProperty=nameWithType> (which is 255).
+- `byte.CreateTruncating(384)` returns 128 because it takes the lowest eight bits (384 has a hex representation of `0x0180`, and the lowest 8 bits is `0x80`, which is 128).
+
+Example when given a value that's too small:
+
+- `byte.CreateChecked(-384)` will throw an <xref:System.OverflowException>.
+- `byte.CreateSaturating(-384)` returns 0 because -384 is smaller than <xref:System.Byte.MinValue?displayProperty=nameWithType> (which is 0).
+- `byte.CreateTruncating(-384)` returns 128 because it takes the lowest 8 bits (384 has a hex representation of `0xFE80`, and the lowest 8 bits is `0x80`, which is 128).
+
+The `Create*` methods also have some special considerations for IEEE 754 floating-point types, like `float` and `double`, as they have the special values `PositiveInfinity`, `NegativeInfinity`, and `NaN`. All three `Create*` APIs behave as `CreateSaturating`. Also, while `MinValue` and `MaxValue` represent the largest negative/positive "normal" number, the actual minimum and maximum values are `NegativeInfinity` and `PositiveInfinity`, so they clamp to these values instead.
 
 ### Operator interfaces
 
@@ -169,7 +185,7 @@ static TResult Average<T, TResult>(T first, T second)
     where T : INumber<T>
     where TResult : INumber<TResult>
 {
-    return TResult.CreateChecked( (first + second) / (T.One + T.One) );
+    return TResult.CreateChecked( (first + second) / T.CreateChecked(2) );
 }
 
 static T ParseInvariant<T>(string s)

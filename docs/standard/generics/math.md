@@ -18,7 +18,7 @@ static T Add<T>(T left, T right)
 }
 ```
 
-In this method, the type parameter `T` is constrained to be a type that implements the new <xref:System.Numerics.INumber%601> interface. <xref:System.Numerics.INumber%601> implements the <xref:System.Numerics.IAdditionOperators%603> interface, which contains the [+ operator](xref:System.Numerics.IAdditionOperators%603.op_Addition(%600,%601)). That allows the method to generically add the two numbers. The method can be used with any of .NET's numeric types, because they've all been updated to implement <xref:System.Numerics.INumber%601> in .NET 7.
+In this method, the type parameter `T` is constrained to be a type that implements the new <xref:System.Numerics.INumber%601> interface. <xref:System.Numerics.INumber%601> implements the <xref:System.Numerics.IAdditionOperators%603> interface, which contains the [+ operator](xref:System.Numerics.IAdditionOperators%603.op_Addition(%600,%601)). That allows the method to generically add the two numbers. The method can be used with any of .NET's built-in numeric types, because they've all been updated to implement <xref:System.Numerics.INumber%601> in .NET 7.
 
 Library authors will benefit most from the generic math interfaces, because they can simplify their code base by removing "redundant" overloads. Other developers will benefit indirectly, because the APIs they consume may start supporting more types.
 
@@ -52,7 +52,7 @@ This section describes the interfaces in <xref:System.Numerics?displayProperty=f
 
 <sup>1</sup>The binary [floating-point types](../../csharp/language-reference/builtin-types/floating-point-numeric-types.md) are <xref:System.Double> (`double`), <xref:System.Half>, and <xref:System.Single> (`float`).
 
-<sup>2</sup>The binary [integer types](../../csharp/language-reference/builtin-types/integral-numeric-types.md) are <xref:System.Byte> (`byte`), <xref:System.Int16> (`short`), <xref:System.Int32> (`int`), <xref:System.Int64> (`long`), <xref:System.IntPtr> (`nint`), <xref:System.SByte> (`sbyte`), <xref:System.UInt16> (`ushort`), <xref:System.UInt32> (`uint`), <xref:System.UInt64> (`ulong`), and <xref:System.UIntPtr> (`nuint`).
+<sup>2</sup>The binary [integer types](../../csharp/language-reference/builtin-types/integral-numeric-types.md) are <xref:System.Byte> (`byte`), <xref:System.Int16> (`short`), <xref:System.Int32> (`int`), <xref:System.Int64> (`long`), <xref:System.Int128>, <xref:System.IntPtr> (`nint`), <xref:System.SByte> (`sbyte`), <xref:System.UInt16> (`ushort`), <xref:System.UInt32> (`uint`), <xref:System.UInt64> (`ulong`), <xref:System.UInt128>, and <xref:System.UIntPtr> (`nuint`).
 
 The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, and you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number types&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
 

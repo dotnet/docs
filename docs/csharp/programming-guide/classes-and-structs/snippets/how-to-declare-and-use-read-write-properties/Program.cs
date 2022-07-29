@@ -47,6 +47,7 @@ namespace Properties
 
     public class Wrapper
     {
+        private string _name = "N/A";
         //<Snippet2>
         public string Name
         {

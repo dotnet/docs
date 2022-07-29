@@ -1,4 +1,4 @@
-    namespace AutoImplemented
+﻿    namespace AutoImplemented;
     
     //<snippet28>
     // This class is mutable. Its data can be modified from

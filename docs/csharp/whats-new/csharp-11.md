@@ -98,7 +98,7 @@ There are several language features that enable generic math support:
 
 You can add `static abstract` or `static virtual` members in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` interface in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values. You can learn about the new syntax in the article on [interfaces](../language-reference/keywords/interface.md#static-abstract-and-virtual-members). Interfaces that include `static virtual` methods are typically [generic interfaces](../programming-guide/generics/generic-interfaces.md). Furthermore, most will declare a constraint that the type parameter [implements the declared interface](../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface).
 
-You can learn more and try the feature yourself in the tutorial [Explore static abstract interface members](./tutorials/static-abstract-interface-methods.md), or the [Preview features in .NET 6 – generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
+You can learn more and try the feature yourself in the tutorial [Explore static abstract interface members](./tutorials/static-virtual-interface-members.md), or the [Preview features in .NET 6 – generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
 
 Generic math created other requirements on the language.
 

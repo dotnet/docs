@@ -56,17 +56,17 @@ public static class ListPattern
 
         // <DataRecordExample>
         decimal balance = 0m;
-        foreach (var record in ReadRecords())
+        foreach (var transaction in ReadRecords())
         {
-            balance += record switch
+            balance += transaction switch
             {
                 [_, "DEPOSIT", _, var amount]     => decimal.Parse(amount),
                 [_, "WITHDRAWAL", .., var amount] => -decimal.Parse(amount),
                 [_, "INTEREST", var amount]       => decimal.Parse(amount),
-                [_, "FEE", var fee]               => decimal.Parse(fee),
+                [_, "FEE", var fee]               => -decimal.Parse(fee),
                 _                                 => throw new InvalidOperationException($"Record {record} is not in the expected format!"),
             };
-            Console.WriteLine($"Record: {record}, New balance: {balance:C}");
+            Console.WriteLine($"Record: {transaction}, New balance: {balance:C}");
         }
         // </DataRecordExample>
 

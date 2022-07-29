@@ -26,6 +26,6 @@ The sample consists a self-hosted service and a client that both run within a co
 
 1. Open the solution for the Basic Http Service Sample. When launching Visual Studio 2012, you must run as an administrator for the sample to execute successfully. Do this by right-clicking the Visual Studio icon and selecting **Run as Administrator** from the context menu.
 
-2. Press **Ctrl**+**Shift**+**B** to build the solution and then press **Ctrl**+**F5** to run the console application without debugging. The console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser. As the sample runs, the client writes the status of the current activity.
+2. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution and then press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the console application without debugging. The console window appears and provides the URI of the running service and the URI of the HTML help page for the running service. At any point in time you can view the HTML help page by typing the URI of the help page in a browser. As the sample runs, the client writes the status of the current activity.
 
 3. Press any key to terminate the sample.

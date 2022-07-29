@@ -38,7 +38,7 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 | :::no-loc text="Working Set"::: (`working-set`) | The amount of physical memory mapped to the process context at a point in time base on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> | .NET Core 3.1 |
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes | .NET 5 |
 | :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled | .NET 5 |
-| :::no-loc text="GC Committed Bytes"::: (`gc-committed-bytes`) | The number of bytes committed by the GC | .NET 6 |
+| :::no-loc text="GC Committed Bytes"::: (`gc-committed`) | The number of bytes committed by the GC | .NET 6 |
 
 ## Microsoft.AspNetCore.Hosting counters
 

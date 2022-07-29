@@ -332,7 +332,7 @@ You can find the existing images in your local repository by using the docker im
 
 ### Creating Docker images with Visual Studio
 
-When you use Visual Studio to create a project with Docker support, you don't explicitly create an image. Instead, the image is created for you when you press **F5** (or **Ctrl-F5**) to run the dockerized application or service. This step is automatic in Visual Studio and you won't see it happen, but it's important that you know what's going on underneath.
+When you use Visual Studio to create a project with Docker support, you don't explicitly create an image. Instead, the image is created for you when you press <kbd>F5</kbd> (or <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the dockerized application or service. This step is automatic in Visual Studio and you won't see it happen, but it's important that you know what's going on underneath.
 
 ![Image for the optional Step 4.](./media/docker-app-development-workflow/step-4-define-services-docker-compose-yml.png)
 
@@ -453,7 +453,7 @@ The hash shown is the container ID and it's also assigned a random readable name
 
 #### Using Visual Studio
 
-If you haven't added container orchestrator support, you can also run a single container app in Visual Studio by pressing **Ctrl-F5** and you can also use **F5** to debug the application within the container. The container runs locally using docker run.
+If you haven't added container orchestrator support, you can also run a single container app in Visual Studio by pressing <kbd>Ctrl</kbd>+<kbd>F5</kbd> and you can also use <kbd>F5</kbd> to debug the application within the container. The container runs locally using docker run.
 
 ### Option B: Running a multi-container application
 
@@ -475,7 +475,7 @@ After the docker-compose up command runs, the application and its related contai
 
 #### Using Visual Studio
 
-Running a multi-container application using Visual Studio 2019 can't get any simpler. You just press **Ctrl-F5** to run or **F5** to debug, as usual, setting up the **docker-compose** project as the startup project.  Visual Studio handles all needed setup, so you can create breakpoints as usual and debug what finally become independent processes running in "remote servers", with the debugger already attached, just like that.
+Running a multi-container application using Visual Studio 2019 can't get any simpler. You just press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run or <kbd>F5</kbd> to debug, as usual, setting up the **docker-compose** project as the startup project.  Visual Studio handles all needed setup, so you can create breakpoints as usual and debug what finally become independent processes running in "remote servers", with the debugger already attached, just like that.
 
 As mentioned before, each time you add Docker solution support to a project within a solution, that project is configured in the global (solution-level) docker-compose.yml file, which lets you run or debug the whole solution at once. Visual Studio will start one container for each project that has Docker solution support enabled, and perform all the internal steps for you (dotnet publish, docker build, etc.).
 

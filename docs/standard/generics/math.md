@@ -6,7 +6,7 @@ ms.date: 07/26/2022
 ---
 # Generic math
 
-.NET 7 introduces new math-related generic interfaces to the base class library. The availability of these interfaces means you can constrain a type parameter of a generic type or method to be "number-like". In addition, C# 11 and later lets you define [`static abstract` interface members](../../csharp/language-reference/keywords/interface.md#static-abstract-and-virtual-members). Because operators must be declared as `static`, this new C# feature lets operators be declared in the new interfaces for number-like types.
+.NET 7 introduces new math-related generic interfaces to the base class library. The availability of these interfaces means you can constrain a type parameter of a generic type or method to be "number-like". In addition, C# 11 and later lets you define [`static virtual` interface members](../../csharp/language-reference/keywords/interface.md#static-abstract-and-virtual-members). Because operators must be declared as `static`, this new C# feature lets operators be declared in the new interfaces for number-like types.
 
 Together, these innovations allow you to perform mathematical operations generically&mdash;that is, without having to know the exact type you're working with. For example, if you wanted to write a method that adds two numbers, previously you had to add an overload of the method for each type (for example, `static int Add(int first, int second)` and `static float Add(float first, float second)`). Now you can write a single, generic method, where the type parameter is constrained to be a number-like type. For example:
 
@@ -54,7 +54,7 @@ This section describes the interfaces in <xref:System.Numerics?displayProperty=f
 
 <sup>2</sup>The binary integer types are <xref:System.Byte> (`byte`), <xref:System.Int16> (`short`), <xref:System.Int32> (`int`), <xref:System.Int64> (`long`), <xref:System.IntPtr> (`nint`), <xref:System.SByte> (`sbyte`), <xref:System.UInt16> (`ushort`), <xref:System.UInt32> (`uint`), <xref:System.UInt64> (`ulong`), and <xref:System.UIntPtr> (`nuint`).
 
-The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, and you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
+The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number. If a type implements this interface, it means that a value has a sign and well-defined order, and you can compare it to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as "complex" and "imaginary" numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number types&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
 
 Several of the interfaces are also implemented by various other types, including <xref:System.Char>, <xref:System.DateOnly>, <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.Decimal>, <xref:System.Guid>, <xref:System.TimeOnly>, and <xref:System.TimeSpan>.
 
@@ -156,8 +156,8 @@ Parsing is a common programming concept. It's typically used to support converti
 
 | Interface name                     | Description                                                                                      |
 |------------------------------------|--------------------------------------------------------------------------------------------------|
-| <xref:System.IParsable%601>        | Exposes support for `T.Parse(string, IFormatProvider)`.                                          |
-| <xref:System.ISpanParsable%601>    | Exposes support for `T.Parse(ReadOnlySpan<char>, IFormatProvider)`.                              |
+| <xref:System.IParsable%601> | Exposes support for `T.Parse(string, IFormatProvider)` and `T.TryParse(string, IFormatProvider, out TSelf)`.  |
+| <xref:System.ISpanParsable%601> | Exposes support for `T.Parse(ReadOnlySpan<char>, IFormatProvider)` and `T.TryParse(ReadOnlySpan<char>, IFormatProvider, out TSelf)`. |
 
 For example, the following program takes two numbers as input, reading them from the console using a generic method where the type parameter is constrained to be <xref:System.IParsable%601>. It calculates the average using a generic method where the type parameters for the input and result values are constrained to be <xref:System.Numerics.INumber%601>, and then displays the result to the console.
 

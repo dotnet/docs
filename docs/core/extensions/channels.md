@@ -3,7 +3,7 @@ title: Channels in .NET
 description: Learn how to use System.Threading.Channels in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/28/2022
+ms.date: 07/29/2022
 ---
 
 # System.Threading.Channels in .NET
@@ -14,7 +14,7 @@ This library is available in the [System.Threading.Channels](https://www.nuget.o
 
 ## Producer/Consumer model
 
-
+The purpose of the producer/consumer model is to allow producers to asynchronously produce data, and consumers to asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of the <xref:System.Threading.Channels.Channel%601> type as you would for any other common collection type, such as a `List<T>`. The primary difference is this collection manages synchronization and provides various consumption models through creation options.
 
 ## Bounding strategies
 
@@ -39,9 +39,7 @@ To create a channel that specifies a maximum capacity, call <xref:System.Threadi
 Producer consumer
 
 
-- Purpose, to hand off data from one party to another.
-- Think of it as a collection that manages synchronization 
-- Choice in consumption models
+
 
 Bounding strategies
 

@@ -43,6 +43,8 @@ The `dotnet-core-uninstall list` command lists the installed .NET SDKs and runti
 > [!NOTE]
 > The output of the `dotnet-core-uninstall list` command won't match the list of installed versions in the output of `dotnet --info` in most cases. Specifically, this tool won't display versions installed by zip files or managed by Visual Studio (any version installed with Visual Studio 2019 version 16.3 or later). One way to check if a version is managed by Visual Studio is to view it in `Add or Remove Programs`, where Visual Studio managed versions are marked as such in their display names.
 
+**dotnet-core-uninstall list**
+
 #### Synopsis
 
 ```console
@@ -120,6 +122,8 @@ dotnet-core-uninstall list [options]
 ### Step 2 - Do a dry run
 
 The `dotnet-core-uninstall dry-run` and `dotnet-core-uninstall whatif` commands display the .NET SDKs and runtimes that will be removed based on the options provided without performing the uninstall. These commands are synonyms.
+
+**dotnet-core-uninstall dry-run and dotnet-core-uninstall whatif**
 
 #### Synopsis
 
@@ -300,6 +304,8 @@ Because this tool has a destructive behavior, it's **highly** recommended that y
 By default, all commands keep the .NET SDKs and runtimes that might be required by Visual Studio or other SDKs. These SDKs and runtimes can be uninstalled by listing them explicitly as arguments or by using the `--force` option.
 
 The tool requires elevation to uninstall .NET SDKs and runtimes. Run the tool in an Administrator command prompt on Windows and with `sudo` on macOS. The `dry-run` and `whatif` commands don't require elevation.
+
+**dotnet-core-uninstall remove**
 
 #### Synopsis
 

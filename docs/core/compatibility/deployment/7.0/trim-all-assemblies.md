@@ -27,7 +27,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-This change helps to decrease app size by default instead of users having to opt in.
+This change helps to decrease app size without users having to explicitly opt in.
 
 ## Recommended action
 

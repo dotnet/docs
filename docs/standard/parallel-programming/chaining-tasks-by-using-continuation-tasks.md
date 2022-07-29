@@ -1,7 +1,7 @@
 ---
 title: "Chaining tasks using continuation tasks"
 description: Learn to chain task by using continuation tasks in .NET. A continuation task is an asynchronous task that's invoked by another task.
-ms.date: 07/27/2022
+ms.date: 07/29/2022
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -13,9 +13,9 @@ ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
 
 # Chaining tasks using continuation tasks
 
-In asynchronous programming, it's common for one asynchronous operation, on completion, to invoke a second operation. Continuations allow descendant operations to consume the results of the first operation. Traditionally, continuations have been done by using callback methods. In the Task Parallel Library (TPL), the same functionality is provided by _continuation tasks_. A continuation task (also known just as a continuation) is an asynchronous task that's invoked by another task, known as the _antecedent_, when the antecedent finishes.
+In asynchronous programming, it's common for one asynchronous operation, to invoke a second operation on completion. Continuations allow descendant operations to consume the results of the first operation. Traditionally, continuations have been done by using callback methods. In the Task Parallel Library (TPL), the same functionality is provided by _continuation tasks_. A continuation task (also known just as a continuation) is an asynchronous task that's invoked by another task, known as the _antecedent_, when the antecedent finishes.
 
-Continuations are relatively easy to use, but are nevertheless powerful and flexible. For example, you can:
+Continuations are relatively easy to use but are nevertheless powerful and flexible. For example, you can:
 
 - Pass data from the antecedent to the continuation.
 - Specify the precise conditions under which the continuation will be invoked or not invoked.
@@ -34,10 +34,10 @@ A continuation is itself a <xref:System.Threading.Tasks.Task> and doesn't block 
 
 ## Create a continuation for a single antecedent
 
-You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task `taskA`, that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent completes, the continuation task, `continuation`, is passed the antecedent and displays a string that includes its result.
+You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task `taskA` that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent completes, the continuation task, `continuation`, is passed the antecedent and displays a string that includes its result.
 
 > [!NOTE]
-> The C# samples in this article make use of the `async` modifier on the `Main` method. That feature is available in C# 7.1 and later. Previous versions generate [`CS5001`](../../csharp/misc/cs5001.md) when compiling this sample code. You'll need to set the language version to C# 7.1 or newer. You can learn how to configure the language version in the article on [configure language version](../../csharp/language-reference/configure-language-version.md).
+> The C# samples in this article make use of the `async` modifier on the `Main` method. That feature is available in C# 7.1 and later. When compiling this sample code, previous versions generate [`CS5001`](../../csharp/misc/cs5001.md). You'll need to set the language version to C# 7.1 or newer. You can learn how to configure the language version in the article on [configure language version](../../csharp/language-reference/configure-language-version.md).
 
 :::code language="csharp" source="snippets/cs/simple1.cs":::
 
@@ -49,7 +49,7 @@ You can also create a continuation that will run when any or all of a group of t
 
 Calls to the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> overloads don't block the calling thread. However, you call all but the <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WhenAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=nameWithType> methods to retrieve the returned <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property, which does block the calling thread.
 
-The following example calls the <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> method to create a continuation task that reflects the results of its 10 antecedent tasks. Each antecedent task squares an index value that ranges from one to 10. If the antecedents complete successfully (their <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>), the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property of the continuation is an array of the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> values returned by each antecedent. The example adds them to compute the sum of squares for all numbers between one and 10.
+The following example calls the <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> method to create a continuation task that reflects the results of its 10 antecedent tasks. Each antecedent task squares an index value that ranges from one to 10. If the antecedents complete successfully (their <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>), the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property of the continuation is an array of the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> values returned by each antecedent. The example adds them to compute the sum of squares for all numbers between one and 10:
 
 :::code language="csharp" source="snippets/cs/whenall1.cs":::
 
@@ -59,13 +59,13 @@ The following example calls the <xref:System.Threading.Tasks.Task.WhenAll%28Syst
 
 When you create a single-task continuation, you can use a <xref:System.Threading.Tasks.Task.ContinueWith%2A> overload. This overload takes a <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> enumeration value to specify the conditions under which the continuation starts. For example, you can specify that the continuation is to run only if the antecedent completes successfully, or only if it completes in a faulted state. If the condition isn't true when the antecedent is ready to invoke the continuation, the continuation transitions directly to the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state and can't be started later.
 
-Many multi-task continuation methods, such as overloads of the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=nameWithType> method, also include a <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> parameter. However, only a subset of all <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> enumeration members are valid. You can specify <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> values that have counterparts in the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType> enumeration, such as <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskContinuationOptions.LongRunning?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness?displayProperty=nameWithType>. If you specify any of the `NotOn` or `OnlyOn` options with a multi-task continuation, an <xref:System.ArgumentOutOfRangeException> exception will be thrown at run time.
+Many multi-task continuation methods, such as overloads of the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=nameWithType> method, also include a <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> parameter. However, only a subset of all <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> enumeration members is valid. You can specify <xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType> values that have counterparts in the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType> enumeration, such as <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskContinuationOptions.LongRunning?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness?displayProperty=nameWithType>. If you specify any of the `NotOn` or `OnlyOn` options with a multi-task continuation, an <xref:System.ArgumentOutOfRangeException> exception will be thrown at run time.
 
 For more information on task continuation options, see the <xref:System.Threading.Tasks.TaskContinuationOptions> article.
 
 ## Pass data to a continuation
 
-The <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method passes a reference to the antecedent to the user delegate of the continuation as an argument. If the antecedent is a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object, and the task ran until it was completed, then the continuation can access the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property of the task.
+The <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method passes a reference as an argument to the antecedent to the user delegate of the continuation. If the antecedent is a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object, and the task ran until it was completed, then the continuation can access the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property of the task.
 
 The <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property blocks until the task has completed. However, if the task was canceled or faulted, attempting to access the <xref:System.Threading.Tasks.Task%601.Result%2A> property throws an <xref:System.AggregateException> exception. You can avoid this problem by using the <xref:System.Threading.Tasks.TaskContinuationOptions.OnlyOnRanToCompletion> option, as shown in the following example:
 
@@ -73,7 +73,7 @@ The <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType
 
 [!code-vb[TPL_Continuations#2](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/result1.vb#2)]
 
-If you want the continuation to run even if the antecedent didn't run to successful completion, you must guard against the exception. One approach is to test the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property of the antecedent, and only attempt to access the <xref:System.Threading.Tasks.Task%601.Result%2A> property if the status isn't <xref:System.Threading.Tasks.TaskStatus.Faulted> or <xref:System.Threading.Tasks.TaskStatus.Canceled>. You can also examine the <xref:System.Threading.Tasks.Task.Exception%2A> property of the antecedent. For more information, see [Exception Handling](exception-handling-task-parallel-library.md). The following example modifies the previous example to access antecedent's <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property only if its status is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>:
+If you want the continuation to run even if the antecedent didn't run to successful completion, you must guard against the exception. One approach is to test the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property of the antecedent, and only attempt to access the <xref:System.Threading.Tasks.Task%601.Result%2A> property if the status isn't <xref:System.Threading.Tasks.TaskStatus.Faulted> or <xref:System.Threading.Tasks.TaskStatus.Canceled>. You can also examine the <xref:System.Threading.Tasks.Task.Exception%2A> property of the antecedent. For more information, see [Exception Handling](exception-handling-task-parallel-library.md). The following example modifies the preceding example to access antecedent's <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property only if its status is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/cs/result2.cs":::
 
@@ -113,7 +113,7 @@ A continuation doesn't run until the antecedent and all of its attached child ta
 
 [!code-vb[TPL_Continuations#9](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/attached1.vb#9)]
 
-If child tasks are detached from the antecedent, however, the continuation runs as soon as the antecedent has terminated, regardless of the state of the child tasks. As a result, multiple runs of the following example can produce variable output that depends on how the task scheduler handled each child task.
+If child tasks are detached from the antecedent, however, the continuation runs as soon as the antecedent has terminated, regardless of the state of the child tasks. As a result, multiple runs of the following example can produce variable output that depends on how the task scheduler handled each child task:
 
 :::code language="csharp" source="snippets/cs/detached1.cs":::
 
@@ -123,7 +123,7 @@ The final status of the antecedent task depends on the final status of any attac
 
 ## Associate state with continuations
 
-You can associate arbitrary state with a task continuation. The <xref:System.Threading.Tasks.Task.ContinueWith%2A> method provides overloaded versions that each take an <xref:System.Object> value that represents the state of the continuation. You can later access this state object by using the <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> property. This state object is `null` if you don't provide a value.
+You can associate arbitrary state with a task continuation. The <xref:System.Threading.Tasks.Task.ContinueWith%2A> method provides overloaded versions that each take an <xref:System.Object> value. An <xref:System.Object> value represents the state of the continuation. You can later access this state object by using the <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> property. This state object is `null` if you don't provide a value.
 
 Continuation state is useful when you convert existing code that uses the [Asynchronous Programming Model (APM)](../asynchronous-programming-patterns/asynchronous-programming-model-apm.md) to use the TPL. In the APM, you can provide object state in the **Begin**_Method_ method and later you can use the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=nameWithType> property to access that state. You also can use the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method to preserve this state when you convert a code that uses the APM to use the TPL.
 
@@ -162,7 +162,7 @@ An antecedent-continuation relationship isn't a parent-child relationship. Excep
 
 [!code-vb[TPL_Continuations#4](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/exception2.vb#4)]
 
-Because it was run with the <xref:System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted?displayProperty=nameWithType> option, the continuation executes only if an exception occurs in the antecedent. Therefore it can assume that the antecedent's <xref:System.Threading.Tasks.Task.Exception%2A> property isn't `null`. If the continuation executes whether or not an exception is thrown in the antecedent, it would have to check whether the antecedent's <xref:System.Threading.Tasks.Task.Exception%2A> property isn't `null` before attempting to handle the exception, as the following code fragment shows:
+Because it was run with the <xref:System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted?displayProperty=nameWithType> option, the continuation executes only if an exception occurs in the antecedent. Therefore it can assume that the antecedent's <xref:System.Threading.Tasks.Task.Exception%2A> property isn't `null`. If the continuation executes whether or not an exception is thrown in the antecedent, it must check whether the antecedent's <xref:System.Threading.Tasks.Task.Exception%2A> property isn't `null` before attempting to handle the exception, as the following code fragment shows:
 
 :::code language="csharp" source="snippets/cs/exception2.cs" id="exception":::
 

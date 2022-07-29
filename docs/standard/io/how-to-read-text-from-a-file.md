@@ -1,7 +1,7 @@
 ---
 title: "How to: Read text from a file"
 description: In this article, see examples of how to read text synchronously or asynchronously from a text file, using the StreamReader class in .NET for desktop apps.
-ms.date: "07/27/2022"
+ms.date: "07/29/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

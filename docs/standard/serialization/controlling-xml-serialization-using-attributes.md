@@ -1,7 +1,7 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
 description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
-ms.date: "07/25/2022"
+ms.date: "07/29/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -25,7 +25,7 @@ Attributes can be used to control the XML serialization of an object or to creat
 > [!NOTE]
 > If the XML generated must conform to section 5 of the World Wide Web Consortium (W3C) document titled [Simple Object Access Protocol (SOAP) 1.1](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/), use the attributes listed in [Attributes That Control Encoded SOAP Serialization](attributes-that-control-encoded-soap-serialization.md).
 
-By default, an XML element name is determined by the class or member name. In a simple class named `Book`, a field named `ISBN` will produce an XML element tag \<ISBN>, as shown in the following example:
+By default, an XML element name is determined by the class or member name. In a class named `Book`, a field named **ISBN** will produce an XML element tag `<ISBN>`, as shown in the following example:
 
 ```vb
 Public Class Book
@@ -66,7 +66,7 @@ For more information about attributes, see [Attributes](../attributes/index.md).
 
 ## Controlling Array Serialization
 
-The <xref:System.Xml.Serialization.XmlArrayAttribute> and the <xref:System.Xml.Serialization.XmlArrayItemAttribute> attributes control the serialization of arrays. Using these attributes, you can control the element name, namespace, and XML Schema (XSD) data type (as defined in the W3C document titled [XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/)). You can also specify the types that can be included in an array.
+The <xref:System.Xml.Serialization.XmlArrayAttribute> and the <xref:System.Xml.Serialization.XmlArrayItemAttribute> attributes control the serialization of arrays. Using these attributes, you can control the element name, namespace, and XML Schema (XSD) data type as defined in the W3C document titled [XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/). You can also specify the types that can be included in an array.
 
 The <xref:System.Xml.Serialization.XmlArrayAttribute> will determine the properties of the enclosing XML element that results when an array is serialized. For example, by default, serializing the array below will result in an XML element named `Employees`. The `Employees` element will contain a series of elements named after the array type `Employee`.
 
@@ -254,7 +254,7 @@ When the <xref:System.Xml.Serialization.XmlElementAttribute> is applied to the f
 
 ## Serializing an ArrayList
 
-The <xref:System.Collections.ArrayList> class can contain a collection of diverse objects. You can therefore use a <xref:System.Collections.ArrayList> much as you use an array. Instead of creating a field that returns an array of typed objects, you can create a field that returns a single <xref:System.Collections.ArrayList>. However, as with arrays, you must inform the <xref:System.Xml.Serialization.XmlSerializer> of the types of objects the <xref:System.Collections.ArrayList> contains. To accomplish this process, assign multiple instances of the <xref:System.Xml.Serialization.XmlElementAttribute> to the field, as shown in the following example:
+An <xref:System.Collections.ArrayList> class can contain a collection of diverse objects. You can therefore use an <xref:System.Collections.ArrayList> much as you use an array. Instead of creating a field that returns an array of typed objects, you can create a field that returns a single <xref:System.Collections.ArrayList>. However, as with arrays, you must inform the <xref:System.Xml.Serialization.XmlSerializer> of the types of objects an <xref:System.Collections.ArrayList> contains. To accomplish this process, assign multiple instances of the <xref:System.Xml.Serialization.XmlElementAttribute> to the field, as shown in the following example:
 
 ```vb
 Public Class Group
@@ -274,9 +274,9 @@ public class Group {
 
 ## Controlling Serialization of Classes Using XmlRootAttribute and XmlTypeAttribute
 
-There are two attributes that can be applied to a class only: <xref:System.Xml.Serialization.XmlRootAttribute> and <xref:System.Xml.Serialization.XmlTypeAttribute>. These attributes are similar. The <xref:System.Xml.Serialization.XmlRootAttribute> can be applied to only one class: the class that, when serialized, represents the XML document's opening and closing element—in other words, the root element. The <xref:System.Xml.Serialization.XmlTypeAttribute>, on the other hand, can be applied to any class, including the root class.
+You can apply two attributes to a class only: <xref:System.Xml.Serialization.XmlRootAttribute> and <xref:System.Xml.Serialization.XmlTypeAttribute>. These attributes are similar. The <xref:System.Xml.Serialization.XmlRootAttribute> can be applied to only one class: the class that, when serialized, represents the XML document's opening and closing element—in other words, the root element. The <xref:System.Xml.Serialization.XmlTypeAttribute>, on the other hand, can be applied to any class, including the root class.
 
-For example, in the previous examples, the `Group` class is the root class, and all its public fields and properties become the XML elements found in the XML document. Therefore, there can be only one root class. By applying the <xref:System.Xml.Serialization.XmlRootAttribute>, you can control the XML stream generated by the <xref:System.Xml.Serialization.XmlSerializer>. For example, you can change the element name and namespace.
+For example, in the previous examples, the `Group` class is the root class, and all its public fields and properties become the XML elements found in the XML document. Therefore, you can have only one root class. By applying the <xref:System.Xml.Serialization.XmlRootAttribute>, you can control the XML stream generated by the <xref:System.Xml.Serialization.XmlSerializer>. For example, you can change the element name and namespace.
 
 The <xref:System.Xml.Serialization.XmlTypeAttribute> allows you to control the schema of the generated XML. This capability is useful when you need to publish the schema through an XML Web service. The following example applies both the <xref:System.Xml.Serialization.XmlTypeAttribute> and the <xref:System.Xml.Serialization.XmlRootAttribute> to the same class:
 
@@ -302,7 +302,7 @@ If this class is compiled, and the XML Schema Definition tool is used to generat
 <xs:element name="NewGroupName" type="NewTypeName" />
 ```
 
-In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.
+In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document:
 
 ```xml
 <NewGroupName>
@@ -312,7 +312,7 @@ In contrast, if you were to serialize an instance of the class, only `NewGroupNa
 
 ## Preventing Serialization with the XmlIgnoreAttribute
 
-There might be situations when a public property or field doesn't need to be serialized. For example, a field or property could be used to contain metadata. In such cases, apply the <xref:System.Xml.Serialization.XmlIgnoreAttribute> to the field or property and the <xref:System.Xml.Serialization.XmlSerializer> will skip over it.
+You might come across a situation where a public property or field doesn't need to be serialized. For example, a field or property could be used to contain metadata. In such cases, apply the <xref:System.Xml.Serialization.XmlIgnoreAttribute> to the field or property and the <xref:System.Xml.Serialization.XmlSerializer> will skip over it.
 
 ## See also
 

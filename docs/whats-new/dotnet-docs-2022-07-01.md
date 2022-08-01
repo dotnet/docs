@@ -90,7 +90,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [chrisnas](https://github.com/chrisnas) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [eatdrinksleepcode](https://github.com/eatdrinksleepcode) - David Nelson ![There were 1 pull requests merged by David Nelson.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [FlyingDutchman1965](https://github.com/FlyingDutchman1965) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [github-actions](https://github.com/github-actions) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [hickford](https://github.com/hickford) - M Hickford ![There were 1 pull requests merged by M Hickford.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka ![There were 1 pull requests merged by Hiroshi Yoshioka.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [JRBANCEL](https://github.com/JRBANCEL) - Jean-Rémy Bancel ![There were 1 pull requests merged by Jean-Rémy Bancel.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

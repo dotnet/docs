@@ -170,8 +170,6 @@ This unit test will throw an exception because the `ListView` control does not h
 > [!TIP]
 > Avoid writing unit tests that examine exception message strings. Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
 
-Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
-
 ## Testing validation
 
 There are two aspects to testing the validation implementation: testing that any validation rules are correctly implemented and testing that the `ValidatableObject<T>` class performs as expected.

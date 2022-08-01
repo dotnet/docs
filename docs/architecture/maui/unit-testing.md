@@ -34,7 +34,7 @@ One of the motivations for adopting a loosely-coupled architecture is that it fa
 ```csharp
 public class OrderDetailViewModel : ViewModelBase
 {
-    private IOrderService _ordersService;
+    private IAppEnvironmentService _appEnvironmentService;
 
     public OrderDetailViewModel(
         IAppEnvironmentService appEnvironmentService,
@@ -42,7 +42,6 @@ public class OrderDetailViewModel : ViewModelBase
         : base(dialogService, navigationService, settingsService)
     {
         _appEnvironmentService = appEnvironmentService;
-        _settingsService = settingsService;
     }
 }
 ```

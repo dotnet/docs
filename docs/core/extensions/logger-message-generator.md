@@ -69,7 +69,7 @@ You can omit the logging message and <xref:System.String.Empty?displayProperty=n
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
 
-ILogger<SampleObject> logger = LoggerFactory.Create(
+ILogger logger = LoggerFactory.Create(
     builder =>
     builder.AddJsonConsole(
         options =>
@@ -77,7 +77,7 @@ ILogger<SampleObject> logger = LoggerFactory.Create(
         {
             Indented = true
         }))
-    .CreateLogger<SampleObject>();
+    .CreateLogger(typeof(SampleObject));
 
 logger.CustomLogEvent(LogLevel.Information, "Liana", "California");
 

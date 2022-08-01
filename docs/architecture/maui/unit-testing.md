@@ -1,6 +1,6 @@
 ---
 title: Unit Testing
-description: Providing application testing and improving code quality
+description:  Learn how to provide application testing and improve code quality in .NET MAUI.
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 07/11/2022
@@ -8,7 +8,7 @@ ms.date: 07/11/2022
 
 # Unit testing
 
-Mobile apps have unique problems that desktop and web-based applications don't typically encounter. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, mobile apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form of testing and is essential to building high-quality applications.
+Mobile apps experience problems similar to both desktop and web-based applications. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, mobile apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form and essential to building high-quality applications.
 
 A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app. Detecting a bug where it occurs is more efficient that observing the effect of a bug indirectly at a secondary point of failure.
 
@@ -47,27 +47,28 @@ public class OrderDetailViewModel : ViewModelBase
 }
 ```
 
-The `OrderDetailViewModel` class has a dependency on the `IAppEnvironmentService` type, which the dependency injection container resolves when it instantiates an `OrderDetailViewModel` object. However, rather than create an `IAppEnvironmentService` object which utilizes real servers, devices and configurations to unit test the `OrderDetailViewModel` class, instead, replace the `IAppEnvironmentService` object with a mock for the purpose of the tests.
+The `OrderDetailViewModel` class has a dependency on the `IAppEnvironmentService` type, which the dependency injection container resolves when it instantiates an `OrderDetailViewModel` object. However, rather than create an `IAppEnvironmentService` object which utilizes real servers, devices and configurations to unit test the `OrderDetailViewModel` class, instead, replace the `IAppEnvironmentService` object with a mock object for the purpose of the tests. A mock object is one that has the same signature of an object or an interface, but is created in a specific manner to help with unit testing. It is often used with dependency injection to provide specific implementations of interfaces for testing different data and workflow scenarios.
 
 This approach allows the `IAppEnvironmentService` object to be passed into the `OrderDetailViewModel` class at runtime, and in the interests of testability, it allows a mock class to be passed into the `OrderDetailViewModel` class at test time. The main advantage of this approach is that it enables unit tests to be executed without requiring unwieldy resources such as runtime platform features, web services, or databases.
 
 ## Testing MVVM applications
 
-Testing models and view models from MVVM applications is identical to testing any other classes, and uses the same tools and techniques; this includes features such as unit testing and mocking. However, some patterns that are typical to model and view model classes can benefit from specific unit testing techniques.
+Testing models and view models from MVVM applications is identical to testing any other class, and uses the same tools and techniques; this includes features such as unit testing and mocking. However, some patterns that are typical to model and view model classes can benefit from specific unit testing techniques.
 
 > [!TIP]
-> Test one thing with each unit test.
+> Test one thing with each unit test. As the complexity of a test expands, it makes verification of that test more difficult. By limiting a unit test to a single concern, we can ensure that our tests are more repeatable, isolated, and have a smaller execution time. See
+[Unit testing best practices with .NET Core and .NET Standard](/dotnet/core/testing/unit-testing-best-practices) for more best practices.
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
 The eShopOnContainers mobile app uses [xUnit](https://xunit.github.io/) to perform unit testing, which supports two different types of unit tests:
 
-|Testing Type | Description |
-|---------|---------|
-| Facts | Tests that are always true, which test invariant conditions |
-| Theories | Tests that are only true for a particular set of data. |
+| Testing Type | Attribute | Description                                                  |
+|--------------|-----------|--------------------------------------------------------------|
+| Facts        | `Fact`    | Tests that are always true, which test invariant conditions. |
+| Theories     | `Theory`  | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShopOnContainers mobile app are fact tests, so each unit test method is decorated with the `[Fact]` attribute.
+The unit tests included with the eShopOnContainers mobile app are fact tests, so each unit test method is decorated with the `Fact` attribute.
 
 ## Testing asynchronous functionality
 
@@ -77,17 +78,20 @@ When implementing the MVVM pattern, view models usually invoke operations on ser
 [Fact]
 public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
 {
-    var orderService = new OrderMockService();
-    var orderViewModel = new OrderDetailViewModel(orderService);
+    // Arrange
+    var orderService = new OrderMockService();
+    var orderViewModel = new OrderDetailViewModel(orderService);
 
-    var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);
-    await orderViewModel.InitializeAsync(order);
+    // Act
+    var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);
+    await orderViewModel.InitializeAsync(order);
 
-    Assert.NotNull(orderViewModel.Order);
+    // Assert
+    Assert.NotNull(orderViewModel.Order);
 }
 ```
 
-This unit test checks that the `Order` property of the `OrderDetailViewModel` instance will have a value after the `InitializeAsync` method has been invoked. The InitializeAsync`` method is invoked when the view model's corresponding view is navigated to. For more information about navigation, see [Navigation](navigation.md).
+This unit test checks that the `Order` property of the `OrderDetailViewModel` instance will have a value after the `InitializeAsync` method has been invoked. The `InitializeAsync` method is invoked when the view model's corresponding view is navigated to. For more information about navigation, see [Navigation](navigation.md).
 
 When the `OrderDetailViewModel` instance is created, it expects an `IOrderService` instance to be specified as an argument. However, the `OrderService` retrieves data from a web service. Therefore, an `OrderMockService` instance, a mock version of the `OrderService` class, is specified as the argument to the `OrderDetailViewModel` constructor. Then, mock data is retrieved rather than communicating with a web service when the view model's `InitializeAsync` method is invoked, which uses `IOrderService` operations.
 
@@ -101,7 +105,7 @@ Properties that can be updated directly by the unit test can be tested by attach
 [Fact]
 public async Task SettingOrderPropertyShouldRaisePropertyChanged()
 {
-    bool invoked = false;
+    var invoked = false;
     var orderService = new OrderMockService();
     var orderViewModel = new OrderDetailViewModel(orderService);
 
@@ -127,11 +131,11 @@ View models that use the `MessagingCenter` class to communicate between loosely-
 [Fact]
 public void AddCatalogItemCommandSendsAddProductMessageTest()
 {
-    bool messageReceived = false;
+    var messageReceived = false;
     var catalogService = new CatalogMockService();
     var catalogViewModel = new CatalogViewModel(catalogService);
 
-    .NET MAUI.MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
+    MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
         this, MessageKeys.AddProduct, (sender, arg) =>
     {
         messageReceived = true;
@@ -165,7 +169,7 @@ public void InvalidEventNameShouldThrowArgumentExceptionText()
 This unit test will throw an exception because the `ListView` control does not have an event named `OnItemTapped`. The `Assert.Throws<T>` method is a generic method where `T` is the type of the expected exception. The argument passed to the `Assert.Throws<T>` method is a lambda expression that will throw the exception. Therefore, the unit test will pass provided that the lambda expression throws an `ArgumentException`.
 
 > [!TIP]
-> Avoid writing unit tests that examine exception message strings.
+> Avoid writing unit tests that examine exception message strings. Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
 
 Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
 
@@ -183,7 +187,7 @@ public void CheckValidationPassesWhenBothPropertiesHaveDataTest()
     mockViewModel.Forename.Value = "John";
     mockViewModel.Surname.Value = "Smith";
 
-    bool isValid = mockViewModel.Validate();
+    var isValid = mockViewModel.Validate();
 
     Assert.True(isValid);
 }

@@ -196,3 +196,4 @@ For more information on various configuration providers, see [Configuration prov
 - [Configuration providers in .NET](configuration-providers.md)
 - [Implement a custom configuration provider](custom-configuration-provider.md)
 - Configuration bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo
+- [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

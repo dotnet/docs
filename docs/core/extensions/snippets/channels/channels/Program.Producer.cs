@@ -1,10 +1,26 @@
 ﻿internal static partial class Program
 {
-    internal static async ValueTask ProduceWithWhileWriteAsync(
-        ChannelWriter<Coordinates> writer)
+    internal static async ValueTask ProduceWithWhileAndTryWriteAsync(
+        ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
-        Coordinates coordinates =
-            new(DeviceId: Guid.NewGuid(), Latitude: -90, Longitude: -180);
+        while(coordinates is { Latitude: < 90, Longitude: < 180 })
+        {
+            var tempCoordinates = coordinates with
+            {
+                Latitude = coordinates.Latitude + .5,
+                Longitude = coordinates.Longitude + 1
+            };
+
+            if (writer.TryWrite(item: tempCoordinates))
+            {
+                coordinates = tempCoordinates;
+            }
+        }
+    }
+
+    internal static async ValueTask ProduceWithWhileWriteAsync(
+        ChannelWriter<Coordinates> writer, Coordinates coordinates)
+    {
         while (coordinates is { Latitude: < 90, Longitude: < 180 })
         {
             await writer.WriteAsync(
@@ -21,10 +37,8 @@
     }
 
     internal static async ValueTask ProduceWithWaitToWriteAsync(
-        ChannelWriter<Coordinates> writer)
+        ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
-        Coordinates coordinates =
-            new(DeviceId: Guid.NewGuid(), Latitude: -90, Longitude: -180);
         while (coordinates is { Latitude: < 90, Longitude: < 180 } &&
             await writer.WaitToWriteAsync())
         {

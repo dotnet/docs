@@ -14,13 +14,25 @@ This library is available in the [System.Threading.Channels](https://www.nuget.o
 
 ## Producer/Consumer model
 
-Channels are an implementation of the producer/consumer model. The purpose of the producer/consumer model is to allow producers to asynchronously produce data, and consumers to asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of the <xref:System.Threading.Channels.Channel%601> type as you would for any other common collection type, such as a `List<T>`. The primary difference is this collection manages synchronization and provides various consumption models through creation options. These options control the _bounding strategies_ employed by the channel and the behavior of the channel when the bound is reached.
+Channels are an implementation of the producer/consumer programming model. In the producer/consumer model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of the <xref:System.Threading.Channels.Channel%601> type as you would any other common collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through creation options. These options control the _bounding strategies_ employed by the channel instance and the behavior of the channel when the bound is reached.
 
 ## Bounding strategies
 
+Depending on how a `Channel<T>` is created, the <xref:System.Threading.Channels.Channel%602.Writer?displayProperty=nameWithType> and <xref:System.Threading.Channels.Channel%602.Reader?displayProperty=nameWithType> will behave differently.
+
 To create a channel that specifies a maximum capacity, call <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType>. To create a channel that can be used by any number of readers and writers concurrently, call <xref:System.Threading.Channels.Channel.CreateUnbounded%2A?displayProperty=nameWithType>. Each bounding strategy exposes various creator-defined options, either <xref:System.Threading.Channels.BoundedChannelOptions> or <xref:System.Threading.Channels.UnboundedChannelOptions> respectively.
 
-Depending on how a `Channel<T>` is created
+### Unbounded channels
+
+When you create an unbounded channel, the channel will be able to be used by any number of readers and writers concurrently. The channel's writer (producer) is unbound and can write synchronously.
+
+### Bounded channels
+
+When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the channel will block the producer or consumer until space becomes available. This behavior is configurable.
+
+#### What happens when the bound is reached?
+
+What happens when the bound is reached
 
 | Bounded                                                                                       | Unbounded |
 |-----------------------------------------------------------------------------------------------|-----------|
@@ -29,12 +41,13 @@ Depending on how a `Channel<T>` is created
 |                                                                                               |           |
 |                                                                                               |           |
 
-### 
+### What happens when production is faster than consumption?
 
+Whenever a producer can produce faster than a consumer can consume, your channel enters into a state of back-pressure.
 
 ## Usage patterns
 
-There are several various usage patterns for channels. The API is designed to be simple, yet as flexible as possible. All of the asynchronous methods return a <xref:System.Threading.Tasks.ValueTask> that can be used to track the progress of the operation.
+There are several various usage patterns for channels. The API is designed to be simple, consistent, and as flexible as possible. All of the asynchronous methods return a <xref:System.Threading.Tasks.ValueTask> represents a lightweight asynchronous operation that can avoid allocating if the operation completes synchronously. Additionally, the API is designed to be composable, in that the creator of a channel makes promises about their intended usage. When they choose to create a channel in a certain way, the internal implementation can operate more efficiently with these known promises.
 
 
 Producer consumer

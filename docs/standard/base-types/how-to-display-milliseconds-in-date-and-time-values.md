@@ -1,7 +1,7 @@
 ---
 title: "How to: Display Milliseconds in Date and Time Values"
 description: In this article, learn how to include a date and time's millisecond component in formatted date and time strings in .NET.
-ms.date: "07/20/2022"
+ms.date: "08/01/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -16,7 +16,7 @@ ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
 ---
 # How to: Display milliseconds in date and time values
 
-The default date and time formatting methods such as <xref:System.DateTime.ToString?displayProperty=nameWithType>, include the hours, minutes, and seconds of a time value but exclude its milliseconds component. This article shows how to include a date and time's millisecond component in formatted date and time strings.
+The default date and time formatting methods, such as <xref:System.DateTime.ToString?displayProperty=nameWithType>, include the hours, minutes, and seconds of a time value but exclude its milliseconds component. This article shows how to include a date and time's millisecond component in formatted date and time strings.
 
 ## To display the millisecond component of a DateTime value
 

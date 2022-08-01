@@ -1,7 +1,7 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.custom: devdivchpfy22
 ---
 # .NET vs. .NET Framework for server apps
@@ -25,7 +25,7 @@ Use .NET for your server application when:
 
 Use .NET Framework for your server application when:
 
-- Your app currently uses the .NET Framework (recommendation is to extend instead of migrating).
+- Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
 - Your app uses third-party libraries or NuGet packages not available for .NET.
 - Your app uses .NET Framework technologies that aren't available for .NET.
 - Your app uses a platform that doesn't support .NET.
@@ -38,13 +38,13 @@ The following sections give a more detailed explanation of the previously stated
 
 If your web or service application needs to run on multiple platforms, for example, Windows, Linux, and macOS, use .NET.
 
-.NET supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET CLI](../core/tools/index.md) available for all supported platforms.
+.NET supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET CLI](../core/tools/index.md), which is available for all supported platforms.
 
 ### Microservices architecture
 
 A microservices architecture allows a mix of technologies across a service boundary. This technology mix enables a gradual embrace of .NET for new microservices that work with other microservices or services. For example, you can mix microservices or services developed with .NET Framework, Java, Ruby, or other monolithic technologies.
 
-There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker, fit any microservices approach, as explained in the [Containers](#containers) section. All these platforms support .NET and make them ideal for hosting your microservices.
+There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker fit any microservices approach, as explained in the [Containers](#containers) section. All these platforms support .NET and make them ideal for hosting your microservices.
 
 For more information about microservices architecture, see [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md).
 

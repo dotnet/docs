@@ -3,7 +3,7 @@ title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.custom: devdivchpfy22
 ---
 
@@ -39,7 +39,7 @@ Keep in mind there are [best practices](unit-testing-best-practices.md) for writ
 
 ### xUnit
 
-[xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 writes xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). It's a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under it's code of conduct.
+[xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct.
 
 For more information, see the following resources:
 

@@ -1,7 +1,7 @@
 ---
 title: "Thread-Safe Collections"
 description: Get started with thread-safe collections using the System.Collections.Concurrent namespace in .NET, which includes thread-safe and scalable collection classes.
-ms.date: "07/20/2022"
+ms.date: "08/01/2022"
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "thread-safe collections, overview"
@@ -9,7 +9,7 @@ ms.assetid: 2e7ca21f-786c-4367-96be-0cf3f3dcc6bd
 ---
 # Thread-Safe Collections
 
-The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, which includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes to write multiple threads to the collection concurrently. If you're only reading from a shared collection, then you can use the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. We recommend that you don't use 1.0 collection classes unless you're required to target the .NET Framework 1.1 or earlier runtime.  
+The .NET Framework 4 introduced the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, which includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes to write multiple threads to the collection concurrently. If you're only reading from a shared collection, then you can use the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. We recommend that you don't use 1.0 collection classes unless you're required to target the .NET Framework 1.1 or earlier runtime.  
   
 ## Thread Synchronization in the .NET Framework 1.0 and 2.0 Collections  
 

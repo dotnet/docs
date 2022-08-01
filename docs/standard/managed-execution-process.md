@@ -18,13 +18,15 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
 
 1. [Choosing a compiler](#choosing_a_compiler). test.
 
-     To obtain the benefits provided by the common language runtime, you must use one or more language compilers that target the runtime.
+     To obtain the benefits provided by the common language runtime, you must use one or more language compilers that target the runtime.  trwtertwert
 1. [Compiling your code to MSIL](#compiling_to_msil).
 
      Compiling translates your source code into Microsoft intermediate language (MSIL) and generates the required metadata.
+
 1. [Compiling MSIL to native code](#compiling_msil_to_native_code).
 
      At execution time, a just-in-time (JIT) compiler translates the MSIL into native code. During this compilation, code must pass a verification process that examines the MSIL and metadata to find out whether the code can be determined to be type safe.
+
 1. [Running code](#running_code).
 
      The common language runtime provides the infrastructure that enables execution to take place and services that can be used during execution.

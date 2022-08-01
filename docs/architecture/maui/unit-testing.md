@@ -1,6 +1,6 @@
 ---
 title: Unit Testing
-description: Providing application 
+description: Providing application testing and improving code quality
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 07/11/2022
@@ -68,9 +68,6 @@ The eShopOnContainers mobile app uses [xUnit](https://xunit.github.io/) to perfo
 | Theories | Tests that are only true for a particular set of data. |
 
 The unit tests included with the eShopOnContainers mobile app are fact tests, so each unit test method is decorated with the `[Fact]` attribute.
-
-> [!NOTE]
-> xUnit tests are executed by a test runner. To execute the test runner, run the `eShopOnContainers.TestRunner` project for the required platform.
 
 ## Testing asynchronous functionality
 

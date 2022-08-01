@@ -1,7 +1,7 @@
 ---
 title: "Writing Custom Attributes"
 description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
-ms.date: "07/29/2022"
+ms.date: "08/01/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -94,7 +94,7 @@ To design your custom attributes, you don't need to learn many new concepts. If 
   
 ## Declaring the Attribute Class  
 
- After you apply the <xref:System.AttributeUsageAttribute>, you can begin to define the specifics of your attribute. The declaration of an attribute class looks similar to the declaration of a traditional class, as demonstrated by the following code:
+ After you apply the <xref:System.AttributeUsageAttribute>, start defining the specifics of your attribute. The declaration of an attribute class looks similar to the declaration of a traditional class, as demonstrated by the following code:
   
  [!code-cpp[Conceptual.Attributes.Usage#14](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#14)]
  [!code-csharp[Conceptual.Attributes.Usage#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#14)]

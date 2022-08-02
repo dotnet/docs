@@ -316,7 +316,7 @@
 | Gallery | NuGet [2.6.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Gallery/2.6.2-preview) |  |  |
 | Graph RBAC | NuGet [3.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Graph.RBAC/3.8.0-preview) |  | GitHub [3.8.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/graphrbac) |
 | Hadoop Client | NuGet [1.5.13](https://www.nuget.org/packages/Microsoft.Hadoop.Client/1.5.13) |  |  |
-| HDInsight - Job | NuGet [3.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.2) |  | GitHub [3.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.2/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
+| HDInsight - Job | NuGet [3.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.3) |  | GitHub [3.0.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.3/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |

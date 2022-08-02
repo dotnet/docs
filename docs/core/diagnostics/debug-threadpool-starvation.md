@@ -16,7 +16,7 @@ In this tutorial, you will:
 > [!div class="checklist"]
 >
 > - Investigate an app that is responding to requests slowly
-> - Use the dotnet-counters tool to identify ThreadPool starvation is likely occuring
+> - Use the dotnet-counters tool to identify ThreadPool starvation is likely occurring
 > - Use the dotnet-stack tool to determine what work is keeping the ThreadPool threads busy
 
 ## Prerequisites

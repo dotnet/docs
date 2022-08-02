@@ -54,7 +54,7 @@ To only trim assemblies that have opted-in to trimming, set the property to `par
 <TrimMode>partial</TrimMode>
 ```
 
-The default setting is
+The default setting is `full`:
 
 ```csharp
 <TrimMode>full</TrimMode>

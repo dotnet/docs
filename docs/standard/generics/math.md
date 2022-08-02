@@ -166,14 +166,18 @@ The function interfaces define common mathematical APIs that apply more broadly 
 | <xref:System.Numerics.IRootFunctions%601>          | Exposes root functions supporting `cbrt(x)` and `sqrt(x)`.                                                               |
 | <xref:System.Numerics.ITrigonometricFunctions%601> | Exposes trigonometric functions supporting `acos(x)`, `asin(x)`, `atan(x)`, `cos(x)`, `sin(x)`, and `tan(x)`.            |
 
-### Parsing interfaces
+### Parsing and formatting interfaces
 
-Parsing is a common programming concept. It's typically used to support converting user input to a specified type, or deserializing data from a file. These interfaces are in the <xref:System> namespace.
+Parsing and formatting are core concepts in programming. They're commonly used when converting user input to a given type or displaying a type to the user. These interfaces are in the <xref:System> namespace.
 
 | Interface name                     | Description                                                                                      |
 |------------------------------------|--------------------------------------------------------------------------------------------------|
 | <xref:System.IParsable%601> | Exposes support for `T.Parse(string, IFormatProvider)` and `T.TryParse(string, IFormatProvider, out TSelf)`.  |
 | <xref:System.ISpanParsable%601> | Exposes support for `T.Parse(ReadOnlySpan<char>, IFormatProvider)` and `T.TryParse(ReadOnlySpan<char>, IFormatProvider, out TSelf)`. |
+| <xref:System.IFormattable><sup>1</sup> | Exposes support for `value.ToString(string, IFormatProvider)`. |
+| <xref:System.ISpanFormattable><sup>1</sup> | Exposes support for `value.TryFormat(Span<char>, out int, ReadOnlySpan<char>, IFormatProvider)`. |
+
+<sup>1</sup>This interface is not new, nor is it generic. However, it's implemented by all number types and represents the inverse operation of `IParsable`.
 
 For example, the following program takes two numbers as input, reading them from the console using a generic method where the type parameter is constrained to be <xref:System.IParsable%601>. It calculates the average using a generic method where the type parameters for the input and result values are constrained to be <xref:System.Numerics.INumber%601>, and then displays the result to the console.
 

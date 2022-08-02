@@ -94,9 +94,9 @@ let doThingsAsync url =
 
 Using a series of `let! ... let! ...` forces re-execution of expensive binds, so using `let! ... and! ...` should be used when binding the results of numerous computation expressions.
 
-`and!` is defined primarily by the `MergeSources(x1, x2)` member on the builder type. 
+`and!` is defined primarily by the `MergeSources(x1, x2)` member on the builder type.
 
-Optionally, `MergeSourcesN(x1, x2 ..., xN)` can be defined to reduce the number of tupling nodes, and `BindN(x1, x2 ..., xN, f)`, or `BindNReturn(x1, x2, ..., xN, f)` can be defined to bind computation expression results efficiently without tupling nodes. 
+Optionally, `MergeSourcesN(x1, x2 ..., xN)` can be defined to reduce the number of tupling nodes, and `BindN(x1, x2 ..., xN, f)`, or `BindNReturn(x1, x2, ..., xN, f)` can be defined to bind computation expression results efficiently without tupling nodes.
 
 ### `do!`
 

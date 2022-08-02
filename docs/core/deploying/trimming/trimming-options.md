@@ -48,7 +48,7 @@ This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analy
 
 The default is to trim all assemblies in the app. This can be changed using the `TrimMode` property.
 
-To only trim assemblies which have opted-in to trimming, set
+To only trim assemblies that have opted-in to trimming, set the property to `partial`:
 
 ```csharp
 <TrimMode>partial</TrimMode>

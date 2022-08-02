@@ -28,7 +28,7 @@ Place this setting in the project file to ensure that the setting applies during
 
 :::zone pivot="dotnet-7-0"
 
-This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies which opted-in
+This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies that opted-in
 to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` would be trimmed by default. You can return to the
 previous behavior by using `<TrimMode>partial</TrimMode>`.
 

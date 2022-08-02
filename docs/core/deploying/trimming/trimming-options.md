@@ -18,7 +18,6 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
   Enable trimming during publish. This also turns off trim-incompatible features and enables [trim analysis](#roslyn-analyzer) during build.
 
-
 **Note:** If you specify that property from command line, your debugging experience would differ and you may encounter additional bugs in final product. 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 

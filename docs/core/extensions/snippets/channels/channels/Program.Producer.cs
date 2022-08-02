@@ -1,9 +1,9 @@
 ﻿internal static partial class Program
 {
-    internal static async ValueTask ProduceWithWhileAndTryWriteAsync(
+    internal static void ProduceWithWhileAndTryWrite(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
-        while(coordinates is { Latitude: < 90, Longitude: < 180 })
+        while (coordinates is { Latitude: < 90, Longitude: < 180 })
         {
             var tempCoordinates = coordinates with
             {
@@ -18,6 +18,7 @@
         }
     }
 
+    // <whilewrite>
     internal static async ValueTask ProduceWithWhileWriteAsync(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
@@ -35,7 +36,9 @@
 
         writer.Complete();
     }
+    // </whilewrite>
 
+    // <waittowrite>
     internal static async ValueTask ProduceWithWaitToWriteAsync(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
@@ -54,4 +57,5 @@
 
         writer.Complete();
     }
+    // </waittowrite>
 }

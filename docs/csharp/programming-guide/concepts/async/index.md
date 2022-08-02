@@ -25,7 +25,7 @@ For a parallel algorithm, you'd need multiple cooks (or threads). One would make
 
 Now, consider those same instructions written as C# statements:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-34":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="15-34":::
 
 :::image type="content" source="media/synchronous-breakfast.png" alt-text="synchronous breakfast":::
 
@@ -247,7 +247,7 @@ while (breakfastTasks.Count > 0)
 
 After all those changes, the final version of the code looks like this:
 <a id="final-version"></a>
-:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="9-40":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="16-47":::
 
 :::image type="content" source="media/whenany-async-breakfast.png" alt-text="when any async breakfast":::
 

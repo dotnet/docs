@@ -98,7 +98,7 @@ opt-in individual assemblies to trimming.
 </ItemGroup>
 ```
 
-This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
+This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
 
 :::zone-end
 

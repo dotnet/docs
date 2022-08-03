@@ -1,5 +1,6 @@
 ﻿internal static partial class Program
 {
+    // <whiletrywrite>
     static void ProduceWithWhileAndTryWrite(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
@@ -17,6 +18,7 @@
             }
         }
     }
+    // </whiletrywrite>
 
     // <whilewrite>
     static async ValueTask ProduceWithWhileWriteAsync(
@@ -30,8 +32,6 @@
                     Latitude = coordinates.Latitude + .5,
                     Longitude = coordinates.Longitude + 1
                 });
-
-            await Task.Delay(TimeSpan.FromMilliseconds(10));
         }
 
         writer.Complete();

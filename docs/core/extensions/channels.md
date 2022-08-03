@@ -33,57 +33,17 @@ To create an unbounded channel, call one of the <xref:System.Threading.Channels.
 var channel = Channel.CreateUnbounded<T>();
 ```
 
-When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify non-default behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance:
-
-```csharp
-var channel = Channel.CreateUnbounded<T>(
-    new UnboundedChannelOptions
-    {
-        SingleWriter = true,
-        SingleReader = false,
-        AllowSynchronousContinuations = true
-    });
-```
-
-In the preceding code, the channel will be created with the following options:
-
-- `SingleWriter = true`: The channel guarantees that there will only ever be at most one write operation at a time.
-- `SingleReader = false`: The channel is not constrained to a single read operation at any given time.
-- `AllowSynchronousContinuations = true`: Operations performed on a channel may synchronously invoke continuations that are subscribed to notifications of pending async operations.
-
-The channel's writer (producer) is unbounded and all writes are performed synchronously.
+When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify non-default behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's writer (producer) is unbounded and all writes are performed synchronously. For additional examples, see [Unbounded creation patterns](#unbounded-creation-patterns)
 
 ### Bounded channels
 
 To create a bounded channel, call one of the <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType> overloads:
 
 ```csharp
-var channel = Channel.CreateBounded<T>(10);
+var channel = Channel.CreateBounded<T>(7);
 ```
 
-The preceding code creates a channel that has a maximum capacity of `10` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel will block the producer or consumer until space becomes available. You can configure this behavior by specifying an option when you create the channel.
-
-```csharp
-var channel = Channel.CreateBounded<T>(
-    new BoundedChannelOptions(20)
-    {
-        AllowSynchronousContinuations = true,
-        FullMode = BoundedChannelFullMode.DropOldest
-    });
-```
-
-The preceding code creates a channel that has a maximum capacity of `20` items. The options specify that the channel should drop the oldest item when the channel is full. To handle when an item is dropped, you can provide an `itemDropped` callback:
-
-```csharp
-var channel = Channel.CreateBounded<T>(
-    new BoundedChannelOptions(50),
-    static item =>
-    {
-        Console.WriteLine($"Item dropped: {item}");
-    });
-```
-
-Whenever the channel is full and a new item is added, the `itemDropped` callback will be invoked. In this example, the provided callback writes the item to the console, but you're free to take any other action you want.
+The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel will block the producer or consumer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Unbounded channels can be created with any capacity value greater than zero. For additional examples, see [Bounded creation patterns](#bounded-creation-patterns)
 
 #### Full mode behavior
 
@@ -133,6 +93,8 @@ Imagine that you're creating a producer/consumer solution for a global position 
 
 :::code language="csharp" source="./snippets/channels/Coordinates.cs":::
 
+#### Unbounded creation patterns
+
 One common usage pattern is to create a default unbounded channel:
 
 :::code language="csharp" source="snippets/channels/Program.Unbounded.cs" id="unbounded":::
@@ -143,19 +105,35 @@ But instead, let's imagine that you want to create an unbounded channel with mul
 
 In this case, all writes are synchronous, even the `WriteAsync`. This is because an unbounded channel always has available room for a write effectively immediately. However, with `AllowSynchronousContinuations` set to `true`, the writes may end up doing work associated with a reader by executing their continuations. This doesn't affect the synchronicity of the operation.
 
+#### Bounded creation patterns
+
 When working with bounded channels, the configurability of the channel should be known to the consumer to help ensure proper consumption. That is, the consumer should know what behavior the channel will exhibit when the configured bound is reached. Let's explore some of the common bounded creation patterns.
 
+The simplest way to create a bounded channel is to specify a capacity:
 
+:::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedcapcity":::
+
+The preceding code creates a bounded channel with a max capacity of `1`. Additional options are available, some options are the same as an unbounded channel, while others are specific to unbounded channels:
+
+:::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedoptions":::
+
+In the preceding code, the channel is created as a bounded channel that's limited to 1,000 items, with a single writer but many readers. Its full mode behavior is defined as `DropWrite` which means that it will drop the item being written if the channel is full.
+
+When using a bounded channel, to observe items that are dropped register an `itemDropped` callback:
+
+:::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedcallback":::
+
+Whenever the channel is full and a new item is added, the `itemDropped` callback will be invoked. In this example, the provided callback writes the item to the console, but you're free to take any other action you want.
 
 ### Producer patterns
 
-Imagine that the producer in this scenario is writing a new coordinate to the channel. The producer can do this by calling <xref:System.Threading.Channels.ChannelWriter%601.TryWrite%2A>:
+Imagine that the producer in this scenario is writing new coordinates to the channel. The producer can do this by calling <xref:System.Threading.Channels.ChannelWriter%601.TryWrite%2A>:
 
 :::code language="csharp" source="snippets/channels/Program.Producer.cs" id="whiletrywrite":::
 
 The preceding producer code:
 
-- Accepts the `Channel<Coordinates>.Writer` as an argument, along with the initial `Coordinates`.
+- Accepts the `Channel<Coordinates>.Writer` (`ChannelWriter<Coordinates>`) as an argument, along with the initial `Coordinates`.
 - Defines a conditional `while` loop that attempts to move the coordinates using `TryWrite`.
 
 An alternative producer might use the `WriteAsync` method:
@@ -172,7 +150,22 @@ As part of the conditional `while`, the result of the `WaitToWriteAsync` call is
 
 ### Consumer patterns
 
-When you
+There are several common channel consumer patterns. When a channel is never ending, meaning it will infinitely produce data, the consumer could use a `while (true)` loop, and read data as it becomes available:
+
+:::code language="csharp" source="snippets/channels/Program.Consumer.cs" id="whiletrue":::
+
+> [!NOTE]
+> This code will throw an exception if the channel is closed.
+
+An alternative consumer could avoid this concern by using a nested while loop, as shown in the following code:
+
+:::code language="csharp" source="snippets/channels/Program.Consumer.cs" id="nestedwhile":::
+
+In the preceding code, the consumer waits to read data. Once the data is available, the consumer tries to read it. These loops will continue to evaluate until the producer of the channel signals that it no longer has data to be read. With that said, when a producer is known to have a finite number of items it will produce and it signals completion, the consumer can use `await foreach` semantics to iterate over the items:
+
+:::code language="csharp" source="snippets/channels/Program.Consumer.cs" id="awaitforeach":::
+
+The preceding code uses the <xref:System.Threading.Channels.ChannelReader%601.ReadAllAsync%2A> method to read all of the coordinates from the channel.
 
 ## See also
 

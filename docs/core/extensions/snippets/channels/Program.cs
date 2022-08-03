@@ -1,9 +1,9 @@
-﻿bool isBounded = false;
+﻿bool isBounded = true;
 Channel<Coordinates> gps = isBounded
-    ? CreateBounded(10)
+    ? CreateBounded()
     : CreateUnbounded();
 
-string producer = args?.Length > 0 ? args[0] : "waittowrite";
+string producer = args?.Length > 0 ? args[0] : "whilewrite";
 Func<ChannelWriter<Coordinates>, Coordinates, ValueTask> produceCooridnatesAsync = producer switch
 {
     "whilewrite" => ProduceWithWhileWriteAsync,
@@ -12,13 +12,12 @@ Func<ChannelWriter<Coordinates>, Coordinates, ValueTask> produceCooridnatesAsync
     _ => ProduceWithWhileWriteAsync
 };
 
-string consumer = args?.Length > 1 ? args[1] : "awaitforeach";
+string consumer = args?.Length > 1 ? args[1] : "nestedwhile";
 Func<ChannelReader<Coordinates>, ValueTask> consumeCoordinatesAsync = consumer switch
 {
     "nestedwhile" => ConsumeWithNestedWhileAsync,
     "awaitforeach" => ConsumeWithAwaitForeachAsync,
     "whiletrue" => ConsumeWithWhileAsync,
-    "waittoread" => ConsumeWithWhileWaitToReadAsync,
 
     _ => ConsumeWithAwaitForeachAsync
 };

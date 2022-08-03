@@ -129,7 +129,11 @@ There are several usage patterns for channels. The API is designed to be simple,
 
 Imagine that you're creating a producer/consumer solution for a global position system (GPS). You want to track the coordinates of a device over time. A sample coordinates object might look like this:
 
-:::code language="csharp" source="./snippets/channels/channels/Coordinates.cs":::
+:::code language="csharp" source="./snippets/channels/Coordinates.cs":::
+
+When using an unbounded channel, you can write using the synchronous APIs:
+
+
 
 ## See also
 

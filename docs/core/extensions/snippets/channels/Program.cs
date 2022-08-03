@@ -4,8 +4,8 @@
 
 var isBounded = false;
 var gps = isBounded
-    ? CreateBounded<Coordinates>(10)
-    : CreateUnbounded<Coordinates>();
+    ? CreateBounded(10)
+    : CreateUnbounded();
 
 var producer = GetArg(args, 0, "waittowrite");
 var producerMap =

@@ -8,7 +8,7 @@ ms.date: 07/12/2022
 
 # Enterprise Application Patterns Using .NET MAUI
 
-//TODO: Add Book Cover
+:::image type="content" source="media/enterprise-app-patterns-ebook.png" alt-text="Enterprise Application Patterns Using .NET MAUI":::
 
 //TODO: Add Book Link
 > DOWNLOAD available at: <https://aka.ms/maui-ebook>

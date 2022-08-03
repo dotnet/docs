@@ -59,7 +59,7 @@ The sample application ships with three client apps:
 
 - An MVC application developed with ASP.NET Core.
 - A Single Page Application (SPA) developed with Angular 2 and Typescript. This approach for web applications avoids performing a round-trip to the server with each operation.
-- A mobile app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows 10/11.
+- A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows 10/11.
 
 For information about the web applications, see [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](http://aka.ms/WebAppEbook).
 
@@ -74,15 +74,15 @@ These backend services are implemented as microservices using ASP.NET Core MVC, 
 
 For information about the implementation of the backend services, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
-## Mobile app
+## Multi-Platform app
 
-This guide focuses on building cross-platform enterprise apps using .NET MAUI, and uses the eShopOnContainers mobile app as an example. The image below shows the pages from the eShopOnContainers mobile app that provide the functionality outlined earlier.
+This guide focuses on building cross-platform enterprise apps using .NET MAUI, and uses the eShopOnContainers multi-platform app as an example. The image below shows the pages from the eShopOnContainers multi-platform app that provide the functionality outlined earlier.
 
 :::image type="content" source="media/mobile-app-screens.jpg" alt-text="The eShopOnContainers MAUI app":::
 
-The mobile app consumes the backend services provided by the eShopOnContainers reference application. However, it can be configured to consume data from mock services for those who wish to avoid deploying the backend services.
+The multi-platform app consumes the backend services provided by the eShopOnContainers reference application. However, it can be configured to consume data from mock services for those who wish to avoid deploying the backend services.
 
-The eShopOnContainers mobile app exercises the following .NET MAUI functionality:
+The eShopOnContainers multi-platform app exercises the following .NET MAUI functionality:
 
 - XAML
 - Controls
@@ -96,17 +96,17 @@ The eShopOnContainers mobile app exercises the following .NET MAUI functionality
 - Effects
 - Custom Controls
 
-For more information about this functionality, see the [.NET MAUI documentation](https://docs.microsoft.com/dotnet/maui/) on the Microsoft Developer Center, and [Creating Mobile Apps with .NET MAUI](https://aka.ms/mauiebook).
+For more information about this functionality, see the [.NET MAUI documentation](https://docs.microsoft.com/dotnet/maui/) on the Microsoft Developer Center, and [Creating multi-platform apps with .NET MAUI](https://aka.ms/mauiebook).
 
-In addition, unit tests are provided for some of the classes in the eShopOnContainers mobile app.
+In addition, unit tests are provided for some of the classes in the eShopOnContainers multi-platform app.
 
-## Mobile app solution
+## Multi-Platform app solution
 
-The eShopOnContainers mobile app solution organizes the source code and other resources into a multiple projects. All of the core mobile components are contained in a singular project named eShopContainers. This is a feature introduced with .NET 6 that allows a project to target multiple outputs which helps eliminate the need for multiple platform projects that we would have used in Xamarin.Forms and earlier .NET versions. An additional project is included for unit testing.
+The eShopOnContainers multi-platform app solution organizes the source code and other resources into a multiple projects. All of the core mobile components are contained in a singular project named eShopContainers. This is a feature introduced with .NET 6 that allows a project to target multiple outputs which helps eliminate the need for multiple platform projects that we would have used in Xamarin.Forms and earlier .NET versions. An additional project is included for unit testing.
 
 While this project has all of its components stored in a singular project, it is worth considering separating it into multiple projects based on your needs. For example, if you have multiple implementations of service providers based off of a service with their own dependencies, it may make sense to break those service provider implementations out into their own separate project. Good candidates for project separation include shared models, service implementations, api client components, database or caching layers. Any place where you feel that the business could re-use a component in another project is a potential candidate for separation. These projects can then be packaged via [NuGet](/nuget/) for easy distribution and versioning.
 
-All of the projects use folders to organize the source code and other resources into categories. The classes from the eShopOnContainers mobile app can be re-used in any .NET MAUI app with little or no modification.
+All of the projects use folders to organize the source code and other resources into categories. The classes from the eShopOnContainers multi-platform app can be re-used in any .NET MAUI app with little or no modification.
 
 ## eShopOnContainers project
 
@@ -131,6 +131,6 @@ The eShopOnContainers project contains the following folders:
 
 ## Summary
 
-Microsoft's cross-platform mobile app development tools and platforms provide a comprehensive solution for B2E, B2B, and B2C mobile client apps, providing the ability to share code across all target platforms (iOS, Android, and Windows) and helping to lower the total cost of ownership. Apps can share their user interface and app logic code, while retaining the native platform look and feel.
+Microsoft's cross-platform multi-platform app development tools and platforms provide a comprehensive solution for B2E, B2B, and B2C mobile client apps, providing the ability to share code across all target platforms (iOS, Android, and Windows) and helping to lower the total cost of ownership. Apps can share their user interface and app logic code, while retaining the native platform look and feel.
 
 Developers of enterprise apps face several challenges that can alter the architecture of the app during development. Therefore, it's important to build an app so that it can be modified or extended over time. Designing for such adaptability can be difficult, but typically involves partitioning an app into discrete, loosely coupled components that can be easily integrated together into an app.

@@ -31,11 +31,11 @@ For more information about REST, see [API design](/azure/architecture/best-pract
 
 ## Consuming RESTful APIs
 
-The eShopOnContainers mobile app uses the Model-View-ViewModel (MVVM) pattern, and the model elements of the pattern represent the domain entities used in the app. The controller and repository classes in the eShopOnContainers reference application accept and return many of these model objects. Therefore, they are used as data transfer objects (DTOs) that hold all the data that is passed between the mobile app and the containerized microservices. The main benefit of using DTOs to pass data to and receive data from a web service is that by transmitting more data in a single remote call, the app can reduce the number of remote calls that need to be made.
+The eShopOnContainers multi-platform app uses the Model-View-ViewModel (MVVM) pattern, and the model elements of the pattern represent the domain entities used in the app. The controller and repository classes in the eShopOnContainers reference application accept and return many of these model objects. Therefore, they are used as data transfer objects (DTOs) that hold all the data that is passed between the app and the containerized microservices. The main benefit of using DTOs to pass data to and receive data from a web service is that by transmitting more data in a single remote call, the app can reduce the number of remote calls that need to be made.
 
 ## Making web requests
 
-The eShopOnContainers mobile app uses the `HttpClient` class to make requests over HTTP, with JSON being used as the media type. This class provides functionality for asynchronously sending HTTP requests and receiving HTTP responses from a URI identified resource. The HttpResponseMessage class represents an HTTP response message received from a REST API after an HTTP request has been made. It contains information about the response, including the status code, headers, and any body. The HttpContent class represents the HTTP body and content headers, such as Content-Type and Content-Encoding. The content can be read using any of the `ReadAs` methods, such as `ReadAsStringAsync` and `ReadAsByteArrayAsync`, depending on the format of the data.
+The eShopOnContainers multi-platform app uses the `HttpClient` class to make requests over HTTP, with JSON being used as the media type. This class provides functionality for asynchronously sending HTTP requests and receiving HTTP responses from a URI identified resource. The HttpResponseMessage class represents an HTTP response message received from a REST API after an HTTP request has been made. It contains information about the response, including the status code, headers, and any body. The HttpContent class represents the HTTP body and content headers, such as Content-Type and Content-Encoding. The content can be read using any of the `ReadAs` methods, such as `ReadAsStringAsync` and `ReadAsByteArrayAsync`, depending on the format of the data.
 
 ## Making a GET request
 
@@ -77,10 +77,10 @@ The following code example shows the `GetAsync` method in the `RequestProvider` 
 public async Task<TResult> GetAsync<TResult>(string uri, string token = "")
 {
     HttpClient httpClient = GetOrCreateHttpClient(token);
-    HttpResponseMessage response = await httpClient.GetAsync(uri).ConfigureAwait(false);
+    HttpResponseMessage response = await httpClient.GetAsync(uri);
 
-    await HandleResponse(response).ConfigureAwait(false);
-    string serialized = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+    await HandleResponse(response);
+    string serialized = await response.Content.ReadAsStringAsync();
 
     TResult result = JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings);
 
@@ -202,10 +202,10 @@ public async Task<TResult> PostAsync<TResult>(
 
     var content = new StringContent(JsonConvert.SerializeObject(data));
     content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-    HttpResponseMessage response = await httpClient.PostAsync(uri, content).ConfigureAwait(false);
+    HttpResponseMessage response = await httpClient.PostAsync(uri, content);
 
-    await HandleResponse(response).ConfigureAwait(false);
-    string serialized = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+    await HandleResponse(response);
+    string serialized = await response.Content.ReadAsStringAsync();
 
     TResult result = JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings);
 
@@ -254,7 +254,7 @@ public async Task ClearBasketAsync(string guidUser, string token)
     UriBuilder builder = new(GlobalSetting.Instance.BasketEndpoint);
     builder.Path = guidUser;
     string uri = builder.ToString();
-    await _requestProvider.DeleteAsync(uri, token).ConfigureAwait(false);
+    await _requestProvider.DeleteAsync(uri, token);
 }
 ```
 
@@ -266,7 +266,7 @@ The following code example shows the `DeleteAsync` method in the `RequestProvide
 public async Task DeleteAsync(string uri, string token = "")
 {
     HttpClient httpClient = GetOrCreateHttpClient(token);
-    await httpClient.DeleteAsync(uri).ConfigureAwait(false);
+    await httpClient.DeleteAsync(uri);
 }
 ```
 
@@ -298,7 +298,7 @@ Distributed applications, such as the eShopOnContainers reference application, s
 - A shared cache, which can be accessed by multiple processes or machines.
 - A private cache, where data is held locally on the device running the app.
 
-The eShopOnContainers mobile app uses a private cache, where data is held locally on the device that's running an instance of the app. For information about the cache used by the eShopOnContainers reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShopOnContainers multi-platform app uses a private cache, where data is held locally on the device that's running an instance of the app. For information about the cache used by the eShopOnContainers reference application, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 > [!TIP]
 > Think of the cache as a transient data store that could disappear at any time.
@@ -320,7 +320,7 @@ It's also possible that a cache might fill up if data is allowed to remain for t
 
 ## Caching images
 
-The eShopOnContainers mobile app consumes remote product images that benefit from being cached. These images are displayed by the Image control. The .NET MAUI Image control supports caching of downloaded images which has caching enabled by default, and will store the image locally for 24 hours. In addition, the expiration time can be configured with the CacheValidity property. For more information, see [Downloaded Image Caching](/dotnet/maui/user-interface/controls/image#image-caching) on the Microsoft Developer Center.
+The eShopOnContainers multi-platform app consumes remote product images that benefit from being cached. These images are displayed by the Image control. The .NET MAUI Image control supports caching of downloaded images which has caching enabled by default, and will store the image locally for 24 hours. In addition, the expiration time can be configured with the CacheValidity property. For more information, see [Downloaded Image Caching](/dotnet/maui/user-interface/controls/image#image-caching) on the Microsoft Developer Center.
 
 ## Increasing resilience
 
@@ -369,7 +369,7 @@ The circuit breaker pattern can prevent an app from repeatedly trying to execute
 
 A circuit breaker acts as a proxy for operations that might fail. The proxy should monitor the number of recent failures that have occurred, and use this information to decide whether to allow the operation to proceed, or to return an exception immediately.
 
-The eShopOnContainers mobile app does not currently implement the circuit breaker pattern. However, the eShopOnContainers does. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+The eShopOnContainers multi-platform app does not currently implement the circuit breaker pattern. However, the eShopOnContainers does. For more information, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 > [!TIP]
 > Combine the retry and circuit breaker patterns.

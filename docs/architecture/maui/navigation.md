@@ -27,7 +27,7 @@ Navigation logic can reside in a view's code-behind or a data-bound view-model. 
 
 A navigation service is typically invoked from view-models, in order to promote testability. However, navigating to views from view-models would require the view-models to reference views, and particularly views that the active view-model isn't associated with, which is not recommended. Therefore, the `MauiNavigationService` presented here specifies the view-model type as the target to navigate to.
 
-The eShopOnContainers mobile app uses the `MauiNavigationService` class to provide view-model-first navigation. This class implements the `INavigationService` interface, which is shown in the following code example:
+The eShopOnContainers multi-platform app uses the `MauiNavigationService` class to provide view-model-first navigation. This class implements the `INavigationService` interface, which is shown in the following code example:
 
 ```csharp
 public interface INavigationService
@@ -49,7 +49,7 @@ This interface specifies that an implementing class must provide the following m
 | `PopAsync` | Removes the current page from the navigation stack. |
 
 > [!NOTE]
-> An `INavigationService` interface would usually also specify a `GoBackAsync` method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShopOnContainers mobile app because it's not required.
+> An `INavigationService` interface would usually also specify a `GoBackAsync` method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShopOnContainers multi-platform app because it's not required.
 
 ## Creating the MauiNavigationService instance
 

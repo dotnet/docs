@@ -10,9 +10,9 @@ ms.date: 07/09/2022
 
 Any app that accepts input from users should ensure that the input is valid. An app could, for example, check for input that contains only characters in a particular range, is of a certain length, or matches a particular format. Without validation, a user can supply data that causes the app to fail. Proper validation enforces business rules and could help to prevent an attacker from injecting malicious data.
 
-In the context of the Model-ViewModel-Model (MVVM) pattern, a view model or model will often be required to perform data validation and signal any validation errors to the view so that the user can correct them. The eShopOnContainers mobile app performs synchronous client-side validation of view model properties and notifies the user of any validation errors by highlighting the control that contains the invalid data, and by displaying error messages that inform the user of why the data is invalid. The image below shows the classes involved in performing validation in the eShopOnContainers mobile app.
+In the context of the Model-ViewModel-Model (MVVM) pattern, a view model or model will often be required to perform data validation and signal any validation errors to the view so that the user can correct them. The eShopOnContainers multi-platform app performs synchronous client-side validation of view model properties and notifies the user of any validation errors by highlighting the control that contains the invalid data, and by displaying error messages that inform the user of why the data is invalid. The image below shows the classes involved in performing validation in the eShopOnContainers multi-platform app.
 
-:::image type="content" source="media/validation-workflow.png" alt-text="Validation classes in the eShopOnContainers mobile app.":::
+:::image type="content" source="media/validation-workflow.png" alt-text="Validation classes in the eShopOnContainers multi-platform app.":::
 
 View model properties that require validation are of type `ValidatableObject<T>`, and each `ValidatableObject<T>` instance has validation rules added to its `Validations` property. Validation is invoked from the view model by calling the `Validate` method of the `ValidatableObject<T>` instance, which retrieves the validation rules and executes them against the `ValidatableObject<T>.Value` property. Any validation errors are placed into the `Errors` property of the `ValidatableObject<T>` instance, and the `IsValid` property of the `ValidatableObject<T>` instance is updated to indicate whether the validation succeeded or failed. The following code shows the implementation of the `ValidatableObject<T>`:
 
@@ -74,7 +74,7 @@ public interface IValidationRule<T>
 
 This interface specifies that a validation rule class must provide a boolean `Check` method that is used to perform the required validation, and a `ValidationMessage` property whose value is the validation error message that will be displayed if validation fails.
 
-The following code example shows the `IsNotNullOrEmptyRule<T>` validation rule, which is used to perform validation of the username and password entered by the user on the `LoginView` when using mock services in the eShopOnContainers mobile app:
+The following code example shows the `IsNotNullOrEmptyRule<T>` validation rule, which is used to perform validation of the username and password entered by the user on the `LoginView` when using mock services in the eShopOnContainers multi-platform app:
 
 ```csharp
 public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
@@ -88,7 +88,7 @@ public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
 
 The `Check` method returns a boolean indicating whether the value argument is null, empty, or consists only of whitespace characters.
 
-Although not used by the eShopOnContainers mobile app, the following code example shows a validation rule for validating email addresses:
+Although not used by the eShopOnContainers multi-platform app, the following code example shows a validation rule for validating email addresses:
 
 ```csharp
 public class EmailRule<T> : IValidationRule<T>
@@ -109,7 +109,7 @@ The `Check` method returns a boolean indicating whether or not the value argumen
 
 ## Adding validation rules to a property
 
-In the eShopOnContainers mobile app, view model properties that require validation are declared to be of type `ValidatableObject<T>`, where `T` is the type of the data to be validated. The following code example shows an example of two such properties:
+In the eShopOnContainers multi-platform app, view model properties that require validation are declared to be of type `ValidatableObject<T>`, where `T` is the type of the data to be validated. The following code example shows an example of two such properties:
 
 ```csharp
 public ValidatableObject<string> UserName { get; private set; }
@@ -137,11 +137,11 @@ This method adds the `IsNotNullOrEmptyRule<T>` validation rule to the `Validatio
 
 ## Triggering validation
 
-The validation approach used in the eShopOnContainers mobile app can manually trigger validation of a property, and automatically trigger validation when a property changes.
+The validation approach used in the eShopOnContainers multi-platform app can manually trigger validation of a property, and automatically trigger validation when a property changes.
 
 ### Triggering validation manually
 
-Validation can be triggered manually for a view model property. For example, this occurs in the eShopOnContainers mobile app when the user taps the `Login` button on the `LoginView`, when using mock services. The command delegate calls the `MockSignInAsync` method in the `LoginViewModel`, which invokes validation by executing the `Validate` method, which is shown in the following code example:
+Validation can be triggered manually for a view model property. For example, this occurs in the eShopOnContainers multi-platform app when the user taps the `Login` button on the `LoginView`, when using mock services. The command delegate calls the `MockSignInAsync` method in the `LoginViewModel`, which invokes validation by executing the `Validate` method, which is shown in the following code example:
 
 ```csharp
 private bool Validate()
@@ -199,7 +199,7 @@ The `Entry` control binds to the `UserName.Value` property of the `ValidatableOb
 
 ## Displaying validation errors
 
-The eShopOnContainers mobile app notifies the user of any validation errors by highlighting the control that contains the invalid data with a red background, and by displaying an error message that informs the user why the data is invalid below the control containing the invalid data. When the invalid data is corrected, the background changes back to the default state and the error message is removed. The image below shows the `LoginView` in the eShopOnContainers mobile app when validation errors are present.
+The eShopOnContainers multi-platform app notifies the user of any validation errors by highlighting the control that contains the invalid data with a red background, and by displaying an error message that informs the user why the data is invalid below the control containing the invalid data. When the invalid data is corrected, the background changes back to the default state and the error message is removed. The image below shows the `LoginView` in the eShopOnContainers multi-platform app when validation errors are present.
 
 :::image type="content" source="media/displaying-validation-errors.png" alt-text="Displaying validation errors during login.":::
 
@@ -255,6 +255,6 @@ Each Label binds to the `Errors` property of the view model object that's being 
 
 ## Summary
 
-The eShopOnContainers mobile app performs synchronous client-side validation of view model properties and notifies the user of any validation errors by highlighting the control that contains the invalid data, and by displaying error messages that inform the user why the data is invalid.
+The eShopOnContainers multi-platform app performs synchronous client-side validation of view model properties and notifies the user of any validation errors by highlighting the control that contains the invalid data, and by displaying error messages that inform the user why the data is invalid.
 
 View model properties that require validation are of type `ValidatableObject<T>`, and each `ValidatableObject<T>` instance has validation rules added to its `Validations` property. Validation is invoked from the view model by calling the `Validate` method of the `ValidatableObject<T>` instance, which retrieves the validation rules and executes them against the `ValidatableObject<T>` Value property. Any validation errors are placed into the `Errors` property of the `ValidatableObject<T>` instance, and the IsValid property of the `ValidatableObject<T>` instance is updated to indicate whether validation succeeded or failed.

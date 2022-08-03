@@ -49,7 +49,7 @@ The view model implements properties and commands to which the view can data bin
 > [!TIP]
 > Keep the UI responsive with asynchronous operations.
 
-Mobile apps should keep the UI thread unblocked to improve the user's perception of performance. Therefore, in the view model, use asynchronous methods for I/O operations and raise events to asynchronously notify views of property changes.
+Multi-platform apps should keep the UI thread unblocked to improve the user's perception of performance. Therefore, in the view model, use asynchronous methods for I/O operations and raise events to asynchronously notify views of property changes.
 
 The view model is also responsible for coordinating the view's interactions with any model classes that are required. There's typically a one-to-many relationship between the view model and the model classes. The view model might choose to expose model classes directly to the view so that controls in the view can data bind directly to them. In this case, the model classes will need to be designed to support data binding and change notification events.
 
@@ -149,7 +149,7 @@ public abstract class ExtendedBindableObject : BindableObject
 
 .NET MAUI's `BindableObject` class implements the `INotifyPropertyChanged` interface, and provides an `OnPropertyChanged` method. The `ExtendedBindableObject` class provides the `RaisePropertyChanged` method to invoke property change notification, and in doing so uses the functionality provided by the `BindableObject` class.
 
-View model classes can then derive from the `ExtendedBindableObject` class. Therefore, each view model class uses the `RaisePropertyChanged` method in the `ExtendedBindableObject` class to provide property change notification. The following code example shows how the eShopOnContainers mobile app invokes property change notification by using a lambda expression:
+View model classes can then derive from the `ExtendedBindableObject` class. Therefore, each view model class uses the `RaisePropertyChanged` method in the `ExtendedBindableObject` class to provide property change notification. The following code example shows how the eShopOnContainers multi-platform app invokes property change notification by using a lambda expression:
 
 ```csharp
 public bool IsLogin
@@ -167,17 +167,15 @@ Using a lambda expression in this way involves a small performance cost because 
 
 ## MVVM Frameworks
 
-The MVVM pattern is well established in .NET, and the community has created many frameworks which help ease this development. Each framework provides a different set of features, but it is standard for them to provide a common view model with an implementation of the `INotifyPropertyChanged` interface. Additional features of MVVM frameworks include custom commands, navigation helpers, dependency injection/service locator components, and UI platform integration. While it is not necessary to use these frameworks, they can speed up and standardize your development. The eShopOnContainers mobile app uses [the .NET Community MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction). When choosing a framework, you should consider your application's needs and your team's strengths. The table below lists some of the more common MVVM frameworks for .NET MAUI.
+The MVVM pattern is well established in .NET, and the community has created many frameworks which help ease this development. Each framework provides a different set of features, but it is standard for them to provide a common view model with an implementation of the `INotifyPropertyChanged` interface. Additional features of MVVM frameworks include custom commands, navigation helpers, dependency injection/service locator components, and UI platform integration. While it is not necessary to use these frameworks, they can speed up and standardize your development. The eShopOnContainers multi-platform app uses [the .NET Community MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction). When choosing a framework, you should consider your application's needs and your team's strengths. The list below includes some of the more common MVVM frameworks for .NET MAUI.
 
-| MVVM Framework | Homepage |
-|---------|---------|
-| .NET Community MVVM Toolkit | [https://docs.microsoft.com/windows/communitytoolkit/mvvm/introduction/](/windows/communitytoolkit/mvvm/introduction/) |
-| ReactiveUI | [https://www.reactiveui.net/](https://www.reactiveui.net/) |
-| Prism Library | [https://prismlibrary.com/](https://prismlibrary.com/) |
+- [.NET Community MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction/)
+- [ReactiveUI](https://www.reactiveui.net/)
+- [Prism Library](https://prismlibrary.com/)
 
 ## UI interaction using commands and behaviors
 
-In mobile apps, actions are typically invoked in response to a user action, such as a button click, that can be implemented by creating an event handler in the code-behind file. However, in the MVVM pattern, the responsibility for implementing the action lies with the view model, and placing code in the code-behind should be avoided.
+In multi-platform apps, actions are typically invoked in response to a user action, such as a button click, that can be implemented by creating an event handler in the code-behind file. However, in the MVVM pattern, the responsibility for implementing the action lies with the view model, and placing code in the code-behind should be avoided.
 
 Commands provide a convenient way to represent actions that can be bound to controls in the UI. They encapsulate the code that implements the action and help to keep it decoupled from its visual representation in the view. This way, your view models become more portable to new platforms, as they do not have a direct dependency on events provided by the platform's UI framework. .NET MAUI includes controls that can be declaratively connected to a command, and these controls will invoke the command when the user interacts with the control.
 
@@ -199,7 +197,7 @@ Provided with .NET MAUI are the `Command` and `Command<T>` classes that implemen
 
 The `Command` or `Command<T>` constructor requires an Action callback object that's called when the `ICommand.Execute` method is invoked. The `CanExecute` method is an optional constructor parameter, and is a Func that returns a bool.
 
-The eShopOnContainers mobile app uses the [RelayCommand](/windows/communitytoolkit/mvvm/relaycommand) and [AsyncRelayCommand](/windows/communitytoolkit/mvvm/asyncrelaycommand). The primary benefit for modern applications is that the `AsyncRelayCommand` provides better functionality for asynchronous operations.
+The eShopOnContainers multi-platform app uses the [RelayCommand](/windows/communitytoolkit/mvvm/relaycommand) and [AsyncRelayCommand](/windows/communitytoolkit/mvvm/asyncrelaycommand). The primary benefit for modern applications is that the `AsyncRelayCommand` provides better functionality for asynchronous operations.
 
 The following code shows how a `Command` instance, which represents a register command, is constructed by specifying a delegate to the Register view model method:
 
@@ -249,11 +247,11 @@ A behavior that's attached to a control through attached properties is known as 
 
 A .NET MAUI behavior is a class that derives from the `Behavior` or `Behavior<T>` class, where T is the type of the control to which the behavior should apply. These classes provide `OnAttachedTo` and `OnDetachingFrom` methods, which should be overridden to provide logic that will be executed when the behavior is attached to and detached from controls.
 
-In the eShopOnContainers mobile app, the `BindableBehavior<T>` class derives from the `Behavior<T>` class. The purpose of the `BindableBehavior<T>` class is to provide a base class for .NET MAUI behaviors that require the `BindingContext` of the behavior to be set to the attached control.
+In the eShopOnContainers multi-platform app, the `BindableBehavior<T>` class derives from the `Behavior<T>` class. The purpose of the `BindableBehavior<T>` class is to provide a base class for .NET MAUI behaviors that require the `BindingContext` of the behavior to be set to the attached control.
 
 The `BindableBehavior<T>` class provides an overridable `OnAttachedTo` method that sets the `BindingContext` of the behavior, and an overridable `OnDetachingFrom` method that cleans up the `BindingContext`.
 
-The eShopOnContainers mobile app includes an [EventToCommandBehavior](/dotnet/communitytoolkit/maui/behaviors/event-to-command-behavior) class which is provided by the MAUI Community toolkit. `EventToCommandBehavior` executes a command in response to an event occurring. This class derives from the `BaseBehavior<View>` class so that the behavior can bind to and execute an `ICommand` specified by a `Command` property when the behavior is consumed. The following code example shows the `EventToCommandBehavior` class:
+The eShopOnContainers multi-platform app includes an [EventToCommandBehavior](/dotnet/communitytoolkit/maui/behaviors/event-to-command-behavior) class which is provided by the MAUI Community toolkit. `EventToCommandBehavior` executes a command in response to an event occurring. This class derives from the `BaseBehavior<View>` class so that the behavior can bind to and execute an `ICommand` specified by a `Command` property when the behavior is consumed. The following code example shows the `EventToCommandBehavior` class:
 
 ```csharp
 /// <summary>

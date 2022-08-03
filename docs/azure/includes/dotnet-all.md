@@ -292,7 +292,7 @@
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Lake Storage | NuGet [1.2.5-alpha](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/1.2.5-alpha) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [1.2.5-alpha](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
 | DCAP | NuGet [1.11.2](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.11.2) |  | GitHub [1.11.2](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
-| Devices Client | NuGet [1.41.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.0)<br>NuGet [1.41.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.0-preview-001) |  |  |
+| Devices Client | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.1)<br>NuGet [1.41.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.0-preview-001) |  |  |
 | Digital Twins - Core | NuGet [1.4.0](https://www.nuget.org/packages/Azure.DigitalTwins.Core/1.4.0) | [docs](/dotnet/api/overview/azure/DigitalTwins.Core-readme) | GitHub [1.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.DigitalTwins.Core_1.4.0/sdk/digitaltwins/Azure.DigitalTwins.Core/) |
 | Document DB | NuGet [2.18.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.18.0) |  | GitHub [2.18.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
 | Document DB - Change Feed Processor | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/2.4.0) |  | GitHub [2.4.0](https://github.com/Azure/azure-documentdb-changefeedprocessor-dotnet/tree/master) |
@@ -316,7 +316,7 @@
 | Gallery | NuGet [2.6.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Gallery/2.6.2-preview) |  |  |
 | Graph RBAC | NuGet [3.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Graph.RBAC/3.8.0-preview) |  | GitHub [3.8.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/graphrbac) |
 | Hadoop Client | NuGet [1.5.13](https://www.nuget.org/packages/Microsoft.Hadoop.Client/1.5.13) |  |  |
-| HDInsight - Job | NuGet [3.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.2) |  | GitHub [3.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.2/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
+| HDInsight - Job | NuGet [3.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.3) |  | GitHub [3.0.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.3/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
@@ -348,7 +348,7 @@
 | Media Live Video Analytics Edge | NuGet [1.0.4-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Media.LiveVideoAnalytics.Edge/1.0.4-preview.1) |  | GitHub [1.0.4-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Media.LiveVideoAnalytics.Edge_1.0.4-preview.1/sdk/mediaservices/Microsoft.Azure.Media.LiveVideoAnalytics.Edge) |
 | Metrics Advisor | NuGet [1.1.0](https://www.nuget.org/packages/Azure.AI.MetricsAdvisor/1.1.0) | [docs](/dotnet/api/overview/azure/AI.MetricsAdvisor-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.MetricsAdvisor_1.1.0/sdk/metricsadvisor/Azure.AI.MetricsAdvisor/) |
 | Microsoft.Azure.Amqp | NuGet [2.5.12](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.5.12) |  |  |
-| Microsoft.Azure.Devices | NuGet [1.37.0](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.37.0)<br>NuGet [1.38.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.38.0-preview-001) |  |  |
+| Microsoft.Azure.Devices | NuGet [1.38.0](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.38.0)<br>NuGet [1.38.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.38.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
 | Microsoft.Azure.Devices.DigitalTwin.Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.DigitalTwin.Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |

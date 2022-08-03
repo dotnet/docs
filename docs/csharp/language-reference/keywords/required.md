@@ -2,6 +2,8 @@
 description: "required modifier - C# Reference"
 title: "required modifier - C# Reference"
 ms.date: 07/20/2022
+f1_keywords: 
+  - "required_CSharpKeyword"
 helpviewer_keywords: 
   - "required  keyword [C#]"
 ---

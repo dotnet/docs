@@ -14,9 +14,9 @@ public static class VerbatimInterpolation
 
         // Output:
         // Jupiter Hammon
-        //                     was an African American poet born in 1711.
+        //     was an African American poet born in 1711.
         // He was first published in 1761
-        //               at the age of 50.
+        // at the age of 50.
         // </VerbatimStringInterpolation>
     }
 }

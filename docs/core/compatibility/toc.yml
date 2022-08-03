@@ -73,6 +73,8 @@ items:
           href: cryptography/7.0/x500-distinguished-names.md
       - name: Deployment
         items:
+        - name: All assemblies trimmed by default
+          href: deployment/7.0/trim-all-assemblies.md
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
         - name: x86 host path on 64-bit Windows
@@ -933,6 +935,8 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: All assemblies trimmed by default
+          href: deployment/7.0/trim-all-assemblies.md
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
         - name: x86 host path on 64-bit Windows

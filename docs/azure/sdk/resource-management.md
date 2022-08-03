@@ -81,7 +81,6 @@ For more information about the `Azure.Identity.DefaultAzureCredential` class, se
 
 ### Management SDK Cheat Sheet
 
-
 To get started with the Azure management SDK for .NET, imagine you have a task to create/list/update/delete a typical Azure service bus namespace, follow these steps:
 
 1. Authenticate to the subscription and resource group that you want to work on.
@@ -97,7 +96,7 @@ ResourceGroupResource resourceGroupResource =
     client.GetDefaultSubscription().GetResourceGroup(resourceGroupName);
 ```
 
-2. Find the corresponding method to manage your Azure resource
+1. Find the corresponding method to manage your Azure resource.
 
 | Operation | Method |
 |-|-|
@@ -215,6 +214,7 @@ ResourceIdentifier resourceId =
         "resourceGroupName", 
         "resourceName"); 
 ```
+
 #### Example: ResourceIdentifier TryGet methods
 
 ```csharp

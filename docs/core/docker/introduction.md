@@ -54,7 +54,7 @@ Scale and orchestrate Windows & Linux containers using Kubernetes.
 Deploy web apps or APIs using containers in a PaaS environment.
 
 - [Azure Container Apps](https://azure.microsoft.com/services/container-apps/)\
-Run your container workloads without manaing servers, orchestration, or infrastructure and leverage native support for [Dapr](https://dapr.io/) and [KEDA](https://keda.sh/) for observability and scaling to zero.
+Run your container workloads without managing servers, orchestration, or infrastructure and leverage native support for [Dapr](https://dapr.io/) and [KEDA](https://keda.sh/) for observability and scaling to zero.
 
 - [Azure Container Instances](https://azure.microsoft.com/services/container-instances/)\
 Create individual containers in the cloud without any higher-level management services.

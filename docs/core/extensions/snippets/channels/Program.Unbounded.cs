@@ -3,7 +3,8 @@
     internal static Channel<Coordinates> CreateUnbounded()
     {
         // <unbounded>
-        var channel = Channel.CreateUnbounded<Coordinates>();
+        var channel =
+            Channel.CreateUnbounded<Coordinates>();
         // </unbounded>
 
         return channel;
@@ -12,12 +13,14 @@
     internal static Channel<Coordinates> CreateUnboundedWithOptions()
     {
         // <unboundedoptions>
-        var options = new UnboundedChannelOptions()
-        {
-
-        };
-
-        var channel = Channel.CreateUnbounded<Coordinates>(options);
+        var channel =
+            Channel.CreateUnbounded<Coordinates>(
+                new UnboundedChannelOptions()
+                {
+                    SingleWriter = false,
+                    SingleReader = false,
+                    AllowSynchronousContinuations = true
+                });
         // </unboundedoptions>
 
         return channel;

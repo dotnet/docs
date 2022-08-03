@@ -1,35 +1,29 @@
-﻿static string GetArg(
-    string[] args, int index, string defaultValue) =>
-    args?.Length > index ? args[index] : defaultValue;
-
-var isBounded = false;
-var gps = isBounded
+﻿bool isBounded = false;
+Channel<Coordinates> gps = isBounded
     ? CreateBounded(10)
     : CreateUnbounded();
 
-var producer = GetArg(args, 0, "waittowrite");
-var producerMap =
-    new Dictionary<string, Func<ChannelWriter<Coordinates>, Coordinates, ValueTask>>(
-        StringComparer.OrdinalIgnoreCase)
-    {
-        ["whilewrite"] = ProduceWithWhileWriteAsync,
-        ["waittowrite"] = ProduceWithWaitToWriteAsync
-    };
-var consumer = GetArg(args, 1, "awaitforeach");
-var consumerMap =
-    new Dictionary<string, Func<ChannelReader<Coordinates>, ValueTask>>(
-        StringComparer.OrdinalIgnoreCase)
-    {
-        ["nestedwhile"] = ConsumeWithNestedWhileAsync,
-        ["awaitforeach"] = ConsumeWithAwaitForeachAsync,
-        ["whiletrue"] = ConsumeWithWhileAsync,
-        ["waittoread"] = ConsumeWithWhileWaitToReadAsync
-    };
+string producer = args?.Length > 0 ? args[0] : "waittowrite";
+Func<ChannelWriter<Coordinates>, Coordinates, ValueTask> produceCooridnatesAsync = producer switch
+{
+    "whilewrite" => ProduceWithWhileWriteAsync,
+    "waittowrite" => ProduceWithWaitToWriteAsync,
 
-var produceCooridnatesAsync = producerMap[producer];
-var consumeCoordinatesAsync = consumerMap[consumer];
+    _ => ProduceWithWhileWriteAsync
+};
 
-var initialCoordinates = new Coordinates(
+string consumer = args?.Length > 1 ? args[1] : "awaitforeach";
+Func<ChannelReader<Coordinates>, ValueTask> consumeCoordinatesAsync = consumer switch
+{
+    "nestedwhile" => ConsumeWithNestedWhileAsync,
+    "awaitforeach" => ConsumeWithAwaitForeachAsync,
+    "whiletrue" => ConsumeWithWhileAsync,
+    "waittoread" => ConsumeWithWhileWaitToReadAsync,
+
+    _ => ConsumeWithAwaitForeachAsync
+};
+
+Coordinates initialCoordinates = new(
     DeviceId: Guid.NewGuid(),
     Latitude: -90,
     Longitude: -180);

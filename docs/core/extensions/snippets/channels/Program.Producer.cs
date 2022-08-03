@@ -1,6 +1,6 @@
 ﻿internal static partial class Program
 {
-    internal static void ProduceWithWhileAndTryWrite(
+    static void ProduceWithWhileAndTryWrite(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
         while (coordinates is { Latitude: < 90, Longitude: < 180 })
@@ -19,7 +19,7 @@
     }
 
     // <whilewrite>
-    internal static async ValueTask ProduceWithWhileWriteAsync(
+    static async ValueTask ProduceWithWhileWriteAsync(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
         while (coordinates is { Latitude: < 90, Longitude: < 180 })
@@ -39,7 +39,7 @@
     // </whilewrite>
 
     // <waittowrite>
-    internal static async ValueTask ProduceWithWaitToWriteAsync(
+    static async ValueTask ProduceWithWaitToWriteAsync(
         ChannelWriter<Coordinates> writer, Coordinates coordinates)
     {
         while (coordinates is { Latitude: < 90, Longitude: < 180 } &&

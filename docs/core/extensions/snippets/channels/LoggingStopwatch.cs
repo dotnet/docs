@@ -1,17 +1,17 @@
 ﻿using System.Runtime.CompilerServices;
 
-internal class LoggingStopwatch
+internal sealed class LoggingStopwatch
 {
     internal static IDisposable WriteDurationToConsole(
         [CallerMemberName] string? operation = null) =>
-        new StopWatchDisposable(operation);
+        new StopwatchDisposable(operation);
 
-    private sealed class StopWatchDisposable : IDisposable
+    private sealed class StopwatchDisposable : IDisposable
     {
         private readonly string? _operation;
         private readonly Stopwatch _stopwatch;
 
-        internal StopWatchDisposable(string? operation) =>
+        internal StopwatchDisposable(string? operation) =>
             (_operation, _stopwatch) = (operation, Stopwatch.StartNew());
 
         void IDisposable.Dispose()

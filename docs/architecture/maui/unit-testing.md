@@ -8,7 +8,7 @@ ms.date: 07/11/2022
 
 # Unit testing
 
-Mobile apps experience problems similar to both desktop and web-based applications. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, mobile apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form and essential to building high-quality applications.
+multi-platform apps experience problems similar to both desktop and web-based applications. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, multi-platform apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form and essential to building high-quality applications.
 
 A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app. Detecting a bug where it occurs is more efficient that observing the effect of a bug indirectly at a secondary point of failure.
 
@@ -60,14 +60,14 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShopOnContainers mobile app uses [xUnit](https://xunit.github.io/) to perform unit testing, which supports two different types of unit tests:
+The eShopOnContainers multi-platform app uses [xUnit](https://xunit.github.io/) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type | Attribute | Description                                                  |
 |--------------|-----------|--------------------------------------------------------------|
 | Facts        | `Fact`    | Tests that are always true, which test invariant conditions. |
 | Theories     | `Theory`  | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShopOnContainers mobile app are fact tests, so each unit test method is decorated with the `Fact` attribute.
+The unit tests included with the eShopOnContainers multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
 
 ## Testing asynchronous functionality
 

@@ -81,11 +81,11 @@ For more information about the reference application, see [.NET Microservices: A
 
 ## Communication between client and microservices
 
-The eShopOnContainers mobile app communicates with the containerized back-end microservices using _direct client-to-microservice_ communication, as shown below.
+The eShopOnContainers multi-platform app communicates with the containerized back-end microservices using _direct client-to-microservice_ communication, as shown below.
 
 :::image type="content" source="media/direct-client-to-microservice-communication.png" alt-text="Direct client-to-microservice communication":::
 
-With direct client-to-microservice communication, the mobile app makes requests to each microservice directly through its public endpoint, with a different TCP port per microservice. In production, the endpoint would typically map to the microservice's load balancer, which distributes requests across the available instances.
+With direct client-to-microservice communication, the multi-platform app makes requests to each microservice directly through its public endpoint, with a different TCP port per microservice. In production, the endpoint would typically map to the microservice's load balancer, which distributes requests across the available instances.
 
 > [!TIP]
 > Consider using API gateway communication.

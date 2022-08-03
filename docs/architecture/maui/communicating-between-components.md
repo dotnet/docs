@@ -24,12 +24,12 @@ Publishers send messages using the `MessagingCenter.Send` method, while subscrib
 
 Internally, the `MessagingCenter` class uses weak references. This means that it will not keep objects alive, and will allow them to be garbage collected. Therefore, it should only be necessary to unsubscribe from a message when a class no longer wishes to receive the message.
 
-The eShopOnContainers mobile app uses the `MessagingCenter` class to communicate between loosely coupled components. The app defines a single message. The `AddProduct` message is published by the `CatalogViewModel` class when an item is added to the shopping basket. In return, the `CatalogView` class subscribes to the message and uses this to highlight the product adds with an animation in response.
+The eShopOnContainers multi-platform app uses the `MessagingCenter` class to communicate between loosely coupled components. The app defines a single message. The `AddProduct` message is published by the `CatalogViewModel` class when an item is added to the shopping basket. In return, the `CatalogView` class subscribes to the message and uses this to highlight the product adds with an animation in response.
 
 > [!NOTE]
 > While the `MessagingCenter` class permits communication between loosely-coupled classes, it does not offer the only architectural solution to this issue. For example, communication between a view model and a view can also be achieved by the binding engine and through property change notifications. In addition, communication between two view models can also be achieved by passing data during navigation.
 
-In the eShopOnContainers mobile app, `MessagingCenter` is used to update in the UI in response to an action occurring in another class. Therefore, messages are published on the UI thread, with subscribers receiving the message on the same thread.
+In the eShopOnContainers multi-platform app, `MessagingCenter` is used to update in the UI in response to an action occurring in another class. Therefore, messages are published on the UI thread, with subscribers receiving the message on the same thread.
 
 > [!TIP]
 > Marshal to the UI or main thread when performing UI updates. If updates to user interfaces are not made on this thread, it can cause the application to crash or become unstable.
@@ -40,7 +40,7 @@ For more information about `MessagingCenter`, see [MessagingCenter](/dotnet/maui
 
 ## Defining a message
 
-`MessagingCenter` messages are strings that are used to identify messages. The following code example shows the messages defined within the eShopOnContainers mobile app:
+`MessagingCenter` messages are strings that are used to identify messages. The following code example shows the messages defined within the eShopOnContainers multi-platform app:
 
 ```csharp
 public static class MessengerKeys
@@ -74,7 +74,7 @@ The Send method will publish the message, and its payload data, using a fire-and
 
 ## Subscribing to a message
 
-Subscribers can register to receive a message using one of the `MessagingCenter.Subscribe` overloads. The following code example demonstrates how the eShopOnContainers mobile app subscribes to, and processes, the `AddProduct` message:
+Subscribers can register to receive a message using one of the `MessagingCenter.Subscribe` overloads. The following code example demonstrates how the eShopOnContainers multi-platform app subscribes to, and processes, the `AddProduct` message:
 
 ```csharp
 MessagingCenter.Subscribe<CatalogViewModel>(

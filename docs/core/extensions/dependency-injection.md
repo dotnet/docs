@@ -68,14 +68,14 @@ The sample code registers the `IMessageWriter` service with the concrete type `M
 In the preceding code, the sample app:
 
 - Creates a host builder instance.
-- Configures the services, which registers:
+- Configures the services by registering:
 
   - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
   - The `IMessageWriter` interface as a scoped service with a corresponding implementation of the `MessageWriter` class.
 
-- The builder builds the host and runs it.
+- Builds the host and runs it.
 
-The host contains the dependency injection service provider, and all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
+The host contains the dependency injection service provider. It also contains all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Worker.cs":::
 

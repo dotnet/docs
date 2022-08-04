@@ -171,3 +171,4 @@ The preceding code uses the <xref:System.Threading.Channels.ChannelReader%601.Re
 
 - [On .NET show: Working with Channels in .NET](/shows/on-net/working-with-channels-in-net)
 - [.NET Blog: An Introduction to System.Threading.Channels](https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels)
+- [Managed threading basics](/dotnet/standard/threading/managed-threading-basics)

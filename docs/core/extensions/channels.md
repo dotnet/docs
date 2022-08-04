@@ -33,7 +33,7 @@ To create an unbounded channel, call one of the <xref:System.Threading.Channels.
 var channel = Channel.CreateUnbounded<T>();
 ```
 
-When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify non-default behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's writer (producer) is unbounded and all writes are performed synchronously. For additional examples, see [Unbounded creation patterns](#unbounded-creation-patterns).
+When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify non-default behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's capacity is unbounded and all writes are performed synchronously. For additional examples, see [Unbounded creation patterns](#unbounded-creation-patterns).
 
 ### Bounded channels
 

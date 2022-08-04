@@ -1,5 +1,5 @@
 ---
-title: File globbing in .NET
+title: File globbing
 author: IEvangelist
 description: Learn how to use file globbing in .NET to match various files with the same partial names, extensions, or segments.
 ms.author: dapine

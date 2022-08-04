@@ -1,5 +1,5 @@
 ---
-title: Configuration in .NET
+title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine

@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/10/2021
+ms.date: 08/04/2022
 ms.topic: overview
 ---
 
@@ -63,9 +63,19 @@ This interface is implemented by a concrete type, `MessageWriter`:
 
 The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A> method registers the service with a scoped lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="16":::
+:::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
 
-In the sample app, the `IMessageWriter` service is requested and used to call the `Write` method:
+In the preceding code, the sample app:
+
+- Creates a host builder instance.
+- Configures the services, which registers:
+
+  - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
+  - The `IMessageWriter` interface as a scoped service with a corresponding implementation of the `MessageWriter` class.
+
+- The builder builds the host and runs it.
+
+The host contains the dependency injection service provider, and all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Worker.cs":::
 

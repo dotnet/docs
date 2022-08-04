@@ -14,7 +14,7 @@ This library is available in the [System.Threading.Channels](https://www.nuget.o
 
 ## Producer/consumer conceptual programming model
 
-Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of channels as you would any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the _bounding strategies_ employed by the channel instance and the behavior of the channel when the bound is reached.
+Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of channels as you would any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or such as whether the channel may be accessed by multiple producers or multiple consumers concurrently.
 
 ## Bounding strategies
 
@@ -43,7 +43,7 @@ To create a bounded channel, call one of the <xref:System.Threading.Channels.Cha
 var channel = Channel.CreateBounded<T>(7);
 ```
 
-The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel will block the producer or consumer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Unbounded channels can be created with any capacity value greater than zero. For additional examples, see [Bounded creation patterns](#bounded-creation-patterns).
+The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel will asynchronously block the producer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Bounded channels can be created with any capacity value greater than zero. For additional examples, see [Bounded creation patterns](#bounded-creation-patterns).
 
 #### Full mode behavior
 

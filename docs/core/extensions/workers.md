@@ -1,5 +1,5 @@
 ---
-title: Worker Services in .NET
+title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine

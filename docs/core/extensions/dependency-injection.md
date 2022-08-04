@@ -1,5 +1,5 @@
 ---
-title: Dependency injection in .NET
+title: Dependency injection
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine

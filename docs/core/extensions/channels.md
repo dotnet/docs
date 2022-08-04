@@ -1,5 +1,5 @@
 ---
-title: Channels in .NET
+title: Channels
 description: Learn how to use System.Threading.Channels in .NET.
 author: IEvangelist
 ms.author: dapine

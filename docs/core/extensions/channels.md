@@ -6,7 +6,7 @@ ms.author: dapine
 ms.date: 08/03/2022
 ---
 
-# System.Threading.Channels in .NET
+# System.Threading.Channels library
 
 The <xref:System.Threading.Channels?displayProperty=fullName> namespace provides a set of synchronization data structures for passing data between producers and consumers asynchronously. The library targets .NET Standard and works on all .NET implementations.
 
@@ -33,7 +33,7 @@ To create an unbounded channel, call one of the <xref:System.Threading.Channels.
 var channel = Channel.CreateUnbounded<T>();
 ```
 
-When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify non-default behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's writer (producer) is unbounded and all writes are performed synchronously. For additional examples, see [Unbounded creation patterns](#unbounded-creation-patterns)
+When you create an unbounded channel, by default, the channel can be used by any number of readers and writers concurrently. Alternatively, you can specify non-default behavior when creating an unbounded channel by providing an `UnboundedChannelOptions` instance. The channel's writer (producer) is unbounded and all writes are performed synchronously. For additional examples, see [Unbounded creation patterns](#unbounded-creation-patterns).
 
 ### Bounded channels
 
@@ -43,7 +43,7 @@ To create a bounded channel, call one of the <xref:System.Threading.Channels.Cha
 var channel = Channel.CreateBounded<T>(7);
 ```
 
-The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel will block the producer or consumer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Unbounded channels can be created with any capacity value greater than zero. For additional examples, see [Bounded creation patterns](#bounded-creation-patterns)
+The preceding code creates a channel that has a maximum capacity of `7` items. When you create a bounded channel, the channel is bound to a maximum capacity. When the bound is reached, the default behavior is that the channel will block the producer or consumer until space becomes available. You can configure this behavior by specifying an option when you create the channel. Unbounded channels can be created with any capacity value greater than zero. For additional examples, see [Bounded creation patterns](#bounded-creation-patterns).
 
 #### Full mode behavior
 

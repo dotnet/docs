@@ -45,12 +45,16 @@
         while (coordinates is { Latitude: < 90, Longitude: < 180 } &&
             await writer.WaitToWriteAsync())
         {
-            writer.TryWrite(
-                item: coordinates = coordinates with
-                {
-                    Latitude = coordinates.Latitude + .5,
-                    Longitude = coordinates.Longitude + 1
-                });
+            var tempCoordinates = coordinates with
+            {
+                Latitude = coordinates.Latitude + .5,
+                Longitude = coordinates.Longitude + 1
+            };
+
+            if (writer.TryWrite(item: tempCoordinates))
+            {
+                coordinates = tempCoordinates;
+            }
 
             await Task.Delay(TimeSpan.FromMilliseconds(10));
         }

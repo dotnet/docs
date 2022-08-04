@@ -15,8 +15,10 @@
     static async ValueTask ConsumeWithWhileAsync(
         ChannelReader<Coordinates> reader)
     {
-        while (true) // Only valid with never ending (infinite) producer.
+        while (true)
         {
+            // May throw ChannelClosedException if
+            // the parent channel's writer signals complete.
             Coordinates coordinates = await reader.ReadAsync();
             Console.WriteLine(coordinates);
         }

@@ -51,13 +51,13 @@ When using a bounded channel, you can specify the behavior the channel will adhe
 
 | Value | Behavior |
 |--|--|
-| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Waits for space to be available in order to complete the write operation. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. When calling `WriteAsync` waits for space to be available in order to complete the write operation. When calling `TryWrite` will return `false` immediately. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropWrite?displayProperty=nameWithType> | Drops the item being written. |
 
 > [!IMPORTANT]
-> Whenever a <xref:System.Threading.Channels.Channel%602.Writer%2A?displayProperty=nameWithType> produces faster than a <xref:System.Threading.Channels.Channel%602.Reader%2A?displayProperty=nameWithType> can consume, the channel's reader may experience _back pressure_.
+> Whenever a <xref:System.Threading.Channels.Channel%602.Writer%2A?displayProperty=nameWithType> produces faster than a <xref:System.Threading.Channels.Channel%602.Reader%2A?displayProperty=nameWithType> can consume, the channel's writer experiences back pressure.
 
 ## Producer APIs
 
@@ -69,7 +69,7 @@ The producer functionality is exposed on the <xref:System.Threading.Channels.Cha
 | <xref:System.Threading.Channels.ChannelWriter%601.TryComplete%2A?displayProperty=nameWithType> | Attempts to mark the channel as being completed, meaning no more data will be written to it. |
 | <xref:System.Threading.Channels.ChannelWriter%601.TryWrite%2A?displayProperty=nameWithType> | Attempts to write the specified item to the channel. When used with an unbounded channel, this always returns `true` unless the channel's writer signals completion with either <xref:System.Threading.Channels.ChannelWriter%601.Complete%2A?displayProperty=nameWithType>, or <xref:System.Threading.Channels.ChannelWriter%601.TryComplete%2A?displayProperty=nameWithType>. |
 | <xref:System.Threading.Channels.ChannelWriter%601.WaitToWriteAsync%2A?displayProperty=nameWithType> | Returns a <xref:System.Threading.Tasks.ValueTask%601> that will complete when space is available to write an item. |
-| <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> | Asynchronously writes an item to the channel. When used with an unbounded channel, this will write synchronously. |
+| <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> | Asynchronously writes an item to the channel. |
 
 ## Consumer APIs
 
@@ -85,7 +85,7 @@ The consumer functionality is exposed on the <xref:System.Threading.Channels.Cha
 
 ## Common usage patterns
 
-There are several usage patterns for channels. The API is designed to be simple, consistent, and as flexible as possible. All of the asynchronous methods return a `ValueTask` (or `ValueTask<bool>`) that represents a lightweight asynchronous operation that can avoid allocating if the operation completes synchronously. Additionally, the API is designed to be composable, in that the creator of a channel makes promises about its intended usage. When a channel is created with certain parameters, the internal implementation can operate more efficiently knowing these promises.
+There are several usage patterns for channels. The API is designed to be simple, consistent, and as flexible as possible. All of the asynchronous methods return a `ValueTask` (or `ValueTask<bool>`) that represents a lightweight asynchronous operation that can avoid allocating if the operation completes synchronously and potentially even asynchronously. Additionally, the API is designed to be composable, in that the creator of a channel makes promises about its intended usage. When a channel is created with certain parameters, the internal implementation can operate more efficiently knowing these promises.
 
 ### Creation patterns
 

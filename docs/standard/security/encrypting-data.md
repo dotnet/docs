@@ -1,7 +1,7 @@
 ---
 title: "Encrypting data"
 description: Learn how to encrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
-ms.date: 04/16/2021
+ms.date: 07/02/2022
 dev_langs:
   - "csharp"
   - "vb"
@@ -45,7 +45,7 @@ The following example shows the entire process of creating a stream, encrypting 
 The code encrypts the stream using the AES symmetric algorithm, and writes IV and then encrypted "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the following text to the console:
 
 ```console
-The text was encrypted.
+The file was encrypted.
 ```
 
 You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md). That example and this example specify the same key.

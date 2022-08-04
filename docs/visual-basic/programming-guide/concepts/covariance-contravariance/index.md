@@ -35,7 +35,7 @@ Dim actObject As Action(Of Object) = AddressOf SetObject
 Dim actString As Action(Of String) = actObject
 ```
 
-Covariance for arrays enables implicit conversion of an array of a more derived type to an array of a less derived type. But this operation is not type safe, as shown in the following code example.
+Covariance for arrays enables implicit conversion of an array of a more derived type to an array of a less derived type. But this operation isn't type safe, as shown in the following code example.
 
 ```vb
 Dim array() As Object = New String(10) {}
@@ -85,7 +85,7 @@ Dim objects As IEnumerable(Of Object) = strings
 
 A generic interface or delegate is called *variant* if its generic parameters are declared covariant or contravariant. Visual Basic enables you to create your own variant interfaces and delegates. For more information, see [Creating Variant Generic Interfaces (Visual Basic)](creating-variant-generic-interfaces.md) and [Variance in Delegates (Visual Basic)](variance-in-delegates.md).
 
-## Related Topics
+## Related articles
 
 |Title|Description|
 |-----------|-----------------|

@@ -22,7 +22,7 @@ String interpolation provides a more readable, convenient syntax to format strin
 
 ## Structure of an interpolated string
 
-To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can't have any white space between the `$` and the `"` that starts a string literal.
+To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can't have any white space between the `$` and the `"` that starts a string literal. To concantenate multiple interpolated strings, add the `$` special character to each string literal.
 
 The structure of an item with an interpolation expression is as follows:
 
@@ -56,7 +56,7 @@ You can use multiple `$` characters in an interpolated raw string literal to emb
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="RawInterpolatedLiteralStringWithBraces":::
 
-If your output string should contain repeated `{` or `}` characters, you can add more `$` to designate the interpolated string. Any sequence of `{` or `}` shorter than the number or `$` will be embedded in the output string. As shown in the preceding example, sequences longer than the sequence of `$` characters embed the additional `{` or `}` characters in the output. The compiler issues an error if the sequence of brace characters is equal to or greater than double the length of the sequence of `$` characters.
+If your output string should contain repeated `{` or `}` characters, you can add more `$` to designate the interpolated string. Any sequence of `{` or `}` shorter than the number of `$` will be embedded in the output string. As shown in the preceding example, sequences longer than the sequence of `$` characters embed the additional `{` or `}` characters in the output. The compiler issues an error if the sequence of brace characters is equal to or greater than double the length of the sequence of `$` characters.
 
 You can try these features using the .NET 7 SDK. Or, if you have the .NET SDK 6.00.200 or later, you can set the `<LangVersion>` element in your _csproj_ file to `preview`.
 
@@ -94,20 +94,6 @@ There are three implicit conversions from an interpolated string:
 The following example uses implicit conversion to <xref:System.FormattableString> to create culture-specific result strings:
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet4":::
-
-## Combining multiple interpolated strings
-
-To combine multiple interpolated strings, add the `$` special character to each string literal:
-
-```csharp
-var firstWord = "Hello";
-var secondWord = "World";
-
-var combinedInterpolatedString = $"{firstWord}, " + $"{secondWord}!";
-
-Console.WriteLine(combinedInterpolatedString)
-// output: "Hello, World!"
-```
 
 ## Other resources
 

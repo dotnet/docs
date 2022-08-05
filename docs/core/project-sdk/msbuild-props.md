@@ -413,10 +413,9 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 | Property | Values | Description |
 | - | - | - |
 | `PublishTrimmed` | `true` or `false` | Controls whether trimming is enabled during publish. |
-| `TrimMode` | `link` or `copyused` | Controls the trimming granularity. This property can be set globally for the project, or at the assembly level as metadata.  |
+| `TrimMode` | `full` or `partial` | Default is `full`. Controls the trimming granularity. |
 | `SuppressTrimAnalysisWarnings` | `true` or `false` | Controls whether trim analysis warnings are produced. |
 | `EnableTrimAnalyzer` | `true` or `false` | Controls whether a subset of trim analysis warnings are produced. You can enable analysis even if `PublishTrimmed` is set to `false`. |
-| `ILLinkWarningLevel` | 5-9999, `preview`, or `latest` | Controls the version of trim analysis warnings. |
 | `ILLinkTreatWarningsAsErrors` | `true` or `false` | Controls whether trim warnings are treated as errors. For example, you may want to set this property to `false` when `TreatWarningsAsErrors` is set to `true`.  |
 | `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
 | `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |

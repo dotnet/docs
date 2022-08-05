@@ -3,7 +3,7 @@ title: DateTime and DateTimeOffset support in System.Text.Json
 description: An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
 author: layomia
 ms.author: laakinri
-ms.date: 07/29/2022
+ms.date: 08/05/2022
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "JSON, Serializer, Utf8"
@@ -29,7 +29,7 @@ text representations according to the extended profile of the ISO 8601-1:2019 fo
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/serializing-with-jsonserializer/Program.cs":::
 
-The preceding code can also be deserialized with <xref:System.Text.Json.JsonSerializer>:
+<xref:System.DateTime> and <xref:System.DateTimeOffset> can also be deserialized with <xref:System.Text.Json.JsonSerializer>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-valid/Program.cs":::
 
@@ -39,7 +39,7 @@ With default options, input <xref:System.DateTime> and <xref:System.DateTimeOffs
 
 The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime>
 and <xref:System.DateTimeOffset> representations. The following example shows how to calculate the average
-temperature on Mondays when a collection of temperatures are given:
+temperature on Mondays from a collection of temperatures:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/computing-with-jsondocument-valid/Program.cs":::
 
@@ -67,9 +67,9 @@ If you want the serializer to perform custom parsing or formatting, you can impl
 
 #### Using DateTime(Offset).Parse and DateTime(Offset).ToString
 
-If you can't determine the formats of your input <xref:System.DateTime> or <xref:System.DateTimeOffset> text representations, you can use the `DateTime(Offset).Parse` method in your converter to read logic. This method allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the extended ISO 8601-1:2019 profile. This approach is less performant than using the serializer's native implementation.
+If you can't determine the formats of your input <xref:System.DateTime> or <xref:System.DateTimeOffset> text representations, you can use the `DateTime(Offset).Parse` method in your converter read logic. This method allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the extended ISO 8601-1:2019 profile. This approach is less performant than using the serializer's native implementation.
 
-For serializing, you can use the `DateTime(Offset).ToString` method in your converter to write logic. This method allows you to write <xref:System.DateTime> and <xref:System.DateTimeOffset> values using any of the [standard date and time formats](../base-types/standard-date-and-time-format-strings.md), and the [custom date and time formats](../base-types/custom-date-and-time-format-strings.md). This approach is also less performant than using the serializer's native implementation.
+For serializing, you can use the `DateTime(Offset).ToString` method in your converter write logic. This method allows you to write <xref:System.DateTime> and <xref:System.DateTimeOffset> values using any of the [standard date and time formats](../base-types/standard-date-and-time-format-strings.md), and the [custom date and time formats](../base-types/custom-date-and-time-format-strings.md). This approach is also less performant than using the serializer's native implementation.
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example1/Program.cs":::
 
@@ -115,7 +115,7 @@ The following example shows how a custom <xref:System.DateTime> format can be cr
 
 If you want to read a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonReader>, you can get the value of the current JSON token as a <xref:System.String> using <xref:System.Text.Json.Utf8JsonReader.GetString> method, then parse the value using custom logic.
 
-The following example shows how a custom <xref:System.DateTimeOffset> text representation can be retrieved using <xref:System.Text.Json.Utf8JsonReader.GetString> method, then parsed using <xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)>:
+The following example shows how a custom <xref:System.DateTimeOffset> text representation can be retrieved using the <xref:System.Text.Json.Utf8JsonReader.GetString> method, then parsed using <xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/custom-reading-with-utf8jsonreader/Program.cs":::
 
@@ -146,36 +146,36 @@ date and time representations. These components are used to define various suppo
 The following levels of granularity are defined for parsing:
 
 1. `'Full date'`
-    1. "`yyyy'-'MM'-'dd`"
+    1. `yyyy'-'MM'-'dd`
 
-1. "`'Full date''T''Hour'':''Minute'`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm`"
+1. `'Full date''T''Hour'':''Minute'`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm`
 
-1. "`'Full date''T''Partial time'`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss`"
+1. `'Full date''T''Partial time'`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss`
     ([The Sortable ("s") Format Specifier](../base-types/standard-date-and-time-format-strings.md#the-sortable-s-format-specifier))
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF`
 
-1. "`'Full date''T''Time hour'':''Minute''Time offset'`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mmZ`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm('+'/'-')HH':'mm`"
+1. `'Full date''T''Time hour'':''Minute''Time offset'`
+    1. `yyyy'-'MM'-'dd'T'HH':'mmZ`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm('+'/'-')HH':'mm`
 
 1. `'Date time'`
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ssZ`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ssZ`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm`
 
     This level of granularity is compliant with [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6), a widely adopted profile of ISO 8601 used for interchanging date and time information. However, there are a few restrictions in the `System.Text.Json` implementation.
 
     - RFC 3339 doesn't specify a maximum number of fractional-second digits, but specifies that at least one digit must follow the period, if a fractional-second section is present. The implementation in `System.Text.Json` allows up to 16 digits (to support interop with other programming languages and frameworks), but parses only the first seven. A <xref:System.Text.Json.JsonException> will be thrown if there are more than 16 fractional second digits when reading `DateTime` and `DateTimeOffset` instances.
-    - RFC 3339 allows the "`T`" and "`Z`" characters to be "`t`" or "`z`" respectively, but allows applications to limit support to just the upper-case variants. The implementation in `System.Text.Json` requires them to be "`T`" and "`Z`". A <xref:System.Text.Json.JsonException> will be thrown if input payloads contain "`t`" or "`z`" when reading `DateTime` and `DateTimeOffset` instances.
-    - RFC 3339 specifies that the date and time sections are separated by "`T`", but allows applications to separate them by a space (" ") instead. `System.Text.Json` requires date and time sections to be separated with "`T`". A <xref:System.Text.Json.JsonException> will be thrown if input payloads contain a space (" ") when reading `DateTime` and `DateTimeOffset` instances.
+    - RFC 3339 allows the `T` and `Z` characters to be `t` or `z` respectively, but allows applications to limit support to just the upper-case variants. The implementation in `System.Text.Json` requires them to be `T` and `Z`. A <xref:System.Text.Json.JsonException> will be thrown if input payloads contain `t` or `z` when reading `DateTime` and `DateTimeOffset` instances.
+    - RFC 3339 specifies that the date and time sections are separated by `T`, but allows applications to separate them by a space (" ") instead. `System.Text.Json` requires date and time sections to be separated with `T`. A <xref:System.Text.Json.JsonException> will be thrown if input payloads contain a space (" ") when reading `DateTime` and `DateTimeOffset` instances.
 
 If there are decimal fractions for seconds, there must be at least one digit. `2019-07-26T00:00:00.` isn't allowed.
 While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero.
 For example, `2019-07-26T00:00:00.1234567890` will be parsed as if it's `2019-07-26T00:00:00.1234567`.
-This approach maintains the compatibility with the <xref:System.DateTime> implementation, which is limited to this resolution.
+This approach maintains compatibility with the <xref:System.DateTime> implementation, which is limited to this resolution.
 
 Leap seconds aren't supported.
 
@@ -183,30 +183,30 @@ Leap seconds aren't supported.
 
 The following levels of granularity are defined for formatting:
 
-1. "`'Full date''T''Partial time'`"
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss`"
+1. `'Full date''T''Partial time'`
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss`
         ([The Sortable ("s") Format Specifier](../base-types/standard-date-and-time-format-strings.md#the-sortable-s-format-specifier))
 
         Used to format a <xref:System.DateTime> without fractional seconds and without offset information.
 
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF`
 
         Used to format a <xref:System.DateTime> with fractional seconds but without offset information.
 
 1. `'Date time'`
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ssZ`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ssZ`
 
         Used to format a <xref:System.DateTime> without fractional seconds but with a UTC offset.
 
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ`
 
         Used to format a <xref:System.DateTime> with fractional seconds and with a UTC offset.
 
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm`
 
         Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a local offset.
 
-    1. "`yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm`"
+    1. `yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm`
 
         Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
 
@@ -228,4 +228,4 @@ and <xref:System.Text.Json.Utf8JsonWriter>.
 
 Truncating zeros in fractional-second digits allows the smallest output needed to preserve information on a round trip to be written.
 
-A maximum of seven fractional-second digits are written. This process aligns with the <xref:System.DateTime> implementation, which is limited to this resolution.
+A maximum of seven fractional-second digits are written. This maximum aligns with the <xref:System.DateTime> implementation, which is limited to this resolution.

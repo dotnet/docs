@@ -1,7 +1,7 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
 description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
-ms.date: "07/29/2022"
+ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -46,7 +46,7 @@ public class Book
 // <ISBN>1234567890</ISBN>.
 ```
 
-The default behavior can be changed if you want to give the element a new name. The following code shows how an attribute enables this feature by setting the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> property of a <xref:System.Xml.Serialization.XmlElementAttribute>:
+The default behavior can be changed if you want to give the element a new name. The following code shows how an attribute enables this functionality by setting the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> property of an <xref:System.Xml.Serialization.XmlElementAttribute>:
 
 ```vb
 Public Class TaxRates
@@ -254,7 +254,7 @@ When the <xref:System.Xml.Serialization.XmlElementAttribute> is applied to the f
 
 ## Serializing an ArrayList
 
-An <xref:System.Collections.ArrayList> class can contain a collection of diverse objects. You can therefore use an <xref:System.Collections.ArrayList> much as you use an array. Instead of creating a field that returns an array of typed objects, you can create a field that returns a single <xref:System.Collections.ArrayList>. However, as with arrays, you must inform the <xref:System.Xml.Serialization.XmlSerializer> of the types of objects an <xref:System.Collections.ArrayList> contains. To accomplish this process, assign multiple instances of the <xref:System.Xml.Serialization.XmlElementAttribute> to the field, as shown in the following example:
+The <xref:System.Collections.ArrayList> class can contain a collection of diverse objects. You can therefore use an <xref:System.Collections.ArrayList> much as you use an array. Instead of creating a field that returns an array of typed objects, you can create a field that returns a single <xref:System.Collections.ArrayList>. However, as with arrays, you must inform the <xref:System.Xml.Serialization.XmlSerializer> of the types of objects the <xref:System.Collections.ArrayList> contains. To inform the <xref:System.Xml.Serialization.XmlSerializer>, assign multiple instances of the <xref:System.Xml.Serialization.XmlElementAttribute> to the field, as shown in the following example:
 
 ```vb
 Public Class Group

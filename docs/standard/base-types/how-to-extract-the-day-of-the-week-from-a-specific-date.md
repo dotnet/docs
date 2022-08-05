@@ -1,7 +1,7 @@
 ---
 title: "How to: Extract the Day of the Week from a Specific Date"
 description: Learn how to determine the ordinal day of the week for a particular date in .NET. Learn how to display the localized weekday name for a particular date.
-ms.date: "07/29/2022"
+ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -75,7 +75,7 @@ ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
   
 ## Example  
 
- The following example illustrates calls to the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.DayOfWeek%2A?displayProperty=nameWithType> properties. It also includes calls to the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=nameWithType> methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date.  
+ The following example illustrates calls to the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.DayOfWeek%2A?displayProperty=nameWithType> properties to retrieve the number that represents the day of the week. It also includes calls to the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=nameWithType> methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date.  
   
  [!code-csharp[Formatting.Howto.WeekdayName#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/example6.cs#6)]
  [!code-vb[Formatting.Howto.WeekdayName#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/example6.vb#6)]  

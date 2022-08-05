@@ -1,7 +1,7 @@
 ---
 title: "Writing Custom Attributes"
 description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
-ms.date: "08/01/2022"
+ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "attribute classes, declaring"
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
 ---
-# Writing Custom Attributes
+# Write custom attributes
 
-To design your custom attributes, you don't need to learn many new concepts. If you're familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are traditional classes that derive directly or indirectly from the <xref:System.Attribute?displayProperty=nameWithType> class. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
+To design custom attributes, you don't need to learn many new concepts. If you're familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are traditional classes that derive directly or indirectly from the <xref:System.Attribute?displayProperty=nameWithType> class. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
   
  The primary steps to properly design custom attribute classes are as follows:  
   
@@ -84,7 +84,7 @@ To design your custom attributes, you don't need to learn many new concepts. If 
  [!code-csharp[Conceptual.Attributes.Usage#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#11)]
  [!code-vb[Conceptual.Attributes.Usage#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#11)]  
   
- When multiple instances of these attributes are applied, `MyAttribute` throws a compiler error. The following code example shows the valid use of `YourAttribute` and the invalid use of `MyAttribute`:
+ When multiple instances of these attributes are applied, `MyAttribute` produces a compiler error. The following code example shows the valid use of `YourAttribute` and the invalid use of `MyAttribute`:
   
  [!code-cpp[Conceptual.Attributes.Usage#13](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#13)]
  [!code-csharp[Conceptual.Attributes.Usage#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#13)]

@@ -1,7 +1,7 @@
 ---
 title: Best Practices for Regular Expressions in .NET
 description: Learn how to create efficient, effective regular expressions in .NET.
-ms.date: "07/29/2022"
+ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs:
@@ -24,7 +24,7 @@ This article outlines some of the best practices that developers can adopt to en
 
 In general, regular expressions can accept two types of input: constrained or unconstrained. Constrained input is a text that originates from a known or reliable source and follows a predefined format. Unconstrained input is a text that originates from an unreliable source, such as a web user, and might not follow a predefined or expected format.
 
-Regular expression patterns are written to match valid input. That is, developers examine the text that they want to match and then write a regular expression pattern that matches it. Developers then determine whether this pattern requires correction or further elaboration by testing it with multiple valid input items. When the pattern matches all presumed valid inputs, it's declared to be production-ready, and can be included in a released application. This process makes a regular expression pattern suitable for matching constrained input. However, it doesn't make it suitable for matching unconstrained input.
+Regular expression patterns are often written to match valid input. That is, developers examine the text that they want to match and then write a regular expression pattern that matches it. Developers then determine whether this pattern requires correction or further elaboration by testing it with multiple valid input items. When the pattern matches all presumed valid inputs, it's declared to be production-ready, and can be included in a released application. This approach makes a regular expression pattern suitable for matching constrained input. However, it doesn't make it suitable for matching unconstrained input.
 
 To match unconstrained input, a regular expression must handle three kinds of text efficiently:
 
@@ -46,9 +46,9 @@ For example, consider a commonly used but problematic regular expression for val
 
 As the output from the preceding example shows, the regular expression engine processes the valid email alias in about the same time interval regardless of its length. On the other hand, when the nearly valid email address has more than five characters, processing time approximately doubles for each extra character in the string. Therefore, a nearly valid 28-character string would take over an hour to process, and a nearly valid 33-character string would take nearly a day to process.
 
-Because this regular expression was developed solely by considering the format of input to be matched, it fails to take account of input that doesn't match the pattern. This process, in turn, can allow unconstrained input that nearly matches the regular expression pattern to significantly degrade performance.
+Because this regular expression was developed solely by considering the format of input to be matched, it fails to take account of input that doesn't match the pattern. This oversight, in turn, can allow unconstrained input that nearly matches the regular expression pattern to significantly degrade performance.
 
-You can do the following to solve this problem:
+To solve this problem, you can do the following:
 
 - When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#take-charge-of-backtracking) section.
 
@@ -65,11 +65,11 @@ You can couple the regular expression engine with a particular regular expressio
 
 - You can call a static pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29?displayProperty=nameWithType>. This method doesn't require instantiation of a regular expression object.
 
-- You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of an interpreted regular expression. It's the default method for binding the regular expression engine to a regular expression pattern. It results when a <xref:System.Text.RegularExpressions.Regex> object is instantiated without an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.
+- You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of an interpreted regular expression, which is the default method for binding the regular expression engine to a regular expression pattern. It results when a <xref:System.Text.RegularExpressions.Regex> object is instantiated without an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.
 
 - You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of a compiled regular expression. Regular expression objects represent compiled patterns when a <xref:System.Text.RegularExpressions.Regex> object is instantiated with an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.
 
-- You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that's tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You can call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method to create this object.
+- You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that's tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You can call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method to compile and save it.
 
 The particular way in which you call regular expression matching methods can affect your application's performance. The following sections discuss when to use static method calls, interpreted regular expressions, and compiled regular expressions to improve your application's performance.
 
@@ -110,13 +110,13 @@ The regular expression `\p{Sc}+\s*\d+` that's used in this example verifies that
 
 ### Interpreted vs. compiled regular expressions
 
-Regular expression patterns that aren't bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are interpreted. When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes. When an instance method is called, the operation codes are converted to MSIL and executed by the JIT compiler. Similarly, when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache. It then converts these operation codes to MSIL so that the JIT compiler can execute them. Interpreted regular expressions reduce startup time at the cost of slower execution time. Because of this process, they're best used when the regular expression is used in a few number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be less. As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.
+Regular expression patterns that aren't bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are interpreted. When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes. When an instance method is called, the operation codes are converted to MSIL and executed by the JIT compiler. Similarly, when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache. It then converts these operation codes to MSIL so that the JIT compiler can execute them. Interpreted regular expressions reduce startup time at the cost of slower execution time. Because of this process, they're best used when the regular expression is used in a small number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be small. As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.
 
 Regular expression patterns that are bound to the regular expression engine through the specification of the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option are compiled. Therefore, when a regular expression object is instantiated, or when a static regular expression method is called and the regular expression can't be found in the cache, the regular expression engine converts the regular expression to an intermediary set of operation codes. These codes are then converted to MSIL. When a method is called, the JIT compiler executes the MSIL. In contrast to interpreted regular expressions, compiled regular expressions increase startup time but execute individual pattern-matching methods faster. As a result, the performance benefit that results from compiling the regular expression increases in proportion to the number of regular expression methods called.
 
 To summarize, we recommend that you use interpreted regular expressions when you call regular expression methods with a specific regular expression relatively infrequently. You should use compiled regular expressions when you call regular expression methods with a specific regular expression relatively frequently. It's difficult to determine the exact threshold at which the slower execution speeds of interpreted regular expressions outweigh gains from their reduced startup time, or the threshold at which the slower startup times of compiled regular expressions outweigh gains from their faster execution speeds. It depends on various factors, including the complexity of the regular expression and the specific data that it processes. To determine whether interpreted or compiled regular expressions offer the best performance for your particular application scenario, you can use the <xref:System.Diagnostics.Stopwatch> class to compare their execution times.
 
-The following example compares the performance of compiled and interpreted regular expressions when reading the first 10 sentences and when reading all the sentences in the text of Theodore Dreiser's *The Financier*. As the output from the example shows, when only 10 calls are made to regular expression matching methods, an interpreted regular expression offers better performance than a compiled regular expression. However, a compiled regular expression offers better performance when a large number of calls (in this case, over 13,000) is made.
+The following example compares the performance of compiled and interpreted regular expressions when reading the first 10 sentences and when reading all the sentences in the text of Theodore Dreiser's *The Financier*. As the output from the example shows, when only 10 calls are made to regular expression matching methods, an interpreted regular expression offers better performance than a compiled regular expression. However, a compiled regular expression offers better performance when a large number of calls (in this case, over 13,000) are made.
 
 [!code-csharp[Conceptual.RegularExpressions.BestPractices#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/compare1.cs#5)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/compare1.vb#5)]
@@ -125,26 +125,26 @@ The regular expression pattern used in the example, `\b(\w+((\r?\n)|,?\s))*\w+[.
 
 |Pattern|Description|
 |-------------|-----------------|
-|`\b`|Begins the match at a word boundary.|
+|`\b`|Begin the match at a word boundary.|
 |`\w+`|Matches one or more word characters.|
 |<code>(\r?\n)&#124;,?\s)</code>|Matches either zero or one carriage return followed by a newline character, or zero or one comma followed by a white-space character.|
-|<code>(\w+((\r?\n)&#124;,?\s))*</code>|Matches zero or more occurrences of one or more word characters. These characters are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.|
+|<code>(\w+((\r?\n)&#124;,?\s))*</code>|Matches zero or more occurrences of one or more word characters that are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.|
 |`\w+`|Matches one or more word characters.|
 |`[.?:;!]`|Matches a period, question mark, colon, semicolon, or exclamation point.|
 
 ### Regular expressions: Compiled to an assembly
 
-.NET also enables you to create an assembly that contains compiled regular expressions. This characteristic moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work. You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly's regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.
+.NET also enables you to create an assembly that contains compiled regular expressions. This capability moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work. You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly's regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.
 
-To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=nameWithType> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects. The objects represent the regular expressions to be compiled, and an <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.
+To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=nameWithType> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects and an <xref:System.Reflection.AssemblyName> object. The <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects represent the regular expressions to be compiled, and the <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.
 
 We recommend that you compile regular expressions to an assembly in the following situations:
 
 - If you're a component developer who wants to create a library of reusable regular expressions.
 
-- If you expect your regular expression's pattern-matching methods to be called an indeterminate number of times anywhere from once or twice to thousands or tens of thousands of times. Unlike compiled or interpreted regular expressions, regular expressions that are compiled to separate assemblies offer performance that's consistent regardless of the number of method calls.
+- If you expect your regular expression's pattern-matching methods to be called an indeterminate number of times&mdash;anywhere from once or twice to thousands or tens of thousands of times. Unlike compiled or interpreted regular expressions, regular expressions that are compiled to separate assemblies offer performance that's consistent regardless of the number of method calls.
 
-If you're using compiled regular expressions to optimize performance, you shouldn't use reflection to create the assembly, load the regular expression engine, and execute its pattern-matching methods. This process requires that you avoid building regular expression patterns dynamically, and that you specify any pattern-matching options, such as case-insensitive pattern matching at the time the assembly is created. It also requires that you separate the code that creates the assembly from the code that uses the regular expression.
+If you're using compiled regular expressions to optimize performance, you shouldn't use reflection to create the assembly, load the regular expression engine, and execute its pattern-matching methods. Avoiding reflection requires that you don't build regular expression patterns dynamically, and that you specify any pattern-matching options, such as case-insensitive pattern matching, at the time the assembly is created. It also requires that you separate the code that creates the assembly from the code that uses the regular expression.
 
 The following example shows how to create an assembly that contains a compiled regular expression. It creates an assembly named `RegexLib.dll` with a single regular expression class, `SentencePattern`. This class contains the sentence-matching regular expression pattern used in the [Interpreted vs. Compiled Regular Expressions](#interpreted-vs-compiled-regular-expressions) section.
 
@@ -165,14 +165,14 @@ Ordinarily, the regular expression engine uses linear progression to move throug
 
 Support for backtracking gives regular expressions power and flexibility. It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers. Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance. In a worst-case scenario, execution time can double for each additional character in the input string. In fact, by using backtracking excessively, it's easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern. The regular expression engine might take hours or even days to process a relatively short input string.
 
-Often, applications pay a performance penalty for using backtracking although backtracking isn't essential for a match. For example, the regular expression `\b\p{Lu}\w*\b` matches all words that begin with an uppercase character, as the following table shows:
+Often, applications pay a performance penalty for using backtracking even though backtracking isn't essential for a match. For example, the regular expression `\b\p{Lu}\w*\b` matches all words that begin with an uppercase character, as the following table shows:
 
 |Pattern|Description|
 |-|-|
-|`\b`|Begins the match at a word boundary.|
+|`\b`|Begin the match at a word boundary.|
 |`\p{Lu}`|Matches an uppercase character.|
 |`\w*`|Matches zero or more word characters.|
-|`\b`|Ends the match at a word boundary.|
+|`\b`|End the match at a word boundary.|
 
 Because a word boundary isn't the same as, or a subset of, a word character, there's no possibility that the regular expression engine will cross a word boundary when matching word characters. Therefore for this regular expression, backtracking can never contribute to the overall success of any match. It can only degrade performance because the regular expression engine is forced to save its state for each successful preliminary match of a word character.
 
@@ -184,7 +184,7 @@ If you determine that backtracking isn't necessary, you can disable it by using 
 In many cases, backtracking is essential for matching a regular expression pattern to input text. However, excessive backtracking can severely degrade performance and create the impression that an application has stopped responding. In particular, this problem arises when quantifiers are nested and the text that matches the outer subexpression is a subset of the text that matches the inner subexpression.
 
 > [!WARNING]
-> In addition to avoiding excessive backtracking, you must use the timeout feature to ensure that excessive backtracking doesn't severely degrade regular expression performance. For more information, see the [Use Time-out Values](#use-time-out-values) section.
+> In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking doesn't severely degrade regular expression performance. For more information, see the [Use Time-out Values](#use-time-out-values) section.
 
 For example, the regular expression pattern `^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$` is intended to match a part number that consists of at least one alphanumeric character. Any additional characters can consist of an alphanumeric character, a hyphen, an underscore, or a period, though the last character must be alphanumeric. A dollar sign terminates the part number. In some cases, this regular expression pattern can exhibit poor performance because quantifiers are nested, and because the subexpression `[0-9A-Z]` is a subset of the subexpression `[-.\w]*`.
 
@@ -192,12 +192,12 @@ In these cases, you can optimize regular expression performance by removing the 
 
 |Pattern|Description|
 |-------------|-----------------|
-|`^`|Begins the match at the beginning of the input string.|
+|`^`|Begin the match at the beginning of the input string.|
 |`[0-9A-Z]`|Matches an alphanumeric character. The part number must consist of at least this character.|
 |`[-.\w]*`|Matches zero or more occurrences of any word character, hyphen, or period.|
 |`\$`|Matches a dollar sign.|
-|`(?<=[0-9A-Z])`|Looks ahead of the ending dollar sign to ensure that the previous character is alphanumeric.|
-|`$`|Ends the match at the end of the input string.|
+|`(?<=[0-9A-Z])`|Look ahead of the ending dollar sign to ensure that the previous character is alphanumeric.|
+|`$`|End the match at the end of the input string.|
 
 The following example illustrates the use of this regular expression to match an array containing possible part numbers:
 
@@ -215,17 +215,17 @@ The regular expression language in .NET includes the following language elements
 
 ## Use time-out values
 
-If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly. In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you must always set a time-out value to minimize the effect of excessive backtracking, if it occurs.
+If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly. In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to minimize the effect of excessive backtracking, if it occurs.
 
 The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out. Depending on the regular expression pattern and the input text, the execution time might exceed the specified time-out interval, but it won't spend more time backtracking than the specified time-out interval. The default time-out interval is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>, which means that the regular expression won't time out. You can override this value and define a time-out interval as follows:
 
 - Call the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor to provide a time-out value when you instantiate a <xref:System.Text.RegularExpressions.Regex> object.
 
-- Call a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> that includes a `matchTimeout` parameter.
+- Call a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, that includes a `matchTimeout` parameter.
 
 - Call the constructor that has a parameter of type <xref:System.TimeSpan> for compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.
 
-- Set a process-wide or AppDomain-wide value with code, such as `AppDomain.CurrentDomain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromMilliseconds(100));`.
+- Set a process-wide or AppDomain-wide value with code such as `AppDomain.CurrentDomain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromMilliseconds(100));`.
 
 If you've defined a time-out interval and a match isn't found at the end of that interval, the regular expression method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there's no match, or abandon the match attempt and log the exception information for future analysis.
 
@@ -236,7 +236,7 @@ The following example defines a `GetWordData` method that instantiates a regular
 
 ## Capture only when necessary
 
-Regular expressions in .NET support many grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in .NET regular expression language are `(`*subexpression*`)`, which defines a numbered capturing group, and `(?<`*name*`>`*subexpression*`)`, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.
+Regular expressions in .NET support grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in .NET regular expression language are `(`*subexpression*`)`, which defines a numbered capturing group, and `(?<`*name*`>`*subexpression*`)`, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.
 
 However, the use of these language elements has a cost. They cause the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property to be populated with the most recent unnamed or named captures. If a single grouping construct has captured multiple substrings in the input string, they also populate the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property of a particular capturing group with multiple <xref:System.Text.RegularExpressions.Capture> objects.
 
@@ -244,7 +244,7 @@ Often, grouping constructs are used in a regular expression only so that quantif
 
 |Pattern|Description|
 |-------------|-----------------|
-|`\b`|Begins the match at a word boundary.|
+|`\b`|Begin the match at a word boundary.|
 |`\w+`|Matches one or more word characters.|
 |`[;,]?`|Matches zero or one comma or semicolon.|
 |`\s?`|Matches zero or one white-space character.|

@@ -1,7 +1,7 @@
 ---
 title: "Using threads and threading"
 description: Learn about using threads and threading in .NET, so you can write applications to perform many operations at the same time (multithreading).
-ms.date: "07/29/2022"
+ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "threading [.NET], about threading"
@@ -19,13 +19,13 @@ Applications that use multithreading are more responsive to user input because t
 
 ## How to: Create and start a new thread
 
-You create a new thread by creating a new instance of the <xref:System.Threading.Thread?displayProperty=nameWithType> class. Then you provide the name of the method that you want to execute on a new thread to the constructor. To start a created thread, call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method. For more information and examples, see the [Creating threads and passing data at start time](creating-threads-and-passing-data-at-start-time.md) article and the <xref:System.Threading.Thread> API reference.
+You create a new thread by creating a new instance of the <xref:System.Threading.Thread?displayProperty=nameWithType> class. You provide the name of the method that you want to execute on the new thread to the constructor. To start a created thread, call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method. For more information and examples, see the [Creating threads and passing data at start time](creating-threads-and-passing-data-at-start-time.md) article and the <xref:System.Threading.Thread> API reference.
 
 ## How to: Stop a thread
 
 To terminate the execution of a thread, use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. It provides a unified way to stop threads cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
 
-Sometimes it's not possible to stop a thread cooperatively because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. To terminate the execution of a thread forcibly, in .NET Framework you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md). The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method isn't supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType> method.
+Sometimes it's not possible to stop a thread cooperatively because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. To terminate the execution of a thread forcibly, in .NET Framework you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md). The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method isn't supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use the <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType> method.
 
 The <xref:System.Threading.CancellationToken?displayProperty=nameWithType> isn't available before .NET Framework 4. To stop a thread in older .NET Framework versions, use the thread synchronization techniques to implement the cooperative cancellation manually. For example, you can create the volatile boolean field `shouldStop` and use it to request the code executed by the thread to stop. For more information, see [volatile](../../csharp/language-reference/keywords/volatile.md) in C# Reference and <xref:System.Threading.Volatile?displayProperty=nameWithType>.
 

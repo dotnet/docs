@@ -1,5 +1,5 @@
 ---
-title: Logging in .NET
+title: Logging
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine

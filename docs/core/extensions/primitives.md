@@ -1,5 +1,5 @@
 ---
-title: "Primitives: the extensions library for .NET"
+title: "Use the Microsoft.Extensions.Primitives library"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
 author: IEvangelist
 ms.author: dapine

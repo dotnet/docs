@@ -1,5 +1,5 @@
 ---
-title: Implement a custom logging provider in .NET
+title: Implement a custom logging provider
 description: Learn how to implement a custom logging provider in your .NET applications.
 author: IEvangelist
 ms.author: dapine

@@ -17,6 +17,7 @@ Moving forward, when a *single* authentication scheme is registered, that scheme
 
 ```csharp
 builder.Services.AddAuthentication().AddOAuth("MyDefaultScheme");
+```
 
 This change might expose unintended behavior changes in applications, such as authentication options being validated earlier than expected.
 

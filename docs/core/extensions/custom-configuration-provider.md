@@ -1,5 +1,5 @@
 ---
-title: Implement a custom configuration provider in .NET
+title: Implement a custom configuration provider
 description: Learn how to implement a custom configuration provider in .NET applications.
 author: IEvangelist
 ms.author: dapine

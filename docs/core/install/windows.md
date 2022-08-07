@@ -169,26 +169,26 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 > [!TIP]
 > A `+` symbol represents the minimum version.
 
-| Operating System                             | .NET Core 3.1 | .NET 5 | .NET 6 |
-|----------------------------------------------|---------------|--------|--------|
-| Windows 11                                   | ✔️            | ❌    | ✔️    |
-| Windows Server 2022                          | ✔️            | ❌    | ✔️    |
-| Windows 10 Version 21H1                      | ✔️            | ❌    | ✔️    |
-| Windows 10 / Windows Server, Version 20H2    | ✔️            | ❌    | ✔️    |
-| Windows 10 / Windows Server, Version 2004    | ✔️            | ❌    | ✔️    |
-| Windows 10 / Windows Server, Version 1909    | ✔️            | ❌    | ✔️    |
-| Windows 10 / Windows Server, Version 1903    | ✔️            | ❌    | ✔️    |
-| Windows 10, Version 1809                     | ✔️            | ❌    | ✔️    |
-| Windows 10, Version 1803                     | ✔️            | ❌    | ✔️    |
-| Windows 10, Version 1709                     | ✔️            | ❌    | ✔️    |
-| Windows 10, Version 1607                     | ✔️            | ❌    | ✔️    |
-| Windows 8.1                                  | ✔️            | ❌    | ✔️    |
-| Windows 7 SP1 [ESU][esu]                     | ✔️            | ❌    | ✔️    |
-| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            | ✔️    | ✔️    |
-| Windows Server Core 2012 R2                  | ✔️            | ❌    | ✔️    |
-| Windows Server Core 2012                     | ✔️            | ❌    | ✔️    |
-| Nano Server, Version 1809+                   | ✔️            | ❌    | ✔️    |
-| Nano Server, Version 1803                    | ✔️            | ❌    | ❌    |
+| Operating System                             | .NET Core 3.1 | .NET 6 |
+|----------------------------------------------|---------------|--------|
+| Windows 11                                   | ✔️            | ✔️    |
+| Windows Server 2022                          | ✔️            | ✔️    |
+| Windows 10 Version 21H1                      | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 20H2    | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 2004    | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 1909    | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 1903    | ✔️            | ✔️    |
+| Windows 10, Version 1809                     | ✔️            | ✔️    |
+| Windows 10, Version 1803                     | ✔️            | ✔️    |
+| Windows 10, Version 1709                     | ✔️            | ✔️    |
+| Windows 10, Version 1607                     | ✔️            | ✔️    |
+| Windows 8.1                                  | ✔️            | ✔️    |
+| Windows 7 SP1 [ESU][esu]                     | ✔️            | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            | ✔️    |
+| Windows Server Core 2012 R2                  | ✔️            | ✔️    |
+| Windows Server Core 2012                     | ✔️            | ✔️    |
+| Nano Server, Version 1809+                   | ✔️            | ✔️    |
+| Nano Server, Version 1803                    | ✔️            | ❌    |
 
 For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
 

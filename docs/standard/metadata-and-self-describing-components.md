@@ -16,9 +16,10 @@ helpviewer_keywords:
   - "components [.NET], metadata"
 ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
 ---
+
 # Metadata and Self-Describing Components
 
-In the past, a software component (.exe or .dll) that was written in one language could not easily use a software component that was written in another language. COM provided a step towards solving this problem. .NET makes component interoperation even easier by allowing compilers to emit additional declarative information into all modules and assemblies. This information, called metadata, helps components to interact seamlessly.
+In the past, a software component (.exe or .dll) that was written in one language could not easily use a software component that was written in another language. COM provided a step towards solving this problem. .NET makes component interoperation even easier by allowing compilers to emit additional declarative information into all modules and assemblies. This information, called metadata, helps components to interact seamlessly. Hello.
 
  Metadata is binary information describing your program that is stored either in a common language runtime portable executable (PE) file or in memory. When you compile your code into a PE file, metadata is inserted into one portion of the file, and your code is converted to Microsoft intermediate language (MSIL) and inserted into another portion of the file. Every type and member that is defined and referenced in a module or assembly is described within metadata. When code is executed, the runtime loads metadata into memory and references it to discover information about your code's classes, members, inheritance, and so on.
 
@@ -26,23 +27,20 @@ In the past, a software component (.exe or .dll) that was written in one languag
 
 - Description of the assembly.
 
-  - Identity (name, version, culture, public key).
-
-  - The types that are exported.
-
-  - Other assemblies that this assembly depends on.
-
-  - Security permissions needed to run.
-
+   - Identity (name, version, culture, public key).
+   - The types that are exported.
+   - Other assemblies that this assembly depends on.
+   - Security permissions needed to run.
 - Description of types.
 
-  - Name, visibility, base class, and interfaces implemented.
+   - Name, visibility, base class, and interfaces implemented.
+   - Members (methods, fields, properties, events, nested types).
 
-  - Members (methods, fields, properties, events, nested types).
 
 - Attributes.
 
-  - Additional descriptive elements that modify types and members.
+   - Additional descriptive elements that modify types and members.
+
 
 ## Benefits of Metadata
 
@@ -50,15 +48,14 @@ Metadata is the key to a simpler programming model, and eliminates the need for 
 
 - Self-describing files.
 
-  Common language runtime modules and assemblies are self-describing. A module's metadata contains everything needed to interact with another module. Metadata automatically provides the functionality of IDL in COM, so you can use one file for both definition and implementation. Runtime modules and assemblies do not even require registration with the operating system. As a result, the descriptions used by the runtime always reflect the actual code in your compiled file, which increases application reliability.
-
+   Common language runtime modules and assemblies are self-describing. A module's metadata contains everything needed to interact with another module. Metadata automatically provides the functionality of IDL in COM, so you can use one file for both definition and implementation. Runtime modules and assemblies do not even require registration with the operating system. As a result, the descriptions used by the runtime always reflect the actual code in your compiled file, which increases application reliability.
 - Language interoperability and easier component-based design.
 
-  Metadata provides all the information required about compiled code for you to inherit a class from a PE file written in a different language. You can create an instance of any class written in any managed language (any language that targets the common language runtime) without worrying about explicit marshalling or using custom interoperability code.
+   Metadata provides all the information required about compiled code for you to inherit a class from a PE file written in a different language. You can create an instance of any class written in any managed language (any language that targets the common language runtime) without worrying about explicit marshalling or using custom interoperability code.
 
 - Attributes.
 
-  .NET lets you declare specific kinds of metadata, called attributes, in your compiled file. Attributes can be found throughout .NET and are used to control in more detail how your program behaves at run time. Additionally, you can emit your own custom metadata into .NET files through user-defined custom attributes. For more information, see [Attributes](attributes/index.md).
+   .NET lets you declare specific kinds of metadata, called attributes, in your compiled file. Attributes can be found throughout .NET and are used to control in more detail how your program behaves at run time. Additionally, you can emit your own custom metadata into .NET files through user-defined custom attributes. For more information, see [Attributes](attributes/index.md).
 
 ## Metadata and the PE File Structure
 
@@ -168,3 +165,5 @@ Using metadata, the runtime has access to all the information it needs to load y
 |Title|Description|
 |-----------|-----------------|
 |[Attributes](attributes/index.md)|Describes how to apply attributes, write custom attributes, and retrieve information that is stored in attributes.|
+
+

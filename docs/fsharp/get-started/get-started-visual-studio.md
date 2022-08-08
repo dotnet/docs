@@ -46,7 +46,7 @@ It is in the entry point function, `main`, that you call the `square` function w
 
 ## Run the code
 
-You can run the code and see the results by pressing **Ctrl**+**F5**. Alternatively, you can choose the **Debug** > **Start Without Debugging** from the top-level menu bar. This runs the program without debugging.
+You can run the code and see the results by pressing <kbd>Ctrl</kbd>+<kbd>F5</kbd>. Alternatively, you can choose the **Debug** > **Start Without Debugging** from the top-level menu bar. This runs the program without debugging.
 
 The following output prints to the console window that Visual Studio opened:
 

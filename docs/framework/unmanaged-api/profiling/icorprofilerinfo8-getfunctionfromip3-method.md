@@ -27,13 +27,13 @@ HRESULT GetFunctionFromIP3([in] LPCBYTE ip,
 
 ## Parameters
 
-`ip`
+`ip`\
 [in] The instruction pointer in managed code.
 
-`pFunctionId`
+`pFunctionId`\
 [out] The function ID.
 
-`pReJitId`
+`pReJitId`\
 [out] The identity of the JIT-recompiled version of the function.
 
 ## Remarks

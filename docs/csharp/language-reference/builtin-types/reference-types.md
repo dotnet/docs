@@ -10,6 +10,7 @@ f1_keywords:
   - "dynamic_CSharpKeyword"
   - "string"
   - "string_CSharpKeyword"
+  - "RawStringLiteral_CSharpKeyword"
 helpviewer_keywords: 
   - "object keyword [C#]"
   - "delegate keyword [C#]"

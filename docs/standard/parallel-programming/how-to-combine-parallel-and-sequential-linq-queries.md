@@ -25,7 +25,7 @@ This example shows how to use the <xref:System.Linq.ParallelEnumerable.AsSequent
   
 ## Compiling the Code  
 
- To compile and run this code, paste it into the [PLINQ Data Sample](plinq-data-sample.md) project, add a line to call the method from `Main`, and press **F5**.  
+ To compile and run this code, paste it into the [PLINQ Data Sample](plinq-data-sample.md) project, add a line to call the method from `Main`, and press <kbd>F5</kbd>.  
   
 ## See also
 

@@ -28,4 +28,4 @@ The server attaches a <xref:System.Runtime.Serialization.SerializationBinder> to
 
 3. Select **Server** first, then **Client20** and then **Client40**. Select the **Start** action to these three projects and leave the rest set to **None**.
 
-4. Click **OK** and then press **F5** to run the sample.
+4. Click **OK** and then press <kbd>F5</kbd> to run the sample.

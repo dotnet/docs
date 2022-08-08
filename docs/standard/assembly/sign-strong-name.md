@@ -103,5 +103,6 @@ csc /t:library UtilityLibrary.cs /keyfile:sgKey.snk
 - [How to: Create a public-private key pair](create-public-private-key-pair.md)
 - [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md)
 - [Delay-sign an assembly](delay-sign.md)
+- [Strong-name APIs throw PlatformNotSupportedException](../../core/compatibility/core-libraries/6.0/strong-name-signing-exceptions.md)
 - [Manage assembly and manifest signing](/visualstudio/ide/managing-assembly-and-manifest-signing)
 - [Signing page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)

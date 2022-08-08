@@ -182,6 +182,7 @@ The table below has the relevant runtime library API details for single file use
 | `AssemblyName.CodeBase`        | Returns `null`.                                                        |
 | `AssemblyName.EscapedCodeBase` | Returns `null`.                                                        |
 | `Module.FullyQualifiedName`    | Returns a string with the value of `<Unknown>` or throws an exception. |
+| `Marshal.GetHINSTANCE`         | Returns -1.                                                            |
 | `Module.Name`                  | Returns a string with the value of `<Unknown>`.                        |
 
 We have some recommendations for fixing common scenarios:

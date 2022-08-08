@@ -15,6 +15,7 @@ The following features are available in Visual Studio 2022 version 17.3:
 - [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
+- [Required members](#required-members)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
@@ -91,14 +92,14 @@ These types aren't directly represented in metadata. They include annotations th
 
 There are several language features that enable generic math support:
 
-- static virtual members in interfaces
+- `static virtual` members in interfaces
 - checked user defined operators
-- relaxed right-shift requirements
-- unsigned right shift operator
+- relaxed shift operators
+- unsigned right-shift operator
 
-You can add *static abstract members* in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values. You can learn about the new syntax in the article on [interfaces](../language-reference/keywords/interface.md#static-abstract-and-virtual-members). Interfaces that include `static virtual` methods are typically [generic interface](../programming-guide/generics/generic-interfaces.md). Furthermore, most will declare a constraint that the type parameter [implements the declared interface](../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface).
+You can add `static abstract` or `static virtual` members in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` interface in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values. You can learn about the new syntax in the article on [interfaces](../language-reference/keywords/interface.md#static-abstract-and-virtual-members). Interfaces that include `static virtual` methods are typically [generic interfaces](../programming-guide/generics/generic-interfaces.md). Furthermore, most will declare a constraint that the type parameter [implements the declared interface](../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface).
 
-You can learn more and try the feature yourself in the tutorial [Explore static abstract interface members](./tutorials/static-abstract-interface-methods.md), or the [Preview features in .NET 6 – generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
+You can learn more and try the feature yourself in the tutorial [Explore static abstract interface members](./tutorials/static-virtual-interface-members.md), or the [Preview features in .NET 6 – generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
 
 Generic math created other requirements on the language.
 
@@ -168,3 +169,9 @@ You've been able to test if a `string` had a specific constant value using patte
 ## Extended nameof scope
 
 Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
+
+## Required members
+
+You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
+
+See [init-only](../properties.md#init-only) for more information.

@@ -1,9 +1,9 @@
 ---
-title: Worker Services in .NET
+title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/30/2022
+ms.date: 07/20/2022
 ms.topic: overview
 ---
 
@@ -94,9 +94,9 @@ For more information, see [.NET project SDKs](../project-sdk/overview.md).
 
 An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
 
-### Containers and cloud adoptability
+### Containers and cloud adaptability
 
-With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
+With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
 :::code language="dockerfile" source="snippets/workers/background-service/Dockerfile":::
 
@@ -140,6 +140,23 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 > [!IMPORTANT]
 > The interface serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
+
+## Signal completion
+
+In most common scenarios, you do not need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To achieve this, consider the following `Worker` class:
+
+:::code source="snippets/workers/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+
+In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
+
+> [!IMPORTANT]
+> This will signal to the host that it should stop, and without this call to `StopApplication` the host will continue to run indefinitely.
+
+For more information, see:
+
+- [.NET Generic Host: IHostApplicationLifetime](generic-host.md#ihostapplicationlifetime)
+- [.NET Generic Host: Host shutdown](generic-host.md#host-shutdown)
+- [.NET Generic Host: Hosting shutdown process](generic-host.md#hosting-shutdown-process)
 
 ## See also
 

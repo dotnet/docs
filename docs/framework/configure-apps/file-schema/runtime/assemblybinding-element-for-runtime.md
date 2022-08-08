@@ -35,7 +35,7 @@ Contains information about assembly version redirection and the locations of ass
 |Attribute|Description|  
 |---------------|-----------------|  
 |**xmlns**|Required attribute.<br /><br /> Specifies the XML namespace required for assembly binding. Use the string "urn:schemas-microsoft-com:asm.v1" as the value.|  
-|**appliesTo**|Specifies the runtime version the .NET Framework assembly redirection applies to. This optional attribute uses a .NET Framework version number to indicate what version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework. The **appliesTo** attribute was introduced in .NET Framework version 1.1; it is ignored by the .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using the .NET Framework version 1.0, even if an **appliesTo** attribute is specified.|  
+|**appliesTo**|Specifies the runtime version the .NET Framework assembly redirection applies to. This optional attribute uses a .NET Framework version number to indicate what version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework. The **appliesTo** attribute was introduced in .NET Framework version 1.1; it is ignored by .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using .NET Framework version 1.0, even if an **appliesTo** attribute is specified.|  
   
 ### Child Elements  
   

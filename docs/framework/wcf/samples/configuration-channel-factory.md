@@ -39,4 +39,4 @@ ICalculatorChannel client1 = factory1.CreateChannel();
 
 4. Move the **Service** project to the beginning of the list, with the **Action 'Start'**, and then move the **Client** project after the **Service** project, also with the **Action 'Start'**, so the **Client** project is executed after the **Service** project.
 
-5. Click **OK**, and then press **F5** (or **Ctrl**+**F5**) to run the sample.
+5. Click **OK**, and then press <kbd>F5</kbd> (or <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the sample.

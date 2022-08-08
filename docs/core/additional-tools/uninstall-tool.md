@@ -2,7 +2,7 @@
 title: Uninstall Tool
 description: An overview of the .NET Uninstall Tool, a guided tool that enables the controlled clean-up of .NET SDKs and runtimes.
 author: sfoslund
-ms.date: 08/08/2022
+ms.date: 07/29/2022
 ms.custom: devdivchpfy22
 ---
 # .NET uninstall tool

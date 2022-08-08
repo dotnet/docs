@@ -147,6 +147,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`partial` (method)](partial-method.md)  
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
+        [`required`](required.md)  
         [`select`](select-clause.md)  
     :::column-end:::
     :::column:::

@@ -228,7 +228,7 @@ It is possible to run several trace sessions against the same running applicatio
 
 `dotnet-dsrouter` is tied to one running application at any time. If there are needs to trace several different applications at the same time, each application needs to use its own `dotnet-dsrouter` instance, by setting up a unique IPC, TCP/IP address pair in `dotnet-dsrouter` and configure different application instances to connect back to its unique `dotnet-dsrouter` instance.
 
-If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server, emulator or device gets restarted, all `dotnet-dsrouter` instances needs to be restarted as well to restore port forwarding rules.
+If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server, emulator or device gets restarted, all `dotnet-dsrouter` instances need to be restarted as well to restore port forwarding rules.
 
 When done using `dotnet-dsrouter`, press <kbd>Q</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd> to quit application.
 

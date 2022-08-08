@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 These runtime events capture information about monitor lock contentions such as with `Monitor.Enter` or the C# lock keyword. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
-## ContentionStart_V1 event
+## ContentionStart_V2 event
 
 This event is emitted at the start of a monitor lock contention.
 
@@ -24,12 +24,14 @@ This event is emitted at the start of a monitor lock contention.
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`ContentionStart_V1`|81|A monitor lock contention starts.|
+|`ContentionStart_V2`|81|A monitor lock contention starts.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |`Flags`|`win:UInt8`|`0` for managed; `1` for native.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+|`LockObjectID`|`win:Pointer`|Address of the lock object.|
+|`LockOwnerThreadID`|`win:Pointer`|Address of the thread that owns the lock.|
 
 ## ContentionStop_V1 event
 

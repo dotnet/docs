@@ -1,7 +1,7 @@
 ---
 title: dotnet dev-certs command
 description: The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
-ms.date: 06/28/2022
+ms.date: 07/14/2022
 ---
 # dotnet dev-certs
 
@@ -79,7 +79,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   successfully removed from the machine.
   ```
 
-  <a name=exportpath></a>
+  <a name="exportpath"></a>
 
 - **`-ep|--export-path <PATH>`**
 
@@ -97,7 +97,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
   When used with `--export-path`, specifies the format of the exported certificate file. Valid values are `PFX` and `PEM`, case-insensitive. `PFX` is the default.
 
-  The file format is independent of the file name extension. For example, if you specify `--format pfx` and `--export-path ./cert.pem` you will get a file named *cert.pem* in `PFX` format.
+  The file format is independent of the file name extension. For example, if you specify `--format pfx` and `--export-path ./cert.pem`, you'll get a file named *cert.pem* in `PFX` format.
 
   For information about the effect of this option when used with `--password`, `--no-password`, or without either of those options, see [--export-path](#exportpath) earlier in this article.
 
@@ -162,7 +162,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
   dotnet dev-certs https --clean --import ./certificate.pfx -p $CREDENTIAL_PLACEHOLDER$
   ```
 
-  In the precedingexample, `$CREDENTIAL_PLACEHOLDER$` represents a password.
+  In the preceding example, `$CREDENTIAL_PLACEHOLDER$` represents a password.
 
 - Check if a trusted development certificate is present on the local machine.
 
@@ -190,7 +190,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 ## See also
 
-* [Generate self-signed certificates with the .NET CLI](/dotnet/core/additional-tools/self-signed-certificates-guide)
+* [Generate self-signed certificates with the .NET CLI](../additional-tools/self-signed-certificates-guide.md)
 * [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl)
 * [Troubleshoot certificate problems such as certificate not trusted](/aspnet/core/security/enforcing-ssl#troubleshoot-certificate-problems-such-as-certificate-not-trusted)
 * [Hosting ASP.NET Core images with Docker over HTTPS](/aspnet/core/security/docker-https)

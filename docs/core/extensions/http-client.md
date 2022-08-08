@@ -1,5 +1,5 @@
 ---
-title: IHttpClientFactory with .NET
+title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
@@ -117,9 +117,6 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 
 1. Create an instance of `HttpClient`.
 1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
-
-> [!TIP]
-> A call to `AddHttpClient<TClient>` doesn't add the `TClient` service to the `IServiceCollection`. You still need to explicitly add it with `Add{ServiceLifetime}`.
 
 ### Generated clients
 

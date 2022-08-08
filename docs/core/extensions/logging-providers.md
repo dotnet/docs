@@ -1,5 +1,5 @@
 ---
-title: Logging providers in .NET
+title: Logging providers
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine

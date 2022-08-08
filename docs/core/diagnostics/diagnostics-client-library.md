@@ -48,7 +48,7 @@ This sample shows how to use `DiagnosticsClient.GetPublishedProcesses` API to pr
 
 ## Parse events in real time
 
-This sample shows an example where we create two tasks, one that parses the events coming in live with `EventPipeEventSource` and one that reads the console input for a user input signaling the program to end. If the target app exists before the users presses enter, the app exists gracefully. Otherwise, `inputTask` will send the Stop command to the pipe and exit gracefully.
+This sample shows an example where we create two tasks, one that parses the events coming in live with `EventPipeEventSource` and one that reads the console input for a user input signaling the program to end. If the target app exits before the user presses enter, the app exits gracefully. Otherwise, `inputTask` will send the Stop command to the pipe and exit gracefully.
 
 :::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintEventsLive.cs":::
 

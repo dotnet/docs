@@ -225,8 +225,22 @@ items:
         href: ../core/tools/sdk-errors/netsdk1079.md
       - name: NETSDK1080
         href: ../core/tools/sdk-errors/netsdk1080.md
+      - name: NETSDK1082
+        href: ../core/tools/sdk-errors/netsdk1082.md
+      - name: NETSDK1100
+        href: ../core/tools/sdk-errors/netsdk1100.md
+      - name: NETSDK1112
+        href: ../core/tools/sdk-errors/netsdk1112.md
       - name: NETSDK1130
         href: ../core/tools/sdk-errors/netsdk1130.md
+      - name: NETSDK1135
+        href: ../core/tools/sdk-errors/netsdk1135.md
+      - name: NETSDK1136
+        href: ../core/tools/sdk-errors/netsdk1136.md
+      - name: NETSDK1137
+        href: ../core/tools/sdk-errors/netsdk1137.md
+      - name: NETSDK1138
+        href: ../core/tools/sdk-errors/netsdk1138.md
       - name: NETSDK1141
         href: ../core/tools/sdk-errors/netsdk1141.md
       - name: NETSDK1145
@@ -237,6 +251,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1149.md
       - name: NETSDK1174
         href: ../core/tools/sdk-errors/netsdk1174.md
+      - name: NETSDK1182
+        href: ../core/tools/sdk-errors/netsdk1182.md
   - name: .NET CLI
     items:
     - name: Overview
@@ -377,8 +393,6 @@ items:
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion
       href: ../core/tools/enable-tab-autocomplete.md
-    - name: Continuous integration with the CLI
-      href: ../core/tools/using-ci-with-cli.md
     - name: Develop libraries with the CLI
       href: ../core/tutorials/libraries.md
     - name: Create templates for the CLI
@@ -1985,6 +1999,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: .NET CLI and Continuous Integration
+    href: ../devops/dotnet-cli-and-continuous-integration.md
   - name: Official .NET GitHub Actions
     href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials
@@ -2038,6 +2054,8 @@ items:
       href: ../standard/generics/collections.md
     - name: Generic delegates for manipulating arrays and lists
       href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
+    - name: Generic math
+      href: ../standard/generics/math.md
     - name: Generic interfaces
       href: ../standard/generics/interfaces.md
     - name: Covariance and contravariance
@@ -2601,6 +2619,8 @@ items:
       href: ../core/extensions/cloud-service.md
   - name: Caching
     href: ../core/extensions/caching.md
+  - name: Channels
+    href: ../core/extensions/channels.md
 - name: Data access
   items:
   - name: LINQ
@@ -2864,21 +2884,29 @@ items:
       href: ../standard/native-interop/index.md
       displayName: Native interop
     - name: P/Invoke
-      href: ../standard/native-interop/pinvoke.md
+      items:
+      - name: Overview
+        href: ../standard/native-interop/pinvoke.md
+        displayName: P/Invoke
+      - name: Cross-platform P/Invoke
+        href: ../standard/native-interop/cross-platform.md
+      - name: Source generation
+        href: ../standard/native-interop/pinvoke-source-generation.md
     - name: Type marshalling
-      href: ../standard/native-interop/type-marshalling.md
-    - name: Customize structure marshalling
-      href: ../standard/native-interop/customize-struct-marshalling.md
-    - name: Customize parameter marshalling
-      href: ../standard/native-interop/customize-parameter-marshalling.md
-    - name: Cross-platform P/Invoke
-      href: ../standard/native-interop/cross-platform.md
+      items:
+      - name: Overview
+        href: ../standard/native-interop/type-marshalling.md
+        displayName: Type marshalling
+      - name: Charsets and marshalling
+        href: ../standard/native-interop/charset.md
+      - name: Disabled marshalling
+        href: ../standard/native-interop/disabled-marshalling.md
+      - name: Customize structure marshalling
+        href: ../standard/native-interop/customize-struct-marshalling.md
+      - name: Customize parameter marshalling
+        href: ../standard/native-interop/customize-parameter-marshalling.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
-    - name: Charsets and marshalling
-      href: ../standard/native-interop/charset.md
-    - name: Disabled marshalling
-      href: ../standard/native-interop/disabled-marshalling.md
     - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md
     - name: Host .NET from native code
@@ -3034,8 +3062,8 @@ items:
         href: ../core/porting/upgrade-assistant-wpf-framework.md
       - name: Windows Forms
         href: ../core/porting/upgrade-assistant-winforms-framework.md
-      - name: Universal Windows Platform 
-        href:  ../core/porting/upgrade-assistant-uwp-framework.md       
+      - name: Universal Windows Platform
+        href:  ../core/porting/upgrade-assistant-uwp-framework.md
       - name: ASP.NET Core
         href: ../core/porting/upgrade-assistant-aspnetmvc.md
       - name: Telemetry

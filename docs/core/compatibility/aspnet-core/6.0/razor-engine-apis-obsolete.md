@@ -34,7 +34,7 @@ Don't use `RazorEngine` APIs in your code.
 - `Microsoft.AspNetCore.Mvc.Razor.Extensions.InjectDirective.Register`
 - `Microsoft.AspNetCore.Mvc.Razor.Extensions.ModelDirective.Register`
 - `Microsoft.AspNetCore.Mvc.Razor.Extensions.PageDirective.Register`
-- [Microsoft.AspNetCore.Razor.Language.Extensions.FunctionsDirective.Register](/dotnet/api/microsoft.aspnetcore.razor.language.extensions.functionsdirective.register?view=aspnetcore-3.0&preserve-view=true)
-- [Microsoft.AspNetCore.Razor.Language.Extensions.InheritsDirective.Register](/dotnet/api/microsoft.aspnetcore.razor.language.extensions.inheritsdirective.register?view=aspnetcore-3.0&preserve-view=true)
-- [Microsoft.AspNetCore.Razor.Language.Extensions.SectionDirective.Register](/dotnet/api/microsoft.aspnetcore.razor.language.extensions.sectiondirective.register?view=aspnetcore-3.0&preserve-view=true)
-- [Microsoft.AspNetCore.Razor.Language.IRazorEngineBuilder](/dotnet/api/microsoft.aspnetcore.razor.language.irazorenginebuilder?view=aspnetcore-3.0&preserve-view=true)
+- `Microsoft.AspNetCore.Razor.Language.Extensions.FunctionsDirective.Register`
+- `Microsoft.AspNetCore.Razor.Language.Extensions.InheritsDirective.Register`
+- `Microsoft.AspNetCore.Razor.Language.Extensions.SectionDirective.Register`
+- `Microsoft.AspNetCore.Razor.Language.IRazorEngineBuilder`

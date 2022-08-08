@@ -71,6 +71,6 @@ The **HighEntropyVA** compiler option tells the Windows kernel whether a particu
 <HighEntropyVA>true</HighEntropyVA>
 ```
 
-This option specifies that a 64-bit executable or an executable that is marked by the [**PlatformTarget**](output.md#platformtarget) compiler option supports a high entropy virtual address space. The option is disabled by default. Use **HighEntropyVA** to enable it.
+This option specifies that a 64-bit executable or an executable that is marked by the [**PlatformTarget**](output.md#platformtarget) compiler option supports a high entropy virtual address space. The option is enabled by default for all .NET Standard and .NET Core versions, and .NET Framework versions starting with .NET Framework 4.5.
 
 The **HighEntropyVA** option enables compatible versions of the Windows kernel to use higher degrees of entropy when randomizing the address space layout of a process as part of ASLR. Using higher degrees of entropy means a larger number of addresses can be allocated to memory regions such as stacks and heaps. As a result, it's more difficult to guess the location of a particular memory region. The **HighEntropyVA** compiler option requires the target executable and any modules that it depends on can handle pointer values larger than 4 gigabytes (GB) when they're running as a 64-bit process.

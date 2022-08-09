@@ -49,6 +49,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: BinaryFormatter serialization APIs produce compiler errors
+          href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
@@ -775,6 +777,8 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: BinaryFormatter serialization APIs produce compiler errors
+          href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext

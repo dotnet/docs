@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
     // <patch>
-    internal static async Task PatchAsync(HttpClient client)
+    static async Task PatchAsync(HttpClient client)
     {
         using StringContent jsonContent = new(
             JsonSerializer.Serialize(new
@@ -18,8 +18,8 @@
         response.EnsureSuccessStatusCode();
         response.WriteToConsole();
         
-        var jsonResponse = await response.Content.ReadAsStringAsync();        
-        Console.WriteLine($"🏁 {jsonResponse}\n");
+        var jsonResponse = await response.Content.ReadAsStringAsync();
+        WriteLine($"{jsonResponse}\n");
     }
     // </patch>
 }

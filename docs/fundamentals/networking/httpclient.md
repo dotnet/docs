@@ -10,6 +10,9 @@ ms.date: 08/09/2022
 
 The <xref:System.Net.Http.HttpClient> is a class for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
 
+> [!NOTE]
+> All of the example HTTP requests either rely on <https://jsonplaceholder.typicode.com> or <https://www.example.com>.
+
 ## HTTP Get
 
 :::code language="csharp" source="snippets/httpclient/Program.Get.cs" id="get":::
@@ -57,4 +60,4 @@ Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data. As a
 - [Guidelines for using HttpClient](httpclient-guidelines.md)
 - [IHttpClientFactory with .NET](../../core/extensions/http-client-factory.md)
 - [Use HTTP/3 with HttpClient](../../core/extensions/httpclient-http3.md)
-- [Test web APIs with the HttpRepl](aspnet/core/web-api/http-repl)
+- [Test web APIs with the HttpRepl](/aspnet/core/web-api/http-repl)

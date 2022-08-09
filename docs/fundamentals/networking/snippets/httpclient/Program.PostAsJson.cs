@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
     // <postasjson>
-    internal static async Task PostAsJsonAsync(HttpClient client)
+    static async Task PostAsJsonAsync(HttpClient client)
     {
         using HttpResponseMessage response = await client.PostAsJsonAsync(
             "todos", 
@@ -11,7 +11,7 @@
         response.WriteToConsole();
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
-        Console.WriteLine($"🏁 {todo}\n");
+        WriteLine($"{todo}\n");
     }
     // </postasjson>
 }

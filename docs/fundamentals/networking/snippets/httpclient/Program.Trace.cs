@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
     // <trace>
-    internal static async Task TraceAsync(HttpClient client)
+    static async Task TraceAsync(HttpClient client)
     {
         using HttpRequestMessage request = new(
             HttpMethod.Trace, 
@@ -13,7 +13,7 @@
         response.EnsureSuccessStatusCode();
         response.WriteToConsole();
 
-        Console.WriteLine("🏁 \n");
+        WriteLine("{}\n");
     }
     // </trace>
 }

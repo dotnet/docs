@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
     // <head>
-    internal static async Task HeadAsync(HttpClient client)
+    static async Task HeadAsync(HttpClient client)
     {
         using HttpRequestMessage request = new(
             HttpMethod.Head, 
@@ -12,7 +12,7 @@
         response.EnsureSuccessStatusCode();
         response.WriteToConsole();
 
-        Console.WriteLine("🏁 {}\n");
+        WriteLine("{}\n");
     }
     // </head>
 }

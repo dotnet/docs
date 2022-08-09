@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
-    // <put>
-    internal static async Task PutAsJsonAsync(HttpClient client)
+    // <putasjson>
+    static async Task PutAsJsonAsync(HttpClient client)
     {
         using HttpResponseMessage response = await client.PutAsJsonAsync(
             "todos/5",
@@ -11,7 +11,7 @@
         response.WriteToConsole();
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
-        Console.WriteLine($"🏁 {todo}\n");
+        WriteLine($"{todo}\n");
     }
-    // </put>
+    // </putasjson>
 }

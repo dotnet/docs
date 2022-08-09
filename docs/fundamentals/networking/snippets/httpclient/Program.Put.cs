@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
     // <put>
-    internal static async Task PutAsync(HttpClient client)
+    static async Task PutAsync(HttpClient client)
     {
         using StringContent jsonContent = new(
             JsonSerializer.Serialize(new 
@@ -22,7 +22,7 @@
         response.WriteToConsole();
         
         var jsonResponse = await response.Content.ReadAsStringAsync();
-        Console.WriteLine($"🏁 {jsonResponse}\n");
+        WriteLine($"{jsonResponse}\n");
     }
     // </put>
 }

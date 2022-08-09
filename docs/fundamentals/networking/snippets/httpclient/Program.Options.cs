@@ -1,7 +1,7 @@
-﻿internal static partial class Program
+﻿static partial class Program
 {
     // <options>
-    internal static async Task OptionsAsync(HttpClient client)
+    static async Task OptionsAsync(HttpClient client)
     {
         using HttpRequestMessage request = new(
             HttpMethod.Options, 
@@ -14,8 +14,8 @@
         
         if (response.Content.Headers.Allow is { Count: > 0 } allowHeaders)
         {
-            Console.WriteLine(
-                $"🏁 Allow: {string.Join(", ", allowHeaders)}\n");
+            WriteLine(
+                $"Allow: {string.Join(", ", allowHeaders)}\n");
         }
     }
     // </options>

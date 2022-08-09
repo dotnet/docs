@@ -1,4 +1,4 @@
-﻿Console.OutputEncoding = Encoding.UTF8;
+﻿OutputEncoding = Encoding.UTF8;
 
 // <todoclient>
 using HttpClient todoClient = new()

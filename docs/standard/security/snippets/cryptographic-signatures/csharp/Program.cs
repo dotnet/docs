@@ -1,16 +1,15 @@
-﻿// <generate>
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
-byte[] hash;
+using SHA256 alg = SHA256.Create();
 
-SHA256 alg = SHA256.Create();
 byte[] data = Encoding.ASCII.GetBytes("Hello, from the .NET Docs!");
-hash = alg.ComputeHash(data);
+byte[] hash = alg.ComputeHash(data);
 
 RSAParameters sharedParameters;
 byte[] signedHash;
 
+// Generate signature
 using (RSA rsa = RSA.Create())
 {
     sharedParameters = rsa.ExportParameters(false);
@@ -20,9 +19,8 @@ using (RSA rsa = RSA.Create())
 
     signedHash = rsaFormatter.CreateSignature(hash);
 }
-// </generate>
 
-// <verify>
+// Verify signature
 using (RSA rsa = RSA.Create())
 {
     rsa.ImportParameters(sharedParameters);
@@ -39,4 +37,3 @@ using (RSA rsa = RSA.Create())
         Console.WriteLine("The signature is not valid.");
     }
 }
-// </verify>

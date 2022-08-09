@@ -2539,11 +2539,13 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: HTTP clients in .NET
+    - name: HTTP clients guidelines
       displayName: networking, httpclient
       href: networking/httpclient-guidelines.md
+    - name: HttpClient
+      href: networking/httpclient.md
     - name: IHttpClientFactory
-      href: ../core/extensions/http-client.md
+      href: ../core/extensions/http-client-factory.md
     - name: HTTP/3 with .NET
       href: ../core/extensions/httpclient-http3.md
   - name: File globbing in .NET

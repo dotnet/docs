@@ -8,15 +8,11 @@ ms.date: 07/12/2022
 
 # Enterprise Application Patterns Using .NET MAUI
 
-:::image type="content" source="media/enterprise-app-patterns-ebook.png" alt-text="Enterprise Application Patterns Using .NET MAUI":::
+![cover image Enterprise Application Patterns Using .NET MAUI](./media/enterprise-app-patterns-ebook.png)
 
-//TODO: Add Book Link
-> DOWNLOAD available at: <https://aka.ms/maui-ebook>
+DOWNLOAD available at: <https://aka.ms/maui-ebook>
 
-**EDITION v2.0** - Updated to .NET MAUI
-
-//TODO: Get aka.ms link for changelog
-Refer to [changelog](https://aka.ms/maui-ebook-changelog) for the book updates and community contributions.
+**EDITION v1.0** - Updated to .NET MAUI
 
 PUBLISHED BY
 
@@ -44,7 +40,7 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **[Michael Stonis](https://github.com/michaelstonis)**, Mobile Software Architect, [Eight-Bot](ttps://eightbot.com)
+> **[Michael Stonis](https://github.com/michaelstonis)**, Mobile Software Architect, [Eight-Bot](https://eightbot.com)
 
 Reviewers:
 

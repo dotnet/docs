@@ -52,6 +52,26 @@ items:
         href: migration-guide/application-compatibility.md
       - name: Runtime changes
         items:
+        - name: 4.0 to 4.5
+          href: migration-guide/runtime/4.0-4.5.md
+        - name: 4.0 to 4.5.1
+          href: migration-guide/runtime/4.0-4.5.1.md
+        - name: 4.0 to 4.5.2
+          href: migration-guide/runtime/4.0-4.5.2.md
+        - name: 4.0 to 4.6
+          href: migration-guide/runtime/4.0-4.6.md
+        - name: 4.0 to 4.6.1
+          href: migration-guide/runtime/4.0-4.6.1.md
+        - name: 4.0 to 4.6.2
+          href: migration-guide/runtime/4.0-4.6.2.md
+        - name: 4.0 to 4.7
+          href: migration-guide/runtime/4.0-4.7.md
+        - name: 4.0 to 4.7.1
+          href: migration-guide/runtime/4.0-4.7.1.md
+        - name: 4.0 to 4.7.2
+          href: migration-guide/runtime/4.0-4.7.2.md
+        - name: 4.0 to 4.8
+          href: migration-guide/runtime/4.0-4.8.md
         - name: 4.5 to 4.5.1
           href: migration-guide/runtime/4.5-4.5.1.md
         - name: 4.5 to 4.5.2
@@ -142,10 +162,28 @@ items:
           href: migration-guide/runtime/4.7.1-4.8.md
         - name: 4.7.2 to 4.8
           href: migration-guide/runtime/4.7.2-4.8.md
-        - name: 4.8 to 4.8.1
-          href: migration-guide/runtime/4.8-4.8.1.md
       - name: Retargeting changes
         items:
+        - name: 4.0 to 4.5
+          href: migration-guide/retargeting/4.0-4.5.md
+        - name: 4.0 to 4.5.1
+          href: migration-guide/retargeting/4.0-4.5.1.md
+        - name: 4.0 to 4.5.2
+          href: migration-guide/retargeting/4.0-4.5.2.md
+        - name: 4.0 to 4.6
+          href: migration-guide/retargeting/4.0-4.6.md
+        - name: 4.0 to 4.6.1
+          href: migration-guide/retargeting/4.0-4.6.1.md
+        - name: 4.0 to 4.6.2
+          href: migration-guide/retargeting/4.0-4.6.2.md
+        - name: 4.0 to 4.7
+          href: migration-guide/retargeting/4.0-4.7.md
+        - name: 4.0 to 4.7.1
+          href: migration-guide/retargeting/4.0-4.7.1.md
+        - name: 4.0 to 4.7.2
+          href: migration-guide/retargeting/4.0-4.7.2.md
+        - name: 4.0 to 4.8
+          href: migration-guide/retargeting/4.0-4.8.md
         - name: 4.5 to 4.5.1
           href: migration-guide/retargeting/4.5-4.5.1.md
         - name: 4.5 to 4.5.2
@@ -236,8 +274,6 @@ items:
           href: migration-guide/retargeting/4.7.1-4.8.md
         - name: 4.7.2 to 4.8
           href: migration-guide/retargeting/4.7.2-4.8.md
-        - name: 4.8 to 4.8.1
-          href: migration-guide/retargeting/4.8-4.8.1.md
     - name: Behavior mitigations
       items:
       - name: Overview

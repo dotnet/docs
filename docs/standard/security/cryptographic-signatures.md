@@ -28,7 +28,7 @@ Cryptographic digital signatures use public key algorithms to provide data integ
 
 This topic explains how to generate and verify digital signatures using classes in the <xref:System.Security.Cryptography> namespace.
 
-## Generating Signatures
+## Generate a signature
 
 Digital signatures are usually applied to hash values that represent larger data. The following example applies a digital signature to a hash value. First, a new instance of the <xref:System.Security.Cryptography.RSA> class is created to generate a public/private key pair. Next, the <xref:System.Security.Cryptography.RSA> is passed to a new instance of the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> class. This transfers the private key to the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter>, which actually performs the digital signing. Before you can sign the hash code, you must specify a hash algorithm to use. This example uses the `SHA256` algorithm. Finally, the <xref:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature%2A> method is called to perform the signing.
 
@@ -88,7 +88,7 @@ using (RSA rsa = RSA.Create())
 // The sharedParameters, hash, and signedHash are used to later verify the signature.
 ```
 
-## Verifying Signatures
+## Verify a signature
 
 To verify that data was signed by a particular party, you must have the following information:
 
@@ -103,12 +103,12 @@ The following code shows the sharing of an <xref:System.Security.Cryptography.RS
 
 After you have created the <xref:System.Security.Cryptography.RSAParameters> object, you can initialize a new instance of the <xref:System.Security.Cryptography.RSA> implementation class to the values specified in <xref:System.Security.Cryptography.RSAParameters>. The <xref:System.Security.Cryptography.RSA> instance is, in turn, passed to the constructor of an <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> to transfer the key.
 
-The following example illustrates this process. In this example, imagine that the `sharedParameters`, `hash` and `signedHash` are provided by a remote party. The remote party has signed the `hash` using the `SHA256` algorithm, producing the digital signature `signedHash`. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=nameWithType> method verifies that the digital signature is valid and was used to sign the `hash`.
+The following example illustrates this process. In this example, imagine that `sharedParameters`, `hash`, and `signedHash` are provided by a remote party. The remote party has signed `hash` using the `SHA256` algorithm to produce the digital signature `signedHash`. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=nameWithType> method verifies that the digital signature is valid and was used to sign `hash`.
 
 :::code language="vb" source="./snippets/cryptographic-signatures/vb/Program.vb":::
 :::code language="csharp" source="./snippets/cryptographic-signatures/csharp/Program.cs":::
 
-This code fragment will display "`The signature is valid`" if the signature is valid and "`The signature is not valid`" if it is not.
+This code fragment displays "`The signature is valid`" if the signature is valid and "`The signature is not valid`" if it's not.
 
 ## See also
 

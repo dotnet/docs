@@ -326,7 +326,7 @@ namespace Microsoft.Examples.Cryptography
                     cipherText = Transform(encryptor, message, 0, message.Length);
                 }
 
-                // The IV and ciphertest both need to be included in the MAC to prevent
+                // The IV and ciphertext both need to be included in the MAC to prevent
                 // tampering.
                 //
                 // By including the algorithm identifiers, we have technically moved from

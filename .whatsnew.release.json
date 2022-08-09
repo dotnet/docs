@@ -9,7 +9,8 @@
     "inclusionCriteria": {
         "labels": [
             "label:\":checkered_flag: Release: .NET 7\""
-        ]
+        ],
+        "minAdditionsToFile": 1
     },
     "navigationOptions": {
         "maximumNumberOfArticles": 3,

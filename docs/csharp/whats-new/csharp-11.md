@@ -10,8 +10,11 @@ ms.date: 06/02/2022
 
 The following features are available in Visual Studio 2022 version 17.3:
 
+- [generic math support](#generic-math-support).
 - [auto-default structs](#auto-default-struct)
 - [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
+- [Extended `nameof` scope](#extended-nameof-scope)
+- [Numeric IntPtr](#numeric-intptr-and-uintptr)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
@@ -22,7 +25,6 @@ The following features are available in Visual Studio 2022 version 17.2:
 The following features are available in Visual Studio 2022 version 17.1:
 
 - [Generic attributes](#generic-attributes).
-- [static abstract members in interfaces](#static-abstract-members-in-interfaces).
 - [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
 - [List patterns](#list-patterns).
 
@@ -30,7 +32,7 @@ You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.
 
 ## Generic attributes
 
-You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
+You can declare a [generic class](../programming-guide/generics/generic-classes.md) whose base class is <xref:System.Attribute?displayProperty=fullName>. This feature provides a more convenient syntax for attributes that require a <xref:System.Type?displayProperty=nameWithType> parameter. Previously, you'd need to create an attribute that takes a `Type` as its constructor parameter:
 
 ```csharp
 // Before C# 11:
@@ -76,25 +78,37 @@ public class GenericType<T>
 The type arguments must satisfy the same restrictions as the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator. Types that require metadata annotations aren't allowed. For example, the following types aren't allowed as the type parameter:
 
 - `dynamic`
-- `nint`, `nuint`
 - `string?` (or any nullable reference type)
 - `(int X, int Y)` (or any other tuple types using C# tuple syntax).
 
 These types aren't directly represented in metadata. They include annotations that describe the type. In all cases, you can use the underlying type instead:
 
 - `object` for `dynamic`.
-- <xref:System.IntPtr> instead of `nint` or `unint`.
 - `string` instead of `string?`.
 - `ValueTuple<int, int>` instead of `(int X, int Y)`.
 
-## Static abstract members in interfaces
+## Generic math support
 
-> [!IMPORTANT]
-> *static abstract members in interfaces* is a runtime preview feature. You must add the `<EnablePreviewFeatures>True</EnablePreviewFeatures>` in your project file. For more information about runtime preview features, see [Preview features](https://aka.ms/dotnet-warnings/preview-features). You can experiment with this feature, and the experimental libraries that use it. We will use feedback from the preview cycles to improve the feature before its general release.
+There are several language features that enable generic math support:
 
-You can add *static abstract members* in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. The .NET runtime team has included interfaces for mathematical operations in the [System.Runtime.Experimental](https://www.nuget.org/packages/System.Runtime.Experimental/) NuGet package. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values.
+- static virtual members in interfaces
+- checked user defined operators
+- relaxed right-shift requirements
+- unsigned right shift operator
+
+You can add *static abstract members* in interfaces to define interfaces that include overloadable operators, other static members, and static properties. The primary scenario for this feature is to use mathematical operators in generic types. For example, you can implement the `System.IAdditionOperators<TSelf, TOther, TResult>` in a type that implements `operator +`. Other interfaces define other mathematical operations or well-defined values. You can learn about the new syntax in the article on [interfaces](../language-reference/keywords/interface.md#static-abstract-and-virtual-members). Interfaces that include `static virtual` methods are typically [generic interface](../programming-guide/generics/generic-interfaces.md). Furthermore, most will declare a constraint that the type parameter [implements the declared interface](../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface).
 
 You can learn more and try the feature yourself in the tutorial [Explore static abstract interface members](./tutorials/static-abstract-interface-methods.md), or the [Preview features in .NET 6 – generic math](https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/) blog post.
+
+Generic math created other requirements on the language.
+
+- *unsigned right shift operator*: Before C# 11, to force an unsigned right-shift, you would need to cast any signed integer type to an unsigned type, perform the shift, then cast the result back to a signed type. Beginning in C# 11, you can use the `>>>`, the [*unsigned shift operator*](../language-reference/operators/bitwise-and-shift-operators.md#unsigned-right-shift-operator-).
+- *relaxed shift operator requirements*: C# 11 removes the requirement that the second operand must be an `int` or implicitly convertible to `int`. This change allows types that implement generic math interfaces to be used in these locations.
+- *checked and unchecked user defined operators*: Developers can now define `checked` and `unchecked` arithmetic operators. The compiler generates calls to the correct variant based on the current context. You can read more about `checked` operators in the article on [Arithmetic operators](../language-reference/operators/arithmetic-operators.md).
+
+## Numeric `IntPtr` and `UIntPtr`
+
+The `nint` and `nuint` types now alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
 
 ## Newlines in string interpolations
 
@@ -139,7 +153,7 @@ var location = $$"""
    """;
 ```
 
-The preceding example specifies that two braces starts and end an interpolation. The third repeated opening and closing brace are included in the output string.
+The preceding example specifies that two braces start and end an interpolation. The third repeated opening and closing brace are included in the output string.
 
 You can learn more about raw string literals in the article on [strings in the programming guide](../programming-guide/strings/index.md), and the language reference articles on [string literals](../language-reference/builtin-types/reference-types.md#string-literals) and [interpolated strings](../language-reference/tokens/interpolated.md).
 
@@ -150,3 +164,7 @@ The C# 11 compiler ensures that all fields of a `struct` type are initialized to
 ## Pattern match `Span<char>` or `ReadOnlySpan<char>` on a constant `string`
 
 You've been able to test if a `string` had a specific constant value using pattern matching for several releases. Now, you can use the same pattern matching logic with variables that are `Span<char>` or `ReadOnlySpan<char>`.
+
+## Extended nameof scope
+
+Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).

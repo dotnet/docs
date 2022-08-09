@@ -211,8 +211,6 @@ items:
     href: nullable-references.md
   - name: Nullable reference migrations
     href: nullable-migration-strategies.md
-  - name: Resolve nullable warnings
-    href: nullable-warnings.md
   - name: Methods
     href: methods.md
   - name: Properties
@@ -870,8 +868,6 @@ items:
       - name: Integral numeric types
         href: language-reference/builtin-types/integral-numeric-types.md
         displayName: sbyte, byte, short, ushort, int, uint, nint, nuint, long, ulong, integer, literal
-      - name: nint and nuint native integer types
-        href: language-reference/builtin-types/nint-nuint.md
       - name: Floating-point numeric types
         href: language-reference/builtin-types/floating-point-numeric-types.md
         displayName: float, decimal, double, rational, real, literal
@@ -1288,7 +1284,7 @@ items:
     href: language-reference/compiler-messages/index.md
 - name: Specifications
   items:
-  - name: C# 6.0 draft specification
+  - name: C# 7 draft specification
     items:
     - name: Detailed table of contents
       href: ../../_csharpstandard/standard/README.md
@@ -1362,10 +1358,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.0/out-var.md
       - name: Throw expressions
         href: ../../_csharplang/proposals/csharp-7.0/throw-expression.md
-      - name: Binary literals
-        href: ../../_csharplang/proposals/csharp-7.0/binary-literals.md
-      - name: Digit separators
-        href: ../../_csharplang/proposals/csharp-7.0/digit-separators.md
       - name: Async task types
         href: ../../_csharplang/proposals/csharp-7.0/task-types.md
     - name: C# 7.1 features
@@ -1390,8 +1382,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/private-protected.md
       - name: Conditional ref
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
-      - name: Leading digit separator
-        href: ../../_csharplang/proposals/csharp-7.2/leading-separator.md
     - name: C# 7.3 features
       items:
       - name: Unmanaged generic type constraints

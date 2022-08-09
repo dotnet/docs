@@ -1,12 +1,21 @@
 ---
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
-ms.date: 09/24/2020
+ms.date: 06/09/2022
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options
 
 The *code quality* rules have additional configuration options, besides just [configuring their severity](configuration-options.md#severity-level). For example, each code quality analyzer can be configured to only apply to specific parts of your codebase. You specify these options by adding key-value pairs to the same [EditorConfig](https://editorconfig.org) file where you specify rule severities and general editor preferences.
+
+> [!NOTE]
+> This article does not detail how to configure a rule's severity. The *.editorconfig* option to set a rule's severity has a different prefix (`dotnet_diagnostic`) to the options described here (`dotnet_code_quality`). In addition, the options described here pertain to code quality rules only, whereas the severity option applies to code style rules as well. As a quick reference, you can configure a rule's severity using the following option syntax:
+>
+> ```ini
+> dotnet_diagnostic.<rule ID>.severity = <severity value>
+> ```
+>
+> However, for detailed information about configuring rule severity, see [Severity level](configuration-options.md#severity-level).
 
 ## Option scopes
 

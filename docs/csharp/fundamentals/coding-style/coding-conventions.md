@@ -202,7 +202,7 @@ The following sections describe practices that the C# team follows to prepare co
 
     :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet7":::
 
-- Don't use implicit typing to determine the type of the loop variable in [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) loops.
+- Don't use implicit typing to determine the type of the loop variable in [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) loops. In most cases, the type of elements in the collection isn't immediately obvious. The collection's name shouldn't be solely relied upon for infering the type of its elements.
 
   The following example uses explicit typing in a `foreach` statement.
 

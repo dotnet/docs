@@ -1,7 +1,7 @@
 ---
 description: "Checked and Unchecked - C# Reference"
 title: "Checked and Unchecked - C# Reference"
-ms.date: 04/26/2022
+ms.date: 06/10/2022
 helpviewer_keywords: 
   - "operators [C#], checked and unchecked"
   - "exceptions [C#], overflow checking"
@@ -28,6 +28,8 @@ The following operations are affected by the overflow checking:
     `++`, `--`, unary `-`, `+`, `-`, `*`, `/`
 
 - Explicit numeric conversions between integral types, or from `float` or `double` to an integral type.
+
+Beginning with C# 11, you can define a `checked` variant for operators that are affected by overflow checking. If you define a `checked` operator, you must also define an operator without the `checked` keyword. For more information on checked and unchecked operators, see [Arithmetic operators](../operators/arithmetic-operators.md).
 
 If neither `checked` nor `unchecked` is specified, the default context for non-constant expressions (expressions that are evaluated at run time) is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. By default the value of that option is unset and arithmetic operations are executed in an unchecked context.
 

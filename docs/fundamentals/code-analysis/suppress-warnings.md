@@ -1,7 +1,7 @@
 ---
 title: Suppress code analysis warnings
 description: Learn the different ways you can suppress .NET code analysis violations.
-ms.date: 01/28/2021
+ms.date: 06/09/2022
 ms-topic: how-to
 dev_langs:
   - CSharp
@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # How to suppress code analysis warnings
 
-This article covers the various ways you can suppress warnings from code analysis when you build your .NET app.
+This article covers the various ways you can suppress warnings from code analysis when you build your .NET app. You can suppress code quality rules, code style rules, and third-party analyzer rules using the information provided here.
 
 > [!TIP]
 > If you're using Visual Studio as your development environment, the *light bulb* menu provides options that generate the code to suppress warnings for you. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers?#suppress-violations).
@@ -26,7 +26,7 @@ By disabling the code analysis rule that's causing the warning, you disable the 
 dotnet_diagnostic.<rule-ID>.severity = none
 ```
 
-For more information about rule severities, see [Configure rule severity](~/docs/fundamentals/code-analysis/configuration-options.md#severity-level).
+For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
 
 ## Use a preprocessor directive
 

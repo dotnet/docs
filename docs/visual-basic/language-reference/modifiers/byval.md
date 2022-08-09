@@ -2,10 +2,10 @@
 description: "Learn more about: ByVal (Visual Basic)"
 title: "ByVal"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.ByVal"
   - "ByVal"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ByVal keyword [Visual Basic], contexts"
   - "ByVal keyword [Visual Basic]"
 ms.assetid: 1eaf4e58-b305-4785-9e3d-e416b9c75598
@@ -24,11 +24,11 @@ Specifies that an argument is passed [by value](../../programming-guide/language
  [Declare Statement](../statements/declare-statement.md)
 
  [Function Statement](../statements/function-statement.md)
-  
+
  [Operator Statement](../statements/operator-statement.md)
-  
+
  [Property Statement](../statements/property-statement.md)
-  
+
  [Sub Statement](../statements/sub-statement.md)
 
 ## Example
@@ -39,5 +39,6 @@ Specifies that an argument is passed [by value](../../programming-guide/language
 
 ## See also
 
+- [Remove `ByVal` (style rule IDE0081)](../../../fundamentals/code-analysis/style-rules/ide0081.md)
 - [Keywords](../keywords/index.md)
 - [Passing Arguments by Value and by Reference](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

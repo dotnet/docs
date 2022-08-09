@@ -172,7 +172,7 @@ Types of instruments currently available:
 - Other common cases, such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, and files are usually well suited for `ObservableGauge`.
 
 > [!NOTE]
-> OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. ObservableGauge can usually be substituted by defining a variable to store the running
+> OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. UpDownCounter can usually be substituted by defining a variable to store the running
 > total and reporting the value of that variable in the ObservableGauge callback.
 
 ### Example of different instrument types

@@ -18,7 +18,7 @@ dotnet-coverage [-h, --help] [--version] <command>
 
 The `dotnet-coverage` tool:
 
-* Enables the collection of code coverage data of a running process on Windows (x86, x64 and arm64), Linux (x64) and macOS (x64).
+* Enables the collection of code coverage data of a running process on Windows (x86, x64 and Arm64), Linux (x64) and macOS (x64).
 * Provides cross-platform merging of code coverage reports.
 
 ## Options
@@ -101,7 +101,7 @@ dotnet-coverage merge
 
 ## dotnet-coverage collect
 
-The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86, x64 and arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
 
 ### Synopsis
 
@@ -181,7 +181,7 @@ dotnet-coverage collect
 
 ## dotnet-coverage connect
 
-The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86, x64 and arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
 
 ### Synopsis
 

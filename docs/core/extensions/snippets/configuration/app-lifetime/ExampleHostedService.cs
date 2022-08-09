@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AppLifetime.Example;
 
-public class ExampleHostedService : IHostedService
+public sealed class ExampleHostedService : IHostedService
 {
     private readonly ILogger _logger;
 

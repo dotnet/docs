@@ -238,7 +238,7 @@ For more details on manual installation, see [Install .NET on macOS](../install/
 
 If you already have a higher version of the required framework installed, you can make the application run on that higher version by configuring its roll-forward behavior.
 
-When running the application, you can specify the [`--roll-forward` command line option](../tools/dotnet.md#runtime-options) or set the [`DOTNET_ROLL_FORWARD` environment variable](../tools/dotnet-environment-variables.md#dotnet_roll_forward).
+When running the application, you can specify the [`--roll-forward` command line option](../tools/dotnet.md#rollforward) or set the [`DOTNET_ROLL_FORWARD` environment variable](../tools/dotnet-environment-variables.md#dotnet_roll_forward).
 By default, an application requires a framework that matches the same major version that the application targets, but can use a higher minor or patch version. However, application developers may have specified a different behavior. For more details, see [Framework-dependent apps roll-forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 > [!NOTE]

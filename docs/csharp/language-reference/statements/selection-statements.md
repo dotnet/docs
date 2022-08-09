@@ -101,6 +101,7 @@ For more information about features introduced in C# 7.0 and later, see the foll
 
 ## See also
 
+- [Add missing cases to switch statement (style rule IDE0010)](../../../fundamentals/code-analysis/style-rules/ide0010.md)
 - [C# reference](../index.md)
 - [Conditional operator `?:`](../operators/conditional-operator.md)
 - [Logical operators](../operators/boolean-logical-operators.md)

@@ -9,7 +9,7 @@ ms.technology: dotnet-cli
 The .NET SDK is a set of libraries and tools that allow developers to create .NET applications and libraries. It contains the following components that are used to build and run applications:
 
 - The [.NET CLI](tools/index.md).
-- The [.NET runtime](introduction.md#sdk-and-runtimes) and [libraries](introduction.md#runtime-libraries).
+- The [.NET runtime and libraries](introduction.md).
 - The `dotnet` [driver](tools/index.md#driver).
 
 ## How to install the .NET SDK

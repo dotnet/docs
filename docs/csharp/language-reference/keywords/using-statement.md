@@ -56,6 +56,7 @@ For more information, see [The using statement](~/_csharpstandard/standard/state
 
 ## See also
 
+- [Use simple 'using' statement (style rule IDE0063)](../../../fundamentals/code-analysis/style-rules/ide0063.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

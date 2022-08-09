@@ -597,6 +597,18 @@ Write them on one line when:
 if cond then e1 else e2
 ```
 
+If the else expression is absent, it is recommended to never to write the entire expression in one line.
+This is to differentiate the imperative code from the functional.
+
+```fsharp
+// ✔️ OK
+if a then
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above by default
+if a then ()
+```
+
 If any of the expressions are multi-line or `if/then/else` expressions.
 
 ```fsharp
@@ -631,7 +643,8 @@ else
     e4
 ```
 
-If a condition is long, the `then` keyword is still placed at the end of the expression.
+If a condition is multiline or exceeds the default tolerance of the single-line, the condition expression should use one indentation and a new line.
+The `if` and `then` keyword should align when encapsulating the long condition expression.
 
 ```fsharp
 // ✔️ OK, but better to refactor, see below
@@ -640,10 +653,31 @@ if
     || someFunctionToCall
         aVeryLongParameterNameOne
         aVeryLongParameterNameTwo
-        aVeryLongParameterNameThree then
+        aVeryLongParameterNameThree 
+then
         e1
     else
         e2
+
+// ✔️The same applies to nested `elif` or `else if` expressions
+if a then
+    b
+elif
+    someLongFunctionCall
+        argumentOne
+        argumentTwo
+        argumentThree
+        argumentFour
+then
+    c
+else if
+    someOtherLongFunctionCall
+        argumentOne
+        argumentTwo
+        argumentThree
+        argumentFour
+then
+    d
 ```
 
 It is, however, better style to refactor long conditions to a let binding or separate function:
@@ -904,6 +938,38 @@ match lam with
     1 + sizeLambda body
 | App(lam1, lam2) ->
     sizeLambda lam1 + sizeLambda lam2
+```
+
+Similar to large if conditions, if a match expression is multiline or exceeds the default tolerance of the single-line, the match expression should use one indentation and a new line.
+The `match` and `with` keyword should align when encapsulating the long match expression.
+
+```fsharp
+// ✔️ OK, but better to refactor, see below
+match
+    complexExpression a b && env.IsDevelopment()
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree 
+with
+| X y -> y
+| _ -> 0
+```
+
+It is, however, better style to refactor long match expressions to a let binding or separate function:
+
+```fsharp
+// ✔️ OK
+let performAction =
+    complexExpression a b && env.IsDevelopment()
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree
+
+match performAction with
+| X y -> y
+| _ -> 0
 ```
 
 Aligning the arrows of a pattern match should be avoided.

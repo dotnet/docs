@@ -4,7 +4,7 @@ description: "Use the default value expressions to obtain the default value of a
 ms.date: 03/13/2020
 f1_keywords:
   - "default_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "default keyword [C#]"
 ---
 # default value expressions (C# reference)
@@ -31,6 +31,9 @@ Beginning with C# 7.1, you can use the `default` literal to produce the default 
 The following example shows the usage of the `default` literal:
 
 [!code-csharp-interactive[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
+
+> [!TIP]
+> Use .NET style rule [IDE0034](../../../fundamentals/code-analysis/style-rules/ide0034.md) to specify a preference on the use of the `default` literal in your codebase.
 
 ## C# language specification
 

@@ -15,4 +15,32 @@ The following methods are marked as obsolete, starting in .NET 6. Calling them i
 
 Reflection-only loading is replaced by the metadata load-context in .NET Core and .NET 5+. For more information, see [How to: Inspect assembly contents using MetadataLoadContext](../../standard/assembly/inspect-contents-using-metadataloadcontext.md).
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
+## Suppress a warning
+
+If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+
+To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB0018
+
+// Code that uses obsolete API.
+// ...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB0018
+```
+
+To suppress all the `SYSLIB0018` warnings in your project, add a `<NoWarn>` property to your project file.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   ...
+   <NoWarn>$(NoWarn);SYSLIB0018</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
+For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).

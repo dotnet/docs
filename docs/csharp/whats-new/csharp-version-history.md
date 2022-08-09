@@ -325,7 +325,7 @@ C# 10 adds the following features and enhancements to the C# language:
 Additional features are available in *preview* mode. You're encouraged to try these features and [provide feedback](https://github.com/dotnet/roslyn/issues/new/choose) on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
 
 - [Generic attributes](./csharp-11.md#generic-attributes) later in this article.
-- [static abstract members in interfaces](./csharp-11.md#static-abstract-members-in-interfaces)
+- [static abstract members in interfaces](./csharp-11.md#generic-math-support)
 
 C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
 

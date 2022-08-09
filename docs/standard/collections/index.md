@@ -103,16 +103,16 @@ Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>`.
 |[Sorted Collection Types](sorted-collection-types.md)|Describes sorted collections performance and characteristics|
 |[Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)|Describes the features of generic and non-generic hash-based dictionary types.|
 |[Thread-Safe Collections](thread-safe/index.md)|Describes collection types such as <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType> that support safe and efficient concurrent access from multiple threads.|
-|System.Collections.Immutable|Introduces the immutable collections and provides links to the collection types.|
+|<xref:System.Collections.Immutable>|Introduces the immutable collections and provides links to the collection types.|
 
 <a name="BKMK_Reference"></a>
 
 ## Reference
 
-<xref:System.Array?displayProperty=nameWithType>
-<xref:System.Collections?displayProperty=nameWithType>
-<xref:System.Collections.Concurrent?displayProperty=nameWithType>
-<xref:System.Collections.Generic?displayProperty=nameWithType>
-<xref:System.Collections.Specialized?displayProperty=nameWithType>
-<xref:System.Linq?displayProperty=nameWithType>
-<xref:System.Collections.Immutable>
+- <xref:System.Array?displayProperty=nameWithType>
+- <xref:System.Collections?displayProperty=nameWithType>
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.Specialized?displayProperty=nameWithType>
+- <xref:System.Linq?displayProperty=nameWithType>
+- <xref:System.Collections.Immutable>

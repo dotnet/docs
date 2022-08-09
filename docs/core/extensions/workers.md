@@ -3,7 +3,7 @@ title: Worker Services in .NET
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/24/2022
+ms.date: 06/30/2022
 ms.topic: overview
 ---
 
@@ -11,13 +11,15 @@ ms.topic: overview
 
 There are numerous reasons for creating long-running services such as:
 
-- Processing CPU intensive data.
+- Processing CPU-intensive data.
 - Queuing work items in the background.
 - Performing a time-based operation on a schedule.
 
-Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService> &mdash; which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
+Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService>, which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
 
 With .NET, you're no longer restricted to Windows. You can develop cross-platform background services. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
+
+[!INCLUDE [worker-template-workloads](includes/worker-template-workloads.md)]
 
 ## Terminology
 
@@ -51,7 +53,7 @@ The preceding `Program` class:
 > </PropertyGroup>
 > ```
 >
-> For more information regarding performance considerations see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
+> For more information regarding performance considerations, see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 The *Program.cs* file from the template can be rewritten using top-level statements:
 
@@ -94,7 +96,7 @@ An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` 
 
 ### Containers and cloud adoptability
 
-With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
+With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
 :::code language="dockerfile" source="snippets/workers/background-service/Dockerfile":::
 

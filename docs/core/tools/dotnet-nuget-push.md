@@ -99,7 +99,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://api.nuget.org/v3/index.json
   ```
   
-  * Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
+- Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
@@ -148,5 +148,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   ```dotnetcli
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
+  
+- For pushing to Azure Artifacts, [see Azure Artifacts' push documentation](/azure/devops/artifacts/nuget/dotnet-exe#publish-packages).
 
   This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

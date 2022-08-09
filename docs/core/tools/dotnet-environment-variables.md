@@ -82,12 +82,12 @@ Socket continuations are dispatched to the <xref:System.Threading.ThreadPool?dis
 > [!NOTE]
 > This setting can make performance worse if there is expensive work that will end up holding onto the IO thread for longer than needed. Test to make sure this setting helps performance.
 
-Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, a single socket engine is capable of keeping busy up to thirty x64 and eight ARM64 CPU cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second),
+Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, a single socket engine is capable of keeping busy up to thirty x64 and eight Arm64 CPU cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second),
 and having a single producer is almost always enough. However, to be sure that extreme loads can be handled, you can use `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT` to override the calculated value. When not overridden, the following value is used:
 
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is `1`, the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> value is used.
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is not `1`, <xref:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture?displayProperty=nameWithType> is evaluated:
-  - When ARM or ARM64 the cores per engine value is set to `8`, otherwise `30`.
+  - When Arm or Arm64 the cores per engine value is set to `8`, otherwise `30`.
 - Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> over the cores per engine.
 
 ### `DOTNET_SYSTEM_NET_DISABLEIPV6`
@@ -137,7 +137,7 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 
 #### JIT memory barriers
 
-The code generator for ARM64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
+The code generator for Arm64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
 ### `DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`
 

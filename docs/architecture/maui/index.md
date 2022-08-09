@@ -8,15 +8,11 @@ ms.date: 07/12/2022
 
 # Enterprise Application Patterns Using .NET MAUI
 
-//TODO: Add Book Cover
+![cover image Enterprise Application Patterns Using .NET MAUI](./media/enterprise-app-patterns-ebook.png)
 
-//TODO: Add Book Link
-> DOWNLOAD available at: <https://aka.ms/maui-ebook>
+DOWNLOAD available at: <https://aka.ms/maui-ebook>
 
-**EDITION v2.0** - Updated to .NET MAUI
-
-//TODO: Get aka.ms link for changelog
-Refer to [changelog](https://aka.ms/maui-ebook-changelog) for the book updates and community contributions.
+**EDITION v1.0**
 
 PUBLISHED BY
 
@@ -44,15 +40,17 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **[Michael Stonis](https://github.com/michaelstonis)**, Mobile Software Architect, Eightbot.com
-
-> **[David Britch](https://github.com/davidbritch)**, Developer/Writer, Microsoft Corp.
-
-> **[Javier Suarez Ruiz](https://github.com/jsuarezruiz)**, Developer/Writer, Microsoft Corp.
+> **[Michael Stonis](https://github.com/michaelstonis)**, Mobile Software Architect, [Eight-Bot](https://eightbot.com)
 
 Reviewers:
 
-> **[David Pine](https://github.com/IEvangelist)**, Developer/Writer, Microsoft Corp.
+> **[James Montemagno](https://github.com/jamesmontemagno)**, Principal Lead Program Manager, Microsoft Corp.
+
+> **[David Pine](https://github.com/IEvangelist)**, Developer Relations, Microsoft Corp.
+
+## Acknowledgments
+
+This book originated from the excellent Enterprise Application Patterns using Xamarin.Forms eBook by [David Britch](https://github.com/davidbritch) and [Javier Suarez Ruiz](https://github.com/jsuarezruiz). Without their hard work, detailed information, and excellent examples, this book would not be possible.
 
 ## Introduction
 

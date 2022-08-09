@@ -19,6 +19,7 @@ The style rules in this section concern the use of [pattern matching](../../../c
 - [Use switch expression (IDE0066)](ide0066.md)
 - [Use pattern matching (IDE0078)](ide0078.md)
 - [Use pattern matching (`not` operator) (IDE0083)](ide0083.md)
+- [Simplify property pattern (IDE0170)](ide0170.md)
 
 ## Visual Basic preferences
 

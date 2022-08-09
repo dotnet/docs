@@ -39,7 +39,7 @@ For more information about how to create new strings that are based on modificat
 
 ## Quoted string literals
 
-*Quoted string literals* are start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
+*Quoted string literals* start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="EscapeSequences":::
 
@@ -116,6 +116,14 @@ Beginning with C# 10, you can use string interpolation to initialize a constant 
 Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output.  The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
+
+### Verbatim String Interpolation
+
+C# also allows verbatim string interpolation, for example across multiple lines, using the `$@` or `@$` syntax.
+
+To interpret escape sequences literally, use a [verbatim](../../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+
+:::code language="csharp" source="./snippets/VerbatimStringInterpolation.cs" id="VerbatimStringInterpolation":::
 
 ### Composite formatting
 

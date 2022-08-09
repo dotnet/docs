@@ -61,7 +61,7 @@ Before you enable nullable reference types, all declarations in your codebase ar
 
 If your project uses Entity Framework Core, you should read their guidance on [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
 
-When you start your migration, you should start by enabling warnings only. All declarations remain *nullable oblivious*, but you'll see warnings when you dereference a value after its *null-state* changes to *maybe-null*. As you address these warnings, you'll be checking against null in more locations, and your codebase becomes more resilient. To learn specific techniques for different situations, see the article on [Techniques to resolve nullable warnings](nullable-warnings.md).
+When you start your migration, you should start by enabling warnings only. All declarations remain *nullable oblivious*, but you'll see warnings when you dereference a value after its *null-state* changes to *maybe-null*. As you address these warnings, you'll be checking against null in more locations, and your codebase becomes more resilient. To learn specific techniques for different situations, see the article on [Techniques to resolve nullable warnings](language-reference/compiler-messages/nullable-warnings.md).
 
 You can address warnings and enable annotations in each file or class before continuing with other code. However, it's often more efficient to address the warnings generated while the context is *warnings* before enabling the type annotations. That way, all types are *oblivious* until you've addressed the first set of warnings.
 

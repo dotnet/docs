@@ -91,6 +91,7 @@ For more information about features added in C# 7.2 and later, see the following
 
 ## See also
 
+- [Simplify conditional expression (style rule IDE0075)](../../../fundamentals/code-analysis/style-rules/ide0075.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [if statement](../statements/selection-statements.md#the-if-statement)

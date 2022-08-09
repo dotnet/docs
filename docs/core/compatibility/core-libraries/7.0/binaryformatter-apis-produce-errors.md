@@ -5,7 +5,7 @@ ms.date: 08/08/2022
 ---
 # BinaryFormatter serialization APIs produce compiler errors
 
-As part of the BinaryFormatter [long-term deprecation plan](nameWithType), we continue to cull `BinaryFormatter` functionality from our libraries and to wean developers off of the type. Starting in .NET 7, calls to the following APIs produce compile-time errors across all C# and Visual Basic project types:
+As part of the BinaryFormatter [long-term deprecation plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md), we continue to cull `BinaryFormatter` functionality from our libraries and to wean developers off of the type. Starting in .NET 7, calls to the following APIs produce compile-time errors across all C# and Visual Basic project types:
 
 - <xref:System.Exception.SerializeObjectState?displayProperty=fullName> event
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> method
@@ -38,7 +38,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-As part of the BinaryFormatter [long-term deprecation plan](nameWithType), we continue to cull `BinaryFormatter` functionality from our libraries and to wean developers off of the type.
+As part of the BinaryFormatter [long-term deprecation plan](https://github.com/dotnet/designs/blob/main/accepted/2020/better-obsoletion/binaryformatter-obsoletion.md), we continue to cull `BinaryFormatter` functionality from our libraries and to wean developers off of the type.
 
 ## Recommended action
 
@@ -71,6 +71,7 @@ The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 
 | Desktop apps and all other app types | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *forbid* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. |
 
 <sup>1</sup>Runtime policy is controlled by the app host. Calls into `BinaryFormatter` might still fail at run time even if `<EnableUnsafeBinaryFormatterSerialization>` is set to `true` within your library's project file. Libraries can't override the app host's runtime policy.
+
 <sup>2</sup>The Blazor and MAUI runtimes forbid calls to `BinaryFormatter`. Regardless of any value you set for `<EnableUnsafeBinaryFormatterSerialization>`, the calls will fail at run time. Don't call these APIs from Blazor or MAUI applications or from libraries intended to be consumed by Blazor or MAUI apps.
 
 ## Affected APIs

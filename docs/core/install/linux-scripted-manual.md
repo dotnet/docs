@@ -127,20 +127,33 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-> [!TIP]
-> The preceding `export` commands only make the .NET CLI commands available for the terminal session in which it was run.
->
-> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
->
-> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
-> - **Korn Shell**: *~/.kshrc* or *.profile*
-> - **Z Shell**: *~/.zshrc* or *.zprofile*
->
-> Edit the appropriate source file for your shell and add `:$HOME/.dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/.dotnet`.
->
-> Also, add `export DOTNET_ROOT=$HOME/.dotnet` to the end of the file.
-
 This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
+
+### Set enviornment variables system-wide
+
+If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:
+
+- **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+- **Korn Shell**: *~/.kshrc* or *.profile*
+- **Z Shell**: *~/.zshrc* or *.zprofile*
+
+Set the following two environment variables in your shell profile:
+
+- `DOTNET_ROOT`
+
+  This variable is set to the folder .NET was installed to, such as `$HOME/.dotnet`:
+
+  ```bash
+  export DOTNET_ROOT=$HOME/.dotnet
+  ```
+
+- `PATH`
+
+  This variable should include both the the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder:
+
+  ```bash
+  export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+  ```
 
 ## Next steps
 

@@ -102,7 +102,10 @@ The following example shows a custom converter that serializes and deserializes 
 
 #### Using DateTime(Offset).Parse as a fallback to the serializer's native parsing
 
-If you generally expect your input <xref:System.DateTime> or <xref:System.DateTimeOffset> data to conform to the extended ISO 8601-1:2019 profile, you can use the serializer's native parsing logic. You can also implement a fallback mechanism. The following example shows that, after failing to parse a <xref:System.DateTime> text representation using <xref:System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)>, the converter successfully parses the data using <xref:System.DateTime.Parse(System.String)>:
+If you generally expect your input <xref:System.DateTime> or <xref:System.DateTimeOffset> data to conform to the extended ISO 8601-1:2019 profile,
+you can use the serializer's native parsing logic. You can also implement a fallback mechanism.
+The following example shows that, after failing to parse a <xref:System.DateTime> text representation using <xref:System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)>,
+the converter successfully parses the data using <xref:System.DateTime.Parse(System.String)>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example3/Program.cs":::
 

@@ -45,7 +45,7 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[]
 1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
 1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
 
-Adding a configuration provider overrides previous configuration values. For example, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all values from other providers because it is added last. If `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used because it was added after *appsettings.json*.
+Adding a configuration provider overrides previous configuration values. For example, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all values from other providers because it's added last. If `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used because it was added after *appsettings.json*.
 
 ### Binding
 
@@ -116,7 +116,7 @@ Consider an example _appsettings.json_ file:
 
 :::code language="json" source="snippets/configuration/console-raw/appsettings.json":::
 
-Now, given this JSON file here is an example consumption pattern using the configuration builder directly:
+Now, given this JSON file, here's an example consumption pattern using the configuration builder directly:
 
 :::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
 

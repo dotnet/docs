@@ -2,9 +2,9 @@
 title: "Properties - C# Programming Guide"
 description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
 ms.date: 07/28/2022
-f1_keywords: 
+f1_keywords:
   - "cs.properties"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "properties [C#]"
   - "C# language, properties"
 ---
@@ -14,7 +14,7 @@ A property is a member that provides a flexible mechanism to read, write, or com
 
 ## Properties overview
 
-- Properties enable a class to expose a public way of getting and setting values, while hiding implementation or verification code.  
+- Properties enable a class to expose a public way of getting and setting values, while hiding implementation or verification code.
 - A [get](../../language-reference/keywords/get.md) property accessor is used to return the property value, and a [set](../../language-reference/keywords/set.md) property accessor is used to assign a new value. In C# 9 and later, an [init](../../language-reference/keywords/init.md) property accessor is used to assign a new value only during object construction. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](./restricting-accessor-accessibility.md).
 - The [value](../../language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` or `init` accessor.
 - Properties can be *read-write* (they have both a `get` and a `set` accessor), *read-only* (they have a `get` accessor but no `set` accessor), or *write-only* (they have a `set` accessor, but no `get` accessor). Write-only properties are rare and are most commonly used to restrict access to sensitive data.
@@ -52,7 +52,7 @@ If a property has both a `get` and a `set` (or a `get` and an `init`) accessor, 
 
 :::code language="csharp" source="./snippets/properties/SaleItem.cs" id="SaleItemV2":::
 
-Auto-implemented properties can declare different accessibilities for the `get` and `set` accessors. You common use is to declare a `public get` accessor and a `private set` accessors. You can learn more in the article on [restricting accessor accessibility](./restricting-accessor-accessibility.md).
+Auto-implemented properties can declare different accessibilities for the `get` and `set` accessors. You commonly declare a public `get` accessor and a private `set` accessor. You can learn more in the article on [restricting accessor accessibility](./restricting-accessor-accessibility.md).
 
 ## Required properties
 

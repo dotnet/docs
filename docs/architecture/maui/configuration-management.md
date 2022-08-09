@@ -73,7 +73,7 @@ Each setting consists of a private key, a private default value, and a public pr
 
 In the eShopOnContainers multi-platform app, the `SettingsView` exposes multiple settings the user can configure at runtime. These settings include allowing configuration of whether the app should retrieve data from microservices deployed as Docker containers or whether the app should retrieve data from mock services that don't require an internet connection. When retrieving data from containerized microservices, a base endpoint URL for the microservices must be specified. The image below shows the SettingsView when the user has chosen to retrieve data from containerized microservices.
 
-:::image type="content" source="media/endpoint_settings.png" alt-text="User settings exposed by the eShopOnContainers multi-platform app":::
+![User settings exposed by the eShopOnContainers multi-platform app.](./media/endpoint_settings.png)
 
 Data binding can be used to retrieve and set settings exposed by the `ISettingService` interface. This is achieved by controls on the view binding to view model properties that in turn access properties in the `ISettingService` interface and raising a property changed notification if the value has changed.
 

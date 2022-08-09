@@ -31,7 +31,7 @@ OpenID Connect and OAuth 2.0 combine the two fundamental security concerns of au
 
 In applications that use direct client-to-microservice communication, such as the eShopOnContainers reference application, a dedicated authentication microservice acting as a Security Token Service (STS) can be used to authenticate users, as shown in the following diagram. For more information about direct client-to-microservice communication, see [Microservices](micro-services.md).
 
-:::image type="content" source="media/authentication-dedicated-authentication-microservice.png" alt-text="Authentication by a dedicated authentication microservice.":::
+![Authentication by a dedicated authentication microservice.](./media/authentication-dedicated-authentication-microservice.png)
 
 The eShopOnContainers multi-platform app communicates with the identity microservice, which uses IdentityServer 4 to perform authentication, and access control for APIs. Therefore, the multi-platform app requests tokens from IdentityServer, either for authenticating a user or for accessing a resource:
 
@@ -210,13 +210,13 @@ For IdentityServer to issue tokens on behalf of a user, the user must sign in to
 
 The eShopOnContainers multi-platform app authenticates with IdentityServer with the hybrid authentication flow, which is illustrated in the diagram below.
 
-:::image type="content" source="media/high-level-overview-sign-in-process.png" alt-text="High-level overview of the sign in process.":::
+![High-level overview of the sign in process.](./media/high-level-overview-sign-in-process.png)
 
 A sign in request is made to `<base endpoint>:5105/connect/authorize`. Following successful authentication, IdentityServer returns an authentication response containing an authorization code and an identity token. The authorization code is sent to `<base endpoint>:5105/connect/token`, which responds with access, identity, and refresh tokens.
 
 The eShopOnContainers multi-platform app signs out of IdentityServer by sending a request to `<base endpoint>:5105/connect/endsession` with additional parameters. After sign-out, IdentityServer responds by sending a post-logout redirecting URI back to the multi-platform app. The diagram below illustrates this process.
 
-:::image type="content" source="media/high-level-overview-sign-out-process.png" alt-text="High-level overview of the sign out process.":::
+![High-level overview of the sign out process.](./media/high-level-overview-sign-out-process.png)
 
 In the eShopOnContainers multi-platform app, communication with IdentityServer is performed by the `IdentityService` class, which implements the `IIdentityService` interface. This interface specifies that the implementing class must provide `CreateAuthorizationRequest`, `CreateLogoutRequest`, and `GetTokenAsync` methods.
 
@@ -271,7 +271,7 @@ This method creates the URI for IdentityServer's [authorization endpoint](https:
 
 The returned URI is stored in the `LoginUrl` property of the `LoginViewModel` class. When the `IsLogin` property becomes true, the `WebView` in the `LoginView` becomes visible. The `WebView` data binds its `Source` property to the `LoginUrl` property of the `LoginViewModel` class and a sign-in request to IdentityServer when the `LoginUrl` property is set to IdentityServer's authorization endpoint. When IdentityServer receives this request and the user isn't authenticated, the `WebView` will be redirected to the configured login page shown in the image below.
 
-:::image type="content" source="media/login-page-displayed-by-the-webview.png" alt-text="Login page displayed by the WebView.":::
+![Login page displayed by the WebView.](./media/login-page-displayed-by-the-webview.png)
 
 Once login is completed, the `WebView` will be redirected to a return URI. This `WebView` navigation will cause the `NavigateAsync` method in the `LoginViewModel` class to be executed, as shown in the following code example:
 
@@ -405,7 +405,7 @@ If an unauthorized user attempts to access a controller or action marked with th
 
 IdentityServer can be integrated into the authorization workflow so that the access tokens it provides control authorization. This approach is shown in the diagram below.
 
-:::image type="content" source="media/authorization-by-access-token.png" alt-text="Authorization by access token.":::
+![Authorization by access token.](./media/authorization-by-access-token.png)
 
 The eShopOnContainers multi-platform app communicates with the identity microservice and requests an access token as part of the authentication process. The access token is then forwarded to the APIs exposed by the ordering and basket microservices as part of the access requests. Access tokens contain information about the client and the user. APIs then use that information to authorize access to their data. For information about how to configure IdentityServer to protect APIs, see [Configuring API resources](#configuring-api-resources).
 

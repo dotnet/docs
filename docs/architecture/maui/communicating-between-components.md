@@ -18,7 +18,7 @@ The .NET MAUI `MessagingCenter` class implements the publish-subscribe pattern, 
 
 The `MessagingCenter` class provides multicast publish-subscribe functionality. This means that there can be multiple publishers that publish a single message, and there can be multiple subscribers listening for the same message. The image below illustrates this relationship:
 
-:::image type="content" source="media/messaging-center.png" alt-text="Multicast publish-subscribe functionality.":::
+![Multicast publish-subscribe functionality.](./media/messaging-center.png)
 
 Publishers send messages using the `MessagingCenter.Send` method, while subscribers listen for messages using the `MessagingCenter.Subscribe` method. In addition, subscribers can also unsubscribe from message subscriptions, if required, with the `MessagingCenter.Unsubscribe` method.
 

@@ -13,7 +13,7 @@ Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimma
 
 ## New behavior
 
-Starting in .NET 7, trimming trims all the assemblies in the app by default. Apps that may have previously worked with `PublishTrimmed` may not work in .NET 7. However, only apps with trim warnings will be affected. If your app has no trim warnings, the change in behavior should not cause any adverse affects, and will likely decrease the app size.
+Starting in .NET 7, trimming trims all the assemblies in the app by default. Apps that may have previously worked with `PublishTrimmed` may not work in .NET 7. However, only apps with trim warnings will be affected. If your app has no trim warnings, the change in behavior should not cause any adverse effects, and will likely decrease the app size.
 
 If your app did have trim warnings, you may see changes in behavior or exceptions. For example, an app that uses `Newtonsoft.Json` or `System.Text.Json` without source generation to serialize and deserialize a type in the user project may have functioned before the change, because types in the user project were fully preserved. However, one or more trim warnings (warning codes `ILxxxx`) would have been present. Now, types in the user project are trimmed, and serialization may fail or produce unexpected results.
 

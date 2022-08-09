@@ -53,7 +53,7 @@ This guide includes a sample application, eShopOnContainers, that's an online st
 
 Below is a high-level overview of the architecture of the sample application.
 
-:::image type="content" source="media/high-level-architecture-diagram.png" alt-text="eShopOnContainers high-level architecture":::
+![eShopOnContainers high-level architecture](./media/high-level-architecture-diagram.png)
 
 The sample application ships with three client apps:
 
@@ -70,7 +70,7 @@ The sample application includes the following backend services:
 - An ordering microservice, which is a domain-driven service that uses domain-driven design patterns.
 - A basket microservice, which is a data-driven CRUD service that uses Redis Cache.
 
-These backend services are implemented as microservices using ASP.NET Core MVC, and are deployed as unique containers within a single Docker host. Collectively, these backend services are referred to as the eShopOnContainers reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and Docker, see [Containerized microservices](microservices.md).
+These backend services are implemented as microservices using ASP.NET Core MVC, and are deployed as unique containers within a single Docker host. Collectively, these backend services are referred to as the eShopOnContainers reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and Docker, see [Containerized microservices](micro-services.md).
 
 For information about the implementation of the backend services, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
@@ -78,7 +78,7 @@ For information about the implementation of the backend services, see [.NET Micr
 
 This guide focuses on building cross-platform enterprise apps using .NET MAUI, and uses the eShopOnContainers multi-platform app as an example. The image below shows the pages from the eShopOnContainers multi-platform app that provide the functionality outlined earlier.
 
-:::image type="content" source="media/mobile-app-screens.jpg" alt-text="The eShopOnContainers MAUI app":::
+![The eShopOnContainers MAUI app](./media/mobile-app-screens.png)
 
 The multi-platform app consumes the backend services provided by the eShopOnContainers reference application. However, it can be configured to consume data from mock services for those who wish to avoid deploying the backend services.
 

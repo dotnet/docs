@@ -12,7 +12,7 @@ Any app that accepts input from users should ensure that the input is valid. An 
 
 In the context of the Model-ViewModel-Model (MVVM) pattern, a view model or model will often be required to perform data validation and signal any validation errors to the view so that the user can correct them. The eShopOnContainers multi-platform app performs synchronous client-side validation of view model properties and notifies the user of any validation errors by highlighting the control that contains the invalid data, and by displaying error messages that inform the user of why the data is invalid. The image below shows the classes involved in performing validation in the eShopOnContainers multi-platform app.
 
-:::image type="content" source="media/validation-workflow.png" alt-text="Validation classes in the eShopOnContainers multi-platform app.":::
+![Validation classes in the eShopOnContainers multi-platform app.](./media/validation-workflow.png)
 
 View model properties that require validation are of type `ValidatableObject<T>`, and each `ValidatableObject<T>` instance has validation rules added to its `Validations` property. Validation is invoked from the view model by calling the `Validate` method of the `ValidatableObject<T>` instance, which retrieves the validation rules and executes them against the `ValidatableObject<T>.Value` property. Any validation errors are placed into the `Errors` property of the `ValidatableObject<T>` instance, and the `IsValid` property of the `ValidatableObject<T>` instance is updated to indicate whether the validation succeeded or failed. The following code shows the implementation of the `ValidatableObject<T>`:
 
@@ -201,7 +201,7 @@ The `Entry` control binds to the `UserName.Value` property of the `ValidatableOb
 
 The eShopOnContainers multi-platform app notifies the user of any validation errors by highlighting the control that contains the invalid data with a red background, and by displaying an error message that informs the user why the data is invalid below the control containing the invalid data. When the invalid data is corrected, the background changes back to the default state and the error message is removed. The image below shows the `LoginView` in the eShopOnContainers multi-platform app when validation errors are present.
 
-:::image type="content" source="media/displaying-validation-errors.png" alt-text="Displaying validation errors during login.":::
+![Displaying validation errors during login.](./media/displaying-validation-errors.png)
 
 ### Highlighting a control that contains invalid data
 

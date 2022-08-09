@@ -43,7 +43,7 @@ The `CatalogService` class is used to manage the data retrieval process from the
 
 The image below shows the interaction of classes that read catalog data from the catalog microservice for displaying by the CatalogView.
 
-:::image type="content" source="media/retrieving-data-for-catalog.png" alt-text="Retrieving data from the catalog microservice.":::
+![Retrieving data from the catalog microservice.](./media/retrieving-data-for-catalog.png)
 
 When the `CatalogView` is navigated to, the `OnInitialize` method in the CatalogViewModel class is called. This method retrieves catalog data from the catalog microservice, as demonstrated in the following code example:
 
@@ -158,7 +158,7 @@ The `BasketService` class is used to manage the data retrieval and update proces
 
 The image below shows the interaction of classes that send the basket data displayed by the BasketView, to the basket microservice.
 
-:::image type="content" source="media/sending-data-to-the-basket-microservice.png" alt-text="Sending data to the basket microservice.":::
+![Sending data to the basket microservice.](./media/sending-data-to-the-basket-microservice.png)
 
 When an item is added to the shopping basket, the `ReCalculateTotalAsync` method in the `BasketViewModel` class is called. This method updates the total value of items in the basket, and sends the basket data to the basket microservice, as demonstrated in the following code example:
 
@@ -232,7 +232,7 @@ This method uses an instance of the `RedisBasketRepository` class to persist the
 
 The image below shows the interactions of classes that delete basket data from the basket microservice, for the `CheckoutView`.
 
-:::image type="content" source="media/deleting-data-from-the-basket-microservice.png" alt-text="Deleting data from the basket microservice.":::
+![Deleting data from the basket microservice.](./media/deleting-data-from-the-basket-microservice.png)
 
 When the checkout process is invoked, the `CheckoutAsync` method in the `CheckoutViewModel` class is called. This method creates a new order, before clearing the shopping basket, as demonstrated in the following code example:
 

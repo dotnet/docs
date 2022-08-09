@@ -12,7 +12,7 @@ ms.date: 07/12/2022
 
 DOWNLOAD available at: <https://aka.ms/maui-ebook>
 
-**EDITION v1.0** - Updated to .NET MAUI
+**EDITION v1.0**
 
 PUBLISHED BY
 

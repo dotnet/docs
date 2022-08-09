@@ -78,7 +78,7 @@ For information about the implementation of the backend services, see [.NET Micr
 
 This guide focuses on building cross-platform enterprise apps using .NET MAUI, and uses the eShopOnContainers multi-platform app as an example. The image below shows the pages from the eShopOnContainers multi-platform app that provide the functionality outlined earlier.
 
-![The eShopOnContainers MAUI app](./media/mobile-app-screens.png)
+![The eShopOnContainers MAUI app](./media/mobile-app-screens.jpg)
 
 The multi-platform app consumes the backend services provided by the eShopOnContainers reference application. However, it can be configured to consume data from mock services for those who wish to avoid deploying the backend services.
 

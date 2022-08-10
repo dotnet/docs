@@ -243,7 +243,7 @@ The `TRACE` request is can be useful for debugging as it provides application-le
 :::code language="csharp" source="snippets/httpclient/Program.Trace.cs" id="trace":::
 
 > [!CAUTION]
-> The `TRACE` HTTP verb is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [OWASP: Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
+> The `TRACE` HTTP verb is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [Open Web Application Security Project (OWASP): Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
 
 ## Handle an HTTP response
 
@@ -264,6 +264,18 @@ If you need to have the framework throw the <xref:System.Net.Http.HttpRequestExc
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
 
 This will throw an `HttpRequestException` if the response status code is not within the range 200-299.
+
+With a valid response, you can access the response body using the <xref:System.Net.Http.HttpResponseMessage.Content> property. The body is available as an <xref:System.Net.Http.HttpContent> instance, which you can use to access the body as a stream, byte array, or string:
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="stream":::
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="array":::
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="string":::
+
+Finally, when you know an HTTP endpoint returns JSON you can use the  [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package to deserialize the response body into any valid C# object:
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="json":::
 
 ## See also
 

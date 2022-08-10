@@ -1,6 +1,6 @@
 ﻿static partial class Program
 {
-    static async Task HandleResponsesAsync(HttpClient client)
+    static async Task HandleResponsesAsync<T>(HttpClient client)
     {
         using HttpRequestMessage request = new(
             HttpMethod.Head, 
@@ -27,5 +27,22 @@
         // <ensurestatuscode>
         response.EnsureSuccessStatusCode();
         // </ensurestatuscode>
+
+        // <stream>
+        await using Stream streamResponse =
+            await response.Content.ReadAsStreamAsync();
+        // </stream>
+
+        // <array>
+        byte[] arrayResponse = await response.Content.ReadAsByteArrayAsync();
+        // </array>
+
+        // <string>
+        string stringResponse = await response.Content.ReadAsStringAsync();
+        // </string>
+
+        // <json>
+        T? result = await response.Content.ReadFromJsonAsync<T>();
+        // </json>
     }
 }

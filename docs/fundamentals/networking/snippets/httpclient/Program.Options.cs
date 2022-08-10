@@ -11,16 +11,19 @@
 
         response.EnsureSuccessStatusCode()
             .WriteRequestToConsole();
-        
-        if (response.Content.Headers.Allow is { Count: > 0 } allowHeaders)
+
+        foreach (var header in response.Content.Headers)
         {
-            WriteLine(
-                $"Allow: {string.Join(", ", allowHeaders)}\n");
+            WriteLine($"{header.Key}: {string.Join(", ", header.Value)}");
         }
+        WriteLine();
 
         // Expected output
         //   OPTIONS https://www.example.com/ HTTP/1.1
         //   Allow: OPTIONS, GET, HEAD, POST
+        //   Content-Type: text/html; charset=utf-8
+        //   Expires: Wed, 17 Aug 2022 17:28:42 GMT
+        //   Content-Length: 0
     }
     // </options>
 }

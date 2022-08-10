@@ -2543,8 +2543,10 @@ items:
       displayName: networking, httpclient
       href: networking/httpclient-guidelines.md
     - name: HttpClient
+      displayName: networking,httpclient,http,web services,client
       href: networking/httpclient.md
     - name: IHttpClientFactory
+      displayName: networking,httpclient,http,dependency injection,client,factory
       href: ../core/extensions/httpclient-factory.md
     - name: HTTP/3 with .NET
       href: ../core/extensions/httpclient-http3.md

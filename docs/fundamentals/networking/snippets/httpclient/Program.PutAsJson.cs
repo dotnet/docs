@@ -7,8 +7,8 @@
             "todos/5",
             new Todo(Title: "partially update todo", Completed: true));
 
-        response.EnsureSuccessStatusCode();
-        response.WriteToConsole();
+        response.EnsureSuccessStatusCode()
+            .WriteRequestToConsole();
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
         WriteLine($"{todo}\n");

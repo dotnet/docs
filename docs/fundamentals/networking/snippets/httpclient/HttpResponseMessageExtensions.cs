@@ -1,6 +1,6 @@
 ﻿static class HttpResponseMessageExtensions
 {
-    internal static void WriteToConsole(this HttpResponseMessage response)
+    internal static void WriteRequestToConsole(this HttpResponseMessage response)
     {
         if (response is null)
         {

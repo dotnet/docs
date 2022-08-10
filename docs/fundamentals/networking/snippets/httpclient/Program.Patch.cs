@@ -15,8 +15,8 @@
             "todos/1",
             jsonContent);
 
-        response.EnsureSuccessStatusCode();
-        response.WriteToConsole();
+        response.EnsureSuccessStatusCode()
+            .WriteRequestToConsole();
 
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");

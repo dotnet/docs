@@ -3,11 +3,10 @@
     // <get>
     static async Task GetAsync(HttpClient client)
     {
-        using HttpResponseMessage response =
-            await client.GetAsync("todos/3");
+        using HttpResponseMessage response = await client.GetAsync("todos/3");
         
-        response.EnsureSuccessStatusCode();
-        response.WriteToConsole();
+        response.EnsureSuccessStatusCode()
+            .WriteRequestToConsole();
         
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");

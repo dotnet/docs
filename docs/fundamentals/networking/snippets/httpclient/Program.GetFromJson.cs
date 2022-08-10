@@ -6,10 +6,12 @@
         var todos = await client.GetFromJsonAsync<List<Todo>>(
             "todos?userId=1&completed=false");
 
+        WriteLine("GET https://jsonplaceholder.typicode.com/todos?userId=1&completed=false HTTP/1.1");
         todos?.ForEach(WriteLine);
         WriteLine();
 
         // Expected output:
+        //   GET https://jsonplaceholder.typicode.com/todos?userId=1&completed=false HTTP/1.1
         //   Todo { UserId = 1, Id = 1, Title = delectus aut autem, Completed = False }
         //   Todo { UserId = 1, Id = 2, Title = quis ut nam facilis et officia qui, Completed = False }
         //   Todo { UserId = 1, Id = 3, Title = fugiat veniam minus, Completed = False }

@@ -9,8 +9,8 @@
 
         using HttpResponseMessage response = await client.SendAsync(request);
 
-        response.EnsureSuccessStatusCode();
-        response.WriteToConsole();
+        response.EnsureSuccessStatusCode()
+            .WriteRequestToConsole();
         
         if (response.Content.Headers.Allow is { Count: > 0 } allowHeaders)
         {

@@ -7,8 +7,8 @@
             "todos", 
             new Todo(UserId: 9, Id: 99, Title: "Show extensions", Completed: false));
 
-        response.EnsureSuccessStatusCode();
-        response.WriteToConsole();
+        response.EnsureSuccessStatusCode()
+            .WriteRequestToConsole();
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
         WriteLine($"{todo}\n");

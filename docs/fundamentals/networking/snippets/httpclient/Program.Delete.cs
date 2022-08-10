@@ -3,11 +3,10 @@
     // <delete>
     static async Task DeleteAsync(HttpClient client)
     {
-        using HttpResponseMessage response =
-            await client.DeleteAsync("todos/1");
+        using HttpResponseMessage response = await client.DeleteAsync("todos/1");
         
-        response.EnsureSuccessStatusCode();
-        response.WriteToConsole();
+        response.EnsureSuccessStatusCode()
+            .WriteRequestToConsole();
 
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");

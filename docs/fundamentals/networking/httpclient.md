@@ -14,19 +14,19 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 - A request method is **_cacheable_** when its corresponding response is stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
 - **Safe methods** are methods that don't modify the state of the resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
 
-| HTTP verb | Is idempotent | Is cacheable             | Is safe |
-|-----------|---------------|--------------------------|---------|
-| `GET`     | ✔️ Yes       | ✔️ Yes                   | ✔️ Yes |
-| `POST`    | ❌ No         | ⚠️ <sup>**†**</sup>Rarely | ❌ No   |
-| `PUT`     | ✔️ Yes       | ❌ No                     | ❌ No   |
-| `PATCH`   | ❌ No         | ❌ No                     | ❌ No   |
-| `DELETE`  | ✔️ Yes       | ❌ No                     | ❌ No   |
-| `HEAD`    | ✔️ Yes       | ✔️ Yes                   | ✔️ Yes |
-| `OPTIONS` | ✔️ Yes       | ❌ No                     | ✔️ Yes |
-| `TRACE`   | ✔️ Yes       | ❌ No                     | ✔️ Yes |
-| `CONNECT` | ❌ No         | ❌ No                     | ❌ No   |
+| HTTP verb | Is idempotent | Is cacheable         | Is safe |
+|-----------|---------------|----------------------|---------|
+| `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
+| `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `PATCH`   | ❌ No         | ❌ No                 | ❌ No   |
+| `DELETE`  | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `HEAD`    | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `OPTIONS` | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `TRACE`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `CONNECT` | ❌ No         | ❌ No                 | ❌ No   |
 
-<sup>**†**</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present.
+<sup>†</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present.
 
 In this article, you'll learn how to make HTTP requests and handle responses with the `HttpClient` class.
 

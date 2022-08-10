@@ -1,18 +1,18 @@
 ---
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
-ms.date: 04/20/2022
+ms.date: 07/27/2022
 ms.author: xinrzhu
 author: nickzhums
 ---
 
 # Resource management using the Azure SDK for .NET
 
-The next-generation of .NET SDK's management (or "management plane") libraries will help you create, provision, and manage Azure resources from within .NET applications. All Azure services have corresponding management libraries.
+The Azure SDK for .NET management plane libraries will help you create, provision, and manage Azure resources from within .NET applications. All Azure services have corresponding management libraries.
 
 With the management libraries (names beginning with `Azure.ResourceManager`, for example, `Azure.ResourceManager.Compute`), you can write configuration and deployment programs to perform the same tasks that you can through the Azure portal, Azure CLI, or other resource management tools.
 
-Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
+Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide [core capabilities](https://azure.github.io/azure-sdk/general_azurecore.html) that are shared amongst all Azure SDKs, including:
 
 - The intuitive Azure Identity library.
 - An HTTP pipeline with custom policies.
@@ -24,11 +24,14 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 
 ## Get started
 
+### Prerequisites
+
+- An [Azure subscription](https://azure.microsoft.com/free/dotnet/)
+- A [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=false) implementation, such as an [Azure Identity library credential type](/dotnet/api/overview/azure/Identity-readme#credential-classes).
+
 ### Install the package
 
-Install the Azure Resources management packages for .NET with [NuGet](https://www.nuget.org/).
-
-For example:
+Install the Azure resource management NuGet packages for .NET. For example:
 
 # [PowerShell](#tab/PowerShell)
 
@@ -49,16 +52,6 @@ dotnet add package Azure.ResourceManager.Network --prerelease
 ```
 
 ---
-
-### Prerequisites
-
-Set up a way to authenticate to Azure with Azure Identity. Some options are:
-
-- Through the [Azure CLI login](/cli/azure/authenticate-azure-cli)
-- Via [Visual Studio](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio&preserve-view=false)
-- Setting [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/AuthUsingEnvironmentVariables.md)
-
-More information and different authentication approaches using Azure Identity can be found in [this document](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=false).
 
 ### Authenticate the client
 

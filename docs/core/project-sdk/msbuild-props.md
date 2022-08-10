@@ -542,7 +542,7 @@ To speed up the build time, builds that are implicitly triggered by Visual Studi
 
 The following MSBuild properties are documented in this section:
 
-- [DefaultExcludesInProjectFolder](#defaultexcludesinprojectfolder)
+- [DefaultItemExcludesInProjectFolder](#defaultitemexcludesinprojectfolder)
 - [DefaultItemExcludes](#defaultitemexcludes)
 - [EnableDefaultCompileItems](#enabledefaultcompileitems)
 - [EnableDefaultEmbeddedResourceItems](#enabledefaultembeddedresourceitems)
@@ -561,15 +561,15 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
 </PropertyGroup>
 ```
 
-### DefaultExcludesInProjectFolder
+### DefaultItemExcludesInProjectFolder
 
-Use the `DefaultExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.
+Use the `DefaultItemExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.
 
-This property is very similar to the `DefaultItemExcludes` property, except that it only considers files and folders in the project folder. When a glob pattern would unintentionally match items outside the project folder with a relative path, use the `DefaultExcludesInProjectFolder` property instead of the `DefaultItemExcludes` property.
+This property is very similar to the `DefaultItemExcludes` property, except that it only considers files and folders in the project folder. When a glob pattern would unintentionally match items outside the project folder with a relative path, use the `DefaultItemExcludesInProjectFolder` property instead of the `DefaultItemExcludes` property.
 
 ```xml
 <PropertyGroup>
-  <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);**/myprefix*/**</DefaultExcludesInProjectFolder>
+  <DefaultItemExcludesInProjectFolder>$(DefaultItemExcludesInProjectFolder);**/myprefix*/**</DefaultItemExcludesInProjectFolder>
 </PropertyGroup>
 ```
 
@@ -937,6 +937,7 @@ The following MSBuild properties are documented in this section:
 
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
+- [DisableTransitiveProjectReferences](#disabletransitiveprojectreferences)
 - [Restore-related properties](#restore-related-properties)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
 
@@ -961,6 +962,20 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 ```xml
 <PropertyGroup>
   <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+</PropertyGroup>
+```
+
+### DisableTransitiveProjectReferences
+
+The `DisableTransitiveProjectReferences` property controls implicit project references. Set this property to `true` to disable implicit `ProjectReference` items. Disabling implicit project references results in non-transitive behavior similar to the [legacy project system](https://github.com/dotnet/project-system/blob/main/docs/feature-comparison.md).
+
+When this property is `true`, it has a similar effect to that of setting [`PrivateAssets="All"`](/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) on all of the dependencies of the depended-upon project.
+
+If you set this property to `true`, you can add explicit references to just the projects you need.
+
+```xml
+<PropertyGroup>
+  <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
 </PropertyGroup>
 ```
 

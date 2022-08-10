@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorProfilerCallback::ExceptionCLRCatcherExecute Method
 
-Called when a `catch` block for an exception is executed inside the common language runtime (CLR) itself. This method is obsolete in the .NET Framework version 2.0.  
+Called when a `catch` block for an exception is executed inside the common language runtime (CLR) itself. This method is obsolete in .NET Framework version 2.0.  
   
 ## Syntax  
   

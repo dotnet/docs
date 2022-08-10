@@ -8,14 +8,14 @@ ms.date: 08/10/2022
 
 # Make HTTP requests with the HttpClient
 
-Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources. The request methods are described by several differentiators, first by their verb but also by the following characteristics:
+Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources. The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
 
 - A request method is **_idempotent_** if it can be successfully processed multiple times without changing the result. For more information, see [RFC 7231: Section 4.2.2 Idempotent Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
-- A request method is **_cacheable_** when its corresponding response is stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
-- **Safe methods** are methods that don't modify the state of the resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
+- A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
+- A request method is considered a **safe method** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
 
 | HTTP verb | Is idempotent | Is cacheable         | Is safe |
-|-----------|---------------|----------------------|---------|
+|----------:|---------------|----------------------|---------|
 | `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
 | `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
 | `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
@@ -30,11 +30,13 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 
 In this article, you'll learn how to make HTTP requests and handle responses with the `HttpClient` class.
 
-> [!NOTE]
-> All of the example HTTP requests either rely on <https://jsonplaceholder.typicode.com> or <https://www.example.com>.
+> [!IMPORTANT]
+> All of the example HTTP requests target one of the following URLs:
+>
+> - <https://jsonplaceholder.typicode.com>: Free fake API for testing and prototyping.
+> - <https://www.example.com>: This domain is for use in illustrative examples in documents.
 
-> [!TIP]
-> Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data, but not always. When they do, and as a convenience, the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`.
+Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data, but not always. When they do, and as a convenience, the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`. The examples below will call attention to when these extensions are available.
 
 ## Create an `HttpClient`
 
@@ -59,19 +61,19 @@ Alternatively, you can create `HttpClient` instances using a factory-pattern app
 
 To make an HTTP request, you call any of the following APIs:
 
-| HTTP verb       | API                                                                                 |
-|-----------------|-------------------------------------------------------------------------------------|
-| `GET`           | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
-| `GET`           | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
-| `GET`           | <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>    |
-| `GET`           | <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>    |
-| `POST`          | <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType>         |
-| `PUT`           | <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType>          |
-| `PATCH`         | <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType>        |
-| `DELETE`        | <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType>       |
-| <sup>†</sup>`ANY` | <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType>         |
+| HTTP verb                    | API                                                                                 |
+|-----------------------------:|-------------------------------------------------------------------------------------|
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>    |
+| `GET`                        | <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>    |
+| `POST`                       | <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType>         |
+| `PUT`                        | <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType>          |
+| `PATCH`                      | <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType>        |
+| `DELETE`                     | <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType>       |
+| <sup>†</sup>`USER SPECIFIED` | <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType>         |
 
-<sup>†</sup>The `*` indicates that the `SendAsync` method accepts any valid <xref:System.Net.Http.HttpMethod>.
+<sup>†</sup>A `USER SPECIFIED` request indicates that the `SendAsync` method accepts any valid <xref:System.Net.Http.HttpMethod>.
 
 > [!WARNING]
 > Making HTTP requests is considered network activity, and is I/O bound work. While there is a synchronous <xref:System.Net.Http.HttpClient.Send%2A?displayProperty=nameWithType> method, it is recommended to use the asynchronous APIs instead, unless you have good reason not to.
@@ -82,11 +84,34 @@ To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:Sy
 
 :::code language="csharp" source="snippets/httpclient/Program.Get.cs" id="get":::
 
-#### HTTP Get extensions
+The preceding code:
 
-To automatically deserialize `GET` requests into strongly-typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that is part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+- Makes a `GET` request to `"https://jsonplaceholder.typicode.com/todos/3"`.
+- Ensures that the response is successful.
+- Writes the request details to the console.
+- Reads the response body as a string.
+- Writes the JSON response body to the console.
+
+The `WriteRequestToConsole` is a custom extension method that isn't part of the framework, but if you're curious how it's written, consider the following C# code:
+
+:::code source="snippets/httpclient/HttpResponseMessageExtensions.cs":::
+
+#### HTTP Get from JSON
+
+The <https://jsonplaceholder.typicode.com/todos> endpoint returns a JSON array of `Todo` objects. The `Todo` object is defined as follows:
+
+:::code source="snippets/httpclient/Todo.cs":::
+
+It's a `record class` type, with the optional `Id`, `Title`, `Completed`, and `UserId` properties. To automatically deserialize `GET` requests into strongly-typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code language="csharp" source="snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
+
+The preceding code:
+
+- Makes a `GET` request to `"https://jsonplaceholder.typicode.com/todos?userId=1&completed=false"`.
+  - The query string represents the filtering criteria for the request.
+- The response is automatically deserialized into a `List<Todo>` when successful.
+- The request details are written to the console, along with each `Todo`.
 
 ### HTTP Post
 
@@ -94,11 +119,24 @@ To make an HTTP `POST` request, given an `HttpClient` and a URI, use the <xref:S
 
 :::code language="csharp" source="snippets/httpclient/Program.Post.cs" id="post":::
 
-#### HTTP Post extensions
+The preceding code:
 
-To automatically serialize `POST` request arguments and deserialize responses into strongly-typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> extension method that is part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+- Prepares a <xref:System.Net.Http.StringContent> instance with the JSON body of the request.
+- Makes a `POST` request to `"https://jsonplaceholder.typicode.com/todos"`.
+- Ensures that the response is successful, and writes the request details to the console.
+- Writes the response body as a string to the console.
+
+#### HTTP Post as JSON
+
+To automatically serialize `POST` request arguments and deserialize responses into strongly-typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code language="csharp" source="snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
+
+The preceding code:
+
+- Serializes the `Todo` instance as JSON, and makes a `POST` request to `"https://jsonplaceholder.typicode.com/todos"`.
+- Ensures that the response is successful, and writes the request details to the console.
+- Deserializes the response body into a `Todo` instance, and writes the `Todo` to the console.
 
 ### HTTP Put
 
@@ -106,7 +144,7 @@ To make an HTTP `PUT` request, given an `HttpClient` and a URI, use the <xref:Sy
 
 :::code language="csharp" source="snippets/httpclient/Program.Put.cs" id="put":::
 
-#### HTTP Put extensions
+#### HTTP Put as JSON
 
 :::code language="csharp" source="snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 

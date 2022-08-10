@@ -12,8 +12,7 @@
         WriteLine($"{jsonResponse}\n");
 
         // Expected output:
-        //   https://jsonplaceholder.typicode.com/todos/3
-        //   GET HTTP/ 1.1
+        //   GET https://jsonplaceholder.typicode.com/todos/3 HTTP/ 1.1
         //   {
         //     "userId": 1,
         //     "id": 3,

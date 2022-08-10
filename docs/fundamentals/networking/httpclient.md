@@ -245,7 +245,7 @@ The `TRACE` request is can be useful for debugging as it provides application-le
 > [!CAUTION]
 > The `TRACE` HTTP verb is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [OWASP: Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
 
-## Handle HTTP responses
+## Handle an HTTP response
 
 Whenever you're handling an HTTP response, you interact with the <xref:System.Net.Http.HttpResponseMessage> type. Several members are used when evaluating the validity of a response. The HTTP status code is available via the <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property. Imagine that you've sent a request given a client instance:
 

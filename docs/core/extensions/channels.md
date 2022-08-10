@@ -14,7 +14,7 @@ This library is available in the [System.Threading.Channels](https://www.nuget.o
 
 ## Producer/consumer conceptual programming model
 
-Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of channels as you would any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or such as whether the channel may be accessed by multiple producers or multiple consumers concurrently.
+Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model hands off data from one party to another. Try to think of channels as you would any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or whether the channel may be accessed by multiple producers or multiple consumers concurrently.
 
 ## Bounding strategies
 
@@ -51,7 +51,7 @@ When using a bounded channel, you can specify the behavior the channel will adhe
 
 | Value | Behavior |
 |--|--|
-| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. When calling `WriteAsync` waits for space to be available in order to complete the write operation. When calling `TryWrite` will return `false` immediately. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. When calling `WriteAsync`, waits for space to be available in order to complete the write operation. When calling `TryWrite`, returns `false` immediately. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropWrite?displayProperty=nameWithType> | Drops the item being written. |
@@ -117,7 +117,7 @@ The preceding code creates a bounded channel with a max capacity of `1`. Additio
 
 :::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedoptions":::
 
-In the preceding code, the channel is created as a bounded channel that's limited to 1,000 items, with a single writer but many readers. Its full mode behavior is defined as `DropWrite` which means that it will drop the item being written if the channel is full.
+In the preceding code, the channel is created as a bounded channel that's limited to 1,000 items, with a single writer but many readers. Its full mode behavior is defined as `DropWrite`, which means that it will drop the item being written if the channel is full.
 
 When using a bounded channel, to observe items that are dropped register an `itemDropped` callback:
 
@@ -171,4 +171,4 @@ The preceding code uses the <xref:System.Threading.Channels.ChannelReader%601.Re
 
 - [On .NET show: Working with Channels in .NET](/shows/on-net/working-with-channels-in-net)
 - [.NET Blog: An Introduction to System.Threading.Channels](https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels)
-- [Managed threading basics](/dotnet/standard/threading/managed-threading-basics)
+- [Managed threading basics](../../standard/threading/managed-threading-basics.md)

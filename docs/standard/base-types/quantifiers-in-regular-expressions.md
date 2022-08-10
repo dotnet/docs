@@ -1,7 +1,7 @@
 ---
 title: "Quantifiers in Regular Expressions"
 description: Learn about regular expression quantifiers, which specify how many instances of a character, group, or character class must be present in the input to match.
-ms.date: "07/28/2022"
+ms.date: "08/10/2022"
 ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs: 
@@ -19,7 +19,7 @@ ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
 ---
 # Quantifiers in Regular Expressions
 
-Quantifiers specify how many instances of a character, group, or a character class must be present in the input for a match to be found. The following table lists the quantifiers supported by .NET:
+Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found. The following table lists the quantifiers supported by .NET:
   
 |Greedy quantifier|Lazy quantifier|Description|  
 |-----------------------|---------------------|-----------------|  
@@ -33,20 +33,20 @@ Quantifiers specify how many instances of a character, group, or a character cla
  The quantities `n` and `m` are integer constants. Ordinarily, quantifiers are greedy. They cause the regular expression engine to match as many occurrences of particular patterns as possible. Appending the `?` character to a quantifier makes it lazy. It causes the regular expression engine to match as few occurrences as possible. For a complete description of the difference between greedy and lazy quantifiers, see the section [Greedy and Lazy Quantifiers](#Greedy) later in this article.  
   
 > [!IMPORTANT]
-> Nesting quantifiers, such as the regular expression pattern `(a*)*`, can increase the number of comparisons. The regular expression engine must perform the comparisons as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking](backtracking-in-regular-expressions.md).  
+> Nesting quantifiers, such as the regular expression pattern `(a*)*`, can increase the number of comparisons that the regular expression engine must perform. The number of comparisons can increase as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking](backtracking-in-regular-expressions.md).  
   
 ## Regular Expression Quantifiers  
 
  The following sections list the quantifiers supported by .NET regular expressions:
   
 > [!NOTE]
-> If the *, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](character-classes-in-regular-expressions.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk (`\*`) character.  
+> If the *, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](character-classes-in-regular-expressions.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("\*") character.  
   
 ### Match Zero or More Times: *  
 
  The `*` quantifier matches the preceding element zero or more times. It's equivalent to the `{0,}` quantifier. `*` is a greedy quantifier whose lazy equivalent is `*?`.  
   
- The following example illustrates this regular expression. Five of the nine-digit groups in the input string match the pattern and four (`95`, `929`, `9219`, and `9919`) don't.  
+ The following example illustrates this regular expression. Five of the nine digit-groups in the input string match the pattern and four (`95`, `929`, `9219`, and `9919`) don't.  
   
  [!code-csharp[RegularExpressions.Quantifiers#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#1)]
  [!code-vb[RegularExpressions.Quantifiers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#1)]  
@@ -55,10 +55,10 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Specifies that the match must start at a word boundary.|  
 |`91*`|Matches a `9` followed by zero or more `1` characters.|  
 |`9*`|Matches zero or more `9` characters.|  
-|`\b`|Ends at a word boundary.|  
+|`\b`|Specifies that the match must end at a word boundary.|  
   
 ### Match One or More Times: +  
 
@@ -73,10 +73,10 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Start at a word boundary.|  
 |`an+`|Matches an `a` followed by one or more `n` characters.|  
 |`\w*?`|Matches a word character zero or more times but as few times as possible.|  
-|`\b`|Ends at a word boundary.|  
+|`\b`|End at a word boundary.|  
   
 ### Match Zero or One Time: ?  
 
@@ -91,9 +91,9 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Start at a word boundary.|  
 |`an?`|Matches an `a` followed by zero or one `n` character.|  
-|`\b`|Ends at a word boundary.|  
+|`\b`|End at a word boundary.|  
   
 ### Match Exactly n Times: {n}  
 
@@ -108,17 +108,17 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Start at a word boundary.|  
 |`\d+`|Matches one or more decimal digits.|  
 |`\,`|Matches a comma character.|  
 |`\d{3}`|Matches three decimal digits.|  
-|`\b`|Ends at a word boundary.|  
+|`\b`|End at a word boundary.|  
   
 ### Match at Least n Times: {n,}  
 
  The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`,}?`.  
   
- For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and a non-digit character. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrase `"10 weeks and 300 years"`.  
+ For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and a non-digit character. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrases `"10 weeks"` and `"300 years"`.  
   
  [!code-csharp[RegularExpressions.Quantifiers#5](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#5)]
  [!code-vb[RegularExpressions.Quantifiers#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#5)]  
@@ -127,7 +127,7 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Start at a word boundary.|  
 |`\d{2,}`|Matches at least two decimal digits.|  
 |`\b`|Matches a word boundary.|  
 |`\D+`|Matches at least one non-decimal digit.|  
@@ -154,11 +154,11 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Start at a word boundary.|  
 |`\w*?`|Matches zero or more word characters but as few characters as possible.|  
 |`oo`|Matches the string `oo`.|  
 |`\w*?`|Matches zero or more word characters but as few characters as possible.|  
-|`\b`|Ends on a word boundary.|  
+|`\b`|End on a word boundary.|  
   
 ### Match One or More Times (Lazy Match): +?  
 
@@ -202,10 +202,10 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
-|`(\w{3,}?\.)`|Matches at least three-word characters but as few characters as possible, followed by a dot or period character. This pattern is the first capturing group.|  
+|`\b`|Start at a word boundary.|  
+|`(\w{3,}?\.)`|Matches at least three word-characters but as few characters as possible, followed by a dot or period character. This pattern is the first capturing group.|  
 |`(\w{3,}?\.){2}?`|Matches the pattern in the first group two times but as few times as possible.|  
-|`\b`|Ends the match on a word boundary.|  
+|`\b`|End the match on a word boundary.|  
   
 ### Match at Least n Times (Lazy Match): {n,}?  
 
@@ -226,7 +226,7 @@ Quantifiers specify how many instances of a character, group, or a character cla
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`\b`|Starts at a word boundary.|  
+|`\b`|Start at a word boundary.|  
 |`[A-Z]`|Matches an uppercase character from A to Z.|  
 |`(\w*?\s*?)`|Matches zero or more word characters, followed by one or more white-space characters but as few times as possible. This pattern is the first capturing group.|  
 |`{1,10}`|Matches the previous pattern between 1 and 10 times.|  
@@ -236,15 +236,15 @@ Quantifiers specify how many instances of a character, group, or a character cla
 
 ## Greedy and Lazy Quantifiers  
 
- Many quantifiers have two versions:  
+ Some quantifiers have two versions:  
   
 - A greedy version.  
   
-     A greedy quantifier tries to match an element as many times as possible.  
+    A greedy quantifier tries to match an element as many times as possible.  
   
 - A non-greedy (or lazy) version.  
   
-     A non-greedy quantifier tries to match an element as few times as possible. You can turn a greedy quantifier into a lazy quantifier by adding a `?`.  
+    A non-greedy quantifier tries to match an element as few times as possible. You can turn a greedy quantifier into a lazy quantifier by adding a `?`.  
   
  Consider a regular expression that's intended to extract the last four digits from a string of numbers, such as a credit card number. The version of the regular expression that uses the `*` greedy quantifier is `\b.*([0-9]{4})\b`. However, if a string contains two numbers, this regular expression matches the last four digits of the second number only, as the following example shows:
   

@@ -1,7 +1,7 @@
 ---
 title: "How to: Compress and extract files"
-description: Compress & extract files on using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
-ms.date: "07/28/2022"
+description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
+ms.date: "08/10/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -48,7 +48,7 @@ The following example iterates through the contents of an existing *.zip* file a
 To run the sample, place a *.zip* file called *result.zip* in your program folder. When prompted, provide a folder name to extract to.
 
 > [!IMPORTANT]
-> When unzipping files, you must look for malicious file paths that can escape from the directory you unzip into. This is known as a path traversal attack. The following example demonstrates how to check for malicious file paths and provides a safe way to unzip.
+> When unzipping files, you must look for malicious file paths, which can escape from the directory you unzip into. This is known as a path traversal attack. The following example demonstrates how to check for malicious file paths and provides a safe way to unzip.
 
 [!code-csharp[System.IO.Compression.ZipArchive#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
 [!code-vb[System.IO.Compression.ZipArchive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]

@@ -3,7 +3,7 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 07/28/2022
+ms.date: 08/10/2022
 ms.custom: devdivchpfy22
 ---
 # How to manage .NET tools
@@ -24,7 +24,7 @@ A .NET tool is a special NuGet package that contains a console application. You 
 
   The tool binaries are installed in a default directory. You can invoke the tool from the installation directory or any of its subdirectories. Different directories can use different versions of the same tool.
   
-  The .NET CLI uses manifest files to keep track of tools that are installed as local to a directory. When the manifest file is saved in the root directory of a source code repository, a contributor can clone the repository and invoke a single .NET CLI command. This command installs all of the tools listed in the manifest files.
+  The .NET CLI uses manifest files to keep track of tools that are installed as local to a directory. When the manifest file is saved in the root directory of a source code repository, a contributor can clone the repository and invoke a single .NET CLI command to install all of the tools listed in the manifest files.
 
 > [!IMPORTANT]
 > .NET tools run in full trust. Don't install a .NET tool unless you trust the author.

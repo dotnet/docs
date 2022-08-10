@@ -240,6 +240,7 @@ There are several additional configuration options for controlling the `IHttpCli
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
 - <xref:System.Net.Http.HttpClient>
+- [Make HTTP requests with the HttpClient](../../fundamentals/networking/httpclient.md)
 - [Implement HTTP retry with exponential backoff][http-retry]
 
 [di]: dependency-injection.md

@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "code, runtime functionality"
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 ---
-# Common Language Runtime (CLR) overview
+
+# Common Language Runtime (CLR) overview - lorem ipsum
 
 .NET provides a run-time environment, called the common language runtime, that runs the code and provides services that make the development process easier.
 
@@ -37,21 +38,13 @@ As part of their metadata, all managed components carry information about the co
 Language compilers and tools expose the runtime's functionality in ways that are intended to be useful and intuitive to developers. This means that some features of the runtime might be more noticeable in one environment than in another. How you experience the runtime depends on which language compilers or tools you use. For example, if you are a Visual Basic developer, you might notice that with the common language runtime, the Visual Basic language has more object-oriented features than before. The runtime provides the following benefits:
 
 - Performance improvements.
-
 - The ability to easily use components developed in other languages.
-
 - Extensible types provided by a class library.
-
 - Language features such as inheritance, interfaces, and overloading for object-oriented programming.
-
 - Support for explicit free threading that allows creation of multithreaded, scalable applications.
-
 - Support for structured exception handling.
-
 - Support for custom attributes.
-
 - Garbage collection.
-
 - Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](base-types/common-type-system.md).
 
 ## CLR versions
@@ -68,3 +61,5 @@ However, the .NET Framework version number doesn't necessarily correspond to the
 |[Automatic Memory Management](automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|
 |[Overview of .NET Framework](../framework/get-started/overview.md)|Describes key .NET Framework concepts, such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|
 |[Common Type System](./base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|
+
+

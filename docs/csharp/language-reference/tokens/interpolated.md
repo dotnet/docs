@@ -116,10 +116,10 @@ For more information, see the [Interpolated strings](~/_csharpstandard/standard/
 
 ## See also
 
--   [Simplify interpolation (style rule IDE0071)](../../../fundamentals/code-analysis/style-rules/ide0071.md)
--   [C# reference](../index.md)
--   [C# special characters](index.md)
--   [Strings](../../programming-guide/strings/index.md)
--   [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
--   [Composite formatting](../../../standard/base-types/composite-formatting.md)
--   <xref:System.String.Format%2A?displayProperty=nameWithType>
+- [Simplify interpolation (style rule IDE0071)](../../../fundamentals/code-analysis/style-rules/ide0071.md)
+- [C# reference](../index.md)
+- [C# special characters](index.md)
+- [Strings](../../programming-guide/strings/index.md)
+- [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
+- [Composite formatting](../../../standard/base-types/composite-formatting.md)
+- <xref:System.String.Format%2A?displayProperty=nameWithType>

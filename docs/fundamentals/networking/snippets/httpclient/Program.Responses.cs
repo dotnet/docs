@@ -29,16 +29,16 @@
         // </ensurestatuscode>
 
         // <stream>
-        await using Stream streamResponse =
+        await using Stream responseStream =
             await response.Content.ReadAsStreamAsync();
         // </stream>
 
         // <array>
-        byte[] arrayResponse = await response.Content.ReadAsByteArrayAsync();
+        byte[] responseByteArray = await response.Content.ReadAsByteArrayAsync();
         // </array>
 
         // <string>
-        string stringResponse = await response.Content.ReadAsStringAsync();
+        string responseString = await response.Content.ReadAsStringAsync();
         // </string>
 
         // <json>

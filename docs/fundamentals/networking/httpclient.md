@@ -269,13 +269,21 @@ With a valid response, you can access the response body using the <xref:System.N
 
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="stream":::
 
+In the preceding code, the `responseStream` can be used to read the response body.
+
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="array":::
 
+In the preceding code, the `responseByteArray` can be used to read the response body.
+
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="string":::
+
+In the preceding code, the `responseString` can be used to read the response body.
 
 Finally, when you know an HTTP endpoint returns JSON you can use the  [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package to deserialize the response body into any valid C# object:
 
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="json":::
+
+In the preceding code, the `result` is the deserialized response body as the type `T`.
 
 ## See also
 

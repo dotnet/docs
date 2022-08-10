@@ -14,17 +14,17 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 - A request method is **_cacheable_** when its corresponding response is stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
 - **Safe methods** are methods that don't modify the state of the resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
 
-| HTTP verb | Is idempotent | Is cacheable           | Is safe |
-|-----------|---------------|------------------------|---------|
-| `GET`     | Yes           | Yes                    | Yes     |
-| `POST`    | No            | <sup>**†**</sup>Rarely | No      |
-| `PUT`     | Yes           | No                     | No      |
-| `PATCH`   | No            | No                     | No      |
-| `DELETE`  | Yes           | No                     | No      |
-| `HEAD`    | Yes           | Yes                    | Yes     |
-| `OPTIONS` | Yes           | No                     | Yes     |
-| `TRACE`   | Yes           | No                     | Yes     |
-| `CONNECT` | No            | No                     | No      |
+| HTTP verb | Is idempotent | Is cacheable             | Is safe |
+|-----------|---------------|--------------------------|---------|
+| `GET`     | ✔️ Yes       | ✔️ Yes                   | ✔️ Yes |
+| `POST`    | ❌ No         | ⚠️ <sup>**†**</sup>Rarely | ❌ No   |
+| `PUT`     | ✔️ Yes       | ❌ No                     | ❌ No   |
+| `PATCH`   | ❌ No         | ❌ No                     | ❌ No   |
+| `DELETE`  | ✔️ Yes       | ❌ No                     | ❌ No   |
+| `HEAD`    | ✔️ Yes       | ✔️ Yes                   | ✔️ Yes |
+| `OPTIONS` | ✔️ Yes       | ❌ No                     | ✔️ Yes |
+| `TRACE`   | ✔️ Yes       | ❌ No                     | ✔️ Yes |
+| `CONNECT` | ❌ No         | ❌ No                     | ❌ No   |
 
 <sup>**†**</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present.
 
@@ -33,25 +33,30 @@ In this article, you'll learn how to make HTTP requests and handle responses wit
 > [!NOTE]
 > All of the example HTTP requests either rely on <https://jsonplaceholder.typicode.com> or <https://www.example.com>.
 
+> [!TIP]
+> Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data, but not always. When they do, and as a convenience, the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`.
+
 ## HTTP Get
 
 :::code language="csharp" source="snippets/httpclient/Program.Get.cs" id="get":::
+
+### HTTP Get extensions
+
+:::code language="csharp" source="snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 
 ## HTTP Post
 
 :::code language="csharp" source="snippets/httpclient/Program.Post.cs" id="post":::
 
+### HTTP Post extensions
+
+:::code language="csharp" source="snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
+
 ## HTTP Put
 
 :::code language="csharp" source="snippets/httpclient/Program.Put.cs" id="put":::
 
-## HTTP extensions
-
-Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data. As a convenience, the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`.
-
-:::code language="csharp" source="snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
-
-:::code language="csharp" source="snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
+### HTTP Put extensions
 
 :::code language="csharp" source="snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 

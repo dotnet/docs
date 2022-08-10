@@ -17,7 +17,7 @@
 
         response.EnsureSuccessStatusCode();
         response.WriteToConsole();
-        
+
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");
 
@@ -29,6 +29,6 @@
         //     "title": "delectus aut autem",
         //     "completed": true
         //   }
-}
+    }
     // </patch>
 }

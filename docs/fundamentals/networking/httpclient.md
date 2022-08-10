@@ -55,55 +55,113 @@ This `HttpClient` instance will always use the base address when making subseque
 
 Alternatively, you can create `HttpClient` instances using a factory-pattern approach that allows you to configure any number of clients and consume them as dependency injection services. For more information, see [IHttpClientFactory with .NET](../../core/extensions/httpclient-factory.md).
 
-## HTTP Get
+## Make an HTTP request
+
+To make an HTTP request, you call any of the following APIs:
+
+| HTTP verb       | API                                                                                 |
+|-----------------|-------------------------------------------------------------------------------------|
+| `GET`           | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
+| `GET`           | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
+| `GET`           | <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>    |
+| `GET`           | <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>    |
+| `POST`          | <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType>         |
+| `PUT`           | <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType>          |
+| `PATCH`         | <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType>        |
+| `DELETE`        | <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType>       |
+| <sup>†</sup>`ANY` | <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType>         |
+
+<sup>†</sup>The `*` indicates that the `SendAsync` method accepts any valid <xref:System.Net.Http.HttpMethod>.
+
+> [!WARNING]
+> Making HTTP requests is considered network activity, and is I/O bound work. While there is a synchronous <xref:System.Net.Http.HttpClient.Send%2A?displayProperty=nameWithType> method, it is recommended to use the asynchronous APIs instead, unless you have good reason not to.
+
+### HTTP Get
 
 To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Get.cs" id="get":::
 
-### HTTP Get extensions
+#### HTTP Get extensions
 
 To automatically deserialize `GET` requests into strongly-typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that is part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code language="csharp" source="snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 
-## HTTP Post
+### HTTP Post
+
+To make an HTTP `POST` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Post.cs" id="post":::
 
-### HTTP Post extensions
+#### HTTP Post extensions
 
 To automatically serialize `POST` request arguments and deserialize responses into strongly-typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> extension method that is part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code language="csharp" source="snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
 
-## HTTP Put
+### HTTP Put
+
+To make an HTTP `PUT` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Put.cs" id="put":::
 
-### HTTP Put extensions
+#### HTTP Put extensions
 
 :::code language="csharp" source="snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 
-## HTTP Patch
+### HTTP Patch
+
+To make an HTTP `PATCH` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Patch.cs" id="patch":::
 
-## HTTP Delete
+### HTTP Delete
+
+To make an HTTP `DELETE` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Delete.cs" id="delete":::
 
-## HTTP Head
+### HTTP Head
+
+To make an HTTP `HEAD` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> set to `HttpMethod.Head`:
 
 :::code language="csharp" source="snippets/httpclient/Program.Head.cs" id="head":::
 
-## HTTP Options
+### HTTP Options
+
+To make an HTTP `OPTIONS` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> set to `HttpMethod.Options`:
 
 :::code language="csharp" source="snippets/httpclient/Program.Options.cs" id="options":::
 
-## HTTP Trace
+### HTTP Trace
+
+To make an HTTP `TRACE` request, create an <xref:System.Net.Http.HttpRequestMessage> using the `HttpMethod.Trace`:
 
 :::code language="csharp" source="snippets/httpclient/Program.Trace.cs" id="trace":::
+
+> [!CAUTION]
+> The `TRACE` HTTP verb is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [OWASP: Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
+
+## Handle HTTP responses
+
+Whenever you're handling an HTTP response, you interact with the <xref:System.Net.Http.HttpResponseMessage> type. Several members are used when evaluating the validity of a response. The HTTP status code is available via the <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property. Imagine that you've sent a request given a client instance:
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="request":::
+
+To ensure that the `response` is `OK` (HTTP status code 200), you can evaluate it as shown in the following example:
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="isstatuscode":::
+
+But there are additional HTTP status codes that represent a successful response, such as `CREATED` (HTTP status code 201), `ACCEPTED` (HTTP status code 202), `NO CONTENT` (HTTP status code 204), and `RESET CONTENT` (HTTP status code 205) to name a few. You can use the <xref:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode?displayProperty=nameWithType> property to evaluate these codes as well, which ensures that the response status code is within the range 200-299:
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="issuccessstatuscode":::
+
+If you need to have the framework throw the <xref:System.Net.Http.HttpRequestException>, you can call the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode?displayProperty=nameWithType>:
+
+:::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
+
+This will throw an `HttpRequestException` if the response status code is not within the range 200-299.
 
 ## See also
 

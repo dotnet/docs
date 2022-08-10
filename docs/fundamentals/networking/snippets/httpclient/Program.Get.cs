@@ -11,6 +11,16 @@
         
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");
+
+        // Expected output:
+        //   https://jsonplaceholder.typicode.com/todos/3
+        //   GET HTTP/ 1.1
+        //   {
+        //     "userId": 1,
+        //     "id": 3,
+        //     "title": "fugiat veniam minus",
+        //     "completed": false
+        //   }
     }
     // </get>
 }

@@ -1,6 +1,4 @@
-﻿OutputEncoding = Encoding.UTF8;
-
-// <todoclient>
+﻿// <todoclient>
 using HttpClient todoClient = new()
 {
     BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
@@ -22,4 +20,3 @@ using HttpClient client = new();
 
 await HeadAsync(client);
 await OptionsAsync(client);
-// await TraceAsync(client);

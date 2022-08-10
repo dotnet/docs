@@ -23,6 +23,15 @@
         
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");
+
+        // Expected output:
+        //   POST https://jsonplaceholder.typicode.com/todos HTTP/1.1
+        //   {
+        //     "userId": 77,
+        //     "id": 201,
+        //     "title": "write code sample",
+        //     "completed": false
+        //   }
     }
     // </post>
 }

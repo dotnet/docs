@@ -12,6 +12,10 @@
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
         WriteLine($"{todo}\n");
+
+        // Expected output:
+        //   PUT https://jsonplaceholder.typicode.com/todos/5 HTTP/1.1
+        //   Todo { UserId = , Id = 5, Title = partially update todo, Completed = True }
     }
     // </putasjson>
 }

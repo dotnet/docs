@@ -20,6 +20,15 @@
         
         var jsonResponse = await response.Content.ReadAsStringAsync();
         WriteLine($"{jsonResponse}\n");
-    }
+
+        // Expected output
+        //   PATCH https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1
+        //   {
+        //     "userId": 1,
+        //     "id": 1,
+        //     "title": "delectus aut autem",
+        //     "completed": true
+        //   }
+}
     // </patch>
 }

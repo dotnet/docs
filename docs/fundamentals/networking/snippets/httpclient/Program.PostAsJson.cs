@@ -12,6 +12,10 @@
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
         WriteLine($"{todo}\n");
+
+        // Expected output:
+        //   POST https://jsonplaceholder.typicode.com/todos HTTP/1.1
+        //   Todo { UserId = 9, Id = 201, Title = Show extensions, Completed = False }
     }
     // </postasjson>
 }

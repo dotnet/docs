@@ -13,6 +13,10 @@
         response.WriteToConsole();
 
         WriteLine("{}\n");
+
+        // Expected output:
+        //   HEAD https://www.example.com/ HTTP/1.1
+        //   {}
     }
     // </head>
 }

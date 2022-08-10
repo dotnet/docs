@@ -17,6 +17,10 @@
             WriteLine(
                 $"Allow: {string.Join(", ", allowHeaders)}\n");
         }
+
+        // Expected output
+        //   OPTIONS https://www.example.com/ HTTP/1.1
+        //   Allow: OPTIONS, GET, HEAD, POST
     }
     // </options>
 }

@@ -7,6 +7,9 @@ ms.date: 11/01/2020
 
 `Serialize` and `Deserialize` methods on <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, <xref:System.Runtime.Serialization.Formatter>, and <xref:System.Runtime.Serialization.IFormatter> are now obsolete as warning. Additionally, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is prohibited by default for ASP.NET apps.
 
+> [!NOTE]
+> In .NET 7, the [affected APIs](#affected-apis) are obsolete as *error*. For more information, see [BinaryFormatter serialization APIs produce compiler errors](../7.0/binaryformatter-apis-produce-errors.md).
+
 ## Change description
 
 Due to [security vulnerabilities](../../../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following methods are now obsolete and produce a compile-time warning with ID `SYSLIB0011`. Additionally, in ASP.NET Core 5.0 and later apps, they will throw a <xref:System.NotSupportedException>, unless the web app has re-enabled <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> functionality.
@@ -82,4 +85,5 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 
 ## See also
 
-- [SerializationFormat.Binary is obsolete](../7.0/serializationformat-binary.md)
+- [SerializationFormat.Binary is obsolete (.NET 7)](../7.0/serializationformat-binary.md)
+- [BinaryFormatter serialization APIs produce compiler errors (.NET 7)](../7.0/binaryformatter-apis-produce-errors.md)

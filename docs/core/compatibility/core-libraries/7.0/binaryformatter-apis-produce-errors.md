@@ -17,7 +17,9 @@ As part of the BinaryFormatter [long-term deprecation plan](https://github.com/d
 
 ## Previous behavior
 
-Since .NET 5, using the affected `Serialize` and `Deserialize` methods produced a compiler *warning* with ID `SYSLIB0011`. However, using the <xref:System.Exception.SerializeObjectState?displayProperty=nameWithType> event did not produce an error.
+Since .NET 5, using the affected `Serialize` and `Deserialize` methods produced a compiler *warning* with ID `SYSLIB0011`. For more information, see [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps (.NET 5)](../5.0/binaryformatter-serialization-obsolete.md).
+
+Using the <xref:System.Exception.SerializeObjectState?displayProperty=nameWithType> event did not produce an error.
 
 ## New behavior
 

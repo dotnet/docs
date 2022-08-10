@@ -36,7 +36,7 @@ In this article, you'll learn how to make HTTP requests and handle responses wit
 > - <https://jsonplaceholder.typicode.com>: Free fake API for testing and prototyping.
 > - <https://www.example.com>: This domain is for use in illustrative examples in documents.
 
-Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data, but not always. When they do, and as a convenience, the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`. The examples below will call attention to when these extensions are available.
+Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data, but not always. For convenience, the optional [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`. The examples below will call attention to when these extensions are available.
 
 > [!TIP]
 > All of the source code from this article is available in the [GitHub: .NET Docs](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/httpclient) repository.

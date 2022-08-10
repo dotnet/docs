@@ -350,7 +350,7 @@ The following table shows the keyword and level:
 |`MethodBeingCompiledName`|`win:UnicodeString`|Name of the method being compiled.|
 |`MethodBeingCompiledNameSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names) being compiled.|
 |`CallerNamespace`|`win:UnicodeString`|Namespace of the caller method.|
-|`CallerNam`e|`win:UnicodeString`|Name of the caller method.|
+|`CallerName`|`win:UnicodeString`|Name of the caller method.|
 |`CallerNameSignature`|`win:UnicodeString`|Signature of the caller method (Comma-separated list of type names).|
 |`CalleeNamespace`|`win:UnicodeString`|Namespace of the callee method.|
 |`CalleeName`|`win:UnicodeString`|Name of the callee method.|

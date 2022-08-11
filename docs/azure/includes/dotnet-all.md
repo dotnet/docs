@@ -153,7 +153,8 @@
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.6.0) |  |  |
+| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.0.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.6.0)<br>NuGet [1.7.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.7.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [3.0.9](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/3.0.9)<br>NuGet [4.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.0-preview2) |  |  |

@@ -8,11 +8,11 @@ ms.date: 08/09/2022
 
 .NET 7 introduces a new mechanism for customization of how a type is marshalled when using source-generated interop. The [source generator for P/Invokes](pinvoke-source-generator.md) recognizes <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> and <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> as indicators for custom marshalling of a type.
 
-<xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> can be applied to a type to indicate the default custom marshalling for that type. The <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> can be applied to a parameter or return value to indicate the custom marshalling for that particular usage of the type, taking precedence over any <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> that may be on the type itself. Both of these attributes expect a <xref:System.Type>&mdash;the entry-point marshaller type&mdash;that is marked with one or more <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute>. Each <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> indicates which marshaller implementation should be used to marshal the specified managed type for the specified <xref:System.Runtime.InteropServices.Marshalling.MarshalMode>.
+<xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> can be applied to a type to indicate the default custom marshalling for that type. The <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> can be applied to a parameter or return value to indicate the custom marshalling for that particular usage of the type, taking precedence over any <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> that may be on the type itself. Both of these attributes expect a <xref:System.Type>&mdash;the entry-point marshaller type&mdash;that's marked with one or more <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> attributes. Each <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> indicates which marshaller implementation should be used to marshal the specified managed type for the specified <xref:System.Runtime.InteropServices.Marshalling.MarshalMode>.
 
 ## Marshaller implementation
 
-Marshaller implementations can either be stateless or stateful. If the marshaller type is a `static class`, it is considered stateless. If it is a value type, it is considerd stateful and one instance of that marshaller will be used for marshalling of a specific parameter or return value. Different [shapes for the marshaller implementation][value_shapes] are expected based on whether a marshaller is stateless or stateful and whether it supports marshalling from managed to unmanaged, unmanaged to managed, or both. The .NET SDK includes analyzers and code fixers to help with implementing marshallers that conform to the require shapes.
+Marshaller implementations can either be stateless or stateful. If the marshaller type is a `static` class, it's considered stateless. If it's a value type, it's considered stateful and one instance of that marshaller will be used to marshal a specific parameter or return value. Different [shapes for the marshaller implementation][value_shapes] are expected based on whether a marshaller is stateless or stateful and whether it supports marshalling from managed to unmanaged, unmanaged to managed, or both. The .NET SDK includes analyzers and code fixers to help with implementing marshallers that conform to the require shapes.
 
 ### `MarshalMode`
 
@@ -30,11 +30,11 @@ The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a
 | <xref:System.Runtime.InteropServices.Marshalling.MarshalModeElementRef> | Managed to unmanaged and unmanaged to managed | No |
 | <xref:System.Runtime.InteropServices.Marshalling.MarshalModeElementOut> | Unmanaged to managed | No |
 
-<xref:System.Runtime.InteropServices.Marshalling.MarshalMode.Default> indicates that the marshaller implementation should be used for any mode that it supports. If a marshaller implementation for a more specific `MarshalMode` is also specified, it takes precedence over `MarshalMode.Default`.
+<xref:System.Runtime.InteropServices.Marshalling.MarshalMode.Default?displayProperty=nameWithType> indicates that the marshaller implementation should be used for any mode that it supports. If a marshaller implementation for a more specific `MarshalMode` is also specified, it takes precedence over `MarshalMode.Default`.
 
 ## Basic usage
 
-We can specify <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> on a type, pointing at an entry-point marshaller type that is either a `static class` or `struct`.
+We can specify <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> on a type, pointing at an entry-point marshaller type that is either a `static` class or a `struct`.
 
 ```csharp
 [NativeMarshalling(typeof(ExampleMarshaller))]
@@ -45,7 +45,7 @@ public struct Example
 }
 ```
 
-`ExampleMarshaller`, the entry-point marshaller type, is marked with <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute>, pointing at a [marshaller implementation](#marshaller-implementation) type. In this example, `ExampleMarshaller` is both the entry-point and the implementation. It conforms to [marshaller shapes][value_shapes] expected for custom marshalling of a value.
+`ExampleMarshaller`, the entry-point marshaller type, is marked with <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute>, pointing at a [marshaller implementation](#marshaller-implementation) type. In this example, `ExampleMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][value_shapes] expected for custom marshalling of a value.
 
 ```csharp
 [CustomMarshaller(typeof(Example), MarshalMode.Default, typeof(ExampleMarshaller))]
@@ -68,16 +68,16 @@ internal static class ExampleMarshaller
 }
 ```
 
-The `ExampleMarshaller` above is a stateless marshaller that implements support for marshalling from managed to unmanaged and from unmanaged to managed. Note that the marshalling logic is entirely controlled by your marshaller implementation. Marking fields on a struct with <xref:System.Runtime.InteropServices.MarshalAsAttribute> has no effect on the generated code.
+The `ExampleMarshaller` in the example is a stateless marshaller that implements support for marshalling from managed to unmanaged and from unmanaged to managed. The marshalling logic is entirely controlled by your marshaller implementation. Marking fields on a struct with <xref:System.Runtime.InteropServices.MarshalAsAttribute> has no effect on the generated code.
 
-The `Example` type can then be used in P/Invoke source generation. In the below P/Invoke, `ExampleMarshaller` will be used to marshal the parameter from managed to unmanaged and the return value from unmanaged to managed.
+The `Example` type can then be used in P/Invoke source generation. In the following P/Invoke example, `ExampleMarshaller` will be used to marshal the parameter from managed to unmanaged. It will also be used to marshal the return value from unmanaged to managed.
 
 ```csharp
 [LibraryImport("nativelib")]
 internal static partial Example ConvertExample(Example example);
 ```
 
-To use a different marshaller for a specific usage of the `Example` type, specify <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> at the use site. In the below P/Invoke, `ExampleMarshaller` will be used to marshal the parameter from managed to unmanaged and `OtherExampleMarshaller` will be used to marshal the return value from unmanaged to managed.
+To use a different marshaller for a specific usage of the `Example` type, specify <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> at the use site. In the following P/Invoke example, `ExampleMarshaller` will be used to marshal the parameter from managed to unmanaged. `OtherExampleMarshaller` will be used to marshal the return value from unmanaged to managed.
 
 ```csharp
 [LibraryImport("nativelib")]
@@ -87,9 +87,9 @@ internal static partial Example ConvertExample(Example example);
 
 ### Collections
 
-The <xref:System.Runtime.InteropServices.Marshalling.ContiguousCollectionMarshallerAttribute> is applied to a marshaller entry-point type to indicate that it is for contiguous collections. The type must have one more type parameter than the associated managed type. The last type parameter is a placeholder and will be filled in by the source generator with the unmanaged type for the collection's element type.
+Apply the <xref:System.Runtime.InteropServices.Marshalling.ContiguousCollectionMarshallerAttribute> to a marshaller entry-point type to indicate that it's for contiguous collections. The type must have one more type parameter than the associated managed type. The last type parameter is a placeholder and will be filled in by the source generator with the unmanaged type for the collection's element type.
 
-For example, we can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry-point and the implementation. It conforms to [marshaller shapes][collection_shapes] expected for custom marshalling of a collection.
+For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][collection_shapes] expected for custom marshalling of a collection.
 
 ```csharp
 [ContiguousCollectionMarshaller]
@@ -119,7 +119,7 @@ public unsafe static class ListMarshaller<T, TUnmanagedElement> where TUnmanaged
 }
 ```
 
-The `ListMarshaller` above is a stateless collection marshaller that implements support for marshalling from managed to unmanaged and from unmanaged to managed for a <xref:System.Collections.Generic.List%601>. In the below P/Invoke, `ListMarshaller` will be used to marshal the parameter from managed to unmanaged and the return value from unmanaged to managed. <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute.CountElementName> indicates that the `numValues` parameter should be used as the element count when marshalling the return value from unmanaged to managed.
+The `ListMarshaller` in the example is a stateless collection marshaller that implements support for marshalling from managed to unmanaged and from unmanaged to managed for a <xref:System.Collections.Generic.List%601>. In the following P/Invoke example, `ListMarshaller` will be used to marshal the parameter from managed to unmanaged and to marshal the return value from unmanaged to managed. <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute.CountElementName> indicates that the `numValues` parameter should be used as the element count when marshalling the return value from unmanaged to managed.
 
 ```csharp
 [LibraryImport("nativelib")]

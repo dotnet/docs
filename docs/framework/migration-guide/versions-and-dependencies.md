@@ -32,6 +32,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 Jump to:
 
+- [.NET Framework 4.8.1](#net-framework-481)
 - [.NET Framework 4.8](#net-framework-48)
 - [.NET Framework 4.7.2](#net-framework-472)
 - [.NET Framework 4.7.1](#net-framework-471)
@@ -48,6 +49,24 @@ Jump to:
 - [.NET Framework 2.0](#net-framework-20)
 - [.NET Framework 1.1](#net-framework-11)
 - [.NET Framework 1.0](#net-framework-10)
+
+### .NET Framework 4.8.1
+
+- [New features](../whats-new/index.md#whats-new-in-net-framework-481)
+- [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-481)
+- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net481/README.md)
+
+| | Versions |
+|-|-|
+|**CLR**|4|
+|**Windows**|✔️ 11<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>|
+|**Windows Server**|✔️ Windows Server 2022<br/>|
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 533325 (all OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.8
 

@@ -1,11 +1,11 @@
 ---
-title: Introduction
+title: Introduction to .NET MAUI
 description: Introduction to enterprise architecture for .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 06/18/2022
 ---
-# Introduction
+# Introduction to .NET MAUI
 
 Regardless of platform, developers of enterprise apps face several challenges:
 
@@ -61,7 +61,7 @@ The sample application ships with three client apps:
 - A Single Page Application (SPA) developed with Angular 2 and Typescript. This approach for web applications avoids performing a round-trip to the server with each operation.
 - A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows 10/11.
 
-For information about the web applications, see [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](http://aka.ms/WebAppEbook).
+For information about the web applications, see [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](https://aka.ms/WebAppEbook).
 
 The sample application includes the following backend services:
 
@@ -96,7 +96,7 @@ The eShopOnContainers multi-platform app exercises the following .NET MAUI funct
 - Effects
 - Custom Controls
 
-For more information about this functionality, see the [.NET MAUI documentation](https://docs.microsoft.com/dotnet/maui/) on the Microsoft Developer Center, and [Creating multi-platform apps with .NET MAUI](https://aka.ms/mauiebook).
+For more information about this functionality, see the [.NET MAUI documentation](/dotnet/maui) on the Microsoft Developer Center, and [Creating multi-platform apps with .NET MAUI](https://aka.ms/mauiebook).
 
 In addition, unit tests are provided for some of the classes in the eShopOnContainers multi-platform app.
 

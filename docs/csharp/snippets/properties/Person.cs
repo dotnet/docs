@@ -9,7 +9,7 @@ namespace VersionOne
     {
         public string FirstName;
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet1>
 }
@@ -21,7 +21,7 @@ namespace VersionTwo
     {
         public string FirstName { get; set; }
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet2>
 }
@@ -33,7 +33,7 @@ namespace VersionThree
     {
         public string FirstName { get; set; } = string.Empty;
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet3>
 }
@@ -49,7 +49,7 @@ namespace VersionFour
         }
         private string _firstName;
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet4>
 }
@@ -65,7 +65,7 @@ namespace VersionFive
         }
         private string _firstName;
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet5>
 }
@@ -87,7 +87,7 @@ namespace VersionSix
         }
         private string _firstName;
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet6>
 }
@@ -103,7 +103,7 @@ namespace VersionSeven
         }
         private string _firstName;
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet7>
 }
@@ -114,7 +114,7 @@ namespace VersionEight
     {
         public string FirstName { get; private set; }
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet8>
 }
@@ -127,7 +127,7 @@ namespace VersionNine
 
         public string FirstName { get; }
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet9>
 }
@@ -141,7 +141,7 @@ namespace VersionNinePoint1
 
         public string FirstName { get; init; }
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet9.1>
 }
@@ -157,7 +157,7 @@ namespace VersionNinePoint2
 
         public required string FirstName { get; init; }
 
-        // Omitted for bevity.
+        // Omitted for brevity.
     }
     // </Snippet9.2>
 }

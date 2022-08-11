@@ -6,7 +6,7 @@ ms.author: dapine
 ms.date: 08/10/2022
 ---
 
-# Make HTTP requests with the HttpClient
+# Make HTTP requests with the HttpClient class
 
 Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources. The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
 
@@ -15,7 +15,7 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 - A request method is considered a **safe method** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
 
 | HTTP verb | Is idempotent | Is cacheable         | Is safe |
-|----------:|---------------|----------------------|---------|
+|-----------|---------------|----------------------|---------|
 | `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
 | `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
 | `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
@@ -36,7 +36,7 @@ In this article, you'll learn how to make HTTP requests and handle responses wit
 > - <https://jsonplaceholder.typicode.com>: Free fake API for testing and prototyping.
 > - <https://www.example.com>: This domain is for use in illustrative examples in documents.
 
-Most commonly HTTP endpoints return JavaScript Object Notation (JSON) data, but not always. For convenience, the optional [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`. The examples below will call attention to when these extensions are available.
+HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not always. For convenience, the optional [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` that perform automatic serialization and deserialization using `System.Text.Json`. The examples that follow call attention to places where these extensions are available.
 
 > [!TIP]
 > All of the source code from this article is available in the [GitHub: .NET Docs](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/httpclient) repository.
@@ -52,7 +52,7 @@ The preceding code:
 - Instantiates a new `HttpClient` instance with the object initializer syntax, and as a [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations).
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
-This `HttpClient` instance will always use the base address when making subsequent requests. Additional configuration can be applied, such as but not limited to:
+This `HttpClient` instance will always use the base address when making subsequent requests. You can apply additional configuration, for example:
 
 - Setting <xref:System.Net.Http.HttpClient.DefaultRequestHeaders?displayProperty=nameWithType>.
 - Applying a non-default <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType>.
@@ -65,7 +65,7 @@ Alternatively, you can create `HttpClient` instances using a factory-pattern app
 To make an HTTP request, you call any of the following APIs:
 
 | HTTP verb                    | API                                                                                 |
-|-----------------------------:|-------------------------------------------------------------------------------------|
+|------------------------------|-------------------------------------------------------------------------------------|
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>    |
@@ -101,7 +101,7 @@ The `WriteRequestToConsole` is a custom extension method that isn't part of the 
 
 #### HTTP Get from JSON
 
-The <https://jsonplaceholder.typicode.com/todos> endpoint returns a JSON array of todo objects. Their JSON structure resembles the following:
+The <https://jsonplaceholder.typicode.com/todos> endpoint returns a JSON array of "todo" objects. Their JSON structure resembles the following:
 
 ```json
 [
@@ -124,16 +124,16 @@ The C# `Todo` object is defined as follows:
 
 :::code source="snippets/httpclient/Todo.cs":::
 
-It's a `record class` type, with the optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into strongly-typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code language="csharp" source="snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 
-The preceding code:
+In the preceding code:
 
-- Makes a `GET` request to `"https://jsonplaceholder.typicode.com/todos?userId=1&completed=false"`.
+- A `GET` request is made to `"https://jsonplaceholder.typicode.com/todos?userId=1&completed=false"`.
   - The query string represents the filtering criteria for the request.
 - The response is automatically deserialized into a `List<Todo>` when successful.
-- The request details are written to the console, along with each `Todo`.
+- The request details are written to the console, along with each `Todo` object.
 
 ### HTTP Post
 
@@ -174,7 +174,7 @@ The preceding code:
 
 #### HTTP Put as JSON
 
-To automatically serialize `PUT` request arguments and deserialize responses into strongly-typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+To automatically serialize `PUT` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code language="csharp" source="snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 
@@ -186,7 +186,7 @@ The preceding code:
 
 ### HTTP Patch
 
-The `PATCH` request is a partial update to an existing resource. It will not create a new resource, nor is it intended to replace an existing resource, instead it updates a resource only partially. To make an HTTP `PATCH` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
+The `PATCH` request is a partial update to an existing resource. It won't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP `PATCH` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Patch.cs" id="patch":::
 
@@ -200,7 +200,7 @@ No extension methods exist for `PATCH` requests in the `System.Net.Http.Json` Nu
 
 ### HTTP Delete
 
-The `DELETE` request will delete an existing resource. A `DELETE` request is _idempotent_ but not _safe_, meaning multiple `DELETE` requests to the same resources yield the same result, but the request will affect the state of the resource. To make an HTTP `DELETE` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
+A `DELETE` request deletes an existing resource. A `DELETE` request is _idempotent_ but not _safe_, meaning multiple `DELETE` requests to the same resources yield the same result, but the request will affect the state of the resource. To make an HTTP `DELETE` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Delete.cs" id="delete":::
 
@@ -214,7 +214,7 @@ The preceding code:
 
 ### HTTP Head
 
-The `HEAD` request is similar to a `GET` request, but instead of returning the resource it only returns the headers associated with the resource. A response to the `HEAD` request will not return a body. To make an HTTP `HEAD` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> set to `HttpMethod.Head`:
+The `HEAD` request is similar to a `GET` request. Instead of returning the resource, it only returns the headers associated with the resource. A response to the `HEAD` request doesn't return a body. To make an HTTP `HEAD` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> set to `HttpMethod.Head`:
 
 :::code language="csharp" source="snippets/httpclient/Program.Head.cs" id="head":::
 
@@ -238,7 +238,7 @@ The preceding code:
 
 ### HTTP Trace
 
-The `TRACE` request is can be useful for debugging as it provides application-level loop-back of the request message. To make an HTTP `TRACE` request, create an <xref:System.Net.Http.HttpRequestMessage> using the `HttpMethod.Trace`:
+The `TRACE` request can be useful for debugging as it provides application-level loop-back of the request message. To make an HTTP `TRACE` request, create an <xref:System.Net.Http.HttpRequestMessage> using the `HttpMethod.Trace`:
 
 :::code language="csharp" source="snippets/httpclient/Program.Trace.cs" id="trace":::
 
@@ -255,15 +255,15 @@ To ensure that the `response` is `OK` (HTTP status code 200), you can evaluate i
 
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="isstatuscode":::
 
-But there are additional HTTP status codes that represent a successful response, such as `CREATED` (HTTP status code 201), `ACCEPTED` (HTTP status code 202), `NO CONTENT` (HTTP status code 204), and `RESET CONTENT` (HTTP status code 205) to name a few. You can use the <xref:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode?displayProperty=nameWithType> property to evaluate these codes as well, which ensures that the response status code is within the range 200-299:
+There are additional HTTP status codes that represent a successful response, such as `CREATED` (HTTP status code 201), `ACCEPTED` (HTTP status code 202), `NO CONTENT` (HTTP status code 204), and `RESET CONTENT` (HTTP status code 205). You can use the <xref:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode?displayProperty=nameWithType> property to evaluate these codes as well, which ensures that the response status code is within the range 200-299:
 
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="issuccessstatuscode":::
 
-If you need to have the framework throw the <xref:System.Net.Http.HttpRequestException>, you can call the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode?displayProperty=nameWithType>:
+If you need to have the framework throw the <xref:System.Net.Http.HttpRequestException>, you can call the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
 
-This will throw an `HttpRequestException` if the response status code is not within the range 200-299.
+This code will throw an `HttpRequestException` if the response status code is not within the range 200-299.
 
 With a valid response, you can access the response body using the <xref:System.Net.Http.HttpResponseMessage.Content> property. The body is available as an <xref:System.Net.Http.HttpContent> instance, which you can use to access the body as a stream, byte array, or string:
 
@@ -279,11 +279,11 @@ In the preceding code, the `responseByteArray` can be used to read the response 
 
 In the preceding code, the `responseString` can be used to read the response body.
 
-Finally, when you know an HTTP endpoint returns JSON you can use the  [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package to deserialize the response body into any valid C# object:
+Finally, when you know an HTTP endpoint returns JSON, you can deserialize the response body into any valid C# object by using the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package:
 
 :::code language="csharp" source="snippets/httpclient/Program.Responses.cs" id="json":::
 
-In the preceding code, the `result` is the deserialized response body as the type `T`.
+In the preceding code, `result` is the response body deserialized as the type `T`.
 
 ## See also
 

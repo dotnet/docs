@@ -2539,11 +2539,11 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: HTTP clients guidelines
+    - name: HTTP client guidelines
       displayName: networking, httpclient
       href: networking/httpclient-guidelines.md
-    - name: HttpClient
-      displayName: networking,httpclient,http,web services,client
+    - name: Make HTTP requests
+      displayName: networking,http,web services,client
       href: networking/httpclient.md
     - name: IHttpClientFactory
       displayName: networking,httpclient,http,dependency injection,client,factory

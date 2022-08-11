@@ -48,11 +48,9 @@ sgen [options]
   
  If the assembly containing the type to serialize is named MyType.dll, then the associated serialization assembly will be named MyType.XmlSerializers.dll.  
  
- sgen will fail if your assembly contains any public properties which have Init only setters:
- ```csharp
-//Fails
-public int Age { get; int; }
-```
+
+> [!NOTE]
+> The `sgen` tool is not compatible with [init](../../csharp/language-reference/keywords/init.md)-only setters. The tool will fail if the target assembly contains any public properties that use this feature.
   
 ## Examples  
 

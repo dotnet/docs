@@ -24,7 +24,7 @@ Some libraries are provided in NuGet packages rather than included in the runtim
 | [Dependency injection](../core/extensions/dependency-injection.md) | [`Microsoft.Extensions.DependencyInjection`][di]      |
 | [File globbing](../core/extensions/file-globbing.md)               | [`Microsoft.Extensions.FileSystemGlobbing`][fsg]      |
 | [Generic Host](../core/extensions/generic-host.md)                 | [`Microsoft.Extensions.Hosting`][host]                |
-| [HTTP](../core/extensions/http-client.md)                          | <sup>†</sup> [`Microsoft.Extensions.Http`][http]      |
+| [HTTP](../core/extensions/httpclient-factory.md)                   | <sup>†</sup> [`Microsoft.Extensions.Http`][http]      |
 | [Localization](../core/extensions/localization.md)                 | [`Microsoft.Extensions.Localization`][loc]            |
 | [Logging](../core/extensions/logging.md)                           | [`Microsoft.Extensions.Logging`][log]                 |
 

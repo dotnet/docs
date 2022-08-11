@@ -23,13 +23,14 @@ In .NET Framework, disposing <xref:System.Net.Http.HttpClient> objects does not 
 
 - In .NET Framework, create a new <xref:System.Net.Http.HttpClient> each time you need to send a request.
 - In .NET Core and .NET 5+:
-  - Use a static or singleton <xref:System.Net.Http.HttpClient> with <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> set to a desired interval, such as two minutes, depending on expected DNS changes. This solves both the socket exhaustion and DNS changes problems without adding the overhead of <xref:System.Net.Http.IHttpClientFactory>. If you need to be able to mock your handler, you can register it separately.
-  - Using <xref:System.Net.Http.IHttpClientFactory>, you can have multiple, differently configured clients for different use cases. If its lifetime hasn't expired, an <xref:System.Net.Http.HttpMessageHandler> instance may be reused from the pool when the factory creates a new <xref:System.Net.Http.HttpClient> instance. This reuse avoids any socket exhaustion issues. If you desire the configurability that <xref:System.Net.Http.IHttpClientFactory> provides, we recommend using the [typed-client approach](../../core/extensions/http-client.md#typed-clients). However, be aware that the clients created by the factory are intended to be short-lived, and once the client is created, the factory no longer has control over it.
-  
+  - Use a static or singleton <xref:System.Net.Http.HttpClient> with <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> set to the desired interval, such as two minutes, depending on expected DNS changes. This solves both the socket exhaustion and DNS changes problems without adding the overhead of <xref:System.Net.Http.IHttpClientFactory>. If you need to be able to mock your handler, you can register it separately.
+  - Using <xref:System.Net.Http.IHttpClientFactory>, you can have multiple, differently configured clients for different use cases. If its lifetime hasn't expired, an <xref:System.Net.Http.HttpMessageHandler> instance may be reused from the pool when the factory creates a new <xref:System.Net.Http.HttpClient> instance. This reuse avoids any socket exhaustion issues. If you desire the configurability that <xref:System.Net.Http.IHttpClientFactory> provides, we recommend using the [typed-client approach](../../core/extensions/httpclient-factory.md#typed-clients). However, be aware that the clients created by the factory are intended to be short-lived, and once the client is created, the factory no longer has control over it.
+
     > [!TIP]
     > If your app requires cookies, consider disabling automatic cookie handling or avoiding <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> object sharing often results in incorrect code.
 
 ## See also
 
-- [Make HTTP requests using IHttpClientFactory](/aspnet/core/fundamentals/http-requests)
+- [Create HttpClient instances using IHttpClientFactory](../../core/extensions/httpclient-factory.md)
+- [Make HTTP requests with the HttpClient](httpclient.md)
 - [Use IHttpClientFactory to implement resilient HTTP requests](../../architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)

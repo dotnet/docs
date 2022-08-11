@@ -42,7 +42,7 @@ Consider the following <xref:System.String.Format%2A> code fragment:
 [!code-csharp[Formatting.Composite#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#1)]
 [!code-vb[Formatting.Composite#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#1)]
 
-The fixed text is `"Name ="` and `", hours ="`. The format items are `"{0}"`, whose index is 0, which corresponds to the object `name`, and `"{1:hh}"`, whose index is 1, which corresponds to the object `DateTime.Now`.
+The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the object `name`, and `{1:hh}`, whose index of 1 corresponds to the object `DateTime.Now`.
 
 ## Format item syntax
 
@@ -109,7 +109,7 @@ The way escaped braces are interpreted can lead to unexpected results. For examp
 1. The last brace (`}`) is interpreted as the end of the format item.
 1. The final result that's displayed is the literal string, `{D}`. The numeric value that was to be formatted isn't displayed.
 
-One way to write your code to avoid misinterpreting escaped braces and format items is to format the braces and format items separately. That is, in the first format operation displays a literal opening brace. In the next operation, display the result of the format item, then in the final operation display a literal closing brace. The following example illustrates this approach:
+One way to write your code to avoid misinterpreting escaped braces and format items is to format the braces and format items separately. That is, in the first format operation, display a literal opening brace. In the next operation, display the result of the format item, and in the final operation, display a literal closing brace. The following example illustrates this approach:
 
 [!code-csharp[Formatting.Composite#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Escaping1.cs#2)]
 [!code-vb[Formatting.Composite#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Escaping1.vb#2)]  

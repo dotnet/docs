@@ -80,11 +80,6 @@ The `Console` provider logs output to the console.
 
 The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, which are implementations of the `ILogger` interface.
 
-On Linux, the `Debug` provider log location is distribution-dependent and may be one of the following:
-
-- */var/log/message*
-- */var/log/syslog*
-
 ### Event Source
 
 The `EventSource` provider writes to a cross-platform event source with the name `Microsoft-Extensions-Logging`. On Windows, the provider uses [ETW](/windows/win32/etw/event-tracing-portal).

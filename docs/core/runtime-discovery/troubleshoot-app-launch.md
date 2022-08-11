@@ -223,7 +223,7 @@ For more details on installation using the script, see [Install with bash automa
 You can download a binary archive of .NET from the [download page](https://dotnet.microsoft.com/download/dotnet). From the **Binaries** column of the runtime download, download the binary release matching the required architecture. Extract the downloaded archive to the ".NET location" specified in the error message.
 
 ::: zone pivot="os-windows"
-For more details on manual installation, see [Install .NET on Windows](../install/windows.md#download-and-manually-install)
+For more details on manual installation, see [Install .NET on Windows](../install/windows.md#install-with-powershell-automation)
 ::: zone-end
 
 ::: zone pivot="os-linux"

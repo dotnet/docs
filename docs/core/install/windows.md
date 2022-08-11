@@ -21,7 +21,7 @@ The latest version of .NET is 6.
 > [!div class="button"]
 > [Download .NET](https://dotnet.microsoft.com/download/dotnet)
 
-## Install with Windows Package Manager (Winget)
+## Install with Windows Package Manager (winget)
 
 You can install and manage .NET through the Windows Package Manager service, using the **winget** tool. For more information about how to install and use **winget**, see [Use the winget tool](/windows/package-manager/winget/).
 

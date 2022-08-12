@@ -58,7 +58,8 @@ This `HttpClient` instance will always use the base address when making subseque
 - Applying a non-default <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType>.
 - Specifying the <xref:System.Net.Http.HttpClient.DefaultRequestVersion?displayProperty=nameWithType>.
 
-Alternatively, you can create `HttpClient` instances using a factory-pattern approach that allows you to configure any number of clients and consume them as dependency injection services. For more information, see [IHttpClientFactory with .NET](../../core/extensions/httpclient-factory.md).
+> [!TIP]
+> Alternatively, you can create `HttpClient` instances using a factory-pattern approach that allows you to configure any number of clients and consume them as dependency injection services. For more information, see [IHttpClientFactory with .NET](../../core/extensions/httpclient-factory.md).
 
 ## Make an HTTP request
 
@@ -80,6 +81,19 @@ To make an HTTP request, you call any of the following APIs:
 
 > [!WARNING]
 > Making HTTP requests is considered network I/O-bound work. While there is a synchronous <xref:System.Net.Http.HttpClient.Send%2A?displayProperty=nameWithType> method, it is recommended to use the asynchronous APIs instead, unless you have good reason not to.
+
+### HTTP content
+
+The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP verbs (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but additional subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+
+- <xref:System.Net.Http.ByteArrayContent>: Provides HTTP content based on a byte array.
+- <xref:System.Net.Http.FormUrlEncodedContent>: Provides HTTP content for name/value tuples encoded using `"application/x-www-form-urlencoded"` MIME type.
+- <xref:System.Net.Http.Json.JsonContent>: Provides HTTP content based on JSON.
+- <xref:System.Net.Http.MultipartContent>: Provides a collection of HttpContent objects that get serialized using the `"multipart/*"` MIME type specification.
+- <xref:System.Net.Http.MultipartFormDataContent>: Provides a container for content encoded using `"multipart/form-data"` MIME type.
+- <xref:System.Net.Http.ReadOnlyMemoryContent>: Provides HTTP content based on a <xref:System.ReadOnlyMemory%601>.
+- <xref:System.Net.Http.StreamContent>: Provides HTTP content based on a stream.
+- <xref:System.Net.Http.StringContent>: Provides HTTP content based on a string.
 
 ### HTTP Get
 

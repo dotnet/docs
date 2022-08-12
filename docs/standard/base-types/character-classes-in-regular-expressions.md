@@ -317,7 +317,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`\t`|The tab character, \u0009.|  
 |`\v`|The vertical tab character, \u000B.|  
 |`\x85`|The ellipsis or NEXT LINE (NEL) character (…), \u0085.|  
-|`\p{Z}`|Matches any separator character.|  
+|`\p{Z}`|Matches all [separator characters](#supported-unicode-general-categories). This includes the `Zs`, `Zl`, and `Zp` categories.|
   
  If ECMAScript-compliant behavior is specified, `\s` is equivalent to `[ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   

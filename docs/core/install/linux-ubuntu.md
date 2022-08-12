@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 08/07/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -84,7 +84,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## 16.04
 
@@ -96,7 +96,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## How to install other versions
 

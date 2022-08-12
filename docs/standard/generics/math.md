@@ -2,7 +2,7 @@
 description: "Learn more about interfaces for generic math in .NET."
 title: Generic math
 titleSuffix: .NET
-ms.date: 07/26/2022
+ms.date: 08/12/2022
 ---
 # Generic math
 
@@ -24,7 +24,7 @@ Library authors will benefit most from the generic math interfaces, because they
 
 ## The interfaces
 
-When designing the interfaces, it was important that they were both fine-grained enough that users can define their own interfaces on top, while also being granular enough that they're easy to consume. To that extent, there are a few core numeric interfaces that most users will interact with, such as <xref:System.Numerics.INumber%601> and <xref:System.Numerics.IBinaryInteger%601>. The more fine-grained interfaces, such as <xref:System.Numerics.IAdditionOperators%603> and <xref:System.Numerics.ITrigonometricFunctions%601>, support these types and are available for developers who define their own domain-specific numeric interfaces.
+When designing the interfaces, they needed to be both fine-grained enough that users can define their own interfaces on top, while also being granular enough that they're easy to consume. To that extent, there are a few core numeric interfaces that most users will interact with, such as <xref:System.Numerics.INumber%601> and <xref:System.Numerics.IBinaryInteger%601>. The more fine-grained interfaces, such as <xref:System.Numerics.IAdditionOperators%603> and <xref:System.Numerics.ITrigonometricFunctions%601>, support these types and are available for developers who define their own domain-specific numeric interfaces.
 
 - [Numeric interfaces](#numeric-interfaces)
 - [Operator interfaces](#operator-interfaces)
@@ -138,14 +138,14 @@ The operator interfaces correspond to the various operators available to the C# 
 |----------------------------------------------------|------------------------------------------|
 | <xref:System.Numerics.IAdditionOperators%603>      | `x + y`                                  |
 | <xref:System.Numerics.IBitwiseOperators%603>       | `x & y`, `x | y`, `x ^ y`, and `~x`      |
-| <xref:System.Numerics.IComparisonOperators%602>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
+| <xref:System.Numerics.IComparisonOperators%603>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
 | <xref:System.Numerics.IDecrementOperators%601>     | `--x` and `x--`                          |
 | <xref:System.Numerics.IDivisionOperators%603>      | `x / y`                                  |
-| <xref:System.Numerics.IEqualityOperators%602>      | `x == y` and `x != y`                    |
+| <xref:System.Numerics.IEqualityOperators%603>      | `x == y` and `x != y`                    |
 | <xref:System.Numerics.IIncrementOperators%601>     | `++x` and `x++`                          |
 | <xref:System.Numerics.IModulusOperators%603>       | `x % y`                                  |
 | <xref:System.Numerics.IMultiplyOperators%603>      | `x * y`                                  |
-| <xref:System.Numerics.IShiftOperators%602>         | `x << y` and `x >> y`                    |
+| <xref:System.Numerics.IShiftOperators%603>         | `x << y` and `x >> y`                    |
 | <xref:System.Numerics.ISubtractionOperators%603>   | `x - y`                                  |
 | <xref:System.Numerics.IUnaryNegationOperators%602> | `-x`                                     |
 | <xref:System.Numerics.IUnaryPlusOperators%602>     | `+x`                                     |

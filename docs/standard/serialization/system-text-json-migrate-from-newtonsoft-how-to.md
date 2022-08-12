@@ -602,7 +602,7 @@ There is an alternative pattern that can use `JsonConverterAttribute` registrati
 
 * `WeatherForecastWithRequiredPropertyConverterAttribute` is the class to be deserialized and has the `JsonConverterAttribute` applied to it.
 * `WeatherForecastWithoutRequiredPropertyConverterAttribute` is the derived class that doesn't have the converter attribute.
-* The code in the converter calls `Serialize`and `Deserialize` on `WeatherForecastWithoutRequiredPropertyConverterAttribute` to avoid an infinite loop. There is a performance cost to this approach on serialization due to an extra object instantiation and copying of property values.
+* The code in the converter calls `Serialize` and `Deserialize` on `WeatherForecastWithoutRequiredPropertyConverterAttribute` to avoid an infinite loop. There is a performance cost to this approach on serialization due to an extra object instantiation and copying of property values.
 
 Here are the `WeatherForecast*` types:
 

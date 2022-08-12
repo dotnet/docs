@@ -72,7 +72,7 @@ This book is aimed at readers who are already familiar with .NET MAUI. It does c
 
 ### Additional resources
 
-You can find the official .NET MAUI home page and documentation at <https://docs.microsoft.com/dotnet/maui/>.
+You can find the official .NET MAUI home page and [.NET MAUI docs](/dotnet/maui).
 
 ## Send your feedback
 

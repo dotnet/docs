@@ -95,6 +95,8 @@ The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity 
 - <xref:System.Net.Http.StreamContent>: Provides HTTP content based on a stream.
 - <xref:System.Net.Http.StringContent>: Provides HTTP content based on a string.
 
+The `HttpContent` class is also used to represent the response body of the <xref:System.Net.Http.HttpResponseMessage>, accessible on the <xref:System.Net.Http.HttpResponseMessage.Content?displayProperty=nameWithType> property.
+
 ### HTTP Get
 
 A `GET` request shouldn't send a body and is used (as the verb indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:

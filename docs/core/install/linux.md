@@ -34,10 +34,9 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 - [Arch Linux User Repository](https://aur.archlinux.org/packages?K=dotnet)
 - [Fedora](https://packages.fedoraproject.org/search?query=dotnet)
 - [Red Hat Enterprise Linux](https://access.redhat.com/documentation/en-us/net/6.0)
+- [Ubuntu](https://packages.ubuntu.com/search?keywords=dotnet6)
 
-.NET may or may not be [supported by Microsoft](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) as published in the official package archives. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
-
-[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat and Microsoft collaborate to ensure that .NET works well on RHEL.
+Microsoft collaborates with partners to ensure .NET works well on their Linux distributions. Support is provided by those distributions. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
 
 ## Microsoft packages
 

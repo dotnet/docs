@@ -12,7 +12,7 @@ ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 
 Defines settings in a custom configuration section that is defined by a \<section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
-[**\<configuration>**](configuration-element.md)
+[**\<configuration>**](configuration-element.md)\
 &nbsp;&nbsp;*\<sectionName>*
 
 ## Syntax

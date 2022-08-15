@@ -6,7 +6,7 @@ ms.date: 08/09/2022
 
 # Source generation for custom marshalling
 
-.NET 7 introduces a new mechanism for customization of how a type is marshalled when using source-generated interop. The [source generator for P/Invokes](pinvoke-source-generator.md) recognizes <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> and <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> as indicators for custom marshalling of a type.
+.NET 7 introduces a new mechanism for customization of how a type is marshalled when using source-generated interop. The [source generator for P/Invokes](pinvoke-source-generation.md) recognizes <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> and <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> as indicators for custom marshalling of a type.
 
 <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> can be applied to a type to indicate the default custom marshalling for that type. The <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> can be applied to a parameter or return value to indicate the custom marshalling for that particular usage of the type, taking precedence over any <xref:System.Runtime.InteropServices.Marshalling.NativeMarshallingAttribute> that may be on the type itself. Both of these attributes expect a <xref:System.Type>&mdash;the entry-point marshaller type&mdash;that's marked with one or more <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> attributes. Each <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> indicates which marshaller implementation should be used to marshal the specified managed type for the specified <xref:System.Runtime.InteropServices.Marshalling.MarshalMode>.
 
@@ -20,15 +20,15 @@ The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a
 
 | `MarshalMode` | Expected support | Can be stateful |
 | --- | --- | --- |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeManagedToUnmanagedIn> | Managed to unmanaged | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeManagedToUnmanagedRef> | Managed to unmanaged and unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeManagedToUnmanagedOut> | Unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeUnmanagedToManagedIn> | Unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeUnmanagedToManagedRef> | Managed to unmanaged and unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeUnmanagedToManagedOut> | Managed to unmanaged | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeElementIn> | Managed to unmanaged | No |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeElementRef> | Managed to unmanaged and unmanaged to managed | No |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalModeElementOut> | Unmanaged to managed | No |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedIn> | Managed to unmanaged | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedRef> | Managed to unmanaged and unmanaged to managed | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedOut> | Unmanaged to managed | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedIn> | Unmanaged to managed | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedRef> | Managed to unmanaged and unmanaged to managed | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedOut> | Managed to unmanaged | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementIn> | Managed to unmanaged | No |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementRef> | Managed to unmanaged and unmanaged to managed | No |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementOut> | Unmanaged to managed | No |
 
 <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.Default?displayProperty=nameWithType> indicates that the marshaller implementation should be used for any mode that it supports. If a marshaller implementation for a more specific `MarshalMode` is also specified, it takes precedence over `MarshalMode.Default`.
 

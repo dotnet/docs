@@ -26,7 +26,8 @@ Programmers should throw exceptions when one or more of the following conditions
 
   :::code language="csharp" source="snippets/exceptions/Program.cs" ID="InvalidArg":::
   
-[!NOTE]The example above is for illustrative purposes. Index validating via exceptions is in most cases bad practice. Exceptions should be reserved to guard against exceptional program conditions, not for argument checking as above.
+> [!NOTE]
+> The example above is for illustrative purposes. Index validating via exceptions is in most cases bad practice. Exceptions should be reserved to guard against exceptional program conditions, not for argument checking as above.
 
 Exceptions contain a property named <xref:System.Exception.StackTrace%2A>. This string contains the name of the methods on the current call stack, together with the file name and line number where the exception was thrown for each method. A <xref:System.Exception.StackTrace%2A> object is created automatically by the common language runtime (CLR) from the point of the `throw` statement, so that exceptions must be thrown from the point where the stack trace should begin.
 

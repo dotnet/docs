@@ -46,10 +46,12 @@ Module VerifyXML
     Function VerifyXml(ByVal xmlDoc As XmlDocument, ByVal key As RSA) As [Boolean]
         ' Check arguments.
         If xmlDoc Is Nothing Then
-            Throw New ArgumentException("xmlDoc")
+            Throw New ArgumentException(
+                "The XML doc cannot be nothing.", NameOf(xmlDoc))
         End If
         If key Is Nothing Then
-            Throw New ArgumentException("key")
+            Throw New ArgumentException(
+                "The key cannot be nothing.", NameOf(key))
         End If
         ' Create a new SignedXml object and pass it
         ' the XML document class.

@@ -11,6 +11,7 @@ f1_keywords:
   - "string"
   - "string_CSharpKeyword"
   - "RawStringLiteral_CSharpKeyword"
+  - "Utf8StringLiteral_CSharpKeyword"
 helpviewer_keywords: 
   - "object keyword [C#]"
   - "delegate keyword [C#]"
@@ -181,6 +182,21 @@ To include a double quotation mark in an @-quoted string, double it:
 ```csharp
 @"""Ahoy!"" cried the captain." // "Ahoy!" cried the captain.
 ```
+
+Strings in .NET have always been stored using UTF-16 encoding. UTF-8 is the standard for Web protocols and other important libraries. Beginning in C# 11, you can add the `u8` suffix to a string literal to specify UTF-8 encoding. UTF-8 literals are stored as `ReadOnlySpan<byte>` objects. Using a UTF-8 string literal creates a more clear declaration than declaring the equivalent <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as shown in the following code:
+
+```csharp
+ReadOnlySpan<byte> AuthWithTrailingSpace = new byte[] { 0x41, 0x55, 0x54, 0x48, 0x20 };
+ReadOnlySpan<byte> AuthStringLiteral = "AUTH "u8;
+```
+
+To store a UTF-8 string literal as an array requires the use of <xref:System.ReadOnlySpan%601.ToArray?displayProperty=nameWithType>:
+
+```csharp
+byte[] AuthStringLiteral = "AUTH "u8.ToArray();
+```
+
+UTF-8 string literals aren't compile time constants. Therefore, they cannot be used as the default value for an optional parameter.
 
 ## The delegate type
 

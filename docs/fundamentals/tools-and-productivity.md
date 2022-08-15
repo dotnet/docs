@@ -21,7 +21,7 @@ The .NET CLI is a cross-platform toolchain for developing, building, running, an
 
 ## IDEs
 
-You can write .NET applications in [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows), or [Visual Studio for Mac](/visualstudio/mac).
+You can write .NET applications in [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows), [Visual Studio for Mac](/visualstudio/mac), or [JetBrains Rider](https://www.jetbrains.com/rider/).
 
 ## Additional tools
 

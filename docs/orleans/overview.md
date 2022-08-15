@@ -123,9 +123,8 @@ An arbitrary number of streams can be multiplexed onto a smaller number of queue
 
 If you're interested in a video introduction to Orleans, check out the following video:
 
-<!-- markdownlint-disable MD034 -->
+<!-- markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans]
-<!-- markdownlint-enable MD034 -->
 
 ## Next steps
 

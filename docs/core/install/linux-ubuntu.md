@@ -40,25 +40,9 @@ The following table is a list of currently supported .NET releases and the versi
 > [!NOTE]
 > Warning: If you've previously installed .NET 6 from `packages.microsoft.com`, see the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699).
 
-.NET 6 is included in Ubuntu 22.04. You can install it with the following commands:
+.NET 6 is included in Ubuntu 22.04.
 
-For the .NET SDK:
-
-```bash
-sudo apt install -y dotnet6
-```
-
-For ASP.NET Core
-
-```bash
-sudo apt install -y apt install -y aspnetcore-runtime-6.0
-```
-
-For .NET Runtime
-
-```bash
-sudo apt install -y apt install -y dotnet-runtime-6.0
-```
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## 22.04 (Microsoft package feed)
 

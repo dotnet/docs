@@ -25,8 +25,7 @@ Configuration in .NET is possible with configuration providers. There are severa
 - [XML configuration provider](#xml-configuration-provider)
 - [INI configuration provider](#ini-configuration-provider)
 
-> [!IMPORTANT]
-> Keys are case-insensitive, so be sure that your keys are unique. All of the file configuration providers throw the <xref:System.FormatException> when duplicate keys are found.
+Keys are case-insensitive. All of the file configuration providers throw the <xref:System.FormatException> when duplicate keys are found in a single provider.
 
 ### JSON configuration provider
 

@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1182: Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported."
 description: Learn about the 'Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported' error message.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:

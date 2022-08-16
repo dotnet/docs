@@ -102,8 +102,8 @@
             //
             // openFileDialog2
             //
-            this._decryptopenFileDialog.Filter = "Encrypted files (*.enc) | *.enc|All files (*.*)|*.*";
-            this._decryptopenFileDialog.InitialDirectory = "c:\\encrypt";
+            this._decryptOpenFileDialog.Filter = "Encrypted files (*.enc) | *.enc|All files (*.*)|*.*";
+            this._decryptOpenFileDialog.InitialDirectory = "c:\\encrypt";
             //
             // grpAsmKeys
             //
@@ -183,7 +183,7 @@
         private System.Windows.Forms.Button buttonEncryptFile;
         private System.Windows.Forms.OpenFileDialog _encryptOpenFileDialog;
         private System.Windows.Forms.Button buttonCreateAsmKeys;
-        private System.Windows.Forms.OpenFileDialog _decryptopenFileDialog;
+        private System.Windows.Forms.OpenFileDialog _decryptOpenFileDialog;
         private System.Windows.Forms.GroupBox grpAsmKeys;
         private System.Windows.Forms.Button buttonExportPublicKey;
         private System.Windows.Forms.Button buttonImportPublicKey;

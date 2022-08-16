@@ -52,9 +52,6 @@ sudo apt-get update && \
   sudo apt-get install -y dotnet6
 ```
 
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-sdk-6.0**, see the [APT troubleshooting](#apt-troubleshooting) section.
-
 ### Install the runtime
 
 The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
@@ -63,9 +60,6 @@ The ASP.NET Core Runtime allows you to run apps that were made with .NET that di
 sudo apt-get update && \
   sudo apt-get install -y aspnetcore-runtime-6.0
 ```
-
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-6.0**, see the [APT troubleshooting](#apt-troubleshooting) section.
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
 
@@ -151,6 +145,9 @@ This section provides information on common errors you may get while using APT t
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
 ### Unable to locate \\ Some packages could not be installed
+
+> [!NOTE]
+> This information only applies when .NET is installed from the Microsoft package feed.
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 

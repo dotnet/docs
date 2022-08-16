@@ -30,6 +30,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 .NET is available in the [official package archives](https://pkgs.org/search/?q=dotnet) for various Linux distributions, including the following ones.
 
+- [Alpine Linux](https://pkgs.alpinelinux.org/packages?name=dotnet*)
 - [Arch Linux](https://archlinux.org/packages/?q=dotnet)
 - [Arch Linux User Repository](https://aur.archlinux.org/packages?K=dotnet)
 - [Fedora](https://packages.fedoraproject.org/search?query=dotnet)

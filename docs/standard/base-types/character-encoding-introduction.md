@@ -316,7 +316,7 @@ UTF-32: [ 000104CC ]     (1x 32-bit code unit  = 32 bits total)
 As noted earlier, a single UTF-16 code unit from a [surrogate pair](#surrogate-pairs) is meaningless by itself. In the same way, a single UTF-8 code unit is meaningless by itself if it's in a sequence of two, three, or four used to calculate a scalar value.
 
 > [!NOTE]
-> Beginning with C# 11, you can represent UTF-8 string literals using the "u8" suffix on a literal string. For more information on UTF-8 string literals, see the "string literals" section of the article on [built in reference types](../../csharp/language-reference/builtin-types/reference-types.md#string-literals) in the C# Guide.
+> Beginning with C# 11, you can represent UTF-8 string literals using the "u8" suffix on a literal string. For more information on UTF-8 string literals, see the "string literals" section of the article on [built in reference types](../../csharp/language-reference/builtin-types/reference-types.md#utf-8-string-literals) in the C# Guide.
 
 ### Endianness
 

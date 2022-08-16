@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 06/02/2022
+ms.date: 08/16/2022
 ---
 # What's new in C# 11
 
@@ -173,10 +173,12 @@ Type parameter names and parameter names are now in scope when used in a `nameof
 
 ## UTF-8 string literals
 
-You can specify the `u8` suffix on a string literal to specify UTF-8 character encoding. The natural type for a UTF-8 string literal is `ReadOnlySpan<byte>`. You can learn more about UTF-8 string literals in the string literal section of the article on [builtin reference types](../language-reference/builtin-types/reference-types.md#string-literals).
+You can specify the `u8` suffix on a string literal to specify UTF-8 character encoding. 
+
+You can learn more about UTF-8 string literals in the string literal section of the article on [builtin reference types](../language-reference/builtin-types/reference-types.md#utf-8-string-literals).
 
 ## Required members
 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
-See [init-only](../properties.md#init-only) for more information.
+For more information on required members, See the [init-only](../properties.md#init-only) section of the properties article.

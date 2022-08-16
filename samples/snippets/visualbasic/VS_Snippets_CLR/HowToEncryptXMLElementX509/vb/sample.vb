@@ -4,8 +4,6 @@ Imports System.Security.Cryptography
 Imports System.Security.Cryptography.Xml
 Imports System.Security.Cryptography.X509Certificates
 
-
-
 Module Program
 
     Sub Main(ByVal args() As String)
@@ -72,15 +70,9 @@ Module Program
 
     Sub Encrypt(ByVal Doc As XmlDocument, ByVal ElementToEncryptName As String, ByVal Cert As X509Certificate2)
         ' Check the arguments.  
-        If Doc Is Nothing Then
-            Throw New ArgumentNullException("Doc")
-        End If
-        If ElementToEncryptName Is Nothing Then
-            Throw New ArgumentNullException("ElementToEncrypt")
-        End If
-        If Cert Is Nothing Then
-            Throw New ArgumentNullException("Cert")
-        End If
+        ArgumentNullException.ThrowIfNull(Doc)
+        ArgumentNullException.ThrowIfNull(ElementToEncryptName)
+        ArgumentNullException.ThrowIfNull(Cert)
         ''''''''''''''''''''''''''''''''''''''''''''''''
         ' Find the specified element in the XmlDocument
         ' object and create a new XmlElemnt object.

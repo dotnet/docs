@@ -15,8 +15,8 @@ namespace Generics
     // </Snippet2>
 
     // <InterfaceOrBaseClass>
-    public class ImplementingInterface<T> : IEnumerable where T : class { }
-    
+    public class ImplementingInterface<T> : IDisposable where T : class { }
+
     public class InheritingClass<T> : Exception where T : class { }
     // </InterfaceOrBaseClass>
 

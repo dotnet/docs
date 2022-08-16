@@ -173,7 +173,7 @@ Type parameter names and parameter names are now in scope when used in a `nameof
 
 ## UTF-8 string literals
 
-You can specify the `u8` suffix on a string literal to specify UTF-8 character encoding. 
+You can specify the `u8` suffix on a string literal to specify UTF-8 character encoding. If your application needs UTF-8 strings, for HTTP string constants or similar text protocols, you can use this feature to simplify the creation of UTF-8 strings.
 
 You can learn more about UTF-8 string literals in the string literal section of the article on [builtin reference types](../language-reference/builtin-types/reference-types.md#utf-8-string-literals).
 

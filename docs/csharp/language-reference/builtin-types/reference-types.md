@@ -198,7 +198,7 @@ To store a UTF-8 string literal as an array requires the use of <xref:System.Rea
 byte[] AuthStringLiteral = "AUTH "u8.ToArray();
 ```
 
-UTF-8 string literals aren't compile time constants; they're runtime constants. Therefore, they can't be used as the default value for an optional parameter.
+UTF-8 string literals aren't compile time constants; they're runtime constants. Therefore, they can't be used as the default value for an optional parameter. UTF-8 string literals can't be combined with string interpolation. You can't use the `$` token and the `u8` suffix on the same string expression.
 
 ## The delegate type
 

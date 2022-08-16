@@ -42,6 +42,7 @@ Consider the following <xref:System.String.Format%2A> code fragment:
 [!code-csharp[Formatting.Composite#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#1)]
 [!code-vb[Formatting.Composite#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#1)]
 
+<!-- markdownlint-disable-next-line no-space-in-code -->
 The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the object `name`, and `{1:hh}`, whose index of 1 corresponds to the object `DateTime.Now`.
 
 ## Format item syntax

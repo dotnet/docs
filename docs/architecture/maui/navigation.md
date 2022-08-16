@@ -98,7 +98,7 @@ The .NET MAUI `Shell` control is already familiar with route-based navigation, s
 
 In order to register routes for the `MauiNavigationService` we need to supply route information from XAML or in the code-behind. The following example shows registration of routes via XAML.
 
-```xaml
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"

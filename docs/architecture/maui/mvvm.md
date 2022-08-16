@@ -89,7 +89,7 @@ The following sections discuss the main approaches to connecting view models to 
 
 The simplest approach is for the view to declaratively instantiate its corresponding view model in XAML. When the view is constructed, the corresponding view model object will also be constructed. This approach is demonstrated in the following code example:
 
-```xaml
+```xml
 <ContentPage xmlns:local="clr-namespace:eShop">
     <ContentPage.BindingContext>
         <local:LoginViewModel />
@@ -339,7 +339,7 @@ The advantage of using the `EventToCommandBehavior` to execute a command when an
 
 The EventToCommandBehavior is particularly useful for attaching a command to a control that doesn't support commands. For example, the LoginView uses the `EventToCommandBehavior` to execute the `ValidateCommand` when the user changes the value of their password, as shown in the following code:
 
-```xaml
+```xml
 <Entry
     IsPassword="True"
     Text="{Binding Password.Value, Mode=TwoWay}">

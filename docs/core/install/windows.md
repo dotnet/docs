@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about the different ways you can install .NET and which versions of Windows support .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/05/2022
+ms.date: 08/15/2022
 ---
 
 # Install .NET on Windows
@@ -52,7 +52,7 @@ For Windows, there are three .NET runtimes you can install. You should install b
   This runtime includes the base .NET runtime, and runs web server apps. The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
 
   ```cmd
-  winget install Microsoft.DotNet.Runtime.6
+  winget install Microsoft.DotNet.AspNetCore.6
   ```
 
 - .NET Runtime
@@ -60,7 +60,7 @@ For Windows, there are three .NET runtimes you can install. You should install b
   This is the base runtime, and contains just the components needed to run a console app. Typically, you'd install the other runtimes.
 
   ```cmd
-  winget install Microsoft.DotNet.AspNetCore.6
+  winget install Microsoft.DotNet.Runtime.6
   ```
 
 You can install preview versions of the runtimes by substituting the version number, such as `6`, with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:

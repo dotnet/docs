@@ -30,8 +30,7 @@ Specifies the default values used for initiating a secure conversation service.
                              requireDerivedKeys="Boolean"
                              requireSecurityContextCancellation="Boolean"
                              requireSignatureConfirmation="Boolean"
-                             securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast"
-                             includeTimestamp="Boolean" />
+                             securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast" />
 ```  
   
 ## Type  

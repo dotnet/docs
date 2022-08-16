@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 06/02/2022
+ms.date: 08/16/2022
 ---
 # What's new in C# 11
 
@@ -15,6 +15,7 @@ The following features are available in Visual Studio 2022 version 17.3:
 - [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
+- [UTF-8 string literals](#utf-8-string-literals)
 - [Required members](#required-members)
 
 The following features are available in Visual Studio 2022 version 17.2:
@@ -170,8 +171,14 @@ You've been able to test if a `string` had a specific constant value using patte
 
 Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
 
+## UTF-8 string literals
+
+You can specify the `u8` suffix on a string literal to specify UTF-8 character encoding. If your application needs UTF-8 strings, for HTTP string constants or similar text protocols, you can use this feature to simplify the creation of UTF-8 strings.
+
+You can learn more about UTF-8 string literals in the string literal section of the article on [builtin reference types](../language-reference/builtin-types/reference-types.md#utf-8-string-literals).
+
 ## Required members
 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
-See [init-only](../properties.md#init-only) for more information.
+For more information on required members, See the [init-only](../properties.md#init-only) section of the properties article.

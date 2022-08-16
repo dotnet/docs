@@ -24,6 +24,7 @@ You can configure your app to opt into accessibility features if it targets .NET
 |.NET Framework 4.7.2|"Switch.UseLegacyAccessibilityFeatures.2"|
 |.NET Framework 4.8|"Switch.UseLegacyAccessibilityFeatures.3"|
 |August 11, 2020-KB4569746 Cumulative Update for .NET Framework 4.8|"Switch.UseLegacyAccessibilityFeatures.4"|
+|.NET Framework 4.8.1|"Switch.UseLegacyAccessibilityFeatures.5"|
 
 ### Taking advantage of accessibility enhancements
 
@@ -64,6 +65,39 @@ Applications that target versions of .NET Framework starting with 4.7.1 can disa
     <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures.2=true" />
 </runtime>
 ```
+
+## What's new in accessibility in .NET Framework 4.8.1
+.NET Framework 4.8.1 includes new accessibility features in the following areas:
+
+- [Windows Forms](#winforms481)
+
+- [Windows Presentation Foundation (WPF)](#wpf481)
+
+<a name="winforms481"></a>
+
+### Windows Forms
+####Added and improved UIA representations
+
+Prior to .NET Framework 4.8.1 Windows Forms was missing support for a range of UIA patterns to support assistive technology like to interact with applications. This could cause Narrator or other screen readers to report incomplete or incorrect information, and prevent important functionality like moving a cursor through the text in a <xref:System.Windows.Forms.TextBox> control. With this version of .NET Framework all of the requried patterns for the Common Controls have been implemented giving users of assistive technology a much richer application interaction experience.
+
+- Added support for the UIA Expand/Collapse pattern to the <xref:System.Windows.Forms.DateTimePicker> control
+- Added UIA support to the <xref:System.Wndows.Forms.MonthCalendar> control. Now assistive technology tools such as Narrator can navigate through the individual dates in the control.
+- Implemented Text Pattern support to all text based controls including <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.MaskedTextBox>, <xref:System.Windows.Forms.PropertyGrid> edit control, <xref:System.Windows.Forms.DataGridViewTextBoxCell>, <xref:System.Windows.Forms.ToolStripTextBox>, <xref:System.Windows.Forms.DomainUpDown> controls.
+- <xref:System.Windows.Forms.ToolTips> now follow <a href='https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html'> WCAG2.1 guidelines</a> to be persistent, dismissable, and hoverable on Windows 11.
+
+####Various bug fixes for existing accessibility features
+- Narrator can now focus on an empty <xref:System.Windows.Forms.DataGridView> control.
+- Updated the luminosity ratio to 3.5:1 for <xref:System.Windows.Forms.ToolStripButton> controls with a `ToolStripRenderMode` set to `System`
+- Fixed a case which could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
+- Addressed an issue which caused screen readers to count hidden columns when announcing the column count in a <xref:System.Windows.Forms.DataGridView> control.
+- Addressed an issue cuaing the <xref:System.Windows.Forms.DataGridView> to ignore the font settings set in the `DataGridviewCellStyle` if the underlying form has a `Font` property that differs from the `DefaultFont`
+- Updated the `AccessibleName` property of the <xref:System.Windows.Forms.DataGridView> control's internal scroll bars to remove the text "ScrollBar".
+
+<a name="wpf48"></a>
+### Windows Presentation Foundation (WPF)
+####Accessible Tooltip handling improvements
+In this release WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the ESC key, the CTRL key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Escape key was reduced in this release to apply only to the current window, when previously it would have been any open tooltip in the application.
+
 
 ## What's new in accessibility in the August 11, 2020 Cumulative Update for .NET Framework 4.8
 

@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # where (generic type constraint) (C# Reference)
 
-The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. Constraints can specify interfaces, base classes, or require a generic type to be a reference, value, or unmanaged type. They declare capabilities that the type argument must have.
+The `where` clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. Constraints can specify interfaces, base classes, or require a generic type to be a reference, value, or unmanaged type. They declare capabilities that the type argument must have, and must be placed after any declared base class or implemented interfaces.
 
 For example, you can declare a generic class, `AGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:
 
@@ -26,10 +26,6 @@ For example, you can declare a generic class, `AGenericClass`, such that the typ
 The `where` clause can also include a base class constraint. The base class constraint states that a type to be used as a type argument for that generic type has the specified class as a base class, or is that base class. If the base class constraint is used, it must appear before any other constraints on that type parameter. Some types are disallowed as a base class constraint: <xref:System.Object>, <xref:System.Array>, and <xref:System.ValueType>. Before C# 7.3, <xref:System.Enum>, <xref:System.Delegate>, and <xref:System.MulticastDelegate> were also disallowed as base class constraints. The following example shows the types that can now be specified as a base class:
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="Snippet2":::
-
-When declaring a class that implements an interface, the interface must come prior to the `where` clause. The same applies for class inheritance:
-
-:::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="InterfaceOrBaseClass":::
 
 In a nullable context in C# 8.0 and later, the nullability of the base class type is enforced. If the base class is non-nullable (for example `Base`), the type argument must be non-nullable. If the base class is nullable (for example `Base?`), the type argument may be either a nullable or non-nullable reference type. The compiler issues a warning if the type argument is a nullable reference type when the base class is non-nullable.
 

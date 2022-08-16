@@ -14,14 +14,6 @@ namespace Generics
     public class Multicaster<T> where T : System.MulticastDelegate { }
     // </Snippet2>
 
-    public class BaseClass { }
-
-    // <InterfaceOrBaseClass>
-    public class ImplementingInterface<T> : IMyInterface where T : class { }
-
-    public class InheritingClass<T> : BaseClass where T : class { }
-    // </InterfaceOrBaseClass>
-
     // <Snippet3>
     class MyClass<T, U>
         where T : class

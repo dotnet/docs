@@ -59,7 +59,7 @@ For .NET Runtime
 sudo apt install -y apt install -y dotnet-runtime-6.0
 ```
 
-## 22.04 -- packages.microsoft.com
+## 22.04 (Microsoft package feed)
 
 > Warning: .NET 6 is included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04] if you want to use .NET packages from `packages.microsoft.com`.
 
@@ -73,7 +73,8 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-Note: [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. [.NET 6 supports OpenSSL 3](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security) while earlier .NET versions do not. Microsoft does not test or support using OpenSSL 1.x on Ubuntu 22.04.
+> [!NOTE]
+> [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. .NET 6 supports OpenSSL 3 while earlier .NET versions don't. Microsoft doesn't test or support using OpenSSL 1.x on Ubuntu 22.04. For more information, see [.NET 6 Security Improvements](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security).
 
 ## 20.04
 

@@ -24,9 +24,9 @@ public class YamlConfigurationProvider : FileConfigurationProvider
         {
             Data = YamlConfigurationFileParser.Parse(stream);
         }
-        catch// (JsonException e)
+        catch (Exception ex)
         {
-            //throw new FormatException(SR.Error_JSONParseError, e);
+            throw new FormatException("Unable to parse YAML.", ex);
         }
     }
 }

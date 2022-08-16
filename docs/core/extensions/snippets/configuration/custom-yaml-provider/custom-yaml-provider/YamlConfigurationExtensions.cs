@@ -71,7 +71,7 @@ public static class YamlConfigurationExtensions
 
         if (string.IsNullOrEmpty(path))
         {
-            // throw new ArgumentException(SR.Error_InvalidFilePath, nameof(path));
+            throw new ArgumentException("Invalid file path.", nameof(path));
         }
 
         return builder.AddYamlFile(s =>

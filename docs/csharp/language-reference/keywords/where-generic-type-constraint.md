@@ -27,6 +27,10 @@ The `where` clause can also include a base class constraint. The base class cons
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="Snippet2":::
 
+When declaring a class that implements an interface, the interface must come prior to the `where` clause and the constraints on type parameters. The same applies for class inheritance:
+
+:::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="InterfaceOrBaseClass":::
+
 In a nullable context in C# 8.0 and later, the nullability of the base class type is enforced. If the base class is non-nullable (for example `Base`), the type argument must be non-nullable. If the base class is nullable (for example `Base?`), the type argument may be either a nullable or non-nullable reference type. The compiler issues a warning if the type argument is a nullable reference type when the base class is non-nullable.
 
 The `where` clause can specify that the type is a `class` or a `struct`. The `struct` constraint removes the need to specify a base class constraint of `System.ValueType`. The `System.ValueType` type may not be used as a base class constraint. The following example shows both the `class` and `struct` constraints:

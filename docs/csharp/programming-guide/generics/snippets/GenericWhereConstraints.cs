@@ -14,6 +14,12 @@ namespace Generics
     public class Multicaster<T> where T : System.MulticastDelegate { }
     // </Snippet2>
 
+    // <InterfaceOrBaseClass>
+    public class ImplementingInterface<T> : IEnumerable where T : class { }
+    
+    public class InheritingClass<T> : Exception where T : class { }
+    // </InterfaceOrBaseClass>
+
     // <Snippet3>
     class MyClass<T, U>
         where T : class

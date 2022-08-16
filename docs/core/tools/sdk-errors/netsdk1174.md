@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1174: -p abbreviation for --project in dotnet run is deprecated"
 description: -p abbreviation for --project in dotnet run is deprecated.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/14/2021
 f1_keywords:

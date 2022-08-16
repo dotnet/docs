@@ -27,7 +27,7 @@ The `where` clause can also include a base class constraint. The base class cons
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="Snippet2":::
 
-When declaring a class that implements an interface, the interface must come prior to the `where` clause and the constraints on type parameters. The same applies for class inheritance:
+When declaring a class that implements an interface, the interface must come prior to the `where` clause. The same applies for class inheritance:
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="InterfaceOrBaseClass":::
 

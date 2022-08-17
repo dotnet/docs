@@ -42,6 +42,8 @@ On the left hand panel, you'll see an Azure icon. Select this icon, and a contro
 
 After you've signed-in, you'll see all of your existing resources in the **Resources** view. You can create and manage these services directly from Visual Studio Code. You'll also see a **Workspace** view that includes local tasks specific to your workspace and files on your machine, such as attaching to a Database or deploying your current workspace to Azure.
 
+:::image type="content" source="media/visual-studio-code-extension-resources.png" lightbox="media/visual-studio-code-azure-login.png" alt-text="A screenshot of Visual Studio Code showing how to sign-in to the Azure tools.":::
+
 ### Next steps
 
 Next, you'll want to install the Azure CLI on your workstation.

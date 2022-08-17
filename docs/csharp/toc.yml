@@ -991,15 +991,6 @@ items:
           href: language-reference/keywords/try-finally.md
         - name: try-catch-finally
           href: language-reference/keywords/try-catch-finally.md
-      - name: Checked and Unchecked
-        items:
-        - name: Overview
-          displayName: checked unchecked
-          href: language-reference/keywords/checked-and-unchecked.md
-        - name: checked
-          href: language-reference/keywords/checked.md
-        - name: unchecked
-          href: language-reference/keywords/unchecked.md
       - name: fixed Statement
         href: language-reference/keywords/fixed-statement.md
     - name: Method Parameters
@@ -1211,6 +1202,9 @@ items:
     - name: Jump statements
       displayName: break, continue, goto, return
       href: language-reference/statements/jump-statements.md
+    - name: checked and unchecked statements
+      displayName: overflow checking
+      href: language-reference/statements/checked-and-unchecked.md
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md

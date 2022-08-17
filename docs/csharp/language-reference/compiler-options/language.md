@@ -23,13 +23,13 @@ The following options control how the compiler interprets language features. The
 
 ## CheckForOverflowUnderflow
 
-The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic statement that results in a value that is outside the range of the data type causes a run-time exception.  
+The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic expression that results in a value that is outside the range of the destination type causes a run-time exception.  
 
 ```xml
 <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
 ```
 
-An integer arithmetic statement that is in the scope of a `checked` or `unchecked` keyword isn't subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic statement that isn't in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **CheckForOverflowUnderflow** is `true`, that statement causes an exception at run time. If **CheckForOverflowUnderflow** is `false`, that statement doesn't cause an exception at run time. The default value for this option is `false`; overflow checking is disabled.
+An integer arithmetic expression that is in the scope of a [`checked` or `unchecked` keyword](../statements/checked-and-unchecked.md) isn't subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic expression that isn't in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the destination type, and **CheckForOverflowUnderflow** is `true`, that expression causes an <xref:System.OverflowException> at run time. If **CheckForOverflowUnderflow** is `false`, that expression doesn't cause an exception at run time. The default value for this option is `false`, that is, overflow checking is disabled.
 
 ## AllowUnsafeBlocks
 

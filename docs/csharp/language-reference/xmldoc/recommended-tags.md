@@ -139,8 +139,8 @@ The compiler verifies the syntax of the elements followed by a single \* in the 
 - [Generate links and references](#generate-links-and-references) - These tags generate links to other documentation.
   - [`<see>`](#see) \*
   - [`<seealso>`](#seealso) \*
-  - [`<cref>`](#cref-attribute)
-  - [`<href>`](#href-attribute)
+  - [`cref`](#cref-attribute)
+  - [`href`](#href-attribute)
 - [Tags for generic types and methods](#generic-types-and-methods) - These tags are used only on generic types and methods
   - [`<typeparam>`](#typeparam) \*: The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<typeparamref>`](#typeparamref)

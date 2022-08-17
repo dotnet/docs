@@ -89,26 +89,26 @@ Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of 
 **Various bug fixes for existing accessibility features**
 
 - Narrator can now focus on an empty <xref:System.Windows.Forms.DataGridView> control.
-- Updated the luminosity ratio to 3.5:1 for <xref:System.Windows.Forms.ToolStripButton> controls that have `ToolStripRenderMode` set to `System`.
-- Fixed an issue that could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
 - Addressed an issue that caused screen readers to count hidden columns when announcing the column count in a <xref:System.Windows.Forms.DataGridView> control.
 - Addressed an issue that caused the <xref:System.Windows.Forms.DataGridView> to ignore the font settings set in the `DataGridviewCellStyle` if the underlying form had a `Font` property that differed from `DefaultFont`.
 - Updated the `AccessibleName` property of the <xref:System.Windows.Forms.DataGridView> control's internal scroll bars to remove the text "ScrollBar".
 - Fixed the color of a `DataGridViewLinkCell` when the cell is selected.
+- Fixed an issue with custom <xref:System.Windows.Forms.DataGridView> controls where there was no `ControlType` or `LocalizedControlType` provided publicly for custom <xref:System.Windows.Forms.DataGridViewCell> elements.
+- Updated the luminosity ratio to 3.5:1 for <xref:System.Windows.Forms.ToolStripButton> controls that have `ToolStripRenderMode` set to `System`.
 - Improved keyboard navigation in a <xref:System.Windows.Forms.ToolStrip> when the element is a `ToolStripComboBox` type.
+- Updated the background color of the <xref:System.Windows.Forms.ToolStripButton> in high contrast mode.
+- Ensured that there is a bounding rectangle reported to assistive technology for the <xref:System.Windows.Forms.ToolStripSeparator>.
+- Fixed an issue that could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
+- Ensured that the UIA hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control is updated when a complex entry like `Font` is expanded. Also ensure that the tree is updated properly when the entry is then collapsed and no longer visible.
+- <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of "`PropertyGrid category`".
 - Fixed an issue with the <xref:System.Windows.Forms.ComboBox> that could cause the app to crash under Accessibility Insights for Windows.
 - Updated the border color for the <xref:System.Windows.Forms.Button> to have more contrast in the default colors.
-- Ensured that there is a bounding rectangle reported to assistive technology for the <xref:System.Windows.Forms.ToolStripSeparator>.
 - Enabled assistive technology tools to access the `ControlBox` buttons of a maximized MDI child form.
-- Updated the background color of the <xref:System.Windows.Forms.ToolStripButton> in high contrast mode.
 - The `AccessibleName` property of a <xref:System.Windows.Forms.DomainUpDown> control has a new default value of an empty string. The empty string will encourage developers to create a meaningful name rather than accepting the previous default value.
-- Ensured that the UIA hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control is updated when a complex entry like `Font` is expanded. Also ensure that the tree is updated properly when the entry is then collapsed and no longer visible.
 - Updated the `AccessibleName` property of the Print button in the <xref:System.Windows.Forms.PrintPreviewDialog> from "Print Button" to "Print" to avoid redundancy when screen readers announce the control and its type.
-- <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of "`PropertyGrid category`".
-- Fixed an issue with custom <xref:System.Windows.Forms.DataGridView> controls where there was no `ControlType` or `LocalizedControlType` provided publicly for custom <xref:System.Windows.Forms.DataGridViewCell> elements.
-- Updated UIA list controls to remove an empty list element when a <xref:System.Windows.Forms.PropertyGridCell> of type `ComboBox` is closed and no longer visible.
+- Updated UIA list controls to remove an empty list element when a <xref:System.Windows.Forms.PropertyGrid> cell of type `ComboBox` is closed and no longer visible.
 
-<a name="wpf48"></a>
+<a name="wpf481"></a>
 
 ### Windows Presentation Foundation (WPF)
 

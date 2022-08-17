@@ -77,11 +77,11 @@ The C# compiler compiles the code between the `#if` directive and  `#endif` dire
 #endif
 ```
 
-The following code is compiled whe `DEBUG` is **not** defined:
+The following code is compiled whe `MYTEST` is **not** defined:
 
 ```csharp
-#if !DEBUG
-    Console.WriteLine("Not Debug");
+#if !MYTEST
+    Console.WriteLine("MYTEST is not defined");
 #endif
 ```
 

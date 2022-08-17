@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1136: The target platform must be set to Windows"
 description: Learn about the .NET SDK error that directs you to set your target platform to Windows.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:

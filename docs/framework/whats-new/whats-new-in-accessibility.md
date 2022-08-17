@@ -76,44 +76,45 @@ Applications that target versions of .NET Framework starting with 4.7.1 can disa
 <a name="winforms481"></a>
 
 ### Windows Forms
+
 **Added and improved UIA representations**
 
-Prior to .NET Framework 4.8.1 Windows Forms was missing support for a range of UIA patterns to support assistive technology like to interact with applications. This could cause Narrator or other screen readers to report incomplete or incorrect information, and prevent important functionality like moving a cursor through the text in a <xref:System.Windows.Forms.TextBox> control. With this version of .NET Framework all of the requried patterns for the Common Controls have been implemented giving users of assistive technology a much richer application interaction experience.
+Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of UIA patterns to support assistive technology, for example, to interact with applications. This deficiency could cause Narrator or other screen readers to report incomplete or incorrect information. It could also affect important functionality like moving a cursor through the text in a <xref:System.Windows.Forms.TextBox> control. With .NET Framework 4.8.1, all of the required patterns for the common controls have been implemented. This new functionality gives users of assistive technology a much richer application interaction experience.
 
-- Added support for the UIA Expand/Collapse pattern to the <xref:System.Windows.Forms.DateTimePicker> control
+- Added support for the UIA expand/collapse pattern to the <xref:System.Windows.Forms.DateTimePicker> control.
 - Added UIA support to the <xref:System.Wndows.Forms.MonthCalendar> control. Now assistive technology tools such as Narrator can navigate through the individual dates in the control.
-- Implemented Text Pattern support to all text based controls including <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.MaskedTextBox>, <xref:System.Windows.Forms.PropertyGrid> edit control, <xref:System.Windows.Forms.DataGridViewTextBoxCell>, <xref:System.Windows.Forms.ToolStripTextBox>, <xref:System.Windows.Forms.DomainUpDown> controls.
-- <xref:System.Windows.Forms.ToolTips> now follow <a href='https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html'> WCAG2.1 guidelines</a> to be persistent, dismissable, and hoverable on Windows 11.
+- Implemented text pattern support for all text-based controls, including the <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.MaskedTextBox>, <xref:System.Windows.Forms.PropertyGrid> edit control, <xref:System.Windows.Forms.DataGridViewTextBoxCell>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.DomainUpDown> controls.
+- <xref:System.Windows.Forms.ToolTip> now follows [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable on Windows 11.
 
 **Various bug fixes for existing accessibility features**
+
 - Narrator can now focus on an empty <xref:System.Windows.Forms.DataGridView> control.
-- Updated the luminosity ratio to 3.5:1 for <xref:System.Windows.Forms.ToolStripButton> controls with a `ToolStripRenderMode` set to `System`
-- Fixed a case which could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
-- Addressed an issue which caused screen readers to count hidden columns when announcing the column count in a <xref:System.Windows.Forms.DataGridView> control.
-- Addressed an issue cuaing the <xref:System.Windows.Forms.DataGridView> to ignore the font settings set in the `DataGridviewCellStyle` if the underlying form has a `Font` property that differs from the `DefaultFont`
+- Updated the luminosity ratio to 3.5:1 for <xref:System.Windows.Forms.ToolStripButton> controls that have `ToolStripRenderMode` set to `System`.
+- Fixed an issue that could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
+- Addressed an issue that caused screen readers to count hidden columns when announcing the column count in a <xref:System.Windows.Forms.DataGridView> control.
+- Addressed an issue that caused the <xref:System.Windows.Forms.DataGridView> to ignore the font settings set in the `DataGridviewCellStyle` if the underlying form had a `Font` property that differed from `DefaultFont`.
 - Updated the `AccessibleName` property of the <xref:System.Windows.Forms.DataGridView> control's internal scroll bars to remove the text "ScrollBar".
 - Fixed the color of a `DataGridViewLinkCell` when the cell is selected.
 - Improved keyboard navigation in a <xref:System.Windows.Forms.ToolStrip> when the element is a `ToolStripComboBox` type.
-- Fixed an issue with the <xref:System.Windows.Forms.ComboBox> which could cause application crash under Accessibility Insights for Windows.
+- Fixed an issue with the <xref:System.Windows.Forms.ComboBox> that could cause the app to crash under Accessibility Insights for Windows.
 - Updated the border color for the <xref:System.Windows.Forms.Button> to have more contrast in the default colors.
-- Ensured that there was a bounding rectangle reported to assitive technology for the <xref:System.Windows.Forms.ToolStripSeparator>
-- Enabled assistive technology tools to access the `ControlBox` buttons of a maximized MDI Child form.
-- Updated the background color of the <xref:System.Windows.Forms.ToolStripButton> in High Contrast mode.
-- <xref:System.Windows.Forms.DomainUpDown> control `AccessibleName` property has a new default value of an empty string. This will encourage developers to create a meanignful name rather than accepting a default of "Spinner"
-- Ensured that the UIA Hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control when a complex entry, like `Font` is expaneded, and updated properly when the entry is then collapsed and no longer visible.
-- Updated the `AccessibleName` property of the Print button in the <xref:System.Windows.Forms.PrintPreveiwDialog> from "Print Button" to "Print" to avoid redundancy when screen readers announce the control and its type.
-- <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of "PropertyGrid category"
-- Fixed an issue with custom <xref:System.Windows.Forms.DataGridView> where there was no ControlType or LocalizedControlType provided publicly for custom <xref:System.Windows.Forms.DataGridViewCell> elements.
-- Removed an empty UIA list element when a <xref:System.Windows.Forms.PropertyGridCell> of type `ComboBox` is closed and no longer visible.
-
-
-
+- Ensured that there is a bounding rectangle reported to assistive technology for the <xref:System.Windows.Forms.ToolStripSeparator>.
+- Enabled assistive technology tools to access the `ControlBox` buttons of a maximized MDI child form.
+- Updated the background color of the <xref:System.Windows.Forms.ToolStripButton> in high contrast mode.
+- The `AccessibleName` property of a <xref:System.Windows.Forms.DomainUpDown> control has a new default value of an empty string. The empty string will encourage developers to create a meaningful name rather than accepting the previous default value.
+- Ensured that the UIA hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control is updated when a complex entry like `Font` is expanded. Also ensure that the tree is updated properly when the entry is then collapsed and no longer visible.
+- Updated the `AccessibleName` property of the Print button in the <xref:System.Windows.Forms.PrintPreviewDialog> from "Print Button" to "Print" to avoid redundancy when screen readers announce the control and its type.
+- <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of "`PropertyGrid category`".
+- Fixed an issue with custom <xref:System.Windows.Forms.DataGridView> controls where there was no `ControlType` or `LocalizedControlType` provided publicly for custom <xref:System.Windows.Forms.DataGridViewCell> elements.
+- Updated UIA list controls to remove an empty list element when a <xref:System.Windows.Forms.PropertyGridCell> of type `ComboBox` is closed and no longer visible.
 
 <a name="wpf48"></a>
-### Windows Presentation Foundation (WPF)
-####Accessible Tooltip handling improvements
-In this release WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the ESC key, the CTRL key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Escape key was reduced in this release to apply only to the current window, when previously it would have been any open tooltip in the application.
 
+### Windows Presentation Foundation (WPF)
+
+#### Accessible Tooltip handling improvements
+
+In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the Esc key, the Ctrl key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Esc key was reduced in this release to apply only to the current window, when previously it would have applied to any open tooltip in the application.
 
 ## What's new in accessibility in the August 11, 2020 Cumulative Update for .NET Framework 4.8
 

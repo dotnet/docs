@@ -29,15 +29,15 @@ To install the extension from Visual Studio Code:
 1. Search for the *Azure Tools* extension.
 1. Select the **Install** button.
 
-![Screenshot of the Visual Studio Code showing extensions panel searching for the Azure Tools extension pack](./media/visual-studio-code-azure-tools.png)
+:::image type="content" source="media/visual-studio-code-azure-tools.png" lightbox="media/visual-studio-code-azure-tools.png" alt-text="A screenshot of Visual Studio Code showing the extensions panel searching for the Azure Tools extension pack.":::
 
 To learn more about installing extensions in Visual Studio Code, refer to the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) document on the Visual Studio Code website.
 
 ### Sign in to your Azure account with Azure Tools
 
-On the left hand panel, you'll see an Azure icon. Select this icon, and a control panel for Azure services will appear. Choose **Sign in to Azure...** under any service to complete the authentication process for the Azure tools in Visual Studio Code.
+On the left hand panel, you'll see an Azure icon. Select this icon, and a control panel for Azure services will appear. Choose **Sign in to Azure...** to complete the authentication process for the Azure tools in Visual Studio Code.
 
-![Screenshot of the Visual Studio Code showing how to login the Azure tools to Azure](./media/visual-studio-code-azure-login.png)
+:::image type="content" source="media/visual-studio-code-azure-login-small.png" lightbox="media/visual-studio-code-azure-login.png" alt-text="A screenshot of Visual Studio Code showing how to sig-in to the Azure tools.":::
 
 ### Next steps
 

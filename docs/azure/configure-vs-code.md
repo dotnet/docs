@@ -3,14 +3,14 @@ title: Configure Visual Studio Code for Azure development with .NET
 description: This article helps you configure Visual Studio Code for Azure development including getting the right plugins installed and configured in VS Code
 ms.date: 11/30/2020
 ms.topic: conceptual
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, vscode-azure-extension-update-completed
 author: DavidCBerry13
 recommendations: false
 ---
 
 # Configure Visual Studio Code for Azure development
 
-If you are using Visual Studio Code, whether for .NET development, for building single page applications using frameworks like Angular, React or Vue, or for writing applications in another language like Python, you will want to configure Visual Studio Code for Azure development.
+If you're using Visual Studio Code, whether for .NET development, for building single page applications using frameworks like Angular, React or Vue, or for writing applications in another language like Python, you'll want to configure Visual Studio Code for Azure development.
 
 ### Download Visual Studio Code
 
@@ -37,11 +37,15 @@ To learn more about installing extensions in Visual Studio Code, refer to the [E
 
 On the left hand panel, you'll see an Azure icon. Select this icon, and a control panel for Azure services will appear. Choose **Sign in to Azure...** to complete the authentication process for the Azure tools in Visual Studio Code.
 
-:::image type="content" source="media/visual-studio-code-azure-login-small.png" lightbox="media/visual-studio-code-azure-login.png" alt-text="A screenshot of Visual Studio Code showing how to sig-in to the Azure tools.":::
+:::image type="content" source="media/visual-studio-code-azure-login-small.png" lightbox="media/visual-studio-code-azure-login.png" alt-text="A screenshot of Visual Studio Code showing how to sign-in to the Azure tools.":::
+
+After you've signed-in, you'll see all of your existing resources in the **Resources** view. You can create and manage these services directly from Visual Studio Code. You'll also see a **Workspace** view that includes local tasks specific to your workspace and files on your machine, such as attaching to a Database or deploying your current workspace to Azure.
+
+:::image type="content" source="media/visual-studio-code-extension-resources.png" lightbox="media/visual-studio-code-azure-login.png" alt-text="A screenshot of Visual Studio Code showing the extension resources view.":::
 
 ### Next steps
 
-Next, you will want to install the Azure CLI on your workstation.
+Next, you'll want to install the Azure CLI on your workstation.
 
 > [!div class="nextstepaction"]
 > [Install the Azure CLI](./install-azure-cli.md)

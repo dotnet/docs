@@ -8,26 +8,6 @@ ms.date: 08/10/2022
 
 # Make HTTP requests with the HttpClient class
 
-Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources. The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
-
-- A request method is **_idempotent_** if it can be successfully processed multiple times without changing the result. For more information, see [RFC 7231: Section 4.2.2 Idempotent Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
-- A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
-- A request method is considered a **safe method** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
-
-| HTTP verb | Is idempotent | Is cacheable         | Is safe |
-|-----------|---------------|----------------------|---------|
-| `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
-| `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
-| `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
-| `PATCH`   | ❌ No         | ❌ No                 | ❌ No   |
-| `DELETE`  | ✔️ Yes       | ❌ No                 | ❌ No   |
-| `HEAD`    | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
-| `OPTIONS` | ✔️ Yes       | ❌ No                 | ✔️ Yes |
-| `TRACE`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
-| `CONNECT` | ❌ No         | ❌ No                 | ❌ No   |
-
-> <sup>†</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present. It's very uncommon in practice.
-
 In this article, you'll learn how to make HTTP requests and handle responses with the `HttpClient` class.
 
 > [!IMPORTANT]
@@ -43,7 +23,7 @@ HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not a
 
 ## Create an `HttpClient`
 
-Most of the following examples reuse the same `HttpClient` instance, and therefore only need to be configured once. To create an `HttpClient`, use the `HttpClient` class constructor.
+Most of the following examples reuse the same `HttpClient` instance, and therefore only need to be configured once. To create an `HttpClient`, use the `HttpClient` class constructor. For more information, see [Guidelines for using HttpClient](httpclient-guidelines.md).
 
 :::code language="csharp" source="snippets/httpclient/Program.cs" id="todoclient":::
 
@@ -52,7 +32,7 @@ The preceding code:
 - Instantiates a new `HttpClient` instance with the object initializer syntax, and as a [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations).
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
-This `HttpClient` instance will always use the base address when making subsequent requests. You can apply additional configuration, for example:
+This `HttpClient` instance will always use the base address when making subsequent requests. To apply additional configuration consider:
 
 - Setting <xref:System.Net.Http.HttpClient.DefaultRequestHeaders?displayProperty=nameWithType>.
 - Applying a non-default <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType>.
@@ -303,7 +283,8 @@ In the preceding code, `result` is the response body deserialized as the type `T
 
 ## See also
 
+- [HTTP support in .NET](http-overview.md)
 - [Guidelines for using HttpClient](httpclient-guidelines.md)
-- [IHttpClientFactory with .NET](../../core/extensions/httpclient-factory.md)
-- [Use HTTP/3 with HttpClient](../../core/extensions/httpclient-http3.md)
+- [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md)
+- [Use HTTP/3 with HttpClient](../../../core/extensions/httpclient-http3.md)
 - [Test web APIs with the HttpRepl](/aspnet/core/web-api/http-repl)

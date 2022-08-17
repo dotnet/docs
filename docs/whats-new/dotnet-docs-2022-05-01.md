@@ -14,7 +14,7 @@ Welcome to what's new in the .NET docs for May 2022. This article lists some of 
 
 - [Decrypting EnvelopedCms doesn't double unwrap](../core/compatibility/cryptography/7.0/decrypt-envelopedcms.md)
 - [ActionResult\<T> sets StatusCode to 200](../core/compatibility/aspnet-core/6.0/actionresult-statuscode.md)
-- [Guidelines for using HttpClient](../fundamentals/networking/httpclient-guidelines.md)
+- [Guidelines for using HttpClient](../fundamentals/networking/http/httpclient-guidelines.md)
 - [X500DistinguishedName parsing of friendly names](../core/compatibility/cryptography/7.0/x500-distinguished-names.md)
 - [Equals method behavior change for NaN](../core/compatibility/core-libraries/7.0/equals-nan.md)
 - [Migrate UWP apps to Windows App SDK with the .NET Upgrade Assistant](../core/porting/upgrade-assistant-uwp-framework.md)

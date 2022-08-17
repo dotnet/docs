@@ -1,0 +1,134 @@
+---
+title: HTTP support in .NET
+description: Learn about the comprehensive support for HTTP that .NET provides.
+ms.date: 08/17/2022
+helpviewer_keywords:
+  - "protocols, HTTP"
+  - "sending data, HTTP"
+  - "HttpWebResponse class, sending and receiving data"
+  - "HTTP"
+  - "receiving data, HTTP"
+  - "application protocols, HTTP"
+  - "Internet, HTTP"
+  - "network resources, HTTP"
+  - "HTTP, about HTTP"
+  - "HttpWebRequest class, sending and receiving data"
+ms.assetid: 985fe5d8-eb71-4024-b361-41fbdc1618d8
+---
+
+# HTTP support in .NET
+
+Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources. The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
+
+- A request method is **_idempotent_** if it can be successfully processed multiple times without changing the result. For more information, see [RFC 7231: Section 4.2.2 Idempotent Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
+- A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
+- A request method is considered a **_safe method_** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
+
+| HTTP verb | Is idempotent | Is cacheable         | Is safe |
+|-----------|---------------|----------------------|---------|
+| `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
+| `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `PATCH`   | ❌ No         | ❌ No                 | ❌ No   |
+| `DELETE`  | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `HEAD`    | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `OPTIONS` | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `TRACE`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `CONNECT` | ❌ No         | ❌ No                 | ❌ No   |
+
+> <sup>†</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present. This is very uncommon in practice.
+
+.NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> set to a corresponding <xref:System.Net.HttpStatusCode>. The <xref:System.Net.Http.HttpResponseMessage> contains a <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property that can be used to determine non-error status codes.
+
+### Informational status codes
+
+| HTTP status code | `HttpStatusCode`                                                                 |
+|------------------|----------------------------------------------------------------------------------|
+| `100`            | <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType>           |
+| `101`            | <xref:System.Net.HttpStatusCode.SwitchingProtocols?displayProperty=nameWithType> |
+| `102`            | <xref:System.Net.HttpStatusCode.Processing?displayProperty=nameWithType>         |
+| `103`            | <xref:System.Net.HttpStatusCode.EarlyHints?displayProperty=nameWithType>         |
+
+### Successful status codes
+
+| HTTP status code | `HttpStatusCode`                                                                          |
+|------------------|-------------------------------------------------------------------------------------------|
+| `200`            | <xref:System.Net.HttpStatusCode.OK?displayProperty=nameWithType>                          |
+| `201`            | <xref:System.Net.HttpStatusCode.Created?displayProperty=nameWithType>                     |
+| `202`            | <xref:System.Net.HttpStatusCode.Accepted?displayProperty=nameWithType>                    |
+| `203`            | <xref:System.Net.HttpStatusCode.NonAuthoritativeInformation?displayProperty=nameWithType> |
+| `204`            | <xref:System.Net.HttpStatusCode.NoContent?displayProperty=nameWithType>                   |
+| `205`            | <xref:System.Net.HttpStatusCode.ResetContent?displayProperty=nameWithType>                |
+| `206`            | <xref:System.Net.HttpStatusCode.PartialContent?displayProperty=nameWithType>              |
+| `207`            | <xref:System.Net.HttpStatusCode.MultiStatus?displayProperty=nameWithType>                 |
+| `208`            | <xref:System.Net.HttpStatusCode.AlreadyReported?displayProperty=nameWithType>             |
+| `226`            | <xref:System.Net.HttpStatusCode.IMUsed?displayProperty=nameWithType>                      |
+
+### Redirection status codes
+
+| HTTP status code | `HttpStatusCode`                                                                                                                                                  |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `300`            | <xref:System.Net.HttpStatusCode.MultipleChoices?displayProperty=nameWithType> or <xref:System.Net.HttpStatusCode.Ambiguous?displayProperty=nameWithType>          |
+| `301`            | <xref:System.Net.HttpStatusCode.MovedPermanently?displayProperty=nameWithType> or <xref:System.Net.HttpStatusCode.Moved?displayProperty=nameWithType>             |
+| `302`            | <xref:System.Net.HttpStatusCode.Found?displayProperty=nameWithType> or <xref:System.Net.HttpStatusCode.Redirect?displayProperty=nameWithType>                     |
+| `303`            | <xref:System.Net.HttpStatusCode.SeeOther?displayProperty=nameWithType> or <xref:System.Net.HttpStatusCode.RedirectMethod?displayProperty=nameWithType>            |
+| `304`            | <xref:System.Net.HttpStatusCode.NotModified?displayProperty=nameWithType>                                                                                         |
+| `305`            | <xref:System.Net.HttpStatusCode.UseProxy?displayProperty=nameWithType>                                                                                            |
+| `306`            | <xref:System.Net.HttpStatusCode.Unused?displayProperty=nameWithType>                                                                                              |
+| `307`            | <xref:System.Net.HttpStatusCode.TemporaryRedirect?displayProperty=nameWithType> or <xref:System.Net.HttpStatusCode.RedirectKeepVerb?displayProperty=nameWithType> |
+| `308`            | <xref:System.Net.HttpStatusCode.PermanentRedirect?displayProperty=nameWithType>                                                                                   |
+
+### Client error status codes
+
+| HTTP status code | `HttpStatusCode`                                                                            |
+|------------------|---------------------------------------------------------------------------------------------|
+| `400`            | <xref:System.Net.HttpStatusCode.BadRequest?displayProperty=nameWithType>                    |
+| `401`            | <xref:System.Net.HttpStatusCode.Unauthorized?displayProperty=nameWithType>                  |
+| `402`            | <xref:System.Net.HttpStatusCode.PaymentRequired?displayProperty=nameWithType>               |
+| `403`            | <xref:System.Net.HttpStatusCode.Forbidden?displayProperty=nameWithType>                     |
+| `404`            | <xref:System.Net.HttpStatusCode.NotFound?displayProperty=nameWithType>                      |
+| `405`            | <xref:System.Net.HttpStatusCode.MethodNotAllowed?displayProperty=nameWithType>              |
+| `406`            | <xref:System.Net.HttpStatusCode.NotAcceptable?displayProperty=nameWithType>                 |
+| `407`            | <xref:System.Net.HttpStatusCode.ProxyAuthenticationRequired?displayProperty=nameWithType>   |
+| `408`            | <xref:System.Net.HttpStatusCode.RequestTimeout?displayProperty=nameWithType>                |
+| `409`            | <xref:System.Net.HttpStatusCode.Conflict?displayProperty=nameWithType>                      |
+| `410`            | <xref:System.Net.HttpStatusCode.Gone?displayProperty=nameWithType>                          |
+| `411`            | <xref:System.Net.HttpStatusCode.LengthRequired?displayProperty=nameWithType>                |
+| `412`            | <xref:System.Net.HttpStatusCode.PreconditionFailed?displayProperty=nameWithType>            |
+| `413`            | <xref:System.Net.HttpStatusCode.PayloadTooLarge?displayProperty=nameWithType>               |
+| `414`            | <xref:System.Net.HttpStatusCode.UriTooLong?displayProperty=nameWithType>                    |
+| `415`            | <xref:System.Net.HttpStatusCode.UnsupportedMediaType?displayProperty=nameWithType>          |
+| `416`            | <xref:System.Net.HttpStatusCode.RangeNotSatisfiable?displayProperty=nameWithType>           |
+| `417`            | <xref:System.Net.HttpStatusCode.ExpectationFailed?displayProperty=nameWithType>             |
+| `418`            | [I'm a teapot](https://developer.mozilla.org/docs/Web/HTTP/Status/418) 🫖                   |
+| `421`            | <xref:System.Net.HttpStatusCode.MisdirectedRequest?displayProperty=nameWithType>            |
+| `422`            | <xref:System.Net.HttpStatusCode.UnprocessableEntity?displayProperty=nameWithType>           |
+| `423`            | <xref:System.Net.HttpStatusCode.Locked?displayProperty=nameWithType>                        |
+| `424`            | <xref:System.Net.HttpStatusCode.FailedDependency?displayProperty=nameWithType>              |
+| `426`            | <xref:System.Net.HttpStatusCode.UpgradeRequired?displayProperty=nameWithType>               |
+| `428`            | <xref:System.Net.HttpStatusCode.PreconditionRequired?displayProperty=nameWithType>          |
+| `429`            | <xref:System.Net.HttpStatusCode.TooManyRequests?displayProperty=nameWithType>               |
+| `431`            | <xref:System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge?displayProperty=nameWithType>   |
+| `451`            | <xref:System.Net.HttpStatusCode.UnavailableForLegalReasons?displayProperty=nameWithType>    |
+
+### Server error status codes
+
+| HTTP status code | `HttpStatusCode`                                                                            |
+|------------------|---------------------------------------------------------------------------------------------|
+| `500`            | <xref:System.Net.HttpStatusCode.InternalServerError?displayProperty=nameWithType>           |
+| `501`            | <xref:System.Net.HttpStatusCode.NotImplemented?displayProperty=nameWithType>                |
+| `502`            | <xref:System.Net.HttpStatusCode.BadGateway?displayProperty=nameWithType>                    |
+| `503`            | <xref:System.Net.HttpStatusCode.ServiceUnavailable?displayProperty=nameWithType>            |
+| `504`            | <xref:System.Net.HttpStatusCode.GatewayTimeout?displayProperty=nameWithType>                |
+| `505`            | <xref:System.Net.HttpStatusCode.HttpVersionNotSupported?displayProperty=nameWithType>       |
+| `506`            | <xref:System.Net.HttpStatusCode.VariantAlsoNegotiates?displayProperty=nameWithType>         |
+| `507`            | <xref:System.Net.HttpStatusCode.InsufficientStorage?displayProperty=nameWithType>           |
+| `508`            | <xref:System.Net.HttpStatusCode.LoopDetected?displayProperty=nameWithType>                  |
+| `510`            | <xref:System.Net.HttpStatusCode.NotExtended?displayProperty=nameWithType>                   |
+| `511`            | <xref:System.Net.HttpStatusCode.NetworkAuthenticationRequired?displayProperty=nameWithType> |
+
+## See also
+
+- [Make HTTP requests with the HttpClient class](httpclient.md)
+- [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md)
+- [Guidelines for using HttpClient](httpclient-guidelines.md)

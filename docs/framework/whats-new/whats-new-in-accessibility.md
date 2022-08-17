@@ -82,7 +82,7 @@ Applications that target versions of .NET Framework starting with 4.7.1 can disa
 Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of UIA patterns to support assistive technology, for example, to interact with applications. This deficiency could cause Narrator or other screen readers to report incomplete or incorrect information. It could also affect important functionality like moving a cursor through the text in a <xref:System.Windows.Forms.TextBox> control. With .NET Framework 4.8.1, all of the required patterns for the common controls have been implemented. This new functionality gives users of assistive technology a much richer application interaction experience.
 
 - Added support for the UIA expand/collapse pattern to the <xref:System.Windows.Forms.DateTimePicker> control.
-- Added UIA support to the <xref:System.Wndows.Forms.MonthCalendar> control. Now assistive technology tools such as Narrator can navigate through the individual dates in the control.
+- Added UIA support to the <xref:System.Windows.Forms.MonthCalendar> control. Now assistive technology tools such as Narrator can navigate through the individual dates in the control.
 - Implemented text pattern support for all text-based controls, including the <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.MaskedTextBox>, <xref:System.Windows.Forms.PropertyGrid> edit control, <xref:System.Windows.Forms.DataGridViewTextBoxCell>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.DomainUpDown> controls.
 - <xref:System.Windows.Forms.ToolTip> now follows [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable on Windows 11.
 

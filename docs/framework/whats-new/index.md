@@ -49,7 +49,7 @@ You can download .NET Framework 4.8.1 from the following locations:
 
 .NET Framework 4.8 can be installed on Windows 11, Windows 10 version 21H2, Windows 10 version 21H1, Windows 10 version 20H2, and the corresponding server platforms starting with Windows Server 2022. You can install .NET Framework 4.8.1 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
 
-You can target .NET Framework 4.8.1 in Visual Studio 2019 17.3 or later by installing the [.NET Framework 4.8.1 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=2203306).
+You can target .NET Framework 4.8.1 in Visual Studio 2022 17.3 or later by installing the [.NET Framework 4.8.1 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=2203306).
 
 ### What's new in .NET Framework 4.8.1
 

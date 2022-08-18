@@ -53,7 +53,7 @@ Jump to:
 ### .NET Framework 4.8.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-481)
-- [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-481)
+- New accessibility features
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net481/README.md)
 
 | | Versions |

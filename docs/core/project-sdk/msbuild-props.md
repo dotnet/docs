@@ -141,7 +141,7 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 
 ### PackRelease
 
-The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
+The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`. To use `PackRelease` in a solution's project, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Note that this will increase the time required to pack solutions with many projects. 
 
 ```xml
 <PropertyGroup>
@@ -317,7 +317,7 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to leverage the `Release` configuration instead of the `Debug` configuration. We recommend adding this property to a `Directory.Build.props` file instead of a project file so that it's evaluated early enough for the configuration change to propagate.
+The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.  To use `PublishRelease` in a solution's project, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Note that this will increase the time required to publish solutions with many projects. When publishing a solution with this enabled, the executable project's `PublishRelease` value will take precedence and flow the new default configuration to any other projects in its solution. If a solution contains multiple executable/top level projects with values of `PublishRelease` that differ, the solution will not successfully publish.
 
 ```xml
 <PropertyGroup>
@@ -326,7 +326,7 @@ The `PublishRelease` property informs `dotnet publish` to leverage the `Release`
 ```
 
 > [!NOTE]
-> This property does not affect the behavior of `dotnet build /t:Publish`.
+> This property does not affect the behavior of `dotnet build /t:Publish`, and changes the configuration only when publishing via the .NET SDK CLI.
 
 ### RollForward
 

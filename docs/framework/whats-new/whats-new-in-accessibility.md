@@ -84,7 +84,7 @@ Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of 
 - Added support for the UIA expand/collapse pattern to the <xref:System.Windows.Forms.DateTimePicker> control.
 - Added UIA support to the <xref:System.Windows.Forms.MonthCalendar> control. Now assistive technology tools such as Narrator can navigate through the individual dates in the control.
 - Implemented text pattern support for all text-based controls, including the <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.MaskedTextBox>, <xref:System.Windows.Forms.PropertyGrid> edit control, <xref:System.Windows.Forms.DataGridViewTextBoxCell>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.DomainUpDown> controls.
-- <xref:System.Windows.Forms.ToolTip> now follows [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable on Windows 11.
+- <xref:System.Windows.Forms.ToolTip> now follows [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable on Windows 11. Changes to tooltip behavior are limited to Windows 11 systems that have .NET Framework 4.8.1 installed, and only apply to applications where a timeout was not set for the tooltip. Tooltips that are persisting can be dismissed with either the Esc key or the Ctrl key or by navigating to a control with another tooltip set.
 
 **Various bug fixes for existing accessibility features**
 
@@ -114,7 +114,7 @@ Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of 
 
 #### Accessible Tooltip handling improvements
 
-In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the Esc key, the Ctrl key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Esc key was reduced in this release to apply only to the current window, when previously it would have applied to any open tooltip in the application.
+In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the Esc key, the Ctrl key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Esc key was reduced in this release to apply only to the current window, when previously it would have applied to any open tooltip in the application. By default WPF tooltips will follow [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable.
 
 ## What's new in accessibility in the August 11, 2020 Cumulative Update for .NET Framework 4.8
 

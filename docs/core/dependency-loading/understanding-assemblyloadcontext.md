@@ -106,6 +106,6 @@ System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(b.GetType().Assembly)
 
 There are two design patterns for solving these type conversion issues.
 
-1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. For more information, read about [how dependencies are shared](#how-are-dependencies-shared).
+1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. For more information, read about [how dependencies are shared](#shared-dependencies).
 
 2. Use marshalling techniques to convert from one type to another.

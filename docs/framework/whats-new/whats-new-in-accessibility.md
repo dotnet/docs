@@ -67,6 +67,7 @@ Applications that target versions of .NET Framework starting with 4.7.1 can disa
 ```
 
 ## What's new in accessibility in .NET Framework 4.8.1
+
 .NET Framework 4.8.1 includes new accessibility features in the following areas:
 
 - [Windows Forms](#winforms481)

@@ -3,7 +3,7 @@ title: Install .NET Framework on Server 2022
 description: Learn how to install .NET Framework on Server 2022.
 ms.date: 08/10/2022
 ---
-# Install .NET Framework on Server 2022
+# Install .NET Framework on Windows Server 2022
 
 .NET Framework 4.8 is included with Server 2022, and runs any .NET Framework 4.x app.
 

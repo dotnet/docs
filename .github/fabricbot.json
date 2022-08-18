@@ -150,10 +150,15 @@
                   ]
                 },
                 {
-                  "name": "isActivitySender",
-                  "parameters": {
-                    "user": "azure-sdk"
-                  }
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "isActivitySender",
+                      "parameters": {
+                        "user": "azure-sdk"
+                      }
+                    }
+                  ]
                 }
               ]
             }

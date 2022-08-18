@@ -1,18 +1,16 @@
-﻿// TCP client example
-Console.WriteLine("TCP client starting...");
-var endPoint = await NetworkDiscovery.GetTcpEndPointAsync();
+﻿// UDP client example
+Console.WriteLine("UDP client starting...");
+var endPoint = await NetworkDiscovery.GetUdpEndPointAsync();
 
-// <tcpclient>
+// <udpclient>
 try
 {
     using UdpClient client = new();
-    await client.
-    await using NetworkStream stream = client.GetStream();
+    client.Connect(endPoint);
 
-    var buffer = new byte[1_024];
-    int received = await stream.ReadAsync(buffer);
+    var result = await client.ReceiveAsync();
 
-    var message = Encoding.ASCII.GetString(buffer, 0, received);
+    var message = Encoding.ASCII.GetString(result.Buffer, 0, result.Buffer.Length);
     Console.WriteLine($"Message received: {message}");
 }
 catch (SocketException ex)
@@ -20,7 +18,7 @@ catch (SocketException ex)
     Console.Error.WriteLine(ex);
     Console.Error.WriteLine(ex.SocketErrorCode);
 }
-// </tcpclient>
+// </udpclient>
 
 Console.WriteLine("Press ENTER to continue...");
 Console.Read();

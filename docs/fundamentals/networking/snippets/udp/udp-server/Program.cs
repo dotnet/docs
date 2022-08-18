@@ -1,26 +1,24 @@
-﻿// TCP client example
-Console.WriteLine("TCP client starting...");
-var endPoint = await NetworkDiscovery.GetTcpEndPointAsync();
+﻿// UDP client example
+Console.WriteLine("UDP server starting...");
+var endPoint = await NetworkDiscovery.GetUdpEndPointAsync();
 
-// <tcpclient>
+// <udpclient>
 try
 {
-    using TcpClient client = new();
-    await client.ConnectAsync(endPoint);
-    await using NetworkStream stream = client.GetStream();
+    using UdpClient client = new();
+    client.Connect(endPoint);
 
-    var buffer = new byte[1_024];
-    int received = await stream.ReadAsync(buffer);
-
-    var message = Encoding.ASCII.GetString(buffer, 0, received);
-    Console.WriteLine($"Message received: {message}");
+    var message = DateTime.Now.ToString();
+    var dateTimeBytes = Encoding.ASCII.GetBytes(message);
+    await client.SendAsync(dateTimeBytes);
+    Console.WriteLine($"Sent message: {message}");
 }
 catch (SocketException ex)
 {
     Console.Error.WriteLine(ex);
     Console.Error.WriteLine(ex.SocketErrorCode);
 }
-// </tcpclient>
+// </udpclient>
 
 Console.WriteLine("Press ENTER to continue...");
 Console.Read();

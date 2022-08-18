@@ -81,7 +81,7 @@ WPF had implemented most of the requirements for WCAG2.1 compliant tooltips in .
 
 <a name="winforms481"></a>
 
-Windows Forms was the first Windows UI stack created for .NET Framework. As such, it was originally created to utilize legacy accessibility technology, which doesn’t meet current accessibility requirements. In this release, WinForms has addressed a number of issues. For a complete list of the accessibility related changes, visit [What’s new in accessibility in .NET Framework](https://docs.microsoft.com/dotnet/framework/whats-new/whats-new-in-accessibility).
+Windows Forms was the first Windows UI stack created for .NET Framework. As such, it was originally created to utilize legacy accessibility technology, which doesn't meet current accessibility requirements. In this release, Windows Forms has addressed a number of issues. For a complete list of the accessibility related changes, visit [What’s new in accessibility in .NET Framework](../whats-new/whats-new-in-accessibility.md).
 
 Here we’ll focus on the highlights of what WinForms has done in .NET Framework 4.8.1.
 - [Text Pattern Support](https://docs.microsoft.com/windows/win32/winauto/uiauto-implementingtextandtextrange)– In this release, WinForms added support for the UIA Text Pattern. This pattern enables assistive technology to traverse the content of a TextBox or similar text-based control letter by letter. It enables text to be selected within the control and changed, as well as new text inserted at the cursor. WinForms added this support for TextBox, DataGridView cells, ComboBox controls and more.

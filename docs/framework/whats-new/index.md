@@ -83,7 +83,8 @@ WPF had implemented most of the requirements for WCAG2.1 compliant tooltips in .
 
 Windows Forms was the first Windows UI stack created for .NET Framework. As such, it was originally created to utilize legacy accessibility technology, which doesn't meet current accessibility requirements. In this release, Windows Forms has addressed a number of issues. For a complete list of the accessibility related changes, visit [What’s new in accessibility in .NET Framework](../whats-new/whats-new-in-accessibility.md).
 
-Here we’ll focus on the highlights of what WinForms has done in .NET Framework 4.8.1.
+The highlights of Windows Forms improvements in .NET Framework 4.8.1 are:
+
 - [Text Pattern Support](https://docs.microsoft.com/windows/win32/winauto/uiauto-implementingtextandtextrange)– In this release, WinForms added support for the UIA Text Pattern. This pattern enables assistive technology to traverse the content of a TextBox or similar text-based control letter by letter. It enables text to be selected within the control and changed, as well as new text inserted at the cursor. WinForms added this support for TextBox, DataGridView cells, ComboBox controls and more.
 - Addressing Contrast issues– We’ve addressed high contrast issues in several controls and have changed the contrast ratio of selection rectangles to be darker and more visible.
 - Fixed several DataGridView issues– In this release, we’ve updated the scrollbar names to be consistent. We’ve addressed an issue where Narrator was unable to focus on empty DataGridView cells. Developers are now able to set the localized control type property for Custom DataGridView cells. The link color for DataGridViewLink cells has been updated to have better contrast with the background.

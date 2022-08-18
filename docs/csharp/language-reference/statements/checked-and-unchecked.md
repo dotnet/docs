@@ -17,22 +17,22 @@ The `checked` and `unchecked` statements specify the overflow-checking context f
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="MainExample":::
 
-when integer arithmetic overflow occurs, the overflow-checking context defines what happens as follows:
+When integer arithmetic overflow occurs, the overflow-checking context defines what happens as follows:
 
 - In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs.
-- In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, it wraps from the maximum value to the minimum value, as the preceding example shows.
+- In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, in the case of addition it wraps from the maximum value to the minimum value, as the preceding example shows.
 
 For more information, see the [Arithmetic overflow and division by zero](../operators/arithmetic-operators.md#arithmetic-overflow-and-division-by-zero) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 
-To specify the overflow-checking context for evaluation of an expression, you can also use the `checked` and `unchecked` operators, as the following example shows:
+To specify the overflow-checking context for an expression, you can also use the `checked` and `unchecked` operators, as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="OperatorForm":::
 
-The `checked` and `unchecked` statements and operators only affect the overflow-checking context for those operations that are *textually* inside the statement block or operators's parentheses, as the following example shows:
+The `checked` and `unchecked` statements and operators only affect the overflow-checking context for those operations that are *textually* inside the statement block or operator's parentheses, as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="ScopeExample":::
 
-At the preceding example, the first invocation of the `Multiply` local function shows that the `checked` statement doesn't affect the overflow-checking context within the `Multiply` function as no exception is thrown. At the second invocation of the `Multiply` function, the expression that calculates the second argument of the function is evaluated in a checked context as it's textually inside the block of the `checked` statement.
+At the preceding example, the first invocation of the `Multiply` local function shows that the `checked` statement doesn't affect the overflow-checking context within the `Multiply` function as no exception is thrown. At the second invocation of the `Multiply` function, the expression that calculates the second argument of the function is evaluated in a checked context and results in an exception as it's textually inside the block of the `checked` statement.
 
 ## Operations affected by the overflow-checking context
 
@@ -42,13 +42,13 @@ The overflow-checking context affects the following operations:
 - [Explicit numeric conversions](../builtin-types/numeric-conversions.md#explicit-numeric-conversions) between integral types or from [`float` or `double`](../builtin-types/floating-point-numeric-types.md) to an integral type.
 
   > [!NOTE]
-  > When you convert a `decimal` value to an integral type and the result is outside the range of the destination type, an <xref:System.OverflowException> is always thrown, regardless the overflow-checking context.
+  > When you convert a `decimal` value to an integral type and the result is outside the range of the destination type, an <xref:System.OverflowException> is always thrown, regardless of the overflow-checking context.
 
 - Beginning with C# 11, user-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 
 ## Default overflow-checking context
 
-If you don't specify the overflow-checking context, the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option defines the default context for non-constant expressions. By default the value of that option is unset and arithmetic operations are executed in an **unchecked** context.
+If you don't specify the overflow-checking context, the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option defines the default context for non-constant expressions. By default the value of that option is unset and integral-type arithmetic operations and conversions are executed in an **unchecked** context.
 
 Constant expressions are evaluated by default in a checked context and a compile-time error occurs in the case of an overflow. You can explicitly specify an unchecked context for a constant expression with the `unchecked` statement or operator.
 

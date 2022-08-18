@@ -1,5 +1,5 @@
 ---
-title: Install .NET Framework on Server 2022
+title: Install .NET Framework on Windows Server 2022
 description: Learn how to install .NET Framework on Windows Server 2022.
 ms.date: 08/10/2022
 ---

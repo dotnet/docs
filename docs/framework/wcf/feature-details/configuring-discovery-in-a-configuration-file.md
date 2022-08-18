@@ -241,7 +241,7 @@ There are four major groups of configuration settings used in discovery. This to
       <endpoint kind="udpDiscoveryEndpoint" endpointConfiguration="udpDiscoveryEndpointSettings"/>  
    </service>  
    <service name="AnnouncementListener">  
-      <endpoint kind="udpAnnouncementEndpoint" endpointConfiguration="udpAnnouncementEndpointSettings" >  
+      <endpoint kind="udpAnnouncementEndpoint" endpointConfiguration="udpAnnouncementEndpointSettings" />  
    </service>  
 </services>  
 ```  
@@ -272,7 +272,7 @@ There are four major groups of configuration settings used in discovery. This to
            </standardEndpoint>  
          </dynamicEndpoint>  
    </standardEndpoints>  
-</system.ServiceModel>  
+</system.serviceModel>  
 ```  
   
  For more information about standard endpoints see [Standard Endpoints](standard-endpoints.md).

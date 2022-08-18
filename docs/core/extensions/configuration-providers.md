@@ -3,7 +3,7 @@ title: Configuration providers
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/29/2022
+ms.date: 08/16/2022
 ms.topic: reference
 ---
 
@@ -24,6 +24,8 @@ Configuration in .NET is possible with configuration providers. There are severa
 - [JSON configuration provider](#json-configuration-provider)
 - [XML configuration provider](#xml-configuration-provider)
 - [INI configuration provider](#ini-configuration-provider)
+
+Keys are case-insensitive. All of the file configuration providers throw the <xref:System.FormatException> when duplicate keys are found in a single provider.
 
 ### JSON configuration provider
 

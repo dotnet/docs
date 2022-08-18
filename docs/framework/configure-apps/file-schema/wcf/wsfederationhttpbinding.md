@@ -96,7 +96,7 @@ Defines a binding that supports WS-Federation.
                   maxNameTableCharCount="Integer"
                   maxStringContentLength="Integer" />
   </binding>
-</wsFederationBinding>
+</wsFederationHttpBinding>
 ```
 
 ## Attributes and Elements
@@ -185,7 +185,7 @@ For more information on this binding, see [How to: Create a WSFederationHttpBind
             </message>
           </security>
         </binding>
-      </wsFederationBinding>
+      </wsFederationHttpBinding>
     </bindings>
   </system.ServiceModel>
 </configuration>

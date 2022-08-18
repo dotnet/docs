@@ -3,8 +3,6 @@ Imports System.Xml
 Imports System.Security.Cryptography
 Imports System.Security.Cryptography.Xml
 
-
-
 Module Program
 
     Sub Main(ByVal args() As String)
@@ -60,15 +58,10 @@ Module Program
 
     Sub Decrypt(ByVal Doc As XmlDocument, ByVal Alg As RSA, ByVal KeyName As String)
         ' Check the arguments.  
-        If Doc Is Nothing Then
-            Throw New ArgumentNullException("Doc")
-        End If
-        If Alg Is Nothing Then
-            Throw New ArgumentNullException("Alg")
-        End If
-        If KeyName Is Nothing Then
-            Throw New ArgumentNullException("KeyName")
-        End If
+        ArgumentNullException.ThrowIfNull(Doc)
+        ArgumentNullException.ThrowIfNull(Alg)
+        ArgumentNullException.ThrowIfNull(KeyName)
+
         ' <snippet5>
         ' Create a new EncryptedXml object.
         Dim exml As New EncryptedXml(Doc)
@@ -85,5 +78,4 @@ Module Program
         '</snippet7>
     End Sub
 End Module
-
 ' </snippet1>

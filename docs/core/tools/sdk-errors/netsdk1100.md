@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1100: Set the `EnableWindowsTargeting` property to true"
 description: Learn about the .NET SDK error message that instructs you to set the EnableWindowsTargeting property to true.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:

@@ -31,6 +31,9 @@ This library implements the common ADO.NET abstractions for connections, command
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/HelloWorldSample/Program.cs?name=snippet_HelloWorld)]
 
+> [!TIP]
+> You can see the full code for this example at [HelloWorldSample](https://github.com/dotnet/docs/tree/main/samples/snippets/standard/data/sqlite/HelloWorldSample).
+
 ## See also
 
 * [Connection strings](connection-strings.md)

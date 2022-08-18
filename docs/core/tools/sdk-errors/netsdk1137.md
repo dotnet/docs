@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1137: Don't use the Microsoft.NET.Sdk.WindowsDesktop SDK"
 description: How to resolve the `Don't use the Microsoft.NET.Sdk.WindowsDesktop SDK' error message.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:

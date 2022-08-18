@@ -79,7 +79,7 @@ Applications that target versions of .NET Framework starting with 4.7.1 can disa
 
 **Added and improved UIA representations**
 
-Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of UIA patterns to support assistive technology, for example, to interact with applications. This deficiency could cause Narrator or other screen readers to report incomplete or incorrect information. It could also affect important functionality like moving a cursor through the text in a <xref:System.Windows.Forms.TextBox> control. With .NET Framework 4.8.1, all of the required patterns for the common controls have been implemented. This new functionality gives users of assistive technology a much richer application interaction experience.
+Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of UIA patterns to support assistive technology to interact with applications. This deficiency could cause Narrator or other screen readers to report incomplete or incorrect information. It could also affect important functionality like moving a cursor through the text in a <xref:System.Windows.Forms.TextBox> control. With .NET Framework 4.8.1, all of the required patterns for the common controls have been implemented. This new functionality gives users of assistive technology a much richer application interaction experience.
 
 - Added support for the UIA expand/collapse pattern to the <xref:System.Windows.Forms.DateTimePicker> control.
 - Added UIA support to the <xref:System.Windows.Forms.MonthCalendar> control. Now assistive technology tools such as Narrator can navigate through the individual dates in the control.
@@ -93,14 +93,14 @@ Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of 
 - Addressed an issue that caused the <xref:System.Windows.Forms.DataGridView> to ignore the font settings set in the `DataGridviewCellStyle` if the underlying form had a `Font` property that differed from `DefaultFont`.
 - Updated the `AccessibleName` property of the <xref:System.Windows.Forms.DataGridView> control's internal scroll bars to remove the text "ScrollBar".
 - Fixed the color of a `DataGridViewLinkCell` when the cell is selected.
-- Fixed an issue with custom <xref:System.Windows.Forms.DataGridView> controls where there was no `ControlType` or `LocalizedControlType` provided publicly for custom <xref:System.Windows.Forms.DataGridViewCell> elements.
+- Fixed an issue with custom <xref:System.Windows.Forms.DataGridView> controls where there was no `ControlType` or `LocalizedControlType` provided for custom <xref:System.Windows.Forms.DataGridViewCell> elements.
 - Updated the luminosity ratio to 3.5:1 for <xref:System.Windows.Forms.ToolStripButton> controls that have `ToolStripRenderMode` set to `System`.
 - Improved keyboard navigation in a <xref:System.Windows.Forms.ToolStrip> when the element is a `ToolStripComboBox` type.
 - Updated the background color of the <xref:System.Windows.Forms.ToolStripButton> in high contrast mode.
 - Ensured that there is a bounding rectangle reported to assistive technology for the <xref:System.Windows.Forms.ToolStripSeparator>.
 - Fixed an issue that could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
 - Ensured that the UIA hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control is updated when a complex entry like `Font` is expanded. Also ensure that the tree is updated properly when the entry is then collapsed and no longer visible.
-- <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of "`PropertyGrid category`".
+- <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of `PropertyGrid category`.
 - Fixed an issue with the <xref:System.Windows.Forms.ComboBox> that could cause the app to crash under Accessibility Insights for Windows.
 - Updated the border color for the <xref:System.Windows.Forms.Button> to have more contrast in the default colors.
 - Enabled assistive technology tools to access the `ControlBox` buttons of a maximized MDI child form.

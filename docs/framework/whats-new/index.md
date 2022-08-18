@@ -65,7 +65,7 @@ Improved accessibility, which allows an application to provide an appropriate ex
 
 .NET Framework 4.8.1 adds native Arm64 support to the .NET Framework family. So, your investments in the vast ecosystem of .NET Framework apps and libraries can now leverage the benefits of running workloads natively on Arm64 for better performance when compared to running x64 code emulated on Arm64.
 
-<a name="#wpf481"></a>
+<a name="wpf481"></a>
 
 Microsoft has a commitment to providing products and platforms that are [accessible to everyone](https://www.microsoft.com/accessibility/). .NET Framework 4.8.1 provides two Windows UI development platforms, both of which provide developers with the support necessary to create accessible applications for their users. Over the past several releases, both Windows Forms and WPF have added several features and fixed numerous reliability issues related to accessibility. You can read more about the details of what we fixed or added in each release by visiting [What’s new in accessibility in .NET Framework](https://docs.microsoft.com/dotnet/framework/whats-new/whats-new-in-accessibility).
 

@@ -141,7 +141,10 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 
 ### PackRelease
 
-The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`. To use `PackRelease` in a solution's project, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Note that this will increase the time required to pack solutions with many projects.
+The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
+
+> [!NOTE]
+> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
 
 ```xml
 <PropertyGroup>

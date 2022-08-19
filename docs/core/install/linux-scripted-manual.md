@@ -82,6 +82,12 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 > [!IMPORTANT]
 > Bash is required to run the script.
 
+Before running this script, you'll need to grant permission for this script to run as an executable:
+
+```bash
+sudo chmod +x ./dotnet-install.sh
+```
+
 The script defaults to installing the latest SDK [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. To install the current release, which may not be an (LTS) version, use the `-c Current` parameter.
 
 ```bash

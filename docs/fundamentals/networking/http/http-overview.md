@@ -1,7 +1,7 @@
 ---
 title: HTTP support in .NET
 description: Learn about the comprehensive support for HTTP that .NET provides.
-ms.date: 08/17/2022
+ms.date: 08/19/2022
 helpviewer_keywords:
   - "protocols, HTTP"
   - "sending data, HTTP"
@@ -13,7 +13,6 @@ helpviewer_keywords:
   - "network resources, HTTP"
   - "HTTP, about HTTP"
   - "HttpWebRequest class, sending and receiving data"
-ms.assetid: 985fe5d8-eb71-4024-b361-41fbdc1618d8
 ---
 
 # HTTP support in .NET

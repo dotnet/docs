@@ -19,11 +19,6 @@ while (true)
     var buffer = new byte[1_024];
     var response = new StringBuilder();
     var received = await handler.ReceiveAsync(buffer, SocketFlags.None);
-    //if (received is 0)
-    //{
-    //    await Task.Delay(500);
-    //    continue;
-    //}
 
     // Send ack.
     var message = Encoding.ASCII.GetString(buffer, 0, received);

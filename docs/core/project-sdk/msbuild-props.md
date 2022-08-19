@@ -317,7 +317,10 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.  To use `PublishRelease` in a solution's project, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Note that this will increase the time required to publish solutions with many projects. When publishing a solution with this enabled, the executable project's `PublishRelease` value will take precedence and flow the new default configuration to any other projects in its solution. If a solution contains multiple executable/top level projects with values of `PublishRelease` that differ, the solution will not successfully publish.
+The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
+
+> [!NOTE]
+> To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
 
 ```xml
 <PropertyGroup>

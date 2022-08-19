@@ -4,10 +4,9 @@
         GetLocalEndPointAsync(9_000);
 
     public static ValueTask<IPEndPoint> GetSocketEndPointAsync() =>
-        GetLocalEndPointAsync(7_000, false);
+        GetLocalEndPointAsync(7_000);
 
-    static async ValueTask<IPEndPoint> GetLocalEndPointAsync(
-        int startingPort, bool first = true)
+    static async ValueTask<IPEndPoint> GetLocalEndPointAsync(int startingPort)
     {
         var port = startingPort;
         while (IsActivelyBeingUsed(port) && port > IPEndPoint.MaxPort) ++ port;
@@ -15,10 +14,7 @@
         var localhost = await Dns.GetHostEntryAsync(Dns.GetHostName());
         var isInterNetwork = static (IPAddress ip) =>
             ip.AddressFamily is AddressFamily.InterNetwork;
-        var filter = (IPAddress[] ipAddresses) => first
-                ? ipAddresses?.FirstOrDefault(isInterNetwork)
-                : ipAddresses?.LastOrDefault(isInterNetwork);
-        var localIP = filter(localhost.AddressList)
+        var localIP = localhost.AddressList.FirstOrDefault(isInterNetwork)
             ?? throw new Exception("Unable to get a local inter network IP.");
 
         Console.WriteLine($"Found: {localIP} available on port {port}.");

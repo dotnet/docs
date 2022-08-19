@@ -17,7 +17,11 @@ helpviewer_keywords:
 
 # HTTP support in .NET
 
-Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources. The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
+Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources.
+
+## HTTP request methods
+
+The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
 
 - A request method is **_idempotent_** if it can be successfully processed multiple times without changing the result. For more information, see [RFC 7231: Section 4.2.2 Idempotent Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
 - A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
@@ -37,9 +41,13 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 
 > <sup>†</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present. This is very uncommon in practice.
 
+## HTTP status codes
+
 .NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> set to a corresponding <xref:System.Net.HttpStatusCode>. The <xref:System.Net.Http.HttpResponseMessage> contains a <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property that can be used to determine non-error status codes.
 
 ### Informational status codes
+
+The informational status codes reflect an interim response. The client should continue to use the same request and discard the response.
 
 | HTTP status code | `HttpStatusCode`                                                                 |
 |------------------|----------------------------------------------------------------------------------|
@@ -49,6 +57,8 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 | `103`            | <xref:System.Net.HttpStatusCode.EarlyHints?displayProperty=nameWithType>         |
 
 ### Successful status codes
+
+The successful status codes indicate that the client's request was successfully received, understood, and accepted.
 
 | HTTP status code | `HttpStatusCode`                                                                          |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -65,6 +75,8 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 
 ### Redirection status codes
 
+Redirection status codes require the user agent to take action in order to fulfill the request. With the appropriate headers, automatic redirection is possible.
+
 | HTTP status code | `HttpStatusCode`                                                                                                                                                  |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `300`            | <xref:System.Net.HttpStatusCode.MultipleChoices?displayProperty=nameWithType> or <xref:System.Net.HttpStatusCode.Ambiguous?displayProperty=nameWithType>          |
@@ -78,6 +90,8 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 | `308`            | <xref:System.Net.HttpStatusCode.PermanentRedirect?displayProperty=nameWithType>                                                                                   |
 
 ### Client error status codes
+
+The client error status codes indicate that the client's request was invalid.
 
 | HTTP status code | `HttpStatusCode`                                                                            |
 |------------------|---------------------------------------------------------------------------------------------|
@@ -111,6 +125,8 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 | `451`            | <xref:System.Net.HttpStatusCode.UnavailableForLegalReasons?displayProperty=nameWithType>    |
 
 ### Server error status codes
+
+The server error status codes indicate that the server encountered an unexpected condition that prevented it from fulfilling the request.
 
 | HTTP status code | `HttpStatusCode`                                                                            |
 |------------------|---------------------------------------------------------------------------------------------|

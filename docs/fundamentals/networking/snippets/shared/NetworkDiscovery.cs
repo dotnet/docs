@@ -1,10 +1,7 @@
 ﻿public static class NetworkDiscovery
 {
-    public static ValueTask<IPEndPoint> GetUdpEndPointAsync() =>
-    GetLocalEndPointAsync(9_000);
-
     public static ValueTask<IPEndPoint> GetTcpEndPointAsync() =>
-        GetLocalEndPointAsync(8_000);
+        GetLocalEndPointAsync(9_000);
 
     public static ValueTask<IPEndPoint> GetSocketEndPointAsync() =>
         GetLocalEndPointAsync(7_000, false);
@@ -18,12 +15,13 @@
         var localhost = await Dns.GetHostEntryAsync(Dns.GetHostName());
         var isInterNetwork = static (IPAddress ip) =>
             ip.AddressFamily is AddressFamily.InterNetwork;
-        var localIP = (first
-            ? localhost.AddressList.FirstOrDefault(isInterNetwork)
-            : localhost.AddressList.LastOrDefault(isInterNetwork))
+        var filter = (IPAddress[] ipAddresses) => first
+                ? ipAddresses?.FirstOrDefault(isInterNetwork)
+                : ipAddresses?.LastOrDefault(isInterNetwork);
+        var localIP = filter(localhost.AddressList)
             ?? throw new Exception("Unable to get a local inter network IP.");
 
-        Console.WriteLine($"Found: {localIP} availabe on port {port}.");
+        Console.WriteLine($"Found: {localIP} available on port {port}.");
 
         return new IPEndPoint(localIP, port);
     }

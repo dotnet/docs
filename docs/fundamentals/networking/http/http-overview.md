@@ -95,10 +95,10 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 | `410`            | <xref:System.Net.HttpStatusCode.Gone?displayProperty=nameWithType>                          |
 | `411`            | <xref:System.Net.HttpStatusCode.LengthRequired?displayProperty=nameWithType>                |
 | `412`            | <xref:System.Net.HttpStatusCode.PreconditionFailed?displayProperty=nameWithType>            |
-| `413`            | <xref:System.Net.HttpStatusCode.PayloadTooLarge?displayProperty=nameWithType>               |
-| `414`            | <xref:System.Net.HttpStatusCode.UriTooLong?displayProperty=nameWithType>                    |
+| `413`            | <xref:System.Net.HttpStatusCode.RequestEntityTooLarge?displayProperty=nameWithType>         |
+| `414`            | <xref:System.Net.HttpStatusCode.RequestUriTooLong?displayProperty=nameWithType>             |
 | `415`            | <xref:System.Net.HttpStatusCode.UnsupportedMediaType?displayProperty=nameWithType>          |
-| `416`            | <xref:System.Net.HttpStatusCode.RangeNotSatisfiable?displayProperty=nameWithType>           |
+| `416`            | <xref:System.Net.HttpStatusCode.RequestedRangeNotSatisfiable?displayProperty=nameWithType>  |
 | `417`            | <xref:System.Net.HttpStatusCode.ExpectationFailed?displayProperty=nameWithType>             |
 | `418`            | [I'm a teapot](https://developer.mozilla.org/docs/Web/HTTP/Status/418) 🫖                   |
 | `421`            | <xref:System.Net.HttpStatusCode.MisdirectedRequest?displayProperty=nameWithType>            |

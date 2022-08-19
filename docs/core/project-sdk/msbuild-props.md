@@ -329,7 +329,7 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 ```
 
 > [!NOTE]
-> This property does not affect the behavior of `dotnet build /t:Publish`, and changes the configuration only when publishing via the .NET SDK CLI.
+> This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
 
 ### RollForward
 

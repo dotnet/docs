@@ -100,12 +100,12 @@ Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of 
 - Updated the background color of the <xref:System.Windows.Forms.ToolStripButton> in high contrast mode.
 - Ensured that there is a bounding rectangle reported to assistive technology for the <xref:System.Windows.Forms.ToolStripSeparator>.
 - Fixed an issue that could cause the screen reader JAWS to crash when reading the <xref:System.Windows.Forms.PropertyGrid> control.
-- Ensured that the UIA hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control is updated when a complex entry like `Font` is expanded. Also ensure that the tree is updated properly when the entry is then collapsed and no longer visible.
+- Ensured that the UIA hierarchy tree for a <xref:System.Windows.Forms.PropertyGrid> control is updated when a complex entry like `Font` is expanded. Also ensured that the tree is updated properly when the entry is then collapsed and no longer visible.
 - <xref:System.Windows.Forms.PropertyGrid> categories now have a localized control type of `PropertyGrid category`.
 - Fixed an issue with the <xref:System.Windows.Forms.ComboBox> that could cause the app to crash under Accessibility Insights for Windows.
 - Updated the border color for the <xref:System.Windows.Forms.Button> to have more contrast in the default colors.
 - Enabled assistive technology tools to access the `ControlBox` buttons of a maximized MDI child form.
-- The `AccessibleName` property of a <xref:System.Windows.Forms.DomainUpDown> control has a new default value of an empty string. The empty string will encourage developers to create a meaningful name rather than accepting the previous default value.
+- The `AccessibleName` property of a <xref:System.Windows.Forms.DomainUpDown> control has a new default value of an empty string. The empty string will encourage developers to create a meaningful name rather than accepting the previous non-empty default value.
 - Updated the `AccessibleName` property of the Print button in the <xref:System.Windows.Forms.PrintPreviewDialog> from "Print Button" to "Print" to avoid redundancy when screen readers announce the control and its type.
 - Updated UIA list controls to remove an empty list element when a <xref:System.Windows.Forms.PropertyGrid> cell of type `ComboBox` is closed and no longer visible.
 
@@ -115,7 +115,7 @@ Prior to .NET Framework 4.8.1, Windows Forms was missing support for a range of 
 
 #### Accessible Tooltip handling improvements
 
-In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the Esc key, the Ctrl key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Esc key was reduced in this release to apply only to the current window, when previously it would have applied to any open tooltip in the application. By default WPF tooltips will follow [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable.
+In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the Esc key, the Ctrl key (by itself), or by the combination Ctrl+Shift+F10. The scope of the Esc key was reduced in this release to apply only to the current window, when previously it would have applied to any open tooltip in the application. By default, WPF tooltips will follow [WCAG2.1 guidelines](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) to be persistent, dismissable, and hoverable.
 
 ## What's new in accessibility in the August 11, 2020 Cumulative Update for .NET Framework 4.8
 

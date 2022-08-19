@@ -127,6 +127,11 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
 
 ## Package properties
 
+- [Descriptive properties](#descriptive-properties)
+- [PackRelease](#packrelease)
+
+### Descriptive properties
+
 You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe the package that gets created from your project. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).
 
 ```xml
@@ -143,14 +148,14 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 
 The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
 
-> [!NOTE]
-> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
-
 ```xml
 <PropertyGroup>
   <PackRelease>true</PackRelease>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
 
 ## Publish-related properties
 
@@ -322,9 +327,6 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
 
-> [!NOTE]
-> To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
-
 ```xml
 <PropertyGroup>
   <PublishRelease>true</PublishRelease>
@@ -332,7 +334,9 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 ```
 
 > [!NOTE]
-> This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
+>
+> - This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
+> - To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
 
 ### RollForward
 

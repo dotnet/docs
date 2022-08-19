@@ -3,7 +3,7 @@ title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/09/2022
+ms.date: 08/19/2022
 ---
 
 # IHttpClientFactory with .NET
@@ -13,7 +13,7 @@ In this article, you'll learn how to use the `IHttpClientFactory` to create `Htt
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
 > [!NOTE]
-> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
+> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## The `IHttpClientFactory` type
 
@@ -199,7 +199,7 @@ services.AddHttpClient("Named.Client")
 > [!IMPORTANT]
 > You can generally treat `HttpClient` instances as objects that **do not** require disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
 
-Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
+Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Configure the `HttpMessageHandler`
 
@@ -240,10 +240,11 @@ There are several additional configuration options for controlling the `IHttpCli
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
 - <xref:System.Net.Http.HttpClient>
-- [Make HTTP requests with the HttpClient](../../fundamentals/networking/httpclient.md)
+- [Make HTTP requests with the HttpClient][httpclient]
 - [Implement HTTP retry with exponential backoff][http-retry]
 
 [di]: dependency-injection.md
 [logging]: logging.md
 [config]: configuration.md
+[httpclient]: ../../fundamentals/networking/http/httpclient.md
 [http-retry]: ../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md

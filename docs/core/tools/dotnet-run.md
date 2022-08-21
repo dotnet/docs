@@ -81,7 +81,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--no-build`**
 
-  Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
+  Doesn't build the project before running. It also implicitly sets the `--no-restore` flag.
 
 - **`--no-dependencies`**
 

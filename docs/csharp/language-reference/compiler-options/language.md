@@ -31,6 +31,8 @@ The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic
 
 An integer arithmetic expression that is in the scope of a [`checked` or `unchecked` keyword](../statements/checked-and-unchecked.md) isn't subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic expression that isn't in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the destination type, and **CheckForOverflowUnderflow** is `true`, that expression causes an <xref:System.OverflowException> at run time. If **CheckForOverflowUnderflow** is `false`, that expression doesn't cause an exception at run time. The default value for this option is `false`, that is, overflow checking is disabled.
 
+For the list of the operations that are affected by this compiler option, see the [Operations affected by the overflow-checking context](../statements/checked-and-unchecked.md#operations-affected-by-the-overflow-checking-context) section of the [article about `checked` and `unchecked` statements](../statements/checked-and-unchecked.md).
+
 ## AllowUnsafeBlocks
 
 The **AllowUnsafeBlocks** compiler option allows code that uses the [unsafe](../keywords/unsafe.md) keyword to compile. The default value for this option is `false`, meaning unsafe code is not allowed.

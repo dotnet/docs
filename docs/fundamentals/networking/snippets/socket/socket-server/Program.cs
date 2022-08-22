@@ -18,26 +18,26 @@ while (true)
 {
     // Receive message.
     var buffer = new byte[1_024];
-    var response = new StringBuilder();
     var received = await handler.ReceiveAsync(buffer, SocketFlags.None);
-    var message = Encoding.UTF8.GetString(buffer, 0, received);
-    response.Append(message);
-
-    var eom = "<EOM>";
-    if (message.IndexOf(eom) > -1 /* is end of message */)
+    var response = Encoding.UTF8.GetString(buffer, 0, received);
+    
+    var eom = "<|EOM|>";
+    if (response.IndexOf(eom) > -1 /* is end of message */)
     {
-        Console.WriteLine($"Socket server received message: \"{response.Replace(eom, "")}\"");
+        Console.WriteLine(
+            $"Socket server received message: \"{response.Replace(eom, "")}\"");
 
-        var ackMessage = "<ACK>";
+        var ackMessage = "<|ACK|>";
         var echoBytes = Encoding.UTF8.GetBytes(ackMessage);
         await handler.SendAsync(echoBytes, 0);
-        Console.WriteLine($"Socket server sent acknowledgement: \"{ackMessage}\"");
+        Console.WriteLine(
+            $"Socket server sent acknowledgment: \"{ackMessage}\"");
 
         break;
     }
     // Sample output:
     //    Socket server received message: "Hi friends 👋!"
-    //    Socket server sent acknowledgement: "<ACK>"
+    //    Socket server sent acknowledgment: "<ACK>"
 }
 // </socketserver>
 

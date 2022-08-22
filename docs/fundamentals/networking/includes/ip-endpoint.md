@@ -13,11 +13,6 @@ TCP/IP uses a network address and a service port number to uniquely identify a s
 
 The <xref:System.Net.Dns> class provides domain-name services to apps that use TCP/IP internet services. The <xref:System.Net.Dns.GetHostEntryAsync%2A> method queries a DNS server to map a user-friendly domain name (such as "host.contoso.com") to a numeric Internet address (such as `192.168.1.1`). `GetHostEntryAsync` returns a `Task<IPHostEntry>` that when awaited contains a list of addresses and aliases for the requested name. In most cases, you can use the first address returned in the <xref:System.Net.IPHostEntry.AddressList%2A> array. The following code gets an <xref:System.Net.IPAddress> containing the IP address for the server `host.contoso.com`.
 
-```vb
-Dim ipHostInfo As IPHostEntry = Await Dns.GetHostEntryAsync("host.contoso.com")
-Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)
-```
-
 ```csharp
 IPHostEntry ipHostInfo = await Dns.GetHostEntryAsync("host.contoso.com");
 IPAddress ipAddress = ipHostInfo.AddressList[0];
@@ -28,12 +23,8 @@ IPAddress ipAddress = ipHostInfo.AddressList[0];
 
 The Internet Assigned Numbers Authority (IANA) defines port numbers for common services. For more information, see [IANA: Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Other services can have registered port numbers in the range 1,024 to 65,535. The following code combines the IP address for `host.contoso.com` with a port number to create a remote endpoint for a connection.
 
-```vb
-Dim ipEndPoint As New IPEndPoint(ipAddress, 11000)
-```
-
 ```csharp
 IPEndPoint ipEndPoint = new(ipAddress, 11_000);
 ```
 
-After determining the address of the remote device and choosing a port to use for the connection, the app can attempt to establish a connection with the remote device.
+After determining the address of the remote device and choosing a port to use for the connection, the app can establish a connection with the remote device.

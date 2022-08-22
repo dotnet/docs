@@ -23,9 +23,9 @@ helpviewer_keywords:
 
 The <xref:System.Net.Sockets> namespace contains a managed, cross-platform socket networking implementation. All other network-access classes in the <xref:System.Net> namespace are built on top of this implementation of sockets.
 
-The .NET Framework <xref:System.Net.Sockets.Socket> class is a managed-code version of the socket services provided by the Winsock32 API. In most cases, the **Socket** class methods simply marshal data into their native Win32 counterparts and handle any necessary security checks.
+The .NET Framework <xref:System.Net.Sockets.Socket> class is a managed-code version of the socket services provided by the Winsock32 API. In most cases, the `Socket` class methods simply marshal data into their native Win32 counterparts and handle any necessary security checks.
 
-The **Socket** class supports two basic modes, synchronous and asynchronous. In synchronous mode, calls to functions that perform network operations (such as <xref:System.Net.Sockets.Socket.SendAsync%2A> and <xref:System.Net.Sockets.Socket.ReceiveAsync%2A>) wait until the operation completes before returning control to the calling program. In asynchronous mode, these calls return immediately.
+The `Socket` class supports two basic modes, synchronous and asynchronous. In synchronous mode, calls to functions that perform network operations (such as <xref:System.Net.Sockets.Socket.SendAsync%2A> and <xref:System.Net.Sockets.Socket.ReceiveAsync%2A>) wait until the operation completes before returning control to the calling program. In asynchronous mode, these calls return immediately.
 
 ## See also
 

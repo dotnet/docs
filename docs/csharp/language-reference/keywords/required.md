@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # required modifier (C# Reference)
 
-The `required` modifier indicates that the *field* or *property* it's applied to must be initialized by all constructors or using an [object initiializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). Any expression that initializes a new instance of the type must initialize all *required members*. Constructors indicate that they initialize all required members by adding the [`SetsRequiredMembers`](../attributes/general.md#setsrequiredmembers-attribute) attribute in the constructor declaration. Code that uses a constructor without this attribute must use *object initializers* to initialize all `required` members. The `required` modifier is available beginning with C# 11.
+The `required` modifier indicates that the *field* or *property* it's applied to must be initialized by all constructors or using an [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). Any expression that initializes a new instance of the type must initialize all *required members*. Constructors indicate that they initialize all required members by adding the [`SetsRequiredMembers`](../attributes/general.md#setsrequiredmembers-attribute) attribute in the constructor declaration. Code that uses a constructor without this attribute must use *object initializers* to initialize all `required` members. The `required` modifier is available beginning with C# 11.
 
 The `required` modifier and the `SetsRequiredMembers` attribute enable developers to create types where properties or fields must be properly initialized, yet still allow initialization using either constructors or object initializers. Several rules ensure this behavior:
 

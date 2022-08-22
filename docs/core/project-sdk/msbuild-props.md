@@ -127,6 +127,11 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
 
 ## Package properties
 
+- [Descriptive properties](#descriptive-properties)
+- [PackRelease](#packrelease)
+
+### Descriptive properties
+
 You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe the package that gets created from your project. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).
 
 ```xml
@@ -148,6 +153,9 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
   <PackRelease>true</PackRelease>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
 
 ## Publish-related properties
 
@@ -317,7 +325,7 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to leverage the `Release` configuration instead of the `Debug` configuration. We recommend adding this property to a `Directory.Build.props` file instead of a project file so that it's evaluated early enough for the configuration change to propagate.
+The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
 
 ```xml
 <PropertyGroup>
@@ -326,7 +334,9 @@ The `PublishRelease` property informs `dotnet publish` to leverage the `Release`
 ```
 
 > [!NOTE]
-> This property does not affect the behavior of `dotnet build /t:Publish`.
+>
+> - This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
+> - To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
 
 ### RollForward
 
@@ -381,11 +391,11 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 
 ### SatelliteResourceLanguages
 
-The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
+The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) and German (Germany) resource satellite assemblies will be retained.
 
 ```xml
 <PropertyGroup>
-  <SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+  <SatelliteResourceLanguages>en-US;de-DE</SatelliteResourceLanguages>
 </PropertyGroup>
 ```
 

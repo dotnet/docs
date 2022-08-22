@@ -2,7 +2,7 @@
 description: "Learn more about interfaces for generic math in .NET."
 title: Generic math
 titleSuffix: .NET
-ms.date: 07/26/2022
+ms.date: 08/12/2022
 ---
 # Generic math
 
@@ -24,7 +24,7 @@ Library authors will benefit most from the generic math interfaces, because they
 
 ## The interfaces
 
-When designing the interfaces, it was important that they were both fine-grained enough that users can define their own interfaces on top, while also being granular enough that they're easy to consume. To that extent, there are a few core numeric interfaces that most users will interact with, such as <xref:System.Numerics.INumber%601> and <xref:System.Numerics.IBinaryInteger%601>. The more fine-grained interfaces, such as <xref:System.Numerics.IAdditionOperators%603> and <xref:System.Numerics.ITrigonometricFunctions%601>, support these types and are available for developers who define their own domain-specific numeric interfaces.
+When designing the interfaces, they needed to be both fine-grained enough that users can define their own interfaces on top, while also being granular enough that they're easy to consume. To that extent, there are a few core numeric interfaces that most users will interact with, such as <xref:System.Numerics.INumber%601> and <xref:System.Numerics.IBinaryInteger%601>. The more fine-grained interfaces, such as <xref:System.Numerics.IAdditionOperators%603> and <xref:System.Numerics.ITrigonometricFunctions%601>, support these types and are available for developers who define their own domain-specific numeric interfaces.
 
 - [Numeric interfaces](#numeric-interfaces)
 - [Operator interfaces](#operator-interfaces)
@@ -54,7 +54,7 @@ This section describes the interfaces in <xref:System.Numerics?displayProperty=f
 
 <sup>2</sup>The binary [integer types](../../csharp/language-reference/builtin-types/integral-numeric-types.md) are <xref:System.Byte> (`byte`), <xref:System.Int16> (`short`), <xref:System.Int32> (`int`), <xref:System.Int64> (`long`), <xref:System.Int128>, <xref:System.IntPtr> (`nint`), <xref:System.SByte> (`sbyte`), <xref:System.UInt16> (`ushort`), <xref:System.UInt32> (`uint`), <xref:System.UInt64> (`ulong`), <xref:System.UInt128>, and <xref:System.UIntPtr> (`nuint`).
 
-The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a *real* number. If a type implements this interface, it means that a value has a sign (this includes `unsigned` types, which are considered positive) and can be compared to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as *complex* and *imaginary* numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number types&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> does not.
+The interface you're most likely to use directly is <xref:System.Numerics.INumber%601>, which roughly corresponds to a *real* number. If a type implements this interface, it means that a value has a sign (this includes `unsigned` types, which are considered positive) and can be compared to other values of the same type. <xref:System.Numerics.INumberBase%601> confers more advanced concepts, such as *complex* and *imaginary* numbers, for example, the square root of a negative number. Other interfaces, such as <xref:System.Numerics.IFloatingPointIeee754%601>, were created because not all operations make sense for all number types&mdash;for example, calculating the floor of a number only makes sense for floating-point types. In the .NET base class library, the floating-point type <xref:System.Double> implements <xref:System.Numerics.IFloatingPointIeee754%601> but <xref:System.Int32> doesn't.
 
 Several of the interfaces are also implemented by various other types, including <xref:System.Char>, <xref:System.DateOnly>, <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.Decimal>, <xref:System.Guid>, <xref:System.TimeOnly>, and <xref:System.TimeSpan>.
 
@@ -91,13 +91,13 @@ The following table shows some of the core APIs exposed by each interface.
 | <xref:System.Numerics.INumberBase%601>           | `One`                | Gets the value 1 for the type.                                                                           |
 |                                                  | `Radix`              | Gets the radix, or base, for the type. <xref:System.Int32> returns 2. <xref:System.Decimal> returns 10.  |
 |                                                  | `Zero`               | Gets the value 0 for the type.                                                                           |
-|                                                  | `CreateChecked`      | Creates a value, throwing an <xref:System.OverflowException> if the input cannot fit.<sup>1</sup>        |
-|                                                  | `CreateSaturating`   | Creates a value, clamping to `T.MinValue` or `T.MaxValue` if the input cannot fit.<sup>1</sup>           |
-|                                                  | `CreateTruncating`   | Creates a value from another value, wrapping around if the input cannot fit.<sup>1</sup>                 |
+|                                                  | `CreateChecked`      | Creates a value, throwing an <xref:System.OverflowException> if the input can't fit.<sup>1</sup>        |
+|                                                  | `CreateSaturating`   | Creates a value, clamping to `T.MinValue` or `T.MaxValue` if the input can't fit.<sup>1</sup>           |
+|                                                  | `CreateTruncating`   | Creates a value from another value, wrapping around if the input can't fit.<sup>1</sup>                 |
 |                                                  | `IsComplexNumber`    | Returns true if the value has a non-zero real part and a non-zero imaginary part.                        |
 |                                                  | `IsEvenInteger`      | Returns true if the value is an even integer. 2.0 returns `true`, and 2.2 returns `false`.               |
 |                                                  | `IsFinite`           | Returns true if the value is not infinite and not `NaN`.                                                 |
-|                                                  | `IsImaginaryNumber`  | Returns true if the value has a zero real part. This means `0` is imaginary and `1 + 1i` is not.         |
+|                                                  | `IsImaginaryNumber`  | Returns true if the value has a zero real part. This means `0` is imaginary and `1 + 1i` isn't.         |
 |                                                  | `IsInfinity`         | Returns true if the value represents infinity.                                                           |
 |                                                  | `IsInteger`          | Returns true if the value is an integer. 2.0 and 3.0 return `true`, and 2.2 and 3.1 return `false`.      |
 |                                                  | `IsNaN`              | Returns true if the value represents `NaN`.                                                              |
@@ -117,7 +117,7 @@ Example when given a value that's too large:
 
 - `byte.CreateChecked(384)` will throw an <xref:System.OverflowException>.
 - `byte.CreateSaturating(384)` returns 255 because 384 is greater than <xref:System.Byte.MaxValue?displayProperty=nameWithType> (which is 255).
-- `byte.CreateTruncating(384)` returns 128 because it takes the lowest eight bits (384 has a hex representation of `0x0180`, and the lowest 8 bits is `0x80`, which is 128).
+- `byte.CreateTruncating(384)` returns 128 because it takes the lowest eight bits (384 has a hex representation of `0x0180`, and the lowest eight bits is `0x80`, which is 128).
 
 Example when given a value that's too small:
 
@@ -131,21 +131,21 @@ The `Create*` methods also have some special considerations for IEEE 754 floatin
 
 The operator interfaces correspond to the various operators available to the C# language.
 
-- They explicitly don't pair operations such as multiplication and division since that isn't correct for all types. For example, `Matrix4x4 * Matrix4x4` is valid, but `Matrix4x4 / Matrix4x4` is not valid.
+- They explicitly don't pair operations such as multiplication and division since that isn't correct for all types. For example, `Matrix4x4 * Matrix4x4` is valid, but `Matrix4x4 / Matrix4x4` isn't valid.
 - They typically allow the input and result types to differ to support scenarios such as dividing two integers to obtain a `double`, for example, `3 / 2 = 1.5`, or calculating the average of a set of integers.
 
 | Interface name                                     | Defined operators                        |
 |----------------------------------------------------|------------------------------------------|
 | <xref:System.Numerics.IAdditionOperators%603>      | `x + y`                                  |
 | <xref:System.Numerics.IBitwiseOperators%603>       | `x & y`, `x | y`, `x ^ y`, and `~x`      |
-| <xref:System.Numerics.IComparisonOperators%602>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
+| <xref:System.Numerics.IComparisonOperators%603>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
 | <xref:System.Numerics.IDecrementOperators%601>     | `--x` and `x--`                          |
 | <xref:System.Numerics.IDivisionOperators%603>      | `x / y`                                  |
-| <xref:System.Numerics.IEqualityOperators%602>      | `x == y` and `x != y`                    |
+| <xref:System.Numerics.IEqualityOperators%603>      | `x == y` and `x != y`                    |
 | <xref:System.Numerics.IIncrementOperators%601>     | `++x` and `x++`                          |
 | <xref:System.Numerics.IModulusOperators%603>       | `x % y`                                  |
 | <xref:System.Numerics.IMultiplyOperators%603>      | `x * y`                                  |
-| <xref:System.Numerics.IShiftOperators%602>         | `x << y` and `x >> y`                    |
+| <xref:System.Numerics.IShiftOperators%603>         | `x << y` and `x >> y`                    |
 | <xref:System.Numerics.ISubtractionOperators%603>   | `x - y`                                  |
 | <xref:System.Numerics.IUnaryNegationOperators%602> | `-x`                                     |
 | <xref:System.Numerics.IUnaryPlusOperators%602>     | `+x`                                     |

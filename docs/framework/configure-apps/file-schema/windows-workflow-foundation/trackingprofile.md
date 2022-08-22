@@ -106,10 +106,11 @@ Represents a configuration section for creating a subscription to workflow track
 ```xml  
 <system.serviceModel>  
   <tracking>
-    <trackingProfile name="Sample Tracking Profile">  
-      <workflow activityDefinitionId="*">  
+    <profiles>
+      <trackingProfile name="Sample Tracking Profile">  
+        <workflow activityDefinitionId="*">  
          <workflowInstanceQueries>  
-            <workflowInstanceQuery>  
+           <workflowInstanceQuery>  
             <states>  
               <state name="Started"/>  
               <state name="Completed"/>  

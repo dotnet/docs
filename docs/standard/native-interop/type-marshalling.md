@@ -40,7 +40,7 @@ This first table describes the mappings for various types for whom the marshalli
 |             | .NET Pointer types (ex. `void*`)  | `void*` |
 |             | Type derived from `System.Runtime.InteropServices.SafeHandle` | `void*` |
 |             | Type derived from `System.Runtime.InteropServices.CriticalHandle` | `void*`          |
-|             | `System.Boolean` | Win32 `BOOL` type       |
+| `bool`      | `System.Boolean` | Win32 `BOOL` type       |
 | `decimal`   | `System.Decimal` | COM `DECIMAL` struct |
 |             | .NET Delegate | Native function pointer |
 |             | `System.DateTime` | Win32 `DATE` type |

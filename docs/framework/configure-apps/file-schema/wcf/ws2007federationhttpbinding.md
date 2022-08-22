@@ -123,7 +123,7 @@ Federation is the ability to share identities across multiple enterprises or tru
             </message>
           </security>
         </binding>
-      </ws2007FederationBinding>
+      </ws2007FederationHttpBinding>
     </bindings>
   </system.ServiceModel>
 </configuration>

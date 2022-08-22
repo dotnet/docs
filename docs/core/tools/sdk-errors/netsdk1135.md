@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1135: SupportedOSPlatformVersion can't be higher than TargetPlatformVersion"
 description: How to resolve the `SupportedOSPlatformVersion can't be higher than TargetPlatformVersion' error.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:

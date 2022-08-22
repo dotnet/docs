@@ -76,6 +76,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
       <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>
     </baseAddresses>
   </host>
+</service>
 ```
 
 ## Example 3

@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 08/07/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -21,7 +21,6 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                 | .NET       |
 |------------------------|------------|
 | [22.04 (LTS)](#2204)   | 6+         |
-| [21.10](#2110)         | 3.1, 6     |
 | [20.04 (LTS)](#2004)   | 3.1, 6     |
 | [18.04 (LTS)](#1804)   | 3.1, 6     |
 | [16.04 (LTS)](#1604)   | 3.1, 6     |
@@ -38,6 +37,40 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## 22.04
 
+> [!WARNING]
+> If you've previously installed .NET 6 from `packages.microsoft.com`, see the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699).
+
+.NET 6 is included in Ubuntu 22.04.
+
+### Install the SDK
+
+The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
+
+```bash
+sudo apt-get update && \
+  sudo apt-get install -y dotnet6
+```
+
+### Install the runtime
+
+The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
+
+```bash
+sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-6.0
+```
+
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
+
+```bash
+sudo apt-get install -y dotnet-runtime-6.0
+```
+
+## 22.04 (Microsoft package feed)
+
+> [!NOTE]
+> Warning: .NET 6 is included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
+
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
@@ -48,19 +81,8 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
-Note: [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. [.NET 6 supports OpenSSL 3](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security) while earlier .NET versions do not. Microsoft does not test or support using OpenSSL 1.x on Ubuntu 22.04.
-
-## 21.10
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/21.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+> [!NOTE]
+> [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. .NET 6 supports OpenSSL 3 while earlier .NET versions don't. Microsoft doesn't test or support using OpenSSL 1.x on Ubuntu 22.04. For more information, see [.NET 6 Security Improvements](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security).
 
 ## 20.04
 
@@ -84,7 +106,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## 16.04
 
@@ -96,7 +118,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-50](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## How to install other versions
 
@@ -122,6 +144,9 @@ This section provides information on common errors you may get while using APT t
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
 ### Unable to locate \\ Some packages could not be installed
+
+> [!NOTE]
+> This information only applies when .NET is installed from the Microsoft package feed.
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 

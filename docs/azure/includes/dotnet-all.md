@@ -174,7 +174,7 @@
 | Azure.ResourceManager.Subscription | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Subscription/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.TrafficManager | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.TrafficManager/1.0.0-beta.1) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
-| Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview03](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview03) |  |  |
+| Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview04](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview04) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
@@ -309,7 +309,7 @@
 | Core | NuGet [1.25.0](https://www.nuget.org/packages/Azure.Core/1.25.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.25.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.25.0/sdk/core/Azure.Core/) |
 | Core - AMQP | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.2.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.2.0/sdk/core/Azure.Core.Amqp/) |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
-| Cosmos DB | NuGet [3.29.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.29.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.29.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.30.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.30.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.30.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
 | Cosmos DB - Direct | NuGet [3.29.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.29.1) |  | GitHub [3.29.1](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |

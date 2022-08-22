@@ -2488,6 +2488,26 @@
         {
             "source_path_from_root": "/docs/framework/network-programming/using-tcp-services.md",
             "redirect_url": "/dotnet/fundamentals/networking/tcp/tcp-services"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/sockets.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-an-synchronous-client-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-an-synchronous-server-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/synchronous-client-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/synchronous-server-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
         }
     ]
 }

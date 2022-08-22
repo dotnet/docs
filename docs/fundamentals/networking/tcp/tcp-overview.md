@@ -1,6 +1,6 @@
 ---
 title: TCP in .NET
-description: Learn how the TcpClient and TcpListener classes handle TCP communication in .NET.
+description: Learn how to use the TcpClient class to create a socket to request and receive data using TCP in .NET.
 author: IEvangelist
 ms.author: dapine
 ms.date: 08/19/2022

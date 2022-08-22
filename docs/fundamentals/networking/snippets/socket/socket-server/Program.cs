@@ -1,4 +1,5 @@
 ﻿// Socket server example
+Console.OutputEncoding = Encoding.UTF8;
 Console.WriteLine("Socket server starting...");
 
 var endPoint = await NetworkDiscovery.GetSocketEndPointAsync();
@@ -19,20 +20,24 @@ while (true)
     var buffer = new byte[1_024];
     var response = new StringBuilder();
     var received = await handler.ReceiveAsync(buffer, SocketFlags.None);
-
-    // Send ack.
-    var message = Encoding.ASCII.GetString(buffer, 0, received);
+    var message = Encoding.UTF8.GetString(buffer, 0, received);
     response.Append(message);
-    if (message.IndexOf("<EOM>") > -1 /* is end of message */)
+
+    var eom = "<EOM>";
+    if (message.IndexOf(eom) > -1 /* is end of message */)
     {
-        Console.WriteLine($"Socket server received message: '{response}'");
-        
-        var echoBytes = Encoding.ASCII.GetBytes("<ACK>");
+        Console.WriteLine($"Socket server received message: \"{response.Replace(eom, "")}\"");
+
+        var ackMessage = "<ACK>";
+        var echoBytes = Encoding.UTF8.GetBytes(ackMessage);
         await handler.SendAsync(echoBytes, 0);
-        Console.WriteLine("Socket server sent acknowledgement.");
+        Console.WriteLine($"Socket server sent acknowledgement: \"{ackMessage}\"");
 
         break;
     }
+    // Sample output:
+    //    Socket server received message: "Hi friends 👋!"
+    //    Socket server sent acknowledgement: "<ACK>"
 }
 // </socketserver>
 

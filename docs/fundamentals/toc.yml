@@ -2554,6 +2554,12 @@ items:
         href: ../core/extensions/httpclient-factory.md
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
+    - name: TCP
+      items:
+      - name: TCP support
+        href: networking/tcp/tcp-overview.md
+      - name: Use TcpClient and TcpListener
+        href: networking/tcp/tc-services.md
   - name: File globbing in .NET
     href: ../core/extensions/file-globbing.md
   - name: Primitives library in .NET

@@ -1,27 +1,29 @@
 ﻿// TCP listener example
+Console.OutputEncoding = Encoding.UTF8;
 Console.WriteLine("TCP listener starting...");
-var endPoint = await NetworkDiscovery.GetTcpEndPointAsync();
 
 // <tcplistener>
+var endPoint = new IPEndPoint(IPAddress.Any, 13);
+TcpListener listener = new(endPoint);
+
 try
-{
-    TcpListener listener = new(endPoint);
+{    
     listener.Start();
 
     using TcpClient handler = await listener.AcceptTcpClientAsync();
     await using NetworkStream stream = handler.GetStream();
 
-    var message = DateTime.Now.ToString();
-    var dateTimeBytes = Encoding.ASCII.GetBytes(message);
+    var message = $"📅 {DateTime.Now} 🕛";
+    var dateTimeBytes = Encoding.UTF8.GetBytes(message);
     await stream.WriteAsync(dateTimeBytes);
-    Console.WriteLine($"Sent message: {message}");
 
-    listener.Stop();
+    Console.WriteLine($"Sent message: \"{message}\"");
+    // Sample output:
+    //     Sent message: "📅 8/22/2022 9:07:17 AM 🕛"
 }
-catch (SocketException ex)
+finally
 {
-    Console.Error.WriteLine(ex);
-    Console.Error.WriteLine(ex.SocketErrorCode);
+    listener.Stop();
 }
 // </tcplistener>
 

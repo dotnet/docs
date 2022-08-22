@@ -35,7 +35,8 @@ When you reference the property, except as the target of an assignment, the `get
 
 The `get` accessor must end in a [return](../../language-reference/statements/jump-statements.md#the-return-statement) or [throw](../../language-reference/keywords/throw.md) statement, and control can't flow off the accessor body.
 
-It's a bad programming style to change the state of the object by using the `get` accessor. For example, the following accessor produces the side effect of changing the state of the object every time that the `_number` field is accessed.
+> [!WARNING]
+> It's a bad programming style to change the state of the object by using the `get` accessor.
 
 The `get` accessor can be used to return the field value or to compute it and return it. For example:
 

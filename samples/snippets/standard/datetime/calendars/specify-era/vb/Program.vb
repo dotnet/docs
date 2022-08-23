@@ -17,14 +17,14 @@ Public Module Example
 
         Try
             Dim date2 = DateTime.Parse("明治23/9/8", jaJp)
-            Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}")
+            Console.WriteLine($"{date2.ToString("d", jaJp)} (Gregorian {date2:d}")
         Catch e As FormatException
             Console.WriteLine("The parsing operation failed.")
         End Try
 
         Try
             Dim date3 = DateTime.ParseExact("明治23/9/8", "gyy/m/d", jaJp)
-            Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}")
+            Console.WriteLine($"{date3.ToString("d", jaJp)} (Gregorian {date3:d}")
         Catch e As FormatException
             Console.WriteLine("The parsing operation failed.")
         End Try

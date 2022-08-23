@@ -23,7 +23,7 @@ When integer arithmetic overflow occurs, the overflow-checking context defines w
 - In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, in the case of addition it wraps from the maximum value to the minimum value, as the preceding example shows.
 
 > [!NOTE]
-> The behavior of user-defined operators and conversions in the case of the overflow of the corresponding result type can differ from the one described in the previous paragraph. In particular, [user-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) might throw no exception in a checked context.
+> The behavior of user-defined operators and conversions in the case of the overflow of the corresponding result type can differ from the one described in the previous paragraph. In particular, [user-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) might not throw an exception in a checked context.
 
 For more information, see the [Arithmetic overflow and division by zero](../operators/arithmetic-operators.md#arithmetic-overflow-and-division-by-zero) and [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) sections of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 

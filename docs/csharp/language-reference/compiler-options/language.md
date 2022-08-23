@@ -23,15 +23,17 @@ The following options control how the compiler interprets language features. The
 
 ## CheckForOverflowUnderflow
 
-The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic expression that results in a value that is outside the range of the destination type causes a run-time exception.  
+The **CheckForOverflowUnderflow** option controls the default overflow-checking context that defines the program behavior in the case of integer arithmetic overflow.
 
 ```xml
 <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
 ```
 
-An integer arithmetic expression that is in the scope of a [`checked` or `unchecked` keyword](../statements/checked-and-unchecked.md) isn't subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic expression that isn't in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the destination type, and **CheckForOverflowUnderflow** is `true`, that expression causes an <xref:System.OverflowException> at run time. If **CheckForOverflowUnderflow** is `false`, that expression doesn't cause an exception at run time. The default value for this option is `false`, that is, overflow checking is disabled.
+When **CheckForOverflowUnderflow** is `true`, the default context is a checked context and overflow checking is enabled; otherwise, the default context is an unchecked context. The default value for this option is `false`, that is, overflow checking is disabled.
 
-For the list of the operations that are affected by this compiler option, see the [Operations affected by the overflow-checking context](../statements/checked-and-unchecked.md#operations-affected-by-the-overflow-checking-context) section of the [article about `checked` and `unchecked` statements](../statements/checked-and-unchecked.md).
+You can also explicitly control the overflow-checking context for the parts of your code by using the `checked` and `unchecked` statements.
+
+For information about how the overflow-checking context affects operations and what operations are affected, see the [article about `checked` and `unchecked` statements](../statements/checked-and-unchecked.md).
 
 ## AllowUnsafeBlocks
 

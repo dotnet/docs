@@ -1,7 +1,7 @@
 ---
 title: "checked and unchecked statements - C# reference"
 description: "Learn about the statements that control the overflow-checking context."
-ms.date: 08/18/2022
+ms.date: 08/24/2022
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "unchecked_CSharpKeyword"
@@ -22,7 +22,10 @@ When integer arithmetic overflow occurs, the overflow-checking context defines w
 - In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs.
 - In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, in the case of addition it wraps from the maximum value to the minimum value, as the preceding example shows.
 
-For more information, see the [Arithmetic overflow and division by zero](../operators/arithmetic-operators.md#arithmetic-overflow-and-division-by-zero) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
+> [!NOTE]
+> The behavior of user-defined operators and conversions in the case of the overflow of the corresponding result type can differ from the one described in the previous paragraph. In particular, [user-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) might throw no exception in a checked context.
+
+For more information, see the [Arithmetic overflow and division by zero](../operators/arithmetic-operators.md#arithmetic-overflow-and-division-by-zero) and [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) sections of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 
 To specify the overflow-checking context for an expression, you can also use the `checked` and `unchecked` operators, as the following example shows:
 

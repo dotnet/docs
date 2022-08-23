@@ -2494,11 +2494,19 @@
             "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-overview"
         },
         {
-            "source_path_from_root": "/docs/framework/network-programming/using-an-synchronous-client-socket.md",
+            "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-client-socket.md",
             "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
         },
         {
-            "source_path_from_root": "/docs/framework/network-programming/using-an-synchronous-server-socket.md",
+            "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-server-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-client-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-server-socket.md",
             "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
         },
         {
@@ -2507,6 +2515,18 @@
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/synchronous-server-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/asynchronous-client-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/asynchronous-server-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/listening-with-sockets.md",
             "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
         }
     ]

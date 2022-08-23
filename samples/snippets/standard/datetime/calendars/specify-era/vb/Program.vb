@@ -23,7 +23,7 @@ Public Module Example
         End Try
 
         Try
-            Dim date3 = DateTime.ParseExact("明治23/9/8", "gyy/m/d", jaJp)
+            Dim date3 = DateTime.ParseExact("明治23/9/8", "gyy/M/d", jaJp)
             Console.WriteLine($"{date3.ToString("d", jaJp)} (Gregorian {date3:d}")
         Catch e As FormatException
             Console.WriteLine("The parsing operation failed.")

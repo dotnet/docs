@@ -28,7 +28,7 @@ public class Example
         }
 
         try {
-            var date3 = DateTime.ParseExact("明治23/9/8", "gyy/m/d", jaJp);
+            var date3 = DateTime.ParseExact("明治23/9/8", "gyy/M/d", jaJp);
             Console.WriteLine($"{date3.ToString("d", jaJp)} (Gregorian {date3:d}");
         }
         catch (FormatException)

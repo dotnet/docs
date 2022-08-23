@@ -65,3 +65,5 @@ The preceding C# code:
 
 - [Sockets in .NET](sockets-overview.md)
 - [Networking in .NET](../overview.md)
+- <xref:System.Net.Sockets>
+- <xref:System.Net.Sockets.Socket>

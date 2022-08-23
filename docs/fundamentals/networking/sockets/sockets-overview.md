@@ -29,4 +29,7 @@ The `Socket` class supports two basic modes, synchronous and asynchronous. In sy
 
 ## See also
 
-
+- [Use Sockets to send and receive data](socket-services.md)
+- [Networking in .NET](../overview.md)
+- <xref:System.Net.Sockets>
+- <xref:System.Net.Sockets.Socket>

@@ -139,8 +139,8 @@ The compiler verifies the syntax of the elements followed by a single \* in the 
 - [Generate links and references](#generate-links-and-references) - These tags generate links to other documentation.
   - [`<see>`](#see) \*
   - [`<seealso>`](#seealso) \*
-  - [`<cref>`](#cref-attribute)
-  - [`<href>`](#href-attribute)
+  - [`cref`](#cref-attribute)
+  - [`href`](#href-attribute)
 - [Tags for generic types and methods](#generic-types-and-methods) - These tags are used only on generic types and methods
   - [`<typeparam>`](#typeparam) \*: The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<typeparamref>`](#typeparamref)
@@ -323,14 +323,14 @@ The `<include>` tag lets you refer to comments in another file that describe the
 
 ### \<see>
 
-```csharp
-/// <see cref="member"/>
-// or
-/// <see cref="member">Link text</see>
-// or
-/// <see href="link">Link Text</see>
-// or
-/// <see langword="keyword"/>
+```xml
+<see cref="member"/>
+<!-- or -->
+<see cref="member">Link text</see>
+<!-- or -->
+<see href="link">Link Text</see>
+<!-- or -->
+<see langword="keyword"/>
 ```
 
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" "). You can provide different link text for a "cref", by using a separate closing tag.
@@ -341,10 +341,10 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 
 ### \<seealso>
 
-```csharp
-/// <seealso cref="member"/>
-// or
-/// <seealso href="link">Link Text</seealso>
+```xml
+<seealso cref="member"/>
+<!-- or -->
+<seealso href="link">Link Text</seealso>
 ```
 
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within double quotation marks (" ").

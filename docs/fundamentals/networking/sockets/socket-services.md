@@ -1,5 +1,5 @@
 ---
-title: Use Socket to send and receive data
+title: Use Sockets to send and receive data
 description: Learn how the Socket class exposes socket network communication functionality in .NET.
 author: IEvangelist
 ms.author: dapine
@@ -18,13 +18,15 @@ helpviewer_keywords:
   - "client sockets"
 ---
 
-# Use Socket to send and receive data
+# Use Sockets to send and receive data
 
 Before you can use a socket to communicate with remote devices, the socket must be initialized with protocol and network address information. The constructor for the <xref:System.Net.Sockets.Socket> class has parameters that specify the address family, socket type, and protocol type that the socket uses to make connections. When connecting a client socket to a server socket, the client will use an `IPEndPoint` object to specify the network address of the server.
 
 [!INCLUDE [ip-endpoint](../includes/ip-endpoint.md)]
 
 ## Create a `Socket` client
+
+With the `endPoint` object created, create a client socket to connect to the server. Once the socket is connected, it can send and receive data from the server socket connection.
 
 :::code language="csharp" source="../snippets/socket/socket-client/Program.cs" id="socketclient":::
 
@@ -39,7 +41,11 @@ The preceding C# code:
   - Initializes a buffer to receive data from the server using <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=nameWithType>.
   - When the `response` is an acknowledgment, it is written to the console and the loop is exited.
 
+- Finally, the `client` socket calls <xref:System.Net.Sockets.Socket.Shutdown%2A?displayProperty=nameWithType> given <xref:System.Net.Sockets.SocketShutdown.Both?displayProperty=nameWithType>, which shuts down both send and receive operations.
+
 ## Create a `Socket` server
+
+To create the server socket, the `endPoint` object can listen for incoming connections on any IP address but the port number must be specified. Once the socket is created, the server can accept incoming connections and communicate with clients.
 
 :::code language="csharp" source="../snippets/socket/socket-server/Program.cs" id="socketserver":::
 

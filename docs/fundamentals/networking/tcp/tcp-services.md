@@ -71,3 +71,4 @@ The preceding C# code:
 - [Networking in .NET](../overview.md)
 - <xref:System.Net.Sockets.TcpClient>
 - <xref:System.Net.Sockets.TcpListener>
+- <xref:System.Net.Sockets.NetworkStream>

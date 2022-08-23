@@ -30,8 +30,8 @@ while (true)
         break;
     }
     // Sample output:
-    //     Socket client sent message: "Hi friends 👋!<EOM>"
-    //     Socket client received acknowledgment: "<ACK>"
+    //     Socket client sent message: "Hi friends 👋!<|EOM|>"
+    //     Socket client received acknowledgment: "<|ACK|>"
 }
 
 client.Shutdown(SocketShutdown.Both);

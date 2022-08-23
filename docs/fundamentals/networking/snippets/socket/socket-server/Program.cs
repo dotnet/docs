@@ -37,7 +37,7 @@ while (true)
     }
     // Sample output:
     //    Socket server received message: "Hi friends 👋!"
-    //    Socket server sent acknowledgment: "<ACK>"
+    //    Socket server sent acknowledgment: "<|ACK|>"
 }
 // </socketserver>
 

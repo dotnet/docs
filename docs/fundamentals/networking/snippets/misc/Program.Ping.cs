@@ -1,6 +1,5 @@
 ﻿public static partial class Program
 {
-    // Ping example
     // <ping>
     static async Task PingAsync()
     {

@@ -1,8 +1,8 @@
 ﻿public static partial class Program
 {
-    // <dangerousuri>
     static void DangerousUri()
     {
+        // <dangerousuri>
         const string uriString =
             "https://localhost:5001/path%4A?query%4A#/foo";
 
@@ -29,12 +29,12 @@
         // Sample output:
         //     /pathJ?queryJ
         //     #/foo
+        // </dangerousuri>
     }
-    // </dangerousuri>
 
-    // <canonicaluri>
     static void CanonicalUri()
     {
+        // <canonicaluri>
         const string uriString =
             "https://docs.microsoft.com/en-us/dotnet/path?key=value#bookmark";
 
@@ -46,6 +46,6 @@
         //     docs.microsoft.com
         //     /en-us/dotnet/path?key=value
         //     #bookmark
+        // </canonicaluri>
     }
-    // </canonicaluri>
 }

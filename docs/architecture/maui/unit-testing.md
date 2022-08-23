@@ -60,7 +60,7 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShopOnContainers multi-platform app uses [xUnit](https://xunit.github.io/) to perform unit testing, which supports two different types of unit tests:
+The eShopOnContainers multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type | Attribute | Description                                                  |
 |--------------|-----------|--------------------------------------------------------------|

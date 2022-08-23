@@ -86,7 +86,7 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
     sn -p IdentityKey.snk IdentityPubKey.snk  
     ```  
   
-4. Generate the parameters for a <xref:System.Reflection.AssemblySignatureKeyAttribute> attribute, and attach the attribute to the assembly.  
+4. Generate the parameters for an <xref:System.Reflection.AssemblySignatureKeyAttribute> attribute, and attach the attribute to the assembly.  
   
     ```console  
     sn -a IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk  

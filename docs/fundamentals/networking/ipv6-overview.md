@@ -1,5 +1,5 @@
 ---
-title: "Internet Protocol version 6 (IPv6) - Overview"
+title: "Internet Protocol version 6 (IPv6) overview"
 description: Learn about the IPv6 protocol and how it differs from IPv4.
 author: IEvangelist
 ms.author: dapine
@@ -35,7 +35,7 @@ helpviewer_keywords:
 - "Neighbor Discovery"
 ---
 
-# Internet Protocol version 6 (IPv6) - Overview
+# Internet Protocol version 6 (IPv6) overview
 
 The Internet Protocol version 6 (IPv6) is a suite of standard protocols for the network layer of the Internet. IPv6 is designed to solve many of the problems of the current version of the Internet Protocol suite (known as IPv4) about address depletion, security, auto-configuration, extensibility, and so on. IPv6 expands the capabilities of the Internet to enable new kinds of applications, including peer-to-peer and mobile applications. The following are the main issues of the current IPv4 protocol:
 

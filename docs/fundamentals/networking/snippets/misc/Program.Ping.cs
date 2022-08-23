@@ -1,8 +1,8 @@
 ﻿public static partial class Program
 {
-    // <ping>
     static async Task PingAsync()
     {
+        // <ping>
         using Ping ping = new();
 
         var hostName = "stackoverflow.com";
@@ -15,6 +15,6 @@
             Console.WriteLine($"Time to live: {reply.Options?.Ttl}");
             Console.WriteLine();
         }
+        // </ping>
     }
-    // </ping>
 }

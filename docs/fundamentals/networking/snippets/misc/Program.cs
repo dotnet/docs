@@ -1,16 +1,8 @@
-﻿RegisterNetworkAddressChanged();
-RegisterNetworkAvailabilityChanged();
+﻿ListenForNetworkAddressChanged();
+ListenForNetworkAvailabilityChanged();
 
-try
-{
-    DangerousUri();
-    CanonicalUri();
+DangerousUri();
+CanonicalUri();
 
-    await PingAsync();
-    await IPGlobalPropertiesAsync();
-}
-finally
-{
-    UnregisterNetworkAddressChanged();
-    UnregisterNetworkAvailabilityChanged();
-}
+await PingAsync();
+ShowIPGlobalProperties();

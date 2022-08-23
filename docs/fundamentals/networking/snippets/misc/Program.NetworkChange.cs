@@ -1,36 +1,46 @@
 ﻿// Ping example
 public static partial class Program
 {
-    // <networkaddresschanged>
-    static void RegisterNetworkAddressChanged() =>
+    static void ListenForNetworkAddressChanged()
+    {
+        // <networkaddresschanged>
         NetworkChange.NetworkAddressChanged += OnNetworkAddressChanged;
 
-    static void OnNetworkAddressChanged(
-        object? sender, EventArgs args)
-    {
-        foreach (var (name, status) in
-            NetworkInterface.GetAllNetworkInterfaces()
-                .Select(networkInterface =>
-                    (networkInterface.Name, networkInterface.OperationalStatus)))
+        static void OnNetworkAddressChanged(
+            object? sender, EventArgs args)
         {
-            Console.WriteLine(
-                $"{name} is {status}");
+            foreach ((string name, OperationalStatus status) in
+                NetworkInterface.GetAllNetworkInterfaces()
+                    .Select(networkInterface =>
+                        (networkInterface.Name, networkInterface.OperationalStatus)))
+            {
+                Console.WriteLine(
+                    $"{name} is {status}");
+            }
         }
+
+        Console.WriteLine(
+            "Listening for address changes. Press any key to continue.");
+        Console.ReadLine();
+
+        NetworkChange.NetworkAddressChanged -= OnNetworkAddressChanged;
+        // </networkaddresschanged>
     }
 
-    static void UnregisterNetworkAddressChanged() =>
-        NetworkChange.NetworkAddressChanged += OnNetworkAddressChanged;
-    // </networkaddresschanged>
-
-    // <networkavailabilitychanged>
-    static void RegisterNetworkAvailabilityChanged() =>
+    static void ListenForNetworkAvailabilityChanged()
+    {
+        // <networkavailabilitychanged>
         NetworkChange.NetworkAvailabilityChanged += OnNetworkAvailabilityChanged;
 
-    static void OnNetworkAvailabilityChanged(
-        object? sender, NetworkAvailabilityEventArgs args) =>
-        Console.WriteLine($"Network is available: {args.IsAvailable}");
+        static void OnNetworkAvailabilityChanged(
+            object? sender, NetworkAvailabilityEventArgs networkAvailability) =>
+            Console.WriteLine($"Network is available: {networkAvailability.IsAvailable}");
 
-    static void UnregisterNetworkAvailabilityChanged() =>
+        Console.WriteLine(
+            "Listening changes in network availability. Press any key to continue.");
+        Console.ReadLine();
+
         NetworkChange.NetworkAvailabilityChanged -= OnNetworkAvailabilityChanged;
-    // </networkavailabilitychanged>
+        // </networkavailabilitychanged>
+    }        
 }

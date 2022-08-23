@@ -2539,8 +2539,12 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: Networking in .NET
+    - name: Network programming in .NET
       href: networking/overview.md
+    - name: Network availability
+      href: networking/network-info.md
+    - name: IPv6 overview
+      href: networking/ipv6-overview.md
     - name: HTTP
       items:
       - name: HTTP support

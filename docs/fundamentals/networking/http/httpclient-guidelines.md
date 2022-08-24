@@ -3,7 +3,7 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 05/19/2022
+ms.date: 08/24/2022
 ---
 
 # Guidelines for using HttpClient

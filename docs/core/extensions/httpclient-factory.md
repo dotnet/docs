@@ -219,6 +219,8 @@ services.AddHttpClient("Named.Client")
     });
 ```
 
+Configuring the `HttClientHandler` lets you specify a proxy for the `HttpClient` instance. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#http-proxy).
+
 ### Additional configuration
 
 There are several additional configuration options for controlling the `IHttpClientHandler`:

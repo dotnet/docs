@@ -3,7 +3,7 @@ title: Use TcpClient and TcpListener
 description: Learn how the TcpClient and TcpListener classes handle TCP communication in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/22/2022
+ms.date: 08/24/2022
 helpviewer_keywords:
   - "requesting data from Internet, TCP"
   - "receiving data, TCP"

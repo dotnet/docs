@@ -3,7 +3,7 @@ title: Network programming in .NET
 description: Learn about various networking approaches for .NET app development.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/23/2022
+ms.date: 08/24/2022
 ---
 
 # Network programming in .NET
@@ -24,13 +24,13 @@ The client app requests by identifying the requested Internet resource and the c
 
 The <xref:System.Uri?displayProperty=nameWithType> type is used as a representation of a uniform resource identifier (URI) and easy access to the parts of the URI. To create a `Uri` instance you can pass it a string:
 
-:::code language="csharp" source="snippets/misc/Program.Uri.cs" interactive="try-dotnet-method" id="canonicaluri":::
+:::code language="csharp" source="snippets/misc/Program.Uri.cs" id="canonicaluri":::
 
-The `Uri` class automatically performs validation and canonicalization per [RCF 3986](https://datatracker.ietf.org/doc/html/rfc3986). These validation and canonicalization rules are used to ensure that a URI is well-formed and that the URI is in a canonical form. However, this modifies the some of the URIs in a way that might break their end-users.
+The `Uri` class automatically performs validation and canonicalization per [RCF 3986](https://datatracker.ietf.org/doc/html/rfc3986). These validation and canonicalization rules are used to ensure that a URI is well-formed and that the URI is in a canonical form. However, this modifies some of the URIs in a way that might break their end-users.
 
 To bypass these validation rules, you set <xref:System.UriCreationOptions.DangerousDisablePathAndQueryCanonicalization?displayProperty=nameWithType> which means no validation and no transformation of the input will take place past the authority. As a side effect, `Uri` instances created with this option do not support `Uri.Fragments`—it will always be empty. Moreover, <xref:System.Uri.GetComponents%2A?displayProperty=nameWithType> may not be used for <xref:System.UriComponents.Path?displayProperty=nameWithType> or <xref:System.UriComponents.Query?displayProperty=nameWithType> and will throw <xref:System.InvalidOperationException>.
 
-:::code language="csharp" source="snippets/misc/Program.Uri.cs" interactive="try-dotnet-method" id="dangerousuri":::
+:::code language="csharp" source="snippets/misc/Program.Uri.cs" id="dangerousuri":::
 
 > [!IMPORTANT]
 > Be aware that disabling canonicalization also means that reserved characters will not be escaped (e.g. space characters will not be changed to `%20`), which may corrupt the HTTP request and makes the application subject to request smuggling. Only set this option if you have ensured that the URI string is already sanitized.

@@ -3,7 +3,7 @@ title: TCP in .NET
 description: Learn how to use the TcpClient class to create a socket to request and receive data using TCP in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/19/2022
+ms.date: 08/24/2022
 helpviewer_keywords: 
   - "protocols, TCP"
   - "network resources, TCP"

@@ -3,7 +3,7 @@ title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/19/2022
+ms.date: 08/24/2022
 ---
 
 # Make HTTP requests with the HttpClient class
@@ -288,6 +288,45 @@ Finally, when you know an HTTP endpoint returns JSON, you can deserialize the re
 :::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="json":::
 
 In the preceding code, `result` is the response body deserialized as the type `T`.
+
+## HTTP proxy
+
+An HTTP proxy can be configured in one of two ways. A default is specified on the <xref:System.Net.Http.HttpClient.DefaultProxy?displayProperty=nameWithType> property. Alternatively, you can specify a proxy on the <xref:System.Net.Http.HttpClientHandler.Proxy?displayProperty=nameWithType> property.
+
+### Global default proxy
+
+The `HttpClient.DefaultProxy` is a static property that determines the default proxy that all `HttpClient` instances use if no proxy is set explicitly in the <xref:System.Net.Http.HttpClientHandler> passed through its constructor.
+
+The default instance returned by this property will initialize following a different set of rules depending on your platform:
+
+- **For Windows:** Reads proxy configuration from environment variables or, if those are not defined, from the user's proxy settings.
+- **For macOS:** Reads proxy configuration from environment variables or, if those are not defined, from the system's proxy settings.
+- **For Linux:** Reads proxy configuration from environment variables or, in case those are not defined, this property initializes a non-configured instance that bypasses all addresses.
+
+The environment variables used for `DefaultProxy` initialization on Windows and Unix-based platforms are:
+
+- `HTTP_PROXY`: the proxy server used on HTTP requests.
+- `HTTPS_PROXY`: the proxy server used on HTTPS requests.
+- `ALL_PROXY`: the proxy server used on HTTP and/or HTTPS requests in case `HTTP_PROXY` and/or `HTTPS_PROXY` are not defined.
+- `NO_PROXY`: a comma-separated list of hostnames that should be excluded from proxying.
+
+On systems where environment variables are case-sensitive, the variable names may be all lowercase or all uppercase. The lowercase names are checked first.
+
+The proxy server may be a hostname or IP address, optionally followed by a colon and port number, or it may be an `http` URL, optionally including a username and password for proxy authentication. The URL must be start with `http`, not `https`, and cannot include any text after the hostname, IP, or port.
+
+### Proxy per client
+
+The <xref:System.Net.Http.HttpClientHandler.Proxy?displayProperty=nameWithType> property identifies the <xref:System.Net.WebProxy> object to use to process requests to Internet resources. To specify that no proxy should be used, set the `Proxy` property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy?displayProperty=nameWithType> method.
+
+The local computer or application config file may specify that a default proxy be used. If the Proxy property is specified, then the proxy settings from the Proxy property override the local computer or application config file and the handler will use the proxy settings specified. If no proxy is specified in a config file and the Proxy property is unspecified, the handler uses the proxy settings inherited from the local computer. If there are no proxy settings, the request is sent directly to the server.
+
+The <xref:System.Net.Http.HttpClientHandler> class parses a proxy bypass list with wildcard characters inherited from local computer settings. For example, the `HttpClientHandler` class will parse a bypass list of `"nt*"` from browsers as a regular expression of `"nt.*"`. So a URL of `http://nt.com` would bypass the proxy using the `HttpClientHandler` class.
+
+The `HttpClientHandler` class supports local proxy bypass. The class considers a destination to be local if any of the following conditions are met:
+
+1. The destination contains a flat name (no dots in the URL).
+1. The destination contains a loopback address (<xref:System.Net.IPAddress.Loopback> or <xref:System.Net.IPAddress.IPv6Loopback>) or the destination contains an <xref:System.Net.IPAddress> assigned to the local computer.
+1. The domain suffix of the destination matches the local computer's domain suffix (<xref:System.Net.NetworkInformation.IPGlobalProperties.DomainName>).
 
 ## See also
 

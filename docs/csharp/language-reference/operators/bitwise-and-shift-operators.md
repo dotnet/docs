@@ -48,7 +48,7 @@ Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. Wh
 
 The `&`, `|`, and `^` operators are also defined for operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
-Bitwise and shift operations never cause overflow and produce the same results in [checked and unchecked](../keywords/checked-and-unchecked.md) contexts.
+Bitwise and shift operations never cause overflow and produce the same results in [checked and unchecked](../statements/checked-and-unchecked.md) contexts.
 
 ## Bitwise complement operator ~
 

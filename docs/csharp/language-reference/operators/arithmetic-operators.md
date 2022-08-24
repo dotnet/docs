@@ -213,12 +213,12 @@ When the result of an arithmetic operation is outside the range of possible fini
 
 Integer division by zero always throws a <xref:System.DivideByZeroException>.
 
-If integer arithmetic overflow occurs, an overflow checking context, which can be [checked or unchecked](../keywords/checked-and-unchecked.md), controls the resulting behavior:
+If integer arithmetic overflow occurs, the overflow-checking context, which can be [checked or unchecked](../statements/checked-and-unchecked.md), controls the resulting behavior:
 
 - In a checked context, if overflow happens in a constant expression, a compile-time error occurs. Otherwise, when the operation is performed at run time, an <xref:System.OverflowException> is thrown.
 - In an unchecked context, the result is truncated by discarding any high-order bits that don't fit in the destination type.
 
-Along with the [checked and unchecked](../keywords/checked-and-unchecked.md) statements, you can use the `checked` and `unchecked` operators to control the overflow checking context, in which an expression is evaluated:
+Along with the [checked and unchecked](../statements/checked-and-unchecked.md) statements, you can use the `checked` and `unchecked` operators to control the overflow-checking context, in which an expression is evaluated:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CheckedUnchecked":::
 
@@ -250,7 +250,7 @@ Beginning with C# 11, when you overload an arithmetic operator, you can use the 
 
 :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
 
-When you define a checked operator, you must also define the corresponding operator without the `checked` modifier. The checked operator is called in a [checked context](../keywords/checked-and-unchecked.md); the operator without the `checked` modifier is called in a [unchecked context](../keywords/checked-and-unchecked.md). If you only provide the operator without the `checked` modifier, it's called in both a `checked` and `unchecked` context.
+When you define a checked operator, you must also define the corresponding operator without the `checked` modifier. The checked operator is called in a [checked context](../statements/checked-and-unchecked.md); the operator without the `checked` modifier is called in an [unchecked context](../statements/checked-and-unchecked.md). If you only provide the operator without the `checked` modifier, it's called in both a `checked` and `unchecked` context.
 
 When you define both versions of an operator, it's expected that their behavior differs only when the result of an operation is too large to represent in the result type as follows:
 
@@ -266,7 +266,7 @@ You can use the `checked` modifier only when you overload any of the following o
 - [Explicit conversion operators](user-defined-conversion-operators.md)
 
 > [!NOTE]
-> An overflow checking context within the body of a checked operator is not affected by the presence of the `checked` modifier. The default context is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. Use the [`checked` and `unchecked` statements](../keywords/checked-and-unchecked.md) to explicitly specify an overflow checking context, as the example at the beginning of this section demonstrates.
+> The overflow-checking context within the body of a checked operator is not affected by the presence of the `checked` modifier. The default context is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. Use the [`checked` and `unchecked` statements](../statements/checked-and-unchecked.md) to explicitly specify the overflow-checking context, as the example at the beginning of this section demonstrates.
 
 ## C# language specification
 

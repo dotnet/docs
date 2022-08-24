@@ -5,7 +5,10 @@ author: michaelstonis
 no-loc: [MAUI]
 ms.date: 06/29/2022
 ---
+
 # Containerized Microservices
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Developing client-server applications has resulted in a focus on building tiered applications that use specific technologies in each tier. Such applications are often referred to as _monolithic_ and are packaged onto hardware pre-scaled for peak loads. The main drawbacks of this development approach are the tight coupling between components within each tier, that individual components can't be easily scaled, and the cost of testing. A simple update can have unforeseen effects on the rest of the tier, so a change to an application component requires its entire tier to be retested and redeployed.
 

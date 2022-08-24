@@ -8,6 +8,8 @@ ms.date: 07/10/2022
 
 # Dependency injection
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Typically, a class constructor is invoked when instantiating an object, and any values that the object needs are passed as arguments to the constructor. This is an example of dependency injection known as *constructor injection*. The dependencies the object needs are injected into the constructor.
 
 By specifying dependencies as interface types, dependency injection enables decoupling the concrete types from the code that depends on these types. It generally uses a container that holds a list of registrations and mappings between interfaces and abstract types, and the concrete types that implement or extend these types.

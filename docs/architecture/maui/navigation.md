@@ -5,7 +5,10 @@ author: michaelstonis
 no-loc: [MAUI]
 ms.date: 07/01/2022
 ---
+
 # Navigation
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 .NET MAUI includes support for page navigation, which typically results from the user's interaction with the UI or from the app itself as a result of internal logic-driven state changes. However, navigation can be complex to implement in apps that use the Model-View-ViewModel (MVVM) pattern, as the following challenges must be met:
 

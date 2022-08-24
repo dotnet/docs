@@ -328,6 +328,12 @@ The `HttpClientHandler` class supports local proxy bypass. The class considers a
 1. The destination contains a loopback address (<xref:System.Net.IPAddress.Loopback> or <xref:System.Net.IPAddress.IPv6Loopback>) or the destination contains an <xref:System.Net.IPAddress> assigned to the local computer.
 1. The domain suffix of the destination matches the local computer's domain suffix (<xref:System.Net.NetworkInformation.IPGlobalProperties.DomainName>).
 
+For more information about configuring a proxy, see:
+
+- <xref:System.Net.WebProxy.Address?displayProperty=nameWithType>
+- <xref:System.Net.WebProxy.BypassProxyOnLocal?displayProperty=nameWithType>
+- <xref:System.Net.WebProxy.BypassArrayList?displayProperty=nameWithType>
+
 ## See also
 
 - [HTTP support in .NET](http-overview.md)

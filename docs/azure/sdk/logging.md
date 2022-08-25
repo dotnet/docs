@@ -175,7 +175,7 @@ In these scenarios, complete the following steps:
 
     Consider the following *Program.cs* example, which uses two [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction) extension libraries:
 
-    :::code language="csharp" source="snippets/logging/Program.cs" id="LogWithoutClientRegistration":::
+    :::code language="csharp" source="snippets/logging/Program.cs" id="LogWithoutClientRegistration" highlight="8-13":::
 
 1. In the ASP.NET Core project's *appsettings.json* file, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
 

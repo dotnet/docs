@@ -179,7 +179,7 @@ In these scenarios, complete the following steps:
 
 1. In the ASP.NET Core project's *appsettings.json* file, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
 
-    :::code language="json" source="snippets/logging/Program.cs" highlight="6":::
+    :::code language="json" source="snippets/logging/appsettings.json" highlight="6":::
 
     Since the `Logging:LogLevel:Azure.Core` key is set to `Debug`, Azure Core library events up to `EventLevel.Verbose` will be logged.
 

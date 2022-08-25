@@ -8,6 +8,8 @@ ms.date: 07/12/2022
 
 # Accessing remote data
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Many modern web-based solutions make use of web services, hosted by web servers, to provide functionality for remote client applications. The operations that a web service exposes constitute a web API.
 
 Client apps should be able to utilize the web API without knowing how the data or operations that the API exposes are implemented. This requires that the API abides by common standards that enable a client app and web service to agree on which data formats to use, and the structure of the data that is exchanged between client apps and the web service.

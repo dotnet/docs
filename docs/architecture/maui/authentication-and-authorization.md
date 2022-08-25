@@ -8,6 +8,8 @@ ms.date: 07/12/2022
 
 # Authentication and Authorization
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Authentication is the process of obtaining identification credentials such as name and password from a user and validating those credentials against an authority. The entity that submitted the credentials is considered an authenticated identity if the credentials are valid. Once an identity has been established, an authorization process determines whether that identity has access to a given resource.
 
 There are many approaches to integrating authentication and authorization into a .NET MAUI app that communicates with an ASP.NET web application, including using ASP.NET Core Identity, external authentication providers such as Microsoft, Google, Facebook, or Twitter, and authentication middleware. The eShopOnContainers multi-platform app performs authentication and authorization with a containerized identity microservice that uses IdentityServer 4. The app requests security tokens from IdentityServer to authenticate a user or access a resource. For IdentityServer to issue tokens on behalf of a user, the user must sign in to IdentityServer. However, IdentityServer doesn't provide a user interface or database for authentication. Therefore, in the eShopOnContainers reference application, ASP.NET Core Identity is used for this purpose.

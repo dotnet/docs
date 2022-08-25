@@ -129,7 +129,7 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
 
-### Set enviornment variables system-wide
+### Set environment variables system-wide
 
 If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:
 

@@ -178,28 +178,7 @@ To use the IPv6 protocol, ensure that you are running a version of the operating
 | ✔️ Yes          | ❌ No               | Can parse IPv6 addresses and resolve IPv6 addresses using name resolution methods not marked obsolete. |
 | ✔️ Yes          | ✔️ Yes             | Can parse and resolve IPv6 addresses using all methods including those marked obsolete.                |
 
-For .NET Framework version 1.1 and earlier, the value of the **ipv6 enabled** configuration switch specifies whether members of the <xref:System.Net.Dns?displayProperty=nameWithType> class return IPv6 addresses.
-
-For .NET Framework version 2.0 and later, if Windows supports IPv6, then members of the <xref:System.Net.Dns?displayProperty=nameWithType> class, (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=nameWithType> method), will return IPv6 addresses with one limitation. Obsolete members of the DNS <xref:System.Net.Dns?displayProperty=nameWithType> (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=nameWithType> method) will read and recognize the value in the configuration file for the ipv6 enabled setting.
-
-To enable the IPv6 support for all classes in the `System.Net` namespace, you must modify the computer configuration file or the configuration file for the application. The configuration file for an application has precedence over the computer configuration file.
-
-To modify a Windows-specific environment configuration file, *machine.config*,  set the switch in a configuration file as follows:
-
-```xml
-<system.net>
-    <settings>
-        <ipv6 enabled="true"/>
-        <!-- Omitted for brevity -->
-    </settings>
-    <!-- Omitted for brevity -->
-</system.net>
-```
-
-> [!NOTE]
-> IPv6 is enabled by default for .NET Framework version 2.0 and later. For .NET Framework version 1.1 and earlier, IPv6 is disabled by default.
-
-To set this switch in an environment variable, use the `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable. For more information, see [.NET environment variables: DOTNET_SYSTEM_NET_DISABLEIPV6](../../core/tools/dotnet-environment-variables.md#dotnet_system_net_disableipv6).
+IPv6 is enabled by default. To configure this switch in an environment variable, use the `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable. For more information, see [.NET environment variables: DOTNET_SYSTEM_NET_DISABLEIPV6](../../core/tools/dotnet-environment-variables.md#dotnet_system_net_disableipv6).
 
 ## See also
 

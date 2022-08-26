@@ -43,7 +43,7 @@ The request methods are differentiated via several factors, first by their _verb
 
 ## HTTP status codes
 
-.NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> set to a corresponding <xref:System.Net.HttpStatusCode>. The <xref:System.Net.Http.HttpResponseMessage> contains a <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property that can be used to determine non-error status codes.
+.NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> set to a corresponding <xref:System.Net.HttpStatusCode>. The <xref:System.Net.Http.HttpResponseMessage> contains a <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property that can be used to determine non-error status codes. For more information, see [RFC 9110, HTTP Semantics: Status Codes](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes).
 
 ### Informational status codes
 

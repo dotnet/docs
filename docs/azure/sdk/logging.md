@@ -145,7 +145,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
 
     :::code language="json" source="snippets/logging/appsettings.Development.json" highlight="9":::
 
-Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
+    Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
 
 ### Logging without client registration
 
@@ -165,7 +165,7 @@ In these scenarios, complete the following steps:
 
 1. Fetch the log forwarder service from the DI container and invoke its <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder.Start%2A> method. For example, using constructor injection in an ASP.NET Core Razor Pages page model class:
 
-    :::code language="csharp" source="snippets/logging/Pages/Index.cshtml.cs" id="FetchServiceAndStart" highlight="8-9":::
+    :::code language="csharp" source="snippets/logging/Pages/Index.cshtml.cs" id="FetchServiceAndStart" highlight="6-7":::
 
 1. In the ASP.NET Core project's *appsettings.json* file, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
 

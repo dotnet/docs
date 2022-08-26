@@ -17,12 +17,14 @@ namespace CSCrypto
 			{
 				// Create a new AES key.
 				key = Aes.Create();
-				//</snippet2>
-				//<snippet3>
-				// Load an XML document.
-				XmlDocument xmlDoc = new XmlDocument();
-				xmlDoc.PreserveWhitespace = true;
-				xmlDoc.Load("test.xml");
+                //</snippet2>
+                //<snippet3>
+                // Load an XML document.
+                XmlDocument xmlDoc = new()
+                {
+                    PreserveWhitespace = true
+                };
+                xmlDoc.Load("test.xml");
 				//</snippet3>
 
 				// Encrypt the "creditcard" element.
@@ -54,13 +56,10 @@ namespace CSCrypto
 
 		public static void Encrypt(XmlDocument Doc, string ElementName, SymmetricAlgorithm Key)
 		{
-			// Check the arguments.
-			if (Doc == null)
-				throw new ArgumentNullException("Doc");
-			if (ElementName == null)
-				throw new ArgumentNullException("ElementToEncrypt");
-			if (Key == null)
-				throw new ArgumentNullException("Alg");
+            // Check the arguments.
+            ArgumentNullException.ThrowIfNull(Doc);
+            ArgumentNullException.ThrowIfNull(ElementName);
+            ArgumentNullException.ThrowIfNull(Key);
 
 			////////////////////////////////////////////////
 			// Find the specified element in the XmlDocument
@@ -82,27 +81,29 @@ namespace CSCrypto
 			//////////////////////////////////////////////////
 
 			//<snippet5>
-			EncryptedXml eXml = new EncryptedXml();
+			EncryptedXml eXml = new();
 
 			byte[] encryptedElement = eXml.EncryptData(elementToEncrypt, Key, false);
-			//</snippet5>
-			////////////////////////////////////////////////
-			// Construct an EncryptedData object and populate
-			// it with the desired encryption information.
-			////////////////////////////////////////////////
+            //</snippet5>
+            ////////////////////////////////////////////////
+            // Construct an EncryptedData object and populate
+            // it with the desired encryption information.
+            ////////////////////////////////////////////////
 
-			//<snippet6>
-			EncryptedData edElement = new EncryptedData();
-			edElement.Type = EncryptedXml.XmlEncElementUrl;
-			//</snippet6>
+            //<snippet6>
+            EncryptedData edElement = new()
+            {
+                Type = EncryptedXml.XmlEncElementUrl
+            };
+            //</snippet6>
 
-			// Create an EncryptionMethod element so that the
-			// receiver knows which algorithm to use for decryption.
-			// Determine what kind of algorithm is being used and
-			// supply the appropriate URL to the EncryptionMethod element.
+            // Create an EncryptionMethod element so that the
+            // receiver knows which algorithm to use for decryption.
+            // Determine what kind of algorithm is being used and
+            // supply the appropriate URL to the EncryptionMethod element.
 
-			//<snippet7>
-			string encryptionMethod = null;
+            //<snippet7>
+            string encryptionMethod = null;
 
 			if (Key is Aes)
 			{
@@ -134,11 +135,9 @@ namespace CSCrypto
 
 		public static void Decrypt(XmlDocument Doc, SymmetricAlgorithm Alg)
 		{
-			// Check the arguments.
-			if (Doc == null)
-				throw new ArgumentNullException("Doc");
-			if (Alg == null)
-				throw new ArgumentNullException("Alg");
+            // Check the arguments.
+            ArgumentNullException.ThrowIfNull(Doc);
+            ArgumentNullException.ThrowIfNull(Alg);
 
 			// Find the EncryptedData element in the XmlDocument.
 			// <snippet10>
@@ -153,13 +152,13 @@ namespace CSCrypto
 
 			// Create an EncryptedData object and populate it.
 			// <snippet11>
-			EncryptedData edElement = new EncryptedData();
+			EncryptedData edElement = new();
 			edElement.LoadXml(encryptedElement);
 			// </snippet11>
 
 			// Create a new EncryptedXml object.
 			// <snippet12>
-			EncryptedXml exml = new EncryptedXml();
+			EncryptedXml exml = new();
 
 			// Decrypt the element using the symmetric key.
 			byte[] rgbOutput = exml.DecryptData(edElement, Alg);

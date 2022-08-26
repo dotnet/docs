@@ -2539,17 +2539,39 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: HTTP client guidelines
-      displayName: networking, httpclient
-      href: networking/httpclient-guidelines.md
-    - name: Make HTTP requests
-      displayName: networking,http,web services,client
-      href: networking/httpclient.md
-    - name: IHttpClientFactory
-      displayName: networking,httpclient,http,dependency injection,client,factory
-      href: ../core/extensions/httpclient-factory.md
-    - name: HTTP/3 with .NET
-      href: ../core/extensions/httpclient-http3.md
+    - name: Network programming in .NET
+      href: networking/overview.md
+    - name: Network availability
+      href: networking/network-info.md
+    - name: IPv6 overview
+      href: networking/ipv6-overview.md
+    - name: HTTP
+      items:
+      - name: HTTP support
+        href: networking/http/http-overview.md
+      - name: HTTP client guidelines
+        displayName: networking, httpclient
+        href: networking/http/httpclient-guidelines.md
+      - name: Make HTTP requests
+        displayName: networking,http,web services,client
+        href: networking/http/httpclient.md
+      - name: IHttpClientFactory
+        displayName: networking,httpclient,http,dependency injection,client,factory
+        href: ../core/extensions/httpclient-factory.md
+      - name: HTTP/3 with .NET
+        href: ../core/extensions/httpclient-http3.md
+    - name: Sockets
+      items:
+      - name: Sockets support
+        href: networking/sockets/sockets-overview.md
+      - name: Use Sockets to send and receive data
+        href: networking/sockets/socket-services.md
+    - name: TCP
+      items:
+      - name: TCP support
+        href: networking/tcp/tcp-overview.md
+      - name: Use TcpClient and TcpListener
+        href: networking/tcp/tcp-services.md
   - name: File globbing in .NET
     href: ../core/extensions/file-globbing.md
   - name: Primitives library in .NET

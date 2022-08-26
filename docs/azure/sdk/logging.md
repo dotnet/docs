@@ -101,7 +101,7 @@ using var listener = new AzureEventSourceListener((e, message) =>
 
 ## Map to ASP.NET Core logging
 
-When the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> or the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClientsCore%2A> extension method is called, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
+The <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service enables you to use the standard ASP.NET Core logging configuration for logging. The service forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory>.
 
 The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`.
 
@@ -116,50 +116,40 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 ### Logging with client registration
 
-Consider the following `AddAzureClients` call in the *Program.cs* file of an ASP.NET Core project:
+Using the Azure Service Bus library as an example, complete the following steps:
 
-```csharp
-using Azure.Identity;
-using Microsoft.Extensions.Azure;
+1. Register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method:
 
-// code omitted for brevity
+    ```csharp
+    using Azure.Identity;
+    using Microsoft.Extensions.Azure;
+    
+    // code omitted for brevity
+    
+    builder.Services.AddAzureClients(azureBuilder =>
+    {
+        azureBuilder.AddServiceBusClient(
+            builder.Configuration.GetConnectionString("ServiceBus"));
+        azureBuilder.UseCredential(new DefaultAzureCredential());
+    });
+    ```
 
-builder.Services.AddAzureClients(azureBuilder =>
-{
-    azureBuilder.AddServiceBusClient(
-        builder.Configuration.GetConnectionString("ServiceBus"));
-    azureBuilder.UseCredential(new DefaultAzureCredential());
-});
-```
+    In the preceding sample, the `AddAzureClients` method:
 
-In the preceding sample, the `AddAzureClients` method:
+    - Registers the following objects with the DI container:
+      - Log forwarder service
+      - Azure Service Bus client
+    - Sets the default token credential to be used for all registered clients.
 
-- Registers the Azure Service Bus client.
-- Sets the default token credential to be used for all clients.
+1. In the ASP.NET Core project's *appsettings.json* file, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
-In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Service Bus client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
-
-```json
-{
-  "ConnectionStrings": {
-    "ServiceBus": "<connection_string>"
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning",
-      "Azure.Messaging.ServiceBus": "Debug"
-    }
-  },
-  "AllowedHosts": "*"
-}
-```
+    :::code language="json" source="snippets/logging/appsettings.Development.json" highlight="9":::
 
 Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
 
 ### Logging without client registration
 
-There are scenarios in which [registering an Azure SDK library's client with the dependency injection (DI) container](dependency-injection.md#register-client) is either impossible or unnecessary:
+There are scenarios in which [registering an Azure SDK library's client with the DI container](dependency-injection.md#register-client) is either impossible or unnecessary:
 
 - The Azure SDK library doesn't include an `IServiceCollection` extension method to register a client in the DI container.
 - Your app uses ASP.NET extension libraries that depend on other Azure SDK libraries. Examples of such ASP.NET extension libraries include:
@@ -169,13 +159,13 @@ There are scenarios in which [registering an Azure SDK library's client with the
 
 In these scenarios, complete the following steps:
 
-1. Manually start the log forwarder:
-    1. Invoke the parameterless `AddAzureClientsCore` method to register the log forwarder service with the DI container.
-    1. Fetch the log forwarder service singleton from the DI container and invoke its <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder.Start%2A> method.
+1. Register the log forwarder service as a singleton in the DI container:
 
-    Consider the following *Program.cs* example, which uses two [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction) extension libraries:
+    :::code language="csharp" source="snippets/logging/Program.cs" id="RegisterServiceWithDI" highlight="8":::
 
-    :::code language="csharp" source="snippets/logging/Program.cs" id="LogWithoutClientRegistration" highlight="7,9-12":::
+1. Fetch the log forwarder service from the DI container and invoke its <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder.Start%2A> method. For example, using constructor injection in an ASP.NET Core Razor Pages page model class:
+
+    :::code language="csharp" source="snippets/logging/Pages/Index.cshtml.cs" id="FetchServiceAndStart" highlight="8-9":::
 
 1. In the ASP.NET Core project's *appsettings.json* file, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
 

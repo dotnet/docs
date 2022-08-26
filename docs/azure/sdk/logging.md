@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 08/25/2022
+ms.date: 08/26/2022
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
@@ -136,7 +136,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
 
     In the preceding sample, the `AddAzureClients` method:
 
-    - Registers the following objects with the DI container:
+    - Registers the following objects with the dependency injection (DI) container:
       - Log forwarder service
       - Azure Service Bus client
     - Sets the default token credential to be used for all registered clients.

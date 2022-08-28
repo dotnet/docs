@@ -25,7 +25,7 @@ public static class SwitchExample
         Direction.Right => Orientation.East,
         Direction.Down  => Orientation.South,
         Direction.Left  => Orientation.West,
-        _ => throw new ArgumentOutOfRangeException(nameof(direction), $"Not expected direction value: {direction}"),
+        _ => throw new ArgumentOutOfRangeException(nameof(direction), $"Not expected direction value: {direction}")
     };
 
     public static void Main()
@@ -61,7 +61,7 @@ public static class SwitchExpressions
         { X: 0, Y: 0 }                    => new Point(0, 0),
         { X: var x, Y: var y } when x < y => new Point(x + y, y),
         { X: var x, Y: var y } when x > y => new Point(x - y, y),
-        { X: var x, Y: var y }            => new Point(2 * x, 2 * y),
+        { X: var x, Y: var y }            => new Point(2 * x, 2 * y)
     };
     // </CaseGuardExample>
 }

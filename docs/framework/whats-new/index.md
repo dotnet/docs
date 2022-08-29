@@ -62,7 +62,7 @@ Improved accessibility, which allows an application to provide an appropriate ex
 
 <a name="arm64native481"></a>
 
-.NET Framework 4.8.1 adds native Arm64 support to the .NET Framework family. So, your investments in the vast ecosystem of .NET Framework apps and libraries can now leverage the benefits of running workloads natively on Arm64 for better performance when compared to running x64 code emulated on Arm64.
+.NET Framework 4.8.1 adds native Arm64 support to the .NET Framework family. So, your investments in the vast ecosystem of .NET Framework apps and libraries can now leverage the benefits of running workloads natively on Arm64&mdash;namely better performance when compared to running x64 code emulated on Arm64.
 
 <a name="wpf481"></a>
 

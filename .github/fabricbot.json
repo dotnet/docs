@@ -251,6 +251,53 @@
           }
         ]
       }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": "azure-sdk"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "pull_request",
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Label PRs from the Azure SDK bot",
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "azure-sdk-shipit"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "AutoMerge",
+      "subCapability": "AutoMerge",
+      "version": "1.0",
+      "config": {
+        "taskName": "Auto-merge Azure SDK PRs with green builds",
+        "label": "azure-sdk-shipit",
+        "allowAutoMergeInstructionsWithoutLabel": true,
+        "mergeType": "squash",
+        "requireAllStatuses": true
+      }
     }
   ],
   "userGroups": []

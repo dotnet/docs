@@ -3,7 +3,7 @@ title: Logging
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 06/27/2022
+ms.date: 08/29/2022
 ---
 
 # Logging in .NET
@@ -36,10 +36,11 @@ Logging configuration is commonly provided by the `Logging` section of *appsetti
 
 In the preceding JSON:
 
-- The `"Default"`, `"Microsoft"`, and `"Microsoft.Hosting.Lifetime"` categories are specified.
+- The `"Default"`, `"Microsoft"`, and `"Microsoft.Hosting.Lifetime"` log level categories are specified.
+- The `"Default"` value is applied to all categories that are not otherwise specified, effectively making all deafult value for all categories `"Information"`. This can be overridden by specifying a value for a category.
 - The `"Microsoft"` category applies to all categories that start with `"Microsoft"`.
-- The `"Microsoft"` category logs at log level `Warning` and higher.
-- The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level "Information" and higher.
+- The `"Microsoft"` category logs at a log level of `Warning` and higher.
+- The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level `"Information"` and higher.
 - A specific log provider is not specified, so `LogLevel` applies to all the enabled logging providers except for the [Windows EventLog](logging-providers.md#windows-eventlog).
 
 The `Logging` property can have <xref:Microsoft.Extensions.Logging.LogLevel> and log provider properties. The `LogLevel` specifies the minimum [level](#log-level) to log for selected categories. In the preceding JSON, `Information` and `Warning` log levels are specified. `LogLevel` indicates the severity of the log and ranges from 0 to 6:

@@ -6,21 +6,21 @@ ms.author: alexwolf
 ms.custom: mvc
 ms.date: 08/25/2022
 ---
-# Deploying and scaling an ASP.NET Core on Azure
+# Deploying and scaling an ASP.NET Core app on Azure Container Apps
 
-Applications deployed to Azure must be able to scale in order to fully leverage cloud benefits. Properly architected apps should be able to dynamically scale horizontally across any number of instances without producing errors. ASP.NET Core apps are able to meet these requirements, but developers must implement certain configurations and architectural patterns to ensure success. This tutorial demonstrates how to deploy a scalable Razor Pages app to Azure Container Apps by completing the following tasks:
+Web applications deployed to Azure should be dynamically scalable in order to leverage various benefits of the cloud, such as elasticity. ASP.NET Core apps meet these requirements, but developers must consider certain architectural patterns and configurations to ensure success. This tutorial demonstrates how to deploy a scalable Razor Pages app to Azure Container Apps by completing the following tasks:
 
-1. Create a containerized ASP.NET Core app
-1. Configure the application code
-1. Create the Azure services
-1. Deploy the app to Azure Container Apps
-1. Connect the Azure Services
-1. Scale the app
-1. Configure roles for local development
+1. [Create a containerized ASP.NET Core app](#1-create-a-containerized-aspnet-core-app)
+1. [Configure the application code](#2-configure-the-application-code)
+1. [Create the Azure services](#3-create-the-azure-services)
+1. [Deploy the app to Azure Container Apps](#4-deploy-the-app-to-azure-container-apps)
+1. [Connect the Azure Services](#5-connect-the-azure-services)
+1. [Configure application scaling](#6-configure-application-scaling)
+1. [Configure roles for local development](#7-configure-roles-for-local-development)
 
-In some cases, simple ASP.NET Core apps are able to scale without special considerations. However, apps that utilize certain framework features or architectural patterns require additional configurations, including the following:
+In some cases, simple ASP.NET Core apps are able to scale without special considerations. However, some apps require additional configurations to utilize certain framework features or architectural patterns, including the following:
 
-* **Secure form submissions**: Razor Pages, MVC and Web API apps often rely on form submissions. By default these apps use cross site forgery tokens and internal data protection services to secure requests. When deployed to the cloud, these apps must be configured to use a managed data protection service in a secure, centralized location.
+* **Secure form submissions**: Razor Pages, MVC and Web API apps often rely on form submissions. By default these apps use cross site forgery tokens and framework data protection services to secure requests. When deployed to the cloud, these apps must be configured to use a managed data protection service in a secure, centralized location.
 
 * **SignalR circuits**: Blazor Server applications require the use of a centralized Azure SignalR service in order to scale properly and securely. These services also utilize the data protection services mentioned previously.
 
@@ -131,7 +131,7 @@ To host and scale a .NET app you'll need to create one or more services in Azure
     * **Container Apps Environment**: Choose **Create new** and name the environment **scalablerazorenv**. Leave the rest of the settings at their default and select **Create**.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-container-app-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-new-container-app.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
-    
+
 1. Azure will take a moment to provision the new services. When the task completes, click **Go to resource** to view your new container app.
 
 #### Create and connect to the Storage Account service and container
@@ -143,7 +143,7 @@ To host and scale a .NET app you'll need to create one or more services in Azure
     * **Resource Group**: Select the *msdocs-scalable-razor* resource group you created previously.
     * **Storage account name**: Name the account scalablerazorXXXX where the X's are random numbers of your choosing. This name must be unique across all of Azure.
     * **Region**: Select a region that is close to you.
-    
+
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-storage.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
 1. Leave the rest of the values at their default and select **Review**. After Azure validates your inputs, select **Create**.
@@ -170,14 +170,14 @@ Next you'll need to create the key vault service.
     * **Key Vault name**: Enter the name *scalablerazorvault*.
 
         :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-storage.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
-    
+
 1. Leave the rest of the settings at their default, and then select **Review + create**. Wait for Azure to validate your settings, and then choose **Create**.
 1. Azure will take a moment to provision the new key vault. When the ask completes, click **Go to resource** to view the new service.
 
 Next you need to create a secret key to protect the data in the blob storage account.
 
 1. On the main key vault overview page, select **Keys** from the left navigation.
-1. On the **Create a key** page, enter *razorkey* in the **Name** field. 
+1. On the **Create a key** page, enter *razorkey* in the **Name** field.
 1. Leave the rest of the settings at their default values and then choose **Create**. A new key should appear on the key list page.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-key.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
@@ -193,7 +193,7 @@ Next you will build and deploy your app to the Azure Container app.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-publish-app.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
-1. You need to create an Azure Container Registry to store your app image. Select the green **+** icon on the right side of the dialog. 
+1. You need to create an Azure Container Registry to store your app image. Select the green **+** icon on the right side of the dialog.
     1. In the new dialog, for the **Resource group** make sure the **msdocs-razor-scaling** group you created earlier is selected, and then choose **Create**. Visual Studio will create the registry in Azure and return to the previous dialog.
 
         :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-registry.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
@@ -242,13 +242,13 @@ The Container App requires a secure connect to the storage account and key vault
     * **Client type**: Select **.NET**.
 
         :::image type="content" source="media/scaling-aspnetcore-apps/scaling-connect-keyvault.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
-    
+
 1. Select **Next: Authentication** to progress to the next step.
 1. Select **System assigned managed identity** and choose **Next: Networking**.
 1. Leave the default networking options selected, and then choose **Review + Create**.
 1. After Azure validates your settings, select **Create**.
 
-## 6) Scale the app
+## 6) Configure application scaling
 
 1. Navigate to the overview page of your Container App
 1. Select **Scale** from the left navigation panel, and then choose **Edit and deploy**.
@@ -266,7 +266,7 @@ The existing code and configuration of your app can also work while running loca
 
 #### Sign-in to your local development environment
 
-You'll need to be signed in to the Azure CLI, Visual Studio, or Azure Powershell for your credentials to be picked up by `DefaultAzureCredential`.
+You'll need to be signed in to the Azure CLI, Visual Studio, or Azure PowerShell for your credentials to be picked up by `DefaultAzureCredential`.
 
 ## [Azure CLI](#tab/login-azure-cli)
 
@@ -298,7 +298,7 @@ az login
 1. Make sure **User, group, or service principal** is select, and then choose **+ Select members**.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-storage-assign-role.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
- 
+
 1. In the **Select members** flyout, search for your own *user@domain* account and select it from the results.
 1. Choose **Next** and then choose **Review + assign**. After Azure validates your settings, select **Review + assign** again.
 

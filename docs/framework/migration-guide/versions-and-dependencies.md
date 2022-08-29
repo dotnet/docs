@@ -60,7 +60,7 @@ Jump to:
 |-|-|
 |**CLR**|4|
 |**Windows**|✔️ 11<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>|
-|**Windows Server**|✔️ Windows Server 2022<br/>|
+|**Windows Server**|➕ Windows Server 2022<br/>|
 
 To determine the installed .NET version, use the following `Release` DWORD:
 

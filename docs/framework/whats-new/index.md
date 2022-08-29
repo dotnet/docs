@@ -58,7 +58,7 @@ You can target .NET Framework 4.8.1 in Visual Studio 2022 17.3 or later by insta
 - [WCAG2.1 compliant accessible tooltips](#wpf481)
 - [Windows Forms – Accessibility Improvements](#winforms481)
 
-Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology, continues to be a major focus of .NET Framework 4.8.1. For information on accessibility improvements in .NET Framework 4.8.1, see [What's new in accessibility in .NET Framework](whats-new-in-accessibility.md).
+Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology, is a major focus of .NET Framework 4.8.1. For information on accessibility improvements in .NET Framework 4.8.1, see [What's new in accessibility in .NET Framework](whats-new-in-accessibility.md).
 
 <a name="arm64native481"></a>
 

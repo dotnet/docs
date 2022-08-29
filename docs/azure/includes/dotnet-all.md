@@ -169,8 +169,11 @@
 | Azure.ResourceManager.NetApp | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.NetApp/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Orbital | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Orbital/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Peering | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Peering/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.PolicyInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.PolicyInsights/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Purview | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Purview/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.ResourceGraph | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ResourceGraph/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.SecurityCenter | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.SecurityCenter/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.SecurityInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.SecurityInsights/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.ServiceFabricManagedClusters | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ServiceFabricManagedClusters/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.StorageSync | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.StorageSync/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Subscription | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Subscription/1.0.0-beta.1) |  |  |

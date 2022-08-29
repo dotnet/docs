@@ -92,7 +92,7 @@ To determine whether a *minimum* version of .NET Framework is present, check for
 | .NET Framework 4.7.1   | 461308 |
 | .NET Framework 4.7.2   | 461808 |
 | .NET Framework 4.8     | 528040 |
-| .NET Framework 4.8.1   | 533320 |
+| .NET Framework 4.8.1   | 533325 |
 
 ### Use Registry Editor
 

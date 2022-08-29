@@ -75,7 +75,7 @@ In this release, both Windows Forms and WPF have made improvements to the handli
 - Tooltips should be hoverable. Users should be able to place their mouse cursor over the tooltip. This enables scenarios like using magnifier to be able to read the tooltip for low-vision users.
 - Tooltips should be persistent. Tooltips should not automatically disappear after a certain amount of time has elapsed. Rather, tooltips should be dismissed by the user moving their mouse to another control or by a keyboard command.
 
-In WinForms, this support is only available on Windows 11 or higher operating system. WinForms is a thin managed wrapper around the Windows API, and the new tooltip behavior only became available in Windows 11. WPF has no operating system version dependencies for their accessible tooltips.
+In Windows Forms, this support is only available on Windows 11 or later operating systems. Windows Forms is a thin managed wrapper around the Windows API, and the new tooltip behavior only became available in Windows 11. WPF has no operating system version dependencies for its accessible tooltips.
 
 WPF had implemented most of the requirements for WCAG2.1 compliant tooltips in .NET Framework 4.8. In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the <kbd>Esc</kbd> key, the <kbd>Ctrl</kbd> key (by itself), or by the combination <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F10</kbd>. The scope of the escape key was reduced in this release to apply only to the current window. Previously it applied to any open tooltip in the application.
 

@@ -57,7 +57,7 @@ When you create a <xref:System.Threading.PeriodicTimer?displayProperty=nameWithT
 
 The <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> method returns a [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601); `true` upon successful firing of the timer, and `false` when the timer has been canceled by calling <xref:System.Threading.PeriodicTimer.Dispose%2A?displayProperty=nameWithType>. <xref:System.Threading.PeriodicTimer.WaitForNextTickAsync%2A> optionally accepts a <xref:System.Threading.CancellationToken>, which results in a <xref:System.Threading.Tasks.TaskCanceledException> when a cancellation has been requested.
 
-For more information and examples, see <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType>.
+For more information, see <xref:System.Threading.PeriodicTimer?displayProperty=nameWithType>.
   
 ## See also
 

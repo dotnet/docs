@@ -263,7 +263,7 @@ You can see an example program that demonstrates the performance differences usi
 
 ## Use `ref struct` types
 
-Use a [`ref struct`](language-reference/builtin-types/struct.md#ref-struct) or a `readonly ref struct`, such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601>, to work with blocks of memory as a sequence of bytes. The memory used by the span is constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
+Use a [`ref struct`](language-reference/builtin-types/ref-struct.md) or a `readonly ref struct`, such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601>, to work with blocks of memory as a sequence of bytes. The memory used by the span is constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
 
 Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations. The memory used by the readonly span is restricted to a single stack frame, and the memory used by the readonly span can't be modified.
 

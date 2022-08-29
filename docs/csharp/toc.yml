@@ -882,9 +882,12 @@ items:
       - name: Enumeration types
         href: language-reference/builtin-types/enum.md
         displayName: "enum, bit flags, bit field"
-      - name: Structure types
+      - name: Struct types
         href: language-reference/builtin-types/struct.md
         displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+      - name: Ref struct types
+        href: language-reference/builtin-types/ref-struct.md
+        displayName: "ref struct, readonly ref struct"
       - name: Tuple types
         href: language-reference/builtin-types/value-tuples.md
         displayName: "value tuples, ValueTuple"

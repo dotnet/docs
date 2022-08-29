@@ -159,6 +159,17 @@
                       }
                     }
                   ]
+                },
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "isActivitySender",
+                      "parameters": {
+                        "user": "dependabot"
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -200,6 +211,46 @@
         ]
       },
       "disabled": true
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "hasLabel",
+              "parameters": {
+                "label": "dependencies"
+              }
+            },
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": "dependabot"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "pull_request",
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Reply to dependabot PRs with automation command to squash and merge",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "@dependabot squash and merge"
+            }
+          }
+        ]
+      }
     }
   ],
   "userGroups": []

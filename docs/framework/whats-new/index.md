@@ -73,7 +73,7 @@ In this release, both Windows Forms and WPF have made improvements to the handli
 - Tooltips must display either via mouse hover or by keyboard navigation to the control.
 - Tooltips should be dismissable. That is, a simple keyboard command like <kbd>Esc</kbd> should dismiss the tooltip.
 - Tooltips should be hoverable. Users should be able to place their mouse cursor over the tooltip. This enables scenarios like using magnifier to be able to read the tooltip for low-vision users.
-- Tooltips should be persistent. Tooltips should not automatically disappear after a certain time has elapsed. Rather, the tooltips should be dismissed by the user moving their mouse to another control, or by dismissing the tooltip as described above.
+- Tooltips should be persistent. Tooltips should not automatically disappear after a certain amount of time has elapsed. Rather, tooltips should be dismissed by the user moving their mouse to another control or by a keyboard command.
 
 In WinForms, this support is only available on Windows 11 or higher operating system. WinForms is a thin managed wrapper around the Windows API, and the new tooltip behavior only became available in Windows 11. WPF has no operating system version dependencies for their accessible tooltips.
 

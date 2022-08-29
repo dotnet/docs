@@ -11,9 +11,9 @@ ms.date: 08/25/2022
 Web applications deployed to Azure should be dynamically scalable in order to leverage various benefits of the cloud, such as elasticity. ASP.NET Core apps meet these requirements, but developers must consider certain architectural patterns and configurations to ensure success. This tutorial demonstrates how to deploy a scalable Razor Pages app to Azure Container Apps by completing the following tasks:
 
 1. [Create a containerized ASP.NET Core app](#1-create-a-containerized-aspnet-core-app)
-1. [Configure the application code](#2-configure-the-application-code)
+1. [Setup the application code and dependencies](#2-setup-the-application-code-and-dependencies)
 1. [Create the Azure services](#3-create-the-azure-services)
-1. [Deploy the app to Azure Container Apps](#4-deploy-the-app-to-azure-container-apps)
+1. [Configure and deploy the app to Azure Container Apps](#4-configure-and-deploy-the-app-to-azure-container-apps)
 1. [Connect the Azure Services](#5-connect-the-azure-services)
 1. [Configure application scaling](#6-configure-application-scaling)
 1. [Configure roles for local development](#7-configure-roles-for-local-development)
@@ -182,7 +182,7 @@ Next you need to create a secret key to protect the data in the blob storage acc
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-key.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
-## 4) Configure and deploy the app to Azure
+## 4) Configure and deploy the app to Azure Container Apps
 
 Next you will build and deploy your app to the Azure Container app.
 

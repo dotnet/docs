@@ -21,7 +21,7 @@ dev_langs:
 
 There are a number of ways to sign an assembly with a strong name:
 
-- By using the **Build / Strong naming** tab in a project's **Properties** dialog box in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.
+- By using the **Build** > **Strong naming** page in the [project designer](/visualstudio/ide/reference/project-properties-reference) for a project in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.
 - By using the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) to link a .NET Framework code module (a _.netmodule_ file) with a key file.
 - By using assembly attributes to insert the strong name information into your code. You can use either the <xref:System.Reflection.AssemblyKeyFileAttribute> or the <xref:System.Reflection.AssemblyKeyNameAttribute> attribute, depending on where the key file to be used is located.
 - By using compiler options.

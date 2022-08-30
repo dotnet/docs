@@ -1,4 +1,4 @@
-- name: Network Programming in the .NET Framework
+- name: Network programming in .NET Framework
   items:
   - name: Configuring Internet Applications
     href: configuring-internet-applications.md
@@ -39,11 +39,14 @@
   - name: FTP
     href: ftp.md
     items:
-    - name: "How to: Download Files with FTP"
+    - name: Overview
+      displayName: ftp
+      href: ftp.md
+    - name: Download Files with FTP
       href: how-to-download-files-with-ftp.md
-    - name: "How to: Upload Files with FTP"
+    - name: Upload Files with FTP
       href: how-to-upload-files-with-ftp.md
-    - name: "How to: List Directory Contents with FTP"
+    - name: List Directory Contents with FTP
       href: how-to-list-directory-contents-with-ftp.md
   - name: UDP
     href: using-udp-services.md

@@ -294,7 +294,7 @@
       "config": {
         "taskName": "Auto-merge Azure SDK PRs with green builds",
         "label": "azure-sdk-shipit",
-        "allowAutoMergeInstructionsWithoutLabel": true,
+        "allowAutoMergeInstructionsWithoutLabel": false,
         "mergeType": "squash",
         "requireAllStatuses": true
       }

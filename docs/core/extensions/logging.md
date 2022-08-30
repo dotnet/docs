@@ -37,7 +37,7 @@ Logging configuration is commonly provided by the `Logging` section of *appsetti
 In the preceding JSON:
 
 - The `"Default"`, `"Microsoft"`, and `"Microsoft.Hosting.Lifetime"` log level categories are specified.
-- The `"Default"` value is applied to all categories that are not otherwise specified, effectively making all deafult value for all categories `"Information"`. This can be overridden by specifying a value for a category.
+- The `"Default"` value is applied to all categories that aren't otherwise specified, effectively making all default values for all categories `"Information"`. You can override this behavior by specifying a value for a category.
 - The `"Microsoft"` category applies to all categories that start with `"Microsoft"`.
 - The `"Microsoft"` category logs at a log level of `Warning` and higher.
 - The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level `"Information"` and higher.

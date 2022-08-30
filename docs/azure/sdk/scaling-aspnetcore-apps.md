@@ -39,8 +39,6 @@ This tutorial uses a Razor Pages app to demonstrate the concepts ahead. However,
 
 1. For the **Project name**, enter *ScalableRazor* and choose a location for the project. Leave the rest of the settings at their default and select **Next**.
 
-    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-project.png" alt-text="A screenshot showing new project settings.":::
-
 1. On the **Additional Information** dialog, make sure the following values are set:
     * **Framework**: Select **.NET 6.0**.
     * **Authentication type**: Select **None**.
@@ -49,7 +47,9 @@ This tutorial uses a Razor Pages app to demonstrate the concepts ahead. However,
     * **Docker OS**: Choose **Linux**.
     * **Do not use top-level statements**: Make sure this checkbox is unchecked.
 
-Visual Studio will generate a new Razor Pages project for you.
+    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-project.png" alt-text="A screenshot showing new project settings.":::
+
+Select **Create** and Visual Studio will generate a new Razor Pages project for you.
 
 ## 2) Setup the application code and dependencies
 
@@ -64,8 +64,8 @@ To configure and connect to the required Azure services, you'll need to install 
 You can use the dotnet add package command to add the required packages to your project:
 
 ```dotnetcli
-dotnet add package Azure.Identity
-dotnet add package Microsoft.AspNetCore.DataProtection
+dotnet add package Azure.Extensions.AspNetCore.DataProtection.Blobs
+dotnet add package Azure.Extensions.AspNetCore.DataProtection.Keys
 dotnet add package Microsoft.Extensions.Azure
 ```
 
@@ -92,7 +92,7 @@ builder.Services.AddAzureClientsCore();
 
 // Todo: Update the placeholders with your service values
 builder.Services.AddDataProtection()
-                .PersistKeysToAzureBlobStorage(new Uri("<your-storage-account-uri>"), new DefaultAzureCredential())
+                .PersistKeysToAzureBlobStorage(new Uri("https://<your-storage-account-name>.blob.core.windows.net/"), new DefaultAzureCredential())
                 .ProtectKeysWithAzureKeyVault(new Uri($"https://<key-vault-name>.vault.azure.net/keys/<key-name>/"), new DefaultAzureCredential());
 
 var app = builder.Build();
@@ -132,22 +132,25 @@ To host and scale a .NET app you'll need to create one or more services in Azure
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-container-app-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-new-container-app.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
-1. Azure will take a moment to provision the new services. When the task completes, click **Go to resource** to view your new container app.
+1. Select **Review + create** and Azure will validate your settings. Select **Create** to complete the provisioning process.
 
-#### Create and connect to the Storage Account service and container
+Azure will take a moment to provision the new services. When the task completes, click **Go to resource** to view the new container app.
 
-1. In the Azure Portal search bar, enter *Storage account* and select the matching result.
+#### Create the Storage Account service and container
+
+1. In the Azure Portal search bar, enter *Storage accounts* and select the matching result.
 1. On the storage accounts listing page, select **+ Create**.
 1. On the **Basics** tab, enter the following values:
     * **Subscription**: Select the same subscription that chose for you Container App.
     * **Resource Group**: Select the *msdocs-scalable-razor* resource group you created previously.
-    * **Storage account name**: Name the account scalablerazorXXXX where the X's are random numbers of your choosing. This name must be unique across all of Azure.
+    * **Storage account name**: Name the account scalablerazorstorageXXXX where the X's are random numbers of your choosing. This name must be unique across all of Azure.
     * **Region**: Select a region that is close to you.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-storage.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
 1. Leave the rest of the values at their default and select **Review**. After Azure validates your inputs, select **Create**.
-1. Azure will take a moment to provision the new storage account. When the task completes, click **Go to resource** to view the new service.
+
+Azure will take a moment to provision the new storage account. When the task completes, click **Go to resource** to view the new service.
 
 Next you'll need to create the Container that will be used to store your app's data protection keys.
 
@@ -163,28 +166,36 @@ You should see the new container appear on the page list.
 Next you'll need to create the key vault service.
 
 1. In the Azure Portal search bar, enter *Key Vault* and select the matching result
-1. On the key vault listing page, select **+Create++.
+1. On the key vault listing page, select **+ Create**.
 1. On the **Basics** tab, enter the following values:
     * **Subscription**: Select the same subscription that chose for you Container App.
     * **Resource Group**: Select the *msdocs-scalable-razor* resource group you created previously.
-    * **Key Vault name**: Enter the name *scalablerazorvault*.
+    * **Key Vault name**: Enter the name *scalablerazorvaultXXXX*.
+    * **Region**: Select a region near your location.
 
         :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-storage.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
 1. Leave the rest of the settings at their default, and then select **Review + create**. Wait for Azure to validate your settings, and then choose **Create**.
-1. Azure will take a moment to provision the new key vault. When the ask completes, click **Go to resource** to view the new service.
+
+Azure will take a moment to provision the new key vault. When the ask completes, click **Go to resource** to view the new service.
 
 Next you need to create a secret key to protect the data in the blob storage account.
 
 1. On the main key vault overview page, select **Keys** from the left navigation.
-1. On the **Create a key** page, enter *razorkey* in the **Name** field.
-1. Leave the rest of the settings at their default values and then choose **Create**. A new key should appear on the key list page.
+1. On the **Create a key** page, select **+ Generate/Import** to open the **Create a key** flyout menu. 
+1. Enter *razorkey* in the **Name** field. Leave the rest of the settings at their default values and then choose **Create**. A new key should appear on the key list page.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-key.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
 ## 4) Configure and deploy the app to Azure Container Apps
 
-Next you will build and deploy your app to the Azure Container app.
+Now that the necessary Azure resources have been created, you'll need to configure your code to point to those services.
+
+1. Replace the storage account name placeholder in the URI of the `PersistKeystoAzureBlobStorage` method with the name of the `scalablerazorstorageXXXX` account you created.
+1. Replace the `<key-vault-name>` placeholder in the key vault URI `ProtectKeysWithAzureKeyVault`method with the name of the `scalablerazorvaultXXXX` key vault you created.
+1. Replace the `<key-name>` placeholder in the key vault URI with the `razorkey` name you created earlier.
+
+Next, you will build and deploy your app to the Azure Container app.
 
 1. Inside Visual Studio, right click on the project node and select **Publish**.
 1. In the publishing dialog, select Azure for the deployment target, and then choose **Next**.
@@ -201,7 +212,9 @@ Next you will build and deploy your app to the Azure Container app.
 1. Make sure the newly created registry is selected, and then select **Finish**.
 1. Select the **Publish** button in the upper right corner of the publishing summary. Visual Studio will begin deploying the app, which may take a few moments to complete.
 
-When the deployment finishes, Visual Studio will launch the browser and open to your application. However, you should see an error page at this point. Although our app is running in Azure, the required services are not connected yet, so you'll do that next.
+When the deployment finishes, Visual Studio will launch the browser and open to your application.
+
+However, when you try to search for a repository, an error will occur. You can use the browser tools to confirm that an error related to data protection occurred. Although our app is running in Azure, the required services to fix this issue are not connected yet, so you'll do that next.
 
 ## 5) Connect the Azure Services
 

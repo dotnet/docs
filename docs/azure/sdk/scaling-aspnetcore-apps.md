@@ -10,13 +10,12 @@ ms.date: 08/25/2022
 
 Web applications deployed to Azure should be dynamically scalable in order to leverage various benefits of the cloud, such as elasticity. ASP.NET Core apps meet these requirements, but developers must consider certain architectural patterns and configurations to ensure success. This tutorial demonstrates how to deploy a scalable Razor Pages app to Azure Container Apps by completing the following tasks:
 
-1. [Create a containerized ASP.NET Core app](#1-create-a-containerized-aspnet-core-app)
-1. [Setup the application code and dependencies](#2-setup-the-application-code-and-dependencies)
-1. [Create the Azure services](#3-create-the-azure-services)
-1. [Configure and deploy the app to Azure Container Apps](#4-configure-and-deploy-the-app-to-azure-container-apps)
-1. [Connect the Azure Services](#5-connect-the-azure-services)
-1. [Configure application scaling](#6-configure-application-scaling)
-1. [Configure roles for local development](#7-configure-roles-for-local-development)
+1. [Setup the containerized application](#1-setup-the-containerized-application)
+1. [Create the Azure services](#2-create-the-azure-services)
+1. [Configure and deploy the app to Azure Container Apps](#3-configure-and-deploy-the-app-to-azure-container-apps)
+1. [Connect the Azure Services](#4-connect-the-azure-services)
+1. [Configure application scaling](#5-configure-application-scaling)
+1. [Configure roles for local development](#6-configure-roles-for-local-development)
 
 In some cases, simple ASP.NET Core apps are able to scale without special considerations. However, some apps require additional configurations to utilize certain framework features or architectural patterns, including the following:
 
@@ -29,112 +28,94 @@ In some cases, simple ASP.NET Core apps are able to scale without special consid
 > [!NOTE]
 > The steps ahead demonstrate how to properly address these concerns by deploying a scalable app to Azure Container Apps. Most of the concepts in this tutorial also apply when scaling Azure App Service instances.
 
-## 1) Create a containerized ASP.NET Core app
+## 1) Setup the sample project
 
-This tutorial uses a Razor Pages app to demonstrate the concepts ahead. However, the same steps and concepts also apply to MVC and Web API projects.
-
-1. On the main navigation menu in Visual Studio, select **File > New > Project...**.
-
-1. In the **Create a new project** dialog, search for and select the **ASP.NET Core Web App** template, and then choose **Next**.
-
-1. For the **Project name**, enter *ScalableRazor* and choose a location for the project. Leave the rest of the settings at their default and select **Next**.
-
-1. On the **Additional Information** dialog, make sure the following values are set:
-    * **Framework**: Select **.NET 6.0**.
-    * **Authentication type**: Select **None**.
-    * **Configure for HTTPS**: Make sure this checkbox is checked.
-    * **Enable Docker**: Make sure this checkbox is checked. This will generate a Dockerfile in the project that will be used to containerize the app.
-    * **Docker OS**: Choose **Linux**.
-    * **Do not use top-level statements**: Make sure this checkbox is unchecked.
-
-    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-project.png" alt-text="A screenshot showing new project settings.":::
-
-Select **Create** and Visual Studio will generate a new Razor Pages project for you.
-
-## 2) Setup the application code and dependencies
-
-To configure and connect to the required Azure services, you'll need to install the following NuGet packages in your project:
-
-* **Azure.Identity**: Provides classes to work with the Azure identity and access management services.
-* **Microsoft.AspNetCore.DataProtection**: Provides services to configure data protection.
-* **Microsoft.Extensions.Azure**: Provides helpful extension methods to perform core Azure configurations.
-
-## [Azure CLI](#tab/azure-cli)
-
-You can use the dotnet add package command to add the required packages to your project:
+You can use the GitHub Explorer application to follow along with this tutorial. Clone the application from GitHub using the following command:
 
 ```dotnetcli
-dotnet add package Azure.Extensions.AspNetCore.DataProtection.Blobs
-dotnet add package Azure.Extensions.AspNetCore.DataProtection.Keys
-dotnet add package Microsoft.Extensions.Azure
+git clone "https://github.com/MicrosoftDocs/mslearn-dotnet-debug-visual-studio-app-service.git"
 ```
 
-## [Visual Studio](#tab/visual-studio)
+The sample app uses a search form to browse GitHub repositories by name. The form relies on the built-in ASP.NET Core data protection services to handle anti-forgery concerns. By default, when the app scales horizontally on Container Apps, the data protection service will throw an exception. You'll explore and solve this issue in the steps ahead.
 
-// todo
+#### Test the app
 
----
+1. Open the project in Visual Studio by double clicking on the `GitHubBrowser.sln` solution file in the project folder.
+1. Launch the app by click the run button at the top of Visual Studio. The project includes a Docker file, which means you can click the arrow next to the run button to start the app using either a Docker Desktop setup or the standard ASP.NET Core local web server.
 
-Next, update the `Program.cs` code to match the following example:
+When the app launches in the browser, you can use the search form to browse for GitHub repositories by name.
 
-```csharp
-using Azure.Identity;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.Extensions.Azure;
+:::image type="content" source="media/scaling-aspnetcore-apps/scaling-app-screenshot.png" alt-text="A screenshot showing the GitHub Explorer app.":::
 
-var builder = WebApplication.CreateBuilder(args);
+## 2) Deploy the app to Azure Container Apps
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
+Next you'll use Visual Studio to deploy the app to Azure Container Apps. Container apps provide a managed service designed to simplify hosting containerized apps and microservices.
 
-builder.Services.AddAzureClientsCore();
+1. Inside the Visual Studio solution explorer, right click on the top level project node and select **Publish**.
+1. In the publishing dialog, select **Azure** as the deployment target, and then choose **Next**.
+1. For the specific target, select **Azure Container Apps (Linux)**, and then choose **Next**.
+1. You'll need to create a new container app to deploy to. Select the green **+** icon to open a new dialog and enter the following values:
+    * **Container app name**: Leave the default value or enter a name of your choosing.
+    * **Subscription name**: Select the subscription you'd like to deploy to.
+    * **Resource group**: Select **New** and create a new resource group called *msdocs-scalable-razor*.
+    * **Container apps environment**: Select **New** to open the container apps environment dialog and enter the following values:
+        * **Environment name**: Leave the default value or enter a name of your choosing.
+        * **Location**: Select a location near you.
+        * **Azure Log Analytics Workspace**: Select **New** to open the log analytics workspace dialog.
+            * **Name**: Leave the default value or enter a name of your choosing.
+            * **Location**: Select a location near you and then choose **Ok** to close the dialog.
+        * Select **Ok** to close the container apps environment dialog.
+    * Select **Create** to close the original container apps dialog. Visual Studio will take a moment to create the container app resource in Azure.
+1. Once the resource is created, make sure it is selected in the list of container apps, and then choose **Next**.
+1. You'll need to create an Azure Container Registry to store the published image artifact for your application. Select the green **+** icon on the container registry screen. Leave the default values, and then select **Create**.
+1. After the container registry is created, make sure it is selected, and then choose finish. Visual Studio will close the dialog workflow and display a summary of the publishing profile.
+1. Select **Publish** in the upper right of the publishing profile summary to deploy your app to Azure.
 
-// Todo: Update the placeholders with your service values
-builder.Services.AddDataProtection()
-                .PersistKeysToAzureBlobStorage(new Uri("https://<your-storage-account-name>.blob.core.windows.net/"), new DefaultAzureCredential())
-                .ProtectKeysWithAzureKeyVault(new Uri($"https://<key-vault-name>.vault.azure.net/keys/<key-name>/"), new DefaultAzureCredential());
+When the deployment finishes, Visual Studio will launch the browser to display your hosted application. Search for *Microsoft* in the form field, and you should see a list of repositories displayed. 
 
-var app = builder.Build();
+## 3) Scale and troubleshoot the app
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-}
+Your application is currently running without any issues, but you'd like to scale the app across more instances in anticipation of high traffic volumes.
 
-app.MapRazorPages();
-app.UseStaticFiles();
-app.UseRouting();
-app.Run();
-```
+1. In the Azure Portal, search for the GitHub Explorer container app in the top level search bar and select it from the results.
+1. On the overview page, select **Scale** from the left navigation, and then select **+ Edit and deploy**.
+1. On the revisions page, switch to the **Scale** tab.
+1. Set both the min and max instances to **4** and then select **Create**. This configuration change will guarantee your app is scaled horizontally across several instances.
 
-The preceding example features a standard Razor Pages `Program` class with a few additional configurations to handle data protection using Azure Blob Storage and Key Vault. These changes will allow the app to manage data protection using a centralized, scalable architecture.
+Navigate back to your application in the browser. When the page loads, at first it appears everything is working correctly. However, when you enter in a search term again and hit submit, an error will occur. If you do not see the error at first, submit the form several more times.
 
-## 3) Create the Azure Services
+#### Troubleshooting the error
 
-To host and scale a .NET app you'll need to create one or more services in Azure. These services will handle common concerns such as application hosting, storage, caching, secrets and more. For this tutorial you'll need to create the following services:
+It's not immediately apparent why the search requests are failing. If you check the browser tools, you'll see a 400 Bad Request response was sent back. We can use the various logging features of container apps to diagnose the error occurring in our environment.
 
-* **Azure Container App**: This service will host your containerized app and scale to multiple instances as needed.
+1. On the overview page of your container app, select **Logs** from the left navigation.
+1. On the **Logs** page, close the pop up that opens and navigate to the **Tables** tab.
+1. Expand the **Custom Logs** item to reveal the **ContainerAppConsoleLogs_CL** node. This table holds various logs for our container app that you can query to troubleshoot issues or questions.
+1. In the query editor, compose a basic query to search the **Custom Logs** table for recent exceptions, such as the following script:
+
+    ```sql
+    ContainerAppConsoleLogs_CL
+    | where Log_s contains "exception"
+    | sort by TimeGenerated desc
+    | limit 500
+    | project ContainerAppName_s, Log_s
+    ```
+
+    This query searches the **ContainerAppConsoleLogs_CL** table for any rows that contain the word exception. The results are ordered by the time generated, limited to 500 results, and only include the **ContainerAppName_s** and **Log_s** columns to make the results easier to read.
+
+1. You should see a list of results printed out. Read through the logs and note that most of them are related to antiforgery tokens and cryptography.
+
+    > [!IMPORTANT]
+    > The errors in the application are caused by the .NET data protection services. When multiple instances of the app are running, there is no guarantee that the HTTP POST request to submit the form will be routed to the same container that initially loaded the page from the HTTP GET request. If the requests are handled by different instances, the antiforgery tokens cannot be handled correctly and an exception occurs.
+
+    In the steps ahead you'll resolve this issue by centralizing the data protection keys in an Azure storage service and protecting them with key vault.
+
+## 4) Create the Azure Services
+
+To resolve the errors impacting the container app, you'll create the following services and connect them to your app:
+
 * **Azure Storage Account**: The storage service will handle storing data for the Data Protection Services of your app. This provides a centralized location to store key data as the app scales. Storage accounts can also be used to hold documents, queue data, file shares, and almost any type of blob data.
-* **Azure KeyVault**: This service will be used to store secrets for your application, and be used to help manage encryption concerns for the Data Protection Services.
-
-#### Create the Container App service
-
-1. In the Azure portal search bar, enter *Container Apps* and select the matching result.
-1. On the Container Apps listing page, select **+ Create**.
-1. On the **Basics** tab, enter the following values:
-    * **Subscription**: Select the subscription you'd like to use.
-    * **Resource Group**: Choose **Create New** and name the new resource group *msdocs-scalable-razor*.
-    * **Container app name**: Enter a value of *scalablerazor*.
-    * **Region**: Select a region close to your location.
-    * **Container Apps Environment**: Choose **Create new** and name the environment **scalablerazorenv**. Leave the rest of the settings at their default and select **Create**.
-
-    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-container-app-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-new-container-app.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
-
-1. Select **Review + create** and Azure will validate your settings. Select **Create** to complete the provisioning process.
-
-Azure will take a moment to provision the new services. When the task completes, click **Go to resource** to view the new container app.
+* **Azure Key Vault**: This service will be used to store secrets for your application and manage encryption concerns for the data protection  keys.
 
 #### Create the Storage Account service and container
 
@@ -187,35 +168,6 @@ Next you need to create a secret key to protect the data in the blob storage acc
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-key.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
 
-## 4) Configure and deploy the app to Azure Container Apps
-
-Now that the necessary Azure resources have been created, you'll need to configure your code to point to those services.
-
-1. Replace the storage account name placeholder in the URI of the `PersistKeystoAzureBlobStorage` method with the name of the `scalablerazorstorageXXXX` account you created.
-1. Replace the `<key-vault-name>` placeholder in the key vault URI `ProtectKeysWithAzureKeyVault`method with the name of the `scalablerazorvaultXXXX` key vault you created.
-1. Replace the `<key-name>` placeholder in the key vault URI with the `razorkey` name you created earlier.
-
-Next, you will build and deploy your app to the Azure Container app.
-
-1. Inside Visual Studio, right click on the project node and select **Publish**.
-1. In the publishing dialog, select Azure for the deployment target, and then choose **Next**.
-1. For the **Specific target**, select **Azure Container Apps (Linux)**, and then choose **Next** again.
-1. On the **Container App** screen, make sure to select the **Subscription** you created the container app in earlier. Select the **razorscaling** container app, and then choose **Next**.
-
-    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-publish-app.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
-
-1. You need to create an Azure Container Registry to store your app image. Select the green **+** icon on the right side of the dialog.
-    1. In the new dialog, for the **Resource group** make sure the **msdocs-razor-scaling** group you created earlier is selected, and then choose **Create**. Visual Studio will create the registry in Azure and return to the previous dialog.
-
-        :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-registry.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
-
-1. Make sure the newly created registry is selected, and then select **Finish**.
-1. Select the **Publish** button in the upper right corner of the publishing summary. Visual Studio will begin deploying the app, which may take a few moments to complete.
-
-When the deployment finishes, Visual Studio will launch the browser and open to your application.
-
-However, when you try to search for a repository, an error will occur. You can use the browser tools to confirm that an error related to data protection occurred. Although our app is running in Azure, the required services to fix this issue are not connected yet, so you'll do that next.
-
 ## 5) Connect the Azure Services
 
 The Container App requires a secure connect to the storage account and key vault services in order for the data protection services to work properly. These services are also necessary for the app to scale correctly. You can connect your services together using the following steps:
@@ -261,17 +213,61 @@ The Container App requires a secure connect to the storage account and key vault
 1. Leave the default networking options selected, and then choose **Review + Create**.
 1. After Azure validates your settings, select **Create**.
 
-## 6) Configure application scaling
+## 6) Configure and redeploy the app
 
-1. Navigate to the overview page of your Container App
-1. Select **Scale** from the left navigation panel, and then choose **Edit and deploy**.
-1. Switch to the **Scale tab**, and then set both the min and max replicas to *3*.
-1. Select **Create**, and Azure will redeploy and scale your app up to three instances.
+The necessary Azure resources have been created, so next you'll need to configure your application code to point to those services.
 
-    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-edit.png" alt-text="A screenshot showing how to create a container app in the Azure Portal.":::
+1. Install the following three NuGet packages that are necessary to solve the scaling challenges:
 
-1. On the overview page of the container app, click on the **Application URL** link to launch your site in the browser again.
-1. At this point your app should load and work correctly. You can further test this by entering data into the form and clicking submit. The form relies on data protection services, which means a successful submission validates your services are connected properly.
+    * **Azure.Identity**: Provides classes to work with the Azure identity and access management services.
+    * **Microsoft.AspNetCore.DataProtection**: Provides services to configure data protection.
+    * **Microsoft.Extensions.Azure**: Provides helpful extension methods to perform core Azure configurations.
+
+    [.NET CLI](#tab/cli)
+
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    dotnet add package Azure.Extensions.AspNetCore.DataProtection.Blobs
+    dotnet add package Azure.Extensions.AspNetCore.DataProtection.Keys
+    ```
+
+    [Visual Studio](#tab/visual-studio)
+
+    Todo
+
+    ---
+
+1. Update the `Program.cs` file to include the following `using` statements and code:
+
+```csharp
+using Azure.Identity;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.Extensions.Azure;
+
+builder.Services.AddAzureClientsCore();
+
+// Todo: Update the placeholders with your service values
+builder.Services.AddDataProtection()
+                .PersistKeysToAzureBlobStorage(new Uri("<your-storage-account-uri>"), new DefaultAzureCredential())
+                .ProtectKeysWithAzureKeyVault(new Uri($"https://<key-vault-name>.vault.azure.net/keys/<key-name>/"), new DefaultAzureCredential());
+```
+
+These changes will allow the app to manage data protection using a centralized, scalable architecture. `DefaultAzureCredential` will pick up the managed identity configurations you enabled earlier when the app is redeployed to Azure. You'll also need to update the placeholders in the new code to include the following:
+
+1. Replace the storage account name placeholder in the URI of the `PersistKeystoAzureBlobStorage` method with the name of the `scalablerazorstorageXXXX` account you created.
+1. Replace the `<key-vault-name>` placeholder in the key vault URI `ProtectKeysWithAzureKeyVault`method with the name of the `scalablerazorvaultXXXX` key vault you created.
+1. Replace the `<key-name>` placeholder in the key vault URI with the `razorkey` name you created earlier.
+
+#### Redeploy the application
+
+Your application is now configured correctly to use the Azure services you created perviously. Next you need to redeploy the app for your code changes to be applied.
+
+1. Right click on the project node in the solution explorer and select **Publish**.
+1. On the publishing profile summary view, click the **Publish** button in the upper right corner.
+
+Visual Studio will redeploy the application to the container apps environment you created earlier. When the processes finished, the browser will launch to the application home page.
+
+Test the application again by searching for *Microsoft* in the search field. The page should now reload with the correct results every time you submit!
 
 ## 7) Configure roles for local development
 

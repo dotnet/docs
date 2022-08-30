@@ -1,4 +1,9 @@
-﻿class TheClass
+﻿using System;
+
+namespace keywords;
+
+// <PassByValueOrReference>
+class TheClass
 {
     public string? willIChange;
 }
@@ -20,7 +25,7 @@ class TestClassAndStruct
         s.willIChange = "Changed";
     }
 
-    static void Main()
+    public static void Main()
     {
         TheClass testClass = new TheClass();
         TheStruct testStruct = new TheStruct();
@@ -43,3 +48,4 @@ class TestClassAndStruct
     Class field = Changed
     Struct field = Not Changed
 */
+// </PassByValueOrReference>

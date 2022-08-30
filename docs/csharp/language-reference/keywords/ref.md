@@ -69,7 +69,7 @@ The previous examples pass value types by reference. You can also use the `ref` 
   
 [!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#3)]
 
-For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](../../programming-guide/classes-and-structs/passing-reference-type-parameters.md).
+For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](method-parameters.md#passing-reference-type-parameters).
   
 ## Reference return values
 
@@ -149,7 +149,6 @@ When the caller stores the value returned by the `GetBookByTitle` method as a re
 - [Write safe efficient code](../../write-safe-efficient-code.md)
 - [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
-- [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)
 - [Method Parameters](method-parameters.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)

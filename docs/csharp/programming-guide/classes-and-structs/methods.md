@@ -41,7 +41,7 @@ The method definition specifies the names and types of any parameters that are r
 
 ## Passing by reference vs. passing by value
 
-By default, when an instance of a [value type](../../language-reference/builtin-types/value-types.md) is passed to a method, its copy is passed instead of the instance itself. Therefore, changes to the argument have no effect on the original instance in the calling method. To pass a value-type instance by reference, use the `ref` keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md).
+By default, when an instance of a [value type](../../language-reference/builtin-types/value-types.md) is passed to a method, its copy is passed instead of the instance itself. Therefore, changes to the argument have no effect on the original instance in the calling method. To pass a value-type instance by reference, use the `ref` keyword. For more information, see [Passing Value-Type Parameters](../../language-reference/keywords/method-parameters.md#passing-value-type-parameters).
 
 When an object of a reference type is passed to a method, a reference to the object is passed. That is, the method receives not the object itself but an argument that indicates the location of the object. If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.
 
@@ -55,7 +55,7 @@ Now, if you pass an object that is based on this type to a method, a reference t
 
 The example does essentially the same thing as the previous example in that it passes an argument by value to a method. But, because a reference type is used, the result is different. The modification that is made in `ModifyObject` to the `value` field of the parameter, `obj`, also changes the `value` field of the argument, `rt`, in the `TestRefType` method. The `TestRefType` method displays 33 as the output.
 
-For more information about how to pass reference types by reference and by value, see [Passing Reference-Type Parameters](./passing-reference-type-parameters.md) and [Reference Types](../../language-reference/keywords/reference-types.md).
+For more information about how to pass reference types by reference and by value, see [Passing Reference-Type Parameters](../../language-reference/keywords/method-parameters.md#passing-reference-type-parameters) and [Reference Types](../../language-reference/keywords/reference-types.md).
 
 ## Return values
 
@@ -171,4 +171,4 @@ For more information, see [Iterators](../concepts/iterators.md).
 - [params](../../language-reference/keywords/params.md)
 - [out](../../language-reference/keywords/out.md)
 - [ref](../../language-reference/keywords/ref.md)
-- [Passing Parameters](passing-parameters.md)
+- [Method Parameters](../../language-reference/keywords/method-parameters.md)

@@ -159,6 +159,17 @@
                       }
                     }
                   ]
+                },
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "isActivitySender",
+                      "parameters": {
+                        "user": "dependabot"
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -200,6 +211,93 @@
         ]
       },
       "disabled": true
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "hasLabel",
+              "parameters": {
+                "label": "dependencies"
+              }
+            },
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": "dependabot"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "pull_request",
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Reply to dependabot PRs with automation command to squash and merge",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "@dependabot squash and merge"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": "azure-sdk"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "pull_request",
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Label PRs from the Azure SDK bot",
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "azure-sdk-shipit"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "AutoMerge",
+      "subCapability": "AutoMerge",
+      "version": "1.0",
+      "config": {
+        "taskName": "Auto-merge Azure SDK PRs with green builds",
+        "label": "azure-sdk-shipit",
+        "allowAutoMergeInstructionsWithoutLabel": true,
+        "mergeType": "squash",
+        "requireAllStatuses": true
+      }
     }
   ],
   "userGroups": []

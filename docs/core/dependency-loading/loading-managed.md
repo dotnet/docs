@@ -6,15 +6,15 @@ author: sdmaclea
 ---
 # Managed assembly loading algorithm
 
-Managed assemblies are located and loaded with an algorithm involving various stages.
+Managed assemblies are located and loaded with an algorithm that has various stages.
 
 All managed assemblies except satellite assemblies and `WinRT` assemblies use the same algorithm.
 
 ## When are managed assemblies loaded?
 
-The most common mechanism to trigger a managed assembly load is a static assembly reference. These references are inserted by the compiler whenever code uses a type defined in another assembly. These assemblies are loaded (`load-by-name`) as needed by the runtime. The exact timing of when the static assembly references are loaded is unspecified. It can vary between runtime versions and it is influenced by optimizations like inlining.
+The most common mechanism to trigger a managed assembly load is a static assembly reference. These references are inserted by the compiler whenever code uses a type defined in another assembly. These assemblies are loaded (`load-by-name`) as needed by the runtime. The exact timing of when the static assembly references are loaded is unspecified. It can vary between runtime versions and is influenced by optimizations like inlining.
 
-The direct use of specific APIs will also trigger loads:
+The direct use of the following APIs will also trigger loads:
 
 |API  |Description  |`Active` <xref:System.Runtime.Loader.AssemblyLoadContext> |
 |---------|---------|---------|
@@ -38,27 +38,19 @@ The following algorithm describes how the runtime loads a managed assembly.
     - For a static assembly reference, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> is the instance that loaded the referring assembly.
     - Preferred APIs make the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> explicit.
     - Other APIs infer the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For these APIs, the <xref:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext?displayProperty=nameWithType> property is used. If its value is `null`, then the inferred <xref:System.Runtime.Loader.AssemblyLoadContext> instance is used.
-    - See table above.
+    - See the table in the [When are managed assemblies loaded?](#when-are-managed-assemblies-loaded) section.
 
-2. For the `Load-by-name` methods, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly. In priority order by:
-    - Checking its `cache-by-name`.
+2. For the `Load-by-name` methods, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly in the following priority order:
 
-    - Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
+    - Check its `cache-by-name`.
+    - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
+    - Check the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's cache and run [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic. If an assembly is newly loaded, a reference is added to the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's `cache-by-name`.
+    - Raise the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext.
+    - Raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
 
-    - Checking the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's cache and running [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic.
+3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly in the following priority order:
 
-      - If an assembly is newly loaded, a reference is added to the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's `cache-by-name`.
+    - Check its `cache-by-name`.
+    - Load from the specified path or raw assembly object. If an assembly is newly loaded, a reference is added to the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.
 
-    - Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext.
-
-    - Raising the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
-
-3. For the other types of loads, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly. In priority order by:
-    - Checking its `cache-by-name`.
-
-    - Loading from the specified path or raw assembly object.
-
-      - If an assembly is newly loaded, a reference is added to `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.
-
-4. In either case, if an assembly is newly loaded, then:
-   - The <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.
+4. In either case, if an assembly is newly loaded, then the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.

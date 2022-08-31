@@ -24,20 +24,18 @@ public static class NameOfOperator
 
     // <SnippetNameOfParameter>
     [ParameterString(nameof(msg))]
-    public static void Method( string msg)
+    public static void Method(string msg)
     {
-        [ParameterString(nameof(param))]
-        void LocalFunction(string param) { }
+        [ParameterString(nameof(T))]
+        void LocalFunction<T>(T param) { }
 
-        var lambdaExpression = [ParameterString(nameof(aNumber))] (int aNumber) => aNumber.ToString();
-
+        var lambdaExpression = ([ParameterString(nameof(aNumber))] int aNumber) => aNumber.ToString();
     }
     // </SnippetNameOfParameter>
 
     public class ParameterStringAttribute : Attribute
     {
         public ParameterStringAttribute(string parameterName) { }
-
     }
 
     private class Person

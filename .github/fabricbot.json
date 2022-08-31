@@ -222,12 +222,6 @@
           "operator": "and",
           "operands": [
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "dependencies"
-              }
-            },
-            {
               "name": "isActivitySender",
               "parameters": {
                 "user": "dependabot"
@@ -244,9 +238,9 @@
         "taskName": "Reply to dependabot PRs with automation command to squash and merge",
         "actions": [
           {
-            "name": "addReply",
+            "name": "approvePullRequest",
             "parameters": {
-              "comment": "@dependabot squash and merge"
+              "comment": "Approved, we'll :shipit: when all status checks pass. @dependabot squash and merge"
             }
           }
         ]
@@ -277,6 +271,12 @@
         ],
         "taskName": "Label PRs from the Azure SDK bot",
         "actions": [
+          {
+            "name": "approvePullRequest",
+            "parameters": {
+              "comment": "Approved, we'll :shipit: when all status checks pass."
+            }
+          },
           {
             "name": "addLabel",
             "parameters": {

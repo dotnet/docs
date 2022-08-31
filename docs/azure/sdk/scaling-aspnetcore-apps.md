@@ -100,7 +100,10 @@ It's not immediately apparent why the search requests are failing. If you check 
 1. On the overview page of your container app, select **Logs** from the left navigation.
 1. On the **Logs** page, close the pop up that opens and navigate to the **Tables** tab.
 1. Expand the **Custom Logs** item to reveal the **ContainerAppConsoleLogs_CL** node. This table holds various logs for our container app that you can query to troubleshoot issues or questions.
-1. In the query editor, compose a basic query to search the **Custom Logs** table for recent exceptions, such as the following script:
+
+    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-logs-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-logs.png" alt-text="A screenshot showing the GitHub Explorer app.":::
+
+1. In the query editor, compose a basic query to search the **ContainerAppConsoleLogs_CL Logs** table for recent exceptions, such as the following script:
 
     ```sql
     ContainerAppConsoleLogs_CL
@@ -114,12 +117,12 @@ It's not immediately apparent why the search requests are failing. If you check 
 
 1. Select **Run**, and you should see a list of results printed out. Read through the logs and note that most of them are related to antiforgery tokens and cryptography.
 
+    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-troubleshoot-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-troubleshoot.png" alt-text="A screenshot showing the GitHub Explorer app.":::
+
     > [!IMPORTANT]
     > The errors in the application are caused by the .NET data protection services. When multiple instances of the app are running, there is no guarantee that the HTTP POST request to submit the form will be routed to the same container that initially loaded the page from the HTTP GET request. If the requests are handled by different instances, the antiforgery tokens cannot be handled correctly and an exception occurs.
 
     In the steps ahead you'll resolve this issue by centralizing the data protection keys in an Azure storage service and protecting them with key vault.
-
-    :::image type="content" source="media/scaling-aspnetcore-apps/scaling-troubleshoot-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-troubleshoot.png" alt-text="A screenshot showing the GitHub Explorer app.":::
 
 ## 4) Create the Azure Services
 
@@ -128,7 +131,7 @@ To resolve the errors impacting the container app, you'll create the following s
 * **Azure Storage Account**: The storage service will handle storing data for the Data Protection Services of your app. This provides a centralized location to store key data as the app scales. Storage accounts can also be used to hold documents, queue data, file shares, and almost any type of blob data.
 * **Azure Key Vault**: This service will be used to store secrets for your application and manage encryption concerns for the data protection  keys.
 
-#### Create the Storage Account service and container
+#### Create the storage account service
 
 1. In the Azure Portal search bar, enter *Storage accounts* and select the matching result.
 1. On the storage accounts listing page, select **+ Create**.
@@ -144,6 +147,8 @@ To resolve the errors impacting the container app, you'll create the following s
 
 Azure will take a moment to provision the new storage account. When the task completes, click **Go to resource** to view the new service.
 
+#### Create the storage container
+
 Next you'll need to create the Container that will be used to store your app's data protection keys.
 
 1. On the storage account overview page, select *Storage browser** on the left navigation.
@@ -153,7 +158,7 @@ Next you'll need to create the Container that will be used to store your app's d
 
 You should see the new container appear on the page list.
 
-#### Create the Key Vault service and secret
+#### Create the key vault service
 
 Next you'll need to create the key vault service.
 
@@ -171,6 +176,8 @@ Next you'll need to create the key vault service.
 
 Azure will take a moment to provision the new key vault. When the ask completes, click **Go to resource** to view the new service.
 
+#### Create the key vault key
+
 Next you need to create a secret key to protect the data in the blob storage account.
 
 1. On the main key vault overview page, select **Keys** from the left navigation.
@@ -181,7 +188,7 @@ Next you need to create a secret key to protect the data in the blob storage acc
 
 ## 5) Connect the Azure Services
 
-The Container App requires a secure connect to the storage account and key vault services in order for the data protection services to work properly. These services are also necessary for the app to scale correctly. You can connect your services together using the following steps:
+The Container App requires a secure connection to the storage account and key vault services in order to resolve the data protection errors and scale correctly. You can connect your services together using the following steps:
 
 > [!IMPORTANT]
 > Security role assignments through Service Connector and other tools generally take a minute or two to propagate, and in some rare cases can take up to eight minutes.
@@ -205,11 +212,13 @@ The Container App requires a secure connect to the storage account and key vault
 1. Leave the default networking options selected, and then choose **Review + Create**.
 1. After Azure validates your settings, select **Create**.
 
+The service connector will enable a system-assigned managed identity on the container app. It will also assign a role of **Storage Blob Data Contributor** to the identity so it can perform data operations on the storage containers.
+
 #### Connect the key vault
 
 1. In the Azure portal, navigate to your Container App overview page.
 1. On the left navigation, select **Service connector**
-1. On the Service Connector page, choose **+ Create** to open the **Creation Connection* flyout panel and enter the following values:
+1. On the Service Connector page, choose **+ Create** to open the **Creation Connection** flyout panel and enter the following values:
     * **Container**: Select the Container App you created previously.
     * **Service type**: Choose **Key Vault**.
     * **Subscription**: Select the subscription you used previously.
@@ -223,6 +232,8 @@ The Container App requires a secure connect to the storage account and key vault
 1. Select **System assigned managed identity** and choose **Next: Networking**.
 1. Leave the default networking options selected, and then choose **Review + Create**.
 1. After Azure validates your settings, select **Create**.
+
+The service connector will assign a role to the identity so it can perform data operations on the key vault keys.
 
 ## 6) Configure and redeploy the app
 

@@ -37,26 +37,6 @@ landingContent:
             url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
 
   # Card
-  - title: Understand DevOps for .NET
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            url: containerized-lifecycle/index.md
-          - text: DevOps for ASP.NET Core Developers
-            url: devops-for-aspnet-developers/index.md
-
-  # Card
-  - title: Mobile and desktop apps
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Modernizing desktop apps on Windows with .NET 6
-            url: modernize-desktop/index.md
-          - text: Enterprise Application Patterns Using .NET MAUI
-            url: maui/index.md
-
-  # Card
   - title: Develop cloud-native .NET apps for Azure
     linkLists:
       - linkListType: concept
@@ -79,3 +59,23 @@ landingContent:
             url: /learn/modules/microservices-devops-aspnet-core
           - text: Implement resiliency in a cloud-native ASP.NET Core microservice
             url: /learn/modules/microservices-resiliency-aspnet-core
+
+  # Card
+  - title: Understand DevOps for .NET
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Containerized Docker application lifecycle with Microsoft platform and tools
+            url: containerized-lifecycle/index.md
+          - text: DevOps for ASP.NET Core Developers
+            url: devops-for-aspnet-developers/index.md
+
+  # Card
+  - title: Mobile and desktop apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Modernizing desktop apps on Windows with .NET 6
+            url: modernize-desktop/index.md
+          - text: Enterprise Application Patterns Using .NET MAUI
+            url: maui/index.md

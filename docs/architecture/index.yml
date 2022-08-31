@@ -13,30 +13,6 @@ metadata:
 
 landingContent:
   # Card
-  - title: Develop cloud-native .NET apps for Azure
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Architecting cloud-native .NET apps for Azure
-            url: cloud-native/index.md
-          - text: "Serverless apps: Architecture, patterns, and Azure implementation"
-            url: serverless/index.md
-          - text: ".NET Microservices: Architecture for containerized .NET applications"
-            url: microservices/index.md
-          - text: Dapr for .NET Developers
-            url: dapr-for-net-developers/index.md
-      - linkListType: learn
-        links:
-          - text: Hello World Microservice tutorial
-            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
-          - text: Create and deploy a cloud-native ASP.NET Core microservice
-            url: /learn/modules/microservices-aspnet-core
-          - text: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
-            url: /learn/modules/microservices-devops-aspnet-core
-          - text: Implement resiliency in a cloud-native ASP.NET Core microservice
-            url: /learn/modules/microservices-resiliency-aspnet-core
-
-  # Card
   - title: Develop ASP.NET Core apps
     linkLists:
       - linkListType: concept
@@ -79,3 +55,27 @@ landingContent:
             url: modernize-desktop/index.md
           - text: Enterprise Application Patterns Using .NET MAUI
             url: maui/index.md
+
+  # Card
+  - title: Develop cloud-native .NET apps for Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Architecting cloud-native .NET apps for Azure
+            url: cloud-native/index.md
+          - text: "Serverless apps: Architecture, patterns, and Azure implementation"
+            url: serverless/index.md
+          - text: ".NET Microservices: Architecture for containerized .NET applications"
+            url: microservices/index.md
+          - text: Dapr for .NET Developers
+            url: dapr-for-net-developers/index.md
+      - linkListType: learn
+        links:
+          - text: Hello World Microservice tutorial
+            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
+          - text: Create and deploy a cloud-native ASP.NET Core microservice
+            url: /learn/modules/microservices-aspnet-core
+          - text: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
+            url: /learn/modules/microservices-devops-aspnet-core
+          - text: Implement resiliency in a cloud-native ASP.NET Core microservice
+            url: /learn/modules/microservices-resiliency-aspnet-core

@@ -76,8 +76,6 @@ This book is an introduction to Blazor, not a comprehensive migration guide. Whi
 
 You can find the official Blazor home page and documentation at <https://blazor.net>.
 
-## Send your feedback
-
 [!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]

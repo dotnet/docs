@@ -13,20 +13,6 @@ metadata:
 
 landingContent:
   # Card
-  - title: Develop ASP.NET Core apps
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Architect modern web apps with ASP.NET Core and Azure
-            url: modern-web-apps-azure/index.md
-          - text: Blazor for ASP.NET Web Forms developers
-            url: blazor-for-web-forms-developers/index.md
-          - text: ASP.NET Core gRPC for WCF developers
-            url: grpc-for-wcf-developers/index.md
-          - text: Porting existing ASP.NET apps to .NET 6
-            url: porting-existing-aspnet-apps/index.md
-
-  # Card
   - title: Develop cloud-native .NET apps for Azure
     linkLists:
       - linkListType: concept
@@ -51,6 +37,20 @@ landingContent:
             url: /learn/modules/microservices-resiliency-aspnet-core
 
   # Card
+  - title: Develop ASP.NET Core apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Architect modern web apps with ASP.NET Core and Azure
+            url: modern-web-apps-azure/index.md
+          - text: Blazor for ASP.NET Web Forms developers
+            url: blazor-for-web-forms-developers/index.md
+          - text: ASP.NET Core gRPC for WCF developers
+            url: grpc-for-wcf-developers/index.md
+          - text: Porting existing ASP.NET apps to .NET 6
+            url: porting-existing-aspnet-apps/index.md
+
+  # Card
   - title: Migrate .NET apps to Azure
     linkLists:
       - linkListType: concept
@@ -66,9 +66,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            url:  containerized-lifecycle/index.md
+            url: containerized-lifecycle/index.md
           - text: DevOps for ASP.NET Core Developers
-            url:  devops-for-aspnet-developers/index.md
+            url: devops-for-aspnet-developers/index.md
 
   # Card
   - title: Mobile and desktop apps

@@ -41,7 +41,7 @@ The sample app uses a search form to browse GitHub repositories by name. The for
 #### Test the app
 
 1. Open the project in Visual Studio by double clicking on the `GitHubBrowser.sln` solution file in the project folder.
-1. Launch the app by click the run button at the top of Visual Studio. The project includes a Docker file, which means you can click the arrow next to the run button to start the app using either a Docker Desktop setup or the standard ASP.NET Core local web server.
+1. Launch the app by clicking the run button at the top of Visual Studio. The project includes a Docker file, which means you can click the arrow next to the run button to start the app using either a Docker Desktop setup or the standard ASP.NET Core local web server.
 
 When the app launches in the browser, you can use the search form to browse for GitHub repositories by name.
 
@@ -95,11 +95,11 @@ Navigate back to your application in the browser. When the page loads, at first 
 
 #### Troubleshooting the error
 
-It's not immediately apparent why the search requests are failing. If you check the browser tools, you'll see a 400 Bad Request response was sent back. We can use the various logging features of container apps to diagnose the error occurring in our environment.
+It's not immediately apparent why the search requests are failing. If you check the browser tools, you'll see a 400 Bad Request response was sent back. You can use the various logging features of container apps to diagnose the error occurring in your environment.
 
 1. On the overview page of your container app, select **Logs** from the left navigation.
 1. On the **Logs** page, close the pop up that opens and navigate to the **Tables** tab.
-1. Expand the **Custom Logs** item to reveal the **ContainerAppConsoleLogs_CL** node. This table holds various logs for our container app that you can query to troubleshoot issues or questions.
+1. Expand the **Custom Logs** item to reveal the **ContainerAppConsoleLogs_CL** node. This table holds various logs for the container app that you can query to troubleshoot issues or questions.
 
     :::image type="content" source="media/scaling-aspnetcore-apps/scaling-logs-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-logs.png" alt-text="A screenshot showing the GitHub Explorer app.":::
 
@@ -138,20 +138,20 @@ To resolve the errors impacting the container app, you'll create the following s
 1. On the **Basics** tab, enter the following values:
     * **Subscription**: Select the same subscription that chose for you Container App.
     * **Resource Group**: Select the *msdocs-scalable-razor* resource group you created previously.
-    * **Storage account name**: Name the account scalablerazorstorageXXXX where the X's are random numbers of your choosing. This name must be unique across all of Azure.
+    * **Storage account name**: Name the account *scalablerazorstorageXXXX* where the X's are random numbers of your choosing. This name must be unique across all of Azure.
     * **Region**: Select a region that is close to you.
 
         :::image type="content" source="media/scaling-aspnetcore-apps/scaling-new-storage-small.png" lightbox="media/scaling-aspnetcore-apps/scaling-new-storage.png" alt-text="A screenshot showing how to create the storage account.":::
 
 1. Leave the rest of the values at their default and select **Review**. After Azure validates your inputs, select **Create**.
 
-Azure will take a moment to provision the new storage account. When the task completes, click **Go to resource** to view the new service.
+Azure will take a moment to provision the new storage account. When the task completes, choose **Go to resource** to view the new service.
 
 #### Create the storage container
 
 Next you'll need to create the Container that will be used to store your app's data protection keys.
 
-1. On the storage account overview page, select *Storage browser** on the left navigation.
+1. On the storage account overview page, select **Storage browser** on the left navigation.
 1. Select **Blob containers**.
 1. Select **+ Add container** to open the **New container** flyout menu.
 1. Enter a name of *scalablerazorkeys*, leave the rest of the settings at their defaults, and then choose **Create**.
@@ -197,7 +197,7 @@ The Container App requires a secure connection to the storage account and key va
 
 1. In the Azure portal, navigate to your Container App overview page.
 1. On the left navigation, select **Service connector**
-1. On the Service Connector page, choose **+ Create** to open the **Creation Connection* flyout panel and enter the following values:
+1. On the Service Connector page, choose **+ Create** to open the **Creation Connection** flyout panel and enter the following values:
     * **Container**: Select the Container App you created previously.
     * **Service type**: Choose **Storage - blob**.
     * **Subscription**: Select the subscription you used previously.
@@ -274,7 +274,7 @@ The necessary Azure resources have been created, so next you'll need to configur
                     .ProtectKeysWithAzureKeyVault(new Uri($"https://<key-vault-name>.vault.azure.net/keys/<key-name>/"), new DefaultAzureCredential());
     ```
 
-These changes will allow the app to manage data protection using a centralized, scalable architecture. `DefaultAzureCredential` will pick up the managed identity configurations you enabled earlier when the app is redeployed to Azure.
+These changes will allow the app to manage data protection using a centralized, scalable architecture. `DefaultAzureCredential` will discover the managed identity configurations you enabled earlier when the app is redeployed to Azure.
 
 You'll also need to update the placeholders in the new code to include the following:
 

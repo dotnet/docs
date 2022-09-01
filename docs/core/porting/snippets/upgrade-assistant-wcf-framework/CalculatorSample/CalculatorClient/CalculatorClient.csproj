@@ -82,11 +82,5 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\service\service.csproj">
-      <Project>{66c5f965-7c66-479a-9960-a3ca6080a71b}</Project>
-      <Name>service</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
 </Project>

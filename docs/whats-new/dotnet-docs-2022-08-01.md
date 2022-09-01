@@ -28,7 +28,7 @@ Welcome to what's new in the .NET docs for August 2022. This article lists some 
 ### New articles
 
 - [Source generation for custom marshalling](../standard/native-interop/custom-marshalling-source-generation.md)
-- [Title not found in: #30543](../fundamentals/networking/httpclient.md)
+- [Make HTTP requests with the HttpClient](../fundamentals/networking/http/httpclient.md)
 - [BinaryFormatter serialization APIs produce compiler errors](../core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md)
 - [System.Threading.Channels library](../core/extensions/channels.md)
 - [All assemblies trimmed by default](../core/compatibility/deployment/7.0/trim-all-assemblies.md)

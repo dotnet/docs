@@ -35,7 +35,7 @@ You also use the `operator` keyword to define a custom type conversion. For more
 |[`x == y`](equality-operators.md#equality-operator-) [`x != y`](equality-operators.md#inequality-operator-) [`x < y`](comparison-operators.md#less-than-operator-) [`x > y`](comparison-operators.md#greater-than-operator-) [`x <= y`](comparison-operators.md#less-than-or-equal-operator-) [`x >= y`](comparison-operators.md#greater-than-or-equal-operator-)|Must be overloaded in pairs:  <code>[==](equality-operators.md#equality-operator-) and [!=](equality-operators.md#inequality-operator-)</code> <code>[<](comparison-operators.md#less-than-operator-) and [>](comparison-operators.md#greater-than-operator-)</code> <code>[<=](comparison-operators.md#less-than-or-equal-operator-) and [>=](comparison-operators.md#greater-than-or-equal-operator-)</code>.
 
 ## Non Overloadable Operators
-    
+
 | Operators | Alternatives |
 | :---------: | --------------- |
 |[`x && y`](boolean-logical-operators.md#conditional-logical-and-operator-) [<code>x &#124;&#124; y</code>](boolean-logical-operators.md#conditional-logical-or-operator-)| Overload both the [`true`](true-false-operators.md) and [`false`](true-false-operators.md) operators and the [`&`](boolean-logical-operators.md#logical-and-operator-) or [<code>&#124;</code>](boolean-logical-operators.md#logical-or-operator-) operators. For more information, see [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#11133-user-defined-conditional-logical-operators).|

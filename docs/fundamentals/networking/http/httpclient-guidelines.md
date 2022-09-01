@@ -3,7 +3,7 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 08/24/2022
+ms.date: 08/31/2022
 ---
 
 # Guidelines for using HttpClient
@@ -14,7 +14,17 @@ If you're using .NET 5+ (including .NET Core), there are some considerations to 
 
 ## DNS behavior
 
-<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some container scenarios, the client won't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is required when the connection is replaced.
+<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some container scenarios, the client won't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is required when the connection is replaced. Consider the following example:
+
+```csharp
+var handler = new SocketsHttpHandler
+{
+    PooledConnectionLifetime = TimeSpan.FromMinutes(15) // Recreate every 15 minutes
+};
+var client = new HttpClient(handler);
+```
+
+The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime>, the connection is closed and a new one is created.
 
 ## Pooled connections
 
@@ -32,6 +42,7 @@ In .NET Framework, disposing <xref:System.Net.Http.HttpClient> objects does not 
 
 ## See also
 
+- [HTTP support in .NET](http-overview.md)
 - [Create HttpClient instances using IHttpClientFactory](../../../core/extensions/httpclient-factory.md)
 - [Make HTTP requests with the HttpClient](httpclient.md)
 - [Use IHttpClientFactory to implement resilient HTTP requests](../../../architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)

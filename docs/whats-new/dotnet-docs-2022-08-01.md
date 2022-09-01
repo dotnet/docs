@@ -44,7 +44,7 @@ Welcome to what's new in the .NET docs for August 2022. This article lists some 
 
 ### New articles
 
-- [Enterprise Application Patterns Using .NET MAUI](../architecture/maui): new Architecture eBook
+- [Enterprise Application Patterns Using .NET MAUI](../architecture/maui/index.md): new Architecture eBook
 
 ## Azure SDK for .NET
 

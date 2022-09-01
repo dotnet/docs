@@ -3,7 +3,7 @@ title: Install .NET on macOS
 description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/16/2022
+ms.date: 08/07/2022
 ---
 
 # Install .NET on macOS
@@ -28,11 +28,11 @@ The following table is a list of currently supported .NET releases and the versi
 - A ✔️ indicates that the version of .NET is still supported.
 - A ❌ indicates that the version of .NET isn't supported.
 
-| Operating System          | .NET Core 3.1 | .NET 5         | .NET 6         |
-|---------------------------|---------------|----------------|----------------|
-| macOS 12.0 "Monterey"     | ✔️ 3.1        | ❌ 5.0         | ✔️ 6.0         |
-| macOS 11.0 "Big Sur"      | ✔️ 3.1        | ❌ 5.0         | ✔️ 6.0         |
-| macOS 10.15 "Catalina"    | ✔️ 3.1        | ❌ 5.0         | ✔️ 6.0         |
+| Operating System          | .NET Core 3.1 | .NET 6         |
+|---------------------------|---------------|----------------|
+| macOS 12.0 "Monterey"     | ✔️ 3.1        | ✔️ 6.0         |
+| macOS 11.0 "Big Sur"      | ✔️ 3.1        | ✔️ 6.0         |
+| macOS 10.15 "Catalina"    | ✔️ 3.1        | ✔️ 6.0         |
 
 For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -140,8 +140,6 @@ The following table describes which versions of .NET are supported on an Arm-bas
 |--------------|--------------|-----|---------|----------------------------------|
 | 6.0          | Arm64        | Yes | Yes     | No                               |
 | 6.0          | x64          | Yes | Yes     | No                               |
-| 5.0          | Arm64        | No  | No      | N/A                              |
-| 5.0          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
 | 3.1          | Arm64        | No  | No      | N/A                              |
 | 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
 
@@ -210,11 +208,3 @@ For more information about using .NET in a Docker container, see [Introduction t
 - [Tutorial: Get started on macOS](../tutorials/with-visual-studio-mac.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET app](../docker/build-container.md).
-
-[release-notes-60]: https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0-supported-os.md
-[release-notes-50]: https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md
-[release-notes-31]: https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md
-[release-notes-30]: https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md
-[release-notes-21]: https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md
-[release-notes-22]: https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md
-[release-notes-20]: https://github.com/dotnet/core/blob/main/release-notes/2.0/2.0-supported-os.md

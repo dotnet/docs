@@ -31,8 +31,15 @@ Previously, an application that called the API compiled and ran, but as soon as 
 
 Strong-name signing is not supported in .NET/.NET Core, and there is no workaround.
 
+> [!NOTE]
+> .NET Core/5+ never checks signatures in its runtime. However, if you're targeting cross-platform libraries (for example, a basic auth package that targets .NET Standard 2.0, so it runs on .NET Framework too), then strong-naming is a good idea for cross-runtime compatibility. .NET Framework continues to enforce strong naming if the calling app is strong-named. You can strong-name assemblies in all versions of .NET using the [Sn.exe](../../../../framework/tools/sn-exe-strong-name-tool.md) tool. For more information, see [Strong name signing](https://github.com/dotnet/runtime/blob/main/docs/project/strong-name-signing.md).
+
 ## Affected APIs
 
 - <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.IO.FileStream)>
 - <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.Byte[])>
 - <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=fullName>
+
+## See also
+
+- [How to: Sign an assembly with a strong name](../../../../standard/assembly/sign-strong-name.md)

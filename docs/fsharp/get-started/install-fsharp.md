@@ -21,7 +21,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio Code
 
-1. Ensure you have [git](https://git-scm.com/download) installed and available on your PATH. You can verify that it's installed correctly by entering `git --version` at a command prompt and pressing **Enter**.
+1. Ensure you have [git](https://git-scm.com/download) installed and available on your PATH. You can verify that it's installed correctly by entering `git --version` at a command prompt and pressing <kbd>Enter</kbd>.
 
 2. Install the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com).
 

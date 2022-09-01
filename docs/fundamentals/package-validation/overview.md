@@ -33,11 +33,11 @@ You enable package validation in your .NET project by setting the [`EnablePackag
 </Project>
 ```
 
-`EnablePackageValidation` runs a series of checks after the `pack` task. There are some additional checks that can be run by setting other MSBuild properties.
+`EnablePackageValidation` runs a series of checks after the `Pack` task. There are some additional checks that can be run by setting other MSBuild properties.
 
 ## Validator types
 
-There are three different validators that verify your package as part of the `pack` task:
+There are three different validators that verify your package as part of the `Pack` task:
 
 - The [Baseline version validator](baseline-version-validator.md) validates your library project against a previously released, stable version of your package.
 - The [Compatible runtime validator](compatible-framework-validator.md) validates that your runtime-specific implementation assemblies are compatible with each other and with the compile-time assemblies.
@@ -58,12 +58,12 @@ The suppression file looks like this.
     <Target>M:A.B.DoStringManipulation(System.String)</Target>
     <Left>lib/netstandard2.0/A.dll</Left>
     <Right>lib/net6.0/A.dll</Right>
-    <isBaseline>false</isBaseline>
+    <IsBaselineSuppression>false</IsBaselineSuppression>
   </Suppression>
 </Suppressions>
 ```
 
-- `DiagnosticID` specifies the [ID](diagnostic-ids.md) of the error to suppress.
+- `DiagnosticId` specifies the [ID](diagnostic-ids.md) of the error to suppress.
 
 - `Target` specifies where in the code to suppress the diagnostic IDs
 
@@ -71,4 +71,4 @@ The suppression file looks like this.
 
 - `Right` specifies the right operand of an APICompat comparison.
 
-- `isBaseline`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.
+- `IsBaselineSuppression`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.

@@ -27,6 +27,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: Default authentication scheme
+          href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: IHubClients and IHubCallerClients hide members
@@ -37,6 +39,8 @@ items:
           href: aspnet-core/7.0/libuv-transport-dll-removed.md
         - name: Microsoft.Data.SqlClient updated to 4.0.1
           href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: Middleware no longer defers to endpoint with null request delegate
+          href: aspnet-core/7.0/middleware-null-requestdelegate.md
         - name: MVC's detection of an empty body in model binding changed
           href: aspnet-core/7.0/mvc-empty-body-model-binding.md
         - name: SignalR Hub methods try to resolve parameters from DI
@@ -45,30 +49,38 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: BinaryFormatter serialization APIs produce compiler errors
+          href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
           href: core-libraries/7.0/collectible-assemblies.md
         - name: Equals method behavior change for NaN
           href: core-libraries/7.0/equals-nan.md
-        - name: FullPath and OldFullPath return fully qualified path
-          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Reflection invoke API exceptions
+          href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: Cryptography
         items:
+        - name: Dynamic X509ChainPolicy verification time
+          href: cryptography/7.0/x509chainpolicy-verification-time.md
         - name: EnvelopedCms.Decrypt doesn't double unwrap
           href: cryptography/7.0/decrypt-envelopedcms.md
         - name: X500DistinguishedName parsing of friendly names
           href: cryptography/7.0/x500-distinguished-names.md
       - name: Deployment
         items:
+        - name: All assemblies trimmed by default
+          href: deployment/7.0/trim-all-assemblies.md
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
       - name: Extensions
         items:
         - name: ContentRootPath for apps launched by Windows Shell
@@ -213,6 +225,10 @@ items:
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
           href: cryptography/6.0/cfb-mode-feedback-size-exception.md
+      - name: Deployment
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
       - name: Entity Framework Core
         href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
@@ -579,22 +595,26 @@ items:
       items:
       - name: .NET 7
         items:
-          - name: API controller actions try to infer parameters from DI
-            href: aspnet-core/7.0/api-controller-action-parameters-di.md
-          - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
-            href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
-          - name: IHubClients and IHubCallerClients hide members
-            href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
-          - name: "Kestrel: Default HTTPS binding removed"
-            href: aspnet-core/7.0/https-binding-kestrel.md
-          - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
-            href: aspnet-core/7.0/libuv-transport-dll-removed.md
-          - name: Microsoft.Data.SqlClient updated to 4.0.1
-            href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
-          - name: MVC's detection of an empty body in model binding changed
-            href: aspnet-core/7.0/mvc-empty-body-model-binding.md
-          - name: SignalR Hub methods try to resolve parameters from DI
-            href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
+        - name: API controller actions try to infer parameters from DI
+          href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: Default authentication scheme
+          href: aspnet-core/7.0/default-authentication-scheme.md
+        - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
+          href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: IHubClients and IHubCallerClients hide members
+          href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
+        - name: "Kestrel: Default HTTPS binding removed"
+          href: aspnet-core/7.0/https-binding-kestrel.md
+        - name: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed
+          href: aspnet-core/7.0/libuv-transport-dll-removed.md
+        - name: Microsoft.Data.SqlClient updated to 4.0.1
+          href: aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md
+        - name: Middleware no longer defers to endpoint with null request delegate
+          href: aspnet-core/7.0/middleware-null-requestdelegate.md
+        - name: MVC's detection of an empty body in model binding changed
+          href: aspnet-core/7.0/mvc-empty-body-model-binding.md
+        - name: SignalR Hub methods try to resolve parameters from DI
+          href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
         items:
         - name: ActionResult<T> sets StatusCode to 200
@@ -757,16 +777,18 @@ items:
         items:
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+        - name: BinaryFormatter serialization APIs produce compiler errors
+          href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
           href: core-libraries/7.0/collectible-assemblies.md
         - name: Equals method behavior change for NaN
           href: core-libraries/7.0/equals-nan.md
-        - name: FullPath and OldFullPath return fully qualified path
-          href: core-libraries/7.0/filesystemeventargs-fullpath.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Reflection invoke API exceptions
+          href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Validate CompressionLevel for BrotliStream
@@ -889,6 +911,8 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: Dynamic X509ChainPolicy verification time
+          href: cryptography/7.0/x509chainpolicy-verification-time.md
         - name: EnvelopedCms.Decrypt doesn't double unwrap
           href: cryptography/7.0/decrypt-envelopedcms.md
         - name: X500DistinguishedName parsing of friendly names
@@ -915,8 +939,20 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: All assemblies trimmed by default
+          href: deployment/7.0/trim-all-assemblies.md
         - name: Multi-level lookup is disabled
           href: deployment/7.0/multilevel-lookup.md
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: .NET 6
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
+      - name: .NET Core 3.1
+        items:
+        - name: x86 host path on 64-bit Windows
+          href: deployment/7.0/x86-host-path.md
     - name: Entity Framework Core
       items:
       - name: EF Core 6

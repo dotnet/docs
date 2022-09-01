@@ -28,7 +28,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [`case`](../statements/selection-statements.md#the-switch-statement)  
         [`catch`](try-catch.md)  
         [`char`](../builtin-types/char.md)  
-        [`checked`](checked.md)  
+        [`checked`](../statements/checked-and-unchecked.md)  
         [`class`](class.md)  
         [`const`](const.md)  
         [`continue`](../statements/jump-statements.md#the-continue-statement)  
@@ -94,7 +94,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [`typeof`](../operators/type-testing-and-cast.md#typeof-operator)  
         [`uint`](../builtin-types/integral-numeric-types.md)  
         [`ulong`](../builtin-types/integral-numeric-types.md)  
-        [`unchecked`](unchecked.md)  
+        [`unchecked`](../statements/checked-and-unchecked.md)  
         [`unsafe`](unsafe.md)  
         [`ushort`](../builtin-types/integral-numeric-types.md)  
         [`using`](using.md)  
@@ -147,6 +147,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`partial` (method)](partial-method.md)  
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
+        [`required`](required.md)  
         [`select`](select-clause.md)  
     :::column-end:::
     :::column:::

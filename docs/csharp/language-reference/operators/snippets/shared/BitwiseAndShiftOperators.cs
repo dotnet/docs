@@ -10,7 +10,7 @@
             BitwiseXor();
             BitwiseOr();
 
-            Console.WriteLine("==== << and >> operators");
+            Console.WriteLine("==== <<, >>, and >>> operators");
             LeftShift();
             RightShift();
             ShiftCount();
@@ -101,10 +101,10 @@
             Console.WriteLine($"Before: {Convert.ToString(x, toBase: 2), 4}");
 
             uint y = x >> 2;
-            Console.WriteLine($"After:  {Convert.ToString(y, toBase: 2), 4}");
+            Console.WriteLine($"After:  {Convert.ToString(y, toBase: 2).PadLeft(4, '0'), 4}");
             // Output:
             // Before: 1001
-            // After:    10
+            // After:  0010
             // </SnippetRightShift>
 
             // <SnippetArithmeticRightShift>
@@ -123,10 +123,10 @@
             Console.WriteLine($"Before: {Convert.ToString(c, toBase: 2), 32}");
 
             uint d = c >> 3;
-            Console.WriteLine($"After:  {Convert.ToString(d, toBase: 2), 32}");
+            Console.WriteLine($"After:  {Convert.ToString(d, toBase: 2).PadLeft(32, '0'), 32}");
             // Output:
             // Before: 10000000000000000000000000000000
-            // After:     10000000000000000000000000000
+            // After:  00010000000000000000000000000000
             // </SnippetLogicalRightShift>
         }
 
@@ -134,19 +134,20 @@
         {
             // <SnippetUnsignedRightShift>
             int x = -8;
-            Console.WriteLine($"Before:    {x,11}, hex: {x,8:x}, binary: {Convert.ToString(x, toBase: 2),33}");
+            Console.WriteLine($"Before:    {x,11}, hex: {x,8:x}, binary: {Convert.ToString(x, toBase: 2), 32}");
 
             int y = x >> 2;
-            Console.WriteLine($"After  >>: {y,11}, hex: {y,8:x}, binary: {Convert.ToString(y, toBase: 2),33}");
+            Console.WriteLine($"After  >>: {y,11}, hex: {y,8:x}, binary: {Convert.ToString(y, toBase: 2), 32}");
 
             int z = x >>> 2;
-            Console.WriteLine($"After >>>: {z,11}, hex: {z,8:x}, binary: {Convert.ToString(z, toBase: 2),33}");
+            Console.WriteLine($"After >>>: {z,11}, hex: {z,8:x}, binary: {Convert.ToString(z, toBase: 2).PadLeft(32, '0'), 32}");
             // Output:
-            // Before:             -8, hex: fffffff8, binary:  11111111111111111111111111111000
-            // After  >>:          -2, hex: fffffffe, binary:  11111111111111111111111111111110
-            // After >>>:  1073741822, hex: 3ffffffe, binary:    111111111111111111111111111110            
+            // Before:             -8, hex: fffffff8, binary: 11111111111111111111111111111000
+            // After  >>:          -2, hex: fffffffe, binary: 11111111111111111111111111111110
+            // After >>>:  1073741822, hex: 3ffffffe, binary: 00111111111111111111111111111110
             // </SnippetUnsignedRightShift>
         }
+
         private static void ShiftCount()
         {
             // <SnippetShiftCount>
@@ -180,7 +181,7 @@
 
             a = INITIAL_VALUE;
             a ^= 0b_1000_0000;
-            Display(a);  // output: 1111000
+            Display(a);  // output: 01111000
 
             a = INITIAL_VALUE;
             a <<= 2;
@@ -188,9 +189,13 @@
 
             a = INITIAL_VALUE;
             a >>= 4;
-            Display(a);  // output: 1111
+            Display(a);  // output: 00001111
 
-            void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2), 8}");
+            a = INITIAL_VALUE;
+            a >>>= 4;
+            Display(a);  // output: 00001111
+
+            void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2).PadLeft(8, '0'), 8}");
             // </SnippetCompoundAssignment>
         }
 

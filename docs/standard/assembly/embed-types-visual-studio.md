@@ -105,7 +105,7 @@ The first step is to create the type equivalence interface assembly.
    <Assembly: ImportedFromTypeLib("")>
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. The class library DLL file is compiled and saved to the specified build output path, for example *C:\TypeEquivalenceSample*.
 
@@ -177,7 +177,7 @@ Next, create the type equivalence runtime class.
    End Class
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. The class library DLL file is compiled and saved to the specified build output path.
 
@@ -245,9 +245,9 @@ Finally, create a type equivalence client program that references the interface 
    End Module
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
-1. Press **Ctrl**+**F5** to build and run the program. Note that the console output returns the assembly version **1.0.0.0**.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and run the program. Note that the console output returns the assembly version **1.0.0.0**.
 
 ## Modify the interface
 
@@ -271,7 +271,7 @@ Now, modify the interface assembly, and change its version.
    Function GetDate() As Date
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. A new version of the class library DLL file is compiled and saved to the build output path.
 
@@ -302,7 +302,7 @@ Also modify the runtime class and update its version.
    End Function
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. A new version of the class library DLL file is compiled and saved to the build output path.
 

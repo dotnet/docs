@@ -127,6 +127,11 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
 
 ## Package properties
 
+- [Descriptive properties](#descriptive-properties)
+- [PackRelease](#packrelease)
+
+### Descriptive properties
+
 You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe the package that gets created from your project. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).
 
 ```xml
@@ -148,6 +153,9 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
   <PackRelease>true</PackRelease>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
 
 ## Publish-related properties
 
@@ -317,7 +325,7 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to leverage the `Release` configuration instead of the `Debug` configuration. We recommend adding this property to a `Directory.Build.props` file instead of a project file so that it's evaluated early enough for the configuration change to propagate.
+The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
 
 ```xml
 <PropertyGroup>
@@ -326,7 +334,9 @@ The `PublishRelease` property informs `dotnet publish` to leverage the `Release`
 ```
 
 > [!NOTE]
-> This property does not affect the behavior of `dotnet build /t:Publish`.
+>
+> - This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
+> - To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
 
 ### RollForward
 
@@ -381,11 +391,11 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 
 ### SatelliteResourceLanguages
 
-The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
+The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) and German (Germany) resource satellite assemblies will be retained.
 
 ```xml
 <PropertyGroup>
-  <SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+  <SatelliteResourceLanguages>en-US;de-DE</SatelliteResourceLanguages>
 </PropertyGroup>
 ```
 
@@ -413,10 +423,9 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 | Property | Values | Description |
 | - | - | - |
 | `PublishTrimmed` | `true` or `false` | Controls whether trimming is enabled during publish. |
-| `TrimMode` | `link` or `copyused` | Controls the trimming granularity. This property can be set globally for the project, or at the assembly level as metadata.  |
+| `TrimMode` | `full` or `partial` | Default is `full`. Controls the trimming granularity. |
 | `SuppressTrimAnalysisWarnings` | `true` or `false` | Controls whether trim analysis warnings are produced. |
 | `EnableTrimAnalyzer` | `true` or `false` | Controls whether a subset of trim analysis warnings are produced. You can enable analysis even if `PublishTrimmed` is set to `false`. |
-| `ILLinkWarningLevel` | 5-9999, `preview`, or `latest` | Controls the version of trim analysis warnings. |
 | `ILLinkTreatWarningsAsErrors` | `true` or `false` | Controls whether trim warnings are treated as errors. For example, you may want to set this property to `false` when `TreatWarningsAsErrors` is set to `true`.  |
 | `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
 | `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
@@ -542,7 +551,7 @@ To speed up the build time, builds that are implicitly triggered by Visual Studi
 
 The following MSBuild properties are documented in this section:
 
-- [DefaultExcludesInProjectFolder](#defaultexcludesinprojectfolder)
+- [DefaultItemExcludesInProjectFolder](#defaultitemexcludesinprojectfolder)
 - [DefaultItemExcludes](#defaultitemexcludes)
 - [EnableDefaultCompileItems](#enabledefaultcompileitems)
 - [EnableDefaultEmbeddedResourceItems](#enabledefaultembeddedresourceitems)
@@ -561,15 +570,15 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
 </PropertyGroup>
 ```
 
-### DefaultExcludesInProjectFolder
+### DefaultItemExcludesInProjectFolder
 
-Use the `DefaultExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.
+Use the `DefaultItemExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.
 
-This property is very similar to the `DefaultItemExcludes` property, except that it only considers files and folders in the project folder. When a glob pattern would unintentionally match items outside the project folder with a relative path, use the `DefaultExcludesInProjectFolder` property instead of the `DefaultItemExcludes` property.
+This property is very similar to the `DefaultItemExcludes` property, except that it only considers files and folders in the project folder. When a glob pattern would unintentionally match items outside the project folder with a relative path, use the `DefaultItemExcludesInProjectFolder` property instead of the `DefaultItemExcludes` property.
 
 ```xml
 <PropertyGroup>
-  <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);**/myprefix*/**</DefaultExcludesInProjectFolder>
+  <DefaultItemExcludesInProjectFolder>$(DefaultItemExcludesInProjectFolder);**/myprefix*/**</DefaultItemExcludesInProjectFolder>
 </PropertyGroup>
 ```
 
@@ -937,6 +946,7 @@ The following MSBuild properties are documented in this section:
 
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
+- [DisableTransitiveProjectReferences](#disabletransitiveprojectreferences)
 - [Restore-related properties](#restore-related-properties)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
 
@@ -961,6 +971,20 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 ```xml
 <PropertyGroup>
   <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+</PropertyGroup>
+```
+
+### DisableTransitiveProjectReferences
+
+The `DisableTransitiveProjectReferences` property controls implicit project references. Set this property to `true` to disable implicit `ProjectReference` items. Disabling implicit project references results in non-transitive behavior similar to the [legacy project system](https://github.com/dotnet/project-system/blob/main/docs/feature-comparison.md).
+
+When this property is `true`, it has a similar effect to that of setting [`PrivateAssets="All"`](/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) on all of the dependencies of the depended-upon project.
+
+If you set this property to `true`, you can add explicit references to just the projects you need.
+
+```xml
+<PropertyGroup>
+  <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
 </PropertyGroup>
 ```
 

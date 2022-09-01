@@ -27,7 +27,7 @@ Named and optional parameters enable you to supply arguments for selected parame
 
 ## Named arguments
 
-Named arguments free you from matching the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called by sending arguments by position, in the order defined by the function.
+Named arguments free you from matching the order of arguments to the order of parameters in the parameter lists of called methods. The argument for each parameter can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called by sending arguments by position, in the order defined by the function.
 
 ```csharp
 PrintOrderDetails("Gift Shop", 31, "Red Mug");

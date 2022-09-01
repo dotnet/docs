@@ -71,7 +71,18 @@ If you need `using` directives that aren't implicitly included, you can add them
 
 ### Disable implicit `using` directives
 
-If you want to remove this behavior and manually control all namespaces in your project, add [`<ImplicitUsings>disable</ImplicitUsings>`](../project-sdk/msbuild-props.md#implicitusings) in the project file.
+If you want to remove this behavior and manually control all namespaces in your project, add [`<ImplicitUsings>disable</ImplicitUsings>`](../project-sdk/msbuild-props.md#implicitusings) to your project file in the `<PropertyGroup>` element, as shown in the following example:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    ...
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
+```
 
 ## Global `using` directives
 

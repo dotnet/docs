@@ -622,7 +622,7 @@ After being initiated by the execution of an Ngen.exe command that includes the 
 
 ### Service Interaction with Clients
 
-In the .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.
+In .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.
 
 ## See also
 

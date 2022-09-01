@@ -101,7 +101,7 @@ For more information about the grammar of IL, see the asmparse.grammar file in t
 
 ## Version Information
 
-Starting with the .NET Framework 4.5, you can attach a custom attribute to an interface implementation by using code similar to the following:
+Starting with .NET Framework 4.5, you can attach a custom attribute to an interface implementation by using code similar to the following:
 
 ```il
 .class interface public abstract auto ansi IMyInterface
@@ -121,7 +121,7 @@ Starting with the .NET Framework 4.5, you can attach a custom attribute to an in
       …
 ```
 
-Starting with the .NET Framework 4.5, you can specify an arbitrary marshal BLOB (binary large object) by using its raw binary representation, as shown in the following code:
+Starting with .NET Framework 4.5, you can specify an arbitrary marshal BLOB (binary large object) by using its raw binary representation, as shown in the following code:
 
 ```il
 .method public hidebysig abstract virtual

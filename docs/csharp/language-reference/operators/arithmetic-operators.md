@@ -1,7 +1,7 @@
 ---
 title: "Arithmetic operators - C# reference"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
-ms.date: 06/10/2022
+ms.date: 07/25/2022
 author: pkulikov
 f1_keywords: 
   - "++_CSharpKeyword"
@@ -15,6 +15,7 @@ f1_keywords:
   - "*=_CSharpKeyword"
 helpviewer_keywords: 
   - "arithmetic operators [C#]"
+  - "checked operators [C#]"
   - "increment operator [C#]"
   - "++ operator [C#]"
   - "decrement operator [C#]"
@@ -39,15 +40,7 @@ The following operators perform arithmetic operations with operands of numeric t
 
 Those operators are supported by all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
-Beginning with C# 11, you can define a `checked` variant for operators that are affected by overflow checking. If you define a `checked` operator, you must also defined an operator without the `checked` keyword. For more information on checked and unchecked operators, see the article on [Arithmetic operators](../operators/arithmetic-operators.md). Arithmetic operators except the `%` and unary `+` operators support a `checked` operator. Generally, a `checked` operator is expected to throw an exception when the result overflows the destination type. An unchecked operator generally doesn't throw an exception. The overflow behavior depends on the specific type. Some types, like `int` *truncate*, or wrap around. Other types, like `float` *clamp* to the maximum or minimum value. Still other types, like `decimal` throw exceptions even in an unchecked context. The types in the .NET runtime follow these semantics. The compiler doesn't enforce these requirements, but developers should follow those guidelines in their types. The `checked` operator includes the `checked` keyword. The unchecked operator doesn't include that modifier, as the following example shows:
-
-:::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
-
-The previous example declares that the `checked` operator executes in a `checked` context. For more information on `checked` and `unchecked` contexts, see the article on [checked and unchecked contexts](../keywords/checked-and-unchecked.md).
-
-If you provide an operator with the `checked` modifier, you must also provide an implementation of that operator without the `checked` modifier. When you provide both versions, the `checked` operator is called in a `checked` context; the operator without the `checked` modifier is called in an `unchecked` contest. For this reason, it is typically referred to as an *unchecked operator*. If you only provide the operator without the `checked` keyword, it is call in both a `checked` and `unchecked` context.
-
-Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The `++`, `--`, and all compound arithmetic operators (such as `+=`), dont convert their arguments to `int` or have the result type as `int`.
+In the case of integral types, those operators (except the `++` and `--` operators) are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type. The result type of a [compound assignment expression](#compound-assignment) is the type of the left-hand operand.
 
 ## Increment operator ++
 
@@ -59,13 +52,13 @@ The increment operator is supported in two forms: the postfix increment operator
 
 The result of `x++` is the value of `x` *before* the operation, as the following example shows:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="PostfixIncrement":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="PostfixIncrement":::
 
 ### Prefix increment operator
 
 The result of `++x` is the value of `x` *after* the operation, as the following example shows:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="PrefixIncrement":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="PrefixIncrement":::
 
 ## Decrement operator --
 
@@ -77,19 +70,19 @@ The decrement operator is supported in two forms: the postfix decrement operator
 
 The result of `x--` is the value of `x` *before* the operation, as the following example shows:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="PostfixDecrement":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="PostfixDecrement":::
 
 ### Prefix decrement operator
 
 The result of `--x` is the value of `x` *after* the operation, as the following example shows:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="PrefixDecrement":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="PrefixDecrement":::
 
 ## Unary plus and minus operators
 
 The unary `+` operator returns the value of its operand. The unary `-` operator computes the numeric negation of its operand.
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="UnaryPlusAndMinus":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="UnaryPlusAndMinus":::
 
 The [ulong](../builtin-types/integral-numeric-types.md) type doesn't support the unary `-` operator.
 
@@ -97,7 +90,7 @@ The [ulong](../builtin-types/integral-numeric-types.md) type doesn't support the
 
 The multiplication operator `*` computes the product of its operands:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="Multiplication":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="Multiplication":::
 
 The unary `*` operator is the [pointer indirection operator](pointer-related-operators.md#pointer-indirection-operator-).
 
@@ -109,17 +102,17 @@ The division operator `/` divides its left-hand operand by its right-hand operan
 
 For the operands of integer types, the result of the `/` operator is of an integer type and equals the quotient of the two operands rounded towards zero:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="IntegerDivision":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="IntegerDivision":::
 
 To obtain the quotient of the two operands as a floating-point number, use the `float`, `double`, or `decimal` type:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="IntegerAsFloatingPointDivision":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="IntegerAsFloatingPointDivision":::
 
 ### Floating-point division
 
 For the `float`, `double`, and `decimal` types, the result of the `/` operator is the quotient of the two operands:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="FloatingPointDivision":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="FloatingPointDivision":::
 
 If one of the operands is `decimal`, another operand can be neither `float` nor `double`, because neither `float` nor `double` is implicitly convertible to `decimal`. You must explicitly convert the `float` or `double` operand to the `decimal` type. For more information about conversions between numeric types, see [Built-in numeric conversions](../builtin-types/numeric-conversions.md).
 
@@ -131,7 +124,7 @@ The remainder operator `%` computes the remainder after dividing its left-hand o
 
 For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as the sign of the left-hand operand, as the following example shows:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="IntegerRemainder":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="IntegerRemainder":::
 
 Use the <xref:System.Math.DivRem%2A?displayProperty=nameWithType> method to compute both integer division and remainder results.
 
@@ -151,13 +144,13 @@ For the `decimal` operands, the remainder operator `%` is equivalent to the [rem
 
 The following example demonstrates the behavior of the remainder operator with floating-point operands:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="FloatingPointRemainder":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="FloatingPointRemainder":::
 
 ## Addition operator +
 
 The addition operator `+` computes the sum of its operands:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="Addition":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="Addition":::
 
 You can also use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` and `+=` operators](addition-operator.md) article.
 
@@ -165,7 +158,7 @@ You can also use the `+` operator for string concatenation and delegate combinat
 
 The subtraction operator `-` subtracts its right-hand operand from its left-hand operand:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="Subtraction":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="Subtraction":::
 
 You can also use the `-` operator for delegate removal. For more information, see the [`-` and `-=` operators](subtraction-operator.md) article.
 
@@ -187,11 +180,11 @@ except that `x` is only evaluated once.
 
 The following example demonstrates the usage of compound assignment with arithmetic operators:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignment":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignment":::
 
 Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignmentWithCast":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignmentWithCast":::
 
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from an [event](../keywords/event.md), respectively. For more information, see [How to subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -208,7 +201,7 @@ Binary arithmetic operators are left-associative. That is, operators with the sa
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence and associativity.
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="PrecedenceAndAssociativity":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="PrecedenceAndAssociativity":::
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
@@ -220,14 +213,14 @@ When the result of an arithmetic operation is outside the range of possible fini
 
 Integer division by zero always throws a <xref:System.DivideByZeroException>.
 
-If integer arithmetic overflow occurs, an overflow checking context, which can be [checked or unchecked](../keywords/checked-and-unchecked.md), controls the resulting behavior:
+If integer arithmetic overflow occurs, the overflow-checking context, which can be [checked or unchecked](../statements/checked-and-unchecked.md), controls the resulting behavior:
 
 - In a checked context, if overflow happens in a constant expression, a compile-time error occurs. Otherwise, when the operation is performed at run time, an <xref:System.OverflowException> is thrown.
 - In an unchecked context, the result is truncated by discarding any high-order bits that don't fit in the destination type.
 
-Along with the [checked and unchecked](../keywords/checked-and-unchecked.md) statements, you can use the `checked` and `unchecked` operators to control the overflow checking context, in which an expression is evaluated:
+Along with the [checked and unchecked](../statements/checked-and-unchecked.md) statements, you can use the `checked` and `unchecked` operators to control the overflow-checking context, in which an expression is evaluated:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="CheckedUnchecked":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CheckedUnchecked":::
 
 By default, arithmetic operations occur in an *unchecked* context.
 
@@ -235,7 +228,7 @@ By default, arithmetic operations occur in an *unchecked* context.
 
 Arithmetic operations with the `float` and `double` types never throw an exception. The result of arithmetic operations with those types can be one of special values that represent infinity and not-a-number:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="FloatingPointOverflow":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="FloatingPointOverflow":::
 
 For the operands of the `decimal` type, arithmetic overflow always throws an <xref:System.OverflowException>. Division by zero always throws a <xref:System.DivideByZeroException>.
 
@@ -243,13 +236,37 @@ For the operands of the `decimal` type, arithmetic overflow always throws an <xr
 
 Because of general limitations of the floating-point representation of real numbers and floating-point arithmetic, round-off errors might occur in calculations with floating-point types. That is, the produced result of an expression might differ from the expected mathematical result. The following example demonstrates several such cases:
 
-:::code language="csharp-interactive" source="snippets/shared/ArithmeticOperators.cs" id="RoundOffErrors":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="RoundOffErrors":::
 
 For more information, see remarks at the [System.Double](/dotnet/api/system.double#remarks), [System.Single](/dotnet/api/system.single#remarks), or [System.Decimal](/dotnet/api/system.decimal#remarks) reference pages.
 
 ## Operator overloadability
 
 A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type can't explicitly overload a compound assignment operator.
+
+### User-defined checked operators
+
+Beginning with C# 11, when you overload an arithmetic operator, you can use the `checked` keyword to define the *checked* version of that operator. The following example shows how to do that:
+
+:::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
+
+When you define a checked operator, you must also define the corresponding operator without the `checked` modifier. The checked operator is called in a [checked context](../statements/checked-and-unchecked.md); the operator without the `checked` modifier is called in an [unchecked context](../statements/checked-and-unchecked.md). If you only provide the operator without the `checked` modifier, it's called in both a `checked` and `unchecked` context.
+
+When you define both versions of an operator, it's expected that their behavior differs only when the result of an operation is too large to represent in the result type as follows:
+
+- A checked operator throws an <xref:System.OverflowException>.
+- An operator without the `checked` modifier returns an instance representing a *truncated* result.
+
+For information about the difference in behavior of the built-in arithmetic operators, see the [Arithmetic overflow and division by zero](#arithmetic-overflow-and-division-by-zero) section.
+
+You can use the `checked` modifier only when you overload any of the following operators:
+
+- Unary `++`, `--`, and `-` operators
+- Binary `*`, `/`, `+`, and `-` operators
+- [Explicit conversion operators](user-defined-conversion-operators.md)
+
+> [!NOTE]
+> The overflow-checking context within the body of a checked operator is not affected by the presence of the `checked` modifier. The default context is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. Use the [`checked` and `unchecked` statements](../statements/checked-and-unchecked.md) to explicitly specify the overflow-checking context, as the example at the beginning of this section demonstrates.
 
 ## C# language specification
 

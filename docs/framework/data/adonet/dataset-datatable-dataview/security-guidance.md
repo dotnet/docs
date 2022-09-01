@@ -69,7 +69,7 @@ The object type restrictions don't apply when using `DataAdapter.Fill`, such as 
 
 An app can extend the allowed types list to include custom types in addition to the built-in types listed above. If extending the allowed types list, the change affects _all_ `DataSet` and `DataTable` instances within the app. Types cannot be removed from the built-in allowed types list.
 
-#### Extend through configuration (.NET Framework 4.0 - 4.8)
+#### Extend through configuration (.NET Framework 4.0 - 4.8.1)
 
 _App.config_ can be used to extend the allowed types list. To extend the allowed types list:
 
@@ -215,7 +215,7 @@ If an app must remove all type limiting restrictions from `DataSet` and `DataTab
 > [!WARNING]
 > Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
 
-#### Through AppContext configuration (.NET Framework 4.6 - 4.8, .NET Core 2.1 and later, .NET 5 and later)
+#### Through AppContext configuration (.NET Framework 4.6 - 4.8.1, .NET Core 2.1 and later, .NET 5 and later)
 
 The `AppContext` switch, `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation`, when set to `true` removes all type limiting restrictions from `DataSet` and `DataTable`.
 
@@ -266,7 +266,7 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 
  If you choose the preceding programmatic approach, the call to `AppContext.SetSwitch` should occur early in the apps startup.
 
-#### Through the machine-wide registry (.NET Framework 2.0 - 4.8)
+#### Through the machine-wide registry (.NET Framework 2.0 - 4.8.1)
 
 If `AppContext` is not available, type limiting checks can be disabled with the Windows registry:
 

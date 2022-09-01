@@ -42,13 +42,8 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 
 You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild `-p` switch for a couple of different scenarios.
 
-Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
-
-```xml
-<PropertyGroup>
-   <IsPackable>true</IsPackable>
-</PropertyGroup>
-```
+> [!NOTE]
+> Web projects aren't packable.
 
 ### Implicit restore
 

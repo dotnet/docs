@@ -18,7 +18,7 @@ The layout of WPF controls can change slightly.
   
 - Centered elements can be vertically or horizontally off center by at most one pixel.  
   
- By default, this new layout is enabled only for apps that target the .NET Framework 4.6.  
+ By default, this new layout is enabled only for apps that target .NET Framework 4.6.  
   
 ## Mitigation  
 

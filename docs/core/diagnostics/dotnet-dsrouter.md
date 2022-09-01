@@ -222,13 +222,13 @@ Sometimes it may be useful to collect a trace of an application from its startup
 
 `dotnet-trace` will start a trace session and resume application that will now continue to execute. A stream of events will start to flow from the mobile application, through `dotnet-dsrouter` into `dotnet-trace` nettrace file. When done tracing, press <kbd>Enter</kbd> to make sure trace session is properly closed making sure nettrace file includes all needed data before application gets closed.
 
-It is possible to run several trace sessions against the same running application over time, leave `dotnet-dsrouter` running and rerun `dotnet-trace` when a new trace session is needed.
+It's possible to run several trace sessions against the same running application over time, leave `dotnet-dsrouter` running and rerun `dotnet-trace` when a new trace session is needed.
 
 `dotnet-dsrouter` can be left running in background and reused if an application is configured to connect using its address and port.
 
 `dotnet-dsrouter` is tied to one running application at any time. If there are needs to trace several different applications at the same time, each application needs to use its own `dotnet-dsrouter` instance, by setting up a unique IPC, TCP/IP address pair in `dotnet-dsrouter` and configure different application instances to connect back to its unique `dotnet-dsrouter` instance.
 
-If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server, emulator or device gets restarted, all `dotnet-dsrouter` instances needs to be restarted as well to restore port forwarding rules.
+If `dotnet-dsrouter` is run with `--forward-port` targeting Android and `adb` server, emulator or device gets restarted, all `dotnet-dsrouter` instances need to be restarted as well to restore port forwarding rules.
 
 When done using `dotnet-dsrouter`, press <kbd>Q</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd> to quit application.
 
@@ -243,7 +243,7 @@ When done using `dotnet-dsrouter`, press <kbd>Q</kbd> or <kbd>Ctrl</kbd> + <kbd>
 
 ## Collect a trace using dotnet-trace from a .NET application running on Android
 
-If there's no need to collect a trace during application startup, it is possible to launch application in `nosuspend` mode, meaning runtime won't block at startup waiting for diagnostic tooling to connect before resuming execution. Most of the above-described scenario applies to this mode as well, just replace `suspend` with `nosuspend` in `DOTNET_DiagnosticPorts` environment variable to launch application in `nosuspend` mode.
+If there's no need to collect a trace during application startup, it's possible to launch application in `nosuspend` mode, meaning runtime won't block at startup waiting for diagnostic tooling to connect before resuming execution. Most of the above-described scenario applies to this mode as well, just replace `suspend` with `nosuspend` in `DOTNET_DiagnosticPorts` environment variable to launch application in `nosuspend` mode.
 
 ## See also
 

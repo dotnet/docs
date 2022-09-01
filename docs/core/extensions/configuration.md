@@ -1,5 +1,5 @@
 ---
-title: Configuration in .NET
+title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
@@ -36,16 +36,16 @@ Given one or more configuration sources, the <xref:Microsoft.Extensions.Configur
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
 
-The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order:
+The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order, from highest to lowest priority:
 
-1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
-1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
-1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
-1. [App secrets](/aspnet/core/security/app-secrets) when the app runs in the `Development` environment.
-1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
+1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
+1. [App secrets](/aspnet/core/security/app-secrets) when the app runs in the `Development` environment.
+1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
+1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
+1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
 
-Configuration providers that are added later override previous key settings. For example, if `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used. Using the default configuration providers, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all other providers.
+Adding a configuration provider overrides previous configuration values. For example, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all values from other providers because it's added last. If `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used because it was added after *appsettings.json*.
 
 ### Binding
 
@@ -116,7 +116,7 @@ Consider an example _appsettings.json_ file:
 
 :::code language="json" source="snippets/configuration/console-raw/appsettings.json":::
 
-Now, given this JSON file here is an example consumption pattern using the configuration builder directly:
+Now, given this JSON file, here's an example consumption pattern using the configuration builder directly:
 
 :::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
 
@@ -196,3 +196,4 @@ For more information on various configuration providers, see [Configuration prov
 - [Configuration providers in .NET](configuration-providers.md)
 - [Implement a custom configuration provider](custom-configuration-provider.md)
 - Configuration bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo
+- [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

@@ -24,7 +24,7 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
  Describes the hosting interfaces introduced in the .NET Framework versions 1.0 and 1.1.  
   
  [CLR Hosting Interfaces](clr-hosting-interfaces.md)  
- Describes the hosting interfaces introduced in the .NET Framework version 2.0.  
+ Describes the hosting interfaces introduced in .NET Framework version 2.0.  
   
  [CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)  
  Describes the hosting interfaces introduced in the .NET Framework 4.  

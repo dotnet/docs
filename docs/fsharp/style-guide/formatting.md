@@ -28,7 +28,7 @@ The following guidelines are intended to provide guidance as to how to juggle so
 
 ### Use spaces not tabs
 
-When indentation is required, you must use spaces, not tabs. F# code does not use tabs and the compiler will give an error if a tab character is encountered outside
+When indentation is required, you must use spaces, not tabs. F# code doesn't use tabs, and the compiler will give an error if a tab character is encountered outside
 a string literal or comment.
 
 ### Use consistent indentation
@@ -151,7 +151,7 @@ let pair = (1, 2)
 let triples = [ (1, 2, 3); (11, 12, 13) ]
 ```
 
-It is commonly accepted to omit parentheses in pattern matching of tuples:
+It's commonly accepted to omit parentheses in pattern matching of tuples:
 
 ```fsharp
 // ✔️ OK
@@ -165,7 +165,7 @@ match x, y with
 | x, y -> 1
 ```
 
-It is also commonly accepted to omit parentheses if the tuple is the return value of a function:
+It's also commonly accepted to omit parentheses if the tuple is the return value of a function:
 
 ```fsharp
 // ✔️ OK
@@ -186,7 +186,7 @@ When formatting a function or method application, arguments are provided on the 
 someFunction1 x.IngredientName x.Quantity
 ```
 
-Parentheses should be omitted unless arguments require them:
+Omit parentheses unless arguments require them:
 
 ```fsharp
 // ✔️ OK
@@ -199,7 +199,7 @@ someFunction1 (x.IngredientName)
 someFunction1 (convertVolumeToLiter x)
 ```
 
-Spaces should not be omitted when invoking with multiple curried arguments:
+Don't omit spaces when invoking with multiple curried arguments:
 
 ```fsharp
 // ✔️ OK
@@ -597,6 +597,18 @@ Write them on one line when:
 if cond then e1 else e2
 ```
 
+If the else expression is absent, it's recommended to never write the entire expression in one line.
+This is to differentiate the imperative code from the functional.
+
+```fsharp
+// ✔️ OK
+if a then
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above by default
+if a then ()
+```
+
 If any of the expressions are multi-line or `if/then/else` expressions.
 
 ```fsharp
@@ -631,7 +643,8 @@ else
     e4
 ```
 
-If a condition is long, the `then` keyword is still placed at the end of the expression.
+If a condition is multiline or exceeds the default tolerance of the single-line, the condition expression should use one indentation and a new line.
+The `if` and `then` keyword should align when encapsulating the long condition expression.
 
 ```fsharp
 // ✔️ OK, but better to refactor, see below
@@ -640,10 +653,31 @@ if
     || someFunctionToCall
         aVeryLongParameterNameOne
         aVeryLongParameterNameTwo
-        aVeryLongParameterNameThree then
+        aVeryLongParameterNameThree 
+then
         e1
     else
         e2
+
+// ✔️The same applies to nested `elif` or `else if` expressions
+if a then
+    b
+elif
+    someLongFunctionCall
+        argumentOne
+        argumentTwo
+        argumentThree
+        argumentFour
+then
+    c
+else if
+    someOtherLongFunctionCall
+        argumentOne
+        argumentTwo
+        argumentThree
+        argumentFour
+then
+    d
 ```
 
 It is, however, better style to refactor long conditions to a let binding or separate function:
@@ -906,6 +940,38 @@ match lam with
     sizeLambda lam1 + sizeLambda lam2
 ```
 
+Similar to large if conditions, if a match expression is multiline or exceeds the default tolerance of the single-line, the match expression should use one indentation and a new line.
+The `match` and `with` keyword should align when encapsulating the long match expression.
+
+```fsharp
+// ✔️ OK, but better to refactor, see below
+match
+    complexExpression a b && env.IsDevelopment()
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree 
+with
+| X y -> y
+| _ -> 0
+```
+
+It is, however, better style to refactor long match expressions to a let binding or separate function:
+
+```fsharp
+// ✔️ OK
+let performAction =
+    complexExpression a b && env.IsDevelopment()
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree
+
+match performAction with
+| X y -> y
+| _ -> 0
+```
+
 Aligning the arrows of a pattern match should be avoided.
 
 ```fsharp
@@ -1060,7 +1126,7 @@ let comparer =
 
 ### Formatting index/slice expressions
 
-Index expressions should not contain any spaces around the opening and closing brackets.
+Index expressions shouldn't contain any spaces around the opening and closing brackets.
 
 ```fsharp
 // ✔️ OK
@@ -1346,7 +1412,7 @@ type PostalAddress =
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
 
-Do not place the `{` at the end of the type declaration line, and do not use `with`/`end` for members, which are redundant.
+Don't place the `{` at the end of the type declaration line, and don't use `with`/`end` for members, which are redundant.
 
 ```fsharp
 // ❌ Not OK, code formatters will reformat to the above by default
@@ -1603,7 +1669,7 @@ let myNumber =
 ```
 
 The domain that's being modeled should ultimately drive the naming convention.
-If it is idiomatic to use a different convention, that convention should be used instead.
+If it's idiomatic to use a different convention, that convention should be used instead.
 
 ## Formatting types and type annotations
 
@@ -1676,7 +1742,7 @@ type C() =
 
 ### Formatting types in signatures
 
-When writing full function types in signatures, it is sometimes necessary to split the arguments
+When writing full function types in signatures, it's sometimes necessary to split the arguments
 over multiple lines. The return type is always indented.
 
 For a tupled function, the arguments are separated by `*`,
@@ -1869,7 +1935,7 @@ type C() =
 
 ### Formatting multiple attributes
 
-When multiple attributes are applied to a construct that is not a parameter, they should be placed such that there is one attribute per line:
+When multiple attributes are applied to a construct that's not a parameter, place each attribute on a separate line:
 
 ```fsharp
 // ✔️ OK
@@ -1881,8 +1947,8 @@ type MyRecord =
       Label2: string }
 ```
 
-When applied to a parameter, they must be on the same line and separated by a `;` separator.
+When applied to a parameter, place attributes on the same line and separate them with a `;` separator.
 
 ### Acknowledgments
 
-These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
+These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs-old/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).

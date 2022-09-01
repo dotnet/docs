@@ -22,10 +22,10 @@ The following table is a list of currently supported .NET releases on both CentO
 - A ❌ indicates that the version of CentOS or .NET isn't supported on that CentOS release.
 - When both a version of CentOS and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| CentOS                   | .NET Core 3.1 | .NET 5         | .NET 6       |
-|--------------------------|---------------|----------------|----------------|
-| ✔️ [7](#centos-7-)       | ✔️ 3.1        | ✔️ 5.0         | ✔️ 6.0         |
-| ❌ [8](#centos-8-)\*     | ✔️ 3.1        | ✔️ 5.0         | ❌ 6.0         |
+| CentOS                   | .NET Core 3.1 | .NET 6       |
+|--------------------------|---------------|----------------|
+| ✔️ [7](#centos-7-)       | ✔️ 3.1        | ✔️ 6.0         |
+| ❌ [8](#centos-8-)\*     | ✔️ 3.1        | ❌ 6.0         |
 
 > [!WARNING]
 > \*CentOS 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 won't be supported on CentOS Linux 8.

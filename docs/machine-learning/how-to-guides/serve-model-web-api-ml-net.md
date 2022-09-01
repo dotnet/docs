@@ -48,7 +48,7 @@ You need to create some classes for your input data and predictions. Add a new c
 
 1. Create a directory named *DataModels* in your project to save your data models:
 
-    In Solution Explorer, right-click on your project and select Add > New Folder. Type "DataModels" and hit **Enter**.
+    In Solution Explorer, right-click on your project and select Add > New Folder. Type "DataModels" and hit <kbd>Enter</kbd>.
 
 2. In Solution Explorer, right-click the *DataModels* directory, and then select Add > New Item.
 3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:

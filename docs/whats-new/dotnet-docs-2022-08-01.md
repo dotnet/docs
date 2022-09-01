@@ -36,7 +36,7 @@ Welcome to what's new in the .NET docs for August 2022. This article lists some 
 
 ### Updated articles
 
-- [Composite formatting](../standard/base-types/composite-formatting.md) - Fix broken build
+- [Composite formatting](../standard/base-types/composite-formatting.md)
 - [Install .NET on Windows](../core/install/windows.md) - Add winget install / Update linux tables
 - [Quantifiers in Regular Expressions](../standard/base-types/quantifiers-in-regular-expressions.md) - [Freshness] US-1953530: Refresh top articles by PV - .NET and Languages Content (4)
 
@@ -44,19 +44,7 @@ Welcome to what's new in the .NET docs for August 2022. This article lists some 
 
 ### New articles
 
-- [Accessing remote data](../architecture/maui/accessing-remote-data.md)
-- [Authentication and Authorization](../architecture/maui/authentication-and-authorization.md)
-- [Communicating between loosely coupled components](../architecture/maui/communicating-between-components.md)
-- [Configuration management](../architecture/maui/configuration-management.md)
-- [Dependency injection](../architecture/maui/dependency-injection.md)
-- [Enterprise Application Patterns Using .NET MAUI](../architecture/maui/index.md)
-- [Introduction to .NET MAUI](../architecture/maui/introduction.md)
-- [Containerized Microservices](../architecture/maui/micro-services.md)
-- [Model-View-ViewModel (MVVM)](../architecture/maui/mvvm.md)
-- [Navigation](../architecture/maui/navigation.md)
-- [Purpose](../architecture/maui/preface.md)
-- [Unit testing](../architecture/maui/unit-testing.md)
-- [Validation](../architecture/maui/validation.md)
+- [Enterprise Application Patterns Using .NET MAUI](../architecture/maui): new Architecture eBook
 
 ## Azure SDK for .NET
 

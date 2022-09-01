@@ -20,9 +20,9 @@ This tool currently supports C#, and uses [CoreWCF services](https://devblogs.mi
 
 Here are some requirements for the WCF project to be applicable for this upgrade:
 
-- Includes a .cs file that references `System.ServiceModel` and creates new `ServiceHost`.
-    - If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
-- Includes a .config file that stores `System.ServiceModel` properties
+1. Includes a .cs file that references `System.ServiceModel` and creates new `ServiceHost`.
+    a. If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
+2. Includes a .config file that stores `System.ServiceModel` properties
 
 This tool does not support WCF projects hosted via .svc file yet.
 > [!NOTE]
@@ -39,7 +39,7 @@ If you want to try out a more complicated sample, please check out the [BeanTrad
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
-When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the [upgrade entrypoint](#select-the-entrypoint). Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
+When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the upgrade entrypoint. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
 
 ```console
 upgrade-assistant upgrade .\CalculatorSample.sln

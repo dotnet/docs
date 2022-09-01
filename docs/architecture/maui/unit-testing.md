@@ -58,7 +58,7 @@ Testing models and view models from MVVM applications is identical to testing an
 
 > [!TIP]
 > Test one thing with each unit test. As the complexity of a test expands, it makes verification of that test more difficult. By limiting a unit test to a single concern, we can ensure that our tests are more repeatable, isolated, and have a smaller execution time. See
-[Unit testing best practices with .NET Core and .NET Standard](/dotnet/core/testing/unit-testing-best-practices) for more best practices.
+[Unit testing best practices with .NET Core and .NET Standard](../../core/testing/unit-testing-best-practices.md) for more best practices.
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 

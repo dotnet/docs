@@ -29,7 +29,7 @@ Most of the following examples reuse the same `HttpClient` instance, and therefo
 
 The preceding code:
 
-- Instantiates a new `HttpClient` instance with the object initializer syntax, and as a [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations).
+- Instantiates a new `HttpClient` instance with the object initializer syntax, and as a [using declaration](../../../csharp/whats-new/csharp-8.md#using-declarations).
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
 This `HttpClient` instance will always use the base address when making subsequent requests. To apply additional configuration consider:

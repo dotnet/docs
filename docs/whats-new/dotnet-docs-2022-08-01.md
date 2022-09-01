@@ -85,7 +85,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [aydjay](https://github.com/aydjay) - Alex Jones ![There were 1 pull requests merged by Alex Jones.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [benbryant0](https://github.com/benbryant0) - Ben Bryant ![There were 1 pull requests merged by Ben Bryant.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Fulya2133](https://github.com/Fulya2133) - fulya group şti ![There were 1 pull requests merged by fulya group şti.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [github-actions](https://github.com/github-actions) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [gleocadie](https://github.com/gleocadie) - Gregory LEOCADIE ![There were 1 pull requests merged by Gregory LEOCADIE.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [GuusLieben](https://github.com/GuusLieben) - Guus Lieben ![There were 1 pull requests merged by Guus Lieben.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka ![There were 1 pull requests merged by Hiroshi Yoshioka.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

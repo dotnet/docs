@@ -19,18 +19,19 @@ For more information on how to install the tool, see [Overview of the .NET Upgra
 This tool currently supports C#, and uses [CoreWCF services](https://devblogs.microsoft.com/dotnet/corewcf-v1-released/) to port self-hosted WCF Server-side project.
 
 Here are some requirements for the WCF project to be applicable for this upgrade:
+
 - Includes a .cs file that references `System.ServiceModel` and creates new `ServiceHost`.
     - If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
 - Includes a .config file that stores `System.ServiceModel` properties
 
-This tool does not support WCF projects hosted via .svc file yet. 
+This tool does not support WCF projects hosted via .svc file yet.
 > [!NOTE]
-> If your project is not applicable for this tool yet, we recommend you to check out the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF) and 
+> If your project is not applicable for this tool yet, we recommend you to check out the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF) and
 [BeanTrader Sample demo](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/) and manually update the project.
 
 ## Demo app
 
-You can use the [Basic Calculator Sample](wcf-sample) project to test upgrading with the Upgrade Assistant, which is also the demo used in this documentation. 
+You can use the [Basic Calculator Sample][wcf-sample] project to test upgrading with the Upgrade Assistant, which is also the demo used in this documentation.
 
 If you want to try out a more complicated sample, please check out the [BeanTrader Sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
 
@@ -57,7 +58,7 @@ As each step initializes, it may provide information about what it thinks will h
 
 ### Select the entrypoint and project to upgrade
 
-The first step in upgrading the [Basic Calculator Sample](wcf-sample) is choosing which project in the solution serves as the entrypoint project.
+The first step in upgrading the [Basic Calculator Sample][wcf-sample] is choosing which project in the solution serves as the entrypoint project.
 
 ```
 Upgrade Steps
@@ -397,7 +398,7 @@ Choose a command:
 
 Ideally, after successfully running the tool, these modified files should look similar. Please check out the updated version of [CalculatorService.csproj](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/CalculatorService.csproj), [app.config](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/App.config), [wcf.config](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/wcf.config), [CalculatorSample/service.cs](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/service.cs).
 
-Notice that if you want to run both CalculatorClient and CalculatorService, you would need to upgrade CalculatorClient with the tool as well. Because CalculatorService targets .Net6.0 after upgrade, it cannot be referenced by CalculatorClient which still targets .NETFramework. 
+Notice that if you want to run both CalculatorClient and CalculatorService, you would need to upgrade CalculatorClient with the tool as well. Because CalculatorService targets .Net6.0 after upgrade, it cannot be referenced by CalculatorClient which still targets .NETFramework.
 
 ## After upgrading
 

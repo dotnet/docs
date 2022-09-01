@@ -33,7 +33,6 @@ You also use the `operator` keyword to define a custom type conversion. For more
 |[`x + y`](addition-operator.md) [`x - y`](subtraction-operator.md) [`x * y`](arithmetic-operators.md#multiplication-operator-) [`x / y`](arithmetic-operators.md#division-operator-) [`x % y`](arithmetic-operators.md#remainder-operator-) [`x & y`](boolean-logical-operators.md#logical-and-operator-) <br />[<code>x &#124; y</code>](boolean-logical-operators.md#logical-or-operator-) [`x ^ y`](boolean-logical-operators.md#logical-exclusive-or-operator-) [`x << y`](bitwise-and-shift-operators.md#left-shift-operator-) [`x >> y`](bitwise-and-shift-operators.md#right-shift-operator-) | None. |
 |[`x == y`](equality-operators.md#equality-operator-) [`x != y`](equality-operators.md#inequality-operator-) [`x < y`](comparison-operators.md#less-than-operator-) [`x > y`](comparison-operators.md#greater-than-operator-) [`x <= y`](comparison-operators.md#less-than-or-equal-operator-) [`x >= y`](comparison-operators.md#greater-than-or-equal-operator-)|Must be overloaded in pairs:  <code>[==](equality-operators.md#equality-operator-) and [!=](equality-operators.md#inequality-operator-)</code> <code>[<](comparison-operators.md#less-than-operator-) and [>](comparison-operators.md#greater-than-operator-)</code> <code>[<=](comparison-operators.md#less-than-or-equal-operator-) and [>=](comparison-operators.md#greater-than-or-equal-operator-)</code>.
 
-
 ## Non Overloadable Operators
 | Operators | Alternatives |
 | :---------: | --------------- |

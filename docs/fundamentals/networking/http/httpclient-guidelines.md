@@ -24,7 +24,7 @@ var handler = new SocketsHttpHandler
 var client = new HttpClient(handler);
 ```
 
-The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime>, the connection is closed and a new one is created.
+The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the timespan specified by <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> has elapsed, the connection is closed and a new one is created.
 
 ## Pooled connections
 

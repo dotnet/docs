@@ -1969,7 +1969,25 @@ items:
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
   - name: Native AOT deployment model
-    href: ../core/deploying/native-aot.md
+    items:
+    - name: Overview
+      href: ../core/deploying/native-aot/index.md
+    - name: AOT warnings
+      items:
+      - name: IL3050
+        href: ../core/deploying/native-aot/warnings/il3050.md
+      - name: IL3051
+        href: ../core/deploying/native-aot/warnings/il3051.md
+      - name: IL3052
+        href: ../core/deploying/native-aot/warnings/il3052.md
+      - name: IL3053
+        href: ../core/deploying/native-aot/warnings/il3053.md
+      - name: IL3054
+        href: ../core/deploying/native-aot/warnings/il3054.md
+      - name: IL3055
+        href: ../core/deploying/native-aot/warnings/il3055.md
+      - name: IL3056
+        href: ../core/deploying/native-aot/warnings/il3056.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog

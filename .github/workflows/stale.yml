@@ -1,0 +1,26 @@
+- name: Close stale issues
+
+on:
+  schedule: # Run 5 minutes after the hour every hour.
+  - cron: '5 0 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+    - uses: actions/stale@v4.1.0
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        days-before-stale: 120
+        days-before-close: 14
+        stale-issue-label: needs-more-info
+        close-issue-message: >
+            This issue has been automatically closed due to no response from the original author.
+            Please feel free to reopen it if you have more information that can help us investigate the issue further.
+        exempt-issue-labels: breaking-change,Pri0
+        operations-per-run: 50
+        debug-only: true

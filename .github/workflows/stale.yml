@@ -20,7 +20,7 @@ jobs:
         stale-issue-label: stale
         close-issue-message: >
             This issue has been automatically closed due to lack of activity.
-            If you feel this issue is still important, please comment and we will reopen it.
+            If you feel this issue is still important, please reopen it and leave a comment.
         exempt-issue-labels: breaking-change,Pri0
         operations-per-run: 50
         debug-only: true

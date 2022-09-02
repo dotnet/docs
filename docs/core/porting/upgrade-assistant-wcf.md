@@ -400,7 +400,7 @@ Choose a command:
 
 Ideally, after successfully running the tool, these modified files should look similar. Please check out the updated version of [CalculatorService.csproj](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/CalculatorService.csproj), [app.config](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/App.config), [wcf.config](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/wcf.config), [CalculatorSample/service.cs](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/service.cs).
 
-Notice that if you want to run both CalculatorClient and CalculatorService, you would need to upgrade CalculatorClient with the tool as well. Because CalculatorService targets .Net6.0 after upgrade, it cannot be referenced by CalculatorClient which still targets .NETFramework.
+Notice that in the CalculatorSample, there is not a project-to-project dependency and the sample can run successfully after only updating the CalculatorService. But in other cases with different dependencies, you might need to update other projects in the same solution as well.
 
 ## After upgrading
 

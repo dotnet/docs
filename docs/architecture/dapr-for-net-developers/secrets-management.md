@@ -147,16 +147,18 @@ public void GetCustomer(IConfiguration config)
 
 The secrets management building block supports several secret store components. At the time of writing, the following secret stores are available:
 
-- Environment Variables
-- Local file
-- Kubernetes secrets
+- AlibabaCloud OOS Parameter Store
 - AWS Secrets Manager
+- AWS SSM Parameter Store
 - Azure Key Vault
 - GCP Secret Manager
 - HashiCorp Vault
+- Kubernetes secrets
+- Local environment variables
+- Local file
 
 > [!IMPORTANT]
-> The environment variables and local file components are designed for development workloads only.
+> The local environment variables and file components are designed for development workloads only.
 
 The following sections show how to configure a secret store.
 
@@ -734,6 +736,7 @@ You can use secret scopes to control access to specific secrets.
 ## References
 
 - [Beyond the Twelve-Factor Application](https://tanzu.vmware.com/content/blog/beyond-the-twelve-factor-app)
+- [Dapr supported secret stores](https://docs.dapr.io/reference/components-reference/supported-secret-stores/)
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)

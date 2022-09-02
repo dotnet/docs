@@ -81,6 +81,10 @@ items:
           href: deployment/7.0/multilevel-lookup.md
         - name: x86 host path on 64-bit Windows
           href: deployment/7.0/x86-host-path.md
+      - name: Globalization
+        items:
+        - name: Globalization APIs use ICU libraries on Windows Server
+          href: globalization/7.0/icu-globalization-api.md
       - name: Extensions
         items:
         - name: ContentRootPath for apps launched by Windows Shell
@@ -977,6 +981,10 @@ items:
           href: extensions/6.0/service-provider-disposed.md
     - name: Globalization
       items:
+      - name: .NET 7
+        items:
+        - name: Globalization APIs use ICU libraries on Windows Server
+          href: globalization/7.0/icu-globalization-api.md
       - name: .NET 6
         items:
         - name: Culture creation and case mapping in globalization-invariant mode

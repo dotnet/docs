@@ -72,9 +72,7 @@ The eShopOnContainers application is an open-source reference app for .NET and m
 
 The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it's also used to test new potentially interesting technologies as they show up.
 
-## Send us your feedback!
-
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 ## Credits
 

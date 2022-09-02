@@ -94,6 +94,8 @@ Use Azure's tools to monitor, troubleshoot, and tune your application.
 
 Other learning paths for the ASP.NET Core developer learning Azure.
 
+[!INCLUDE [feedback](../includes/feedback.md)]
+
 ## Additional introductory reading
 
 If this is your first exposure to cloud computing, these articles explain the basics.

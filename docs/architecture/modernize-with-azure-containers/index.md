@@ -196,9 +196,7 @@ The [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) 
 
 These sample apps have a second version, with modernized code, and which are fairly straightforward. The most important difference between the app versions is that the second versions use Windows Containers as the deployment choice. There also are a few additions to the second versions, like Azure Storage Blobs for managing images, Azure Active Directory for managing security, and Azure Application Insights for monitoring and auditing the applications.
 
-## Send your feedback
-
-This guide was written to help you understand your options for improving and modernizing existing .NET web applications. The guide and related sample applications are evolving. Your feedback is welcome! If you have comments about how this guide might be more helpful, please send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](lift-and-shift-existing-apps-azure-iaas.md) <!-- Next Chapter -->

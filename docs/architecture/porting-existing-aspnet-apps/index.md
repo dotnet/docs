@@ -74,9 +74,7 @@ Whether or not you choose to start from the first chapter, you can reference any
 
 This guide is available both in [PDF form](https://aka.ms/aspnet-porting-ebook) and online. Feel free to forward this document or links to its online version to your team to ensure a common understanding of these concepts.
 
-## Send your feedback
-
-This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

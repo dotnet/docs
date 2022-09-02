@@ -7,11 +7,11 @@ ms.date: 06/09/2022
 ---
 # Native AOT Deployment
 
-Publishing your app as *native AOT* produces an app that is [self-contained](index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+Publishing your app as *native AOT* produces an app that is [self-contained](../index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
 
 The benefit of native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. It is currently not supported with ASP.NET Core, but only console apps.
 
-The native AOT deployment model uses an ahead of time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a Just-In-Time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT is not allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](index.md#publish-self-contained).
+The native AOT deployment model uses an ahead of time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a Just-In-Time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT is not allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-self-contained).
 
 There are some limitations in the .NET native AOT deployment model, with the main one being that run-time code generation is not possible. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment). The support in the .NET 7 release is targeted towards console-type applications.
 
@@ -84,9 +84,9 @@ Native AOT applications comes with a few fundamental limitations and compatibili
 - No runtime code generation (for example, `System.Reflection.Emit`)
 - No C++/CLI
 - No built-in COM (only applies to Windows)
-- Requires trimming, which has [limitations](trimming/incompatibilities.md)
-- Implies compilation into a single file, which has known [incompatibilities](single-file/overview.md#api-incompatibility)
-- Apps include required runtime libraries (just like [self-contained apps](index.md#publish-self-contained), increasing their size, as compared to framework-dependent apps)
+- Requires trimming, which has [limitations](../trimming/incompatibilities.md)
+- Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility)
+- Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size, as compared to framework-dependent apps)
 
 The publish process will analyze the entire project and its dependencies and produce warnings whenever the limitations could potentially be hit by the published application at runtime.
 

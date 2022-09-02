@@ -25,7 +25,7 @@ Welcome to what's new in the .NET docs for June 2022. This article lists some of
 - [C# formatting options](../fundamentals/code-analysis/style-rules/csharp-formatting-options.md)
 - [.NET formatting options](../fundamentals/code-analysis/style-rules/dotnet-formatting-options.md)
 - [Formatting rule (IDE0055)](../fundamentals/code-analysis/style-rules/ide0055.md)
-- [Native AOT Deployment](../core/deploying/native-aot.md)
+- [Native AOT Deployment](../core/deploying/native-aot/index.md)
 - [CA1854: Prefer the `IDictionary.TryGetValue(TKey, out TValue)` method](../fundamentals/code-analysis/quality-rules/ca1854.md)
 - [Strong-name APIs throw PlatformNotSupportedException](../core/compatibility/core-libraries/6.0/strong-name-signing-exceptions.md)
 - [DiagnosticSource and DiagnosticListener](../core/diagnostics/diagnosticsource-diagnosticlistener.md)

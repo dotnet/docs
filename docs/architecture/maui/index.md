@@ -72,7 +72,7 @@ This book is aimed at readers who are already familiar with .NET MAUI. It does c
 
 ### Additional resources
 
-For official .NET MAUI content, see [.NET MAUI docs](/dotnet/maui). .NET MAUI is developed as an open source project and is available on GitHub at [dotnet/maui](https://github.com/dotnet/maui). For code samples developed with .NET MAUI, see [dotnet/maui-samples](https://github.com/dotnet/maui-samples).
+For official .NET MAUI content, see [.NET MAUI docs](/dotnet/maui). .NET MAUI is developed as an open-source project and is available on GitHub at [dotnet/maui](https://github.com/dotnet/maui). For code samples developed with .NET MAUI, see the [dotnet/maui-samples](https://github.com/dotnet/maui-samples) repo.
 
 [!INCLUDE [feedback](../includes/feedback.md)]
 

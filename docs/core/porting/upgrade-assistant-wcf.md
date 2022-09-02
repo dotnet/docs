@@ -398,7 +398,130 @@ Choose a command:
 [10:27:15 INF] Upgrade step Finalize upgrade applied successfully
 ```
 
-Ideally, after successfully running the tool, these modified files should look similar. Please check out the updated version of [CalculatorService.csproj](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/CalculatorService.csproj), [app.config](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/App.config), [wcf.config](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/wcf.config), [CalculatorSample/service.cs](https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample.Upgraded/CalculatorService/service.cs).
+Ideally, after successfully running the tool, these changes should appear in the original files.
+
+In `service.cs` file, the `using System.ServiceModel` was replaced with references to CoreWCF. The `ServiceHost` instance was also removed and the service was hosted on ASP .NET Core.
+
+```
+using System;
+using System.Threading.Tasks;
+using CoreWCF;
+using CoreWCF.Configuration;
+using CoreWCF.Description;
+using CoreWCF.Security;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+```
+
+```
+ public static async Task Main()
+    {
+        var builder = WebApplication.CreateBuilder();
+
+        // Set up port (previously this was done in configuration,
+        // but CoreWCF requires it be done in code)
+        builder.WebHost.UseNetTcp(8090);
+        builder.WebHost.ConfigureKestrel(options =>
+        {
+            options.ListenAnyIP(8080);
+        });
+
+        // Add CoreWCF services to the ASP.NET Core app's DI container
+        builder.Services.AddServiceModelServices()
+                        .AddServiceModelConfigurationManagerFile("wcf.config")
+                        .AddServiceModelMetadata()
+                        .AddTransient<CalculatorSample.CalculatorService>();
+
+        var app = builder.Build();
+
+        // Enable getting metadata/wsdl
+        var serviceMetadataBehavior = app.Services.GetRequiredService<ServiceMetadataBehavior>();
+        serviceMetadataBehavior.HttpGetEnabled = true;
+        serviceMetadataBehavior.HttpGetUrl = new Uri("http://localhost:8080/CalculatorSample/metadata");
+
+        // Configure CoreWCF endpoints in the ASP.NET Core hosts
+        app.UseServiceModel(serviceBuilder =>
+        {
+            serviceBuilder.AddService<CalculatorSample.CalculatorService>(serviceOptions => 
+            {
+                serviceOptions.DebugBehavior.IncludeExceptionDetailInFaults = true;
+            });
+
+            serviceBuilder.ConfigureServiceHostBase<CalculatorSample.CalculatorService>(serviceHost =>
+            {
+
+            });
+        });
+            
+        await app.StartAsync();
+        Console.WriteLine("The service is ready.");
+        Console.WriteLine("Press <ENTER> to terminate service.");
+        Console.WriteLine();
+        Console.ReadLine();
+        await app.StopAsync();
+    }
+```
+
+For the configuration files, the `system.serviceModel` section in `App.config` was moved to the new configuration file `wcf.config`, which was generated during the update.
+
+`App.config`
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <!-- system.serviceModel section is moved to a separate wcf.config file located at the same directory as this file.-->
+</configuration>
+```
+
+`wcf.config`
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="CalculatorSample.CalculatorService" behaviorConfiguration="CalculatorServiceBehavior">
+        <!--The host element is not supported in configuration in CoreWCF. The port that endpoints listen on is instead configured in the source code.-->
+        <!--<host>
+  <baseAddresses>
+    <add baseAddress="net.tcp://localhost:8090/CalculatorSample/service" />
+    <add baseAddress="http://localhost:8080/CalculatorSample/service" />
+  </baseAddresses>
+</host>-->
+        <!-- this endpoint is exposed at the base address provided by host: net.tcp://localhost:8090/CalculatorSample/service  -->
+        <endpoint address="/CalculatorSample/service" binding="netTcpBinding" contract="CalculatorSample.ICalculator" />
+        <!-- the mex endpoint is exposed at http://localhost:8080/CalculatorSample/service/ -->
+        <!--The mex endpoint is removed because it's not support in CoreWCF. Instead, the metadata service is enabled in the source code.-->
+      </service>
+    </services>
+    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->
+    <!--The behavior element is not supported in configuration in CoreWCF. Some service behaviors, such as metadata, are configured in the source code.-->
+    <!--<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorServiceBehavior">
+      <serviceMetadata httpGetEnabled="True" />
+      <serviceDebug includeExceptionDetailInFaults="True" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>-->
+  </system.serviceModel>
+</configuration>
+```
+
+Lastly, in the project file, `CalculatorService.csproj`, the SDK was updated to `Microsoft.NET.Sdk.Web` to enable ASP .NET Core host and CoreWCF package references were added.
+
+```
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.336902">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="CoreWCF.NetTcp" Version="1.1.0" />
+    <PackageReference Include="CoreWCF.Primitives" Version="1.1.0" />
+    <PackageReference Include="CoreWCF.ConfigurationManager" Version="1.1.0" />
+    <PackageReference Include="CoreWCF.Http" Version="1.1.0" />
+    <PackageReference Include="CoreWCF.WebHttp" Version="1.1.0" />
+  </ItemGroup>
+```
 
 Notice that in the CalculatorSample, there is not a project-to-project dependency and the sample can run successfully after only updating the CalculatorService. But in other cases with different dependencies, you might need to update other projects in the same solution as well.
 

@@ -39,7 +39,7 @@ string text = string.Format("{0:C}", 100);
 
 ## Version introduced
 
-.NET 7
+.NET 7 RC 1
 
 ## Recommended action
 

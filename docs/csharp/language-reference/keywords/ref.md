@@ -69,7 +69,7 @@ The previous examples pass value types by reference. You can also use the `ref` 
   
 [!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#3)]
 
-For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](method-parameters.md#passing-reference-type-parameters).
+For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](method-parameters.md).
   
 ## Reference return values
 

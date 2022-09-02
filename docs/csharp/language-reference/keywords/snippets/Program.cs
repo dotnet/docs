@@ -17,6 +17,11 @@ namespace keywords
             await AsyncExceptionExamples.Examples();
             Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");
             TestClassAndStruct.Main();
+            ParameterModifiers.PassValueByValue();
+            ParameterModifiers.PassingValueByReferemce();
+            ParameterModifiers.PassingReferenceByValue();
+            ParameterModifiers.PassingReferenceByReference();
+
         }
     }
 

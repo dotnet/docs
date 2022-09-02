@@ -154,12 +154,13 @@ Let's add a handler to write a line that shows the progress in the console windo
 
 You've seen patterns that are followed throughout the .NET ecosystem. By learning these patterns and conventions, you'll be writing idiomatic C# and .NET quickly.
 
-Next, you'll see some changes in these patterns in the most recent release of .NET.
-
-[Next](modern-events.md)
-
 ## See also
 
 - [Introduction to events](events-overview.md)
 - [Event design](../standard/design-guidelines/event.md)
 - [Handle and raise events](../standard/events/index.md)
+
+Next, you'll see some changes in these patterns in the most recent release of .NET.
+
+> [!div class="step-by-step"]
+> [Next](modern-events.md)

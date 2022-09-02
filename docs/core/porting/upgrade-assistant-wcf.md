@@ -1,7 +1,7 @@
 ---
 title: Upgrade WCF Server-side Project to use CoreWCF on .NET 6
 description: Use the .NET Upgrade Assistant to upgrade an existing WCF Server-side project on .NET Framework to use CoreWCF services on .NET 6.
-author: Simona Liao
+author: SimonaLiao
 ms.date: 09/01/2022
 ---
 # Upgrade a WCF Server-side Project to use CoreWCF on .NET 6
@@ -16,17 +16,17 @@ For more information on how to install the tool, see [Overview of the .NET Upgra
 
 ## Things to know before starting
 
-This tool currently supports C#, and uses [CoreWCF services](https://devblogs.microsoft.com/dotnet/corewcf-v1-released/) to port self-hosted WCF Server-side project.
+This tool currently supports C# projects, and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side project to .NET 6.
 
-Here are some requirements for the WCF project to be applicable for this upgrade:
+For the WCF project to be applicable for this upgrade, it must meet the following requirements:
 
 1. Includes a .cs file that references `System.ServiceModel` and creates new `ServiceHost`.
-    a. If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
+    - If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
 2. Includes a .config file that stores `System.ServiceModel` properties
 
-This tool does not support WCF projects hosted via .svc file yet.
+This current version of the tool does not support WCF projects hosted via .svc file(s).
 > [!NOTE]
-> If your project is not applicable for this tool yet, we recommend you to check out the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF) and
+> If your project is not applicable for this tool, we recommend you to check out the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF/blob/main/Documentation/Walkthrough.md) and
 [BeanTrader Sample demo](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/) and manually update the project.
 
 ## Demo app
@@ -36,6 +36,8 @@ You can use the [Basic Calculator Sample][wcf-sample] project to test upgrading 
 If you want to try out a more complicated sample, please check out the [BeanTrader Sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
 
 ## Run upgrade-assistant
+
+If you have not installed the tool, please follow the [instructions here](https://github.com/dotnet/upgrade-assistant#installation) to install the upgrade assistant.
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
@@ -150,7 +152,7 @@ Choose a command:
 
 #### Create a backup
 
-In this example of upgrading the BeanTraderServer project, you'll apply each step. The first step, **command 1**, is backing up the project:
+In this example of upgrading the CalculatorService project, you'll apply each step. The first step, **command 1**, is backing up the project:
 
 ```
 [10:25:52 INF] Applying upgrade step Back up project
@@ -305,9 +307,9 @@ Once the packages are updated, the next step is to update any template files. In
 
 #### Update WCF service to CoreWCF (Preview)
 
-By the time this documentation was written, the WCF updater extension is under Preview and receiving feedbacks from the community. If you have any feedbacks for the Preview version, please open an issue in the [Upgrade Assistant GitHub repository](https://github.com/dotnet/upgrade-assistant/issues).
+> Note: At the time this documentation was written, the WCF updater extension is supplied as a Preview release. If you have any feedback for the Preview version, please open an issue in the [Upgrade Assistant GitHub repository](https://github.com/dotnet/upgrade-assistant/issues) with `area:WCF` tag.
 
-The upgrade assistant will first initialize the step and checks if the project is applicable for WCF update.
+The upgrade assistant will first initialize the WCF Updater step and check if the project is applicable for WCF update.
 
 ```
 [10:26:20 INF] Initializing upgrade step Update WCF service to CoreWCF (Preview)
@@ -402,7 +404,7 @@ Notice that if you want to run both CalculatorClient and CalculatorService, you 
 
 ## After upgrading
 
-After you upgrade your projects, you'll need to compile and test them. Most certainly you'll have more work to do in finishing the upgrade. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
+After you upgrade your projects, you'll need to compile and test them. The upgrade assistant will do what it can, but it can't solve every incompatibility as part of the project upgrade. For example, it's possible that the .NET Framework version of your app contained library references that your project isn't actually using. You'll need to analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
 
 ## Troubleshooting tips
 
@@ -412,9 +414,9 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 
 ## See also
 
-- [Upgrading a WCF service to .NET 6 with CoreWCF](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/)
-- [CoreWCF 1.0 has been Released, WCF for .NET Core and .NET 5+](https://devblogs.microsoft.com/dotnet/corewcf-v1-released/)
-- [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
+- Blog: [Upgrading a WCF service to .NET 6 with CoreWCF](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/)
+- Blog: [CoreWCF 1.0 has been Released, WCF for .NET Core and .NET 5+](https://devblogs.microsoft.com/dotnet/corewcf-v1-released/)
+- Docs: [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
 [wcf-sample]: https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample

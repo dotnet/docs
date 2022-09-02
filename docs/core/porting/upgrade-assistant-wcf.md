@@ -466,6 +466,7 @@ using Microsoft.Extensions.DependencyInjection;
 For the configuration files, the `system.serviceModel` section in `App.config` was moved to the new configuration file `wcf.config`, which was generated during the update.
 
 `App.config`
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -474,6 +475,7 @@ For the configuration files, the `system.serviceModel` section in `App.config` w
 ```
 
 `wcf.config`
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>

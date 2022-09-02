@@ -85,12 +85,12 @@ namespace EventSampleCode
                 var totalDirs = allDirectories.Length + 1;
                 foreach (var dir in allDirectories)
                 {
-                    RaiseSearchDirectoryChanged(dir, totalDirs, completedDirs++));
+                    RaiseSearchDirectoryChanged(dir, totalDirs, completedDirs++);
                     // Search 'dir' and its subdirectories for files that match the search pattern:
                     SearchDirectory(dir, searchPattern);
                 }
                 // Include the Current Directory:
-                RaiseSearchDirectoryChanged(directory, totalDirs, completedDirs++));
+                RaiseSearchDirectoryChanged(directory, totalDirs, completedDirs++);
                 
                 SearchDirectory(directory, searchPattern);
             }

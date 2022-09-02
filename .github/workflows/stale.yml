@@ -15,12 +15,12 @@ jobs:
     - uses: actions/stale@v4.1.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        days-before-stale: 120
-        days-before-close: 14
-        stale-issue-label: needs-more-info
+        days-before-stale: 180
+        days-before-close: 7
+        stale-issue-label: stale
         close-issue-message: >
-            This issue has been automatically closed due to no response from the original author.
-            Please feel free to reopen it if you have more information that can help us investigate the issue further.
+            This issue has been automatically closed due to lack of activity.
+            If you feel this issue is still important, please comment and we will reopen it.
         exempt-issue-labels: breaking-change,Pri0
         operations-per-run: 50
         debug-only: true

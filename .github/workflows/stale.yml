@@ -1,4 +1,4 @@
-- name: Close stale issues
+name: Close stale issues
 
 on:
   schedule: # Run 5 minutes after the hour every hour.

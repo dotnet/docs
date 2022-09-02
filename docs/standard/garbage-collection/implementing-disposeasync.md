@@ -146,7 +146,7 @@ The highlighted lines in the following code show what it means to have "stacked 
 :::code language="csharp" id="dontdothis" source="snippets/dispose-async/ExamplePatterns.cs" highlight="9-10":::
 
 > [!TIP]
-> Avoid this pattern as it could lead to unexpected behavior.
+> Avoid this pattern as it could lead to unexpected behavior. If you use one of the acceptable patterns, the problem of undisposed objects is non-existent. The clean-up operations are correctly performed when `using` statements aren't stacked.
 
 ## See also
 

@@ -141,7 +141,7 @@ In the preceding example, each asynchronous clean up operation is implicitly sco
 
 ### Unacceptable pattern
 
-The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, neither object is properly disposed of. The variable `objTwo` is never assigned because the constructor did not complete successfully. As a result, the constructor for `AnotherAsyncDisposable` is responsible for disposing any resources allocated before it throws an exception. If the `ExampleAsyncDisposable` type has a finalizer, it is eligible for finalization. This problem is non-existent when using one of the acceptable patterns, as the clean up operations are correctly performed when they're not stacked.
+The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, neither object is properly disposed of. The variable `objTwo` is never assigned because the constructor did not complete successfully. As a result, the constructor for `AnotherAsyncDisposable` is responsible for disposing any resources allocated before it throws an exception. If the `ExampleAsyncDisposable` type has a finalizer, it's eligible for finalization.
 
 :::code language="csharp" id="dontdothis" source="snippets/dispose-async/ExamplePatterns.cs" highlight="9-10":::
 

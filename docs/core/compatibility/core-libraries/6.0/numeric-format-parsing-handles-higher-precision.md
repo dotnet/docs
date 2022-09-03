@@ -7,6 +7,9 @@ ms.date: 02/26/2021
 
 .NET now supports greater precision values when formatting numbers as strings using `ToString` and `TryFormat`.
 
+> [!NOTE]
+> The maximum precision was changed again in .NET 7. For more information, see [Maximum precision for numeric format strings](../7.0/max-precision-numeric-format-strings.md).
+
 ## Change description
 
 When formatting numbers as strings, the *precision specifier* in the [format string](../../../../standard/base-types/standard-numeric-format-strings.md) represents the number of digits in the resulting string. Depending on the *format specifier*, which is the [character at the beginning of the string](../../../../standard/base-types/standard-numeric-format-strings.md#standard-format-specifiers), the precision can represent the total number of digits, the number of significant digits, or the number of decimal digits.
@@ -97,53 +100,4 @@ This change was implemented in the parsing logic that affects all numeric types.
 
 - [Standard numeric format strings](../../../../standard/base-types/standard-numeric-format-strings.md)
 - [Character literals in custom format strings](../../../../standard/base-types/custom-numeric-format-strings.md#character-literals)
-
-<!--
-
-### Category
-
-Core .NET libraries
-
-### Affected APIs
-
-- `M:System.Numerics.BigInteger.ToString(System.String)`
-- `M:System.Numerics.BigInteger.ToString(System.String,System.IFormatProvider)`
-- `M:System.Numerics.BigInteger.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Int32.ToString(System.String)`
-- `M:System.Int32.ToString(System.String,System.IFormatProvider)`
-- `M:System.Int32.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.UInt32.ToString(System.String)`
-- `M:System.UInt32.ToString(System.String,System.IFormatProvider)`
-- `M:System.UInt32.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Byte.ToString(System.String)`
-- `M:System.Byte.ToString(System.String,System.IFormatProvider)`
-- `M:System.Byte.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.SByte.ToString(System.String)`
-- `M:System.SByte.ToString(System.String,System.IFormatProvider)`
-- `M:System.SByte.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Int16.ToString(System.String)`
-- `M:System.Int16.ToString(System.String,System.IFormatProvider)`
-- `M:System.Int16.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.UInt16.ToString(System.String)`
-- `M:System.UInt16.ToString(System.String,System.IFormatProvider)`
-- `M:System.UInt16.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Int64.ToString(System.String)`
-- `M:System.Int64.ToString(System.String,System.IFormatProvider)`
-- `M:System.Int64.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.UInt64.ToString(System.String)`
-- `M:System.UInt64.ToString(System.String,System.IFormatProvider)`
-- `M:System.UInt64.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Half.ToString(System.String)`
-- `M:System.Half.ToString(System.String,System.IFormatProvider)`
-- `M:System.Half.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Single.ToString(System.String)`
-- `M:System.Single.ToString(System.String,System.IFormatProvider)`
-- `M:System.Single.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Double.ToString(System.String)`
-- `M:System.Double.ToString(System.String,System.IFormatProvider)`
-- `M:System.Double.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-- `M:System.Decimal.ToString(System.String)`
-- `M:System.Decimal.ToString(System.String,System.IFormatProvider)`
-- `M:System.Decimal.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)`
-
--->
+- [Maximum precision for numeric format strings (.NET 7)](../7.0/max-precision-numeric-format-strings.md)

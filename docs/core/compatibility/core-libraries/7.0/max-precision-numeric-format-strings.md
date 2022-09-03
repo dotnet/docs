@@ -5,13 +5,13 @@ ms.date: 09/02/2022
 ---
 # Maximum precision for numeric format strings
 
-The maximum precision when formatting numbers as strings using `ToString` and `TryFormat`been changed from <xref:System.Int32.MaxValue?displayProperty=nameWithType> to 999,999,999has . (The maximum precision was [previously changed](../6.0/numeric-format-parsing-handles-higher-precision.md) to <xref:System.Int32.MaxValue?displayProperty=nameWithType> in .NET 6.)
+The maximum precision when formatting numbers as strings using `ToString` and `TryFormat` has been changed from <xref:System.Int32.MaxValue?displayProperty=nameWithType> to 999,999,999. (The maximum precision was [previously changed](../6.0/numeric-format-parsing-handles-higher-precision.md) to <xref:System.Int32.MaxValue?displayProperty=nameWithType> in .NET 6.)
 
 In addition, the maximum exponent allowed when parsing an <xref:System.Int64> from a string has been limited to 999,999,999.
 
 ## Previous behavior
 
-In .NET 6, the standard numeric format parsing logic was limited to a precision of <xref:System.Int32.MaxValue?displayProperty=nameWithType> or less. The intended behavior was to throw a <xref:System.FormatException> for any precision larger than <xref:System.Int32.MaxValue?displayProperty=nameWithType>. However, .NET 6 didn't throw that exception for some such inputs due to a bug. The intended behavior was:
+In .NET 6, the standard numeric format parsing logic was limited to a precision of <xref:System.Int32.MaxValue?displayProperty=nameWithType> or less. The intended behavior was to throw a <xref:System.FormatException> for any precision larger than <xref:System.Int32.MaxValue?displayProperty=nameWithType>. However, due to a bug, .NET 6 didn't throw that exception for some such inputs. The intended behavior was:
 
 ```csharp
 double d = 123.0;

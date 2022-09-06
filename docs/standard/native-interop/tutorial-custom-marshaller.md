@@ -79,8 +79,7 @@ namespace CustomMarshalling
 }
 ```
 
-Let's consider a case where state is desirable. Observe additional `CustomMarshaller`, with a more specific mode. This specialized marshaller is defined as a "stateful" and can store state across the interop call. More specialization and state permit additional optimizations. The source generator can be instructed to provide a reasonable sized stack allocation that could avoid an explicit allocation by the runtime. If the source generator discovers a `BufferSize` property this is used as an indication a stack allocation is requested.
-
+Let's consider a case where state is desirable. Observe the additional `CustomMarshaller` and note the more specific mode, `MarshalMode.ManagedToUnmanagedIn`. This specialized marshaller is implemented as "stateful" and can store state across the interop call. More specialization and state permit optimizations and tailored marshalling for a mode. For example, the source generator can be instructed to provide a reasonable sized stack allocation that could avoid an explicit allocation during marshalling. The allocated buffer is requested by the marshaller when the source generator discovers a `BufferSize` property. This property indicates the amount of stack space the marshaller would like to get during the marshal call.
 
 ```csharp
 namespace CustomMarshalling
@@ -113,7 +112,7 @@ namespace CustomMarshalling
 }
 ```
 
-The above marshallers now can be used to call the first of our two native functions. The below declaration uses the `LibraryImport` attribute, just like `DllImport`, but also relies upon the `MarshalUsing` to instruct the source generator what marshaller to use when calling the native function. There is no need to clarify if the stateless or stateful marshaller should be used. This is handled by implementer defining the "mode" on the marshaller. The source generator will select the most appropriate marshaller based on the context in which the `MarshalUsing` is applied.
+The first of our two native functions can now be called using our UTF-32 string marshallers. The below declaration uses the `LibraryImport` attribute, just like `DllImport`, but relies upon the `MarshalUsing` to instruct the source generator what marshaller to use when calling the native function. There is no need to clarify if the stateless or stateful marshaller should be used. This is handled by the implementer defining the "mode" on the marshaller. The source generator will select the most appropriate marshaller based on the context in which the `MarshalUsing` is applied, `MarshalMode.Default` being the fallback.
 
 ```csharp
 // extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintString(char32_t* chars);
@@ -122,6 +121,29 @@ internal static partial void PrintString([MarshalUsing(typeof(Utf32StringMarshal
 ```
 
 ## Customize marshalling for a user-defined type
+
+Marshalling a user-defined type requires defining not only the marshalling logic, but also the type in C# to marshal to/from. Let's recall the native type we are trying to marshal and define what it would ideally look like in C#.
+
+```cpp
+struct error_data
+{
+    int code;
+    bool is_fatal_error;
+    char32_t* message;    /* UTF-32 encoded string */
+};
+```
+
+An `int` is the same in both modern C++ and in .NET. The C++ `bool` is defined as a single byte, the same in .NET too. Building on top of `Utf32StringMarshaller`, we can marshal `char32_t*` as a .NET `string`.  We also change the style to match .NET and the result is the following definition.
+
+```csharp
+struct ErrorData
+{
+    public int Code;
+    public bool IsFatalError;
+    public string? Message;
+}
+```
+
 
 - `NativeMarshalling` - default marshalling for the type
 - marshal mode

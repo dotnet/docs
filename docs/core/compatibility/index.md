@@ -163,7 +163,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding the [sealed](../../csharp/language-reference/keywords/sealed.md) keyword to an interface member**
 
-  Adding `sealed` to a default interface member will make it non-virtual, preventing a derived type's implemention of that member from being called.
+  Adding `sealed` to a default interface member will make it non-virtual, preventing a derived type's implementation of that member from being called.
 
 - ❌ **DISALLOWED: Adding an abstract member to a public type that has accessible (public or protected) constructors and that is not [sealed](../../csharp/language-reference/keywords/sealed.md)**
 

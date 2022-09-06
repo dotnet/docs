@@ -35,7 +35,7 @@ Complete details on the design can be found in the [dotnet/runtime](https://gith
 
 ## Introducing the native library
 
-Using the `LibraryImportAttribute` source generator would mean consuming a native, or unmanaged, library. A native library might be a shared library (that is, `.dll`, `.so`, or `dylib`) that directly calls an operating system API, not exposed through .NET, or one that is heavily optimized in an unmanaged language that a .NET developer wants to consume. For this tutorial we are going to build our own shared library that exposes a C style API surface. The below represents a user defined type and two APIs, there are more in the sample, that we would like to consume from C#.
+Using the `LibraryImportAttribute` source generator would mean consuming a native, or unmanaged, library. A native library might be a shared library (that is, `.dll`, `.so`, or `dylib`) that directly calls an operating system API, not exposed through .NET, or one that is heavily optimized in an unmanaged language that a .NET developer wants to consume. For this tutorial we are going to build our own shared library that exposes a C style API surface. The below represents a user defined type and two APIs that we would like to consume from C#. These two APIs represent the "in" scenario, but there are additional scenarios to explore in the sample.
 
 ```cpp
 struct error_data
@@ -133,7 +133,7 @@ struct error_data
 };
 ```
 
-An `int` is the same in both modern C++ and in .NET. The C++ `bool` is defined as a single byte, the same in .NET too. Building on top of `Utf32StringMarshaller`, we can marshal `char32_t*` as a .NET `string`.  We also change the style to match .NET and the result is the following definition.
+An `int` is the same size in both modern C++ and in .NET. A `bool` is the canonical example for a boolean value in .NET. Building on top of `Utf32StringMarshaller`, we can marshal `char32_t*` as a .NET `string`. Accounting for .NET style the result is the following definition in C#.
 
 ```csharp
 struct ErrorData
@@ -144,11 +144,74 @@ struct ErrorData
 }
 ```
 
+Following the naming pattern, we will name the marshaller `ErrorDataMarshaller`. Instead of creating a default marshaller, we will instead define only an "in", "out", and collection based marshaller for this type. This will demonstrate the case where if a scenario isn't provided, the source generator will fail. Let's start with the "in" direction.
 
-- `NativeMarshalling` - default marshalling for the type
-- marshal mode
-  - specific modes, can point to separate marshaller implementations
-  - trying to use in other scenarios would fail
+```csharp
+namespace CustomMarshalling
+{
+    [CustomMarshaller(typeof(ErrorData), MarshalMode.ManagedToUnmanagedIn, typeof(ErrorDataMarshaller))]
+    internal static unsafe class ErrorDataMarshaller
+    {
+        // Unmanaged representation of ErrorData.
+        // Should mimic the unmanaged error_data type at a binary level.
+        internal struct ErrorDataUnmanaged
+        {
+            public int Code;        // .NET doesn't support less than 32-bit, so int is 32-bit.
+            public byte IsFatal;    // The C++ bool is defined as a single byte.
+            public uint* Message;   // This could be as simple as a void*, but uint* is closer.
+        }
+
+        public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
+            => throw new NotImplementedException();
+
+        public static void Free(ErrorDataUnmanaged unmanaged)
+            => throw new NotImplementedException();
+    }
+}
+```
+
+The conversion from an `ErrorData` to a `ErrorDataUnmanaged`, that will mimic the shape of the unmanaged type is trivial with `Utf32StringMarshaller`.
+
+```csharp
+public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
+{
+    return new ErrorDataUnmanaged
+    {
+        Code = managed.Code,
+        IsFatal = (byte)(managed.IsFatalError ? 1 : 0),
+        Message = Utf32StringMarshaller.ConvertToUnmanaged(managed.Message),
+    };
+}
+```
+
+[CustomMarshaller(typeof(ErrorData), MarshalMode.ManagedToUnmanagedOut, typeof(ThrowOnFatalErrorOut))]
+[CustomMarshaller(typeof(ErrorData), MarshalMode.ElementOut, typeof(Out))]
+
+    public static class Out
+    {
+        public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
+            => throw new NotImplementedException();
+
+        public static void Free(ErrorDataUnmanaged unmanaged)
+            => throw new NotImplementedException();
+    }
+
+    public static class ThrowOnFatalErrorOut
+    {
+        public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
+            => throw new NotImplementedException();
+
+        public static void Free(ErrorDataUnmanaged unmanaged)
+            => throw new NotImplementedException();
+    }
+
+
+Let us assume we are not only going to consume the native library, but we are also going to share our work with the community and provide an interop library. This means we could provide `ErrorData` an implied marshaller whenever it is used in a P/Invoke by adding `[NativeMarshalling(typeof(ErrorDataMarshaller))]` to the `ErrorData` definition.
+
+```csharp
+[NativeMarshalling(typeof(ErrorDataMarshaller))]
+struct ErrorData { ... }
+```
 
 ## `LibraryImportAttribute` source generator Analyzer and Fixer
 

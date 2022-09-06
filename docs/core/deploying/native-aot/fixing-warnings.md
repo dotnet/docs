@@ -47,6 +47,7 @@ The AOT warnings are meant to bring predictability to native AOT builds. Majorit
 ### RequiresDynamicCode
 
 <xref:System.Diagnostics.CodeAnalysis.RequiresDynamicCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with AOT, meaning that it might use reflection or some other mechanism to create new native code at runtime. This attribute is used when code is fundamentally not AOT compatible, or the native dependency is too complex to statically predict at build time. This would often be true for methods that use the Type.MakeGenericType API, reflection emit, or other runtime code generation technologies. An example would be:
+
 ```csharp
 [RequiresDynamicCode("Use 'MethodFriendlyToAot' instead")]
 void MethodWithReflectionEmit() { ... }

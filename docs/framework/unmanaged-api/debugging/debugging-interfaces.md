@@ -262,6 +262,9 @@ This section describes the unmanaged interfaces that handle the debugging of a p
   
  [ICorDebugModule3 Interface](icordebugmodule3-interface.md)\
  Creates a symbol reader for a dynamic module.  
+ 
+ [ICorDebugModule4 Interface](icordebugmodule4-interface.md)\
+ Provides a method that determines whether the module is loaded into memory in mapped/hydrated format.  
   
  [ICorDebugModuleBreakpoint Interface](icordebugmodulebreakpoint-interface.md)\
  Extends `ICorDebugBreakpoint` to provide access to specific modules.  
@@ -313,6 +316,9 @@ This section describes the unmanaged interfaces that handle the debugging of a p
   
  [ICorDebugProcess8 Interface](icordebugprocess8-interface.md)\
  Logically extends the [ICorDebugProcess](icordebugprocess-interface.md) interface to enable or disable certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.  
+ 
+ [ICorDebugProcess11 Interface](icordebugprocess11-interface.md)\
+ Provides a method that configures the debugger to handle in-memory metadata updates in the target process.  
   
  [ICorDebugProcessEnum Interface](icordebugprocessenum-interface.md)\
  Implements `ICorDebugEnum` methods, and enumerates `ICorDebugProcess` arrays.  

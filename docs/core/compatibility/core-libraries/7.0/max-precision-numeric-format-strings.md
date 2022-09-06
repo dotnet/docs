@@ -7,7 +7,7 @@ ms.date: 09/02/2022
 
 The maximum precision when formatting numbers as strings using `ToString` and `TryFormat` has been changed from <xref:System.Int32.MaxValue?displayProperty=nameWithType> to 999,999,999. (The maximum precision was [previously changed](../6.0/numeric-format-parsing-handles-higher-precision.md) to <xref:System.Int32.MaxValue?displayProperty=nameWithType> in .NET 6.)
 
-In addition, the maximum exponent allowed when parsing an <xref:System.Int64> from a string has been limited to 999,999,999.
+In addition, the maximum exponent allowed when parsing a <xref:System.Numerics.BigInteger> from a string has been limited to 999,999,999.
 
 ## Previous behavior
 
@@ -23,7 +23,7 @@ string intMaxPlus1String = intMaxPlus1.ToString();
 Assert.Throws<FormatException>(() => d.ToString("E" + intMaxPlus1String)); // Throws.
 ```
 
-In addition, there was no limit on the exponent size when parsing an <xref:System.Int64> from a string.
+In addition, there was no limit on the exponent size when parsing a <xref:System.Numerics.BigInteger> from a string.
 
 ## New behavior
 
@@ -42,7 +42,7 @@ d.ToString("E999999999"); // Doesn't throw.
 d.ToString("E00000999999999"); // Doesn't throw.
 ```
 
-In addition, if you attempt to parse an <xref:System.Int64> with an exponent greater than 999,999,999 from a string, a <xref:System.FormatException> is thrown.
+In addition, if you attempt to parse a <xref:System.Numerics.BigInteger> with an exponent greater than 999,999,999 from a string, a <xref:System.FormatException> is thrown.
 
 ## Version introduced
 
@@ -85,8 +85,8 @@ This change was implemented in the parsing logic that affects all numeric types.
 - <xref:System.UInt16.ToString(System.String)?displayProperty=fullName>
 - <xref:System.UInt16.ToString(System.String,System.IFormatProvider)?displayProperty=fullName>
 - <xref:System.UInt16.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)?displayProperty=fullName>
-- <xref:System.Int64.Parse%2A?displayProperty=fullName>
-- <xref:System.Int64.TryParse%2A?displayProperty=fullName>
+- <xref:System.Numerics.BigInteger.Parse%2A?displayProperty=fullName>
+- <xref:System.Numerics.BigInteger.TryParse%2A?displayProperty=fullName>
 - <xref:System.Int64.ToString(System.String)?displayProperty=fullName>
 - <xref:System.Int64.ToString(System.String,System.IFormatProvider)?displayProperty=fullName>
 - <xref:System.Int64.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)?displayProperty=fullName>

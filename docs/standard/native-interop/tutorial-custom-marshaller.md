@@ -64,7 +64,6 @@ The `Utf32StringMarshaller` type has an instance of the `CustomMarshaller`, whic
 
 The specifics of how this particular marshaller performs the conversion from `string` to `char32_t*` can be found in the sample, note though that any .NET APIs could be used (for example, [`Encoding.UTF32`](https://docs.microsoft.com/dotnet/api/system.text.encoding.utf32)).
 
-
 ```csharp
 namespace CustomMarshalling
 {

@@ -85,6 +85,7 @@ Change the version of an event whenever you change the data that is serialized w
 end of the event declaration, that is, at the end of the list of method parameters. If this isn't possible, create a new event with a
 new ID to replace the old one.
 8. When declaring events methods, specify fixed-size payload data before variably sized data.
+9. Do not use strings containing null characters. When generating the manifest for ETW EventSource will declare all strings as null terminated, even though it is possible to have a null character in a C# String. If a string contains a null character the entire string will be written to the event payload, but any parser will treat the first null character as the end of the string. If there are payload arguments after the string, the remainder of the string will be parsed instead of the intended value.
 
 ## Typical event customizations
 

@@ -308,7 +308,7 @@ The environment variables used for `DefaultProxy` initialization on Windows and 
 - `HTTP_PROXY`: the proxy server used on HTTP requests.
 - `HTTPS_PROXY`: the proxy server used on HTTPS requests.
 - `ALL_PROXY`: the proxy server used on HTTP and/or HTTPS requests in case `HTTP_PROXY` and/or `HTTPS_PROXY` are not defined.
-- `NO_PROXY`: a comma-separated list of hostnames that should be excluded from proxying. Asterisks are not supported for wildcards; use a leading dot in case you want to match a subdomain. Examples: `NO_PROXY=.example.com` will match www.example.com, but not `example.com`. `NO_PROXY=example.com` will not match `www.example.com`. This behavior might be revisited in the future to match other ecosystems better.
+- `NO_PROXY`: a comma-separated list of hostnames that should be excluded from proxying. Asterisks are not supported for wildcards; use a leading dot in case you want to match a subdomain. Examples: `NO_PROXY=.example.com` (with leading dot) will match `www.example.com`, but will not match `example.com`. `NO_PROXY=example.com` (without leading dot) will not match `www.example.com`. This behavior might be revisited in the future to match other ecosystems better.
 
 On systems where environment variables are case-sensitive, the variable names may be all lowercase or all uppercase. The lowercase names are checked first.
 

@@ -13,13 +13,13 @@ helpviewer_keywords:
 
 In this tutorial, you'll learn how to implement a marshaller and use it for [custom marshalling](custom-marshalling-source-generation.md) in [source-generated P/Invokes](pinvoke-source-generation.md).
 
-We will implement marshallers for a built-in type, customize marshalling for a specific parameter, and a user-defined type, specify default marshalling for a user-defined type.
+We will implement marshallers for a built-in type, customize marshalling for a specific parameter and a user-defined type, and specify default marshalling for a user-defined type.
 
 All source code used in this tutorial is available in the [dotnet/samples repository](https://github.com/dotnet/samples/tree/main/core/interop/source-generation/custom-marshalling).
 
-## Overview of the `LibraryImportAttribute` source generator
+## Overview of the `LibraryImport` source generator
 
-The `LibraryImportAttribute` is the user entry point for a source generator introduced in .NET 7. This new source generator is designed to generate all marshalling code at compile-time instead of at run-time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable. The most important cost is generation of marshalling code at run-time. This cost can be measured in terms of application performance but also in terms of potential target platforms that may not support dynamic code generation. The NativeAOT application model addresses issues with dynamic code generation by precompiling all code ahead of time directly into native code. Using `DllImport` is therefore not an option because of its run-time generation semantics. The `LibraryImportAttribute` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
+The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile-time instead of at run-time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable. The most important cost is generation of marshalling code at run-time. This cost can be measured in terms of application performance but also in terms of potential target platforms that may not support dynamic code generation. The NativeAOT application model addresses issues with dynamic code generation by precompiling all code ahead of time directly into native code. Platforms that require full NativeAOT scenarios mean using `DllImport` is not an option because of its run-time generation semantics. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
 
 In order to express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types will be used throughout this tutorial.
 
@@ -31,11 +31,15 @@ In order to express the details needed to generated marshalling code both for th
 
 These attributes, however are not the only mechanisms available to the custom marshaller author, the source generator insepct the marshaller itself for various other indications that inform how marshalling should occur.
 
-Complete details on the design can be found in the [dotnet/runtime](https://github.com/dotnet/runtime/tree/main/docs/design/libraries/LibraryImportGenerator) repository.
+Complete details on the design can be found in the [dotnet/runtime][design_libraryimport] repository.
+
+### Source generator Analyzer and Fixer
+
+Along with the source generator itself, an Analyzer and Fixer are both provided. The Analyzer and Fixer are enabled and available by default since .NET 7 RC1. The Analyzer is designed to help guide developers into using the source generator properly and the Fixer provides automated conversions from many `DllImport` patterns into the appropriate `LibraryImport` signature.
 
 ## Introducing the native library
 
-Using the `LibraryImportAttribute` source generator would mean consuming a native, or unmanaged, library. A native library might be a shared library (that is, `.dll`, `.so`, or `dylib`) that directly calls an operating system API, not exposed through .NET, or one that is heavily optimized in an unmanaged language that a .NET developer wants to consume. For this tutorial we are going to build our own shared library that exposes a C style API surface. The below represents a user defined type and two APIs that we would like to consume from C#. These two APIs represent the "in" scenario, but there are additional scenarios to explore in the sample.
+Using the `LibraryImport` source generator would mean consuming a native, or unmanaged, library. A native library might be a shared library (that is, `.dll`, `.so`, or `dylib`) that directly calls an operating system API, not exposed through .NET, or one that is heavily optimized in an unmanaged language that a .NET developer wants to consume. For this tutorial we are going to build our own shared library that exposes a C style API surface. The below represents a user defined type and two APIs that we would like to consume from C#. These two APIs represent the "in" mode, but there are additional modes to explore in the sample.
 
 ```cpp
 struct error_data
@@ -144,7 +148,7 @@ struct ErrorData
 }
 ```
 
-Following the naming pattern, we will name the marshaller `ErrorDataMarshaller`. Instead of creating a default marshaller, we will instead define only an "in", "out", and collection based marshaller for this type. This will demonstrate the case where if a scenario isn't provided, the source generator will fail. Let's start with the "in" direction.
+Following the naming pattern, we will name the marshaller `ErrorDataMarshaller`. Instead of creating a default marshaller, we will only define marshallers for some modes. This will demonstrate the case where if a mode isn't provided, the source generator will fail. Let's start with the "in" direction.
 
 ```csharp
 namespace CustomMarshalling
@@ -170,7 +174,9 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from an `ErrorData` to a `ErrorDataUnmanaged`, that will mimic the shape of the unmanaged type is trivial with `Utf32StringMarshaller`.
+The conversion from an `ErrorData` to an `ErrorDataUnmanaged`, that will mimic the shape of the unmanaged type is now trivial with `Utf32StringMarshaller`. Note this is a "stateless" marshaller because the marshaller itself only consists of `static` functions.
+
+Marshalling of an `int` is unnecessary since representations are identical in unmanaged and managed. A `bool`'s binary representation isn't defined in .NET so we use its current value to define a zero and non-zero value in the unmanaged type. We then reuse our UTF-32 marshaller to convert our `string` field into a `uint*`.
 
 ```csharp
 public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
@@ -184,39 +190,90 @@ public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
 }
 ```
 
-[CustomMarshaller(typeof(ErrorData), MarshalMode.ManagedToUnmanagedOut, typeof(ThrowOnFatalErrorOut))]
-[CustomMarshaller(typeof(ErrorData), MarshalMode.ElementOut, typeof(Out))]
+Recall we are defining this marshaller as an "in" so we must clean-up any allocations performed during the marshalling. The `int` and `bool` fields didn't allocate any memory, but the `Message` field did. We again reuse `Utf32StringMarshaller` to clean up the marshalled string.
 
-    public static class Out
+```csharp
+public static void Free(ErrorDataUnmanaged unmanaged)
+    => Utf32StringMarshaller.Free(unmanaged.Message);
+```
+
+Next, we are going to consider the case where multiple instances of `error_data` are returned. Typically returning multiple of a thing is done using a collection and those multiple things are called "elements". Since this will be returning multiple elements we call this the `MarshalMode.ElementOut` mode.
+
+```csharp
+namespace CustomMarshalling
+{
+    [CustomMarshaller(typeof(ErrorData), MarshalMode.ManagedToUnmanagedIn, typeof(ErrorDataMarshaller))]
+    [CustomMarshaller(typeof(ErrorData), MarshalMode.ElementOut, typeof(Out))]
+    internal static unsafe class ErrorDataMarshaller
     {
-        public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
-            => throw new NotImplementedException();
+        //
+        // Other marshallers removed
+        //
 
-        public static void Free(ErrorDataUnmanaged unmanaged)
-            => throw new NotImplementedException();
+        public static class Out
+        {
+            public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
+                => throw new NotImplementedException();
+
+            public static void Free(ErrorDataUnmanaged unmanaged)
+                => throw new NotImplementedException();
+        }
     }
+}
+```
 
-    public static class ThrowOnFatalErrorOut
+The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what we did for the "in" mode above. Remember that we also need to "clean up" any allocations the unmanaged environment expected us to perform.
+
+For our managed to unmanaged "out" marshaller, we are going to do something special. The name of the data type we are marshalling is called `error_data` and .NET typically expresses errors as exceptions. However, some errors are more impactful than others. Errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. Let's marshal an `error_data` into managed and if it is fatal, we will throw an exception rather than just converting it into an `ErrorData` and returning it.
+
+```csharp
+namespace CustomMarshalling
+{
+    [CustomMarshaller(typeof(ErrorData), MarshalMode.ManagedToUnmanagedIn, typeof(ErrorDataMarshaller))]
+    [CustomMarshaller(typeof(ErrorData), MarshalMode.ElementOut, typeof(Out))]
+    [CustomMarshaller(typeof(ErrorData), MarshalMode.ManagedToUnmanagedOut, typeof(ThrowOnFatalErrorOut))]
+    internal static unsafe class ErrorDataMarshaller
     {
-        public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
-            => throw new NotImplementedException();
+        //
+        // Other marshallers removed
+        //
 
-        public static void Free(ErrorDataUnmanaged unmanaged)
-            => throw new NotImplementedException();
+        public static class ThrowOnFatalErrorOut
+        {
+            public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
+                => throw new NotImplementedException();
+
+            public static void Free(ErrorDataUnmanaged unmanaged)
+                => throw new NotImplementedException();
+        }
     }
+}
+```
 
+An "out" parameter is converting from an unmanaged context into a managed context, so we implement the `ConvertToManaged` method. When the unmanaged callee returns and provides a `ErrorDataUnmanaged`, we inspect it using our `ElementOut` mode marshaller and then check if it is marked as a "fatal" error. If so, that is our indication to throw as opposed to just return the `ErrorData`.
 
-Let us assume we are not only going to consume the native library, but we are also going to share our work with the community and provide an interop library. This means we could provide `ErrorData` an implied marshaller whenever it is used in a P/Invoke by adding `[NativeMarshalling(typeof(ErrorDataMarshaller))]` to the `ErrorData` definition.
+```csharp
+public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
+{
+    ErrorData data = Out.ConvertToManaged(unmanaged);
+    if (data.IsFatalError)
+        throw new ExternalException(data.Message, data.Code);
+
+    return data;
+}
+```
+
+Let us assume we are not only going to consume the native library, but we are also going to share our work with the community and provide an interop library. This means we could provide `ErrorData` an implied marshaller whenever it is used in a P/Invoke by adding `[NativeMarshalling(typeof(ErrorDataMarshaller))]` to the `ErrorData` definition. With this added to `ErrorData` anyone using our definition of this type in a `LibraryImport` call will get the benefit of our marshallers. Note they can always override our marshallers by using the `MarshalUsing` at the use site.
 
 ```csharp
 [NativeMarshalling(typeof(ErrorDataMarshaller))]
 struct ErrorData { ... }
 ```
 
-## `LibraryImportAttribute` source generator Analyzer and Fixer
-
   <!-- links -->
 
 [api_custommarshallerattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.custommarshallerattribute
+[api_libraryimportattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.libraryimportattribute
 [api_marshalusingattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.marshalusingattribute
 [api_nativemarshallingattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.nativemarshallingattribute
+[design_libraryimport]:https://github.com/dotnet/runtime/tree/main/docs/design/libraries/LibraryImportGenerator

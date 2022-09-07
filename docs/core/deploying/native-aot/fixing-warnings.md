@@ -11,7 +11,7 @@ When publishing your application as native AOT, the build process produces all t
 
 The abstract representations of program parts don't have a one-to-one mapping to native representation. For example, the abstract description of the generic `List<T>.Add` method maps to potentially infinite native method bodies that need to be specialized for the given `T` (for example, `List<int>.Add` and `List<double>.Add`).
 
-Because the relationship of abstract code to native code is not one-to-one, the build process needs to create a complete list of native code bodies and data structures at build time. It can be difficult to create this list at build time for some of the .NET APIs. If the API is used in a way that wasn't anticipated at build time, an exception will be thrown.
+Because the relationship of abstract code to native code is not one-to-one, the build process needs to create a complete list of native code bodies and data structures at build time. It can be difficult to create this list at build time for some of the .NET APIs. If the API is used in a way that wasn't anticipated at build time, an exception will be thrown at run time.
 
 To prevent changes in behavior when deploying as native AOT, the .NET SDK provides static analysis of AOT compatibility through "AOT warnings." AOT warnings are produced when the build finds code that may not be compatible with AOT. Code that's not AOT-compatible may produce behavioral changes or even crashes in an application after it's been built as native AOT. Ideally, all applications that use native AOT should have no AOT warnings. If there are any AOT warnings, ensure there are no behavior changes by thoroughly testing your app after building as native AOT.
 

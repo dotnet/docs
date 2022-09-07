@@ -13,8 +13,6 @@ The largest consideration for most organizations when choosing which version of 
 
 Most customers looking to migrate a large .NET Framework app to .NET Core/.NET 6 today are probably looking for a stable destination, given that they haven't already made the move to an earlier version of .NET Core. In this case, the best .NET version to target for the migration is .NET 6, which is the most recent LTS version. While support for .NET Core 3.1 ends in December 2022, support for .NET 6 will continue until November 2024.
 
-Updating from .NET Core 3.1 to .NET 6+ requires much less effort than porting from .NET Framework to .NET Core. For this reason, many customers may choose to upgrade to .NET Core 3.1 first as an incremental step, and then further upgrade to .NET 6 once the upgrade to .NET Core 3.1 has succeeded.
-
 This book assumes .NET Framework apps will be upgraded to .NET 6.
 
 ## References

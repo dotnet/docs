@@ -86,12 +86,7 @@ end of the event declaration, that is, at the end of the list of method paramete
 new ID to replace the old one.
 8. When declaring events methods, specify fixed-size payload data before variably sized data.
 
->[!NOTE]
->Manifest driven `EventSource`s [mark all strings as `win:UnicodeString` in the manifest](https://github.com/dotnet/runtime/blob/d1fed288f58d89ebc2fbafc9f6aa79c81fbb5611/src/libraries/System.Private.CoreLib/src/System/Diagnostics/Tracing/EventSource.cs#L5955-L6003). This is interpreted by TraceEvent and other pieces of tracing infrastructure as "a null-terminated string". There is a separate type for "counted strings" that isn't used by `EventSource`.
->C#, however, allows for embedded nulls in strings, and `String.Length` will give the full length of string _including_ the embedded nulls.
->`EventSource` uses `String.Length` when it is encoding strings.
->This can lead to problems for the parser if there are things in the payload _after_ the string.
-
+9. Do not use strings containing null characters. When generating the manifest for ETW EventSource will declare all strings as null terminated, even though it is possible to have a null character in a C# String. If a string contains a null character the entire string will be written to the event payload, but any parser will treat the first null character as the end of the string. If there are payload arguments after the string, the remainder of the string will be parsed instead of the intended value.
 ## Typical event customizations
 
 ### Setting event verbosity levels

@@ -56,7 +56,7 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
   
     - <xref:System.Globalization.Calendar.GetSecond%2A>, to display the seconds in the minute in the appropriate calendar.  
   
-    - <xref:System.Globalization.Calendar.GetMilliseconds%2A> , to display the milliseconds in the second in the appropriate calendar.  
+    - <xref:System.Globalization.Calendar.GetMilliseconds%2A>, to display the milliseconds in the second in the appropriate calendar.  
   
 ## Example  
 

@@ -96,6 +96,12 @@ The first release of native AOT in .NET 7 has additional limitations. These incl
 - Not all the runtime libraries are fully annotated to be native AOT compatible (that is, some warnings in the runtime libraries are not actionable by end developers).
 - Limited diagnostic support (debugging and profiling).
 
+## Building native libraries
+
+Publishing .NET class libraries as native AOT allows creating libraries that can be consumed from non-.NET programming languages. The produced native library is self-contained and doesn't require a .NET runtime to be installed.
+
+Publishing a class library as native AOT creates a native library that exposes methods of the class library annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-null `EntryPoint` field. See the [native library sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary) available in the dotnet/samples repository on GitHub.
+
 ## Platform/architecture restrictions
 
 The following table shows supported compilation targets when targeting .NET 7.

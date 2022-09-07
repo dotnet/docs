@@ -40,19 +40,19 @@ Assemblies provide the common language runtime with the information it needs to 
 
 An assembly defines the following information:
 
-- Code that the common language runtime executes.
+- **Code** that the common language runtime executes. Each assembly can have only one entry point: `DllMain`, `WinMain`, or `Main`.
 
-- **Security boundary**: An assembly is the unit at which permissions are requested and granted. For more information about security boundaries in assemblies, see [Assembly security considerations](security-considerations.md).
+- The **security boundary**. An assembly is the unit at which permissions are requested and granted. For more information about security boundaries in assemblies, see [Assembly security considerations](security-considerations.md).
 
-- **Type boundary**: Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that's loaded in the scope of one assembly isn't the same as a type called `MyType` that's loaded in the scope of another assembly.
+- The **type boundary**. Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that's loaded in the scope of one assembly isn't the same as a type called `MyType` that's loaded in the scope of another assembly.
 
-- **Reference scope boundary**: The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly, and enumerates other assemblies on which it depends. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
+- The **reference-scope boundary**: The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly and enumerates other assemblies on which it depends. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
 
-- **Version boundary**: The assembly is the smallest versionable unit in the common language runtime. All types and resources in the same assembly are versioned as a unit. The [assembly manifest](#assembly-manifest) describes the version dependencies you specify for any dependent assemblies. For more information about versioning, see [Assembly versioning](versioning.md).
+- The **version boundary**. The assembly is the smallest versionable unit in the common language runtime. All types and resources in the same assembly are versioned as a unit. The [assembly manifest](#assembly-manifest) describes the version dependencies you specify for any dependent assemblies. For more information about versioning, see [Assembly versioning](versioning.md).
 
-- **Deployment unit**: When an application starts, only the assemblies that the application initially calls must be present. Other assemblies, such as assemblies containing localization resources or utility classes, can be retrieved on demand. This process allows apps to be simple and thin when first downloaded. For more information about deploying assemblies, see [Deploy applications](../../framework/deployment/index.md).
+- The **deployment unit**: When an application starts, only the assemblies that the application initially calls must be present. Other assemblies, such as assemblies containing localization resources or utility classes, can be retrieved on demand. This process allows apps to be simple and thin when first downloaded. For more information about deploying assemblies, see [Deploy applications](../../framework/deployment/index.md).
 
-- **Side-by-side execution unit**: For more information about running multiple versions of an assembly, see [Assemblies and side-by-side execution](side-by-side-execution.md).
+- A **side-by-side execution unit**: For more information about running multiple versions of an assembly, see [Assemblies and side-by-side execution](side-by-side-execution.md).
 
 ## Create an assembly
 

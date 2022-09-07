@@ -179,7 +179,7 @@ Types of instruments currently available:
 - For timing things, Histogram is usually preferred. Often it's useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
   totals.
 
-- Other common cases, such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, and files are usually well suited for `UpDownCounter` or `ObservableUpDownCounter`.
+- Other common cases, such as cache hit rates or sizes of caches, queues, and files are usually well suited for `UpDownCounter` or `ObservableUpDownCounter`.
   Choose between them depending on which is easier to add to the existing code: either an API call for each increment and decrement operation or a callback that will read the current value from
   a variable the code maintains.
 

@@ -298,6 +298,52 @@
         "mergeType": "squash",
         "requireAllStatuses": true
       }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "IssuesOnlyResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "titleContains",
+              "parameters": {
+                "titlePattern": "typo/gi",
+                "isRegex": true
+              }
+            }
+          ]
+        },
+        "eventType": "issue",
+        "eventNames": [
+          "issues",
+          "project_card"
+        ],
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "doc-bug"
+            }
+          },
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "help wanted"
+            }
+          },
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "good first issue"
+            }
+          }
+        ],
+        "taskName": "Label typo issues as help wanted"
+      }
     }
   ],
   "userGroups": []

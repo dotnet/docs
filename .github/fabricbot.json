@@ -344,6 +344,112 @@
         ],
         "taskName": "Label typo issues as help wanted"
       }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "LabelSync",
+      "subCapability": "LabelSync",
+      "version": "1.0",
+      "config": {
+        "taskName": "Synchronize OKR labels between issues/PRs",
+        "labelPatterns": [
+          {
+            "pattern": "okr-"
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "IssuesOnlyResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "or",
+          "operands": [
+            {
+              "name": "hasLabel",
+              "parameters": {
+                "label": "doc-bug"
+              }
+            },
+            {
+              "name": "titleContains",
+              "parameters": {
+                "titlePattern": "freshness"
+              }
+            },
+            {
+              "name": "titleContains",
+              "parameters": {
+                "titlePattern": "out( |-)of( |-)date",
+                "isRegex": true
+              }
+            }
+          ]
+        },
+        "eventType": "issue",
+        "eventNames": [
+          "issues",
+          "project_card"
+        ],
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "okr-health"
+            }
+          }
+        ],
+        "taskName": "Label issues with okr-health"
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "PullRequestResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "or",
+          "operands": [
+            {
+              "name": "titleContains",
+              "parameters": {
+                "titlePattern": "build warning"
+              }
+            },
+            {
+              "name": "bodyContains",
+              "parameters": {
+                "bodyPattern": "build warning"
+              }
+            },
+            {
+              "name": "titleContains",
+              "parameters": {
+                "titlePattern": "freshness"
+              }
+            }
+          ]
+        },
+        "eventType": "pull_request",
+        "eventNames": [
+          "pull_request",
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Label PRs with okr-health",
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "okr-health"
+            }
+          }
+        ]
+      }
     }
   ],
   "userGroups": []

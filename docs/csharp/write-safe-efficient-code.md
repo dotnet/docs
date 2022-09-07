@@ -297,4 +297,5 @@ These enhancements to the C# language are designed for performance critical algo
 
 - [in parameter modifier (C# Reference)](language-reference/keywords/in-parameter-modifier.md)
 - [ref keyword](language-reference/keywords/ref.md)
-- [Ref returns and ref locals](programming-guide/classes-and-structs/ref-returns.md)
+- [Ref returns](language-reference/statements/jump-statements.md#ref-returns)
+- [Ref locals](language-reference/statements/declarations.md#ref-locals)

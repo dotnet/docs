@@ -147,7 +147,7 @@ When the caller stores the value returned by the `GetBookByTitle` method as a re
 ## See also
 
 - [Write safe efficient code](../../write-safe-efficient-code.md)
-- [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
+- [Ref locals](../statements/declarations.md#ref-locals)
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
 - [Method Parameters](method-parameters.md)
 - [C# Reference](../index.md)

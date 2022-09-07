@@ -156,7 +156,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`unmanaged` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`unmanaged` (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)  
         [`value`](value.md)  
-        [`var`](var.md)  
+        [`var`](../statements/declarations.md#implicitly-typed-local-variables)  
         [`when` (filter condition)](when.md)  
         [`where` (generic type constraint)](where-generic-type-constraint.md)  
         [`where` (query clause)](where-clause.md)  

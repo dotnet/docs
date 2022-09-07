@@ -37,7 +37,7 @@ If you don't specify member names in the anonymous type, the compiler gives the 
 > [!TIP]
 > You can use .NET style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to enforce whether inferred or explicit member names are preferred.
 
-Typically, when you use an anonymous type to initialize a variable, you declare the variable as an implicitly typed local variable by using [var](../../language-reference/keywords/var.md). The type name cannot be specified in the variable declaration because only the compiler has access to the underlying name of the anonymous type. For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+Typically, when you use an anonymous type to initialize a variable, you declare the variable as an implicitly typed local variable by using [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables). The type name cannot be specified in the variable declaration because only the compiler has access to the underlying name of the anonymous type. For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 You can create an array of anonymously typed elements by combining an implicitly typed local variable and an implicitly typed array, as shown in the following example.
 

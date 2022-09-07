@@ -664,8 +664,6 @@ items:
         href: programming-guide/classes-and-structs/methods.md
       - name: Local functions
         href: programming-guide/classes-and-structs/local-functions.md
-      - name: Ref returns and ref locals
-        href: programming-guide/classes-and-structs/ref-returns.md
       - name: Implicitly Typed Local Variables
         href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
       - name: "How to use implicitly typed local variables and arrays in a query expression"
@@ -902,8 +900,6 @@ items:
         displayName: "? token, ? symbol"
     - name: void
       href: language-reference/builtin-types/void.md
-    - name: var
-      href: language-reference/keywords/var.md
     - name: Built-in types
       href: language-reference/builtin-types/built-in-types.md
     - name: Unmanaged types
@@ -1186,6 +1182,9 @@ items:
       href: language-reference/operators/operator-overloading.md
   - name: Statements
     items:
+    - name: Declaration statements
+      displayName: var, ref
+      href: language-reference/statements/declarations.md
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md

@@ -61,7 +61,7 @@ For more information about how to pass reference types by reference and by value
 
 Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the [`return` statement](../../language-reference/statements/jump-statements.md#the-return-statement). A statement with the `return` keyword followed by a value that matches the return type will return that value to the method caller.
 
-The value can be returned to the caller by value or, starting with C# 7.0, [by reference](ref-returns.md). Values are returned to the caller by reference if the `ref` keyword is used in the method signature and it follows each `return` keyword. For example, the following method signature and return statement indicate that the method returns a variable named `estDistance` by reference to the caller.
+The value can be returned to the caller by value or, starting with C# 7.0, [by reference](../../language-reference/statements/jump-statements.md#ref-returns). Values are returned to the caller by reference if the `ref` keyword is used in the method signature and it follows each `return` keyword. For example, the following method signature and return statement indicate that the method returns a variable named `estDistance` by reference to the caller.
 
 ```csharp
 public ref double GetEstimatedDistance()
@@ -82,7 +82,7 @@ To use a value returned from a method, the calling method can use the method cal
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 
-To use a value returned by reference from a method, you must declare a [ref local](ref-returns.md#ref-locals) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
+To use a value returned by reference from a method, you must declare a [ref local](../../language-reference/statements/declarations.md#ref-locals) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
 
 ```csharp
 ref int distance = Planet.GetEstimatedDistance();

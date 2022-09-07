@@ -61,7 +61,7 @@ For more information about the regular expression language, see [Regular Express
   
 ## Regular expression examples
 
-The <xref:System.String> class includes many string search and replacement methods that you can use when you want to locate literal strings in a larger string. Regular expressions are most useful either when you want to locate one of several substrings in a larger string, or when you want to identify patterns in a string, as the following examples illustrate.
+The <xref:System.String> class includes string search and replacement methods that you can use when you want to locate literal strings in a larger string. Regular expressions are most useful either when you want to locate one of several substrings in a larger string, or when you want to identify patterns in a string, as the following examples illustrate.
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
@@ -113,7 +113,7 @@ The <xref:System.String> class includes many string search and replacement metho
 > |-|-|  
 > |`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string. To ensure that the current culture's currency symbol isn't misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  
 > |`\s*`|Look for zero or more occurrences of a white-space character.|  
-> |`[-+]?`|Look for zero or one occurrence of either a positive or a negative sign.|  
+> |`[-+]?`|Look for zero or one occurrence of either a positive or negative sign.|  
 > |`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses define this expression as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The first element in the collection represents the entire match.|  
 > |`[0-9]{0,3}`|Look for zero to three occurrences of the decimal digits 0 through 9.|  
 > |`(,[0-9]{3})*`|Look for zero or more occurrences of a group separator followed by three decimal digits.|  

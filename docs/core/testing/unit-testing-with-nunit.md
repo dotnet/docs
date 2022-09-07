@@ -145,7 +145,7 @@ namespace Prime.UnitTests.Services
 
 The `[TestFixture]` attribute denotes a class that contains unit tests. The `[Test]` attribute indicates a method is a test method.
 
-Save this file and execute the [`dotnet test`](../tools/dotnet-test.md) command to build the tests and the class library, and then run the tests. The NUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
+Save this file and execute the [`dotnet test`](../tools/dotnet-test.md) command to build the tests and the class library and run the tests. The NUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
 Your test fails. You haven't created the implementation yet. Make the test pass by writing the simplest code in the `PrimeService` class that works:
 

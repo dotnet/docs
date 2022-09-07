@@ -38,7 +38,7 @@ If you don't check the connection state before closing, you can catch the `Inval
 
 The method to choose depends on how often you expect the event to occur.
 
-- Use exception handling if the event doesn't occur often, that is, if the event is truly exceptional and indicates an error such as an unexpected end-of-file. When you use exception handling, less code is executed in normal conditions.
+- Use exception handling if the event doesn't occur often, that is, if the event is truly exceptional and indicates an error, such as an unexpected end-of-file. When you use exception handling, less code is executed in normal conditions.
 
 - Check for error conditions in code if the event happens routinely and could be considered part of normal execution. When you check for common error conditions, less code is executed because you avoid exceptions.
 

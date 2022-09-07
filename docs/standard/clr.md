@@ -61,7 +61,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 However, the .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md).
 
-## Related sections
+## Related articles
 
 |Title|Description|
 |-----------|-----------------|

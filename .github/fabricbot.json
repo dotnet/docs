@@ -311,7 +311,7 @@
             {
               "name": "titleContains",
               "parameters": {
-                "titlePattern": "typo",
+                "titlePattern": "(T|t)ypo",
                 "isRegex": true
               }
             }
@@ -402,7 +402,7 @@
             }
           }
         ],
-        "taskName": "Label issues with okr-health"
+        "taskName": "Label issues with okr-health (event-based)"
       }
     },
     {
@@ -441,6 +441,145 @@
           "project_card"
         ],
         "taskName": "Label PRs with okr-health",
+        "actions": [
+          {
+            "name": "addLabel",
+            "parameters": {
+              "label": "okr-health"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledSearch",
+      "subCapability": "ScheduledSearch",
+      "version": "1.1",
+      "config": {
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          }
+        ],
+        "searchTerms": [
+          {
+            "name": "isIssue",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "doc-bug"
+            }
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "okr-health"
+            }
+          }
+        ],
+        "taskName": "Label doc-bug issues with okr-health (scheduled search)",
         "actions": [
           {
             "name": "addLabel",

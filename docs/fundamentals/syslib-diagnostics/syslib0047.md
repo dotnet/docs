@@ -46,3 +46,7 @@ To suppress all the `SYSLIB0047` warnings in your project, add a `<NoWarn>` prop
 ```
 
 For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
+
+## See also
+
+- [XmlSecureResolver is obsolete](../../core/compatibility/xml/7.0/xmlsecureresolver-obsolete.md)

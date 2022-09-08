@@ -18,7 +18,7 @@ topic_type:
 
 [Supported in .NET Core 5 and later versions.]  
   
- Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. It is the same information that would be shown running the SOS "eeheap-loader" command. 
+ Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. It is the same information that would be shown running the SOS "eeheap-loader" command.
   
 ## Syntax  
   
@@ -42,7 +42,7 @@ HRESULT EnumerateLoaderHeapMemoryRegions(
 
  **Library:** CorGuids.lib  
 
- **.NET Core Versions:** 5 and later 
+ **.NET Core Versions:** 5.0 and later 
 
 ## See also
 

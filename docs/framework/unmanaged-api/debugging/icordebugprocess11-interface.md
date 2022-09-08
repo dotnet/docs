@@ -33,6 +33,8 @@ topic_type:
  **Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
+ 
+ **.NET Core Supported Versions:** 5.0 and above.  
   
 ## See also
 

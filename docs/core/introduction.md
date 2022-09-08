@@ -41,7 +41,7 @@ recommendations: false
 
 * [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
 * [Attributes](../standard/attributes/index.md)
-* Reflection
+* [Reflection](../csharp/programming-guide/concepts/reflection.md)
 * [Code analyzers](../fundamentals/code-analysis/overview.md)
 * [Delegates and lambdas](../standard/delegates-lambdas.md)
 * [Events](../standard/events/index.md)

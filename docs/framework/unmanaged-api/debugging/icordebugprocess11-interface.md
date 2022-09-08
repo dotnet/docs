@@ -34,8 +34,6 @@ topic_type:
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
-  
 ## See also
 
 - [Debugging Interfaces](debugging-interfaces.md)

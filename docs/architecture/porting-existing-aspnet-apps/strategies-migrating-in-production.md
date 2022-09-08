@@ -9,7 +9,7 @@ ms.date: 12/10/2021
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-Many teams have .NET Framework apps they plan to migrate to .NET Core/.NET 5+, but the app is so large that the migration requires a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side-by-side, or for the old version to be migrated in-place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
+Many teams have .NET Framework apps they plan to migrate to .NET Core/.NET 6, but the app is so large that the migration requires a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side-by-side, or for the old version to be migrated in-place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
 
 ## Refactor the .NET Framework solution
 

@@ -51,7 +51,7 @@ Participants and Reviewers:
 
 ## Version
 
-This guide covers **.NET 6* and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET 6 release. This book covers migration of apps that are currently running on .NET Framework 4.x. Migrating from .NET Framework 4.x to .NET 6 is similar to migrating to .NET Core 3.1, which is discussed as a potential intermediate step later in the book. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
+This guide covers **.NET 6* and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET 6 release. This book covers migration of apps that are currently running on .NET Framework 4.x. Migrating from .NET Framework 4.x to .NET 6 is similar to migrating to .NET 6, which is discussed as a potential intermediate step later in the book. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
 
 ## Who should use this guide
 

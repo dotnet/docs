@@ -29,8 +29,6 @@ One approach to incrementally upgrade a .NET Framework 4.5 system layer-by-layer
 
 Once the app is running on ASP.NET Core 2.1, migrating it to .NET 6 in isolation is relatively straightforward. The most likely challenge during this step is updating incompatible dependencies to support .NET Core and possibly higher versions of .NET Standard. For apps that don't have problematic dependencies on .NET Framework-only libraries, there's little reason to upgrade to ASP.NET Core 2.1 or even .NET 6. Porting directly to ASP.NET Core 6 makes more sense and requires less effort.
 
-By the time the app is running on .NET Core 3.1, migrating to the latest .NET release is relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are several [breaking changes to consider when moving to .NET 6](../../core/compatibility/6.0.md), most apps don't require significant modifications to move from .NET Core 3.1 to .NET 6.
-
 Now that .NET 6 is available and will be supported through November 2024, most teams will choose to upgrade to .NET 6 to complete their app's migration.
 
 Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 6. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.

@@ -105,6 +105,8 @@ items:
           href: sdk/7.0/custom-serialization.md
       - name: Serialization
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
       - name: Windows Forms
@@ -1125,6 +1127,8 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
       - name: .NET 6

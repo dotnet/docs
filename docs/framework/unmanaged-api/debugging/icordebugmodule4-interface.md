@@ -51,8 +51,6 @@ interface ICorDebugModule4 : IUnknown
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** 4.5, 4, 3.5 SP1
-  
 ## See also
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)

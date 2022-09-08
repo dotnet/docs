@@ -37,7 +37,7 @@ class Program
 
         commandLineBuilder.UseDefaults();
         var parser = commandLineBuilder.Build();
-        await parser.InvokeAsync("[just-say-hi] --delay 42 --message \"Hello world!\"");
+        await parser.InvokeAsync(args);
         // </middleware>
     }
 

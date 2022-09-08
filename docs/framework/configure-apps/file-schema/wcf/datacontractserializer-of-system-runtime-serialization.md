@@ -27,7 +27,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
           </knownType>
         </add>
       </declaredTypes>
-    <dataContractSerializer>
+    </dataContractSerializer>
   </system.runtime.serialization>
 </configuration>
 ```  

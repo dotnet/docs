@@ -12,7 +12,7 @@ ms.date: 02/27/2020
 
 ## Name
 
-`dotnet-vstest` - Runs tests from the specified assemblies.
+`dotnet vstest` - Runs tests from the specified assemblies.
 
 ## Synopsis
 
@@ -30,7 +30,7 @@ dotnet vstest -?|--Help
 
 ## Description
 
-The `dotnet-vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
+The `dotnet vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
 
 ## Arguments
 

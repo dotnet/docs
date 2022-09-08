@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Globalization APIs use ICU libraries on Windows"
-description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS.
+title: "Breaking change: Globalization APIs use ICU libraries on Windows 10"
+description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS on Windows 10.
 ms.date: 02/15/2022
 ---
-# Globalization APIs use ICU libraries on Windows
+# Globalization APIs use ICU libraries on Windows 10
 
 .NET 5 and later versions use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries for globalization functionality when running on Windows 10 May 2019 Update or later.
 
@@ -75,22 +75,6 @@ No action is required on the part of the developer. However, if you wish to cont
 - <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
 - <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
 
-<!--
+## See also
 
-### Affected APIs
-
-- ``T:System.Span`1``
-- `T:System.String`
-- `N:System.Globalization`
-- `Overload:System.Array.Sort`
-- ``M:System.Collections.Generic.List`1.Sort``
-- ``T:System.Collections.Generic.SortedDictionary`2``
-- ``T:System.Collections.Generic.SortedList`2``
-- ``T:System.Collections.Generic.SortedSet`1``
-
-### Category
-
-- Core .NET libraries
-- Globalization
-
--->
+- [Globalization APIs use ICU libraries on Windows Server](../7.0/icu-globalization-api.md)

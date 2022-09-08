@@ -1,6 +1,6 @@
 ---
 title: "Attributes interpreted by the C# compiler: Nullable static analysis"
-ms.date: 12/16/2021
+ms.date: 05/20/2022
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
 # Attributes for null-state static analysis interpreted by the C# compiler
@@ -167,7 +167,7 @@ That also works, but will often force callers to implement extra `null` checks. 
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="ExtractComponentIfNotNull" :::
 
-The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`.
+The previous example uses the [`nameof`](../operators/nameof.md) operator for the parameter `url`. That feature is available in C# 11. Before C# 11, you'll need to type the name of the parameter as a string. The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`.
 
 You specify conditional postconditions using these attributes:
 

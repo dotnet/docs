@@ -13,7 +13,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 
 ## string vs. System.String
 
-In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, regardless it's recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
+In C#, the `string` keyword is an alias for <xref:System.String>; therefore, `String` and `string` are equivalent. It's recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
 
 ## Declaring and initializing strings
 
@@ -39,7 +39,7 @@ For more information about how to create new strings that are based on modificat
 
 ## Quoted string literals
 
-*Quoted string literals* are start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
+*Quoted string literals* start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="EscapeSequences":::
 

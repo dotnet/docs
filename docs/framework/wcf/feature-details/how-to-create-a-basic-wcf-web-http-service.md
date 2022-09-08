@@ -72,7 +72,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
 
 ## To call service operations mapped to GET in a browser
 
-1. Open a web browser, enter the URL "`http://localhost:8000/EchoWithGet?s=Hello, world!`", and then press **Enter**. The URL contains the base address of the service (`http://localhost:8000/`), the relative address of the endpoint (""), the service operation to call ("EchoWithGet"), and a question mark followed by a list of named parameters separated by an ampersand (&).
+1. Open a web browser, enter the URL "`http://localhost:8000/EchoWithGet?s=Hello, world!`", and then press <kbd>Enter</kbd>. The URL contains the base address of the service (`http://localhost:8000/`), the relative address of the endpoint (""), the service operation to call ("EchoWithGet"), and a question mark followed by a list of named parameters separated by an ampersand (&).
 
 ## To call service operations in code
 

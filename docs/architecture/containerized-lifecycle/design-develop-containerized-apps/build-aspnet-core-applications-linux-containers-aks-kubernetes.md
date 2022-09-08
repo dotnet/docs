@@ -143,7 +143,7 @@ services:
     #...
 ```
 
-Now you can run your application with the **F5** key, or by using the **Play** button, or the **Ctrl+F5** key, selecting the docker-compose project, as shown in image 4-42.
+Now you can run your application with the <kbd>F5</kbd> key, or by using the **Play** button, or the <kbd>Ctrl</kbd>+<kbd>F5</kbd> key, selecting the docker-compose project, as shown in image 4-42.
 
 ![Running docker-compose project with Visual Studio](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/running-docker-compose-with-visual-studio.png)
 

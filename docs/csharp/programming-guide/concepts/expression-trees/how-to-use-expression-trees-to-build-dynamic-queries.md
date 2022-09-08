@@ -7,6 +7,9 @@ ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
 ---
 # Querying based on runtime state (C#)
 
+> [!NOTE]
+> Make sure you add `using System.Linq.Expressions;` and `using static System.Linq.Expressions.Expression;` at the top of your *.cs* file.
+
 Consider code that defines an <xref:System.Linq.IQueryable> or an [IQueryable\<T>](<xref:System.Linq.IQueryable%601>) against a data source:
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Initialize":::

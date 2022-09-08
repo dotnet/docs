@@ -20,7 +20,7 @@ This example uses WCF to create two RSS feeds: a `movies` feed and a `channels` 
 
 1. Using Visual Studio, open the WebRoutingIntegration.sln file.
 
-2. To run the solution and start the Web development server, press **F5**.
+2. To run the solution and start the Web development server, press <kbd>F5</kbd>.
 
      A directory listing for the sample appears. Note that there are no files with an .svc file extension.
 
@@ -40,7 +40,7 @@ This example uses WCF to create two RSS feeds: a `movies` feed and a `channels` 
 
 1. Using Visual Studio, open the WebRoutingIntegration.sln file.
 
-2. Build the project, by pressing **Ctrl**+**Shift**+**B**.
+2. Build the project, by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 3. Create a Web application in Internet Information Services (IIS) Manager.
 

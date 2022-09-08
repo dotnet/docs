@@ -54,6 +54,8 @@ For more information, see the [`switch` expression](~/_csharplang/proposals/csha
 
 ## See also
 
+- [Use switch expression (style rule IDE0066)](../../../fundamentals/code-analysis/style-rules/ide0066.md)
+- [Add missing cases to switch expression (style rule IDE0072)](../../../fundamentals/code-analysis/style-rules/ide0072.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)

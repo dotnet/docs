@@ -62,7 +62,7 @@ This attribute enables you to write diagnostic utilities that provide more detai
 
 :::code language="csharp" source="./snippets/CallerInformation.cs" id="ExtensionMethod":::
 
-You could call this method as follows:
+The previous example uses the [`nameof`](../operators/nameof.md) operator for the parameter `sequence`. That feature is available in C# 11. Before C# 11, you'll need to type the name of the parameter as a string. You could call this method as follows:
 
 :::code language="csharp" source="./snippets/Program.cs" id="ShortSequence":::
 

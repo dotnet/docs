@@ -96,7 +96,7 @@ The most common situation where you'll see default values is in arrays or in oth
 TemperatureRange[] lastMonth = new TemperatureRange[30];
 ```
 
-All a struct's member fields must be *definitely assigned* when it's created because `struct` types directly store their data. The `default` value of a struct has *definitely assigned* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields using the following mechanisms:
+All of a struct's member fields must be *definitely assigned* when it's created because `struct` types directly store their data. The `default` value of a struct has *definitely assigned* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields using the following mechanisms:
 
 - You can add *field initializers* to any field or auto implemented property.
 - You can initialize any fields, or auto properties, in the body of the constructor.
@@ -105,7 +105,7 @@ Beginning with C# 11, if you don't initialize all fields in a struct, the compil
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
-Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If you'd don't write a public parameterless constructor, the compiler generates one. The compiler generated parameterless constructor executes any field initializes, and produces the [default value](default-values.md) for all other fields. If you declare any field initializers, you must declare one explicit constructor. The one explicit constructor can be the parameterless constructor. It can have an empty body. For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
+Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If you don't write a public parameterless constructor, the compiler generates one. The compiler-generated parameterless constructor executes any field initializers, and produces the [default value](default-values.md) for all other fields. If you declare any field initializers, you must declare one explicit constructor. The one explicit constructor can be the parameterless constructor. It can have an empty body. For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 

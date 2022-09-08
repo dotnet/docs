@@ -46,6 +46,7 @@ In this example, `this` is used to qualify the `Employee` class members, `name` 
 
 ## See also
 
+- [`this` code-style preferences (IDE0003 and IDE0009)](../../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

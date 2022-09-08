@@ -9,6 +9,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
         },
         {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.2/private-protected.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes.md#1436-access-modifiers"
+        },
+        {
             "source_path_from_root": "/_csharplang/proposals/csharp-7.3/leading-digit-separator.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
         },
@@ -162,6 +166,10 @@
         {
             "source_path_from_root": "/docs/csharp/lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/builtin-types/nint-nuint.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#native-sized-integers"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8892.md",
@@ -452,6 +460,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/char"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/checked.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/checked-and-unchecked"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/checked-and-unchecked.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/checked-and-unchecked"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/continue.md",
             "redirect_url": "/dotnet/csharp/language-reference/statements/jump-statements"
         },
@@ -694,6 +710,10 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/ulong.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/unchecked.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/checked-and-unchecked"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/ushort.md",
@@ -995,6 +1015,10 @@
         {
             "source_path_from_root": "/docs/csharp/nullable-attributes.md",
             "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/nullable-warnings.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/nullable-warnings"
         },
         {
             "source_path_from_root": "/docs/csharp/parallel.md",
@@ -2579,6 +2603,10 @@
         {
             "source_path_from_root": "/docs/csharp/roslyn/index.md",
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/static-abstract-interface-methods.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/static-virtual-interface-members"
         },
         {
             "source_path_from_root": "/docs/csharp/structs.md",

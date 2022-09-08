@@ -100,7 +100,10 @@ Anchors, or atomic zero-width assertions, specify a position in the string where
 
 ## Contiguous Matches: \G  
 
- The `\G` anchor specifies that a match must occur at the point where the previous match ended, or if there was no previous match, at the position in the string where matching started. When you use this anchor with the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method, it ensures that all matches are contiguous.
+The `\G` anchor specifies that a match must occur at the point where the previous match ended, or if there was no previous match, at the position in the string where matching started. When you use this anchor with the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method, it ensures that all matches are contiguous.
+
+> [!TIP]
+> Typically, you place a `\G` anchor at the left end of your pattern. In the uncommon case you're performing a right-to-left search, place the `\G` anchor at the right end of your pattern.
   
  The following example uses a regular expression to extract the names of rodent species from a comma-delimited string.  
   

@@ -92,7 +92,7 @@ Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16
  Basic floating point types are `float` (`System.Double`), `float32` (`System.Single`), and `decimal` (`System.Decimal`).
 
 The optional width is an integer indicating the minimal width of the result. For instance, `%6d` prints an integer, prefixing it with spaces
-to fill at least six characters. If width is `*`, then an extra integer  argument is taken to specify the corresponding width.
+to fill at least six characters. If width is `*`, then an extra integer argument is taken to specify the corresponding width.
 
 Valid flags are:
 
@@ -168,7 +168,7 @@ Culture 2: 12/31/1999 12:00:00 AM
 
 ### Structured values
 
-When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. This shown in the previous example.
+When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. This is shown in the previous example.
 The structure of arrays is also used, including multi-dimensional arrays.  Single-dimensional arrays are shown with `[| ... |]` syntax. For example,
 
 ```fsharp

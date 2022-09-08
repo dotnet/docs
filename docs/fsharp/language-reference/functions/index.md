@@ -140,7 +140,7 @@ You define lambda expressions by using the `fun` keyword. A lambda expression re
 
 ## Pipelines
 
-The pipe operator `|>` is used extensively when processing data in F#. This operator allow you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
+The pipe operator `|>` is used extensively when processing data in F#. This operator allows you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
 
 ```fsharp
 let result = 100 |> function1 |> function2

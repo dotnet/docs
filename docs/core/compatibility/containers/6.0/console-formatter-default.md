@@ -22,7 +22,7 @@ In previous servicing releases of .NET 6, `aspnet` container images were configu
 
 ## New behavior
 
-Starting in .NET 6.0.6, `aspnet` container images have the `Logging__Console__FormatterName` environment variable unset by default. This results in simple, multiline, human-readable console output similar to the following:
+Starting in .NET 6.0.5, `aspnet` container images have the `Logging__Console__FormatterName` environment variable unset by default. This results in simple, multiline, human-readable console output similar to the following:
 
 ```txt
 warn: Microsoft.AspNetCore.Server.HttpSys.MessagePump[37]
@@ -43,7 +43,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 ## Version introduced
 
-.NET 6.0.6 (May 2022 servicing)
+.NET 6.0.5 (May 2022 servicing)
 
 ## Type of breaking change
 

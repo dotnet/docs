@@ -45,7 +45,7 @@ public abstract class ValueObject
         {
             return false;
         }
-        return ReferenceEquals(left, null) || left.Equals(right);
+        return ReferenceEquals(left, right) || left.Equals(right);
     }
 
     protected static bool NotEqualOperator(ValueObject left, ValueObject right)

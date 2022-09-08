@@ -92,6 +92,7 @@ The telemetry feature collects the following data:
 | >=6.0.104     | Hashed _ReadyToRunCompilationFailures used for build (MSBuild property) |
 | >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
 | >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
+| >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
 
 ### Collected options
 

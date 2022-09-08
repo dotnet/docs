@@ -2,7 +2,7 @@
 title: "Tuple types - C# reference"
 description: "Learn about C# tuples: lightweight data structures that you can use to group loosely related data elements"
 ms.date: 07/09/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "value tuples [C#]"
 ---
 # Tuple types (C# reference)
@@ -62,6 +62,9 @@ The default names of tuple fields are `Item1`, `Item2`, `Item3` and so on. You c
 [Tuple assignment](#tuple-assignment-and-deconstruction) and [tuple equality comparisons](#tuple-equality) don't take field names into account.
 
 At compile time, the compiler replaces non-default field names with the corresponding default names. As a result, explicitly specified or inferred field names aren't available at run time.
+
+> [!TIP]
+> Enable .NET code style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to set a preference on inferred or explicit tuple field names.
 
 ## Tuple assignment and deconstruction
 

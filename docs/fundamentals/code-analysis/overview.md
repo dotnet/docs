@@ -183,3 +183,4 @@ In addition to the official .NET analyzers, you can also install third party ana
 - [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [Tutorial: Write your first analyzer and code fix](../../csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md)
+- [Code analysis in ASP.NET Core apps](/aspnet/core/diagnostics/code-analysis)

@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 05/11/2022
+ms.date: 09/07/2022
 ---
 
 # .NET environment variables
@@ -82,12 +82,12 @@ Socket continuations are dispatched to the <xref:System.Threading.ThreadPool?dis
 > [!NOTE]
 > This setting can make performance worse if there is expensive work that will end up holding onto the IO thread for longer than needed. Test to make sure this setting helps performance.
 
-Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, a single socket engine is capable of keeping busy up to thirty x64 and eight ARM64 CPU cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second),
+Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, a single socket engine is capable of keeping busy up to thirty x64 and eight Arm64 CPU cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second),
 and having a single producer is almost always enough. However, to be sure that extreme loads can be handled, you can use `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT` to override the calculated value. When not overridden, the following value is used:
 
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is `1`, the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> value is used.
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is not `1`, <xref:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture?displayProperty=nameWithType> is evaluated:
-  - When ARM or ARM64 the cores per engine value is set to `8`, otherwise `30`.
+  - When Arm or Arm64 the cores per engine value is set to `8`, otherwise `30`.
 - Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> over the cores per engine.
 
 ### `DOTNET_SYSTEM_NET_DISABLEIPV6`
@@ -137,7 +137,7 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 
 #### JIT memory barriers
 
-The code generator for ARM64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
+The code generator for Arm64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
 ### `DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`
 
@@ -181,7 +181,7 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
 
-Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
+Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/local/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
 ### `NUGET_PACKAGES`
 
@@ -224,19 +224,17 @@ Specifies whether the .NET runtime, shared framework, or SDK are resolved from t
 
 ### `DOTNET_ROLL_FORWARD`
 
-Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.
+Determines roll forward behavior. For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward).
 
 ### `DOTNET_ROLL_FORWARD_TO_PRERELEASE`
 
 If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
-For more information, see [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
+For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward)
 
 ### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 
-Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
-
-This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
+Disables minor version roll forward, if set to `0`. This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
 
 ### `DOTNET_CLI_UI_LANGUAGE`
 

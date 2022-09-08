@@ -1,5 +1,5 @@
 ---
-title: Use dependency injection in .NET
+title: Use dependency injection
 description: Learn how to use dependency injection in your .NET applications.
 author: IEvangelist
 ms.author: dapine

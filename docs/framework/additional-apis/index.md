@@ -43,6 +43,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [System.Data.SqlTypes.SqlChars.Stream property](system.data.sqltypes.sqlchars.stream.md)
 * [System.Data.SqlTypes.SqlGuid Constructor](system.data.sqltypes.sqlguid.-ctor.md)
 * [System.Data.SqlTypes.SqlMoney Constructor](system.data.sqltypes.sqlmoney.-ctor.md)
+* [System.Data.SqlTypes.SqlMoney.ToSqlInternalRepresentation Method](system.data.sqltypes.sqlmoney.tosqlinternalrepresentation.md)
 * [System.Data.SqlTypes.SqlStreamChars Constructor](system.data.sqltypes.sqlstreamchars.-ctor.md)
 * [System.Data.SqlTypes.SqlStreamChars.CanSeek property](system.data.sqltypes.sqlstreamchars.canseek.md)
 * [System.Data.SqlTypes.SqlStreamChars.IsNull property](system.data.sqltypes.sqlstreamchars.isnull.md)

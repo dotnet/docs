@@ -90,7 +90,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Architecture|--architecture <ARCHITECTURE>`**
 
-  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, and `arm`. The default value is `<auto>`, which represents the currently running OS architecture.
+  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, and `s390x`. The default value is `<auto>`, which represents the currently running OS architecture.
 
 - **`-AzureFeed|--azure-feed`**
 
@@ -156,8 +156,8 @@ The install scripts do not update the registry on Windows. They just download th
   For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
   For a runtime installation, use `channel` in `A.B` format.
 
-  The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
-
+  Don't use both `version` and `quality` parameters. When `quality` is specified, the script determines the proper version on its own.
+  
   Available since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**
@@ -267,6 +267,26 @@ The install scripts do not update the registry on Windows. They just download th
   ```bash
   curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
+
+## Set enviornment variables
+
+Manually installing .NET doesn't add the environment variables system-wide, and generally only works for the session in which .NET was installed. There are two environment variables you should set for your operating system:
+
+- `DOTNET_ROOT`
+
+  This variable is set to the folder .NET was installed to, such as `$HOME/.dotnet` for Linux and macOS, and `$HOME\.dotnet` in PowerShell for Windows.
+
+- `PATH`
+
+  This variable should include both the the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
+
+> [!TIP]
+> For Linux and macOS, use the `echo` command to set the variables in your shell profile, such as _.bashrc_:
+>
+> ```bash
+> echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
+> echo 'export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools' >> ~/.bashrc
+> ```
 
 ## See also
 

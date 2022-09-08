@@ -203,9 +203,9 @@ The ReadyToRun compiler doesn't currently support cross-targeting. You must comp
 
 Exceptions to cross-targeting:
 
-- Windows x64 can be used to compile Windows ARM32, ARM64, and x86 images.
-- Windows x86 can be used to compile Windows ARM32 images.
-- Linux x64 can be used to compile Linux ARM32 and ARM64 images.
+- Windows x64 can be used to compile Windows Arm32, Arm64, and x86 images.
+- Windows x86 can be used to compile Windows Arm32 images.
+- Linux x64 can be used to compile Linux Arm32 and Arm64 images.
 
 For more information, see [Ready to Run](../deploying/ready-to-run.md).
 
@@ -362,14 +362,14 @@ Two packages have been released to NuGet that you can use for GPIO programming:
 
 The GPIO packages include APIs for *GPIO*, *SPI*, *I2C*, and *PWM* devices. The IoT bindings package includes device bindings. For more information, see the [devices GitHub repo](https://github.com/dotnet/iot/blob/main/src/devices/).
 
-### ARM64 Linux support
+### Arm64 Linux support
 
-.NET Core 3.0 adds support for ARM64 for Linux. The primary use case for ARM64 is currently with IoT scenarios. For more information, see [.NET Core ARM64 Status](https://github.com/dotnet/announcements/issues/82).
+.NET Core 3.0 adds support for Arm64 for Linux. The primary use case for Arm64 is currently with IoT scenarios. For more information, see [.NET Core Arm64 Status](https://github.com/dotnet/announcements/issues/82).
 
-[Docker images for .NET Core on ARM64](https://hub.docker.com/r/microsoft/dotnet/) are available for Alpine, Debian, and Ubuntu.
+[Docker images for .NET Core on Arm64](https://hub.docker.com/r/microsoft/dotnet/) are available for Alpine, Debian, and Ubuntu.
 
 > [!NOTE]
-> **ARM64** Windows support isn't yet available.
+> Support for the macOS Arm64 (or "Apple Silicon") and Windows Arm64 operating systems was later added in .NET 6.
 
 ## Security
 

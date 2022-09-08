@@ -1,9 +1,9 @@
 ---
-title: Worker Services in .NET
+title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/24/2022
+ms.date: 07/20/2022
 ms.topic: overview
 ---
 
@@ -11,13 +11,15 @@ ms.topic: overview
 
 There are numerous reasons for creating long-running services such as:
 
-- Processing CPU intensive data.
+- Processing CPU-intensive data.
 - Queuing work items in the background.
 - Performing a time-based operation on a schedule.
 
-Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService> &mdash; which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
+Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService>, which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
 
 With .NET, you're no longer restricted to Windows. You can develop cross-platform background services. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
+
+[!INCLUDE [worker-template-workloads](includes/worker-template-workloads.md)]
 
 ## Terminology
 
@@ -51,7 +53,7 @@ The preceding `Program` class:
 > </PropertyGroup>
 > ```
 >
-> For more information regarding performance considerations see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
+> For more information regarding performance considerations, see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
 
 The *Program.cs* file from the template can be rewritten using top-level statements:
 
@@ -92,7 +94,7 @@ For more information, see [.NET project SDKs](../project-sdk/overview.md).
 
 An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
 
-### Containers and cloud adoptability
+### Containers and cloud adaptability
 
 With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
@@ -138,6 +140,23 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 > [!IMPORTANT]
 > The interface serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
+
+## Signal completion
+
+In most common scenarios, you do not need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To achieve this, consider the following `Worker` class:
+
+:::code source="snippets/workers/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+
+In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
+
+> [!IMPORTANT]
+> This will signal to the host that it should stop, and without this call to `StopApplication` the host will continue to run indefinitely.
+
+For more information, see:
+
+- [.NET Generic Host: IHostApplicationLifetime](generic-host.md#ihostapplicationlifetime)
+- [.NET Generic Host: Host shutdown](generic-host.md#host-shutdown)
+- [.NET Generic Host: Hosting shutdown process](generic-host.md#hosting-shutdown-process)
 
 ## See also
 

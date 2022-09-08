@@ -1,13 +1,13 @@
 ---
-title: "Breaking change: Install location for x64 emulated on ARM64"
-description: Learn about the breaking change in .NET 6 where the installation location for the x64 version of .NET when installed on ARM64 hardware has changed.
+title: "Breaking change: Install location for x64 emulated on Arm64"
+description: Learn about the breaking change in .NET 6 where the installation location for the x64 version of .NET when installed on Arm64 hardware has changed.
 ms.date: 10/12/2021
 ---
-# Install location for x64 emulated on ARM64
+# Install location for x64 emulated on Arm64
 
-We've moved the install location of the x64 version of the .NET SDK and runtime on ARM64 hardware.
+We've moved the install location of the x64 version of the .NET SDK and runtime on Arm64 hardware.
 
-Previously, the x64 and ARM64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected version of the [`dotnet` command](../../../tools/dotnet.md) used by default.
+Previously, the x64 and Arm64 versions installed to the same location, leading to a broken state. In addition, the `PATH` environment variable value was being set for both installations, so depending on install order, you might have an unexpected version of the [`dotnet` command](../../../tools/dotnet.md) used by default.
 
 ## Version introduced
 
@@ -15,7 +15,7 @@ Previously, the x64 and ARM64 versions installed to the same location, leading t
 
 ## Previous behavior
 
-In previous versions, both the ARM64 and x64 versions of .NET SDK and runtime installed to the same location on ARM64 hardware:
+In previous versions, both the Arm64 and x64 versions of .NET SDK and runtime installed to the same location on Arm64 hardware:
 
 - macOS: */usr/local/share/dotnet*
 - Windows: *%ProgramFiles%\dotnet*
@@ -24,7 +24,7 @@ This worked if only one version was installed, but was completely broken if both
 
 ## New behavior
 
-In .NET 6, the x64 version of .NET installs to a subfolder named *x64* on ARM64 hardware:
+In .NET 6, the x64 version of .NET installs to a subfolder named *x64* on Arm64 hardware:
 
 - macOS: */usr/local/share/dotnet/x64*
 - Windows: *%ProgramFiles%\dotnet\x64*
@@ -37,7 +37,7 @@ This change may affect [*source compatibility*](../../categories.md#source-compa
 
 ## Reason for change
 
-Without this change, the x64 and ARM64 versions of the .NET SDK and .NET runtime install to the same location on ARM64 hardware. This leads to being in a completely broken state. This change allows customers to develop for both x64 and ARM64 at the same time.
+Without this change, the x64 and Arm64 versions of the .NET SDK and .NET runtime install to the same location on Arm64 hardware. This leads to being in a completely broken state. This change allows customers to develop for both x64 and Arm64 at the same time.
 
 ## Recommended action
 

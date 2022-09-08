@@ -3,13 +3,13 @@ title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
 ms.date: 08/16/2021
 author: pkulikov
-f1_keywords: 
+f1_keywords:
   - "._CSharpKeyword"
   - "[]_CSharpKeyword"
   - "()_CSharpKeyword"
   - "^_CSharpKeyword"
   - ".._CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "member access operators [C#]"
   - "member access operator [C#]"
   - "dot operator [C#]"
@@ -139,6 +139,9 @@ If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of 
 
 In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
 
+> [!NOTE]
+> The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it cannot be changed to `null` after being verified as non-null.
+
 The null-conditional member access operator `?.` is also known as the Elvis operator.
 
 ### Thread-safe delegate invocation
@@ -159,7 +162,7 @@ if (handler != null)
 }
 ```
 
-That is a thread-safe way to ensure that only a non-null `handler` is invoked. Because delegate instances are immutable, no thread can change the object referenced by the `handler` local variable. In particular, if the code executed by another thread unsubscribes from the `PropertyChanged` event and `PropertyChanged` becomes `null` before `handler` is invoked, the object referenced by `handler` remains unaffected. The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it cannot be changed to `null` after being verified as non-null.
+That is a thread-safe way to ensure that only a non-null `handler` is invoked. Because delegate instances are immutable, no thread can change the object referenced by the `handler` local variable. In particular, if the code executed by another thread unsubscribes from the `PropertyChanged` event and `PropertyChanged` becomes `null` before `handler` is invoked, the object referenced by `handler` remains unaffected.
 
 ## Invocation expression ()
 
@@ -222,6 +225,9 @@ For more information about indices and ranges, see the [feature proposal note](~
 
 ## See also
 
+- [Use index operator (style rule IDE0056)](../../../fundamentals/code-analysis/style-rules/ide0056.md)
+- [Use range operator (style rule IDE0057)](../../../fundamentals/code-analysis/style-rules/ide0057.md)
+- [Use conditional delegate call (style rule IDE1005)](../../../fundamentals/code-analysis/style-rules/ide1005.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)

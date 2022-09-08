@@ -6,7 +6,7 @@ ms.date: 02/10/2022
 
 # Overview of how .NET is versioned
 
-The [.NET Runtime and the .NET SDK](../introduction.md#sdk-and-runtimes) add new features at different frequencies. In general, the SDK is updated more frequently than the Runtime. This article explains the runtime and the SDK version numbers.
+The [.NET Runtime and the .NET SDK](../introduction.md) add new features at different frequencies. In general, the SDK is updated more frequently than the Runtime. This article explains the runtime and the SDK version numbers.
 
 .NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term supported (LTS). Odd-numbered releases are supported until the next major release. The latest release of .NET is .NET 6.
 

@@ -26,16 +26,16 @@ There are two ways to download and install `dotnet-trace`:
 
   | OS  | Platform |
   | --- | -------- |
-  | Windows | [x86](https://aka.ms/dotnet-trace/win-x86) \| [x64](https://aka.ms/dotnet-trace/win-x64) \| [arm](https://aka.ms/dotnet-trace/win-arm) \| [arm-x64](https://aka.ms/dotnet-trace/win-arm64) |
+  | Windows | [x86](https://aka.ms/dotnet-trace/win-x86) \| [x64](https://aka.ms/dotnet-trace/win-x64) \| [Arm](https://aka.ms/dotnet-trace/win-arm) \| [Arm-x64](https://aka.ms/dotnet-trace/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-trace/osx-x64) |
-  | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [arm](https://aka.ms/dotnet-trace/linux-arm) \| [arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
+  | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [Arm](https://aka.ms/dotnet-trace/linux-arm) \| [Arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
 
 > [!NOTE]
 > To use `dotnet-trace` on an x86 app, you need a corresponding x86 version of the tool.
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet-trace [-h, --help] [--version] <command>
 ```
 
@@ -74,7 +74,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
@@ -211,7 +211,7 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [-o|--output <output-filename>]
 ```
 
@@ -241,7 +241,7 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace ps [-h|--help]
 ```
 
@@ -249,7 +249,7 @@ dotnet-trace ps [-h|--help]
 
 Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-trace ps``` command. The output you'll see is as follows. The command-line arguments, if available, are shown in `dotnet-trace` version 6.0.320703 and later.
 
-```console
+```dotnetcli
 > dotnet-trace ps
   
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
@@ -262,7 +262,7 @@ Lists pre-built tracing profiles with a description of what providers and filter
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace list-profiles [-h|--help]
 ```
 
@@ -272,7 +272,7 @@ Creates a report into stdout from a previously generated trace.
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace report [-h|--help] <tracefile> [command]
 ```
 
@@ -290,7 +290,7 @@ Finds the top N methods that have been on the callstack the longest.
 
 ##### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-v|--verbose] [-h|--help]
 ```
 
@@ -320,13 +320,13 @@ To collect traces using `dotnet-trace`:
 
 - Run the following command:
 
-  ```console
+  ```dotnetcli
   dotnet-trace collect --process-id <PID>
   ```
 
   The preceding command generates output similar to the following:
 
-  ```console
+  ```output
   Press <Enter> to exit...
   Connecting to process: <Full-Path-To-Process-Being-Profiled>/dotnet.exe
   Collecting to file: <Full-Path-To-Trace>/trace.nettrace
@@ -345,13 +345,13 @@ Sometimes it may be useful to collect a trace of a process from its startup. For
 
 This will launch `hello.exe` with `arg1` and `arg2` as its command-line arguments and collect a trace from its runtime startup:
 
-```console
+```dotnetcli
 dotnet-trace collect -- hello.exe arg1 arg2
 ```
 
 The preceding command generates output similar to the following:
 
-```console
+```output
 No profile or providers specified, defaulting to trace profile 'cpu-sampling'
 
 Provider Name                           Keywords            Level               Enabled By
@@ -386,27 +386,27 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 1. The command below makes `dotnet-trace` create a diagnostics socket named `myport.sock` and wait for a connection.
 
-    > ```dotnet-cli
+    > ```dotnetcli
     > dotnet-trace collect --diagnostic-port myport.sock
     > ```
 
     Output:
 
-    > ```bash
+    > ```output
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ```
 
 2. In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-trace` output.
 
-    > ```bash
+    > ```console
     > export DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ./my-dotnet-app arg1 arg2
     > ```
 
     This should then enable `dotnet-trace` to start tracing `my-dotnet-app`:
 
-    > ```bash
+    > ```output
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
     > Starting a counter session. Press Q to quit.
@@ -421,7 +421,7 @@ On Windows, you can view *.nettrace* files in [Visual Studio](/visualstudio/prof
 
 On Linux, you can view the trace by changing the output format of `dotnet-trace` to `speedscope`. Change the output file format by using the `-f|--format` option. You can choose between `nettrace` (the default option) and `speedscope`. The option `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. `Speedscope` files can be opened at <https://www.speedscope.app>.
 
-For traces collected on non-Windows platforms, you can also move the trace file to a Windows machine to be view it in Visual Studio or PerfView.
+For traces collected on non-Windows platforms, you can also move the trace file to a Windows machine and view it in Visual Studio or PerfView.
 
 > [!NOTE]
 > The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
@@ -435,7 +435,7 @@ For traces collected on non-Windows platforms, you can also move the trace file 
 
 For example, to collect runtime performance counter values, use the following command:
 
-```console
+```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
 
@@ -443,7 +443,7 @@ The preceding command tells the runtime counters to report once every second for
 
 The following command reduces overhead and trace size more than the preceding one:
 
-```console
+```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```
 
@@ -455,7 +455,7 @@ You can launch `dotnet-trace` with an `.rsp` file that contains the arguments to
 
 For example, the following provider can be cumbersome to type out each time you want to trace:
 
-```cmd
+```dotnetcli
 dotnet-trace collect --providers Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
 ```
 
@@ -470,7 +470,7 @@ Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDia
 
 Once you've saved `myprofile.rsp`, you can launch `dotnet-trace` with this configuration using the following command:
 
-```bash
+```dotnetcli
 dotnet-trace @myprofile.rsp
 ```
 

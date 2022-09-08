@@ -15,7 +15,6 @@ using IHost host = Host.CreateDefaultBuilder(args)
                 // Add a user-agent default request header.
                 client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
             });
-        services.AddTransient<JokeService>();
     })
     .Build();
 

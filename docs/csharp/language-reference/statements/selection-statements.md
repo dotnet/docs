@@ -106,3 +106,4 @@ For more information about features introduced in C# 7.0 and later, see the foll
 - [Logical operators](../operators/boolean-logical-operators.md)
 - [Patterns](../operators/patterns.md)
 - [`switch` expression](../operators/switch-expression.md)
+- [Add missing cases to switch statement (style rule IDE0010)](../../../fundamentals/code-analysis/style-rules/ide0010.md)

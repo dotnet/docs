@@ -12,11 +12,11 @@ namespace NUnit.Project
         [Test, Order(5)]
         public void Test1()
         {
-            Test3Called = true;
+            Test1Called = true;
 
-            Assert.IsTrue(Test1Called);
             Assert.IsFalse(Test2ACalled);
             Assert.IsTrue(Test2BCalled);
+            Assert.IsTrue(Test3Called);
         }
 
         [Test, Order(0)]
@@ -24,9 +24,9 @@ namespace NUnit.Project
         {
             Test2BCalled = true;
 
-            Assert.IsTrue(Test1Called);
+            Assert.IsFalse(Test1Called);
             Assert.IsFalse(Test2ACalled);
-            Assert.IsFalse(Test3Called);
+            Assert.IsTrue(Test3Called);
         }
 
         [Test]
@@ -42,11 +42,11 @@ namespace NUnit.Project
         [Test, Order(-5)]
         public void Test3()
         {
-            Test1Called = true;
+            Test3Called = true;
 
+            Assert.IsFalse(Test1Called);
             Assert.IsFalse(Test2ACalled);
             Assert.IsFalse(Test2BCalled);
-            Assert.IsFalse(Test3Called);
         }
     }
 }

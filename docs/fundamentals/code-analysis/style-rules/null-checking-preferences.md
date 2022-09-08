@@ -18,6 +18,7 @@ The style rules in this section concern the following null-checking preferences 
 - [Use coalesce expression (IDE0029 and IDE0030)](ide0029-ide0030.md)
 - [Use null propagation (IDE0031)](ide0031.md)
 - [Use is null check (IDE0041)](ide0041.md)
+- [Prefer `null` check over type check (IDE0150)](ide0150.md)
 
 ## C# null-checking preferences
 

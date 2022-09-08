@@ -239,7 +239,7 @@ ASP.NET Core uses route constraints to help ensure requests are routed properly 
 [Route("/customer/{id:int}")]
 ```
 
-The `:int` after the `id` route parameter constrains the value to match the the `int` type. One benefit of using route constraints is that they allow for two otherwise-identical routes to exist where the parameters differ only by their type. This allows for the equivalent of [method overloading](../../standard/design-guidelines/member-overloading.md) of routes based solely on parameter type.
+The `:int` after the `id` route parameter constrains the value to match the `int` type. One benefit of using route constraints is that they allow for two otherwise-identical routes to exist where the parameters differ only by their type. This allows for the equivalent of [method overloading](../../standard/design-guidelines/member-overloading.md) of routes based solely on parameter type.
 
 The set of route constraints, their syntax, and usage is very similar between all three approaches. Custom route constraints are fairly rare in customer applications. If your app uses a custom route constraint and needs to port to ASP.NET Core, the docs include examples showing [how to create custom route constraints in ASP.NET Core](/aspnet/core/fundamentals/routing#custom-route-constraints). Essentially all that's required is to implement `IRouteConstraint` and its `Match` method, and then add the custom constraint when configuring routing for the app:
 

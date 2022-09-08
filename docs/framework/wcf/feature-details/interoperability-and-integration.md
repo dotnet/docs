@@ -34,9 +34,6 @@ This section covers interoperability and integration with Windows Communication 
  [Migrating ASP.NET Web Services to WCF](migrating-aspnet-web-services-to-wcf.md)  
  Describes how to migrate an ASP.NET Web service to a WCF service.
   
- [Migrating ASP.NET Web Services to WCF](migrating-aspnet-web-services-to-wcf.md)  
- Describes how to migrate an ASP.NET Web service to a WCF service.
-  
  [Interoperability with POX Applications](interoperability-with-pox-applications.md)  
  Describes how WCF provides both services and clients that use "Plain Old XML" (POX) messages.
   

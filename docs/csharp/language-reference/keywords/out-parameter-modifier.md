@@ -75,6 +75,7 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
   
 ## See also
 
+- [Inline variable declaration (style rule IDE0018)](../../../fundamentals/code-analysis/style-rules/ide0018.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)

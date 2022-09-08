@@ -78,16 +78,17 @@ The first two arms examine two properties of the `Order`. The third examines onl
 
 The preceding code demonstrates the [*positional pattern*](../../language-reference/operators/patterns.md#positional-pattern) where the properties are deconstructed for the expression.
 
-This article provided a tour of the kinds of code you can write with pattern matching in C#. The following articles show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
-
 ## List patterns
 
 You can check elements in a list or an array using a *list pattern*. A list pattern provides a means to apply a pattern to any element of a sequence. In addition, you can apply the *discard pattern* (`_`) to match any element, or apply a *slice pattern* to match zero or more elements. The following example determines if an array matches the binary digits, or the start of a Fibonacci sequence:
 
 :::code language="csharp" source="snippets/patterns/OrderProcessor.cs" id="ListPattern":::
 
+This article provided a tour of the kinds of code you can write with pattern matching in C#. The following articles show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
+
 ## See also
 
+- [Use pattern matching to avoid 'is' check followed by a cast (style rules IDE0020 and IDE0038)](../../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md)
 - [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

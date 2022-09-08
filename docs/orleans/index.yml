@@ -93,6 +93,9 @@ conceptualContent:
                 text: Azure App Service
                 url: deployment/deploy-to-azure-app-service.md
               - itemType: concept
+                text: Azure Container Apps
+                url: deployment/deploy-to-azure-container-apps.md
+              - itemType: concept
                 text: Multi-cluster deployment
                 url: deployment/multi-cluster-support/overview.md
         - title: Host Orleans apps
@@ -180,8 +183,8 @@ additionalContent:
                       url: /Shows/On-NET
                     - text: .NET Community Standup
                       url: https://dotnet.microsoft.com/platform/community/standup
-                    - text: The .NET Docs Show
-                      url: https://dotnetdocs.dev
+                    - text: On .NET Live
+                      url: https://dotnet.microsoft.com/en-us/live/dotnet-docs
               - title: Open source
                 links:
                     - text: Orleans on GitHub

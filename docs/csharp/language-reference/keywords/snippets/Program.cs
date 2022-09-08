@@ -17,8 +17,6 @@ namespace keywords
             UsingStatements.Examples();
             Console.WriteLine("=================    try-catch Keyword Examples ======================");
             await AsyncExceptionExamples.Examples();
-            Console.WriteLine("=================    try-catch Keyword Examples ======================");
-            CheckedAndUnchecked.Examples();
         }
     }
 }

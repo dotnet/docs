@@ -20,8 +20,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--no-self-contained]
-     [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
+    [--sc|--self-contained [true|false]] [--no-self-contained]
+    [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -164,7 +164,7 @@ For more information, see the following resources:
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`--self-contained [true|false]`**
+- **`--sc|--self-contained [true|false]`**
 
   Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified and the project is an executable project (not a library project). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
 

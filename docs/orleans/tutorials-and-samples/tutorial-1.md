@@ -52,6 +52,7 @@ You will replace the default code with the code given for each project, below. Y
 |------------------|---------------------------------------------|
 | Silo             | `Microsoft.Orleans.Server`                  |
 | Silo             | `Microsoft.Extensions.Logging.Console`      |
+| Silo             | `Microsoft.Extensions.Hosting`              |
 | Client           | `Microsoft.Extensions.Logging.Console`      |
 | Client           | `Microsoft.Orleans.Client`                  |
 | Grain Interfaces | `Microsoft.Orleans.Core.Abstractions`       |
@@ -119,6 +120,7 @@ Add the following code to _Program.cs_ of the Silo project:
 ```csharp
 using System;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.Configuration;
@@ -141,7 +143,7 @@ catch (Exception ex)
     return 1;
 }
 
-static async Task<ISiloHost> StartSiloAsync()
+static async Task<IHost> StartSiloAsync()
 {
     var builder = new HostBuilder()
         .UseOrleans(c =>

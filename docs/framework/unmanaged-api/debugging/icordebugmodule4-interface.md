@@ -51,7 +51,7 @@ interface ICorDebugModule4 : IUnknown
   
  **Library:** CorGuids.lib  
  
- **.NET Core Supported Versions:** 5.0 and above.
+ **.NET Core Supported Versions:** 5.0 and above.  
   
 ## See also
 

@@ -43,6 +43,7 @@ The following example shows two query expressions. In the first expression, the 
 
 ## See also
 
+- ['var' preferences (style rules IDE0007 and IDE0008)](../../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md)
 - [C# reference](../index.md)
 - [Implicitly typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
 - [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)

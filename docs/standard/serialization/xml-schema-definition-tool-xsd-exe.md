@@ -100,7 +100,7 @@ By using the `/parameters` switch, you can specify a single XML file that sets v
 </xsd>
 ```
 
-If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing **Enter**:
+If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing <kbd>Enter</kbd>:
 
 ```console
  xsd /p:GenerateSchemas.xml

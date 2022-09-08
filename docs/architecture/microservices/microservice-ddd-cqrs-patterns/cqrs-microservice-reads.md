@@ -41,7 +41,7 @@ Dapper is an open-source project (original created by Sam Saffron), and is part 
 
 You also need to add a `using` directive so your code has access to the Dapper extension methods.
 
-When you use Dapper in your code, you directly use the <xref:System.Data.SqlClient.SqlConnection> class available in the <xref:System.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:System.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
+When you use Dapper in your code, you directly use the <xref:Microsoft.Data.SqlClient.SqlConnection> class available in the <xref:Microsoft.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:Microsoft.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
 
 ## Dynamic versus static ViewModels
 

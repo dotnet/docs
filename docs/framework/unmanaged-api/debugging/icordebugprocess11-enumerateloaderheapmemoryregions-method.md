@@ -42,7 +42,7 @@ HRESULT EnumerateLoaderHeapMemoryRegions(
 
  **Library:** CorGuids.lib  
 
- **.NET Core Versions:** 5.0 and later 
+ **.NET Core Versions:** 5.0 and later
 
 ## See also
 

@@ -19,7 +19,7 @@ dotnet help <COMMAND_NAME> [-h|--help]
 
 ## Description
 
-The `dotnet help` command opens up the reference page for more detailed information about the specified command at docs.microsoft.com.
+The `dotnet help` command opens up the reference page for more detailed information about the specified command.
 
 ## Arguments
 

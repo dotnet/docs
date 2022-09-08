@@ -866,6 +866,11 @@ items:
       items:
       - name: "ICorDebugModule3::CreateReaderForInMemorySymbols Method"
         href: icordebugmodule3-createreaderforinmemorysymbols-method.md
+    - name: ICorDebugModule4 Interface
+      href: icordebugmodule4-interface.md
+      items:
+      - name: "ICorDebugModule4::IsMappedLayout Method"
+        href: icordebugmodule4-ismappedlayout-method.md
     - name: ICorDebugModuleBreakpoint Interface
       href: icordebugmodulebreakpoint-interface.md
       items:
@@ -1063,6 +1068,11 @@ items:
       items:
       - name: EnableExceptionCallbacksOutsideOfMyCode Method
         href: icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
+    - name: ICorDebugProcess11 Interface
+      href: icordebugprocess11-interface.md
+      items:
+      - name: EnumerateLoaderHeapMemoryRegions Method
+        href: icordebugprocess11-enumerateloaderheapmemoryregions-method.md
     - name: ICorDebugProcessEnum Interface
       href: icordebugprocessenum-interface.md
       items:

@@ -16,7 +16,6 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 Installers aren't available for Alpine Linux. You must install .NET in one of the following ways:
 
-- [Snap package](linux-snap.md)
 - [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
 - [Manual binary extraction](linux-scripted-manual.md#manual-install)
 

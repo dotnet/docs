@@ -90,7 +90,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   Sets the size of the in-memory buffer, in megabytes. Default 256 MB.
 
   > [!NOTE]
-  > If the target process emits events faster than they can be written to disk, this buffer may overflow and some events will be dropped. This can be mitigated by increasing the buffer size or reducing the number of events being recorded.
+  > If the target process emits events faster than they can be written to disk, this buffer may overflow and some events will be dropped. You can mitigate this problem by increasing the buffer size or reducing the number of events being recorded.
 
 - **`--clreventlevel <clreventlevel>`**
 

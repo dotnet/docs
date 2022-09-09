@@ -16,11 +16,11 @@ Microsoft provides debuggers for managed code in **Visual Studio** and **Visual 
 - [Tutorial - Debugging a .NET Core application on Windows with Visual Studio](../tutorials/debugging-with-visual-studio.md)
 - [Debug ASP.NET Core apps in Visual Studio](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications#debug-aspnet-core-apps)
 
-While Visual Studio is a Windows application, it can also be used to debug Linux apps running remotely, in WSL, or in docker containers:
+While Visual Studio is a Windows application, it can also be used to debug Linux apps running remotely, in WSL, or in Docker containers:
 
-- [Remote debug a .NET Core app on Linux](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh)
+- [Remotely debug a .NET Core app on Linux](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh)
 - [Debug a .NET Core app in WSL2](/visualstudio/debugger/debug-dotnet-core-in-wsl-2)
-- [Debug a .NET Core app in a docker container](/visualstudio/containers/edit-and-refresh)
+- [Debug a .NET Core app in a Docker container](/visualstudio/containers/edit-and-refresh)
 
 ## Visual Studio Code managed debugger
 

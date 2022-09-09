@@ -185,7 +185,7 @@ EventCounters can be consumed by Azure Monitor, specifically Azure Application I
 
 #### dotnet-monitor
 
-The `dotnet-monitor` tool makes it easier to access to diagnostics from a .NET process in a remote and automated fashion. In addition to traces, it can monitor metrics,
+The `dotnet-monitor` tool makes it easier to access diagnostics from a .NET process in a remote and automated fashion. In addition to traces, it can monitor metrics,
 collect memory dumps, and collect GC dumps. It's distributed as both a CLI tool and a docker image. It exposes a REST API, and the collection of diagnostic artifacts occurs through REST calls.
 
 For more information, see [dotnet-monitor](dotnet-monitor.md).

@@ -152,7 +152,7 @@ Types of instruments currently available:
   for maintaining the aggregated total. The caller provides a callback delegate when the ObservableCounter is created and the callback is invoked whenever tools need to observe
   the current total. For example, if a collection tool updates every three seconds, then the callback function will also be invoked every three seconds. Most tools will have both
   the total and rate of change in the total available. If only one can be shown, rate of change is recommended. If the callback returns 0 on the initial call, 7 when it is called
-  again after three seconds, and 19 when called after six seconds then the tool will report those values unchanged as the totals. For rate of change, the tool will show 7-0=7
+  again after three seconds, and 19 when called after six seconds, then the tool will report those values unchanged as the totals. For rate of change, the tool will show 7-0=7
   after three seconds and 19-7=12 after six seconds.
 
 - **ObservableUpDownCounter** (<xref:System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter%2A>) - This instrument is similar to UpDownCounter except that the caller is now responsible
@@ -184,7 +184,7 @@ Types of instruments currently available:
   a variable the code maintains.
 
 > [!NOTE]
-> If you are using an older version of .NET or the DiagnosticSource NuGet package that doesn't support `UpDownCounter` and `ObservableUpDownCounter` (before version 7), `ObservableGauge` is
+> If you're using an older version of .NET or a DiagnosticSource NuGet package that doesn't support `UpDownCounter` and `ObservableUpDownCounter` (before version 7), `ObservableGauge` is
 > often a good substitute.
 
 ### Example of different instrument types

@@ -991,8 +991,6 @@ items:
           href: language-reference/keywords/try-finally.md
         - name: try-catch-finally
           href: language-reference/keywords/try-catch-finally.md
-      - name: fixed Statement
-        href: language-reference/keywords/fixed-statement.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1205,6 +1203,9 @@ items:
     - name: checked and unchecked statements
       displayName: overflow checking
       href: language-reference/statements/checked-and-unchecked.md
+    - name: fixed statement
+      displayName: pin, pinned
+      href: language-reference/statements/fixed.md
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
@@ -1232,7 +1233,7 @@ items:
       displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
-    displayName: unsafe code, pointers, fixed buffer, function pointer
+    displayName: unsafe code, pointers, fixed size buffer, function pointer
     href: language-reference/unsafe-code.md
   - name: Preprocessor directives
     href: language-reference/preprocessor-directives.md

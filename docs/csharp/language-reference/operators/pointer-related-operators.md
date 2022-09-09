@@ -42,7 +42,7 @@ The unary `&` operator returns the address of its operand:
 
 [!code-csharp[address of local](snippets/shared/PointerOperators.cs#AddressOf)]
 
-The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with a [`fixed` statement](../keywords/fixed-statement.md). The obtained address is valid only inside the block of a `fixed` statement. The following example shows how to use a `fixed` statement and the `&` operator:
+The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with a [`fixed` statement](../statements/fixed.md). The obtained address is valid only inside the block of a `fixed` statement. The following example shows how to use a `fixed` statement and the `&` operator:
 
 [!code-csharp[address of fixed](snippets/shared/PointerOperators.cs#AddressOfFixed)]
 
@@ -183,8 +183,8 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Pointer types](../unsafe-code.md#pointer-types)
+- [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
 - [unsafe keyword](../keywords/unsafe.md)
-- [fixed keyword](../keywords/fixed-statement.md)
-- [stackalloc](stackalloc.md)
+- [fixed statement](../statements/fixed.md)
+- [stackalloc expression](stackalloc.md)
 - [sizeof operator](sizeof.md)

@@ -46,7 +46,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [`extern`](extern.md)  
         [`false`](../builtin-types/bool.md)  
         [`finally`](try-finally.md)  
-        [`fixed`](fixed-statement.md)  
+        [`fixed`](../statements/fixed.md)  
         [`float`](../builtin-types/floating-point-numeric-types.md)  
         [`for`](../statements/iteration-statements.md#the-for-statement)  
         [`foreach`](../statements/iteration-statements.md#the-foreach-statement)  

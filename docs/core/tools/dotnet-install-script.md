@@ -268,7 +268,7 @@ The install scripts do not update the registry on Windows. They just download th
   curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
 
-## Set enviornment variables
+## Set environment variables
 
 Manually installing .NET doesn't add the environment variables system-wide, and generally only works for the session in which .NET was installed. There are two environment variables you should set for your operating system:
 

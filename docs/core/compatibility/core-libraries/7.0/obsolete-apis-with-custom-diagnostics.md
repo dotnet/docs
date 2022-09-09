@@ -24,6 +24,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0041](../../../../fundamentals/syslib-diagnostics/syslib0041.md) | The default hash algorithm and iteration counts in <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructors are outdated and insecure. Use a constructor that accepts the hash algorithm and the number of iterations. | Warning |
 | [SYSLIB0042](../../../../fundamentals/syslib-diagnostics/syslib0042.md) | `ToXmlString` and `FromXmlString` have no implementation for elliptic curve cryptography (ECC) types, and are obsolete. Use a standard import and export format such as `ExportSubjectPublicKeyInfo` or `ImportSubjectPublicKeyInfo` for public keys, and `ExportPkcs8PrivateKey` or `ImportPkcs8PrivateKey` for private keys. | Warning |
 | [SYSLIB0043](../../../../fundamentals/syslib-diagnostics/syslib0043.md) | <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> and the associated constructor do not have a consistent and interoperable implementation on all platforms. Use <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ExportSubjectPublicKeyInfo?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0047](../../../../fundamentals/syslib-diagnostics/syslib0047.md) | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead to forbid resolution of external XML resources. | Warning |
 
 ## Version introduced
 
@@ -87,6 +88,10 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 - <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=fullName>
 - <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.%23ctor(System.Byte[])>
+
+### SYSLIB0047
+
+- <xref:System.Xml.XmlSecureResolver?displayProperty=fullName>
 
 ## See also
 

@@ -109,6 +109,10 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+      - name: XML and XSLT
+        items:
+        - name: XmlSecureResolver is obsolete
+          href: xml/7.0/xmlsecureresolver-obsolete.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -225,10 +229,6 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
-        - name: XmlDocument.XmlResolver nullability change
-          href: core-libraries/6.0/xmlresolver-nullable.md
-        - name: XNodeReader.GetAttribute behavior for invalid index
-          href: core-libraries/6.0/xnodereader-getattribute.md
       - name: Cryptography
         items:
         - name: CreateEncryptor methods throw exception for incorrect feedback size
@@ -325,6 +325,12 @@ items:
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
           href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
+      - name: XML and XSLT
+        items:
+        - name: XmlDocument.XmlResolver nullability change
+          href: core-libraries/6.0/xmlresolver-nullable.md
+        - name: XNodeReader.GetAttribute behavior for invalid index
+          href: core-libraries/6.0/xnodereader-getattribute.md
     - name: .NET 5
       items:
       - name: Overview
@@ -853,10 +859,6 @@ items:
           href: core-libraries/6.0/task-fromresult-returns-singleton.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
-        - name: XmlDocument.XmlResolver nullability change
-          href: core-libraries/6.0/xmlresolver-nullable.md
-        - name: XNodeReader.GetAttribute behavior for invalid index
-          href: core-libraries/6.0/xnodereader-getattribute.md
       - name: .NET 5
         items:
         - name: Assembly-related API changes for single-file publishing
@@ -1217,3 +1219,15 @@ items:
           href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WPF apps use Microsoft.NET.Sdk
           href: sdk/5.0/sdk-and-target-framework-change.md
+    - name: XML and XSLT
+      items:
+      - name: .NET 7
+        items:
+        - name: XmlSecureResolver is obsolete
+          href: xml/7.0/xmlsecureresolver-obsolete.md
+      - name: .NET 6
+        items:
+        - name: XmlDocument.XmlResolver nullability change
+          href: core-libraries/6.0/xmlresolver-nullable.md
+        - name: XNodeReader.GetAttribute behavior for invalid index
+          href: core-libraries/6.0/xnodereader-getattribute.md

@@ -115,7 +115,7 @@ This illustration depicts how `SelectMany` concatenates the intermediate sequenc
 
 ### Code example
 
-The following example compares the behavior of `Select` and `SelectMany`. The code creates a "bouquet" of flowers by taking the first two items from each list of flower names in the source collection. In this example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is itself a collection of values. This requires the extra `foreach` loop in order to enumerate each string in each sub-sequence.
+The following example compares the behavior of `Select` and `SelectMany`. The code creates a "bouquet" of flowers by taking the items from each list of flower names in the source collection. In this example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is itself a collection of values. This requires the extra `foreach` loop in order to enumerate each string in each sub-sequence.
 
 ```csharp
 class Bouquet

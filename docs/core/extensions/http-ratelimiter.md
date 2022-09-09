@@ -18,7 +18,7 @@ Rate limiting is the concept of limiting how much a resource can be accessed. Fo
 
 To control the flow of requests, you implement a custom <xref:System.Net.Http.DelegatingHandler> subclass. This is a type of <xref:System.Net.Http.HttpMessageHandler> that allows you to intercept and handle requests before they are sent to the server. You can also intercept and handle responses before they are returned to the caller. In this example, you'll implement a custom `DelegatingHandler` subclass that limits the number of requests that can be sent to a single resource. Consider the following custom `ClientSideRateLimitedHandler` class:
 
-:::code language="csharp" source="snippets/ratelimit/http/http/ClientSideRateLimitedHandler.cs":::
+:::code language="csharp" source="snippets/ratelimit/http/ClientSideRateLimitedHandler.cs":::
 
 The preceding C# code:
 

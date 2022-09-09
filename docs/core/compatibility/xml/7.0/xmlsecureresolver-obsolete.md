@@ -7,7 +7,7 @@ ms.date: 09/08/2022
 
 The method <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=fullName> unconditionally throws an <xref:System.Xml.XmlException> at run time. If your application utilizes <xref:System.Xml.XmlSecureResolver> and you attempt to resolve an entity through it, entity resolution will fail with an exception.
 
-Additionally, the entirety of the type <xref:System.Xml.XmlSecureResolver?displayProperty=fullName> is obsolete as warning. All references to this type will result in a [SYSLIB0047](../../../../fundamentals/syslib-diagnostics/syslib0047.md) warning at build time. If you've enabled warnings as errors, this will cause a build break if your application references <xref:System.Xml.XmlSecureResolver>.
+Additionally, the entire <xref:System.Xml.XmlSecureResolver?displayProperty=fullName> type is obsolete. All references to this type will result in a [SYSLIB0047](../../../../fundamentals/syslib-diagnostics/syslib0047.md) warning at build time. If you've enabled warnings as errors, this will cause a build break if your application references <xref:System.Xml.XmlSecureResolver>.
 
 ```csharp
 using System.Xml;

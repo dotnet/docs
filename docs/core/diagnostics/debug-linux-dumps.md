@@ -17,7 +17,7 @@ The two recommended ways of collecting dumps on Linux are:
 
 ## Analyze dumps on Linux
 
-After a dump is collected it can be analyzed using the [`dotnet-dump`](dotnet-dump.md) tool with the `dotnet-dump analyze` command. This analysis step needs to be run on a machine that has the same architecture and Linux distro as the environment the dump was captured in.
+After a dump is collected, it can be analyzed using the [`dotnet-dump`](dotnet-dump.md) tool with the `dotnet-dump analyze` command. This analysis step needs to be run on a machine that has the same architecture and Linux distro as the environment the dump was captured in.
 The `dotnet-dump` tool supports displaying information about .NET code, but is not useful for understanding code issues for other languages like C and C++.
 
 Alternatively, [LLDB](https://lldb.llvm.org/) can be used to analyze dumps on Linux, which allows analysis of both managed and native code. LLDB uses the SOS extension to debug managed code. The [`dotnet-sos`](dotnet-sos.md) CLI tool can be used to install SOS, which has [many useful commands](https://github.com/dotnet/diagnostics/blob/main/documentation/sos-debugging-extension.md) for debugging managed code. In order to analyze .NET Core dumps, LLDB and SOS require the following .NET Core binaries from the environment the dump was created in:

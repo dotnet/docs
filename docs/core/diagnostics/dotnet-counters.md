@@ -41,7 +41,7 @@ dotnet-counters [-h|--help] [--version] <command>
 
 ## Description
 
-`dotnet-counters` is a performance monitoring tool for ad-hoc health monitoring and first-level performance investigation. It can observe performance counter values that are published via the <xref:System.Diagnostics.Tracing.EventCounter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there's anything suspicious before diving into more serious performance investigation using `PerfView` or `dotnet-trace`.
+`dotnet-counters` is a performance monitoring tool for ad-hoc health monitoring and first-level performance investigation. It can observe performance counter values that are published via the <xref:System.Diagnostics.Tracing.EventCounter> API or the <xref:System.Diagnostics.Metrics.Meter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there's anything suspicious before diving into more serious performance investigation using `PerfView` or `dotnet-trace`.
 
 ## Options
 
@@ -92,7 +92,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
 - **`--format <csv|json>`**
 
@@ -214,7 +214,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
  **`-- <command>` (for target applications running .NET 5 or later only)**
 

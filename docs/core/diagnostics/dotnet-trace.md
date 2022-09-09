@@ -87,10 +87,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--buffersize <size>`**
 
-  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
+  Sets the size of the in-memory buffer, in megabytes. Default 256 MB.
 
   > [!NOTE]
-  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
+  > If the target process emits events faster than they can be written to disk, this buffer may overflow and some events will be dropped. You can mitigate this problem by increasing the buffer size or reducing the number of events being recorded.
 
 - **`--clreventlevel <clreventlevel>`**
 
@@ -203,7 +203,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > - If you see an error message similar to: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use a version of `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
-> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in a broken trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](dumps.md#collect-dumps-on-crash). As a result of the crash in the program, the trace is truncated when the runtime rips apart to prevent breaking other parts of the program. Even though the trace is broken, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
+> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in an incomplete trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](dumps.md#collect-dumps-on-crash). As a result of the unhandled exception, the trace is truncated when the runtime shuts down to prevent other undesired behavior such as a hang or data corruption. Even though the trace is incomplete, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
 
 ## dotnet-trace convert
 

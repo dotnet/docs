@@ -239,7 +239,7 @@ Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 
-According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601> instances via the [`fixed`](../../csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
+According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601> instances via the [`fixed`](../../csharp/language-reference/statements/fixed.md) keyword, as in the following example.
 
 ```csharp
 using System.Runtime.InteropServices;
@@ -279,7 +279,7 @@ public unsafe int ManagedWrapper(Span<byte> data)
 
 **Rule #10: If you're wrapping an asynchronous p/invoke method, your API should accept Memory\<T> as a parameter.**
 
-Since you cannot use the [`fixed`](../../csharp/language-reference/keywords/fixed-statement.md) keyword across asynchronous operations, you use the <xref:System.Memory%601.Pin%2A?displayProperty=nameWithType> method to pin <xref:System.Memory%601> instances, regardless of the kind of contiguous memory the instance represents. The following example shows how to use this API to perform an asynchronous p/invoke call.
+Since you cannot use the [`fixed`](../../csharp/language-reference/statements/fixed.md) keyword across asynchronous operations, you use the <xref:System.Memory%601.Pin%2A?displayProperty=nameWithType> method to pin <xref:System.Memory%601> instances, regardless of the kind of contiguous memory the instance represents. The following example shows how to use this API to perform an asynchronous p/invoke call.
 
 ```csharp
 using System.Runtime.InteropServices;

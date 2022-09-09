@@ -18,7 +18,7 @@ Statements are program instructions. Except as described in the topics reference
 |[Jump statements](../statements/jump-statements.md)|`break`, `continue`, `goto`, `return`|
 |Exception handling statements|[throw](throw.md), [try-catch](try-catch.md), [try-finally](try-finally.md), [try-catch-finally](try-catch-finally.md)|
 |[checked and unchecked statements](../statements/checked-and-unchecked.md)|`checked`, `unchecked`|
-|[fixed statement](fixed-statement.md)|[fixed](fixed-statement.md)|
+|[fixed statement](../statements/fixed.md)|`fixed`|
 |[lock statement](../statements/lock.md)|`lock`|
 |[yield statement](yield.md)|`yield`|
 

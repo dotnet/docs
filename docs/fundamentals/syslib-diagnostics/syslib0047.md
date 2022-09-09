@@ -9,7 +9,7 @@ The <xref:System.Xml.XmlSecureResolver?displayProperty=fullName> type is obsolet
 
 ## Workaround
 
-Consider using the static property `XmlResolver.ThrowingResolver` instead. This property provides an <xref:System.Xml.XmlResolver> instance that forbids external entity resolution.
+Consider using the static property `XmlResolver.ThrowingResolver` instead. This property provides an <xref:System.Xml.XmlResolver> instance that forbids resolution of external XML resources.
 
 ```csharp
 using System.Xml;

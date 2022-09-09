@@ -5,7 +5,7 @@ ms.date: 09/08/2022
 ---
 # XmlSecureResolver is obsolete
 
-The method <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=fullName> unconditionally throws an <xref:System.Xml.XmlException> at run time. If your application utilizes <xref:System.Xml.XmlSecureResolver> and you attempt to resolve an entity through it, entity resolution will fail with an exception.
+The method <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=fullName> unconditionally throws an <xref:System.Xml.XmlException> at run time. If your application utilizes <xref:System.Xml.XmlSecureResolver> and you attempt to resolve an XML resource through it, resolution will fail with an exception.
 
 Additionally, the entire <xref:System.Xml.XmlSecureResolver?displayProperty=fullName> type is obsolete. All references to this type will result in a [SYSLIB0047](../../../../fundamentals/syslib-diagnostics/syslib0047.md) warning at build time. If you've enabled warnings as errors, this will cause a build break if your application references <xref:System.Xml.XmlSecureResolver>.
 
@@ -26,13 +26,13 @@ object entity = resolver.GetEntity(
 
 ## Previous behavior
 
-In .NET Framework, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=nameWithType> constructs a Code Access Security (CAS) sandbox to restrict the external entity resolution process. If policy is violated, a <xref:System.Security.SecurityException> is thrown.
+In .NET Framework, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=nameWithType> constructs a Code Access Security (CAS) sandbox to restrict the external XML resource resolution process. If policy is violated, a <xref:System.Security.SecurityException> is thrown.
 
-In .NET Core 3.1, and .NET 6, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=nameWithType> doesn't restrict external entity resolution at all. External entity resolution is allowed to proceed with no limitations.
+In .NET Core 3.1, and .NET 6, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=nameWithType> doesn't restrict external XML resource resolution at all. External resource resolution is allowed to proceed with no limitations.
 
 ## New behavior
 
-Starting in .NET 7, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=nameWithType> unconditionally throws an <xref:System.Xml.XmlException>. It does not construct a CAS sandbox and does not attempt to resolve the external entity.
+Starting in .NET 7, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,System.String,System.Type)?displayProperty=nameWithType> unconditionally throws an <xref:System.Xml.XmlException>. It does not construct a CAS sandbox and does not attempt to resolve the external resource.
 
 ## Version introduced
 
@@ -48,7 +48,7 @@ This change improves the security of the .NET ecosystem. This obsoletion moves t
 
 ## Recommended action
 
-Consider instead using the newly introduced static property `XmlResolver.ThrowingResolver`. This property provides an <xref:System.Xml.XmlResolver> instance that forbids external entity resolution.
+Consider instead using the newly introduced static property `XmlResolver.ThrowingResolver`. This property provides an <xref:System.Xml.XmlResolver> instance that forbids external resource resolution.
 
 ```csharp
 using System.Xml;

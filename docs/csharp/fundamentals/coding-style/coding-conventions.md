@@ -225,10 +225,6 @@ If you use explicit instantiation, you can use `var`.
 
 :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13b":::
 
-If you specify an array size, you have to initialize the elements one at a time.
-
-:::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13c":::
-
 ### Delegates
 
 Use [`Func<>` and `Action<>`](../../../standard/delegates-lambdas.md) instead of defining delegate types. In a class, define the delegate method.

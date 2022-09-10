@@ -185,7 +185,7 @@ To test the Release build:
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
-1. Run the unit tests by choosing **Test Run** > **All Tests** from the menu bar. The tests pass.
+1. Run the unit tests by choosing **Test** > **Run All Tests** from the menu bar. The tests pass.
 
 ## Debug tests
 

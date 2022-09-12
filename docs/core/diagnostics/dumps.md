@@ -15,6 +15,9 @@ Dumps can be collected in a variety of ways depending on which platform you are 
 > [!NOTE]
 > Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
 
+> [!NOTE]
+> Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found [here](../FAQ-dumps.md).
+
 ### Collect dumps on crash
 
 You can use environment variables to configure your application to collect a dump upon a crash. This is helpful when you want to get an understanding of why a crash happened. For example, capturing a dump when an exception is thrown helps you identify an issue by examining the state of the app when it crashed.

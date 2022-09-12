@@ -26,7 +26,7 @@ dotnet add package Azure.Storage.Blobs
 
 ## Register client
 
-In the `Program.cs` file, register a client for each service:
+In the _Program.cs_ file, register a client for each service:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>

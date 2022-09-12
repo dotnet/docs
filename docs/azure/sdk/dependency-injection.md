@@ -130,7 +130,7 @@ builder.Services.AddControllers();
 
 ## Configure multiple service clients with different names
 
-Assume you have two storage accounts: one for private information and one for public information. Your app transfers data from the public to private storage account after some operation. You need to have two storage service clients. To set up these clients in the `Program.cs` file:
+Assume you have two storage accounts: one for private information and one for public information. Your app transfers data from the public to private storage account after some operation. You need to have two storage service clients. To set up these clients in the _Program.cs_ file:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>

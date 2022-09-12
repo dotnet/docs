@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: .NET 7 obsoletions and warnings in Windows Forms"
 titleSuffix: ""
-description: Learn about the .NET 7 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
+description: Learn about the .NET 7 breaking change where some Windows Forms APIs have been marked as obsolete or otherwise produce a warning.
 ms.date: 09/09/2022
 ---
 # Windows Forms obsoletions and warnings (.NET 7)

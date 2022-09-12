@@ -72,7 +72,7 @@ Add the following operation logger object, which acts as a service to the consol
 
 :::code language="csharp" source="snippets/configuration/console-di/OperationLogger.cs":::
 
-The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is: `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method logs each operation's unique identifier with the scope string and message.
+The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is, `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method logs each operation's unique identifier with the scope string and message.
 
 ## Register services for DI
 

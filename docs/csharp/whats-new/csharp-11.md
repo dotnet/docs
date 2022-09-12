@@ -10,9 +10,9 @@ ms.date: 08/16/2022
 
 The following features are available in Visual Studio 2022 version 17.3:
 
-- [generic math support](#generic-math-support).
-- [auto-default structs](#auto-default-struct)
-- [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
+- [Generic math support](#generic-math-support)
+- [Auto-default structs](#auto-default-struct)
+- [Pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
 - [UTF-8 string literals](#utf-8-string-literals)
@@ -20,15 +20,15 @@ The following features are available in Visual Studio 2022 version 17.3:
 
 The following features are available in Visual Studio 2022 version 17.2:
 
-- [Raw string literals](#raw-string-literals).
+- [Raw string literals](#raw-string-literals)
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
 The following features are available in Visual Studio 2022 version 17.1:
 
-- [Generic attributes](#generic-attributes).
-- [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
-- [List patterns](#list-patterns).
+- [Generic attributes](#generic-attributes)
+- [Newlines in string interpolation expressions](#newlines-in-string-interpolations)
+- [List patterns](#list-patterns)
 
 You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 

@@ -57,7 +57,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   This breaks all code that uses the renamed or removed type.
 
-  .NET's policy for obsoleting APIS is as follows:
+  .NET's policy for obsoleting APIs is as follows:
 
   > An API that shipped in a long-term support (LTS) release must be obsoleted in the subsequent LTS release before it can be removed. In rare cases, exceptions are made to obsolete an API before the subsequent LTS release based on business needs. These obsoletions will be documented and communicated to customers.
 

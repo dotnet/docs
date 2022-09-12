@@ -107,7 +107,7 @@ In the [Register client](#register-client) section, you explicitly specify the `
 
 You can add any options from <xref:Azure.Core.ClientOptions> into the JSON file's `AzureDefaults` section. One of the options is the retry policy. For more information, see [Configure a new retry policy](#configure-a-new-retry-policy).
 
-Since the `Configuration` object is injected from the host you can use the following code in the `Program.cs` file:
+Since the `Configuration` object is a member of the `builder` instance, you can configure secrets:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>

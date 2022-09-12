@@ -11,6 +11,8 @@ ms.topic: reference
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
+> [!NOTE] Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found here.
+
 ## Install
 
 There are two ways to download and install `dotnet-dump`:
@@ -100,7 +102,7 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
 - **`-o|--output <output_dump_path>`**
 
-  The full path and file name where the collected dump should be written.
+  The full path and file name where the collected dump should be written. Please ensure you have write access to the file path specified.
 
   If not specified:
 

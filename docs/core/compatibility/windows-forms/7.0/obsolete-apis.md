@@ -20,9 +20,9 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID | Description | Severity | Version introduced |
 | - | - |
-| WFDEV001 | Casting to/from <xref:System.IntPtr> is unsafe. Use `WParamInternal`, `LParamInternal`, or `ResultInternal` instead. | Warning | Preview 1 |
-| WFDEV002 | <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject?displayProperty=nameWithType> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> controls. Use <xref:System.Windows.Forms.AccessibleObject> instead. | Warning | RC 1 |
-| WFDEV003 | <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=nameWithType> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> items. Use <xref:System.Windows.Forms.AccessibleObject> instead. | Warning | RC 1 |
+| [WFDEV001](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev001) | Casting to/from <xref:System.IntPtr> is unsafe. Use `WParamInternal`, `LParamInternal`, or `ResultInternal` instead. | Warning | Preview 1 |
+| [WFDEV002](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev002) | <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject?displayProperty=nameWithType> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> controls. Use <xref:System.Windows.Forms.AccessibleObject> instead. | Warning | RC 1 |
+| [WFDEV003](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev003) | <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=nameWithType> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> items. Use <xref:System.Windows.Forms.AccessibleObject> instead. | Warning | RC 1 |
 
 ## Version introduced
 
@@ -52,3 +52,7 @@ These obsoletions and warnings can affect [source compatibility](../../categorie
 ### WFDEV003
 
 - <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=fullName>
+
+## See also
+
+- [Obsolete Windows Forms features in .NET 7+](/dotnet/desktop/winforms/wfdev-diagnostics/obsoletions-overview)

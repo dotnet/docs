@@ -28,7 +28,7 @@ The following table shows the environment variables you can configure for collec
 |-------|---------|---|
 |`COMPlus_DbgEnableMiniDump` or `DOTNET_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
 |`COMPlus_DbgMiniDumpType` or `DOTNET_DbgMiniDumpType`|Type of dump to be collected. For more information, see the table below|2 (`MiniDumpWithPrivateReadWriteMemory`)|
-|`COMPlus_DbgMiniDumpName` or `DOTNET_DbgMiniDumpName`|Path to a file to write the dump to. Make sure you have permission to write to the file upi specify.|`/tmp/coredump.<pid>`|
+|`COMPlus_DbgMiniDumpName` or `DOTNET_DbgMiniDumpName`|Path to a file to write the dump to. Make sure you have permission to write to the file specified.|`/tmp/coredump.<pid>`|
 |`COMPlus_CreateDumpDiagnostics` or `DOTNET_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
 |`COMPlus_EnableCrashReport` or `DOTNET_EnableCrashReport`|(Requires .NET 6 or later) If set to 1, the runtime generates a JSON-formatted crash report thta includes information about the threads and stack frames of the crashing application. The crash report name is the dump path/name with *.crashreport.json* appended.
 |`COMPlus_CreateDumpVerboseDiagnostics` or `DOTNET_CreateDumpVerboseDiagnostics`|(Requires .NET 7 or later) If set to 1, enables verbose diagnostic logging of the dump process.|0|

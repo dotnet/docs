@@ -13,8 +13,6 @@ A dump is a file that contains a snapshot of the process at the time it was crea
 Dumps can be collected in a variety of ways depending on which platform you are running your app on.
 
 > [!NOTE]
-> Collecting a dump requires that the process have access to ptrace targeting parent processes. This means /proc/sys/kernel/yama should have ptrace_scope set to 1 or 0. If running under any type of Open Container Initiatory technology, the seccomp profile must allow for calls to ptrace. PTRACE capability can be added via `--cap-add=SYS_PTRACE` or `--privileged`. Afterwards, the dump save path config should point out that the user starting the process needs to have write access to the directory configured as the dump path.
-> [!NOTE]
 > Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
 
 ### Collect dumps on crash

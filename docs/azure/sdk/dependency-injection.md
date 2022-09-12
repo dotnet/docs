@@ -51,7 +51,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered in the `Program.cs` file, you can now use them:
+With the clients registered in the `AddAzureClients`, you can now use them:
 
 ```csharp
 [ApiController]

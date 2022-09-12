@@ -219,12 +219,24 @@
       "version": "1.0",
       "config": {
         "conditions": {
-          "operator": "and",
+          "operator": "or",
           "operands": [
             {
               "name": "isActivitySender",
               "parameters": {
                 "user": "dependabot"
+              }
+            },
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": "dependabot[bot]"
+              }
+            },
+            {
+              "name": "isActivitySender",
+              "parameters": {
+                "user": "dependa[bot]"
               }
             }
           ]

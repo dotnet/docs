@@ -10,6 +10,8 @@ ms.date: 08/27/2020
 
 ## Collect dumps on Linux
 
+[!NOTE] Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found here.
+
 The two recommended ways of collecting dumps on Linux are:
 
 * [`dotnet-dump`](dotnet-dump.md) CLI tool

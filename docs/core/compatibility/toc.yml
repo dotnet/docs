@@ -109,6 +109,8 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+        - name: JsonSerializerOptions copy constructor includes JsonSerializerContext
+          href: serialization/7.0/jsonserializeroptions-copy-constructor.md
         - name: System.Text.Json source generator fallback
           href: serialization/7.0/reflection-fallback.md
       - name: XML and XSLT
@@ -1135,6 +1137,8 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+        - name: JsonSerializerOptions copy constructor includes JsonSerializerContext
+          href: serialization/7.0/jsonserializeroptions-copy-constructor.md
         - name: System.Text.Json source generator fallback
           href: serialization/7.0/reflection-fallback.md
       - name: .NET 6

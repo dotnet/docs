@@ -48,7 +48,7 @@ JsonConverter converter = MyContext.Default.Options.GetConverter(typeof(Poco2));
 
 ## New behavior
 
-Started in .NET 7, the following call fails with the same exception (<xref:System.InvalidOperationException>) as when using the <xref:System.Text.Json.Serialization.JsonSerializerContext> overload:
+Starting in .NET 7, the following call fails with the same exception (<xref:System.InvalidOperationException>) as when using the <xref:System.Text.Json.Serialization.JsonSerializerContext> overload:
 
 ```csharp
 JsonSerializer.Serialize(new Poco2(), MyContext.Default.Options);

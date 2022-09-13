@@ -109,6 +109,8 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+        - name: System.Text.Json source generator fallback
+          href: serialization/7.0/reflection-fallback.md
       - name: XML and XSLT
         items:
         - name: XmlSecureResolver is obsolete
@@ -1133,6 +1135,8 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+        - name: System.Text.Json source generator fallback
+          href: serialization/7.0/reflection-fallback.md
       - name: .NET 6
         items:
         - name: Default serialization format for TimeSpan

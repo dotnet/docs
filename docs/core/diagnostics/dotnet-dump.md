@@ -11,7 +11,7 @@ ms.topic: reference
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
-> [!NOTE] 
+> [!NOTE]
 > Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found here.
 
 ## Install

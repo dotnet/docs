@@ -28,7 +28,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 The previous behavior:
 
 - Was inconsistent with `Cookie` and `Negotiate` authentication, which return <xref:Microsoft.AspNetCore.Authentication.AuthenticateResult.NoResult?displayProperty=nameWithType>.
-- Causes excess failure logs, especially if the remote authentication handler is set as the default handler and invoked per request.
+- Caused excess failure logs, especially if the remote authentication handler is set as the default handler and invoked per request.
 
 ## Recommended action
 

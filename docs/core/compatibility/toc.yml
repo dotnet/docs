@@ -91,6 +91,10 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+      - name: Interop
+        items:
+        - name: RuntimeInformation.OSArchitecture under emulation
+          href: interop/7.0/osarchitecture-emulation.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -1017,6 +1021,10 @@ items:
         href: globalization.md
     - name: Interop
       items:
+      - name: .NET 7
+        items:
+        - name: RuntimeInformation.OSArchitecture under emulation
+          href: interop/7.0/osarchitecture-emulation.md
       - name: .NET 6
         items:
         - name: Static abstract members in interfaces

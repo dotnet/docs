@@ -16,7 +16,7 @@ Dumps can be collected in a variety of ways depending on which platform you are 
 > Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
 
 > [!NOTE]
-> Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found [here](../FAQ-dumps.md).
+> Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found [here](FAQ-dumps.md).
 
 ### Collect dumps on crash
 

@@ -34,7 +34,7 @@ topic_type:
   
  **Library:** CorGuids.lib  
 
- **.NET Core Supported Versions:** 5.0 and above.  
+ **.NET Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-core-50-md.md)]  
   
 ## See also
 

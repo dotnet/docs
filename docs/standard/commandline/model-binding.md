@@ -163,7 +163,7 @@ Command-line applications that work with the file system can use the <xref:Syste
 
 With `FileInfo` and `DirectoryInfo` the pattern matching code is not required:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="filesysteminfo" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="fileinfo" :::
 
 ### Other supported types
 

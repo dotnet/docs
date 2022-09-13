@@ -26,6 +26,8 @@ This tool migrates your app by:
 - Adds new template files such as _App.Xaml_, _MainWindow.Xaml_ and publish profiles.
 - Update namespaces and adds **MainPage** navigation.
 - Attempts to detect and fix APIs that have changed, and marks APIs that are no longer supported, with `//TODO` code comments.
+- Supports WinRT components and non-standard project structure.
+- Produces a post upgrade report.
 
 We aim to provide migration guidance in form of warning messages within the tool and TODO comments within your project as the tool tries to migrate the project. In this way, you'll always be in control of your migration. And for the APIs where complete automation isn't possible, plan is to add `//TODO` comments for the developers to know where the work will be needed. A typical `//TODO` comment will also include a link to our existing migration documentation. Check the Task list within the Visual Studio to see all the action items as TODO comments.
 
@@ -38,18 +40,11 @@ This tool currently supports C#, and in most cases the app will require more eff
 
 Additionally, you may choose to wait for the next version of .NET Upgrade Assistant tool before you start migrating your app, because of the current limitations of the tool:
 
-- `ApplicationView` APIs aren't supported.
-- `AppWindow` related APIs aren't supported.
-
-  The upgrade tries to generate a warning where possible, and deliberately breaks your code so it doesn't compile until you adjust your code.
-
 - Custom views aren't supported.
 
   For example, you won't receive a warning or a fix for a `CustomDialog` that extends `MessageDialog` and calls an API incorrectly.
 
-- WinRT Components aren't supported.
 - Multi window apps might not convert correctly.
-- Apps that follow a nonstandard file structure (Such as _App.xaml_, _App.xaml.cs_ missing from the root folder) might not be converted correctly.
 
 This release is currently in preview, and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Use the **UWP** area tag so that all UWP related issues can be redirected to us.
 

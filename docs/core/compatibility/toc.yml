@@ -27,6 +27,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: AuthenticateAsync for remote auth providers
+          href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
@@ -623,6 +625,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: AuthenticateAsync for remote auth providers
+          href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed

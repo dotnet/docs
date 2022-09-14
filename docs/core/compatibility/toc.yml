@@ -91,6 +91,10 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+      - name: Interop
+        items:
+        - name: RuntimeInformation.OSArchitecture under emulation
+          href: interop/7.0/osarchitecture-emulation.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -109,6 +113,12 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+        - name: JsonSerializerOptions copy constructor includes JsonSerializerContext
+          href: serialization/7.0/jsonserializeroptions-copy-constructor.md
+        - name: Polymorphic serialization for object types
+          href: serialization/7.0/polymorphic-serialization.md
+        - name: System.Text.Json source generator fallback
+          href: serialization/7.0/reflection-fallback.md
       - name: XML and XSLT
         items:
         - name: XmlSecureResolver is obsolete
@@ -117,6 +127,8 @@ items:
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/7.0/apis-throw-argumentnullexception.md
+        - name: Obsoletions and warnings
+          href: windows-forms/7.0/obsolete-apis.md
     - name: .NET 6
       items:
       - name: Overview
@@ -1011,6 +1023,10 @@ items:
         href: globalization.md
     - name: Interop
       items:
+      - name: .NET 7
+        items:
+        - name: RuntimeInformation.OSArchitecture under emulation
+          href: interop/7.0/osarchitecture-emulation.md
       - name: .NET 6
         items:
         - name: Static abstract members in interfaces
@@ -1133,6 +1149,12 @@ items:
           href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Deserialize Version type with leading or trailing whitespace
           href: serialization/7.0/deserialize-version-with-whitespace.md
+        - name: JsonSerializerOptions copy constructor includes JsonSerializerContext
+          href: serialization/7.0/jsonserializeroptions-copy-constructor.md
+        - name: Polymorphic serialization for object types
+          href: serialization/7.0/polymorphic-serialization.md
+        - name: System.Text.Json source generator fallback
+          href: serialization/7.0/reflection-fallback.md
       - name: .NET 6
         items:
         - name: Default serialization format for TimeSpan
@@ -1169,6 +1191,8 @@ items:
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/7.0/apis-throw-argumentnullexception.md
+        - name: Obsoletions and warnings
+          href: windows-forms/7.0/obsolete-apis.md
       - name: .NET 6
         items:
         - name: APIs throw ArgumentNullException

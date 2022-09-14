@@ -84,22 +84,22 @@ foreach (var m in type.GetMethods())
 }
 ```
 
-In the example above, the real problem is `Console.ReadLine()`. Because *any* type could be read, the trimmer has no way to know if you need methods on `System.String` or `System.Guid` or any other type. On the other hand, the following code would be fine:
+In the example above, the real problem is `Console.ReadLine()`. Because *any* type could be read, the trimmer has no way to know if you need methods on `System.DateTime` or `System.Guid` or any other type. On the other hand, the following code would be fine:
 
 ```csharp
-Type type = typeof(string);
+Type type = typeof(System.DateTime);
 foreach (var m in type.GetMethods())
 {
     Console.WriteLine(m.Name);
 }
 ```
 
-Here the trimmer can see the exact type being referenced: `System.String`. Now it can use flow analysis to determine that it needs to keep all public methods on `System.String`. So where does `DynamicallyAccessMembers` come in? When reflection is split across multiple methods. In the below code, we can see that the type `string` flows to `Method3` where reflection is used to access `string`'s methods,
+Here the trimmer can see the exact type being referenced: `System.DateTime`. Now it can use flow analysis to determine that it needs to keep all public methods on `System.DateTime`. So where does `DynamicallyAccessMembers` come in? When reflection is split across multiple methods. In the below code, we can see that the type `System.DateTime` flows to `Method3` where reflection is used to access `System.DateTime`'s methods,
 
 ```csharp
 void Method1()
 {
-    Method2<string>();
+    Method2<System.DateTime>();
 }
 void Method2<T>()
 {
@@ -126,7 +126,7 @@ For performance and stability, flow analysis isn't performed between methods, so
 ```csharp
 void Method1()
 {
-    Method2<string>();
+    Method2<System.DateTime>();
 }
 void Method2<T>()
 {
@@ -146,12 +146,12 @@ After annotating the parameter `type`, the original warning disappears, but anot
 > in call to 'C.Method3(Type)'. The generic parameter 'T' of 'C.Method2\<T\>()' does not
 > have matching annotations.
 
-We propagated annotations up to the parameter `type` of `Method3`, in `Method2` we have a similar issue. The trimmer is able to track the value `T` as it flows through the call to `typeof`, is assigned to the local variable `t`, and passed to `Method3`. At that point it sees that the parameter `type` requires `PublicMethods` but there are no requirements on `T`, and produces a new warning. To fix this, we must "annotate and propagate" by applying annotations all the way up the call chain until we reach a statically known type (like `string` or `System.Tuple`), or another annotated value. In this case, we need to annotate the type parameter `T` of `Method2`.
+We propagated annotations up to the parameter `type` of `Method3`, in `Method2` we have a similar issue. The trimmer is able to track the value `T` as it flows through the call to `typeof`, is assigned to the local variable `t`, and passed to `Method3`. At that point it sees that the parameter `type` requires `PublicMethods` but there are no requirements on `T`, and produces a new warning. To fix this, we must "annotate and propagate" by applying annotations all the way up the call chain until we reach a statically known type (like `System.DateTime` or `System.Tuple`), or another annotated value. In this case, we need to annotate the type parameter `T` of `Method2`.
 
 ```csharp
 void Method1()
 {
-    Method2<string>();
+    Method2<System.DateTime>();
 }
 void Method2<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] T>()
 {
@@ -166,6 +166,6 @@ void Method3(
 }
 ```
 
-Now there are no warnings because the trimmer knows exactly which members may be accessed via runtime reflection (public methods) and on which types (`string`), and it will preserve them. In general, this is the best way to deal with `DynamicallyAccessedMembers` warnings: add annotations so the trimmer knows what to preserve.
+Now there are no warnings because the trimmer knows exactly which members may be accessed via runtime reflection (public methods) and on which types (`System.DateTime`), and it will preserve them. In general, this is the best way to deal with `DynamicallyAccessedMembers` warnings: add annotations so the trimmer knows what to preserve.
 
 As with `RequiresUnreferencedCode` warnings, adding `RequiresUnreferencedCode` or `UnconditionalSuppressMessage` attributes also suppresses warnings but doesn't make the code compatible with trimming, while adding `DynamicallyAccessedMembers` does make it compatible.

@@ -14,6 +14,8 @@ In this article, you'll learn how to create a client-side HTTP handler that rate
 
 Rate limiting is the concept of limiting how much a resource can be accessed. For example, you may know that a database your app accesses can safely handle 1,000 requests per minute, but it may not handle much more than that. You can put a rate limiter in your appl that only allows 1,000 requests every minute and rejects any more requests before they can access the database. Thus, rate limiting your database and allowing your app to handle a safe number of requests. This is a common pattern in distributed systems, where you may have multiple instances of an app running, and you want to ensure that they don't all try to access the database at the same time. There are multiple different rate-limiting algorithms to control the flow of requests.
 
+To use rate limiting in .NET, you'll reference the [System.Threading.RateLimiting](https://www.nuget.org/packages/System.Threading.RateLimiting) NuGet package.
+
 ## Implement a `DelegatingHandler` subclass
 
 To control the flow of requests, you implement a custom <xref:System.Net.Http.DelegatingHandler> subclass. This is a type of <xref:System.Net.Http.HttpMessageHandler> that allows you to intercept and handle requests before they are sent to the server. You can also intercept and handle responses before they are returned to the caller. In this example, you'll implement a custom `DelegatingHandler` subclass that limits the number of requests that can be sent to a single resource. Consider the following custom `ClientSideRateLimitedHandler` class:
@@ -33,6 +35,23 @@ Looking a bit closer at the `SendAsync` method, you'll see that it:
 - Relies on the `RateLimiter` instance to acquire a `RateLimitLease` from the `WaitAsync`.
 - When the `lease.IsAcquired` property is `true`, the request is sent to the server.
 - Otherwise, an <xref:System.Net.Http.HttpResponseMessage> is returned with a `429` status code, and if the `lease` contains a `RetryAfter` value, the `Retry-After` header is set to that value.
+
+## Emulate many concurrent requests
+
+To put this custom `DelegatingHandler` subclass to the test, you'll create a console app that emulates many concurrent requests. This `Program` class creates an <xref:System.Net.Http.HttpClient> with the custom `ClientSideRateLimitedHandler`:
+
+:::code language="csharp" source="snippets/ratelimit/http/Program.cs":::
+
+In the preceding console app:
+
+- The `TokenBucketRateLimiterOptions` are configured with a token limit of `3`, and queue processing order of `OldestFirst`, a queue limit of `1`, and replenishment period of `1` millisecond, a tokens per period value of `1`, and an auto-replenish value of `true`.
+- An `HttpClient` is created with the `ClientSideRateLimitedHandler` that is configured with the `TokenBucketRateLimiter`.
+- To emulate 100 requests, <xref:System.Linq.Enumerable.Range%2A?displayProperty=nameWithType> creates 100 URLs, each with a unique query string parameter.
+- Two <xref:System.Threading.Tasks.Task> objects are assigned from the <xref:System.Threading.Tasks.Parallel.ForEachAsync%2A?displayProperty=nameWithType> method, splitting the URLs into two groups.
+- The `HttpClient` is used to send a `GET` request to each URL, and the response is written to the console.
+- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> waits for both tasks to complete.
+
+Since the `HttpClient` is configured with the `ClientSideRateLimitedHandler`, not all requests will actually make it to the server resource.
 
 ## See also
 

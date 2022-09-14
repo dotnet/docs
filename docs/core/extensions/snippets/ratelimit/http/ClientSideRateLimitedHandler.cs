@@ -37,4 +37,14 @@
         Dispose(disposing: false);
         GC.SuppressFinalize(this);
     }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+
+        if (disposing)
+        {
+            _rateLimiter.Dispose();
+        }
+    }
 }

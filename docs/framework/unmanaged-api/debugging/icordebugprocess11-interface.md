@@ -16,8 +16,8 @@ topic_type:
 
 [Supported in .NET Core 5.0 and later versions.]  
   
- Provides a method that configures the debugger to handle in-memory metadata updates in the target process.  
-  
+Provides a method that enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. It is the same information that would be shown running the SOS "eeheap -loader" command.
+
 ## Methods  
   
 |Method|Description|  

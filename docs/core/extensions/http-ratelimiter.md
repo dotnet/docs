@@ -24,7 +24,15 @@ The preceding C# code:
 
 - Inherits the `DelegatingHandler` type.
 - Implements the <xref:System.IAsyncDisposable> interface.
-- Defines a `RateLimiter` field.
+- Defines a `RateLimiter` field that is assigned from the constructor.
+- The `SendAsync` method is overridden to intercept and handle requests before they are sent to the server.
+- The `DisposeAsync` method is overridden to dispose of the `RateLimiter` instance.
+
+Looking a bit closer at the `SendAsync` method, you'll see that it:
+
+- Relies on the `RateLimiter` instance to acquire a `RateLimitLease` from the `WaitAsync`.
+- When the `lease.IsAcquired` property is `true`, the request is sent to the server.
+- Otherwise, an <xref:System.Net.Http.HttpResponseMessage> is returned with a `429` status code, and if the `lease` contains a `RetryAfter` value, the `Retry-After` header is set to that value.
 
 ## See also
 

@@ -51,9 +51,17 @@ In the preceding console app:
 - The `HttpClient` is used to send a `GET` request to each URL, and the response is written to the console.
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> waits for both tasks to complete.
 
-Since the `HttpClient` is configured with the `ClientSideRateLimitedHandler`, not all requests will actually make it to the server resource.
+Since the `HttpClient` is configured with the `ClientSideRateLimitedHandler`, not all requests will make it to the server resource. You can test this by running the console app, and you'll see that only a fraction of the total number of requests are sent to the server, and the rest are rejected with an HTTP status code of `429`. Try altering the `options` object used to create the `TokenBucketRateLimiter` to see how the number of requests that are sent to the server changes.
+
+To have a better understanding of the various rate-limiting algorithms, try rewriting this code to accept a different `RateLimiter` implementation. In addition to the `TokenBucketRateLimiter` you could try:
+
+- `ConcurrencyLimiter`
+- `FixedWindowRateLimiter`
+- `PartitionedRateLimiter`
+- `SlidingWindowRateLimiter`
 
 ## See also
 
 - [Announcing Rate Limiting for .NET](https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet)
 - [Rate limiting middleware in ASP.NET Core](/aspnet/core/performance/rate-limit)
+- [Azure Architecture: Rate limiting pattern](/azure/architecture/patterns/rate-limiting-pattern)

@@ -60,8 +60,13 @@ To have a better understanding of the various rate-limiting algorithms, try rewr
 - `PartitionedRateLimiter`
 - `SlidingWindowRateLimiter`
 
+## Summary
+
+In this article, you learned how to implement a custom `ClientSideRateLimitedHandler`. This pattern could be used to implement a rate-limited HTTP client for resources that you know have API limits. In this way, you're preventing your client app from making unnecessary requests to the server, and you're also preventing your app from being blocked by the server. Additionally, with the use of metadata to store retry timing values, you could also implement automatic retry logic.
+
 ## See also
 
 - [Announcing Rate Limiting for .NET](https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet)
 - [Rate limiting middleware in ASP.NET Core](/aspnet/core/performance/rate-limit)
 - [Azure Architecture: Rate limiting pattern](/azure/architecture/patterns/rate-limiting-pattern)
+- [Automatic retry logic in .NET](../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md)

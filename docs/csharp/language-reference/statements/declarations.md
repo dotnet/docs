@@ -14,7 +14,7 @@ A *declaration statement* declares a new variable, and optionally, initializes i
 
 ## Implicitly typed local variables
 
-Beginning with C# 3, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:
+Beginning with C# 3, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:
 
 ```csharp
 var i = 10; // Implicitly typed.
@@ -39,13 +39,13 @@ List<int>? ys = new();
 
 In pattern matching, the `var` keyword is used in a [`var` pattern](../operators/patterns.md#var-pattern).
 
-The following example shows two query expressions. In the first expression, the use of `var` is permitted but is not required, because the type of the query result can be stated explicitly as an `IEnumerable<string>`. However, in the second expression, `var` allows the result to be a collection of anonymous types, and the name of that type is not accessible except to the compiler itself. Use of `var` eliminates the requirement to create a new class for the result. Note that in Example #2, the `foreach` iteration variable `item` must also be implicitly typed.
+The following example shows two query expressions. In the first expression, the use of `var` is permitted but isn't required, because the type of the query result can be stated explicitly as an `IEnumerable<string>`. However, in the second expression, `var` allows the result to be a collection of anonymous types, and the name of that type isn't accessible except to the compiler itself. Use of `var` eliminates the requirement to create a new class for the result. In Example #2, the `foreach` iteration variable `item` must also be implicitly typed.
 
 :::code language="csharp" source="./snippets/declarations/ImplicitlyTyped.cs" id="VarExample":::
 
 ## Ref locals
 
-Assume the `GetContactInformation` method is declared as a [ref return](jump-statements.md#ref-returns):
+You add the `ref` keyword before the type of a variable to declare a `ref` local. Assume the `GetContactInformation` method is declared as a [ref return](jump-statements.md#ref-returns):
 
 ```csharp
 public ref Person GetContactInformation(string fname, string lname)
@@ -57,9 +57,9 @@ A by-value assignment reads the value of a variable and assigns it to a new vari
 Person p = contacts.GetContactInformation("Brandie", "Best");
 ```
 
-The preceding assignment declares `p` as a local variable. Its initial value is copied from reading the value returned by `GetContactInformation`. Any future assignments to `p` will not change the value of the variable returned by `GetContactInformation`. The variable `p` is no longer an alias to the variable returned.
+The preceding assignment declares `p` as a local variable. Its initial value is copied from reading the value returned by `GetContactInformation`. Any future assignments to `p` won't change the value of the variable returned by `GetContactInformation`. The variable `p` is no longer an alias to the variable returned.
 
-You declare a *ref local* variable to copy the alias to the original value. In the following assignment, `p` is an alias to the variable returned from `GetContactInformation`.
+You declare a *ref* variable to copy the alias to the original value. In the following assignment, `p` is an alias to the variable returned from `GetContactInformation`.
 
 ```csharp
 ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
@@ -67,24 +67,20 @@ ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
 
 Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable. Changes to `p` also change the variable returned from `GetContactInformation`.
 
-The `ref` keyword is used both before the local variable declaration *and* before the method call.
-
 You can access a value by reference in the same way. In some cases, accessing a value by reference increases performance by avoiding a potentially expensive copy operation. For example, the following statement shows how one can define a ref local value that is used to reference a value.
 
 ```csharp
 ref VeryLargeStruct reflocal = ref veryLargeStruct;
 ```
 
-The `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Cannot initialize a by-reference variable with a value."
-
-Prior to C# 7.3, ref local variables couldn't be reassigned to refer to different storage after being initialized. That restriction has been removed. The following example shows a reassignment:
+The `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Can't initialize a by-reference variable with a value."
 
 ```csharp
 ref VeryLargeStruct reflocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 
- Ref local variables must still be initialized when they are declared.
+ Ref local variables must still be initialized when they're declared.
 
 The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0.
 
@@ -96,13 +92,26 @@ The following example calls the `NumberStore.FindNumber` method to retrieve the 
 
 Without support for reference return values, such an operation is performed by returning the index of the array element along with its value. The caller can then use this index to modify the value in a separate method call. However, the caller can also modify the index to access and possibly modify other array values.  
 
-The following example shows how the `FindNumber` method could be rewritten after
-C# 7.3 to use ref local reassignment:
+The following example shows how the `FindNumber` method could be rewritten after C# 7.3 to use ref local reassignment:
 
 :::code language="csharp" source="./snippets/declarations/NumberStoreUpdated.cs" id="Snippet1":::
 
-This second version is more efficient with longer sequences in scenarios where the number sought is
-closer to the end of the array, as the array is iterated from end towards the beginning, causing fewer items to be examined.
+This second version is more efficient with longer sequences in scenarios where the number sought is closer to the end of the array, as the array is iterated from end towards the beginning, causing fewer items to be examined.
+
+### ref and readonly
+
+The `readonly` modifier can be applied to `ref` local variables and `ref` fields. The `readonly` modifier affects the expression to its right. See the following example declarations:
+
+```csharp
+ref readonly int aConstant; // aConstant can't be value-reassigned.
+readonly ref int Storage; // Storage can't be ref-reassigned.
+readonly ref readonly int CantChange; // CantChange can't be value-reassigned or ref-reassigned.
+```
+
+- *value reassignment* means the value of the variable is reassigned.
+- *ref assignment* means the variable now refers to a different object.
+
+The `readonly ref` and `readonly ref readonly` declarations are valid only on `ref` fields in a `ref struct`.
 
 ## See also
 

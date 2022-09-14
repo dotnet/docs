@@ -18,7 +18,7 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 
 Beginning with C# 8.0, you can define a disposable `ref` struct. To do that, ensure that a `ref` struct fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.
 
-Beginning with C# 11.0, a `ref struct` may contain `ref` fields.
+Beginning with C# 11.0, a `ref struct` may contain `ref` fields. A `ref` field may be assigned or reassigned to refer to another object. Ref fields are declared using the same syntax as [`ref` local variables](../statements/declarations.md#ref-locals)
 
 Typically, you define a `ref` struct type when you need a type that also includes data members of `ref` struct types:
 

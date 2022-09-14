@@ -200,7 +200,7 @@ The general ("G") format specifier converts a number to the more compact of eith
 |<xref:System.Int64>                        |19 digits|
 |<xref:System.UInt64>                       |20 digits|
 |<xref:System.Numerics.BigInteger>          |Unlimited (same as ["R"](#RFormatString))|
-|<xref:System.Half>                         |3 digits|
+|<xref:System.Half>                         |5 digits|
 |<xref:System.Single>                       |9 digits (7 digits in .NET Framework)|
 |<xref:System.Double>                       |17 digits (15 digits in .NET Framework)|
 |<xref:System.Decimal>                      |29 digits|

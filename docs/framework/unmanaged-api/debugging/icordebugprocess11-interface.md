@@ -34,7 +34,7 @@ topic_type:
   
  **Library:** CorGuids.lib  
 
- **.NET Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-core-50-md.md)]  
+ **.NET Versions:** [!INCLUDE[net-core-50-plus](../../../../includes/net-core-50-md.md)]  
   
 ## See also
 

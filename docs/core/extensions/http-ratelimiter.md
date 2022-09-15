@@ -30,7 +30,7 @@ The preceding C# code:
 - Implements the <xref:System.IAsyncDisposable> interface.
 - Defines a `RateLimiter` field that is assigned from the constructor.
 - The `SendAsync` method is overridden to intercept and handle requests before they are sent to the server.
-- The `DisposeAsync` method is overridden to dispose of the `RateLimiter` instance.
+- The <xref:System.IAsyncDisposable.DisposeAsync> method is overridden to dispose of the `RateLimiter` instance.
 
 Looking a bit closer at the `SendAsync` method, you'll see that it:
 
@@ -160,6 +160,8 @@ URL: https://example.com?iteration=50, HTTP status code: OK (200)
 ```
 
 You'll notice that the first logged entries are always the immediately returned 429s, and the last entries are always the 200s. This is because the rate limit is encountered client-side, and avoids making an HTTP call to a server. This is a good thing because it means that the server is not being flooded with requests, and it also means that the rate limit is enforced consistently across all clients.
+
+You should also note that each URL's query string is unique, examine the `iteration` parameter to see that it is incremented by one for each request. This helps to illustrate that the 429 responses aren't from the first requests, but rather from the requests that are made after the rate limit is reached. The 200 responses finish later but were made earlier before the limit was reached.
 
 To have a better understanding of the various rate-limiting algorithms, try rewriting this code to accept a different `RateLimiter` implementation. In addition to the `TokenBucketRateLimiter` you could try:
 

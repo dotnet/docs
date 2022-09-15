@@ -1,7 +1,7 @@
 ---
 title: "Ref Struct types - C# reference"
 description: Learn about the ref struct type in C#
-ms.date: 09/02/2022
+ms.date: 09/15/2022
 ---
 # `ref` Structure types (C# reference)
 

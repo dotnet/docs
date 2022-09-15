@@ -1,7 +1,7 @@
 ---
 description: "ref keyword - C# Reference"
 title: "ref keyword - C# Reference"
-ms.date: 03/29/2021
+ms.date: 09/15/202
 f1_keywords: 
   - "ref_CSharpKeyword"
 helpviewer_keywords: 

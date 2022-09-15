@@ -1,7 +1,7 @@
 ---
 description: "Method Parameters - C# Reference"
 title: "Method Parameters - C# Reference"
-ms.date: 09/01/2022
+ms.date: 09/15/2022
 helpviewer_keywords: 
   - "methods [C#], parameters"
   - "method parameters [C#]"

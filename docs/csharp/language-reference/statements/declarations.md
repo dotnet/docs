@@ -1,7 +1,7 @@
 ---
 title: "Declaration statements - C# reference"
 description: "Declaration statements, including `var`, `ref` locals, and `ref` fields - C# reference"
-ms.date: 09/08/2022
+ms.date: 09/15/2022
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"

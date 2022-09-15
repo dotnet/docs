@@ -1,7 +1,7 @@
 ---
 title: "Jump statements - C# reference"
 description: "Learn about C# jump statements: break, continue, return, and goto."
-ms.date: 09/08/2022
+ms.date: 09/15/2022
 f1_keywords:
   - "break_CSharpKeyword"
   - "continue_CSharpKeyword"

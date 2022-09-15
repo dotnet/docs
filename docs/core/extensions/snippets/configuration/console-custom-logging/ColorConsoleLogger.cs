@@ -13,7 +13,7 @@ public sealed class ColorConsoleLogger : ILogger
     public IDisposable BeginScope<TState>(TState state) => default!;
 
     public bool IsEnabled(LogLevel logLevel) =>
-        _getCurrentConfig().LogLevels.ContainsKey(logLevel);
+        _getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel);
 
     public void Log<TState>(
         LogLevel logLevel,

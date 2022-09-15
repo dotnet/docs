@@ -2580,6 +2580,8 @@ items:
         href: ../core/extensions/httpclient-factory.md
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
+      - name: Rate limiting an HTTP handler in .NET
+        href: ../core/extensions/http-ratelimiter.md
     - name: Sockets
       items:
       - name: Sockets support

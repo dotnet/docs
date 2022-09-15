@@ -41,6 +41,15 @@ If your project is evolving, upgrade it to a later framework version, such as:
 
 The following packages no longer ship old frameworks:
 
+- System.Collections.Immutable
+- System.Data.OleDb
+- System.Net.WebSockets.WebSocketProtocol
+- System.Numerics.Tensors
+- System.Reflection.Metadata
+- System.Reflection.MetadataLoadContext
+- System.Security.Permissions
+- System.Threading.Tasks.Dataflow
+- System.Windows.Extensions
 - Microsoft.Extensions.DependencyModel
 - Microsoft.Win32.Registry.AccessControl
 - Microsoft.Win32.SystemEvents

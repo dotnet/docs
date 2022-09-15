@@ -3,10 +3,12 @@ title: Rate limiting an HTTP handler in .NET
 description: Learn how to create a client-side HTTP handler that limits the number of requests.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/09/2022
+ms.date: 09/15/2022
 ---
 
 # Rate limiting an HTTP handler in .NET
+
+[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
 In this article, you'll learn how to create a client-side HTTP handler that rate limits the number of requests it sends. In this example, you'll see an <xref:System.Net.Http.HttpClient> that accesses the `"www.example.com"` resource. Resources are consumed by apps that rely on them, and when an app makes too many requests to a single resource this can lead to resource contention. Resource contention is when a resource is consumed by too many apps, and the resource is unable to serve all of the apps that are requesting it. This can lead to a poor user experience, and in some cases, it can even lead to a denial of service (DoS) attack. For more information on DoS, see [OWASP: Denial of Service](https://owasp.org/www-community/attacks/Denial_of_Service).
 

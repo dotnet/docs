@@ -21,6 +21,7 @@ The following features are available in Visual Studio 2022 version 17.3:
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
 - [UTF-8 string literals](#utf-8-string-literals)
 - [Required members](#required-members)
+- [`ref` fields and `scoped ref`](#ref-fields-and-ref-scoped-variables)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
@@ -186,6 +187,12 @@ You can learn more about UTF-8 string literals in the string literal section of 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
 For more information on required members, See the [init-only](../properties.md#init-only) section of the properties article.
+
+## `ref` fields and `ref scoped` variables
+
+You can declare `ref` fields inside a [`ref struct`](../language-reference/builtin-types/ref-struct.md). This supports types such as <xref:System.Span%601?displayProperty=nameWithType> without special attributes or hidden internal types.
+
+You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#scope-of-references-and-values) where the reference can escape to.
 
 ## File scoped types
 

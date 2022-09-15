@@ -317,8 +317,6 @@ public class Address
 
 - Table splitting is optional, that is, they can optionally be mapped to a separate table and still be owned types.
 
-- They can reference other entities (that is, they can act as the dependent side on relationships to other non-owned types).
-
 ## Additional resources
 
 - **Martin Fowler. ValueObject pattern** \

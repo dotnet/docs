@@ -25,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-Starting with .NET 6, the legacy Socket APM (`Begin*` and `End*`) APIs are backed with a `Task`-based implementation as part of an effort to consolidate and simplify the `Socket` codebase. Unfortunately, the 6.0 implementation leaked unobserved `SocketException` exceptions. This happened even when the APIS were used correctly, meaning that the user code always invokes the `End*` methods, including when the socket is closed).
+The [asynchronous programming model (APM)](../../../../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) APIs are those named `Begin*` and `End*`. Starting with .NET 6, these legacy APIs are backed with a `Task`-based implementation as part of an effort to consolidate and simplify the `Socket` codebase. Unfortunately, the 6.0 implementation leaked unobserved `SocketException` exceptions. This happened even when the APIS were used correctly, meaning that the user code always invokes the `End*` methods, including when the socket is closed).
 
 The change to throw a <xref:System.Net.Sockets.SocketException> was made to ensure that no unobserved exceptions are leaked in such cases.
 
@@ -34,7 +34,7 @@ The change to throw a <xref:System.Net.Sockets.SocketException> was made to ensu
 If your code catches an <xref:System.ObjectDisposedException> from any of the `Socket.End*` methods, change it to catch <xref:System.Net.Sockets.SocketException> and refer to <xref:System.Net.Sockets.SocketException.SocketErrorCode?displayProperty=nameWithType> to query the underlying reason.
 
 > [!NOTE]
-> APM code should always make sure that `End` methods are invoked after the corresponding `Begin` methods, even if the socket is closed.
+> APM code should always make sure that `End*` methods are invoked after the corresponding `Begin*` methods, even if the socket is closed.
 
 ## Affected APIs
 

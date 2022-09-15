@@ -149,9 +149,10 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  
-        [`select`](select-clause.md)  
+        [`scoped`](../statements/declarations.md#scoped-ref)  
     :::column-end:::
     :::column:::
+        [`select`](select-clause.md)  
         [`set`](set.md)  
         [`unmanaged` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`unmanaged` (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)  

@@ -98,6 +98,8 @@ The following example shows how the `FindNumber` method could be rewritten after
 
 This second version is more efficient with longer sequences in scenarios where the number sought is closer to the end of the array, as the array is iterated from end towards the beginning, causing fewer items to be examined.
 
+The compiler enforces scope rules on `ref` variables: `ref` locals, `ref` parameters, and `ref` fields in `ref struct` types. The rules ensure that a reference doesn't outlive the object to which it refers. See the section on scoping rules in the article on [method parameters](../keywords/method-parameters.md#scope-of-references-and-values).
+
 ### ref and readonly
 
 The `readonly` modifier can be applied to `ref` local variables and `ref` fields. The `readonly` modifier affects the expression to its right. See the following example declarations:
@@ -112,6 +114,14 @@ readonly ref readonly int CantChange; // CantChange can't be value-reassigned or
 - *ref assignment* means the variable now refers to a different object.
 
 The `readonly ref` and `readonly ref readonly` declarations are valid only on `ref` fields in a `ref struct`.
+
+## scoped ref
+
+The contextual keyword `scoped` restricts the lifetime of a value. The `scoped` modifier restricts the [*ref-safe-to-escape* or *safe-to-escape* lifetime](../keywords/method-parameters.md#scope-of-references-and-value), respectively, to the current method. Effectively, adding the `scoped` modifier asserts that your code won't extend the lifetime of the variable.
+
+You can apply `scaped` to a parameter or local variable. The `scoped` modifier may be applied to parameters and locals when the type is a [`ref struct`](../builtin-types/ref-struct.md). Otherwise, the `scoped` modifier may be applied only to local variables that are [ref types](#ref-locals). That includes local variables declared with the `ref` modifier and parameters declared with the `in`, `ref` or `out` modifiers.
+
+The `scoped` modifier is implicitly added to `this` in methods declared in a `struct`, `out` parameters, and `ref` parameters when the type is a `ref struct`.
 
 ## See also
 

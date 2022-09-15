@@ -1,7 +1,7 @@
 ---
 description: "ref keyword - C# Reference"
 title: "ref keyword - C# Reference"
-ms.date: 09/15/202
+ms.date: 09/15/2022
 f1_keywords: 
   - "ref_CSharpKeyword"
 helpviewer_keywords: 
@@ -94,7 +94,7 @@ In order for the caller to modify the object's state, the reference return value
 
 Here's a more complete ref return example, showing both the method signature and method body.
 
-[!code-csharp[FindReturningRef](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#FindReturningRef)]
+:::code language="csharp" source="snippets/RefParameterModifier.cs" id="SnippetFindReturningRef":::
 
 The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code can't modify the returned value. The calling method can avoid copying the returned value by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
 

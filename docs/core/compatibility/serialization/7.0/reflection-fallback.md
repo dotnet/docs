@@ -86,7 +86,7 @@ This will let your application take full advantage of the benefits of source gen
 
 In certain cases, however, making such a change might not be practical or possible. Even though it's not recommended, there are a couple of ways you can re-enable reflection fallback in your source-generated serializer.
 
-### Using a custom contract resolver
+### Use a custom contract resolver
 
 You can use the new contract customization feature to build a custom contract resolver that falls back to reflection-based resolution where required:
 

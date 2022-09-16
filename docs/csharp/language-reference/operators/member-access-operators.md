@@ -209,20 +209,20 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesOptional":::
 
-There are several ways to express a range, as the following table describes:
+There are several ways to express range operators. Please consider the descriptions from the following table:
 
-| Range operator expression | Description |
-|--|--|
-| `..` | All values in the collection. |
-| `..{n}` | All values in the collection up to `{n}` exclusively. |
-| `{n}..` | All values in the collection after `{n}` inclusively. |
-| `{n1}..{n2}` | All values in the collection between `{n1}` inclusively and `{n2}` exclusively. |
-| `^{n}..` | All values in the collection after `{n}` starting from the end inclusively. |
-| `..^{n}` | All values in the collection up to `{n}` starting from the end exclusively. |
-| `{n1}..^{n2}` | All values in the collection between `{n1}` inclusively and `{n2}` starting from the end exclusively. |
-| `^{n1}..^{n2}` | All values in the collection between `{n1}` starting from the end inclusively and `{n2}` starting from the end exclusively. |
+| Range operator expression | Description                                                                          |
+|---------------------------|--------------------------------------------------------------------------------------|
+| `..`                      | All values in the collection.                                                        |
+| `..{end}`                 | Values from the start to the `{end}` exclusively.                                    |
+| `{start}..`               | Values from the `{start}` inclusively to the end.                                    |
+| `{start}..{end}`          | Values from the `{start}` inclusively to the `{end}` exclusively.                    |
+| `^{start}..`              | Values from the `{start}` inclusively to the end starting from the end.              |
+| `..^{end}`                | Values from the start to the `{end}` exclusively starting from the end.              |
+| `{start}..^{end}`         | Values from `{start}` inclusively to `{end}` exclusively starting from the end.      |
+| `^{start}..^{end}`        | Values from `{start}` inclusively to `{end}` exclusively both starting from the end. |
 
-To help visualize these various expressions, the following code uses an array with values one through ten, and performs the following operations:
+To help visualize the various ways to express these, the following code uses an array with values one through ten, performs all of the possible range operator expressions, and shows their corresponding result:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible":::
 

@@ -192,7 +192,7 @@ public static class MemberAccessOperators
     private static void RangesAllPossible()
     {
         // <RangesAllPossible>
-        int[] oneThroughTen = new[]
+        int[] oneThroughTen =
         {
             1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         };

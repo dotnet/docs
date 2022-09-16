@@ -13,13 +13,15 @@ Certain .NET SDK preview and release candidate versions require newer versions o
 
 ## Change description
 
+The following table shows the minimum version of Visual Studio and MSBuild you'll need to use .NET 7.0.100 SDK Preview 3, Preview 7, and RC 2.
+
 | NET 7.0.100 SDK version | Minimum Visual Studio and MSBuild version |
 |-------------------------|-------------------------------------------|
 | Preview 3               | 17.0<sup>1</sup>                          |
 | Preview 7               | 17.2                                      |
 | RC 2                    | 17.3                                      |
 
-<sup>1</sup>In addition, any scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
+<sup>1</sup>In addition, scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
 
 ## Reason for change
 

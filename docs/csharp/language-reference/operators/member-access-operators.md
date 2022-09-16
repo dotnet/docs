@@ -196,7 +196,10 @@ Available in C# 8.0 and later, the `..` operator specifies the start and end of 
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Ranges":::
 
-As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to `int` or <xref:System.Index>.
+As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to <xref:System.Int32> or <xref:System.Index>.
+
+> [!IMPORTANT]
+> Implicit conversions from `int` to `Index` will throw the <xref:System.ArgumentOutOfRangeException> when the value is negative.
 
 You can omit any of the operands of the `..` operator to obtain an open-ended range:
 
@@ -222,9 +225,6 @@ There are several ways to express a range, as the following table describes:
 To help visualize these various expressions, the following code uses an array with values one through ten, and performs the following operations:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible":::
-
-> [!IMPORTANT]
-> Implicit conversions from <xref:System.Int32> to <xref:System.Index> will throw the <xref:System.ArgumentOutOfRangeException> when the value is negative.
 
 For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 

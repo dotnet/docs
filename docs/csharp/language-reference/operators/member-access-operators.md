@@ -199,7 +199,7 @@ Available in C# 8.0 and later, the `..` operator specifies the start and end of 
 As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to <xref:System.Int32> or <xref:System.Index>.
 
 > [!IMPORTANT]
-> Implicit conversions from `int` to `Index` will throw the <xref:System.ArgumentOutOfRangeException> when the value is negative.
+> Implicit conversions from `int` to `Index` throw an <xref:System.ArgumentOutOfRangeException> when the value is negative.
 
 You can omit any of the operands of the `..` operator to obtain an open-ended range:
 
@@ -209,7 +209,7 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesOptional":::
 
-There are several ways to express range operators. Please consider the descriptions from the following table:
+The following table shows various ways to express collection ranges:
 
 | Range operator expression | Description                                                                          |
 |---------------------------|--------------------------------------------------------------------------------------|
@@ -222,7 +222,7 @@ There are several ways to express range operators. Please consider the descripti
 | `{start}..^{end}`         | Values from `{start}` inclusively to `{end}` exclusively starting from the end.      |
 | `^{start}..^{end}`        | Values from `{start}` inclusively to `{end}` exclusively both starting from the end. |
 
-To help visualize the various ways to express these, the following code uses an array with values one through ten, performs all of the possible range operator expressions, and shows their corresponding result:
+The following example demonstrates the effect of using all the ranges presented in the preceding table:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible":::
 

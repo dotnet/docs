@@ -78,7 +78,7 @@ When using the range operator expression syntax, the compiler implicitly convert
 :::code language="csharp" source="../../../../samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs" id="ImplicitRangeOperatorConversion":::
 
 > [!IMPORTANT]
-> Implicit conversions from <xref:System.Int32> to <xref:System.Index> will throw the <xref:System.ArgumentOutOfRangeException> when the value is negative. Likewise, the `Index` constructor will throw `ArgumentOutOfRangeException` when the `value` parameter is negative.
+> Implicit conversions from <xref:System.Int32> to <xref:System.Index> throw an <xref:System.ArgumentOutOfRangeException> when the value is negative. Likewise, the `Index` constructor throws an `ArgumentOutOfRangeException` when the `value` parameter is negative.
 
 ## Type support for indices and ranges
 

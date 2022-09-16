@@ -189,8 +189,13 @@ namespace RangesIndexes
                 start: new Index(value: 3, fromEnd: false),
                 end: new Index(value: 5, fromEnd: true));
 
-            // Prints "True"
-            Console.WriteLine(implicitRange.Equals(explicitRange));
+            if (implicitRange.Equals(explicitRange))
+            {
+                Console.WriteLine(
+                    $"The implicit range '{implicitRange}' equals the explicit range '{explicitRange}'");
+            }
+            // Sample output:
+            //     The implicit range '3..^5' equals the explicit range '3..^5'
             // </ImplicitRangeOperatorConversion>
         }
     }

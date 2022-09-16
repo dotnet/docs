@@ -1,7 +1,7 @@
 ---
 title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 08/16/2021
+ms.date: 09/16/2022
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -204,7 +204,25 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 - `..b` is equivalent to `0..b`
 - `..` is equivalent to `0..^0`
 
-:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesOptional":::
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesOptional" interactive="try-dotnet-method":::
+
+There are several ways to express a range, as the following table describes:
+
+| Range operator expression | Description |
+|--|--|
+| `..` | All values in the collection. |
+| `..{n}` | All values in the collection up to `{n}` exclusively. |
+| `{n}..` | All values in the collection after `{n}` inclusively. |
+| `{n1}..{n2}` | All values in the collection between `{n1}` inclusively and `{n2}` exclusively. |
+| `^{n}..` | All values in the collection after `{n}` starting from the end inclusively. |
+| `..^{n}` | All values in the collection up to `{n}` starting from the end exclusively. |
+| `{n1}..^{n2}` | All values in the collection between `{n1}` inclusively and `{n2}` starting from the end exclusively. |
+| `^{n1}..^{n2}` | All values in the collection between `{n1}` starting from the end inclusively and `{n2}` starting from the end exclusively. |
+
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible" interactive="try-dotnet-method":::
+
+> [!IMPORTANT]
+> Implicit conversions from `int` to <xref:System.Index> will throw the <xref:System.ArgumentOutOfRangeException> when the value is negative.
 
 For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 

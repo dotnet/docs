@@ -17,6 +17,7 @@ public static class MemberAccessOperators
         IndexFromEnd();
         Ranges();
         RangesOptional();
+        RangesAllPossible();
     }
 
     private static void QualifiedName()
@@ -73,7 +74,7 @@ public static class MemberAccessOperators
     private static void NullConditional()
     {
         // <SnippetNullConditional>
-        double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
+        static double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
         {
             return setsOfNumbers?[indexOfSetToSum]?.Sum() ?? double.NaN;
         }
@@ -98,7 +99,7 @@ public static class MemberAccessOperators
     private static void NullConditionalWithNullCoalescing()
     {
         // <SnippetNullConditionalWithNullCoalescing>
-        int GetSumOfFirstTwoOrDefault(int[] numbers)
+        static int GetSumOfFirstTwoOrDefault(int[] numbers)
         {
             if ((numbers?.Length ?? 0) < 2)
             {
@@ -165,7 +166,7 @@ public static class MemberAccessOperators
         string end = line[endIndices];
         Console.WriteLine(end);  // output: three
 
-        void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
+        static void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
         // </SnippetRanges>
     }
 
@@ -184,7 +185,29 @@ public static class MemberAccessOperators
         int[] all = numbers[..];
         Display(all);  // output: 0 10 20 30 40 50
 
-        void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
+        static void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
         // </SnippetRangesOptional>
+    }
+
+    private static void RangesAllPossible()
+    {
+        // <RangesAllPossible>
+        var oneThroughTen = new[]
+        {
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+        };
+
+        Write(oneThroughTen, ..);      // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+        Write(oneThroughTen, ..2);     // 1, 2
+        Write(oneThroughTen, 2..);     //       3, 4, 5, 6, 7, 8, 9, 10
+        Write(oneThroughTen, 3..5);    //          4, 5
+        Write(oneThroughTen, ^5..);    //                6, 7, 8, 9, 10
+        Write(oneThroughTen, ..^4);    // 1, 2, 3, 4, 5, 6
+        Write(oneThroughTen, 3..^4);   //          4, 5, 6
+        Write(oneThroughTen, ^4..^1);  //                   7, 8, 9
+
+        static void Write(int[] vals, Range range) =>
+            Console.WriteLine(string.Join(", ", vals[range]));
+        // </RangesAllPossible>
     }
 }

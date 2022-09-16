@@ -28,7 +28,7 @@ The following example demonstrates the usage of the assignment operator with a l
 
 :::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetSimple":::
 
-The left operand of an assignment receives the *value* of the right had of the assignment. When the operands are [value types](../builtin-types/value-types.md), assignment copies the contents of the right hand operand. When the operands are [reference types](../builtin-types/reference-types.md), assignment copies the reference to the object.
+The left operand of an assignment receives the *value* of the right hand of the assignment. When the operands are [value types](../builtin-types/value-types.md), the assignment copies the contents of the right-hand operand. When the operands are [reference types](../builtin-types/reference-types.md), assignment copies the reference to the object.
 
 This is called *value assignment*: the value is assigned.
 

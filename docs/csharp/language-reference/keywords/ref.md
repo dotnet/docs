@@ -151,7 +151,7 @@ public readonly ref struct Span<T>
     internal readonly ref T _reference;
     private readonly int _length;
 
-    // etc
+    // Omitted for brevity...
 }
 ```
 

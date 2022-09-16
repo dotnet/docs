@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace keywords;
+namespace Keywords;
+
 internal class ParameterModifiers
 {
     internal static void PassValueByValue()

@@ -14,11 +14,11 @@ A *declaration statement* declares a new variable, and optionally, initializes i
 
 ## Implicitly typed local variables
 
-Beginning with C# 3, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:
+Beginning with C# 3, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `a` and `b` are functionally equivalent:
 
 ```csharp
-var i = 10; // Implicitly typed.
-int i = 10; // Explicitly typed.
+var a = 10; // Implicitly typed.
+int b = 10; // Explicitly typed.
 ```
 
 > [!IMPORTANT]
@@ -80,7 +80,7 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 
- Ref local variables must still be initialized when they're declared.
+Ref local variables must still be initialized when they're declared.
 
 The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0.
 

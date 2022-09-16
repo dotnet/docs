@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace keywords;
+namespace Keywords;
 
 // <PassByValueOrReference>
 class TheClass

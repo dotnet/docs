@@ -15,7 +15,7 @@ In C#, arguments can be passed to parameters either by value or by reference. Re
 - *Pass by value* means **passing a copy of the variable** to the method.
 - *Pass by reference* means **passing access to the variable** to the method.
 - A variable of a *reference type* contains a reference to its data.
-- A variable of a *structure type* contains its data directly.
+- A variable of a *value type* contains its data directly.
 
 Because a struct is a [value type](../builtin-types/value-types.md), when you [pass a struct by value](#pass-a-value-type-by-value) to a method, the method receives and operates on a copy of the struct argument. The method has no access to the original struct in the calling method and therefore can't change it in any way. The method can change only the copy.
 
@@ -42,7 +42,7 @@ The variable `n` is a value type. It contains its data, the value `5`. When `Squ
 
 ## Pass a value type by reference
 
-When you pass a *value* type *by by reference*:
+When you pass a *value* type *by reference*:
 
 - If the method assigns the parameter to refer to a different object, those changes **aren't** visible from the caller.
 - If the method modifies the state of the object referred to by the parameter, those changes **aren't** visible from the caller.

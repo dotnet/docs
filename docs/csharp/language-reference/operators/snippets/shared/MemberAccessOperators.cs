@@ -74,7 +74,7 @@ public static class MemberAccessOperators
     private static void NullConditional()
     {
         // <SnippetNullConditional>
-        static double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
+        double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
         {
             return setsOfNumbers?[indexOfSetToSum]?.Sum() ?? double.NaN;
         }
@@ -99,7 +99,7 @@ public static class MemberAccessOperators
     private static void NullConditionalWithNullCoalescing()
     {
         // <SnippetNullConditionalWithNullCoalescing>
-        static int GetSumOfFirstTwoOrDefault(int[] numbers)
+        int GetSumOfFirstTwoOrDefault(int[] numbers)
         {
             if ((numbers?.Length ?? 0) < 2)
             {
@@ -166,7 +166,7 @@ public static class MemberAccessOperators
         string end = line[endIndices];
         Console.WriteLine(end);  // output: three
 
-        static void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
+        void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
         // </SnippetRanges>
     }
 
@@ -185,7 +185,7 @@ public static class MemberAccessOperators
         int[] all = numbers[..];
         Display(all);  // output: 0 10 20 30 40 50
 
-        static void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
+        void Display<T>(IEnumerable<T> xs) => Console.WriteLine(string.Join(" ", xs));
         // </SnippetRangesOptional>
     }
 
@@ -206,7 +206,7 @@ public static class MemberAccessOperators
         Write(oneThroughTen, 3..^4);   //          4, 5, 6
         Write(oneThroughTen, ^4..^1);  //                   7, 8, 9
 
-        static void Write(int[] vals, Range range) =>
+        void Write(int[] vals, Range range) =>
             Console.WriteLine(string.Join(", ", vals[range]));
         // </RangesAllPossible>
     }

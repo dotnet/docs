@@ -3,7 +3,7 @@ title: Use Sockets to send and receive data
 description: Learn how the Socket class exposes socket network communication functionality in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/24/2022
+ms.date: 09/15/2022
 helpviewer_keywords:
   - "application protocols, sockets"
   - "sending data, sockets"

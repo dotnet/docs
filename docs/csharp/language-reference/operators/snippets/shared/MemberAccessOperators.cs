@@ -192,7 +192,7 @@ public static class MemberAccessOperators
     private static void RangesAllPossible()
     {
         // <RangesAllPossible>
-        var oneThroughTen = new[]
+        int[] oneThroughTen = new[]
         {
             1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         };
@@ -206,8 +206,8 @@ public static class MemberAccessOperators
         Write(oneThroughTen, 3..^4);   //          4, 5, 6
         Write(oneThroughTen, ^4..^1);  //                   7, 8, 9
 
-        void Write(int[] vals, Range range) =>
-            Console.WriteLine(string.Join(", ", vals[range]));
+        void Write(int[] values, Range range) =>
+            Console.WriteLine(string.Join(", ", values[range]));
         // </RangesAllPossible>
     }
 }

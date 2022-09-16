@@ -48,7 +48,7 @@ Additionally, you may choose to wait for the next version of .NET Upgrade Assist
 
 This release is currently in preview, and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant). Use the **UWP** area tag so that all UWP related issues can be redirected to us.
 
-> [!NOTE]
+> [!TIP]
 > You may also refer to the UWP migration guide [here](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/migrate-to-windows-app-sdk-ovw) that will tell you more about the changes from UWP APIs to the new Windows App SDK supported APIs and capabilities.  
 
 ## A demonstration of how to run the tool against a UWP app

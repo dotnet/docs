@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1100: Set the `EnableWindowsTargeting` property to true"
 description: Learn about the .NET SDK error message that instructs you to set the EnableWindowsTargeting property to true.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:
@@ -14,7 +12,7 @@ NETSDK1100 indicates that you're building a project that targets Windows on Linu
 
 > To build a project targeting Windows on this operating system, set the `EnableWindowsTargeting` property to true.
 
-To resolve this error, set the `EnableWindowsTargeting` property to true. You can set it in the project file or by passing `/p:EnableWindowsTargeting=false` to a .NET CLI command, such as `dotnet build`. Here's an example project file:
+To resolve this error, set the `EnableWindowsTargeting` property to true. You can set it in the project file or by passing `/p:EnableWindowsTargeting=true` to a .NET CLI command, such as `dotnet build`. Here's an example project file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -37,7 +37,7 @@ Tokens are interpreted as commands, options, or arguments. The command-line app 
 | `--verbosity`    | Option for install command        |
 | `quiet`          | Argument for `--verbosity` option |
 
-A token can contains spaces if it's enclosed in quotation marks (`"`). Here's an example:
+A token can contain spaces if it's enclosed in quotation marks (`"`). Here's an example:
 
 ```console
 dotnet tool search "ef migrations add"

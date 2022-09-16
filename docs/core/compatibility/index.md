@@ -55,7 +55,13 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Renaming or removing a public type**
 
-   This breaks all code that uses the renamed or removed type.
+  This breaks all code that uses the renamed or removed type.
+
+  .NET's policy for obsoleting APIs is as follows:
+
+  > An API that shipped in a long-term support (LTS) release must be obsoleted in the subsequent LTS release before it can be removed. In rare cases, exceptions are made to obsolete an API before the subsequent LTS release based on business needs. All obsoletions are documented and communicated to customers.
+
+  For more information about .NET's support policy, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy).
 
 - ❌ **DISALLOWED: Changing the underlying type of an enumeration**
 
@@ -160,6 +166,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Making a virtual member abstract**
 
   A [virtual member](../../csharp/language-reference/keywords/virtual.md) provides a method implementation that *can be* overridden by a derived class. An [abstract member](../../csharp/language-reference/keywords/abstract.md) provides no implementation and *must be* overridden.
+
+- ❌ **DISALLOWED: Adding the [sealed](../../csharp/language-reference/keywords/sealed.md) keyword to an interface member**
+
+  Adding `sealed` to a default interface member will make it non-virtual, preventing a derived type's implementation of that member from being called.
 
 - ❌ **DISALLOWED: Adding an abstract member to a public type that has accessible (public or protected) constructors and that is not [sealed](../../csharp/language-reference/keywords/sealed.md)**
 

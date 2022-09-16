@@ -119,7 +119,7 @@ Visual Studio for Mac doesn't provide options to publish your app as a single fi
 
 ## Exclude files from being embedded
 
-Certain files can be explicitly excluded from being embedded in the single file by setting following metadata:
+Certain files can be explicitly excluded from being embedded in the single file by setting the following metadata:
 
 ```xml
 <ExcludeFromSingleFile>true</ExcludeFromSingleFile>

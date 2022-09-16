@@ -3,7 +3,7 @@ title: Install .NET on Linux distributions
 description: Learn about how to install .NET on Linux. .NET is not only available at package.microsoft.com, but also the official package archives for various Linux distributions.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/25/2022
+ms.date: 08/07/2022
 ---
 
 # Install .NET on Linux
@@ -28,16 +28,16 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 ## Official package archives
 
-.NET is available in the [official package archives](https://pkgs.org/search/?q=dotnet) for various Linux distributions, including the following ones.
+.NET is available in the [official package archives](https://pkgs.org/search/?q=dotnet) for various Linux distributions, including the following ones:
 
+- [Alpine Linux](https://pkgs.alpinelinux.org/packages?name=dotnet*)
 - [Arch Linux](https://archlinux.org/packages/?q=dotnet)
 - [Arch Linux User Repository](https://aur.archlinux.org/packages?K=dotnet)
 - [Fedora](https://packages.fedoraproject.org/search?query=dotnet)
 - [Red Hat Enterprise Linux](https://access.redhat.com/documentation/en-us/net/6.0)
+- [Ubuntu](https://packages.ubuntu.com/search?keywords=dotnet6)
 
-.NET may or may not be [supported by Microsoft](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) as published in the official package archives. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
-
-[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat and Microsoft collaborate to ensure that .NET works well on RHEL.
+Microsoft collaborates with partners to ensure .NET works well on their Linux distributions. Support is provided by those distributions. You can still [open issues at dotnet/core](https://github.com/dotnet/core/issues) if you run into problems.
 
 ## Microsoft packages
 

@@ -111,21 +111,7 @@ For a list of available SOS commands with `dotnet-dump analyze`, see [dotnet-dum
 
 You can also use the SOS Debugging Extension by loading it into the [WinDbg/dbg debugger](/windows-hardware/drivers/debugger/debugger-download-tools) and executing commands within the Windows debugger.  SOS commands can be used on live processes or dumps.
 
-To load the SOS Debugging Extension into the Windows debugger, run the following command in the tool:
-
-```console
-.loadby sos clr
-```
-
-WinDbg.exe and Visual Studio use a version of SOS.dll that corresponds to the version of Mscorwks.dll currently in use. By default, you should use the version of SOS.dll that matches the current version of Mscorwks.dll.
-
-To use a dump file created on another computer, make sure that the Mscorwks.dll file that came with that installation is in your symbol path, and load the corresponding version of SOS.dll.
-
-To load a specific version of SOS.dll, enter the following command into the Windows Debugger:
-
-```console
-.load <full path to sos.dll>
-```
+Windbg should load the SOS extension automatically whenever the process being debugged contains the .NET Core runtime (coreclr.dll or libcoreclr.so).
 
 ### LLDB Debugger
 

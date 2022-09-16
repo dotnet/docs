@@ -16,7 +16,6 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 Installers aren't available for Alpine Linux. You must install .NET in one of the following ways:
 
-- [Snap package](linux-snap.md)
 - [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
 - [Manual binary extraction](linux-scripted-manual.md#manual-install)
 
@@ -28,16 +27,16 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
 - When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Alpine  | .NET Core 3.1 | .NET 5    | .NET 6    |
-|---------|---------------|-----------|-----------|
-| ✔️ 3.15 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
-| ✔️ 3.14 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
-| ✔️ 3.13 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
-| ✔️ 3.12 | ✔️ 3.1        | ✔️ 5.0    | ✔️ 6.0    |
-| ❌ 3.11 | ✔️ 3.1        | ✔️ 5.0    | ❌ 6.0    |
-| ❌ 3.10 | ✔️ 3.1        | ❌ 5.0    | ❌ 6.0    |
-| ❌ 3.9  | ✔️ 3.1        | ❌ 5.0    | ❌ 6.0    |
-| ❌ 3.8  | ✔️ 3.1        | ❌ 5.0    | ❌ 6.0    |
+| Alpine  | .NET Core 3.1 | .NET 6    |
+|---------|---------------|-----------|
+| ✔️ 3.15 | ✔️ 3.1        | ✔️ 6.0    |
+| ✔️ 3.14 | ✔️ 3.1        | ✔️ 6.0    |
+| ✔️ 3.13 | ✔️ 3.1        | ✔️ 6.0    |
+| ✔️ 3.12 | ✔️ 3.1        | ✔️ 6.0    |
+| ❌ 3.11 | ✔️ 3.1        | ❌ 6.0    |
+| ❌ 3.10 | ✔️ 3.1        | ❌ 6.0    |
+| ❌ 3.9  | ✔️ 3.1        | ❌ 6.0    |
+| ❌ 3.8  | ✔️ 3.1        | ❌ 6.0    |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

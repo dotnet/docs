@@ -6,11 +6,14 @@ on:
   issue_comment:
     types: [created]
   schedule:
-    # Schedule every day at 00:05
-    - cron: '5 0 * * *'
+    # Schedule for five minutes after the hour, every hour
+    - cron: '5 * * * *'
 
 jobs:
   noResponse:
+    permissions:
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: lee-dohm/no-response@9bb0a4b5e6a45046f00353d5de7d90fb8bd773bb

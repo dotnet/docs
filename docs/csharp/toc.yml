@@ -67,7 +67,7 @@ items:
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
     # TODO: Delegates, lambdas and events
-  - name: Object Oriented programming
+  - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
       href: fundamentals/object-oriented/index.md
@@ -126,7 +126,7 @@ items:
       # TODO: Fundamentals of using lambdas
     - name: Introduction to classes
       href: fundamentals/tutorials/classes.md
-    - name: Object-Oriented C#
+    - name: Object-oriented C#
       href: fundamentals/tutorials/oop.md
     # Composing objects from parts
     - name: Inheritance in C# and .NET
@@ -170,7 +170,7 @@ items:
   - name: Tutorials
     items:
     - name: Explore static interface members
-      href: whats-new/tutorials/static-abstract-interface-methods.md
+      href: whats-new/tutorials/static-virtual-interface-members.md
     - name: Explore record types
       href: whats-new/tutorials/records.md
     - name: Explore top-level statements
@@ -991,17 +991,6 @@ items:
           href: language-reference/keywords/try-finally.md
         - name: try-catch-finally
           href: language-reference/keywords/try-catch-finally.md
-      - name: Checked and Unchecked
-        items:
-        - name: Overview
-          displayName: checked unchecked
-          href: language-reference/keywords/checked-and-unchecked.md
-        - name: checked
-          href: language-reference/keywords/checked.md
-        - name: unchecked
-          href: language-reference/keywords/unchecked.md
-      - name: fixed Statement
-        href: language-reference/keywords/fixed-statement.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1062,6 +1051,8 @@ items:
         href: language-reference/keywords/partial-method.md
       - name: remove
         href: language-reference/keywords/remove.md
+      - name: required
+        href: language-reference/keywords/required.md
       - name: set
         href: language-reference/keywords/set.md
       - name: when (filter condition)
@@ -1209,6 +1200,12 @@ items:
     - name: Jump statements
       displayName: break, continue, goto, return
       href: language-reference/statements/jump-statements.md
+    - name: checked and unchecked statements
+      displayName: overflow checking
+      href: language-reference/statements/checked-and-unchecked.md
+    - name: fixed statement
+      displayName: pin, pinned
+      href: language-reference/statements/fixed.md
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
@@ -1233,10 +1230,10 @@ items:
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
     - name: Miscellaneous
-      displayName: Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+      displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
-    displayName: unsafe code, pointers, fixed buffer, function pointer
+    displayName: unsafe code, pointers, fixed size buffer, function pointer
     href: language-reference/unsafe-code.md
   - name: Preprocessor directives
     href: language-reference/preprocessor-directives.md
@@ -1378,8 +1375,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/span-safety.md
       - name: Non-trailing named arguments
         href: ../../_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md
-      - name: Private protected
-        href: ../../_csharplang/proposals/csharp-7.2/private-protected.md
       - name: Conditional ref
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features

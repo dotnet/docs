@@ -349,7 +349,7 @@ Lists combined:
 
 3. Add the **Start** action to the **Service** and **Client** projects.
 
-4. Click **OK**, and press **F5** to run the sample.
+4. Click **OK**, and press <kbd>F5</kbd> to run the sample.
 
 5. If the application does not run properly, follow these steps to make sure your environment has been properly set up:
 

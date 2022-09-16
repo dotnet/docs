@@ -7,8 +7,8 @@ items:
     href: ../core/get-started.md
   - name: Get started tutorials
     href: ../standard/get-started.md
-  - name: .NET 101 videos
-    href: https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80
+  - name: .NET Live TV
+    href: https://dotnet.microsoft.com/live
   - name: How to install
     items:
     - name: Overview
@@ -231,6 +231,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1100.md
       - name: NETSDK1112
         href: ../core/tools/sdk-errors/netsdk1112.md
+      - name: NETSDK1130
+        href: ../core/tools/sdk-errors/netsdk1130.md
       - name: NETSDK1135
         href: ../core/tools/sdk-errors/netsdk1135.md
       - name: NETSDK1136
@@ -239,8 +241,6 @@ items:
         href: ../core/tools/sdk-errors/netsdk1137.md
       - name: NETSDK1138
         href: ../core/tools/sdk-errors/netsdk1138.md
-      - name: NETSDK1130
-        href: ../core/tools/sdk-errors/netsdk1130.md
       - name: NETSDK1141
         href: ../core/tools/sdk-errors/netsdk1141.md
       - name: NETSDK1145
@@ -499,6 +499,8 @@ items:
         href: syslib-diagnostics/syslib0042.md
       - name: SYSLIB0043
         href: syslib-diagnostics/syslib0043.md
+      - name: SYSLIB0047
+        href: syslib-diagnostics/syslib0047.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -1434,9 +1436,7 @@ items:
             href: code-analysis/style-rules/language-rules.md
           - name: this and Me preferences
             items:
-            - name: IDE0003
-              href: code-analysis/style-rules/ide0003-ide0009.md
-            - name: IDE0009
+            - name: IDE0003 and IDE0009
               href: code-analysis/style-rules/ide0003-ide0009.md
           - name: Use language keywords for types
             items:
@@ -1522,9 +1522,7 @@ items:
               href: code-analysis/style-rules/null-checking-preferences.md
             - name: IDE0016
               href: code-analysis/style-rules/ide0016.md
-            - name: IDE0029
-              href: code-analysis/style-rules/ide0029-ide0030.md
-            - name: IDE0030
+            - name: IDE0029 and IDE0030
               href: code-analysis/style-rules/ide0029-ide0030.md
             - name: IDE0031
               href: code-analysis/style-rules/ide0031.md
@@ -1536,9 +1534,7 @@ items:
               href: code-analysis/style-rules/ide1005.md
           - name: var preferences
             items:
-            - name: IDE0007
-              href: code-analysis/style-rules/ide0007-ide0008.md
-            - name: IDE0008
+            - name: IDE0007 and IDE0008
               href: code-analysis/style-rules/ide0007-ide0008.md
           - name: Expression-bodied members
             items:
@@ -1548,9 +1544,7 @@ items:
               href: code-analysis/style-rules/ide0021.md
             - name: IDE0022
               href: code-analysis/style-rules/ide0022.md
-            - name: IDE0023
-              href: code-analysis/style-rules/ide0023-ide0024.md
-            - name: IDE0024
+            - name: IDE0023 and IDE0024
               href: code-analysis/style-rules/ide0023-ide0024.md
             - name: IDE0025
               href: code-analysis/style-rules/ide0025.md
@@ -1568,9 +1562,7 @@ items:
               href: code-analysis/style-rules/pattern-matching-preferences.md
             - name: IDE0019
               href: code-analysis/style-rules/ide0019.md
-            - name: IDE0020
-              href: code-analysis/style-rules/ide0020-ide0038.md
-            - name: IDE0038
+            - name: IDE0020 and IDE0038
               href: code-analysis/style-rules/ide0020-ide0038.md
             - name: IDE0066
               href: code-analysis/style-rules/ide0066.md
@@ -1979,7 +1971,25 @@ items:
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
   - name: Native AOT deployment model
-    href: ../core/deploying/native-aot.md
+    items:
+    - name: Overview
+      href: ../core/deploying/native-aot/index.md
+    - name: AOT warnings
+      items:
+      - name: IL3050
+        href: ../core/deploying/native-aot/warnings/il3050.md
+      - name: IL3051
+        href: ../core/deploying/native-aot/warnings/il3051.md
+      - name: IL3052
+        href: ../core/deploying/native-aot/warnings/il3052.md
+      - name: IL3053
+        href: ../core/deploying/native-aot/warnings/il3053.md
+      - name: IL3054
+        href: ../core/deploying/native-aot/warnings/il3054.md
+      - name: IL3055
+        href: ../core/deploying/native-aot/warnings/il3055.md
+      - name: IL3056
+        href: ../core/deploying/native-aot/warnings/il3056.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -2054,6 +2064,8 @@ items:
       href: ../standard/generics/collections.md
     - name: Generic delegates for manipulating arrays and lists
       href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
+    - name: Generic math
+      href: ../standard/generics/math.md
     - name: Generic interfaces
       href: ../standard/generics/interfaces.md
     - name: Covariance and contravariance
@@ -2547,13 +2559,41 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: HTTP clients in .NET
-      displayName: networking, httpclient
-      href: networking/httpclient-guidelines.md
-    - name: IHttpClientFactory
-      href: ../core/extensions/http-client.md
-    - name: HTTP/3 with .NET
-      href: ../core/extensions/httpclient-http3.md
+    - name: Network programming in .NET
+      href: networking/overview.md
+    - name: Network availability
+      href: networking/network-info.md
+    - name: IPv6 overview
+      href: networking/ipv6-overview.md
+    - name: HTTP
+      items:
+      - name: HTTP support
+        href: networking/http/http-overview.md
+      - name: HTTP client guidelines
+        displayName: networking, httpclient
+        href: networking/http/httpclient-guidelines.md
+      - name: Make HTTP requests
+        displayName: networking,http,web services,client
+        href: networking/http/httpclient.md
+      - name: IHttpClientFactory
+        displayName: networking,httpclient,http,dependency injection,client,factory
+        href: ../core/extensions/httpclient-factory.md
+      - name: HTTP/3 with .NET
+        href: ../core/extensions/httpclient-http3.md
+      - name: Rate limiting an HTTP handler in .NET
+        href: ../core/extensions/http-ratelimiter.md
+    - name: Sockets
+      items:
+      - name: Sockets support
+        href: networking/sockets/sockets-overview.md
+      - name: Use Sockets to send and receive data
+        href: networking/sockets/socket-services.md
+    - name: TCP
+      items:
+      - name: TCP support
+        href: networking/tcp/tcp-overview.md
+      - name: Use TcpClient and TcpListener
+        href: networking/tcp/tcp-services.md
   - name: File globbing in .NET
     href: ../core/extensions/file-globbing.md
   - name: Primitives library in .NET
@@ -2617,6 +2657,8 @@ items:
       href: ../core/extensions/cloud-service.md
   - name: Caching
     href: ../core/extensions/caching.md
+  - name: Channels
+    href: ../core/extensions/channels.md
 - name: Data access
   items:
   - name: LINQ
@@ -2886,6 +2928,8 @@ items:
         displayName: P/Invoke
       - name: Cross-platform P/Invoke
         href: ../standard/native-interop/cross-platform.md
+      - name: Source generation
+        href: ../standard/native-interop/pinvoke-source-generation.md
     - name: Type marshalling
       items:
       - name: Overview
@@ -2899,6 +2943,8 @@ items:
         href: ../standard/native-interop/customize-struct-marshalling.md
       - name: Customize parameter marshalling
         href: ../standard/native-interop/customize-parameter-marshalling.md
+      - name: Source generation
+        href: ../standard/native-interop/custom-marshalling-source-generation.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Expose .NET components to COM

@@ -15,9 +15,7 @@ This guide is a general overview for developing and deploying containerized ASP.
 
 For low-level, development-related details you can see the [.NET Microservices: Architecture for Containerized .NET Applications](../microservices/index.md) guide and it related reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).
 
-## Send us your feedback!
-
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 ## Credits
 

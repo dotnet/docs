@@ -27,6 +27,16 @@ landingContent:
             url: porting-existing-aspnet-apps/index.md
 
   # Card
+  - title: Migrate .NET apps to Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Modernize existing .NET apps with Azure cloud and Windows containers
+            url: modernize-with-azure-containers/index.md
+          - text: Migrate your .NET app to Azure
+            url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
+
+  # Card
   - title: Develop cloud-native .NET apps for Azure
     linkLists:
       - linkListType: concept
@@ -51,29 +61,25 @@ landingContent:
             url: /learn/modules/microservices-resiliency-aspnet-core
 
   # Card
-  - title: Migrate .NET apps to Azure
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Modernize existing .NET apps with Azure cloud and Windows containers
-            url: modernize-with-azure-containers/index.md
-          - text: Migrate your .NET app to Azure
-            url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
-
-  # Card
   - title: Understand DevOps for .NET
     linkLists:
       - linkListType: concept
         links:
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            url:  containerized-lifecycle/index.md
+            url: containerized-lifecycle/index.md
           - text: DevOps for ASP.NET Core Developers
-            url:  devops-for-aspnet-developers/index.md
+            url: devops-for-aspnet-developers/index.md
 
   # Card
-  - title: Modernize desktop apps
+  - title: Mobile and desktop apps
     linkLists:
       - linkListType: concept
         links:
           - text: Modernizing desktop apps on Windows with .NET 6
             url: modernize-desktop/index.md
+          - text: Enterprise Application Patterns Using .NET MAUI
+            url: maui/index.md
+      - linkListType: learn
+        links:
+          - text: Build mobile and desktop apps with .NET MAUI
+            url: /learn/paths/build-apps-with-dotnet-maui

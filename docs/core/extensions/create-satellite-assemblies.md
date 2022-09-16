@@ -1,5 +1,5 @@
 ---
-title: Create satellite assemblies for .NET apps
+title: Create satellite assemblies
 description: Get started with creating satellite assemblies for .NET apps. A satellite assembly can be easily updated or replaced to provide localized resources.
 ms.date: 05/19/2022
 dev_langs:

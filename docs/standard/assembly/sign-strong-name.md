@@ -1,7 +1,7 @@
 ---
 title: "How to: Sign an assembly with a strong name"
 description: This article shows you how to sign a .NET assembly with a strong name by using the Signing tab, the Assembly Linker, assembly attributes, or compiler options.
-ms.date: 01/05/2022
+ms.date: 08/29/2022
 helpviewer_keywords:
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"
@@ -21,7 +21,7 @@ dev_langs:
 
 There are a number of ways to sign an assembly with a strong name:
 
-- By using the **Signing** tab in a project's **Properties** dialog box in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.
+- By using the **Build** > **Strong naming** page in the [project designer](/visualstudio/ide/reference/project-properties-reference) for a project in Visual Studio. This is the easiest and most convenient way to sign an assembly with a strong name.
 - By using the [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) to link a .NET Framework code module (a _.netmodule_ file) with a key file.
 - By using assembly attributes to insert the strong name information into your code. You can use either the <xref:System.Reflection.AssemblyKeyFileAttribute> or the <xref:System.Reflection.AssemblyKeyNameAttribute> attribute, depending on where the key file to be used is located.
 - By using compiler options.
@@ -103,5 +103,6 @@ csc /t:library UtilityLibrary.cs /keyfile:sgKey.snk
 - [How to: Create a public-private key pair](create-public-private-key-pair.md)
 - [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md)
 - [Delay-sign an assembly](delay-sign.md)
+- [Strong-name APIs throw PlatformNotSupportedException](../../core/compatibility/core-libraries/6.0/strong-name-signing-exceptions.md)
 - [Manage assembly and manifest signing](/visualstudio/ide/managing-assembly-and-manifest-signing)
 - [Signing page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)

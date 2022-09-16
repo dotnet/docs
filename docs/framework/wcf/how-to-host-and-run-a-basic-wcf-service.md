@@ -212,7 +212,7 @@ The steps in the code you added to host the service are described as follows:
 
 - **Step 4**: Enable metadata exchange. Clients use metadata exchange to generate proxies for calling the service operations. To enable metadata exchange, create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, and add the `ServiceMetadataBehavior` object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
-- **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press **Enter**. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
+- **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press <kbd>Enter</kbd>. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
 
 > [!IMPORTANT]
 > When you add a WCF service library, Visual Studio hosts it for you if you debug it by starting a service host. To avoid conflicts, you can prevent Visual Studio from hosting the WCF service library.

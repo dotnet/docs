@@ -202,7 +202,7 @@ The following sections describe practices that the C# team follows to prepare co
 
     :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet7":::
 
-- Don't use implicit typing to determine the type of the loop variable in [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) loops. In most cases, the type of elements in the collection isn't immediately obvious. The collection's name shouldn't be solely relied upon for infering the type of its elements.
+- Don't use implicit typing to determine the type of the loop variable in [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) loops. In most cases, the type of elements in the collection isn't immediately obvious. The collection's name shouldn't be solely relied upon for inferring the type of its elements.
 
   The following example uses explicit typing in a `foreach` statement.
 
@@ -224,10 +224,6 @@ Use the concise syntax when you initialize arrays on the declaration line. In th
 If you use explicit instantiation, you can use `var`.
 
 :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13b":::
-
-If you specify an array size, you have to initialize the elements one at a time.
-
-:::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13c":::
 
 ### Delegates
 

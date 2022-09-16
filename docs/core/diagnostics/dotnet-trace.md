@@ -35,7 +35,7 @@ There are two ways to download and install `dotnet-trace`:
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet-trace [-h, --help] [--version] <command>
 ```
 
@@ -74,7 +74,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
@@ -87,10 +87,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--buffersize <size>`**
 
-  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
+  Sets the size of the in-memory buffer, in megabytes. Default 256 MB.
 
   > [!NOTE]
-  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
+  > If the target process emits events faster than they can be written to disk, this buffer may overflow and some events will be dropped. You can mitigate this problem by increasing the buffer size or reducing the number of events being recorded.
 
 - **`--clreventlevel <clreventlevel>`**
 
@@ -203,7 +203,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > - If you see an error message similar to: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use a version of `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
-> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in a broken trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](dumps.md#collect-dumps-on-crash). As a result of the crash in the program, the trace is truncated when the runtime rips apart to prevent breaking other parts of the program. Even though the trace is broken, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
+> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in an incomplete trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](dumps.md#collect-dumps-on-crash). As a result of the unhandled exception, the trace is truncated when the runtime shuts down to prevent other undesired behavior such as a hang or data corruption. Even though the trace is incomplete, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
 
 ## dotnet-trace convert
 
@@ -211,7 +211,7 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [-o|--output <output-filename>]
 ```
 
@@ -241,7 +241,7 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace ps [-h|--help]
 ```
 
@@ -249,7 +249,7 @@ dotnet-trace ps [-h|--help]
 
 Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-trace ps``` command. The output you'll see is as follows. The command-line arguments, if available, are shown in `dotnet-trace` version 6.0.320703 and later.
 
-```console
+```dotnetcli
 > dotnet-trace ps
   
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
@@ -262,7 +262,7 @@ Lists pre-built tracing profiles with a description of what providers and filter
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace list-profiles [-h|--help]
 ```
 
@@ -272,7 +272,7 @@ Creates a report into stdout from a previously generated trace.
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace report [-h|--help] <tracefile> [command]
 ```
 
@@ -290,7 +290,7 @@ Finds the top N methods that have been on the callstack the longest.
 
 ##### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace report <tracefile> topN [-n|--number <n>] [--inclusive] [-v|--verbose] [-h|--help]
 ```
 
@@ -320,13 +320,13 @@ To collect traces using `dotnet-trace`:
 
 - Run the following command:
 
-  ```console
+  ```dotnetcli
   dotnet-trace collect --process-id <PID>
   ```
 
   The preceding command generates output similar to the following:
 
-  ```console
+  ```output
   Press <Enter> to exit...
   Connecting to process: <Full-Path-To-Process-Being-Profiled>/dotnet.exe
   Collecting to file: <Full-Path-To-Trace>/trace.nettrace
@@ -345,13 +345,13 @@ Sometimes it may be useful to collect a trace of a process from its startup. For
 
 This will launch `hello.exe` with `arg1` and `arg2` as its command-line arguments and collect a trace from its runtime startup:
 
-```console
+```dotnetcli
 dotnet-trace collect -- hello.exe arg1 arg2
 ```
 
 The preceding command generates output similar to the following:
 
-```console
+```output
 No profile or providers specified, defaulting to trace profile 'cpu-sampling'
 
 Provider Name                           Keywords            Level               Enabled By
@@ -386,27 +386,27 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 1. The command below makes `dotnet-trace` create a diagnostics socket named `myport.sock` and wait for a connection.
 
-    > ```dotnet-cli
+    > ```dotnetcli
     > dotnet-trace collect --diagnostic-port myport.sock
     > ```
 
     Output:
 
-    > ```bash
+    > ```output
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ```
 
 2. In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-trace` output.
 
-    > ```bash
+    > ```console
     > export DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ./my-dotnet-app arg1 arg2
     > ```
 
     This should then enable `dotnet-trace` to start tracing `my-dotnet-app`:
 
-    > ```bash
+    > ```output
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
     > Starting a counter session. Press Q to quit.
@@ -435,7 +435,7 @@ For traces collected on non-Windows platforms, you can also move the trace file 
 
 For example, to collect runtime performance counter values, use the following command:
 
-```console
+```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
 
@@ -443,7 +443,7 @@ The preceding command tells the runtime counters to report once every second for
 
 The following command reduces overhead and trace size more than the preceding one:
 
-```console
+```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```
 
@@ -455,7 +455,7 @@ You can launch `dotnet-trace` with an `.rsp` file that contains the arguments to
 
 For example, the following provider can be cumbersome to type out each time you want to trace:
 
-```cmd
+```dotnetcli
 dotnet-trace collect --providers Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
 ```
 
@@ -470,7 +470,7 @@ Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDia
 
 Once you've saved `myprofile.rsp`, you can launch `dotnet-trace` with this configuration using the following command:
 
-```bash
+```dotnetcli
 dotnet-trace @myprofile.rsp
 ```
 

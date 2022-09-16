@@ -1,7 +1,6 @@
 ---
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
-author: tdykstra
 ms.date: 07/14/2022
 ms.custom: "updateeachrelease"
 recommendations: false
@@ -42,7 +41,7 @@ recommendations: false
 
 * [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
 * [Attributes](../standard/attributes/index.md)
-* Reflection
+* [Reflection](../csharp/programming-guide/concepts/reflection.md)
 * [Code analyzers](../fundamentals/code-analysis/overview.md)
 * [Delegates and lambdas](../standard/delegates-lambdas.md)
 * [Events](../standard/events/index.md)

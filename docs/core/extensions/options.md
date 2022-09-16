@@ -1,5 +1,5 @@
 ---
-title: Options pattern in .NET
+title: Options pattern
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine

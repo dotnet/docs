@@ -1,7 +1,6 @@
 ---
 title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
-author: tdykstra
 ms.date: 08/24/2021
 ---
 # Runtime libraries overview
@@ -24,11 +23,11 @@ Some libraries are provided in NuGet packages rather than included in the runtim
 | [Dependency injection](../core/extensions/dependency-injection.md) | [`Microsoft.Extensions.DependencyInjection`][di]      |
 | [File globbing](../core/extensions/file-globbing.md)               | [`Microsoft.Extensions.FileSystemGlobbing`][fsg]      |
 | [Generic Host](../core/extensions/generic-host.md)                 | [`Microsoft.Extensions.Hosting`][host]                |
-| [HTTP](../core/extensions/http-client.md)                          | [`Microsoft.Extensions.Http`]<sup>1</sup>[http]                   |
+| [HTTP](../core/extensions/httpclient-factory.md)                   | <sup>†</sup> [`Microsoft.Extensions.Http`][http]      |
 | [Localization](../core/extensions/localization.md)                 | [`Microsoft.Extensions.Localization`][loc]            |
 | [Logging](../core/extensions/logging.md)                           | [`Microsoft.Extensions.Logging`][log]                 |
 
-<sup>1</sup>For some target frameworks, including `net6.0`, these types are part of the shared framework and don't need to be installed separately.
+<sup>†</sup> For some target frameworks, including `net6.0`, these libraries are part of the shared framework and don't need to be installed separately.
 
 [configuration]: https://www.nuget.org/packages/Microsoft.Extensions.Configuration
 [di]: https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection

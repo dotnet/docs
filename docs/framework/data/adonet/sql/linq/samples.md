@@ -18,7 +18,7 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
-- Search for specific issues on Microsoft Docs.  
+- Search Microsoft technical documentation for information about specific issues.
   
 - Participate in the [LINQ Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), where you can discuss more complex topics in detail with experts.  
   

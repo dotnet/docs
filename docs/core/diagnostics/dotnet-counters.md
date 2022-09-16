@@ -35,13 +35,13 @@ There are two ways to download and install `dotnet-counters`:
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet-counters [-h|--help] [--version] <command>
 ```
 
 ## Description
 
-`dotnet-counters` is a performance monitoring tool for ad-hoc health monitoring and first-level performance investigation. It can observe performance counter values that are published via the <xref:System.Diagnostics.Tracing.EventCounter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there's anything suspicious before diving into more serious performance investigation using `PerfView` or `dotnet-trace`.
+`dotnet-counters` is a performance monitoring tool for ad-hoc health monitoring and first-level performance investigation. It can observe performance counter values that are published via the <xref:System.Diagnostics.Tracing.EventCounter> API or the <xref:System.Diagnostics.Metrics.Meter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application to see if there's anything suspicious before diving into more serious performance investigation using `PerfView` or `dotnet-trace`.
 
 ## Options
 
@@ -68,7 +68,7 @@ Periodically collect selected counter values and export them into a specified fi
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
@@ -92,7 +92,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
 - **`--format <csv|json>`**
 
@@ -122,7 +122,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - Collect all counters at a refresh interval of 3 seconds and generate a csv as output:
 
-  ```console
+  ```dotnetcli
   > dotnet-counters collect --process-id 1902 --refresh-interval 3 --format csv
 
   counter_list is unspecified. Monitoring all counters by default.
@@ -131,7 +131,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - Start `dotnet mvc.dll` as a child process and start collecting runtime counters and ASP.NET Core Hosting counters from startup and save it as a JSON output:
 
-  ```console
+  ```dotnetcli
   > dotnet-counters collect --format json --counters System.Runtime,Microsoft.AspNetCore.Hosting -- dotnet mvc.dll
   Starting a counter session. Press Q to quit.
   File saved to counter.json
@@ -143,13 +143,13 @@ Displays a list of counter names and descriptions, grouped by provider.
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-counters list [-h|--help]
 ```
 
 ### Example
 
-```console
+```dotnetcli
 > dotnet-counters list
 Showing well-known counters only. Specific processes may support additional counters.
 
@@ -190,7 +190,7 @@ Displays periodically refreshing values of selected counters.
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters] [-- <command>]
 ```
 
@@ -214,7 +214,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
  **`-- <command>` (for target applications running .NET 5 or later only)**
 
@@ -239,7 +239,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:
 
-  ```console
+  ```dotnetcli
   > dotnet-counters monitor --process-id 1902  --refresh-interval 3 --counters System.Runtime
   Press p to pause, r to resume, q to quit.
       Status: Running
@@ -272,7 +272,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - Monitor just CPU usage and GC heap size from `System.Runtime`:
 
-  ```console
+  ```dotnetcli
   > dotnet-counters monitor --process-id 1902 --counters System.Runtime[cpu-usage,gc-heap-size]
 
   Press p to pause, r to resume, q to quit.
@@ -285,7 +285,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - Monitor `EventCounter` values from user-defined `EventSource`. For more information, see [Tutorial: Measure performance using EventCounters in .NET Core](event-counter-perf.md).
 
-  ```console
+  ```dotnetcli
   > dotnet-counters monitor --process-id 1902 --counters Samples-EventCounterDemos-Minimal
 
   Press p to pause, r to resume, q to quit.
@@ -294,7 +294,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - View all well-known counters that are available in `dotnet-counters`:
 
-  ```console
+  ```dotnetcli
   > dotnet-counters list
 
   Showing well-known counters for .NET (Core) version 3.1 only. Specific processes may support additional counters.
@@ -328,7 +328,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - View all well-known counters that are available in `dotnet-counters` for .NET 5 apps:
 
-  ```console
+  ```dotnetcli
   > dotnet-counters list --runtime-version 5.0
 
   Showing well-known counters for .NET (Core) version 5.0 only. Specific processes may support additional counters.
@@ -387,7 +387,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > [!IMPORTANT]
   > This works for apps running .NET 5 or later only.
 
-  ```console
+  ```dotnetcli
   > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
 
   Press p to pause, r to resume, q to quit.
@@ -402,11 +402,11 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > [!IMPORTANT]
   > This works for apps running .NET 5 or later only.
 
-  ```console
+  ```dotnetcli
   > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2
   ```
 
-  ```console
+  ```output
   Press p to pause, r to resume, q to quit.
     Status: Running
 
@@ -422,7 +422,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-counters ps [-h|--help]
 ```
 
@@ -430,7 +430,7 @@ dotnet-counters ps [-h|--help]
 
 Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-counters ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-counters` version 6.0.320703 and later.
 
-```console
+```dotnetcli
 > dotnet-counters ps
   
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
@@ -450,27 +450,27 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 1. The command below makes dotnet-counters create a diagnostics socket named `myport.sock` and wait for a connection.
 
-    > ```dotnet-cli
+    > ```dotnetcli
     > dotnet-counters collect --diagnostic-port myport.sock
     > ```
 
     Output:
 
-    > ```bash
+    > ```output
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ```
 
 2. In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-counters` output.
 
-    > ```bash
+    > ```console
     > export DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ./my-dotnet-app arg1 arg2
     > ```
 
     This should then enable `dotnet-counters` to start collecting counters on `my-dotnet-app`:
 
-    > ```bash
+    > ```output
     > Waiting for connection on myport.sock
     > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
     > Starting a counter session. Press Q to quit.

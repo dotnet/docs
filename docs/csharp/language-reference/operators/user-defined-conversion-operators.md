@@ -1,7 +1,7 @@
 ---
 title: "User-defined conversion operators - C# reference"
 description: "Learn how to define custom implicit and explicit type conversions in C#."
-ms.date: 07/09/2019
+ms.date: 07/25/2022
 f1_keywords: 
   - "explicit_CSharpKeyword"
   - "implicit_CSharpKeyword"
@@ -26,6 +26,8 @@ Use the `operator` and `implicit` or `explicit` keywords to define an implicit o
 The following example demonstrates how to define an implicit and explicit conversion:
 
 [!code-csharp[implicit an explicit conversions](snippets/shared/UserDefinedConversions.cs)]
+
+Beginning with C# 11, you can define *checked* explicit conversion operators. For more information, see the [User-defined checked operators](arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](arithmetic-operators.md) article.
 
 You also use the `operator` keyword to overload a predefined C# operator. For more information, see [Operator overloading](operator-overloading.md).
 

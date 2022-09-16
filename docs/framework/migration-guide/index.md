@@ -1,5 +1,5 @@
 ---
-title: "Migration Guide to the .NET Framework 4.8, 4.7, 4.6, and 4.5"
+title: "Migration Guide to .NET Framework 4.8, 4.7, 4.6, and 4.5"
 description: A guide for migrating to newer .NET Framework versions that includes resources for new features and application compatibility.
 ms.date: "04/18/2019"
 helpviewer_keywords: 
@@ -15,7 +15,7 @@ If you created your app using an earlier version of .NET Framework, you can gene
 
 ## Migration resources
 
-Review the following documents before you migrate your app from earlier versions of .NET Framework to version 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8:
+Review the following documents before you migrate your app from earlier versions of .NET Framework to version 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, or 4.8.1:
 
 - See [Versions and Dependencies](versions-and-dependencies.md) to understand the CLR version underlying each version of the .NET Framework and to review guidelines for targeting your apps successfully.
 

@@ -14,9 +14,9 @@ namespace NUnit.Project
         {
             Test1Called = true;
 
-            Assert.IsTrue(Test1Called);
             Assert.IsFalse(Test2ACalled);
             Assert.IsTrue(Test2BCalled);
+            Assert.IsTrue(Test3Called);
         }
 
         [Test, Order(0)]

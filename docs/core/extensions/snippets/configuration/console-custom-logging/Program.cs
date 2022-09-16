@@ -8,9 +8,9 @@ using IHost host = Host.CreateDefaultBuilder(args)
             .AddColorConsoleLogger(configuration =>
             {
                 // Replace warning value from appsettings.json of "Cyan"
-                configuration.LogLevels[LogLevel.Warning] = ConsoleColor.DarkCyan;
+                configuration.LogLevelToColorMap[LogLevel.Warning] = ConsoleColor.DarkCyan;
                 // Replace warning value from appsettings.json of "Red"
-                configuration.LogLevels[LogLevel.Error] = ConsoleColor.DarkRed;
+                configuration.LogLevelToColorMap[LogLevel.Error] = ConsoleColor.DarkRed;
             }))
             .Build();
 

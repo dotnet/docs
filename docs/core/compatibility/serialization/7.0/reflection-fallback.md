@@ -110,7 +110,6 @@ Starting in .NET 7 RC 2, you can re-enable reflection fallback globally using th
 </ItemGroup>
 ```
 
-Should re-enable reflection fallback for all source generated contexts in your app. See the article on [.NET runtime configuration settings](../../../runtime-config/index.md) for more details on using AppContext switches.
 ## Affected APIs
 
 - <xref:System.Text.Json.JsonSerializerOptions.GetConverter(System.Type)?displayProperty=fullName>

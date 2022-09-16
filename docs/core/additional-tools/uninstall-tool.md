@@ -252,6 +252,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
   Forces removal of versions that might be used by Visual Studio.
 
 > [!NOTE]
+>
 > - Exactly one of `--sdk`, `--runtime`, `--aspnet-runtime`, and `--hosting-bundle` is required.
 > - `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor`, and `[<VERSION>...]` are exclusive.
 > - If `--x64` or `--x86` aren't specified, then both x64 and x86 will be removed.
@@ -307,6 +308,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
   Forces removal of versions that might be used by Visual Studio or SDKs.
 
 > [!NOTE]
+>
 > - Exactly one of `--sdk` and `--runtime` is required.
 > - `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor`, and `[<VERSION>...]` are exclusive.
 
@@ -419,6 +421,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
   Forces removal of versions that might be used by Visual Studio.
 
 > [!NOTE]
+>
 > - Exactly one of `--sdk`, `--runtime`, `--aspnet-runtime`, and `--hosting-bundle` is required.
 > - `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor`, and `[<VERSION>...]` are exclusive.
 > - If `--x64` or `--x86` aren't specified, then both x64 and x86 will be removed.
@@ -478,6 +481,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
   Forces removal of versions that might be used by Visual Studio or SDKs.
 
 > [!NOTE]
+>
 > 1. Exactly one of `--sdk` and `--runtime` is required.
 > 2. `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor`, and `[<VERSION>...]` are exclusive.
 
@@ -530,5 +534,3 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
   2.2.300
   2.1.700
   ```
-
-

@@ -198,13 +198,13 @@ public static class MemberAccessOperators
         };
 
         Write(oneThroughTen, ..);      // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-        Write(oneThroughTen, ..2);     // 1, 2
+        Write(oneThroughTen, ..3);     // 1, 2, 3,
         Write(oneThroughTen, 2..);     //       3, 4, 5, 6, 7, 8, 9, 10
         Write(oneThroughTen, 3..5);    //          4, 5
-        Write(oneThroughTen, ^5..);    //                6, 7, 8, 9, 10
-        Write(oneThroughTen, ..^4);    // 1, 2, 3, 4, 5, 6
+        Write(oneThroughTen, ^2..);    //                         9, 10
+        Write(oneThroughTen, ..^3);    // 1, 2, 3, 4, 5, 6, 7
         Write(oneThroughTen, 3..^4);   //          4, 5, 6
-        Write(oneThroughTen, ^4..^1);  //                   7, 8, 9
+        Write(oneThroughTen, ^4..^2);  //                   7, 8, 9
 
         void Write(int[] values, Range range) =>
             Console.WriteLine(string.Join(", ", values[range]));

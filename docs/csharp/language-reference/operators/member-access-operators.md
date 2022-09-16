@@ -217,10 +217,10 @@ The following table shows various ways to express collection ranges:
 | `..{end}`                 | Values from the start to the `{end}` exclusively.                                    |
 | `{start}..`               | Values from the `{start}` inclusively to the end.                                    |
 | `{start}..{end}`          | Values from the `{start}` inclusively to the `{end}` exclusively.                    |
-| `^{start}..`              | Values from the `{start}` inclusively to the end starting from the end.              |
-| `..^{end}`                | Values from the start to the `{end}` exclusively starting from the end.              |
-| `{start}..^{end}`         | Values from `{start}` inclusively to `{end}` exclusively starting from the end.      |
-| `^{start}..^{end}`        | Values from `{start}` inclusively to `{end}` exclusively both starting from the end. |
+| `^{start}..`              | Values from the `{start}` inclusively to the end counting from the end.              |
+| `..^{end}`                | Values from the start to the `{end}` exclusively counting from the end.              |
+| `{start}..^{end}`         | Values from `{start}` inclusively to `{end}` exclusively counting from the end.      |
+| `^{start}..^{end}`        | Values from `{start}` inclusively to `{end}` exclusively both counting from the end. |
 
 The following example demonstrates the effect of using all the ranges presented in the preceding table:
 

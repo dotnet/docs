@@ -1,14 +1,18 @@
 ---
 title: Dumps - .NET FAQ
 description: Frequently Asked Questions about dumps .NET
-ms.date: 9/15/22
+ms.date: 09/19/2022
 ---
 
-# Frequently Asked Questions regarding Dumps
+# Frequently Asked Questions Regarding Dumps
 
-## Dumps with MacOS and Linux
+## Collecting dumps on macOS and Linux
 
-Collecting a dump requires that the process have access to ptrace targeting parent processes. This means /proc/sys/kernel should have ptrace_scope set to 1 or 0. If running under any type of Open Container Initiatory technology, the seccomp profile must allow for calls to ptrace. For example, moby+containerd specifies a [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows parent ptrace if the container host has a kernel version higher than 4.8.
+Collecting a dump requires that the processes in the system have access to call `ptrace` targeting parent processes. The following is a non-exhaustive list of settings that are needed for this to work properly:
+
+- On Linux-based systems, `/proc/sys/kernel` should have `ptrace_scope` set to `1` or `0`. Any value higher than this will require running as root or will block dump collection entirely.
+- For applications running under an Open Container Initiative technology, the `seccomp` profile must allow for calls to `ptrace`. For example, moby+containerd specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified.
+- on macOS, the use of `ptrace` requires the host of the target process to be properly entitled. See [Default Entitlements](../install/macos-notarization-issues#default-entitlements) for more information.
 
 ## See also
 

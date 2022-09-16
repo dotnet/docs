@@ -2,15 +2,15 @@
 Console.OutputEncoding = Encoding.UTF8;
 Console.WriteLine("Socket client starting...");
 
-var endPoint = await NetworkDiscovery.GetSocketEndPointAsync();
+var ipEndPoint = await NetworkDiscovery.GetSocketEndPointAsync();
 
 // <socketclient>
 using Socket client = new(
-    endPoint.AddressFamily, 
+    ipEndPoint.AddressFamily, 
     SocketType.Stream, 
     ProtocolType.Tcp);
 
-await client.ConnectAsync(endPoint);
+await client.ConnectAsync(ipEndPoint);
 while (true)
 {
     // Send message.

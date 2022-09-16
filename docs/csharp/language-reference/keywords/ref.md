@@ -15,7 +15,7 @@ The `ref` keyword indicates that a variable is a reference, or an alias for anot
 - In a method signature and in a method call, to pass an argument to a method by reference. For more information, see [Passing an argument by reference](#passing-an-argument-by-reference).
 - In a method signature, to return a value to the caller by reference. For more information, see [Reference return values](#reference-return-values).
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify. Or to indicate that a local variable accesses another value by reference. For more information, see [Ref locals](#ref-locals).
-- In a `struct` declaration, to declare a `ref struct` or a `readonly ref struct`. For more information, see the [`ref` struct](../builtin-types/ref-struct.md) article.
+- In a `struct` declaration, to declare a `ref struct` or a `readonly ref struct`. For more information, see the [`ref struct`](../builtin-types/ref-struct.md) article.
 - In a `ref struct` declaration, to declare that a field is a reference. See the [`ref` field](../builtin-types/ref-struct.md) article.
 
 ## Passing an argument by reference

@@ -81,7 +81,7 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 ## `record` struct
 
-Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref` struct](ref-struct.md). For more information and examples, see [Records](record.md).
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
 
 ## Struct initialization and default values
 
@@ -135,7 +135,7 @@ You also use the `struct` keyword in the [`struct` constraint](../../programming
 
 ## Conversions
 
-For any structure type (except [`ref` struct](ref-struct.md) types), there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
+For any structure type (except [`ref struct`](ref-struct.md) types), there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
 
 ## C# language specification
 

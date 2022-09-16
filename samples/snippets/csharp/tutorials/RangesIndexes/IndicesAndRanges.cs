@@ -183,9 +183,9 @@ namespace RangesIndexes
         internal void ImplicitRangeOperatorConversion()
         {
             // <ImplicitRangeOperatorConversion>
-            var implicitRange = 3..^5;
+            Range implicitRange = 3..^5;
 
-            var explicitRange = new Range(
+            Range explicitRange = new(
                 start: new Index(value: 3, fromEnd: false),
                 end: new Index(value: 5, fromEnd: true));
 

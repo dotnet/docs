@@ -102,7 +102,7 @@ options.GetConverter(typeof(Poco2)); // Returns the reflection-based converter.
 
 ### Using the AppContext switch
 
-You can re-enable reflection fallback globally using the provided AppContext compatibility switch. Adding the following entry to your application's project file:
+Starting in .NET 7 RC 2, you can re-enable reflection fallback globally using the provided AppContext compatibility switch. Add the following entry to your application's project file to re-enable reflection fallback for all source-generated contexts in your app. For more information on using AppContext switches, see the article on [.NET runtime configuration settings](../../../runtime-config/index.md).
 
 ```xml
 <ItemGroup>

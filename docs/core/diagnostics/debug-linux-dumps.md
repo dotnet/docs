@@ -10,7 +10,7 @@ ms.date: 08/27/2020
 
 ## Collect dumps on Linux
 
-[!NOTE] Frequently asked questions regarding dumps and information on M1 native debugging and dump collection can be found here.
+[!NOTE] Frequently asked questions regarding dump collection, analysis and other caveats can be found [here](FAQ-dumps.md).
 
 The two recommended ways of collecting dumps on Linux are:
 

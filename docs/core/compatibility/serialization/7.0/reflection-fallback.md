@@ -82,7 +82,7 @@ You might depend on the previous behavior, either intentionally or unintentional
 public partial class MyContext : JsonSerializerContext {}
 ```
 
-This will let your application take full advantage of the benefits of source generation, including trim safety. 
+This will let your application take full advantage of the benefits of source generation, including trim safety.
 
 In certain cases however, making such a change might not be practical or possible. Even though it is not recommended, there a couple of ways you can re-enable reflection fallback in your source generated serializer.
 

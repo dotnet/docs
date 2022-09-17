@@ -74,7 +74,21 @@ The previous behavior violates the principle of least surprise and ultimately de
 
 ## Recommended action
 
-You might depend on the previous behavior, either intentionally or unintentionally. As such, you can use the following workaround to continue to fall back to reflection-based serialization when necessary:
+You might depend on the previous behavior, either intentionally or unintentionally. The recommended course of action is to update your <xref:System.Text.Json.Serialization.JsonSerializerContext> definition so that it includes all type dependencies:
+
+```csharp
+[JsonSerializable(typeof(Poco1))]
+[JsonSerializable(typeof(Poco2))]
+public partial class MyContext : JsonSerializerContext {}
+```
+
+This will let your application take full advantage of the benefits of source generation, including trim safety.
+
+In certain cases, however, making such a change might not be practical or possible. Even though it's not recommended, there are a couple of ways you can re-enable reflection fallback in your source-generated serializer.
+
+### Use a custom contract resolver
+
+You can use the new contract customization feature to build a custom contract resolver that falls back to reflection-based resolution where required:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -84,6 +98,16 @@ var options = new JsonSerializerOptions
 
 JsonSerializer.Serialize(new Poco2(), options); // Contract resolution falls back to the default reflection-based resolver.
 options.GetConverter(typeof(Poco2)); // Returns the reflection-based converter.
+```
+
+### Use an AppContext switch
+
+Starting in .NET 7 RC 2, you can re-enable reflection fallback globally using the provided AppContext compatibility switch. Add the following entry to your application's project file to re-enable reflection fallback for all source-generated contexts in your app. For more information on using AppContext switches, see the article on [.NET runtime configuration settings](../../../runtime-config/index.md).
+
+```xml
+<ItemGroup>
+  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.EnableSourceGenReflectionFallback" Value="true" />
+</ItemGroup>
 ```
 
 ## Affected APIs

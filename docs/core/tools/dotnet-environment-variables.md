@@ -205,7 +205,7 @@ Specifies whether to generate an ASP.NET Core certificate. The default value is 
 
 ### `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`
 
-Specifies whether to add global tools to the `PATH` environment variable. the default is `true`. To not add global tools to the path, set to `0`, `false`, or `no`.
+Specifies whether to add global tools to the `PATH` environment variable. The default is `true`. To not add global tools to the path, set to `0`, `false`, or `no`.
 
 ### `DOTNET_CLI_TELEMETRY_OPTOUT`
 

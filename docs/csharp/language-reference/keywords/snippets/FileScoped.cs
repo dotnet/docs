@@ -15,7 +15,6 @@ file class HiddenWidget
 
 public class Widget : IWidget
 {
-    
     public int ProvideAnswer()
     {
         var worker = new HiddenWidget();

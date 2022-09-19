@@ -23,7 +23,7 @@ file class HiddenWidget
 
 Any types nested within a file-based type are also only visible within the file in which it's declared. Other types in an assembly may use the same name as a file-scoped type. Because the file-scoped type is visible only in the file where it's declared, these types don't create a naming collision.
 
-A file-scoped type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-scoped type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-scoped interface type.
+A file-scoped type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-scoped type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-scoped interface type. The type can't [explicitly implement](../../programming-guide/interfaces/explicit-interface-implementation.md) a file scoped interface.
 
 ## Example
 

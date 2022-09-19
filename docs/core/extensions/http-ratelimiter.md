@@ -6,11 +6,11 @@ ms.author: dapine
 ms.date: 09/15/2022
 ---
 
-# Rate limiting an HTTP handler in .NET
+# Rate limit an HTTP handler in .NET
 
 [!INCLUDE [scl-preview](../../../includes/preview-content.md)]
 
-In this article, you'll learn how to create a client-side HTTP handler that rate limits the number of requests it sends. In this example, you'll see an <xref:System.Net.Http.HttpClient> that accesses the `"www.example.com"` resource. Resources are consumed by apps that rely on them, and when an app makes too many requests to a single resource this can lead to resource contention. Resource contention is when a resource is consumed by too many apps, and the resource is unable to serve all of the apps that are requesting it. This can lead to a poor user experience, and in some cases, it can even lead to a denial of service (DoS) attack. For more information on DoS, see [OWASP: Denial of Service](https://owasp.org/www-community/attacks/Denial_of_Service).
+In this article, you'll learn how to create a client-side HTTP handler that rate limits the number of requests it sends. You'll see an <xref:System.Net.Http.HttpClient> that accesses the `"www.example.com"` resource. Resources are consumed by apps that rely on them, and when an app makes too many requests to a single resource, it can lead to *resource contention*. Resource contention occurs when a resource is consumed by too many apps, and the resource is unable to serve all of the apps that are requesting it. This can result in a poor user experience, and in some cases, it can even lead to a denial of service (DoS) attack. For more information on DoS, see [OWASP: Denial of Service](https://owasp.org/www-community/attacks/Denial_of_Service).
 
 ## What is rate limiting?
 
@@ -20,7 +20,7 @@ To use rate limiting in .NET, you'll reference the [System.Threading.RateLimitin
 
 ## Implement a `DelegatingHandler` subclass
 
-To control the flow of requests, you implement a custom <xref:System.Net.Http.DelegatingHandler> subclass. This is a type of <xref:System.Net.Http.HttpMessageHandler> that allows you to intercept and handle requests before they are sent to the server. You can also intercept and handle responses before they are returned to the caller. In this example, you'll implement a custom `DelegatingHandler` subclass that limits the number of requests that can be sent to a single resource. Consider the following custom `ClientSideRateLimitedHandler` class:
+To control the flow of requests, you implement a custom <xref:System.Net.Http.DelegatingHandler> subclass. This is a type of <xref:System.Net.Http.HttpMessageHandler> that allows you to intercept and handle requests before they're sent to the server. You can also intercept and handle responses before they're returned to the caller. In this example, you'll implement a custom `DelegatingHandler` subclass that limits the number of requests that can be sent to a single resource. Consider the following custom `ClientSideRateLimitedHandler` class:
 
 :::code language="csharp" source="snippets/ratelimit/http/ClientSideRateLimitedHandler.cs":::
 
@@ -29,7 +29,7 @@ The preceding C# code:
 - Inherits the `DelegatingHandler` type.
 - Implements the <xref:System.IAsyncDisposable> interface.
 - Defines a `RateLimiter` field that is assigned from the constructor.
-- The `SendAsync` method is overridden to intercept and handle requests before they are sent to the server.
+- The `SendAsync` method is overridden to intercept and handle requests before they're sent to the server.
 - The <xref:System.IAsyncDisposable.DisposeAsync> method is overridden to dispose of the `RateLimiter` instance.
 
 Looking a bit closer at the `SendAsync` method, you'll see that it:
@@ -53,7 +53,7 @@ In the preceding console app:
 - The `HttpClient` is used to send a `GET` request to each URL, and the response is written to the console.
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> waits for both tasks to complete.
 
-Since the `HttpClient` is configured with the `ClientSideRateLimitedHandler`, not all requests will make it to the server resource. You can test this by running the console app, and you'll see that only a fraction of the total number of requests are sent to the server, and the rest are rejected with an HTTP status code of `429`. Try altering the `options` object used to create the `TokenBucketRateLimiter` to see how the number of requests that are sent to the server changes.
+Since the `HttpClient` is configured with the `ClientSideRateLimitedHandler`, not all requests will make it to the server resource. You can test this assertion by running the console app. You'll see that only a fraction of the total number of requests are sent to the server, and the rest are rejected with an HTTP status code of `429`. Try altering the `options` object used to create the `TokenBucketRateLimiter` to see how the number of requests that are sent to the server changes.
 
 Consider the following example output:
 
@@ -159,9 +159,9 @@ URL: https://example.com?iteration=58, HTTP status code: OK (200)
 URL: https://example.com?iteration=50, HTTP status code: OK (200)
 ```
 
-You'll notice that the first logged entries are always the immediately returned 429s, and the last entries are always the 200s. This is because the rate limit is encountered client-side, and avoids making an HTTP call to a server. This is a good thing because it means that the server is not being flooded with requests, and it also means that the rate limit is enforced consistently across all clients.
+You'll notice that the first logged entries are always the immediately returned 429 responses, and the last entries are always the 200 responses. This is because the rate limit is encountered client-side and avoids making an HTTP call to a server. This is a good thing because it means that the server isn't flooded with requests. It also means that the rate limit is enforced consistently across all clients.
 
-You should also note that each URL's query string is unique, examine the `iteration` parameter to see that it is incremented by one for each request. This helps to illustrate that the 429 responses aren't from the first requests, but rather from the requests that are made after the rate limit is reached. The 200 responses finish later but were made earlier before the limit was reached.
+Note also that each URL's query string is unique: examine the `iteration` parameter to see that it's incremented by one for each request. This parameter helps to illustrate that the 429 responses aren't from the first requests, but rather from the requests that are made after the rate limit is reached. The 200 responses arrive later but these requests were made earlier&mdash;before the limit was reached.
 
 To have a better understanding of the various rate-limiting algorithms, try rewriting this code to accept a different `RateLimiter` implementation. In addition to the `TokenBucketRateLimiter` you could try:
 

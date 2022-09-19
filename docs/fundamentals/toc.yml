@@ -1670,7 +1670,7 @@ items:
     href: ../standard/clr.md
   - name: Managed execution process
     href: ../standard/managed-execution-process.md
-  - name: Assemblies in .NET
+  - name: Assemblies
     href: ../standard/assembly/
   - name: Metadata and self-describing components
     href: ../standard/metadata-and-self-describing-components.md
@@ -1697,7 +1697,7 @@ items:
       items:
       - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability in .NET
+      - name: How to use and debug assembly unloadability
         href: ../core/../standard/assembly/unloadability.md
   - name: Versioning
     items:
@@ -2044,7 +2044,7 @@ items:
       href: ../standard/base-types/common-type-system.md
     - name: Language independence
       href: ../standard/language-independence.md
-    - name: Type conversion in .NET
+    - name: Type conversion
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
       href: ../standard/base-types/conversion-tables.md
@@ -2060,7 +2060,7 @@ items:
       href: ../standard/generics/index.md
     - name: Intro to generic types
       href: ../standard/generics.md
-    - name: Generic collections in .NET
+    - name: Generic collections
       href: ../standard/generics/collections.md
     - name: Generic delegates for manipulating arrays and lists
       href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
@@ -2193,7 +2193,7 @@ items:
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
   - name: Work with strings
     items:
-    - name: Character encoding in .NET
+    - name: Character encoding
       href: ../standard/base-types/character-encoding-introduction.md
     - name: How to use character encoding classes
       href: ../standard/base-types/character-encoding.md
@@ -2559,7 +2559,7 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: Network programming in .NET
+    - name: Network programming
       href: networking/overview.md
     - name: Network availability
       href: networking/network-info.md
@@ -2580,7 +2580,7 @@ items:
         href: ../core/extensions/httpclient-factory.md
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
-      - name: Rate limiting an HTTP handler in .NET
+      - name: Rate limit an HTTP handler
         href: ../core/extensions/http-ratelimiter.md
     - name: Sockets
       items:
@@ -2594,9 +2594,9 @@ items:
         href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
         href: networking/tcp/tcp-services.md
-  - name: File globbing in .NET
+  - name: File globbing
     href: ../core/extensions/file-globbing.md
-  - name: Primitives library in .NET
+  - name: Primitives library
     href: ../core/extensions/primitives.md
   - name: Globalization and localization
     items:

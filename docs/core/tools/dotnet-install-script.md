@@ -278,7 +278,7 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 
 - `PATH`
 
-  This variable should include both the the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
+  This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
 
 > [!TIP]
 > For Linux and macOS, use the `echo` command to set the variables in your shell profile, such as _.bashrc_:

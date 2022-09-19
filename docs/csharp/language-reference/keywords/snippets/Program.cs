@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace keywords
+namespace Keywords
 {
     class Program
     {

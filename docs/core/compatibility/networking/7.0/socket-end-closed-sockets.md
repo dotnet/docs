@@ -25,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-The [asynchronous programming model (APM)](../../../../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) APIs are those named `Begin*` and `End*`. Starting with .NET 6, these legacy APIs are backed with a `Task`-based implementation as part of an effort to consolidate and simplify the `Socket` codebase. Unfortunately, the 6.0 implementation leaked unobserved `SocketException` exceptions. This happened even when the APIS were used correctly, meaning that the calling code always invoked the `End*` methods, including when the socket was closed).
+The [asynchronous programming model (APM)](../../../../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) APIs are those named `Begin*` and `End*`. Starting with .NET 6, these legacy APIs are backed with a `Task`-based implementation as part of an effort to consolidate and simplify the `Socket` codebase. Unfortunately, with the 6.0 implementation, unexpected events were sometimes raised on <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException?displayProperty=nameWithType>. This happened even when the APIS were used correctly, meaning that the calling code always invoked the `End*` methods, including when the socket was closed).
 
 The change to throw a <xref:System.Net.Sockets.SocketException> was made to ensure that no unobserved exceptions are leaked in such cases.
 

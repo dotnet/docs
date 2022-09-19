@@ -103,6 +103,8 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
+        - name: Socket.End methods don't throw ObjectDisposedException
+          href: networking/7.0/socket-end-closed-sockets.md
       - name: SDK and MSBuild
         items:
         - name: Version requirements for .NET 7 SDK
@@ -1059,6 +1061,8 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
+        - name: Socket.End methods don't throw ObjectDisposedException
+          href: networking/7.0/socket-end-closed-sockets.md
       - name: .NET 6
         items:
         - name: Port removed from SPN

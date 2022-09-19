@@ -5,7 +5,7 @@ ms.date: 09/16/2022
 ---
 # .version file includes build version
 
-The .NET SDK installation folder (under *dotnet\\sdk\<version>*) contains a *.version* file. This file includes the following data:
+The .NET SDK installation folder (under *dotnet/sdk/<version>*) contains a *.version* file. This file includes the following data:
 
 - The hash for the commit for that version of the .NET SDK.
 - The stable version.
@@ -24,17 +24,17 @@ win-x64
 
 ## Previous behavior
 
-The *dotnet\\sdk\<version>.version* file contained three values:
+The *dotnet/sdk/<version>.version* file contained three values:
 
-- git commit hash
+- Git commit hash
 - Simplified version
 - RuntimeIdentifier
 
 ## New behavior
 
-The *dotnet\\sdk\<version>.version* file contains four values:
+The *dotnet/sdk/<version>.version* file contains four values:
 
-- git commit hash
+- Git commit hash
 - Simplified Version
 - RuntimeIdentifier
 - Precise build version

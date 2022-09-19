@@ -15,6 +15,11 @@ file class HiddenWidget
 
 public class Widget : IWidget
 {
-    public int ProvideAnswer() => HiddenWidget.Work();
+    
+    public int ProvideAnswer()
+    {
+        var worker = new HiddenWidget();
+        return worker.Work();
+    }
 }
 // </FileScopedType>

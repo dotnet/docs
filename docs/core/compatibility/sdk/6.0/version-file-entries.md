@@ -5,11 +5,11 @@ ms.date: 09/16/2022
 ---
 # .version file includes build version
 
-The .NET SDK installation folder (under *dotnet/sdk/<version>*) contains a *.version* file. This file includes the following data:
+The .NET SDK installation folder (under *dotnet/sdk/\<version>*) contains a *.version* file. This file includes the following data:
 
 - The hash for the commit for that version of the .NET SDK.
 - The stable version.
-- The RuntimeIdentifier of the .NET SDK.
+- The [runtime identifier (RID)](../../../rid-catalog.md) of the .NET SDK.
 
 This change adds the specific build number from the product's build system.
 
@@ -24,19 +24,19 @@ win-x64
 
 ## Previous behavior
 
-The *dotnet/sdk/<version>.version* file contained three values:
+The *dotnet/sdk/\<version>.version* file contained three values:
 
 - Git commit hash
 - Simplified version
-- RuntimeIdentifier
+- RID
 
 ## New behavior
 
-The *dotnet/sdk/<version>.version* file contains four values:
+The *dotnet/sdk/\<version>.version* file contains four values:
 
 - Git commit hash
 - Simplified Version
-- RuntimeIdentifier
+- RID
 - Precise build version
 
 ## Version introduced

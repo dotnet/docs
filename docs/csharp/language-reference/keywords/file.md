@@ -21,17 +21,17 @@ file class HiddenWidget
 }
 ```
 
-Any types nested within a file based type is also only visible within the file in which it's declared. Other types in an assembly may use the same name as a file-scoped type. Because the file-scoped type is visible only in the file where it's declared, these types don't create a naming collision.
+Any types nested within a file-based type are also only visible within the file in which it's declared. Other types in an assembly may use the same name as a file-scoped type. Because the file-scoped type is visible only in the file where it's declared, these types don't create a naming collision.
 
-A `file` scoped type can't be the return type or parameter type of any member that is more visible than `file` scope. A file scoped type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-scoped interface type.
+A file-scoped type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-scoped type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-scoped interface type.
 
 ## Example
 
-The following example shows a public type that uses a file scoped type to provide a worker method. In addition, the public type implements a file-scoped interface implicitly:
+The following example shows a public type that uses a file-scoped type to provide a worker method. In addition, the public type implements a file-scoped interface implicitly:
 
 :::code language="csharp" source="./snippets/FileScoped.cs" id="FileScopedType":::
 
-In another source file, you can declare types that have the sane names as the file-scoped types. The file-scoped types aren't visible:
+In another source file, you can declare types that have the same names as the file-scoped types. The file-scoped types aren't visible:
 
 :::code language="csharp" source="./snippets/Program.cs" id="ShadowsFileScopedType":::
 

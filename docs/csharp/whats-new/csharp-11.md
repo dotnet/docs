@@ -8,6 +8,10 @@ ms.date: 08/16/2022
 > [!IMPORTANT]
 > These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
 
+The following feature is available in Visual Studio 2022 version 17.4:
+
+- [File-scoped types](#file-scoped-types)
+
 The following features are available in Visual Studio 2022 version 17.3:
 
 - [Generic math support](#generic-math-support)
@@ -182,3 +186,7 @@ You can learn more about UTF-8 string literals in the string literal section of 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
 For more information on required members, See the [init-only](../properties.md#init-only) section of the properties article.
+
+## File scoped types
+
+Beginning in C# 11, you can use the `file` access modifier to create a type whose visibility is scoped to the source file in which it is declared. This feature helps source generator authors avoid naming collisions. You can learn more about this feature in the article on [`file` scoped types](../language-reference/keywords/file.md) in the language reference.

@@ -103,6 +103,8 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
+        - name: Socket.End methods don't throw ObjectDisposedException
+          href: networking/7.0/socket-end-closed-sockets.md
       - name: SDK and MSBuild
         items:
         - name: Version requirements for .NET 7 SDK
@@ -307,6 +309,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK
           href: sdk/6.0/vs-msbuild-version.md
+        - name: .version file includes build version
+          href: sdk/6.0/version-file-entries.md
         - name: Write reference assemblies to IntermediateOutputPath
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
@@ -1057,6 +1061,8 @@ items:
           href: networking/7.0/allowrenegotiation-default.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
+        - name: Socket.End methods don't throw ObjectDisposedException
+          href: networking/7.0/socket-end-closed-sockets.md
       - name: .NET 6
         items:
         - name: Port removed from SPN
@@ -1113,6 +1119,8 @@ items:
           href: sdk/6.0/runtimeidentifier-self-contained.md
         - name: Version requirements for .NET 6 SDK
           href: sdk/6.0/vs-msbuild-version.md
+        - name: .version file includes build version
+          href: sdk/6.0/version-file-entries.md
         - name: Write reference assemblies to IntermediateOutputPath
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: .NET 5

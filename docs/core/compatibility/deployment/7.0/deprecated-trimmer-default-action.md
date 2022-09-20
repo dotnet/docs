@@ -5,7 +5,7 @@ ms.date: 09/20/2022
 ---
 # MSBuild property `TrimmerDefaultAction` is deprecated
 
-The value of the property `TrimmerDefaultAction` is going to be ignored by the publish process.
+The value of the `TrimmerDefaultAction` property is now ignored by the publish process.
 
 ## Previous behavior
 
@@ -15,9 +15,9 @@ Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimma
 
 Starting in .NET 7, the property `TrimmerDefaultAction` is ignored and publishing behaves as if it was set to `link` all the time.
 
-Since the default value for the property was already set to the most aggressive mode `link`, setting it explicitly in a project file would typically try to reduce the aggressiveness of trimming. The most common setting was `copyused`. This means the setting affected almost always apps which produced trim warnings.
+The default value for the property was the most aggressive trimming mode, `link`. Thus, projects that had explicitly set a value in the project file usually had trim warnings and did so to reduce the aggressiveness. The most common setting was `copyused`.
 
-If your app did have trim warnings, you may see changes in behavior or exceptions.
+If your app had any trim warnings, you may see changes in behavior or exceptions.
 
 ## Version introduced
 
@@ -33,7 +33,7 @@ This change streamlines trimming options.
 
 ## Recommended action
 
-The best resolution is to resolve all the trim warnings in your application. For information about resolving the warnings in your own libraries, see [Introduction to trim warnings](../../../deploying/trimming/fixing-warnings.md). For other libraries, contact the author to request that they resolve the warnings, or choose a different library that already supports trimming. For example, you can switch to <xref:System.Text.Json?displayProperty=fullName> with [source generation](../../../../standard/serialization/system-text-json-source-generation.md), which supports trimming, instead of `Newtonsoft.Json`. With that there should be no need to use `TrimmerDefaultAction` anymore.
+The best resolution is to resolve all the trim warnings in your application. For information about resolving the warnings in your own libraries, see [Introduction to trim warnings](../../../deploying/trimming/fixing-warnings.md). For other libraries, contact the author to request that they resolve the warnings, or choose a different library that already supports trimming. For example, you can switch to <xref:System.Text.Json?displayProperty=fullName> with [source generation](../../../../standard/serialization/system-text-json-source-generation.md), which supports trimming, instead of `Newtonsoft.Json`. With that library, you should no longer need to use `TrimmerDefaultAction`.
 
 To revert to the previous behavior, use [`global.json`](../../../tools/global-json.md) to pin your project to .NET 6 SDK.
 

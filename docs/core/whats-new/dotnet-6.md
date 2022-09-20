@@ -120,7 +120,7 @@ New serialization interfaces for validation and defaulting values:
 - <xref:System.Text.Json.Serialization.IJsonOnSerialized>
 - <xref:System.Text.Json.Serialization.IJsonOnSerializing>
 
-For more information, see [Callbacks](../../standard/serialization/system-text-json/migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
+For more information, see [Callbacks](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md?pivots=dotnet-6-0#callbacks).
 
 New property ordering attribute:
 

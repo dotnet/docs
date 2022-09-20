@@ -19,7 +19,7 @@ adobe-target: true
 
 # How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
-This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft-how-to.md).
+This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
 ## Code samples
 
@@ -192,7 +192,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 >
 > * Deserialize into a [JSON DOM (document object model)](use-dom-utf8jsonreader-utf8jsonwriter.md) and extract what you need from the DOM.
 >
->   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM in .NET 6, see [Deserialize subsections of a JSON payload](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft-how-to.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
+>   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM in .NET 6, see [Deserialize subsections of a JSON payload](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 >
 > * Use the [Utf8JsonReader](use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader) directly.
 > * Use Visual Studio 2022 to automatically generate the class you need:
@@ -299,7 +299,7 @@ Extension methods on `HttpClient` and `HttpContent` are not available in System.
 * [Preserve references and handle circular references](preserve-references.md)
 * [Deserialize to immutable types and non-public accessors](immutability.md)
 * [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)

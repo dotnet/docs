@@ -61,7 +61,7 @@ To enable use of a non-public property accessor, use the [[JsonInclude]](xref:Sy
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Non-public property accessors are not supported in .NET Core 3.1. For more information, see [the Migrate from Newtonsoft.Json article](migrate-from-newtonsoft-how-to.md#non-public-property-setters-and-getters).
+Non-public property accessors are not supported in .NET Core 3.1. For more information, see [the Migrate from Newtonsoft.Json article](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
 ::: zone-end
 
 ## See also
@@ -76,7 +76,7 @@ Non-public property accessors are not supported in .NET Core 3.1. For more infor
 * [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
 * [Preserve references and handle circular references](preserve-references.md)
 * [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)

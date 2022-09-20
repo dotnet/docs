@@ -53,7 +53,7 @@ Here's example JSON with camel case property names. It can be deserialized into 
 * [Preserve references and handle circular references](preserve-references.md)
 * [Deserialize to immutable types and non-public accessors](immutability.md)
 * [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)

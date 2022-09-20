@@ -140,7 +140,7 @@ There are new features in and for [System.Text.Json](../../standard/serializatio
 - [Support non-public property accessors](../../standard/serialization/system-text-json/immutability.md)
 - [Support fields](../../standard/serialization/system-text-json/how-to.md#include-fields)
 - [Conditionally ignore properties](../../standard/serialization/system-text-json/ignore-properties.md)
-- [Support non-string-key dictionaries](../../standard/serialization/system-text-json/migrate-from-newtonsoft-how-to.md#dictionary-with-non-string-key)
+- [Support non-string-key dictionaries](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md#dictionary-with-non-string-key)
 - [Allow custom converters to handle null](../../standard/serialization/system-text-json/converters-how-to.md#handle-null-values)
 - [Copy JsonSerializerOptions](../../standard/serialization/system-text-json/configure-options.md#copy-jsonserializeroptions)
 - [Create JsonSerializerOptions with web defaults](../../standard/serialization/system-text-json/configure-options.md#web-defaults-for-jsonserializeroptions)

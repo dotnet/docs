@@ -397,7 +397,7 @@ You can call `Deserialize` in the `Read` method:
 * Use the clone to read through the discriminator tokens.
 * Call `Deserialize` using the original `Reader` instance once you know the type you need. You can call `Deserialize` because the original `Reader` instance is still positioned to read the begin object token.
 
-A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](migrate-from-newtonsoft-how-to.md#required-properties). The following example shows a `Read` method that uses this alternative:
+A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](migrate-from-newtonsoft.md#required-properties). The following example shows a `Read` method that uses this alternative:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
 
@@ -502,7 +502,7 @@ For information about how to preserve references, see [the .NET 5 version of thi
 
 ## Other custom converter samples
 
-The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.
+The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md) article contains additional samples of custom converters.
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
@@ -528,7 +528,7 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [Preserve references and handle circular references](preserve-references.md)
 * [Deserialize to immutable types and non-public accessors](immutability.md)
 * [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)

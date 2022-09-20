@@ -116,7 +116,7 @@ The preceding code:
 * Assumes the JSON to analyze is in a string named `jsonString`.
 * Calculates an average grade for objects in a `Students` array that have a `Grade` property.
 * Assigns a default grade of 70 for students who don't have a grade.
-* Creates the `JsonDocument` instance in a [`using` statement](../../csharp/language-reference/keywords/using-statement.md) because `JsonDocument` implements `IDisposable`. After a `JsonDocument` instance is disposed, you lose access to all of its `JsonElement` instances also. To retain access to a `JsonElement` instance, make a copy of it before the parent `JsonDocument` instance is disposed. To make a copy, call <xref:System.Text.Json.JsonElement.Clone%2A?displayProperty=nameWithType>. For more information, see [JsonDocument is IDisposable](migrate-from-newtonsoft-how-to.md#jsondocument-is-idisposable).
+* Creates the `JsonDocument` instance in a [`using` statement](../../csharp/language-reference/keywords/using-statement.md) because `JsonDocument` implements `IDisposable`. After a `JsonDocument` instance is disposed, you lose access to all of its `JsonElement` instances also. To retain access to a `JsonElement` instance, make a copy of it before the parent `JsonDocument` instance is disposed. To make a copy, call <xref:System.Text.Json.JsonElement.Clone%2A?displayProperty=nameWithType>. For more information, see [JsonDocument is IDisposable](migrate-from-newtonsoft.md#jsondocument-is-idisposable).
 
 The preceding example code counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 
@@ -384,7 +384,7 @@ public bool ReadAsBoolean(bool defaultValue)
 * [Preserve references and handle circular references](preserve-references.md)
 * [Deserialize to immutable types and non-public accessors](immutability.md)
 * [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)

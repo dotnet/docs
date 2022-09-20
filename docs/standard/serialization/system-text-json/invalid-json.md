@@ -72,7 +72,7 @@ To allow or write quoted numbers for specific properties, fields, or types, use 
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-`System.Text.Json` in .NET Core 3.1 doesn't support serializing or deserializing numbers surrounded by quotation marks. For more information, see [Allow or write numbers in quotes](migrate-from-newtonsoft-how-to.md#allow-or-write-numbers-in-quotes).
+`System.Text.Json` in .NET Core 3.1 doesn't support serializing or deserializing numbers surrounded by quotation marks. For more information, see [Allow or write numbers in quotes](migrate-from-newtonsoft.md#allow-or-write-numbers-in-quotes).
 ::: zone-end
 
 ## See also
@@ -87,7 +87,7 @@ To allow or write quoted numbers for specific properties, fields, or types, use 
 * [Preserve references and handle circular references](preserve-references.md)
 * [Deserialize to immutable types and non-public accessors](immutability.md)
 * [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)

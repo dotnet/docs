@@ -94,7 +94,7 @@ You can "extend" a class without creating a derived class by creating a separate
   
 ## Implicitly Typed Local Variables  
 
-Within a class or struct method, you can use implicit typing to instruct the compiler to determine a variable's type at compile time. For more information, see [var (C# reference)](../../language-reference/keywords/var.md).
+Within a class or struct method, you can use implicit typing to instruct the compiler to determine a variable's type at compile time. For more information, see [var (C# reference)](../../language-reference/statements/declarations.md#implicitly-typed-local-variables).
 
 ## Records
 

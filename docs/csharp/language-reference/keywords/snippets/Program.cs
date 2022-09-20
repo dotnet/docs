@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace keywords
+namespace Keywords
 {
     class Program
     {
@@ -15,6 +15,13 @@ namespace keywords
             UsingStatements.Examples();
             Console.WriteLine("=================    try-catch Keyword Examples ======================");
             await AsyncExceptionExamples.Examples();
+            Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");
+            TestClassAndStruct.Main();
+            ParameterModifiers.PassValueByValue();
+            ParameterModifiers.PassingValueByReferemce();
+            ParameterModifiers.PassingReferenceByValue();
+            ParameterModifiers.PassingReferenceByReference();
+
         }
     }
 

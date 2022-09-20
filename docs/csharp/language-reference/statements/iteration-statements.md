@@ -116,7 +116,7 @@ By default, stream elements are processed in the captured context. If you want t
 
 ### Type of an iteration variable
 
-You can use the [`var` keyword](../keywords/var.md) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
+You can use the [`var` keyword](declarations.md#implicitly-typed-local-variables) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
 
 ```csharp
 foreach (var item in collection) { }

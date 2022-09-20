@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 12/16/2021
+ms.date: 09/15/2022
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -15,6 +15,8 @@ ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 A *structure type* (or *struct type*) is a [value type](value-types.md) that can encapsulate data and related functionality. You use the `struct` keyword to define a structure type:
 
 [!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
+
+`ref struct` types and `readonly ref struct` types are covered in the article on [ref struct types](ref-struct.md).
 
 Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. For structure-type variables, an instance of the type is copied. For more information, see [Value types](value-types.md).
 
@@ -79,7 +81,7 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 ## `record` struct
 
-Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref` struct](#ref-struct). For more information and examples, see [Records](record.md).
+Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
 
 ## Struct initialization and default values
 
@@ -125,32 +127,7 @@ Structs have most of the capabilities of a [class](../keywords/class.md) type. T
 
 ## Passing structure-type variables by reference
 
-When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../../programming-guide/classes-and-structs/ref-returns.md) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
-
-## `ref` struct
-
-Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a structure type. Instances of a `ref` struct type are allocated on the stack and can't escape to the managed heap. To ensure that, the compiler limits the usage of `ref` struct types as follows:
-
-- A `ref` struct can't be the element type of an array.
-- A `ref` struct can't be a declared type of a field of a class or a non-`ref` struct.
-- A `ref` struct can't implement interfaces.
-- A `ref` struct can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
-- A `ref` struct can't be a type argument.
-- A `ref` struct variable can't be captured by a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-- A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
-- A `ref` struct variable can't be used in [iterators](../../iterators.md).
-
-Beginning with C# 8.0, you can define a disposable `ref` struct. To do that, ensure that a `ref` struct fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.
-
-Typically, you define a `ref` struct type when you need a type that also includes data members of `ref` struct types:
-
-[!code-csharp[ref struct](snippets/shared/StructType.cs#RefStruct)]
-
-To declare a `ref` struct as [`readonly`](#readonly-struct), combine the `readonly` and `ref` modifiers in the type declaration (the `readonly` modifier must come before the `ref` modifier):
-
-[!code-csharp[readonly ref struct](snippets/shared/StructType.cs#ReadonlyRef)]
-
-In .NET, examples of a `ref` struct are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
 ## struct constraint
 
@@ -158,7 +135,7 @@ You also use the `struct` keyword in the [`struct` constraint](../../programming
 
 ## Conversions
 
-For any structure type (except [`ref` struct](#ref-struct) types), there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
+For any structure type (except [`ref struct`](ref-struct.md) types), there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
 
 ## C# language specification
 
@@ -168,7 +145,6 @@ For more information about features introduced in C# 7.2 and later, see the foll
 
 - [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
-- [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
 - [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)

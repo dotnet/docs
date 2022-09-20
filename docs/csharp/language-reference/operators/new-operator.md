@@ -30,7 +30,7 @@ Beginning with C# 9.0, constructor invocation expressions are target-typed. That
 
 As the preceding example shows, you always use parentheses in a target-typed `new` expression.
 
-If a target type of a `new` expression is unknown (for example, when you use the [`var`](../keywords/var.md) keyword), you must specify a type name.
+If a target type of a `new` expression is unknown (for example, when you use the [`var`](../statements/declarations.md#implicitly-typed-local-variables) keyword), you must specify a type name.
 
 ## Array creation
 

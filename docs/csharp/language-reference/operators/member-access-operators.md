@@ -211,16 +211,16 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 
 The following table shows various ways to express collection ranges:
 
-| Range operator expression | Description                                                                          |
-|---------------------------|--------------------------------------------------------------------------------------|
-| `..`                      | All values in the collection.                                                        |
-| `..{end}`                 | Values from the start to the `{end}` exclusively.                                    |
-| `{start}..`               | Values from the `{start}` inclusively to the end.                                    |
-| `{start}..{end}`          | Values from the `{start}` inclusively to the `{end}` exclusively.                    |
-| `^{start}..`              | Values from the `{start}` inclusively to the end counting from the end.              |
-| `..^{end}`                | Values from the start to the `{end}` exclusively counting from the end.              |
-| `{start}..^{end}`         | Values from `{start}` inclusively to `{end}` exclusively counting from the end.      |
-| `^{start}..^{end}`        | Values from `{start}` inclusively to `{end}` exclusively both counting from the end. |
+| Range operator expression | Description                                                                      |
+|---------------------------|----------------------------------------------------------------------------------|
+| `..`                      | All values in the collection.                                                    |
+| `..end`                   | Values from the start to the `end` exclusively.                                  |
+| `start..`                 | Values from the `start` inclusively to the end.                                  |
+| `start..end`              | Values from the `start` inclusively to the `end` exclusively.                    |
+| `^start..`                | Values from the `start` inclusively to the end counting from the end.            |
+| `..^end`                  | Values from the start to the `end` exclusively counting from the end.            |
+| `start..^end`             | Values from `start` inclusively to `end` exclusively counting from the end.      |
+| `^start..^end`            | Values from `start` inclusively to `end` exclusively both counting from the end. |
 
 The following example demonstrates the effect of using all the ranges presented in the preceding table:
 

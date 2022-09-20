@@ -459,12 +459,12 @@ To support a dictionary with an integer or some other type as the key in .NET Co
 * <xref:System.Data.DataTable> and related types (for more information, see [Supported collection types](supported-collection-types.md#systemdata-namespace))
 ::: zone pivot="dotnet-5-0"
 
-* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md). [Record types](../../fsharp/language-reference/records.md) and [anonymous record types](../../fsharp/language-reference/anonymous-records.md) are treated as immutable POCOs and thus are supported.
+* F# types, such as [discriminated unions](../../../fsharp/language-reference/discriminated-unions.md). [Record types](../../../fsharp/language-reference/records.md) and [anonymous record types](../../../fsharp/language-reference/anonymous-records.md) are treated as immutable POCOs and thus are supported.
 * <xref:System.TimeSpan>
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
-* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md).
+* F# types, such as [discriminated unions](../../../fsharp/language-reference/discriminated-unions.md), [record types](../../../fsharp/language-reference/records.md), and [anonymous record types](../../../fsharp/language-reference/anonymous-records.md).
 * <xref:System.TimeSpan>
 ::: zone-end
 * <xref:System.Dynamic.ExpandoObject>
@@ -631,7 +631,7 @@ The required properties converter would require additional logic if you need to 
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
-For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
+For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
 
 ### Callbacks
 
@@ -857,7 +857,7 @@ Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. In .NET
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
 * [How to use source generation](source-generation.md)
 * [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

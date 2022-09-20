@@ -91,7 +91,7 @@ To allow or write quoted numbers for specific properties, fields, or types, use 
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
 * [How to use source generation](source-generation.md)
 * [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

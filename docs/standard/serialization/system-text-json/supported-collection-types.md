@@ -38,9 +38,9 @@ The following sections are organized by namespace and show which types are suppo
 
 | Type                                                                                            | Serialization | Deserialization |
 |-------------------------------------------------------------------------------------------------|---------------|-----------------|
-| [Single-dimensional arrays](../../csharp/programming-guide/arrays/single-dimensional-arrays.md) | ✔️           | ✔️              |
-| [Multi-dimensional arrays](../../csharp/programming-guide/arrays/multidimensional-arrays.md)    | ❌           | ❌              |
-| [Jagged arrays](../../csharp/programming-guide/arrays/jagged-arrays.md)                         | ✔️           | ✔️              |
+| [Single-dimensional arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md) | ✔️           | ✔️              |
+| [Multi-dimensional arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)    | ❌           | ❌              |
+| [Jagged arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)                         | ✔️           | ✔️              |
 
 ## System.Collections namespace
 
@@ -397,7 +397,7 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 
 ## System.Data namespace
 
-There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and related types in the <xref:System.Data> namespace. Deserializing these types from untrusted input is not safe, as explained in [the security guidance](../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). However, you can write a custom converter to support these types. For sample custom converter code that serializes and deserializes a `DataTable`, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/snippets/system-text-json-how-to/csharp/RoundtripDataTable.cs).
+There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and related types in the <xref:System.Data> namespace. Deserializing these types from untrusted input is not safe, as explained in [the security guidance](../../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). However, you can write a custom converter to support these types. For sample custom converter code that serializes and deserializes a `DataTable`, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/snippets/system-text-json-how-to/csharp/RoundtripDataTable.cs).
 
 ## See also
 
@@ -415,7 +415,7 @@ There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Da
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
 * [How to use source generation](source-generation.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

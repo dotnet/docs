@@ -23,7 +23,7 @@ There are some limitations on what parts of the library that you can use from Vi
 
 ## Run-time reflection vs. compile-time source generation
 
-By default, `System.Text.Json` uses run-time [reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](source-generation-modes.md).
+By default, `System.Text.Json` uses run-time [reflection](../../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](source-generation-modes.md).
   
 ## How to get the library
 
@@ -77,7 +77,7 @@ The `System.Text.Json` types are thread-safe, including:
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
 * [How to use source generation](source-generation.md)
 * [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

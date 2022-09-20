@@ -42,7 +42,7 @@ The code samples in this article:
 
 ## Visual Basic support
 
-Parts of System.Text.Json use [ref structs](../../csharp/language-reference/builtin-types/ref-struct.md), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
+Parts of System.Text.Json use [ref structs](../../../csharp/language-reference/builtin-types/ref-struct.md), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
 
 * The <xref:System.Text.Json.Utf8JsonReader> class. Since the <xref:System.Text.Json.Serialization.JsonConverter%601.Read%2A?displayProperty=nameWithType> method takes a `Utf8JsonReader` parameter, this limitation means you can't use Visual Basic to write custom converters. A workaround for this is to implement custom converters in a C# library assembly, and reference that assembly from your VB project. This assumes that all you do in Visual Basic is register the converters into the serializer. You can't call the `Read` methods of the converters from Visual Basic code.
 * Overloads of other APIs that include a <xref:System.ReadOnlySpan%601> type. Most methods include overloads that use `String` instead of `ReadOnlySpan`.
@@ -119,7 +119,7 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](customize-properties.md).
 * By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](preserve-references.md).
-* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
+* By default, [fields](../../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
@@ -131,14 +131,14 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](customize-properties.md).
 * Circular references are detected and exceptions thrown.
-* [Fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored.
+* [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md) are ignored.
 ::: zone-end
 
 Supported types include:
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
+* User-defined [plain old CLR objects (POCOs)](../../glossary.md#poco).
 * One-dimensional and jagged arrays (`T[][]`).
 * Collections and dictionaries from the following namespaces.
   * <xref:System.Collections>
@@ -152,7 +152,7 @@ Supported types include:
 ::: zone pivot="dotnet-core-3-1"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](../glossary.md#poco).
+* User-defined [plain old CLR objects (POCOs)](../../glossary.md#poco).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * Collections from the following namespaces.
@@ -303,7 +303,7 @@ Extension methods on `HttpClient` and `HttpContent` are not available in System.
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
 * [How to use source generation](source-generation.md)
 * [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

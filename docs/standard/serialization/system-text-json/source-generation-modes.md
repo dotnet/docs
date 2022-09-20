@@ -15,7 +15,7 @@ ms.topic: how-to
 # How to choose reflection or source generation in System.Text.Json
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
-By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
+By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
 You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see [How to get the library](overview.md#how-to-get-the-library).
 
@@ -23,7 +23,7 @@ This article explains the options and provides guidance on how to choose the bes
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-[System.Text.Json](overview.md) version 6.0 and later can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../core/deploying/trimming/trim-self-contained.md) accuracy. You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see:
+[System.Text.Json](overview.md) version 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md) accuracy. You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see:
 
 * [How to get the library](overview.md#how-to-get-the-library)
 * [The .NET 6 version of this article](source-generation-modes.md?pivots=dotnet-6-0).
@@ -61,7 +61,7 @@ To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs
 
 This information is referred to as *metadata*.
 
-By default, `JsonSerializer` collects metadata at run time by using [reflection](../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
+By default, `JsonSerializer` collects metadata at run time by using [reflection](../../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 ## Source generation - metadata collection mode
 
@@ -143,7 +143,7 @@ Most of the System.Text.Json documentation shows how to write code that uses ref
 * [Customize character encoding](character-encoding.md)
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
 * [Supported collection types in System.Text.Json](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

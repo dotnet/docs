@@ -33,7 +33,7 @@ This change streamlines trimming options.
 
 ## Recommended action
 
-The best resolution is to resolve all the trim warnings in your application. For information about resolving the warnings in your own libraries, see [Introduction to trim warnings](../../../deploying/trimming/fixing-warnings.md). For other libraries, contact the author to request that they resolve the warnings, or choose a different library that already supports trimming. For example, you can switch to <xref:System.Text.Json?displayProperty=fullName> with [source generation](../../../../standard/serialization/system-text-json-source-generation.md), which supports trimming, instead of `Newtonsoft.Json`. With that library, you should no longer need to use `TrimmerDefaultAction`.
+The best resolution is to resolve all the trim warnings in your application. For information about resolving the warnings in your own libraries, see [Introduction to trim warnings](../../../deploying/trimming/fixing-warnings.md). For other libraries, contact the author to request that they resolve the warnings, or choose a different library that already supports trimming. For example, you can switch to <xref:System.Text.Json?displayProperty=fullName> with [source generation](../../../../standard/serialization/system-text-json/source-generation.md), which supports trimming, instead of `Newtonsoft.Json`. With that library, you should no longer need to use `TrimmerDefaultAction`.
 
 To revert to the previous behavior, use [`global.json`](../../../tools/global-json.md) to pin your project to .NET 6 SDK.
 

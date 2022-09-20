@@ -27,15 +27,14 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 * [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
 * [Convert enums to strings and camel case](#enums-as-strings)
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
+:::zone pivot="dotnet-7-0,dotnet-6-0" <!-- markdownlint-disable MD032 -->
 * [Configure the order of serialized properties](#configure-the-order-of-serialized-properties)
 ::: zone-end
 
 > [!NOTE]
-> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
+> The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
 
-For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
+For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
 ## Customize individual property names
 
@@ -59,7 +58,7 @@ The property name set by this attribute:
 
 * Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
-* [Doesn't affect parameter name matching for parameterized constructors](system-text-json-immutability.md#immutable-types-and-records).
+* [Doesn't affect parameter name matching for parameterized constructors](immutability.md#immutable-types-and-records).
 
 ## Use camel case for all JSON property names
 
@@ -180,7 +179,7 @@ The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can d
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripEnumAsString.vb" id="Deserialize":::
 
-For information about custom converter code that supports deserialization while using a snake case naming policy, see [Support enum string value deserialization](system-text-json-converters-how-to.md#support-enum-string-value-deserialization).
+For information about custom converter code that supports deserialization while using a snake case naming policy, see [Support enum string value deserialization](converters-how-to.md#support-enum-string-value-deserialization).
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
@@ -193,22 +192,22 @@ The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrde
 
 ## See also
 
-* [System.Text.Json overview](system-text-json-overview.md)
-* [How to serialize and deserialize JSON](system-text-json-how-to.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Ignore properties](system-text-json-ignore-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [System.Text.Json overview](overview.md)
+* [How to serialize and deserialize JSON](how-to.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Ignore properties](ignore-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [How to use source generation](system-text-json-source-generation.md)
-* [Supported collection types](system-text-json-supported-collection-types.md)
+* [How to use source generation](source-generation.md)
+* [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -87,7 +87,7 @@ Here's an example type to serialize and JSON output:
 This option applies only to serialization. During deserialization, read-only properties are ignored by default.
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-This option applies only to properties. To ignore read-only fields when [serializing fields](system-text-json-how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
+This option applies only to properties. To ignore read-only fields when [serializing fields](how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
 ## Ignore all null-value properties
@@ -122,7 +122,7 @@ Here's an example object to serialize and JSON output:
 ```
 
 > [!NOTE]
-> The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property is deprecated in .NET 5 and later versions. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
+> The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property is deprecated in .NET 5 and later versions. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
 
 ::: zone-end
 
@@ -143,22 +143,22 @@ There is no built-in way to prevent serialization of properties with value type 
 
 ## See also
 
-* [System.Text.Json overview](system-text-json-overview.md)
-* [How to serialize and deserialize JSON](system-text-json-how-to.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Customize property names and values](system-text-json-customize-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [System.Text.Json overview](overview.md)
+* [How to serialize and deserialize JSON](how-to.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Customize property names and values](customize-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [How to use source generation](system-text-json-source-generation.md)
-* [Supported collection types](system-text-json-supported-collection-types.md)
+* [How to use source generation](source-generation.md)
+* [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

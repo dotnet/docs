@@ -33,13 +33,13 @@ This change may affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-[System.Text.Json source generation](../../../../standard/serialization/system-text-json-source-generation.md) is a new feature, and its serialization behavior should be as consistent as possible with the reflection-based serializer. This change simplifies migration to source generators.
+[System.Text.Json source generation](../../../../standard/serialization/system-text-json/source-generation.md) is a new feature, and its serialization behavior should be as consistent as possible with the reflection-based serializer. This change simplifies migration to source generators.
 
 ## Recommended action
 
 It's unlikely for users to depend on the current <xref:System.TimeSpan> serialization format, as it redundantly outputs all public properties of the type (which is the default serialization behavior for objects), and it doesn't roundtrip.
 
-If you do depend on the existing behavior, the recommended course of action is to [author a custom converter](../../../../standard/serialization/system-text-json-converters-how-to.md) that outputs the needed properties from <xref:System.TimeSpan>:
+If you do depend on the existing behavior, the recommended course of action is to [author a custom converter](../../../../standard/serialization/system-text-json/converters-how-to.md) that outputs the needed properties from <xref:System.TimeSpan>:
 
 ```csharp
 public class TimeSpanConverter : JsonConverter<TimeSpan>
@@ -61,4 +61,4 @@ public class TimeSpanConverter : JsonConverter<TimeSpan>
 
 ## See also
 
-- [How to use source generation in System.Text.Json](../../../../standard/serialization/system-text-json-source-generation.md)
+- [How to use source generation in System.Text.Json](../../../../standard/serialization/system-text-json/source-generation.md)

@@ -17,13 +17,13 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 
 The library design emphasizes high performance and low memory allocation over an extensive feature set. Built-in UTF-8 support optimizes the process of reading and writing JSON text encoded as UTF-8, which is the most prevalent encoding for data on the web and files on disk.
 
-The library also provides classes for working with an in-memory [document object model (DOM)](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#json-dom-choices). This feature enables random access to the elements in a JSON file or string.
+The library also provides classes for working with an in-memory [document object model (DOM)](use-dom-utf8jsonreader-utf8jsonwriter.md#json-dom-choices). This feature enables random access to the elements in a JSON file or string.
 
-There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](how-to.md#visual-basic-support).
 
 ## Run-time reflection vs. compile-time source generation
 
-By default, `System.Text.Json` uses run-time [reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](system-text-json-source-generation-modes.md).
+By default, `System.Text.Json` uses run-time [reflection](../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](source-generation-modes.md).
   
 ## How to get the library
 
@@ -42,7 +42,7 @@ For information about security threats that were considered when designing <xref
 
 ## Thread safety
 
-* The `System.Text.Json` types are thread-safe, including:
+The `System.Text.Json` types are thread-safe, including:
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
 
@@ -63,22 +63,22 @@ For information about security threats that were considered when designing <xref
 
 ## Additional resources
 
-* [How to use the library](system-text-json-how-to.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Customize property names and values](system-text-json-customize-properties.md)
-* [Ignore properties](system-text-json-ignore-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [How to use the library](how-to.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Customize property names and values](customize-properties.md)
+* [Ignore properties](ignore-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [How to use source generation](system-text-json-source-generation.md)
-* [Supported collection types](system-text-json-supported-collection-types.md)
+* [How to use source generation](source-generation.md)
+* [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

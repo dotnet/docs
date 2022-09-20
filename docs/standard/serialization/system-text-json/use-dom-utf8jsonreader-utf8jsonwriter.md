@@ -47,7 +47,7 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
 
-* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
+* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
 
 :::zone-end
 
@@ -116,7 +116,7 @@ The preceding code:
 * Assumes the JSON to analyze is in a string named `jsonString`.
 * Calculates an average grade for objects in a `Students` array that have a `Grade` property.
 * Assigns a default grade of 70 for students who don't have a grade.
-* Creates the `JsonDocument` instance in a [`using` statement](../../csharp/language-reference/keywords/using-statement.md) because `JsonDocument` implements `IDisposable`. After a `JsonDocument` instance is disposed, you lose access to all of its `JsonElement` instances also. To retain access to a `JsonElement` instance, make a copy of it before the parent `JsonDocument` instance is disposed. To make a copy, call <xref:System.Text.Json.JsonElement.Clone%2A?displayProperty=nameWithType>. For more information, see [JsonDocument is IDisposable](system-text-json-migrate-from-newtonsoft-how-to.md#jsondocument-is-idisposable).
+* Creates the `JsonDocument` instance in a [`using` statement](../../csharp/language-reference/keywords/using-statement.md) because `JsonDocument` implements `IDisposable`. After a `JsonDocument` instance is disposed, you lose access to all of its `JsonElement` instances also. To retain access to a `JsonElement` instance, make a copy of it before the parent `JsonDocument` instance is disposed. To make a copy, call <xref:System.Text.Json.JsonElement.Clone%2A?displayProperty=nameWithType>. For more information, see [JsonDocument is IDisposable](migrate-from-newtonsoft-how-to.md#jsondocument-is-idisposable).
 
 The preceding example code counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 
@@ -213,7 +213,7 @@ The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter
 
 To achieve the best possible performance while using the `Utf8JsonWriter`, write JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. Use <xref:System.Text.Json.JsonEncodedText> to cache and pre-encode known string property names and values as statics, and pass those to the writer, rather than using UTF-16 string literals. This is faster than caching and using UTF-8 byte arrays.
 
-This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
+This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](character-encoding.md).
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
@@ -232,7 +232,7 @@ In some scenarios, you might want to write "raw" JSON to a JSON payload that you
 
 ### Customize character escaping
 
-The [StringEscapeHandling](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_StringEscapeHandling.htm) setting of `JsonTextWriter` offers options to escape all non-ASCII characters **or** HTML characters. By default, `Utf8JsonWriter` escapes all non-ASCII **and** HTML characters. This escaping is done for defense-in-depth security reasons. To specify a different escaping policy, create a <xref:System.Text.Encodings.Web.JavaScriptEncoder> and set <xref:System.Text.Json.JsonWriterOptions.Encoder?displayProperty=nameWithType>. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
+The [StringEscapeHandling](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_StringEscapeHandling.htm) setting of `JsonTextWriter` offers options to escape all non-ASCII characters **or** HTML characters. By default, `Utf8JsonWriter` escapes all non-ASCII **and** HTML characters. This escaping is done for defense-in-depth security reasons. To specify a different escaping policy, create a <xref:System.Text.Encodings.Web.JavaScriptEncoder> and set <xref:System.Text.Json.JsonWriterOptions.Encoder?displayProperty=nameWithType>. For more information, see [Customize character encoding](character-encoding.md).
 
 ### Write null values
 
@@ -249,7 +249,7 @@ To write `Timespan`, `Uri`, or `char` values, format them as strings (by calling
 
 ## Use `Utf8JsonReader`
 
-<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](how-to.md#visual-basic-support).
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
@@ -374,22 +374,22 @@ public bool ReadAsBoolean(bool defaultValue)
 
 ## See also
 
-* [System.Text.Json overview](system-text-json-overview.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Customize property names and values](system-text-json-customize-properties.md)
-* [Ignore properties](system-text-json-ignore-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [System.Text.Json overview](overview.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Customize property names and values](customize-properties.md)
+* [Ignore properties](ignore-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [How to use source generation](system-text-json-source-generation.md)
-* [Supported collection types](system-text-json-supported-collection-types.md)
+* [How to use source generation](source-generation.md)
+* [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

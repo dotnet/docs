@@ -15,7 +15,7 @@ ms.topic: how-to
 
 # How to write custom converters for JSON serialization (marshalling) in .NET
 
-This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](system-text-json-how-to.md).
+This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](how-to.md).
 
 A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
 
@@ -51,9 +51,9 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 ::: zone-end
 
-In the code you write for a custom converter, be aware of the substantial performance penalty for using new <xref:System.Text.Json.JsonSerializerOptions> instances. For more information, see [Reuse JsonSerializerOptions instances](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).
+In the code you write for a custom converter, be aware of the substantial performance penalty for using new <xref:System.Text.Json.JsonSerializerOptions> instances. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).
 
-Visual Basic can't be used to write custom converters but can call converters that are implemented in C# libraries. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+Visual Basic can't be used to write custom converters but can call converters that are implemented in C# libraries. For more information, see [Visual Basic support](how-to.md#visual-basic-support).
 
 ## Custom converter patterns
 
@@ -261,7 +261,7 @@ The following sections provide converter samples that address some common scenar
 
 ::: zone-end
 
-For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](system-text-json-supported-collection-types.md#systemdata-namespace).
+For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](supported-collection-types.md#systemdata-namespace).
 
 ### Deserialize inferred types to object properties
 
@@ -353,7 +353,7 @@ The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e
 
 ### Support polymorphic deserialization
 
-Built-in features provide a limited range of [polymorphic serialization](system-text-json-polymorphism.md) but no support for deserialization at all. Deserialization requires a custom converter.
+Built-in features provide a limited range of [polymorphic serialization](polymorphism.md) but no support for deserialization at all. Deserialization requires a custom converter.
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
@@ -397,7 +397,7 @@ You can call `Deserialize` in the `Read` method:
 * Use the clone to read through the discriminator tokens.
 * Call `Deserialize` using the original `Reader` instance once you know the type you need. You can call `Deserialize` because the original `Reader` instance is still positioned to read the begin object token.
 
-A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](system-text-json-migrate-from-newtonsoft-how-to.md#required-properties). The following example shows a `Read` method that uses this alternative:
+A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](migrate-from-newtonsoft-how-to.md#required-properties). The following example shows a `Read` method that uses this alternative:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
 
@@ -496,13 +496,13 @@ The preceding example only does serialization, but a similar approach can be ado
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 
-For information about how to preserve references, see [the .NET 5 version of this page](system-text-json-converters-how-to.md?pivots=dotnet-5-0#preserve-references).
+For information about how to preserve references, see [the .NET 5 version of this page](converters-how-to.md?pivots=dotnet-5-0#preserve-references).
 
 ::: zone-end
 
 ## Other custom converter samples
 
-The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.
+The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
@@ -517,22 +517,22 @@ If you need to make a converter that modifies the behavior of an existing built-
 ## Additional resources
 
 * [Source code for built-in converters](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
-* [System.Text.Json overview](system-text-json-overview.md)
-* [How to serialize and deserialize JSON](system-text-json-how-to.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Customize property names and values](system-text-json-customize-properties.md)
-* [Ignore properties](system-text-json-ignore-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [System.Text.Json overview](overview.md)
+* [How to serialize and deserialize JSON](how-to.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Customize property names and values](customize-properties.md)
+* [Ignore properties](ignore-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [How to use source generation](system-text-json-source-generation.md)
-* [Supported collection types](system-text-json-supported-collection-types.md)
+* [How to use source generation](source-generation.md)
+* [Supported collection types](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

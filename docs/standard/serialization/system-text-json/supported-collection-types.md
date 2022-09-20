@@ -216,7 +216,7 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 ::: zone-end
 
-\* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+\* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
 \*\* See [Supported key types](#supported-key-types).
 
@@ -260,7 +260,7 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 ::: zone-end
 
-\* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+\* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
 \*\* See [Supported key types](#supported-key-types).
 
@@ -346,7 +346,7 @@ A custom collection is supported for deserialization if it:
 
 ::: zone-end
 
-  \* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+  \* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
   \*\* See [Supported key types](#supported-key-types).
 
@@ -401,21 +401,21 @@ There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Da
 
 ## See also
 
-* [System.Text.Json overview](system-text-json-overview.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Customize property names and values](system-text-json-customize-properties.md)
-* [Ignore properties](system-text-json-ignore-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [System.Text.Json overview](overview.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Customize property names and values](customize-properties.md)
+* [Ignore properties](ignore-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [How to use source generation](system-text-json-source-generation.md)
+* [How to use source generation](source-generation.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -27,7 +27,8 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 * [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
 * [Convert enums to strings and camel case](#enums-as-strings)
 
-:::zone pivot="dotnet-7-0,dotnet-6-0" <!-- markdownlint-disable MD032 -->
+:::zone pivot="dotnet-7-0,dotnet-6-0"
+
 * [Configure the order of serialized properties](#configure-the-order-of-serialized-properties)
 ::: zone-end
 

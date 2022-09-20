@@ -531,7 +531,7 @@
 | WebJobs Extensions - OpenAPI | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0) |  |  |
 | WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0) |  |  |
 | WebJobs Extensions - OpenAPI Core | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.4.0) |  |  |
-| WebJobs Extensions - RabbitMQ | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
+| WebJobs Extensions - RabbitMQ | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/2.0.1) |  | GitHub [2.0.1](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
 | WebJobs Extensions - SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
 | WebJobs Extensions - Storage Blobs | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.0.1) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |
 | WebJobs Extensions - Storage Queues | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/5.0.1) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Queues-readme) |  |

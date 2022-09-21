@@ -16,8 +16,13 @@ namespace NamedAndOptionalSnippets
         static void TestCOM()
         {
             //<Snippet13>
-            // The following code shows the same call to AutoFormat in C# 4.0. Only
-            // the argument for which you want to provide a specific value is listed.
+            var excelApp = new Microsoft.Office.Interop.Excel.Application();
+            excelApp.Workbooks.Add();
+            excelApp.Visible = true;
+
+            var myFormat =
+                Microsoft.Office.Interop.Excel.XlRangeAutoFormat.xlRangeAutoFormatAccounting1;
+
             excelApp.Range["A1", "B4"].AutoFormat( Format: myFormat );
             //</Snippet13>
         }

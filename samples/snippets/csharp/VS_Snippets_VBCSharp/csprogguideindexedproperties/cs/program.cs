@@ -11,7 +11,6 @@ namespace IndexedProperties
         static void Main(string[] args)
         {
             CSharp2010();
-            //CSharp2008();
         }
 
         static void CSharp2010()

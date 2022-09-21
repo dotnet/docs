@@ -16,13 +16,13 @@ metadata:
 # https://azure.microsoft.com/develop/net/ .NET 🧡 Azure
 
 # Learn links that combine .NET & Azure
-# /learn/modules/secure-aspnet-core-identity/
-# /learn/modules/run-web-app-background-task-with-webjobs/
-# /learn/modules/optimize-your-web-apps-with-redis/
-# /learn/modules/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/
-# /learn/modules/load-test-web-app-azure-devops/
-# /learn/modules/publish-azure-web-app-with-visual-studio/
-# /learn/modules/stage-deploy-app-service-deployment-slots/
+# /training/modules/secure-aspnet-core-identity/
+# /training/modules/run-web-app-background-task-with-webjobs/
+# /training/modules/optimize-your-web-apps-with-redis/
+# /training/modules/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/
+# /training/modules/load-test-web-app-azure-devops/
+# /training/modules/publish-azure-web-app-with-visual-studio/
+# /training/modules/stage-deploy-app-service-deployment-slots/
 
 landingContent:
   - title: Get started with .NET on Azure
@@ -44,7 +44,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Azure fundamentals
-            url: /learn/paths/azure-fundamentals/
+            url: /training/paths/azure-fundamentals/
       - linkListType: download
         links:
           - text: Sample code
@@ -71,11 +71,11 @@ landingContent:
       - linkListType: learn
         links:
           - text: Host a web app with Azure App Service
-            url: /learn/modules/host-a-web-app-with-azure-app-service/
+            url: /training/modules/host-a-web-app-with-azure-app-service/
           - text: Develop, test, and deploy an Azure Function with Visual Studio
-            url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
+            url: /training/modules/develop-test-deploy-azure-functions-with-visual-studio/
           - text: Publish and manage your APIs with Azure API Management
-            url: /learn/modules/publish-manage-apis-with-azure-api-management/
+            url: /training/modules/publish-manage-apis-with-azure-api-management/
       - linkListType: tutorial
         links:
           - text: ASP.NET Core web app with App Service and Azure SQL Database
@@ -94,7 +94,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Create and deploy a cloud-native ASP.NET Core microservice
-            url: /learn/modules/microservices-aspnet-core/
+            url: /training/modules/microservices-aspnet-core/
       - linkListType: how-to-guide
         links:
           - text: Deploy a .NET Core app to Azure Container Registry
@@ -117,11 +117,11 @@ landingContent:
       - linkListType: learn
         links:
           - text: Secure your application by using OpenID Connect and Azure AD
-            url: /learn/modules/secure-app-with-oidc-and-azure-ad/
+            url: /training/modules/secure-app-with-oidc-and-azure-ad/
           - text: Secure custom APIs with Microsoft Identity
-            url: /learn/modules/identity-secure-custom-api/
+            url: /training/modules/identity-secure-custom-api/
           - text: Secure an ASP.NET Core web app with the ASP.NET Identity framework
-            url: /learn/modules/secure-aspnet-core-identity/
+            url: /training/modules/secure-aspnet-core-identity/
       - linkListType: tutorial
         links:
           - text: Add sign-in to Microsoft to an ASP.NET web app
@@ -143,20 +143,20 @@ landingContent:
             url: /azure/architecture/guide/technology-choices/data-store-overview
       - linkListType: quickstart
         links:
-          - text: Use .NET to query a Azure SQL Database or Azure SQL Managed Instance
+          - text: Use .NET to query an Azure SQL Database or Azure SQL Managed Instance
             url: /azure/azure-sql/database/connect-query-dotnet-core
           - text: Use .NET to query Azure PostgreSQL
             url: /azure/postgresql/connect-csharp
       - linkListType: learn
         links:
           - text: Develop and configure an ASP.NET application that queries an Azure SQL database
-            url: /learn/modules/develop-app-that-queries-azure-sql/
+            url: /training/modules/develop-app-that-queries-azure-sql/
           - text: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
-            url: /learn/modules/build-cosmos-db-app-with-vscode/
+            url: /training/modules/build-cosmos-db-app-with-vscode/
           - text: Store application data with Azure Blob Storage
-            url: /learn/modules/store-app-data-with-azure-blob-storage/
+            url: /training/modules/store-app-data-with-azure-blob-storage/
           - text: Persist and retrieve relational data with Entity Framework Core
-            url: /learn/modules/persist-data-ef-core/
+            url: /training/modules/persist-data-ef-core/
       - linkListType: tutorial
         links:
           - text: Connect to and query an Azure Database for PostgreSQL database
@@ -192,7 +192,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Capture and view page load times in your Azure web app
-            url: /learn/modules/capture-page-load-times-application-insights/
+            url: /training/modules/capture-page-load-times-application-insights/
       - linkListType: how-to-guide
         links:
           - text: Troubleshoot ASP.NET Core on Azure App Service and IIS
@@ -222,7 +222,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Architect modern applications in Azure
-            url: /learn/paths/architect-modern-apps/
+            url: /training/paths/architect-modern-apps/
       - linkListType: architecture
         links:
           - text: ".NET Microservices: Architecture for containerized .NET apps"

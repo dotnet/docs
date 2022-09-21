@@ -29,7 +29,7 @@ Beginning with C# 9.0, conditional expressions are target-typed. That is, if a t
 
 [!code-csharp[target-typed conditional](snippets/shared/ConditionalOperator.cs#TargetTyped)]
 
-If a target type of a conditional expression is unknown (for example, when you use the [`var`](../keywords/var.md) keyword) or in C# 8.0 and earlier, the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
+If a target type of a conditional expression is unknown (for example, when you use the [`var`](../statements/declarations.md#implicitly-typed-local-variables) keyword) or in C# 8.0 and earlier, the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
 
 [!code-csharp[not target-typed conditional](snippets/shared/ConditionalOperator.cs#NotTargetTyped)]
 

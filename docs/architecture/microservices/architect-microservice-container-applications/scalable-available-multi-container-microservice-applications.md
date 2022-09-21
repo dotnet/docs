@@ -86,10 +86,10 @@ For more implementation information on Helm charts and Kubernetes, see the [Usin
 ## Additional resources
 
 - **Getting started with Azure Kubernetes Service (AKS)** \
-  [https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
+  [https://learn.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
 
 - **Azure Dev Spaces** \
-  [https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces](/azure/dev-spaces/azure-dev-spaces)
+  [https://learn.microsoft.com/azure/dev-spaces/azure-dev-spaces](/azure/dev-spaces/azure-dev-spaces)
 
 - **Kubernetes** The official site. \
   <https://kubernetes.io/>

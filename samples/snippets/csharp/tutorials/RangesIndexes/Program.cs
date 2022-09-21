@@ -24,6 +24,8 @@ namespace RangesIndexes
             indexSamples.ComputeMovingAverages();
             Console.WriteLine("          ==========          Jageged arrays.        ==========");
             indexSamples.JaggedArrays();
+            Console.WriteLine("          ==========          Implicit range operator expression conversions.        ==========");
+            indexSamples.ImplicitRangeOperatorConversion();
         }
     }
 }

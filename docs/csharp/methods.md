@@ -291,4 +291,4 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 - [out](language-reference/keywords/out-parameter-modifier.md)
 - [ref](language-reference/keywords/ref.md)
 - [in](language-reference/keywords/in-parameter-modifier.md)
-- [Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)
+- [Passing Parameters](language-reference/keywords/method-parameters.md)

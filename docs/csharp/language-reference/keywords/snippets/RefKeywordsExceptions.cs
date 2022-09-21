@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace keywords
+namespace Keywords
 {
     public class RefKeywordsExceptions
     {

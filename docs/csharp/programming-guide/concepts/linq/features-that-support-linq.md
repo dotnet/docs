@@ -25,7 +25,7 @@ For more information, see [LINQ Query Expressions](../../../linq/index.md).
 
 ## Implicitly Typed Variables (var)
 
-Instead of explicitly specifying a type when you declare and initialize a variable, you can use the [var](../../../language-reference/keywords/var.md) modifier to instruct the compiler to infer and assign the type, as shown here:
+Instead of explicitly specifying a type when you declare and initialize a variable, you can use the [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables) modifier to instruct the compiler to infer and assign the type, as shown here:
 
 ```csharp
 var number = 5;

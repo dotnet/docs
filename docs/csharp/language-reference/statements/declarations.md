@@ -14,7 +14,7 @@ A *declaration statement* declares a new variable, and optionally, initializes i
 
 ## Implicitly typed local variables
 
-Beginning with C# 3, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `a` and `b` are functionally equivalent:
+Variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `a` and `b` are functionally equivalent:
 
 ```csharp
 var a = 10; // Implicitly typed.

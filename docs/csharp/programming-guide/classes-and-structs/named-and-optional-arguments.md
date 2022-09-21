@@ -118,10 +118,6 @@ For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> metho
 
 ![Screenshot showing IntelliSense quick info for the AutoFormat method.](./media/named-and-optional-arguments/autoformat-method-parameters.png)
 
-In C# 3.0 and earlier versions, an argument is required for each parameter, as shown in the following example.
-
-[!code-csharp[csProgGuideNamedAndOptional#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#3)]
-
 However, you can greatly simplify the call to `AutoFormat` by using named and optional arguments, introduced in C# 4.0. Named and optional arguments enable you to omit the argument for an optional parameter if you don't want to change the parameter's default value. In the following call, a value is specified for only one of the seven parameters.
 
 [!code-csharp[csProgGuideNamedAndOptional#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#13)]

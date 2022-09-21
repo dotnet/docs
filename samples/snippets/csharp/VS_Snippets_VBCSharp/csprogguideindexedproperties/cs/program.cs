@@ -52,12 +52,6 @@ namespace IndexedPieces
             Excel.Range targetRange = excelApp.get_Range("A1", Type.Missing);
             //</snippet1>
 
-            //<snippet3>
-            // Visual C# 2008.
-            targetRange.set_Value(Type.Missing, "Name");
-            // Or
-            targetRange.Value2 = "Name";
-            //</snippet3>
         }
 
         public void Snippets2010()

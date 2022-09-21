@@ -195,7 +195,7 @@ public (string, string, string, int) GetPersonalInfo(string id)
 The caller can then consume the returned tuple with code like the following:
 
 ```csharp
-var person = GetPersonalInfo("111111111")
+var person = GetPersonalInfo("111111111");
 Console.WriteLine($"{person.Item1} {person.Item3}: age = {person.Item4}");
 ```
 

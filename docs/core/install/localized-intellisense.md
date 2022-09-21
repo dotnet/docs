@@ -13,7 +13,7 @@ ms.date: 11/05/2021
 ## Prerequisites
 
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version, such as the [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
-- [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or a later version.
+- [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or a later version.
 
 ## Download and install the localized IntelliSense files
 

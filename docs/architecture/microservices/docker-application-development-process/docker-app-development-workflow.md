@@ -115,7 +115,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 - **Building Docker Images for .NET 6 Applications** \
-  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
+  [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 - **Build your own image**. In the official Docker documentation.\
   <https://docs.docker.com/engine/tutorials/dockerimages/>
@@ -492,7 +492,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  [https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](/visualstudio/containers/hosting-web-apps-in-docker)
+  [https://learn.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](/visualstudio/containers/hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 
@@ -529,10 +529,10 @@ If you're developing using the editor/CLI approach, debugging containers is more
 ### Additional resources
 
 - **Quickstart: Docker in Visual Studio.** \
-  [https://docs.microsoft.com/visualstudio/containers/container-tools](/visualstudio/containers/container-tools)
+  [https://learn.microsoft.com/visualstudio/containers/container-tools](/visualstudio/containers/container-tools)
 
 - **Debugging apps in a local Docker container** \
-  [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
+  [https://learn.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
 
 ## Simplified workflow when developing containers with Visual Studio
 

@@ -19,7 +19,7 @@ The library design emphasizes high performance and low memory allocation over an
 
 The library also provides classes for working with an in-memory [document object model (DOM)](use-dom-utf8jsonreader-utf8jsonwriter.md#json-dom-choices). This feature enables random access to the elements in a JSON file or string.
 
-There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](how-to.md#visual-basic-support).
+There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
 
 ## Run-time reflection vs. compile-time source generation
 

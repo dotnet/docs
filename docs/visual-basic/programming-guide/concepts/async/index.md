@@ -51,7 +51,7 @@ Async Function AccessTheWebAsync() As Task(Of Integer)
         '  - getStringTask stores the task we get from the call to GetStringAsync.
         '  - Task(Of String) means it is a task which returns a String when it is done.
         Dim getStringTask As Task(Of String) =
-            client.GetStringAsync("https://docs.microsoft.com/dotnet")
+            client.GetStringAsync("https://learn.microsoft.com/dotnet")
         ' You can do other work here that doesn't rely on the string from GetStringAsync.
         DoIndependentWork()
         ' The Await operator suspends AccessTheWebAsync.

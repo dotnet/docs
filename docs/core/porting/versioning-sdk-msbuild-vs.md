@@ -77,7 +77,7 @@ To ensure consistent tooling, you should use `dotnet build` rather than `msbuild
 
 ## Preview versioning
 
-For .NET SDK major versions, we typically release within a few days of a Visual Studio preview version. While there may be other combinations that work, only the latest preview released is tested and officially supported. Below is the alignment of .NET 7 previews and which versions of Visual Studio they were tested with prior to release.
+Major versions of the .NET SDK are typically released within a few days of a Visual Studio preview version. While there may be other combinations that work, only the latest preview released is tested and officially supported. The following table shows which version of Visual Studio each .NET 7 preview version was tested with prior to release.
 
 | SDK preview | Visual Studio Release |
 |-|-|

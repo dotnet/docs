@@ -71,16 +71,16 @@ The performance improvements provided by source generation can be substantial. F
 
 ### Known issues
 
-Only `public` properties and fields are supported by default<sup>1</sup> in either serialization mode. However, reflection mode supports the use of `private` *accessors* while source-generation mode does not. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
-
-<sup>1</sup>Starting in .NET 7, you can use custom JSON contracts to include `private` properties and fields in serialization.
+Only `public` properties and fields are supported by default<sup>\*</sup> in either serialization mode. However, reflection mode supports the use of `private` *accessors* while source-generation mode does not. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
 
 Reflection mode also supports deserialization to [init-only properties](../../../csharp/language-reference/keywords/init.md). Source generation doesn't support this, because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer uses run-time reflection to set properties after construction.
 
 In both reflection and source generation modes:
 
-* Only `public` properties and `public` fields are supported.
+* Only `public` properties and `public` fields are supported<sup>\*</sup>.
 * Only `public` constructors can be used for deserialization.
+
+<sup>\*</sup>Starting in .NET 7, you can use custom JSON contracts to include `private` properties and fields in serialization.
 
 For information about other known issues with source generation, see the [GitHub issues that are labeled "source-generator"](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 

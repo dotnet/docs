@@ -352,4 +352,4 @@ again:
 
 In this tutorial, you created an app that makes web requests and parses the results. Your version of the app should now match the [finished sample](/samples/dotnet/samples/console-webapiclient/).
 
-Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json-how-to.md).
+Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json/how-to.md).

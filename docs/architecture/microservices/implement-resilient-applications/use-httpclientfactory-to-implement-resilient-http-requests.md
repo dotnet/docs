@@ -187,7 +187,7 @@ Up to this point, the above code snippet has only shown the example of performin
 ## Additional resources
 
 - **Using HttpClientFactory in .NET**  
-  [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
+  [https://learn.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory source code in the `dotnet/extensions` GitHub repository**  
   <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>

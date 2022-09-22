@@ -21,16 +21,16 @@ Since an introduction to EF Core is already available in Microsoft documentation
 ### Additional resources
 
 - **Entity Framework Core** \
-  [https://docs.microsoft.com/ef/core/](/ef/core/)
+  [https://learn.microsoft.com/ef/core/](/ef/core/)
 
 - **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio** \
-  [https://docs.microsoft.com/aspnet/core/data/ef-mvc/](/aspnet/core/data/ef-mvc/)
+  [https://learn.microsoft.com/aspnet/core/data/ef-mvc/](/aspnet/core/data/ef-mvc/)
 
 - **DbContext Class** \
-  [https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext](xref:Microsoft.EntityFrameworkCore.DbContext)
+  [https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext](xref:Microsoft.EntityFrameworkCore.DbContext)
 
 - **Compare EF Core & EF6.x** \
-  [https://docs.microsoft.com/ef/efcore-and-ef6/index](/ef/efcore-and-ef6/index)
+  [https://learn.microsoft.com/ef/efcore-and-ef6/index](/ef/efcore-and-ef6/index)
 
 ## Infrastructure in Entity Framework Core from a DDD perspective
 
@@ -474,19 +474,19 @@ Learn [how the specification pattern is applied in the eShopOnWeb sample](https:
 ### Additional resources
 
 - **Table Mapping** \
-  [https://docs.microsoft.com/ef/core/modeling/relational/tables](/ef/core/modeling/relational/tables)
+  [https://learn.microsoft.com/ef/core/modeling/relational/tables](/ef/core/modeling/relational/tables)
 
 - **Use HiLo to generate keys with Entity Framework Core** \
   <https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/>
 
 - **Backing Fields** \
-  [https://docs.microsoft.com/ef/core/modeling/backing-field](/ef/core/modeling/backing-field)
+  [https://learn.microsoft.com/ef/core/modeling/backing-field](/ef/core/modeling/backing-field)
 
 - **Steve Smith. Encapsulated Collections in Entity Framework Core** \
   <https://ardalis.com/encapsulated-collections-in-entity-framework-core>
 
 - **Shadow Properties** \
-  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
+  [https://learn.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
 
 - **The Specification pattern** \
   <https://deviq.com/specification-pattern/>

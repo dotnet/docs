@@ -81,7 +81,7 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 
 | SDK preview version | Visual Studio version |
 |-|-|
-| Preview 1 | 17.2-preview1 |
+| Preview 1 | 17.2 Preview 1 |
 | Preview 2 | 17.2-preview2 |
 | Preview 3 | 17.2-preview3 |
 | Preview 4 | 17.3-preview1 |

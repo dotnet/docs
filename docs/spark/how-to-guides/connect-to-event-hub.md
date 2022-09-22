@@ -27,7 +27,7 @@ Have an Event Hubs Namespace ready with an event hub. For a step-by-step guide, 
     1. Update **BOOTSTRAP_SERVERS** and **EH_SASL** in your application like so:
 
     ```csharp
-    string BOOTSTRAP_SERVERS = "hostname:9093"; // 9093 is the port used to communicate with Event Hubs, see [troubleshooting guide](https://docs.microsoft.com/azure/event-hubs/troubleshooting-guide)
+    string BOOTSTRAP_SERVERS = "hostname:9093"; // 9093 is the port used to communicate with Event Hubs, see [troubleshooting guide](https://learn.microsoft.com/azure/event-hubs/troubleshooting-guide)
     string EH_SASL = "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"$ConnectionString\" password=\"<CONNECTION_STRING>\";"; // Connection string obtained from Step 1
     ```
 

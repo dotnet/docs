@@ -56,7 +56,7 @@ The return statement specifies an integer result. Any methods that are awaiting 
 If `GetUrlContentLengthAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.
 
 ```csharp
-string contents = await client.GetStringAsync("https://docs.microsoft.com/dotnet");
+string contents = await client.GetStringAsync("https://learn.microsoft.com/dotnet");
 ```
 
 The following characteristics summarize what makes the previous example an async method:

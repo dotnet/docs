@@ -32,7 +32,7 @@ JSON serialization serializes the public properties of an object into a string, 
 
 * Use a <xref:System.Text.Json.JsonSerializerOptions> object
 * Apply attributes from the <xref:System.Text.Json.Serialization> namespace to classes or properties
-* [Implement custom converters](../../../../standard/serialization/system-text-json-converters-how-to.md)
+* [Implement custom converters](../../../../standard/serialization/system-text-json/converters-how-to.md)
 
 ## Binary and XML serialization
 
@@ -74,10 +74,10 @@ Designer serialization is a special form of serialization that involves the kind
 
 ## <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
 
-[System.Text.Json overview](../../../../standard/serialization/system-text-json-overview.md)
+[System.Text.Json overview](../../../../standard/serialization/system-text-json/overview.md)
 Shows how to get the `System.Text.Json` library.
 
-[How to serialize and deserialize JSON in .NET](../../../../standard/serialization/system-text-json-how-to.md).
+[How to serialize and deserialize JSON in .NET](../../../../standard/serialization/system-text-json/how-to.md).
 Shows how to read and write object data to and from JSON using the <xref:System.Text.Json.JsonSerializer> class.
 
 [Walkthrough: Persisting an Object in Visual Studio (C#)](walkthrough-persisting-an-object-in-visual-studio.md)  

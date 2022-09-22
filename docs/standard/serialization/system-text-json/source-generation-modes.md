@@ -65,22 +65,20 @@ By default, `JsonSerializer` collects metadata at run time by using [reflection]
 
 ## Source generation - metadata collection mode
 
-You can use source generation to move the metadata collection process from run time to compile time. During compilation, the metadata is collected and source code files are generated. The generated source code files are automatically compiled as an integral part of the application. This compile-time metadata collection eliminates run-time metadata collection, which improves performance of both serialization and deserialization.
+You can use source generation to move the metadata collection process from run time to compile time. During compilation, the metadata is collected and source code files are generated. The generated source code files are automatically compiled as an integral part of the application. This technique eliminates run-time metadata collection, which improves performance of both serialization and deserialization.
 
 The performance improvements provided by source generation can be substantial. For example, [test results](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/#how-source-generation-provides-benefits) have shown up to 40% or more startup time reduction, private memory reduction, throughput speed increase (in serialization optimization mode), and app size reduction.
 
-## Source generation - known issues
+### Known issues
 
-Reflection mode supports the use of non-public accessors of public properties. For example, you can apply [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter. Source generation mode supports only public or internal accessors of public properties. Use of `[JsonInclude]` on non-public accessors in source generation mode results in a `NotSupportedException` at run time.
+Only `public` properties and fields are supported by default<sup>1</sup> in either serialization mode. However, reflection mode supports the use of `private` *accessors* while source-generation mode does not. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
 
-Reflection mode also supports deserialization to init-only properties. Source generation doesn't support this, because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer uses run-time reflection to set properties after construction.
+Reflection mode also supports deserialization to [init-only properties](../../../csharp/language-reference/keywords/init.md). Source generation doesn't support this, because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer uses run-time reflection to set properties after construction.
 
 In both reflection and source generation modes:
 
-* Only public properties and public fields are supported.
-* Only public constructors can be used for deserialization.
-
-For information about the outstanding request to add support for non-public members, see GitHub issue [dotnet/runtime#31511](https://github.com/dotnet/runtime/issues/31511). Even if that request is implemented, source generation mode will still be limited to support for public members.
+* Only `public` properties and `public` fields are supported.
+* Only `public` constructors can be used for deserialization.
 
 For information about other known issues with source generation, see the [GitHub issues that are labeled "source-generator"](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 

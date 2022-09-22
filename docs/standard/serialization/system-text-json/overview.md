@@ -13,21 +13,17 @@ helpviewer_keywords:
 
 # JSON serialization and deserialization (marshalling and unmarshalling) in .NET - overview
 
-The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON).
+The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). *Serialization* is the process of converting the state of an object, that is, the values of its properties, into a form that can be stored or transmitted. The serialized form doesn't include any information about an object's associated methods. *Deserialization* reconstructs an object from the serialized form.
 
-The library design emphasizes high performance and low memory allocation over an extensive feature set. Built-in UTF-8 support optimizes the process of reading and writing JSON text encoded as UTF-8, which is the most prevalent encoding for data on the web and files on disk.
+The `System.Text.Json` library design emphasizes high performance and low memory allocation over an extensive feature set. Built-in UTF-8 support optimizes the process of reading and writing JSON text encoded as UTF-8, which is the most prevalent encoding for data on the web and files on disk.
 
 The library also provides classes for working with an in-memory [document object model (DOM)](use-dom-utf8jsonreader-utf8jsonwriter.md#json-dom-choices). This feature enables random access to the elements in a JSON file or string.
 
-There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
-
-## Run-time reflection vs. compile-time source generation
-
-By default, `System.Text.Json` uses run-time [reflection](../../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](source-generation-modes.md).
+There are some limitations on what parts of the library you can use from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
   
 ## How to get the library
 
-The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The source generation feature is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
+The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The [source generation feature](source-generation-modes.md#source-generation---metadata-collection-mode) is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
 
 For framework versions earlier than .NET Core 3.0, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
@@ -35,6 +31,10 @@ For framework versions earlier than .NET Core 3.0, install the [System.Text.Json
 * .NET Framework 4.7.2 and later
 * .NET Core 2.1 and later
 * .NET 5 and later
+
+## Run-time reflection vs. compile-time source generation
+
+By default, `System.Text.Json` uses [reflection](../../../csharp/programming-guide/concepts/reflection.md) to gather the metadata it needs to access properties of objects for serialization and deserialization *at run time*. As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. For more information, see [How to choose reflection or source generation in System.Text.Json](source-generation-modes.md).
 
 ## Security information
 
@@ -68,6 +68,7 @@ The `System.Text.Json` types are thread-safe, including:
 * [Enable case-insensitive matching](character-casing.md)
 * [Customize property names and values](customize-properties.md)
 * [Ignore properties](ignore-properties.md)
+* [Require properties](required-properties.md)
 * [Allow invalid JSON](invalid-json.md)
 * [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
 * [Preserve references and handle circular references](preserve-references.md)

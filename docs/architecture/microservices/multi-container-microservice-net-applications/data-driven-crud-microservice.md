@@ -219,10 +219,10 @@ public void ConfigureServices(IServiceCollection services)
 ### Additional resources
 
 - **Querying Data** \
-  [https://docs.microsoft.com/ef/core/querying/index](/ef/core/querying/index)
+  [https://learn.microsoft.com/ef/core/querying/index](/ef/core/querying/index)
 
 - **Saving Data** \
-  [https://docs.microsoft.com/ef/core/saving/index](/ef/core/saving/index)
+  [https://learn.microsoft.com/ef/core/saving/index](/ef/core/saving/index)
 
 ## The DB connection string and environment variables used by Docker containers
 
@@ -306,7 +306,7 @@ This versioning mechanism is simple and depends on the server routing the reques
   <https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 
 - **Versioning a RESTful web API** \
-  [https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api](/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
+  [https://learn.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api](/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 - **Roy Fielding. Versioning, Hypermedia, and REST** \
   <https://www.infoq.com/articles/roy-fielding-on-versioning>
@@ -428,13 +428,13 @@ It is that simple. And because it is automatically generated, the Swagger metada
 ### Additional resources
 
 - **ASP.NET Web API Help Pages using Swagger** \
-  [https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger](/aspnet/core/tutorials/web-api-help-pages-using-swagger)
+  [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger](/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 - **Get started with Swashbuckle and ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle](/aspnet/core/tutorials/getting-started-with-swashbuckle)
+  [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle](/aspnet/core/tutorials/getting-started-with-swashbuckle)
 
 - **Get started with NSwag and ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](/aspnet/core/tutorials/getting-started-with-nswag)
+  [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](/aspnet/core/tutorials/getting-started-with-nswag)
 
 > [!div class="step-by-step"]
 > [Previous](microservice-application-design.md)

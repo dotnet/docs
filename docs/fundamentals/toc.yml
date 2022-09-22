@@ -2298,46 +2298,46 @@ items:
     - name: JSON serialization
       items:
       - name: Overview
-        href: ../standard/serialization/system-text-json-overview.md
+        href: ../standard/serialization/system-text-json/overview.md
         displayName: json serialization
       - name: Reflection vs. source generation
-        href: ../standard/serialization/system-text-json-source-generation-modes.md
+        href: ../standard/serialization/system-text-json/source-generation-modes.md
       - name: How to serialize and deserialize JSON
-        href: ../standard/serialization/system-text-json-how-to.md
+        href: ../standard/serialization/system-text-json/how-to.md
       - name: Control serialization behavior
         items:
         - name: Instantiate JsonSerializerOptions
-          href: ../standard/serialization/system-text-json-configure-options.md
+          href: ../standard/serialization/system-text-json/configure-options.md
         - name: Enable case-insensitive matching
-          href: ../standard/serialization/system-text-json-character-casing.md
+          href: ../standard/serialization/system-text-json/character-casing.md
         - name: Customize property names and values
-          href: ../standard/serialization/system-text-json-customize-properties.md
+          href: ../standard/serialization/system-text-json/customize-properties.md
         - name: Ignore properties
-          href: ../standard/serialization/system-text-json-ignore-properties.md
+          href: ../standard/serialization/system-text-json/ignore-properties.md
         - name: Allow invalid JSON
-          href: ../standard/serialization/system-text-json-invalid-json.md
+          href: ../standard/serialization/system-text-json/invalid-json.md
         - name: Handle overflow JSON, use JsonElement or JsonNode
-          href: ../standard/serialization/system-text-json-handle-overflow.md
+          href: ../standard/serialization/system-text-json/handle-overflow.md
         - name: Preserve references, handle circular references
-          href: ../standard/serialization/system-text-json-preserve-references.md
+          href: ../standard/serialization/system-text-json/preserve-references.md
         - name: Deserialize to immutable types, non-public accessors
-          href: ../standard/serialization/system-text-json-immutability.md
+          href: ../standard/serialization/system-text-json/immutability.md
         - name: Polymorphic serialization
-          href: ../standard/serialization/system-text-json-polymorphism.md
+          href: ../standard/serialization/system-text-json/polymorphism.md
       - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
-        href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
+        href: ../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md
       - name: Migrate from Newtonsoft.Json
-        href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+        href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
       - name: Supported collection types
-        href: ../standard/serialization/system-text-json-supported-collection-types.md
+        href: ../standard/serialization/system-text-json/supported-collection-types.md
       - name: Advanced
         items:
         - name: Customize character encoding
-          href: ../standard/serialization/system-text-json-character-encoding.md
+          href: ../standard/serialization/system-text-json/character-encoding.md
         - name: Use source generation
-          href: ../standard/serialization/system-text-json-source-generation.md
+          href: ../standard/serialization/system-text-json/source-generation.md
         - name: Write custom converters
-          href: ../standard/serialization/system-text-json-converters-how-to.md
+          href: ../standard/serialization/system-text-json/converters-how-to.md
     - name: Binary serialization
       items:
       - name: Overview

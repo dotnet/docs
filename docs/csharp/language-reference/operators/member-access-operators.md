@@ -152,7 +152,7 @@ Use the `?.` operator to check if a delegate is non-null and invoke it in a thre
 PropertyChanged?.Invoke(…)
 ```
 
-That code is equivalent to the following code that you would use in C# 5 or earlier:
+That code is equivalent to the following code:
 
 ```csharp
 var handler = this.PropertyChanged;

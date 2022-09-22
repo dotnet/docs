@@ -28,8 +28,6 @@ The operand of the `await` operator is usually of one of the following .NET type
 
 The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception. For more information about exception handling, see the [Exceptions in async methods](../keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch statement](../keywords/try-catch.md) article.
 
-The `async` and `await` keywords are available in C# 5 and later.
-
 ## Asynchronous streams and disposables
 
 Beginning with C# 8.0, you can work with asynchronous streams and disposables.

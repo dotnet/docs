@@ -30,7 +30,7 @@ Running the provided implementation prints to the console.
 
 ```console
 New Listener discovered: System.Net.Http
-Data received: RequestStart: { Url = https://docs.microsoft.com/dotnet/core/diagnostics/ }
+Data received: RequestStart: { Url = https://learn.microsoft.com/dotnet/core/diagnostics/ }
 ```
 
 ## Log an event

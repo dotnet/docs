@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 ## Scenario overview
 

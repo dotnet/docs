@@ -73,7 +73,7 @@ Substantial customer feedback indicated that the <xref:System.Text.Json.JsonSeri
 
 ## Recommended action
 
-If this change is disruptive to you, you can use a [custom converter](../../../../standard/serialization/system-text-json-converters-how-to.md) that implements the desired semantics.
+If this change is disruptive to you, you can use a [custom converter](../../../../standard/serialization/system-text-json/converters-how-to.md) that implements the desired semantics.
 
 ## Affected APIs
 

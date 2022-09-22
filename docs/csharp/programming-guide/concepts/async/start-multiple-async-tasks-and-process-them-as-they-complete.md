@@ -18,7 +18,7 @@ The following example uses a query to create a collection of tasks. Each task do
 
 You can follow this tutorial by using one of the following options:
 
-* [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
+* [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
 * The [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) with a code editor of your choice, such as [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Create example application
@@ -53,25 +53,25 @@ static readonly HttpClient s_client = new HttpClient
 
 static readonly IEnumerable<string> s_urlList = new string[]
 {
-    "https://docs.microsoft.com",
-    "https://docs.microsoft.com/aspnet/core",
-    "https://docs.microsoft.com/azure",
-    "https://docs.microsoft.com/azure/devops",
-    "https://docs.microsoft.com/dotnet",
-    "https://docs.microsoft.com/dynamics365",
-    "https://docs.microsoft.com/education",
-    "https://docs.microsoft.com/enterprise-mobility-security",
-    "https://docs.microsoft.com/gaming",
-    "https://docs.microsoft.com/graph",
-    "https://docs.microsoft.com/microsoft-365",
-    "https://docs.microsoft.com/office",
-    "https://docs.microsoft.com/powershell",
-    "https://docs.microsoft.com/sql",
-    "https://docs.microsoft.com/surface",
-    "https://docs.microsoft.com/system-center",
-    "https://docs.microsoft.com/visualstudio",
-    "https://docs.microsoft.com/windows",
-    "https://docs.microsoft.com/xamarin"
+    "https://learn.microsoft.com",
+    "https://learn.microsoft.com/aspnet/core",
+    "https://learn.microsoft.com/azure",
+    "https://learn.microsoft.com/azure/devops",
+    "https://learn.microsoft.com/dotnet",
+    "https://learn.microsoft.com/dynamics365",
+    "https://learn.microsoft.com/education",
+    "https://learn.microsoft.com/enterprise-mobility-security",
+    "https://learn.microsoft.com/gaming",
+    "https://learn.microsoft.com/graph",
+    "https://learn.microsoft.com/microsoft-365",
+    "https://learn.microsoft.com/office",
+    "https://learn.microsoft.com/powershell",
+    "https://learn.microsoft.com/sql",
+    "https://learn.microsoft.com/surface",
+    "https://learn.microsoft.com/system-center",
+    "https://learn.microsoft.com/visualstudio",
+    "https://learn.microsoft.com/windows",
+    "https://learn.microsoft.com/xamarin"
 };
 ```
 
@@ -227,25 +227,25 @@ static readonly HttpClient s_client = new HttpClient
 
 static readonly IEnumerable<string> s_urlList = new string[]
 {
-    "https://docs.microsoft.com",
-    "https://docs.microsoft.com/aspnet/core",
-    "https://docs.microsoft.com/azure",
-    "https://docs.microsoft.com/azure/devops",
-    "https://docs.microsoft.com/dotnet",
-    "https://docs.microsoft.com/dynamics365",
-    "https://docs.microsoft.com/education",
-    "https://docs.microsoft.com/enterprise-mobility-security",
-    "https://docs.microsoft.com/gaming",
-    "https://docs.microsoft.com/graph",
-    "https://docs.microsoft.com/microsoft-365",
-    "https://docs.microsoft.com/office",
-    "https://docs.microsoft.com/powershell",
-    "https://docs.microsoft.com/sql",
-    "https://docs.microsoft.com/surface",
-    "https://docs.microsoft.com/system-center",
-    "https://docs.microsoft.com/visualstudio",
-    "https://docs.microsoft.com/windows",
-    "https://docs.microsoft.com/xamarin"
+    "https://learn.microsoft.com",
+    "https://learn.microsoft.com/aspnet/core",
+    "https://learn.microsoft.com/azure",
+    "https://learn.microsoft.com/azure/devops",
+    "https://learn.microsoft.com/dotnet",
+    "https://learn.microsoft.com/dynamics365",
+    "https://learn.microsoft.com/education",
+    "https://learn.microsoft.com/enterprise-mobility-security",
+    "https://learn.microsoft.com/gaming",
+    "https://learn.microsoft.com/graph",
+    "https://learn.microsoft.com/microsoft-365",
+    "https://learn.microsoft.com/office",
+    "https://learn.microsoft.com/powershell",
+    "https://learn.microsoft.com/sql",
+    "https://learn.microsoft.com/surface",
+    "https://learn.microsoft.com/system-center",
+    "https://learn.microsoft.com/visualstudio",
+    "https://learn.microsoft.com/windows",
+    "https://learn.microsoft.com/xamarin"
 };
 ```
 

@@ -308,7 +308,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 - **Architecting Microservices e-book**  
   <https://aka.ms/MicroservicesEbook>
 - **DDD (Domain-Driven Design)**  
-  [https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/](../microservices/microservice-ddd-cqrs-patterns/index.md)
+  [https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/](../microservices/microservice-ddd-cqrs-patterns/index.md)
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

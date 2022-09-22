@@ -539,9 +539,9 @@ System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runt
 
 The new built-in JSON support is high-performance, low allocation, and works with UTF-8 encoded JSON text. For more information about the <xref:System.Text.Json> namespace and types, see the following articles:
 
-* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json-overview.md)
-* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json-how-to.md).
-* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md)
+* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json/overview.md)
+* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json/how-to.md).
+* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md)
 
 ### HTTP/2 support
 

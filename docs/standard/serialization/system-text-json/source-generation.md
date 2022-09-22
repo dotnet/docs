@@ -19,11 +19,11 @@ ms.topic: how-to
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
-This article shows how to use the source generation features of [System.Text.Json](system-text-json-overview.md).
+This article shows how to use the source generation features of [System.Text.Json](overview.md).
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-For information about how to use source generation in System.Text.Json, see [the .NET 6 version of this article](system-text-json-source-generation.md?pivots=dotnet-6-0).
+For information about how to use source generation in System.Text.Json, see [the .NET 6 version of this article](source-generation.md?pivots=dotnet-6-0).
 :::zone-end
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
@@ -151,7 +151,7 @@ Here are the preceding examples in a complete program:
 
 ## Specify options by using `JsonSerializerOptions`
 
-Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](system-text-json-source-generation-modes.md#serialization-optimization-mode).
+Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](source-generation-modes.md#serialization-optimization-mode).
 
 To specify options by using <xref:System.Text.Json.JsonSerializerOptions>:
 
@@ -195,22 +195,22 @@ Here are the preceding examples in a complete program:
 ## See also
 
 * [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/)
-* [JSON serialization and deserialization in .NET - overview](system-text-json-overview.md)
-* [How to use the library](system-text-json-how-to.md)
-* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
-* [Enable case-insensitive matching](system-text-json-character-casing.md)
-* [Customize property names and values](system-text-json-customize-properties.md)
-* [Ignore properties](system-text-json-ignore-properties.md)
-* [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references and handle circular references](system-text-json-preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
-* [Polymorphic serialization](system-text-json-polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Customize character encoding](system-text-json-character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
-* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)
+* [JSON serialization and deserialization in .NET - overview](overview.md)
+* [How to use the library](how-to.md)
+* [Instantiate JsonSerializerOptions instances](configure-options.md)
+* [Enable case-insensitive matching](character-casing.md)
+* [Customize property names and values](customize-properties.md)
+* [Ignore properties](ignore-properties.md)
+* [Allow invalid JSON](invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
+* [Preserve references and handle circular references](preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](immutability.md)
+* [Polymorphic serialization](polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
+* [Customize character encoding](character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](converters-how-to.md)
+* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
+* [Supported collection types in System.Text.Json](supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

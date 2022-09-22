@@ -204,6 +204,11 @@
 | Azure.ResourceManager.Datadog | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Datadog/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.DataLakeAnalytics | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DataLakeAnalytics/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.DataLakeStore | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DataLakeStore/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.DataMigration | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DataMigration/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.DeploymentManager | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DeploymentManager/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.DevSpaces | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DevSpaces/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Elastic/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.Kubernetes | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Kubernetes/1.0.0-beta.1) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview04](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview04) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |

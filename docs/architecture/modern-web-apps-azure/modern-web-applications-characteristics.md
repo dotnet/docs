@@ -76,9 +76,9 @@ Client-side Blazor, released in 2020, eliminates the need to render changes on t
 > ### References – Modern Web Applications
 >
 > - **Introduction to ASP.NET Core**  
->   [https://docs.microsoft.com/aspnet/core/](/aspnet/core/)
+>   [https://learn.microsoft.com/aspnet/core/](/aspnet/core/)
 > - **Testing in ASP.NET Core**  
->   [https://docs.microsoft.com/aspnet/core/testing/](/aspnet/core/testing/)
+>   [https://learn.microsoft.com/aspnet/core/testing/](/aspnet/core/testing/)
 > - **Blazor - Get Started**  
 >   <https://blazor.net/docs/get-started.html>
 

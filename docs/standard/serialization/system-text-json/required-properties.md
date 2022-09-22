@@ -6,7 +6,7 @@ no-loc: [System.Text.Json, Newtonsoft.Json]
 ---
 # Required properties
 
-Starting in .NET 7, you can mark certain properties to signify that they must be present in the JSON payload for deserialization to succeed.If one or more of these required properties is not present, the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods throw a <xref:System.Text.Json.JsonException>.
+Starting in .NET 7, you can mark certain properties to signify that they must be present in the JSON payload for deserialization to succeed. If one or more of these required properties is not present, the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods throw a <xref:System.Text.Json.JsonException>.
 
 There are two ways to mark a property or field as required for JSON deserialization:
 
@@ -19,7 +19,7 @@ From the serializer's perspective, these two demarcations are equivalent and bot
 - If you only want the requirement to apply to JSON deserialization.
 - If you're using `System.Text.Json` serialization in [source generation](source-generation-modes.md#source-generation---metadata-collection-mode) mode. In this case, your code won't compile if you use the `required` modifier, as source generation occurs at compile time.
 
-The following code snippet shows an example of a property that must be present in the JSON payload for deserialization to succeed:
+The following code snippet shows an example of a property modified with the `required` keyword. This property must be present in the JSON payload for deserialization to succeed.
 
 ```csharp
 using System.Text.Json;

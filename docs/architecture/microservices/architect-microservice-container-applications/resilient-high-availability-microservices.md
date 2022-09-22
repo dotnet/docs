@@ -59,19 +59,19 @@ Different orchestrators might sound similar, but the diagnostics and health chec
   <https://github.com/Azure/diagnostics-eventflow>
 
 - **What is Azure Diagnostics** \
-  [https://docs.microsoft.com/azure/azure-diagnostics](/azure/azure-diagnostics)
+  [https://learn.microsoft.com/azure/azure-diagnostics](/azure/azure-diagnostics)
 
 - **Connect Windows computers to the Azure Monitor service** \
-  [https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows](/azure/azure-monitor/platform/agent-windows)
+  [https://learn.microsoft.com/azure/azure-monitor/platform/agent-windows](/azure/azure-monitor/platform/agent-windows)
 
 - **Logging What You Mean: Using the Semantic Logging Application Block** \
-  [https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)](/previous-versions/msp-n-p/dn440729(v=pandp.60))
+  [https://learn.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)](/previous-versions/msp-n-p/dn440729(v=pandp.60))
 
 - **Splunk** Official site. \
   <https://www.splunk.com/>
 
 - **EventSource Class** API for events tracing for Windows (ETW) \
-  [https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](xref:System.Diagnostics.Tracing.EventSource)
+  [https://learn.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](xref:System.Diagnostics.Tracing.EventSource)
 
 >[!div class="step-by-step"]
 >[Previous](microservice-based-composite-ui-shape-layout.md)

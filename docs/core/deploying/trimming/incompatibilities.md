@@ -25,7 +25,7 @@ The Windows Forms framework makes minimal use of reflection, but is heavily reli
 
 ## Reflection-based serializers
 
-Alternative: Reflection-free serializers, like source-generated [System.Text.Json](../../../standard/serialization/system-text-json-source-generation.md).
+Alternative: Reflection-free serializers, like source-generated [System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md).
 
 Many uses of reflection can be made trimming-compatible, as described in [Introduction to trim warnings](fixing-warnings.md). However, serializers tend to have very complex uses of reflection. Many of these uses cannot be made analyzable at build time. Unfortunately, the best option is often to rewrite the system to use source generation instead.
 

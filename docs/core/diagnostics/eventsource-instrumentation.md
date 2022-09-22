@@ -73,7 +73,7 @@ which the EventSource provides events. It's not recommended to include "EventSou
 3. Assign Event IDs explicitly, this way seemingly benign changes to the code in the source class such as rearranging it or
 adding a method in the middle won't change the event ID associated with each method.
 4. When authoring events that represent the start and end of a unit of work, by convention these methods are named with
-suffixes 'Start' and 'Stop'. For example, "RequestStart' and 'RequestStop'.
+suffixes 'Start' and 'Stop'. For example, 'RequestStart' and 'RequestStop'.
 5. Do not specify an explicit value for EventSourceAttribute’s Guid property, unless you need it for backwards compatibility reasons.
 The default Guid value is derived from the source’s name, which allows tools to accept the more human-readable name and derive
 the same Guid.

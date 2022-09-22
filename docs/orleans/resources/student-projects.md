@@ -32,7 +32,7 @@ We suggest two types of projects for students:
 
 ## Course projects
 
-1. **Internet of Things applications**: For example, the application could enable sensors/devices to report their state to the cloud, where each device is represented in the cloud by an Orleans actor. Users can connect to the actor that represents their device via a web browser and check its status or control it. This project involves mastering several modern cloud technologies, including [Azure](https://azure.microsoft.com), Orleans, [Minimal web API](/aspnet/core/tutorials/min-web-api), [ASP.NET Core SignalR](/learn/modules/aspnet-core-signalr) for streaming commands back from the cloud to the device, and writing a sensor/device/phone app.
+1. **Internet of Things applications**: For example, the application could enable sensors/devices to report their state to the cloud, where each device is represented in the cloud by an Orleans actor. Users can connect to the actor that represents their device via a web browser and check its status or control it. This project involves mastering several modern cloud technologies, including [Azure](https://azure.microsoft.com), Orleans, [Minimal web API](/aspnet/core/tutorials/min-web-api), [ASP.NET Core SignalR](/training/modules/aspnet-core-signalr) for streaming commands back from the cloud to the device, and writing a sensor/device/phone app.
 
 1. **Twitter-like large scalable chat service in the cloud based on Orleans**: Each user could be represented by an Orleans Actor, which contains its list of followers.
 

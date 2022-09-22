@@ -45,7 +45,7 @@ The first table in this article lists keywords that are reserved identifiers in 
         [`explicit`](../operators/user-defined-conversion-operators.md)  
         [`extern`](extern.md)  
         [`false`](../builtin-types/bool.md)  
-        [`file`](file.md)
+        [`file`](file.md)  
         [`finally`](try-finally.md)  
         [`fixed`](../statements/fixed.md)  
         [`float`](../builtin-types/floating-point-numeric-types.md)  

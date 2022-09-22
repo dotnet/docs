@@ -10,6 +10,6 @@ The `System.Text.Json` source generator did not generate output for a given type
 
 ## Workarounds
 
-Register a [custom converter](../../standard/serialization/system-text-json-converters-how-to.md) for the type.
+Register a [custom converter](../../standard/serialization/system-text-json/converters-how-to.md) for the type.
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

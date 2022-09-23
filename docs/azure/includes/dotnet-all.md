@@ -204,6 +204,11 @@
 | Azure.ResourceManager.Datadog | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Datadog/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.DataLakeAnalytics | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DataLakeAnalytics/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.DataLakeStore | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DataLakeStore/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.DataMigration | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DataMigration/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.DeploymentManager | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DeploymentManager/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.DevSpaces | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DevSpaces/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Elastic/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.Kubernetes | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Kubernetes/1.0.0-beta.1) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview04](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview04) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
@@ -689,7 +694,7 @@
 | Management - Monitor Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor.Fluent/1.38.1) | [docs](/dotnet/api/overview/azure/monitor) |  |
 | Management - MySQL | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.MySQL/1.0.0) |  |  |
 | Management - NetApp | NuGet [1.16.0](https://www.nuget.org/packages/Microsoft.Azure.Management.NetApp/1.16.0) |  | GitHub [1.16.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.NetApp_1.16.0/sdk/netapp/Microsoft.Azure.Management.NetApp/) |
-| Management - Network | NuGet [23.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/23.0.0) |  | GitHub [23.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_23.0.0/sdk/network/Microsoft.Azure.Management.Network/) |
+| Management - Network | NuGet [24.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/24.0.0) |  | GitHub [24.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_24.0.0/sdk/network/Microsoft.Azure.Management.Network/) |
 | Management - Network Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent/1.38.1) | [docs](/dotnet/api/overview/azure/virtual-network) |  |
 | Management - Notification Hubs | NuGet [2.3.4-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs/2.3.4-preview) | [docs](/dotnet/api/overview/azure/notification-hubs) | GitHub [2.3.4-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/notificationhubs/Microsoft.Azure.Management.NotificationHubs) |
 | Management - Notification Hubs Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs.Fluent/1.9.1-beta) |  |  |

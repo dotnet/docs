@@ -51,7 +51,7 @@ The `switch` statement selects a statement list to execute based on a pattern ma
 At the preceding example, the `switch` statement uses the following patterns:
 
 - A [relational pattern](../operators/patterns.md#relational-patterns) (available in C# 9.0 and later): to compare an expression result with a constant.
-- A [constant pattern](../operators/patterns.md#constant-pattern) (available in C# 7.0 and later): to test if an expression result equals a constant.
+- A [constant pattern](../operators/patterns.md#constant-pattern): to test if an expression result equals a constant.
 
 > [!IMPORTANT]
 > For information about the patterns supported by the `switch` statement, see [Patterns](../operators/patterns.md).
@@ -86,9 +86,9 @@ For more information, see the following sections of the [C# language specificati
 - [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
 - [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
 
-For more information about features introduced in C# 7.0 and later, see the following feature proposal notes:
+For more information about pattern matching switch statement, see the following feature proposal notes:
 
-- [Switch statement (Pattern matching for C# 7.0)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
+- [Switch statement (Pattern matching)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
 
 ## See also
 

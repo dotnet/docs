@@ -133,7 +133,7 @@ You can fix any of these warnings by initializing or assigning the imported stru
 
 *Warning wave 5*
 
-This warning is generated on all async entry point candidates when you have multiple valid entry points, including one or more synchronous entry point. Because async main was only supported starting with C# 7.1, this warning isn't generated for projects targeting a previous version.
+This warning is generated on all async entry point candidates when you have multiple valid entry points, including one or more synchronous entry point.
 
 The following example generates CS8892:
 

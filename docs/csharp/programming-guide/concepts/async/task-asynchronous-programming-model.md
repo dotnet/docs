@@ -68,7 +68,7 @@ The following characteristics summarize what makes the previous example an async
   - <xref:System.Threading.Tasks.Task%601> if your method has a return statement in which the operand has type `TResult`.
   - <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.
   - `void` if you're writing an async event handler.
-  - Any other type that has a `GetAwaiter` method (starting with C# 7.0).
+  - Any other type that has a `GetAwaiter` method.
 
   For more information, see the [Return types and parameters](#BKMK_ReturnTypesandParameters) section.
 
@@ -151,7 +151,7 @@ You specify <xref:System.Threading.Tasks.Task%601> as the return type if the met
 
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 
-Starting with C# 7.0, you can also specify any other return type, provided that the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
+You can also specify any other return type, provided that the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
 
 The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>:
 

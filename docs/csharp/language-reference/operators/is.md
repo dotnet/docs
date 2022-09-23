@@ -13,7 +13,7 @@ ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 
 The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article.
 
-Beginning with C# 7.0, you can also use the `is` operator to match an expression against a pattern, as the following example shows:
+You can also use the `is` operator to match an expression against a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 

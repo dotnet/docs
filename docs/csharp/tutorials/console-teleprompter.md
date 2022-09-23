@@ -158,16 +158,19 @@ private static async Task ShowTeleprompter()
 You'll notice two changes. First, in the body of the method, instead of calling <xref:System.Threading.Tasks.Task.Wait> to synchronously wait for a task to finish, this version uses the `await` keyword. In order to do that, you need to add the `async` modifier to the method signature. This method returns a `Task`. Notice that there are no return statements that return a `Task` object. Instead, that `Task` object is created by code the compiler generates when you use the `await` operator. You can imagine that this method returns when it reaches an `await`. The returned `Task` indicates that the work has not completed. The method resumes when the awaited task completes. When it has executed to completion, the returned `Task` indicates that it is complete.
 Calling code can monitor that returned `Task` to determine when it has completed.
 
-You can call this new method in your `Main` method:
+Add an `await` keyword before the call to `ShowTeleprompter`:
 
 ```csharp
-ShowTeleprompter().Wait();
+await ShowTeleprompter();
 ```
 
-Here, in `Main`, the code does synchronously wait. You should use the `await` operator instead of synchronously waiting whenever possible. But, in a console application's `Main` method, you cannot use the `await` operator. That would result in the application exiting before all tasks have completed.
+This requires you to change the `Main` method signature to:
 
-> [!NOTE]
-> If you use C# 7.1 or later, you can create console applications with [`async Main` method](../fundamentals/program-structure/main-command-line.md#async-main-return-values).
+```csharp
+static async Task Main(string[] args)
+```
+
+Learn more about the [`async Main` method](../fundamentals/program-structure/main-command-line.md#async-main-return-values) in our fundamentals section.
 
 Next, you need to write the second asynchronous method to read from the Console and watch for the '<' (less than), '>' (greater than) and 'X' or 'x' keys. Here's the method you add for that task:
 
@@ -286,7 +289,7 @@ private static async Task GetInput(TelePrompterConfig config)
 This new version of `ShowTeleprompter` calls a new method in the `TeleprompterConfig` class. Now, you need to update `Main` to call `RunTeleprompter` instead of `ShowTeleprompter`:
 
 ```csharp
-RunTeleprompter().Wait();
+await RunTeleprompter();
 ```
 
 ## Conclusion

@@ -20,8 +20,8 @@ namespace NamedAndOptionalSnippets
             // Named arguments mixed with positional arguments are valid
             // as long as they are used in their correct position.
             PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
-            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");    // C# 7.2 onwards
-            PrintOrderDetails("Gift Shop", orderNum: 31, "Red Mug");                   // C# 7.2 onwards
+            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug"); 
+            PrintOrderDetails("Gift Shop", orderNum: 31, "Red Mug");
 
             // However, mixed arguments are invalid if used out-of-order.
             // The following statements will cause a compiler error.

@@ -9,8 +9,6 @@ ms.custom: mvc
 
 C# provides features that enable you to write verifiable safe code with better performance. If you carefully apply these techniques, fewer scenarios require unsafe code. These features make it easier to use references to value types as method arguments and method returns. When done safely, these techniques minimize copying value types. By using value types, you can minimize the number of allocations and garbage collection passes.
 
-Much of the sample code in this article uses features added in C# 7.2. To use those features, make sure your project isn't configured to use an earlier version. For more information, see [configure the language version](language-reference/configure-language-version.md).
-
 One advantage to using value types is that they often avoid heap allocations. The disadvantage is that they're copied by value. This trade-off makes it harder to optimize algorithms that operate on large amounts of data. The language features highlighted in this article provide mechanisms that enable safe efficient code using references to value types. Use these features wisely to minimize both allocations and copy operations.
 
 Some of the guidance in this article refers to coding practices that are always advisable, not only for the performance benefit. Use the `readonly` keyword when it accurately expresses design intent:

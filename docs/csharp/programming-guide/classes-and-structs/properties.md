@@ -40,7 +40,7 @@ Read-only properties can implement the `get` accessor as an expression-bodied me
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="ExpressionBodiedProperty":::
 
-Beginning with C# 7.0, both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. The `return` keyword isn't used with the `get` accessor.
+Both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. The `return` keyword isn't used with the `get` accessor.
 
 :::code language="csharp" source="./snippets/properties/SaleItem.cs" id="SaleItemV1":::
 

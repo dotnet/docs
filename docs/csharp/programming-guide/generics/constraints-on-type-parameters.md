@@ -91,7 +91,7 @@ Because `T?` can now be used without either the `class` or `struct` constraint, 
 
 ## Unmanaged constraint
 
-Beginning with C# 7.3, you can use the `unmanaged` constraint to specify that the type parameter must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
+You can use the `unmanaged` constraint to specify that the type parameter must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet15":::
 
@@ -101,7 +101,7 @@ The `unmanaged` constraint implies the `struct` constraint and can't be combined
 
 ## Delegate constraints
 
-Also beginning with C# 7.3, you can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
+You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet16":::
 
@@ -113,7 +113,7 @@ If you uncomment the last line, it won't compile. Both `first` and `test` are de
 
 ## Enum constraints
 
-Beginning in C# 7.3, you can also specify the <xref:System.Enum?displayProperty=nameWithType> type as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. Generics using `System.Enum` provide type-safe programming to cache results from using the static methods in `System.Enum`. The following sample finds all the valid values for an enum type, and then builds a dictionary that maps those values to its string representation.
+You can also specify the <xref:System.Enum?displayProperty=nameWithType> type as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. Generics using `System.Enum` provide type-safe programming to cache results from using the static methods in `System.Enum`. The following sample finds all the valid values for an enum type, and then builds a dictionary that maps those values to its string representation.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet18":::
 

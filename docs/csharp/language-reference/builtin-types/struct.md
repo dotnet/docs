@@ -26,7 +26,7 @@ Because structure types have value semantics, we recommend you to define *immuta
 
 ## `readonly` struct
 
-Beginning with C# 7.2, you use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
+You use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
 - Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an [`init` accessor](../keywords/init.md).
@@ -141,7 +141,7 @@ For any structure type (except [`ref struct`](ref-struct.md) types), there exist
 
 For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
+For more information about `struct` features, see the following feature proposal notes:
 
 - [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)

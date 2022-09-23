@@ -23,7 +23,7 @@ For example, you can declare a generic class, `AGenericClass`, such that the typ
 > [!NOTE]
 > For more information on the where clause in a query expression, see [where clause](where-clause.md).
 
-The `where` clause can also include a base class constraint. The base class constraint states that a type to be used as a type argument for that generic type has the specified class as a base class, or is that base class. If the base class constraint is used, it must appear before any other constraints on that type parameter. Some types are disallowed as a base class constraint: <xref:System.Object>, <xref:System.Array>, and <xref:System.ValueType>. Before C# 7.3, <xref:System.Enum>, <xref:System.Delegate>, and <xref:System.MulticastDelegate> were also disallowed as base class constraints. The following example shows the types that can now be specified as a base class:
+The `where` clause can also include a base class constraint. The base class constraint states that a type to be used as a type argument for that generic type has the specified class as a base class, or is that base class. If the base class constraint is used, it must appear before any other constraints on that type parameter. Some types are disallowed as a base class constraint: <xref:System.Object>, <xref:System.Array>, and <xref:System.ValueType>. The following example shows the types that can now be specified as a base class:
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="Snippet2":::
 

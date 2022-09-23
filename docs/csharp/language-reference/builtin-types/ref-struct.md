@@ -5,7 +5,7 @@ ms.date: 09/15/2022
 ---
 # `ref` Structure types (C# reference)
 
-Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a value type. Instances of a `ref struct` type are allocated on the stack and can't escape to the managed heap. To ensure that, the compiler limits the usage of `ref struct` types as follows:
+You can use the `ref` modifier in the declaration of a value type. Instances of a `ref struct` type are allocated on the stack and can't escape to the managed heap. To ensure that, the compiler limits the usage of `ref struct` types as follows:
 
 - A `ref struct` can't be the element type of an array.
 - A `ref struct` can't be a declared type of a field of a class or a non-`ref struct`.

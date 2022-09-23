@@ -22,7 +22,7 @@ Available in C# 8.0 and later, the null-coalescing assignment operator `??=` ass
 
 The left-hand operand of the `??=` operator must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md), or an [indexer](../../programming-guide/indexers/index.md) element.
 
-In C# 7.3 and earlier, the type of the left-hand operand of the `??` operator must be either a [reference type](../keywords/reference-types.md) or a [nullable value type](../builtin-types/nullable-value-types.md). Beginning with C# 8.0, that requirement is replaced with the following: the type of the left-hand operand of the `??` and `??=` operators cannot be a non-nullable value type. In particular, beginning with C# 8.0, you can use the null-coalescing operators with unconstrained type parameters:
+The type of the left-hand operand of the `??` and `??=` operators cannot be a non-nullable value type. In particular, you can use the null-coalescing operators with unconstrained type parameters:
 
 [!code-csharp[unconstrained type parameter](snippets/shared/NullCoalescingOperator.cs#UnconstrainedType)]
 
@@ -54,7 +54,7 @@ The `??` and `??=` operators can be useful in the following scenarios:
 
   Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to be used when a nullable type value is `null` should be the default value of the underlying value type.
 
-- Beginning with C# 7.0, you can use a [`throw` expression](../keywords/throw.md#the-throw-expression) as the right-hand operand of the `??` operator to make the argument-checking code more concise:
+- You can use a [`throw` expression](../keywords/throw.md#the-throw-expression) as the right-hand operand of the `??` operator to make the argument-checking code more concise:
 
   [!code-csharp[with throw expression](snippets/shared/NullCoalescingOperator.cs#WithThrowExpression)]
 

@@ -51,7 +51,7 @@ For more information about properties, see [Properties (C# Programming Guide)](.
 
 ## Properties
 
-Starting with C# 7.0, you can use expression body definitions to implement property `get` and `set` accessors. The following example demonstrates how to do that:
+You can use expression body definitions to implement property `get` and `set` accessors. The following example demonstrates how to do that:
 
 [!code-csharp[expression-bodied-property-get-set](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
 

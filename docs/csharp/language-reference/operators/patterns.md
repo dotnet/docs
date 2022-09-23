@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Patterns (C# reference)
 
-C# introduced pattern matching in C# 7.0. Since then, each major C# version extends pattern matching capabilities. The following C# expressions and statements support pattern matching:
+The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
 - `switch` [statement](../statements/selection-statements.md#the-switch-statement)
@@ -22,14 +22,14 @@ C# introduced pattern matching in C# 7.0. Since then, each major C# version exte
 
 In those constructs, you can match an input expression against any of the following patterns:
 
-- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable. Introduced in C# 7.0.
+- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
 - [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression. Introduced in C# 9.0.
-- [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant. Introduced in C# 7.0.
+- [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant.
 - [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
 - [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
 - [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns. Introduced in C# 8.0.
 - [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns. Introduced in C# 8.0.
-- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable. Introduced in C# 7.0.
+- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
 - [Discard pattern](#discard-pattern): to match any expression. Introduced in C# 8.0.
 
 [Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
@@ -42,7 +42,7 @@ You use declaration and type patterns to check if the run-time type of an expres
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="BasicExample":::
 
-Beginning with C# 7.0, a *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
+A *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
 
 - The run-time type of an expression result is `T`.
 
@@ -78,7 +78,7 @@ For more information, see the [Declaration pattern](~/_csharplang/proposals/csha
 
 ## Constant pattern
 
-Beginning with C# 7.0, you use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
+You use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="BasicExample":::
 
@@ -222,7 +222,7 @@ For more information, see the [Positional pattern](~/_csharplang/proposals/cshar
 
 ## `var` pattern
 
-Beginning with C# 7.0, you use a *`var` pattern* to match any expression, including `null`, and assign its result to a new local variable, as the following example shows:
+You use a *`var` pattern* to match any expression, including `null`, and assign its result to a new local variable, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="KeepInterimResult":::
 

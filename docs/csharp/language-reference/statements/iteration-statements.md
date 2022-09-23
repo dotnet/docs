@@ -95,7 +95,7 @@ The following example uses the `foreach` statement with an instance of the <xref
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithSpan" :::
 
-Beginning with C# 7.3, if the enumerator's `Current` property returns a [reference return value](../keywords/ref.md#reference-return-values) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
+If the enumerator's `Current` property returns a [reference return value](../keywords/ref.md#reference-return-values) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="RefIterationVariable" :::
 

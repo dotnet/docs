@@ -7,7 +7,7 @@ helpviewer_keywords:
 ---
 # Local functions (C# Programming Guide)
 
-Starting with C# 7.0, C# supports *local functions*. Local functions are private methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
+*Local functions* are methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
 
 - Methods, especially iterator methods and async methods
 - Constructors

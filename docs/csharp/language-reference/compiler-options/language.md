@@ -88,15 +88,16 @@ For information about how to set this compiler option programmatically, see <xre
 
 | Version          | Link                       | Description                                                             |
 |------------------|----------------------------|-------------------------------------------------------------------------|
-| C# 7.0 and later |                            | Not currently available                                                 |
-| C# 6.0           | [Link][csharp-6]           | C# Language Specification Version 6 - Unofficial Draft: .NET Foundation |
+| C# 7.0 and later | [link][csharp-7]           | Not currently available                                                 |
+| C# 6.0           | [download PDF][csharp-6]   | C# Language Specification Version 6 - Unofficial Draft: .NET Foundation |
 | C# 5.0           | [Download PDF][csharp-5]   | Standard ECMA-334 5th Edition                                           |
 | C# 3.0           | [Download DOC][csharp-3]   | C# Language Specification Version 3.0: Microsoft Corporation            |
 | C# 2.0           | [Download PDF][csharp-2]   | Standard ECMA-334 4th Edition                                           |
 | C# 1.2           | [Download DOC][csharp-1.2] | C# Language Specification Version 1.2: Microsoft Corporation            |
 | C# 1.0           | [Download DOC][csharp-1]   | C# Language Specification Version 1.0: Microsoft Corporation            |
 
-[csharp-6]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-7]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-6]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_6th_edition_june_2022.pdf
 [csharp-5]: https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf
 [csharp-3]: https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc
 [csharp-2]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%204th%20edition%20June%202006.pdf

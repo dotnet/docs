@@ -79,15 +79,6 @@ A case pattern may be not expressive enough to specify the condition for the exe
 
 The preceding example uses [positional patterns](../operators/patterns.md#positional-pattern) with nested [relational patterns](../operators/patterns.md#relational-patterns).
 
-### Language version support
-
-The `switch` statement supports pattern matching beginning with C# 7.0. Since then, each major C# version adds new kinds of patterns. For more information, see [Patterns](../operators/patterns.md).
-
-In C# 6 and earlier, you use the `switch` statement with the following limitations:
-
-- A match expression must be of one of the following types: [char](../builtin-types/char.md), [string](../builtin-types/reference-types.md), [bool](../builtin-types/bool.md), an [integral numeric](../builtin-types/integral-numeric-types.md) type, or an [enum](../builtin-types/enum.md) type.
-- Only constant expressions are allowed in `case` labels.
-
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):

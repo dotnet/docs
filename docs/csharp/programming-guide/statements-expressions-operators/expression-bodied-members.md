@@ -16,16 +16,14 @@ member => expression;
 
 where *expression* is a valid expression.
 
-Support for expression body definitions was introduced for methods and read-only properties in C# 6 and was expanded in C# 7.0. Expression body definitions can be used with the type members listed in the following table:
+Expression body definitions can be used with the following type members:
 
-|Member  |Supported as of... |
-|---------|---------|
-|[Method](#methods)  |C# 6 |
-|[Read-only property](#read-only-properties)   |C# 6  |
-|[Property](#properties)  |C# 7.0 |
-|[Constructor](#constructors)   |C# 7.0 |
-|[Finalizer](#finalizers)     |C# 7.0 |
-|[Indexer](#indexers)       |C# 7.0 |
+- [Method](#methods)
+- [Read-only property](#read-only-properties)
+- [Property](#properties)
+- [Constructor](#constructors)
+- [Finalizer](#finalizers)
+- [Indexer](#indexers)
 
 ## Methods
 
@@ -39,7 +37,7 @@ For more information, see [Methods (C# Programming Guide)](../classes-and-struct
 
 ## Read-only properties
 
-Starting with C# 6, you can use expression body definition to implement a read-only property. To do that, use the following syntax:
+You can use expression body definition to implement a read-only property. To do that, use the following syntax:
 
 ```csharp
 PropertyType PropertyName => expression;

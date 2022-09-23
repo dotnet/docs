@@ -11,7 +11,7 @@ ms.date: 08/27/2020
 ## Collect dumps on Linux
 
 > [!TIP]
-> For frequently asked questions about dump collection, analysis and other caveats, see [DUMPS: FAQ](faq-dumps.yml).
+> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
 
 The two recommended ways of collecting dumps on Linux are:
 

@@ -77,7 +77,7 @@ public class ProductsController : Controller
 }
 ```
 
-Razor Pages doesn't use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
+Razor Pages don't use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
 
 ```csharp
 @page "{id:int}"
@@ -322,7 +322,7 @@ ASP.NET Core MVC also uses a convention to locate views. You can override it wit
 
 ### APIs and Blazor applications
 
-If your application includes a set of web APIs, which must be secured, these apis should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
+If your application includes a set of web APIs, which must be secured, these APIs should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
 
 Additionally, Blazor applications, whether using Blazor Server or Blazor WebAssembly, should be built as separate projects. The applications have different runtime characteristics as well as security models. They're likely to share common types with the server-side web application (or API project), and these types should be defined in a common shared project.
 

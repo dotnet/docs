@@ -193,6 +193,7 @@
 | Azure.Maps.Common | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.Common/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Azure.ResourceManager.Advisor | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Advisor/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.AgFoodPlatform | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.AgFoodPlatform/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.ApplicationInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ApplicationInsights/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.AppPlatform | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.AppPlatform/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Attestation | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Attestation/1.0.0-beta.1) |  |  |
@@ -208,7 +209,14 @@
 | Azure.ResourceManager.DeploymentManager | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DeploymentManager/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.DevSpaces | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.DevSpaces/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Elastic/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.HybridCompute | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.HybridCompute/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.Kubernetes | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Kubernetes/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.KubernetesConfiguration | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.KubernetesConfiguration/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.MachineLearningCompute | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.MachineLearningCompute/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.Maintenance | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Maintenance/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.ManagedNetwork | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ManagedNetwork/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.ManagementPartner | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ManagementPartner/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.OperationalInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.OperationalInsights/1.0.0-beta.1) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview04](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview04) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |

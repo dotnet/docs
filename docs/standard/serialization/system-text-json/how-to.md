@@ -40,15 +40,6 @@ The code samples in this article:
   :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" id="wf":::
   :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
-## Visual Basic support
-
-Parts of System.Text.Json use [ref structs](../../../csharp/language-reference/builtin-types/ref-struct.md), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
-
-* The <xref:System.Text.Json.Utf8JsonReader> class. Since the <xref:System.Text.Json.Serialization.JsonConverter%601.Read%2A?displayProperty=nameWithType> method takes a `Utf8JsonReader` parameter, this limitation means you can't use Visual Basic to write custom converters. A workaround for this is to implement custom converters in a C# library assembly, and reference that assembly from your VB project. This assumes that all you do in Visual Basic is register the converters into the serializer. You can't call the `Read` methods of the converters from Visual Basic code.
-* Overloads of other APIs that include a <xref:System.ReadOnlySpan%601> type. Most methods include overloads that use `String` instead of `ReadOnlySpan`.
-
-These restrictions are in place because ref structs cannot be used safely without language support, even when just "passing data through." Subverting this error will result in Visual Basic code that can corrupt memory and should not be done.
-
 ## Namespaces
 
 The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. The code examples shown in this article require `using` directives for one or both of these namespaces:
@@ -170,7 +161,9 @@ You can [implement custom converters](converters-how-to.md) to handle additional
 
 ## How to read JSON as .NET objects (deserialize)
 
-A common way to deserialize JSON is to first create a class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, you pass the type of the class you created as the generic type parameter. For the non-generic overloads, you pass the type of the class you created as a method parameter. You can deserialize either synchronously or asynchronously. Any JSON properties that aren't represented in your class are ignored.
+A common way to deserialize JSON is to first create a class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, you pass the type of the class you created as the generic type parameter. For the non-generic overloads, you pass the type of the class you created as a method parameter. You can deserialize either synchronously or asynchronously.
+
+Any JSON properties that aren't represented in your class are ignored. Also, if any properties on the type are [required](required-properties.md) but not present in the JSON payload, deserialization will fail.
 
 The following example shows how to deserialize a JSON string:
 

@@ -75,6 +75,23 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 
+## Preview versioning
+
+Major versions of the .NET SDK are typically released within a few days of a Visual Studio preview version. While there may be other combinations that work, only the latest preview released is tested and officially supported. The following table shows which version of Visual Studio each .NET 7 preview version was tested with prior to release.
+
+| SDK preview version | Visual Studio version |
+|-|-|
+| Preview 1 | 17.2 Preview 1 |
+| Preview 2 | 17.2 Preview 2 |
+| Preview 3 | 17.2 Preview 3 |
+| Preview 4 | 17.3 Preview 1 |
+| Preview 5 | 17.3 Preview 2 |
+| Preview 6 | 17.3 Preview 3 |
+| Preview 7 | 17.4 Preview 1 |
+| RC 1 | 17.4 Preview 2 |
+| RC 2 | 17.4 Preview 3 |
+| 7.0.100 | 17.4.0 |
+
 ## Reference
 
 - [Overview of how .NET is versioned](../versions/index.md)

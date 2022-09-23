@@ -84,7 +84,7 @@ For further implementation information on Helm charts and Kubernetes, see the se
 ## Additional resources
 
 - **Getting started with Azure Kubernetes Service (AKS)** \
-  [https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
+  [https://learn.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
 
 - **Kubernetes.** The official site. \
   <https://kubernetes.io/>

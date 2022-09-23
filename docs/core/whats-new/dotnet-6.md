@@ -94,7 +94,7 @@ Many improvements have been made in <xref:System.Text.Json?displayProperty=fullN
 
 ### Source generator
 
-.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json-source-generation.md).
+.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation.md).
 
 ### Writeable DOM
 
@@ -105,7 +105,7 @@ A new, writeable document object model (DOM) has been added, which supplements t
 - <xref:System.Text.Json.Nodes.JsonObject>
 - <xref:System.Text.Json.Nodes.JsonValue>
 
-For more information, see [JSON DOM choices](../../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#json-dom-choices).
+For more information, see [JSON DOM choices](../../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#json-dom-choices).
 
 ### IAsyncEnumerable serialization
 
@@ -120,19 +120,19 @@ New serialization interfaces for validation and defaulting values:
 - <xref:System.Text.Json.Serialization.IJsonOnSerialized>
 - <xref:System.Text.Json.Serialization.IJsonOnSerializing>
 
-For more information, see [Callbacks](../../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
+For more information, see [Callbacks](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md?pivots=dotnet-6-0#callbacks).
 
 New property ordering attribute:
 
 - <xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute>
 
-  For more information, see [Configure the order of serialized properties](../../standard/serialization/system-text-json-customize-properties.md?pivots=dotnet-6-0#configure-the-order-of-serialized-properties).
+  For more information, see [Configure the order of serialized properties](../../standard/serialization/system-text-json/customize-properties.md?pivots=dotnet-6-0#configure-the-order-of-serialized-properties).
 
 New method to write "raw" JSON:
 
 - <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>
 
-  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
+  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
 
 Synchronous serialization and deserialization to a stream:
 
@@ -149,9 +149,9 @@ New option to ignore an object when a reference cycle is detected during seriali
 
 - <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>
 
-  For more information, see [Ignore circular references](../../standard/serialization/system-text-json-preserve-references.md#ignore-circular-references).
+  For more information, see [Ignore circular references](../../standard/serialization/system-text-json/preserve-references.md#ignore-circular-references).
 
-For more information about serializing and deserializing with `System.Text.Json`, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json-overview.md).
+For more information about serializing and deserializing with `System.Text.Json`, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
 ## HTTP/3
 

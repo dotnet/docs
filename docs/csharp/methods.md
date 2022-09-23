@@ -195,7 +195,7 @@ public (string, string, string, int) GetPersonalInfo(string id)
 The caller can then consume the returned tuple with code like the following:
 
 ```csharp
-var person = GetPersonalInfo("111111111")
+var person = GetPersonalInfo("111111111");
 Console.WriteLine($"{person.Item1} {person.Item3}: age = {person.Item4}");
 ```
 
@@ -291,4 +291,4 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 - [out](language-reference/keywords/out-parameter-modifier.md)
 - [ref](language-reference/keywords/ref.md)
 - [in](language-reference/keywords/in-parameter-modifier.md)
-- [Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)
+- [Passing Parameters](language-reference/keywords/method-parameters.md)

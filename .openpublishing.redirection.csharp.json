@@ -115,7 +115,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/getting-started/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-10"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-11"
         },
         {
             "source_path_from_root": "/docs/csharp/getting-started/with-visual-studio-2017.md",
@@ -736,6 +736,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/var.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/declarations#implicitly-typed-local-variables"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/void.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/void"
         },
@@ -1057,6 +1061,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/index.md",
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented"
         },
@@ -1069,12 +1077,28 @@
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/objects"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/passing-parameters.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/polymorphism.md",
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/polymorphism"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/records.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types/records"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/ref-returns.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/structs.md",

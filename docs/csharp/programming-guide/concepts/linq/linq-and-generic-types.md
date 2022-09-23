@@ -28,7 +28,7 @@ LINQ queries are based on generic types, which were introduced in version 2.0 of
   
 ## Letting the Compiler Handle Generic Type Declarations  
 
- If you prefer, you can avoid generic syntax by using the [var](../../../language-reference/keywords/var.md) keyword. The `var` keyword instructs the compiler to infer the type of a query variable by looking at the data source specified in the `from` clause. The following example produces the same compiled code as the previous example:  
+ If you prefer, you can avoid generic syntax by using the [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword. The `var` keyword instructs the compiler to infer the type of a query variable by looking at the data source specified in the `from` clause. The following example produces the same compiled code as the previous example:  
   
  [!code-csharp[csLINQGettingStarted#35](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#35)]  
   

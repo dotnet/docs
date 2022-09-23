@@ -1,7 +1,7 @@
 ---
 title: Explore ranges of data using indices and ranges
 description: This advanced tutorial teaches you to explore data using indices and ranges to examine a continuous range of a sequential data set.
-ms.date: 09/11/2020
+ms.date: 09/16/2022
 ms.technology: csharp-fundamentals
 ms.custom: mvc
 ---
@@ -14,6 +14,7 @@ In this tutorial, you'll learn how to:
 > [!div class="checklist"]
 >
 > - Use the syntax for ranges in a sequence.
+> - Implicitly define a <xref:System.Range>.
 > - Understand the design decisions for the start and end of each sequence.
 > - Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.
 
@@ -69,6 +70,15 @@ You can also declare ranges or indices as variables. The variable can then be us
 The following sample shows many of the reasons for those choices. Modify `x`, `y`, and `z` to try different combinations. When you experiment, use values where `x` is less than `y`, and `y` is less than `z` for valid combinations. Add the following code in a new method. Try different combinations:
 
 [!code-csharp[SemanticsExamples](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
+
+### Implicit range operator expression conversions
+
+When using the range operator expression syntax, the compiler implicitly converts the start and end values to an <xref:System.Index> and from them, creates a new <xref:System.Range> instance. The following code shows an example implicit conversion from the range operator expression syntax, and its corresponding explicit alternative:
+
+:::code language="csharp" source="../../../../samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs" id="ImplicitRangeOperatorConversion":::
+
+> [!IMPORTANT]
+> Implicit conversions from <xref:System.Int32> to <xref:System.Index> throw an <xref:System.ArgumentOutOfRangeException> when the value is negative. Likewise, the `Index` constructor throws an `ArgumentOutOfRangeException` when the `value` parameter is negative.
 
 ## Type support for indices and ranges
 

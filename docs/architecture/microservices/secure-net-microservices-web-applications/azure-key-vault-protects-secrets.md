@@ -33,16 +33,16 @@ Note that calling `AddAzureKeyVault` requires the application ID that was regist
 ## Additional resources
 
 - **Using Azure Key Vault to protect application secrets** \
-  [https://docs.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity)
+  [https://learn.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity)
 
 - **Safe storage of app secrets during development** \
-  [https://docs.microsoft.com/aspnet/core/security/app-secrets](/aspnet/core/security/app-secrets)
+  [https://learn.microsoft.com/aspnet/core/security/app-secrets](/aspnet/core/security/app-secrets)
 
 - **Configuring data protection** \
-  [https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview](/aspnet/core/security/data-protection/configuration/overview)
+  [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/overview](/aspnet/core/security/data-protection/configuration/overview)
 
 - **Data Protection key management and lifetime in ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings](/aspnet/core/security/data-protection/configuration/default-settings)
+  [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings](/aspnet/core/security/data-protection/configuration/default-settings)
 
 >[!div class="step-by-step"]
 >[Previous](developer-app-secrets-storage.md)

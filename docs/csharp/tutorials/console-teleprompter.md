@@ -72,7 +72,7 @@ more [`yield return`](../language-reference/keywords/yield.md) statements. The o
 
 There are two C# syntax elements that may be new to you. The [`using`](../language-reference/keywords/using-statement.md) statement in this method manages resource cleanup. The variable that is initialized in the `using` statement (`reader`, in this example) must implement the <xref:System.IDisposable> interface. That interface defines a single method, `Dispose`, that should be called when the resource should be released. The compiler generates that call when execution reaches the closing brace of the `using` statement. The compiler-generated code ensures that the resource is released even if an exception is thrown from the code in the block defined by the using statement.
 
-The `reader` variable is defined using the `var` keyword. [`var`](../language-reference/keywords/var.md) defines an *implicitly typed local variable*. That means the type of the variable is determined by the compile-time type of the object assigned to the variable. Here, that is the return value from the <xref:System.IO.File.OpenText(System.String)> method, which is a <xref:System.IO.StreamReader> object.
+The `reader` variable is defined using the `var` keyword. [`var`](../language-reference/statements/declarations.md#implicitly-typed-local-variables) defines an *implicitly typed local variable*. That means the type of the variable is determined by the compile-time type of the object assigned to the variable. Here, that is the return value from the <xref:System.IO.File.OpenText(System.String)> method, which is a <xref:System.IO.StreamReader> object.
 
 Now, let's fill in the code to read the file in the `Main` method:
 

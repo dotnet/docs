@@ -12,7 +12,7 @@ ms.topic: reference
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
 > [!TIP]
-> Frequently asked questions regarding dump collection, analysis and other caveats can be found [here](faq-dumps.yml).
+> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
 
 ## Install
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "value tuples [C#]"
 ---
 # Tuple types (C# reference)
+
 The *tuples* feature provides concise syntax to group multiple data elements in a lightweight data structure. The following example shows how you can declare a tuple variable, initialize it, and access its data members:
 
 [!code-csharp-interactive[tuple intro](snippets/shared/ValueTuples.cs#Introduction)]

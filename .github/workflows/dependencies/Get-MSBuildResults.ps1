@@ -31,11 +31,11 @@
     None
 
 .NOTES
-    Version:        1.5
+    Version:        1.6
     Author:         adegeo@microsoft.com
     Creation Date:  12/11/2020
-    Update Date:    02/17/2022
-    Purpose/Change: Move to VS 2022.
+    Update Date:    03/10/2022
+    Purpose/Change: Export proj/sln settings config to output.json file.
 #>
 
 [CmdletBinding()]
@@ -61,7 +61,7 @@ Param(
 
 $Global:statusOutput = @()
 
-Write-Host "Gathering solutions and projects..."
+Write-Host "Gathering solutions and projects... (v1.6)"
 
 if ($PullRequest -ne 0) {
     Write-Host "Running `"LocateProjects `"$RepoRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName`""
@@ -78,7 +78,7 @@ if ($LASTEXITCODE -ne 0)
     throw "Error on running LocateProjects"
 }
 
-function New-Result($inputFile, $projectFile, $exitcode, $outputText)
+function New-Result($inputFile, $projectFile, $exitcode, $outputText, $settingsJson)
 {
     $info = @{}
     
@@ -86,6 +86,7 @@ function New-Result($inputFile, $projectFile, $exitcode, $outputText)
     $info.ProjectFile = $projectFile
     $info.ExitCode = $exitcode
     $info.Output = $outputText
+    $info.Settings = $settingsJson
 
     $object = New-Object -TypeName PSObject -Prop $info
     $Global:statusOutput += $object
@@ -130,10 +131,21 @@ foreach ($item in $workingSet) {
                 
         $data = $item.Split('|')
 
+        # this was added to avoid compile errors in the dotnet/samples repo mono-samples folder.
+        # I don't think this is needed now that we have ways to avoid errors
+        # leaving this here for reference
+        #
+        #if ($data[1].Contains("mono-samples")){
+        #    Write-Host "Found mono-sample project, Skipping."
+        #    $counter++
+        #    Continue
+        #}
+
         # Project found, build it
         if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
             $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
+            $settings = $null
 
             # Create the default build command
             "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
@@ -149,6 +161,7 @@ foreach ($item in $workingSet) {
 
                     # Create the visual studio build command
                     "CALL `"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
+                    "nuget.exe restore `"$projectFile`"`n" +
                     "msbuild.exe `"$projectFile`" -restore:True" `
                     | Out-File ".\run.bat"
                 }
@@ -171,38 +184,39 @@ foreach ($item in $workingSet) {
             Get-Content .\run.bat | Write-Host
             Write-Host
 
-            Invoke-Expression ".\run.bat" | Tee-Object -Variable "result"
             $thisExitCode = 0
+
+            Invoke-Expression ".\run.bat" | Out-String | Tee-Object -Variable "result"
 
             if ($LASTEXITCODE -ne 0) {
                 $thisExitCode = 4
             }
             
-            New-Result $data[1] $projectFile $thisExitCode $result
+            New-Result $data[1] $projectFile $thisExitCode $result $settings
         }
 
         # No project found
         elseif ([int]$data[0] -eq 1) {
-            New-Result $data[1] "" 1 "😵 Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
+            New-Result $data[1] "" 1 "😵 Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code." $null
 
             $thisExitCode = 1
         }
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must exist in this directory or one of the parent directories."
+            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must exist in this directory or one of the parent directories." $null
 
             $thisExitCode = 2
         }
 
         # Solution found, but no project
         elseif ([int]$data[0] -eq 3) {
-            New-Result $data[1] $data[2] 2 "😲 Solution found, but missing project. A project is required to compile this code."
+            New-Result $data[1] $data[2] 2 "😲 Solution found, but missing project. A project is required to compile this code." $null
             $thisExitCode = 3
         }
     }
     catch {
-        New-Result $data[1] $projectFile 1000 "ERROR: $($_.Exception)"
+        New-Result $data[1] $projectFile 1000 "ERROR: $($_.Exception)" $null
         $thisExitCode = 4
         Write-Host $_.Exception.Message -Foreground "Red"
         Write-Host $_.ScriptStackTrace -Foreground "DarkGray"
@@ -211,7 +225,7 @@ foreach ($item in $workingSet) {
     $counter++
 }
 
-$resultItems = $Global:statusOutput | Select-Object InputFile, ProjectFile, ExitCode, Output
+$resultItems = $Global:statusOutput | Select-Object InputFile, ProjectFile, ExitCode, Output, Settings
 
 # Add our output type
 $typeResult = @"
@@ -221,6 +235,7 @@ public class ResultItem
     public string InputFile;
     public int ExitCode;
     public string BuildOutput;
+    public object Settings;
     public MSBuildError[] Errors;
     public int ErrorCount;
 
@@ -238,10 +253,11 @@ $transformedItems = $resultItems | ForEach-Object { New-Object ResultItem -Prope
                                                     InputFile = $_.InputFile;
                                                     ExitCode = $_.ExitCode;
                                                     BuildOutput = $_.Output;
+                                                    Settings = $_.Settings;
                                                     Errors = @();
-                                                    ErrorCount = 0}
-                                                  }
-         
+                                                    ErrorCount = 0;
+                                                  } }
+
 # Transform the build output to break it down into MSBuild result entries
 foreach ($item in $transformedItems) {
     $list = @()
@@ -257,6 +273,8 @@ foreach ($item in $transformedItems) {
         $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
         $item.ErrorCount = 1
     }
+
+    # Actual build error found
     else {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
                                          Select-String ": (?:Solution file error|error) ([^:]*)" | `
@@ -275,11 +293,12 @@ foreach ($item in $transformedItems) {
         }
     }
 
+    # Set build errors
     $item.Errors = $list
     
 }
 
-$transformedItems | ConvertTo-Json -Depth 3 | Out-File 'output.json'
+$transformedItems | ConvertTo-Json -Depth 4 | Out-File 'output.json'
 
 exit 0
 

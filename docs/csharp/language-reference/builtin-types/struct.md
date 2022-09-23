@@ -31,7 +31,7 @@ You use the `readonly` modifier to declare that a structure type is immutable. A
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
 - Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an [`init` accessor](../keywords/init.md).
 
-That guarantees that no member of a `readonly` struct modifies the state of the struct. In C# 8.0 and later, that means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
+That guarantees that no member of a `readonly` struct modifies the state of the struct. That means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
 > [!NOTE]
 > In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
@@ -42,7 +42,7 @@ The following code defines a `readonly` struct with init-only property setters, 
 
 ## `readonly` instance members
 
-Beginning with C# 8.0, you can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
+You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
 
 Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
 

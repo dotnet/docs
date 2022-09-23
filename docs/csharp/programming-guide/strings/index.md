@@ -121,7 +121,7 @@ Beginning with C# 11, you can combine *raw string literals* with string interpol
 
 C# also allows verbatim string interpolation, for example across multiple lines, using the `$@` or `@$` syntax.
 
-To interpret escape sequences literally, use a [verbatim](../../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+To interpret escape sequences literally, use a [verbatim](../../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. You can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
 
 :::code language="csharp" source="./snippets/VerbatimStringInterpolation.cs" id="VerbatimStringInterpolation":::
 

@@ -103,7 +103,7 @@ If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceExc
 
 ### await foreach
 
-Beginning with C# 8.0, you can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop may be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
+You can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop may be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="AwaitForeach" :::
 

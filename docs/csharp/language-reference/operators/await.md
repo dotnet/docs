@@ -30,9 +30,7 @@ The type of expression `await t` is `TResult` if the type of expression `t` is <
 
 ## Asynchronous streams and disposables
 
-Beginning with C# 8.0, you can work with asynchronous streams and disposables.
-
-You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../statements/iteration-statements.md#the-foreach-statement) section of the [Iteration statements](../statements/iteration-statements.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
+You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../statements/iteration-statements.md#the-foreach-statement) section of the [Iteration statements](../statements/iteration-statements.md) article.
 
 You use the `await using` statement to work with an asynchronously disposable object, that is, an object of a type that implements an <xref:System.IAsyncDisposable> interface. For more information, see the [Using async disposable](../../../standard/garbage-collection/implementing-disposeasync.md#using-async-disposable) section of the [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md) article.
 
@@ -52,4 +50,4 @@ For more information, see the [Await expressions](~/_csharpstandard/standard/exp
 - [Task asynchronous programming model](../../programming-guide/concepts/async/task-asynchronous-programming-model.md)
 - [Asynchronous programming](../../async.md)
 - [Walkthrough: accessing the Web by using async and await](../../programming-guide/concepts/async/index.md)
-- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../whats-new/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Generate and consume async streams](../../whats-new/tutorials/generate-consume-asynchronous-stream.md)

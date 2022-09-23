@@ -75,7 +75,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 
 ## Declare `readonly` members for mutable structs
 
-In C# 8.0 and later, when a struct type is mutable, declare members that don't modify state as [`readonly` members](language-reference/builtin-types/struct.md#readonly-instance-members).
+When a struct type is mutable, declare members that don't modify state as [`readonly` members](language-reference/builtin-types/struct.md#readonly-instance-members).
 
 Consider a different application that needs a 3D point structure, but must support mutability. The following version of the 3D point structure adds the `readonly` modifier only to those members that don't modify the structure. Follow this example when your design must support modifications to the struct by some members, but you still want the benefits of enforcing `readonly` on some members:
 

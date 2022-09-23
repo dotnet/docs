@@ -13,7 +13,7 @@ Async methods can have the following return types:
 - <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value.
 - `void`, for an event handler.
 - Any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
-- Starting with C# 8.0, <xref:System.Collections.Generic.IAsyncEnumerable%601>, for an async method that returns an *async stream*.
+- <xref:System.Collections.Generic.IAsyncEnumerable%601>, for an async method that returns an *async stream*.
 
 For more information about async methods, see [Asynchronous programming with async and await (C#)](./index.md).
 
@@ -88,7 +88,7 @@ In C# 10 and later, you can apply the `AsyncMethodBuilder` attribute to an async
 
 ## Async streams with IAsyncEnumerable\<T\>
 
-Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
+An async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
 
 :::code language="csharp" source="snippets/async-return-types/AsyncStreams.cs" ID="GenerateAsyncStream":::
 

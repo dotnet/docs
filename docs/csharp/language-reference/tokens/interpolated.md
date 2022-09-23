@@ -70,10 +70,7 @@ The following example shows how to include a brace in a result string. It also s
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet3":::
 
-An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
-
-> [!NOTE]
-> Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.
+An interpolated verbatim string starts with the `$` character followed by the `@` character. You can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
 
 ## Implicit conversions and how to specify `IFormatProvider` implementation
 

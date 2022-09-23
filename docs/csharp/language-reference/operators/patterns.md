@@ -18,7 +18,7 @@ The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
 - `switch` [statement](../statements/selection-statements.md#the-switch-statement)
-- `switch` [expression](switch-expression.md) (introduced in C# 8.0)
+- `switch` [expression](switch-expression.md)
 
 In those constructs, you can match an input expression against any of the following patterns:
 
@@ -27,10 +27,10 @@ In those constructs, you can match an input expression against any of the follow
 - [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant.
 - [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
 - [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
-- [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns. Introduced in C# 8.0.
-- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns. Introduced in C# 8.0.
+- [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns.
+- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
 - [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
-- [Discard pattern](#discard-pattern): to match any expression. Introduced in C# 8.0.
+- [Discard pattern](#discard-pattern): to match any expression.
 
 [Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
@@ -159,7 +159,7 @@ For more information, see the [Pattern combinators](~/_csharplang/proposals/csha
 
 ## Property pattern
 
-Beginning with C# 8.0, you use a *property pattern* to match an expression's properties or fields against nested patterns, as the following example shows:
+You use a *property pattern* to match an expression's properties or fields against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="BasicExample":::
 
@@ -186,7 +186,7 @@ For more information, see the [Property pattern](~/_csharplang/proposals/csharp-
 
 ## Positional pattern
 
-Beginning with C# 8.0, you use a *positional pattern* to deconstruct an expression result and match the resulting values against the corresponding nested patterns, as the following example shows:
+You use a *positional pattern* to deconstruct an expression result and match the resulting values against the corresponding nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="BasicExample":::
 
@@ -238,7 +238,7 @@ For more information, see the [Var pattern](~/_csharplang/proposals/csharp-8.0/p
 
 ## Discard pattern
 
-Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, including `null`, as the following example shows:
+You use a *discard pattern* `_` to match any expression, including `null`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DiscardPattern.cs" id="BasicExample":::
 
@@ -310,8 +310,8 @@ The preceding example takes a string array, where each element is one field in t
 
 For more information, see the following feature proposal notes:
 
-- [Pattern matching for C# 7.0](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
-- [Recursive pattern matching (introduced in C# 8.0)](~/_csharplang/proposals/csharp-8.0/patterns.md)
+- [Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
+- [Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching changes for C# 9.0](~/_csharplang/proposals/csharp-9.0/patterns3.md)
 - [Extended property patterns (C# 10)](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 

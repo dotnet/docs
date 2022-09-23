@@ -16,7 +16,7 @@ A type is an **unmanaged type** if it's any of the following types:
 
 You can use the [`unmanaged` constraint](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to specify that a type parameter is a non-pointer, non-nullable unmanaged type.
 
-Beginning with C# 8.0, a *constructed* struct type that contains fields of unmanaged types only is also unmanaged, as the following example shows:
+A *constructed* struct type that contains fields of unmanaged types only is also unmanaged, as the following example shows:
 
 [!code-csharp[unmanaged constructed types](snippets/shared/UnmanagedTypes.cs#ProgramExample)]
 

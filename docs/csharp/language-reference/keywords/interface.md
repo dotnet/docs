@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # :::no-loc text="interface"::: (C# Reference)
 
-An interface defines a contract. Any [`class`](class.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. Beginning with C# 8.0, an interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality. Beginning with C# 11, an interface may define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
+An interface defines a contract. Any [`class`](class.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. An interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality. Beginning with C# 11, an interface may define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
 
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
@@ -28,7 +28,7 @@ An interface can be a member of a namespace or a class. An interface declaration
 
 ## Default interface members
 
-These preceding member declarations typically don't contain a body. Beginning with C# 8.0, an interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation. In addition, beginning with C# 8.0, an interface may include:
+These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation. An interface may include:
 
 - [Constants](const.md)
 - [Operators](../operators/operator-overloading.md)

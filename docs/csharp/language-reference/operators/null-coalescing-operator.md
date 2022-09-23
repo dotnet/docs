@@ -16,7 +16,7 @@ ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 
 The null-coalescing operator `??` returns the value of its left-hand operand if it isn't `null`; otherwise, it evaluates the right-hand operand and returns its result. The `??` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 
-Available in C# 8.0 and later, the null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
+The null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 
 [!code-csharp[null-coalescing assignment](snippets/shared/NullCoalescingOperator.cs#Assignment)]
 
@@ -60,7 +60,7 @@ The `??` and `??=` operators can be useful in the following scenarios:
 
   The preceding example also demonstrates how to use [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to define a property.
 
-- Beginning with C# 8.0, you can use the `??=` operator to replace the code of the form
+- You can use the `??=` operator to replace the code of the form
 
   ```csharp
   if (variable is null)

@@ -182,7 +182,7 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 ## Index from end operator ^
 
-Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
+The `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="IndexFromEnd":::
 
@@ -192,7 +192,7 @@ You can also use the `^` operator with the [range operator](#range-operator-) to
 
 ## Range operator ..
 
-Available in C# 8.0 and later, the `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
+The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Ranges":::
 

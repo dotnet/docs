@@ -23,7 +23,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   [!code-csharp[stackalloc expression](snippets/shared/StackallocOperator.cs#AsExpression)]
 
-  Beginning with C# 8.0, you can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
+  You can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
 
   [!code-csharp[stackalloc in nested expressions](snippets/shared/StackallocOperator.cs#Nested)]
 

@@ -1,8 +1,9 @@
 ### YamlMime:FAQ
 metadata:
-  title: Dumps FAQ - .NET
+  title: .NET dumps FAQ
   description: Get answers to frequently asked questions about dumps in .NET.
-  ms.topic: faq 
+  ms.topic: faq
+  ms.date: 09/23/2022
 title: FAQ for dumps
 summary: This article answers commonly asked questions about collecting dumps in .NET.
  
@@ -29,5 +30,5 @@ sections:
         answer: | 
           Here are some additional resources:
 
-          - [Debug Linux dumps](debug-linux-dumps.md) 
-          - [Debug a deadlock in a .NET app](debug-deadlock.md) 
+          * [Debug Linux dumps](debug-linux-dumps.md) 
+          * [Debug a deadlock in a .NET app](debug-deadlock.md) 

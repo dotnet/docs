@@ -50,7 +50,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`--non-interactive`**
 
-  Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being requested. When hot reload is enabled and a [rude edit](#rude-edits) is detected, dotnet watch restarts the app.
+  Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being requested. When hot reload is enabled and a [rude edit](#rude-edits) is detected, dotnet watch restarts the app. Available since .NET 7 Preview SDK.
 
 - **`--project <PATH>`**
 

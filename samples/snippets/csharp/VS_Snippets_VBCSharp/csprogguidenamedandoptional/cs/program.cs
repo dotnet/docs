@@ -1,4 +1,12 @@
-﻿using System;
+﻿// Snippets 5000 Note:  
+// The container used for building our samples doesn't include the Office assemblies.
+// This sample will generate a few errors in the CI build. Those are expected,
+// so the build passes.
+//
+// If you update this sample, make sure to build it locally.
+// Then, make sure no new errors are added.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

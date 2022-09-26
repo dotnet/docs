@@ -1,8 +1,9 @@
 ---
 title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
-ms.date: 11/30/2020
+ms.date: 09/26/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -19,6 +20,8 @@ ms.topic: how-to
 In this article, you will learn how to serialize properties of derived classes with the `System.Text.Json` namespace.
 
 ## Serialize properties of derived classes
+
+:::zone pivot="dotnet-core-3-1,dotnet-5-0,dotnet-6-0"
 
 Serialization of a polymorphic type hierarchy is _not_ supported. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
 
@@ -137,6 +140,13 @@ The following example shows the JSON that results from the preceding code:
 
 > [!NOTE]
 > This article is about serialization, not deserialization. Polymorphic deserialization is not supported, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](converters-how-to.md#support-polymorphic-deserialization).
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+
+
+:::zone-end
 
 ## See also
 

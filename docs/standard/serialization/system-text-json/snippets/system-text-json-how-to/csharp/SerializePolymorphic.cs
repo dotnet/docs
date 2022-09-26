@@ -88,6 +88,20 @@ namespace SystemTextJsonSamples
                 weatherForecastWithPrevious,
                 options);
             Console.WriteLine($"JSON output without WindSpeed:\n{jsonString}\n");
+
+            var weatherForecastWithCity = WeatherForecastFactories.CreateWeatherForecastWithCity();
+            WeatherForecastBase weatherForecastBase = weatherForecastWithCity;
+            weatherForecastBase.DisplayPropertyValues();
+
+            Console.WriteLine("Polymorphic serialization of derived class properties");
+            // <SerializeWithAttributeAnnotations>
+            options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            jsonString = JsonSerializer.Serialize<WeatherForecastBase>(weatherForecastBase, options);
+            // </SerializeWithAttributeAnnotations>
+            Console.WriteLine($"JSON output:\n{jsonString}\n");
         }
     }
 }

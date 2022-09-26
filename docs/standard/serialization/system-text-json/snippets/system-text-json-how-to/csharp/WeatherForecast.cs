@@ -12,6 +12,23 @@ namespace SystemTextJsonSamples
     }
     // </WF>
 
+    // <WFB>
+    [JsonDerivedType(typeof(WeatherForecastWithCity))]
+    public class WeatherForecastBase
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public string? Summary { get; set; }
+    }
+    // </WFB>
+
+    // <WFWC>
+    public class WeatherForecastWithCity : WeatherForecastBase
+    {
+        public string? City { get; set; }
+    }
+    // </WFWC>
+
     // <WFWithReqPptyConverterAttr>
     [JsonConverter(typeof(WeatherForecastRequiredPropertyConverterForAttributeRegistration))]
     public class WeatherForecastWithRequiredPropertyConverterAttribute
@@ -208,130 +225,15 @@ namespace SystemTextJsonSamples
 
     public static class WeatherForecastExtensions
     {
-        public static void DisplayPropertyValues(this WeatherForecast wf)
+        public static void DisplayPropertyValues(this object obj)
         {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithRequiredPropertyConverterAttribute wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithLong wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithDefault wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithROProperty wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithPropertyNameAttribute wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithIgnoreAttribute wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithEnum wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithExtensionData wf)
-        {
-            Console.WriteLine($"Date: {wf.Date}");
-            Console.WriteLine($"TemperatureCelsius: {wf.TemperatureCelsius}");
-            Console.WriteLine($"Summary: {wf.Summary}");
-            Console.WriteLine($"ExtensionData:");
-            if (wf.ExtensionData != null)
-            {
-                foreach (KeyValuePair<string, JsonElement> kvp in wf.ExtensionData)
-                {
-                    Console.WriteLine($"  {kvp.Key} {kvp.Value}");
-                }
-            }
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastDerived wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithConverterAttribute wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithObjectProperties wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
+            Utilities.DisplayPropertyValues(obj);
             Console.WriteLine();
         }
 
         public static void DisplayPropertyValues(this WeatherForecastWithTemperatureStruct wf)
         {
             Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithEnumDictionary wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.Write($"TemperatureRanges:\n");
-            foreach (KeyValuePair<SummaryWordsEnum, int> kvp in wf.TemperatureRanges!)
-            {
-                Console.Write($"  {kvp.Key}, {kvp.Value}\n");
-            }
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithDictionary wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.Write($"TemperatureRanges:\n");
-            foreach (KeyValuePair<string, int> kvp in wf.TemperatureRanges!)
-            {
-                Console.Write($"  {kvp.Key}, {kvp.Value}\n");
-            }
-            Console.WriteLine();
-        }
-
-        public static void DisplayPropertyValues(this WeatherForecastWithPOCOs wf)
-        {
-            Utilities.DisplayPropertyValues(wf);
-            Console.WriteLine($"SummaryField: {wf.SummaryField}");
-            Console.WriteLine($"TemperatureRanges:");
-            foreach (KeyValuePair<string, HighLowTemps> kvp in wf.TemperatureRanges!)
-            {
-                Console.WriteLine($"  {kvp.Key} {kvp.Value.Low} {kvp.Value.High}");
-            }
-            Console.WriteLine($"SummaryWords:");
-            foreach (string word in wf.SummaryWords!)
-            {
-                Console.WriteLine($"  {word}");
-            }
             Console.WriteLine();
         }
     }
@@ -473,6 +375,15 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
+
+        public static WeatherForecastWithCity CreateWeatherForecastWithCity() =>
+            new()
+            {
+                Date = DateTime.Parse("2022-09-26"),
+                TemperatureCelsius = 15,
+                Summary = "Cool",
+                City = "Milwaukee"
+            };
 
         public static WeatherForecastWithConverterAttribute CreateWeatherForecastWithConverterAttribute()
         {

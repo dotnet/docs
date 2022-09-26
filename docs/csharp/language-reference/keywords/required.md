@@ -24,6 +24,9 @@ Some types, such as [positional records](../builtin-types/record.md#positional-s
 - A constructor that chains to another constructor annotated with the `SetsRequiredMembers` attribute, either `this()`, or `base()`, must also include the `SetsRequiredMembers` attribute. That ensures that callers can correctly use all appropriate constructors.
 - Copy constructors generated for `record` types have the `SetsRequiredMembers` attribute applied if any of the members are `required`.
 
+> [!WARNING]
+> The `SetsRequiredMembers` disables the compiler's checks that all `required` members are initialized when an object is created. Use it with caution.
+
 The following code shows a class hierarchy that uses the `required` modifier for the `FirstName` and `LastName` properties:
 
 :::code language="csharp" source="./snippets/RequiredExample.cs" id="SnippetRequired":::

@@ -217,6 +217,12 @@
 | Azure.ResourceManager.ManagedNetwork | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ManagedNetwork/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.ManagementPartner | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ManagementPartner/1.0.0-beta.1) |  |  |
 | Azure.ResourceManager.OperationalInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.OperationalInsights/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.PowerBIDedicated | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.PowerBIDedicated/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.ProviderHub | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.ProviderHub/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.Quantum | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Quantum/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.RecoveryServices | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServices/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.RecoveryServicesBackup | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServicesBackup/1.0.0-beta.1) |  |  |
+| Azure.ResourceManager.RecoveryServicesSiteRecovery | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServicesSiteRecovery/1.0.0-beta.1) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Cosmos.Encryption.Custom | NuGet [1.0.0-preview04](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview04) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |

@@ -58,8 +58,9 @@ You cannot declare a field, a property, an event, or the return type of a method
 Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.
 
 Anonymous types do override the <xref:System.Object.ToString%2A> method, concating the name and `ToString` output of every property surrounded by curly braces.
+
 ```
 var v = new { Title = "Hello", Age = 24 };
 
-Console.WriteLine(v.ToString()); // { Title = Hello, Age = 24 }
+Console.WriteLine(v.ToString()); // "{ Title = Hello, Age = 24 }"
 ```

@@ -5,7 +5,7 @@ author: sylvanc
 ms.date: 08/26/2021
 ms.custom: "devx-track-fsharp"
 ---
-# Get started with Azure Files Storage using F\#
+# Get started with Azure Files using F\#
 
 Azure Files is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure Files, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the file storage share simultaneously.
 

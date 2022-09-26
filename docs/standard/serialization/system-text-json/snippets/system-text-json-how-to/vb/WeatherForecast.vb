@@ -9,8 +9,24 @@ Namespace SystemTextJsonSamples
         Public Property TemperatureCelsius As Integer
         Public Property Summary As String
     End Class
-
     ' </WF>
+
+    ' <WFB>
+    <JsonDerivedType(GetType(WeatherForecastWithCity))>
+    Public Class WeatherForecastBase
+        Public Property [Date] As DateTimeOffset
+        Public Property TemperatureCelsius As Integer
+        Public Property Summary As String
+    End Class
+    ' </WFB>
+
+    ' <WFWC>
+    Public Class WeatherForecastWithCity
+        Inherits WeatherForecastBase
+        Public Property City As String
+    End Class
+    ' </WFWC>
+
     ' <WFWithReqPptyConverterAttr>
     ' This code example doesn't apply to Visual Basic. For more information, go to the following URL:
     ' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
@@ -264,6 +280,12 @@ Namespace SystemTextJsonSamples
         End Sub
 
         <Extension()>
+        Public Sub DisplayPropertyValues(wf As WeatherForecastBase)
+            Utilities.DisplayPropertyValues(wf)
+            Console.WriteLine()
+        End Sub
+
+        <Extension()>
         Public Sub DisplayPropertyValues(wf As WeatherForecastWithExtensionData)
             Console.WriteLine($"Date: {wf.[Date]}")
             Console.WriteLine($"TemperatureCelsius: {wf.TemperatureCelsius}")
@@ -335,6 +357,15 @@ Namespace SystemTextJsonSamples
                 .Summary = "Hot"
             }
             Return weatherForecast1
+        End Function
+
+        Public Function CreateWeatherForecastWithCity() As WeatherForecastWithCity
+            Return New WeatherForecastWithCity With {
+                .[Date] = Date.Parse("2022-09-26"),
+                .TemperatureCelsius = 15,
+                .Summary = "Cool",
+                .City = "Milwaukee"
+            }
         End Function
 
         Public Function CreateWeatherForecastWithPrevious() As WeatherForecastWithPrevious

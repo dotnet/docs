@@ -144,7 +144,7 @@ The following example shows the JSON that results from the preceding code:
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-Starting with .NET 7, `System.Text.Json` supports serializing and deserializing polymorphic type hierarchies using attribute annotations. For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
+Starting with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations. For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFB":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFB":::
@@ -154,86 +154,101 @@ Starting with .NET 7, `System.Text.Json` supports serializing and deserializing 
 
 And suppose the type argument of the `Serialize` method at compile time is `WeatherForecastBase`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeDefault":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeDefault":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeWithAttributeAnnotations":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeWithAttributeAnnotations":::
 
-In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastDerived` object. Only the base class properties are serialized:
+In this scenario, the `City` property is serialized even though the `weatherForecastBase` object is actually a `WeatherForecastWithCity` object. This configuration enables polymorphic serialization for `WeatherForecastBase`, specifically when the runtime type is `WeatherForecastWithCity`:
 
 ```json
 {
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
+  "City": "Milwaukee",
+  "Date": "2022-09-26T00:00:00-05:00",
+  "TemperatureCelsius": 15,
+  "Summary": "Cool"
 }
 ```
 
-```csharp
-[JsonDerivedType(typeof(Derived))]
-public class Base
-{
-    public int X { get; set; }
-}
-
-public class Derived : Base
-{
-    public int Y { get; set; }
-}
-```
-
-This configuration enables polymorphic serialization for Base, specifically when the runtime type is Derived:
+This doesn't enable polymorphic deserialization when the payload is round-tripped as `WeatherForecastBase`:
 
 ```csharp
-Base value = new Derived();
-JsonSerializer.Serialize<Base>(value); // { "X" : 0, "Y" : 0 }
+WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>("""
+    {
+      "City": "Milwaukee",
+      "Date": "2022-09-26T00:00:00-05:00",
+      "TemperatureCelsius": 15,
+      "Summary": "Cool"
+    }
+    """);
+
+Console.WriteLine(value is WeatherForecastWithCity); // False
 ```
 
-Note that this does not enable polymorphic deserialization since the payload would be roundtripped as Base:
-
-```csharp
-Base value = JsonSerializer.Deserialize<Base>(@"{ ""X"" : 0, ""Y"" : 0 }");
-value is Derived; // false
-Using Type Discriminators
-```
+### Polymorphic type discriminators
 
 To enable polymorphic deserialization, users need to specify a type discriminator for the derived class:
 
 ```csharp
-[JsonDerivedType(typeof(Base), typeDiscriminator: "base")]
-[JsonDerivedType(typeof(Derived), typeDiscriminator: "derived")]
-public class Base
+[JsonDerivedType(typeof(WeatherForecastBase), typeDiscriminator: "base")]
+[JsonDerivedType(typeof(WeatherForecastWithCity), typeDiscriminator: "withCity")]
+public class WeatherForecastBase
 {
-    public int X { get; set; }
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureCelsius { get; set; }
+    public string? Summary { get; set; }
 }
 
-public class Derived : Base
+public class WeatherForecastWithCity : WeatherForecastBase
 {
-    public int Y { get; set; }
+    public string? City { get; set; }
 }
 ```
+
+With the added metadata, specifically, the type discriminator, the serializer can deserialize the payload as `WeatherForecastWithCity`:
 
 Which will now emit JSON along with type discriminator metadata:
 
 ```csharp
-Base value = new Derived();
-JsonSerializer.Serialize<Base>(value); // { "$type" : "derived", "X" : 0, "Y" : 0 }
+WeatherForecastBase weather = new WeatherForecastWithCity
+{
+    City = "Milwaukee",
+    Date = new DateTimeOffset(2022, 9, 26, 0, 0, 0, TimeSpan.FromHours(-5)),
+    TemperatureCelsius = 15,
+    Summary = "Cool"
+}
+var json = JsonSerializer.Serialize<WeatherForecastBase>(weather, options);
+/*
+{
+  "$type" : "withCity",
+  "City": "Milwaukee",
+  "Date": "2022-09-26T00:00:00-05:00",
+  "TemperatureCelsius": 15,
+  "Summary": "Cool"
+}
+*/
 ```
 
-which can be used to deserialize the value polymorphically:
+With the type discriminator, the serializer can deserialize the payload polymorphically as `WeatherForecastWithCity`:
 
 ```csharp
-Base value = JsonSerializer.Deserialize<Base>(@"{ ""$type"" : ""derived"", ""X"" : 0, ""Y"" : 0 }");
-value is Derived; // true
+WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>(json);
+Console.WriteLine(value is WeatherForecastWithCity); // True
 ```
 
 Type discriminator identifiers can also be integers, so the following form is valid:
 
 ```csharp
-[JsonDerivedType(typeof(Derived1), 0)]
-[JsonDerivedType(typeof(Derived2), 1)]
-[JsonDerivedType(typeof(Derived3), 2)]
-public class Base { }
+[JsonDerivedType(typeof(WeatherForecastWithCity), 0)]
+[JsonDerivedType(typeof(WeatherForecastWithTimeSeries), 1)]
+[JsonDerivedType(typeof(WeatherForecastWithLocalNews), 2)]
+public class WeatherForecastBase { }
 
-JsonSerializer.Serialize<Base>(new Derived2()); // { "$type" : 1, ... }
+JsonSerializer.Serialize<WeatherForecastBase>(new WeatherForecastWithTimeSeries());
+/*
+{
+  "$type" : 1,
+  // Omitted for brevity...
+}
+*/
 ```
 
 :::zone-end

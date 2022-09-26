@@ -77,6 +77,19 @@ Namespace SystemTextJsonSamples
                 weatherForecastWithPrevious1,
                 options)
             Console.WriteLine($"JSON output without WindSpeed:{jsonString}")
+
+            Dim weatherForecastWithCity As WeatherForecastBase = WeatherForecastFactories.CreateWeatherForecastWithCity()
+            Dim weatherForecastBase As WeatherForecastBase = weatherForecastWithCity
+            weatherForecastBase.DisplayPropertyValues()
+
+            Console.WriteLine("Polymorphic serialization of derived class properties")
+            ' <SerializeWithAttributeAnnotations>
+            options = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
+            jsonString = JsonSerializer.Serialize(WeatherForecastBase, options)
+            ' </SerializeWithAttributeAnnotations>
+            Console.WriteLine($"JSON output:\n{jsonString}\n")
         End Sub
 
     End Class

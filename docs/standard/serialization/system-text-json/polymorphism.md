@@ -23,7 +23,7 @@ In this article, you will learn how to serialize properties of derived classes w
 
 :::zone pivot="dotnet-core-3-1,dotnet-5-0,dotnet-6-0"
 
-Serialization of a polymorphic type hierarchy is _not_ supported. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
+Prior to .NET 7, `System.Text.Json` _didn't support_ serialization of a polymorphic type hierarchies. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 
@@ -144,7 +144,7 @@ The following example shows the JSON that results from the preceding code:
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-`System.Text.Json` supports serializing and deserializing polymorphic type hierarchies using attribute annotations. For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
+Starting with .NET 7, `System.Text.Json` supports serializing and deserializing polymorphic type hierarchies using attribute annotations. For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFB":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFB":::
@@ -165,6 +165,75 @@ In this scenario, the `WindSpeed` property is not serialized even if the `weathe
   "TemperatureCelsius": 25,
   "Summary": "Hot"
 }
+```
+
+```csharp
+[JsonDerivedType(typeof(Derived))]
+public class Base
+{
+    public int X { get; set; }
+}
+
+public class Derived : Base
+{
+    public int Y { get; set; }
+}
+```
+
+This configuration enables polymorphic serialization for Base, specifically when the runtime type is Derived:
+
+```csharp
+Base value = new Derived();
+JsonSerializer.Serialize<Base>(value); // { "X" : 0, "Y" : 0 }
+```
+
+Note that this does not enable polymorphic deserialization since the payload would be roundtripped as Base:
+
+```csharp
+Base value = JsonSerializer.Deserialize<Base>(@"{ ""X"" : 0, ""Y"" : 0 }");
+value is Derived; // false
+Using Type Discriminators
+```
+
+To enable polymorphic deserialization, users need to specify a type discriminator for the derived class:
+
+```csharp
+[JsonDerivedType(typeof(Base), typeDiscriminator: "base")]
+[JsonDerivedType(typeof(Derived), typeDiscriminator: "derived")]
+public class Base
+{
+    public int X { get; set; }
+}
+
+public class Derived : Base
+{
+    public int Y { get; set; }
+}
+```
+
+Which will now emit JSON along with type discriminator metadata:
+
+```csharp
+Base value = new Derived();
+JsonSerializer.Serialize<Base>(value); // { "$type" : "derived", "X" : 0, "Y" : 0 }
+```
+
+which can be used to deserialize the value polymorphically:
+
+```csharp
+Base value = JsonSerializer.Deserialize<Base>(@"{ ""$type"" : ""derived"", ""X"" : 0, ""Y"" : 0 }");
+value is Derived; // true
+```
+
+Type discriminator identifiers can also be integers, so the following form is valid:
+
+```csharp
+[JsonDerivedType(typeof(Derived1), 0)]
+[JsonDerivedType(typeof(Derived2), 1)]
+[JsonDerivedType(typeof(Derived3), 2)]
+public class Base { }
+
+JsonSerializer.Serialize<Base>(new Derived2()); // { "$type" : 1, ... }
 ```
 
 :::zone-end

@@ -56,7 +56,7 @@ Properties aren't variables. They're methods, and can't be passed to `ref` param
 You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:
 
 - Async methods, which you define by using the [async](async.md) modifier.
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+- Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
 
 [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) also have restrictions on the use of these keywords:
 

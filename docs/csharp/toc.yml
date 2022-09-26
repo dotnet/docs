@@ -1050,8 +1050,6 @@ items:
         href: language-reference/keywords/when.md
       - name: value
         href: language-reference/keywords/value.md
-      - name: yield
-        href: language-reference/keywords/yield.md
     - name: Query Keywords
       items:
       - name: Quick reference
@@ -1203,6 +1201,9 @@ items:
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
+    - name: yield statement
+      displayName: iterator, yield break, yield return
+      href: language-reference/statements/yield.md
   - name: Special characters
     items:
     - name: Overview

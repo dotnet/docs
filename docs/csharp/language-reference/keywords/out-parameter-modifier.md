@@ -41,7 +41,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
   
 - Async methods, which you define by using the [async](./async.md) modifier.  
   
-- Iterator methods, which include a [yield return](./yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.  
 
 In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
 

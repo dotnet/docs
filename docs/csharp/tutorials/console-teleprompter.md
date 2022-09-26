@@ -66,9 +66,9 @@ static IEnumerable<string> ReadFrom(string file)
 }
 ```
 
-This method is a special type of C# method called an *Iterator method*. Enumerator methods return sequences that are evaluated lazily. That means
-each item in the sequence is generated as it is requested by the code consuming the sequence. Enumerator methods are methods that contain one or
-more [`yield return`](../language-reference/keywords/yield.md) statements. The object returned by the `ReadFrom` method contains the code to generate each item in the sequence. In this example, that involves reading the next line of text from the source file, and returning that string. Each time the calling code requests the next item from the sequence, the code reads the next line of text from the file and returns it. When the file is completely read, the sequence indicates that there are no more items.
+This method is a special type of C# method called an *iterator method*. Iterator methods return sequences that are evaluated lazily. That means
+each item in the sequence is generated as it is requested by the code consuming the sequence. Iterator methods are methods that contain one or
+more [`yield return`](../language-reference/statements/yield.md) statements. The object returned by the `ReadFrom` method contains the code to generate each item in the sequence. In this example, that involves reading the next line of text from the source file, and returning that string. Each time the calling code requests the next item from the sequence, the code reads the next line of text from the file and returns it. When the file is completely read, the sequence indicates that there are no more items.
 
 There are two C# syntax elements that may be new to you. The [`using`](../language-reference/keywords/using-statement.md) statement in this method manages resource cleanup. The variable that is initialized in the `using` statement (`reader`, in this example) must implement the <xref:System.IDisposable> interface. That interface defines a single method, `Dispose`, that should be called when the resource should be released. The compiler generates that call when execution reaches the closing brace of the `using` statement. The compiler-generated code ensures that the resource is released even if an exception is thrown from the code in the block defined by the using statement.
 

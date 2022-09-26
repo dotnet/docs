@@ -272,6 +272,7 @@ Dim json As String = JsonSerializer.Serialize<WeatherForecastBase>(weather, opti
   "Summary": "Cool"
 }
 */
+```
 
 With the type discriminator, the serializer can deserialize the payload polymorphically as `WeatherForecastWithCity`:
 
@@ -288,6 +289,21 @@ Console.WriteLine(value is WeatherForecastWithCity) // True
 Type discriminator identifiers can also be integers, so the following form is valid:
 
 ```csharp
+[JsonDerivedType(typeof(WeatherForecastWithCity), 0)]
+[JsonDerivedType(typeof(WeatherForecastWithTimeSeries), 1)]
+[JsonDerivedType(typeof(WeatherForecastWithLocalNews), 2)]
+public class WeatherForecastBase { }
+
+JsonSerializer.Serialize(new WeatherForecastWithTimeSeries());
+/*
+{
+  "$type" : 1,
+  // Omitted for brevity...
+}
+*/
+```
+
+```vbnet
 <JsonDerivedType(GetType(WeatherForecastWithCity), 0)>
 <JsonDerivedType(GetType(WeatherForecastWithTimeSeries), 1)>
 <JsonDerivedType(GetType(WeatherForecastWithLocalNews), 2)>

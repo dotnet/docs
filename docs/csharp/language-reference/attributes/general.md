@@ -49,7 +49,7 @@ In C# 10, you can use constant string interpolation and the `nameof` operator to
 
 ## `SetsRequiredMembers` attribute
 
-The `SetsRequiredMembers` attribute informs the compiler that a constructor sets all `required` members in that class or struct. The compiler assumes any constructor with the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute initializes all `required` members. Any code that invokes such a constructor doesn't need object initializers to set required members.
+The `SetsRequiredMembers` attribute informs the compiler that a constructor sets all `required` members in that class or struct. The compiler assumes any constructor with the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute initializes all `required` members. Any code that invokes such a constructor doesn't need object initializers to set required members. This is primarily useful for positional records and primary constructors.
 
 ## `AttributeUsage` attribute
 

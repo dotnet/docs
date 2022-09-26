@@ -183,7 +183,7 @@ WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>("""
 Console.WriteLine(value is WeatherForecastWithCity); // False
 ```
 
-```vbnet
+```vb
 Dim value As WeatherForecastBase = JsonSerializer.Deserialize(@"
     {
       "City": "Milwaukee",
@@ -215,7 +215,7 @@ public class WeatherForecastWithCity : WeatherForecastBase
 }
 ```
 
-```vbnet
+```vb
 <JsonDerivedType(GetType(WeatherForecastBase), "base")>
 <JsonDerivedType(GetType(WeatherForecastWithCity), "withCity")>
 Public Class WeatherForecastBase
@@ -254,7 +254,7 @@ var json = JsonSerializer.Serialize<WeatherForecastBase>(weather, options);
 */
 ```
 
-```vbnet
+```vb
 Dim weather As WeatherForecastBase = New WeatherForecastWithCity With
 {
     .City = "Milwaukee",
@@ -281,7 +281,7 @@ WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>(json
 Console.WriteLine(value is WeatherForecastWithCity); // True
 ```
 
-```vbnet
+```vb
 Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)
 Console.WriteLine(value is WeatherForecastWithCity) // True
 ```
@@ -303,7 +303,7 @@ JsonSerializer.Serialize(new WeatherForecastWithTimeSeries());
 */
 ```
 
-```vbnet
+```vb
 <JsonDerivedType(GetType(WeatherForecastWithCity), 0)>
 <JsonDerivedType(GetType(WeatherForecastWithTimeSeries), 1)>
 <JsonDerivedType(GetType(WeatherForecastWithLocalNews), 2)>

@@ -183,6 +183,18 @@ WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>("""
 Console.WriteLine(value is WeatherForecastWithCity); // False
 ```
 
+```vbnet
+Dim value As WeatherForecastBase = JsonSerializer.Deserialize(@"
+    {
+      "City": "Milwaukee",
+      "Date": "2022-09-26T00:00:00-05:00",
+      "TemperatureCelsius": 15,
+      "Summary": "Cool"
+    }")
+
+Console.WriteLine(value is WeatherForecastWithCity) // False
+```
+
 ### Polymorphic type discriminators
 
 To enable polymorphic deserialization, users need to specify a type discriminator for the derived class:
@@ -201,6 +213,21 @@ public class WeatherForecastWithCity : WeatherForecastBase
 {
     public string? City { get; set; }
 }
+```
+
+```vbnet
+<JsonDerivedType(GetType(WeatherForecastBase), "base")>
+<JsonDerivedType(GetType(WeatherForecastWithCity), "withCity")>
+Public Class WeatherForecastBase
+    Public Property [Date] As DateTimeOffset
+    Public Property TemperatureCelsius As Integer
+    Public Property Summary As String
+End Class
+
+Public Class WeatherForecastWithCity
+    Inherits WeatherForecastBase
+    Public Property City As String
+End Class
 ```
 
 With the added metadata, specifically, the type discriminator, the serializer can deserialize the payload as `WeatherForecastWithCity`:
@@ -227,6 +254,25 @@ var json = JsonSerializer.Serialize<WeatherForecastBase>(weather, options);
 */
 ```
 
+```vbnet
+Dim weather As WeatherForecastBase = New WeatherForecastWithCity With
+{
+    .City = "Milwaukee",
+    .[Date] = New DateTimeOffset(2022, 9, 26, 0, 0, 0, TimeSpan.FromHours(-5)),
+    .TemperatureCelsius = 15,
+    .Summary = "Cool"
+}
+Dim json As String = JsonSerializer.Serialize<WeatherForecastBase>(weather, options);
+/*
+{
+  "$type" : "withCity",
+  "City": "Milwaukee",
+  "Date": "2022-09-26T00:00:00-05:00",
+  "TemperatureCelsius": 15,
+  "Summary": "Cool"
+}
+*/
+
 With the type discriminator, the serializer can deserialize the payload polymorphically as `WeatherForecastWithCity`:
 
 ```csharp
@@ -234,15 +280,21 @@ WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>(json
 Console.WriteLine(value is WeatherForecastWithCity); // True
 ```
 
+```vbnet
+Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)
+Console.WriteLine(value is WeatherForecastWithCity) // True
+```
+
 Type discriminator identifiers can also be integers, so the following form is valid:
 
 ```csharp
-[JsonDerivedType(typeof(WeatherForecastWithCity), 0)]
-[JsonDerivedType(typeof(WeatherForecastWithTimeSeries), 1)]
-[JsonDerivedType(typeof(WeatherForecastWithLocalNews), 2)]
-public class WeatherForecastBase { }
+<JsonDerivedType(GetType(WeatherForecastWithCity), 0)>
+<JsonDerivedType(GetType(WeatherForecastWithTimeSeries), 1)>
+<JsonDerivedType(GetType(WeatherForecastWithLocalNews), 2)>
+Public Class WeatherForecastBase
+End Class
 
-JsonSerializer.Serialize<WeatherForecastBase>(new WeatherForecastWithTimeSeries());
+JsonSerializer.Serialize(New WeatherForecastWithTimeSeries())
 /*
 {
   "$type" : 1,

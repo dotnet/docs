@@ -133,7 +133,7 @@ You can enable metrics for File storage from the [Azure portal](https://portal.a
 
 ## Next steps
 
-For more information about Azure Files Storage, see these links.
+For more information about Azure Files, see these links.
 
 ### Conceptual articles and videos
 

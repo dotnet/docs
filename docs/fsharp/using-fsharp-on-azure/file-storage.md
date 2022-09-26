@@ -9,7 +9,7 @@ ms.custom: "devx-track-fsharp"
 
 Azure Files Storage is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) Protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure Files Storage, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the File storage share simultaneously.
 
-For a conceptual overview of file storage, see [the .NET guide for file storage](/azure/storage/storage-dotnet-how-to-use-files).
+For a conceptual overview of File Storage, see [the .NET guide for File Storage](/azure/storage/storage-dotnet-how-to-use-files).
 
 ## Prerequisites
 

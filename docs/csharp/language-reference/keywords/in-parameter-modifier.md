@@ -111,7 +111,7 @@ The only method call where the argument is passed by reference is the final one.
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+- Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
 - The first argument of an extension method cannot have the `in` modifier unless that argument is a struct.
 - The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 

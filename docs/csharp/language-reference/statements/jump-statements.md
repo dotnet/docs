@@ -136,4 +136,4 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [`yield` statement](../keywords/yield.md)
+- [`yield` statement](yield.md)

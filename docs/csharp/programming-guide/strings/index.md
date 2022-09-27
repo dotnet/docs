@@ -105,7 +105,7 @@ A format string is a string whose contents are determined dynamically at run tim
 
 ### String interpolation
 
-Available in C# 6.0 and later, [*interpolated strings*](../../language-reference/tokens/interpolated.md) are identified by the `$` special character and include interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
+[*Interpolated strings*](../../language-reference/tokens/interpolated.md) are identified by the `$` special character and include interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
 
 Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
@@ -121,7 +121,7 @@ Beginning with C# 11, you can combine *raw string literals* with string interpol
 
 C# also allows verbatim string interpolation, for example across multiple lines, using the `$@` or `@$` syntax.
 
-To interpret escape sequences literally, use a [verbatim](../../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+To interpret escape sequences literally, use a [verbatim](../../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. You can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
 
 :::code language="csharp" source="./snippets/VerbatimStringInterpolation.cs" id="VerbatimStringInterpolation":::
 

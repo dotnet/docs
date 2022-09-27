@@ -26,7 +26,7 @@ translate that algorithm into another language or environment.
 There are some newer C# language elements that don't translate
 well into expression trees. Expression trees cannot contain
 `await` expressions, or `async` lambda expressions. Many of the
-features added in the C# 6 release don't appear exactly as written
+features added in C# 6 and later don't appear exactly as written
 in expression trees. Instead, newer features will be exposed
 in expressions trees in the equivalent, earlier syntax. This
 may not be as much of a limitation as you might think. In fact,

@@ -62,7 +62,7 @@ Compound assignment is supported by [arithmetic](arithmetic-operators.md#compoun
 
 ## Null-coalescing assignment
 
-Beginning with C# 8.0, you can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
+You can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
 
 ## Operator overloadability
 

@@ -29,7 +29,7 @@ Use the [`default` operator](../operators/default.md#default-operator) to produc
 int a = default(int);
 ```
 
-Beginning with C# 7.1, you can use the [`default` literal](../operators/default.md#default-literal) to initialize a variable with the default value of its type:
+You can use the [`default` literal](../operators/default.md#default-literal) to initialize a variable with the default value of its type:
 
 ```csharp
 int a = default;

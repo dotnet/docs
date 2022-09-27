@@ -8,7 +8,7 @@ recommendations: false
 ---
 # Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 
-C# 8.0 introduces [nullable reference types](../../nullable-references.md), which complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*.
+[Nullable reference types](../../nullable-references.md) complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*.
 
 In this tutorial, you'll learn how to:
 
@@ -21,7 +21,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet/3.0).
+You'll need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads), or the [.NET SDK](https://dotnet.microsoft.com/download/dotnet).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
@@ -33,7 +33,7 @@ The code you'll write for this sample expresses that intent, and the compiler en
 
 ## Create the application and enable nullable reference types
 
-Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt into the **nullable reference types** feature, even in C# 8.0 projects. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent:
+Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt into the **nullable reference types** feature in projects earlier than C# 11. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent:
 
 ```xml
 <Nullable>enable</Nullable>

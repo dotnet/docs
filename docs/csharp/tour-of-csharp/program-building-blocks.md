@@ -81,7 +81,7 @@ A *reference parameter* is used for passing arguments by reference. The argument
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="RefExample":::
 
-An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters using the syntax introduced in C# 7.
+An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="OutExample":::
 

@@ -329,7 +329,6 @@ Console.WriteLine(json)
 While the API supports mixing and matching type discriminator configurations, it is not recommended. The general recommendation is to use either all `string` type discriminators, all `int` type discriminators, or no discriminators at all. The following example shows how to mix and match type discriminator configurations:
 
 ```csharp
-[JsonPolymorphic]
 [JsonDerivedType(typeof(ThreeDimensionalPoint), typeDiscriminator: 3)]
 [JsonDerivedType(typeof(FourDimensionalPoint), typeDiscriminator: "4d")]
 public class BasePoint
@@ -350,7 +349,6 @@ public sealed class FourDimensionalPoint : ThreeDimensionalPoint
 ```
 
 ```vb
-<JsonPolymorphic>
 <JsonDerivedType(GetType(ThreeDimensionalPoint), 3)>
 <JsonDerivedType(GetType(FourDimensionalPoint), "4d")>
 Public Class BasePoint
@@ -392,13 +390,13 @@ static void PerformRoundTrip<T>() where T : BasePoint, new()
     Console.WriteLine();
 }
 // Sample output:
-//   {"X":541,"Y":503}
+//   { "X": 541, "Y": 503 }
 //   result is BasePoint; // True
 //
-//   {"$type":3,"Z":399,"X":835,"Y":78}
+//   { "$type": 3, "Z": 399, "X": 835, "Y": 78 }
 //   result is ThreeDimensionalPoint; // True
 //
-//   {"$type":"4d","W":993,"Z":427,"X":508,"Y":741}
+//   { "$type": "4d", "W": 993, "Z": 427, "X": 508, "Y": 741 }
 //   result is FourDimensionalPoint; // True
 ```
 
@@ -416,25 +414,73 @@ Module Program
     Private Sub PerformRoundTrip(Of T As {BasePoint, New})()
         Dim json = JsonSerializer.Serialize(Of BasePoint)(New T())
         Console.WriteLine(json)
+
         Dim result As BasePoint = JsonSerializer.Deserialize(Of BasePoint)(json)
         Console.WriteLine($"result is {GetType(T)}; // {TypeOf result Is T}")
         Console.WriteLine()
     End Sub
 End Module
 ' Sample output:
-'   {"X":649,"Y":754}
+'   { "X": 649, "Y": 754 }
 '   result is BasePoint; // True
 '
-'   {"$type":3,"Z":247,"X":814,"Y":56}
+'   { "$type": 3, "Z": 247, "X": 814, "Y": 56 }
 '   result is ThreeDimensionalPoint; // True
 '
-'   {"$type":"4d","W":427,"Z":193,"X":112,"Y":935}
+'   { "$type": "4d", "W": 427, "Z": 193, "X": 112, "Y": 935 }
 '   result is FourDimensionalPoint; // True
 ```
 
 #### Configure polymorphic serialization
 
+To customize the type discriminator, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute>. The following example shows how to configure the type discriminator name:
 
+```csharp
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "$discriminator")]
+[JsonDerivedType(typeof(ThreeDimensionalPoint), typeDiscriminator: "3d")]
+public class BasePoint
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+}
+
+public sealed class ThreeDimensionalPoint : BasePoint
+{
+    public int Z { get; set; }
+}
+```
+
+```vb
+<JsonPolymorphic(TypeDiscriminatorPropertyName:="$discriminator")>
+<JsonDerivedType(GetType(ThreeDimensionalPoint), "3d")>
+Public Class BasePoint
+    Public Property X As Integer
+    Public Property Y As Integer
+End Class
+
+Public Class ThreeDimensionalPoint
+    Inherits BasePoint
+    Public Property Z As Integer
+End Class
+```
+
+With the type discriminator name configured, the following example shows the `ThreeDimensionalPoint` type serialized as JSON:
+
+```csharp
+BasePoint point = new ThreeDimensionalPoint { X = 1, Y = 2, Z = 3 };
+var json = JsonSerializer.Serialize<BasePoint>(point);
+Console.WriteLine(json);
+// Sample output:
+//  { "$discriminator": "3d", "X": 1, "Y": 2, "Z": 3 }
+```
+
+```vb
+Dim point As BasePoint = New ThreeDimensionalPoint With { .X = 1, .Y = 2, .Z = 3 }
+Dim json As String = JsonSerializer.Serialize(Of BasePoint)(point)
+Console.WriteLine(json)
+' Sample output:
+'  { "$discriminator": "3d", "X": 1, "Y": 2, "Z": 3 }
+```
 
 :::zone-end
 

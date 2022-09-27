@@ -86,7 +86,7 @@ For more information, see the following sections of the [C# language specificati
 - [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
 - [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
 
-For more information about pattern matching switch statement, see the following feature proposal notes:
+For more information about pattern matching `switch` statement, see the following feature proposal notes:
 
 - [Switch statement (Pattern matching)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
 

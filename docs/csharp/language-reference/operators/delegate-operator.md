@@ -12,11 +12,12 @@ The `delegate` operator creates an anonymous method that can be converted to a d
 
 [!code-csharp-interactive[anonymous method](snippets/shared/DelegateOperator.cs#AnonymousMethod)]
 
-Lambda expressions provide a more concise and expressive way to create an anonymous function. Use the [=> operator](lambda-operator.md) to construct a lambda expression:
-
-[!code-csharp-interactive[lambda expression](snippets/shared/DelegateOperator.cs#Lambda)]
-
-For more information about features of lambda expressions, for example, capturing outer variables, see [Lambda expressions](lambda-expressions.md).
+> [!NOTE]
+> Lambda expressions provide a more concise and expressive way to create an anonymous function. Use the [=> operator](lambda-operator.md) to construct a lambda expression:
+>
+> [!code-csharp-interactive[lambda expression](snippets/shared/DelegateOperator.cs#Lambda)]
+>
+> For more information about features of lambda expressions, for example, capturing outer variables, see [Lambda expressions](lambda-expressions.md).
 
 When you use the `delegate` operator, you might omit the parameter list. If you do that, the created anonymous method can be converted to a delegate type with any list of  parameters, as the following example shows:
 

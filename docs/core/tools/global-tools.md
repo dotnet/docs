@@ -30,7 +30,7 @@ A .NET tool is a special NuGet package that contains a console application. You 
 > .NET tools run in full trust. Don't install a .NET tool unless you trust the author.
 
 > [!CAUTION]
-> If .NET was [installed via Snap](dotnet/core/install/linux-snap), installed .NET tools may not work correctly.
+> If .NET was [installed via Snap](dotnet/core/install/linux-snap.md), installed .NET tools may not work correctly.
 
 ## Find a tool
 

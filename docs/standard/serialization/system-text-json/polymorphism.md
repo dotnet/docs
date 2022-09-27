@@ -670,28 +670,31 @@ JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
 
 ## Configure polymorphism with the contract model
 
-For use cases where attribute annotations are impractical or impossible (large domain models, cross-assembly hierarchies, hierarchies in third-party dependencies, etc.), it should still be possible to configure polymorphism using the [JSON contract model](https://github.com/dotnet/runtime/issues/63686):
+For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), it should still be possible to configure polymorphism using the [JSON contract model](https://github.com/dotnet/runtime/issues/63686):
 
 ```csharp
-public class MyPolymorphicTypeResolver : DefaultJsonTypeInfoResolver
+public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver
 {
-    public JsonTypeInfo GetTypeInfo(Type type, JsonSerializerOptions options)
+    public override JsonTypeInfo GetTypeInfo(Type type, JsonSerializerOptions options)
     {
         JsonTypeInfo jsonTypeInfo = base.GetTypeInfo(type, options);
-        if (jsonTypeInfo.Type == typeof(Base))
+
+        Type basePointType = typeof(BasePoint);
+        if (jsonTypeInfo.Type == basePointType)
         {
-            jsonTypeInfo.PolymorphismOptions =
-                new JsonPolymorphismOptions
-                {
-                     TypeDiscriminatorPropertyName = "_case",
-                     UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor,
-                     DerivedTypes =
-                     {
-                          new JsonDerivedType(typeof(DerivedType1)),
-                          new JsonDerivedType(typeof(DerivedType2), "derivedType2"),
-                          new JsonDerivedType(typeof(DerivedType3), 42),
-                     }
-               }
+            if (!jsonTypeInfo.Options.PolymorphicTypeConfigurations.Any(
+                config => config.BaseType == basePointType))
+            {
+                jsonTypeInfo.Options.PolymorphicTypeConfigurations.Add(
+                    new JsonPolymorphicTypeConfiguration(jsonTypeInfo.Type)
+                    {
+                        TypeDiscriminatorPropertyName = "$point-type",
+                        IgnoreUnrecognizedTypeDiscriminators = true,
+                        UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization
+                    }
+                    .WithDerivedType(typeof(ThreeDimensionalPoint), "3d")
+                    .WithDerivedType(typeof(FourDimensionalPoint), "4d"));
+            }
         }
 
         return jsonTypeInfo;

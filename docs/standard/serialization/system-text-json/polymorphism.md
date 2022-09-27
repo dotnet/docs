@@ -483,8 +483,229 @@ Console.WriteLine(json)
 ```
 
 > [!TIP]
-> To help avoid potential naming collisions, the type discriminator name should be prefixed with a dollar sign (`$`).
+> To avoid potential JSON naming collisions where the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType> is errantly set to a name that already exists on the type hierarchy, the type discriminator name should be prefixed with a dollar sign (`$`).
 
+### Handle unknown derived types
+
+To handle unknown derived types, you must opt-in to support by configuring it appropriately. Consider the following type hierarchy:
+
+```csharp
+[JsonDerivedType(typeof(ThreeDimensionalPoint))]
+public class BasePoint
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+}
+
+public class ThreeDimensionalPoint : BasePoint
+{
+    public int Z { get; set; }
+}
+
+public class FourDimensionalPoint : ThreeDimensionalPoint
+{
+    public int W { get; set; }
+}
+```
+
+```vb
+<JsonDerivedType(GetType(ThreeDimensionalPoint))>
+Public Class BasePoint
+    Public Property X As Integer
+    Public Property Y As Integer
+End Class
+
+Public Class ThreeDimensionalPoint
+    Inherits BasePoint
+    Public Property Z As Integer
+End Class
+
+Public NotInheritable Class FourDimensionalPoint
+    Inherits ThreeDimensionalPoint
+    Public Property W As Integer
+End Class
+```
+
+Since the configuration does not explicitly opt-in support for `FourDimensionalPoint`, attempting to serialize instances of `FourDimensionalPoint` as `BasePoint` will result in a runtime exception:
+
+```csharp
+JsonSerializer.Serialize<BasePoint>(new FourDimensionalPoint()); // throws NotSupportedException
+```
+
+```vb
+JsonSerializer.Serialize(Of BasePoint)(New FourDimensionalPoint()) ' throws NotSupportedException
+```
+
+The default behavior can be tweaked using the <xref:System.Text.Json.Serialization.JsonUnknownDerivedTypeHandling> enum, which can be specified as follows:
+
+```csharp
+[JsonPolymorphic(
+    UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToBaseType)]
+[JsonDerivedType(typeof(ThreeDimensionalPoint))]
+public class BasePoint
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+}
+
+public class ThreeDimensionalPoint : BasePoint
+{
+    public int Z { get; set; }
+}
+
+public class FourDimensionalPoint : ThreeDimensionalPoint
+{
+    public int W { get; set; }
+}
+```
+
+```vb
+<JsonPolymorphic(
+    UnknownDerivedTypeHandling:=JsonUnknownDerivedTypeHandling.FallBackToBaseType)>
+<JsonDerivedType(GetType(ThreeDimensionalPoint))>
+Public Class BasePoint
+    Public Property X As Integer
+    Public Property Y As Integer
+End Class
+
+Public Class ThreeDimensionalPoint
+    Inherits BasePoint
+    Public Property Z As Integer
+End Class
+
+Public NotInheritable Class FourDimensionalPoint
+    Inherits ThreeDimensionalPoint
+    Public Property W As Integer
+End Class
+```
+
+The `FallBackToNearestAncestor` setting can be used to fall back to the contract of the nearest declared derived type:
+
+```csharp
+[JsonPolymorphic(
+    UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)]
+[JsonDerivedType(typeof(BasePoint)]
+public interface IPoint { }
+
+public class BasePoint : IPoint { }
+
+public class ThreeDimensionalPoint : BasePoint { }
+```
+
+```vb
+<JsonPolymorphic(
+    UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)>
+<JsonDerivedType(GetType(BasePoint)>
+Public Interface IPoint
+End Interface
+
+Public Class BasePoint
+    Inherits IPoint
+End Class
+
+Public Class ThreeDimensionalPoint
+    Inherits BasePoint
+End Class
+```
+
+With a configuration like the preceding example, the `ThreeDimensionalPoint` type will be serialized as `BasePoint`:
+
+```csharp
+// Serializes using the contract for BasePoint
+JsonSerializer.Serialize<IPoint>(new ThreeDimensionalPoint());
+```
+
+```vb
+' Serializes using the contract for BasePoint
+JsonSerializer.Serialize(Of IPoint)(New ThreeDimensionalPoint())
+```
+
+Falling back to the nearest ancestor admits the possibility of diamond ambiguity. Consider the following type hierarchy as an example:
+
+```csharp
+[JsonPolymorphic(
+    UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)]
+[JsonDerivedType(typeof(BasePoint))]
+public interface IPoint { }
+
+public interface IPointWithTimeSeries : IPoint { }
+
+public class BasePoint : IPoint { }
+
+public class BasePointWithTimeSeries : BasePoint, IPointWithTimeSeries { }
+```
+
+```vb
+<JsonPolymorphic(
+    UnknownDerivedTypeHandling:=JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)>
+<JsonDerivedType(GetType(BasePoint))>
+Public Interface IPoint
+End Interface
+
+Public Interface IPointWithTimeSeries
+    Inherits IPoint
+End Interface
+
+Public Class BasePoint
+    Implements IPoint
+End Class
+
+Public Class BasePointWithTimeSeries
+    Inherits BasePoint
+    Implements IPointWithTimeSeries
+End Class
+```
+
+In this case, the `BasePointWithTimeSeries` type could be serialized as either `BasePoint` or `BasePointWithTimeSeries`. This ambiguity will cause the <xref:System.NotSupportedException> to be thrown when attempting to serialize an instance of `BasePointWithTimeSeries` as `IPoint`.
+
+```csharp
+// throws NotSupportedException
+JsonSerializer.Serialize<IPoint>(new BasePointWithTimeSeries());
+```
+
+```vb
+' throws NotSupportedException
+JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
+```
+
+## Configure polymorphism with the contract model
+
+For use cases where attribute annotations are impractical or impossible (large domain models, cross-assembly hierarchies, hierarchies in third-party dependencies, etc.), it should still be possible to configure polymorphism using the [JSON contract model](https://github.com/dotnet/runtime/issues/63686):
+
+```csharp
+public class MyPolymorphicTypeResolver : DefaultJsonTypeInfoResolver
+{
+    public JsonTypeInfo GetTypeInfo(Type type, JsonSerializerOptions options)
+    {
+        JsonTypeInfo jsonTypeInfo = base.GetTypeInfo(type, options);
+        if (jsonTypeInfo.Type == typeof(Base))
+        {
+            jsonTypeInfo.PolymorphismOptions =
+                new JsonPolymorphismOptions
+                {
+                     TypeDiscriminatorPropertyName = "_case",
+                     UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor,
+                     DerivedTypes =
+                     {
+                          new JsonDerivedType(typeof(DerivedType1)),
+                          new JsonDerivedType(typeof(DerivedType2), "derivedType2"),
+                          new JsonDerivedType(typeof(DerivedType3), 42),
+                     }
+               }
+        }
+
+        return jsonTypeInfo;
+    }
+}
+```
+
+## Additional details
+
+* Polymorphic serialization only supports derived types that have been explicitly opted in via the `JsonDerivedType` attribute. Undeclared runtime types will result in a runtime exception. The behavior can be changed by configuring the `JsonPolymorphicAttribute.UnknownDerivedTypeHandling` property.
+* Polymorphic configuration specified in derived types is not inherited by polymorphic configuration in base types. These need to be configured independently.
+* Polymorphic hierarchies are supported for both classes and interface types. 
+* Polymorphism using type discriminators is only supported for type hierarchies that use the default converters for objects, collections and dictionary types.
+* Polymorphism is supported in metadata-based sourcegen, but not fast-path sourcegen.
 :::zone-end
 
 ## See also

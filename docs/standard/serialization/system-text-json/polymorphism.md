@@ -464,7 +464,7 @@ Public Class ThreeDimensionalPoint
 End Class
 ```
 
-With the type discriminator name configured, the following example shows the `ThreeDimensionalPoint` type serialized as JSON:
+In the preceding code, the `JsonPolymorphic` attribute configures the `TypeDiscriminatorPropertyName` to the `"$discriminator"` value. With the type discriminator name configured, the following example shows the `ThreeDimensionalPoint` type serialized as JSON:
 
 ```csharp
 BasePoint point = new ThreeDimensionalPoint { X = 1, Y = 2, Z = 3 };
@@ -481,6 +481,9 @@ Console.WriteLine(json)
 ' Sample output:
 '  { "$discriminator": "3d", "X": 1, "Y": 2, "Z": 3 }
 ```
+
+> [!TIP]
+> To help avoid potential naming collisions, the type discriminator name should be prefixed with a dollar sign (`$`).
 
 :::zone-end
 

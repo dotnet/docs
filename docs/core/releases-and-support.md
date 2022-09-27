@@ -14,7 +14,7 @@ Information about the type of each release is encoded in the version number in t
 
 For example:
 
-* .NET 5 and NET 6 are major releases.
+* .NET 5 and .NET 6 are major releases.
 * .NET Core 3.1 is the first minor release after the .NET Core 3.0 major release.
 * .NET Core 5.0.15 is the fifteenth patch for .NET 5.
 

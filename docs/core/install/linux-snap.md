@@ -16,7 +16,7 @@ A snap is a bundle of an app and its dependencies that works without modificatio
 > Snap packages aren't supported in WSL2 on Windows 10. As an alternative, use the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular WSL2 distribution. It's not recommended but you can try to enable snap with an [unsupported workaround from the snapcraft forums](https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033).
 
 > [!CAUTION]
-> Snap installations of .NET may have problems running [.NET tools](dotnet/core/tools/global-tools.md). If you wish to use .NET tools, it's recommended to install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
+> Snap installations of .NET may have problems running [.NET tools](../tools/global-tools.md). If you wish to use .NET tools, it's recommended to install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
 
 ## .NET releases
 

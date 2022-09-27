@@ -33,6 +33,12 @@ In the preceding examples, the return type of iterators is <xref:System.Collecti
 
   :::code language="csharp" source="snippets/yield/GetEnumeratorExample.cs" id="GetEnumeratorExample":::
 
+You cannot use the `yield` statements in:
+
+- methods with [in](../keywords/in-parameter-modifier.md), [ref](../keywords/ref.md), or [out](../keywords/out-parameter-modifier.md) parameters
+- [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)
+- methods that contain [unsafe blocks](../keywords/unsafe.md)
+
 ## Execution of an iterator
 
 The call of an iterator doesn't execute it immediately, as the following example shows:

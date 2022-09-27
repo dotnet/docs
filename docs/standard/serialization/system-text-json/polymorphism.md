@@ -144,7 +144,14 @@ The following example shows the JSON that results from the preceding code:
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-Starting with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations. For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
+Starting with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations.
+
+| Attribute | Description |
+|--|--|
+| <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> | When placed on a type declaration, indicates that the specified subtype should be opted into polymorphic serialization. Exposes the ability to specify a type discriminator. |
+| <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> | When placed on a type, indicates that the type should be serialized polymorphically. Exposes various options to configure polymorphism serialization and deserialization on the target type. |
+
+For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFB":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFB":::
@@ -230,9 +237,7 @@ Public Class WeatherForecastWithCity
 End Class
 ```
 
-With the added metadata, specifically, the type discriminator, the serializer can deserialize the payload as `WeatherForecastWithCity`:
-
-Which will now emit JSON along with type discriminator metadata:
+With the added metadata, specifically, the type discriminator, the serializer can serialize and deserialize the payload as the `WeatherForecastWithCity` type from its base type `WeatherForecastBase`. This will now emit JSON along with type discriminator metadata:
 
 ```csharp
 WeatherForecastBase weather = new WeatherForecastWithCity
@@ -243,15 +248,15 @@ WeatherForecastBase weather = new WeatherForecastWithCity
     Summary = "Cool"
 }
 var json = JsonSerializer.Serialize<WeatherForecastBase>(weather, options);
-/*
-{
-  "$type" : "withCity",
-  "City": "Milwaukee",
-  "Date": "2022-09-26T00:00:00-05:00",
-  "TemperatureCelsius": 15,
-  "Summary": "Cool"
-}
-*/
+Console.WriteLine(json);
+// Sample output:
+//   {
+//     "$type" : "withCity",
+//     "City": "Milwaukee",
+//     "Date": "2022-09-26T00:00:00-05:00",
+//     "TemperatureCelsius": 15,
+//     "Summary": "Cool"
+//   }
 ```
 
 ```vb
@@ -262,16 +267,16 @@ Dim weather As WeatherForecastBase = New WeatherForecastWithCity With
     .TemperatureCelsius = 15,
     .Summary = "Cool"
 }
-Dim json As String = JsonSerializer.Serialize<WeatherForecastBase>(weather, options);
-/*
-{
-  "$type" : "withCity",
-  "City": "Milwaukee",
-  "Date": "2022-09-26T00:00:00-05:00",
-  "TemperatureCelsius": 15,
-  "Summary": "Cool"
-}
-*/
+Dim json As String = JsonSerializer.Serialize(weather, options)
+Console.WriteLine(json)
+' Sample output:
+'   {
+'     "$type" : "withCity",
+'     "City": "Milwaukee",
+'     "Date": "2022-09-26T00:00:00-05:00",
+'     "TemperatureCelsius": 15,
+'     "Summary": "Cool"
+'   }
 ```
 
 With the type discriminator, the serializer can deserialize the payload polymorphically as `WeatherForecastWithCity`:
@@ -286,7 +291,7 @@ Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)
 Console.WriteLine(value is WeatherForecastWithCity) // True
 ```
 
-Type discriminator identifiers can also be integers, so the following form is valid:
+Type discriminator identifiers are valid in either `string` or `int` forms, so the following is valid:
 
 ```csharp
 [JsonDerivedType(typeof(WeatherForecastWithCity), 0)]
@@ -294,13 +299,13 @@ Type discriminator identifiers can also be integers, so the following form is va
 [JsonDerivedType(typeof(WeatherForecastWithLocalNews), 2)]
 public class WeatherForecastBase { }
 
-JsonSerializer.Serialize(new WeatherForecastWithTimeSeries());
-/*
-{
-  "$type" : 1,
-  // Omitted for brevity...
-}
-*/
+var json = JsonSerializer.Serialize(new WeatherForecastWithTimeSeries());
+Console.WriteLine(json);
+// Sample output:
+//   {
+//    "$type" : 1,
+//    Omitted for brevity...
+//   }
 ```
 
 ```vb
@@ -310,14 +315,20 @@ JsonSerializer.Serialize(new WeatherForecastWithTimeSeries());
 Public Class WeatherForecastBase
 End Class
 
-JsonSerializer.Serialize(New WeatherForecastWithTimeSeries())
-/*
-{
-  "$type" : 1,
-  // Omitted for brevity...
-}
-*/
+Dim json As String = JsonSerializer.Serialize(New WeatherForecastWithTimeSeries())
+Console.WriteLine(json)
+' Sample output:
+'  {
+'    "$type" : 1,
+'    Omitted for brevity...
+'  }
 ```
+
+#### Mix and match type discriminator configurations
+
+#### Configure polymorphic serialization
+
+
 
 :::zone-end
 

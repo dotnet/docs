@@ -63,7 +63,7 @@ Loop [ { While | Until } condition ]
 
  Use a `Do...Loop` structure when you want to repeat a set of statements an indefinite number of times, until a condition is satisfied. If you want to repeat the statements a set number of times, the [For...Next Statement](for-next-statement.md) is usually a better choice.
 
- You can use either `While` or `Until` to specify `condition`, but not both. If you give neither, the loop goes on until it is broken.
+ You can use either `While` or `Until` to specify `condition`, but not both. If you give neither, the loop continues until an [`Exit`](exit-statement.md) transfer control out of the loop.
 
  You can test `condition` only one time, at either the start or the end of the loop. If you test `condition` at the start of the loop (in the `Do` statement), the loop might not run even one time. If you test at the end of the loop (in the `Loop` statement), the loop always runs at least one time.
 

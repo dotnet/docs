@@ -190,6 +190,9 @@ The following MSBuild properties are documented in this section:
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [ProduceReferenceAssemblyInOutDir](#producereferenceassemblyinoutdir)
+- [PublishDocumentationFile](#publishdocumentationfile)
+- [PublishDocumentationFiles](#publishdocumentationfiles)
+- [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishRelease](#publishrelease)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -339,6 +342,18 @@ In .NET 5 and earlier versions, reference assemblies are always written to the `
 ```
 
 For more information, see [Write reference assemblies to intermediate output](../compatibility/sdk/6.0/write-reference-assemblies-to-obj.md).
+
+### PublishDocumentationFile
+
+When this property is `true`, the XML Documentation file for the project (if one is created, see [GenerateDocumentationFile](#generatedocumentationfile)) will be included in the publish output for the project. This property defaults to `true`.
+
+### PublishDocumentationFiles
+
+This property is an enablement flag for several other properties that control if various kinds of XML Documentation files are copied to the publish directory by default. See [PublishDocumentationFile](#publishdocumentationfile) and [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles). If those properties are unset, and this property is set, then those properties will default to `true`. This property defaults to `true`.
+
+### PublishReferencesDocumentationFiles
+
+When this property is `true`, XML Documentation files for the project's references will be copied to the publish directory, not just runtime assets like DLL files.  This property defaults to `true`.
 
 ### PublishRelease
 

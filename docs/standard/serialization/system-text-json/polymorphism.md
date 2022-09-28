@@ -144,8 +144,6 @@ The following example shows the JSON that results from the preceding code:
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-[!INCLUDE [preview-content](../../../../includes/preview-content.md)]
-
 Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations.
 
 | Attribute | Description |
@@ -295,6 +293,8 @@ Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)
 Console.WriteLine(value is WeatherForecastWithCity) // True
 ```
 
+### Mix and match type discriminator formats
+
 Type discriminator identifiers are valid in either `string` or `int` forms, so the following is valid:
 
 ```csharp
@@ -327,8 +327,6 @@ Console.WriteLine(json)
 '    Omitted for brevity...
 '  }
 ```
-
-### Mix and match type discriminator configurations
 
 While the API supports mixing and matching type discriminator configurations, it is not recommended. The general recommendation is to use either all `string` type discriminators, all `int` type discriminators, or no discriminators at all. The following example shows how to mix and match type discriminator configurations:
 
@@ -434,9 +432,6 @@ End Module
 '   { "$type": "4d", "W": 427, "Z": 193, "X": 112, "Y": 935 }
 '   result is FourDimensionalPoint; // True
 ```
-
-## Configure polymorphic serialization
-
 
 ### Customize the type discriminator key
 

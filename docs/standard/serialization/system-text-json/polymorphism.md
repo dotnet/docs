@@ -144,6 +144,8 @@ The following example shows the JSON that results from the preceding code:
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
+[!INCLUDE [preview-content](../../../../includes/preview-content.md)]
+
 Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations.
 
 | Attribute | Description |
@@ -670,7 +672,7 @@ JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
 
 ## Configure polymorphism with the contract model
 
-For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), it should still be possible to configure polymorphism using the [JSON contract model](https://github.com/dotnet/runtime/issues/63686):
+For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), to configure polymorphism use the contract model. The contract model is a set of APIs that can be used to configure polymorphism in a type hierarchy by creating a custom <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver> subclass that dynamically provides polymorphic configuration per type, as shown in the following example:
 
 ```csharp
 public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver
@@ -683,14 +685,15 @@ public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver
         if (jsonTypeInfo.Type == basePointType)
         {
             if (!jsonTypeInfo.Options.PolymorphicTypeConfigurations.Any(
-                config => config.BaseType == basePointType))
+                    config => config.BaseType == basePointType))
             {
                 jsonTypeInfo.Options.PolymorphicTypeConfigurations.Add(
                     new JsonPolymorphicTypeConfiguration(jsonTypeInfo.Type)
                     {
                         TypeDiscriminatorPropertyName = "$point-type",
                         IgnoreUnrecognizedTypeDiscriminators = true,
-                        UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization
+                        UnknownDerivedTypeHandling =
+                            JsonUnknownDerivedTypeHandling.FailSerialization
                     }
                     .WithDerivedType(typeof(ThreeDimensionalPoint), "3d")
                     .WithDerivedType(typeof(FourDimensionalPoint), "4d"));
@@ -702,13 +705,47 @@ public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver
 }
 ```
 
-## Additional details
+```vb
+Public Class PolymorphicTypeResolver
+    Inherits DefaultJsonTypeInfoResolver
 
-* Polymorphic serialization only supports derived types that have been explicitly opted in via the `JsonDerivedType` attribute. Undeclared runtime types will result in a runtime exception. The behavior can be changed by configuring the `JsonPolymorphicAttribute.UnknownDerivedTypeHandling` property.
+    Public Overrides Function GetTypeInfo(
+        ByVal type As Type,
+        ByVal options As JsonSerializerOptions) As JsonTypeInfo
+
+        Dim jsonTypeInfo As JsonTypeInfo = MyBase.GetTypeInfo(type, options)
+        Dim basePointType As Type = GetType(BasePoint)
+
+        If jsonTypeInfo.Type = basePointType Then
+
+            If Not jsonTypeInfo.Options.PolymorphicTypeConfigurations.Any(
+                Function(config) config.BaseType = basePointType) Then
+                jsonTypeInfo.Options.PolymorphicTypeConfigurations.Add(
+                    New JsonPolymorphicTypeConfiguration(jsonTypeInfo.Type) With {
+                    .TypeDiscriminatorPropertyName = "$point-type",
+                    .IgnoreUnrecognizedTypeDiscriminators = True,
+                    .UnknownDerivedTypeHandling =
+                        JsonUnknownDerivedTypeHandling.FailSerialization
+                } _
+                .WithDerivedType(GetType(ThreeDimensionalPoint), "3d") _
+                .WithDerivedType(GetType(FourDimensionalPoint), "4d"))
+            End If
+
+        End If
+
+        Return jsonTypeInfo
+    End Function
+End Class
+```
+
+### Additional polymorphic serialization details
+
+* Polymorphic serialization supports derived types that have been explicitly opt-in via the <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>. Undeclared types will result in a runtime exception. The behavior can be changed by configuring the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.UnknownDerivedTypeHandling?displayProperty=nameWithType> property.
 * Polymorphic configuration specified in derived types is not inherited by polymorphic configuration in base types. These need to be configured independently.
-* Polymorphic hierarchies are supported for both classes and interface types. 
-* Polymorphism using type discriminators is only supported for type hierarchies that use the default converters for objects, collections and dictionary types.
-* Polymorphism is supported in metadata-based sourcegen, but not fast-path sourcegen.
+* Polymorphic hierarchies are supported for both `interface` and `class` types.
+* Polymorphism using type discriminators is only supported for type hierarchies that use the default converters for objects, collections, and dictionary types.
+* Polymorphism is supported in metadata-based source generation, but not fast-path source generation.
+
 :::zone-end
 
 ## See also

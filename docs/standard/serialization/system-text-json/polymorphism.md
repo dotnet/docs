@@ -177,7 +177,7 @@ In this scenario, the `City` property is serialized even though the `weatherFore
 }
 ```
 
-This doesn't enable polymorphic deserialization when the payload is round-tripped as `WeatherForecastBase`:
+While round-tripping of the payload as `WeatherForecastBase` is supported, it won't materialize as a runtime type of `WeatherForecastWithCity`. Instead, it will materialize as a runtime type of `WeatherForecastBase`:
 
 ```csharp
 WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>("""
@@ -485,7 +485,7 @@ Console.WriteLine(json)
 ```
 
 > [!TIP]
-> To avoid potential JSON naming collisions where the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType> is errantly set to a name that already exists on the type hierarchy, the type discriminator name should be prefixed with a dollar sign (`$`).
+> Avoid a <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType> if it conflicts with a property in your type hierarchy.
 
 ### Handle unknown derived types
 

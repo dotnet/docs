@@ -372,7 +372,7 @@ End Class
 In the preceding example, the `BasePoint` doesn't have a type discriminator, while the `ThreeDimensionalPoint` type has an `int` type discriminator, and the `FourDimensionalPoint` has a `string` type discriminator.
 
 > [!IMPORTANT]
-> For polymorphic serialization to work, the base type must be used as the generic type parameter when serializing and deserializing.
+> For polymorphic serialization to work, the base type must be used as the generic type parameter when serializing and deserializing a derived type. Likewise, if a containing type's member is intended to be polymorphic, the containing type must use the base type that is annotated with the `JsonDerivedType` attribute.
 
 ```csharp
 using System.Text.Json;

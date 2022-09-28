@@ -204,7 +204,7 @@ Dim value As WeatherForecastBase = JsonSerializer.Deserialize(@"
 Console.WriteLine(value is WeatherForecastWithCity) // False
 ```
 
-### Polymorphic type discriminators
+## Polymorphic type discriminators
 
 To enable polymorphic deserialization, users need to specify a type discriminator for the derived class:
 
@@ -326,7 +326,7 @@ Console.WriteLine(json)
 '  }
 ```
 
-#### Mix and match type discriminator configurations
+### Mix and match type discriminator configurations
 
 While the API supports mixing and matching type discriminator configurations, it is not recommended. The general recommendation is to use either all `string` type discriminators, all `int` type discriminators, or no discriminators at all. The following example shows how to mix and match type discriminator configurations:
 
@@ -433,7 +433,7 @@ End Module
 '   result is FourDimensionalPoint; // True
 ```
 
-#### Configure polymorphic serialization
+## Configure polymorphic serialization
 
 To customize the type discriminator, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute>. The following example shows how to configure the type discriminator name:
 

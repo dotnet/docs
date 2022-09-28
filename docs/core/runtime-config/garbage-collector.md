@@ -556,9 +556,8 @@ Example:
 
 ## Standalone GC
 
-- Specifies a path to the library containing the garbage collector that the runtime intends to load.
-- For more information, see [Standalone GC loader design](https://github.com/dotnet/runtime/blob/main/docs/design/features/standalone-gc-loading.md).
-
+- Specifies the name of a standalone GC dll that the runtime loads in place of the one it has in the main runtime dll (coreclr.dll). This dll needs to reside in the same directory as coreclr.dll
+- 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |

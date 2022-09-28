@@ -152,7 +152,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [Integral types](~/_csharpstandard/standard/types.md#836-integral-types)
 - [Integer literals](~/_csharpstandard/standard/lexical-structure.md#6453-integer-literals)
-- [C# 9 - Natural sized integral types](_csharplang/proposals/csharp-9.0/native-integers.md)
+- [C# 9 - Natural sized integral types](~/_csharplang/proposals/csharp-9.0/native-integers.md)
 - [C# 11 - Numeric `IntPtr` and `UIntPtr](~/_csharplang/proposals/csharp-11.0/numeric-intptr.md)
 
 ## See also

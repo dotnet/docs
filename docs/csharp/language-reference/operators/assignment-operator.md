@@ -28,19 +28,17 @@ The following example demonstrates the usage of the assignment operator with a l
 
 :::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetSimple":::
 
-The left operand of an assignment receives the *value* of the right hand of the assignment. When the operands are [value types](../builtin-types/value-types.md), the assignment copies the contents of the right-hand operand. When the operands are [reference types](../builtin-types/reference-types.md), assignment copies the reference to the object.
+The left-hand operand of an assignment receives the *value* of the right-hand operand. When the operands are of [value types](../builtin-types/value-types.md), assignment copies the contents of the right-hand operand. When the operands are of [reference types](../builtin-types/reference-types.md), assignment copies the reference to the object.
 
 This is called *value assignment*: the value is assigned.
 
 ## ref assignment
 
-*Ref assignment* assigns the *reference* of its right hand operator to its left hand operand. The left operand is an alias to the right operand. The left operand must be a [ref local](../keywords/ref.md#ref-locals), [ref readonly local](../keywords/ref.md#ref-readonly-locals) or `ref` field in a [`ref struct`]../builtin-types/ref-struct.md). The following example demonstrates the usage of the ref assignment operator:
+*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand. The left-hand operand must be a [ref local](../keywords/ref.md#ref-locals), [ref readonly local](../keywords/ref.md#ref-readonly-locals), or a `ref` field in a [`ref struct`](../builtin-types/ref-struct.md). Both operands must be of the same type.
+
+The following example demonstrates the usage of the ref assignment operator:
 
 :::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetRefAssignment":::
-
-The `ref` must be applied to the right operands for a ref assignment. Both operands must be of the same type.
-
-This is called *ref assignment*: The variable now refers to a different object.
 
 ## Compound assignment
 
@@ -78,7 +76,7 @@ For more information about the ref assignment operator `= ref`, see the [feature
 
 ## See also
 
-- [Use compound assignment (style rules IDE0054 and IDE0074)](../../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [ref keyword](../keywords/ref.md)
+- [Use compound assignment (style rules IDE0054 and IDE0074)](../../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md)

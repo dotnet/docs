@@ -23,7 +23,7 @@ In this article, you will learn how to serialize properties of derived classes w
 
 :::zone pivot="dotnet-core-3-1,dotnet-5-0,dotnet-6-0"
 
-Prior to .NET 7, `System.Text.Json` _didn't support_ serialization of a polymorphic type hierarchies. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
+Prior to .NET 7, `System.Text.Json` _did_n't support_ the serialization of polymorphic type hierarchies. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 
@@ -38,7 +38,7 @@ And suppose the type argument of the `Serialize` method at compile time is `Weat
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeDefault":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeDefault":::
 
-In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastDerived` object. Only the base class properties are serialized:
+In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is a `WeatherForecastDerived` object. Only the base class properties are serialized:
 
 ```json
 {
@@ -139,7 +139,7 @@ The following example shows the JSON that results from the preceding code:
 ```
 
 > [!NOTE]
-> This article is about serialization, not deserialization. Polymorphic deserialization is not supported, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](converters-how-to.md#support-polymorphic-deserialization).
+> This article is about serialization, not deserialization. Polymorphic deserialization is not supported, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](converters-how-to.md#support-polymorphic-deserialization). .NET 7 supports polymorphic serialization and deserialization, for more information see [How to serialize properties of derived classes with System.Text.Json in .NET 7](polymorphism.md?pivots=dotnet-7-0).
 
 :::zone-end
 :::zone pivot="dotnet-7-0"

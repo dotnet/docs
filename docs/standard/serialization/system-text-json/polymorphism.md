@@ -23,7 +23,7 @@ In this article, you will learn how to serialize properties of derived classes w
 
 :::zone pivot="dotnet-core-3-1,dotnet-5-0,dotnet-6-0"
 
-Prior to .NET 7, `System.Text.Json` _did_n't support_ the serialization of polymorphic type hierarchies. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
+Before .NET 7, `System.Text.Json` _didn't support_ the serialization of polymorphic type hierarchies, for more information see [Polymorphic serialization in .NET 7](polymorphism.md?pivots=dotnet-7-0). For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 

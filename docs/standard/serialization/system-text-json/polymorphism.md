@@ -684,20 +684,17 @@ public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver
         Type basePointType = typeof(BasePoint);
         if (jsonTypeInfo.Type == basePointType)
         {
-            if (!jsonTypeInfo.Options.PolymorphicTypeConfigurations.Any(
-                    config => config.BaseType == basePointType))
+            jsonTypeInfo.PolymorphismOptions = new JsonPolymorphismOptions
             {
-                jsonTypeInfo.Options.PolymorphicTypeConfigurations.Add(
-                    new JsonPolymorphicTypeConfiguration(jsonTypeInfo.Type)
-                    {
-                        TypeDiscriminatorPropertyName = "$point-type",
-                        IgnoreUnrecognizedTypeDiscriminators = true,
-                        UnknownDerivedTypeHandling =
-                            JsonUnknownDerivedTypeHandling.FailSerialization
-                    }
-                    .WithDerivedType(typeof(ThreeDimensionalPoint), "3d")
-                    .WithDerivedType(typeof(FourDimensionalPoint), "4d"));
-            }
+                TypeDiscriminatorPropertyName = "$point-type",
+                IgnoreUnrecognizedTypeDiscriminators = true,
+                UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization,
+                DerivedTypes =
+                {
+                    new JsonDerivedType(typeof(ThreeDimensionalPoint), "3d"),
+                    new JsonDerivedType(typeof(FourDimensionalPoint), "4d")
+                }
+            };
         }
 
         return jsonTypeInfo;
@@ -717,20 +714,16 @@ Public Class PolymorphicTypeResolver
         Dim basePointType As Type = GetType(BasePoint)
 
         If jsonTypeInfo.Type = basePointType Then
-
-            If Not jsonTypeInfo.Options.PolymorphicTypeConfigurations.Any(
-                Function(config) config.BaseType = basePointType) Then
-                jsonTypeInfo.Options.PolymorphicTypeConfigurations.Add(
-                    New JsonPolymorphicTypeConfiguration(jsonTypeInfo.Type) With {
-                    .TypeDiscriminatorPropertyName = "$point-type",
-                    .IgnoreUnrecognizedTypeDiscriminators = True,
-                    .UnknownDerivedTypeHandling =
-                        JsonUnknownDerivedTypeHandling.FailSerialization
-                } _
-                .WithDerivedType(GetType(ThreeDimensionalPoint), "3d") _
-                .WithDerivedType(GetType(FourDimensionalPoint), "4d"))
-            End If
-
+            jsonTypeInfo.PolymorphismOptions = New JsonPolymorphismOptions With {
+                .TypeDiscriminatorPropertyName = "$point-type",
+                .IgnoreUnrecognizedTypeDiscriminators = True,
+                .UnknownDerivedTypeHandling =
+                    JsonUnknownDerivedTypeHandling.FailSerialization
+            }
+            jsonTypeInfo.PolymorphismOptions.DerivedTypes.Add(
+                New JsonDerivedType(GetType(ThreeDimensionalPoint), "3d"))
+            jsonTypeInfo.PolymorphismOptions.DerivedTypes.Add(
+                New JsonDerivedType(GetType(FourDimensionalPoint), "4d"))
         End If
 
         Return jsonTypeInfo

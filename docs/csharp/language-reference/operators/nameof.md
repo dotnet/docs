@@ -34,7 +34,7 @@ A `nameof` expression with a parameter is useful when you use the [nullable anal
 
 ## C# language specification
 
-For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#11720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#11720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md), and the [C# 11 - Extended `nameof` scope](_csharplang/proposals/csharp-11.0/extended-nameof-scope.md) feature specification.
 
 ## See also
 

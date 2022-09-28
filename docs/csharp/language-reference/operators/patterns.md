@@ -310,10 +310,12 @@ The preceding example takes a string array, where each element is one field in t
 
 For more information, see the following feature proposal notes:
 
-- [Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
-- [Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
-- [Pattern-matching changes for C# 9.0](~/_csharplang/proposals/csharp-9.0/patterns3.md)
-- [Extended property patterns (C# 10)](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [C# 7 - Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
+- [C# 8 - Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
+- [C# 9 - Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
+- [C# 10 - Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [C# 11 - List patterns](~/_csharplang/proposals/csharp-10.0/list-patterns.md)
+- [C# 11 - Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
 
 ## See also
 

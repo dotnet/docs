@@ -23,7 +23,7 @@ In this article, you will learn how to serialize properties of derived classes w
 
 :::zone pivot="dotnet-core-3-1,dotnet-5-0,dotnet-6-0"
 
-Before .NET 7, `System.Text.Json` _didn't support_ the serialization of polymorphic type hierarchies, for more information see [Polymorphic serialization in .NET 7](polymorphism.md?pivots=dotnet-7-0). For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
+In versions prior to .NET 7, `System.Text.Json` _doesn't support_ the serialization of polymorphic type hierarchies. For example, if a property's type is an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section. For information about support in .NET 7, see [Polymorphic serialization in .NET 7](polymorphism.md?pivots=dotnet-7-0).
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 
@@ -139,7 +139,7 @@ The following example shows the JSON that results from the preceding code:
 ```
 
 > [!NOTE]
-> This article is about serialization, not deserialization. Polymorphic deserialization is not supported, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](converters-how-to.md#support-polymorphic-deserialization). .NET 7 supports polymorphic serialization and deserialization, for more information see [How to serialize properties of derived classes with System.Text.Json in .NET 7](polymorphism.md?pivots=dotnet-7-0).
+> This article is about serialization, not deserialization. Polymorphic deserialization is not supported in versions prior to .NET 7, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](converters-how-to.md#support-polymorphic-deserialization). For more information about how .NET 7 supports polymorphic serialization and deserialization, see [How to serialize properties of derived classes with System.Text.Json in .NET 7](polymorphism.md?pivots=dotnet-7-0).
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
@@ -150,8 +150,8 @@ Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy se
 
 | Attribute | Description |
 |--|--|
-| <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> | When placed on a type declaration, indicates that the specified subtype should be opted into polymorphic serialization. Exposes the ability to specify a type discriminator. |
-| <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> | When placed on a type, indicates that the type should be serialized polymorphically. Exposes various options to configure polymorphism serialization and deserialization on the target type. |
+| <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> | When placed on a type declaration, indicates that the specified subtype should be opted into polymorphic serialization. It also exposes the ability to specify a type discriminator. |
+| <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> | When placed on a type declaration, indicates that the type should be serialized polymorphically. It also exposes various options to configure polymorphic serialization and deserialization for that type. |
 
 For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
 
@@ -161,12 +161,12 @@ For example, suppose you have a `WeatherForecastBase` class and a derived class 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWC":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWC":::
 
-And suppose the type argument of the `Serialize` method at compile time is `WeatherForecastBase`:
+And suppose the type argument of the `Serialize<TValue>` method at compile time is `WeatherForecastBase`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeWithAttributeAnnotations":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeWithAttributeAnnotations":::
 
-In this scenario, the `City` property is serialized even though the `weatherForecastBase` object is actually a `WeatherForecastWithCity` object. This configuration enables polymorphic serialization for `WeatherForecastBase`, specifically when the runtime type is `WeatherForecastWithCity`:
+In this scenario, the `City` property is serialized because the `weatherForecastBase` object is actually a `WeatherForecastWithCity` object. This configuration enables polymorphic serialization for `WeatherForecastBase`, specifically when the runtime type is `WeatherForecastWithCity`:
 
 ```json
 {
@@ -177,7 +177,7 @@ In this scenario, the `City` property is serialized even though the `weatherFore
 }
 ```
 
-While round-tripping of the payload as `WeatherForecastBase` is supported, it won't materialize as a runtime type of `WeatherForecastWithCity`. Instead, it will materialize as a runtime type of `WeatherForecastBase`:
+While round-tripping of the payload as `WeatherForecastBase` is supported, it won't materialize as a run-time type of `WeatherForecastWithCity`. Instead, it will materialize as a run-time type of `WeatherForecastBase`:
 
 ```csharp
 WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>("""
@@ -204,9 +204,11 @@ Dim value As WeatherForecastBase = JsonSerializer.Deserialize(@"
 Console.WriteLine(value is WeatherForecastWithCity) // False
 ```
 
+The following section describes how to add metadata to enable round-tripping of the derived type.
+
 ## Polymorphic type discriminators
 
-To enable polymorphic deserialization, users need to specify a type discriminator for the derived class:
+To enable polymorphic deserialization, you must specify a type discriminator for the derived class:
 
 ```csharp
 [JsonDerivedType(typeof(WeatherForecastBase), typeDiscriminator: "base")]
@@ -239,7 +241,7 @@ Public Class WeatherForecastWithCity
 End Class
 ```
 
-With the added metadata, specifically, the type discriminator, the serializer can serialize and deserialize the payload as the `WeatherForecastWithCity` type from its base type `WeatherForecastBase`. This will now emit JSON along with type discriminator metadata:
+With the added metadata, specifically, the type discriminator, the serializer can serialize and deserialize the payload as the `WeatherForecastWithCity` type from its base type `WeatherForecastBase`. Serialization will emit JSON along with the type discriminator metadata:
 
 ```csharp
 WeatherForecastBase weather = new WeatherForecastWithCity
@@ -369,7 +371,7 @@ Public NotInheritable Class FourDimensionalPoint
 End Class
 ```
 
-In the preceding example, the `BasePoint` doesn't have a type discriminator, while the `ThreeDimensionalPoint` type has an `int` type discriminator, and the `FourDimensionalPoint` has a `string` type discriminator.
+In the preceding example, the `BasePoint` type doesn't have a type discriminator, while the `ThreeDimensionalPoint` type has an `int` type discriminator, and the `FourDimensionalPoint` has a `string` type discriminator.
 
 > [!IMPORTANT]
 > For polymorphic serialization to work, the type of the serialized value should be that of the polymorphic base type. This includes using the base type as the generic type parameter when serializing root-level values, as the declared type of serialized properties, or as the collection element in serialized collections.
@@ -435,7 +437,10 @@ End Module
 
 ## Configure polymorphic serialization
 
-To customize the type discriminator, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute>. The following example shows how to configure the type discriminator name:
+
+### Customize the type discriminator key
+
+The default key name for the type discriminator is `$type`. To customize the key name, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> as shown in the following example:
 
 ```csharp
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "$discriminator")]
@@ -489,7 +494,7 @@ Console.WriteLine(json)
 
 ### Handle unknown derived types
 
-To handle unknown derived types, you must opt-in to support by configuring it appropriately. Consider the following type hierarchy:
+To handle unknown derived types, you must opt into such support using an annotation on the base type. Consider the following type hierarchy:
 
 ```csharp
 [JsonDerivedType(typeof(ThreeDimensionalPoint))]
@@ -528,7 +533,7 @@ Public NotInheritable Class FourDimensionalPoint
 End Class
 ```
 
-Since the configuration does not explicitly opt-in support for `FourDimensionalPoint`, attempting to serialize instances of `FourDimensionalPoint` as `BasePoint` will result in a runtime exception:
+Since the configuration does not explicitly opt-in support for `FourDimensionalPoint`, attempting to serialize instances of `FourDimensionalPoint` as `BasePoint` will result in a run-time exception:
 
 ```csharp
 JsonSerializer.Serialize<BasePoint>(new FourDimensionalPoint()); // throws NotSupportedException
@@ -538,7 +543,7 @@ JsonSerializer.Serialize<BasePoint>(new FourDimensionalPoint()); // throws NotSu
 JsonSerializer.Serialize(Of BasePoint)(New FourDimensionalPoint()) ' throws NotSupportedException
 ```
 
-The default behavior can be tweaked using the <xref:System.Text.Json.Serialization.JsonUnknownDerivedTypeHandling> enum, which can be specified as follows:
+You can change the default behavior by using the <xref:System.Text.Json.Serialization.JsonUnknownDerivedTypeHandling> enum, which can be specified as follows:
 
 ```csharp
 [JsonPolymorphic(
@@ -581,7 +586,7 @@ Public NotInheritable Class FourDimensionalPoint
 End Class
 ```
 
-The `FallBackToNearestAncestor` setting can be used to fall back to the contract of the nearest declared derived type:
+Instead of falling back to the base type, you can use the `FallBackToNearestAncestor` setting to fall back to the contract of the nearest declared derived type:
 
 ```csharp
 [JsonPolymorphic(
@@ -622,7 +627,7 @@ JsonSerializer.Serialize<IPoint>(new ThreeDimensionalPoint());
 JsonSerializer.Serialize(Of IPoint)(New ThreeDimensionalPoint())
 ```
 
-Falling back to the nearest ancestor admits the possibility of diamond ambiguity. Consider the following type hierarchy as an example:
+However, falling back to the nearest ancestor admits the possibility of "diamond" ambiguity. Consider the following type hierarchy as an example:
 
 ```csharp
 [JsonPolymorphic(
@@ -658,7 +663,7 @@ Public Class BasePointWithTimeSeries
 End Class
 ```
 
-In this case, the `BasePointWithTimeSeries` type could be serialized as either `BasePoint` or `BasePointWithTimeSeries`. This ambiguity will cause the <xref:System.NotSupportedException> to be thrown when attempting to serialize an instance of `BasePointWithTimeSeries` as `IPoint`.
+In this case, the `BasePointWithTimeSeries` type could be serialized as either `BasePoint` or `IPointWithTimeSeries` since they are both direct ancestors. This ambiguity will cause the <xref:System.NotSupportedException> to be thrown when attempting to serialize an instance of `BasePointWithTimeSeries` as `IPoint`.
 
 ```csharp
 // throws NotSupportedException
@@ -733,8 +738,8 @@ End Class
 
 ### Additional polymorphic serialization details
 
-* Polymorphic serialization supports derived types that have been explicitly opt-in via the <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>. Undeclared types will result in a runtime exception. The behavior can be changed by configuring the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.UnknownDerivedTypeHandling?displayProperty=nameWithType> property.
-* Polymorphic configuration specified in derived types is not inherited by polymorphic configuration in base types. These need to be configured independently.
+* Polymorphic serialization supports derived types that have been explicitly opted in via the <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>. Undeclared types will result in a run-time exception. The behavior can be changed by configuring the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.UnknownDerivedTypeHandling?displayProperty=nameWithType> property.
+* Polymorphic configuration specified in derived types is not inherited by polymorphic configuration in base types. The base type must be configured independently.
 * Polymorphic hierarchies are supported for both `interface` and `class` types.
 * Polymorphism using type discriminators is only supported for type hierarchies that use the default converters for objects, collections, and dictionary types.
 * Polymorphism is supported in metadata-based source generation, but not fast-path source generation.

@@ -276,10 +276,10 @@ The following example uses `dynamic` in several declarations. The `Main` method 
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [§8.2.3 The object type](~/_csharpstandard/standard/types#823-the-object-type)
-- [§8.2.4 The dynamic type](~/_csharpstandard/standard/types#824-the-dynamic-type)
-- [§8.2.5 The string type](~/_csharpstandard/standard/types#825-the-string-type)
-- [§8.2.8 Delegate types](~/_csharpstandard/standard/types#828-delegate-types)
+- [§8.2.3 The object type](~/_csharpstandard/standard/types.md#823-the-object-type)
+- [§8.2.4 The dynamic type](~/_csharpstandard/standard/types.md#824-the-dynamic-type)
+- [§8.2.5 The string type](~/_csharpstandard/standard/types.md#825-the-string-type)
+- [§8.2.8 Delegate types](~/_csharpstandard/standard/types.md#828-delegate-types)
 - [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
 - [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
 

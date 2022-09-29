@@ -16,7 +16,7 @@ namespace Serialization
 
     class IgnorePropertiesWithType
     {
-        private List<Type> _ignoredTypes = new List<Type>();
+        private List<Type> _ignoredTypes = new();
 
         public void IgnorePropertyWithType(Type type)
         {
@@ -28,7 +28,7 @@ namespace Serialization
             if (ti.Kind != JsonTypeInfoKind.Object)
                 return;
 
-            JsonPropertyInfo[] props = ti.Properties.Where((pi) => !_ignoredTypes.Contains(pi.PropertyType)).ToArray();
+            JsonPropertyInfo[] props = ti.Properties.Where(pi => !_ignoredTypes.Contains(pi.PropertyType)).ToArray();
             ti.Properties.Clear();
 
             foreach (var pi in props)
@@ -47,7 +47,7 @@ namespace Serialization
 
             JsonSerializerOptions options = new()
             {
-                TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+                TypeInfoResolver = new DefaultJsonTypeInfoResolver
                 {
                     Modifiers = { modifier.ModifyTypeInfo }
                 }
@@ -56,7 +56,7 @@ namespace Serialization
             ExampleClass obj = new()
             {
                 Name = "Password",
-                Secret = new SecretHolder() { Value = "MySecret" }
+                Secret = new SecretHolder { Value = "MySecret" }
             };
 
             string output = JsonSerializer.Serialize(obj, options);

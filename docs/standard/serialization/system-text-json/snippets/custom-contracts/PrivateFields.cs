@@ -23,7 +23,7 @@ namespace Serialization
 
         public static TestClass Create(string name, int age)
         {
-            TestClass tc = new TestClass
+            TestClass tc = new()
             {
                 _name = name,
                 _age = age
@@ -71,7 +71,7 @@ namespace Serialization
         {
             var options = new JsonSerializerOptions
             {
-                TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+                TypeInfoResolver = new DefaultJsonTypeInfoResolver
                 {
                     Modifiers = { AddPrivateFieldsModifier }
                 }

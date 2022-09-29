@@ -34,9 +34,8 @@ namespace Serialization
 
                 if (attribute != null)
                 {
-                    Action<object, object?>? set = propertyInfo.Set;
-
-                    if (set != null)
+                    Action<object, object?>? setProperty = propertyInfo.Set;
+                    if (setProperty is not null)
                     {
                         propertyInfo.Set = (obj, value) =>
                         {
@@ -46,7 +45,7 @@ namespace Serialization
                                 value = (int)value + 1;
                             }
 
-                            set(obj, value);
+                            setProperty (obj, value);
                         };
                     }
                 }
@@ -55,12 +54,14 @@ namespace Serialization
 
         public static void RunIt()
         {
-            var product = new Product();
-            product.Name = "Aquafresh";
+            var product = new Product
+            {
+                Name = "Aquafresh"
+            };
 
             JsonSerializerOptions options = new()
             {
-                TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+                TypeInfoResolver = new DefaultJsonTypeInfoResolver
                 {
                     Modifiers = { IncrementCounterModifier }
                 }

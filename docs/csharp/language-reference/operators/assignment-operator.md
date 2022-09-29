@@ -40,6 +40,8 @@ The following example demonstrates the usage of the ref assignment operator:
 
 :::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetRefAssignment":::
 
+In the preceding example, the ref local `arrayElement` variable is initialized as an alias to the first array element. Then, it's reassigned to become an alias to the last array element. As it's an alias, when you update its value with an ordinary assignment operator `=`, the corresponding array element is also updated.
+
 ## Compound assignment
 
 For a binary operator `op`, a compound assignment expression of the form

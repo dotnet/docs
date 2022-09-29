@@ -52,8 +52,8 @@ The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the be
 
 By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
-* You have a list of `Employee`s and you have to serialize each one individually.
-* you want to take advantage of the references saved in the `ReferenceHandler`'s resolver.
+* You have a list of `Employee` objects and you have to serialize each one individually.
+* You want to take advantage of the references saved in the resolver for the `ReferenceHandler`.
 
 Here is the `Employee` class:
 

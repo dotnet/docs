@@ -9,28 +9,17 @@ The <xref:System.Text.Json?displayProperty=fullName> library constructs a JSON *
 
 Starting in .NET 7, you can customize these JSON contracts to provide more control over how types are converted into JSON and vice versa. The following list shows just some examples of the types of customizations you can make to serialization and deserialization:
 
-- Serialize private fields.
+- Serialize private fields and properties.
 - Support multiple names for a single property (for example, if a previous library version used a different name).
-- Construct new properties for serialization.
 - Ignore properties with a specific name, type, or value.
-- Replace `null` values with some other value.
 - Distinguish between explicit `null` values vs. lack of a value in the JSON payload.
-
-## Other ways to customize
-
-Besides customizing a contract, there are other ways to influence serialization and deserialization behavior, including the following:
-
-- The use of attributes derived from <xref:System.Text.Json.Serialization.JsonAttribute>, for example, <xref:System.Text.Json.Serialization.JsonIgnoreAttribute> and <xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute>.
-- Modifying <xref:System.Text.Json.JsonSerializerOptions>, for example, to set a naming policy or serialize enumeration values as strings instead of numbers.
-- Writing a custom converter that does the actual work of writing the JSON and, during deserialization, constructing an object.
-
-Contract customization is an improvement over these pre-existing customizations because you might not have access to the type to add attributes, and writing a custom converter is complex and hurts performance.
+<!--Add links to blog post when published.-->
 
 ## How to opt in
 
 There are two ways to plug into customization. Both involve obtaining a resolver, whose job is to provide a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> instance for each type that needs to be serialized.
 
-- By calling the <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.%23ctor> constructor to obtain the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> and adding your custom actions to its <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.Modifiers> property.
+- By calling the <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.%23ctor> constructor to obtain the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> and adding your [custom actions](#modifiers) to its <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.Modifiers> property.
 
   For example:
 
@@ -52,17 +41,80 @@ There are two ways to plug into customization. Both involve obtaining a resolver
 
 - By writing a custom resolver that implements <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver>.
 
-  - If a type is not handled, <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.GetTypeInfo%2A?displayProperty=nameWithType> should return `null` for that type.
+  - If a type isn't handled, <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.GetTypeInfo%2A?displayProperty=nameWithType> should return `null` for that type.
   - You can also combine your custom resolver with others, for example, the default resolver. The resolvers will be queried in order until a non-null <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> value is returned for the type.
 
 ## Configurable aspects
 
-The <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind?displayProperty=nameWithType> property for a type indicates which aspects of its JSON contract are configurable. The `JsonTypeInfoKind.Object` kind ...
+The <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind?displayProperty=nameWithType> property indicates how the converter serializes a given type&mdash;for example, as an object or as an array, and whether its properties are serialized. You can query this property to determine which aspects of a type's JSON contract you can configure. There are four different kinds:
 
+| `JsonTypeInfo.Kind` | Description |
+| - | - |
+| [JsonTypeInfoKind.Object](/dotnet/api/system.text.json.serialization.metadata.jsontypeinfokind?view=net-7.0#system-text-json-serialization-metadata-jsontypeinfokind-object) | The converter will serialize the type into a JSON object and uses its properties. **This kind is used for most class and struct types and allows for the most flexibility.** |
+| [JsonTypeInfoKind.Enumerable](/dotnet/api/system.text.json.serialization.metadata.jsontypeinfokind?view=net-7.0#system-text-json-serialization-metadata-jsontypeinfokind-enumerable) | The converter will serialize the type into a JSON array. This kind is used for types like `List<T>` and array. |
+| [JsonTypeInfoKind.Dictionary](/dotnet/api/system.text.json.serialization.metadata.jsontypeinfokind?view=net-7.0#system-text-json-serialization-metadata-jsontypeinfokind-dictionary) | The converter will serialize the type into a JSON object. This kind is used for types like `Dictionary<K, V>`. |
+| [JsonTypeInfoKind.None](/dotnet/api/system.text.json.serialization.metadata.jsontypeinfokind?view=net-7.0#system-text-json-serialization-metadata-jsontypeinfokind-none) | The converter doesn't specify how it will serialize the type or what `JsonTypeInfo` properties it will use. This kind is used for types like <xref:System.Object?displayProperty=nameWithType>, `int`, and `string`, and for all types that use a custom converter. |
 
+## Modifiers
+
+A modifier is an `Action<JsonTypeInfo>` or a method with a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> parameter that gets the current state of the contract as an argument and makes modifications to the contract. For example, you could iterate through the prepopulated properties on the specified <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> to find the one you're interested in and then modify its <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.Get?displayProperty=nameWithType> property (for serialization) or <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.Set?displayProperty=nameWithType> property (for deserialization). Or, you can construct a new property using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonPropertyInfo(System.Type,System.String)?displayProperty=nameWithType> and add it to the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> collection.
+
+The following table shows the modifications you can make and how to achieve them.
+
+| Modification | Applicable `JsonTypeInfo.Kind` | How to achieve it | Example |
+| - | - | - | - |
+| Customize a property's value | `JsonTypeInfoKind.Object` | Modify the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.Get?displayProperty=nameWithType> delegate (for serialization) or <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.Set?displayProperty=nameWithType> delegate (for deserialization) for the property. | [Increment a property's value](#example-customize-a-property) |
+| Add or remove properties | `JsonTypeInfoKind.Object` | [Serialize private fields](#example-serialize-private-fields) |
+| Conditionally serialize a property | `JsonTypeInfoKind.Object` | Modify the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.ShouldSerialize?displayProperty=nameWithType> predicate for the property. | [Ignore properties with a specific type](#example-ignore-properties-with-a-specific-type) |
+| Customize number handling for a specific type | `JsonTypeInfoKind.None` | Modify the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.NumberHandling?displayProperty=nameWithType> value for the type. | [Allow int values to be strings](#example-allow-int-values-to-be-strings) |
+
+## Example: Increment a property's value
+
+Consider the following example where the modifier increments the value of a certain property on deserialization by modifying its <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.Set?displayProperty=nameWithType> delegate. Besides defining the modifier, the example also introduces a new attribute that it uses to locate the property whose value should be incremented. This is an example of *customizing a property*.
+
+:::code language="csharp" source="snippets/custom-contracts/SerializationCount.cs":::
+
+Notice in the output that the value of `RoundTrips` is incremented each time the `Product` instance is deserialized.
+
+## Example: Serialize private fields
+
+By default, `System.Text.Json` ignores private fields and properties. This example adds a new class-wide attribute, `JsonIncludePrivateFieldsAttribute`, to change that default. If the modifier finds the attribute on a type, it adds all the private fields on the type as new properties to <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo>.
+
+:::code language="csharp" source="snippets/custom-contracts/PrivateFields.cs":::
+
+> [!TIP]
+> If your private field names start with underscores, consider adding a JSON naming policy to remove the underscore and capitalize the name.
+
+## Example: Ignore properties with a specific type
+
+Perhaps your model has properties with specific names or types that you don't want to expose to users. For example, you might have a property that stores credentials or some information that's useless to have in the payload.
+
+The following example shows how to filter out properties with a specific type, `SecretHolder`. It does this by first clearing the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> list and then readding only those properties that don't have the specified type. The filtered properties will completely disappear from the contract, which means `System.Text.Json` won't look at them either during serialization or deserialization.
+
+:::code language="csharp" source="snippets/custom-contracts/IgnoreType.cs":::
+
+## Example: Allow int values to be strings
+
+Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which is hard. Using contract customization, you can customize the number handling behavior for any type.
+
+The following example changes the behavior for all `int` values. The example can be easily adjusted to apply to any type or for a specific property of any type.
+
+:::code language="csharp" source="snippets/custom-contracts/ReadIntFromString.cs":::
+
+Without the modifier to allow reading `int` values from a string, the program would have ended with:
+
+> Unhandled exception. System.Text.Json.JsonException: The JSON value could not be converted to System.Int32. Path: $.X | LineNumber: 0 | BytePositionInLine: 9.
+
+## Other ways to customize serialization
+
+Besides customizing a contract, there are other ways to influence serialization and deserialization behavior, including the following:
+
+- By using attributes derived from <xref:System.Text.Json.Serialization.JsonAttribute>, for example, <xref:System.Text.Json.Serialization.JsonIgnoreAttribute> and <xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute>.
+- By modifying <xref:System.Text.Json.JsonSerializerOptions>, for example, to set a naming policy or serialize enumeration values as strings instead of numbers.
+- By writing a custom converter that does the actual work of writing the JSON and, during deserialization, constructing an object.
+
+Contract customization is an improvement over these pre-existing customizations because you might not have access to the type to add attributes, and writing a custom converter is complex and hurts performance.
 
 ## See also
 
 - [JSON contract customization blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#json-contract-customization)
-
-- Combine reflection-based resolver with source-generated resolver

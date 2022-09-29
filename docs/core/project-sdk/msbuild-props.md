@@ -345,7 +345,10 @@ For more information, see [Write reference assemblies to intermediate output](..
 
 ### PublishDocumentationFile
 
-When this property is `true`, the XML Documentation file for the project (if one is created, see [GenerateDocumentationFile](#generatedocumentationfile)) will be included in the publish output for the project. This property defaults to `true`.
+When this property is `true`, the XML documentation file for the project, if one is generated, is included in the publish output for the project. This property defaults to `true`.
+
+> [!TIP]
+> Set [GenerateDocumentationFile](#generatedocumentationfile)) to `true` to generate an XML documentation file at compile time.
 
 ### PublishDocumentationFiles
 

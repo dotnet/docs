@@ -56,7 +56,7 @@ recommendations: false
 
 ## Using .NET
 
-.NET apps and libraries are built from source code and a project file, using the .[NET CLI](tools/index.md) or an Integrated Development Environment (IDE) like [Visual Studio](https://visualstudio.microsoft.com/).
+.NET apps and libraries are built from source code and a project file, using the [.NET CLI](tools/index.md) or an Integrated Development Environment (IDE) like [Visual Studio](https://visualstudio.microsoft.com/).
 
 The following example is a minimal .NET app:
 

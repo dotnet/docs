@@ -134,8 +134,6 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine("\n============================= Roundtrip to DataTable\n");
             RoundtripDataTable.Program.Main();
-
-
         }
     }
 }

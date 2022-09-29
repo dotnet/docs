@@ -12,8 +12,8 @@ Async methods can have the following return types:
 - <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
 - <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value.
 - `void`, for an event handler.
-- Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
-- Starting with C# 8.0, <xref:System.Collections.Generic.IAsyncEnumerable%601>, for an async method that returns an *async stream*.
+- Any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
+- <xref:System.Collections.Generic.IAsyncEnumerable%601>, for an async method that returns an *async stream*.
 
 For more information about async methods, see [Asynchronous programming with async and await (C#)](./index.md).
 
@@ -74,7 +74,7 @@ The following example shows the behavior of an async event handler. In the examp
 
 ## Generalized async return types and ValueTask\<TResult\>
 
-Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../../../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the feature spec for [Task like return types](~/_csharplang/proposals/csharp-7.0/task-types.md).
+An async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../../../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the feature spec for [Task like return types](~/_csharplang/proposals/csharp-7.0/task-types.md).
 
 This feature is the complement to [awaitable expressions](~/_csharpstandard/standard/expressions.md#11882-awaitable-expressions), which describes the requirements for the operand of `await`. Generalized async return types enable the compiler to generate `async` methods that return different types. Generalized async return types enabled performance improvements in the .NET libraries. Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
 
@@ -88,7 +88,7 @@ In C# 10 and later, you can apply the `AsyncMethodBuilder` attribute to an async
 
 ## Async streams with IAsyncEnumerable\<T\>
 
-Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
+An async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
 
 :::code language="csharp" source="snippets/async-return-types/AsyncStreams.cs" ID="GenerateAsyncStream":::
 

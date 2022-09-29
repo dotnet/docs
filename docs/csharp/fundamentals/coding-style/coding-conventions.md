@@ -263,7 +263,7 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17b":::
 
-  In C# 8 and later versions, use the new [`using` syntax](../../language-reference/keywords/using-statement.md) that doesn't require braces:
+  Use the new [`using` syntax](../../language-reference/keywords/using-statement.md) that doesn't require braces:
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17c":::
 

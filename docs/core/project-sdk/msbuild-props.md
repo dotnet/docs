@@ -132,7 +132,7 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
 
 ### CopyDebugSymbolFilesFromPackages
 
-When set to `true` this property causes all Symbol Files (also known as PDB files) from PackageReferences in the project to be copied to the build output. These can be used to provide more informative stack traces for exceptions, as well as making memory dumps and traces of the running application easier to understand, though including these files results in an increased deployment bundle size.
+When this property is set to `true`, all symbol files (also known as PDB files) from `PackageReference` items in the project are copied to the build output. These files can provide more informative stack traces for exceptions and make memory dumps and traces of the running application easier to understand. However, including these files results in an increased deployment bundle size.
 
 This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
 

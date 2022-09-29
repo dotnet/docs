@@ -89,19 +89,19 @@ By default, `System.Text.Json` ignores private fields and properties. This examp
 
 Perhaps your model has properties with specific names or types that you don't want to expose to users. For example, you might have a property that stores credentials or some information that's useless to have in the payload.
 
-The following example shows how to filter out properties with a specific type, `SecretHolder`. It does this by first clearing the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> list and then readding only those properties that don't have the specified type. The filtered properties will completely disappear from the contract, which means `System.Text.Json` won't look at them either during serialization or deserialization.
+The following example shows how to filter out properties with a specific type, `SecretHolder`. It does this by using an <xref:System.Collections.Generic.IList%601> extension method to remove any properties that have the specified type from the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties?displayProperty=nameWithType> list. The filtered properties completely disappear from the contract, which means `System.Text.Json` doesn't look at them either during serialization or deserialization.
 
 :::code language="csharp" source="snippets/custom-contracts/IgnoreType.cs":::
 
 ## Example: Allow int values to be strings
 
-Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which is involved. Using contract customization, you can customize the number handling behavior for any type.
+Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which requires righting a fair bit of code. Using contract customization, you can customize the number handling behavior for any type.
 
 The following example changes the behavior for all `int` values. The example can be easily adjusted to apply to any type or for a specific property of any type.
 
 :::code language="csharp" source="snippets/custom-contracts/ReadIntFromString.cs":::
 
-Without the modifier to allow reading `int` values from a string, the program would have ended with:
+Without the modifier to allow reading `int` values from a string, the program would have ended with an exception:
 
 > Unhandled exception. System.Text.Json.JsonException: The JSON value could not be converted to System.Int32. Path: $.X | LineNumber: 0 | BytePositionInLine: 9.
 

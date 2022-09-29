@@ -9,27 +9,27 @@ namespace Serialization
     public class JsonIncludePrivateFieldsAttribute : Attribute { }
 
     [JsonIncludePrivateFields]
-    public class TestClass
+    public class Human
     {
         private string _name;
         private int _age;
 
-        public TestClass()
+        public Human()
         {
             // This constructor should be used only by deserializers.
             _name = null!;
             _age = 0;
         }
 
-        public static TestClass Create(string name, int age)
+        public static Human Create(string name, int age)
         {
-            TestClass tc = new()
+            Human h = new()
             {
                 _name = name,
                 _age = age
             };
 
-            return tc;
+            return h;
         }
 
         [JsonIgnore]
@@ -77,13 +77,13 @@ namespace Serialization
                 }
             };
 
-            var value = TestClass.Create("Julius", 37);
-            string json = JsonSerializer.Serialize(value, options);
+            var human = Human.Create("Julius", 37);
+            string json = JsonSerializer.Serialize(human, options);
             Console.WriteLine(json);
             // {"_name":"Julius","_age":37}
 
-            TestClass result = JsonSerializer.Deserialize<TestClass>(json, options)!;
-            Console.WriteLine($"[Name={result.Name}; Age={result.Age}]");
+            Human deserializedHuman = JsonSerializer.Deserialize<Human>(json, options)!;
+            Console.WriteLine($"[Name={deserializedHuman.Name}; Age={deserializedHuman.Age}]");
             // [Name=Julius; Age=37]
         }
     }

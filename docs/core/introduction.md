@@ -154,7 +154,7 @@ The runtime is designed to support multiple programming languages. C#, F#, and V
 
 IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models.
 
-* On Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
+* On Android, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
 * On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
 * In WebAssembly (Wasm) environments, AOT is mandatory.
 

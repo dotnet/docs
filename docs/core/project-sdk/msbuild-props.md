@@ -138,7 +138,7 @@ This property was introduced in .NET SDK 7.0.100, though it defaults to not bein
 
 ### CopyDocumentationFilesFromPackages
 
-When set to `true` this property causes all generated XML Documentation from PackageReferences in the project to be copied to the build output. Note that enabling this feature will result in increased deployment bundle size.
+When this property is set to `true`, all generated XML documentation files from `PackageReference` items in the project are copied to the build output. Note that enabling this feature will result in increased deployment bundle size.
 
 This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
 

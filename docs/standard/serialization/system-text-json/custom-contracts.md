@@ -95,7 +95,7 @@ The following example shows how to filter out properties with a specific type, `
 
 ## Example: Allow int values to be strings
 
-Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which requires righting a fair bit of code. Using contract customization, you can customize the number handling behavior for any type.
+Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which requires writing a fair bit of code. Using contract customization, you can customize the number handling behavior for any type.
 
 The following example changes the behavior for all `int` values. The example can be easily adjusted to apply to any type or for a specific property of any type.
 

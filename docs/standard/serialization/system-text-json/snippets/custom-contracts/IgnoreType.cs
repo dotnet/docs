@@ -16,25 +16,17 @@ namespace Serialization
 
     class IgnorePropertiesWithType
     {
-        private List<Type> _ignoredTypes = new();
+        private readonly Type[] _ignoredTypes;
 
-        public void IgnorePropertyWithType(Type type)
-        {
-            _ignoredTypes.Add(type);
-        }
+        public IgnorePropertiesWithType(params Type[] ignoredTypes)
+            => _ignoredTypes = ignoredTypes;
 
         public void ModifyTypeInfo(JsonTypeInfo ti)
         {
             if (ti.Kind != JsonTypeInfoKind.Object)
                 return;
 
-            JsonPropertyInfo[] props = ti.Properties.Where(pi => !_ignoredTypes.Contains(pi.PropertyType)).ToArray();
-            ti.Properties.Clear();
-
-            foreach (var pi in props)
-            {
-                ti.Properties.Add(pi);
-            }
+            ti.Properties.RemoveAll(prop => _ignoredTypes.Contains(prop.PropertyType));
         }
     }
 
@@ -42,8 +34,7 @@ namespace Serialization
     {
         public static void RunIt()
         {
-            var modifier = new IgnorePropertiesWithType();
-            modifier.IgnorePropertyWithType(typeof(SecretHolder));
+            var modifier = new IgnorePropertiesWithType(typeof(SecretHolder));
 
             JsonSerializerOptions options = new()
             {
@@ -62,6 +53,21 @@ namespace Serialization
             string output = JsonSerializer.Serialize(obj, options);
             Console.WriteLine(output);
             // {"Name":"Password"}
+        }
+    }
+
+    public static class ListHelpers
+    {
+        // IList<T> implementation of List<T>.RemoveAll method.
+        public static void RemoveAll<T>(this IList<T> list, Predicate<T> predicate)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (predicate(list[i]))
+                {
+                    list.RemoveAt(i--);
+                }
+            }
         }
     }
 }

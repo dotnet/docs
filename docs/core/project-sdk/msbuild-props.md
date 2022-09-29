@@ -352,7 +352,7 @@ When this property is `true`, the XML documentation file for the project, if one
 
 ### PublishDocumentationFiles
 
-This property is an enablement flag for several other properties that control if various kinds of XML Documentation files are copied to the publish directory by default. See [PublishDocumentationFile](#publishdocumentationfile) and [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles). If those properties are unset, and this property is set, then those properties will default to `true`. This property defaults to `true`.
+This property is an enablement flag for several other properties that control whether various kinds of XML documentation files are copied to the publish directory by default, namely [PublishDocumentationFile](#publishdocumentationfile) and [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles). If those properties are unset, and this property is set, then those properties will default to `true`. This property defaults to `true`.
 
 ### PublishReferencesDocumentationFiles
 

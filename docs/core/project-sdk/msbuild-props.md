@@ -356,7 +356,7 @@ This property is an enablement flag for several other properties that control wh
 
 ### PublishReferencesDocumentationFiles
 
-When this property is `true`, XML Documentation files for the project's references will be copied to the publish directory, not just runtime assets like DLL files.  This property defaults to `true`.
+When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 

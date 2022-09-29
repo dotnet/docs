@@ -143,11 +143,12 @@ For more information, see the [Structs](~/_csharpstandard/standard/structs.md) s
 
 For more information about `struct` features, see the following feature proposal notes:
 
-- [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
-- [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
-- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
-- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
-- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
+- [C# 7.2 - Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
+- [C# 8 - Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
+- [C# 10 - Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
+- [C# 10 - Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [C# 10 - Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
+- [C# 11 - Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
 
 ## See also
 

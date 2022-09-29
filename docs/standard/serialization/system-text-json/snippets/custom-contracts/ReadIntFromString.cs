@@ -24,7 +24,7 @@ namespace Serialization
         {
             JsonSerializerOptions options = new()
             {
-                TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+                TypeInfoResolver = new DefaultJsonTypeInfoResolver
                 {
                     Modifiers = { SetNumberHandlingModifier }
                 }

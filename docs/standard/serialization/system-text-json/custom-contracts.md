@@ -12,7 +12,7 @@ Starting in .NET 7, you can customize these JSON contracts to provide more contr
 - Serialize private fields and properties.
 - Support multiple names for a single property (for example, if a previous library version used a different name).
 - Ignore properties with a specific name, type, or value.
-- Distinguish between explicit `null` values vs. lack of a value in the JSON payload.
+- Distinguish between explicit `null` values and the lack of a value in the JSON payload.
 <!--Add links to blog post when published.-->
 
 ## How to opt in
@@ -26,7 +26,7 @@ There are two ways to plug into customization. Both involve obtaining a resolver
   ```csharp
   JsonSerializerOptions options = new()
   {
-      TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+      TypeInfoResolver = new DefaultJsonTypeInfoResolver
       {
           Modifiers =
           {
@@ -37,7 +37,7 @@ There are two ways to plug into customization. Both involve obtaining a resolver
   };
   ```
 
-  If you add multiple modifiers, they'll be called serially.
+  If you add multiple modifiers, they'll be called sequentially.
 
 - By writing a custom resolver that implements <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver>.
 
@@ -95,7 +95,7 @@ The following example shows how to filter out properties with a specific type, `
 
 ## Example: Allow int values to be strings
 
-Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which is hard. Using contract customization, you can customize the number handling behavior for any type.
+Perhaps your input JSON can contain quotes around one of the numeric types but not on others. If you had control over the class, you could place <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> on the type to fix this, but you don't. Before .NET 7, you'd need to write a [custom converter](converters-how-to.md) to fix this behavior, which is involved. Using contract customization, you can customize the number handling behavior for any type.
 
 The following example changes the behavior for all `int` values. The example can be easily adjusted to apply to any type or for a specific property of any type.
 

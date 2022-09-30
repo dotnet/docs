@@ -236,7 +236,6 @@ The following sections provide converter samples that address some common scenar
 ::: zone pivot="dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
-* [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
 * [Use default system converter](#use-default-system-converter).
@@ -353,7 +352,7 @@ The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e
 
 ### Support polymorphic deserialization
 
-Built-in features provide a limited range of [polymorphic serialization](polymorphism.md) but no support for deserialization at all. Deserialization requires a custom converter.
+.NET 7 provides support for both [polymorphic serialization and deserialization](polymorphism.md). However, in previous .NET versions, there was limited polymorphic serialization support and no support for deserialization. If you're using .NET 6 or an earlier version, deserialization requires a custom converter.
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 

@@ -1,4 +1,4 @@
-﻿namespace Transactional.Abstractions;
+﻿namespace TransactionalExample.Abstractions;
 
 public interface IAccountGrain : IGrainWithGuidKey
 {

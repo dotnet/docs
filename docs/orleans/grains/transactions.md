@@ -26,19 +26,7 @@ To use transactions, you need to configure a data store. To support various data
 
 For example, consider the following host builder configuration:
 
-```csharp
-var builder = new HostBuilder()
-    UseOrleans(siloBuilder =>
-    {
-        siloBuilder.AddAzureTableTransactionalStateStorage(
-            "TransactionStore",
-            options =>
-            {
-                options.ConnectionString = "YOUR_STORAGE_CONNECTION_STRING");
-            })
-            .UseTransactions();
-    });
-```
+:::code source="snippets/transactions/Server/Program.cs":::
 
 For development purposes, if transaction-specific storage is not available for the datastore you need, an `IGrainStorage` implementation may be used instead. For any transactional state that doesn't have a store configured, transactions will attempt to fail over to the grain storage using a bridge. Accessing a transactional state via a bridge to grain storage will be less efficient and isn't a pattern we intend to support long-term, hence the recommendation is to only use this for development purposes.
 
@@ -55,32 +43,14 @@ For a grain to support transactions, transactional methods on a grain interface 
 
 Calls can be marked as `TransactionOption.Create`, meaning the call will always start its transaction. For example, the `Transfer` operation in the ATM grain below will always start a new transaction that involves the two referenced accounts.
 
-```csharp
-public interface IAtmGrain : IGrainWithIntegerKey
-{
-    [Transaction(TransactionOption.Create)]
-    Task Transfer(Guid fromAccount, Guid toAccount, uint amountToTransfer);
-}
-```
+:::code source="snippets/transactions/Abstractions/IAtmGrain.cs":::
 
 > [!IMPORTANT]
 > A transactional grain must be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to ensure that the transaction context is correctly passed to the grain call.
 
 The transactional operations `Withdraw` and `Deposit` on the account grain are marked `TransactionOption.Join`, indicating that they can only be called within the context of an existing transaction, which would be the case if they were called during `IAtmGrain.Transfer`. The `GetBalance` call is marked `CreateOrJoin` so it can be called from within an existing transaction, like via `IAtmGrain.Transfer`, or on its own.
 
-```csharp
-public interface IAccountGrain : IGrainWithGuidKey
-{
-    [Transaction(TransactionOption.Join)]
-    Task Withdraw(uint amount);
-
-    [Transaction(TransactionOption.Join)]
-    Task Deposit(uint amount);
-
-    [Transaction(TransactionOption.CreateOrJoin)]
-    Task<uint> GetBalance();
-}
-```
+:::code source="snippets/transactions/Abstractions/IAccountGrain.cs":::
 
 ### Important considerations
 
@@ -117,33 +87,17 @@ public class TransactionalStateAttribute : Attribute
 
 For example, consider the following `AccountGrain` implementation:
 
-```csharp
-[Reentrant]
-public class AccountGrain : Grain, IAccountGrain
-{
-    private readonly ITransactionalState<Balance> _balance;
-
-    public AccountGrain(
-        [TransactionalState("balance", "TransactionStore")]
-        ITransactionalState<Balance> balance) =>
-        _balance = balance ?? throw new ArgumentNullException(nameof(balance));
-
-    Task IAccountGrain.Deposit(uint amount) =>
-        _balance.PerformUpdate(x => x.Value += amount);
-
-    Task IAccountGrain.Withdrawal(uint amount) =>
-        _balance.PerformUpdate(x => x.Value -= amount);
-
-    Task<uint> IAccountGrain.GetBalance() =>
-        _balance.PerformRead(x => x.Value);
-}
-```
+:::code source="snippets/transactions/Grains/AccountGrain.cs":::
 
 In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> is used to declare that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans will inject an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> instance with a state loaded from the transactional state storage named `"TransactionStore"`. The state can be modified via `PerformUpdate` or read via `PerformRead`. The transaction infrastructure will ensure that any such changes performed as part of a transaction, even among multiple grains distributed over an Orleans cluster, will either all be committed or all be undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
 
+Consider the `AtmGrain` implementation, which resolves the two referenced account grains and makes the appropriate calls to `WithDraw` and `Deposit`:
+
+:::code source="snippets/transactions/Grains/AtmGrain.cs":::
+
 ## Call transactions
 
-Transactional methods on a grain interface are called like any other grain method.
+Transactional methods on a grain interface are called like any other grain method. The `AtmGrain` implementation below calls the `Transfer` method (which is transactional) on the `IAccountGrain` interface.
 
 ```csharp
 IAtmGrain atmOne = client.GetGrain<IAtmGrain>(1);

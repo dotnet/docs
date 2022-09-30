@@ -6,7 +6,12 @@ ms.date: 09/29/2022
 
 # Orleans transactions
 
-Orleans supports distributed ACID transactions against persistent grain state. Transactions are implemented using the [Microsoft.Orleans.Transactions](https://www.nuget.org/packages/Microsoft.Orleans.Transactions) NuGet package.
+Orleans supports distributed ACID transactions against persistent grain state. Transactions are implemented using the [Microsoft.Orleans.Transactions](https://www.nuget.org/packages/Microsoft.Orleans.Transactions) NuGet package. The source code for the sample app in this article is comprised of four projects:
+
+- ***Abstractions***: Contains the grain interfaces and shared classes.
+- ***Grains***: Contains the grain implementations.
+- ***Server***: Contains the Orleans silo.
+- ***Client***: Contains the Orleans client.
 
 ## Setup
 

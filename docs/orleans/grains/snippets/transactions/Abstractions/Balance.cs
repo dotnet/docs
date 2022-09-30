@@ -1,7 +1,8 @@
 ﻿namespace Transactional.Abstractions;
 
-[Serializable]
+[GenerateSerializer]
 public record class Balance
 {
-    public uint Value { get; set; } = 1_000;
+    [Id(0)]
+    public decimal Value { get; set; } = 1_000;
 }

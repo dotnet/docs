@@ -1,13 +1,15 @@
 ﻿using IHost host = Host.CreateDefaultBuilder(args)
     .UseOrleansClient((_, builder) =>
     {
-        builder.UseLocalhostClustering();
+        builder.UseLocalhostClustering()
+            .UseTransactions();
     })
     .Build();
 
 await host.StartAsync();
 
 var client = host.Services.GetRequiredService<IClusterClient>();
+var transactionClient= host.Services.GetRequiredService<ITransactionClient>();
 var accountNames = new[]
 { 
     KnownAccounts.Ida, KnownAccounts.Stacy, KnownAccounts.Xaawo,
@@ -17,8 +19,6 @@ var random = Random.Shared;
 
 while (!Console.KeyAvailable)
 {
-    var atm = client.GetGrain<IAtmGrain>(1);
-
     // Choose some random accounts to exchange money
     var fromId = random.Next(accountNames.Length);
     var toId = random.Next(accountNames.Length);
@@ -36,19 +36,26 @@ while (!Console.KeyAvailable)
     // Perform the transfer and query the results
     try
     {
-        await atm.Transfer(fromLookup.Id, toLookup.Id, 100);
+        var transferAmount = random.Next(200);
+
+        await transactionClient.RunTransaction(
+            TransactionOption.Create, async () =>
+            {
+                await from.Withdraw(transferAmount);
+                await to.Deposit(transferAmount);
+            });
 
         var fromBalance = await from.GetBalance();
         var toBalance = await to.GetBalance();
 
         Console.WriteLine(
-            $"We transfered 100 credits from {fromLookup} to " +
+            $"We transfered {transferAmount} credits from {fromLookup} to " +
             $"{toLookup}.\n{fromLookup} balance: {fromBalance}\n{toLookup} balance: {toBalance}\n");
     }
     catch (Exception exception)
     {
         Console.WriteLine(
-            $"Error transfering 100 credits from " +
+            $"Error transfering credits from " +
             $"{fromLookup} to {toLookup}: {exception.Message}");
 
         if (exception.InnerException is { } inner)

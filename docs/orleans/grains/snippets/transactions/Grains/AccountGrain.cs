@@ -6,15 +6,15 @@ public class AccountGrain : Grain, IAccountGrain
     private readonly ITransactionalState<Balance> _balance;
 
     public AccountGrain(
-        [TransactionalState("balance", "TransactionStore")]
+        [TransactionalState("balance")]
         ITransactionalState<Balance> balance) =>
         _balance = balance ?? throw new ArgumentNullException(nameof(balance));
 
-    public Task Deposit(uint amount) =>
+    public Task Deposit(decimal amount) =>
         _balance.PerformUpdate(
             balance => balance.Value += amount);
 
-    public Task Withdraw(uint amount) =>
+    public Task Withdraw(decimal amount) =>
         _balance.PerformUpdate(balance =>
         {
             if (balance.Value < amount)
@@ -28,6 +28,6 @@ public class AccountGrain : Grain, IAccountGrain
             balance.Value -= amount;
         });
 
-    public Task<uint> GetBalance() =>
+    public Task<decimal> GetBalance() =>
         _balance.PerformRead(balance => balance.Value);
 }

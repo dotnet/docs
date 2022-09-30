@@ -3,11 +3,11 @@
 public interface IAccountGrain : IGrainWithGuidKey
 {
     [Transaction(TransactionOption.Join)]
-    Task Withdraw(uint amount);
+    Task Withdraw(decimal amount);
 
     [Transaction(TransactionOption.Join)]
-    Task Deposit(uint amount);
+    Task Deposit(decimal amount);
 
     [Transaction(TransactionOption.CreateOrJoin)]
-    Task<uint> GetBalance();
+    Task<decimal> GetBalance();
 }

@@ -9,21 +9,23 @@ ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
 ---
 # How to declare, instantiate, and use a Delegate (C# Programming Guide)
 
-In C# 1.0 and later, delegates can be declared as shown in the following example.  
+You can declare delegates using any of the following methods:
+
+- Declare a delegate type and declare a method with a matching signature:
   
  [!code-csharp[csProgGuideDelegates#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#13)]  
   
  [!code-csharp[csProgGuideDelegates#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#14)]  
   
- C# 2.0 provides a simpler way to write the previous declaration, as shown in the following example.  
+- Assign a method group to a delegate type:
   
  [!code-csharp[csProgGuideDelegates#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#32)]  
   
- In C# 2.0 and later, it is also possible to use an anonymous method to declare and initialize a [delegate](../../language-reference/builtin-types/reference-types.md), as shown in the following example.  
+- Declare an anonymous method:
   
  [!code-csharp[csProgGuideDelegates#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#15)]  
   
- In C# 3.0 and later, delegates can also be declared and instantiated by using a lambda expression, as shown in the following example.  
+- Use a lambda expression:
   
  [!code-csharp[csProgGuideDelegates#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#31)]  
   

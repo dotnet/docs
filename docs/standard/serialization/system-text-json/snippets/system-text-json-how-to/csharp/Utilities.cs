@@ -15,6 +15,31 @@ namespace SystemTextJsonSamples
                 {
                     Console.WriteLine($"{property.Name}: {property.GetGetMethod()!.Invoke(obj, null)}");
                 }
+                else
+                {
+                    object? values = property.GetGetMethod()!.Invoke(obj, null);
+                    if (values is System.Collections.IDictionary dictionary)
+                    {
+                        foreach (object? kvp in dictionary)
+                        {
+                            Console.WriteLine($"    {kvp}");
+                        }
+                    }
+                    else if (values is System.Collections.ICollection collection)
+                    {
+                        foreach (object? value in collection)
+                        {
+                            Console.WriteLine($"    {value}");
+                        }
+                    } 
+                    else if (values is System.Collections.IList list)
+                    {
+                        foreach (object? value in list)
+                        {
+                            Console.WriteLine($"    {value}");
+                        }
+                    }
+                }
             }
         }
     }

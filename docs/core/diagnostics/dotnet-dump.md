@@ -11,6 +11,9 @@ ms.topic: reference
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
+> [!TIP]
+> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
+
 ## Install
 
 There are two ways to download and install `dotnet-dump`:
@@ -100,7 +103,7 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
 - **`-o|--output <output_dump_path>`**
 
-  The full path and file name where the collected dump should be written.
+  The full path and file name where the collected dump should be written. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.
 
   If not specified:
 

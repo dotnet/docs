@@ -56,7 +56,7 @@ Properties aren't variables. They're methods, and can't be passed to `ref` param
 You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:
 
 - Async methods, which you define by using the [async](async.md) modifier.
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+- Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
 
 [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) also have restrictions on the use of these keywords:
 
@@ -123,9 +123,7 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 In both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Can't initialize a by-reference variable with a value."
 
-Beginning with C# 7.3, the iteration variable of the `foreach` statement can be a ref local or ref readonly local variable. For more information, see the [foreach statement](../statements/iteration-statements.md#the-foreach-statement) article.
-
-Also beginning with C# 7.3, you can reassign a ref local or ref readonly local variable with the [ref assignment operator](../operators/assignment-operator.md#ref-assignment).
+The iteration variable of the `foreach` statement can be a ref local or ref readonly local variable. For more information, see the [foreach statement](../statements/iteration-statements.md#the-foreach-statement) article. you can reassign a ref local or ref readonly local variable with the [ref assignment operator](../operators/assignment-operator.md#ref-assignment).
 
 ## Ref readonly locals
 

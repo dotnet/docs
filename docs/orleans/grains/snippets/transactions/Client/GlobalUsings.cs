@@ -2,4 +2,4 @@
 global using Microsoft.Extensions.Hosting;
 global using Orleans;
 global using Orleans.Hosting;
-global using Transactional.Abstractions;
+global using TransactionalExample.Abstractions;

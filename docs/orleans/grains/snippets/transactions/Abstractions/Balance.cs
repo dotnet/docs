@@ -1,4 +1,4 @@
-﻿namespace Transactional.Abstractions;
+﻿namespace TransactionalExample.Abstractions;
 
 [GenerateSerializer]
 public record class Balance

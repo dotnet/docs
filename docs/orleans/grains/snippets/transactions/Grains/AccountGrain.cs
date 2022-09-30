@@ -1,4 +1,4 @@
-﻿namespace Transactional.Grains;
+﻿namespace TransactionalExample.Grains;
 
 [Reentrant]
 public class AccountGrain : Grain, IAccountGrain
@@ -6,7 +6,7 @@ public class AccountGrain : Grain, IAccountGrain
     private readonly ITransactionalState<Balance> _balance;
 
     public AccountGrain(
-        [TransactionalState("balance")]
+        [TransactionalState(nameof(balance))]
         ITransactionalState<Balance> balance) =>
         _balance = balance ?? throw new ArgumentNullException(nameof(balance));
 

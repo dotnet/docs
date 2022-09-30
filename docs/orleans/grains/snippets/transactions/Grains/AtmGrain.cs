@@ -1,4 +1,4 @@
-﻿namespace Transactional.Grains;
+﻿namespace TransactionalExample.Grains;
 
 [StatelessWorker]
 public class AtmGrain : Grain, IAtmGrain
@@ -6,8 +6,8 @@ public class AtmGrain : Grain, IAtmGrain
     public Task Transfer(
         Guid fromId,
         Guid toId,
-        uint amountToTransfer) =>
+        decimal amount) =>
         Task.WhenAll(
-            GrainFactory.GetGrain<IAccountGrain>(fromId).Withdraw(amountToTransfer),
-            GrainFactory.GetGrain<IAccountGrain>(toId).Deposit(amountToTransfer));
+            GrainFactory.GetGrain<IAccountGrain>(fromId).Withdraw(amount),
+            GrainFactory.GetGrain<IAccountGrain>(toId).Deposit(amount));
 }

@@ -478,6 +478,43 @@ let printListWithOffsetPiped list1 =
     printfn $"A very long line to format the value: %d{elem}")
 ```
 
+In case the arguments of a lambda do not fit on a single line, or are multiline themselves, put them on the next line, indented by one level.
+
+```fsharp
+// ✔️ OK
+fun
+    (aVeryLongParameterName: AnEquallyLongTypeName)
+    (anotherVeryLongParameterName: AnotherLongTypeName)
+    (yetAnotherLongParameterName: LongTypeNameAsWell)
+    (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    // code starts here
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above to respect the maximum line length.
+fun (aVeryLongParameterName: AnEquallyLongTypeName) (anotherVeryLongParameterName: AnotherLongTypeName) (yetAnotherLongParameterName: LongTypeNameAsWell) (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    ()
+
+// ✔️ OK
+let useAddEntry () =
+    fun
+        (input:
+            {| name: string
+               amount: Amount
+               isIncome: bool
+               created: string |}) ->
+         // foo
+         bar ()
+
+// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+let useAddEntry () =
+    fun (input: {| name: string
+                   amount: Amount
+                   isIncome: bool
+                   created: string |}) ->
+        // foo
+        bar ()
+```
+
 ### Formatting arithmetic and binary expressions
 
 Always use white space around binary arithmetic expressions:

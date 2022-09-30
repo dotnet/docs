@@ -36,11 +36,11 @@ You could access properties to get and set the value as shown in the following e
 
 Property accessors often consist of single-line statements that just assign or return the result of an expression. You can implement these properties as expression-bodied members. Expression body definitions consist of the `=>` symbol followed by the expression to assign to or retrieve from the property.
 
-Beginning with C# 6, read-only properties can implement the `get` accessor as an expression-bodied member. In this case, neither the `get` accessor keyword nor the `return` keyword is used. The following example implements the read-only `Name` property as an expression-bodied member.
+Read-only properties can implement the `get` accessor as an expression-bodied member. In this case, neither the `get` accessor keyword nor the `return` keyword is used. The following example implements the read-only `Name` property as an expression-bodied member.
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="ExpressionBodiedProperty":::
 
-Beginning with C# 7.0, both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. The `return` keyword isn't used with the `get` accessor.
+Both the `get` and the `set` accessor can be implemented as expression-bodied members. In this case, the `get` and `set` keywords must be present. The following example illustrates the use of expression body definitions for both accessors. The `return` keyword isn't used with the `get` accessor.
 
 :::code language="csharp" source="./snippets/properties/SaleItem.cs" id="SaleItemV1":::
 

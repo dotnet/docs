@@ -15,7 +15,7 @@ Access modifiers are keywords used to specify the declared accessibility of a me
 - `private`
 - `file`
 
- The following six accessibility levels can be specified using the access modifiers:
+ The following seven accessibility levels can be specified using the access modifiers:
 
 - [`public`](public.md): Access isn't restricted.
 - [`protected`](protected.md): Access is limited to the containing class or types derived from the containing class.

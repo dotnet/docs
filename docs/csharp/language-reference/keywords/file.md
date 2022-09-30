@@ -37,7 +37,7 @@ In another source file, you can declare types that have the same names as the fi
 
 ## C# language specification  
 
-For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md), and the [C# 11 - File local types](~/_csharplang/proposals/csharp-11.0/file-local-types.md) feature specification.
 
 ## See also
 

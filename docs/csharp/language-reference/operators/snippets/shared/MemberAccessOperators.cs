@@ -206,8 +206,8 @@ public static class MemberAccessOperators
         Write(oneThroughTen, 3..^4);
         Write(oneThroughTen, ^4..^2);
 
-        void Write(int[] values, Range range) =>
-            Console.WriteLine($"{range}:\tstring.Join(", ", values[range])");
+        static void Write(int[] values, Range range) =>
+            Console.WriteLine($"{range}:\t{string.Join(", ", values[range])}");
         // Sample output:
         //      0..^0:      1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         //      0..3:       1, 2, 3

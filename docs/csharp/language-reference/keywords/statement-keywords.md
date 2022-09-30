@@ -20,7 +20,7 @@ Statements are program instructions. Except as described in the topics reference
 |[checked and unchecked statements](../statements/checked-and-unchecked.md)|`checked`, `unchecked`|
 |[fixed statement](../statements/fixed.md)|`fixed`|
 |[lock statement](../statements/lock.md)|`lock`|
-|[yield statement](yield.md)|`yield`|
+|[yield statement](../statements/yield.md)|`yield`|
 
 ## See also
 

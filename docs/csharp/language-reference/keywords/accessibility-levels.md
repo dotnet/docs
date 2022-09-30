@@ -18,7 +18,7 @@ Use the access modifiers, `public`, `protected`, `internal`, or `private`, to sp
 |[`internal`](internal.md)|Access is limited to the current assembly.|  
 |[`protected internal`](protected-internal.md)|Access is limited to the current assembly or types derived from the containing class.|  
 |[`private`](private.md)|Access is limited to the containing type.|  
-|[`private protected`](private-protected.md)|Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2. |  
+|[`private protected`](private-protected.md)|Access is limited to the containing class or types derived from the containing class within the current assembly. |  
   
  Only one access modifier is allowed for a member or type, except when you use the `protected internal` or `private protected` combinations.  
   

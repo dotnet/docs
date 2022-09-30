@@ -146,12 +146,12 @@ In the preceding example, the <xref:Orleans.Transactions.Abstractions.Transactio
 Transactional methods on a grain interface are called like any other grain method.
 
 ```csharp
-IAtmGrain atm = client.GetGrain<IAtmGrain>(0);
+IAtmGrain atmOne = client.GetGrain<IAtmGrain>(1);
 
 Guid from = Guid.NewGuid();
 Guid to = Guid.NewGuid();
 
-await atm.Transfer(from, to, 100);
+await atmOne.Transfer(from, to, 100);
 
 uint fromBalance = await client.GetGrain<IAccountGrain>(from).GetBalance();
 uint toBalance = await client.GetGrain<IAccountGrain>(to).GetBalance();

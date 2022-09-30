@@ -82,6 +82,15 @@ public class TransactionalStateAttribute : Attribute
 }
 ```
 
+As an example, the `Balance` state object is defined as follows:
+
+:::code source="snippets/transactions/Abstractions/Balance.cs":::
+
+The preceding state object:
+
+- Is decorated with the <xref:Orleans.CodeGeneration.GenerateSerializerAttribute> to instruct the Orleans code generator to generate a serializer.
+- Has its `Value` property decorated with the `IdAttribute` to uniquely identify the member.
+
 For example, consider the following `AccountGrain` implementation:
 
 :::code source="snippets/transactions/Grains/AccountGrain.cs":::

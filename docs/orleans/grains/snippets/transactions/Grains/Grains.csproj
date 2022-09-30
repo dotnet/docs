@@ -9,10 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="4.0.0-preview2" />
     <PackageReference Include="Microsoft.Orleans.Runtime.Abstractions" Version="4.0.0-preview1" />
-    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="4.0.0-preview2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="4.0.0-preview2" />
     <PackageReference Include="Microsoft.Orleans.Transactions" Version="4.0.0-preview2" />
   </ItemGroup>
 

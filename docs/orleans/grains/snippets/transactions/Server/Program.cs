@@ -1,7 +1,4 @@
-﻿using Orleans.Hosting;
-using Microsoft.Extensions.Hosting;
-
-await Host.CreateDefaultBuilder()
+﻿await Host.CreateDefaultBuilder()
     .UseOrleans((_, silo) => 
         silo.UseLocalhostClustering()
             .AddMemoryGrainStorageAsDefault()

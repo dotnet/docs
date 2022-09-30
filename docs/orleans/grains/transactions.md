@@ -14,9 +14,9 @@ Orleans transactions are opt-in. A silo must be configured to use transactions. 
 
 ```csharp
 var builder = new HostBuilder()
-    UseOrleans(context =>
+    UseOrleans(siloBuilder =>
     {
-        context.UseTransactions();
+        siloBuilder.UseTransactions();
     });
 ```
 
@@ -28,9 +28,9 @@ For example, consider the following host builder configuration:
 
 ```csharp
 var builder = new HostBuilder()
-    UseOrleans(context =>
+    UseOrleans(siloBuilder =>
     {
-        context.AddAzureTableTransactionalStateStorage(
+        siloBuilder.AddAzureTableTransactionalStateStorage(
             "TransactionStore",
             options =>
             {
@@ -53,7 +53,7 @@ For a grain to support transactions, transactional methods on a grain interface 
 - <xref:Orleans.TransactionOption.Supported?displayProperty=nameWithType>: Call is not transactional but supports transactions. If called within the context of a transaction, the context will be passed to the call.
 - <xref:Orleans.TransactionOption.NotAllowed?displayProperty=nameWithType>:  Call is not transactional and cannot be called from within a transaction. If called within the context of a transaction, it will throw a <xref:System.NotSupportedException>.
 
-Calls can be marked as "Create", meaning the call will always start its transaction. For example, the `Transfer` operation in the ATM grain below will always start a new transaction that involves the two referenced accounts.
+Calls can be marked as `TransactionOption.Create`, meaning the call will always start its transaction. For example, the `Transfer` operation in the ATM grain below will always start a new transaction that involves the two referenced accounts.
 
 ```csharp
 public interface IAtmGrain : IGrainWithIntegerKey

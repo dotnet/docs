@@ -45,9 +45,6 @@ Calls can be marked as `TransactionOption.Create`, meaning the call will always 
 
 :::code source="snippets/transactions/Abstractions/IAtmGrain.cs":::
 
-> [!IMPORTANT]
-> A transactional grain must be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to ensure that the transaction context is correctly passed to the grain call.
-
 The transactional operations `Withdraw` and `Deposit` on the account grain are marked `TransactionOption.Join`, indicating that they can only be called within the context of an existing transaction, which would be the case if they were called during `IAtmGrain.Transfer`. The `GetBalance` call is marked `CreateOrJoin` so it can be called from within an existing transaction, like via `IAtmGrain.Transfer`, or on its own.
 
 :::code source="snippets/transactions/Abstractions/IAccountGrain.cs":::
@@ -89,18 +86,35 @@ For example, consider the following `AccountGrain` implementation:
 
 :::code source="snippets/transactions/Grains/AccountGrain.cs":::
 
+> [!IMPORTANT]
+> A transactional grain must be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to ensure that the transaction context is correctly passed to the grain call.
+
 In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> is used to declare that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans will inject an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> instance with a state loaded from the transactional state storage named `"TransactionStore"`. The state can be modified via `PerformUpdate` or read via `PerformRead`. The transaction infrastructure will ensure that any such changes performed as part of a transaction, even among multiple grains distributed over an Orleans cluster, will either all be committed or all be undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
 
 Consider the `AtmGrain` implementation, which resolves the two referenced account grains and makes the appropriate calls to `WithDraw` and `Deposit`:
 
 :::code source="snippets/transactions/Grains/AtmGrain.cs":::
 
-## Call transactions
+## Call transaction methods from a client
 
-Transactional methods on a grain interface are called like any other grain method. The `AtmGrain` implementation below calls the `Transfer` method (which is transactional) on the `IAccountGrain` interface.
+To call a transaction grain method, use the `ITransactionClient` interface.
+
+:::code source="snippets/transactions/Client/Program.cs" highlight="11-12,34-35,42-47":::
+
+In the preceding client code:
+
+- The `IHostBuilder` is configured with `UseOrleansClient`.
+  - The `IClientBuilder` uses localhost clustering and transactions.
+- The `IClusterClient` and `ITransactionClient` interfaces are retrieved from the service provider.
+- The `from` and `to` variables are assigned their `IAccountGrain` references.
+- The `ITransactionClient` is used to create a transaction, calling `WithDraw` and `Deposit` on the `from` and `to` accounts, respectively.
+
+## Call transaction methods from another grain
+
+Transactional methods on a grain interface are called like any other grain method. As an alternative approach using the `ITransactionClient`, the `AtmGrain` implementation below calls the `Transfer` method (which is transactional) on the `IAccountGrain` interface.
 
 ```csharp
-IAtmGrain atmOne = client.GetGrain<IAtmGrain>(1);
+IAtmGrain atmOne = client.GetGrain<IAtmGrain>(0);
 
 Guid from = Guid.NewGuid();
 Guid to = Guid.NewGuid();

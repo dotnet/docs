@@ -10,6 +10,7 @@ await host.StartAsync();
 
 var client = host.Services.GetRequiredService<IClusterClient>();
 var transactionClient= host.Services.GetRequiredService<ITransactionClient>();
+
 var accountNames = new[]
 { 
     KnownAccounts.Ida, KnownAccounts.Stacy, KnownAccounts.Xaawo,
@@ -20,16 +21,16 @@ var random = Random.Shared;
 while (!Console.KeyAvailable)
 {
     // Choose some random accounts to exchange money
-    var fromId = random.Next(accountNames.Length);
-    var toId = random.Next(accountNames.Length);
-    while (toId == fromId)
+    var fromIndex = random.Next(accountNames.Length);
+    var toIndex = random.Next(accountNames.Length);
+    while (toIndex == fromIndex)
     {
         // Avoid transfering to/from the same account, since it would be meaningless
-        toId = (toId + 1) % accountNames.Length;
+        toIndex = (toIndex + 1) % accountNames.Length;
     }
 
-    var fromLookup = accountNames[fromId];
-    var toLookup = accountNames[toId];
+    var fromLookup = accountNames[fromIndex];
+    var toLookup = accountNames[toIndex];
     var from = client.GetGrain<IAccountGrain>(fromLookup.Id);
     var to = client.GetGrain<IAccountGrain>(toLookup.Id);
 

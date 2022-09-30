@@ -1891,6 +1891,78 @@ Json.serialize<
     myObj
 ```
 
+### Formatting inheritance
+
+The arguments for the base class constructor appear in the argument list in the `inherit` clause.
+Put the `inherit` clause on a new line, indented by one level.
+
+```fsharp
+type MyClassBase(x: int) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: int) =
+   inherit MyClassBase(y * 2)
+
+// ❌ Not OK
+type MyClassDerived(y: int) = inherit MyClassBase(y * 2)
+```
+
+When the constructor is long or multiline, put them on the next line, indented by one level.  
+Format this multiline constructor according to the rules of multiline function applications.
+
+```fsharp
+type MyClassBase(x: string) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: string) =
+    inherit 
+        MyClassBase(
+            """
+            very long
+            string example
+            """
+        )
+        
+// ❌ Not OK
+type MyClassDerived(y: string) =
+    inherit MyClassBase(
+        """
+        very long
+        string example
+        """)
+```
+
+#### Multiple constructors
+
+When the `inherit` clause is part of a record, put it on the same line if it is short.
+And put it on the next line, indented by one level, if it is long or multiline.
+
+```fsharp
+type BaseClass =
+    val string1 : string
+    new () = { string1 = "" }
+    new (str) = { string1 = str }
+
+type DerivedClass =
+    inherit BaseClass
+
+    val string2 : string
+    new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
+    new () = 
+        { inherit 
+            BaseClass(
+                """
+                very long
+                string example
+                """
+            )
+          string2 = str2 }
+```
+
 ## Formatting attributes
 
 [Attributes](../language-reference/attributes.md) are placed above a construct:

@@ -6,7 +6,7 @@ ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
 
-C# 7 introduced basic pattern matching features. Those features are extended in C# 8 through C# 10 with new expressions and patterns. You can write functionality that behaves as though you extended types that may be in other libraries. Another use for patterns is to create functionality your application requires that isn't a fundamental feature of the type being extended.
+You can write functionality that behaves as though you extended types that may be in other libraries. Another use for patterns is to create functionality your application requires that isn't a fundamental feature of the type being extended.
 
 In this tutorial, you'll learn how to:
 

@@ -162,7 +162,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`where` (generic type constraint)](where-generic-type-constraint.md)  
         [`where` (query clause)](where-clause.md)  
         [`with`](../operators/with-expression.md)  
-        [`yield`](yield.md)  
+        [`yield`](../statements/yield.md)  
     :::column-end:::
 :::row-end:::
 

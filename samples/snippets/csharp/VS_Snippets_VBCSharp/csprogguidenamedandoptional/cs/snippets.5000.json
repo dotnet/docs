@@ -1,3 +1,17 @@
 {
-    "host": "visualstudio"
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/Program.cs",
+            "line": 6,
+            "column": 25,
+            "error": "CS0234"
+        },
+        {
+            "file": "samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/WordProgram.cs",
+            "line": 8,
+            "column": 24,
+            "error": "CS0234"
+        }
+    ]
 }

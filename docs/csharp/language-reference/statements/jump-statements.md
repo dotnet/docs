@@ -64,13 +64,13 @@ If a function member computes a value, you use the `return` statement with an ex
 
 When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, you use the `return` statement without expression.
 
-By default, the `return` statement returns the value of an expression. Beginning with C# 7.0, you can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
+By default, the `return` statement returns the value of an expression. You can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
 
 ### Ref returns
 
-Beginning with C# 7.0, return values can be returned by reference (`ref` returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#ref-locals). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
+Return values can be returned by reference (`ref` returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#ref-locals). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
 
 Declaring that a method returns a *reference return value* indicates that the method returns an alias to a variable. The design intent is often that calling code accesses that variable through the alias, including to modify it. Methods returning by reference can't have the return type `void`.
 
@@ -136,4 +136,4 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [`yield` statement](../keywords/yield.md)
+- [`yield` statement](yield.md)

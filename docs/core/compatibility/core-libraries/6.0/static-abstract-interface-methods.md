@@ -3,7 +3,7 @@ title: "Breaking change: Static abstract members in interfaces"
 description: Learn about the .NET 6 breaking change where `static` interface members can now be marked `abstract`.
 ms.date: 09/08/2021
 ---
-# Static abstract members in interfaces
+# Static abstract members declared in interfaces
 
 .NET 6 previews a new feature where `static` interface members can be marked as `abstract`. This feature involves several changes to the ECMA 335 spec to allow intermediate language (IL) metadata patterns that were previously considered illegal. For more information, see [dotnet/runtime#49558](https://github.com/dotnet/runtime/issues/49558).
 

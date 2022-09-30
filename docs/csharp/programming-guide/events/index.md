@@ -48,12 +48,6 @@ In a typical C# Windows Forms or Web application, you subscribe to events raised
 
 For more information, see [Events](~/_csharpstandard/standard/classes.md#148-events) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
-## Featured Book Chapters  
-
- [Delegates, Events, and Lambda Expressions](/previous-versions/visualstudio/visual-studio-2008/ff518994(v=orm.10)) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](/previous-versions/visualstudio/visual-studio-2008/ff518995(v=orm.10))  
-  
- [Delegates and Events](/previous-versions/visualstudio/visual-studio-2008/ff652490(v=orm.10)) in [Learning C# 3.0: Fundamentals of C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff652493(v=orm.10))  
-  
 ## See also
 
 - <xref:System.EventHandler>

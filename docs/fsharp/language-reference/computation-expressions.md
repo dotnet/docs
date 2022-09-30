@@ -157,7 +157,7 @@ let weekdays includeWeekend =
     }
 ```
 
-As with the [yield keyword in C#](../../csharp/language-reference/keywords/yield.md), each element in the computation expression is yielded back as it is iterated.
+As with the [yield keyword in C#](../../csharp/language-reference/statements/yield.md), each element in the computation expression is yielded back as it is iterated.
 
 `yield` is defined by the `Yield(x)` member on the builder type, where `x` is the item to yield back.
 

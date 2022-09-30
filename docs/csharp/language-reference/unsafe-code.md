@@ -118,9 +118,7 @@ A struct can contain an embedded array in unsafe code. In the following example,
 
 The size of the 128 element `char` array is 256 bytes. Fixed-size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This array size is the same even when char buffers are marshalled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
-The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
-
-Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
+The  preceding example demonstrates accessing `fixed` fields without pinning. Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
 
 Fixed-size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed-size buffer could exist in an `unsafe struct`.
 
@@ -162,7 +160,7 @@ The following example uses pointers to copy bytes from one array to another.
 
 This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](statements/fixed.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that they will not be moved by garbage collection. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
-This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays. This feature is available starting with C# 7.3.
+This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="8":::
 

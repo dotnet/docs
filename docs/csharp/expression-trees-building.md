@@ -208,8 +208,8 @@ represented not by their C# constructs, but by constructs that represent the und
 logic that the compiler generates from these higher level constructs.
 
 Also, at this time, there are C# expressions that cannot be built directly
-using `Expression` class methods. In general, these will be the newest operators
-and expressions added in C# 5 and C# 6. (For example, `async` expressions cannot be built, and
+using `Expression` class methods. In general, these will be the any operators
+and expressions added in C# 5 and more recent versions. (For example, `async` expressions cannot be built, and
 the new `?.` operator cannot be directly created.)
 
 [Next -- Translating Expressions](expression-trees-translating.md)

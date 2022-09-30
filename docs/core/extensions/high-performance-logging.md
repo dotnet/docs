@@ -43,7 +43,7 @@ As work items are dequeued for processing the worker service app sets the:
 
 :::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
 
-The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method is used to configure and define a <xref:System.Action> delegate, that represents a log message.
+The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method is used to configure and define an <xref:System.Action> delegate, that represents a log message.
 
 Structured logging stores may use the event name when it's supplied with the event id to enrich logging. For example, [Serilog](https://github.com/serilog/serilog-extensions-logging) uses the event name.
 

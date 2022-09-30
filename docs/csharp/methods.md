@@ -209,7 +209,7 @@ public (string FName, string MName, string LName, int Age) GetPersonalInfo(strin
 }
 ```
 
-The previous call to the `GetPersonInfo` method can then be modified as follows:
+The previous call to the `GetPersonalInfo` method can then be modified as follows:
 
 ```csharp
 var person = GetPersonalInfo("111111111");

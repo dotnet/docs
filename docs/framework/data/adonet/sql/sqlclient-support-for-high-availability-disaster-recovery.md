@@ -28,7 +28,7 @@ This article discusses SqlClient support (added in .NET Framework 4.5) for high-
 - <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
-> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework 4.6.1 - 4.8.1. It is required in .NET Core and .NET 5+.
+> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework versions 4.6.1 and later. It is required in .NET Core and .NET 5+.
   
 ## Connecting With MultiSubnetFailover  
 

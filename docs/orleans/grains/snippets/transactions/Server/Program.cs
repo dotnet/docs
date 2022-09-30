@@ -4,7 +4,7 @@
         silo.UseLocalhostClustering();
 
         if (Environment.GetEnvironmentVariable(
-            "ORLEANS_STORAGE_CONNECTION_STRING") is { } connectionString)
+                "ORLEANS_STORAGE_CONNECTION_STRING") is { } connectionString)
         {
             silo.AddAzureTableTransactionalStateStorage(
                 "TransactionStore", 

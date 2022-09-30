@@ -1720,6 +1720,54 @@ let simpleValuePoorlyAnnotated1:int = 1
 let simpleValuePoorlyAnnotated2 :int = 2
 ```
 
+### Formatting multiline type annotations
+
+When a type annotation is long or multiline, put them on the next line, indented by one level.
+
+```fsharp
+type ExprFolder<'State> =
+    { exprIntercept: 
+        ('State -> Expr -> 'State) -> ('State -> Expr -> 'State -> 'State -> Exp -> 'State }
+        
+let UpdateUI
+    (model:
+#if NETCOREAPP2_1
+        ITreeModel
+#else
+        TreeModel
+#endif
+    )
+    (info: FileInfo) =
+    // code
+    ()
+
+let f
+    (x:
+        {|
+            a: Second
+            b: Metre
+            c: Kilogram
+            d: Ampere
+            e: Kelvin
+            f: Mole
+            g: Candela
+        |})
+    =
+    x.a
+
+type Sample
+    (
+        input: 
+            LongTupleItemTypeOneThing * 
+            LongTupleItemTypeThingTwo * 
+            LongTupleItemTypeThree * 
+            LongThingFour * 
+            LongThingFiveYow
+    ) =
+    class
+    end
+```
+
 ### Formatting return type annotations
 
 In function or member return type annotations, use white space before and after the `:` symbol:

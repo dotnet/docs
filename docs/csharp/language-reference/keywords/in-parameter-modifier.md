@@ -20,8 +20,6 @@ The preceding example demonstrates that the `in` modifier is usually unnecessary
   
 Variables passed as `in` arguments must be initialized before being passed in a method call. However, the called method may not assign a value or modify the argument.  
 
-The `in` parameter modifier is available in C# 7.2 and later. Previous versions generate compiler error `CS8107` ("Feature 'readonly references' is not available in C# 7.0. Please use language version 7.2 or greater.") To configure the compiler language version, see [Select the C# language version](../configure-language-version.md).
-
 Although `in`, `out`, and `ref` parameter modifiers are considered part of a signature, members declared in a single type cannot differ in signature solely by `in`, `ref` and `out`. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `out` argument and the other takes an `in` argument. The following code, for example, will not compile:  
   
 ```csharp
@@ -111,7 +109,7 @@ The only method call where the argument is passed by reference is the final one.
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+- Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
 - The first argument of an extension method cannot have the `in` modifier unless that argument is a struct.
 - The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 

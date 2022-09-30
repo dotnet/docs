@@ -10,7 +10,7 @@ ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3
 ---
 # using statement (C# Reference)
 
-Provides a convenient syntax that ensures the correct use of <xref:System.IDisposable> objects. Beginning in C# 8.0, the `using` statement ensures the correct use of <xref:System.IAsyncDisposable> objects.
+Provides a convenient syntax that ensures the correct use of <xref:System.IDisposable> objects. The `using` statement ensures the correct use of <xref:System.IAsyncDisposable> objects.
 
 ## Example
 
@@ -18,7 +18,7 @@ The following example shows how to use the `using` statement.
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetFirstExample":::
 
-The *using declaration*, which was introduced in C# 8.0, doesn't require braces:
+The *using declaration* doesn't require braces:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetModernUsing":::
 
@@ -40,7 +40,7 @@ Multiple instances of a type can be declared in a single `using` statement, as s
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetDeclareMultipleVariables":::
 
-You can combine multiple declarations of the same type using the declaration syntax introduced with C# 8 as well, as shown in the following example:
+You can combine multiple declarations of the same type using the declaration syntax as well, as shown in the following example:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetModernMultipleVariables":::
 

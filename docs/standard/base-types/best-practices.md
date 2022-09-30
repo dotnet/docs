@@ -192,7 +192,7 @@ In these cases, you can optimize regular expression performance by removing the 
 |`[0-9A-Z]`|Match an alphanumeric character. The part number must consist of at least this character.|
 |`[-.\w]*`|Match zero or more occurrences of any word character, hyphen, or period.|
 |`\$`|Match a dollar sign.|
-|`(?<=[0-9A-Z])`|Look ahead of the ending dollar sign to ensure that the previous character is alphanumeric.|
+|`(?<=[0-9A-Z])`|Look behind of the ending dollar sign to ensure that the previous character is alphanumeric.|
 |`$`|End the match at the end of the input string.|
 
 The following example illustrates the use of this regular expression to match an array containing possible part numbers.

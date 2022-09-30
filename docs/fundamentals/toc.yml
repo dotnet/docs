@@ -657,6 +657,8 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
+      - name: Dumps FAQ - .NET
+        href: ../core/diagnostics/faq-dumps.yml
     - name: Logging and tracing
       items:
       - name: Overview
@@ -1976,6 +1978,8 @@ items:
     items:
     - name: Overview
       href: ../core/deploying/native-aot/index.md
+    - name: Intro to AOT warnings
+      href: ../core/deploying/native-aot/fixing-warnings.md
     - name: AOT warnings
       items:
       - name: IL3050
@@ -2344,6 +2348,8 @@ items:
           href: ../standard/serialization/system-text-json/source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json/converters-how-to.md
+        - name: Customize contracts
+          href: ../standard/serialization/system-text-json/custom-contracts.md
     - name: Binary serialization
       items:
       - name: Overview

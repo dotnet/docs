@@ -31,6 +31,12 @@
     None
 
 .NOTES
+    Version:        1.7
+    Author:         adegeo@microsoft.com
+    Creation Date:  12/11/2020
+    Update Date:    09/26/2022
+    Purpose/Change: Trim build error lines to help remove duplicates.
+
     Version:        1.6
     Author:         adegeo@microsoft.com
     Creation Date:  12/11/2020
@@ -61,7 +67,7 @@ Param(
 
 $Global:statusOutput = @()
 
-Write-Host "Gathering solutions and projects... (v1.6)"
+Write-Host "Gathering solutions and projects... (v1.7)"
 
 if ($PullRequest -ne 0) {
     Write-Host "Running `"LocateProjects `"$RepoRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName`""
@@ -279,7 +285,7 @@ foreach ($item in $transformedItems) {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
                                          Select-String ": (?:Solution file error|error) ([^:]*)" | `
                                          Select-Object Line -ExpandProperty Matches | `
-                                         Select-Object Line, Groups | `
+                                         Select-Object -Property @{Name = 'Line'; Expression = {$_.Line.Trim()}}, Groups | `
                                          Sort-Object Line | Get-Unique -AsString
         $item.ErrorCount = $errorInfo.Count
         foreach ($err in $errorInfo) {

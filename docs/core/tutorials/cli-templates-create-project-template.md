@@ -2,7 +2,7 @@
 title: Create a project template for dotnet new
 description: Learn how to create a project template for the dotnet new command.
 author: adegeo
-ms.date: 02/03/2022
+ms.date: 09/30/2022
 ms.topic: tutorial
 ms.author: adegeo
 recommendations: false
@@ -13,6 +13,9 @@ recommendations: false
 With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part two of a series that teaches you how to create, install, and uninstall, templates for use with the `dotnet new` command.
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
+
+> [!TIP]
+> The official .NET templates that are shipped with the .NET SDK can be found in the [GitHub dotnet/templates repository](https://github.com/dotnet/templates). You can also view the templates that are installed on your machine by running the `dotnet new --list` command.
 
 In this part of the series you'll learn how to:
 

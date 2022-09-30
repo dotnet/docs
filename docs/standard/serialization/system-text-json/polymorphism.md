@@ -1,7 +1,7 @@
 ---
 title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
-ms.date: 09/28/2022
+ms.date: 09/30/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -433,9 +433,9 @@ End Module
 '   result is FourDimensionalPoint; // True
 ```
 
-### Customize the type discriminator key
+### Customize the type discriminator name
 
-The default key name for the type discriminator is `$type`. To customize the key name, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> as shown in the following example:
+The default property name for the type discriminator is `$type`. To customize the property name, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> as shown in the following example:
 
 ```csharp
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "$discriminator")]

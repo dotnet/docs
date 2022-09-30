@@ -42,7 +42,7 @@ For information about security threats that were considered when designing <xref
 
 ## Thread safety
 
-The `System.Text.Json` serializer was designed with thread safety in mind. Practically, this means that once locked, <xref:System.Text.Json.JsonSerializerOptions> instances can be safely shared across multiple threads.
+The `System.Text.Json` serializer was designed with thread safety in mind. Practically, this means that once locked, <xref:System.Text.Json.JsonSerializerOptions> instances can be safely shared across multiple threads. However, <xref:System.Text.Json.JsonDocument> is not thread safe as of .NET 7.
 
 ## Additional resources
 

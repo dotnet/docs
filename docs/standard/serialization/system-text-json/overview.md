@@ -44,22 +44,10 @@ For information about security threats that were considered when designing <xref
 
 The `System.Text.Json` types are thread-safe, including:
 
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-
 * <xref:System.Text.Json.JsonSerializer>
 * <xref:System.Text.Json.Utf8JsonReader>
 * <xref:System.Text.Json.Utf8JsonWriter>
-* <xref:System.Text.Json.JsonDocument>
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-* <xref:System.Text.Json.JsonSerializer>
-* <xref:System.Text.Json.Utf8JsonReader>
-* <xref:System.Text.Json.Utf8JsonWriter>
-* <xref:System.Text.Json.JsonDocument>
 * <xref:System.Text.Json.Nodes.JsonNode>
-:::zone-end
 
 ## Additional resources
 

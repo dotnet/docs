@@ -255,8 +255,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2226](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2226) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2226](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2226) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2288](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2288) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2288](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2288) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.0.0-preview1) |  |  |
 | Microsoft.Azure.IoT.Edge.Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
@@ -528,10 +528,10 @@
 | WebJobs - Core | NuGet [3.0.33](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.33) |  | GitHub [3.0.33](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
 | WebJobs - Host Storage | NuGet [4.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/4.0.4)<br>NuGet [5.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/5.0.0-beta.1) |  | GitHub [4.0.4](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
 | WebJobs - Host Test Common | NuGet [3.0.30](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.30) |  | GitHub [3.0.30](https://github.com/Azure/azure-webjobs-sdk) |
-| WebJobs - Item Templates | NuGet [4.0.2226](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2226) |  | GitHub [4.0.2226](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Item Templates | NuGet [4.0.2288](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2288) |  | GitHub [4.0.2288](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Logging | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.2) |  | GitHub [4.0.2](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | WebJobs - Logging Application Insights | NuGet [3.0.33](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.33) |  | GitHub [3.0.33](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
-| WebJobs - Project Templates | NuGet [4.0.2226](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2226) |  | GitHub [4.0.2226](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| WebJobs - Project Templates | NuGet [4.0.2288](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2288) |  | GitHub [4.0.2288](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | WebJobs - Scrip Web Host | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.WebHost/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script.WebHost) |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |
 | WebJobs - Script Abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |

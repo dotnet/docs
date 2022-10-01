@@ -1,7 +1,7 @@
 ---
 title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
-ms.date: 09/28/2022
+ms.date: 09/30/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -433,9 +433,9 @@ End Module
 '   result is FourDimensionalPoint; // True
 ```
 
-### Customize the type discriminator key
+### Customize the type discriminator name
 
-The default key name for the type discriminator is `$type`. To customize the key name, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> as shown in the following example:
+The default property name for the type discriminator is `$type`. To customize the property name, use the <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> as shown in the following example:
 
 ```csharp
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "$discriminator")]
@@ -672,7 +672,7 @@ JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
 
 ## Configure polymorphism with the contract model
 
-For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), to configure polymorphism use the contract model. The contract model is a set of APIs that can be used to configure polymorphism in a type hierarchy by creating a custom <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver> subclass that dynamically provides polymorphic configuration per type, as shown in the following example:
+For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), to configure polymorphism use the [contract model](custom-contracts.md). The contract model is a set of APIs that can be used to configure polymorphism in a type hierarchy by creating a custom <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver> subclass that dynamically provides polymorphic configuration per type, as shown in the following example:
 
 ```csharp
 public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver

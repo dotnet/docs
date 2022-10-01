@@ -48,7 +48,7 @@ namespace SystemTextJsonSamples
 
             public DictionaryEnumConverterInner(JsonSerializerOptions options)
             {
-                // For performance, use the existing converter if available.
+                // For performance, use the existing converter.
                 _valueConverter = (JsonConverter<TValue>)options
                     .GetConverter(typeof(TValue));
 
@@ -93,16 +93,8 @@ namespace SystemTextJsonSamples
                     }
 
                     // Get the value.
-                    TValue value;
-                    if (_valueConverter != null)
-                    {
-                        reader.Read();
-                        value = _valueConverter.Read(ref reader, _valueType, options)!;
-                    }
-                    else
-                    {
-                        value = JsonSerializer.Deserialize<TValue>(ref reader, options)!;
-                    }
+                    reader.Read();
+                    TValue value = _valueConverter.Read(ref reader, _valueType, options)!;
 
                     // Add to dictionary.
                     dictionary.Add(key, value);
@@ -124,14 +116,7 @@ namespace SystemTextJsonSamples
                     writer.WritePropertyName
                         (options.PropertyNamingPolicy?.ConvertName(propertyName) ?? propertyName);
 
-                    if (_valueConverter != null)
-                    {
-                        _valueConverter.Write(writer, value, options);
-                    }
-                    else
-                    {
-                        JsonSerializer.Serialize(writer, value, options);
-                    }
+                    _valueConverter.Write(writer, value, options);
                 }
 
                 writer.WriteEndObject();

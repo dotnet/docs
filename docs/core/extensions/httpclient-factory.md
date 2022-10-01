@@ -111,7 +111,7 @@ API-specific methods can be created that expose `HttpClient` functionality. For 
 
 The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `ConfigureServices` to register a typed client class:
 
-:::code source="snippets/http/typed/Program.cs" range="1-21" highlight="9-17":::
+:::code source="snippets/http/typed/Program.cs" range="1-22" highlight="9-17":::
 
 The typed client is registered as transient with DI. In the preceding code, `AddHttpClient` registers `JokeService` as a transient service. This registration uses a factory method to:
 

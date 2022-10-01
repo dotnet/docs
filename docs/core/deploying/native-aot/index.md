@@ -35,7 +35,7 @@ On Linux, install clang and developer packages for libraries that .NET runtime d
 - Alpine (3.15+)
 
     ```sh
-    sudo apk add clang gcc lld musl-dev build-base zlib-dev
+    sudo apk add build-base zlib-dev
     ```
 
 ## Publish Native AOT - CLI

@@ -66,7 +66,7 @@ var options = new JsonSerializerOptions
 
                 foreach (JsonPropertyInfo propertyInfo in typeInfo.Properties)
                 {
-                    // strip IsRequired constraint from every property
+                    // Strip IsRequired constraint from every property.
                     propertyInfo.IsRequired = false;
                 }
             }

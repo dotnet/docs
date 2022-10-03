@@ -1,7 +1,8 @@
 ---
 title: "Handling and Raising Events"
 description: Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
-ms.date: "03/30/2017"
+ms.date: "07/22/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -38,11 +39,11 @@ A delegate is a type that holds a reference to a method. A delegate is declared 
   
 Delegates have many uses in .NET. In the context of events, a delegate is an intermediary (or pointer-like mechanism) between the event source and the code that handles the event. You associate a delegate with an event by including the delegate type in the event declaration, as shown in the example in the previous section. For more information about delegates, see the <xref:System.Delegate> class.  
   
-.NET provides the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates to support most event scenarios. Use the <xref:System.EventHandler> delegate for all events that do not include event data. Use the <xref:System.EventHandler%601> delegate for events that include data about the event. These delegates have no return type value and take two parameters (an object for the source of the event, and an object for event data).  
+.NET provides the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates to support most event scenarios. Use the <xref:System.EventHandler> delegate for all events that don't include event data. Use the <xref:System.EventHandler%601> delegate for events that include data about the event. These delegates have no return type value and take two parameters (an object for the source of the event and an object for event data).  
   
-Delegates are [multicast](xref:System.MulticastDelegate), which means that they can hold references to more than one event-handling method. For details, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
+Delegates are [multicast](xref:System.MulticastDelegate), which means that they can hold references to more than one event-handling method. For more information, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
-For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the C# [`delegate`](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) and Visual Basic [`Delegate`](../../visual-basic/language-reference/statements/delegate-statement.md) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
+For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates don't work, you can define a delegate. Scenarios that require you to define a delegate are rare, such as when you must work with code that doesn't recognize generics. You mark a delegate with the C# [`delegate`](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) and Visual Basic [`Delegate`](../../visual-basic/language-reference/statements/delegate-statement.md) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:  
   
 [!code-csharp[EventsOverview#4](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
 [!code-vb[EventsOverview#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
@@ -51,18 +52,18 @@ For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler
 
 Data that is associated with an event can be provided through an event data class. .NET provides many event data classes that you can use in your applications. For example, the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class is the event data class for the <xref:System.IO.Ports.SerialPort.DataReceived?displayProperty=nameWithType> event. .NET follows a naming pattern of ending all event data classes with `EventArgs`. You determine which event data class is associated with an event by looking at the delegate for the event. For example, the <xref:System.IO.Ports.SerialDataReceivedEventHandler> delegate includes the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class as one of its parameters.  
   
-The <xref:System.EventArgs> class is the base type for all event data classes. <xref:System.EventArgs> is also the class you use when an event does not have any data associated with it. When you create an event that is only meant to notify other classes that something happened and does not need to pass any data, include the <xref:System.EventArgs> class as the second parameter in the delegate. You can pass the <xref:System.EventArgs.Empty?displayProperty=nameWithType> value when no data is provided. The <xref:System.EventHandler> delegate includes the <xref:System.EventArgs> class as a parameter.  
+The <xref:System.EventArgs> class is the base type for all event data classes. <xref:System.EventArgs> is also the class you use when an event doesn't have any data associated with it. When you create an event that is only meant to notify other classes that something happened and doesn't need to pass any data, include the <xref:System.EventArgs> class as the second parameter in the delegate. You can pass the <xref:System.EventArgs.Empty?displayProperty=nameWithType> value when no data is provided. The <xref:System.EventHandler> delegate includes the <xref:System.EventArgs> class as a parameter.  
   
 When you want to create a customized event data class, create a class that derives from <xref:System.EventArgs>, and then provide any members needed to pass data that is related to the event. Typically, you should use the same naming pattern as .NET and end your event data class name with `EventArgs`.  
   
-The following example shows an event data class named `ThresholdReachedEventArgs`. It contains properties that are specific to the event being raised.  
+The following example shows an event data class named `ThresholdReachedEventArgs`. It contains properties that are specific to the event being raised:
   
 [!code-csharp[EventsOverview#3](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#3)]
 [!code-vb[EventsOverview#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#3)]  
   
 ## Event handlers
 
-To respond to an event, you define an event handler method in the event receiver. This method must match the signature of the delegate for the event you are handling. In the event handler, you perform the actions that are required when the event is raised, such as collecting user input after the user clicks a button. To receive notifications when the event occurs, your event handler method must subscribe to the event.  
+To respond to an event, you define an event handler method in the event receiver. This method must match the signature of the delegate for the event you're handling. In the event handler, you perform the actions that are required when the event is raised, such as collecting user input after the user clicks a button. To receive notifications when the event occurs, your event handler method must subscribe to the event.  
   
 The following example shows an event handler method named `c_ThresholdReached` that matches the signature for the <xref:System.EventHandler> delegate. The method subscribes to the `ThresholdReached` event.  
   
@@ -75,9 +76,14 @@ The following example shows an event handler method named `c_ThresholdReached` t
   
 ## Raising multiple events
 
- If your class raises multiple events, the compiler generates one field per event delegate instance. If the number of events is large, the storage cost of one field per delegate may not be acceptable. For those situations, .NET provides event properties that you can use with another data structure of your choice to store event delegates.  
+ If your class raises multiple events, the compiler generates one field per event delegate instance. If the number of events is large, the storage cost of one field per delegate might not be acceptable. For those situations, .NET provides event properties that you can use with another data structure of your choice to store event delegates.  
   
- Event properties consist of event declarations accompanied by event accessors. Event accessors are methods that you define to add or remove event delegate instances from the storage data structure. Note that event properties are slower than event fields, because each event delegate must be retrieved before it can be invoked. The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you will want to implement event properties. For more information, see [How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md).  
+ Event properties consist of event declarations accompanied by event accessors. Event accessors are methods that you define to add or remove event delegate instances from the storage data structure.
+
+> [!NOTE]
+> The event properties are slower than the event fields because each event delegate must be retrieved before it can be invoked.
+
+The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you'll want to implement event properties. For more information, see [How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md).  
   
 ## Related articles
   
@@ -85,7 +91,7 @@ The following example shows an event handler method named `c_ThresholdReached` t
 |-----------|-----------------|  
 |[How to: Raise and Consume Events](how-to-raise-and-consume-events.md)|Contains examples of raising and consuming events.|  
 |[How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md)|Shows how to use event properties to handle multiple events.|  
-|[Observer Design Pattern](observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with, and receive notifications from, a provider.|
+|[Observer Design Pattern](observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with and receive notifications from a provider.|
   
 ## See also
 

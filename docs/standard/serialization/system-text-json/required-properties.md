@@ -74,5 +74,6 @@ var options = new JsonSerializerOptions
     }
 };
 
-JsonSerializer.Deserialize<Person>("""{"Age": 42}""", options); // serialization now succeeds
+// Deserialization now succeeds even though the Name property isn't in the JSON payload.
+JsonSerializer.Deserialize<Person>("""{"Age": 42}""", options);
 ```

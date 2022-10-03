@@ -1,6 +1,6 @@
 ---
 title: Use HTTP/3 with HttpClient
-description: Learn how to use the HttpClient to access HTTP/3 servers in .NET 6 and .NET 7
+description: Learn how to use the HttpClient to access HTTP/3 servers in .NET
 author: IEvangelist
 ms.author: samsp
 ms.date: 7/28/2022
@@ -14,7 +14,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 
 - Faster response time of the first request. QUIC and HTTP/3 negotiate the connection in fewer round-trips between the client and the server. The first request reaches the server faster.
 - Improved experience when there is connection packet loss. HTTP/2 multiplexes multiple requests via one TCP connection. Packet loss on the connection affects all requests. This problem is called "head-of-line blocking". Because QUIC provides native multiplexing, lost packets only impact the requests where data has been lost.
-- Supports transitioning between networks. This feature is useful for mobile devices where it is common to switch between WIFI and cellular networks as a mobile device changes location. Currently, HTTP/1.1 and HTTP/2 connections fail with an error when switching networks. An app or web browser must retry any failed HTTP requests. HTTP/3 allows the app or web browser to seamlessly continue when a network changes. HttpClient and Kestrel do not support network transitions in .NET 7. It may be available in a future release.
+- Supports transitioning between networks. This feature is useful for mobile devices where it is common to switch between WIFI and cellular networks as a mobile device changes location. Currently, HTTP/1.1 and HTTP/2 connections fail with an error when switching networks. An app or web browser must retry any failed HTTP requests. HTTP/3 allows the app or web browser to seamlessly continue when a network changes. `HttpClient` and Kestrel do not support network transitions in .NET 7. It may be available in a future release.
 
 > [!IMPORTANT]
 >
@@ -61,7 +61,7 @@ The following code example uses [top-level statements](../../csharp/fundamentals
 
 ## HTTP/3 Support in .NET 6
 
-In .NET 6, HTTP/3 is available as a _preview feature_ because the HTTP/3 specification was not yet finalized and behavioral or performance problems may exist in HTTP/3 with .NET 6. For more information on preview features, see [**the preview features specification**](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
+In .NET 6, HTTP/3 is available as a _preview feature_ because the HTTP/3 specification was not yet finalized. Behavioral or performance problems may exist in HTTP/3 with .NET 6. For more information on preview features, see [the preview features specification](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
 
 To enable HTTP/3 support in .NET 6, include the following in the project file to enable HTTP/3 with HttpClient:
 
@@ -71,7 +71,7 @@ To enable HTTP/3 support in .NET 6, include the following in the project file to
 </ItemGroup>
 ```
 
-Alternatively, you can use [`AppContext.SetSwitch`](/dotnet/api/system.appcontext.setswitch).
+Alternatively, you can call <xref:System.AppContext.SetSwitch%2A?displayProperty=fullName> from your app code, or set the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT` environment variable to `true`.
 
 The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard is not final and therefore may change after .NET 6 is released.
 

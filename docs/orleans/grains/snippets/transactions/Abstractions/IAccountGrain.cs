@@ -1,6 +1,6 @@
 ﻿namespace TransactionalExample.Abstractions;
 
-public interface IAccountGrain : IGrainWithGuidKey
+public interface IAccountGrain : IGrainWithStringKey
 {
     [Transaction(TransactionOption.Join)]
     Task Withdraw(decimal amount);

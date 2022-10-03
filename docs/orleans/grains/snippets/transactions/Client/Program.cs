@@ -11,11 +11,7 @@ await host.StartAsync();
 var client = host.Services.GetRequiredService<IClusterClient>();
 var transactionClient= host.Services.GetRequiredService<ITransactionClient>();
 
-var accountNames = new[]
-{ 
-    KnownAccounts.Ida, KnownAccounts.Stacy, KnownAccounts.Xaawo,
-    KnownAccounts.Pasqualino, KnownAccounts.Derick, KnownAccounts.Xiao
-};
+var accountNames = new[] { "Xaawo", "Pasqualino", "Derick", "Ida", "Stacy", "Xiao" };
 var random = Random.Shared;
 
 while (!Console.KeyAvailable)
@@ -29,10 +25,10 @@ while (!Console.KeyAvailable)
         toIndex = (toIndex + 1) % accountNames.Length;
     }
 
-    var fromLookup = accountNames[fromIndex];
-    var toLookup = accountNames[toIndex];
-    var from = client.GetGrain<IAccountGrain>(fromLookup.Id);
-    var to = client.GetGrain<IAccountGrain>(toLookup.Id);
+    var fromKey = accountNames[fromIndex];
+    var toKey = accountNames[toIndex];
+    var from = client.GetGrain<IAccountGrain>(fromKey);
+    var to = client.GetGrain<IAccountGrain>(toKey);
 
     // Perform the transfer and query the results
     try
@@ -50,14 +46,14 @@ while (!Console.KeyAvailable)
         var toBalance = await to.GetBalance();
 
         Console.WriteLine(
-            $"We transfered {transferAmount} credits from {fromLookup} to " +
-            $"{toLookup}.\n{fromLookup} balance: {fromBalance}\n{toLookup} balance: {toBalance}\n");
+            $"We transfered {transferAmount} credits from {fromKey} to " +
+            $"{toKey}.\n{fromKey} balance: {fromBalance}\n{toKey} balance: {toBalance}\n");
     }
     catch (Exception exception)
     {
         Console.WriteLine(
             $"Error transfering credits from " +
-            $"{fromLookup} to {toLookup}: {exception.Message}");
+            $"{fromKey} to {toKey}: {exception.Message}");
 
         if (exception.InnerException is { } inner)
         {

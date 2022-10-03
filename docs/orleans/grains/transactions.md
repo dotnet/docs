@@ -8,20 +8,30 @@ ms.date: 09/29/2022
 
 Orleans supports distributed ACID transactions against persistent grain state. Transactions are implemented using the [Microsoft.Orleans.Transactions](https://www.nuget.org/packages/Microsoft.Orleans.Transactions) NuGet package. The source code for the sample app in this article is comprised of four projects:
 
-- ***Abstractions***: Contains the grain interfaces and shared classes.
-- ***Grains***: Contains the grain implementations.
-- ***Server***: Contains the Orleans silo.
-- ***Client***: Contains the Orleans client.
+- **_Abstractions_**: A class library containing the grain interfaces and shared classes.
+- **_Grains_**: A class library containing the grain implementations.
+- **_Server_**: A console app that consumes the abstractions and grains class libraries and acts as the Orleans silo.
+- **_Client_**: A console app that consumes the abstractions class library that represents the Orleans client.
 
 ## Setup
 
-Orleans transactions are opt-in. A silo must be configured to use transactions. If it isn't configured, any calls to a transactional method on a grain implementation will receive the <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder.
+Orleans transactions are opt-in. A silo and client both must be configured to use transactions. If it isn't configured, any calls to transactional methods on a grain implementation will receive the <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder:
 
 ```csharp
-var builder = new HostBuilder()
-    UseOrleans(siloBuilder =>
+var builder = Host.CreateDefaultBuilder(args)
+    UseOrleans((context, siloBuilder) =>
     {
         siloBuilder.UseTransactions();
+    });
+```
+
+Likewise, to enable transactions on the client, call <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the client host builder:
+
+```csharp
+var builder = Host.CreateDefaultBuilder(args)
+    UseOrleansClient((context, clientBuilder) =>
+    {
+        clientBuilder.UseTransactions();
     });
 ```
 
@@ -44,7 +54,7 @@ For a grain to support transactions, transactional methods on a grain interface 
 - <xref:Orleans.TransactionOption.CreateOrJoin?displayProperty=nameWithType>: Call is transactional. If called within the context of a transaction, it will use that context, else it will create a new context.
 - <xref:Orleans.TransactionOption.Suppress?displayProperty=nameWithType>: Call is not transactional but can be called from within a transaction. If called within the context of a transaction, the context will not be passed to the call.
 - <xref:Orleans.TransactionOption.Supported?displayProperty=nameWithType>: Call is not transactional but supports transactions. If called within the context of a transaction, the context will be passed to the call.
-- <xref:Orleans.TransactionOption.NotAllowed?displayProperty=nameWithType>:  Call is not transactional and cannot be called from within a transaction. If called within the context of a transaction, it will throw a <xref:System.NotSupportedException>.
+- <xref:Orleans.TransactionOption.NotAllowed?displayProperty=nameWithType>:  Call is not transactional and cannot be called from within a transaction. If called within the context of a transaction, it will throw the <xref:System.NotSupportedException>.
 
 Calls can be marked as `TransactionOption.Create`, meaning the call will always start its transaction. For example, the `Transfer` operation in the ATM grain below will always start a new transaction that involves the two referenced accounts.
 
@@ -96,7 +106,7 @@ The preceding state object:
 - Is decorated with the <xref:Orleans.CodeGeneration.GenerateSerializerAttribute> to instruct the Orleans code generator to generate a serializer.
 - Has its `Value` property decorated with the `IdAttribute` to uniquely identify the member.
 
-For example, consider the following `AccountGrain` implementation:
+The `Balance` state object is then used in the `AccountGrain` implementation as follows:
 
 :::code source="snippets/transactions/Grains/AccountGrain.cs":::
 
@@ -105,13 +115,9 @@ For example, consider the following `AccountGrain` implementation:
 
 In the preceding example, the <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute> is used to declare that the `balance` constructor parameter should be associated with a transactional state named `"balance"`. With this declaration, Orleans will inject an <xref:Orleans.Transactions.Abstractions.ITransactionalState%601> instance with a state loaded from the transactional state storage named `"TransactionStore"`. The state can be modified via `PerformUpdate` or read via `PerformRead`. The transaction infrastructure will ensure that any such changes performed as part of a transaction, even among multiple grains distributed over an Orleans cluster, will either all be committed or all be undone upon completion of the grain call that created the transaction (`IAtmGrain.Transfer` in the preceding example).
 
-Consider the `AtmGrain` implementation, which resolves the two referenced account grains and makes the appropriate calls to `WithDraw` and `Deposit`:
-
-:::code source="snippets/transactions/Grains/AtmGrain.cs":::
-
 ## Call transaction methods from a client
 
-To call a transaction grain method, use the `ITransactionClient` interface.
+The recommended way to call a transaction grain method is to use the `ITransactionClient`. The `ITransactionClient` is automatically registered with the dependency injection service provider when the Orleans client is configured. The `ITransactionClient` is used to create a transaction context and to call transactional grain methods within that context. The following example shows how to use the `ITransactionClient` to call transactional grain methods.
 
 :::code source="snippets/transactions/Client/Program.cs" highlight="11-12,34-35,42-47":::
 
@@ -127,6 +133,12 @@ In the preceding client code:
 
 Transactional methods on a grain interface are called like any other grain method. As an alternative approach using the `ITransactionClient`, the `AtmGrain` implementation below calls the `Transfer` method (which is transactional) on the `IAccountGrain` interface.
 
+Consider the `AtmGrain` implementation, which resolves the two referenced account grains and makes the appropriate calls to `WithDraw` and `Deposit`:
+
+:::code source="snippets/transactions/Grains/AtmGrain.cs":::
+
+Your client app code can call `AtmGrain.Transfer` in a transactional manner as follows:
+
 ```csharp
 IAtmGrain atmOne = client.GetGrain<IAtmGrain>(0);
 
@@ -139,7 +151,7 @@ uint fromBalance = await client.GetGrain<IAccountGrain>(from).GetBalance();
 uint toBalance = await client.GetGrain<IAccountGrain>(to).GetBalance();
 ```
 
-In the above calls, an ATM grain is used to transfer 100 units of currency from one account to another. After the transfer is complete, both accounts are queried to get their current balance. The currency transfer, as well as both account queries, are performed as ACID transactions.
+In the above calls, an `IAtmGrain` is used to transfer 100 units of currency from one account to another. After the transfer is complete, both accounts are queried to get their current balance. The currency transfer, as well as both account queries, are performed as ACID transactions.
 
 As shown in the preceding example, transactions can return values within a `Task`, like other grain calls, but upon call failure, they will not throw application exceptions, but rather an <xref:Orleans.Transactions.OrleansTransactionException> or <xref:System.TimeoutException>. If the application throws an exception during the transaction and that exception causes the transaction to fail (as opposed to failing because of other system failures), the application exception will be the inner exception of the `OrleansTransactionException`.
 

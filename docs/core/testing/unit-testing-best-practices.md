@@ -89,7 +89,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-By renaming the class to `FakeOrder`, you've made the class a lot more generic and the class can be used as a mock or a stub, whichever is better for the test case. In the preceding example, `FakeOrder` is used as a stub. You're not using the `FakeOrder` in any shape or form during the assert. `FakeOrder` was passed into the `Purchase` class to satisfy the requirements of the constructor.
+By renaming the class to `FakeOrder`, you've made the class a lot more generic. The class can be used as a mock or a stub, whichever is better for the test case. In the preceding example, `FakeOrder` is used as a stub. You're not using `FakeOrder` in any shape or form during the assert. `FakeOrder` was passed into the `Purchase` class to satisfy the requirements of the constructor.
 
 To use it as a Mock, you could do something like the following code:
 

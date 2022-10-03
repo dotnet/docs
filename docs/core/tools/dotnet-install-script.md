@@ -268,7 +268,7 @@ The install scripts do not update the registry on Windows. They just download th
   curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
 
-## Set enviornment variables
+## Set environment variables
 
 Manually installing .NET doesn't add the environment variables system-wide, and generally only works for the session in which .NET was installed. There are two environment variables you should set for your operating system:
 
@@ -278,7 +278,7 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 
 - `PATH`
 
-  This variable should include both the the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
+  This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
 
 > [!TIP]
 > For Linux and macOS, use the `echo` command to set the variables in your shell profile, such as _.bashrc_:

@@ -8,27 +8,32 @@ ms.date: 08/16/2022
 > [!IMPORTANT]
 > These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
 
+The following feature is available in Visual Studio 2022 version 17.4:
+
+- [File-scoped types](#file-scoped-types)
+
 The following features are available in Visual Studio 2022 version 17.3:
 
-- [generic math support](#generic-math-support).
-- [auto-default structs](#auto-default-struct)
-- [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
+- [Generic math support](#generic-math-support)
+- [Auto-default structs](#auto-default-struct)
+- [Pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
 - [UTF-8 string literals](#utf-8-string-literals)
 - [Required members](#required-members)
+- [`ref` fields and `scoped ref`](#ref-fields-and-ref-scoped-variables)
 
 The following features are available in Visual Studio 2022 version 17.2:
 
-- [Raw string literals](#raw-string-literals).
+- [Raw string literals](#raw-string-literals)
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
 The following features are available in Visual Studio 2022 version 17.1:
 
-- [Generic attributes](#generic-attributes).
-- [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
-- [List patterns](#list-patterns).
+- [Generic attributes](#generic-attributes)
+- [Newlines in string interpolation expressions](#newlines-in-string-interpolations)
+- [List patterns](#list-patterns)
 
 You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
@@ -182,3 +187,13 @@ You can learn more about UTF-8 string literals in the string literal section of 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
 For more information on required members, See the [init-only](../properties.md#init-only) section of the properties article.
+
+## `ref` fields and `ref scoped` variables
+
+You can declare `ref` fields inside a [`ref struct`](../language-reference/builtin-types/ref-struct.md). This supports types such as <xref:System.Span%601?displayProperty=nameWithType> without special attributes or hidden internal types.
+
+You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#scope-of-references-and-values) where the reference can escape to.
+
+## File scoped types
+
+Beginning in C# 11, you can use the `file` access modifier to create a type whose visibility is scoped to the source file in which it is declared. This feature helps source generator authors avoid naming collisions. You can learn more about this feature in the article on [file-scoped types](../language-reference/keywords/file.md) in the language reference.

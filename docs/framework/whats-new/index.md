@@ -15,6 +15,7 @@ ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 
 This article summarizes key new features and improvements in the following versions of .NET Framework:
 
+- [.NET Framework 4.8.1](#v481)
 - [.NET Framework 4.8](#v48)
 - [.NET Framework 4.7.2](#v472)
 - [.NET Framework 4.7.1](#v471)
@@ -31,6 +32,67 @@ This article does not provide comprehensive information about each new feature a
 > [!NOTE]
 > The .NET Framework team also releases features out of band, using NuGet, to expand platform support and introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [.NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md).
 > See a [complete list of NuGet packages](https://www.nuget.org/profiles/dotnetframework) for .NET Framework.
+
+<a name="v481"></a>
+
+## Introducing .NET Framework 4.8.1
+
+.NET Framework 4.8.1 builds on previous versions of .NET Framework 4.x by adding many new fixes and several new features while remaining a very stable product.
+
+### Download and install .NET Framework 4.8.1
+
+You can download .NET Framework 4.8.1 from the following locations:
+
+- [.NET Framework 4.8.1 Web Installer](https://go.microsoft.com/fwlink/?LinkId=2203304)
+- [NET Framework 4.8.1 Offline Installer](https://go.microsoft.com/fwlink/?linkid=2203305)
+
+.NET Framework 4.8 can be installed on Windows 11, Windows 10 version 21H2, Windows 10 version 21H1, Windows 10 version 20H2, and the corresponding server platforms starting with Windows Server 2022. You can install .NET Framework 4.8.1 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
+
+You can target .NET Framework 4.8.1 in Visual Studio 2022 17.3 or later by installing the [.NET Framework 4.8.1 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=2203306).
+
+### What's new in .NET Framework 4.8.1
+
+.NET Framework 4.8.1 introduces new features in the following areas:
+
+- [Native support for Arm64](#arm64native481)
+- [WCAG2.1 compliant accessible tooltips](#wpf481)
+- [Windows Forms – Accessibility Improvements](#winforms481)
+
+Improved accessibility, which allows an application to provide an appropriate experience for users of Assistive Technology, is a major focus of .NET Framework 4.8.1. For information on accessibility improvements in .NET Framework 4.8.1, see [What's new in accessibility in .NET Framework](whats-new-in-accessibility.md).
+
+<a name="arm64native481"></a>
+
+.NET Framework 4.8.1 adds native Arm64 support to the .NET Framework family. So, your investments in the vast ecosystem of .NET Framework apps and libraries can now leverage the benefits of running workloads natively on Arm64&mdash;namely better performance when compared to running x64 code emulated on Arm64.
+
+<a name="wpf481"></a>
+
+Microsoft has a commitment to providing products and platforms that are [accessible to everyone](https://www.microsoft.com/accessibility/). .NET Framework 4.8.1 offers two Windows UI development platforms, both of which provide developers with the support necessary to create accessible applications. Over the past several releases, both Windows Forms and WPF have added new features and fixed numerous reliability issues related to accessibility. You can read more about the details of what was fixed or added in each release by visiting [What’s new in accessibility in .NET Framework](../whats-new/whats-new-in-accessibility.md).
+
+In this release, both Windows Forms and WPF have made improvements to the handling of tooltips to make them more accessible. In both cases, tooltips now comply with the guidelines set forth in the [WCAG2.1 content on Hover or Focus](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html) guidance. The requirements for tooltips are:
+
+- Tooltips must display either via mouse hover or by keyboard navigation to the control.
+- Tooltips should be dismissable. That is, a simple keyboard command like <kbd>Esc</kbd> should dismiss the tooltip.
+- Tooltips should be hoverable. Users should be able to place their mouse cursor over the tooltip. This enables scenarios like using magnifier to be able to read the tooltip for low-vision users.
+- Tooltips should be persistent. Tooltips should not automatically disappear after a certain amount of time has elapsed. Rather, tooltips should be dismissed by the user moving their mouse to another control or by a keyboard command.
+
+In Windows Forms, this support is only available on Windows 11 or later operating systems. Windows Forms is a thin managed wrapper around the Windows API, and the new tooltip behavior only became available in Windows 11. WPF has no operating system version dependencies for its accessible tooltips.
+
+WPF had implemented most of the requirements for WCAG2.1 compliant tooltips in .NET Framework 4.8. In this release, WPF improved the experience by ensuring that a tooltip in the current window can easily be dismissed by using the <kbd>Esc</kbd> key, the <kbd>Ctrl</kbd> key (by itself), or by the combination <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F10</kbd>. The scope of the escape key was reduced in this release to apply only to the current window. Previously it applied to any open tooltip in the application.
+
+<a name="winforms481"></a>
+
+Windows Forms was the first Windows UI stack created for .NET Framework. As such, it was originally created to utilize legacy accessibility technology, which doesn't meet current accessibility requirements. In this release, Windows Forms has addressed a number of issues. For a complete list of the accessibility related changes, visit [What’s new in accessibility in .NET Framework](../whats-new/whats-new-in-accessibility.md).
+
+The highlights of Windows Forms improvements in .NET Framework 4.8.1 are:
+
+- [Text pattern support](/windows/win32/winauto/uiauto-implementingtextandtextrange)– Windows Forms added support for the UIA Text Pattern. This pattern enables assistive technology to traverse the content of a TextBox or similar text-based control letter by letter. It enables text to be selected within the control and changed, and new text to be inserted at the cursor. Windows Forms added this support for TextBox, DataGridView cells, ComboBox controls, and more.
+- Address contrast issues– In several controls, Windows Forms has changed the contrast ratio of selection rectangles to be darker and more visible.
+- Fixed several DataGridView issues:
+  
+  - The scrollbar names have been updated to be consistent.
+  - Narrator is now able to focus on empty DataGridView cells.
+  - Developers are able to set the localized control type property for Custom DataGridView cells.
+  - The link color for DataGridViewLink cells has been updated to have better contrast with the background.
 
 <a name="v48"></a>
 
@@ -615,7 +677,7 @@ Starting with .NET Framework 4.7.1, <xref:System.ValueTuple?displayProperty=name
 
 **Support for read-only references**
 
-.NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=nameWithType>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-runtime-and-compiler-features/) blog post. For information on ref return values, see [Ref return values and ref locals (C# Guide)](../../csharp/programming-guide/classes-and-structs/ref-returns.md) and [Ref return values (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/ref-return-values.md).
+.NET Framework 4.7.1 adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=nameWithType>. This attribute is used by language compilers to mark members that have read-only ref return types or parameters. For more information, see "Compiler -- Support for ReadOnlyReferences" in the [.NET Framework 4.7.1 Runtime and Compiler Features](https://devblogs.microsoft.com/dotnet/net-framework-4-7-1-runtime-and-compiler-features/) blog post. For information on ref return values, see [Ref return values](../../csharp/language-reference/statements/jump-statements.md#ref-returns) and [ref locals](../../csharp/language-reference/statements/declarations.md#ref-locals) and [Ref return values (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/ref-return-values.md).
 
 <a name="clr"></a>
 

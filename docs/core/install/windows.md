@@ -147,7 +147,7 @@ If you already have Visual Studio installed, you can check your version with the
 Visual Studio can install the latest .NET SDK and runtime.
 
 > [!div class="button"]
-> [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
+> [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
 
 ### Select a workload
 

@@ -3,7 +3,7 @@ title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/09/2022
+ms.date: 08/19/2022
 ---
 
 # IHttpClientFactory with .NET
@@ -13,7 +13,7 @@ In this article, you'll learn how to use the `IHttpClientFactory` to create `Htt
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
 > [!NOTE]
-> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
+> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## The `IHttpClientFactory` type
 
@@ -111,7 +111,7 @@ API-specific methods can be created that expose `HttpClient` functionality. For 
 
 The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `ConfigureServices` to register a typed client class:
 
-:::code source="snippets/http/typed/Program.cs" range="1-21" highlight="9-17":::
+:::code source="snippets/http/typed/Program.cs" range="1-22" highlight="9-17":::
 
 The typed client is registered as transient with DI. In the preceding code, `AddHttpClient` registers `JokeService` as a transient service. This registration uses a factory method to:
 
@@ -197,9 +197,9 @@ services.AddHttpClient("Named.Client")
 ```
 
 > [!IMPORTANT]
-> You can generally treat `HttpClient` instances as objects that **do not** require disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
+> You can generally treat `HttpClient` instances as objects that **do not** require disposal. Disposal cancels outgoing requests and guarantees that the `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used to create `HttpClient` instances, specifically the `HttpMessageHandler`.
 
-Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/httpclient-guidelines.md).
+Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Configure the `HttpMessageHandler`
 
@@ -218,6 +218,8 @@ services.AddHttpClient("Named.Client")
         };
     });
 ```
+
+Configuring the `HttClientHandler` lets you specify a proxy for the `HttpClient` instance. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#http-proxy).
 
 ### Additional configuration
 
@@ -240,10 +242,11 @@ There are several additional configuration options for controlling the `IHttpCli
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
 - <xref:System.Net.Http.HttpClient>
-- [Make HTTP requests with the HttpClient](../../fundamentals/networking/httpclient.md)
+- [Make HTTP requests with the HttpClient][httpclient]
 - [Implement HTTP retry with exponential backoff][http-retry]
 
 [di]: dependency-injection.md
 [logging]: logging.md
 [config]: configuration.md
+[httpclient]: ../../fundamentals/networking/http/httpclient.md
 [http-retry]: ../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md

@@ -9,6 +9,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
         },
         {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.2/private-protected.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes.md#1436-access-modifiers"
+        },
+        {
             "source_path_from_root": "/_csharplang/proposals/csharp-7.3/leading-digit-separator.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/lexical-structure#6453-integer-literals"
         },
@@ -111,7 +115,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/getting-started/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-10"
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-11"
         },
         {
             "source_path_from_root": "/docs/csharp/getting-started/with-visual-studio-2017.md",
@@ -456,6 +460,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/char"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/checked.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/checked-and-unchecked"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/checked-and-unchecked.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/checked-and-unchecked"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/continue.md",
             "redirect_url": "/dotnet/csharp/language-reference/statements/jump-statements"
         },
@@ -518,6 +530,10 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/false.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/fixed-statement.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/fixed"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/float.md",
@@ -700,6 +716,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/unchecked.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/checked-and-unchecked"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/ushort.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
@@ -716,12 +736,20 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/var.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/declarations#implicitly-typed-local-variables"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/void.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/void"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/while.md",
             "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/yield.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/yield"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/language-specification/index.md",
@@ -1037,6 +1065,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/index.md",
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented"
         },
@@ -1049,12 +1081,28 @@
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/objects"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/passing-parameters.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/polymorphism.md",
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/polymorphism"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/records.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types/records"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/ref-returns.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/structs.md",
@@ -2787,7 +2835,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/index.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-10",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-11",
             "ms.custom": "updateeachrelease"
         },
         {

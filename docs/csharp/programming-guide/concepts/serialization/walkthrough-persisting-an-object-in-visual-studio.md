@@ -24,8 +24,6 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 > [!TIP]
 > Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
 
-- The example requires C# 7.3. See [Select the C# language version](../../../language-reference/configure-language-version.md)
-
 You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/main/csharp/serialization).
 
 ## Creating the loan object
@@ -71,7 +69,7 @@ The <xref:System.SerializableAttribute> tells the compiler that everything in th
 
 [!code-csharp[Disable serialization for the event handler](../../../../../samples/snippets/csharp/serialization/Loan.cs#3)]
 
-Beginning with C# 7.3, you can attach attributes to the backing field of an auto-implemented property using the `field` target value. The following code adds a `TimeLastLoaded` property and marks it as not serializable:
+You can attach attributes to the backing field of an auto-implemented property using the `field` target value. The following code adds a `TimeLastLoaded` property and marks it as not serializable:
 
 [!code-csharp[Disable serialization for an auto-implemented property](../../../../../samples/snippets/csharp/serialization/Loan.cs#4)]
 

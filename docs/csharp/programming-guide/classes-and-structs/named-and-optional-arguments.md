@@ -19,7 +19,7 @@ ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
 ---
 # Named and Optional Arguments (C# Programming Guide)
 
-C# 4 introduces named and optional arguments. *Named arguments* enable you to specify an argument for a parameter by matching the argument with its name rather than with its position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.
+*Named arguments* enable you to specify an argument for a parameter by matching the argument with its name rather than with its position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.
 
 When you use named and optional arguments, the arguments are evaluated in the order in which they appear in the argument list, not the parameter list.
 
@@ -50,7 +50,7 @@ Named arguments, when used with positional arguments, are valid as long as
     PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
     ```
 
-- _starting with C# 7.2_, they're used in the correct position. In the example below, the parameter `orderNum` is in the correct position but isn't explicitly named.
+- they're used in the correct position. In the example below, the parameter `orderNum` is in the correct position but isn't explicitly named.
 
     ```csharp
     PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");
@@ -118,11 +118,7 @@ For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> metho
 
 ![Screenshot showing IntelliSense quick info for the AutoFormat method.](./media/named-and-optional-arguments/autoformat-method-parameters.png)
 
-In C# 3.0 and earlier versions, an argument is required for each parameter, as shown in the following example.
-
-[!code-csharp[csProgGuideNamedAndOptional#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#3)]
-
-However, you can greatly simplify the call to `AutoFormat` by using named and optional arguments, introduced in C# 4.0. Named and optional arguments enable you to omit the argument for an optional parameter if you don't want to change the parameter's default value. In the following call, a value is specified for only one of the seven parameters.
+However, you can greatly simplify the call to `AutoFormat` by using named and optional arguments. Named and optional arguments enable you to omit the argument for an optional parameter if you don't want to change the parameter's default value. In the following call, a value is specified for only one of the seven parameters.
 
 [!code-csharp[csProgGuideNamedAndOptional#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#13)]
 

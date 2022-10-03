@@ -45,7 +45,7 @@ The following example shows how to use the <xref:System.IO.StreamWriter> class t
 
 ## Example: Asynchronously write text with StreamWriter
 
-The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call must be within an `async` method. The C# example requires C# 7.1 or later, which adds support for the `async` modifier on the program entry point.
+The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call must be within an `async` method.
 
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/async.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/async.vb)]  

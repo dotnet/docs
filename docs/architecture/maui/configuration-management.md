@@ -5,7 +5,10 @@ author: michaelstonis
 no-loc: [MAUI]
 ms.date: 06/28/2022
 ---
+
 # Configuration management
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Settings allow the separation of data that configures the behavior of an app from the code, allowing the behavior to be changed without rebuilding the app. There are two types of settings: app settings and user settings.
 

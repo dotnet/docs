@@ -400,7 +400,11 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 ```
 
 > [!NOTE]
-> You must specify this property in the project that references the NuGet package with localized resource satellite assemblies.
+>
+> - You must specify this property in the project that references the NuGet package with localized resource satellite assemblies.
+> - To specify multiple languages as an argument to `dotnet publish`, you must add *three pairs* of quotation marks around the language identifiers. For example:
+>
+>   `dotnet msbuild multi.msbuildproj -p:SatelliteResourceLanguages="""de;en"""`
 
 ### UseAppHost
 

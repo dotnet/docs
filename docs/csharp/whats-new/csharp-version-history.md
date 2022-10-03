@@ -73,7 +73,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](../expression-trees.md)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
-- [Implicitly typed local variables](../language-reference/keywords/var.md)
+- [Implicitly typed local variables](../language-reference/statements/declarations.md#implicitly-typed-local-variables)
 - [Partial methods](../language-reference/keywords/partial-method.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
@@ -146,9 +146,10 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
-- Local functions
-- Expanded expression bodied members
-- [Ref locals and returns](../programming-guide/classes-and-structs/ref-returns.md)
+- [Local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Ref locals](../language-reference/statements/declarations.md#ref-locals)
+- [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 

@@ -37,7 +37,7 @@ If you don't specify member names in the anonymous type, the compiler gives the 
 > [!TIP]
 > You can use .NET style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to enforce whether inferred or explicit member names are preferred.
 
-Typically, when you use an anonymous type to initialize a variable, you declare the variable as an implicitly typed local variable by using [var](../../language-reference/keywords/var.md). The type name cannot be specified in the variable declaration because only the compiler has access to the underlying name of the anonymous type. For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+Typically, when you use an anonymous type to initialize a variable, you declare the variable as an implicitly typed local variable by using [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables). The type name cannot be specified in the variable declaration because only the compiler has access to the underlying name of the anonymous type. For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 You can create an array of anonymously typed elements by combining an implicitly typed local variable and an implicitly typed array, as shown in the following example.
 
@@ -56,3 +56,11 @@ Anonymous types support non-destructive mutation in the form of [with expression
 You cannot declare a field, a property, an event, or the return type of a method as having an anonymous type. Similarly, you cannot declare a formal parameter of a method, property, constructor, or indexer as having an anonymous type. To pass an anonymous type, or a collection that contains anonymous types, as an argument to a method, you can declare the parameter as type `object`. However, using `object` for anonymous types defeats the purpose of strong typing. If you must store query results or pass them outside the method boundary, consider using an ordinary named struct or class instead of an anonymous type.
 
 Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.
+
+Anonymous types do override the <xref:System.Object.ToString%2A> method, concatenating the name and `ToString` output of every property surrounded by curly braces.
+
+```
+var v = new { Title = "Hello", Age = 24 };
+
+Console.WriteLine(v.ToString()); // "{ Title = Hello, Age = 24 }"
+```

@@ -49,7 +49,7 @@ In C# 10, you can use constant string interpolation and the `nameof` operator to
 
 ## `SetsRequiredMembers` attribute
 
-The `SetsRequiredMembers` attribute informs the compiler that a constructor sets all `required` members in that class or struct. The compiler assumes any constructor with the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute initializes all `required` members. Any code that invokes such a constructor doesn't need object initializers to set required members.
+The `SetsRequiredMembers` attribute informs the compiler that a constructor sets all `required` members in that class or struct. The compiler assumes any constructor with the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute initializes all `required` members. Any code that invokes such a constructor doesn't need object initializers to set required members. This is primarily useful for positional records and primary constructors.
 
 ## `AttributeUsage` attribute
 
@@ -82,7 +82,7 @@ The first <xref:System.AttributeUsageAttribute> argument must be one or more ele
 
 :::code language="csharp" source="snippets/NewPropertyOrFieldAttribute.cs" ID="SnippetDefinePropertyAttribute" :::
 
-Beginning in C# 7.3, attributes can be applied to either the property or the backing field for an auto-implemented property. The attribute applies to the property, unless you specify the `field` specifier on the attribute. Both are shown in the following example:
+Attributes can be applied to either the property or the backing field for an auto-implemented property. The attribute applies to the property, unless you specify the `field` specifier on the attribute. Both are shown in the following example:
 
 :::code language="csharp" source="snippets/NewPropertyOrFieldAttribute.cs" ID="SnippetUsePropertyAttribute" :::
 
@@ -102,7 +102,7 @@ You can also use these keywords to specify where an attribute should be applied.
 
 ## `AsyncMethodBuilder` attribute
 
-Beginning with C# 7, you add the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute to a type that can be an async return type. The attribute specifies the type that builds the async method implementation when the specified type is returned from an async method. The `AsyncMethodBuilder` attribute can be applied to a type that:
+You add the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute to a type that can be an async return type. The attribute specifies the type that builds the async method implementation when the specified type is returned from an async method. The `AsyncMethodBuilder` attribute can be applied to a type that:
 
 * Has an accessible `GetAwaiter` method.
 * The object returned by the `GetAwaiter` method implements the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.

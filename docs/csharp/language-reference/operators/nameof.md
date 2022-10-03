@@ -26,19 +26,18 @@ You can use a `nameof` expression to make the argument-checking code more mainta
 
 [!code-csharp[nameof and argument check](snippets/shared/NameOfOperator.cs#ExceptionMessage)]
 
-The argument to the `nameof` operator must be in scope. Beginning with C# 11, parameters and type parameters are in scope inside an attribute for the purpose of the `nameof` operator. The following examples show `nameof` used on parameters for a method, a local function, and a lambda expression:
+Beginning with C# 11, you can use a `nameof` expression with a method parameter inside an [attribute](../../programming-guide/concepts/attributes/index.md) on a method or its parameter. The following code shows how to do that for an attribute on a method, a local function, and the parameter of a lambda expression:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="SnippetNameOfParameter":::
 
-Using `nameof` on parameters is most useful when using the [Nullable analysis attributes](../attributes/nullable-analysis.md).
+A `nameof` expression with a parameter is useful when you use the [nullable analysis attributes](../attributes/nullable-analysis.md) or the [CallerArgumentExpression attribute](../attributes/caller-information.md#argument-expressions).
 
 ## C# language specification
 
-For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#11720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Nameof expressions](~/_csharpstandard/standard/expressions.md#11720-nameof-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md), and the [C# 11 - Extended `nameof` scope](~/_csharplang/proposals/csharp-11.0/extended-nameof-scope.md) feature specification.
 
 ## See also
 
-- [Convert `typeof` to `nameof` (style rule IDE0082)](../../../fundamentals/code-analysis/style-rules/ide0082.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [CallerArgumentExpression](../attributes/caller-information.md#argument-expressions)
+- [Convert `typeof` to `nameof` (style rule IDE0082)](../../../fundamentals/code-analysis/style-rules/ide0082.md)

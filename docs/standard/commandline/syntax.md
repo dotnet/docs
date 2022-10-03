@@ -37,7 +37,7 @@ Tokens are interpreted as commands, options, or arguments. The command-line app 
 | `--verbosity`    | Option for install command        |
 | `quiet`          | Argument for `--verbosity` option |
 
-A token can contains spaces if it's enclosed in quotation marks (`"`). Here's an example:
+A token can contain spaces if it's enclosed in quotation marks (`"`). Here's an example:
 
 ```console
 dotnet tool search "ef migrations add"
@@ -514,7 +514,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 * `-r` for `--runtime`
 
-  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md). If your app supports --runtime, consider supporting `--os` and `--arch` also. These options let you specify just the OS or the architecture parts of the RID, leaving the part not specified to be determined from the current platform. For more information, see d[dotnet publish](../../core/tools/dotnet-publish.md).
+  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md). If your app supports --runtime, consider supporting `--os` and `--arch` also. These options let you specify just the OS or the architecture parts of the RID, leaving the part not specified to be determined from the current platform. For more information, see [dotnet publish](../../core/tools/dotnet-publish.md).
 
 ### Short names
 

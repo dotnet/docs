@@ -13,7 +13,7 @@ jobs:
       IS_TRY_FIX: true # differentiates /tryfix from the validation-only run.
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - uses: actions/github-script@v3
+    - uses: actions/github-script@v6
       id: get-pr
       with:
         script: |
@@ -30,7 +30,7 @@ jobs:
             core.setFailed(`Request failed with error ${err}`)
           }
     - name: Checkout the repository
-      uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+      uses: actions/checkout@v3
 
     - name: Checkout Pull Request
       run: |

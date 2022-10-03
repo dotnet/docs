@@ -54,7 +54,7 @@ When working with JavaScript in your web application, there are a few tasks that
 
 - Performing validation.
 
-You can perform all of these tasks with JavaScript alone, but many libraries exist to make these tasks easier. One of the first and most successful of these libraries are jQuery, which continues to be a popular choice for simplifying these tasks on web pages. For Single Page Applications (SPAs), jQuery doesn't provide many of the desired features that Angular and React offer.
+You can perform all of these tasks with JavaScript alone, but many libraries exist to make these tasks easier. One of the first and most successful of these libraries is jQuery, which continues to be a popular choice for simplifying these tasks on web pages. For Single Page Applications (SPAs), jQuery doesn't provide many of the desired features that Angular and React offer.
 
 ### Legacy web apps with jQuery
 
@@ -79,7 +79,7 @@ Data binding is a great example of this functionality. In jQuery, it usually onl
 
 ### Angular SPAs
 
-Angular remains one of the world's most popular JavaScript frameworks. Since Angular 2, the team rebuilt the framework from the ground up (using [TypeScript](https://www.typescriptlang.org/)) and rebranded from the original AngularJS name to angular. Now several years old, the redesigned Angular continues to be a robust framework for building Single Page Applications.
+Angular remains one of the world's most popular JavaScript frameworks. Since Angular 2, the team rebuilt the framework from the ground up (using [TypeScript](https://www.typescriptlang.org/)) and rebranded from the original AngularJS name to Angular. Now several years old, the redesigned Angular continues to be a robust framework for building Single Page Applications.
 
 Angular applications are built from components. Components combine HTML templates with special objects and control a portion of the page. A simple component from Angular's docs is shown here:
 
@@ -191,9 +191,9 @@ Frameworks continue to evolve with breakneck speed. Use the considerations liste
 > - **Sass vs. LESS**  
 > <https://www.keycdn.com/blog/sass-vs-less/>
 > - **Styling ASP.NET Core Apps with LESS, Sass, and Font Awesome**  
-> [https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa](/aspnet/core/client-side/less-sass-fa)
+> [https://learn.microsoft.com/aspnet/core/client-side/less-sass-fa](/aspnet/core/client-side/less-sass-fa)
 > - **Client-Side Development in ASP.NET Core**  
-> [https://docs.microsoft.com/aspnet/core/client-side/](/aspnet/core/client-side/)
+> [https://learn.microsoft.com/aspnet/core/client-side/](/aspnet/core/client-side/)
 > - **jQuery**  
 > <https://jquery.com/>
 > - **jQuery vs AngularJS**  

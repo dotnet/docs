@@ -11,6 +11,9 @@ ms.topic: reference
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
+> [!TIP]
+> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
+
 ## Install
 
 There are two ways to download and install `dotnet-dump`:
@@ -44,7 +47,7 @@ dotnet-dump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux dumps without any native debugger involved like `lldb` on Linux. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
+The `dotnet-dump` global tool is a way to collect and analyze dumps on Windows, Linux, and macOS without any native debugger involved. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
 
 ## Options
 
@@ -100,12 +103,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
 - **`-o|--output <output_dump_path>`**
 
-  The full path and file name where the collected dump should be written.
+  The full path and file name where the collected dump should be written. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.
 
   If not specified:
 
   - Defaults to *.\dump_YYYYMMDD_HHMMSS.dmp* on Windows.
-  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux.
+  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux and macOS.
 
   YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second.
 

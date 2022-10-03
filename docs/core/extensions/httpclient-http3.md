@@ -22,7 +22,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 >
 > For more information on preview features, see [**the preview features specification**](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
 >
-> Apps configured to take advantage of HTTP/3 should be designed to also support HTTP/1.1 and HTTP/2. If issues are identified in HTTP/3, we recommended disabling HTTP/3 until the issues are resolved in a future release of .NET.
+> Apps configured to take advantage of HTTP/3 should be designed to also support HTTP/1.1 and HTTP/2. If issues are identified in HTTP/3, we recommend disabling HTTP/3 until the issues are resolved in a future release of .NET.
 
 ## HttpClient settings
 
@@ -45,7 +45,7 @@ The reason for requiring a configuration flag for HTTP/3 is to protect apps from
 
 ## Platform dependencies
 
-HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. MsQuic is included in specific builds of windows and as a library for Linux. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3 then it's disabled.
+HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. MsQuic is included in specific builds of Windows and as a library for Linux. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3 then it's disabled.
 
 ### Windows
 

@@ -8,6 +8,8 @@ ms.date: 07/12/2022
 
 # Authentication and Authorization
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Authentication is the process of obtaining identification credentials such as name and password from a user and validating those credentials against an authority. The entity that submitted the credentials is considered an authenticated identity if the credentials are valid. Once an identity has been established, an authorization process determines whether that identity has access to a given resource.
 
 There are many approaches to integrating authentication and authorization into a .NET MAUI app that communicates with an ASP.NET web application, including using ASP.NET Core Identity, external authentication providers such as Microsoft, Google, Facebook, or Twitter, and authentication middleware. The eShopOnContainers multi-platform app performs authentication and authorization with a containerized identity microservice that uses IdentityServer 4. The app requests security tokens from IdentityServer to authenticate a user or access a resource. For IdentityServer to issue tokens on behalf of a user, the user must sign in to IdentityServer. However, IdentityServer doesn't provide a user interface or database for authentication. Therefore, in the eShopOnContainers reference application, ASP.NET Core Identity is used for this purpose.
@@ -193,7 +195,7 @@ This configuration specifies data for the following properties:
 
 The authentication flow between a client and IdentityServer can be configured by specifying the grant types in the `Client.AllowedGrantTypes` property. The OpenID Connect and OAuth 2.0 specifications define several authentication flows, including:
 
-| Authention Flow | Description |
+| Authentication Flow | Description |
 |---------|---------|
 | Implicit | This flow is optimized for browser-based applications and should be used either for user authentication-only, or authentication and access token requests. All tokens are transmitted via the browser, and therefore advanced features like refresh tokens are not permitted. |
 | Authorization code | This flow provides the ability to retrieve tokens on a back channel, as opposed to the browser front channel, while also supporting client authentication. |

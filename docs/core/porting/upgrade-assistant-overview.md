@@ -2,7 +2,7 @@
 title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps migrate from .NET Framework and upgrades your projects to .NET 6.
 author: adegeo
-ms.date: 11/08/2021
+ms.date: 08/02/2022
 ---
 # Overview of the .NET Upgrade Assistant
 
@@ -54,6 +54,13 @@ Similarly, because the .NET Upgrade Assistant is installed as a .NET tool, it ca
 ```dotnetcli
 dotnet tool update -g upgrade-assistant
 ```
+
+> [!IMPORTANT]
+> Installing this tool may fail if you've configured additional NuGet feed sources. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors:
+>
+> ```dotnetcli
+> dotnet tool install -g --ignore-failed-sources upgrade-assistant
+> ```
 
 ## See also
 

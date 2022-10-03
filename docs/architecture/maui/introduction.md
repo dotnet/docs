@@ -5,7 +5,10 @@ author: michaelstonis
 no-loc: [MAUI]
 ms.date: 06/18/2022
 ---
+
 # Introduction to .NET MAUI
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Regardless of platform, developers of enterprise apps face several challenges:
 

@@ -66,7 +66,7 @@ int* myVariable;
 
 The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
-There are several examples of pointers in the articles on the [`fixed` statement](keywords/fixed-statement.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
+There are several examples of pointers in the articles on the [`fixed` statement](statements/fixed.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="5":::
 
@@ -88,7 +88,7 @@ The following table lists the operators and statements that can operate on point
 |`+` and `-`|Performs pointer arithmetic.|
 |`==`, `!=`, `<`, `>`, `<=`, and `>=`|Compares pointers.|
 |[`stackalloc`](operators/stackalloc.md)|Allocates memory on the stack.|
-|[`fixed` statement](keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
+|[`fixed` statement](statements/fixed.md)|Temporarily fixes a variable so that its address may be found.|
 
 For more information about pointer-related operators, see [Pointer-related operators](operators/pointer-related-operators.md).
 
@@ -100,7 +100,7 @@ The following example converts an `int*` to a `byte*`. Notice that the pointer p
 
 ## Fixed-size buffers
 
-In C#, you can use the [fixed](keywords/fixed-statement.md) statement to create a buffer with a fixed size array in a data structure. Fixed size buffers are useful when you write methods that interoperate with data sources from other languages or platforms. The fixed array can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
+You can use the `fixed` keyword to create a buffer with a fixed-size array in a data structure. Fixed-size buffers are useful when you write methods that interoperate with data sources from other languages or platforms. The fixed-size buffer can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
 
 ```csharp
 private fixed char name[30];
@@ -112,17 +112,15 @@ The size of the following `struct` doesn't depend on the number of elements in t
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="6":::
 
-A `struct` can contain an embedded array in unsafe code. In the following example, the `fixedBuffer` array has a fixed size. You use a `fixed` statement to establish a pointer to the first element. You access the elements of the array through this pointer. The `fixed` statement pins the `fixedBuffer` instance field to a specific location in memory.
+A struct can contain an embedded array in unsafe code. In the following example, the `fixedBuffer` array has a fixed size. You use a [`fixed` statement](statements/fixed.md) to get a pointer to the first element. You access the elements of the array through this pointer. The `fixed` statement pins the `fixedBuffer` instance field to a specific location in memory.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="7":::
 
-The size of the 128 element `char` array is 256 bytes. Fixed size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This array size is the same even when char buffers are marshalled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
+The size of the 128 element `char` array is 256 bytes. Fixed-size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This array size is the same even when char buffers are marshalled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
-The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
+The  preceding example demonstrates accessing `fixed` fields without pinning. Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
 
-Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
-
-Fixed size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed size buffer could exist in an `unsafe struct`.
+Fixed-size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed-size buffer could exist in an `unsafe struct`.
 
 ```csharp
 internal unsafe struct Buffer
@@ -149,7 +147,7 @@ internal struct Buffer
 }
 ```
 
-Fixed size buffers differ from regular arrays in the following ways:
+Fixed-size buffers differ from regular arrays in the following ways:
 
 - May only be used in an `unsafe` context.
 - May only be instance fields of structs.
@@ -160,9 +158,9 @@ Fixed size buffers differ from regular arrays in the following ways:
 
 The following example uses pointers to copy bytes from one array to another.
 
-This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](keywords/fixed-statement.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that they will not be moved by garbage collection. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](statements/fixed.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that they will not be moved by garbage collection. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
-This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays. This feature is available starting with C# 7.3.
+This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="8":::
 

@@ -13,11 +13,11 @@ ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 
 The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article.
 
-Beginning with C# 7.0, you can also use the `is` operator to match an expression against a pattern, as the following example shows:
+You can also use the `is` operator to match an expression against a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 
-In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) (available in C# 8.0 and later) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) (available in C# 9.0 and later) patterns.
+In the preceding example, the `is` operator matches an expression against a [property pattern](patterns.md#property-pattern) with nested [constant](patterns.md#constant-pattern) and [relational](patterns.md#relational-patterns) (available in C# 9.0 and later) patterns.
 
 The `is` operator can be useful in the following scenarios:
 
@@ -31,7 +31,7 @@ The `is` operator can be useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NullCheck":::
 
-  When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked. Beginning with C# 11, you can use `is null` on unconstrained generic types.
+  When you match an expression against `null`, the compiler guarantees that no user-overloaded `==` or `!=` operator is invoked.
 
 - Beginning with C# 9.0, you can use a [negation pattern](patterns.md#logical-patterns) to do a non-null check, as the following example shows:
 

@@ -12,7 +12,7 @@ ms.date: 01/27/2020
 
 This article describes what is new in .NET Core 3.0. One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or newer, [Visual Studio for Mac 8.3](/visualstudio/mac/install-preview) or newer, or [Visual Studio Code](https://code.visualstudio.com/) with the latest **C# extension**.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or newer, [Visual Studio for Mac 8.3](/visualstudio/mac/install-preview) or newer, or [Visual Studio Code](https://code.visualstudio.com/) with the latest **C# extension**.
 
 [Download and get started with .NET Core 3.0](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
 
@@ -49,7 +49,7 @@ Language enhancements were added to support the following API features detailed 
 </Project>
 ```
 
-If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
+If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
 
 ## Compile/Deploy
 
@@ -137,7 +137,7 @@ It's important to consider that applications or frameworks (including ASP.NET Co
 
 Above all else, be sure to test your app after trimming.
 
-For more information about the IL Trimmer tool, see the [documentation](../deploying/trimming/trim-self-contained.md) or visit the [mono/linker]( https://github.com/mono/linker) repo.
+For more information about the IL Trimmer tool, see the [documentation](../deploying/trimming/trim-self-contained.md) or visit the [mono/linker](https://github.com/mono/linker) repo.
 
 ### Tiered compilation
 
@@ -539,9 +539,9 @@ System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runt
 
 The new built-in JSON support is high-performance, low allocation, and works with UTF-8 encoded JSON text. For more information about the <xref:System.Text.Json> namespace and types, see the following articles:
 
-* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json-overview.md)
-* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json-how-to.md).
-* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md)
+* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json/overview.md)
+* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json/how-to.md).
+* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md)
 
 ### HTTP/2 support
 

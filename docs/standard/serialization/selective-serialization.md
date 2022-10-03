@@ -31,4 +31,3 @@ If possible, make an object that could contain security-sensitive data nonserial
 
 - [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)

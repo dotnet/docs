@@ -67,7 +67,7 @@ items:
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
     # TODO: Delegates, lambdas and events
-  - name: Object Oriented programming
+  - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
       href: fundamentals/object-oriented/index.md
@@ -126,7 +126,7 @@ items:
       # TODO: Fundamentals of using lambdas
     - name: Introduction to classes
       href: fundamentals/tutorials/classes.md
-    - name: Object-Oriented C#
+    - name: Object-oriented C#
       href: fundamentals/tutorials/oop.md
     # Composing objects from parts
     - name: Inheritance in C# and .NET
@@ -664,18 +664,6 @@ items:
         href: programming-guide/classes-and-structs/methods.md
       - name: Local functions
         href: programming-guide/classes-and-structs/local-functions.md
-      - name: Ref returns and ref locals
-        href: programming-guide/classes-and-structs/ref-returns.md
-      - name: Parameters
-        items:
-        - name: Passing parameters
-          href: programming-guide/classes-and-structs/passing-parameters.md
-        - name: Passing Value-Type Parameters
-          href: programming-guide/classes-and-structs/passing-value-type-parameters.md
-        - name: Passing Reference-Type Parameters
-          href: programming-guide/classes-and-structs/passing-reference-type-parameters.md
-        - name: "How to know the difference between passing a struct and passing a class reference to a method"
-          href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
       - name: Implicitly Typed Local Variables
         href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
       - name: "How to use implicitly typed local variables and arrays in a query expression"
@@ -882,9 +870,12 @@ items:
       - name: Enumeration types
         href: language-reference/builtin-types/enum.md
         displayName: "enum, bit flags, bit field"
-      - name: Structure types
+      - name: Struct types
         href: language-reference/builtin-types/struct.md
         displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+      - name: Ref struct types
+        href: language-reference/builtin-types/ref-struct.md
+        displayName: "ref struct, readonly ref struct"
       - name: Tuple types
         href: language-reference/builtin-types/value-tuples.md
         displayName: "value tuples, ValueTuple"
@@ -909,8 +900,6 @@ items:
         displayName: "? token, ? symbol"
     - name: void
       href: language-reference/builtin-types/void.md
-    - name: var
-      href: language-reference/keywords/var.md
     - name: Built-in types
       href: language-reference/builtin-types/built-in-types.md
     - name: Unmanaged types
@@ -946,6 +935,8 @@ items:
           href: language-reference/keywords/protected-internal.md
         - name: private protected
           href: language-reference/keywords/private-protected.md
+        - name: file
+          href: language-reference/keywords/file.md
       - name: abstract
         href: language-reference/keywords/abstract.md
       - name: async
@@ -991,17 +982,6 @@ items:
           href: language-reference/keywords/try-finally.md
         - name: try-catch-finally
           href: language-reference/keywords/try-catch-finally.md
-      - name: Checked and Unchecked
-        items:
-        - name: Overview
-          displayName: checked unchecked
-          href: language-reference/keywords/checked-and-unchecked.md
-        - name: checked
-          href: language-reference/keywords/checked.md
-        - name: unchecked
-          href: language-reference/keywords/unchecked.md
-      - name: fixed Statement
-        href: language-reference/keywords/fixed-statement.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1070,8 +1050,6 @@ items:
         href: language-reference/keywords/when.md
       - name: value
         href: language-reference/keywords/value.md
-      - name: yield
-        href: language-reference/keywords/yield.md
     - name: Query Keywords
       items:
       - name: Quick reference
@@ -1202,6 +1180,9 @@ items:
       href: language-reference/operators/operator-overloading.md
   - name: Statements
     items:
+    - name: Declaration statements
+      displayName: var, ref
+      href: language-reference/statements/declarations.md
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md
@@ -1211,9 +1192,18 @@ items:
     - name: Jump statements
       displayName: break, continue, goto, return
       href: language-reference/statements/jump-statements.md
+    - name: checked and unchecked statements
+      displayName: overflow checking
+      href: language-reference/statements/checked-and-unchecked.md
+    - name: fixed statement
+      displayName: pin, pinned
+      href: language-reference/statements/fixed.md
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
+    - name: yield statement
+      displayName: iterator, yield break, yield return
+      href: language-reference/statements/yield.md
   - name: Special characters
     items:
     - name: Overview
@@ -1238,7 +1228,7 @@ items:
       displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
-    displayName: unsafe code, pointers, fixed buffer, function pointer
+    displayName: unsafe code, pointers, fixed size buffer, function pointer
     href: language-reference/unsafe-code.md
   - name: Preprocessor directives
     href: language-reference/preprocessor-directives.md
@@ -1348,7 +1338,7 @@ items:
       href: ../../_csharpstandard/standard/documentation-comments.md
     - name: Bibliography
       href: ../../_csharpstandard/standard/bibliography.md
-  - name: C# 7.0 - 10.0 features
+  - name: C# 7.0 - 11.0 features
     items:
     - name: C# 7.0 features
       items:
@@ -1380,8 +1370,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/span-safety.md
       - name: Non-trailing named arguments
         href: ../../_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md
-      - name: Private protected
-        href: ../../_csharplang/proposals/csharp-7.2/private-protected.md
       - name: Conditional ref
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features
@@ -1492,3 +1480,33 @@ items:
         href: ../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
       - name: AsyncMethodBuilder override
         href: ../../_csharplang/proposals/csharp-10.0/async-method-builders.md
+    - name: C# 11 features
+      items:
+      - name: Static abstracts in interfaces
+        href: ../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
+      - name: Checked user-defined operators
+        href: ../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
+      - name: Unsigned right-shift operator
+        href: ../../_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md
+      - name: Relaxing shift operator
+        href: ../../_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md
+      - name: Numeric IntPtr
+        href: ../../_csharplang/proposals/csharp-11.0/numeric-intptr.md
+      - name: Raw string literals
+        href: ../../_csharplang/proposals/csharp-11.0/raw-string-literal.md
+      - name: Interpolated string newline
+        href: ../../_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md
+      - name: UTF-8 string literals
+        href: ../../_csharplang/proposals/csharp-11.0/utf8-string-literals.md
+      - name: Pattern match span
+        href: ../../_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md
+      - name: List patterns
+        href: ../../_csharplang/proposals/csharp-11.0/list-patterns.md
+      - name: Required members
+        href: ../../_csharplang/proposals/csharp-11.0/required-members.md
+      - name: Auto-default struct
+        href: ../../_csharplang/proposals/csharp-11.0/auto-default-structs.md
+      - name: Extended nameof scope
+        href: ../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
+      - name: File local types
+        href: ../../_csharplang/proposals/csharp-11.0/file-local-types.md

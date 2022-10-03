@@ -24,7 +24,7 @@ CodeBehind = "CodeBehind"
 
 ### Service
 
-The CLR type name of the service hosted. This should be a qualified name of a type that implements one or more of the service contacts.
+The CLR type name of the service hosted. This should be a qualified name of a type that implements one or more of the service contracts.
 
 ### Factory
 

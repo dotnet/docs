@@ -40,4 +40,4 @@ Recompile your app using the RC 2 SDK.
 
 ## See also
 
-- [How to use source generation in System.Text.Json](../../../../standard/serialization/system-text-json-source-generation.md)
+- [How to use source generation in System.Text.Json](../../../../standard/serialization/system-text-json/source-generation.md)

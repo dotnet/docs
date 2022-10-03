@@ -82,7 +82,7 @@ SELECT t.x + t.y FROM T AS t group BY t.x + t.y
  To do this in Entity SQL:  
   
 ```sql  
-SELET k FROM T AS t GROUP BY (t.x + t.y) AS k
+SELECT k FROM T AS t GROUP BY (t.x + t.y) AS k
 ```  
   
 ## Referencing Columns (Properties) of Tables (Collections)  
@@ -102,7 +102,7 @@ SELECT t.a AS A FROM T AS t
  The table aliases are optional in the `from` clause. The name of the table is used as the implicit alias. Entity SQL allows the following form as well:  
   
 ```sql  
-SELET Tab.a FROM Tab
+SELECT Tab.a FROM Tab
 ```  
   
 ## Navigation Through Objects  

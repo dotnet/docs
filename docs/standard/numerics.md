@@ -35,7 +35,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.Int32?displayProperty=nameWithType>|4|-2,147,483,648|2,147,483,647|
 |<xref:System.Int64?displayProperty=nameWithType>|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
 |<xref:System.SByte?displayProperty=nameWithType>|1|-128|127|
-|<xref:System.IntPtr?displayProperty=nameWithType> (in 32-bit process)|4|-2,147,483,647|2,147,483,647|
+|<xref:System.IntPtr?displayProperty=nameWithType> (in 32-bit process)|4|-2,147,483,648|2,147,483,647|
 |<xref:System.IntPtr?displayProperty=nameWithType> (in 64-bit process)|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
 
 **Unsigned integer types**

@@ -77,7 +77,7 @@ public class ProductsController : Controller
 }
 ```
 
-Razor Pages doesn't use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
+Razor Pages don't use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
 
 ```csharp
 @page "{id:int}"
@@ -164,15 +164,15 @@ The end result of this approach is for controllers to be much smaller and focuse
 > ### References – Mapping Requests to Responses
 >
 > - **Routing to Controller Actions**\
- > [https://docs.microsoft.com/aspnet/core/mvc/controllers/routing](/aspnet/core/mvc/controllers/routing)
+ > [https://learn.microsoft.com/aspnet/core/mvc/controllers/routing](/aspnet/core/mvc/controllers/routing)
 > - **Model Binding**\
- > [https://docs.microsoft.com/aspnet/core/mvc/models/model-binding](/aspnet/core/mvc/models/model-binding)
+ > [https://learn.microsoft.com/aspnet/core/mvc/models/model-binding](/aspnet/core/mvc/models/model-binding)
 > - **Model Validation**\
- > [https://docs.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
+ > [https://learn.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
 > - **Filters**\
- > [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
+ > [https://learn.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **ApiController Attribute**\
- > [https://docs.microsoft.com/aspnet/core/web-api/](/aspnet/core/web-api/)
+ > [https://learn.microsoft.com/aspnet/core/web-api/](/aspnet/core/web-api/)
 
 ## Working with dependencies
 
@@ -322,7 +322,7 @@ ASP.NET Core MVC also uses a convention to locate views. You can override it wit
 
 ### APIs and Blazor applications
 
-If your application includes a set of web APIs, which must be secured, these apis should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
+If your application includes a set of web APIs, which must be secured, these APIs should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
 
 Additionally, Blazor applications, whether using Blazor Server or Blazor WebAssembly, should be built as separate projects. The applications have different runtime characteristics as well as security models. They're likely to share common types with the server-side web application (or API project), and these types should be defined in a common shared project.
 
@@ -410,13 +410,13 @@ If you find that you have a number of common responses from APIs based on common
 > ### References – Structuring applications
 >
 > - **Areas**\
->   [https://docs.microsoft.com/aspnet/core/mvc/controllers/areas](/aspnet/core/mvc/controllers/areas)
+>   [https://learn.microsoft.com/aspnet/core/mvc/controllers/areas](/aspnet/core/mvc/controllers/areas)
 > - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**\
->   [https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
+>   [https://learn.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
 > - **Filters**\
->   [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
+>   [https://learn.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
->   [https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
+>   [https://learn.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
 > - **Result in eShopOnWeb**\
 >   [https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result)
 
@@ -580,11 +580,11 @@ Blazor Server applications can leverage the same authentication features as any 
 > - **Authentication Actions and Defaults**\
 >   <https://stackoverflow.com/a/52493428>
 > - **Authentication and Authorization for SPAs**\
->   [https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization](/aspnet/core/security/authentication/identity-api-authorization)
+>   [https://learn.microsoft.com/aspnet/core/security/authentication/identity-api-authorization](/aspnet/core/security/authentication/identity-api-authorization)
 > - **ASP.NET Core Blazor Authentication and Authorization**\
->   [https://docs.microsoft.com/aspnet/core/blazor/security/](/aspnet/core/blazor/security/)
+>   [https://learn.microsoft.com/aspnet/core/blazor/security/](/aspnet/core/blazor/security/)
 > - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
->   [https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](../blazor-for-web-forms-developers/security-authentication-authorization.md)
+>   [https://learn.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](../blazor-for-web-forms-developers/security-authentication-authorization.md)
 
 ### Authorization
 
@@ -664,15 +664,15 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 > ### References – Security
 >
 > - **Security Docs Overview**\
->   [https://docs.microsoft.com/aspnet/core/security/](/aspnet/core/security/)
+>   [https://learn.microsoft.com/aspnet/core/security/](/aspnet/core/security/)
 > - **Enforcing SSL in an ASP.NET Core App**\
->   [https://docs.microsoft.com/aspnet/core/security/enforcing-ssl](/aspnet/core/security/enforcing-ssl)
+>   [https://learn.microsoft.com/aspnet/core/security/enforcing-ssl](/aspnet/core/security/enforcing-ssl)
 > - **Introduction to Identity**\
->   [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
+>   [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 > - **Introduction to Authorization**\
->   [https://docs.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
+>   [https://learn.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
 > - **Authentication and Authorization for API Apps in Azure App Service**\
->   [https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication](/azure/app-service-api/app-service-api-authentication)
+>   [https://learn.microsoft.com/azure/app-service-api/app-service-api-authentication](/azure/app-service-api/app-service-api-authentication)
 > - **Identity Server**\
 >   <https://github.com/IdentityServer>
 
@@ -825,13 +825,13 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 > ### References – Deployment
 >
 > - **Hosting and Deployment Overview**\
->   [https://docs.microsoft.com/aspnet/core/publishing/](/aspnet/core/publishing/)
+>   [https://learn.microsoft.com/aspnet/core/publishing/](/aspnet/core/publishing/)
 > - **When to use Kestrel with a reverse proxy**\
->   [https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy](/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
+>   [https://learn.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy](/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
 > - **Host ASP.NET Core apps in Docker**\
->   [https://docs.microsoft.com/aspnet/core/publishing/docker](/aspnet/core/publishing/docker)
+>   [https://learn.microsoft.com/aspnet/core/publishing/docker](/aspnet/core/publishing/docker)
 > - **Introducing Azure Application Gateway**\
->   [https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction](/azure/application-gateway/application-gateway-introduction)
+>   [https://learn.microsoft.com/azure/application-gateway/application-gateway-introduction](/azure/application-gateway/application-gateway-introduction)
 
 >[!div class="step-by-step"]
 >[Previous](common-client-side-web-technologies.md)

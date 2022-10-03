@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace keywords
+namespace Keywords
 {
     public static class UsingStatements
     {

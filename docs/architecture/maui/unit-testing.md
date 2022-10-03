@@ -8,6 +8,8 @@ ms.date: 07/11/2022
 
 # Unit testing
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 multi-platform apps experience problems similar to both desktop and web-based applications. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, multi-platform apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form and essential to building high-quality applications.
 
 A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app. Detecting a bug where it occurs is more efficient that observing the effect of a bug indirectly at a secondary point of failure.
@@ -56,11 +58,11 @@ Testing models and view models from MVVM applications is identical to testing an
 
 > [!TIP]
 > Test one thing with each unit test. As the complexity of a test expands, it makes verification of that test more difficult. By limiting a unit test to a single concern, we can ensure that our tests are more repeatable, isolated, and have a smaller execution time. See
-[Unit testing best practices with .NET Core and .NET Standard](/dotnet/core/testing/unit-testing-best-practices) for more best practices.
+[Unit testing best practices with .NET Core and .NET Standard](../../core/testing/unit-testing-best-practices.md) for more best practices.
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShopOnContainers multi-platform app uses [xUnit](https://xunit.github.io/) to perform unit testing, which supports two different types of unit tests:
+The eShopOnContainers multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type | Attribute | Description                                                  |
 |--------------|-----------|--------------------------------------------------------------|

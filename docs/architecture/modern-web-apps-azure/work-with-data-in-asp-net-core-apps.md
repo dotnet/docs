@@ -236,7 +236,7 @@ The solution is to manually invoke the EF execution strategy with a delegate rep
 // Use of an EF Core resiliency strategy when using multiple DbContexts
 // within an explicit transaction
 // See:
-// https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
+// https://learn.microsoft.com/ef/core/miscellaneous/connection-resiliency
 var strategy = _catalogContext.Database.CreateExecutionStrategy();
 await strategy.ExecuteAsync(async () =>
 {
@@ -262,9 +262,9 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 > ### References – Entity Framework Core
 >
 > - **EF Core Docs**
->   [https://docs.microsoft.com/ef/](/ef/)
+>   [https://learn.microsoft.com/ef/](/ef/)
 > - **EF Core: Related Data**
->   [https://docs.microsoft.com/ef/core/querying/related-data](/ef/core/querying/related-data)
+>   [https://learn.microsoft.com/ef/core/querying/related-data](/ef/core/querying/related-data)
 > - **Avoid Lazy Loading Entities in ASPNET Applications**
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
@@ -345,7 +345,7 @@ The Azure Cosmos DB query language is a simple yet powerful interface for queryi
 **References – Azure Cosmos DB**
 
 - Azure Cosmos DB Introduction
-  [https://docs.microsoft.com/azure/cosmos-db/introduction](/azure/cosmos-db/introduction)
+  [https://learn.microsoft.com/azure/cosmos-db/introduction](/azure/cosmos-db/introduction)
 
 ## Other persistence options
 
@@ -362,7 +362,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 **References – Azure Storage**
 
 - Azure Storage Introduction
-  [https://docs.microsoft.com/azure/storage/common/storage-introduction](/azure/storage/common/storage-introduction)
+  [https://learn.microsoft.com/azure/storage/common/storage-introduction](/azure/storage/common/storage-introduction)
 
 ## Caching
 
@@ -526,7 +526,7 @@ _httpClient.DefaultRequestHeaders.Authorization =
 
 This activity can be done from any component that has the `HttpClient` injected into it, provided that `HttpClient` wasn't added to the application's services with a `Transient` lifetime. Every reference to `HttpClient` in the application references the same instance, so changes to it in one component flow through the entire application. A good place to perform this authentication check (followed by specifying the token) is in a shared component like the main navigation for the site. Learn more about this approach in the `BlazorAdmin` project in the [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb).
 
-One benefit of Blazor WebAssembly over traditional JavaScript SPAs is that you don't need to keep to copies of your data transfer objects(DTOs) synchronized. Your Blazor WebAssembly project and your web API project can both share the same DTOs in a common shared project. This approach eliminates some of the friction involved in developing SPAs.
+One benefit of Blazor WebAssembly over traditional JavaScript SPAs is that you don't need to keep copies of your data transfer objects(DTOs) synchronized. Your Blazor WebAssembly project and your web API project can both share the same DTOs in a common shared project. This approach eliminates some of the friction involved in developing SPAs.
 
 To quickly get data from an API endpoint, you can use the built-in helper method, `GetFromJsonAsync`. There are similar methods for POST, PUT, etc. The following shows how to get a CatalogItem from an API endpoint using a configured `HttpClient` in a Blazor WebAssembly app:
 
@@ -539,7 +539,7 @@ Once you have the data you need, you'll typically track changes locally. When yo
 **References – Blazor Data**
 
 - Call a web API from ASP.NET Core Blazor
-  [https://docs.microsoft.com/aspnet/core/blazor/call-web-api](/aspnet/core/blazor/call-web-api)
+  [https://learn.microsoft.com/aspnet/core/blazor/call-web-api](/aspnet/core/blazor/call-web-api)
 
 >[!div class="step-by-step"]
 >[Previous](develop-asp-net-core-mvc-apps.md)

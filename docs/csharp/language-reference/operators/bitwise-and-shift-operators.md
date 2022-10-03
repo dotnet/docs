@@ -48,7 +48,7 @@ Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. Wh
 
 The `&`, `|`, and `^` operators are also defined for operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
-Bitwise and shift operations never cause overflow and produce the same results in [checked and unchecked](../keywords/checked-and-unchecked.md) contexts.
+Bitwise and shift operations never cause overflow and produce the same results in [checked and unchecked](../statements/checked-and-unchecked.md) contexts.
 
 ## Bitwise complement operator ~
 
@@ -201,6 +201,8 @@ For more information, see the following sections of the [C# language specificati
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#11183-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
+- [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
+- [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
 
 ## See also
 

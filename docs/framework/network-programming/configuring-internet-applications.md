@@ -95,6 +95,6 @@ The [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/net
   
 ## See also
 
-- [Network Programming in the .NET Framework](index.md)
+- [Network programming in .NET](../../fundamentals/networking/overview.md)
 - [Network Settings Schema](../configure-apps/file-schema/network/index.md)
 - [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/network/system-net-element-network-settings.md)

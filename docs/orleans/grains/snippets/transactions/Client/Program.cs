@@ -27,8 +27,8 @@ while (!Console.KeyAvailable)
 
     var fromKey = accountNames[fromIndex];
     var toKey = accountNames[toIndex];
-    var from = client.GetGrain<IAccountGrain>(fromKey);
-    var to = client.GetGrain<IAccountGrain>(toKey);
+    var fromAccount = client.GetGrain<IAccountGrain>(fromKey);
+    var toAccount = client.GetGrain<IAccountGrain>(toKey);
 
     // Perform the transfer and query the results
     try
@@ -36,14 +36,15 @@ while (!Console.KeyAvailable)
         var transferAmount = random.Next(200);
 
         await transactionClient.RunTransaction(
-            TransactionOption.Create, async () =>
+            TransactionOption.Create, 
+            async () =>
             {
-                await from.Withdraw(transferAmount);
-                await to.Deposit(transferAmount);
+                await fromAccount.Withdraw(transferAmount);
+                await toAccount.Deposit(transferAmount);
             });
 
-        var fromBalance = await from.GetBalance();
-        var toBalance = await to.GetBalance();
+        var fromBalance = await fromAccount.GetBalance();
+        var toBalance = await toAccount.GetBalance();
 
         Console.WriteLine(
             $"We transfered {transferAmount} credits from {fromKey} to " +

@@ -1,4 +1,4 @@
-﻿await Host.CreateDefaultBuilder()
+﻿await Host.CreateDefaultBuilder(args)
     .UseOrleans((_, silo) =>
     {
         silo.UseLocalhostClustering();

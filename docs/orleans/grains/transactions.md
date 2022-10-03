@@ -119,7 +119,7 @@ In the preceding example, the <xref:Orleans.Transactions.Abstractions.Transactio
 
 The recommended way to call a transaction grain method is to use the `ITransactionClient`. The `ITransactionClient` is automatically registered with the dependency injection service provider when the Orleans client is configured. The `ITransactionClient` is used to create a transaction context and to call transactional grain methods within that context. The following example shows how to use the `ITransactionClient` to call transactional grain methods.
 
-:::code source="snippets/transactions/Client/Program.cs" highlight="11-12,34-35,42-47":::
+:::code source="snippets/transactions/Client/Program.cs" highlight="11-12,30-31,38-44":::
 
 In the preceding client code:
 

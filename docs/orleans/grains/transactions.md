@@ -25,7 +25,7 @@ var builder = Host.CreateDefaultBuilder(args)
     });
 ```
 
-Likewise, to enable transactions on the client, call <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the client host builder:
+Likewise, to enable transactions on the client, call `UseTransactions` <!-- <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> --> on the client host builder:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)

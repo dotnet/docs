@@ -187,7 +187,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [florimm](https://github.com/florimm) - Florim Maxhuni ![There were 1 pull requests merged by Florim Maxhuni.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [grantwinney](https://github.com/grantwinney) - Grant ![There were 1 pull requests merged by Grant.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [initram](https://github.com/initram) - Martin Midtgaard ![There were 1 pull requests merged by Martin Midtgaard.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [jdholly](https://github.com/jdholly) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [jdholly](https://github.com/jdholly) ![There was 1 pull request merged by jdholly](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [kant2002](https://github.com/kant2002) - Andrii Kurdiumov ![There were 1 pull requests merged by Andrii Kurdiumov.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [ktarbet](https://github.com/ktarbet) - Karl Tarbet ![There were 1 pull requests merged by Karl Tarbet.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [KyleMit](https://github.com/KyleMit) - Kyle ![There were 1 pull requests merged by Kyle.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

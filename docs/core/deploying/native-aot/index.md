@@ -24,7 +24,7 @@ The following prerequisites need to be installed before publishing .NET projects
 
 On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
 
-On Linux, install clang and developer packages for libraries that .NET runtime depends on.
+On Linux, install compiler toolchain and developer packages for libraries that .NET runtime depends on.
 
 - Ubuntu (18.04+)
 

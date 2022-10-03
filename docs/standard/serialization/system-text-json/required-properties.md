@@ -49,3 +49,30 @@ public class Person
     public int Age { get; set; }
 }
 ```
+
+It is also possible to control whether a property is required via the contract model using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property:
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    TypeInfoResolver = new DefaultJsonTypeInfoResolver
+    {
+        Modifiers =
+        {
+            static typeInfo =>
+            {
+                if (typeInfo.Kind != JsonTypeInfoKind.Object)
+                    return;
+
+                foreach (JsonPropertyInfo propertyInfo in typeInfo.Properties)
+                {
+                    // strip IsRequired constraint from every property
+                    propertyInfo.IsRequired = false;
+                }
+            }
+        }
+    }
+};
+
+JsonSerializer.Deserialize<Person>("""{"Age": 42}""", options); // serialization now succeeds
+```

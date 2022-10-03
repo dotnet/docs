@@ -1,6 +1,6 @@
 ---
 title: Use HTTP/3 with HttpClient
-description: Learn how to use the HttpClient to access HTTP/3 servers in .NET 6
+description: Learn how to use the HttpClient to access HTTP/3 servers in .NET 6 and .NET 7
 author: IEvangelist
 ms.author: samsp
 ms.date: 7/28/2022
@@ -18,7 +18,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 
 > [!IMPORTANT]
 >
-> HTTP/3 is available in .NET 6 as a _preview feature_ because the HTTP/3 specification is not finalized and behavioral or performance issues may exist in HTTP/3 with .NET 6.
+> HTTP/3 is fully supported since .NET 7 only. In .NET 6, HTTP/3 is available as a _preview feature_ because the HTTP/3 specification was not yet finalized and behavioral or performance issues may exist in HTTP/3 with .NET 6.
 >
 > For more information on preview features, see [**the preview features specification**](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
 >
@@ -26,7 +26,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 
 ## HttpClient settings
 
-HTTP/3 support is in preview, and needs to be enabled via a configuration flag which can be set in the project with:
+Since .NET 7, HTTP/3 support in HttpClient is enabled by default. In .NET 6, HTTP/3 support is in preview, and needs to be enabled via a configuration flag which can be set in the project with:
 
 ```xml
 <ItemGroup>
@@ -54,14 +54,16 @@ HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 us
 
 ### Linux
 
+- OpenSSL 1.1
+
 On Linux, libmsquic is published via Microsoft's official Linux package repository packages.microsoft.com. To consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
 
 ```bash
-sudo apt install libmsquic=1.9*
+sudo apt install libmsquic
 ```
 
 > [!NOTE]
-> .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x is not compatible due to breaking changes. Libmsquic will receive updates to 1.9.x when needed to incorporate security fixes.  
+> .NET 7 is only compatible with 2.1+ versions of libmsquic. .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x is not compatible with .NET 6 due to breaking changes in the library. Libmsquic will receive updates to 1.9.x when needed to incorporate security fixes. 
 
 ### macOS
 
@@ -69,7 +71,7 @@ HTTP/3 is not currently supported on macOS but may be available in a future rele
 
 ## Using HttpClient
 
-Include the following in the project file to enable HTTP/3 with HttpClient:
+If your application targets .NET 6, Include the following in the project file to enable HTTP/3 with HttpClient:
 
 ```xml
 <ItemGroup>
@@ -83,7 +85,7 @@ The following code example uses [top-level statements](../../csharp/fundamentals
 
 ## HTTP/3 Server
 
-HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server][http3Kestrel].
+HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6 (preview) and .NET 7 (fully supported). For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server][http3Kestrel].
 
 ## Public test servers
 

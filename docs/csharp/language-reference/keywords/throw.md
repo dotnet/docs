@@ -42,9 +42,9 @@ Method callers then use a `try-catch` or `try-catch-finally` block to handle the
 
 ## The `throw` expression
 
-Starting with C# 7.0, `throw` can be used as an expression as well as a statement. This allows an exception to be thrown in contexts that were previously unsupported. These include:
+`throw` can be used as an expression as well as a statement. This allows an exception to be thrown in contexts that were previously unsupported. These include:
 
-- [the conditional operator](../operators/conditional-operator.md). The following example uses a `throw` expression to throw an <xref:System.ArgumentException> if a method is passed an empty string array. Before C# 7.0, this logic would need to appear in an `if`/`else` statement.
+- [the conditional operator](../operators/conditional-operator.md). The following example uses a `throw` expression to throw an <xref:System.ArgumentException> if a method is passed an empty string array.
 
    [!code-csharp[csrefKeyword#4](~/samples/snippets/csharp/language-reference/keywords/throw/conditional/conditional.cs#1)]
 

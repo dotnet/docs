@@ -2,6 +2,12 @@
 # https://github.com/dotnet/core/tree/master/samples/dependadotnet
 version: 2
 updates:
+  - package-ecosystem: "github-actions" # Core GitHub Actions
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/pipelines" #Pipes.csproj
     schedule:

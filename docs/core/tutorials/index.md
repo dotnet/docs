@@ -1,7 +1,9 @@
 ---
 title: .NET Tutorials
 description: Follow tutorials for learning .NET to build apps and libraries on Mac, Linux, and Windows.
-ms.date: 12/07/2020
+author: tdykstra
+ms.date: 06/22/2022
+ms.custom: devdivchpfy22
 titleSuffix: ""
 ---
 # Learn .NET and the .NET SDK tools by exploring these tutorials
@@ -21,7 +23,7 @@ The following tutorials show how to develop console apps and libraries for .NET 
 
 ## Use Visual Studio Code
 
-Choose these tutorials if you want to use Visual Studio Code or some other code editor. All use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
+Choose these tutorials if you want to use Visual Studio Code or some other code editor. All of them use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
 
 - [Create a console app](with-visual-studio-code.md)
 - [Debug an app](debugging-with-visual-studio-code.md)
@@ -42,7 +44,7 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 - [Create an F# console app](../../fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 
-## Advanced topics
+## Advanced articles
 
 - [How to create libraries](libraries.md)
 - [Unit test an app with xUnit](testing-with-cli.md)

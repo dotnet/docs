@@ -112,7 +112,7 @@ ms.date: 06/30/2022
 ---
 # Resolve nullable warnings
 
-The purpose of nullable reference types is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that may lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you'll learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
+The purpose of nullable warnings is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that may lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you'll learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
 
 You'll address almost all warnings using one of four techniques:
 
@@ -131,6 +131,8 @@ This set of warnings alerts you that you're dereferencing a variable whose *null
 The following code demonstrates one example of each of the preceding warnings:
 
 :::code language="csharp" source="snippets/null-warnings/NullWarnings.cs" id="PossibleNullDereference":::
+
+In the example above, the warning is because the `Container`, `c` may have a null value for the `States` property. Assigning new states to a collection that might be null causes the warning.
 
 To remove these warnings, you need to add code to change that variable's *null-state* to *not-null* before dereferencing it. The collection initializer warning may be harder to spot. The compiler detects that the collection *maybe-null* when the initializer adds elements to it.
 

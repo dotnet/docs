@@ -27,8 +27,6 @@ The `readonly` keyword is a modifier that can be used in four contexts:
 - In an instance member declaration within a structure type, `readonly` indicates that an instance member doesn't modify the state of the structure. For more information, see the [`readonly` instance members](../builtin-types/struct.md#readonly-instance-members) section of the [Structure types](../builtin-types/struct.md) article.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes aren't allowed to that reference.
 
-The `readonly struct` and `ref readonly` contexts were added in C# 7.2. `readonly` struct members were added in C# 8.0
-
 ## Readonly field example
 
 In this example, the value of the field `year` can't be changed in the method `ChangeYear`, even though it's assigned a value in the class constructor:

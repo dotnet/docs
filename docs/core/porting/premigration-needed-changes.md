@@ -15,7 +15,7 @@ Upgrade to a version of MSBuild/Visual Studio that supports the version of .NET 
 
 ## Update .NET Framework target version
 
-We recommended that you target your .NET Framework app to version 4.7.2 or higher. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
+We recommend that you target your .NET Framework app to version 4.7.2 or higher. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
 For each of the projects you wish to port, do the following in Visual Studio:
 

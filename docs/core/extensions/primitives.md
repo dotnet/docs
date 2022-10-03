@@ -115,7 +115,7 @@ The <xref:Microsoft.Extensions.Primitives.StringValues> object is a `struct` typ
 
 :::code source="./snippets/primitives/string/Example.StringValues.cs" id="StringValues":::
 
-The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written the console.
+The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written to the console.
 
 The `StringValues` type is an implementation of the following collection types:
 

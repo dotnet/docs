@@ -190,14 +190,14 @@ For example, the regular expression pattern `^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$` is 
 
 In these cases, you can optimize regular expression performance by removing the nested quantifiers and replacing the outer subexpression with a zero-width lookahead or lookbehind assertion. Lookahead and lookbehind assertions are anchors. They don't move the pointer in the input string but instead look ahead or behind to check whether a specified condition is met. For example, the part number regular expression can be rewritten as `^[0-9A-Z][-.\w]*(?<=[0-9A-Z])\$$`. This regular expression pattern is defined as shown in the following table:
 
-|Pattern|Description|
-|-------------|-----------------|
-|`^`|Begin the match at the beginning of the input string.|
-|`[0-9A-Z]`|Matches an alphanumeric character. The part number must consist of at least this character.|
-|`[-.\w]*`|Matches zero or more occurrences of any word character, hyphen, or period.|
-|`\$`|Matches a dollar sign.|
-|`(?<=[0-9A-Z])`|Look ahead of the ending dollar sign to ensure that the previous character is alphanumeric.|
-|`$`|End the match at the end of the input string.|
+| Pattern         | Description                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------|
+| `^`             | Begin the match at the beginning of the input string.                                     |
+| `[0-9A-Z]`      | Match an alphanumeric character. The part number must consist of at least this character. |
+| `[-.\w]*`       | Match zero or more occurrences of any word character, hyphen, or period.                  |
+| `\$`            | Match a dollar sign.                                                                      |
+| `(?<=[0-9A-Z])` | Look behind the ending dollar sign to ensure that the previous character is alphanumeric. |
+| `$`             | End the match at the end of the input string.                                             |
 
 The following example illustrates the use of this regular expression to match an array containing possible part numbers:
 

@@ -145,7 +145,7 @@ Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` 
 ## Additional resources
 
 - **Circuit Breaker pattern**\
-  [https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker](/azure/architecture/patterns/circuit-breaker)
+  [https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker](/azure/architecture/patterns/circuit-breaker)
 
 >[!div class="step-by-step"]
 >[Previous](implement-http-call-retries-exponential-backoff-polly.md)

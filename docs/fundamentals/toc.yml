@@ -499,6 +499,8 @@ items:
         href: syslib-diagnostics/syslib0042.md
       - name: SYSLIB0043
         href: syslib-diagnostics/syslib0043.md
+      - name: SYSLIB0045
+        href: syslib-diagnostics/syslib0045.md
       - name: SYSLIB0047
         href: syslib-diagnostics/syslib0047.md
     - name: Source-generated code
@@ -655,6 +657,8 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
+      - name: Dumps FAQ - .NET
+        href: ../core/diagnostics/faq-dumps.yml
     - name: Logging and tracing
       items:
       - name: Overview
@@ -1670,7 +1674,7 @@ items:
     href: ../standard/clr.md
   - name: Managed execution process
     href: ../standard/managed-execution-process.md
-  - name: Assemblies in .NET
+  - name: Assemblies
     href: ../standard/assembly/
   - name: Metadata and self-describing components
     href: ../standard/metadata-and-self-describing-components.md
@@ -1697,7 +1701,7 @@ items:
       items:
       - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability in .NET
+      - name: How to use and debug assembly unloadability
         href: ../core/../standard/assembly/unloadability.md
   - name: Versioning
     items:
@@ -1970,10 +1974,14 @@ items:
           href: ../core/deploying/trimming/trim-warnings/il2115.md
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
+        - name: IL2117
+          href: ../core/deploying/trimming/trim-warnings/il2117.md
   - name: Native AOT deployment model
     items:
     - name: Overview
       href: ../core/deploying/native-aot/index.md
+    - name: Intro to AOT warnings
+      href: ../core/deploying/native-aot/fixing-warnings.md
     - name: AOT warnings
       items:
       - name: IL3050
@@ -2044,7 +2052,7 @@ items:
       href: ../standard/base-types/common-type-system.md
     - name: Language independence
       href: ../standard/language-independence.md
-    - name: Type conversion in .NET
+    - name: Type conversion
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
       href: ../standard/base-types/conversion-tables.md
@@ -2060,7 +2068,7 @@ items:
       href: ../standard/generics/index.md
     - name: Intro to generic types
       href: ../standard/generics.md
-    - name: Generic collections in .NET
+    - name: Generic collections
       href: ../standard/generics/collections.md
     - name: Generic delegates for manipulating arrays and lists
       href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
@@ -2193,7 +2201,7 @@ items:
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
   - name: Work with strings
     items:
-    - name: Character encoding in .NET
+    - name: Character encoding
       href: ../standard/base-types/character-encoding-introduction.md
     - name: How to use character encoding classes
       href: ../standard/base-types/character-encoding.md
@@ -2298,46 +2306,52 @@ items:
     - name: JSON serialization
       items:
       - name: Overview
-        href: ../standard/serialization/system-text-json-overview.md
+        href: ../standard/serialization/system-text-json/overview.md
         displayName: json serialization
       - name: Reflection vs. source generation
-        href: ../standard/serialization/system-text-json-source-generation-modes.md
+        href: ../standard/serialization/system-text-json/source-generation-modes.md
       - name: How to serialize and deserialize JSON
-        href: ../standard/serialization/system-text-json-how-to.md
+        href: ../standard/serialization/system-text-json/how-to.md
       - name: Control serialization behavior
         items:
         - name: Instantiate JsonSerializerOptions
-          href: ../standard/serialization/system-text-json-configure-options.md
+          href: ../standard/serialization/system-text-json/configure-options.md
         - name: Enable case-insensitive matching
-          href: ../standard/serialization/system-text-json-character-casing.md
+          href: ../standard/serialization/system-text-json/character-casing.md
         - name: Customize property names and values
-          href: ../standard/serialization/system-text-json-customize-properties.md
+          href: ../standard/serialization/system-text-json/customize-properties.md
         - name: Ignore properties
-          href: ../standard/serialization/system-text-json-ignore-properties.md
+          href: ../standard/serialization/system-text-json/ignore-properties.md
+        - name: Require properties
+          href: ../standard/serialization/system-text-json/required-properties.md
         - name: Allow invalid JSON
-          href: ../standard/serialization/system-text-json-invalid-json.md
+          href: ../standard/serialization/system-text-json/invalid-json.md
         - name: Handle overflow JSON, use JsonElement or JsonNode
-          href: ../standard/serialization/system-text-json-handle-overflow.md
+          href: ../standard/serialization/system-text-json/handle-overflow.md
         - name: Preserve references, handle circular references
-          href: ../standard/serialization/system-text-json-preserve-references.md
+          href: ../standard/serialization/system-text-json/preserve-references.md
         - name: Deserialize to immutable types, non-public accessors
-          href: ../standard/serialization/system-text-json-immutability.md
+          href: ../standard/serialization/system-text-json/immutability.md
         - name: Polymorphic serialization
-          href: ../standard/serialization/system-text-json-polymorphism.md
+          href: ../standard/serialization/system-text-json/polymorphism.md
       - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
-        href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
+        href: ../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md
       - name: Migrate from Newtonsoft.Json
-        href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+        href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
+      - name: Visual Basic support
+        href: ../standard/serialization/system-text-json/visual-basic-support.md
       - name: Supported collection types
-        href: ../standard/serialization/system-text-json-supported-collection-types.md
+        href: ../standard/serialization/system-text-json/supported-collection-types.md
       - name: Advanced
         items:
         - name: Customize character encoding
-          href: ../standard/serialization/system-text-json-character-encoding.md
+          href: ../standard/serialization/system-text-json/character-encoding.md
         - name: Use source generation
-          href: ../standard/serialization/system-text-json-source-generation.md
+          href: ../standard/serialization/system-text-json/source-generation.md
         - name: Write custom converters
-          href: ../standard/serialization/system-text-json-converters-how-to.md
+          href: ../standard/serialization/system-text-json/converters-how-to.md
+        - name: Customize contracts
+          href: ../standard/serialization/system-text-json/custom-contracts.md
     - name: Binary serialization
       items:
       - name: Overview
@@ -2559,7 +2573,7 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: Network programming in .NET
+    - name: Network programming
       href: networking/overview.md
     - name: Network availability
       href: networking/network-info.md
@@ -2580,7 +2594,7 @@ items:
         href: ../core/extensions/httpclient-factory.md
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
-      - name: Rate limiting an HTTP handler in .NET
+      - name: Rate limit an HTTP handler
         href: ../core/extensions/http-ratelimiter.md
     - name: Sockets
       items:
@@ -2594,9 +2608,9 @@ items:
         href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
         href: networking/tcp/tcp-services.md
-  - name: File globbing in .NET
+  - name: File globbing
     href: ../core/extensions/file-globbing.md
-  - name: Primitives library in .NET
+  - name: Primitives library
     href: ../core/extensions/primitives.md
   - name: Globalization and localization
     items:
@@ -3098,6 +3112,8 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Communication Foundation
+        href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation
         href: ../core/porting/upgrade-assistant-wpf-framework.md
       - name: Windows Forms

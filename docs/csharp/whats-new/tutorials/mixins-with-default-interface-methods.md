@@ -6,7 +6,7 @@ ms.date: 10/04/2019
 ---
 # Tutorial: Mix functionality in when creating classes using interfaces with default interface methods
 
-Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.
+You can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.
 
 In this tutorial, you'll learn how to:
 
@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+You’ll need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads), or the [.NET SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 
 ## Limitations of extension methods
 
@@ -26,7 +26,7 @@ One way you can implement behavior that appears as part of an interface is to de
 
 Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method. Another concern with extension methods is that those methods are accessible wherever the class containing the extension methods is accessible. Classes cannot declare if they should or should not provide features declared in extension methods.
 
-Starting with C# 8.0, you can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
+You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
 In this article, you'll learn how default interface implementations enable new scenarios.
 

@@ -30,7 +30,7 @@ For information about how to write application code with an implicit entry point
 
 - The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
 - `Main` is declared inside a class or struct. `Main` must be [`static`](../../language-reference/keywords/static.md) and it need not be [`public`](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [`private`](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
-- `Main` can either have a `void`, `int`, or, starting with C# 7.1, `Task`, or `Task<int>` return type.
+- `Main` can either have a `void`, `int`, `Task`, or `Task<int>` return type.
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. This specifically excludes an `async void Main` method.
 - The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
 

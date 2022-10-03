@@ -1,7 +1,7 @@
 ---
 title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 08/16/2021
+ms.date: 09/16/2022
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -103,7 +103,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators ?. and ?[]
 
-Available in C# 6 and later, a null-conditional operator applies a [member access](#member-access-expression-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
+A null-conditional operator applies a [member access](#member-access-expression-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
 
 - If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
 - If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.
@@ -152,7 +152,7 @@ Use the `?.` operator to check if a delegate is non-null and invoke it in a thre
 PropertyChanged?.Invoke(…)
 ```
 
-That code is equivalent to the following code that you would use in C# 5 or earlier:
+That code is equivalent to the following code:
 
 ```csharp
 var handler = this.PropertyChanged;
@@ -182,7 +182,7 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 ## Index from end operator ^
 
-Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
+The `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="IndexFromEnd":::
 
@@ -192,11 +192,14 @@ You can also use the `^` operator with the [range operator](#range-operator-) to
 
 ## Range operator ..
 
-Available in C# 8.0 and later, the `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
+The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Ranges":::
 
-As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to `int` or <xref:System.Index>.
+As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to <xref:System.Int32> or <xref:System.Index>.
+
+> [!IMPORTANT]
+> Implicit conversions from `int` to `Index` throw an <xref:System.ArgumentOutOfRangeException> when the value is negative.
 
 You can omit any of the operands of the `..` operator to obtain an open-ended range:
 
@@ -205,6 +208,23 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 - `..` is equivalent to `0..^0`
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesOptional":::
+
+The following table shows various ways to express collection ranges:
+
+| Range operator expression | Description                                                                      |
+|---------------------------|----------------------------------------------------------------------------------|
+| `..`                      | All values in the collection.                                                    |
+| `..end`                   | Values from the start to the `end` exclusively.                                  |
+| `start..`                 | Values from the `start` inclusively to the end.                                  |
+| `start..end`              | Values from the `start` inclusively to the `end` exclusively.                    |
+| `^start..`                | Values from the `start` inclusively to the end counting from the end.            |
+| `..^end`                  | Values from the start to the `end` exclusively counting from the end.            |
+| `start..^end`             | Values from `start` inclusively to `end` exclusively counting from the end.      |
+| `^start..^end`            | Values from `start` inclusively to `end` exclusively both counting from the end. |
+
+The following example demonstrates the effect of using all the ranges presented in the preceding table:
+
+:::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible":::
 
 For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 

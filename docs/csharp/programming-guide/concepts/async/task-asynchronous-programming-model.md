@@ -9,7 +9,7 @@ ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
 
 You can avoid performance bottlenecks and enhance the overall responsiveness of your application by using asynchronous programming. However, traditional techniques for writing asynchronous applications can be complicated, making them difficult to write, debug, and maintain.
 
-[C# 5](../../../whats-new/csharp-version-history.md#c-version-50) introduced a simplified approach, async programming, that leverages asynchronous support in the .NET Framework 4.5 and higher, .NET Core, and the Windows Runtime. The compiler does the difficult work that the developer used to do, and your application retains a logical structure that resembles synchronous code. As a result, you get all the advantages of asynchronous programming with a fraction of the effort.
+C# supports simplified approach, async programming, that leverages asynchronous support in the .NET runtime. The compiler does the difficult work that the developer used to do, and your application retains a logical structure that resembles synchronous code. As a result, you get all the advantages of asynchronous programming with a fraction of the effort.
 
 This topic provides an overview of when and how to use async programming and includes links to support topics that contain details and examples.
 
@@ -56,7 +56,7 @@ The return statement specifies an integer result. Any methods that are awaiting 
 If `GetUrlContentLengthAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.
 
 ```csharp
-string contents = await client.GetStringAsync("https://docs.microsoft.com/dotnet");
+string contents = await client.GetStringAsync("https://learn.microsoft.com/dotnet");
 ```
 
 The following characteristics summarize what makes the previous example an async method:
@@ -68,7 +68,7 @@ The following characteristics summarize what makes the previous example an async
   - <xref:System.Threading.Tasks.Task%601> if your method has a return statement in which the operand has type `TResult`.
   - <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.
   - `void` if you're writing an async event handler.
-  - Any other type that has a `GetAwaiter` method (starting with C# 7.0).
+  - Any other type that has a `GetAwaiter` method.
 
   For more information, see the [Return types and parameters](#BKMK_ReturnTypesandParameters) section.
 
@@ -151,7 +151,7 @@ You specify <xref:System.Threading.Tasks.Task%601> as the return type if the met
 
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 
-Starting with C# 7.0, you can also specify any other return type, provided that the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
+You can also specify any other return type, provided that the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
 
 The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>:
 

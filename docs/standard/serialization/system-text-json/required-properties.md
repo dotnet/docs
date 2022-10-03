@@ -50,7 +50,7 @@ public class Person
 }
 ```
 
-It is also possible to control whether a property is required via the contract model using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property:
+It's also possible to control whether a property is required via the contract model using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property:
 
 ```csharp
 var options = new JsonSerializerOptions

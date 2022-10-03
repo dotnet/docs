@@ -672,7 +672,7 @@ JsonSerializer.Serialize(Of IPoint)(New BasePointWithTimeSeries())
 
 ## Configure polymorphism with the contract model
 
-For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), to configure polymorphism use the contract model. The contract model is a set of APIs that can be used to configure polymorphism in a type hierarchy by creating a custom <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver> subclass that dynamically provides polymorphic configuration per type, as shown in the following example:
+For use cases where attribute annotations are impractical or impossible (such as large domain models, cross-assembly hierarchies, or hierarchies in third-party dependencies), to configure polymorphism use the [contract model](custom-contracts.md). The contract model is a set of APIs that can be used to configure polymorphism in a type hierarchy by creating a custom <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver> subclass that dynamically provides polymorphic configuration per type, as shown in the following example:
 
 ```csharp
 public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver

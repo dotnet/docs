@@ -1974,6 +1974,8 @@ items:
           href: ../core/deploying/trimming/trim-warnings/il2115.md
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
+        - name: IL2117
+          href: ../core/deploying/trimming/trim-warnings/il2117.md
   - name: Native AOT deployment model
     items:
     - name: Overview
@@ -3110,6 +3112,8 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Communication Foundation
+        href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation
         href: ../core/porting/upgrade-assistant-wpf-framework.md
       - name: Windows Forms

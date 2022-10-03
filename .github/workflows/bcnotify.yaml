@@ -9,7 +9,7 @@ jobs:
     if: github.event.label.name == 'breaking-change'
     steps:
     - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
-    - uses: timheuer/issue-notifier@e49f1d2faf914fe5c7c028162adff3050234c70b #@v1.0.2
+    - uses: timheuer/issue-notifier@v1
       env:
         SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
       with:

@@ -4,8 +4,8 @@
 public class AtmGrain : Grain, IAtmGrain
 {
     public Task Transfer(
-        Guid fromId,
-        Guid toId,
+        string fromId,
+        string toId,
         decimal amount) =>
         Task.WhenAll(
             GrainFactory.GetGrain<IAccountGrain>(fromId).Withdraw(amount),

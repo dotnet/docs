@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.label.name == 'breaking-change'
     steps:
-    - uses: actions/checkout@v3 #@v2
+    - uses: actions/checkout@v3
     - uses: timheuer/issue-notifier@v1
       env:
         SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}

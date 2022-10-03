@@ -35,7 +35,7 @@ On Linux, install compiler toolchain and developer packages for libraries that .
 - Alpine (3.15+)
 
     ```sh
-    sudo apk add build-base zlib-dev
+    sudo apk add clang build-base zlib-dev
     ```
 
 ## Publish Native AOT - CLI

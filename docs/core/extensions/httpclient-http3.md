@@ -14,34 +14,18 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 
 - Faster response time of the first request. QUIC and HTTP/3 negotiate the connection in fewer round-trips between the client and the server. The first request reaches the server faster.
 - Improved experience when there is connection packet loss. HTTP/2 multiplexes multiple requests via one TCP connection. Packet loss on the connection affects all requests. This problem is called "head-of-line blocking". Because QUIC provides native multiplexing, lost packets only impact the requests where data has been lost.
-- Supports transitioning between networks. This feature is useful for mobile devices where it is common to switch between WIFI and cellular networks as a mobile device changes location. Currently, HTTP/1.1 and HTTP/2 connections fail with an error when switching networks. An app or web browser must retry any failed HTTP requests. HTTP/3 allows the app or web browser to seamlessly continue when a network changes. HttpClient and Kestrel do not support network transitions in .NET 6. It may be available in a future release.
+- Supports transitioning between networks. This feature is useful for mobile devices where it is common to switch between WIFI and cellular networks as a mobile device changes location. Currently, HTTP/1.1 and HTTP/2 connections fail with an error when switching networks. An app or web browser must retry any failed HTTP requests. HTTP/3 allows the app or web browser to seamlessly continue when a network changes. HttpClient and Kestrel do not support network transitions in .NET 7. It may be available in a future release.
 
 > [!IMPORTANT]
->
-> HTTP/3 is fully supported since .NET 7 only. In .NET 6, HTTP/3 is available as a _preview feature_ because the HTTP/3 specification was not yet finalized and behavioral or performance issues may exist in HTTP/3 with .NET 6.
->
-> For more information on preview features, see [**the preview features specification**](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
 >
 > Apps configured to take advantage of HTTP/3 should be designed to also support HTTP/1.1 and HTTP/2. If issues are identified in HTTP/3, we recommend disabling HTTP/3 until the issues are resolved in a future release of .NET.
 
 ## HttpClient settings
 
-Since .NET 7, HTTP/3 support in HttpClient is enabled by default. In .NET 6, HTTP/3 support is in preview, and needs to be enabled via a configuration flag which can be set in the project with:
-
-```xml
-<ItemGroup>
-    <RuntimeHostConfigurationOption Include="System.Net.SocketsHttpHandler.Http3Support" Value="true" />
-</ItemGroup>
-```
-
-Or using [`AppContext.SetSwitch`](/dotnet/api/system.appcontext.setswitch).
-
 The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.0. However, because not all routers, firewalls, and proxies properly support HTTP/3, we recommend configuring HTTP/3 together with HTTP/1.1 and HTTP/2. In HttpClient, this can be done by specifying:
 
 - `HttpRequestMessage.Version` to 1.1.
 - `HttpRequestMessage.VersionPolicy` to `HttpVersionPolicy.RequestVersionOrHigher`.
-
-The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard is not final and therefore may change after .NET 6 is released.
 
 ## Platform dependencies
 
@@ -63,7 +47,7 @@ sudo apt install libmsquic
 ```
 
 > [!NOTE]
-> .NET 7 is only compatible with 2.1+ versions of libmsquic. .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x is not compatible with .NET 6 due to breaking changes in the library. Libmsquic will receive updates to 1.9.x when needed to incorporate security fixes. 
+> .NET 7 is only compatible with 2.1+ versions of libmsquic.
 
 ### macOS
 
@@ -71,7 +55,15 @@ HTTP/3 is not currently supported on macOS but may be available in a future rele
 
 ## Using HttpClient
 
-If your application targets .NET 6, Include the following in the project file to enable HTTP/3 with HttpClient:
+The following code example uses [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) and demonstrates how to specify HTTP3 in the request:
+
+:::code language="csharp" source="snippets/http/http3/Program.cs":::
+
+## HTTP/3 Support in .NET 6
+
+In .NET 6, HTTP/3 is available as a _preview feature_ because the HTTP/3 specification was not yet finalized and behavioral or performance problems may exist in HTTP/3 with .NET 6. For more information on preview features, see [**the preview features specification**](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
+
+To enable HTTP/3 support in .NET 6, include the following in the project file to enable HTTP/3 with HttpClient:
 
 ```xml
 <ItemGroup>
@@ -79,9 +71,11 @@ If your application targets .NET 6, Include the following in the project file to
 </ItemGroup>
 ```
 
-The following code example uses [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) and demonstrates how to specify HTTP3 in the request:
+Alternatively, you can use [`AppContext.SetSwitch`](/dotnet/api/system.appcontext.setswitch).
 
-:::code language="csharp" source="snippets/http/http3/Program.cs":::
+The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard is not final and therefore may change after .NET 6 is released.
+
+ .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x is not compatible with .NET 6 due to breaking changes in the library. Libmsquic will receive updates to 1.9.x when needed to incorporate security fixes.
 
 ## HTTP/3 Server
 

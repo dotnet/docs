@@ -43,7 +43,12 @@ Dim array() As Object = New String(10) {}
 ' array(0) = 10
 ```
 
-Covariance and contravariance support for method groups allows for matching method signatures with delegate types. This enables you to assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type. For more information, see [Variance in Delegates (Visual Basic)](variance-in-delegates.md) and [Using Variance in Delegates (Visual Basic)](using-variance-in-delegates.md).
+Covariance and contravariance support for method groups allows for matching method signatures with delegate types. This matching enables you to assign to a delegate not only a method that has a matching signature, but also a method that:
+
+- Returns a more derived type (covariance) than the return type specified by the delegate type.
+- Accepts parameters that have less derived types (contravariance) than those specified by the delegate type.
+
+For more information, see [Variance in Delegates (Visual Basic)](variance-in-delegates.md) and [Using Variance in Delegates (Visual Basic)](using-variance-in-delegates.md).
 
 The following code example shows covariance and contravariance support for method groups.
 

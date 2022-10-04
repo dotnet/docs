@@ -149,7 +149,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
         steps:
         - name: Download a Build Artifact
-          uses: actions/download-artifact@v2.0.8
+          uses: actions/download-artifact@v3
           with:
             name: website
             path: website
@@ -437,7 +437,7 @@ jobs:
 
     steps:
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.0.8
+      uses: actions/download-artifact@v3
       with:
         name: website
         path: website

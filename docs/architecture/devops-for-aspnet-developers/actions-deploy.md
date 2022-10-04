@@ -409,7 +409,7 @@ jobs:
       run: |
         echo 'Reason: ${{ github.event.inputs.reason }}'
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 2.1.x
     - name: Restore dependencies

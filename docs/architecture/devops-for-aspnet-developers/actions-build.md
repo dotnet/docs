@@ -160,7 +160,7 @@ Now that you've successfully built and tested the code, add steps that publish t
 
     ```yml
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.2.2
+        uses: actions/upload-artifact@v3
         with:
           name: website
           path: SimpleFeedReader/website/**
@@ -207,7 +207,7 @@ jobs:
     - name: Publish
       run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.2.2
+      uses: actions/upload-artifact@v3
       with:
         name: website
         path: SimpleFeedReader/website/**

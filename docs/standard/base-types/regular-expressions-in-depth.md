@@ -358,7 +358,7 @@ private string _input1 = new string('a', 100_000);
 [Benchmark] public bool IgnoreCase2() => _r2.IsMatch(_input1);
 ```
 
-In theory, these two expressions should be identical, and functionally they are. But in the first case, with the set, in .NET 6 the compiled implementation will use code along the lines of `(c ==`'a'`) | (c ==`'a'`)` to match `'a'`, whereas with the `IgnoreCase` version, in .NET 6 the compiled implementation will use code along the lines of `_textInfo.ToLower(c) ==`'a'``, such that one possible resultset could look like this from the micro-benchmark:
+In theory, these two expressions should be identical, and functionally they are. But in the first case, with the set, in .NET 6 the compiled implementation will use code along the lines of `(c ==`'a'`) | (c ==`'a'`)` to match `'a'`, whereas with the `IgnoreCase` version, in .NET 6 the compiled implementation will use code along the lines of `_textInfo.ToLower(c) == 'a'`, such that one possible resultset could look like this from the micro-benchmark:
 
 | Method      | Runtime | Mean      |
 |-------------|---------|----------:|

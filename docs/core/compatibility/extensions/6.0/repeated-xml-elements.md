@@ -85,7 +85,7 @@ To get the original behavior, you can update your XML to collapse the two attrib
 </configuration>
 ```
 
-Alternatively, you can update your code to expect 0, 1, 2, and so forth indices in the `IConfiguration` keys:
+Alternatively, you can update your code to expect indices (such as 0, 1, 2) in the `IConfiguration` keys:
 
 ```csharp
 configRoot.GetSection("Level1:Level2")

@@ -52,7 +52,7 @@ Console.WriteLine(kvp.Key); // 1
 Console.WriteLine(kvp.Value); // 1
 ```
 
-To accommodate payloads that were serialized with previous versions, "Key" and "Value" are special-cased to match when deserializing. Even though the <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> property names aren't camel-cased according to the in <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> option in the following code example, they deserialize successfully.
+To accommodate payloads that were serialized with previous versions, "Key" and "Value" are special-cased to match when deserializing. Even though the <xref:System.Collections.Generic.KeyValuePair%602.Key> and <xref:System.Collections.Generic.KeyValuePair%602.Value> property names aren't camel-cased according to the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> option in the following code example, they deserialize successfully.
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };

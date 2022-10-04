@@ -135,7 +135,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding, removing, or changing the order of parameters**
 
-- ❌ **DISALLOWED: Adding or removing the [in](../../csharp/language-reference/keywords/in.md), [out](../../csharp/language-reference/keywords/out.md) , or [ref](../../csharp/language-reference/keywords/ref.md) keyword from a parameter**
+- ❌ **DISALLOWED: Adding or removing the [in](../../csharp/language-reference/keywords/in.md), [out](../../csharp/language-reference/keywords/out.md), or [ref](../../csharp/language-reference/keywords/ref.md) keyword from a parameter**
 
 - ❌ **DISALLOWED: Renaming a parameter (including changing its case)**
 

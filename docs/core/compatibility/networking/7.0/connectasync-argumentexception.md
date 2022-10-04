@@ -17,13 +17,13 @@ This breaking change fixes two issues related to user input validation:
 
 In .NET 7 RC 1, the <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Net.Http.HttpMessageInvoker,System.Threading.CancellationToken)> overload silently ignored the following <xref:System.Net.WebSockets.ClientWebSocketOptions>: `UseDefaultCredentials`, `Credentials`, `Proxy`, `ClientCertificates`, `RemoteCertificateValidationCallback`, and `Cookies`.
 
-The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)> overload accepted the options if <xref:System.Net.Http.HttpRequestMessage.Version> or <xref:System.Net.Http.HttpRequestMessage.VersionPolicy> was set to allow HTTP/2. However, this configuration lead to poor performance and defeated the purpose of the feature.
+The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)> overload accepted the options if <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersion> or <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersionPolicy> was set to allow HTTP/2. However, this configuration lead to poor performance and defeated the purpose of the feature.
 
 ## New behavior
 
 In .NET 7 RC 2, <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Net.Http.HttpMessageInvoker,System.Threading.CancellationToken)> throws an <xref:System.ArgumentException> if any of the following <xref:System.Net.WebSockets.ClientWebSocketOptions> are set: `UseDefaultCredentials`, `Credentials`, `Proxy`, `ClientCertificates`, `RemoteCertificateValidationCallback`, or `Cookies`.
 
-The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)> overload throws an <xref:System.ArgumentException> if <xref:System.Net.Http.HttpRequestMessage.Version> or <xref:System.Net.Http.HttpRequestMessage.VersionPolicy> is set to allow HTTP/2.
+The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)> overload throws an <xref:System.ArgumentException> if <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersion> or <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersionPolicy> is set to allow HTTP/2.
 
 ## Version introduced
 
@@ -41,7 +41,7 @@ This change was made to raise awareness and propose a solution to the user in th
 
 If you want to use WebSockets over HTTP/2, use the <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Net.Http.HttpMessageInvoker,System.Threading.CancellationToken)> overload instead of <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)> and pass a custom invoker to use for multiplexing.
 
-If you want to pass a custom invoker to a `WebSocket` and at the same time set up `UseDefaultCredentials`, `Credentials`, `Proxy`, `ClientCertificates`, `RemoteCertificateValidationCallback`, or `Cookies`, don't set them on <xref:System.Net.WebSockets.ClientWebSocketOptions>. Instead, set these options on the `HttpMessageInvoker` instance's underlying `HttpMessageHandler`. For example:
+If you want to pass a custom invoker to a `WebSocket` and at the same time set `UseDefaultCredentials`, `Credentials`, `Proxy`, `ClientCertificates`, `RemoteCertificateValidationCallback`, or `Cookies`, don't set them on <xref:System.Net.WebSockets.ClientWebSocketOptions>. Instead, set these options on the `HttpMessageInvoker` instance's underlying `HttpMessageHandler`. For example:
 
 ```csharp
 var handler = new HttpClientHandler();
@@ -72,4 +72,4 @@ await cws.ConnectAsync(uri, invoker, cancellationToken);
 ## Affected APIs
 
 - <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Net.Http.HttpMessageInvoker,System.Threading.CancellationToken)?displayProperty=fullName>
-- <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)?displayProperty=fullName> (only when <xref:System.Net.WebSockets.ClientWebSocket.Options?displayProperty=nameWithType> is set to <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersion> or <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersionPolicy>)
+- <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Threading.CancellationToken)?displayProperty=fullName> (only when <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersion> or <xref:System.Net.WebSockets.ClientWebSocketOptions.HttpVersionPolicy> is set to allow HTTP/2)

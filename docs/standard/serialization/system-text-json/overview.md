@@ -44,6 +44,8 @@ For information about security threats that were considered when designing <xref
 
 The `System.Text.Json` serializer was designed with thread safety in mind. Practically, this means that once locked, <xref:System.Text.Json.JsonSerializerOptions> instances can be safely shared across multiple threads.
 
+<xref:System.Text.Json.JsonDocument> was designed to provide an immutable and thus thread-safe DOM representation for JSON values. However, due to a [concurrency bug](https://github.com/dotnet/runtime/issues/76440), `JsonDocument` is not currently thread safe.
+
 ## Additional resources
 
 * [How to use the library](how-to.md)

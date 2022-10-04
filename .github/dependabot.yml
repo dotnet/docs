@@ -2,6 +2,42 @@
 # https://github.com/dotnet/core/tree/master/samples/dependadotnet
 version: 2
 updates:
+  - package-ecosystem: "github-actions" # Core GitHub Actions
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "github-actions" # Create dotnet GitHub Actions snippet
+    directory: "/docs/devops/snippets/create-dotnet-github-action"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "github-actions" # Build dotnet GitHub Actions snippet
+    directory: "/docs/devops/snippets/dotnet-build-github-action"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "github-actions" # Publish dotnet GitHub Actions snippet
+    directory: "/docs/devops/snippets/dotnet-publish-github-action"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "github-actions" # Secure dotnet GitHub Actions snippet
+    directory: "/docs/devops/snippets/dotnet-secure-github-action"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "github-actions" # Test dotnet GitHub Actions snippet
+    directory: "/docs/devops/snippets/dotnet-test-github-action"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/pipelines" #Pipes.csproj
     schedule:

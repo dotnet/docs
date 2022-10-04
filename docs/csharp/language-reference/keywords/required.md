@@ -30,3 +30,5 @@ Some types, such as [positional records](../builtin-types/record.md#positional-s
 The following code shows a class hierarchy that uses the `required` modifier for the `FirstName` and `LastName` properties:
 
 :::code language="csharp" source="./snippets/RequiredExample.cs" id="SnippetRequired":::
+
+For more information on required members, see the [C#11 - Required members](~/_csharplang/proposals/csharp-11.0/required-members.md) feature specification.

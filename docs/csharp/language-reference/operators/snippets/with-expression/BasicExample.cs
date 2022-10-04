@@ -21,10 +21,9 @@ public class WithExpressionBasicExample
 
         Console.WriteLine($"{nameof(p1)}: {p1}");  // output: p1: NamedPoint { Name = A, X = 0, Y = 0 }
 
-        var apples = new { Item = "Apples", Price = "1.19" };
-        Console.WriteLine($"original apples: {apples}");
-        var saleApples = apples with { Price = "0.79" };
-        Console.WriteLine($"sale apples: {saleApples}");
-
+        var apples = new { Item = "Apples", Price = 1.19m };
+        Console.WriteLine($"Original: {apples}");  // output: Original: { Item = Apples, Price = 1.19 }
+        var saleApples = apples with { Price = 0.79m };
+        Console.WriteLine($"Sale: {saleApples}");  // output: Sale: { Item = Apples, Price = 0.79 }
     }
 }

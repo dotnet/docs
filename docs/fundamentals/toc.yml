@@ -1974,10 +1974,14 @@ items:
           href: ../core/deploying/trimming/trim-warnings/il2115.md
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
+        - name: IL2117
+          href: ../core/deploying/trimming/trim-warnings/il2117.md
   - name: Native AOT deployment model
     items:
     - name: Overview
       href: ../core/deploying/native-aot/index.md
+    - name: Intro to AOT warnings
+      href: ../core/deploying/native-aot/fixing-warnings.md
     - name: AOT warnings
       items:
       - name: IL3050
@@ -2346,6 +2350,8 @@ items:
           href: ../standard/serialization/system-text-json/source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json/converters-how-to.md
+        - name: Customize contracts
+          href: ../standard/serialization/system-text-json/custom-contracts.md
     - name: Binary serialization
       items:
       - name: Overview
@@ -3106,6 +3112,8 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Communication Foundation
+        href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation
         href: ../core/porting/upgrade-assistant-wpf-framework.md
       - name: Windows Forms

@@ -5,7 +5,7 @@ ms.date: 03/23/2022
 ---
 # Custom ping payloads on Linux
 
-On Linux, non-privileged processes can't send raw IP packets. <xref:System.Net.NetworkInformation.Ping> functionality is implemented by interfacing with the `ping` utility. However, this utility doesn't support specifying a custom payload for the Internet Control Message Protocol (ICMP) ping packets. NET 7 adds a check for such cases and throws an exception if a custom payload is specified.
+On Linux, non-privileged processes can't send raw IP packets. <xref:System.Net.NetworkInformation.Ping> functionality is implemented by interfacing with the `ping` utility. However, this utility doesn't support specifying a custom payload for the Internet Control Message Protocol (ICMP) ping packets. .NET 7 adds a check for such cases and throws an exception if a custom payload is specified.
 
 ## Previous behavior
 

@@ -201,6 +201,8 @@ For more information, see the following sections of the [C# language specificati
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#11183-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
+- [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
+- [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
 
 ## See also
 

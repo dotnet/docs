@@ -30,7 +30,8 @@
                     "csharp-7.3/*.md",
                     "csharp-8.0/*.md",
                     "csharp-9.0/*.md",
-                    "csharp-10.0/*.md"
+                    "csharp-10.0/*.md",
+                    "csharp-11.0/*.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -450,7 +451,8 @@
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
-                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "03/21/2022",
+                "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "09/30/2022",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.technology": {
@@ -665,6 +667,21 @@
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "Improved definite assignment analysis",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "AsyncMethodBuilder override",
 
+                "_csharplang/proposals/csharp-11.0/auto-default-structs.md": "Auto-default struct",
+                "_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md": "Checked user defined operators",
+                "_csharplang/proposals/csharp-11.0/extended-nameof-scope.md": "Extended nameof parameter scope",
+                "_csharplang/proposals/csharp-11.0/file-local-types.md": "File local types",
+                "_csharplang/proposals/csharp-11.0/list-patterns.md": "List patterns",
+                "_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md": "Interpolated string expression newline",
+                "_csharplang/proposals/csharp-11.0/numeric-intptr.md": "Numeric IntPtr",
+                "_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md": "Pattern match Span<char>",
+                "_csharplang/proposals/csharp-11.0/raw-string-literal.md": "Raw string literal",
+                "_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md": "Relaxed right shift requirement",
+                "_csharplang/proposals/csharp-11.0/required-members.md": "Required members",
+                "_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md": "Static abstract methods in interfaces",
+                "_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md": "Unsigned right shift operator",
+                "_csharplang/proposals/csharp-11.0/utf8-string-literals.md": "UTF-8 string literals",
+
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
 
                 "_vblang/spec/introduction.md": "Introduction",
@@ -789,6 +806,21 @@
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "This feature specification describes updates to the rules for definite assignment analysis. The result is more accurate warnings for when a variable may not be definitely assigned, or may not be null.",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "This feature specification describes new rules to enable types to override the default AsyncMethodBuilder. This will be used by the runtime for performance improvements.",
 
+                "_csharplang/proposals/csharp-11.0/auto-default-structs.md": "This feature updates the rules for struct initialization and default values. This feature standardizes the behavior for default struct values and newly initialized structs.",
+                "_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md": "This feature enables checked and unchecked alternatives for some operators.",
+                "_csharplang/proposals/csharp-11.0/extended-nameof-scope.md": "This feature enables the nameof expression to be used with parameter names in a method declaration.",
+                "_csharplang/proposals/csharp-11.0/file-local-types.md": "This feature allows you to create types (either structs or classes) that are visibile only in the file in which they are declared. This is primarily useful for source generators.",
+                "_csharplang/proposals/csharp-11.0/list-patterns.md": "This feature describes enhancements to pattern matching to support patterns in lists of elements.",
+                "_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md": "This feature describes changes to allow newlines in the interpolation expressions in an interpolated string expression.",
+                "_csharplang/proposals/csharp-11.0/numeric-intptr.md": "This feature enables the IntPtr and UIntPtr to be treated as the numeric types nint and nuint, respectively.",
+                "_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md": "This feature enables a Span<char> to pattern match a literal string value.",
+                "_csharplang/proposals/csharp-11.0/raw-string-literal.md": "This feature describes raw string literals. Raw string literals enable string literals to avoid almost all escape sequences.",
+                "_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md": "This feature removes the restriction that the right operand of a right shift must be an integer.",
+                "_csharplang/proposals/csharp-11.0/required-members.md": "This feature defines the required modifier. The required modifier instructs the compiler that a field or property must be initialized during the construction of a new object.",
+                "_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md": "This feature enables an interface to define static members. This enables interfaces to define operators that must be provided by implementing types.",
+                "_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md": "This feature defines a logical right-shift operator, `>>>`. The logical right shift operator always shifts in 0 values in the left-most bits during a shift.",
+                "_csharplang/proposals/csharp-11.0/utf8-string-literals.md": "This feature enables the `u8` suffix on a string literal. The `u8` suffix instructs the compiler to convert the UTF-8 string literal to a `ReadOnlySpan<byte>`.",
+
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
 
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
@@ -814,6 +846,7 @@
                 "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 draft specifications",
                 "_csharplang/proposals/csharp-9.0/*.md": "C# 9.0 draft specifications",
                 "_csharplang/proposals/csharp-10.0/*.md": "C# 10.0 draft specifications",
+                "_csharplang/proposals/csharp-11.0/*.md": "C# 11.0 draft specifications",
                 "docs/framework/**/**.md": ".NET Framework",
                 "docs/framework/data/adonet/**/**.md": "ADO.NET",
                 "docs/framework/wcf/**/**.md": "WCF",

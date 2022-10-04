@@ -21,7 +21,7 @@ The argument to the `default` operator must be the name of a type or a type para
 
 ## default literal
 
-Beginning with C# 7.1, you can use the `default` literal to produce the default value of a type when the compiler can infer the expression type. The `default` literal expression produces the same value as the `default(T)` expression where `T` is the inferred type. You can use the `default` literal in any of the following cases:
+You can use the `default` literal to produce the default value of a type when the compiler can infer the expression type. The `default` literal expression produces the same value as the `default(T)` expression where `T` is the inferred type. You can use the `default` literal in any of the following cases:
 
 - In the assignment or initialization of a variable.
 - In the declaration of the default value for an [optional method parameter](../../methods.md#optional-parameters-and-arguments).

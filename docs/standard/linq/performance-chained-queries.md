@@ -61,6 +61,6 @@ This chained query provides the same performance profile as iterating through a 
 
 The iteration through `query2` is therefore directly proportional to the number of items in the source of the first query, in other words, linear time.
 
-For more information on iterators, see [yield](../../csharp/language-reference/keywords/yield.md).
+For more information on iterators, see [yield](../../csharp/language-reference/statements/yield.md).
 
 For a more detailed tutorial on chaining queries together, see [Tutorial: Chain queries together (C#)](chain-queries-example.md).

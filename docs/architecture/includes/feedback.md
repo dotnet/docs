@@ -4,7 +4,7 @@ This book and related samples are constantly evolving, so your feedback is welco
 
 :::image type="content" source="../media/feedback-footer.png" lightbox="../media/feedback-footer.png" alt-text="Feedback section of all .NET docs article footers.":::
 
-Highlighted in the preceding screen capture, the feedback section allows you to submit feedback for:
+As highlighted in the preceding screen capture, the feedback section allows you to submit feedback for:
 
 - **This product**: using the .NET product feedback form.
 - **This page**: using a GitHub issue template with the page details.

@@ -24,7 +24,7 @@ Library authors will benefit most from the generic math interfaces, because they
 
 ## The interfaces
 
-When designing the interfaces, they needed to be both fine-grained enough that users can define their own interfaces on top, while also being granular enough that they're easy to consume. To that extent, there are a few core numeric interfaces that most users will interact with, such as <xref:System.Numerics.INumber%601> and <xref:System.Numerics.IBinaryInteger%601>. The more fine-grained interfaces, such as <xref:System.Numerics.IAdditionOperators%603> and <xref:System.Numerics.ITrigonometricFunctions%601>, support these types and are available for developers who define their own domain-specific numeric interfaces.
+The interfaces were designed to be both fine-grained enough that users can define their own interfaces on top, while also being granular enough that they're easy to consume. To that extent, there are a few core numeric interfaces that most users will interact with, such as <xref:System.Numerics.INumber%601> and <xref:System.Numerics.IBinaryInteger%601>. The more fine-grained interfaces, such as <xref:System.Numerics.IAdditionOperators%603> and <xref:System.Numerics.ITrigonometricFunctions%601>, support these types and are available for developers who define their own domain-specific numeric interfaces.
 
 - [Numeric interfaces](#numeric-interfaces)
 - [Operator interfaces](#operator-interfaces)
@@ -117,7 +117,7 @@ Example when given a value that's too large:
 
 - `byte.CreateChecked(384)` will throw an <xref:System.OverflowException>.
 - `byte.CreateSaturating(384)` returns 255 because 384 is greater than <xref:System.Byte.MaxValue?displayProperty=nameWithType> (which is 255).
-- `byte.CreateTruncating(384)` returns 128 because it takes the lowest eight bits (384 has a hex representation of `0x0180`, and the lowest eight bits is `0x80`, which is 128).
+- `byte.CreateTruncating(384)` returns 128 because it takes the lowest 8 bits (384 has a hex representation of `0x0180`, and the lowest 8 bits is `0x80`, which is 128).
 
 Example when given a value that's too small:
 
@@ -177,7 +177,7 @@ Parsing and formatting are core concepts in programming. They're commonly used w
 | <xref:System.IFormattable><sup>1</sup> | Exposes support for `value.ToString(string, IFormatProvider)`. |
 | <xref:System.ISpanFormattable><sup>1</sup> | Exposes support for `value.TryFormat(Span<char>, out int, ReadOnlySpan<char>, IFormatProvider)`. |
 
-<sup>1</sup>This interface is not new, nor is it generic. However, it's implemented by all number types and represents the inverse operation of `IParsable`.
+<sup>1</sup>This interface isn't new, nor is it generic. However, it's implemented by all number types and represents the inverse operation of `IParsable`.
 
 For example, the following program takes two numbers as input, reading them from the console using a generic method where the type parameter is constrained to be <xref:System.IParsable%601>. It calculates the average using a generic method where the type parameters for the input and result values are constrained to be <xref:System.Numerics.INumber%601>, and then displays the result to the console.
 

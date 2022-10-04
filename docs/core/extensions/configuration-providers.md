@@ -3,7 +3,7 @@ title: Configuration providers
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/16/2022
+ms.date: 10/04/2022
 ms.topic: reference
 ---
 
@@ -57,7 +57,7 @@ An example *appsettings.json* file with various configuration settings follows:
 From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added, you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
 > [!NOTE]
-> The _Build Action_ and _Copy to Output Directory_ properties of the JSON file must be set to _Content_ and _Copy if newer (or Copy always)_, respectively.
+> The *Build Action* and *Copy to Output Directory* properties of the JSON file must be set to *Content* and *Copy if newer (or Copy always)*, respectively.
 
 Consider the `TransientFaultHandlingOptions` class defined as follows:
 
@@ -97,7 +97,7 @@ An example *appsettings.xml* file with various configuration settings follows:
 > [!TIP]
 > To use the `IConfiguration` type in WinForms apps, add a reference to the [Microsoft.Extensions.Configuration.Xml](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package. Instantiate the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and chain calls to <xref:Microsoft.Extensions.Configuration.XmlConfigurationExtensions.AddXmlFile%2A> and <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build>. For more information, see [.NET Docs Issue #29679](https://github.com/dotnet/docs/issues/29679#issuecomment-1169017078).
 
-In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element.
+In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element. (If you're upgrading to .NET 6 or later, you may encounter a break resulting from this change in behavior. For more information, see [Repeated XML elements include index](../compatibility/extensions/6.0/repeated-xml-elements.md).)
 
 :::code language="xml" source="snippets/configuration/console-xml/repeating-example.xml":::
 

@@ -8,10 +8,11 @@ no-loc: [System.Text.Json, Newtonsoft.Json]
 
 Starting in .NET 7, you can mark certain properties to signify that they must be present in the JSON payload for deserialization to succeed. If one or more of these required properties is not present, the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods throw a <xref:System.Text.Json.JsonException>.
 
-There are two ways to mark a property or field as required for JSON deserialization:
+There are three ways to mark a property or field as required for JSON deserialization:
 
 - By adding the [required modifier](../../../csharp/language-reference/keywords/required.md), which is new in C# 11.
 - By annotating it with <xref:System.Text.Json.Serialization.JsonRequiredAttribute>, which is new in .NET 7.
+- By modifying the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property of the contract model, which is new in .NET 7.
 
 From the serializer's perspective, these two demarcations are equivalent and both map to the same piece of metadata, which is <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType>. In most cases, you'd simply use the built-in C# keyword. However, in the following cases, you should use <xref:System.Text.Json.Serialization.JsonRequiredAttribute> instead:
 

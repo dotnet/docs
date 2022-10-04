@@ -52,7 +52,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
 |------------------------|---------------------------------------|
 |<xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType>|Only numeric digits are permitted.|
 |<xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType>|The decimal separator and fractional digits are permitted. For integer values, only zero is permitted as a fractional digit. Valid decimal separators are determined by the <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A?displayProperty=nameWithType> or <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A?displayProperty=nameWithType> property.|
-|<xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType>|The "e" or "E" character can be used to indicate exponential notation. For additional information, see <xref:System.Globalization.NumberStyles>.|
+|<xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType>|The "e" or "E" character can be used to indicate exponential notation. For more information, see <xref:System.Globalization.NumberStyles>.|
 |<xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>|Leading white space is permitted.|
 |<xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>|Trailing white space is permitted.|
 |<xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType>|A positive or negative sign can precede numeric digits.|

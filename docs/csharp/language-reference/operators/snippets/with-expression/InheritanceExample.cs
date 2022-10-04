@@ -11,6 +11,5 @@ public class InheritanceExample
         Point p2 = p1 with { X = 5, Y = 3 };
         Console.WriteLine(p2 is NamedPoint);  // output: True
         Console.WriteLine(p2);  // output: NamedPoint { X = 5, Y = 3, Name = A }
-        
     }
 }

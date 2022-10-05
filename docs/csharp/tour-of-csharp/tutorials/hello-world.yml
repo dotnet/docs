@@ -62,7 +62,7 @@ items:
     of the `aFriend` variable and its initial assignment.
 
     ```csharp
-    aFriend = "Maira";
+    string aFriend = "Maira";
     Console.WriteLine(aFriend);
     ```
 

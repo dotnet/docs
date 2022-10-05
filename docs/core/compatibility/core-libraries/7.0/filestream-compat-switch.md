@@ -5,11 +5,11 @@ ms.date: 10/04/2022
 ---
 # Legacy FileStream strategy removed
 
-The `UseNet5CompatFileStream` switch and the ability to use the legacy <xref:System.IO.FileStream> implementation were removed.
+The `AppContext` switch `System.IO.UseNet5CompatFileStream` and the ability to use the legacy <xref:System.IO.FileStream> implementation were removed.
 
 ## Previous behavior
 
-The legacy `FileStream` implementation was available and you could opt into it by using the `UseNet5CompatFileStream` switch.
+The legacy `FileStream` implementation was available and you could opt into it by using the `UseNet5CompatFileStream` switch or the `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable.
 
 ## New behavior
 
@@ -25,11 +25,11 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-The `UseNet5CompatFileStream` switch was included in .NET 6 in case the new implementation caused breaking changes. Any breaking changes have now been fixed. Since there are no more bugs introduced by the `FileStream` changes, the compatibility mode was removed and with it all the legacy code, which makes the codebase easier to maintain.
+The `UseNet5CompatFileStream` switch and `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable were included in .NET 6 in case the new implementation caused breaking changes. Any breaking changes have now been fixed. Since there are no more bugs introduced by the `FileStream` changes, the compatibility mode was removed and with it all the legacy code, which makes the codebase easier to maintain.
 
 ## Recommended action
 
-If you're currently using the switch to opt into legacy code and are upgrading to .NET 7, the switch will no longer have any effect and you should remove it.
+If you're currently using the switch (or the `DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM` environment variable) to opt into legacy code and are upgrading to .NET 7, the switch will no longer have any effect and you should remove it.
 
 ## Affected APIs
 

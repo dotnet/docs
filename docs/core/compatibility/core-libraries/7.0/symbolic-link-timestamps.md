@@ -5,7 +5,7 @@ ms.date: 10/04/2022
 ---
 # Time fields on symbolic links
 
-When changes are made to the following time-related fields on a symbolic link ("symlink"), the updates affect the symlink itself and not the target:
+When changes are made to the following time-related fields on a symbolic link ("symlink"), the updates now affect the symlink itself and not the target:
 
 - <xref:System.IO.FileSystemInfo.CreationTime>
 - <xref:System.IO.FileSystemInfo.CreationTimeUtc>
@@ -18,12 +18,13 @@ When changes are made to the following time-related fields on a symbolic link ("
 
 Previously, updating any of the time-related fields on a symlink affected the fields of the symlink's target.
 
-Consider the following program:
+Consider the following program that prints the various time field values on a file and its symbolic link, updates the symlink's time field values to 1 day later, and then reprints the time field values on both the file and symlink.
 
 ```csharp
 string filename = "file";
 string linkname = "link";
 
+// Create a file and symlink.
 File.Create(filename).Dispose();
 File.CreateSymbolicLink(linkname, filename);
 
@@ -57,7 +58,7 @@ static void PrintMetadata(string filename)
 }
 ```
 
-Previously, the output of this program was as follows:
+Previously, after updating the values on the symlink, only the target file's time fields were updated. The output of the preceding program was as follows:
 
 ```output
 Before update:
@@ -87,7 +88,7 @@ Attributes:     Archive, ReparsePoint, Offline
 
 ## New behavior
 
-Starting in .NET 7, updating any of the time-related fields on a symlink affects the fields of the symlink itself.
+Starting in .NET 7, updating any of the time-related fields on a symlink affects the fields of the symlink itself and not the target file.
 
 The output of the program shown in the [Previous behavior](#previous-behavior) section is as follows:
 
@@ -127,29 +128,25 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-The previous behavior was unexpected and undesirable in some cases. It was inconsistent with the behavior of the properties and methods that get the same fields. It was also impossible to actually update the fields in the symlink itself using .NET APIs, so we switched it for consistency.
+The previous behavior was unexpected and undesirable in some cases:
+
+- It was inconsistent with the behavior of the properties and methods that get the same fields.
+- It was also impossible to actually update the fields in the symlink itself using .NET APIs.
 
 ## Recommended action
 
-If you were relying on this behavior, setting one of the `*Time` fields in a symlink will no longer affect the target. You can use the new symbolic link APIs to obtain the target of a symlink and then update that file system object instead.
+If you were relying on this behavior to set values on the symlink's target, setting one of the `*Time` fields in a symlink will no longer affect the target. You can use the new symbolic link APIs to obtain the target of a symlink and then update that file system object instead.
 
 ```csharp
 FileSystemInfo? targetInfo = linkInfo.ResolveLinkTarget(returnFinalTarget: true);
 if (targetInfo  != null)
 {
-    // update the properties accordingly.
+    // Update the properties accordingly.
     targetInfo.LastWriteTime = DateTime.Now;
 }
 ```
 
 ## Affected APIs
-
-- <xref:System.IO.File.SetCreationTime(System.String,System.DateTime)?displayProperty=fullName>
-- <xref:System.IO.File.SetCreationTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
-- <xref:System.IO.File.SetLastAccessTime(System.String,System.DateTime)?displayProperty=fullName>
-- <xref:System.IO.File.SetLastAccessTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
-- <xref:System.IO.File.SetLastWriteTime(System.String,System.DateTime)?displayProperty=fullName>
-- <xref:System.IO.File.SetLastWriteTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
 
 - <xref:System.IO.Directory.SetCreationTime(System.String,System.DateTime)?displayProperty=fullName>
 - <xref:System.IO.Directory.SetCreationTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
@@ -157,7 +154,12 @@ if (targetInfo  != null)
 - <xref:System.IO.Directory.SetLastAccessTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
 - <xref:System.IO.Directory.SetLastWriteTime(System.String,System.DateTime)?displayProperty=fullName>
 - <xref:System.IO.Directory.SetLastWriteTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
-
+- <xref:System.IO.File.SetCreationTime(System.String,System.DateTime)?displayProperty=fullName>
+- <xref:System.IO.File.SetCreationTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
+- <xref:System.IO.File.SetLastAccessTime(System.String,System.DateTime)?displayProperty=fullName>
+- <xref:System.IO.File.SetLastAccessTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
+- <xref:System.IO.File.SetLastWriteTime(System.String,System.DateTime)?displayProperty=fullName>
+- <xref:System.IO.File.SetLastWriteTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
 - <xref:System.IO.FileSystemInfo.CreationTime?displayProperty=fullName>
 - <xref:System.IO.FileSystemInfo.CreationTimeUtc?displayProperty=fullName>
 - <xref:System.IO.FileSystemInfo.LastAccessTime?displayProperty=fullName>

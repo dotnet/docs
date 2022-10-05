@@ -99,7 +99,7 @@ There's another approach, however. _Some_ engines are backtracking, or "regex-di
 
 Imagine the regular expression being turned into a graph, where every construct in the pattern is represented as one or more nodes in a graph, and you can transition from one node to another based on the next character in the input. For example, consider the simple expression `abc|cd`. As a directed graph, this expression could look like this:
 
-:::image type="content" source="media/regular-expression-in-depth/abc-orcd-dfa.png" alt-text="DFA for \"abc|cd\"":::
+:::image type="content" source="media/regular-expression-in-depth/abc-orcd-dfa.png" alt-text='DFA for "abc|cd"':::
 
 Here, the 0 node in the graph is the "start state", the location in the graph at which we start the matching process. If the next character is a `'c'`, we transition to node 3. If the next character after that is a `'d'`, we transition to the final state of node 4 and declare a match. However, this graph really only represents the ability to match at a single fixed location in the input; if the initial character we read isn't an `'a`' or a `'c'`, nothing is matched. To address that, we can prefix the expression with a `.*?` lazy loop (here I'm using `'.'` to mean "match anything" rather than "match anything other than `'\n'`", as if `RegexOptions.Singleline` was specified), to encapsulate the idea that we're going to walk along the input until the first place we find `"abc"` or `"cd"` that matches. If we do that, we get almost the exact same graph, but this time with an extra transition from the start state back to the start state.
 

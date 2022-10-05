@@ -105,6 +105,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: ClientWebSocket.ConnectAsync throws new exception
+          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
@@ -1071,6 +1073,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: ClientWebSocket.ConnectAsync throws new exception
+          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException

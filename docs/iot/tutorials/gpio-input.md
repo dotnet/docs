@@ -29,12 +29,12 @@ In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect th
 
 Use the hardware components to build the circuit as depicted in the following diagram:
 
-:::image type="content" source="https://via.placeholder.com/200" alt-text="A Fritzing diagram showing a circuit that connects a ground pin to pin 21." lightbox="https://via.placeholder.com/500":::
+:::image type="content" source="https://via.placeholder.com/400x200.png" alt-text="A Fritzing diagram showing a circuit that connects a ground pin to pin 21." lightbox="https://via.placeholder.com/800x400.png":::
 
 The image above depicts a direct connection between a ground pin and pin 21.
 
-> [!NOTE]
-> The diagram uses a breadboard and GPIO breakout for illustrative purposes, but feel free to just jumper a ground pin and pin 21. Use the diagram below if needed.
+> [!TIP]
+> The diagram uses a breadboard and GPIO breakout for illustrative purposes, but feel free to just jumper a ground pin and pin 21 on the Raspberry Pi.
 
 [!INCLUDE [tutorial-rpi-gpio](../includes/tutorial-rpi-gpio.md)]
 
@@ -56,8 +56,12 @@ Complete the following steps in your preferred development environment:
     In the preceding code:
 
     - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
-    - GPIO pin 21 is opened in mode `InputPullUp`.
-    - **TODO**
+    - GPIO pin 21 is opened with  `PinMode.InputPullUp`.
+        - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
+    - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `alert` string to the console. Otherwise, it writes the `ready` string.
+    - `RegisterCallbackForPinValueChangedEvent()` registers an anonymous callback function for both the `PinEventTypes.Rising` and `PinEventTypes.Falling` events on the pin. These events correspond to pin states of `PinValue.High` and `PinValue.Low`, respectively.
+    - The callback function delegates to a method called `onPinEvent`. `onPinEvent` uses another ternary expression that also writes the corresponding `alert` or `ready` strings.
+    - The main thread sleeps indefinitely while waiting for pin events.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]
 1. [!INCLUDE [tutorial-deploy](../includes/tutorial-deploy.md)]
@@ -67,23 +71,62 @@ Complete the following steps in your preferred development environment:
     ./InputTutorial
     ```
 
-1. **TODO**
+    The app displays text similar to the following:
+
+    ```console
+    Initial status (05/10/2022 15:59:25): Ready ✅
+    ```
+
+1. Disconnect pin 21 from ground. The console displays text similar to the following:
+
+    ```console
+    (05/10/2022 15:59:59) ALERT! 🚨
+    ```
+
+1. Reconnect pin 21 and ground. The console displays text similar to the following:
+
+    ```console
+    (05/10/2022 16:00:25) Ready ✅
+    ```
 
 1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-Congratulations! You've **TODO**
+Congratulations! You've used GPIO to detect input! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
 
-## Other applications
+:::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing magnetic reed switch":::
 
-There are many uses for this type of input. Some examples are described below.
+## Laser tripwire
 
-### Reed switch/contact sensor
+A similar application involves laser tripwires. Building a laser tripwire requires the following additional components:
 
-**TODO**
+* KY-008 laser transmitter module
+* Laser receiver sensor module *(see note below)*
+* 10K Ω resistor
+* 20K Ω resistor
 
-### Laser tripwire
+> [!NOTE]
+> *Laser receiver sensor module* is the generic name applied to a common module found at many internet retailers. The device may vary in name or manufacturer, but should resemble this image.
+>
+> ![Image of a Laser Receiver Sensor Module](https://via.placeholder.com/200x200.png)
 
-**TODO**
+### Hardware
+
+Connect the components as detailed in following diagram.
+
+:::image type="content" source="https://via.placeholder.com/500x300.png" alt-text="Fritzing diagram":::
+
+Pay special attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
+
+### Software changes
+
+You can *almost* use the same code as earlier, with one exception. In the other examples, we used `PinMode.InputPullUp` so that when the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
+
+However, in the case of the laser receiver module, we're not detecting an open circuit. Instead, we want the pin to act as a sink for current coming from the laser receiver module. In this case, we'll open the pin with `PinMode.InputPullDown`. This way, the pin returns `PinValue.Low` when it's getting no current, and `PinValue.High` when it receives current from the laser receiver module.
+
+> [!IMPORTANT]
+> Be sure to make the change the code to open the pin with `PinMode.InputPullDown`. The program *does* work without it, but using the wrong input mode risks damage to your Raspberry Pi!
+
+:::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing the laser tripwire":::
 
 ## Get the source code
 

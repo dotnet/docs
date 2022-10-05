@@ -255,5 +255,6 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
 ## See also
 
 - [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md)
+- [Troubleshoot: Determine which versions and service packs of .NET Framework are installed](/troubleshoot/developer/dotnet/framework/general/determine-dotnet-versions-service-pack-levels)
 - [Install .NET Framework for developers](../install/guide-for-developers.md)
 - [.NET Framework versions and dependencies](versions-and-dependencies.md)

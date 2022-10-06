@@ -21,7 +21,7 @@ Another issue that developers run into is when using a shared instance of `HttpC
 
 However, the issue isn't really with `HttpClient` per se, but with the [default constructor for HttpClient](/dotnet/api/system.net.http.httpclient.-ctor#system-net-http-httpclient-ctor), because it creates a new concrete instance of <xref:System.Net.Http.HttpMessageHandler>, which is the one that has *sockets exhaustion* and DNS changes issues mentioned above.
 
-To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced two approaches, one of them being <xref:System.Net.Http.IHttpClientFactory>. It is an interface which can be used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
+To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced two approaches, one of them being <xref:System.Net.Http.IHttpClientFactory>. It's an interface that's used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
 
 The alternative is to use `SocketsHttpHandler` with configured `PooledConnectionLifetime`. This approach is applied to long-lived, `static` or singleton `HttpClient`s. To learn more about different strategies, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 

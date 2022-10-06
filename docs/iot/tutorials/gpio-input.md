@@ -117,7 +117,7 @@ Connect the components as detailed in following diagram.
 
 Pay special attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
 
-### Software changes
+### Apply source code updates
 
 You can *almost* use the same code as earlier, with one exception. In the other examples, we used `PinMode.InputPullUp` so that when the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
 

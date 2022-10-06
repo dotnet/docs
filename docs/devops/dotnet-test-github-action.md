@@ -36,7 +36,7 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="11-12":::
 
-  - The environment variable `DOTNET_VERSION` is assigned the value `'5.0.301'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v3` GitHub Action.
+  - The environment variable `DOTNET_VERSION` is assigned the value `'6.0.401'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v3` GitHub Action.
 
 - The `jobs` node builds out the steps for the workflow to take.
 

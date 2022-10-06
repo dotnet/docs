@@ -39,7 +39,12 @@ To help you get started, here's an example *.editorconfig* file with the default
 > For more information, see [Option format](style-rules/language-rules.md#option-format).
 
 > [!TIP]
-> In Visual Studio, you can add the following default .NET .editorconfig file to your project from the **Add New Item** dialog box.
+>
+> - In Visual Studio, you can add the following default .NET .editorconfig file to your project from the **Add New Item** dialog box. Refer [this article](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options?view=vs-2022#add-and-remove-editorconfig-files) for detailed steps.
+>
+> - For Visual Studio for Mac, Refer [this](https://docs.microsoft.com/en-us/visualstudio/mac/editorconfig) article.
+>
+> - For Visual Studio Code, You can [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) plugin.
 
 ```ini
 ###############################

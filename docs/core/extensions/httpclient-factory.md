@@ -13,7 +13,10 @@ In this article, you'll learn how to use the `IHttpClientFactory` to create `Htt
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
 > [!NOTE]
-> If your app requires cookies, it might be better not to use <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
+> If your app requires cookies, it might be better to avoid using <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
+
+> [!IMPORTANT]
+> Lifetime management of `HttpClient`s created by `IHttpClientFactory` is completely different from ones created manually. The strategies are to use either **short-lived** clients created by `IHttpClientFactory` or **long-lived** clients with `PooledConnectionLifetime` set up. For more information, see [`HttpClient` lifetime management](#httpclient-lifetime-management) section and [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## The `IHttpClientFactory` type
 
@@ -117,6 +120,9 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 
 1. Create an instance of `HttpClient`.
 1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
+
+> [!IMPORTANT]
+> Using Typed clients in singleton services can be dangerous. For more information, see [Using Typed clients in singleton services](#using-typed-clients-in-singleton-services) section.
 
 ### Generated clients
 
@@ -258,6 +264,19 @@ services.AddHttpClient(name)
     })
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
+
+## Using Typed clients in singleton services
+
+When Named client approach is used, `IHttpClientFactory` is injected into services, and `HttpClient`s are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
+
+However, with Typed client approach, Typed clients are transient objects usually injected into services. That may cause a problem, because a Typed client can be injected into a singleton service.
+
+> [!IMPORTANT]
+> Typed clients are expected to be **short-lived** in the same sense as `HttpClient`s created by `IHttpClientFactory`, see [`HttpClient` lifetime management](#httpclient-lifetime-management) section. As soon as a Typed client instance is created, `IHttpClientFactory` has no control over it. If a Typed client instance is captured in a singleton, it may prevent it from reacting to DNS changes, defeating one of the purposes of `IHttpClientFactory`.
+
+If you need to use `HttpClient`s in a singleton service, consider the following options:
+1. Use Named client approach instead, injecting `IHttpClientFactory` in the singleton service and recreating `HttpClient`s when nesessary.
+2. If you require a Typed client approach, use `SocketsHttpHandler` with configured `PooledConnectionLifetime` as a primary handler. For more information on using `SocketsHttpHandler` with `IHttpClientFactory`, see [Using HttpClientFactory together with SocketsHttpHandler](#using-httpclientfactory-together-with-socketshttphandler) section.
 
 ## See also
 

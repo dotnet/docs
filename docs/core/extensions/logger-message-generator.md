@@ -79,14 +79,14 @@ ILogger<SampleObject> logger = LoggerFactory.Create(
         }))
     .CreateLogger<SampleObject>();
 
-logger.CustomLogEvent(LogLevel.Information, "Liana", "California");
+logger.CustomLogEvent(LogLevel.Information, "Liana", "Seattle");
 
 public static partial class SampleObject
 {
     [LoggerMessage(EventId = 23)]
     public static partial void CustomLogEvent(
         this ILogger logger, LogLevel logLevel,
-        string name, string state);
+        string name, string city);
 }
 ```
 
@@ -101,7 +101,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
   "State": {
     "Message": "",
     "name": "Liana",
-    "state": "California",
+    "city": "Seattle",
     "{OriginalFormat}": ""
   }
 }

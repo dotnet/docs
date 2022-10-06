@@ -29,7 +29,7 @@ In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect th
 
 Use the hardware components to build the circuit as depicted in the following diagram:
 
-:::image type="content" source="https://via.placeholder.com/400x200.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="https://via.placeholder.com/800x400.png":::
+:::image type="content" source="../media/rpi-jumper-21-gnd-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-jumper-21-gnd-thumb.png":::
 
 The image above depicts a direct connection between a ground pin and pin 21.
 
@@ -49,14 +49,14 @@ Complete the following steps in your preferred development environment:
     cd InputTutorial
     ```
 
-1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]
+1. [!INCLUDE [tutorial-add-gpio-package](../includes/tutorial-add-gpio-package.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
     :::code language="csharp" source="~/iot-samples/tutorials/InputTutorial/Program.cs" :::
 
     In the preceding code:
 
-    - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/keywords/using-statement) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - GPIO pin 21 is opened with  `PinMode.InputPullUp`.
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
     - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `Alert` string to the console. Otherwise, it writes the `Ready` string.
@@ -72,7 +72,7 @@ Complete the following steps in your preferred development environment:
     ./InputTutorial
     ```
 
-    The app displays text similar to the following:
+    The console displays text similar to the following:
 
     ```console
     Initial status (05/10/2022 15:59:25): READY ✅
@@ -113,7 +113,7 @@ Extending the previous example concept a bit further, let's take a look at how t
 
 Connect the components as detailed in following diagram.
 
-:::image type="content" source="https://via.placeholder.com/500x300.png" alt-text="Fritzing diagram":::
+:::image type="content" source="../media/rpi-laser-tripwire-beam-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-laser-tripwire-beam.png":::
 
 Pay close attention to the 10K Ω resistors. These implement a [voltage divider](https://www.seeedstudio.com/blog/2019/10/09/voltage-dividers-everything-you-need-to-know/). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
 

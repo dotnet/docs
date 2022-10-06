@@ -109,7 +109,7 @@ A similar application involves laser tripwires. Building a laser tripwire requir
 >
 > ![Image of a Laser Receiver Sensor Module](https://via.placeholder.com/200x200.png)
 
-### Hardware
+### Connect laser tripwire hardware
 
 Connect the components as detailed in following diagram.
 

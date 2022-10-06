@@ -80,7 +80,7 @@ Complete the following steps in your preferred development environment:
 1. Disconnect pin 21 from ground. The console displays text similar to the following:
 
     ```console
-    (05/10/2022 15:59:59) ALERT! 🚨
+    (05/10/2022 15:59:59) ALERT 🚨
     ```
 
 1. Reconnect pin 21 and ground. The console displays text similar to the following:

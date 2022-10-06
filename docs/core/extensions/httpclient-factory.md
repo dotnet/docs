@@ -16,7 +16,7 @@ With modern application development principles driving best practices, the <xref
 > If your app requires cookies, it might be better to avoid using <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 > [!IMPORTANT]
-> Lifetime management of `HttpClient`s created by `IHttpClientFactory` is completely different from ones created manually. The strategies are to use either **short-lived** clients created by `IHttpClientFactory` or **long-lived** clients with `PooledConnectionLifetime` set up. For more information, see [`HttpClient` lifetime management](#httpclient-lifetime-management) section and [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
+> Lifetime management of `HttpClient`s created by `IHttpClientFactory` is completely different from ones created manually. The strategies are to use either **short-lived** clients created by `IHttpClientFactory` or **long-lived** clients with `PooledConnectionLifetime` set up. For more information, see [HttpClient lifetime management](#httpclient-lifetime-management) section and [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## The `IHttpClientFactory` type
 

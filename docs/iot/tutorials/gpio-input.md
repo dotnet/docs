@@ -97,7 +97,7 @@ Congratulations, you've used GPIO to detect input using the `Iot.Device.Bindings
 
 ## Laser tripwire
 
-A similar application involves laser tripwires. Building a laser tripwire requires the following additional components:
+Extending the previous example concept a bit further, let's take a look at how this could be applied to creating a laser tripwire. Building a laser tripwire requires the following additional components:
 
 * KY-008 laser transmitter module
 * Laser receiver sensor module *(see note below)*

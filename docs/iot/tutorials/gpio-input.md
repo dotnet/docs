@@ -87,7 +87,7 @@ Complete the following steps in your preferred development environment:
 1. Reconnect pin 21 and ground. The console displays text similar to the following:
 
     ```console
-    (05/10/2022 16:00:25) Ready ✅
+    (05/10/2022 16:00:25) READY ✅
     ```
 
 1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.

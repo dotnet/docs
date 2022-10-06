@@ -270,7 +270,7 @@ services.AddHttpClient(name)
 
 When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient`s are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 
-However, with Typed client approach, Typed clients are transient objects usually injected into services. That may cause a problem, because a Typed client can be injected into a singleton service.
+However, with the _typed client_ approach, typed clients are transient objects usually injected into services. That may cause a problem because a typed client can be injected into a singleton service.
 
 > [!IMPORTANT]
 > Typed clients are expected to be **short-lived** in the same sense as `HttpClient`s created by `IHttpClientFactory`, see [`HttpClient` lifetime management](#httpclient-lifetime-management) section. As soon as a Typed client instance is created, `IHttpClientFactory` has no control over it. If a Typed client instance is captured in a singleton, it may prevent it from reacting to DNS changes, defeating one of the purposes of `IHttpClientFactory`.

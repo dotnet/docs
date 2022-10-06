@@ -41,7 +41,7 @@ The current implementation of <xref:System.Net.Http.IHttpClientFactory>, that al
 > Note that `HttpMessageHandler` instances have their own DI scopes, **not related** to application scopes (e.g. request scopes).
 
 > [!NOTE]
-> The implementation of `IHttpClientFactory` (`DefaultHttpClientFactory`) is tightly tied to the DI implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. If you need to use `HttpClient` without DI or with other DI implementations, consider using a `static` or singleton `HttpClient` with `PooledConnectionLifetime` set up, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
+> The implementation of `IHttpClientFactory` (`DefaultHttpClientFactory`) is tightly tied to the DI implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. If you need to use `HttpClient` without DI or with other DI implementations, consider using a `static` or singleton `HttpClient` with `PooledConnectionLifetime` set up. For more information, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Multiple ways to use IHttpClientFactory
 

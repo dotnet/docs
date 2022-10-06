@@ -23,9 +23,9 @@ However, the issue isn't really with `HttpClient` per se, but with the [default 
 
 To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced two approaches, one of them being <xref:System.Net.Http.IHttpClientFactory>. It is an interface which can be used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
 
-[Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
-
 The alternative is to use `SocketsHttpHandler` with configured `PooledConnectionLifetime`. This approach is applied to long-lived, `static` or singleton `HttpClient`s. To learn more about different strategies, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
+
+[Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
 ## Benefits of using IHttpClientFactory
 

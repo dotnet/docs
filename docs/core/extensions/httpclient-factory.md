@@ -277,7 +277,7 @@ However, with the _typed client_ approach, typed clients are transient objects u
 
 If you need to use `HttpClient`s in a singleton service, consider the following options:
 1. Use Named client approach instead, injecting `IHttpClientFactory` in the singleton service and recreating `HttpClient`s when nesessary.
-2. If you require a Typed client approach, use `SocketsHttpHandler` with configured `PooledConnectionLifetime` as a primary handler. For more information on using `SocketsHttpHandler` with `IHttpClientFactory`, see [Using HttpClientFactory together with SocketsHttpHandler](#using-httpclientfactory-together-with-socketshttphandler) section.
+1. If you require a typed client approach, use `SocketsHttpHandler` with configured `PooledConnectionLifetime` as a primary handler. For more information on using `SocketsHttpHandler` with `IHttpClientFactory`, see [Using HttpClientFactory together with SocketsHttpHandler](#using-httpclientfactory-together-with-socketshttphandler) section.
 
 ## See also
 

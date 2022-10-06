@@ -61,7 +61,7 @@ Complete the following steps in your preferred development environment:
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
     - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `alert` string to the console. Otherwise, it writes the `ready` string.
     - `RegisterCallbackForPinValueChangedEvent()` registers an anonymous callback function for both the `PinEventTypes.Rising` and `PinEventTypes.Falling` events on the pin. These events correspond to pin states of `PinValue.High` and `PinValue.Low`, respectively.
-    - The callback function delegates to a method called `onPinEvent`. `onPinEvent` uses another ternary expression that also writes the corresponding `alert` or `ready` strings.
+    - The callback function delegates to a method called `OnPinEvent`. `OnPinEvent` uses another ternary expression that also writes the corresponding `alert` or `ready` strings.
     - The main thread sleeps indefinitely while waiting for pin events.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]
@@ -75,13 +75,13 @@ Complete the following steps in your preferred development environment:
     The app displays text similar to the following:
 
     ```console
-    Initial status (05/10/2022 15:59:25): Ready ✅
+    Initial status (05/10/2022 15:59:25): READY ✅
     ```
 
 1. Disconnect pin 21 from ground. The console displays text similar to the following:
 
     ```console
-    (05/10/2022 15:59:59) ALERT! 🚨
+    (05/10/2022 15:59:59) ALERT 🚨
     ```
 
 1. Reconnect pin 21 and ground. The console displays text similar to the following:
@@ -92,13 +92,13 @@ Complete the following steps in your preferred development environment:
 
 1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-Congratulations! You've used GPIO to detect input! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
+Congratulations, you've used GPIO to detect input using the `Iot.Device.Bindings` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
 
 :::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing magnetic reed switch":::
 
 ## Laser tripwire
 
-A similar application involves laser tripwires. Building a laser tripwire requires the following additional components:
+Extending the previous example concept a bit further, let's take a look at how this could be applied to creating a laser tripwire. Building a laser tripwire requires the following additional components:
 
 * KY-008 laser transmitter module
 * Laser receiver sensor module *(see note below)*
@@ -110,15 +110,15 @@ A similar application involves laser tripwires. Building a laser tripwire requir
 >
 > ![Image of a Laser Receiver Sensor Module](https://via.placeholder.com/200x200.png)
 
-### Hardware
+### Connect laser tripwire hardware
 
 Connect the components as detailed in following diagram.
 
 :::image type="content" source="https://via.placeholder.com/500x300.png" alt-text="Fritzing diagram":::
 
-Pay special attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
+Pay close attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
 
-### Software changes
+### Apply source code updates
 
 You can *almost* use the same code as earlier, with one exception. In the other examples, we used `PinMode.InputPullUp` so that when the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
 

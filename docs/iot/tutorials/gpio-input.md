@@ -34,7 +34,7 @@ Use the hardware components to build the circuit as depicted in the following di
 The image above depicts a direct connection between a ground pin and pin 21.
 
 > [!TIP]
-> The diagram uses a breadboard and GPIO breakout for illustrative purposes, but feel free to just jumper a ground pin and pin 21 on the Raspberry Pi.
+> The diagram depicts a breadboard and GPIO breakout for illustrative purposes, but feel free to just connect a ground pin and pin 21 with a jumper wire on the Raspberry Pi.
 
 [!INCLUDE [tutorial-rpi-gpio](../includes/tutorial-rpi-gpio.md)]
 
@@ -46,6 +46,7 @@ Complete the following steps in your preferred development environment:
 
     ```dotnetcli
     dotnet new console -o InputTutorial
+    cd InputTutorial
     ```
 
 1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]

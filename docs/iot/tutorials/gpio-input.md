@@ -29,7 +29,7 @@ In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect th
 
 Use the hardware components to build the circuit as depicted in the following diagram:
 
-:::image type="content" source="https://via.placeholder.com/400x200.png" alt-text="A Fritzing diagram showing a circuit that connects a ground pin to pin 21." lightbox="https://via.placeholder.com/800x400.png":::
+:::image type="content" source="https://via.placeholder.com/400x200.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="https://via.placeholder.com/800x400.png":::
 
 The image above depicts a direct connection between a ground pin and pin 21.
 
@@ -59,9 +59,9 @@ Complete the following steps in your preferred development environment:
     - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - GPIO pin 21 is opened with  `PinMode.InputPullUp`.
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
-    - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `alert` string to the console. Otherwise, it writes the `ready` string.
+    - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `Alert` string to the console. Otherwise, it writes the `Ready` string.
     - `RegisterCallbackForPinValueChangedEvent()` registers an anonymous callback function for both the `PinEventTypes.Rising` and `PinEventTypes.Falling` events on the pin. These events correspond to pin states of `PinValue.High` and `PinValue.Low`, respectively.
-    - The callback function delegates to a method called `OnPinEvent`. `OnPinEvent` uses another ternary expression that also writes the corresponding `alert` or `ready` strings.
+    - The callback function delegates to a method called `OnPinEvent`. `OnPinEvent` uses another ternary expression that also writes the corresponding `Alert` or `Ready` strings.
     - The main thread sleeps indefinitely while waiting for pin events.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]
@@ -92,7 +92,7 @@ Complete the following steps in your preferred development environment:
 
 1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-Congratulations, you've used GPIO to detect input using the `Iot.Device.Bindings` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
+Congratulations! You've used GPIO to detect input using the `Iot.Device.Bindings` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
 
 :::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing magnetic reed switch":::
 
@@ -102,8 +102,7 @@ Extending the previous example concept a bit further, let's take a look at how t
 
 * KY-008 laser transmitter module
 * Laser receiver sensor module *(see note below)*
-* 10K Ω resistor
-* 20K Ω resistor
+* 2 10K Ω resistors
 
 > [!NOTE]
 > *Laser receiver sensor module* is the generic name applied to a common module found at many internet retailers. The device may vary in name or manufacturer, but should resemble this image.
@@ -116,7 +115,7 @@ Connect the components as detailed in following diagram.
 
 :::image type="content" source="https://via.placeholder.com/500x300.png" alt-text="Fritzing diagram":::
 
-Pay close attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
+Pay close attention to the 10K Ω resistors. These implement a [voltage divider](https://www.seeedstudio.com/blog/2019/10/09/voltage-dividers-everything-you-need-to-know/). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
 
 ### Apply source code updates
 
@@ -124,8 +123,12 @@ You can *almost* use the same code as earlier, with one exception. In the other 
 
 However, in the case of the laser receiver module, we're not detecting an open circuit. Instead, we want the pin to act as a sink for current coming from the laser receiver module. In this case, we'll open the pin with `PinMode.InputPullDown`. This way, the pin returns `PinValue.Low` when it's getting no current, and `PinValue.High` when it receives current from the laser receiver module.
 
+```csharp
+controller.OpenPin(pin, PinMode.InputPullDown);
+```
+
 > [!IMPORTANT]
-> Be sure to make the change the code to open the pin with `PinMode.InputPullDown`. The program *does* work without it, but using the wrong input mode risks damage to your Raspberry Pi!
+> Make sure the code deployed on your Raspberry Pi includes this change before testing a laser tripwire. The program *does* work without it, but using the wrong input mode risks damage to your Raspberry Pi!
 
 :::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing the laser tripwire":::
 

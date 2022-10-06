@@ -115,7 +115,7 @@ Connect the components as detailed in following diagram.
 
 :::image type="content" source="https://via.placeholder.com/500x300.png" alt-text="Fritzing diagram":::
 
-Pay special attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
+Pay close attention to the 10K Ω and 20K Ω resistors. These implement a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
 
 ### Apply source code updates
 

@@ -29,7 +29,7 @@ Most of the following examples reuse the same `HttpClient` instance, and therefo
 
 The preceding code:
 
-- Instantiates a new `HttpClient` instance as a `static` variable. As per the guidelines referenced above, it's strongly recommended to reuse `HttpClient` instance(s) during the application's lifecycle.
+- Instantiates a new `HttpClient` instance as a `static` variable. As per the [guidelines](httpclient-guidelines.md), it's strongly recommended to reuse `HttpClient` instances during the application's lifecycle.
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
 This `HttpClient` instance will always use the base address when making subsequent requests. To apply additional configuration consider:

@@ -2,7 +2,7 @@
 {
     // <sharedclient>
     // HttpClient lifecycle management best practices:
-    // https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines#recommended-use
+    // https://learn.microsoft.com/dotnet/fundamentals/networking/http/httpclient-guidelines#recommended-use
     private static HttpClient sharedClient = new()
     {
         BaseAddress = new Uri("https://jsonplaceholder.typicode.com"),

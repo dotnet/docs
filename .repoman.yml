@@ -311,7 +311,7 @@ pull_request:
             - path: "(?i).*docs\/fundamentals\/networking.*"
               run:
                 - labels-add: [ "dotnet-fundamentals/prod", "dotnet-networking/tech" ]
-            - path: "(?i).*docs\/core\/extensions/\http*"
+            - path: "(?i).*docs\/core\/extensions/\http.*"
               run:
                 - labels-add: [ "dotnet-fundamentals/prod", "dotnet-networking/tech" ]
             - path: "(?i).*docs\/framework\/wcf.*"

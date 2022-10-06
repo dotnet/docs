@@ -2,6 +2,12 @@
 # https://github.com/dotnet/core/tree/main/samples/dependadotnet
 version: 2
 updates:
+  - package-ecosystem: "github-actions" # Core GitHub Actions
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 10
   - package-ecosystem: "nuget"
     directory: "/docs/azure/sdk/snippets/logging" #LoggingSampleApp.csproj
     schedule:

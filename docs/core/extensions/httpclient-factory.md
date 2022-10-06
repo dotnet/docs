@@ -204,7 +204,8 @@ services.AddHttpClient("Named.Client")
 
 > [!IMPORTANT]
 > `HttpClient` instances created by `IHttpClientFactory` are intended to be **short-lived**.
-> 1. Recycling and recreating `HttpMessageHandler`s when their lifetime expires is essential for `IHttpClientFactory` to ensure the handlers react to DNS changes. `HttpClient` is tied to a specific handler instance upon it's creation, so new `HttpClient` instances should be requested in a timely manner to ensure the client will get the updated handler.
+> 1. Recycling and recreating `HttpMessageHandler`'s when their lifetime expires is essential for `IHttpClientFactory` to ensure the handlers react to DNS changes. `HttpClient` is tied to a specific handler instance upon its creation, so new `HttpClient` instances should be requested in a timely manner to ensure the client will get the updated handler.
+>
 > 2. Disposing such `HttpClient`s **created by the factory** will not lead to socket exhaustion, as it's disposal **will not** trigger `HttpMessageHandler`'s disposal. `IHttpClientFactory` tracks and disposes resources used to create `HttpClient` instances, specifically the `HttpMessageHandler`, as soon it's lifetime expires and there's no `HttpClient`s using it anymore.
 
 Keeping a single `HttpClient` instance alive for a long duration is a common pattern that can be used as an **alternative** to `IHttpClientFactory`, however, this pattern requires additional setup, such as `PooledConnectionLifetime`. You can use either **long-lived** clients with `PooledConnectionLifetime`, or **short-lived** clients created by `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).

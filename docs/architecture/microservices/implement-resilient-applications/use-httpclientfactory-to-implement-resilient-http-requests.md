@@ -21,7 +21,9 @@ Another issue that developers run into is when using a shared instance of `HttpC
 
 However, the issue isn't really with `HttpClient` per se, but with the [default constructor for HttpClient](/dotnet/api/system.net.http.httpclient.-ctor#system-net-http-httpclient-ctor), because it creates a new concrete instance of <xref:System.Net.Http.HttpMessageHandler>, which is the one that has *sockets exhaustion* and DNS changes issues mentioned above.
 
-To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced two approaches, one of them being <xref:System.Net.Http.IHttpClientFactory>. It is an interface which can be used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient. [Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
+To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced two approaches, one of them being <xref:System.Net.Http.IHttpClientFactory>. It is an interface which can be used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
+
+[Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
 The alternative is to use `SocketsHttpHandler` with configured `PooledConnectionLifetime`. This approach is applied to long-lived, `static` or singleton `HttpClient`s. To learn more about different strategies, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 
@@ -35,12 +37,11 @@ The current implementation of <xref:System.Net.Http.IHttpClientFactory>, that al
 - Manage the lifetime of <xref:System.Net.Http.HttpMessageHandler> to avoid the mentioned problems/issues that can occur when managing `HttpClient` lifetimes yourself.
 
 > [!TIP]
-> The `HttpClient` instances injected by DI, can be disposed of safely, because the associated `HttpMessageHandler` is managed by the factory. As a matter of fact, injected `HttpClient` instances are *Transient* from a DI perspective, while `HttpMessageHandler` instances can be regarded as *Scoped*.
->
+> The `HttpClient` instances injected by DI, can be disposed of safely, because the associated `HttpMessageHandler` is managed by the factory. As a matter of fact, injected `HttpClient` instances are *Transient* from a DI perspective, while `HttpMessageHandler` instances can be regarded as *Scoped*.  
 > Note that `HttpMessageHandler` instances have their own DI scopes, **not related** to application scopes (e.g. request scopes).
 
 > [!NOTE]
-> The implementation of `IHttpClientFactory` (`DefaultHttpClientFactory`) is tightly tied to the DI implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package.
+> The implementation of `IHttpClientFactory` (`DefaultHttpClientFactory`) is tightly tied to the DI implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. If you need to use `HttpClient` without DI or with other DI implementations, consider using a `static` or singleton `HttpClient` with `PooledConnectionLifetime` set up, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Multiple ways to use IHttpClientFactory
 
@@ -188,19 +189,19 @@ Up to this point, the above code snippet has only shown the example of performin
 
 ## Additional resources
 
-- **HttpClient guidelines for .NET**
+- **HttpClient guidelines for .NET**  
   [https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines](../../../fundamentals/networking/http/httpclient-guidelines.md)
 
-- **Using HttpClientFactory in .NET**
+- **Using HttpClientFactory in .NET**  
   [https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory](../../../core/extensions/httpclient-factory.md)
 
-- **Using HttpClientFactory in ASP.NET Core**
+- **Using HttpClientFactory in ASP.NET Core**  
   [https://learn.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
-- **HttpClientFactory source code in the `dotnet/runtime` GitHub repository**
+- **HttpClientFactory source code in the `dotnet/runtime` GitHub repository**  
   <https://github.com/dotnet/runtime/tree/release/6.0/src/libraries/Microsoft.Extensions.Http/>
 
-- **Polly (.NET resilience and transient-fault-handling library)**
+- **Polly (.NET resilience and transient-fault-handling library)**  
   <https://thepollyproject.azurewebsites.net/>
   
 - **Using IHttpClientFactory without dependency injection (GitHub issue)**  

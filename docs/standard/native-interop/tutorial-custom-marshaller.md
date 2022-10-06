@@ -13,33 +13,33 @@ helpviewer_keywords:
 
 In this tutorial, you'll learn how to implement a marshaller and use it for [custom marshalling](custom-marshalling-source-generation.md) in [source-generated P/Invokes](pinvoke-source-generation.md).
 
-We will implement marshallers for a built-in type, customize marshalling for a specific parameter and a user-defined type, and specify default marshalling for a user-defined type.
+You'll implement marshallers for a built-in type, customize marshalling for a specific parameter and a user-defined type, and specify default marshalling for a user-defined type.
 
 All source code used in this tutorial is available in the [dotnet/samples repository](https://github.com/dotnet/samples/tree/main/core/interop/source-generation/custom-marshalling).
 
 ## Overview of the `LibraryImport` source generator
 
-The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile-time instead of at run-time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable. The most important cost is generation of marshalling code at run-time. This cost can be measured in terms of application performance but also in terms of potential target platforms that may not support dynamic code generation. The NativeAOT application model addresses issues with dynamic code generation by precompiling all code ahead of time directly into native code. Platforms that require full NativeAOT scenarios mean using `DllImport` is not an option because of its run-time generation semantics. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
+The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable. The most important cost is generation of marshalling code at run time. This cost can be measured in terms of application performance but also in terms of potential target platforms that may not support dynamic code generation. The NativeAOT application model addresses issues with dynamic code generation by precompiling all code ahead of time directly into native code. Using `DllImport` is not an option for platforms that require full NativeAOT scenarios because of its run-time generation semantics. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
 
-In order to express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types will be used throughout this tutorial.
+To express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types are used throughout this tutorial:
 
-* [`MarshalUsingAttribute`][api_marshalusingattribute] &ndash; Looked for by the source generator at use sites and used to determine the marshaller type used for marshalling the attributed variable.
+* [`MarshalUsingAttribute`][api_marshalusingattribute] &ndash; Attribute that's sought by the source generator at use sites and used to determine the marshaller type for marshalling the attributed variable.
 
-* [`CustomMarshallerAttribute`][api_custommarshallerattribute] &ndash; Attribute used to indicate a marshaller for a type, along with the mode in which the marshalling operations is to be performed (for example, by-ref from managed to unmanaged).
+* [`CustomMarshallerAttribute`][api_custommarshallerattribute] &ndash; Attribute used to indicate a marshaller for a type and the mode in which the marshalling operations are to be performed (for example, by-ref from managed to unmanaged).
 
-* [`NativeMarshallingAttribute`][api_nativemarshallingattribute] &ndash; Used to indicate what marshaller to use for the attributed type. This is useful for the library authors that provide types and accompanying marshallers for those types.
+* [`NativeMarshallingAttribute`][api_nativemarshallingattribute] &ndash; Attribute used to indicate which marshaller to use for the attributed type. This is useful for library authors that provide types and accompanying marshallers for those types.
 
-These attributes, however are not the only mechanisms available to the custom marshaller author, the source generator insepct the marshaller itself for various other indications that inform how marshalling should occur.
+These attributes, however, are not the only mechanisms available to a custom marshaller author. The source generator inspects the marshaller itself for various other indications that inform how marshalling should occur.
 
 Complete details on the design can be found in the [dotnet/runtime][design_libraryimport] repository.
 
-### Source generator Analyzer and Fixer
+### Source generator analyzer and fixer
 
-Along with the source generator itself, an Analyzer and Fixer are both provided. The Analyzer and Fixer are enabled and available by default since .NET 7 RC1. The Analyzer is designed to help guide developers into using the source generator properly and the Fixer provides automated conversions from many `DllImport` patterns into the appropriate `LibraryImport` signature.
+Along with the source generator itself, an analyzer and fixer are both provided. The analyzer and fixer are enabled and available by default since .NET 7 RC1. The analyzer is designed to help guide developers to use the source generator properly. The fixer provides automated conversions from many `DllImport` patterns into the appropriate `LibraryImport` signature.
 
 ## Introducing the native library
 
-Using the `LibraryImport` source generator would mean consuming a native, or unmanaged, library. A native library might be a shared library (that is, `.dll`, `.so`, or `dylib`) that directly calls an operating system API, not exposed through .NET, or one that is heavily optimized in an unmanaged language that a .NET developer wants to consume. For this tutorial we are going to build our own shared library that exposes a C style API surface. The below represents a user defined type and two APIs that we would like to consume from C#. These two APIs represent the "in" mode, but there are additional modes to explore in the sample.
+Using the `LibraryImport` source generator would mean consuming a native, or unmanaged, library. A native library might be a shared library (that is, `.dll`, `.so`, or `dylib`) that directly calls an operating system API that's not exposed through .NET. The library might also be one that is heavily optimized in an unmanaged language that a .NET developer wants to consume. For this tutorial, you'll build your own shared library that exposes a C-style API surface. The following code represents a user-defined type and two APIs that you'll consume from C#. These two APIs represent the "in" mode, but there are additional modes to explore in the sample.
 
 ```cpp
 struct error_data
@@ -54,15 +54,15 @@ extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintString(char32_t* chars);
 extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintErrorData(error_data data);
 ```
 
-The above contains the two types of interest, `char32_t*` and `error_data`. The latter represents a string that is encoded in UTF-32, not an string encoding .NET historically marshals, and a user defined type containing a 32-bit integer field, a C++ boolean field, and a UTF-32 encoded string field. Both of these types will require us to provide a way for the source generator to generate marshalling code.
+The preceding code contains the two types of interest, `char32_t*` and `error_data`. `char32_t*` represents a string that's encoded in UTF-32, which is not a string encoding that .NET historically marshals. `error_data` is a user-defined type that contains a 32-bit integer field, a C++ Boolean field, and a UTF-32 encoded string field. Both of these types require you to provide a way for the source generator to generate marshalling code.
 
 ## Customize marshalling for a built-in type
 
-Let's look at the `char32_t*` type first, since marshalling this is required by the user-defined type. We should note that `char32_t*` represents the native side, but we also need representation in managed code. In .NET, there is only one "string" type, `string`. Therefore we will be marshalling a native UTF-32 encoded string to and from the `string` type in managed code. There are already several built-in marshallers for the `string` type that will marshal as UTF-8, UTF-16, ANSI, and even as the Windows `BSTR` type. However, there isn't one for marshalling as UTF-32. That is what we need to define.
+Consider the `char32_t*` type first, since marshalling this type is required by the user-defined type. `char32_t*` represents the native side, but you also need representation in managed code. In .NET, there's only one "string" type, `string`. Therefore, you'll be marshalling a native UTF-32 encoded string to and from the `string` type in managed code. There are already several built-in marshallers for the `string` type that marshal as UTF-8, UTF-16, ANSI, and even as the Windows `BSTR` type. However, there isn't one for marshalling as UTF-32. That's what you need to define.
 
-The `Utf32StringMarshaller` type has an instance of the `CustomMarshaller`, which helps to described what it does to for the source generator. Note the first type argument to the attribute is the `string` type, the managed type to marshal, the mode is next, which indicates when to use the marshaller, third type, `Utf32StringMarshaller`. Multiple instances of `CustomMarshaller` can be provided and further specify the mode and what marshaller type to use. The current example showcases a "stateless" marshaller that will take some input and return a data in the marshalled form. The `Free` method exists for symmetry with the unmanaged marshalling, the garbage collector is the "free" operation for the managed marshaller. The implementer is free to perform what operations are desired to marshal the input to the output, but remember no state will be explicitly preserved by the source generator.
+The `Utf32StringMarshaller` type has an instance of the `CustomMarshaller`, which helps to describe what it does to the source generator. The first type argument to the attribute is the `string` type, the managed type to marshal, the second is the mode, which indicates when to use the marshaller, and the third type is `Utf32StringMarshaller`. You can provide multiple instances of `CustomMarshaller` to further specify the mode and which marshaller type to use. The current example showcases a "stateless" marshaller that takes some input and returns data in the marshalled form. The `Free` method exists for symmetry with the unmanaged marshalling, and the garbage collector is the "free" operation for the managed marshaller. The implementer is free to perform whatever operations are desired to marshal the input to the output, but remember that no state will be explicitly preserved by the source generator.
 
-The specifics of how this particular marshaller performs the conversion from `string` to `char32_t*` can be found in the sample, note though that any .NET APIs could be used (for example, [`Encoding.UTF32`](https://docs.microsoft.com/dotnet/api/system.text.encoding.utf32)).
+The specifics of how this particular marshaller performs the conversion from `string` to `char32_t*` can be found in the sample. Note that any .NET APIs could be used (for example, <xref:System.Text.Encoding.UTF32?displayProperty=nameWithType>).
 
 ```csharp
 namespace CustomMarshalling
@@ -82,7 +82,7 @@ namespace CustomMarshalling
 }
 ```
 
-Let's consider a case where state is desirable. Observe the additional `CustomMarshaller` and note the more specific mode, `MarshalMode.ManagedToUnmanagedIn`. This specialized marshaller is implemented as "stateful" and can store state across the interop call. More specialization and state permit optimizations and tailored marshalling for a mode. For example, the source generator can be instructed to provide a reasonable sized stack allocation that could avoid an explicit allocation during marshalling. The allocated buffer is requested by the marshaller when the source generator discovers a `BufferSize` property. This property indicates the amount of stack space the marshaller would like to get during the marshal call.
+Consider a case where state is desirable. Observe the additional `CustomMarshaller` and note the more specific mode, `MarshalMode.ManagedToUnmanagedIn`. This specialized marshaller is implemented as "stateful" and can store state across the interop call. More specialization and state permit optimizations and tailored marshalling for a mode. For example, the source generator can be instructed to provide a reasonably sized stack allocation that could avoid an explicit allocation during marshalling. The allocated buffer is requested by the marshaller when the source generator discovers a `BufferSize` property. This property indicates the amount of stack space the marshaller would like to get during the marshal call.
 
 ```csharp
 namespace CustomMarshalling
@@ -115,7 +115,7 @@ namespace CustomMarshalling
 }
 ```
 
-The first of our two native functions can now be called using our UTF-32 string marshallers. The below declaration uses the `LibraryImport` attribute, just like `DllImport`, but relies upon the `MarshalUsing` to instruct the source generator what marshaller to use when calling the native function. There is no need to clarify if the stateless or stateful marshaller should be used. This is handled by the implementer defining the "mode" on the marshaller. The source generator will select the most appropriate marshaller based on the context in which the `MarshalUsing` is applied, `MarshalMode.Default` being the fallback.
+You can now call the first of the two native functions using your UTF-32 string marshallers. The following declaration uses the `LibraryImport` attribute, just like `DllImport`, but relies upon the `MarshalUsing` attribute to tell the source generator which marshaller to use when calling the native function. There's no need to clarify if the stateless or stateful marshaller should be used. This is handled by the implementer defining the "mode" on the marshaller. The source generator will select the most appropriate marshaller based on the context in which the `MarshalUsing` is applied, with `MarshalMode.Default` being the fallback.
 
 ```csharp
 // extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintString(char32_t* chars);
@@ -136,7 +136,7 @@ struct error_data
 };
 ```
 
-An `int` is the same size in both modern C++ and in .NET. A `bool` is the canonical example for a boolean value in .NET. Building on top of `Utf32StringMarshaller`, we can marshal `char32_t*` as a .NET `string`. Accounting for .NET style the result is the following definition in C#.
+An `int` is the same size in both modern C++ and in .NET. A `bool` is the canonical example for a Boolean value in .NET. Building on top of `Utf32StringMarshaller`, you can marshal `char32_t*` as a .NET `string`. Accounting for .NET style, the result is the following definition in C#:
 
 ```csharp
 struct ErrorData
@@ -147,7 +147,7 @@ struct ErrorData
 }
 ```
 
-Following the naming pattern, we will name the marshaller `ErrorDataMarshaller`. Instead of creating a default marshaller, we will only define marshallers for some modes. This will demonstrate the case where if a mode isn't provided, the source generator will fail. Let's start with the "in" direction.
+Following the naming pattern, name the marshaller `ErrorDataMarshaller`. Instead of creating a default marshaller, you'll only define marshallers for some modes. In this case, if a mode isn't provided, the source generator will fail. Start with defining a marshaller for the "in" direction.
 
 ```csharp
 namespace CustomMarshalling
@@ -173,9 +173,9 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from an `ErrorData` to an `ErrorDataUnmanaged`, that will mimic the shape of the unmanaged type is now trivial with `Utf32StringMarshaller`. Note this is a "stateless" marshaller because the marshaller itself only consists of `static` functions.
+The conversion from an `ErrorData` to an `ErrorDataUnmanaged`, which will mimic the shape of the unmanaged type, is now trivial with `Utf32StringMarshaller`. This is a "stateless" marshaller because the marshaller itself only consists of `static` functions.
 
-Marshalling of an `int` is unnecessary since representations are identical in unmanaged and managed. A `bool`'s binary representation isn't defined in .NET so we use its current value to define a zero and non-zero value in the unmanaged type. We then reuse our UTF-32 marshaller to convert our `string` field into a `uint*`.
+Marshalling of an `int` is unnecessary since its representation is identical in unmanaged and managed code. A `bool` value's binary representation isn't defined in .NET, so you use its current value to define a zero and non-zero value in the unmanaged type. Then, reuse your UTF-32 marshaller to convert the `string` field into a `uint*`.
 
 ```csharp
 public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
@@ -189,14 +189,14 @@ public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
 }
 ```
 
-Recall we are defining this marshaller as an "in" so we must clean-up any allocations performed during the marshalling. The `int` and `bool` fields didn't allocate any memory, but the `Message` field did. We again reuse `Utf32StringMarshaller` to clean up the marshalled string.
+Recall that you're defining this marshaller as an "in", so you must clean up any allocations performed during the marshalling. The `int` and `bool` fields didn't allocate any memory, but the `Message` field did. Reuse `Utf32StringMarshaller` again to clean up the marshalled string.
 
 ```csharp
 public static void Free(ErrorDataUnmanaged unmanaged)
     => Utf32StringMarshaller.Free(unmanaged.Message);
 ```
 
-Next, we are going to consider the case where multiple instances of `error_data` are returned. Typically returning multiple of a thing is done using a collection and those multiple things are called "elements". Since this will be returning multiple elements we call this the `MarshalMode.ElementOut` mode.
+Next, consider the case where multiple instances of `error_data` are returned. Typically, you use a collection to return multiple elements. Since this marshaller will be returning multiple elements, this is called the `MarshalMode.ElementOut` mode.
 
 ```csharp
 namespace CustomMarshalling
@@ -221,9 +221,9 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what we did for the "in" mode above. Remember that we also need to "clean up" any allocations the unmanaged environment expected us to perform.
+The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode in the preceding code. Remember that you also need to "clean up" any allocations that the unmanaged environment expected you to perform.
 
-For our managed to unmanaged "out" marshaller, we are going to do something special. The name of the data type we are marshalling is called `error_data` and .NET typically expresses errors as exceptions. However, some errors are more impactful than others. Errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. Let's marshal an `error_data` into managed and if it is fatal, we will throw an exception rather than just converting it into an `ErrorData` and returning it.
+For the managed to unmanaged "out" marshaller, you're going to do something special. The name of the data type you're marshalling is called `error_data` and .NET typically expresses errors as exceptions. However, some errors are more impactful than others. Errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. You'll marshal an `error_data` into managed code, and if it's fatal, you'll throw an exception rather than just converting it into an `ErrorData` and returning it.
 
 ```csharp
 namespace CustomMarshalling
@@ -249,7 +249,7 @@ namespace CustomMarshalling
 }
 ```
 
-An "out" parameter is converting from an unmanaged context into a managed context, so we implement the `ConvertToManaged` method. When the unmanaged callee returns and provides a `ErrorDataUnmanaged`, we inspect it using our `ElementOut` mode marshaller and then check if it is marked as a "fatal" error. If so, that is our indication to throw as opposed to just return the `ErrorData`.
+An "out" parameter converts from an unmanaged context into a managed context, so you implement the `ConvertToManaged` method. When the unmanaged callee returns and provides an `ErrorDataUnmanaged` object, you can inspect it using your `ElementOut` mode marshaller and then check if it's marked as a "fatal" error. If so, that's your indication to throw as opposed to just returning the `ErrorData`.
 
 ```csharp
 public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
@@ -262,7 +262,7 @@ public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
 }
 ```
 
-Let us assume we are not only going to consume the native library, but we are also going to share our work with the community and provide an interop library. This means we could provide `ErrorData` an implied marshaller whenever it is used in a P/Invoke by adding `[NativeMarshalling(typeof(ErrorDataMarshaller))]` to the `ErrorData` definition. With this added to `ErrorData` anyone using our definition of this type in a `LibraryImport` call will get the benefit of our marshallers. Note they can always override our marshallers by using the `MarshalUsing` at the use site.
+Perhaps you're not only going to consume the native library, but you also want to share your work with the community and provide an interop library. You can provide `ErrorData` with an implied marshaller whenever it's used in a P/Invoke by adding `[NativeMarshalling(typeof(ErrorDataMarshaller))]` to the `ErrorData` definition. Now, anyone using your definition of this type in a `LibraryImport` call will get the benefit of your marshallers. They can always override your marshallers by using `MarshalUsing` at the use site.
 
 ```csharp
 [NativeMarshalling(typeof(ErrorDataMarshaller))]

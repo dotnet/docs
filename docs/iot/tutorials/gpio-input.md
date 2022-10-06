@@ -91,7 +91,7 @@ Complete the following steps in your preferred development environment:
 
 1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-Congratulations! You've used GPIO to detect input! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
+Congratulations, you've used GPIO to detect input using the `Iot.Device.Bindings` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
 
 :::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing magnetic reed switch":::
 

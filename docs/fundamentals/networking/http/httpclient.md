@@ -25,11 +25,11 @@ HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not a
 
 Most of the following examples reuse the same `HttpClient` instance, and therefore only need to be configured once. To create an `HttpClient`, use the `HttpClient` class constructor. For more information, see [Guidelines for using HttpClient](httpclient-guidelines.md).
 
-:::code language="csharp" source="../snippets/httpclient/Program.cs" id="todoclient":::
+:::code language="csharp" source="../snippets/httpclient/Program.cs" id="sharedclient":::
 
 The preceding code:
 
-- Instantiates a new `HttpClient` instance with the object initializer syntax, and as a [using declaration](../../../csharp/whats-new/csharp-8.md#using-declarations).
+- Instantiates a new `HttpClient` instance as a `static` variable. As per the [guidelines](httpclient-guidelines.md), it's strongly recommended to reuse `HttpClient` instances during the application's lifecycle.
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
 This `HttpClient` instance will always use the base address when making subsequent requests. To apply additional configuration consider:

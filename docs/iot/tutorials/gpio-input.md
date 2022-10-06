@@ -74,7 +74,7 @@ Complete the following steps in your preferred development environment:
     The app displays text similar to the following:
 
     ```console
-    Initial status (05/10/2022 15:59:25): Ready ✅
+    Initial status (05/10/2022 15:59:25): READY ✅
     ```
 
 1. Disconnect pin 21 from ground. The console displays text similar to the following:

@@ -396,7 +396,7 @@ You can call `Deserialize` in the `Read` method:
 * Use the clone to read through the discriminator tokens.
 * Call `Deserialize` using the original `Reader` instance once you know the type you need. You can call `Deserialize` because the original `Reader` instance is still positioned to read the begin object token.
 
-A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](migrate-from-newtonsoft.md#required-properties). The following example shows a `Read` method that uses this alternative:
+A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](migrate-from-newtonsoft.md?pivots=dotnet-6-0#required-properties). The following example shows a `Read` method that uses this alternative:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
 

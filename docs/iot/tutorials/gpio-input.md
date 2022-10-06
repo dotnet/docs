@@ -60,7 +60,7 @@ Complete the following steps in your preferred development environment:
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
     - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `alert` string to the console. Otherwise, it writes the `ready` string.
     - `RegisterCallbackForPinValueChangedEvent()` registers an anonymous callback function for both the `PinEventTypes.Rising` and `PinEventTypes.Falling` events on the pin. These events correspond to pin states of `PinValue.High` and `PinValue.Low`, respectively.
-    - The callback function delegates to a method called `onPinEvent`. `onPinEvent` uses another ternary expression that also writes the corresponding `alert` or `ready` strings.
+    - The callback function delegates to a method called `OnPinEvent`. `OnPinEvent` uses another ternary expression that also writes the corresponding `alert` or `ready` strings.
     - The main thread sleeps indefinitely while waiting for pin events.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]

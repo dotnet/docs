@@ -32,7 +32,7 @@ Using handler As New HttpClientHandler()
         .Credentials = New NetworkCredential(UserName, SecurelyStoredPassword, Domain)
     End With
     Using client As New HttpClient(handler)
-        Dim result As String = client.GetStringAsync(myUri).Result
+        Dim result As String = client.GetStringAsync(myUri).GetAwaiter().GetResult()
         ' Do Other Stuff...
     End Using
 End Using
@@ -40,15 +40,13 @@ End Using
   
 ```csharp  
 string myUri = "http://www.contoso.com/";
-using (HttpClientHandler handler = new HttpClientHandler()
+using HttpClientHandler handler = new()
 {
     Credentials = new NetworkCredential(UserName, SecurelyStoredPassword, Domain),
-})
-using (HttpClient client = new HttpClient(handler))
-{
-    string result = client.GetStringAsync(myUri).Result;
-    // Do Other Stuff...
-} 
+};
+using HttpClient client = new(handler);
+string result = await client.GetStringAsync(myUri);
+// Do Other Stuff...
 ```  
   
  Applications that need to connect to Internet services using the credentials of the application user can do so with the user's default credentials, as shown in the following example.  
@@ -60,7 +58,7 @@ Using handler As New HttpClientHandler()
         .Credentials = CredentialCache.DefaultCredentials
     End With
     Using client As New HttpClient(handler)
-        Dim result As String = client.GetStringAsync(myUri).Result
+        Dim result As String = client.GetStringAsync(myUri).GetAwaiter().GetResult()
         ' Do Other Stuff...
     End Using
 End Using 
@@ -68,15 +66,13 @@ End Using
   
 ```csharp  
 string myUri = "http://www.contoso.com/";
-using (HttpClientHandler handler = new HttpClientHandler()
+using HttpClientHandler handler = new()
 {
     Credentials = CredentialCache.DefaultCredentials,
-})
-using (HttpClient client = new HttpClient(handler))
-{
-    string result = client.GetStringAsync(myUri).Result;
-    // Do Other Stuff...
-}
+};
+using HttpClient client = new(handler);
+string result = await client.GetStringAsync(myUri);
+// Do Other Stuff...
 ```  
   
  The negotiate authentication module determines whether the remote server is using NTLM or Kerberos authentication, and sends the appropriate response.  

@@ -81,7 +81,7 @@ All of the changes that take place inside the method affect the original array i
 
 ## Scope of references and values
 
-Methods can store the values of parameters in fields. When parameters are passed by value, that's always safe. Values are copied, and reference types are reachable when stored in a field. Passing parameters by reference safely requires the compiler to define when its safe to assign a reference to a new variable. For every expression, the compiler defines a *scope* that bounds access to an expression or variable. The compiler uses two scopes: *safe_to_escape* and *ref_safe_to_escape*.
+Methods can store the values of parameters in fields. When parameters are passed by value, that's always safe. Values are copied, and reference types are reachable when stored in a field. Passing parameters by reference safely requires the compiler to define when it's safe to assign a reference to a new variable. For every expression, the compiler defines a *scope* that bounds access to an expression or variable. The compiler uses two scopes: *safe_to_escape* and *ref_safe_to_escape*.
 
 - The *safe_to_escape* scope defines the scope where any expression can be safely accessed.
 - The *ref_safe_to_escape* scope defines the scope where a *reference* to any expressions can be safely accessed or modified

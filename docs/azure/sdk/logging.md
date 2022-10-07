@@ -152,7 +152,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
 There are scenarios in which [registering an Azure SDK library's client with the DI container](dependency-injection.md#register-client) is either impossible or unnecessary:
 
 - The Azure SDK library doesn't include an `IServiceCollection` extension method to register a client in the DI container.
-- Your app uses ASP.NET extension libraries that depend on other Azure SDK libraries. Examples of such ASP.NET extension libraries include:
+- Your app uses Azure extension libraries that depend on other Azure SDK libraries. Examples of such Azure extension libraries include:
   - [Azure Key Vault key encryptor for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme)
   - [Azure Key Vault secrets configuration provider](/dotnet/api/overview/azure/Extensions.AspNetCore.Configuration.Secrets-readme)
   - [Azure Blob Storage key store for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme)

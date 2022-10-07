@@ -23,7 +23,7 @@ sections:
       - question: |
            Why can't I collect dumps on macOS?
         answer: |
-            On macOS the use of `ptrace` requires the host of the target process to be properly entitled. See [Default Entitlements](../install/macos-notarization-issues.md#default-entitlements) for more information on the minimum set of entitlements we require.
+            On macOS the use of `ptrace` requires the host of the target process to be properly entitled. For information about the minimum required entitlements, see [Default entitlements](../install/macos-notarization-issues.md#default-entitlements).
       
       - question: |
           Where can I learn more about how I can leverage dumps to help diagnose problems in my .NET application?

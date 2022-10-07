@@ -16,7 +16,7 @@ With modern application development principles driving best practices, the <xref
 > If your app requires cookies, it might be better to avoid using <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 > [!IMPORTANT]
-> Lifetime management of `HttpClient`s created by `IHttpClientFactory` is completely different from ones created manually. The strategies are to use either **short-lived** clients created by `IHttpClientFactory` or **long-lived** clients with `PooledConnectionLifetime` set up. For more information, see [HttpClient lifetime management](#httpclient-lifetime-management) section and [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
+> Lifetime management of `HttpClient` instances created by `IHttpClientFactory` is completely different from instances created manually. The strategies are to use either **short-lived** clients created by `IHttpClientFactory` or **long-lived** clients with `PooledConnectionLifetime` set up. For more information, see the [HttpClient lifetime management](#httpclient-lifetime-management) section and [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## The `IHttpClientFactory` type
 
@@ -122,7 +122,7 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
 
 > [!IMPORTANT]
-> Using typed clients in singleton services can be dangerous. For more information, see [Using Typed clients in singleton services](#using-typed-clients-in-singleton-services) section.
+> Using typed clients in singleton services can be dangerous. For more information, see the [Using Typed clients in singleton services](#using-typed-clients-in-singleton-services) section.
 
 ### Generated clients
 
@@ -204,9 +204,10 @@ services.AddHttpClient("Named.Client")
 
 > [!IMPORTANT]
 > `HttpClient` instances created by `IHttpClientFactory` are intended to be **short-lived**.
-> 1. Recycling and recreating `HttpMessageHandler`'s when their lifetime expires is essential for `IHttpClientFactory` to ensure the handlers react to DNS changes. `HttpClient` is tied to a specific handler instance upon its creation, so new `HttpClient` instances should be requested in a timely manner to ensure the client will get the updated handler.
 >
-> 1. Disposing of such `HttpClient`s **created by the factory** will not lead to socket exhaustion, as its disposal **will not** trigger `HttpMessageHandler`'s disposal. `IHttpClientFactory` tracks and disposes of resources used to create `HttpClient` instances, specifically the `HttpMessageHandler`, as soon its lifetime expires and there's no `HttpClient` using it anymore.
+> - Recycling and recreating `HttpMessageHandler`'s when their lifetime expires is essential for `IHttpClientFactory` to ensure the handlers react to DNS changes. `HttpClient` is tied to a specific handler instance upon its creation, so new `HttpClient` instances should be requested in a timely manner to ensure the client will get the updated handler.
+>
+> - Disposing of such `HttpClient` instances **created by the factory** will not lead to socket exhaustion, as its disposal **will not** trigger disposal of the `HttpMessageHandler`. `IHttpClientFactory` tracks and disposes of resources used to create `HttpClient` instances, specifically the `HttpMessageHandler` instances, as soon their lifetime expires and there's no `HttpClient` using them anymore.
 
 Keeping a single `HttpClient` instance alive for a long duration is a common pattern that can be used as an **alternative** to `IHttpClientFactory`, however, this pattern requires additional setup, such as `PooledConnectionLifetime`. You can use either **long-lived** clients with `PooledConnectionLifetime`, or **short-lived** clients created by `IHttpClientFactory`. For information about which strategy to use in your app, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
@@ -246,13 +247,14 @@ There are several additional configuration options for controlling the `IHttpCli
 
 ## Using HttpClientFactory together with SocketsHttpHandler
 
-Since .NET Core 2.1, `SocketsHttpHandler` implementation of `HttpMessageHandler` was added, that allows configuring `PooledConnectionLifetime`. This setting is used to ensure that the handler will react to DNS changes, so using `SocketsHttpHandler` is considered to be an alternative to using `IHttpClientFactory`, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
+The `SocketsHttpHandler` implementation of `HttpMessageHandler` was added in .NET Core 2.1, which allows `PooledConnectionLifetime` to be configured. This setting is used to ensure that the handler reacts to DNS changes, so using `SocketsHttpHandler` is considered to be an alternative to using `IHttpClientFactory`. For more information, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
-However, `SocketsHttpHandler` and `IHttpClientFactory` can be used together, to benefit from configurability on both low level (e.g. using `LocalCertificateSelectionCallback` for dynamic certificate selection) and high level (e.g. leveraging DI integration and several client configurations).
+However, `SocketsHttpHandler` and `IHttpClientFactory` can be used together improve configurability. By using both of these APIs, you to benefit from configurability on both a low level (for example, using `LocalCertificateSelectionCallback` for dynamic certificate selection) and a high level (for example, leveraging DI integration and several client configurations).
 
-To do that, you need to
-1. Specify `SocketsHttpHandler` as `PrimaryHandler` and set up it's `PooledConnectionLifetime` (e.g. to a value that was previously in `HandlerLifetime`)
-2. As `SocketsHttpHandler` will handle connection pooling and recycling, then `IHttpClientFactory`-level handler recycling is not needed anymore, so it could be disabled by setting `HandlerLifetime` to `Timeout.InfiniteTimeSpan`.
+To use both APIs:
+
+1. Specify `SocketsHttpHandler` as `PrimaryHandler` and set up its `PooledConnectionLifetime` (for example, to a value that was previously in `HandlerLifetime`).
+1. As `SocketsHttpHandler` will handle connection pooling and recycling, then handler recycling at the `IHttpClientFactory` level is not needed anymore. You can disable it by setting `HandlerLifetime` to `Timeout.InfiniteTimeSpan`.
 
 ```csharp
 services.AddHttpClient(name)
@@ -260,24 +262,33 @@ services.AddHttpClient(name)
     {
         return new SocketsHttpHandler()
         {
-            PooledConnectionLifetime = TimeSpan.FromMinutes(handlerLifetimeInMinutes)
+            PooledConnectionLifetime = TimeSpan.FromMinutes(2)
         };
     })
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
 
-## Using Typed clients in singleton services
+## Using typed clients in singleton services
 
-When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient`s are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
+When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 
 However, with the _typed client_ approach, typed clients are transient objects usually injected into services. That may cause a problem because a typed client can be injected into a singleton service.
 
 > [!IMPORTANT]
-> Typed clients are expected to be **short-lived** in the same sense as `HttpClient`s created by `IHttpClientFactory`, see [`HttpClient` lifetime management](#httpclient-lifetime-management) section. As soon as a Typed client instance is created, `IHttpClientFactory` has no control over it. If a Typed client instance is captured in a singleton, it may prevent it from reacting to DNS changes, defeating one of the purposes of `IHttpClientFactory`.
+> Typed clients are expected to be **short-lived** in the same sense as `HttpClient` instances created by `IHttpClientFactory` (for more information, see [`HttpClient` lifetime management](#httpclient-lifetime-management)). As soon as a typed client instance is created, `IHttpClientFactory` has no control over it. If a typed client instance is captured in a singleton, it may prevent it from reacting to DNS changes, defeating one of the purposes of `IHttpClientFactory`.
 
-If you need to use `HttpClient`s in a singleton service, consider the following options:
-1. Use Named client approach instead, injecting `IHttpClientFactory` in the singleton service and recreating `HttpClient`s when nesessary.
-1. If you require a typed client approach, use `SocketsHttpHandler` with configured `PooledConnectionLifetime` as a primary handler. For more information on using `SocketsHttpHandler` with `IHttpClientFactory`, see [Using HttpClientFactory together with SocketsHttpHandler](#using-httpclientfactory-together-with-socketshttphandler) section.
+If you need to use `HttpClient` instances in a singleton service, consider the following options:
+
+- Use the _named client_ approach instead, injecting `IHttpClientFactory` in the singleton service and recreating `HttpClient` instances when necessary.
+- If you require the _typed client_ approach, use `SocketsHttpHandler` with configured `PooledConnectionLifetime` as a primary handler. For more information on using `SocketsHttpHandler` with `IHttpClientFactory`, see the section [Using HttpClientFactory together with SocketsHttpHandler](#using-httpclientfactory-together-with-socketshttphandler).
+
+## Message Handler Scopes in IHttpClientFactory
+
+`IHttpClientFactory` creates a separate DI scope per each `HttpMessageHandler` instance. These DI scopes are separate from application scopes (for example, ASP.NET incoming request scope, or a user-created manual DI scope), so they will **not** share scoped service instances. Message Handler scopes are tied to handler lifetime and can outlive application scopes, which can lead to, for example, reusing the same `HttpMessageHandler` instance with same injected scoped dependencies between several incoming requests.
+
+:::image type="content" source="media/httpclientfactory-scopes.png" lightbox="media/httpclientfactory-scopes.png" alt-text="Diagram showing two incoming request scopes and a separate message handler scope":::
+
+Users are strongly advised **not to cache scope-related information** inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
 ## See also
 

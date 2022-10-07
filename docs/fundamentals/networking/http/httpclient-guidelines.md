@@ -46,7 +46,7 @@ The connection pool for an <xref:System.Net.Http.HttpClient> is linked to its un
 
 ### HttpClient lifetime management
 
-To summarize recommended `HttpClient` use from the point of lifetime management, you should use either **long-lived** clients with `PooledConnectionLifetime` set up (.NET Core and .NET 5+) or **short-lived** clients created by `IHttpClientFactory`.
+To summarize recommended `HttpClient` use in terms of lifetime management, you should use either **long-lived** clients with `PooledConnectionLifetime` set up (.NET Core and .NET 5+) or **short-lived** clients created by `IHttpClientFactory`.
 
 To learn more about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
 

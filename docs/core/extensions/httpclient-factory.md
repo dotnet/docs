@@ -122,7 +122,7 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
 
 > [!IMPORTANT]
-> Using typed clients in singleton services can be dangerous. For more information, see the [Using Typed clients in singleton services](#using-typed-clients-in-singleton-services) section.
+> Using typed clients in singleton services can be dangerous. For more information, see the [Using Typed clients in singleton services](#use-typed-clients-in-singleton-services) section.
 
 ### Generated clients
 
@@ -268,7 +268,7 @@ services.AddHttpClient(name)
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
 
-## Using typed clients in singleton services
+## Use typed clients in singleton services
 
 When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 

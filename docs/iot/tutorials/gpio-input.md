@@ -29,7 +29,7 @@ In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect th
 
 Use the hardware components to build the circuit as depicted in the following diagram:
 
-:::image type="content" source="../media/rpi-jumper-21-gnd-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-jumper-21-gnd-thumb.png":::
+:::image type="content" source="../media/rpi-jumper-21-gnd-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-jumper-21-gnd.png":::
 
 The image above depicts a direct connection between a ground pin and pin 21.
 

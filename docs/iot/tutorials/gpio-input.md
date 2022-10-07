@@ -130,7 +130,7 @@ controller.OpenPin(pin, PinMode.InputPullDown);
 > [!IMPORTANT]
 > Make sure the code deployed on your Raspberry Pi includes this change before testing a laser tripwire. The program *does* work without it, but using the wrong input mode risks damage to your Raspberry Pi!
 
-:::image type="content" source="https://via.placeholder.com/600x400.png" alt-text="Animated GIF showing the laser tripwire":::
+:::image type="content" source="../media/laser-tripwire-animation.gif" alt-text="Animated GIF showing the laser tripwire" lightbox="../media/laser-tripwire-animation.gif":::
 
 ## Get the source code
 

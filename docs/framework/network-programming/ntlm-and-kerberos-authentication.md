@@ -32,7 +32,7 @@ Using handler As New HttpClientHandler()
         .Credentials = New NetworkCredential(UserName, SecurelyStoredPassword, Domain)
     End With
     Using client As New HttpClient(handler)
-        Dim result As String = client.GetStringAsync(myUri).GetAwaiter().GetResult()
+        Dim result As String = Await client.GetStringAsync(myUri)
         ' Do Other Stuff...
     End Using
 End Using
@@ -58,7 +58,7 @@ Using handler As New HttpClientHandler()
         .Credentials = CredentialCache.DefaultCredentials
     End With
     Using client As New HttpClient(handler)
-        Dim result As String = client.GetStringAsync(myUri).GetAwaiter().GetResult()
+        Dim result As String = Await client.GetStringAsync(myUri)
         ' Do Other Stuff...
     End Using
 End Using 

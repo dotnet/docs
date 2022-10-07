@@ -478,6 +478,43 @@ let printListWithOffsetPiped list1 =
     printfn $"A very long line to format the value: %d{elem}")
 ```
 
+In case the arguments of a lambda do not fit on a single line, or are multiline themselves, put them on the next line, indented by one level.
+
+```fsharp
+// ✔️ OK
+fun
+    (aVeryLongParameterName: AnEquallyLongTypeName)
+    (anotherVeryLongParameterName: AnotherLongTypeName)
+    (yetAnotherLongParameterName: LongTypeNameAsWell)
+    (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    // code starts here
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above to respect the maximum line length.
+fun (aVeryLongParameterName: AnEquallyLongTypeName) (anotherVeryLongParameterName: AnotherLongTypeName) (yetAnotherLongParameterName: LongTypeNameAsWell) (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    ()
+
+// ✔️ OK
+let useAddEntry () =
+    fun
+        (input:
+            {| name: string
+               amount: Amount
+               isIncome: bool
+               created: string |}) ->
+         // foo
+         bar ()
+
+// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+let useAddEntry () =
+    fun (input: {| name: string
+                   amount: Amount
+                   isIncome: bool
+                   created: string |}) ->
+        // foo
+        bar ()
+```
+
 ### Formatting arithmetic and binary expressions
 
 Always use white space around binary arithmetic expressions:
@@ -1718,6 +1755,54 @@ type C() =
 let complexFunctionPoorlyAnnotated (a :int) (b :int) (c:int) = a + b + c
 let simpleValuePoorlyAnnotated1:int = 1
 let simpleValuePoorlyAnnotated2 :int = 2
+```
+
+### Formatting multiline type annotations
+
+When a type annotation is long or multiline, put them on the next line, indented by one level.
+
+```fsharp
+type ExprFolder<'State> =
+    { exprIntercept: 
+        ('State -> Expr -> 'State) -> ('State -> Expr -> 'State -> 'State -> Exp -> 'State }
+        
+let UpdateUI
+    (model:
+#if NETCOREAPP2_1
+        ITreeModel
+#else
+        TreeModel
+#endif
+    )
+    (info: FileInfo) =
+    // code
+    ()
+
+let f
+    (x:
+        {|
+            a: Second
+            b: Metre
+            c: Kilogram
+            d: Ampere
+            e: Kelvin
+            f: Mole
+            g: Candela
+        |})
+    =
+    x.a
+
+type Sample
+    (
+        input: 
+            LongTupleItemTypeOneThing * 
+            LongTupleItemTypeThingTwo * 
+            LongTupleItemTypeThree * 
+            LongThingFour * 
+            LongThingFiveYow
+    ) =
+    class
+    end
 ```
 
 ### Formatting return type annotations

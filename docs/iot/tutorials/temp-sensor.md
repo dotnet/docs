@@ -58,6 +58,7 @@ Complete the following steps in your preferred development environment:
 
     ```dotnetcli
     dotnet new console -o SensorTutorial
+    cd SensorTutorial
     ```
 
 1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-iot-package.md)]

@@ -49,6 +49,7 @@ Complete the following steps in your preferred development environment:
 
     ```dotnetcli
     dotnet new console -o BlinkTutorial
+    cd BlinkTutorial
     ```
 
 1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-iot-package.md)]

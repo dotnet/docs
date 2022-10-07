@@ -64,6 +64,7 @@ Complete the following steps in your preferred development environment:
 
     ```dotnetcli
     dotnet new console -o AdcTutorial
+    cd AdcTutorial
     ```
 
 1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-iot-package.md)]

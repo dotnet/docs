@@ -363,10 +363,13 @@
       "subCapability": "LabelSync",
       "version": "1.0",
       "config": {
-        "taskName": "Synchronize OKR labels between issues/PRs",
+        "taskName": "Synchronize OKR and release labels between issues/PRs",
         "labelPatterns": [
           {
             "pattern": "okr-"
+          },
+          {
+            "pattern": ":checkered_flag: Release"
           }
         ]
       }

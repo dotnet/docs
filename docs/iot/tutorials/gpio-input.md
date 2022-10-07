@@ -107,7 +107,7 @@ Extending the previous example concept a bit further, let's take a look at how t
 > [!NOTE]
 > *Laser receiver sensor module* is the generic name applied to a common module found at many internet retailers. The device may vary in name or manufacturer, but should resemble this image.
 >
-> ![Image of a Laser Receiver Sensor Module](../media/laser-sensor-receiver-module.png)
+> :::image type="content" source="../media/laser-sensor-receiver-module.png" alt-text="Image of a Laser Receiver Sensor Module":::
 
 ### Connect laser tripwire hardware
 

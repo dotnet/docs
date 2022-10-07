@@ -95,7 +95,7 @@ Complete the following steps in your preferred development environment:
 
 Congratulations! You've used GPIO to detect input using the `Iot.Device.Bindings` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
 
-:::image type="content" source="../media/reed-switch-animation.gif" alt-text="Animated GIF demonstrating a magnetic reed switch opening and closing":::
+:::image type="content" source="../media/reed-switch-animation.gif" alt-text="Animated GIF demonstrating a magnetic reed switch opening and closing. The switch is exposed to a magnet, and the app displays READY. The magnet is removed, and the app displays ALERT. The action is then repeated.":::
 
 ## Laser tripwire
 
@@ -131,7 +131,7 @@ controller.OpenPin(pin, PinMode.InputPullDown);
 > [!IMPORTANT]
 > Make sure the code deployed on your Raspberry Pi includes this change before testing a laser tripwire. The program *does* work without it, but using the wrong input mode risks damage to your Raspberry Pi!
 
-:::image type="content" source="../media/laser-tripwire-animation.gif" alt-text="Animated GIF showing a demonstration of the laser tripwire":::
+:::image type="content" source="../media/laser-tripwire-animation.gif" alt-text="Animated GIF showing a demonstration of the laser tripwire. The laser emitter lights the laser sensor module, and the app displays READY. The laser beam is broken, and the app displays ALERT. The action is then repeated.":::
 
 ## Get the source code
 

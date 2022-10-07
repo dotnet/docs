@@ -60,8 +60,8 @@ Complete the following steps in your preferred development environment:
     - GPIO pin 21 is opened with  `PinMode.InputPullUp`.
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
     - The initial status is written to a console using a ternary expression. The pin's current state is read with `Read()`. If it's `PinValue.High`, it writes the `Alert` string to the console. Otherwise, it writes the `Ready` string.
-    - `RegisterCallbackForPinValueChangedEvent()` registers an anonymous callback function for both the `PinEventTypes.Rising` and `PinEventTypes.Falling` events on the pin. These events correspond to pin states of `PinValue.High` and `PinValue.Low`, respectively.
-    - The callback function delegates to a method called `OnPinEvent`. `OnPinEvent` uses another ternary expression that also writes the corresponding `Alert` or `Ready` strings.
+    - `RegisterCallbackForPinValueChangedEvent()` registers a callback function for both the `PinEventTypes.Rising` and `PinEventTypes.Falling` events on the pin. These events correspond to pin states of `PinValue.High` and `PinValue.Low`, respectively.
+    - The callback function points to a method called `OnPinEvent`. `OnPinEvent` uses another ternary expression that also writes the corresponding `Alert` or `Ready` strings.
     - The main thread sleeps indefinitely while waiting for pin events.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]
@@ -130,7 +130,7 @@ controller.OpenPin(pin, PinMode.InputPullDown);
 > [!IMPORTANT]
 > Make sure the code deployed on your Raspberry Pi includes this change before testing a laser tripwire. The program *does* work without it, but using the wrong input mode risks damage to your Raspberry Pi!
 
-:::image type="content" source="../media/laser-tripwire-animation.gif" alt-text="Animated GIF showing the laser tripwire" lightbox="../media/laser-tripwire-animation.gif":::
+:::image type="content" source="../media/laser-tripwire-animation.gif" alt-text="Animated GIF showing a demonstration of the laser tripwire":::
 
 ## Get the source code
 

@@ -113,7 +113,7 @@ Extending the previous example concept a bit further, let's take a look at how t
 
 Connect the components as detailed in following diagram.
 
-:::image type="content" source="../media/rpi-laser-tripwire-beam-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-laser-tripwire-beam.png":::
+:::image type="content" source="../media/rpi-laser-tripwire-beam-thumb.png" alt-text="A diagram showing a circuit that gets input from a laser receiver sensor module." lightbox="../media/rpi-laser-tripwire-beam.png":::
 
 Pay close attention to the 10K Ω resistors. These implement a [voltage divider](https://www.seeedstudio.com/blog/2019/10/09/voltage-dividers-everything-you-need-to-know/). This is because the laser receiver module outputs 5V to indicate the beam is broken. Raspberry Pi only supports up to 3.3V for GPIO input. Since sending the full 5V to the pin could damage the Raspberry Pi, the current from the receiver module is passed through a voltage divider to halve the voltage to 2.5V.
 

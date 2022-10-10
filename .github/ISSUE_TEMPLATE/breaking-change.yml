@@ -1,7 +1,10 @@
 name: ".NET breaking change"
 description: Report a change in .NET that breaks something that worked in a previous version. Intended mostly for product-team use.
 title: "[Breaking change]: "
-labels: breaking-change,Pri1,doc-idea
+labels:
+  - breaking-change
+  - Pri1
+  - doc-idea
 assignees:
  - gewarren
 body:
@@ -57,8 +60,6 @@ body:
       options:
         - label: "**Binary incompatible**: Existing binaries may encounter a breaking change in behavior, such as failure to load/execute or different run-time behavior."
         - label:  "**Source incompatible**: Source code may encounter a breaking change in behavior when targeting the new runtime/component/SDK, such as compile errors or different run-time behavior."
-    validations:
-      required: true
   - type: textarea
     id: reason
     attributes:

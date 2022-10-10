@@ -284,11 +284,11 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 
 ## Message Handler Scopes in IHttpClientFactory
 
-`IHttpClientFactory` creates a separate DI scope per each `HttpMessageHandler` instance. These DI scopes are separate from application scopes (for example, ASP.NET incoming request scope, or a user-created manual DI scope), so they will **not** share scoped service instances. Message Handler scopes are tied to handler lifetime and can outlive application scopes, which can lead to, for example, reusing the same `HttpMessageHandler` instance with same injected scoped dependencies between several incoming requests.
+`IHttpClientFactory` creates a separate DI scope per each `HttpMessageHandler` instance. These DI scopes are separate from application DI scopes (for example, ASP.NET incoming request scope, or a user-created manual DI scope), so they will **not** share scoped service instances. Message Handler scopes are tied to handler lifetime and can outlive application scopes, which can lead to, for example, reusing the same `HttpMessageHandler` instance with same injected scoped dependencies between several incoming requests.
 
-:::image type="content" source="media/httpclientfactory-scopes.png" lightbox="media/httpclientfactory-scopes.png" alt-text="Diagram showing two incoming request scopes and a separate message handler scope":::
+:::image type="content" source="media/httpclientfactory-scopes.png" alt-text="Diagram showing two application DI scopes and a separate message handler scope":::
 
-Users are strongly advised **not to cache scope-related information** inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
+Users are strongly advised **not to cache scope-related information** (such as data from `HttpContext`) inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
 ## See also
 

@@ -202,9 +202,6 @@ Up to this point, the above code snippet has only shown the example of performin
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <https://thepollyproject.azurewebsites.net/>
-  
-- **Using IHttpClientFactory without dependency injection (GitHub issue)**  
-  <https://github.com/dotnet/extensions/issues/1345>
 
 >[!div class="step-by-step"]
 >[Previous](implement-resilient-entity-framework-core-sql-connections.md)

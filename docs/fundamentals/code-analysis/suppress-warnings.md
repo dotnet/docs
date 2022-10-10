@@ -19,7 +19,7 @@ This article covers the various ways you can suppress warnings from code analysi
 
 ## Disable the rule
 
-By disabling the code analysis rule that's causing the warning, you disable the rule for your entire file or project (depending on the scope of the [configuration file](configuration-files.md) that you use). To disable the rule, set its severity to `none` in the configuration file.
+You can disable a rule that's causing a warning by setting its severity to `none` in an EditorConfig or AnalyzerConfig [configuration file](configuration-files.md). This action disables the rule for your entire file or project, depending on the scope of the configuration file that you use.
 
 ```ini
 [*.{cs,vb}]

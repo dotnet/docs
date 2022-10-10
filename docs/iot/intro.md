@@ -3,7 +3,7 @@ title: Develop apps for IoT devices with the .NET IoT Libraries
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
 ms.author: casoper
-ms.date: 03/04/2022
+ms.date: 10/07/2022
 ms.topic: overview
 ms.prod: dotnet
 ---
@@ -29,7 +29,7 @@ The .NET IoT Libraries are composed of two NuGet packages:
 `System.Device.Gpio` supports various protocols for interacting with low-level hardware pins to control devices. These include:
 
 - General-purpose I/O (GPIO)
-- Inter-Integrated Circuit (I2C)
+- Inter-Integrated Circuit (I<sup>2</sup>C)
 - Serial Peripheral Interface (SPI)
 - Pulse Width Modulation (PWM)
 - Serial port
@@ -60,7 +60,7 @@ Commonly used device bindings include:
 
 `System.Device.Gpio` is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
 
-PC platforms are supported via the use of a USB to SPI/I2C bridge.
+PC platforms are supported via the use of a USB to SPI/I<sup>2</sup>C bridge.
 
 > [!IMPORTANT]
 > .NET is not supported on ARMv6 architecture devices, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.

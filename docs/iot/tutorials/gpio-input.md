@@ -3,7 +3,7 @@ title: Use GPIO for binary input
 description: Learn how to use GPIO for binary input with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 10/04/2022
+ms.date: 10/07/2022
 ms.topic: tutorial
 ms.prod: dotnet
 recommendations: false
@@ -29,7 +29,7 @@ In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect th
 
 Use the hardware components to build the circuit as depicted in the following diagram:
 
-:::image type="content" source="../media/rpi-jumper-21-gnd-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-jumper-21-gnd-thumb.png":::
+:::image type="content" source="../media/rpi-jumper-21-gnd-thumb.png" alt-text="A diagram showing a circuit that connects a ground pin to pin 21." lightbox="../media/rpi-jumper-21-gnd.png":::
 
 The image above depicts a direct connection between a ground pin and pin 21.
 
@@ -93,7 +93,7 @@ Complete the following steps in your preferred development environment:
 
 1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-Congratulations! You've used GPIO to detect input using the `Iot.Device.Bindings` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
+Congratulations! You've used GPIO to detect input using the `System.Device.Gpio` NuGet package! There are many uses for this type of input. This example can be used with any scenario where a switch connects or breaks a circuit. Here's an example using it with a magnetic reed switch, which is often used to detect open doors or windows.
 
 :::image type="content" source="../media/reed-switch-animation.gif" alt-text="Animated GIF demonstrating a magnetic reed switch opening and closing. The switch is exposed to a magnet, and the app displays READY. The magnet is removed, and the app displays ALERT. The action is then repeated.":::
 
@@ -112,7 +112,7 @@ Extending the previous example concept a bit further, let's take a look at how t
 
 ### Connect laser tripwire hardware
 
-Connect the components as detailed in following diagram.
+Connect the components as detailed in the following diagram.
 
 :::image type="content" source="../media/rpi-laser-tripwire-beam-thumb.png" alt-text="A diagram showing a circuit that gets input from a laser receiver sensor module." lightbox="../media/rpi-laser-tripwire-beam.png":::
 

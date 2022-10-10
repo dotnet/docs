@@ -19,3 +19,15 @@ static partial class Program
         EvaluateText("deftones");
     }
 }
+
+static partial class Program
+{
+    [GeneratedRegex(@"(a|bc)d")]
+    private static partial Regex Example();
+
+    [GeneratedRegex("[ab]*[bc]")]
+    private static partial Regex AnotherExample();
+
+    [GeneratedRegex("Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday")]
+    private static partial Regex DaysOfWeek();
+}

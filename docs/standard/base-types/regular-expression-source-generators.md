@@ -67,159 +67,11 @@ But as can be seen, it's not just doing `new Regex(...)`. Rather, the source gen
 > [!TIP]
 > In Visual Studio, select the project node in **Solution Explorer**, then expand **Dependencies** > **Analyzers** > **System.Text.RegularExpressions.Generator** > **System.Text.RegularExpressions.Generator.RegexGenerator** > _RegexGenerator.g.cs_.
 
-You can set breakpoints in it, you can step through it, and you can use it as a learning tool to understand exactly how the regex engine is processing your pattern and your input. The generator even spits out XML comments in order to help make the expression understandable at a glance and at the usage site.
+You can set breakpoints in it, you can step through it, and you can use it as a learning tool to understand exactly how the regex engine is processing your pattern and your input. The generator even spits out XML comments to help make the expression understandable at a glance and at the usage site.
 
 :::image type="content" source="media/regular-expression-source-generators/xml-comments.png" alt-text="Generated XML comments describing regex":::
 
-The initial creation of the source generator was a straight port of the `RegexCompiler` used internally to implement `RegexOptions.Compiled`; line-for-line, it would essentially just emit a C# version of the IL that was being emitted. Let's take a simple example:
-
-```csharp
-[RegexGenerator(@"(a|bc)d")]
-public static partial Regex Example();
-```
-
-Here's what the initial incarnation of the source generator emitted for the core matching routine:
-
-```csharp
-protected override void Go()
-{
-    string runtext = base.runtext!;
-    int runtextbeg = base.runtextbeg;
-    int runtextend = base.runtextend;
-    int runtextpos = base.runtextpos;
-    int[] runtrack = base.runtrack!;
-    int runtrackpos = base.runtrackpos;
-    int[] runstack = base.runstack!;
-    int runstackpos = base.runstackpos;
-    int tmp1, tmp2, ch;
-
-    // 000000 *Lazybranch       addr = 20
-    L0:
-    runtrack[--runtrackpos] = runtextpos;
-    runtrack[--runtrackpos] = 0;
-
-    // 000002 *Setmark
-    L1:
-    runstack[--runstackpos] = runtextpos;
-    runtrack[--runtrackpos] = 1;
-
-    // 000003 *Setmark
-    L2:
-    runstack[--runstackpos] = runtextpos;
-    runtrack[--runtrackpos] = 1;
-
-    // 000004 *Lazybranch       addr = 10
-    L3:
-    runtrack[--runtrackpos] = runtextpos;
-    runtrack[--runtrackpos] = 2;
-
-    // 000006  One              'a'
-    L4:
-    if (runtextpos >= runtextend || runtext[runtextpos++] != 97)
-    {
-        goto Backtrack;
-    }
-                    
-    // 000008 *Goto             addr = 12
-    L5:
-    goto L7;
-
-    // 000010  Multi            "bc"
-    L6:
-    if (runtextend - runtextpos < 2 ||
-        runtext[runtextpos] != 'b' ||
-        runtext[runtextpos + 1] != 'c')
-    {
-        goto Backtrack;
-    }
-    runtextpos += 2;
-
-    // 000012 *Capturemark      index = 1
-    L7:
-    tmp1 = runstack[runstackpos++];
-    base.Capture(1, tmp1, runtextpos);
-    runtrack[--runtrackpos] = tmp1;
-    runtrack[--runtrackpos] = 3;
-
-    // 000015  One              'd'
-    L8:
-    if (runtextpos >= runtextend || runtext[runtextpos++] != 100)
-    {
-        goto Backtrack;
-    }
-
-    // 000017 *Capturemark      index = 0
-    L9:
-    tmp1 = runstack[runstackpos++];
-    base.Capture(0, tmp1, runtextpos);
-    runtrack[--runtrackpos] = tmp1;
-    runtrack[--runtrackpos] = 3;
-                    
-    // 000020  Stop
-    L10:
-    base.runtextpos = runtextpos;
-    return;
-
-    Backtrack:
-    int limit = base.runtrackcount * 4;
-    if (runstackpos < limit)
-    {
-        base.runstackpos = runstackpos;
-        base.DoubleStack(); // might change runstackpos and runstack
-        runstackpos = base.runstackpos;
-        runstack = base.runstack!;
-    }
-    if (runtrackpos < limit)
-    {
-        base.runtrackpos = runtrackpos;
-        base.DoubleTrack(); // might change runtrackpos and runtrack
-        runtrackpos = base.runtrackpos;
-        runtrack = base.runtrack!;
-    }
-                    
-    switch (runtrack[runtrackpos++])
-    {
-        case 0:
-        {
-            // 000000 *Lazybranch       addr = 20
-            runtextpos = runtrack[runtrackpos++];
-            goto L10;
-        }
-                        
-        case 1:
-        {
-            // 000002 *Setmark
-            runstackpos++;
-            goto Backtrack;
-        }
-                        
-        case 2:
-        {
-            // 000004 *Lazybranch       addr = 10
-            runtextpos = runtrack[runtrackpos++];
-            goto L6;
-        }
-                        
-        case 3:
-        {
-            // 000012 *Capturemark      index = 1
-            runstack[--runstackpos] = runtrack[runtrackpos++];
-            base.Uncapture();
-            goto Backtrack;
-        }
-                        
-        default:
-        {
-            global::System.Diagnostics.Debug.Fail($"Unexpected backtracking state {runtrack[runtrackpos - 1]}");
-            break;
-        }
-    }
-}
-```
-
-That's... intense. But it's the equivalent of what `RegexCompiler` was producing, essentially walking through the operators/operands created for the interpreter and emitting code for each. There are multiple issues with this. First, it's mostly unintelligible. If one of the goals of the source generator is to emit debuggable code, this largely fails at that goal, as even for someone deeply knowledgeable about regular expressions, this isn't going to be very meaningful. Second, there are performance issues; for example, every operation involves pushing and popping state from a "runstack". And third, this loses out on additional possible optimizations, such as being able to use vectorized operations as part of handling specific constructs in the pattern; with this lowered opcode/operand representation, we lose much of the information that could enable the compiler or source generator to add useful improvements based on knowledge of the initial tree.
-
-As such, for .NET 7, after this initial incarnation of the source generator, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. In .NET 5, we experimented with an alternative approach, and for simple patterns that didn't involve any backtracking, the `RegexCompiler` could emit code that was much cleaner, the primary goal being performance. That approach has now been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still mapping mostly 1:1 with each other, following the new approach.
+The initial creation of the source generator was a straight port of the `RegexCompiler` used internally to implement `RegexOptions.Compiled`; line-for-line, it would essentially just emit a C# version of the IL that was being emitted. With .NET 7, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. In .NET 5, an experimental alternative approach where simple patterns that didn't involve any backtracking, the `RegexCompiler` could emit code that was much cleaner, the primary goal being performance. That approach has now been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still map mostly 1:1 with each other, following the new approach.
 
 Now, here's what the source generator outputs for that same method (which has been renamed) today:
 
@@ -283,6 +135,16 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
     base.runtextpos = pos;
     base.Capture(0, matchStart, pos);
     return true;
+
+    // <summary>Undo captures until it reaches the specified capture position.</summary>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    void UncaptureUntil(int capturePosition)
+    {
+        while (base.Crawlpos() > capturePosition)
+        {
+            base.Uncapture();
+        }
+    }
 }
 ```
 
@@ -295,15 +157,15 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
     int matchStart = pos;
     int charloop_starting_pos = 0, charloop_ending_pos = 0;
     ReadOnlySpan<char> slice = inputSpan.Slice(pos);
-
+    
     // Match a character in the set [ab] greedily any number of times.
     //{
         charloop_starting_pos = pos;
-                            
-        int iteration = 0;
-        while ((uint)iteration < (uint)slice.Length && (((uint)slice[iteration]) - 'a' <= (uint)('b' - 'a')))
+
+        int iteration = slice.IndexOfAnyExcept('a', 'b');
+        if (iteration < 0)
         {
-            iteration++;
+            iteration = slice.Length;
         }
 
         slice = slice.Slice(iteration);
@@ -320,7 +182,9 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
         }
 
         if (charloop_starting_pos >= charloop_ending_pos ||
-            (charloop_ending_pos = inputSpan.Slice(charloop_starting_pos, charloop_ending_pos - charloop_starting_pos).LastIndexOfAny('b', 'c')) < 0)
+            (charloop_ending_pos = inputSpan.Slice(
+                charloop_starting_pos, charloop_ending_pos - charloop_starting_pos)
+                .LastIndexOfAny('b', 'c')) < 0)
         {
             return false; // The input didn't match.
         }
@@ -338,7 +202,7 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
     }
 
     // Match a character in the set [bc].
-    if (slice.IsEmpty || (((uint)slice[0]) - 'b' > (uint)('c' - 'b')))
+    if (slice.IsEmpty || !char.IsBetween(slice[0], 'b', 'c'))
     {
         goto CharLoopBacktrack;
     }
@@ -483,7 +347,7 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
                 }
 
                 break;
-
+                
             default:
                 return false; // The input didn't match.
         }
@@ -496,7 +360,7 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
 }
 ```
 
-Note how `Thursday` was reordered to be just after `Tuesday`, and how for both the `Tuesday`/`Thursday` pair and the `Saturday`/`Sunday` pair, we end up with multiple levels of switches. In the extreme, if you were to create a long alternation of many different words, the source generator would end up emitting the logical equivalent of a trie, reading each character and `switch`'ing to the branch for handling the remainder of the word.
+Take notice of how `Thursday` was reordered to be just after `Tuesday`, and how for both the `Tuesday`/`Thursday` pair and the `Saturday`/`Sunday` pair, we end up with multiple levels of switches. In the extreme, if you were to create a long alternation of many different words, the source generator would end up emitting the logical equivalent of a trie, reading each character and `switch`'ing to the branch for handling the remainder of the word.
 
 At the same time, the source generator has other issues to contend with that simply don't exist when outputting to IL directly. If you look a couple of code examples back, you can see some braces somewhat strangely commented out. That's not a mistake. The source generator is recognizing that, if those braces weren't commented out, the structure of the backtracking is relying on jumping from outside of a scope to a label defined inside of that scope; such a label would not be visible to such a `goto` and the code would fail to compile. Thus, the source generator needs to avoid there actually being a scope in the way. In some cases, it'll simply comment out the scope as was done here. In other cases where that's not possible, it may sometimes avoid constructs that require scopes (e.g. a multi-statement `if` block) if doing so would be problematic.
 
@@ -506,7 +370,7 @@ The source generator handles everything `RegexCompiler` handles, with one except
 
 Also, neither `RegexCompiler` nor the source generator support the new `RegexOptions.NonBacktracking`. If you specify `RegexOptions.Compiled | RegexOptions.NonBacktracking`, the `Compiled` flag will just be ignored, and if you specify `NonBacktracking` to the source generator, it will similarly fall back to caching a regular `Regex` instance. (It's possible the source generator will support `NonBacktracking` as well in the future, but that's unlikely to happen for .NET 7.)
 
-Finally, the $10 million dollar question: when should you use the source generator?  The general guidance is, if you can use it, use it. If you're using `Regex` today in C# with arguments known at compile-time, and especially if you're already using `RegexOptions.Compiled` (because the regex has been identified as a hot spot that would benefit from faster throughput), you should prefer to use the source generator. The source generator will give your regex all the throughput benefits of `RegexOptions.Compiled`, the startup benefits of not having to do all the regex parsing, analysis, and compilation at runtime, the option of using ahead-of-time compilation with the code generated for the regex, better debugability and understanding of the regex, and even the possibility to reduce the size of your trimmed app by trimming out large swaths of code associated with `RegexCompiler` (and potentially even reflection emit itself). And even if used with an option like `RegexOptions.NonBacktracking` for which it can't yet generate a custom implementation, it will still helpfully emit caching, XML comments describing the implementation, and so on, such that it's still valuable. The main downside of the source generator is that it is emitting additional code into your assembly, so there's the potential for increased size; the more regexes in your app and the larger they are, the more code will be emitted for them. In some situations, just as `RegexOptions.Compiled` may be unnecessary, so too may be the source generator, e.g. if you have a regex that's needed only rarely and for which throughput doesn't matter, it could be more beneficial to just rely on the interpreter for that sporadic usage. However, we're so confident in the general "if you can use it, use it" guidance that .NET 7 will also include an analyzer that identifies use of `Regex` that could be converted to the source generator, and a fixer that does the conversion for you:
+Finally, the 10 million dollar question: when should you use the source generator?  The general guidance is if you can use it, use it. If you're using `Regex` today in C# with arguments known at compile-time, and especially if you're already using `RegexOptions.Compiled` (because the regex has been identified as a hot spot that would benefit from faster throughput), you should prefer to use the source generator. The source generator will give your regex all the throughput benefits of `RegexOptions.Compiled`, the startup benefits of not having to do all the regex parsing, analysis, and compilation at runtime, the option of using ahead-of-time compilation with the code generated for the regex, better debugability and understanding of the regex, and even the possibility to reduce the size of your trimmed app by trimming out large swaths of code associated with `RegexCompiler` (and potentially even reflection emit itself). And even if used with an option like `RegexOptions.NonBacktracking` for which it can't yet generate a custom implementation, it will still helpfully emit caching, XML comments describing the implementation, and so on, such that it's still valuable. The main downside of the source generator is that it is emitting additional code into your assembly, so there's the potential for increased size; the more regexes in your app and the larger they are, the more code will be emitted for them. In some situations, just as `RegexOptions.Compiled` may be unnecessary, so too may be the source generator, e.g. if you have a regex that's needed only rarely and for which throughput doesn't matter, it could be more beneficial to just rely on the interpreter for that sporadic usage. However, we're so confident in the general "if you can use it, use it" guidance that .NET 7 will also include an analyzer that identifies use of `Regex` that could be converted to the source generator, and a fixer that does the conversion for you:
 
 :::image type="content" source="media/regular-expression-source-generators/convert-to-regexgenerator.png" alt-text="RegexGenerator analyzer and fixer":::
 

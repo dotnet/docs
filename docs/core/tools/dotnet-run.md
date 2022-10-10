@@ -53,8 +53,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--`**
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.

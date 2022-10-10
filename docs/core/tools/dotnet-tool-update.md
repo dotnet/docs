@@ -52,8 +52,6 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]

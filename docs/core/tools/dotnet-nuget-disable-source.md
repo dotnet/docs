@@ -31,8 +31,6 @@ The `dotnet nuget disable source` command disables an existing source in your Nu
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 ## Examples

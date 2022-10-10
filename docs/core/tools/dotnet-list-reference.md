@@ -31,8 +31,6 @@ The `dotnet list reference` command provides a convenient option to list project
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples

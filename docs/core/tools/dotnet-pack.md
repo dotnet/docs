@@ -59,8 +59,6 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`--force`**

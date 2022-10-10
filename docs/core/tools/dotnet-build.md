@@ -78,8 +78,6 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]

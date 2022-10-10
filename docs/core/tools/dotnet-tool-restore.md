@@ -29,8 +29,6 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]

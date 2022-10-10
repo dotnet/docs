@@ -44,8 +44,6 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--certificate-path <PATH>`**
 
   Specifies the file path to the certificate to be used in signing the package.

@@ -35,8 +35,6 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 ## Commands
 
-<!-- markdownlint-disable MD012 -->
-
 - **`https`**
 
   `dotnet dev-certs` has only one command: `https`. The `dotnet dev-certs https` command with no options checks if a development certificate is present in the current user's certificate store on the machine. If the command finds a development certificate, it displays a message like the following example:

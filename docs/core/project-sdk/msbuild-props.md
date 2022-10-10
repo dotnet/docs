@@ -125,23 +125,6 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
 </PropertyGroup>
 ```
 
-## Build output properties
-
-- [CopyDebugSymbolFilesFromPackages](#copydebugsymbolfilesfrompackages)
-- [CopyDocumentationFilesFromPackages](#copydocumentationfilesfrompackages)
-
-### CopyDebugSymbolFilesFromPackages
-
-When this property is set to `true`, all symbol files (also known as PDB files) from `PackageReference` items in the project are copied to the build output. These files can provide more informative stack traces for exceptions and make memory dumps and traces of the running application easier to understand. However, including these files results in an increased deployment bundle size.
-
-This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
-
-### CopyDocumentationFilesFromPackages
-
-When this property is set to `true`, all generated XML documentation files from `PackageReference` items in the project are copied to the build output. Note that enabling this feature will result in increased deployment bundle size.
-
-This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
-
 ## Package properties
 
 - [Descriptive properties](#descriptive-properties)
@@ -469,10 +452,12 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 | `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
 | `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
 
-## Compilation-related properties
+## Build-related properties
 
 The following MSBuild properties are documented in this section:
 
+- [CopyDebugSymbolFilesFromPackages](#copydebugsymbolfilesfrompackages)
+- [CopyDocumentationFilesFromPackages](#copydocumentationfilesfrompackages)
 - [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
 - [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
@@ -482,6 +467,18 @@ The following MSBuild properties are documented in this section:
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
+
+### CopyDebugSymbolFilesFromPackages
+
+When this property is set to `true`, all symbol files (also known as PDB files) from `PackageReference` items in the project are copied to the build output. These files can provide more informative stack traces for exceptions and make memory dumps and traces of the running application easier to understand. However, including these files results in an increased deployment bundle size.
+
+This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
+
+### CopyDocumentationFilesFromPackages
+
+When this property is set to `true`, all generated XML documentation files from `PackageReference` items in the project are copied to the build output. Note that enabling this feature will result in increased deployment bundle size.
+
+This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
 
 ### DisableImplicitFrameworkDefines
 

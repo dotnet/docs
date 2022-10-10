@@ -73,7 +73,7 @@ You can set breakpoints in it, you can step through it, and you can use it as a 
 
 :::image type="content" source="media/regular-expression-source-generators/xml-comments.png" lightbox="media/regular-expression-source-generators/xml-comments.png" alt-text="Generated XML comments describing regex":::
 
-## Inside the source generated files
+## Inside the source-generated files
 
 The initial creation of the source generator was a straight port of the `RegexCompiler` used internally to implement `RegexOptions.Compiled`; line-for-line, it would essentially just emit a C# version of the IL that was being emitted. With .NET 7, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. In .NET 5, an experimental alternative approach where simple patterns that didn't involve any backtracking, the `RegexCompiler` could emit code that was much cleaner, the primary goal being performance. That approach has now been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still map mostly 1:1 with each other, following the new approach.
 

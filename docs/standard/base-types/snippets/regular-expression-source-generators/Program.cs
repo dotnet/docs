@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 
 static partial class Program
-{ 
+{
     private static readonly Regex s_abcOrDefGeneratedRegex = AbcOrDefGeneratedRegex();
 
     [GeneratedRegex(
@@ -45,14 +45,20 @@ static partial class Program
 static file partial class Program
 {
     [GeneratedRegex(pattern: @"(a|bc)d")]
-    private static partial Regex Example();
+    private static partial Regex ExampleRegex();
 
     [GeneratedRegex(pattern: "[ab]*[bc]")]
-    private static partial Regex AnotherExample();
+    private static partial Regex AnotherExampleRegex();
 
     [GeneratedRegex(pattern: "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday")]
-    private static partial Regex DaysOfWeek();
+    private static partial Regex DaysOfWeekRegex();
 
     [GeneratedRegex(pattern: "")]
-    private static partial Regex Blank();
+    private static partial Regex BlankRegex();
+
+    [GeneratedRegex(pattern: @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$")]
+    private static partial Regex EmailRegex();
+
+    [GeneratedRegex(pattern: "(\\w)\\1")]
+    private static partial Regex WordWithBacktrackingRegex();
 }

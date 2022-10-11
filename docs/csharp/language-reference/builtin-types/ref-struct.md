@@ -50,9 +50,10 @@ For more information, see the [Structs](~/_csharpstandard/standard/structs.md) s
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 
+- [C# 7.2 - Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
+- [C# 11 - ref fields and scoped](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md)
+
 ## See also
 
 - [C# reference](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
-- [C# 7.2 - Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
-- [C# 11 - ref fields and scoped](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md)

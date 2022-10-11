@@ -368,21 +368,8 @@ Take notice of how `Thursday` was reordered to be just after `Tuesday`, and how 
 
 [^1]: https://en.wikipedia.org/wiki/Trie "Trie - Wikipedia"
 
-```mermaid
-classDiagram
-class FileNameUtilities{
-    -char DirectorySeparatorChar$
-    -char AltDirectorySeparatorChar$
-    -char VolumeSeparatorChar$
-    +IsFileName(string? path)$ bool
-    +IndexOfExtension(string? path)$ int
-    +GetExtension(string? path)$ string?
-    +RemoveExtension(string? path)$ string?
-    +ChangeExtension(string? path, string? extension)$ string?
-    +IndexOfFileName(string? path)$ int
-    +GetFileName(string? path, bool includeExtension = true)$ string?
-}
-```
+Trie
+: In computer science, a trie, also called digital tree or prefix tree, is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set. These keys are most often strings, with links between nodes defined not by the entire key, but by individual characters. In order to access a key (to recover its value, change it, or remove it), the trie is traversed depth-first, following the links between nodes, which represent each character in the key.
 
 At the same time, the source generator has other issues to contend with that simply don't exist when outputting to IL directly. If you look a couple of code examples back, you can see some braces somewhat strangely commented out. That's not a mistake. The source generator is recognizing that, if those braces weren't commented out, the structure of the backtracking is relying on jumping from outside of the scope to a label defined inside of that scope; such a label would not be visible to such a `goto` and the code would fail to compile. Thus, the source generator needs to avoid there being a scope in the way. In some cases, it'll simply comment out the scope as was done here. In other cases where that's not possible, it may sometimes avoid constructs that require scopes (such as a multi-statement `if` block) if doing so would be problematic.
 

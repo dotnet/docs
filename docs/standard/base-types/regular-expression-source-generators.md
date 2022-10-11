@@ -368,6 +368,22 @@ Take notice of how `Thursday` was reordered to be just after `Tuesday`, and how 
 
 [^1]: https://en.wikipedia.org/wiki/Trie "Trie - Wikipedia"
 
+```mermaid
+classDiagram
+class FileNameUtilities{
+    -char DirectorySeparatorChar$
+    -char AltDirectorySeparatorChar$
+    -char VolumeSeparatorChar$
+    +IsFileName(string? path)$ bool
+    +IndexOfExtension(string? path)$ int
+    +GetExtension(string? path)$ string?
+    +RemoveExtension(string? path)$ string?
+    +ChangeExtension(string? path, string? extension)$ string?
+    +IndexOfFileName(string? path)$ int
+    +GetFileName(string? path, bool includeExtension = true)$ string?
+}
+```
+
 At the same time, the source generator has other issues to contend with that simply don't exist when outputting to IL directly. If you look a couple of code examples back, you can see some braces somewhat strangely commented out. That's not a mistake. The source generator is recognizing that, if those braces weren't commented out, the structure of the backtracking is relying on jumping from outside of the scope to a label defined inside of that scope; such a label would not be visible to such a `goto` and the code would fail to compile. Thus, the source generator needs to avoid there being a scope in the way. In some cases, it'll simply comment out the scope as was done here. In other cases where that's not possible, it may sometimes avoid constructs that require scopes (such as a multi-statement `if` block) if doing so would be problematic.
 
 The source generator handles everything `RegexCompiler` handles, with one exception. As with handling `RegexOptions.IgnoreCase`, the implementations now use a casing table to generate sets at construction time, and how `IgnoreCase` backreference matching needs to consult that casing table. That table is internal to `System.Text.RegularExpressions.dll`, and for now, at least, the code external to that assembly (including code emitted by the source generator) does not have access to it. That makes handling `IgnoreCase` backreferences a challenge in the source generator. We could choose to also output the casing table if it's required, but it's quite a hefty chunk of data to blit into consuming assemblies. So at least for now, `IgnoreCase` backreferences are the one construct not supported by the source generator that is supported by `RegexCompiler`. If you try to use a pattern that has one of these (which is rare), the source generator won't emit a custom implementation and will instead fall back to caching a regular `Regex` instance:

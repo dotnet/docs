@@ -85,8 +85,6 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**

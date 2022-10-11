@@ -288,7 +288,7 @@ For more information on using the registry to configure `AppContext`, see ["AppC
 
 ## Safety with regard to untrusted input
 
-While `DataSet` and `DataTable` do impose default limitations on the types that are allowed to be present while deserializing XML payloads, __`DataSet` and `DataTable` are in general not safe when populated with untrusted input.__ The following is a non-exhaustive list of ways that a `DataSet` or `DataTable` instance might read untrusted input.
+While `DataSet` and `DataTable` do impose default limitations on the types that are allowed to be present while deserializing XML payloads, **`DataSet` and `DataTable` are in general not safe when populated with untrusted input.** The following is a non-exhaustive list of ways that a `DataSet` or `DataTable` instance might read untrusted input.
 
 * A `DataAdapter` references a database, and the `DataAdapter.Fill` method is used to populate a `DataSet` with the contents of a database query.
 * The `DataSet.ReadXml` or `DataTable.ReadXml` method is used to read an XML file containing column and row information.

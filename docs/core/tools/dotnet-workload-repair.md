@@ -31,8 +31,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]

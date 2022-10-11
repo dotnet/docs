@@ -26,8 +26,6 @@ The `dotnet nuget trust` command manages the trusted signers. By default, NuGet 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands

@@ -36,8 +36,6 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-f|--framework <FRAMEWORK>`**

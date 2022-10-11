@@ -2,7 +2,7 @@
 name: 'update dependabot.yml'
 # When to run this action:
 # - Scheduled to run at 5 AM every Monday.
-# - Manually runable from the GitHub UI with a reason
+# - Manually runnable from the GitHub UI with a reason
 on:
   schedule:
   - cron: '0 5 * * 1' # 5 AM every Monday.
@@ -19,11 +19,11 @@ jobs:
     # Checkout the repo into the workspace within the VM
     steps:
     - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 7.0.x
-        dotnet-quality: 'preview'
+    # - name: Setup .NET
+    #   uses: actions/setup-dotnet@v3
+    #   with:
+    #     dotnet-version: 7.0.x
+    #     dotnet-quality: 'preview'
     # If triggered manually, print the reason why
     - name: 'Print manual run reason'
       if: ${{ github.event_name == 'workflow_dispatch' }}

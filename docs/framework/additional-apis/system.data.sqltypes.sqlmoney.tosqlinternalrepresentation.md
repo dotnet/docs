@@ -16,8 +16,8 @@ api_type:
 # SqlMoney.ToSqlInternalRepresentation Method
 
 Returns the value of this `SqlMoney` instance scaled by a ten-thousandth of a currency unit.
-For example, if the current `SqlMoney` instance represents __2__ currency units, the
-`ToSqlInternalRepresentation` method will return __20000__.
+For example, if the current `SqlMoney` instance represents **2** currency units, the
+`ToSqlInternalRepresentation` method will return **20000**.
 
 If this `SqlMoney` instance represents a null value (see <xref:System.Data.SqlTypes.SqlMoney.IsNull>), calling this method will throw a <xref:System.Data.SqlTypes.SqlNullValueException>.
 

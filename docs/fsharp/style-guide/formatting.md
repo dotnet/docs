@@ -478,6 +478,43 @@ let printListWithOffsetPiped list1 =
     printfn $"A very long line to format the value: %d{elem}")
 ```
 
+In case the arguments of a lambda do not fit on a single line, or are multiline themselves, put them on the next line, indented by one level.
+
+```fsharp
+// ✔️ OK
+fun
+    (aVeryLongParameterName: AnEquallyLongTypeName)
+    (anotherVeryLongParameterName: AnotherLongTypeName)
+    (yetAnotherLongParameterName: LongTypeNameAsWell)
+    (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    // code starts here
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above to respect the maximum line length.
+fun (aVeryLongParameterName: AnEquallyLongTypeName) (anotherVeryLongParameterName: AnotherLongTypeName) (yetAnotherLongParameterName: LongTypeNameAsWell) (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    ()
+
+// ✔️ OK
+let useAddEntry () =
+    fun
+        (input:
+            {| name: string
+               amount: Amount
+               isIncome: bool
+               created: string |}) ->
+         // foo
+         bar ()
+
+// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+let useAddEntry () =
+    fun (input: {| name: string
+                   amount: Amount
+                   isIncome: bool
+                   created: string |}) ->
+        // foo
+        bar ()
+```
+
 ### Formatting arithmetic and binary expressions
 
 Always use white space around binary arithmetic expressions:
@@ -1720,6 +1757,54 @@ let simpleValuePoorlyAnnotated1:int = 1
 let simpleValuePoorlyAnnotated2 :int = 2
 ```
 
+### Formatting multiline type annotations
+
+When a type annotation is long or multiline, put them on the next line, indented by one level.
+
+```fsharp
+type ExprFolder<'State> =
+    { exprIntercept: 
+        ('State -> Expr -> 'State) -> ('State -> Expr -> 'State -> 'State -> Exp -> 'State }
+        
+let UpdateUI
+    (model:
+#if NETCOREAPP2_1
+        ITreeModel
+#else
+        TreeModel
+#endif
+    )
+    (info: FileInfo) =
+    // code
+    ()
+
+let f
+    (x:
+        {|
+            a: Second
+            b: Metre
+            c: Kilogram
+            d: Ampere
+            e: Kelvin
+            f: Mole
+            g: Candela
+        |})
+    =
+    x.a
+
+type Sample
+    (
+        input: 
+            LongTupleItemTypeOneThing * 
+            LongTupleItemTypeThingTwo * 
+            LongTupleItemTypeThree * 
+            LongThingFour * 
+            LongThingFiveYow
+    ) =
+    class
+    end
+```
+
 ### Formatting return type annotations
 
 In function or member return type annotations, use white space before and after the `:` symbol:
@@ -1889,6 +1974,78 @@ Json.serialize<
        newParent: {| id: string; displayName: string |}
        requiresApproval: bool |}>
     myObj
+```
+
+### Formatting inheritance
+
+The arguments for the base class constructor appear in the argument list in the `inherit` clause.
+Put the `inherit` clause on a new line, indented by one level.
+
+```fsharp
+type MyClassBase(x: int) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: int) =
+   inherit MyClassBase(y * 2)
+
+// ❌ Not OK
+type MyClassDerived(y: int) = inherit MyClassBase(y * 2)
+```
+
+When the constructor is long or multiline, put them on the next line, indented by one level.  
+Format this multiline constructor according to the rules of multiline function applications.
+
+```fsharp
+type MyClassBase(x: string) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: string) =
+    inherit 
+        MyClassBase(
+            """
+            very long
+            string example
+            """
+        )
+        
+// ❌ Not OK
+type MyClassDerived(y: string) =
+    inherit MyClassBase(
+        """
+        very long
+        string example
+        """)
+```
+
+#### Multiple constructors
+
+When the `inherit` clause is part of a record, put it on the same line if it is short.
+And put it on the next line, indented by one level, if it is long or multiline.
+
+```fsharp
+type BaseClass =
+    val string1 : string
+    new () = { string1 = "" }
+    new (str) = { string1 = str }
+
+type DerivedClass =
+    inherit BaseClass
+
+    val string2 : string
+    new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
+    new () = 
+        { inherit 
+            BaseClass(
+                """
+                very long
+                string example
+                """
+            )
+          string2 = str2 }
 ```
 
 ## Formatting attributes

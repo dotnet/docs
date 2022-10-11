@@ -11,7 +11,7 @@ metadata:
   ms.collection: collection
   author: camsoper
   ms.author: casoper
-  ms.date: 03/04/2022
+  ms.date: 10/07/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -53,6 +53,8 @@ landingContent:
         links:
           - text: Blink an LED
             url: tutorials/blink-led.md
+          - text: Read binary input using GPIO
+            url: tutorials/gpio-input.md
           - text: Read environmental conditions from a sensor
             url: tutorials/temp-sensor.md
           - text: Display text on an LCD

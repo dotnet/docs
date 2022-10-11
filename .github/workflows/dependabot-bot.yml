@@ -1,0 +1,46 @@
+# The name used in the GitHub UI for the workflow
+name: 'update dependabot.yml'
+# When to run this action:
+# - Scheduled to run at 5 AM every Monday.
+# - Manually runnable from the GitHub UI with a reason
+on:
+  schedule:
+  - cron: '0 5 * * 1' # 5 AM every Monday.
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'
+# Run on the latest version of Ubuntu
+jobs:
+  dependabot-bot:
+    runs-on: ubuntu-latest
+    # Checkout the repo into the workspace within the VM
+    steps:
+    - uses: actions/checkout@v3
+    # - name: Setup .NET
+    #   uses: actions/setup-dotnet@v3
+    #   with:
+    #     dotnet-version: 7.0.x
+    #     dotnet-quality: 'preview'
+    # If triggered manually, print the reason why
+    - name: 'Print manual run reason'
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      run: |
+        echo "Reason: ${{ github.event.inputs.reason }}"
+    # Run the .NET dependabot-bot tool
+    - name: dependabot-bot
+      id: dependabot-bot
+      uses: dotnet/docs-tools/actions/dependabot-bot@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        root-directory: '/github/workspace'
+        dependabot-yml-path: '.github/dependabot.yml'
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        title: 'Update dependabot.yml - automatically.'
+        body: '.NET dependabot-bot automated PR. 🤖'
+        commit-message: '.NET dependabot-bot automated PR.'

@@ -21,7 +21,7 @@ Fortunately, IIS is a feature-rich web server, and two features it has are [URL 
 
 ```xml
 <rule name="NetCoreProxy">
-  <match url="(.*)> />
+  <match url="(.*)>" />
   <action type="Rewrite" url="http://servername/{R:1}" />
 </rule>
 ```

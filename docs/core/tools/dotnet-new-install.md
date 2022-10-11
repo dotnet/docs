@@ -30,7 +30,6 @@ For example, if you install the template package using `dotnet new --install` in
 
 Starting with .NET SDK 6.0.100, installed template packages are available in later .NET SDK versions installed on your machine. A template package installed in .NET SDK 6.0.100 will also be available in .NET SDK 6.0.101, .NET SDK 6.0.200, and so on. However, these template packages won't be available in .NET SDK versions prior to .NET SDK 6.0.100. To use a template package installed in .NET SDK 6.0.100 or later in earlier .NET SDK versions, you need to install it using `dotnet new --install` in that .NET SDK version.
 
-<!-- markdownlint-disable MD012 -->
 > [!NOTE]
 > [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 >
@@ -49,8 +48,6 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 >   ```
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
 

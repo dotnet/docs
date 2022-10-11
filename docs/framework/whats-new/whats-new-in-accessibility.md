@@ -161,7 +161,7 @@ public Form1()
 }
 
 …
-Label1.Text = “Ready!”;
+Label1.Text = "Ready!";
 ```
 
 Narrator announces “Ready” regardless of where the user is interacting with the application.

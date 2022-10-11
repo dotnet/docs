@@ -32,8 +32,6 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 ## Arguments
 
-<!-- markdownlint-disable MD012 -->
-
 - **`forwarded arguments`**
 
   Arguments to pass to the child `dotnet` process. For example: `run` with options for [dotnet run](dotnet-run.md) or `test` with options for [dotnet test](dotnet-test.md). If the child command isn't specified, the default is `run` for `dotnet run`.

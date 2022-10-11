@@ -3,7 +3,7 @@ title: Deploy .NET apps to Raspberry Pi
 description: Learn how to deploy .NET apps to Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 09/28/2022
+ms.date: 10/07/2022
 ms.topic: how-to
 ms.prod: dotnet
 ---

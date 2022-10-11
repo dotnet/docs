@@ -109,7 +109,7 @@ IPv6 defines the following address types:
 
   - **Global IPv6 unicast addresses:**
 
-  These addresses can be used across the Internet and have the following format: `010(FP, 3 bits) TLA ID (13 bits) Reserved (8 bits) NLA ID (24 bits) SLA ID (16 bits) *InterfaceID* (64 bits)`.
+  These addresses can be used across the Internet and have the following format: `*GlobalRoutingPrefix*::*SubnetID*:*InterfaceID*`.
 
 - **Multicast address:**
 

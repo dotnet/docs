@@ -147,7 +147,7 @@ Record types have a compiler-generated <xref:System.Object.ToString%2A> method t
 
 > \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
 
-The string printed for `<value>` is the string returned by the <xref:System.Object.ToString> for the type of the property. In the following example, `ChildNames`is a <xref:System.Array?displayProperty=nameWithType>, where `ToString` returns `System.String[]`:
+The string printed for `<value>` is the string returned by the <xref:System.Object.ToString> for the type of the property. In the following example, `ChildNames` is a <xref:System.Array?displayProperty=nameWithType>, where `ToString` returns `System.String[]`:
 
 ```
 Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] }

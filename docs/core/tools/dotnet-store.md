@@ -29,8 +29,6 @@ dotnet store -h|--help
 
 ## Required options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`-f|--framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md). The target framework has to be specified in the project file.

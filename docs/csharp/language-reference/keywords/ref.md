@@ -123,7 +123,7 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 
 In both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Can't initialize a by-reference variable with a value."
 
-The iteration variable of the `foreach` statement can be a ref local or ref readonly local variable. For more information, see the [foreach statement](../statements/iteration-statements.md#the-foreach-statement) article. you can reassign a ref local or ref readonly local variable with the [ref assignment operator](../operators/assignment-operator.md#ref-assignment).
+The iteration variable of the `foreach` statement can be a ref local or ref readonly local variable. For more information, see the [foreach statement](../statements/iteration-statements.md#the-foreach-statement) article. You can reassign a ref local or ref readonly local variable with the [ref assignment operator](../operators/assignment-operator.md#ref-assignment).
 
 ## Ref readonly locals
 

@@ -7,7 +7,9 @@
         "MD004": false,
         // Disabled as word wraping can cause many diffs
         "MD013": false,
+        // Currently broken with custom tab solution
         "MD024": false,
+        // Currently broken with custom tab solution
         "MD025": false,
         "MD026": false,
         // Cannot be enabled due to sequential Note blocks
@@ -54,7 +56,9 @@
             "style": "fenced"
         },
         "MD049": false,
-        "MD050": false,
+        "MD050": {
+            "style": "asterisk"
+        },
         "MD051": false
     },
     "ignores": [

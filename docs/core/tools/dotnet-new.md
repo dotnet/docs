@@ -92,8 +92,6 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--dry-run`**
 
   Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.

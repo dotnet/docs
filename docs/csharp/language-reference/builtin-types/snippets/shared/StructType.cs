@@ -135,7 +135,7 @@ namespace builtin_types
             {
                 if (System.Runtime.CompilerServices.Unsafe.IsNullRef(ref number))
                 {
-                    throw new InvalidOperationException("The number field is not initialized.");
+                    throw new InvalidOperationException("The number ref field is not initialized.");
                 }
 
                 return number;

@@ -45,7 +45,6 @@ The first table in this article lists keywords that are reserved identifiers in 
         [`explicit`](../operators/user-defined-conversion-operators.md)  
         [`extern`](extern.md)  
         [`false`](../builtin-types/bool.md)  
-        [`file`](file.md)  
         [`finally`](try-finally.md)  
         [`fixed`](../statements/fixed.md)  
         [`float`](../builtin-types/floating-point-numeric-types.md)  
@@ -123,6 +122,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
+        [`file`](file.md)  
         [`from`](from-clause.md)  
     :::column-end:::
     :::column:::

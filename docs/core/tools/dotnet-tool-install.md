@@ -69,8 +69,6 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]

@@ -21,7 +21,7 @@ var handler = new SocketsHttpHandler
 {
     PooledConnectionLifetime = TimeSpan.FromMinutes(15) // Recreate every 15 minutes
 };
-var client = new HttpClient(handler);
+var sharedClient = new HttpClient(handler);
 ```
 
 The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the timespan specified by <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> has elapsed, the connection is closed and a new one is created.
@@ -43,6 +43,12 @@ The connection pool for an <xref:System.Net.Http.HttpClient> is linked to its un
 
     > [!TIP]
     > If your app requires cookies, consider disabling automatic cookie handling or avoiding <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> object sharing often results in incorrect code.
+
+### HttpClient lifetime management
+
+To summarize recommended `HttpClient` use in terms of lifetime management, you should use either **long-lived** clients with `PooledConnectionLifetime` set up (.NET Core and .NET 5+) or **short-lived** clients created by `IHttpClientFactory`.
+
+To learn more about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
 
 ## See also
 

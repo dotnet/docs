@@ -29,8 +29,6 @@ dotnet build-server -h|--help
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--msbuild`**

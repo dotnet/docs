@@ -53,8 +53,6 @@ dotnet new sln --output MySolution
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands

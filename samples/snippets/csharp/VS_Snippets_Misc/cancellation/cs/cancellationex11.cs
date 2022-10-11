@@ -41,23 +41,22 @@ class CancelByPolling
    static void NestedLoops(Rectangle rect, CancellationToken token)
    {
       for (int x = 0; x < rect.columns && !token.IsCancellationRequested; x++) {
+         // Assume that we know that the inner loop is very fast.
+         // Therefore, checking once per row in the outer loop is sufficient.
          for (int y = 0; y < rect.rows; y++) {
             // Simulating work.
             Thread.SpinWait(5000);
             Console.Write("{0},{1} ", x, y);
          }
+      }
 
-         // Assume that we know that the inner loop is very fast.
-         // Therefore, checking once per row is sufficient.
-         if (token.IsCancellationRequested) {
-            // Cleanup or undo here if necessary...
-            Console.WriteLine("\r\nCancelling after row {0}.", x);
-            Console.WriteLine("Press any key to exit.");
-            // then...
-            break;
-            // ...or, if using Task:
-            // token.ThrowIfCancellationRequested();
-         }
+      if (token.IsCancellationRequested) {
+         // Cleanup or undo here if necessary...
+         Console.WriteLine("\r\nCancelling after row {0}.", x);
+         Console.WriteLine("Press any key to exit.");
+
+         // If using Task:
+         // token.ThrowIfCancellationRequested();
       }
    }
    //</snippet3>

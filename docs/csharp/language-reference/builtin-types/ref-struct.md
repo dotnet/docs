@@ -34,7 +34,7 @@ Beginning with C# 11, you can declare a `ref` field in a `ref struct`, as the fo
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetRefField":::
 
-A `ref` field may have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%60%601?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
+A `ref` field may have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%601?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
 
 You can apply the `readonly` modifier to a `ref` field in the following ways:
 

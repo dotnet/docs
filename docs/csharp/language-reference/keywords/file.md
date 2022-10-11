@@ -4,7 +4,6 @@ title: "file keyword - C# Reference"
 ms.date: 09/15/2022
 f1_keywords: 
   - "file_CSharpKeyword"
-  - "file"
 helpviewer_keywords: 
   - "file keyword [C#]"
 ---

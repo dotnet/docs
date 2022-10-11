@@ -38,4 +38,4 @@ endpoints.MapFallbackToFile("index.html")
 
 ## Affected APIs
 
-- All overloads of <xref:Microsoft.AspNetCore.Builder.StaticFilesEndpointRouteBuilderExtensions.MapFallbackToFile%2A?displayProperty=fullName>.
+- <xref:Microsoft.AspNetCore.Builder.StaticFilesEndpointRouteBuilderExtensions.MapFallbackToFile%2A?displayProperty=fullName>

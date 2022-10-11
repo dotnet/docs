@@ -31,8 +31,12 @@ items:
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
+        - name: Endpoint metadata provider interface changes
+          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: Fallback file endpoints
+          href: aspnet-core/7.0/fallback-file-endpoints.md
         - name: IHubClients and IHubCallerClients hide members
           href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
         - name: "Kestrel: Default HTTPS binding removed"
@@ -45,6 +49,8 @@ items:
           href: aspnet-core/7.0/middleware-null-requestdelegate.md
         - name: MVC's detection of an empty body in model binding changed
           href: aspnet-core/7.0/mvc-empty-body-model-binding.md
+        - name: Output caching API changes
+          href: aspnet-core/7.0/output-caching-renames.md
         - name: SignalR Hub methods try to resolve parameters from DI
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
@@ -641,8 +647,12 @@ items:
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
+        - name: Endpoint metadata provider interface changes
+          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: Fallback file endpoints
+          href: aspnet-core/7.0/fallback-file-endpoints.md
         - name: IHubClients and IHubCallerClients hide members
           href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
         - name: "Kestrel: Default HTTPS binding removed"
@@ -655,6 +665,8 @@ items:
           href: aspnet-core/7.0/middleware-null-requestdelegate.md
         - name: MVC's detection of an empty body in model binding changed
           href: aspnet-core/7.0/mvc-empty-body-model-binding.md
+        - name: Output caching API changes
+          href: aspnet-core/7.0/output-caching-renames.md
         - name: SignalR Hub methods try to resolve parameters from DI
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6

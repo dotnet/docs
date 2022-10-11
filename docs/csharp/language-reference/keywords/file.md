@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 Beginning with C# 11, the `file` contextual keyword is a type modifier.
 
-The `file` modifier restricts a top-level type's scope and visibility to the file in which it's declared. The `file` modifier will generally be applied to types written by a source generator. File-scoped types provide source generators with a convenient way to avoid name collisions among generated types. The `file` modifier declares a file-scoped type, as in this example:
+The `file` modifier restricts a top-level type's scope and visibility to the file in which it's declared. The `file` modifier will generally be applied to types written by a source generator. File-local types provide source generators with a convenient way to avoid name collisions among generated types. The `file` modifier declares a file-local type, as in this example:
 
 ```csharp
 file class HiddenWidget
@@ -20,9 +20,9 @@ file class HiddenWidget
 }
 ```
 
-Any types nested within a file-scoped type are also only visible within the file in which it's declared. Other types in an assembly may use the same name as a file-scoped type. Because the file-scoped type is visible only in the file where it's declared, these types don't create a naming collision.
+Any types nested within a file-local type are also only visible within the file in which it's declared. Other types in an assembly may use the same name as a file-local type. Because the file-local type is visible only in the file where it's declared, these types don't create a naming collision.
 
-A file-scoped type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-scoped type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-scoped interface type. The type can't [explicitly implement](../../programming-guide/interfaces/explicit-interface-implementation.md) a file-scoped interface.
+A file-local type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-local type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-scoped interface type. The type can't [explicitly implement](../../programming-guide/interfaces/explicit-interface-implementation.md) a file-local interface.
 
 ## Example
 

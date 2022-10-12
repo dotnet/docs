@@ -82,4 +82,8 @@ Most developers won't be affected by this change, since it corrects previously e
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)?displayProperty=fullName>
+
+## See also
+
+- [Configuration in .NET](../../../extensions/configuration.md)

@@ -199,7 +199,7 @@ For more information, see the following sections of the [C# language specificati
 - [Bitwise complement operator](~/_csharpstandard/standard/expressions.md#1185-bitwise-complement-operator)
 - [Shift operators](~/_csharpstandard/standard/expressions.md#1110-shift-operators)
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#11183-compound-assignment)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#11193-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
 - [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
 - [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)

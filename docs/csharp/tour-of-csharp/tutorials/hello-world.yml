@@ -65,7 +65,7 @@ items:
     > Don't delete the declaration of `aFriend`. Add the code below following the existing declaration.
 
     ```csharp
-    string aFriend = "Maira";
+    aFriend = "Maira";
     Console.WriteLine(aFriend);
     ```
 

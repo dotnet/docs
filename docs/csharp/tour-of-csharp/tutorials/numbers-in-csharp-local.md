@@ -8,6 +8,8 @@ ms.date: 03/23/2022
 
 This tutorial teaches you about the numeric types in C#. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
+> Note: To paste a code snippet inside the `focus mode` you should use your keyboard shortcut (ctrl+v, or cmd+v).
+
 ## Prerequisites
 
 The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.

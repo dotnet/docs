@@ -2,7 +2,7 @@
 title: ".NET regular expression source generators"
 description: Learn how to use regular expression source generators to optimize the performance of matching algorithms in .NET.
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 10/12/2022
 author: IEvangelist
 ms.author: dapine
 ---
@@ -25,7 +25,7 @@ To help with these issues, .NET provides a method <xref:System.Text.RegularExpre
 
 ## Source generation
 
-.NET 7 addresses all of this with the new `RegexGenerator` source generator. When the C# compiler was rewritten as the ["Roslyn" C# compiler](../../csharp/roslyn-sdk/index.md), it exposed object models for the entire compilation pipeline, as well as analyzers. More recently, Roslyn enabled source generators. Just like an analyzer, a source generator is a component that plugs into the compiler and is handed all of the same information as an analyzer, but in addition to being able to emit diagnostics, it can also augment the compilation unit with additional source code. The .NET 7 SDK includes a new source generator that recognizes the new <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> on a partial method that returns `Regex`. The source generator provides an implementation of that method that implements all the logic for the `Regex`. For example, you might have written code like this:
+.NET 7 introduces a new `RegexGenerator` source generator. When the C# compiler was rewritten as the ["Roslyn" C# compiler](../../csharp/roslyn-sdk/index.md), it exposed object models for the entire compilation pipeline, as well as analyzers. More recently, Roslyn enabled source generators. Just like an analyzer, a source generator is a component that plugs into the compiler and is handed all of the same information as an analyzer, but in addition to being able to emit diagnostics, it can also augment the compilation unit with additional source code. The .NET 7 SDK includes a new source generator that recognizes the new <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> on a partial method that returns `Regex`. The source generator provides an implementation of that method that implements all the logic for the `Regex`. For example, you might have written code like this:
 
 ```csharp
 private static readonly Regex s_abcOrDefGeneratedRegex =
@@ -69,15 +69,13 @@ But as can be seen, it's not just doing `new Regex(...)`. Rather, the source gen
 > [!TIP]
 > In Visual Studio, select the project node in **Solution Explorer**, then expand **Dependencies** > **Analyzers** > **System.Text.RegularExpressions.Generator** > **System.Text.RegularExpressions.Generator.RegexGenerator** > _RegexGenerator.g.cs_ to see the generated C# code from this regex generator.
 
-You can set breakpoints in it, you can step through it, and you can use it as a learning tool to understand exactly how the regex engine is processing your pattern and your input. The generator even generates [triple-slash (XML) comments](../../csharp/language-reference/xmldoc/index.md) to help make the expression understandable at a glance and at the usage site.
+You can set breakpoints in it, you can step through it, and you can use it as a learning tool to understand exactly how the regex engine is processing your pattern with your input. The generator even generates [triple-slash (XML) comments](../../csharp/language-reference/xmldoc/index.md) to help make the expression understandable at a glance and where it's used.
 
 :::image type="content" source="media/regular-expression-source-generators/xml-comments.png" lightbox="media/regular-expression-source-generators/xml-comments.png" alt-text="Generated XML comments describing regex":::
 
 ## Inside the source-generated files
 
-The initial creation of the source generator was a straight port of the `RegexCompiler` used internally to implement `RegexOptions.Compiled`; line-for-line, it would essentially just emit a C# version of the IL that was being emitted. With .NET 7, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. In .NET 5, an experimental alternative approach introduced simple patterns that didn't involve any backtracking, the `RegexCompiler` could emit code that was much cleaner, the primary goal being performance. That approach has now been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still map mostly 1:1 with each other, following the new approach.
-
-Consider the source generator outputs for one of the primary functions that's generated:
+With .NET 7, both the source generator and `RegexCompiler` were almost entirely rewritten, fundamentally changing the structure of the generated code. This approach has been extended to handle all constructs (with one caveat), and both `RegexCompiler` and the source generator still map mostly 1:1 with each other, following the new approach. Consider the source generator output for one of the primary functions from the `(a|bc)d` expression:
 
 ```csharp
 private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)

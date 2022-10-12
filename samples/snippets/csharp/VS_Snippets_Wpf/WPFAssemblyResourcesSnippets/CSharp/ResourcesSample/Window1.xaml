@@ -1,9 +1,0 @@
-﻿<Window x:Class="ResourcesSample.Window1"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="ResourcesSample" Height="300" Width="300"
-    >
-    <Grid>
-      <Frame Source="Page1.xaml"></Frame>
-    </Grid>
-</Window>

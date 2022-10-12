@@ -47,6 +47,7 @@ var loadedValue = config.GetValue<string?>("ConfigKey", null);
 
 Console.WriteLine(String.Equals(myValue, loadedValue));
 // True
+```
 
 ## New behavior
 
@@ -74,7 +75,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-This change was made to fix an unintentional behavior change for environment variable prefix delimiters in .NET 6. The new behavior matches the .NET 5 behavior.
+This change was made to fix an unintentional behavior change for normalizing environment variable prefix filters in .NET 6. The new behavior matches the .NET 5 behavior.
 
 ## Recommended action
 

@@ -41,19 +41,21 @@ Class CancelByPolling
 
     '<snippet3>
     Shared Sub NestedLoops(ByVal rect As Rectangle, ByVal token As CancellationToken)
-        For x As Integer = 0 To rect.columns
+        Dim col As Integer
+        For col = 0 To rect.columns - 1
             ' Assume that we know that the inner loop is very fast.
-            ' Therefore, checking once per row in the outer loop is sufficient.
-            For y As Integer = 0 To rect.rows
+            ' Therefore, polling once per column in the outer loop condition
+            ' is sufficient.
+            For col As Integer = 0 To rect.rows - 1
                 ' Simulating work.
                 Thread.SpinWait(5000)
-                Console.Write("0' end block,1' end block ", x, y)
+                Console.Write("0',1' ", x, y)
             Next
         Next
 
         If token.IsCancellationRequested = True Then
             ' Cleanup or undo here if necessary...
-            Console.WriteLine(vbCrLf + "Cancelling after row 0' end block.", x)
+            Console.WriteLine(vbCrLf + "Cancelling before column 0'.", col)
             Console.WriteLine("Press any key to exit.")
 
             ' If using Task:

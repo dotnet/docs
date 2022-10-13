@@ -8,7 +8,8 @@ ms.date: 03/23/2022
 
 This tutorial teaches you about the numeric types in C#. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-> Note: To paste a code snippet inside the `focus mode` you should use your keyboard shortcut (ctrl+v, or cmd+v).
+> [!TIP]
+> To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 
 ## Prerequisites
 

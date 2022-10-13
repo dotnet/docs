@@ -3,8 +3,6 @@ using System.Text.RegularExpressions;
 
 static partial class Program
 {
-    private static readonly Regex s_abcOrDefGeneratedRegex = AbcOrDefGeneratedRegex();
-
     [GeneratedRegex(
         pattern: "abc|def",
         options: RegexOptions.IgnoreCase | RegexOptions.Compiled,
@@ -13,16 +11,16 @@ static partial class Program
 
     private static void EvaluateText(string text)
     {
-        if (s_abcOrDefGeneratedRegex.IsMatch(text))
+        if (AbcOrDefGeneratedRegex().IsMatch(text))
         {
             Console.WriteLine($"""
-                ✅ "{text}" matches "{s_abcOrDefGeneratedRegex}" pattern.
+                ✅ "{text}" matches "{AbcOrDefGeneratedRegex()}" pattern.
                 """);
         }
         else
         {
             Console.WriteLine($"""
-                ❌ "{text}" doesn't match "{s_abcOrDefGeneratedRegex}" pattern.
+                ❌ "{text}" doesn't match "{AbcOrDefGeneratedRegex()}" pattern.
                 """);
         }
     }

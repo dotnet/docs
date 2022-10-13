@@ -125,6 +125,23 @@ namespace builtin_types
             public ReadOnlySpan<double> Values { get; }
         }
         // </SnippetReadonlyRef>
+
+        // <SnippetRefField>
+        public ref struct RefFieldExample
+        {
+            private ref int number;
+
+            public int GetNumber()
+            {
+                if (System.Runtime.CompilerServices.Unsafe.IsNullRef(ref number))
+                {
+                    throw new InvalidOperationException("The number ref field is not initialized.");
+                }
+
+                return number;
+            }
+        }
+        // </SnippetRefField>
     }
 
     namespace parameterless_constructor

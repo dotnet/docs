@@ -36,7 +36,7 @@ Used to create instances of conceptual model nominal types such as Entity or Com
   
  The expression below creates an instance of a complex type:  
   
- `MyModel.ZipCode(‘98118’, ‘4567’)`  
+ `MyModel.ZipCode('98118', '4567')`  
   
  The expression below creates an instance of a nested complex type:  
   
@@ -46,7 +46,7 @@ Used to create instances of conceptual model nominal types such as Entity or Com
   
  `MyModel.Person("Bill", MyModel.AddressInfo('My street address', 'Seattle', 'WA', MyModel.ZipCode('98118', '4567')))`  
   
- The following example shows how to initialize a property of a complex type to null:`MyModel.ZipCode(‘98118’, null)`  
+ The following example shows how to initialize a property of a complex type to null:`MyModel.ZipCode('98118', null)`  
   
 ## Example  
 

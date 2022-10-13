@@ -112,6 +112,9 @@ For production scenarios check the additional resources below, specific for Rabb
 
 A production-ready solution with support for RabbitMQ.
 
+- **NServiceBus** 
+  <https://particular.net/>
+
 - **EasyNetQ** - Open Source .NET API client for RabbitMQ \
   <https://easynetq.com/>
 

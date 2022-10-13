@@ -4,7 +4,7 @@ description: This article teaches you how to enable tab completion for the .NET 
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 11/03/2019
+ms.date: 10/13/2022
 ---
 
 # How to enable TAB completion for the .NET CLI
@@ -81,14 +81,22 @@ To add tab completion to your **zsh** shell for the .NET CLI, add the following 
 ```zsh
 # zsh parameter completion for the dotnet CLI
 
-_dotnet_zsh_complete()
+_dotnet_zsh_complete() 
 {
   local completions=("$(dotnet complete "$words")")
 
-  reply=( "${(ps:\n:)completions}" )
+  # If the completion list is empty, just continue with filename selection
+  if [ -z "$completions" ]
+  then
+    _arguments '*::arguments: _normal'
+    return
+  fi
+
+  # This is not a variable assigment, don't remove spaces!
+  _values = "${(ps:\n:)completions}"
 }
 
-compctl -K _dotnet_zsh_complete dotnet
+compdef _dotnet_zsh_complete dotnet
 ```
 
 ## fish

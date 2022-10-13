@@ -8,7 +8,8 @@ ms.date: 03/23/2022
 
 This tutorial teaches you how to write C# code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-> Note: To paste a code snippet inside the `focus mode` you should use your keyboard shortcut (ctrl+v, or cmd+v).
+> [!TIP]
+> To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 
 ## Prerequisites
 

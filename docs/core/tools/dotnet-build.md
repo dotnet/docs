@@ -84,7 +84,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md).
+  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
 
 - **`--force`**
 

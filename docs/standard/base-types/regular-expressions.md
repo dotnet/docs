@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "strings [.NET], regular expressions"
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
 ---
+
 # .NET regular expressions
 
 Regular expressions provide a powerful, flexible, and efficient method for processing text. The extensive pattern-matching notation of regular expressions enables you to quickly parse large amounts of text to:

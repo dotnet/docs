@@ -1,6 +1,15 @@
 {
     "build": {
-        "markdownEngineName": "markdig",
+      "markdownEngineName": "markdig",
+      "markdownEngineProperties": {
+        "markdigExtensions": [
+            "abbreviations",
+            "definitionlists",
+            "tasklists",
+            "footnotes",
+            "diagrams"
+          ]
+        },
         "content": [
             {
                 "files": ["api/**/*.md"]

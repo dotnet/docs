@@ -675,10 +675,10 @@
                 "_csharplang/proposals/csharp-10.0/lambda-attributes.md": "Lambda attributes",
                 "_csharplang/proposals/csharp-10.0/caller-argument-expression.md": "Caller argument expression",
                 "_csharplang/proposals/csharp-10.0/enhanced-line-directives.md": "Enhanced #line directives",
-                "_csharplang/proposals/csharp-10.0/generic-attributes.md": "Generic attributes",
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "Improved definite assignment analysis",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "AsyncMethodBuilder override",
 
+                "_csharplang/proposals/csharp-11.0/generic-attributes.md": "Generic attributes",
                 "_csharplang/proposals/csharp-11.0/auto-default-structs.md": "Auto-default struct",
                 "_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md": "Checked user defined operators",
                 "_csharplang/proposals/csharp-11.0/extended-nameof-scope.md": "Extended nameof parameter scope",
@@ -813,10 +813,10 @@
                 "_csharplang/proposals/csharp-10.0/lambda-attributes.md": "This feature specification describes the syntax enhancements to declare attributes on lambda expressions.",
                 "_csharplang/proposals/csharp-10.0/caller-argument-expression.md": "This feature specification describes attributes that can be used to enable the compiler to convert a caller argument expression into text. This is primarily used for debugging and testing scenarios.",
                 "_csharplang/proposals/csharp-10.0/enhanced-line-directives.md": "This feature specification describes updates to the #line directive. These enhancements support scenarios like Razor where the Razor engine wants more control over the line number so that it maps to your source rather than the generated file.",
-                "_csharplang/proposals/csharp-10.0/generic-attributes.md": "This feature specification describes generic attributes, where a generic class may derive from 'System.Attribute'.",
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "This feature specification describes updates to the rules for definite assignment analysis. The result is more accurate warnings for when a variable may not be definitely assigned, or may not be null.",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "This feature specification describes new rules to enable types to override the default AsyncMethodBuilder. This will be used by the runtime for performance improvements.",
 
+                "_csharplang/proposals/csharp-11.0/generic-attributes.md": "This feature specification describes generic attributes, where a generic class may derive from 'System.Attribute'.",
                 "_csharplang/proposals/csharp-11.0/auto-default-structs.md": "This feature updates the rules for struct initialization and default values. This feature standardizes the behavior for default struct values and newly initialized structs.",
                 "_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md": "This feature enables checked and unchecked alternatives for some operators.",
                 "_csharplang/proposals/csharp-11.0/extended-nameof-scope.md": "This feature enables the nameof expression to be used with parameter names in a method declaration.",

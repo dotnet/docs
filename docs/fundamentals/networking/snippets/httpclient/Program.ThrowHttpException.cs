@@ -1,8 +1,8 @@
 ﻿static partial class Program
 {
-    // <cancellation>
     static async Task ThrowHttpRequestExceptionAsync(HttpClient httpClient)
     {
+        // <throw>
         try
         {
             using var response = await httpClient.GetAsync(
@@ -15,10 +15,10 @@
                     "Something went wrong", inner: null, response.StatusCode);
             }
         }
-        catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
+        catch (HttpRequestException ex) when (ex is { StatusCode: HttpStatusCode.NotFound })
         {
             Console.WriteLine($"Not found: {ex.Message}");
         }
+        // </throw>
     }
-    // </cancellation>
 }

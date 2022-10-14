@@ -1,13 +1,13 @@
 ﻿static partial class Program
 {
-    // <cancellation>
     static async Task WithCancellationAsync(HttpClient httpClient)
     {
-        var cts = new CancellationTokenSource();
+        // <cancellation>
+        using var cts = new CancellationTokenSource();
         try
         {
             // Assuming:
-            //   client.Timeout = TimeSpan.FromSeconds(10)
+            //   httpClient.Timeout = TimeSpan.FromSeconds(10)
 
             using var response = await httpClient.GetAsync(
                 "http://localhost:5001/sleepFor?seconds=100", cts.Token);
@@ -21,6 +21,6 @@
         {
             WriteLine($"Timed out: {ex.Message}");
         }
+        // </cancellation>
     }
-    // </cancellation>
 }

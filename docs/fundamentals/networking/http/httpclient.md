@@ -265,7 +265,7 @@ This code will throw an `HttpRequestException` if the response status code is no
 
 The HTTP response object (<xref:System.Net.Http.HttpResponseMessage>), when not successful, contains information about the error. The <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property can be used to evaluate the error code.
 
-For more information, see [Client error status codes](http-overview.md#client-error-status-codes) and [Server error status codes](http-overview.md#server-error-status-codes).
+For more information, see [Client error status codes](http-overview.md#client-error-status-codes) and [Server error status codes](http-overview.md#server-error-status-codes). In addition to handling errors in the response, you can also handle errors in the request. For more information, see [HTTP error handling](#http-error-handling).
 
 ### HTTP valid content responses
 
@@ -291,7 +291,31 @@ In the preceding code, `result` is the response body deserialized as the type `T
 
 ## HTTP error handling
 
+When an HTTP request fails, the <xref:System.Net.Http.HttpRequestException> is thrown. Catching that exception alone may not be sufficient, as there are other potential exceptions thrown that you might want to consider handling. For example, the calling code may have used a cancellation token that was canceled before the request was completed. In this scenario, you'd catch the <xref:System.Threading.Tasks.TaskCanceledException>:
 
+:::code language="csharp" source="../snippets/httpclient/Program.Cancellation.cs" id="cancellation":::
+
+Likewise, when making an HTTP request, if the server doesn't respond before the <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType> is exceeded the same exception is thrown. However, in this scenario, you can distinguish that the timeout occurred by evaluating the <xref:System.Exception.InnerException?displayProperty=nameWithType> when catching the <xref:System.Threading.Tasks.TaskCanceledException>:
+
+:::code language="csharp" source="../snippets/httpclient/Program.CancellationInnerTimeout.cs" id="innertimeout":::
+
+To evaluate the HTTP status code when catching an <xref:System.Net.Http.HttpRequestException>, you can evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property:
+
+:::code language="csharp" source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
+
+In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response is not successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several extension methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following:
+
+- <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType>
+- <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>
+- <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>
+
+When calling these methods, you can handle the `HttpRequestException` and evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property to determine the HTTP status code of the response:
+
+:::code language="csharp" source="../snippets/httpclient/Program.CancellationStream.cs" id="helpers":::
+
+There might be scenarios in which you need to throw the <xref:System.Net.Http.HttpRequestException> in your code. The <xref:System.Net.Http.HttpRequestException.%23ctor> constructor is public, and you can use it to throw an exception with a custom message:
+
+:::code language="csharp" source="../snippets/httpclient/Program.ThrowHttpException.cs" id="throw":::
 
 ## HTTP proxy
 

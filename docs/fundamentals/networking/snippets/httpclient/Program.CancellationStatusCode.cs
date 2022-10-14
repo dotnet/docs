@@ -1,12 +1,12 @@
 ﻿static partial class Program
 {
-    // <cancellation>
     static async Task WithCancellationAndStatusCodeAsync(HttpClient httpClient)
     {
+        // <statuscode>
         try
         {
             // Assuming:
-            //   client.Timeout = TimeSpan.FromSeconds(10)
+            //   httpClient.Timeout = TimeSpan.FromSeconds(10)
 
             using var response = await httpClient.GetAsync(
                 "http://localhost:5001/doesNotExist");
@@ -18,6 +18,6 @@
             // Handle 404
             Console.WriteLine($"Not found: {ex.Message}");
         }
+        // </statuscode>
     }
-    // </cancellation>
 }

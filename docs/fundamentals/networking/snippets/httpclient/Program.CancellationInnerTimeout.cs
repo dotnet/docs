@@ -15,10 +15,6 @@
         {
             WriteLine($"Timed out: {ex.Message}, {tex.Message}");
         }
-        catch (TaskCanceledException ex)
-        {
-            WriteLine($"Canceled: {ex.Message}");
-        }
         // </innertimeout>
     }
 }

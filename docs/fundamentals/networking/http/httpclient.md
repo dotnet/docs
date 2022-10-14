@@ -305,11 +305,14 @@ To evaluate the HTTP status code when catching an <xref:System.Net.Http.HttpRequ
 
 :::code language="csharp" source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
 
-In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response is not successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following:
+In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response is not successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following APIs:
 
 - <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType>
 - <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>
 - <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>
+
+> [!TIP]
+> All `HttpClient` methods used to make HTTP requests that don't return an `HttpResponseMessage` implicitly call `EnsureSuccessStatusCode` on your behalf.
 
 When calling these methods, you can handle the `HttpRequestException` and evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property to determine the HTTP status code of the response:
 

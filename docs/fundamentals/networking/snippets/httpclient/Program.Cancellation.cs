@@ -17,10 +17,6 @@
             // When the token has been canceled, it is not a timeout.
             WriteLine($"Canceled: {ex.Message}");
         }
-        catch (TaskCanceledException ex)
-        {
-            WriteLine($"Timed out: {ex.Message}");
-        }
         // </cancellation>
     }
 }

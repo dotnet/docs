@@ -38,7 +38,7 @@ The `Iot.Device.Bindings` package:
 
 The [complete list of available device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md) is maintained on GitHub.
 
-Commonly used device bindings include:
+Some commonly used device bindings include:
 
 - [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/main/src/devices/CharacterLcd)
 - [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/main/src/devices/Sn74hc595)
@@ -48,7 +48,7 @@ Commonly used device bindings include:
 
 ## Supported operating systems
 
-`System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
+`System.Device.Gpio` is supported on any operating system that supports .NET, including most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
 > For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)  (formerly Raspbian) is recommended.

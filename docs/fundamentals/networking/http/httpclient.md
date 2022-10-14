@@ -3,7 +3,7 @@ title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/24/2022
+ms.date: 10/13/2022
 ---
 
 # Make HTTP requests with the HttpClient class
@@ -288,6 +288,10 @@ Finally, when you know an HTTP endpoint returns JSON, you can deserialize the re
 :::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="json":::
 
 In the preceding code, `result` is the response body deserialized as the type `T`.
+
+## HTTP error handling
+
+
 
 ## HTTP proxy
 

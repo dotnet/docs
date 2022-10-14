@@ -13,7 +13,6 @@
         }
         catch (TaskCanceledException ex) when (ex.InnerException is TimeoutException tex)
         {
-            // When the token has been canceled, it is not a timeout.
             WriteLine($"Timed out: {ex.Message}, {tex.Message}");
         }
         catch (TaskCanceledException ex)

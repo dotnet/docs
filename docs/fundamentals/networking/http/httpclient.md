@@ -299,7 +299,7 @@ Likewise, when making an HTTP request, if the server doesn't respond before the 
 
 :::code language="csharp" source="../snippets/httpclient/Program.CancellationInnerTimeout.cs" id="innertimeout":::
 
-In the preceding code, when the inner exception is a <xref:System.TimeoutException> the timeout occurred, and the request wasn't cancelled by the cancellation token.
+In the preceding code, when the inner exception is a <xref:System.TimeoutException> the timeout occurred, and the request wasn't canceled by the cancellation token.
 
 To evaluate the HTTP status code when catching an <xref:System.Net.Http.HttpRequestException>, you can evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property:
 

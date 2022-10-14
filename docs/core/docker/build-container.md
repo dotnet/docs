@@ -83,15 +83,7 @@ Console.WriteLine("Hello World!");
 
 Replace the file with the following code that counts numbers every second:
 
-```csharp
-var counter = 0;
-var max = args.Length != 0 ? Convert.ToInt32(args[0]) : -1;
-while (max == -1 || counter < max)
-{
-    Console.WriteLine($"Counter: {++counter}");
-    await Task.Delay(TimeSpan.FromMilliseconds(1_000));
-}
-```
+:::code source="snippets/App/Program.cs":::
 
 Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. The following is an example output:
 
@@ -154,23 +146,7 @@ The *Dockerfile* file is used by the `docker build` command to create a containe
 
 Create a file named *Dockerfile* in the directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
 
-```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
-WORKDIR /app
-
-# Copy everything
-COPY . ./
-# Restore as distinct layers
-RUN dotnet restore
-# Build and publish a release
-RUN dotnet publish -c Release -o out
-
-# Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
-WORKDIR /app
-COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
-```
+:::code language="docker" source="snippets/App/Dockerfile":::
 
 > [!NOTE]
 > The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:6.0` image could have been used.

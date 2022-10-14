@@ -152,7 +152,7 @@ public void MakeWithdrawal(decimal amount, DateTime date, string note)
     {
         throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
     }
-    if (Balance - amount < minimumBalance)
+    if (Balance - amount < _minimumBalance)
     {
         throw new InvalidOperationException("Not sufficient funds for this withdrawal");
     }

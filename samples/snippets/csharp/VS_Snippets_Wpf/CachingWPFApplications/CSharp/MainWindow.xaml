@@ -1,8 +1,0 @@
-﻿<Window x:Class="WPFCaching.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button Content="Get From Cache" Height="23" HorizontalAlignment="Left" Margin="123,106,0,0" Name="button1" VerticalAlignment="Top" Width="172" Click="button1_Click" />
-    </Grid>
-</Window>

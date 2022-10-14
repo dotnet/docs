@@ -1,6 +1,15 @@
 {
     "build": {
-        "markdownEngineName": "markdig",
+      "markdownEngineName": "markdig",
+      "markdownEngineProperties": {
+        "markdigExtensions": [
+            "abbreviations",
+            "definitionlists",
+            "tasklists",
+            "footnotes",
+            "diagrams"
+          ]
+        },
         "content": [
             {
                 "files": ["api/**/*.md"]
@@ -43,7 +52,9 @@
                     "csharp-7.0/binary-literals.md",
                     "csharp-7.0/digit-separators.md",
                     "csharp-7.0/expression-bodied-everything.md",
+                    "csharp-7.0/local-functions.md",
                     "csharp-7.0/ref-locals-returns.md",
+                    "csharp-7.0/throw-expression.md",
                     "csharp-7.0/tuples.md",
                     "csharp-7.0/value-task.md",
                     "csharp-7.2/leading-separator.md",
@@ -101,7 +112,10 @@
         "rules": {
             "docs-link-absolute": {
                 "exclude": [
+                    "_csharplang/proposals/csharp-7.0/local-functions.md",
+                    "_csharplang/proposals/csharp-7.0/throw-expression.md",
                     "_csharplang/proposals/csharp-7.2/private-protected.md",
+                    "_csharplang/proposals/csharp-7.2/readonly-struct.md",
                     "_csharplang/proposals/csharp-7.3/blittable.md"
                 ]
             }
@@ -593,9 +607,7 @@
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
 
                 "_csharplang/proposals/csharp-7.0/pattern-matching.md": "Pattern matching",
-                "_csharplang/proposals/csharp-7.0/local-functions.md": "Local functions",
                 "_csharplang/proposals/csharp-7.0/out-var.md": "Out variable declarations",
-                "_csharplang/proposals/csharp-7.0/throw-expression.md": "Throw expressions",
                 "_csharplang/proposals/csharp-7.0/binary-literals.md": "Binary literals",
                 "_csharplang/proposals/csharp-7.0/digit-separators.md": "Digit separators",
                 "_csharplang/proposals/csharp-7.0/task-types.md": "Async task types",
@@ -733,9 +745,7 @@
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
 
                 "_csharplang/proposals/csharp-7.0/pattern-matching.md": "This feature specification describes the pattern matching featues added in C# 7.0. Note that future releases built on this initial set of features.",
-                "_csharplang/proposals/csharp-7.0/local-functions.md": "This feature specification describes local functions, which are functions that are embedded in another method or function.",
                 "_csharplang/proposals/csharp-7.0/out-var.md": "This feature specification describes syntax enhancements that enable declaring 'out' variables in the expression where they are used.",
-                "_csharplang/proposals/csharp-7.0/throw-expression.md": "This feature specification describes syntax enhancements that allow 'throw' to be either an expression or a statement.",
                 "_csharplang/proposals/csharp-7.0/binary-literals.md": "This feature specification describes the syntax to declare binary literals for integral constants.",
                 "_csharplang/proposals/csharp-7.0/digit-separators.md": "This feature specification describes the syntax to allow separators between groups of digits in numeric literals.",
                 "_csharplang/proposals/csharp-7.0/task-types.md": "This feature specification describes the syntax to support async return types that match a pattern, rather than restricting them to Task.",

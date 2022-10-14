@@ -20,10 +20,10 @@
         await DeleteAsync(sharedClient);
 
         // <client>
-        using HttpClient client = new();
+        using HttpClient httpClient = new();
         // </client>
 
-        await HeadAsync(client);
-        await OptionsAsync(client);
+        await HeadAsync(httpClient);
+        await OptionsAsync(httpClient);
     }
 }

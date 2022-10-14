@@ -1,9 +1,9 @@
 ﻿static partial class Program
 {
     // <putasjson>
-    static async Task PutAsJsonAsync(HttpClient client)
+    static async Task PutAsJsonAsync(HttpClient httpClient)
     {
-        using HttpResponseMessage response = await client.PutAsJsonAsync(
+        using HttpResponseMessage response = await httpClient.PutAsJsonAsync(
             "todos/5",
             new Todo(Title: "partially update todo", Completed: true));
 

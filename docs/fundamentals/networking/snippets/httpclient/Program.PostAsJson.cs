@@ -1,9 +1,9 @@
 ﻿static partial class Program
 {
     // <postasjson>
-    static async Task PostAsJsonAsync(HttpClient client)
+    static async Task PostAsJsonAsync(HttpClient httpClient)
     {
-        using HttpResponseMessage response = await client.PostAsJsonAsync(
+        using HttpResponseMessage response = await httpClient.PostAsJsonAsync(
             "todos", 
             new Todo(UserId: 9, Id: 99, Title: "Show extensions", Completed: false));
 

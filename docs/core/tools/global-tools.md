@@ -27,8 +27,9 @@ A .NET tool is a special NuGet package that contains a console application. You 
   The .NET CLI uses manifest files to keep track of tools that are installed as local to a directory. When the manifest file is saved in the root directory of a source code repository, a contributor can clone the repository and invoke a single .NET CLI command to install all of the tools listed in the manifest files.
 
 > [!IMPORTANT]
-> * .NET tools run in full trust. Don't install a .NET tool unless you trust the author.
-> * If .NET was [installed via Snap](../install/linux-snap.md), installed .NET tools might not work correctly.
+> .NET tools run in full trust. Don't install a .NET tool unless you trust the author.
+>
+> .NET tools might not work correctly if .NET was [installed via Snap](../install/linux-snap.md).
 
 ## Find a tool
 

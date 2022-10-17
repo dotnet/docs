@@ -5,7 +5,7 @@ ms.date: 10/13/2022
 ---
 # Tracking linked cache entries
 
-<xref:System.Runtime.Caching.MemoryCache> tracks linked cache entries to that options are propagated. In the following example, the `expirationToken` added for `child` is also applied to `parent`:
+<xref:System.Runtime.Caching.MemoryCache> tracks linked cache entries so that options are propagated. In the following example, the `expirationToken` added for `child` is also applied to `parent`:
 
 ```csharp
 using (var parent = cache.CreateEntry(key))

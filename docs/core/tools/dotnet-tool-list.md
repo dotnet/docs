@@ -29,7 +29,7 @@ dotnet tool list -h|--help
 
 ## Description
 
-The `dotnet tool list` command provides a way for you to list all or a specific .NET global, tool-path, or local tools installed on your machine. The command lists the package name, version installed, and the tool command.  To use the command, you specify one of the following:
+The `dotnet tool list` command provides a way for you to list .NET global, tool-path, or local tools installed on your machine. The command lists the package name, version installed, and the tool command.  To use the command, you specify one of the following:
 
 * To list global tools installed in the default location, use the `--global` option
 * To list global tools installed in a custom location, use the `--tool-path` option.

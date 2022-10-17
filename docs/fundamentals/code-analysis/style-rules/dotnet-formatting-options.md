@@ -28,7 +28,7 @@ dotnet_separate_import_directive_groups = true
 ```
 
 > [!TIP]
-> If your code is C#, additional [C#-specific `using` directive options](csharp-formatting-options.md#using-directive-options) are available.
+> If your code is C#, additional [C#-specific `using` directive option](ide0065.md) is available.
 
 ### dotnet\_sort\_system\_directives_first
 

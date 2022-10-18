@@ -322,6 +322,7 @@ docker image rm 25aeb97a2e21
 
 ## Next steps
 
+- [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk)
 - [Tutorial: Containerize a .NET app](build-container.md)
 - [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
 - [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)

@@ -520,18 +520,18 @@ public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTel
 }
 ```
 
-[distributed tracing documentation]: https://learn.microsoft.com/dotnet/core/diagnostics/distributed-tracing
-[EventCounters]: https://learn.microsoft.com/dotnet/core/diagnostics/event-counters
-[well-known counters]: https://learn.microsoft.com/dotnet/core/diagnostics/available-counters
-[dotnet-counter docs]: https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-counters
-[dotnet-trace docs]: https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace
-[dotnet-trace analysis docs]: https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace#view-the-trace-captured-from-dotnet-trace
+[distributed tracing documentation]: ../../core/diagnostics/distributed-tracing.md
+[EventCounters]: ../../core/diagnostics/event-counters.md
+[well-known counters]: ../../core/diagnostics/available-counters.md
+[dotnet-counter docs]: ../../core/diagnostics/dotnet-counters.md
+[dotnet-trace docs]: ../../core/diagnostics/dotnet-trace.md
+[dotnet-trace analysis docs]: ../../core/diagnostics/dotnet-trace.md#view-the-trace-captured-from-dotnet-trace
 [PerfView]: https://github.com/microsoft/perfview
-[AppInsights EventCounters docs]: https://learn.microsoft.com/azure/azure-monitor/app/eventcounters
+[AppInsights EventCounters docs]: /azure/azure-monitor/app/eventcounters
 [`TraceEvent`]: https://github.com/microsoft/perfview/blob/main/documentation/TraceEvent/TraceEventLibrary.md
 [YARP]: https://github.com/microsoft/reverse-proxy
-[EventSource]: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource
-[EventListener]: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracing.eventlistener
+[EventSource]: xref:System.Diagnostics.Tracing.EventSource
+[EventListener]: xref:System.Diagnostics.Tracing.EventListener
 [`Yarp.Telemetry.Consumption`]: https://www.nuget.org/packages/Yarp.Telemetry.Consumption
 [`HttpMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Http/HttpMetrics.cs
 [`NameResolutionMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NameResolution/NameResolutionMetrics.cs
@@ -543,5 +543,5 @@ public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTel
 [`INetSecurityTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NetSecurity/INetSecurityTelemetryConsumer.cs
 [`ISocketsTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Sockets/ISocketsTelemetryConsumer.cs
 [`IKestrelTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Kestrel/IKestrelTelemetryConsumer.cs
-[`AsyncLocal`]: https://learn.microsoft.com/dotnet/api/system.threading.asynclocal-1
-[`ActivityID`]: https://learn.microsoft.com/dotnet/core/diagnostics/eventsource-activity-ids
+[`AsyncLocal`]: xref:System.Threading.AsyncLocal%601
+[`ActivityID`]: ../../core/diagnostics/eventsource-activity-ids.md

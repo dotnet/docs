@@ -247,7 +247,7 @@ For more information, see [.NET environment variables](../tools/dotnet-environme
 
 ### `ContainerEntrypoint`
 
-The container entry point can be used to customize the `ENTRYPOINT` of the container, the binary that is run by default when the container is started. By default, for builds that create an executable binary that binary is set as the ContainerEntrypoint. For builds that do not create an executable binary `dotnet path/to/application.dll` is used as the `ContainerEntrypoint`.
+The container entry point can be used to customize the `ENTRYPOINT` of the container, which is the executable that is called when the container is started. By default, for builds that create an app host it is set as the `ContainerEntrypoint`. For builds that don't create an executable, the `dotnet path/to/application.dll` is used as the `ContainerEntrypoint`.
 
 The `ContainerEntrypoint` node has a single attribute:
 

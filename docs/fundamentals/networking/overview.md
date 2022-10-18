@@ -42,4 +42,5 @@ To bypass these validation rules, set <xref:System.UriCreationOptions.DangerousD
 - [Sockets in .NET](sockets/sockets-overview.md)
 - [TCP in .NET](tcp/tcp-overview.md)
 - [Tutorial: Make HTTP requests in a .NET console app using C#](../../csharp/tutorials/console-webapiclient.md)
+- [Networking Telemetry in .NET](networking-telemetry.md)
 - [.NET Networking improvements](https://devblogs.microsoft.com/dotnet/dotnet-6-networking-improvements)

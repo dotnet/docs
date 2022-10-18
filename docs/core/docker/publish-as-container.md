@@ -56,7 +56,7 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
-      Content root path: C:\Users\David Pine\source\repos\docs\docs\core\docker\snippets\Worker
+      Content root path: .\Worker
 info: DotNet.ContainerImage.Worker[0]
       Worker running at: 10/18/2022 08:56:01 -05:00
 info: DotNet.ContainerImage.Worker[0]
@@ -91,8 +91,14 @@ By default, the container image name is the `AssemblyName` of the project. If th
 To publish the .NET app as a container, use the following `dotnet publish` command:
 
 ```dotnetcli
-dotnet publish --os linux --arch x64 /t:PublishContainer
+dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
 ```
+
+The preceding .NET CLI command, publishes the app as a container:
+
+- Targeting Linux as the OS (`--os linux`).
+- Specifying an x64 architecture (`--arch x64`).
+- Using the release configuration (`-c Release`).
 
 > [!IMPORTANT]
 > To build the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
@@ -102,222 +108,203 @@ dotnet publish --os linux --arch x64 /t:PublishContainer
 > ```
 
 > [!TIP]
-> Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`.
+> Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
-This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\Worker\bin\Release\net6.0\publish\`
+The command will output similar to the following:
 
-#### [Windows](#tab/windows)
-
-From the *Worker* folder, get a directory listing of the publish folder to verify that the *DotNet.Docker.dll* file was created.
-
-```powershell
-dir .\bin\Release\net6.0\publish\
-
-    Directory: C:\Users\dapine\Worker\bin\Release\net6.0\publish
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a---            3/8/2022 10:43 AM            431 DotNet.Docker.deps.json
--a---            3/8/2022 10:43 AM           6144 DotNet.Docker.dll
--a---            3/8/2022 10:43 AM         149504 DotNet.Docker.exe
--a---            3/8/2022 10:43 AM          10516 DotNet.Docker.pdb
--a---            3/8/2022 10:43 AM            253 DotNet.Docker.runtimeconfig.json
+```dotnetcli
+Determining projects to restore...
+  All projects are up-to-date for restore.
+  DotNet.ContainerImage -> .\Worker\bin\Release\net7.0\linux-x64\DotNet.ContainerImage.dll
+  DotNet.ContainerImage -> .\Worker\bin\Release\net7.0\linux-x64\publish\
+  Pushed container 'dotnet-worker-image:1.0.0' to registry 'docker://'
 ```
 
-#### [Linux](#tab/linux)
-
-Use the `ls` command to get a directory listing and verify that the *DotNet.Docker.dll* file was created.
-
-```bash
-me@DESKTOP:/docker-working/app$ ls bin/Release/net6.0/publish
-DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
-```
-
----
+This command compiles your worker app to the *publish* folder and pushes the container to your local docker registry.
 
 ## Configure container image
 
-Now that you have an image that contains your app, you can create a container. You can create a container in two ways. First, create a new container that is stopped.
+You can control many aspects of the generated container through MSBuild properties. In general, if you could use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
-```console
-docker create --name core-counter counter-image
+> [!NOTE]
+> The only exception to this are `RUN` commands, due to the way containers are built, those cannot be emulated. If you need this functionality, you will need to use a _Dockerfile_ to build your container images.
+
+> [!IMPORTANT]
+> Only Linux containers are currently supported.
+
+### `ContainerBaseImage`
+
+This property controls the image used as the basis for your image. By default, we will infer the following values for you based on the properties of your project:
+
+* if your project is self-contained, we use the `mcr.microsoft.com/dotnet/runtime-deps` image as the base image
+* if your project is an ASP.NET Core project, we use the `mcr.microsoft.com/dotnet/aspnet` image as the base image
+* otherwise we use the `mcr.microsoft.com/dotnet/runtime` image as the base image
+
+We infer the tag of the image to be the numeric component of your chosen `TargetFramework` - so a `.net6.0` project will use the `6.0` tag of the inferred base image, a `.net7.0-linux` project will use the `7.0` tag, and so on.
+
+If you set a value here, you should set the fully-qualified name of the image to use as the base, including any tag you prefer:
+
+```xml
+<ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:6.0</ContainerBaseImage>
 ```
 
-The `docker create` command from above will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container:
+### `ContainerRegistry`
 
-```console
-cf01364df4539812684c64277f5363a8fb354ef4c90785dc0845769a6c5b0f8e
+This property controls the destination registry - the place that the newly-created image will be pushed to.
+
+Be default, we push to the local Docker daemon (annotated by `docker://`), but for this release you can specify any _unauthenticated_ registry. For example:
+
+```xml
+<ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>
 ```
 
-To see a list of *all* containers, use the `docker ps -a` command:
+> [!IMPORTANT]
+> There is no authentication currently supported. This is planned for [a future release](https://github.com/dotnet/sdk-container-builds/issues/70), so make sure you're pointing to a local Docker daemon.
 
-```console
-docker ps -a
-CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS    PORTS     NAMES
-cf01364df453   counter-image   "dotnet DotNet.Docke…"   18 seconds ago   Created             core-counter
+### `ContainerImageName`
+
+This property controls the name of the image itself, e.g `dotnet/runtime` or `my-awesome-app`.
+
+By default, the value used will be the `AssemblyName` of the project.
+
+```xml
+<ContainerImageName>my-super-awesome-app</ContainerImageName>
 ```
 
-### Manage the container
+> [!CAUTION]
+> Image names can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number, any other characters will result in an error being thrown.
 
-The container was created with a specific name `core-counter`, this name is used to manage the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
+## `ContainerImageTag(s)`
 
-```console
-docker start core-counter
-core-counter
+This property controls the tag that is generated for the image. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even just different baked-in configuration. This property also can be used to push multiple tags - simply use a semicolon-delimited set of tags in the `ContainerImageTags` property, similar to setting multiple `TargetFrameworks`.
 
-docker ps
-CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS     NAMES
-cf01364df453   counter-image   "dotnet DotNet.Docke…"   53 seconds ago   Up 10 seconds             core-counter
+By default, the value used will be the `Version` of the project.
+
+```xml
+<ContainerImageTag>1.2.3-alpha2</ContainerImageTag>
 ```
 
-Similarly, the `docker stop` command will stop the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
-
-```console
-docker stop core-counter
-core-counter
-
-docker ps
-CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
+```xml
+<ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
 ```
 
-### Connect to a container
+Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form will result in an error being thrown.
 
-After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>Ctrl+C</kbd> keystroke is used to detach from the running container. This keystroke will end the process in the container unless otherwise specified, which would stop the container. The `--sig-proxy=false` parameter ensures that <kbd>Ctrl+C</kbd> will not stop the process in the container.
+### `ContainerWorkingDirectory`
 
-After you detach from the container, reattach to verify that it's still running and counting.
+This property controls the working directory of the container - the directory that commands are executed within if not other command is run.
 
-```console
-docker start core-counter
-core-counter
+By default, we use the `/app` directory as the working directory.
 
-docker attach --sig-proxy=false core-counter
-Counter: 7
-Counter: 8
-Counter: 9
-^C
-
-docker attach --sig-proxy=false core-counter
-Counter: 17
-Counter: 18
-Counter: 19
-^C
+```xml
+<ContainerWorkingDirectory>/bin</ContainerWorkingDirectory>
 ```
 
-### Delete a container
+## `ContainerPort`
 
-For this article, you don't want containers hanging around that don't do anything. Delete the container you previously created. If the container is running, stop it.
+This item adds TCP or UDP ports to the list of known ports for the container. This enables container runtimes like Docker to map these ports to the host machine automatically. This is often used as documentation for the container, but can also be used to enable automatic port mapping.
 
-```console
-docker stop core-counter
+ContainerPort items have two properties:
+
+* Include
+  * The port number to expose
+* Type
+  * One of `tcp` or `udp` - the default is `tcp`
+
+```xml
+<ItemGroup>
+    <ContainerPort Include="80" Type="tcp" />
+</ItemGroup>
 ```
 
-The following example lists all containers. It then uses the `docker rm` command to delete the container and then checks a second time for any running containers.
+> **Note**
+> This item does nothing for the container by default and should be considered advisory at best.
 
-```console
-docker ps -a
-CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS                        PORTS    NAMES
-2f6424a7ddce    counter-image    "dotnet DotNet.Dock…"    7 minutes ago    Exited (143) 20 seconds ago            core-counter
+### `ContainerLabel`
 
-docker rm core-counter
-core-counter
+This item adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools.
 
-docker ps -a
-CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
+ContainerLabel items have two properties:
+
+* Include
+  * The key of the label
+* Value
+  * The value of the label - this may be empty
+
+See [default container labels](#default-container-labels) for a list of labels that are created by default.
+
+```xml
+<ItemGroup>
+    <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
+<ItemGroup>
 ```
 
-### Single run
+## `ContainerEnvironmentVariable`
 
-Docker provides the `docker run` command to create and run the container as a single command. This command eliminates the need to run `docker create` and then `docker start`. You can also set this command to automatically delete the container when the container stops. For example, use `docker run -it --rm` to do two things, first, automatically use the current terminal to connect to the container, and then when the container finishes, remove it:
+This item adds a new environment variable to the container. Environment variables will be accessible to the application running in the container immediately, and are often used to change the runtime behavior of the running application.
 
-```console
-docker run -it --rm counter-image
-Counter: 1
-Counter: 2
-Counter: 3
-Counter: 4
-Counter: 5
-^C
+ContainerEnvironmentVariable items have two properties:
+
+* Include
+  * The name of the environment variable
+* Value
+  * The value of the environment variable
+
+```xml
+<ItemGroup>
+  <ContainerEnvironmentVariable Include="LOGGER_VERBOSITY" Value="Trace" />
+</ItemGroup>
 ```
 
-The container also passes parameters into the execution of the .NET app. To instruct the .NET app to count only to 3 pass in 3.
+## `ContainerEntrypoint`
 
-```console
-docker run -it --rm counter-image 3
-Counter: 1
-Counter: 2
-Counter: 3
+This item can be used to customize the entrypoint of the container - the binary that is run by default when the container is started.
+
+By default, for builds that create an executable binary that binary is set as the ContainerEntrypoint. For builds that do not create an executable binary `dotnet path/to/application.dll` is used as the ContainerEntrypoint.
+
+ContainerEntrypoint items have one property:
+
+* Include
+  * The command, option, or argument to use in the entrypoint command
+
+```xml
+<ItemGroup Label="Entrypoint Assignment">
+  <!-- This is how you would start the dotnet ef tool in your container -->
+  <ContainerEntrypoint Include="dotnet" />
+  <ContainerEntrypoint Include="ef" />
+
+  <!-- This shorthand syntax means the same thing - note the semicolon separating the tokens. -->
+  <ContainerEntrypoint Include="dotnet;ef" />
+</ItemGroup>
 ```
 
-With `docker run -it`, the <kbd>Ctrl+C</kbd> command will stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it doesn't exist:
+## `ContainerEntrypointArgs`
 
-```console
-docker ps -a
-CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
+This item controls the default arguments provided to the `ContainerEntrypoint`. This should be used when the ContainerEntrypoint is a program that the user might want to use on its own.
+
+By default, no ContainerEntrypointArgs are created on your behalf.
+
+ContainerEntrypointArg items have one property:
+
+* Include
+  * The option or argument to apply to the ContainerEntrypoint command
+
+```xml
+<ItemGroup>
+  <!-- Assuming the ContainerEntrypoint defined above, this would be the way to update the database by default, but let the user run a different EF command. -->
+  <ContainerEntrypointArgs Include="database" />
+  <ContainerEntrypointArgs Include="update" />
+
+  <!-- This is the shorthand syntax for the same idea -->
+  <ContainerEntrypointArgs Include="database;update" />
+</ItemGroup>
 ```
 
-### Change the ENTRYPOINT
+### Default container labels
 
-The `docker run` command also lets you modify the `ENTRYPOINT` command from the *Dockerfile* and run something else, but only for that container. For example, use the following command to run `bash` or `cmd.exe`. Edit the command as necessary.
+Labels are often used to provide consistent metadata on container images. This package provides some default labels to encourage better maintainability of the generated images.
 
-#### [Windows](#tab/windows)
-
-In this example, `ENTRYPOINT` is changed to `cmd.exe`. <kbd>Ctrl+C</kbd> is pressed to end the process and stop the container.
-
-```console
-docker run -it --rm --entrypoint "cmd.exe" counter-image
-
-Microsoft Windows [Version 10.0.17763.379]
-(c) 2018 Microsoft Corporation. All rights reserved.
-
-C:\>dir
- Volume in drive C has no label.
- Volume Serial Number is 3005-1E84
-
- Directory of C:\
-
-04/09/2019  08:46 AM    <DIR>          app
-03/07/2019  10:25 AM             5,510 License.txt
-04/02/2019  01:35 PM    <DIR>          Program Files
-04/09/2019  01:06 PM    <DIR>          Users
-04/02/2019  01:35 PM    <DIR>          Windows
-               1 File(s)          5,510 bytes
-               4 Dir(s)  21,246,517,248 bytes free
-
-C:\>^C
-```
-
-#### [Linux](#tab/linux)
-
-In this example, `ENTRYPOINT` is changed to `bash`. The `exit` command is run which ends the process and stop the container.
-
-```bash
-docker run -it --rm --entrypoint "bash" counter-image
-root@9f8de8fbd4a8:/App# ls
-DotNet.Docker  DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
-root@9f8de8fbd4a8:/App# dotnet DotNet.Docker.dll 7
-Counter: 1
-Counter: 2
-Counter: 3
-^C
-root@9f8de8fbd4a8:/App# exit
-exit
-```
-
----
-
-
-
-## Essential commands
-
-Docker has many different commands that create, manage, and interact with containers and images. These Docker commands are essential to managing your containers:
-
-- [docker build](https://docs.docker.com/engine/reference/commandline/build/)
-- [docker run](https://docs.docker.com/engine/reference/commandline/run/)
-- [docker ps](https://docs.docker.com/engine/reference/commandline/ps/)
-- [docker stop](https://docs.docker.com/engine/reference/commandline/stop/)
-- [docker rm](https://docs.docker.com/engine/reference/commandline/rm/)
-- [docker rmi](https://docs.docker.com/engine/reference/commandline/rmi/)
-- [docker image](https://docs.docker.com/engine/reference/commandline/image/)
+* `org.opencontainers.image.created` is set to the ISO 8601 format of the current UTC DateTime
 
 ## Clean up resources
 
@@ -329,19 +316,19 @@ During this tutorial, you created containers and images. If you want, delete the
     docker ps -a
     ```
 
-02. Stop containers that are running by their name.
+01. Stop containers that are running by their name.
 
     ```console
     docker stop counter-image
     ```
 
-03. Delete the container
+01. Delete the container
 
     ```console
     docker rm counter-image
     ```
 
-Next, delete any images that you no longer want on your machine. Delete the image created by your *Dockerfile* and then delete the .NET image the *Dockerfile* was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.
+Next, delete any images that you no longer want on your machine. Delete the image created by your _Dockerfile_ and then delete the .NET image the _Dockerfile_ was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.
 
 ```console
 docker rmi counter-image:latest

@@ -121,6 +121,7 @@ The library provides the following strongly-typed metrics types: [`HttpMetrics`]
 ## Events
 
 Events give you access to
+
 - accurate timestamps throughout the lifetime of an operation
   - E.g. how long it took to connect to the server and how long it took to receive response headers
 - debug/trace information that may not be obtainable by other means
@@ -292,6 +293,7 @@ As telemetry events (and their corresponding callbacks) occur as part of the und
 This means that you can observe `asyncLocal.Value` from within the callback, but if you set the value, nothing will be able to observe it further up the stack.
 
 The general pattern is therefore to:
+
 1. Create a mutable class that can be updated from inside event callbacks
 
     ```c#

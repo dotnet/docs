@@ -384,7 +384,7 @@ The `System.Net` stack emits such events from `Private.InternalDiagnostics.Syste
 If you change the condition in the `EventListener` example above to `eventSource.Name.Contains("System.Net")`, you will see 100+ events from different layers in the stack.
 See [full example](https://gist.github.com/MihaZupan/4bed7333bcafde39e8b86beef2006475).
 
-## Feedback
+## Need more telemetry?
 
 If you have suggestions for other useful information that could be exposed via events or metrics, please [let us know](https://github.com/dotnet/runtime/issues/new).
 

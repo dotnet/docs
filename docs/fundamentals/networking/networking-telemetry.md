@@ -13,6 +13,7 @@ If you are looking for information on tracking HTTP operations across different 
 The .NET networking stack is instrumented at various layers, giving you the option to collect accurate timings throughout the lifetime of an HTTP request, and event counters to monitor overall process statistics.
 
 Networking information is split across several groups:
+
 - `System.Net.Http` (`HttpClient` and `SocketsHttpHandler`)
 - `System.Net.NameResolution` (`Dns`)
 - `System.Net.Security` (`SslStream`)
@@ -28,6 +29,7 @@ The telemetry has some performance overhead when enabled, so make sure to subscr
 
 Networking components are instrumented to publish basic diagnostics information using EventCounters.
 They include information like
+
 - `System.Net.Http` > `requests-started`
 - `System.Net.Http` > `requests-failed`
 - `System.Net.Http` > `http11-connections-current-total`
@@ -46,10 +48,13 @@ They include information like
 ```console
 dotnet tool install --global dotnet-counters
 ```
+
 ```console
 dotnet-counters monitor --counters System.Net.Http,System.Net.Security --process-id 1234
 ```
+
 The command will keep refreshing the console with the latest numbers
+
 ```txt
 [System.Net.Http]
     Current Http 1.1 Connections                       3
@@ -65,7 +70,6 @@ The command will keep refreshing the console with the latest numbers
     Requests Started Rate (Count / 1 sec)             18
 ```
 
-
 See [dotnet-counter docs] for all the available commands and parameters.
 
 #### Application Insights
@@ -74,6 +78,7 @@ Application Insights does not collect event counters by default.
 See [AppInsights EventCounters docs] on customizing the set of counters you are interested in.
 
 For example:
+
 ```c#
 services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options) =>
 {
@@ -83,6 +88,7 @@ services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options
     module.Counters.Add(new EventCounterCollectionRequest("System.Net.Security", "all-tls-sessions-open"));
 });
 ```
+
 See [this sample](https://gist.github.com/MihaZupan/02ec402fa34880df129351b92e18e86c) for subscribing to many runtime and ASP.NET event counters.
 
 ### Consume metrics in-process
@@ -91,6 +97,7 @@ The [`Yarp.Telemetry.Consumption`] library makes it easy to consume metrics from
 While the package is currently maintained as part of the [YARP] project, it can be used in any .NET application.
 
 To use it, implement the `IMetricsConsumer<TMetrics>` interface:
+
 ```c#
 public sealed class MyMetricsConsumer : IMetricsConsumer<SocketsMetrics>
 {
@@ -101,7 +108,9 @@ public sealed class MyMetricsConsumer : IMetricsConsumer<SocketsMetrics>
     }
 }
 ```
+
 And register the implementations with your DI container:
+
 ```c#
 services.AddSingleton<IMetricsConsumer<SocketsMetrics>, MyMetricsConsumer>();
 services.AddTelemetryListeners();
@@ -126,6 +135,7 @@ Prefer in-process collection when possible for easier event correlation and anal
 #### EventListener
 
 [EventListener] is an API that allows you to listen to [EventSource] events from within the same process that produced them.
+
 ```c#
 using System.Diagnostics.Tracing;
 
@@ -151,7 +161,9 @@ public sealed class MyListener : EventListener
     }
 }
 ```
+
 Will print something like the following:
+
 ```txt
 00:598 RequestStart: scheme=https host=httpbin.org port=443 pathAndQuery=/get versionMajor=1 versionMinor=1 versionPolicy=0
 01:470 ConnectionEstablished: versionMajor=1 versionMinor=1
@@ -174,6 +186,7 @@ To address this, we created a library that makes it easy to consume networking e
 While the package is currently maintained as part of the [YARP] project, it can be used in any .NET application.
 
 To use it, implement the interfaces and methods (events) you are interested in:
+
 ```c#
 public sealed class MyTelemetryConsumer : IHttpTelemetryConsumer, INetSecurityTelemetryConsumer
 {
@@ -188,7 +201,9 @@ public sealed class MyTelemetryConsumer : IHttpTelemetryConsumer, INetSecurityTe
     }
 }
 ```
+
 And register the implementations with your DI container:
+
 ```c#
 services.AddTelemetryConsumer<MyTelemetryConsumer>();
 ```
@@ -206,6 +221,7 @@ Note that these callbacks are called as part of the instrumented operation, so t
 ```console
 dotnet tool install --global dotnet-trace
 ```
+
 ```console
 dotnet-trace collect --providers System.Net.Http,System.Net.Security,System.Threading.Tasks.TplEventSource:0x80:4 --process-id 1234
 ```
@@ -220,6 +236,7 @@ See [dotnet-trace analysis docs].
 [PerfView] is a free, advanced performance-analysis tool. It runs on Windows, but can also analyze traces captured on Linux.
 
 To configure the list of events to capture, specify them under `Advanced Options / Additional Providers`:
+
 ```txt
 *System.Net.Sockets,*System.Net.NameResolution,*System.Net.Http,*System.Net.Security
 ```
@@ -245,6 +262,7 @@ Get familiar with [`AsyncLocal`] as this type is key to correlating work across 
 `AsyncLocal` allows you to access the same state deeper into the async flow of an operation. `AsyncLocal` values only flow down (deeper into the async call stack), and don't propagate changes up to the caller.
 
 Consider the following example:
+
 ```c#
 AsyncLocal<int> asyncLocal = new();
 asyncLocal.Value = 1;
@@ -259,12 +277,15 @@ async Task WorkAsync()
     Console.WriteLine($"Value in WorkAsync: {asyncLocal.Value}");
 }
 ```
+
 which prints
+
 ```txt
 Value in WorkAsync: 1
 Value in WorkAsync: 2
 Value after WorkAsync: 1
 ```
+
 The value `1` flowed down from the caller into `WorkAsync`, but the modification in `WorkAsync` (`2`) did not flow back up to the caller.
 
 As telemetry events (and their corresponding callbacks) occur as part of the underlying operation, they happen within the same async scope as the caller that initiated the request.
@@ -272,13 +293,16 @@ This means that you can observe `asyncLocal.Value` from within the callback, but
 
 The general pattern is therefore to:
 1. Create a mutable class that can be updated from inside event callbacks
+
     ```c#
     public sealed class RequestInfo
     {
         public DateTime StartTime, HeadersSent;
     }
     ```
+
 1. Set the `AsyncLocal.Value` *before* the main operation so that the state will flow into it the operation.
+
     ```c#
     private static readonly AsyncLocal<RequestInfo> _requestInfo = new();
     
@@ -290,14 +314,18 @@ The general pattern is therefore to:
         info.StartTime = DateTime.UtcNow;
         await _client.GetStringAsync(url);
     ```
+
 1. Inside the event callbacks, check if the shared state is available and update it. `AsyncLocal.Value` will be `null` if the request was sent by a component that didn't set the `AsyncLocal.Value` in the first place.
+
     ```c#
     public void OnRequestHeadersStop(DateTime timestamp)
     {
         if (_requestInfo.Value is { } info) info.HeadersSent = timestamp;
     }
     ```
+
 1. Process the collected information after finishing the operation
+
     ```c#
     await _client.GetStringAsync(url);
     
@@ -311,6 +339,7 @@ See the samples section below for more ways to do this.
 Every event has a piece of data attached to it called [`ActivityID`]. This ID encodes the async hierarchy at the time the event was produced.
 
 If you look at a trace file in PerfView, you will see events like:
+
 ```txt
 System.Net.Http/Request/Start           ActivityID="/#14396/1/1/"
 System.Net.Http/RequestHeaders/Start    ActivityID="/#14396/1/1/2/"
@@ -319,6 +348,7 @@ System.Net.Http/ResponseHeaders/Start   ActivityID="/#14396/1/1/3/"
 System.Net.Http/ResponseHeaders/Stop    ActivityID="/#14396/1/1/3/"
 System.Net.Http/Request/Stop            ActivityID="/#14396/1/1/"
 ```
+
 You will know that these events belong to the same request because they share the `/#14396/1/1/` prefix.
 
 When doing manual investigations, a useful trick is to look for the `System.Net.Http/Request/Start` event of a request you are interested in, then pasting its `ActivityID` in the `Text Filter` text box. If you now select all available providers, you will see the list of all events that were produced as part of that request.
@@ -331,6 +361,7 @@ Since .NET 6, an HTTP request is no longer tied to a specific connection.
 Instead, the request will be serviced as soon as any connection is available.
 
 This means you may see the order of events such as:
+
 1. Request start
 1. Dns start
 1. Request stop
@@ -430,6 +461,7 @@ public sealed class TelemetryConsumer : IHttpTelemetryConsumer
 ### Time to process a request in ASP.NET Core running Kestrel
 
 This is currently the most accurate way to measure the duration of a given request.
+
 ```c#
 public sealed class KestrelTelemetryConsumer : IKestrelTelemetryConsumer
 {

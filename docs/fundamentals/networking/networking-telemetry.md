@@ -37,7 +37,7 @@ They include information like
 - `System.Net.Sockets` > `outgoing-connections-established`
 - `System.Net.NameResolution` > `dns-lookups-duration`
 
-**For the whole list, check out [well-known counters].**
+**For the full list, check out [well-known counters].**
 
 ### Monitor metrics from outside the process
 
@@ -290,7 +290,7 @@ Value after WorkAsync: 1
 The value `1` flowed down from the caller into `WorkAsync`, but the modification in `WorkAsync` (`2`) did not flow back up to the caller.
 
 As telemetry events (and their corresponding callbacks) occur as part of the underlying operation, they happen within the same async scope as the caller that initiated the request.
-This means that you can observe `asyncLocal.Value` from within the callback, but if you set the value, nothing will be able to observe it further up the stack.
+This means that you can observe `asyncLocal.Value` from within the callback, but if you set the value in the callback, nothing will be able to observe it further up the stack.
 
 The general pattern is therefore to:
 

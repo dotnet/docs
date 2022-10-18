@@ -1,109 +1,119 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 10/17/2022
+ms.date: 10/18/2022
 ms.topic: tutorial
-ms.custom: "mvc"
 ---
 
 # Containerize a .NET app with dotnet publish
 
-In this tutorial, you'll learn how to containerize a .NET application using the `dotnet publish` command. Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud.
+Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you'll learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command.
 
 ## Prerequisites
 
 Install the following prerequisites:
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download)\
+- [.NET SDK](https://dotnet.microsoft.com/download)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop)
-- A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
+- Familiarity with [Worker Services in .NET](../extensions/workers.md)
 
 ## Create .NET app
 
-You need a .NET app that the Docker container will run. Open your terminal, create a working folder if you haven't already, and enter it. In the working folder, run the following command to create a new project in a subdirectory named *app*:
+You need a .NET app to containerize, so you'll start by creating a new app from a template. Open your terminal, create a working folder (*sample-directory*) if you haven't already, and change directories so that you're in it. In the working folder, run the following command to create a new project in a subdirectory named *Worker*:
 
 ```dotnetcli
-dotnet new console -o App -n DotNet.Docker
+dotnet new worker -o Worker -n DotNet.ContainerImage
 ```
 
 Your folder tree will look like the following:
 
 ```Directory
-📁 docker-working
-    └──📂 App
-        ├──DotNet.Docker.csproj
+📁 sample-directory
+    └──📂 Worker
+        ├──appsettings.Development.json
+        ├──appsettings.json
+        ├──DotNet.ContainerImage.csproj
         ├──Program.cs
+        ├──Worker.cs
         └──📂 obj
-            ├── DotNet.Docker.csproj.nuget.dgspec.json
-            ├── DotNet.Docker.csproj.nuget.g.props
-            ├── DotNet.Docker.csproj.nuget.g.targets
+            ├── DotNet.ContainerImage.csproj.nuget.dgspec.json
+            ├── DotNet.ContainerImage.csproj.nuget.g.props
+            ├── DotNet.ContainerImage.csproj.nuget.g.targets
             ├── project.assets.json
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *Worker* and generates a worker service that when ran will log a message every second. Change directories and navigate into the *Worker* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
 
 ```dotnetcli
 dotnet run
-Hello World!
+Building...
+info: DotNet.ContainerImage.Worker[0]
+      Worker running at: 10/18/2022 08:56:00 -05:00
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\David Pine\source\repos\docs\docs\core\docker\snippets\Worker
+info: DotNet.ContainerImage.Worker[0]
+      Worker running at: 10/18/2022 08:56:01 -05:00
+info: DotNet.ContainerImage.Worker[0]
+      Worker running at: 10/18/2022 08:56:02 -05:00
+info: DotNet.ContainerImage.Worker[0]
+      Worker running at: 10/18/2022 08:56:03 -05:00
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+Attempting to cancel the build...
 ```
 
-The default template creates an app that prints to the terminal and then immediately terminates. For this tutorial, you'll use an app that loops indefinitely. Open the *Program.cs* file in a text editor.
+The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it.
 
-> [!TIP]
-> If you're using Visual Studio Code, from the previous terminal session type the following command:
->
-> ```console
-> code .
-> ```
->
-> This will open the *App* folder that contains the project in Visual Studio Code.
+## Add NuGet package
 
-The *Program.cs* should look like the following C# code:
-
-```csharp
-Console.WriteLine("Hello World!");
-```
-
-Replace the file with the following code that counts numbers every second:
-
-:::code source="snippets/App/Program.cs":::
-
-Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. The following is an example output:
+The .NET 7 SDK will eventually be capable of publishing .NET apps as containers without the use of the [Microsoft.NET.Build.Containers NuGet package](https://libraries.io/nuget/Microsoft.NET.Build.Containers). Until that time, this package is required. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
-dotnet run
-Counter: 1
-Counter: 2
-Counter: 3
-Counter: 4
-^C
+dotnet add package Microsoft.NET.Build.Containers
 ```
 
-If you pass a number on the command line to the app, it will only count up to that amount and then exit. Try it with `dotnet run -- 5` to count to five.
+## Set the container image name
 
-> [!IMPORTANT]
-> Any parameters after `--` are not passed to the `dotnet run` command and instead are passed to your application.
+There are various configuration options available when publishing an app as a container. For more information, see [Configure container image](#configure-container-image).
+
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` as shown in the following:
+
+:::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
 
 ## Publish .NET app
 
-Before adding the .NET app to the Docker image, first it must be published. It is best to have the container run the published version of the app. To publish the app, run the following command:
+To publish the .NET app as a container, use the following `dotnet publish` command:
 
 ```dotnetcli
-dotnet publish -c Release
+dotnet publish --os linux --arch x64 /t:PublishContainer
 ```
 
-This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\net6.0\publish\`
+> [!IMPORTANT]
+> To build the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
+>
+> ```console
+> ..\.nuget\packages\microsoft.net.build.containers\0.1.8\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018: The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
+> ```
+
+> [!TIP]
+> Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`.
+
+This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\Worker\bin\Release\net6.0\publish\`
 
 #### [Windows](#tab/windows)
 
-From the *App* folder, get a directory listing of the publish folder to verify that the *DotNet.Docker.dll* file was created.
+From the *Worker* folder, get a directory listing of the publish folder to verify that the *DotNet.Docker.dll* file was created.
 
 ```powershell
 dir .\bin\Release\net6.0\publish\
 
-    Directory: C:\Users\dapine\App\bin\Release\net6.0\publish
+    Directory: C:\Users\dapine\Worker\bin\Release\net6.0\publish
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
@@ -125,114 +135,7 @@ DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb
 
 ---
 
-## Create the Dockerfile
-
-The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
-
-Create a file named *Dockerfile* in the directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
-
-:::code language="docker" source="snippets/App/Dockerfile":::
-
-> [!NOTE]
-> The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:6.0` image could have been used.
-
-The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub &mdash; which hosts publicly accessible containers. The `dotnet` segment is the container repository, whereas the `sdk` or `aspnet` segment is the container image name. The image is tagged with `6.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:6.0` is the .NET 6.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 6.0 SDK and the base image referred to in the *Dockerfile* is tagged with **6.0**.
-
-Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
-
-```Directory
-📁 docker-working
-    └──📂 App
-        ├── Dockerfile
-        ├── DotNet.Docker.csproj
-        ├── Program.cs
-        ├──📂 bin
-        │   └──📂 Release
-        │       └──📂 net6.0
-        │           └──📂 publish
-        │               ├── DotNet.Docker.deps.json
-        │               ├── DotNet.Docker.exe
-        │               ├── DotNet.Docker.dll
-        │               ├── DotNet.Docker.pdb
-        │               └── DotNet.Docker.runtimeconfig.json
-        └──obj 📁
-            └──...
-```
-
-From your terminal, run the following command:
-
-```console
-docker build -t counter-image -f Dockerfile .
-```
-
-Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command sets the build context of the image. The `-f` switch is the path to the _Dockerfile_. This command builds the image and creates a local repository named **counter-image** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
-
-```console
-docker images
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-counter-image                      latest    2f15637dc1f6   10 minutes ago   208MB
-```
-
-The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `208MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
-
-```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
-WORKDIR /App
-COPY --from=build-env /App/out .
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
-```
-
-The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the *publish* folder is copied to a folder named *App* in the container.
-
-The `WORKDIR` command changes the **current directory** inside of the container to *App*.
-
-The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
-
-> [!TIP]
-> For added security, you can opt out of the diagnostic pipeline. When you opt-out this allows the container to run as read-only. To do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
->
-> ```dockerfile
-> ENV DOTNET_EnableDiagnostics=0
-> ```
->
-> For more information on various .NET environment variables, see [.NET environment variables](../tools/dotnet-environment-variables.md).
-
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
-From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
-
-```console
-docker build -t counter-image -f Dockerfile .
-[+] Building 3.1s (14/14) FINISHED
- => [internal] load build definition from Dockerfile                              0.5s
- => => transferring dockerfile: 32B                                               0.0s
- => [internal] load .dockerignore                                                 0.6s
- => => transferring context: 2B                                                   0.0s
- => [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:6.0              0.8s
- => [internal] load metadata for mcr.microsoft.com/dotnet/sdk:6.0                 1.1s
- => [stage-1 1/3] FROM mcr.microsoft.com/dotnet/aspnet:6.0@sha256:f1539d71        0.0s
- => [internal] load build context                                                 0.4s
- => => transferring context: 4.00kB                                               0.1s
- => [build-env 1/5] FROM mcr.microsoft.com/dotnet/sdk:6.0@sha256:16e355af1        0.0s
- => CACHED [stage-1 2/3] WORKDIR /App                                             0.0s
- => CACHED [build-env 2/5] WORKDIR /App                                           0.0s
- => CACHED [build-env 3/5] COPY . ./                                              0.0s
- => CACHED [build-env 4/5] RUN dotnet restore                                     0.0s
- => CACHED [build-env 5/5] RUN dotnet publish -c Release -o out                   0.0s
- => CACHED [stage-1 3/3] COPY --from=build-env /App/out .                         0.0s
- => exporting to image                                                            0.4s
- => => exporting layers                                                           0.0s
- => => writing image sha256:2f15637d                                              0.1s
- => => naming to docker.io/library/counter-image
-
-docker images
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-counter-image                      latest    2f15637dc1f6   10 minutes ago   208MB
-```
-
-Each command in the *Dockerfile* generated a layer and created an **IMAGE ID**. The final **IMAGE ID** (yours will be different) is **2f15637dc1f6** and next you'll create a container based on this image.
-
-## Create a container
+## Configure container image
 
 Now that you have an image that contains your app, you can create a container. You can create a container in two ways. First, create a new container that is stopped.
 
@@ -401,6 +304,8 @@ exit
 ```
 
 ---
+
+
 
 ## Essential commands
 

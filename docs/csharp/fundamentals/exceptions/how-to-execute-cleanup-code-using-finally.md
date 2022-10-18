@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "exceptions [C#], try/finally block"
   - "exception handling [C#], try/finally block"
 ---
-# How to execute cleanup code using finally
 
+# How to execute cleanup code using finally 
 The purpose of a `finally` statement is to ensure that the necessary cleanup of objects, usually objects that are holding external resources, occurs immediately, even if an exception is thrown. One example of such cleanup is calling <xref:System.IO.Stream.Close%2A> on a <xref:System.IO.FileStream> immediately after use instead of waiting for the object to be garbage collected by the common language runtime, as follows:
 
 :::code language="csharp" source="snippets/exceptions/Program.cs" ID="NoCleanup":::
@@ -30,3 +30,4 @@ A database connection is another good candidate for being closed in a `finally` 
 - [try-catch](../../language-reference/keywords/try-catch.md)
 - [try-finally](../../language-reference/keywords/try-finally.md)
 - [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)
+

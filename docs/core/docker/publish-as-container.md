@@ -105,7 +105,8 @@ The preceding .NET CLI command, publishes the app as a container:
 > To build the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
 >
 > ```console
-> ..\.nuget\packages\microsoft.net.build.containers\0.1.8\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018: The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
+> ..\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018:
+>    The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
 > ```
 
 > [!TIP]

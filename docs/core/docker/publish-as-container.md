@@ -13,10 +13,11 @@ Containers have many features and benefits, such as being an immutable infrastru
 
 Install the following prerequisites:
 
-- [.NET SDK](https://dotnet.microsoft.com/download)\
+- [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop)
-- Familiarity with [Worker Services in .NET](../extensions/workers.md)
+
+In addition these prerequisites, it's recommended to be familiar with [Worker Services in .NET](../extensions/workers.md).
 
 ## Create .NET app
 
@@ -44,7 +45,7 @@ Your folder tree will look like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *Worker- and generates a worker service that when ran will log a message every second. Change directories and navigate into the *Worker- folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that when ran will log a message every second. Change directories and navigate into the *Worker- folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
 
 ```dotnetcli
 dotnet run

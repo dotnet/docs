@@ -296,6 +296,8 @@ Labels are often used to provide consistent metadata on container images. This p
 
 - `org.opencontainers.image.created` is set to the ISO 8601 format of the current UTC `DateTime`.
 
+For more information, see [Implement conventional labels on top of existing label infrastructure](https://github.com/dotnet/sdk-container-builds/issues/96).
+
 ## Clean up resources
 
 In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of images installed.

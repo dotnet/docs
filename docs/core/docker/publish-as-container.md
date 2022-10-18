@@ -44,7 +44,7 @@ Your folder tree will look like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *Worker* and generates a worker service that when ran will log a message every second. Change directories and navigate into the *Worker* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *Worker- and generates a worker service that when ran will log a message every second. Change directories and navigate into the *Worker- folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
 
 ```dotnetcli
 dotnet run
@@ -120,7 +120,7 @@ Determining projects to restore...
   Pushed container 'dotnet-worker-image:1.0.0' to registry 'docker://'
 ```
 
-This command compiles your worker app to the *publish* folder and pushes the container to your local docker registry.
+This command compiles your worker app to the *publish- folder and pushes the container to your local docker registry.
 
 ## Configure container image
 
@@ -130,17 +130,17 @@ You can control many aspects of the generated container through MSBuild properti
 > The only exception to this are `RUN` commands, due to the way containers are built, those cannot be emulated. If you need this functionality, you will need to use a _Dockerfile_ to build your container images.
 
 > [!IMPORTANT]
-> Only Linux containers are currently supported.
+> Currently, only Linux containers are supported.
 
 ### `ContainerBaseImage`
 
-This property controls the image used as the basis for your image. By default, we will infer the following values for you based on the properties of your project:
+The container base image property controls the image used as the basis for your image. By default, we will infer the following values for you based on the properties of your project:
 
-* if your project is self-contained, we use the `mcr.microsoft.com/dotnet/runtime-deps` image as the base image
-* if your project is an ASP.NET Core project, we use the `mcr.microsoft.com/dotnet/aspnet` image as the base image
-* otherwise we use the `mcr.microsoft.com/dotnet/runtime` image as the base image
+- If your project is self-contained, the `mcr.microsoft.com/dotnet/runtime-deps` image is used as the base image.
+- If your project is an ASP.NET Core project, the `mcr.microsoft.com/dotnet/aspnet` image is used as the base image.
+- Otherwise the `mcr.microsoft.com/dotnet/runtime` image is used as the base image.
 
-We infer the tag of the image to be the numeric component of your chosen `TargetFramework` - so a `.net6.0` project will use the `6.0` tag of the inferred base image, a `.net7.0-linux` project will use the `7.0` tag, and so on.
+The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `.net6.0` will result in the `6.0` tag of the inferred base image, a `.net7.0-linux` project will use the `7.0` tag, and so on.
 
 If you set a value here, you should set the fully-qualified name of the image to use as the base, including any tag you prefer:
 
@@ -150,9 +150,7 @@ If you set a value here, you should set the fully-qualified name of the image to
 
 ### `ContainerRegistry`
 
-This property controls the destination registry - the place that the newly-created image will be pushed to.
-
-Be default, we push to the local Docker daemon (annotated by `docker://`), but for this release you can specify any _unauthenticated_ registry. For example:
+The container registry property controls the destination registry, the place that the newly-created image will be pushed to. Be default, we push to the local Docker daemon (annotated by `docker://`), but for this release you can specify any _unauthenticated_ registry. For example, consider the following XML example:
 
 ```xml
 <ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>
@@ -163,26 +161,23 @@ Be default, we push to the local Docker daemon (annotated by `docker://`), but f
 
 ### `ContainerImageName`
 
-This property controls the name of the image itself, e.g `dotnet/runtime` or `my-awesome-app`.
-
-By default, the value used will be the `AssemblyName` of the project.
+The container image name controls the name of the image itself, e.g `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
 
 ```xml
-<ContainerImageName>my-super-awesome-app</ContainerImageName>
+<ContainerImageName>my-app</ContainerImageName>
 ```
 
-> [!CAUTION]
-> Image names can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number, any other characters will result in an error being thrown.
+Image names can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number, any other characters will result in an error being thrown.
 
-## `ContainerImageTag(s)`
+### `ContainerImageTag(s)`
 
-This property controls the tag that is generated for the image. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even just different baked-in configuration. This property also can be used to push multiple tags - simply use a semicolon-delimited set of tags in the `ContainerImageTags` property, similar to setting multiple `TargetFrameworks`.
-
-By default, the value used will be the `Version` of the project.
+The container image tag property controls the tags that are generated for the image. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even different configurations. By default, the `Version` of the project is used as the tag value. To override the default, specify either of the following:
 
 ```xml
 <ContainerImageTag>1.2.3-alpha2</ContainerImageTag>
 ```
+
+To specify multiple tags, use a semicolon-delimited set of tags in the `ContainerImageTags` property, similar to setting multiple `TargetFrameworks`:
 
 ```xml
 <ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
@@ -192,24 +187,22 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 
 ### `ContainerWorkingDirectory`
 
-This property controls the working directory of the container - the directory that commands are executed within if not other command is run.
+The container working directory node controls the working directory of the container, the directory that commands are executed within if not other command is run.
 
-By default, we use the `/app` directory as the working directory.
+By default, the `/app` directory value is used as the working directory.
 
 ```xml
 <ContainerWorkingDirectory>/bin</ContainerWorkingDirectory>
 ```
 
-## `ContainerPort`
+### `ContainerPort`
 
-This item adds TCP or UDP ports to the list of known ports for the container. This enables container runtimes like Docker to map these ports to the host machine automatically. This is often used as documentation for the container, but can also be used to enable automatic port mapping.
+The container port adds TCP or UDP ports to the list of known ports for the container. This enables container runtimes like Docker to map these ports to the host machine automatically. This is often used as documentation for the container, but can also be used to enable automatic port mapping.
 
-ContainerPort items have two properties:
+The `ContainerPort` node has two attributes:
 
-* Include
-  * The port number to expose
-* Type
-  * One of `tcp` or `udp` - the default is `tcp`
+- `Include`: The port number to expose.
+- `Type`: Defaults to `tcp`, valid values are either `tcp` or `udp`.
 
 ```xml
 <ItemGroup>
@@ -217,21 +210,14 @@ ContainerPort items have two properties:
 </ItemGroup>
 ```
 
-> **Note**
-> This item does nothing for the container by default and should be considered advisory at best.
-
 ### `ContainerLabel`
 
-This item adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools.
+The container label adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
 
-ContainerLabel items have two properties:
+The `ContainerLabel` node has two attributes:
 
-* Include
-  * The key of the label
-* Value
-  * The value of the label - this may be empty
-
-See [default container labels](#default-container-labels) for a list of labels that are created by default.
+- `Include`: The key of the label.
+- `Value`: The value of the label (this may be empty).
 
 ```xml
 <ItemGroup>
@@ -239,16 +225,16 @@ See [default container labels](#default-container-labels) for a list of labels t
 <ItemGroup>
 ```
 
-## `ContainerEnvironmentVariable`
+For more information, see [default container labels](#default-container-labels) for a list of labels that are created by default.
 
-This item adds a new environment variable to the container. Environment variables will be accessible to the application running in the container immediately, and are often used to change the runtime behavior of the running application.
+### `ContainerEnvironmentVariable`
 
-ContainerEnvironmentVariable items have two properties:
+The container environment variable node allows you to add environment variables to the container. Environment variables will be accessible to the application running in the container immediately, and are often used to change the runtime behavior of the running application.
 
-* Include
-  * The name of the environment variable
-* Value
-  * The value of the environment variable
+The `ContainerEnvironmentVariable` node has two attributes:
+
+- `Include`:  The name of the environment variable.
+- `Value`: The value of the environment variable
 
 ```xml
 <ItemGroup>
@@ -256,16 +242,17 @@ ContainerEnvironmentVariable items have two properties:
 </ItemGroup>
 ```
 
-## `ContainerEntrypoint`
+For more information, see [.NET environment variables](../tools/dotnet-environment-variables.md).
 
-This item can be used to customize the entrypoint of the container - the binary that is run by default when the container is started.
+### `ContainerEntrypoint`
 
-By default, for builds that create an executable binary that binary is set as the ContainerEntrypoint. For builds that do not create an executable binary `dotnet path/to/application.dll` is used as the ContainerEntrypoint.
+The container entry point can be used to customize the `ENTRYPOINT` of the container, the binary that is run by default when the container is started. By default, for builds that create an executable binary that binary is set as the ContainerEntrypoint. For builds that do not create an executable binary `dotnet path/to/application.dll` is used as the `ContainerEntrypoint`.
 
-ContainerEntrypoint items have one property:
+The `ContainerEntrypoint` node has a single attribute:
 
-* Include
-  * The command, option, or argument to use in the entrypoint command
+- `Include`: The command, option, or argument to use in the entrypoint command.
+
+For example, consider the following sample .NET project item group:
 
 ```xml
 <ItemGroup Label="Entrypoint Assignment">
@@ -273,25 +260,27 @@ ContainerEntrypoint items have one property:
   <ContainerEntrypoint Include="dotnet" />
   <ContainerEntrypoint Include="ef" />
 
-  <!-- This shorthand syntax means the same thing - note the semicolon separating the tokens. -->
+  <!-- This shorthand syntax means the same thing.
+       Note the semicolon separating the tokens. -->
   <ContainerEntrypoint Include="dotnet;ef" />
 </ItemGroup>
 ```
 
-## `ContainerEntrypointArgs`
+### `ContainerEntrypointArgs`
 
-This item controls the default arguments provided to the `ContainerEntrypoint`. This should be used when the ContainerEntrypoint is a program that the user might want to use on its own.
+The container entry point args node controls the default arguments provided to the `ContainerEntrypoint`. This should be used when the `ContainerEntrypoint` is a program that the user might want to use on its own. By default, no `ContainerEntrypointArgs` are created on your behalf.
 
-By default, no ContainerEntrypointArgs are created on your behalf.
+The `ContainerEntrypointArg` node has a single attribute:
 
-ContainerEntrypointArg items have one property:
+- `Include`: The option or argument to apply to the `ContainerEntrypoint` command.
 
-* Include
-  * The option or argument to apply to the ContainerEntrypoint command
+Consider the following example .NET project item group:
 
 ```xml
 <ItemGroup>
-  <!-- Assuming the ContainerEntrypoint defined above, this would be the way to update the database by default, but let the user run a different EF command. -->
+  <!-- Assuming the ContainerEntrypoint defined above, 
+       this would be the way to update the database by 
+       default, but let the user run a different EF command. -->
   <ContainerEntrypointArgs Include="database" />
   <ContainerEntrypointArgs Include="update" />
 
@@ -304,46 +293,35 @@ ContainerEntrypointArg items have one property:
 
 Labels are often used to provide consistent metadata on container images. This package provides some default labels to encourage better maintainability of the generated images.
 
-* `org.opencontainers.image.created` is set to the ISO 8601 format of the current UTC DateTime
+- `org.opencontainers.image.created` is set to the ISO 8601 format of the current UTC `DateTime`.
 
 ## Clean up resources
 
-During this tutorial, you created containers and images. If you want, delete these resources. Use the following commands to
+In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of images installed.
 
-01. List all containers
-
-    ```console
-    docker ps -a
-    ```
-
-01. Stop containers that are running by their name.
-
-    ```console
-    docker stop counter-image
-    ```
-
-01. Delete the container
-
-    ```console
-    docker rm counter-image
-    ```
-
-Next, delete any images that you no longer want on your machine. Delete the image created by your _Dockerfile_ and then delete the .NET image the _Dockerfile_ was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.
-
-```console
-docker rmi counter-image:latest
-docker rmi mcr.microsoft.com/dotnet/aspnet:6.0
+```dockerfile
+docker images
 ```
 
-Use the `docker images` command to see a list of images installed.
+Consider the following example output:
+
+```console
+REPOSITORY            TAG       IMAGE ID       CREATED          SIZE
+dotnet-worker-image   1.0.0     25aeb97a2e21   12 seconds ago   191MB
+```
 
 > [!TIP]
 > Image files can be large. Typically, you would remove temporary containers you created while testing and developing your app. You usually keep the base images with the runtime installed if you plan on building other images based on that runtime.
 
+To delete the image, copy the image id and run the `docker image rm` command:
+
+```console
+docker image rm 25aeb97a2e21
+```
+
 ## Next steps
 
-- [Learn how to containerize an ASP.NET Core application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
-- [Try the ASP.NET Core Microservice Tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
+- [Tutorial: Containerize a .NET app](build-container.md)
 - [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
 - [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)
 - [Explore the Container Tools for Visual Studio](/visualstudio/containers/overview)

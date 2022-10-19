@@ -37,7 +37,8 @@ They include information like the following:
 - `System.Net.Sockets` > `outgoing-connections-established`
 - `System.Net.NameResolution` > `dns-lookups-duration`
 
-**For the full list, check out [well-known counters].**
+> [!TIP]
+> For the full list, see [well-known counters].
 
 ### Monitor metrics from outside the process
 

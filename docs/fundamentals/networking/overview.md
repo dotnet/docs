@@ -26,14 +26,7 @@ The <xref:System.Uri?displayProperty=nameWithType> type is used as a representat
 
 :::code language="csharp" source="snippets/misc/Program.Uri.cs" id="canonicaluri":::
 
-The `Uri` class automatically performs validation and canonicalization per [RCF 3986](https://datatracker.ietf.org/doc/html/rfc3986). These validation and canonicalization rules are used to ensure that a URI is well-formed and that the URI is in a canonical form. However, this modifies some URIs in a way that might break their end-users.
-
-To bypass these validation rules, set <xref:System.UriCreationOptions.DangerousDisablePathAndQueryCanonicalization?displayProperty=nameWithType> to `true`, which means no validation and no transformation of the input will take place past the authority. As a side effect, `Uri` instances created with this option don't support `Uri.Fragments` and this property will always be empty. Moreover, <xref:System.Uri.GetComponents%2A?displayProperty=nameWithType> may not be used for <xref:System.UriComponents.Path?displayProperty=nameWithType> or <xref:System.UriComponents.Query?displayProperty=nameWithType> and will throw <xref:System.InvalidOperationException>.
-
-:::code language="csharp" source="snippets/misc/Program.Uri.cs" id="dangerousuri":::
-
-> [!WARNING]
-> Disabling canonicalization also means that reserved characters will not be escaped (for example, space characters will not be changed to `%20`), which may corrupt the HTTP request and makes the application subject to request smuggling. Only set this option if you have ensured that the URI string is already sanitized.
+The `Uri` class automatically performs validation and canonicalization per [RCF 3986](https://datatracker.ietf.org/doc/html/rfc3986). These validation and canonicalization rules are used to ensure that a URI is well-formed and that the URI is in a canonical form.
 
 ## See also
 

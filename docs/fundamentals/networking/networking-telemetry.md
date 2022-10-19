@@ -270,6 +270,13 @@ To configure the list of events to capture, specify them under `Advanced Options
 
 If you want to process events programmatically and in real time, see the [`TraceEvent`] docs.
 
+### Start and Stop events
+
+Larger operations often start with a `Start` event and end with a `Stop` event.
+For example, you'll see `RequestStart`/`RequestStop` events from `System.Net.Http` or `ConnectStart`/`ConnectStop` events from `System.Net.Sockets`.
+
+While large operations such as these often guarantee that a `Stop` event will always be present, this is not always the case. For example, seeing the `RequestHeadersStart` event from `System.Net.Http` does not guarantee that `RequestHeadersStop` will also be logged.
+
 ## Event correlation
 
 Now that you know how to observe these events, you often need to correlate them together, generally to the originating HTTP request.

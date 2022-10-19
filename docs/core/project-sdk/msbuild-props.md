@@ -1217,7 +1217,7 @@ For example:
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
 
-For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
+For more information, see [aliased `using` directives](../../csharp/language-reference/keywords/using-directive.md#using-alias) and [`using static <type>` directives](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 
 ## Item metadata
 

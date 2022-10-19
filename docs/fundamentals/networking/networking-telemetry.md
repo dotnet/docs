@@ -102,7 +102,6 @@ foreach (var (eventSource, counters) in RuntimeEventCounters.EventCounters)
 }
 ```
 
-
 ### Consume metrics in-process
 
 The [`Yarp.Telemetry.Consumption`] library makes it easy to consume metrics from within the process.

@@ -287,7 +287,7 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 
 ### Consume decoded JSON strings
 
-Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString>.
+Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
 
 ```csharp
 int valueLength = reader.HasReadOnlySequence 

@@ -90,7 +90,18 @@ services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options
 });
 ```
 
-See [this sample](https://gist.github.com/MihaZupan/02ec402fa34880df129351b92e18e86c) for subscribing to many runtime and ASP.NET event counters.
+See [this sample](snippets/misc/RuntimeEventCounters.cs) for subscribing to many runtime and ASP.NET event counters. Simply add an `EventCounterCollectionRequest` for every entry.
+
+```c#
+foreach (var (eventSource, counters) in RuntimeEventCounters.EventCounters)
+{
+    foreach (string counter in counters)
+    {
+        module.Counters.Add(new EventCounterCollectionRequest(eventSource, counter));
+    }
+}
+```
+
 
 ### Consume metrics in-process
 
@@ -393,7 +404,7 @@ Regardless, these events can offer a lot of insights when all else fails.
 The `System.Net` stack emits such events from `Private.InternalDiagnostics.System.Net.*` namespaces.
 
 If you change the condition in the `EventListener` example above to `eventSource.Name.Contains("System.Net")`, you will see 100+ events from different layers in the stack.
-See [full example](https://gist.github.com/MihaZupan/4bed7333bcafde39e8b86beef2006475).
+For more information, see the [full example](snippets/internal-diag-telemetry/Program.cs).
 
 ## Need more telemetry?
 

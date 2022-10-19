@@ -8,8 +8,6 @@ ms.date: 10/18/2022
 
 # Networking telemetry in .NET
 
-If you are looking for information on tracking HTTP operations across different services, see the [distributed tracing documentation].
-
 The .NET networking stack is instrumented at various layers. .NET gives you the option to collect accurate timings throughout the lifetime of an HTTP request and event counters to monitor overall process statistics.
 
 Networking information is split across several groups:
@@ -22,6 +20,8 @@ Networking information is split across several groups:
 - `Microsoft-AspNetCore-Server-Kestrel`
 
 The telemetry has some performance overhead when enabled, so make sure to subscribe only to groups you're actually interested in.
+
+If you are looking for information on tracking HTTP operations across different services, see the [distributed tracing documentation].
 
 ## Event counters (metrics)
 

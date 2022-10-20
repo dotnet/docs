@@ -421,7 +421,6 @@ If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggesti
 
 ## Samples
 
-
 - [Measure DNS resolutions for a given endpoint](#measure-dns-resolutions-for-a-given-endpoint)
 - [Measure time-to-headers when using HttpClient](#measure-time-to-headers-when-using-httpclient)
 - [Time to process a request in ASP.NET Core running Kestrel](#time-to-process-a-request-in-aspnet-core-running-kestrel)

@@ -23,6 +23,16 @@ In this article, you'll learn about various caching mechanisms. Caching is the a
 
 All of the `Microsoft.Extensions.*` packages come dependency injection (DI) ready, both the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> and <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> interfaces can be used as services.
 
+## Test
+
+```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+```
+
 ## In-memory caching
 
 In this section, you'll learn about the [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory) package. The current implementation of the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> is a wrapper around the <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, exposing a feature-rich API. Entries within the cache are represented by the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry>, and can be any `object`. The in-memory cache solution is great for apps that run in a single server, where all the cached data rents memory in the app's process.

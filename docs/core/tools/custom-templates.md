@@ -179,7 +179,7 @@ dotnet new --install <NUGET_PACKAGE_ID>
 
 ### To install a template package from a custom NuGet source
 
-Provide an custom NugGet source (for example, `https://api.my-custom-nuget.com/v3/index.json`)
+Provide a custom NuGet source (for example, `https://api.my-custom-nuget.com/v3/index.json`).
 
 ```dotnetcli
 dotnet new --install <NUGET_PACKAGE_ID> --nuget-source <SOURCE>

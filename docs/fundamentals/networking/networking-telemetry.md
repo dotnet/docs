@@ -21,7 +21,8 @@ Networking information is split across several groups:
 
 The telemetry has some performance overhead when enabled, so make sure to subscribe only to groups you're actually interested in.
 
-If you are looking for information on tracking HTTP operations across different services, see the [distributed tracing documentation].
+> [!TIP]
+> If you're looking for information on tracking HTTP operations across different services, see the [distributed tracing documentation].
 
 ## Event counters (metrics)
 
@@ -419,6 +420,12 @@ If you have suggestions for other useful information that could be exposed via e
 If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggestions, create a [microsoft/reverse-proxy issue](https://github.com/microsoft/reverse-proxy/issues/new).
 
 ## Samples
+
+
+- [Measure DNS resolutions for a given endpoint](#measure-dns-resolutions-for-a-given-endpoint)
+- [Measure time-to-headers when using HttpClient](#measure-time-to-headers-when-using-httpclient)
+- [Time to process a request in ASP.NET Core running Kestrel](#time-to-process-a-request-in-aspnet-core-running-kestrel)
+- [Measure the latency of a .NET reverse proxy](#measure-the-latency-of-a-net-reverse-proxy)
 
 ### Measure DNS resolutions for a given endpoint
 

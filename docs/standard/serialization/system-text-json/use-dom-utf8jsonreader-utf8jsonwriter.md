@@ -300,7 +300,7 @@ ReadOnlySpan<char> source = buffer.Slice(0, charsRead);
 
 // Handle the unescaped JSON string.
 ParseUnescapedString(source);
-ArrayPool<char>.Shared.Return(buffer);
+ArrayPool<char>.Shared.Return(buffer, clearArray: true);
 ```
 
 ### Read from a stream using `Utf8JsonReader`

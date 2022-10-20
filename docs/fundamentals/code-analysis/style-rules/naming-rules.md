@@ -81,7 +81,7 @@ You can set the following properties for symbol groups, to limit which symbols a
 
 1. Tuple members aren't currently supported in `applicable_kinds`.
 2. The symbol group matches _all_ the modifiers in the `required_modifiers` property.  If you omit this property, no specific modifiers are required for a match. This means a symbol's modifiers have no effect on whether or not this rule is applied.
-3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`.
+3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const` which affects the [rule order](#rule-order).
 4. `class` includes [C# records](../../../csharp/language-reference/builtin-types/record.md).
 
 ### Naming style properties
@@ -122,7 +122,7 @@ All naming rule properties are required for a rule to take effect.
 
 ## Rule order
 
-The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definition of the rules themselves. The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
+The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definition of the rules themselves. More specific rules regarding accessibilities, modifiers, and symbols match ealier than less specific rules. If there is overlap between rules or if the rule ordering causes problems, the intersection of the two rules can be broken out into a new rule that always matches earlier than the broader rules which it was derived. The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
 
 > [!NOTE]
 > If you're using a version of Visual Studio earlier than Visual Studio 2019 version 16.2, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).

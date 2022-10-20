@@ -1,5 +1,13 @@
 # .NET Docs
 
+[![GitHub contributors](https://img.shields.io/github/contributors/dotnet/docs.svg)](https://GitHub.com/dotnet/docs/graphs/contributors/)
+[![GitHub repo size](https://img.shields.io/github/repo-size/dotnet/docs)](https://github.com/dotnet/docs)
+[![GitHub issues-opened](https://img.shields.io/github/issues/dotnet/docs.svg)](https://GitHub.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopened)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/dotnet/docs.svg)](https://GitHub.com/dotnet/docs/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub pulls-opened](https://img.shields.io/github/issues-pr/dotnet/docs.svg)](https://GitHub.com/dotnet/docs/pulls?q=is%3Aissue+is%3Aopened)
+[![GitHub pulls-merged](https://img.shields.io/github/issues-search/dotnet/docs?label=merged%20pull%20requests&query=is%3Apr%20is%3Aclosed%20is%3Amerged&color=darkviolet)](https://github.com/dotnet/docs/pulls?q=is%3Apr+is%3Aclosed+is%3Amerged)
+[![GitHub pulls-unmerged](https://img.shields.io/github/issues-search/dotnet/docs?label=unmerged%20pull%20requests&query=is%3Apr%20is%3Aclosed%20is%3Aunmerged&color=red)](https://github.com/dotnet/docs/pulls?q=is%3Apr+is%3Aclosed+is%3Aunmerged)
+
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
 - [API reference](https://github.com/dotnet/dotnet-api-docs)

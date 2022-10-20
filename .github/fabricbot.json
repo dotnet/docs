@@ -262,7 +262,13 @@
         "label": "azure-sdk-shipit",
         "allowAutoMergeInstructionsWithoutLabel": false,
         "mergeType": "squash",
-        "requireAllStatuses": true
+        "requireAllStatuses": false,
+        "requireSpecificCheckRuns": true,
+        "requireSpecificCheckRunsList": [
+          "lint",
+          "Look for build warnings",
+          "MSDocs build verifier"
+        ]
       }
     },
     {

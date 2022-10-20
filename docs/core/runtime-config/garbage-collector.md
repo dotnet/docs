@@ -556,7 +556,8 @@ Example:
 
 ## Standalone GC
 
-- Specifies the name of a standalone GC DLL that the runtime loads in place of the one it has in the main runtime DLL (coreclr.dll). This DLL needs to reside in the same directory as *coreclr.dll*
+- Specifies the name of a standalone GC DLL that the runtime loads in place of the one it has in the main runtime DLL (coreclr.dll). This DLL needs to reside in the same directory as *coreclr.dll*.
+
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |

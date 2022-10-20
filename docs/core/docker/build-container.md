@@ -36,7 +36,7 @@ If you have .NET installed, use the `dotnet --info` command to determine which S
 
 ## Create .NET app
 
-You need a .NET app that the Docker container will run. Open your terminal, create a working folder if you haven't already, and enter it. In the working folder, run the following command to create a new project in a subdirectory named *app*:
+You need a .NET app that the Docker container will run. Open your terminal, create a working folder if you haven't already, and enter it. In the working folder, run the following command to create a new project in a subdirectory named *App*:
 
 ```dotnetcli
 dotnet new console -o App -n DotNet.Docker

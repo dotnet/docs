@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.label.name == 'breaking-change'
     steps:
-    - uses: actions/checkout@v3
-    - uses: timheuer/issue-notifier@v1
-      env:
-        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
-      with:
-        fromMailAddress: '${{ secrets.BC_NOTIFY }}'
-        toMailAddress: '${{ secrets.BC_NOTIFY }}'
-        subject: 'BC:'
-        subjectPrefix: 'BC:'
-        labelsToMonitor: "breaking-change"
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
+      - uses: timheuer/issue-notifier@e49f1d2faf914fe5c7c028162adff3050234c70b
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
+        with:
+          fromMailAddress: "${{ secrets.BC_NOTIFY }}"
+          toMailAddress: "${{ secrets.BC_NOTIFY }}"
+          subject: "BC:"
+          subjectPrefix: "BC:"
+          labelsToMonitor: "breaking-change"

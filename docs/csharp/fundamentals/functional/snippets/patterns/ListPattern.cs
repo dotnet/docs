@@ -35,7 +35,7 @@ static class ListPattern
 
         IEnumerable<string[]> ReadRecords()
         {
-            foreach (var record in records)
+            foreach (var record in s_records)
                 yield return record.Split(',', StringSplitOptions.TrimEntries);
         }
     }

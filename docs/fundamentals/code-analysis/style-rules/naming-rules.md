@@ -122,7 +122,7 @@ All naming rule properties are required for a rule to take effect.
 
 ## Rule order
 
-The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definitions of the rules themselves. More specific rules regarding accessibilities, modifiers, and symbols take precedence over less specific rules. If there is overlap between rules or if the rule ordering causes problems, you can break out the intersection of the two rules into a new rule that takes precedence over the broader rules from which it was derived.
+The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definitions of the rules themselves. More specific rules regarding accessibilities, modifiers, and symbols take precedence over less specific rules. If there's overlap between rules or if the rule ordering causes problems, you can break out the intersection of the two rules into a new rule that takes precedence over the broader rules from which it was derived. For examples, see [Example: Overlapping naming strategies](#example-overlapping-naming-strategies) and [Example: `const` modifier includes `static` and `readonly`](#example-const-modifier-includes-static-and-readonly).
 
 The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
 
@@ -131,17 +131,21 @@ The [EditorConfig Language Service extension](https://marketplace.visualstudio.c
 
 ### Example: Overlapping naming strategies
 
-1. Public methods are PascalCase
-2. Async methods end with Async
+Consider the following two naming rules:
 
-For public async methods, it is not obvious which rule takes precedence. You can create a new rule for public async methods and specify the naming exactly.
+1. Public methods are PascalCase.
+2. Asynchronous methods end with `"Async"`.
+
+For `public async` methods, it's not obvious which rule takes precedence. You can create a new rule for `public async` methods and specify the naming exactly.
 
 ### Example: `const` modifier includes `static` and `readonly`
 
-1. Constant fields are PascalCase
-2. Non-public static fields are s_camelCase
+Consider the following two naming rules:
 
-Rule 2 is more specific and takes precedence so all non-public constant fields are s_camelCase. To resolve the issue you can define an intersection rule: non-public constant fields are PascalCase.
+1. Constant fields are PascalCase.
+2. Non-public `static` fields are s_camelCase.
+
+Rule 2 is more specific and takes precedence, so all non-public constant fields are s_camelCase. To resolve the issue, you can define an intersection rule: non-public constant fields are PascalCase.
 
 ## Default naming styles
 

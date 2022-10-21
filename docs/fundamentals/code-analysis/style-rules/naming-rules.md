@@ -129,6 +129,20 @@ The [EditorConfig Language Service extension](https://marketplace.visualstudio.c
 > [!NOTE]
 > If you're using a version of Visual Studio earlier than Visual Studio 2019 version 16.2, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
 
+### Example: Overlapping naming strategies
+
+1. Public methods are PascalCase
+2. Async methods end with Async
+
+For public async methods, it is not obvious which rule takes precedence. You can create a new rule for public async methods and specify the naming exactly.
+
+### Example: `const` modifier includes `static` and `readonly`
+
+1. Constant fields are PascalCase
+2. Non-public static fields are s_camelCase
+
+Rule 2 is more specific and takes precedence so all non-public constant fields are s_camelCase. To resolve the issue you can define an intersection rule: non-public constant fields are PascalCase.
+
 ## Default naming styles
 
 If you don't specify any custom naming rules, the following default styles are used:

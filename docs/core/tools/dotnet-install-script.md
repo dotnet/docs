@@ -160,8 +160,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   Available since the 5.0 release.
   
-  The default value is `GA`. For released .NET versions such as 5.0 and 6.0 it returns the same bits as `--version` with `latest` parameter.
-  For .NET 7.0 a couple of bits were released initially for `GA` quality, but these values aren't populated anymore since the conception of `General Availability` was reconsidered and now stands for released packages only.
+  The default value is `GA`. For released .NET versions, such as 5.0 and 6.0, it returns the same bits as `--version` with the `latest` parameter.
+  For .NET 7, a couple of bits were initially released for `GA` quality. However, these values aren't populated anymore since the concept of "general availability" was reconsidered and now represents released packages only.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 

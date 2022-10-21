@@ -993,8 +993,10 @@ The following MSBuild properties are documented in this section:
 
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
+- [DisableTransitiveFrameworkReferenceDownloads](#disabletransitiveframeworkreferencedownloads)
 - [DisableTransitiveProjectReferences](#disabletransitiveprojectreferences)
 - [Restore-related properties](#restore-related-properties)
+- [UseMauiEssentials](#usemauiessentials)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
 
 ### AssetTargetFallback

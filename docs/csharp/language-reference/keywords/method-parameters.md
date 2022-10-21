@@ -45,7 +45,7 @@ The variable `n` is a value type. It contains its data, the value `5`. When `Squ
 When you pass a *value* type *by reference*:
 
 - If the method assigns the parameter to refer to a different object, those changes **aren't** visible from the caller.
-- If the method modifies the state of the object referred to by the parameter, those changes **aren't** visible from the caller.
+- If the method modifies the state of the object referred to by the parameter, those changes **are** visible from the caller.
 
 The following example is the same as the previous example, except that the argument is passed as a `ref` parameter. The value of the underlying argument, `n`, is changed when `x` is changed in the method.
 

@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 05/24/2022
+ms.date: 10/21/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -462,6 +462,7 @@ The following MSBuild properties are documented in this section:
 - [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [EnablePreviewFeatures](#enablepreviewfeatures)
+- [EnableWindowsTargeting](#enablewindowstargeting)
 - [GenerateDocumentationFile](#generatedocumentationfile)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
@@ -484,21 +485,21 @@ This property was introduced in .NET SDK 7.0.100, though it defaults to not bein
 
 The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates preprocessor symbols for the target framework and platform for the .NET project. When this property is set to `false` or is unset (which is the default value) preprocessor symbols are generated for:
 
-* Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
-* Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
-* Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
+- Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
+- Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
+- Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
 
 For more information on target framework monikers and these implicit preprocessor symbols, see [Target frameworks](../../standard/frameworks.md).
 
 Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following preprocessor symbols are generated:
 
-* Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
-* Platform with version (`IOS15_1`)
-* Platform with version minimum bound (`IOS15_1_OR_GREATER`)
+- Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
+- Platform with version (`IOS15_1`)
+- Platform with version minimum bound (`IOS15_1_OR_GREATER`)
 
 For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
 
-Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version minimum bound_ symbol will be defined.
+Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the *Framework with version minimum bound* symbol will be defined.
 
 ### DocumentationFile
 
@@ -546,6 +547,16 @@ When a project contains this property set to `True`, the following assembly-leve
 An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
 
 Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
+
+### EnableWindowsTargeting
+
+Set the `EnableWindowsTargeting` property to `true` to build Windows apps (for example, Windows Forms or Windows Presentation Foundation apps) on a non-Windows platform. If you don't set this property to `true`, you'll get build warning [NETSDK1100](../tools/sdk-errors/netsdk1100.md). This error occurs because targeting and runtime packs aren't automatically downloaded on platforms that aren't supported. By setting this property, those packs are downloaded when cross-targeting.
+
+```xml
+<PropertyGroup>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting>
+</PropertyGroup>
+```
 
 ### GenerateDocumentationFile
 
@@ -976,7 +987,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
-## Reference properties
+## Reference-related properties
 
 The following MSBuild properties are documented in this section:
 
@@ -1010,6 +1021,16 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 </PropertyGroup>
 ```
 
+### DisableTransitiveFrameworkReferenceDownloads
+
+Set the `DisableTransitiveFrameworkReferenceDownloads` property to `true` to avoid downloading extra runtime and targeting packs that your project doesn't need.
+
+```xml
+<PropertyGroup>
+  <DisableTransitiveFrameworkReferenceDownloads>true</DisableTransitiveFrameworkReferenceDownloads>
+</PropertyGroup>
+```
+
 ### DisableTransitiveProjectReferences
 
 The `DisableTransitiveProjectReferences` property controls implicit project references. Set this property to `true` to disable implicit `ProjectReference` items. Disabling implicit project references results in non-transitive behavior similar to the [legacy project system](https://github.com/dotnet/project-system/blob/main/docs/feature-comparison.md).
@@ -1031,6 +1052,16 @@ Restoring a referenced package installs all of its direct dependencies and all t
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+### UseMauiEssentials
+
+Set the `UseMauiEssentials` property to `true` to declare an explicit reference to a project or package that depends on MAUI Essentials. This setting ensure that your project correctly pulls in the correct known framework reference for MAUI Essentials. If your project references a project that uses MAUI Essentials but you don't set this property to `true`, you might encounter build warning `NETSDK1186`.
+
+```xml
+<PropertyGroup>
+  <UseMauiEssentials>true</UseMauiEssentials>
 </PropertyGroup>
 ```
 

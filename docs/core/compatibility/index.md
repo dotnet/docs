@@ -185,11 +185,11 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding an instance field to a struct that has no nonpublic fields**
 
-  If a struct has only public fields or has no fields at all, callers can declare locals of that struct type without calling the struct's ctor or first initializing the local to _default(T)_, so long as all public fields are set on the struct before first use. Adding any new fields - public or nonpublic - to such a struct is a source breaking change for these callers, as the compiler will now require the additional fields to be initialized.
+  If a struct has only public fields or has no fields at all, callers can declare locals of that struct type without calling the struct's constructor or first initializing the local to `default(T)`, so long as all public fields are set on the struct before first use. Adding any new fields - public or nonpublic - to such a struct is a source breaking change for these callers, as the compiler will now require the additional fields to be initialized.
 
-  Additionally, adding any new fields - public or nonpublic - to such a struct is a binary breaking change to callers who have applied `[SkipLocalsInit]` to their code. Since the compiler wasn't aware of these fields at compile time, it could emit IL which does not fully initialize the struct, leading to the struct being created from uninitialized stack data.
+  Additionally, adding any new fields - public or nonpublic - to a struct with no fields or only public fields is a binary breaking change to callers that have applied `[SkipLocalsInit]` to their code. Since the compiler wasn't aware of these fields at compile time, it could emit IL that doesn't fully initialize the struct, leading to the struct being created from uninitialized stack data.
 
-  If a struct has any nonpublic fields, the compiler already enforces initialization via the ctor or _default(T)_, and adding new instance fields is not a breaking change.
+  If a struct has any nonpublic fields, the compiler already enforces initialization via the constructor or `default(T)`, and adding new instance fields is not a breaking change.
 
 - ❌ **DISALLOWED: Firing an existing event when it was never fired before**
 

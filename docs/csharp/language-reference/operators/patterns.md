@@ -17,8 +17,8 @@ helpviewer_keywords:
 The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
-- [`switch` statement](../statements/selection-statements.md#the-switch-statement)
-- [`switch` expression](switch-expression.md)
+- [switch statement](../statements/selection-statements.md#the-switch-statement)
+- [switch expression](switch-expression.md)
 
 In those constructs, you can match an input expression against any of the following patterns:
 

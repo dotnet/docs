@@ -12,7 +12,7 @@
 
         private static void NotNullPattern()
         {
-            object input = new object();
+            object input = new();
             // <NonNullCheck>
             if (input is not null)
             {

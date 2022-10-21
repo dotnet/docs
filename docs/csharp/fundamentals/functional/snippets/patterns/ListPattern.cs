@@ -2,7 +2,7 @@ namespace patterns;
 
 static class ListPattern
 {
-    static string[] records =
+    static string[] s_records =
     {
         "04-01-2020, DEPOSIT, Initial deposit, 2250.00",
         "04-15-2020, DEPOSIT, Refund, 125.65",

@@ -173,6 +173,9 @@ The following MSBuild properties are documented in this section:
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [ProduceReferenceAssemblyInOutDir](#producereferenceassemblyinoutdir)
+- [PublishDocumentationFile](#publishdocumentationfile)
+- [PublishDocumentationFiles](#publishdocumentationfiles)
+- [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishRelease](#publishrelease)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -323,6 +326,21 @@ In .NET 5 and earlier versions, reference assemblies are always written to the `
 
 For more information, see [Write reference assemblies to intermediate output](../compatibility/sdk/6.0/write-reference-assemblies-to-obj.md).
 
+### PublishDocumentationFile
+
+When this property is `true`, the XML documentation file for the project, if one is generated, is included in the publish output for the project. This property defaults to `true`.
+
+> [!TIP]
+> Set [GenerateDocumentationFile](#generatedocumentationfile)) to `true` to generate an XML documentation file at compile time.
+
+### PublishDocumentationFiles
+
+This property is an enablement flag for several other properties that control whether various kinds of XML documentation files are copied to the publish directory by default, namely [PublishDocumentationFile](#publishdocumentationfile) and [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles). If those properties are unset, and this property is set, then those properties will default to `true`. This property defaults to `true`.
+
+### PublishReferencesDocumentationFiles
+
+When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
+
 ### PublishRelease
 
 The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
@@ -434,10 +452,12 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 | `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
 | `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
 
-## Compilation-related properties
+## Build-related properties
 
 The following MSBuild properties are documented in this section:
 
+- [CopyDebugSymbolFilesFromPackages](#copydebugsymbolfilesfrompackages)
+- [CopyDocumentationFilesFromPackages](#copydocumentationfilesfrompackages)
 - [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
 - [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
@@ -447,6 +467,18 @@ The following MSBuild properties are documented in this section:
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
+
+### CopyDebugSymbolFilesFromPackages
+
+When this property is set to `true`, all symbol files (also known as PDB files) from `PackageReference` items in the project are copied to the build output. These files can provide more informative stack traces for exceptions and make memory dumps and traces of the running application easier to understand. However, including these files results in an increased deployment bundle size.
+
+This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
+
+### CopyDocumentationFilesFromPackages
+
+When this property is set to `true`, all generated XML documentation files from `PackageReference` items in the project are copied to the build output. Note that enabling this feature will result in increased deployment bundle size.
+
+This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
 
 ### DisableImplicitFrameworkDefines
 

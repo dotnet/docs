@@ -60,9 +60,9 @@ The preceding code contains the two types of interest, `char32_t*` and `error_da
 
 Consider the `char32_t*` type first, since marshalling this type is required by the user-defined type. `char32_t*` represents the native side, but you also need representation in managed code. In .NET, there's only one "string" type, `string`. Therefore, you'll be marshalling a native UTF-32 encoded string to and from the `string` type in managed code. There are already several built-in marshallers for the `string` type that marshal as UTF-8, UTF-16, ANSI, and even as the Windows `BSTR` type. However, there isn't one for marshalling as UTF-32. That's what you need to define.
 
-The `Utf32StringMarshaller` type has an instance of the `CustomMarshaller`, which helps to describe what it does to the source generator. The first type argument to the attribute is the `string` type, the managed type to marshal, the second is the mode, which indicates when to use the marshaller, and the third type is `Utf32StringMarshaller`. You can provide multiple instances of `CustomMarshaller` to further specify the mode and which marshaller type to use. The current example showcases a "stateless" marshaller that takes some input and returns data in the marshalled form. The `Free` method exists for symmetry with the unmanaged marshalling, and the garbage collector is the "free" operation for the managed marshaller. The implementer is free to perform whatever operations are desired to marshal the input to the output, but remember that no state will be explicitly preserved by the source generator.
+The `Utf32StringMarshaller` type is marked with a `CustomMarshaller` attribute, which describes what it does to the source generator. The first type argument to the attribute is the `string` type, the managed type to marshal, the second is the mode, which indicates when to use the marshaller, and the third type is `Utf32StringMarshaller`, the type to use for marshalling. You can apply the `CustomMarshaller` multiple times to further specify the mode and which marshaller type to use for that mode.
 
-The specifics of how this particular marshaller performs the conversion from `string` to `char32_t*` can be found in the sample. Note that any .NET APIs could be used (for example, <xref:System.Text.Encoding.UTF32?displayProperty=nameWithType>).
+The current example showcases a "stateless" marshaller that takes some input and returns data in the marshalled form. The `Free` method exists for symmetry with the unmanaged marshalling, and the garbage collector is the "free" operation for the managed marshaller. The implementer is free to perform whatever operations are desired to marshal the input to the output, but remember that no state will be explicitly preserved by the source generator.
 
 ```csharp
 namespace CustomMarshalling
@@ -82,7 +82,9 @@ namespace CustomMarshalling
 }
 ```
 
-Consider a case where state is desirable. Observe the additional `CustomMarshaller` and note the more specific mode, `MarshalMode.ManagedToUnmanagedIn`. This specialized marshaller is implemented as "stateful" and can store state across the interop call. More specialization and state permit optimizations and tailored marshalling for a mode. For example, the source generator can be instructed to provide a reasonably sized stack allocation that could avoid an explicit allocation during marshalling. The allocated buffer is requested by the marshaller when the source generator discovers a `BufferSize` property. This property indicates the amount of stack space the marshaller would like to get during the marshal call.
+The specifics of how this particular marshaller performs the conversion from `string` to `char32_t*` can be found in the sample. Note that any .NET APIs could be used (for example, <xref:System.Text.Encoding.UTF32?displayProperty=nameWithType>).
+
+Consider a case where state is desirable. Observe the additional `CustomMarshaller` and note the more specific mode, `MarshalMode.ManagedToUnmanagedIn`. This specialized marshaller is implemented as "stateful" and can store state across the interop call. More specialization and state permit optimizations and tailored marshalling for a mode. For example, the source generator can be instructed to provide a stack-allocated buffer that could avoid an explicit allocation during marshalling. To indicate support for a stack-allocated buffer, the marshaller implements a `BufferSize` property and a `FromManaged` method that takes a `Span` of an `unmanaged` type. The `BufferSize` property indicates the amount of stack space&mdash;the length of the `Span` to be passed to `FromManaged`&mdash;the marshaller would like to get during the marshal call.
 
 ```csharp
 namespace CustomMarshalling
@@ -115,7 +117,7 @@ namespace CustomMarshalling
 }
 ```
 
-You can now call the first of the two native functions using your UTF-32 string marshallers. The following declaration uses the `LibraryImport` attribute, just like `DllImport`, but relies upon the `MarshalUsing` attribute to tell the source generator which marshaller to use when calling the native function. There's no need to clarify if the stateless or stateful marshaller should be used. This is handled by the implementer defining the "mode" on the marshaller. The source generator will select the most appropriate marshaller based on the context in which the `MarshalUsing` is applied, with `MarshalMode.Default` being the fallback.
+You can now call the first of the two native functions using your UTF-32 string marshallers. The following declaration uses the `LibraryImport` attribute, just like `DllImport`, but relies upon the `MarshalUsing` attribute to tell the source generator which marshaller to use when calling the native function. There's no need to clarify if the stateless or stateful marshaller should be used. This is handled by the implementer defining the `MarshalMode` on the marshaller's `CustomMarshaller` attribute(s). The source generator will select the most appropriate marshaller based on the context in which the `MarshalUsing` is applied, with `MarshalMode.Default` being the fallback.
 
 ```csharp
 // extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintString(char32_t* chars);
@@ -125,7 +127,7 @@ internal static partial void PrintString([MarshalUsing(typeof(Utf32StringMarshal
 
 ## Customize marshalling for a user-defined type
 
-Marshalling a user-defined type requires defining not only the marshalling logic, but also the type in C# to marshal to/from. Let's recall the native type we are trying to marshal and define what it would ideally look like in C#.
+Marshalling a user-defined type requires defining not only the marshalling logic, but also the type in C# to marshal to/from. Recall the native type we are trying to marshal.
 
 ```cpp
 struct error_data
@@ -136,7 +138,7 @@ struct error_data
 };
 ```
 
-An `int` is the same size in both modern C++ and in .NET. A `bool` is the canonical example for a Boolean value in .NET. Building on top of `Utf32StringMarshaller`, you can marshal `char32_t*` as a .NET `string`. Accounting for .NET style, the result is the following definition in C#:
+Now, define what it would ideally look like in C#. An `int` is the same size in both modern C++ and in .NET. A `bool` is the canonical example for a Boolean value in .NET. Building on top of `Utf32StringMarshaller`, you can marshal `char32_t*` as a .NET `string`. Accounting for .NET style, the result is the following definition in C#:
 
 ```csharp
 struct ErrorData
@@ -147,7 +149,7 @@ struct ErrorData
 }
 ```
 
-Following the naming pattern, name the marshaller `ErrorDataMarshaller`. Instead of creating a default marshaller, you'll only define marshallers for some modes. In this case, if a mode isn't provided, the source generator will fail. Start with defining a marshaller for the "in" direction.
+Following the naming pattern, name the marshaller `ErrorDataMarshaller`. Instead of specifying a marshaller for `MarshalMode.Default`, you'll only define marshallers for some modes. In this case, if the marshaller is used for a mode that isn't provided, the source generator will fail. Start with defining a marshaller for the "in" direction. This is a "stateless" marshaller because the marshaller itself only consists of `static` functions.
 
 ```csharp
 namespace CustomMarshalling
@@ -173,9 +175,9 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from an `ErrorData` to an `ErrorDataUnmanaged`, which will mimic the shape of the unmanaged type, is now trivial with `Utf32StringMarshaller`. This is a "stateless" marshaller because the marshaller itself only consists of `static` functions.
+`ErrorDataUnmanaged` mimics the shape of the unmanaged type. The conversion from an `ErrorData` to an `ErrorDataUnmanaged` is now trivial with `Utf32StringMarshaller`.
 
-Marshalling of an `int` is unnecessary since its representation is identical in unmanaged and managed code. A `bool` value's binary representation isn't defined in .NET, so you use its current value to define a zero and non-zero value in the unmanaged type. Then, reuse your UTF-32 marshaller to convert the `string` field into a `uint*`.
+Marshalling of an `int` is unnecessary since its representation is identical in unmanaged and managed code. A `bool` value's binary representation isn't defined in .NET, so use its current value to define a zero and non-zero value in the unmanaged type. Then, reuse your UTF-32 marshaller to convert the `string` field into a `uint*`.
 
 ```csharp
 public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
@@ -196,7 +198,7 @@ public static void Free(ErrorDataUnmanaged unmanaged)
     => Utf32StringMarshaller.Free(unmanaged.Message);
 ```
 
-Next, consider the case where multiple instances of `error_data` are returned. Typically, you use a collection to return multiple elements. Since this marshaller will be returning multiple elements, this is called the `MarshalMode.ElementOut` mode.
+Next, consider the case where multiple instances of `error_data` are returned. Typically, you use a collection to return multiple elements. The marshaller used for this scenario, corresponding to the `MarshalMode.ElementOut` mode, will be returning multiple elements.
 
 ```csharp
 namespace CustomMarshalling
@@ -221,9 +223,9 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode in the preceding code. Remember that you also need to "clean up" any allocations that the unmanaged environment expected you to perform.
+The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform.
 
-For the managed to unmanaged "out" marshaller, you're going to do something special. The name of the data type you're marshalling is called `error_data` and .NET typically expresses errors as exceptions. However, some errors are more impactful than others. Errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. You'll marshal an `error_data` into managed code, and if it's fatal, you'll throw an exception rather than just converting it into an `ErrorData` and returning it.
+For the managed to unmanaged "out" marshaller, you're going to do something special. The name of the data type you're marshalling is called `error_data` and .NET typically expresses errors as exceptions. Some errors are more impactful than others and errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. You'll marshal an `error_data` into managed code, and if it's fatal, you'll throw an exception rather than just converting it into an `ErrorData` and returning it.
 
 ```csharp
 namespace CustomMarshalling
@@ -249,7 +251,7 @@ namespace CustomMarshalling
 }
 ```
 
-An "out" parameter converts from an unmanaged context into a managed context, so you implement the `ConvertToManaged` method. When the unmanaged callee returns and provides an `ErrorDataUnmanaged` object, you can inspect it using your `ElementOut` mode marshaller and then check if it's marked as a "fatal" error. If so, that's your indication to throw as opposed to just returning the `ErrorData`.
+An "out" parameter converts from an unmanaged context into a managed context, so you implement the `ConvertToManaged` method. When the unmanaged callee returns and provides an `ErrorDataUnmanaged` object, you can inspect it using your `ElementOut` mode marshaller and check if it's marked as a fatal error. If so, that's your indication to throw instead of just returning the `ErrorData`.
 
 ```csharp
 public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)

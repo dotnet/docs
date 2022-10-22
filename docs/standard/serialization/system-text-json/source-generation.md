@@ -28,7 +28,7 @@ To use source generation with all defaults (both modes, default options):
 
    - Takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> instance.
    - Takes a <xref:System.Text.Json.Serialization.JsonSerializerContext> instance.
-   - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type.
+   - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type (.NET 7 and later only).
 
 By default, both source generation modes are used if you don't specify one. For information about how to specify the mode to use, see [Specify source generation mode](#specify-source-generation-mode) later in this article.
 

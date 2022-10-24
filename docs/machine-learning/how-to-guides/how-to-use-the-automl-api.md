@@ -1,6 +1,6 @@
 ---
 title: How to use the ML.NET Automated ML (AutoML) API
-description: The ML.NET Automted ML (AutoML) API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
+description: The ML.NET Automated ML (AutoML) API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
 ms.date: 11/01/2022
 ms.custom: mvc,how-to
 ms.topic: how-to
@@ -60,7 +60,7 @@ var columnInferenceResults = ctx.Auto().InferColumns(path:filePath, labelColumnI
 
 ## Clean and prepare data
 
-Once your data is loaded, it's time to clean it and prepare it for training. 
+Once your data is loaded, it's time to clean it and prepare it for training.  
 
 ## Create and run AutoML experiments
 

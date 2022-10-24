@@ -1,6 +1,6 @@
 ---
 title: dotnet workload command
-description: Learn about the base dotnet workload command. Workloads allow you to manage and install optional components of .NET.
+description: Learn about the base dotnet workload command. Workload commands manage and install optional components of .NET.
 ms.date: 10/24/2022
 ---
 # dotnet workload command

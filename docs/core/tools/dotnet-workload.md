@@ -21,9 +21,7 @@ dotnet workload -?|-h|--help
 
 ## Description
 
-The `dotnet workload` command provides commands for working with .NET workloads.
-
-  For example, [`dotnet workload install`](dotnet-workload-install.md) installs a particular workload. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
+The `dotnet workload` command provides commands for working with .NET workloads. For example, [`dotnet workload install`](dotnet-workload-install.md) installs a particular workload. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
 
 ## Options
 

@@ -29,6 +29,8 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
+        - name: Authentication in WebAssembly apps
+          href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Endpoint metadata provider interface changes
@@ -331,6 +333,8 @@ items:
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Default serialization format for TimeSpan
           href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
@@ -647,6 +651,8 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
+        - name: Authentication in WebAssembly apps
+          href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Endpoint metadata provider interface changes
@@ -1201,6 +1207,8 @@ items:
           href: serialization/7.0/reflection-fallback.md
       - name: .NET 6
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Default serialization format for TimeSpan
           href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization

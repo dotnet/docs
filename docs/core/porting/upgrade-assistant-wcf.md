@@ -21,24 +21,26 @@ This tool currently supports C# projects and uses [CoreWCF](https://github.com/c
 For a WCF project to be applicable for this upgrade, it must meet the following requirements:
 
 1. Includes a .cs file that references `System.ServiceModel` and creates new `ServiceHost`.
-    - If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
-2. Includes a .config file that stores `System.ServiceModel` properties.
 
-This current version of the tool does not support WCF projects hosted via .svc files.
+   If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
+
+1. Includes a .config file that stores `System.ServiceModel` properties.
+
+The current version of the tool does not support WCF projects hosted via .svc files.
 
 > [!NOTE]
-> If your project is not applicable for this tool, we recommend you to check out the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF/blob/main/Documentation/Walkthrough.md) and
+> If your project is not applicable for this tool, we recommend you take a look at the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF/blob/main/Documentation/Walkthrough.md) and
 [BeanTrader Sample demo](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/) and manually update the project.
 
 ## Demo app
 
 You can use the [Basic Calculator Sample][wcf-sample] project to test upgrading with the Upgrade Assistant, which is also the demo used in this documentation.
 
-If you want to try out a more complicated sample, please check out the [BeanTrader Sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
+If you want to try out a more complicated sample, see the [BeanTrader sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
 
 ## Run upgrade-assistant
 
-If you have not installed the tool, follow the [instructions here](https://github.com/dotnet/upgrade-assistant#installation) to install the upgrade assistant.
+If you haven't installed the .NET Upgrade Assistant tool, follow the [installation instructions](https://github.com/dotnet/upgrade-assistant#installation).
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
@@ -48,7 +50,7 @@ When a project is provided, the upgrade process starts on that project immediate
 upgrade-assistant upgrade .\CalculatorSample.sln
 ```
 
-The tool runs and shows you a list of the steps it will do. As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step or some other option such as:
+The tool runs and shows you a list of the steps it will perform. As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step or some other option such as:
 
 - Get more information about the step.
 - Change projects.
@@ -545,4 +547,4 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 - Docs: [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
-[wcf-sample]: https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample
+[wcf-sample]: https://github.com/dotnet/samples/tree/main/core/porting/upgrade-assistant-wcf-framework/CalculatorSample

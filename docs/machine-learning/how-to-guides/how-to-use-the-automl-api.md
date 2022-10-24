@@ -1,12 +1,78 @@
 ---
-title: How to use the ML.NET automated ML API
-description: The ML.NET automated ML API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
-ms.date: 10/05/2021
+title: How to use the ML.NET Automated ML (AutoML) API
+description: The ML.NET Automted ML (AutoML) API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
+ms.date: 11/01/2022
 ms.custom: mvc,how-to
 ms.topic: how-to
 ---
 
-# How to use the ML.NET automated machine learning API
+# How to use the ML.NET Automated Machine Learning (AutoML) API
+
+In the article, you'll learn how to use the Automated ML (AutoML) API to:
+
+- Load data
+- Clean and prepare data
+- Create and run AutoML experiments
+- Customize AutoML experiments
+
+## Install AutoML API
+
+To use the AutoML API, install the [**Microsoft.ML.AutoML**](https://www.nuget.org/packages/Microsoft.ML.AutoML) NuGet package **version 0.20.0 or later**.
+
+## Load data
+
+The first step to working with AutoML and machine learning in general is loading you data. AutoML provides the `InferColumns` method to simplify the process.
+
+Alternatively you can use any of the existing ML.NET APIs to load your data. For more information, see [Load data from files and other sources](load-data-ml-net.md).
+
+### Infer columns
+
+> [!NOTE]
+> InferColumns only works with tabular data.
+
+Given a file, <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A?displayProperty=nameWithType> loads a subset of your data, inspects the contents of your file, and infers the data types for each of the columns in your dataset.
+
+```csharp
+MLContext ctx = new MLContext();
+
+var filePath = "my-data.csv";
+```
+
+Given a file with the following data and a header where *NumBedrooms*, & and *Setting* are inputs (features) and *SalesPrice* is the column to predict (label):  
+
+| NumBedrooms | NumBathrooms | Setting | SalesPrice |
+| --- | --- | --- | --- |
+| 1 | 1 | Urban | 100000 |
+| 2 | 1.5 | Rural | 150000 |
+| 3 | 2 | Suburban | 200000 |
+
+You can infer column information as follows:
+
+```csharp
+var columnInferenceResults = ctx.Auto().InferColumns(path:filePath, labelColumnName: "SalesPrice", separatorChar:',');
+```
+
+Alternatively, if your file doesn't have headers, you can specify the label index column as follows.
+
+```csharp
+var columnInferenceResults = ctx.Auto().InferColumns(path:filePath, labelColumnIndex: 3, separatorChar:',');
+```
+
+## Clean and prepare data
+
+Once your data is loaded, it's time to clean it and prepare it for training. 
+
+## Create and run AutoML experiments
+
+## Customize AutoML experiments
+
+### Sweepable estimators
+
+### Search space
+
+### Tuners
+
+<!-- # How to use the ML.NET automated machine learning API
 
 Automated machine learning (AutoML) automates the process of applying machine learning to data. Given a dataset, you can run an AutoML **experiment** to iterate over different data featurizations, machine learning algorithms, and hyperparameters to select the best model.
 
@@ -236,4 +302,4 @@ The following are all the available metrics per ML task:
 
 ## See also
 
-For full code samples and more visit the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main#automate-mlnet-models-generation-preview-state) GitHub repository.
+For full code samples and more visit the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main#automate-mlnet-models-generation-preview-state) GitHub repository. -->

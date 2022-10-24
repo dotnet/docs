@@ -105,7 +105,7 @@ The following table shows which options in `JsonSerializerOptions` are supported
 | <xref:System.Text.Json.JsonSerializerOptions.NumberHandling>           | ❌                          |
 | <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy>     | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                          |
-| <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver>         |                             |
+| <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver>         | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.WriteIndented>            | ✔️                         |
 
 The following table shows which attributes are supported by the optimized serialization code:
@@ -113,14 +113,14 @@ The following table shows which attributes are supported by the optimized serial
 | Attribute                                                         | Supported by optimized code |
 |-------------------------------------------------------------------|-----------------------------|
 | <xref:System.Text.Json.Serialization.JsonConverterAttribute>      | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>    |                             |
+| <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>    | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute>  | ❌                         |
 | <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>         | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonIncludeAttribute>        | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> | ❌                         |
-| <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute>    |                             |
+| <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute>    | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>   | ✔️                         |
-| <xref:System.Text.Json.Serialization.JsonRequiredAttribute>       |                             |
+| <xref:System.Text.Json.Serialization.JsonRequiredAttribute>       | ✔️                         |
 
 If a non-supported option or attribute is specified for a type, the serializer falls back to the default `JsonSerializer` code. In that case, the optimized code isn't used when serializing that type but may be used for other types. Therefore it's important to do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
 

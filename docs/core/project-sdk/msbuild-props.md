@@ -1025,7 +1025,7 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 
 ### DisableTransitiveFrameworkReferenceDownloads
 
-Set the `DisableTransitiveFrameworkReferenceDownloads` property to `true` to avoid downloading extra runtime and targeting packs that your project doesn't need.
+Set the `DisableTransitiveFrameworkReferenceDownloads` property to `true` to avoid downloading extra runtime and targeting packs that aren't directly referenced by your project.
 
 ```xml
 <PropertyGroup>
@@ -1059,7 +1059,7 @@ Restoring a referenced package installs all of its direct dependencies and all t
 
 ### UseMauiEssentials
 
-Set the `UseMauiEssentials` property to `true` to declare an explicit reference to a project or package that depends on MAUI Essentials. This setting ensure that your project correctly pulls in the correct known framework reference for MAUI Essentials. If your project references a project that uses MAUI Essentials but you don't set this property to `true`, you might encounter build warning `NETSDK1186`.
+Set the `UseMauiEssentials` property to `true` to declare an explicit reference to a project or package that depends on MAUI Essentials. This setting ensures that your project pulls in the correct known framework reference for MAUI Essentials. If your project references a project that uses MAUI Essentials but you don't set this property to `true`, you might encounter build warning `NETSDK1186`.
 
 ```xml
 <PropertyGroup>

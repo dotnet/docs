@@ -198,7 +198,19 @@ public static void Free(ErrorDataUnmanaged unmanaged)
     => Utf32StringMarshaller.Free(unmanaged.Message);
 ```
 
-Next, consider the case where multiple instances of `error_data` are returned. Typically, you use a collection to return multiple elements. The marshaller used for this scenario, corresponding to the `MarshalMode.ElementOut` mode, will be returning multiple elements.
+Let's briefly consider an "out" scenario. Consider the case where multiple instances of `error_data` are returned. Typically, you use a collection to return multiple elements.
+
+```c++
+extern "C" DLL_EXPORT error_data* STDMETHODCALLTYPE GetErrors(int* codes, int len)
+```
+
+```csharp
+[LibraryImport(LibName)]
+[return: MarshalUsing(CountElementName = "len")]
+internal static partial ErrorData[] GetErrors(int[] codes, int len);
+```
+
+The marshaller used for this scenario, corresponding to the `MarshalMode.ElementOut` mode, will be returning multiple elements.
 
 ```csharp
 namespace CustomMarshalling

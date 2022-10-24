@@ -9,11 +9,9 @@ ms.date: 10/24/2022
 
 ## Name
 
-`dotnet workload` - The generic driver for the .NET workloads experience.
+`dotnet workload` - Provides information about the available workload commands and installed workloads.
 
 ## Synopsis
-
-To get information about the available workload commands and or installed workloads:
 
 ```dotnetcli
 dotnet workload [--info]

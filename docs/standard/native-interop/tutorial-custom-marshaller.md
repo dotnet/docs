@@ -19,7 +19,7 @@ All source code used in this tutorial is available in the [dotnet/samples reposi
 
 ## Overview of the `LibraryImport` source generator
 
-The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable. The most important cost is generation of marshalling code at run time. This cost can be measured in terms of application performance but also in terms of potential target platforms that may not support dynamic code generation. The NativeAOT application model addresses issues with dynamic code generation by precompiling all code ahead of time directly into native code. Using `DllImport` is not an option for platforms that require full NativeAOT scenarios because of its run-time generation semantics. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
+The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;see [here][pinvoke_source_generation] for more details. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
 
 To express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types are used throughout this tutorial:
 
@@ -223,7 +223,7 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform.
+The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform. It is also important to note the functions here are marked `static` and are therefore "stateless", being stateless is a requirement for all "Element" modes.
 
 For the managed to unmanaged "out" marshaller, you're going to do something special. The name of the data type you're marshalling is called `error_data` and .NET typically expresses errors as exceptions. Some errors are more impactful than others and errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. You'll marshal an `error_data` into managed code, and if it's fatal, you'll throw an exception rather than just converting it into an `ErrorData` and returning it.
 
@@ -271,6 +271,11 @@ Perhaps you're not only going to consume the native library, but you also want t
 struct ErrorData { ... }
 ```
 
+## See also
+
+- [P/Invoke source generation](pinvoke-source-generation.md)
+- [Custom marshalling source generation](custom-marshalling-source-generation.md)
+
   <!-- links -->
 
 [api_custommarshallerattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.custommarshallerattribute
@@ -278,3 +283,4 @@ struct ErrorData { ... }
 [api_marshalusingattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.marshalusingattribute
 [api_nativemarshallingattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.nativemarshallingattribute
 [design_libraryimport]:https://github.com/dotnet/runtime/tree/main/docs/design/libraries/LibraryImportGenerator
+[pinvoke_source_generation]:pinvoke-source-generation.md

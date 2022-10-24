@@ -1,7 +1,7 @@
 ﻿---
 title: Transactions in Orleans
 description: Learn how to use transactions in .NET Orleans.
-ms.date: 09/29/2022
+ms.date: 10/24/2022
 ---
 
 # Orleans transactions
@@ -127,13 +127,17 @@ In the preceding client code:
   - The `IClientBuilder` uses localhost clustering and transactions.
 - The `IClusterClient` and `ITransactionClient` interfaces are retrieved from the service provider.
 - The `from` and `to` variables are assigned their `IAccountGrain` references.
-- The `ITransactionClient` is used to create a transaction, calling `WithDraw` and `Deposit` on the `from` and `to` accounts, respectively.
+- The `ITransactionClient` is used to create a transaction, calling:
+  - `Withdraw` on the `from` account grain reference.
+  - And `Deposit` on the `to` account grain reference.
+
+Transactions are always committed unless there is an exception that is thrown in the `transactionDelegate` or a contradictory `transactionOption` specified. While the recommended way to call transactional grain methods is to use the `ITransactionClient`, you can also call transactional grain methods directly from another grain.
 
 ## Call transaction methods from another grain
 
 Transactional methods on a grain interface are called like any other grain method. As an alternative approach using the `ITransactionClient`, the `AtmGrain` implementation below calls the `Transfer` method (which is transactional) on the `IAccountGrain` interface.
 
-Consider the `AtmGrain` implementation, which resolves the two referenced account grains and makes the appropriate calls to `WithDraw` and `Deposit`:
+Consider the `AtmGrain` implementation, which resolves the two referenced account grains and makes the appropriate calls to `Withdraw` and `Deposit`:
 
 :::code source="snippets/transactions/Grains/AtmGrain.cs":::
 

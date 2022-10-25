@@ -198,19 +198,24 @@ public static void Free(ErrorDataUnmanaged unmanaged)
     => Utf32StringMarshaller.Free(unmanaged.Message);
 ```
 
-Let's briefly consider an "out" scenario. Consider the case where multiple instances of `error_data` are returned. Typically, you use a collection to return multiple elements.
+Let's briefly consider the "out" scenario. Consider the case where one or multiple instances of `error_data` are returned.
 
 ```c++
+extern "C" DLL_EXPORT error_data STDMETHODCALLTYPE GetFatalErrorIfNegative(int code)
+
 extern "C" DLL_EXPORT error_data* STDMETHODCALLTYPE GetErrors(int* codes, int len)
 ```
 
 ```csharp
 [LibraryImport(LibName)]
+internal static partial ErrorData GetFatalErrorIfNegative(int code);
+
+[LibraryImport(LibName)]
 [return: MarshalUsing(CountElementName = "len")]
 internal static partial ErrorData[] GetErrors(int[] codes, int len);
 ```
 
-The marshaller used for this scenario, corresponding to the `MarshalMode.ElementOut` mode, will be returning multiple elements.
+Returning a single instance type, non-collection, from a P/Invoke is categorized as a `MarshalMode.ManagedToUnmanagedOut`. Typically, you use a collection to return multiple elements, in this case an `Array` is used. The marshaller for a collection scenario, corresponding to the `MarshalMode.ElementOut` mode, will be returning multiple elements and is described below.
 
 ```csharp
 namespace CustomMarshalling

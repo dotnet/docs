@@ -2607,14 +2607,10 @@ items:
       items:
       - name: Sockets support
         href: networking/sockets/sockets-overview.md
-      - name: Use Sockets to send and receive data
+      - name: Use Sockets to send and receive data over TCP
         href: networking/sockets/socket-services.md
-    - name: TCP
-      items:
-      - name: TCP support
-        href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
-        href: networking/tcp/tcp-services.md
+        href: networking/sockets/tcp.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library

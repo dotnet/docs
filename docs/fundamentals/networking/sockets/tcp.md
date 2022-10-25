@@ -84,7 +84,7 @@ The preceding C# code:
 
 ## See also
 
-- [Use Sockets to send and receive data over TCP](socket-services,md)
+- [Use Sockets to send and receive data over TCP](socket-services.md)
 - [Networking in .NET](../overview.md)
 - <xref:System.Net.Sockets.TcpClient>
 - <xref:System.Net.Sockets.TcpListener>

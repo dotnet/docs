@@ -27,7 +27,7 @@ Azure services are generally accessed using corresponding client classes from th
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a using statement.
 1. Register the Azure service using relevant helper methods.
-1. Pass and instance of the `DefaultAzureCredential` object to the `UseCredential` method.
+1. Pass an instance of the `DefaultAzureCredential` object to the `UseCredential` method.
 
 An example of this is shown in the following code segment.
 

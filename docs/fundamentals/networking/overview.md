@@ -40,6 +40,6 @@ To bypass these validation rules, set <xref:System.UriCreationOptions.DangerousD
 - [Runtime configuration options for networking](../../core/runtime-config/networking.md)
 - [HTTP support in .NET](http/http-overview.md)
 - [Sockets in .NET](sockets/sockets-overview.md)
-- [TCP in .NET](tcp/tcp-overview.md)
+- [TCP in .NET](sockets/tcp.md)
 - [Tutorial: Make HTTP requests in a .NET console app using C#](../../csharp/tutorials/console-webapiclient.md)
 - [.NET Networking improvements](https://devblogs.microsoft.com/dotnet/dotnet-6-networking-improvements)

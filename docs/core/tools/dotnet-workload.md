@@ -35,5 +35,6 @@ The `dotnet workload` command provides commands for working with .NET workloads.
 
 ## See also
 
-- [Installing a .NET Workload](dotnet-workload-install.md)
-- [Find the available workloads on your machine](dotnet-workload-search.md)
+- [Install a workload](dotnet-workload-install.md)
+- [List the installed workloads on your machine](dotnet-workload-list.md)
+- [Show workloads available to install](dotnet-workload-search.md)

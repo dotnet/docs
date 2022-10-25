@@ -92,7 +92,7 @@ The templates shipped with .NET SDK have the following additional options:
 
 - **`--use-program-main`**
 
-  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`. Available only in C# language.
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`. Available only for C#.
 
 ***
 

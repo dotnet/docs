@@ -15,7 +15,7 @@ With .NET, you can create and deploy templates that generate projects, files, ev
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
 > [!TIP]
-> The official .NET templates that are shipped with the .NET SDK can be found in the the following repositories:
+> The official .NET templates that are shipped with the .NET SDK can be found in the following repositories:
 > | Templates | Repository |
 > |---|---|
 > |Console, class library and common item templates|[dotnet/sdk](https://github.com/dotnet/sdk)|

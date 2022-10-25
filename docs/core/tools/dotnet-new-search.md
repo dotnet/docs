@@ -68,6 +68,14 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
   Displays all columns in the output.
 
+- **`-d|--diagnostics`**
+
+  Enables diagnostic output. Available since .NET SDK 7.0.100.
+
+- **`-h|--help`**
+
+  Prints out help for the search command. Available since .NET SDK 7.0.100.
+
 - **`-lang|--language {C#|F#|VB}`**
 
   Filters templates based on language supported by the template. The language accepted varies by the template. Not valid for some templates.
@@ -87,20 +95,12 @@ The `dotnet new search` command searches for templates supported by `dotnet new`
 
   Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
 
-- **`-h|--help`**
-
-  Prints out help for the search command. Available since .NET SDK 7.0.100.
-
-- **`-d|--diagnostics`**
-
-  Enables diagnostic output. Available since .NET SDK 7.0.100.
-
 - **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
 
-  > [!NOTE]
-  > To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
+> [!NOTE]
+> To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
 
 ## Examples
 

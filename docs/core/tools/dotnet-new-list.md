@@ -24,7 +24,7 @@ dotnet new list [<TEMPLATE_NAME>] [--author <AUTHOR>] [-lang|--language {"C#"|"F
 
 The `dotnet new list` command lists available templates to use with `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name. This option lists only default and installed templates. To find templates in NuGet that you can install locally, use the [`search`](dotnet-new-search.md) command.
 
-Starting .NET SDK 7.0.1xx the list command might not show all the templates installed on the machine. It takes the result of template constraints into account and the templates that are restricted to be used won't be shown. To force show all the templates, use `--ignore-constraints` option.
+Starting with .NET SDK 7.0.100, the `list` command might not show all the templates installed on the machine. It takes the result of template constraints into account, and the templates that can't be used won't be shown. To force show all the templates, use the `--ignore-constraints` option.
 
 > [!NOTE]
 > [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
@@ -71,20 +71,24 @@ Starting .NET SDK 7.0.1xx the list command might not show all the templates inst
 
   Displays all columns in the output. Available since .NET Core 5.0.300 SDK.
 
+- **`-d|--diagnostics`**
+
+  Enables diagnostic output. Available since .NET SDK 7.0.100.
+
+- **`-h|--help`**
+
+  Prints out help for the list command. Available since .NET SDK 7.0.100.
+
+- **`--ignore-constraints`**
+
+  Disables checking if the template meets the constraints to be run. Available since .NET SDK 7.0.100.
+
 - **`-lang|--language {C#|F#|VB}`**
 
   Filters templates based on language supported by the template. The language accepted varies by the template. Not valid for some templates.
 
   > [!NOTE]
   > Some shells interpret `#` as a special character. In those cases, enclose the language parameter value in quotes. For example, `dotnet new --list --language "F#"`.
-
-- **`--tag <TAG>`**
-
-  Filters templates based on template tags. To be selected, a template must have at least one tag that exactly matches the criteria. Available since .NET Core 5.0.300 SDK.
-
-- **`--type <TYPE>`**
-
-  Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -94,18 +98,14 @@ Starting .NET SDK 7.0.1xx the list command might not show all the templates inst
 
   The project that the template is added to. For the list command, it might be needed to specify the project the template is being added to to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
 
-- **`--ignore-constraints`**
+- **`--tag <TAG>`**
 
-  Disables checking if the template meets the constraints to be run. Available since .NET SDK 7.0.100.
+  Filters templates based on template tags. To be selected, a template must have at least one tag that exactly matches the criteria. Available since .NET Core 5.0.300 SDK.
 
-- **`-h|--help`**
+- **`--type <TYPE>`**
 
-  Prints out help for the list command. Available since .NET SDK 7.0.100.
-
-- **`-d|--diagnostics`**
-
-  Enables diagnostic output. Available since .NET SDK 7.0.100.
-
+  Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
+  
 - **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.

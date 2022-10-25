@@ -51,12 +51,14 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 ## Options
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
-
-- **`--add-source|nuget-source <SOURCE>`**
+- **`--add-source|--nuget-source <SOURCE>`**
   
   By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
   To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
+
+- **`-d|--diagnostics`**
+
+  Enables diagnostic output. Available since .NET SDK 7.0.100.
 
 - **`--force`**
 
@@ -66,9 +68,7 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
   Prints out help for the install command. Available since .NET SDK 7.0.100.
 
-- **`-d|--diagnostics`**
-
-  Enables diagnostic output. Available since .NET SDK 7.0.100.
+[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -76,13 +76,13 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 ## Examples
 
-- Install the latest version of SPA templates for ASP.NET:
+- Install the latest version of SPA templates for ASP.NET Core:
 
   ```dotnetcli
   dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates
   ```
 
-- Install version 2.0 of the SPA templates for ASP.NET:
+- Install version 2.0 of the SPA templates for ASP.NET Core:
 
   ```dotnetcli
   dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0

@@ -47,13 +47,13 @@ The `dotnet new uninstall` command uninstalls a template package at the `PATH` o
 
 ## Options
 
-- **`-h|--help`**
-
-  Prints out help for the uninstall command. Available since .NET SDK 7.0.100.
-
 - **`-d|--diagnostics`**
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
+
+- **`-h|--help`**
+
+  Prints out help for the uninstall command. Available since .NET SDK 7.0.100.
 
 - **`-v|--verbosity <LEVEL>`**
 

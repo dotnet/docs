@@ -19,7 +19,7 @@ All source code used in this tutorial is available in the [dotnet/samples reposi
 
 ## Overview of the `LibraryImport` source generator
 
-The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;see [here][pinvoke_source_generation] for more details. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
+The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;see [P/Invoke source generation][pinvoke_source_generation] for more details. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
 
 To express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types are used throughout this tutorial:
 
@@ -290,9 +290,9 @@ struct ErrorData { ... }
 
   <!-- links -->
 
-[api_custommarshallerattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.custommarshallerattribute
-[api_libraryimportattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.libraryimportattribute
-[api_marshalusingattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.marshalusingattribute
-[api_nativemarshallingattribute]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.nativemarshallingattribute
+[api_custommarshallerattribute]:/dotnet/api/system.runtime.interopservices.marshalling.custommarshallerattribute
+[api_libraryimportattribute]:/dotnet/api/system.runtime.interopservices.libraryimportattribute
+[api_marshalusingattribute]:/dotnet/api/system.runtime.interopservices.marshalling.marshalusingattribute
+[api_nativemarshallingattribute]:/dotnet/api/system.runtime.interopservices.marshalling.nativemarshallingattribute
 [design_libraryimport]:https://github.com/dotnet/runtime/tree/main/docs/design/libraries/LibraryImportGenerator
 [pinvoke_source_generation]:pinvoke-source-generation.md

@@ -9,24 +9,24 @@ Some APIs in the <xref:Microsoft.AspNetCore.OutputCaching?displayProperty=fullNa
 
 The following APIs were removed:
 
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.%23ctor> constructor
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.Clear?displayProperty=nameWithType>
+- `OutputCachePolicyBuilder.#ctor`
+- `OutputCachePolicyBuilder.Clear`
 
 The following APIs were renamed:
 
 | Previous name | New name |
 | - | - |
-| <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.AllowLocking(System.Boolean)?displayProperty=nameWithType> | `SetLocking()` |
-| <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByRouteValue(System.String[])?displayProperty=nameWithType> | `SetVaryByRouteValue()` |
-| <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByQuery(System.String[])?displayProperty=nameWithType> | `SetVaryByQuery` |
-| <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByHeader(System.String[])?displayProperty=nameWithType> | `SetVaryByHeader` |
+| `AllowLocking(System.Boolean)` | <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.SetLocking(System.Boolean)> |
+| `VaryByRouteValue(System.String[])` | <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.SetVaryByRouteValue(System.String[])> |
+| `VaryByQuery(System.String[])` | <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.SetVaryByQuery(System.String[])> |
+| `VaryByHeader(System.String[])` | <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.SetVaryByHeader(System.String[])> |
 
 The following APIs were added:
 
-- `CacheVaryByRules.VaryByHost`
-- `OutputCacheOptions.AddPolicy(string name, Action<OutputCachePolicyBuilder> build, bool excludeDefaultPolicy)`
-- `OutputCacheOptions.AddBasePolicy(Action<OutputCachePolicyBuilder> build, bool excludeDefaultPolicy)`
-- `Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions.CacheOutput<TBuilder>(this TBuilder builder, Action<OutputCachePolicyBuilder> policy, bool excludeDefaultPolicy)`
+- <xref:Microsoft.AspNetCore.OutputCaching.CacheVaryByRules.VaryByHost?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions.AddPolicy(System.String,System.Action{Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder},System.Boolean)?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.OutputCaching.OutputCacheOptions.AddBasePolicy(System.Action{Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder},System.Boolean)?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.DependencyInjection.OutputCacheConventionBuilderExtensions.CacheOutput%60%601(%60%600,System.Action{Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder},System.Boolean)?displayProperty=fullName>
 
 ## Version introduced
 
@@ -34,11 +34,11 @@ ASP.NET Core 7.0 RC 2
 
 ## Previous behavior
 
-<xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByQuery(System.String[])?displayProperty=nameWithType> was additive: every call added more query string keys.
+`OutputCachePolicyBuilder.VaryByQuery(System.String[])` was additive: every call added more query string keys.
 
 ## New behavior
 
-The <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByQuery(System.String[])?displayProperty=nameWithType> method is now named `OutputCachePolicyBuilder.SetVaryByQuery`, and each call replaces existing query string keys.
+The `OutputCachePolicyBuilder.VaryByQuery(System.String[])` method is now named <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.SetVaryByQuery(System.String[])?displayProperty=nameWithType>, and each call replaces existing query string keys.
 
 For other changes, see the first section of this article.
 
@@ -56,9 +56,9 @@ Recompile any projects built with an earlier SDK. If you referenced any of these
 
 ## Affected APIs
 
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.%23ctor> constructor
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.Clear?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.AllowLocking(System.Boolean)?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByRouteValue(System.String[])?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByQuery(System.String[])?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByHeader(System.String[])?displayProperty=fullName>
+- `Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.#ctor`
+- `Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.Clear`
+- `Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.AllowLocking(System.Boolean)`
+- `Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByRouteValue(System.String[])`
+- `Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByQuery(System.String[])`
+- `Microsoft.AspNetCore.OutputCaching.OutputCachePolicyBuilder.VaryByHeader(System.String[])`

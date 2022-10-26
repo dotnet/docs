@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for 11/01/2021 - 11/09/2022"
-description: "What's new in the .NET docs for 11/01/2021 - 11/09/2022."
+title: ".NET docs: What's new for .NET 7"
+description: "What's new in the .NET docs for the .NET 7 release."
 ms.date: 10/26/2022
 ---
 
-# .NET docs: What's new for 11/01/2021 - 11/09/2022
+# .NET docs: What's new for the .NET 7 release
 
-Welcome to what's new in the .NET docs for 11/01/2021 - 11/09/2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for the .NET 7 release. This article lists some of the major changes to docs related to .NET feature updates.
 
 ## .NET breaking changes
 

@@ -1,7 +1,7 @@
 ﻿---
 title: Transactions in Orleans
 description: Learn how to use transactions in .NET Orleans.
-ms.date: 10/24/2022
+ms.date: 10/26/2022
 ---
 
 # Orleans transactions
@@ -104,7 +104,7 @@ As an example, the `Balance` state object is defined as follows:
 The preceding state object:
 
 - Is decorated with the <xref:Orleans.CodeGeneration.GenerateSerializerAttribute> to instruct the Orleans code generator to generate a serializer.
-- Has its `Value` property decorated with the `IdAttribute` to uniquely identify the member.
+- `Value` property is decorated with the `IdAttribute` to uniquely identify the member.
 
 The `Balance` state object is then used in the `AccountGrain` implementation as follows:
 

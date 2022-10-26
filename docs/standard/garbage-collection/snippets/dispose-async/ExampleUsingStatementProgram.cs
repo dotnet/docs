@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-class ExampleUsingStatementProgram
+﻿class ExampleUsingStatementProgram
 {
     static async Task Main()
     {

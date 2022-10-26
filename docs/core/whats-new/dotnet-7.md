@@ -8,8 +8,22 @@ author: gewarren
 ---
 # What's new in .NET 7
 
-Performance - https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/
+.NET 7 continues the themes that were central to the [.NET 6](dotnet-6.md) release with improvements around the following key areas:
+
+- Unified
+- Modern
+- Simple
+- Fast
+
+To find all the articles that have been updated for .NET 7, see [What's new in docs for .NET 7]().
+
+.NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release).
+
+## Performance
+
+- https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/
 - on-stack replacement (OSR)
+
 .NET MAUI - unifies Android, iOS, macOS, and Windows APIs into a single API
 Cloud native apps - simplify security configuration; improve app performance
 .NET Upgrade Assistant improvements
@@ -25,7 +39,8 @@ RegEx
 - analyzer to find (and fix) places you can use it
 "dotnet new" - tab completion to explore templates and parameters
 Template authoring - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring
-NativeAOT (vs. JIT) - improves startup time. requires trimmed apps. native pre-compilation for .NET desktop client and server scenarios (focusing on console apps and native libraries).
+Native AOT (vs. JIT) - improves startup time. requires trimmed apps. native pre-compilation for .NET desktop client and server scenarios (focusing on console apps and native libraries).
+- https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/
 Library trimming
 Observability ("understand the state of your application as scale and technical complexity increases") - OpenTelemetry - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#observability
 Track microseconds and nanoseconds in date and time structures
@@ -41,6 +56,8 @@ New type converters for DateOnly, TimeOnly, Int128, UInt128, and Half (converts 
 Unix file modes - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#support-for-unix-file-modes
 Publish to a container using dotnet publish - https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
 Rate limiting - https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet/
+
+
 
 ## See also
 

@@ -21,16 +21,17 @@ helpviewer_keywords:
 
 # TCP Overview
 
+> [!IMPORTANT]
+> <xref:System.Net.Sockets.Socket> class is highly recommended for advanced users, instead of `TcpClient` and `TcpListener`.
+
+
 To use the Transmission Control Protocol (TCP) services in .NET, use the <xref:System.Net.Sockets.TcpClient> and <xref:System.Net.Sockets.TcpListener> classes. These protocol classes are built on top of the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class and take care of the details of transferring data.
 
 The protocol classes use the underlying `Socket` class to provide simple access to network services without the overhead of maintaining state information or knowing the details of setting up protocol-specific sockets. To use asynchronous `Socket` methods, you can use the asynchronous methods supplied by the <xref:System.Net.Sockets.NetworkStream> class. To access features of the `Socket` class not exposed by the protocol classes, you must use the `Socket` class.
 
 `TcpClient` and `TcpListener` represent the network using the `NetworkStream` class. You use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to return the network stream, and then call the stream's <xref:System.Net.Sockets.NetworkStream.ReadAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Sockets.NetworkStream.WriteAsync%2A?displayProperty=nameWithType> methods. The `NetworkStream` does not own the protocol classes' underlying socket, so closing it does not affect the socket.
 
-> [!IMPORTANT]
-> <xref:System.Net.Sockets.Socket> class is highly recommended for advanced users, instead of TcpClient and TcpListener.
-
-# Use TcpClient and TcpListener
+## Use TcpClient and TcpListener
 
 The <xref:System.Net.Sockets.TcpClient> class requests data from an internet resource using TCP. The methods and properties of `TcpClient` abstract the details for creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using TCP. Because the connection to the remote device is represented as a stream, data can be read and written with .NET Framework stream-handling techniques.
 
@@ -77,10 +78,6 @@ The preceding C# code:
 - Uses a <xref:System.Net.Sockets.NetworkStream> to write data to the connected client.
 - Writes the sent message to the console.
 - Finally, calls the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to stop listening on the port.
-
-# `TcpListener` and `TcpClient` usage equivalent of `Socket`
-
-`TcpListener` and `TcpClient` classes directly uses `Socket` class in underlying implementation. You can find equivalent usages of `TcpListener` and `TcpClient` classes in `Socket` class.
 
 ## See also
 

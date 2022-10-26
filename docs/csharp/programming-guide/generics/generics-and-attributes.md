@@ -39,7 +39,7 @@ Beginning with C# 11, a generic type can inherit from <xref:System.Attribute>:
 
 :::code language="csharp" source="./snippets/GenericsAndAttributes.cs" id="GenericAttribute":::
 
-To obtain information about a generic type or type parameter at run time, you can use the methods of <xref:System.Reflection>. For more information, see [Generics and Reflection](./generics-and-reflection.md)
+To obtain information about a generic type or type parameter at run time, you can use the methods of <xref:System.Reflection>. For more information, see [Generics and Reflection](./generics-and-reflection.md).
 
 ## See also
 

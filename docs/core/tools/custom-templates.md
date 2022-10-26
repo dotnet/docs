@@ -7,11 +7,11 @@ ms.date: 05/20/2020
 
 # Custom templates for dotnet new
 
-The [.NET SDK](https://dotnet.microsoft.com/download) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. You can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET SDK](https://dotnet.microsoft.com/download) comes with many templates already installed and ready for you to use. The ["dotnet new" command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. You can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *.nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files, and execute custom processing operations when your template is used.
 
-The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. More templates, including templates from third parties, can be found using [`dotnet new --search`](dotnet-new-search.md). For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
+The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. More templates, including templates from third parties, can be found using ["dotnet new --search"](dotnet-new-search.md). For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
 
 > [!NOTE]
 > Template examples are available at the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) GitHub repository. However, while these examples are good resource for learning how the templates work, the repository is archived and no longer maintained. The examples may be out of date and no longer working.
@@ -59,13 +59,13 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | `name`            | string        | The name for the template that users should see. |
 | `shortName`       | string        | A default shorthand name for selecting the template that applies to environments where the template name is specified by the user, not selected via a GUI. For example, the short name is useful when using templates from a command prompt with CLI commands. |
 | `sourceName`       | string        | The name in the source tree to replace with the name the user specifies. The template engine will look for any occurrence of the `sourceName` mentioned in the config file and replace it in file names and file contents. The value to be replaced with can be given using the `-n` or `--name` options while running a template. If no name is specified, the current directory is used.|
-| `preferNameDirectory`       | boolean        | Indicates whether to create a directory for the template if name is specified but an output directory is not set (instead of creating the content directly in the current directory). The default value is false.|
+| `preferNameDirectory`       | Boolean        | Indicates whether to create a directory for the template if name is specified but an output directory is not set (instead of creating the content directly in the current directory). The default value is false.|
 
 The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki). For deeper examples and information on how to make your templates visible in Visual Studio, check out the [resources that Sayed Hashimi has created](https://github.com/sayedihashimi/template-sample).
 
 #### Example
 
-For example, here is a template folder that contains two content files: *console.cs* and *readme.txt*. Take notice that there is the required folder named *.template.config* that contains the *template.json* file.
+For example, here is a template folder that contains two content files: *console.cs* and *readme.txt*. There's also the required folder named *.template.config* that contains the *template.json* file.
 
 ```text
 └───mytemplate
@@ -195,7 +195,7 @@ dotnet new --install <PATH_TO_NUPKG_FILE>
 
 ### To install a template package from a file system directory
 
-Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute.
+Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory doesn't need to be absolute.
 
 ```dotnetcli
 dotnet new --install <FILE_SYSTEM_DIRECTORY>

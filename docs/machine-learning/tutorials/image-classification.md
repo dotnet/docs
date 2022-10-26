@@ -25,7 +25,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 * [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -70,7 +70,7 @@ This tutorial uses the TensorFlow [Inception](https://storage.googleapis.com/dow
 
 Because the `Inception model` has already been pre-trained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
 
-As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET \[Core] or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
 
 ![TensorFlow transform ML.NET Arch diagram](./media/image-classification/tensorflow-mlnet.png)
 
@@ -332,7 +332,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
     [!code-csharp[CallClassifySingleImage](./snippets/image-classification/csharp/Program.cs#CallClassifySingleImage)]
 
-1. Run your console app (Ctrl + F5). Your results should be similar to the following output.  You may see warnings or processing messages, but these messages have been removed from the following results for clarity.
+1. Run your console app (<kbd>Ctrl</kbd> + <kbd>F5</kbd>). Your results should be similar to the following output. (You may see warnings or processing messages, but these messages have been removed from the following results for clarity.)
 
     ```console
     =============== Training classification model ===============

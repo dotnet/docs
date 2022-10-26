@@ -76,7 +76,7 @@ dotnet new install ~/code/nuget-packages/some-folder/
 
 ::: zone-end
 
-The `{folder-path}` specified on the command becomes the template package identifier for all templates found. As specified in the [List templates](#list-templates) section, you can get a list of template packages installed with the `dotnet new uninstall` command. In this example, the template package identifier is shown as the folder used for install:
+The `{folder-path}` specified on the command becomes the template package identifier for all templates found. As specified in the [List template packages](#list-template-packages) section, you can get a list of template packages installed with the `dotnet new uninstall` command. In this example, the template package identifier is shown as the folder used for install:
 
 ::: zone pivot="os-windows"
 

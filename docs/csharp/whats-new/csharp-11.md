@@ -197,3 +197,7 @@ You can add the [`scoped`](../language-reference/statements/declarations.md#scop
 ## File scoped types
 
 Beginning in C# 11, you can use the `file` access modifier to create a type whose visibility is scoped to the source file in which it is declared. This feature helps source generator authors avoid naming collisions. You can learn more about this feature in the article on [file-scoped types](../language-reference/keywords/file.md) in the language reference.
+
+##
+
+- [What's new in .NET 7](../../core/whats-new/dotnet-7.md)

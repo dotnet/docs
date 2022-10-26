@@ -5,7 +5,7 @@ ms.date: 10/24/2022
 ---
 # dotnet workload command
 
-**This article applies to:** ✔️ .NET Core 7.0 SDK and later versions
+**This article applies to:** ✔️ .NET 7 SDK and later versions
 
 ## Name
 

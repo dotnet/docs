@@ -69,19 +69,21 @@ You can omit the logging message and <xref:System.String.Empty?displayProperty=n
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
 
-ILogger<SampleObject> logger = LoggerFactory.Create(
-    builder =>
+using ILoggerFactory loggerFactory = LoggerFactory.Create(builder => 
     builder.AddJsonConsole(
         options =>
-        options.JsonWriterOptions = new JsonWriterOptions()
-        {
-            Indented = true
-        }))
-    .CreateLogger<SampleObject>();
+            options.JsonWriterOptions = new JsonWriterOptions 
+            {
+                Indented = true
+            }));
+
+ILogger<SampleObject> logger = loggerFactory.CreateLogger<SampleObject>();
 
 logger.CustomLogEvent(LogLevel.Information, "Liana", "Seattle");
 
-public static partial class SampleObject
+public class SampleObject { }
+
+public static partial class Log
 {
     [LoggerMessage(EventId = 23)]
     public static partial void CustomLogEvent(
@@ -96,7 +98,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 {
   "EventId": 23,
   "LogLevel": "Information",
-  "Category": "ConsoleApp.SampleObject",
+  "Category": "SampleObject",
   "Message": "",
   "State": {
     "Message": "",

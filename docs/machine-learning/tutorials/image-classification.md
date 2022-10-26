@@ -70,7 +70,7 @@ This tutorial uses the TensorFlow [Inception](https://storage.googleapis.com/dow
 
 Because the `Inception model` has already been pre-trained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
 
-As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET \[Core] or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
+As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET Core or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
 
 ![TensorFlow transform ML.NET Arch diagram](./media/image-classification/tensorflow-mlnet.png)
 

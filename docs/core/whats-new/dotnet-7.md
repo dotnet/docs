@@ -57,11 +57,28 @@ Unix file modes - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-prev
 Publish to a container using dotnet publish - https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
 Rate limiting - https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet/
 
+## Related releases
 
+### C# 11
+
+For more information, see [What's new in C# 11](../../csharp/whats-new/csharp-11.md).
+
+### .NET MAUI
+
+For more information, see [...](/dotnet/maui/...).
+
+### ASP.NET Core
+
+For more information, see [What's new in ASP.NET Core 7](/aspnet/core/release-notes/aspnetcore-7.0).
+
+### EF Core
+
+For more information, see [What's new in EF Core 7.0](/ef/core/what-is-new/ef-core-7.0/whatsnew).
+
+### Orleans
+
+For more information, see [What's new in Orleans 7.0](../../orleans/whats-new-in-orleans.md).
 
 ## See also
 
-- [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-7.0)
-- [What's new in EF Core 7.0](/ef/core/what-is-new/ef-core-7.0/whatsnew)
-- [What's new in C# 11](../../csharp/whats-new/csharp-11.md)
 - [Release notes for .NET 7](https://github.com/dotnet/core/tree/main/release-notes/7.0)

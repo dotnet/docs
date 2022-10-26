@@ -204,8 +204,6 @@ dotnet new uninstall
 That command returns something similar to the following output:
 
 ```console
-Template Instantiation Commands for .NET CLI
-
 Currently installed items:
    Microsoft.Azure.WebJobs.ProjectTemplates
       Version: 4.0.1942

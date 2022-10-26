@@ -162,9 +162,6 @@ No matter how you installed the template package, either with the _.nupkg_ file 
 
 ```dotnetcli
 C:\working> dotnet new uninstall
-
-Template Instantiation Commands for .NET CLI
-
 Currently installed items:
 ... cut to save space ...
 

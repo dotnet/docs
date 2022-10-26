@@ -82,8 +82,6 @@ The `{folder-path}` specified on the command becomes the template package identi
 
 ```console
 dotnet new uninstall
-Template Instantiation Commands for .NET CLI
-
 Currently installed items:
 
 ... cut to save space ...
@@ -102,8 +100,6 @@ Currently installed items:
 
 ```console
 dotnet new uninstall
-Template Instantiation Commands for .NET CLI
-
 Currently installed items:
 
 ... cut to save space ...
@@ -160,8 +156,6 @@ By using the standard uninstall command without a package identifier, you can se
 
 ```console
 dotnet new uninstall
-Template Instantiation Commands for .NET CLI
-
 Currently installed items:
 
 ... cut to save space ...

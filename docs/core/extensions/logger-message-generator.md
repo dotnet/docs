@@ -77,7 +77,7 @@ using ILoggerFactory loggerFactory = LoggerFactory.Create(builder =>
                 Indented = true
             }));
 
-ILogger<SampleObject> logger = LoggerFactory.CreateLogger<SampleObject>();
+ILogger<SampleObject> logger = loggerFactory.CreateLogger<SampleObject>();
 
 logger.CustomLogEvent(LogLevel.Information, "Liana", "Seattle");
 

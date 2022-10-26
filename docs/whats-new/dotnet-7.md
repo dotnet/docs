@@ -123,7 +123,6 @@ Welcome to what's new in the .NET docs for 11/01/2021 - 11/09/2022. This article
 - [IL3055: P/Invoke method declares a parameter with an abstract delegate](../core/deploying/native-aot/warnings/il3055.md)
 - [IL3056: `RequiresDynamicCodeAttribute` cannot be placed directly on a static constructor](../core/deploying/native-aot/warnings/il3056.md)
 - [Source generation for custom marshalling](../standard/native-interop/custom-marshalling-source-generation.md)
-- [Title not found in: #30543](../fundamentals/networking/httpclient.md)
 - [BinaryFormatter serialization APIs produce compiler errors](../core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md)
 - [System.Threading.Channels library](../core/extensions/channels.md)
 - [All assemblies trimmed by default](../core/compatibility/deployment/7.0/trim-all-assemblies.md)
@@ -132,7 +131,6 @@ Welcome to what's new in the .NET docs for 11/01/2021 - 11/09/2022. This article
 - [Default authentication scheme](../core/compatibility/aspnet-core/7.0/default-authentication-scheme.md)
 - [Dynamic X509ChainPolicy verification time](../core/compatibility/cryptography/7.0/x509chainpolicy-verification-time.md)
 - [Middleware no longer defers to endpoint with null request delegate](../core/compatibility/aspnet-core/7.0/middleware-null-requestdelegate.md)
-- [Title not found in: #30244#30062#29792](../core/deploying/native-aot.md)
 - [.NET SDK error list](../core/tools/sdk-errors/index.md)
 - [NETSDK1082: PackageReference to Microsoft.AspNetCore.App is not necessary](../core/tools/sdk-errors/netsdk1082.md)
 - [NETSDK1112: The runtime pack was not downloaded](../core/tools/sdk-errors/netsdk1112.md)
@@ -232,11 +230,8 @@ Welcome to what's new in the .NET docs for 11/01/2021 - 11/09/2022. This article
 - [Changes to reflection invoke API exceptions](../core/compatibility/core-libraries/7.0/reflection-invoke-exceptions.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
 - ['var' preferences (IDE0007 and IDE0008)](../fundamentals/code-analysis/style-rules/ide0007-ide0008.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
 - [Work with Buffers in .NET](../standard/io/buffers.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Title not found in: #30912](../standard/serialization/system-text-json-how-to.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Title not found in: #30912](../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
 - [Character encoding in .NET](../standard/base-types/character-encoding-introduction.md) - Write content for UTF-8 string literals for C# 11.
 - [IHttpClientFactory with .NET](../core/extensions/httpclient-factory.md) - New `HttpClient` article
-- [Title not found in: #30543](../fundamentals/networking/httpclient-guidelines.md) - New `HttpClient` article
 - [Runtime libraries overview](../standard/runtime-libraries-overview.md) - New `HttpClient` article
 - [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md) - BinaryFormatter APIs obsolete as error
 - [.NET runtime contention events](../fundamentals/diagnostics/runtime-contention-events.md) - Update the doc with the new version of ContentionStart
@@ -246,10 +241,6 @@ Welcome to what's new in the .NET docs for 11/01/2021 - 11/09/2022. This article
 - [Generic interfaces in .NET](../standard/generics/interfaces.md) - Generic math docs
 - [Target frameworks in SDK-style projects](../standard/frameworks.md) - Update TFMs for .NET 7
 - [Trimming options](../core/deploying/trimming/trimming-options.md) - Cleanup trimming options and document TrimMode=full,partial
-- [Title not found in: #30244#30062#29792](../core/deploying/native-aot.md)
-  - Document StripSymbols property for native AOT
-  - Update native publishing AOT documentation
-  - Documenting Native AOT deployment
 - [.NET SDK error list](../core/tools/sdk-errors/index.md)
   - Document selected NETSDK error messages
   - List of NETSDK error messages
@@ -402,14 +393,10 @@ Welcome to what's new in the .NET docs for 11/01/2021 - 11/09/2022. This article
 - [Properties](../csharp/properties.md) - C# 11: required members
 - [Constraints on type parameters (C# Programming Guide)](../csharp/programming-guide/generics/constraints-on-type-parameters.md) - Add information on static virtual interface members
 - [Generic Interfaces (C# Programming Guide)](../csharp/programming-guide/generics/generic-interfaces.md) - Add information on static virtual interface members
-- [Title not found in: #30129](../csharp/whats-new/tutorials/static-abstract-interface-methods.md) - Add information on static virtual interface members
 - [namespace](../csharp/language-reference/keywords/namespace.md) - Add IDE0160 and IDE0161.
 - [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md) - Add updates for numeric IntPtr
 - [Built-in numeric conversions (C# reference)](../csharp/language-reference/builtin-types/numeric-conversions.md) - Add updates for numeric IntPtr
 - [What's new in C# 9.0](../csharp/whats-new/csharp-9.md) - Add updates for numeric IntPtr
-- [Title not found in: #29794](../csharp/language-reference/keywords/checked-and-unchecked.md) - Operator updates to support generic math
-- [Title not found in: #29794](../csharp/language-reference/keywords/checked.md) - Operator updates to support generic math
-- [Title not found in: #29794](../csharp/language-reference/keywords/unchecked.md) - Operator updates to support generic math
 - [Arithmetic operators (C# reference)](../csharp/language-reference/operators/arithmetic-operators.md) - Operator updates to support generic math
 
 ## Community contributors

@@ -24,7 +24,7 @@ helpviewer_keywords:
 > [!IMPORTANT]
 > <xref:System.Net.Sockets.Socket> class is highly recommended for advanced users, instead of `TcpClient` and `TcpListener`.
 
-To use the Transmission Control Protocol (TCP) services in .NET, use the <xref:System.Net.Sockets.TcpClient> and <xref:System.Net.Sockets.TcpListener> classes. These protocol classes are built on top of the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class and take care of the details of transferring data.
+To use the Transmission Control Protocol (TCP) services in .NET, you have two options, one of them is using the <xref:System.Net.Sockets.Socket> which is highly recommended, or use the <xref:System.Net.Sockets.TcpClient> and <xref:System.Net.Sockets.TcpListener> classes. <xref:System.Net.Sockets.TcpClient> and <xref:System.Net.Sockets.TcpListener> are built on top of the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class and take care of the details of transferring data and main purpose of these classes is ease of use.
 
 The protocol classes use the underlying `Socket` class to provide simple access to network services without the overhead of maintaining state information or knowing the details of setting up protocol-specific sockets. To use asynchronous `Socket` methods, you can use the asynchronous methods supplied by the <xref:System.Net.Sockets.NetworkStream> class. To access features of the `Socket` class not exposed by the protocol classes, you must use the `Socket` class.
 

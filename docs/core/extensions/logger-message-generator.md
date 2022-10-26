@@ -65,7 +65,7 @@ public static partial class Log
 
 You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> will be provided for the message. The state will contain the arguments, formatted as key-value pairs.
 
-:::code source="snippets/logger-message-generator/Program.cs":::
+:::code source="snippets/logging/logger-message-generator/Program.cs":::
 
 Consider the example logging output when using the `JsonConsole` formatter.
 

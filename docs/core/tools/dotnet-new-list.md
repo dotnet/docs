@@ -54,7 +54,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
 - **`--author <AUTHOR>`**
 
-  Filters templates based on template author. Partial match is supported. Available since .NET Core 5.0.300 SDK.
+  Filters templates based on template author. Partial match is supported. Available since .NET SDK 5.0.300.
 
 - **`--columns <COLUMNS>`**
 
@@ -65,11 +65,11 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
   - `type` - The template type: project or item.
   
   The template name and short name are always shown. The default list of columns is template name, short name, language, and tags. This list is equivalent to specifying `--columns=language,tags`.
-  Available since .NET Core 5.0.300 SDK.
+  Available since .NET SDK 5.0.300.
 
 - **`--columns-all`**
 
-  Displays all columns in the output. Available since .NET Core 5.0.300 SDK.
+  Displays all columns in the output. Available since .NET SDK 5.0.300.
 
 - **`-d|--diagnostics`**
 
@@ -100,7 +100,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
 - **`--tag <TAG>`**
 
-  Filters templates based on template tags. To be selected, a template must have at least one tag that exactly matches the criteria. Available since .NET Core 5.0.300 SDK.
+  Filters templates based on template tags. To be selected, a template must have at least one tag that exactly matches the criteria. Available since .NET SDK 5.0.300.
 
 - **`--type <TYPE>`**
 

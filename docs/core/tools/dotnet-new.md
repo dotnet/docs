@@ -49,12 +49,12 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   You can run [`dotnet new list`](dotnet-new-list.md) to see a list of all installed templates.
 
-  Starting with .NET Core 3.0 SDK and ending with .NET Core 5.0.300 SDK, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
+  Starting with .NET Core 3.0 SDK and ending with .NET SDK 5.0.300, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
 
   - If the CLI can't find a template match when invoking `dotnet new`, not even partial.
   - If there's a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
 
-  Starting with .NET Core 5.0.300 SDK, the [`search` command](dotnet-new-search.md) should be used to search for templates in NuGet.org.
+  Starting with .NET SDK 5.0.300, the [`search` command](dotnet-new-search.md) should be used to search for templates in NuGet.org.
 
   The following table shows the templates that come pre-installed with the .NET SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
@@ -124,7 +124,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
 - **`-no-update-check`**
 
-  Disables checking for template package updates when instantiating a template. Available since .NET 6.0.100 SDK.
+  Disables checking for template package updates when instantiating a template. Available since .NET SDK 6.0.100.
   When instantiating the template from a template package that was installed by using `dotnet new --install`, `dotnet new` checks if there is an update for the template.
   Starting with .NET 6, no update checks are done for .NET default templates. To update .NET default templates, install the patch version of the .NET SDK.
 

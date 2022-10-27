@@ -28,9 +28,6 @@ Cloud native apps - simplify security configuration; improve app performance
 .NET Upgrade Assistant improvements
 WCF?
 P/Invoke code generation - LibraryImport (https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#libraryimport-p-invoke-source-generator)
-STJ
-- custom contracts
-- polymorphism
 RegEx
 - source generators - builds an engine that's optimized for your pattern at compile time
 - span support (new APIs)
@@ -61,13 +58,15 @@ For information about these and other updates, see the [What's new in System.Tex
 
 ## .NET libraries
 
-Track microseconds and nanoseconds in date and time structures
-New Tar APIs
-- https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-new-tar-apis
-- https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#system-formats-tar-api-updates
-Rate limiting - https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet/
-Stream.ReadExactly and Stream.ReadAtLeast (https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-5/#system-io-stream)
-New type converters for DateOnly, TimeOnly, Int128, UInt128, and Half (converts value types to/from string, usually)
+Many improvements have been made to .NET library APIs. The following table shows some of the new APIs and why you might use them.
+
+| Description | APIs | Further information |
+| - | - | - |
+| Support for microseconds and nanoseconds in <xref:System.TimeSpan>, <xref:System.TimeOnly>, <xref:System.DateTime>, and <xref:System.DateTimeOffset> types | <xref:System.DateTime.Microsecond?displayProperty=nameWithType><br /><xref:System.DateTime.Nanosecond?displayProperty=nameWithType><br /><xref:System.DateTime.AddMicroseconds(System.Double)?displayProperty=nameWithType><br />New <xref:System.DateTime> constructor overloads<br /><br /><xref:System.DateTimeOffset.Microsecond?displayProperty=nameWithType><br /><xref:System.DateTimeOffset.Nanosecond?displayProperty=nameWithType><br /><xref:System.DateTimeOffset.AddMicroseconds(System.Double)?displayProperty=nameWithType><br />New <xref:System.DateTimeOffset> constructor overloads<br /><br /><xref:System.TimeOnly.Microsecond?displayProperty=nameWithType><br /><xref:System.TimeOnly.Nanosecond?displayProperty=nameWithType><br /><br /><xref:System.TimeSpan.Microseconds?displayProperty=nameWithType><br /><xref:System.TimeSpan.Nanoseconds?displayProperty=nameWithType><br /><xref:System.TimeSpan.FromMicroseconds(System.Double)?displayProperty=nameWithType><br />and others... | These APIs mean you no longer have to perform computations on the "tick" value to determine microsecond and nanosecond values. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#adding-microseconds-and-nanoseconds-to-timestamp-datetime-datetimeoffset-and-timeonly) blog post. |
+| APIs for reading, writing, archiving, and extracting Tar archives | <xref:System.Formats.Tar?displayProperty=fullName> | For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-new-tar-apis) and [.NET 7 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#system-formats-tar-api-updates) blog posts. |
+| Rate limiting APIs to protect a resource by keeping traffic at a safe level | <xref:System.Threading.RateLimiting.RateLimiter?displayProperty=fullName> and others in the [System.Threading.RateLimiting NuGet package](https://www.nuget.org/packages/System.Threading.RateLimiting) | For more information, see [Rate limit an HTTP handler in .NET](../extensions/http-ratelimiter.md) and [Announcing rate limiting for .NET](https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet/). |
+| APIs to read *all* the data from a <xref:System.IO.Stream> | <xref:System.IO.Stream.ReadExactly%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.ReadAtLeast%2A?displayProperty=nameWithType> | <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> may return less data than what's available in the stream. The new `ReadExactly` methods read *exactly* the number of bytes requested, and the new `ReadAtLeast` methods read *at least* the number of bytes requested. For more information, see the [.NET 7 Preview 5 blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-5/#system-io-stream). |
+| New type converters for `DateOnly`, `TimeOnly`, `Int128`, `UInt128`, and `Half` | <xref:System.ComponentModel.DateOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.TimeOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.Int128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.UInt128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.HalfConverter?displayProperty=fullName> | Type converters are often used to convert value types to and from a string. These new APIs add type converters for types that were added more recently. |
 
 ## Related releases
 

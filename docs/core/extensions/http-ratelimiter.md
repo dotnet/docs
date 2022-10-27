@@ -29,8 +29,8 @@ The preceding C# code:
 - Inherits the `DelegatingHandler` type.
 - Implements the <xref:System.IAsyncDisposable> interface.
 - Defines a `RateLimiter` field that is assigned from the constructor.
-- The `SendAsync` method is overridden to intercept and handle requests before they're sent to the server.
-- The <xref:System.IAsyncDisposable.DisposeAsync> method is overridden to dispose of the `RateLimiter` instance.
+- Overrides the `SendAsync` method to intercept and handle requests before they're sent to the server.
+- Overrides the <xref:System.IAsyncDisposable.DisposeAsync> method to dispose of the `RateLimiter` instance.
 
 Looking a bit closer at the `SendAsync` method, you'll see that it:
 

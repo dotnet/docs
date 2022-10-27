@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 10/12/2021
+ms.date: 11/08/2022
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -47,6 +47,8 @@ Each scenario maps to a different Machine Learning Task which include:
 
 - Binary classification
 - Multiclass classification
+- Text classification
+- Image classification
 - Regression
 - Clustering
 - Anomaly detection
@@ -76,6 +78,12 @@ Value prediction, which falls under the regression task, is used to predict numb
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
+#### Text classification
+
+Text classification categorizes raw text input.
+
+You can use the text classification scenario if you have a set of documents or comments, and you want to classify them into different categories.
+
 #### Image classification
 
 Image classification is used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
@@ -93,6 +101,12 @@ You can use object detection when images contain multiple objects of different t
 The recommendation scenario predicts a list of suggested items for a particular user, based on how similar their likes and dislikes are to other users'.
 
 You can use the recommendation scenario when you have a set of users and a set of "products", such as items to purchase, movies, books, or TV shows, along with a set of users' "ratings" of those products.
+
+#### Forecasting
+
+The forecasting scenario uses historical data with a time-series or seasonal component to it.
+
+You can use the forecasting scenario to forecast demand or sale for a product.
 
 ## Environment
 

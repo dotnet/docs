@@ -126,7 +126,7 @@ By default, Orleans will serialize your type by encoding its full name. You can 
 
 ### Serializing `record` types
 
-Record types have a primary constructor and Orleans will infer a serialization order based upon the parameter order. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type do not share identities with the primary constructor parameters. This means that you can and should start your members
+Members defined in a record's primary constructor have implicit ids by default, in other words Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type do not share identities with the primary constructor parameters. This means that you can and should start your members
 
 ### Serialization best practices
 

@@ -46,17 +46,21 @@ For information about these and other updates, see the [What's new in System.Tex
 
 ## Regular expressions
 
-.NET's [regular expression](../../standard/base-types/regular-expressions.md) library has seen significant functional and performance improvements in .NET 7.
+.NET's [regular expression](../../standard/base-types/regular-expressions.md) library has seen significant functional and performance improvements in .NET 7:
 
-- source generators - builds an engine that's optimized for your pattern at compile time - [.NET regular expression source generators](../../standard/base-types/regular-expression-source-generators.md)
-- span support (new APIs)
-- performance improvements when ignoring case
-- analyzer to find (and fix) places you can use it
+- The new option <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> enables matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. The nonbacktracking engine can't be used in a right-to-left search and a has a few other restrictions, but is fast for all regular expressions and inputs.
 
-- <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> - Enable matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input.
-- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Regex?displayProperty=nameWithType>
+- Regular expression source generators are new. Source generators build an engine that's optimized for *your* pattern at compile time, providing throughput performance benefits. The source that's emitted is part of your project, so you can view and debug it. In addition, a new source-generator diagnostic `SYSLIB1045` alerts you to places you use <xref:System.Text.RegularExpressions.Regex> that could be converted to the source generator. For more information, see [.NET regular expression source generators](../../standard/base-types/regular-expression-source-generators.md).
 
-For more information, see the [Regular expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/) blog post.
+- For case-insensitive searches, .NET 7 includes large performance gains. The gains come because specifying <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> no longer calls <xref:System.Char.ToLower%2A> on each character in the pattern and on each character in the input. Instead, all casing-related work is done when the <xref:System.Text.RegularExpressions.Regex> is constructed.
+
+- <xref:System.Text.RegularExpressions.Regex> now supports spans for some APIs. The following new methods have been added as part of this support:
+
+  - <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=nameWithType>
+  - <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=nameWithType>
+  - <xref:System.Text.RegularExpressions.Regex.IsMatch(System.ReadOnlySpan{System.Char})?displayProperty=nameWithType> (and a few other overloads)
+
+For more information about these and other improvements, see the [Regular expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/) blog post.
 
 ## Templates
 
@@ -72,7 +76,9 @@ For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/
 ## .NET SDK
 
 NuGet - central package management
-Publish to a container using dotnet publish - https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
+Publish to a container using dotnet publish
+- [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
+- https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
 
 ## .NET libraries
 
@@ -87,7 +93,7 @@ Many improvements have been made to .NET library APIs. Some have already been me
 | New type converters for `DateOnly`, `TimeOnly`, `Int128`, `UInt128`, and `Half` | <xref:System.ComponentModel.DateOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.TimeOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.Int128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.UInt128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.HalfConverter?displayProperty=fullName> | Type converters are often used to convert value types to and from a string. These new APIs add type converters for types that were added more recently. |
 | Metrics support for <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics?displayProperty=fullName><br /><xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics> lets you use event counters or metrics APIs to track statistics for one or more memory caches. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-metrics-for-microsoft-extensions-caching) blog post. |
 | APIs to get and set Unix file permissions | <xref:System.IO.UnixFileMode?displayProperty=fullName> enum<br /><xref:System.IO.File.GetUnixFileMode%2A?displayProperty=nameWithType><br /><xref:System.IO.File.SetUnixFileMode%2A?displayProperty=nameWithType><xref:System.IO.FileSystemInfo.UnixFileMode?displayProperty=nameWithType><br /><xref:System.IO.Directory.CreateDirectory(System.String,System.IO.UnixFileMode)?displayProperty=nameWithType><br /><xref:System.IO.FileStreamOptions.UnixCreateMode?displayProperty=nameWithType> | For more information, see the [.NET 7 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#support-for-unix-file-modes) blog post. |
-| | <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute?displayProperty=fullName> | |
+| Attribute to indicate what what kind of syntax is expected in a string | <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute?displayProperty=fullName> | For example, you can specify that a `string` parameter expects a regular expression by attributing the parameter with `[StringSyntax(StringSyntaxAttribute.Regex)]`. |
 
 ## Related releases
 

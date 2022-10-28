@@ -13,22 +13,10 @@ author: gewarren
 To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [What's new in docs for .NET 7]().
 
 Cloud native apps - simplify security configuration; improve app performance
-.NET Upgrade Assistant improvements
-WCF?
 P/Invoke code generation - LibraryImport (https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#libraryimport-p-invoke-source-generator)
-RegEx
-- source generators - builds an engine that's optimized for your pattern at compile time
-- span support (new APIs)
-- performance improvements
-- analyzer to find (and fix) places you can use it
-"dotnet new" - tab completion to explore templates and parameters
-Template authoring - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring
-- https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/
 Library trimming
-Observability ("understand the state of your application as scale and technical complexity increases") - OpenTelemetry - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#observability
-NuGet - central package management
-Text classification API for ML.NET - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-5/#ml-net-text-classification-api
-Publish to a container using dotnet publish - https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
+
+
 
 ## Performance
 
@@ -37,7 +25,7 @@ Performance is a key focus of .NET 7, and all of its features are designed with 
 - On-stack replacement (OSR) is a complement to tiered compilation. It allows the runtime to change the code executed by a currently running method in the middle of its execution (that is, while it's "on stack"). Long-running methods can switch to more optimized versions mid-execution.
 - Profile-guided optimization (PGO) now works with OSR and is easier to enable (by adding `<TieredPGO>true</TieredPGO>` to your project file). PGO can also instrument and optimize additional things, such as delegates.
 - Improved code generation for Arm64.
-- Native AOT produces a standalone executable in the target platform's file format with no external dependencies. It's entirely native, with no IL or JIT, and provides fast startup time and a small, self-contained deployment. In .NET 7, Native AOT focuses on console apps and requires apps to be trimmed.
+- [Native AOT](../deploying/native-aot/index.md) produces a standalone executable in the target platform's file format with no external dependencies. It's entirely native, with no IL or JIT, and provides fast startup time and a small, self-contained deployment. In .NET 7, Native AOT focuses on console apps and requires apps to be trimmed.
 - Performance improvements to the mono runtime, which powers Blazor WebAssembly, Android, and iOS apps.
 
 For a detailed look at everything that's gone into making .NET 7 so fast, see the epic [Performance improvements in .NET 7](https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/) blog post.
@@ -55,6 +43,31 @@ For information about these and other updates, see the [What's new in System.Tex
 ## Generic math
 
 .NET 7 and C# 11 include innovations that allow you to perform mathematical operations generically&mdash;that is, without having to know the exact type you're working with. For example, if you wanted to write a method that adds two numbers, previously you had to add an overload of the method for each type. Now you can write a single, generic method, where the type parameter is constrained to be a number-like type. For more information, see [Generic math](../../standard/generics/math.md) and the [Generic math](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/) blog post.
+
+## Regular expressions
+
+
+
+- source generators - builds an engine that's optimized for your pattern at compile time
+- span support (new APIs)
+- performance improvements
+- analyzer to find (and fix) places you can use it
+
+## Templates
+
+"dotnet new" - tab completion to explore templates and parameters
+Template authoring - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring
+- https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/
+
+## Observability
+
+Observability ("understand the state of your application as scale and technical complexity increases") - OpenTelemetry
+For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#observability) blog post.
+
+## .NET SDK
+
+NuGet - central package management
+Publish to a container using dotnet publish - https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
 
 ## .NET libraries
 
@@ -74,9 +87,11 @@ Many improvements have been made to .NET library APIs. The following table shows
 
 This section contains information about related products that have releases to coincide with the .NET 7 release.
 
+<!--
 ### Visual Studio 2022 version 17.4
 
 For more information, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022).
+-->
 
 ### C# 11
 
@@ -96,11 +111,25 @@ Entity Framework Core 7.0 includes provider-agnostic support for JSON columns, i
 
 ### Windows Forms
 
+Much work has gone into Windows Forms for .NET 7. Improvements have been made in the following areas:
 
+- Accessibility
+- High DPI and scaling
+- Databinding
+
+For more information, see [What's new in Windows Forms in .NET 7](https://devblogs.microsoft.com/dotnet/winforms-enhancements-in-dotnet-7).
 
 ### Orleans
 
 Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [What's new in Orleans 7.0](../../orleans/whats-new-in-orleans.md).
+
+### .NET Upgrade Assistant and CoreWCF
+
+The .NET Upgrade Assistant now supports upgrading server-side WCF apps to [CoreWCF](https://github.com/CoreWCF/CoreWCF), which is a community-created port of WCF to .NET (Core). For more information, see [Upgrade a WCF server-side project to use CoreWCF](../porting/upgrade-assistant-wcf.md).
+
+### ML.NET
+
+ML.NET now includes a text classification API that that makes it easy to train custom text classification models using the latest state-of-the-art deep learning techniques. For more information, see the [What's new with AutoML and tooling](https://devblogs.microsoft.com/dotnet/whats-new-with-mldotnet-automl/) and [Introducing the ML.NET Text Classification API](https://devblogs.microsoft.com/dotnet/introducing-the-ml-dotnet-text-classification-api-preview/) blog posts.
 
 ## See also
 

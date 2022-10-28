@@ -698,17 +698,15 @@ items:
       href: additional-apis/stdole.stdfont.md
     - name: StdPicture interface
       href: additional-apis/stdole.stdpicture.md
-  - name: POS for .NET
+  - name: POS for .NET v1.14.1
+    href: pos-for-net/index.md #../bb429024(v=winembedded.4).md
     items:
-    - name: POS for .NET v1.14.1 SDK Documentation
-      href: #../bb429024(v=winembedded.4).md
-      items:
-      - name: Copyright Information for POS for .NET v1.14.1
-        href: ../bb429018(v=winembedded.4).md
-      - name: POS for .NET FAQ
-        href: ../ee406171(v=winembedded.4).md
-      - name: What's New in POS for .NET v1.14 and v1.14.1
-        href: ../dn638335(v=winembedded.4).md
+    - name: Copyright Information for POS for .NET v1.14.1
+      href: ../bb429018(v=winembedded.4).md
+    - name: POS for .NET FAQ
+      href: ../ee406171(v=winembedded.4).md
+    - name: What's New in POS for .NET v1.14 and v1.14.1
+      href: ../dn638335(v=winembedded.4).md
     - name: POS for .NET v1.14.1 Features
       href: ../bb411785(v=winembedded.4).md
       items:
@@ -868,7 +866,7 @@ items:
           - name: POSDM Command Arguments
             href: ../bb428960(v=winembedded.4).md
       - name: POS for .NET Reference
-        href: /dotnet/api/?view=point-of-service-1.14
+        href: /dotnet/api/?view=point-of-service-1.14&preserve-view=true
 - name: What's new and obsolete
   items:
   - name: What's new

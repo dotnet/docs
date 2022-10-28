@@ -12,10 +12,10 @@ author: gewarren
 
 To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [What's new in docs for .NET 7]().
 
+
 Cloud native apps - simplify security configuration; improve app performance
 P/Invoke code generation - LibraryImport (https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#libraryimport-p-invoke-source-generator)
 Library trimming
-
 
 
 ## Performance
@@ -46,12 +46,17 @@ For information about these and other updates, see the [What's new in System.Tex
 
 ## Regular expressions
 
+.NET's [regular expression](../../standard/base-types/regular-expressions.md) library has seen significant functional and performance improvements in .NET 7.
 
-
-- source generators - builds an engine that's optimized for your pattern at compile time
+- source generators - builds an engine that's optimized for your pattern at compile time - [.NET regular expression source generators](../../standard/base-types/regular-expression-source-generators.md)
 - span support (new APIs)
-- performance improvements
+- performance improvements when ignoring case
 - analyzer to find (and fix) places you can use it
+
+- <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> - Enable matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input.
+- <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Regex?displayProperty=nameWithType>
+
+For more information, see the [Regular expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/) blog post.
 
 ## Templates
 
@@ -71,7 +76,7 @@ Publish to a container using dotnet publish - https://devblogs.microsoft.com/dot
 
 ## .NET libraries
 
-Many improvements have been made to .NET library APIs. The following table shows some of the new APIs and why you might use them.
+Many improvements have been made to .NET library APIs. Some have already been mentioned in the previous sections. Some others are summarized in the following table:
 
 | Description | APIs | Further information |
 | - | - | - |
@@ -82,6 +87,7 @@ Many improvements have been made to .NET library APIs. The following table shows
 | New type converters for `DateOnly`, `TimeOnly`, `Int128`, `UInt128`, and `Half` | <xref:System.ComponentModel.DateOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.TimeOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.Int128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.UInt128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.HalfConverter?displayProperty=fullName> | Type converters are often used to convert value types to and from a string. These new APIs add type converters for types that were added more recently. |
 | Metrics support for <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics?displayProperty=fullName><br /><xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics> lets you use event counters or metrics APIs to track statistics for one or more memory caches. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-metrics-for-microsoft-extensions-caching) blog post. |
 | APIs to get and set Unix file permissions | <xref:System.IO.UnixFileMode?displayProperty=fullName> enum<br /><xref:System.IO.File.GetUnixFileMode%2A?displayProperty=nameWithType><br /><xref:System.IO.File.SetUnixFileMode%2A?displayProperty=nameWithType><xref:System.IO.FileSystemInfo.UnixFileMode?displayProperty=nameWithType><br /><xref:System.IO.Directory.CreateDirectory(System.String,System.IO.UnixFileMode)?displayProperty=nameWithType><br /><xref:System.IO.FileStreamOptions.UnixCreateMode?displayProperty=nameWithType> | For more information, see the [.NET 7 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#support-for-unix-file-modes) blog post. |
+| | <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute?displayProperty=fullName> | |
 
 ## Related releases
 

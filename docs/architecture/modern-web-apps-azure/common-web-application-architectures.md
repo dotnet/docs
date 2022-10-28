@@ -299,7 +299,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 
 - [Web-Queue-Worker](/azure/architecture/guide/architecture-styles/web-queue-worker): The core components of this architecture are a web front end that serves client requests, and a worker that performs resource-intensive tasks, long-running workflows, or batch jobs. The web front end communicates with the worker through a message queue.
 - [N-tier](/azure/architecture/guide/architecture-styles/n-tier): An N-tier architecture divides an application into logical layers and physical tiers.
-- [Microservice](/azure/architecture/guide/architecture-styles/microservices): A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context. 
+- [Microservice](/azure/architecture/guide/architecture-styles/microservices): A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context.
 
 ### References – Common web architectures
 

@@ -76,6 +76,8 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 - Using the [Outbox pattern](https://www.kamilgrzybek.com/design/the-outbox-pattern/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 
+For a more complete description of the challenges in this space, including how messages with potentially incorrect data can end up being published, see [Data platform for mission-critical workloads on Azure: Every message must be processed](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#every-message-must-be-processed).
+
 Additional topics to consider when using asynchronous communication are message idempotence and message deduplication. These topics are covered in the section [Implementing event-based communication between microservices (integration events)](../multi-container-microservice-net-applications/integration-event-based-microservice-communications.md) later in this guide.
 
 ## Additional resources

@@ -1,7 +1,7 @@
 ---
 title: What's new in Orleans
 description: Learn about the various new features introduced in Orleans 7.0.
-ms.date: 10/26/2022
+ms.date: 10/31/2022
 ---
 
 # What's new in Orleans 7.0
@@ -399,10 +399,69 @@ In Orleans 7.0, streams are now identified using strings. The `StreamId` namespa
 
 ### Replacement of SimpleMessageStreams with BroadcastChannel
 
-- If implicit subscriptions are sufficient, BroadcastChannel is a behaviorally identical replacement for _SMS_ streams.
-- If you need explicit subscriptions, migrate to _In-memory Streams_
+`SimpleMessageStreams` (also called SMS) was removed in 7.0. SMS had the same interface as `PersistentStreams`, but its behavior was very different, since it relied on direct grain-to-grain calls. To avoid confusion, SMS was removed, and a new replacement called `BroadcastChannel` was introduced.
 
-<!-- TODO: add examples -->
+`BroadcastChannel` only supports implicit subscription and can be a direct replacement in this case. If you need explicit subscriptions or need to use the `PersistentStream` interface (for example you were using SMS in tests while using `EventHub` in production), then `MemoryStream` is the best candidate for you.
+
+`BroadcastChannel` will have the same behaviors as SMS, while `MemoryStream` will behave like other stream providers. Consider the following Broadcast Channel usage example:
+
+```csharp
+// Configuration
+builder.AddBroadcastChannel(
+    "my-provider",
+    options => options.FireAndForgetDelivery = false);
+
+// Publishing
+var grainKey = Guid.NewGuid().ToString("N");
+var channelId = ChannelId.Create("some-namespace", grainKey);
+var stream = provider.GetChannelWriter<int>(channelId);
+
+await stream.Publish(1);
+await stream.Publish(2);
+await stream.Publish(3);
+
+// Simple implicit subscriber example
+[ImplicitChannelSubscription]
+public sealed class SimpleSubscriberGrain : Grain, ISubscriberGrain, IOnBroadcastChannelSubscribed
+{
+    // Called when a subscription is added to the grain
+    public Task OnSubscribed(IBroadcastChannelSubscription streamSubscription)
+    {
+        streamSubscription.Attach<int>(
+          item => OnPublished(streamSubscription.ChannelId, item),
+          ex => OnError(streamSubscription.ChannelId, ex));
+
+        return Task.CompletedTask;
+
+        // Called when an item is published to the channel
+        static Task OnPublished(ChannelId id, int item)
+        {
+            // Do something
+            return Task.CompletedTask;
+        }
+
+        // Called when an error occurs
+        static Task OnError(ChannelId id, Exception ex)
+        {
+            // Do something
+            return Task.CompletedTask;
+        }
+    }
+}
+```
+
+Migration to `MemoryStream` will be easier, since only the configuration needs to change. Consider the following `MemoryStream` configuration:
+
+```csharp
+builder.AddMemoryStreams<DefaultMemoryMessageBodySerializer>(
+    "in-mem-provider",
+    bldr =>
+    {
+        // Number of pulling agent to start.
+        // DO NOT CHANGE this value once deployed, if you do rolling deployment
+        bldr.ConfigurePartitioning(partitionCount: 8);
+    });
+```
 
 ### Open Telemetry
 

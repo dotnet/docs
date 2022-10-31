@@ -22,7 +22,7 @@ Structure types have *value semantics*. That is, a variable of a structure type 
 
 Typically, you use structure types to design small data-centric types that provide little or no behavior. For example, .NET uses structure types to represent a number (both [integer](integral-numeric-types.md) and [real](floating-point-numeric-types.md)), a [Boolean value](bool.md), a [Unicode character](char.md), a [time instance](xref:System.DateTime). If you're focused on the behavior of a type, consider defining a [class](../keywords/class.md). Class types have *reference semantics*. That is, a variable of a class type contains a reference to an instance of the type, not the instance itself.
 
-Because structure types have value semantics, we recommend you to define *immutable* structure types.
+Because structure types have value semantics, we recommend you define *immutable* structure types.
 
 ## `readonly` struct
 

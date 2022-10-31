@@ -471,8 +471,12 @@ Use a scope by wrapping logger calls in a `using` block:
 public async Task<T> GetAsync<T>(string id)
 {
     T result;
+    var transactionId = Guid.NewGuid().ToString();
 
-    using (_logger.BeginScope("using block message"))
+    using (_logger.BeginScope(new List<KeyValuePair<string, object>>
+        {
+            new KeyValuePair<string, object>("TransactionId", transactionId),
+        }))
     {
         _logger.LogInformation(
             AppLogEvents.Read, "Reading value for {Id}", id);

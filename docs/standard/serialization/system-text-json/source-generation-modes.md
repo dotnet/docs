@@ -15,7 +15,7 @@ ms.topic: how-to
 # How to choose reflection or source generation in System.Text.Json
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
-By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
+By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
 You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see [How to get the library](overview.md#how-to-get-the-library).
 
@@ -23,7 +23,7 @@ This article explains the options and provides guidance on how to choose the bes
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-[System.Text.Json](overview.md) version 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md) accuracy. You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see:
+[System.Text.Json](overview.md) version 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md) accuracy. You can use version 6.0 or later of System.Text.Json in projects that target earlier frameworks. For more information, see:
 
 * [How to get the library](overview.md#how-to-get-the-library)
 * [The .NET 6 version of this article](source-generation-modes.md?pivots=dotnet-6-0).
@@ -105,6 +105,7 @@ The following table shows which options in `JsonSerializerOptions` are supported
 | <xref:System.Text.Json.JsonSerializerOptions.NumberHandling>           | ❌                          |
 | <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy>     | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                          |
+| <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver>         | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.WriteIndented>            | ✔️                         |
 
 The following table shows which attributes are supported by the optimized serialization code:
@@ -112,11 +113,14 @@ The following table shows which attributes are supported by the optimized serial
 | Attribute                                                         | Supported by optimized code |
 |-------------------------------------------------------------------|-----------------------------|
 | <xref:System.Text.Json.Serialization.JsonConverterAttribute>      | ❌                         |
+| <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute>    | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonExtensionDataAttribute>  | ❌                         |
 | <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>         | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonIncludeAttribute>        | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute> | ❌                         |
+| <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute>    | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>   | ✔️                         |
+| <xref:System.Text.Json.Serialization.JsonRequiredAttribute>       | ✔️                         |
 
 If a non-supported option or attribute is specified for a type, the serializer falls back to the default `JsonSerializer` code. In that case, the optimized code isn't used when serializing that type but may be used for other types. Therefore it's important to do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
 

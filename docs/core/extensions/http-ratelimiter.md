@@ -3,7 +3,7 @@ title: Rate limiting an HTTP handler in .NET
 description: Learn how to create a client-side HTTP handler that limits the number of requests.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/15/2022
+ms.date: 10/24/2022
 ---
 
 # Rate limit an HTTP handler in .NET
@@ -34,7 +34,7 @@ The preceding C# code:
 
 Looking a bit closer at the `SendAsync` method, you'll see that it:
 
-- Relies on the `RateLimiter` instance to acquire a `RateLimitLease` from the `WaitAsync`.
+- Relies on the `RateLimiter` instance to acquire a `RateLimitLease` from the `AcquireAsync`.
 - When the `lease.IsAcquired` property is `true`, the request is sent to the server.
 - Otherwise, an <xref:System.Net.Http.HttpResponseMessage> is returned with a `429` status code, and if the `lease` contains a `RetryAfter` value, the `Retry-After` header is set to that value.
 

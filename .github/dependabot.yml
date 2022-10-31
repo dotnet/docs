@@ -27,6 +27,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/docker/snippets/Worker" #DotNet.ContainerImage.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/caching/distributed" #distributed-apis.csproj
     schedule:
       interval: "weekly"

@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication2
 {
     // <snippet2>
-    class Program
+    class ProgramTwo
     {
         static void Main()
         {

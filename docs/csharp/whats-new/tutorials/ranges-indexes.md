@@ -20,6 +20,8 @@ In this tutorial, you'll learn how to:
 
 ## Language support for indices and ranges
 
+Indices and ranges provide a succinct syntax for accessing single elements or ranges in a sequence.
+
 This language support relies on two new types and two new operators:
 
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
@@ -49,7 +51,7 @@ You can retrieve the last word with the `^1` index. Add the following code below
 
 [!code-csharp[LastIndex](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastIndex)]
 
-A range specifies the *start* and *end* of a range. Ranges are exclusive, meaning the *end* isn't included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
+A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* isn't included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
 
 The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range.
 
@@ -70,6 +72,8 @@ You can also declare ranges or indices as variables. The variable can then be us
 The following sample shows many of the reasons for those choices. Modify `x`, `y`, and `z` to try different combinations. When you experiment, use values where `x` is less than `y`, and `y` is less than `z` for valid combinations. Add the following code in a new method. Try different combinations:
 
 [!code-csharp[SemanticsExamples](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
+
+Not only arrays support indices and ranges. You can also use indices and ranges with [string](../../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
 ### Implicit range operator expression conversions
 

@@ -62,12 +62,6 @@ For information about these and other updates, see the [What's new in System.Tex
 
 For more information about these and other improvements, see the [Regular expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/) blog post.
 
-## Templates
-
-"dotnet new" - tab completion to explore templates and parameters
-Template authoring - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring
-- https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/
-
 ## Observability
 
 Observability ("understand the state of your application as scale and technical complexity increases") - OpenTelemetry
@@ -75,10 +69,17 @@ For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/
 
 ## .NET SDK
 
+"dotnet new" - tab completion to explore templates and parameters
+Template authoring - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring
+- https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/
 NuGet - central package management
 Publish to a container using dotnet publish
 - [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
 - https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
+
+## P/Invoke source generation
+
+.NET 7 introduces a source generator for platform invokes (P/Invokes) in C#. The source generator looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on `static`, `partial` methods to trigger compile-time source generation of marshalling code. By generating the marshalling code at compile time, no IL stub needs to be generated at run time, as it does when using <xref:System.Runtime.InteropServices.DllImportAttribute>. The source generator improves application performance and also allows the app to be ahead-of-time (AOT) compiled. For more information, see []().
 
 ## .NET libraries
 

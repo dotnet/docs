@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
-ms.date: 10/21/2022
+ms.date: 10/31/2022
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -10,13 +10,14 @@ author: gewarren
 
 .NET 7 is the successor to [.NET 6](dotnet-6.md) and focuses on being unified, modern, simple, and *fast*. .NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release). This article lists the new features of .NET 7 and provides links to more detailed information on each.
 
+<!--
 To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [What's new in docs for .NET 7]().
+-->
 
+## Cloud native apps
 
-Cloud native apps - simplify security configuration; improve app performance
-P/Invoke code generation - LibraryImport (https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#libraryimport-p-invoke-source-generator)
-Library trimming
-
+Simplify security configuration
+Improve app performance
 
 ## Performance
 
@@ -64,22 +65,37 @@ For more information about these and other improvements, see the [Regular expres
 
 ## Observability
 
-Observability ("understand the state of your application as scale and technical complexity increases") - OpenTelemetry
+.NET 7 makes improvements to *observability*. Observability helps you understand the state of your app as it scales and as the technical complexity increases. .NET's observability implementation is primarily built around [OpenTelemetry](https://opentelemetry.io/). Improvements include:
+
+- The new <xref:System.Diagnostics.Activity.CurrentChanged?displayProperty=nameWithType> event, which you can use to detect when the span context of a managed thread changes.
+- New, performant enumerator methods for <xref:System.Diagnostics.Activity> properties: <xref:System.Diagnostics.Activity.EnumerateTagObjects>, <xref:System.Diagnostics.Activity.EnumerateLinks>, and <xref:System.Diagnostics.Activity.EnumerateEvents>.
+
 For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#observability) blog post.
 
 ## .NET SDK
 
+The .NET 7 SDK includes improvements to templates, and enables publishing to a container and central package management with NuGet.
+
+### Templates
+
 "dotnet new" - tab completion to explore templates and parameters
-Template authoring - https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring
-- https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/
-NuGet - central package management
+Template authoring - <https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring>
+
+### Publish to a container
+
 Publish to a container using dotnet publish
 - [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
-- https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/
+- <https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/>
+
+### Central package management
+
+You can now manage common dependencies in your projects from one location using NuGet's central package management (CPM) feature. To enable it, you add a *Directory.Packages.props* file to the root of your repository. In this file, set the MSBuild property `ManagePackageVersionsCentrally` to `true` and add versions for common package dependency using `PackageVersion` items. Then, in the individual project files, you can omit `Version` attributes from any [PackageReference](../project-sdk/msbuild-props.md#packagereference) items that refer to centrally managed packages.
+
+For more information, see [Central package management](/nuget/consume-packages/Central-Package-Management).
 
 ## P/Invoke source generation
 
-.NET 7 introduces a source generator for platform invokes (P/Invokes) in C#. The source generator looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on `static`, `partial` methods to trigger compile-time source generation of marshalling code. By generating the marshalling code at compile time, no IL stub needs to be generated at run time, as it does when using <xref:System.Runtime.InteropServices.DllImportAttribute>. The source generator improves application performance and also allows the app to be ahead-of-time (AOT) compiled. For more information, see []().
+.NET 7 introduces a source generator for platform invokes (P/Invokes) in C#. The source generator looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on `static`, `partial` methods to trigger compile-time source generation of marshalling code. By generating the marshalling code at compile time, no IL stub needs to be generated at run time, as it does when using <xref:System.Runtime.InteropServices.DllImportAttribute>. The source generator improves application performance and also allows the app to be ahead-of-time (AOT) compiled. For more information, see [Source generation for platform invokes](../../standard/native-interop/pinvoke-source-generation.md) and [Use custom marshallers in source-generated P/Invokes](../../standard/native-interop/tutorial-custom-marshaller.md).
 
 ## .NET libraries
 

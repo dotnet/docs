@@ -78,10 +78,71 @@ The preceding C# code:
 - Writes the sent message to the console.
 - Finally, calls the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to stop listening on the port.
 
+## Equivalent usages of `TcpClient` and `TcpListener` classes in `Socket` class
+
+`TcpListener` and `TcpClient` classes directly uses `Socket` class in underlying implementation. It means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
+
+### `TcpClient` Constructors
+
+`TcpClient's` default constructor basically tries to create a `dual mode socket`, if it's not viable, it creates IPv4 Socket via using `Socket(SocketType, ProtocolType)` constructor. It means following code snippets are equivalent:
+
+```csharp
+TcpClient client = new TcpClient();
+```
+
+```csharp
+Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+```
+
+One of `TcpClient's` constructor takes `AddressFamily` enum as parameter. You can pass three different enum value to this constructor, otherwise it throws an <xref:System.ArgumentException>. Valid enums are:
+
+- `AddressFamily.InterNetwork` for IPv4 Socket
+- `AddressFamily.InterNetworkV6` for IPv6 Socket
+- `AddressFamily.Unknown` for Dual-Mode Socket (basically default constructor calls this constructor with this enum value)
+
+It means these code snippets are equivalent:
+
+```csharp
+TcpClient client = new TcpClient(AddressFamily.InterNetwork);
+```
+
+```csharp
+Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+```
+
+Other `TcpClient's` constructor takes <xref:System.Net.IPEndPoint> class as parameter. This constructor basically gets `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates `Socket`, afterwards calls <xref:System.Net.Sockets.Socket.Bind%2A> on underlying `Socket` member with given <xref:System.Net.IPEndPoint> argument. Equivalent code snippets:
+
+```csharp
+// Example IPEndPoint object
+IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
+
+TcpClient client = new TcpClient(ep);
+```
+
+```csharp
+// Example IPEndPoint object
+IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
+
+Socket socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+socket.Bind(ep);
+```
+
+Last but not least constructor overload of `TcpClient's` takes `hostname` and `port` as parameter, the difference from default constructor in here is; this constructor tries to connect given `hostname` and `port`. Equivalent code snippets:
+
+```csharp
+TcpClient client = new TcpClient("www.example.com", 80);
+```
+
+```csharp
+Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+socket.Connect("www.example.com", 80);
+```
+
 ## See also
 
 - [Use Sockets to send and receive data over TCP](socket-services.md)
 - [Networking in .NET](../overview.md)
+- <xref:System.Net.Sockets.Socket>
 - <xref:System.Net.Sockets.TcpClient>
 - <xref:System.Net.Sockets.TcpListener>
 - <xref:System.Net.Sockets.NetworkStream>

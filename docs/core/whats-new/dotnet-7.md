@@ -140,7 +140,7 @@ C# 11 includes support for [generic math](../../standard/generics/math.md), raw 
 
 ### .NET MAUI
 
-.NET Multi-platform App UI (.NET MAUI) is a cross-platform framework for creating native mobile and desktop apps with C# and XAML. It unifies Android, iOS, macOS, and Windows APIs into a single API. For information about the latest updates, see [...](/dotnet/maui/...).
+.NET Multi-platform App UI (.NET MAUI) is a cross-platform framework for creating native mobile and desktop apps with C# and XAML. It unifies Android, iOS, macOS, and Windows APIs into a single API. <!--For information about the latest updates, see [...](/dotnet/maui/...).-->
 
 ### ASP.NET Core
 
@@ -158,7 +158,9 @@ Much work has gone into Windows Forms for .NET 7. Improvements have been made in
 - High DPI and scaling
 - Databinding
 
+<!--
 For more information, see [What's new in Windows Forms in .NET 7](https://devblogs.microsoft.com/dotnet/winforms-enhancements-in-dotnet-7).
+-->
 
 <!--
 ### Orleans

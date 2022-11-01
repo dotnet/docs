@@ -42,8 +42,6 @@ Welcome to what's new in the .NET docs for October 2022. This article lists some
 ### Updated articles
 
 - [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md) - Tweak code analysis rules
-- [Best practices for regular expressions in .NET](../standard/base-types/best-practices.md) - [Freshness] US-1953530: Refresh top articles by PV - .NET and Languages Content (5)
-- [.NET uninstall tool](../core/additional-tools/uninstall-tool.md) - [Freshness] US-1953530: Refresh top articles by PV - .NET and Languages Content
 
 ## .NET IoT libraries
 

@@ -71,7 +71,6 @@ Welcome to what's new in the .NET docs for October 2022. This article lists some
 ### Updated articles
 
 - [Tutorial: Make HTTP requests in a .NET console app using C\#](../csharp/tutorials/console-webapiclient.md) - Yup
-- [Sorry, we don't have specifics on this C# error](../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md) - add all C# 11 error codes
 
 ## F# language
 
@@ -87,7 +86,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [peteraritchie](https://github.com/peteraritchie) - Peter Ritchie ![There were 9 pull requests merged by Peter Ritchie.](https://img.shields.io/badge/Merged%20Pull%20Requests-9-green)
 - [pkulikov](https://github.com/pkulikov) - Petr Kulikov ![There were 6 pull requests merged by Petr Kulikov.](https://img.shields.io/badge/Merged%20Pull%20Requests-6-green)
 - [udidahan](https://github.com/udidahan) - Udi Dahan ![There were 5 pull requests merged by Udi Dahan.](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
-- [github-actions](https://github.com/github-actions) -  ![There were 4 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
 - [GitHubPang](https://github.com/GitHubPang) ![There were 4 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
 - [ankitwww](https://github.com/ankitwww) - Ankit Kashyap ![There were 3 pull requests merged by Ankit Kashyap.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
 - [balazsberes](https://github.com/balazsberes) - Balazs Beres ![There were 3 pull requests merged by Balazs Beres.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)

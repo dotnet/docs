@@ -6,6 +6,7 @@
 | ASP.NET Extension - DataProtection Blobs | NuGet [1.2.3](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.DataProtection.Blobs/1.2.3) | [docs](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme) | GitHub [1.2.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Extensions.AspNetCore.DataProtection.Blobs_1.2.3/sdk/extensions/Azure.Extensions.AspNetCore.DataProtection.Blobs/) |
 | ASP.NET Extension - DataProtection Keys | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.DataProtection.Keys/1.1.0) | [docs](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Extensions.AspNetCore.DataProtection.Keys_1.1.0/sdk/extensions/Azure.Extensions.AspNetCore.DataProtection.Keys/) |
 | Attestation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Security.Attestation/1.0.0) | [docs](/dotnet/api/overview/azure/Security.Attestation-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.Attestation_1.0.0/sdk/attestation/Azure.Security.Attestation/) |
+| Azure Loadtesting Service  | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Developer.LoadTesting/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.LoadTesting_1.0.0-beta.1/sdk/loadtestservice/Azure.Developer.LoadTesting/) |
 | Azure Object Anchors Conversion | NuGet [0.3.0-beta.5](https://www.nuget.org/packages/Azure.MixedReality.ObjectAnchors.Conversion/0.3.0-beta.5) |  | GitHub [0.3.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.ObjectAnchors.Conversion_0.3.0-beta.5/sdk/objectanchors/Azure.MixedReality.ObjectAnchors.Conversion/) |
 | Azure Remote Rendering | NuGet [1.1.0](https://www.nuget.org/packages/Azure.MixedReality.RemoteRendering/1.1.0) | [docs](/dotnet/api/overview/azure/MixedReality.RemoteRendering-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.RemoteRendering_1.1.0/sdk/remoterendering/Azure.MixedReality.RemoteRendering/) |
 | Azure Video Analyzer Edge | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.Media.VideoAnalyzer.Edge/1.0.0-beta.6) |  | GitHub [1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Media.VideoAnalyzer.Edge_1.0.0-beta.6/sdk/videoanalyzer/Azure.Media.VideoAnalyzer.Edge/) |
@@ -233,7 +234,6 @@
 | Azure.Communication.Calling | NuGet [1.0.0-beta.33](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.33) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
-| Azure.Developer.LoadTesting | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Developer.LoadTesting/1.0.0-beta.1) |  |  |
 | Azure.FX | NuGet [0.0.1](https://www.nuget.org/packages/Azure.FX/0.0.1) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
@@ -325,6 +325,7 @@
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
 | Autosuggest | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.AutoSuggest/2.0.0) |  |  |
 | Azure Active Directory - App Authentication | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |
+| Azure Loadtesting Service  | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Developer.LoadTesting/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.LoadTesting_1.0.0-beta.1/sdk/loadtestservice/Azure.Developer.LoadTesting/) |
 | Azure Monitor Exporter for OpenTelemetry | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.OpenTelemetry.Exporter.AzureMonitor/1.0.0-beta.1) |  |  |
 | Azure Object Anchors Conversion | NuGet [0.3.0-beta.5](https://www.nuget.org/packages/Azure.MixedReality.ObjectAnchors.Conversion/0.3.0-beta.5) |  | GitHub [0.3.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.ObjectAnchors.Conversion_0.3.0-beta.5/sdk/objectanchors/Azure.MixedReality.ObjectAnchors.Conversion/) |
 | Azure Remote Rendering | NuGet [1.1.0](https://www.nuget.org/packages/Azure.MixedReality.RemoteRendering/1.1.0) | [docs](/dotnet/api/overview/azure/MixedReality.RemoteRendering-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.RemoteRendering_1.1.0/sdk/remoterendering/Azure.MixedReality.RemoteRendering/) |
@@ -374,7 +375,7 @@
 | Core - Client - AMQP | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.2.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.2.0/sdk/core/Azure.Core.Amqp/) |
 | Core - Client - Core | NuGet [1.25.0](https://www.nuget.org/packages/Azure.Core/1.25.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.25.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.25.0/sdk/core/Azure.Core/) |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
-| Cosmos DB | NuGet [3.31.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.31.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.31.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.31.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.31.1) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.31.1](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
 | Cosmos DB - Direct | NuGet [3.29.4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.29.4) |  | GitHub [3.29.4](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
@@ -497,9 +498,9 @@
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
 | SignalR - Protocols | NuGet [1.18.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.18.3) |  | GitHub [1.18.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.9.0) |  | GitHub [1.9.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
-| Speech | NuGet [1.24.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.24.0) |  |  |
-| Speech Remoteconversation | NuGet [1.24.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.24.0) |  |  |
-| Speech Xamarin iOS | NuGet [1.24.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.24.0) |  |  |
+| Speech | NuGet [1.24.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.24.1) |  |  |
+| Speech Remoteconversation | NuGet [1.24.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.24.1) |  |  |
+| Speech Xamarin iOS | NuGet [1.24.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.24.1) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |

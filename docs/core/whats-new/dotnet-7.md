@@ -1,23 +1,20 @@
 ---
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
-ms.date: 10/31/2022
+ms.date: 11/01/2022
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
 ---
 # What's new in .NET 7
 
-.NET 7 is the successor to [.NET 6](dotnet-6.md) and focuses on being unified, modern, simple, and *fast*. .NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release). This article lists the new features of .NET 7 and provides links to more detailed information on each.
+.NET 7 is the successor to [.NET 6](dotnet-6.md) and focuses on being unified, modern, simple, and *fast*. .NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release).
+
+This article lists the new features of .NET 7 and provides links to more detailed information on each.
 
 <!--
-To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [What's new in docs for .NET 7]().
+To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [What's new in docs for .NET 7](dotnet-7-docs.md).
 -->
-
-## Cloud native apps
-
-Simplify security configuration
-Improve app performance
 
 ## Performance
 
@@ -63,6 +60,21 @@ For information about these and other updates, see the [What's new in System.Tex
 
 For more information about these and other improvements, see the [Regular expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/) blog post.
 
+## .NET libraries
+
+Many improvements have been made to .NET library APIs. Some are mentioned in other, dedicated sections of this article. Some others are summarized in the following table.
+
+| Description | APIs | Further information |
+| - | - | - |
+| Support for microseconds and nanoseconds in <xref:System.TimeSpan>, <xref:System.TimeOnly>, <xref:System.DateTime>, and <xref:System.DateTimeOffset> types | <xref:System.DateTime.Microsecond?displayProperty=nameWithType> and <xref:System.DateTime.Nanosecond?displayProperty=nameWithType><br /><xref:System.DateTime.AddMicroseconds(System.Double)?displayProperty=nameWithType><br />New <xref:System.DateTime> constructor overloads<br /><br /><xref:System.DateTimeOffset.Microsecond?displayProperty=nameWithType> and <xref:System.DateTimeOffset.Nanosecond?displayProperty=nameWithType><br /><xref:System.DateTimeOffset.AddMicroseconds(System.Double)?displayProperty=nameWithType><br />New <xref:System.DateTimeOffset> constructor overloads<br /><br /><xref:System.TimeOnly.Microsecond?displayProperty=nameWithType> and <xref:System.TimeOnly.Nanosecond?displayProperty=nameWithType><br /><br /><xref:System.TimeSpan.Microseconds?displayProperty=nameWithType> and <xref:System.TimeSpan.Nanoseconds?displayProperty=nameWithType><br /><xref:System.TimeSpan.FromMicroseconds(System.Double)?displayProperty=nameWithType><br />and others... | These APIs mean you no longer have to perform computations on the "tick" value to determine microsecond and nanosecond values. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#adding-microseconds-and-nanoseconds-to-timestamp-datetime-datetimeoffset-and-timeonly) blog post. |
+| APIs for reading, writing, archiving, and extracting Tar archives | <xref:System.Formats.Tar?displayProperty=fullName> | For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-new-tar-apis) and [.NET 7 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#system-formats-tar-api-updates) blog posts. |
+| Rate limiting APIs to protect a resource by keeping traffic at a safe level | <xref:System.Threading.RateLimiting.RateLimiter?displayProperty=fullName> and others in the [System.Threading.RateLimiting NuGet package](https://www.nuget.org/packages/System.Threading.RateLimiting) | For more information, see [Rate limit an HTTP handler in .NET](../extensions/http-ratelimiter.md) and [Announcing rate limiting for .NET](https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet/). |
+| APIs to read *all* the data from a <xref:System.IO.Stream> | <xref:System.IO.Stream.ReadExactly%2A?displayProperty=nameWithType><br /><xref:System.IO.Stream.ReadAtLeast%2A?displayProperty=nameWithType> | <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> may return less data than what's available in the stream. The new `ReadExactly` methods read *exactly* the number of bytes requested, and the new `ReadAtLeast` methods read *at least* the number of bytes requested. For more information, see the [.NET 7 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-5/#system-io-stream) blog post. |
+| New type converters for `DateOnly`, `TimeOnly`, `Int128`, `UInt128`, and `Half` | <xref:System.ComponentModel.DateOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.TimeOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.Int128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.UInt128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.HalfConverter?displayProperty=fullName> | Type converters are often used to convert value types to and from a string. These new APIs add type converters for types that were added more recently. |
+| Metrics support for <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics?displayProperty=fullName><br /><xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics> lets you use event counters or metrics APIs to track statistics for one or more memory caches. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-metrics-for-microsoft-extensions-caching) blog post. |
+| APIs to get and set Unix file permissions | <xref:System.IO.UnixFileMode?displayProperty=fullName> enum<br /><xref:System.IO.File.GetUnixFileMode%2A?displayProperty=nameWithType><br /><xref:System.IO.File.SetUnixFileMode%2A?displayProperty=nameWithType><xref:System.IO.FileSystemInfo.UnixFileMode?displayProperty=nameWithType><br /><xref:System.IO.Directory.CreateDirectory(System.String,System.IO.UnixFileMode)?displayProperty=nameWithType><br /><xref:System.IO.FileStreamOptions.UnixCreateMode?displayProperty=nameWithType> | For more information, see the [.NET 7 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#support-for-unix-file-modes) blog post. |
+| Attribute to indicate what what kind of syntax is expected in a string | <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute?displayProperty=fullName> | For example, you can specify that a `string` parameter expects a regular expression by attributing the parameter with `[StringSyntax(StringSyntaxAttribute.Regex)]`. |
+
 ## Observability
 
 .NET 7 makes improvements to *observability*. Observability helps you understand the state of your app as it scales and as the technical complexity increases. .NET's observability implementation is primarily built around [OpenTelemetry](https://opentelemetry.io/). Improvements include:
@@ -74,12 +86,29 @@ For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/
 
 ## .NET SDK
 
-The .NET 7 SDK includes improvements to templates, and enables publishing to a container and central package management with NuGet.
+The .NET 7 SDK improves the CLI template experience. It also enables publishing to containers and central package management with NuGet.
 
 ### Templates
 
-"dotnet new" - tab completion to explore templates and parameters
-Template authoring - <https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring>
+Some welcome improvements have been made to the `dotnet new` command and to template authoring.
+
+#### dotnet new
+
+The [`dotnet new`](../tools/dotnet-new.md) CLI command, which creates a new project, configuration file, or solution based on a template, now supports [tab completion](../tools/enable-tab-autocomplete.md) for exploring:
+
+- Available template names
+- Template options
+- Allowable option values
+
+In addition, for better conformity, the `install`, `uninstall`, `search`, `list`, and `update` subcommands no longer have the `--` prefix.
+
+#### Authoring
+
+Template *constraints*, a new concept for .NET 7, let you define the context in which your templates are allowed. Constraints help the template engine determine which templates it should show in commands like `dotnet new list`. You can constrain your template to an operating system, a template engine host (for example, the .NET CLI or New Project dialog in Visual Studio), and an installed workload. You define constraints in your template's configuration file.
+
+Also in the template configuration file, you can now annotate a template parameter as allowing multiple values. For example, the [`web` template](../tools/dotnet-new-sdk-templates.md) allows multiple forms of authentication.
+
+For more information, see the [.NET 7 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#template-authoring) blog post.
 
 ### Publish to a container
 
@@ -94,21 +123,6 @@ For more information, see [Central package management](/nuget/consume-packages/C
 ## P/Invoke source generation
 
 .NET 7 introduces a source generator for platform invokes (P/Invokes) in C#. The source generator looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on `static`, `partial` methods to trigger compile-time source generation of marshalling code. By generating the marshalling code at compile time, no IL stub needs to be generated at run time, as it does when using <xref:System.Runtime.InteropServices.DllImportAttribute>. The source generator improves application performance and also allows the app to be ahead-of-time (AOT) compiled. For more information, see [Source generation for platform invokes](../../standard/native-interop/pinvoke-source-generation.md) and [Use custom marshallers in source-generated P/Invokes](../../standard/native-interop/tutorial-custom-marshaller.md).
-
-## .NET libraries
-
-Many improvements have been made to .NET library APIs. Some have already been mentioned in the previous sections. Some others are summarized in the following table:
-
-| Description | APIs | Further information |
-| - | - | - |
-| Support for microseconds and nanoseconds in <xref:System.TimeSpan>, <xref:System.TimeOnly>, <xref:System.DateTime>, and <xref:System.DateTimeOffset> types | <xref:System.DateTime.Microsecond?displayProperty=nameWithType> and <xref:System.DateTime.Nanosecond?displayProperty=nameWithType><br /><xref:System.DateTime.AddMicroseconds(System.Double)?displayProperty=nameWithType><br />New <xref:System.DateTime> constructor overloads<br /><br /><xref:System.DateTimeOffset.Microsecond?displayProperty=nameWithType> and <xref:System.DateTimeOffset.Nanosecond?displayProperty=nameWithType><br /><xref:System.DateTimeOffset.AddMicroseconds(System.Double)?displayProperty=nameWithType><br />New <xref:System.DateTimeOffset> constructor overloads<br /><br /><xref:System.TimeOnly.Microsecond?displayProperty=nameWithType> and <xref:System.TimeOnly.Nanosecond?displayProperty=nameWithType><br /><br /><xref:System.TimeSpan.Microseconds?displayProperty=nameWithType> and <xref:System.TimeSpan.Nanoseconds?displayProperty=nameWithType><br /><xref:System.TimeSpan.FromMicroseconds(System.Double)?displayProperty=nameWithType><br />and others... | These APIs mean you no longer have to perform computations on the "tick" value to determine microsecond and nanosecond values. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#adding-microseconds-and-nanoseconds-to-timestamp-datetime-datetimeoffset-and-timeonly) blog post. |
-| APIs for reading, writing, archiving, and extracting Tar archives | <xref:System.Formats.Tar?displayProperty=fullName> | For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-new-tar-apis) and [.NET 7 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#system-formats-tar-api-updates) blog posts. |
-| Rate limiting APIs to protect a resource by keeping traffic at a safe level | <xref:System.Threading.RateLimiting.RateLimiter?displayProperty=fullName> and others in the [System.Threading.RateLimiting NuGet package](https://www.nuget.org/packages/System.Threading.RateLimiting) | For more information, see [Rate limit an HTTP handler in .NET](../extensions/http-ratelimiter.md) and [Announcing rate limiting for .NET](https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet/). |
-| APIs to read *all* the data from a <xref:System.IO.Stream> | <xref:System.IO.Stream.ReadExactly%2A?displayProperty=nameWithType><br /><xref:System.IO.Stream.ReadAtLeast%2A?displayProperty=nameWithType> | <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> may return less data than what's available in the stream. The new `ReadExactly` methods read *exactly* the number of bytes requested, and the new `ReadAtLeast` methods read *at least* the number of bytes requested. For more information, see the [.NET 7 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-5/#system-io-stream) blog post. |
-| New type converters for `DateOnly`, `TimeOnly`, `Int128`, `UInt128`, and `Half` | <xref:System.ComponentModel.DateOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.TimeOnlyConverter?displayProperty=fullName><br /><xref:System.ComponentModel.Int128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.UInt128Converter?displayProperty=fullName><br /><xref:System.ComponentModel.HalfConverter?displayProperty=fullName> | Type converters are often used to convert value types to and from a string. These new APIs add type converters for types that were added more recently. |
-| Metrics support for <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics?displayProperty=fullName><br /><xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics?displayProperty=nameWithType> | <xref:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics> lets you use event counters or metrics APIs to track statistics for one or more memory caches. For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-4/#added-metrics-for-microsoft-extensions-caching) blog post. |
-| APIs to get and set Unix file permissions | <xref:System.IO.UnixFileMode?displayProperty=fullName> enum<br /><xref:System.IO.File.GetUnixFileMode%2A?displayProperty=nameWithType><br /><xref:System.IO.File.SetUnixFileMode%2A?displayProperty=nameWithType><xref:System.IO.FileSystemInfo.UnixFileMode?displayProperty=nameWithType><br /><xref:System.IO.Directory.CreateDirectory(System.String,System.IO.UnixFileMode)?displayProperty=nameWithType><br /><xref:System.IO.FileStreamOptions.UnixCreateMode?displayProperty=nameWithType> | For more information, see the [.NET 7 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-7/#support-for-unix-file-modes) blog post. |
-| Attribute to indicate what what kind of syntax is expected in a string | <xref:System.Diagnostics.CodeAnalysis.StringSyntaxAttribute?displayProperty=fullName> | For example, you can specify that a `string` parameter expects a regular expression by attributing the parameter with `[StringSyntax(StringSyntaxAttribute.Regex)]`. |
 
 ## Related releases
 

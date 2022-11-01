@@ -41,7 +41,7 @@ Welcome to what's new in the .NET docs for October 2022. This article lists some
 
 ### Updated articles
 
-- [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md) - Tweak cody analysis rules
+- [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md) - Tweak code analysis rules
 - [Best practices for regular expressions in .NET](../standard/base-types/best-practices.md) - [Freshness] US-1953530: Refresh top articles by PV - .NET and Languages Content (5)
 - [.NET uninstall tool](../core/additional-tools/uninstall-tool.md) - [Freshness] US-1953530: Refresh top articles by PV - .NET and Languages Content
 
@@ -70,7 +70,7 @@ Welcome to what's new in the .NET docs for October 2022. This article lists some
 
 ### Updated articles
 
-- [Tutorial: Make HTTP requests in a .NET console app using C\#](../csharp/tutorials/console-webapiclient.md) - Yup
+- [Tutorial: Make HTTP requests in a .NET console app using C\#](../csharp/tutorials/console-webapiclient.md)
 
 ## F# language
 
@@ -82,7 +82,7 @@ Welcome to what's new in the .NET docs for October 2022. This article lists some
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [nschonni](https://github.com/nschonni) - Nick Schonning ![There were 12 pull requests merged by Nick Schonning.](https://img.shields.io/badge/Merged%20Pull%20Requests-12-green)
+- [nschonni](https://github.com/nschonni) - Nick Schonning ![We merged 12 pull requests by Nick Schonning.](https://img.shields.io/badge/Merged%20Pull%20Requests-12-green)
 - [peteraritchie](https://github.com/peteraritchie) - Peter Ritchie ![There were 9 pull requests merged by Peter Ritchie.](https://img.shields.io/badge/Merged%20Pull%20Requests-9-green)
 - [pkulikov](https://github.com/pkulikov) - Petr Kulikov ![There were 6 pull requests merged by Petr Kulikov.](https://img.shields.io/badge/Merged%20Pull%20Requests-6-green)
 - [udidahan](https://github.com/udidahan) - Udi Dahan ![There were 5 pull requests merged by Udi Dahan.](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)

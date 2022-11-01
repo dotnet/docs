@@ -83,9 +83,7 @@ Template authoring - <https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-
 
 ### Publish to a container
 
-Publish to a container using dotnet publish
-- [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
-- <https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/>
+Containers are one of the easiest ways to distribute and run a wide variety of applications and services in the cloud. Container images are now a supported output type of the .NET SDK, and you can create containerized versions of your applications using [`dotnet publish`](../tools/dotnet-publish.md). For more information about the feature, see [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/). For a tutorial, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
 
 ### Central package management
 

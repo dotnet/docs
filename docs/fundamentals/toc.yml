@@ -375,6 +375,8 @@ items:
       href: ../core/tools/dotnet-watch.md
     - name: dotnet workload
       items:
+      - name: dotnet workload
+        href: ../core/tools/dotnet-workload.md
       - name: dotnet workload install
         href: ../core/tools/dotnet-workload-install.md
       - name: dotnet workload list
@@ -1147,6 +1149,8 @@ items:
             href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
+          - name: CA2020
+            href: code-analysis/quality-rules/ca2020.md
         - name: Security rules
           items:
           - name: Overview
@@ -1429,6 +1433,8 @@ items:
             href: code-analysis/quality-rules/ca2257.md
           - name: CA2258
             href: code-analysis/quality-rules/ca2258.md
+          - name: CA2260
+            href: code-analysis/quality-rules/ca2260.md
       - name: Code style rules
         items:
         - name: Overview
@@ -2010,6 +2016,8 @@ items:
       href: ../core/docker/introduction.md
     - name: Containerize a .NET app
       href: ../core/docker/build-container.md
+    - name: Publish app as container image
+      href: ../core/docker/publish-as-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
 - name: DevOps
@@ -2249,6 +2257,9 @@ items:
     - name: Overview
       href: ../standard/base-types/regular-expressions.md
       displayName: regular expressions
+    - name: Source generation
+      href: ../standard/base-types/regular-expression-source-generators.md
+      displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
     - name: Language reference
       items:
       - name: Overview
@@ -2600,14 +2611,10 @@ items:
       items:
       - name: Sockets support
         href: networking/sockets/sockets-overview.md
-      - name: Use Sockets to send and receive data
+      - name: Use Sockets to send and receive data over TCP
         href: networking/sockets/socket-services.md
-    - name: TCP
-      items:
-      - name: TCP support
-        href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
-        href: networking/tcp/tcp-services.md
+        href: networking/sockets/tcp-classes.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library
@@ -2959,6 +2966,8 @@ items:
         href: ../standard/native-interop/customize-parameter-marshalling.md
       - name: Source generation
         href: ../standard/native-interop/custom-marshalling-source-generation.md
+      - name: Tutorial - Use custom marshallers in source generation
+        href: ../standard/native-interop/tutorial-custom-marshaller.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Expose .NET components to COM
@@ -3112,6 +3121,7 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+        displayName: upgrade assistant
       - name: Windows Communication Foundation
         href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation

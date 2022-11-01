@@ -38,8 +38,6 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 * **`--force-english-output`**
 
   Forces the application to run using an invariant, English-based culture.

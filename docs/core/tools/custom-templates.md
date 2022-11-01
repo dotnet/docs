@@ -59,13 +59,13 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | `name`            | string        | The name for the template that users should see. |
 | `shortName`       | string        | A default shorthand name for selecting the template that applies to environments where the template name is specified by the user, not selected via a GUI. For example, the short name is useful when using templates from a command prompt with CLI commands. |
 | `sourceName`       | string        | The name in the source tree to replace with the name the user specifies. The template engine will look for any occurrence of the `sourceName` mentioned in the config file and replace it in file names and file contents. The value to be replaced with can be given using the `-n` or `--name` options while running a template. If no name is specified, the current directory is used.|
-| `preferNameDirectory`       | boolean        | Indicates whether to create a directory for the template if name is specified but an output directory is not set (instead of creating the content directly in the current directory). The default value is false.|
+| `preferNameDirectory`       | Boolean        | Indicates whether to create a directory for the template if name is specified but an output directory is not set (instead of creating the content directly in the current directory). The default value is false.|
 
 The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki). For deeper examples and information on how to make your templates visible in Visual Studio, check out the [resources that Sayed Hashimi has created](https://github.com/sayedihashimi/template-sample).
 
 #### Example
 
-For example, here is a template folder that contains two content files: *console.cs* and *readme.txt*. Take notice that there is the required folder named *.template.config* that contains the *template.json* file.
+For example, here is a template folder that contains two content files: *console.cs* and *readme.txt*. There's also the required folder named *.template.config* that contains the *template.json* file.
 
 ```text
 └───mytemplate
@@ -177,6 +177,14 @@ Use the NuGet package identifier to install a template package.
 dotnet new --install <NUGET_PACKAGE_ID>
 ```
 
+### To install a template package from a custom NuGet source
+
+Provide a custom NuGet source (for example, `https://api.my-custom-nuget.com/v3/index.json`).
+
+```dotnetcli
+dotnet new --install <NUGET_PACKAGE_ID> --nuget-source <SOURCE>
+```
+
 ### To install a template package from a local nupkg file
 
 Provide the path to a *.nupkg* NuGet package file.
@@ -187,7 +195,7 @@ dotnet new --install <PATH_TO_NUPKG_FILE>
 
 ### To install a template package from a file system directory
 
-Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute.
+Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory doesn't need to be absolute.
 
 ```dotnetcli
 dotnet new --install <FILE_SYSTEM_DIRECTORY>

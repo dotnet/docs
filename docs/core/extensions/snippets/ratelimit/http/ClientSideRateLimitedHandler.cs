@@ -9,7 +9,7 @@
     protected override async Task<HttpResponseMessage> SendAsync(
         HttpRequestMessage request, CancellationToken cancellationToken)
     {
-        using RateLimitLease lease = await _rateLimiter.WaitAsync(
+        using RateLimitLease lease = await _rateLimiter.AcquireAsync(
             permitCount: 1, cancellationToken);
 
         if (lease.IsAcquired)

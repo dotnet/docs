@@ -22,7 +22,7 @@ Structure types have *value semantics*. That is, a variable of a structure type 
 
 Typically, you use structure types to design small data-centric types that provide little or no behavior. For example, .NET uses structure types to represent a number (both [integer](integral-numeric-types.md) and [real](floating-point-numeric-types.md)), a [Boolean value](bool.md), a [Unicode character](char.md), a [time instance](xref:System.DateTime). If you're focused on the behavior of a type, consider defining a [class](../keywords/class.md). Class types have *reference semantics*. That is, a variable of a class type contains a reference to an instance of the type, not the instance itself.
 
-Because structure types have value semantics, we recommend you to define *immutable* structure types.
+Because structure types have value semantics, we recommend you define *immutable* structure types.
 
 ## `readonly` struct
 
@@ -107,7 +107,7 @@ Beginning with C# 11, if you don't initialize all fields in a struct, the compil
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
-Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If you don't write a public parameterless constructor, the compiler generates one. The compiler-generated parameterless constructor executes any field initializers, and produces the [default value](default-values.md) for all other fields. If you declare any field initializers, you must declare one explicit constructor. The one explicit constructor can be the parameterless constructor. It can have an empty body. For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
+Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
@@ -153,6 +153,6 @@ For more information about `struct` features, see the following feature proposal
 ## See also
 
 - [C# reference](../index.md)
+- [The C# type system](../../fundamentals/types/index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [The C# type system](../../fundamentals/types/index.md)

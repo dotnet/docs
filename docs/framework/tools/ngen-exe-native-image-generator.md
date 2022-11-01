@@ -25,7 +25,7 @@ ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
 > [!NOTE]
-> Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/runtime/blob/main/docs/workflow/building/coreclr/crossgen.md).
+> Ngen.exe compiles native images for assemblies that target .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://devblogs.microsoft.com/dotnet/conversation-about-crossgen2/).
 
 Changes to Ngen.exe in .NET Framework 4:
 

@@ -144,7 +144,7 @@ Types of instruments currently available:
   tool updates every three seconds, then the total after three seconds is 1+2+4=7 and the total after six seconds is 1+2+4+5+4+3=19. The rate of change is the
   (current_total - previous_total), so at three seconds the tool reports 7-0=7, and after six seconds, it reports 19-7=12.
 
-- **UpDownCounter** (<xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A>) - This instrument tracks a value that may increase or decrease over time. The caller reports the
+- **UpDownCounter** (<xref:System.Diagnostics.Metrics.Meter.CreateUpDownCounter%2A>) - This instrument tracks a value that may increase or decrease over time. The caller reports the
   increments and decrements using <xref:System.Diagnostics.Metrics.UpDownCounter%601.Add%2A>. For example, assume that the caller invokes `Add()` once each second with successive
   values 1, 5, -2, 3, -1, -3. If the collection tool updates every three seconds, then the total after three seconds is 1+5-2=4 and the total after six seconds is 1+5-2+3-1-3=3.
 

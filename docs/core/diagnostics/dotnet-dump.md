@@ -11,9 +11,6 @@ ms.topic: reference
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
 
-> [!TIP]
-> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
-
 ## Install
 
 There are two ways to download and install `dotnet-dump`:
@@ -270,15 +267,9 @@ StackTraceString: <none>
 HResult: 80131604
 ```
 
-## Special instructions for Docker
+## Troubleshooting dump collection issues
 
-If you're running under Docker, dump collection requires `SYS_PTRACE` capabilities (`--cap-add=SYS_PTRACE` or `--privileged`).
-
-On Microsoft .NET SDK Linux Docker images, some `dotnet-dump` commands can throw the following exception:
-
-> Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception.
-
-To work around this problem, install the "libc6-dev" package.
+Dump collection requires the process to be able to call `ptrace`. If you are facing issues collecting dumps, the environment you are running on may be configured to restrict such calls. See our [Dumps: FAQ](faq-dumps.yml) for troubleshooting tips and potential solutions to common issues.
 
 ## See also
 

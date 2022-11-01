@@ -219,52 +219,6 @@
       "version": "1.0",
       "config": {
         "conditions": {
-          "operator": "or",
-          "operands": [
-            {
-              "name": "isActivitySender",
-              "parameters": {
-                "user": "dependabot"
-              }
-            },
-            {
-              "name": "isActivitySender",
-              "parameters": {
-                "user": "dependabot[bot]"
-              }
-            },
-            {
-              "name": "isActivitySender",
-              "parameters": {
-                "user": "dependa[bot]"
-              }
-            }
-          ]
-        },
-        "eventType": "pull_request",
-        "eventNames": [
-          "pull_request",
-          "issues",
-          "project_card"
-        ],
-        "taskName": "Reply to dependabot PRs with automation command to squash and merge",
-        "actions": [
-          {
-            "name": "approvePullRequest",
-            "parameters": {
-              "comment": "Approved, we'll :shipit: when all status checks pass. @dependabot squash and merge"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "taskType": "trigger",
-      "capabilityId": "IssueResponder",
-      "subCapability": "PullRequestResponder",
-      "version": "1.0",
-      "config": {
-        "conditions": {
           "operator": "and",
           "operands": [
             {
@@ -308,7 +262,13 @@
         "label": "azure-sdk-shipit",
         "allowAutoMergeInstructionsWithoutLabel": false,
         "mergeType": "squash",
-        "requireAllStatuses": true
+        "requireAllStatuses": false,
+        "requireSpecificCheckRuns": true,
+        "requireSpecificCheckRunsList": [
+          "lint",
+          "Look for build warnings",
+          "MSDocs build verifier"
+        ]
       }
     },
     {
@@ -363,10 +323,13 @@
       "subCapability": "LabelSync",
       "version": "1.0",
       "config": {
-        "taskName": "Synchronize OKR labels between issues/PRs",
+        "taskName": "Synchronize OKR and release labels between issues/PRs",
         "labelPatterns": [
           {
             "pattern": "okr-"
+          },
+          {
+            "pattern": ":checkered_flag: Release"
           }
         ]
       }

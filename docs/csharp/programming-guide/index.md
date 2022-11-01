@@ -27,10 +27,13 @@ This section provides detailed information on key C# language features and featu
 
 ## Language Sections
 
-[Statements](statements-expressions-operators/statements.md)
-[Operators and expressions](../language-reference/operators/index.md)
-[Expression-bodied members](statements-expressions-operators/expression-bodied-members.md)
-[Equality Comparisons](statements-expressions-operators/equality-comparisons.md)
+ [Statements](statements-expressions-operators/statements.md)
+
+ [Operators and expressions](../language-reference/operators/index.md)
+
+ [Expression-bodied members](statements-expressions-operators/expression-bodied-members.md)
+
+ [Equality Comparisons](statements-expressions-operators/equality-comparisons.md)
 
  [Types](../fundamentals/types/index.md)  
 

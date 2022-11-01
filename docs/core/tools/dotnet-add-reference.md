@@ -44,8 +44,6 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`-f|--framework <FRAMEWORK>`**
 
   Adds project references only when targeting a specific [framework](../../standard/frameworks.md) using the TFM format.

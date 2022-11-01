@@ -34,7 +34,7 @@ This is called *value assignment*: the value is assigned.
 
 ## ref assignment
 
-*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand. The left-hand operand must be a [ref local](../keywords/ref.md#ref-locals), [ref readonly local](../keywords/ref.md#ref-readonly-locals), or a `ref` field in a [`ref struct`](../builtin-types/ref-struct.md). Both operands must be of the same type.
+*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand. The left-hand operand must be a [ref local](../keywords/ref.md#ref-locals), [ref readonly local](../keywords/ref.md#ref-readonly-locals), or a [`ref` field](../builtin-types/ref-struct.md#ref-fields) in a `ref struct`. Both operands must be of the same type.
 
 The following example demonstrates the usage of the ref assignment operator:
 
@@ -72,7 +72,7 @@ A user-defined type can't explicitly overload a compound assignment operator. Ho
 
 ## C# language specification
 
-For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1118-assignment-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1119-assignment-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about the ref assignment operator `= ref`, see the [feature proposal note](~/_csharplang/proposals/csharp-7.3/ref-local-reassignment.md).
 

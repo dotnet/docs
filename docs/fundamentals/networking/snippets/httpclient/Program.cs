@@ -1,22 +1,29 @@
-﻿// <todoclient>
-using HttpClient todoClient = new()
+﻿static partial class Program
 {
-    BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
-};
-// </todoclient>
+    // <sharedclient>
+    // HttpClient lifecycle management best practices:
+    // https://learn.microsoft.com/dotnet/fundamentals/networking/http/httpclient-guidelines#recommended-use
+    private static HttpClient sharedClient = new()
+    {
+        BaseAddress = new Uri("https://jsonplaceholder.typicode.com"),
+    };
+    // </sharedclient>
+    public static async Task Main(string[] args)
+    {
+        await GetAsync(sharedClient);
+        await GetFromJsonAsync(sharedClient);
+        await PostAsync(sharedClient);
+        await PostAsJsonAsync(sharedClient);
+        await PutAsync(sharedClient);
+        await PutAsJsonAsync(sharedClient);
+        await PatchAsync(sharedClient);
+        await DeleteAsync(sharedClient);
 
-await GetAsync(todoClient);
-await GetFromJsonAsync(todoClient);
-await PostAsync(todoClient);
-await PostAsJsonAsync(todoClient);
-await PutAsync(todoClient);
-await PutAsJsonAsync(todoClient);
-await PatchAsync(todoClient);
-await DeleteAsync(todoClient);
+        // <client>
+        using HttpClient httpClient = new();
+        // </client>
 
-// <client>
-using HttpClient client = new();
-// </client>
-
-await HeadAsync(client);
-await OptionsAsync(client);
+        await HeadAsync(httpClient);
+        await OptionsAsync(httpClient);
+    }
+}

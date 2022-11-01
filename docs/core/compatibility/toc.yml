@@ -29,10 +29,16 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
+        - name: Authentication in WebAssembly apps
+          href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
+        - name: Endpoint metadata provider interface changes
+          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: Fallback file endpoints
+          href: aspnet-core/7.0/fallback-file-endpoints.md
         - name: IHubClients and IHubCallerClients hide members
           href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
         - name: "Kestrel: Default HTTPS binding removed"
@@ -45,6 +51,8 @@ items:
           href: aspnet-core/7.0/middleware-null-requestdelegate.md
         - name: MVC's detection of an empty body in model binding changed
           href: aspnet-core/7.0/mvc-empty-body-model-binding.md
+        - name: Output caching API changes
+          href: aspnet-core/7.0/output-caching-renames.md
         - name: SignalR Hub methods try to resolve parameters from DI
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
@@ -73,6 +81,8 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Time fields on symbolic links
           href: core-libraries/7.0/symbolic-link-timestamps.md
+        - name: Tracking linked cache entries
+          href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: Cryptography
@@ -109,6 +119,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: ClientWebSocket.ConnectAsync throws new exception
+          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
@@ -325,6 +337,8 @@ items:
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Default serialization format for TimeSpan
           href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
@@ -641,10 +655,16 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
+        - name: Authentication in WebAssembly apps
+          href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
+        - name: Endpoint metadata provider interface changes
+          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
+        - name: Fallback file endpoints
+          href: aspnet-core/7.0/fallback-file-endpoints.md
         - name: IHubClients and IHubCallerClients hide members
           href: aspnet-core/7.0/ihubclients-ihubcallerclients.md
         - name: "Kestrel: Default HTTPS binding removed"
@@ -657,6 +677,8 @@ items:
           href: aspnet-core/7.0/middleware-null-requestdelegate.md
         - name: MVC's detection of an empty body in model binding changed
           href: aspnet-core/7.0/mvc-empty-body-model-binding.md
+        - name: Output caching API changes
+          href: aspnet-core/7.0/output-caching-renames.md
         - name: SignalR Hub methods try to resolve parameters from DI
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: .NET 6
@@ -843,6 +865,8 @@ items:
           href: core-libraries/7.0/serializationformat-binary.md
         - name: Time fields on symbolic links
           href: core-libraries/7.0/symbolic-link-timestamps.md
+        - name: Tracking linked cache entries
+          href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6
@@ -1079,6 +1103,8 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
+        - name: ClientWebSocket.ConnectAsync throws new exception
+          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
@@ -1189,6 +1215,8 @@ items:
           href: serialization/7.0/reflection-fallback.md
       - name: .NET 6
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Default serialization format for TimeSpan
           href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization

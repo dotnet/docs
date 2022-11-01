@@ -1110,52 +1110,6 @@ public int MyProperty
 }
 ```
 
-## Using directive options
-
-This category contains one formatting option that concerns whether `using` directives are placed inside or outside a namespace.
-
-- [csharp_using_directive_placement](#csharp_using_directive_placement)
-
-Example *.editorconfig* file:
-
-```ini
- 'using' directive preferences
-[*.cs]
-csharp_using_directive_placement = outside_namespace
-csharp_using_directive_placement = inside_namespace
-```
-
-> [!TIP]
-> For additional `using` directive options, see [.NET `using` directive options](dotnet-formatting-options.md#using-directive-options).
-
-### csharp_using_directive_placement
-
-| Property                 | Value                            | Description                              |
-| ------------------------ | -------------------------------- | ---------------------------------------- |
-| **Option name**          | csharp_using_directive_placement |                                          |
-| **Applicable languages** | C#                               |                                          |
-| **Introduced version**   | Visual Studio 2019 version 16.1  |                                          |
-| **Option values**        | `outside_namespace`              | Leave using directives outside namespace |
-|                          | `inside_namespace`               | Leave using directives inside namespace  |
-
-Code examples:
-
-```csharp
-// csharp_using_directive_placement = outside_namespace
-using System;
-
-namespace Conventions
-{
-
-}
-
-// csharp_using_directive_placement = inside_namespace
-namespace Conventions
-{
-    using System;
-}
-```
-
 ## See also
 
 - [Formatting rule (IDE0055)](ide0055.md)

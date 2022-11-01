@@ -1,5 +1,5 @@
 ---
-title: Use Sockets to send and receive data
+title: Use Sockets to send and receive data over TCP
 description: Learn how the Socket class exposes socket network communication functionality in .NET.
 author: IEvangelist
 ms.author: dapine
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "client sockets"
 ---
 
-# Use Sockets to send and receive data
+# Use Sockets to send and receive data over TCP
 
 Before you can use a socket to communicate with remote devices, the socket must be initialized with protocol and network address information. The constructor for the <xref:System.Net.Sockets.Socket> class has parameters that specify the address family, socket type, and protocol type that the socket uses to make connections. When connecting a client socket to a server socket, the client will use an `IPEndPoint` object to specify the network address of the server.
 

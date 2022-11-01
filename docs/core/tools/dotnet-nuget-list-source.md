@@ -25,8 +25,6 @@ The `dotnet nuget list source` command lists all existing sources from your NuGe
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--format [Detailed|Short]`**

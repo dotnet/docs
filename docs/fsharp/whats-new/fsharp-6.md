@@ -475,7 +475,7 @@ For example, consider the following F# 5 code:
 let r = ref 0
 
 let doSomething() =
-    printfn "doing something”
+    printfn "doing something"
     r := !r + 1
 ```
 
@@ -485,7 +485,7 @@ First, reference cells are rarely needed in modern F# coding, as `let mutable` c
 let mutable r = 0
 
 let doSomething() =
-    printfn "doing something”
+    printfn "doing something"
     r <- r + 1
 ```
 
@@ -495,7 +495,7 @@ If you use reference cells, F# 6 emits an informational warning asking you to ch
 let r = ref 0
 
 let doSomething() =
-    printfn "doing something”
+    printfn "doing something"
     r.Value <- r.Value + 1
 ```
 

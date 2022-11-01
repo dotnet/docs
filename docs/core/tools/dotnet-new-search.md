@@ -25,7 +25,6 @@ dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#
 
 The `dotnet new --search` option searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
 
-<!-- markdownlint-disable MD012 -->
 > [!NOTE]
 > [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 >

@@ -10,7 +10,7 @@
     The directory of the repository files on the local machine.
 
 .PARAMETER PullRequest
-    The pull requst to process. If 0 or not passed, processes the whole repo
+    The pull request to process. If 0 or not passed, processes the whole repo
 
 .PARAMETER RepoOwner
     The name of the repository owner.
@@ -31,6 +31,13 @@
     None
 
 .NOTES
+
+    Version:        1.8
+    Author:         adegeo@microsoft.com
+    Creation Date:  12/11/2020
+    Update Date:    10/05/2022
+    Purpose/Change: Add support for discovering and processing settings file for project errors (not found, too many, etc)
+
     Version:        1.7
     Author:         adegeo@microsoft.com
     Creation Date:  12/11/2020
@@ -67,7 +74,7 @@ Param(
 
 $Global:statusOutput = @()
 
-Write-Host "Gathering solutions and projects... (v1.7)"
+Write-Host "Gathering solutions and projects... (v1.8)"
 
 if ($PullRequest -ne 0) {
     Write-Host "Running `"LocateProjects `"$RepoRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName`""
@@ -107,13 +114,13 @@ if (($RangeStart -ne 0) -and ($RangeEnd -ne 0)){
 # Log working set items prior to filtering
 $workingSet | Write-Host
 
-# Remove duplicated projects
+# Remove duplicated projects and skip snippets files from being processed
 $projects = @()
 $workingSetTemp = @()
 
 foreach ($item in $workingSet) {
     $data = $item.Split('|')
-    if ($projects.Contains($data[2].Trim())) {
+    if ($projects.Contains($data[2].Trim()) -or $data[1].EndsWith("snippets.5000.json")) {
         continue
     }
     if ($data[2].Trim() -ne "") {
@@ -136,16 +143,6 @@ foreach ($item in $workingSet) {
         Write-Host "$counter/$length :: $Item"
                 
         $data = $item.Split('|')
-
-        # this was added to avoid compile errors in the dotnet/samples repo mono-samples folder.
-        # I don't think this is needed now that we have ways to avoid errors
-        # leaving this here for reference
-        #
-        #if ($data[1].Contains("mono-samples")){
-        #    Write-Host "Found mono-sample project, Skipping."
-        #    $counter++
-        #    Continue
-        #}
 
         # Project found, build it
         if ([int]$data[0] -eq 0) {
@@ -202,24 +199,53 @@ foreach ($item in $workingSet) {
         }
 
         # No project found
-        elseif ([int]$data[0] -eq 1) {
-            New-Result $data[1] "" 1 "😵 Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code." $null
+        else
+        {
+            $settings = $null
+            $filePath =  Resolve-Path "$RepoRootDir\$($data[1])"
 
-            $thisExitCode = 1
+            # Hunt for snippets config file
+            do {
+
+                $configFile = [System.IO.Path]::Combine($filePath, "snippets.5000.json")
+
+                if ([System.IO.File]::Exists($configFile) -eq $true) {
+
+                    $settings = $configFile | Get-ChildItem | Get-Content | ConvertFrom-Json
+                    Write-Host "Loading settings for errors found by LocateProjects: $configFile"
+                    break
+                }
+
+                # go back one folder
+                $filePath = [System.IO.Path]::GetFullPath([System.IO.Path]::Combine($filePath, "..\"))
+            } until ([System.Linq.Enumerable]::Count($filePath, [Func[Char, Boolean]] { param($x) $x -eq '\' }) -eq 1)
+
+            if ($settings -eq $null) {
+                Write-Host "No settings file found for LocateProjects reported error"
+            }
+            
+            # Process each error
+            if ([int]$data[0] -eq 1) {
+                New-Result $data[1] "" 1 "ERROR: Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code." $settings
+
+                $thisExitCode = 1
+            }
+
+            # Too many projects found
+            elseif ([int]$data[0] -eq 2) {
+                New-Result $data[1] $data[2] 2 "ERROR: Too many projects found. A single project or solution must exist in this directory or one of the parent directories." $settings
+
+                $thisExitCode = 2
+            }
+
+            # Solution found, but no project
+            elseif ([int]$data[0] -eq 3) {
+                New-Result $data[1] $data[2] 2 "ERROR: Solution found, but missing project. A project is required to compile this code." $settings
+                $thisExitCode = 3
+            }
+
         }
 
-        # Too many projects found
-        elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must exist in this directory or one of the parent directories." $null
-
-            $thisExitCode = 2
-        }
-
-        # Solution found, but no project
-        elseif ([int]$data[0] -eq 3) {
-            New-Result $data[1] $data[2] 2 "😲 Solution found, but missing project. A project is required to compile this code." $null
-            $thisExitCode = 3
-        }
     }
     catch {
         New-Result $data[1] $projectFile 1000 "ERROR: $($_.Exception)" $null
@@ -312,7 +338,15 @@ exit 0
 # Sample snippets.5000.json file
 <#
 {
-    "host": "visualstudio"
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/Program.cs",
+            "line": 5,
+            "column": 25,
+            "error": "CS0234"
+        }
+    ]
 }
 
 #>

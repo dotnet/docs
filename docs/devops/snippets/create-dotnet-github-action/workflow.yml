@@ -23,7 +23,7 @@ jobs:
       pull-requests: write
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: 'Print manual run reason'
       if: ${{ github.event_name == 'workflow_dispatch' }}
@@ -42,7 +42,7 @@ jobs:
         dir: ${{ './github-actions/DotNet.GitHubAction' }}
       
     - name: Create pull request
-      uses: peter-evans/create-pull-request@v3.4.1
+      uses: peter-evans/create-pull-request@v4
       if: ${{ steps.dotnet-code-metrics.outputs.updated-metrics }} == 'true'
       with:
         title: '${{ steps.dotnet-code-metrics.outputs.summary-title }}'

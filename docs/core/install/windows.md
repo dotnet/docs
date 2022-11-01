@@ -256,9 +256,6 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 
 ## Dependencies
 
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD024 -->
-
 # [.NET 6](#tab/net60)
 
 The following Windows versions are supported with .NET 6:
@@ -307,8 +304,6 @@ certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
 Be sure to review the dependencies required for [Windows 7 below](#additional-deps).
 
 ---
-
-<!-- markdownlint-disable MD001 -->
 
 ### <a name="additional-deps"></a> Windows 7 / Vista / 8.1 / Server 2008 R2 / Server 2012 R2
 

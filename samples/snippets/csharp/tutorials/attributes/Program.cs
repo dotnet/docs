@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace ConsoleApplication
 {
+#pragma warning disable CS0612
     public class Program
     {
         public static void Main(string[] args)
@@ -59,7 +60,7 @@ namespace ConsoleApplication
     {
     }
     // </ObsoleteExample2>
-
+#pragma warning restore CS0612
     // <CreateAttributeExample1>
     public class MySpecialAttribute : Attribute
     {
@@ -116,10 +117,12 @@ namespace ConsoleApplication
     }
     // </CallerMemberName1>
 
+/*
     // <AttributeGothca1>
     public class GotchaAttribute : Attribute
     {
-        public GotchaAttribute(Foo myClass, string str) {
+        public GotchaAttribute(Foo myClass, string str)
+        {
         }
     }
     // </AttributeGothca1>
@@ -130,4 +133,5 @@ namespace ConsoleApplication
     {
     }
     // </AttributeGotcha2>
+*/
 }

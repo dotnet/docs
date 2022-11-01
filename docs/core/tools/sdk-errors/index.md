@@ -148,6 +148,12 @@ f1_keywords:
 - NETSDK1184
 - NETSDK1185
 - NETSDK1186
+- NETSDK1187
+- NETSDK1188
+- NETSDK1189
+- NETSDK1190
+- NETSDK1191
+- NETSDK1192
 ---
 # .NET SDK error list
 
@@ -327,3 +333,9 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1184|The Targeting Pack for FrameworkReference '{0}' was not available. This may be because DisableTransitiveFrameworkReferenceDownloads was set to true.|
 |NETSDK1185|The Runtime Pack for FrameworkReference '{0}' was not available. This may be because DisableTransitiveFrameworkReferenceDownloads was set to true.|
 |NETSDK1186|This project depends on Maui Essentials through a project or NuGet package reference, but doesn't declare that dependency explicitly. To build this project, you must set the UseMauiEssentials property to true (and install the Maui workload if necessary).|
+|NETSDK1187|Package {0} {1} has a resource with the locale '{2}'. This locale has been normalized to the standard format '{3}' to prevent casing issues in the build. Consider notifying the package author about this casing issue.|
+|NETSDK1188|Package {0} {1} has a resource with the locale '{2}'. This locale is not recognized by .NET. Consider notifying the package author that it appears to be using an invalid locale.|
+|NETSDK1189|Prefer32Bit is not supported and has no effect for netcoreapp target.|
+|NETSDK1190|To use '{0}' in solution projects, you must set the environment variable '{1}' (to true). This will increase the time to complete the operation.|
+|NETSDK1191|A runtime identifier for the property '{0}' couldn't be inferred. Specify a rid explicitly.|
+|NETSDK1192|Targeting .NET 7.0 or higher in Visual Studio 2022 17.3 is not supported.|

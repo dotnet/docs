@@ -1,11 +1,11 @@
 ---
-title: "Ref Struct types - C# reference"
+title: "ref struct types - C# reference"
 description: Learn about the ref struct type in C#
-ms.date: 09/15/2022
+ms.date: 10/12/2022
 ---
-# `ref` Structure types (C# reference)
+# `ref` structure types (C# reference)
 
-You can use the `ref` modifier in the declaration of a value type. Instances of a `ref struct` type are allocated on the stack and can't escape to the managed heap. To ensure that, the compiler limits the usage of `ref struct` types as follows:
+You can use the `ref` modifier in the declaration of a [structure type](struct.md). Instances of a `ref struct` type are allocated on the stack and can't escape to the managed heap. To ensure that, the compiler limits the usage of `ref struct` types as follows:
 
 - A `ref struct` can't be the element type of an array.
 - A `ref struct` can't be a declared type of a field of a class or a non-`ref struct`.
@@ -18,8 +18,6 @@ You can use the `ref` modifier in the declaration of a value type. Instances of 
 
 You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.
 
-Beginning with C# 11.0, a `ref struct` may contain `ref` fields. A `ref` field may be assigned or reassigned to refer to another object. Ref fields are declared using the same syntax as [`ref` local variables](../statements/declarations.md#ref-locals). The compiler enforces scope rules on `ref` fields in `ref struct` types. The rules ensure that a reference doesn't outlive the object to which it refers. See the section on scoping rules in the article on [method parameters](../keywords/method-parameters.md#scope-of-references-and-values).
-
 Typically, you define a `ref struct` type when you need a type that also includes data members of `ref struct` types:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetRefStruct":::
@@ -30,10 +28,32 @@ To declare a `ref struct` as `readonly`, combine the `readonly` and `ref` modifi
 
 In .NET, examples of a `ref struct` are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
 
+## `ref` fields
+
+Beginning with C# 11, you can declare a `ref` field in a `ref struct`, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetRefField":::
+
+A `ref` field may have the `null` value. Use the <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%60%601(%60%600@)?displayProperty=nameWithType> method to determine if a `ref` field is `null`.
+
+You can apply the `readonly` modifier to a `ref` field in the following ways:
+
+- `readonly ref`: You can [ref reassign](../operators/assignment-operator.md#ref-assignment) such a field with the `= ref` operator only inside a constructor or an [`init` accessor](../keywords/init.md). You can assign a value with the `=` operator at any point allowed by the field access modifier.
+- `ref readonly`: At any point, you cannot assign a value with the `=` operator to such a field. However, you can ref reassign a field with the `= ref` operator.
+- `readonly ref readonly`: You can only ref reassign such a field in a constructor or an `init` accessor. At any point, you cannot assign a value to the field.
+
+The compiler ensures that a reference stored in a `ref` field doesn't outlive the value to which it refers. For information about the scope rules, see the [Scope of reference and values](../keywords/method-parameters.md#scope-of-references-and-values) section of the [Method parameters](../keywords/method-parameters.md) article.
+
 ## C# language specification
 
 For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
 
-- [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
+- [C# 7.2 - Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
+- [C# 11 - ref fields and scoped](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md)
+
+## See also
+
+- [C# reference](../index.md)
+- [The C# type system](../../fundamentals/types/index.md)

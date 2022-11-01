@@ -28,7 +28,7 @@ dotnet_separate_import_directive_groups = true
 ```
 
 > [!TIP]
-> If your code is C#, additional [C#-specific `using` directive options](csharp-formatting-options.md#using-directive-options) are available.
+> A separate C#-specific [`using` directive rule IDE0065](ide0065.md) is also available. That rule concerns whether `using` directives are placed inside or outside namespaces.
 
 ### dotnet\_sort\_system\_directives_first
 

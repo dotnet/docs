@@ -8,11 +8,11 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
+    if: ${{ github.actor == 'dependabot[bot]' && github.repository_owner == 'dotnet' }}
     steps:
       - name: Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v1.3.4
+        uses: dependabot/fetch-metadata@bfc19f43c126171ed783cdcf9a125055b7831d32
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Approve a PR

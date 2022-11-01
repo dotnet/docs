@@ -1,8 +1,0 @@
-<Project DefaultTargets="SDKSampleLibrary;XAMLAPP" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Target Name="SDKSampleLibrary">
-    <MSBuild Projects="SDKSampleLibrary\SDKSampleLibrary.csproj" />
-  </Target>
-  <Target Name="XAMLAPP">
-    <MSBuild Projects="XAMLAPP\XAMLAPP.csproj" />
-  </Target>
-</Project>

@@ -1,6 +1,15 @@
 {
     "build": {
-        "markdownEngineName": "markdig",
+      "markdownEngineName": "markdig",
+      "markdownEngineProperties": {
+        "markdigExtensions": [
+            "abbreviations",
+            "definitionlists",
+            "tasklists",
+            "footnotes",
+            "diagrams"
+          ]
+        },
         "content": [
             {
                 "files": ["api/**/*.md"]
@@ -43,7 +52,9 @@
                     "csharp-7.0/binary-literals.md",
                     "csharp-7.0/digit-separators.md",
                     "csharp-7.0/expression-bodied-everything.md",
+                    "csharp-7.0/local-functions.md",
                     "csharp-7.0/ref-locals-returns.md",
+                    "csharp-7.0/throw-expression.md",
                     "csharp-7.0/tuples.md",
                     "csharp-7.0/value-task.md",
                     "csharp-7.2/leading-separator.md",
@@ -101,7 +112,10 @@
         "rules": {
             "docs-link-absolute": {
                 "exclude": [
+                    "_csharplang/proposals/csharp-7.0/local-functions.md",
+                    "_csharplang/proposals/csharp-7.0/throw-expression.md",
                     "_csharplang/proposals/csharp-7.2/private-protected.md",
+                    "_csharplang/proposals/csharp-7.2/readonly-struct.md",
                     "_csharplang/proposals/csharp-7.3/blittable.md"
                 ]
             }
@@ -183,7 +197,7 @@
                 "docs/architecture/**/**.md": "dotnet-architecture",
                 "docs/azure/**/*.*": "dotnet-azure",
                 "docs/core/**/*.*": "dotnet-fundamentals",
-                "docs/core/install/**/**.md": "dotnet",
+                "docs/core/install/**/**.md": ".net",
                 "docs/csharp/**/*.*": "dotnet-csharp",
                 "docs/framework/**/**.md": "dotnet-framework",
                 "docs/fsharp/**/**.md": "dotnet-fsharp",
@@ -502,7 +516,7 @@
                 "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
                 "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
                 "docs/csharp/tour-of-csharp/**/**.md": "csharp-get-started",
-                "docs/core/install/**/**.md": "dotnet-install",
+                "docs/core/install/**/**.md": "dotnet-installation",
                 "docs/core/tools/**/**.md": "dotnet-cli",
                 "docs/core/docker/**/**.md": "dotnet-docker",
                 "docs/framework/configure-apps/file-schema/network/**/**.md": "dotnet-networking",
@@ -593,9 +607,7 @@
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
 
                 "_csharplang/proposals/csharp-7.0/pattern-matching.md": "Pattern matching",
-                "_csharplang/proposals/csharp-7.0/local-functions.md": "Local functions",
                 "_csharplang/proposals/csharp-7.0/out-var.md": "Out variable declarations",
-                "_csharplang/proposals/csharp-7.0/throw-expression.md": "Throw expressions",
                 "_csharplang/proposals/csharp-7.0/binary-literals.md": "Binary literals",
                 "_csharplang/proposals/csharp-7.0/digit-separators.md": "Digit separators",
                 "_csharplang/proposals/csharp-7.0/task-types.md": "Async task types",
@@ -663,10 +675,10 @@
                 "_csharplang/proposals/csharp-10.0/lambda-attributes.md": "Lambda attributes",
                 "_csharplang/proposals/csharp-10.0/caller-argument-expression.md": "Caller argument expression",
                 "_csharplang/proposals/csharp-10.0/enhanced-line-directives.md": "Enhanced #line directives",
-                "_csharplang/proposals/csharp-10.0/generic-attributes.md": "Generic attributes",
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "Improved definite assignment analysis",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "AsyncMethodBuilder override",
 
+                "_csharplang/proposals/csharp-11.0/generic-attributes.md": "Generic attributes",
                 "_csharplang/proposals/csharp-11.0/auto-default-structs.md": "Auto-default struct",
                 "_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md": "Checked user defined operators",
                 "_csharplang/proposals/csharp-11.0/extended-nameof-scope.md": "Extended nameof parameter scope",
@@ -733,9 +745,7 @@
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
 
                 "_csharplang/proposals/csharp-7.0/pattern-matching.md": "This feature specification describes the pattern matching featues added in C# 7.0. Note that future releases built on this initial set of features.",
-                "_csharplang/proposals/csharp-7.0/local-functions.md": "This feature specification describes local functions, which are functions that are embedded in another method or function.",
                 "_csharplang/proposals/csharp-7.0/out-var.md": "This feature specification describes syntax enhancements that enable declaring 'out' variables in the expression where they are used.",
-                "_csharplang/proposals/csharp-7.0/throw-expression.md": "This feature specification describes syntax enhancements that allow 'throw' to be either an expression or a statement.",
                 "_csharplang/proposals/csharp-7.0/binary-literals.md": "This feature specification describes the syntax to declare binary literals for integral constants.",
                 "_csharplang/proposals/csharp-7.0/digit-separators.md": "This feature specification describes the syntax to allow separators between groups of digits in numeric literals.",
                 "_csharplang/proposals/csharp-7.0/task-types.md": "This feature specification describes the syntax to support async return types that match a pattern, rather than restricting them to Task.",
@@ -803,10 +813,10 @@
                 "_csharplang/proposals/csharp-10.0/lambda-attributes.md": "This feature specification describes the syntax enhancements to declare attributes on lambda expressions.",
                 "_csharplang/proposals/csharp-10.0/caller-argument-expression.md": "This feature specification describes attributes that can be used to enable the compiler to convert a caller argument expression into text. This is primarily used for debugging and testing scenarios.",
                 "_csharplang/proposals/csharp-10.0/enhanced-line-directives.md": "This feature specification describes updates to the #line directive. These enhancements support scenarios like Razor where the Razor engine wants more control over the line number so that it maps to your source rather than the generated file.",
-                "_csharplang/proposals/csharp-10.0/generic-attributes.md": "This feature specification describes generic attributes, where a generic class may derive from 'System.Attribute'.",
                 "_csharplang/proposals/csharp-10.0/improved-definite-assignment.md": "This feature specification describes updates to the rules for definite assignment analysis. The result is more accurate warnings for when a variable may not be definitely assigned, or may not be null.",
                 "_csharplang/proposals/csharp-10.0/async-method-builders.md": "This feature specification describes new rules to enable types to override the default AsyncMethodBuilder. This will be used by the runtime for performance improvements.",
 
+                "_csharplang/proposals/csharp-11.0/generic-attributes.md": "This feature specification describes generic attributes, where a generic class may derive from 'System.Attribute'.",
                 "_csharplang/proposals/csharp-11.0/auto-default-structs.md": "This feature updates the rules for struct initialization and default values. This feature standardizes the behavior for default struct values and newly initialized structs.",
                 "_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md": "This feature enables checked and unchecked alternatives for some operators.",
                 "_csharplang/proposals/csharp-11.0/extended-nameof-scope.md": "This feature enables the nameof expression to be used with parameter names in a method declaration.",

@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
-
-class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
+﻿class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
 {
     IDisposable? _disposableResource = new MemoryStream();
     IAsyncDisposable? _asyncDisposableResource = new MemoryStream();

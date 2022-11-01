@@ -27,17 +27,17 @@ The request methods are differentiated via several factors, first by their _verb
 - A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
 - A request method is considered a **_safe method_** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
 
-| HTTP verb | Is idempotent | Is cacheable         | Is safe |
-|-----------|---------------|----------------------|---------|
-| `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
-| `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
-| `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
-| `PATCH`   | ❌ No         | ❌ No                 | ❌ No   |
-| `DELETE`  | ✔️ Yes       | ❌ No                 | ❌ No   |
-| `HEAD`    | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
-| `OPTIONS` | ✔️ Yes       | ❌ No                 | ✔️ Yes |
-| `TRACE`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
-| `CONNECT` | ❌ No         | ❌ No                 | ❌ No   |
+| HTTP method | Is idempotent | Is cacheable         | Is safe |
+|-------------|---------------|----------------------|---------|
+| `GET`       | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `POST`      | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
+| `PUT`       | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `PATCH`     | ❌ No         | ❌ No                 | ❌ No   |
+| `DELETE`    | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `HEAD`      | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `OPTIONS`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `TRACE`     | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `CONNECT`   | ❌ No         | ❌ No                 | ❌ No   |
 
 > <sup>†</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present. This is very uncommon in practice.
 

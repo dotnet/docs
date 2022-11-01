@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 06/02/2022
+ms.date: 10/21/2022
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -17,8 +17,8 @@ helpviewer_keywords:
 The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
-- `switch` [statement](../statements/selection-statements.md#the-switch-statement)
-- `switch` [expression](switch-expression.md)
+- [switch statement](../statements/selection-statements.md#the-switch-statement)
+- [switch expression](switch-expression.md)
 
 In those constructs, you can match an input expression against any of the following patterns:
 
@@ -31,8 +31,9 @@ In those constructs, you can match an input expression against any of the follow
 - [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
 - [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
 - [Discard pattern](#discard-pattern): to match any expression.
+- [List patterns](#list-patterns): to test if sequence elements match corresponding nested patterns. Introduced in C# 11.
 
-[Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
+[Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
 For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md).
 
@@ -70,9 +71,9 @@ Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the fol
 
 Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the conditions listed above.
 
-You can also use this pattern for a clear, concise `null` check:
+To check for non-null, you can use a [negated](#logical-patterns) `null` [constant pattern](#constant-pattern), as the following example shows:
 
-:::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NotNull":::
+:::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NonNullCheck":::
 
 For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
 
@@ -256,55 +257,25 @@ Beginning with C# 9.0, you can put parentheses around any pattern. Typically, yo
 
 ## List patterns
 
-Beginning with C# 11, you can match an array or a list to a *sequence* of patterns that match elements. You can apply any of the following patterns:
+Beginning with C# 11, you can match an array or a list against a *sequence* of patterns, as the following example shows:
 
-- Any pattern can be applied to any element to check that an individual element matches certain characteristics.
-- The discard pattern (`_`) matches a single element.
-- The *range pattern* (`..`) can match zero or more elements in the sequence. At most one range pattern is allowed in a list pattern.
-- The `var` pattern can capture a single element, or a range of elements.
+:::code language="csharp" source="snippets/patterns/ListPattern.cs" id="BasicExample":::
 
-These rules are demonstrated using the following array declarations:
+As the preceding example shows, a list pattern is matched when each nested pattern is matched by the corresponding element of an input sequence. You can use any pattern within a list pattern. To match any element, use the [discard pattern](#discard-pattern) or, if you also want to capture the element, the [var pattern](#var-pattern), as the following example shows:
 
-:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DeclareArrays":::
+:::code language="csharp" source="snippets/patterns/ListPattern.cs" id="MatchAnyElement":::
 
-You can match the entire sequence by specifying all the elements and using values:
+The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or/and the end of an input sequence, use the *slice pattern* `..` within a list pattern, as the following example shows:
 
-:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchEntireArray":::
+:::code language="csharp" source="snippets/patterns/ListPattern.cs" id="UseSlice":::
 
-You can match some elements in a sequence of a known length using the discard pattern (`_`) as a placeholder:
+A slice pattern matches zero or more elements. You can use at most one slice pattern in a list pattern.
 
-:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchElements":::
+You can also nest a subpattern within a slice pattern, as the following example shows:
 
-You can supply any number of values or placeholders anywhere in the sequence. If you aren't concerned with the length, you can use the *range* pattern to match zero or more elements:
+:::code language="csharp" source="snippets/patterns/ListPattern.cs" id="SliceWithPattern":::
 
-:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="MatchRange":::
-
-The previous examples used the *constant pattern* to determine if an element is a given number. Any of those patterns could be replaced by a different pattern, such as a relational pattern:
-
-:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="RelationalMatch":::
-
-List patterns are a valuable tool when data doesn't follow a regular structure. You can use pattern matching to test the shape and values of the data instead of transforming it into a set of objects.
-
-Consider the following excerpt from a text file containing bank transactions:
-
-```output
-04-01-2020, DEPOSIT,    Initial deposit,            2250.00
-04-15-2020, DEPOSIT,    Refund,                      125.65
-04-18-2020, DEPOSIT,    Paycheck,                    825.65
-04-22-2020, WITHDRAWAL, Debit,           Groceries,  255.73
-05-01-2020, WITHDRAWAL, #1102,           Rent, apt, 2100.00
-05-02-2020, INTEREST,                                  0.65
-05-07-2020, WITHDRAWAL, Debit,           Movies,      12.57
-04-15-2020, FEE,                                       5.55
-```
-
-It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
-
-:::code language="csharp" source="./snippets/patterns/ListPattern.cs" id="DataRecordExample":::
-
-The preceding example takes a string array, where each element is one field in the row. The switch expression keys on the second field, which determines the kind of transaction, and the number of remaining columns. Each row ensures the data is in the correct format. The discard pattern (`_`) skips the first field, with the date of the transaction. The second field matches the type of transaction. Remaining element matches skip to the field with the amount. The final match uses the *var* pattern to capture the string representation of the amount. The expression calculates the amount to add or subtract from the balance.
-
-*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *range* patterns to match the location of elements. You use other patterns to match characteristics about individual elements.
+For more information, see the [List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md) feature proposal note.
 
 ## C# language specification
 
@@ -321,4 +292,5 @@ For more information, see the following feature proposal notes:
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
+- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)

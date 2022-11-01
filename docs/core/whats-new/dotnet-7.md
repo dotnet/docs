@@ -160,9 +160,11 @@ Much work has gone into Windows Forms for .NET 7. Improvements have been made in
 
 For more information, see [What's new in Windows Forms in .NET 7](https://devblogs.microsoft.com/dotnet/winforms-enhancements-in-dotnet-7).
 
+<!--
 ### Orleans
 
 Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [What's new in Orleans 7.0](../../orleans/whats-new-in-orleans.md).
+-->
 
 ### .NET Upgrade Assistant and CoreWCF
 

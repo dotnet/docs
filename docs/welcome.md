@@ -27,7 +27,7 @@ Also follow the latest .NET events:
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET](core/whats-new/dotnet-6.md)
+- [What's new in .NET](core/whats-new/dotnet-7.md)
 - [What's new in .NET Framework](framework/whats-new/index.md)
 - [What's new in C#](./csharp/whats-new/csharp-10.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)

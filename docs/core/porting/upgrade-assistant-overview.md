@@ -19,6 +19,7 @@ Currently the tool supports the following .NET Framework app types:
 
 - .NET Framework Windows Forms apps
 - .NET Framework WPF apps
+- .NET Framework server-side WCF apps
 - .NET Native UWP apps
 - .NET Framework ASP.NET MVC apps
 - .NET Framework console apps
@@ -39,7 +40,7 @@ This section describes how to install the .NET Upgrade Assistant. You can also f
 
 - Windows Operating System
 - [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-- [Visual Studio 2022 17.0 or later](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio 2022 version 17.0 or later](https://visualstudio.microsoft.com/downloads/)
 
 ### Installation steps
 

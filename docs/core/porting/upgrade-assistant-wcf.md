@@ -16,7 +16,7 @@ For more information on how to install the tool, see [Overview of the .NET Upgra
 
 ## Things to know before starting
 
-This tool currently supports C# projects and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side project to .NET 6.
+This tool currently supports C# projects and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side projects to .NET 6.
 
 For a WCF project to be applicable for this upgrade, it must meet the following requirements:
 

@@ -65,7 +65,6 @@ Added to POS for .NET for operations on a single statistic.                     
 | UpdateStatistics       | void                  | Updates a list of statistics with the corresponding specified values.                                                                                                                                                                                              |
 | UpdateStatistics       | void                  | Updates the specified category of statistics with the specified value.                                                                                                                                                                                             |
 
-
 ## PosCommon Events
 
 The following table describes the **PosCommon** class events.

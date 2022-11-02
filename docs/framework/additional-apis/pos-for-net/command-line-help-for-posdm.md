@@ -9,15 +9,15 @@ ms.custom: pos-restored-from-archive
 
 You can display information about the general usage and syntax for POSDM.EXE by typing the following on the command line:
 
-    posdm /?
+`posdm /?`
 
 To get more information about any POSDM command, type the following on the command line:
 
-    posdm help command
+`posdm help command`
 
 Example:
 
-    posdm help listdevices
+`posdm help listdevices`
 
 ## See Also
 

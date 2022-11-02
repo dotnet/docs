@@ -31,25 +31,27 @@ The previous section, [Setting up a Service Object Project](setting-up-a-service
 
 In this sample, notice the additional **using** directives, the **ServiceObject** attribute applied to the Service Object class, the **Base** class used for the Service Object class, and finally the public constructor without arguments.
 
-    using system;
-    using Microsoft.PointOfService;
-    using Microsoft.PointOfService.BaseServiceObjects;
+```csharp
+using system;
+using Microsoft.PointOfService;
+using Microsoft.PointOfService.BaseServiceObjects;
 
-    namespace Samples.ServiceObjects.SOTemplate
+namespace Samples.ServiceObjects.SOTemplate
+{
+    [ServiceObject(
+                DeviceType.Msr,
+                "ServiceObjectTemplate",
+                "Bare bones Service Object class",
+                1,
+                9)]
+    public class MyServiceObject : MsrBase
     {
-        [ServiceObject(
-                    DeviceType.Msr,
-                    "ServiceObjectTemplate",
-                    "Bare bones Service Object class",
-                    1,
-                    9)]
-        public class MyServiceObject : MsrBase
+        public MyServiceObject()
         {
-            public MyServiceObject()
-            {
-            }
         }
     }
+}
+```
 
 This sample does not compile as is. Its purpose is to demonstrate what elements are necessary for any Service Object class. However, for each **POS for .NET** Service Object **Base** class, the list of abstract methods which must be implemented is different. The following sections continue to add features to the sample until it becomes a complete, functional Service Object implementation.
 

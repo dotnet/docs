@@ -23,12 +23,14 @@ The **ServiceObject** node contains subnodes with the name **HardwareId**, which
 
 The example shows a typical XML Plug and Play configuration file.
 
-    <PointOfServiceConfig Version="1.0">
-        <ServiceObject Type="Msr" Name="ExampleMsr" Override="yes">
-            <HardwareId From="HID\Vid_0801&Pid_0002&Rev_0100"
-                        To="HID\Vid_0801&Pid_0002&Rev_9999" />
-        </ServiceObject>
-    </PointOfServiceConfig>
+```xml
+<PointOfServiceConfig Version="1.0">
+    <ServiceObject Type="Msr" Name="ExampleMsr" Override="yes">
+        <HardwareId From="HID\Vid_0801&Pid_0002&Rev_0100"
+                    To="HID\Vid_0801&Pid_0002&Rev_9999" />
+    </ServiceObject>
+</PointOfServiceConfig>
+```
 
 ## Hardeware ID Precedence
 

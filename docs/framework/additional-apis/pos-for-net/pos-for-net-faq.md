@@ -42,13 +42,13 @@ You can silently run the POS for .NET v1.14 installer from within your own produ
 
 - Add the following command to your product installer:
 
-        msiexec /i POSforDotNet-1.14.msi /passive
+    `msiexec /i POSforDotNet-1.14.msi /passive`
 
 ## To install the complete POS for .NET 1.14 including the SDK
 
 1. Add the following command to your product installer:
 
-        msiexec /i POSforDotNet-1.14.msi INSTALLLEVEL=1000 /passive
+    `msiexec /i POSforDotNet-1.14.msi INSTALLLEVEL=1000 /passive`
 
 ### What platforms are supported for POS for .NET 1.14?
 

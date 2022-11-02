@@ -24,7 +24,7 @@ In general, a Service Object should always access the value of its common and cl
 The Service Object developer should be aware of what the POS for .NET framework may do when a particular value is changed. For example, the Service Object should generally not change **CommonProperties.State** since this may interfere with the POS for .NET internal state. Similarly, the Service Object developer should be aware that changing **CommonProperties.PowerState** may send a **StatusUpdateEvent** event to the application.
 
 > [!NOTE]
-> When deriving from the POS for .NET <STRONG>Base</STRONG> or <STRONG>Basic</STRONG> classes, the Service Object should generally not change the value of <STRONG>CommonProperties.State</STRONG> to <STRONG>ControlState.Closed</STRONG>. Doing so prevents cleanup of the event queue, and POS for .NET may later throw exceptions as it tries to process events already in the queue.
+> When deriving from the POS for .NET **Base** or **Basic** classes, the Service Object should generally not change the value of **CommonProperties.State** to **ControlState.Closed**. Doing so prevents cleanup of the event queue, and POS for .NET may later throw exceptions as it tries to process events already in the queue.
 
 ## See Also
 

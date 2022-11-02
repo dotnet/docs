@@ -31,110 +31,112 @@ The **ScannerBase** class implements the **ScannerBase.DecodeData** attribute as
 
 The following code demonstrates a typical method the Service Object developer could implement in order to extract label and data values from a scanned buffer. Note that this code is demonstrative of a particular device. Different Service Objects will require device-specific decoding.
 
-    // Decode the incoming scanner data, removing header and
-    // type information.
-    override protected byte[] DecodeScanDataLabel(
-                    byte[] scanData)
+```csharp
+// Decode the incoming scanner data, removing header and
+// type information.
+override protected byte[] DecodeScanDataLabel(
+                byte[] scanData)
+{
+    int i;
+    int len = 0;
+
+    // Get length of label data.
+    for (i = 5; i < (int)scanData[1]
+                && (int)scanData[i] > 31; i++)
     {
-        int i;
-        int len = 0;
-
-        // Get length of label data.
-        for (i = 5; i < (int)scanData[1]
-                    && (int)scanData[i] > 31; i++)
-        {
-            len++;
-        }
-
-        // Copy label data into buffer.
-        byte[] label = new byte[len];
-        len = 0;
-
-        for (i = 5; i < (int)scanData[1]
-                    && (int)scanData[i] > 31; i++)
-        {
-            label[len++] = scanData[i];
-        }
-
-        return label;
+        len++;
     }
 
-    // Process the incoming scanner data to find the data type.
-    override protected BarCodeSymbology DecodeScanDataType(
-                    byte[] scanData)
+    // Copy label data into buffer.
+    byte[] label = new byte[len];
+    len = 0;
+
+    for (i = 5; i < (int)scanData[1]
+                && (int)scanData[i] > 31; i++)
     {
-        int i;
+        label[len++] = scanData[i];
+    }
 
-        for (i = 5; i < (int)scanData[1]
-                    && (int)scanData[i] > 31; i++)
+    return label;
+}
+
+// Process the incoming scanner data to find the data type.
+override protected BarCodeSymbology DecodeScanDataType(
+                byte[] scanData)
+{
+    int i;
+
+    for (i = 5; i < (int)scanData[1]
+                && (int)scanData[i] > 31; i++)
+    {
+    }
+
+    // last 3 (or 1) bytes indicate symbology.
+    if (i + 2 <= (int)ScanData[1])
+    {
+        return GetSymbology(
+                ScanData[i],
+                ScanData[i + 1],
+                ScanData[i + 2]);
+    }
+    else
+    {
+        return GetSymbology(ScanData[i], 0, 0);
+    }
+}
+
+// This method determines the data type by examining
+// the end of the scanned data buffer. Either 1 byte
+// or 3 byte is used to determine the type, depending on
+// the incoming buffer.
+static private BarCodeSymbology GetSymbology(
+            byte b1,
+            byte b2,
+            byte b3)
+{
+    if (b1 == 0 && b3 == 11)
+    {
+        // Use all 3 bytes to determine the date type.
+        switch (b2)
         {
+            case 10:
+                return BarCodeSymbology.Code39;
+            case 13:
+                return BarCodeSymbology.Itf;
+            case 14:
+                return BarCodeSymbology.Codabar;
+            case 24:
+                return BarCodeSymbology.Code128;
+            case 25:
+                return BarCodeSymbology.Code93;
+            case 37:
+                return BarCodeSymbology.Ean128;
+            case 255:
+                return BarCodeSymbology.Rss14;
+            default:
+                break;
         }
 
-        // last 3 (or 1) bytes indicate symbology.
-        if (i + 2 <= (int)ScanData[1])
+    }
+    else if (b2 == 0 && b3 == 0)
+    {
+        // Only use the first byte to determine the data type.
+        switch (b1)
         {
-            return GetSymbology(
-                    ScanData[i],
-                    ScanData[i + 1],
-                    ScanData[i + 2]);
-        }
-        else
-        {
-            return GetSymbology(ScanData[i], 0, 0);
+            case 13:
+                return BarCodeSymbology.Upca;
+            case 22:
+                return BarCodeSymbology.EanJan13;
+            case 12:
+                return BarCodeSymbology.EanJan8;
+            default:
+                break;
         }
     }
 
-    // This method determines the data type by examining
-    // the end of the scanned data buffer. Either 1 byte
-    // or 3 byte is used to determine the type, depending on
-    // the incoming buffer.
-    static private BarCodeSymbology GetSymbology(
-                byte b1,
-                byte b2,
-                byte b3)
-    {
-        if (b1 == 0 && b3 == 11)
-        {
-            // Use all 3 bytes to determine the date type.
-            switch (b2)
-            {
-                case 10:
-                    return BarCodeSymbology.Code39;
-                case 13:
-                    return BarCodeSymbology.Itf;
-                case 14:
-                    return BarCodeSymbology.Codabar;
-                case 24:
-                    return BarCodeSymbology.Code128;
-                case 25:
-                    return BarCodeSymbology.Code93;
-                case 37:
-                    return BarCodeSymbology.Ean128;
-                case 255:
-                    return BarCodeSymbology.Rss14;
-                default:
-                    break;
-            }
-
-        }
-        else if (b2 == 0 && b3 == 0)
-        {
-            // Only use the first byte to determine the data type.
-            switch (b1)
-            {
-                case 13:
-                    return BarCodeSymbology.Upca;
-                case 22:
-                    return BarCodeSymbology.EanJan13;
-                case 12:
-                    return BarCodeSymbology.EanJan8;
-                default:
-                    break;
-            }
-        }
-
-        return BarCodeSymbology.Other;
-    }
+    return BarCodeSymbology.Other;
+}
+```
 
 Additional details about how label and type data should be extracted from a scanned data buffer can be found in the UPOS specification.
 

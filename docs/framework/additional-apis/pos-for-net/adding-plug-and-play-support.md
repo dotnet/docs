@@ -25,30 +25,33 @@ Only the application is responsible for catching [DeviceAddedEvent](ms831428\(v=
 
 The following sample adds a **HardwareId** attribute to the basic template shown in the previous section.
 
-    using System;
+```csharp
+using System;
 
-    using Microsoft.PointOfService;
-    using Microsoft.PointOfService.BaseServiceObjects;
+using Microsoft.PointOfService;
+using Microsoft.PointOfService.BaseServiceObjects;
 
-    namespace SOTemplate
+namespace SOTemplate
+{
+
+    [HardwareId("HID\\Vid_05e0&amp;Pid_038a",
+                "HID\\Vid_05e0&amp;Pid_038a")]
+
+    [ServiceObject(
+                DeviceType.Msr,
+                "ServiceObjectTemplate",
+                "Bare bones Service Object class",
+                1,
+                9)]
+    public class MyServiceObject : MsrBase
     {
-
-        [HardwareId("HID\\Vid_05e0&amp;Pid_038a",
-                    "HID\\Vid_05e0&amp;Pid_038a")]
-
-        [ServiceObject(
-                    DeviceType.Msr,
-                    "ServiceObjectTemplate",
-                    "Bare bones Service Object class",
-                    1,
-                    9)]
-        public class MyServiceObject : MsrBase
+        public MyServiceObject()
         {
-            public MyServiceObject()
-            {
-            }
         }
     }
+}
+
+```
 
 ## See Also
 

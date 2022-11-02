@@ -19,7 +19,7 @@ If you have trouble remotely connecting to your device, you may have to configur
 
 2. Set the following registry key to disable User Account Control remote restrictions:
 
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system]"LocalAccountTokenFilterPolicy"=dword:00000001
+    `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system]"LocalAccountTokenFilterPolicy"=dword:00000001`
 
     For more information about how to change this registry key, see [Description of User Account Control and remote restrictions](https://go.microsoft.com/fwlink/p/?linkid=259744) and [How to change the Remote UAC LocalAccountTokenFilterPolicy registry setting](https://go.microsoft.com/fwlink/p/?linkid=259760).
 
@@ -31,7 +31,7 @@ If you have trouble remotely connecting to your device, you may have to configur
 
 2. To establish a Windows Firewall exception for WMI traffic, type the following command:
 
-        netsh advfirewall firewall set rule group="windows management instrumentation (wmi)" new enable=yes
+    `netsh advfirewall firewall set rule group="windows management instrumentation (wmi)" new enable=yes`
 
     > [!IMPORTANT]
     > When running ELM on an OS that uses a language other than English, use the localized group name.
@@ -40,19 +40,19 @@ If you have trouble remotely connecting to your device, you may have to configur
 
       - To establish a Windows Firewall exception for DCOM port 135, type the following command:
 
-            netsh advfirewall firewall add rule dir=in name="DCOM" program=%systemroot%\system32\svchost.exe service=rpcss action=allow protocol=TCP localport=135
+          `netsh advfirewall firewall add rule dir=in name="DCOM" program=%systemroot%\system32\svchost.exe service=rpcss action=allow protocol=TCP localport=135`
 
       - To establish a Windows Firewall exception for the WMI service, type the following command:
 
-            netsh advfirewall firewall add rule dir=in name ="WMI" program=%systemroot%\system32\svchost.exe service=winmgmt action = allow protocol=TCP localport=any
+          `netsh advfirewall firewall add rule dir=in name ="WMI" program=%systemroot%\system32\svchost.exe service=winmgmt action = allow protocol=TCP localport=any`
 
       - To establish a Windows Firewall exception for the sink that receives callbacks from a remote computer, type the following command:
 
-            netsh advfirewall firewall add rule dir=in name ="UnsecApp" program=%systemroot%\system32\wbem\unsecapp.exe action=allow
+          `netsh advfirewall firewall add rule dir=in name ="UnsecApp" program=%systemroot%\system32\wbem\unsecapp.exe action=allow`
 
       - To establish a Windows Firewall exception for outgoing connections to a remote computer that the local computer is communicating with asynchronously, type the following command:
 
-            netsh advfirewall firewall add rule dir=out name ="WMI_OUT" program=%systemroot%\system32\svchost.exe service=winmgmt action=allow protocol=TCP localport=any
+          `netsh advfirewall firewall add rule dir=out name ="WMI_OUT" program=%systemroot%\system32\svchost.exe service=winmgmt action=allow protocol=TCP localport=any`
 
 For more information about how to enable WMI traffic, see [Connecting to WMI Remotely](https://go.microsoft.com/fwlink/p/?linkid=248462) on MSDN.
 

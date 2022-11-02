@@ -32,7 +32,7 @@ You can force your process to run as a 32-bit process by compiling your main exe
 
 1. Add the `/platform:x86` compiler option to your C\# compiler command, as in the following example:
 
-        csc /platform:x86 <filename>.cs
+    `csc /platform:x86 <filename>.cs`
 
     For more information, see [/platform (C\# Compiler Options)](https://go.microsoft.com/fwlink/p/?linkid=389441) on MSDN.
 
@@ -64,62 +64,64 @@ You can modify the COM registration of the OPOS service object to use a 32-bit h
 
 Alternatively, you can use the following Windows PowerShell script to modify the COM registry for all of the OPOS Common Control Objects (CCO) to use out of process COM servers. You can run this script to ensure that all OPOS service objects will be able to interoperate with 64-bit applications. You must run the script from an administrator Windows PowerShell prompt.
 
-    # This Windows PowerShell script modifies the COM registry for all OPOS
-    # Common Control Objects (CCO) so that they use out of process COM servers.
-    # This enables OPOS service objects to work with both 32-bit and 64-bit
-    # POS for .NET applications.
+```csharp
+# This Windows PowerShell script modifies the COM registry for all OPOS
+# Common Control Objects (CCO) so that they use out of process COM servers.
+# This enables OPOS service objects to work with both 32-bit and 64-bit
+# POS for .NET applications.
 
-    # .Synopsis
-    # Create-Regkey: This function creates a new key in the registry
-    function Create-Regkey {
-        param(
-            [string] $Key
-        )
+# .Synopsis
+# Create-Regkey: This function creates a new key in the registry
+function Create-Regkey {
+    param(
+        [string] $Key
+    )
 
-        if (!(test-path -path $Key -pathType container)) {
-                New-Item -path $Key -type container | Out-Null
-        }
+    if (!(test-path -path $Key -pathType container)) {
+            New-Item -path $Key -type container | Out-Null
     }
+}
 
-    # .Synopsis
-    # Set-RegEntry: This function creates a new registry key in the registry and
-    # creates a new value in the key.
-    function Set-RegEntry {
-        param(
-            [string] $Key,
-            [string] $Name,
-            [string] $PropertyType,
-            $Value
-        )
+# .Synopsis
+# Set-RegEntry: This function creates a new registry key in the registry and
+# creates a new value in the key.
+function Set-RegEntry {
+    param(
+        [string] $Key,
+        [string] $Name,
+        [string] $PropertyType,
+        $Value
+    )
 
-        Create-RegKey -Key $Key
-        Remove-ItemProperty -Path $Key -Name $Name -ErrorAction SilentlyContinue
-        New-ItemProperty -Path $Key -Name $Name -PropertyType $PropertyType -Value $Value | Out-Null
-    }
+    Create-RegKey -Key $Key
+    Remove-ItemProperty -Path $Key -Name $Name -ErrorAction SilentlyContinue
+    New-ItemProperty -Path $Key -Name $Name -PropertyType $PropertyType -Value $Value | Out-Null
+}
 
-    # Iterate through all of the OPOS Common Control Objects, setting registry
-    # entries and values for each object.
+# Iterate through all of the OPOS Common Control Objects, setting registry
+# entries and values for each object.
 
-    for ($i = 2; $i -lt 38; $i++) {
-        $clsid = '{{CCB90{0:D2}2-B81E-11D2-AB74-0040054C3719}}' -f $i
+for ($i = 2; $i -lt 38; $i++) {
+    $clsid = '{{CCB90{0:D2}2-B81E-11D2-AB74-0040054C3719}}' -f $i
 
-        Set-RegEntry -Key "hklm:\SOFTWARE\Classes\Wow6432Node\CLSID\$clsid" -Name 'AppID' -PropertyType String -Value $clsid
-        Set-RegEntry -Key "hklm:\SOFTWARE\Classes\Wow6432Node\AppID\$clsid" -Name 'DllSurrogate' -PropertyType String
-        Create-RegKey -Key "hklm:\SOFTWARE\Classes\AppID\$clsid"
-    }
+    Set-RegEntry -Key "hklm:\SOFTWARE\Classes\Wow6432Node\CLSID\$clsid" -Name 'AppID' -PropertyType String -Value $clsid
+    Set-RegEntry -Key "hklm:\SOFTWARE\Classes\Wow6432Node\AppID\$clsid" -Name 'DllSurrogate' -PropertyType String
+    Create-RegKey -Key "hklm:\SOFTWARE\Classes\AppID\$clsid"
+}
 
 If you need to revert the COM registry after running the previous script, you can run the following Windows PowerShell script to remove the new COM registry entries:
 
-    # This Windows PowerShell script restores the COM registry for all OPOS
-    # Common Control Objects (CCO) to their original values.
+# This Windows PowerShell script restores the COM registry for all OPOS
+# Common Control Objects (CCO) to their original values.
 
-    for ($i = 2; $i -lt 38; $i++) {
-        $clsid = '{{CCB90{0:D2}2-B81E-11D2-AB74-0040054C3719}}' -f $i
+for ($i = 2; $i -lt 38; $i++) {
+    $clsid = '{{CCB90{0:D2}2-B81E-11D2-AB74-0040054C3719}}' -f $i
 
-        Remove-ItemProperty -Path "hklm:\SOFTWARE\Classes\Wow6432Node\CLSID\$clsid" -Name 'AppID'
-        Remove-Item -Path "hklm:\SOFTWARE\Classes\Wow6432Node\AppID\$clsid"
-        Remove-Item -Path "hklm:\SOFTWARE\Classes\AppID\$clsid"
-    }
+    Remove-ItemProperty -Path "hklm:\SOFTWARE\Classes\Wow6432Node\CLSID\$clsid" -Name 'AppID'
+    Remove-Item -Path "hklm:\SOFTWARE\Classes\Wow6432Node\AppID\$clsid"
+    Remove-Item -Path "hklm:\SOFTWARE\Classes\AppID\$clsid"
+}
+```
 
 ## See Also
 

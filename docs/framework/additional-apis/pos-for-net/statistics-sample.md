@@ -25,46 +25,48 @@ The key members of the **DeviceStatistics** class are detailed below:
 
 - **RetrieveStatistics** retrieves the requested statistics from a device. **CapStatisticsReporting** must be **true** in order to successfully use this method. All calls to **RetrieveStatistics** will return the following XML as a minimum.
 
-        <?xml version='1.0'?>
-        <UPOSStat version="1.10.0"
-        xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance
-        xmlns="http://www.nrf-arts.org/IXRetail/namespace/"
-        xsi:schemaLocation="http://www.nrf-arts.org/IXRetail/namespace/
-        UPOSStat.xsd">
-           <Event>
-              <Parameter>
-                 <Name>RequestedStatistic</Name>
-                 <Value>1234</Value>
-              </Parameter>
-           </Event>
-           <Equipment>
-           <UnifiedPOSVersion>1.10</UnifiedPOSVersion>
-           <DeviceCategory UPOS="CashDrawer"/>
-           <ManufacturerName>Cashdrawers R Us</ManufacturerName>
-           <ModelName>CD-123</ModelName>
-           <SerialNumber>12345</SerialNumber>
-           <FirmwareRevision>1.0 Rev. B</FirmwareRevision>
-           <Interface>RS232</Interface>
-           <InstallationDate>2000-03-01</InstallationDate>
-           </Equipment>
-        </UPOSStat>
+    ```xml
+    <?xml version='1.0'?>
+    <UPOSStat version="1.10.0"
+    xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace/"
+    xsi:schemaLocation="http://www.nrf-arts.org/IXRetail/namespace/
+    UPOSStat.xsd">
+        <Event>
+            <Parameter>
+                <Name>RequestedStatistic</Name>
+                <Value>1234</Value>
+            </Parameter>
+        </Event>
+        <Equipment>
+        <UnifiedPOSVersion>1.10</UnifiedPOSVersion>
+        <DeviceCategory UPOS="CashDrawer"/>
+        <ManufacturerName>Cashdrawers R Us</ManufacturerName>
+        <ModelName>CD-123</ModelName>
+        <SerialNumber>12345</SerialNumber>
+        <FirmwareRevision>1.0 Rev. B</FirmwareRevision>
+        <Interface>RS232</Interface>
+        <InstallationDate>2000-03-01</InstallationDate>
+        </Equipment>
+    </UPOSStat>
+    ```
 
     If the application requests a statistic name that the device does not support, the `<Parameter>` entry will be returned with an empty `<Value>`. For example:
 
-    ```
-          <Parameter>
-             <Name>RequestedStatistic</Name>
-             <Value></Value>
-          </Parameter>
+    ```xml
+    <Parameter>
+        <Name>RequestedStatistic</Name>
+        <Value></Value>
+    </Parameter>
     ```
 
     All statistics that the device collects that are manufacturer specific and not defined in the schema will be returned in a `<ManufacturerSpecific>` tag instead of a `<Parameter>` tag. For example:
 
-    ```
-          <ManufacturerSpecific>
-             <Name>TheAnswer</Name>
-             <Value>42</Value>
-          </ManufacturerSpecific>
+    ```xml
+    <ManufacturerSpecific>
+        <Name>TheAnswer</Name>
+        <Value>42</Value>
+    </ManufacturerSpecific>
     ```
 
     When an application requests all statistics from the device, the device returns a `<Parameter>` entry for every defined statistic in the device category. The device category is defined by the version of the XML schema specified by the **version** attribute in the `<UPOSStat>` tag. If the device does not record any statistics, the `<Value>` tag will be empty.
@@ -79,8 +81,8 @@ Statistics handlers may be assigned to any of the standard statistics defined by
 
 The following code example demonstrates how to enable, handle, and retrieve statistics data from an MSR device.
 
-```
-                    // File FORM1.CS
+```csharp
+// File FORM1.CS
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -318,8 +320,8 @@ namespace Statistics
 }
 ```
 
-```
-                    // File FORM1.DESIGNER.CS
+```csharp
+// File FORM1.DESIGNER.CS
 namespace Statistics
 {
     partial class SampleStatistics
@@ -463,8 +465,8 @@ namespace Statistics
 }
 ```
 
-```
-                    // File STATISTICSSO.CS
+```csharp
+// File STATISTICSSO.CS
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -57,47 +57,49 @@ The following table provides a mapping between the UnifiedPOS standard error cod
 
 The following code example demonstrates how MSR handles POS exceptions and uses the **ErrorCodes** contained in those exceptions to gather information about them.
 
-    // Create a new instance of the MSR and opens the device.
-    msr = (Msr)explorer.CreateInstance(msrinfo);
-    msr.Open();
+```csharp
+// Create a new instance of the MSR and opens the device.
+msr = (Msr)explorer.CreateInstance(msrinfo);
+msr.Open();
 
-    // Try to enable the device without first claiming it.
-    // This will throw a PosControlException which, through
-    // its ErrorCode, will yield information about the exception.
-    try
-    {
-       msr.DeviceEnabled = true;
-    }
-    catch (PosControlException e)
-    {
+// Try to enable the device without first claiming it.
+// This will throw a PosControlException which, through
+// its ErrorCode, will yield information about the exception.
+try
+{
+   msr.DeviceEnabled = true;
+}
+catch (PosControlException e)
+{
 
-       // Examine the ErrorCode to determine the cause of the error.
-       if (e.ErrorCode == ErrorCode.NoHardware)
-       {
-          Console.WriteLine("The POS device is not connected ");
-          Console.WriteLine("to the system or is not turned on.");
-       }
-       if (e.ErrorCode == ErrorCode.Timeout)
-       {
-          Console.WriteLine("The Service Object timed out
-                waiting for a response from the POS device.");
-       }
+   // Examine the ErrorCode to determine the cause of the error.
+   if (e.ErrorCode == ErrorCode.NoHardware)
+   {
+      Console.WriteLine("The POS device is not connected ");
+      Console.WriteLine("to the system or is not turned on.");
+   }
+   if (e.ErrorCode == ErrorCode.Timeout)
+   {
+      Console.WriteLine("The Service Object timed out
+            waiting for a response from the POS device.");
+   }
 
-       // The example has not claimed the MSR, which is an
-       // exclusive-access device, before trying to enable
-       // it. This will throw the PosControlException
-       // and trigger the following conditional block.
-       // Once triggered, the MSR will be claimed and enabled.
-       if (e.ErrorCode == ErrorCode.NotClaimed)
-       {
-          Console.WriteLine("The POS application attempted to access ");
-          Console.WriteLine("an exclusive-use device that must be ");
-          Console.WriteLine("claimed before the method or property ");
-          Console.WriteLine("set action can be used.")
-          msr.Claim(1000);
-          msr.DeviceEnabled = true;
-       }
-    }
+   // The example has not claimed the MSR, which is an
+   // exclusive-access device, before trying to enable
+   // it. This will throw the PosControlException
+   // and trigger the following conditional block.
+   // Once triggered, the MSR will be claimed and enabled.
+   if (e.ErrorCode == ErrorCode.NotClaimed)
+   {
+      Console.WriteLine("The POS application attempted to access ");
+      Console.WriteLine("an exclusive-use device that must be ");
+      Console.WriteLine("claimed before the method or property ");
+      Console.WriteLine("set action can be used.")
+      msr.Claim(1000);
+      msr.DeviceEnabled = true;
+   }
+}
+```
 
 ## See Also
 

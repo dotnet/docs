@@ -15,11 +15,11 @@ This section lists the features that a **LineDisplay** Service Object may suppor
 
 The capability properties are implemented as read-only in order to prevent the application from changing their values. This means, too, that they cannot be set directly by the Service Object. Instead, **LineDisplayBase** has a protected property, **Properties**, which returns a [LineDisplayProperties](aa460573\(v=winembedded.11\).md) object. This class provides public equivalents for all capability properties. For example, in order to advertise that it supports blinking, a Service Object would write:
 
-    Properties.CapBlink = true;
+`Properties.CapBlink = true;`
 
 And not:
 
-    CapBlink = true;
+`CapBlink = true;`
 
 ## Marquee-like Scrolling of the Window
 
@@ -27,7 +27,7 @@ The Service Object may support either horizontal or vertical marquees. If horizo
 
 Thereafter, applications and Service Objects may use the following to set or get the marquee type:
 
-    DisplayMarqueeType MaqueeType {get, set; }
+`DisplayMarqueeType MaqueeType {get, set; }`
 
 ## Inter-Character Wait
 
@@ -35,7 +35,7 @@ A line display device may have the ability to wait for a specified period of tim
 
 Thereafter, applications and Service Objects may use the following to set or get the inter-character wait time:
 
-    int InterCharacterWait { get; set; }
+`int InterCharacterWait { get; set; }`
 
 ## Blinking Text
 
@@ -49,7 +49,7 @@ A line display device may support character-level or device-level blinking at ad
 
 Thereafter, applications and Service Objects may use the following to set or get the blink rate:
 
-    int BlinkRate {get; set; }
+`int BlinkRate {get; set; }`
 
 ## Reverse Video
 
@@ -79,7 +79,7 @@ All **LineDisplay** Service Objects support two brightness levels, normal and bl
 
 Thereafter, applications and Service Objects may use the following to set or get the device brightness:
 
-    int DeviceBrightness {get; set; }
+`int DeviceBrightness {get; set; }`
 
 ## Cursor Attributes
 
@@ -146,7 +146,7 @@ A Service Object should set the **Properties.CapCharacterSet** property with the
 
 Thereafter, applications and Service Objects may use the following to set or get the character set:
 
-    int CharacterSet { get; set; }
+`int CharacterSet { get; set; }`
 
 ## See Also
 

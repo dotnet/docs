@@ -38,45 +38,47 @@ Because a Scanner device can deliver data to the system at any time, a Scanner S
 
 As soon as input is received from the device, the Service Object queues the appropriate event. You can do this by writing a method, such as the one in the sample in this topic that would be called from the reader thread of the Service Object.
 
-    // A Service Object may implement a method such as this one to
-    // be called from the reader thread of the Service Object.
-    void OnDataScanned(byte[] data)
+```csharp
+// A Service Object may implement a method such as this one to
+// be called from the reader thread of the Service Object.
+void OnDataScanned(byte[] data)
+{
+    // Ignore input if process in the Error state. There is no
+    // need to send an ErrorEvent to the application, because it has
+    // already been notified by this point.
+    if (State == ControlState.Error)
     {
-        // Ignore input if process in the Error state. There is no
-        // need to send an ErrorEvent to the application, because it has
-        // already been notified by this point.
-        if (State == ControlState.Error)
-        {
-            return;
-        }
-
-        // Make sure that the incoming buffer is large enough to contain
-        // at least the header and type data.
-        if ((int)data[1] < 5)
-        {
-            // By calling FailedRead, you are queueing an
-            // ErrorEvent for eventual delivery to the application.
-            FailedScan();
-        }
-        else
-        {
-            // The buffer received from the device will be longer
-            // than we need. Therefore, trim it down. Allocate space for
-            // the number of bytes contained in data[1], plus one
-            // more for the first byte in the buffer.
-            byte[] b = new byte[(int)data[1] + 1];
-
-            // Copy the data into a new buffer.
-            for (int i = 0; i <= (int)data[1]; i++)
-            {
-                b[i] = data[i];
-            }
-
-            // By calling GoodScan, you are queueing a DataEvent
-            // which will delivered to the application when it is suitable.
-            GoodScan(b);
-        }
+        return;
     }
+
+    // Make sure that the incoming buffer is large enough to contain
+    // at least the header and type data.
+    if ((int)data[1] < 5)
+    {
+        // By calling FailedRead, you are queueing an
+        // ErrorEvent for eventual delivery to the application.
+        FailedScan();
+    }
+    else
+    {
+        // The buffer received from the device will be longer
+        // than we need. Therefore, trim it down. Allocate space for
+        // the number of bytes contained in data[1], plus one
+        // more for the first byte in the buffer.
+        byte[] b = new byte[(int)data[1] + 1];
+
+        // Copy the data into a new buffer.
+        for (int i = 0; i <= (int)data[1]; i++)
+        {
+            b[i] = data[i];
+        }
+
+        // By calling GoodScan, you are queueing a DataEvent
+        // which will delivered to the application when it is suitable.
+        GoodScan(b);
+    }
+}
+```
 
 This sample cannot be compiled on its own, but may be inserted into a complete scanner Service Object implementation.
 

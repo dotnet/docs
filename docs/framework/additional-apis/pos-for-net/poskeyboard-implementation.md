@@ -71,282 +71,284 @@ This sample Service Object can be run in conjunction with the test application p
 
 This sample demonstrates how to develop a simple **PosKeyboard** Service Object. It supports a separate reader thread to send **DataEvents** asynchronously to the application. Once compiled, you can execute the Service Object in conjunction with the test application included with the POS for .NET SDK.
 
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using System.Threading;
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
 
-    using Microsoft.PointOfService;
-    using Microsoft.PointOfService.BaseServiceObjects;
+using Microsoft.PointOfService;
+using Microsoft.PointOfService.BaseServiceObjects;
 
-    [assembly: PosAssembly("Service Object Contractors, Inc.")]
+[assembly: PosAssembly("Service Object Contractors, Inc.")]
 
-    namespace SOSamples.Keyboard
+namespace SOSamples.Keyboard
+{
+    [ServiceObject(
+            DeviceType.PosKeyboard,
+            "SamplePosKeyboard",
+            "Sample PosKeyboard Service Object",
+            1,
+            9)]
+
+    public class SampleKeyboard : PosKeyboardBase
     {
-        [ServiceObject(
-              DeviceType.PosKeyboard,
-              "SamplePosKeyboard",
-              "Sample PosKeyboard Service Object",
-              1,
-              9)]
+        KeyboardThreadingObject ReadThread = null;
 
-        public class SampleKeyboard : PosKeyboardBase
+        public SampleKeyboard()
         {
-            KeyboardThreadingObject ReadThread = null;
+            // DevicePath must be set before Open() is called.
+            // In the case of Play and Plug hardware, the
+            // POS for .NET Base class will set this value.
+            DevicePath = "Sample Keyboard";
 
-            public SampleKeyboard()
+            // NOTE: You can test the power notification events
+            // sent from this Service Object by selecting the
+            // "Power Notify" check box.
+
+            // Let the application know advanced power
+            // reporting is supported.
+            Properties.CapPowerReporting = PowerReporting.Advanced;
+            Properties.CapKeyUp = false;
+        }
+
+        ~SampleKeyboard()
+        {
+            // Code added from previous sections to terminate
+            // the read thread started by the thread-helper
+            // object.
+            if (ReadThread != null)
             {
-                // DevicePath must be set before Open() is called.
-                // In the case of Play and Plug hardware, the
-                // POS for .NET Base class will set this value.
-                DevicePath = "Sample Keyboard";
-
-                // NOTE: You can test the power notification events
-                // sent from this Service Object by selecting the
-                // "Power Notify" check box.
-
-                // Let the application know advanced power
-                // reporting is supported.
-                Properties.CapPowerReporting = PowerReporting.Advanced;
-                Properties.CapKeyUp = false;
+                ReadThread.CloseThread();
             }
 
-            ~SampleKeyboard()
+            Dispose(false);
+        }
+
+        // Expose the protected KeyDown() method so that it can be
+        // called from our threading helper.
+        public void SendKey(int key)
+        {
+            KeyDown(key);
+        }
+
+        // Expose the protected PowerState property so it can be
+        // changed from the threading helper.
+        public void ChangePowerState(PowerState state)
+        {
+            Properties.PowerState = state;
+        }
+
+        #region Override Virtual PosCommon Members
+        public override void Open()
+        {
+            base.Open();
+
+            // Create the reader-thread object.
+            ReadThread = new KeyboardThreadingObject(this);
+        }
+
+        public override bool DeviceEnabled
+        {
+            get
             {
-                // Code added from previous sections to terminate
-                // the read thread started by the thread-helper
-                // object.
-                if (ReadThread != null)
+                return base.DeviceEnabled;
+            }
+            set
+            {
+                if (value != base.DeviceEnabled)
                 {
-                    ReadThread.CloseThread();
-                }
+                    base.DeviceEnabled = value;
 
-                Dispose(false);
-            }
-
-            // Expose the protected KeyDown() method so that it can be
-            // called from our threading helper.
-            public void SendKey(int key)
-            {
-                KeyDown(key);
-            }
-
-            // Expose the protected PowerState property so it can be
-            // changed from the threading helper.
-            public void ChangePowerState(PowerState state)
-            {
-                Properties.PowerState = state;
-            }
-
-            #region Override Virtual PosCommon Members
-            public override void Open()
-            {
-                base.Open();
-
-                // Create the reader-thread object.
-                ReadThread = new KeyboardThreadingObject(this);
-            }
-
-            public override bool DeviceEnabled
-            {
-                get
-                {
-                    return base.DeviceEnabled;
-                }
-                set
-                {
-                    if (value != base.DeviceEnabled)
+                    if (value == false)
                     {
-                        base.DeviceEnabled = value;
-
-                        if (value == false)
+                        // Stop the reader thread when the device
+                        // is disabled.
+                        ReadThread.CloseThread();
+                    }
+                    else
+                    {
+                        try
                         {
-                            // Stop the reader thread when the device
-                            // is disabled.
-                            ReadThread.CloseThread();
+                            // By enabling the device, start the
+                            // reader thread.
+                            ReadThread.OpenThread();
                         }
-                        else
+                        catch (Exception e)
                         {
-                            try
-                            {
-                                // By enabling the device, start the
-                                // reader thread.
-                                ReadThread.OpenThread();
-                            }
-                            catch (Exception e)
-                            {
-                                base.DeviceEnabled = false;
+                            base.DeviceEnabled = false;
 
-                                if (e is PosControlException)
-                                    throw;
+                            if (e is PosControlException)
+                                throw;
 
-                                throw new PosControlException(
-                                        "Unable to Enable Device",
-                                        ErrorCode.Failure, e);
-                            }
+                            throw new PosControlException(
+                                    "Unable to Enable Device",
+                                    ErrorCode.Failure, e);
                         }
                     }
                 }
             }
-            #endregion Override Virtual PosCommon Members
+        }
+        #endregion Override Virtual PosCommon Members
 
-            #region Implement Abstract PosCommon Members
-            private string MyHealthText = "";
+        #region Implement Abstract PosCommon Members
+        private string MyHealthText = "";
 
-            // PosCommon.CheckHealthText.
-            public override string CheckHealthText
+        // PosCommon.CheckHealthText.
+        public override string CheckHealthText
+        {
+            get
             {
-                get
-                {
-                    // VerifyState(mustBeClaimed,
-                    // mustBeEnabled).
-                    VerifyState(false, false);
-                    return MyHealthText;
-                }
-            }
-
-            //  PosCommon.CheckHealth.
-            public override string CheckHealth(
-                            HealthCheckLevel level)
-            {
-                // Verify that device is open, claimed and enabled.
-                VerifyState(true, true);
-
-                // Your code here:
-                // Check the health of the device and return a
-                // descriptive string.
-
-                // Cache result in the CheckHealthText property.
-                MyHealthText = "Ok";
+                // VerifyState(mustBeClaimed,
+                // mustBeEnabled).
+                VerifyState(false, false);
                 return MyHealthText;
             }
-
-            // PosCommon.DirectIOData.
-            public override DirectIOData DirectIO(
-                                    int command,
-                                    int data,
-                                    object obj)
-            {
-                // Verify that the device is open.
-                VerifyState(false, false);
-
-                return new DirectIOData(data, obj);
-            }
-            #endregion  Implement Abstract PosCommon Members
         }
 
-        #region Thread Helper Class
-        public class KeyboardThreadingObject :
-            ServiceObjectThreadHelper, IDisposable
+        //  PosCommon.CheckHealth.
+        public override string CheckHealth(
+                        HealthCheckLevel level)
         {
-            // This is a helper class which will depend on
-            // being able to call back into the actual Service
-            // Object to pass along data. However, you cannot
-            // keep a strong reference to the Service Object,
-            // since that may prevent clean disposal, leaving
-            // hardware resources unavailable to other processes.
-            // Therefore, you create a weak reference. From this
-            // reference, you can get a temporary strong reference,
-            // which you can act on and then release.
-            WeakReference ServiceObjectReference;
+            // Verify that device is open, claimed and enabled.
+            VerifyState(true, true);
 
-            // The name of the Service Object.
-            string ObjectName;
+            // Your code here:
+            // Check the health of the device and return a
+            // descriptive string.
 
-            public KeyboardThreadingObject(SampleKeyboard so)
+            // Cache result in the CheckHealthText property.
+            MyHealthText = "Ok";
+            return MyHealthText;
+        }
+
+        // PosCommon.DirectIOData.
+        public override DirectIOData DirectIO(
+                                int command,
+                                int data,
+                                object obj)
+        {
+            // Verify that the device is open.
+            VerifyState(false, false);
+
+            return new DirectIOData(data, obj);
+        }
+        #endregion  Implement Abstract PosCommon Members
+    }
+
+    #region Thread Helper Class
+    public class KeyboardThreadingObject :
+        ServiceObjectThreadHelper, IDisposable
+    {
+        // This is a helper class which will depend on
+        // being able to call back into the actual Service
+        // Object to pass along data. However, you cannot
+        // keep a strong reference to the Service Object,
+        // since that may prevent clean disposal, leaving
+        // hardware resources unavailable to other processes.
+        // Therefore, you create a weak reference. From this
+        // reference, you can get a temporary strong reference,
+        // which you can act on and then release.
+        WeakReference ServiceObjectReference;
+
+        // The name of the Service Object.
+        string ObjectName;
+
+        public KeyboardThreadingObject(SampleKeyboard so)
+        {
+            ObjectName = GetType().Name;
+            ServiceObjectReference = new WeakReference(so);
+        }
+
+        // This method will be called during initialization.
+        public override void ServiceObjectThreadOpen()
+        {
+            Logger.Info(ObjectName, "Keyboard Thread Open");
+        }
+
+        // This method will be called curing shutdown.
+        public override void ServiceObjectThreadClose()
+        {
+            Logger.Info(ObjectName, "Keyboard Thread Open");
+        }
+
+        // Your code used to monitor your device for input should
+        // go here. The implementation below generates simulated
+        // input as an example.
+        public override void ServiceObjectThreadProcedure(
+                            AutoResetEvent ThreadStopEvent)
+        {
+            Logger.Info(ObjectName,
+                            "Keyboard Thread Procedure Entered");
+            int KeyValue = (int)'a';
+
+            while (true)
             {
-                ObjectName = GetType().Name;
-                ServiceObjectReference = new WeakReference(so);
-            }
-
-            // This method will be called during initialization.
-            public override void ServiceObjectThreadOpen()
-            {
-                Logger.Info(ObjectName, "Keyboard Thread Open");
-            }
-
-            // This method will be called curing shutdown.
-            public override void ServiceObjectThreadClose()
-            {
-                Logger.Info(ObjectName, "Keyboard Thread Open");
-            }
-
-            // Your code used to monitor your device for input should
-            // go here. The implementation below generates simulated
-            // input as an example.
-            public override void ServiceObjectThreadProcedure(
-                                AutoResetEvent ThreadStopEvent)
-            {
-                Logger.Info(ObjectName,
-                                "Keyboard Thread Procedure Entered");
-                int KeyValue = (int)'a';
-
-                while (true)
+                // When this method is called by the
+                // ServiceObjectThreadHelper, it is obligated to
+                // exit when the event ThreadStopEvent has been
+                // set.
+                if (ThreadStopEvent.WaitOne(2000, false))
                 {
-                    // When this method is called by the
-                    // ServiceObjectThreadHelper, it is obligated to
-                    // exit when the event ThreadStopEvent has been
-                    // set.
-                    if (ThreadStopEvent.WaitOne(2000, false))
+                    break;
+                }
+
+                if (KeyValue <= (int) 'z')
+                {
+                    Logger.Info(ObjectName, "Reader Thread cycling");
+
+                    // Try to get a strong reference to the Service
+                    // Object using the weak reference saved when
+                    // this helper object was created.
+                    SampleKeyboard Keyboard =
+                        ServiceObjectReference.Target
+                        as SampleKeyboard;
+
+                    // If this fails, that means the Service Object
+                    // has already been disposed of - exit the thread.
+                    if (Keyboard == null)
                     {
                         break;
                     }
 
-                    if (KeyValue <= (int) 'z')
+                    if (Keyboard.DataEventEnabled == true)
                     {
-                        Logger.Info(ObjectName, "Reader Thread cycling");
+                        // Call a method implemented in our Keyboard
+                        // class to queue the key stroke.
+                        Keyboard.SendKey(KeyValue);
 
-                        // Try to get a strong reference to the Service
-                        // Object using the weak reference saved when
-                        // this helper object was created.
-                        SampleKeyboard Keyboard =
-                            ServiceObjectReference.Target
-                            as SampleKeyboard;
-
-                        // If this fails, that means the Service Object
-                        // has already been disposed of - exit the thread.
-                        if (Keyboard == null)
+                        // Simulate input by moving through the
+                        // alphabet, sending one character at a time.
+                        KeyValue++;
+                        if (KeyValue >= (int)'z')
                         {
+                            // Once you run out of input, simulate a
+                            // power state change. Setting the SO's
+                            // PowerState property to
+                            // PowerState.Offline will cause a
+                            // StatusUpdateEvent to be sent to the
+                            // application.
+                            Keyboard.ChangePowerState(
+                                            PowerState.Offline);
+
+                            // Release the strong reference.
+                            Keyboard = null;
+
+                            // There is no more work, so exit the
+                            // loop.
                             break;
                         }
-
-                        if (Keyboard.DataEventEnabled == true)
-                        {
-                            // Call a method implemented in our Keyboard
-                            // class to queue the key stroke.
-                            Keyboard.SendKey(KeyValue);
-
-                            // Simulate input by moving through the
-                            // alphabet, sending one character at a time.
-                            KeyValue++;
-                            if (KeyValue >= (int)'z')
-                            {
-                                // Once you run out of input, simulate a
-                                // power state change. Setting the SO's
-                                // PowerState property to
-                                // PowerState.Offline will cause a
-                                // StatusUpdateEvent to be sent to the
-                                // application.
-                                Keyboard.ChangePowerState(
-                                                PowerState.Offline);
-
-                                // Release the strong reference.
-                                Keyboard = null;
-
-                                // There is no more work, so exit the
-                                // loop.
-                                break;
-                            }
-                        }
-
-                        // Release the strong reference.
-                        Keyboard = null;
                     }
+
+                    // Release the strong reference.
+                    Keyboard = null;
                 }
             }
         }
-        #endregion Thread Helper Class
     }
+    #endregion Thread Helper Class
+}
+```
 
 ## Compiling the Code
 

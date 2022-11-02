@@ -37,10 +37,12 @@ Since most processing is handled by the **Base** class code, the Service Object'
 
 In many cases, the state of the device at the time of the original call is required by the **Impl** method. In these situations, the **Base** class code saves the current device state along with the output request. The device state is later sent as an argument to the **Impl** method. For example, the definition for **PrintNormalImpl** is:
 
-    protected override PrintResults PrintNormalImpl(
-        PrinterStation station,
-        PrinterState printerState,
-        string data);
+```csharp
+protected override PrintResults PrintNormalImpl(
+    PrinterStation station,
+    PrinterState printerState,
+    string data);
+```
 
 The argument *printerState* above is specific to the **Impl** method and does not exist in the [PrintNormal](ms843075\(v=winembedded.11\).md) definition.
 
@@ -50,34 +52,36 @@ The return value of **Impl** functions also differs from their calling methods. 
 
 The following example demonstrates how these methods are implemented in Service Object code.
 
-    protected override PrintResults PrintNormalImpl(
-            PrinterStation station,
-            PrinterState printerState,
-            string data)
+```csharp
+protected override PrintResults PrintNormalImpl(
+        PrinterStation station,
+        PrinterState printerState,
+        string data)
+{
+    // First, create a PrintResults object to hold return values.
+    PrintResults pr = new PrintResults();
+
+    // Now print, depending on the station.
+    if (station == PrinterStation.Receipt)
     {
-        // First, create a PrintResults object to hold return values.
-        PrintResults pr = new PrintResults();
+        // Your code goes here.
 
-        // Now print, depending on the station.
-        if (station == PrinterStation.Receipt)
-        {
-            // Your code goes here.
-
-            // Update statistics to be returned to the caller.
-            pr.ReceiptLinePrintedCount = 1;
-            pr.ReceiptCharacterPrintedCount = data.Length;
-        }
-        else if (station == PrinterStation.Slip)
-        {
-            // Your code goes here.
-
-            // Update statistics to be returned to the caller.
-            pr.SlipLinePrintedCount = 1;
-            pr.SlipCharacterPrintedCount = data.Length;
-        }
-
-        return pr;
+        // Update statistics to be returned to the caller.
+        pr.ReceiptLinePrintedCount = 1;
+        pr.ReceiptCharacterPrintedCount = data.Length;
     }
+    else if (station == PrinterStation.Slip)
+    {
+        // Your code goes here.
+
+        // Update statistics to be returned to the caller.
+        pr.SlipLinePrintedCount = 1;
+        pr.SlipCharacterPrintedCount = data.Length;
+    }
+
+    return pr;
+}
+```
 
 ## See Also
 

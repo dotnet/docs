@@ -31,114 +31,116 @@ To output to a **PosPrinter** device, an application will most commonly use the 
 
 When an application calls an output method, such as **PrintNormal**, the POS for .NET implementation checks the value of the [AsyncMode](ms861869\(v=winembedded.11\).md) property. If this value is **false**, then the POS for .NET library sends the request to **PrintNormalImpl** immediately and waits for it to return. If the value is **true**, however, then the POS for .NET implementation of **PrintNormal** adds the request to an internally managed queue. While there are items in the queue, a POS for .NET managed thread will send each request, in first-in-first-out (FIFO) order, to the device by calling **PrintNormalImpl**. When **PrintNormalImpl** returns, the library implementation will raise an [OutputCompleteEvent](ms831433\(v=winembedded.11\).md) in the application. In short, the same Service Object code can support both synchronous and asynchronous output without ever needing to know which output mode is being used.
 
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using System.Threading;
-    using Microsoft.PointOfService;
-    using Microsoft.PointOfService.BaseServiceObjects;
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
+using Microsoft.PointOfService;
+using Microsoft.PointOfService.BaseServiceObjects;
 
-    [assembly: PosAssembly("Service Object Contractors, Inc.")]
+[assembly: PosAssembly("Service Object Contractors, Inc.")]
 
-    namespace SOSamples.AsyncOutput
+namespace SOSamples.AsyncOutput
+{
+    [ServiceObject(
+            DeviceType.PosPrinter,
+            "AsyncOutputPrinter",
+            "Sample Async Printer",
+            1,
+            9)]
+
+    public class AsyncOutputSimulator : PosPrinterBase
     {
-        [ServiceObject(
-              DeviceType.PosPrinter,
-              "AsyncOutputPrinter",
-              "Sample Async Printer",
-              1,
-              9)]
-
-        public class AsyncOutputSimulator : PosPrinterBase
+        public AsyncOutputSimulator()
         {
-            public AsyncOutputSimulator()
-            {
-                DevicePath = "Sample Async Printer";
+            DevicePath = "Sample Async Printer";
 
-                // Indicate that the Service Object supports
-                // the receipt printer.
-                Properties.CapRecPresent = true;
-            }
+            // Indicate that the Service Object supports
+            // the receipt printer.
+            Properties.CapRecPresent = true;
+        }
 
-            // Note that this method will be called by the POS for .NET
-            // library code, regardless of whether the print request
-            // is synchronous or asynchronous. The print request
-            // queue is managed completely by POS for .NET so the
-            // Service Object should simply write data to the device
+        // Note that this method will be called by the POS for .NET
+        // library code, regardless of whether the print request
+        // is synchronous or asynchronous. The print request
+        // queue is managed completely by POS for .NET so the
+        // Service Object should simply write data to the device
+        // here.
+        protected override PrintResults PrintNormalImpl(
+                        PrinterStation station,
+                        PrinterState printerState,
+                        string data)
+        {
+            // Your code to print to the actual hardware would go
             // here.
-            protected override PrintResults PrintNormalImpl(
-                            PrinterStation station,
-                            PrinterState printerState,
-                            string data)
+
+            // For demonstration, however, the code simulates
+            // that fulfilling this print request took 4 seconds.
+            Thread.Sleep(4000);
+
+            PrintResults results = new PrintResults();
+            return results;
+        }
+
+        // This method must be implemented by the Service
+        // Object, and should validate the data to be printed,
+        // including any escape sequences. This method should throw
+        // a PosControlException to indicate failure.
+        protected override void ValidateDataImpl(
+                        PrinterStation station,
+                        string data)
+        {
+            // Insert your validation code here.
+            return;
+        }
+
+        #region Implement Abstract PosCommon Members
+        private string MyHealthText = "";
+
+        // PosCommon.CheckHealthText.
+        public override string CheckHealthText
+        {
+            get
             {
-                // Your code to print to the actual hardware would go
-                // here.
-
-                // For demonstration, however, the code simulates
-                // that fulfilling this print request took 4 seconds.
-                Thread.Sleep(4000);
-
-                PrintResults results = new PrintResults();
-                return results;
-            }
-
-            // This method must be implemented by the Service
-            // Object, and should validate the data to be printed,
-            // including any escape sequences. This method should throw
-            // a PosControlException to indicate failure.
-            protected override void ValidateDataImpl(
-                            PrinterStation station,
-                            string data)
-            {
-                // Insert your validation code here.
-                return;
-            }
-
-            #region Implement Abstract PosCommon Members
-            private string MyHealthText = "";
-
-            // PosCommon.CheckHealthText.
-            public override string CheckHealthText
-            {
-                get
-                {
-                    // VerifyState(mustBeClaimed,
-                    // mustBeEnabled).
-                    VerifyState(false, false);
-                    return MyHealthText;
-                }
-            }
-
-            //  PosCommon.CheckHealth.
-            public override string CheckHealth(
-                            HealthCheckLevel level)
-            {
-                // Verify that device is open, claimed, and enabled.
-                VerifyState(true, true);
-
-                // Insert your code here:
-                // check the health of the device and return a
-                // descriptive string.
-
-                // Cache result in the CheckHealthText property.
-                MyHealthText = "Ok";
+                // VerifyState(mustBeClaimed,
+                // mustBeEnabled).
+                VerifyState(false, false);
                 return MyHealthText;
             }
-
-            // PosCommon.DirectIOData.
-            public override DirectIOData DirectIO(
-                                    int command,
-                                    int data,
-                                    object obj)
-            {
-                // Verify that the device is open.
-                VerifyState(false, false);
-
-                return new DirectIOData(data, obj);
-            }
-            #endregion Implement Abstract PosCommon Members
         }
+
+        //  PosCommon.CheckHealth.
+        public override string CheckHealth(
+                        HealthCheckLevel level)
+        {
+            // Verify that device is open, claimed, and enabled.
+            VerifyState(true, true);
+
+            // Insert your code here:
+            // check the health of the device and return a
+            // descriptive string.
+
+            // Cache result in the CheckHealthText property.
+            MyHealthText = "Ok";
+            return MyHealthText;
+        }
+
+        // PosCommon.DirectIOData.
+        public override DirectIOData DirectIO(
+                                int command,
+                                int data,
+                                object obj)
+        {
+            // Verify that the device is open.
+            VerifyState(false, false);
+
+            return new DirectIOData(data, obj);
+        }
+        #endregion Implement Abstract PosCommon Members
     }
+}
+```
 
 The application code in the [Event Handler Sample](event-handler-sample.md) can be compiled and run with this Service Object.
 

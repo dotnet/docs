@@ -26,7 +26,7 @@ The **POSfor.NET** registry key has three subkeys:
 
 ## POSfor.NET\\ControlAssemblies Key
 
-This key may contain any number of values of type REG\_SZ, each of which contains the name of a directory. [PosExplorer](ms884843\(v=winembedded.11\).md) will iterate through the entire list of values, searching each directory. Therefore, the names of the values are not important.
+This key may contain any number of values of type REG\_SZ, each of which contains the name of a directory. <xref:Microsoft.PointOfService.PosExplorer> will iterate through the entire list of values, searching each directory. Therefore, the names of the values are not important.
 
 These values will need to be modified during system configuration so that they point to the locations appropriate for the specific requirements of the installation.
 

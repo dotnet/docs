@@ -15,7 +15,7 @@ You should not modify this file directly. Doing so may lead to unexpected behavi
 
 ## API Support
 
-You may also access configuration properties with the following methods in [PosCommon](ms884820\(v=winembedded.11\).md):
+You may also access configuration properties with the following methods in <xref:Microsoft.PointOfService.PosCommon>:
 
 - [GetConfigurationProperty](ms843028\(v=winembedded.11\).md)
 - [SetConfigurationProperty](ms843040\(v=winembedded.11\).md)

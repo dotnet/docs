@@ -9,7 +9,7 @@ ms.custom: pos-restored-from-archive
 
 POS for .NET fully supports Windows Embedded Plug and Play technology. To utilize this feature, Service Object developers can simply add one or more [HardwareId](aa460209\(v=winembedded.11\).md) attributes to their code, or include the hardware reference in a [Plug and Play XML Configuration](plug-and-play-xml-configuration.md) file.
 
-Adding this attribute to a Service Object helps application developers, who will now know that when they use [PosExplorer](ms884843\(v=winembedded.11\).md) to get a list of Service Objects, any Service Object in that list will be associated with a functioning POS device. The application benefits directly from this association by greater reliability and ease of use. We recommend that Service Objects support the Plug and Play feature whenever possible.
+Adding this attribute to a Service Object helps application developers, who will now know that when they use <xref:Microsoft.PointOfService.PosExplorer> to get a list of Service Objects, any Service Object in that list will be associated with a functioning POS device. The application benefits directly from this association by greater reliability and ease of use. We recommend that Service Objects support the Plug and Play feature whenever possible.
 
 ## Plug and Play Behavior
 
@@ -75,10 +75,10 @@ void explorer_DeviceAddedEvent(object sender, DeviceChangedEventArgs e)
 
 #### Reference
 
-[PosExplorer](ms884843\(v=winembedded.11\).md)
-[HardwareIdAttribute](ms884523\(v=winembedded.11\).md)
-[PosAssemblyAttribute](ms884816\(v=winembedded.11\).md)
-[ServiceObjectAttribute](aa460884\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosExplorer>
+<xref:Microsoft.PointOfService.HardwareIdAttribute>
+<xref:Microsoft.PointOfService.PosAssemblyAttribute>
+<xref:Microsoft.PointOfService.ServiceObjectAttribute>
 
 #### Concepts
 

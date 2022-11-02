@@ -17,7 +17,7 @@ This sample demonstrates which methods must be implemented in a **PinPad** Servi
 
 3. Choose an appropriate namespace name for your project.
 
-4. Create a Service Object class derived from [PinPadBase](aa460647\(v=winembedded.11\).md).
+4. Create a Service Object class derived from <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase>.
 
 5. Add the **ServiceObject** attribute to your Service Object class, using the **DeviceType.PinPad** value as your device type.
 

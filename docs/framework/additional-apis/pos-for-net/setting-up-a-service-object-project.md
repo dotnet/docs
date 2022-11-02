@@ -29,7 +29,7 @@ To begin programming your Service Object, you first need to create a new **Class
 
 ## To add the PosAssembly global attribute to your assembly
 
-1. The [PosExplorer](ms884843\(v=winembedded.11\).md) requires that Service Object assemblies contain the [PosAssemblyAttribute](ms884816\(v=winembedded.11\).md) global attribute.
+1. The <xref:Microsoft.PointOfService.PosExplorer> requires that Service Object assemblies contain the <xref:Microsoft.PointOfService.PosAssemblyAttribute> global attribute.
 
 2. From the Solution Explorer window, open and edit the file **AssemblyInfo.cs**.
 

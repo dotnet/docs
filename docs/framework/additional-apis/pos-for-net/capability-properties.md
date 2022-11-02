@@ -11,7 +11,7 @@ Certain properties cannot be set directly within a Service Object. This comes up
 
 ## BaseClass Properties
 
-Microsoft Point of Service for .NET (POS for .NET) **Base** classes have a protected property, **Properties**, for this purpose. This property returns a helper class which has writable versions of the read-only properties implemented in the **Base** class. For example, [PinPadBase](aa460647\(v=winembedded.11\).md) has a property called [Properties](aa459985\(v=winembedded.11\).md) that returns an object of type [PinPadProperties](aa460655\(v=winembedded.11\).md). And this object contains properties used to set various **PinPad**-specific capability properties, such as [CapDisplay](ms860744\(v=winembedded.11\).md).
+Microsoft Point of Service for .NET (POS for .NET) **Base** classes have a protected property, **Properties**, for this purpose. This property returns a helper class which has writable versions of the read-only properties implemented in the **Base** class. For example, <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase> has a property called <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase.Properties> that returns an object of type <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadProperties>. And this object contains properties used to set various **PinPad**-specific capability properties, such as <xref:Microsoft.PointOfService.Scale.CapDisplay>.
 
 ## PosCommon Properties
 
@@ -30,5 +30,5 @@ The Service Object developer should be aware of what the POS for .NET framework 
 
 #### Reference
 
-[PinPadProperties](aa460655\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.BaseServiceObjects.PinPadProperties>
 [StatusUpdateEventHandler](aa460916\(v=winembedded.11\).md)

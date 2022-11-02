@@ -7,31 +7,31 @@ ms.custom: pos-restored-from-archive
 
 # PosCommon Information for Service Object Developers (POS for .NET v1.12 SDK Documentation)
 
-At the base of the POS for .NET Server Object class tree (**Interface**, **Basic**, **Base**) is [PosCommon](ms884820\(v=winembedded.11\).md). This class is a direct implementation of the "Common Properties, Methods, and Events" chapter in the UPOS specification.
+At the base of the POS for .NET Server Object class tree (**Interface**, **Basic**, **Base**) is <xref:Microsoft.PointOfService.PosCommon>. This class is a direct implementation of the "Common Properties, Methods, and Events" chapter in the UPOS specification.
 
 Each POS for .NET **Basic** class overrides or implements **PosCommon** properties and methods which are of particular importance to a Service Object developer. This topic provides information about these methods and properties.
 
 ## CapPowerReporting Property
 
-Once POS for .NET has successfully opened a device, it tries to retrieve the current value of the [CapPowerReporting](ms861089\(v=winembedded.11\).md) property. The [PowerReporting](aa460845\(v=winembedded.11\).md) class is initialized to **None**, indicating that the Service Object is not able to provide power reporting. If, however, the Service Object's device does support power reporting, the Service Object may set **PowerReporting** to **Standard** or **Advanced** in the Service Object's method.
+Once POS for .NET has successfully opened a device, it tries to retrieve the current value of the <xref:microsoft.pointofservice.poscommon.cappowerreporting> property. The <xref:microsoft.pointofservice.powerreporting> class is initialized to **None**, indicating that the Service Object is not able to provide power reporting. If, however, the Service Object's device does support power reporting, the Service Object may set **PowerReporting** to **Standard** or **Advanced** in the Service Object's method.
 
 ## CapStatisticsReporting Property
 
-POS for .NET verifies that the device has been opened and then retrieves the current value of the [CapStatisticsReporting](ms861090\(v=winembedded.11\).md) property.
+POS for .NET verifies that the device has been opened and then retrieves the current value of the <xref:microsoft.pointofservice.poscommon.capstatisticsreporting> property.
 
 When statistics are created for the device, POS for .NET sets **CapStatisticsReporting** to **true**.
 
 ## CapUpdateStatistics Property
 
-POS for .NET verifies that the device has been opened and then retrieves the current value of the [CapUpdateStatistics](ms861092\(v=winembedded.11\).md) property.
+POS for .NET verifies that the device has been opened and then retrieves the current value of the <xref:microsoft.pointofservice.poscommon.capupdatestatistics> property.
 
 When statistics are created for the device, and if those statistics can be reset or updated, then POS for .NET sets **CapUpdateStatistics** to **true**.
 
 ## Claimed Property
 
-POS for .NET verifies that the device has been opened, and then retrieves the current value of the [Claimed](ms861094\(v=winembedded.11\).md) property.
+POS for .NET verifies that the device has been opened, and then retrieves the current value of the <xref:microsoft.pointofservice.poscommon.claimed> property.
 
-**Claimed** is initialized to **false**. **Claimed** should be set to **true** when the application calls the [Claim](ms843023\(v=winembedded.11\).md) method, then set back to **false** when the application calls the [Release](ms843031\(v=winembedded.11\).md) method.
+**Claimed** is initialized to **false**. **Claimed** should be set to **true** when the application calls the <xref:microsoft.pointofservice.poscommon.claim> method, then set back to **false** when the application calls the <xref:microsoft.pointofservice.poscommon.release> method.
 
 ## DeviceDescription Property
 
@@ -215,7 +215,7 @@ POS for .NET verifies that the application has opened, claimed, and enabled the 
 
 #### Reference
 
-[PosCommon](ms884820\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosCommon>
 
 #### Concepts
 

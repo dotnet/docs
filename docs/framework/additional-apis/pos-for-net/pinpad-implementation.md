@@ -29,7 +29,7 @@ A **PinPad** Service Object may also have the following additional capabilities:
 
 ## Reference
 
-- [PinPadBase](aa460647\(v=winembedded.11\).md)
+- <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase>
     Provides the Microsoft Point of Service for .NET (POS for .NET) reference for the **PinPadBase** class.
 
 - [Developing a Custom Service Object](developing-a-custom-service-object.md)

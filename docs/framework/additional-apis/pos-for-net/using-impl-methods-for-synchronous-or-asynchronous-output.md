@@ -19,7 +19,7 @@ By deriving from a POS for .NET **Base** class, the Service Object gets asynchro
 
 ## Base Class Implementation
 
-POS for .NET provides **Base** classes for a subset of POS device types. For each output method in these classes, there is a corresponding method with an **Impl** suffix. The Service Object derived from a **Base** class should override only the **Impl** method and not the corresponding parent method. For example, in a class derived from the POS for .NET **Base** class [PosPrinterBase](aa460669\(v=winembedded.11\).md), the Service Object would provide an implementation for **PrintNormalImpl** and would not override **PrintNormal**.
+POS for .NET provides **Base** classes for a subset of POS device types. For each output method in these classes, there is a corresponding method with an **Impl** suffix. The Service Object derived from a **Base** class should override only the **Impl** method and not the corresponding parent method. For example, in a class derived from the POS for .NET **Base** class <xref:Microsoft.PointOfService.BaseServiceObjects.PosPrinterBase>, the Service Object would provide an implementation for **PrintNormalImpl** and would not override **PrintNormal**.
 
 The POS for .NET **Base** classes implement all output methods and perform the following tasks in order to support the **Impl** method implemented by the Service Object:
 
@@ -44,7 +44,7 @@ protected override PrintResults PrintNormalImpl(
     string data);
 ```
 
-The argument *printerState* above is specific to the **Impl** method and does not exist in the [PrintNormal](ms843075\(v=winembedded.11\).md) definition.
+The argument *printerState* above is specific to the **Impl** method and does not exist in the <xref:microsoft.pointofservice.baseserviceobjects.posprinterbase.printnormal> definition.
 
 The return value of **Impl** functions also differs from their calling methods. For example, note that the **PrintNormalImpl** method returns a class of type [PrintResults](ms881252\(v=winembedded.11\).md). In addition to **ErrorCode**, **ErrorCodeExtended**, **ErrorLevel**, and **ErrorString**, there are a number of additional properties which will be used by the calling method to update statistic counts.
 
@@ -91,7 +91,7 @@ protected override PrintResults PrintNormalImpl(
 
 #### Reference
 
-[PosPrinterBase](aa460669\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.BaseServiceObjects.PosPrinterBase>
 
 #### Concepts
 

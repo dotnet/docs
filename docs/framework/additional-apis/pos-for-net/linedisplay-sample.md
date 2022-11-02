@@ -15,11 +15,11 @@ A **LineDisplay** Service Object may also monitor the device and report power or
 
 1. Add **using** directives for the **Microsoft.PointOfService** and **Microsoft.PointOfService.BaseServiceObject** namespaces.
 
-2. Add the global attribute [PosAssemblyAttribute](ms884816\(v=winembedded.11\).md) so that **PosExplorer** recognizes this as a Microsoft Point of Service for .NET (POS for .NET) assembly.
+2. Add the global attribute <xref:Microsoft.PointOfService.PosAssemblyAttribute> so that **PosExplorer** recognizes this as a Microsoft Point of Service for .NET (POS for .NET) assembly.
 
 3. Create a new class which is derived from **LineDisplayBase**.
 
-4. Add the class-level attribute [ServiceObjectAttribute](aa460884\(v=winembedded.11\).md) to your new class so that **PosExplorer** recognizes it as a Service Object.
+4. Add the class-level attribute <xref:Microsoft.PointOfService.ServiceObjectAttribute> to your new class so that **PosExplorer** recognizes it as a Service Object.
 
 ## To implement abstract LineDisplayBase members
 

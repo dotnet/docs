@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # DeviceInfo Class (POS for .NET v1.14 SDK Documentation)
 
-The [DeviceInfo](ms884041\(v=winembedded.11\).md) class supplies Microsoft Point of Service for .NET (POS for .NET) applications with information about POS devices and the Service Objects associated with them. The [PosExplorer](ms884843\(v=winembedded.11\).md) methods, [GetDevice](ms843054\(v=winembedded.11\).md) and [GetDevices](ms843049\(v=winembedded.11\).md) return instances of **DeviceInfo**.
+The [DeviceInfo](ms884041\(v=winembedded.11\).md) class supplies Microsoft Point of Service for .NET (POS for .NET) applications with information about POS devices and the Service Objects associated with them. The <xref:Microsoft.PointOfService.PosExplorer> methods, [GetDevice](ms843054\(v=winembedded.11\).md) and <xref:Microsoft.PointOfService.PosExplorer.GetDevices> return instances of **DeviceInfo**.
 
 ## DeviceInfo Properties
 

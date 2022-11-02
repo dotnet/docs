@@ -11,7 +11,7 @@ Error handling in Microsoft Point of Service for .NET (POS for .NET) is built on
 
 The **ErrorCode** property of a thrown exception holds information about the cause of the error. Possible values for this property represent the full set of standard Unified Point Of Service (UnifiedPOS) error codes. For more information about the mapping between UnifiedPOS error codes and the POS for .NET **ErrorCode** values, see POS for .NET [Exception Classes](exception-classes.md).
 
-POS for .NET provides four exception classes to help applications better handle errors. These are [PosException](ms884839\(v=winembedded.11\).md), [PosControlException](ms884827\(v=winembedded.11\).md), [PosManagementException](ms884858\(v=winembedded.11\).md), and [PosLibraryException](ms884854\(v=winembedded.11\).md):
+POS for .NET provides four exception classes to help applications better handle errors. These are <xref:Microsoft.PointOfService.PosException>, <xref:Microsoft.PointOfService.PosControlException>, [PosManagementException](ms884858\(v=winembedded.11\).md), and [PosLibraryException](ms884854\(v=winembedded.11\).md):
 
 - **PosException** is an abstract class that holds general exception data. **PosException** fulfills a role similar to that of the **System.Exception** class in the .NET Framework, and is the POS for .NET implementation of the **UposException** class in the UnifiedPOS specification. All other POS for .NET exception classes are derived from **PosException**.
 - **PosControlException** is the standard exception thrown by POS for .NET Service Objects. **PosControlException** contains a [ErrorCode](ms861779\(v=winembedded.11\).md) property which holds information about the cause of the exception.
@@ -46,12 +46,12 @@ Handling errors in POS for .NET follows this general procedure:
 
 #### Reference
 
-[PosException](ms884839\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosException>
 [PosLibraryException](ms884854\(v=winembedded.11\).md)
 [PosManagementException](ms884858\(v=winembedded.11\).md)
-[PosControlException](ms884827\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosControlException>
 [ErrorCode](ms884224\(v=winembedded.11\).md)
-[PosExplorer](ms884843\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosExplorer>
 
 #### Concepts
 

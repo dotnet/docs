@@ -15,7 +15,7 @@ Each **Basic** class includes a constructor that creates an instance of the clas
 
 ## Common Properties and Methods
 
-Each **Basic** class provides overridden [PosCommon](ms884820\(v=winembedded.11\).md) property and method definitions. For each of these properties and methods, the **Basic** class handles state validation—that is, verification that the application has opened, claimed, or enabled the device—and then calls the POS for .NET implementation of that property or method. For more information about the **PosCommon** class, see **PosCommon**.
+Each **Basic** class provides overridden <xref:Microsoft.PointOfService.PosCommon> property and method definitions. For each of these properties and methods, the **Basic** class handles state validation—that is, verification that the application has opened, claimed, or enabled the device—and then calls the POS for .NET implementation of that property or method. For more information about the **PosCommon** class, see **PosCommon**.
 
 The Service Object can use the **CommonProperties** class to update **PosCommon** properties that are designated read-only for the application, or to update those properties without worrying about state validation.
 

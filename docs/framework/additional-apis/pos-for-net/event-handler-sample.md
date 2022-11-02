@@ -45,9 +45,9 @@ This sample code demonstrates several key points:
 
 - Using an **OutputCompleteEvent** event to notify the application that the Service Object has completed an output request.
 - Registering event handlers, including using reflection to do so.
-- Using [PosExplorer](ms884843\(v=winembedded.11\).md) to search for specific Service Objects.
+- Using <xref:Microsoft.PointOfService.PosExplorer> to search for specific Service Objects.
 
-To demonstrate how reflection can be used to discover which events are available on a given object, this code uses the [PosCommon](ms884820\(v=winembedded.11\).md) object returned from [CreateInstance](ms843048\(v=winembedded.11\).md) without first casting it to a **PosPrinter**. In most cases, an application does not need to be generic in that way and so would cast the object as appropriate.
+To demonstrate how reflection can be used to discover which events are available on a given object, this code uses the <xref:Microsoft.PointOfService.PosCommon> object returned from [CreateInstance](ms843048\(v=winembedded.11\).md) without first casting it to a **PosPrinter**. In most cases, an application does not need to be generic in that way and so would cast the object as appropriate.
 
 ```csharp
 // ASYNCAPP.CS

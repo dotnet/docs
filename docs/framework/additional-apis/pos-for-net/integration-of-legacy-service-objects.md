@@ -13,7 +13,7 @@ Microsoft Point of Service for .NET (POS for .NET) supports both .NET-based Serv
 
 #### Concepts
 
-[POS for .NET FAQ](ee406171\(v=winembedded.0\).md)
+[POS for .NET FAQ](pos-for-net-faq.md)
 [What's New in POS for .NET v1.14](whats-new-in-pos-for-net-v114-and-v1141.md)
 
 #### Other Resources

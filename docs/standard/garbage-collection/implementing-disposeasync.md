@@ -117,7 +117,7 @@ For situations where the usage of `ConfigureAwait` is not needed, the `await usi
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingStatementProgram.cs":::
 
-Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
+Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/language-reference/keywords/using-statement.md).
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingDeclarationProgram.cs":::
 

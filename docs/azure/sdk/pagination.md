@@ -9,7 +9,7 @@ author: IEvangelist
 
 # Pagination with the Azure SDK for .NET
 
-In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing large data sets into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous (async) streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams). Async streams are based on the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. The Azure SDK for .NET exposes an implementation of `IAsyncEnumerable<T>` with its `AsyncPageable<T>` class.
+In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing large data sets into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous (async) streams](../../csharp/language-reference/statements/iteration-statements.md#await-foreach). Async streams are based on the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. The Azure SDK for .NET exposes an implementation of `IAsyncEnumerable<T>` with its `AsyncPageable<T>` class.
 
 All of the samples in this article rely on the following NuGet packages:
 

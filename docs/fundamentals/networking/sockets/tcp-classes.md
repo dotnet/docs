@@ -87,13 +87,13 @@ The preceding C# code:
 `TcpClient`'s default constructor tries to create a _dual-mode socket_, if it's not viable, it creates an IPv4 socket with the `new Socket(SocketType, ProtocolType)` constructor. Consider the following TCP client code:
 
 ```csharp
-TcpClient client = new TcpClient();
+var client = new TcpClient();
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
-Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
 One of `TcpClient`'s constructor takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
@@ -105,44 +105,42 @@ One of `TcpClient`'s constructor takes `AddressFamily` enum as a parameter. You 
 Consider the following TCP client code:
 
 ```csharp
-TcpClient client = new TcpClient(AddressFamily.InterNetwork);
+var client = new TcpClient(AddressFamily.InterNetwork);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
-Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
 Other `TcpClient`'s constructor takes an <xref:System.Net.IPEndPoint> class as a parameter. This constructor accepts an `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates a `Socket`. As part of this, it calls <xref:System.Net.Sockets.Socket.Bind%2A> on the underlying `Socket` member with the given <xref:System.Net.IPEndPoint> argument. Consider the following TCP client code:
 
 ```csharp
 // Example IPEndPoint object
-IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
-
-TcpClient client = new TcpClient(ep);
+var ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
+var client = new TcpClient(ep);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
 // Example IPEndPoint object
-IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
-
-Socket socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+var ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
+var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 socket.Bind(ep);
 ```
 
 Another `TcpClient` constructor overload accepts a `hostname` and `port` as parameters, the difference from the default constructor is that this constructor tries to connect to the given `hostname` and `port`. Consider the following TCP client code:
 
 ```csharp
-TcpClient client = new TcpClient("www.example.com", 80);
+var client = new TcpClient("www.example.com", 80);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
-Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 socket.Connect("www.example.com", 80);
 ```
 

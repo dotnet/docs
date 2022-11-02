@@ -124,7 +124,7 @@ Attributes:     Archive, ReparsePoint, Offline
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-compatibility).
+This change can affect [binary compatibility](../../categories.md#binary-compatibility).
 
 ## Reason for change
 

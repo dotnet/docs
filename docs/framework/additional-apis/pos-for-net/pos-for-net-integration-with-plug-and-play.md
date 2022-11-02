@@ -1,0 +1,40 @@
+---
+title: POS for .NET Integration with Plug and Play
+ms.date: 03/03/2014
+ms.topic: how-to
+ms.custom: pos-restored-from-archive
+---
+
+# POS for .NET Integration with Plug and Play (POS for .NET v1.14 SDK Documentation)
+
+Microsoft Point of Service for .NET (POS for .NET) leverages Windows Embedded Plug and Play technology specifications to detect peripheral POS devices that are enabled for Plug and Play. Plug and Play support simplifies the installation and maintenance of POS devices.
+
+## PosExplorer
+
+The POS for .NET [PosExplorer](ms884843\(v=winembedded.11\).md) class serves as the interface between Plug and Play notifications and POS applications. **PosExplorer** translates the relevant Plug and Play notifications into POS for .NET events, which it then sends to the POS application.
+
+## Plug and Play Events
+
+The **PosExplorer** class exposes two Plug and Play events for use by POS applications:
+
+- [DeviceAddedEvent](ms831428\(v=winembedded.11\).md)
+    The **DeviceAddedEvent** triggers when a POS device is connected to the system.
+- [DeviceRemovedEvent](ms831429\(v=winembedded.11\).md)
+    The **DeviceRemovedEvent** triggers when a POS device is disconnected from the system.
+
+## See Also
+
+#### Reference
+
+[DeviceAddedEvent](ms831428\(v=winembedded.11\).md)
+[DeviceRemovedEvent](ms831429\(v=winembedded.11\).md)
+
+#### Concepts
+
+[PosExplorer Class](posexplorer-class.md)
+[Supported Device Classes](supported-device-classes.md)
+[Plug and Play Support](plug-and-play-support.md)
+
+#### Other Resources
+
+[POS for .NET v1.14 Features](pos-for-net-v1141-features.md)

@@ -699,172 +699,172 @@ items:
     - name: StdPicture interface
       href: additional-apis/stdole.stdpicture.md
   - name: Point of Service for .NET v1.14.1
-    href: additional-apis/pos-for-net/index.md #../bb429024(v=winembedded.4).md
+    href: additional-apis/pos-for-net/index.md #../index.md
     items:
     - name: Copyright Information
-      href: bb429018(v=winembedded.4).md
+      href: copyright-information-for-pos-for-net-v1141.md
     - name: POS for .NET FAQ
-      href: ee406171(v=winembedded.4).md
+      href: pos-for-net-faq.md
     - name: What's New
-      href: dn638335(v=winembedded.4).md
+      href: whats-new-in-pos-for-net-v114-and-v1141.md
     - name: POS for .NET v1.14.1 Features
-      href: bb411785(v=winembedded.4).md
+      href: pos-for-net-v1141-features.md
       items:
       - name: POS for .NET Architecture
-        href: bb429017(v=winembedded.4).md
+        href: pos-for-net-architecture.md
       - name: Service Object Overview
-        href: bb428973(v=winembedded.4).md
+        href: service-object-overview.md
       - name: Supported Device Classes
-        href: bb411798(v=winembedded.4).md
+        href: supported-device-classes.md
       - name: Event Management
-        href: bb428968(v=winembedded.4).md
+        href: event-management.md
       - name: POS Exception Handling
-        href: bb428995(v=winembedded.4).md
+        href: pos-exception-handling.md
       - name: POS for .NET Integration with Plug and Play
-        href: bb428992(v=winembedded.4).md
+        href: pos-for-net-integration-with-plug-and-play.md
       - name: Log Files
-        href: bb428959(v=winembedded.4).md
+        href: log-files.md
       - name: Integration of Legacy Service Objects
-        href: bb429016(v=winembedded.4).md
+        href: integration-of-legacy-service-objects.md
     - name: Developing a POS Application
-      href: bb428947(v=winembedded.4).md
+      href: developing-a-pos-application.md
       items:
       - name: Application Compatibility with 32-bit OPOS Service Objects
-        href: dn638870(v=winembedded.4).md
+        href: pos-for-net-application-compatibility-with-32-bit-opos-service-objects.md
       - name: Typical POS Application Architecture
-        href: bb428956(v=winembedded.4).md
+        href: typical-pos-application-architecture.md
       - name: API Support
-        href: bb428955(v=winembedded.4).md
+        href: pos-for-net-api-support.md
         items:
         - name: PosCommon Class
-          href: bb428969(v=winembedded.4).md
+          href: poscommon-class.md
         - name: PosExplorer Class
-          href: bb429007(v=winembedded.4).md
+          href: posexplorer-class.md
         - name: DeviceInfo Class
-          href: bb428966(v=winembedded.4).md
+          href: deviceinfo-class.md
         - name: Exception Classes
-          href: bb428949(v=winembedded.4).md
+          href: exception-classes.md
       - name: Event Handler Sample
-        href: bb429009(v=winembedded.4).md
+        href: event-handler-sample.md
     - name: Developing a Custom Service Object
-      href: bb411797(v=winembedded.11).md
+      href: developing-a-custom-service-object.md
       items:
       - name: POS for .NET Service Object Architecture
-        href: bb429020(v=winembedded.11).md
+        href: pos-for-net-service-object-architecture.md
         items:
         - name: POS for .NET Class Tree
-          href: bb428948(v=winembedded.11).md
+          href: pos-for-net-class-tree.md
         - name: Attributes for Identifying Service Objects and Assigning Hardware
-          href: bb411793(v=winembedded.11).md
+          href: attributes-for-identifying-service-objects-and-assigning-hardware.md
         - name: Hydra Devices
-          href: bb429005(v=winembedded.11).md
+          href: hydra-devices.md
         - name: Plug and Play Support
-          href: bb428984(v=winembedded.11).md
+          href: plug-and-play-support.md
         - name: PosCommon Information for Service Object Developers
-          href: bb428986(v=winembedded.11).md
+          href: poscommon-information-for-service-object-developers.md
         - name: POS for .NET Device Basic Classes
-          href: bb428994(v=winembedded.11).md
+          href: pos-for-net-device-basic-classes.md
       - name: System Configuration
-        href: bb428954(v=winembedded.4).md
+        href: system-configuration.md
         items:
         - name: POS for .NET Registry Settings
-          href: bb428977(v=winembedded.4).md
+          href: pos-for-net-registry-settings.md
         - name: POS Device Manager Output
-          href: bb428978(v=winembedded.4).md
+          href: pos-device-manager-output.md
         - name: Point of Service Performance Counters
-          href: bb428982(v=winembedded.4).md
+          href: point-of-service-performance-counters.md
         - name: Plug and Play XML Configuration
-          href: bb428988(v=winembedded.4).md
+          href: plug-and-play-xml-configuration.md
       - name: 'Service Object Samples: Getting Started'
-        href: bb429011(v=winembedded.4).md
+        href: service-object-samples-getting-started.md
         items:
         - name: Setting up a Service Object Project
-          href: bb428991(v=winembedded.4).md
+          href: setting-up-a-service-object-project.md
         - name: Creating a Basic Service Object Code Template
-          href: bb428952(v=winembedded.4).md
+          href: creating-a-basic-service-object-code-template.md
         - name: Adding Plug and Play Support
-          href: bb429008(v=winembedded.4).md
+          href: adding-plug-and-play-support.md
         - name: Creating a Service Object Sample
-          href: bb428958(v=winembedded.4).md
+          href: creating-a-service-object-sample.md
         - name: Introducing Service Object Reader Threads
-          href: bb428961(v=winembedded.4).md
+          href: introducing-service-object-reader-threads.md
         - name: Creating a Working, Multithreaded Service Object
-          href: bb428953(v=winembedded.4).md
+          href: creating-a-working-multithreaded-service-object.md
       - name: Developing Service Objects Using Base Classes
-        href: bb428950(v=winembedded.4).md
+        href: developing-service-objects-using-base-classes.md
         items:
         - name: Scanner Implementation
-          href: bb411784(v=winembedded.4).md
+          href: scanner-implementation.md
           items:
           - name: Data Decoding
-            href: bb428996(v=winembedded.4).md
+            href: data-decoding.md
           - name: Scanner Events
-            href: bb411801(v=winembedded.4).md
+            href: scanner-events.md
         - name: CashDrawer Implementation
-          href: bb429012(v=winembedded.4).md
+          href: cashdrawer-implementation.md
         - name: LineDisplay Implementation
-          href: bb428980(v=winembedded.4).md
+          href: linedisplay-implementation.md
           items:
           - name: LineDisplay Capabilities
-            href: bb411791(v=winembedded.4).md
+            href: linedisplay-capabilities.md
           - name: LineDisplay Sample
-            href: bb411792(v=winembedded.4).md
+            href: linedisplay-sample.md
         - name: PinPad Implementation
-          href: bb411789(v=winembedded.4).md
+          href: pinpad-implementation.md
           items:
           - name: PinPad Capabilities
-            href: bb428971(v=winembedded.4).md
+            href: pinpad-capabilities.md
           - name: PinPad Sample
-            href: bb429001(v=winembedded.4).md
+            href: pinpad-sample.md
         - name: PosKeyboard Implementation
-          href: bb428957(v=winembedded.4).md
+          href: poskeyboard-implementation.md
         - name: Using Impl Methods for Synchronous or Asynchronous Output
-          href: bb429022(v=winembedded.4).md
+          href: using-impl-methods-for-synchronous-or-asynchronous-output.md
       - name: Device Input and Events
-        href: bb411799(v=winembedded.4).md
+        href: device-input-and-events.md
       - name: Device Output Models
-        href: bb428946(v=winembedded.4).md
+        href: device-output-models.md
       - name: Asynchronous Output Sample
-        href: bb428998(v=winembedded.4).md
+        href: asynchronous-output-sample.md
       - name: Statistics Sample
-        href: bb428964(v=winembedded.4).md
+        href: statistics-sample.md
       - name: Base Class DirectIO Method
-        href: bb411787(v=winembedded.4).md
+        href: base-class-directio-method.md
       - name: Capability Properties
-        href: bb428993(v=winembedded.4).md
+        href: capability-properties.md
     - name: Manually manage your POS for .NET devices
-      href: dn628427(v=winembedded.4).md
+      href: manually-manage-your-pos-for-net-devices.md
     - name: POS Device Manager
-      href: bb411788(v=winembedded.4).md
+      href: pos-device-manager.md
       items:
       - name: Configure a device for remote management
-        href: dn638515(v=winembedded.4).md
+        href: configure-a-device-for-remote-management.md
       - name: Using the WMI API to Manage Devices
-        href: bb429013(v=winembedded.4).md
+        href: using-the-wmi-api-to-manage-devices.md
         items:
         - name: ServiceObject Class
-          href: bb411790(v=winembedded.4).md
+          href: serviceobject-class.md
         - name: PosDevice Class
-          href: bb428974(v=winembedded.4).md
+          href: posdevice-class.md
         - name: LogicalDevice Class
-          href: bb428963(v=winembedded.4).md
+          href: logicaldevice-class.md
         - name: DeviceProperty Class
-          href: bb411786(v=winembedded.4).md
+          href: deviceproperty-class.md
         - name: Using VBScript to Manage Devices
-          href: bb411796(v=winembedded.4).md
+          href: using-vbscript-to-manage-devices.md
       - name: Using Visual Studio .NET Management Extensions and the POS for .NET WMI Management Classes
-        href: bb429006(v=winembedded.4).md
+        href: using-visual-studio-net-management-extensions-and-the-pos-for-net-wmi-management-classes.md
       - name: Using the POS Device Manager Command-Line Tool
-        href: bb429003(v=winembedded.4).md
+        href: using-the-pos-device-manager-command-line-tool.md
         items:
         - name: Command-Line Help for POSDM
-          href: bb429021(v=winembedded.4).md
+          href: command-line-help-for-posdm.md
         - name: General POSDM Switches
-          href: bb429023(v=winembedded.4).md
+          href: general-posdm-switches.md
         - name: POSDM Commands
-          href: bb429010(v=winembedded.4).md
+          href: posdm-commands.md
         - name: POSDM Command Arguments
-          href: bb428960(v=winembedded.4).md
+          href: posdm-command-arguments.md
     - name: POS for .NET Reference
       href: /dotnet/api/?view=point-of-service-1.14&preserve-view=true
 - name: What's new and obsolete

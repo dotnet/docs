@@ -29,7 +29,7 @@ await ws.ConnectAsync(uri, new HttpMessageInvoker(handler), cancellationToken);
 
 ## Set up HTTP version and policy
 
-By default, `ClientWebSocket` uses HTTP/1.1 to send an opening handshake and allows downgrade. It can be changed before calling `ConnectAsync`:
+By default, `ClientWebSocket` uses HTTP/1.1 to send an opening handshake and allows downgrade. In .NET 7 web sockets over HTTP/2 are available. It can be changed before calling `ConnectAsync`:
 
 ```c#
 SocketsHttpHandler handler = new();
@@ -45,9 +45,44 @@ await ws.ConnectAsync(uri, new HttpMessageInvoker(handler), cancellationToken);
 
 `ClientWebSocket` has properties <xref:System.Net.WebSockets.ClientWebSocketOptions?displayProperty=fullName> that the user can set up before the connection is established. However, when `HttpMessageInvoker` is provided, it also has these properties. To avoid ambiguity, in that case, properties should be set on `HttpMessageInvoker`, and `ClientWebSocketOptions` should have default values. Otherwise, if `ClientWebSocketOptions` are changed, overload of `ConnectAsync` will throw an <xref:System.ArgumentException>.
 
+```c#
+var handler = new HttpClientHandler();
+handler.CookieContainer = cookies;
+handler.UseCookies = cookies != null;
+handler.ServerCertificateCustomValidationCallback = remoteCertificateValidationCallback;
+handler.Credentials = useDefaultCredentials ?
+    CredentialCache.DefaultCredentials :
+    credentials;
+if (proxy == null)
+{
+    handler.UseProxy = false;
+}
+else
+{
+    handler.Proxy = proxy;
+}
+if (clientCertificates?.Count > 0)
+{
+    handler.ClientCertificates.AddRange(clientCertificates);
+}
+var invoker = new HttpMessageInvoker(handler);
+
+var cws = new ClientWebSocket();
+await cws.ConnectAsync(uri, invoker, cancellationToken);
+```
+
 ## Compression
 
 The WebSocket protocol supports per-message deflate as defined in [RFC 7692](https://tools.ietf.org/html/rfc7692#section-7). It is controlled by <xref:System.Net.WebSockets.ClientWebSocketOptions.DangerousDeflateOptions?displayProperty=fullName>. When present, the options are sent to the server during the handshake phase. If the server supports per-message-deflate and the options are accepted, the `ClientWebSocket` instance will be created with compression enabled by default for all messages.
 
+```c#
+var cws = new ClientWebSocket();
+cws.Options.DangerousDeflateOptions = new WebSocketDeflateOptions()
+{
+    ClientMaxWindowBits = 10,
+    ServerMaxWindowBits = 10
+};
+```
+
 > [!IMPORTANT]
-> Before using compression, please be aware that enabling it makes the application subject to CRIME/BREACH type of attacks. It is strongly advised to turn off compression when sending data containing secrets by specifying the `DisableCompression` flag for such messages.
+> Before using compression, please be aware that enabling it makes the application subject to CRIME/BREACH type of attacks, for more information, see [CRIME](https://en.wikipedia.org/wiki/CRIME) and [BREACH](https://en.wikipedia.org/wiki/BREACH). It is strongly advised to turn off compression when sending data containing secrets by specifying the `DisableCompression` flag for such messages.

@@ -21,7 +21,7 @@ If your app had any trim warnings, you may see changes in behavior or exceptions
 
 ## Version introduced
 
-.NET 7 Preview 7
+.NET 7
 
 ## Type of breaking change
 

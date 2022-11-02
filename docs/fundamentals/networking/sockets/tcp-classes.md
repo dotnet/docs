@@ -82,7 +82,7 @@ The preceding C# code:
 
 `TcpListener` and `TcpClient` classes internal implementation relies on the `Socket` class. This means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
 
-### `TcpClient` Constructors
+### Create a client `Socket`
 
 `TcpClient`'s default constructor tries to create a _dual-mode socket_, if it's not viable, it creates an IPv4 socket with the `new Socket(SocketType, ProtocolType)` constructor. Consider the following TCP client code:
 

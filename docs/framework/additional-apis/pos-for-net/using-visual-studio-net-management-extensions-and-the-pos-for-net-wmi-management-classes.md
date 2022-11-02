@@ -41,35 +41,37 @@ This feature requires that Visual Studio 2013 and POS for .NET are installed on 
 
 The following code example demonstrates the use of the **PosDevice** class **GetInstances** method to enumerate Point of Service devices. It creates a collection of the devices within a scope. It then lists the type, name and path for each device in the collection and indicates whether the device is enabled or disabled.
 
-    using System;
-    using System.Management;
-    using ROOT.MICROSOFTPOINTOFSERVICE;
+```csharp
+using System;
+using System.Management;
+using ROOT.MICROSOFTPOINTOFSERVICE;
 
-    namespace Management
-    {
-       public class Test
-       {
-          public Test()
-          {
-             ManagementScope scope = new ManagementScope("root\\microsoftpointofservice");
-             scope.Connect();
-             PosDevice.PosDeviceCollection devices = PosDevice.GetInstances(scope, "");
-             string format = "{0,10}\t{1,25}\t{2}\t{3,50}";
-             if( devices.Count > 0 )
-                Console.WriteLine(format, "Type", "Name", "Enabled", "Path");
-             foreach( PosDevice d in devices )
-             {
-                Console.WriteLine(format, d.Type, d.SoName, d.Enabled ? 'Y' : 'N', d.Path);
-             }
-          }
+namespace Management
+{
+   public class Test
+   {
+      public Test()
+      {
+         ManagementScope scope = new ManagementScope("root\\microsoftpointofservice");
+         scope.Connect();
+         PosDevice.PosDeviceCollection devices = PosDevice.GetInstances(scope, "");
+         string format = "{0,10}\t{1,25}\t{2}\t{3,50}";
+         if( devices.Count > 0 )
+            Console.WriteLine(format, "Type", "Name", "Enabled", "Path");
+         foreach( PosDevice d in devices )
+         {
+            Console.WriteLine(format, d.Type, d.SoName, d.Enabled ? 'Y' : 'N', d.Path);
+         }
+      }
 
-          static int Main()
-          {
-             Test t = new Test();
-             return 0;
-          }
-       }
-    }
+      static int Main()
+      {
+         Test t = new Test();
+         return 0;
+      }
+   }
+}
+```
 
 ## See Also
 

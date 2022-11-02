@@ -19,127 +19,129 @@ To compile this sample, your project has to have the correct references and glob
 
 ## Example
 
-    using System;
-    using Microsoft.PointOfService;
-    using Microsoft.PointOfService.BaseServiceObjects;
+```csharp
+using System;
+using Microsoft.PointOfService;
+using Microsoft.PointOfService.BaseServiceObjects;
 
-    namespace Samples.ServiceObjects.MSR
+namespace Samples.ServiceObjects.MSR
+{
+    [HardwareId(@"HID\Vid_05e0&Pid_038a", @"HID\Vid_05e0&Pid_038a")]
+
+    [ServiceObject(DeviceType.Msr,
+        "SampleMsr",
+        "Sample Msr Service Object",
+        1,
+        9)]
+    public class SampleMsr : MsrBase
     {
-        [HardwareId(@"HID\Vid_05e0&Pid_038a", @"HID\Vid_05e0&Pid_038a")]
+        //  String returned from CheckHealth
+        private string MyHealthText;
 
-        [ServiceObject(DeviceType.Msr,
-            "SampleMsr",
-            "Sample Msr Service Object",
-            1,
-            9)]
-        public class SampleMsr : MsrBase
+        public SampleMsr()
         {
-            //  String returned from CheckHealth
-            private string MyHealthText;
+            // Initialize device capability properties.
+            Properties.CapIso = true;
+            Properties.CapTransmitSentinels = true;
+            Properties.DeviceDescription = "Sample MSR";
 
-            public SampleMsr()
+            // Initialize other class variables.
+            MyHealthText = "";
+        }
+
+        ~SampleMsr()
+        {
+            Dispose(false);
+        }
+
+        // Release any resources managed by this object.
+        protected override void Dispose(bool disposing)
+        {
+            try
             {
-                // Initialize device capability properties.
-                Properties.CapIso = true;
-                Properties.CapTransmitSentinels = true;
-                Properties.DeviceDescription = "Sample MSR";
-
-                // Initialize other class variables.
-                MyHealthText = "";
+                // Your code here.
             }
-
-            ~SampleMsr()
+            finally
             {
-                Dispose(false);
+                // Must call base class Dispose.
+                base.Dispose(disposing);
             }
+        }
 
-            // Release any resources managed by this object.
-            protected override void Dispose(bool disposing)
+        #region PosCommon overrides
+        // Returns the result of the last call to CheckHealth().
+        public override string CheckHealthText
+        {
+            get
             {
-                try
-                {
-                    // Your code here.
-                }
-                finally
-                {
-                    // Must call base class Dispose.
-                    base.Dispose(disposing);
-                }
-            }
-
-            #region PosCommon overrides
-            // Returns the result of the last call to CheckHealth().
-            public override string CheckHealthText
-            {
-                get
-                {
-                    // MsrBasic.VerifyState(mustBeClaimed,
-                    // mustBeEnabled). This may throw an exception.
-                    VerifyState(false, false);
-
-                    return MyHealthText;
-                }
-            }
-
-            public override string CheckHealth(
-                        HealthCheckLevel level)
-            {
-                // Verify that device is open, claimed, and enabled.
-                VerifyState(true, true);
-
-                // Your code here:
-                // check the health of the device and return a
-                // descriptive string.
-
-                // Cache result in the CheckHealthText property.
-                MyHealthText = "Ok";
-                return MyHealthText;
-            }
-
-            public override DirectIOData DirectIO(
-                            int command,
-                            int data,
-                            object obj)
-            {
-                // Verify that device is open.
+                // MsrBasic.VerifyState(mustBeClaimed,
+                // mustBeEnabled). This may throw an exception.
                 VerifyState(false, false);
 
-                return new DirectIOData(data, obj);
+                return MyHealthText;
             }
-            #endregion // PosCommon overrides
-
-            #region MsrBasic Overrides
-            protected override MsrFieldData ParseMsrFieldData(
-                            byte[] track1Data,
-                            byte[] track2Data,
-                            byte[] track3Data,
-                            byte[] track4Data,
-                            CardType cardType)
-            {
-                // Your code here:
-                // Implement this method to parse track data
-                // into fields which will be returned as
-                // properties to the application
-                // (for example, FirstName,
-                // AccountNumber, etc.)
-                return new MsrFieldData();
-            }
-
-            protected override MsrTrackData ParseMsrTrackData(
-                            byte[] track1Data,
-                            byte[] track2Data,
-                            byte[] track3Data,
-                            byte[] track4Data,
-                            CardType cardType)
-            {
-
-                // Your code here:
-                // Implement this method to convert raw track data.
-                return new MsrTrackData();
-            }
-            #endregion
         }
+
+        public override string CheckHealth(
+                    HealthCheckLevel level)
+        {
+            // Verify that device is open, claimed, and enabled.
+            VerifyState(true, true);
+
+            // Your code here:
+            // check the health of the device and return a
+            // descriptive string.
+
+            // Cache result in the CheckHealthText property.
+            MyHealthText = "Ok";
+            return MyHealthText;
+        }
+
+        public override DirectIOData DirectIO(
+                        int command,
+                        int data,
+                        object obj)
+        {
+            // Verify that device is open.
+            VerifyState(false, false);
+
+            return new DirectIOData(data, obj);
+        }
+        #endregion // PosCommon overrides
+
+        #region MsrBasic Overrides
+        protected override MsrFieldData ParseMsrFieldData(
+                        byte[] track1Data,
+                        byte[] track2Data,
+                        byte[] track3Data,
+                        byte[] track4Data,
+                        CardType cardType)
+        {
+            // Your code here:
+            // Implement this method to parse track data
+            // into fields which will be returned as
+            // properties to the application
+            // (for example, FirstName,
+            // AccountNumber, etc.)
+            return new MsrFieldData();
+        }
+
+        protected override MsrTrackData ParseMsrTrackData(
+                        byte[] track1Data,
+                        byte[] track2Data,
+                        byte[] track3Data,
+                        byte[] track4Data,
+                        CardType cardType)
+        {
+
+            // Your code here:
+            // Implement this method to convert raw track data.
+            return new MsrTrackData();
+        }
+        #endregion
     }
+}
+```
 
 In order to simplify this sample, the code does not implement any globalization features. For example, the value for **Properties.DeviceDescription** would typically be read from a localized strings resource file.
 

@@ -53,6 +53,7 @@ The following table provides a mapping between the UnifiedPOS standard error cod
 | NotClaimed           | E_NOTCLAIMED          | The POS application attempted to access an exclusive-use device that must be claimed before the method or property set action can be used. |
 | Offline              | E_OFFLINE             | The POS device is offline.                                                                                                                 |
 | Timeout              | E_TIMEOUT             | The Service Object timed out waiting for a response from the POS device.                                                                   |
+
 ## Example
 
 The following code example demonstrates how MSR handles POS exceptions and uses the **ErrorCodes** contained in those exceptions to gather information about them.

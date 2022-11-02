@@ -23,10 +23,10 @@ Performance is a key focus of .NET 7, and all of its features are designed with 
 - On-stack replacement (OSR) is a complement to tiered compilation. It allows the runtime to change the code executed by a currently running method in the middle of its execution (that is, while it's "on stack"). Long-running methods can switch to more optimized versions mid-execution.
 - Profile-guided optimization (PGO) now works with OSR and is easier to enable (by adding `<TieredPGO>true</TieredPGO>` to your project file). PGO can also instrument and optimize additional things, such as delegates.
 - Improved code generation for Arm64.
-- [Native AOT](../deploying/native-aot/index.md) produces a standalone executable in the target platform's file format with no external dependencies. It's entirely native, with no IL or JIT, and provides fast startup time and a small, self-contained deployment. In .NET 7, Native AOT focuses on console apps and requires apps to be trimmed.
-- Performance improvements to the mono runtime, which powers Blazor WebAssembly, Android, and iOS apps.
+- [Native AOT](../deploying/native-aot/index.md) produces a standalone executable in the target platform's file format with no external dependencies. It's entirely native, with no [IL or JIT](dotnet/core/introduction#compilation), and provides fast startup time and a small, self-contained deployment. In .NET 7, Native AOT focuses on console apps and requires apps to be trimmed.
+- Performance improvements to the Mono runtime, which powers Blazor WebAssembly, Android, and iOS apps.
 
-For a detailed look at everything that's gone into making .NET 7 so fast, see the epic [Performance improvements in .NET 7](https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/) blog post.
+For a detailed look at many of the performance-focused features that make .NET 7 so fast, see the [Performance improvements in .NET 7](https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/) blog post.
 
 ## System.Text.Json serialization
 
@@ -40,7 +40,7 @@ For information about these and other updates, see the [What's new in System.Tex
 
 ## Generic math
 
-.NET 7 and C# 11 include innovations that allow you to perform mathematical operations generically&mdash;that is, without having to know the exact type you're working with. For example, if you wanted to write a method that adds two numbers, previously you had to add an overload of the method for each type. Now you can write a single, generic method, where the type parameter is constrained to be a number-like type. For more information, see [Generic math](../../standard/generics/math.md) and the [Generic math](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/) blog post.
+.NET 7 and C# 11 include innovations that allow you to perform mathematical operations generically&mdash;that is, without having to know the exact type you're working with. For example, if you wanted to write a method that adds two numbers, previously you had to add an overload of the method for each type. Now you can write a single, generic method, where the type parameter is constrained to be a number-like type. For more information, see the [Generic math](../../standard/generics/math.md) article and the [Generic math](https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/) blog post.
 
 ## Regular expressions
 
@@ -86,7 +86,7 @@ For more information, see the [.NET 7 Preview 4](https://devblogs.microsoft.com/
 
 ## .NET SDK
 
-The .NET 7 SDK improves the CLI template experience. It also enables publishing to containers and central package management with NuGet.
+The .NET 7 [SDK](../sdk.md) improves the CLI template experience. It also enables publishing to containers, and central package management with NuGet.
 
 ### Templates
 
@@ -126,7 +126,7 @@ For more information, see [Central package management](/nuget/consume-packages/C
 
 ## Related releases
 
-This section contains information about related products that have releases to coincide with the .NET 7 release.
+This section contains information about related products that have releases that coincide with the .NET 7 release.
 
 <!--
 ### Visual Studio 2022 version 17.4

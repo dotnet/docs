@@ -17,131 +17,41 @@ ms.custom: pos-restored-from-archive
 
 The following table describes **PosExplorer** properties.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="ms861788(v=winembedded.11).md">PosRegistryKey</a></p></td>
-<td><p>string</p></td>
-<td><p>Returns POS for .NET configuration root registry key relative to HKEY_LOCAL_MACHINE.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="ms861791(v=winembedded.11).md">StatisticsFile</a></p></td>
-<td><p>string</p></td>
-<td><p>Returns a path to the file where device statistics are contained.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="ms861792(v=winembedded.11).md">SynchronizingObject</a></p></td>
-<td><p>ISynchronizeInvoke</p></td>
-<td><p>Holds the ISynchronizeInvoke object.</p></td>
-</tr>
-</tbody>
-</table>
+| Property            | Type               | Description                                                                          |
+|---------------------|--------------------|--------------------------------------------------------------------------------------|
+| PosRegistryKey      | string             | Returns POS for .NET configuration root registry key relative to HKEY_LOCAL_MACHINE. |
+| StatisticsFile      | string             | Returns a path to the file where device statistics are contained.                    |
+| SynchronizingObject | ISynchronizeInvoke | Holds the ISynchronizeInvoke object.                                                 |
 
 ## PosExplorer Methods
 
 The following table describes **PosExplorer** methods.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Return Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="ms843048(v=winembedded.11).md">CreateInstance</a></p></td>
-<td><p>PosDevice</p></td>
-<td><p>Instantiates a Service Object for the device.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="ms843053(v=winembedded.11).md">GetDevice</a></p></td>
-<td><p>DeviceInfo</p></td>
-<td><p>Returns a device of the specified type (must be only one in the system).</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="ms843054(v=winembedded.11).md">GetDevice</a></p></td>
-<td><p>DeviceInfo</p></td>
-<td><p>Returns a device of the type with the specified logical name or alias.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="ms843049(v=winembedded.11).md">GetDevices</a></p></td>
-<td><p>DeviceCollection</p></td>
-<td><p>Returns all POS devices.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="ms843051(v=winembedded.11).md">GetDevices</a></p></td>
-<td><p>DeviceCollection</p></td>
-<td><p>Returns all POS devices with the specified compatibility level.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="ms843050(v=winembedded.11).md">GetDevices</a></p></td>
-<td><p>DeviceCollection</p></td>
-<td><p>Returns POS devices of the type.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="ms843052(v=winembedded.11).md">GetDevices</a></p></td>
-<td><p>DeviceCollection</p></td>
-<td><p>Returns POS devices of the type and compatibility level.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="ms843055(v=winembedded.11).md">Refresh</a></p></td>
-<td><p>None</p></td>
-<td><p>Re-enumerates the list of attached POS devices and rebuilds internal data structures.</p></td>
-</tr>
-</tbody>
-</table>
+| Method         | Return Type      | Description                                                                           |
+|----------------|------------------|---------------------------------------------------------------------------------------|
+| CreateInstance | PosDevice        | Instantiates a Service Object for the device.                                         |
+| GetDevice      | DeviceInfo       | Returns a device of the specified type (must be only one in the system).              |
+| GetDevice      | DeviceInfo       | Returns a device of the type with the specified logical name or alias.                |
+| GetDevices     | DeviceCollection | Returns all POS devices.                                                              |
+| GetDevices     | DeviceCollection | Returns all POS devices with the specified compatibility level.                       |
+| GetDevices     | DeviceCollection | Returns POS devices of the type.                                                      |
+| GetDevices     | DeviceCollection | Returns POS devices of the type and compatibility level.                              |
+| Refresh        | None             | Re-enumerates the list of attached POS devices and rebuilds internal data structures. |
 
 ## PosExplorer Events
 
 The following table describes **PosExplorer** events.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Event</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="ms831428(v=winembedded.11).md">DeviceAddedEvent</a></p></td>
-<td><p>Received when a Plug and Play-compatible POS device is connected.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="ms831429(v=winembedded.11).md">DeviceRemovedEvent</a></p></td>
-<td><p>Received when a Plug and Play-compatible POS device is disconnected.</p></td>
-</tr>
-</tbody>
-</table>
+| Event              | Description                                                          |
+|--------------------|----------------------------------------------------------------------|
+| DeviceAddedEvent   | Received when a Plug and Play-compatible POS device is connected.    |
+| DeviceRemovedEvent | Received when a Plug and Play-compatible POS device is disconnected. |
 
 ## Example
 
 The following code example demonstrates how to create an instance of **PosExplorer**, connect to Plug and Play events, and use it to identify all connected Magnetic Stripe Reader (MSR) devices. The code example prints information about the MSR to the console and closes the device after it has finished.
 
-```
+```csharp
 // Creates a new instance of an MSR.
 void CreateMsr(DeviceInfo msrinfo)
 {

@@ -48,40 +48,13 @@ The general event-driven input model does not prevent the definition of device c
 
 POS for .NET implements Unified Point Of Service (UnifiedPOS) events as standard .NET events with multicast delegates. The events inform an application of various activities or changes with a device, such as when a device is added or removed. The following table lists the event types.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Event</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>DataEvent</strong></p></td>
-<td><p>An event raised by the Service Object to notify the application that input data is available.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>ErrorEvent</strong></p></td>
-<td><p>An event raised by the Service Object to notify the application that a device error has occurred and that a suitable response by the application is necessary to process the error condition.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>StatusUpdateEvent</strong></p></td>
-<td><p>An event raised by the Service Object to alert the application of a device status change.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>OutputCompleteEvent</strong></p></td>
-<td><p>An event raised by the Service Object to notify the application that the queued output request has been completed successfully.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DirectIOEvent</strong></p></td>
-<td><p>An event raised by the Service Object to communicate information directly to the application.</p></td>
-</tr>
-</tbody>
-</table>
+| Event               | Description                                                                                                                                                                                   |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DataEvent           | An event raised by the Service Object to notify the application that input data is available.                                                                                                 |
+| ErrorEvent          | An event raised by the Service Object to notify the application that a device error has occurred and that a suitable response by the application is necessary to process the error condition. |
+| StatusUpdateEvent   | An event raised by the Service Object to alert the application of a device status change.                                                                                                     |
+| OutputCompleteEvent | An event raised by the Service Object to notify the application that the queued output request has been completed successfully.                                                               |
+| DirectIOEvent       | An event raised by the Service Object to communicate information directly to the application.                                                                                                 |
 
 The Service Object must stack these events on an internally created and managed queue. Events are delivered in a first-in, first-out manner and are delivered by an internal service thread.
 

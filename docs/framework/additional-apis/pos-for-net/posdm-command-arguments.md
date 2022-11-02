@@ -9,6 +9,7 @@ ms.custom: pos-restored-from-archive
 
 The following switches can be used as arguments for POSDM commands.
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -41,6 +42,7 @@ The following switches can be used as arguments for POSDM commands.
 </tr>
 </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 ## See Also
 

@@ -13,28 +13,10 @@ As discussed in the [Device Input and Events](device-input-and-events.md) topic,
 
 The Scanner device can send four events to the application. For two of these events, **DataEvent** and **ErrorEvent**, the POS for .NET [ScannerBase](ms881268\(v=winembedded.11\).md) class provides a protected helper method to simplify the code that is required to raise these events:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Event</th>
-<th>Method That Queues the Event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>DataEvent</strong></p></td>
-<td><p>Protected method <strong>ScannerBase.GoodRead</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>ErrorEvent</strong></p></td>
-<td><p>Protected method <strong>ScannerBase.FailedRead</strong></p></td>
-</tr>
-</tbody>
-</table>
+| Event      | Method That Queues the Event            |
+|------------|-----------------------------------------|
+| DataEvent  | Protected method ScannerBase.GoodRead   |
+| ErrorEvent | Protected method ScannerBase.FailedRead |
 
 The two other events, **DirectIOEvent** and **StatusUpdateEvent**, must be raised by using members of the lower-level **ScannerBasic** class. For more information, see [Device Input and Events](device-input-and-events.md).
 

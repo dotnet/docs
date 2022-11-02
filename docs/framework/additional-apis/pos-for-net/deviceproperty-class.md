@@ -11,40 +11,13 @@ The **DeviceProperty** class represents a name/value pair of a configuration pro
 
 ## Properties
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Type</strong></p></td>
-<td><p>String representing the POS device category.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>SoName</strong></p></td>
-<td><p>String representing the name of the Service Object.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Path</strong></p></td>
-<td><p>String representing the path of the physical device.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Name</strong></p></td>
-<td><p>String representing the name of this property.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Value</strong></p></td>
-<td><p>String representing the data of this property.</p></td>
-</tr>
-</tbody>
-</table>
+| Name   | Description                                          |
+|--------|------------------------------------------------------|
+| Type   | String representing the POS device category.         |
+| SoName | String representing the name of the Service Object.  |
+| Path   | String representing the path of the physical device. |
+| Name   | String representing the name of this property.       |
+| Value  | String representing the data of this property.       |
 
 ## See Also
 

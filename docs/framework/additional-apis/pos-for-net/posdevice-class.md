@@ -11,55 +11,20 @@ The **PosDevice** class represents a single physical POS device. The class provi
 
 ## Properties
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Type</strong></p></td>
-<td><p>String representation of the POS device type or category.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>SoName</strong></p></td>
-<td><p>The name of the Service Object for this physical device, in string format.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Path</strong></p></td>
-<td><p>The hardware path of a device, in string format. For Plug and Play devices, this path comes from the Plug and Play engine. For non-Plug and Play devices, it is provided via the <strong>AddDevice</strong> method of <strong>ServiceObject</strong>. For devices using legacy (OPOS) Service Objects, this may be blank.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>HardwareDescription</strong></p></td>
-<td><p>The device description of the logical device, returned from the registry in string format and used by the Plug and Play engine. This may be blank for devices using legacy (OPOS) Service Objects.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>IsPlugNPlay</strong></p></td>
-<td><p>A Boolean indicator of whether the device supports Plug and Play.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>IsLegacy</strong></p></td>
-<td><p>A Boolean indicator of whether the device is using a legacy (OPOS) Service Object.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Enabled</strong></p></td>
-<td><p>A Boolean representation of whether the device is enabled or not. This property allows write access.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Default</strong></p></td>
-<td><p>A Boolean representation of whether the device is the default device in a POS device category. This property allows write access.</p></td>
-</tr>
-</tbody>
-</table>
+| Name                | Description                                                                                                                                                                                                                                                                             |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type                | String representation of the POS device type or category.                                                                                                                                                                                                                               |
+| SoName              | The name of the Service Object for this physical device, in string format.                                                                                                                                                                                                              |
+| Path                | The hardware path of a device, in string format. For Plug and Play devices, this path comes from the Plug and Play engine. For non-Plug and Play devices, it is provided via the AddDevice method of ServiceObject. For devices using legacy (OPOS) Service Objects, this may be blank. |
+| HardwareDescription | The device description of the logical device, returned from the registry in string format and used by the Plug and Play engine. This may be blank for devices using legacy (OPOS) Service Objects.                                                                                      |
+| IsPlugNPlay         | A Boolean indicator of whether the device supports Plug and Play.                                                                                                                                                                                                                       |
+| IsLegacy            | A Boolean indicator of whether the device is using a legacy (OPOS) Service Object.                                                                                                                                                                                                      |
+| Enabled             | A Boolean representation of whether the device is enabled or not. This property allows write access.                                                                                                                                                                                    |
+| Default             | A Boolean representation of whether the device is the default device in a POS device category. This property allows write access.                                                                                                                                                       |
 
 ## Methods
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -98,6 +63,7 @@ The **PosDevice** class represents a single physical POS device. The class provi
 </tr>
 </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 ## See Also
 

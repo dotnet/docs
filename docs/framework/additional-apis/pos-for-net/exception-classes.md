@@ -36,98 +36,23 @@ Standard Unified Point Of Service (UnifiedPOS) error codes are represented by th
 
 The following table provides a mapping between the UnifiedPOS standard error codes and the **ErrorCode** values that POS for .NET provides.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>POS ErrorCode Member</th>
-<th>UnifiedPOS Error Code</th>
-<th>Error Cause</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Busy</p></td>
-<td><p>E_BUSY</p></td>
-<td><p>The current Service Object state does not allow this request.</p></td>
-</tr>
-<tr class="even">
-<td><p>Claimed</p></td>
-<td><p>E_CLAIMED</p></td>
-<td><p>Another Service Object instance has already claimed the POS device.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Closed</p></td>
-<td><p>E_CLOSED</p></td>
-<td><p>The POS device is closed.</p></td>
-</tr>
-<tr class="even">
-<td><p>Deprecated</p></td>
-<td><p>E_DEPRECATED</p></td>
-<td><p>The method has been deprecated and is no longer available.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disabled</p></td>
-<td><p>E_DISABLED</p></td>
-<td><p>The operation cannot be performed while the device is disabled.</p></td>
-</tr>
-<tr class="even">
-<td><p>Exists</p></td>
-<td><p>E_EXISTS</p></td>
-<td><p>The file name or other specified value already exists.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Extended</p></td>
-<td><p>E_EXTENDED</p></td>
-<td><p>A device-specific error condition occurred.</p></td>
-</tr>
-<tr class="even">
-<td><p>Failure</p></td>
-<td><p>E_FAILURE</p></td>
-<td><p>The POS device cannot perform the requested procedure, even though the device is connected to the system and active.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Illegal</p></td>
-<td><p>E_ILLEGAL</p></td>
-<td><p>The POS application attempted an illegal or unsupported operation with the device, or used an invalid parameter value.</p></td>
-</tr>
-<tr class="even">
-<td><p>NoExist</p></td>
-<td><p>E_NOEXIST</p></td>
-<td><p>The file name or other specified value does not exist.</p></td>
-</tr>
-<tr class="odd">
-<td><p>NoHardware</p></td>
-<td><p>E_NOHARDWARE</p></td>
-<td><p>The POS device is not connected to the system or is not turned on.</p></td>
-</tr>
-<tr class="even">
-<td><p>NoService</p></td>
-<td><p>E_NOSERVICE</p></td>
-<td><p>The Service Object cannot communicate with the device, normally because of a setup or configuration error.</p></td>
-</tr>
-<tr class="odd">
-<td><p>NotClaimed</p></td>
-<td><p>E_NOTCLAIMED</p></td>
-<td><p>The POS application attempted to access an exclusive-use device that must be claimed before the method or property set action can be used.</p></td>
-</tr>
-<tr class="even">
-<td><p>Offline</p></td>
-<td><p>E_OFFLINE</p></td>
-<td><p>The POS device is offline.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Timeout</p></td>
-<td><p>E_TIMEOUT</p></td>
-<td><p>The Service Object timed out waiting for a response from the POS device.</p></td>
-</tr>
-</tbody>
-</table>
-
+| POS ErrorCode Member | UnifiedPOS Error Code | Error Cause                                                                                                                                |
+|----------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Busy                 | E_BUSY                | The current Service Object state does not allow this request.                                                                              |
+| Claimed              | E_CLAIMED             | Another Service Object instance has already claimed the POS device.                                                                        |
+| Closed               | E_CLOSED              | The POS device is closed.                                                                                                                  |
+| Deprecated           | E_DEPRECATED          | The method has been deprecated and is no longer available.                                                                                 |
+| Disabled             | E_DISABLED            | The operation cannot be performed while the device is disabled.                                                                            |
+| Exists               | E_EXISTS              | The file name or other specified value already exists.                                                                                     |
+| Extended             | E_EXTENDED            | A device-specific error condition occurred.                                                                                                |
+| Failure              | E_FAILURE             | The POS device cannot perform the requested procedure, even though the device is connected to the system and active.                       |
+| Illegal              | E_ILLEGAL             | The POS application attempted an illegal or unsupported operation with the device, or used an invalid parameter value.                     |
+| NoExist              | E_NOEXIST             | The file name or other specified value does not exist.                                                                                     |
+| NoHardware           | E_NOHARDWARE          | The POS device is not connected to the system or is not turned on.                                                                         |
+| NoService            | E_NOSERVICE           | The Service Object cannot communicate with the device, normally because of a setup or configuration error.                                 |
+| NotClaimed           | E_NOTCLAIMED          | The POS application attempted to access an exclusive-use device that must be claimed before the method or property set action can be used. |
+| Offline              | E_OFFLINE             | The POS device is offline.                                                                                                                 |
+| Timeout              | E_TIMEOUT             | The Service Object timed out waiting for a response from the POS device.                                                                   |
 ## Example
 
 The following code example demonstrates how MSR handles POS exceptions and uses the **ErrorCodes** contained in those exceptions to gather information about them.

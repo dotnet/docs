@@ -19,6 +19,7 @@ The default location for the configuration file is *%ProgramData%\\*Microsoft\\P
 
 The following table lists posdm.exe commands and the equivalent XML that you must add to the configuration xml file.
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -214,3 +215,4 @@ The following table lists posdm.exe commands and the equivalent XML that you mus
 </tr>
 </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->

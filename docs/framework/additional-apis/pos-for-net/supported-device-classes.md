@@ -27,240 +27,44 @@ For the nine primary UnifiedPOS device types, POS for .NET supplies fully functi
 
 The following table lists the UnifiedPOS devices with their equivalent POS for .NET **Basic** and **Base** device classes (where applicable).
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>UnifiedPOS Device</th>
-<th>Interface Class</th>
-<th>Basic Class</th>
-<th>Base Class</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Belt</p></td>
-<td><p><a href="cc297518(v=winembedded.11).md">Belt</a></p></td>
-<td><p>BeltBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Biometrics</p></td>
-<td><p><a href="bb411893(v=winembedded.11).md">Biometrics</a></p></td>
-<td><p>BiometricsBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Bill Acceptor</p></td>
-<td><p><a href="bb411820(v=winembedded.11).md">BillAcceptor</a></p></td>
-<td><p>BillAcceptorBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Bill Dispenser</p></td>
-<td><p><a href="bb411849(v=winembedded.11).md">BillDispenser</a></p></td>
-<td><p>BillDispenserBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Bump Bar</p></td>
-<td><p><a href="ms883538(v=winembedded.11).md">BumpBar</a></p></td>
-<td><p>BumpBarBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Cash Changer</p></td>
-<td><p><a href="ms883669(v=winembedded.11).md">CashChanger</a></p></td>
-<td><p>CashChangerBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Cash Drawer</p></td>
-<td><p><a href="ms883867(v=winembedded.11).md">CashDrawer</a></p></td>
-<td><p>CashDrawerBasic</p></td>
-<td><p><a href="aa460345(v=winembedded.11).md">CashDrawerBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>CAT - Credit Authorization Terminal</p></td>
-<td><p><a href="ms883970(v=winembedded.11).md">Cat</a></p></td>
-<td><p>CatBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Check Scanner</p></td>
-<td><p><a href="ms884001(v=winembedded.11).md">CheckScanner</a></p></td>
-<td><p>CheckScannerBasic</p></td>
-<td><p><a href="aa460371(v=winembedded.11).md">CheckScannerBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Coin Acceptor</p></td>
-<td><p><a href="bb411823(v=winembedded.11).md">CoinAcceptor</a></p></td>
-<td><p>CoinAcceptorBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Coin Dispenser</p></td>
-<td><p><a href="ms884010(v=winembedded.11).md">CoinDispenser</a></p></td>
-<td><p>CoinDispenserBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Electronic Journal</p></td>
-<td><p><a href="bb404543(v=winembedded.11).md">ElectronicJournal</a></p></td>
-<td><p>ElectronicJournalBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Electronic Value Reader / Writer</p></td>
-<td><p><a href="cc297622(v=winembedded.11).md">ElectronicValueRW</a></p></td>
-<td><p>ElectronicValueRWBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Fiscal Printer</p></td>
-<td><p><a href="ms884287(v=winembedded.11).md">FiscalPrinter</a></p></td>
-<td><p>FiscalPrinterBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Gate</p></td>
-<td><p><a href="cc297632(v=winembedded.11).md">Gate</a></p></td>
-<td><p>GateBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Hard Totals</p></td>
-<td><p><a href="ms884348(v=winembedded.11).md">HardTotals</a></p></td>
-<td><p>HardTotalsBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Image Scanner</p></td>
-<td><p><a href="bb411828(v=winembedded.11).md">ImageScanner</a></p></td>
-<td><p>ImageScannerBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Item Dispenser</p></td>
-<td><p><a href="cc297403(v=winembedded.11).md">ItemDispenser</a></p></td>
-<td><p>ItemDispenserBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Keylock</p></td>
-<td><p><a href="ms884534(v=winembedded.11).md">Keylock</a></p></td>
-<td><p>KeylockBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Lights</p></td>
-<td><p><a href="cc297577(v=winembedded.11).md">Lights</a></p></td>
-<td><p>LightsBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Line Display</p></td>
-<td><p><a href="ms884540(v=winembedded.11).md">LineDisplay</a></p></td>
-<td><p>LineDisplayBasic</p></td>
-<td><p><a href="aa460464(v=winembedded.11).md">LineDisplayBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>MICR - Magnetic Ink Character Recognition</p></td>
-<td><p><a href="ms884551(v=winembedded.11).md">Micr</a></p></td>
-<td><p>MicrBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Motion Sensor</p></td>
-<td><p><a href="ms884558(v=winembedded.11).md">MotionSensor</a></p></td>
-<td><p>MotionSensorBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>MSR - Magnetic Stripe Reader</p></td>
-<td><p><a href="ms884564(v=winembedded.11).md">Msr</a></p></td>
-<td><p>MsrBasic</p></td>
-<td><p><a href="aa460596(v=winembedded.11).md">MsrBase</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>PIN Pad</p></td>
-<td><p><a href="ms884787(v=winembedded.11).md">PinPad</a></p></td>
-<td><p>PinPadBasic</p></td>
-<td><p><a href="aa460647(v=winembedded.11).md">PinPadBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Point Card Reader / Writer</p></td>
-<td><p><a href="ms884808(v=winembedded.11).md">PointCardRW</a></p></td>
-<td><p>PointCardRWBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>POS Keyboard</p></td>
-<td><p><a href="ms884848(v=winembedded.11).md">PosKeyboard</a></p></td>
-<td><p>PosKeyboardBasic</p></td>
-<td><p><a href="aa460659(v=winembedded.11).md">PosKeyboardBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>POS Power</p></td>
-<td><p><a href="ms884862(v=winembedded.11).md">PosPower</a></p></td>
-<td><p>PosPowerBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>POS Printer</p></td>
-<td><p><a href="ms884868(v=winembedded.11).md">PosPrinter</a></p></td>
-<td><p>PosPrinterBasic</p></td>
-<td><p><a href="aa460669(v=winembedded.11).md">PosPrinterBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Remote Order Display</p></td>
-<td><p><a href="aa460863(v=winembedded.11).md">RemoteOrderDisplay</a></p></td>
-<td><p>RemoteOrderDisplayBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>RFID Scanner</p></td>
-<td><p><a href="cc297328(v=winembedded.11).md">RFIDScanner</a></p></td>
-<td><p>RFIDScannerBasic</p></td>
-<td><p><a href="cc297693(v=winembedded.11).md">RFIDScannerBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Scale</p></td>
-<td><p><a href="aa460872(v=winembedded.11).md">Scale</a></p></td>
-<td><p>ScaleBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Scanner (Bar Code Reader)</p></td>
-<td><p><a href="aa460878(v=winembedded.11).md">Scanner</a></p></td>
-<td><p>ScannerBasic</p></td>
-<td><p><a href="ms881268(v=winembedded.11).md">ScannerBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Signature Capture</p></td>
-<td><p><a href="aa460889(v=winembedded.11).md">SignatureCapture</a></p></td>
-<td><p>SignatureCaptureBasic</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Smart Card Reader / Writer</p></td>
-<td><p><a href="aa460898(v=winembedded.11).md">SmartCardRW</a></p></td>
-<td><p>SmartCardRWBasic</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Tone Indicator</p></td>
-<td><p><a href="aa460918(v=winembedded.11).md">ToneIndicator</a></p></td>
-<td><p>ToneIndicatorBasic</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| UnifiedPOS Device                         | Interface Class    | Basic Class             | Base Class       |
+|-------------------------------------------|--------------------|-------------------------|------------------|
+| Belt                                      | Belt               | BeltBasic               |
+| Biometrics                                | Biometrics         | BiometricsBasic         |
+| Bill Acceptor                             | BillAcceptor       | BillAcceptorBasic       |
+| Bill Dispenser                            | BillDispenser      | BillDispenserBasic      |
+| Bump Bar                                  | BumpBar            | BumpBarBasic            |
+| Cash Changer                              | CashChanger        | CashChangerBasic        |
+| Cash Drawer                               | CashDrawer         | CashDrawerBasic         | CashDrawerBase   |
+| CAT - Credit Authorization Terminal       | Cat                | CatBasic                |
+| Check Scanner                             | CheckScanner       | CheckScannerBasic       | CheckScannerBase |
+| Coin Acceptor                             | CoinAcceptor       | CoinAcceptorBasic       |
+| Coin Dispenser                            | CoinDispenser      | CoinDispenserBasic      |
+| Electronic Journal                        | ElectronicJournal  | ElectronicJournalBasic  |
+| Electronic Value Reader / Writer          | ElectronicValueRW  | ElectronicValueRWBasic  |
+| Fiscal Printer                            | FiscalPrinter      | FiscalPrinterBasic      |
+| Gate                                      | Gate               | GateBasic               |
+| Hard Totals                               | HardTotals         | HardTotalsBasic         |
+| Image Scanner                             | ImageScanner       | ImageScannerBasic       |
+| Item Dispenser                            | ItemDispenser      | ItemDispenserBasic      |
+| Keylock                                   | Keylock            | KeylockBasic            |
+| Lights                                    | Lights             | LightsBasic             |
+| Line Display                              | LineDisplay        | LineDisplayBasic        | LineDisplayBase  |
+| MICR - Magnetic Ink Character Recognition | Micr               | MicrBasic               |
+| Motion Sensor                             | MotionSensor       | MotionSensorBasic       |
+| MSR - Magnetic Stripe Reader              | Msr                | MsrBasic                | MsrBase          |
+| PIN Pad                                   | PinPad             | PinPadBasic             | PinPadBase       |
+| Point Card Reader / Writer                | PointCardRW        | PointCardRWBasic        |
+| POS Keyboard                              | PosKeyboard        | PosKeyboardBasic        | PosKeyboardBase  |
+| POS Power                                 | PosPower           | PosPowerBasic           |
+| POS Printer                               | PosPrinter         | PosPrinterBasic         | PosPrinterBase   |
+| Remote Order Display                      | RemoteOrderDisplay | RemoteOrderDisplayBasic |
+| RFID Scanner                              | RFIDScanner        | RFIDScannerBasic        | RFIDScannerBase  |
+| Scale                                     | Scale              | ScaleBasic              |
+| Scanner (Bar Code Reader)                 | Scanner            | ScannerBasic            | ScannerBase      |
+| Signature Capture                         | SignatureCapture   | SignatureCaptureBasic   |
+| Smart Card Reader / Writer                | SmartCardRW        | SmartCardRWBasic        |
+| Tone Indicator                            | ToneIndicator      | ToneIndicatorBasic      |
 
 ## See Also
 

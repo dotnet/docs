@@ -41,37 +41,11 @@ Thereafter, applications and Service Objects may use the following to set or get
 
 A line display device may support character-level or device-level blinking at adjustable blink rates. If this feature is supported, the Service Object should set the **Properties.CapBlink** property to one of the following **Properties.DisplayBlink** enumeration values.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>DisplayBlink Value</th>
-<th>Corresponding UnifiedPOS Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>None</strong></p></td>
-<td><p>DISP_CR_NOBLINK</p></td>
-<td><p>The device does not support blinking.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>All</strong></p></td>
-<td><p>DISP_CR_BLINKALL</p></td>
-<td><p>The device supports blinking for the entire display.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Each</strong></p></td>
-<td><p>DISP_CR_BLINKEACH</p></td>
-<td><p>The device supports blinking for each individual character.</p></td>
-</tr>
-</tbody>
-</table>
+| DisplayBlink Value | Corresponding UnifiedPOS Value | Description                                                 |
+|--------------------|--------------------------------|-------------------------------------------------------------|
+| None               | DISP_CR_NOBLINK                | The device does not support blinking.                       |
+| All                | DISP_CR_BLINKALL               | The device supports blinking for the entire display.        |
+| Each               | DISP_CR_BLINKEACH              | The device supports blinking for each individual character. |
 
 Thereafter, applications and Service Objects may use the following to set or get the blink rate:
 
@@ -81,37 +55,11 @@ Thereafter, applications and Service Objects may use the following to set or get
 
 A line display may support character-level or device-level reverse video. If this feature is supported, the Service Object should set the **Properties.CapReverse** to a value in the [DisplayReverse](ms884175\(v=winembedded.11\).md) enumeration.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>DisplayReverse Value</th>
-<th>Corresponding UnifiedPOS Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>None</strong></p></td>
-<td><p>DISP-CR_NONE</p></td>
-<td><p>Reverse video is not supported.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>All</strong></p></td>
-<td><p>DISP_CR_REVERSEALL</p></td>
-<td><p>The entire contents of the display are either displayed in reserve video or displayed normally.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Each</strong></p></td>
-<td><p>DIS_CR_REVERSEEACH</p></td>
-<td><p>Each character may be individually set to reverse video or normal.</p></td>
-</tr>
-</tbody>
-</table>
+| DisplayReverse Value | Corresponding UnifiedPOS Value | Description                                                                                     |
+|----------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| None                 | DISP-CR_NONE                   | Reverse video is not supported.                                                                 |
+| All                  | DISP_CR_REVERSEALL             | The entire contents of the display are either displayed in reserve video or displayed normally. |
+| Each                 | DIS_CR_REVERSEEACH             | Each character may be individually set to reverse video or normal.                              |
 
 The **CapReverse** property is used by the **DisplayText** method.
 
@@ -137,62 +85,16 @@ Thereafter, applications and Service Objects may use the following to set or get
 
 A line display device may support a variety of different cursor types. The **Properties.CapCursorType** property defines which of these types are supported. The **CapCursorType** property is set using the [DisplayCursors](ms884158\(v=winembedded.11\).md) enumeration and holds a bitwise indication of the supported cursor types, which can be any of the following types shown in the table.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>CapCursorType enum</th>
-<th>UnifiedPOS Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Blink</strong></p></td>
-<td><p>DISP_CCT_BLINK</p></td>
-<td><p>A blinking cursor is supported.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Block</strong></p></td>
-<td><p>DISP_CCT_BLOCK</p></td>
-<td><p>Cursor is displayable as a block.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Fixed</strong></p></td>
-<td><p>DISP_CCT_FIXED</p></td>
-<td><p>Cursor is always displayed.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>HalfBlock</strong></p></td>
-<td><p>DISP_CCT_HALFBLOCK</p></td>
-<td><p>Cursor is displayable as a half block.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>None</strong></p></td>
-<td><p>DISP_CCT_NONE</p></td>
-<td><p>Cursor is not displayable.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Other</strong></p></td>
-<td><p>DISP_CCT_OTHER</p></td>
-<td><p>Cursor is displayable, but the form is unknown.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Reverse</strong></p></td>
-<td><p>DISP_CCT_REVERSE</p></td>
-<td><p>Cursor is displayable in reverse video.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Underline</strong></p></td>
-<td><p>DISP_CCT_UNDERLINE</p></td>
-<td><p>Cursor is displayable as an underline.</p></td>
-</tr>
-</tbody>
-</table>
+| CapCursorType enum | UnifiedPOS Value   | Description                                     |
+|--------------------|--------------------|-------------------------------------------------|
+| Blink              | DISP_CCT_BLINK     | A blinking cursor is supported.                 |
+| Block              | DISP_CCT_BLOCK     | Cursor is displayable as a block.               |
+| Fixed              | DISP_CCT_FIXED     | Cursor is always displayed.                     |
+| HalfBlock          | DISP_CCT_HALFBLOCK | Cursor is displayable as a half block.          |
+| None               | DISP_CCT_NONE      | Cursor is not displayable.                      |
+| Other              | DISP_CCT_OTHER     | Cursor is displayable, but the form is unknown. |
+| Reverse            | DISP_CCT_REVERSE   | Cursor is displayable in reverse video.         |
+| Underline          | DISP_CCT_UNDERLINE | Cursor is displayable as an underline.          |
 
 Thereafter, applications and Service Objects may use the following to set or get the cursor type:
 
@@ -231,62 +133,16 @@ The Service Object may want to override the following methods if this capability
 
 A Service Object should set the **Properties.CapCharacterSet** property with the default character set capability of the line display device. This property can be set to a member of the [CharacterSetCapability](ms883993\(v=winembedded.11\).md) enumeration as shown in the following table.
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>CharacterSetCapability Value</th>
-<th>UnifiedPOS Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Alpha</strong></p></td>
-<td><p>PTR_CCS_ALPHA</p></td>
-<td><p>The default character set supports uppercase alphabetic plus numeric, space, minus, and period.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>ANSI</strong></p></td>
-<td><p>N/A</p></td>
-<td><p>This value is not used for <strong>LineDisplay</strong> devices.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>ASCII</strong></p></td>
-<td><p>PTR_CCS_ASCII</p></td>
-<td><p>The default character set supports 0x20 through 0x75.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Kana</strong></p></td>
-<td><p>PTR_CCS_KANA</p></td>
-<td><p>The default character set supports partial code page 932, including ASCII characters 0x20 through 0x7F and the Japanese Kana characters 0xA1 through 0xDF, but excluding the Japanese Kanji characters.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Kanji</strong></p></td>
-<td><p>DISP_CCS_KANJI</p></td>
-<td><p>The default character set supports code page 932 including the Shift-JIS Kanji characters, Levels 1 and 2.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Numeric</strong></p></td>
-<td><p>N/A</p></td>
-<td><p>This value is not used for <strong>LineDisplay</strong> devices.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>DISP_CCS_UNICODE</p></td>
-<td><p>The default character set supports UNICODE.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Windows</strong></p></td>
-<td><p>N/A</p></td>
-<td><p>This value is not used for <strong>LineDisplay</strong> devices.</p></td>
-</tr>
-</tbody>
-</table>
+| CharacterSetCapability Value | UnifiedPOS Value | Description                                                                                                                                                                                             |
+|------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Alpha                        | PTR_CCS_ALPHA    | The default character set supports uppercase alphabetic plus numeric, space, minus, and period.                                                                                                         |
+| ANSI                         | N/A              | This value is not used for LineDisplay devices.                                                                                                                                                         |
+| ASCII                        | PTR_CCS_ASCII    | The default character set supports 0x20 through 0x75.                                                                                                                                                   |
+| Kana                         | PTR_CCS_KANA     | The default character set supports partial code page 932, including ASCII characters 0x20 through 0x7F and the Japanese Kana characters 0xA1 through 0xDF, but excluding the Japanese Kanji characters. |
+| Kanji                        | DISP_CCS_KANJI   | The default character set supports code page 932 including the Shift-JIS Kanji characters, Levels 1 and 2.                                                                                              |
+| Numeric                      | N/A              | This value is not used for LineDisplay devices.                                                                                                                                                         |
+| Unicode                      | DISP_CCS_UNICODE | The default character set supports UNICODE.                                                                                                                                                             |
+| Windows                      | N/A              | This value is not used for LineDisplay devices.                                                                                                                                                         |
 
 Thereafter, applications and Service Objects may use the following to set or get the character set:
 

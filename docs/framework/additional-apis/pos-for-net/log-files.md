@@ -74,32 +74,11 @@ Each entry contains the following fields:
 
 - Importance level. Each log entry is marked with its level of importance which is determined by which **Logger** method is involved.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Importance Tag in Log Entries</th>
-    <th>Corresponding Logger Method</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><strong>INFO</strong></p></td>
-    <td><p>Logger.Info</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>WARNING</strong></p></td>
-    <td><p>Logger.Warning</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>ERROR</strong></p></td>
-    <td><p>Logger.Error</p></td>
-    </tr>
-    </tbody>
-    </table>
+    | Importance Tag in Log Entries | Corresponding Logger Method |
+    |-------------------------------|-----------------------------|
+    | INFO                          | Logger.Info                 |
+    | WARNING                       | Logger.Warning              |
+    | ERROR                         | Logger.Error                |
 
 - Name string specified by the code that called the **Logger** method. This string is specified when the **Logger** method is invoked and may not necessarily contain the name of the executable.
 

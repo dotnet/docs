@@ -11,36 +11,12 @@ The **LogicalDevice** class represents a logical device associated with a **PosD
 
 ## Properties
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Type</strong></p></td>
-<td><p>String representing the POS device category that the logical device belongs to.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>SoName</strong></p></td>
-<td><p>String representing the name of the Service Object.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Path</strong></p></td>
-<td><p>String representing the path of the physical device.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Name</strong></p></td>
-<td><p>String representing the name for the logical device.</p></td>
-</tr>
-</tbody>
-</table>
+| Name   | Description                                                                     |
+|--------|---------------------------------------------------------------------------------|
+| Type   | String representing the POS device category that the logical device belongs to. |
+| SoName | String representing the name of the Service Object.                             |
+| Path   | String representing the path of the physical device.                            |
+| Name   | String representing the name for the logical device.                            |
 
 ## See Also
 

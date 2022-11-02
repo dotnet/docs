@@ -34,32 +34,11 @@ Handling errors in POS for .NET follows this general procedure:
 
 5. If the applications properties are configured to accept events (**DataEventEnabled** is **true** and [FreezeEvents](ms861099\(v=winembedded.11\).md) is **false**), it responds to the **ErrorEvent** event in a manner determined by the [ErrorResponse](aa460205\(v=winembedded.11\).md) property, as indicated in the following table.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><strong>Value</strong></th>
-    <th><strong>Meaning of Response</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Clear</p></td>
-    <td><p>Clears any buffered <strong>DataEvent</strong> events and <strong>ErrorEvent</strong> events, exits the Error state, and changes the device <strong>State</strong> to <strong>Idle</strong>.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>ContinueInput</p></td>
-    <td><p>Acknowledges the error and directs the device to continue processing. The device remains in the Error state and will deliver additional data events as directed by the <strong>DataEventEnabled</strong> property. When all input has been delivered, and the <strong>DataEventEnabled</strong> property is again set to <strong>true</strong>, another <strong>ErrorEvent</strong> is delivered with the locus <strong>Input</strong>.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Retry</p></td>
-    <td><p>Directs the device to retry the input. The Error state is exited, and <strong>State</strong> is changed to <strong>Idle</strong>. This response is only selected when the device chapter specifically allows it and when the locus is <strong>Input</strong>.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    | Value         | Meaning of Response                                                                                                                                                                                                                                                                                                                                |
+    |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Clear         | Clears any buffered DataEvent events and ErrorEvent events, exits the Error state, and changes the device State to Idle.                                                                                                                                                                                                                           |
+    | ContinueInput | Acknowledges the error and directs the device to continue processing. The device remains in the Error state and will deliver additional data events as directed by the DataEventEnabled property. When all input has been delivered, and the DataEventEnabled property is again set to true, another ErrorEvent is delivered with the locus Input. |
+    | Retry         | Directs the device to retry the input. The Error state is exited, and State is changed to Idle. This response is only selected when the device chapter specifically allows it and when the locus is Input.                                                                                                                                         |
 
     The application may also take implementation-specific steps to respond to the error at this time.
 

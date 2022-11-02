@@ -71,6 +71,7 @@ POS for .NET verifies that the device has been opened, then retrieves or sets th
 
 Attempting to set **PowerNotify** can cause the following exceptions to be thrown.
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -97,6 +98,7 @@ Attempting to set **PowerNotify** can cause the following exceptions to be throw
 </tr>
 </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 ## PowerState Property
 
@@ -106,6 +108,7 @@ POS for .NET verifies that the device has been opened, and then retrieves the cu
 
 Setting [PowerState](aa460847\(v=winembedded.11\).md) can cause the following exceptions to be thrown.
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -130,6 +133,7 @@ Setting [PowerState](aa460847\(v=winembedded.11\).md) can cause the following ex
 </tr>
 </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 ## ServiceObjectDescription Property
 

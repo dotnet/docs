@@ -9,6 +9,7 @@ ms.custom: pos-restored-from-archive
 
 POSDM uses the following commands.
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -229,6 +230,7 @@ POSDM uses the following commands.
 </tr>
 </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 ## See Also
 

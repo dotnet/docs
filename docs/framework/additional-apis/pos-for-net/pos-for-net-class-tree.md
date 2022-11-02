@@ -25,56 +25,17 @@ The **Interface** classes are the most fundamental base classes provided by POS 
 
 The **Base** classes, each of which is derived from its corresponding **Basic** class, offer the greatest level of functionality. The **Base** classes provide nearly complete Service Object implementations. By deriving from these classes, the Service Object developer only needs to implement code to control the specific hardware device. Since **Base** classes provide so much functionality, Service Object developers should use them whenever possible. POS for .NET provides **Base**-level support for only nine **primary** device types.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>UPOS Device</th>
-<th>Corresponding POS for .NET Base Class</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Cash Drawer</p></td>
-<td><p><a href="aa460345(v=winembedded.11).md">CashDrawerBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Check Scanner</p></td>
-<td><p><a href="aa460371(v=winembedded.11).md">CheckScannerBase</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Line Displays</p></td>
-<td><p><a href="aa460464(v=winembedded.11).md">LineDisplayBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Magnetic Stripe Reader</p></td>
-<td><p><a href="aa460596(v=winembedded.11).md">MsrBase</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Pin Pad</p></td>
-<td><p><a href="aa460647(v=winembedded.11).md">PinPadBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>POS Keyboards</p></td>
-<td><p><a href="aa460659(v=winembedded.11).md">PosKeyboardBase</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>POS Printers</p></td>
-<td><p><a href="aa460669(v=winembedded.11).md">PosPrinterBase</a></p></td>
-</tr>
-<tr class="even">
-<td><p>RFIDScanner</p></td>
-<td><p><a href="cc297328(v=winembedded.11).md">RFIDScanner</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Scanner (Bar Code Reader)</p></td>
-<td><p><a href="ms881268(v=winembedded.11).md">ScannerBase</a></p></td>
-</tr>
-</tbody>
-</table>
+| UPOS Device               | Corresponding POS for .NET Base Class |
+|---------------------------|---------------------------------------|
+| Cash Drawer               | CashDrawerBase                        |
+| Check Scanner             | CheckScannerBase                      |
+| Line Displays             | LineDisplayBase                       |
+| Magnetic Stripe Reader    | MsrBase                               |
+| Pin Pad                   | PinPadBase                            |
+| POS Keyboards             | PosKeyboardBase                       |
+| POS Printers              | PosPrinterBase                        |
+| RFIDScanner               | RFIDScanner                           |
+| Scanner (Bar Code Reader) | ScannerBase                           |
 
 ## See Also
 

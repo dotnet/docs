@@ -84,7 +84,7 @@ The preceding C# code:
 
 ### Create a client `Socket`
 
-`TcpClient`'s default constructor tries to create a _dual-mode socket_, if it's not viable, it creates an IPv4 socket with the `new Socket(SocketType, ProtocolType)` constructor. Consider the following TCP client code:
+`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via `[new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket)` constructor, if [IPv6 is supported (Socket.OSSupportsIPv6 == true)](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>). Otherwise, it fallbacks to IPv4 socket. Consider the following TCP client code:
 
 ```csharp
 var client = new TcpClient();
@@ -98,9 +98,9 @@ var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
 One of `TcpClient`'s constructor takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
 
-- `AddressFamily.InterNetwork`: for IPv4 socket.
-- `AddressFamily.InterNetworkV6`: for IPv6 socket.
-- `AddressFamily.Unknown`: for dual-mode socket (by default, this enum value is used).
+- `[AddressFamily.InterNetwork](xref:System.Net.Sockets.AddressFamily.InterNetwork)`: for IPv4 socket.
+- `[AddressFamily.InterNetworkV6](xref:System.Net.Sockets.AddressFamily.InterNetworkV6)`: for IPv6 socket.
+- `[AddressFamily.Unknown](xref:System.Net.Sockets.AddressFamily.Unknown)`: for dual-stack socket (by default, this enum value is used).
 
 Consider the following TCP client code:
 

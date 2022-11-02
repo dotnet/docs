@@ -27,7 +27,7 @@ The following features are available in Visual Studio 2022 version 17.2:
 
 - [Raw string literals](#raw-string-literals)
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
-- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves-overview.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
 The following features are available in Visual Studio 2022 version 17.1:
 

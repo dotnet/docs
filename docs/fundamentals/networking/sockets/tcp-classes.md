@@ -78,39 +78,43 @@ The preceding C# code:
 - Writes the sent message to the console.
 - Finally, calls the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to stop listening on the port.
 
-## Equivalent usages of `TcpClient` and `TcpListener` classes in `Socket` class
+## Advanced TCP control with `Socket` class
 
-`TcpListener` and `TcpClient` classes directly uses `Socket` class in underlying implementation. It means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
+`TcpListener` and `TcpClient` classes internal implementation relies on the `Socket` class. This means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
 
 ### `TcpClient` Constructors
 
-`TcpClient's` default constructor basically tries to create a `dual mode socket`, if it's not viable, it creates IPv4 Socket via using `Socket(SocketType, ProtocolType)` constructor. It means following code snippets are equivalent:
+`TcpClient`'s default constructor tries to create a _dual-mode socket_, if it's not viable, it creates an IPv4 socket with the `new Socket(SocketType, ProtocolType)` constructor. Consider the following TCP client code:
 
 ```csharp
 TcpClient client = new TcpClient();
 ```
 
+The preceding TCP client code is functionally equivalent to the following socket code:
+
 ```csharp
 Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
-One of `TcpClient's` constructor takes `AddressFamily` enum as parameter. You can pass three different enum value to this constructor, otherwise it throws an <xref:System.ArgumentException>. Valid enums are:
+One of `TcpClient`'s constructor takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
 
-- `AddressFamily.InterNetwork` for IPv4 Socket
-- `AddressFamily.InterNetworkV6` for IPv6 Socket
-- `AddressFamily.Unknown` for Dual-Mode Socket (basically default constructor calls this constructor with this enum value)
+- `AddressFamily.InterNetwork`: for IPv4 socket.
+- `AddressFamily.InterNetworkV6`: for IPv6 socket.
+- `AddressFamily.Unknown`: for dual-mode socket (by default, this enum value is used).
 
-It means these code snippets are equivalent:
+Consider the following TCP client code:
 
 ```csharp
 TcpClient client = new TcpClient(AddressFamily.InterNetwork);
 ```
 
+The preceding TCP client code is functionally equivalent to the following socket code:
+
 ```csharp
 Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
-Other `TcpClient's` constructor takes <xref:System.Net.IPEndPoint> class as parameter. This constructor basically gets `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates `Socket`, afterwards calls <xref:System.Net.Sockets.Socket.Bind%2A> on underlying `Socket` member with given <xref:System.Net.IPEndPoint> argument. Equivalent code snippets:
+Other `TcpClient`'s constructor takes an <xref:System.Net.IPEndPoint> class as a parameter. This constructor accepts an `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates a `Socket`. As part of this, it calls <xref:System.Net.Sockets.Socket.Bind%2A> on the underlying `Socket` member with the given <xref:System.Net.IPEndPoint> argument. Consider the following TCP client code:
 
 ```csharp
 // Example IPEndPoint object
@@ -118,6 +122,8 @@ IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
 
 TcpClient client = new TcpClient(ep);
 ```
+
+The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
 // Example IPEndPoint object
@@ -127,11 +133,13 @@ Socket socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp
 socket.Bind(ep);
 ```
 
-Last but not least constructor overload of `TcpClient's` takes `hostname` and `port` as parameter, the difference from default constructor in here is; this constructor tries to connect given `hostname` and `port`. Equivalent code snippets:
+Another `TcpClient` constructor overload accepts a `hostname` and `port` as parameters, the difference from the default constructor is that this constructor tries to connect to the given `hostname` and `port`. Consider the following TCP client code:
 
 ```csharp
 TcpClient client = new TcpClient("www.example.com", 80);
 ```
+
+The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
 Socket socket = new Socket(SocketType.Stream, ProtocolType.Tcp);

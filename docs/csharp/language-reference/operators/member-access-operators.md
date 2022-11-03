@@ -188,7 +188,7 @@ The `^` operator indicates the element position from the end of a sequence. For 
 
 As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
 
-You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
+You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
 ## Range operator ..
 
@@ -226,7 +226,7 @@ The following example demonstrates the effect of using all the ranges presented 
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible":::
 
-For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
+For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
 ## Operator overloadability
 

@@ -2737,10 +2737,6 @@
             "redirect_url": "/dotnet/csharp/whats-new/tutorials/top-level-statements"
         },
         {
-            "source_path_from_root": "/docs/csharp/tutorials/generate-consume-asynchronous-stream.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/generate-consume-asynchronous-stream"
-        },
-        {
             "source_path_from_root": "/docs/csharp/tutorials/index.md",
             "redirect_url": "/dotnet/csharp/fundamentals/tutorials/how-to-display-command-line-arguments"
         },
@@ -2805,20 +2801,8 @@
             "redirect_url": "/dotnet/core/docker/"
         },
         {
-            "source_path_from_root": "/docs/csharp/tutorials/mixins-with-default-interface-methods.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/mixins-with-default-interface-methods"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/tutorials/nullable-reference-types.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/nullable-reference-types"
-        },
-        {
             "source_path_from_root": "/docs/csharp/tutorials/pattern-matching.md",
             "redirect_url": "/dotnet/csharp/fundamentals/tutorials/pattern-matching"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/tutorials/ranges-indexes.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/ranges-indexes"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/upgrade-to-nullable-references.md",
@@ -2834,7 +2818,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-10",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-11",
             "redirect_document_id": true
         },
         {
@@ -2858,6 +2842,10 @@
             "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
+            "source_path_from_root": "/docs/csharp/whats-new/csharp-8.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-80"
+        },
+        {
             "source_path_from_root": "/docs/csharp/whats-new/index.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-11",
             "ms.custom": "updateeachrelease"
@@ -2865,6 +2853,26 @@
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/upgrade-to-nullable-references.md",
             "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/default-interface-methods-versions.md",
+            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md",
+            "redirect_url": "/dotnet/csharp/tutorials/generate-consume-asynchronous-stream"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/mixins-with-default-interface-methods.md",
+            "redirect_url": "/dotnet/csharp/tutorials/mixins-with-default-interface-methods"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/nullable-reference-types.md",
+            "redirect_url": "/dotnet/csharp/tutorials/nullable-reference-types"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/ranges-indexes.md",
+            "redirect_url": "/dotnet/csharp/tutorials/ranges-indexes"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/warning-waves.md",

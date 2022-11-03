@@ -2617,6 +2617,10 @@ items:
         href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
         href: networking/tcp/tcp-services.md
+    - name: WebSockets
+      items:
+      - name: WebSockets support
+        href: networking/websockets.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library

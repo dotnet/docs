@@ -55,7 +55,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-To support a new feature where <xref:System.Diagnostics?displayProperty=fullName> reads from the *app.config* file, we had to add the implicit `<section name="system.diagnostics" ... >` element.
+To support a new feature where <xref:System.Diagnostics?displayProperty=fullName> reads from the *app.config* file, we had to add the implicit `<section name="system.diagnostics">` element.
 
 ## Recommended action
 

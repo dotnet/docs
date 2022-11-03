@@ -1,5 +1,6 @@
----
+﻿---
 title: DeviceInfo Class
+description: DeviceInfo Class (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -49,3 +50,4 @@ The following table shows the **DeviceInfo** methods.
 [Developing a POS Application](developing-a-pos-application.md)
 [POS for .NET API Support](pos-for-net-api-support.md)
 [POS Device Manager](pos-device-manager.md)
+

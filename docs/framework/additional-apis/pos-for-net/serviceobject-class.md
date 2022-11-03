@@ -1,5 +1,6 @@
----
+﻿---
 title: ServiceObject Class
+description: ServiceObject Class (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -61,3 +62,4 @@ The **ServiceObject** class represents the management view of a Service Object.
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+

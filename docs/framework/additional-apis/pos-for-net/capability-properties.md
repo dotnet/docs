@@ -1,5 +1,6 @@
----
+﻿---
 title: Capability Properties
+description: Capability Properties (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -32,3 +33,4 @@ The Service Object developer should be aware of what the POS for .NET framework 
 
 <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadProperties>
 <xref:Microsoft.PointOfService.StatusUpdateEventHandler>
+

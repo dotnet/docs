@@ -1,5 +1,6 @@
----
+﻿---
 title: Introducing Service Object Reader Threads
+description: Introducing Service Object Reader Threads (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -280,3 +281,4 @@ namespace Samples.ServiceObjects.Advanced
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+

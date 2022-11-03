@@ -1,5 +1,6 @@
----
+﻿---
 title: Developing Service Objects Using Base Classes
+description: Developing Service Objects Using Base Classes (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -36,3 +37,4 @@ The Unified Point of Service (UnifiedPOS) v1.14 specification defines 36 Unified
 
 - [Developing a Custom Service Object](developing-a-custom-service-object.md)
     Discusses the procedures, issues, and conventions for developing a custom Service Object.
+

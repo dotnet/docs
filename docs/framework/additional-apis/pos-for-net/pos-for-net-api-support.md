@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET API Support (POS for .NET v1.14 SDK Documentation)
+description: POS for .NET API Support (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -33,3 +34,4 @@ The Microsoft Point of Service for .NET (POS for .NET) class library supports th
 
 - <xref:Microsoft.PointOfService>
     Contains the POS for .NET API topics, including the **PosExplorer** and **PosCommon** classes, as well as interfaces for specific POS devices.
+

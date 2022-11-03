@@ -1,5 +1,6 @@
----
+﻿---
 title: Using Visual Studio .NET Management Extensions and the POS for .NET WMI Management Classes
+description: Using Visual Studio .NET Management Extensions and the POS for .NET WMI Management Classes (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -80,3 +81,4 @@ namespace Management
 [POS Device Manager](pos-device-manager.md)
 [Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+

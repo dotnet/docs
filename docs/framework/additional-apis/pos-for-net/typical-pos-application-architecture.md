@@ -1,5 +1,6 @@
----
+﻿---
 title: Typical POS Application Architecture
+description: Typical POS Application Architecture (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -40,3 +41,4 @@ The **PosExplorer** class exposes public methods to POS applications that create
 
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
 [Developing a POS Application](developing-a-pos-application.md)
+

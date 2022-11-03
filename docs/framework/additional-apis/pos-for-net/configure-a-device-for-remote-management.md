@@ -1,5 +1,6 @@
----
+﻿---
 title: Configure a device for remote management
+description: Configure a device for remote management (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -61,3 +62,4 @@ For more information about how to enable WMI traffic, see [Connecting to WMI Rem
 #### Other Resources
 
 [POS Device Manager](pos-device-manager.md)
+

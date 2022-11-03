@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET v1.14.1 SDK Documentation
+description: POS for .NET v1.14.1 SDK Documentation (POS for .NET v1.14 SDK Documentation)
 ms.date: 04/21/2017
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -83,3 +84,4 @@ The following documentation can help you use POS for .NET to develop POS applica
 #### Reference
 
 <xref:Microsoft.PointOfService>
+

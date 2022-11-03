@@ -1,5 +1,6 @@
----
+﻿---
 title: Using VBScript to Manage Devices
+description: Using VBScript to Manage Devices (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -179,3 +180,4 @@ Added 'MSRSim' to: Msr  Microsoft Msr Simulator
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
 [POS Device Manager](pos-device-manager.md)
+

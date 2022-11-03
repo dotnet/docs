@@ -1,5 +1,6 @@
----
+﻿---
 title: Data Decoding
+description: Data Decoding (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -154,3 +155,4 @@ Additional details about how label and type data should be extracted from a scan
 #### Other Resources
 
 [Scanner Implementation](scanner-implementation.md)
+

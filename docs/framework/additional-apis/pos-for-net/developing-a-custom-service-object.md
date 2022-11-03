@@ -1,5 +1,6 @@
----
+﻿---
 title: Developing a Custom Service Object
+description: Developing a Custom Service Object (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -53,3 +54,4 @@ Service Objects are typically implemented by independent hardware vendors (IHVs)
 
 - [POS Device Manager](pos-device-manager.md)
     Describes using POS Device Manager to configure a POS for .NET installation.
+

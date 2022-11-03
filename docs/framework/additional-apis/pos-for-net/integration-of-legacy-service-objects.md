@@ -1,5 +1,6 @@
----
+﻿---
 title: Integration of Legacy Service Objects
+description: Integration of Legacy Service Objects (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -19,3 +20,4 @@ Microsoft Point of Service for .NET (POS for .NET) supports both .NET-based Serv
 #### Other Resources
 
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
+

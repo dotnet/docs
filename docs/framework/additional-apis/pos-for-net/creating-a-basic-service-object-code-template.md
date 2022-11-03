@@ -1,5 +1,6 @@
----
+﻿---
 title: Creating a Basic Service Object Code Template
+description: Creating a Basic Service Object Code Template (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -71,3 +72,4 @@ This sample does not compile as is. Its purpose is to demonstrate what elements 
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+

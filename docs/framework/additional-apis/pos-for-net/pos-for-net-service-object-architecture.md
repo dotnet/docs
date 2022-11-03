@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET Service Object Architecture
+description: POS for .NET Service Object Architecture (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -45,3 +46,4 @@ There are features and design elements in POS for .NET that must be taken into a
 
 - [System Configuration](system-configuration.md)
     Describes how to configure POS for .NET to meet the requirements of your installation.
+

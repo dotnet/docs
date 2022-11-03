@@ -1,5 +1,6 @@
----
+﻿---
 title: LogicalDevice Class
+description: LogicalDevice Class (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -27,3 +28,4 @@ The **LogicalDevice** class represents a logical device associated with a **PosD
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+

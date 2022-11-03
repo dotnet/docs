@@ -1,5 +1,6 @@
----
+﻿---
 title: Base Class DirectIO Method
+description: Base Class DirectIO Method (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -28,3 +29,4 @@ Using this event will make an application incompatible with devices from other v
 #### Other Resources
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+

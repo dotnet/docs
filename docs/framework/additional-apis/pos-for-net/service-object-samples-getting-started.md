@@ -1,5 +1,6 @@
----
+﻿---
 title: 'Service Object Samples: Getting Started'
+description: 'Service Object Samples: Getting Started' (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -38,3 +39,4 @@ This section provides a step-by-step guide to creating a simple, but functional 
 
 - [Developing a POS Application](developing-a-pos-application.md)
     Explains how to create POS for .NET applications, the ultimate consumers of POS for .NET Service Objects.
+

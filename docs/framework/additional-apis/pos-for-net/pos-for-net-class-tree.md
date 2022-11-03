@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET Class Tree
+description: POS for .NET Class Tree (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -47,3 +48,4 @@ The **Base** classes, each of which is derived from its corresponding **Basic** 
 
 [Developing a Custom Service Object](developing-a-custom-service-object.md)
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+

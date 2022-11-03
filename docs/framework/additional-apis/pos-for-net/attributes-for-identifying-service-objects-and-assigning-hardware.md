@@ -1,5 +1,6 @@
----
+﻿---
 title: Attributes for Identifying Service Objects and Assigning Hardware
+description: Attributes for Identifying Service Objects and Assigning Hardware (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -36,3 +37,4 @@ In order to provide these features, POS for .NET depends on three different .NET
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
 [System Configuration](system-configuration.md)
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+

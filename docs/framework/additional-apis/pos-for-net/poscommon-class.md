@@ -1,5 +1,6 @@
----
+﻿---
 title: PosCommon Class (POS for .NET v1.14 SDK Documentation)
+description: PosCommon Class (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -109,3 +110,4 @@ pcs.Close();
 #### Concepts
 
 [POS for .NET Class Tree](pos-for-net-class-tree.md)
+

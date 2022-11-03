@@ -1,5 +1,6 @@
----
+﻿---
 title: PinPad Sample
+description: PinPad Sample (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -165,3 +166,4 @@ namespace SOSamples.PinPad
 #### Other Resources
 
 [PinPad Implementation](pinpad-implementation.md)
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET Registry Settings
+description: POS for .NET Registry Settings (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -78,3 +79,4 @@ The following table shows the values of this key.
 #### Other Resources
 
 [System Configuration](system-configuration.md)
+

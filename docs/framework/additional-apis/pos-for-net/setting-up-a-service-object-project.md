@@ -1,5 +1,6 @@
----
+﻿---
 title: Setting up a Service Object Project
+description: Setting up a Service Object Project (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -50,3 +51,4 @@ To begin programming your Service Object, you first need to create a new **Class
 #### Other Resources
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET FAQ (POS for .NET v1.14 SDK Documentation)
+description: POS for .NET FAQ (POS for .NET v1.14 SDK Documentation)
 ms.date: 04/01/2017
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -159,3 +160,4 @@ It depends on the type of device that you want to support:
 ### Where can I find the service object that I need for a specific device?
 
 You should contact the device manufacturer or your vendor to see whether they offer a .NET Service Object or a legacy OPOS service object for one of the supported legacy devices. Anyone can develop a .NET service object, and there are no requirements to register the service object with Microsoft. Therefore, we do not have a list available that identifies which devices are compatible with POS for .NET or OPOS.
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: Event Handler Sample
+description: Event Handler Sample (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -441,3 +442,4 @@ Opening device: AsyncOutputPrinter, type: PosPrinterRegistering Event: ErrorEven
 #### Other Resources
 
 [Developing a Custom Service Object](developing-a-custom-service-object.md)
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: Scanner Implementation
+description: Scanner Implementation (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -34,3 +35,4 @@ A queued **DataEvent** event will only be delivered to the application when the 
 
 - [Scanner Events](scanner-events.md)
     Demonstrates how a scanner Service Object uses POS for .NET queuing to raise events to applications.
+

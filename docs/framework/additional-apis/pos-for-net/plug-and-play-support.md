@@ -1,5 +1,6 @@
----
+﻿---
 title: Plug and Play Support
+description: Plug and Play Support (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -89,3 +90,4 @@ void explorer_DeviceAddedEvent(object sender, DeviceChangedEventArgs e)
 #### Other Resources
 
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+

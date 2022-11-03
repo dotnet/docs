@@ -1,5 +1,6 @@
----
+﻿---
 title: Event Management
+description: Event Management (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -83,3 +84,4 @@ Rules for event queue management are as follows:
 
 [Device Output Models](device-output-models.md)
 [POS Exception Handling](pos-exception-handling.md)
+

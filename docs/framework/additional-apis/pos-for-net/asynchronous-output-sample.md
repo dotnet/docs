@@ -1,5 +1,6 @@
----
+﻿---
 title: Asynchronous Output Sample
+description: Asynchronous Output Sample (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -158,3 +159,4 @@ The application code in the [Event Handler Sample](event-handler-sample.md) can 
 #### Other Resources
 
 [Developing a Custom Service Object](developing-a-custom-service-object.md)
+

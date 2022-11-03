@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET Architecture (POS for .NET v1.14 SDK Documentation)
+description: POS for .NET Architecture (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -58,3 +59,4 @@ POS for .NET supplies **Base** classes for the following devices:
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
 [POS for .NET API Support](pos-for-net-api-support.md)
+

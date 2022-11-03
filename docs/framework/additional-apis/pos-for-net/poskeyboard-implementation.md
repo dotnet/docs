@@ -1,5 +1,6 @@
----
+﻿---
 title: PosKeyboard Implementation
+description: PosKeyboard Implementation (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -365,3 +366,4 @@ namespace SOSamples.Keyboard
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+

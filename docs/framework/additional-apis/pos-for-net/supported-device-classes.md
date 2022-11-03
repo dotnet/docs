@@ -1,5 +1,6 @@
----
+﻿---
 title: Supported Device Classes (POS for .NET v1.14 SDK Documentation)
+description: Supported Device Classes (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -80,3 +81,4 @@ The following table lists the UnifiedPOS devices with their equivalent POS for .
 #### Other Resources
 
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
+

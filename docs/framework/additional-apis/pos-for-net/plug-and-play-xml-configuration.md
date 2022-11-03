@@ -1,5 +1,6 @@
----
+﻿---
 title: Plug and Play XML Configuration
+description: Plug and Play XML Configuration (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -48,3 +49,4 @@ If the **Override** attribute is not set, then neither the XML nor the **Hardwar
 
 [Plug and Play Support](plug-and-play-support.md)
 [POS for .NET Registry Settings](pos-for-net-registry-settings.md)
+

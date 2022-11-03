@@ -1,5 +1,6 @@
----
+﻿---
 title: System Configuration
+description: System Configuration (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -30,3 +31,4 @@ Microsoft Point of Service for .NET (POS for .NET) has several configurable sett
 
 - [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
     Outlines the general concepts of the POS for .NET architecture.
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: LineDisplay Implementation
+description: LineDisplay Implementation (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -22,3 +23,4 @@ A **LineDisplay** Service Object is used to display text, bitmaps, and glyphs to
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
 
 <xref:Microsoft.PointOfService.BaseServiceObjects>
+

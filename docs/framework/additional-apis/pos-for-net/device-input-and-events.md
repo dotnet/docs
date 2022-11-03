@@ -1,5 +1,6 @@
----
+﻿---
 title: Device Input and Events
+description: Device Input and Events (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -58,3 +59,4 @@ Although most device input is read asynchronously by the Service Object and then
 #### Other Resources
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: Manually manage your POS for .NET devices (POS for .NET v1.14 SDK Documentation)
+description: Manually manage your POS for .NET devices (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -216,3 +217,4 @@ The following table lists posdm.exe commands and the equivalent XML that you mus
 </tbody>
 </table>
 <!-- markdownlint-enable MD033 -->
+

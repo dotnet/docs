@@ -1,5 +1,6 @@
----
+﻿---
 title: DeviceProperty Class
+description: DeviceProperty Class (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -32,3 +33,4 @@ The **DeviceProperty** class represents a name/value pair of a configuration pro
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+

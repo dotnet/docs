@@ -1,5 +1,6 @@
----
+﻿---
 title: PosExplorer Class (POS for .NET v1.14 SDK Documentation)
+description: PosExplorer Class (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -100,3 +101,4 @@ static void Main(string[] args)
 
 [POS for .NET API Support](pos-for-net-api-support.md)
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+

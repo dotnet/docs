@@ -1,5 +1,6 @@
----
+﻿---
 title: LineDisplay Capabilities
+description: LineDisplay Capabilities (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -157,3 +158,4 @@ Thereafter, applications and Service Objects may use the following to set or get
 #### Other Resources
 
 [LineDisplay Implementation](linedisplay-implementation.md)
+

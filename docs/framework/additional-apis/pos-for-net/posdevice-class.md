@@ -1,5 +1,6 @@
----
+﻿---
 title: PosDevice Class
+description: PosDevice Class (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -74,3 +75,4 @@ The **PosDevice** class represents a single physical POS device. The class provi
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+

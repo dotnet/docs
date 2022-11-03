@@ -1,5 +1,6 @@
----
+﻿---
 title: CashDrawer Implementation
+description: CashDrawer Implementation (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -46,3 +47,4 @@ If **CapStatusMultiDrawerDetect** is set to **false**, the method **WaitForDrawe
 #### Other Resources
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+

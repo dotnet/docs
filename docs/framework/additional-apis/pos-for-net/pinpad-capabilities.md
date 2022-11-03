@@ -1,5 +1,6 @@
----
+﻿---
 title: PinPad Capabilities
+description: PinPad Capabilities (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -48,3 +49,4 @@ A **PinPad** Service Object may send the following events to the application:
 #### Other Resources
 
 [PinPad Implementation](pinpad-implementation.md)
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET Application Compatibility with 32-bit OPOS Service Objects (POS for .NET v1.14 SDK Documentation)
+description: POS for .NET Application Compatibility with 32-bit OPOS Service Objects (POS for .NET v1.14 SDK Documentation) (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -128,3 +129,4 @@ for ($i = 2; $i -lt 38; $i++) {
 #### Other Resources
 
 [Developing a POS Application](developing-a-pos-application.md)
+

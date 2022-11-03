@@ -1,5 +1,6 @@
----
+﻿---
 title: Exception Classes
+description: Exception Classes (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -119,3 +120,4 @@ catch (PosControlException e)
 #### Other Resources
 
 [POS for .NET API Support](pos-for-net-api-support.md)
+

@@ -1,5 +1,6 @@
----
+﻿---
 title: POS for .NET Integration with Plug and Play
+description: POS for .NET Integration with Plug and Play (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
 ms.custom: pos-restored-from-archive
@@ -38,3 +39,4 @@ The **PosExplorer** class exposes two Plug and Play events for use by POS applic
 #### Other Resources
 
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
+

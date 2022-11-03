@@ -43,7 +43,7 @@ The `dotnet new uninstall` command uninstalls a template package at the `PATH` o
 
 - **`<PATH|NUGET_ID>`**
 
-  The folder on the file system or the NuGet package identifier the package was installed from. Note that version for NuGet package should not be specified.
+  The folder on the file system or the NuGet package identifier the package was installed from. Note that the version for the NuGet package should not be specified.
 
 ## Options
 

@@ -92,7 +92,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Location to place the generated output. The default is the current directory. For the list command, it might be needed to specify the output directory to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
+  Location to place the generated output. The default is the current directory. For the list command, it might be necessary to specify the output directory to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
 
 - **`--project <PROJECT_PATH>`**
 

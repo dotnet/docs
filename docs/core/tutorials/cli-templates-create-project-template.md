@@ -27,7 +27,7 @@ You can view the completed template in the [.NET Samples GitHub repository](http
 > |Test templates|[dotnet/test-templates](https://github.com/dotnet/test-templates)|
 > |MAUI templates|[dotnet/maui](https://github.com/dotnet/maui)|
 >
-> You can also view the templates that are installed on your machine by running the `dotnet new list` command.
+> You can view the templates that are installed on your machine by running the `dotnet new list` command.
 
 In this part of the series you'll learn how to:
 

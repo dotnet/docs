@@ -46,7 +46,7 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 - **`<PATH|NUGET_ID>`**
 
-  The folder on the file system or the NuGet package identifier to install the template package from. `dotnet new` attempts to install the NuGet package from the NuGet sources available for the current working directory and the sources specified via `--add-source` option.
+  The folder on the file system or the NuGet package identifier to install the template package from. `dotnet new` attempts to install the NuGet package from the NuGet sources available for the current working directory and the sources specified via the `--add-source` option.
   If you want to install a specific version or prerelease version of a template package from NuGet source, specify the version in the format `<package-name>::<package-version>`.
 
 ## Options

@@ -58,9 +58,9 @@ The following table shows the templates that come pre-installed with the .NET SD
 
 ## Template options
 
-Each template may have additional options available. To show the additional options available for the template use `--help` option with specifying the template name as an argument, for example: `dotnet new console --help`.
-In case the template supports multiple languages, this command will show help for the template in default language. By combining it with `--language` option, you can see the help for other language: `dotnet new console --help --language F#`.
-The templates shipped with .NET SDK have the following additional options:
+Each template may have additional options available. To show the additional options available for the template use the `--help` option with the template name argument, for example: `dotnet new console --help`.
+In case the template supports multiple languages, this command will show help for the template in the default language. By combining it with the `--language` option, you can see the help for other languages: `dotnet new console --help --language F#`.
+The templates that ship with the .NET SDK have the following additional options:
 
 ## `console`
 

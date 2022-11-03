@@ -98,34 +98,32 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item with 
 
 ## Use the old program style
 
-Starting .NET SDK 6.0.300, the `console` template has `--use-program-main` option. Use it to create the console project that does not use top-level statements and has `Main` method.
+Starting with .NET SDK 6.0.300, the `console` template has a `--use-program-main` option. Use it to create a console project that doesn't use top-level statements and has a `Main` method.
 
-01. Create a new project that targets .NET 5.
+```dotnetcli
+dotnet new console --use-program-main
+```
 
-    ```dotnetcli
-    dotnet new console --use-program-main
-    ```
+The generated `Program.cs` is as follows:
 
-    The generated `Program.cs` is as following:
-
-    ```csharp
-    namespace MyProject;
-    class Program
+```csharp
+namespace MyProject;
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.WriteLine("Hello, World!");
     }
-    ```
+}
+```
 
 ### Use the old program style in Visual Studio
 
-01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, select "Do not use top-level statements" check box.
+01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, select the **Do not use top-level statements** check box.
 
     :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio do not use top-level statements check box":::
 
-01. After your project is created, the `Program.cs` content is as following:
+01. After your project is created, the `Program.cs` content is as follows:
 
     ```csharp
     namespace MyProject;
@@ -140,7 +138,9 @@ Starting .NET SDK 6.0.300, the `console` template has `--use-program-main` optio
 
 > [!NOTE]
 > Visual Studio preserves the value for the options next time you create the project based on the same template, so by default when creating Console App project next time the "Do not use top-level statements" check box will be checked.
-> The content of `Program.cs` file might be different to match code style defined in the global Visual Studio text editor settings or `EditorConfig` file.
+> The content of the `Program.cs` file might be different to match the code style defined in the global Visual Studio text editor settings or the `EditorConfig` file.
+>
+> For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options?view=vs-2022) and [Options, Text Editor, C#, Advanced](/visualstudio/ide/reference/options-text-editor-csharp-advanced?view=vs-2022).
 
 ## Template feedback
 

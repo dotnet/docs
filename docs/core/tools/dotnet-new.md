@@ -134,7 +134,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
 - **`--project <PROJECT_PATH>`**
 
-  The project that the template is added to. This project is used for context evaluation. Optional, by default the project in current or parent directories will be used. Available since .NET SDK 7.0.100.
+  The project that the template is added to. This project is used for context evaluation. If not specified, the project in the current or parent directories will be used. Available since .NET SDK 7.0.100.
 
 - **`-d|--diagnostics`**
 

@@ -45,4 +45,3 @@ You can access this WMI provider through the WMI API or by using the command-lin
 
 - [Developing a Custom Service Object](developing-a-custom-service-object.md)
     Demonstrates how to create POS for .NET applications which use Service Objects to communicate with hardware devices.
-

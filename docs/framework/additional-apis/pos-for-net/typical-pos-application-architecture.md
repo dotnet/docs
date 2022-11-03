@@ -41,4 +41,3 @@ The **PosExplorer** class exposes public methods to POS applications that create
 
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
 [Developing a POS Application](developing-a-pos-application.md)
-

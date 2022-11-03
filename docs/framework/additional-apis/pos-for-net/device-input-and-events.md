@@ -59,4 +59,3 @@ Although most device input is read asynchronously by the Service Object and then
 #### Other Resources
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
-

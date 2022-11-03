@@ -101,4 +101,3 @@ static void Main(string[] args)
 
 [POS for .NET API Support](pos-for-net-api-support.md)
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
-

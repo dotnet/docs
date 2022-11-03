@@ -59,4 +59,3 @@ POS for .NET supplies **Base** classes for the following devices:
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
 [POS for .NET API Support](pos-for-net-api-support.md)
-

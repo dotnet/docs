@@ -15,4 +15,3 @@ This document does not provide you with any legal rights to any intellectual pro
 © 2017 Microsoft Corporation. All rights reserved.
 
 Microsoft, MS-DOS, JScript, MSDN, Visual Basic, Visual C\#, Visual Studio, Windows, Windows Server, Windows Vista, and Win32 are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
-

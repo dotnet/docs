@@ -101,4 +101,3 @@ protected override PrintResults PrintNormalImpl(
 #### Other Resources
 
 [Developing a Custom Service Object](developing-a-custom-service-object.md)
-

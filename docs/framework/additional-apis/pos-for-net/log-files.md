@@ -104,4 +104,3 @@ If there is a log file open, and the application calls the <xref:Microsoft.Point
 #### Other Resources
 
 [System Configuration](system-configuration.md)
-

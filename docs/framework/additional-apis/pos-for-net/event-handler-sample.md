@@ -442,4 +442,3 @@ Opening device: AsyncOutputPrinter, type: PosPrinterRegistering Event: ErrorEven
 #### Other Resources
 
 [Developing a Custom Service Object](developing-a-custom-service-object.md)
-

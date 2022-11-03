@@ -81,4 +81,3 @@ The following table lists the UnifiedPOS devices with their equivalent POS for .
 #### Other Resources
 
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
-

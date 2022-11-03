@@ -35,4 +35,3 @@ A **PinPad** Service Object may also have the following additional capabilities:
 
 - [Developing a Custom Service Object](developing-a-custom-service-object.md)
     Describes the POS for .NET Service Object development.
-

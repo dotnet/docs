@@ -155,4 +155,3 @@ Additional details about how label and type data should be extracted from a scan
 #### Other Resources
 
 [Scanner Implementation](scanner-implementation.md)
-

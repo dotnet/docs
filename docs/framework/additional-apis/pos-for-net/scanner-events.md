@@ -97,4 +97,3 @@ This sample cannot be compiled on its own, but may be inserted into a complete s
 #### Other Resources
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-

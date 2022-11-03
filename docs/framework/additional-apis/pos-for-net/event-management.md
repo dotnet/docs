@@ -84,4 +84,3 @@ Rules for event queue management are as follows:
 
 [Device Output Models](device-output-models.md)
 [POS Exception Handling](pos-exception-handling.md)
-

@@ -169,4 +169,3 @@ namespace SOSample.LineDisplay
 
 [LineDisplay Implementation](linedisplay-implementation.md)
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
-

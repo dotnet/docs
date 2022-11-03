@@ -37,4 +37,3 @@ In order to provide these features, POS for .NET depends on three different .NET
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
 [System Configuration](system-configuration.md)
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-

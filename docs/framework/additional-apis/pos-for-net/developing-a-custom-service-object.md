@@ -54,4 +54,3 @@ Service Objects are typically implemented by independent hardware vendors (IHVs)
 
 - [POS Device Manager](pos-device-manager.md)
     Describes using POS Device Manager to configure a POS for .NET installation.
-

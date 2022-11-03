@@ -39,4 +39,3 @@ This section provides a step-by-step guide to creating a simple, but functional 
 
 - [Developing a POS Application](developing-a-pos-application.md)
     Explains how to create POS for .NET applications, the ultimate consumers of POS for .NET Service Objects.
-

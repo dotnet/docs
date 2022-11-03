@@ -20,4 +20,3 @@ Microsoft Point of Service for .NET (POS for .NET) supports both .NET-based Serv
 #### Other Resources
 
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
-

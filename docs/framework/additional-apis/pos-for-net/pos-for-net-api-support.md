@@ -34,4 +34,3 @@ The Microsoft Point of Service for .NET (POS for .NET) class library supports th
 
 - <xref:Microsoft.PointOfService>
     Contains the POS for .NET API topics, including the **PosExplorer** and **PosCommon** classes, as well as interfaces for specific POS devices.
-

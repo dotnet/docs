@@ -53,4 +53,3 @@ In these cases, the Service Object will be responsible for the following:
 #### Other Resources
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
-

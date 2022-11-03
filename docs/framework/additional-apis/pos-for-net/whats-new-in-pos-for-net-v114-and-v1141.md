@@ -399,4 +399,3 @@ POS for .NET v1.14 (and later) provides support for the following additional OPO
 #### Concepts
 
 [POS for .NET v1.14.1 SDK Documentation](index.md)
-

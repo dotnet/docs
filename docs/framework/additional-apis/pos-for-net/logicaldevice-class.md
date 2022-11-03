@@ -28,4 +28,3 @@ The **LogicalDevice** class represents a logical device associated with a **PosD
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
-

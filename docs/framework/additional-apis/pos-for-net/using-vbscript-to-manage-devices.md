@@ -180,4 +180,3 @@ Added 'MSRSim' to: Msr  Microsoft Msr Simulator
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
 [POS Device Manager](pos-device-manager.md)
-

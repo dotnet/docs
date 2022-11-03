@@ -47,4 +47,3 @@ If **CapStatusMultiDrawerDetect** is set to **false**, the method **WaitForDrawe
 #### Other Resources
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
-

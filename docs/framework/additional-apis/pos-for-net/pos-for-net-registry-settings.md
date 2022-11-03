@@ -79,4 +79,3 @@ The following table shows the values of this key.
 #### Other Resources
 
 [System Configuration](system-configuration.md)
-

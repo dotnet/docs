@@ -33,4 +33,3 @@ The Service Object developer should be aware of what the POS for .NET framework 
 
 <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadProperties>
 <xref:Microsoft.PointOfService.StatusUpdateEventHandler>
-

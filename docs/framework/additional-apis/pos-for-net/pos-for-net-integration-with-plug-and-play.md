@@ -39,4 +39,3 @@ The **PosExplorer** class exposes two Plug and Play events for use by POS applic
 #### Other Resources
 
 [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
-

@@ -35,4 +35,3 @@ The general syntax is:
 #### Other Resources
 
 [POS Device Manager](pos-device-manager.md)
-

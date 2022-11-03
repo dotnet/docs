@@ -158,4 +158,3 @@ Thereafter, applications and Service Objects may use the following to set or get
 #### Other Resources
 
 [LineDisplay Implementation](linedisplay-implementation.md)
-

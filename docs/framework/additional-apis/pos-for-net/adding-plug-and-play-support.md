@@ -70,4 +70,3 @@ namespace SOTemplate
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
-

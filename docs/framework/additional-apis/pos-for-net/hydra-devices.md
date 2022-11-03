@@ -29,4 +29,3 @@ POS for .NET offers no features to help multiple Service Objects synchronize wit
 #### Other Resources
 
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
-

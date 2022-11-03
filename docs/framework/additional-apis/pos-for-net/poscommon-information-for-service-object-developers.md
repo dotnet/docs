@@ -225,4 +225,3 @@ POS for .NET verifies that the application has opened, claimed, and enabled the 
 #### Other Resources
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-

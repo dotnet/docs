@@ -33,4 +33,3 @@ The **DeviceProperty** class represents a name/value pair of a configuration pro
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
-

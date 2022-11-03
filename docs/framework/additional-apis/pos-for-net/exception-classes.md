@@ -120,4 +120,3 @@ catch (PosControlException e)
 #### Other Resources
 
 [POS for .NET API Support](pos-for-net-api-support.md)
-

@@ -75,4 +75,3 @@ The **PosDevice** class represents a single physical POS device. The class provi
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
-

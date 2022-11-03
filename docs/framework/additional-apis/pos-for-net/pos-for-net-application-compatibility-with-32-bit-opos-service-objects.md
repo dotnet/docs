@@ -129,4 +129,3 @@ for ($i = 2; $i -lt 38; $i++) {
 #### Other Resources
 
 [Developing a POS Application](developing-a-pos-application.md)
-

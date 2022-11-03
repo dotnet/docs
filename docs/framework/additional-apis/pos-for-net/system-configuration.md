@@ -31,4 +31,3 @@ Microsoft Point of Service for .NET (POS for .NET) has several configurable sett
 
 - [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
     Outlines the general concepts of the POS for .NET architecture.
-

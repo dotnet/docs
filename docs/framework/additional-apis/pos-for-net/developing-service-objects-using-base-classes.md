@@ -37,4 +37,3 @@ The Unified Point of Service (UnifiedPOS) v1.14 specification defines 36 Unified
 
 - [Developing a Custom Service Object](developing-a-custom-service-object.md)
     Discusses the procedures, issues, and conventions for developing a custom Service Object.
-

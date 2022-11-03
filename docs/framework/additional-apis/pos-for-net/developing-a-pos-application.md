@@ -35,4 +35,3 @@ The <xref:Microsoft.PointOfService.PosExplorer> class lets applications enumerat
 
 - [Developing a Custom Service Object](developing-a-custom-service-object.md)
     Demonstrates how to create a POS for .NET application, which uses Service Objects to communicate with hardware devices.
-

@@ -50,4 +50,3 @@ The following table shows the **DeviceInfo** methods.
 [Developing a POS Application](developing-a-pos-application.md)
 [POS for .NET API Support](pos-for-net-api-support.md)
 [POS Device Manager](pos-device-manager.md)
-

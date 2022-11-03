@@ -51,4 +51,3 @@ To begin programming your Service Object, you first need to create a new **Class
 #### Other Resources
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-

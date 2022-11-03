@@ -46,4 +46,3 @@ There are features and design elements in POS for .NET that must be taken into a
 
 - [System Configuration](system-configuration.md)
     Describes how to configure POS for .NET to meet the requirements of your installation.
-

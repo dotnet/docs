@@ -62,4 +62,3 @@ The **ServiceObject** class represents the management view of a Service Object.
 #### Other Resources
 
 [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
-

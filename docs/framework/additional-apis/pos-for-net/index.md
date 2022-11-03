@@ -84,4 +84,3 @@ The following documentation can help you use POS for .NET to develop POS applica
 #### Reference
 
 <xref:Microsoft.PointOfService>
-

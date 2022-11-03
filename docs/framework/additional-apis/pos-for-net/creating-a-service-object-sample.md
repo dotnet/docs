@@ -160,4 +160,3 @@ In order to simplify this sample, the code does not implement any globalization 
 #### Other Resources
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-

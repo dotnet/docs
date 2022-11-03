@@ -29,4 +29,3 @@ Example:
 #### Other Resources
 
 [Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)
-

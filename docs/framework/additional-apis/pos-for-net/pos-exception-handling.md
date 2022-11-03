@@ -59,4 +59,3 @@ Handling errors in POS for .NET follows this general procedure:
 [PosExplorer Class](posexplorer-class.md)
 [Exception Classes](exception-classes.md)
 [Event Management](event-management.md)
-

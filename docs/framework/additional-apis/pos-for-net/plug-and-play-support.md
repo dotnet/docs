@@ -90,4 +90,3 @@ void explorer_DeviceAddedEvent(object sender, DeviceChangedEventArgs e)
 #### Other Resources
 
 [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
-

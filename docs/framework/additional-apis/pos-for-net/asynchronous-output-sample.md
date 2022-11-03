@@ -159,4 +159,3 @@ The application code in the [Event Handler Sample](event-handler-sample.md) can 
 #### Other Resources
 
 [Developing a Custom Service Object](developing-a-custom-service-object.md)
-

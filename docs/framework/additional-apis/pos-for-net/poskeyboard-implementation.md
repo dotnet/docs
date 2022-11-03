@@ -366,4 +366,3 @@ namespace SOSamples.Keyboard
 
 [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-

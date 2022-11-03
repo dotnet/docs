@@ -23,4 +23,3 @@ A **LineDisplay** Service Object is used to display text, bitmaps, and glyphs to
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
 
 <xref:Microsoft.PointOfService.BaseServiceObjects>
-

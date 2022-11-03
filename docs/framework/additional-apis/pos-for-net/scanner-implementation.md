@@ -35,4 +35,3 @@ A queued **DataEvent** event will only be delivered to the application when the 
 
 - [Scanner Events](scanner-events.md)
     Demonstrates how a scanner Service Object uses POS for .NET queuing to raise events to applications.
-

@@ -38,4 +38,4 @@ The WMI provider serves a WMI namespace called /root/MicrosoftPointOfService. Th
 
 #### Other Resources
 
-[POS Device Manager](pos-device-manager.md)
+- [POS Device Manager](pos-device-manager.md)

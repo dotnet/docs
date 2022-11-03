@@ -42,11 +42,11 @@ The following table shows the **DeviceInfo** methods.
 
 #### Concepts
 
-[PosExplorer Class](posexplorer-class.md)
-[Exception Classes](exception-classes.md)
+- [PosExplorer Class](posexplorer-class.md)
+- [Exception Classes](exception-classes.md)
 
 #### Other Resources
 
-[Developing a POS Application](developing-a-pos-application.md)
-[POS for .NET API Support](pos-for-net-api-support.md)
-[POS Device Manager](pos-device-manager.md)
+- [Developing a POS Application](developing-a-pos-application.md)
+- [POS for .NET API Support](pos-for-net-api-support.md)
+- [POS Device Manager](pos-device-manager.md)

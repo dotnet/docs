@@ -216,12 +216,12 @@ POS for .NET verifies that the application has opened, claimed, and enabled the 
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosCommon>
+- <xref:Microsoft.PointOfService.PosCommon>
 
 #### Concepts
 
-[POS for .NET Class Tree](pos-for-net-class-tree.md)
+- [POS for .NET Class Tree](pos-for-net-class-tree.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)

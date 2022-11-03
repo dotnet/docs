@@ -23,17 +23,17 @@ In order to provide these features, POS for .NET depends on three different .NET
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosAssemblyAttribute>
-<xref:Microsoft.PointOfService.HardwareIdAttribute>
-<xref:Microsoft.PointOfService.ServiceObjectAttribute>
+- <xref:Microsoft.PointOfService.PosAssemblyAttribute>
+- <xref:Microsoft.PointOfService.HardwareIdAttribute>
+- <xref:Microsoft.PointOfService.ServiceObjectAttribute>
 
 #### Concepts
 
-[Plug and Play Support](plug-and-play-support.md)
-[POS for .NET Registry Settings](pos-for-net-registry-settings.md)
+- [Plug and Play Support](plug-and-play-support.md)
+- [POS for .NET Registry Settings](pos-for-net-registry-settings.md)
 
 #### Other Resources
 
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
-[System Configuration](system-configuration.md)
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [System Configuration](system-configuration.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)

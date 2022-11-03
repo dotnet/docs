@@ -360,9 +360,9 @@ namespace SOSamples.Keyboard
 
 #### Tasks
 
-[Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
+- [Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
 
 #### Other Resources
 
-[Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)

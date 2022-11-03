@@ -50,12 +50,12 @@ Although most device input is read asynchronously by the Service Object and then
 
 #### Tasks
 
-[Event Handler Sample](event-handler-sample.md)
+- [Event Handler Sample](event-handler-sample.md)
 
 #### Concepts
 
-[Event Management](event-management.md)
+- [Event Management](event-management.md)
 
 #### Other Resources
 
-[Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+- [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)

@@ -49,8 +49,8 @@ The following switches can be used as arguments for POSDM commands.
 
 #### Concepts
 
-[POSDM Commands](posdm-commands.md)
+- [POSDM Commands](posdm-commands.md)
 
 #### Other Resources
 
-[Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)
+- [Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)

@@ -61,4 +61,4 @@ For more information about how to enable WMI traffic, see [Connecting to WMI Rem
 
 #### Other Resources
 
-[POS Device Manager](pos-device-manager.md)
+- [POS Device Manager](pos-device-manager.md)

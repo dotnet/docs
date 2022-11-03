@@ -70,8 +70,8 @@ The **PosDevice** class represents a single physical POS device. The class provi
 
 #### Tasks
 
-[Using VBScript to Manage Devices](using-vbscript-to-manage-devices.md)
+- [Using VBScript to Manage Devices](using-vbscript-to-manage-devices.md)
 
 #### Other Resources
 
-[Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+- [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)

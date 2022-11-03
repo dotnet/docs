@@ -60,15 +60,15 @@ This sample does not compile as is. Its purpose is to demonstrate what elements 
 
 #### Tasks
 
-[Setting up a Service Object Project](setting-up-a-service-object-project.md)
-[Adding Plug and Play Support](adding-plug-and-play-support.md)
+- [Setting up a Service Object Project](setting-up-a-service-object-project.md)
+- [Adding Plug and Play Support](adding-plug-and-play-support.md)
 
 #### Concepts
 
-[POS for .NET Class Tree](pos-for-net-class-tree.md)
-[Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
+- [POS for .NET Class Tree](pos-for-net-class-tree.md)
+- [Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

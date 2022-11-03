@@ -95,9 +95,9 @@ static void Main(string[] args)
 
 #### Concepts
 
-[POS for .NET Integration with Plug and Play](pos-for-net-integration-with-plug-and-play.md)
+- [POS for .NET Integration with Plug and Play](pos-for-net-integration-with-plug-and-play.md)
 
 #### Other Resources
 
-[POS for .NET API Support](pos-for-net-api-support.md)
-[Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+- [POS for .NET API Support](pos-for-net-api-support.md)
+- [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)

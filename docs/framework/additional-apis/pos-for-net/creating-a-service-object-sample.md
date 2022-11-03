@@ -150,13 +150,13 @@ In order to simplify this sample, the code does not implement any globalization 
 
 #### Tasks
 
-[Adding Plug and Play Support](adding-plug-and-play-support.md)
-[Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
+- [Adding Plug and Play Support](adding-plug-and-play-support.md)
+- [Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
 
 #### Concepts
 
-[POS for .NET Class Tree](pos-for-net-class-tree.md)
+- [POS for .NET Class Tree](pos-for-net-class-tree.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)

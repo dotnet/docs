@@ -153,8 +153,8 @@ Thereafter, applications and Service Objects may use the following to set or get
 
 #### Tasks
 
-[LineDisplay Sample](linedisplay-sample.md)
+- [LineDisplay Sample](linedisplay-sample.md)
 
 #### Other Resources
 
-[LineDisplay Implementation](linedisplay-implementation.md)
+- [LineDisplay Implementation](linedisplay-implementation.md)

@@ -46,10 +46,10 @@ In these cases, the Service Object will be responsible for the following:
 
 #### Tasks
 
-[Event Handler Sample](event-handler-sample.md)
-[Asynchronous Output Sample](asynchronous-output-sample.md)
-[Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
+- [Event Handler Sample](event-handler-sample.md)
+- [Asynchronous Output Sample](asynchronous-output-sample.md)
+- [Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
 
 #### Other Resources
 
-[Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+- [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)

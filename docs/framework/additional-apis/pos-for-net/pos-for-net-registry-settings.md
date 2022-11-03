@@ -68,14 +68,14 @@ The following table shows the values of this key.
 
 #### Reference
 
-<xref:Microsoft.PointOfService.Logger>
+- <xref:Microsoft.PointOfService.Logger>
 
 #### Concepts
 
-[Log Files](log-files.md)
-[Plug and Play XML Configuration](plug-and-play-xml-configuration.md)
-[Plug and Play Support](plug-and-play-support.md)
+- [Log Files](log-files.md)
+- [Plug and Play XML Configuration](plug-and-play-xml-configuration.md)
+- [Plug and Play Support](plug-and-play-support.md)
 
 #### Other Resources
 
-[System Configuration](system-configuration.md)
+- [System Configuration](system-configuration.md)

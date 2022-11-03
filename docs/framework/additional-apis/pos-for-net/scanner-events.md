@@ -87,13 +87,13 @@ This sample cannot be compiled on its own, but may be inserted into a complete s
 
 #### Tasks
 
-[Creating a Basic Service Object Code Template](creating-a-basic-service-object-code-template.md)
+- [Creating a Basic Service Object Code Template](creating-a-basic-service-object-code-template.md)
 
 #### Concepts
 
-[Base Class DirectIO Method](base-class-directio-method.md)
-[Device Input and Events](device-input-and-events.md)
+- [Base Class DirectIO Method](base-class-directio-method.md)
+- [Device Input and Events](device-input-and-events.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)

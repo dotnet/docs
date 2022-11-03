@@ -18,16 +18,16 @@ Because each Service Object facilitates communications with a specific device, a
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosCommon>
-<xref:Microsoft.PointOfService.BaseServiceObjects>
+- <xref:Microsoft.PointOfService.PosCommon>
+- <xref:Microsoft.PointOfService.BaseServiceObjects>
 
 #### Concepts
 
-[POS for .NET Architecture](pos-for-net-architecture.md)
-[Supported Device Classes](supported-device-classes.md)
-[POS for .NET Device Basic Classes](pos-for-net-device-basic-classes.md)
+- [POS for .NET Architecture](pos-for-net-architecture.md)
+- [Supported Device Classes](supported-device-classes.md)
+- [POS for .NET Device Basic Classes](pos-for-net-device-basic-classes.md)
 
 #### Other Resources
 
-[Developing a Custom Service Object](developing-a-custom-service-object.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Developing a Custom Service Object](developing-a-custom-service-object.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

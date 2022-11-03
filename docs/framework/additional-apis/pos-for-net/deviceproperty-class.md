@@ -24,12 +24,12 @@ The **DeviceProperty** class represents a name/value pair of a configuration pro
 
 #### Tasks
 
-[Using VBScript to Manage Devices](using-vbscript-to-manage-devices.md)
+- [Using VBScript to Manage Devices](using-vbscript-to-manage-devices.md)
 
 #### Concepts
 
-[PosDevice Class](posdevice-class.md)
+- [PosDevice Class](posdevice-class.md)
 
 #### Other Resources
 
-[Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+- [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)

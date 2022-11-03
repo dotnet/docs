@@ -23,8 +23,8 @@ The **LogicalDevice** class represents a logical device associated with a **PosD
 
 #### Tasks
 
-[Using VBScript to Manage Devices](using-vbscript-to-manage-devices.md)
+- [Using VBScript to Manage Devices](using-vbscript-to-manage-devices.md)
 
 #### Other Resources
 
-[Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)
+- [Using the WMI API to Manage Devices](using-the-wmi-api-to-manage-devices.md)

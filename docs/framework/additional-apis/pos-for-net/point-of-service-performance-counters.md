@@ -48,4 +48,4 @@ The service application creates a counter for any statistic that is represented 
 
 #### Tasks
 
-[Statistics Sample](statistics-sample.md)
+- [Statistics Sample](statistics-sample.md)

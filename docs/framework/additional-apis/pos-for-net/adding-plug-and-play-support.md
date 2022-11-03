@@ -58,15 +58,15 @@ namespace SOTemplate
 
 #### Tasks
 
-[Creating a Basic Service Object Code Template](creating-a-basic-service-object-code-template.md)
-[Creating a Service Object Sample](creating-a-service-object-sample.md)
+- [Creating a Basic Service Object Code Template](creating-a-basic-service-object-code-template.md)
+- [Creating a Service Object Sample](creating-a-service-object-sample.md)
 
 #### Concepts
 
-[Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
-[Plug and Play XML Configuration](plug-and-play-xml-configuration.md)
+- [Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
+- [Plug and Play XML Configuration](plug-and-play-xml-configuration.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

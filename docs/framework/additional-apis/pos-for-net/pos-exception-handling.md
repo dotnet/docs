@@ -47,15 +47,15 @@ Handling errors in POS for .NET follows this general procedure:
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosException>
-<xref:Microsoft.PointOfService.PosLibraryException>
-<xref:Microsoft.PointOfService.PosManagementException>
-<xref:Microsoft.PointOfService.PosControlException>
-<xref:Microsoft.PointOfService.ErrorCode>
-<xref:Microsoft.PointOfService.PosExplorer>
+- <xref:Microsoft.PointOfService.PosException>
+- <xref:Microsoft.PointOfService.PosLibraryException>
+- <xref:Microsoft.PointOfService.PosManagementException>
+- <xref:Microsoft.PointOfService.PosControlException>
+- <xref:Microsoft.PointOfService.ErrorCode>
+- <xref:Microsoft.PointOfService.PosExplorer>
 
 #### Concepts
 
-[PosExplorer Class](posexplorer-class.md)
-[Exception Classes](exception-classes.md)
-[Event Management](event-management.md)
+- [PosExplorer Class](posexplorer-class.md)
+- [Exception Classes](exception-classes.md)
+- [Event Management](event-management.md)

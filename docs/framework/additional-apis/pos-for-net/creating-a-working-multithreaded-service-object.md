@@ -449,10 +449,10 @@ namespace Samples.ServiceObjects.Advanced.MSR
 
 #### Tasks
 
-[Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
-[Adding Plug and Play Support](adding-plug-and-play-support.md)
+- [Introducing Service Object Reader Threads](introducing-service-object-reader-threads.md)
+- [Adding Plug and Play Support](adding-plug-and-play-support.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

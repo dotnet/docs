@@ -56,5 +56,5 @@ The following protected methods are defined:
 
 #### Other Resources
 
-[Developing a Custom Service Object](developing-a-custom-service-object.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Developing a Custom Service Object](developing-a-custom-service-object.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

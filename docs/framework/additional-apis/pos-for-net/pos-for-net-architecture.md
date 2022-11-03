@@ -50,12 +50,12 @@ POS for .NET supplies **Base** classes for the following devices:
 
 #### Concepts
 
-[Typical POS Application Architecture](typical-pos-application-architecture.md)
-[POS for .NET Integration with Plug and Play](pos-for-net-integration-with-plug-and-play.md)
-[Supported Device Classes](supported-device-classes.md)
+- [Typical POS Application Architecture](typical-pos-application-architecture.md)
+- [POS for .NET Integration with Plug and Play](pos-for-net-integration-with-plug-and-play.md)
+- [Supported Device Classes](supported-device-classes.md)
 
 #### Other Resources
 
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
-[POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
-[POS for .NET API Support](pos-for-net-api-support.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
+- [POS for .NET API Support](pos-for-net-api-support.md)

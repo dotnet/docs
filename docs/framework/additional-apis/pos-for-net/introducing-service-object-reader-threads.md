@@ -274,10 +274,10 @@ namespace Samples.ServiceObjects.Advanced
 
 #### Tasks
 
-[Creating a Working, Multithreaded Service Object](creating-a-working-multithreaded-service-object.md)
-[Adding Plug and Play Support](adding-plug-and-play-support.md)
+- [Creating a Working, Multithreaded Service Object](creating-a-working-multithreaded-service-object.md)
+- [Adding Plug and Play Support](adding-plug-and-play-support.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

@@ -22,8 +22,8 @@ The following general switches may be used between POSDM and a command on the co
 
 #### Concepts
 
-[POSDM Commands](posdm-commands.md)
+- [POSDM Commands](posdm-commands.md)
 
 #### Other Resources
 
-[Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)
+- [Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)

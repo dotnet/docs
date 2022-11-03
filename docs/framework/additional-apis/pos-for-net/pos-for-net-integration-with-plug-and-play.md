@@ -27,15 +27,15 @@ The **PosExplorer** class exposes two Plug and Play events for use by POS applic
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosExplorer.DeviceAddedEvent>
-<xref:Microsoft.PointOfService.PosExplorer.DeviceRemovedEvent>
+- <xref:Microsoft.PointOfService.PosExplorer.DeviceAddedEvent>
+- <xref:Microsoft.PointOfService.PosExplorer.DeviceRemovedEvent>
 
 #### Concepts
 
-[PosExplorer Class](posexplorer-class.md)
-[Supported Device Classes](supported-device-classes.md)
-[Plug and Play Support](plug-and-play-support.md)
+- [PosExplorer Class](posexplorer-class.md)
+- [Supported Device Classes](supported-device-classes.md)
+- [Plug and Play Support](plug-and-play-support.md)
 
 #### Other Resources
 
-[POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
+- [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)

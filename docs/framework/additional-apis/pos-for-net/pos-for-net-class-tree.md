@@ -42,9 +42,9 @@ The **Base** classes, each of which is derived from its corresponding **Basic** 
 
 #### Concepts
 
-[Supported Device Classes](supported-device-classes.md)
+- [Supported Device Classes](supported-device-classes.md)
 
 #### Other Resources
 
-[Developing a Custom Service Object](developing-a-custom-service-object.md)
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [Developing a Custom Service Object](developing-a-custom-service-object.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

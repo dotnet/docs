@@ -75,12 +75,12 @@ Rules for event queue management are as follows:
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosCommon.FreezeEvents>
-<xref:Microsoft.PointOfService.PosCommon.StatusUpdateEvent>
-<xref:Microsoft.PointOfService.PosCommon.DirectIOEvent>
-<xref:Microsoft.PointOfService.DeviceErrorEventArgs.ErrorLocus>
+- <xref:Microsoft.PointOfService.PosCommon.FreezeEvents>
+- <xref:Microsoft.PointOfService.PosCommon.StatusUpdateEvent>
+- <xref:Microsoft.PointOfService.PosCommon.DirectIOEvent>
+- <xref:Microsoft.PointOfService.DeviceErrorEventArgs.ErrorLocus>
 
 #### Concepts
 
-[Device Output Models](device-output-models.md)
-[POS Exception Handling](pos-exception-handling.md)
+- [Device Output Models](device-output-models.md)
+- [POS Exception Handling](pos-exception-handling.md)

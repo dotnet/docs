@@ -107,16 +107,16 @@ catch (PosControlException e)
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosException>
-<xref:Microsoft.PointOfService.PosControlException>
-<xref:Microsoft.PointOfService.PosManagementException>
-<xref:Microsoft.PointOfService.PosLibraryException>
+- <xref:Microsoft.PointOfService.PosException>
+- <xref:Microsoft.PointOfService.PosControlException>
+- <xref:Microsoft.PointOfService.PosManagementException>
+- <xref:Microsoft.PointOfService.PosLibraryException>
 
 #### Concepts
 
-[PosExplorer Class](posexplorer-class.md)
-[POS Exception Handling](pos-exception-handling.md)
+- [PosExplorer Class](posexplorer-class.md)
+- [POS Exception Handling](pos-exception-handling.md)
 
 #### Other Resources
 
-[POS for .NET API Support](pos-for-net-api-support.md)
+- [POS for .NET API Support](pos-for-net-api-support.md)

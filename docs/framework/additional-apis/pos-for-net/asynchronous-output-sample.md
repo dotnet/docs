@@ -149,13 +149,13 @@ The application code in the [Event Handler Sample](event-handler-sample.md) can 
 
 #### Tasks
 
-[Event Handler Sample](event-handler-sample.md)
+- [Event Handler Sample](event-handler-sample.md)
 
 #### Concepts
 
-[Event Management](event-management.md)
-[Device Output Models](device-output-models.md)
+- [Event Management](event-management.md)
+- [Device Output Models](device-output-models.md)
 
 #### Other Resources
 
-[Developing a Custom Service Object](developing-a-custom-service-object.md)
+- [Developing a Custom Service Object](developing-a-custom-service-object.md)

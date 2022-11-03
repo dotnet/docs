@@ -71,13 +71,13 @@ The following table lists the UnifiedPOS devices with their equivalent POS for .
 
 #### Reference
 
-<xref:Microsoft.PointOfService>
-<xref:Microsoft.PointOfService.BaseServiceObjects>
+- <xref:Microsoft.PointOfService>
+- <xref:Microsoft.PointOfService.BaseServiceObjects>
 
 #### Concepts
 
-[What's New in POS for .NET v1.14](whats-new-in-pos-for-net-v114-and-v1141.md)
+- [What's New in POS for .NET v1.14](whats-new-in-pos-for-net-v114-and-v1141.md)
 
 #### Other Resources
 
-[POS for .NET v1.14 Features](pos-for-net-v1141-features.md)
+- [POS for .NET v1.14 Features](pos-for-net-v1141-features.md)

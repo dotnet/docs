@@ -52,4 +52,4 @@ POS for .NET tools and classes facilitate developing POS applications and device
 
 #### Concepts
 
-[What's New in POS for .NET v1.14.1](whats-new-in-pos-for-net-v114-and-v1141.md)
+- [What's New in POS for .NET v1.14.1](whats-new-in-pos-for-net-v114-and-v1141.md)

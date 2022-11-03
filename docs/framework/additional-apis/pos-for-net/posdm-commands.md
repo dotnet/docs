@@ -237,9 +237,9 @@ POSDM uses the following commands.
 
 #### Concepts
 
-[POSDM Command Arguments](posdm-command-arguments.md)
-[Command-Line Help for POSDM](command-line-help-for-posdm.md)
+- [POSDM Command Arguments](posdm-command-arguments.md)
+- [Command-Line Help for POSDM](command-line-help-for-posdm.md)
 
 #### Other Resources
 
-[Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)
+- [Using the POS Device Manager Command-Line Tool](using-the-pos-device-manager-command-line-tool.md)

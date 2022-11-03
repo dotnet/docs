@@ -72,21 +72,21 @@ void explorer_DeviceAddedEvent(object sender, DeviceChangedEventArgs e)
 
 #### Tasks
 
-[Adding Plug and Play Support](adding-plug-and-play-support.md)
+- [Adding Plug and Play Support](adding-plug-and-play-support.md)
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosExplorer>
-<xref:Microsoft.PointOfService.HardwareIdAttribute>
-<xref:Microsoft.PointOfService.PosAssemblyAttribute>
-<xref:Microsoft.PointOfService.ServiceObjectAttribute>
+- <xref:Microsoft.PointOfService.PosExplorer>
+- <xref:Microsoft.PointOfService.HardwareIdAttribute>
+- <xref:Microsoft.PointOfService.PosAssemblyAttribute>
+- <xref:Microsoft.PointOfService.ServiceObjectAttribute>
 
 #### Concepts
 
-[Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
-[POS for .NET Registry Settings](pos-for-net-registry-settings.md)
-[Plug and Play XML Configuration](plug-and-play-xml-configuration.md)
+- [Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
+- [POS for .NET Registry Settings](pos-for-net-registry-settings.md)
+- [Plug and Play XML Configuration](plug-and-play-xml-configuration.md)
 
 #### Other Resources
 
-[POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)
+- [POS for .NET Service Object Architecture](pos-for-net-service-object-architecture.md)

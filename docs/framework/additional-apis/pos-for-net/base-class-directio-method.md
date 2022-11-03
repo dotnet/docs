@@ -28,4 +28,4 @@ Using this event will make an application incompatible with devices from other v
 
 #### Other Resources
 
-[Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)
+- [Developing Service Objects Using Base Classes](developing-service-objects-using-base-classes.md)

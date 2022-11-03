@@ -26,4 +26,4 @@ You may also access configuration properties with the following methods in <xref
 
 #### Other Resources
 
-[POS Device Manager](pos-device-manager.md)
+- [POS Device Manager](pos-device-manager.md)

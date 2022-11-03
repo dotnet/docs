@@ -149,9 +149,9 @@ Additional details about how label and type data should be extracted from a scan
 
 #### Reference
 
-<xref:Microsoft.PointOfService.BaseServiceObjects.ScannerBase.DecodeScanDataLabel(System.Byte[])>
-<xref:Microsoft.PointOfService.BaseServiceObjects.ScannerBase.DecodeScanDataType(System.Byte[])>
+- <xref:Microsoft.PointOfService.BaseServiceObjects.ScannerBase.DecodeScanDataLabel(System.Byte[])>
+- <xref:Microsoft.PointOfService.BaseServiceObjects.ScannerBase.DecodeScanDataType(System.Byte[])>
 
 #### Other Resources
 
-[Scanner Implementation](scanner-implementation.md)
+- [Scanner Implementation](scanner-implementation.md)

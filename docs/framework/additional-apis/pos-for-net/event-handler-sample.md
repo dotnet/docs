@@ -433,12 +433,12 @@ Opening device: AsyncOutputPrinter, type: PosPrinterRegistering Event: ErrorEven
 
 #### Tasks
 
-[Asynchronous Output Sample](asynchronous-output-sample.md)
+- [Asynchronous Output Sample](asynchronous-output-sample.md)
 
 #### Concepts
 
-[Event Management](event-management.md)
+- [Event Management](event-management.md)
 
 #### Other Resources
 
-[Developing a Custom Service Object](developing-a-custom-service-object.md)
+- [Developing a Custom Service Object](developing-a-custom-service-object.md)

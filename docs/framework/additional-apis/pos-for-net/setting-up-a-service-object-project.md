@@ -46,8 +46,8 @@ To begin programming your Service Object, you first need to create a new **Class
 
 #### Concepts
 
-[Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
+- [Attributes for Identifying Service Objects and Assigning Hardware](attributes-for-identifying-service-objects-and-assigning-hardware.md)
 
 #### Other Resources
 
-[Service Object Samples: Getting Started](service-object-samples-getting-started.md)
+- [Service Object Samples: Getting Started](service-object-samples-getting-started.md)

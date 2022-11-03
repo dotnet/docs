@@ -88,16 +88,16 @@ protected override PrintResults PrintNormalImpl(
 
 #### Tasks
 
-[Asynchronous Output Sample](asynchronous-output-sample.md)
+- [Asynchronous Output Sample](asynchronous-output-sample.md)
 
 #### Reference
 
-<xref:Microsoft.PointOfService.BaseServiceObjects.PosPrinterBase>
+- <xref:Microsoft.PointOfService.BaseServiceObjects.PosPrinterBase>
 
 #### Concepts
 
-[Device Output Models](device-output-models.md)
+- [Device Output Models](device-output-models.md)
 
 #### Other Resources
 
-[Developing a Custom Service Object](developing-a-custom-service-object.md)
+- [Developing a Custom Service Object](developing-a-custom-service-object.md)

@@ -48,4 +48,4 @@ A **PinPad** Service Object may send the following events to the application:
 
 #### Other Resources
 
-[PinPad Implementation](pinpad-implementation.md)
+- [PinPad Implementation](pinpad-implementation.md)

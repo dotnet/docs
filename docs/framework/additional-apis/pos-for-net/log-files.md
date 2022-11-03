@@ -94,13 +94,13 @@ If there is a log file open, and the application calls the <xref:Microsoft.Point
 
 #### Reference
 
-<xref:Microsoft.PointOfService.Logger>
+- <xref:Microsoft.PointOfService.Logger>
 
 #### Concepts
 
-[POS for .NET Registry Settings](pos-for-net-registry-settings.md)
-[Plug and Play Support](plug-and-play-support.md)
+- [POS for .NET Registry Settings](pos-for-net-registry-settings.md)
+- [Plug and Play Support](plug-and-play-support.md)
 
 #### Other Resources
 
-[System Configuration](system-configuration.md)
+- [System Configuration](system-configuration.md)

@@ -165,4 +165,4 @@ namespace SOSamples.PinPad
 
 #### Other Resources
 
-[PinPad Implementation](pinpad-implementation.md)
+- [PinPad Implementation](pinpad-implementation.md)

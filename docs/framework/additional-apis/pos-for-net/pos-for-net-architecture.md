@@ -9,7 +9,7 @@ ms.custom: pos-restored-from-archive
 
 The Microsoft Point of Service for .NET (POS for .NET) architecture supports both developers writing POS applications and peripheral device hardware vendors writing .NET-based Service Objects. The following illustration shows the POS for .NET architecture.
 
-![Architecture diagram for POS for .NET](images/Bb429017.f5273f6b-368c-4f58-9e95-db5b9deb380a(en-US,WinEmbedded.4).png "Architecture diagram for POS for .NET")
+![Architecture diagram for POS for .NET](media/pos-architecture.png)
 
 Devices use service objects to communicate with your application by using the POS for .NET interfaces.
 

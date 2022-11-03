@@ -9,7 +9,7 @@ ms.custom: pos-restored-from-archive
 
 The principal elements of POS application architecture are event handlers and the public interface to Service Objects and the Microsoft Point of Service for .NET (POS for .NET) [PosExplorer Class](posexplorer-class.md), as shown in the following illustration.
 
-![Bb428956.fbebaa69-557f-4b94-8574-9c0ed6d4bd08(en-US,WinEmbedded.4).gif](images/Bb428956.fbebaa69-557f-4b94-8574-9c0ed6d4bd08(en-US,WinEmbedded.4).gif "Bb428956.fbebaa69-557f-4b94-8574-9c0ed6d4bd08(en-US,WinEmbedded.4).gif")
+![Diagram of event handlers and the public interface to Service Objects and POS for .NET](media/typical-pos-architecture.gif).gif)
 
 ## Event Handlers
 

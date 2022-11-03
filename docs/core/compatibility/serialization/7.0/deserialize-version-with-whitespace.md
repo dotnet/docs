@@ -17,7 +17,7 @@ Started in .NET 7, <xref:System.Text.Json.JsonSerializer> throws a <xref:System.
 
 ## Version introduced
 
-.NET 7 Preview 1
+.NET 7
 
 ## Type of breaking change
 

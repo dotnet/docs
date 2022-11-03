@@ -18,7 +18,7 @@ The negative sign is now preserved when deserializing "-0" as a float or double.
 ## Version introduced
 
 - .NET 6.0.11 (servicing release)
-- .NET 7 RC 1
+- .NET 7
 
 ## Type of breaking change
 

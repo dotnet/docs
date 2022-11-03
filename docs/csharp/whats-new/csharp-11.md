@@ -135,7 +135,7 @@ The C# standard on [Method group conversions](~/_csharpstandard/standard/convers
 
 > - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
 
-Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It's first available in .NET 7 preview 2.
+Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature was first available in Visual Studio 2022 version 17.2 as a preview feature, and in .NET 7 Preview 2.
 
 ## Raw string literals
 

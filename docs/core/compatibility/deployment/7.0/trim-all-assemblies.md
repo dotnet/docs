@@ -19,7 +19,7 @@ If your app did have trim warnings, you may see changes in behavior or exception
 
 ## Version introduced
 
-.NET 7 Preview 7
+.NET 7
 
 ## Type of breaking change
 

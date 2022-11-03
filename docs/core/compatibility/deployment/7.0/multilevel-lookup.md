@@ -28,7 +28,7 @@ Applications that target .NET 7 or a later version only look for frameworks in o
 
 ## Version introduced
 
-.NET 7 Preview 4
+.NET 7
 
 ## Type of breaking change
 

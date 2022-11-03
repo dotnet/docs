@@ -12,7 +12,7 @@ class Program
                 {
                     options.IncludeScopes = true;
                     options.SingleLine = true;
-                    options.TimestampFormat = "hh:mm:ss ";
+                    options.TimestampFormat = "HH:mm:ss ";
                 }));
 
         ILogger<Program> logger = loggerFactory.CreateLogger<Program>();

@@ -15,8 +15,16 @@ The WebSocket protocol enables two-way communication between a client and a remo
 WebSockets over HTTP/1.1 uses a single TCP connection, therefore it is managed by connection-wide headers, for more information, see [RFC 6455](https://www.rfc-editor.org/rfc/rfc6455). Consider the following example of how to establish WebSocket over HTTP/1.1:
 
 ```c#
+Uri uri = new Uri("ws://corefx-net-http11.azurewebsites.net/WebSocket/EchoWebSocket.ashx");
+
 using ClientWebSocket ws = new();
-await ws.ConnectAsync(uri, cancellationToken);
+await ws.ConnectAsync(uri, default);
+
+var bytes = new byte[1024];
+var result = await ws.ReceiveAsync(bytes, default);
+string res = Encoding.UTF8.GetString(bytes, 0, result.Count);
+
+await ws.CloseAsync(WebSocketCloseStatus.NormalClosure, "Client closed", default);
 ```
 
 A different approach must be taken with HTTP/2 due to its multiplexing nature. WebSockets are established per stream, for more information, see [RFC 8441](https://www.rfc-editor.org/rfc/rfc8441). With HTTP/2 it is possible to use one connection for multiple web socket streams together with ordinary HTTP streams and extend HTTP/2's more efficient use of the network to WebSockets. There is a special overload of <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync(System.Uri,System.Net.Http.HttpMessageInvoker,System.Threading.CancellationToken)> which accepts an <xref:System.Net.Http.HttpMessageInvoker> to allow reusing existing pooled connections:

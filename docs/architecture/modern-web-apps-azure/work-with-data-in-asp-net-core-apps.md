@@ -159,7 +159,8 @@ public class Basket : BaseEntity
 
   public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
   {
-    if (!Items.Any(i => i.CatalogItemId == catalogItemId))
+    var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
+    if(existingItem == null)
     {
       _items.Add(new BasketItem()
       {
@@ -167,10 +168,8 @@ public class Basket : BaseEntity
         Quantity = quantity,
         UnitPrice = unitPrice
       });
-      return;
-    }
-    var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
-    existingItem.Quantity += quantity;
+    } 
+    else existingItem.Quantity += quantity;
   }
 }
 ```

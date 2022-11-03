@@ -160,7 +160,7 @@ public class Basket : BaseEntity
   public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
   {
     var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
-    if(existingItem == null)
+    if (existingItem == null)
     {
       _items.Add(new BasketItem()
       {

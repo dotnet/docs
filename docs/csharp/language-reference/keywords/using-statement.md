@@ -10,7 +10,7 @@ ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3
 ---
 # using statement (C# Reference)
 
-Provides a convenient syntax that ensures the correct use of <xref:System.IDisposable> objects. The `using` statement ensures the correct use of <xref:System.IAsyncDisposable> objects.
+The `using` statement provides a convenient syntax that ensures the correct use of <xref:System.IDisposable> objects. The `await using` statement ensures the correct use of <xref:System.IAsyncDisposable> objects. The language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface.
 
 ## Example
 
@@ -65,3 +65,4 @@ For more information, see [The using statement](~/_csharpstandard/standard/state
 - [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)
 - [IDisposable interface](xref:System.IDisposable)
 - [using statement in C# 8.0](~/_csharplang/proposals/csharp-8.0/using.md)
+- [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md) article.

@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 08/26/2022
+ms.date: 11/02/2022
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
@@ -118,6 +118,12 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 Using the Azure Service Bus library as an example, complete the following steps:
 
+1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) NuGet package:
+
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
+
 1. Register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method:
 
     ```csharp
@@ -158,6 +164,12 @@ There are scenarios in which [registering an Azure SDK library's client with the
   - [Azure Blob Storage key store for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme)
 
 In these scenarios, complete the following steps:
+
+1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) NuGet package:
+
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
 
 1. Register the log forwarder service as a singleton in the DI container:
 

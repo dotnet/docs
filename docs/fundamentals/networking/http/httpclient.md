@@ -45,7 +45,7 @@ This `HttpClient` instance will always use the base address when making subseque
 
 To make an HTTP request, you call any of the following APIs:
 
-| HTTP verb                    | API                                                                                 |
+| HTTP method                  | API                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------|
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
@@ -64,7 +64,7 @@ To make an HTTP request, you call any of the following APIs:
 
 ### HTTP content
 
-The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP verbs (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but additional subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP methods (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but additional subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 - <xref:System.Net.Http.ByteArrayContent>: Provides HTTP content based on a byte array.
 - <xref:System.Net.Http.FormUrlEncodedContent>: Provides HTTP content for name/value tuples encoded using `"application/x-www-form-urlencoded"` MIME type.
@@ -79,7 +79,7 @@ The `HttpContent` class is also used to represent the response body of the <xref
 
 ### HTTP Get
 
-A `GET` request shouldn't send a body and is used (as the verb indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
+A `GET` request shouldn't send a body and is used (as the method name indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="../snippets/httpclient/Program.Get.cs" id="get":::
 
@@ -239,7 +239,7 @@ The `TRACE` request can be useful for debugging as it provides application-level
 :::code language="csharp" source="../snippets/httpclient/Program.Trace.cs" id="trace":::
 
 > [!CAUTION]
-> The `TRACE` HTTP verb is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [Open Web Application Security Project (OWASP): Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
+> The `TRACE` HTTP method is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [Open Web Application Security Project (OWASP): Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
 
 ## Handle an HTTP response
 

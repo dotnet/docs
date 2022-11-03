@@ -65,30 +65,7 @@ public static partial class Log
 
 You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> will be provided for the message. The state will contain the arguments, formatted as key-value pairs.
 
-```csharp
-using System.Text.Json;
-using Microsoft.Extensions.Logging;
-
-ILogger<SampleObject> logger = LoggerFactory.Create(
-    builder =>
-    builder.AddJsonConsole(
-        options =>
-        options.JsonWriterOptions = new JsonWriterOptions()
-        {
-            Indented = true
-        }))
-    .CreateLogger<SampleObject>();
-
-logger.CustomLogEvent(LogLevel.Information, "Liana", "Seattle");
-
-public static partial class SampleObject
-{
-    [LoggerMessage(EventId = 23)]
-    public static partial void CustomLogEvent(
-        this ILogger logger, LogLevel logLevel,
-        string name, string city);
-}
-```
+:::code source="snippets/logging/logger-message-generator/Program.cs":::
 
 Consider the example logging output when using the `JsonConsole` formatter.
 
@@ -96,7 +73,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 {
   "EventId": 23,
   "LogLevel": "Information",
-  "Category": "ConsoleApp.SampleObject",
+  "Category": "SampleObject",
   "Message": "",
   "State": {
     "Message": "",
@@ -109,7 +86,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ## Log method constraints
 
-When using the `LoggerMessageAttribute` on logging methods, there are some constraints that must be followed:
+When using the `LoggerMessageAttribute` on logging methods, some constraints must be followed:
 
 - Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
@@ -174,7 +151,7 @@ public static partial void WarningLogMethod(
 
 ### Case-insensitive template name support
 
-The generator does case-insensitive comparison between items in message template and argument names in the log message. This means that when the `ILogger` enumerates the state, the argument is picked up by message template, which can make the logs nicer to consume:
+The generator does a case-insensitive comparison between items in the message template and argument names in the log message. This means that when the `ILogger` enumerates the state, the argument is picked up by the message template, which can make the logs nicer to consume:
 
 ```csharp
 public partial class LoggingExample
@@ -370,8 +347,8 @@ With the advent of C# source generators, writing highly performant logging APIs 
 
 - Allows the logging structure to be preserved and enables the exact format syntax required by [Message Templates](https://messagetemplates.org).
 - Allows supplying alternative names for the template placeholders and using format specifiers.
-- Allows the passing of all original data as-is, without any complication around how it's stored prior to something being done with it (other than creating a `string`).
-- Provides logging-specific diagnostics, emits warnings for duplicate event IDs.
+- Allows the passing of all original data as-is, without any complication around how it's stored before something is done with it (other than creating a `string`).
+- Provides logging-specific diagnostics, and emits warnings for duplicate event IDs.
 
 Additionally, there are benefits over manually using <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType>:
 

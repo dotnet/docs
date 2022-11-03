@@ -375,6 +375,8 @@ items:
       href: ../core/tools/dotnet-watch.md
     - name: dotnet workload
       items:
+      - name: dotnet workload
+        href: ../core/tools/dotnet-workload.md
       - name: dotnet workload install
         href: ../core/tools/dotnet-workload-install.md
       - name: dotnet workload list
@@ -2588,6 +2590,8 @@ items:
       href: networking/network-info.md
     - name: IPv6 overview
       href: networking/ipv6-overview.md
+    - name: Telemetry
+      href: networking/networking-telemetry.md
     - name: HTTP
       items:
       - name: HTTP support
@@ -2609,14 +2613,10 @@ items:
       items:
       - name: Sockets support
         href: networking/sockets/sockets-overview.md
-      - name: Use Sockets to send and receive data
+      - name: Use Sockets to send and receive data over TCP
         href: networking/sockets/socket-services.md
-    - name: TCP
-      items:
-      - name: TCP support
-        href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
-        href: networking/tcp/tcp-services.md
+        href: networking/sockets/tcp-classes.md
     - name: WebSockets
       items:
       - name: WebSockets support
@@ -2972,6 +2972,8 @@ items:
         href: ../standard/native-interop/customize-parameter-marshalling.md
       - name: Source generation
         href: ../standard/native-interop/custom-marshalling-source-generation.md
+      - name: Tutorial - Use custom marshallers in source generation
+        href: ../standard/native-interop/tutorial-custom-marshaller.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Expose .NET components to COM
@@ -3125,6 +3127,7 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+        displayName: upgrade assistant
       - name: Windows Communication Foundation
         href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation

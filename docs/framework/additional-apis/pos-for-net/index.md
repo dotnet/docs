@@ -78,6 +78,8 @@ The following documentation can help you use POS for .NET to develop POS applica
 
 ## See Also
 
+[POS for .NET API Reference](/dotnet/api/?view=point-of-service-1.14&preserve-view=true)
+
 #### Reference
 
 <xref:Microsoft.PointOfService>

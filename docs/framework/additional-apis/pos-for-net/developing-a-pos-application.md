@@ -11,7 +11,7 @@ Microsoft Point of Service for .NET (POS for .NET) provides classes and tools th
 
 Service Object classes represent POS peripheral devices, supplying the properties, methods, and events that are defined in the Unified Point Of Service (UnifiedPOS) Retail Peripheral Architecture specification.
 
-The <xref:Microsoft.PointOfService.PosExplorer> class lets applications enumerate installed POS devices, instantiate Service Objects for them, and receive Plug and Play events when a POS peripheral device is connected or disconnected.
+The [PosExplorer](ms884843\(v=winembedded.11\).md) class lets applications enumerate installed POS devices, instantiate Service Objects for them, and receive Plug and Play events when a POS peripheral device is connected or disconnected.
 
 ## In This Section
 

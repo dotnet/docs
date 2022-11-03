@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # POS for .NET API Support (POS for .NET v1.14 SDK Documentation)
 
-The Microsoft Point of Service for .NET (POS for .NET) class library supports the development of POS applications with **Base** classes that support POS devices, exceptions, and events. The POS for .NET class library also provides applications with the ability to discover and load Service Objects using the <xref:Microsoft.PointOfService.PosExplorer> and [DeviceInfo](ms884041\(v=winembedded.11\).md) classes.
+The Microsoft Point of Service for .NET (POS for .NET) class library supports the development of POS applications with **Base** classes that support POS devices, exceptions, and events. The POS for .NET class library also provides applications with the ability to discover and load Service Objects using the [PosExplorer](ms884843\(v=winembedded.11\).md) and [DeviceInfo](ms884041\(v=winembedded.11\).md) classes.
 
 ## In This Section
 
@@ -31,5 +31,5 @@ The Microsoft Point of Service for .NET (POS for .NET) class library supports th
 - [Developing a POS Application](developing-a-pos-application.md)
     Provides an overview of POS for .NET API support and supplies links to important POS for .NET device classes and conceptual Help topics.
 
-- <xref:Microsoft.PointOfService>
+- [Microsoft.PointOfService](ms843373\(v=winembedded.11\).md)
     Contains the POS for .NET API topics, including the **PosExplorer** and **PosCommon** classes, as well as interfaces for specific POS devices.

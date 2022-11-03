@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # PosCommon Class (POS for .NET v1.14 SDK Documentation)
 
-<xref:Microsoft.PointOfService.PosCommon> is the **Base** class for all specific **Interface** classes, and all Service Objects indirectly derive from it. **PosCommon** defines the common properties, methods, and events that the Unified Point Of Service (UnifiedPOS) specification requires in all device classes.
+[PosCommon](ms884820\(v=winembedded.11\).md) is the **Base** class for all specific **Interface** classes, and all Service Objects indirectly derive from it. **PosCommon** defines the common properties, methods, and events that the Unified Point Of Service (UnifiedPOS) specification requires in all device classes.
 
 ## PosCommon Properties
 

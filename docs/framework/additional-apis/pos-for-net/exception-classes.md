@@ -9,8 +9,8 @@ ms.custom: pos-restored-from-archive
 
 Microsoft Point of Service for .NET (POS for .NET) error handling is implemented through the use of *exceptions*. The four POS for .NET exception classes are as follows:
 
-- <xref:Microsoft.PointOfService.PosException>
-- <xref:Microsoft.PointOfService.PosControlException>
+- [PosException](ms884839\(v=winembedded.11\).md)
+- [PosControlException](ms884827\(v=winembedded.11\).md)
 - [PosManagementException](ms884858\(v=winembedded.11\).md)
 - [PosLibraryException](ms884854\(v=winembedded.11\).md)
 
@@ -30,7 +30,7 @@ Standard Unified Point Of Service (UnifiedPOS) error codes are represented by th
 
 ## PosLibraryException
 
-**PosLibraryException** is thrown by <xref:Microsoft.PointOfService.PosExplorer>. Applications and Service Objects must not throw **PosLibraryException**.
+**PosLibraryException** is thrown by [PosExplorer](ms884843\(v=winembedded.11\).md). Applications and Service Objects must not throw **PosLibraryException**.
 
 ## Error Codes
 
@@ -106,8 +106,8 @@ catch (PosControlException e)
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosException>
-<xref:Microsoft.PointOfService.PosControlException>
+[PosException](ms884839\(v=winembedded.11\).md)
+[PosControlException](ms884827\(v=winembedded.11\).md)
 [PosManagementException](ms884858\(v=winembedded.11\).md)
 [PosLibraryException](ms884854\(v=winembedded.11\).md)
 

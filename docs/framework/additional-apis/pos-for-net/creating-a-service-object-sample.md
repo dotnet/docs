@@ -10,7 +10,7 @@ ms.custom: pos-restored-from-archive
 Previous topics explained how to create a basic Service Object template with Plug and Play support. This section adds how to create a limited sample with the following new features:
 
 - Necessary abstract methods are implemented so that the sample will compile successfully.
-- The Service Object will be recognized by applications using <xref:Microsoft.PointOfService.PosExplorer>, for example, the **POS for .NET Test Application** included with the SDK.
+- The Service Object will be recognized by applications using [PosExplorer](ms884843\(v=winembedded.11\).md), for example, the **POS for .NET Test Application** included with the SDK.
 - Applications may now invoke methods on the Service Object or access properties, although no useful results will be returned.
 
 ## Requirements

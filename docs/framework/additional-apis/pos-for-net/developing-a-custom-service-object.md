@@ -32,7 +32,7 @@ Service Objects are typically implemented by independent hardware vendors (IHVs)
     Explains the difference between synchronous and asynchronous output to POS devices.
 
 - [Asynchronous Output Sample](asynchronous-output-sample.md)
-    Implements a simple <xref:Microsoft.PointOfService.BaseServiceObjects.PosPrinterBase> Service Object in order to demonstrate how POS for .NET manages asynchronous output.
+    Implements a simple [PosPrinterBase](aa460669\(v=winembedded.11\).md) Service Object in order to demonstrate how POS for .NET manages asynchronous output.
 
 - [Statistics Sample](statistics-sample.md)
     Implements a sample Service Object that uses the POS for .NET statistics methods.

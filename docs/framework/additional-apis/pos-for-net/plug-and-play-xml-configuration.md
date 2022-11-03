@@ -9,7 +9,7 @@ ms.custom: pos-restored-from-archive
 
 Although the Plug and Play hardware ID should generally be specified using the [HardwareId](aa460209\(v=winembedded.11\).md) property within the Service Object source code, there may be times when Service Object vendors require more flexibility. For example, the hardware ID needs to be changed without redistributing the entire Service Object assembly.
 
-To support these cases, Microsoft Point of Service for .NET (POS for .NET) specifies hardware associations in an XML file. These XML files are read from the directory that is specified in the registry key **HKEY\_LOCAL\_MACHINE/SOFTWARE/POSfor.NET/ControlConfigs**. When constructing the list of available Service Objects and devices, <xref:Microsoft.PointOfService.PosExplorer> processes each file in that directory and associates the device where possible. No additional action is required by either the Service Object or the application.
+To support these cases, Microsoft Point of Service for .NET (POS for .NET) specifies hardware associations in an XML file. These XML files are read from the directory that is specified in the registry key **HKEY\_LOCAL\_MACHINE/SOFTWARE/POSfor.NET/ControlConfigs**. When constructing the list of available Service Objects and devices, [PosExplorer](ms884843\(v=winembedded.11\).md) processes each file in that directory and associates the device where possible. No additional action is required by either the Service Object or the application.
 
 ## Schema
 

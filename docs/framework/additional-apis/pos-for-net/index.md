@@ -26,7 +26,7 @@ The following documentation can help you use POS for .NET to develop POS applica
 - [Copyright Information for POS for .NET v1.14.1](copyright-information-for-pos-for-net-v1141.md)
     Provides copyright information about POS for .NET v1.14.1.
 
-- [POS for .NET FAQ](pos-for-net-faq.md)
+- [POS for .NET FAQ](ee406171\(v=winembedded.0\).md)
     Provides answers to frequently asked questions for POS for .NET.
 
 - [What's New in POS for .NET v1.14 and v1.14.1](whats-new-in-pos-for-net-v114-and-v1141.md)
@@ -80,4 +80,4 @@ The following documentation can help you use POS for .NET to develop POS applica
 
 #### Reference
 
-<xref:Microsoft.PointOfService>
+[Microsoft.PointOfService](ms843373\(v=winembedded.11\).md)

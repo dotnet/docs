@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # PosExplorer Class (POS for .NET v1.14 SDK Documentation)
 
-<xref:Microsoft.PointOfService.PosExplorer> provides Point of Service (POS) applications with a single entry point to Microsoft Point of Service for .NET (POS for .NET) services. **PosExplorer** supports applications by:
+[PosExplorer](ms884843\(v=winembedded.11\).md) provides Point of Service (POS) applications with a single entry point to Microsoft Point of Service for .NET (POS for .NET) services. **PosExplorer** supports applications by:
 
 - Enumerating installed POS devices.
 - Instantiating Service Objects.

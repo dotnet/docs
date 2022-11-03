@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # Attributes for Identifying Service Objects and Assigning Hardware (POS for .NET v1.12 SDK Documentation)
 
-POS for .NET uses .NET reflection and .NET attributes to locate Service Object assemblies, identify Service Objects within those assemblies, and finally to associate a Plug and Play device with that Service Object. By leveraging these .NET features, <xref:Microsoft.PointOfService.PosExplorer> can identify Service Objects within an assembly and quickly assess their Plug and Play requirements. The expensive process of loading a .NET assembly is delayed until needed by the application.
+POS for .NET uses .NET reflection and .NET attributes to locate Service Object assemblies, identify Service Objects within those assemblies, and finally to associate a Plug and Play device with that Service Object. By leveraging these .NET features, [PosExplorer](ms884843\(v=winembedded.11\).md) can identify Service Objects within an assembly and quickly assess their Plug and Play requirements. The expensive process of loading a .NET assembly is delayed until needed by the application.
 
 In order to provide these features, POS for .NET depends on three different .NET attributes:
 
@@ -22,9 +22,9 @@ In order to provide these features, POS for .NET depends on three different .NET
 
 #### Reference
 
-<xref:Microsoft.PointOfService.PosAssemblyAttribute>
-<xref:Microsoft.PointOfService.HardwareIdAttribute>
-<xref:Microsoft.PointOfService.ServiceObjectAttribute>
+[PosAssemblyAttribute](ms884816\(v=winembedded.11\).md)
+[HardwareIdAttribute](ms884523\(v=winembedded.11\).md)
+[ServiceObjectAttribute](aa460884\(v=winembedded.11\).md)
 
 #### Concepts
 

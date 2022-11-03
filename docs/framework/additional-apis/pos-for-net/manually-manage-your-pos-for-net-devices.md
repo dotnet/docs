@@ -23,10 +23,10 @@ The following table lists posdm.exe commands and the equivalent XML that you mus
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">

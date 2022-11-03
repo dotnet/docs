@@ -32,8 +32,8 @@ POS for .NET v1.14 (and later) provides support for the following additional OPO
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -112,8 +112,8 @@ POS for .NET v1.14 (and later) provides support for the following additional OPO
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

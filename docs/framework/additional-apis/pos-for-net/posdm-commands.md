@@ -13,9 +13,9 @@ POSDM uses the following commands.
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">

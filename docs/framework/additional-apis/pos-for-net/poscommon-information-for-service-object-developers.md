@@ -75,8 +75,8 @@ Attempting to set **PowerNotify** can cause the following exceptions to be throw
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -112,8 +112,8 @@ Setting <xref:Microsoft.PointOfService.PowerState> can cause the following excep
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

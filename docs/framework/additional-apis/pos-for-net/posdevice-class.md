@@ -28,8 +28,8 @@ The **PosDevice** class represents a single physical POS device. The class provi
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

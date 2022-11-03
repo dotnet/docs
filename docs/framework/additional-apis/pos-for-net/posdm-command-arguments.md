@@ -13,8 +13,8 @@ The following switches can be used as arguments for POSDM commands.
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">

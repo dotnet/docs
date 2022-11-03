@@ -29,8 +29,8 @@ The **ServiceObject** class represents the management view of a Service Object.
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

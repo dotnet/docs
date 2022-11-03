@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# Attributes for Identifying Service Objects and Assigning Hardware (POS for .NET v1.12 SDK Documentation)
+# Attributes for Identifying Service Objects and Assigning Hardware (POS for .NET v1.14 SDK Documentation)
 
 POS for .NET uses .NET reflection and .NET attributes to locate Service Object assemblies, identify Service Objects within those assemblies, and finally to associate a Plug and Play device with that Service Object. By leveraging these .NET features, <xref:Microsoft.PointOfService.PosExplorer> can identify Service Objects within an assembly and quickly assess their Plug and Play requirements. The expensive process of loading a .NET assembly is delayed until needed by the application.
 

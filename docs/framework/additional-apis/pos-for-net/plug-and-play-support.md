@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# Plug and Play Support (POS for .NET v1.12 SDK Documentation)
+# Plug and Play Support (POS for .NET v1.14 SDK Documentation)
 
 POS for .NET fully supports Windows Embedded Plug and Play technology. To utilize this feature, Service Object developers can simply add one or more <xref:Microsoft.PointOfService.DeviceInfo.HardwareId> attributes to their code, or include the hardware reference in a [Plug and Play XML Configuration](plug-and-play-xml-configuration.md) file.
 

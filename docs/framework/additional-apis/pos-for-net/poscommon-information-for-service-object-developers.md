@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# PosCommon Information for Service Object Developers (POS for .NET v1.12 SDK Documentation)
+# PosCommon Information for Service Object Developers (POS for .NET v1.14 SDK Documentation)
 
 At the base of the POS for .NET Server Object class tree (**Interface**, **Basic**, **Base**) is <xref:Microsoft.PointOfService.PosCommon>. This class is a direct implementation of the "Common Properties, Methods, and Events" chapter in the UPOS specification.
 

@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# POS for .NET Service Object Architecture (POS for .NET v1.12 SDK Documentation)
+# POS for .NET Service Object Architecture (POS for .NET v1.14 SDK Documentation)
 
 There are features and design elements in POS for .NET that must be taken into account by Service Object developers. This section includes topics discussing several of these important concepts.
 

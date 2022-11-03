@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# POS for .NET Class Tree (POS for .NET v1.12 SDK Documentation)
+# POS for .NET Class Tree (POS for .NET v1.14 SDK Documentation)
 
 The POS for .NET SDK contains a set of classes which provide the Service Object with much of the functionality needed to meet the UPOS specification. There are three levels of base classes, referred to as **Interface**, **Basic**, and **Base** classes.
 

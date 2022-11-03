@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# Developing a Custom Service Object (POS for .NET v1.12 SDK Documentation)
+# Developing a Custom Service Object (POS for .NET v1.14 SDK Documentation)
 
 The POS for .NET SDK delivers support for developing UPOS-compliant applications. The POS for .NET class tree delivers support for both applications that use a specific UPOS device, and Service Objects which provide the link between the physical hardware and the application.
 

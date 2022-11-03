@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# Hydra Devices (POS for .NET v1.12 SDK Documentation)
+# Hydra Devices (POS for .NET v1.14 SDK Documentation)
 
 Some peripheral POS devices combine UPOS device types. These are referred to as Hydra devices, and their interface to the POS application requires more than one Service Object.
 

@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: pos-restored-from-archive
 ---
 
-# POS for .NET Device Basic Classes (POS for .NET v1.12 SDK Documentation)
+# POS for .NET Device Basic Classes (POS for .NET v1.14 SDK Documentation)
 
 Each hardware device in POS for .NET is represented by both an abstract interface, such as <xref:Microsoft.PointOfService.CashDrawer> class, and a **Basic** class, such as **CashDrawerBasic**. **Basic** classes derive from the underlying interface and contain basic functional support for the device. POS for .NET provides generic support for opening, claiming, and enabling the device, device statistics, and for managing delivery of events to the application. In addition, each **Basic** class contains a set of inherited and protected methods that can be implemented by the Service Object. This topic provides summary information about **Basic** classes that can be used by Service Objects that derive from the device’s **Basic** class, rather than taking advantage of the more fully implemented device **Base** class.
 

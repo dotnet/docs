@@ -218,7 +218,7 @@ Currently installed items:
 ...
 ```
 
-The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the example above, `Microsoft.Azure.WebJobs.ProjectTemplates` is listed. If the template package was installed by using a file system path, this identifier will be the folder path of the *.template.config* folder. Note that only the template packages installed via `dotnet new install` are shown in the list. The template packages that are built-in to .NET SDK are not shown.
+The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the example above, `Microsoft.Azure.WebJobs.ProjectTemplates` is listed. If the template package was installed by using a file system path, this identifier will be the folder path of the *.template.config* folder. Note that only the template packages installed via `dotnet new install` are shown in the list. The template packages that are built-in to the .NET SDK are not shown.
 
 ## Uninstalling a template package
 

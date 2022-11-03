@@ -70,8 +70,8 @@ The following table lists the UnifiedPOS devices with their equivalent POS for .
 
 #### Reference
 
-[Microsoft.PointOfService](ms843373\(v=winembedded.11\).md)
-[Microsoft.PointOfService.BaseServiceObjects](ms843374\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService>
+<xref:Microsoft.PointOfService.BaseServiceObjects>
 
 #### Concepts
 

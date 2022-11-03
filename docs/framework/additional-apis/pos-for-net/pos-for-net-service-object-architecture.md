@@ -24,7 +24,7 @@ There are features and design elements in POS for .NET that must be taken into a
     Provides an overview of Plug and Play support available to Service Object developers.
 
 - [PosCommon Information for Service Object Developers](poscommon-information-for-service-object-developers.md)
-    Describes methods and properties of [PosCommon](ms884820\(v=winembedded.11\).md) that are useful to Service Object developers.
+    Describes methods and properties of <xref:Microsoft.PointOfService.PosCommon> that are useful to Service Object developers.
 
 - [POS for .NET Device Basic Classes](pos-for-net-device-basic-classes.md)
     Provides information about using the POS for .NET **Basic** classes as the starting point for Service Objects.

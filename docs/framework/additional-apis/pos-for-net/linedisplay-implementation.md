@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # LineDisplay Implementation (POS for .NET v1.14 SDK Documentation)
 
-A **LineDisplay** Service Object is used to display text, bitmaps, and glyphs to a **LineDisplay** Point of Service device. This section provides information needed to implement **LineDisplay** Service Objects derived from the [LineDisplayBase](aa460464\(v=winembedded.11\).md) class.
+A **LineDisplay** Service Object is used to display text, bitmaps, and glyphs to a **LineDisplay** Point of Service device. This section provides information needed to implement **LineDisplay** Service Objects derived from the <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayBase> class.
 
 ## In This Section
 
@@ -21,4 +21,4 @@ A **LineDisplay** Service Object is used to display text, bitmaps, and glyphs to
 
 [Service Object Samples: Getting Started](service-object-samples-getting-started.md)
 
-[Microsoft.PointOfService.BaseServiceObjects](ms843374\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.BaseServiceObjects>

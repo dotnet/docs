@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # PosKeyboard Implementation (POS for .NET v1.14 SDK Documentation)
 
-A **PosKeyboard** Service Object reads keys from a POS keyboard. A POS keyboard may be an auxiliary keyboard, or it may be a virtual keyboard consisting of some or all of the keys on the system keyboard. In Microsoft Point of Service for .NET (POS for .NET), the POS keyboard **Base** class is [PosKeyboardBase](aa460659\(v=winembedded.11\).md).
+A **PosKeyboard** Service Object reads keys from a POS keyboard. A POS keyboard may be an auxiliary keyboard, or it may be a virtual keyboard consisting of some or all of the keys on the system keyboard. In Microsoft Point of Service for .NET (POS for .NET), the POS keyboard **Base** class is <xref:Microsoft.PointOfService.BaseServiceObjects.PosKeyboardBase>.
 
 A **PosKeyboard** Service Object follows the general input device model:
 
@@ -16,7 +16,7 @@ A **PosKeyboard** Service Object follows the general input device model:
 - A queued **DataEvent** event will be delivered to the application when the **DataEventEnabled** property is **true** and other event delivery requirements are met. The **PosKeyboardBase** class will manage event delivery automatically.
 - An **ErrorEvent** event is queued if an error while gathering or processing input, and is delivered to the application when **DataEventEnabled** is **true** and other event delivery requirements are met.
 - The **DataCount** property, which is maintained by the **PosKeyboardBase** class, may be read to obtain the number of queued events.
-- All queued input may be deleted by calling [ClearInput](ms842108\(v=winembedded.11\).md).
+- All queued input may be deleted by calling <xref:Microsoft.PointOfService.CashChanger.ClearInput>.
 
 The POS keyboard is an exclusive-use device:
 

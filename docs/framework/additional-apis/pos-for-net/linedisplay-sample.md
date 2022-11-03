@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # LineDisplay Sample (POS for .NET v1.14 SDK Documentation)
 
-The [LineDisplayBase](aa460464\(v=winembedded.11\).md) class is a relatively thin abstraction layer when compared to other Service Object **Base** classes—there is little code needed between the application and the physical device. The [LineDisplay](ms884540\(v=winembedded.11\).md) Service Object simply needs to advertise which features the physical device supports and modify its output according to the display properties the application has set.
+The <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayBase> class is a relatively thin abstraction layer when compared to other Service Object **Base** classes—there is little code needed between the application and the physical device. The <xref:Microsoft.PointOfService.LineDisplay> Service Object simply needs to advertise which features the physical device supports and modify its output according to the display properties the application has set.
 
 A **LineDisplay** Service Object may also monitor the device and report power or other status changes back to the application using a **StatusUpdateEvent**. This can be done by using the **Queue** methods or, for example, by using the power reporting features in **PosCommon**. Monitoring the device this way will generally require starting a new thread to wait for hardware events and queue the appropriate **StatusUpdateEvent**. A **LineDisplay** Service Object may also send **DirectIOEvents** to the application.
 
@@ -15,17 +15,17 @@ A **LineDisplay** Service Object may also monitor the device and report power or
 
 1. Add **using** directives for the **Microsoft.PointOfService** and **Microsoft.PointOfService.BaseServiceObject** namespaces.
 
-2. Add the global attribute [PosAssemblyAttribute](ms884816\(v=winembedded.11\).md) so that **PosExplorer** recognizes this as a Microsoft Point of Service for .NET (POS for .NET) assembly.
+2. Add the global attribute <xref:Microsoft.PointOfService.PosAssemblyAttribute> so that **PosExplorer** recognizes this as a Microsoft Point of Service for .NET (POS for .NET) assembly.
 
 3. Create a new class which is derived from **LineDisplayBase**.
 
-4. Add the class-level attribute [ServiceObjectAttribute](aa460884\(v=winembedded.11\).md) to your new class so that **PosExplorer** recognizes it as a Service Object.
+4. Add the class-level attribute <xref:Microsoft.PointOfService.ServiceObjectAttribute> to your new class so that **PosExplorer** recognizes it as a Service Object.
 
 ## To implement abstract LineDisplayBase members
 
-1. All **LineDisplay** Service Objects must support at least one screen mode. To provide the application with specifics about the supported screen modes, implement the abstract property [LineDisplayScreenModes](aa459862\(v=winembedded.11\).md).
+1. All **LineDisplay** Service Objects must support at least one screen mode. To provide the application with specifics about the supported screen modes, implement the abstract property <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayBase.LineDisplayScreenModes>.
 
-2. At a minimum, all **LineDisplay** Service Objects must implement [DisplayData](ms834574\(v=winembedded.11\).md) to display characters on the output device.
+2. At a minimum, all **LineDisplay** Service Objects must implement <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayBase.DisplayData(Microsoft.PointOfService.BaseServiceObjects.Cell[])> to display characters on the output device.
 
 ## Additional Capabilities
 
@@ -33,9 +33,9 @@ Set capability properties in your Service Object to advertise support for the fe
 
 ## To implement the blink feature
 
-1. In the constructor, set the [CapBlink](aa459878\(v=winembedded.11\).md) property to either **DisplayBlink.All** or **DisplayBlink.Each** to indicate which blinking mode this Service Object supports.
+1. In the constructor, set the <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayProperties.CapBlink> property to either **DisplayBlink.All** or **DisplayBlink.Each** to indicate which blinking mode this Service Object supports.
 
-2. Set the **CapBlink** property to **true**indicating that the blink rate may be set by the application by calling [BlinkRate](ms860629\(v=winembedded.11\).md).
+2. Set the **CapBlink** property to **true**indicating that the blink rate may be set by the application by calling <xref:Microsoft.PointOfService.LineDisplay.BlinkRate>.
 
 3. Take these and other settings into account when implementing **DisplayData**.
 

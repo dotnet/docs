@@ -11,7 +11,7 @@ Bar code scanners operate asynchronously and therefore have to notify applicatio
 
 As discussed in the [Device Input and Events](device-input-and-events.md) topic, events are queued before they are delivered to the application. The Microsoft Point of Service for .NET (POS for .NET) **Base** classes provide a means for Service Object code to queue events so that their delivery to the application can be deferred until the application can process them. Meanwhile, the Service Object can continue waiting for additional incoming hardware events.
 
-The Scanner device can send four events to the application. For two of these events, **DataEvent** and **ErrorEvent**, the POS for .NET [ScannerBase](ms881268\(v=winembedded.11\).md) class provides a protected helper method to simplify the code that is required to raise these events:
+The Scanner device can send four events to the application. For two of these events, **DataEvent** and **ErrorEvent**, the POS for .NET <xref:Microsoft.PointOfService.BaseServiceObjects.ScannerBase> class provides a protected helper method to simplify the code that is required to raise these events:
 
 | Event      | Method That Queues the Event            |
 |------------|-----------------------------------------|

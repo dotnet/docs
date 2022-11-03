@@ -11,13 +11,13 @@ Events management represents one of the key aspects of programming applications 
 
 ## Event-Driven Processing Model
 
-Event-driven input begins when an attached POS device receives data input. If that device is enabled (the [DeviceEnabled](ms861096\(v=winembedded.11\).md) property is set to **true**), then received data will be queued as a **DataEvent** event and sent to the application. Events are delivered in a first-in, first-out manner by an internal service thread. Just before this event is raised, a Service Object may use the **PreFireEvent** method to update properties before that event is sent off.
+Event-driven input begins when an attached POS device receives data input. If that device is enabled (the <xref:Microsoft.PointOfService.PosCommon.DeviceEnabled> property is set to **true**), then received data will be queued as a **DataEvent** event and sent to the application. Events are delivered in a first-in, first-out manner by an internal service thread. Just before this event is raised, a Service Object may use the **PreFireEvent** method to update properties before that event is sent off.
 
 After the event data is received, the device will automatically disable itself (setting the **DeviceEnabled** property to **false**) if the **AutoDisable** property is set to **true**. While disabled, the device cannot queue new input, and the physical device will be disabled, if possible.
 
 When the application is ready to receive input from the device, it sets the **DataEventEnabled** property to **true**. The application then starts to receive queued **DataEvent** events, even if those **DataEvent** events were queued before **DataEventEnabled** property was set to **true**.
 
-Additional data events may be disabled by setting the **DataEventEnabled** property or the [FreezeEvents](ms861099\(v=winembedded.11\).md) property to **false**. This causes later input data to be queued while the application processes the current input and associated properties. When the application is ready for more data, it may re-enable events by setting the **DataEventEnabled** property to **true**.
+Additional data events may be disabled by setting the **DataEventEnabled** property or the <xref:Microsoft.PointOfService.PosCommon.FreezeEvents> property to **false**. This causes later input data to be queued while the application processes the current input and associated properties. When the application is ready for more data, it may re-enable events by setting the **DataEventEnabled** property to **true**.
 
 ## Event-Driven Input and Device Sharing
 
@@ -74,10 +74,10 @@ Rules for event queue management are as follows:
 
 #### Reference
 
-[FreezeEvents](ms861099\(v=winembedded.11\).md)
-[StatusUpdateEvent](ms831427\(v=winembedded.11\).md)
-[DirectIOEvent](ms831426\(v=winembedded.11\).md)
-[ErrorLocus](aa460204\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosCommon.FreezeEvents>
+<xref:Microsoft.PointOfService.PosCommon.StatusUpdateEvent>
+<xref:Microsoft.PointOfService.PosCommon.DirectIOEvent>
+<xref:Microsoft.PointOfService.DeviceErrorEventArgs.ErrorLocus>
 
 #### Concepts
 

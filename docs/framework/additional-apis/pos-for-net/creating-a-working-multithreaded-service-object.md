@@ -10,7 +10,7 @@ ms.custom: pos-restored-from-archive
 The previous sections provided samples and guides to start your project including:
 
 - Creating a simple template.
-- Implementing a Service Object class that can be compiled and seen by the Point Of Service sample application via [PosExplorer](ms884843\(v=winembedded.11\).md).
+- Implementing a Service Object class that can be compiled and seen by the Point Of Service sample application via <xref:Microsoft.PointOfService.PosExplorer>.
 - Implementing a thread helper class.
 
 This sample combines all of these steps to create a working, multithreaded MSR Service Object class. This sample does not actually read from any hardware. It simply pushes test data through the system. It illustrates, however, how to add code that is specific to your Service Object.

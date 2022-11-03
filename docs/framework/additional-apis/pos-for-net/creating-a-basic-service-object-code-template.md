@@ -11,7 +11,7 @@ The previous section, [Setting up a Service Object Project](setting-up-a-service
 
 ## To create a simple class template
 
-1. Add **using** directives for the [Microsoft.PointOfService](ms843373\(v=winembedded.11\).md) and [Microsoft.PointOfService.BaseServiceObjects](ms843374\(v=winembedded.11\).md) to the top of the source file.
+1. Add **using** directives for the <xref:Microsoft.PointOfService> and <xref:Microsoft.PointOfService.BaseServiceObjects> to the top of the source file.
 
 2. Choose the POS for .NET **Base** class your Service Object will be derived from. The **Base** class you choose is based on the type of POS device for which you are developing this Service Object. (See [POS for .NET Class Tree](pos-for-net-class-tree.md))
 
@@ -25,7 +25,7 @@ The previous section, [Setting up a Service Object Project](setting-up-a-service
       - Major version
       - Minor version
 
-5. Create a default public parameterless constructor. This is required for [PosExplorer](ms884843\(v=winembedded.11\).md) to create an instance of your class by using .NET reflection.
+5. Create a default public parameterless constructor. This is required for <xref:Microsoft.PointOfService.PosExplorer> to create an instance of your class by using .NET reflection.
 
 ## Example
 

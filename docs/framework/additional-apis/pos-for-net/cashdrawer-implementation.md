@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # CashDrawer Implementation (POS for .NET v1.14 SDK Documentation)
 
-Most point-of-sale applications will use a cash drawer for financial transactions. Service Object developers can use the Microsoft Point of Service for .NET (POS for .NET) class, [CashDrawerBase](aa460345\(v=winembedded.11\).md), to easily implement a Unified Point Of Service (UnifiedPOS) compliant **CashDrawer** Service Object.
+Most point-of-sale applications will use a cash drawer for financial transactions. Service Object developers can use the Microsoft Point of Service for .NET (POS for .NET) class, <xref:Microsoft.PointOfService.BaseServiceObjects.CashDrawerBase>, to easily implement a Unified Point Of Service (UnifiedPOS) compliant **CashDrawer** Service Object.
 
 ## Capabilities
 

@@ -14,12 +14,12 @@ A PIN Pad performs encryption functions under control of a PIN Pad Management Sy
 Depending on the PIN Pad Management System, one or more EFT transaction parameters need to be provided to the PIN Pad for use in the encryption functions. The application should set the value of ALL EFT Transaction parameter properties to enable easier migration to EFT Transaction Hosts that require a different PIN Pad Management System.
 
 - After opening, claiming, and enabling the PIN Pad Control, an application should use the following general scenario for each EFT Transaction.
-- Set the EFT transaction parameters (**AccountNumber**, **Amount**, **MerchantID**, **TerminalID**, **Track1Data**, **Track2Data**, **Track3Data**, **Track4Data**, and **TransactionType** properties) and then call the [BeginEftTransaction](ms834821\(v=winembedded.11\).md) method. This will initialize the device to perform the encryption functions for the EFT transaction.
+- Set the EFT transaction parameters (**AccountNumber**, **Amount**, **MerchantID**, **TerminalID**, **Track1Data**, **Track2Data**, **Track3Data**, **Track4Data**, and **TransactionType** properties) and then call the <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase.BeginEftTransaction(Microsoft.PointOfService.PinPadSystem,System.Int32)> method. This will initialize the device to perform the encryption functions for the EFT transaction.
 
-If PIN Entry is **OnFailure**, call the [EnablePinEntry](ms834825\(v=winembedded.11\).md) method. Then set the **DataEventEnabled** property and wait for the **DataEvent** event.
+If PIN Entry is **OnFailure**, call the <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase.EnablePinEntry> method. Then set the **DataEventEnabled** property and wait for the **DataEvent** event.
 
-- If Message Authentication Codes are required, use the [ComputeMac](ms842992\(v=winembedded.11\).md) and [VerifyMac](ms834835\(v=winembedded.11\).md) methods as needed.
-- Call the [EndEftTransaction](ms834828\(v=winembedded.11\).md) method to notify the device that all operations for the EFT transaction have been completed. This specification supports two models of usage of the display. The **CapDisplay** property indicates one of the following models:
+- If Message Authentication Codes are required, use the <xref:Microsoft.PointOfService.PinPad.ComputeMac(System.String)> and <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase.VerifyMac(System.String)> methods as needed.
+- Call the <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadBase.EndEftTransaction(Microsoft.PointOfService.EftTransactionCompletion)> method to notify the device that all operations for the EFT transaction have been completed. This specification supports two models of usage of the display. The **CapDisplay** property indicates one of the following models:
       - An application has complete control of the text that is to be displayed. For this model, there is an associated **LineDisplay** control that is used by the application to interact with the display.
       - An application cannot supply the text to be displayed. Instead, it can only select from a list of predefined messages to be displayed. For this model, there is a set of PIN Pad properties that are used to control the display.
 

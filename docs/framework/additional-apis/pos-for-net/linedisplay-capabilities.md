@@ -9,11 +9,11 @@ ms.custom: pos-restored-from-archive
 
 A **LineDisplay** Service Object supports, at a minimum, the ability to display characters on the output device. In addition, the device may also support additional features, which the Service Object exposes to the application by setting capability properties and implementing their corresponding methods and properties.
 
-For each additional feature, there is a capability property defined in the [LineDisplayBase](aa460464\(v=winembedded.11\).md) class. The capability properties may not be queried until the application has called **Open** on the Service Object. Thereafter, the capability properties will indicate which properties and methods may be set and called on the Service Object.
+For each additional feature, there is a capability property defined in the <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayBase> class. The capability properties may not be queried until the application has called **Open** on the Service Object. Thereafter, the capability properties will indicate which properties and methods may be set and called on the Service Object.
 
 This section lists the features that a **LineDisplay** Service Object may support. For each feature, there is a capability attribute that must be set by the Service Object as well a set of properties or methods which will be used by the application to access these features. In some cases, the feature is fully supported in **LineDisplayBase** and requires no additional code in the Service Object class.
 
-The capability properties are implemented as read-only in order to prevent the application from changing their values. This means, too, that they cannot be set directly by the Service Object. Instead, **LineDisplayBase** has a protected property, **Properties**, which returns a [LineDisplayProperties](aa460573\(v=winembedded.11\).md) object. This class provides public equivalents for all capability properties. For example, in order to advertise that it supports blinking, a Service Object would write:
+The capability properties are implemented as read-only in order to prevent the application from changing their values. This means, too, that they cannot be set directly by the Service Object. Instead, **LineDisplayBase** has a protected property, **Properties**, which returns a <xref:Microsoft.PointOfService.BaseServiceObjects.LineDisplayProperties> object. This class provides public equivalents for all capability properties. For example, in order to advertise that it supports blinking, a Service Object would write:
 
 `Properties.CapBlink = true;`
 
@@ -53,7 +53,7 @@ Thereafter, applications and Service Objects may use the following to set or get
 
 ## Reverse Video
 
-A line display may support character-level or device-level reverse video. If this feature is supported, the Service Object should set the **Properties.CapReverse** to a value in the [DisplayReverse](ms884175\(v=winembedded.11\).md) enumeration.
+A line display may support character-level or device-level reverse video. If this feature is supported, the Service Object should set the **Properties.CapReverse** to a value in the <xref:Microsoft.PointOfService.DisplayReverse> enumeration.
 
 | DisplayReverse Value | Corresponding UnifiedPOS Value | Description                                                                                     |
 |----------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
@@ -83,7 +83,7 @@ Thereafter, applications and Service Objects may use the following to set or get
 
 ## Cursor Attributes
 
-A line display device may support a variety of different cursor types. The **Properties.CapCursorType** property defines which of these types are supported. The **CapCursorType** property is set using the [DisplayCursors](ms884158\(v=winembedded.11\).md) enumeration and holds a bitwise indication of the supported cursor types, which can be any of the following types shown in the table.
+A line display device may support a variety of different cursor types. The **Properties.CapCursorType** property defines which of these types are supported. The **CapCursorType** property is set using the <xref:Microsoft.PointOfService.DisplayCursors> enumeration and holds a bitwise indication of the supported cursor types, which can be any of the following types shown in the table.
 
 | CapCursorType enum | UnifiedPOS Value   | Description                                     |
 |--------------------|--------------------|-------------------------------------------------|
@@ -106,7 +106,7 @@ Glyphs are a pixel-level user definition of character cells. If glyphs are suppo
 
 Thereafter, applications and Service Objects may use the following to set or get the glyph list and settings:
 
-- [RangeOfCharacters](aa460859\(v=winembedded.11\).md)`[] CustomGlyphList { get; set; }`
+- <xref:Microsoft.PointOfService.RangeOfCharacters>`[] CustomGlyphList { get; set; }`
 - `int GlyphHeight { get; }`
 - `int GlyphWidth { get; }`
 - `void DefineGlyph(int glyphCode, byte[] glyph);`
@@ -118,7 +118,7 @@ A device may support changing the screen mode; that is, the number of rows and c
 Thereafter, the application and Service Object may use the following to set or get the screen mode:
 
 - `int ScreenMode { get; set; }`
-- [DisplayScreenMode](ms884183\(v=winembedded.11\).md)`[] ScreenModeList { get; }`
+- <xref:Microsoft.PointOfService.DisplayScreenMode>`[] ScreenModeList { get; }`
 
 ## Bitmaps
 
@@ -131,7 +131,7 @@ The Service Object may want to override the following methods if this capability
 
 ## Character Sets
 
-A Service Object should set the **Properties.CapCharacterSet** property with the default character set capability of the line display device. This property can be set to a member of the [CharacterSetCapability](ms883993\(v=winembedded.11\).md) enumeration as shown in the following table.
+A Service Object should set the **Properties.CapCharacterSet** property with the default character set capability of the line display device. This property can be set to a member of the <xref:Microsoft.PointOfService.CharacterSetCapability> enumeration as shown in the following table.
 
 | CharacterSetCapability Value | UnifiedPOS Value | Description                                                                                                                                                                                             |
 |------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

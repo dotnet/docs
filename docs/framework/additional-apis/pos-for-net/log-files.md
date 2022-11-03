@@ -7,7 +7,7 @@ ms.custom: pos-restored-from-archive
 
 # Log Files (POS for .NET v1.14 SDK Documentation)
 
-Microsoft Point of Service for .NET (POS for .NET) includes a logging feature for recording POS for .NET, Service Objects, and application events. Logging parameters are read from the POS for .NET registry key, **\\HKLM\\SOFTWARE\\POSfor.NET\\Logging**, and entries are written using the [Logger](ms884546\(v=winembedded.11\).md) class.
+Microsoft Point of Service for .NET (POS for .NET) includes a logging feature for recording POS for .NET, Service Objects, and application events. Logging parameters are read from the POS for .NET registry key, **\\HKLM\\SOFTWARE\\POSfor.NET\\Logging**, and entries are written using the <xref:Microsoft.PointOfService.Logger> class.
 
 ## Enabling Logging
 
@@ -87,13 +87,13 @@ Each entry contains the following fields:
 
 ### Comments
 
-If there is a log file open, and the application calls the [Refresh](ms843055\(v=winembedded.11\).md) method, the file is closed and a new one created with the updated time stamp.
+If there is a log file open, and the application calls the <xref:Microsoft.PointOfService.PosExplorer.Refresh> method, the file is closed and a new one created with the updated time stamp.
 
 ## See Also
 
 #### Reference
 
-[Logger](ms884546\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.Logger>
 
 #### Concepts
 

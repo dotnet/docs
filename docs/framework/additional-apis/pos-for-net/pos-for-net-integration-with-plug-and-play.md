@@ -11,23 +11,23 @@ Microsoft Point of Service for .NET (POS for .NET) leverages Windows Embedded Pl
 
 ## PosExplorer
 
-The POS for .NET [PosExplorer](ms884843\(v=winembedded.11\).md) class serves as the interface between Plug and Play notifications and POS applications. **PosExplorer** translates the relevant Plug and Play notifications into POS for .NET events, which it then sends to the POS application.
+The POS for .NET <xref:Microsoft.PointOfService.PosExplorer> class serves as the interface between Plug and Play notifications and POS applications. **PosExplorer** translates the relevant Plug and Play notifications into POS for .NET events, which it then sends to the POS application.
 
 ## Plug and Play Events
 
 The **PosExplorer** class exposes two Plug and Play events for use by POS applications:
 
-- [DeviceAddedEvent](ms831428\(v=winembedded.11\).md)
+- <xref:Microsoft.PointOfService.PosExplorer.DeviceAddedEvent>
     The **DeviceAddedEvent** triggers when a POS device is connected to the system.
-- [DeviceRemovedEvent](ms831429\(v=winembedded.11\).md)
+- <xref:Microsoft.PointOfService.PosExplorer.DeviceRemovedEvent>
     The **DeviceRemovedEvent** triggers when a POS device is disconnected from the system.
 
 ## See Also
 
 #### Reference
 
-[DeviceAddedEvent](ms831428\(v=winembedded.11\).md)
-[DeviceRemovedEvent](ms831429\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.PosExplorer.DeviceAddedEvent>
+<xref:Microsoft.PointOfService.PosExplorer.DeviceRemovedEvent>
 
 #### Concepts
 

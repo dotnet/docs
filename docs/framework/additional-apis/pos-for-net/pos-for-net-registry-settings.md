@@ -26,7 +26,7 @@ The **POSfor.NET** registry key has three subkeys:
 
 ## POSfor.NET\\ControlAssemblies Key
 
-This key may contain any number of values of type REG\_SZ, each of which contains the name of a directory. [PosExplorer](ms884843\(v=winembedded.11\).md) will iterate through the entire list of values, searching each directory. Therefore, the names of the values are not important.
+This key may contain any number of values of type REG\_SZ, each of which contains the name of a directory. <xref:Microsoft.PointOfService.PosExplorer> will iterate through the entire list of values, searching each directory. Therefore, the names of the values are not important.
 
 These values will need to be modified during system configuration so that they point to the locations appropriate for the specific requirements of the installation.
 
@@ -40,7 +40,7 @@ The following table shows the default values that are written during the POS for
 
 ## POSfor.NET\\ControlConfigs Key
 
-In most cases, POS devices are paired with specific Service Objects using the [HardwareId](aa460209\(v=winembedded.11\).md) attribute, but in some rare situations, a Service Object provider may need the ability to assign a different device to a Service Object without redistributing the entire assembly.
+In most cases, POS devices are paired with specific Service Objects using the <xref:Microsoft.PointOfService.DeviceInfo.HardwareId> attribute, but in some rare situations, a Service Object provider may need the ability to assign a different device to a Service Object without redistributing the entire assembly.
 
 To accommodate these situations, POS for .NET supports the ability to associate the device to a Service Object in a [Plug and Play XML Configuration](plug-and-play-xml-configuration.md) file.
 
@@ -52,7 +52,7 @@ This key contains a value which points to the location of these Plug and Play co
 
 ## POSfor.NET\\Logging Key
 
-This key contains values which dictate how POS for .NET handles log files. Both POS for .NET and applications, using the [Logger](ms884546\(v=winembedded.11\).md) object, may write to the log file.
+This key contains values which dictate how POS for .NET handles log files. Both POS for .NET and applications, using the <xref:Microsoft.PointOfService.Logger> object, may write to the log file.
 
 The following table shows the values of this key.
 
@@ -67,7 +67,7 @@ The following table shows the values of this key.
 
 #### Reference
 
-[Logger](ms884546\(v=winembedded.11\).md)
+<xref:Microsoft.PointOfService.Logger>
 
 #### Concepts
 

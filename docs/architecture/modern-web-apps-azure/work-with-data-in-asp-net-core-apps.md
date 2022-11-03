@@ -111,7 +111,7 @@ await _context.SaveChangesAsync();
 
 EF Core supports both synchronous and async methods for fetching and saving. In web applications, it's recommended to use the async/await pattern with the async methods, so that web server threads are not blocked while waiting for data access operations to complete.
 
-For more information, you can also visit [Buffering and Streaming](https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying#buffering-and-streaming) section of efficient querying.
+For more information, see [Buffering and Streaming](/ef/core/performance/efficient-querying#buffering-and-streaming).
 
 ### Fetching related data
 

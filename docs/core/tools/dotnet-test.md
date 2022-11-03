@@ -183,7 +183,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--results-directory <RESULTS_DIR>`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file. Short form `-r` available in .NET dSDK versions earlier than 7.
+  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file. Short form `-r` available in .NET SDK versions earlier than 7.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

@@ -2,7 +2,7 @@ name: "quest import"
 on:
   issues:
     types:
-      [ labeled ]
+      [ labeled, closed, reopened, assigned, unassigned ]
   workflow_dispatch:
     inputs:
       reason:

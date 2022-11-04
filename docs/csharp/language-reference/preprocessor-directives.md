@@ -19,6 +19,7 @@ f1_keywords:
   - "#pragma"
   - "#pragma warning"
   - "#pragma checksum"
+  - "defaultline_CSharpKeyword"
 helpviewer_keywords: 
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"

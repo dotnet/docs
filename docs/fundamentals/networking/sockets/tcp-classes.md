@@ -82,7 +82,7 @@ The preceding C# code:
 
 `TcpListener` and `TcpClient` classes internal implementation relies on the `Socket` class. This means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
 
-### Create a client `Socket`
+### Create a client
 
 `TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via `[new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket)` constructor, if [IPv6 is supported (Socket.OSSupportsIPv6 == true)](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>). Otherwise, it fallbacks to IPv4 socket. Consider the following TCP client code:
 
@@ -98,9 +98,9 @@ var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
 One of `TcpClient`'s constructor takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
 
-- `[AddressFamily.InterNetwork](xref:System.Net.Sockets.AddressFamily.InterNetwork)`: for IPv4 socket.
-- `[AddressFamily.InterNetworkV6](xref:System.Net.Sockets.AddressFamily.InterNetworkV6)`: for IPv6 socket.
-- `[AddressFamily.Unknown](xref:System.Net.Sockets.AddressFamily.Unknown)`: for dual-stack socket (by default, this enum value is used).
+- [AddressFamily.InterNetwork](xref:System.Net.Sockets.AddressFamily.InterNetwork): for IPv4 socket.
+- [AddressFamily.InterNetworkV6](xref:System.Net.Sockets.AddressFamily.InterNetworkV6): for IPv6 socket.
+- [AddressFamily.Unknown](xref:System.Net.Sockets.AddressFamily.Unknown): for dual-stack socket (by default, this enum value is used).
 
 Consider the following TCP client code:
 
@@ -143,6 +143,132 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 socket.Connect("www.example.com", 80);
 ```
+
+### Connect to server
+
+Basically, every `Connect`, `ConnectAsync`, `BeginConnect` and `EndConnect` overload in `TcpClient` are functionally equivalent and their function signatures are same as well. Consider the following TCP client code:
+
+```csharp
+var client = new TcpClient();
+client.Connect("www.example.com", 80);
+```
+
+The preceding TCP client code is functionally equivalent to the following socket code:
+
+```csharp
+var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+socket.Connect("www.example.com", 80);
+```
+
+### Create a server
+
+In `TcpListener` class, there are two constructors. Basically, both of them are initializes underlying socket. One of them is `TcpListener(IPAddress localaddr, int port)`. Consider the following TCP listener code:
+
+```csharp
+var listener = new TcpListener(IPAddress.Loopback, 5000);
+```
+
+The preceding TCP listener code is functionally equivalent to the following socket code:
+
+```csharp
+var ep = new IPEndPoint(IPAddress.Loopback, 5000);
+var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+```
+
+Other one is `TcpListener(IPEndPoint localEP)`, which does the same thing with the above constructor. Consider the following TCP listener code:
+
+```csharp
+var ep = new IPEndPoint(IPAddress.Loopback, 5000);
+var listener = new TcpListener(ep);
+```
+
+The preceding TCP listener code is functionally equivalent to the following socket code:
+
+```csharp
+var ep = new IPEndPoint(IPAddress.Loopback, 5000);
+var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+```
+
+Also, there is a `static` <xref:System.Net.Sockets.TcpListener.Create%2A> method as well. `Create` method creates _dual-stack_ socket if [IPv6 is supported (Socket.OSSupportsIPv6 == true)](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise creates IPv4 socket. Consider the following TCP listener code:
+
+```csharp
+var listener = TcpListener.Create(5000);
+```
+
+The preceding TCP listener code is functionally equivalent to the following socket code:
+
+```csharp
+var ep = new IPEndPoint(Socket.OSSupportsIPv6 ? IPAddress.IPv6Any : IPAddress.Any, 5000);
+var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+```
+
+### Start listening on server
+
+In `Socket` class there are two steps to start listening on a server, but in `TcpClient` calling `Start` function is enough. Consider the following TCP listener code:
+
+```csharp
+var listener = new TcpListener(IPAddress.Loopback, 5000);
+listener.Start(10);
+```
+
+The preceding TCP listener code is functionally equivalent to the following socket code:
+
+```csharp
+var ep = new IPEndPoint(IPAddress.Loopback, 5000);
+var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+socket.Bind(ep);
+try
+{
+    socket.Listen(10);
+}
+catch (SocketException)
+{
+    socket.Dispose();
+}
+```
+
+### Accepting a connection on server
+
+Basically, in `TcpListener` you can get two different type as return value on connection accept Those types are:
+
+- <xref:System.Net.Sockets.Socket>
+- <xref:System.Net.Sockets.TcpClient>
+
+You can get `TcpClient` from these functions: <xref:System.Net.Sockets.TcpListener.AcceptTcpClient> and <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync>, and you can get `Socket` from these functions: <xref:System.Net.Sockets.TcpListener.AcceptSocket> and <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync>.
+
+Consider the following TCP client code:
+
+```csharp
+var listener = new TcpListener(IPAddress.Loopback, 5000);
+var acceptSocket = listener.AcceptSocket(); // var acceptSocket = listener.AcceptSocketAsync();
+```
+
+The preceding TCP listener code is functionally equivalent to the following socket code:
+
+```csharp
+var ep = new IPEndPoint(IPAddress.Loopback, 5000);
+var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+var acceptSocket = socket.Accept(); // var acceptSocket = await socket.AcceptAsync();
+```
+
+### Create a stream to send and receive data
+
+The difference in here is `TcpClient` class has a helper function for this if you want to create a `NetworkStream` which is called <xref:System.Net.Sockets.TcpClient.GetStream>, but in `Socket` class you should create it by yourself. Consider the following TCP client code:
+
+```csharp
+var client = new TcpClient();
+NetworkStream stream = client.GetStream();
+```
+
+The preceding TCP client code is functionally equivalent to the following socket code:
+
+```csharp
+var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+NetworkStream stream = new(socket, ownsSocket: true); // Please be aware, we're passing true as `ownsSocket` parameter to let stream object to own the socket. 
+```
+
+> [!TIP]
+> <xref:System.Net.Sockets.Socket> class has advantage if you don't want to use `Stream`. There are <xref:System.Net.Sockets.Socket.Send%2A>, <xref:System.Net.Sockets.Socket.SendAsync%2A>, <xref:System.Net.Sockets.Socket.Receive%2A> and <xref:System.Net.Sockets.Socket.ReceiveAsync%2A> overloads in `Socket` class.
 
 ## See also
 

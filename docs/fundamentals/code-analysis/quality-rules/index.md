@@ -80,7 +80,7 @@ The following table lists code quality analysis rules.
 > | [CA1418: Use valid platform string](ca1418.md) | Platform compatibility analyzer requires a valid platform name and version. |
 > | [CA1419: Provide a parameterless constructor that is as visible as the containing type for concrete types derived from 'System.Runtime.InteropServices.SafeHandle'](ca1419.md) | Providing a parameterless constructor that is as visible as the containing type for a type derived from `System.Runtime.InteropServices.SafeHandle` enables better performance and usage with source-generated interop solutions. |
 > | [CA1420: Property, type, or attribute requires runtime marshalling](ca1420.md) | Using features that require runtime marshalling when runtime marshalling is disabled will result in run-time exceptions. |
-> | [CA1422: ](ca1422.md) |  |
+> | [CA1422: Validate platform compatibility](ca1422.md) | Calling an API that's obsolete in a given OS (version) from a call site that's reachable from that OS (version) is not recommended. |
 > | [CA1501: Avoid excessive inheritance](ca1501.md) | A type is more than four levels deep in its inheritance hierarchy. Deeply nested type hierarchies can be difficult to follow, understand, and maintain. |
 > | [CA1502: Avoid excessive complexity](ca1502.md) | This rule measures the number of linearly independent paths through the method, which is determined by the number and complexity of conditional branches. |
 > | [CA1505: Avoid unmaintainable code](ca1505.md) | A type or method has a low maintainability index value. A low maintainability index indicates that a type or method is probably difficult to maintain and would be a good candidate for redesign. |

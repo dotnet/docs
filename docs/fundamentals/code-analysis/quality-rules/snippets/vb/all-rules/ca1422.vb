@@ -6,9 +6,9 @@ Public Class Violation
     <SupportedOSPlatform("Windows")>
     Public Sub M1()
         ' Violates rules CA1422.
-        ' This call site is reachable on: 'Windows',
-        ' but Test.ObsoletedOnWindows62()
-        ' is obsoleted on Windows 6.2 and later.
+        ' This call site is reachable on 'Windows',
+        ' but 'ObsoletedOnWindows62()'
+        ' is obsoleted on 'Windows 6.2' and later.
         ObsoletedOnWindows62()
     End Sub
 

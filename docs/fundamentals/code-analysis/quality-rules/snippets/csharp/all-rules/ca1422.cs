@@ -8,9 +8,9 @@ public class Violation
     public void M1()
     {
         // Violates rule CA1422.
-        // This call site is reachable on Windows,
-        // but 'Test.ObsoletedOnWindows62()'
-        // is obsoleted on: Windows 6.2 and later.
+        // This call site is reachable on 'Windows',
+        // but 'ObsoletedOnWindows62()'
+        // is obsoleted on 'Windows 6.2' and later.
         ObsoletedOnWindows62();
     }
 

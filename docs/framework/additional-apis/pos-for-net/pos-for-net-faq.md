@@ -58,7 +58,7 @@ POS for .NET v1.14 can be installed on the following platforms:
 - Windows 11
 - Windows 11 IoT Enterprise
 - Windows 10
-- Windows 10 IoT Enterprise 
+- Windows 10 IoT Enterprise
 - Windows 10 IoT Enterprise LTSC 2021
 - Windows 10 IoT Enterprise LTSC 2019
 

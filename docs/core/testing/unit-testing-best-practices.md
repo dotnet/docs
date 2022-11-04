@@ -263,7 +263,7 @@ When writing your tests, try to only include one act per test. Common approaches
 
 #### Why?
 
-- When the test fails, it isn't clear which act is failing.
+- When the test fails, it is clear which act is failing.
 - Ensures that the test is focused on just a single case.
 - Gives you the entire picture as to why your tests are failing.
 

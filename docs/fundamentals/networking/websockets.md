@@ -15,7 +15,7 @@ The WebSocket protocol enables two-way communication between a client and a remo
 WebSockets over HTTP/1.1 uses a single TCP connection, therefore it is managed by connection-wide headers, for more information, see [RFC 6455](https://www.rfc-editor.org/rfc/rfc6455). Consider the following example of how to establish WebSocket over HTTP/1.1:
 
 ```c#
-Uri uri = new Uri("ws://corefx-net-http11.azurewebsites.net/WebSocket/EchoWebSocket.ashx");
+Uri uri = new("ws://corefx-net-http11.azurewebsites.net/WebSocket/EchoWebSocket.ashx");
 
 using ClientWebSocket ws = new();
 await ws.ConnectAsync(uri, default);

@@ -99,6 +99,8 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
+- (18) **{dotnet_root}** is a shared root for all .NET major and minor versions. As a consequence, you will see all diffrent runtime versions, for all .NET major and minor versions, under a single folder on user's machine - `{dotnet_root}/shared/Microsoft.NETCore.App`. The same is true for all other folders that contain version sub-folders, i.e. `{dotnet_root}/shared/sdk`. It is strongly advised that the name of `{dotnet_root}` folder be version agnostic, i.e. simply `dotnet`.
+
 ## Recommended packages
 
 .NET versioning is based on the runtime component `[major].[minor]` version numbers.

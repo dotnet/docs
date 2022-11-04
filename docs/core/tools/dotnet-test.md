@@ -37,8 +37,8 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [--no-restore]
     [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>]
-    [--results-directory <RESULTS_DIR>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-r|--results-directory <RESULTS_DIR>]
+    [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>]
     [-t|--list-tests]
     [-v|--verbosity <LEVEL>]
@@ -181,13 +181,13 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`--results-directory <RESULTS_DIR>`**
+- **`-r|--results-directory <RESULTS_DIR>`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file. Short form `-r` available in .NET SDK versions earlier than 7.
+  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
 
-- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
+- **`--runtime <RUNTIME_IDENTIFIER>`**
 
-  The target runtime to test for. Short form `-r` available starting in .NET SDK 7.
+  The target runtime to test for.
 
 - **`-s|--settings <SETTINGS_FILE>`**
 

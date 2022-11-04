@@ -31,5 +31,4 @@ jobs:
         with:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
-          issue: ${{ null }}
-          
+          issue: '-1'          

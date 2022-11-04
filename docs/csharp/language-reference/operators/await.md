@@ -50,4 +50,4 @@ For more information, see the [Await expressions](~/_csharpstandard/standard/exp
 - [Task asynchronous programming model](../../programming-guide/concepts/async/task-asynchronous-programming-model.md)
 - [Asynchronous programming](../../async.md)
 - [Walkthrough: accessing the Web by using async and await](../../programming-guide/concepts/async/index.md)
-- [Tutorial: Generate and consume async streams](../../whats-new/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Generate and consume async streams](../../tutorials/generate-consume-asynchronous-stream.md)

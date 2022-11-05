@@ -170,7 +170,7 @@ socket.Connect("www.example.com", 80);
 
 ### Create a server socket
 
-In `TcpListener` class, there are two constructors. Basically, both of them are initializes underlying socket. One of them is `TcpListener(IPAddress localaddr, int port)`.
+In `TcpListener` class, basically, constructors initializes underlying socket. One of them is `TcpListener(IPAddress localaddr, int port)`.
 
 Consider the following TCP listener code:
 
@@ -185,40 +185,9 @@ var ep = new IPEndPoint(IPAddress.Loopback, 5000);
 var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 ```
 
-Other one is `TcpListener(IPEndPoint localEP)`, which does the same thing with the above constructor.
-
-Consider the following TCP listener code:
-
-```csharp
-var ep = new IPEndPoint(IPAddress.Loopback, 5000);
-var listener = new TcpListener(ep);
-```
-
-The preceding TCP listener code is functionally equivalent to the following socket code:
-
-```csharp
-var ep = new IPEndPoint(IPAddress.Loopback, 5000);
-var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-```
-
-Also, there is a `static` <xref:System.Net.Sockets.TcpListener.Create%2A> method as well. `Create` method creates _dual-stack_ socket if [IPv6 is supported (Socket.OSSupportsIPv6 == true)](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise creates IPv4 socket.
-
-Consider the following TCP listener code:
-
-```csharp
-var listener = TcpListener.Create(5000);
-```
-
-The preceding TCP listener code is functionally equivalent to the following socket code:
-
-```csharp
-var ep = new IPEndPoint(Socket.OSSupportsIPv6 ? IPAddress.IPv6Any : IPAddress.Any, 5000);
-var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
-```
-
 ### Start listening on the server
 
-The <xref:System.Net.Sockets.TcpClient.Start> method is a wrapper combining Socket's <xref:System.Net.Socket.Bind> and <xref:System.Net.Socket.Listen>.
+The <xref:System.Net.Sockets.TcpListener.Start> method is a wrapper combining Socket's <xref:System.Net.Sockets.Socket.Bind%2A> and <xref:System.Net.Sockets.Socket.Listen>.
 
 Consider the following TCP listener code:
 

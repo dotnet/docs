@@ -84,7 +84,7 @@ The preceding C# code:
 
 ### Create a client socket
 
-`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via the `[new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket)` constructor. This constructor creates a dual-stack socket if [IPv6 is supported](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise, it falls back to IPv4.
+`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via the [new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket) constructor. This constructor creates a dual-stack socket if [IPv6 is supported](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise, it falls back to IPv4.
 
 Consider the following TCP client code:
 
@@ -98,7 +98,9 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
-One of `TcpClient`'s constructor takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
+#### TcpClient(AddressFamily) constructor
+
+[One of `TcpClient`'s constructor](xref:System.Net.Sockets.TcpClient.%23ctor%2A) takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
 
 - [AddressFamily.InterNetwork](xref:System.Net.Sockets.AddressFamily.InterNetwork): for IPv4 socket.
 - [AddressFamily.InterNetworkV6](xref:System.Net.Sockets.AddressFamily.InterNetworkV6): for IPv6 socket.
@@ -116,7 +118,9 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
-Other `TcpClient`'s constructor takes an <xref:System.Net.IPEndPoint> class as a parameter. This constructor accepts an `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates a `Socket`. As part of this, it calls <xref:System.Net.Sockets.Socket.Bind%2A> on the underlying `Socket` member with the given <xref:System.Net.IPEndPoint> argument.
+#### TcpClient(IPEndPoint) constructor
+
+[Other `TcpClient`'s constructor](xref:System.Net.Sockets.TcpClient.%23ctor%2A) takes an <xref:System.Net.IPEndPoint> class as a parameter. This constructor accepts an `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates a `Socket`. As part of this, it calls <xref:System.Net.Sockets.Socket.Bind%2A> on the underlying `Socket` member with the given <xref:System.Net.IPEndPoint> argument.
 
 Consider the following TCP client code:
 
@@ -135,7 +139,9 @@ var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 socket.Bind(ep);
 ```
 
-Another `TcpClient` constructor overload accepts a `hostname` and `port` as parameters, the difference from the default constructor is that this constructor tries to connect to the given `hostname` and `port`.
+#### TcpClient(String, Int32) constructor
+
+[Another `TcpClient` constructor overload](xref:System.Net.Sockets.TcpClient.%23ctor%2A) accepts a `hostname` and `port` as parameters, the difference from the default constructor is that this constructor tries to connect to the given `hostname` and `port`.
 
 Consider the following TCP client code:
 

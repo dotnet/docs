@@ -82,9 +82,11 @@ The preceding C# code:
 
 `TcpListener` and `TcpClient` classes internal implementation relies on the `Socket` class. This means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
 
-### Create a client
+### Create a client socket
 
-`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via `[new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket)` constructor, if [IPv6 is supported (Socket.OSSupportsIPv6 == true)](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>). Otherwise, it fallbacks to IPv4 socket. Consider the following TCP client code:
+`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via the `[new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket)` constructor. This constructor creates a dual-stack socket if [IPv6 is supported](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise, it falls back to IPv4.
+
+Consider the following TCP client code:
 
 ```csharp
 var client = new TcpClient();
@@ -146,21 +148,23 @@ socket.Connect("www.example.com", 80);
 
 ### Connect to server
 
-Basically, every `Connect`, `ConnectAsync`, `BeginConnect` and `EndConnect` overload in `TcpClient` are functionally equivalent and their function signatures are same as well. Consider the following TCP client code:
+All `Connect`, `ConnectAsync`, `BeginConnect` and `EndConnect` overloads in `TcpClient` are functionally equivalent to the corresponding `Socket` methods.
+
+Consider the following TCP client code:
 
 ```csharp
 var client = new TcpClient();
 client.Connect("www.example.com", 80);
 ```
 
-The preceding TCP client code is functionally equivalent to the following socket code:
+The above `TcpClient` code is functionally equivalent to the following socket code:
 
 ```csharp
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 socket.Connect("www.example.com", 80);
 ```
 
-### Create a server
+### Create a server socket
 
 In `TcpListener` class, there are two constructors. Basically, both of them are initializes underlying socket. One of them is `TcpListener(IPAddress localaddr, int port)`. Consider the following TCP listener code:
 
@@ -202,9 +206,11 @@ var ep = new IPEndPoint(Socket.OSSupportsIPv6 ? IPAddress.IPv6Any : IPAddress.An
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
-### Start listening on server
+### Start listening on the server
 
-In `Socket` class there are two steps to start listening on a server, but in `TcpClient` calling `Start` function is enough. Consider the following TCP listener code:
+The <xref:System.Net.Sockets.TcpClient.Start> method is a wrapper combining Socket's <xref:System.Net.Socket.Bind> and <xref:System.Net.Socket.Listen>.
+
+Consider the following TCP listener code:
 
 ```csharp
 var listener = new TcpListener(IPAddress.Loopback, 5000);
@@ -227,14 +233,9 @@ catch (SocketException)
 }
 ```
 
-### Accepting a connection on server
+### Accepting a connection on the server
 
-Basically, in `TcpListener` you can get two different type as return value on connection accept Those types are:
-
-- <xref:System.Net.Sockets.Socket>
-- <xref:System.Net.Sockets.TcpClient>
-
-You can get `TcpClient` from these functions: <xref:System.Net.Sockets.TcpListener.AcceptTcpClient> and <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync>, and you can get `Socket` from these functions: <xref:System.Net.Sockets.TcpListener.AcceptSocket> and <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync>.
+`TcpListener` can accept both <xref:System.Net.Sockets.Socket> (via <xref:System.Net.Sockets.TcpListener.AcceptSocket> or <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync>) and <xref:System.Net.Sockets.TcpClient> (via <xref:System.Net.Sockets.TcpListener.AcceptTcpClient> and <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync>).
 
 Consider the following TCP client code:
 
@@ -251,16 +252,18 @@ var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 var acceptSocket = socket.Accept(); // var acceptSocket = await socket.AcceptAsync();
 ```
 
-### Create a stream to send and receive data
+### Create a `NetworkStream` to send and receive data
 
-The difference in here is `TcpClient` class has a helper function for this if you want to create a `NetworkStream` which is called <xref:System.Net.Sockets.TcpClient.GetStream>, but in `Socket` class you should create it by yourself. Consider the following TCP client code:
+`TcpClient` class has a <xref:System.Net.Sockets.TcpClient.GetStream> helper method to instantiate a <xref:System.Net.Sockets.NetworkStream>. With `Socket`, you have to do it manually.
+
+Consider the following `TcpClient` code:
 
 ```csharp
 var client = new TcpClient();
 NetworkStream stream = client.GetStream();
 ```
 
-The preceding TCP client code is functionally equivalent to the following socket code:
+Which is equivalent to the following socket code:
 
 ```csharp
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);

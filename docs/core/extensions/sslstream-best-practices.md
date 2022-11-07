@@ -1,24 +1,24 @@
 ---
-title: TLS/SSL Best Practices
+title: TLS/SSL best practices
 description: Learn best practices to using SslStream in .NET
 author: rzikm
 ms.author: rzikm
 ms.date: 10/25/2022
 ---
 
-# TLS/SSL Best Practices
+# TLS/SSL best practices
 
 TLS (Transport Layer Security) is a cryptographic protocol designed to secure communication between two computers over the internet. The TLS protocol is exposed in .NET via the <xref:System.Net.Security.SslStream> class.
 
 This article presents best practices for setting up secure communication between client and server and assumes .NET Core version 3.1 or later. For best practices for .NET Framework, see [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls).
 
-## Selecting TLS Version
+## Selecting TLS version
 
 While it is possible to specify the version of the TLS protocol to be used via the SslProtocols property, it is recommended to defer to the operating system settings by using `SslProtocols.None` value (this is the default).
 
 Deferring the decision to the OS automatically uses the most recent version of TLS available and lets the application pick up changes after OS upgrades. The operating system may also prevent use of TLS versions which are no longer considered secure.
 
-## Selecting Cipher Suites
+## Selecting cipher suites
 
 SslStream allows users to specify which cipher suites can be negotiated by the TLS handshake via the <xref:System.Net.Security.CipherSuitesPolicy> class. As with TLS versions, we recommend letting the operating system decide which are the best cipher suites to negotiate with and, therefore, we recommend avoiding the use of `CipherSuitesPolicy`.
 
@@ -36,11 +36,11 @@ The recommended approach is to use the <xref:System.Net.Security.SslServerAuthen
 
 Reusing `SslStreamCertificateContext` instances also enables additional features such us [TLS session resumption](https://datatracker.ietf.org/doc/html/rfc5077) on Linux servers.
 
-## Custom X509Certificate Validation
+## Custom X509Certificate validation
 
 There are certain scenarios in which the default certificate validation procedure is not adequate and some custom validation logic is required. This custom logic can be provided via the <System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> property. As an illustration, following sections provide some examples.
 
-### Ignoring Specific Validation Errors
+### Ignoring specific validation errors
 
 Consider an IoT device without a persistent clock. After powering on, the clock of the device would start many years in the past and, therefore, all certificates would be considered "not yet valid". The following code shows a validation callback implementation which ignores validity period violations.
 
@@ -68,7 +68,7 @@ static bool CustomCertificateValidationCallback(
 }
 ```
 
-### Certificate Pinning
+### Certificate pinning
 
 Another situation where custom certificate validation is necessary is when clients expect servers to use a specific certificate, or a certificate from a small set of known certificates. This practice is known as [certificate pinning](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning). The following code snippet shows a validation callback which checks that the server presents a certificate with a specific known public key.
 
@@ -100,7 +100,7 @@ static bool CustomCertificateValidationCallback(
 }
 ```
 
-## Considerations for Client Certificate Validation
+## Considerations for client certificate validation
 
 Server applications need to be careful when requiring and validating client certificates. Instead of sending the entire certificate chain, clients can configure the [AIA (Authority Information Access)](http://www.pkiglobe.org/auth_info_access.html) extension which specifies where the issuer certificate can be downloaded. The server will then download the issuer certificate when building the `X509Chain` for the client certificate. Similarly, servers may need to contact external servers to ensure that the client certificate has not been revoked.
 

@@ -1,12 +1,12 @@
 ---
-title: Troubleshoot SslStream Authentication Issues
+title: Troubleshoot SslStream authentication issues
 description: Learn how to troubleshoot and investigate issues when performing authentication with SslStream in .NET
 author: rzikm
 ms.author: rzikm
 ms.date: 10/25/2022
 ---
 
-# Troubleshoot SslStream Authentication Issues
+# Troubleshoot SslStream authentication issues
 
 This article presents the most frequent authentication issues when using <xref:System.Net.Security.SslStream> Cryptography and Security related functionalities in .NET are implemented by interop with either the Operating System API (such as Schannel on Windows) or low level system libraries (like OpenSSL on Linux). The behavior of .NET application, including exception messages and error codes may therefore change depending on which platform it is run.
 
@@ -24,11 +24,11 @@ For server applications, it is possible to pass an <xref:System.Net.Security.Ssl
 
 Unfortunately, for client application the only solution is to add the certificates to the certificate store manually.
 
-## Handshake Failed with Ephemeral Keys
+## Handshake failed with ephemeral keys
 
 On Windows, you may encounter error message `(0x8009030E): No credentials are available in the security package` when attempting to use certificates with ephemeral keys. This behavior is due to bug in the underlying OS API (Schannel). More relevant info and workarounds can be found on the associated [GitHub issue](https://github.com/dotnet/runtime/issues/23749).
 
-## Client and Server Do Not Possess a Common Algorithm
+## Client and server do not possess a common algorithm
 
 When inspecting the `ClientHello` and `ServerHello` messages, you may find out that there is no cipher suite offered by both client and server or even that some ciphers are not offered even if explicitly configured via `CipherSuitePolicy` (available on Linux only). The underlying TLS library may disable TLS versions and cipher suites which are considered insecure.
 

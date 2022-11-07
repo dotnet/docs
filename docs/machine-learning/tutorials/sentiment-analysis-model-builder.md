@@ -130,7 +130,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     1. Select the **OK** button on the **Preview Changes** dialog
     1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-    Repeats these steps for the `Torchsharp-cuda-windows` (if using GPU) or `Torchsharp-cuda-cpu` (if using CPU) NuGet packages.
+    Repeats these steps for the `Torchsharp-cuda-windows` (if using GPU) or `Torchsharp-cpu` (if using CPU) NuGet packages.
 
 1. Open the *Program.cs* file in the *SentimentRazor* project.
 1. Add the following using statements to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:

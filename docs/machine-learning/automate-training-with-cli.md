@@ -71,7 +71,7 @@ The following image displays the classification metrics list for the top five mo
 
  Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification-and-text-classification).
 
 ### Metrics for Regression and Recommendation models
 

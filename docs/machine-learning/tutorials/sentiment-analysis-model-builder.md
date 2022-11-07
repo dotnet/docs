@@ -384,4 +384,4 @@ In this tutorial, you learned how to:
 To learn more about topics mentioned in this tutorial, visit the following resources:
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenario)
-- [Text Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-multiclass-classification-and-text-classification)
+- [Text Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-multi-class-classification-and-text-classification)

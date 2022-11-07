@@ -80,7 +80,7 @@ The preceding C# code:
 
 ## Advanced TCP control with `Socket` class
 
-`TcpListener` and `TcpClient` classes internal implementation relies on the `Socket` class. This means you can do everything with `Socket` that you can do with `TcpClient` and `TcpListener`.
+`TcpClient` and `TcpListener` relies on the `Socket` class internally, meaning you can achieve everything by using sockets directly. This guideline looks at several `TcpClient` and `TcpListener` use cases, presenting their `Socket` counterpart.
 
 ### Create a client socket
 
@@ -100,11 +100,11 @@ var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
 #### TcpClient(AddressFamily) constructor
 
-[One of `TcpClient`'s constructor](xref:System.Net.Sockets.TcpClient.%23ctor%2A) takes `AddressFamily` enum as a parameter. You can pass three different enum values to this constructor, otherwise, it throws an <xref:System.ArgumentException>. Valid enums are:
+This constructor accepts only three `AddressFamily` values, otherwise it will throw a <xref:System.ArgumentException>. Valid values are:
 
 - [AddressFamily.InterNetwork](xref:System.Net.Sockets.AddressFamily.InterNetwork): for IPv4 socket.
 - [AddressFamily.InterNetworkV6](xref:System.Net.Sockets.AddressFamily.InterNetworkV6): for IPv6 socket.
-- [AddressFamily.Unknown](xref:System.Net.Sockets.AddressFamily.Unknown): for dual-stack socket (by default, this enum value is used).
+- [AddressFamily.Unknown](xref:System.Net.Sockets.AddressFamily.Unknown): this will attempt to create a dual-stack socket, similarly to the default constructor.
 
 Consider the following TCP client code:
 
@@ -120,7 +120,7 @@ var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolT
 
 #### TcpClient(IPEndPoint) constructor
 
-[Other `TcpClient`'s constructor](xref:System.Net.Sockets.TcpClient.%23ctor%2A) takes an <xref:System.Net.IPEndPoint> class as a parameter. This constructor accepts an `AddressFamily` from <xref:System.Net.IPEndPoint.AddressFamily> property and creates a `Socket`. As part of this, it calls <xref:System.Net.Sockets.Socket.Bind%2A> on the underlying `Socket` member with the given <xref:System.Net.IPEndPoint> argument.
+Upon creating the socket, this constructor will also **bind** it to the provided **local** `IPEndPoint`. The <xref:System.Net.IPEndPoint.AddressFamily?displayProperty=nameWithType> property is used to determine the address family of the socket.
 
 Consider the following TCP client code:
 
@@ -141,7 +141,7 @@ socket.Bind(ep);
 
 #### TcpClient(String, Int32) constructor
 
-[Another `TcpClient` constructor overload](xref:System.Net.Sockets.TcpClient.%23ctor%2A) accepts a `hostname` and `port` as parameters, the difference from the default constructor is that this constructor tries to connect to the given `hostname` and `port`.
+This constructor will attempt to create a dual-stack similarly to the default constructor and **connect** it to the **remote** endpoint defined by `hostname` and `port`.
 
 Consider the following TCP client code:
 
@@ -167,7 +167,7 @@ var client = new TcpClient();
 client.Connect("www.example.com", 80);
 ```
 
-The above `TcpClient` code is functionally equivalent to the following socket code:
+The above `TcpClient` code is equivalent to the following socket code:
 
 ```csharp
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
@@ -220,13 +220,15 @@ catch (SocketException)
 
 ### Accepting a connection on the server
 
-`TcpListener` can accept both <xref:System.Net.Sockets.Socket> (via <xref:System.Net.Sockets.TcpListener.AcceptSocket> or <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync>) and <xref:System.Net.Sockets.TcpClient> (via <xref:System.Net.Sockets.TcpListener.AcceptTcpClient> and <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync>).
+Under the hood, incoming TCP connections are always creating a new socket when accepted. `TcpListener` can accept a <xref:System.Net.Sockets.Socket> instance directly (via <xref:System.Net.Sockets.TcpListener.AcceptSocket> or <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync>) or it can accept a <xref:System.Net.Sockets.TcpClient> (via <xref:System.Net.Sockets.TcpListener.AcceptTcpClient> and <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync>).
 
-Consider the following TCP client code:
+Consider the following `TcpClient` code:
 
 ```csharp
 var listener = new TcpListener(IPAddress.Loopback, 5000);
-var acceptSocket = listener.AcceptSocket(); // var acceptSocket = listener.AcceptSocketAsync();
+var acceptSocket = listener.AcceptSocket();
+// async code:
+// var acceptSocket = await listener.AcceptSocketAsync();
 ```
 
 The preceding TCP listener code is functionally equivalent to the following socket code:
@@ -234,12 +236,14 @@ The preceding TCP listener code is functionally equivalent to the following sock
 ```csharp
 var ep = new IPEndPoint(IPAddress.Loopback, 5000);
 var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-var acceptSocket = socket.Accept(); // var acceptSocket = await socket.AcceptAsync();
+var acceptSocket = socket.Accept();
+// async code:
+// var acceptSocket = await socket.AcceptAsync();
 ```
 
 ### Create a `NetworkStream` to send and receive data
 
-`TcpClient` class has a <xref:System.Net.Sockets.TcpClient.GetStream> helper method to instantiate a <xref:System.Net.Sockets.NetworkStream>. With `Socket`, you have to do it manually.
+With `TcpClient` you need to instantiate a <xref:System.Net.Sockets.NetworkStream> with the <xref:System.Net.Sockets.TcpClient.GetStream> method to be able to send and receive data . With `Socket`, you have to do the `NetworkStream` creation manually.
 
 Consider the following `TcpClient` code:
 
@@ -252,11 +256,12 @@ Which is equivalent to the following socket code:
 
 ```csharp
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
-NetworkStream stream = new(socket, ownsSocket: true); // Please be aware, we're passing true as `ownsSocket` parameter to let stream object to own the socket. 
+// Be aware that transfering the ownership means that closing/disposing the stream will also close the underlying socket.
+var stream = new NetworkStream(socket, ownsSocket: true);
 ```
 
 > [!TIP]
-> <xref:System.Net.Sockets.Socket> class has advantage if you don't want to use `Stream`. There are <xref:System.Net.Sockets.Socket.Send%2A>, <xref:System.Net.Sockets.Socket.SendAsync%2A>, <xref:System.Net.Sockets.Socket.Receive%2A> and <xref:System.Net.Sockets.Socket.ReceiveAsync%2A> overloads in `Socket` class.
+> If your code doesn't need to work with a <xref:System.IO.Stream> instance, you can rely on `Socket`'s Send/Receive methods (<xref:System.Net.Sockets.Socket.Send%2A>, <xref:System.Net.Sockets.Socket.SendAsync%2A>, <xref:System.Net.Sockets.Socket.Receive%2A> and <xref:System.Net.Sockets.Socket.ReceiveAsync%2A>) directly instead of creating a <xref:System.Net.Sockets.NetworkStream>.
 
 ## See also
 

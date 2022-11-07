@@ -49,7 +49,6 @@ Each scenario maps to a different Machine Learning Task which include:
 | --- | --- |
 | Binary classification | Data classification |
 | Multiclass classification | Data classification |
-| Multiclass classification | Data classification |
 | Image classification | Image classification |
 | Text classification | Text classification |
 | Regression | Value prediction |

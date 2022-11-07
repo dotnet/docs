@@ -45,16 +45,16 @@ A scenario is a description of the type of prediction you want to make using you
 
 Each scenario maps to a different Machine Learning Task which include:
 
-- Binary classification
-- Multiclass classification
-- Image classification
-- Text classification
-- Regression
-- Clustering
-- Anomaly detection
-- Ranking
-- Recommendation
-- Forecasting
+| Task | Scenario |
+| --- | --- |
+| Binary classification | Data classification |
+| Multiclass classification | Data classification |
+| Multiclass classification | Data classification |
+| Image classification | Image classification |
+| Text classification | Text classification |
+| Regression | Value prediction |
+| Recommendation | Recommendation |
+| Forecasting | Forecasting |
 
 For example, the scenario of classifying sentiments as positive or negative would fall under the binary classification task.
 

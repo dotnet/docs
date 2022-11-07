@@ -127,7 +127,13 @@ You can use the recommendation scenario when you have a set of users and a set o
     :::column-end:::
 :::row-end:::
 
-#### Computer vision
+##### Forecasting
+
+The forecasting scenario uses historical data with a time-series or seasonal component to it.
+
+You can use the forecasting scenario to forecast demand or sale for a product.
+
+#### Computer Vision
 
 ##### Image classification
 

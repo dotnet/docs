@@ -16,7 +16,7 @@ As .NET 5 (and .NET Core) and later versions become available on more and more p
 When installed, .NET consists of several components that are laid out as follows in the file system:
 
 ```
-{dotnet_root}                    (0)               (*)
+{dotnet_root}                    (0)              (*)
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)

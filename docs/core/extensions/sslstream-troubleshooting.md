@@ -30,7 +30,7 @@ On Windows, you may encounter error message `(0x8009030E): No credentials are av
 
 ## Client and server do not possess a common algorithm
 
-When inspecting the `ClientHello` and `ServerHello` messages, you may find out that there is no cipher suite offered by both client and server or even that some ciphers are not offered even if explicitly configured via `CipherSuitePolicy` (available on Linux only). The underlying TLS library may disable TLS versions and cipher suites which are considered insecure.
+When inspecting the `ClientHello` and `ServerHello` messages, you may find out that there is no cipher suite offered by both client and server or even that some ciphers are not offered even if explicitly configured via <xref:System.Net.Security.CipherSuitePolicy> (available on Linux only). The underlying TLS library may disable TLS versions and cipher suites which are considered insecure.
 
 On many Linux distributions, the relevant configuration file is located at `/etc/ssl/openssl.cnf`.
 

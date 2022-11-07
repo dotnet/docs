@@ -1,14 +1,14 @@
 ---
-title: Troubleshooting SslStream Authentication Issues
+title: Troubleshoot SslStream Authentication Issues
 description: Learn how to troubleshoot and investigate issues when performing authentication with SslStream in .NET
 author: rzikm
 ms.author: rzikm
 ms.date: 10/25/2022
 ---
 
-# Troubleshooting SslStream Authentication Issues
+# Troubleshoot SslStream Authentication Issues
 
-This article presents the most frequent authentication issues when using `SslStream`. Cryptography and Security related functionalities in .NET are implemented by interop with either the Operating System API (such as Schannel on Windows) or low level system libraries (like OpenSSL on Linux). The behavior of .NET application, including exception messages and error codes may therefore change depending on which platform it is run.
+This article presents the most frequent authentication issues when using <xref:System.Net.Security.SslStream> Cryptography and Security related functionalities in .NET are implemented by interop with either the Operating System API (such as Schannel on Windows) or low level system libraries (like OpenSSL on Linux). The behavior of .NET application, including exception messages and error codes may therefore change depending on which platform it is run.
 
 Some issues may be therefore more easily investigated and troubleshooted by observing the actual  messages exchanged over the wire using tools such as WireShark or `tcpdump`. These tools can be used to inspect the `ClientHello`, `ServerHello` and other messages for advertised supported TLS versions, allowed and negotiated cipher suites and the certificates exchanged for authentication.
 
@@ -20,7 +20,7 @@ If the peers certificate has not been issued by one of the trusted CAs an interm
 
 This issue is most frequently encountered on Windows. Even though application provided intermediate certificates via the authentication options, they will not be sent to the peer unless they are are stored in the Windows certificate store. This limitation is due to fact that the actual TLS handshake occurs outside of the application process.
 
-For server applications, it is possible to pass an [`SslStreamCertificateContext`](https://learn.microsoft.com/cs-cz/dotnet/api/system.net.security.sslstreamcertificatecontext?view=net-6.0) as [`SslServerAuthenticationOptions.ServerCertificateContext`](https://learn.microsoft.com/en-us/dotnet/api/system.net.security.sslserverauthenticationoptions.servercertificatecontext?view=net-7.0). During construction of the `SslStreamCertificateContext` instance, you can pass additional intermediate certificates and these will be temporarily added into the certificate store.
+For server applications, it is possible to pass an <xref:System.Net.Security.SslStreamCertificateContext> as <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType>. During construction of the <xref:System.Net.Security.SslStreamCertificateContext> instance, you can pass additional intermediate certificates and these will be temporarily added into the certificate store.
 
 Unfortunately, for client application the only solution is to add the certificates to the certificate store manually.
 
@@ -34,4 +34,4 @@ When inspecting the `ClientHello` and `ServerHello` messages, you may find out t
 
 On many Linux distributions, the relevant configuration file is located at `/etc/ssl/openssl.cnf`.
 
-On Windows, the [`Enable-TlsCipherSuite`](https://learn.microsoft.com/en-us/powershell/module/tls/enable-tlsciphersuite?view=windowsserver2022-ps) and [`Disable-TlsCipherSuite`](https://learn.microsoft.com/en-us/powershell/module/tls/disable-tlsciphersuite?view=windowsserver2022-ps) PowerShell cmdlets can be used to configure cipher suites. Individual TLS versions can be enabled/disable by configuring the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS <version>\{Client|Server}\Enabled` registry key.
+On Windows, the [`Enable-TlsCipherSuite`](/powershell/module/tls/enable-tlsciphersuite?view=windowsserver2022-ps) and [`Disable-TlsCipherSuite`](/powershell/module/tls/disable-tlsciphersuite?view=windowsserver2022-ps) PowerShell cmdlets can be used to configure cipher suites. Individual TLS versions can be enabled/disable by configuring the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS <version>\{Client|Server}\Enabled` registry key.

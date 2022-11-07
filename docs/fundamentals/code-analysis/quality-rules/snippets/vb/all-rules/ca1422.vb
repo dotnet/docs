@@ -21,7 +21,7 @@ End Class
 Public Class Fix
     ' <Snippet2>
     <SupportedOSPlatform("Windows")>
-    <UnsupportedOSPlatform("Windows6.2")>
+    <ObsoletedOSPlatform("Windows6.2")>
     Public Sub M1()
         ObsoletedOnWindows62()
     End Sub

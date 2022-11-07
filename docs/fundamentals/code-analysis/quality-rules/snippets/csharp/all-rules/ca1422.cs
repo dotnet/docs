@@ -24,7 +24,7 @@ public class Fix
 {
     // <Snippet2>
     [SupportedOSPlatform("Windows")]
-    [UnsupportedOSPlatform("Windows6.2")]
+    [ObsoletedOSPlatform("Windows6.2")]
     public void M1()
     {
         ObsoletedOnWindows62();

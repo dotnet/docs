@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 10/12/2021
+ms.date: 11/10/2022
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -47,6 +47,8 @@ Each scenario maps to a different Machine Learning Task which include:
 
 - Binary classification
 - Multiclass classification
+- Image classification
+- Text classification
 - Regression
 - Clustering
 - Anomaly detection
@@ -62,7 +64,9 @@ For more information about the different ML Tasks supported by ML.NET see [Machi
 
 In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
-#### Data classification
+#### Tabular
+
+##### Data classification
 
 Classification is used to categorize data into categories.
 
@@ -70,29 +74,115 @@ Classification is used to categorize data into categories.
 
 ![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
 
-#### Value prediction
+##### Value prediction
 
 Value prediction, which falls under the regression task, is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
-
-#### Image classification
-
-Image classification is used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
-
-You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
-
-#### Object detection
-
-Object detection is used to locate and categorize entities within images.  For example, locating and identifying cars and people in an image.
-
-You can use object detection when images contain multiple objects of different types.
 
 #### Recommendation
 
 The recommendation scenario predicts a list of suggested items for a particular user, based on how similar their likes and dislikes are to other users'.
 
 You can use the recommendation scenario when you have a set of users and a set of "products", such as items to purchase, movies, books, or TV shows, along with a set of users' "ratings" of those products.
+
+:::row:::
+    :::column:::
+        **Example Input**
+    :::column-end:::
+    :::column:::
+        **Example Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        :::row:::
+            :::column:::
+                UserId
+            :::column-end:::
+            :::column:::
+                ProductId
+            :::column-end:::
+        :::row-end:::
+        :::row:::
+            :::column:::
+                1
+            :::column-end:::
+            :::column:::
+                2
+            :::column-end:::
+        :::row-end:::
+    :::column-end:::
+    :::column:::
+        :::row:::
+            :::column:::
+                Rating
+            :::column-end:::
+        :::row-end:::
+        :::row:::
+            :::column:::
+                7.5
+            :::column-end:::
+        :::row-end:::
+    :::column-end:::
+:::row-end:::
+
+#### Computer vision
+
+##### Image classification
+
+Image classification is used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
+
+You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
+
+##### Object detection
+
+Object detection is used to locate and categorize entities within images.  For example, locating and identifying cars and people in an image.
+
+You can use object detection when images contain multiple objects of different types.
+
+#### Language
+
+##### Text classification
+
+Text classification categorizes raw text input.
+
+You can use the text classification scenario if you have a set of documents or comments, and you want to classify them into different categories.
+
+:::row:::
+    :::column:::
+        **Example Input**
+    :::column-end:::
+    :::column:::
+        **Example Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        :::row:::
+            :::column:::
+                SentimentText
+            :::column-end:::
+        :::row-end:::
+        :::row:::
+            :::column:::
+                I really like this steak!
+            :::column-end:::
+        :::row-end:::
+    :::column-end:::
+    :::column:::
+        :::row:::
+            :::column:::
+                PredictedLabel
+            :::column-end:::
+        :::row-end:::
+        :::row:::
+            :::column:::
+                Positive
+            :::column-end:::
+        :::row-end:::
+    :::column-end:::
+:::row-end:::
 
 ## Environment
 

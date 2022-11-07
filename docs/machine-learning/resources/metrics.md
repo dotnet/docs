@@ -1,7 +1,7 @@
 ---
 title: ML.NET metrics
 description: Understand the metrics that are used to evaluate the performance of an ML.NET model
-ms.date: 12/17/2019
+ms.date: 11/10/2022
 ---
 # Evaluate your ML.NET model with metrics
 

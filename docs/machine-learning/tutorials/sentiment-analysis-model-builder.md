@@ -96,9 +96,9 @@ The machine learning task used to train the sentiment analysis model in this tut
 1. Once training is complete, the results from the training process are displayed in the *Training results* section of the *Train* screen.
     In addition to providing training results, three code-behind files are created under the *SentimentAnalysis.mbconfig* file.
 
-    - *SentimentAnalysis.consumption.cs* -  Contains code for consuming your model.
-    - *SentimentAnalysis.training.cs* - Contains code for retraining your model.
-    - **SentimentAnalysis.zip* - The serialized version of your model.
+    - *SentimentAnalysis.consumption.cs* -  This file contains the `ModelInput` and `ModelOutput` schemas as well as the `Predict` function generated for consuming the model.
+    - *SentimentAnalysis.training.cs* - This file contains the training pipeline (data transforms, algorithm, algorithm hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
+    - **SentimentAnalysis.zip* - This is a serialized zip file which represents your trained ML.NET model.
 
 1. Select the **Next step** button to move to the next step.
 
@@ -356,7 +356,9 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
     1. Finally, register the event handler and bind it to the `textarea` element with the `id=Message` attribute.
 
         <!-- [!code-javascript [UpdateSentimentEvtHandler](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L36)] -->
-        $("#Message").on('change input paste', updateSentiment)
+        ```javascript
+        $("#Message").on('change input paste', updateSentiment)        
+        ```
 
 ## Run the application
 

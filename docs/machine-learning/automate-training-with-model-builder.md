@@ -80,6 +80,27 @@ Value prediction, which falls under the regression task, is used to predict numb
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | UserId | ProductId |
+        | --- | --- |
+        | 1 | 2 |
+    :::column-end:::
+    :::column:::
+        | Rating |
+        | --- |
+        | 4.5 |
+    :::column-end:::
+:::row-end:::
+
 #### Recommendation
 
 The recommendation scenario predicts a list of suggested items for a particular user, based on how similar their likes and dislikes are to other users'.
@@ -88,42 +109,22 @@ You can use the recommendation scenario when you have a set of users and a set o
 
 :::row:::
     :::column:::
-        **Example Input**
+        **Sample Input**
     :::column-end:::
     :::column:::
-        **Example Output**
+        **Sample Output**
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        :::row:::
-            :::column:::
-                UserId
-            :::column-end:::
-            :::column:::
-                ProductId
-            :::column-end:::
-        :::row-end:::
-        :::row:::
-            :::column:::
-                1
-            :::column-end:::
-            :::column:::
-                2
-            :::column-end:::
-        :::row-end:::
+        | UserId | ProductId |
+        | --- | --- |
+        | 1 | 2 |
     :::column-end:::
     :::column:::
-        :::row:::
-            :::column:::
-                Rating
-            :::column-end:::
-        :::row-end:::
-        :::row:::
-            :::column:::
-                7.5
-            :::column-end:::
-        :::row-end:::
+        | Rating |
+        | --- |
+        | 4.5 |
     :::column-end:::
 :::row-end:::
 
@@ -147,7 +148,7 @@ Object detection is used to locate and categorize entities within images.  For e
 
 You can use object detection when images contain multiple objects of different types.
 
-#### Language
+#### Natural Language Processing
 
 ##### Text classification
 
@@ -165,28 +166,10 @@ You can use the text classification scenario if you have a set of documents or c
 :::row-end:::
 :::row:::
     :::column:::
-        :::row:::
-            :::column:::
-                SentimentText
-            :::column-end:::
-        :::row-end:::
-        :::row:::
-            :::column:::
-                I really like this steak!
-            :::column-end:::
-        :::row-end:::
+        I really like this steak!
     :::column-end:::
     :::column:::
-        :::row:::
-            :::column:::
-                PredictedLabel
-            :::column-end:::
-        :::row-end:::
-        :::row:::
-            :::column:::
-                Positive
-            :::column-end:::
-        :::row-end:::
+        Positive
     :::column-end:::
 :::row-end:::
 

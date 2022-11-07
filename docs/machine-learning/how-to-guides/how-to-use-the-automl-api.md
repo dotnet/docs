@@ -85,7 +85,7 @@ For the taxi fare prediction problem, since the goal is to predict a numerical v
 
 ### Configure your experiment
 
-First, create an AutoML experiment. An experiment is a collection of trials. 
+First, create an AutoML experiment. An experiment is a collection of trials.  
 
 ```csharp
 // Create AutoML experiment
@@ -143,7 +143,7 @@ At this point, you can then save your model or use it for making predictions. Fo
 
 Because `InferColumn` only loads a subset of your data, it's possible that edge cases contained outside of the samples used to infer columns are not caught and the wrong data types are set for your columns. In those cases, you can update the properties of `ColumnInformation` and `TextLoaderOptions` to account for those cases where the column inference results are not correct.
 
-For example, in the taxi fare dataset, the data in the `rate_code` column is a number. However, that numerical value represents a category. By default, calling `InferColumn` will place `rate_code` in the `NumericColumnNames` property instead of `CategoricalColumnNames`. Because these properties are standard .NET collections, you can use the standard operations to add and remove items from them. 
+For example, in the taxi fare dataset, the data in the `rate_code` column is a number. However, that numerical value represents a category. By default, calling `InferColumn` will place `rate_code` in the `NumericColumnNames` property instead of `CategoricalColumnNames`. Because these properties are standard .NET collections, you can use the standard operations to add and remove items from them.  
 
 You can do the following to update the `ColumnInformation` for `rate_code`.  
 

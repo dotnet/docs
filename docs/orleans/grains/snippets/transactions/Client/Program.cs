@@ -1,7 +1,7 @@
 ﻿using IHost host = Host.CreateDefaultBuilder(args)
-    .UseOrleansClient((_, builder) =>
+    .UseOrleansClient((_, client) =>
     {
-        builder.UseLocalhostClustering()
+        client.UseLocalhostClustering()
             .UseTransactions();
     })
     .Build();
@@ -21,7 +21,7 @@ while (!Console.KeyAvailable)
     var toIndex = random.Next(accountNames.Length);
     while (toIndex == fromIndex)
     {
-        // Avoid transfering to/from the same account, since it would be meaningless
+        // Avoid transferring to/from the same account, since it would be meaningless
         toIndex = (toIndex + 1) % accountNames.Length;
     }
 
@@ -47,13 +47,13 @@ while (!Console.KeyAvailable)
         var toBalance = await toAccount.GetBalance();
 
         Console.WriteLine(
-            $"We transfered {transferAmount} credits from {fromKey} to " +
+            $"We transferred {transferAmount} credits from {fromKey} to " +
             $"{toKey}.\n{fromKey} balance: {fromBalance}\n{toKey} balance: {toBalance}\n");
     }
     catch (Exception exception)
     {
         Console.WriteLine(
-            $"Error transfering credits from " +
+            $"Error transferring credits from " +
             $"{fromKey} to {toKey}: {exception.Message}");
 
         if (exception.InnerException is { } inner)

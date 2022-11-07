@@ -1,7 +1,7 @@
 ---
 title: ".NET docs: What's new for .NET 7"
 description: "What's new in the .NET docs for the .NET 7 release."
-ms.date: 10/26/2022
+ms.date: 11/07/2022
 ---
 
 # .NET docs: What's new for the .NET 7 release
@@ -12,8 +12,11 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 ### New articles
 
+- [System.diagnostics entry in app.config](../core/compatibility/configuration/7.0/diagnostics-config-section.md)
 - [DataContractSerializer retains sign when deserializing -0](../core/compatibility/serialization/7.0/datacontractserializer-negative-sign.md)
 - [Tracking linked cache entries](../core/compatibility/core-libraries/7.0/memorycache-tracking.md)
+- [Legacy FileStream strategy removed](../core/compatibility/core-libraries/7.0/filestream-compat-switch.md)
+- [Time fields on symbolic links](../core/compatibility/core-libraries/7.0/symbolic-link-timestamps.md)
 - [ClientWebSocket.ConnectAsync throws new exception](../core/compatibility/networking/7.0/connectasync-argumentexception.md)
 - [Library support for older frameworks](../core/compatibility/core-libraries/7.0/old-framework-support.md)
 - [Socket.End methods don't throw ObjectDisposedException](../core/compatibility/networking/7.0/socket-end-closed-sockets.md)
@@ -34,6 +37,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [x86 host path on 64-bit Windows](../core/compatibility/deployment/7.0/x86-host-path.md)
 - [MVC's detection of an empty body in model binding changed](../core/compatibility/aspnet-core/7.0/mvc-empty-body-model-binding.md)
 - [Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed](../core/compatibility/aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md)
+- [SerializationFormat.Binary is obsolete](../core/compatibility/core-libraries/7.0/serializationformat-binary.md)
 - [Microsoft.Data.SqlClient updated to 4.0.1](../core/compatibility/aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md)
 - [API controller actions try to infer parameters from DI](../core/compatibility/aspnet-core/7.0/api-controller-action-parameters-di.md)
 - [SignalR Hub methods try to resolve parameters from DI](../core/compatibility/aspnet-core/7.0/signalr-hub-method-parameters-di.md)
@@ -41,15 +45,16 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 ### Updated articles
 
-- [Breaking changes in .NET 6](../core/compatibility/6.0.md)
-  - Note break for .NET 6 servicing
+- [API obsoletions with non-default diagnostic IDs (.NET 7)](../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md)
+  - Add two new SYSLIB warnings
   - XmlSecureResolver breaking change
-  - x86 host path on x64/arm64
-- [DataContractSerializer retains sign when deserializing -0](../core/compatibility/serialization/7.0/datacontractserializer-negative-sign.md)
-  - Note break for .NET 6 servicing
-  - DataContractSerializer breaking change
+  - Add SYSLIB0041
+  - Add SYSLIB0040
+  - Add syslib0038 and syslib0039
 - [Breaking changes in .NET 7](../core/compatibility/7.0.md)
+  - system.diagnostics config entry breaking change
   - MemoryCache breaking change
+  - Legacy FileStream mode and symlink breaking changes
   - Networking breaking change
   - Library support breaking change
   - Socket.End* breaking change
@@ -71,35 +76,51 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - x86 host path on x64/arm64
   - ASP.NET Core 7 breaking change for MVC empty body detection
   - ASP.NET Core 7 breaking change for MVC Logger Event IDs
+  - Add syslib0038 and syslib0039
   - ASP.NET Core 7 breaking change for Microsoft.Data.SqlClient
   - ASP.NET Core 7 breaking change for API Controller Actions DI
   - ASP.NET Core 7 breaking change for SignalR Hub DI
   - ASP.NET Core 7 breaking change for libuv
+- [Breaking changes in .NET 6](../core/compatibility/6.0.md)
+  - Note break for .NET 6 servicing
+  - XmlSecureResolver breaking change
+  - x86 host path on x64/arm64
+- [DataContractSerializer retains sign when deserializing -0](../core/compatibility/serialization/7.0/datacontractserializer-negative-sign.md)
+  - Note break for .NET 6 servicing
+  - DataContractSerializer breaking change
+- [FileStream no longer synchronizes file offset with OS](../core/compatibility/core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md) - Legacy FileStream mode and symlink breaking changes
+- [FileStream.Position updates after ReadAsync or WriteAsync completes](../core/compatibility/core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md) - Legacy FileStream mode and symlink breaking changes
 - [Static abstract members declared in interfaces](../core/compatibility/core-libraries/6.0/static-abstract-interface-methods.md)
   - Publish C# 11 speclets
   - Generic math docs
-- [API obsoletions with non-default diagnostic IDs (.NET 7)](../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md) - XmlSecureResolver breaking change
 - [Standard numeric format parsing precision](../core/compatibility/core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md) - Limit precision to 999,999,999
 - [Globalization APIs use ICU libraries on Windows 10](../core/compatibility/globalization/5.0/icu-globalization-api.md) - Add ICU breaking change
-- [Changes to reflection invoke API exceptions](../core/compatibility/core-libraries/7.0/reflection-invoke-exceptions.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md) - BinaryFormatter APIs obsolete as error
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md)
+  - BinaryFormatter APIs obsolete as error
+  - Add syslib0038 and syslib0039
 - [Breaking changes in .NET Core 3.1](../core/compatibility/3.1.md) - x86 host path on x64/arm64
-
-## .NET Framework
-
-### Updated articles
-
-- [What's new in .NET Framework](../framework/whats-new/index.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
+- [APIs that always throw exceptions on .NET Core and .NET 5+](../core/compatibility/unsupported-apis.md) - Add SYSLIB0041
 
 ## .NET fundamentals
 
 ### New articles
 
+- [Title not found in: #32324](../fundamentals/syslib-diagnostics/syslib0044.md)
+- [Title not found in: #32324](../fundamentals/syslib-diagnostics/syslib0046.md)
+- [CA2019: `ThreadStatic` fields should not use inline initialization](../fundamentals/code-analysis/quality-rules/ca2019.md)
+- [CA2259: Ensure `ThreadStatic` is only used with static fields](../fundamentals/code-analysis/quality-rules/ca2259.md)
+- [CA1420: Property, type, or attribute requires runtime marshalling](../fundamentals/code-analysis/quality-rules/ca1420.md)
+- [CA1422: Validate platform compatibility - obsoleted APIs](../fundamentals/code-analysis/quality-rules/ca1422.md)
+- [System.diagnostics entry in app.config](../core/compatibility/configuration/7.0/diagnostics-config-section.md)
+- [.NET SDK error list](../core/tools/sdk-errors/index.md)
+- [dotnet workload command](../core/tools/dotnet-workload.md)
 - [NETSDK1100: Set the EnableWindowsTargeting property to true](../core/tools/sdk-errors/netsdk1100.md)
 - [DataContractSerializer retains sign when deserializing -0](../core/compatibility/serialization/7.0/datacontractserializer-negative-sign.md)
 - [Containerize a .NET app with dotnet publish](../core/docker/publish-as-container.md)
 - [Tracking linked cache entries](../core/compatibility/core-libraries/7.0/memorycache-tracking.md)
 - [CA2260: Implement generic math interfaces correctly](../fundamentals/code-analysis/quality-rules/ca2260.md)
+- [Legacy FileStream strategy removed](../core/compatibility/core-libraries/7.0/filestream-compat-switch.md)
+- [Time fields on symbolic links](../core/compatibility/core-libraries/7.0/symbolic-link-timestamps.md)
 - [ClientWebSocket.ConnectAsync throws new exception](../core/compatibility/networking/7.0/connectasync-argumentexception.md)
 - [.NET regular expression source generators](../standard/base-types/regular-expression-source-generators.md)
 - [Library support for older frameworks](../core/compatibility/core-libraries/7.0/old-framework-support.md)
@@ -110,7 +131,10 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Windows Forms obsoletions and warnings (.NET 7)](../core/compatibility/windows-forms/7.0/obsolete-apis.md)
 - [Rate limit an HTTP handler in .NET](../core/extensions/http-ratelimiter.md)
 - [XmlSecureResolver is obsolete](../core/compatibility/xml/7.0/xmlsecureresolver-obsolete.md)
+- [SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete](../fundamentals/syslib-diagnostics/syslib0043.md)
 - [SYSLIB0047: XmlSecureResolver is obsolete](../fundamentals/syslib-diagnostics/syslib0047.md)
+- [Source generation for platform invokes](../standard/native-interop/pinvoke-source-generation.md)
+- [Tutorial: Use custom marshallers in source-generated P/Invokes](../standard/native-interop/tutorial-custom-marshaller.md)
 - [Introduction to AOT warnings](../core/deploying/native-aot/fixing-warnings.md)
 - [Maximum precision for numeric format strings](../core/compatibility/core-libraries/7.0/max-precision-numeric-format-strings.md)
 - [Globalization APIs use ICU libraries on Windows Server](../core/compatibility/globalization/7.0/icu-globalization-api.md)
@@ -123,15 +147,15 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [IL3055: P/Invoke method declares a parameter with an abstract delegate](../core/deploying/native-aot/warnings/il3055.md)
 - [IL3056: `RequiresDynamicCodeAttribute` cannot be placed directly on a static constructor](../core/deploying/native-aot/warnings/il3056.md)
 - [Source generation for custom marshalling](../standard/native-interop/custom-marshalling-source-generation.md)
+- [Title not found in: #30543](../fundamentals/networking/httpclient.md)
 - [BinaryFormatter serialization APIs produce compiler errors](../core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md)
 - [System.Threading.Channels library](../core/extensions/channels.md)
 - [All assemblies trimmed by default](../core/compatibility/deployment/7.0/trim-all-assemblies.md)
 - [Generic math](../standard/generics/math.md)
-- [Source generation for platform invokes](../standard/native-interop/pinvoke-source-generation.md)
 - [Default authentication scheme](../core/compatibility/aspnet-core/7.0/default-authentication-scheme.md)
 - [Dynamic X509ChainPolicy verification time](../core/compatibility/cryptography/7.0/x509chainpolicy-verification-time.md)
 - [Middleware no longer defers to endpoint with null request delegate](../core/compatibility/aspnet-core/7.0/middleware-null-requestdelegate.md)
-- [.NET SDK error list](../core/tools/sdk-errors/index.md)
+- [Title not found in: #30244#30062#29792](../core/deploying/native-aot.md)
 - [NETSDK1082: PackageReference to Microsoft.AspNetCore.App is not necessary](../core/tools/sdk-errors/netsdk1082.md)
 - [NETSDK1112: The runtime pack was not downloaded](../core/tools/sdk-errors/netsdk1112.md)
 - [NETSDK1135: SupportedOSPlatformVersion can't be higher than TargetPlatformVersion](../core/tools/sdk-errors/netsdk1135.md)
@@ -148,8 +172,16 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [ContentRootPath for apps launched by Windows Shell](../core/compatibility/extensions/7.0/contentrootpath-hosted-app.md)
 - [x86 host path on 64-bit Windows](../core/compatibility/deployment/7.0/x86-host-path.md)
 - [Diagnostic monitoring and collection utility (dotnet-monitor)](../core/diagnostics/dotnet-monitor.md)
+- [CA1854: Prefer the `IDictionary.TryGetValue(TKey, out TValue)` method](../fundamentals/code-analysis/quality-rules/ca1854.md)
+- [SYSLIB0041: Some Rfc2898DeriveBytes constructors are obsolete](../fundamentals/syslib-diagnostics/syslib0041.md)
+- [SYSLIB0042: FromXmlString and ToXmlString on ECC types are obsolete](../fundamentals/syslib-diagnostics/syslib0042.md)
 - [MVC's detection of an empty body in model binding changed](../core/compatibility/aspnet-core/7.0/mvc-empty-body-model-binding.md)
 - [Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed](../core/compatibility/aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md)
+- [SYSLIB0040: EncryptionPolicy.NoEncryption and EncryptionPolicy.AllowNoEncryption are obsolete](../fundamentals/syslib-diagnostics/syslib0040.md)
+- [SerializationFormat.Binary is obsolete](../core/compatibility/core-libraries/7.0/serializationformat-binary.md)
+- [SYSLIB0038: SerializationFormat.Binary is obsolete](../fundamentals/syslib-diagnostics/syslib0038.md)
+- [SYSLIB0039: SslProtocols.Tls and SslProtocols.Tls11 are obsolete](../fundamentals/syslib-diagnostics/syslib0039.md)
+- [CA1851: Possible multiple enumerations of `IEnumerable` collection](../fundamentals/code-analysis/quality-rules/ca1851.md)
 - [Microsoft.Data.SqlClient updated to 4.0.1](../core/compatibility/aspnet-core/7.0/microsoft-data-sqlclient-updated-to-4-0-1.md)
 - [API controller actions try to infer parameters from DI](../core/compatibility/aspnet-core/7.0/api-controller-action-parameters-di.md)
 - [SignalR Hub methods try to resolve parameters from DI](../core/compatibility/aspnet-core/7.0/signalr-hub-method-parameters-di.md)
@@ -157,6 +189,69 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 ### Updated articles
 
+- [API obsoletions with non-default diagnostic IDs (.NET 7)](../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md)
+  - Add two new SYSLIB warnings
+  - XmlSecureResolver breaking change
+  - Add SYSLIB0041
+  - Add SYSLIB0040
+  - Add syslib0038 and syslib0039
+- [Obsolete features in .NET 5+](../fundamentals/syslib-diagnostics/obsoletions-overview.md)
+  - Add two new SYSLIB warnings
+  - XmlSecureResolver breaking change
+  - Add SYSLIB0041
+  - Add SYSLIB0040
+  - Add syslib0038 and syslib0039
+- [SYSLIB0012: Assembly.CodeBase and Assembly.EscapedCodeBase are obsolete](../fundamentals/syslib-diagnostics/syslib0012.md) - Add two new SYSLIB warnings
+- [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md)
+  - Add docs for CA2019 and CA2259
+  - Add docs for CA1420 and CA1422
+  - Add doc for CA2260
+  - Add documentation for rule CA1854
+  - Add document for CA1851
+- [Reliability rules](../fundamentals/code-analysis/quality-rules/reliability-warnings.md) - Add docs for CA2019 and CA2259
+- [Usage rules](../fundamentals/code-analysis/quality-rules/usage-warnings.md)
+  - Add docs for CA2019 and CA2259
+  - Add doc for CA2260
+- [CA1416: Validate platform compatibility](../fundamentals/code-analysis/quality-rules/ca1416.md) - Add docs for CA1420 and CA1422
+- [CA1418: Validate platform compatibility](../fundamentals/code-analysis/quality-rules/ca1418.md) - Add docs for CA1420 and CA1422
+- [Portability and interoperability rules](../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) - Add docs for CA1420 and CA1422
+- [Breaking changes in .NET 7](../core/compatibility/7.0.md)
+  - system.diagnostics config entry breaking change
+  - MemoryCache breaking change
+  - Legacy FileStream mode and symlink breaking changes
+  - Networking breaking change
+  - Library support breaking change
+  - Socket.End* breaking change
+  - Remote auth provider breaking change
+  - Breaking change for OSArchitecture value
+  - WinForms obsoletions breaking change
+  - DataContractSerializer breaking change
+  - XmlSecureResolver breaking change
+  - Limit precision to 999,999,999
+  - Add ICU breaking change
+  - BinaryFormatter APIs obsolete as error
+  - Add trimming breaking change
+  - Default auth scheme handling
+  - X509ChainPolicy verification time
+  - Middleware deferral breaking change
+  - Kestrel HTTPS breaking change
+  - SignalR breaking change
+  - ContentRootPath breaking change
+  - x86 host path on x64/arm64
+  - ASP.NET Core 7 breaking change for MVC empty body detection
+  - ASP.NET Core 7 breaking change for MVC Logger Event IDs
+  - Add syslib0038 and syslib0039
+  - ASP.NET Core 7 breaking change for Microsoft.Data.SqlClient
+  - ASP.NET Core 7 breaking change for API Controller Actions DI
+  - ASP.NET Core 7 breaking change for SignalR Hub DI
+  - ASP.NET Core 7 breaking change for libuv
+- [.NET SDK error list](../core/tools/sdk-errors/index.md)
+  - Add new errors/warnings to NETSDK error index
+  - Document selected NETSDK error messages
+  - List of NETSDK error messages
+- [dotnet publish](../core/tools/dotnet-publish.md) - Document Publish UseCurrentRuntime
+- [How to choose reflection or source generation in System.Text.Json](../standard/serialization/system-text-json/source-generation-modes.md) - Source generation for STJ update
+- [How to use source generation in System.Text.Json](../standard/serialization/system-text-json/source-generation.md) - Source generation for STJ update
 - [dotnet build](../core/tools/dotnet-build.md) - Document UseCurrentRuntime
 - [MSBuild reference for .NET SDK projects](../core/project-sdk/msbuild-props.md)
   - Add three new properties
@@ -181,35 +276,8 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - Add contract customization article
 - [How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json](../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md) - Add section on Utf8JsonReader.CopyString
 - [Tutorial: Containerize a .NET app](../core/docker/build-container.md) - Add `dotnet publish` article for .NET 7 containerization support.
-- [Breaking changes in .NET 7](../core/compatibility/7.0.md)
-  - MemoryCache breaking change
-  - Networking breaking change
-  - Library support breaking change
-  - Socket.End* breaking change
-  - Remote auth provider breaking change
-  - Breaking change for OSArchitecture value
-  - WinForms obsoletions breaking change
-  - DataContractSerializer breaking change
-  - XmlSecureResolver breaking change
-  - Limit precision to 999,999,999
-  - Add ICU breaking change
-  - BinaryFormatter APIs obsolete as error
-  - Add trimming breaking change
-  - Default auth scheme handling
-  - X509ChainPolicy verification time
-  - Middleware deferral breaking change
-  - Kestrel HTTPS breaking change
-  - SignalR breaking change
-  - ContentRootPath breaking change
-  - x86 host path on x64/arm64
-  - ASP.NET Core 7 breaking change for MVC empty body detection
-  - ASP.NET Core 7 breaking change for MVC Logger Event IDs
-  - ASP.NET Core 7 breaking change for Microsoft.Data.SqlClient
-  - ASP.NET Core 7 breaking change for API Controller Actions DI
-  - ASP.NET Core 7 breaking change for SignalR Hub DI
-  - ASP.NET Core 7 breaking change for libuv
-- [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md) - Add doc for CA2260
-- [Usage rules](../fundamentals/code-analysis/quality-rules/usage-warnings.md) - Add doc for CA2260
+- [FileStream no longer synchronizes file offset with OS](../core/compatibility/core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md) - Legacy FileStream mode and symlink breaking changes
+- [FileStream.Position updates after ReadAsync or WriteAsync completes](../core/compatibility/core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md) - Legacy FileStream mode and symlink breaking changes
 - [.NET regular expressions](../standard/base-types/regular-expressions.md) - Ported as conceptual article from .NET dev blog: `Regex` enhancements with .NET 7
 - [Use HTTP/3 with HttpClient](../core/extensions/httpclient-http3.md) - Update HTTP/3 support for HttpClient in .NET 7
 - [Compare Newtonsoft.Json to System.Text.Json, and migrate to System.Text.Json](../standard/serialization/system-text-json/migrate-from-newtonsoft.md) - Add contract customization article
@@ -219,21 +287,26 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - Generic math docs
 - [How to serialize properties of derived classes with System.Text.Json](../standard/serialization/system-text-json/polymorphism.md) - `System.Text.Json` polymorphism updates for .NET 7
 - [dotnet watch](../core/tools/dotnet-watch.md) - Note that --non-interactive is .NET 7
-- [Overview of .NET, MSBuild, and Visual Studio versioning](../core/porting/versioning-sdk-msbuild-vs.md) - Add preview SDK table
-- [API obsoletions with non-default diagnostic IDs (.NET 7)](../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md) - XmlSecureResolver breaking change
-- [Obsolete features in .NET 5+](../fundamentals/syslib-diagnostics/obsoletions-overview.md) - XmlSecureResolver breaking change
-- [SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete](../fundamentals/syslib-diagnostics/syslib0043.md) - XmlSecureResolver breaking change
+- [Overview of .NET, MSBuild, and Visual Studio versioning](../core/porting/versioning-sdk-msbuild-vs.md)
+  - Add preview SDK table
+  - Formalize versioning support policy
+- [SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete](../fundamentals/syslib-diagnostics/syslib0043.md)
+  - XmlSecureResolver breaking change
+  - Add SYSLIB0041
+- [Source generation for platform invokes](../standard/native-interop/pinvoke-source-generation.md)
+  - Custom marshaller tutorial
+  - Basic overview of p/invoke source generation
 - [Standard numeric format parsing precision](../core/compatibility/core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md) - Limit precision to 999,999,999
 - [Standard numeric format strings](../standard/base-types/standard-numeric-format-strings.md) - Limit precision to 999,999,999
 - [Globalization APIs use ICU libraries on Windows 10](../core/compatibility/globalization/5.0/icu-globalization-api.md) - Add ICU breaking change
 - [Native AOT Deployment](../core/deploying/native-aot/index.md) - Document AOT analysis warnings
-- [Changes to reflection invoke API exceptions](../core/compatibility/core-libraries/7.0/reflection-invoke-exceptions.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- ['var' preferences (IDE0007 and IDE0008)](../fundamentals/code-analysis/style-rules/ide0007-ide0008.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Work with Buffers in .NET](../standard/io/buffers.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
 - [Character encoding in .NET](../standard/base-types/character-encoding-introduction.md) - Write content for UTF-8 string literals for C# 11.
 - [IHttpClientFactory with .NET](../core/extensions/httpclient-factory.md) - New `HttpClient` article
+- [Title not found in: #30543](../fundamentals/networking/httpclient-guidelines.md) - New `HttpClient` article
 - [Runtime libraries overview](../standard/runtime-libraries-overview.md) - New `HttpClient` article
-- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md) - BinaryFormatter APIs obsolete as error
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md)
+  - BinaryFormatter APIs obsolete as error
+  - Add syslib0038 and syslib0039
 - [.NET runtime contention events](../fundamentals/diagnostics/runtime-contention-events.md) - Update the doc with the new version of ContentionStart
 - [.NET default templates for dotnet new](../core/tools/dotnet-new-sdk-templates.md) - Added the two new Blazor empty templates
 - [Parsing numeric strings in .NET](../standard/base-types/parsing-numeric.md) - Generic math docs
@@ -241,9 +314,10 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Generic interfaces in .NET](../standard/generics/interfaces.md) - Generic math docs
 - [Target frameworks in SDK-style projects](../standard/frameworks.md) - Update TFMs for .NET 7
 - [Trimming options](../core/deploying/trimming/trimming-options.md) - Cleanup trimming options and document TrimMode=full,partial
-- [.NET SDK error list](../core/tools/sdk-errors/index.md)
-  - Document selected NETSDK error messages
-  - List of NETSDK error messages
+- [Title not found in: #30244#30062#29792](../core/deploying/native-aot.md)
+  - Document StripSymbols property for native AOT
+  - Update native publishing AOT documentation
+  - Documenting Native AOT deployment
 - [Single-file deployment and executable](../core/deploying/single-file/overview.md) - Update single file incompatibility docs
 - [Code-style rule options](../fundamentals/code-analysis/code-style-rule-options.md) - Add missing code-style rules
 - [Expression-level preferences](../fundamentals/code-analysis/style-rules/expression-level-preferences.md) - Add missing code-style rules
@@ -256,13 +330,32 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - Add IDE0160 and IDE0161.
 - [Null-checking preferences](../fundamentals/code-analysis/style-rules/null-checking-preferences.md) - Add missing code-style rules
 - [Pattern matching preferences](../fundamentals/code-analysis/style-rules/pattern-matching-preferences.md) - Add missing code-style rules
-- [.NET SDK and .NET CLI telemetry](../core/tools/telemetry.md) - Add the PublishProtocol property to the list of telemetry data disclosures
-- [Error codes returned by package validation](../fundamentals/package-validation/diagnostic-ids.md) - add docs for diagnostics CP0012 and CP0013
+- [.NET SDK and .NET CLI telemetry](../core/tools/telemetry.md)
+  - Add the PublishProtocol property to the list of telemetry data disclosures
+  - document SDK telemetry from prior and upcoming versions
+- [Error codes returned by package validation](../fundamentals/package-validation/diagnostic-ids.md)
+  - add docs for diagnostics CP0012 and CP0013
+  - add docs for diagnostics CP0010 and CP0011
 - [Breaking changes in .NET Core 3.1](../core/compatibility/3.1.md) - x86 host path on x64/arm64
 - [.NET additional tools overview](../core/additional-tools/index.md) - Add dotnet-monitor .NET tool documentation
 - [Diagnostics client library](../core/diagnostics/diagnostics-client-library.md) - Add dotnet-monitor .NET tool documentation
 - [Collect diagnostics in containers](../core/diagnostics/diagnostics-in-containers.md) - Add dotnet-monitor .NET tool documentation
 - [What diagnostic tools are available in .NET Core?](../core/diagnostics/index.md) - Add dotnet-monitor .NET tool documentation
+- [Performance rules](../fundamentals/code-analysis/quality-rules/performance-warnings.md)
+  - Add documentation for rule CA1854
+  - Add document for CA1851
+- [.NET RID Catalog](../core/rid-catalog.md) - Add iOS and Android RIDs
+- [Runtime configuration options for threading](../core/runtime-config/threading.md) - Document a new config switch added to the portable thread pool
+- [dotnet-coverage code coverage utility](../core/additional-tools/dotnet-coverage.md) - Adding new options and example scenarios
+- [APIs that always throw exceptions on .NET Core and .NET 5+](../core/compatibility/unsupported-apis.md) - Add SYSLIB0041
+- [dotnet new install](../core/tools/dotnet-new-install.md) - New syntax for `dotnet new`
+- [dotnet new list](../core/tools/dotnet-new-list.md) - New syntax for `dotnet new`
+- [dotnet new search](../core/tools/dotnet-new-search.md) - New syntax for `dotnet new`
+- [dotnet new uninstall](../core/tools/dotnet-new-uninstall.md) - New syntax for `dotnet new`
+- [dotnet new update](../core/tools/dotnet-new-update.md) - New syntax for `dotnet new`
+- [dotnet new &lt;TEMPLATE&gt;](../core/tools/dotnet-new.md) - New syntax for `dotnet new`
+- [Title not found in: #28838](../standard/serialization/system-text-json-configure-options.md) - Document new STJ Options Default property
+- [Prepare .NET libraries for trimming](../core/deploying/trimming/prepare-libraries-for-trimming.md) - Update trimming libraries docs
 
 ## Architecture guides
 
@@ -292,11 +385,10 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 - [file (C# Reference)](../csharp/language-reference/keywords/file.md)
 - [required modifier (C# Reference)](../csharp/language-reference/keywords/required.md)
-- [`ref` structure types (C# reference)](../csharp/language-reference/builtin-types/ref-struct.md)
-- [Declaration statements](../csharp/language-reference/statements/declarations.md)
 
 ### Updated articles
 
+- [Sorry, we don't have specifics on this C# error](../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md) - add all C# 11 error codes
 - [Default values of C# types (C# reference)](../csharp/language-reference/builtin-types/default-values.md) - Publish C# 11 speclets
 - [Integral numeric types  (C# reference)](../csharp/language-reference/builtin-types/integral-numeric-types.md)
   - Publish C# 11 speclets
@@ -304,9 +396,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Built-in reference types (C# reference)](../csharp/language-reference/builtin-types/reference-types.md)
   - Publish C# 11 speclets
   - Write content for UTF-8 string literals for C# 11.
-- [Structure types (C# reference)](../csharp/language-reference/builtin-types/struct.md)
-  - Publish C# 11 speclets
-  - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
+- [Structure types (C# reference)](../csharp/language-reference/builtin-types/struct.md) - Publish C# 11 speclets
 - [file (C# Reference)](../csharp/language-reference/keywords/file.md)
   - Publish C# 11 speclets
   - Language reference updates for `file` scoped types
@@ -320,65 +410,32 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Bitwise and shift operators (C# reference)](../csharp/language-reference/operators/bitwise-and-shift-operators.md)
   - Publish C# 11 speclets
   - Operator updates to support generic math
-- [nameof expression (C# reference)](../csharp/language-reference/operators/nameof.md) - Publish C# 11 speclets
+- [nameof expression (C# reference)](../csharp/language-reference/operators/nameof.md)
+  - Publish C# 11 speclets
+  - Extended nameof parameter scope
 - [Patterns (C# reference)](../csharp/language-reference/operators/patterns.md)
   - Publish C# 11 speclets
   - Add missing code-style rules
 - [checked and unchecked statements (C# reference)](../csharp/language-reference/statements/checked-and-unchecked.md) - Publish C# 11 speclets
-- [$ - string interpolation (C# reference)](../csharp/language-reference/tokens/interpolated.md) - Publish C# 11 speclets
+- [$ - string interpolation (C# reference)](../csharp/language-reference/tokens/interpolated.md)
+  - Publish C# 11 speclets
+  - C# 11 preview features: newlines in string interpolation
 - [Access Modifiers (C# Reference)](../csharp/language-reference/keywords/access-modifiers.md) - Language reference updates for `file` scoped types
 - [C# Keywords](../csharp/language-reference/keywords/index.md)
   - Language reference updates for `file` scoped types
-  - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
   - C# 11: required members
   - Add updates for numeric IntPtr
 - [What's new in C# 11](../csharp/whats-new/csharp-11.md)
   - Language reference updates for `file` scoped types
-  - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
   - Write content for UTF-8 string literals for C# 11.
   - Generic math docs
   - C# 11: required members
   - Add information on static virtual interface members
   - Add updates for numeric IntPtr
   - Operator updates to support generic math
-- [C# Coding Conventions](../csharp/fundamentals/coding-style/coding-conventions.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Overview of classes, structs, and records in C\#](../csharp/fundamentals/object-oriented/index.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Anonymous types](../csharp/fundamentals/types/anonymous-types.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [The C# type system](../csharp/fundamentals/types/index.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS0269](../csharp/language-reference/compiler-messages/cs0269.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS1942](../csharp/language-reference/compiler-messages/cs1942.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [async (C# Reference)](../csharp/language-reference/keywords/async.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [from clause (C# Reference)](../csharp/language-reference/keywords/from-clause.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Method Parameters (C# Reference)](../csharp/language-reference/keywords/method-parameters.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [ref (C# Reference)](../csharp/language-reference/keywords/ref.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Assignment operators (C# reference)](../csharp/language-reference/operators/assignment-operator.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [?: operator (C# reference)](../csharp/language-reference/operators/conditional-operator.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [new operator (C# reference)](../csharp/language-reference/operators/new-operator.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Iteration statements (C# reference)](../csharp/language-reference/statements/iteration-statements.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Jump statements (C# reference)](../csharp/language-reference/statements/jump-statements.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Query expression basics](../csharp/linq/query-expression-basics.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Write LINQ queries in C\#](../csharp/linq/write-linq-queries.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Methods in C\#](../csharp/methods.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS0177](../csharp/misc/cs0177.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS0199](../csharp/misc/cs0199.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS0206](../csharp/misc/cs0206.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS0241](../csharp/misc/cs0241.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Compiler Error CS1949](../csharp/misc/cs1949.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Implicitly Typed Arrays (C# Programming Guide)](../csharp/programming-guide/arrays/implicitly-typed-arrays.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [How to use implicitly typed local variables and arrays in a query expression (C# Programming Guide)](../csharp/programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Implicitly typed local variables (C# Programming Guide)](../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Methods (C# Programming Guide)](../csharp/programming-guide/classes-and-structs/methods.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [C# Features That Support LINQ](../csharp/programming-guide/concepts/linq/features-that-support-linq.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [LINQ and Generic Types (C#)](../csharp/programming-guide/concepts/linq/linq-and-generic-types.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Type Relationships in LINQ Query Operations (C#)](../csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Walkthrough: Writing Queries in C# (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Console app](../csharp/tutorials/console-teleprompter.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [The history of C\#](../csharp/whats-new/csharp-version-history.md)
-  - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-  - Operator updates to support generic math
-- [Write safe and efficient C# code](../csharp/write-safe-efficient-code.md)
-  - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-  - Add updates for numeric IntPtr
+  - Extended nameof parameter scope
+  - Document new method group conversion
+  - C# 11 preview features: newlines in string interpolation
 - [+ and += operators (C# reference)](../csharp/language-reference/operators/addition-operator.md) - Write content for UTF-8 string literals for C# 11.
 - [Tutorial: Explore C# 11 feature - static virtual members in interfaces](../csharp/whats-new/tutorials/static-virtual-interface-members.md) - Generic math docs
 - [Miscellaneous attributes interpreted by the C# compiler](../csharp/language-reference/attributes/general.md) - C# 11: required members
@@ -393,17 +450,27 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Properties](../csharp/properties.md) - C# 11: required members
 - [Constraints on type parameters (C# Programming Guide)](../csharp/programming-guide/generics/constraints-on-type-parameters.md) - Add information on static virtual interface members
 - [Generic Interfaces (C# Programming Guide)](../csharp/programming-guide/generics/generic-interfaces.md) - Add information on static virtual interface members
+- [Title not found in: #30129](../csharp/whats-new/tutorials/static-abstract-interface-methods.md) - Add information on static virtual interface members
 - [namespace](../csharp/language-reference/keywords/namespace.md) - Add IDE0160 and IDE0161.
 - [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md) - Add updates for numeric IntPtr
 - [Built-in numeric conversions (C# reference)](../csharp/language-reference/builtin-types/numeric-conversions.md) - Add updates for numeric IntPtr
 - [What's new in C# 9.0](../csharp/whats-new/csharp-9.md) - Add updates for numeric IntPtr
+- [Write safe and efficient C# code](../csharp/write-safe-efficient-code.md) - Add updates for numeric IntPtr
+- [Title not found in: #29794](../csharp/language-reference/keywords/checked-and-unchecked.md) - Operator updates to support generic math
+- [Title not found in: #29794](../csharp/language-reference/keywords/checked.md) - Operator updates to support generic math
+- [Title not found in: #29794](../csharp/language-reference/keywords/unchecked.md) - Operator updates to support generic math
 - [Arithmetic operators (C# reference)](../csharp/language-reference/operators/arithmetic-operators.md) - Operator updates to support generic math
+- [The history of C\#](../csharp/whats-new/csharp-version-history.md) - Operator updates to support generic math
+- [Determine caller information using attributes interpreted by the C# compiler](../csharp/language-reference/attributes/caller-information.md) - Extended nameof parameter scope
+- [Attributes for null-state static analysis interpreted by the C# compiler](../csharp/language-reference/attributes/nullable-analysis.md) - Extended nameof parameter scope
+- [delegate operator (C# reference)](../csharp/language-reference/operators/delegate-operator.md) - Document new method group conversion
+- [Generics and Attributes (C# Programming Guide)](../csharp/programming-guide/generics/generics-and-attributes.md) - generic attributes are allowed in C# 11
 
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
 - [serpent5](https://github.com/serpent5) - Kirk Larkin ![There were 6 pull requests merged by Kirk Larkin.](https://img.shields.io/badge/Merged%20Pull%20Requests-6-green)
-- [gleocadie](https://github.com/gleocadie) - Gregory LEOCADIE ![There were 1 pull requests merged by Gregory LEOCADIE.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [CollinAlpert](https://github.com/CollinAlpert) - Collin Alpert ![There were 1 pull requests merged by Collin Alpert.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [michaelstonis](https://github.com/michaelstonis) - Michael Stonis ![There were 1 pull requests merged by Michael Stonis.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [SimonaLiao](https://github.com/SimonaLiao) - Simona Liao ![There were 1 pull requests merged by Simona Liao.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

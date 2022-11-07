@@ -11,7 +11,7 @@ class Program
                 builder.AddSystemdConsole(options =>
                 {
                     options.IncludeScopes = true;
-                    options.TimestampFormat = "hh:mm:ss ";
+                    options.TimestampFormat = "HH:mm:ss ";
                 }));
 
         ILogger<Program> logger = loggerFactory.CreateLogger<Program>();

@@ -1,46 +1,61 @@
 ---
 title: What is Automated Machine Learning (AutoML)?
 description: Learn what automated machine learning is and its different components in ML.NETs
-ms.date: 11/01/2022
+ms.date: 11/10/2022
 ms.topic: overview
 ms.custom: mvc
 ---
 
 # What is Automated Machine Learning (AutoML)?
 
-In this article, you learn what Automated Machine Learning (AutoML) is and its different components in ML.NET.  
+In this article you will learn what Automated machine learning (AutoML) is and how to use the AutoML API to train models in ML.NET.
 
-Automated Machine Learning (AutoML) automates the model building process by making it easier to find the best algorithm for your scenario and dataset.
+> [!NOTE]
+> This topic refers to the ML.NET AutoML API, which is currently in preview. Material may be subject to change.
 
-## Load data
+## What is AutoML?
 
-When you load data into ML.NET, you usually have to define the schema. With AutoML, you can use data in a file to infer the schema. It does so by loading a subset of your data and using the data to determine what the data types are.
+Automated machine learning (AutoML) automates the process of applying machine learning to data. Given a dataset| you can run an AutoML experiment to iterate over different data featurizations, machine learning algorithms, and hyperparameters to select the best model.
 
-For a more customized data loading experiences, see [Load data from files and other sources](how-to-guides/load-data-ml-net.md)
+## When should I use AutoML?
 
-## Data cleaning and preparation
+Whether you're just getting started with machine learning or you're an experienced user, AutoML provides solutions for automating the model development process.
 
-Raw data is often messy and incomplete. Machine learning algorithms expect input (features) to be represented as numbers. Similarly, the value to predict (label), especially when it's categorical data, has to be encoded. Therefore one of the goals of data cleaning and preparation is to get the data into the format expected by machine learning algorithms.
+- **Beginners** - If you're new to machine learning, AutoML simplifies the model development process by providing a set of defaults that reduces the number of decisions you have to make when training your model. In doing so, you can focus on your data and the problem you're trying to solve and let AutoML do the rest.  
+- **Experienced users** - If you have some experience with machine learning, you can customize, configure, and extend the defaults provided by AutoML based on your needs while still leveraging its automation capabilities.  
 
-Which transforms you apply to your data depend on the type of data you're working with (text, categorical, numerical, images).  
+## AutoML in ML.NET
 
-The process of taking raw input data and converting it into numerical data is often referred to as featurization. AutoML
+- **Featurizer** - Convenience API to automate data preprocessing.
+- **Trial** - A single hyperparamters optimization run.
+- **Experiment** - A collection of AutoML trials. ML.NET provides a high-level API for creating experiments which sets defaults for the individual Sweepable Pipeline, Search Space, and Tuner components.
+- **Search Space** - The range of available options to choose hyperparameters from.
+- **Tuner** - The algorithms used to optimize hyperparameters. ML.NET supports the following tuners:
+  - **Cost Frugal Tuner** - Implementation of [Frugal Optimization for Cost-related Hyperparameters](https://arxiv.org/abs/2005.01571) which takes training cost into consideration
+  - **Eci Cost Frugal Tuner** - Implementation of Cost Frugal Tuner for hierarchical search spaces. Default tuner used by AutoML.
+  - **SMAC** - Tuner that uses random forests to apply Bayesian optimization.
+  - **Grid Search** - Tuner that works best for small search spaces.
+- **Random Search**
+- **Sweepable Estimator** - An ML.NET estimator that contains a search space.
+- **Sweepable Pipeline** - An ML.NET pipeline that contains one or more Sweepable Estimators.
+- **Trial Runner** - AutoML component that uses sweepable pipelines and trial settings to generate trial results from model training and evaluation.  
 
-## Model training
+It's recommended for beginners to start with the defaults provided by the high-level experiment API. For more experienced users looking for customization options, use the sweepable estimator, sweepable pipeline, search space, trial runner and tuner components.
 
-## Supported scenarios
+For more information on getting started with the AutoML API, see the [How to use the ML.NET Automated Machine Learning (AutoML) API](how-to-guides/how-to-use-the-automl-api.md) guide.
 
-- Classification
+## Supported tasks
+
+AutoML provides preconfigured defaults for the following tasks:
+
+- Binary classification
+- Multiclass classification
 - Regression
 
-For more information on machine learning tasks, [see machine learning tasks in ML.NET](resources/tasks.md)
+For other tasks, configure. For more information, see the [How to use the ML.NET Automated Machine Learning (AutoML) API](how-to-guides/how-to-use-the-automl-api.md) guide.  
 
-## Experiments
+## Next steps
 
-To train models in ML.NET, you create an experiment.
-
-An experiment is a collection of trials.
-
-## Sweepable Pipelines
-
-## Model evaluation
+- [How to use the ML.NET Automated Machine Learning (AutoML) API](how-to-guides/how-to-use-the-automl-api.md)
+- [Tutorial: Classify the severity of restaurant health violations with Model Builder](tutorials/health-violation-classification-model-builder.md)
+- [Tutorial: Analyze sentiment using the ML.NET CLI](tutorials/sentiment-analysis-cli.md)

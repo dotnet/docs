@@ -16,7 +16,7 @@ As .NET 5 (and .NET Core) and later versions become available on more and more p
 When installed, .NET consists of several components that are laid out as follows in the file system:
 
 ```
-{dotnet_root}                                     (*)
+{dotnet_root}                    (0)
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)
@@ -63,6 +63,8 @@ When installed, .NET consists of several components that are laid out as follows
         └── dotnet               (10)
 ```
 
+- (0) **{dotnet_root}** is a shared root for all .NET major and minor versions. For example, if multiple runtimes are installed, they would share the **{dotnet_root}** folder, `{dotnet_root}/shared/Microsoft.NETCore.App/6.0.11` and `{dotnet_root}/shared/Microsoft.NETCore.App/7.0.0`. It is advised that the name of `{dotnet_root}` folder be version agnostic, i.e. simply `dotnet`.
+
 - (1) **dotnet** The host (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`).
 
 While there's a single host, most of the other components are in versioned directories (2,3,5,6). This means multiple versions can be present on the system since they're installed side by side.
@@ -98,8 +100,6 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 
 The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
-
-- (18) **{dotnet_root}** is a shared root for all .NET major and minor versions. As a consequence, you will see all diffrent runtime versions, for all .NET major and minor versions, under a single folder on user's machine - `{dotnet_root}/shared/Microsoft.NETCore.App`. The same is true for all other folders that contain version sub-folders, i.e. `{dotnet_root}/shared/sdk`. It is strongly advised that the name of `{dotnet_root}` folder be version agnostic, i.e. simply `dotnet`.
 
 ## Recommended packages
 

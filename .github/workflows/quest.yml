@@ -2,7 +2,7 @@ name: "quest import"
 on:
   issues:
     types:
-      [ labeled ]
+      [ labeled, closed, reopened, assigned, unassigned ]
   workflow_dispatch:
     inputs:
       reason:
@@ -15,7 +15,12 @@ on:
 
 jobs:
   import:
-    if: github.event.label.name == join(fromJson('[":", "world_map", ":", " reQUEST"]'), '') || github.event_name == 'workflow_dispatch'
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      github.event.label.name == ':world_map: reQUEST' ||
+      github.event.label.name == ':pushpin: seQUESTered' ||
+      contains(github.event.issue.labels.*.name, ':world_map: reQUEST') ||
+      contains(github.event.issue.labels.*.name, ':pushpin: seQUESTered')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -32,7 +37,7 @@ jobs:
       - name: manual-sequester
         if: ${{ github.event_name == 'workflow_dispatch' }}
         id: manual-sequester
-        uses: BillWagner/Quest2GitHub@main
+        uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
@@ -46,7 +51,7 @@ jobs:
       - name: auto-sequester
         if: ${{ github.event_name != 'workflow_dispatch' }}
         id: auto-sequester
-        uses: BillWagner/Quest2GitHub@main
+        uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}

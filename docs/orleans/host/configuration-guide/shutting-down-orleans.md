@@ -1,77 +1,35 @@
 ---
 title: Shut down Orleans silos
 description: Learn how to shut down .NET Orleans silos.
-ms.date: 03/16/2022
+ms.date: 11/01/2022
 ---
 
 # Shut down Orleans silos
 
-This document explains how to gracefully shut down an Orleans silo before application exit, first as a Console app, and then as a Docker container app. The following code shows how to gracefully shut down an Orleans silo console app in response to the user pressing <kbd>Ctrl</kbd> + <kbd>C</kbd>, which generates the <xref:System.Console.CancelKeyPress?displayProperty=nameWithType> event.
+This article explains how to gracefully shut down an Orleans silo before the app exits. This applies to apps running as a console app, or as a container app. Various termination signals can cause an app to shut down, such as <kbd>Ctrl</kbd>+<kbd>C</kbd> (or `SIGTERM`). The following sections explain how to handle these signals.
 
-Normally when that event handler returns, the application will exit immediately, causing a catastrophic Orleans silo crash and loss of in-memory state. But in the sample code below, we set `a.Cancel = true;` to prevent the application closing before the Orleans silo has completed its graceful shutdown.
+## Graceful Silo shutdown
+
+The following code shows how to gracefully shut down an Orleans silo console app. Consider the following example code:
 
 ```csharp
-using Microsoft.Extensions.Logging;
-using Orleans.Configuration;
+using Microsoft.Extensions.Hosting;
+using Orleans;
 using Orleans.Hosting;
-using System;
-using System.Net;
-using System.Threading;
-using System.Threading.Tasks;
 
-static readonly ManualResetEvent s_siloStopped = new(false);
-static readonly object s_syncLock = new object();
-
-static ISiloHost s_silo;
-static bool s_siloStopping = false;
-
-SetupApplicationShutdown();
-
-s_silo = CreateSilo();
-await s_silo.StartAsync();
-
-/// Wait for the silo to completely shutdown before exiting.
-s_siloStopped.WaitOne();
-
-static void SetupApplicationShutdown()
-{
-    Console.CancelKeyPress += (s, a) =>
+await Host.CreateDefaultBuilder(args)
+    .UseOrleans(siloBuilder =>
     {
-        /// Prevent the application from crashing ungracefully.
-        a.Cancel = true;
-        /// Don't allow the following code to repeat if the user presses Ctrl+C repeatedly.
-        lock (s_syncLock)
-        {
-            if (!s_siloStopping)
-            {
-                s_siloStopping = true;
-                Task.Run(StopSiloAsync).Ignore();
-            }
-        }
-        // Event handler execution exits immediately, leaving the
-        // silo shutdown running on a background thread,
-        // but the app doesn't crash because a.Cancel has been set = true
-    };
-}
-
-static ISiloHost CreateSilo() => new HostBuilder()
-    .UseOrleans(builder =>
-    {
-        builder.Configure(options => options.ClusterId = "MyTestCluster")
-            .UseDevelopmentClustering(
-                options => options.PrimarySiloEndpoint = new IPEndPoint(IPAddress.Loopback, 11111))
-            .ConfigureLogging(b => b.SetMinimumLevel(LogLevel.Debug).AddConsole())
+        // Use the siloBuilder instance to configure the Orleans silo.
     })
-    .Build();
-
-static async Task StopSiloAsync()
-{
-    await s_silo.StopAsync();
-    s_siloStopped.Set();
-}
+    .RunConsoleAsync();
 ```
 
-Of course, there are many other ways of achieving the same goal. But beware, that there are online examples that _do not_ work properly.
+The preceding code relies on the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting), and [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet packages. The <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunConsoleAsync%2A> extension method, extends <xref:Microsoft.Extensions.Hosting.IHostBuilder> to help manage the lifetime of the app accordingly, listening for process termination signals and shutting down the silo gracefully.
 
-> [!CAUTION]
-> Always avoid race conditions between two methods trying to exit first, for example, the <xref:System.Console.CancelKeyPress?displayProperty=nameWithType> event handler method, and the `static void Main(string[] args)` method. When the event handler method finishes first, which happens at least half the time, the application will hang instead of exiting smoothly.
+Internally, the `RunConsoleAsync` method calls <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.UseConsoleLifetime%2A> which ensures that the app shuts down gracefully. For more information on host shutdown, see [.NET Generic Host: Host shutdown](../../../core/extensions/generic-host.md#host-shutdown).
+
+## See also
+
+- [.NET Generic Host](../../../core/extensions/generic-host.md)
+- [Orleans silo lifecycle overview](../silo-lifecycle.md)

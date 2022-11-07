@@ -162,7 +162,7 @@ For example, in the taxi fare regression scenario, to exclude the LightGBM algor
 ctx.Auto().Regression(labelColumnName: columnInference.ColumnInformation.LabelColumnName, useLgbm:false)
 ```
 
-The process for other tasks like binary and multiclass classification and trainers works the same way.
+The process for excluding trainers in other tasks like binary and multiclass classification the same way.
 
 ### Customize a sweepable estimator
 
@@ -229,7 +229,7 @@ originalSdcaSearchSpace["L1Regularization"] = new UniformSingleOption(min:0.01f,
 
 ### Create a custom search space
 
-There are a few reasons where you'd want to create your own search space. However, the main one is to support ML.NET tasks that don't have predefined search spaces. These include:
+AutoML provides a set of preconfigured search spaces.
 
 ### Create your own trial runner
 

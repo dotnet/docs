@@ -273,7 +273,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 ### Updated articles
 
-- [Orleans transactions](../orleans/grains/transactions.md) - Merge .NET 7 release branch into main
+- [Orleans transactions](../orleans/grains/transactions.md) - Describe new APIs for .NET 7
 - [Microsoft Orleans documentation](../orleans/index.yml) - What is new Orleans
 
 ## Community contributors

@@ -76,11 +76,11 @@ dotnet-stack report -p|--process-id <pid>
 
 - **`-n, --name <name>`**
 
-  The name of the process to collect the trace from.
+  The name of the process to report the stack from.
 
 - **`-p|--process-id <PID>`**
 
-  The process ID to collect the trace from.
+  The process ID to report the stack from.
 
 ## dotnet-stack ps
 

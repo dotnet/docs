@@ -24,7 +24,7 @@ For performance reasons, .NET 7 no longer tracks linked cache entries by default
 
 ## Version introduced
 
-.NET 7 Preview 1
+.NET 7
 
 ## Previous behavior
 

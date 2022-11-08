@@ -27,7 +27,7 @@ If you're processing documents that were created by the .NET Core 2.0 version of
 
 ## Version introduced
 
-.NET 7 Preview 5
+.NET 7
 
 ## Type of breaking change
 

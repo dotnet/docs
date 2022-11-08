@@ -10,7 +10,7 @@ NuGet package signatures are based on X.509 certificates, and a prequisite for s
 
 Starting with .NET 7, NuGet uses fallback certificate bundles included in the .NET SDK to verify signed packages where a suitable system root store is not available.  These bundles are sourced from the [Microsoft Trusted Root Program](https://aka.ms/RootCert) and contain the same code signing and timestamping certificates as the root store on Windows.
 
-Some NuGet commands (like `sign` and `verify`) always perform signed package verification.
+Some NuGet commands, such as `sign` and `verify`, always perform signed package verification.
 
 The following sections detail when implicit verification during restore operations is enabled by default, how to enable it, and what root stores are used.
 

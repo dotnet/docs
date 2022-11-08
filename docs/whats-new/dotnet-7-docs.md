@@ -265,16 +265,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [delegate operator (C# reference)](../csharp/language-reference/operators/delegate-operator.md) - Document new method group conversion
 - [Generics and Attributes (C# Programming Guide)](../csharp/programming-guide/generics/generics-and-attributes.md) - generic attributes are allowed in C# 11
 
-## F# language
-
-### Updated articles
-
-- [F# docs - get started, tutorials, reference.](../fsharp/index.yml) - Merge .NET 7 release branch into main
-- [What's new in F# 6](../fsharp/whats-new/fsharp-6.md)
-  - Merge .NET 7 release branch into main
-  - Retire the "What's new in C# 8" article
-- [What's new in F# 5](../fsharp/whats-new/fsharp-50.md) - Retire the "What's new in C# 8" article
-
 ## Microsoft Orleans
 
 ### New articles

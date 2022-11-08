@@ -138,7 +138,7 @@ In this example, you:
 
 - Set the sweepable pipeline to run during the experiment using `SetPipeline`.
 - Choose `RSquared` as the metric to optimize during training using `SetRegressionMetric`. For more information on evaluation metrics, see the [evaluate your ML.NET model with metrics](../resources/metrics.md) guide.
-- Set 60 seconds as the amount of time you want to train for using `SetTrainingTimeInSeconds`. A good heuristic to determing how long to train for is the size of your data. Typically, larger datasets require longer training time. For additional guidance, see [](../automate-training-with-model-builder.md)
+- Set 60 seconds as the amount of time you want to train for using `SetTrainingTimeInSeconds`. A good heuristic to determine how long to train for is the size of your data. Typically, larger datasets require longer training time. For more information, see [training time guidance](../automate-training-with-model-builder.md#how-long-should-i-train-for)/.
 - Provide the training and validation datasets to use using `SetDataset`.
 
 Once your experiment is defined, you'll want some way to track its progress. The quickest way to track progress is by defining the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>.

@@ -2,78 +2,80 @@
 
 public static class ListPattern
 {
-    static string[] records =
-    {
-        "04-01-2020, DEPOSIT, Initial deposit, 2250.00",
-        "04-15-2020, DEPOSIT, Refund, 125.65",
-        "04-18-2020, DEPOSIT, Paycheck, 125.65",
-        "04-22-2020, WITHDRAWAL, Debit, Groceries, 255.73",
-        "05-01-2020, WITHDRAWAL, #1102, Rent, apt, 2100.00",
-        "05-02-2020, INTEREST,  0.65",
-        "05-07-2020, WITHDRAWAL, Debit, Movies, 12.57",
-        "04-15-2020, FEE, 5.55",
-    };
-
-
     public static void Examples()
     {
-        // <DeclareArrays>
-        int[] one = { 1 };
-        int[] odd = { 1, 3, 5 };
-        int[] even = { 2, 4, 6 };
-        int[] fib = { 1, 1, 2, 3, 5 };
-        // </DeclareArrays>
+        BasicExample();
+        MatchAnyElement();
+        UseSlice();
+        SliceWithPattern();
+    }
 
-        Console.WriteLine("Match entire array");
-        // <MatchEntireArray>
-        Console.WriteLine(odd is [1, 3, 5]); // true
-        Console.WriteLine(even is [1, 3, 5]); // false (values)
-        Console.WriteLine(one is [1, 3, 5]); // false (length)
-        // </MatchEntireArray>
+    private static void BasicExample()
+    {
+        // <BasicExample>
+        int[] numbers = { 1, 2, 3 };
 
-        Console.WriteLine("Match elements");
-        // <MatchElements>
-        Console.WriteLine(odd is [1, _, _]); // true
-        Console.WriteLine(odd is [_, 3, _]); // true
-        Console.WriteLine(even is [_, _, 5]); // false (last value)
-        // </MatchElements>
+        Console.WriteLine(numbers is [1, 2, 3]);  // True
+        Console.WriteLine(numbers is [1, 2, 4]);  // False
+        Console.WriteLine(numbers is [1, 2, 3, 4]);  // False
+        Console.WriteLine(numbers is [0 or 1, <= 2, >= 3]);  // True
+        // </BasicExample>
+    }
 
-        Console.WriteLine("Match range");
-        // <MatchRange>
-        Console.WriteLine(odd is [1, .., 3, _]); // true
-        Console.WriteLine(fib is [1, .., 3, _]); // true
+    private static void MatchAnyElement()
+    {
+        // <MatchAnyElement>
+        List<int> numbers = new() { 1, 2, 3 };
 
-        Console.WriteLine(odd is [1, _, 5, ..]); // true
-        Console.WriteLine(fib is [1, _, 5, ..]); // false
-        // </MatchRange>
-
-        Console.WriteLine("Relational pattern");
-        // <RelationalMatch>
-        Console.WriteLine(odd is [_, >1, ..]); // true
-        Console.WriteLine(even is [_, >1, ..]); // true
-        Console.WriteLine(fib is [_, > 1, ..]); // false
-        // </RelationalMatch>
-
-        // <DataRecordExample>
-        decimal balance = 0m;
-        foreach (var transaction in ReadRecords())
+        if (numbers is [var first, _, _])
         {
-            balance += transaction switch
-            {
-                [_, "DEPOSIT", _, var amount]     => decimal.Parse(amount),
-                [_, "WITHDRAWAL", .., var amount] => -decimal.Parse(amount),
-                [_, "INTEREST", var amount]       => decimal.Parse(amount),
-                [_, "FEE", var fee]               => -decimal.Parse(fee),
-                _                                 => throw new InvalidOperationException($"Record {transaction} is not in the expected format!"),
-            };
-            Console.WriteLine($"Record: {transaction}, New balance: {balance:C}");
+            Console.WriteLine($"The first element of a three-item list is {first}.");
         }
-        // </DataRecordExample>
+        // Output:
+        // The first element of a three-item list is 1.
+        // </MatchAnyElement>
+    }
 
-        IEnumerable<string[]> ReadRecords()
+    private static void UseSlice()
+    {
+        // <UseSlice>
+        Console.WriteLine(new[] { 1, 2, 3, 4, 5 } is [> 0, > 0, ..]);  // True
+        Console.WriteLine(new[] { 1, 1 } is [_, _, ..]);  // True
+        Console.WriteLine(new[] { 0, 1, 2, 3, 4 } is [> 0, > 0, ..]);  // False
+        Console.WriteLine(new[] { 1 } is [1, 2, ..]);  // False
+
+        Console.WriteLine(new[] { 1, 2, 3, 4 } is [.., > 0, > 0]);  // True
+        Console.WriteLine(new[] { 2, 4 } is [.., > 0, 2, 4]);  // False
+        Console.WriteLine(new[] { 2, 4 } is [.., 2, 4]);  // True
+
+        Console.WriteLine(new[] { 1, 2, 3, 4 } is [>= 0, .., 2 or 4]);  // True
+        Console.WriteLine(new[] { 1, 0, 0, 1 } is [1, 0, .., 0, 1]);  // True
+        Console.WriteLine(new[] { 1, 0, 1 } is [1, 0, .., 0, 1]);  // False
+        // </UseSlice>
+    }
+
+    private static void SliceWithPattern()
+    {
+        // <SliceWithPattern>
+        void MatchMessage(string message)
         {
-            foreach (var record in records)
-                yield return record.Split(',', StringSplitOptions.TrimEntries); ;
+            var result = message is ['a' or 'A', .. var s, 'a' or 'A']
+                ? $"Message {message} matches; inner part is {s}."
+                : $"Message {message} doesn't match.";
+            Console.WriteLine(result);
         }
+
+        MatchMessage("aBBA");  // output: Message aBBA matches; inner part is BB.
+        MatchMessage("apron");  // output: Message apron doesn't match.
+
+        void Validate(int[] numbers)
+        {
+            var result = numbers is [< 0, .. { Length: 2 or 4 }, > 0] ? "valid" : "not valid";
+            Console.WriteLine(result);
+        }
+
+        Validate(new[] { -1, 0, 1 });  // output: not valid
+        Validate(new[] { -1, 0, 0, 1 });  // output: valid
+        // </SliceWithPattern>
     }
 }

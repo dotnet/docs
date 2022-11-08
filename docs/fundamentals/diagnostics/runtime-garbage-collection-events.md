@@ -199,7 +199,7 @@ The following table shows the event information:
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`GCSuspendEEBegin_V1`|8|Start of suspension of the execution engine for garbage collection.|
+|`GCSuspendEEBegin_V1`|9|Start of suspension of the execution engine for garbage collection.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

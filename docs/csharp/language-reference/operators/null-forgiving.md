@@ -49,4 +49,4 @@ For more information, see [The null-forgiving operator](~/_csharplang/proposals/
 - [Remove unnecessary suppression operator (style rule IDE0080)](../../../fundamentals/code-analysis/style-rules/ide0080.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Tutorial: Design with nullable reference types](../../whats-new/tutorials/nullable-reference-types.md)
+- [Tutorial: Design with nullable reference types](../../tutorials/nullable-reference-types.md)

@@ -145,6 +145,12 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
+  - name: .NET 7
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-7.md
+    - name: Breaking changes
+      href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 6
     items:
     - name: What's new
@@ -375,6 +381,8 @@ items:
       href: ../core/tools/dotnet-watch.md
     - name: dotnet workload
       items:
+      - name: dotnet workload
+        href: ../core/tools/dotnet-workload.md
       - name: dotnet workload install
         href: ../core/tools/dotnet-workload-install.md
       - name: dotnet workload list
@@ -499,8 +507,12 @@ items:
         href: syslib-diagnostics/syslib0042.md
       - name: SYSLIB0043
         href: syslib-diagnostics/syslib0043.md
+      - name: SYSLIB0044
+        href: syslib-diagnostics/syslib0044.md
       - name: SYSLIB0045
         href: syslib-diagnostics/syslib0045.md
+      - name: SYSLIB0046
+        href: syslib-diagnostics/syslib0046.md
       - name: SYSLIB0047
         href: syslib-diagnostics/syslib0047.md
     - name: Source-generated code
@@ -568,6 +580,56 @@ items:
         href: syslib-diagnostics/syslib1037.md
       - name: SYSLIB1038
         href: syslib-diagnostics/syslib1038.md
+      - name: SYSLIB1040
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1041
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1042
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1043
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1044
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1045
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1050
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1051
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1052
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1053
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1054
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1055
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1056
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1057
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1058
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1059
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1060
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1061
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1062
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1070
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1071
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1072
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1073
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1074
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1075
+        href: syslib-diagnostics/syslib1070-1089.md
   - name: Integrated development environments (IDEs)
     items:
     - name: Visual Studio
@@ -958,6 +1020,10 @@ items:
             href: code-analysis/quality-rules/ca1418.md
           - name: CA1419
             href: code-analysis/quality-rules/ca1419.md
+          - name: CA1420
+            href: code-analysis/quality-rules/ca1420.md
+          - name: CA1422
+            href: code-analysis/quality-rules/ca1422.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -1147,6 +1213,8 @@ items:
             href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
+          - name: CA2019
+            href: code-analysis/quality-rules/ca2019.md
           - name: CA2020
             href: code-analysis/quality-rules/ca2020.md
         - name: Security rules
@@ -1431,6 +1499,8 @@ items:
             href: code-analysis/quality-rules/ca2257.md
           - name: CA2258
             href: code-analysis/quality-rules/ca2258.md
+          - name: CA2259
+            href: code-analysis/quality-rules/ca2259.md
           - name: CA2260
             href: code-analysis/quality-rules/ca2260.md
       - name: Code style rules
@@ -2588,6 +2658,8 @@ items:
       href: networking/network-info.md
     - name: IPv6 overview
       href: networking/ipv6-overview.md
+    - name: Telemetry
+      href: networking/networking-telemetry.md
     - name: HTTP
       items:
       - name: HTTP support
@@ -2609,14 +2681,14 @@ items:
       items:
       - name: Sockets support
         href: networking/sockets/sockets-overview.md
-      - name: Use Sockets to send and receive data
+      - name: Use Sockets to send and receive data over TCP
         href: networking/sockets/socket-services.md
-    - name: TCP
-      items:
-      - name: TCP support
-        href: networking/tcp/tcp-overview.md
       - name: Use TcpClient and TcpListener
-        href: networking/tcp/tcp-services.md
+        href: networking/sockets/tcp-classes.md
+    - name: WebSockets
+      items:
+      - name: WebSockets support
+        href: networking/websockets.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library
@@ -2968,6 +3040,8 @@ items:
         href: ../standard/native-interop/customize-parameter-marshalling.md
       - name: Source generation
         href: ../standard/native-interop/custom-marshalling-source-generation.md
+      - name: Tutorial - Use custom marshallers in source generation
+        href: ../standard/native-interop/tutorial-custom-marshaller.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Expose .NET components to COM
@@ -3121,6 +3195,7 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+        displayName: upgrade assistant
       - name: Windows Communication Foundation
         href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation

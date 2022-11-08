@@ -1,9 +1,8 @@
 ---
 title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
-ms.date: 04/14/2022
+ms.date: 10/21/2022
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -17,24 +16,19 @@ ms.topic: how-to
 
 # How to use source generation in System.Text.Json
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-This article shows how to use the source generation features of [System.Text.Json](overview.md).
-:::zone-end
-
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-For information about how to use source generation in System.Text.Json, see [the .NET 6 version of this article](source-generation.md?pivots=dotnet-6-0).
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
+Source generation in System.Text.Json is available in .NET 6 and later versions. Source generation consists of two modes: *metadata collection* and *serialization optimization*.
 
 ## Use source generation defaults
 
 To use source generation with all defaults (both modes, default options):
 
-* Create a partial class that derives from <xref:System.Text.Json.Serialization.JsonSerializerContext>.
-* Specify the type to serialize or deserialize by applying <xref:System.Text.Json.Serialization.JsonSerializableAttribute> to the context class.
-* Call a <xref:System.Text.Json.JsonSerializer> method that takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> instance. An alternative is to call a <xref:System.Text.Json.JsonSerializer> method that takes a <xref:System.Text.Json.Serialization.JsonSerializerContext> instance.
+1. Create a partial class that derives from <xref:System.Text.Json.Serialization.JsonSerializerContext>.
+1. Specify the type to serialize or deserialize by applying <xref:System.Text.Json.Serialization.JsonSerializableAttribute> to the context class.
+1. Call a <xref:System.Text.Json.JsonSerializer> method that either:
+
+   - Takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> instance, or
+   - Takes a <xref:System.Text.Json.Serialization.JsonSerializerContext> instance, or
+   - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type (.NET 7 and later only).
 
 By default, both source generation modes are used if you don't specify one. For information about how to specify the mode to use, see [Specify source generation mode](#specify-source-generation-mode) later in this article.
 
@@ -62,19 +56,35 @@ To specify source generation for a collection, use `[JsonSerializable]` with the
 
 ### `JsonSerializer` methods that use source generation
 
-The following examples call methods that serialize:
+In the following examples, the static `Default` property of the context type provides an instance of the context type with default options. The context instance provides a `WeatherForecast` property that returns a `JsonTypeInfo<WeatherForecast>` instance. You can specify a different name for this property by using the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.TypeInfoPropertyName> property of the `[JsonSerializable]` attribute.
+
+#### Serialization examples
+
+Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601>:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithTypeInfo":::
 
+Using <xref:System.Text.Json.Serialization.JsonSerializerContext>:
+
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithContext":::
 
-The following examples call methods that deserialize:
+Using <xref:System.Text.Json.JsonSerializerOptions>:
+
+:::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithOptions":::
+
+#### Deserialization examples
+
+Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601>:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithTypeInfo":::
 
+Using <xref:System.Text.Json.Serialization.JsonSerializerContext>:
+
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithContext":::
 
-In the preceding examples, the static `Default` property of the context type provides an instance of the context type with default options. The context instance provides a `WeatherForecast` property that returns a `JsonTypeInfo<WeatherForecast>` instance. You can specify a different name for this property by using the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.TypeInfoPropertyName> property of the `[JsonSerializable]` attribute.
+Using <xref:System.Text.Json.JsonSerializerOptions>:
+
+:::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithOptions":::
 
 ### Complete program example
 
@@ -189,8 +199,6 @@ Here are the preceding examples in a complete program:
   ```csharp
   services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.AddContext<MyJsonContext>());
   ```
-
-:::zone-end
 
 ## See also
 

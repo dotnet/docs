@@ -17,11 +17,11 @@ Install the following prerequisites:
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop)
 
-In addition these prerequisites, it's recommended to be familiar with [Worker Services in .NET](../extensions/workers.md).
+In addition to these prerequisites, it's recommended that you're familiar with [Worker Services in .NET](../extensions/workers.md).
 
 ## Create .NET app
 
-You need a .NET app to containerize, so you'll start by creating a new app from a template. Open your terminal, create a working folder (*sample-directory*) if you haven't already, and change directories so that you're in it. In the working folder, run the following command to create a new project in a subdirectory named *Worker*:
+You need a .NET app to containerize, so start by creating a new app from a template. Open your terminal, create a working folder (*sample-directory*) if you haven't already, and change directories so that you're in it. In the working folder, run the following command to create a new project in a subdirectory named *Worker*:
 
 ```dotnetcli
 dotnet new worker -o Worker -n DotNet.ContainerImage
@@ -45,7 +45,7 @@ Your folder tree will look like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that when ran will log a message every second. Change directories and navigate into the *Worker- folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that, when run, logs a message every second. From your terminal session, change directories and navigate into the *Worker- folder. Use the `dotnet run` command to start the app.
 
 ```dotnetcli
 dotnet run
@@ -73,7 +73,7 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Add NuGet package
 
-The .NET 7 SDK will eventually be capable of publishing .NET apps as containers without the use of the [Microsoft.NET.Build.Containers NuGet package](https://libraries.io/nuget/Microsoft.NET.Build.Containers). Until that time, this package is required. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+The [Microsoft.NET.Build.Containers NuGet package](https://libraries.io/nuget/Microsoft.NET.Build.Containers) package is currently required to publish an app as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers
@@ -95,7 +95,7 @@ To publish the .NET app as a container, use the following `dotnet publish` comma
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
 ```
 
-The preceding .NET CLI command, publishes the app as a container:
+The preceding .NET CLI command publishes the app as a container:
 
 - Targeting Linux as the OS (`--os linux`).
 - Specifying an x64 architecture (`--arch x64`).
@@ -112,7 +112,7 @@ The preceding .NET CLI command, publishes the app as a container:
 > [!TIP]
 > Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
-The command will output similar to the following:
+The command will produce output similar to the following:
 
 ```dotnetcli
 Determining projects to restore...
@@ -129,22 +129,22 @@ This command compiles your worker app to the *publish- folder and pushes the con
 You can control many aspects of the generated container through MSBuild properties. In general, if you could use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
 > [!NOTE]
-> The only exception to this are `RUN` commands, due to the way containers are built, those cannot be emulated. If you need this functionality, you will need to use a _Dockerfile_ to build your container images.
+> The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
 
 > [!IMPORTANT]
 > Currently, only Linux containers are supported.
 
 ### `ContainerBaseImage`
 
-The container base image property controls the image used as the basis for your image. By default, we will infer the following values for you based on the properties of your project:
+The container base image property controls the image used as the basis for your image. By default, the following values are inferred based on the properties of your project:
 
 - If your project is self-contained, the `mcr.microsoft.com/dotnet/runtime-deps` image is used as the base image.
 - If your project is an ASP.NET Core project, the `mcr.microsoft.com/dotnet/aspnet` image is used as the base image.
 - Otherwise the `mcr.microsoft.com/dotnet/runtime` image is used as the base image.
 
-The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `.net6.0` will result in the `6.0` tag of the inferred base image, a `.net7.0-linux` project will use the `7.0` tag, and so on.
+The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `.net6.0` will result in the `6.0` tag of the inferred base image, and a `.net7.0-linux` project will use the `7.0` tag.
 
-If you set a value here, you should set the fully-qualified name of the image to use as the base, including any tag you prefer:
+If you set a value here, you should set the fully qualified name of the image to use as the base, including any tag you prefer:
 
 ```xml
 <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:6.0</ContainerBaseImage>
@@ -152,7 +152,7 @@ If you set a value here, you should set the fully-qualified name of the image to
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly-created image will be pushed to. Be default, we push to the local Docker daemon (`docker://`), but for this release you can specify any _unauthenticated_ registry. For example, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default, it's pushed to the local Docker daemon (`docker://`), but for this release you can specify any _unauthenticated_ registry. For example, consider the following XML example:
 
 ```xml
 <ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>
@@ -169,9 +169,9 @@ The container image name controls the name of the image itself, e.g `dotnet/runt
 <ContainerImageName>my-app</ContainerImageName>
 ```
 
-Image names can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number, any other characters will result in an error being thrown.
+Image names can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
 
-### `ContainerImageTag(s)`
+### `ContainerImageTags`
 
 The container image tag property controls the tags that are generated for the image. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even different configurations. By default, the `Version` of the project is used as the tag value. To override the default, specify either of the following:
 
@@ -227,16 +227,16 @@ The `ContainerLabel` node has two attributes:
 <ItemGroup>
 ```
 
-For more information, see [default container labels](#default-container-labels) for a list of labels that are created by default.
+For a list of labels that are created by default, see [default container labels](#default-container-labels).
 
 ### `ContainerEnvironmentVariable`
 
-The container environment variable node allows you to add environment variables to the container. Environment variables will be accessible to the application running in the container immediately, and are often used to change the runtime behavior of the running application.
+The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the application running in the container immediately, and are often used to change the run-time behavior of the running application.
 
 The `ContainerEnvironmentVariable` node has two attributes:
 
-- `Include`:  The name of the environment variable.
-- `Value`: The value of the environment variable
+- `Include`: The name of the environment variable.
+- `Value`: The value of the environment variable.
 
 ```xml
 <ItemGroup>
@@ -248,11 +248,11 @@ For more information, see [.NET environment variables](../tools/dotnet-environme
 
 ### `ContainerEntrypoint`
 
-The container entry point can be used to customize the `ENTRYPOINT` of the container, which is the executable that is called when the container is started. By default, for builds that create an app host it is set as the `ContainerEntrypoint`. For builds that don't create an executable, the `dotnet path/to/application.dll` is used as the `ContainerEntrypoint`.
+The container entry point can be used to customize the `ENTRYPOINT` of the container, which is the executable that is called when the container is started. By default, for builds that create an app host, it's set as the `ContainerEntrypoint`. For builds that don't create an executable, the `dotnet path/to/application.dll` is used as the `ContainerEntrypoint`.
 
 The `ContainerEntrypoint` node has a single attribute:
 
-- `Include`: The command, option, or argument to use in the entrypoint command.
+- `Include`: The command, option, or argument to use in the `ContainerEntrypoint` command.
 
 For example, consider the following sample .NET project item group:
 
@@ -327,6 +327,6 @@ docker image rm 25aeb97a2e21
 
 - [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk)
 - [Tutorial: Containerize a .NET app](build-container.md)
-- [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
-- [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)
-- [Explore the Container Tools for Visual Studio](/visualstudio/containers/overview)
+- [Review the Azure services that support containers](https://azure.microsoft.com/overview/containers/)
+- [Read about Dockerfile commands](https://docs.docker.com/engine/reference/builder/)
+- [Explore the container tools in Visual Studio](/visualstudio/containers/overview)

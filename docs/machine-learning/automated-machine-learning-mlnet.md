@@ -35,7 +35,7 @@ Whether you're just getting started with machine learning or you're an experienc
   - **Eci Cost Frugal Tuner** - Implementation of Cost Frugal Tuner for hierarchical search spaces. Default tuner used by AutoML.
   - **SMAC** - Tuner that uses random forests to apply Bayesian optimization.
   - **Grid Search** - Tuner that works best for small search spaces.
-- **Random Search**
+  - **Random Search**
 - **Sweepable Estimator** - An ML.NET estimator that contains a search space.
 - **Sweepable Pipeline** - An ML.NET pipeline that contains one or more Sweepable Estimators.
 - **Trial Runner** - AutoML component that uses sweepable pipelines and trial settings to generate trial results from model training and evaluation.  

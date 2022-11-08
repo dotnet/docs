@@ -63,11 +63,11 @@ When first adding a machine learning model to the solution it will prompt you to
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-scenarios-2-0.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. For this sample, the task is text classification. In the *Scenario* step of the Model Builder extension, select the **Text classification** scenario.
+For this sample, the task is text classification. In the *Scenario* step of the Model Builder extension, select the **Text classification** scenario.
 
 ## Select an environment
 

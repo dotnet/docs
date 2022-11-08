@@ -95,9 +95,13 @@ SweepablePipeline pipeline =
         .Append(ctx.Auto().Regression(labelColumnName:columnInference.ColumnInformation.LabelColumnName));
 ```
 
-A `SweepablePipeline` is a pipeline containing a colelction of `SweepableEstimators`. A `SweepableEstimator` is an ML.NET <xref:Microsoft.ML.AutoML.Estimator> with a `SearchSpace`.
+A `SweepablePipeline` is a pipeline containing a collection of `SweepableEstimators`. A `SweepableEstimator` is an ML.NET <xref:Microsoft.ML.AutoML.Estimator> with a `SearchSpace`.
 
-The `Featurizer` is a convenience API which builds a `SweepablePipeline` of data processing sweepable estimators based on the column information you provide. Instead of building a pipeline from scratch, `Featurizer` automates the data preprocessing step.
+The `Featurizer` is a convenience API which builds a sweepable pipeline of data processing sweepable estimators based on the column information you provide. Instead of building a pipeline from scratch, `Featurizer` automates the data preprocessing step. For more information on supported transforms by ML.NET, see the [data transformations guide](../resources/transforms.md).
+
+The resulting output is a single column containing a numerical feature vector representing the transformed data for each of the columns. This feature vector is then used as input for the algorithms used to train a machine learning model.
+
+If you want finer control over your data preprocessing, you can create a pipeline with each of the individual preprocessing steps. For more information, see the [prepare data for building a model guide](prepare-data-ml-net.md).
 
 > [!TIP]
 > Use `Featurizer` with <xref:Microsoft.ML.AutoML.ColumnInferenceResults> to maximize the utility of AutoML.
@@ -134,7 +138,7 @@ In this example, you:
 
 - Set the sweepable pipeline to run during the experiment using `SetPipeline`.
 - Choose `RSquared` as the metric to optimize during training using `SetRegressionMetric`. For more information on evaluation metrics, see the [evaluate your ML.NET model with metrics](../resources/metrics.md) guide.
-- Set 60 seconds as the amount of time you want to train for using `SetTrainingTimeInSeconds`.
+- Set 60 seconds as the amount of time you want to train for using `SetTrainingTimeInSeconds`. A good heuristic to determing how long to train for is the size of your data. Typically, larger datasets require longer training time. For additional guidance, see [](../automate-training-with-model-builder.md)
 - Provide the training and validation datasets to use using `SetDataset`.
 
 Once your experiment is defined, you'll want some way to track its progress. The quickest way to track progress is by defining the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>.
@@ -495,7 +499,7 @@ Use the following methods to set your tuner:
 
 - **SMAC** - `SetSmacTuner`
 - **Grid Search** - `SetGridSearchTuner`
-- **Random Search** - ``SetRandomSearchTuner`
+- **Random Search** - `SetRandomSearchTuner`
 - **Cost Frugal** - `SetCostFrugalTuner`
 - **Eci Cost Frugal** - `SetEciCostFrugalTuner`
 

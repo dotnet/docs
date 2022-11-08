@@ -17,7 +17,7 @@ Starting in .NET 7, the [affected methods](#affected-apis) throw a <xref:System.
 
 ## Version introduced
 
-.NET 7 Preview 7
+.NET 7
 
 ## Type of breaking change
 

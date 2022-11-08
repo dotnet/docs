@@ -161,7 +161,7 @@ For more information about serializing and deserializing with `System.Text.Json`
 
 ASP.NET Core includes improvements in minimal APIs, ahead-of-time (AOT) compilation for Blazor WebAssembly apps, and single-page apps. In addition, Blazor components can now be rendered from JavaScript and integrated with existing JavaScript based apps. For more information, see [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0).
 
-### OpenTelemetry
+## OpenTelemetry
 
 .NET 6 brings improved support for [OpenTelemetry](https://opentelemetry.io/), which is a collection of tools, APIs, and SDKs that help you analyze your software's performance and behavior. APIs in the <xref:System.Diagnostics.Metrics?displayProperty=fullName> namespace implement the [OpenTelemetry Metrics API specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/api.md). For example, there are four instrument classes to support different metrics scenarios. The instrument classes are:
 

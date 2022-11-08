@@ -11,7 +11,7 @@ Existing applications should use the new <xref:Microsoft.AspNetCore.Components.W
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Previous behavior
 

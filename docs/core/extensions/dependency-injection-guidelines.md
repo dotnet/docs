@@ -3,7 +3,7 @@ title: Dependency injection guidelines
 description: Learn various dependency injection guidelines and best practices for .NET application development.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 11/03/2022
 ms.topic: guide
 ---
 
@@ -138,7 +138,6 @@ The following third-party containers can be used with ASP.NET Core apps:
 - [LightInject](https://github.com/seesharper/LightInject.Microsoft.DependencyInjection)
 - [Lamar](https://jasperfx.github.io/lamar/)
 - [Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection)
-- [Unity](https://www.nuget.org/packages/Unity.Microsoft.DependencyInjection)
 - [Simple Injector](https://docs.simpleinjector.org/en/latest/aspnetintegration.html)
 
 ## Thread safety

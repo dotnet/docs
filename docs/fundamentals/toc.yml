@@ -501,8 +501,12 @@ items:
         href: syslib-diagnostics/syslib0042.md
       - name: SYSLIB0043
         href: syslib-diagnostics/syslib0043.md
+      - name: SYSLIB0044
+        href: syslib-diagnostics/syslib0044.md
       - name: SYSLIB0045
         href: syslib-diagnostics/syslib0045.md
+      - name: SYSLIB0046
+        href: syslib-diagnostics/syslib0046.md
       - name: SYSLIB0047
         href: syslib-diagnostics/syslib0047.md
     - name: Source-generated code
@@ -960,6 +964,10 @@ items:
             href: code-analysis/quality-rules/ca1418.md
           - name: CA1419
             href: code-analysis/quality-rules/ca1419.md
+          - name: CA1420
+            href: code-analysis/quality-rules/ca1420.md
+          - name: CA1422
+            href: code-analysis/quality-rules/ca1422.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -1149,6 +1157,8 @@ items:
             href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
+          - name: CA2019
+            href: code-analysis/quality-rules/ca2019.md
           - name: CA2020
             href: code-analysis/quality-rules/ca2020.md
         - name: Security rules
@@ -1433,6 +1443,8 @@ items:
             href: code-analysis/quality-rules/ca2257.md
           - name: CA2258
             href: code-analysis/quality-rules/ca2258.md
+          - name: CA2259
+            href: code-analysis/quality-rules/ca2259.md
           - name: CA2260
             href: code-analysis/quality-rules/ca2260.md
       - name: Code style rules
@@ -2590,6 +2602,8 @@ items:
       href: networking/network-info.md
     - name: IPv6 overview
       href: networking/ipv6-overview.md
+    - name: Telemetry
+      href: networking/networking-telemetry.md
     - name: HTTP
       items:
       - name: HTTP support
@@ -2615,6 +2629,10 @@ items:
         href: networking/sockets/socket-services.md
       - name: Use TcpClient and TcpListener
         href: networking/sockets/tcp-classes.md
+    - name: WebSockets
+      items:
+      - name: WebSockets support
+        href: networking/websockets.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library

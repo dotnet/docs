@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 7 obsoletions with non-default diagnostic IDs"
 titleSuffix: ""
 description: Learn about the .NET 7 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 04/08/2022
+ms.date: 11/07/2022
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 7)
 
@@ -24,6 +24,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0041](../../../../fundamentals/syslib-diagnostics/syslib0041.md) | The default hash algorithm and iteration counts in <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructors are outdated and insecure. Use a constructor that accepts the hash algorithm and the number of iterations. | Warning |
 | [SYSLIB0042](../../../../fundamentals/syslib-diagnostics/syslib0042.md) | `ToXmlString` and `FromXmlString` have no implementation for elliptic curve cryptography (ECC) types, and are obsolete. Use a standard import and export format such as `ExportSubjectPublicKeyInfo` or `ImportSubjectPublicKeyInfo` for public keys, and `ExportPkcs8PrivateKey` or `ImportPkcs8PrivateKey` for private keys. | Warning |
 | [SYSLIB0043](../../../../fundamentals/syslib-diagnostics/syslib0043.md) | <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> and the associated constructor do not have a consistent and interoperable implementation on all platforms. Use <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ExportSubjectPublicKeyInfo?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0044](../../../../fundamentals/syslib-diagnostics/syslib0044.md) | <xref:System.Reflection.AssemblyName.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.AssemblyName.EscapedCodeBase?displayProperty=nameWithType> are obsolete. | Warning |
 | [SYSLIB0045](../../../../fundamentals/syslib-diagnostics/syslib0045.md) | Cryptographic factory methods accepting an algorithm name are obsolete. Use the parameterless `Create` factory method on the algorithm type instead. | Warning |
 | [SYSLIB0047](../../../../fundamentals/syslib-diagnostics/syslib0047.md) | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead to forbid resolution of external XML resources. | Warning |
 

@@ -7,7 +7,7 @@ ms.date: 01/13/2021
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-We should start by saying that if you create your custom event bus based on [RabbitMQ](https://www.rabbitmq.com/) running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus as described in the [Additional resources section below](/dotnet/architecture/microservices/multi-container-microservice-net-applications/rabbitmq-event-bus-development-test-environment#additional-resources). A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
+We should start by saying that if you create your custom event bus based on [RabbitMQ](https://www.rabbitmq.com/) running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus as described in the [Additional resources section below](rabbitmq-event-bus-development-test-environment.md#additional-resources). A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
 One of the event bus custom implementations in eShopOnContainers is basically a library using the RabbitMQ API. (There's another implementation based on Azure Service Bus.)
 

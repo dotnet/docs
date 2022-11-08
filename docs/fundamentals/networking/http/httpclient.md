@@ -261,12 +261,6 @@ If you need to have the framework throw the <xref:System.Net.Http.HttpRequestExc
 
 This code will throw an `HttpRequestException` if the response status code is not within the 200-299 range.
 
-### HTTP response errors
-
-The HTTP response object (<xref:System.Net.Http.HttpResponseMessage>), when not successful, contains information about the error. The <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property can be used to evaluate the error code.
-
-For more information, see [Client error status codes](http-overview.md#client-error-status-codes) and [Server error status codes](http-overview.md#server-error-status-codes). In addition to handling errors in the response, you can also handle errors in the request. For more information, see [HTTP error handling](#http-error-handling).
-
 ### HTTP valid content responses
 
 With a valid response, you can access the response body using the <xref:System.Net.Http.HttpResponseMessage.Content> property. The body is available as an <xref:System.Net.Http.HttpContent> instance, which you can use to access the body as a stream, byte array, or string:

@@ -387,7 +387,7 @@ When used with an option like `RegexOptions.NonBacktracking` for which the sourc
 
 ## See also
 
-- [SYSLIB warnings for regex source generation](../../fundamentals/syslib-diagnostics/syslib1040-1049.md)
+- [SYSLIB diagnostics for regex source generation](../../fundamentals/syslib-diagnostics/syslib1040-1049.md)
 - [.NET regular expressions](regular-expressions.md)
 - [Backtracking in regular expressions](backtracking-in-regular-expressions.md)
 - [Compilation and reuse in regular expressions](compilation-and-reuse-in-regular-expressions.md)

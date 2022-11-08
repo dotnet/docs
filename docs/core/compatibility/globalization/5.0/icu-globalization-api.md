@@ -42,7 +42,7 @@ For more information, see [Behavior changes when comparing strings on .NET 5+](.
 
 ### Currency symbol
 
-Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country.
+Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country or region.
 
 ```csharp
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");

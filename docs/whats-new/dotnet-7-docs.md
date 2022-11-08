@@ -81,7 +81,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - Add DisableTransitiveProjectReferences
   - Cleanup trimming options and document TrimMode=full,partial
   - Document new PublishRelease and PackRelease properties
-- [How to enable tab completion for the .NET CLI](../core/tools/enable-tab-autocomplete.md) - Merge .NET 7 release branch into main
+- [How to enable tab completion for the .NET CLI](../core/tools/enable-tab-autocomplete.md)
 - [Manage package dependencies in .NET applications](../core/tools/dependencies.md) - Add three new properties
 - [.NET default templates for dotnet new](../core/tools/dotnet-new-sdk-templates.md) - Added the two new Blazor empty templates
 - [.NET SDK and .NET CLI telemetry](../core/tools/telemetry.md)

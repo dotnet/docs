@@ -46,7 +46,7 @@ In addition, if you attempt to parse a <xref:System.Numerics.BigInteger> with an
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Type of breaking change
 

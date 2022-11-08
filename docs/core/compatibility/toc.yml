@@ -85,6 +85,10 @@ items:
           href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Configuration
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
       - name: Cryptography
         items:
         - name: Dynamic X509ChainPolicy verification time
@@ -829,6 +833,12 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Configuration
+      items:
+      - name: .NET 7
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
     - name: Containers
       items:
       - name: .NET 6

@@ -5,7 +5,7 @@ ms.date: 09/12/2022
 ---
 # Polymorphic serialization for object types
 
-Using default configuration, <xref:System.Text.Json?displayProperty=fullName> serializes values of type `object` [using polymorphism](../../../../standard/serialization/system-text-json/polymorphism.md). This behavior becomes less consistent if you register a custom converter for `object`. `System.Text.Json` has historically hardcoded polymorphism for root-level object values but not for nested object values. Starting with .NET 7 RC 1, this behavior has changed so that custom converters never use polymorphism.
+Using default configuration, <xref:System.Text.Json?displayProperty=fullName> serializes values of type `object` [using polymorphism](../../../../standard/serialization/system-text-json/polymorphism.md). This behavior becomes less consistent if you register a custom converter for `object`. `System.Text.Json` has historically hardcoded polymorphism for root-level object values but not for nested object values. Starting with .NET 7, this behavior has changed so that custom converters never use polymorphism.
 
 ## Previous behavior
 
@@ -47,7 +47,7 @@ JsonSerializer.Serialize<object>(0, options);
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Type of breaking change
 

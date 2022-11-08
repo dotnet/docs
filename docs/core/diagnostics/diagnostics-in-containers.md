@@ -37,7 +37,7 @@ The [`PerfCollect`](./trace-perfcollect-lttng.md) script is useful for collectin
   - `DOTNET_EnableEventLog=1`
 
 > [!NOTE]
-> When executing the app with .NET 7, please set `DOTNET_EnableWriteXorExecute=0` in addition to the above environment variables.
+> When executing the app with .NET 7, you must also set `DOTNET_EnableWriteXorExecute=0` in addition to the preceding environment variables.
 
   [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 

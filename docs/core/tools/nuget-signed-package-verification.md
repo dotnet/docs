@@ -6,7 +6,7 @@ ms.date: 11/07/2022
 ---
 # NuGet signed package verification
 
-NuGet package signatures are based on X.509 certificates, and a prequisite for signed package verification is a certificate root store that is valid for both code signing and timestamping.
+NuGet package signatures are based on X.509 certificates, and a prerequisite for signed package verification is a certificate root store that's valid for both code signing and timestamping.
 
 Starting with .NET 7, NuGet uses fallback certificate bundles included in the .NET SDK to verify signed packages where a suitable system root store is not available.  These bundles are sourced from the [Microsoft Trusted Root Program](https://aka.ms/RootCert) and contain the same code signing and timestamping certificates as the root store on Windows.
 

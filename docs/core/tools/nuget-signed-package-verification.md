@@ -12,7 +12,11 @@ Starting with .NET 7, NuGet uses fallback certificate bundles included in the .N
 
 Some NuGet commands, such as `sign` and `verify`, always perform signed package verification.
 
-The following sections detail when implicit verification during restore operations is enabled by default, how to enable it, and what root stores are used.
+The following sections for each operating system describe:
+
+- When implicit verification during restore operations is enabled by default.
+- How to enable it.
+- What root stores are used.
 
 ## Windows
 

@@ -6,7 +6,7 @@ ms.date: 10/31/2022
 
 # What's new in Orleans 7.0
 
-Existing applications which use reminders, streams, and/or grain persistence cannot be easily migrated due to changes in how Orleans identifies grains and streams. We plan to incrementally offer a migration path for these applications.
+Existing applications using reminders, streams, and/or grain persistence cannot be easily migrated due to changes in how Orleans identifies grains and streams. We plan to incrementally offer a migration path for these applications.
 
 Applications running previous versions of Orleans cannot be smoothly upgraded via a rolling upgrade to Orleans 7.0. Therefore, a different upgrade strategy must be used, such as deploying a new cluster and decommissioning the previous cluster. Orleans 7.0 changes the wire protocol in an incompatible fashion, meaning that clusters cannot contain a mix of Orleans 7.0 hosts and hosts running previous versions of Orleans.
 
@@ -14,7 +14,7 @@ We have avoided such breaking changes for many years, even across major releases
 
 ## Packaging changes
 
-If you are upgrading a project to Orleans 7.0, you will need to preform the following actions:
+If you are upgrading a project to Orleans 7.0, you will need to perform the following actions:
 
 - All clients should reference `Microsoft.Orleans.Client`
 - All silos (servers) should reference `Microsoft.Orleans.Server`
@@ -122,11 +122,11 @@ The new serializer requires that you are explicit about which types and members 
 
 ![orleans_analyzer](https://user-images.githubusercontent.com/203839/154169861-7c5547d0-e489-4af9-8aba-1e2f71c50211.gif)
 
-By default, Orleans will serialize your type by encoding its full name. You can override this by adding an `[Alias("MyType")]` attribute. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Note that type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example `MyType<T, U>` could have the alias ``[Alias("mytype`2")]``.
+By default, Orleans will serialize your type by encoding its full name. You can override this by adding an `[Alias("MyType")]` attribute. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Note that type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyType<T, U>` could have the alias `[Alias("mytype`2")]`.
 
 ### Serializing `record` types
 
-Members defined in a record's primary constructor have implicit ids by default, in other words Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type do not share identities with the primary constructor parameters. This means that you can and should start your members
+Members defined in a record's primary constructor have implicit ids by default, in other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
 ### Serialization best practices
 
@@ -157,7 +157,7 @@ public class MySubClass : MyBaseClass
 
 #### Surrogates for serializing foreign types
 
-Often times, you will want to pass types between grains which you do not have full control over. In these cases, it may be impractical to convert to and from some custom-defined type in your application code manually. Orleans offers a solution for these situations in the form of surrogate types. Surrogates are serialized in place of their target type and have functionality to convert to and from the target type. Here is an example of a foreign type and a corresponding surrogate and converter:
+Sometimes you may need to pass types between grains which you do not have full control over. In these cases, it may be impractical to convert to and from some custom-defined type in your application code manually. Orleans offers a solution for these situations in the form of surrogate types. Surrogates are serialized in place of their target type and have functionality to convert to and from the target type. Here is an example of a foreign type and a corresponding surrogate and converter:
 
 ``` csharp
 // This is the foreign type, which you do not have control over.

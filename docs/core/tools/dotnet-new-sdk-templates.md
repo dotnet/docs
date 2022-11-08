@@ -150,7 +150,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 7 SDK is `net7.0`. Available since .NET Core 3.1 SDK.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 

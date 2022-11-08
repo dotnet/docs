@@ -8,6 +8,19 @@ ms.topic: how-to
 
 # How to use the ML.NET Automated Machine Learning (AutoML) API
 
+## Installation
+
+To use the AutoML API, install the [`Microsoft.ML.AutoML`](https://www.nuget.org/packages/Microsoft.ML.AutoML) NuGet package in the .NET project you want to reference it in.
+
+> [!NOTE]
+> This guide uses version 0.20.0 and later of the `Microsoft.ML.AutoML` NuGet package. Although samples and code from earlier versions still work, it is highly recommended you use the APIs introduced in this version for new projects.
+
+For more information on installing NuGet packages, see the following guides:
+
+- [Install and use a NuGet package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+- [Install and use a package in Visual Studio for Mac](nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
+- [Install and use a package (dotnet CLI)](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
+
 ## Quick Start
 
 AutoML provides several defaults for quickly training models. In this section you will learn how to:
@@ -30,7 +43,9 @@ CMT|1|1|637|1.4|CRD|8.5
 
 ### Load data
 
-To load your data, use the `InferColumn` method.
+Start by inizializing your <xref:Microsoft.ML.MLContext>. `MLContext` is a starting point for all ML.NET operations. Initializing mlContext creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
+
+Then, to load your data, use the <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> method.
 
 ```csharp
 // Initialize MLContext
@@ -41,7 +56,19 @@ ColumnInferenceResults columnInference =
     ctx.Auto().InferColumns("taxi-fare.csv", labelColumnName: "fare_amount", groupColumns:false);
 ```
 
-Then, use the `TextLoaderOptions` defined by the `ColumnInferenceResults` to create a `TextLoader` to load your data into an `IDataView`.
+<xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> loads a few rows from the dataset. It then inspects the data and tries to guess or infer the data type for each of the columns based on their content.
+
+The default behavior is to group columns of the same type into feature vectors or arrays containing the elements for each of the grouped columns. Setting `groupColumns` to `false` overrides that default behavior and only performs column inference without grouping columns. By keeping columns separate it allows you to apply different data transformations when preprocessing the data at the individual column level rather than the grouping. 
+
+The result of <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> a <xref:Microsoft.ML.AutoML.ColumnInferenceResults> object which contains the options needed to create a <xref:Microsoft.ML.Data.TextLoader> as well as column information.
+
+For the sample dataset in *taxi-fare.csv*, column information might look like the following:
+
+- **LabelColumnName**: fare_amount
+- **CategoricalColumnNames**: vendor_id, payment_type
+- **NumericColumnNames**: rate_code, passenger_count, trip_time_in_secs, trip_distance
+
+Once you have your column information, use the <xref:Microsoft.ML.Data.TextLoader.Options> defined by the <xref:Microsoft.ML.AutoML.ColumnInferenceResults> to create a <xref:Microsoft.ML.Data.TextLoader> to load your data into an <xref:Microsoft.ML.IDataView>.
 
 ```csharp
 // Create text loader
@@ -68,12 +95,12 @@ SweepablePipeline pipeline =
         .Append(ctx.Auto().Regression(labelColumnName:columnInference.ColumnInformation.LabelColumnName));
 ```
 
-A `SweepablePipeline` is a pipeline containing a colelction of `SweepableEstimators`. A `SweepableEstimator` is an ML.NET `Estimator` with a `SearchSpace`.
+A `SweepablePipeline` is a pipeline containing a colelction of `SweepableEstimators`. A `SweepableEstimator` is an ML.NET <xref:Microsoft.ML.AutoML.Estimator> with a `SearchSpace`.
 
 The `Featurizer` is a convenience API which builds a `SweepablePipeline` of data processing sweepable estimators based on the column information you provide. Instead of building a pipeline from scratch, `Featurizer` automates the data preprocessing step.
 
 > [!TIP]
-> Use `Featurizer` with `ColumnInferenceResults` to maximize the utility of AutoML.
+> Use `Featurizer` with <xref:Microsoft.ML.AutoML.ColumnInferenceResults> to maximize the utility of AutoML.
 
 For training, AutoML provides a sweepable pipeline with default trainers and search space configurations for the following machine learning tasks:
 
@@ -106,11 +133,11 @@ experiment
 In this example, you:
 
 - Set the sweepable pipeline to run during the experiment using `SetPipeline`.
-- Choose `RSquared` as the metric to optimize during training using `SetRegressionMetric`.
+- Choose `RSquared` as the metric to optimize during training using `SetRegressionMetric`. For more information on evaluation metrics, see the [evaluate your ML.NET model with metrics](../resources/metrics.md) guide.
 - Set 60 seconds as the amount of time you want to train for using `SetTrainingTimeInSeconds`.
 - Provide the training and validation datasets to use using `SetDataset`.
 
-Once your experiment is defined, you'll want some way to track its progress. The quickest way to track progress is by defining the `Log` event from `MLContext`.
+Once your experiment is defined, you'll want some way to track its progress. The quickest way to track progress is by defining the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>.
 
 ```csharp
 // Log experiment trials
@@ -124,7 +151,7 @@ ctx.Log += (_,e) => {
 
 ### Run your experiment
 
-Now that you've defined your experiment, use the `Run` or `RunAsync` methods to start your experiment.
+Now that you've defined your experiment, use the `RunAsync` method to start your experiment.
 
 ```csharp
 TrialResult experimentResults = await experiment.RunAsync();
@@ -179,14 +206,14 @@ AutoML provides a set of preconfigured search spaces for trainers in the followi
 - Multiclass classification
 - Regression
 
-In this example, the search space used is for the `SdcaRegressionTrainer`.
+In this example, the search space used is for the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>.
 
 ```csharp
 // Initialize default Sdca search space
 var sdcaSearchSpace = new SearchSpace<SdcaOption>();
 ```
 
-Then, use the search space to define a custom factory method to create the `SdcaRegressionTrainer`. In this example, the values of `L1Regularization` and `L2Regularization` are both being set to something other than the default. For `L1Regularization`, the value set is determined by the tuner during each trial. The `L2Regularization` is fixed for each trial to the hard-coded value. During each trial, custom factory method's output is an `SdcaRegressionTrainer` with the configured hyperparameters.
+Then, use the search space to define a custom factory method to create the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>. In this example, the values of `L1Regularization` and `L2Regularization` are both being set to something other than the default. For `L1Regularization`, the value set is determined by the tuner during each trial. The `L2Regularization` is fixed for each trial to the hard-coded value. During each trial, custom factory method's output is an <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> with the configured hyperparameters.
 
 ```csharp
 // Use the search space to define a custom factory to create an SdcaRegressionTrainer
@@ -238,6 +265,7 @@ By default, AutoML supports binary classification, multiclass classification, an
 - Recommendation
 - Forecasting
 - Ranking
+- Image classification
 - Text classification
 - Sentence similarity
 
@@ -252,7 +280,7 @@ For example, given hourly energy demand data that looks like the following:
 | 179759 |
 | 314597 |
 
-You want to use the `ForecastBySsa` trainer to forecast future demand.
+You want to use the <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A> trainer to forecast future demand.
 
 In order to do so you'll have to:
 
@@ -461,7 +489,7 @@ In order to do so you'll have to:
 
 ### Choose a different tuner
 
-AutoML supports a variety of tuning algorithms to iterate through the search space in search of the optimal hyperparamters. By default, it uses the Eci Cost Frugal tuner. Using experiment extension methods, you can choose another tuner that best fits your scenario.  
+AutoML supports a variety of tuning algorithms to iterate through the search space in search of the optimal hyperparameters. By default, it uses the Eci Cost Frugal tuner. Using experiment extension methods, you can choose another tuner that best fits your scenario.  
 
 Use the following methods to set your tuner:
 
@@ -479,7 +507,7 @@ experiment.SetSmacTuner();
 
 ### Configure experiment monitoring
 
-The quickest way to monitor the progress of an experiment is to define the `Log` event from `MLContext`. However, the `Log` event outputs a raw dump of the logs generated by AutoML during each trial. Because of the large amount of unformatted information, it's difficult.  
+The quickest way to monitor the progress of an experiment is to define the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>. However, the <xref:Microsoft.ML.MLContext.Log> event outputs a raw dump of the logs generated by AutoML during each trial. Because of the large amount of unformatted information, it's difficult.  
 
 For a more controlled monitoring experience, implement a class with the `IMonitor` interface.
 
@@ -610,235 +638,3 @@ Checkpoints provide a way for you to save intermediary outputs from the training
 var checkpointPath = Path.Join(Directory.GetCurrentDirectory(), "automl");
 experiment.SetCheckpoint(checkpointPath);
 ```
-
-<!-- # How to use the ML.NET automated machine learning API
-
-Automated machine learning (AutoML) automates the process of applying machine learning to data. Given a dataset, you can run an AutoML **experiment** to iterate over different data featurizations, machine learning algorithms, and hyperparameters to select the best model.
-
-> [!NOTE]
-> This topic refers to the automated machine learning API for ML.NET, which is currently in preview. Material may be subject to change.
-
-## Load data
-
-Automated machine learning supports loading a dataset into an [IDataView](xref:Microsoft.ML.IDataView). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.
-
-Example:
-
-```csharp
-using Microsoft.ML;
-using Microsoft.ML.AutoML;
-    // ...
-    MLContext mlContext = new MLContext();
-    IDataView trainDataView = mlContext.Data.LoadFromTextFile<SentimentIssue>("my-data-file.csv", hasHeader: true);
-```
-
-## Select the machine learning task type
-
-Before creating an experiment, determine the kind of machine learning problem you want to solve. Automated machine learning supports the following ML tasks:
-
-* Binary Classification
-* Multiclass Classification
-* Regression
-* Recommendation
-* Ranking
-
-## Create experiment settings
-
-Create experiment settings for the determined ML task type:
-
-* Binary Classification
-
-  ```csharp
-  var experimentSettings = new BinaryExperimentSettings();
-  ```
-
-* Multiclass Classification
-
-  ```csharp
-  var experimentSettings = new MulticlassExperimentSettings();
-  ```
-
-* Regression
-
-  ```csharp
-  var experimentSettings = new RegressionExperimentSettings();
-  ```
-
-* Recommendation
-
-  ```csharp
-  var experimentSettings = new RecommendationExperimentSettings();
-  ```
-
-* Ranking
-
-  ```csharp
-  var experimentSettings = new RankingExperimentSettings();
-  ```
-
-## Configure experiment settings
-
-Experiments are highly configurable. See the [AutoML API docs](/dotnet/api/microsoft.ml.automl?view=ml-dotnet-preview&preserve-view=false) for a full list of configuration settings.
-
-Some examples include:
-
-1. Specify the maximum time that the experiment is allowed to run.
-
-    ```csharp
-    experimentSettings.MaxExperimentTimeInSeconds = 3600;
-    ```
-
-1. Use a cancellation token to cancel the experiment before it is scheduled to finish.
-
-    ```csharp
-    experimentSettings.CancellationToken = cts.Token;
-
-    // Cancel experiment after the user presses any key
-    CancelExperimentAfterAnyKeyPress(cts);
-    ```
-
-1. Specify a different optimizing metric.
-
-    ```csharp
-    var experimentSettings = new RegressionExperimentSettings();
-    experimentSettings.OptimizingMetric = RegressionMetric.MeanSquaredError;
-    ```
-
-1. The `CacheDirectory` setting is a pointer to a directory where all models trained during the AutoML task will be saved. If `CacheDirectory` is set to null, models will be kept in memory instead of written to disk.
-
-    ```csharp
-    experimentSettings.CacheDirectory = null;
-    ```
-
-1. Instruct automated ML not to use certain trainers.
-
-    A default list of trainers to optimize are explored per task. This list can be modified for each experiment. For instance, trainers that run slowly on your dataset can be removed from the list. To optimize on one specific trainer call `experimentSettings.Trainers.Clear()`, then add the trainer that you want to use.
-
-    ```csharp
-    var experimentSettings = new RegressionExperimentSettings();
-    experimentSettings.Trainers.Remove(RegressionTrainer.LbfgsPoissonRegression);
-    experimentSettings.Trainers.Remove(RegressionTrainer.OnlineGradientDescent);
-    ```
-
-The list of supported trainers per ML task can be found at the corresponding link below:
-
-* [Supported Binary Classification Algorithms](xref:Microsoft.ML.AutoML.BinaryClassificationTrainer)
-* [Supported Multiclass Classification Algorithms](xref:Microsoft.ML.AutoML.MulticlassClassificationTrainer)
-* [Supported Regression Algorithms](xref:Microsoft.ML.AutoML.RegressionTrainer)
-* [Supported Recommendation Algorithms](xref:Microsoft.ML.AutoML.RecommendationTrainer)
-* [Supported Ranking Algorithms](xref:Microsoft.ML.AutoML.RankingTrainer)
-
-## Optimizing metric
-
-The optimizing metric, as shown in the example above, determines the metric to be optimized during model training. The optimizing metric you can select is determined by the task type you choose. Below is a list of available metrics.
-
-|[Binary Classification](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)  | [Multiclass Classification](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) | [Regression & Recommendation](xref:Microsoft.ML.AutoML.RegressionMetric)  | [Ranking](xref:Microsoft.ML.AutoML.RankingMetric)  |
-|---------|---------|---------|---------|
-|Accuracy                     | LogLoss         | RSquared             | Discounted Cumulative Gains            |
-|AreaUnderPrecisionRecallCurve| LogLossReduction| MeanAbsoluteError    | Normalized Discounted Cumulative Gains |
-|AreaUnderRocCurve            | MacroAccuracy   | MeanSquaredError     |                                        |
-|F1Score                      | MicroAccuracy   | RootMeanSquaredError |                                        |
-|NegativePrecision            | TopKAccuracy    |                      |                                        |
-|NegativeRecall               |                 |                      |                                        |
-|PositivePrecision            |                 |                      |                                        |
-|PositiveRecall               |                 |                      |                                        |
-
-## Data pre-processing and featurization
-
-> [!NOTE]
-> The feature column only supported types of <xref:System.Boolean>, <xref:System.Single>, and <xref:System.String>.
-
-Data pre-processing happens by default and the following steps are performed automatically for you:
-
-1. Drop features with no useful information
-
-    Drop features with no useful information from training and validation sets. These include features with all values missing, same value across all rows or with extremely high cardinality (e.g., hashes, IDs or GUIDs).
-
-1. Missing value indication and imputation
-
-    Fill missing value cells with the default value for the datatype. Append indicator features with the same number of slots as the input column. The value in the appended indicator features is `1` if the value in the input column is missing and `0` otherwise.
-
-1. Generate additional features
-
-    For text features: Bag-of-word features using unigrams and tri-character-grams.
-
-    For categorical features: One-hot encoding for low cardinality features, and one-hot-hash encoding for high cardinality categorical features.
-
-1. Transformations and encodings
-
-    Text features with very few unique values transformed into categorical features. Depending on cardinality of categorical features, perform one-hot encoding or one-hot hash encoding.
-
-## Exit criteria
-
-Define the criteria to complete your task:
-
-1. Exit after a length of time - Using `MaxExperimentTimeInSeconds` in your experiment settings you can define how long in seconds that a task should continue to run.
-
-1. Exit on a cancellation token -  You can use a cancellation token that lets you cancel the task before it is scheduled to finish.
-
-    ```csharp
-    var cts = new CancellationTokenSource();
-    var experimentSettings = new RegressionExperimentSettings();
-    experimentSettings.MaxExperimentTimeInSeconds = 3600;
-    experimentSettings.CancellationToken = cts.Token;
-    ```
-
-## Create an experiment
-
-Once you have configured the experiment settings, you are ready to create the experiment.
-
-```csharp
-RegressionExperiment experiment = mlContext.Auto().CreateRegressionExperiment(experimentSettings);
-```
-
-## Run the experiment
-
-Running the experiment triggers data pre-processing, learning algorithm selection, and hyperparameter tuning. AutoML will continue to generate combinations of featurization, learning algorithms, and hyperparameters until the `MaxExperimentTimeInSeconds` is reached or the experiment is terminated.
-
-```csharp
-ExperimentResult<RegressionMetrics> experimentResult = experiment
-    .Execute(trainingDataView, LabelColumnName, progressHandler: progressHandler);
-```
-
-Explore other overloads for `Execute()` if you want to pass in validation data, column information indicating the column purpose, or prefeaturizers.
-
-## Training modes
-
-### Training dataset
-
-AutoML provides an overloaded experiment execute method which allows you to provide training data. Internally, automated ML divides the data into train-validate splits.
-
-```csharp
-experiment.Execute(trainDataView);
-```
-
-### Custom validation dataset
-
-Use custom validation dataset if random split is not acceptable, as is usually the case with time series data. You can specify your own validation dataset. The model will be evaluated against the validation dataset specified instead of one or more random datasets.
-
-```csharp
-experiment.Execute(trainDataView, validationDataView);
-```
-
-## Explore model metrics
-
-After each iteration of an ML experiment, metrics relating to that task are stored.
-
-For example, we can access validation metrics from the best run:
-
-```csharp
-RegressionMetrics metrics = experimentResult.BestRun.ValidationMetrics;
-Console.WriteLine($"R-Squared: {metrics.RSquared:0.##}");
-Console.WriteLine($"Root Mean Squared Error: {metrics.RootMeanSquaredError:0.##}");
-```
-
-The following are all the available metrics per ML task:
-
-* [Binary classification metrics](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)
-* [Multiclass classification metrics](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric)
-* [Regression & recommendation metrics](xref:Microsoft.ML.AutoML.RegressionMetric)
-* [Ranking](xref:Microsoft.ML.AutoML.RankingMetric)
-
-## See also
-
-For full code samples and more visit the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main#automate-mlnet-models-generation-preview-state) GitHub repository. -->

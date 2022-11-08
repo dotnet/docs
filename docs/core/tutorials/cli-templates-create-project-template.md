@@ -15,7 +15,19 @@ With .NET, you can create and deploy templates that generate projects, files, ev
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
 > [!TIP]
-> The official .NET templates that are shipped with the .NET SDK can be found in the [dotnet/templates GitHub repository](https://github.com/dotnet/templates). You can also view the templates that are installed on your machine by running the `dotnet new --list` command.
+> The official .NET templates that are shipped with the .NET SDK can be found in the following repositories:
+>
+> | Templates | Repository |
+> |---|---|
+> |Console, class library and common item templates|[dotnet/sdk](https://github.com/dotnet/sdk)|
+> |ASP.NET and Blazor templates|[dotnet/aspnetcore](https://github.com/dotnet/aspnetcore)|
+> |ASP.NET Single Page Application templates| [dotnet/spa-templates](https://github.com/dotnet/spa-templates)|
+> |WPF templates|[dotnet/wpf](https://github.com/dotnet/wpf)|
+> |Windows Forms templates|[dotnet/winforms](https://github.com/dotnet/winforms)|
+> |Test templates|[dotnet/test-templates](https://github.com/dotnet/test-templates)|
+> |MAUI templates|[dotnet/maui](https://github.com/dotnet/maui)|
+>
+> You can view the templates that are installed on your machine by running the `dotnet new list` command.
 
 In this part of the series you'll learn how to:
 
@@ -111,10 +123,10 @@ This config file contains all of the settings for your template. You can see the
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new --install .\` to install the template located at the current folder. If you're using a Linux or macOS operating system, use a forward slash: `dotnet new --install ./`.
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new install .\` to install the template located at the current folder. If you're using a Linux or macOS operating system, use a forward slash: `dotnet new install ./`.
 
 ```dotnetcli
-dotnet new --install .\
+dotnet new install .\
 ```
 
 This command outputs a list of the installed templates, which should include yours.
@@ -165,8 +177,8 @@ Congratulations! You created and deployed a project template with .NET. In prepa
 
 In your terminal, navigate to the  _consoleasync_ folder and run the following command to uninstall the template located in the current folder:
 
-* **On Windows**: `dotnet new --uninstall .\`
-* **On Linux or macOS**: `dotnet new --uninstall ./`
+* **On Windows**: `dotnet new uninstall .\`
+* **On Linux or macOS**: `dotnet new uninstall ./`
 
 This command outputs a list of the templates that were uninstalled, which should include yours.
 
@@ -174,7 +186,7 @@ This command outputs a list of the templates that were uninstalled, which should
 Success: <root path>\working\templates\consoleasync was uninstalled.
 ```
 
-At any time, you can use `dotnet new --uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.
+At any time, you can use `dotnet new uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.
 
 ## Next steps
 

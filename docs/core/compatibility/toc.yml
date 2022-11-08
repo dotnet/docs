@@ -115,6 +115,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: Interop
         items:
         - name: RuntimeInformation.OSArchitecture under emulation
@@ -1051,6 +1053,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider

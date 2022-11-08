@@ -21,7 +21,7 @@ You might see changes in your app even if you don't realize you're using globali
 
 ### Currency symbol
 
-Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country.
+Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country or region.
 
 ```csharp
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");

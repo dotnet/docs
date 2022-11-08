@@ -79,6 +79,8 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
         - name: Time fields on symbolic links
           href: core-libraries/7.0/symbolic-link-timestamps.md
         - name: Tracking linked cache entries
@@ -115,6 +117,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: Interop
         items:
         - name: RuntimeInformation.OSArchitecture under emulation
@@ -873,6 +877,8 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
         - name: Time fields on symbolic links
           href: core-libraries/7.0/symbolic-link-timestamps.md
         - name: Tracking linked cache entries
@@ -1051,6 +1057,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider

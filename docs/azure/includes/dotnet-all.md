@@ -235,7 +235,7 @@
 | Azure.Communication.Calling | NuGet [1.0.0-beta.33](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.33) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
-| Azure.FX | NuGet [0.0.1](https://www.nuget.org/packages/Azure.FX/0.0.1) |  |  |
+| Azure.FX | NuGet [0.0.2-alpha](https://www.nuget.org/packages/Azure.FX/0.0.2-alpha) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
@@ -377,7 +377,7 @@
 | Core - Client - AMQP | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.2.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.2.0/sdk/core/Azure.Core.Amqp/) |
 | Core - Client - Core | NuGet [1.25.0](https://www.nuget.org/packages/Azure.Core/1.25.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.25.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.25.0/sdk/core/Azure.Core/) |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
-| Cosmos DB | NuGet [3.31.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.31.1) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.31.1](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.31.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.31.2) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.31.2](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
 | Cosmos DB - Direct | NuGet [3.29.4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.29.4) |  | GitHub [3.29.4](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
@@ -665,7 +665,7 @@
 | Management - Azure Stack HCI | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.AzureStackHCI/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.AzureStackHCI_1.0.0/sdk/azurestackhci/Microsoft.Azure.Management.AzureStackHCI/) |
 | Management - Azure VMware Solution | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Avs/3.0.0) |  | GitHub [3.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Avs_3.0.0/sdk/avs/Microsoft.Azure.Management.Avs/) |
 | Management - Backup Services | NuGet [1.0.5-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.BackupServices/1.0.5-preview) |  |  |
-| Management - Batch | NuGet [14.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Batch/14.0.0) | [docs](/dotnet/api/overview/azure/batch) | GitHub [14.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Batch_14.0.0/sdk/batch/Microsoft.Azure.Management.Batch/) |
+| Management - Batch | NuGet [15.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Batch/15.0.0) | [docs](/dotnet/api/overview/azure/batch) | GitHub [15.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Batch_15.0.0/sdk/batch/Microsoft.Azure.Management.Batch/) |
 | Management - Batch AI | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.BatchAI/2.0.0) | [docs](/dotnet/api/overview/azure/batchai) | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/batchai/Microsoft.Azure.Management.BatchAI) |
 | Management - Batch AI  Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.BatchAI.Fluent/1.38.1) |  |  |
 | Management - Batch Fluent | NuGet [1.26.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Batch.Fluent/1.26.1) |  |  |

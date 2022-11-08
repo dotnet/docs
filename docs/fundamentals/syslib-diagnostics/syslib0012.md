@@ -43,3 +43,7 @@ To suppress all the `SYSLIB0012` warnings in your project, add a `<NoWarn>` prop
 ```
 
 For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
+
+## See also
+
+- [SYSLIB0044](syslib0044.md)

@@ -1,6 +1,6 @@
 ---
 title: NuGet signed package verification
-description: NuGet uses root stores valid for code signing and timestamping to perform signed package verification.
+description: Learn about how NuGet performs signed package verification using root stores that are valid for code signing and timestamping.
 author: DTivel
 ms.date: 11/07/2022
 ---

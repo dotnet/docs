@@ -123,7 +123,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete](../fundamentals/syslib-diagnostics/syslib0043.md)
   - XmlSecureResolver breaking change
   - Add SYSLIB0041
-- [Overview of .NET source code analysis](../fundamentals/code-analysis/overview.md) - Merge .NET 7 release branch into main
+- [Overview of .NET source code analysis](../fundamentals/code-analysis/overview.md) - Update list of rules enabled for .NET 7
 - [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md)
   - Add docs for CA2019 and CA2259
   - Add docs for CA1420 and CA1422

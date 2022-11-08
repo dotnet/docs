@@ -69,9 +69,30 @@ In Model Builder, you need to select a scenario. The type of scenario depends on
 
 Classification is used to categorize data into categories.
 
-![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
+<!-- ![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
 
-![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
+![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png) -->
+
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | SepalLength | SepalWidth | Petal Length | Petal Width | Species (Label) |
+        | --- | --- | --- | --- | --- |
+        | 5.1 | 3.5 | 1.4 | 0.2 | setosa |
+    :::column-end:::
+    :::column:::
+        | PredictedLabel |
+        | --- |
+        | setosa |
+    :::column-end:::
+:::row-end:::
 
 ##### Value prediction
 
@@ -89,12 +110,12 @@ Value prediction, which falls under the regression task, is used to predict numb
 :::row-end:::
 :::row:::
     :::column:::
-        | UserId | ProductId |
-        | --- | --- |
-        | 1 | 2 |
+        | vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance | payment_type | fare_amount (Label) |
+        | --- | --- | --- | --- | --- | --- | --- |
+        | CMT | 1 | 1 | 1271 | 3.8 | CRD | 17.5 |
     :::column-end:::
     :::column:::
-        | Rating |
+        | Score |
         | --- |
         | 4.5 |
     :::column-end:::
@@ -116,12 +137,12 @@ You can use the recommendation scenario when you have a set of users and a set o
 :::row-end:::
 :::row:::
     :::column:::
-        | UserId | ProductId |
-        | --- | --- |
-        | 1 | 2 |
+        | UserId | ProductId | Rating (Label) |
+        | --- | --- | --- |
+        | 1 | 2 | 4.2 |
     :::column-end:::
     :::column:::
-        | Rating |
+        | PredictedLabel |
         | --- |
         | 4.5 |
     :::column-end:::
@@ -141,11 +162,47 @@ Image classification is used to identify images of different categories. For exa
 
 You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
 
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        :::image type="content" source="media/automate-training-with-model-builder/dog-classification.png" alt-text="Profile view of standing pug":::
+    :::column-end:::
+    :::column:::
+        | PredictedLabel |
+        | --- |
+        | Dog |
+    :::column-end:::
+:::row-end:::
+
 ##### Object detection
 
 Object detection is used to locate and categorize entities within images.  For example, locating and identifying cars and people in an image.
 
 You can use object detection when images contain multiple objects of different types.
+
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        :::image type="content" source="media/automate-training-with-model-builder/dog-classification.png" alt-text="Profile view of standing pug":::
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="media/automate-training-with-model-builder/dog-object-detection-min.png" alt-text="Profile view of standing pug with bounding box and dog label":::
+    :::column-end:::
+:::row-end:::
 
 #### Natural Language Processing
 

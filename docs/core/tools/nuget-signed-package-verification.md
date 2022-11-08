@@ -15,11 +15,13 @@ Some NuGet commands (like `sign` and `verify`) always perform signed package ver
 The following sections detail when implicit verification during restore operations is enabled by default, how to enable it, and what root stores are used.
 
 ## Windows
+
 Verification is enabled by default during package restore operations.
 
 NuGet uses the default root store on Windows, which already supports general-purpose code signing and timestamping.  .NET SDK fallback certificate bundles are not used.
 
 ## Linux
+
 Verification is disabled by default during package restore operations.  To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
 
 NuGet will use .NET SDK fallback certificate bundles by default.  The code signing fallback certificate bundle can be overridden by providing a certificate bundle valid for code signing at the following probe path:
@@ -29,6 +31,7 @@ NuGet will use .NET SDK fallback certificate bundles by default.  The code signi
 ```
 
 ## macOS
+
 Verification is disabled by default during package restore operations.  To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.  However, it is recommended that users do not enable verification at this time.
 
 For more information see [NuGet/Home#11985](https://github.com/NuGet/Home/issues/11985) and [NuGet/Home#11986](https://github.com/NuGet/Home/issues/11986).

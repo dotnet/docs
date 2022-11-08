@@ -84,7 +84,7 @@ The preceding C# code:
 
 ### Create a client socket
 
-`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via the [new Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket) constructor. This constructor creates a dual-stack socket if [IPv6 is supported](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise, it falls back to IPv4.
+`TcpClient`'s default constructor tries to create a [_dual-stack socket_](<xref:System.Net.Sockets.Socket.DualMode>) via the [Socket(SocketType, ProtocolType)](xref:System.Net.Sockets.Socket.%23ctor%2A) constructor. This constructor creates a dual-stack socket if [IPv6 is supported](<xref:System.Net.Sockets.Socket.OSSupportsIPv6>), otherwise, it falls back to IPv4.
 
 Consider the following TCP client code:
 
@@ -98,7 +98,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
-#### TcpClient(AddressFamily) constructor
+#### The [TcpClient(AddressFamily)](xref:System.Net.Sockets.TcpClient.%23ctor%2A) constructor
 
 This constructor accepts only three `AddressFamily` values, otherwise it will throw a <xref:System.ArgumentException>. Valid values are:
 
@@ -118,7 +118,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
-#### TcpClient(IPEndPoint) constructor
+#### The [TcpClient(IPEndPoint)](xref:System.Net.Sockets.TcpClient.%23ctor%2A) constructor
 
 Upon creating the socket, this constructor will also **bind** it to the provided **local** `IPEndPoint`. The <xref:System.Net.IPEndPoint.AddressFamily?displayProperty=nameWithType> property is used to determine the address family of the socket.
 
@@ -139,7 +139,7 @@ var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 socket.Bind(ep);
 ```
 
-#### TcpClient(String, Int32) constructor
+#### The [TcpClient(String, Int32)](xref:System.Net.Sockets.TcpClient.%23ctor%2A) constructor
 
 This constructor will attempt to create a dual-stack similarly to the default constructor and **connect** it to the **remote** endpoint defined by `hostname` and `port`.
 

@@ -34,7 +34,7 @@ NuGet will use .NET SDK fallback certificate bundles by default.  The code signi
 
 Verification is disabled by default during package restore operations.  To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.  However, it is recommended that users do not enable verification at this time.
 
-For more information see [NuGet/Home#11985](https://github.com/NuGet/Home/issues/11985) and [NuGet/Home#11986](https://github.com/NuGet/Home/issues/11986).
+For more information, see [NuGet/Home#11985](https://github.com/NuGet/Home/issues/11985) and [NuGet/Home#11986](https://github.com/NuGet/Home/issues/11986).
 
 NuGet will use only .NET SDK fallback certificate bundles.
 

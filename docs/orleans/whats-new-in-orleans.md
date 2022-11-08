@@ -6,7 +6,7 @@ ms.date: 11/08/2022
 
 # What's new in Orleans 7.0
 
-Orleans 7.0 introduces some beneficial changes, including to hosting, POCO grains, and serialization.
+Orleans 7.0 introduces several beneficial changes, including improvements to hosting, custom serialization, immutability, and grain abstractions.
 
 ## Migration
 

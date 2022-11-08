@@ -38,6 +38,9 @@ The `dotnet restore` command uses NuGet to restore dependencies as well as proje
 
 Sometimes, it might be inconvenient to run the implicit NuGet restore with these commands. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent the implicit NuGet restore, you can use the `--no-restore` flag with any of these commands to disable implicit restore.
 
+  > [!NOTE]
+  > Signed package verification during restore operations requires a certificate root store that is valid for both code signing and timestamping.  See [NuGet signed package verification](nuget-signed-package-verification.md) for details.
+
 ### Specify feeds
 
 To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET SDK is installed. To specify additional feeds, do one of the following:

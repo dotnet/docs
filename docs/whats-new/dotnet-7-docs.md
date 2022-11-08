@@ -70,7 +70,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Overview of .NET, MSBuild, and Visual Studio versioning](../core/porting/versioning-sdk-msbuild-vs.md)
   - Add preview SDK table
   - Formalize versioning support policy
-- [Overview of the .NET Upgrade Assistant](../core/porting/upgrade-assistant-overview.md) - Merge .NET 7 release branch into main
+- [Overview of the .NET Upgrade Assistant](../core/porting/upgrade-assistant-overview.md)
 - [Upgrade a WCF Server-side Project to use CoreWCF on .NET 6](../core/porting/upgrade-assistant-wcf.md) - Add documentation for CoreWCF extension on Upgrade Assistant
 - [.NET RID Catalog](../core/rid-catalog.md) - Add iOS and Android RIDs
 - [Runtime configuration options for threading](../core/runtime-config/threading.md) - Document a new config switch added to the portable thread pool

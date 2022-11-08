@@ -58,7 +58,7 @@ ColumnInferenceResults columnInference =
 
 <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> loads a few rows from the dataset. It then inspects the data and tries to guess or infer the data type for each of the columns based on their content.
 
-The default behavior is to group columns of the same type into feature vectors or arrays containing the elements for each of the grouped columns. Setting `groupColumns` to `false` overrides that default behavior and only performs column inference without grouping columns. By keeping columns separate it allows you to apply different data transformations when preprocessing the data at the individual column level rather than the grouping. 
+The default behavior is to group columns of the same type into feature vectors or arrays containing the elements for each of the grouped columns. Setting `groupColumns` to `false` overrides that default behavior and only performs column inference without grouping columns. By keeping columns separate it allows you to apply different data transformations when preprocessing the data at the individual column level rather than the grouping.  
 
 The result of <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> a <xref:Microsoft.ML.AutoML.ColumnInferenceResults> object which contains the options needed to create a <xref:Microsoft.ML.Data.TextLoader> as well as column information.
 

@@ -1,20 +1,24 @@
 ---
 title: What's new in Orleans
 description: Learn about the various new features introduced in Orleans 7.0.
-ms.date: 10/31/2022
+ms.date: 11/08/2022
 ---
 
 # What's new in Orleans 7.0
 
-Existing applications using reminders, streams, and/or grain persistence cannot be easily migrated due to changes in how Orleans identifies grains and streams. We plan to incrementally offer a migration path for these applications.
+Orleans 7.0 introduces some beneficial changes, including to hosting, POCO grains, and serialization.
+
+## Migration
+
+Existing applications using reminders, streams, or grain persistence cannot be easily migrated to Orleans 7.0 due to changes in how Orleans identifies grains and streams. We plan to incrementally offer a migration path for these applications.
 
 Applications running previous versions of Orleans cannot be smoothly upgraded via a rolling upgrade to Orleans 7.0. Therefore, a different upgrade strategy must be used, such as deploying a new cluster and decommissioning the previous cluster. Orleans 7.0 changes the wire protocol in an incompatible fashion, meaning that clusters cannot contain a mix of Orleans 7.0 hosts and hosts running previous versions of Orleans.
 
 We have avoided such breaking changes for many years, even across major releases, so why now? There are two major reasons: identities and serialization. Regarding identities, Grain and stream identities are now comprised of strings, allowing grains to encode generic type information properly and allowing streams to map more easily to the application domain. Grain types were previously identified using a complex data structure which could not represent generic grains, leading to corner cases. Streams were identified by a `string` namespace and a <xref:System.Guid> key, which was difficult for developers to map to their application domain, however efficient. Serialization is now version-tolerant, meaning that you can modify your types in certain compatible ways, following a set of rules, and be confident that you can upgrade your application without serialization errors. This was especially problematic when application types were persisted in streams or grain storage. The following sections detail the major changes and discuss them in more detail.
 
-## Packaging changes
+### Packaging changes
 
-If you are upgrading a project to Orleans 7.0, you will need to perform the following actions:
+If you're upgrading a project to Orleans 7.0, you'll need to perform the following actions:
 
 - All clients should reference `Microsoft.Orleans.Client`
 - All silos (servers) should reference `Microsoft.Orleans.Server`
@@ -116,7 +120,7 @@ public sealed class PingGrain : IGrainBase, IPingGrain
 
 ## Serialization
 
-The most burdensome change in Orleans 7.0 will be the introduction of the version-tolerant serializer. This change was made because applications tend to evolve over time and this led to a significant pitfall for developers, since the previous serializer could not tolerate adding properties to existing types. On the other hand, the serializer was flexible, allowing developers to represent most .NET types without modification, including features such as generics, polymorphism, and reference tracking. A replacement was long overdue, but users still need high-fidelity representation of their types. Therefore, a replacement serializer was introduced in Orleans 7.0 which supports high-fidelity representation of .NET types while also allowing types to evolve over time. The new serializer is much more efficient than the previous serializer, resulting in up to 170% higher end to end throughput.
+The most burdensome change in Orleans 7.0 is the introduction of the version-tolerant serializer. This change was made because applications tend to evolve over time and this led to a significant pitfall for developers, since the previous serializer could not tolerate adding properties to existing types. On the other hand, the serializer was flexible, allowing developers to represent most .NET types without modification, including features such as generics, polymorphism, and reference tracking. A replacement was long overdue, but users still need high-fidelity representation of their types. Therefore, a replacement serializer was introduced in Orleans 7.0 which supports high-fidelity representation of .NET types while also allowing types to evolve over time. The new serializer is much more efficient than the previous serializer, resulting in up to 170% higher end to end throughput.
 
 The new serializer requires that you are explicit about which types and members are serialized. We have tried to make this as pain-free as possible. You must mark all serializable types with <xref:Orleans.CodeGeneration.GenerateSerializerAttribute?displayProperty=nameWithType> to instruct Orleans to generate serializer code for your type. Once you have done this, you can use the included code-fix to add the required `[Id(x)]` fields to the serializable members on your types, as demonstrated here:
 
@@ -152,7 +156,7 @@ public class MySubClass : MyBaseClass
 ```
 
 - ✅ **Do** widen numeric member types as needed. You can widen `sbyte` to `short` to `int` to `long`.
-  * You can narrow numeric member types but it will result in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value were encountered.
+  - You can narrow numeric member types but it will result in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value were encountered.
 - ❌ **Do not** change the signedness of a numeric type member. You must not change a member's type from `uint` to `int` or an `int` to a `uint`, for example.
 
 #### Surrogates for serializing foreign types
@@ -471,7 +475,7 @@ As a part of this, the existing `Microsoft.Orleans.TelemetryConsumers.*` package
 
 ### Refactoring features from core package into separate packages
 
-In Orleans 7.0, we have made an effort to factor extensions into separate packages which do not rely on the core of Orleans. Namely, Streaming, Reminders, and Transactions have been separated from the core. This means that these packages are entirely _pay for what you use_ and there is no code in the core of Orleans which is dedicated to these features. This slims down the core API surface and assembly size, simplifies the core, and improves performance. Regarding performance, Transactions in Orleans previously required some code which was executed for every method to coordinate potential transactions. That has since been moved to per-method
+In Orleans 7.0, we have made an effort to factor extensions into separate packages which do not rely on the core of Orleans. Namely, Streaming, Reminders, and Transactions have been separated from the core. This means that these packages are entirely *pay for what you use* and there is no code in the core of Orleans which is dedicated to these features. This slims down the core API surface and assembly size, simplifies the core, and improves performance. Regarding performance, Transactions in Orleans previously required some code which was executed for every method to coordinate potential transactions. That has since been moved to per-method
 
 This is a compilation breaking change. You may have existing code which interacts with reminders or streams by calling into methods which were previously defined on the `Grain` base class but are now extension methods. Such calls which do not specify `this` (for example `GetRemindersAsync()`) will need to be updated to include `this` (for example `this.GetRemindersAsync()`) because extension methods must be qualified. There will be a compilation error if you do not update those calls and the required code change may not be obvious if you do not know what has changed.
 

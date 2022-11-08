@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
-ms.date: 11/01/2022
+ms.date: 11/08/2022
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -129,11 +129,9 @@ For more information, see [Central package management](/nuget/consume-packages/C
 
 This section contains information about related products that have releases that coincide with the .NET 7 release.
 
-<!--
 ### Visual Studio 2022 version 17.4
 
 For more information, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022).
--->
 
 ### C# 11
 
@@ -159,15 +157,11 @@ Much work has gone into Windows Forms for .NET 7. Improvements have been made in
 - High DPI and scaling
 - Databinding
 
-<!--
 For more information, see [What's new in Windows Forms in .NET 7](https://devblogs.microsoft.com/dotnet/winforms-enhancements-in-dotnet-7).
--->
 
-<!--
 ### Orleans
 
 Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [What's new in Orleans 7.0](../../orleans/whats-new-in-orleans.md).
--->
 
 ### .NET Upgrade Assistant and CoreWCF
 

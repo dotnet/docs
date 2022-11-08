@@ -73,7 +73,7 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
 
     > [!NOTE]
     > When executing the app with .NET 7, you must also set `DOTNET_EnableWriteXorExecute=0` in addition to the preceding environment variables.  For example:
->
+    >
     > ```bash
     > export DOTNET_EnableWriteXorExecute=0
     > ```

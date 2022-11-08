@@ -15,7 +15,7 @@ Orleans supports distributed ACID transactions against persistent grain state. T
 
 ## Setup
 
-Orleans transactions are opt-in. A silo and client both must be configured to use transactions. If it isn't configured, any calls to transactional methods on a grain implementation will receive the <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder:
+Orleans transactions are opt-in. A silo and client both must be configured to use transactions. If they aren't configured, any calls to transactional methods on a grain implementation will receive the <xref:Orleans.Transactions.OrleansTransactionsDisabledException>. To enable transactions on a silo, call <xref:Orleans.Hosting.SiloBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the silo host builder:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
@@ -43,7 +43,7 @@ For example, consider the following host builder configuration:
 
 :::code source="snippets/transactions/Server/Program.cs":::
 
-For development purposes, if transaction-specific storage is not available for the datastore you need, an `IGrainStorage` implementation may be used instead. For any transactional state that doesn't have a store configured, transactions will attempt to fail over to the grain storage using a bridge. Accessing a transactional state via a bridge to grain storage will be less efficient and isn't a pattern we intend to support long-term, hence the recommendation is to only use this for development purposes.
+For development purposes, if transaction-specific storage is not available for the datastore you need, you can use an `IGrainStorage` implementation instead. For any transactional state that doesn't have a store configured, transactions will attempt to fail over to the grain storage using a bridge. Accessing a transactional state via a bridge to grain storage is less efficient and may not be supported in the future. Hence, the recommendation is to only use this for development purposes.
 
 ## Grain interfaces
 
@@ -84,7 +84,7 @@ public interface ITransactionalState<TState>
 }
 ```
 
-All read or write access to the persisted state must be performed via synchronous functions passed to the transactional state facet. This allows the transaction system to perform or cancel these operations transactionally. To use a transactional state within a grain, you define a serializable state class to be persisted and to declare the transactional state in the grain's constructor with a <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute>. The latter declares the state name and (optionally) which transactional state storage to use, for more information see [Setup](#setup).
+All read or write access to the persisted state must be performed via synchronous functions passed to the transactional state facet. This allows the transaction system to perform or cancel these operations transactionally. To use a transactional state within a grain, you define a serializable state class to be persisted and declare the transactional state in the grain's constructor with a <xref:Orleans.Transactions.Abstractions.TransactionalStateAttribute>. The latter declares the state name and, optionally, which transactional state storage to use. For more information, see [Setup](#setup).
 
 ```csharp
 [AttributeUsage(AttributeTargets.Parameter)]
@@ -104,7 +104,7 @@ As an example, the `Balance` state object is defined as follows:
 The preceding state object:
 
 - Is decorated with the <xref:Orleans.CodeGeneration.GenerateSerializerAttribute> to instruct the Orleans code generator to generate a serializer.
-- `Value` property is decorated with the `IdAttribute` to uniquely identify the member.
+- Has a `Value` property that's decorated with the `IdAttribute` to uniquely identify the member.
 
 The `Balance` state object is then used in the `AccountGrain` implementation as follows:
 
@@ -129,7 +129,7 @@ In the preceding client code:
 - The `from` and `to` variables are assigned their `IAccountGrain` references.
 - The `ITransactionClient` is used to create a transaction, calling:
   - `Withdraw` on the `from` account grain reference.
-  - And `Deposit` on the `to` account grain reference.
+  - `Deposit` on the `to` account grain reference.
 
 Transactions are always committed unless there is an exception that is thrown in the `transactionDelegate` or a contradictory `transactionOption` specified. While the recommended way to call transactional grain methods is to use the `ITransactionClient`, you can also call transactional grain methods directly from another grain.
 
@@ -155,8 +155,8 @@ uint fromBalance = await client.GetGrain<IAccountGrain>(from).GetBalance();
 uint toBalance = await client.GetGrain<IAccountGrain>(to).GetBalance();
 ```
 
-In the above calls, an `IAtmGrain` is used to transfer 100 units of currency from one account to another. After the transfer is complete, both accounts are queried to get their current balance. The currency transfer, as well as both account queries, are performed as ACID transactions.
+In the preceding calls, an `IAtmGrain` is used to transfer 100 units of currency from one account to another. After the transfer is complete, both accounts are queried to get their current balance. The currency transfer, as well as both account queries, are performed as ACID transactions.
 
-As shown in the preceding example, transactions can return values within a `Task`, like other grain calls, but upon call failure, they will not throw application exceptions, but rather an <xref:Orleans.Transactions.OrleansTransactionException> or <xref:System.TimeoutException>. If the application throws an exception during the transaction and that exception causes the transaction to fail (as opposed to failing because of other system failures), the application exception will be the inner exception of the `OrleansTransactionException`.
+As shown in the preceding example, transactions can return values within a `Task`, like other grain calls. But upon call failure, they will not throw application exceptions but rather an <xref:Orleans.Transactions.OrleansTransactionException> or <xref:System.TimeoutException>. If the application throws an exception during the transaction and that exception causes the transaction to fail (as opposed to failing because of other system failures), the application exception will be the inner exception of the `OrleansTransactionException`.
 
 If a transaction exception is thrown of type <xref:Orleans.Transactions.OrleansTransactionAbortedException>, the transaction failed and can be retried. Any other exception thrown indicates that the transaction terminated with an unknown state. Since transactions are distributed operations, a transaction in an unknown state could have succeeded, failed, or still be in progress. For this reason, it's advisable to allow a call timeout period (<xref:Orleans.Configuration.SiloMessagingOptions.SystemResponseTimeout?displayProperty=nameWithType>) to pass, to avoid cascading aborts, before verifying the state or retrying the operation.

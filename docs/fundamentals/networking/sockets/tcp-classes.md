@@ -118,7 +118,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
-#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.IPEndPoint)?displayProperty=nameWithType> constructor
+#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.IPEndPoint)> constructor
 
 Upon creating the socket, this constructor will also **bind** it to the provided **local** `IPEndPoint`. The <xref:System.Net.IPEndPoint.AddressFamily?displayProperty=nameWithType> property is used to determine the address family of the socket.
 
@@ -139,7 +139,7 @@ var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 socket.Bind(ep);
 ```
 
-#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.String,System.Int32)?displayProperty=nameWithType> constructor
+#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.String,System.Int32)> constructor
 
 This constructor will attempt to create a dual-stack similarly to the default constructor and **connect** it to the **remote** DNS endpoint defined by `hostname` and `port`.
 

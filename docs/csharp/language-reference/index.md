@@ -63,10 +63,13 @@ The features that have been implemented in C# versions after 6.0, including thos
 [C# 10 Specification Proposals](~/_csharplang/proposals/csharp-10.0/record-structs.md)\
 C# 10 is available with .NET 6. The features include record structs, parameterless struct constructors, global using directives, file-scoped namespaces, extended property patterns, improved interpolated strings, constant interpolated strings, lambda improvements, caller-argument expression, enhanced `#line` directives, generic attributes, improved definite assignment analysis, and `AsyncMethodBuilder` override.
 
+[C# 11 Specification Proposals](/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md)\
+C# 11 is available with .NET 7. The new features include static abstract members in interfaces, checked user-defined operators, unsigned right shift operator, relaxing shift operator, numeric `IntPtr`, raw string literals, interpolated string newline, UTF-8 string literals, pattern match span, list patterns, required members, auto-default struct, low-level struct improvements, extended `nameof` scope, and file local types.
+
 ## Related sections  
 
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
- Provides links to conceptual and task topics that describe the IDE and Editor.  
+ Provides links to conceptual and task topics that describe the IDE and editor.  
   
  [C# Programming Guide](../programming-guide/index.md)  
  Includes information about how to use the C# programming language.

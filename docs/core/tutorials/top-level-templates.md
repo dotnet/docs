@@ -1,10 +1,9 @@
 ---
-title: "C# console app template changes in .NET 6"
-description: The .NET 6 project template for C# console apps uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.custom: updateeachrelease
-ms.date: 03/14/2022
+title: "C# console app template changes in .NET 6+"
+description: The .NET 6+ project template for C# console apps uses top-level statements. Understand what changed and how to use existing learning materials with the new syntax.
+ms.date: 11/08/2022
 ---
-# .NET 6 C# console app template generates top-level statements
+# C# console app template generates top-level statements
 
 Starting with .NET 6, the project template for new C# console apps generates the following code in the *Program.cs* file:
 
@@ -144,4 +143,4 @@ class Program
 
 ## Template feedback
 
-[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) is a new feature in .NET 6. Add an up or down vote in [GitHub issue #27420](https://github.com/dotnet/docs/issues/27420) to let us know if you support the use of this feature in project templates.
+[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) was introduced in .NET 6. Add an up or down vote in [GitHub issue #27420](https://github.com/dotnet/docs/issues/27420) to let us know if you support the use of this feature in project templates.

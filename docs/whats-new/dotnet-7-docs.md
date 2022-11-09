@@ -70,7 +70,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Overview of .NET, MSBuild, and Visual Studio versioning](../core/porting/versioning-sdk-msbuild-vs.md)
   - Add preview SDK table
   - Formalize versioning support policy
-- [Overview of the .NET Upgrade Assistant](../core/porting/upgrade-assistant-overview.md)
 - [Upgrade a WCF Server-side Project to use CoreWCF on .NET 6](../core/porting/upgrade-assistant-wcf.md) - Add documentation for CoreWCF extension on Upgrade Assistant
 - [.NET RID Catalog](../core/rid-catalog.md) - Add iOS and Android RIDs
 - [Runtime configuration options for threading](../core/runtime-config/threading.md) - Document a new config switch added to the portable thread pool
@@ -81,7 +80,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - Add DisableTransitiveProjectReferences
   - Cleanup trimming options and document TrimMode=full,partial
   - Document new PublishRelease and PackRelease properties
-- [How to enable tab completion for the .NET CLI](../core/tools/enable-tab-autocomplete.md)
 - [Manage package dependencies in .NET applications](../core/tools/dependencies.md) - Add three new properties
 - [.NET default templates for dotnet new](../core/tools/dotnet-new-sdk-templates.md) - Added the two new Blazor empty templates
 - [.NET SDK and .NET CLI telemetry](../core/tools/telemetry.md)
@@ -123,7 +121,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete](../fundamentals/syslib-diagnostics/syslib0043.md)
   - XmlSecureResolver breaking change
   - Add SYSLIB0041
-- [Overview of .NET source code analysis](../fundamentals/code-analysis/overview.md) - Update list of rules enabled for .NET 7
 - [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md)
   - Add docs for CA2019 and CA2259
   - Add docs for CA1420 and CA1422

@@ -6,12 +6,12 @@ ms.topic: overview
 ms.custom: mvc
 ---
 
-# What is Deep Learning?
+# What is deep learning?
 
 Deep learning is an umbrella term for an approach to machine learning
-that makes use of "deep" Neural Networks, a kind of models originally
-inspired by the function of biological brains.  These days, Deep
-Learning is probably the most visible area of Machine Learning, and it
+that makes use of "deep" neural networks, a kind of model originally
+inspired by the function of biological brains. Today, deep
+learning is probably the most visible area of Machine Learning, and it
 has seen amazing successes in areas like Computer Vision, Natural
 Language Processing and, in combination with Reinforcement Learning,
 more complicated settings such as game playing, decision making and

@@ -40,14 +40,13 @@ class CancelByPolling
    //<snippet3>
    static void NestedLoops(Rectangle rect, CancellationToken token)
    {
-      int col = 0;
-      for (; col < rect.columns && !token.IsCancellationRequested; col++) {
+      for (int col = 0; col < rect.columns && !token.IsCancellationRequested; col++) {
          // Assume that we know that the inner loop is very fast.
          // Therefore, polling once per column in the outer loop condition
          // is sufficient.
          for (int row = 0; row < rect.rows; row++) {
             // Simulating work.
-            Thread.SpinWait(5000);
+            Thread.SpinWait(5_000);
             Console.Write("{0},{1} ", col, row);
          }
       }

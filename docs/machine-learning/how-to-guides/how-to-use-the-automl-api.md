@@ -168,7 +168,6 @@ At this point, you can save your model or use it for making predictions. For mor
 - [Save and load a trained model](/dotnet/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net.md)
 - [Make predictions with a trained model](/dotnet/machine-learning/how-to-guides/machine-learning-model-predictions-ml-net)
 
-
 ## Modify column inference results
 
 Because <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> only loads a subset of your data, it's possible that edge cases contained outside of the samples used to infer columns are not caught and the wrong data types are set for your columns. In those cases, you can update the properties of <xref:Microsoft.ML.AutoML.ColumnInferenceResults.ColumnInformation> to account for those cases where the column inference results are not correct.

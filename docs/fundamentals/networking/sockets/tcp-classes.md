@@ -98,7 +98,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
-#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.Sockets.AddressFamily)?displayProperty=fullName> constructor
+#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.Sockets.AddressFamily)?displayProperty=nameWithType> constructor
 
 This constructor accepts only three `AddressFamily` values, otherwise it will throw a <xref:System.ArgumentException>. Valid values are:
 
@@ -118,7 +118,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
-#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.IPEndPoint)?displayProperty=fullName> constructor
+#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.IPEndPoint)?displayProperty=nameWithType> constructor
 
 Upon creating the socket, this constructor will also **bind** it to the provided **local** `IPEndPoint`. The <xref:System.Net.IPEndPoint.AddressFamily?displayProperty=nameWithType> property is used to determine the address family of the socket.
 

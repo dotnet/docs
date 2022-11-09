@@ -35,12 +35,12 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a Razor Pages application
 
-1. Create an **ASP.NET Core Razor Pages Application**.
+Create an **ASP.NET Core Razor Pages Application**.
 
-    1. Open Visual Studio and select **File > New > Project** from the menu bar.
-    1. In the New Project dialog, select the **ASP.NET Core Web App** project template.
-    1. In the **Name** text box, type "SentimentRazor" and select the **Next** button.
-    1. In the Additional information dialog, leave all the defaults as is and select the **Create** button.
+1. In Visual Studio open the **Create a new project** dialog.
+1. In the "Create a new project" dialog, select the **ASP.NET Core Web App** project template.
+1. In the **Name** text box, type "SentimentRazor" and select the **Next** button.
+1. In the Additional information dialog, leave all the defaults as is and select the **Create** button.
 
 ## Prepare and understand the data
 
@@ -59,7 +59,7 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 When first adding a machine learning model to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
 1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning Model...**.
-1. In the dialog, name the Model Builder project **SentimentAnalysis**, and click **Add**.
+1. In the dialog, name the Model Builder project **SentimentAnalysis.mbconfig**, and select **Add**.
 
 ## Choose a scenario
 
@@ -71,7 +71,7 @@ For this sample, the task is text classification. In the *Scenario* step of the 
 
 ## Select an environment
 
-Model Builder can run the training on different environments depending on the scenario that was selected.
+Model Builder can train on different environments depending on the selected scenario.
 
 Select **Local (GPU)** as your environment and click the **Next step** button.
 
@@ -90,29 +90,31 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 ## Train the model
 
-The machine learning task used to train the sentiment analysis model in this tutorial is text classification. During the model training process, Model Builder trains a NAS-BERT model for your dataset.
+The machine learning task used to train the sentiment analysis model in this tutorial is text classification. During the model training process, Model Builder trains a text classification model for your dataset using the [NAS-BERT](https://arxiv.org/abs/2105.14444) neural network architecture.
 
 1. Select **Start Training**.
 1. Once training is complete, the results from the training process are displayed in the *Training results* section of the *Train* screen.
     In addition to providing training results, three code-behind files are created under the *SentimentAnalysis.mbconfig* file.
 
     - *SentimentAnalysis.consumption.cs* -  This file contains the `ModelInput` and `ModelOutput` schemas as well as the `Predict` function generated for consuming the model.
-    - *SentimentAnalysis.training.cs* - This file contains the training pipeline (data transforms, algorithm, algorithm hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
+    - *SentimentAnalysis.training.cs* - This file contains the training pipeline (data transforms, trainer, trainer hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
     - **SentimentAnalysis.zip* - This is a serialized zip file which represents your trained ML.NET model.
 
 1. Select the **Next step** button to move to the next step.
 
 ## Evaluate the model
 
-The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the output section will contain the algorithm used by the best-performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing the top five models and their metrics is shown.
+The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the output section will contain the trainer used by the best-performing model in the as well as evaluation metrics.
 
-If you're not satisfied with your evaluation metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **Next step** button to move to the *Consume* step in Model Builder.
+If you're not satisfied with your evaluation metrics, some easy ways to try to improve model performance are to use more data.  
+
+Otherwise, select the **Next step** button to move to the *Consume* step in Model Builder.
 
 ## Add consumption project templates (Optional)
 
-In the *Consume* step, Model Builder provides project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
+In the *Consume* step, Model Builder provides project templates that you can use to consume the model. This step is optional and you can choose the method that best fits your needs for using the model.
 
-- Console App
+- Console application
 - Web API
 
 ## Add the code to make predictions
@@ -130,8 +132,6 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     1. Select the **OK** button on the **Preview Changes** dialog
     1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-    Repeats these steps for the `Torchsharp-cuda-windows` (if using GPU) or `Torchsharp-cpu` (if using CPU) NuGet packages.
-
 1. Open the *Program.cs* file in the *SentimentRazor* project.
 1. Add the following using statements to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:
 
@@ -140,7 +140,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     using static SentimentRazor.SentimentAnalysis;
     ```
 
-1. Configure the `PredictionEnginePool` for your application in the *Program.cs* file:
+1. Configure the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> for your application in the *Program.cs* file:
 
     ```csharp
     builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
@@ -149,7 +149,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 ### Create sentiment analysis handler
 
-Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the `PredictionEnginePool` to return a prediction needs to be added.
+Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> to return a prediction needs to be added.
 
 1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statements:
 
@@ -158,15 +158,15 @@ Predictions will be made inside the main page of the application. Therefore, a m
     using static SentimentRazor.SentimentAnalysis;
     ```
 
-    In order to use the `PredictionEnginePool` configured in the `Program` class, you have to inject it into the constructor of the model where you want to use it.
+    In order to use the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> configured in the *Program.cs* file, you have to inject it into the constructor of the model where you want to use it.
 
-1. Add a variable to reference the `PredictionEnginePool` inside the `IndexModel` class.
+1. Add a variable to reference the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> inside the `IndexModel` class inside the *Pages/Index.cshtml.cs* file.
 
     ```csharp
     private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
     ```
 
-1. Modify the constructor in the `IndexModel` class and inject the `PredictionEnginePool` service into it.
+1. Modify the constructor in the `IndexModel` class and inject the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> service into it.
 
     ```csharp
     public IndexModel(ILogger<IndexModel> logger, PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
@@ -199,7 +199,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
         var input = new ModelInput { SentimentText = text };
         ```
 
-    1. Use the `PredictionEnginePool` to predict sentiment.
+    1. Use the <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> to predict sentiment.
 
         ```csharp
         var prediction = _predictionEnginePool.Predict(input);
@@ -222,8 +222,6 @@ Predictions will be made inside the main page of the application. Therefore, a m
 The results returned by the `OnGetAnalyzeSentiment` will be dynamically displayed on the `Index` web page.
 
 1. Open the *Index.cshtml* file in the *Pages* directory and replace its contents with the following code:
-
-    <!-- [!code-cshtml [IndexPage](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml)] -->
 
     ```cshtml
     @page
@@ -252,8 +250,6 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
     ```
 
 1. Next, add css styling code to the end of the *site.css* page in the *wwwroot\css* directory:
-
-    <!-- [!code-css [CssStyling](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/css/site.css#L61-L105)] -->
 
     ```css
     /* Style for sentiment display */
@@ -307,7 +303,6 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
 
     1. In the *site.js* file located in the *wwwroot\js* directory, create a function called `getSentiment` to make a GET HTTP request with the user input to the `OnGetAnalyzeSentiment` handler.
 
-        <!-- [!code-javascript [GetSentimentMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L5-L10)] -->
         ```javascript
         function getSentiment(userInput) {
             return fetch(`Index?handler=AnalyzeSentiment&text=${userInput}`)
@@ -319,8 +314,6 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
 
     1. Below that, add another function called `updateMarker` to dynamically update the position of the marker on the web page as sentiment is predicted.
 
-        <!-- [!code-javascript [UpdateMarkerMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L12-L15)] -->
-
         ```javascript
         function updateMarker(markerPosition, sentiment) {
             $("#markerPosition").attr("style", `left:${markerPosition}%`);
@@ -329,8 +322,6 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
         ```
 
     1. Create an event handler function called `updateSentiment` to get the input from the user, send it to the `OnGetAnalyzeSentiment` function using the `getSentiment` function and update the marker with the `updateMarker` function.
-
-        <!-- [!code-javascript [UpdateSentimentMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L17-L34)] -->
 
         ```javascript
         function updateSentiment() {
@@ -355,7 +346,6 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
 
     1. Finally, register the event handler and bind it to the `textarea` element with the `id=Message` attribute.
 
-        <!-- [!code-javascript [UpdateSentimentEvtHandler](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/wwwroot/js/site.js#L36)] -->
         ```javascript
         $("#Message").on('change input paste', updateSentiment)        
         ```
@@ -364,9 +354,12 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
 
 Now that your application is set up, run the application, which should launch in your browser.
 
-When the application launches, enter *Model Builder is cool!* into the text area. The predicted sentiment displayed should be *Not Toxic*.
+When the application launches, enter *This model doesn't have enough data!* into the text area. The predicted sentiment displayed should be *Toxic*.
 
 ![Running window with the predicted sentiment window](./media/sentiment-analysis-model-builder/web-app.png)
+
+> [!NOTE]
+> <xref:Microsoft.Extensions.ML.PredictionEnginePool%602> creates multiple instances of <xref:Microsoft.ML.PredictionEngine%602>. Because of the size of the model, the first time you use it to make a prediction, it can take a couple of seconds. Subsequent predictions should be instantaneous.
 
 ## Next steps
 

@@ -292,7 +292,7 @@ To specify the search space range, use <xref:Microsoft.ML.SearchSpace.RangeAttri
 
 Then, anywhere you use your search space, reference the `SdcaExtendedOption` instead of <xref:Microsoft.ML.AutoML.CodeGen.SdcaOption>.
 
-For example, when you initialize your search space, you can do so as follows: 
+For example, when you initialize your search space, you can do so as follows:  
 
 ```csharp
 var sdcaSearchSpace = new SearchSpace<SdcaExtendedOption>();
@@ -330,7 +330,7 @@ For example, given restaurant review data that looks like the following:
     :::column-end:::
 :::row-end:::
 
-You want to use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> trainer to analyze sentiment where 0 is negative and 1 is positive. However, there is no `ctx.Auto().TextClassification()` configuration. 
+You want to use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> trainer to analyze sentiment where 0 is negative and 1 is positive. However, there is no `ctx.Auto().TextClassification()` configuration.  
 
 In order to use AutoML with the text classification trainer you'll have to:
 

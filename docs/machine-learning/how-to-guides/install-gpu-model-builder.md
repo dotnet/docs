@@ -44,8 +44,6 @@ However, if local GPUs or Azure are not an option for you, these scenarios also 
 
 **How do I know what GPU I have?**
 
-Follow instructions provided:
-
 1. Right-click on desktop
 1. If you see "NVIDIA Control Panel" or "NVIDIA Display" in the pop-up window, you have an NVIDIA GPU
 1. Click on "NVIDIA Control Panel" or "NVIDIA Display" in the pop-up window
@@ -65,6 +63,6 @@ Follow instructions provided:
 
 **cuda is not available, please confirm you have a cuda-supported gpu**
 
-1. Open GeForce Experience app.
+1. Open the [GeForce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/) app.
 1. The application should show installed and available driver updates. If you have trouble seeing updates, you can get the latest drivers from https://www.nvidia.com/en-in/geforce/drivers/.
 1. Install the latest drivers.

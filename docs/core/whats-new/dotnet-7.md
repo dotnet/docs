@@ -12,9 +12,7 @@ author: gewarren
 
 This article lists the new features of .NET 7 and provides links to more detailed information on each.
 
-<!--
-To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [What's new in docs for .NET 7](dotnet-7-docs.md).
--->
+To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [.NET docs: What's new for the .NET 7 release](../../whats-new/dotnet-7-docs.md).
 
 ## Performance
 
@@ -137,9 +135,13 @@ For more information, see [What's new in Visual Studio 2022](/visualstudio/ide/w
 
 C# 11 includes support for [generic math](../../standard/generics/math.md), raw string literals, file-scoped types, and other new features. For more information, see [What's new in C# 11](../../csharp/whats-new/csharp-11.md).
 
+### F# 7
+
+F# 7 continues the journey to make the language simpler and improve performance and interop with new C# features. For more information, see [Announcing F# 7](https://devblogs.microsoft.com/dotnet/announcing-fsharp-7/).
+
 ### .NET MAUI
 
-.NET Multi-platform App UI (.NET MAUI) is a cross-platform framework for creating native mobile and desktop apps with C# and XAML. It unifies Android, iOS, macOS, and Windows APIs into a single API. <!--For information about the latest updates, see [...](/dotnet/maui/...).-->
+.NET Multi-platform App UI (.NET MAUI) is a cross-platform framework for creating native mobile and desktop apps with C# and XAML. It unifies Android, iOS, macOS, and Windows APIs into a single API. For information about the latest updates, see [What's new in .NET MAUI for .NET 7](/dotnet/maui/whats-new/dotnet-7).
 
 ### ASP.NET Core
 
@@ -158,6 +160,10 @@ Much work has gone into Windows Forms for .NET 7. Improvements have been made in
 - Databinding
 
 For more information, see [What's new in Windows Forms in .NET 7](https://devblogs.microsoft.com/dotnet/winforms-enhancements-in-dotnet-7).
+
+### WPF
+
+WPF in .NET 7 includes numerous bug fixes as well as performance and accessibility improvements. For more information, see the [What's new for WPF in .NET 7](https://devblogs.microsoft.com/dotnet/wpf-on-dotnet-7/) blog post.
 
 ### Orleans
 

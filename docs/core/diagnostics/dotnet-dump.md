@@ -71,7 +71,7 @@ Captures a dump from a process.
 ### Synopsis
 
 ```console
-dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag]
+dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag] [--crashreport]
 ```
 
 ### Options

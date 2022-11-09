@@ -126,7 +126,7 @@ The new serializer requires that you are explicit about which types and members 
 
 ![orleans_analyzer](https://user-images.githubusercontent.com/203839/154169861-7c5547d0-e489-4af9-8aba-1e2f71c50211.gif)
 
-By default, Orleans will serialize your type by encoding its full name. You can override this by adding an `[Alias("MyType")]` attribute. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Note that type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyType<T, U>` could have the alias `[Alias("mytype`2")]`.
+By default, Orleans will serialize your type by encoding its full name. You can override this by adding an `[Alias("MyType")]` attribute. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Note that type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyType<T, U>` could have the alias ```[Alias("mytype`2")]```.
 
 ### Serializing `record` types
 

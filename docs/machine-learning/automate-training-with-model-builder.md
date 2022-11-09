@@ -85,7 +85,7 @@ Classification is used to categorize data into categories.
         | 5.1 | 3.5 | 1.4 | 0.2 | setosa |
     :::column-end:::
     :::column:::
-        | PredictedLabel |
+        | Predicted species |
         | --- |
         | setosa |
     :::column-end:::
@@ -112,7 +112,7 @@ Value prediction, which falls under the regression task, is used to predict numb
         | CMT | 1 | 1 | 1271 | 3.8 | CRD | 17.5 |
     :::column-end:::
     :::column:::
-        | Score |
+        | Predicted Fare |
         | --- |
         | 4.5 |
     :::column-end:::
@@ -139,7 +139,7 @@ You can use the recommendation scenario when you have a set of users and a set o
         | 1 | 2 | 4.2 |
     :::column-end:::
     :::column:::
-        | PredictedLabel |
+        | Predicted rating |
         | --- |
         | 4.5 |
     :::column-end:::
@@ -150,6 +150,27 @@ You can use the recommendation scenario when you have a set of users and a set o
 The forecasting scenario uses historical data with a time-series or seasonal component to it.
 
 You can use the forecasting scenario to forecast demand or sale for a product.
+
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | Date | SaleQty |
+        | --- | --- |
+        | 1/1/1970 | 1000 |
+    :::column-end:::
+    :::column:::
+        | 3 Day Forecast |
+        | --- |
+        | [1000,1001,1002] |
+    :::column-end:::
+:::row-end:::
 
 #### Computer Vision
 
@@ -172,7 +193,7 @@ You can use the image classification scenario if you have a set of images, and y
         :::image type="content" source="media/automate-training-with-model-builder/dog-classification.png" alt-text="Profile view of standing pug":::
     :::column-end:::
     :::column:::
-        | PredictedLabel |
+        | Predicted Label |
         | --- |
         | Dog |
     :::column-end:::
@@ -219,10 +240,14 @@ You can use the text classification scenario if you have a set of documents or c
 :::row-end:::
 :::row:::
     :::column:::
-        I really like this steak!
+        | Review |
+        | ---  |
+        | I really like this steak!|
     :::column-end:::
     :::column:::
-        Positive
+        | Sentiment |
+        | --- |
+        | Positive |
     :::column-end:::
 :::row-end:::
 
@@ -232,11 +257,15 @@ You can train your machine learning model locally on your machine or in the clou
 
 When you train locally, you work within the constraints of your computer resources (CPU, memory, and disk). When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
 
-Local CPU training is supported for all scenarios except Object Detection.
-
-Local GPU training is supported for Image Classification.
-
-Azure training is supported for Image Classification and Object Detection.
+| Scenario             | Local CPU | Local GPU | Azure |
+|-----------------------|------------|------------|--------|
+| Data classification  | ✔️       | ❌         | ❌    |
+| Value prediction     | ✔️       | ❌         | ❌    |
+| Recommendation       | ✔️       | ❌         | ❌    |
+| Forecasting          | ✔️       | ❌         | ❌    |
+| Image classification | ✔️       | ✔️        | ✔️   |
+| Object detection     | ❌        | ❌         | ✔️   |
+| Text classification  | ✔️       | ✔️        | ❌    |
 
 ## Data
 

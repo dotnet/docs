@@ -8,14 +8,24 @@ ms.custom: mvc
 
 # What is Automated Machine Learning (AutoML)?
 
-In this article you will learn what Automated machine learning (AutoML) is and how to use the AutoML API to train models in ML.NET.
+Automated machine learning (AutoML) automates the process of applying machine learning to data. Given a dataset, you can run AutoML to iterate over different data transformations, machine learning algorithms, and hyperparameters to select the best model.
 
 > [!NOTE]
 > This topic refers to the ML.NET AutoML API, which is currently in preview. Material may be subject to change.
 
-## What is AutoML?
+## How does AutoML work?
 
-Automated machine learning (AutoML) automates the process of applying machine learning to data. Given a dataset| you can run an AutoML experiment to iterate over different data featurizations, machine learning algorithms, and hyperparameters to select the best model.
+In general, the workflow to train machine learning models is as follows:
+
+- Define a problem
+- Collect data
+- Preprocess data
+- Train a model
+- Evaluate the model
+
+:::image type="content" source="media/ml-automl-workflow.png" alt-text="Traditional ML and AutoML training workflow" lightbox="media/ml-automl-workflow.png":::
+
+Preprocessing, training, and evaluation are an experimental and iterative process that requires multiple trials until you achieve satisfactory results. Because these tasks tend to be repetitive, AutoML can help automate these steps. In addition to automation, optimization techniques are used during the training and evaluation process to find and select algorithms and hyperparameters.
 
 ## When should I use AutoML?
 
@@ -52,7 +62,7 @@ AutoML provides preconfigured defaults for the following tasks:
 - Multiclass classification
 - Regression
 
-For other tasks, configure. For more information, see the [How to use the ML.NET Automated Machine Learning (AutoML) API](how-to-guides/how-to-use-the-automl-api.md) guide.  
+For other tasks, you can build your own trial runner to enable those scenarios. For more information, see the [How to use the ML.NET Automated Machine Learning (AutoML) API](how-to-guides/how-to-use-the-automl-api.md) guide.  
 
 ## Next steps
 

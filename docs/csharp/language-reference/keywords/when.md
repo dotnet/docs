@@ -19,7 +19,7 @@ You use the `when` contextual keyword to specify a filter condition in the follo
 
 ## `when` in a `catch` statement
 
-The `when` keword can be used in a `catch` statement to specify a condition that must be true for the handler for a specific exception to execute. Its syntax is:
+The `when` keyword can be used in a `catch` statement to specify a condition that must be true for the handler for a specific exception to execute. Its syntax is:
 
 ```csharp
 catch (ExceptionType [e]) when (expr)

@@ -7,7 +7,7 @@ namespace Console.ExampleFormatters.Custom;
 
 public sealed class CustomFormatter : ConsoleFormatter, IDisposable
 {
-    private readonly IDisposable _optionsReloadToken;
+    private readonly IDisposable? _optionsReloadToken;
     private CustomOptions _formatterOptions;
 
     public CustomFormatter(IOptionsMonitor<CustomOptions> options)
@@ -21,7 +21,7 @@ public sealed class CustomFormatter : ConsoleFormatter, IDisposable
 
     public override void Write<TState>(
         in LogEntry<TState> logEntry,
-        IExternalScopeProvider scopeProvider,
+        IExternalScopeProvider? scopeProvider,
         TextWriter textWriter)
     {
         string? message =

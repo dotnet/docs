@@ -7,7 +7,7 @@ public class EntityConfigurationContext : DbContext
 {
     private readonly string _connectionString;
 
-    public DbSet<Settings> Settings { get; set; }
+    public DbSet<Settings> Settings => Set<Settings>();
 
     public EntityConfigurationContext(string? connectionString) =>
         _connectionString = connectionString ?? "";

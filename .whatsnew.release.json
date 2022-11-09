@@ -6,11 +6,18 @@
         "linkFormat": "relative",
         "relativeLinkPrefix": "../"
     },
+    "inclusionCriteria": {
+        "labels": [
+            "label:\":checkered_flag: Release: .NET 7\""
+        ],
+        "maxFilesChanged": 100,
+        "minAdditionsToFile": 1
+    },
     "navigationOptions": {
-        "maximumNumberOfArticles": 3,
+        "maximumNumberOfArticles": 4,
         "tocParentNode": "What's new",
         "repoTocFolder": "docs/whats-new",
-        "indexParentNode": "Latest documentation updates",
+        "indexParentNode": ".NET release updates",
         "repoIndexFolder": "docs/whats-new"
     },
     "areas": [

@@ -141,7 +141,7 @@ socket.Bind(ep);
 
 #### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.String,System.Int32)?displayProperty=nameWithType> constructor
 
-This constructor will attempt to create a dual-stack similarly to the default constructor and **connect** it to the **remote** endpoint defined by `hostname` and `port`.
+This constructor will attempt to create a dual-stack similarly to the default constructor and **connect** it to the **remote** DNS endpoint defined by `hostname` and `port`.
 
 Consider the following TCP client code:
 
@@ -227,6 +227,7 @@ Consider the following `TcpClient` code:
 ```csharp
 var listener = new TcpListener(IPAddress.Loopback, 5000);
 var acceptSocket = listener.AcceptSocket();
+
 // async code:
 // var acceptSocket = await listener.AcceptSocketAsync();
 ```
@@ -237,6 +238,7 @@ The preceding TCP listener code is functionally equivalent to the following sock
 var ep = new IPEndPoint(IPAddress.Loopback, 5000);
 var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 var acceptSocket = socket.Accept();
+
 // async code:
 // var acceptSocket = await socket.AcceptAsync();
 ```
@@ -256,6 +258,7 @@ Which is equivalent to the following socket code:
 
 ```csharp
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+
 // Be aware that transfering the ownership means that closing/disposing the stream will also close the underlying socket.
 var stream = new NetworkStream(socket, ownsSocket: true);
 ```

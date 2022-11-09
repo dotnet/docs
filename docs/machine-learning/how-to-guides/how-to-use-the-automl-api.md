@@ -33,7 +33,7 @@ AutoML provides several defaults for quickly training models. In this section yo
 
 ### Defining your problem
 
-Given a dataset stored in a comma-separated file called *taxi-fare.csv* that looks like the following:  
+Given a dataset stored in a comma-separated file called *taxi-fare-train.csv* that looks like the following:  
 
 | vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance|payment_type | fare_amount |
 |---|---|---|---|---|---|---|
@@ -51,9 +51,12 @@ Then, to load your data, use the <xref:Microsoft.ML.AutoML.AutoCatalog.InferColu
 // Initialize MLContext
 MLContext ctx = new MLContext();
 
+// Define data path
+var dataPath = Path.GetFullPath(@"..\..\..\..\Data\taxi-fare-train.csv");
+
 // Infer column information
-ColumnInferenceResults columnInference = 
-    ctx.Auto().InferColumns("taxi-fare.csv", labelColumnName: "fare_amount", groupColumns:false);
+ColumnInferenceResults columnInference =
+    ctx.Auto().InferColumns(dataPath, labelColumnName: "fare_amount", groupColumns: false);
 ```
 
 <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> loads a few rows from the dataset. It then inspects the data and tries to guess or infer the data type for each of the columns based on their content.
@@ -62,7 +65,7 @@ The default behavior is to group columns of the same type into feature vectors o
 
 The result of <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> a <xref:Microsoft.ML.AutoML.ColumnInferenceResults> object which contains the options needed to create a <xref:Microsoft.ML.Data.TextLoader> as well as column information.
 
-For the sample dataset in *taxi-fare.csv*, column information might look like the following:
+For the sample dataset in *taxi-fare-train.csv*, column information might look like the following:
 
 - **LabelColumnName**: fare_amount
 - **CategoricalColumnNames**: vendor_id, payment_type
@@ -75,14 +78,13 @@ Once you have your column information, use the <xref:Microsoft.ML.Data.TextLoade
 TextLoader loader = ctx.Data.CreateTextLoader(columnInference.TextLoaderOptions);
 
 // Load data into IDataView
-IDataView data = loader.Load("taxi-fare.csv");
+IDataView data = loader.Load(dataPath);
 ```
 
 It's often good practice to split your data into train and validation sets. Use <xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A> to create an 80% training and 20% validation split of your dataset.
 
 ```csharp
-// Split into train (70%), validation (20%) sets
-TrainTestData trainValidationData = ctx.Data.TrainTestSplit(data, testFraction:0.2);
+TrainTestData trainValidationData = ctx.Data.TrainTestSplit(data, testFraction: 0.2);
 ```
 
 ### Define your pipeline
@@ -90,9 +92,9 @@ TrainTestData trainValidationData = ctx.Data.TrainTestSplit(data, testFraction:0
 Your pipeline defines the data preprocesing steps and machine learning pipeline to use for training your model.
 
 ```csharp
-SweepablePipeline pipeline = 
-    ctx.Auto().Featurizer(data, columnInformation:columnInference.ColumnInformation)
-        .Append(ctx.Auto().Regression(labelColumnName:columnInference.ColumnInformation.LabelColumnName));
+SweepablePipeline pipeline =
+    ctx.Auto().Featurizer(data, columnInformation: columnInference.ColumnInformation)
+        .Append(ctx.Auto().Regression(labelColumnName: columnInference.ColumnInformation.LabelColumnName));
 ```
 
 A <xref:Microsoft.ML.AutoML.SweepablePipeline> is a pipeline containing a collection of <xref:Microsoft.ML.AutoML.SweepableEstimator>. A <xref:Microsoft.ML.AutoML.SweepableEstimator> is an ML.NET <xref:Microsoft.ML.AutoML.Estimator> with a <xref:Microsoft.ML.SearchSpace>.
@@ -104,19 +106,19 @@ The resulting output is a single column containing a numerical feature vector re
 If you want finer control over your data preprocessing, you can create a pipeline with each of the individual preprocessing steps. For more information, see the [prepare data for building a model guide](prepare-data-ml-net.md).
 
 > [!TIP]
-> Use `Featurizer` with <xref:Microsoft.ML.AutoML.ColumnInferenceResults> to maximize the utility of AutoML.
+> Use <xref:Microsoft.ML.AutoML.AutoCatalog.Featurizer%2A> with <xref:Microsoft.ML.AutoML.ColumnInferenceResults> to maximize the utility of AutoML.
 
 For training, AutoML provides a sweepable pipeline with default trainers and search space configurations for the following machine learning tasks:
 
-- Binary classification
-- Multiclass classification
-- Regression
+- <xref:Microsoft.ML.AutoML.AutoCatalog.BinaryClassification%2A>
+- <xref:Microsoft.ML.AutoML.AutoCatalog.MultiClassification%2A>
+- <xref:Microsoft.ML.AutoML.AutoCatalog.Regression%2A>
 
 For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see the [machine learning tasks in ML.NET guide](/dotnet/machine-learning/resources/tasks.md).
 
 ### Configure your experiment
 
-First, create an AutoML experiment. An experiment is a collection of trials.  
+First, create an AutoML experiment. An <xref:Microsoft.ML.AutoML.AutoMLExperiment> is a collection of <xref:Microsoft.ML.AutoML.TrialResult>.
 
 ```csharp
 // Create AutoML experiment
@@ -126,10 +128,9 @@ AutoMLExperiment experiment = ctx.Auto().CreateExperiment();
 Once your experiment is created, use the extension methods it provides to configure different settings.
 
 ```csharp
-// Configure experiment
 experiment
     .SetPipeline(pipeline)
-    .SetRegressionMetric(RegressionMetric.RSquared, labelColumn:columnInference.ColumnInformation.LabelColumnName)
+    .SetRegressionMetric(RegressionMetric.RSquared, labelColumn: columnInference.ColumnInformation.LabelColumnName)
     .SetTrainingTimeInSeconds(60)
     .SetDataset(trainValidationData);
 ```
@@ -145,7 +146,7 @@ Once your experiment is defined, you'll want some way to track its progress. The
 
 ```csharp
 // Log experiment trials
-ctx.Log += (_,e) => {    
+ctx.Log += (_, e) => {
     if (e.Source.Equals("AutoMLExperiment"))
     {
         Console.WriteLine(e.RawMessage);
@@ -193,7 +194,7 @@ For example, in the taxi fare regression scenario, to exclude the LightGBM algor
 ctx.Auto().Regression(labelColumnName: columnInference.ColumnInformation.LabelColumnName, useLgbm:false)
 ```
 
-The process for excluding trainers in other tasks like binary and multiclass classification the same way.
+The process for excluding trainers in other tasks like binary and multiclass classification works the same way.
 
 ### Customize a sweepable estimator
 
@@ -206,9 +207,9 @@ When you want to more granular customization of estimator options included as pa
 
 AutoML provides a set of preconfigured search spaces for trainers in the following machine learning tasks:
 
-- Binary classification
-- Multiclass classification
-- Regression
+- <xref:Microsoft.ML.AutoML.AutoCatalog.BinaryClassification%2A>
+- <xref:Microsoft.ML.AutoML.AutoCatalog.MultiClassification%2A>
+- <xref:Microsoft.ML.AutoML.AutoCatalog.Regression%2A>
 
 In this example, the search space used is for the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>.
 
@@ -221,11 +222,13 @@ Then, use the search space to define a custom factory method to create the <xref
 
 ```csharp
 // Use the search space to define a custom factory to create an SdcaRegressionTrainer
-var sdcaEstimatorFactory = (MLContext ctx, SdcaOption param) =>
+var sdcaFactory = (MLContext ctx, SdcaOption param) =>
 {
     var sdcaOption = new SdcaRegressionTrainer.Options();
     sdcaOption.L1Regularization = param.L1Regularization;
     sdcaOption.L2Regularization = 0.02f;
+
+    sdcaOption.LabelColumnName = columnInference.ColumnInformation.LabelColumnName;
 
     return ctx.Regression.Trainers.Sdca(sdcaOption);
 };
@@ -235,14 +238,13 @@ A sweepable estimator is the combination of an estimator and a search space. Now
 
 ```csharp
 // Define Sdca sweepable estimator (SdcaRegressionTrainer + SdcaOption search space)
-var sdcaSweepableEstimator = ctx.Auto().CreateSweepableEstimator(sdcaEstimatorFactory, sdcaSearchSpace);
+var sdcaSweepableEstimator = ctx.Auto().CreateSweepableEstimator(sdcaFactory, sdcaSearchSpace);
 ```
 
 To use your sweepable estimator in your experiment, append it to your sweepable pipeline.  
 
 ```csharp
-// Add sweepable estimator to sweepable pipeline
-SweepablePipeline customEstimatorPipeline =
+SweepablePipeline pipeline =
     ctx.Auto().Featurizer(data, columnInformation: columnInference.ColumnInformation)
         .Append(sdcaSweepableEstimator);
 ```
@@ -251,16 +253,29 @@ Because sweepable pipelines are a collection of sweepable estimators, you can co
 
 ### Customize your search space
 
-There are scenarios where you want to go beyond customizing the sweepable estimators used in your experiment and want control the search space range.
+There are scenarios where you want to go beyond customizing the sweepable estimators used in your experiment and want control the search space range. T
 
 ```csharp
-var originalSdcaSearchSpace = new SearchSpace<SdcaOption>();
-originalSdcaSearchSpace["L1Regularization"] = new UniformSingleOption(min:0.01f, max:2.0f, logBase: false, defaultValue:0.01f);
+sdcaSearchSpace["L1Regularization"] = new UniformSingleOption(min: 0.01f, max: 2.0f, logBase: false, defaultValue: 0.01f);
 ```
 
-### Create a custom search space
+Depending on the data type of the hyperparameter you want to set, you can choose from the following options:
 
-AutoML provides a set of preconfigured search spaces.
+- Numerical options
+  - <xref:Microsoft.ML.SearchSpace.Option.UniformIntOption>
+  - <xref:Microsoft.ML.SearchSpace.Option.UniformSingleOption>
+  - <xref:Microsoft.ML.SearchSpace.Option.UniformDoubleOption>
+- Boolean and strings
+  - <xref:Microsoft.ML.SearchSpace.Option.ChoiceOption>
+
+Search spaces can contain nested search spaces as well.
+
+```csharp
+var searchSpace = new SearchSpace();
+var nestedSearchSpace = new SearchSpace();
+nestedSearchSpace["IntOption"] = new UniformIntOption(-10, 10, false, 0);
+searchSpace["Nest"] = nestedSearchSpace;
+```
 
 ### Create your own trial runner
 
@@ -275,46 +290,62 @@ By default, AutoML supports binary classification, multiclass classification, an
 
 For scenarios that don't have preconfigured search spaces and sweepable estimators you can create your own and use a trial runner to enable AutoML for that scenario.
 
-For example, given hourly energy demand data that looks like the following:
+For example, given restaurant review data that looks like the following:
 
-| load   |
-|---------|
-| 20236  |
-| 55784  |
-| 179759 |
-| 314597 |
+| | | 
+| --- | --- |
+| Wow... Loved this place. | 1 | 
+| Crust is not good.	| 0 | 
 
-You want to use the <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A> trainer to forecast future demand.
+You want to use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> trainer to analyze sentiment where 0 is negative and 1 is positive.
 
 In order to do so you'll have to:
 
-1. Define a custom search space
+1. Create your own search space. You can also define <xref:Microsoft.ML.SearchSpace.Option> using the <xref:Microsoft.ML.SearchSpace.RangeAttribute>.
 
     ```csharp
-    // Define ForecastBySsa search space
-    public class SSAOption
+    // Define TextClassification search space
+    public class TCOption
     {
-    
-        [Range(2, 24 * 7 * 30)]
-        public int WindowSize { get; set; } = 2;
-    
-        [Range(2, 24 * 7 * 30)]
-        public int SeriesLength { get; set; } = 2;
-    
-        [Range(2, 24 * 7 * 30)]
-        public int TrainSize { get; set; } = 2;
-    
-        [Range(1, 24 * 7 * 30)]
-        public int Horizon { get; set; } = 1;
+        [Range(64, 128, 32)]
+        public int BatchSize { get; set; }
     }
     ```
 
-1. Implement a custom trial runner
+    In this case, AutoML will search for different configurations of the `BatchSize` hyperparameter.
 
-    To create a trial runner, implement <xref:Microsoft.ML.AutoML.ITrialRunner>:
+1. Create a sweepable estimator and add it to your pipeline.
 
     ```csharp
-    public class SSARunner : ITrialRunner
+    // Initialize serach space
+    var tcSearchSpace = new SearchSpace<TCOption>();
+    
+    // Create factory for Text Classification trainer
+    var tcFactory = (MLContext ctx, TCOption param) =>
+    {
+        return ctx.MulticlassClassification.Trainers.TextClassification(
+            sentence1ColumnName: textColumnName,
+            batchSize:param.BatchSize);
+    };
+    
+    // Create text classification sweepable estimator
+    var tcEstimator = 
+        ctx.Auto().CreateSweepableEstimator(tcFactory, tcSearchSpace);
+    
+    // Define text classification pipeline
+    var pipeline =
+        ctx.Transforms.Conversion.MapValueToKey(columnInference.ColumnInformation.LabelColumnName)
+            .Append(tcEstimator);
+    ```
+
+    In this example, the `TCOption` search space and a custom <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> factory are used to create a sweepable estimator.
+
+1. Create a custom trial runner
+
+    To create a custom trial runner, implement <xref:Microsoft.ML.AutoML.ITrialRunner>:
+
+    ```csharp
+    public class TCRunner : ITrialRunner
     {
         private readonly MLContext _context;
         private readonly TrainTestData _data;
@@ -322,8 +353,14 @@ In order to do so you'll have to:
         private readonly IDataView _evaluateDataset;
         private readonly SweepablePipeline _pipeline;
         private readonly string _labelColumnName;
+        private readonly MulticlassClassificationMetric _metric;
 
-        public SSARunner(MLContext context, TrainTestData data, string labelColumnName, SweepablePipeline pipeline)
+        public TCRunner(
+            MLContext context, 
+            TrainTestData data, 
+            SweepablePipeline pipeline,
+            string labelColumnName = "Label", 
+            MulticlassClassificationMetric metric = MulticlassClassificationMetric.MicroAccuracy)
         {
             _context = context;
             _data = data;
@@ -331,6 +368,7 @@ In order to do so you'll have to:
             _evaluateDataset = data.TestSet;
             _labelColumnName = labelColumnName;
             _pipeline = pipeline;
+            _metric = metric;
         }
 
         public void Dispose()
@@ -366,50 +404,26 @@ In order to do so you'll have to:
 
                 // Get pipeline parameters
                 var parameter = settings.Parameter["_pipeline_"];
-                
-                // Build pipeline from parameters
+
+                // Use parameters to build pipeline
                 var pipeline = _pipeline.BuildFromOption(_context, parameter);
-                
+
                 // Train model
                 var model = pipeline.Fit(_trainDataset);
 
-                // Create prediction engine for single predictions
-                var predictEngine = model.CreateTimeSeriesEngine<ForecastInput, ForecastOutput>(_context);
+                // Evaluate the model
+                var predictions = model.Transform(_evaluateDataset);
 
-                // Create a checkpoint for time series engine prediction
-                predictEngine.CheckPoint(_context, "origin");
-
-                var predictedLoad1H = new List<float>();
-                var N = _evaluateDataset.GetRowCount();
-
-                // Evaluate performance on a rolling basis
-                foreach (var load in _evaluateDataset.GetColumn<Single>(_labelColumnName))
-                {
-                    // First, get next n predictions where n is horizon, in this case, it's always 1.
-                    var predict = predictEngine.Predict();
-
-                    // Add prediction to list of predictions
-                    predictedLoad1H.Add(predict.Prediction[0]);
-
-                    // Update model with true value
-                    predictEngine.Predict(new ForecastInput()
-                    {
-                        Load = load,
-                    });
-                }
-
-                // Calculate (Root Mean Squared Error) evaluation metric 
-                var rmse = Enumerable.Zip(_evaluateDataset.GetColumn<float>(_labelColumnName), predictedLoad1H)
-                                       .Select(x => Math.Pow(x.First - x.Second, 2))
-                                       .Average();
-                rmse = Math.Sqrt(rmse);
+                // Get metrics
+                var evaluationMetrics = _context.MulticlassClassification.Evaluate(predictions, labelColumnName: _labelColumnName);
+                var chosenMetric = GetMetric(evaluationMetrics);
 
                 return new TrialResult()
                 {
-                    Metric = rmse,
+                    Metric = chosenMetric,
                     Model = model,
                     TrialSettings = settings,
-                    DurationInMilliseconds = stopWatch.ElapsedMilliseconds,
+                    DurationInMilliseconds = stopWatch.ElapsedMilliseconds
                 };
             }
             catch (Exception)
@@ -424,71 +438,54 @@ In order to do so you'll have to:
             }
         }
 
-        // Define input schema
-        private class ForecastInput
+        // Helper function to choose metric used by experiment
+        private double GetMetric(MulticlassClassificationMetrics metric)
         {
-            [ColumnName("load")]
-            public float Load { get; set; }
-        }
-
-        // Define output schema
-        private class ForecastOutput
-        {
-            [ColumnName("prediction")]
-            public float[] Prediction { get; set; }
+            return _metric switch
+            {
+                MulticlassClassificationMetric.MacroAccuracy => metric.MacroAccuracy,
+                MulticlassClassificationMetric.MicroAccuracy => metric.MicroAccuracy,
+                MulticlassClassificationMetric.LogLoss => metric.LogLoss,
+                MulticlassClassificationMetric.LogLossReduction => metric.LogLossReduction,
+                MulticlassClassificationMetric.TopKAccuracy => metric.TopKAccuracy,
+                _ => throw new NotImplementedException(),
+            };
         }
     }
     ```
 
-    <xref:Microsoft.ML.AutoML.ITrialRunner> has an asynchronous run method which produces <xref:Microsoft.ML.AutoML.TrialResult> information.
-
-1. Create a sweepable estimator and add it to your pipeline.
-
-    ```csharp
-    var ssaSearchSpace = new SearchSpace<SSAOption>();
-    
-    var ssaFactory = (MLContext ctx, SSAOption param) =>
-    {
-        return ctx.Forecasting.ForecastBySsa(
-            outputColumnName: "prediction",
-            inputColumnName: "load",
-            windowSize: param.WindowSize,
-            seriesLength: param.SeriesLength,
-            trainSize: param.TrainSize,
-            horizon: param.Horizon);
-    };
-    
-    var ssaSweepableEstimator = ctx.Auto().CreateSweepableEstimator(ssaFactory, ssaSearchSpace);
-
-    var ssaPipeline =
-        new EstimatorChain<ITransformer>()
-            .Append(ssaSweepableEstimator);
-    ```
+    The `TCRunner` implementation in this example:
+        - Extracts the hyperparameters chosen for that trial
+        - Uses the hyperparameters to create an ML.NET pipeline
+        - Uses the ML.NET pipeline to train a model
+        - Evaluates the model
+        - Returns a <xref:Microsoft.ML.AutoML.TrialResult> object with the information for that trial
 
 1. Initialize your custom trial runner
 
     ```csharp
-    var ssaRunner = new SSARunner(ssaCtx, ssaDataSplit, labelColumnName: "load", pipeline:ssaPipeline);
+    var tcRunner = new TCRunner(context: ctx, data: trainValidationData, pipeline: pipeline);
     ```
 
-1. Create and configure your experiment. Use the `SetTrialRunner` extension method to add your custom trial runner to your experiment.
+1. Create and configure your experiment. Use the <xref:Microsoft.ML.AutoML.AutoMLExperiment.SetTrialRunner%2A> extension method to add your custom trial runner to your experiment.
 
     ```csharp
-    AutoMLExperiment ssaExperiment = ssaCtx.Auto().CreateExperiment();
+    AutoMLExperiment experiment = ctx.Auto().CreateExperiment();
     
-    ssaExperiment
-        .SetPipeline(ssaPipeline)
-        .SetRegressionMetric(RegressionMetric.RootMeanSquaredError, labelColumn: "load", scoreColumn: "prediction")
-        .SetTrainingTimeInSeconds(60)
-        .SetDataset(ssaDataSplit)
-        .SetTrialRunner(ssaRunner);
+    // Configure AutoML experiment
+    experiment
+        .SetPipeline(pipeline)
+        .SetMulticlassClassificationMetric(MulticlassClassificationMetric.MicroAccuracy, labelColumn: columnInference.ColumnInformation.LabelColumnName)
+        .SetTrainingTimeInSeconds(120)
+        .SetDataset(trainValidationData)
+        .SetTrialRunner(tcRunner);
     ```
 
 1. Run your experiment
 
     ```csharp
-    var ssaCts = new CancellationTokenSource();
-    TrialResult ssaExperimentResults = await ssaExperiment.RunAsync(ssaCts.Token);
+    var tcCts = new CancellationTokenSource();
+    TrialResult textClassificationExperimentResults = await experiment.RunAsync(tcCts.Token);
     ```
 
 ### Choose a different tuner
@@ -503,10 +500,10 @@ Use the following methods to set your tuner:
 - **Cost Frugal** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetCostFrugalTuner%2A>
 - **Eci Cost Frugal** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetEciCostFrugalTuner%2A>
 
-For example, to use the SMAC tuner, your code might look like the following:
+For example, to use the grid search tuner, your code might look like the following:
 
 ```csharp
-experiment.SetSmacTuner();
+experiment.SetGridSearchTuner();
 ```
 
 ### Configure experiment monitoring
@@ -524,6 +521,8 @@ public class AutoMLMonitor : IMonitor
     {
         _pipeline = pipeline;
     }
+
+    public IEnumerable<TrialResult> GetCompletedTrials() => _completedTrials;
 
     public void ReportBestTrial(TrialResult result)
     {
@@ -556,13 +555,13 @@ public class AutoMLMonitor : IMonitor
 
 The <xref:Microsoft.ML.AutoML.IMonitor> interface has four lifecycle events:
 
-- ReportBestTrial
-- ReportCompletedTrial
-- ReportFailTrial
-- ReportRunningTrial
+- <xref:Microsoft.ML.AutoML.IMonitor.ReportBestTrial%2A>
+- <xref:Microsoft.ML.AutoML.IMonitor.ReportCompletedTrial%2A>
+- <xref:Microsoft.ML.AutoML.IMonitor.ReportFailTrial%2A>
+- <xref:Microsoft.ML.AutoML.IMonitor.ReportRunningTrial%2A>
 
 > [!TIP]
-> Although it's not required, include your <xref:Microsoft.ML.AutoML.SweepablePipeline> in your monitor so you can inspect the pipeline that was generated for a trial using the `Parameter` property of the <xref:Microsoft.ML.AutoML.TrialSettings>.
+> Although it's not required, include your <xref:Microsoft.ML.AutoML.SweepablePipeline> in your monitor so you can inspect the pipeline that was generated for a trial using the <xref:Microsoft.ML.AutoML.TrialSettings.Parameter> property of the <xref:Microsoft.ML.AutoML.TrialSettings>.
 
 In this example, only the <xref:Microsoft.ML.AutoML.IMonitor.ReportCompletedTrial%2A> and <xref:Microsoft.ML.AutoML.IMonitor.ReportFailTrial%2A> are implemented.
 
@@ -571,6 +570,13 @@ Once you've implemented your monitor, set it as part of your experiment configur
 ```csharp
 var monitor = new AutoMLMonitor(pipeline);
 experiment.SetMonitor(monitor);
+```
+
+Then, run your experiment:
+
+```csharp
+var cts = new CancellationTokenSource();
+TrialResult experimentResults = await experiment.RunAsync(cts.Token);
 ```
 
 When you run the experiment with this implementation, the output should look similar to the following:
@@ -585,25 +591,27 @@ Trial 2 finished training in 3941ms with pipeline ReplaceMissingValues=>OneHotHa
 
 By default, AutoML only stores the <xref:Microsoft.ML.AutoML.TrialResult> for the best model. However, if you wanted to persist each of the trials, you can do so from within your monitor.
 
-Inside of your monitor, define a property for your completed trials and a method for accessing them.
+Inside of your monitor: 
 
-```csharp
-private readonly List<TrialResult> _completedTrials;
+1. Define a property for your completed trials and a method for accessing them.
 
-public IEnumerable<TrialResult> GetCompletedTrials() => _completedTrials;
-```
+    ```csharp
+    private readonly List<TrialResult> _completedTrials;
+    
+    public IEnumerable<TrialResult> GetCompletedTrials() => _completedTrials;
+    ```
 
-Initialize it in your constructor
+1. Initialize it in your constructor
 
-```csharp
-public AutoMLMonitor(SweepablePipeline pipeline)
-{
-    //...
-    _completedTrials = new List<TrialResult>();
-    //...
-}
-```
-
+    ```csharp
+    public AutoMLMonitor(SweepablePipeline pipeline)
+    {
+        //...
+        _completedTrials = new List<TrialResult>();
+        //...
+    }
+    ```
+    
 Append each trial result inside your <xref:Microsoft.ML.AutoML.IMonitor.ReportCompletedTrial%2A> lifecycle method.
 
 ```csharp
@@ -617,14 +625,14 @@ public void ReportCompletedTrial(TrialResult result)
 When training completes, you can access all the completed trials by calling `GetCompletedTrials`
 
 ```csharp
-monitor.GetCompletedTrials()
+var completedTrials = monitor.GetCompletedTrials();
 ```
 
 At this point you can perform additional processing on the collection of completed trials like choosing another model other than the one selected by AutoML, logging trial results to a database, or rebuilding the pipeline from any of the completed trials.
 
 ### Cancel asynchronous experiments
 
-When you run experiments asynchronously, make sure to cleanly terminate the process. To do so, use cancellation tokens.
+When you run experiments asynchronously, make sure to cleanly terminate the process. To do so, use a <xref:System.Threading.CancellationToken>.
 
 ```csharp
 var cts = new CancellationTokenSource();

@@ -80,7 +80,7 @@ Classification is used to categorize data into categories.
 :::row-end:::
 :::row:::
     :::column:::
-        | SepalLength | SepalWidth | Petal Length | Petal Width | Species (Label) |
+        | SepalLength | SepalWidth | Petal Length | Petal Width | Species |
         | --- | --- | --- | --- | --- |
         | 5.1 | 3.5 | 1.4 | 0.2 | setosa |
     :::column-end:::
@@ -107,7 +107,7 @@ Value prediction, which falls under the regression task, is used to predict numb
 :::row-end:::
 :::row:::
     :::column:::
-        | vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance | payment_type | fare_amount (Label) |
+        | vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance | payment_type | fare_amount |
         | --- | --- | --- | --- | --- | --- | --- |
         | CMT | 1 | 1 | 1271 | 3.8 | CRD | 17.5 |
     :::column-end:::
@@ -134,7 +134,7 @@ You can use the recommendation scenario when you have a set of users and a set o
 :::row-end:::
 :::row:::
     :::column:::
-        | UserId | ProductId | Rating (Label) |
+        | UserId | ProductId | Rating |
         | --- | --- | --- |
         | 1 | 2 | 4.2 |
     :::column-end:::

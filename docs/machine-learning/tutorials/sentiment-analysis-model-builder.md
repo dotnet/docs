@@ -63,7 +63,7 @@ When first adding a machine learning model to the solution it will prompt you to
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-scenarios-2-0.png#lightbox)
+:::image type="content" source="../media/model-builder-scenarios-2-0.png" alt-text="Model Builder Scenario Screen" lightbox="../media/model-builder-scenarios-2-0.png":::
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 

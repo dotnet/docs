@@ -12,7 +12,7 @@ author: gewarren
 
 This article lists the new features of .NET 7 and provides links to more detailed information on each.
 
-To find all the <https://learn.microsoft.com/dotnet> articles that have been updated for .NET 7, see [.NET docs: What's new for the .NET 7 release](../../whats-new/dotnet-7-docs.md).
+To find all the .NET articles that have been updated for .NET 7, see [.NET docs: What's new for the .NET 7 release](../../whats-new/dotnet-7-docs.md).
 
 ## Performance
 

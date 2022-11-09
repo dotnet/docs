@@ -123,6 +123,10 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen`
   - `tizen.4.0.0`
   - `tizen.5.0.0`
+  - `tizen.5.5.0`
+  - `tizen.6.0.0`
+  - `tizen.6.5.0`
+  - `tizen.7.0.0`
 
 For more information, see [.NET dependencies and requirements](./install/linux.md).
 

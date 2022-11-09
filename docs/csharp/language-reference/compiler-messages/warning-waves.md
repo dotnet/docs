@@ -3,7 +3,9 @@ title: "C# Compiler warning waves"
 description: "C# warning waves are optional warnings that can be reported on code where previously a warning wouldn't have been reported. They represent practices that could be harmful, or potentially elements that may be breaking changes in the future."
 ms.date: 05/11/2022
 f1_keywords:
+  - "CS7023"
   - "CS8073"
+  - "CS8509"
   - "CS8848"
   - "CS8880"
   - "CS8881"
@@ -18,8 +20,10 @@ f1_keywords:
   - "CS8898"
   - "CS8826"
   - "CS8981"
-helpviewer_keywords:
+helpviewer_keywords: 
+  - "CS7023"
   - "CS8073"
+  - "CS8509"
   - "CS8848"
   - "CS8880"
   - "CS8881"
@@ -66,6 +70,20 @@ The following partial class implementation generates several examples of CS8626:
 
 To fix any instance of these warnings, ensure the two signatures match.
 
+## CS7023 - A static type is used in an 'is' or 'as' expression.
+
+*Warning wave 5*
+
+The `is` and `as` expressions always return `false` for a static type because you can't create instances of a static type. The following code produces CS7023:
+
+:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="StaticTypeAsIs":::
+
+The compiler reports this warning because the type test can never succeed. To correct this warning, remove the test and remove any code executed only if the test succeeded. In the preceding example, the `else` clause is always executed. The method body could be replaced by that single line:
+
+```csharp
+Console.WriteLine("o is not an instance of a static class");
+```
+
 ## CS8073 - The result of the expression is always 'false' (or 'true').
 
 *Warning wave 5*
@@ -75,6 +93,16 @@ The `==` and `!=` operators always return `false` (or `true`) when comparing an 
 :::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="StructsArentNull":::
 
 To fix this error, remove the null check and code that would execute if the object is `null`.
+
+## CS8509 - The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.
+
+*Warning wave 5*
+
+The following code snippets generate CS8509:
+
+:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="SwitchNotAllPossibleValues":::
+
+For more information, see [Switch](../statements/selection-statements.md#the-switch-statement).
 
 ## CS8848 - Operator 'from' can't be used here due to precedence. Use parentheses to disambiguate.
 

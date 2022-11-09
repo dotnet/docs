@@ -47,7 +47,7 @@ The element value is the warning level you want displayed for the compilation: L
 | 4   (the default)|Displays all level 3 warnings plus informational warnings. |
 
 > [!WARNING]
-> The compiler command line accepts values greater than 4 to enable [warning wave warnings](../compiler-messages/warning-waves-overview.md). However, the .NET SDK sets the *WarningLevel* to match the *AnalysisLevel* in your project file.
+> The compiler command line accepts values greater than 4 to enable [warning wave warnings](../compiler-messages/warning-waves.md). However, the .NET SDK sets the *WarningLevel* to match the *AnalysisLevel* in your project file.
 
 To get information about an error or warning, you can look up the error code in the [Help Index](/visualstudio/help-viewer/install-manage-local-content). For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#nowarn) to disable certain warnings.  
 
@@ -55,14 +55,14 @@ To get information about an error or warning, you can look up the error code in 
 
 | Analysis level   | Meaning |
 |------------------|---------|
-| 5                | Displays all optional [warning wave 5 warnings](../compiler-messages/cs7023.md). |
-| 6                | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves-overview.md#cs8826---partial-method-declarations-have-signature-differences). |
-| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves-overview.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters). |
+| 5                | Displays all optional [warning wave 5 warnings](../compiler-messages/warning-waves.md#cs7023---a-static-type-is-used-in-an-is-or-as-expression). |
+| 6                | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences). |
+| 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters). |
 | latest (default) | Displays all informational warnings up to and including the current release. |
 | preview          | Displays all informational warnings up to and including the latest preview release. |
 | none             | Turns off all informational warnings. |
 
-For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves-overview.md).
+For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves.md).
 
 To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**NoWarn**](#nowarn) to disable certain warnings.  
 

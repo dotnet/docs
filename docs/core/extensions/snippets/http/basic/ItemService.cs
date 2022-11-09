@@ -5,7 +5,7 @@ using Shared;
 
 namespace BasicHttp.Example;
 
-public class ItemService
+public sealed class ItemService
 {
     private readonly HttpClient _httpClient = null!;
 

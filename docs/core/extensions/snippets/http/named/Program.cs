@@ -6,9 +6,9 @@ using Microsoft.Extensions.Logging;
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
     {
-        string httpClientName = context.Configuration["JokeHttpClientName"];
+        string? httpClientName = context.Configuration["JokeHttpClientName"];
         services.AddHttpClient(
-            httpClientName,
+            httpClientName ?? "",
             client =>
             {
                 // Set the base address of the named client.

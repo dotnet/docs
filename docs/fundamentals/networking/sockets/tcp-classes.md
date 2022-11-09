@@ -98,7 +98,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
-#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.Sockets.AddressFamily)?displayProperty=nameWithType> constructor
+#### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.Sockets.AddressFamily)> constructor
 
 This constructor accepts only three `AddressFamily` values, otherwise it will throw a <xref:System.ArgumentException>. Valid values are:
 

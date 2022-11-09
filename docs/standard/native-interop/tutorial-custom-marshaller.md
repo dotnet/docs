@@ -23,13 +23,13 @@ The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimporta
 
 To express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types are used throughout this tutorial:
 
-* [`MarshalUsingAttribute`][api_marshalusingattribute] &ndash; Attribute that's sought by the source generator at use sites and used to determine the marshaller type for marshalling the attributed variable.
+- [`MarshalUsingAttribute`][api_marshalusingattribute] &ndash; Attribute that's sought by the source generator at use sites and used to determine the marshaller type for marshalling the attributed variable.
 
-* [`CustomMarshallerAttribute`][api_custommarshallerattribute] &ndash; Attribute used to indicate a marshaller for a type and the mode in which the marshalling operations are to be performed (for example, by-ref from managed to unmanaged).
+- [`CustomMarshallerAttribute`][api_custommarshallerattribute] &ndash; Attribute used to indicate a marshaller for a type and the mode in which the marshalling operations are to be performed (for example, by-ref from managed to unmanaged).
 
-* [`NativeMarshallingAttribute`][api_nativemarshallingattribute] &ndash; Attribute used to indicate which marshaller to use for the attributed type. This is useful for library authors that provide types and accompanying marshallers for those types.
+- [`NativeMarshallingAttribute`][api_nativemarshallingattribute] &ndash; Attribute used to indicate which marshaller to use for the attributed type. This is useful for library authors that provide types and accompanying marshallers for those types.
 
-These attributes, however, are not the only mechanisms available to a custom marshaller author. The source generator inspects the marshaller itself for various other indications that inform how marshalling should occur.
+These attributes, however, aren't the only mechanisms available to a custom marshaller author. The source generator inspects the marshaller itself for various other indications that inform how marshalling should occur.
 
 Complete details on the design can be found in the [dotnet/runtime][design_libraryimport] repository.
 
@@ -127,7 +127,7 @@ internal static partial void PrintString([MarshalUsing(typeof(Utf32StringMarshal
 
 ## Customize marshalling for a user-defined type
 
-Marshalling a user-defined type requires defining not only the marshalling logic, but also the type in C# to marshal to/from. Recall the native type we are trying to marshal.
+Marshalling a user-defined type requires defining not only the marshalling logic, but also the type in C# to marshal to/from. Recall the native type we're trying to marshal.
 
 ```cpp
 struct error_data
@@ -215,7 +215,7 @@ internal static partial ErrorData GetFatalErrorIfNegative(int code);
 internal static partial ErrorData[] GetErrors(int[] codes, int len);
 ```
 
-Returning a single instance type, non-collection, from a P/Invoke is categorized as a `MarshalMode.ManagedToUnmanagedOut`. Typically, you use a collection to return multiple elements, in this case an `Array` is used. The marshaller for a collection scenario, corresponding to the `MarshalMode.ElementOut` mode, will be returning multiple elements and is described below.
+Returning a single instance type, non-collection, from a P/Invoke is categorized as a `MarshalMode.ManagedToUnmanagedOut`. Typically, you use a collection to return multiple elements, and in this case, an `Array` is used. The marshaller for a collection scenario, corresponding to the `MarshalMode.ElementOut` mode, will return multiple elements and is described below.
 
 ```csharp
 namespace CustomMarshalling
@@ -240,7 +240,7 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform. It is also important to note the functions here are marked `static` and are therefore "stateless", being stateless is a requirement for all "Element" modes.
+The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform. It's also important to note the functions here are marked `static` and are therefore "stateless", being stateless is a requirement for all "Element" modes.
 
 For the managed to unmanaged "out" marshaller, you're going to do something special. The name of the data type you're marshalling is called `error_data` and .NET typically expresses errors as exceptions. Some errors are more impactful than others and errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. You'll marshal an `error_data` into managed code, and if it's fatal, you'll throw an exception rather than just converting it into an `ErrorData` and returning it.
 
@@ -293,7 +293,7 @@ struct ErrorData { ... }
 - [P/Invoke source generation](pinvoke-source-generation.md)
 - [Custom marshalling source generation](custom-marshalling-source-generation.md)
 
-  <!-- links -->
+<!-- links -->
 
 [api_custommarshallerattribute]:/dotnet/api/system.runtime.interopservices.marshalling.custommarshallerattribute
 [api_libraryimportattribute]:/dotnet/api/system.runtime.interopservices.libraryimportattribute

@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 10/26/2021
+ms.date: 11/08/2021
 ---
 # dotnet-install scripts reference
 
@@ -100,8 +100,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   Specifies the source channel for the installation. The possible values are:
 
-  - `Current` - Most current release.
-  - `LTS` - Long-Term Support channel (most current supported release).
+  - `STS` - the most recent Standard Term Support release
+  - `LTS` - the most recent Long Term Support release
   - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
   - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 

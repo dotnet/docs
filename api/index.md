@@ -3,12 +3,12 @@ description: "Learn more about: .NET API browser"
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser
-quickFilterColumn1: net-6.0,netframework-4.8,netstandard-2.1
-quickFilterColumn2: aspnetcore-6.0,efcore-6.0,xamarin-forms
+quickFilterColumn1: net-7.0,netframework-4.8,netstandard-2.1
+quickFilterColumn2: aspnetcore-7.0,efcore-6.0,xamarin-forms
 quickFilterColumn3: azure-dotnet,ml-dotnet,spark-dotnet
 ms.topic: landing-page
 ms.custom: "updateeachrelease"
-ms.date: 06/22/2022
+ms.date: 11/08/2022
 ---
 # .NET API browser
 

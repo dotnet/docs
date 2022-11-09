@@ -7,10 +7,10 @@ ms.date: 07/28/2022
 ---
 # .NET default templates for dotnet new
 
-When you install the [.NET SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://reactjs.org/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
+When you install the [.NET SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://reactjs.org/) projects), and configuration files. To list the built-in templates, run the `dotnet new list` command:
 
 ```dotnetcli
-dotnet new --list
+dotnet new list
 ```
 
 The following table shows the templates that come pre-installed with the .NET SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
@@ -58,7 +58,9 @@ The following table shows the templates that come pre-installed with the .NET SD
 
 ## Template options
 
-Each template may have additional options available. The core templates have the following additional options:
+Each template may have additional options available. To show the additional options available for the template use the `--help` option with the template name argument, for example: `dotnet new console --help`.
+In case the template supports multiple languages, this command will show help for the template in the default language. By combining it with the `--language` option, you can see the help for other languages: `dotnet new console --help --language F#`.
+The templates that ship with the .NET SDK have the following additional options:
 
 ## `console`
 
@@ -66,17 +68,17 @@ Each template may have additional options available. The core templates have the
 
   Specifies the [framework](../../standard/frameworks.md) to target. Available since .NET Core 3.0 SDK.
 
-  The following table lists the default values according to the SDK version number you're using:
+  The following table lists the default values according to the SDK version you're using:
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
 
-  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
+  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 7 SDK installed, then the only value available for `--framework` is `net7.0`. If you install the .NET 6 SDK the value `net6.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
-  Alternatively, to create a project that targets a framework earlier than the SDK that you're using, you might be able to do it by installing the NuGet package for the template. [Common](https://www.nuget.org/packages?q=Microsoft.DotNet.Common.ProjectTemplates), [web](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.ProjectTemplates), and [SPA](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.Spa.ProjectTemplates) project types use different packages per target framework moniker (TFM). For example, to create a `console` project that targets `netcoreapp1.0`, run [`dotnet new --install`](dotnet-new-install.md) on `Microsoft.DotNet.Common.ProjectTemplates.1.x`.
+  Alternatively, to create a project that targets a framework earlier than the SDK that you're using, you might be able to do it by installing the NuGet package for the template. [Common](https://www.nuget.org/packages?q=Microsoft.DotNet.Common.ProjectTemplates), [web](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.ProjectTemplates), and [SPA](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.Spa.ProjectTemplates) project types use different packages per target framework moniker (TFM). For example, to create a `console` project that targets `netcoreapp1.0`, run [`dotnet new install`](dotnet-new-install.md) on `Microsoft.DotNet.Common.ProjectTemplates.1.x`.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -90,7 +92,7 @@ Each template may have additional options available. The core templates have the
 
 - **`--use-program-main`**
 
-  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`.
+  If specified, an explicit `Program` class and `Main` method will be used instead of top-level statements. Available since .NET SDK 6.0.300. Default value: `false`. Available only for C#.
 
 ***
 
@@ -98,7 +100,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net6.0`, `net5.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 6 SDK is `net6.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net7.0`, `net6.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 7.0.x is `net7.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -150,7 +152,7 @@ Each template may have additional options available. The core templates have the
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 7 SDK is `net7.0`. Available since .NET Core 3.1 SDK.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -800,7 +802,7 @@ Creates an *.editorconfig* file for configuring code style preferences.
 ## See also
 
 - [dotnet new command](dotnet-new.md)
-- [dotnet new --list option](dotnet-new-list.md)
+- [dotnet new list command](dotnet-new-list.md)
 - [Custom templates for dotnet new](custom-templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
 - [Implicit using directives](../project-sdk/overview.md#implicit-using-directives)

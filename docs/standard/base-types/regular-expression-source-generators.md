@@ -381,15 +381,15 @@ The general guidance is if you can use the source generator, use it. If you're u
 When used with an option like `RegexOptions.NonBacktracking` for which the source generator can't generate a custom implementation, it will still emit caching and XML comments that describe the implementation, making it valuable. The main downside of the source generator is that it emits additional code into your assembly, so there's the potential for increased size. The more regexes in your app and the larger they are, the more code will be emitted for them. In some situations, just as `RegexOptions.Compiled` may be unnecessary, so too may be the source generator. For example, if you have a regex that's needed only rarely and for which throughput doesn't matter, it could be more beneficial to just rely on the interpreter for that sporadic usage.
 
 > [!IMPORTANT]
-> .NET 7 includes an analyzer that identifies the use of `Regex` that could be converted to the source generator, and a fixer that does the conversion for you:
+> .NET 7 includes an [analyzer](../../fundamentals/syslib-diagnostics/syslib1040-1049.md) that identifies the use of `Regex` that could be converted to the source generator, and a fixer that does the conversion for you:
 >
 > :::image type="content" source="media/regular-expression-source-generators/convert-to-regexgenerator.png" lightbox="media/regular-expression-source-generators/convert-to-regexgenerator.png" alt-text="RegexGenerator analyzer and fixer":::
 
 ## See also
 
+- [SYSLIB diagnostics for regex source generation](../../fundamentals/syslib-diagnostics/syslib1040-1049.md)
 - [.NET regular expressions](regular-expressions.md)
-- [Backtracking in Regular Expressions](backtracking-in-regular-expressions.md)
-- [Compilation and Reuse in Regular Expressions](compilation-and-reuse-in-regular-expressions.md)
-- [Source Generators](../../csharp/roslyn-sdk/source-generators-overview.md)
-- [Tutorial: Debug a .NET console application using Visual Studio](../../core/tutorials/debugging-with-visual-studio.md)
+- [Backtracking in regular expressions](backtracking-in-regular-expressions.md)
+- [Compilation and reuse in regular expressions](compilation-and-reuse-in-regular-expressions.md)
+- [Source generators](../../csharp/roslyn-sdk/source-generators-overview.md)
 - [.NET Blog: Regular Expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7)

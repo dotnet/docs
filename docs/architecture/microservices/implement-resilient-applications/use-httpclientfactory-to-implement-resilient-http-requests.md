@@ -53,6 +53,9 @@ There are several ways that you can use `IHttpClientFactory` in your application
 
 For the sake of brevity, this guidance shows the most structured way to use `IHttpClientFactory`, which is to use Typed Clients (Service Agent pattern). However, all options are documented and are currently listed in this [article covering the `IHttpClientFactory` usage](/aspnet/core/fundamentals/http-requests#consumption-patterns).
 
+> [!NOTE]
+> If your app requires cookies, it might be better to avoid using <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../../fundamentals/networking/http/httpclient-guidelines.md)
+
 ## How to use Typed Clients with IHttpClientFactory
 
 So, what's a "Typed Client"? It's just an `HttpClient` that's pre-configured for some specific use. This configuration can include specific values such as the base server, HTTP headers or time outs.
@@ -67,7 +70,7 @@ In the above image, a `ClientService` (used by a controller or client code) uses
 
 To configure the above structure, add <xref:System.Net.Http.IHttpClientFactory> in your application by installing the `Microsoft.Extensions.Http` NuGet package that includes the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension method for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. This extension method registers the internal `DefaultHttpClientFactory` class to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. This message handler (<xref:System.Net.Http.HttpMessageHandler> object), taken from a pool, is used by the `HttpClient` returned from the factory.
 
-In the next code, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
+In the next snippet, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
 
 ```csharp
 // Startup.cs
@@ -77,9 +80,9 @@ services.AddHttpClient<IBasketService, BasketService>();
 services.AddHttpClient<IOrderingService, OrderingService>();
 ```
 
-Registering the client services as shown in the previous code, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI container. In the preceding code, `AddHttpClient()` registers _CatalogService_, _BasketService_, _OrderingService_ as transient services so they can be injected and consumed directly without any need for additional registrations.
+Registering the client services as shown in the previous snippet, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI container. In the preceding code, `AddHttpClient()` registers _CatalogService_, _BasketService_, _OrderingService_ as transient services so they can be injected and consumed directly without any need for additional registrations.
 
-You could also add instance-specific configuration in the registration to, for example, configure the base address, and add some resiliency policies, as shown in the following code:
+You could also add instance-specific configuration in the registration to, for example, configure the base address, and add some resiliency policies, as shown in the following:
 
 ```csharp
 services.AddHttpClient<ICatalogService, CatalogService>(client =>
@@ -90,7 +93,7 @@ services.AddHttpClient<ICatalogService, CatalogService>(client =>
     .AddPolicyHandler(GetCircuitBreakerPolicy());
 ```
 
-Just for the example sake, you can see one of the above policies in the next code:
+In this next example, you can see the configuration of one of the above policies:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -149,13 +152,13 @@ public class CatalogService : ICatalogService
 }
 ```
 
-The Typed Client (`CatalogService` in the example) is activated by DI (Dependency Injection), that means it can accept any registered service in its constructor, in addition to `HttpClient`.
+The Typed Client (`CatalogService` in the example) is activated by DI (Dependency Injection), which means it can accept any registered service in its constructor, in addition to `HttpClient`.
 
 A Typed Client is effectively a transient object, that means a new instance is created each time one is needed. It receives a new `HttpClient` instance each time it's constructed. However, the `HttpMessageHandler` objects in the pool are the objects that are reused by multiple `HttpClient` instances.
 
 ### Use your Typed Client classes
 
-Finally, once you have your typed classes implemented, you can have them registered and configured with `AddHttpClient()`. After that you can use them wherever have services injected by DI. For example, in a Razor page code or controller of an MVC web app, like in the following code from eShopOnContainers:
+Finally, once you have your typed classes implemented, you can have them registered and configured with `AddHttpClient()`. After that you can use them wherever services are injected by DI, such as in Razor page code or an MVC web app controller, shown in the below code from eShopOnContainers:
 
 ```csharp
 namespace Microsoft.eShopOnContainers.WebMVC.Controllers
@@ -184,7 +187,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 }
 ```
 
-Up to this point, the above code snippet has only shown the example of performing regular HTTP requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by `HttpClient`, can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
+Up to this point, the above code snippet only shows the example of performing regular HTTP requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by `HttpClient` can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
 
 ## Additional resources
 

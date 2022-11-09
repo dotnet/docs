@@ -15,7 +15,7 @@ Starting with .NET 7, when a hosted application is launched with the current dir
 
 ## Version introduced
 
-.NET 7 Preview 6
+.NET 7
 
 ## Previous behavior
 

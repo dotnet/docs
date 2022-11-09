@@ -2,7 +2,7 @@
 
 namespace ConsoleJson.Example;
 
-public class ExampleService
+public sealed class ExampleService
 {
     private readonly TransientFaultHandlingOptions _options;
 

@@ -29,6 +29,8 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
+        - name: Authentication in WebAssembly apps
+          href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Endpoint metadata provider interface changes
@@ -55,6 +57,8 @@ items:
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
         items:
+        - name: API obsoletions with default diagnostic ID
+          href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
@@ -67,6 +71,8 @@ items:
           href: core-libraries/7.0/equals-nan.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Legacy FileStream strategy removed
+          href: core-libraries/7.0/filestream-compat-switch.md
         - name: Library support for older frameworks
           href: core-libraries/7.0/old-framework-support.md
         - name: Maximum precision for numeric format strings
@@ -75,8 +81,18 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
+        - name: Time fields on symbolic links
+          href: core-libraries/7.0/symbolic-link-timestamps.md
+        - name: Tracking linked cache entries
+          href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Configuration
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
       - name: Cryptography
         items:
         - name: Dynamic X509ChainPolicy verification time
@@ -103,6 +119,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: Interop
         items:
         - name: RuntimeInformation.OSArchitecture under emulation
@@ -329,6 +347,8 @@ items:
           href: sdk/6.0/write-reference-assemblies-to-obj.md
       - name: Serialization
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Default serialization format for TimeSpan
           href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization
@@ -645,6 +665,8 @@ items:
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
+        - name: Authentication in WebAssembly apps
+          href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
         - name: Endpoint metadata provider interface changes
@@ -817,6 +839,12 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Configuration
+      items:
+      - name: .NET 7
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
     - name: Containers
       items:
       - name: .NET 6
@@ -829,6 +857,8 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: API obsoletions with default diagnostic ID
+          href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
@@ -841,6 +871,8 @@ items:
           href: core-libraries/7.0/equals-nan.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Legacy FileStream strategy removed
+          href: core-libraries/7.0/filestream-compat-switch.md
         - name: Library support for older frameworks
           href: core-libraries/7.0/old-framework-support.md
         - name: Maximum precision for numeric format strings
@@ -849,6 +881,12 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
+        - name: Time fields on symbolic links
+          href: core-libraries/7.0/symbolic-link-timestamps.md
+        - name: Tracking linked cache entries
+          href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
       - name: .NET 6
@@ -1023,6 +1061,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider
@@ -1197,6 +1237,8 @@ items:
           href: serialization/7.0/reflection-fallback.md
       - name: .NET 6
         items:
+        - name: DataContractSerializer retains sign when deserializing -0
+          href: serialization/7.0/datacontractserializer-negative-sign.md
         - name: Default serialization format for TimeSpan
           href: serialization/6.0/timespan-serialization-format.md
         - name: IAsyncEnumerable serialization

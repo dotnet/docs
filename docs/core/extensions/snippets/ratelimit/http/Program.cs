@@ -1,17 +1,17 @@
-﻿var options = new TokenBucketRateLimiterOptions(
-    tokenLimit: 8, 
-    queueProcessingOrder: QueueProcessingOrder.OldestFirst,
-    queueLimit: 3, 
-    replenishmentPeriod: TimeSpan.FromMilliseconds(1), 
-    tokensPerPeriod: 2, 
-    autoReplenishment: true);
+﻿var options = new TokenBucketRateLimiterOptions
+{ 
+    TokenLimit = 8, 
+    QueueProcessingOrder = QueueProcessingOrder.OldestFirst,
+    QueueLimit = 3, 
+    ReplenishmentPeriod = TimeSpan.FromMilliseconds(1), 
+    TokensPerPeriod = 2, 
+    AutoReplenishment = true
+};
 
 // Create an HTTP client with the client-side rate limited handler.
 using HttpClient client = new(
     handler: new ClientSideRateLimitedHandler(
         limiter: new TokenBucketRateLimiter(options)));
-
-
 
 // Create 100 urls with a unique query string.
 var oneHundredUrls = Enumerable.Range(0, 100).Select(

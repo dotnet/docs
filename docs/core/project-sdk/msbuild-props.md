@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 05/24/2022
+ms.date: 11/08/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -173,6 +173,9 @@ The following MSBuild properties are documented in this section:
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [ProduceReferenceAssemblyInOutDir](#producereferenceassemblyinoutdir)
+- [PublishDocumentationFile](#publishdocumentationfile)
+- [PublishDocumentationFiles](#publishdocumentationfiles)
+- [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishRelease](#publishrelease)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -323,6 +326,21 @@ In .NET 5 and earlier versions, reference assemblies are always written to the `
 
 For more information, see [Write reference assemblies to intermediate output](../compatibility/sdk/6.0/write-reference-assemblies-to-obj.md).
 
+### PublishDocumentationFile
+
+When this property is `true`, the XML documentation file for the project, if one is generated, is included in the publish output for the project. This property defaults to `true`.
+
+> [!TIP]
+> Set [GenerateDocumentationFile](#generatedocumentationfile)) to `true` to generate an XML documentation file at compile time.
+
+### PublishDocumentationFiles
+
+This property is an enablement flag for several other properties that control whether various kinds of XML documentation files are copied to the publish directory by default, namely [PublishDocumentationFile](#publishdocumentationfile) and [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles). If those properties are unset, and this property is set, then those properties will default to `true`. This property defaults to `true`.
+
+### PublishReferencesDocumentationFiles
+
+When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
+
 ### PublishRelease
 
 The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
@@ -434,39 +452,54 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 | `TrimmerSingleWarn` | `true` or `false` | Controls whether a single warning per assembly is shown or all warnings. |
 | `TrimmerRemoveSymbols` | `true` or `false` | Controls whether all symbols are removed from a trimmed application. |
 
-## Compilation-related properties
+## Build-related properties
 
 The following MSBuild properties are documented in this section:
 
+- [CopyDebugSymbolFilesFromPackages](#copydebugsymbolfilesfrompackages)
+- [CopyDocumentationFilesFromPackages](#copydocumentationfilesfrompackages)
 - [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
 - [DocumentationFile](#documentationfile)
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [EnablePreviewFeatures](#enablepreviewfeatures)
+- [EnableWindowsTargeting](#enablewindowstargeting)
 - [GenerateDocumentationFile](#generatedocumentationfile)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
+### CopyDebugSymbolFilesFromPackages
+
+When this property is set to `true`, all symbol files (also known as PDB files) from `PackageReference` items in the project are copied to the build output. These files can provide more informative stack traces for exceptions and make memory dumps and traces of the running application easier to understand. However, including these files results in an increased deployment bundle size.
+
+This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
+
+### CopyDocumentationFilesFromPackages
+
+When this property is set to `true`, all generated XML documentation files from `PackageReference` items in the project are copied to the build output. Note that enabling this feature will result in increased deployment bundle size.
+
+This property was introduced in .NET SDK 7.0.100, though it defaults to not being specified.
+
 ### DisableImplicitFrameworkDefines
 
 The `DisableImplicitFrameworkDefines` property controls whether or not the SDK generates preprocessor symbols for the target framework and platform for the .NET project. When this property is set to `false` or is unset (which is the default value) preprocessor symbols are generated for:
 
-* Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
-* Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
-* Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
+- Framework without version (`NETFRAMEWORK`, `NETSTANDARD`, `NET`)
+- Framework with version (`NET48`, `NETSTANDARD2_0`, `NET6_0`)
+- Framework with version minimum bound (`NET48_OR_GREATER`, `NETSTANDARD2_0_OR_GREATER`, `NET6_0_OR_GREATER`)
 
 For more information on target framework monikers and these implicit preprocessor symbols, see [Target frameworks](../../standard/frameworks.md).
 
 Additionally, if you specify an operating system-specific target framework in the project (for example `net6.0-android`), the following preprocessor symbols are generated:
 
-* Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
-* Platform with version (`IOS15_1`)
-* Platform with version minimum bound (`IOS15_1_OR_GREATER`)
+- Platform without version (`ANDROID`, `IOS`, `WINDOWS`)
+- Platform with version (`IOS15_1`)
+- Platform with version minimum bound (`IOS15_1_OR_GREATER`)
 
 For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
 
-Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the _Framework with version minimum bound_ symbol will be defined.
+Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the *Framework with version minimum bound* symbol will be defined.
 
 ### DocumentationFile
 
@@ -514,6 +547,16 @@ When a project contains this property set to `True`, the following assembly-leve
 An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
 
 Library authors who intend to ship preview assemblies should set this property to `True`. If an assembly needs to ship with a mixture of preview and non-preview APIs, see the [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute) section below.
+
+### EnableWindowsTargeting
+
+Set the `EnableWindowsTargeting` property to `true` to build Windows apps (for example, Windows Forms or Windows Presentation Foundation apps) on a non-Windows platform. If you don't set this property to `true`, you'll get build warning [NETSDK1100](../tools/sdk-errors/netsdk1100.md). This error occurs because targeting and runtime packs aren't automatically downloaded on platforms that aren't supported. By setting this property, those packs are downloaded when cross-targeting.
+
+```xml
+<PropertyGroup>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting>
+</PropertyGroup>
+```
 
 ### GenerateDocumentationFile
 
@@ -641,7 +684,7 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 7 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `6`.
 
 ```xml
 <PropertyGroup>
@@ -673,6 +716,10 @@ The following table shows the values you can specify.
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `7.0` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
+| `7.0-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `7` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
+| `7-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `6.0` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
 | `6.0-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `6` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
@@ -723,7 +770,7 @@ The following table lists the property name for each rule category.
 
 ### AnalysisMode
 
-Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings in each .NET release. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive analysis mode where you can opt out of rules individually, or a more conservative analysis mode where you can opt in to specific rules. For example, if you want to enable all rules as build warnings, set the value to `All`.
+Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings in each .NET release. The `AnalysisMode` property lets you customize the set of rules that's enabled by default. You can either switch to a more aggressive analysis mode where you can opt out of rules individually, or a more conservative analysis mode where you can opt in to specific rules. For example, if you want to enable all rules as build warnings, set the value to `All`.
 
 ```xml
 <PropertyGroup>
@@ -731,7 +778,7 @@ Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rule
 </PropertyGroup>
 ```
 
-The following table shows the available option values in .NET 5 and .NET 6. They're listed in increasing order of the number of rules they enable.
+The following table shows the available option values in .NET 5 and later versions. They're listed in increasing order of the number of rules they enable.
 
 | .NET 6+ value | .NET 5 value | Meaning |
 |-|-|-|
@@ -944,14 +991,16 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
-## Reference properties
+## Reference-related properties
 
 The following MSBuild properties are documented in this section:
 
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
+- [DisableTransitiveFrameworkReferenceDownloads](#disabletransitiveframeworkreferencedownloads)
 - [DisableTransitiveProjectReferences](#disabletransitiveprojectreferences)
 - [Restore-related properties](#restore-related-properties)
+- [UseMauiEssentials](#usemauiessentials)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
 
 ### AssetTargetFallback
@@ -978,6 +1027,16 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 </PropertyGroup>
 ```
 
+### DisableTransitiveFrameworkReferenceDownloads
+
+Set the `DisableTransitiveFrameworkReferenceDownloads` property to `true` to avoid downloading extra runtime and targeting packs that aren't directly referenced by your project.
+
+```xml
+<PropertyGroup>
+  <DisableTransitiveFrameworkReferenceDownloads>true</DisableTransitiveFrameworkReferenceDownloads>
+</PropertyGroup>
+```
+
 ### DisableTransitiveProjectReferences
 
 The `DisableTransitiveProjectReferences` property controls implicit project references. Set this property to `true` to disable implicit `ProjectReference` items. Disabling implicit project references results in non-transitive behavior similar to the [legacy project system](https://github.com/dotnet/project-system/blob/main/docs/feature-comparison.md).
@@ -999,6 +1058,16 @@ Restoring a referenced package installs all of its direct dependencies and all t
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+### UseMauiEssentials
+
+Set the `UseMauiEssentials` property to `true` to declare an explicit reference to a project or package that depends on MAUI Essentials. This setting ensures that your project pulls in the correct known framework reference for MAUI Essentials. If your project references a project that uses MAUI Essentials but you don't set this property to `true`, you might encounter build warning `NETSDK1186`.
+
+```xml
+<PropertyGroup>
+  <UseMauiEssentials>true</UseMauiEssentials>
 </PropertyGroup>
 ```
 
@@ -1217,7 +1286,7 @@ For example:
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
 
-For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
+For more information, see [aliased `using` directives](../../csharp/language-reference/keywords/using-directive.md#using-alias) and [`using static <type>` directives](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 
 ## Item metadata
 

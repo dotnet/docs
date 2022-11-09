@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 01/13/2022
+ms.date: 11/08/2022
 ms.prod: dotnet
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
@@ -87,11 +87,11 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 .NET 5 and .NET 6 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 5 [TFMs](frameworks.md), for example, reflect this broad range of scenarios:
 
-* `net5.0`
+- `net5.0`
 
   This TFM is for code that runs everywhere. With a few exceptions, it includes only technologies that work cross-platform. For .NET 5 code, `net5.0` replaces both `netcoreapp` and `netstandard` TFMs.
 
-* `net5.0-windows`
+- `net5.0-windows`
 
   This is an example of an [OS-specific TFM](frameworks.md#net-5-os-specific-tfms) that add OS-specific functionality to everything that `net5.0` refers to.
 
@@ -101,11 +101,11 @@ For existing code that targets `netstandard`, there's no need to change the TFM 
 
 Here are some guidelines for new code for .NET 5+:
 
-* App components
+- App components
 
   If you're using libraries to break down an application into several components, we recommend you target `net5.0` or `net6.0`. For simplicity, it's best to keep all projects that make up your application on the same version of .NET. Then you can assume the same BCL features everywhere.
 
-* Reusable libraries
+- Reusable libraries
 
   If you're building reusable libraries that you plan to ship on NuGet, consider the trade-off between reach and available feature set. .NET Standard 2.0 is the latest version that's supported by .NET Framework, so it gives good reach with a fairly large feature set. We don't recommend targeting .NET Standard 1.x, as you'd limit the available feature set for a minimal increase in reach.
 
@@ -137,8 +137,8 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 
 .NET Standard is still needed for libraries that can be used by multiple .NET implementations. We recommend you target .NET Standard in the following scenarios:
 
-* Use `netstandard2.0` to share code between .NET Framework and all other implementations of .NET.
-* Use `netstandard2.1` to share code between Mono, Xamarin, and .NET Core 3.x.
+- Use `netstandard2.0` to share code between .NET Framework and all other implementations of .NET.
+- Use `netstandard2.1` to share code between Mono, Xamarin, and .NET Core 3.x.
 
 ## See also
 

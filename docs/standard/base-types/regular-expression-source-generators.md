@@ -2,7 +2,7 @@
 title: ".NET regular expression source generators"
 description: Learn how to use regular expression source generators to optimize the performance of matching algorithms in .NET.
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 10/13/2022
 author: IEvangelist
 ms.author: dapine
 ---
@@ -13,15 +13,11 @@ A regular expression, or regex, is a string that enables a developer to express 
 
 ## Compiled regular expressions
 
-When you write `new Regex("somepattern")`, a few things happen. The specified pattern is parsed, both to ensure the validity of the pattern and to transform it into an internal `RegexNode` tree that represents the parsed regex. The tree is then optimized in various ways, transforming the pattern into a functionally equivalent variation that can be more efficiently executed. The tree is written into a form that can be interpreted as a series of opcodes and operands that provide instructions to the `RegexInterpreter` engine on how to match. When a match is performed, the interpreter simply walks through those instructions, processing them against the input text. When instantiating a new `Regex` instance or calling one of the static methods on `Regex`, the interpreter is the default engine employed.
+When you write `new Regex("somepattern")`, a few things happen. The specified pattern is parsed, both to ensure the validity of the pattern and to transform it into an internal tree that represents the parsed regex. The tree is then optimized in various ways, transforming the pattern into a functionally equivalent variation that can be more efficiently executed. The tree is written into a form that can be interpreted as a series of opcodes and operands that provide instructions to the regex interpreter engine on how to match. When a match is performed, the interpreter simply walks through those instructions, processing them against the input text. When instantiating a new `Regex` instance or calling one of the static methods on `Regex`, the interpreter is the default engine employed.
 
-When you specify <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType>, before .NET 7, all of the same construction-time work would be performed. The resulting instructions would be transformed further by the reflection-emit-based compiler into IL instructions that would be written to a few <xref:System.Reflection.Emit.DynamicMethod>s. When a match was performed, those `DynamicMethod`s would be invoked. This IL would essentially do exactly what the interpreter would do, except specialized for the exact pattern being processed. For example, if the pattern contained `[ac]`, the interpreter would see an opcode that said "match the input character at the current position against the set specified in this set description" whereas the compiled IL would contain code that effectively said, "match the input character at the current position against `'a'` or `'c'`". This special casing and the ability to perform optimizations based on knowledge of the pattern are some of the main reasons for specifying `RegexOptions.Compiled` yields much faster-matching throughput than does the interpreter.
+When you specify <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType>, all of the same construction-time work would be performed. The resulting instructions would be transformed further by the reflection-emit-based compiler into IL instructions that would be written to a few <xref:System.Reflection.Emit.DynamicMethod>s. When a match was performed, those `DynamicMethod`s would be invoked. This IL would essentially do exactly what the interpreter would do, except specialized for the exact pattern being processed. For example, if the pattern contained `[ac]`, the interpreter would see an opcode that said "match the input character at the current position against the set specified in this set description" whereas the compiled IL would contain code that effectively said, "match the input character at the current position against `'a'` or `'c'`". This special casing and the ability to perform optimizations based on knowledge of the pattern are some of the main reasons for specifying `RegexOptions.Compiled` yields much faster-matching throughput than does the interpreter.
 
 There are several downsides to `RegexOptions.Compiled`. The most impactful is that it incurs much more construction cost than using the interpreter. Not only are all of the same costs paid as for the interpreter, but it then needs to compile that resulting `RegexNode` tree and generated opcodes/operands into IL, which adds non-trivial expense. The generated IL further needs to be JIT-compiled on first use leading to even more expense at startup. `RegexOptions.Compiled` represents a fundamental tradeoff between overheads on the first use and overheads on every subsequent use. The use of <xref:System.Reflection.Emit?displayProperty=nameWithType> also inhibits the use of `RegexOptions.Compiled` in certain environments; some operating systems don't permit dynamically generated code to be executed, and on such systems, `Compiled` will become a no-op.
-
-To help with these issues, .NET provides a method <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType>. This method enables the same IL that would have been generated for `RegexOptions.Compiled` to instead be written to a generated assembly on disk, and that assembly can then be referenced as a library from your app. This has the benefit of avoiding the startup overheads involved in parsing, optimizing, and outputting the IL for the expression, as that can all be done ahead of time rather than each time the app is invoked. Further, that assembly could be ahead-of-time compiled with technology like ngen or crossgen, avoiding most of the associated JIT costs as well.
-
-`Regex.CompileToAssembly` itself has problems, however. First, it's not user-friendly. Because a utility was required to call `CompileToAssembly` to produce an assembly your app would reference, there's relatively little use for this otherwise valuable feature. On .NET [Core], `CompileToAssembly` has never been supported, as it requires the ability to save reflection-emit code to assemblies on disk, which also isn't supported. This is where source generation becomes valuable.
 
 ## Source generation
 
@@ -44,14 +40,12 @@ private static void EvaluateText(string text)
 You can now rewrite the previous code as follows:
 
 ```csharp
-private static readonly Regex s_abcOrDefGeneratedRegex = AbcOrDefGeneratedRegex();
-
 [GeneratedRegex("abc|def", RegexOptions.IgnoreCase | RegexOptions.Compiled, "en-US")]
 private static partial Regex AbcOrDefGeneratedRegex();
 
 private static void EvaluateText(string text)
 {
-    if (s_abcOrDefGeneratedRegex.IsMatch(text))
+    if (AbcOrDefGeneratedRegex().IsMatch(text))
     {
         // Take action with matching text
     }
@@ -67,7 +61,7 @@ But as can be seen, it's not just doing `new Regex(...)`. Rather, the source gen
 :::image type="content" source="media/regular-expression-source-generators/debuggable-source.png" lightbox="media/regular-expression-source-generators/debuggable-source.png" alt-text="Debugging through source-generated Regex code":::
 
 > [!TIP]
-> In Visual Studio, select the project node in **Solution Explorer**, then expand **Dependencies** > **Analyzers** > **System.Text.RegularExpressions.Generator** > **System.Text.RegularExpressions.Generator.RegexGenerator** > _RegexGenerator.g.cs_ to see the generated C# code from this regex generator.
+> In Visual Studio, right-click on your partial method declaration and select **Go To Definition**. Or, alternatively, select the project node in **Solution Explorer**, then expand **Dependencies** > **Analyzers** > **System.Text.RegularExpressions.Generator** > **System.Text.RegularExpressions.Generator.RegexGenerator** > _RegexGenerator.g.cs_ to see the generated C# code from this regex generator.
 
 You can set breakpoints in it, you can step through it, and you can use it as a learning tool to understand exactly how the regex engine is processing your pattern with your input. The generator even generates [triple-slash (XML) comments](../../csharp/language-reference/xmldoc/index.md) to help make the expression understandable at a glance and where it's used.
 
@@ -387,14 +381,15 @@ The general guidance is if you can use the source generator, use it. If you're u
 When used with an option like `RegexOptions.NonBacktracking` for which the source generator can't generate a custom implementation, it will still emit caching and XML comments that describe the implementation, making it valuable. The main downside of the source generator is that it emits additional code into your assembly, so there's the potential for increased size. The more regexes in your app and the larger they are, the more code will be emitted for them. In some situations, just as `RegexOptions.Compiled` may be unnecessary, so too may be the source generator. For example, if you have a regex that's needed only rarely and for which throughput doesn't matter, it could be more beneficial to just rely on the interpreter for that sporadic usage.
 
 > [!IMPORTANT]
-> .NET 7 includes an analyzer that identifies the use of `Regex` that could be converted to the source generator, and a fixer that does the conversion for you:
+> .NET 7 includes an [analyzer](../../fundamentals/syslib-diagnostics/syslib1040-1049.md) that identifies the use of `Regex` that could be converted to the source generator, and a fixer that does the conversion for you:
 >
 > :::image type="content" source="media/regular-expression-source-generators/convert-to-regexgenerator.png" lightbox="media/regular-expression-source-generators/convert-to-regexgenerator.png" alt-text="RegexGenerator analyzer and fixer":::
 
 ## See also
 
+- [SYSLIB diagnostics for regex source generation](../../fundamentals/syslib-diagnostics/syslib1040-1049.md)
 - [.NET regular expressions](regular-expressions.md)
-- [Backtracking in Regular Expressions](backtracking-in-regular-expressions.md)
-- [Compilation and Reuse in Regular Expressions](compilation-and-reuse-in-regular-expressions.md)
-- [Source Generators](../../csharp/roslyn-sdk/source-generators-overview.md)
-- [Tutorial: Debug a .NET console application using Visual Studio](../../core/tutorials/debugging-with-visual-studio.md)
+- [Backtracking in regular expressions](backtracking-in-regular-expressions.md)
+- [Compilation and reuse in regular expressions](compilation-and-reuse-in-regular-expressions.md)
+- [Source generators](../../csharp/roslyn-sdk/source-generators-overview.md)
+- [.NET Blog: Regular Expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7)

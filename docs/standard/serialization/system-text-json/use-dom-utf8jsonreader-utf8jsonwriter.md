@@ -249,7 +249,9 @@ To write `Timespan`, `Uri`, or `char` values, format them as strings (by calling
 
 ## Use `Utf8JsonReader`
 
-<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
+<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers.
+
+> `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
@@ -260,7 +262,7 @@ The preceding code assumes that the `jsonUtf8` variable is a byte array that con
 
 ### Filter data using `Utf8JsonReader`
 
-The following example shows how to synchronously read a file, and search for a value.
+The following example shows how to synchronously read a file and search for a value.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8ReaderFromFile.vb":::
@@ -271,7 +273,7 @@ The preceding code:
 
 * Assumes the JSON contains an array of objects and each object may contain a "name" property of type string.
 * Counts objects and "name" property values that end with "University".
-* Assumes the file is encoded as UTF-16 and transcodes it into UTF-8. A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>`, by using the following code:
+* Assumes the file is encoded as UTF-16 and transcodes it into UTF-8. A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>` by using the following code:
 
   ```csharp
   ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName);
@@ -282,6 +284,24 @@ The preceding code:
 Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/Universities.json":::
+
+### Consume decoded JSON strings
+
+Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
+
+```csharp
+int valueLength = reader.HasReadOnlySequence 
+    ? checked((int)ValueSequence.Length) 
+    : ValueSpan.Length;
+
+char[] buffer = ArrayPool<char>.Shared.Rent(valueLength);
+int charsRead = reader.CopyString(buffer);
+ReadOnlySpan<char> source = buffer.Slice(0, charsRead);
+
+// Handle the unescaped JSON string.
+ParseUnescapedString(source);
+ArrayPool<char>.Shared.Return(buffer, clearArray: true);
+```
 
 ### Read from a stream using `Utf8JsonReader`
 

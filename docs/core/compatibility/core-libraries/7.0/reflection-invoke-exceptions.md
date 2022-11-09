@@ -28,7 +28,7 @@ Starting in .NET 7:
 
 ## Version introduced
 
-.NET 7 Preview 4
+.NET 7
 
 ## Type of breaking change
 

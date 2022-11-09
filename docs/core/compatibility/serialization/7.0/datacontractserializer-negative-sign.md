@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: DataContractSerializer retains sign when deserializing -0"
-description: Learn about the .NET 7 breaking change in serialization where DataContractSerializer retains the negative sign when deserializing the value "-0" as a float or double.
+description: Learn about the .NET 6/7 breaking change in serialization where DataContractSerializer retains the negative sign when deserializing the value "-0" as a float or double.
 ms.date: 09/08/2022
 ---
 # DataContractSerializer retains sign when deserializing -0
@@ -13,11 +13,12 @@ Previously, the negative sign was lost when deserializing "-0" (but *not* "-0.0"
 
 ## New behavior
 
-Started in .NET 7, the negative sign is preserved when deserializing "-0" as a float or double.
+The negative sign is now preserved when deserializing "-0" as a float or double.
 
 ## Version introduced
 
-.NET 7 RC 1
+- .NET 6.0.11 (servicing release)
+- .NET 7
 
 ## Type of breaking change
 

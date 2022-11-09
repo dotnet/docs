@@ -58,6 +58,8 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 ### Updated articles
 
+- [.NET introduction](../core/introduction.md) - Add new information for .NET 7.
+- [.NET SDK](../core/sdk.md) - Add new tools and libraries for .NET 7.
 - [Native AOT Deployment](../core/deploying/native-aot/index.md) - Document AOT analysis warnings
 - [Single-file deployment and executable](../core/deploying/single-file/overview.md) - Update single file incompatibility docs
 - [Prepare .NET libraries for trimming](../core/deploying/trimming/prepare-libraries-for-trimming.md)- Update trimming libraries docs

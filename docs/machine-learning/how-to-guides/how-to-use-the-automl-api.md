@@ -78,7 +78,7 @@ TextLoader loader = ctx.Data.CreateTextLoader(columnInference.TextLoaderOptions)
 IDataView data = loader.Load("taxi-fare.csv");
 ```
 
-It's often good practice to split your data into train and validation sets. Use `TrainTestSplit` to create an 80% training and 20% validation split of your dataset.
+It's often good practice to split your data into train and validation sets. Use <xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A> to create an 80% training and 20% validation split of your dataset.
 
 ```csharp
 // Split into train (70%), validation (20%) sets
@@ -95,9 +95,9 @@ SweepablePipeline pipeline =
         .Append(ctx.Auto().Regression(labelColumnName:columnInference.ColumnInformation.LabelColumnName));
 ```
 
-A `SweepablePipeline` is a pipeline containing a collection of `SweepableEstimators`. A `SweepableEstimator` is an ML.NET <xref:Microsoft.ML.AutoML.Estimator> with a `SearchSpace`.
+A <xref:Microsoft.ML.AutoML.SweepablePipeline> is a pipeline containing a collection of <xref:Microsoft.ML.AutoML.SweepableEstimator>. A <xref:Microsoft.ML.AutoML.SweepableEstimator> is an ML.NET <xref:Microsoft.ML.AutoML.Estimator> with a <xref:Microsoft.ML.SearchSpace>.
 
-The `Featurizer` is a convenience API which builds a sweepable pipeline of data processing sweepable estimators based on the column information you provide. Instead of building a pipeline from scratch, `Featurizer` automates the data preprocessing step. For more information on supported transforms by ML.NET, see the [data transformations guide](../resources/transforms.md).
+The <xref:Microsoft.ML.AutoML.AutoCatalog.Featurizer%2A> is a convenience API which builds a sweepable pipeline of data processing sweepable estimators based on the column information you provide. Instead of building a pipeline from scratch, <xref:Microsoft.ML.AutoML.AutoCatalog.Featurizer%2A> automates the data preprocessing step. For more information on supported transforms by ML.NET, see the [data transformations guide](../resources/transforms.md).
 
 The resulting output is a single column containing a numerical feature vector representing the transformed data for each of the columns. This feature vector is then used as input for the algorithms used to train a machine learning model.
 
@@ -136,10 +136,10 @@ experiment
 
 In this example, you:
 
-- Set the sweepable pipeline to run during the experiment using `SetPipeline`.
-- Choose `RSquared` as the metric to optimize during training using `SetRegressionMetric`. For more information on evaluation metrics, see the [evaluate your ML.NET model with metrics](../resources/metrics.md) guide.
-- Set 60 seconds as the amount of time you want to train for using `SetTrainingTimeInSeconds`. A good heuristic to determine how long to train for is the size of your data. Typically, larger datasets require longer training time. For more information, see [training time guidance](../automate-training-with-model-builder.md#how-long-should-i-train-for)/.
-- Provide the training and validation datasets to use using `SetDataset`.
+- Set the sweepable pipeline to run during the experiment using <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetPipeline%2A>.
+- Choose `RSquared` as the metric to optimize during training using <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetRegressionMetric%2A>. For more information on evaluation metrics, see the [evaluate your ML.NET model with metrics](../resources/metrics.md) guide.
+- Set 60 seconds as the amount of time you want to train for using <xref:Microsoft.ML.AutoML.AutoMLExperiment.SetTrainingTimeInSeconds%2A>. A good heuristic to determine how long to train for is the size of your data. Typically, larger datasets require longer training time. For more information, see [training time guidance](../automate-training-with-model-builder.md#how-long-should-i-train-for)/.
+- Provide the training and validation datasets to use using <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetDataset%2A>.
 
 Once your experiment is defined, you'll want some way to track its progress. The quickest way to track progress is by defining the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>.
 
@@ -155,13 +155,13 @@ ctx.Log += (_,e) => {
 
 ### Run your experiment
 
-Now that you've defined your experiment, use the `RunAsync` method to start your experiment.
+Now that you've defined your experiment, use the <xref:Microsoft.ML.AutoML.AutoMLExperiment.RunAsync%2A> method to start your experiment.
 
 ```csharp
 TrialResult experimentResults = await experiment.RunAsync();
 ```
 
-Once the time to train expires, the result is a `TrialResult` for the best model found during training.
+Once the time to train expires, the result is a <xref:Microsoft.ML.AutoML.TrialResult> for the best model found during training.
 
 At this point, you can then save your model or use it for making predictions. For more information on how use an ML.NET model, see the following guides:
 
@@ -172,11 +172,11 @@ At this point, you can then save your model or use it for making predictions. Fo
 
 ### Modify column inference results
 
-Because `InferColumn` only loads a subset of your data, it's possible that edge cases contained outside of the samples used to infer columns are not caught and the wrong data types are set for your columns. In those cases, you can update the properties of `ColumnInformation` and `TextLoaderOptions` to account for those cases where the column inference results are not correct.
+Because <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> only loads a subset of your data, it's possible that edge cases contained outside of the samples used to infer columns are not caught and the wrong data types are set for your columns. In those cases, you can update the properties of <xref:Microsoft.ML.AutoML.ColumnInferenceResults.ColumnInformation> and <xref:Microsoft.ML.Data.TextLoader.Options> to account for those cases where the column inference results are not correct.
 
 For example, in the taxi fare dataset, the data in the `rate_code` column is a number. However, that numerical value represents a category. By default, calling `InferColumn` will place `rate_code` in the `NumericColumnNames` property instead of `CategoricalColumnNames`. Because these properties are standard .NET collections, you can use the standard operations to add and remove items from them.  
 
-You can do the following to update the `ColumnInformation` for `rate_code`.  
+You can do the following to update the <xref:Microsoft.ML.AutoML.ColumnInferenceResults.ColumnInformation> for `rate_code`.  
 
 ```csharp
 columnInference.ColumnInformation.NumericColumnNames.Remove("rate_code");
@@ -231,7 +231,7 @@ var sdcaEstimatorFactory = (MLContext ctx, SdcaOption param) =>
 };
 ```
 
-A sweepable estimator is the combination of an estimator and a search space. Now that you've defined a search space and used it to create a custom factory method for generating trainers. Use the `CreateSweepableEstimator` method to create a new sweepable estimator.  
+A sweepable estimator is the combination of an estimator and a search space. Now that you've defined a search space and used it to create a custom factory method for generating trainers. Use the <xref:Microsoft.ML.AutoML.AutoCatalog.CreateSweepableEstimator%2A> method to create a new sweepable estimator.  
 
 ```csharp
 // Define Sdca sweepable estimator (SdcaRegressionTrainer + SdcaOption search space)
@@ -311,7 +311,7 @@ In order to do so you'll have to:
 
 1. Implement a custom trial runner
 
-    To create a trial runner, implement `ITrialRunner`:
+    To create a trial runner, implement <xref:Microsoft.ML.AutoML.ITrialRunner>:
 
     ```csharp
     public class SSARunner : ITrialRunner
@@ -440,7 +440,7 @@ In order to do so you'll have to:
     }
     ```
 
-    `ITrialRunner` has an asynchronous run method which produces `TrialResult` information.
+    <xref:Microsoft.ML.AutoML.ITrialRunner> has an asynchronous run method which produces <xref:Microsoft.ML.AutoML.TrialResult> information.
 
 1. Create a sweepable estimator and add it to your pipeline.
 
@@ -497,11 +497,11 @@ AutoML supports a variety of tuning algorithms to iterate through the search spa
 
 Use the following methods to set your tuner:
 
-- **SMAC** - `SetSmacTuner`
-- **Grid Search** - `SetGridSearchTuner`
-- **Random Search** - `SetRandomSearchTuner`
-- **Cost Frugal** - `SetCostFrugalTuner`
-- **Eci Cost Frugal** - `SetEciCostFrugalTuner`
+- **SMAC** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetSmacTuner%2A>
+- **Grid Search** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetGridSearchTuner%2A>
+- **Random Search** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetRandomSearchTuner%2A>
+- **Cost Frugal** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetCostFrugalTuner%2A>
+- **Eci Cost Frugal** - <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetEciCostFrugalTuner%2A>
 
 For example, to use the SMAC tuner, your code might look like the following:
 
@@ -513,7 +513,7 @@ experiment.SetSmacTuner();
 
 The quickest way to monitor the progress of an experiment is to define the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>. However, the <xref:Microsoft.ML.MLContext.Log> event outputs a raw dump of the logs generated by AutoML during each trial. Because of the large amount of unformatted information, it's difficult.  
 
-For a more controlled monitoring experience, implement a class with the `IMonitor` interface.
+For a more controlled monitoring experience, implement a class with the <xref:Microsoft.ML.AutoML.IMonitor> interface.
 
 ```csharp
 public class AutoMLMonitor : IMonitor
@@ -554,7 +554,7 @@ public class AutoMLMonitor : IMonitor
 }
 ```
 
-The `IMonitor` interface has four lifecycle events:
+The <xref:Microsoft.ML.AutoML.IMonitor> interface has four lifecycle events:
 
 - ReportBestTrial
 - ReportCompletedTrial
@@ -562,11 +562,11 @@ The `IMonitor` interface has four lifecycle events:
 - ReportRunningTrial
 
 > [!TIP]
-> Although it's not required, include your `SweepablePipeline` in your monitor so you can inspect the pipeline that was generated for a trial using the `Parameter` property of the `TrialSettings`.
+> Although it's not required, include your <xref:Microsoft.ML.AutoML.SweepablePipeline> in your monitor so you can inspect the pipeline that was generated for a trial using the `Parameter` property of the <xref:Microsoft.ML.AutoML.TrialSettings>.
 
-In this example, only the `ReportCompletedTrial` and `ReportFailTrial` are implemented.
+In this example, only the <xref:Microsoft.ML.AutoML.IMonitor.ReportCompletedTrial%2A> and <xref:Microsoft.ML.AutoML.IMonitor.ReportFailTrial%2A> are implemented.
 
-Once you've implemented your monitor, set it as part of your experiment configuration using `SetMonitor`.
+Once you've implemented your monitor, set it as part of your experiment configuration using <xref:Microsoft.ML.AutoML.AutoMLExperiment.SetMonitor%2A>.
 
 ```csharp
 var monitor = new AutoMLMonitor(pipeline);
@@ -583,7 +583,7 @@ Trial 2 finished training in 3941ms with pipeline ReplaceMissingValues=>OneHotHa
 
 ### Persist trials
 
-By default, AutoML only stores the `TrialResult` for the best model. However, if you wanted to persist each of the trials, you can do so from within your monitor.
+By default, AutoML only stores the <xref:Microsoft.ML.AutoML.TrialResult> for the best model. However, if you wanted to persist each of the trials, you can do so from within your monitor.
 
 Inside of your monitor, define a property for your completed trials and a method for accessing them.
 
@@ -604,7 +604,7 @@ public AutoMLMonitor(SweepablePipeline pipeline)
 }
 ```
 
-Append each trial result inside your `ReportCompletedTrial` lifecycle method.
+Append each trial result inside your <xref:Microsoft.ML.AutoML.IMonitor.ReportCompletedTrial%2A> lifecycle method.
 
 ```csharp
 public void ReportCompletedTrial(TrialResult result)
@@ -636,7 +636,7 @@ TrialResult experimentResults = await experiment.RunAsync(cts.Token);
 
 ### Set checkpoints
 
-Checkpoints provide a way for you to save intermediary outputs from the training process in the event of an early termination or error. To set a checkpoint, use the `SetCheckpoint` extension method and provide a directory to store the intermediary outputs.
+Checkpoints provide a way for you to save intermediary outputs from the training process in the event of an early termination or error. To set a checkpoint, use the <xref:Microsoft.ML.AutoML.AutoMLExperimentExtension.SetCheckpoint%2A> extension method and provide a directory to store the intermediary outputs.
 
 ```csharp
 var checkpointPath = Path.Join(Directory.GetCurrentDirectory(), "automl");

@@ -8,7 +8,7 @@ ms.custom: mvc
 
 # What is Deep Learning?
 
-Deep Learning is an umbrella term for an approach to Machine Learning
+Deep learning is an umbrella term for an approach to machine learning
 that makes use of "deep" Neural Networks, a kind of models originally
 inspired by the function of biological brains.  These days, Deep
 Learning is probably the most visible area of Machine Learning, and it

@@ -1,6 +1,6 @@
 ---
 title: dotnet new list
-description: The dotnet new --list option lists available templates.
+description: The dotnet new list command lists available templates.
 ms.date: 04/29/2021
 ---
 # dotnet new list
@@ -9,34 +9,39 @@ ms.date: 04/29/2021
 
 ## Name
 
-`dotnet new --list` -  Lists available templates to be run using `dotnet new`.
+`dotnet new list` -  Lists available templates to be run using `dotnet new`.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet new [<TEMPLATE_NAME>] -l|--list [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
+dotnet new list [<TEMPLATE_NAME>] [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
     [--tag <TAG>] [--type <TYPE>] [--columns <COLUMNS>] [--columns-all]
+    [-o|--output <output>] [--project <project>] [--ignore-constraints]
+    [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
 ## Description
 
-The `dotnet new --list` option lists available templates to use with `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name. This option lists only default and installed templates. To find templates in NuGet that you can install locally, use the [`--search`](dotnet-new-search.md) option.
+The `dotnet new list` command lists available templates to use with `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name. This option lists only default and installed templates. To find templates in NuGet that you can install locally, use the [`search`](dotnet-new-search.md) command.
+
+Starting with .NET SDK 7.0.100, the `list` command might not show all the templates installed on the machine. It takes the result of template constraints into account, and the templates that can't be used won't be shown. To force show all the templates, use the `--ignore-constraints` option.
 
 > [!NOTE]
 > [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 >
-> Examples of the new syntax:
+> Examples of the old syntax:
 >
-> - Show help for `list` subcommand
+> - List all Single Page Application (SPA) templates:
+>   - since .NET SDK 6.0.100
 >
 >   ```dotnetcli
->   dotnet new list --help
+>   dotnet new --list spa
 >   ```
 >
-> - List all templates matching the we substring that support the F# language.
+>   - before .NET SDK 6.0.100
 >
 >   ```dotnetcli
->   dotnet new list we --language "F#"
+>   dotnet new spa --list
 >   ```
 
 ## Arguments
@@ -45,15 +50,11 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
 
   If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in template name or short name will be shown.
 
-  > [!NOTE]
-  > Starting with .NET SDK 6.0.100, you can put the `<TEMPLATE_NAME>` argument after the `--list` option. For example, `dotnet new --list web` provides the same result as `dotnet new web --list`.
-  > Using more than one argument is not allowed.
-
 ## Options
 
 - **`--author <AUTHOR>`**
 
-  Filters templates based on template author. Partial match is supported. Available since .NET Core 5.0.300 SDK.
+  Filters templates based on template author. Partial match is supported. Available since .NET SDK 5.0.300.
 
 - **`--columns <COLUMNS>`**
 
@@ -64,11 +65,23 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
   - `type` - The template type: project or item.
   
   The template name and short name are always shown. The default list of columns is template name, short name, language, and tags. This list is equivalent to specifying `--columns=language,tags`.
-  Available since .NET Core 5.0.300 SDK.
+  Available since .NET SDK 5.0.300.
 
 - **`--columns-all`**
 
-  Displays all columns in the output. Available since .NET Core 5.0.300 SDK.
+  Displays all columns in the output. Available since .NET SDK 5.0.300.
+
+- **`-d|--diagnostics`**
+
+  Enables diagnostic output. Available since .NET SDK 7.0.100.
+
+- **`-h|--help`**
+
+  Prints out help for the list command. Available since .NET SDK 7.0.100.
+
+- **`--ignore-constraints`**
+
+  Disables checking if the template meets the constraints to be run. Available since .NET SDK 7.0.100.
 
 - **`-lang|--language {C#|F#|VB}`**
 
@@ -77,68 +90,66 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
   > [!NOTE]
   > Some shells interpret `#` as a special character. In those cases, enclose the language parameter value in quotes. For example, `dotnet new --list --language "F#"`.
 
+- **`-o|--output <OUTPUT_DIRECTORY>`**
+
+  Location to place the generated output. The default is the current directory. For the list command, it might be necessary to specify the output directory to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
+
+- **`--project <PROJECT_PATH>`**
+
+  The project that the template is added to. For the list command, it might be needed to specify the project the template is being added to to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
+
 - **`--tag <TAG>`**
 
-  Filters templates based on template tags. To be selected, a template must have at least one tag that exactly matches the criteria. Available since .NET Core 5.0.300 SDK.
+  Filters templates based on template tags. To be selected, a template must have at least one tag that exactly matches the criteria. Available since .NET SDK 5.0.300.
 
 - **`--type <TYPE>`**
 
   Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
+  
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
 
 ## Examples
 
 - List all templates
 
   ```dotnetcli
-  dotnet new --list
+  dotnet new list
   ```
 
 - List all Single Page Application (SPA) templates:
-  - since .NET SDK 6.0.100
 
   ```dotnetcli
-  dotnet new --list spa
-  ```
-
-  - before .NET SDK 6.0.100
-
-  ```dotnetcli
-  dotnet new spa --list
+  dotnet new list spa
   ```
 
 - List all templates matching the *we* substring.
-  - since .NET SDK 6.0.100
 
   ```dotnetcli
-  dotnet new --list we
-  ```
-
-  - before .NET SDK 6.0.100
-  
-  ```dotnetcli
-  dotnet new we --list
+  dotnet new list we
   ```
 
 - List all templates matching the *we* substring that support the F# language.
 
   ```dotnetcli
-  dotnet new --list we --language "F#"
+  dotnet new list we --language "F#"
   ```
 
 - List all item templates.
 
   ```dotnetcli
-  dotnet new --list --type item
+  dotnet new list --type item
   ```
 
 - List all C# templates, showing the author and the type in the output.
 
   ```dotnetcli
-  dotnet new --list --language "C#" --columns "author,type"
+  dotnet new list --language "C#" --columns "author,type"
   ```
 
 ## See also
 
 - [dotnet new command](dotnet-new.md)
-- [dotnet new --search option](dotnet-new-search.md)
+- [dotnet new search command](dotnet-new-search.md)
 - [Custom templates for dotnet new](custom-templates.md)

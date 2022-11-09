@@ -13,8 +13,6 @@ using HttpClient client = new(
     handler: new ClientSideRateLimitedHandler(
         limiter: new TokenBucketRateLimiter(options)));
 
-
-
 // Create 100 urls with a unique query string.
 var oneHundredUrls = Enumerable.Range(0, 100).Select(
     i => $"https://example.com?iteration={i:0#}");

@@ -40,7 +40,7 @@ Deep learning scenarios tend to run faster on GPUs.
 
 Some scenarios like image classification support training on Azure GPU VMs.
 
-However, if local GPUs or Azure are not an option for you, these scenarios also run on CPU. Note however that training times are significantly longer. 
+However, if local GPUs or Azure are not an option for you, these scenarios also run on CPU. Note however that training times are significantly longer.  
 
 **How do I know what GPU I have?**
 
@@ -63,6 +63,6 @@ However, if local GPUs or Azure are not an option for you, these scenarios also 
 
 **cuda is not available, please confirm you have a cuda-supported gpu**
 
-1. Open the [GeForce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/) app.
-1. The application should show installed and available driver updates. If you have trouble seeing updates, you can get the latest drivers from https://www.nvidia.com/geforce/drivers/.
+1. Open the [GeForce Experience](https://www.nvidia.com/geforce/geforce-experience/) app.
+1. The application should show installed and available driver updates. If you have trouble seeing updates, you can get the latest drivers from [https://www.nvidia.com/geforce/drivers/](https://www.nvidia.com/geforce/drivers/).
 1. Install the latest drivers.

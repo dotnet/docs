@@ -292,10 +292,10 @@ For scenarios that don't have preconfigured search spaces and sweepable estimato
 
 For example, given restaurant review data that looks like the following:
 
-| | | 
+| | |  
 | --- | --- |
-| Wow... Loved this place. | 1 | 
-| Crust is not good.	| 0 | 
+| Wow... Loved this place. | 1 |  
+| Crust is not good. | 0 |  
 
 You want to use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> trainer to analyze sentiment where 0 is negative and 1 is positive.
 
@@ -591,7 +591,7 @@ Trial 2 finished training in 3941ms with pipeline ReplaceMissingValues=>OneHotHa
 
 By default, AutoML only stores the <xref:Microsoft.ML.AutoML.TrialResult> for the best model. However, if you wanted to persist each of the trials, you can do so from within your monitor.
 
-Inside of your monitor: 
+Inside your monitor:  
 
 1. Define a property for your completed trials and a method for accessing them.
 
@@ -611,7 +611,7 @@ Inside of your monitor:
         //...
     }
     ```
-    
+
 Append each trial result inside your <xref:Microsoft.ML.AutoML.IMonitor.ReportCompletedTrial%2A> lifecycle method.
 
 ```csharp

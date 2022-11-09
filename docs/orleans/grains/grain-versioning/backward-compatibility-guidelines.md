@@ -72,7 +72,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 [Version(2)]
 public interface IMyGrain : IGrainWithIntegerKey
 {
-    // return y - x
+    // return a - b
     Task<int> Subtract(int x, int y);
 }
 ```

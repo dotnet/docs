@@ -15,9 +15,6 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 
 ![Model Builder Scenarios](./media/model-builder-scenarios-2-0.png#lightbox)
 
-> [!NOTE]
-> Model Builder is currently in Preview.
-
 ## Creating a Model Builder Project
 
 When you first start up Model Builder it will ask for you to name the project. This will create an `mbconfig` configuration file inside of the project.

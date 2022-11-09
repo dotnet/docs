@@ -8,65 +8,26 @@ ms.custom: mvc
 
 # What is deep learning?
 
-Deep learning is an umbrella term for an approach to machine learning
-that makes use of "deep" neural networks, a kind of model originally
-inspired by the function of biological brains. Today, deep
-learning is probably the most visible area of Machine Learning, and it
-has seen amazing successes in areas like Computer Vision, Natural
-Language Processing and, in combination with Reinforcement Learning,
-more complicated settings such as game playing, decision making and
-simulation.
+Deep learning is an umbrella term for machine learning techniques that make use of "deep" neural networks. Deep neural networks are a type of model originally
+inspired by the function of biological brains. Today, deep learning is one of the most visible areas of machine learning because of its success in areas like Computer Vision, Natural Language Processing, and when applied to reinforcement learning, scenarios like game playing, decision making and simulation.
 
-A crucial element of the success of Deep Learning ("DL" in what
-follows) has been the existence of software frameworks and runtimes
-that facilitate the creation of Neural Network models and their
-execution for inference.  Examples of such frameworks include
-Tensorflow, (Py)Torch and onnx.  ML.NET provides access to some of
-these frameworks, while maintaining the familiar pipeline interface.
-In this way, users of ML.NET can take advantage of some
-state-of-the-art models and applications of DL at a lower cost than
-the steep learning curve learning that other DL frameworks require.
+A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference.  Examples of such frameworks include Tensorflow, (Py)Torch and ONNX.  ML.NET provides access to some of these frameworks. As a result, ML.NET users can take advantage of deep learning models without having to build them from scratch.
 
 ## Deep Learning vs Machine Learning?
 
-As mentioned above, DL relies on "Neural Network" models, in contrast
-with "traditional" Machine Learning techniques (which use a wider
-variety of architectures, such as, for example, generalized linear
-models, decision trees or Support Vector Machines).  The most
-immediate, practical implication of this difference is that DL methods
-may be better or worse suited for some kind of data.  The performance
-of DL methods on images, on textual and on other non- or
-less-structured data has been well documented in the literature.
-Traditional Machine Learning methods such as gradient-boosted trees
-(XGBoost, LightGBM and CatBoost) seem to still have an edge when it
-comes to tabular data.  The best approach is always to experiment with
-your particular data source and use case and determine for yourself,
-and ML.NET makes this experimentation relatively straightforward and
-pain-free.
+Deep learning relies on neural network algorithms. This is in contrast with traditional or classical machine learning techniques which use a wider variety of algorithms such as generalized linear models, decision trees or Support Vector Machines (SVM).  The most immediate, practical implication of this difference is that deep learning methods may be better or worse suited for some kind of data. In some cases, classical machine learning techniques such as gradient-boosted trees (XGBoost, LightGBM and CatBoost) seem to still have an edge for tabular data. For less structured data like text and images, neural networks tend to perform better. The best approach is always to experiment with your particular data source and use case and determine for yourself which techniques work best for your problem. 
+
+For classical machine learning tasks, ML.NET simplifies this experimentation process through Automated Machine Learning (AutoML). For more information on AutoML, see the article [what is Automated Machine Learning (AutoML)?](automated-machine-learning-mlnet.md).
 
 ## Neural Network architectures
 
-A crucial differentiating characteristic of DL from other classes (or
-schools) of ML is the use of artificial Neural Networks as models.  At
-a high-level, one can think of a Neural Network as a configuration of
-"processing units" where the output of each unit constitutes the input
-of another.  Each of these units can take one or many inputs, and
-essentially carries out a weighted sum of its inputs, applies an
-offset (or "bias") and then a non-linear transformation function
-(called "activation").  Different arrangements of these relatively
-simple components have been proven surprisingly rich to describe
-decision boundaries in classification, regression functions and other
-structures central to ML tasks.
+One of the main differentiating characteristics of deep learning is the use of artificial neural network algorithms. At a high-level, you can think of neural networks as a configuration of "processing units" where the output of each unit constitutes the input of another.  Each of these units can take one or many inputs, and essentially carries out a weighted sum of its inputs, applies an offset (or "bias") and then a non-linear transformation function (called "activation").  Different arrangements of these relatively simple components have been proven surprisingly rich to describe decision boundaries in classification, regression functions and other structures central to ML tasks.
 
-The past decade has seen an explosion of use cases, applications and
-techniques of DL, each more impressive than the last, pushing the
-boundaries of what functionalities we thought a computer program could
-feature.  This expansion is fueled by an increasing variety of
-operations that can be incorporated into Neural Networks, by a richer
-set of arrangments that these operations can be configured in and by
-improved computational support for these improvements.  In general, we
-can categorize these new Neural Architectures, and their use cases
-they enable, in (a more complete description can be found [here](https://learn.microsoft.com/azure/machine-learning/concept-deep-learning-vs-machine-learning#artificial-neural-networks) ):
+<!-- 
+INSERT DIAGRAM -->
+
+The past decade has seen an explosion of use cases, applications and techniques of DL, each more impressive than the last, pushing the boundaries of what functionalities we thought a computer program could feature.  This expansion is fueled by an increasing variety of operations that can be incorporated into Neural Networks, by a richer set of arrangements that these operations can be configured in and by improved computational support for these improvements.  In general, we
+can categorize these new Neural Architectures, and their use cases they enable, in (a more complete description can be found [here](https://learn.microsoft.com/azure/machine-learning/concept-deep-learning-vs-machine-learning#artificial-neural-networks)):
 
 * Feed-forward Neural Network
 * Convolutional Neural Network
@@ -76,17 +37,8 @@ they enable, in (a more complete description can be found [here](https://learn.m
 
 ## What can I use deep learning for?
 
-As stated above, the scope of application of DL techniques is rapidly
-expanding.  DL architectures, however, have shown amazing
-(close-to-human in some cases) performance in tasks having to do with
-"unstructured data": images, audio, free-form text and the like.  In
-this way, DL is constantly featured in image/audio classification and
-generation applications.  When it comes to text processing, more
-generally Natural Language Processing, DL methods have shown amazing
-results in tasks like translation, classification, generation and
-similar.  Some of the more spectacular, recent applications of ML,
-such as "[Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)" are powered by sophisticated, large Neural
-Network architectures.
+As stated above, the scope of application of DL techniques is rapidly expanding.  DL architectures, however, have shown amazing (close-to-human in some cases) performance in tasks having to do with "unstructured data": images, audio, free-form text and the like.  In this way, DL is constantly featured in image/audio classification and
+generation applications.  When it comes to text processing, more generally Natural Language Processing, DL methods have shown amazing results in tasks like translation, classification, generation and similar.  Some of the more spectacular, recent applications of ML, such as "[Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)" are powered by sophisticated, large Neural Network architectures.
 
 ## Deep learning in ML.NET
 

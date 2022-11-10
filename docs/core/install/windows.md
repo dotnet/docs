@@ -86,7 +86,7 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
 
 ```console
-dotnet-sdk-3.1.301-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
+dotnet-sdk-7.0.100-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
 ```
 
 If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
@@ -234,6 +234,8 @@ The following table describes which versions of .NET are supported on an Arm-bas
 
 | .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
 |--------------|--------------|-----|---------|----------------------------------|
+| 7.0          | Arm64        | Yes | Yes     | No                               |
+| 7.0          | x64          | Yes | Yes     | No                               |
 | 6.0          | Arm64        | Yes | Yes     | No                               |
 | 6.0          | x64          | Yes | Yes     | No                               |
 | 5.0          | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           |

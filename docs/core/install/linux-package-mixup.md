@@ -2,7 +2,7 @@
 title: Troubleshoot .NET Package Mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux.
 author: omajid
-ms.date: 05/12/2021
+ms.date: 10/31/2022
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
@@ -41,6 +41,7 @@ This generally happens when two Linux package repositories provide .NET packages
 - CentOS Stream
 - Fedora
 - RHEL
+- Ubuntu 22.04+
 
 Mixing .NET packages from two different sources will most likely lead to issues since the packages may place things at different paths, and may be compiled differently.
 
@@ -63,7 +64,16 @@ If your distribution provides .NET packages, it's recommended that you use that 
     ```bash
     sudo dnf remove packages-microsoft-prod
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
-    sudo dnf install dotnet-sdk-5.0
+    sudo dnf install dotnet-sdk-6.0
+    ```
+
+    For Ubuntu (or any other apt-based distribution) use the following bash commands
+
+    ```bash
+    sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
+    sudo rm /etc/apt/sources.list.d/microsoft-prod.list
+    sudo apt update
+    sudo apt install dotnet-sdk-6.0
     ```
 
 02. **I want to use the distribution provided .NET packages, but I also use the Microsoft repository for other packages.**
@@ -79,8 +89,30 @@ If your distribution provides .NET packages, it's recommended that you use that 
     ```bash
     echo 'excludepkgs=dotnet*,aspnet*,netstandard*' | sudo tee -a /etc/yum.repos.d/microsoft-prod.repo
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
-    sudo dnf install dotnet-sdk-5.0
+    sudo dnf install dotnet-sdk-6.0
     ```
+
+    For Ubuntu (or any other distribution that uses apt):
+
+    01. Remove the .NET packages if you previously installed them.
+    01. Create `/etc/apt/preferences` if it doesn't already exist.
+    01. Add the following config to the preferences file, which prevents packages that start with `dotnet` or `aspnetcore` from being sourced by the Microsoft feed:
+
+        ```bash
+        Package: dotnet*
+        Pin: origin "packages.microsoft.com"
+        Pin-Priority: -1
+
+        Package: aspnetcore*
+        Pin: origin "packages.microsoft.com"
+        Pin-Priority: -1
+        ```
+
+    01. Install .NET.
+
+        ```bash
+        sudo apt-get update && sudo apt-get install -y dotnet6
+        ```
 
 03. **I need a recent version of .NET that's not provided by the Linux distribution repositories.**
 
@@ -91,7 +123,14 @@ If your distribution provides .NET packages, it's recommended that you use that 
     ```bash
     echo 'priority=50' | sudo tee -a /etc/yum.repos.d/microsoft-prod.repo
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
-    sudo dnf install dotnet-sdk-5.0
+    sudo dnf install dotnet-sdk-6.0
+    ```
+
+    For Ubuntu (or any other distribution that uses apt) make sure you've installed the Microsoft repository feeds and then install the package.
+
+    ```bash
+    sudo apt remove dotnet* aspnetcore*
+    sudo apt install dotnet-sdk-6.0
     ```
 
 04. **I've encountered a bug in the Linux distribution version of .NET, I need the latest Microsoft version.**

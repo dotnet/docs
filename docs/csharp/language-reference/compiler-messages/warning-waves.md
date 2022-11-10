@@ -94,16 +94,6 @@ The `==` and `!=` operators always return `false` (or `true`) when comparing an 
 
 To fix this error, remove the null check and code that would execute if the object is `null`.
 
-## CS8509 - The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.
-
-*Warning wave 5*
-
-The following code snippets generate CS8509:
-
-:::code language="csharp" source="./snippets/WarningWaves/WaveFive.cs" id="SwitchNotAllPossibleValues":::
-
-For more information, see [Switch](../statements/selection-statements.md#the-switch-statement).
-
 ## CS8848 - Operator 'from' can't be used here due to precedence. Use parentheses to disambiguate.
 
 *Warning wave 5*

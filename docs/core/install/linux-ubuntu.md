@@ -23,7 +23,7 @@ The following table is a list of currently supported .NET releases and the versi
 | [22.04 (LTS)](#2204) | 6+     |
 | [20.04 (LTS)](#2004) | 3.1, 6 |
 | [18.04 (LTS)](#1804) | 3.1, 6 |
-| [17.04 (LTS)](#1604) | 3.1, 6 |
+| [16.04 (LTS)](#1604) | 3.1, 6 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

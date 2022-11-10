@@ -78,9 +78,9 @@ The preceding C# code:
 - Writes the sent message to the console.
 - Finally, calls the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to stop listening on the port.
 
-## Advanced TCP control with `Socket` class
+## Finite TCP control with the `Socket` class
 
-`TcpClient` and `TcpListener` relies on the `Socket` class internally, meaning you can achieve everything by using sockets directly. This guideline looks at several `TcpClient` and `TcpListener` use cases, presenting their `Socket` counterpart.
+Both `TcpClient` and `TcpListener` internally rely on the `Socket` class, meaning anything you can do with these classes can be achieved using sockets directly. This section demonstrates several `TcpClient` and `TcpListener` use cases, along with their `Socket` counterpart that is functionally equivalent.
 
 ### Create a client socket
 
@@ -120,28 +120,27 @@ var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolT
 
 #### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.IPEndPoint)> constructor
 
-Upon creating the socket, this constructor will also **bind** it to the provided **local** `IPEndPoint`. The <xref:System.Net.IPEndPoint.AddressFamily?displayProperty=nameWithType> property is used to determine the address family of the socket.
+Upon creating the socket, this constructor will also **bind** to the provided **local** `IPEndPoint`. The <xref:System.Net.IPEndPoint.AddressFamily?displayProperty=nameWithType> property is used to determine the address family of the socket.
 
 Consider the following TCP client code:
 
 ```csharp
-// Example IPEndPoint object
-var ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
-var client = new TcpClient(ep);
+var endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
+var client = new TcpClient(endPoint);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
 // Example IPEndPoint object
-var ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
-var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-socket.Bind(ep);
+var endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
+var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+socket.Bind(endPoint);
 ```
 
 #### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.String,System.Int32)> constructor
 
-This constructor will attempt to create a dual-stack similarly to the default constructor and **connect** it to the **remote** DNS endpoint defined by `hostname` and `port`.
+This constructor will attempt to create a dual-stack similar to the default constructor and **connect** it to the **remote** DNS endpoint defined by the `hostname` and `port` pair.
 
 Consider the following TCP client code:
 
@@ -176,9 +175,7 @@ socket.Connect("www.example.com", 80);
 
 ### Create a server socket
 
-In `TcpListener` class, basically, constructors initializes underlying socket. One of them is `TcpListener(IPAddress localaddr, int port)`.
-
-Consider the following TCP listener code:
+Much like `TcpClient` instances having functional equivalency with their raw `Socket` counterparts, this section maps `TcpListener` constructors to their corresponding socket code. The first constructor to consider is the `TcpListener(IPAddress localaddr, int port)`.
 
 ```csharp
 var listener = new TcpListener(IPAddress.Loopback, 5000);
@@ -193,7 +190,7 @@ var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
 ### Start listening on the server
 
-The <xref:System.Net.Sockets.TcpListener.Start> method is a wrapper combining Socket's <xref:System.Net.Sockets.Socket.Bind%2A> and <xref:System.Net.Sockets.Socket.Listen>.
+The <xref:System.Net.Sockets.TcpListener.Start> method is a wrapper combining `Socket`'s <xref:System.Net.Sockets.Socket.Bind%2A> and <xref:System.Net.Sockets.Socket.Listen> functionality.
 
 Consider the following TCP listener code:
 
@@ -205,9 +202,9 @@ listener.Start(10);
 The preceding TCP listener code is functionally equivalent to the following socket code:
 
 ```csharp
-var ep = new IPEndPoint(IPAddress.Loopback, 5000);
-var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-socket.Bind(ep);
+var endPoint = new IPEndPoint(IPAddress.Loopback, 5000);
+var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+socket.Bind(endPoint);
 try
 {
     socket.Listen(10);
@@ -218,29 +215,29 @@ catch (SocketException)
 }
 ```
 
-### Accepting a connection on the server
+### Accept a server connection
 
 Under the hood, incoming TCP connections are always creating a new socket when accepted. `TcpListener` can accept a <xref:System.Net.Sockets.Socket> instance directly (via <xref:System.Net.Sockets.TcpListener.AcceptSocket> or <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync>) or it can accept a <xref:System.Net.Sockets.TcpClient> (via <xref:System.Net.Sockets.TcpListener.AcceptTcpClient> and <xref:System.Net.Sockets.TcpListener.AcceptTcpClientAsync>).
 
-Consider the following `TcpClient` code:
+Consider the following `TcpListener` code:
 
 ```csharp
 var listener = new TcpListener(IPAddress.Loopback, 5000);
-var acceptSocket = listener.AcceptSocket();
+var acceptedSocket = await listener.AcceptSocketAsync();
 
-// async code:
-// var acceptSocket = await listener.AcceptSocketAsync();
+// Synchronous alternative.
+// var acceptedSocket = listener.AcceptSocket();
 ```
 
 The preceding TCP listener code is functionally equivalent to the following socket code:
 
 ```csharp
-var ep = new IPEndPoint(IPAddress.Loopback, 5000);
-var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-var acceptSocket = socket.Accept();
+var endPoint = new IPEndPoint(IPAddress.Loopback, 5000);
+var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+var acceptedSocket = await socket.AcceptAsync();
 
-// async code:
-// var acceptSocket = await socket.AcceptAsync();
+// Synchronous alternative
+// var acceptedSocket = socket.Accept();
 ```
 
 ### Create a `NetworkStream` to send and receive data

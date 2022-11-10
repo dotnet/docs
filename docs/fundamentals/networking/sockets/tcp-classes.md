@@ -89,13 +89,13 @@ Both `TcpClient` and `TcpListener` internally rely on the `Socket` class, meanin
 Consider the following TCP client code:
 
 ```csharp
-var client = new TcpClient();
+using var client = new TcpClient();
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
-var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 ```
 
 #### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.Sockets.AddressFamily)> constructor
@@ -109,13 +109,13 @@ This constructor accepts only three `AddressFamily` values, otherwise it will th
 Consider the following TCP client code:
 
 ```csharp
-var client = new TcpClient(AddressFamily.InterNetwork);
+using var client = new TcpClient(AddressFamily.InterNetwork);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
-var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 ```
 
 #### The <xref:System.Net.Sockets.TcpClient.%23ctor(System.Net.IPEndPoint)> constructor
@@ -126,7 +126,7 @@ Consider the following TCP client code:
 
 ```csharp
 var endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
-var client = new TcpClient(endPoint);
+using var client = new TcpClient(endPoint);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
@@ -134,7 +134,7 @@ The preceding TCP client code is functionally equivalent to the following socket
 ```csharp
 // Example IPEndPoint object
 var endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5001);
-var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 socket.Bind(endPoint);
 ```
 
@@ -145,13 +145,13 @@ This constructor will attempt to create a dual-stack similar to the default cons
 Consider the following TCP client code:
 
 ```csharp
-var client = new TcpClient("www.example.com", 80);
+using var client = new TcpClient("www.example.com", 80);
 ```
 
 The preceding TCP client code is functionally equivalent to the following socket code:
 
 ```csharp
-var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 socket.Connect("www.example.com", 80);
 ```
 
@@ -162,14 +162,14 @@ All `Connect`, `ConnectAsync`, `BeginConnect` and `EndConnect` overloads in `Tcp
 Consider the following TCP client code:
 
 ```csharp
-var client = new TcpClient();
+using var client = new TcpClient();
 client.Connect("www.example.com", 80);
 ```
 
 The above `TcpClient` code is equivalent to the following socket code:
 
 ```csharp
-var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 socket.Connect("www.example.com", 80);
 ```
 
@@ -185,7 +185,7 @@ The preceding TCP listener code is functionally equivalent to the following sock
 
 ```csharp
 var ep = new IPEndPoint(IPAddress.Loopback, 5000);
-var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(ep.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 ```
 
 ### Start listening on the server
@@ -203,7 +203,7 @@ The preceding TCP listener code is functionally equivalent to the following sock
 
 ```csharp
 var endPoint = new IPEndPoint(IPAddress.Loopback, 5000);
-var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 socket.Bind(endPoint);
 try
 {
@@ -223,7 +223,7 @@ Consider the following `TcpListener` code:
 
 ```csharp
 var listener = new TcpListener(IPAddress.Loopback, 5000);
-var acceptedSocket = await listener.AcceptSocketAsync();
+using var acceptedSocket = await listener.AcceptSocketAsync();
 
 // Synchronous alternative.
 // var acceptedSocket = listener.AcceptSocket();
@@ -233,8 +233,8 @@ The preceding TCP listener code is functionally equivalent to the following sock
 
 ```csharp
 var endPoint = new IPEndPoint(IPAddress.Loopback, 5000);
-var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-var acceptedSocket = await socket.AcceptAsync();
+using var socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+using var acceptedSocket = await socket.AcceptAsync();
 
 // Synchronous alternative
 // var acceptedSocket = socket.Accept();
@@ -247,17 +247,17 @@ With `TcpClient` you need to instantiate a <xref:System.Net.Sockets.NetworkStrea
 Consider the following `TcpClient` code:
 
 ```csharp
-var client = new TcpClient();
-NetworkStream stream = client.GetStream();
+using var client = new TcpClient();
+using NetworkStream stream = client.GetStream();
 ```
 
 Which is equivalent to the following socket code:
 
 ```csharp
-var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+using var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
 // Be aware that transfering the ownership means that closing/disposing the stream will also close the underlying socket.
-var stream = new NetworkStream(socket, ownsSocket: true);
+using var stream = new NetworkStream(socket, ownsSocket: true);
 ```
 
 > [!TIP]

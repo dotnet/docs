@@ -36,7 +36,7 @@ There are two ways to download and install `dotnet-trace`:
 ## Synopsis
 
 ```dotnetcli
-dotnet-trace [-h, --help] [--version] <command> [--duration dd:hh:mm:ss]
+dotnet-trace [-h, --help] [--version] <command>
 ```
 
 ## Description
@@ -80,7 +80,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ```dotnetcli
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
-    [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
+    [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
     [--show-child-io]

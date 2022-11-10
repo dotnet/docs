@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 10/12/2021
+ms.date: 11/10/2022
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -13,10 +13,7 @@ Model Builder uses automated machine learning (AutoML) to explore different mach
 
 You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model to your .NET application.
 
-![Model Builder Scenarios](./media/model-builder-scenarios.png#lightbox)
-
-> [!NOTE]
-> Model Builder is currently in Preview.
+:::image type="content" source="media/model-builder-scenarios-2-0.png" alt-text="Model Builder scenario screen" lightbox="media/model-builder-scenarios-2-0.png":::
 
 ## Creating a Model Builder Project
 
@@ -45,14 +42,15 @@ A scenario is a description of the type of prediction you want to make using you
 
 Each scenario maps to a different Machine Learning Task which include:
 
-- Binary classification
-- Multiclass classification
-- Regression
-- Clustering
-- Anomaly detection
-- Ranking
-- Recommendation
-- Forecasting
+| Task | Scenario |
+| --- | --- |
+| Binary classification | Data classification |
+| Multiclass classification | Data classification |
+| Image classification | Image classification |
+| Text classification | Text classification |
+| Regression | Value prediction |
+| Recommendation | Recommendation |
+| Forecasting | Forecasting |
 
 For example, the scenario of classifying sentiments as positive or negative would fall under the binary classification task.
 
@@ -62,31 +60,63 @@ For more information about the different ML Tasks supported by ML.NET see [Machi
 
 In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
-#### Data classification
+#### Tabular
+
+##### Data classification
 
 Classification is used to categorize data into categories.
 
-![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
+<!-- ![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
 
-![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
+![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png) -->
 
-#### Value prediction
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | SepalLength | SepalWidth | Petal Length | Petal Width | Species |
+        | --- | --- | --- | --- | --- |
+        | 5.1 | 3.5 | 1.4 | 0.2 | setosa |
+    :::column-end:::
+    :::column:::
+        | Predicted species |
+        | --- |
+        | setosa |
+    :::column-end:::
+:::row-end:::
+
+##### Value prediction
 
 Value prediction, which falls under the regression task, is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
-#### Image classification
-
-Image classification is used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
-
-You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
-
-#### Object detection
-
-Object detection is used to locate and categorize entities within images.  For example, locating and identifying cars and people in an image.
-
-You can use object detection when images contain multiple objects of different types.
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance | payment_type | fare_amount |
+        | --- | --- | --- | --- | --- | --- | --- |
+        | CMT | 1 | 1 | 1271 | 3.8 | CRD | 17.5 |
+    :::column-end:::
+    :::column:::
+        | Predicted Fare |
+        | --- |
+        | 4.5 |
+    :::column-end:::
+:::row-end:::
 
 #### Recommendation
 
@@ -94,17 +124,148 @@ The recommendation scenario predicts a list of suggested items for a particular 
 
 You can use the recommendation scenario when you have a set of users and a set of "products", such as items to purchase, movies, books, or TV shows, along with a set of users' "ratings" of those products.
 
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | UserId | ProductId | Rating |
+        | --- | --- | --- |
+        | 1 | 2 | 4.2 |
+    :::column-end:::
+    :::column:::
+        | Predicted rating |
+        | --- |
+        | 4.5 |
+    :::column-end:::
+:::row-end:::
+
+##### Forecasting
+
+The forecasting scenario uses historical data with a time-series or seasonal component to it.
+
+You can use the forecasting scenario to forecast demand or sale for a product.
+
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | Date | SaleQty |
+        | --- | --- |
+        | 1/1/1970 | 1000 |
+    :::column-end:::
+    :::column:::
+        | 3 Day Forecast |
+        | --- |
+        | [1000,1001,1002] |
+    :::column-end:::
+:::row-end:::
+
+#### Computer Vision
+
+##### Image classification
+
+Image classification is used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
+
+You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
+
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        :::image type="content" source="media/automate-training-with-model-builder/dog-classification.png" alt-text="Profile view of standing pug":::
+    :::column-end:::
+    :::column:::
+        | Predicted Label |
+        | --- |
+        | Dog |
+    :::column-end:::
+:::row-end:::
+
+##### Object detection
+
+Object detection is used to locate and categorize entities within images.  For example, locating and identifying cars and people in an image.
+
+You can use object detection when images contain multiple objects of different types.
+
+:::row:::
+    :::column:::
+        **Sample Input**
+    :::column-end:::
+    :::column:::
+        **Sample Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        :::image type="content" source="media/automate-training-with-model-builder/dog-classification.png" alt-text="Profile view of standing pug":::
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="media/automate-training-with-model-builder/dog-object-detection-min.png" alt-text="Profile view of standing pug with bounding box and dog label":::
+    :::column-end:::
+:::row-end:::
+
+#### Natural Language Processing
+
+##### Text classification
+
+Text classification categorizes raw text input.
+
+You can use the text classification scenario if you have a set of documents or comments, and you want to classify them into different categories.
+
+:::row:::
+    :::column:::
+        **Example Input**
+    :::column-end:::
+    :::column:::
+        **Example Output**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        | Review |
+        | ---  |
+        | I really like this steak!|
+    :::column-end:::
+    :::column:::
+        | Sentiment |
+        | --- |
+        | Positive |
+    :::column-end:::
+:::row-end:::
+
 ## Environment
 
 You can train your machine learning model locally on your machine or in the cloud on Azure, depending on the scenario.
 
 When you train locally, you work within the constraints of your computer resources (CPU, memory, and disk). When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
 
-Local CPU training is supported for all scenarios except Object Detection.
-
-Local GPU training is supported for Image Classification.
-
-Azure training is supported for Image Classification and Object Detection.
+| Scenario             | Local CPU | Local GPU | Azure |
+|-----------------------|------------|------------|--------|
+| Data classification  | ✔️       | ❌         | ❌    |
+| Value prediction     | ✔️       | ❌         | ❌    |
+| Recommendation       | ✔️       | ❌         | ❌    |
+| Forecasting          | ✔️       | ❌         | ❌    |
+| Image classification | ✔️       | ✔️        | ✔️   |
+| Object detection     | ❌        | ❌         | ✔️   |
+| Text classification  | ✔️       | ✔️        | ❌    |
 
 ## Data
 

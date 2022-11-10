@@ -7,7 +7,7 @@ using Microsoft.Extensions.Options;
 [ProviderAlias("ColorConsole")]
 public sealed class ColorConsoleLoggerProvider : ILoggerProvider
 {
-    private readonly IDisposable _onChangeToken;
+    private readonly IDisposable? _onChangeToken;
     private ColorConsoleLoggerConfiguration _currentConfig;
     private readonly ConcurrentDictionary<string, ColorConsoleLogger> _loggers =
         new(StringComparer.OrdinalIgnoreCase);
@@ -27,6 +27,6 @@ public sealed class ColorConsoleLoggerProvider : ILoggerProvider
     public void Dispose()
     {
         _loggers.Clear();
-        _onChangeToken.Dispose();
+        _onChangeToken?.Dispose();
     }
 }

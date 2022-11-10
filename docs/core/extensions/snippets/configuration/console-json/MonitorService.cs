@@ -2,7 +2,7 @@
 
 namespace ConsoleJson.Example;
 
-public class MonitorService
+public sealed class MonitorService
 {
     private readonly IOptionsMonitor<TransientFaultHandlingOptions> _monitor;
 

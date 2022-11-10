@@ -26,9 +26,6 @@ In this tutorial, you learn how to:
 > - Evaluate the model
 > - Use the model for predictions
 
-> [!NOTE]
-> Model Builder is currently in Preview.
-
 ## Prerequisites
 
 For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).

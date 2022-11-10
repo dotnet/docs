@@ -2,7 +2,7 @@
 
 namespace Console.ExampleFormatters.CustomWithConfig;
 
-public class CustomWrappingConsoleFormatterOptions : ConsoleFormatterOptions
+public sealed class CustomWrappingConsoleFormatterOptions : ConsoleFormatterOptions
 {
     public string? CustomPrefix { get; set; }
 

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 
 namespace ConsoleJson.Example;
 
-public class ValidationService
+public sealed class ValidationService
 {
     private readonly ILogger<ValidationService> _logger;
     private readonly IOptions<SettingsOptions> _config;

@@ -100,8 +100,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   Specifies the source channel for the installation. The possible values are:
 
-  - `STS` - Standard Term Support SDK
-  - `LTS` - The most current Long Term Support release
+  - `STS` - the most recent Standard Term Support release
+  - `LTS` - the most recent Long Term Support release
   - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
   - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 

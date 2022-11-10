@@ -32,7 +32,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 ### Response compression
 
-If `dotnet watch` runs for an app that uses [response compression](xref:performance/response-compression), the tool can't inject the browser refresh script. In that case, the .NET 7 version of the tool displays a warning message like the following:
+If `dotnet watch` runs for an app that uses [response compression](/aspnet/core/performance/response-compression), the tool can't inject the browser refresh script. In that case, the .NET 7 version of the tool displays a warning message like the following:
 
 > warn: Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware[4]
 >

@@ -126,11 +126,11 @@ The new serializer requires that you are explicit about which types and members 
 
 ![orleans_analyzer](https://user-images.githubusercontent.com/203839/154169861-7c5547d0-e489-4af9-8aba-1e2f71c50211.gif)
 
-By default, Orleans will serialize your type by encoding its full name. You can override this by adding an `[Alias("MyType")]` attribute. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Note that type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyType<T, U>` could have the alias `[Alias("mytype`2")]`.
+By default, Orleans will serialize your type by encoding its full name. You can override this by adding an `[Alias("MyType")]` attribute. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Note that type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyType<T, U>` could have the alias <code>[Alias("mytype\`2")]</code>.
 
 ### Serializing `record` types
 
-Members defined in a record's primary constructor have implicit ids by default, in other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
+Members defined in a record's primary constructor have implicit ids by default. In other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
 ### Serialization best practices
 
@@ -289,7 +289,7 @@ For sending data between hosts, `Orleans.Serialization` supports delegating to o
 
 ##### Configure Orleans to use System.Text.Json
 
-Configuring Orleans to use `System.Text.Json` to serialize a subset of types is similar to configuring Orleans to serialize types using `Newtonsoft.Json`, except that the package an configuration methods are different:
+Configuring Orleans to use `System.Text.Json` to serialize a subset of types is similar to configuring Orleans to serialize types using `Newtonsoft.Json`, except that the package and configuration methods are different:
 
 - Install the `Microsoft.Orleans.Serialization.SystemTextJson` package
 - Configure the serializer using the `AddJsonSerializer` method

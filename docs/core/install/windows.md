@@ -277,7 +277,7 @@ For more information about .NET 7 supported operating systems, distributions, an
 
 # [.NET 6](#tab/net60)
 
-The following Windows versions are supported with .NET 7:
+The following Windows versions are supported with .NET 6:
 
 > [!NOTE]
 > A `+` symbol represents the minimum version.

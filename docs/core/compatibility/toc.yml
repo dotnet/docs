@@ -33,8 +33,6 @@ items:
           href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
-        - name: Endpoint metadata provider interface changes
-          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: Fallback file endpoints
@@ -129,8 +127,6 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
-        - name: ClientWebSocket.ConnectAsync throws new exception
-          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
@@ -669,8 +665,6 @@ items:
           href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
-        - name: Endpoint metadata provider interface changes
-          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: Fallback file endpoints
@@ -1125,8 +1119,6 @@ items:
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
-        - name: ClientWebSocket.ConnectAsync throws new exception
-          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException

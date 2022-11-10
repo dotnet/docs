@@ -8,6 +8,10 @@ ms.topic: how-to
 
 # How to use the ML.NET Automated Machine Learning (AutoML) API
 
+In this article, you learn how to use the ML.NET Automated ML (AutoML API).
+
+Samples for the AutoML API can be found in the [dotnet/machinelearning-samples](https://aka.ms/mlnet-2-samples) repo.
+
 ## Installation
 
 To use the AutoML API, install the [`Microsoft.ML.AutoML`](https://www.nuget.org/packages/Microsoft.ML.AutoML) NuGet package in the .NET project you want to reference it in.
@@ -31,7 +35,7 @@ AutoML provides several defaults for quickly training machine learning models. I
 - Run your experiment
 - Use the best model to make predictions
 
-### Defining your problem
+### Define your problem
 
 Given a dataset stored in a comma-separated file called *taxi-fare-train.csv* that looks like the following:  
 
@@ -41,7 +45,7 @@ CMT|1|1|1271|3.8|CRD|17.5
 CMT|1|1|474|1.5|CRD|8
 CMT|1|1|637|1.4|CRD|8.5
 
-### Load data
+### Load your data
 
 Start by inizializing your <xref:Microsoft.ML.MLContext>. `MLContext` is a starting point for all ML.NET operations. Initializing mlContext creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 

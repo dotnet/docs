@@ -8,26 +8,25 @@ ms.custom: mvc
 
 # What is deep learning?
 
-Deep learning is an umbrella term for machine learning techniques that make use of "deep" neural networks. Deep neural networks are a type of model originally
-inspired by the function of biological brains. Today, deep learning is one of the most visible areas of machine learning because of its success in areas like Computer Vision, Natural Language Processing, and when applied to reinforcement learning, scenarios like game playing, decision making and simulation.
+Deep learning is an umbrella term for machine learning techniques that make use of "deep" neural networks. Today, deep learning is one of the most visible areas of machine learning because of its success in areas like Computer Vision, Natural Language Processing, and when applied to reinforcement learning, scenarios like game playing, decision making and simulation.
 
-A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference.  Examples of such frameworks include Tensorflow, (Py)Torch and ONNX.  ML.NET provides access to some of these frameworks. As a result, ML.NET users can take advantage of deep learning models without having to build them from scratch.
+A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference.  Examples of such frameworks include Tensorflow, (Py)Torch and ONNX.  
+
+ML.NET provides access to some of these frameworks. As a result, ML.NET users can take advantage of deep learning models without having to start from scratch.
 
 ## Deep Learning vs Machine Learning?
 
-Deep learning relies on neural network algorithms. This is in contrast with traditional or classical machine learning techniques which use a wider variety of algorithms such as generalized linear models, decision trees or Support Vector Machines (SVM).  The most immediate, practical implication of this difference is that deep learning methods may be better or worse suited for some kind of data. In some cases, classical machine learning techniques such as gradient-boosted trees (XGBoost, LightGBM and CatBoost) seem to still have an edge for tabular data. For less structured data like text and images, neural networks tend to perform better. The best approach is always to experiment with your particular data source and use case and determine for yourself which techniques work best for your problem. 
+Deep learning relies on neural network algorithms. This is in contrast with traditional or classical machine learning techniques which use a wider variety of algorithms such as generalized linear models, decision trees or Support Vector Machines (SVM).  The most immediate, practical implication of this difference is that deep learning methods may be better suited for some kind of data. In some cases, classical machine learning techniques such as gradient-boosted trees (XGBoost, LightGBM and CatBoost) seem to have an edge for tabular data. For less structured data like text and images, neural networks tend to perform better. The best approach is always to experiment with your particular data source and use case to determine for yourself which techniques work best for your problem.  
 
 For classical machine learning tasks, ML.NET simplifies this experimentation process through Automated Machine Learning (AutoML). For more information on AutoML, see the article [what is Automated Machine Learning (AutoML)?](automated-machine-learning-mlnet.md).
 
 ## Neural Network architectures
 
-One of the main differentiating characteristics of deep learning is the use of artificial neural network algorithms. At a high-level, you can think of neural networks as a configuration of "processing units" where the output of each unit constitutes the input of another.  Each of these units can take one or many inputs, and essentially carries out a weighted sum of its inputs, applies an offset (or "bias") and then a non-linear transformation function (called "activation").  Different arrangements of these relatively simple components have been proven surprisingly rich to describe decision boundaries in classification, regression functions and other structures central to ML tasks.
+One of the main differentiating characteristics of deep learning is the use of artificial neural network algorithms. At a high-level, you can think of neural networks as a configuration of "processing units" where the output of each unit constitutes the input of another.  Each of these units can take one or many inputs, and essentially carries out a weighted sum of its inputs, applies an offset (or "bias") and then a non-linear transformation function (called "activation").  Different arrangements of these components have been used to describe decision boundaries in classification, regression functions and other structures central to machine learning tasks.
 
-<!-- 
-INSERT DIAGRAM -->
+:::image type="content" source="media/single-layer-neural-net.png" alt-text="Diagram representing single layer in neural network" lightbox="media/single-layer-neural-net.png":::
 
-The past decade has seen an explosion of use cases, applications and techniques of DL, each more impressive than the last, pushing the boundaries of what functionalities we thought a computer program could feature.  This expansion is fueled by an increasing variety of operations that can be incorporated into Neural Networks, by a richer set of arrangements that these operations can be configured in and by improved computational support for these improvements.  In general, we
-can categorize these new Neural Architectures, and their use cases they enable, in (a more complete description can be found [here](https://learn.microsoft.com/azure/machine-learning/concept-deep-learning-vs-machine-learning#artificial-neural-networks)):
+The past decade has seen an increase in cases, applications and techniques of deep learning. This increase is driven in part by an increasing variety of operations that can be incorporated into neural networks, a richer set of arrangements that these operations can be configured in and improved computational support for these improvements.  In general, neural network architectures can be grouped into the following categories:
 
 * Feed-forward Neural Network
 * Convolutional Neural Network
@@ -35,103 +34,156 @@ can categorize these new Neural Architectures, and their use cases they enable, 
 * Generative Adversarial Network
 * Transformers
 
+For more details, see the [artificial neural networks guide](/azure/machine-learning/concept-deep-learning-vs-machine-learning).
+
 ## What can I use deep learning for?
 
-As stated above, the scope of application of DL techniques is rapidly expanding.  DL architectures, however, have shown amazing (close-to-human in some cases) performance in tasks having to do with "unstructured data": images, audio, free-form text and the like.  In this way, DL is constantly featured in image/audio classification and
-generation applications.  When it comes to text processing, more generally Natural Language Processing, DL methods have shown amazing results in tasks like translation, classification, generation and similar.  Some of the more spectacular, recent applications of ML, such as "[Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion)" are powered by sophisticated, large Neural Network architectures.
+Deep learning architectures, have shown good performance in tasks involving "unstructured data" such as images, audio, and free-form text.  As a result, deep learning has been used to solve problems like:
+
+* Image classification
+* Audio classification
+* Translation
+* Text generation
+* Text classification
 
 ## Deep learning in ML.NET
 
-A central concern of DL is what Neural Network architecture (specific configuration of operations) will the model have, and to this end, DL frameworks like Tensorflow and Pytorch feature expressive Domain-Specific Languages to describe in detail such architectures.  ML.NET departs from this practice and concentrates on the consumption of pre-trained models (i.e., architectures that have been specified *and* trained in other frameworks).
+Training a deep learning model from scratch requires setting several parameters, a large amount of labeled training data, and a vast amount of compute resources (hundreds of GPU hours). ML.NET enables you to shortcut this process by using pretrained models and knowledge transfer techniques such as transfer learning and fine-tuning.
 
-## Train custom models
+ML.NET also enables you to import models trained in other frameworks and consume them within your .NET applications.
 
-Many Deep Learning frameworks include facilities to build up a Deep Learning architecture out of individual operations, and  to construct a training loop.  Training Deep Learning models usually requires a significant amount of training data and compute, which is why ML.NET has implemented a "separable" training/inference API, that allows training a model (in, for example, [the Cloud](https://devblogs.microsoft.com/dotnet/training-a-ml-dotnet-model-with-azure-ml/) to make use of bigger and more plentiful resources) and consuming the result in a client/edge or other deployment scenarios with more limited resources.
+Depending on the scenario, you can use local GPU as well as Azure GPU compute resources to train and consume deep learning models.
 
-## Image classification
+### Train custom models
 
-Add section on image classification
+ML.NET provides APIs to train custom deep learning models and use them to make predictions inside your .NET application.
 
-## Object detection
+These APIs are powered by [TorchSharp](https://github.com/dotnet/TorchSharp) and [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET).
 
-Add section on object detection
+#### Image classification
 
-## Text classification  
+In ML.NET you can use the <xref:Microsoft.ML.VisionCatalog.ImageClassification%2A> set of APIs to train custom image classification models.
 
-As stated above, Deep Learning has proven to be especially useful in tasks involving non-structured data, like audio, video, images or text.  ML.NET provides a rich API for working with text, powered by state-of-the-art Deep Learning models (specifically, [NAS-BERT](https://dl.acm.org/doi/abs/10.1145/3447548.3467262)).  The API is high-level, though, so you can treat the actual models powering it as an implementation detail, and concentrate of the functionality of your application.
-
-An end-to-end example of this API can be found [here](https://github.com/dotnet/csharp-notebooks/blob/main/machine-learning/E2E-Text-Classification-API-with-Yelp-Dataset.ipynb), but a snippet is shown below as an illustration.   Here, the input (for the training task) is assumed as a `IDataView` that includes phrases with their corresponding label (the strings "positive" or "negative" to describe the sentiment they express):
+An image classification training pipeline in ML.NET might look like the following:
 
 ```csharp
+//Append ImageClassification trainer to your pipeline containing any preprocessing transforms
+pipeline
+    .Append(mlContext.MulticlassClassification.Trainers.ImageClassification(featureColumnName: "Image")
+    .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel");
+
+// Train your model
+var model = pipeline.Fit(trainingData);
+
+// Use your model for inferencing
+var predictedData = model.Transform(newData).GetColumn<string>("PredictedLabel");
+```
+
+To get started training custom image classification models in ML.NET, see the [Train an image classification model in Azure using Model Builder](tutorials/image-classification-model-builder.md)
+
+#### Object detection
+
+ML.NET enables you to train custom object detection models in Model Builder using Azure Machine Learning. All you need is a labelled dataset containing bounding box information and the categories the objects in the bounding boxes belong to.
+
+The result of the training process is an ONNX model which can then be used with the <xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A> transform for to make predictions.
+
+At this time, there is no local support for object detection in ML.NET.
+
+To train custom object detection models with ML.NET, see the [Detect stop signs in images with Model Builder tutorial](tutorials/object-detection-model-builder.md)
+
+#### Text classification  
+
+Classifying free-form text, whether that's customer reviews or business memos is an important part of many processes.
+
+In ML.NET, you can use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> set of APIs to train custom text classification models. The technique used to train custom text classification models in ML.NET is known as fine-tuning. Fine-tuning enables you to take a pre-trained model and retrain the layers specific to your domain or problem using your own data. This gives you the benefit of having a model that’s more tailored to solve your problem without having to go through the process of training the entire model from scratch. The pretrained model used by the Text Classification API is a TorchSharp implementation of [NAS-BERT](https://dl.acm.org/doi/abs/10.1145/3447548.3467262).
+
+A text classification training pipeline in ML.NET might look like the following:
+
+```csharp
+// Define training pipeline using TextClassification trainer
 var pipeline = 
     mlContext.Transforms.Conversion.MapValueToKey("Label","Sentiment")
         .Append(mlContext.MulticlassClassification.Trainers.TextClassification(sentence1ColumnName: "Text"))
         .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
-            
+
+// Train your model
 var model = pipeline.Fit(trainingData);
+
+// Use your model to make predictions
+var predictedData = model.Transform(newData).GetColumn<string>("PredictedLabel");
 ```
 
-As you can see, the pipeline recodes the sentiment category, and configures the `TextClassification` trainer to use the relevant column in the input.  The call to `Fit` trains the model, that then can be used to predict the labels on unseen data with a call like:
+To get started training text classification models with ML.NET, see the [Analyze sentiment of website comments in a web application using ML.NET Model Builder tutorial](tutorials/sentiment-analysis-model-builder.md).
+
+#### Sentence Similarity  
+
+Tasks such as semantic search rely on the determination of how similar two sentences or passages of text are to each other.
+
+ML.NET provides the <xref:Microsoft.ML.TorchSharp.NasBert.SentenceSimilarityTrainer> set of APIs which use the same underlying model and fine-tuning techniques as the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer>. However, instead of producing a category as output, it produces a numerical value representing how similar two passages are.
+
+A training and inference pipeline for sentence similarity in ML.NET might look like the following:
 
 ```csharp
-var predictedData = model.Transform(newData);
-```
-
-## Sentence Similarity  
-
-Many important tasks in NLP (for example, text summarization or semantic search) rely on the determination of how similar two sentences or passages of text are to each other.  Deep Learning models in general, and Transformers in particular, are especially well-suited to carry out this operation since they represent sentence in a mathematical space that captures the *meaning* of each sentence (in contrast with other ways to measure similarity that concentrate on the *form* -- for example, methods like the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance)).   ML.NET provides a high-level API (also powered by NAS-BERT) that takes, for its training input, a set of sentence pairs and their associated similarity, coded as a single-precision floating-point number, in the range 0-1, where closer to 1 indicates higher similarity between the sentences.  With this on hand, an ML.NET pipeline (for training/scoring) would look like:
-
-```csharp
+// Define your pipeline
 var pipeline = mlContext.Regression.Trainers.SentenceSimilarity(sentence1ColumnName: "Sentence", sentence2ColumnName: "Sentence2");
 
+// Train your model
 var model = pipeline.Fit(trainingData);
+
+// Use the model to make predictions and extract their similarity values
 var score = model.Transform(newData).GetColumn<float>("Score");
 ```
 
-## Consume pretrained models
+To get started with sentence similarity, see the samples in the [dotnet/machinelearning-samples repo](https://aka.ms/mlnet-2-samples).
 
-ML.NET provides access to many specialized libraries for Machine Learning.  This is evident in many "traditional" Machine Learning tasks, like gradient boosted trees, but is especially useful in Deep Learning, where it allows users to build applications from the great variety of pre-trained models that are available as open-source.  In the following subsections, we describe this workflow for solving Image Classification problems, but this functionality applies to many other scenarios.
+### Consume pretrained models
 
-### TensorFlow  
+ML.NET provides APIs to consume models in other formats like TensorFlow and ONNX and use them to make predictions inside your .NET application.
 
-[Tensorflow](https://www.tensorflow.org/) is one of best-known and most mature Deep Learning frameworks in existence today.  It has a rich ecosystem, including a great variety of pre-trained models in the "[Tensorflow Hub](https://www.tensorflow.org/hub)".  ML.NET  makes it straightforward to make use of those models, define appropriate pre- and post-processing, and assemble a pipeline that can drive the ML tasks of your app.
+These APIs are powered by [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET) and the [ONNX Runtime](https://onnxruntime.ai/).
 
-You can find a "Getting Started" guide, [here](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_TensorFlow) for example (and there are more references cited below).  At the heart of these examples, you'll find pipelines like:
+#### TensorFlow  
 
-```csharp
-var pipeline = mlContext.Transforms.LoadImages(outputColumnName: "input", imageFolder: imagesFolder, inputColumnName: nameof(ImageNetData.ImagePath))
-    .Append(mlContext.Transforms.ResizeImages(outputColumnName: "input", imageWidth: ImageNetSettings.imageWidth, imageHeight: ImageNetSettings.imageHeight, inputColumnName: "input"))
-    .Append(mlContext.Transforms.ExtractPixels(outputColumnName: "input", interleavePixelColors: ImageNetSettings.channelsLast, offsetImage: ImageNetSettings.mean))
-    .Append(mlContext.Model.LoadTensorFlowModel(modelLocation)
-        .ScoreTensorFlowModel(outputColumnNames: new[] { "softmax2" }, inputColumnNames: new[] { "input" },
-            addBatchDimensionInput:true));
-```
+[TensorFlow](https://www.tensorflow.org/) is a deep learning framework with a rich ecosystem and a variety of pre-trained models available in the [Tensorflow Hub](https://www.tensorflow.org/hub).  
 
-where, taking an input a csv file that lists images (providing the path to their location on disk), the pipeline carries out some preprocessing (here illustrated by the `ResizeImages` and `ExtractPixels` transformations), applies a TensorFlow model downloaded from the Hub (and referenced in the code by the variable `modelLocation`, which contains its path in disk) and outputs a  `IDataView` that provides the probability of the corresponding image being associated with a label (using a "[softmax](https://en.wikipedia.org/wiki/Softmax_function)" operation, a common practice in DL classification tasks).
+With ML.NET, you can take these pretrained TensorFlow models and use them for inferencing inside your .NET applications.
 
-The pipeline is somewhat verbose, owing to the many configuration knobs that pre-trained models have (which give them their flexibility), but relatively easy to read and understand.  Moreover, the `ImageAnalytics` preprocessing operation ML.NET includes make the very non-trivial task of pre-processing much easier.
-
-### References
-
-* [https://learn.microsoft.com/dotnet/machine-learning/tutorials/text-classification-tf](https://learn.microsoft.com/dotnet/machine-learning/tutorials/text-classification-tf)
-* [https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_TensorFlow](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_TensorFlow)
-
-### ONNX  
-
-[ONNX](https://onnx.ai/), or "Open Neural Network Exchange" is an industry-wide format designed to make Deep Learning frameworks interoperable.  Throughout the years, the scope of ONNX has expanded beyond Neural Network models, and it has recently also acquired support for training (it was originally only for inference).   Also, and very much like TensorFlow, it is at the center of a growing ecosystem, which also includes a repository for pre-trained models.  The [ONNX Model Zoo](https://github.com/onnx/models) hosts many models pre-trained in a great variety of datasets, and optimized for a variety of scenarios (including, for example models that support specialized precisions like BFloat or INT8, or that have been quantized).
-
-Like it does with TensorFlow, ML.NET makes it straightforward to consume pre-trained models in the ONNX format.  The pipeline is very similar (this is a snippet from the sample scenario referenced below):
+An inference pipeline using a pretrained TensorFlow model might look like the following:
 
 ```csharp
-var pipeline = mlContext.Transforms.LoadImages(outputColumnName: "image", imageFolder: "", inputColumnName: nameof(ImageNetData.ImagePath))
-        .Append(mlContext.Transforms.ResizeImages(outputColumnName: "image", imageWidth: ImageNetSettings.imageWidth, imageHeight: ImageNetSettings.imageHeight, inputColumnName: "image"))
-        .Append(mlContext.Transforms.ExtractPixels(outputColumnName: "image"))
-        .Append(mlContext.Transforms.ApplyOnnxModel(modelFile: modelLocation, outputColumnNames: new[] { TinyYoloModelSettings.ModelOutput }, inputColumnNames: new[] { TinyYoloModelSettings.ModelInput }));
+// Load TensorFlow model
+TensorFlowModel tensorFlowModel = mlContext.Model.LoadTensorFlowModel(_modelPath);
 
+//Append ScoreTensorFlowModel transform to your pipeline containing any preprocessing transforms
+pipeline.Append(tensorFlowModel.ScoreTensorFlowModel(outputColumnName: "Prediction/Softmax", inputColumnName:"Features"))
+
+// Create ML.NET model from pipeline
+ITransformer model = pipeline.Fit(dataView);
+
+var predictions = model.Transform(dataView).GetColumn<float>("Prediction/Softmax");
 ```
 
-Note that the pre-processing stages are effectively the same as those in the TensorFlow example, variations only introduced to accommodate the requirements of the model.
+To get started consuming pretrained TensorFlow models with ML.NET, see the [movie reviews sentiment analysis using a pre-trained TensorFlow model in ML.NET tutorial](tutorials/text-classification-tf.md)
 
-### References
+#### ONNX  
 
-* [https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx)
+The [Open Neural Network Exchange(ONNX)](https://onnx.ai/) is an open-source format designed to enable interoperability between machine learning and deep learning frameworks. This means you can train a model in one of the many popular machine learning frameworks like PyTorch, convert it into ONNX format and consume the ONNX model in a different framework like ML.NET.  
+
+The [ONNX model repository](https://github.com/onnx/models) hosts several pre-trained ONNX models you can use for inferencing in a wide variety of tasks.
+
+With ML.NET, you can take these pretrained ONNX models and use them for inferencing inside your .NET applications.
+
+An inference pipeline using a pretrained ONNX model might look like the following:
+
+```csharp
+// Append ApplyOnnxModel transform to pipeline containing any preprocessing transforms
+pipeline.Append((modelFile: modelLocation, outputColumnNames: new[] { TinyYoloModelSettings.ModelOutput }, inputColumnNames: new[] { TinyYoloModelSettings.ModelInput })
+
+// Create ML.NET model from pipeline
+var model = pipeline.Fit(data);
+
+// Use the model to make predictions
+var predictions = pipeline.Fit(data).GetColumn<float[]>(TinyYoloModelSettings.ModelOutput);
+```
+
+To get started consuming pretrained ONNX models with ML.NET, see the [object detection using ONNX in ML.NET tutorial](tutorials/object-detection-onnx.md)

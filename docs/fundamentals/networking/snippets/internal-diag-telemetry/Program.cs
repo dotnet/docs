@@ -1,11 +1,10 @@
 ﻿using System.Diagnostics.Tracing;
 
-using var listener = new MyListener();
-
+using var listener = new SystemDotNetListener();
 using var client = new HttpClient();
-await client.GetStringAsync("https://httpbin.org/get");
+string? json = await client.GetStringAsync("https://httpbin.org/get");
 
-public sealed class MyListener : EventListener
+sealed file class SystemDotNetListener : EventListener
 {
     protected override void OnEventSourceCreated(EventSource eventSource)
     {

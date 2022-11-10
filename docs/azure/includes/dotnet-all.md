@@ -26,6 +26,7 @@
 | Core - Client - AMQP | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.2.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.2.0/sdk/core/Azure.Core.Amqp/) |
 | Core - Client - Core | NuGet [1.26.0](https://www.nuget.org/packages/Azure.Core/1.26.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.26.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.26.0/sdk/core/Azure.Core/) |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
+| DevCenter | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Developer.DevCenter/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.DevCenter_1.0.0-beta.1/sdk/devcenter/Azure.Developer.DevCenter/) |
 | Digital Twins - Core | NuGet [1.4.0](https://www.nuget.org/packages/Azure.DigitalTwins.Core/1.4.0) | [docs](/dotnet/api/overview/azure/DigitalTwins.Core-readme) | GitHub [1.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.DigitalTwins.Core_1.4.0/sdk/digitaltwins/Azure.DigitalTwins.Core/) |
 | Document Translation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.Translation.Document/1.0.0) | [docs](/dotnet/api/overview/azure/AI.Translation.Document-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Document_1.0.0/sdk/translation/Azure.AI.Translation.Document/) |
 | Event Grid | NuGet [4.12.0](https://www.nuget.org/packages/Azure.Messaging.EventGrid/4.12.0) | [docs](/dotnet/api/overview/azure/Messaging.EventGrid-readme) | GitHub [4.12.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventGrid_4.12.0/sdk/eventgrid/Azure.Messaging.EventGrid/) |
@@ -235,7 +236,7 @@
 | Azure.Communication.Calling | NuGet [1.0.0-beta.33](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.33) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
-| Azure.FX | NuGet [0.0.3-alpha](https://www.nuget.org/packages/Azure.FX/0.0.3-alpha) |  |  |
+| Azure.FX | NuGet [0.0.4-alpha](https://www.nuget.org/packages/Azure.FX/0.0.4-alpha) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
@@ -388,6 +389,7 @@
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Lake Storage | NuGet [1.2.5-alpha](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/1.2.5-alpha) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [1.2.5-alpha](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
 | DCAP | NuGet [1.11.2](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.11.2) |  | GitHub [1.11.2](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
+| DevCenter | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Developer.DevCenter/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.DevCenter_1.0.0-beta.1/sdk/devcenter/Azure.Developer.DevCenter/) |
 | Devices Client | NuGet [1.41.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.2)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview002) |  |  |
 | Digital Twins - Core | NuGet [1.4.0](https://www.nuget.org/packages/Azure.DigitalTwins.Core/1.4.0) | [docs](/dotnet/api/overview/azure/DigitalTwins.Core-readme) | GitHub [1.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.DigitalTwins.Core_1.4.0/sdk/digitaltwins/Azure.DigitalTwins.Core/) |
 | Document DB | NuGet [2.18.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.18.0) |  | GitHub [2.18.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |

@@ -101,7 +101,7 @@ Prevents any UI and prompts from displaying.
 Suppresses any attempts to restart.
 
 ```console
-dotnet-sdk-3.1.301-win-x64.exe /install /quiet /norestart
+dotnet-sdk-7.0.100-win-x64.exe /install /quiet /norestart
 ```
 
 For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).

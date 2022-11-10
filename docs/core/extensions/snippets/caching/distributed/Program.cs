@@ -4,7 +4,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-IHost host = Host.CreateDefaultBuilder(args)
+using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         // The distributed memory cache is for dev / testing scenarios only!
@@ -94,7 +94,7 @@ await IterateAlphabetAsync(async letter =>
 
 await host.RunAsync();
 
-record AlphabetLetter(char Letter)
+file record AlphabetLetter(char Letter)
 {
     internal string Message =>
         $"The '{Letter}' character is the {Letter - 64} letter in the English alphabet.";

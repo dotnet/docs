@@ -10,7 +10,7 @@ public class ParameterizedMessageService
     public ParameterizedMessageService(IStringLocalizerFactory factory) =>
         _localizer = factory.Create(typeof(ParameterizedMessageService));
 
-    [return: NotNullIfNotNull("_localizer")]
+    [return: NotNullIfNotNull(nameof(_localizer))]
     public string? GetFormattedMessage(DateTime dateTime, double dinnerPrice)
     {
         LocalizedString localizedString = _localizer["DinnerPriceFormat", dateTime, dinnerPrice];

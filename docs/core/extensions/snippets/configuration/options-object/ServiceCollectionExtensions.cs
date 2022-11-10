@@ -11,9 +11,9 @@ public static class ServiceCollectionExtensions
         services.AddOptions<LibraryOptions>()
             .Configure(options =>
             {
-                    // Overwrite default option values
-                    // with the user provided options.
-                    // options.SomeValue = userOptions.SomeValue;
+                // Overwrite default option values
+                // with the user provided options.
+                // options.SomeValue = userOptions.SomeValue;
             });
 
         // Register lib services here...

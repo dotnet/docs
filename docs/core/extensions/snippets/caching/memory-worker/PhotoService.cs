@@ -21,20 +21,20 @@ public sealed class PhotoService
             await _cacheSignal.WaitAsync();
 
             Photo[] photos =
-                await _cache.GetOrCreateAsync(
+                (await _cache.GetOrCreateAsync(
                     "Photos", _ =>
                     {
                         _logger.LogWarning("This should never happen!");
 
                         return Task.FromResult(Array.Empty<Photo>());
-                    });
+                    }))!;
 
             // If no filter is provided, use a pass-thru.
             filter ??= _ => true;
 
-            foreach (Photo? photo in photos)
+            foreach (Photo photo in photos)
             {
-                if (photo is not null && filter(photo))
+                if (!default(Photo).Equals(photo) && filter(photo))
                 {
                     yield return photo;
                 }

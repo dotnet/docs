@@ -11,14 +11,14 @@ using ILoggerFactory loggerFactory = LoggerFactory.Create(
         }));
 
 ILogger<SampleObject> logger = loggerFactory.CreateLogger<SampleObject>();
-logger.CustomLogEvent(LogLevel.Information, "Liana", "Seattle");
+logger.PlaceOfResidence(logLevel: LogLevel.Information, name: "Liana", city: "Seattle");
 
-public class SampleObject { }
+file readonly record struct SampleObject { }
 
 public static partial class Log
 {
-    [LoggerMessage(EventId = 23)]
-    public static partial void CustomLogEvent(
+    [LoggerMessage(EventId = 23, Message = "{name} lives in {city}.")]
+    public static partial void PlaceOfResidence(
         this ILogger logger,
         LogLevel logLevel,
         string name,

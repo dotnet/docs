@@ -57,6 +57,10 @@ The `dotnet-trace` tool:
 - **`--version`**
 
   Displays the version of the dotnet-trace utility.
+  
+- **`--duration`**
+
+  How log to run the trace. `--duration 00:00:00:05` will run it for 5 seconds.
 
 ## Commands
 
@@ -76,7 +80,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ```dotnetcli
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
-    [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
+    [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
     [--show-child-io]
@@ -151,6 +155,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`--diagnostic-port <path-to-port>`**
 
   The name of the diagnostic port to create. See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup) to learn how to use this option to collect a trace from app startup.
+  
+- **`--duration <time-to-run>`**
+
+  The time for the trace to run. Use the `dd:hh:mm:ss` format. For example `00:00:00:05` will run it for 5 seconds.
 
 - **`-o|--output <trace-file-path>`**
 

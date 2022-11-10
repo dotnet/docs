@@ -36,7 +36,7 @@ There are two ways to download and install `dotnet-trace`:
 ## Synopsis
 
 ```dotnetcli
-dotnet-trace [-h, --help] [--version] <command>
+dotnet-trace [-h, --help] [--version] <command> [--duration dd:hh:mm:ss]
 ```
 
 ## Description
@@ -57,6 +57,10 @@ The `dotnet-trace` tool:
 - **`--version`**
 
   Displays the version of the dotnet-trace utility.
+  
+- **`--duration`**
+
+  How log to run the trace. `--duration 00:00:00:05` will run it for 5 seconds.
 
 ## Commands
 

@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 11/10/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -18,12 +18,12 @@ ms.date: 08/07/2022
 
 The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on.
 
-| Ubuntu                 | .NET       |
-|------------------------|------------|
-| [22.04 (LTS)](#2204)   | 6+         |
-| [20.04 (LTS)](#2004)   | 3.1, 6     |
-| [18.04 (LTS)](#1804)   | 3.1, 6     |
-| [16.04 (LTS)](#1604)   | 3.1, 6     |
+| Ubuntu               | .NET   |
+|----------------------|--------|
+| [22.04 (LTS)](#2204) | 6+     |
+| [20.04 (LTS)](#2004) | 3.1, 6 |
+| [18.04 (LTS)](#1804) | 3.1, 6 |
+| [17.04 (LTS)](#1604) | 3.1, 6 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -48,7 +48,7 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y dotnet6
+  sudo apt-get install -y dotnet-sdk-7
 ```
 
 ### Install the runtime
@@ -57,13 +57,13 @@ The ASP.NET Core Runtime allows you to run apps that were made with .NET that di
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y aspnetcore-runtime-6.0
+  sudo apt-get install -y aspnetcore-runtime-7.0
 ```
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-7.0` in the previous command with `dotnet-runtime-7.0`:
 
 ```bash
-sudo apt-get install -y dotnet-runtime-6.0
+sudo apt-get install -y dotnet-runtime-7.0
 ```
 
 ## 22.04 (Microsoft package feed)

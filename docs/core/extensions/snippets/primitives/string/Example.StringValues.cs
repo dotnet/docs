@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.Primitives;
+﻿using Microsoft.Extensions.Primitives;
 
 public partial class Example
 {

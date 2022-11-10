@@ -1,6 +1,6 @@
 ﻿namespace App.ScopedService;
 
-public class DefaultScopedProcessingService : IScopedProcessingService
+public sealed class DefaultScopedProcessingService : IScopedProcessingService
 {
     private int _executionCount;
     private readonly ILogger<DefaultScopedProcessingService> _logger;

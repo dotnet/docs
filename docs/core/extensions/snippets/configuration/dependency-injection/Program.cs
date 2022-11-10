@@ -7,6 +7,6 @@ builder.ConfigureServices(
         services.AddHostedService<Worker>()
             .AddScoped<IMessageWriter, MessageWriter>());
 
-var host = builder.Build();
+using var host = builder.Build();
 
 host.Run();

@@ -5,7 +5,7 @@ using Shared;
 
 namespace NamedHttp.Example;
 
-public class JokeService
+public sealed class JokeService
 {
     private readonly IHttpClientFactory _httpClientFactory = null!;
     private readonly IConfiguration _configuration = null!;
@@ -21,8 +21,8 @@ public class JokeService
     public async Task<string> GetRandomJokeAsync()
     {
         // Create the client
-        string httpClientName = _configuration["JokeHttpClientName"];
-        HttpClient client = _httpClientFactory.CreateClient(httpClientName);
+        string? httpClientName = _configuration["JokeHttpClientName"];
+        HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
 
         try
         {

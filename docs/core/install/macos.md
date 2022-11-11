@@ -82,7 +82,7 @@ brew install mono-libgdiplus
 
 ## Install with an installer
 
-macOS has standalone installers that can be used to install the .NET 7:
+macOS has standalone installers that can be used to install .NET 7:
 
 - [x64 and Arm64 CPUs](https://dotnet.microsoft.com/download/dotnet/7.0)
 

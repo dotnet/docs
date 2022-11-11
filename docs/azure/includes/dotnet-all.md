@@ -308,7 +308,7 @@
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.2) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Sql | NuGet [0.1.483-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/0.1.483-preview) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Sql | NuGet [1.0.15-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/1.0.15-preview) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Timers.Storage | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0-beta.1) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.3) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.1.0) |  |  |
@@ -497,6 +497,7 @@
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
 | Service Bus | NuGet [7.11.1](https://www.nuget.org/packages/Azure.Messaging.ServiceBus/7.11.1) | [docs](/dotnet/api/overview/azure/Messaging.ServiceBus-readme) | GitHub [7.11.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.ServiceBus_7.11.1/sdk/servicebus/Azure.Messaging.ServiceBus/) |
 | Service Bus | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.ServiceBus-readme) | GitHub [5.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ServiceBus_5.2.0/sdk/servicebus/Microsoft.Azure.ServiceBus/) |
+| Service Bus | NuGet [6.2.2](https://www.nuget.org/packages/WindowsAzure.ServiceBus/6.2.2) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
 | SignalR | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.19.0) |  | GitHub [1.19.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
 | SignalR - ASP.NET | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.19.0) |  | GitHub [1.19.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
@@ -596,7 +597,6 @@
 | WindowsAzure Mobile Services - Backend Tables | NuGet [1.0.478](https://www.nuget.org/packages/WindowsAzure.MobileServices.Backend.Tables/1.0.478) |  |  |
 | WindowsAzure Mobile Services - SQLiteStore | NuGet [1.0.4](https://www.nuget.org/packages/WindowsAzure.MobileServices.SQLiteStore/1.0.4) |  |  |
 | WindowsAzure Mobile Services - WinJS | NuGet [2.0.0-beta](https://www.nuget.org/packages/WindowsAzure.MobileServices.WinJS/2.0.0-beta) |  |  |
-| WindowsAzure Service Bus | NuGet [6.2.2](https://www.nuget.org/packages/WindowsAzure.ServiceBus/6.2.2) |  |  |
 | WindowsAzure Storage | NuGet [9.3.3](https://www.nuget.org/packages/WindowsAzure.Storage/9.3.3) |  | GitHub [9.3.3](https://github.com/Azure/azure-storage-net) |
 | WindowsAzure Storage - Premium Table | NuGet [0.1.0-preview](https://www.nuget.org/packages/WindowsAzure.Storage-PremiumTable/0.1.0-preview) |  | GitHub [0.1.0-preview](https://github.com/Azure/azure-storage-net) |
 | WindowsAzure Storage - Preview | NuGet [3.2.0-preview](https://www.nuget.org/packages/WindowsAzure.Storage-Preview/3.2.0-preview) |  | GitHub [3.2.0-preview](https://github.com/Azure/azure-storage-net) |
@@ -933,6 +933,7 @@
 | Resource Management - Security Center | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.SecurityCenter/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.SecurityCenter-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.SecurityCenter_1.0.0/sdk/securitycenter/Azure.ResourceManager.SecurityCenter/) |
 | Resource Management - Security Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.SecurityInsights/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.SecurityInsights_1.0.0-beta.1/sdk/securityinsights/Azure.ResourceManager.SecurityInsights/) |
 | Resource Management - Service Bus | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.ServiceBus/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.ServiceBus-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ServiceBus_1.0.0/sdk/servicebus/Azure.ResourceManager.ServiceBus/) |
+| Resource Management - Service Bus | NuGet [0.19.0-preview](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.ServiceBus/0.19.0-preview) |  |  |
 | Resource Management - Service Fabric Managed Clusters | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.ServiceFabricManagedClusters/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.ServiceFabricManagedClusters-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ServiceFabricManagedClusters_1.0.0/sdk/servicefabricmanagedclusters/Azure.ResourceManager.ServiceFabricManagedClusters/) |
 | Resource Management - Service Linker | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.ServiceLinker/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.ServiceLinker-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ServiceLinker_1.0.1/sdk/servicelinker/Azure.ResourceManager.ServiceLinker/) |
 | Resource Management - ServiceFabric | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.ServiceFabric/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.ServiceFabric-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ServiceFabric_1.0.0/sdk/servicefabric/Azure.ResourceManager.ServiceFabric/) |
@@ -965,7 +966,6 @@
 | WindowsAzure Management - Network | NuGet [8.2.1](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Network/8.2.1) |  |  |
 | WindowsAzure Management - Remote App | NuGet [2.0.7](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.RemoteApp/2.0.7) |  |  |
 | WindowsAzure Management - Scheduler | NuGet [6.2.0](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Scheduler/6.2.0) |  |  |
-| WindowsAzure Management - Service Bus | NuGet [0.19.0-preview](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.ServiceBus/0.19.0-preview) |  |  |
 | WindowsAzure Management - SQL | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Sql/5.2.0) |  |  |
 | WindowsAzure Management - Storage | NuGet [6.0.1](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Storage/6.0.1) |  |  |
 | WindowsAzure Management - Store | NuGet [0.15.1-preview](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Store/0.15.1-preview) |  |  |

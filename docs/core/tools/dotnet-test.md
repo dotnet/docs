@@ -83,8 +83,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 > [!WARNING]
 > Breaking changes in options:
 >
-> - Starting in .NET 7 Preview 1: switch `-a` to alias `--arch` instead of `--test-adapter-path`
-> - Starting in .NET 7 Preview 1: switch `-r` to alias `--runtime` instead of `--results-dir`
+> - Starting in .NET 7: switch `-a` to alias `--arch` instead of `--test-adapter-path`
+> - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-dir`
 
 - **`--test-adapter-path <ADAPTER_PATH>`**
 

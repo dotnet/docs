@@ -57,7 +57,7 @@ To create the blank solution:
 
 1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
 
-   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties-net6.png" alt-text="Project properties for the class library":::
+   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties-net7.png" alt-text="Project properties for the class library":::
 
    For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
 

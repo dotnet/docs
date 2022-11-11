@@ -47,7 +47,6 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 1. On the ****Publish profile creation progress** page, select **Close**.
 
-
 1. On the **Publish** tab of the **Publish** window, select **Publish**.
 
    :::image type="content" source="media/publishing-with-visual-studio/publish-page-net7.png" alt-text="Visual Studio Publish window":::

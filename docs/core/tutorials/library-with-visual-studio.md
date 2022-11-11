@@ -53,7 +53,7 @@ To create the blank solution:
 
    1. On the **Additional information** page, select **.NET 7 (Standard-term support)**, and then choose **Create**.
 
-1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 6.0.
+1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 7.0.
 
 1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
 

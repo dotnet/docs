@@ -11,14 +11,14 @@ recommendations: false
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 6, it can be called by any application that targets .NET 6. This tutorial shows how to target .NET 6.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 7, it can be called by any application that targets .NET 7. This tutorial shows how to target .NET 7.
 
 When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
 ## Prerequisites
 
 * [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-* The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+* The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
 
 ## Create a solution
 
@@ -81,15 +81,15 @@ Add a new .NET class library project named "StringLibrary" to the solution.
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Check to make sure that the library targets .NET 6. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
+1. Check to make sure that the library targets .NET 7. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET 6.0.
+   The `TargetFramework` element shows that the project targets .NET 7.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>net6.0</TargetFramework>
+       <TargetFramework>net7.0</TargetFramework>
      </PropertyGroup>
 
    </Project>
@@ -114,11 +114,11 @@ Add a new .NET class library project named "StringLibrary" to the solution.
    The terminal output looks like the following example:
 
    ```output
-   Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET
+   Microsoft (R) Build Engine version 16.7.4+b89cb5fde for .NET
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net6.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net7.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)

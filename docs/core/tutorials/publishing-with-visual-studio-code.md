@@ -38,12 +38,12 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    The command output is similar to the following example:
 
    ```output
-   Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET
+   Microsoft (R) Build Engine version 16.7.4+b89cb5fde for .NET
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net6.0\HelloWorld.dll
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net6.0\publish\
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net7.0\HelloWorld.dll
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net7.0\publish\
    ```
 
 ## Inspect the files
@@ -54,9 +54,11 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Select the **Explorer** in the left navigation bar.
 
-1. Expand *bin/Release/net6.0/publish*.
+1. Expand *bin/Release/net7.0/publish*.
 
-   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net6.png" alt-text="Explorer showing published files":::
+   net7.0
+
+   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net7.png" alt-text="Explorer showing published files":::
 
    As the image shows, the published output includes the following files:
 

@@ -73,6 +73,7 @@ public string Method() => default;
 ```
 
 You must supply all type parameters when you apply the attribute. In other words, the generic type must be [fully constructed](~/_csharpstandard/standard/types.md#84-constructed-types).
+In the example above, the empty brackets can be ommitted as the attribute does not have any arguments.
 
 ```csharp
 public class GenericType<T>

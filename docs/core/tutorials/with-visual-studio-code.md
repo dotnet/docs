@@ -14,7 +14,7 @@ This tutorial shows how to create and run a .NET console application by using Vi
 ## Prerequisites
 
 * [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-* The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+* The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
 
 ## Create the app
 
@@ -37,7 +37,7 @@ Create a .NET console app project named "HelloWorld".
 1. In the **Terminal**, enter the following command:
 
    ```dotnetcli
-   dotnet new console --framework net6.0
+   dotnet new console --framework net7.0
    ```
 
    The project template creates a simple application that displays "Hello World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.

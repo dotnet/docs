@@ -3,7 +3,7 @@ title: "switch expression - C# reference"
 description: Learn about the C# switch expression that provides switch-like semantics based on pattern matching.
 ms.date: 04/16/2021
 f1_keywords:
-  - "switch_CSharpKeyword"
+  - "switch-expression_CSharpKeyword"
 helpviewer_keywords:
   - "switch expression [C#]"
   - "pattern matching [C#]"

@@ -1,13 +1,13 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 10/25/2021
+ms.date: 11/11/2022
 zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
@@ -222,18 +222,18 @@ In this tutorial, you created a solution, added a library project, and added a c
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-6-0"
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 6, it can be called by any application that targets .NET 6. This tutorial shows how to target .NET 6.
 
 When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
 ## Prerequisites
 
-1. [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download)
+* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+* The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 
 ## Create a solution
 
@@ -296,15 +296,15 @@ Add a new .NET class library project named "StringLibrary" to the solution.
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Check to make sure that the library targets .NET 5. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
+1. Check to make sure that the library targets .NET 6. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET 5.0.
+   The `TargetFramework` element shows that the project targets .NET 6.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>net5.0</TargetFramework>
+       <TargetFramework>net6.0</TargetFramework>
      </PropertyGroup>
 
    </Project>
@@ -312,11 +312,11 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. Open *Class1.cs* and replace the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/StringLibrary/Class1.cs":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
-   `StartsWithUpper` is implemented as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class. The question mark (`?`) after `string` indicates that the string may be null.
+   `StartsWithUpper` is implemented as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
 1. Save the file.
 
@@ -333,7 +333,7 @@ Add a new .NET class library project named "StringLibrary" to the solution.
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net5.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net6.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)
@@ -375,7 +375,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/ShowCase/Program.cs":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -437,8 +437,8 @@ In this tutorial, you created a solution, added a library project, and added a c
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
+This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

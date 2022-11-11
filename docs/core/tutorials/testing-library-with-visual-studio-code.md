@@ -1,13 +1,13 @@
 ---
 title: Test a .NET class library using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create and run a unit test project for a .NET class library.
-ms.date: 10/22/2021
+ms.date: 11/11/2022
 zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -191,7 +191,7 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-6-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -237,7 +237,7 @@ Unit tests provide automated software testing during your development and publis
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1`.
 
-   Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is executed automatically when the unit test is run.
+   Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is run automatically when the unit test is invoked.
 
 1. Add the test project to the solution.
 
@@ -257,7 +257,7 @@ For the test project to work with the `StringLibrary` class, add a reference in 
 
 ## Add and run unit test methods
 
-When Visual Studio runs a unit test, it executes each method that is marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute in a class that is marked with the  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute. A test method ends when the first failure is found or when all tests contained in the method have succeeded.
+When Visual Studio invokes a unit test, it runs each method that is marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute in a class that is marked with the  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute. A test method ends when the first failure is found or when all tests contained in the method have succeeded.
 
 The most common tests call members of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class. Many assert methods include at least two parameters, one of which is the expected test result and the other of which is the actual test result. Some of the `Assert` class's most frequently called methods are shown in the following table:
 
@@ -280,7 +280,7 @@ To create the test methods:
 
 1. Open *StringLibraryTest/UnitTest1.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/UnitTest1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/StringLibraryTest/UnitTest1.cs":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
@@ -298,7 +298,7 @@ To create the test methods:
    Starting test execution, please wait...
    A total of 1 test files matched the specified pattern.
 
-   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net5.0)
+   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net6.0)
    ```
 
 ## Handle test failures
@@ -375,8 +375,8 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
+This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

@@ -1,13 +1,13 @@
 ---
 title: Publish a .NET console application using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create the set of files that are needed to run a .NET application.
-ms.date: 10/22/2021
+ms.date: 11/11/2022
 zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Publish a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run an application. To deploy the files, copy them to the target machine.
 
@@ -113,7 +113,7 @@ In this tutorial, you published a console app. In the next tutorial, you create 
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-6-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run an application. To deploy the files, copy them to the target machine.
 
@@ -148,8 +148,8 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net5.0\HelloWorld.dll
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net5.0\publish\
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net6.0\HelloWorld.dll
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net6.0\publish\
    ```
 
 ## Inspect the files
@@ -160,19 +160,19 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Select the **Explorer** in the left navigation bar.
 
-1. Expand *bin/Release/net5.0/publish*.
+1. Expand *bin/Release/net6.0/publish*.
 
-   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output.png" alt-text="Explorer showing published files":::
+   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net6.png" alt-text="Explorer showing published files":::
 
    As the image shows, the published output includes the following files:
 
    * *HelloWorld.deps.json*
 
-      This is the application's runtime dependencies file. It defines the .NET components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+      This is the application's runtime dependencies file. It defines the .NET components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/4af56f867f2f638b4562c3b8432d70f7b09577b3/Documentation/specs/runtime-configuration-file.md).
 
    * *HelloWorld.dll*
 
-      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
+      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To run this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
    * *HelloWorld.exe* (*HelloWorld* on Linux, not created on macOS.)
 
@@ -188,7 +188,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 ## Run the published app
 
-1. In **Explorer**, right-click the *publish* folder (<kbd>Ctrl</kbd>-click on macOS), and select **Open in Integrated Terminal**.
+1. In **Explorer**, right-click the *publish* folder (<kbd>Ctrl</kbd>-click on macOS), and select **Open in Terminal**.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Context menu showing Open in Terminal":::
 
@@ -219,8 +219,8 @@ In this tutorial, you published a console app. In the next tutorial, you create 
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
+This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

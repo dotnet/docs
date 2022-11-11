@@ -15,8 +15,8 @@ ms.date: 03/17/2022
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
-    [-a|--test-adapter-path <ADAPTER_PATH>] 
-    [--arch <ARCHITECTURE>]
+    [--test-adapter-path <ADAPTER_PATH>] 
+    [-a|--arch <ARCHITECTURE>]
     [--blame]
     [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>]
@@ -80,9 +80,17 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Options
 
-- **`-a|--test-adapter-path <ADAPTER_PATH>`**
+> [!WARNING]
+> Breaking changes in options:
+>
+> - Starting in .NET 7: switch `-a` to alias `--arch` instead of `--test-adapter-path`
+> - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-dir`
+
+- **`--test-adapter-path <ADAPTER_PATH>`**
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
+
+  Short form `-a` available in .NET SDK versions earlier than 7.
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
@@ -183,11 +191,15 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--results-directory <RESULTS_DIR>`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file. Short form `-r` available in .NET SDK versions earlier than 7.
+  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
+
+  Short form `-r` available in .NET SDK versions earlier than 7.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  The target runtime to test for. Short form `-r` available starting in .NET SDK 7.
+  The target runtime to test for.
+  
+  Short form `-r` available starting in .NET SDK 7.
 
 - **`-s|--settings <SETTINGS_FILE>`**
 

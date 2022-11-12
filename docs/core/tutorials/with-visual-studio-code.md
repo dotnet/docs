@@ -167,20 +167,13 @@ Create a .NET console app project named "HelloWorld".
    The project template creates a simple application that displays "Hello World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
 
    ```csharp
-   Console.WriteLine("Hello, World!");
-   ```
+   namespace HelloWorld;
 
-1. Replace the contents of *Program.cs* with the following code:
-
-   ```csharp
-   namespace HelloWorld
+   class Program
    {
-       class Program
+       static void Main(string[] args)
        {
-           static void Main(string[] args)
-           {
-               Console.WriteLine("Hello World!");
-           }
+           Console.WriteLine("Hello World!");
        }
    }
    ```
@@ -195,7 +188,7 @@ Create a .NET console app project named "HelloWorld".
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
+   In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference. In the `dotnet new` command that you used to create the project, the `--use-program-main` option prevented top-level statements from being used.
 
 ## Run the app
 

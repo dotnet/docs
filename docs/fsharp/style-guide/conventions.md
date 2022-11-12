@@ -527,6 +527,10 @@ It's common to define single-case Discriminated Unions like this for domain mode
 
 Although the previous example showed that a struct Discriminated Union yielded better performance, it is common to have larger Discriminated Unions when modeling a domain. Larger data types like that may not perform as well if they are structs depending on the operations on them, since more copying could be involved.
 
+### Functional programming and nulls
+
+Nulls should normally be avoided, most F# types don't allow nulls, however some .NET types are frequently used if F# and they allow nulls, this is the case for arrays and strings. In practice there's no need to check for nulls but if you do fail fast, this applies to FSharp libraries as well. Although for legacy reasons some string functions in FSharp.Core still treat nulls as empty strings we shouldn't take them as guidance, that is we would not encourage attributing any semantic meaning to "null".
+
 ### Functional programming and mutation
 
 F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.

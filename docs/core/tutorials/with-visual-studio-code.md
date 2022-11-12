@@ -161,7 +161,7 @@ Create a .NET console app project named "HelloWorld".
 1. In the **Terminal**, enter the following command:
 
    ```dotnetcli
-   dotnet new console --framework net6.0
+   dotnet new console --framework net6.0 --use-program-main
    ```
 
    The project template creates a simple application that displays "Hello World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.

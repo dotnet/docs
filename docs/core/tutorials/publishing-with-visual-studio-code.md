@@ -56,8 +56,6 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Expand *bin/Release/net7.0/publish*.
 
-   net7.0
-
    :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net7.png" alt-text="Explorer showing published files":::
 
    As the image shows, the published output includes the following files:

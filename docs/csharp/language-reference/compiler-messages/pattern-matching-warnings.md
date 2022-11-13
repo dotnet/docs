@@ -17,4 +17,10 @@ The following code snippets generate CS8509:
 
 :::code language="csharp" source="./snippets/pattern-matching-warnings/Switch.cs" id="SwitchNotAllPossibleValues":::
 
+To address this warning, add switch arms that cover all possible input values. For example:
+
+:::code language="csharp" source="./snippets/pattern-matching-warnings/Switch.cs" id="SwitchAllPossibleValues":::
+
+The `_` pattern matches all remaining values. It's often used to match invalid values, as shown in the preceding example.
+
 For more information, see [Switch](../statements/selection-statements.md#the-switch-statement).

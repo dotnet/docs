@@ -5,7 +5,6 @@ ms.date: 05/11/2022
 f1_keywords:
   - "CS7023"
   - "CS8073"
-  - "CS8509"
   - "CS8848"
   - "CS8880"
   - "CS8881"
@@ -23,7 +22,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "CS7023"
   - "CS8073"
-  - "CS8509"
   - "CS8848"
   - "CS8880"
   - "CS8881"

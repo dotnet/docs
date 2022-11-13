@@ -1,21 +1,51 @@
-﻿namespace pattern_matching_warnings;
-
-public class Switch
+﻿namespace firstExample
 {
-    // <SwitchNotAllPossibleValues>
-    // CS8509.cs
-    enum EnumValues
-    {
-        Value1, Value2, Value3
-    }
 
-    void Method(EnumValues enumValues)
+    public class Switch
     {
-        var result = enumValues switch
+        // <SwitchNotAllPossibleValues>
+        // CS8509.cs
+        enum EnumValues
         {
-            EnumValues.Value1 => 1,
-            EnumValues.Value2 => 2,
-        };
+            Value1,
+            Value2,
+            Value3
+        }
+
+        void Method(EnumValues enumValues)
+        {
+            var result = enumValues switch
+            {
+                EnumValues.Value1 => 1,
+                EnumValues.Value2 => 2,
+            };
+        }
+        // </SwitchNotAllPossibleValues>
     }
-    // </SwitchNotAllPossibleValues>
+}
+
+namespace secondExample
+{
+    public class Switch
+    {
+        // <SwitchAllPossibleValues>
+        enum EnumValues
+        {
+            Value1,
+            Value2,
+            Value3
+        }
+
+        void Method(EnumValues enumValues)
+        {
+            var result = enumValues switch
+            {
+                EnumValues.Value1 => 1,
+                EnumValues.Value2 => 2,
+                EnumValues.Value3 => 3,
+                _ => throw new ArgumentException("Input isn't a valid enum value", nameof(enumValues)),
+                };
+        }
+        // </SwitchAllPossibleValues>
+    }
 }

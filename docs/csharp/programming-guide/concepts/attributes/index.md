@@ -16,7 +16,7 @@ Attributes have the following properties:
 
 ## Using attributes
 
-Attributes can be placed on almost any declaration, though a specific attribute might restrict the types of declarations on which it is valid. In C#, you specify an attribute by placing the name of the attribute enclosed in square brackets ([]) above the declaration of the entity to which it applies.
+Attributes can be placed on almost any declaration, though a specific attribute might restrict the types of declarations on which it is valid. In C#, you specify an attribute by placing the name of the attribute enclosed in square brackets (`[]`) above the declaration of the entity to which it applies.
 
 In this example, the <xref:System.SerializableAttribute> attribute is used to apply a specific characteristic to a class:
 

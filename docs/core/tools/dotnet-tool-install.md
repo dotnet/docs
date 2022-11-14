@@ -117,7 +117,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--version <VERSION_NUMBER>`**
 
-  The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
+  The version of the tool to install. By default, the latest stable package version is installed. In .NET 8 and above any [unlisted](/nuget/nuget-org/policies/deleting-packages#unlisting-a-package) version will be ignored. Use this option to install preview or older versions of the tool.
 
 ## Examples
 

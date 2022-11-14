@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio
 description: Learn how to debug a .NET console app using Visual Studio.
-ms.date: 09/02/2021
+ms.date: 11/11/2022
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 This tutorial introduces the debugging tools available in Visual Studio.
 
@@ -190,7 +190,7 @@ In this tutorial, you used Visual Studio debugging tools. In the next tutorial, 
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-6-0"
 
 This tutorial introduces the debugging tools available in Visual Studio.
 
@@ -222,7 +222,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
+   :::image type="content" source="./media/debugging-with-visual-studio/set-breakpoint-in-editor-net6.png" alt-text="Visual Studio Program window with breakpoint set":::
 
 1. Press <kbd>F5</kbd> to run the program in Debug mode. Another way to start debugging is by choosing **Debug** > **Start Debugging** from the menu.
 
@@ -230,7 +230,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
+   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-hit-net6.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
 
 ## Use the Immediate window
 
@@ -260,9 +260,9 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Right-click on the red dot that represents the breakpoint. In the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Select the box for **Conditions** if it's not already selected.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel - C#":::
+   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings-net6.png" alt-text="Editor showing breakpoint settings panel - C#":::
 
-1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5. If the language you want to use is not shown, change the language selector at the top of the page.
+1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5.
 
    ```csharp
    String.IsNullOrEmpty(name)
@@ -316,7 +316,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    C#
 
-   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method.png" alt-text="Visual Studio step into method - C#":::
+   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method-net6.png" alt-text="Visual Studio step into method - C#":::
 
    Visual Basic
 
@@ -328,7 +328,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    C#
 
-   :::image type="content" source="./media/debugging-with-visual-studio/step-into-source-method.png" alt-text="Visual Studio step in method source - C#":::
+   :::image type="content" source="./media/debugging-with-visual-studio/step-into-source-method-net6.png" alt-text="Visual Studio step in method source - C#":::
 
    Visual Basic
 
@@ -369,8 +369,8 @@ In this tutorial, you used Visual Studio debugging tools. In the next tutorial, 
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
+This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

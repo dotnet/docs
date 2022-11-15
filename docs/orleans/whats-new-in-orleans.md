@@ -20,20 +20,20 @@ We have avoided such breaking changes for many years, even across major releases
 
 If you're upgrading a project to Orleans 7.0, you'll need to perform the following actions:
 
-- All clients should reference `Microsoft.Orleans.Client`.
-- All silos (servers) should reference `Microsoft.Orleans.Server`.
-- All other packages should reference `Microsoft.Orleans.Sdk`.
-  - The client and server package include a reference to `Microsoft.Orleans.Sdk`.
+- All clients should reference [Microsoft.Orleans.Client](https://nuget.org/packages/Microsoft.Orleans.Client).
+- All silos (servers) should reference [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server).
+- All other packages should reference [Microsoft.Orleans.Sdk](https://nuget.org/packages/Microsoft.Orleans.Sdk).
+  - Both _client_ and _server_ packages include a reference to [Microsoft.Orleans.Sdk](https://nuget.org/packages/Microsoft.Orleans.Sdk).
 - Remove all references to `Microsoft.Orleans.CodeGenerator.MSBuild` and `Microsoft.Orleans.OrleansCodeGenerator.Build`.
-  - Replace usages of `KnownAssembly` with `GenerateCodeForDeclaringAssembly`.
+  - Replace usages of `KnownAssembly` with <xref:Orleans.GenerateCodeForDeclaringAssemblyAttribute>.
   - The `Microsoft.Orleans.Sdk` package references the C# Source Generator package (`Microsoft.Orleans.CodeGenerator`).
 - Remove all references to `Microsoft.Orleans.OrleansRuntime`.
-  - The `Microsoft.Orleans.Server` packages references its replacement, `Microsoft.Orleans.Runtime`.
+  - The [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server) packages references its replacement, `Microsoft.Orleans.Runtime`.
 - Remove calls to `ConfigureApplicationParts`.
   - Application parts has been removed. The C# Source Generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of application parts automatically.
-- Replace references to `Microsoft.Orleans.OrleansServiceBus` with `Microsoft.Orleans.Streaming.EventHubs`
-- If you are using reminders, add a reference to `Microsoft.Orleans.Reminders`
-- If you are using streams, add a reference to `Microsoft.Orleans.Streaming`
+- Replace references to `Microsoft.Orleans.OrleansServiceBus` with [Microsoft.Orleans.Streaming.EventHubs](https://nuget.org/packages/Microsoft.Orleans.Streaming.EventHubs)
+- If you are using reminders, add a reference to [Microsoft.Orleans.Reminders](https://nuget.org/packages/Microsoft.Orleans.Reminders)
+- If you are using streams, add a reference to [Microsoft.Orleans.Streaming](https://nuget.org/packages/Microsoft.Orleans.Streaming)
 
 > [!TIP]
 > All of the Orleans samples have been upgraded to Orleans 7.0 and can be used as a reference for what changes were made. For more information, see [Orleans issue #8035](https://github.com/dotnet/orleans/issues/8035) that itemizes the changes made to each sample.

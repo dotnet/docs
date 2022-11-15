@@ -40,7 +40,11 @@ If you're upgrading a project to Orleans 7.0, you'll need to perform the followi
 
 ## Orleans `global using` directives
 
-All Orleans projects either directly or indirectly reference the `Microsoft.Orleans.Sdk` NuGet package. When an Orleans project has configured to _enable_ implicit usings (for example `<ImplicitUsings>enable</ImplicitUsings>`), the `Orleans` and `Orleans.Hosting` namespaces are both implicitly used. This means that your app code doesn't need these directives. For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#implicitusings) and [dotnet/orleans/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets](https://github.com/dotnet/orleans/blob/main/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets#L4-L5).
+All Orleans projects either directly or indirectly reference the `Microsoft.Orleans.Sdk` NuGet package. When an Orleans project has configured to _enable_ implicit usings (for example `<ImplicitUsings>enable</ImplicitUsings>`), the `Orleans` and `Orleans.Hosting` namespaces are both implicitly used. This means that your app code doesn't need these directives.
+
+<!-- markdownlint-disable MD044 -->
+For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#implicitusings) and [dotnet/orleans/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets](https://github.com/dotnet/orleans/blob/main/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets#L4-L5).
+<!-- markdownlint-enable MD044 -->
 
 ## Hosting
 

@@ -226,6 +226,12 @@ public sealed class MyForeignLibraryValueTypeSurrogateConverter :
 }
 ```
 
+In the preceding code:
+
+- The `MyForeignLibraryValueType` is a type outside of your control, defined in a consuming library.
+- The `MyForeignLibraryValueTypeSurrogate` is a surrogate type that maps to `MyForeignLibraryValueType`.
+- The <xref:Orleans.RegisterConverterAttribute> specifies that the `MyForeignLibraryValueTypeSurrogateConverter` acts as a converter to map to and from the two types. The class is an implementation of <xref:Orleans.IConverter%602> interface.
+
 Orleans supports serialization of types in type hierarchies (types which derive from other types). In the event that a foreign type might appear in a type hierarchy (for example as the base class for one of your own types), you must additionally implement the <xref:Orleans.IPopulator%602?displayProperty=nameWithType> interface. Consider the following example:
 
 ``` csharp

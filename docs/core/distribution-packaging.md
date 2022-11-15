@@ -16,7 +16,7 @@ As .NET 5 (and .NET Core) and later versions become available on more and more p
 When installed, .NET consists of several components that are laid out as follows in the file system:
 
 ```
-{dotnet_root}                                     (*)
+{dotnet_root}                    (0)              (*)
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)
@@ -62,6 +62,8 @@ When installed, .NET consists of several components that are laid out as follows
 └── usr/bin
         └── dotnet               (10)
 ```
+
+- (0) **{dotnet_root}** is a shared root for all .NET major and minor versions. If multiple runtimes are installed, they share the **{dotnet_root}** folder, for example, `{dotnet_root}/shared/Microsoft.NETCore.App/6.0.11` and `{dotnet_root}/shared/Microsoft.NETCore.App/7.0.0`. The name of the `{dotnet_root}` folder should be version agnostic, that is, simply `dotnet`.
 
 - (1) **dotnet** The host (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`).
 

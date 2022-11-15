@@ -139,7 +139,7 @@ class Program
 > Visual Studio preserves the value for the options next time you create the project based on the same template, so by default when creating Console App project next time the "Do not use top-level statements" check box will be checked.
 > The content of the `Program.cs` file might be different to match the code style defined in the global Visual Studio text editor settings or the `EditorConfig` file.
 >
-> For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options?view=vs-2022) and [Options, Text Editor, C#, Advanced](/visualstudio/ide/reference/options-text-editor-csharp-advanced?view=vs-2022).
+> For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) and [Options, Text Editor, C#, Advanced](/visualstudio/ide/reference/options-text-editor-csharp-advanced).
 
 ## Template feedback
 

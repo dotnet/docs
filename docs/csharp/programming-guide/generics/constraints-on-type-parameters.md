@@ -4,6 +4,8 @@ description: Learn about constraints on type parameters. Constraints tell the co
 ms.date: 07/08/2022
 f1_keywords:
   - "defaultconstraint_CSharpKeyword"
+  - "notnull_CSharpKeyword"
+  - "unmanaged_CSharpKeyword"
 helpviewer_keywords: 
   - "generics [C#], type constraints"
   - "type constraints [C#]"

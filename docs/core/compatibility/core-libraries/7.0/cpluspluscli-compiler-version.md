@@ -1,6 +1,6 @@
 ---
 title: ".NET 7 breaking change: Compiling C++/CLI projects in Visual Studio"
-description: Learn about the breaking change in core .NET libraries where Visual Studio version 17.2 Preview 2 is required to compile .NET 7 C++/CLI projects.
+description: Learn about the breaking change in core .NET libraries where Visual Studio version 17.2 is required to compile .NET 7 C++/CLI projects.
 ms.date: 03/21/2022
 ---
 # C++/CLI projects in Visual Studio
@@ -15,15 +15,15 @@ Previously, compiling .NET projects using C++/CLI did not result in errors relat
 
 ## New behavior
 
-Compiling a `net7.0` project using C++/CLI in a release of Visual Studio version 17.2 prior to Preview 2 will result in many errors similar to this example:
+Compiling a `net7.0` project using C++/CLI in a release of Visual Studio version 17.2 prior to will result in many errors similar to this example:
 
 ```txt
 error C2253: 'System.Int32.Parse': pure specifier or abstract override specifier only allowed on virtual function
 ```
 
-Other than upgrading, there's no way to work around this compiler error. It's generated because of `static abstract` interface members on primitive <xref:System> types. When you upgrade to Visual Studio 2022 version 17.2 Preview 2+, the compilation errors will no longer occur.
+Other than upgrading, there's no way to work around this compiler error. It's generated because of `static abstract` interface members on primitive <xref:System> types. When you upgrade to Visual Studio 2022 version 17.2, the compilation errors will no longer occur.
 
-Implicitly implemented `static abstract` interface members can be invoked, but even with Visual Studio 2022 version 17.2 Preview 2+, C++/CLI doesn't support invoking explicitly implemented `static abstract` interface members.
+Implicitly implemented `static abstract` interface members can be invoked, but even with Visual Studio 2022 version 17.2, C++/CLI doesn't support invoking explicitly implemented `static abstract` interface members.
 
 ## Version introduced
 
@@ -39,7 +39,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Recommended action
 
-To continue using C++/CLI with .NET 7, upgrade to Visual Studio 2022 version 17.2 Preview 2 or a later version.
+To continue using C++/CLI with .NET 7, upgrade to Visual Studio 2022 version 17.2 or a later version.
 
 ## Affected APIs
 
@@ -47,4 +47,4 @@ N/A
 
 ## See also
 
-- [Visual Studio 2022 version 17.2 Preview - release notes](/visualstudio/releases/2022/release-notes-preview)
+- [Visual Studio 2022 version 17.2 - release notes](/visualstudio/releases/2022/release-notes-v17.2)

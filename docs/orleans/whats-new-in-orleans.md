@@ -38,6 +38,10 @@ If you're upgrading a project to Orleans 7.0, you'll need to perform the followi
 > [!TIP]
 > All of the Orleans samples have been upgraded to Orleans 7.0 and can be used as a reference for what changes were made. For more information, see [Orleans issue #8035](https://github.com/dotnet/orleans/issues/8035) that itemizes the changes made to each sample.
 
+## Orleans `global using` directives
+
+All Orleans projects either directly or indirectly reference the `Microsoft.Orleans.Sdk` NuGet package. When an Orleans project has configured to _enable_ implicit usings (for example `<ImplicitUsings>enable</ImplicitUsings>`), the `Orleans` and `Orleans.Hosting` namespaces are both implicitly used. This means that your app code doesn't need these directives. For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#implicitusings) and [dotnet/orleans/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets](https://github.com/dotnet/orleans/blob/main/src/Orleans.Sdk/build/Microsoft.Orleans.Sdk.targets#L4-L5).
+
 ## Hosting
 
 The <xref:Orleans.ClientBuilder> type has been replaced with a <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means that you can add an Orleans client to an existing host without having to create a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> has completed, the client will be connected automatically. Services added to the `IHostBuilder` are started in the order of registration, so calling `UseOrleansClient` before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A> will ensure Orleans is started before ASP.NET Core starts for example, allowing you to access the client from your ASP.NET Core application immediately.

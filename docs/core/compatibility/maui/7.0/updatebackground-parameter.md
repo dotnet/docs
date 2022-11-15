@@ -3,7 +3,7 @@ title: "Breaking change: Optional parameter on UpdateBackground"
 description: Learn about the .NET 7 breaking change in .NET MAUI where an optional parameter was added to the UpdateBackground method.
 ms.date: 11/14/2022
 ---
-# UpdateBackground parameter
+# New UpdateBackground parameter
 
 When updating the button background on iOS, the border was also required to be drawn. This change adds a new parameter to `ViewExtensions.UpdateBackground()` to pass in the stroke information.
 

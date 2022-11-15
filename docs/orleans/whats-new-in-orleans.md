@@ -398,15 +398,15 @@ For more information, see [OptionsBuilder API](../core/extensions/options.md#opt
 
 Grains each have a unique identity which is comprised of the grain's type and its key. Previous versions of Orleans used a compound type for `GrainId`s to support grain keys of either:
 
-- `Guid`
-- `long`
-- `string`
-- `Guid` + `string`
-- `long` + `string`
+- <xref:System.Guid>
+- [`long`](xref:System.Int64)
+- [string](xref:System.String)
+- <xref:System.Guid>+ [string](xref:System.String)
+- [`long`](xref:System.Int64) + [string](xref:System.String)
 
 This involves some complexity when it comes to dealing with grain keys. Grain identities consist of two components: a type and a key. The type component previously consisted of a numeric type code, a category, and 3 bytes of generic type information.
 
-Grain identities now take the form `type/key` where both `type` and `key` are strings. This greatly simplifies how grain identity works and improves support for generic grain types.
+Grain identities now take the form `type/key` where both `type` and `key` are strings. The most commonly used grain key interface is the <xref:Orleans.IGrainWithStringKey>. This greatly simplifies how grain identity works and improves support for generic grain types.
 
 Grain interfaces are also now represented using a human-readable name, rather than a combination of a hash code and a string representation of any generic type parameters.
 

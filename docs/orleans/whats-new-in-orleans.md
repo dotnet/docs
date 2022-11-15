@@ -345,7 +345,7 @@ siloBuilder.Services.AddSerializer(serializerBuilder =>
 });
 ```
 
-Similar configuration must be performed on all client which need to handle those types.
+In the preceding example, the call to <xref:Orleans.Serialization.SerializationHostingExtensions.AddNewtonsoftJsonSerializer%2A> adds support for serializing and deserializing values using `Newtonsoft.Json.JsonSerializer`. Similar configuration must be performed on all client which need to handle those types.
 
 For types which Orleans has generated a serializer (types marked with <xref:Orleans.GenerateSerializerAttribute>), Orleans will prefer the generated serializer over the `Newtonsoft.Json` serializer.
 

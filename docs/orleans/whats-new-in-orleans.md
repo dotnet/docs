@@ -496,19 +496,71 @@ Migration to `MemoryStream` will be easier, since only the configuration needs t
 ```csharp
 builder.AddMemoryStreams<DefaultMemoryMessageBodySerializer>(
     "in-mem-provider",
-    bldr =>
+    _ =>
     {
         // Number of pulling agent to start.
         // DO NOT CHANGE this value once deployed, if you do rolling deployment
-        bldr.ConfigurePartitioning(partitionCount: 8);
+        _.ConfigurePartitioning(partitionCount: 8);
     });
 ```
 
-## Open Telemetry
+## OpenTelemetry
 
-The telemetry system has been updated in Orleans 7.0 and the previous system has been removed in favor of standardized .NET APIs such as .NET Metrics for metrics and ActivitySource for tracing.
+The telemetry system has been updated in Orleans 7.0 and the previous system has been removed in favor of standardized .NET APIs such as .NET Metrics for metrics and <xref:System.Diagnostics.ActivitySource> for tracing.
 
 As a part of this, the existing `Microsoft.Orleans.TelemetryConsumers.*` packages have been removed. We are considering introducing a new set of packages to streamline the process of integrating the metrics emitted by Orleans into your monitoring solution of choice. As always, feedback and contributions are welcome.
+
+The `dotnet-counters` tool features performance monitoring for ad-hoc health monitoring and first-level performance investigation. For Orleans counters, the [dotnet-counters](../core/diagnostics/dotnet-counters.md) tool can be used to monitor them:
+
+```dotnetcli
+dotnet counters monitor -n MyApp --counters Microsoft.Orleans
+```
+
+Similarly, OpenTelemetry metrics can add the `Microsoft.Orleans` meters, as shown in the following code:
+
+```csharp
+builder.Services.AddOpenTelemetryMetrics(metrics =>
+{
+    metrics
+        .AddPrometheusExporter()
+        .AddMeter("Microsoft.Orleans");
+});
+```
+
+To enable distributed tracing, you configure OpenTelemetry as shown in the following code:
+
+```csharp
+builder.Services.AddOpenTelemetryTracing(tracing =>
+{
+    // Set a service name
+    tracing.SetResourceBuilder(
+        ResourceBuilder.CreateDefault()
+            .AddService(serviceName: "ExampleService", serviceVersion: "1.0"));
+
+    tracing.AddAspNetCoreInstrumentation();
+    tracing.AddSource("Microsoft.Orleans.Runtime");
+    tracing.AddSource("Microsoft.Orleans.Application");
+
+    tracing.AddZipkinExporter(zipkin =>
+    {
+        zipkin.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
+    });
+});
+```
+
+In the preceding code, OpenTelemetry is configured to monitor:
+
+- `Microsoft.Orleans.Runtime`
+- `Microsoft.Orleans.Application`
+
+To propagate activity, call <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation%2A>:
+
+```csharp
+builder.Host.UseOrleans((_, clientBuilder) =>
+{
+    clientBuilder.AddActivityPropagation();
+});
+```
 
 ## Refactor features from core package into separate packages
 
@@ -589,4 +641,4 @@ public Task InnerCall() => Task.CompletedTask;
 
 Call-chain reentrancy must be opted-in per-grain, per-call-chain. For example, consider two grains, grain A & grain B. If grain A enables call chain reentrancy before calling grain B, grain B can call back into grain A in that call. However, grain A cannot call back into grain B if grain B has not *also* enabled call chain reentrancy. It is per-grain, per-call-chain.
 
-Grains can also suppress call chain reentraancy information from flowing down a call chain using `using var _ = RequestContext.SuppressCallChainReentrancy()`. This prevents subsequent calls from reentry.
+Grains can also suppress call chain reentrancy information from flowing down a call chain using `using var _ = RequestContext.SuppressCallChainReentrancy()`. This prevents subsequent calls from reentry.

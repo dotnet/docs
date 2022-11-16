@@ -13,7 +13,7 @@ dev_langs:
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
-The easiest way to make a class serializable is to mark it with the <xref:System.SerializableAttribute> as follows.  
+The easiest way to make a class binary serializable is to mark it with the <xref:System.SerializableAttribute> as follows.  
   
 ```csharp  
 [Serializable]  
@@ -85,7 +85,7 @@ public class MyStuff : MyObject
 }  
 ```  
   
- Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization Guidelines](serialization-guidelines.md) for information about when you should mark a class for serialization. Serialization cannot be added to a class after it's been compiled.  
+ Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization guidelines](serialization-guidelines.md) for information about when you should mark a class for binary serialization. Binary serialization cannot be added to a class after it's been compiled.  
   
 ## See also
 

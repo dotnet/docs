@@ -82,6 +82,13 @@ items:
       - name: Security in .NET
         tocHref: /dotnet/standard/security/
         topicHref: /dotnet/standard/security/index
+      - name: Serialization
+        tocHref: /dotnet/standard/serialization/
+        topicHref: /dotnet/standard/serialization/index
+        items:
+        - name: JSON serialization
+          tocHref: /dotnet/standard/serialization/system-text-json/
+          topicHref: /dotnet/standard/serialization/system-text-json/overview
       - name: Managed threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index

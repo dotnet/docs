@@ -49,11 +49,11 @@ XML serialization serializes the public fields and properties of an object, or t
 
 For binary or XML serialization, you need:
 
-* The object to be serialized
+* The object to serialize
 * A stream to contain the serialized object
 * A <xref:System.Runtime.Serialization.Formatter?displayProperty=fullName> instance
 
-Apply the <xref:System.SerializableAttribute> attribute to a type to indicate that instances of the type can be serialized. An  exception is thrown if you attempt to serialize but the type doesn't have the <xref:System.SerializableAttribute> attribute.
+Apply the <xref:System.SerializableAttribute> attribute to a type to indicate that instances of the type can be serialized. An exception is thrown if you attempt to serialize but the type doesn't have the <xref:System.SerializableAttribute> attribute.
 
 To prevent a field from being serialized, apply the <xref:System.NonSerializedAttribute> attribute. If a field of a serializable type contains a pointer, a handle, or some other data structure that is specific to a particular environment, and the field cannot be meaningfully reconstituted in a different environment, then you may want to make it nonserializable.
 

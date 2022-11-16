@@ -245,7 +245,7 @@ Be sure that the host entries are updated for `contoso.com` to answer on the app
 
 ```powershell
 $cert | Remove-Item
-Get-ChildItem $certFilePath | Remove-Item
+Get-ChildItem $certKeyPath | Remove-Item
 $rootCert | Remove-item
 ```
 
@@ -305,7 +305,7 @@ Depending on the host os, the certificate will need to be trusted. On a Linux ho
 For the purposes of this guide, here's an example in Windows using PowerShell:
 
 ```powershell
-Import-Certificate -FilePath $certFilePath -CertStoreLocation 'Cert:\LocalMachine\Root'
+Import-Certificate -FilePath $certKeyPath -CertStoreLocation 'Cert:\LocalMachine\Root'
 ```
 
 For .NET Core 3.1, run the following command in WSL:
@@ -344,7 +344,7 @@ Be sure that the host entries are updated for `contoso.com` to answer on the app
 Be sure to clean up the self-signed certificates once done testing.
 
 ```powershell
-Get-ChildItem $certFilePath | Remove-Item
+Get-ChildItem $certKeyPath | Remove-Item
 ```
 
 ## See also

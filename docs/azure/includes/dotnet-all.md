@@ -254,7 +254,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.2.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.5.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.6.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
@@ -755,7 +755,7 @@
 | Management - Notification Hubs Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs.Fluent/1.9.1-beta) |  |  |
 | Management - Operational Insights | NuGet [0.25.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.OperationalInsights/0.25.0-preview) |  | GitHub [0.25.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.OperationalInsights_0.25.0-preview/sdk/operationalinsights/Microsoft.Azure.Management.OperationalInsights/) |
 | Management - Peering | NuGet [2.1.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Peering/2.1.1) |  | GitHub [2.1.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Peering_2.1.1/sdk/peering/Microsoft.Azure.Management.Peering/) |
-| Management - Policy Insights | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.PolicyInsights/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.PolicyInsights_5.0.0/sdk/policyinsights/Microsoft.Azure.Management.PolicyInsights/) |
+| Management - Policy Insights | NuGet [5.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.PolicyInsights/5.1.0) |  | GitHub [5.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.PolicyInsights_5.1.0/sdk/policyinsights/Microsoft.Azure.Management.PolicyInsights/) |
 | Management - PostgreSQL | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.PostgreSQL/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/postgresql/Microsoft.Azure.Management.PostgreSQL) |
 | Management - Power BI Dedicated | NuGet [0.11.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.PowerBIDedicated/0.11.0-preview) |  | GitHub [0.11.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/powerbidedicated/Microsoft.Azure.Management.PowerBIDedicated) |
 | Management - Power BI Embedded | NuGet [1.1.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.PowerBIEmbedded/1.1.1-preview) |  |  |

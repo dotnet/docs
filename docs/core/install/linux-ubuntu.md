@@ -20,7 +20,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                 | .NET       |
 |------------------------|------------|
-| [22.04 (LTS)](#2210)   | 7, 6       |
+| [22.10](#2210)         | 7, 6       |
+| [22.04 (LTS)](#2204)   | 7, 6       |
 | [20.04 (LTS)](#2004)   | 7, 6, 3.1  |
 | [18.04 (LTS)](#1804)   | 7, 6, 3.1  |
 | [16.04 (LTS)](#1604)   | 6, 3.1    |
@@ -38,7 +39,7 @@ The following table is a list of currently supported .NET releases and the versi
 ## 22.10
 
 > [!WARNING]
-> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699).
+> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md),
 
 .NET 7 and .NET 6 are included in the Ubuntu 22.10 package manager feeds.
 
@@ -68,8 +69,8 @@ sudo apt-get install -y dotnet-runtime-7.0
 
 ## 22.10 (Microsoft package feed)
 
-> [!NOTE]
-> Warning: .NET 7 and .NET 6 are included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
+> [!WARNING]
+> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md),
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -186,9 +187,7 @@ If you've upgraded your Linux distribution since installing .NET, you may need t
 
 ## Troubleshooting
 
-Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` it doesn't list the SDK.
-
-This can be related to using two different package sources. The official Ubuntu 22.04 package feeds include .NET and you
+Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` the SDK isn't listed. This can be related to using two different package sources. The official Ubuntu 22.04 and Ubuntu 22.10 package feeds include .NET, but you may have also installed .NET from the Microsoft feeds. For more information about how to fix this problem, see [Troubleshoot _fxr_, _libhostfxr.so_, and _FrameworkList.xml_ errors](linux-package-mixup.md)
 
 ### APT problems
 

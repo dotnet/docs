@@ -1,14 +1,14 @@
 ---
-title: Troubleshoot .NET Package Mix ups on Linux
-description: Learn about how to troubleshoot strange .NET package errors on Linux.
+title: Troubleshoot .NET package mix ups on Linux
+description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
 ms.date: 10/31/2022
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
-# Troubleshoot _fxr_, _libhostfxr.so_, and _FrameworkList.xml_ errors
+# Troubleshoot .NET errors related to missing files on Linux
 
-When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `dotnet run` may fail with a message related to something not being found. Some of the error messages may be similar to the following:
+When you try to use .NET on Linux, commands such as `dotnet new` and `dotnet run` may fail with a message related to a file not being found, such as _fxr_, _libhostfxr.so_, or _FrameworkList.xml_. Some of the error messages may be similar to the following:
 
 - **System.IO.FileNotFoundException**
 
@@ -20,11 +20,11 @@ When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `
 
   or
 
-  > A fatal error occurred. The folder [/usr/share/dotnet/host/fxr] does not exist.
+  > A fatal error occurred. The folder \[/usr/share/dotnet/host/fxr] does not exist.
 
   or
 
-  > A fatal error occurred, the folder [/usr/share/dotnet/host/fxr] does not contain any version-numbered child folders.
+  > A fatal error occurred, the folder \[/usr/share/dotnet/host/fxr] does not contain any version-numbered child folders.
 
 - **Generic messages about dotnet not found**
 

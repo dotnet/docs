@@ -15,7 +15,7 @@ sudo apt-get update && \
 ```
 
 > [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-sdk-6.0**, see the [APT troubleshooting](#apt-troubleshooting) section.
+> If you receive an error message similar to **Unable to locate package dotnet-sdk-6.0**, see the [troubleshooting](#troubleshooting) section.
 
 ### Install the runtime
 
@@ -27,7 +27,7 @@ sudo apt-get update && \
 ```
 
 > [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-6.0**, see the [APT troubleshooting](#apt-troubleshooting) section.
+> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-6.0**, see the [troubleshooting](#troubleshooting) section.
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
 

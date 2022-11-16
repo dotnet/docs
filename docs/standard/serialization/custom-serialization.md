@@ -1,5 +1,5 @@
 ---
-title: "Custom serialization"
+title: "Custom binary serialization"
 description: Custom serialization is controlling the serialization and deserialization of a type. Controlling serialization can ensure serialization compatibility.
 ms.date: 04/21/2022
 dev_langs: 
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "OnSerializingAttribute class, custom serialization"
 ms.assetid: 12ed422d-5280-49b8-9b71-a2ed129c0384
 ---
-# Custom serialization
+# Custom binary serialization
 
 Custom serialization is the process of controlling the serialization and deserialization of a type. By controlling serialization, it's possible to ensure serialization compatibility, which is the ability to serialize and deserialize between versions of a type without breaking the core functionality of the type. For example, in the first version of a type, there may be only two fields. In the next version of a type, several more fields are added. Yet the second version of an application must be able to serialize and deserialize both types. The following sections describe how to control serialization.
 
@@ -28,9 +28,9 @@ Custom serialization is the process of controlling the serialization and deseria
 > [!IMPORTANT]
 > In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using `GetObjectData`. In .NET Framework versions 4.0 - 4.8, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute, which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
   
-## Running custom methods during and after serialization
+## Run custom methods during and after serialization
 
-The recommended way to run custom methods during and after serialization is to apply the following attributes to methods that are used to correct data during and after serialization:  
+The recommended way to run custom methods during and after binary serialization is to apply the following attributes to methods that are used to correct data during and after serialization:  
   
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute>  
   
@@ -44,9 +44,9 @@ The recommended way to run custom methods during and after serialization is to a
   
  In addition, when adding a new field to an existing serializable type, apply the <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribute to the field. The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> ignores the absence of the field when a stream that is missing the new field is processed.  
   
-## Implementing the ISerializable interface  
+## Implement the ISerializable interface  
 
- The other way to control serialization is achieved by implementing the <xref:System.Runtime.Serialization.ISerializable> interface on an object. Note, however, that the method in the previous section supersedes this method to control serialization.  
+ The other way to control binary serialization is to implement the <xref:System.Runtime.Serialization.ISerializable> interface on an object. Note, however, that the method in the previous section supersedes this method to control serialization.  
   
  In addition, you should not use default serialization on a class that is marked with the [Serializable](xref:System.SerializableAttribute) attribute and has declarative or imperative security at the class level or on its constructors. Instead, these classes should always implement the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
@@ -105,17 +105,17 @@ Public Class MyObject
 End Class
 ```  
   
- When **GetObjectData** is called during serialization, you are responsible for populating the <xref:System.Runtime.Serialization.SerializationInfo> provided with the method call. Add the variables to be serialized as name and value pairs. Any text can be used as the name. You have the freedom to decide which member variables are added to the <xref:System.Runtime.Serialization.SerializationInfo>, provided that sufficient data is serialized to restore the object during deserialization. Derived classes should call the **GetObjectData** method on the base object if the latter implements <xref:System.Runtime.Serialization.ISerializable>.
+ When `GetObjectData` is called during serialization, you are responsible for populating the <xref:System.Runtime.Serialization.SerializationInfo> provided with the method call. Add the variables to be serialized as name and value pairs. Any text can be used as the name. You have the freedom to decide which member variables are added to the <xref:System.Runtime.Serialization.SerializationInfo>, provided that sufficient data is serialized to restore the object during deserialization. Derived classes should call the `GetObjectData` method on the base object if the latter implements <xref:System.Runtime.Serialization.ISerializable>.
   
- It's important to stress that when <xref:System.Runtime.Serialization.ISerializable> is added to a class, you must implement both **GetObjectData** and the special constructor. The compiler warns you if **GetObjectData** is missing. However, because it is impossible to enforce the implementation of a constructor, no warning is provided if the constructor is absent, and an exception is thrown when an attempt is made to deserialize a class without the constructor.  
+ It's important to stress that when <xref:System.Runtime.Serialization.ISerializable> is added to a class, you must implement both `GetObjectData` and the special constructor. The compiler warns you if `GetObjectData` is missing. However, because it is impossible to enforce the implementation of a constructor, no warning is provided if the constructor is absent, and an exception is thrown when an attempt is made to deserialize a class without the constructor.  
   
- The current design was favored above a <xref:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData%2A> method to get around potential security and versioning problems. For example, a `SetObjectData` method must be public if it is defined as part of an interface; thus users must write code to defend against having the **SetObjectData** method called multiple times. Otherwise, a malicious application that calls the **SetObjectData** method on an object in the process of executing an operation can cause potential problems.  
+ The current design was favored above a <xref:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData%2A> method to get around potential security and versioning problems. For example, a `SetObjectData` method must be public if it is defined as part of an interface; thus users must write code to defend against having the `SetObjectData` method called multiple times. Otherwise, a malicious application that calls the `SetObjectData` method on an object in the process of executing an operation can cause potential problems.  
   
  During deserialization, <xref:System.Runtime.Serialization.SerializationInfo> is passed to the class using the constructor provided for this purpose. Any visibility constraints placed on the constructor are ignored when the object is deserialized; so you can mark the class as public, protected, internal, or private. However, it is a best practice to make the constructor protected unless the class is sealed, in which case the constructor should be marked private. The constructor should also perform thorough input validation.
   
  To restore the state of the object, simply retrieve the values of the variables from <xref:System.Runtime.Serialization.SerializationInfo> using the names used during serialization. If the base class implements <xref:System.Runtime.Serialization.ISerializable>, the base constructor should be called to allow the base object to restore its variables.  
   
- When you derive a new class from one that implements <xref:System.Runtime.Serialization.ISerializable>, the derived class must implement both the constructor as well as the **GetObjectData** method if it has variables that need to be serialized. The following code example shows how this is done using the `MyObject` class shown previously.  
+ When you derive a new class from one that implements <xref:System.Runtime.Serialization.ISerializable>, the derived class must implement both the constructor as well as the `GetObjectData` method if it has variables that need to be serialized. The following code example shows how this is done using the `MyObject` class shown previously.  
   
 ```csharp
 [Serializable]

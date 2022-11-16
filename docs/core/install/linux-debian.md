@@ -20,8 +20,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian  | .NET      |
 |---------|-----------|
-| 11      | 7, 6 ,3.1 |
-| 10      | 7, 6 ,3.1 |
+| 11      | 7, 6, 3.1 |
+| 10      | 7, 6, 3.1 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

@@ -46,7 +46,7 @@ The following table is a list of currently supported .NET releases on both CentO
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-yum-install-60](includes/linux-install-70-yum.md)]
+[!INCLUDE [linux-yum-install-70](includes/linux-install-70-yum.md)]
 
 ## CentOS 8
 
@@ -55,7 +55,7 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 .NET Core 3.1 and .NET 5 are available in the default package repositories for CentOS 8.
 
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## How to install other versions
 

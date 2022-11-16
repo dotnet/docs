@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/11/2022
+ms.date: 11/16/2022
 ms.topic: tutorial
 recommendations: false
 ---

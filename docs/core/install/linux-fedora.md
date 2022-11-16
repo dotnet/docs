@@ -18,9 +18,20 @@ For more information on installing .NET without a package manager, see one of th
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
-## Install .NET 7
+## Supported distributions
 
-[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
+
+| Fedora | .NET      |
+|--------|-----------|
+| 37     | 6         |
+| 36     | 6, 3.1    |
+| 35     | 6, 3.1    |
+
+> [!IMPORTANT]
+> .NET 7 isn't yet ready for Fedora. This article will be updated when it's available.
+
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Install .NET 6
 
@@ -29,18 +40,6 @@ For more information on installing .NET without a package manager, see one of th
 ## Install .NET Core 3.1
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
-
-## Supported distributions
-
-The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
-
-| Fedora | .NET      |
-|--------|-----------|
-| 37     | 7, 6, 3.1 |
-| 36     | 7, 6, 3.1 |
-| 35     | 7, 6, 3.1 |
-
-[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Install preview versions
 

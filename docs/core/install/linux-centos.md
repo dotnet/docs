@@ -21,7 +21,6 @@ The following table is a list of currently supported .NET releases on both CentO
 | CentOS  | .NET      |
 |---------|-----------|
 | 7       | 7, 6, 3.1 |
-| 8\*     | 3.1       |
 
 > [!WARNING]
 > \*CentOS 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 and later versions won't be supported on CentOS Linux 8.
@@ -47,15 +46,6 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 ```
 
 [!INCLUDE [linux-yum-install-70](includes/linux-install-70-yum.md)]
-
-## CentOS 8
-
-> [!WARNING]
-> \*CentOS 8 will reach an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 won't be supported on CentOS Linux 8.
-
-.NET Core 3.1 and .NET 5 are available in the default package repositories for CentOS 8.
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## How to install other versions
 

@@ -23,12 +23,12 @@ To install .NET from Red Hat on RHEL, you first need to register using the Red H
 
 The following table is a list of currently supported .NET releases on both RHEL and CentOS Stream. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution is no longer supported.
 
-| Distribution            | .NET |
-| ------------------------ | ----- |
-| RHEL 9                 | 7, 6  |
-| RHEL 8                 | 7, 6, 3.1 |
-| RHEL 7                 | 7, 6, 3.1 |
-| CentOS Stream 9        | 7, 6 |
+| Distribution           | .NET      |
+| ---------------------- | --------- |
+| RHEL 9 (9.1)           | 7, 6      |
+| RHEL 8 (8.7)           | 7, 6, 3.1 |
+| RHEL 7                 | 6, 3.1    |
+| CentOS Stream 9        | 7, 6      |
 | CentOS Stream 8        | 7, 6, 3.1 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
@@ -52,48 +52,6 @@ The following table is a list of currently supported .NET releases on both RHEL 
 .NET is included in the AppStream repositories for RHEL 8.
 
 [!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
-
-## RHEL 7 ✔️ .NET 7
-
-The following command installs the `scl-utils` package:
-
-```bash
-sudo yum install scl-utils
-```
-
-### Install the SDK
-
-The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
-
-```bash
-subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet70 -y
-scl enable rh-dotnet70 bash
-```
-
-Red Hat does not recommend permanently enabling `rh-dotnet70` because it may affect other programs. If you want to enable `rh-dotnet` permanently, add the following line to your _~/.bashrc_ file.
-
-```bash
-source scl_source enable rh-dotnet70
-```
-
-### Install the runtime
-
-The .NET Runtime allows you to run apps that were made with .NET that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
-
-```bash
-subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet70-aspnetcore-runtime-7.0 -y
-scl enable rh-dotnet70 bash
-```
-
-Red Hat does not recommend permanently enabling `rh-dotnet70` because it may affect other programs. If you want to enable `rh-dotnet70` permanently, add the following line to your _~/.bashrc_ file.
-
-```bash
-source scl_source enable rh-dotnet70
-```
-
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet60-aspnetcore-runtime-7.0` in the preceding command with `rh-dotnet60-dotnet-runtime-7.0`.
 
 ## RHEL 7 ✔️ .NET 6
 

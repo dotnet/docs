@@ -26,7 +26,7 @@ parser.WithNotParsed(
             .LogError(
                 string.Join(
                     Environment.NewLine, errors.Select(error => error.ToString())));
-        
+
         Environment.Exit(2);
     });
 
@@ -47,9 +47,13 @@ static async Task StartAnalysisAsync(ActionInputs inputs, IHost host)
 
     // Do the work here...
 
-    Console.WriteLine($"::set-output name=updated-metrics::{updatedMetrics}");
-    Console.WriteLine($"::set-output name=summary-title::{title}");
-    Console.WriteLine($"::set-output name=summary-details::{summary}");
+    var githubOutputFile = Environment.GetEnvironmentVariable("GITHUB_OUTPUT", EnvironmentVariableTarget.Process);
+    using (var textWriter = new StreamWriter(githubOutputFile!, true, Encoding.UTF8))
+    {
+        textWriter.WriteLine($"updated-metrics={updatedMetrics}");
+        textWriter.WriteLine($"summary-title={title}");
+        textWriter.WriteLine($"summary-details={summary}");
+    }
 
     await Task.CompletedTask;
 

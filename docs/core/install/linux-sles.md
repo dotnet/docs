@@ -16,14 +16,10 @@ ms.date: 08/07/2022
 
 The following table is a list of currently supported .NET releases on both SLES 12 SP2 and SLES 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
 
-- A ✔️ indicates that the version of SLES or .NET is still supported.
-- A ❌ indicates that the version of SLES or .NET isn't supported on that SLES release.
-- When both a version of SLES and a version of .NET have ✔️, that OS and .NET combination is supported.
-
-| SLES                   | .NET Core 3.1 | .NET 6   |
-|------------------------|---------------|----------|
-| ✔️ [15](#sles-15-)     | ✔️ 3.1        | ✔️ 6.0 |
-| ✔️ [12 SP2](#sles-12-) | ✔️ 3.1        | ✔️ 6.0 |
+| SLES   | .NET |
+|--------|------|
+| 15     | 7, 6, 3.1 |
+| 12 SP2 | 7, 6, 3.1 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -35,7 +31,7 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## SLES 15 ✔️
+## SLES 15
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -51,7 +47,7 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 
 [!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
 
-## SLES 12 ✔️
+## SLES 12
 
 .NET requires SP2 as a minimum for the SLES 12 family.
 

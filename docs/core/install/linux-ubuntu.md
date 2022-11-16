@@ -20,10 +20,10 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                 | .NET       |
 |------------------------|------------|
-| [22.04 (LTS)](#2204)   | 6+         |
-| [20.04 (LTS)](#2004)   | 3.1, 6     |
-| [18.04 (LTS)](#1804)   | 3.1, 6     |
-| [16.04 (LTS)](#1604)   | 3.1, 6     |
+| [22.04 (LTS)](#2210)   | 7, 6       |
+| [20.04 (LTS)](#2004)   | 7, 6, 3.1  |
+| [18.04 (LTS)](#1804)   | 7, 6, 3.1  |
+| [16.04 (LTS)](#1604)   | 6, 3.1    |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -35,12 +35,12 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## 22.04
+## 22.10
 
 > [!WARNING]
-> If you've previously installed .NET 6 from `packages.microsoft.com`, see the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699).
+> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699).
 
-.NET 6 is included in the Ubuntu 22.04 package manager feeds.
+.NET 7 and .NET 6 are included in the Ubuntu 22.10 package manager feeds.
 
 ### Install the SDK
 
@@ -48,7 +48,7 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y dotnet6
+  sudo apt-get install -y dotnet7
 ```
 
 ### Install the runtime
@@ -57,19 +57,68 @@ The ASP.NET Core Runtime allows you to run apps that were made with .NET that di
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y aspnetcore-runtime-6.0
+  sudo apt-get install -y aspnetcore-runtime-7.0
 ```
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-7.0` in the previous command with `dotnet-runtime-7.0`:
 
 ```bash
-sudo apt-get install -y dotnet-runtime-6.0
+sudo apt-get install -y dotnet-runtime-7.0
+```
+
+## 22.10 (Microsoft package feed)
+
+> [!NOTE]
+> Warning: .NET 7 and .NET 6 are included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/22.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+
+> [!NOTE]
+> [Ubuntu 22.10 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. Versions of .NET prior to .NET 6 don't support OpenSSL 3. Microsoft doesn't test or support using OpenSSL 1.x on Ubuntu 22.10. For more information, see [.NET 6 Security Improvements](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security).
+
+## 22.04
+
+> [!WARNING]
+> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699).
+
+.NET 7 and .NET 6 are included in the Ubuntu 22.04 package manager feeds.
+
+### Install the SDK
+
+The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
+
+```bash
+sudo apt-get update && \
+  sudo apt-get install -y dotnet7
+```
+
+### Install the runtime
+
+The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
+
+```bash
+sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-7.0
+```
+
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-7.0` in the previous command with `dotnet-runtime-7.0`:
+
+```bash
+sudo apt-get install -y dotnet-runtime-7.0
 ```
 
 ## 22.04 (Microsoft package feed)
 
 > [!NOTE]
-> Warning: .NET 6 is included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
+> Warning: .NET 7 and .NET 6 are included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -79,10 +128,10 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 
 > [!NOTE]
-> [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. .NET 6 supports OpenSSL 3 while earlier .NET versions don't. Microsoft doesn't test or support using OpenSSL 1.x on Ubuntu 22.04. For more information, see [.NET 6 Security Improvements](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security).
+> [Ubuntu 22.04 includes OpenSSL 3](https://discourse.ubuntu.com/t/openssl-3-0-transition-plans/24453) as the baseline version. Versions of .NET prior to .NET 6 don't support OpenSSL 3. Microsoft doesn't test or support using OpenSSL 1.x on Ubuntu 22.10. For more information, see [.NET 6 Security Improvements](https://devblogs.microsoft.com/dotnet/announcing-net-6/#security).
 
 ## 20.04
 
@@ -135,15 +184,21 @@ sudo apt-get upgrade
 
 If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
-## APT troubleshooting
+## Troubleshooting
+
+Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` it doesn't list the SDK.
+
+This can be related to using two different package sources. The official Ubuntu 22.04 package feeds include .NET and you
+
+### APT problems
 
 This section provides information on common errors you may get while using APT to install .NET.
 
-### Unable to find package
+#### Unable to find package
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-### Unable to locate \\ Some packages could not be installed
+#### Unable to locate \\ Some packages could not be installed
 
 > [!NOTE]
 > This information only applies when .NET is installed from the Microsoft package feed.
@@ -162,7 +217,7 @@ sudo apt-get update && \
   sudo apt-get install -y {dotnet-package}
 ```
 
-### Failed to fetch
+#### Failed to fetch
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 

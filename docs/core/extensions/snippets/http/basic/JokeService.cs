@@ -17,7 +17,7 @@ public sealed class JokeService
     public async Task<string> GetRandomJokeAsync()
     {
         // Create the client
-        HttpClient client = _httpClientFactory.CreateClient();
+        using HttpClient client = _httpClientFactory.CreateClient();
 
         try
         {

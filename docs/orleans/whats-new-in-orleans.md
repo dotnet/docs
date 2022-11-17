@@ -553,12 +553,12 @@ Call-chain reentrancy must be opted-in per-grain, per-call-chain. For example, c
 
 Grains can also suppress call chain reentraancy information from flowing down a call chain using `using var _ = RequestContext.SuppressCallChainReentrancy()`. This prevents subsequent calls from reentry.
 
-### Orleans 7 and ADO.NET
+### ADO.NET migration scripts
 
-If ADO.NET is used for Orleans clustering, persistence or reminder you may need to run some sql scripts in order for Orleans 7 to work properly, these are located on github:
+To ensure forward compatibility with Orleans clustering, persistence, and reminders that rely on ADO.NET, you'll need the appropriate SQL migration script:
 
 * [Clustering](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Clustering.AdoNet/Migrations)
-* [Persistance](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Migrations)
+* [Persistence](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Migrations)
 * [Reminders](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Reminders.AdoNet/Migrations)
 
-Select the files for the database used and apply them in order (first 3.6.0, then 3.6.7)
+Select the files for the database used and apply them in order.

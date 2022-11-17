@@ -62,4 +62,3 @@ We're assigning values to the following additional properties using the new GitH
 
 - *Size*: The relative size of work required.
 - *Priority*: The relative priority of this issue. This should map to the `Pri?` labels.
- 

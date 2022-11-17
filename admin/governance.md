@@ -29,6 +29,8 @@ We've also configured a variety of branch protection rules in place on the `main
 >
 > If you do need to override the required settings, turn off the "Do not allow bypassing the above settings*. Then, refresh the PR, merge it, and the reapply the "Do not allow bypassing" setting. This is only available to administrators.
 
+If you change any branch protection rules, alert the @dotnet/docs team via email about the change.
+
 ## :white_check_mark: Automation we use
 
 We have several other workflows installed to automate a variety of tasks:
@@ -39,6 +41,8 @@ We have several other workflows installed to automate a variety of tasks:
 - **version-sweep**: This action periodically checks for samples that use TFMs that are out of support. It helps us keep our samples up to date.
 - **whats-new**: This action runs once a month to publish our "What's new" article.
 - **repo-man**: This GitHub workflow examines issues and PRs and adds classification labels.
+
+You can see the full details in our [README.MD](https://github.com/dotnet/docs#octocat-github-action-workflows) file.
 
 ## :label: Labels for automation
 
@@ -58,3 +62,4 @@ We're assigning values to the following additional properties using the new GitH
 
 - *Size*: The relative size of work required.
 - *Priority*: The relative priority of this issue. This should map to the `Pri?` labels.
+ 

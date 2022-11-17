@@ -63,25 +63,13 @@ You can change the severity of these rules to disable them or elevate them to er
 
 *Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
-:::row:::
-    :::column:::
-        `None`
-    :::column-end:::
-    :::column:::
-        `Default`
-    :::column-end:::
-    :::column:::
-        `Minimum`
-    :::column-end:::
-    :::column:::
-        `Recommended`
-    :::column-end:::
-    :::column:::
-        `All`
-    :::column-end:::
-:::row-end:::
+- `None`
+- `Default`
+- `Minimum`
+- `Recommended`
+- `All`
 
-Starting in .NET 6, you can omit [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the \<AnalysisLevel> property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel).
+Starting in .NET 6, you can omit [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel).
 
 To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 

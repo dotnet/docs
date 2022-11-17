@@ -1,5 +1,5 @@
 ---
-title: "Version tolerant serialization"
+title: "Version-tolerant binary serialization"
 description: Learn about Version Tolerant Serialization, a set of features that make it easier to modify serializable types.
 ms.date: "08/08/2017"
 dev_langs: 
@@ -15,14 +15,14 @@ helpviewer_keywords:
   - "serialization, attributes"
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
 ---
-# Version tolerant serialization
+# Version tolerant binary serialization
 
-In the earliest versions of .NET Framework, creating serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:
+In the earliest versions of .NET Framework, creating binary-serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:
 
 - Older versions of an application would throw exceptions when asked to deserialize new versions of the old type.
 - Newer versions of an application would throw exceptions when deserializing older versions of a type with missing data.
 
-Version Tolerant Serialization (VTS) is a set of features that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type.
+Version tolerant serialization (VTS) refers to a set of features that make it easier, over time, to modify binary-serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type.
 
 The VTS features are enabled when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Additionally, all features except extraneous data tolerance are also enabled when using the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. For more information about using these classes for serialization, see [Binary Serialization](binary-serialization.md).
 

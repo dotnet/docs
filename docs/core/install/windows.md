@@ -192,8 +192,8 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 | Windows Server 2022                          | ✔️      | ✔️      | ✔️             |
 | Windows Server, Version 1903 or later        | ✔️      | ✔️      | ✔️             |
 | Windows 10, Version 1607 or later            | ✔️      | ✔️      | ✔️             |
-| Windows 8.1                                  | ✔️      | ✔️      | ✔️             |
-| Windows 7 SP1 [ESU][esu]                     | ✔️      | ✔️      | ✔️             |
+| Windows 8.1                                  | ❌      | ✔️      | ✔️             |
+| Windows 7 SP1 [ESU][esu]                     | ❌      | ✔️      | ✔️             |
 | Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            | ✔️    |
 | Windows Server Core 2012 R2                  | ✔️      | ✔️      | ✔️    |
 | Windows Server Core 2012                     | ✔️      | ✔️      | ✔️    |

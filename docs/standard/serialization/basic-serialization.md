@@ -13,7 +13,7 @@ dev_langs:
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
-The easiest way to make a class serializable is to mark it with the <xref:System.SerializableAttribute> as follows.  
+The easiest way to make a class binary serializable is to mark it with the <xref:System.SerializableAttribute> as follows.  
   
 ```csharp  
 [Serializable]  
@@ -53,9 +53,9 @@ Console.WriteLine("n2: {0}", obj.n2);
 Console.WriteLine("str: {0}", obj.str);  
 ```  
   
-The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> used above is very efficient and produces a compact byte stream. All objects serialized with this formatter can also be deserialized with it, which makes it an ideal tool for serializing objects that will be deserialized on .NET. It is important to note that constructors are not called when an object is deserialized. This constraint is placed on deserialization for performance reasons. However, this violates some of the usual contracts the runtime makes with the object writer, and developers should ensure that they understand the ramifications when marking an object as serializable.  
+The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> used in the preceding code is efficient and produces a compact byte stream. All objects serialized with this formatter can also be deserialized with it, which makes it an ideal tool for serializing objects that will be deserialized on .NET. It's important to note that constructors are not called when an object is deserialized. This constraint is placed on deserialization for performance reasons. However, this violates some of the usual contracts the runtime makes with the object writer, and developers should ensure that they understand the ramifications when marking an object as serializable.  
   
-If portability is a requirement, use the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> instead. Simply replace the **BinaryFormatter** in the code above with **SoapFormatter,** and call **Serialize** and **Deserialize** as before. This formatter produces the following output for the example used above.  
+If portability is a requirement, use the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> instead. Simply replace the `BinaryFormatter` in the previous code with `SoapFormatter`, and call `Serialize` and `Deserialize` as before. This formatter produces the following output for the example used previously.  
   
 ```xml  
 <SOAP-ENV:Envelope  
@@ -76,7 +76,7 @@ If portability is a requirement, use the <xref:System.Runtime.Serialization.Form
 </SOAP-ENV:Envelope>  
 ```  
   
-It's important to note that the [Serializable](xref:System.SerializableAttribute) attribute cannot be inherited. If you derive a new class from `MyObject`, the new class must be marked with the attribute as well, or it cannot be serialized. For example, when you attempt to serialize an instance of the class below, you'll get a <xref:System.Runtime.Serialization.SerializationException> informing you that the `MyStuff` type is not marked as serializable.  
+It's important to note that the [Serializable](xref:System.SerializableAttribute) attribute cannot be inherited. If you derive a new class from `MyObject`, the new class must be marked with the attribute as well, or it cannot be serialized. For example, when you attempt to serialize an instance of the following class, you'll get a <xref:System.Runtime.Serialization.SerializationException> informing you that the `MyStuff` type is not marked as serializable.  
   
 ```csharp  
 public class MyStuff : MyObject
@@ -85,7 +85,7 @@ public class MyStuff : MyObject
 }  
 ```  
   
- Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization Guidelines](serialization-guidelines.md) for information about when you should mark a class for serialization. Serialization cannot be added to a class after it has been compiled.  
+ Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization guidelines](serialization-guidelines.md) for information about when you should mark a class for binary serialization. Binary serialization cannot be added to a class after it's been compiled.  
   
 ## See also
 

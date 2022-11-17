@@ -206,17 +206,18 @@ public struct MyForeignLibraryValueType
 }
 
 // This is the surrogate which will act as a stand-in for the foreign type.
+// Surrogates should use plain fields instead of properties for better perfomance.
 [GenerateSerializer]
 public struct MyForeignLibraryValueTypeSurrogate
 {
     [Id(0)]
-    public int Num { get; set; }
+    public int Num;
 
     [Id(1)]
-    public string String { get; set; }
+    public string String;
 
     [Id(2)]
-    public DateTimeOffset DateTimeOffset { get; set; }
+    public DateTimeOffset DateTimeOffset;
 }
 
 // This is a converter which converts between the surrogate and the foreign type.
@@ -265,13 +266,13 @@ public sealed class MyForeignLibraryType
 public struct MyForeignLibraryTypeSurrogate
 {
     [Id(0)]
-    public int Num { get; set; }
+    public int Num;
 
     [Id(1)]
-    public string String { get; set; }
+    public string String;
 
     [Id(2)]
-    public DateTimeOffset DateTimeOffset { get; set; }
+    public DateTimeOffset DateTimeOffset;
 }
 
 // Implement the IConverter and IPopulator interfaces on the converter.
@@ -642,3 +643,13 @@ public Task InnerCall() => Task.CompletedTask;
 Call-chain reentrancy must be opted-in per-grain, per-call-chain. For example, consider two grains, grain A & grain B. If grain A enables call chain reentrancy before calling grain B, grain B can call back into grain A in that call. However, grain A cannot call back into grain B if grain B has not *also* enabled call chain reentrancy. It is per-grain, per-call-chain.
 
 Grains can also suppress call chain reentrancy information from flowing down a call chain using `using var _ = RequestContext.SuppressCallChainReentrancy()`. This prevents subsequent calls from reentry.
+
+### ADO.NET migration scripts
+
+To ensure forward compatibility with Orleans clustering, persistence, and reminders that rely on ADO.NET, you'll need the appropriate SQL migration script:
+
+* [Clustering](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Clustering.AdoNet/Migrations)
+* [Persistence](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Migrations)
+* [Reminders](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Reminders.AdoNet/Migrations)
+
+Select the files for the database used and apply them in order.

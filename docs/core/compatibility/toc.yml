@@ -123,6 +123,18 @@ items:
         items:
         - name: RuntimeInformation.OSArchitecture under emulation
           href: interop/7.0/osarchitecture-emulation.md
+      - name: .NET MAUI
+        items:
+        - name: Constructors accept base interface instead of concrete type
+          href: maui/7.0/mauiwebviewnavigationdelegate-constructor.md
+        - name: Flow direction helper methods removed
+          href: maui/7.0/flow-direction-apis-removed.md
+        - name: New UpdateBackground parameter
+          href: maui/7.0/updatebackground-parameter.md
+        - name: ScrollToRequest property renamed
+          href: maui/7.0/scrolltorequest-property-rename.md
+        - name: Some Windows APIs are removed
+          href: maui/7.0/iwindowstatemanager-apis-removed.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
@@ -1113,6 +1125,20 @@ items:
         items:
         - name: Call argument coercion
           href: jit/6.0/coerce-call-arguments-ecma-335.md
+    - name: .NET MAUI
+      items:
+      - name: .NET 7
+        items:
+        - name: Constructors accept base interface instead of concrete type
+          href: maui/7.0/mauiwebviewnavigationdelegate-constructor.md
+        - name: Flow direction helper methods removed
+          href: maui/7.0/flow-direction-apis-removed.md
+        - name: New UpdateBackground parameter
+          href: maui/7.0/updatebackground-parameter.md
+        - name: ScrollToRequest property renamed
+          href: maui/7.0/scrolltorequest-property-rename.md
+        - name: Some Windows APIs are removed
+          href: maui/7.0/iwindowstatemanager-apis-removed.md
     - name: Networking
       items:
       - name: .NET 7

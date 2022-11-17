@@ -5,7 +5,7 @@ using Shared;
 
 namespace BasicHttp.Example;
 
-public sealed class ItemService
+public sealed class ItemService : IDisposable
 {
     private readonly HttpClient _httpClient = null!;
 
@@ -48,4 +48,6 @@ public sealed class ItemService
         httpResponse.EnsureSuccessStatusCode();
     }
     // </Delete>
+
+    void IDisposable.Dispose() => _httpClient?.Dispose();
 }

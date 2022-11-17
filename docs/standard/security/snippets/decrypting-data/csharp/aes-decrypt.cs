@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 
 try
 {
@@ -31,6 +29,9 @@ try
                aes.CreateDecryptor(key, iv),
                CryptoStreamMode.Read))
             {
+                // By default, the StreamReader uses UTF-8 encoding.
+                // To change the text encoding, pass the desired encoding as the second parameter.
+                // For example, new StreamReader(cryptoStream, Encoding.Unicode).
                 using (StreamReader decryptReader = new(cryptoStream))
                 {
                     string decryptedMessage = await decryptReader.ReadToEndAsync();

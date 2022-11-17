@@ -7,7 +7,7 @@ class C
 {
     public void Test()
     {
-        IntPtr offset = Marshal.OffsetOf(typeof(ValueType), "field");
+        nint offset = Marshal.OffsetOf(typeof(ValueType), "field");
     }
 }
 

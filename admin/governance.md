@@ -1,8 +1,8 @@
-# Repository governance
+# :octocat: Repository governance
 
 This file contains notes on our tools and processes for working in this repo. It's meant as notes for the maintainers, but may be informative for other contributors as well.
 
-## Workflows installed
+## :gear: Workflows installed
 
 We have the following workflows that run on most PRs:
 
@@ -15,7 +15,7 @@ We have the following workflows that run on most PRs:
 - **Markdownlint / lint**: We like our markdown clean and spiffy. Please keep it that way.
 - **dependabot auto-approve and auto-merge**: We have dependabot installed to open PRs when referenced NuGet packages are updated. If the build is clean for those updates, those PRs are automatically merged by this action.
 
-## Branch protection rules
+## :shield: Branch protection rules
 
 We've also configured a variety of branch protection rules in place on the `main` branch:
 
@@ -29,7 +29,7 @@ We've also configured a variety of branch protection rules in place on the `main
 >
 > If you do need to override the required settings, turn off the "Do not allow bypassing the above settings*. Then, refresh the PR, merge it, and the reapply the "Do not allow bypassing" setting. This is only available to administrators.
 
-## Automation we use
+## :white_check_mark: Automation we use
 
 We have several other workflows installed to automate a variety of tasks:
 
@@ -40,19 +40,19 @@ We have several other workflows installed to automate a variety of tasks:
 - **whats-new**: This action runs once a month to publish our "What's new" article.
 - **repo-man**: This GitHub workflow examines issues and PRs and adds classification labels.
 
-## Labels for automation
+## :label: Labels for automation
 
 - `needs-more-info`: We apply this label when we can't proceed without more information. An action will close this issue if there isn't a response. It will remove the label when a new comment from the OP is added.
 - `rerun-action-*`: These labels trigger *repo-man* to apply classification labels.
-- `reQUEST`, `seQUESTered`: These labels trigger the Quest action to sync issues with our internal Azure DevOps board.
+- `:world_map: reQUEST`, `:pushpin: seQUESTered`: These labels trigger the Quest action to sync issues with our internal Azure DevOps board.
 
-## Labels for reporting
+## :ledger: Labels for reporting
 
 - `*/tech`, `*/prod`: These labels provide 1st and 2nd level organization to our content.
 - `doc-*`, `product-*`: These provide classifications for what kind of issue is it.
 - `okr-*`: These map to our internal OKR system.
 
-## Additional fields in projects
+## :heavy_plus_sign: Additional fields in projects
 
 We're assigning values to the following additional properties using the new GitHub project system.
 

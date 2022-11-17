@@ -42,7 +42,7 @@ We have several other workflows installed to automate a variety of tasks:
 - **whats-new**: This action runs once a month to publish our "What's new" article.
 - **repo-man**: This GitHub workflow examines issues and PRs and adds classification labels.
 
-You can see the full details in our [README.MD](https://github.com/dotnet/docs#octocat-github-action-workflows) file.
+You can see the full details on configured GitHub actions in our [README.MD](https://github.com/dotnet/docs#octocat-github-action-workflows) file.
 
 ## :label: Labels for automation
 

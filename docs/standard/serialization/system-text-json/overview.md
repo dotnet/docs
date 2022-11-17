@@ -3,7 +3,6 @@ title: "Serialize and deserialize JSON using C# - .NET"
 description: This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
 ms.date: 10/18/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

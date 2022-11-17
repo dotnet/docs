@@ -16,11 +16,11 @@ This article describes how to migrate an application that uses .NET Remoting to 
   
 |                          | .NET Remoting                                                                         | WCF                                                                            |
 |--------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| **Server type**          | Subclass MarshalByRefObject                                                           | Mark with [ServiceContract] attribute                                          |
-| **Service operations**   | Public methods on server type                                                         | Mark with [OperationContract] attribute                                        |
-| **Serialization**        | ISerializable or [Serializable]                                                       | DataContractSerializer or XmlSerializer                                        |
+| **Server type**          | Subclass `MarshalByRefObject`                                                           | Mark with `[ServiceContract]` attribute                                          |
+| **Service operations**   | Public methods on server type                                                         | Mark with `[OperationContract]` attribute                                        |
+| **Serialization**        | `ISerializable` or `[Serializable]`                                                   | `DataContractSerializer` or `XmlSerializer`                                        |
 | **Objects passed**       | By-value or by-reference                                                              | By-value only                                                                  |
-| **Errors/exceptions**    | Any serializable exception                                                            | FaultContract\<TDetail>                                                        |
+| **Errors/exceptions**    | Any serializable exception                                                            | `FaultContract<TDetail>`                                                        |
 | **Client proxy objects** | Strongly typed transparent proxies are created automatically from MarshalByRefObjects | Strongly typed proxies are generated on-demand using ChannelFactory\<TChannel> |
 | **Platform required**    | Both client and server must use Microsoft OS and .NET                                 | Cross-platform                                                                 |
 | **Message format**       | Private                                                                               | Industry standards (for example, SOAP and WS-*)                                |

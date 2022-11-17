@@ -180,17 +180,18 @@ public struct MyForeignLibraryValueType
 }
 
 // This is the surrogate which will act as a stand-in for the foreign type.
+// Surrogates should use plain fields instead of properties for better perfomance.
 [GenerateSerializer]
 public struct MyForeignLibraryValueTypeSurrogate
 {
     [Id(0)]
-    public int Num { get; set; }
+    public int Num;
 
     [Id(1)]
-    public string String { get; set; }
+    public string String;
 
     [Id(2)]
-    public DateTimeOffset DateTimeOffset { get; set; }
+    public DateTimeOffset DateTimeOffset;
 }
 
 // This is a converter which converts between the surrogate and the foreign type.
@@ -233,13 +234,13 @@ public class MyForeignLibraryType
 public struct MyForeignLibraryTypeSurrogate
 {
     [Id(0)]
-    public int Num { get; set; }
+    public int Num;
 
     [Id(1)]
-    public string String { get; set; }
+    public string String;
 
     [Id(2)]
-    public DateTimeOffset DateTimeOffset { get; set; }
+    public DateTimeOffset DateTimeOffset;
 }
 
 // Implement the IConverter and IPopulator interfaces on the converter.

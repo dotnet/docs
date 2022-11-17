@@ -226,14 +226,20 @@ When you install with a package manager, these libraries are installed for you. 
 
 - libc6
 - libgcc1
+- libgcc-s1 (for 22.x)
 - libgssapi-krb5-2
 - libicu52 (for 14.x)
 - libicu55 (for 16.x)
 - libicu60 (for 18.x)
 - libicu66 (for 20.x)
+- libicu70 (for 22.04)
+- liblttng-ust1 (for 22.x)
 - libssl1.0.0 (for 14.x, 16.x)
 - libssl1.1 (for 18.x, 20.x)
+- libssl3 (for 22.x)
 - libstdc++6
+- libunwind-13 (for 22.x)
+- libunwind8 (for 22.x)
 - zlib1g
 
 For .NET apps that use the *System.Drawing.Common* assembly, you also need the following dependency:

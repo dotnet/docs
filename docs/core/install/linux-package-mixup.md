@@ -94,18 +94,14 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
     For Ubuntu (or any other distribution that uses apt):
 
-    01. Remove the .NET packages if you previously installed them.
+    01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
     01. Create `/etc/apt/preferences` if it doesn't already exist.
     01. Add the following config to the preferences file, which prevents packages that start with `dotnet` or `aspnetcore` from being sourced by the Microsoft feed:
 
         ```bash
-        Package: dotnet*
+        Package: dotnet* aspnet* netstandard*
         Pin: origin "packages.microsoft.com"
-        Pin-Priority: -1
-
-        Package: aspnetcore*
-        Pin: origin "packages.microsoft.com"
-        Pin-Priority: -1
+        Pin-Priority: -10
         ```
 
     01. Install .NET.
@@ -128,10 +124,21 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
     For Ubuntu (or any other distribution that uses apt) make sure you've installed the Microsoft repository feeds and then install the package.
 
-    ```bash
-    sudo apt remove dotnet* aspnetcore*
-    sudo apt install dotnet-sdk-7.0
-    ```
+    01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
+    01. Create `/etc/apt/preferences` if it doesn't already exist.
+    01. Add the following config to the preferences file, adding the specific package you want to pin as a high priority, which will be sourced by the Microsoft Feed. For example, use the following example to pin .NET SDK 7.0:
+
+        ```bash
+        Package: dotnet-sdk-7.0
+        Pin: origin "packages.microsoft.com"
+        Pin-Priority: 999
+        ```
+
+    01. Install .NET.
+
+        ```bash
+        sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+        ```
 
 04. **I've encountered a bug in the Linux distribution version of .NET, I need the latest Microsoft version.**
 

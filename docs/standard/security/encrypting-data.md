@@ -37,7 +37,7 @@ CryptoStream cryptStream = new CryptoStream(
 
 After this code is executed, any data written to the **CryptoStream** object is encrypted using the AES algorithm.
 
-The following example shows the entire process of creating a stream, encrypting the stream, writing to the stream, and closing the stream. This example creates a file stream that is encrypted using the **CryptoStream** class and the **Aes** class. Generated IV is written to the beginning of xref:System.IO.FileStream>, so it can be read and used for decryption. Then a message is written to the encrypted stream with the <xref:System.IO.StreamWriter> class. While the same key can be used multiple times to encrypt and decrypt data, it is recommended to generate a new random IV each time. This way the encrypted data is always different, even when plain text is the same.
+The following example shows the entire process of creating a stream, encrypting the stream, writing to the stream, and closing the stream. This example creates a file stream that is encrypted using the **CryptoStream** class and the **Aes** class. Generated IV is written to the beginning of <xref:System.IO.FileStream>, so it can be read and used for decryption. Then a message is written to the encrypted stream with the <xref:System.IO.StreamWriter> class. While the same key can be used multiple times to encrypt and decrypt data, it is recommended to generate a new random IV each time. This way the encrypted data is always different, even when plain text is the same.
 
 :::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs":::
 :::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb":::

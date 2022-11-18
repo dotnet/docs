@@ -98,6 +98,8 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
                     .AddScoped<IMessageWriter, LoggingMessageWriter>());
 ```
 
+The method `CreateHostBuilder` uses types `IHostBuilder` and `Host`. In order to use them, packages `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Hosting` must be referenced respectively.
+
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
 It's not unusual to use dependency injection in a chained fashion. Each requested dependency in turn requests its own dependencies. The container resolves the dependencies in the graph and returns the fully resolved service. The collective set of dependencies that must be resolved is typically referred to as a *dependency tree*, *dependency graph*, or *object graph*.

@@ -5,43 +5,40 @@ using Shared;
 
 namespace NamedHttp.Example;
 
-public sealed class JokeService
+public sealed class TodoService
 {
     private readonly IHttpClientFactory _httpClientFactory = null!;
     private readonly IConfiguration _configuration = null!;
-    private readonly ILogger<JokeService> _logger = null!;
+    private readonly ILogger<TodoService> _logger = null!;
 
-    public JokeService(
+    public TodoService(
         IHttpClientFactory httpClientFactory,
         IConfiguration configuration,
-        ILogger<JokeService> logger) =>
+        ILogger<TodoService> logger) =>
         (_httpClientFactory, _configuration, _logger) =
             (httpClientFactory, configuration, logger);
 
-    public async Task<string> GetRandomJokeAsync()
+    public async Task<Todo[]> GetUserTodosAsync(int userId)
     {
         // Create the client
-        string? httpClientName = _configuration["JokeHttpClientName"];
-        HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
+        string? httpClientName = _configuration["TodoHttpClientName"];
+        using HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
 
         try
         {
             // Make HTTP GET request
-            // Parse JSON response deserialize into ChuckNorrisJoke type
-            ChuckNorrisJoke? result = await client.GetFromJsonAsync<ChuckNorrisJoke>(
-                "jokes/random?limitTo=[nerdy]",
+            // Parse JSON response deserialize into Todo type
+            Todo[]? todos = await client.GetFromJsonAsync<Todo[]>(
+                $"todos?userId={userId}",
                 DefaultJsonSerialization.Options);
 
-            if (result?.Value?.Joke is not null)
-            {
-                return result.Value.Joke;
-            }
+            return todos ?? Array.Empty<Todo>();
         }
         catch (Exception ex)
         {
             _logger.LogError("Error getting something fun to say: {Error}", ex);
         }
 
-        return "Oops, something has gone wrong - that's not funny at all!";
+        return Array.Empty<Todo>();
     }
 }

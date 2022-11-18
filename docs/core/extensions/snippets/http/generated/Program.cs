@@ -8,11 +8,11 @@ using Shared;
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddRefitClient<IJokeService>()
+        services.AddRefitClient<ITodoService>()
             .ConfigureHttpClient(client =>
             {
                 // Set the base address of the named client.
-                client.BaseAddress = new Uri("https://api.icndb.com/");
+                client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
 
                 // Add a user-agent default request header.
                 client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
@@ -20,14 +20,20 @@ using IHost host = Host.CreateDefaultBuilder(args)
     })
     .Build();
 
-IJokeService jokeService =
-    host.Services.GetRequiredService<IJokeService>();
+ITodoService todoService =
+    host.Services.GetRequiredService<ITodoService>();
 
-ChuckNorrisJoke joke = await jokeService.GetRandomJokeAsync();
+Todo[] todos = await todoService.GetUserTodosAsync(2);
 
 ILogger logger =
-    host.Services.GetRequiredService<ILogger<IJokeService>>();
+    host.Services.GetRequiredService<ILogger<ITodoService>>();
 
-logger.LogInformation("Joke: {Text}", joke?.Value?.Joke);
+foreach (Todo? todo in todos)
+{
+    logger.LogInformation("Todo: {Details}", $"""
+        Id: {todo?.Id} (Is completed: {todo?.Completed})
+        Title: {todo?.Title}
+        """);
+}
 
 await host.RunAsync();

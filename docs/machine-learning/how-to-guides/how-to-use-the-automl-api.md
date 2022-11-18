@@ -170,7 +170,7 @@ Once the time to train expires, the result is a <xref:Microsoft.ML.AutoML.TrialR
 At this point, you can save your model or use it for making predictions. For more information on how use an ML.NET model, see the following guides:
 
 - [Save and load trained models](save-load-machine-learning-models-ml-net.md)
-- [Make predictions with a trained model](machine-learning-model-predictions-ml-net)
+- [Make predictions with a trained model](machine-learning-model-predictions-ml-net.md)
 
 ## Modify column inference results
 

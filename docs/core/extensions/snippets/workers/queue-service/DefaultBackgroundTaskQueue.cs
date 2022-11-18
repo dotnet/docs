@@ -2,7 +2,7 @@
 
 namespace App.QueueService;
 
-public class DefaultBackgroundTaskQueue : IBackgroundTaskQueue
+public sealed class DefaultBackgroundTaskQueue : IBackgroundTaskQueue
 {
     private readonly Channel<Func<CancellationToken, ValueTask>> _queue;
 

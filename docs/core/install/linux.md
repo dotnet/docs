@@ -3,7 +3,7 @@ title: Install .NET on Linux distributions
 description: Learn about how to install .NET on Linux. .NET is not only available at package.microsoft.com, but also the official package archives for various Linux distributions.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 11/08/2022
 ---
 
 # Install .NET on Linux
@@ -16,6 +16,8 @@ ms.date: 08/07/2022
 
 This article details how to install .NET on various Linux distributions, manually and via a package manager. Typically, stable .NET versions are available in a package manager, and Preview versions are not.
 
+The latest version of .NET is 7.
+
 ## Manual installation
 
 You can install .NET manually in the following ways:
@@ -24,7 +26,7 @@ You can install .NET manually in the following ways:
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 - [Manual binary extraction](linux-scripted-manual.md#manual-install)
 
-You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/6.0/linux-packages.md) if you install .NET manually.
+You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/7.0/linux-packages.md) if you install .NET manually.
 
 ## Official package archives
 

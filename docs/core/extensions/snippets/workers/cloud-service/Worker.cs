@@ -1,6 +1,6 @@
 ﻿namespace App.CloudService;
 
-public class Worker : BackgroundService
+public sealed class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
 

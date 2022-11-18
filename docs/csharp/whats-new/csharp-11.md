@@ -73,6 +73,7 @@ public string Method() => default;
 ```
 
 You must supply all type parameters when you apply the attribute. In other words, the generic type must be [fully constructed](~/_csharpstandard/standard/types.md#84-constructed-types).
+In the example above, the empty parentheses (`(` and `)`) can be ommitted as the attribute does not have any arguments.
 
 ```csharp
 public class GenericType<T>
@@ -135,7 +136,7 @@ The C# standard on [Method group conversions](~/_csharpstandard/standard/convers
 
 > - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
 
-Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It's first available in .NET 7 preview 2.
+Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature was first available in Visual Studio 2022 version 17.2 as a preview feature, and in .NET 7 Preview 2.
 
 ## Raw string literals
 
@@ -197,3 +198,7 @@ You can add the [`scoped`](../language-reference/statements/declarations.md#scop
 ## File scoped types
 
 Beginning in C# 11, you can use the `file` access modifier to create a type whose visibility is scoped to the source file in which it is declared. This feature helps source generator authors avoid naming collisions. You can learn more about this feature in the article on [file-scoped types](../language-reference/keywords/file.md) in the language reference.
+
+## See also
+
+- [What's new in .NET 7](../../core/whats-new/dotnet-7.md)

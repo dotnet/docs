@@ -17,7 +17,7 @@ Attempting to parse a distinguished name with a component prefixed with "OID." b
 
 ## Version introduced
 
-.NET 7 Preview 5
+.NET 7
 
 ## Type of breaking change
 

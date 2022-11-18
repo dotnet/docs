@@ -3,7 +3,7 @@ title: Check installed .NET versions on Windows, Linux, and macOS
 description: Learn how to list which versions of .NET are installed on your computer. This includes the .NET runtime and SDK.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/03/2021
+ms.date: 11/08/2022
 ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -29,14 +29,10 @@ You get output similar to the following.
 ::: zone pivot="os-windows"
 
 ```console
-2.1.500 [C:\program files\dotnet\sdk]
-2.1.502 [C:\program files\dotnet\sdk]
-2.1.504 [C:\program files\dotnet\sdk]
-2.1.600 [C:\program files\dotnet\sdk]
-2.1.602 [C:\program files\dotnet\sdk]
-3.1.100 [C:\program files\dotnet\sdk]
+3.1.424 [C:\program files\dotnet\sdk]
 5.0.100 [C:\program files\dotnet\sdk]
-6.0.100 [C:\program files\dotnet\sdk]
+6.0.402 [C:\program files\dotnet\sdk]
+7.0.100 [C:\program files\dotnet\sdk]
 ```
 
 ::: zone-end
@@ -44,14 +40,10 @@ You get output similar to the following.
 ::: zone pivot="os-linux"
 
 ```bash
-2.1.500 [/home/user/dotnet/sdk]
-2.1.502 [/home/user/dotnet/sdk]
-2.1.504 [/home/user/dotnet/sdk]
-2.1.600 [/home/user/dotnet/sdk]
-2.1.602 [/home/user/dotnet/sdk]
-3.1.100 [/home/user/dotnet/sdk]
+3.1.424 [/home/user/dotnet/sdk]
 5.0.100 [/home/user/dotnet/sdk]
-6.0.100 [/home/user/dotnet/sdk]
+6.0.402 [/home/user/dotnet/sdk]
+7.0.100 [/home/user/dotnet/sdk]
 ```
 
 ::: zone-end
@@ -59,14 +51,10 @@ You get output similar to the following.
 ::: zone pivot="os-macos"
 
 ```bash
-2.1.500 [/usr/local/share/dotnet/sdk]
-2.1.502 [/usr/local/share/dotnet/sdk]
-2.1.504 [/usr/local/share/dotnet/sdk]
-2.1.600 [/usr/local/share/dotnet/sdk]
-2.1.602 [/usr/local/share/dotnet/sdk]
-3.1.100 [/usr/local/share/dotnet/sdk]
+3.1.424 [/usr/local/share/dotnet/sdk]
 5.0.100 [/usr/local/share/dotnet/sdk]
-6.0.100 [/usr/local/share/dotnet/sdk]
+6.0.402 [/usr/local/share/dotnet/sdk]
+7.0.100 [/usr/local/share/dotnet/sdk]
 ```
 
 ::: zone-end
@@ -84,22 +72,16 @@ You get output similar to the following.
 ::: zone pivot="os-windows"
 
 ```console
-Microsoft.AspNetCore.All 2.1.7 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.13 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.App 2.1.7 [c:\program files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.13 [c:\program files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 3.1.0 [c:\program files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 5.0.0 [c:\program files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 6.0.0 [c:\program files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 2.1.7 [c:\program files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.13 [c:\program files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 3.1.0 [c:\program files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 5.0.0 [c:\program files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 6.0.0 [c:\program files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.WindowsDesktop.App 3.0.0 [c:\program files\dotnet\shared\Microsoft.WindowsDesktop.App]
-Microsoft.WindowsDesktop.App 3.1.0 [c:\program files\dotnet\shared\Microsoft.WindowsDesktop.App]
-Microsoft.WindowsDesktop.App 5.0.0 [c:\program files\dotnet\shared\Microsoft.WindowsDesktop.App]
-Microsoft.WindowsDesktop.App 6.0.0 [c:\program files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.AspNetCore.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 ```
 
 ::: zone-end
@@ -119,6 +101,7 @@ Microsoft.NETCore.App 2.1.13 [/home/user/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 3.1.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 5.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 6.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
 ```
 
 ::: zone-end
@@ -138,6 +121,7 @@ Microsoft.NETCore.App 2.1.13 [/usr/local/share/dotnet/shared/Microsoft.NETCore.A
 Microsoft.NETCore.App 3.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 5.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 6.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
 ::: zone-end

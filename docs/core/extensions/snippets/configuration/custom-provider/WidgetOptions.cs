@@ -2,9 +2,9 @@
 
 public class WidgetOptions
 {
-    public Guid EndpointId { get; set; }
+    public required Guid EndpointId { get; set; }
 
-    public string DisplayLabel { get; set; } = null!;
+    public required string DisplayLabel { get; set; } = null!;
 
-    public string WidgetRoute { get; set; } = null!;
+    public required string WidgetRoute { get; set; } = null!;
 }

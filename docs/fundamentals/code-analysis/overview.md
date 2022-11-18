@@ -2,7 +2,7 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 11/08/2021
+ms.date: 11/08/2022
 ms.topic: overview
 ms.custom: updateeachrelease
 helpviewer_keywords:
@@ -29,13 +29,15 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ### Enabled rules
 
-The following rules are enabled, by default, in .NET 6.
+The following rules are enabled, by default, in .NET 7.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
-| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | Platform compatibility analyzer |
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | Validate platform compatibility |
 | [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
 | [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | Use valid platform string |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | Validate platform compatibility |
 | [CA1831](quality-rules/ca1831.md) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
 | [CA2013](quality-rules/ca2013.md) | Reliability | Warning | Do not use `ReferenceEquals` with value types |
 | [CA2014](quality-rules/ca2014.md) | Reliability | Warning | Do not use `stackalloc` in loops |
@@ -49,6 +51,8 @@ The following rules are enabled, by default, in .NET 6.
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+| [CA2259](quality-rules/ca2259.md) | Usage | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Use correct type parameter |
 
 You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
 

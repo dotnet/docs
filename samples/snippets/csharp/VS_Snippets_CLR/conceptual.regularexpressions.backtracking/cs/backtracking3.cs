@@ -23,4 +23,6 @@ public class Example
       }
    }
 }
+//    Matched aaaaaa in 00:00:00.0007086
+//    No match found in 00:00:00.0000829
 // </Snippet3>

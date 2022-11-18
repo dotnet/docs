@@ -2,7 +2,7 @@
 title: Obsolete features in .NET 5+
 titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 01/13/2022
+ms.date: 11/07/2022
 ---
 
 # Obsolete features in .NET 5+
@@ -64,7 +64,9 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0041](syslib0041.md) | Warning | The default hash algorithm and iteration counts in <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructors are outdated and insecure. Use a constructor that accepts the hash algorithm and the number of iterations. |
 | [SYSLIB0042](syslib0042.md) | Warning | `ToXmlString` and `FromXmlString` have no implementation for elliptic curve cryptography (ECC) types, and are obsolete. Use a standard import and export format such as `ExportSubjectPublicKeyInfo` or `ImportSubjectPublicKeyInfo` for public keys, and `ExportPkcs8PrivateKey` or `ImportPkcs8PrivateKey` for private keys. |
 | [SYSLIB0043](syslib0043.md) | Warning | <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> and the associated constructor do not have a consistent and interoperable implementation on all platforms. Use <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ExportSubjectPublicKeyInfo?displayProperty=nameWithType> instead. |
+| [SYSLIB0044](syslib0044.md) | Warning | <xref:System.Reflection.AssemblyName.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.AssemblyName.EscapedCodeBase?displayProperty=nameWithType> are obsolete. Using them for loading an assembly is not supported. |
 | [SYSLIB0045](syslib0045.md) | Warning | Cryptographic factory methods accepting an algorithm name are obsolete. Use the parameterless `Create` factory method on the algorithm type instead. |
+| [SYSLIB0046](syslib0046.md) | Warning | The <xref:System.Runtime.ControlledExecution.Run(System.Action,System.Threading.CancellationToken)?displayProperty=nameWithType> method might corrupt the process and should not be used in production code. |
 | [SYSLIB0047](syslib0047.md) | Warning | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead when attempting to forbid XML external entity resolution. |
 
 ## Suppress warnings

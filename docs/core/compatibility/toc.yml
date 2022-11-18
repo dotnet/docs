@@ -33,8 +33,6 @@ items:
           href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
-        - name: Endpoint metadata provider interface changes
-          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: Fallback file endpoints
@@ -57,6 +55,8 @@ items:
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
         items:
+        - name: API obsoletions with default diagnostic ID
+          href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
@@ -79,12 +79,18 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
         - name: Time fields on symbolic links
           href: core-libraries/7.0/symbolic-link-timestamps.md
         - name: Tracking linked cache entries
           href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Configuration
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
       - name: Cryptography
         items:
         - name: Dynamic X509ChainPolicy verification time
@@ -111,16 +117,28 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: Interop
         items:
         - name: RuntimeInformation.OSArchitecture under emulation
           href: interop/7.0/osarchitecture-emulation.md
+      - name: .NET MAUI
+        items:
+        - name: Constructors accept base interface instead of concrete type
+          href: maui/7.0/mauiwebviewnavigationdelegate-constructor.md
+        - name: Flow direction helper methods removed
+          href: maui/7.0/flow-direction-apis-removed.md
+        - name: New UpdateBackground parameter
+          href: maui/7.0/updatebackground-parameter.md
+        - name: ScrollToRequest property renamed
+          href: maui/7.0/scrolltorequest-property-rename.md
+        - name: Some Windows APIs are removed
+          href: maui/7.0/iwindowstatemanager-apis-removed.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
-        - name: ClientWebSocket.ConnectAsync throws new exception
-          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
@@ -659,8 +677,6 @@ items:
           href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
-        - name: Endpoint metadata provider interface changes
-          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: Fallback file endpoints
@@ -829,6 +845,12 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Configuration
+      items:
+      - name: .NET 7
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
     - name: Containers
       items:
       - name: .NET 6
@@ -841,6 +863,8 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: API obsoletions with default diagnostic ID
+          href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
@@ -863,6 +887,8 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
         - name: Time fields on symbolic links
           href: core-libraries/7.0/symbolic-link-timestamps.md
         - name: Tracking linked cache entries
@@ -1041,6 +1067,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider
@@ -1097,14 +1125,26 @@ items:
         items:
         - name: Call argument coercion
           href: jit/6.0/coerce-call-arguments-ecma-335.md
+    - name: .NET MAUI
+      items:
+      - name: .NET 7
+        items:
+        - name: Constructors accept base interface instead of concrete type
+          href: maui/7.0/mauiwebviewnavigationdelegate-constructor.md
+        - name: Flow direction helper methods removed
+          href: maui/7.0/flow-direction-apis-removed.md
+        - name: New UpdateBackground parameter
+          href: maui/7.0/updatebackground-parameter.md
+        - name: ScrollToRequest property renamed
+          href: maui/7.0/scrolltorequest-property-rename.md
+        - name: Some Windows APIs are removed
+          href: maui/7.0/iwindowstatemanager-apis-removed.md
     - name: Networking
       items:
       - name: .NET 7
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
-        - name: ClientWebSocket.ConnectAsync throws new exception
-          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException

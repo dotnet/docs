@@ -7,7 +7,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         builder.AddJsonConsole(options =>
         {
             options.IncludeScopes = false;
-            options.TimestampFormat = "hh:mm:ss ";
+            options.TimestampFormat = "HH:mm:ss ";
             options.JsonWriterOptions = new JsonWriterOptions
             {
                 Indented = true

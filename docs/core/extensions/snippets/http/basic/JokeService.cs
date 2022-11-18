@@ -4,7 +4,7 @@ using Shared;
 
 namespace BasicHttp.Example;
 
-public class JokeService
+public sealed class JokeService
 {
     private readonly IHttpClientFactory _httpClientFactory = null!;
     private readonly ILogger<JokeService> _logger = null!;
@@ -17,7 +17,7 @@ public class JokeService
     public async Task<string> GetRandomJokeAsync()
     {
         // Create the client
-        HttpClient client = _httpClientFactory.CreateClient();
+        using HttpClient client = _httpClientFactory.CreateClient();
 
         try
         {

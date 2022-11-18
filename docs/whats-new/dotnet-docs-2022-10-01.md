@@ -15,27 +15,18 @@ Welcome to what's new in the .NET docs for October 2022. This article lists some
 - [Authentication in WebAssembly apps](../core/compatibility/aspnet-core/7.0/wasm-app-authentication.md)
 - [Tracking linked cache entries](../core/compatibility/core-libraries/7.0/memorycache-tracking.md)
 - [Fallback file endpoints](../core/compatibility/aspnet-core/7.0/fallback-file-endpoints.md)
-- [Endpoint metadata provider interface changes](../core/compatibility/aspnet-core/7.0/iendpointmetadataprovider-changes.md)
 - [Output caching API changes](../core/compatibility/aspnet-core/7.0/output-caching-renames.md)
 - [Repeated XML elements include index](../core/compatibility/extensions/6.0/repeated-xml-elements.md)
-- [ClientWebSocket.ConnectAsync throws new exception](../core/compatibility/networking/7.0/connectasync-argumentexception.md)
 
 ## .NET fundamentals
 
 ### New articles
 
 - [dotnet workload command](../core/tools/dotnet-workload.md)
-- [Authentication in WebAssembly apps](../core/compatibility/aspnet-core/7.0/wasm-app-authentication.md)
 - [Containerize a .NET app with dotnet publish](../core/docker/publish-as-container.md)
 - [Networking telemetry in .NET](../fundamentals/networking/networking-telemetry.md)
-- [Tracking linked cache entries](../core/compatibility/core-libraries/7.0/memorycache-tracking.md)
-- [Fallback file endpoints](../core/compatibility/aspnet-core/7.0/fallback-file-endpoints.md)
-- [Endpoint metadata provider interface changes](../core/compatibility/aspnet-core/7.0/iendpointmetadataprovider-changes.md)
-- [Output caching API changes](../core/compatibility/aspnet-core/7.0/output-caching-renames.md)
 - [CA2020: Prevent behavioral change caused by built-in operators of IntPtr/UIntPtr](../fundamentals/code-analysis/quality-rules/ca2020.md)
 - [CA2260: Implement generic math interfaces correctly](../fundamentals/code-analysis/quality-rules/ca2260.md)
-- [Repeated XML elements include index](../core/compatibility/extensions/6.0/repeated-xml-elements.md)
-- [ClientWebSocket.ConnectAsync throws new exception](../core/compatibility/networking/7.0/connectasync-argumentexception.md)
 - [.NET regular expression source generators](../standard/base-types/regular-expression-source-generators.md)
 - [Tutorial: Use custom marshallers in source-generated P/Invokes](../standard/native-interop/tutorial-custom-marshaller.md)
 

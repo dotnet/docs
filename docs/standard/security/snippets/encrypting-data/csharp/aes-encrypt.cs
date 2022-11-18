@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 
 try
 {
@@ -23,6 +21,9 @@ try
                 aes.CreateEncryptor(),
                 CryptoStreamMode.Write))
             {
+                // By default, the StreamWriter uses UTF-8 encoding.
+                // To change the text encoding, pass the desired encoding as the second parameter.
+                // For example, new StreamWriter(cryptoStream, Encoding.Unicode).
                 using (StreamWriter encryptWriter = new(cryptoStream))
                 {
                     encryptWriter.WriteLine("Hello World!");

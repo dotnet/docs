@@ -20,7 +20,7 @@ With modern application development principles driving best practices, the <xref
 
 ## The `IHttpClientFactory` type
 
-All of the sample source code in this article relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) free API is used to make HTTP `GET` requests for user todo objects.
+All of the sample source code in this article relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, HTTP `GET` requests are made to the free [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) API to get user `Todo` objects.
 
 When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
 
@@ -110,7 +110,7 @@ In the preceding code:
 - The configuration is set when the typed client is added to the service collection.
 - The `HttpClient` is assigned as a class-scoped variable (field), and used with exposed APIs.
 
-API-specific methods can be created that expose `HttpClient` functionality. For example, the `GetUserTodosAsync` method encapsulates code to retrieve user specific todo objects.
+API-specific methods can be created that expose `HttpClient` functionality. For example, the `GetUserTodosAsync` method encapsulates code to retrieve user-specific `Todo` objects.
 
 The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `ConfigureServices` to register a typed client class:
 

@@ -90,7 +90,10 @@ rm packages-microsoft-prod.deb
 > [!WARNING]
 > If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699).
 
-.NET 7 and .NET 6 are included in the Ubuntu 22.04 package manager feeds.
+.NET 6 is included in the Ubuntu 22.04 package manager feeds.
+
+> [!IMPORTANT]
+> .NET 7 isn't included in the Ubuntu feeds and you must use the [22.04 Microsoft package feed](#2204-microsoft-package-feed).
 
 ### Install the SDK
 

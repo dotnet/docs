@@ -233,12 +233,12 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu60 (for 18.x)
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
+- libicu71 (for 22.10)
 - liblttng-ust1 (for 22.x)
 - libssl1.0.0 (for 14.x, 16.x)
 - libssl1.1 (for 18.x, 20.x)
 - libssl3 (for 22.x)
 - libstdc++6
-- libunwind-13 (for 22.x)
 - libunwind8 (for 22.x)
 - zlib1g
 

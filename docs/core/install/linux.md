@@ -38,7 +38,7 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 - [Snap](linux-snap.md)
 - [Ubuntu](linux-ubuntu.md)
 
-.NET is [supported by Microsoft](https://github.com/dotnet/core/blob/main/microsoft-support.md) when downloaded from a Microsoft source. Best effort support is offered from Microsoft when downloaded from elsewhere. You can  open issues at [dotnet/core](https://github.com/dotnet/core) if you run into problems.
+.NET is [supported by Microsoft](https://github.com/dotnet/core/blob/main/microsoft-support.md) when downloaded from a Microsoft source. Best effort support is offered from Microsoft when downloaded from elsewhere. You can open issues at [dotnet/core](https://github.com/dotnet/core) if you run into problems.
 
 ## Next steps
 

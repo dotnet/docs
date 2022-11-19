@@ -121,8 +121,8 @@ The `classifications` item represents the **tags** column you see when you run `
 
 Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. In your terminal, navigate to the  _extensions_ folder and run the following command to install the template located at the current folder:
 
-* **On Windows**: `dotnet new install .\`
-* **On Linux or macOS**: `dotnet new install ./`
+* **On Windows**: `dotnet new --install .\`
+* **On Linux or macOS**: `dotnet --new install ./`
 
 This command outputs the list of templates installed, which should include yours.
 
@@ -204,8 +204,8 @@ Congratulations! You created and deployed an item template with .NET. In prepara
 
 In your terminal, navigate to the  _extensions_ folder and run the following command to uninstall the templates located at the current folder:
 
-* **On Windows**: `dotnet new uninstall .\`
-* **On Linux or macOS**: `dotnet new uninstall ./`
+* **On Windows**: `dotnet new --uninstall .\`
+* **On Linux or macOS**: `dotnet new --uninstall ./`
 
 This command outputs a list of the templates that were uninstalled, which should include yours.
 

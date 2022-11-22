@@ -20,7 +20,7 @@ topic_type:
 ---
 # ICLRDebuggingLibraryProvider3 Interface
 
-Includes callback methods that allow common language runtime version-specific debugging libraries to be located and loaded on demand for .NET Core regular and single-file applications. This interface is required by the [RegisterForRuntimeStartup3](registerforruntimestartup3-function.md) and [CreateDebuggingInterfaceFromVersion3](createdebugginginterfacefromversion3-function.md) methods. It is supported by the ICLRDebugging::OpenVirtualProcess method aquired with dbgshim's [CLRCreateInstance](clrcreateinstance-function.md) API.
+Includes callback methods that allow common language runtime version-specific debugging libraries to be located and loaded on demand for .NET Core regular and single-file applications. This interface is required by the [RegisterForRuntimeStartup3](registerforruntimestartup3-function.md) and [CreateDebuggingInterfaceFromVersion3](createdebugginginterfacefromversion3-function.md) methods. It is supported by the ICLRDebugging::OpenVirtualProcess method acquired with dbgshim's [CLRCreateInstance](clrcreateinstance-function.md) API.
   
 ## Methods  
   

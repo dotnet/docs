@@ -26,31 +26,53 @@ ms.assetid: 9ef65560-f596-4469-bcce-f4d5407b55cd
 Default NTLM authentication and Kerberos authentication use the Microsoft Windows user credentials associated with the calling application to attempt authentication with the server. When using non-default NTLM authentication, the application sets the authentication type to NTLM and uses a <xref:System.Net.NetworkCredential> object to pass the user name, password, and domain to the host, as shown in the following example.  
   
 ```vb  
-Dim MyURI As String = "http://www.contoso.com/"  
-Dim WReq As WebRequest = WebRequest.Create(MyURI)  
-WReq.Credentials = _  
-    New NetworkCredential(UserName, SecurelyStoredPassword, Domain)  
+Dim myUri As String = "http://www.contoso.com/"  
+Using handler As New HttpClientHandler()
+    With handler
+        .Credentials = New NetworkCredential(UserName, SecurelyStoredPassword, Domain)
+    End With
+    Using client As New HttpClient(handler)
+        Dim result As String = Await client.GetStringAsync(myUri)
+        ' Do Other Stuff...
+    End Using
+End Using
 ```  
   
 ```csharp  
-String MyURI = "http://www.contoso.com/";  
-WebRequest WReq = WebRequest.Create (MyURI);  
-WReq.Credentials =
-    new NetworkCredential(UserName, SecurelyStoredPassword, Domain);  
+string myUri = "http://www.contoso.com/";
+using HttpClientHandler handler = new()
+{
+    Credentials = new NetworkCredential(UserName, SecurelyStoredPassword, Domain),
+};
+using HttpClient client = new(handler);
+string result = await client.GetStringAsync(myUri);
+// Do Other Stuff...
 ```  
   
  Applications that need to connect to Internet services using the credentials of the application user can do so with the user's default credentials, as shown in the following example.  
   
 ```vb  
-Dim MyURI As String = "http://www.contoso.com/"  
-Dim WReq As WebRequest = WebRequest.Create(MyURI)  
-WReq.Credentials = CredentialCache.DefaultCredentials  
+Dim myUri As String = "http://www.contoso.com/"  
+Using handler As New HttpClientHandler()
+    With handler
+        .Credentials = CredentialCache.DefaultCredentials
+    End With
+    Using client As New HttpClient(handler)
+        Dim result As String = Await client.GetStringAsync(myUri)
+        ' Do Other Stuff...
+    End Using
+End Using 
 ```  
   
 ```csharp  
-String MyURI = "http://www.contoso.com/";  
-WebRequest WReq = WebRequest.Create (MyURI);  
-WReq.Credentials = CredentialCache.DefaultCredentials;  
+string myUri = "http://www.contoso.com/";
+using HttpClientHandler handler = new()
+{
+    Credentials = CredentialCache.DefaultCredentials,
+};
+using HttpClient client = new(handler);
+string result = await client.GetStringAsync(myUri);
+// Do Other Stuff...
 ```  
   
  The negotiate authentication module determines whether the remote server is using NTLM or Kerberos authentication, and sends the appropriate response.  

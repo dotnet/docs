@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 07/21/2022
+ms.date: 11/11/2022
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
@@ -101,7 +101,7 @@ using var listener = new AzureEventSourceListener((e, message) =>
 
 ## Map to ASP.NET Core logging
 
-When the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> or the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClientsCore%2A> extension method is called, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service is registered. The `AzureEventSourceLogForwarder` service enables you to use the standard ASP.NET Core logging configuration for logging.
+The <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> service enables you to use the standard ASP.NET Core logging configuration for logging. The service forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory>.
 
 The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`.
 
@@ -116,82 +116,74 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 ### Logging with client registration
 
-Consider the following `AddAzureClients` call in the *Program.cs* file of an ASP.NET Core project. The `AddAzureClients` method registers the Azure Service Bus client and sets the default token credential to be used for all clients.
+Using the Azure Service Bus library as an example, complete the following steps:
 
-```csharp
-using Azure.Identity;
-using Microsoft.Extensions.Azure;
+1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) NuGet package:
 
-// code omitted for brevity
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
 
-builder.Services.AddAzureClients(azureBuilder =>
-{
-    azureBuilder.AddServiceBusClient(
-        builder.Configuration.GetConnectionString("ServiceBus"));
-    azureBuilder.UseCredential(new DefaultAzureCredential());
-});
-```
+1. In *Program.cs*, register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method:
 
-In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Service Bus client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+    ```csharp
+    using Azure.Identity;
+    using Microsoft.Extensions.Azure;
+    
+    // code omitted for brevity
+    
+    builder.Services.AddAzureClients(azureBuilder =>
+    {
+        azureBuilder.AddServiceBusClient(
+            builder.Configuration.GetConnectionString("ServiceBus"));
+        azureBuilder.UseCredential(new DefaultAzureCredential());
+    });
+    ```
 
-```json
-{
-  "ConnectionStrings": {
-    "ServiceBus": "<connection_string>"
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning",
-      "Azure.Messaging.ServiceBus": "Debug"
-    }
-  },
-  "AllowedHosts": "*"
-}
-```
+    In the preceding sample, the `AddAzureClients` method:
 
-Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
+    - Registers the following objects with the dependency injection (DI) container:
+      - Log forwarder service
+      - Azure Service Bus client
+    - Sets the default token credential to be used for all registered clients.
+
+1. In *appsettings.json*, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+
+    :::code language="json" source="snippets/logging/appsettings.Development.json" highlight="9":::
+
+    Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
 
 ### Logging without client registration
 
-While this approach is far less common, your app may not need to explicitly register clients for Azure SDK libraries. In that scenario, a call to `AddAzureClientsCore` will suffice. Take this approach when your app uses ASP.NET extension libraries that depend on other Azure SDK libraries. Common examples of such ASP.NET extension libraries include:
+There are scenarios in which [registering an Azure SDK library's client with the DI container](dependency-injection.md#register-client) is either impossible or unnecessary:
 
-- [Azure Key Vault key encryptor for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme)
-- [Azure Key Vault secrets configuration provider](/dotnet/api/overview/azure/Extensions.AspNetCore.Configuration.Secrets-readme)
-- [Azure Blob Storage key store for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme)
+- The Azure SDK library doesn't include an `IServiceCollection` extension method to register a client in the DI container.
+- Your app uses Azure extension libraries that depend on other Azure SDK libraries. Examples of such Azure extension libraries include:
+  - [Azure Key Vault key encryptor for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme)
+  - [Azure Key Vault secrets configuration provider](/dotnet/api/overview/azure/Extensions.AspNetCore.Configuration.Secrets-readme)
+  - [Azure Blob Storage key store for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme)
 
-Consider the following *Program.cs* example, which uses the two aforementioned [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction) extension libraries:
+In these scenarios, complete the following steps:
 
-```csharp
-using Azure.Identity;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.Extensions.Azure;
+1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) NuGet package:
 
-// code omitted for brevity
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
 
-builder.services.AddAzureClientsCore();
+1. In *Program.cs*, register the log forwarder service as a singleton in the DI container:
 
-builder.services.AddDataProtection()
-    .PersistKeysToAzureBlobStorage(storageConnString, blobContainerName, "keys.xml")
-    .ProtectKeysWithAzureKeyVault(new Uri(uri), new DefaultAzureCredential());
-```
+    :::code language="csharp" source="snippets/logging/Program.cs" id="RegisterServiceWithDI" highlight="8":::
 
-In the ASP.NET Core project's *appsettings.json* file, the default log level for the Azure Core client library can be changed. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+1. Fetch the log forwarder service from the DI container and invoke its <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder.Start%2A> method. For example, using constructor injection in an ASP.NET Core Razor Pages page model class:
 
-```json
-{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning",
-      "Azure.Core": "Debug"
-    }
-  },
-  "AllowedHosts": "*"
-}
-```
+    :::code language="csharp" source="snippets/logging/Pages/Index.cshtml.cs" id="FetchServiceAndStart" highlight="6-7":::
 
-Since the `Logging:LogLevel:Azure.Core` key is set to `Debug`, Azure Core library events up to `EventLevel.Verbose` will be logged.
+1. In *appsettings.json*, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
+
+    :::code language="json" source="snippets/logging/appsettings.json" highlight="6":::
+
+    Since the `Logging:LogLevel:Azure.Core` key is set to `Debug`, Azure Core library events up to `EventLevel.Verbose` will be logged.
 
 For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 

@@ -36,6 +36,9 @@ The [`PerfCollect`](./trace-perfcollect-lttng.md) script is useful for collectin
   - `DOTNET_PerfMapEnabled=1`
   - `DOTNET_EnableEventLog=1`
 
+> [!NOTE]
+> When executing the app with .NET 7, you must also set `DOTNET_EnableWriteXorExecute=0` in addition to the preceding environment variables.
+
   [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 ### Using `PerfCollect` in a sidecar container
@@ -44,17 +47,4 @@ If you would like to run `PerfCollect` in one container to profile a .NET Core p
 
 - The environment variables mentioned previously (`DOTNET_PerfMapEnabled` and `DOTNET_EnableEventLog`) must be set for the target container (not the one running `PerfCollect`).
 - The container running `PerfCollect` must have the `SYS_ADMIN` capability (not the target container).
-- The two containers must [share a process namespace](https://docs.docker.com/engine/reference/run/#pid-settings---pid).
-
-## Using `createdump` in a container
-
-**This tool applies to: ✔️** .NET Core 2.1 and later versions
-
-An alternative to `dotnet-dump`, [`createdump`](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md) can be used for creating core dumps on Linux containing both native and managed information. The `createdump` tool is installed with the .NET Core runtime and can be found next to libcoreclr.so (typically in "/usr/share/dotnet/shared/Microsoft.NETCore.App/[version]"). The tool works the same in a container as it does in non-containerized Linux environments with the single exception that the tool requires the [`SYS_PTRACE` capability](https://man7.org/linux/man-pages/man7/capabilities.7.html), so the Docker container must be [started with that capability](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
-
-### Using `createdump` in a sidecar container
-
-If you would like to use `createdump` to create a dump from a process in a different container, the experience is almost the same except for these differences:
-
-- The container running `createdump` must have the `SYS_PTRACE` capability (not the target container).
 - The two containers must [share a process namespace](https://docs.docker.com/engine/reference/run/#pid-settings---pid).

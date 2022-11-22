@@ -53,7 +53,7 @@ Now, imagine that there is a consuming project and it's represented in the _Cons
 
 :::code language="csharp" source="snippets/type-forwarders/before/Consumer/Program.cs":::
 
-When the consuming app runs, it will output the state of the `Example` object. At this point, there is no type forwarding as the _Consuming.csproj_ references the _Utility.csproj_. However, the developer's of the _Utility_ assembly decide to remove the `Example` object as part of a refactoring. This tye is moved to a newly created _Common.csproj_.
+When the consuming app runs, it will output the state of the `Example` object. At this point, there is no type forwarding as the _Consuming.csproj_ references the _Utility.csproj_. However, the developer's of the _Utility_ assembly decide to remove the `Example` object as part of a refactoring. This type is moved to a newly created _Common.csproj_.
 
 By removing this type from the _Utility_ assembly, the developers are introducing a breaking change. All consuming projects will break when they update to the latest _Utility_ assembly.
 

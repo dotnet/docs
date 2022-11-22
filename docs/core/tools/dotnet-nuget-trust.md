@@ -24,9 +24,10 @@ dotnet nuget trust -h|--help
 
 The `dotnet nuget trust` command manages the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior). For details on what the nuget.config schema looks like, refer to the [NuGet config file reference](/nuget/reference/nuget-config-file).
 
-## Options
+  > [!NOTE]
+  > This command requires a certificate root store that is valid for both code signing and timestamping.  See [NuGet signed package verification](nuget-signed-package-verification.md) for details.
 
-<!-- markdownlint-disable MD012 -->
+## Options
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

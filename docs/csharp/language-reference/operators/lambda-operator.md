@@ -64,9 +64,7 @@ public override string ToString()
 }
 ```
 
-Expression body definitions for methods, operators, and read-only properties are supported beginning with C# 6. Expression body definitions for constructors, finalizers, and property and indexer accessors are supported beginning with C# 7.0.
-
-For more information, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+You can create expression body definitions for methods, operators, read-only properties, constructors, finalizers, and property and indexer accessors. For more information, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
 ## Operator overloadability
 
@@ -74,7 +72,7 @@ The `=>` operator cannot be overloaded.
 
 ## C# language specification
 
-For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1116-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1117-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

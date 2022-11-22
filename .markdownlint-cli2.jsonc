@@ -1,0 +1,67 @@
+{
+    "config": {
+        "default": true,
+        // Rule is fixable, but corrections may have impacts on headings showing up in sidebars
+        "MD001": false,
+        // Rule is auto-fixable, and should pick single style
+        "MD004": false,
+        // Disabled as word wraping can cause many diffs
+        "MD013": false,
+        // Currently broken with custom tab solution
+        "MD024": false,
+        // Currently broken with custom tab solution
+        "MD025": false,
+        "MD026": false,
+        // Cannot be enabled due to sequential Note blocks
+        "MD028": false,
+        "MD033": {
+            "allowed_elements": [
+                "a",
+                "blockquote",
+                "br",
+                "code",
+                "em",
+                "h4",
+                "kbd",
+                "li",
+                "ol",
+                "p",
+                "pre",
+                "span",
+                "sub",
+                "sup",
+                "table",
+                "tbody",
+                "td",
+                "th",
+                "thead",
+                "tr",
+                "u",
+                "ul"
+            ]
+        },
+        "MD036": false,
+        "MD040": false,
+        // Cannot be enabled because of the include folder snippets
+        "MD041": false,
+        "MD044": {
+            "code_blocks": false,
+            "names": [
+                "ASP.NET",
+                "PowerShell",
+                "Orleans"
+            ]
+        },
+        "MD046": {
+            "style": "fenced"
+        },
+        "MD049": false,
+        "MD050": {
+            "style": "asterisk"
+        },
+        "MD051": false
+    },
+    "ignores": [
+        ".github/"
+    ]
+}

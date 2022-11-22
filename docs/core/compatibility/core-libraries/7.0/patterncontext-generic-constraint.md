@@ -17,7 +17,7 @@ Starting in .NET 7, the generic type parameter on <xref:Microsoft.Extensions.Fil
 
 ## Version introduced
 
-.NET 7 Preview 3
+.NET 7
 
 ## Type of breaking change
 

@@ -7,8 +7,8 @@ items:
     href: ../core/get-started.md
   - name: Get started tutorials
     href: ../standard/get-started.md
-  - name: .NET 101 videos
-    href: https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80
+  - name: .NET Live TV
+    href: https://dotnet.microsoft.com/live
   - name: How to install
     items:
     - name: Overview
@@ -145,6 +145,12 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
+  - name: .NET 7
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-7.md
+    - name: Breaking changes
+      href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 6
     items:
     - name: What's new
@@ -375,6 +381,8 @@ items:
       href: ../core/tools/dotnet-watch.md
     - name: dotnet workload
       items:
+      - name: dotnet workload
+        href: ../core/tools/dotnet-workload.md
       - name: dotnet workload install
         href: ../core/tools/dotnet-workload-install.md
       - name: dotnet workload list
@@ -499,6 +507,14 @@ items:
         href: syslib-diagnostics/syslib0042.md
       - name: SYSLIB0043
         href: syslib-diagnostics/syslib0043.md
+      - name: SYSLIB0044
+        href: syslib-diagnostics/syslib0044.md
+      - name: SYSLIB0045
+        href: syslib-diagnostics/syslib0045.md
+      - name: SYSLIB0046
+        href: syslib-diagnostics/syslib0046.md
+      - name: SYSLIB0047
+        href: syslib-diagnostics/syslib0047.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -564,6 +580,56 @@ items:
         href: syslib-diagnostics/syslib1037.md
       - name: SYSLIB1038
         href: syslib-diagnostics/syslib1038.md
+      - name: SYSLIB1040
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1041
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1042
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1043
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1044
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1045
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1050
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1051
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1052
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1053
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1054
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1055
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1056
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1057
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1058
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1059
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1060
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1061
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1062
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1070
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1071
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1072
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1073
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1074
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1075
+        href: syslib-diagnostics/syslib1070-1089.md
   - name: Integrated development environments (IDEs)
     items:
     - name: Visual Studio
@@ -653,6 +719,8 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
+      - name: Dumps FAQ - .NET
+        href: ../core/diagnostics/faq-dumps.yml
     - name: Logging and tracing
       items:
       - name: Overview
@@ -952,6 +1020,10 @@ items:
             href: code-analysis/quality-rules/ca1418.md
           - name: CA1419
             href: code-analysis/quality-rules/ca1419.md
+          - name: CA1420
+            href: code-analysis/quality-rules/ca1420.md
+          - name: CA1422
+            href: code-analysis/quality-rules/ca1422.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -1141,6 +1213,10 @@ items:
             href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
+          - name: CA2019
+            href: code-analysis/quality-rules/ca2019.md
+          - name: CA2020
+            href: code-analysis/quality-rules/ca2020.md
         - name: Security rules
           items:
           - name: Overview
@@ -1423,6 +1499,10 @@ items:
             href: code-analysis/quality-rules/ca2257.md
           - name: CA2258
             href: code-analysis/quality-rules/ca2258.md
+          - name: CA2259
+            href: code-analysis/quality-rules/ca2259.md
+          - name: CA2260
+            href: code-analysis/quality-rules/ca2260.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1668,7 +1748,7 @@ items:
     href: ../standard/clr.md
   - name: Managed execution process
     href: ../standard/managed-execution-process.md
-  - name: Assemblies in .NET
+  - name: Assemblies
     href: ../standard/assembly/
   - name: Metadata and self-describing components
     href: ../standard/metadata-and-self-describing-components.md
@@ -1695,7 +1775,7 @@ items:
       items:
       - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability in .NET
+      - name: How to use and debug assembly unloadability
         href: ../core/../standard/assembly/unloadability.md
   - name: Versioning
     items:
@@ -1968,8 +2048,30 @@ items:
           href: ../core/deploying/trimming/trim-warnings/il2115.md
         - name: IL2116
           href: ../core/deploying/trimming/trim-warnings/il2116.md
+        - name: IL2117
+          href: ../core/deploying/trimming/trim-warnings/il2117.md
   - name: Native AOT deployment model
-    href: ../core/deploying/native-aot.md
+    items:
+    - name: Overview
+      href: ../core/deploying/native-aot/index.md
+    - name: Intro to AOT warnings
+      href: ../core/deploying/native-aot/fixing-warnings.md
+    - name: AOT warnings
+      items:
+      - name: IL3050
+        href: ../core/deploying/native-aot/warnings/il3050.md
+      - name: IL3051
+        href: ../core/deploying/native-aot/warnings/il3051.md
+      - name: IL3052
+        href: ../core/deploying/native-aot/warnings/il3052.md
+      - name: IL3053
+        href: ../core/deploying/native-aot/warnings/il3053.md
+      - name: IL3054
+        href: ../core/deploying/native-aot/warnings/il3054.md
+      - name: IL3055
+        href: ../core/deploying/native-aot/warnings/il3055.md
+      - name: IL3056
+        href: ../core/deploying/native-aot/warnings/il3056.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -1982,6 +2084,8 @@ items:
       href: ../core/docker/introduction.md
     - name: Containerize a .NET app
       href: ../core/docker/build-container.md
+    - name: Publish app as container image
+      href: ../core/docker/publish-as-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
 - name: DevOps
@@ -2024,7 +2128,7 @@ items:
       href: ../standard/base-types/common-type-system.md
     - name: Language independence
       href: ../standard/language-independence.md
-    - name: Type conversion in .NET
+    - name: Type conversion
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
       href: ../standard/base-types/conversion-tables.md
@@ -2040,7 +2144,7 @@ items:
       href: ../standard/generics/index.md
     - name: Intro to generic types
       href: ../standard/generics.md
-    - name: Generic collections in .NET
+    - name: Generic collections
       href: ../standard/generics/collections.md
     - name: Generic delegates for manipulating arrays and lists
       href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
@@ -2173,7 +2277,7 @@ items:
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
   - name: Work with strings
     items:
-    - name: Character encoding in .NET
+    - name: Character encoding
       href: ../standard/base-types/character-encoding-introduction.md
     - name: How to use character encoding classes
       href: ../standard/base-types/character-encoding.md
@@ -2221,6 +2325,9 @@ items:
     - name: Overview
       href: ../standard/base-types/regular-expressions.md
       displayName: regular expressions
+    - name: Source generation
+      href: ../standard/base-types/regular-expression-source-generators.md
+      displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
     - name: Language reference
       items:
       - name: Overview
@@ -2278,46 +2385,52 @@ items:
     - name: JSON serialization
       items:
       - name: Overview
-        href: ../standard/serialization/system-text-json-overview.md
+        href: ../standard/serialization/system-text-json/overview.md
         displayName: json serialization
       - name: Reflection vs. source generation
-        href: ../standard/serialization/system-text-json-source-generation-modes.md
+        href: ../standard/serialization/system-text-json/source-generation-modes.md
       - name: How to serialize and deserialize JSON
-        href: ../standard/serialization/system-text-json-how-to.md
+        href: ../standard/serialization/system-text-json/how-to.md
       - name: Control serialization behavior
         items:
         - name: Instantiate JsonSerializerOptions
-          href: ../standard/serialization/system-text-json-configure-options.md
+          href: ../standard/serialization/system-text-json/configure-options.md
         - name: Enable case-insensitive matching
-          href: ../standard/serialization/system-text-json-character-casing.md
+          href: ../standard/serialization/system-text-json/character-casing.md
         - name: Customize property names and values
-          href: ../standard/serialization/system-text-json-customize-properties.md
+          href: ../standard/serialization/system-text-json/customize-properties.md
         - name: Ignore properties
-          href: ../standard/serialization/system-text-json-ignore-properties.md
+          href: ../standard/serialization/system-text-json/ignore-properties.md
+        - name: Require properties
+          href: ../standard/serialization/system-text-json/required-properties.md
         - name: Allow invalid JSON
-          href: ../standard/serialization/system-text-json-invalid-json.md
+          href: ../standard/serialization/system-text-json/invalid-json.md
         - name: Handle overflow JSON, use JsonElement or JsonNode
-          href: ../standard/serialization/system-text-json-handle-overflow.md
+          href: ../standard/serialization/system-text-json/handle-overflow.md
         - name: Preserve references, handle circular references
-          href: ../standard/serialization/system-text-json-preserve-references.md
+          href: ../standard/serialization/system-text-json/preserve-references.md
         - name: Deserialize to immutable types, non-public accessors
-          href: ../standard/serialization/system-text-json-immutability.md
+          href: ../standard/serialization/system-text-json/immutability.md
         - name: Polymorphic serialization
-          href: ../standard/serialization/system-text-json-polymorphism.md
+          href: ../standard/serialization/system-text-json/polymorphism.md
       - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
-        href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
+        href: ../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md
       - name: Migrate from Newtonsoft.Json
-        href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+        href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
+      - name: Visual Basic support
+        href: ../standard/serialization/system-text-json/visual-basic-support.md
       - name: Supported collection types
-        href: ../standard/serialization/system-text-json-supported-collection-types.md
+        href: ../standard/serialization/system-text-json/supported-collection-types.md
       - name: Advanced
         items:
         - name: Customize character encoding
-          href: ../standard/serialization/system-text-json-character-encoding.md
+          href: ../standard/serialization/system-text-json/character-encoding.md
         - name: Use source generation
-          href: ../standard/serialization/system-text-json-source-generation.md
+          href: ../standard/serialization/system-text-json/source-generation.md
         - name: Write custom converters
-          href: ../standard/serialization/system-text-json-converters-how-to.md
+          href: ../standard/serialization/system-text-json/converters-how-to.md
+        - name: Customize contracts
+          href: ../standard/serialization/system-text-json/custom-contracts.md
     - name: Binary serialization
       items:
       - name: Overview
@@ -2539,16 +2652,46 @@ items:
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
-    - name: HTTP clients in .NET
-      displayName: networking, httpclient
-      href: networking/httpclient-guidelines.md
-    - name: IHttpClientFactory
-      href: ../core/extensions/http-client.md
-    - name: HTTP/3 with .NET
-      href: ../core/extensions/httpclient-http3.md
-  - name: File globbing in .NET
+    - name: Network programming
+      href: networking/overview.md
+    - name: Network availability
+      href: networking/network-info.md
+    - name: IPv6 overview
+      href: networking/ipv6-overview.md
+    - name: Telemetry
+      href: networking/networking-telemetry.md
+    - name: HTTP
+      items:
+      - name: HTTP support
+        href: networking/http/http-overview.md
+      - name: HTTP client guidelines
+        displayName: networking, httpclient
+        href: networking/http/httpclient-guidelines.md
+      - name: Make HTTP requests
+        displayName: networking,http,web services,client
+        href: networking/http/httpclient.md
+      - name: IHttpClientFactory
+        displayName: networking,httpclient,http,dependency injection,client,factory
+        href: ../core/extensions/httpclient-factory.md
+      - name: HTTP/3 with .NET
+        href: ../core/extensions/httpclient-http3.md
+      - name: Rate limit an HTTP handler
+        href: ../core/extensions/http-ratelimiter.md
+    - name: Sockets
+      items:
+      - name: Sockets support
+        href: networking/sockets/sockets-overview.md
+      - name: Use Sockets to send and receive data over TCP
+        href: networking/sockets/socket-services.md
+      - name: Use TcpClient and TcpListener
+        href: networking/sockets/tcp-classes.md
+    - name: WebSockets
+      items:
+      - name: WebSockets support
+        href: networking/websockets.md
+  - name: File globbing
     href: ../core/extensions/file-globbing.md
-  - name: Primitives library in .NET
+  - name: Primitives library
     href: ../core/extensions/primitives.md
   - name: Globalization and localization
     items:
@@ -2895,6 +3038,10 @@ items:
         href: ../standard/native-interop/customize-struct-marshalling.md
       - name: Customize parameter marshalling
         href: ../standard/native-interop/customize-parameter-marshalling.md
+      - name: Source generation
+        href: ../standard/native-interop/custom-marshalling-source-generation.md
+      - name: Tutorial - Use custom marshallers in source generation
+        href: ../standard/native-interop/tutorial-custom-marshaller.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Expose .NET components to COM
@@ -3048,6 +3195,9 @@ items:
       items:
       - name: Overview
         href: ../core/porting/upgrade-assistant-overview.md
+        displayName: upgrade assistant
+      - name: Windows Communication Foundation
+        href: ../core/porting/upgrade-assistant-wcf.md
       - name: Windows Presentation Foundation
         href: ../core/porting/upgrade-assistant-wpf-framework.md
       - name: Windows Forms

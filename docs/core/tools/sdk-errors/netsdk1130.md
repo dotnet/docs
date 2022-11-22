@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1130: Can't reference a Windows Metadata component directly"
 description: How to resolve the issue of not being able to reference a Windows Metadata component directly from an app that targets .NET 5 or later.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 06/29/2021
 f1_keywords:

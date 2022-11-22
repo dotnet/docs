@@ -1,13 +1,9 @@
-﻿namespace WorkerServiceOptions.Example;
+﻿using WorkerServiceOptions.Example;
 
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
+var host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((_, services) =>
+        services.AddHostedService<Worker>()
+            .AddTransient<PriorityQueue>())
+    .Build();
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) =>
-                services.AddHostedService<Worker>()
-                        .AddTransient<PriorityQueue>());
-}
+host.Run();

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "partitioners", "00\partitioners.csproj", "{5039F67C-943F-4492-8077-9B61B551A439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "partitioner02", "01\partitioner02.csproj", "{9C9AC3FC-3173-4913-AE7A-4C5D619CD325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5039F67C-943F-4492-8077-9B61B551A439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5039F67C-943F-4492-8077-9B61B551A439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5039F67C-943F-4492-8077-9B61B551A439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5039F67C-943F-4492-8077-9B61B551A439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9AC3FC-3173-4913-AE7A-4C5D619CD325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9AC3FC-3173-4913-AE7A-4C5D619CD325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9AC3FC-3173-4913-AE7A-4C5D619CD325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9AC3FC-3173-4913-AE7A-4C5D619CD325}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,8 +1,6 @@
 ---
 title: "NETSDK1112: The runtime pack was not downloaded"
 description: How to resolve the `runtime pack was not downloaded' error message.
-author: tdykstra
-ms.author: tdykstra
 ms.topic: error-reference
 ms.date: 07/08/2022
 f1_keywords:

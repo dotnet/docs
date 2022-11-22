@@ -43,7 +43,7 @@ If the method has Action or Func parameters, these are provided in the form of a
 
 In the previous queries, only Query #4 executes immediately. This is because it returns a single value, and not a generic <xref:System.Collections.Generic.IEnumerable%601> collection. The method itself has to use `foreach` in order to compute its value.
 
-Each of the previous queries can be written by using implicit typing with [var](../language-reference/keywords/var.md), as shown in the following example:
+Each of the previous queries can be written by using implicit typing with [var](../language-reference/statements/declarations.md#implicitly-typed-local-variables), as shown in the following example:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/WriteLinqQueries.cs" id="write_linq_queries_4":::
 

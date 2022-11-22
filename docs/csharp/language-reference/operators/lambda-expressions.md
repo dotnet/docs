@@ -149,7 +149,7 @@ For more information about how to create and use async methods, see [Asynchronou
 
 ## Lambda expressions and tuples
 
-Starting with C# 7.0, the C# language provides built-in support for [tuples](../builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
+The C# language provides built-in support for [tuples](../builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with three components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with three components that contains the result of the multiplications.
 
@@ -307,7 +307,7 @@ A static lambda can't capture local variables or instance state from enclosing s
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1116-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1117-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features added in C# 9.0 and later, see the following feature proposal notes:
 

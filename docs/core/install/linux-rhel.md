@@ -3,7 +3,7 @@ title: Install .NET on RHEL and CentOS Stream
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 08/07/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on RHEL and CentOS Stream
@@ -27,12 +27,12 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
 - When both a version of Linux distribution and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Distribution            | .NET Core 3.1                  | .NET 5                     | .NET 6                     |
-| ------------------------ | ------------------------------ | -------------------------- | -------------------------- |
-| ✔️ RHEL 8                 | ✔️ [3.1](#rhel-8-)             | ✔️ [5.0](#rhel-8-)        | ✔️ [6.0](#rhel-8-)        |
-| ✔️ RHEL 7                 | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) | ✔️ [6.0](#rhel-7--net-60) |
-| ✔️ CentOS Stream 9        | ❌ 3.1                         | ❌ 5.0                    | ✔️ [6.0](#centos-stream-9-) |
-| ✔️ CentOS Stream 8        | ✔️ [3.1](#centos-stream-8-)     | ✔️ [5.0](#centos-stream-8-) | ✔️ [6.0](#centos-stream-8-) |
+| Distribution            | .NET Core 3.1                  | .NET 6                     |
+| ------------------------ | ------------------------------ | -------------------------- |
+| ✔️ RHEL 8                 | ✔️ [3.1](#rhel-8-)             | ✔️ [6.0](#rhel-8-)        |
+| ✔️ RHEL 7                 | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [6.0](#rhel-7--net-60) |
+| ✔️ CentOS Stream 9        | ❌ 3.1                         | ✔️ [6.0](#centos-stream-9-) |
+| ✔️ CentOS Stream 8        | ✔️ [3.1](#centos-stream-8-)     | ✔️ [6.0](#centos-stream-8-) |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -60,7 +60,7 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-The .NET SDK allows you to develop apps with .NET . If you install the .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
+The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
@@ -102,7 +102,7 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-The .NET SDK allows you to develop apps with .NET . If you install the .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
+The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms

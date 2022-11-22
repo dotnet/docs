@@ -9,7 +9,7 @@ ms.date: 02/04/2022
 This tutorial provides step-by-step instructions for creating a basic functioning Orleans application. It is designed to be self-contained and minimalistic, with the following traits:
 
 - It relies only on NuGet packages
-- It has been tested in Visual Studio 2017 using Orleans 2.2.0
+- It has been tested in Visual Studio 2022 using Orleans 7.0.0
 - It has no reliance on external storage
 
 Keep in mind that this is only a tutorial and lacks appropriate error handling and other goodies that would be useful for a production environment. However, it should help the readers get a real hands-on with regards to the structure of Orleans and allow them to focus their continued learning on the parts most relevant to them.
@@ -30,10 +30,10 @@ For this tutorial we're going to create 4 projects:
 
 You will replace the default code with the code given for each project, below. You will also probably need to add `using` statements.
 
-1. Start by creating a Console App (.NET Core) project in a new solution. Call the project part `Silo` and name the solution `OrleansHelloWorld`.
-2. Add another Console App (.NET Core) project and name it `Client`.
-3. Add a Class Library (.NET Standard) and name it `GrainInterfaces`.
-4. Add another Class Library (.NET Standard) and name it `Grains`.
+1. Start by creating a Console App (.NET 7) project in a new solution. Call the project part `Silo` and name the solution `OrleansHelloWorld`.
+2. Add another Console App (.NET 7) project and name it `Client`.
+3. Add a Class Library (.NET 7) and name it `GrainInterfaces`.
+4. Add another Class Library (.NET 7) and name it `Grains`.
 
 #### Delete default source files
 
@@ -53,19 +53,14 @@ You will replace the default code with the code given for each project, below. Y
 | Silo             | `Microsoft.Orleans.Server`                  |
 | Silo             | `Microsoft.Extensions.Logging.Console`      |
 | Silo             | `Microsoft.Extensions.Hosting`              |
-| Client           | `Microsoft.Extensions.Logging.Console`      |
 | Client           | `Microsoft.Orleans.Client`                  |
-| Grain Interfaces | `Microsoft.Orleans.Core.Abstractions`       |
-| Grain Interfaces | `Microsoft.Orleans.CodeGenerator.MSBuild`   |
-| Grains           | `Microsoft.Orleans.CodeGenerator.MSBuild`   |
-| Grains           | `Microsoft.Orleans.Core.Abstractions`       |
+| Client           | `Microsoft.Extensions.Logging.Console`      |
+| Client           | `Microsoft.Extensions.Hosting`              |
+| Grain Interfaces | `Microsoft.Orleans.Sdk`                     |
+| Grains           | `Microsoft.Orleans.Sdk`                     |
 | Grains           | `Microsoft.Extensions.Logging.Abstractions` |
 
-`Microsoft.Orleans.Server` and `Microsoft.Orleans.Client` are meta-packages that bring dependency that you will most likely need on the Silo and client-side.
-
-`Microsoft.Orleans.Core.Abstractions` is needed everywhere. It is included in both `Microsoft.Orleans.Server` and `Microsoft.Orleans.Client`.
-
-`Microsoft.Orleans.CodeGenerator.MSBuild` automatically generates code that is needed to make calls to grains across machine boundaries. So it is needed in both `GrainInterfaces` and `Grains` projects.
+`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are meta-packages that bring dependency that you will most likely need on the Silo and client-side.
 
 ## Define a Grain Interface
 
@@ -118,14 +113,9 @@ At this step, we add code to initialize a server that will host and run our grai
 Add the following code to _Program.cs_ of the Silo project:
 
 ```csharp
-using System;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Orleans;
 using Orleans.Configuration;
-using Orleans.Hosting;
-using OrleansBasics;
 
 try
 {
@@ -149,14 +139,12 @@ static async Task<IHost> StartSiloAsync()
         .UseOrleans(c =>
         {
             c.UseLocalhostClustering()
-            .Configure<ClusterOptions>(options =>
-            {
-                options.ClusterId = "dev";
-                options.ServiceId = "OrleansBasics";
-            })
-            .ConfigureApplicationParts(
-                parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
-            .ConfigureLogging(logging => logging.AddConsole());
+                .Configure<ClusterOptions>(options =>
+                {
+                    options.ClusterId = "dev";
+                    options.ServiceId = "OrleansBasics";
+                })            
+                .ConfigureLogging(logging => logging.AddConsole());
         });
 
     var host = builder.Build();
@@ -171,20 +159,18 @@ static async Task<IHost> StartSiloAsync()
 Finally, we need to configure a client for communicating with our grains, connect it to the cluster (with a single silo in it), and invoke the grain. Note that the clustering configuration must match the one we used for the silo. There is more information about the client in the [Clusters and Clients](../host/client.md) section of the Orleans documentation.
 
 ```csharp
-using Microsoft.Extensions.Logging;
-using Orleans;
 using Orleans.Configuration;
-using System;
-using System.Threading.Tasks;
-using OrleansBasics;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 
 try
 {
-    using (var client = await ConnectClientAsync())
-    {
-        await DoClientWorkAsync(client);
-        Console.ReadKey();
-    }
+    var host = await StartClientAsync();
+    var client = host.Services.GetRequiredService<IClusterClient>();
+
+    await DoClientWorkAsync(client);
+    Console.ReadKey();    
 
     return 0;
 }
@@ -197,22 +183,26 @@ catch (Exception e)
     return 1;
 }
 
-static async Task<IClusterClient> ConnectClientAsync()
+static async Task<IHost> StartClientAsync()
 {
-    var client = new ClientBuilder()
-        .UseLocalhostClustering()
-        .Configure<ClusterOptions>(options =>
+    var builder = new HostBuilder()
+        .UseOrleansClient(client => 
         {
-            options.ClusterId = "dev";
-            options.ServiceId = "OrleansBasics";
-        })
-        .ConfigureLogging(logging => logging.AddConsole())
-        .Build();
+            client.UseLocalhostClustering()
+                .Configure<ClusterOptions>(options => 
+                {
+                    options.ClusterId = "dev";
+                    options.ServiceId = "OrleansBasics";
+                });
+        })            
+        .ConfigureLogging(logging => logging.AddConsole());
 
-    await client.Connect();
+    var host = builder.Build();
+    await host.StartAsync();
+    
     Console.WriteLine("Client successfully connected to silo host \n");
 
-    return client;
+    return host;
 }
 
 static async Task DoClientWorkAsync(IClusterClient client)

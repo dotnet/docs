@@ -53,7 +53,7 @@ To target a specific version of .NET Framework, assign one of the following stri
 
 |.NET Framework version|`version` string|
 |-|-|
-|4.8|v4.0|
+|4.8 (including 4.8.1)|v4.0|
 |4.7 (including 4.7.1 and 4.7.2)|v4.0|
 |4.6 (including 4.6.1 and 4.6.2)|v4.0|
 |4.5 (including 4.5.1 and 4.5.2)|v4.0|

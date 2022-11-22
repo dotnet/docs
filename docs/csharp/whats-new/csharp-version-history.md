@@ -73,7 +73,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](../expression-trees.md)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
-- [Implicitly typed local variables](../language-reference/keywords/var.md)
+- [Implicitly typed local variables](../language-reference/statements/declarations.md#implicitly-typed-local-variables)
 - [Partial methods](../language-reference/keywords/partial-method.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
@@ -146,9 +146,10 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
-- Local functions
-- Expanded expression bodied members
-- [Ref locals and returns](../programming-guide/classes-and-structs/ref-returns.md)
+- [Local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Ref locals](../language-reference/statements/declarations.md#ref-locals)
+- [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 
@@ -229,23 +230,23 @@ The new compiler options are:
 
 C# 8.0 is the first major C# release that specifically targets .NET Core. Some features rely on new CLR capabilities, others on library types added only in .NET Core. C# 8.0 adds the following features and enhancements to the C# language:
 
-- [Readonly members](./csharp-8.md#readonly-members)
-- [Default interface methods](./csharp-8.md#default-interface-methods)
-- [Pattern matching enhancements](./csharp-8.md#more-patterns-in-more-places):
-  - [Switch expressions](./csharp-8.md#switch-expressions)
-  - [Property patterns](./csharp-8.md#property-patterns)
-  - [Tuple patterns](./csharp-8.md#tuple-patterns)
-  - [Positional patterns](./csharp-8.md#positional-patterns)
-- [Using declarations](./csharp-8.md#using-declarations)
-- [Static local functions](./csharp-8.md#static-local-functions)
-- [Disposable ref structs](./csharp-8.md#disposable-ref-structs)
+- [Readonly members](../language-reference/builtin-types/struct.md#readonly-instance-members)
+- [Default interface methods](../language-reference/keywords/interface.md#default-interface-members)
+- [Pattern matching enhancements](../language-reference/operators/patterns.md):
+  - Switch expressions
+  - Property patterns
+  - Tuple patterns
+  - Positional patterns
+- [Using declarations](../language-reference/keywords/using-directive.md)
+- [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
-- [Asynchronous streams](./csharp-8.md#asynchronous-streams)
-- [Indices and ranges](./csharp-8.md#indices-and-ranges)
-- [Null-coalescing assignment](./csharp-8.md#null-coalescing-assignment)
-- [Unmanaged constructed types](./csharp-8.md#unmanaged-constructed-types)
-- [Stackalloc in nested expressions](./csharp-8.md#stackalloc-in-nested-expressions)
-- [Enhancement of interpolated verbatim strings](./csharp-8.md#enhancement-of-interpolated-verbatim-strings)
+- [Asynchronous streams](../language-reference/statements/iteration-statements.md#await-foreach)
+- [Indices and ranges](../language-reference/operators/member-access-operators.md#range-operator-)
+- [Null-coalescing assignment](../language-reference/operators/assignment-operator.md#null-coalescing-assignment)
+- [Unmanaged constructed types](../language-reference/keywords/where-generic-type-constraint.md)
+- [Stackalloc in nested expressions](../language-reference/operators/stackalloc.md)
+- [Enhancement of interpolated verbatim strings](../language-reference/tokens/interpolated.md)
 
 Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 

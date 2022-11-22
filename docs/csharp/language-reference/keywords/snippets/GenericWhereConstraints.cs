@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-using static keywords.UnmanagedExtensions;
+using static Keywords.UnmanagedExtensions;
 
-namespace keywords
+namespace Keywords
 {
     // <Snippet1>
     public class AGenericClass<T> where T : IComparable<T> { }

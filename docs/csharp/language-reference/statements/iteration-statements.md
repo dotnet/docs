@@ -95,7 +95,7 @@ The following example uses the `foreach` statement with an instance of the <xref
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithSpan" :::
 
-Beginning with C# 7.3, if the enumerator's `Current` property returns a [reference return value](../keywords/ref.md#reference-return-values) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
+If the enumerator's `Current` property returns a [reference return value](../keywords/ref.md#reference-return-values) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="RefIterationVariable" :::
 
@@ -103,7 +103,7 @@ If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceExc
 
 ### await foreach
 
-Beginning with C# 8.0, you can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop may be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
+You can use the `await foreach` statement to consume an asynchronous stream of data, that is, the collection type that implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop may be suspended while the next element is retrieved asynchronously. The following example shows how to use the `await foreach` statement:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="AwaitForeach" :::
 
@@ -112,11 +112,11 @@ You can also use the `await foreach` statement with an instance of any type that
 - A type has the public parameterless `GetAsyncEnumerator` method. That method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetAsyncEnumerator` method has the public `Current` property and the public parameterless `MoveNextAsync` method whose return type is [`Task<bool>`](xref:System.Threading.Tasks.Task%601), [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601), or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value.
 
-By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
+By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../tutorials/generate-consume-asynchronous-stream.md).
 
 ### Type of an iteration variable
 
-You can use the [`var` keyword](../keywords/var.md) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
+You can use the [`var` keyword](declarations.md#implicitly-typed-local-variables) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
 
 ```csharp
 foreach (var item in collection) { }

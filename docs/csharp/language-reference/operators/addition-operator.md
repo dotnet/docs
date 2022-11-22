@@ -27,11 +27,13 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 
 [!code-csharp-interactive[string concatenation](snippets/shared/AdditionOperator.cs#AddStrings)]
 
-Beginning with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
+[String interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
 [!code-csharp-interactive[string interpolation](snippets/shared/AdditionOperator.cs#UseStringInterpolation)]
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
+
+Beginning with C# 11, the `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
 
 ## Delegate combination
 
@@ -67,7 +69,7 @@ You also use the `+=` operator to specify an event handler method when you subsc
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type cannot explicitly overload the `+=` operator.
+A user-defined type can [overload](operator-overloading.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type can't explicitly overload the `+=` operator.
 
 ## C# language specification
 

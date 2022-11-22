@@ -26,9 +26,6 @@ In this tutorial, you learn how to:
 > - Evaluate the model
 > - Use the model for predictions
 
-> [!NOTE]
-> Model Builder is currently in Preview.
-
 ## Pre-requisites
 
 For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
@@ -76,7 +73,7 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
+:::image type="content" source="../media/model-builder-scenarios-2-0.png" alt-text="Model Builder Scenario Screen" lightbox="../media/model-builder-scenarios-2-0.png":::
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Value prediction`.
 

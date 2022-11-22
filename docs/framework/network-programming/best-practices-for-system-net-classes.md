@@ -18,7 +18,7 @@ The following recommendations will help you use the classes contained in <xref:S
   
 - For Transport Layer Security (TLS) best practices, see [Transport Layer Security (TLS) best practices with .NET Framework](tls.md).
 
-- Use <xref:System.Net.Http.HttpClient> to send HTTP requests instead of <xref:System.Net.WebRequest>, which was obsoleted in .NET 6. In .NET Framework, create a new `HttpClient` instance each time you need to send a request. (The guidance for .NET 5+/.NET Core is more nuanced. For more information, see [Guidelines for using HttpClient](../../fundamentals/networking/httpclient-guidelines.md).)
+- Use <xref:System.Net.Http.HttpClient> to send HTTP requests instead of <xref:System.Net.WebRequest>, which was obsoleted in .NET 6. In .NET Framework, create a new `HttpClient` instance each time you need to send a request. (The guidance for .NET 5+/.NET Core is more nuanced. For more information, see [Guidelines for using HttpClient](../../fundamentals/networking/http/httpclient-guidelines.md).)
   
 - When writing ASP.NET applications that run on a server using the `System.Net` classes, it's often better, from a performance standpoint, to use the asynchronous method <xref:System.Net.Http.HttpClient.SendAsync%2A> instead of <xref:System.Net.Http.HttpClient.Send%2A>.
   
@@ -30,4 +30,4 @@ The following recommendations will help you use the classes contained in <xref:S
   
 ## See also
 
-- [Network Programming in the .NET Framework](index.md)
+- [Network programming in .NET](../../fundamentals/networking/overview.md)

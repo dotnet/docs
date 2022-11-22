@@ -241,7 +241,6 @@ while (breakfastTasks.Count > 0)
     {
         Console.WriteLine("Toast is ready");
     }
-    await finishedTask;    
     breakfastTasks.Remove(finishedTask);
 }
 ```

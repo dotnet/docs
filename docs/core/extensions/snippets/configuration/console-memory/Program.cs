@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((_, configuration) =>
         configuration.AddInMemoryCollection(
-            new Dictionary<string, string>
+            new Dictionary<string, string?>
             {
                 ["SecretKey"] = "Dictionary MyKey Value",
                 ["TransientFaultHandlingOptions:Enabled"] = bool.TrueString,

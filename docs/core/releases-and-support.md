@@ -3,8 +3,6 @@ title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET 5+ (including .NET Core) and later versions.
 ms.date: 03/18/2022
 ms.topic: overview
-ms.author: tdykstra
-author: tdykstra
 ---
 # Releases and support for .NET (.NET 5+ and .NET Core)
 
@@ -16,7 +14,7 @@ Information about the type of each release is encoded in the version number in t
 
 For example:
 
-* .NET 5 and NET 6 are major releases.
+* .NET 5 and .NET 6 are major releases.
 * .NET Core 3.1 is the first minor release after the .NET Core 3.0 major release.
 * .NET Core 5.0.15 is the fifteenth patch for .NET 5.
 

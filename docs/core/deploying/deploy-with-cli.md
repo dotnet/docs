@@ -3,7 +3,7 @@ title: Publish apps with the .NET CLI
 description: Learn to publish a .NET application using the .NET CLI commands.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/30/2022
+ms.date: 11/08/2022
 ms.custom: updateeachrelease
 dev_langs:
   - "csharp"
@@ -24,13 +24,16 @@ Looking for some quick help on using the CLI? The following table shows some exa
 |                                                                   | 3.1         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
 |                                                                   | 5.0         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
 |                                                                   | 6.0         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
+|                                                                   | 7.0         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
 | [Framework-dependent executable](#framework-dependent-executable) | 3.1         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 |                                                                   | 5.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 |                                                                   | 6.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
+|                                                                   | 7.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 | [Self-contained deployment](#self-contained-deployment)           | 2.1         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
 |                                                                   | 3.1         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
 |                                                                   | 5.0         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
 |                                                                   | 6.0         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
+|                                                                   | 7.0         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
 
 \* When using **SDK version 3.1** or higher, framework-dependent executable is the default publishing mode when running the basic `dotnet publish` command.
 
@@ -122,6 +125,7 @@ Publishing an FDD creates an app that automatically rolls-forward to the latest 
 |                                | 3.1         | `dotnet publish -c Release -p:UseAppHost=false`             |
 |                                | 5.0         | `dotnet publish -c Release -p:UseAppHost=false`             |
 |                                | 6.0         | `dotnet publish -c Release -p:UseAppHost=false`             |
+|                                | 7.0         | `dotnet publish -c Release -p:UseAppHost=false`             |
 
 ## Framework-dependent executable
 
@@ -146,6 +150,7 @@ For .NET 2.1, you must use the following switches with the `dotnet publish` comm
 | Framework-dependent executable | 3.1         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 |                                | 5.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 |                                | 6.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
+|                                | 7.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 
 Whenever you use the `-r` switch, the output folder path changes to: `./bin/<BUILD-CONFIGURATION>/<TFM>/<RID>/publish/`
 
@@ -174,9 +179,10 @@ You must use the following switches with the `dotnet publish` command to publish
 |                                | 3.1         | `dotnet publish -c Release -r <RID> --self-contained true`  |
 |                                | 5.0         | `dotnet publish -c Release -r <RID> --self-contained true`  |
 |                                | 6.0         | `dotnet publish -c Release -r <RID> --self-contained true`  |
+|                                | 7.0         | `dotnet publish -c Release -r <RID> --self-contained true`  |
 
 > [!TIP]
-> In .NET 6 you can reduce the total size of compatible self-contained apps by [publishing trimmed](trimming/trim-self-contained.md). This enables the trimmer to remove parts of the framework and referenced assemblies that are not on any code path or potentially referenced in [runtime reflection](../../csharp/programming-guide/concepts/reflection.md). See [trimming incompatibilities](./trimming/incompatibilities.md) to determine if trimming makes sense for your application.
+> In .NET 6 and later versions, you can reduce the total size of compatible self-contained apps by [publishing trimmed](trimming/trim-self-contained.md). This enables the trimmer to remove parts of the framework and referenced assemblies that are not on any code path or potentially referenced in [runtime reflection](../../csharp/programming-guide/concepts/reflection.md). See [trimming incompatibilities](./trimming/incompatibilities.md) to determine if trimming makes sense for your application.
 
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).

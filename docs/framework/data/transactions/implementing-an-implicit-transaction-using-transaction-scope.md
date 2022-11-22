@@ -147,7 +147,7 @@ using(TransactionScope scope1 = new TransactionScope())
   
 ### Voting inside a nested scope  
 
- Although a nested scope can join the ambient transaction of the root scope, calling <xref:System.Transactions.TransactionScope.Complete%2A> in the nested scope has no affect on the root scope. Only if all the scopes from the root scope down to the last nested scope vote to commit the transaction, will the transaction be committed. Not calling <xref:System.Transactions.TransactionScope.Complete%2A> in a nested scope will affect the root scope as the ambient transaction will immediately be aborted.  
+ Although a nested scope can join the ambient transaction of the root scope, calling <xref:System.Transactions.TransactionScope.Complete%2A> in the nested scope has no effect on the root scope. The transaction will only be committed if all the scopes, from the root scope down to the last nested scope, vote to commit the transaction. Not calling <xref:System.Transactions.TransactionScope.Complete%2A> in a nested scope will affect the root scope, as the ambient transaction will immediately be aborted.  
   
 ## Setting the TransactionScope timeout  
 

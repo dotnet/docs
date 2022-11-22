@@ -116,7 +116,7 @@ $.validator.addMethod("bankorgiroaccountNL", function(value, element) {
  *
  * BIC definition in detail:
  * - First 4 characters - bank code (only letters)
- * - Next 2 characters - ISO 3166-1 alpha-2 country code (only letters)
+ * - Next 2 characters - ISO 3166-1 alpha-2 country/region code (only letters)
  * - Next 2 characters - location code (letters and digits)
  *   a. shall not start with '0' or '1'
  *   b. second character must be a letter ('O' is not allowed) or one of the following digits ('0' for test (therefore not allowed), '1' for passive participant and '2' for active participant)
@@ -421,7 +421,7 @@ $.validator.addMethod("giroaccountNL", function(value, element) {
 
 /**
  * IBAN is the international bank account number.
- * It has a country - specific format, that is checked here too
+ * It has a country/region - specific format, that is checked here too
  */
 $.validator.addMethod("iban", function(value, element) {
 	// some quick simple tests to prevent needless work
@@ -437,7 +437,7 @@ $.validator.addMethod("iban", function(value, element) {
 		cOperator = "",
 		countrycode, ibancheck, charAt, cChar, bbanpattern, bbancountrypatterns, ibanregexp, i, p;
 
-	// check the country code and find the country specific format
+	// check the country/region code and find the country/region specific format
 	countrycode = iban.substring(0, 2);
 	bbancountrypatterns = {
 		"AL": "\\d{8}[\\dA-Z]{16}",
@@ -507,17 +507,17 @@ $.validator.addMethod("iban", function(value, element) {
 	};
 
 	bbanpattern = bbancountrypatterns[countrycode];
-	// As new countries will start using IBAN in the
+	// As new countries/regions start using IBAN in the
 	// future, we only check if the countrycode is known.
 	// This prevents false negatives, while almost all
 	// false positives introduced by this, will be caught
 	// by the checksum validation below anyway.
 	// Strict checking should return FALSE for unknown
-	// countries.
+	// countries and regions.
 	if (typeof bbanpattern !== "undefined") {
 		ibanregexp = new RegExp("^[A-Z]{2}\\d{2}" + bbanpattern + "$", "");
 		if (!(ibanregexp.test(iban))) {
-			return false; // invalid country specific format
+			return false; // invalid country/region specific format
 		}
 	}
 

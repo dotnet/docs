@@ -19,6 +19,7 @@ f1_keywords:
   - "#pragma"
   - "#pragma warning"
   - "#pragma checksum"
+  - "defaultline_CSharpKeyword"
 helpviewer_keywords: 
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
@@ -69,11 +70,19 @@ You use four preprocessor directives to control conditional compilation:
 - `#else`: Closes the preceding conditional compilation and opens a new conditional compilation if the previous specified symbol isn't defined.
 - `#endif`: Closes the preceding conditional compilation.
 
-When the C# compiler finds an `#if` directive, followed eventually by an `#endif` directive, it compiles the code between the directives only if the specified symbol is defined. Unlike C and C++, you can't assign a numeric value to a symbol. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example:
+The C# compiler compiles the code between the `#if` directive and  `#endif` directive only if the specified symbol is defined, or not defined when the `!` not operator is used. Unlike C and C++, a numeric value to a symbol can't be assigned. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example, the following code is compiled when `DEBUG` is defined:
 
 ```csharp
 #if DEBUG
     Console.WriteLine("Debug version");
+#endif
+```
+
+The following code is compiled when `MYTEST` is **not** defined:
+
+```csharp
+#if !MYTEST
+    Console.WriteLine("MYTEST is not defined");
 #endif
 ```
 
@@ -88,7 +97,7 @@ A conditional directive beginning with an `#if` directive must explicitly be ter
 ```csharp
 #define VC7
 //...
-#if debug
+#if DEBUG
     Console.WriteLine("Debug build");
 #elif VC7
     Console.WriteLine("Visual Studio 7");

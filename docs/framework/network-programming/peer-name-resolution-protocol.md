@@ -46,4 +46,3 @@ The Peer Name Resolution Protocol demonstrates the following properties:
 
 - <xref:System.ServiceModel.PeerResolvers>
 - <xref:System.Net.PeerToPeer>
-- [Network Programming Samples](network-programming-samples.md)

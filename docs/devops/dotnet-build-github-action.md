@@ -36,14 +36,14 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/dotnet-build-github-action/build-validation.yml" range="11-12":::
 
-  - The environment variable `DOTNET_VERSION` is assigned the value `'5.0.301'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v1` GitHub Action.
+  - The environment variable `DOTNET_VERSION` is assigned the value `'6.0.401'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v3` GitHub Action.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
   :::code language="yml" source="snippets/dotnet-build-github-action/build-validation.yml" range="14-34" highlight="2,4-8,13-15,18,21":::
 
   - There is a single job, named `build-<os>` where the `<os>` is the operating system name from the `strategy/matrix`. The `name` and `runs-on` elements are dynamic for each value in the `matrix/os`. This will run on the latest versions of Ubuntu, Windows, and macOS.
-  - The `actions/setup-dotnet@v1` GitHub Action is required to set up the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
+  - The `actions/setup-dotnet@v3` GitHub Action is required to set up the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
   - (Optionally) Additional steps may be required, depending on your .NET workload. They're omitted from this example, but you may need additional tools installed to build your apps.
     - For example, when building an ASP.NET Core Blazor WebAssembly application with Ahead-of-Time (AoT) compilation you'd install the corresponding workload before running restore/build/publish operations.
 

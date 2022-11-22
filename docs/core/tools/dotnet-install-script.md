@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 10/26/2021
+ms.date: 11/08/2021
 ---
 # dotnet-install scripts reference
 
@@ -90,7 +90,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Architecture|--architecture <ARCHITECTURE>`**
 
-  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, and `arm`. The default value is `<auto>`, which represents the currently running OS architecture.
+  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, and `s390x`. The default value is `<auto>`, which represents the currently running OS architecture.
 
 - **`-AzureFeed|--azure-feed`**
 
@@ -100,8 +100,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   Specifies the source channel for the installation. The possible values are:
 
-  - `Current` - Most current release.
-  - `LTS` - Long-Term Support channel (most current supported release).
+  - `STS` - the most recent Standard Term Support release
+  - `LTS` - the most recent Long Term Support release
   - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
   - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 
@@ -267,6 +267,26 @@ The install scripts do not update the registry on Windows. They just download th
   ```bash
   curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
+
+## Set environment variables
+
+Manually installing .NET doesn't add the environment variables system-wide, and generally only works for the session in which .NET was installed. There are two environment variables you should set for your operating system:
+
+- `DOTNET_ROOT`
+
+  This variable is set to the folder .NET was installed to, such as `$HOME/.dotnet` for Linux and macOS, and `$HOME\.dotnet` in PowerShell for Windows.
+
+- `PATH`
+
+  This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
+
+> [!TIP]
+> For Linux and macOS, use the `echo` command to set the variables in your shell profile, such as _.bashrc_:
+>
+> ```bash
+> echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
+> echo 'export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools' >> ~/.bashrc
+> ```
 
 ## See also
 

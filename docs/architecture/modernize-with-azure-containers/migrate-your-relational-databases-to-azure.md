@@ -101,11 +101,11 @@ If you have any other database (for example, IBM DB2) and you opt for a lift and
 
 - **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**
 
-    [https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
+    [https://learn.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
 
 - **SQL Server database migration to SQL Database in the cloud**
 
-    [https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate](/azure/sql-database/sql-database-cloud-migrate)
+    [https://learn.microsoft.com/azure/sql-database/sql-database-cloud-migrate](/azure/sql-database/sql-database-cloud-migrate)
 
 - **Azure SQL Database**
 

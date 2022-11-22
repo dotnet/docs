@@ -15,8 +15,8 @@ ms.date: 03/17/2022
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
-    [-a|--test-adapter-path <ADAPTER_PATH>] 
-    [--arch <ARCHITECTURE>]
+    [--test-adapter-path <ADAPTER_PATH>] 
+    [-a|--arch <ARCHITECTURE>]
     [--blame]
     [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>]
@@ -26,13 +26,21 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [--blame-hang-timeout <TIMESPAN>]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_NAME>]
-    [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
+    [-d|--diag <LOG_FILE>]
+    [-f|--framework <FRAMEWORK>]
     [-e|--environment <NAME="VALUE">]
-    [--filter <EXPRESSION>] [--interactive]
-    [-l|--logger <LOGGER>] [--no-build]
-    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
-    [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
-    [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
+    [--filter <EXPRESSION>]
+    [--interactive]
+    [-l|--logger <LOGGER>]
+    [--no-build]
+    [--nologo]
+    [--no-restore]
+    [-o|--output <OUTPUT_DIRECTORY>]
+    [--os <OS>]
+    [--results-directory <RESULTS_DIR>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--settings <SETTINGS_FILE>]
+    [-t|--list-tests]
     [-v|--verbosity <LEVEL>]
     [<args>...]
     [[--] <RunSettings arguments>]
@@ -72,11 +80,17 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
+> [!WARNING]
+> Breaking changes in options:
+>
+> - Starting in .NET 7: switch `-a` to alias `--arch` instead of `--test-adapter-path`
+> - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-dir`
 
-- **`-a|--test-adapter-path <ADAPTER_PATH>`**
+- **`--test-adapter-path <ADAPTER_PATH>`**
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
+
+  Short form `-a` available in .NET SDK versions earlier than 7.
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
@@ -133,7 +147,6 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) and use the `--collect "XPlat Code Coverage"` option.
 
-
 - **`-d|--diag <LOG_FILE>`**
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
@@ -176,13 +189,17 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`-r|--results-directory <RESULTS_DIR>`**
+- **`--results-directory <RESULTS_DIR>`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
 
-- **`--runtime <RUNTIME_IDENTIFIER>`**
+  Short form `-r` available in .NET SDK versions earlier than 7.
+
+- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   The target runtime to test for.
+  
+  Short form `-r` available starting in .NET SDK 7.
 
 - **`-s|--settings <SETTINGS_FILE>`**
 

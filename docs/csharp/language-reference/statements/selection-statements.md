@@ -51,7 +51,7 @@ The `switch` statement selects a statement list to execute based on a pattern ma
 At the preceding example, the `switch` statement uses the following patterns:
 
 - A [relational pattern](../operators/patterns.md#relational-patterns) (available in C# 9.0 and later): to compare an expression result with a constant.
-- A [constant pattern](../operators/patterns.md#constant-pattern) (available in C# 7.0 and later): to test if an expression result equals a constant.
+- A [constant pattern](../operators/patterns.md#constant-pattern): to test if an expression result equals a constant.
 
 > [!IMPORTANT]
 > For information about the patterns supported by the `switch` statement, see [Patterns](../operators/patterns.md).
@@ -61,7 +61,7 @@ The preceding example also demonstrates the `default` case. The `default` case s
 A `switch` statement executes the *statement list* in the first *switch section* whose *case pattern* matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That is a case that is already handled by an upper case or whose pattern is impossible to match.
 
 > [!NOTE]
-> The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is always evaluated last and only if all other case patterns aren't matched.
+> The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is always evaluated last and only if all other case patterns aren't matched, except if `goto default` is encountered.
 
 You can specify multiple case patterns for one section of a `switch` statement, as the following example shows:
 
@@ -79,15 +79,6 @@ A case pattern may be not expressive enough to specify the condition for the exe
 
 The preceding example uses [positional patterns](../operators/patterns.md#positional-pattern) with nested [relational patterns](../operators/patterns.md#relational-patterns).
 
-### Language version support
-
-The `switch` statement supports pattern matching beginning with C# 7.0. Since then, each major C# version adds new kinds of patterns. For more information, see [Patterns](../operators/patterns.md).
-
-In C# 6 and earlier, you use the `switch` statement with the following limitations:
-
-- A match expression must be of one of the following types: [char](../builtin-types/char.md), [string](../builtin-types/reference-types.md), [bool](../builtin-types/bool.md), an [integral numeric](../builtin-types/integral-numeric-types.md) type, or an [enum](../builtin-types/enum.md) type.
-- Only constant expressions are allowed in `case` labels.
-
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
@@ -95,15 +86,15 @@ For more information, see the following sections of the [C# language specificati
 - [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
 - [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
 
-For more information about features introduced in C# 7.0 and later, see the following feature proposal notes:
+For more information about pattern matching `switch` statement, see the following feature proposal notes:
 
-- [Switch statement (Pattern matching for C# 7.0)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
+- [Switch statement (Pattern matching)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
 
 ## See also
 
-- [Add missing cases to switch statement (style rule IDE0010)](../../../fundamentals/code-analysis/style-rules/ide0010.md)
 - [C# reference](../index.md)
 - [Conditional operator `?:`](../operators/conditional-operator.md)
 - [Logical operators](../operators/boolean-logical-operators.md)
 - [Patterns](../operators/patterns.md)
 - [`switch` expression](../operators/switch-expression.md)
+- [Add missing cases to switch statement (style rule IDE0010)](../../../fundamentals/code-analysis/style-rules/ide0010.md)

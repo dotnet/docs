@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/04/2022
+ms.date: 11/09/2022
 ms.topic: overview
 ---
 
@@ -81,7 +81,7 @@ The host contains the dependency injection service provider. It also contains al
 
 By using the DI pattern, the worker service:
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the controller uses without modifying the controller.
+- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
 - Doesn't create an instance of `MessageWriter`. The instance is created by the DI container.
 
 The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:
@@ -97,6 +97,8 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
             services.AddHostedService<Worker>()
                     .AddScoped<IMessageWriter, LoggingMessageWriter>());
 ```
+
+The method `CreateHostBuilder` uses types `IHostBuilder` and `Host`. In order to use them, packages `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Hosting` must be referenced respectively.
 
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
@@ -286,7 +288,7 @@ Registering a service with only an implementation type is equivalent to register
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="18-23":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="11-16":::
 
 The preceding sample source code registers two implementations of the `IMessageWriter`.
 

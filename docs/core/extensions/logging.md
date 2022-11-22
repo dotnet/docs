@@ -3,12 +3,12 @@ title: Logging
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 06/27/2022
+ms.date: 11/03/2022
 ---
 
 # Logging in .NET
 
-.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
+.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with [built-in providers](logging-providers.md). The logging providers are responsible for determining where logs are written to. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
@@ -36,10 +36,11 @@ Logging configuration is commonly provided by the `Logging` section of *appsetti
 
 In the preceding JSON:
 
-- The `"Default"`, `"Microsoft"`, and `"Microsoft.Hosting.Lifetime"` categories are specified.
+- The `"Default"`, `"Microsoft"`, and `"Microsoft.Hosting.Lifetime"` log level categories are specified.
+- The `"Default"` value is applied to all categories that aren't otherwise specified, effectively making all default values for all categories `"Information"`. You can override this behavior by specifying a value for a category.
 - The `"Microsoft"` category applies to all categories that start with `"Microsoft"`.
-- The `"Microsoft"` category logs at log level `Warning` and higher.
-- The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level "Information" and higher.
+- The `"Microsoft"` category logs at a log level of `Warning` and higher.
+- The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level `"Information"` and higher.
 - A specific log provider is not specified, so `LogLevel` applies to all the enabled logging providers except for the [Windows EventLog](logging-providers.md#windows-eventlog).
 
 The `Logging` property can have <xref:Microsoft.Extensions.Logging.LogLevel> and log provider properties. The `LogLevel` specifies the minimum [level](#log-level) to log for selected categories. In the preceding JSON, `Information` and `Warning` log levels are specified. `LogLevel` indicates the severity of the log and ranges from 0 to 6:
@@ -82,13 +83,13 @@ In the preceding sample:
 - The categories and levels are not suggested values. The sample is provided to show all the default providers.
 - Settings in `Logging.{ProviderName}.LogLevel` override settings in `Logging.LogLevel`. For example, the level in `Debug.LogLevel.Default` overrides the level in `LogLevel.Default`.
 - Each provider's *alias* is used. Each provider defines an *alias* that can be used in configuration in place of the fully qualified type name. The built-in providers' aliases are:
-  - Console
-  - Debug
-  - EventSource
-  - EventLog
-  - AzureAppServicesFile
-  - AzureAppServicesBlob
-  - ApplicationInsights
+  - `Console`
+  - `Debug`
+  - `EventSource`
+  - `EventLog`
+  - `AzureAppServicesFile`
+  - `AzureAppServicesBlob`
+  - `ApplicationInsights`
 
 ### Set log level by command line, environment variables, and other configuration
 
@@ -390,7 +391,7 @@ public void Test(string id)
 {
     try
     {
-        if (id == "none")
+        if (id is "none")
         {
             throw new Exception("Default Id detected.");
         }
@@ -420,15 +421,11 @@ With the preceding setup, navigating to the privacy or home page produces many `
 The following code sets the default log level when the default log level is not set in configuration:
 
 ```csharp
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Warning))
+    .Build();
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Warning));
-}
+await host..RunAsync();
 ```
 
 ### Filter function
@@ -470,8 +467,12 @@ Use a scope by wrapping logger calls in a `using` block:
 public async Task<T> GetAsync<T>(string id)
 {
     T result;
+    var transactionId = Guid.NewGuid().ToString();
 
-    using (_logger.BeginScope("using block message"))
+    using (_logger.BeginScope(new List<KeyValuePair<string, object>>
+        {
+            new KeyValuePair<string, object>("TransactionId", transactionId),
+        }))
     {
         _logger.LogInformation(
             AppLogEvents.Read, "Reading value for {Id}", id);

@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use available console log formatting, or implement custom log formatting for your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/26/2022
+ms.date: 11/09/2022
 ---
 
 # Console log formatting
@@ -38,7 +38,7 @@ The [`Console` logging provider](logging-providers.md#console) has several prede
 
 To use the `Simple` console formatter, register it with `AddSimpleConsole`:
 
-:::code language="csharp" source="snippets/logging/console-formatter-simple/Program.cs" highlight="11-16":::
+:::code language="csharp" source="snippets/logging/console-formatter-simple/Program.cs" highlight="5-10":::
 
 In the preceding sample source code, the <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> formatter was registered. It provides logs with the ability to not only wrap information such as time and log level in each log message, but also allows for ANSI color embedding and indentation of messages.
 
@@ -52,7 +52,7 @@ The <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?dis
 
 This is commonly useful for containers, which often make use of `Systemd` console logging. With .NET 5, the `Simple` console logger also enables a compact version that logs in a single line, and also allows for disabling colors as shown in an earlier sample.
 
-:::code language="csharp" source="snippets/logging/console-formatter-systemd/Program.cs" highlight="11-15":::
+:::code language="csharp" source="snippets/logging/console-formatter-systemd/Program.cs" highlight="5-9":::
 
 ### Json
 
@@ -134,7 +134,7 @@ The `AddConsoleFormatter` API:
 - Handles configuration:
   - Uses a change token to synchronize updates, based on the [options pattern](options.md), and the [IOptionsMonitor](xref:Microsoft.Extensions.Options.IOptionsMonitor%601) interface
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/Program.cs" highlight="11-12":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/Program.cs" highlight="6-7":::
 
 Define a `CustomerFormatter` subclass of `ConsoleFormatter`:
 
@@ -179,7 +179,7 @@ In the preceding formatter implementation:
 
 To use custom configuration options, with custom formatter implementations, add when calling <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Logging.ILoggingBuilder})>.
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom-with-config/Program.cs" highlight="14-16":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom-with-config/Program.cs" highlight="9-11":::
 
 The following console output is similar to what you might expect to see from using this `CustomTimePrefixingFormatter`.
 

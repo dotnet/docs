@@ -72,7 +72,7 @@ Add the following operation logger object, which acts as a service to the consol
 
 :::code language="csharp" source="snippets/configuration/console-di/OperationLogger.cs":::
 
-The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is; `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method logs each operation's unique identifier with the scope string and message.
+The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is, `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method logs each operation's unique identifier with the scope string and message.
 
 ## Register services for DI
 
@@ -80,7 +80,7 @@ Update *Program.cs* with the following code:
 
 :::code language="csharp" source="snippets/configuration/console-di/Program.cs" id="Program" highlight="6-10":::
 
-Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommended that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
+Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
 
 - Allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks.
 - Prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.

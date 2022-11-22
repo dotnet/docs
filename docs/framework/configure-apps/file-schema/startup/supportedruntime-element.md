@@ -62,7 +62,7 @@ The `runtime` attribute specifies the Common Language Runtime (CLR) version that
 |2.0|"v2.0.50727"|
 |3.0|"v2.0.50727"|
 |3.5|"v2.0.50727"|
-|4.0-4.8|"v4.0"|
+|4.0-4.8.1|"v4.0"|
 
 ## <a name="sku"></a> "SKU ID" values
 
@@ -88,6 +88,7 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 | 4.7.1                         | ".NETFramework,Version=v4.7.1"                |
 | 4.7.2                         | ".NETFramework,Version=v4.7.2"                |
 | 4.8                           | ".NETFramework,Version=v4.8"                  |
+| 4.8.1                         | ".NETFramework,Version=v4.8.1"                |
 
 ## Example
 

@@ -44,7 +44,7 @@ dotnet-dump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux dumps without any native debugger involved like `lldb` on Linux. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
+The `dotnet-dump` global tool is a way to collect and analyze dumps on Windows, Linux, and macOS without any native debugger involved. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
 
 ## Options
 
@@ -100,12 +100,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
 - **`-o|--output <output_dump_path>`**
 
-  The full path and file name where the collected dump should be written.
+  The full path and file name where the collected dump should be written. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.
 
   If not specified:
 
   - Defaults to *.\dump_YYYYMMDD_HHMMSS.dmp* on Windows.
-  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux.
+  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux and macOS.
 
   YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second.
 
@@ -267,15 +267,9 @@ StackTraceString: <none>
 HResult: 80131604
 ```
 
-## Special instructions for Docker
+## Troubleshooting dump collection issues
 
-If you're running under Docker, dump collection requires `SYS_PTRACE` capabilities (`--cap-add=SYS_PTRACE` or `--privileged`).
-
-On Microsoft .NET SDK Linux Docker images, some `dotnet-dump` commands can throw the following exception:
-
-> Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception.
-
-To work around this problem, install the "libc6-dev" package.
+Dump collection requires the process to be able to call `ptrace`. If you are facing issues collecting dumps, the environment you are running on may be configured to restrict such calls. See our [Dumps: FAQ](faq-dumps.yml) for troubleshooting tips and potential solutions to common issues.
 
 ## See also
 

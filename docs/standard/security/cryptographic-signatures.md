@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Cryptographic Signatures"
 title: "Cryptographic Signatures"
-ms.date: 07/14/2020
+ms.date: 08/08/2022
 dev_langs:
   - "csharp"
   - "vb"
@@ -28,133 +28,87 @@ Cryptographic digital signatures use public key algorithms to provide data integ
 
 This topic explains how to generate and verify digital signatures using classes in the <xref:System.Security.Cryptography> namespace.
 
-## Generating Signatures
+## Generate a signature
 
-Digital signatures are usually applied to hash values that represent larger data. The following example applies a digital signature to a hash value. First, a new instance of the <xref:System.Security.Cryptography.RSA> class is created to generate a public/private key pair. Next, the <xref:System.Security.Cryptography.RSA> is passed to a new instance of the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> class. This transfers the private key to the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter>, which actually performs the digital signing. Before you can sign the hash code, you must specify a hash algorithm to use. This example uses the SHA1 algorithm. Finally, the <xref:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature%2A> method is called to perform the signing.
-
-Due to collision problems with SHA1, we recommend SHA256 or better.
+Digital signatures are usually applied to hash values that represent larger data. The following example applies a digital signature to a hash value. First, a new instance of the <xref:System.Security.Cryptography.RSA> class is created to generate a public/private key pair. Next, the <xref:System.Security.Cryptography.RSA> is passed to a new instance of the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> class. This transfers the private key to the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter>, which actually performs the digital signing. Before you can sign the hash code, you must specify a hash algorithm to use. This example uses the `SHA256` algorithm. Finally, the <xref:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature%2A> method is called to perform the signing.
 
 ```vb
 Imports System.Security.Cryptography
+Imports System.Text
 
-Module Module1
+Module Program
     Sub Main()
-        'The hash value to sign.
-        Dim hashValue As Byte() = {59, 4, 248, 102, 77, 97, 142, 201, 210, 12, 224, 93, 25, 41, 100, 197, 213, 134, 130, 135}
 
-        'The value to hold the signed value.
-        Dim signedHashValue() As Byte
+        Dim alg As SHA256 = SHA256.Create()
 
-        'Generate a public/private key pair.
-        Dim rsa As RSA = RSA.Create()
+        Dim data As Byte() = Encoding.UTF8.GetBytes("Hello, from the .NET Docs!")
+        Dim hash As Byte() = alg.ComputeHash(data)
 
-        'Create an RSAPKCS1SignatureFormatter object and pass it
-        'the RSA instance to transfer the private key.
-        Dim rsaFormatter As New RSAPKCS1SignatureFormatter(rsa)
+        Dim sharedParameters As RSAParameters
+        Dim signedHash As Byte()
 
-        'Set the hash algorithm to SHA1.
-        rsaFormatter.SetHashAlgorithm("SHA1")
+        ' Generate signature
+        Using rsa As RSA = RSA.Create()
+            sharedParameters = rsa.ExportParameters(True)
+            Dim rsaFormatter As New RSAPKCS1SignatureFormatter(rsa)
+            rsaFormatter.SetHashAlgorithm(NameOf(SHA256))
 
-        'Create a signature for hashValue and assign it to
-        'signedHashValue.
-        signedHashValue = rsaFormatter.CreateSignature(hashValue)
+            signedHash = rsaFormatter.CreateSignature(hash)
+        End Using
+
+        ' The sharedParameters, hash, and signedHash are used to later verify the signature.
     End Sub
 End Module
+
 ```
 
 ```csharp
-using System;
 using System.Security.Cryptography;
+using System.Text;
 
-class Class1
+using SHA256 alg = SHA256.Create();
+
+byte[] data = Encoding.ASCII.GetBytes("Hello, from the .NET Docs!");
+byte[] hash = alg.ComputeHash(data);
+
+RSAParameters sharedParameters;
+byte[] signedHash;
+
+// Generate signature
+using (RSA rsa = RSA.Create())
 {
-   static void Main()
-   {
-      //The hash value to sign.
-      byte[] hashValue = {59,4,248,102,77,97,142,201,210,12,224,93,25,41,100,197,213,134,130,135};
+    sharedParameters = rsa.ExportParameters(false);
 
-      //The value to hold the signed value.
-      byte[] signedHashValue;
+    RSAPKCS1SignatureFormatter rsaFormatter = new(rsa);
+    rsaFormatter.SetHashAlgorithm(nameof(SHA256));
 
-      //Generate a public/private key pair.
-      RSA rsa = RSA.Create();
-
-      //Create an RSAPKCS1SignatureFormatter object and pass it the
-      //RSA instance to transfer the private key.
-      RSAPKCS1SignatureFormatter rsaFormatter = new RSAPKCS1SignatureFormatter(rsa);
-
-      //Set the hash algorithm to SHA1.
-      rsaFormatter.SetHashAlgorithm("SHA1");
-
-      //Create a signature for hashValue and assign it to
-      //signedHashValue.
-      signedHashValue = rsaFormatter.CreateSignature(hashValue);
-   }
+    signedHash = rsaFormatter.CreateSignature(hash);
 }
+
+// The sharedParameters, hash, and signedHash are used to later verify the signature.
 ```
 
-## Verifying Signatures
+## Verify a signature
 
 To verify that data was signed by a particular party, you must have the following information:
 
 - The public key of the party that signed the data.
-
 - The digital signature.
-
 - The data that was signed.
-
 - The hash algorithm used by the signer.
 
-To verify a signature signed by the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> class, use the <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> class. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> class must be supplied the public key of the signer. For RSA, you will need the values of the modulus and the exponent to specify the public key. (The party that generated the public/private key pair should provide these values.) First create an <xref:System.Security.Cryptography.RSA> object to hold the public key that will verify the signature, and then initialize an <xref:System.Security.Cryptography.RSAParameters> structure to the modulus and exponent values that specify the public key.
+To verify a signature signed by the <xref:System.Security.Cryptography.RSAPKCS1SignatureFormatter> class, use the <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> class. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> class must be supplied the public key of the signer. For RSA, you will need at a minimal the values of the <xref:System.Security.Cryptography.RSAParameters.Modulus?displayProperty=nameWithType> and the <xref:System.Security.Cryptography.RSAParameters.Exponent?displayProperty=nameWithType> to specify the public key. One way to achieve this is to call <xref:System.Security.Cryptography.RSA.ExportParameters%2A?displayProperty=nameWithType> during signature creation and then call <xref:System.Security.Cryptography.RSA.ImportParameters%2A?displayProperty=nameWithType> during the verification process. The party that generated the public/private key pair should provide these values. First create an <xref:System.Security.Cryptography.RSA> object to hold the public key that will verify the signature, and then initialize an <xref:System.Security.Cryptography.RSAParameters> structure to the modulus and exponent values that specify the public key.
 
-The following code shows the creation of an <xref:System.Security.Cryptography.RSAParameters> structure. The `Modulus` property is set to the value of a byte array called `modulusData` and the `Exponent` property is set to the value of a byte array called `exponentData`.
+The following code shows the sharing of an <xref:System.Security.Cryptography.RSAParameters> structure. The `RSA` responsible for creating the signature exports its parameters. The parameters are then imported into the new `RSA` instance that is responsible for verifying the signature.
 
-```vb
-Dim rsaKeyInfo As RSAParameters
-rsaKeyInfo.Modulus = modulusData
-rsaKeyInfo.Exponent = exponentData
-```
+The <xref:System.Security.Cryptography.RSA> instance is, in turn, passed to the constructor of an <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> to transfer the key.
 
-```csharp
-RSAParameters rsaKeyInfo;
-rsaKeyInfo.Modulus = modulusData;
-rsaKeyInfo.Exponent = exponentData;
-```
+The following example illustrates this process. In this example, imagine that `sharedParameters`, `hash`, and `signedHash` are provided by a remote party. The remote party has signed `hash` using the `SHA256` algorithm to produce the digital signature `signedHash`. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=nameWithType> method verifies that the digital signature is valid and was used to sign `hash`.
 
-After you have created the <xref:System.Security.Cryptography.RSAParameters> object, you can initialize a new instance of the <xref:System.Security.Cryptography.RSA> implementation class to the values specified in <xref:System.Security.Cryptography.RSAParameters>. The <xref:System.Security.Cryptography.RSA> instance is, in turn, passed to the constructor of an <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter> to transfer the key.
+:::code language="vb" source="./snippets/cryptographic-signatures/vb/Program.vb":::
+:::code language="csharp" source="./snippets/cryptographic-signatures/csharp/Program.cs":::
 
-The following example illustrates this process. In this example, `hashValue` and `signedHashValue` are arrays of bytes provided by a remote party. The remote party has signed the `hashValue` using the SHA1 algorithm, producing the digital signature `signedHashValue`. The <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=nameWithType> method verifies that the digital signature is valid and was used to sign the `hashValue`.
-
-Due to collision problems with SHA1, we recommend SHA256 or better.  However, if SHA1 was used to create the signature, you have to use SHA1 to verify the signature.
-
-```vb
-Dim rsa As RSA = RSA.Create()
-rsa.ImportParameters(rsaKeyInfo)
-Dim rsaDeformatter As New RSAPKCS1SignatureDeformatter(rsa)
-rsaDeformatter.SetHashAlgorithm("SHA1")
-If rsaDeformatter.VerifySignature(hashValue, signedHashValue) Then
-   Console.WriteLine("The signature is valid.")
-Else
-   Console.WriteLine("The signature is not valid.")
-End If
-```
-
-```csharp
-RSA rsa = RSA.Create();
-rsa.ImportParameters(rsaKeyInfo);
-RSAPKCS1SignatureDeformatter rsaDeformatter = new RSAPKCS1SignatureDeformatter(rsa);
-rsaDeformatter.SetHashAlgorithm("SHA1");
-if(rsaDeformatter.VerifySignature(hashValue, signedHashValue))
-{
-   Console.WriteLine("The signature is valid.");
-}
-else
-{
-   Console.WriteLine("The signature is not valid.");
-}
-```
-
-This code fragment will display "`The signature is valid`" if the signature is valid and "`The signature is not valid`" if it is not.
+This code fragment displays "`The signature is valid`" if the signature is valid and "`The signature is not valid`" if it's not.
 
 ## See also
 

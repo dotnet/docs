@@ -308,7 +308,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
         @foreach (var forecast in (IEnumerable<WeatherForecast>)ViewData["WeatherForecastData"]!)
         {
             <p>The forecast for @forecast.Date is @forecast.Summary!</p>

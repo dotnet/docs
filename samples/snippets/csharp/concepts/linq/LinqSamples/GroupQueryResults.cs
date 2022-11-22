@@ -8,7 +8,7 @@ public static class GroupQueryResults
     public static void GroupQueryResults1()
     {
         // <group_query_results_1>
-        // Variable queryLastNames is an IEnumerable<IGrouping<string,
+        // Variable groupByLastNamesQuery is an IEnumerable<IGrouping<string,
         // DataClass.Student>>.
         var groupByLastNamesQuery =
             from student in students

@@ -3,13 +3,13 @@ title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/19/2021
+ms.date: 11/09/2022
 ms.topic: overview
 ---
 
 # Configuration in .NET
 
-Configuration in .NET is performed using one or more [configuration providers](#configuration-providers). Configuration providers read configuration data from key-value pairs using a variety of configuration sources:
+Configuration in .NET is performed using one or more [configuration providers](#configuration-providers). Configuration providers read configuration data from key-value pairs using various configuration sources:
 
 - Settings files, such as *appsettings.json*
 - Environment variables
@@ -26,7 +26,7 @@ Configuration in .NET is performed using one or more [configuration providers](#
 
 ## Concepts and abstractions
 
-Given one or more configuration sources, the <xref:Microsoft.Extensions.Configuration.IConfiguration> type provides a unified view of the configuration data. Configuration is read-only, and the configuration pattern is not designed to be programmatically writable. The `IConfiguration` interface is a single representation of all the configuration sources, as shown in the following diagram:
+Given one or more configuration sources, the <xref:Microsoft.Extensions.Configuration.IConfiguration> type provides a unified view of the configuration data. Configuration is read-only, and the configuration pattern isn't designed to be programmatically writable. The `IConfiguration` interface is a single representation of all the configuration sources, as shown in the following diagram:
 
 :::image type="content" source="media/configuration-sources.svg" lightbox="media/configuration-sources.svg" alt-text="The `IConfiguration` interface is a single representation of all the configuration sources.":::
 
@@ -52,7 +52,7 @@ Adding a configuration provider overrides previous configuration values. For exa
 One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), which uses classes to provide strongly typed access to groups of related settings. .NET configuration provides various abstractions. Consider the following interfaces:
 
 - <xref:Microsoft.Extensions.Configuration.IConfiguration>: Represents a set of key/value application configuration properties.
-- <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an IConfiguration hierarchy.
+- <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an `IConfiguration` hierarchy.
 - <xref:Microsoft.Extensions.Configuration.IConfigurationSection>: Represents a section of application configuration values.
 
 These abstractions are agnostic to their underlying configuration provider (<xref:Microsoft.Extensions.Configuration.IConfigurationProvider>). In other words, you can use an `IConfiguration` instance to access any configuration value from multiple providers.
@@ -139,11 +139,11 @@ To access the `IConfiguration` value, you can rely again on the [`Microsoft.Exte
 
 :::code language="xml" source="snippets/configuration/console-basic/console-basic.csproj" highlight="4,11-13,17":::
 
-The preceding project file defines:
+The preceding project file defines that:
 
-- That the application is an executable.
-- That an _appsettings.json_ file is to be copied to the output directory when the project is compiled.
-- That the `Microsoft.Extensions.Hosting` NuGet package reference is added.
+- The application is an executable.
+- An _appsettings.json_ file is to be copied to the output directory when the project is compiled.
+- The `Microsoft.Extensions.Hosting` NuGet package reference is added.
 
 Add the _appsettings.json_ file at the root of the project with the following contents:
 
@@ -195,5 +195,5 @@ For more information on various configuration providers, see [Configuration prov
 
 - [Configuration providers in .NET](configuration-providers.md)
 - [Implement a custom configuration provider](custom-configuration-provider.md)
-- Configuration bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo
+- Configuration bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime/issues) repo
 - [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

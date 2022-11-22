@@ -33,8 +33,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--advertising-manifests-only`**
 
   Downloads [advertising manifests](dotnet-workload-install.md#advertising-manifests) but doesn't update any workloads.
@@ -69,11 +67,4 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
   ```dotnetcli
   dotnet workload update
-  ```
-
-- Download the assets needed for updating installed workloads to a cache located in the *workload-cache* directory under the current directory. Then update installed workloads from that cache location:
-
-  ```dotnetcli
-  dotnet workload update --download-to-cache ./workload-cache
-  dotnet workload update --from-cache ./workload-cache
   ```

@@ -27,8 +27,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]

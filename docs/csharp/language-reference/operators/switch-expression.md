@@ -3,14 +3,14 @@ title: "switch expression - C# reference"
 description: Learn about the C# switch expression that provides switch-like semantics based on pattern matching.
 ms.date: 04/16/2021
 f1_keywords:
-  - "switch_CSharpKeyword"
+  - "switch-expression_CSharpKeyword"
 helpviewer_keywords:
   - "switch expression [C#]"
   - "pattern matching [C#]"
 ---
 # switch expression (C# reference)
 
-Beginning with C# 8.0, you use the `switch` expression to evaluate a single expression from a list of candidate expressions based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../statements/selection-statements.md#the-switch-statement) section of the [Selection statements](../statements/selection-statements.md) article.
+You use the `switch` expression to evaluate a single expression from a list of candidate expressions based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../statements/selection-statements.md#the-switch-statement) section of the [Selection statements](../statements/selection-statements.md) article.
 
 The following example demonstrates a `switch` expression, which converts values of an [`enum`](../builtin-types/enum.md) representing visual directions in an online map to the corresponding cardinal directions:
 

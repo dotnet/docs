@@ -23,13 +23,17 @@ The following options control how the compiler interprets language features. The
 
 ## CheckForOverflowUnderflow
 
-The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic statement that results in a value that is outside the range of the data type causes a run-time exception.  
+The **CheckForOverflowUnderflow** option controls the default overflow-checking context that defines the program behavior in the case of integer arithmetic overflow.
 
 ```xml
 <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
 ```
 
-An integer arithmetic statement that is in the scope of a `checked` or `unchecked` keyword isn't subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic statement that isn't in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **CheckForOverflowUnderflow** is `true`, that statement causes an exception at run time. If **CheckForOverflowUnderflow** is `false`, that statement doesn't cause an exception at run time. The default value for this option is `false`; overflow checking is disabled.
+When **CheckForOverflowUnderflow** is `true`, the default context is a checked context and overflow checking is enabled; otherwise, the default context is an unchecked context. The default value for this option is `false`, that is, overflow checking is disabled.
+
+You can also explicitly control the overflow-checking context for the parts of your code by using the `checked` and `unchecked` statements.
+
+For information about how the overflow-checking context affects operations and what operations are affected, see the [article about `checked` and `unchecked` statements](../statements/checked-and-unchecked.md).
 
 ## AllowUnsafeBlocks
 
@@ -84,15 +88,16 @@ For information about how to set this compiler option programmatically, see <xre
 
 | Version          | Link                       | Description                                                             |
 |------------------|----------------------------|-------------------------------------------------------------------------|
-| C# 7.0 and later |                            | Not currently available                                                 |
-| C# 6.0           | [Link][csharp-6]           | C# Language Specification Version 6 - Unofficial Draft: .NET Foundation |
+| C# 7.0 and later | [link][csharp-7]           | C# Language Specification Version 7 - Unofficial Draft: .NET Foundation |
+| C# 6.0           | [download PDF][csharp-6]   | Standard ECMA-334 6th Edition                                           |
 | C# 5.0           | [Download PDF][csharp-5]   | Standard ECMA-334 5th Edition                                           |
 | C# 3.0           | [Download DOC][csharp-3]   | C# Language Specification Version 3.0: Microsoft Corporation            |
 | C# 2.0           | [Download PDF][csharp-2]   | Standard ECMA-334 4th Edition                                           |
 | C# 1.2           | [Download DOC][csharp-1.2] | C# Language Specification Version 1.2: Microsoft Corporation            |
 | C# 1.0           | [Download DOC][csharp-1]   | C# Language Specification Version 1.0: Microsoft Corporation            |
 
-[csharp-6]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-7]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-6]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_6th_edition_june_2022.pdf
 [csharp-5]: https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf
 [csharp-3]: https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc
 [csharp-2]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%204th%20edition%20June%202006.pdf
@@ -105,8 +110,9 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 | C# version | Minimum SDK version                                                                  |
 |------------|--------------------------------------------------------------------------------------|
-| C# 10     | Microsoft Visual Studio/Build Tools 2022, or .NET 6 SDK                              |
-| C# 9.0     | Microsoft Visual Studio/Build Tools 2019, version 16.8, or .NET 5 SDK              |
+| C# 11      | Microsoft Visual Studio/Build Tools 2022 version 17.4, or .NET 7 SDK                 |
+| C# 10      | Microsoft Visual Studio/Build Tools 2022, or .NET 6 SDK                              |
+| C# 9.0     | Microsoft Visual Studio/Build Tools 2019 version 16.8, or .NET 5 SDK                 |
 | C# 8.0     | Microsoft Visual Studio/Build Tools 2019, version 16.3, or .NET Core 3.0 SDK         |
 | C# 7.3     | Microsoft Visual Studio/Build Tools 2017, version 15.7                               |
 | C# 7.2     | Microsoft Visual Studio/Build Tools 2017, version 15.5                               |

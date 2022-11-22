@@ -66,7 +66,7 @@ Classes, structs, and records can implement multiple interfaces. To implement fr
   
 ## Generic Types  
 
-Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example, The <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../types/generics.md).  
+Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example, the <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../types/generics.md).  
   
 ## Static Types  
 
@@ -94,7 +94,7 @@ You can "extend" a class without creating a derived class by creating a separate
   
 ## Implicitly Typed Local Variables  
 
-Within a class or struct method, you can use implicit typing to instruct the compiler to determine a variable's type at compile time. For more information, see [var (C# reference)](../../language-reference/keywords/var.md).
+Within a class or struct method, you can use implicit typing to instruct the compiler to determine a variable's type at compile time. For more information, see [var (C# reference)](../../language-reference/statements/declarations.md#implicitly-typed-local-variables).
 
 ## Records
 

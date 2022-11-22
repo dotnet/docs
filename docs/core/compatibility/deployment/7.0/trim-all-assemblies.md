@@ -19,7 +19,7 @@ If your app did have trim warnings, you may see changes in behavior or exception
 
 ## Version introduced
 
-.NET 7 Preview 7
+.NET 7
 
 ## Type of breaking change
 
@@ -31,7 +31,7 @@ This change helps to decrease app size without users having to explicitly opt in
 
 ## Recommended action
 
-The best resolution is to resolve all the trim warnings in your application. For information about resolving the warnings in your own libraries, see [Introduction to trim warnings](../../../deploying/trimming/fixing-warnings.md). For other libraries, contact the author to request that they resolve the warnings, or choose a different library that already supports trimming. For example, you can switch to <xref:System.Text.Json?displayProperty=fullName> with [source generation](../../../../standard/serialization/system-text-json-source-generation.md), which supports trimming, instead of `Newtonsoft.Json`.
+The best resolution is to resolve all the trim warnings in your application. For information about resolving the warnings in your own libraries, see [Introduction to trim warnings](../../../deploying/trimming/fixing-warnings.md). For other libraries, contact the author to request that they resolve the warnings, or choose a different library that already supports trimming. For example, you can switch to <xref:System.Text.Json?displayProperty=fullName> with [source generation](../../../../standard/serialization/system-text-json/source-generation.md), which supports trimming, instead of `Newtonsoft.Json`.
 
 To revert to the previous behavior, set the `TrimMode` property to `partial`, which is the pre-.NET 7 behavior.
 

@@ -140,7 +140,7 @@ Typically, when dates and times are displayed in the user interface, you should 
 
 - The [composite formatting](../../standard/base-types/composite-formatting.md) feature, when it is used with dates
 
-The following example displays sunrise and sunset data twice for October 11, 2012. It first sets the current culture to Croatian (Croatia), and then to English (Great Britain). In each case, the dates and times are displayed in the format that is appropriate for that culture.
+The following example displays sunrise and sunset data twice for October 11, 2012. It first sets the current culture to Croatian (Croatia), and then to English (United Kingdom). In each case, the dates and times are displayed in the format that is appropriate for that culture.
 
 [!code-csharp[Conceptual.Globalization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/dates1.cs#2)]
 [!code-vb[Conceptual.Globalization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates1.vb#2)]

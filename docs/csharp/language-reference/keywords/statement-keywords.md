@@ -17,10 +17,10 @@ Statements are program instructions. Except as described in the topics reference
 |[Iteration statements](../statements/iteration-statements.md)|`do`, `for`, `foreach`, `while`|
 |[Jump statements](../statements/jump-statements.md)|`break`, `continue`, `goto`, `return`|
 |Exception handling statements|[throw](throw.md), [try-catch](try-catch.md), [try-finally](try-finally.md), [try-catch-finally](try-catch-finally.md)|
-|[Checked and unchecked](checked-and-unchecked.md)|[checked](checked.md), [unchecked](unchecked.md)|
-|[fixed statement](fixed-statement.md)|[fixed](fixed-statement.md)|
+|[checked and unchecked statements](../statements/checked-and-unchecked.md)|`checked`, `unchecked`|
+|[fixed statement](../statements/fixed.md)|`fixed`|
 |[lock statement](../statements/lock.md)|`lock`|
-|[yield statement](yield.md)|`yield`|
+|[yield statement](../statements/yield.md)|`yield`|
 
 ## See also
 

@@ -668,6 +668,7 @@ module Array =
 ```
 
 For legacy reasons some string functions in FSharp.Core still treat nulls as empty strings and do not fail on null arguments. However do not take this as guidance, and do not adopt coding patterns that attribute any semantic meaning to "null".
+
 ## Object programming
 
 F# has full support for objects and object-oriented (OO) concepts. Although many OO concepts are powerful and useful, not all of them are ideal to use. The following lists offer guidance on categories of OO features at a high level.

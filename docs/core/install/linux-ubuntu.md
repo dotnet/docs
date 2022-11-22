@@ -36,6 +36,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+<!-- COMMENTING OUT UNTIL THE PACKAGE MANAGER FEED IS ACTUALLY READY
+
 ## 22.10
 
 > [!WARNING]
@@ -67,10 +69,9 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime,
 sudo apt-get install -y dotnet-runtime-7.0
 ```
 
-## 22.10 (Microsoft package feed)
+-->
 
-> [!WARNING]
-> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md),
+## 22.10
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -93,7 +94,7 @@ rm packages-microsoft-prod.deb
 .NET 6 is included in the Ubuntu 22.04 package manager feeds.
 
 > [!IMPORTANT]
-> .NET 7 isn't included in the Ubuntu feeds and you must use the [22.04 Microsoft package feed](#2204-microsoft-package-feed).
+> .NET 7 **isn't** included in the Ubuntu feeds and you must use the [22.04 Microsoft package feed](#2204-microsoft-package-feed).
 
 ### Install the SDK
 

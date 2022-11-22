@@ -73,6 +73,9 @@ sudo apt-get install -y dotnet-runtime-7.0
 
 ## 22.10
 
+> [!IMPORTANT]
+> .NET 7 isn't yet ready in the Ubuntu feed, and is only available via the Microsoft feeds. However, .NET 6 is available in the 22.10 Ubuntu feed.
+
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash

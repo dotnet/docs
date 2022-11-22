@@ -88,8 +88,6 @@ Draft 2:
 
 This article covers the following compiler warnings:
 
-- **CS8904** - *Invalid variance: The type parameter must be valid.*
-- **CS1738** - *Named argument specifications must appear after all fixed arguments have been specified.*
 - **CS8022** - *Feature is not available in C# 1. Please use language version.*
 - **CS8023** - *Feature is not available in C# 2. Please use language version.*
 - **CS8024** - *Feature is not available in C# 3. Please use language version.*
@@ -104,26 +102,28 @@ This article covers the following compiler warnings:
 - **CS8773** - *Feature is not available in C# 9. Please use language version.*
 - **CS8936** - *Feature is not available in C# 10. Please use language version.*
 - **CS9058** - *Feature is not available in C# 11. Please use language version.*
+- **CS8192** - *Provided language version is unsupported or invalid*
 - **CS8303** - *Specified language version cannot have leading zeroes*
 - **CS8304** - *Compiler version is less than language version*
+- **CS1738** - *Named argument specifications must appear after all fixed arguments have been specified.*
 - **CS8306** - *Tuple element name '{0}' is inferred. Please use language version {1} or greater to access an element by its inferred name.*
+- **CS8314** - *An expression of type '{0}' cannot be handled by a pattern of type*
 - **CS8371** - *Field-targeted attributes on auto-properties are not supported in language version*
 - **CS8401** - *To use `@$` instead of `$@` for an interpolated verbatim string, please use language version '{0}' or greater.*
 - **CS8511** - *An expression of type cannot be handled by a pattern of type.*
-- **CS8192** - *Provided language version is unsupported or invalid*
 - **CS8627** - *A nullable type parameter must be known to be a value type or non-nullable reference type*
 - **CS8630** - *Invalid '{0}' value: '{1}' for C# {2}. Please use language version '{3}' or greater*
-- **CS8314** - *An expression of type '{0}' cannot be handled by a pattern of type*
 - **CS8652** - *The modifier is not valid for this item.*
 - **CS8704** - *Type does not implement interface member. It cannot implicitly implement a non-public member.*
 - **CS8706** - *Type cannot implement interface member because a feature is not available in this version.*
-- **CS8957** - *Conditional expression is not valid in language version because a common type was not found between types.*
+- **CS8904** - *Invalid variance: The type parameter must be valid.*
 - **CS8912** - *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
+- **CS8957** - *Conditional expression is not valid in language version because a common type was not found between types.*
+- **CS8967** - *Newlines inside a non-verbatim interpolated string are not supported in C#*
 - **CS9014** - *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9015** - *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
-- **CS8967** - *Newlines inside a non-verbatim interpolated string are not supported in C#*
 
 The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version, as well as the version it supports. You may use this to validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
@@ -146,3 +146,6 @@ You may have an older target framework selected in your project file. If you rem
 ## Avoid the updated feature
 
 If you must support older libraries or runtimes, you may need to avoid using newer features.
+
+## Breaking changes on struct initialization
+

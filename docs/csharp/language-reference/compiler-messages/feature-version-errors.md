@@ -133,7 +133,7 @@ There are two possible causes and three ways to address these errors and warning
 
 The compiler determines a default based on these rules:
 
-[!INCLUDE [langversion-table](includes/default-langversion-table.md)]
+[!INCLUDE [langversion-table](../includes/default-langversion-table.md)]
 
 If your selected framework doesn't match the language version required, you can upgrade the target framework.
 
@@ -141,7 +141,7 @@ If your selected framework doesn't match the language version required, you can 
 
 You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will us the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
 
-[!INCLUDE [langversion-table](includes/langversion-table.md)]
+[!INCLUDE [langversion-table](../includes/langversion-table.md)]
 
 ## Avoid the updated feature
 

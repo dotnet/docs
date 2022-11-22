@@ -22,7 +22,7 @@ file class HiddenWidget
 
 Any types nested within a file-local type are also only visible within the file in which it's declared. Other types in an assembly may use the same name as a file-local type. Because the file-local type is visible only in the file where it's declared, these types don't create a naming collision.
 
-A file-local type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-local type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-local interface type. The type can't [explicitly implement](../../programming-guide/interfaces/explicit-interface-implementation.md) a file-local interface.
+A file-local type can't be the return type or parameter type of any member that is more visible than `file` scope. A file-local type can't be a field member of a type that has greater visibility than `file` scope. However, a more visible type may implicitly implement a file-local interface type. The type can also [explicitly implement](../../programming-guide/interfaces/explicit-interface-implementation.md) a file-local interface but explicit implementations can only be used within the `file` scope.
 
 ## Example
 

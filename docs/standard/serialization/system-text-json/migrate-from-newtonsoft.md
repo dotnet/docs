@@ -34,9 +34,9 @@ In Visual Basic, you can't use <xref:System.Text.Json.Utf8JsonReader>, which als
 
 The following table lists `Newtonsoft.Json` features and `System.Text.Json` equivalents. The equivalents fall into the following categories:
 
-* Supported by built-in functionality. Getting similar behavior from `System.Text.Json` may require the use of an attribute or global option.
-* Not supported, workaround is possible. The workarounds are [custom converters](converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
-* Not supported, workaround is not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
+* ✔️ Supported by built-in functionality. Getting similar behavior from `System.Text.Json` may require the use of an attribute or global option.
+* ⚠️ Not supported, but workaround is possible. The workarounds are [custom converters](converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
+* ❌ Not supported, and workaround is not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
 
 ::: zone pivot="dotnet-7-0"
 

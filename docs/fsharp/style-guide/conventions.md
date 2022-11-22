@@ -631,7 +631,19 @@ Aside from the single point of mutation in the middle of the lambda expression, 
 
 ## Nulls and default values
 
-Nulls should generally be avoided in F#. By default F#-declared types do not support the use of the `null` literal, and all values and objects are fully and correctly initialized. However, some common .NET APIs return or accept nulls, and some common .NET-declared types such as arrays and strings allow nulls. However, the occurrence of `null` values is very rare in F# programming and one of the benefits of using F# is to avoid null reference errors in most cases.
+Nulls should generally be avoided in F#. By default F#-declared types do not support the use of the `null` literal, and all values and objects are initialized. However, some common .NET APIs return or accept nulls, and some common .NET-declared types such as arrays and strings allow nulls. However, the occurrence of `null` values is very rare in F# programming and one of the benefits of using F# is to avoid null reference errors in most cases.
+
+### Avoid the use of the `AllowNullLiteral` attribute
+
+By default F#-declared types do not support the use of the `null` literal. You can manually annotate F# types with `AllowNullLiteral` to allow this. However, it is almost always better to avoid doing this.
+
+### Avoid the use of the `Unchecked.defaultof<_>` attribute
+
+It is possible to generate a `null` or zero-initialized value for an F# type by using `Unchecked.defaultof<_>`. This can be useful when initializing storage for some data structures, or in some high-performance coding pattern, or in interoperability. However the use of this construct should be avoided.
+
+### Avoid the use of the `DefaultValue` attribute
+
+By default F# records and objects must properly initialized on construction. The `DefaultValue` attribute can be used to populate some fields of objects with a `null` or zero-initialized value. This construct is rarely needed and its use should be avoided.
 
 ### If you check for null inputs, raise exceptions at first opportunity
 
@@ -657,18 +669,6 @@ module Array =
 
 For legacy reasons some string functions in FSharp.Core still treat nulls as empty strings and do not fail on null arguments. However do not take this as guidance, and do not adopt coding patterns that attribute any semantic meaning to "null".
  
-### Avoid the use of the `AllowNullLiteral` attribute
-
-By default F#-declared types do not support the use of the `null` literal. You can manually annotate F# types with `AllowNullLiteral` to allow this. However, it is almost always better to avoid doing this.
-
-### Avoid the use of the `Unchecked.defaultof<_>` attribute
-
-It is possible to generate a `null` or zero-initialized value for an F# type by using `Unchecked.defaultof<_>`. This can be useful when initializing storage for some data structures, or in some high-performance coding pattern, or in interoperability. However the use of this construct should be avoided.
-
-### Avoid the use of the `DefaultValue` attribute
-
-By default F# records and objects must properly initialized on construction. The `DefaultValue` attribute can be used to populate some fields of objects with a `null` or zero-initialized value. This construct is rarely needed and its use should be avoided.
-
 ## Object programming
 
 F# has full support for objects and object-oriented (OO) concepts. Although many OO concepts are powerful and useful, not all of them are ideal to use. The following lists offer guidance on categories of OO features at a high level.

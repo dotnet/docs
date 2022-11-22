@@ -529,7 +529,9 @@ Although the previous example showed that a struct Discriminated Union yielded b
 
 ### Functional programming and nulls
 
-Nulls should normally be avoided, most F# types don't allow nulls, however some .NET types are frequently used if F# and they allow nulls, this is the case for arrays and strings. In practice there's no need to check for nulls but if you do fail fast, this applies to FSharp libraries as well. Although for legacy reasons some string functions in FSharp.Core still treat nulls as empty strings we shouldn't take them as guidance, that is we would not encourage attributing any semantic meaning to "null".
+Nulls should generally be avoided in F#. F# supports nulls because some common .NET APIs return or accept nulls and some common types such as arrays and strings allow nulls. However, one of the benefits of using F# is to avoid null reference errors in most cases.
+
+In practice there's no need to check for nulls but if you do fail fast, this applies to FSharp libraries as well. Although for legacy reasons some string functions in FSharp.Core still treat nulls as empty strings we shouldn't take them as guidance, that is we would not encourage attributing any semantic meaning to "null".
 
 ### Functional programming and mutation
 

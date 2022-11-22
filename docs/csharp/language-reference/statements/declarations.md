@@ -1,7 +1,7 @@
 ---
-title: "Declaration statements - C# reference"
-description: "Declaration statements, including `var`, `ref` locals, and `ref` fields - C# reference"
-ms.date: 09/15/2022
+title: "Declaration statements - var, ref local variables, and ref fields"
+description: "Declarations introduce a new variable. These statements include `var`, `ref` locals, and `ref` fields. In addition to declaring a new variable, these statements can initialize that variable's value."
+ms.date: 11/22/2022
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Declaration statements
 
-A *declaration statement* declares a new variable, and optionally, initializes it. All variables have declared type. You can learn more about types in the article on the [.NET type system](../../../standard/base-types/common-type-system.md).
+A *declaration statement* declares a new variable, and optionally, initializes it. All variables have declared type. You can learn more about types in the article on the [.NET type system](../../../standard/base-types/common-type-system.md). Typically, a declaration includes a type and a variable name. It can also include an initialization: the `=` operator followed by an expression. The type may be replaced with `var`. The declaration or the expression may include the `ref` modifier to declare that the new variable refers to an existing storage location.
 
 ## Implicitly typed local variables
 

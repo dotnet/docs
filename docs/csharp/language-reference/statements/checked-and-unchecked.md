@@ -1,7 +1,7 @@
 ---
-title: "checked and unchecked statements - C# reference"
-description: "Learn about the statements that control the overflow-checking context."
-ms.date: 08/24/2022
+title: "checked and unchecked statements - control the overflow-checking context"
+description: "The `checked` and `unchecked` statements control the overflow-checking context. In a check context, overflow causes an exception to be thrown. In an unchecked context, the result is truncated."
+ms.date: 11/22/2022
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "unchecked_CSharpKeyword"
@@ -13,14 +13,9 @@ helpviewer_keywords:
 ---
 # checked and unchecked statements (C# reference)
 
-The `checked` and `unchecked` statements specify the overflow-checking context for integral-type arithmetic operations and conversions, as the following example shows:
+The `checked` and `unchecked` statements specify the overflow-checking context for integral-type arithmetic operations and conversions. When integer arithmetic overflow occurs, the overflow-checking context defines what happens. In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs. In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, in the case of addition it wraps from the maximum value to the minimum value. The following example shows both the same operation in both a `checked` and `unchecked` context:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="MainExample":::
-
-When integer arithmetic overflow occurs, the overflow-checking context defines what happens as follows:
-
-- In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs.
-- In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, in the case of addition it wraps from the maximum value to the minimum value, as the preceding example shows.
 
 > [!NOTE]
 > The behavior of user-defined operators and conversions in the case of the overflow of the corresponding result type can differ from the one described in the previous paragraph. In particular, [user-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) might not throw an exception in a checked context.

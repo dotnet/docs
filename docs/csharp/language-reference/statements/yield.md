@@ -1,16 +1,16 @@
 ---
-title: "yield statement - C# reference"
-description: "Use the yield statement in iterators to provide the next value or signal the end of iteration"
-ms.date: 09/27/2022
+title: "yield statement - provide the next element in an iterator"
+description: "Use the yield statement in iterators to provide the next value or signal the end of an iteration"
+ms.date: 11/22/2022
 f1_keywords: 
   - "yield"
   - "yield_CSharpKeyword"
 helpviewer_keywords: 
   - "yield keyword [C#]"
 ---
-# yield statement (C# reference)
+# yield statement - provide the next element
 
-You use the `yield` statement in an [iterator](../../iterators.md) in two following forms:
+You use the `yield` statement in an [iterator](../../iterators.md) to provide the next value from a sequence when iterating the sequence. The `yield` statement has the two following forms:
 
 - `yield return`: to provide the next value in iteration, as the following example shows:
 
@@ -33,7 +33,7 @@ In the preceding examples, the return type of iterators is <xref:System.Collecti
 
   :::code language="csharp" source="snippets/yield/GetEnumeratorExample.cs" id="GetEnumeratorExample":::
 
-You cannot use the `yield` statements in:
+You can't use the `yield` statements in:
 
 - methods with [in](../keywords/in-parameter-modifier.md), [ref](../keywords/ref.md), or [out](../keywords/out-parameter-modifier.md) parameters
 - [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)

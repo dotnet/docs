@@ -2,6 +2,9 @@
 title: Resolve errors related to language version and features
 description: Several compiler errors indicate that your configured language version doesn't support a feature you're using. This article shows how to fix those errors and warnings.
 f1_keywords:
+  - "CS0171"
+  - "CS0188"
+  - "CS0843"
   - "CS8904" # ERR_UnexpectedVarianceStaticMember  Invalid variance: The type parameter '{1}' must be {3} valid on '{0}' unless language version '{4}' or greater is used. '{1}' is {2}.
   - "CS1738" # ERR_NamedArgumentSpecificationBeforeFixedArgument  Named argument specifications must appear after all fixed arguments have been specified. Please use language version {0} or greater to allow non-trailing named arguments
   - "CS8022" # ERR_FeatureNotAvailableInVersion1  Feature is not available in C# 1. Please use language version.
@@ -40,6 +43,9 @@ f1_keywords:
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
 helpviewer_keywords:
+  - "CS0171"
+  - "CS0188"
+  - "CS0843"
   - "CS8904"
   - "CS1738"
   - "CS8022"
@@ -81,11 +87,6 @@ ms.date: 11/22/2022
 ---
 # Resolve warnings related to language features and versions
 
-Draft 2:
-- CS0171 (changed behavior), now its CS8881
-- CS0188 (changed behavior), now 8885
-- CS0843 -> now 8880
-
 This article covers the following compiler warnings:
 
 - **CS8022** - *Feature is not available in C# 1. Please use language version.*
@@ -125,6 +126,12 @@ This article covers the following compiler warnings:
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
 
+In addition, the following errors and warnings relate to struct initialization changes in recent versions:
+
+- [**CS0171**, **CS8881**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller.*
+- [**CS0188**, **CS8885**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields are assigned to*
+- [**CS0843**, **CS8880**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
+
 The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version, as well as the version it supports. You may use this to validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
 There are two possible causes and three ways to address these errors and warnings.
@@ -149,3 +156,31 @@ If you must support older libraries or runtimes, you may need to avoid using new
 
 ## Breaking changes on struct initialization
 
+All these errors and warnings help ensure that `struct` types are properly initialized before their fields are accessed. In earlier versions of C#, you must explicitly assign all fields in a struct in any constructor. The parameterless constructor initializes all fields to their default value. In later versions, all constructors initialize all fields. Either the field is explicitly set, set in a field initializer, or set to its default value.
+
+- **CS0171**, **CS8881**: *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller.*
+- **CS0188**, **CS8885**: *The 'this' object cannot be used before all of its fields are assigned to*
+- **CS0843**, **CS8880**: *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
+
+You can address this error by upgrading your language version to C# 11, when all fields are initialized by every `struct` constructor. If that's not a possible option, you must explicitly call the default constructor, as shown in the following example:
+
+```csharp
+struct S
+{
+    public int AIProp { get; set; }
+    public S(int i){} //CS0843
+    // Try the following lines instead.
+    // public S(int i) : this()
+    // {
+    //     AIProp = i;
+    // }
+}
+
+class Test
+{
+    static int Main()
+    {
+        return 1;
+    }
+}
+```

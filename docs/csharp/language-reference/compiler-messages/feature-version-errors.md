@@ -89,31 +89,21 @@ ms.date: 11/22/2022
 
 This article covers the following compiler warnings:
 
-- **CS8022** - *Feature is not available in C# 1. Please use language version.*
-- **CS8023** - *Feature is not available in C# 2. Please use language version.*
-- **CS8024** - *Feature is not available in C# 3. Please use language version.*
-- **CS8025** - *Feature is not available in C# 4. Please use language version.*
-- **CS8026** - *Feature is not available in C# 5. Please use language version.*
-- **CS8059** - *Feature is not available in C# 6. Please use language version.*
-- **CS8107** - *Feature is not available in C# 7. Please use language version.*
-- **CS8302** - *Feature is not available in C# 7.1. Please use language version.*
-- **CS8320** - *Feature is not available in C# 7.2. Please use language version.*
-- **CS8370** - *Feature is not available in C# 7.3. Please use language version.*
-- **CS8400** - *Feature is not available in C# 8. Please use language version.*
-- **CS8773** - *Feature is not available in C# 9. Please use language version.*
-- **CS8936** - *Feature is not available in C# 10. Please use language version.*
-- **CS9058** - *Feature is not available in C# 11. Please use language version.*
+<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
+That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
+ -->
+- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058** - *Feature is not available. Use newer language version.*
 - **CS8192** - *Provided language version is unsupported or invalid*
 - **CS8303** - *Specified language version cannot have leading zeroes*
 - **CS8304** - *Compiler version is less than language version*
 - **CS1738** - *Named argument specifications must appear after all fixed arguments have been specified.*
-- **CS8306** - *Tuple element name '{0}' is inferred. Please use language version {1} or greater to access an element by its inferred name.*
-- **CS8314** - *An expression of type '{0}' cannot be handled by a pattern of type*
+- **CS8306** - *Tuple element name is inferred.*
+- **CS8314** - *An expression of type cannot be handled by a pattern of type*
 - **CS8371** - *Field-targeted attributes on auto-properties are not supported in language version*
-- **CS8401** - *To use `@$` instead of `$@` for an interpolated verbatim string, please use language version '{0}' or greater.*
+- **CS8401** - *To use `@$` instead of `$@` for an interpolated verbatim string, use newer language version.*
 - **CS8511** - *An expression of type cannot be handled by a pattern of type.*
 - **CS8627** - *A nullable type parameter must be known to be a value type or non-nullable reference type*
-- **CS8630** - *Invalid '{0}' value: '{1}' for C# {2}. Please use language version '{3}' or greater*
+- **CS8630** - *Invalid nullable options. Use newer language version*
 - **CS8652** - *The modifier is not valid for this item.*
 - **CS8704** - *Type does not implement interface member. It cannot implicitly implement a non-public member.*
 - **CS8706** - *Type cannot implement interface member because a feature is not available in this version.*
@@ -132,7 +122,7 @@ In addition, the following errors and warnings relate to struct initialization c
 - [**CS0188**, **CS8885**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields are assigned to*
 - [**CS0843**, **CS8880**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
 
-The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version, as well as the version it supports. You may use this to validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
+The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version. You can validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
 There are two possible causes and three ways to address these errors and warnings.
 
@@ -146,7 +136,7 @@ If your selected framework doesn't match the language version required, you can 
 
 ## Select the matching language version
 
-You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will us the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
+You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will use the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
 

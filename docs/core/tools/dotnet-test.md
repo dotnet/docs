@@ -169,7 +169,16 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results. Unlike MSBuild, `dotnet test` doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
+  Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
+  
+  In order to pass command-line switches to the logger:
+  
+  * Use the full name of the switch, not the abbreviated form (for example, `verbosity` instead of `v`).
+  * Omit any leading dashes.
+  * Replace the space separating each switch with a semicolon `;`.
+  * If the switch has a value, replace the colon separator between that switch and its value with the equals sign `=`.
+  
+  For example, `-v:detailed --consoleLoggerParameters:ErrorsOnly` would become `verbosity=detailed;consoleLoggerParameters=ErrorsOnly`.
 
 - **`--no-build`**
 

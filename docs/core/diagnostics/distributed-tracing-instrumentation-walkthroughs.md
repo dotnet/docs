@@ -12,7 +12,7 @@ ms.date: 03/14/2021
 .NET applications can be instrumented using the <xref:System.Diagnostics.Activity?displayProperty=nameWithType> API to produce
 distributed tracing telemetry. Some instrumentation is built into standard .NET libraries, but you may want to add more to make
 your code more easily diagnosable. In this tutorial, you will add new custom distributed tracing instrumentation. See
-[the collection tutorial](distributed-tracing-instrumentation-walkthroughs.md) to learn more about recording the telemetry
+[the collection tutorial](distributed-tracing-collection-walkthroughs.md) to learn more about recording the telemetry
 produced by this instrumentation.
 
 ## Prerequisites

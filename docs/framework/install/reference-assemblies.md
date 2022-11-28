@@ -14,9 +14,9 @@ When you target a particular version of .NET Framework, by default your applicat
 Each project that should build against the reference assemblies NuGet package needs to include the following package reference.
 
 ```xml
-<PropertyGroup>
+<ItemGroup>
   <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
-</PropertyGroup>
+</ItemGroup>
 ```
 
 This can be done with the NuGet Package Manager UI in Visual Studio, with [dotnet add package](../../core/tools/dotnet-add-package.md) on the .NET SDK command line, or by manually editing the project file. The package contains reference assemblies for many versions of .NET Framework. The version to be actually used is determined by the TargetFramework (TargetFrameworks) property.

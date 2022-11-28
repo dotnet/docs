@@ -201,7 +201,7 @@ Up to this point, the above code snippet only shows the example of performing re
   [https://learn.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory source code in the `dotnet/runtime` GitHub repository**  
-  <https://github.com/dotnet/runtime/tree/release/6.0/src/libraries/Microsoft.Extensions.Http/>
+  <https://github.com/dotnet/runtime/tree/release/7.0/src/libraries/Microsoft.Extensions.Http/>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <https://thepollyproject.azurewebsites.net/>

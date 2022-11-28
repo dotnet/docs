@@ -468,7 +468,7 @@ D:\examples\ConsoleApp> dotnet run
 Hello, World!
 ```
 
-### Using only collect command with with include files option or configuration
+### Use collect command with include files option or configuration
 
 If you don't want to use the `instrument` command, then the files to be instrumented can be specified using `--include-files` option as follows:
 

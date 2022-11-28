@@ -76,7 +76,7 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 
 ### References
 
-- [Polly](https://dotnetfoundation.org/projects/polly)
+- [Polly](https://old.dotnetfoundation.org/projects/polly)
 
 - [Retry pattern](/azure/architecture/patterns/retry)
 

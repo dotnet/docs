@@ -118,7 +118,7 @@ For training, AutoML provides a sweepable pipeline with default trainers and sea
 - <xref:Microsoft.ML.AutoML.AutoCatalog.MultiClassification%2A>
 - <xref:Microsoft.ML.AutoML.AutoCatalog.Regression%2A>
 
-For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see the [machine learning tasks in ML.NET guide](/dotnet/machine-learning/resources/tasks.md).
+For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see [Machine learning tasks in ML.NET](../resources/tasks.md)
 
 ### Configure your experiment
 
@@ -169,8 +169,8 @@ Once the time to train expires, the result is a <xref:Microsoft.ML.AutoML.TrialR
 
 At this point, you can save your model or use it for making predictions. For more information on how use an ML.NET model, see the following guides:
 
-- [Save and load a trained model](/dotnet/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net.md)
-- [Make predictions with a trained model](/dotnet/machine-learning/how-to-guides/machine-learning-model-predictions-ml-net)
+- [Save and load trained models](save-load-machine-learning-models-ml-net.md)
+- [Make predictions with a trained model](machine-learning-model-predictions-ml-net.md)
 
 ## Modify column inference results
 

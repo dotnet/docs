@@ -22,7 +22,7 @@ If you have trouble remotely connecting to your device, you may have to configur
 
     `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system]"LocalAccountTokenFilterPolicy"=dword:00000001`
 
-    For more information about how to change this registry key, see [Description of User Account Control and remote restrictions](https://go.microsoft.com/fwlink/p/?linkid=259744) and [How to change the Remote UAC LocalAccountTokenFilterPolicy registry setting](https://go.microsoft.com/fwlink/p/?linkid=259760).
+    For more information about how to change this registry key, see [Description of User Account Control and remote restrictions](https://go.microsoft.com/fwlink/p/?linkid=259744).
 
 3. Restart your device.
 

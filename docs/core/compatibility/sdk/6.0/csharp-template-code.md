@@ -12,7 +12,7 @@ Starting in .NET 6, the project templates that ship with the .NET SDK use the la
 - [File-scoped namespaces](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/file-scoped-namespaces.md)
 - [Target-typed new expressions](/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)
 - [Nullable reference types](../../../../csharp/nullable-references.md)
-- [`async` Main method](/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main)
+- [Async Main return values](../../../../csharp/fundamentals/program-structure/main-command-line.md#async-main-return-values)
 
 Some of the latest C# language features are not supported by previous target frameworks, so you might experience issues in the following scenarios:
 

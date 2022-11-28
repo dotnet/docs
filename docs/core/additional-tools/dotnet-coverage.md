@@ -516,7 +516,7 @@ Hello, World!
 Code coverage results: output.coverage.
 ```
 
-### Using instrument command and collect command in server mode
+### Use the instrument and collect commands in server mode
 
 In this case, you can completely separate coverage collection from running your application. First, instrument your binary as follows:
 

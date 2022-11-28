@@ -425,7 +425,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Warning))
     .Build();
 
-await host..RunAsync();
+await host.RunAsync();
 ```
 
 ### Filter function

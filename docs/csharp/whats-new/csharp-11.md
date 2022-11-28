@@ -25,7 +25,7 @@ The following features were added in C# 11:
 
 You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the .NET 7 SDK, which can be downloaded from the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
-We're interested in your feedback on these features. If you find issues with any of these new features, create a [new issue](https://github.com/dotnet/roslyn/issues/new/choose) in the [dotnet/roslyn](https://github.com/dotnet/roslyn) repository.
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
 ## Generic attributes
 

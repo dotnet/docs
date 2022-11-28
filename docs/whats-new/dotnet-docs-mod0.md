@@ -1,6 +1,7 @@
 ---
 title: ".NET docs: What's new for September 2022"
 description: "What's new in the .NET docs for September 2022."
+ms.custom: September-2022
 ms.date: 10/01/2022
 ---
 

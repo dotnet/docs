@@ -111,8 +111,8 @@ By executing requests concurrently, grains that perform asynchronous operations 
 
 Multiple requests may be interleaved in the following cases:
 
-* The grain class is marked as <xref:Orleans.Concurrency.ReentrantAttribute>.
-* The interface method is marked as <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
+* The grain class is marked with <xref:Orleans.Concurrency.ReentrantAttribute>.
+* The interface method is marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
 * The grain's <xref:Orleans.Concurrency.MayInterleaveAttribute> predicate returns `true`.
 
 With reentrancy, the following case becomes a valid execution and the possibility of the above deadlock is removed.
@@ -171,7 +171,8 @@ In the end, the answer will depend on the specifics of the application.
 
 ### Interleaving methods
 
-Grain interface methods marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> will be interleaved regardless of whether the grain is reentrant or not. Consider the following example:
+Grain interface methods marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> will always interleave any other request and may always be interleaved by any other request, even requests for non-`[AlwaysInterleave]` methods.
+This is true regardless of whether the grain is reentrant or not. Consider the following example:
 
 ```csharp
 public interface ISlowpokeGrain : IGrainWithIntegerKey

@@ -224,7 +224,7 @@ The `ContainerLabel` node has two attributes:
 ```xml
 <ItemGroup>
     <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
-<ItemGroup>
+</ItemGroup>
 ```
 
 For a list of labels that are created by default, see [default container labels](#default-container-labels).

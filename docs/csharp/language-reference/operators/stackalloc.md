@@ -1,7 +1,7 @@
 ---
 title: "stackalloc expression - Allocate variable storage on the stack instead of the heap"
 description: "The C# stackalloc expression allocates a block of memory on the stack. Stackalloc memory is automatically discarded when that method returns."
-ms.date: 11/28/2028
+ms.date: 11/28/2022
 f1_keywords: 
   - "stackalloc_CSharpKeyword"
 helpviewer_keywords: 

@@ -32,6 +32,8 @@ C# 9.0 is supported on **.NET 5**. For more information, see [C# language versio
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
 ## Record types
 
 C# 9.0 introduces ***record types***. You use the `record` keyword to define a reference type that provides built-in functionality for encapsulating data. You can create record types with immutable properties by using positional parameters or standard property syntax:

@@ -93,4 +93,3 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [rinckd](https://github.com/rinckd) - David Rinck ![There were 1 pull requests merged by David Rinck.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [tangowithfoxtrot](https://github.com/tangowithfoxtrot) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [teo-tsirpanis](https://github.com/teo-tsirpanis) - Theodore Tsirpanis ![There were 1 pull requests merged by Theodore Tsirpanis.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Zhu-Panda](https://github.com/Zhu-Panda) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

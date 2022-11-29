@@ -1,7 +1,7 @@
 ---
-title: "=> operator - C# reference"
-description: "Learn about the C# => operator that is used in lambda expressions and expression body definitions."
-ms.date: 11/08/2021
+title: "The lambda operator - The `=>` operator is used to define a lambda expression in C#"
+description: "The C# => operator defines lambda expressions and expression bodied members. Lambda expressions define a block of code used as data."
+ms.date: 11/28/2022
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
 ---
-# => operator (C# reference)
+# Lambda expression (`=>`) operator defines a lambda expression
 
 The `=>` token is supported in two forms: as the [lambda operator](#lambda-operator) and as a separator of a member name and the member implementation in an [expression body definition](#expression-body-definition).
 
@@ -68,7 +68,7 @@ You can create expression body definitions for methods, operators, read-only pro
 
 ## Operator overloadability
 
-The `=>` operator cannot be overloaded.
+The `=>` operator can't be overloaded.
 
 ## C# language specification
 

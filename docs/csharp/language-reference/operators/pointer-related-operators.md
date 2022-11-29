@@ -1,7 +1,7 @@
 ---
-title: "Pointer related operators - C# reference"
-description: "Learn about C# operators that you can use when working with pointers."
-ms.date: 05/20/2019
+title: "Pointer related operators - access memory and dereference memory locations"
+description: "Learn about C# operators that you can use when working with pointers. You use these operators to access memory, index memory locations and dereference the storage at a memory location"
+ms.date: 11/28/2022
 author: pkulikov
 f1_keywords: 
   - "->_CSharpKeyword"
@@ -21,15 +21,9 @@ helpviewer_keywords:
   - "pointer decrement [C#]"
   - "pointer comparison [C#]"
 ---
-# Pointer related operators (C# reference)
+# Pointer related operators - take the address of variables, dereference storage locations, and access memory locations
 
-You can use the following operators to work with pointers:
-
-- Unary [`&` (address-of)](#address-of-operator-) operator: to get the address of a variable
-- Unary [`*` (pointer indirection)](#pointer-indirection-operator-) operator: to obtain the variable pointed by a pointer
-- The [`->` (member access)](#pointer-member-access-operator--) and [`[]` (element access)](#pointer-element-access-operator-) operators
-- Arithmetic operators [`+`, `-`, `++`, and `--`](#pointer-arithmetic-operators)
-- Comparison operators [`==`, `!=`, `<`, `>`, `<=`, and `>=`](#pointer-comparison-operators)
+You can use operators to work with pointers. The unary [`&` (address-of)](#address-of-operator-) operator gets the address of a variable. The unary [`*` (pointer indirection)](#pointer-indirection-operator-) operator obtains the variable pointed by a pointer. The [`->` (member access)](#pointer-member-access-operator--) and [`[]` (element access)](#pointer-element-access-operator-) operators access the variable referred to at a memory location. Arithmetic operators [`+`, `-`, `++`, and `--`](#pointer-arithmetic-operators) traverse memory locations based on the size of the objects stored at that memory location. Comparison operators [`==`, `!=`, `<`, `>`, `<=`, and `>=`](#pointer-comparison-operators) test equality for pointer values.
 
 For information about pointer types, see [Pointer types](../unsafe-code.md#pointer-types).
 
@@ -58,7 +52,7 @@ The unary pointer indirection operator `*` obtains the variable to which its ope
 
 [!code-csharp[pointer indirection](snippets/shared/PointerOperators.cs#PointerIndirection)]
 
-You cannot apply the `*` operator to an expression of type `void*`.
+You can't apply the `*` operator to an expression of type `void*`.
 
 The binary `*` operator computes the [product](arithmetic-operators.md#multiplication-operator-) of its numeric operands.
 
@@ -80,7 +74,7 @@ The following example demonstrates the usage of the `->` operator:
 
 [!code-csharp[pointer member access](snippets/shared/PointerOperators.cs#MemberAccess)]
 
-You cannot apply the `->` operator to an expression of type `void*`.
+You can't apply the `->` operator to an expression of type `void*`.
 
 ## Pointer element access operator []
 
@@ -95,7 +89,7 @@ In the preceding example, a [`stackalloc` expression](stackalloc.md) allocates a
 > [!NOTE]
 > The pointer element access operator doesn't check for out-of-bounds errors.
 
-You cannot use `[]` for pointer element access with an expression of type `void*`.
+You can't use `[]` for pointer element access with an expression of type `void*`.
 
 You can also use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
 
@@ -107,7 +101,7 @@ You can perform the following arithmetic operations with pointers:
 - Subtract two pointers
 - Increment or decrement a pointer
 
-You cannot perform those operations with pointers of type `void*`.
+You can't perform those operations with pointers of type `void*`.
 
 For information about supported arithmetic operations with numeric types, see [Arithmetic operators](arithmetic-operators.md).
 
@@ -144,7 +138,7 @@ The following example demonstrates the behavior of both postfix and prefix incre
 
 ## Pointer comparison operators
 
-You can use the `==`, `!=`, `<`, `>`, `<=`, and `>=` operators to compare operands of any pointer type, including `void*`. Those operators compare the addresses given by the two operands as if they were unsigned integers.
+You can use the `==`, `!=`, `<`, `>`, `<=`, and `>=` operators to compare operands of any pointer type, including `void*`. Those operators compare the addresses given by the two operands as if they're unsigned integers.
 
 For information about the behavior of those operators for operands of other types, see the [Equality operators](equality-operators.md) and [Comparison operators](comparison-operators.md) articles.
 
@@ -164,7 +158,7 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 ## Operator overloadability
 
-A user-defined type cannot overload the pointer related operators `&`, `*`, `->`, and `[]`.
+A user-defined type can't overload the pointer related operators `&`, `*`, `->`, and `[]`.
 
 ## C# language specification
 

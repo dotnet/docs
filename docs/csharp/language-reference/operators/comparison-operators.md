@@ -1,7 +1,7 @@
 ---
-title: "Comparison operators - C# reference"
-description: "Learn about C# comparison operators that you can use to check the order of numeric values."
-ms.date: 05/11/2020
+title: "Comparison operators - order items using the greater than and less than operators"
+description: "C# comparison operators check the order of values. The operators `>`, `<`, `>=`, `<=` compare the order of values. They determine if a value or greater than or less than another value."
+ms.date: 11/29/2022
 author: pkulikov
 f1_keywords: 
   - "<_CSharpKeyword"

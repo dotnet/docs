@@ -1,16 +1,15 @@
 ---
-title: "Lambda expressions - C# reference"
-description: Learn about C# lambda expressions that are used to create anonymous functions.
-ms.date: 11/08/2021
+title: "Lambda expressions - Lambda expressions and anonymous functions"
+description: C# lambda expressions that are used to create anonymous functions and expression bodied members.
+ms.date: 11/28/2022
 helpviewer_keywords:
   - "lambda expressions [C#]"
   - "outer variables [C#]"
   - "statement lambda [C#]"
   - "expression lambda [C#]"
   - "expressions [C#], lambda"
-ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
 ---
-# Lambda expressions (C# reference)
+# Lambda expressions and anonymous functions
 
 You use a *lambda expression* to create an anonymous function. Use the [lambda declaration operator `=>`](lambda-operator.md) to separate the lambda's parameter list from its body. A lambda expression can be of any of the following two forms:
 
@@ -163,7 +162,7 @@ For more information about C# tuples, see [Tuple types](../../language-reference
 
 ## Lambdas with the standard query operators
 
-LINQ to Objects, among other implementations, have an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%602> delegate type:
+LINQ to Objects, among other implementations, has an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%602> delegate type:
 
 ```csharp
 public delegate TResult Func<in T, out TResult>(T arg)
@@ -252,7 +251,7 @@ Func<string, int> parse = s => int.Parse(s);
 
 ## Explicit return type
 
-Typically, the return type of a lambda expression is obvious and inferred. For some expressions, that doesn't work:
+Typically, the return type of a lambda expression is obvious and inferred. For some expressions that doesn't work:
 
 ```csharp
 var choose = (bool b) => b ? 1 : "two"; // ERROR: Can't infer return type
@@ -269,15 +268,14 @@ var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
 Beginning with C# 10, you can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
 
 ```csharp
-Func<string, int> parse = [Example(1)] (s) => int.Parse(s);
-var choose = [Example(2)][Example(3)] object (bool b) => b ? 1 : "two";
+Func<string?, int?> parse = [ProvidesNullCheck] (s) => (s is not null) ? int.Parse(s) : null;
 ```
 
 You can also add attributes to the input parameters or return value, as the following example shows:
 
 ```csharp
-var sum = ([Example(1)] int a, [Example(2), Example(3)] int b) => a + b;
-var inc = [return: Example(1)] (int s) => s++;
+var concat = ([DisallowNull] string a, [DisallowNull] string b) => a + b;
+var inc = [return: NotNullifNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : null;
 ```
 
 As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.
@@ -287,7 +285,7 @@ As the preceding examples show, you must parenthesize the input parameters when 
 
 ## Capture of outer variables and variable scope in lambda expressions
 
-Lambdas can refer to *outer variables*. These are the variables that are in scope in the method that defines the lambda expression, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:
+Lambdas can refer to *outer variables*. These *outer variables* are the variables that are in scope in the method that defines the lambda expression, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:
 
 [!code-csharp[variable scope](snippets/lambda-expressions/VariableScopeWithLambdas.cs#VariableScope)]
 

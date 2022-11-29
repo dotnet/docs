@@ -1,7 +1,7 @@
 ---
-title: "nameof expression - C# reference"
-description: "Learn about the C# nameof expression that produces the name of its operand."
-ms.date: 05/20/2022
+title: "The nameof expression - evaluate the text name of a symbol"
+description: "The C# `nameof` expression produces the name of its operand. You use it whenever you need to use the nam of a symbol as text"
+ms.date: 11/28/2022
 f1_keywords:
   - "nameof_CSharpKeyword"
   - "nameof"
@@ -10,17 +10,15 @@ helpviewer_keywords:
 ---
 # nameof expression (C# reference)
 
-A `nameof` expression produces the name of a variable, type, or member as the string constant:
+<!-- Note that all remaining acrolinx issues are because acrolinx things "nameof" is mis-spelled. -->
+
+A `nameof` expression produces the name of a variable, type, or member as the string constant. A `nameof` expression is evaluated at compile time and has no effect at run time. When the operand is a type or a namespace, the produced name isn't [fully qualified](~/_csharpstandard/standard/basic-concepts.md#783-fully-qualified-names). The following example shows the use of a `nameof` expression:
 
 [!code-csharp-interactive[nameof expression](snippets/shared/NameOfOperator.cs#Examples)]
 
-As the preceding example shows, in the case of a type and a namespace, the produced name is not [fully qualified](~/_csharpstandard/standard/basic-concepts.md#783-fully-qualified-names).
-
-In the case of [verbatim identifiers](../tokens/verbatim.md), the `@` character is not the part of a name, as the following example shows:
+When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't the part of a name, as the following example shows:
 
 [!code-csharp-interactive[nameof verbatim](snippets/shared/NameOfOperator.cs#Verbatim)]
-
-A `nameof` expression is evaluated at compile time and has no effect at run time.
 
 You can use a `nameof` expression to make the argument-checking code more maintainable:
 

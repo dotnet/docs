@@ -1,14 +1,14 @@
 ---
-title: "switch expression - C# reference"
-description: Learn about the C# switch expression that provides switch-like semantics based on pattern matching.
-ms.date: 04/16/2021
+title: "switch expression - Evaluate a pattern match expression using the `switch` expression"
+description: Learn about the C# `switch` expression that provides switch-like semantics based on pattern matching. You can compute a value based on which pattern an input variable matches.
+ms.date: 11/28/2022
 f1_keywords:
   - "switch-expression_CSharpKeyword"
 helpviewer_keywords:
   - "switch expression [C#]"
   - "pattern matching [C#]"
 ---
-# switch expression (C# reference)
+# switch expression - pattern matching expressions using the `switch` keyword
 
 You use the `switch` expression to evaluate a single expression from a list of candidate expressions based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../statements/selection-statements.md#the-switch-statement) section of the [Selection statements](../statements/selection-statements.md) article.
 
@@ -35,7 +35,7 @@ The compiler generates an error when a lower `switch` expression arm can't be ch
 
 ## Case guards
 
-A pattern may be not expressive enough to specify the condition for the evaluation of an arm's expression. In such a case, you can use a case guard. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A pattern may be not expressive enough to specify the condition for the evaluation of an arm's expression. In such a case, you can use a *case guard*. A *case guard* is another condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="CaseGuardExample":::
 
@@ -43,7 +43,7 @@ The preceding example uses [property patterns](patterns.md#property-pattern) wit
 
 ## Non-exhaustive switch expressions
 
-If none of a `switch` expression's patterns matches an input value, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>. In most cases, the compiler generates a warning if a `switch` expression doesn't handle all possible input values. [List patterns](patterns.md#list-patterns) do not generate a warning when all possible inputs aren't handled.
+If none of a `switch` expression's patterns matches an input value, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>. In most cases, the compiler generates a warning if a `switch` expression doesn't handle all possible input values. [List patterns](patterns.md#list-patterns) don't generate a warning when all possible inputs aren't handled.
 
 > [!TIP]
 > To guarantee that a `switch` expression handles all possible input values, provide a `switch` expression arm with a [discard pattern](patterns.md#discard-pattern).

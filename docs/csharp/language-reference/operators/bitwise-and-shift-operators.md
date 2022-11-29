@@ -1,7 +1,7 @@
 ---
-title: "Bitwise and shift operators - C# reference"
-description: "Learn about C# operators that perform bitwise logical or shift operations with operands of integral types."
-ms.date: 06/10/2022
+title: "Bitwise and shift operators - perform boolean (AND, NOT, OR, XOR) and shift operations on individual bits in integral types"
+description: "Learn about C# operators that perform bitwise logical (AND - `&`, NOT - `~`, OR - `|`, XOR - `^`) or shift operations( `<<`, and `>>`) with operands of integral types. "
+ms.date: 11/29/2022
 author: pkulikov
 f1_keywords: 
   - "~_CSharpKeyword"
@@ -38,11 +38,7 @@ helpviewer_keywords:
 ---
 # Bitwise and shift operators (C# reference)
 
-The following operators perform bitwise or shift operations with operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type:
-
-- Unary [`~` (bitwise complement)](#bitwise-complement-operator-) operator
-- Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-), and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators
-- Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators
+The bitwise and shift operators take operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type. They include unary [`~` (bitwise complement)](#bitwise-complement-operator-), binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-), and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators, and the binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators.
 
 Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions) section of the [C# language specification](~/_csharpstandard/standard/README.md). The compound operators (such as `>>=`) don't convert their arguments to `int` or have the result type as `int`.
 

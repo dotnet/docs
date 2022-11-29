@@ -1,7 +1,7 @@
 ---
-title: "Patterns - C# reference"
-description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 10/21/2022
+title: "Patterns - Pattern matching using the is and switch expressions."
+description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
+ms.date: 11/28/2022
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -12,28 +12,9 @@ helpviewer_keywords:
   - "or keyword [C#]"
   - "not keyword [C#]"
 ---
-# Patterns (C# reference)
+# Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
 
-The following C# expressions and statements support pattern matching:
-
-- [`is` expression](is.md)
-- [switch statement](../statements/selection-statements.md#the-switch-statement)
-- [switch expression](switch-expression.md)
-
-In those constructs, you can match an input expression against any of the following patterns:
-
-- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
-- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression. Introduced in C# 9.0.
-- [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant.
-- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
-- [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
-- [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns.
-- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
-- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
-- [Discard pattern](#discard-pattern): to match any expression.
-- [List patterns](#list-patterns): to test if sequence elements match corresponding nested patterns. Introduced in C# 11.
-
-[Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
+The following C# expressions and statements support pattern matching. The [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md). In those constructs, you can match an input expression against many patterns. The [declaration pattern](#declaration-and-type-patterns) checks the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable. The [type pattern](#declaration-and-type-patterns) checks the run-time type of an expression (introduced in C# 9.0). The [constant pattern](#constant-pattern) tests if an expression result equals a specified constant. The [relational patterns](#relational-patterns) compares an expression result with a specified constant (introduced in C# 9.0). [Logical patterns](#logical-patterns) test if an expression matches a logical combination of patterns (introduced in C# 9.0). The [Property pattern](#property-pattern) tests if an expression's properties or fields match nested patterns. [Positional patterns](#positional-pattern)deconstruct an expression result and test if the resulting values match nested patterns. The [List patterns](#list-patterns) tests if a sequence's elements match corresponding nested patterns (introduced in C# 11). The [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable. The [Discard pattern](#discard-pattern) matches any expression. [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
 For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md).
 
@@ -176,7 +157,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-Beginning with C# 10, you can reference nested properties or fields within a property pattern. This is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
+Beginning with C# 10, you can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
@@ -227,7 +208,7 @@ You use a *`var` pattern* to match any expression, including `null`, and assign 
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="KeepInterimResult":::
 
-A `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations. You can also use a `var` pattern when you need to perform additional checks in `when` case guards of a `switch` expression or statement, as the following example shows:
+A `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations. You can also use a `var` pattern when you need to perform more checks in `when` case guards of a `switch` expression or statement, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="WithCaseGuards":::
 

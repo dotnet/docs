@@ -1,15 +1,14 @@
 ---
-title: "await operator - C# reference"
-description: "Learn about the C# await operator that suspends evaluation of the enclosing async method."
-ms.date: 03/02/2022
+title: "await operator - asynchronously wait for a task to complete "
+description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
+ms.date: 11/29/2022
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
   - "await keyword [C#]"
   - "await [C#]"
-ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
 ---
-# await operator (C# reference)
+# await operator - asynchronously await for a task to complete
 
 The `await` operator suspends evaluation of the enclosing [async](../keywords/async.md) method until the asynchronous operation represented by its operand completes. When the asynchronous operation completes, the `await` operator returns the result of the operation, if any. When the `await` operator is applied to the operand that represents an already completed operation, it returns the result of the operation immediately without suspension of the enclosing method. The `await` operator doesn't block the thread that evaluates the async method. When the `await` operator suspends the enclosing async method, the control returns to the caller of the method.
 

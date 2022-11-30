@@ -61,6 +61,8 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
           href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        - name: BrotliStream no longer allows undefined CompressionLevel values
+          href: core-libraries/7.0/brotlistream-ctor.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
@@ -869,6 +871,8 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
           href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        - name: BrotliStream no longer allows undefined CompressionLevel values
+          href: core-libraries/7.0/brotlistream-ctor.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext

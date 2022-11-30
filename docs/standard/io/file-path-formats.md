@@ -28,7 +28,7 @@ If all three components are present, the path is absolute. If no volume or drive
 |Path  |Description  |
 | -- | -- |
 | `C:\Documents\Newsletters\Summer2018.pdf` | An absolute file path from the root of drive `C:`. |
-| `\Program Files\Custom Utilities\StringFinder.exe` | An absolute path from the root of the current drive. |
+| `\Program Files\Custom Utilities\StringFinder.exe` | A relative path from the root of the current drive. |
 | `2018\January.xlsx` | A relative path to a file in a subdirectory of the current directory. |
 | `..\Publications\TravelBrochure.pdf` | A relative path to a file in a directory starting from the current directory. |
 | `C:\Projects\apilibrary\apilibrary.sln` | An absolute path to a file from the root of drive `C:`. |

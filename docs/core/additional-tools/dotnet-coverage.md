@@ -18,7 +18,7 @@ dotnet-coverage [-h, --help] [--version] <command>
 
 The `dotnet-coverage` tool:
 
-* Enables the collection of code coverage data of a running process on Windows (x86, x64 and Arm64), Linux (x64) and macOS (x64).
+* Enables the cross-platform collection of code coverage data of a running process.
 * Provides cross-platform merging of code coverage reports.
 
 ## Options
@@ -48,6 +48,7 @@ dotnet tool install --global dotnet-coverage
 | [dotnet-coverage connect](#dotnet-coverage-connect)       |
 | [dotnet-coverage snapshot](#dotnet-coverage-snapshot)     |
 | [dotnet-coverage shutdown](#dotnet-coverage-shutdown)     |
+| [dotnet-coverage instrument](#dotnet-coverage-instrument) |
 
 ## dotnet-coverage merge
 
@@ -101,7 +102,7 @@ dotnet-coverage merge
 
 ## dotnet-coverage collect
 
-The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command supports dynamic and static instrumentation. Static instrumentation is available on all platforms. You can specify files to be statically instrumented using `include-files` option. Dynamic instrumentation is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
 
 ### Synopsis
 
@@ -114,8 +115,9 @@ The `collect` command will collect code coverage for the given process executed 
 ```console
 dotnet-coverage collect
     [-s|--settings <settings>] [-id|--session-id <session-id>]
-    [-o|--output <output>] [-f|--output-format <output-format>]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    [-if|--include-files <include-files>] [-o|--output <output>]
+    [-f|--output-format <output-format>] [-l|--log-file <log-file>]
+    [-ll|--log-level <log-level>] [-?|-h|--help]
     <command> <args>
 ```
 
@@ -127,8 +129,9 @@ The `collect` command hosts a server for code coverage collection. Clients can c
 dotnet-coverage collect
     [-s|--settings <settings>] [-id|--session-id <session-id>]
     [-sv|--server-mode] [-b|--background] [-t|--timeout]
-    [-o|--output <output>] [-f|--output-format <output-format>]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
+    [-if|--include-files <include-files>] [-o|--output <output>]
+    [-f|--output-format <output-format>] [-l|--log-file <log-file>]
+    [-ll|--log-level <log-level>] [-?|-h|--help]
 ```
 
 ### Arguments
@@ -163,6 +166,10 @@ dotnet-coverage collect
 
   Timeout (in milliseconds) for interprocess communication between clients and the server.
 
+* **`-if|--include-files <include-files>`**
+
+  Specifies list of files to be statically instrumented.
+
 * **`-o|--output <output>`**
 
   Sets the code coverage report output file.
@@ -181,7 +188,10 @@ dotnet-coverage collect
 
 ## dotnet-coverage connect
 
-The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
+The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. The command supports only .NET modules. Native modules are not supported.
+
+> [!NOTE]
+> Command will use dynamic instrumentation for all subprocesses which is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). If you need to statically instrument any .NET module use `instrument` command (with corresponding session ID option) before executing `connect` command.
 
 ### Synopsis
 
@@ -216,6 +226,8 @@ dotnet-coverage connect
 * **`-t|--timeout`**
 
   Timeout (in milliseconds) for interprocess communication between the client and the server.* **`-l|--log-file <log-file>`**
+
+* **`-l|--log-file <log-file>`**
 
   Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
 
@@ -288,6 +300,48 @@ dotnet-coverage shutdown
 * **`-t|--timeout`**
 
   Timeout (in milliseconds) for interprocess communication with the server.
+
+* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+## dotnet-coverage instrument
+
+The instrument command is used to instrument binary on disk.
+
+### Synopsis
+
+```console
+dotnet-coverage instrument
+    [-s|--settings <settings>] [-id|--session-id <session-id>]
+    [-o|--output <output>] [-l|--log-file <log-file>]
+    [-ll|--log-level <log-level>] [-?|-h|--help]
+    <input-file>
+```
+
+### Arguments
+
+* **`<input-file>`**
+
+  The input binary.
+
+### Options
+
+* **`-s|--settings <settings>`**
+
+  Sets the path to the XML code coverage settings.
+
+* **`-id|--session-id <session-id>`**
+
+  Specifies the code coverage session ID. If not provided, the tool will generate a random GUID.
+
+* **`-o|--output <output>`**
+
+  Sets the path to output file binary. If not provided, instrumentation will be performed in-place.
 
 * **`-l|--log-file <log-file>`**
 
@@ -405,6 +459,103 @@ D:\serverexample\server> dotnet-coverage shutdown serverdemo
 D:\serverexample\server>
 ```
 
+## Static code coverage for managed assemblies
+
+The dotnet-coverage tool can be used to collect code coverage for managed assemblies using static instrumentation. There are three different methods available that you can use. To demonstrate, let's assume we have a simple C# console application:
+
+```console
+D:\examples\ConsoleApp> dotnet run
+Hello, World!
+```
+
+### Use collect command with include files option or configuration
+
+If you don't want to use the `instrument` command, then the files to be instrumented can be specified using `--include-files` option as follows:
+
+```console
+D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net7.0\*.dll dotnet run
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+SessionId: 57862ec0-e512-49a5-8b66-2804174680fc
+Hello, World!
+Code coverage results: output.coverage.
+```
+
+You can also specify files to be instrumented using configuration as follows:
+
+```xml
+<ModulePaths>
+  <IncludeDirectories>
+    <Directory>D:\examples\ConsoleApp\bin\Debug\net7.0</Directory>
+  </IncludeDirectories>
+</ModulePaths>
+```
+
+### Using instrument and collect commands
+
+In this case, first binary needs to be instrumented as follows:
+
+```console
+D:\examples\ConsoleApp> dotnet-coverage instrument .\bin\Debug\net7.0\ConsoleApp.dll
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Input file successfully instrumented.
+```
+
+Then you can collect code coverage as follows:
+
+```console
+D:\examples\ConsoleApp> dotnet-coverage collect .\bin\Debug\net7.0\ConsoleApp.exe
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+SessionId: a09e6bef-ff64-4b5f-8bb8-fc495ebb50ba
+Hello, World!
+Code coverage results: output.coverage.
+```
+
+### Use the instrument and collect commands in server mode
+
+In this case, you can completely separate coverage collection from running your application. First, instrument your binary as follows:
+
+```console
+D:\examples\ConsoleApp> dotnet-coverage instrument --session-id 73c34ce5-501c-4369-a4cb-04d31427d1a4 .\bin\Debug\net7.0\ConsoleApp.dll
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Input file successfully instrumented.
+```
+
+> [!NOTE]
+> Session ID needs to be used in this scenario to make sure that the application can connect and provide data to external collector.
+
+In the second step, you need to start coverage collector as follows:
+
+```console
+D:\examples\ConsoleApp> dotnet-coverage collect --session-id 73c34ce5-501c-4369-a4cb-04d31427d1a4 --server-mode
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+SessionId: 73c34ce5-501c-4369-a4cb-04d31427d1a4
+```
+
+Then the application can be started as follows:
+
+```console
+D:\examples\ConsoleApp> .\bin\Debug\net7.0\ConsoleApp.exe
+Hello, World!
+```
+
+Finally, the collector can be closed as follows:
+
+```console
+D:\examples\ConsoleApp> dotnet-coverage shutdown 73c34ce5-501c-4369-a4cb-04d31427d1a4
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+```
+
 ### Settings
 
 You can specify a file with settings when you use the `collect` command. The settings file can be used to exclude some modules or methods from code coverage analysis. The format is the same as the data collector configuration inside a *runsettings* file. For more information, see [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis). Here's an example:
@@ -440,6 +591,10 @@ You can specify a file with settings when you use the `collect` command. The set
             <Exclude>
                 <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
             </Exclude>
+            <!-- Additional directories from .NET assemblies should be statically instrumented: -->
+            <IncludeDirectories>
+                <Directory Recursive="true">C:\temp</Directory>
+            </IncludeDirectories>
         </ModulePaths>
 
         <!-- Match fully qualified names of functions: -->
@@ -497,6 +652,9 @@ You can specify a file with settings when you use the `collect` command. The set
                 <PublicKeyToken>^E361AF139669C375$</PublicKeyToken>
             </Exclude>
         </PublicKeyTokens>
+
+        <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
+        <EnableDynamicManagedInstrumentation>True</EnableDynamicManagedInstrumentation>
 
     </CodeCoverage>
 </Configuration>

@@ -23,7 +23,15 @@ helpviewer_keywords:
 ---
 # Pointer related operators - take the address of variables, dereference storage locations, and access memory locations
 
-You can use operators to work with pointers. The unary [`&` (address-of)](#address-of-operator-) operator gets the address of a variable. The unary [`*` (pointer indirection)](#pointer-indirection-operator-) operator obtains the variable pointed by a pointer. The [`->` (member access)](#pointer-member-access-operator--) and [`[]` (element access)](#pointer-element-access-operator-) operators access the variable referred to at a memory location. Arithmetic operators [`+`, `-`, `++`, and `--`](#pointer-arithmetic-operators) traverse memory locations based on the size of the objects stored at that memory location. Comparison operators [`==`, `!=`, `<`, `>`, `<=`, and `>=`](#pointer-comparison-operators) test equality for pointer values.
+The pointer operators enable you to take the address of a variable (`&`), dereference a pointer (`*`), compare pointer values, and add or subtract pointers and integers.
+
+You use the following operators to work with pointers:
+
+- Unary [`&` (address-of)](#address-of-operator-) operator: to get the address of a variable
+- Unary [`*` (pointer indirection)](#pointer-indirection-operator-) operator: to obtain the variable pointed by a pointer
+- The [`->` (member access)](#pointer-member-access-operator--) and [`[]` (element access)](#pointer-element-access-operator-) operators
+- Arithmetic operators [`+`, `-`, `++`, and `--`](#pointer-arithmetic-operators)
+- Comparison operators [`==`, `!=`, `<`, `>`, `<=`, and `>=`](#pointer-comparison-operators)
 
 For information about pointer types, see [Pointer types](../unsafe-code.md#pointer-types).
 

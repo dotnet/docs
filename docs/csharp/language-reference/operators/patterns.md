@@ -14,7 +14,28 @@ helpviewer_keywords:
 ---
 # Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
 
-The following C# expressions and statements support pattern matching. The [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md). In those constructs, you can match an input expression against many patterns. The [declaration pattern](#declaration-and-type-patterns) checks the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable. The [type pattern](#declaration-and-type-patterns) checks the run-time type of an expression (introduced in C# 9.0). The [constant pattern](#constant-pattern) tests if an expression result equals a specified constant. The [relational patterns](#relational-patterns) compares an expression result with a specified constant (introduced in C# 9.0). [Logical patterns](#logical-patterns) test if an expression matches a logical combination of patterns (introduced in C# 9.0). The [Property pattern](#property-pattern) tests if an expression's properties or fields match nested patterns. [Positional patterns](#positional-pattern)deconstruct an expression result and test if the resulting values match nested patterns. The [List patterns](#list-patterns) tests if a sequence's elements match corresponding nested patterns (introduced in C# 11). The [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable. The [Discard pattern](#discard-pattern) matches any expression. [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
+You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using boolean logic keywords `and`, `or`, and `not`.
+
+The following C# expressions and statements support pattern matching:
+
+- [`is` expression](is.md)
+- [switch statement](../statements/selection-statements.md#the-switch-statement)
+- [switch expression](switch-expression.md)
+
+In those constructs, you can match an input expression against any of the following patterns:
+
+- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
+- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression. Introduced in C# 9.0.
+- [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant.
+- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
+- [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
+- [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns.
+- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
+- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
+- [Discard pattern](#discard-pattern): to match any expression.
+- [List patterns](#list-patterns): to test if sequence elements match corresponding nested patterns. Introduced in C# 11.
+
+[Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
 For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md).
 

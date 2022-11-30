@@ -35,7 +35,14 @@ helpviewer_keywords:
 ---
 # Member access operators and expressions - the dot, indexer, and invocation operators.
 
-You use several operators and expressions to access a type member. The [`.` (member access)](#member-access-expression-) accesses a member of a namespace or a type. The [`[]` (array element or indexer access)](#indexer-operator-) accesses an array element or a type indexer. The [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-) perform a member or element access operation only if an operand is non-null. The [`()` (invocation)](#invocation-expression-) calls an accessed method or invokes a delegate. The [`^` (index from end)](#index-from-end-operator-) indicates that the element position is from the end of a sequence. The [`..` (range)](#range-operator-) specifies a range of indices that you can use to obtain a range of sequence elements.
+You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`).
+
+- [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
+- [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
+- [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-): to perform a member or element access operation only if an operand is non-null
+- [`()` (invocation)](#invocation-expression-): to call an accessed method or invoke a delegate
+- [`^` (index from end)](#index-from-end-operator-): to indicate that the element position is from the end of a sequence
+- [`..` (range)](#range-operator-): to specify a range of indices that you can use to obtain a range of sequence elements
 
 ## Member access expression `.`
 

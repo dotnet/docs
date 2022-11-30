@@ -23,7 +23,7 @@ helpviewer_keywords:
 ---
 # Type-testing operators and cast expressions - `is`, `as`, `typeof` and casts
 
-These operators and expressions perform type checking or type conversion. The[is operator](#is-operator) checks if the run-time type of an expression is compatible with a given type. The [as operator](#as-operator) explicitly converts an expression to a given type if its run-time type is compatible with that type. [Cast expressions](#cast-expression) perform an explicit conversion to a target type. The [typeof operator](#typeof-operator) obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type.
+These operators and expressions perform type checking or type conversion. The `is` [operator](#is-operator) checks if the run-time type of an expression is compatible with a given type. The `as` [operator](#as-operator) explicitly converts an expression to a given type if its run-time type is compatible with that type. [Cast expressions](#cast-expression) perform an explicit conversion to a target type. The `typeof` [operator](#typeof-operator) obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type.
 
 ## is operator
 

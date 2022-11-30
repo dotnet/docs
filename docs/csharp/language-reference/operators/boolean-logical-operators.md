@@ -38,7 +38,11 @@ helpviewer_keywords:
 ---
 # Boolean logical operators - AND, OR, NOT, XOR
 
-The logical Boolean operators perform logical operations with [bool](../builtin-types/bool.md) operands. The unary [`!` (logical negation)](#logical-negation-operator-) operator reverses `true` and `false`. The binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators always evaluate both operands. The binary [`&&` (conditional logical AND)](#conditional-logical-and-operator-) and [`||` (conditional logical OR)](#conditional-logical-or-operator-) operators evaluate the right-hand operand only if it's necessary.
+The logical Boolean operators perform logical operations with [bool](../builtin-types/bool.md) operands. The operators include the unary logical negation (`!`), binary logical AND (`&`), OR (`|`), and exclusive OR (`^`), and the binary conditional logical AND (`&&`) and OR (`||`).
+
+- Unary [`!` (logical negation)](#logical-negation-operator-) operator.
+- Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.
+- Binary [`&&` (conditional logical AND)](#conditional-logical-and-operator-) and [`||` (conditional logical OR)](#conditional-logical-or-operator-) operators. Those operators evaluate the right-hand operand only if it's necessary.
 
 For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
 

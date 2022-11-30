@@ -311,7 +311,7 @@ The program displays the string that the user enters. What happens if the user d
 
 ## Step through a program
 
-Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
+Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program. While not currently debugging, and focus is on Visual Studio:
 
 1. Choose **Debug** > **Step Into**. Another way to debug one statement at a time is by pressing <kbd>F11</kbd>.
 

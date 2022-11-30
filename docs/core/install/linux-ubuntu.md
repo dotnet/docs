@@ -47,8 +47,8 @@ The following table is a list of currently supported .NET releases and the versi
 The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
 
 ```bash
-sudo apt update && \
-  sudo apt install -y dotnet-sdk-6.0
+sudo apt-get update && \
+  sudo apt-get install -y dotnet-sdk-6.0
 ```
 
 ### Install the runtime
@@ -56,14 +56,14 @@ sudo apt update && \
 The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
 
 ```bash
-sudo apt update && \
-  sudo apt install -y aspnetcore-runtime-6.0
+sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-6.0
 ```
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
 
 ```bash
-sudo apt install -y dotnet-runtime-6.0
+sudo apt-get install -y dotnet-runtime-6.0
 ```
 
 ## 22.04 (Microsoft package feed)
@@ -129,8 +129,8 @@ rm packages-microsoft-prod.deb
 When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
 
 ```bash
-sudo apt update
-sudo apt upgrade
+sudo apt-get update
+sudo apt-get upgrade
 ```
 
 If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
@@ -151,15 +151,15 @@ This section provides information on common errors you may get while using APT t
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 
 ```bash
-sudo apt install -y gpg
+sudo apt-get install -y gpg
 wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 wget https://packages.microsoft.com/config/ubuntu/{os-version}/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt update && \
-  sudo apt install -y {dotnet-package}
+sudo apt-get update && \
+  sudo apt-get install -y {dotnet-package}
 ```
 
 ### Failed to fetch

@@ -11,7 +11,7 @@ ms.date: 10/06/2021
 
 Follow the instructions to install [.NET Framework 3.5 on Windows 11](dotnet-35-windows.md).
 
-.NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
+.NET Framework 3.5 supports apps built for .NET Framework 2.0 through 3.5.
 
 ## See also
 

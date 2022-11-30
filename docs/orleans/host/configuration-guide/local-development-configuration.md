@@ -6,10 +6,10 @@ ms.date: 03/16/2022
 
 # Local development configuration
 
-For a working sample application that targets Orleans 3.0, see [Orleans: Hello World](https://github.com/dotnet/orleans/tree/main/samples/HelloWorld). The sample hosts the client and the silo in .NET console applications that work in different platforms, while the grains and interfaces target .NET Standard 2.0.
+For a working sample application that targets Orleans 7.0, see [Orleans: Hello World](https://github.com/dotnet/samples/tree/main/orleans/HelloWorld). The sample hosts the client and the silo in .NET console applications that work in different platforms, while the grains and interfaces target .NET Standard 2.0.
 
 > [!TIP]
-> For older versions of Orleans, please see [Orleans sample projects](https://github.com/dotnet/orleans/tree/main/samples).
+> For older versions of Orleans, please see [Orleans sample projects](https://github.com/dotnet/samples/tree/main/orleans).
 
 ## Silo configuration
 

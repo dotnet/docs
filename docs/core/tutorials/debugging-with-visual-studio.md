@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio
 description: Learn how to debug a .NET console app using Visual Studio.
-ms.date: 11/11/2022
+ms.date: 11/30/2022
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -14,6 +14,9 @@ recommendations: false
 ::: zone pivot="dotnet-7-0"
 
 This tutorial introduces the debugging tools available in Visual Studio.
+
+> [!IMPORTANT]
+> All of the keyboard shortcuts are based on the defaults from Visual Studio. Your keyboard shortcuts may vary, for more information see [Keyboard shortcuts in Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio).
 
 ## Prerequisites
 
@@ -86,7 +89,7 @@ The program displays the string that the user enters. What happens if the user d
 1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5.
 
    ```csharp
-   String.IsNullOrEmpty(name)
+   string.IsNullOrEmpty(name)
    ```
 
    ```vb

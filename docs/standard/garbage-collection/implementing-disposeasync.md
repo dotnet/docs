@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/26/2022
+ms.date: 11/30/2022
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -68,7 +68,11 @@ The `DisposeAsyncCore()` method is intended to perform the asynchronous cleanup 
 
 ## Implement the async dispose pattern
 
-All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the async dispose pattern for any potential base class, you must provide the `protected virtual ValueTask DisposeAsyncCore()` method. Here is an example implementation of the async dispose pattern that using a custom `NoopAsyncDisposable` type that implements `DisposeAsync` by returning <xref:System.Threading.Tasks.ValueTask.CompletedTask?displayProperty=nameWithType>.
+All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the async dispose pattern for any potential base class, you must provide the `protected virtual ValueTask DisposeAsyncCore()` method. Some of the following examples use a `NoopAsyncDisposable` class that is defined as follows:
+
+:::code language="csharp" source="snippets/dispose-async/NoopAsyncDisposable.cs":::
+
+Here is an example implementation of the async dispose pattern that using a custom `NoopAsyncDisposable` type that implements `DisposeAsync` by returning <xref:System.Threading.Tasks.ValueTask.CompletedTask?displayProperty=nameWithType>.
 
 :::code language="csharp" source="snippets/dispose-async/ExampleAsyncDisposable.cs":::
 

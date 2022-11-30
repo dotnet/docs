@@ -628,6 +628,7 @@ However, falling back to the nearest ancestor admits the possibility of "diamond
 [JsonPolymorphic(
     UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)]
 [JsonDerivedType(typeof(BasePoint))]
+[JsonDerivedType(typeof(IPointWithTimeSeries))]
 public interface IPoint { }
 
 public interface IPointWithTimeSeries : IPoint { }
@@ -641,6 +642,7 @@ public class BasePointWithTimeSeries : BasePoint, IPointWithTimeSeries { }
 <JsonPolymorphic(
     UnknownDerivedTypeHandling:=JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)>
 <JsonDerivedType(GetType(BasePoint))>
+<JsonDerivedType(GetType(IPointWithTimeSeries))>
 Public Interface IPoint
 End Interface
 

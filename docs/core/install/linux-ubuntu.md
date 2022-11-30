@@ -125,9 +125,7 @@ sudo apt-get install -y dotnet-runtime-6.0
 
 ## 22.04 (Microsoft package feed)
 
-> [!NOTE]
-> Warning: .NET 6 is included in the Ubuntu 22.04 package manager feeds. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
-
+> [!IMPORTANT]
 > .NET 6 is included in the Ubuntu 22.04 package manager feeds, but .NET 7 isn't. To install .NET 7 you must use the Microsoft package feed. If you've previously installed .NET from the Ubuntu package manager feed, you may run into issues swapping to the Microsoft package manager feed for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699) and [Troubleshoot .NET package mixups](linux-package-mixup.md#whats-going-on).
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]

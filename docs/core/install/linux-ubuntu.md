@@ -105,7 +105,7 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y dotnet-sdk-6
+  sudo apt-get install -y dotnet-sdk-6.0
 ```
 
 ### Install the runtime

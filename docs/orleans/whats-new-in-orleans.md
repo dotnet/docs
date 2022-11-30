@@ -585,7 +585,7 @@ For transactions coordinated by the client, the client must add the required ser
 clientBuilder.UseTransactions();
 ```
 
-The [BankAccount](https://github.com/dotnet/orleans/tree/main/samples/BankAccount) sample demonstrates the usage of `ITransactionClient`. For more information, see [Orleans transactions](grains/transactions.md).
+The [BankAccount](https://github.com/dotnet/samples/tree/main/orleans/BankAccount) sample demonstrates the usage of `ITransactionClient`. For more information, see [Orleans transactions](grains/transactions.md).
 
 ## Call chain reentrancy
 

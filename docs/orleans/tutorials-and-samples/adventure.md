@@ -10,7 +10,7 @@ This sample is a simple multiplayer text adventure game inspired by old-fashione
 
 ## Instructions
 
-1. Open [_OrleansAdventure.sln_](https://github.com/dotnet/orleans/tree/main/samples/Adventure) in Visual Studio.
+1. Open [_OrleansAdventure.sln_](https://github.com/dotnet/samples/tree/main/orleans/Adventure) in Visual Studio.
 2. Start the 'AdventureSetup' project.
 3. Once AdventureSetup is running, start the 'AdventureClient' project.
 4. You will then be prompted to enter your name on the command line. Enter it and begin the game.

@@ -42,11 +42,7 @@ var b = grainFactory.GetGrain("B");
 await a.CallOther(b);
 ```
 
-<!-- TODO
-<p align="center">
-    <img src="~/images/scheduling_7.png" />
-</p>
- -->
+:::image type="content" source="grain-persistence/media/reentrancy-scheduling-diagram.png" alt-text="Reentrancy scheduling diagram." lightbox="grain-persistence/media/reentrancy-scheduling-diagram.png":::
 
 The flow of execution is as follows:
 
@@ -67,11 +63,7 @@ await Task.WhenAll(a.CallOther(b), b.CallOther(a));
 
 ## Case 1: the calls do not deadlock
 
-<!-- TODO
-<p align="center">
-    <img src="~/images/scheduling_8.png" />
-</p>
--->
+:::image type="content" source="grain-persistence/media/reentrancy-scheduling-diagram-01.png" alt-text="Reentrancy scheduling diagram without deadlock." lightbox="grain-persistence/media/reentrancy-scheduling-diagram-01.png":::
 
 In this example:
 
@@ -85,11 +77,7 @@ Now, we will examine a less fortunate series of events: one in which the same co
 
 ## Case 2: the calls deadlock
 
-<!-- TODO
-<p align="center">
-    <img src="~/images/scheduling_5.png" />
-</p>
--->
+:::image type="content" source="grain-persistence/media/reentrancy-scheduling-diagram-02.png" alt-text="Reentrancy scheduling diagram with deadlock." lightbox="grain-persistence/media/reentrancy-scheduling-diagram-02.png":::
 
 In this example:
 
@@ -119,11 +107,7 @@ With reentrancy, the following case becomes a valid execution and the possibilit
 
 ### Case 3: the grain or method is reentrant
 
-<!-- TODO
-<p align="center">
-    <img src="~/images/scheduling_6.png" />
-</p>
--->
+:::image type="content" source="grain-persistence/media/reentrancy-scheduling-diagram-03.png" alt-text="Reentrancy scheduling diagram with reentrant grain or method." lightbox="grain-persistence/media/reentrancy-scheduling-diagram-03.png":::
 
 In this example, grains *A* and *B* can call each other simultaneously without any potential for request scheduling deadlocks because both grains are *reentrant*. The following sections provide more details on reentrancy.
 

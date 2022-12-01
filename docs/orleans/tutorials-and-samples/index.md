@@ -1,56 +1,62 @@
 ---
 title: Orleans sample projects
 description: Explore the various sample projects written with .NET Orleans.
-ms.date: 02/04/2022
+ms.date: 12/01/2022
 ---
 
 # Orleans sample projects
 
-## [Hello, World!](https://github.com/dotnet/orleans/raw/main/samples/HelloWorld/#readme)
+## [Hello, World!](/samples/dotnet/samples/orleans-hello-world-sample-app)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/HelloWorld/code.png?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/HelloWorld/code.png" alt-text="Sample code for the Hello World Orleans app.":::
 
 A *Hello, World!* application that demonstrates how to create and use your first grains.
 
-### Demonstrates
+### Hello World demonstrates
 
 * How to get started with Orleans
 * How to define and implement grain interface
 * How to get a reference to a grain and call a grain
 
-## [Adventure](https://github.com/dotnet/orleans/raw/main/samples/Adventure/#readme)
+## [Shopping Cart](/samples/dotnet/samples/orleans-shopping-cart-app-sample)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Adventure/assets/BoxArt.jpg?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/ShoppingCart/media/shopping-cart.png" alt-text="Screen capture from the Shopping Cart Orleans sample app.":::
+
+A canonical shopping cart sample application, built using Microsoft Orleans. This app shows the following features:
+
+* **Shopping cart**: A simple shopping cart application that uses Orleans for its cross-platform framework support, and its scalable distributed applications capabilities.
+
+  * **Inventory management**: Edit and/or create product inventory.
+  * **Shop inventory**: Explore purchasable products and add them to your cart.
+  * **Cart**: View a summary of all the items in your cart, and manage these items; either removing or changing the quantity of each item.
+
+### Shopping cart demonstrates
+
+* How to create a distributed shopping cart experience
+* How to manage grain persistence as it relates to live inventory updates
+* How to expose user-specific items that span multiple clients
+
+## [Adventure](/samples/dotnet/samples/orleans-text-adventure-game)
+
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Adventure/assets/BoxArt.jpg" alt-text="Cover art for the Adventure Orleans app.":::
 
 Before there were graphical user interfaces, before the era of game consoles and massive-multiplayer games, there were VT100 terminals and there was [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure), [Zork](https://en.wikipedia.org/wiki/Zork), and [Microsoft Adventure](https://en.wikipedia.org/wiki/Microsoft_Adventure).
 Possibly bland by today's standards, back then it was a magical world of monsters, chirping birds, and things you could pick up.
 It's the inspiration for this sample.
 
-### Demonstrates
+### Adventure demonstrates
 
 * How to structure an application (in this case, a game) using grains
 * How to connect an external client to an Orleans cluster (`ClientBuilder`)
 
-## [Chirper](https://github.com/dotnet/orleans/raw/main/samples/Chirper/#readme)
+## [Chirper](/samples/dotnet/samples/orleans-chirper-social-media-sample-app)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Chirper/screenshot.png?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Chirper/screenshot.png" alt-text="Sample code for the Chirper Orleans app.":::
 
 A social network pub/sub system, with short text messages being sent between users.
 Publishers send out short *"Chirp"* messages (not to be confused with *"Tweets"*, for a variety of legal reasons) to any other users that are following them.
 
-### Demonstrates
+### Chirper demonstrates
 
 * How to build a simplified social media / social network application using Orleans
 * How to store state within a grain using grain persistence (`IPersistentState<T>`)
@@ -58,34 +64,26 @@ Publishers send out short *"Chirp"* messages (not to be confused with *"Tweets"*
 * Reentrant grains, which allow for multiple grain calls to be executed concurrently, in a single-threaded, interleaving fashion
 * Using a *grain observer* (`IGrainObserver`) to receive push notifications from grains
 
-## [GPS Tracker](https://github.com/dotnet/orleans/raw/main/samples/GPSTracker/#readme)
+## [GPS Tracker](/samples/dotnet/samples/orleans-gps-device-tracker-sample)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/GPSTracker/screenshot.jpeg?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/GPSTracker/screenshot.jpeg" alt-text="Sample code for the GPS Orleans app.":::
 
-A service for tracking GPS-equipped [IoT](https://en.wikipedia.org/wiki/Internet_of_Things) devices on a map.
+A service for tracking GPS-equipped [IoT](/dotnet/iot) IoT devices on a map.
 Device locations are updated in near-real-time using SignalR and hence this sample demonstrates one approach to integrating Orleans with SignalR. The device updates originate from a *device gateway*, which is implemented using a separate process that connects to the main service and simulates several devices moving in a pseudorandom fashion around an area of San Francisco.
 
-### Demonstrates
+### GPS Tracker demonstrates
 
-* How to use Orleans to build an [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_Things) application
+* How to use Orleans to build an [Internet of Things](/dotnet/iot) application
 * How Orleans can be co-hosted and integrated with [ASP.NET Core SignalR](/aspnet/core/signalr/introduction)
 * How to broadcast real-time updates from a grain to a set of clients using Orleans and SignalR
 
 ## [HanBaoBao](https://github.com/ReubenBond/hanbaobao-web)
 
-<!-- TODO
-<p align="center">
-    <img src="https://github.com/ReubenBond/hanbaobao-web/blob/main/assets/demo-1.png?raw=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/ReubenBond/hanbaobao-web/main/assets/demo-1.png" alt-text="HanBaoBao - Orleans sample application screen capture.":::
 
 An English-Mandarin dictionary Web application demonstrating deployment to Kubernetes, fan-out grain calls, and request throttling.
 
-### Demonstrates
+### HanBaoBao demonstrates
 
 * How to build a realistic application using Orleans
 * How to deploy an Orleans-based application to Kubernetes
@@ -95,170 +93,134 @@ An English-Mandarin dictionary Web application demonstrating deployment to Kuber
 * How to cache results lazily and temporarily
 * How to fan-out requests to many grains and collect the results
 
-## [Presence Service](https://github.com/dotnet/orleans/raw/main/samples/Presence/#readme)
+## [Presence Service](/samples/dotnet/samples/orleans-gaming-presence-service-sample)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Presence/screenshot.png?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Presence/screenshot.png" alt-text="Output from the Presence Service Orleans app.":::
 
 A gaming presence service, similar to one of the Orleans-based services built for [Halo](https://www.xbox.com/games/halo).
 A presence service tracks players and game sessions in near-real-time.
 
-### Demonstrates
+### Presence Service demonstrates
 
 * A simplified version of a real-world use of Orleans
 * Using a *grain observer* (`IGrainObserver`) to receive push notifications from grains
 
-## [Tic Tac Toe](https://github.com/dotnet/orleans/raw/main/samples/TicTacToe/#readme)
+## [Tic Tac Toe](/samples/dotnet/samples/orleans-tictactoe-web-based-game)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/TicTacToe/logo.png?sanitize=true"/>
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/TicTacToe/logo.png" alt-text="Logo from the Tic Tac Toe Orleans sample app.":::
 
 A Web-based [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game using ASP.NET MVC, JavaScript, and Orleans.
 
-### Demonstrates
+### Tic Tac Toe demonstrates
 
 * How to build an online game using Orleans
 * How to build a basic game lobby system
 * How to access Orleans grains from an ASP.NET Core MVC application
 
-## [Voting](https://github.com/dotnet/orleans/raw/main/samples/Voting/#readme)
+## [Voting](/samples/dotnet/samples/orleans-voting-sample-app-on-kubernetes)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Voting/screenshot.png?sanitize=true"/>
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Voting/screenshot.png" alt-text="Screen capture from Voting Orleans sample app.":::
 
 A Web application for voting on a set of choices. This sample demonstrates deployment to Kubernetes.
 The application uses [.NET generic host](../../core/extensions/generic-host.md) to co-host [ASP.NET Core](/aspnet/core) and Orleans as well as the [Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard) together in the same process.
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Voting/dashboard.png?sanitize=true"/>
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Voting/dashboard.png" alt-text="The Orleans dashboard running as part of the Voting sample app.":::
 
-### Demonstrates
+### Voting demonstrates
 
 * How to deploy an Orleans-based application to Kubernetes
 * How to configure the [Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard)
 
-## [Chat Room](https://github.com/dotnet/orleans/raw/main/samples/ChatRoom/#readme)
+## [Chat Room](/samples/dotnet/samples/orleans-chat-room-sample)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/ChatRoom/screenshot.png?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/ChatRoom/screenshot.png" alt-text="Sample output from the running Chat Room sample Orleans app.":::
 
 A terminal-based chat application built using [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html).
 
-### Demonstrates
+### Chat Room demonstrates
 
 * How to build a chat application using Orleans
 * How to use [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html)
 
-## [Bank Account](https://github.com/dotnet/orleans/raw/main/samples/BankAccount/#readme)
+## [Bank Account](/samples/dotnet/samples/orleans-bank-account-acid-transactions)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/BankAccount/assets/BankClient.png?sanitize=true"/>
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/BankAccount/BankClient.png" alt-text="Output from the running Bank Account client sample Orleans app.":::
 
 Simulates bank accounts, using ACID transactions to transfer random amounts between a set of accounts.
 
-### Demonstrates
+### Bank Account demonstrates
 
 * How to use Orleans Transactions to safely perform operations involving multiple stateful grains with ACID guarantees and serializable isolation.
 
-## [Blazor Server](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorServer/#readme) and [Blazor WebAssembly](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorWasm/#readme)
+## [Blazor Server](/samples/dotnet/samples/orleans-aspnet-core-blazor-server-sample) and [Blazor WebAssembly](/samples/dotnet/samples/orleans-aspnet-core-blazor-wasm-sample)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Blazor/BlazorServer/screenshot.jpeg?sanitize=true"/>
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Blazor/BlazorServer/screenshot.jpeg" alt-text="Blazor Orleans sample app screen capture":::
 
 These two Blazor samples are based on the [Blazor introductory tutorials](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro), adapted for use with Orleans.
 The [Blazor WebAssembly](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorWasm/#readme) sample uses the [Blazor WebAssembly hosting model](/aspnet/core/blazor/hosting-models#blazor-webassembly).
 The [Blazor Server](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorServer/#readme) sample uses the [Blazor Server hosting model](/aspnet/core/blazor/hosting-models#blazor-server).
 They include an interactive counter, a TODO list, and a Weather service.
 
-### Demonstrates
+### Blazor sample apps demonstrate
 
 * How to integrate ASP.NET Core Blazor Server with Orleans
 * How to integrate ASP.NET Core Blazor WebAssembly (WASM) with Orleans
 
-## [Stocks](https://github.com/dotnet/orleans/raw/main/samples/Stocks/#readme)
+## [Stocks](/samples/dotnet/samples/orleans-streaming-samples)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/Stocks/screenshot.png?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Stocks/screenshot.png" alt-text="Output from the running Stocks client sample Orleans app.":::
 
 A stock price application that fetches prices from a remote service using an HTTP call and caches prices temporarily in a grain. A [BackgroundService](../../core/extensions/workers.md) periodically polls for updated stock prices from various `StockGrain` grains which correspond to a set of stock symbols.
 
-### Demonstrates
+### Stocks sample app demonstrates
 
 * How to use Orleans from within a [BackgroundService](../../core/extensions/workers.md).
 * How to use timers within a grain
 * How to make external service calls using .NET's `HttpClient` and cache the results within a grain.
 
-## [Transport Layer Security](https://github.com/dotnet/orleans/raw/main/samples/TransportLayerSecurity/#readme)
+## [Transport Layer Security](/samples/dotnet/samples/orleans-transport-layer-security-tls)
 
-<!-- TODO
-<p align="center">
-    <img src="https://raw.githubusercontent.com/dotnet/orleans/main/samples/TransportLayerSecurity/screenshot.png?sanitize=true" />
-</p>
--->
+:::image type="content" source="https://github.com/dotnet/samples/blob/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
 
 A *Hello, World!* application configured to use mutual [*Transport Layer Security*](https://en.wikipedia.org/wiki/Transport_Layer_Security) to secure network communication between every server.
 
-### Demonstrates
+### Transport Layer Security demonstrates
 
 * How to configure mutual-TLS (mTLS) authentication for Orleans
 
-## [Visual Basic Hello World](https://github.com/dotnet/orleans/raw/main/samples/VBHelloWorld/#readme)
+## [Visual Basic Hello World](/samples/dotnet/samples/orleans-vb-samplee)
 
 A *Hello, World!* application using Visual Basic.
 
-### Demonstrates
+### Visual Basic Hello World demonstrates
 
 * How to develop Orleans-based applications using Visual Basic
 
-## [F# Hello World](https://github.com/dotnet/orleans/raw/main/samples/FSharpHelloWorld/#readme)
+## [F# Hello World](/samples/dotnet/samples/orleans-fsharp-sample)
 
 A *Hello, World!* application using F#.
 
-### Demonstrates
+### F# Hello World demonstrates
 
 * How to develop Orleans-based applications using F#
 
-## [Streaming: Pub/Sub Streams over Azure Event Hubs](https://github.com/dotnet/orleans/raw/main/samples/Streaming/Simple/#readme)
+## [Streaming: Pub/Sub Streams over Azure Event Hubs](/samples/dotnet/samples/orleans-streaming-samples)
 
 An application using Orleans Streams with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/) as the provider and implicit subscribers.
 
-### Demonstrates
+### Pub/Sub Streams demonstrates
 
 * How to use [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html)
 * How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding id
 * How to configure Orleans Streams for use with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 
-## [Streaming: Custom Data Adapter](https://github.com/dotnet/orleans/raw/main/samples/Streaming/CustomDataAdapter/#readme)
+## [Streaming: Custom Data Adapter](/samples/dotnet/samples/orleans-streaming-samples)
 
 An application using Orleans Streams with a non-Orleans publisher pushing to a stream which a grain consumes via a *custom data adapter* which tells Orleans how to interpret stream messages.
 
-### Demonstrates
+### Custom Data Adapter demonstrates
 
-* How to use [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html)
+* How to use i[Orleans Streams](../streaming/index.md)
 * How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding id
 * How to configure Orleans Streams for use with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 * How to consume stream messages published by non-Orleans publishers by providing a custom `EventHubDataAdapter` implementation (a custom data adapter)

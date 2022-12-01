@@ -20,7 +20,7 @@ The following table shows the minimum version of Visual Studio and MSBuild you'l
 | Preview 3               | 17.0<sup>1</sup>                          |
 | Preview 7               | 17.2                                      |
 | RC 2                    | 17.3                                      |
-| GA                      | 17.4                          |
+| GA                      | 17.4                                      |
 
 <sup>1</sup>In addition, scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
 

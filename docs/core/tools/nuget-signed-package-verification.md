@@ -6,7 +6,7 @@ ms.date: 11/07/2022
 ---
 # NuGet signed-package verification
 
-A [signed NuGet package](/nuget/create-packages/sign-a-package) enables a consumer to validate the package's authenticity and integrity. If verification is enabled, .NET verifies signed packages during a package restore operation, which occurs automatically when you build or run your project.
+You can [sign a NuGet package](/nuget/create-packages/sign-a-package) to enable the package consumer to validate the package's authenticity and integrity. If verification is enabled, .NET verifies signed packages during a package restore operation, which occurs automatically when the consumer builds or runs their project.
 
 NuGet package signatures are based on X.509 certificates, and a prerequisite for signed-package verification is a certificate root store that's valid for both code signing and timestamping.
 
@@ -38,7 +38,7 @@ NuGet uses .NET SDK fallback certificate bundles by default. You can override th
 
 ## macOS
 
-Verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`. However, it's recommended that you don't enable verification. For more information, see [NuGet/Home#11985](https://github.com/NuGet/Home/issues/11985) and [NuGet/Home#11986](https://github.com/NuGet/Home/issues/11986).
+Verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`. However, we recommend that you don't enable verification. For more information, see [NuGet/Home#11985](https://github.com/NuGet/Home/issues/11985) and [NuGet/Home#11986](https://github.com/NuGet/Home/issues/11986).
 
 NuGet uses only .NET SDK fallback certificate bundles.
 

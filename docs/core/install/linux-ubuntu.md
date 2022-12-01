@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 11/29/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -74,7 +74,7 @@ sudo apt-get install -y dotnet-runtime-7.0
 ## 22.10
 
 > [!IMPORTANT]
-> .NET 7 isn't yet ready in the Ubuntu feed, and is only available via the Microsoft feeds. However, .NET 6 is available in the 22.10 Ubuntu feed.
+> .NET 7 isn't yet ready in the Ubuntu feed, and is only available via the Microsoft feeds. However, .NET 6 is available in the 22.10 Ubuntu feed. These instructions demonstrate how to install .NET 7 via the Microsoft package manager feed.
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -92,7 +92,7 @@ rm packages-microsoft-prod.deb
 ## 22.04
 
 > [!WARNING]
-> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699).
+> If you've previously installed .NET from `packages.microsoft.com`, you may run into issues swapping to the built in Ubuntu package manager feeds for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699) and [Troubleshoot .NET package mixups](linux-package-mixup.md#whats-going-on).
 
 .NET 6 is included in the Ubuntu 22.04 package manager feeds.
 
@@ -105,7 +105,7 @@ The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, 
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y dotnet7
+  sudo apt-get install -y dotnet-sdk-6.0
 ```
 
 ### Install the runtime
@@ -114,19 +114,19 @@ The ASP.NET Core Runtime allows you to run apps that were made with .NET that di
 
 ```bash
 sudo apt-get update && \
-  sudo apt-get install -y aspnetcore-runtime-7.0
+  sudo apt-get install -y aspnetcore-runtime-6.0
 ```
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-7.0` in the previous command with `dotnet-runtime-7.0`:
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `aspnetcore-runtime-6.0` in the previous command with `dotnet-runtime-6.0`:
 
 ```bash
-sudo apt-get install -y dotnet-runtime-7.0
+sudo apt-get install -y dotnet-runtime-6.0
 ```
 
 ## 22.04 (Microsoft package feed)
 
-> [!NOTE]
-> Warning: .NET 7 and .NET 6 are included in Ubuntu 22.04. See the [Advisory on installing .NET 6 on Ubuntu 22.04](https://github.com/dotnet/core/issues/7699) if you want to use .NET packages from `packages.microsoft.com`.
+> [!IMPORTANT]
+> .NET 6 is included in the Ubuntu 22.04 package manager feeds, but .NET 7 isn't. To install .NET 7 you must use the Microsoft package feed. If you've previously installed .NET from the Ubuntu package manager feed, you may run into issues swapping to the Microsoft package manager feed for .NET. For more information, see the [Advisory on installing .NET on Ubuntu](https://github.com/dotnet/core/issues/7699) and [Troubleshoot .NET package mixups](linux-package-mixup.md#whats-going-on).
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 

@@ -252,7 +252,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [3.0.9](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/3.0.9)<br>NuGet [4.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.0-preview2) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.DurableTask | NuGet [0.4.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/0.4.1-beta) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.DurableTask | NuGet [1.0.0-rc.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.0-rc.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.2.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |

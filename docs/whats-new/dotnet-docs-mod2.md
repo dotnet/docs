@@ -30,7 +30,7 @@ Welcome to what's new in the .NET docs for November 2022. This article lists som
 
 ### New articles
 
-- [What's new in .NET 7](dotnet-7.md)
+- [What's new in .NET 7](../core/whats-new/dotnet-7.md)
 - [What's new in docs for .NET 7](dotnet-7-docs.md)
 - [SYSLIB diagnostics for regex source generation](../fundamentals/syslib-diagnostics/syslib1040-1049.md)
 - [SYSLIB diagnostics for p/invoke source generation](../fundamentals/syslib-diagnostics/syslib1050-1069.md)

@@ -30,12 +30,6 @@ Welcome to what's new in the .NET docs for November 2022. This article lists som
 
 ### New articles
 
-- [BrotliStream no longer allows undefined CompressionLevel values](../core/compatibility/core-libraries/7.0/brotlistream-ctor.md)
-- [Flow direction helper methods removed](../core/compatibility/maui/7.0/flow-direction-apis-removed.md)
-- [Some Windows APIs are removed](../core/compatibility/maui/7.0/iwindowstatemanager-apis-removed.md)
-- [Constructors accept base interface instead of concrete type](../core/compatibility/maui/7.0/mauiwebviewnavigationdelegate-constructor.md)
-- [ScrollToRequest property renamed](../core/compatibility/maui/7.0/scrolltorequest-property-rename.md)
-- [New UpdateBackground parameter](../core/compatibility/maui/7.0/updatebackground-parameter.md)
 - [SYSLIB diagnostics for regex source generation](../fundamentals/syslib-diagnostics/syslib1040-1049.md)
 - [SYSLIB diagnostics for p/invoke source generation](../fundamentals/syslib-diagnostics/syslib1050-1069.md)
 - [SYSLIB diagnostics for JavaScript interop source generation](../fundamentals/syslib-diagnostics/syslib1070-1089.md)
@@ -46,13 +40,7 @@ Welcome to what's new in the .NET docs for November 2022. This article lists som
 - [CA2259: Ensure `ThreadStatic` is only used with static fields](../fundamentals/code-analysis/quality-rules/ca2259.md)
 - [CA1420: Property, type, or attribute requires runtime marshalling](../fundamentals/code-analysis/quality-rules/ca1420.md)
 - [CA1422: Validate platform compatibility - obsoleted APIs](../fundamentals/code-analysis/quality-rules/ca1422.md)
-- [System.diagnostics entry in app.config](../core/compatibility/configuration/7.0/diagnostics-config-section.md)
 - [WebSockets support in .NET](../fundamentals/networking/websockets.md)
-- [API obsoletions with default diagnostic ID (.NET 7)](../core/compatibility/core-libraries/7.0/obsolete-apis-with-default-diagnostic.md)
-- [System.Runtime.CompilerServices.Unsafe NuGet package](../core/compatibility/core-libraries/7.0/unsafe-package.md)
-- [Environment variable prefixes](../core/compatibility/extensions/7.0/environment-variable-prefix.md)
-- [Legacy FileStream strategy removed](../core/compatibility/core-libraries/7.0/filestream-compat-switch.md)
-- [Time fields on symbolic links](../core/compatibility/core-libraries/7.0/symbolic-link-timestamps.md)
 
 ### Updated articles
 
@@ -71,13 +59,7 @@ Welcome to what's new in the .NET docs for November 2022. This article lists som
 
 ### New articles
 
-- [What's new in Orleans 7.0](../orleans/whats-new-in-orleans.md)
-
-### Updated articles
-
-- [What's new in Orleans 7.0](../orleans/whats-new-in-orleans.md)
-  - Edit pass, `xref`, and NuGet links, etc.
-  - What is new Orleans
+- [What's new in Orleans 7.0](../orleans/whats-new-in-orleans.md)\
 
 ## ML.NET
 

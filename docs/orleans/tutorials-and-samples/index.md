@@ -18,6 +18,24 @@ A *Hello, World!* application that demonstrates how to create and use your first
 * How to define and implement grain interface
 * How to get a reference to a grain and call a grain
 
+## [Shopping Cart](/samples/dotnet/samples/orleans-shopping-cart-app-sample)
+
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/ShoppingCart/media/shopping-cart.png" alt-text="Screen capture from the Shopping Cart Orleans sample app.":::
+
+A canonical shopping cart sample application, built using Microsoft Orleans. This app shows the following features:
+
+* **Shopping cart**: A simple shopping cart application that uses Orleans for its cross-platform framework support, and its scalable distributed applications capabilities.
+
+  * **Inventory management**: Edit and/or create product inventory.
+  * **Shop inventory**: Explore purchasable products and add them to your cart.
+  * **Cart**: View a summary of all the items in your cart, and manage these items; either removing or changing the quantity of each item.
+
+### Shopping cart demonstrates
+
+* How to create a distributed shopping cart experience
+* How to manage grain persistence as it relates to live inventory updates
+* How to expose user-specific items that span multiple clients
+
 ## [Adventure](/samples/dotnet/samples/orleans-text-adventure-game)
 
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Adventure/assets/BoxArt.jpg" alt-text="Cover art for the Adventure Orleans app.":::
@@ -166,43 +184,43 @@ A stock price application that fetches prices from a remote service using an HTT
 
 A *Hello, World!* application configured to use mutual [*Transport Layer Security*](https://en.wikipedia.org/wiki/Transport_Layer_Security) to secure network communication between every server.
 
-### Demonstrates
+### Transport Layer Security demonstrates
 
 * How to configure mutual-TLS (mTLS) authentication for Orleans
 
-## [Visual Basic Hello World](https://github.com/dotnet/orleans/raw/main/samples/VBHelloWorld/#readme)
+## [Visual Basic Hello World](/samples/dotnet/samples/orleans-vb-samplee)
 
 A *Hello, World!* application using Visual Basic.
 
-### Demonstrates
+### Visual Basic Hello World demonstrates
 
 * How to develop Orleans-based applications using Visual Basic
 
-## [F# Hello World](https://github.com/dotnet/orleans/raw/main/samples/FSharpHelloWorld/#readme)
+## [F# Hello World](/samples/dotnet/samples/orleans-fsharp-sample)
 
 A *Hello, World!* application using F#.
 
-### Demonstrates
+### F# Hello World demonstrates
 
 * How to develop Orleans-based applications using F#
 
-## [Streaming: Pub/Sub Streams over Azure Event Hubs](https://github.com/dotnet/orleans/raw/main/samples/Streaming/Simple/#readme)
+## [Streaming: Pub/Sub Streams over Azure Event Hubs](/samples/dotnet/samples/orleans-streaming-samples)
 
 An application using Orleans Streams with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/) as the provider and implicit subscribers.
 
-### Demonstrates
+### Pub/Sub Streams demonstrates
 
 * How to use [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html)
 * How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding id
 * How to configure Orleans Streams for use with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 
-## [Streaming: Custom Data Adapter](https://github.com/dotnet/orleans/raw/main/samples/Streaming/CustomDataAdapter/#readme)
+## [Streaming: Custom Data Adapter](/samples/dotnet/samples/orleans-streaming-samples)
 
 An application using Orleans Streams with a non-Orleans publisher pushing to a stream which a grain consumes via a *custom data adapter* which tells Orleans how to interpret stream messages.
 
-### Demonstrates
+### Custom Data Adapter demonstrates
 
-* How to use [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html)
+* How to use i[Orleans Streams](../streaming/index.md)
 * How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding id
 * How to configure Orleans Streams for use with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 * How to consume stream messages published by non-Orleans publishers by providing a custom `EventHubDataAdapter` implementation (a custom data adapter)

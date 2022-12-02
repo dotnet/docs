@@ -30,9 +30,9 @@ Since Orleans Silos are capable of living within the confines of the <xref:Micro
 
 Official clustering support is available from various packages including:
 
-* `Microsoft.Orleans.Clustering.AzureStorage`
-* `Microsoft.Orleans.Clustering.AdoNet`
-* `Microsoft.Orleans.Clustering.DynamoDB`
+* [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage)
+* [Microsoft.Orleans.Clustering.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet)
+* [Microsoft.Orleans.Clustering.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB)
 
 There are also several third-party packages available for other services such as CosmosDB, Kubernetes, Redis, and Aerospike. For more information, see [Cluster management in Orleans](../implementation/cluster-management.md).
 

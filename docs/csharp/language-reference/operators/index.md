@@ -1,7 +1,7 @@
 ---
-title: "C# operators and expressions - C# reference"
-description: "Learn about C# operators and expressions, operator precedence, and operator associativity."
-ms.date: 08/04/2020
+title: "C# operators and expressions - List all C# operators and expression"
+description: "Learn the C# operators and expressions, operator precedence, and operator associativity."
+ms.date: 11/28/2022
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -9,9 +9,8 @@ helpviewer_keywords:
   - "operator precedence [C#]"
   - "operator associativity [C#]"
   - "expressions [C#]"
-ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators and expressions (C# reference)
+# C# operators and expressions
 
 C# provides a number of operators. Many of them are supported by the [built-in types](../builtin-types/built-in-types.md) and allow you to perform basic operations with values of those types. Those operators include the following groups:
 
@@ -95,6 +94,9 @@ When operators have the same precedence, associativity of the operators determin
 
 - *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operators](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
 - *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operators, lambdas, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
+
+> [!IMPORTANT]
+> In an expression of the form `P?.A0?.A1`, if `P` is `null`, neither `A0` nor `A1` are evaluated. Similarly, in an expression of the form `P?.A0.A1`, because `A0` isn't evaluated when `P` is null, neither is `A0.A1`. See the [C# language specification](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access) for more details.
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 

@@ -1,7 +1,7 @@
 ---
-title: "fixed statement - C# reference"
-description: "Use the C# fixed statement to pin a moveable variable for the duration of the statement."
-ms.date: 09/09/2022
+title: "fixed statement - pin a moveable variable"
+description: "Use the C# fixed statement to pin a moveable variable for a block. Use the `fixed` statement to safely access the memory for a variable knowing that the memory location won't change."
+ms.date: 11/22/2022
 f1_keywords: 
   - "fixed_CSharpKeyword"
   - "fixed"
@@ -9,13 +9,11 @@ helpviewer_keywords:
   - "fixed statement [C#]"
   - "fixed keyword [C#]"
 ---
-# fixed statement (C# reference)
+# fixed statement - safely access memory underlying a variable
 
-The `fixed` statement prevents the [garbage collector](../../../standard/garbage-collection/index.md) from relocating a moveable variable and declares a pointer to that variable:
+The `fixed` statement prevents the [garbage collector](../../../standard/garbage-collection/index.md) from relocating a moveable variable and declares a pointer to that variable. The address of a fixed, or pinned, variable doesn't change during execution of the statement. You can use the declared pointer only inside the corresponding `fixed` statement. The declared pointer is readonly and can't be modified:
 
 :::code language="csharp" source="snippets/fixed/Program.cs" id="PinnedArray":::
-
-The address of a fixed, or pinned, variable doesn't change for the duration of the statement. You can use the declared pointer only inside the corresponding `fixed` statement. The declared pointer is readonly and cannot be modified.
 
 > [!NOTE]
 > You can use the `fixed` statement only in an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.

@@ -1,6 +1,6 @@
 ---
 title: dotnet watch command
-description: The dotnet watch command is a file watcher that restarts or hot reloads the specified application when changes in the source code are detected.
+description: The dotnet watch command is a file watcher that runs a dotnet CLI comand when changes in source code are detected.
 ms.date: 11/09/2022
 ---
 # dotnet watch
@@ -9,12 +9,13 @@ ms.date: 11/09/2022
 
 ## Name
 
-`dotnet watch` - Restarts or [hot reloads](#hot-reload) the specified application when changes in the source code are detected.
+`dotnet watch` - Restarts or [hot reloads](#hot-reload) the specified application, or runs a specified dotnet CLI command, when changes in source code are detected.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet watch [--list]
+dotnet watch [<command>][<forwarded arguments>]
+  [--list]
   [--no-hot-reload] [--non-interactive]
   [--project <PROJECT>]
   [-q|--quiet] [-v|--verbose]
@@ -26,7 +27,7 @@ dotnet watch -?|-h|--help
 
 ## Description
 
-The `dotnet watch` command is a file watcher. When it detects a change that is supported for [hot reload](#hot-reload), it hot reloads the specified application. When it detects an unsupported change, it restarts the application. This process enables fast iterative development from the command line.
+The `dotnet watch` command is a file watcher. When it detects a change, it runs the `dotnet run` command or a specified `dotnet` command. If it runs `dotnet run`, and the change is supported for [hot reload](#hot-reload), it hot reloads the specified application. If the change is unsupported, it restarts the application. This process enables fast iterative development from the command line.
 
 While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell. This feature is available only while the app is running. For example, if you run `dotnet watch` on a console app that ends before you press Ctrl+R, pressing Ctrl+R has no effect. However, in that case `dotnet watch` is still watching files and will restart the app if a file is updated.
 
@@ -49,9 +50,13 @@ As an alternative to disabling response compression, manually add the browser re
 
 ## Arguments
 
+- **`command`**
+
+  `dotnet watch` can run any command that is dispatched via the `dotnet` executable, such as built-in CLI commands and global tools. If you can run `dotnet <command>`, you can run `dotnet watch <command>`. If the child command isn't specified, the default is `run` for `dotnet run`.
+
 - **`forwarded arguments`**
 
-  Arguments to pass to the child `dotnet` process. For example: `run` with options for [dotnet run](dotnet-run.md) or `test` with options for [dotnet test](dotnet-test.md). If the child command isn't specified, the default is `run` for `dotnet run`.
+  Arguments provided after the `<COMMAND>`are passed to the child `dotnet` process. For example: `run` can be followed by options for [dotnet run](dotnet-run.md), or `test` can be followed by options for [dotnet test](dotnet-test.md).
 
 ## Options
 

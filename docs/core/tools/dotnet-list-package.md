@@ -20,6 +20,8 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--vulnerable]
+    [--format <console|json>]
+    [--output-version <VERSION>]
 
 dotnet list package -h|--help
 ```
@@ -118,6 +120,14 @@ The project or solution file to operate on. If not specified, the command search
 
   Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options. Nuget.org is the source of information about vulnerabilities. For more information, see [Vulnerabilities](/nuget/api/registration-base-url-resource) and [How to Scan NuGet Packages for Security Vulnerabilities](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/).
 
+- **`--format <console|json>`**
+
+  Sets the report output format. Allowed values are `console`, `json`.  Defaults to `console`.
+
+- **`--output-version <VERSION>`**
+
+  Sets the report output version. Allowed value is `1`. Defaults to `1`. Requires the `--format json` option.
+
 ## Examples
 
 - List package references of a specific project:
@@ -136,4 +146,28 @@ The project or solution file to operate on. If not specified, the command search
 
   ```dotnetcli
   dotnet list package --framework netcoreapp3.0
+  ```
+
+- List package references in machine readable json output format:
+
+  ```dotnetcli
+  dotnet list package --format json
+  ```
+
+- List package references for a specific target framework in machine readable json output format:
+
+  ```dotnetcli
+   dotnet list package --framework netcoreapp3.0 --format json
+  ```
+
+- Save machine readable json output of package references, including transitive dependency and vulnerability details into a file:
+
+  ```dotnetcli
+  dotnet list package --include-transitive --vulnerable --format json >> dependencyReport.json
+  ```
+
+- List package references in machine readable json output format with output version 1:
+
+  ```dotnetcli
+  dotnet list package --format json --output-version 1
   ```

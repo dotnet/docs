@@ -14,7 +14,7 @@ ms.date: 11/09/2022
 ## Synopsis
 
 ```dotnetcli
-dotnet watch [<command>][<forwarded arguments>]
+dotnet watch [<command>]
   [--list]
   [--no-hot-reload] [--non-interactive]
   [--project <PROJECT>]
@@ -56,7 +56,7 @@ As an alternative to disabling response compression, manually add the browser re
 
 - **`forwarded arguments`**
 
-  Arguments provided after the `<COMMAND>`are passed to the child `dotnet` process. For example: `run` can be followed by options for [dotnet run](dotnet-run.md), or `test` can be followed by options for [dotnet test](dotnet-test.md).
+  Arguments provided after a double dash (` -- `) are passed to the child `dotnet` process. If you're running `dotnet watch run`, these arguments are options for [dotnet run](dotnet-run.md). If you're running `dotnet watch test`, these arguments are options for [dotnet test](dotnet-test.md).
 
 ## Options
 

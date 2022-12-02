@@ -6,7 +6,7 @@ ms.date: 12/02/2022
 
 # Host with Service Fabric
 
-Orleans can be hosted on [Azure Service Fabric](/azure/service-fabric) using the [Microsoft.ServiceFabric.Services](https://www.nuget.org/packages/Microsoft.ServiceFabric.Services) and [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet packages. Silos should be hosted as unpartitioned, stateless services since Orleans manages the distribution of grains itself. Other hosting options, such as, partitioned and stateful, are more complex and yield no benefits. It's recommended to host Orleans unpartitioned and stateless.
+Orleans can be hosted on [Azure Service Fabric](/azure/service-fabric) using the [Microsoft.ServiceFabric.Services](https://www.nuget.org/packages/Microsoft.ServiceFabric.Services) and [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet packages. Silos should be hosted as unpartitioned, stateless services since Orleans manages the distribution of grains itself. Other hosting options, such as, partitioned and stateful, are more complex and yield no benefits without additional customization on the part of the developer. It's recommended to host Orleans unpartitioned and stateless.
 
 ## Service Fabric stateless service as a Silo
 

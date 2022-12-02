@@ -7,9 +7,6 @@ namespace ServiceFabric.HostingExample;
 
 public sealed class OrleansHostedStatelessService : StatelessService
 {
-    private const string HttpsEndpoint = nameof(HttpsEndpoint);
-    private const string ServiceName = nameof(OrleansHostedStatelessService);
-
     private readonly Func<StatelessServiceContext, Task<IHost>> _createHost;
 
     public OrleansHostedStatelessService(

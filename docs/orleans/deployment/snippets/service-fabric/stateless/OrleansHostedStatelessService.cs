@@ -12,15 +12,10 @@ public sealed class OrleansHostedStatelessService : StatelessService
 
     private readonly Func<StatelessServiceContext, Task<IHost>> _createHost;
 
-    private int HttpsPort => GetPortFromManifest(HttpsEndpoint);
-
     public OrleansHostedStatelessService(
         Func<StatelessServiceContext, Task<IHost>> createHost, StatelessServiceContext serviceContext)
         : base(serviceContext) =>
-        _createHost = createHost ?? throw new ArgumentNullException(nameof(createHost));
-
-    private int GetPortFromManifest(string portName) =>
-        Context.CodePackageActivationContext.GetEndpoint(portName).Port;    
+        _createHost = createHost ?? throw new ArgumentNullException(nameof(createHost));  
 
     /// <inheritdoc/>
     protected sealed override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()

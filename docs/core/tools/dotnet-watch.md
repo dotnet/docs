@@ -1,6 +1,6 @@
 ---
 title: dotnet watch command
-description: The dotnet watch command is a file watcher that runs a dotnet CLI comand when changes in source code are detected.
+description: The dotnet watch command is a file watcher that runs a dotnet command when changes in source code are detected.
 ms.date: 11/09/2022
 ---
 # dotnet watch
@@ -9,7 +9,7 @@ ms.date: 11/09/2022
 
 ## Name
 
-`dotnet watch` - Restarts or [hot reloads](#hot-reload) the specified application, or runs a specified dotnet CLI command, when changes in source code are detected.
+`dotnet watch` - Restarts or [hot reloads](#hot-reload) the specified application, or runs a specified dotnet command, when changes in source code are detected.
 
 ## Synopsis
 

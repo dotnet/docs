@@ -7,10 +7,11 @@ namespace ServiceFabric.HostingExample;
 
 public abstract class HostedStatelessService : StatelessService
 {
-    protected abstract string ServiceName { get; }
-    private const string HttpsEndpointConfigName = "HttpsEndpoint";
+    private const string HttpsEndpoint = nameof(HttpsEndpoint);
 
-    protected int HttpsPort => GetPortFromManifest(HttpsEndpointConfigName);
+    protected abstract string ServiceName { get; }
+
+    protected int HttpsPort => GetPortFromManifest(HttpsEndpoint);
 
     protected HostedStatelessService(StatelessServiceContext serviceContext) : base(serviceContext)
     {

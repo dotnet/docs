@@ -5,8 +5,8 @@ namespace ServiceFabric.HostingExample;
 
 internal sealed class HostedServiceCommunicationListener : ICommunicationListener
 {
-    private readonly Func<Task<IHost>> _createHost;
     private IHost? _host;
+    private readonly Func<Task<IHost>> _createHost;
 
     public HostedServiceCommunicationListener(Func<Task<IHost>> createHost) =>
         _createHost = createHost ?? throw new ArgumentNullException(nameof(createHost));

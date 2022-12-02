@@ -42,9 +42,9 @@ The new defaults are likely to work when communicating with modern clients or se
 - Specify a cryptography policy by configuring the <xref:System.Net.Security.CipherSuitesPolicy> type as it pertains to <xref:System.Net.Security.SslServerAuthenticationOptions.CipherSuitesPolicy?displayProperty=nameWithType> or <xref:System.Net.Security.SslClientAuthenticationOptions.CipherSuitesPolicy?displayProperty=nameWithType>.
 
   ```csharp
-  SslClientAuthenticationOptions clientOpts = new SslClientAuthenticationOptions
+  var clientOpts = new SslClientAuthenticationOptions
   {
-      ...
+      // ...
       CipherSuitesPolicy = new CipherSuitesPolicy(
           new[]
           {
@@ -56,14 +56,14 @@ The new defaults are likely to work when communicating with modern clients or se
   using (SslStream sslStream = new SslStream(networkStream))
   {
       sslStream.AuthenticateAsClient(clientOptions);
-      ...
+      // ...
   }
   ```
 
   Or, for <xref:System.Net.Http.HttpClient>:
 
   ```csharp
-  SocketsHttpHandler handler = new SocketsHttpHandler
+  var handler = new SocketsHttpHandler
   {
       SslOptions =
       {
@@ -76,9 +76,9 @@ The new defaults are likely to work when communicating with modern clients or se
       },
   };
 
-  using (HttpClient httpClient = new HttpClient(handler))
+  using (var httpClient = new HttpClient(handler))
   {
-      ...
+      // ...
   }
   ```
 

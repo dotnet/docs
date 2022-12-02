@@ -1,4 +1,6 @@
-﻿using Microsoft.ServiceFabric.Services.Runtime;
+﻿using System.Fabric;
+using Microsoft.Extensions.Hosting;
+using Microsoft.ServiceFabric.Services.Runtime;
 using ServiceFabric.HostingExample;
 
 try
@@ -9,10 +11,11 @@ try
     // an instance of the class is created in this host process.
     await ServiceRuntime.RegisterServiceAsync(
         "Orleans.ServiceFabric.Stateless",
-        context => new Stateless(context));
+        context => new OrleansHostedStatelessService(
+            CreateHostAsync, context));
 
     ServiceEventSource.Current.ServiceTypeRegistered(
-        Environment.ProcessId, typeof(Stateless).Name);
+        Environment.ProcessId, typeof(OrleansHostedStatelessService).Name);
 
     // Prevents this host process from terminating so services keep running.
     await Task.Delay(Timeout.Infinite);
@@ -21,4 +24,29 @@ catch (Exception ex)
 {
     ServiceEventSource.Current.ServiceHostInitializationFailed(ex.ToString());
     throw;
+}
+
+static async Task<IHost> CreateHostAsync(StatelessServiceContext context)
+{
+    await Task.CompletedTask;
+
+    return Host.CreateDefaultBuilder()
+        .UseOrleans((_, builder) =>
+        {
+            // TODO, Use real storage, something like table storage
+            // or SQL Server for clustering.
+            builder.UseLocalhostClustering();
+
+            // Service Fabric manages port allocations, so update the configuration using those ports.
+            // Gather configuration from Service Fabric.
+            var activation = context.CodePackageActivationContext;
+            var endpoints = activation.GetEndpoints();
+
+            // These endpoint names correspond to TCP endpoints specified in ServiceManifest.xml
+            var siloEndpoint = endpoints["OrleansSiloEndpoint"];
+            var gatewayEndpoint = endpoints["OrleansProxyEndpoint"];
+            var hostname = context.NodeContext.IPAddressOrFQDN;
+            builder.ConfigureEndpoints(hostname, siloEndpoint.Port, gatewayEndpoint.Port);
+        })
+        .Build();
 }

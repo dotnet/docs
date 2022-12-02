@@ -27,7 +27,7 @@ dotnet watch -?|-h|--help
 
 ## Description
 
-The `dotnet watch` command is a file watcher. When it detects a change, it runs the `dotnet run` command or a specified `dotnet` command. If it runs `dotnet run`, and the change is supported for [hot reload](#hot-reload), it hot reloads the specified application. If the change is unsupported, it restarts the application. This process enables fast iterative development from the command line.
+The `dotnet watch` command is a file watcher. When it detects a change, it runs the `dotnet run` command or a specified `dotnet` command. If it runs `dotnet run`, and the change is supported for [hot reload](#hot-reload), it hot reloads the specified application. If the change isn't supported, it restarts the application. This process enables fast iterative development from the command line.
 
 While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell. This feature is available only while the app is running. For example, if you run `dotnet watch` on a console app that ends before you press Ctrl+R, pressing Ctrl+R has no effect. However, in that case `dotnet watch` is still watching files and will restart the app if a file is updated.
 

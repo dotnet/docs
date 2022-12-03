@@ -126,7 +126,7 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`--output-version <VERSION>`**
 
-  Sets the report output version. Allowed value is `1`. Defaults to `1`. Requires the `--format json` option.
+  Sets the report output version. Allowed value is `1`. Defaults to `1`. Requires the `--format json` option. When a new JSON version is available, the command will produce the new format by default. This option will let you specify that the command should produce an earlier format.
 
 ## Examples
 

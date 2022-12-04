@@ -15,7 +15,7 @@ ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 # ?? and ??= operators - the null-coalescing operators
 
 <!-- 
-  Note: All the remaining acrolinx issues in this article are because of the `??` and `??=` operator. Acrolinx believes it's a mispelling of the ? mark.
+  Note: All the remaining acrolinx issues in this article are because of the `??` and `??=` operator. Acrolinx believes it's a misspelling of the ? mark.
 -->
 
 The null-coalescing operator `??` returns the value of its left-hand operand if it isn't `null`; otherwise, it evaluates the right-hand operand and returns its result. The `??` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null. The null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.

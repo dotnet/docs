@@ -1,15 +1,15 @@
 ﻿namespace arrays;
 
-public class RetrevingArrayElements
+public class RetrievingArrayElements
 {
     public static void Examples()
     {
-        Retreving();
+        Retrieving();
     }
 
-    private static void Retreving()
+    private static void Retrieving()
     {
-        //<RetrevingDataArray>
+        //<RetrievingDataArray>
         string[] weekDays2 = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 
         Console.WriteLine(weekDays2[0]);
@@ -29,6 +29,6 @@ public class RetrevingArrayElements
         Fri
         Sat
         */
-        //</RetrevingDataArray>
+        //</RetrievingDataArray>
     }
 }

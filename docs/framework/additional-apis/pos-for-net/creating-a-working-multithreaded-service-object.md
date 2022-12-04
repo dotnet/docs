@@ -432,7 +432,7 @@ namespace Samples.ServiceObjects.Advanced.MSR
                 MsrTrackData data = new MsrTrackData();
 
                 // Modify the track data as appropriate for your SO.
-                // Remove the sentinal characters from the track data,
+                // Remove the sentinel characters from the track data,
                 // for example.
                 data.Track1Data = (byte[])track1Data.Clone();
                 data.Track2Data = (byte[])track2Data.Clone();

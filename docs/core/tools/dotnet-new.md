@@ -16,7 +16,7 @@ ms.date: 09/04/2020
 
 ```dotnetcli
 dotnet new <TEMPLATE> [--dry-run] [--force] [-lang|--language {"C#"|"F#"|VB}]
-    [-n|--name <OUTPUT_NAME>] [--no-update-check] 
+    [-n|--name <OUTPUT_NAME>] [-f|--framework <FRAMEWORK>] [--no-update-check]
     [-o|--output <OUTPUT_DIRECTORY>] [--project <PROJECT_PATH>]
     [-d|--diagnostics] [--verbosity <LEVEL>] [Template options]
 
@@ -121,6 +121,10 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 - **`-n|--name <OUTPUT_NAME>`**
 
   The name for the created output. If no name is specified, the name of the current directory is used.
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  Specifies the [target framework](https://learn.microsoft.com/en-us/dotnet/standard/frameworks). It expects a target framework moniker (TFM). Examples: "net6.0", "net7.0-macos". This value will be reflected in the project file.
 
 - **`-no-update-check`**
 

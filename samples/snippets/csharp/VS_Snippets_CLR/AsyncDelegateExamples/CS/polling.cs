@@ -16,7 +16,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             // Create the delegate.
             AsyncMethodCaller caller = new AsyncMethodCaller(ad.TestMethod);
 
-            // Initiate the asychronous call.
+            // Initiate the asynchronous call.
             IAsyncResult result = caller.BeginInvoke(3000,
                 out threadId, null, null);
 

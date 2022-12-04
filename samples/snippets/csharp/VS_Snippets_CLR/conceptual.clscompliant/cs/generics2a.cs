@@ -45,7 +45,7 @@ public class FloatingPoint<T> : Number<T>
          throw new ArgumentException("The number parameter is not a floating-point number.");
    }
 }
-// The attempt to comple the example displays the following output:
+// The attempt to compile the example displays the following output:
 //       error CS0453: The type 'T' must be a non-nullable value type in
 //               order to use it as parameter 'T' in the generic type or method 'Number<T>'
 // </Snippet30>

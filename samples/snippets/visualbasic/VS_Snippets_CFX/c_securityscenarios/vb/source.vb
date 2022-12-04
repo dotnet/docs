@@ -13,7 +13,7 @@ Namespace BasicAuthentication
         Shared Sub Main()
             Try
 
-                MessageSecuritWithKerberosAuth.MyService.Run()
+                MessageSecurityWithKerberosAuth.MyService.Run()
             Catch ex As System.Exception
                 Console.WriteLine(ex.Message)
                 'Console.WriteLine(ex.InnerException.Message);
@@ -50,7 +50,7 @@ Namespace BasicAuthentication
             Console.WriteLine("Press Enter to exit.")
             Console.ReadLine()
 
-            ' Close the service. 
+            ' Close the service.
             myServiceHost.Close()
             '</snippet1>
         End Sub
@@ -63,19 +63,19 @@ Namespace BasicAuthentication
             myBinding.Security.Mode = SecurityMode.Transport
             myBinding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic
 
-            ' Create the endpoint address. Note that the machine name 
+            ' Create the endpoint address. Note that the machine name
             ' must match the subject or DNS field of the X.509 certificate
-            ' used to authenticate the service. 
+            ' used to authenticate the service.
             Dim ea As New EndpointAddress("https://machineName/Calculator")
 
-            ' Create the client. The code for the calculator 
+            ' Create the client. The code for the calculator
             ' client is not shown here. See the sample applications
             ' for examples of the calculator code.
             Dim cc As New CalculatorClient(myBinding, ea)
 
             ' The client must provide a user name and password. The code
             ' to return the user name and password is not shown here. Use
-            ' a database to store the user name and passwords, or use the 
+            ' a database to store the user name and passwords, or use the
             ' ASP.NET Membership provider database.
             cc.ClientCredentials.UserName.UserName = ReturnUsername()
             cc.ClientCredentials.UserName.Password = ReturnPassword()
@@ -156,9 +156,9 @@ Namespace SecuredUsingWindows
             ' Create the endpoint address.
             Dim myEndpointAddress As New EndpointAddress("net.tcp://localhost:8008/Calculator")
 
-            ' Create the client. The code for the calculator client 
+            ' Create the client. The code for the calculator client
             ' is not shown here. See the sample applications
-            ' for examples of the calculator code.	
+            ' for examples of the calculator code.
             Dim cc As New CalculatorClient(myBinding, myEndpointAddress)
             cc.Open()
             ' Begin using the client.
@@ -227,18 +227,18 @@ Namespace SecuredByTransportWithAnonymousClient
 
 
         Public Shared Sub RunClient()
-            '<snippet6>            
+            '<snippet6>
             ' Create the binding.
             Dim myBinding As New WSHttpBinding()
             myBinding.Security.Mode = SecurityMode.Transport
             myBinding.Security.Transport.ClientCredentialType = HttpClientCredentialType.None
 
-            ' Create the endpoint address. Note that the machine name 
+            ' Create the endpoint address. Note that the machine name
             ' must match the subject or DNS field of the X.509 certificate
-            ' used to authenticate the service. 
+            ' used to authenticate the service.
             Dim ea As New EndpointAddress("https://machineName/Calculator")
 
-            ' Create the client. The code for the calculator 
+            ' Create the client. The code for the calculator
             ' client is not shown here. See the sample applications
             ' for examples of the calculator code.
             Dim cc As New CalculatorClient(myBinding, ea)
@@ -265,15 +265,15 @@ Namespace SecuredByTransportWithAnonymousClient
             '</snippet6>
         End Sub
     End Class
-End Namespace 'SecuredByTransportWithAnonymousClient 
+End Namespace 'SecuredByTransportWithAnonymousClient
 
-Namespace SecuredTranserUsingCertificates
+Namespace SecuredTransferUsingCertificates
 
     Public Class MyService
 
         Public Shared Sub Run()
             '<snippet7>
-            ' Create the binding. 
+            ' Create the binding.
             Dim binding As New WSHttpBinding()
             binding.Security.Mode = SecurityMode.Transport
             binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Certificate
@@ -305,12 +305,12 @@ Namespace SecuredTranserUsingCertificates
             myBinding.Security.Transport.ClientCredentialType = _
                 HttpClientCredentialType.Certificate
 
-            ' Create the endpoint address. Note that the machine name 
+            ' Create the endpoint address. Note that the machine name
             ' must match the subject or DNS field of the X.509 certificate
-            ' used to authenticate the service. 
+            ' used to authenticate the service.
             Dim ea As New EndpointAddress("https://localhost/Calculator")
 
-            ' Create the client. The code for the calculator 
+            ' Create the client. The code for the calculator
             ' client is not shown here. See the sample applications
             ' for examples of the calculator code.
             Dim cc As New CalculatorClient(myBinding, ea)
@@ -341,7 +341,7 @@ Namespace SecuredTranserUsingCertificates
             '</snippet14>
         End Sub
     End Class
-End Namespace 'SecuredTranserUsingCertificates
+End Namespace 'SecuredTransferUsingCertificates
 
 Namespace SecuredUsingMessageSecurityWithAnonClient
 
@@ -349,7 +349,7 @@ Namespace SecuredUsingMessageSecurityWithAnonClient
 
         Public Shared Sub Run()
             '<snippet8>
-            ' Create the binding. 
+            ' Create the binding.
             Dim binding As New WSHttpBinding()
             binding.Security.Mode = SecurityMode.Message
             binding.Security.Message.ClientCredentialType = _
@@ -383,10 +383,10 @@ Namespace SecuredUsingMessageSecurityWithAnonClient
             myBinding.Security.Mode = SecurityMode.Message
             myBinding.Security.Message.ClientCredentialType = MessageCredentialType.None
 
-            ' Create the endpoint address. 
+            ' Create the endpoint address.
             Dim ea As New EndpointAddress("http://localhost/Calculator")
 
-            ' Create the client. 
+            ' Create the client.
             Dim cc As New CalculatorClient(myBinding, ea)
 
             ' Begin using the client.
@@ -411,7 +411,7 @@ Namespace SecuredUsingMessageSecurityWithAnonClient
             '</snippet15>
         End Sub
     End Class
-End Namespace 'SecuredUsingMessageSecurityWithAnonClient 
+End Namespace 'SecuredUsingMessageSecurityWithAnonClient
 
 Namespace SecuredUsingMessageSecurityWithUsername
 
@@ -439,7 +439,7 @@ Namespace SecuredUsingMessageSecurityWithUsername
             Console.WriteLine("Listening...")
             Console.ReadLine()
 
-            ' Close the service. 
+            ' Close the service.
             myServiceHost.Close()
             '</snippet9>
         End Sub
@@ -453,13 +453,13 @@ Namespace SecuredUsingMessageSecurityWithUsername
             myBinding.Security.Message.ClientCredentialType = _
                MessageCredentialType.UserName
 
-            ' Create the endpoint address. 
+            ' Create the endpoint address.
             Dim ea As New EndpointAddress("http://machineName/Calculator")
 
-            ' Create the client. 
+            ' Create the client.
             Dim cc As New CalculatorClient(myBinding, ea)
 
-            ' Set the user name and password. The code to 
+            ' Set the user name and password. The code to
             ' return the user name and password is not shown here. Use
             ' an interface to query the user for the information.
             cc.ClientCredentials.UserName.UserName = ReturnUsername()
@@ -543,10 +543,10 @@ Namespace SecuredUsingMessageWithCertClient
             myBinding.Security.Message.ClientCredentialType = _
                MessageCredentialType.Certificate
 
-            ' Create the endpoint address. 
+            ' Create the endpoint address.
             Dim ea As New EndpointAddress("http://machineName/Calculator")
 
-            ' Create the client. 
+            ' Create the client.
             Dim cc As New CalculatorClient(myBinding, ea)
 
             ' Specify a certificate to use for authenticating the client.
@@ -597,7 +597,7 @@ Namespace SecuredUsingMessageWithWindowsClient
             Dim myServiceHost As New ServiceHost(GetType(ServiceModel.Calculator), netTcpUri)
             myServiceHost.AddServiceEndpoint(GetType(ICalculator), binding, "")
 
-            ' Open the service. 
+            ' Open the service.
             myServiceHost.Open()
             Console.WriteLine("Listening ....")
             Console.ReadLine()
@@ -616,10 +616,10 @@ Namespace SecuredUsingMessageWithWindowsClient
             myBinding.Security.Mode = SecurityMode.Message
             myBinding.Security.Message.ClientCredentialType = MessageCredentialType.Windows
 
-            ' Create the endpoint address. 
+            ' Create the endpoint address.
             Dim ea As New EndpointAddress("net.tcp://machineName:8008/Calculator")
 
-            ' Create the client. 
+            ' Create the client.
             Dim cc As New CalculatorClient(myBinding, ea)
 
             ' Begin using the client.
@@ -644,10 +644,10 @@ Namespace SecuredUsingMessageWithWindowsClient
             '</snippet18>
         End Sub
     End Class
-End Namespace 'SecuredUsingMessageWithWindowsClient 
+End Namespace 'SecuredUsingMessageWithWindowsClient
 
 
-Namespace MessageSecuritWithKerberosAuth
+Namespace MessageSecurityWithKerberosAuth
 
     Public Class MyService
 
@@ -689,7 +689,7 @@ Namespace MessageSecuritWithKerberosAuth
             Console.WriteLine("Listening...")
             Console.ReadLine()
 
-            ' Close the service. 
+            ' Close the service.
             myServiceHost.Close()
             '</snippet12>
         End Sub
@@ -704,7 +704,7 @@ Namespace MessageSecuritWithKerberosAuth
             myBinding.Security.Message.ClientCredentialType = _
                MessageCredentialType.Windows
 
-            ' Disable credential negotiation and the establishment of 
+            ' Disable credential negotiation and the establishment of
             ' a security context.
             myBinding.Security.Message.NegotiateServiceCredential = False
             myBinding.Security.Message.EstablishSecurityContext = False
@@ -717,7 +717,7 @@ Namespace MessageSecuritWithKerberosAuth
             Dim ea As New EndpointAddress(New Uri("http://machineName/calculator"), _
             EndpointIdentity.CreateSpnIdentity("service_spn_name"))
 
-            ' Create the client. 
+            ' Create the client.
             Dim cc As New CalculatorClient(myBinding, ea)
 
             ' Begin using the client.
@@ -751,7 +751,7 @@ Namespace SecuredUsingMessageSecurityWithInteroperableCertClient
 
         Public Shared Sub Run()
             '<snippet13>
-            ' Create the binding. 
+            ' Create the binding.
             Dim binding As New WSHttpBinding()
             binding.Security.Mode = SecurityMode.Message
             binding.Security.Message.ClientCredentialType = _
@@ -790,15 +790,15 @@ Namespace SecuredUsingMessageSecurityWithInteroperableCertClient
             myBinding.Security.Mode = SecurityMode.Message
             myBinding.Security.Message.ClientCredentialType = MessageCredentialType.Certificate
 
-            ' Disable credential negotiation and the establishment of 
+            ' Disable credential negotiation and the establishment of
             ' a security context.
             myBinding.Security.Message.NegotiateServiceCredential = False
             myBinding.Security.Message.EstablishSecurityContext = False
 
-            ' Create the endpoint address. 
+            ' Create the endpoint address.
             Dim ea As New EndpointAddress("http://localhost/Calculator")
 
-            ' Create the client. 
+            ' Create the client.
             Dim cc As New CalculatorClient(myBinding, ea)
 
             ' Specify a certificate to use for authenticating the client.

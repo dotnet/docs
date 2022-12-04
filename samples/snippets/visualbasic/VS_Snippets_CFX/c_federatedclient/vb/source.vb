@@ -34,7 +34,7 @@ Namespace Samples
                 ' Set the IssuedTokenRenewalThresholdPercentage property
                 .IssuedTokenRenewalThresholdPercentage = renewalPercentage
 
-                ' Set the DefaulyKeyEntropyMode property
+                ' Set the DefaultKeyEntropyMode property
                 .DefaultKeyEntropyMode = entropyMode
             End With
         End Sub

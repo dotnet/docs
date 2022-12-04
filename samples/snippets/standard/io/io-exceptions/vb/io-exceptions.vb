@@ -26,7 +26,7 @@ Module Program
         Catch e As DriveNotFoundException
             Console.WriteLine("The drive specified in 'path' is invalid.")
         Catch e As PathTooLongException
-            Console.WriteLine("'path' exceeds the maxium supported path length.")
+            Console.WriteLine("'path' exceeds the maximum supported path length.")
         Catch e As UnauthorizedAccessException
             Console.WriteLine("You do not have permission to create this file.")
         Catch e As IOException When (e.HResult And &h0000FFFF) = 32

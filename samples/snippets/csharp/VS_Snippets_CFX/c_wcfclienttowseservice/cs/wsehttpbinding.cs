@@ -1,6 +1,6 @@
 ﻿
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// <snipppet5>
+// <snippet5>
 using System;
 using System.Text;
 using System.Collections.Generic;
@@ -90,7 +90,7 @@ namespace Microsoft.ServiceModel.Samples
                         (SymmetricSecurityBindingElement)SymmetricSecurityBindingElement.CreateSecureConversationBindingElement(
                                                     securityBinding, false);
                 // This is the default
-                //secureconversation.DefaultProtectionLevel = ProtectionLevel.EncryptAndSign;				
+                //secureconversation.DefaultProtectionLevel = ProtectionLevel.EncryptAndSign;
 
                 //Set defaults for the secure conversation binding
                 secureconversation.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic256;
@@ -254,4 +254,4 @@ namespace Microsoft.ServiceModel.Samples
         // </snippet3>
     }
 }
-// </snipppet5>
+// </snippet5>

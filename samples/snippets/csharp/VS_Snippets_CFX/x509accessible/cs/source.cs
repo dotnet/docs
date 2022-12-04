@@ -14,7 +14,7 @@ namespace BasicAuthentication
             try
             {
 
-                MessageSecuritWithKerberosAuth.MyService.Run();
+                MessageSecurityWithKerberosAuth.MyService.Run();
             }
             catch (System.Exception ex)
             {
@@ -146,7 +146,7 @@ namespace SecuredUsingWindows
 
             // Create the client. The code for the calculator is not
             // shown here. client is not shown here. See the sample applications
-            // for examples of the calculator code.	
+            // for examples of the calculator code.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, myEndpointAddress);
             cc.Open();
@@ -231,7 +231,7 @@ namespace SecuredByTransportWithAnonymousClient
     }
 }
 
-namespace SecuredTranserUsingCertificates
+namespace SecuredTransferUsingCertificates
 {
     public class MyService
     {
@@ -579,7 +579,7 @@ namespace SecuredUsingMessageWithWindowsClient
     }
 }
 
-namespace MessageSecuritWithKerberosAuth
+namespace MessageSecurityWithKerberosAuth
 {
     using ServiceModel;
     public class MyService

@@ -133,7 +133,7 @@ namespace BlockingCollectionExamples
         private static BlockingCollection<Data> blockingCollection = new BlockingCollection<Data>(10);
 
         // Some data to add.
-        static string[] cities = new string[10] { "London", "Mumbai", "Beijing", "Badgad", "Paris", "Berlin", "Moscow", "Sydney", "Buenos Aires", "Tokyo" };
+        static string[] cities = new string[10] { "London", "Mumbai", "Beijing", "Baghdad", "Paris", "Berlin", "Moscow", "Sydney", "Buenos Aires", "Tokyo" };
         static double[] population = new double[10] { 7.65, 18.041, 12.037, 4.795, 9.642, 3.339, 9.3, 3.664, 12.435, 38.027 };
 
         static void Main()

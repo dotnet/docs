@@ -95,7 +95,7 @@ namespace MiscCodeExamples
 
         // This method is called after the object
         // is completely deserialized. Use it instead of the
-        // constructror.
+        // constructor.
         [OnDeserialized]
         void OnDeserialized(StreamingContext context)
         {

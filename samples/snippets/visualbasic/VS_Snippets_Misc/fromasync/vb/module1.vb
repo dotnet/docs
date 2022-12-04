@@ -196,7 +196,7 @@ Module Module1
         Public Function BeginCalculate(ByVal decimalPlaces As Integer, ByVal ac As AsyncCallback, ByVal state As Object) As IAsyncResult
             Console.WriteLine("Calling BeginCalculate on thread {0}", Thread.CurrentThread.ManagedThreadId)
             Dim myTask = Task(Of String).Factory.StartNew(Function(obj) Compute(decimalPlaces), state)
-            myTask.ContinueWith(Sub(antedecent) ac(myTask))
+            myTask.ContinueWith(Sub(antecedent) ac(myTask))
 
         End Function
         Private Function Compute(ByVal decimalPlaces As Integer)
@@ -205,7 +205,7 @@ Module Module1
             ' Simulating some heavy work.
             Thread.SpinWait(500000000)
 
-            ' Actual implemenation left as exercise for the reader.
+            ' Actual implementation left as exercise for the reader.
             ' Several examples are available on the Web.
             Return "3.14159265358979323846264338327950288"
         End Function
@@ -224,7 +224,7 @@ Module Module1
             Dim callback As New AsyncCallback(AddressOf PrintResult)
             Dim ar As IAsyncResult = calc.BeginCalculate(places, callback, calc)
 
-            ' Do some work on this thread while the calulator is busy.
+            ' Do some work on this thread while the calculator is busy.
             Console.WriteLine("Working...")
             Thread.SpinWait(500000)
             Console.ReadLine()

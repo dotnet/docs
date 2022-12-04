@@ -1,26 +1,26 @@
 ﻿'****************************************************************************************
 ' * File: FindText.cs
 ' *
-' * Description: 
+' * Description:
 ' *    This sample demonstrates the UI Automation TextPattern and TextPatternRange classes.
-' * 
-' *    The sample consists of a Windows Presentation Foundation (WPF) client and the choice 
-' *    of a WPF FlowDocumentReader target or a Win32 WordPad target. The client uses the 
-' *    TextPattern control pattern and the TextPatternRange class to interact with the text 
-' *    controls in either target.  
-' * 
-' *    The functionality demonstrated by the sample includes the ability to search for and 
-' *    select text, expand a selection to a specific TextUnit, navigate by TextUnit, access 
+' *
+' *    The sample consists of a Windows Presentation Foundation (WPF) client and the choice
+' *    of a WPF FlowDocumentReader target or a Win32 WordPad target. The client uses the
+' *    TextPattern control pattern and the TextPatternRange class to interact with the text
+' *    controls in either target.
+' *
+' *    The functionality demonstrated by the sample includes the ability to search for and
+' *    select text, expand a selection to a specific TextUnit, navigate by TextUnit, access
 ' *    embedded objects within a selection, and access the enclosing element of a selection.
-' * 
-' *    Note: Three WPF documents, a RichText document, and a plain text document are provided 
+' *
+' *    Note: Three WPF documents, a RichText document, and a plain text document are provided
 ' *          in the Content folder of the TextProvider project.
-' * 
+' *
 ' *
 ' * This file is part of the Microsoft .NET Framework SDK Code Samples.
-' * 
+' *
 ' * Copyright (C) Microsoft Corporation.  All rights reserved.
-' * 
+' *
 ' * This source code is intended only as a supplement to Microsoft
 ' * Development Tools and/or on-line documentation.  See these other
 ' * materials for detailed information regarding Microsoft code samples.
@@ -63,7 +63,7 @@ Namespace SDKSample
         Private targetDocument As AutomationElement
         ' Text pattern obtained from the target text control.
         Private targetTextPattern As TextPattern
-        ' Text range for entire target text control. 
+        ' Text range for entire target text control.
         Private documentRange As TextPatternRange
         ' Text range for current selection in target text control.
         Private searchRange As TextPatternRange
@@ -81,7 +81,7 @@ Namespace SDKSample
         ' String to search for in the target text control.
         Private searchString As TextBox
         ' Depending on the location of the selection in the target text
-        ' control, the client can search forward or backward for the 
+        ' control, the client can search forward or backward for the
         ' search string.
         Private searchBackwardButton As Button
         Private searchForwardButton As Button
@@ -89,7 +89,7 @@ Namespace SDKSample
         Private searchBackward As Boolean
         ' Expand the target text selection by the specified text unit.
         Private expandHighlight As ComboBox
-        ' Move the target text selection by the specified text unit. 
+        ' Move the target text selection by the specified text unit.
         Private navigateTarget As ComboBox
         Private navigationUnit As TextUnit
         ' Display the target text selection and attributes.
@@ -134,7 +134,7 @@ Namespace SDKSample
             System.Windows.Forms.Application.StartupPath + "\TextProvider.exe"
             W32Target = "WordPad.exe"
 
-            ' Initialize search direction. 
+            ' Initialize search direction.
             ' Search direction buttons are enabled or disabled based on this value.
             searchBackward = False
 
@@ -407,7 +407,7 @@ Namespace SDKSample
                 infoGrid.Children.Add(expandLabel)
                 infoGrid.Children.Add(expandHighlight)
 
-                ' Row 10 - target selection details such as child elements 
+                ' Row 10 - target selection details such as child elements
                 '         and enclosing unit.
                 targetSelectionDetails = New TextBox()
                 targetSelectionDetails.Height = 100
@@ -419,7 +419,7 @@ Namespace SDKSample
                 Grid.SetColumnSpan(targetSelectionDetails, 2)
                 infoGrid.Children.Add(targetSelectionDetails)
 
-                ' Row 11 - get the child elements and the enclosing unit 
+                ' Row 11 - get the child elements and the enclosing unit
                 '         of the target selection.
                 Dim getChildren As Button = New Button()
                 getChildren.Width = buttonWidth
@@ -461,7 +461,7 @@ Namespace SDKSample
         ' <param name="sender">The object that raised the event.</param>
         ' <param name="e">Event arguments.</param>
         ' <remarks>
-        ' Starts the application that we are going to use for as our 
+        ' Starts the application that we are going to use for as our
         ' root element for this sample.
         ' </remarks>
         '--------------------------------------------------------------------
@@ -488,7 +488,7 @@ Namespace SDKSample
             targetWindow, TreeScope.Element, targetCloseListener)
 
             ' Set size and position of target.
-            ' Since the target is started and manipulated from the client 
+            ' Since the target is started and manipulated from the client
             ' and both windows show UI changes this section of code just
             ' ensures neither window obscures the other.
             Dim targetTransformPattern As TransformPattern = _
@@ -517,7 +517,7 @@ Namespace SDKSample
         ' </param>
         ' <returns>The automation element for the app main window.</returns>
         ' <remarks>
-        ' Three WPF documents, a rich text document, and a plain text document 
+        ' Three WPF documents, a rich text document, and a plain text document
         ' are provided in the Content folder of the TextProvider project.
         ' </remarks>
         '--------------------------------------------------------------------
@@ -568,7 +568,7 @@ Namespace SDKSample
             Dim findControl As New AndCondition(documentControl, textPatternAvailable)
 
             ' Get the Automation Element for the first text control found.
-            ' For the purposes of this sample it is sufficient to find the 
+            ' For the purposes of this sample it is sufficient to find the
             ' first text control. In other cases there may be multiple text
             ' controls to sort through.
             targetDocument = targetWindow.FindFirst(TreeScope.Descendants, findControl)
@@ -582,7 +582,7 @@ Namespace SDKSample
                 Return
             End If
 
-            ' Get required control patterns 
+            ' Get required control patterns
             targetTextPattern = DirectCast( _
             targetDocument.GetCurrentPattern(TextPattern.Pattern), TextPattern)
 
@@ -631,18 +631,18 @@ Namespace SDKSample
 
             '<SnippetTextChanged>
             ' Initialize a text changed listener.
-            ' An instance of TextPatternRange will become invalid if 
+            ' An instance of TextPatternRange will become invalid if
             ' one of the following occurs:
             ' 1) The text in the provider changes via some user activity.
-            ' 2) ValuePattern.SetValue is used to programatically change 
+            ' 2) ValuePattern.SetValue is used to programmatically change
             ' the value of the text in the provider.
-            ' The only way the client application can detect if the text 
-            ' has changed (to ensure that the ranges are still valid), 
-            ' is by setting a listener for the TextChanged event of 
-            ' the TextPattern. If this event is raised, the client needs 
-            ' to update the targetDocumentRange member data to ensure the 
-            ' user is working with the updated text. 
-            ' Clients must always anticipate the possibility that the text 
+            ' The only way the client application can detect if the text
+            ' has changed (to ensure that the ranges are still valid),
+            ' is by setting a listener for the TextChanged event of
+            ' the TextPattern. If this event is raised, the client needs
+            ' to update the targetDocumentRange member data to ensure the
+            ' user is working with the updated text.
+            ' Clients must always anticipate the possibility that the text
             ' can change underneath them.
             Dim onTextChanged As AutomationEventHandler = _
             New AutomationEventHandler(AddressOf TextChanged)
@@ -742,10 +742,10 @@ Namespace SDKSample
                 .AppendLine(textProviderChildren(i).Current.ControlType.ProgrammaticName)
 
                 ' Obtain the supported control patterns.
-                ' NOTE: For the purposes of this sample we use GetSupportedPatterns(). 
-                ' However, the use of GetSupportedPatterns() is strongly discouraged 
-                ' as it calls GetCurrentPattern() internally on every known pattern. 
-                ' It is therefore much more efficient to use GetCurrentPattern() for 
+                ' NOTE: For the purposes of this sample we use GetSupportedPatterns().
+                ' However, the use of GetSupportedPatterns() is strongly discouraged
+                ' as it calls GetCurrentPattern() internally on every known pattern.
+                ' It is therefore much more efficient to use GetCurrentPattern() for
                 ' the specific patterns you are interested in.
                 Dim childPatterns As AutomationPattern() = _
                 textProviderChildren(i).GetSupportedPatterns()
@@ -798,13 +798,13 @@ Namespace SDKSample
             searchRange, TextPatternRangeEndpoint.End)
 
             ' If the starting endpoints of the document range and the search
-            ' range are equivalent then we can search forward only since the 
+            ' range are equivalent then we can search forward only since the
             ' search range is at the start of the document.
             If startPoints = 0 Then
                 searchForwardButton.IsEnabled = True
                 searchBackwardButton.IsEnabled = False
                 ' If the ending endpoints of the document range and the search
-                ' range are identical then we can search backward only since the 
+                ' range are identical then we can search backward only since the
                 ' search range is at the end of the document.
             ElseIf endPoints = 0 Then
                 searchForwardButton.IsEnabled = False
@@ -852,12 +852,12 @@ Namespace SDKSample
                 targetResult.Background = Brushes.Salmon
                 Return
             End If
-            '</SnippetSupportedTextSelection>                
-            ' Clone the document range since we modify the endpoints 
+            '</SnippetSupportedTextSelection>
+            ' Clone the document range since we modify the endpoints
             ' as we search.
             Dim documentRangeClone As TextPatternRange = documentRange.Clone()
 
-            ' Move the cloned document range endpoints to enable the 
+            ' Move the cloned document range endpoints to enable the
             ' selection of the next matching text range.
             Dim selectionRange As TextPatternRange() = targetTextPattern.GetSelection()
             If Not (selectionRange(0) Is Nothing) Then
@@ -890,9 +890,9 @@ Namespace SDKSample
                     searchBackwardButton.IsEnabled = False
                     searchForwardButton.IsEnabled = False
                 Else
-                    ' End of document (either the start or end of the document 
-                    ' range depending on search direction) was reached before 
-                    ' finding another occurence of the search string.
+                    ' End of document (either the start or end of the document
+                    ' range depending on search direction) was reached before
+                    ' finding another occurrence of the search string.
                     targetResult.Content = "End of document reached."
                     targetResult.Background = Brushes.Wheat
                     If Not searchBackward Then
@@ -964,7 +964,7 @@ Namespace SDKSample
             ' Obtain the ranges to move.
             Dim selectionRanges As TextPatternRange() = targetTextPattern.GetSelection()
 
-            ' Iterate throught the ranges for a text control that supports
+            ' Iterate through the ranges for a text control that supports
             ' multiple selections and move the selections the specified text
             ' unit and direction.
             Dim textRange As TextPatternRange
@@ -1054,12 +1054,12 @@ Namespace SDKSample
         ' <returns>A null object.</returns>
         '--------------------------------------------------------------------
         Private Sub NotifyTextChanged(ByVal message As String)
-            ' Notify the user of the text changed event. 
+            ' Notify the user of the text changed event.
             targetSelectionLabel.Content = message
             ' Re-initialize the document range for the text of the document
-            ' since we don't know the extent of the changes. For example, a 
-            ' change in the font color attribute, such as on a hyperlink 
-            ' mouseover, raises this event but doesn't change the content of 
+            ' since we don't know the extent of the changes. For example, a
+            ' change in the font color attribute, such as on a hyperlink
+            ' mouseover, raises this event but doesn't change the content of
             ' the text control.
             documentRange = targetTextPattern.DocumentRange
 
@@ -1099,7 +1099,7 @@ Namespace SDKSample
             ' For the purposes of this sample only the first selection
             ' range will be echoed in the client.
             searchRange = selectionRanges(0)
-            ' For performance and security reasons we'll limit 
+            ' For performance and security reasons we'll limit
             ' the length of the string retrieved to 100 characters.
             ' Alternatively, GetText(-1) will retrieve all selected text.
             Dim selectedText As String = searchRange.GetText(100)
@@ -1121,7 +1121,7 @@ Namespace SDKSample
         '--------------------------------------------------------------------
         Private Sub DisplaySelectedTextWithAttributes(ByVal selectedText As String)
             targetSelection.Text = selectedText
-            ' We're only interested in the FontNameAttribute for the purposes 
+            ' We're only interested in the FontNameAttribute for the purposes
             ' of this sample.
             targetSelectionAttributes.Text = _
                 ParseTextRangeByAttribute( _
@@ -1157,7 +1157,7 @@ Namespace SDKSample
                 ' Get the attribute value of the current character.
                 Dim newAttributeValue As String = _
                     searchRangeClone.GetAttributeValue(automationTextAttribute).ToString()
-                ' If the new attribute value is not equal to the old then report 
+                ' If the new attribute value is not equal to the old then report
                 ' the new value along with its location within the range.
                 If (newAttributeValue <> attributeValue) Then
                     attributeDetails.Append(automationTextAttribute.ProgrammaticName) _

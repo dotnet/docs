@@ -81,7 +81,7 @@ public class Class1
    {
       // <Snippet3>
       string pattern = @"\ban?\b";
-      string input = "An amiable animal with a large snount and an animated nose.";
+      string input = "An amiable animal with a large snout and an animated nose.";
       foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
          Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
 

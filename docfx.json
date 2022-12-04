@@ -58,10 +58,13 @@
                     "csharp-7.0/tuples.md",
                     "csharp-7.0/value-task.md",
                     "csharp-7.1/async-main.md",
+                    "csharp-7.1/target-typed-default.md",
                     "csharp-7.2/leading-separator.md",
                     "csharp-7.2/readonly-struct.md",
-                    "csharp-7.2/ref-extension-methods.md",
                     "csharp-7.2/ref-struct-and-span.md",
+                    "csharp-7.2/ref-extension-methods.md",
+                    "csharp-7.2/non-trailing-named-arguments.md",
+                    "csharp-7.2/private-protected.md",
                     "csharp-7.2/private-protected.md",
                     "csharp-7.3/enum-delegate-constraints.md",
                     "csharp-7.3/ref-loops.md",
@@ -115,8 +118,10 @@
                 "exclude": [
                     "_csharplang/proposals/csharp-7.0/local-functions.md",
                     "_csharplang/proposals/csharp-7.0/throw-expression.md",
-                    "_csharplang/proposals/csharp-7.2/private-protected.md",
+                    "_csharplang/proposals/csharp-7.0/throw-expression.md",
+                    "_csharplang/proposals/csharp-7.1/target-typed-default.md",
                     "_csharplang/proposals/csharp-7.2/readonly-struct.md",
+                    "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md",
                     "_csharplang/proposals/csharp-7.3/blittable.md"
                 ]
             }

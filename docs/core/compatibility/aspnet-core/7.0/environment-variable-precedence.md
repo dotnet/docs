@@ -15,7 +15,7 @@ ASP.NET Core 7.0
 
 ## Previous behavior
 
-`ASPNET_`-prefixed environment variables overrode command-line arguments and `DOTNET_`-prefixed environment variables.
+`ASPNET_`-prefixed environment variables overrode command-line arguments and `DOTNET_`-prefixed environment variables when reading `WebApplicationBuilder`'s [default host configuration](/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0#default-host-configuration-sources).
 
 ## New behavior
 
@@ -23,7 +23,7 @@ Command-line arguments and `DOTNET_`-prefixed environment variables override `AS
 
 ## Type of breaking change
 
-This change can affect [binary compatibility](../../categories.md#binary-compatibility).
+This is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

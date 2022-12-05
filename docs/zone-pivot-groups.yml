@@ -54,7 +54,7 @@ groups:
   title: Orleans version
   prompt: Choose an Orleans version
   pivots:
-    - id: 7-0
-      title: Orleans 7
-    - id: 3-x
+    - id: orleans-7-0
+      title: Orleans 7.0
+    - id: orleans-3-x
       title: Orleans 3.x

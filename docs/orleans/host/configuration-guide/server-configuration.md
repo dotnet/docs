@@ -101,9 +101,14 @@ Here is an example of how to use an external IP address with some port-forwardin
 
 Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider will be `172.16.0.42:11111` and `172.16.0.42:30000`.
 
-:::zone target="docs" pivot="3-x"
-
 ## Application parts
+
+:::zone target="docs" pivot="7-x"
+
+In Orleans 7+, the C# source generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of application parts automatically.
+
+:::zone-end
+:::zone target="docs" pivot="3-x"
 
 ```csharp
 .ConfigureApplicationParts(

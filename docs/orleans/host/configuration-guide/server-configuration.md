@@ -103,7 +103,7 @@ Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the
 
 ## Application parts
 
-:::zone target="docs" pivot="7-x"
+:::zone target="docs" pivot="7-0"
 
 In Orleans 7+, the C# source generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of application parts automatically.
 

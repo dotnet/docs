@@ -124,7 +124,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [target framework](https://learn.microsoft.com/en-us/dotnet/standard/frameworks). It expects a target framework moniker (TFM). Examples: "net6.0", "net7.0-macos". This value will be reflected in the project file.
+  Specifies the [target framework](../../standard/frameworks.md). It expects a target framework moniker (TFM). Examples: "net6.0", "net7.0-macos". This value will be reflected in the project file.
 
 - **`-no-update-check`**
 

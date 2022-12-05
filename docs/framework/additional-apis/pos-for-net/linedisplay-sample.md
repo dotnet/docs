@@ -57,7 +57,7 @@ namespace SOSample.LineDisplay
     [ServiceObject(
             DeviceType.LineDisplay,
             "SampleLineDisplay",
-            "Sample LineDiplay Service Object",
+            "Sample LineDisplay Service Object",
             1,
             9)]
 

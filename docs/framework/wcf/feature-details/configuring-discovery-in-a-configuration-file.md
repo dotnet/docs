@@ -113,7 +113,7 @@ There are four major groups of configuration settings used in discovery. This to
       <extensions>  
          <CustomMetadata>This is custom metadata.</CustomMetadata>  
          <d:Types xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:i="http://printer.example.org/2003/imaging">i:PrintBasic</d:Types>  
-         <CustomMetadata netsted="true">  
+         <CustomMetadata nested="true">  
             <NestedMetadata>This is a nested custom metadata.</NestedMetadata>  
          </CustomMetadata>  
       </extensions>  

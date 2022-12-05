@@ -193,7 +193,7 @@ namespace Samples.ServiceObjects.Advanced
                             ErrorCode.Failure);
                 }
 
-                // The thread has started succesfully.
+                // The thread has started successfully.
                 ThreadWasStarted = true;
             }
             catch (Exception e)

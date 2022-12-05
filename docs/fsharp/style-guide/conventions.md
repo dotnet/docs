@@ -136,7 +136,7 @@ module MyApi =
     let dep3() = r.Next() // Problematic if multiple threads use this
 
     let function1 arg = doStuffWith dep1 dep2 dep3 arg
-    let function2 arg = doSutffWith dep1 dep2 dep3 arg
+    let function2 arg = doStuffWith dep1 dep2 dep3 arg
 ```
 
 This is frequently a bad idea for a few reasons:

@@ -50,3 +50,11 @@ groups:
       title: .NET 5
     - id: dotnet-core-3-1
       title: .NET Core 3.1
+- id: orleans-version
+  title: Orleans version
+  prompt: Choose an Orleans version
+  pivots:
+    - id: 7-0
+      title: Orleans 7
+    - id: 3-x
+      title: Orleans 3.x

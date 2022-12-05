@@ -1,7 +1,8 @@
 ---
 title: Server configuration
 description: Learn how to configure .NET Orleans server settings.
-ms.date: 03/16/2022
+ms.date: 12/05/2022
+zone_pivot_groups: orleans-version
 ---
 
 # Server configuration
@@ -59,7 +60,7 @@ Here we do two things:
     options => options.ConnectionString = connectionString)
 ```
 
-Usually, a service built on Orleans is deployed on a cluster of nodes, either on dedicated hardware or in Azure. For development and basic testing, Orleans can be deployed in a single node configuration. When deployed to a cluster of nodes, Orleans internally implements a set of protocols to discover and maintain membership of Orleans silos in the cluster, including detection of node failures and automatic reconfiguration.
+Usually, a service built on Orleans is deployed on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, Orleans can be deployed in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements a set of protocols to discover and maintain membership of Orleans silos in the cluster, including detection of node failures and automatic reconfiguration.
 
 For reliable management of cluster membership, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for the synchronization of nodes.
 
@@ -85,13 +86,13 @@ Here is an example of how to use an external IP address with some port-forwardin
 ```csharp
 .Configure<EndpointOptions>(options =>
 {
-    // Port to use for Silo-to-Silo
+    // Port to use for silo-to-silo
     options.SiloPort = 11111;
     // Port to use for the gateway
     options.GatewayPort = 30000;
     // IP Address to advertise in the cluster
     options.AdvertisedIPAddress = IPAddress.Parse("172.16.0.42");
-    // The socket used for silo-to-silo will bind to this endpoint
+    // The socket used for client-to-silo will bind to this endpoint
     options.GatewayListeningEndpoint = new IPEndPoint(IPAddress.Any, 40000);
     // The socket used by the gateway will bind to this endpoint
     options.SiloListeningEndpoint = new IPEndPoint(IPAddress.Any, 50000);
@@ -99,6 +100,8 @@ Here is an example of how to use an external IP address with some port-forwardin
 ```
 
 Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider will be `172.16.0.42:11111` and `172.16.0.42:30000`.
+
+:::zone target="docs" pivot="3-x"
 
 ## Application parts
 
@@ -125,3 +128,5 @@ Assemblies added by the above methods can be supplemented using the following ex
 * <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> generates support code for the added parts and adds it to the part manager. Note that this requires the `Microsoft.Orleans.OrleansCodeGenerator` package to be installed and is commonly referred to as runtime code generation.
 
 Type discovery requires that the provided Application Parts include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach for ensuring that these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, code can be generated during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A> method described above. More info regarding code generation could be found in [the corresponding section](../../grains/code-generation.md).
+
+:::zone-end

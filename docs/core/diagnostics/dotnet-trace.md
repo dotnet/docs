@@ -60,7 +60,7 @@ The `dotnet-trace` tool:
   
 - **`--duration`**
 
-  How log to run the trace. `--duration 00:00:00:05` will run it for 5 seconds.
+  How long to run the trace. `--duration 00:00:00:05` will run it for 5 seconds.
 
 ## Commands
 

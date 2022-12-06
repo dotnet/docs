@@ -15,6 +15,8 @@ This article provides a history of each major release of the C# language. The C#
 
 ## C# version 11
 
+*Released November, 2022*
+
 The following features were added in C# 11:
 
 - [Raw string literals](./csharp-11.md#raw-string-literals)
@@ -36,6 +38,8 @@ The following features were added in C# 11:
 C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.
 
 ## C# version 10
+
+*Released November, 2021*
 
 C# 10 adds the following features and enhancements to the C# language:
 
@@ -68,6 +72,8 @@ The new interpolated string handlers and `AsyncMethodBuilder` behavior can impro
 C# 10 also marks more of a shift to the yearly cadence for .NET releases. Because not every feature can be completed in a yearly timeframe, you can try a couple of "preview" features in C# 10. Both *generic attributes* and *static abstract members in interfaces* can be used, but these preview features may change before their final release.
 
 ## C# version 9
+
+*Released November, 2020*
 
 C# 9 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
 
@@ -123,6 +129,8 @@ The C# 9 release continues the work to keep C# a modern, general-purpose program
 
 ## C# version 8.0
 
+*Released September, 2019*
+
 C# 8.0 is the first major C# release that specifically targets .NET Core. Some features rely on new CLR capabilities, others on library types added only in .NET Core. C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](../language-reference/builtin-types/struct.md#readonly-instance-members)
@@ -146,6 +154,8 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
 Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
 ## C# version 7.3
+
+*Released May, 2018*
 
 There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. New compiler options were also added in this release.
 
@@ -172,6 +182,8 @@ The new compiler options are:
 
 ## C# version 7.2
 
+*Released November, 2017*
+
 C# 7.2 added several small language features:
 
 - Initializers on `stackalloc` arrays.
@@ -194,6 +206,8 @@ C# 7.2 added several small language features:
 
 ## C# version 7.1
 
+*Released August, 2017*
+
 C# started releasing *point releases* with C# 7.1. This version added the [language version selection](../language-reference/configure-language-version.md) configuration element, three new language features, and new compiler behavior.
 
 The new language features in this release are:
@@ -211,6 +225,8 @@ Finally, the compiler has two options [`-refout`](../language-reference/compiler
 control reference assembly generation
 
 ## C# version 7.0
+
+*Released March, 2017*
 
 C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0. Here are some of the new features:
 
@@ -231,6 +247,8 @@ Other features included:
 All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
 
 ## C# version 6.0
+
+*Released July, 2015*
 
 Version 6.0, released with Visual Studio 2015, released many smaller features that made C# programming more productive. Here are some of them:
 
@@ -254,6 +272,8 @@ They did one other thing along with this version, though it's not a traditional 
 
 ## C# version 5.0
 
+*Released August, 2012*
+
 C# version 5.0, released with Visual Studio 2012, was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming.  Here's the major features list:
 
 - [Asynchronous members](../async.md)
@@ -265,6 +285,8 @@ The caller info attribute lets you easily retrieve information about the context
 But `async` and `await` are the real stars of this release. When these features came out in 2012, C# changed the game again by baking asynchrony into the language as a first-class participant. If you've ever dealt with long running operations and the implementation of webs of callbacks, you probably loved this language feature.
 
 ## C# version 4.0
+
+*Released April, 2010*
 
 C# version 4.0, released with Visual Studio 2010, would have had a difficult time living up to the groundbreaking status of version 3.0. This version introduced some interesting new features:
 
@@ -280,6 +302,8 @@ The major feature was the introduction of the `dynamic` keyword. The `dynamic` k
 Dynamic binding gives you the potential for errors but also great power within the language.
 
 ## C# version 3.0
+
+*Released November, 2007*
 
 C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
@@ -300,6 +324,8 @@ A more nuanced view examines expression trees, lambda expressions, and anonymous
 Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made a list of integers a whole lot smarter.
 
 ## C# version 2.0
+
+*Released November, 2005*
 
 Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
 
@@ -325,9 +351,13 @@ And yet, C# continued to play a bit of catch-up with Java. Java had already rele
 
 ## C# version 1.2
 
+*Released April, 2003*
+
 C# version 1.2 shipped with Visual Studio .NET 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose%2A> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
 
 ## C# version 1.0
+
+*Released January, 2002*
 
 When you go back and look, C# version 1.0, released with Visual Studio .NET 2002, looked a lot like Java. As [part of its stated design goals for ECMA](https://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general-purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
 

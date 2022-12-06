@@ -120,7 +120,7 @@ var sdcaModel = sdcaEstimator.Fit(data);
 In ML.NET use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
 
 ```csharp
-//Use the model to make predictions
+// Use the model to make predictions
 var transformedData = sdcaModel.Transform(data);
 
 // Calculate feature importance

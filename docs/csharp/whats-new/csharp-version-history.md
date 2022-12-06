@@ -13,6 +13,28 @@ This article provides a history of each major release of the C# language. The C#
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
 
+## C# version 11
+
+The following features were added in C# 11:
+
+- [Raw string literals](./csharp-11.md#raw-string-literals)
+- [Generic math support](./csharp-11.md#generic-math-support)
+- [Generic attributes](./csharp-11.md#generic-attributes)
+- [UTF-8 string literals](./csharp-11.md#utf-8-string-literals)
+- [Newlines in string interpolation expressions](./csharp-11.md#newlines-in-string-interpolations)
+- [List patterns](./csharp-11.md#list-patterns)
+- [File-local types](./csharp-11.md#file-local-types)
+- [Required members](./csharp-11.md#required-members)
+- [Auto-default structs](./csharp-11.md#auto-default-struct)
+- [Pattern match `Span<char>` on a constant `string`](./csharp-11.md#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
+- [Extended `nameof` scope](./csharp-11.md#extended-nameof-scope)
+- [Numeric IntPtr](./csharp-11.md#numeric-intptr-and-uintptr)
+- [`ref` fields and `scoped ref`](./csharp-11.md#ref-fields-and-ref-scoped-variables)
+- [Improved method group conversion to delegate](./csharp-11.md#improved-method-group-conversion-to-delegate)
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+
+C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.
+
 ## C# version 10
 
 C# 10 adds the following features and enhancements to the C# language:

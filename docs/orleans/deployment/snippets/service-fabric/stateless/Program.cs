@@ -15,14 +15,16 @@ try
             CreateHostAsync, context));
 
     ServiceEventSource.Current.ServiceTypeRegistered(
-        Environment.ProcessId, typeof(OrleansHostedStatelessService).Name);
+        Environment.ProcessId,
+        typeof(OrleansHostedStatelessService).Name);
 
     // Prevents this host process from terminating so services keep running.
     await Task.Delay(Timeout.Infinite);
 }
 catch (Exception ex)
 {
-    ServiceEventSource.Current.ServiceHostInitializationFailed(ex.ToString());
+    ServiceEventSource.Current.ServiceHostInitializationFailed(
+        ex.ToString());
     throw;
 }
 
@@ -37,16 +39,19 @@ static async Task<IHost> CreateHostAsync(StatelessServiceContext context)
             // or SQL Server for clustering.
             builder.UseLocalhostClustering();
 
-            // Service Fabric manages port allocations, so update the configuration using those ports.
-            // Gather configuration from Service Fabric.
+            // Service Fabric manages port allocations, so update the 
+            // configuration using those ports. Gather configuration from 
+            // Service Fabric.
             var activation = context.CodePackageActivationContext;
             var endpoints = activation.GetEndpoints();
 
-            // These endpoint names correspond to TCP endpoints specified in ServiceManifest.xml
+            // These endpoint names correspond to TCP endpoints 
+            // specified in ServiceManifest.xml
             var siloEndpoint = endpoints["OrleansSiloEndpoint"];
             var gatewayEndpoint = endpoints["OrleansProxyEndpoint"];
             var hostname = context.NodeContext.IPAddressOrFQDN;
-            builder.ConfigureEndpoints(hostname, siloEndpoint.Port, gatewayEndpoint.Port);
+            builder.ConfigureEndpoints(hostname,
+                siloEndpoint.Port, gatewayEndpoint.Port);
         })
         .Build();
 }

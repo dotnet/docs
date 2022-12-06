@@ -1,16 +1,17 @@
-﻿using Orleans.Configuration;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using GrainInterfaces;
 
 try
 {
-    using var host = await StartClientAsync();
+    using IHost host = await StartClientAsync();
     var client = host.Services.GetRequiredService<IClusterClient>();
 
     await DoClientWorkAsync(client);
     Console.ReadKey();
+
+    await host.StopAsync();
 
     return 0;
 }
@@ -31,12 +32,7 @@ static async Task<IHost> StartClientAsync()
     var builder = new HostBuilder()
         .UseOrleansClient(client =>
         {
-            client.UseLocalhostClustering()
-                .Configure<ClusterOptions>(options =>
-                {
-                    options.ClusterId = "dev";
-                    options.ServiceId = "OrleansBasics";
-                });
+            client.UseLocalhostClustering();
         })
         .ConfigureLogging(logging => logging.AddConsole());
 

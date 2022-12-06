@@ -80,17 +80,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=600000f
@@ -116,17 +116,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=float.NaN
@@ -165,12 +165,12 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms = 2f,
         Price = 200000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms = 1f,
         Price = 100000f
@@ -203,17 +203,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=600000f

@@ -172,6 +172,7 @@ Taking a look at the five most important features for this dataset, the price of
 
 ## Next steps
 
+- [Use Permutation Feature Importance (PFI) with AutoML](how-to-use-the-automl-api.md#determine-feature-importance)
 - [Make predictions with a trained model](machine-learning-model-predictions-ml-net.md)
 - [Retrain a model](retrain-model-ml-net.md)
 - [Deploy a model in an ASP.NET Core Web API](serve-model-web-api-ml-net.md)

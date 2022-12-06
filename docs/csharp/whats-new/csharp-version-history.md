@@ -54,18 +54,18 @@ C# 10 adds the following features and enhancements to the C# language:
 - [CallerArgumentExpression attribute](./csharp-10.md#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](./csharp-10.md#enhanced-line-pragma)
 
-Additional features are available in *preview* mode. You're encouraged to try these features and [provide feedback](https://github.com/dotnet/roslyn/issues/new/choose) on them. They may change before their final release. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
+More features were available in *preview* mode. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
 
 - [Generic attributes](./csharp-11.md#generic-attributes) later in this article.
 - [static abstract members in interfaces](./csharp-11.md#generic-math-support)
 
 C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
 
-Many of the features mean you'll type less code to express the same concepts. *Record structs* synthesize many of the same methods that *record classes* do. Structs and anonymous types support *with expressions*. *Global using directives* and *file scoped namespace declarations* mean you express dependencies and namespace organization more clearly.*Lambda improvements* makes it easier to declare lambda expressions where they are used. New property patterns and deconstruction improvements create more concise code.
+Many of the features mean you'll type less code to express the same concepts. *Record structs* synthesize many of the same methods that *record classes* do. Structs and anonymous types support *with expressions*. *Global using directives* and *file scoped namespace declarations* mean you express dependencies and namespace organization more clearly. *Lambda improvements* makes it easier to declare lambda expressions where they're used. New property patterns and deconstruction improvements create more concise code.
 
-The new interpolated string handlers and `AsyncMethodBuilder` behavior can improve performance. These language features were leveraged in the .NET Runtime to achieve performance improvements in .NET 6.
+The new interpolated string handlers and `AsyncMethodBuilder` behavior can improve performance. These language features were applied in the .NET Runtime to achieve performance improvements in .NET 6.
 
-C# 10 also marks more of a shift to the yearly cadence for .NET releases. Because not every feature can be completed in a yearly timeframe, you can try a couple of "preview" features in C# 10. Both *generic attributes* and *static abstract members in interfaces* can be used, but these are preview features and may change before their final release.
+C# 10 also marks more of a shift to the yearly cadence for .NET releases. Because not every feature can be completed in a yearly timeframe, you can try a couple of "preview" features in C# 10. Both *generic attributes* and *static abstract members in interfaces* can be used, but these preview features may change before their final release.
 
 ## C# version 9
 
@@ -95,7 +95,7 @@ C# 9 continues three of the themes from previous releases: removing ceremony, se
 
 [Top level statements](../fundamentals/program-structure/top-level-statements.md) means your main program is simpler to read. There's less need for ceremony: a namespace, a `Program` class, and `static void Main()` are all unnecessary.
 
-The introduction of [`records`](../language-reference/builtin-types/record.md) provide a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
+The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
 The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities have been expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns.
 
@@ -212,7 +212,7 @@ control reference assembly generation
 
 ## C# version 7.0
 
-C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
+C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0. Here are some of the new features:
 
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
@@ -228,13 +228,11 @@ Other features included:
 - Binary Literals and Digit Separators
 - [Throw expressions](../language-reference/keywords/throw.md#the-throw-expression)
 
-All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
-
-But C# is being put to ever broader use. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability.  These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
+All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
 
 ## C# version 6.0
 
-With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, released with Visual Studio 2015, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
+Version 6.0, released with Visual Studio 2015, released many smaller features that made C# programming more productive. Here are some of them:
 
 - [Static imports](../language-reference/keywords/using-directive.md)
 - [Exception filters](../language-reference/keywords/when.md)
@@ -250,7 +248,7 @@ Other new features include:
 - Await in catch/finally blocks
 - Default values for getter-only properties
 
-Each of these features is interesting in its own right. But if you look at them altogether, you see an interesting pattern. In this version, C# eliminated language boilerplate to make code more terse and readable. So for fans of clean, simple code, this language version was a huge win.
+Each of these features is interesting in its own right. But if you look at them altogether, you see an interesting pattern. In this version, C# started to eliminate language boilerplate to make code more terse and readable. So for fans of clean, simple code, this language version was a huge win.
 
 They did one other thing along with this version, though it's not a traditional language feature in itself. They released [Roslyn the compiler as a service](https://github.com/dotnet/roslyn). The C# compiler is now written in C#, and you can use the compiler as part of your programming efforts.
 
@@ -260,9 +258,6 @@ C# version 5.0, released with Visual Studio 2012, was a focused version of the l
 
 - [Asynchronous members](../async.md)
 - [Caller info attributes](../language-reference/attributes/caller-information.md)
-
-### See Also
-
 - [Code Project: Caller Info Attributes in C# 5.0](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 The caller info attribute lets you easily retrieve information about the context in which you're running without resorting to a ton of boilerplate reflection code. It has many uses in diagnostics and logging tasks.
@@ -271,9 +266,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 ## C# version 4.0
 
-C# version 4.0, released with Visual Studio 2010, would have had a difficult time living up to the groundbreaking status of version 3.0. With version 3.0, C# had moved the language firmly out from the shadow of Java and into prominence. The language was quickly becoming elegant.
-
-The next version did introduce some interesting new features:
+C# version 4.0, released with Visual Studio 2010, would have had a difficult time living up to the groundbreaking status of version 3.0. This version introduced some interesting new features:
 
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
@@ -304,13 +297,11 @@ In retrospect, many of these features seem both inevitable and inseparable. They
 
 A more nuanced view examines expression trees, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object-Oriented / Functional language.
 
-Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made it look as though that list of integers had gotten a whole lot smarter.
-
-It took time for people to really grasp and integrate the concept, but they gradually did. And now, years later, code is much more concise, simple, and functional.
+Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made a list of integers a whole lot smarter.
 
 ## C# version 2.0
 
-Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
+Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
 
 - [Generics](../fundamentals/types/generics.md)
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
@@ -326,9 +317,7 @@ Other C# 2.0 features added capabilities to existing features:
 - Static classes
 - Delegate inference
 
-While C# may have started as a generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a significant way.
-
-With generics, types and methods can operate on an arbitrary type while still retaining type safety. For instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type-safe operations on those strings or integers while you iterate through them. Using generics is better than creating a `ListInt` type that derives from `ArrayList`  or casting from `Object` for every operation.
+While C# may have started as a generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. With generics, types and methods can operate on an arbitrary type while still retaining type safety. For instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type-safe operations on those strings or integers while you iterate through them. Using generics is better than creating a `ListInt` type that derives from `ArrayList`  or casting from `Object` for every operation.
 
 C# version 2.0 brought iterators. To put it succinctly, iterators let you examine all the items in a `List` (or other Enumerable types) with a `foreach` loop. Having iterators as a first-class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
 

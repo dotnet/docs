@@ -45,17 +45,12 @@ You will replace the default code with the code given for each project, below. Y
 
 ## Add Orleans NuGet packages
 
-| Project          | NuGet package                               |
-|------------------|---------------------------------------------|
-| Silo             | `Microsoft.Orleans.Server`                  |
-| Silo             | `Microsoft.Extensions.Logging.Console`      |
-| Silo             | `Microsoft.Extensions.Hosting`              |
-| Client           | `Microsoft.Orleans.Client`                  |
-| Client           | `Microsoft.Extensions.Logging.Console`      |
-| Client           | `Microsoft.Extensions.Hosting`              |
-| Grain Interfaces | `Microsoft.Orleans.Sdk`                     |
-| Grains           | `Microsoft.Orleans.Sdk`                     |
-| Grains           | `Microsoft.Extensions.Logging.Abstractions` |
+| Project | NuGet package |
+|---|---|
+| Silo | `Microsoft.Orleans.Server`<br>`Microsoft.Extensions.Logging.Console`<br>`Microsoft.Extensions.Hosting` |
+| Client | `Microsoft.Orleans.Client`<br>`Microsoft.Extensions.Logging.Console`<br>`Microsoft.Extensions.Hosting` |
+| Grain Interfaces | `Microsoft.Orleans.Sdk` |
+| Grains | `Microsoft.Orleans.Sdk`<br>`Microsoft.Extensions.Logging.Abstractions` |
 
 `Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are meta-packages that bring dependency that you will most likely need on the Silo and client-side. For more information on adding package references, see [dotnet add package](../../core/tools/dotnet-add-package.md) or [Install and manage packages in Visual Studio using the NuGet Package Manage](/nuget/consume-packages/install-use-packages-visual-studio).
 

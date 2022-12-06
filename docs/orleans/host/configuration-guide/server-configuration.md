@@ -124,13 +124,14 @@ This is an example of a silo configuration that defines cluster information, use
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        builder.Configure<ClusterOptions>(options =>
+        builder
+            .UseAzureStorageClustering(
+                options => options.ConnectionString = connectionString)
+            .Configure<ClusterOptions>(options =>
             {
                 options.ClusterId = "my-first-cluster";
                 options.ServiceId = "AspNetSampleApp";
             })
-            .UseAzureStorageClustering(
-                options => options.ConnectionString = connectionString)
             .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
             .ConfigureApplicationParts(
                 parts => parts.AddApplicationPart(typeof(ValueGrain).Assembly).WithReferences())
@@ -139,6 +140,19 @@ var silo = new HostBuilder()
 ```
 
 Let's breakdown the steps used in this sample:
+
+## Clustering provider
+
+```csharp
+siloBuilder.UseAzureStorageClustering(
+    options => options.ConnectionString = connectionString)
+```
+
+Usually, a service built on Orleans is deployed on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, Orleans can be deployed in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements a set of protocols to discover and maintain membership of Orleans silos in the cluster, including detection of node failures and automatic reconfiguration.
+
+For reliable management of cluster membership, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for the synchronization of nodes.
+
+In this sample, we are using Azure Table as the membership provider.
 
 ## Orleans clustering information
 
@@ -155,23 +169,10 @@ Here we do two things:
 - Set the `ClusterId` to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silos that use this ID will be able to talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
 - Set the `ServiceId` to `"AspNetSampleApp"`: this is a unique ID for your application that will be used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-## Clustering provider
-
-```csharp
-.UseAzureStorageClustering(
-    options => options.ConnectionString = connectionString)
-```
-
-Usually, a service built on Orleans is deployed on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, Orleans can be deployed in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements a set of protocols to discover and maintain membership of Orleans silos in the cluster, including detection of node failures and automatic reconfiguration.
-
-For reliable management of cluster membership, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for the synchronization of nodes.
-
-In this sample, we are using Azure Table as the membership provider.
-
 ## Endpoints
 
 ```csharp
-.ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+siloBuilder.ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
 ```
 
 An Orleans silo has two typical types of endpoint configuration:
@@ -186,7 +187,7 @@ This method should be sufficient in most cases, but you can customize it further
 Here is an example of how to use an external IP address with some port-forwarding:
 
 ```csharp
-.Configure<EndpointOptions>(options =>
+siloBuilder.Configure<EndpointOptions>(options =>
 {
     // Port to use for silo-to-silo
     options.SiloPort = 11111;
@@ -206,7 +207,7 @@ Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the
 ## Application parts
 
 ```csharp
-.ConfigureApplicationParts(
+siloBuilder.ConfigureApplicationParts(
     parts => parts.AddApplicationPart(
         typeof(ValueGrain).Assembly)
         .WithReferences())

@@ -691,7 +691,7 @@ experiment.SetCheckpoint(checkpointPath);
 As machine learning is introduced into more aspects of everyday life such as healthcare, it's of utmost importance to understand why a machine learning model makes the decisions it does. Permutation Feature Importance (PFI) is a technique used to explain classification, ranking, and regression models. At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is. For more information on PFI, see [interpret model predictions using Permutation Feature Importance](explain-machine-learning-model-permutation-feature-importance-ml-net.md).
 
 > [!NOTE]
-> Calculating PFI can be a time consuming operation. How much time it takes to calculate is proportional to the number of features you have. The more features, the longer PFI will take to run.
+> Calculating PFI can be a time consuming operation. How much time it takes to calculate is proportional to the number of feature columns you have. The more features, the longer PFI will take to run.
 
 To determine feature importance using AutoML:
 

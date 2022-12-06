@@ -1,7 +1,7 @@
 ---
 title: Interpret ML.NET models with Permutation Feature Importance
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 10/05/2021
+ms.date: 12/06/2022
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -105,22 +105,14 @@ string[] featureColumnNames =
         .Select(column => column.Name)
         .Where(columnName => columnName != "Label").ToArray();
 
-// 2. Define estimator with data pre-processing steps
-IEstimator<ITransformer> dataPrepEstimator =
+// 2. Define training pipeline
+IEstimator<ITransformer> sdcaEstimator =
     mlContext.Transforms.Concatenate("Features", featureColumnNames)
-        .Append(mlContext.Transforms.NormalizeMinMax("Features"));
+        .Append(mlContext.Transforms.NormalizeMinMax("Features"))
+        .Append(mlContext.Regression.Trainers.Sdca());
 
-// 3. Create transformer using the data pre-processing estimator
-ITransformer dataPrepTransformer = dataPrepEstimator.Fit(data);
-
-// 4. Pre-process the training data
-IDataView preprocessedTrainData = dataPrepTransformer.Transform(data);
-
-// 5. Define Stochastic Dual Coordinate Ascent machine learning estimator
-var sdcaEstimator = mlContext.Regression.Trainers.Sdca();
-
-// 6. Train machine learning model
-var sdcaModel = sdcaEstimator.Fit(preprocessedTrainData);
+// 3. Train machine learning model
+var sdcaModel = sdcaEstimator.Fit(data);
 ```
 
 ## Explain the model with Permutation Feature Importance (PFI)
@@ -128,14 +120,15 @@ var sdcaModel = sdcaEstimator.Fit(preprocessedTrainData);
 In ML.NET use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
 
 ```csharp
+//Use the model to make predictions
+var transformedData = sdcaModel.Transform(data);
+
+// Calculate feature importance
 ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
     mlContext
         .Regression
-        .PermutationFeatureImportance(sdcaModel, preprocessedTrainData, permutationCount:3);
+        .PermutationFeatureImportance(sdcaModel, transformedData, permutationCount:3);
 ```
-
-> [!NOTE]
-> For pipelines that combine the preprocessing transforms and trainer, assuming that the trainer is at the end of the pipeline, you'll need to extract it using the `LastTransformer` property.
 
 The result of using [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) on the training dataset is an [`ImmutableArray`](xref:System.Collections.Immutable.ImmutableArray) of [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) objects. [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) provides summary statistics like mean and standard deviation for multiple observations of [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics) equal to the number of permutations specified by the `permutationCount` parameter.
 

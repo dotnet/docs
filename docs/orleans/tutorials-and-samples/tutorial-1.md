@@ -25,9 +25,6 @@ For this tutorial we're going to create four projects:
 
 ### Create the structure in Visual Studio
 
-> [!TIP]
-> You can use the default project types in c# for each of these projects.
-
 You will replace the default code with the code given for each project, below. You will also probably need to add `using` statements.
 
 1. Start by creating a Console App project in a new solution. Call the project part `Silo` and name the solution `OrleansHelloWorld`.

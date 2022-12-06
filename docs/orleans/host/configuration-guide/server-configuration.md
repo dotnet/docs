@@ -33,7 +33,7 @@ using IHost host = new HostBuilder()
 ```
 
 > [!TIP]
-> When developing for Orleans, you can <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.IPEndPoint,System.String,System.String)> to configure a local cluster. In production environments, you should use a clustering provider that is suitable for your deployment.
+> When developing for Orleans, you can call <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.IPEndPoint,System.String,System.String)> to configure a local cluster. In production environments, you should use a clustering provider that is suitable for your deployment.
 
 ## Clustering provider
 
@@ -219,7 +219,7 @@ Application Parts are configured using <xref:Orleans.ApplicationParts.IApplicati
 
 The following extension methods on <xref:Orleans.ApplicationParts.IApplicationPartManager> support common uses:
 
-- <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart%2A?displayProperty=nameWithType>a single assembly can be added using this extension method.
+- <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart%2A?displayProperty=nameWithType> a single assembly can be added using this extension method.
 - <xref:Orleans.ApplicationPartManagerExtensions.AddFromAppDomain%2A?displayProperty=nameWithType> adds all assemblies currently loaded in the `AppDomain`.
 - <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory%2A?displayProperty=nameWithType> loads and adds all assemblies in the current base path (see <xref:System.AppDomain.BaseDirectory?displayProperty=nameWithType>).
 

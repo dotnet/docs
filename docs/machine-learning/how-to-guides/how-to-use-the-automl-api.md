@@ -47,7 +47,7 @@ CMT|1|1|637|1.4|CRD|8.5
 
 ### Load your data
 
-Start by inizializing your <xref:Microsoft.ML.MLContext>. `MLContext` is a starting point for all ML.NET operations. Initializing mlContext creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
+Start by initializing your <xref:Microsoft.ML.MLContext>. `MLContext` is a starting point for all ML.NET operations. Initializing mlContext creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
 Then, to load your data, use the <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> method.
 
@@ -352,7 +352,7 @@ In order to use AutoML with the text classification trainer you'll have to:
 1. Create a sweepable estimator and add it to your pipeline.
 
     ```csharp
-    // Initialize serach space
+    // Initialize search space
     var tcSearchSpace = new SearchSpace<TCOption>();
     
     // Create factory for Text Classification trainer

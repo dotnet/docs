@@ -27,6 +27,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: ASPNET-prefixed environment variable precedence
+          href: aspnet-core/7.0/environment-variable-precedence.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Authentication in WebAssembly apps
@@ -673,6 +675,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: ASPNET-prefixed environment variable precedence
+          href: aspnet-core/7.0/environment-variable-precedence.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Authentication in WebAssembly apps

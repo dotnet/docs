@@ -1,27 +1,27 @@
 ---
 title: Minimal Orleans app sample project
 description: Explore the minimal Orleans app sample project.
-ms.date: 02/04/2022
+ms.date: 12/06/2022
 ---
 
 # Tutorial: Create a minimal Orleans application
 
 This tutorial provides step-by-step instructions for creating a basic functioning Orleans application. It is designed to be self-contained and minimalistic, with the following traits:
 
-- It relies only on NuGet packages
-- It has been tested in Visual Studio 2022 using Orleans 7.0.0
-- It has no reliance on external storage
+- It relies only on NuGet packages.
+- It has been tested in Visual Studio 2022 using Orleans 7.0.
+- It has no reliance on external storage.
 
-Keep in mind that this is only a tutorial and lacks appropriate error handling and other goodies that would be useful for a production environment. However, it should help the readers get a real hands-on with regards to the structure of Orleans and allow them to focus their continued learning on the parts most relevant to them.
+Keep in mind this is a tutorial and lacks appropriate error handling and other essential code that would be useful for a production environment. However, it should help readers get a hands-on understanding of the common app structure for Orleans and allow them to focus their continued learning on the parts most relevant to them.
 
 ## Project setup
 
-For this tutorial we're going to create 4 projects:
+For this tutorial we're going to create four projects:
 
-- a library to contain the grain interfaces
-- a library to contain the grain classes
-- a console application to host our Silo
-- a console application to host our Client
+- Library to contain the grain interfaces.
+- Library to contain the grain classes.
+- Console app to host the Silo.
+- Console app to host the Client.
 
 ### Create the structure in Visual Studio
 
@@ -30,25 +30,25 @@ For this tutorial we're going to create 4 projects:
 
 You will replace the default code with the code given for each project, below. You will also probably need to add `using` statements.
 
-1. Start by creating a Console App (.NET 7) project in a new solution. Call the project part `Silo` and name the solution `OrleansHelloWorld`.
-2. Add another Console App (.NET 7) project and name it `Client`.
-3. Add a Class Library (.NET 7) and name it `GrainInterfaces`.
-4. Add another Class Library (.NET 7) and name it `Grains`.
+1. Start by creating a Console App project in a new solution. Call the project part `Silo` and name the solution `OrleansHelloWorld`.
+2. Add another Console App project and name it `Client`.
+3. Add a Class Library and name it `GrainInterfaces`.
+4. Add another Class Library and name it `Grains`.
 
 #### Delete default source files
 
-1. Delete _Class1.cs_ from _Grains_
-2. Delete _Class1.cs_ from _GrainInterfaces_
+1. Delete _Class1.cs_ from **Grains**.
+1. Delete _Class1.cs_ from **GrainInterfaces**.
 
 ### Add references
 
-1. `Grains` references `GrainInterfaces`.
-2. `Silo` references `GrainInterfaces` and `Grains`.
-3. `Client` references `GrainInterfaces`.
+1. **Grains** references **GrainInterfaces**.
+1. **Silo** references **Grains**.
+1. **Client** references **GrainInterfaces**.
 
-## Add Orleans NuGet Packages
+## Add Orleans NuGet packages
 
-| Project          | Nuget package                               |
+| Project          | NuGet package                               |
 |------------------|---------------------------------------------|
 | Silo             | `Microsoft.Orleans.Server`                  |
 | Silo             | `Microsoft.Extensions.Logging.Console`      |
@@ -60,163 +60,37 @@ You will replace the default code with the code given for each project, below. Y
 | Grains           | `Microsoft.Orleans.Sdk`                     |
 | Grains           | `Microsoft.Extensions.Logging.Abstractions` |
 
-`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are meta-packages that bring dependency that you will most likely need on the Silo and client-side.
+`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are meta-packages that bring dependency that you will most likely need on the Silo and client-side. For more information on adding package references, see [dotnet add package](../../core/tools/dotnet-add-package.md) or [Install and manage packages in Visual Studio using the NuGet Package Manage](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## Define a Grain Interface
 
-In the GrainInterfaces project, add a `IHello.cs` code file and define the following IHello interface in it:
+In the **GrainInterfaces** project, add an _IHello.cs_ code file and define the following `IHello` interface in it:
 
-```csharp
-using System.Threading.Tasks;
-
-namespace OrleansBasics
-{
-    public interface IHello : Orleans.IGrainWithIntegerKey
-    {
-        Task<string> SayHello(string greeting);
-    }
-}
-```
+:::code source="snippets/minimal/GrainInterfaces/IHello.cs":::
 
 ## Define a grain class
 
-In the Grains project, add a `HelloGrain.cs` code file and define the following class in it:
+In the **Grains** project, add a _HelloGrain.cs_ code file and define the following class in it:
 
-```csharp
-using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
-
-namespace OrleansBasics
-{
-    public class HelloGrain : Orleans.Grain, IHello
-    {
-        private readonly ILogger _logger;
-
-        public HelloGrain(ILogger<HelloGrain> logger)
-        {
-            _logger = logger;
-        }
-
-        Task<string> IHello.SayHello(string greeting)
-        {
-            _logger.LogInformation("SayHello message received: greeting = '{Greeting}'", greeting);
-            return Task.FromResult($"\n Client said: '{greeting}', so HelloGrain says: Hello!");
-        }
-    }
-}
-```
+:::code source="snippets/minimal/Grains/HelloGrain.cs":::
 
 ### Create the Silo
 
-At this step, we add code to initialize a server that will host and run our grains&mdash;a silo. We will use the development clustering provider here, so that we can run everything locally, without a dependency on external storage systems. You can find more information about that in the [Local Development Configuration](../host/configuration-guide/local-development-configuration.md) page of the Orleans documentation. We will run a cluster with a single silo in it.
+At this step, we add code to initialize a server that will host and run our grains&mdash;a silo. We will use the development clustering provider here, so that we can run everything locally, without a dependency on external storage systems. For more information, see [Local Development Configuration](../host/configuration-guide/local-development-configuration.md). In this example, you'll run a cluster with a single Silo in it.
 
-Add the following code to _Program.cs_ of the Silo project:
+Add the following code to _Program.cs_ of the **Silo** project:
 
-```csharp
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Orleans.Configuration;
-
-try
-{
-    var host = await StartSiloAsync();
-    Console.WriteLine("\n\n Press Enter to terminate...\n\n");
-    Console.ReadLine();
-
-    await host.StopAsync();
-
-    return 0;
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex);
-    return 1;
-}
-
-static async Task<IHost> StartSiloAsync()
-{
-    var builder = new HostBuilder()
-        .UseOrleans(c =>
-        {
-            c.UseLocalhostClustering()
-                .Configure<ClusterOptions>(options =>
-                {
-                    options.ClusterId = "dev";
-                    options.ServiceId = "OrleansBasics";
-                })            
-                .ConfigureLogging(logging => logging.AddConsole());
-        });
-
-    var host = builder.Build();
-    await host.StartAsync();
-
-    return host;
-}
-```
+:::code source="snippets/minimal/Silo/Program.cs":::
 
 ### Create the client
 
-Finally, we need to configure a client for communicating with our grains, connect it to the cluster (with a single silo in it), and invoke the grain. Note that the clustering configuration must match the one we used for the silo. There is more information about the client in the [Clusters and Clients](../host/client.md) section of the Orleans documentation.
+Finally, we need to configure a client for communicating with our grains, connect it to the cluster (with a single silo in it), and invoke the grain. Note that the clustering configuration must match the one we used for the silo. For more information, see [Clusters and Clients](../host/client.md)
 
-```csharp
-using Orleans.Configuration;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-
-try
-{
-    var host = await StartClientAsync();
-    var client = host.Services.GetRequiredService<IClusterClient>();
-
-    await DoClientWorkAsync(client);
-    Console.ReadKey();    
-
-    return 0;
-}
-catch (Exception e)
-{
-    Console.WriteLine($"\nException while trying to run client: {e.Message}");
-    Console.WriteLine("Make sure the silo the client is trying to connect to is running.");
-    Console.WriteLine("\nPress any key to exit.");
-    Console.ReadKey();
-    return 1;
-}
-
-static async Task<IHost> StartClientAsync()
-{
-    var builder = new HostBuilder()
-        .UseOrleansClient(client => 
-        {
-            client.UseLocalhostClustering()
-                .Configure<ClusterOptions>(options => 
-                {
-                    options.ClusterId = "dev";
-                    options.ServiceId = "OrleansBasics";
-                });
-        })            
-        .ConfigureLogging(logging => logging.AddConsole());
-
-    var host = builder.Build();
-    await host.StartAsync();
-    
-    Console.WriteLine("Client successfully connected to silo host \n");
-
-    return host;
-}
-
-static async Task DoClientWorkAsync(IClusterClient client)
-{
-    var friend = client.GetGrain<IHello>(0);
-    var response = await friend.SayHello("Good morning, HelloGrain!");
-
-    Console.WriteLine($"\n\n{response}\n\n");
-}
-```
+:::code source="snippets/minimal/Client/Program.cs":::
 
 ## Run the application
 
-Build the solution and run the Silo. After you get the confirmation message that the Silo is running ("Press enter to terminate..."), run the Client.
+Build the solution and run the **Silo**. After you get the confirmation message that the **Silo** is running ("Press enter to terminate..."), run the **Client**. For more information, see [How to: Set multiple startup projects](/visualstudio/ide/how-to-set-multiple-startup-projects).
 
 ## See also
 

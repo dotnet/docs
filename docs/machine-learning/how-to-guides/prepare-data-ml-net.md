@@ -67,7 +67,7 @@ To split data into train / test sets, use the <xref:Microsoft.ML.DataOperationsC
 TrainTestData dataSplit = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
 ```
 
-The `testFraction` parameter takes 0.8 or 80% of the data for training and the remaining 0.2 or 20% is used for testing and validation.
+The `testFraction` parameter is used to take 0.2 or 20% of the dataset for testing. The remaining 80% are used for training.
 
 The result is <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData> with two IDataViews which you can access via <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData.TrainSet> and <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData.TestSet>.
 

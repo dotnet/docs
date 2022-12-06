@@ -30,32 +30,32 @@ A good analogy for these concepts is studying for an exam. Let's say you knew th
 Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
 
 ```csharp
-HomeData[] homeDataList = new HomeData[]
+var homeDataList = new HomeData[]
 {
-    new HomeData
+    new()
     {
-        NumberOfBedrooms=1f,
-        Price=100000f
+        NumberOfBedrooms = 1f,
+        Price = 100_000f
     },
-    new HomeData
+    new()
     {
-        NumberOfBedrooms=2f,
-        Price=300000f
+        NumberOfBedrooms = 2f,
+        Price = 300_000f
     },
-    new HomeData
+    new()
     {
-        NumberOfBedrooms=6f,
-        Price=600000f
+        NumberOfBedrooms = 6f,
+        Price = 600_000f
     },
-    new HomeData
+    new()
     {
-        NumberOfBedrooms=3f,
-        Price=300000f
+        NumberOfBedrooms = 3f,
+        Price = 300_000f
     },
-    new HomeData
+    new()
     {
-        NumberOfBedrooms=2f,
-        Price=200000f
+        NumberOfBedrooms = 2f,
+        Price = 200_000f
     }
 };
 ```

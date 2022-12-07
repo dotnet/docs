@@ -112,7 +112,7 @@ The rest of the version isn't included in the version name. This allows the OS p
 
 The following lists the recommended packages:
 
-- `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
+- `dotnet-sdk-[major].[minor]` - Installs the latest SDK for specific runtime
   - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-7.0
   - **Contains:** (3),(4)

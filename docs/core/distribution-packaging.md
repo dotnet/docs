@@ -173,7 +173,7 @@ The following two meta packages are optional. They bring value for end users in 
   - **Example:** dotnet7
   - **Dependencies:** `dotnet-sdk-[major].[minor]`
 
-- `dotnet` - Installs the specific sdk version determined by distros to be the primary, usually the latest available
+- `dotnet` - Installs a specific SDK version determined by distros to be the primary version&mdash;usually the latest available
   - **Version:** \<sdk version>
   - **Example:** dotnet
   - **Dependencies:** `dotnet-sdk-[major].[minor]`

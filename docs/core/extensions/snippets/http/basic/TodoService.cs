@@ -1,5 +1,6 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using Shared;
 
@@ -26,7 +27,7 @@ public sealed class TodoService
             // Parse JSON response deserialize into Todo types
             Todo[]? todos = await client.GetFromJsonAsync<Todo[]>(
                 $"https://jsonplaceholder.typicode.com/todos?userId={userId}",
-                DefaultJsonSerialization.Options);
+                new JsonSerializerOptions(JsonSerializerDefaults.Web));
 
             return todos ?? Array.Empty<Todo>();
         }

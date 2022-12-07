@@ -166,7 +166,7 @@ The following lists the recommended packages:
   - **Version:** \<sdk version>
   - **Contains:** (15)
 
-The following 2 meta packages are optional. They do bring value for end users, as they abstract the top-level package (dotnet-sdk) which simplifies the installation of the full set of .NET packages. These meta packages would reference a specific .NET SDK version.
+The following two meta packages are optional. They bring value for end users in that they abstract the top-level package (dotnet-sdk), which simplifies the installation of the full set of .NET packages. These meta packages reference a specific .NET SDK version.
 
 - `dotnet[major]` - Installs the specific sdk version
   - **Version:** \<sdk version>

@@ -112,7 +112,7 @@ The rest of the version isn't included in the version name. This allows the OS p
 
 The following lists the recommended packages:
 
-- `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
+- `dotnet-sdk-[major].[minor]` - Installs the latest SDK for specific runtime
   - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-7.0
   - **Contains:** (3),(4)
@@ -165,6 +165,18 @@ The following lists the recommended packages:
 - `dotnet-templates-[major].[minor]`
   - **Version:** \<sdk version>
   - **Contains:** (15)
+
+The following two meta packages are optional. They bring value for end users in that they abstract the top-level package (dotnet-sdk), which simplifies the installation of the full set of .NET packages. These meta packages reference a specific .NET SDK version.
+
+- `dotnet[major]` - Installs the specified SDK version
+  - **Version:** \<sdk version>
+  - **Example:** dotnet7
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
+- `dotnet` - Installs a specific SDK version determined by distros to be the primary version&mdash;usually the latest available
+  - **Version:** \<sdk version>
+  - **Example:** dotnet
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro-specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 

@@ -166,6 +166,18 @@ The following lists the recommended packages:
   - **Version:** \<sdk version>
   - **Contains:** (15)
 
+The following 2 meta packages are optional. They do bring value for end users, as they abstract the top-level package (dotnet-sdk) which simplifies the installation of the full set of .NET packages. These meta packages would reference a specific .NET SDK version.
+
+- `dotnet[major]` - Installs the specific sdk version
+  - **Version:** \<sdk version>
+  - **Example:** dotnet7
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
+- `dotnet` - Installs the specific sdk version determined by distros to be the primary, usually the latest available
+  - **Version:** \<sdk version>
+  - **Example:** dotnet
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro-specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
 When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, this also matches with the .NET version.

@@ -18,7 +18,7 @@ The `base` keyword is used to access members of the base class from within a der
 
 - Specify which base-class constructor should be called when creating instances of the derived class.
 
-The base class access is permitted only in a constructor, in an instance method and in an instance property accessor.
+The base class access is permitted only in a constructor, in an instance method, and in an instance property accessor.
 
 Using the `base` keyword from within a static method will give an error.
 

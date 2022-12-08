@@ -456,6 +456,7 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 
 The following MSBuild properties are documented in this section:
 
+- [ContinuousIntegrationBuild](#continuousintegrationbuild)
 - [CopyDebugSymbolFilesFromPackages](#copydebugsymbolfilesfrompackages)
 - [CopyDocumentationFilesFromPackages](#copydocumentationfilesfrompackages)
 - [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
@@ -1019,6 +1020,7 @@ The following MSBuild properties are documented in this section:
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [DisableTransitiveFrameworkReferenceDownloads](#disabletransitiveframeworkreferencedownloads)
 - [DisableTransitiveProjectReferences](#disabletransitiveprojectreferences)
+- [ManagePackageVersionsCentrally](#managepackageversionscentrally)
 - [Restore-related properties](#restore-related-properties)
 - [UseMauiEssentials](#usemauiessentials)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)

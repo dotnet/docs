@@ -1,16 +1,16 @@
 ---
 title: Use the .NET SDK in Continuous Integration (CI) environments
-description: Learn how to use the .NET SDK and its tools on the build server with continuous integration.
+description: Learn how to use the .NET SDK and its tools on a build server with continuous integration.
 ms.date: 07/13/2022
 ---
 
-# Use the .NET SDK in Continuous Integration (CI) environments
+# Use the .NET SDK in continuous integration (CI) environments
 
-This article outlines how to use the .NET SDK and its tools on a build server. The .NET toolset works both interactively, where a developer types commands at a command prompt, and automatically, where a Continuous Integration (CI) server runs a build script. The commands, options, inputs, and outputs are the same, and the only things you supply are a way to acquire the tooling and a system to build your app. This article focuses on scenarios of tool acquisition for CI with recommendations on how to design and structure your build scripts.
+This article outlines how to use the .NET SDK and its tools on a build server. The .NET toolset works both interactively, where a developer types commands at a command prompt, and automatically, where a continuous integration (CI) server runs a build script. The commands, options, inputs, and outputs are the same, and the only things you supply are a way to acquire the tooling and a system to build your app. This article focuses on scenarios of tool acquisition for CI with recommendations on how to design and structure your build scripts.
 
 ## Installation options for CI build servers
 
-If you're using GitHub, the installation is very straightforward. You can rely on GitHub Actions to install the .NET SDK in your workflow. The recommended way to install the .NET SDK in a workflow is with the `actions/setup-net-core-sdk`. For more information, see the [Setup .NET Core SDK](https://github.com/marketplace/actions/setup-net-core-sdk) action in the GitHub marketplace. For examples of how this works, see [Quickstart: Create a build validation GitHub workflow](dotnet-build-github-action.md).
+If you're using GitHub, the installation is straightforward. You can rely on GitHub Actions to install the .NET SDK in your workflow. The recommended way to install the .NET SDK in a workflow is with the `actions/setup-net-core-sdk` action. For more information, see the [Setup .NET Core SDK](https://github.com/marketplace/actions/setup-net-core-sdk) action in the GitHub marketplace. For examples of how this works, see [Quickstart: Create a build validation GitHub workflow](dotnet-build-github-action.md).
 
 ### Native installers
 
@@ -125,7 +125,7 @@ LOCALDOTNET="$INSTALLDIR/dotnet"
 
 You can configure [Travis CI](https://travis-ci.org/) to install the .NET SDK using the `csharp` language and the `dotnet` key. For more information, see the official Travis CI docs on [Building a C#, F#, or Visual Basic Project](https://docs.travis-ci.com/user/languages/csharp/). Note as you access the Travis CI information that the community-maintained `language: csharp` language identifier works for all .NET languages, including F#, and Mono.
 
-Travis CI runs both macOS and Linux jobs in a *build matrix*, where you specify a combination of runtime, environment, and exclusions/inclusions to cover your build combinations for your app. For more information, see the [Customizing the Build](https://docs.travis-ci.com/user/customizing-the-build) article in the Travis CI documentation. The MSBuild-based tools include the LTS and Current runtimes in the package; so by installing the SDK, you receive everything you need to build.
+Travis CI runs both macOS and Linux jobs in a *build matrix*, where you specify a combination of runtime, environment, and exclusions/inclusions to cover the build combinations for your app. For more information, see the [Customizing the Build](https://docs.travis-ci.com/user/customizing-the-build) article in the Travis CI documentation. The MSBuild-based tools include the long-term support (LTS) and standard-term support (STS) runtimes in the package; so by installing the SDK, you receive everything you need to build.
 
 ### AppVeyor
 

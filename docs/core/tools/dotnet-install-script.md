@@ -151,7 +151,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for STS and LTS channels and will be ignored if one of those channels is used.
 
   For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
   For a runtime installation, use `channel` in `A.B` format.

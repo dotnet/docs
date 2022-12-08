@@ -15,7 +15,7 @@ public sealed class ItemService : IDisposable
     public async Task CreateItemAsync(Item item)
     {
         using StringContent json = new(
-            JsonSerializer.Serialize(item, DefaultJsonSerialization.Options),
+            JsonSerializer.Serialize(item, new JsonSerializerOptions(JsonSerializerDefaults.Web)),
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
@@ -29,7 +29,7 @@ public sealed class ItemService : IDisposable
     public async Task UpdateItemAsync(Item item)
     {
         using StringContent json = new(
-            JsonSerializer.Serialize(item, DefaultJsonSerialization.Options),
+            JsonSerializer.Serialize(item, new JsonSerializerOptions(JsonSerializerDefaults.Web)),
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 

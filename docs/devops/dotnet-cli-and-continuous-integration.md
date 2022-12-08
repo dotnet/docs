@@ -147,8 +147,8 @@ install:
 
 Configure Azure DevOps Services to build .NET projects using one of these approaches:
 
-1. Run the script from the [manual setup step](#manual-setup) using your commands.
-1. Create a build composed of several Azure DevOps Services built-in build tasks that are configured to use .NET tools.
+- Run the script from the [manual setup step](#manual-setup) using your commands.
+- Create a build composed of several Azure DevOps Services built-in build tasks that are configured to use .NET tools.
 
 Both solutions are valid. Using a manual setup script, you control the version of the tools that you receive, since you download them as part of the build. The build is run from a script that you must create. This article only covers the manual option. For more information on composing a build with Azure DevOps Services build tasks, see the [Azure Pipelines](/azure/devops/pipelines/index) documentation.
 
@@ -175,6 +175,9 @@ To use a manual setup script in Azure DevOps Services, create a new build defini
 Most of this document describes how to acquire the .NET tools and configure various CI services without providing information on how to orchestrate, or *actually build*, your code with .NET. The choices on how to structure the build process depend on many factors that can't be covered in a general way here. For more information on orchestrating your builds with each technology, explore the resources and samples provided in the documentation sets of [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Azure Pipelines](/azure/devops/pipelines/index).
 
 Two general approaches that you take in structuring the build process for .NET code using the .NET tools are using MSBuild directly or using the .NET command-line commands. Which approach you should take is determined by your comfort level with the approaches and trade-offs in complexity. MSBuild provides you the ability to express your build process as tasks and targets, but it comes with the added complexity of learning MSBuild project file syntax. Using the .NET command-line tools is perhaps simpler, but it requires you to write orchestration logic in a scripting language like `bash` or PowerShell.
+
+> [!TIP]
+> One property you will want to set to `true` is ``.
 
 ## See also
 

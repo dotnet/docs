@@ -177,7 +177,7 @@ Most of this document describes how to acquire the .NET tools and configure vari
 Two general approaches that you take in structuring the build process for .NET code using the .NET tools are using MSBuild directly or using the .NET command-line commands. Which approach you should take is determined by your comfort level with the approaches and trade-offs in complexity. MSBuild provides you the ability to express your build process as tasks and targets, but it comes with the added complexity of learning MSBuild project file syntax. Using the .NET command-line tools is perhaps simpler, but it requires you to write orchestration logic in a scripting language like `bash` or PowerShell.
 
 > [!TIP]
-> One MSBuild property you'll want to set to `true` is [`ContinuousIntegrationBuild`](../core/project-sdk/msbuild-props.md#continuousintegrationbuild). This property enables settings that only apply to official builds as opposed to local development builds. 
+> One MSBuild property you'll want to set to `true` is [`ContinuousIntegrationBuild`](../core/project-sdk/msbuild-props.md#continuousintegrationbuild). This property enables settings that only apply to official builds as opposed to local development builds.
 
 ## See also
 

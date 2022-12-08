@@ -1,7 +1,8 @@
 ---
 title: Custom grain storage sample project
 description: Explore a custom grain storage sample project written with .NET Orleans.
-ms.date: 12/07/2022
+ms.date: 12/08/2022
+zone_pivot_groups: orleans-version
 ---
 
 # Custom Grain Storage
@@ -14,12 +15,74 @@ In this tutorial, we'll walk through how to write simple file-based grain storag
 
 An Orleans grain storage is a class that implements `IGrainStorage` which is included in [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. We also inherit from `ILifecycleParticipant<ISiloLifecycle>` which will allow us to subscribe to a particular event in the lifecycle of the silo. We start by creating a class named `FileGrainStorage`.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
-using Orleans;
+public class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecycle>
+{
+    private readonly string _storageName;
+    private readonly FileGrainStorageOptions _options;
+    private readonly ClusterOptions _clusterOptions;
+
+    public FileGrainStorage(
+        string storageName,
+        FileGrainStorageOptions options,
+        IOptions<ClusterOptions> clusterOptions)
+    {
+        _storageName = storageName;
+        _options = options;
+        _clusterOptions = clusterOptions.Value;
+    }
+
+    public Task ClearStateAsync<T>(
+        string stateName,
+        GrainId grainId,
+        IGrainState<T> grainState)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task ReadStateAsync<T>(
+        string stateName,
+        GrainId grainId,
+        IGrainState<T> grainState)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task WriteStateAsync<T>(
+        string stateName,
+        GrainId grainId,
+        IGrainState<T> grainState)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Participate(ISiloLifecycle lifecycle) =>
+        throw new NotImplementedException();
+    
+    public BinaryData Serialize<T>(T input) =>
+        throw new NotImplementedException();
+
+    public T Deserialize<T>(BinaryData input) =>
+        throw new NotImplementedException();
+}
+```
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
 using System;
+using System.Threading.Tasks;
+using Orleans;
 using Orleans.Storage;
 using Orleans.Runtime;
-using System.Threading.Tasks;
 
 namespace GrainStorage;
 
@@ -79,7 +142,21 @@ public class FileGrainStorage
 }
 ```
 
+:::zone-end
+
 Before starting the implementation, we create an option class containing the root directory where the grains states files will be stored. For that we will create an options file `FileGrainStorageOptions`:
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+:::code source="snippets/custom-grain-storage/FileGrainStorageOptions.cs":::
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public class FileGrainStorageOptions
@@ -87,6 +164,8 @@ public class FileGrainStorageOptions
     public string RootDirectory { get; set; }
 }
 ```
+
+:::zone-end
 
 The create a constructor containing two fields, `storageName` to specify which grains should write using this storage `[StorageProvider(ProviderName = "File")]` and `directory` which would be the directory where the grain states will be saved.
 

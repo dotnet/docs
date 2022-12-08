@@ -26,10 +26,10 @@ public static class RawStrings
         Console.WriteLine(moreQuotes);
 
         // <InitialQuotes>
-        var moreQuotes = """"
+        var MultiLineQuotes = """"
                        """Raw string literals""" can start and end with more than three double-quotes when needed.
                        """";
         // </InitialQuotes>
-        Console.WriteLine(moreQuotes);
+        Console.WriteLine(MultiLineQuotes);
     }
 }

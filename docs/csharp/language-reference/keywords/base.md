@@ -30,7 +30,7 @@ In this example, both the base class `Person` and the derived class `Employee` h
 
 [!code-csharp[csrefKeywordsAccess#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#1)]
 
-For additional examples, see [new](new-modifier.md), [virtual](virtual.md) and [override](override.md).
+For additional examples, see [new](new-modifier.md), [virtual](virtual.md), and [override](override.md).
 
 ## Example 2
 

@@ -4,7 +4,7 @@ description: Learn various dependency injection guidelines and best practices fo
 author: IEvangelist
 ms.author: dapine
 ms.date: 11/12/2021
-ms.topic: guide
+ms.topic: conceptual
 ---
 
 # Dependency injection guidelines

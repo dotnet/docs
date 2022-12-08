@@ -883,17 +883,21 @@ Long record field expressions should use a new line and have one indent from the
   C = c }
 ```
 
-Placing the `{` and `}` on new lines with contents indented is possible, however code formatters may reformat this by default:
+Placing the starting `{` on the same line as the binding, with the `}` on its own line (similar to the `Stroustrup` style commonly seen in other languages) after the members is possible: 
+
+```fsharp
+let rainbow = {
+    Boss1 = "Jeffrey"
+    Boss2 = "Jeffrey"
+    Boss3 = "Jeffrey"
+    Lackeys = [ "Zippy"; "George"; "Bungle" ]
+}
+```
+
+Placing the `{` and `}` on new lines with contents indented is also possible:
 
 ```fsharp
 // ✔️ OK
-let rainbow =
-    { Boss1 = "Jeffrey"
-      Boss2 = "Jeffrey"
-      Boss3 = "Jeffrey"
-      Lackeys = ["Zippy"; "George"; "Bungle"] }
-
-// ❌ Not preferred, code formatters will reformat to the above by default
 let rainbow =
     {
         Boss1 = "Jeffrey"
@@ -926,16 +930,10 @@ let rainbow2 =
         Lackeys = [ "Zippy"; "George"; "Bungle" ] }
 ```
 
-You may want to dedicate separate lines for the braces and indent one scope to the right with the expression, however
-code formatters may reformat it. In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
+You may want to dedicate separate lines for the braces and indent one scope to the right with the expression:
 
 ```fsharp
 // ✔️ OK
-let newState =
-    { state with
-          Foo = Some { F1 = 0; F2 = "" } }
-
-// ❌ Not OK, code formatters will reformat to the above by default
 let newState =
     {
         state with
@@ -946,6 +944,22 @@ let newState =
                 }
     }
 ```
+
+You may also prefer the "Stroustrup" style of keeping the opening brace on the same line as the binding: 
+
+```fsharp
+let newState =
+    { state with
+        Foo =
+            Some { // TODO: Fantomas doesn't respect this yet
+                F1 = 0
+                F2 = ""
+            }
+    }
+
+
+```
+
 
 ### Formatting pattern matching
 
@@ -1161,6 +1175,19 @@ let comparer =
               reversed.CompareTo (rev s2) }
 ```
 
+You may also prefer to use "Stroustrup" style:
+
+```fsharp
+let comparer =
+    { new IComparer<string> with
+        member x.Compare(s1, s2) =
+            let rev (s: String) = new String(Array.rev (s.ToCharArray()))
+            let reversed = rev s1
+            reversed.CompareTo(rev s2)
+    }
+
+```
+
 ### Formatting index/slice expressions
 
 Index expressions shouldn't contain any spaces around the opening and closing brackets.
@@ -1257,7 +1284,7 @@ let thisFunction() =
 
 ### Formatting let and member declarations
 
-When formatting `let` and `member` declarations, the right-hand side of a binding either goes on one line, or (if it's too long) goes on a new line indented one level.
+When formatting `let` and `member` declarations, typically the right-hand side of a binding either goes on one line, or (if it's too long) goes on a new line indented one level.
 
 For example, the following are compliant:
 
@@ -1288,7 +1315,7 @@ let d =
         printfn "%A" x
 ```
 
-The following are non-compliant:
+These are non-compliant: 
 
 ```fsharp
 // ❌ Not OK, code formatters will reformat to the above by default
@@ -1296,6 +1323,13 @@ let a = """
 foobar, long string
 """
 
+let d = while f do
+    printfn "%A" x
+```
+
+You may also prefer to use "Stroustrup" style for some bindings:
+
+```fsharp
 type File =
     member this.SaveAsync(path: string) : Async<unit> = async {
         // IO operation
@@ -1307,9 +1341,6 @@ let c = {
     Age = 111
     Region = "The Shire"
 }
-
-let d = while f do
-    printfn "%A" x
 ```
 
 Separate members with a single blank line and document and add a documentation comment:

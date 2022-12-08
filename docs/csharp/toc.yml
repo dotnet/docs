@@ -1211,6 +1211,8 @@ items:
       href: language-reference/tokens/interpolated.md
     - name: "@ -- verbatim identifier"
       href: language-reference/tokens/verbatim.md
+    - name: "\"\"\" -- raw string literal"
+      href: language-reference/tokens/raw-string.md
   - name: Attributes read by the compiler
     items:
     - name: Global attributes

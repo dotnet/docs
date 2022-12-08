@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 07/21/2022
+ms.date: 11/08/2022
 ms.prod: "dotnet"
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard
@@ -24,6 +24,7 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target framework | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 |:----------------:|:---------------------------:|:------------------------------:|:---------------------------------------:|
+| .NET 7           | 7                           | net7.0                         | 2.1                                     |
 | .NET 6           | 6                           | net6.0                         | 2.1                                     |
 | .NET 5           | 5                           | net5.0                         | 2.1                                     |
 | .NET Standard    | 2.1                         | netstandard2.1                 | N/A                                     |
@@ -51,7 +52,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 The `net5.0`, `net6.0`, and `net7.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net6.0` TFM.
 
-.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 introduces further OS-specific TFMs.
+.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 and later versions have additional OS-specific TFMs.
 
 The following table shows the compatibility of the .NET 5+ TFMs.
 

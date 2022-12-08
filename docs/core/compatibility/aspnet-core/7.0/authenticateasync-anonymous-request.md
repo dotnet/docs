@@ -9,7 +9,7 @@ Remote authentication providers like OpenIdConnect, WsFederation, and OAuth have
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Previous behavior
 

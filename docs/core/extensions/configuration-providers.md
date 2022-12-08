@@ -3,7 +3,7 @@ title: Configuration providers
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/04/2022
+ms.date: 11/09/2022
 ms.topic: reference
 ---
 
@@ -150,27 +150,29 @@ The application would write the following sample output:
 
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager. Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
 
-The `:` separator doesn't work with environment variable hierarchical keys on all platforms. The double underscore (`__`) is automatically replaced by a `:` and is supported by all platforms. For example, the `:` separator is not supported by [Bash](https://linuxhint.com/bash-environment-variables), but `__` is.
+The `:` delimiter doesn't work with environment variable hierarchical keys on all platforms. For example, the `:` delimiter is not supported by [Bash](https://linuxhint.com/bash-environment-variables). The double underscore (`__`), which is supported on all platforms, automatically replaces any `:` delimiters in environment variables.
 
-The following `set` commands:
+Consider the `TransientFaultHandlingOptions` class:
 
-- Set the environment keys and values of the preceding example on Windows.
-- Test the settings by changing them from their default values. The `dotnet run` command must be run in the project directory.
+```csharp
+public class TransientFaultHandlingOptions
+{
+    public bool Enabled { get; set; }
+    public TimeSpan AutoRetryDelay { get; set; }
+}
+```
+
+The following `set` commands set the environment keys and values of `SecretKey` and `TransientFaultHandlingOptions`.
 
 ```dotnetcli
 set SecretKey="Secret key from environment"
 set TransientFaultHandlingOptions__Enabled="true"
 set TransientFaultHandlingOptions__AutoRetryDelay="00:00:13"
-
-dotnet run
 ```
 
-The preceding environment settings:
+These environment settings are only set in processes launched from the command window they were set in. They aren't read by web apps launched with Visual Studio.
 
-- Are only set in processes launched from the command window they were set in.
-- Won't be read by web apps launched with Visual Studio.
-
-With Visual Studio 2019 version 16.10 preview 4 and later, you can specify environment variables using the **Launch Profiles** dialog.
+With Visual Studio 2019 and later, you can specify environment variables using the **Launch Profiles** dialog.
 
 :::image type="content" source="media/launch-profiles-env-vars.png" alt-text="Launch Profiles dialog showing environment variables" lightbox="media/launch-profiles-env-vars.png":::
 
@@ -180,16 +182,16 @@ The following [setx](/windows-server/administration/windows-commands/setx) comma
 setx SecretKey "Secret key from setx environment" /M
 setx TransientFaultHandlingOptions__Enabled "true" /M
 setx TransientFaultHandlingOptions__AutoRetryDelay "00:00:05" /M
-
-dotnet run
 ```
 
-To test that the preceding commands override *appsettings.json* and *appsettings.*`Environment`*.json*:
+To test that the preceding commands override any *appsettings.json* and *appsettings.*`Environment`*.json* settings:
 
 - With Visual Studio: Exit and restart Visual Studio.
 - With the CLI: Start a new command window and enter `dotnet run`.
 
-Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string to specify a prefix for environment variables:
+### Prefixes
+
+To specify a prefix for environment variables, call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string:
 
 :::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="6-7":::
 
@@ -200,24 +202,9 @@ In the preceding code:
 
 The prefix is stripped off when the configuration key-value pairs are read.
 
-The following commands test the custom prefix:
-
-```dotnetcli
-set CustomPrefix_SecretKey="Secret key with CustomPrefix_ environment"
-set CustomPrefix_TransientFaultHandlingOptions__Enabled=true
-set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
-
-dotnet run
-```
-
 The default configuration loads environment variables and command-line arguments prefixed with `DOTNET_`. The `DOTNET_` prefix is used by .NET for [host](generic-host.md#host-configuration) and [app configuration](generic-host.md#app-configuration), but not for user configuration.
 
 For more information on host and app configuration, see [.NET Generic Host](generic-host.md).
-
-On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:
-
-- Encrypted at rest and transmitted over an encrypted channel.
-- Exposed as environment variables.
 
 ### Connection string prefixes
 
@@ -246,6 +233,13 @@ When an environment variable is discovered and loaded into configuration with an
 
 Environment variables set in *launchSettings.json* override those set in the system environment.
 
+### Azure App Service settings
+
+On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings** > **Configuration** page. Azure App Service application settings are:
+
+- Encrypted at rest and transmitted over an encrypted channel.
+- Exposed as environment variables.
+
 ## Command-line configuration provider
 
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.CommandLine.CommandLineConfigurationProvider> loads configuration from command-line argument key-value pairs after the following configuration sources:
@@ -256,7 +250,7 @@ Using the default configuration, the <xref:Microsoft.Extensions.Configuration.Co
 
 By default, configuration values set on the command line override configuration values set with all the other configuration providers.
 
-With Visual Studio 2019 version 16.10 preview 4 and later, you can specify command-line arguments using the **Launch Profiles** dialog.
+With Visual Studio 2019 and later, you can specify command-line arguments using the **Launch Profiles** dialog.
 
 :::image type="content" source="media/launch-profiles-cmd-line-args.png" alt-text="Launch Profiles dialog showing command-line arguments" lightbox="media/launch-profiles-cmd-line-args.png":::
 

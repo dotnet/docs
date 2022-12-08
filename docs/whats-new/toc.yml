@@ -3,9 +3,14 @@ items:
   href: index.yml
   expanded: true
   items:
-  - name: October 2022
-    href: dotnet-docs-2022-10-01.md
-  - name: September 2022
-    href: dotnet-docs-2022-09-01.md
-  - name: August 2022
-    href: dotnet-docs-2022-08-01.md
+  - name: .NET 7 documentation updates
+    href: dotnet-7-docs.md
+  - name: Latest documentation updates
+    expanded: true
+    items:
+    - name: November 2022
+      href: dotnet-docs-mod2.md
+    - name: October 2022
+      href: dotnet-docs-mod1.md
+    - name: September 2022
+      href: dotnet-docs-mod0.md

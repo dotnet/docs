@@ -6,9 +6,9 @@ ms.date: 07/25/2022
 
 # Source generation for platform invokes
 
-.NET 7 introduces a [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for P/Invokes in C# which recognizes the <xref:System.Runtime.InteropServices.LibraryImportAttribute>.
+.NET 7 introduces a [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for P/Invokes that recognizes the <xref:System.Runtime.InteropServices.LibraryImportAttribute> in C# code.
 
-When a P/Invoke is defined and called as shown in the following code, the built-in interop system in the .NET runtime generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run time to facilitate the transition from managed to unmanaged.
+When not using source generation, the built-in interop system in the .NET runtime generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run time to facilitate the transition from managed to unmanaged. The following code shows defining and then calling a P/Invoke that uses this mechanism:
 
 ```csharp
 [DllImport(
@@ -22,7 +22,7 @@ internal static extern string ToLower(string str);
 
 The IL stub handles [marshalling](type-marshalling.md) of parameters and return values and calling the unmanaged code while respecting settings on <xref:System.Runtime.InteropServices.DllImportAttribute> that affect how the unmanaged code should be invoked (for example, <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError>). Since this IL stub is generated at run time, it is not available for ahead-of-time (AOT) compiler or IL trimming scenarios. Generation of the IL represents an important cost to consider for marshalling. This cost can be measured in terms of application performance and support for potential target platforms that may not permit dynamic code generation. The NativeAOT application model addresses issues with dynamic code generation by precompiling all code ahead of time directly into native code. Using `DllImport` is not an option for platforms that require full NativeAOT scenarios and therefore using other approaches (for example, source generation) is more appropriate. Debugging the marshalling logic in `DllImport` scenarios is also a non-trivial exercise.
 
-The P/Invoke source generator, included with the .NET 7 SDK and enabled by default, looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on a `static` and `partial` method to trigger compile-time source generation of marshalling code, removing the need for the generation of an IL stub at run time and allowing the P/Invoke to be inlined. Analyzers and code fixers are also included to help with migration from the built-in system to the source generator and with usage in general.
+The P/Invoke source generator, included with the .NET 7 SDK and enabled by default, looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on a `static` and `partial` method to trigger compile-time source generation of marshalling code, removing the need for the generation of an IL stub at run time and allowing the P/Invoke to be inlined. [Analyzers](../../fundamentals/syslib-diagnostics/syslib1050-1069.md) and code fixers are also included to help with migration from the built-in system to the source generator and with usage in general.
 
 ## Basic usage
 
@@ -69,7 +69,7 @@ internal static partial string ToLower(string str);
 
 ## Differences from `DllImport`
 
-<xref:System.Runtime.InteropServices.LibraryImportAttribute> is intended to be a straight-forward conversion from <xref:System.Runtime.InteropServices.DllImportAttribute> in most cases, but there are some intentional changes.
+<xref:System.Runtime.InteropServices.LibraryImportAttribute> is intended to be a straightforward conversion from <xref:System.Runtime.InteropServices.DllImportAttribute> in most cases, but there are some intentional changes:
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention> has no equivalent on <xref:System.Runtime.InteropServices.LibraryImportAttribute>. <xref:System.Runtime.InteropServices.UnmanagedCallConvAttribute> should be used instead.
 - <xref:System.Runtime.InteropServices.CharSet> (for <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>) has been replaced with <xref:System.Runtime.InteropServices.StringMarshalling> (for <xref:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshalling>). ANSI has been removed and UTF-8 is now available as a first-class option.
@@ -83,3 +83,4 @@ There are also differences in support for some settings on <xref:System.Runtime.
 
 - [P/Invoke](pinvoke.md)
 - <xref:System.Runtime.InteropServices.LibraryImportAttribute>
+- [SYSLIB diagnostics for P/Invoke source generation](../../fundamentals/syslib-diagnostics/syslib1050-1069.md)

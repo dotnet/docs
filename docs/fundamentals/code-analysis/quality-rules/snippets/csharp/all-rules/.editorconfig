@@ -1,5 +1,4 @@
-# All files
-[*]
+[*.{cs,vb}]
 
 # CS0659: Type overrides Object.Equals(object o) but does not override Object.GetHashCode()
 dotnet_diagnostic.CS0659.severity = suggestion
@@ -7,5 +6,14 @@ dotnet_diagnostic.CS0659.severity = suggestion
 # CS0108: Member hides inherited member; missing new keyword
 dotnet_diagnostic.CS0108.severity = suggestion
 
+# CA1420: Property, type, or attribute requires runtime marshalling
+dotnet_diagnostic.CA1420.severity = suggestion
+
+# CA1422: Validate platform compatibility
+dotnet_diagnostic.CA1422.severity = suggestion
+
 # CA1822: Mark members as static
 dotnet_diagnostic.CA1822.severity = none
+
+# CA2200: Rethrow to preserve stack details
+dotnet_diagnostic.CA2200.severity = suggestion

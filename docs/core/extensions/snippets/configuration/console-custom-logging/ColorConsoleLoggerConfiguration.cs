@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-public class ColorConsoleLoggerConfiguration
+public sealed class ColorConsoleLoggerConfiguration
 {
     public int EventId { get; set; }
 

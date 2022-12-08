@@ -27,14 +27,14 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: ASPNET-prefixed environment variable precedence
+          href: aspnet-core/7.0/environment-variable-precedence.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Authentication in WebAssembly apps
           href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
-        - name: Endpoint metadata provider interface changes
-          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: Fallback file endpoints
@@ -57,10 +57,14 @@ items:
           href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
       - name: Core .NET libraries
         items:
+        - name: API obsoletions with default diagnostic ID
+          href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
           href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        - name: BrotliStream no longer allows undefined CompressionLevel values
+          href: core-libraries/7.0/brotlistream-ctor.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
@@ -69,6 +73,8 @@ items:
           href: core-libraries/7.0/equals-nan.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Legacy FileStream strategy removed
+          href: core-libraries/7.0/filestream-compat-switch.md
         - name: Library support for older frameworks
           href: core-libraries/7.0/old-framework-support.md
         - name: Maximum precision for numeric format strings
@@ -77,10 +83,18 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
+        - name: Time fields on symbolic links
+          href: core-libraries/7.0/symbolic-link-timestamps.md
         - name: Tracking linked cache entries
           href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
           href: core-libraries/7.0/compressionlevel-validation.md
+      - name: Configuration
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
       - name: Cryptography
         items:
         - name: Dynamic X509ChainPolicy verification time
@@ -107,26 +121,42 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: Interop
         items:
         - name: RuntimeInformation.OSArchitecture under emulation
           href: interop/7.0/osarchitecture-emulation.md
+      - name: .NET MAUI
+        items:
+        - name: Constructors accept base interface instead of concrete type
+          href: maui/7.0/mauiwebviewnavigationdelegate-constructor.md
+        - name: Flow direction helper methods removed
+          href: maui/7.0/flow-direction-apis-removed.md
+        - name: New UpdateBackground parameter
+          href: maui/7.0/updatebackground-parameter.md
+        - name: ScrollToRequest property renamed
+          href: maui/7.0/scrolltorequest-property-rename.md
+        - name: Some Windows APIs are removed
+          href: maui/7.0/iwindowstatemanager-apis-removed.md
       - name: Networking
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
-        - name: ClientWebSocket.ConnectAsync throws new exception
-          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
           href: networking/7.0/socket-end-closed-sockets.md
       - name: SDK and MSBuild
         items:
+        - name: Automatic RuntimeIdentifier for certain projects
+          href: sdk/7.0/automatic-runtimeidentifier.md
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
         - name: Serialization of custom types in .NET 7
           href: sdk/7.0/custom-serialization.md
+        - name: Side-by-side SDK installations
+          href: sdk/7.0/side-by-side-install.md
       - name: Serialization
         items:
         - name: DataContractSerializer retains sign when deserializing -0
@@ -649,14 +679,14 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: ASPNET-prefixed environment variable precedence
+          href: aspnet-core/7.0/environment-variable-precedence.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Authentication in WebAssembly apps
           href: aspnet-core/7.0/wasm-app-authentication.md
         - name: Default authentication scheme
           href: aspnet-core/7.0/default-authentication-scheme.md
-        - name: Endpoint metadata provider interface changes
-          href: aspnet-core/7.0/iendpointmetadataprovider-changes.md
         - name: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed
           href: aspnet-core/7.0/microsoft-aspnetcore-mvc-core-log-event-ids.md
         - name: Fallback file endpoints
@@ -825,6 +855,12 @@ items:
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Configuration
+      items:
+      - name: .NET 7
+        items:
+        - name: System.diagnostics entry in app.config
+          href: configuration/7.0/diagnostics-config-section.md
     - name: Containers
       items:
       - name: .NET 6
@@ -837,10 +873,14 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: API obsoletions with default diagnostic ID
+          href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
         - name: API obsoletions with non-default diagnostic IDs
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
           href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        - name: BrotliStream no longer allows undefined CompressionLevel values
+          href: core-libraries/7.0/brotlistream-ctor.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
@@ -849,6 +889,8 @@ items:
           href: core-libraries/7.0/equals-nan.md
         - name: Generic type constraint on PatternContext<T>
           href: core-libraries/7.0/patterncontext-generic-constraint.md
+        - name: Legacy FileStream strategy removed
+          href: core-libraries/7.0/filestream-compat-switch.md
         - name: Library support for older frameworks
           href: core-libraries/7.0/old-framework-support.md
         - name: Maximum precision for numeric format strings
@@ -857,6 +899,10 @@ items:
           href: core-libraries/7.0/reflection-invoke-exceptions.md
         - name: SerializationFormat.Binary is obsolete
           href: core-libraries/7.0/serializationformat-binary.md
+        - name: System.Runtime.CompilerServices.Unsafe NuGet package
+          href: core-libraries/7.0/unsafe-package.md
+        - name: Time fields on symbolic links
+          href: core-libraries/7.0/symbolic-link-timestamps.md
         - name: Tracking linked cache entries
           href: core-libraries/7.0/memorycache-tracking.md
         - name: Validate CompressionLevel for BrotliStream
@@ -1033,6 +1079,8 @@ items:
         items:
         - name: ContentRootPath for apps launched by Windows Shell
           href: extensions/7.0/contentrootpath-hosted-app.md
+        - name: Environment variable prefixes
+          href: extensions/7.0/environment-variable-prefix.md
       - name: .NET 6
         items:
         - name: AddProvider checks for non-null provider
@@ -1089,14 +1137,26 @@ items:
         items:
         - name: Call argument coercion
           href: jit/6.0/coerce-call-arguments-ecma-335.md
+    - name: .NET MAUI
+      items:
+      - name: .NET 7
+        items:
+        - name: Constructors accept base interface instead of concrete type
+          href: maui/7.0/mauiwebviewnavigationdelegate-constructor.md
+        - name: Flow direction helper methods removed
+          href: maui/7.0/flow-direction-apis-removed.md
+        - name: New UpdateBackground parameter
+          href: maui/7.0/updatebackground-parameter.md
+        - name: ScrollToRequest property renamed
+          href: maui/7.0/scrolltorequest-property-rename.md
+        - name: Some Windows APIs are removed
+          href: maui/7.0/iwindowstatemanager-apis-removed.md
     - name: Networking
       items:
       - name: .NET 7
         items:
         - name: AllowRenegotiation default is false
           href: networking/7.0/allowrenegotiation-default.md
-        - name: ClientWebSocket.ConnectAsync throws new exception
-          href: networking/7.0/connectasync-argumentexception.md
         - name: Custom ping payloads on Linux
           href: networking/7.0/ping-custom-payload-linux.md
         - name: Socket.End methods don't throw ObjectDisposedException
@@ -1125,10 +1185,14 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: Automatic RuntimeIdentifier for certain projects
+          href: sdk/7.0/automatic-runtimeidentifier.md
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
         - name: Serialization of custom types in .NET 7
           href: sdk/7.0/custom-serialization.md
+        - name: Side-by-side SDK installations
+          href: sdk/7.0/side-by-side-install.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated

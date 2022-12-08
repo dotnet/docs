@@ -96,7 +96,7 @@ _ => throw new InvalidOperationException("Invalid internal state"),
 
 Run your tests again, and they pass. Here's the final version of the `SetHighGate` method:
 
-:::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalImplementaton":::
+:::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalImplementation":::
 
 ## Implement patterns yourself
 

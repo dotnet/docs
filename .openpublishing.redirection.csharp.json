@@ -17,12 +17,24 @@
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions.md#1115-the-throw-expression-operator"
         },
         {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.1/async-main.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/basic-concepts#71-application-startup"
+        }, 
+        {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.1/target-typed-default.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#11719-default-value-expressions"
+        },
+        {
             "source_path_from_root": "/_csharplang/proposals/csharp-7.2/private-protected.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/classes.md#1436-access-modifiers"
         },
         {
             "source_path_from_root": "/_csharplang/proposals/csharp-7.2/readonly-struct.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs.md#1524-struct-interfaces"
+        },
+        {
+            "source_path_from_root": "/_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#11621-general"
         },
         {
             "source_path_from_root": "/_csharplang/proposals/csharp-7.3/leading-digit-separator.md",
@@ -186,6 +198,22 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/builtin-types/nint-nuint.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#native-sized-integers"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0188.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0843.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8400.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8401.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8892.md",
@@ -1010,7 +1038,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-7.1/index.md",
-            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main"
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.1/target-typed-default"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-7.2/index.md",
@@ -1043,6 +1071,10 @@
         {
             "source_path_from_root": "/docs/csharp/methods-lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0171.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
         },
         {
             "source_path_from_root": "/docs/csharp/namespaces-and-assemblies.md",
@@ -2714,7 +2746,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/default-interface-members-versions.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/csharp-6.yml",

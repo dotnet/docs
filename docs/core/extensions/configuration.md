@@ -3,7 +3,7 @@ title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/19/2021
+ms.date: 11/09/2022
 ms.topic: overview
 ---
 

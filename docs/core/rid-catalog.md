@@ -123,6 +123,10 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen`
   - `tizen.4.0.0`
   - `tizen.5.0.0`
+  - `tizen.5.5.0`
+  - `tizen.6.0.0`
+  - `tizen.6.5.0`
+  - `tizen.7.0.0`
 
 For more information, see [.NET dependencies and requirements](./install/linux.md).
 
@@ -150,6 +154,9 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 12 Monterey
   - `osx.12-x64`
   - `osx.12-arm64`
+- macOS 13 Ventura
+  - `osx.13-x64`
+  - `osx.13-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
 

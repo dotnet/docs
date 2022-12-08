@@ -1,6 +1,6 @@
 ﻿namespace App.SignalCompletionService;
 
-public class Worker : BackgroundService
+public sealed class Worker : BackgroundService
 {
     private readonly IHostApplicationLifetime _hostApplicationLifetime;
     private readonly ILogger<Worker> _logger;

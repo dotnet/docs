@@ -2,7 +2,7 @@
 
 namespace ConsoleDI.Example;
 
-public class DefaultOperation :
+public record class DefaultOperation :
     ITransientOperation,
     IScopedOperation,
     ISingletonOperation

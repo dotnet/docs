@@ -36,6 +36,9 @@ dotnet nuget sign -h|--help
 
 The `dotnet nuget sign` command signs all the packages matching the first argument with a certificate. The certificate with the private key can be obtained from a file or from a certificate installed in a certificate store by providing a subject name or a SHA-1 fingerprint.
 
+  > [!NOTE]
+  > This command requires a certificate root store that's valid for both code signing and timestamping. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
+
 ## Arguments
 
 - **`package-path(s)`**

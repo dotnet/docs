@@ -1,7 +1,7 @@
 ---
-title: "Patterns - C# reference"
-description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 10/21/2022
+title: "Patterns - Pattern matching using the is and switch expressions."
+description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
+ms.date: 11/28/2022
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -12,7 +12,9 @@ helpviewer_keywords:
   - "or keyword [C#]"
   - "not keyword [C#]"
 ---
-# Patterns (C# reference)
+# Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
+
+You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using boolean logic keywords `and`, `or`, and `not`.
 
 The following C# expressions and statements support pattern matching:
 
@@ -176,7 +178,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-Beginning with C# 10, you can reference nested properties or fields within a property pattern. This is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
+Beginning with C# 10, you can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
@@ -227,7 +229,7 @@ You use a *`var` pattern* to match any expression, including `null`, and assign 
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="KeepInterimResult":::
 
-A `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations. You can also use a `var` pattern when you need to perform additional checks in `when` case guards of a `switch` expression or statement, as the following example shows:
+A `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations. You can also use a `var` pattern when you need to perform more checks in `when` case guards of a `switch` expression or statement, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="WithCaseGuards":::
 

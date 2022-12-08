@@ -21,7 +21,7 @@ The latest non-prerelease core libraries packages that were part of the ".NET 6"
 
 ## Version introduced
 
-.NET 7 Preview 1
+.NET 7
 
 ## Type of breaking change
 

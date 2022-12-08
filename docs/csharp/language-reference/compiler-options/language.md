@@ -88,8 +88,8 @@ For information about how to set this compiler option programmatically, see <xre
 
 | Version          | Link                       | Description                                                             |
 |------------------|----------------------------|-------------------------------------------------------------------------|
-| C# 7.0 and later | [link][csharp-7]           | Not currently available                                                 |
-| C# 6.0           | [download PDF][csharp-6]   | C# Language Specification Version 6 - Unofficial Draft: .NET Foundation |
+| C# 7.0 and later | [link][csharp-7]           | C# Language Specification Version 7 - Unofficial Draft: .NET Foundation |
+| C# 6.0           | [download PDF][csharp-6]   | Standard ECMA-334 6th Edition                                           |
 | C# 5.0           | [Download PDF][csharp-5]   | Standard ECMA-334 5th Edition                                           |
 | C# 3.0           | [Download DOC][csharp-3]   | C# Language Specification Version 3.0: Microsoft Corporation            |
 | C# 2.0           | [Download PDF][csharp-2]   | Standard ECMA-334 4th Edition                                           |
@@ -110,8 +110,9 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 | C# version | Minimum SDK version                                                                  |
 |------------|--------------------------------------------------------------------------------------|
-| C# 10     | Microsoft Visual Studio/Build Tools 2022, or .NET 6 SDK                              |
-| C# 9.0     | Microsoft Visual Studio/Build Tools 2019, version 16.8, or .NET 5 SDK              |
+| C# 11      | Microsoft Visual Studio/Build Tools 2022 version 17.4, or .NET 7 SDK                 |
+| C# 10      | Microsoft Visual Studio/Build Tools 2022, or .NET 6 SDK                              |
+| C# 9.0     | Microsoft Visual Studio/Build Tools 2019 version 16.8, or .NET 5 SDK                 |
 | C# 8.0     | Microsoft Visual Studio/Build Tools 2019, version 16.3, or .NET Core 3.0 SDK         |
 | C# 7.3     | Microsoft Visual Studio/Build Tools 2017, version 15.7                               |
 | C# 7.2     | Microsoft Visual Studio/Build Tools 2017, version 15.5                               |

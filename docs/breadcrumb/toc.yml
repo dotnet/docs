@@ -82,6 +82,13 @@ items:
       - name: Security in .NET
         tocHref: /dotnet/standard/security/
         topicHref: /dotnet/standard/security/index
+      - name: Serialization
+        tocHref: /dotnet/standard/serialization/
+        topicHref: /dotnet/standard/serialization/index
+        items:
+        - name: JSON serialization
+          tocHref: /dotnet/standard/serialization/system-text-json/
+          topicHref: /dotnet/standard/serialization/system-text-json/overview
       - name: Managed threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index
@@ -102,6 +109,10 @@ items:
       - name: Additional APIs
         tocHref: /dotnet/framework/additional-apis/
         topicHref: /dotnet/framework/additional-apis/index
+        items:
+        - name: Point of Service for .NET
+          tocHref: /dotnet/framework/additional-apis/pos-for-net/
+          topicHref: /dotnet/framework/additional-apis/pos-for-net/index
       - name: Application domains and assemblies
         tocHref: /dotnet/framework/app-domains/
         topicHref: /dotnet/framework/app-domains/index

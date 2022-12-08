@@ -10,7 +10,7 @@ no-loc: ["package.config", PackageReference]
 
 This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework for many projects is relatively straightforward. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
 
-Projects where the app model is available in .NET, such as libraries, console apps, and desktop apps, usually require little change. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
+Projects where the app model is available in .NET, such as libraries, console apps, and desktop apps, usually require little change. Projects that require a new app model, such as moving to [ASP.NET Core from ASP.NET](/aspnet/core/migration/proper-to-2x/), require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
 
 ## Windows desktop technologies
 

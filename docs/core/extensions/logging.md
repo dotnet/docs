@@ -3,12 +3,12 @@ title: Logging
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 08/29/2022
+ms.date: 11/03/2022
 ---
 
 # Logging in .NET
 
-.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
+.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with [built-in providers](logging-providers.md). The logging providers are responsible for determining where logs are written to. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
@@ -83,13 +83,13 @@ In the preceding sample:
 - The categories and levels are not suggested values. The sample is provided to show all the default providers.
 - Settings in `Logging.{ProviderName}.LogLevel` override settings in `Logging.LogLevel`. For example, the level in `Debug.LogLevel.Default` overrides the level in `LogLevel.Default`.
 - Each provider's *alias* is used. Each provider defines an *alias* that can be used in configuration in place of the fully qualified type name. The built-in providers' aliases are:
-  - Console
-  - Debug
-  - EventSource
-  - EventLog
-  - AzureAppServicesFile
-  - AzureAppServicesBlob
-  - ApplicationInsights
+  - `Console`
+  - `Debug`
+  - `EventSource`
+  - `EventLog`
+  - `AzureAppServicesFile`
+  - `AzureAppServicesBlob`
+  - `ApplicationInsights`
 
 ### Set log level by command line, environment variables, and other configuration
 
@@ -391,7 +391,7 @@ public void Test(string id)
 {
     try
     {
-        if (id == "none")
+        if (id is "none")
         {
             throw new Exception("Default Id detected.");
         }
@@ -421,15 +421,11 @@ With the preceding setup, navigating to the privacy or home page produces many `
 The following code sets the default log level when the default log level is not set in configuration:
 
 ```csharp
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Warning))
+    .Build();
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Warning));
-}
+await host.RunAsync();
 ```
 
 ### Filter function

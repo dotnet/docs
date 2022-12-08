@@ -17,7 +17,7 @@ Starting in .NET 7, a <xref:System.PlatformNotSupportedException> is thrown if y
 
 ## Version introduced
 
-.NET 7 Preview 2
+.NET 7
 
 ## Type of breaking change
 

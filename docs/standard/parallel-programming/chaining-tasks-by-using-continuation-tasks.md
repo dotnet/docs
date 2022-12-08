@@ -1,7 +1,7 @@
 ---
 title: "Chaining tasks using continuation tasks"
 description: Learn to chain task by using continuation tasks in .NET. A continuation task is an asynchronous task that's invoked by another task.
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -34,7 +34,7 @@ A continuation is itself a <xref:System.Threading.Tasks.Task> and doesn't block 
 
 ## Create a continuation for a single antecedent
 
-You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task `taskA` that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent completes, the continuation task, `continuation`, is passed the antecedent and displays a string that includes its result.
+You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task `taskA` that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When `taskA` completes, the `antecedent` represents its results in the `ContinueWith` continuation method. The result of the written to the console.
 
 :::code language="csharp" source="snippets/cs/simple1.cs":::
 

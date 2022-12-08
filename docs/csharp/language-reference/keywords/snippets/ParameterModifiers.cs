@@ -36,7 +36,7 @@ internal class ParameterModifiers
         // </SnippetPassValueByValue>
     }
 
-    internal static void PassingValueByReferemce()
+    internal static void PassingValueByReference()
     {
         // <SnippetPassValueByReference>
         int n = 5;

@@ -57,10 +57,14 @@
                     "csharp-7.0/throw-expression.md",
                     "csharp-7.0/tuples.md",
                     "csharp-7.0/value-task.md",
+                    "csharp-7.1/async-main.md",
+                    "csharp-7.1/target-typed-default.md",
                     "csharp-7.2/leading-separator.md",
                     "csharp-7.2/readonly-struct.md",
-                    "csharp-7.2/ref-extension-methods.md",
                     "csharp-7.2/ref-struct-and-span.md",
+                    "csharp-7.2/ref-extension-methods.md",
+                    "csharp-7.2/non-trailing-named-arguments.md",
+                    "csharp-7.2/private-protected.md",
                     "csharp-7.2/private-protected.md",
                     "csharp-7.3/enum-delegate-constraints.md",
                     "csharp-7.3/ref-loops.md",
@@ -114,8 +118,10 @@
                 "exclude": [
                     "_csharplang/proposals/csharp-7.0/local-functions.md",
                     "_csharplang/proposals/csharp-7.0/throw-expression.md",
-                    "_csharplang/proposals/csharp-7.2/private-protected.md",
+                    "_csharplang/proposals/csharp-7.0/throw-expression.md",
+                    "_csharplang/proposals/csharp-7.1/target-typed-default.md",
                     "_csharplang/proposals/csharp-7.2/readonly-struct.md",
+                    "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md",
                     "_csharplang/proposals/csharp-7.3/blittable.md"
                 ]
             }
@@ -303,6 +309,7 @@
                 "docs/core/whats-new/**/**.md": "adegeo",
                 "docs/csharp/**/*.*": "billwagner",
                 "docs/framework/**/**.md": "gewarren",
+                "docs/framework/additional-apis/pos-for-net/**/**.md": "TerryWarwick",
                 "docs/framework/app-domains/**/**.md": "gewarren",
                 "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
                 "docs/framework/configure-apps/file-schema/wcf/**/**.md": "HongGit",
@@ -612,7 +619,6 @@
                 "_csharplang/proposals/csharp-7.0/digit-separators.md": "Digit separators",
                 "_csharplang/proposals/csharp-7.0/task-types.md": "Async task types",
 
-                "_csharplang/proposals/csharp-7.1/async-main.md": "Async main method",
                 "_csharplang/proposals/csharp-7.1/target-typed-default.md": "Default expressions",
                 "_csharplang/proposals/csharp-7.1/infer-tuple-names.md": "Infer tuple member names",
                 "_csharplang/proposals/csharp-7.1/generics-pattern-match.md": "Pattern matching with generics",
@@ -750,7 +756,6 @@
                 "_csharplang/proposals/csharp-7.0/digit-separators.md": "This feature specification describes the syntax to allow separators between groups of digits in numeric literals.",
                 "_csharplang/proposals/csharp-7.0/task-types.md": "This feature specification describes the syntax to support async return types that match a pattern, rather than restricting them to Task.",
 
-                "_csharplang/proposals/csharp-7.1/async-main.md": "This feature specification describes syntax enhancements to declare a Main method that is async and returns a Task type.",
                 "_csharplang/proposals/csharp-7.1/target-typed-default.md": "This feature specification describes the syntax to use the default keyword where the type of the expression can be inferred by the compiler.",
                 "_csharplang/proposals/csharp-7.1/infer-tuple-names.md": "This feature specification describes how the compiler interprets and infers the members names in a tuple.",
                 "_csharplang/proposals/csharp-7.1/generics-pattern-match.md": "This feature specification describes syntax enhancements to enable pattern matching with generic types.",

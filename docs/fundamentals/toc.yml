@@ -145,6 +145,12 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
+  - name: .NET 7
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-7.md
+    - name: Breaking changes
+      href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 6
     items:
     - name: What's new
@@ -199,6 +205,8 @@ items:
       href: ../core/tools/global-json.md
     - name: Telemetry
       href: ../core/tools/telemetry.md
+    - name: Signed-package verification
+      href: ../core/tools/nuget-signed-package-verification.md
     - name: Error messages
       items:
       - name: List of all SDK errors
@@ -501,8 +509,12 @@ items:
         href: syslib-diagnostics/syslib0042.md
       - name: SYSLIB0043
         href: syslib-diagnostics/syslib0043.md
+      - name: SYSLIB0044
+        href: syslib-diagnostics/syslib0044.md
       - name: SYSLIB0045
         href: syslib-diagnostics/syslib0045.md
+      - name: SYSLIB0046
+        href: syslib-diagnostics/syslib0046.md
       - name: SYSLIB0047
         href: syslib-diagnostics/syslib0047.md
     - name: Source-generated code
@@ -570,6 +582,56 @@ items:
         href: syslib-diagnostics/syslib1037.md
       - name: SYSLIB1038
         href: syslib-diagnostics/syslib1038.md
+      - name: SYSLIB1040
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1041
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1042
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1043
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1044
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1045
+        href: syslib-diagnostics/syslib1040-1049.md
+      - name: SYSLIB1050
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1051
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1052
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1053
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1054
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1055
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1056
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1057
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1058
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1059
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1060
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1061
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1062
+        href: syslib-diagnostics/syslib1050-1069.md
+      - name: SYSLIB1070
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1071
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1072
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1073
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1074
+        href: syslib-diagnostics/syslib1070-1089.md
+      - name: SYSLIB1075
+        href: syslib-diagnostics/syslib1070-1089.md
   - name: Integrated development environments (IDEs)
     items:
     - name: Visual Studio
@@ -960,6 +1022,10 @@ items:
             href: code-analysis/quality-rules/ca1418.md
           - name: CA1419
             href: code-analysis/quality-rules/ca1419.md
+          - name: CA1420
+            href: code-analysis/quality-rules/ca1420.md
+          - name: CA1422
+            href: code-analysis/quality-rules/ca1422.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -1103,8 +1169,14 @@ items:
             href: code-analysis/quality-rules/ca1850.md
           - name: CA1851
             href: code-analysis/quality-rules/ca1851.md
+          - name: CA1852
+            href: code-analysis/quality-rules/ca1852.md
+          - name: CA1853
+            href: code-analysis/quality-rules/ca1853.md
           - name: CA1854
             href: code-analysis/quality-rules/ca1854.md
+          - name: CA1855
+            href: code-analysis/quality-rules/ca1855.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1149,6 +1221,8 @@ items:
             href: code-analysis/quality-rules/ca2017.md
           - name: CA2018
             href: code-analysis/quality-rules/ca2018.md
+          - name: CA2019
+            href: code-analysis/quality-rules/ca2019.md
           - name: CA2020
             href: code-analysis/quality-rules/ca2020.md
         - name: Security rules
@@ -1433,6 +1507,8 @@ items:
             href: code-analysis/quality-rules/ca2257.md
           - name: CA2258
             href: code-analysis/quality-rules/ca2258.md
+          - name: CA2259
+            href: code-analysis/quality-rules/ca2259.md
           - name: CA2260
             href: code-analysis/quality-rules/ca2260.md
       - name: Code style rules
@@ -2617,6 +2693,10 @@ items:
         href: networking/sockets/socket-services.md
       - name: Use TcpClient and TcpListener
         href: networking/sockets/tcp-classes.md
+    - name: WebSockets
+      items:
+      - name: WebSockets support
+        href: networking/websockets.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library

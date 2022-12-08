@@ -36,7 +36,7 @@ Starting in .NET 7, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,Syst
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Type of breaking change
 

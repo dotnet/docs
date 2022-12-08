@@ -28,7 +28,21 @@ public static partial class Log
 }
 ```
 
-In the preceding example, the logging method is `static` and the log level is specified in the attribute definition. When using the attribute in a static context, the `ILogger` instance is required as a parameter. You may choose to use the attribute in a non-static context as well. Consider the following example where the logging method is declared as an instance method. In this context, the logging method gets the logger by accessing an `ILogger` field in the containing class.
+In the preceding example, the logging method is `static` and the log level is specified in the attribute definition. When using the attribute in a static context, either the `ILogger` instance is required as a parameter, or modify the definition to use the `this` keyword to define the method as an extension method.
+
+```csharp
+public static partial class Log
+{
+    [LoggerMessage(
+        EventId = 0,
+        Level = LogLevel.Critical,
+        Message = "Could not open socket to `{hostName}`")]
+    public static partial void CouldNotOpenSocket(
+        this ILogger logger, string hostName);
+}
+```
+
+You may choose to use the attribute in a non-static context as well. Consider the following example where the logging method is declared as an instance method. In this context, the logging method gets the logger by accessing an `ILogger` field in the containing class.
 
 ```csharp
 public partial class InstanceLoggingExample

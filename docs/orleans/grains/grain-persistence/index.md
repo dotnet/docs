@@ -1,16 +1,14 @@
 ---
 title: Grain persistence
 description: Learn about persistence in .NET Orleans.
-ms.date: 03/15/2022
+ms.date: 12/01/2022
 ---
 
 # Grain persistence
 
 Grains can have multiple named persistent data objects associated with them. These state objects are loaded from storage during grain activation so that they are available during requests. Grain persistence uses an extensible plugin model so that storage providers for any database can be used. This persistence model is designed for simplicity, and is not intended to cover all data access patterns. Grains can also access databases directly, without using the grain persistence model.
 
-<!-- TODO
-![A grain can have multiple persisted data objects each stored in a different storage system](~/images/grain_state_1.png)
--->
+:::image type="content" source="media/grain-state-diagram.png" alt-text="Grain persistence diagram" lightbox="media/grain-state-diagram.png":::
 
 In the above diagram, UserGrain has a *Profile* state and a *Cart* state, each of which is stored in a separate storage system.
 

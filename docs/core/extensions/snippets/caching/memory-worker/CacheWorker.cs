@@ -3,7 +3,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace CachingExamples.Memory;
 
-public class CacheWorker : BackgroundService
+public sealed class CacheWorker : BackgroundService
 {
     private readonly ILogger<CacheWorker> _logger;
     private readonly HttpClient _httpClient;

@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 10/21/2022
+ms.date: 11/08/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -684,7 +684,7 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 7 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `6`.
 
 ```xml
 <PropertyGroup>
@@ -716,6 +716,10 @@ The following table shows the values you can specify.
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `7.0` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
+| `7.0-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `7` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
+| `7-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `6.0` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
 | `6.0-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `6` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
@@ -766,7 +770,7 @@ The following table lists the property name for each rule category.
 
 ### AnalysisMode
 
-Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings in each .NET release. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive analysis mode where you can opt out of rules individually, or a more conservative analysis mode where you can opt in to specific rules. For example, if you want to enable all rules as build warnings, set the value to `All`.
+Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings in each .NET release. The `AnalysisMode` property lets you customize the set of rules that's enabled by default. You can either switch to a more aggressive analysis mode where you can opt out of rules individually, or a more conservative analysis mode where you can opt in to specific rules. For example, if you want to enable all rules as build warnings, set the value to `All`.
 
 ```xml
 <PropertyGroup>
@@ -774,7 +778,7 @@ Starting with .NET 5, the .NET SDK ships with all of the ["CA" code quality rule
 </PropertyGroup>
 ```
 
-The following table shows the available option values in .NET 5 and .NET 6. They're listed in increasing order of the number of rules they enable.
+The following table shows the available option values in .NET 5 and later versions. They're listed in increasing order of the number of rules they enable.
 
 | .NET 6+ value | .NET 5 value | Meaning |
 |-|-|-|

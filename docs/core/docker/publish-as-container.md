@@ -45,7 +45,7 @@ Your folder tree will look like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that, when run, logs a message every second. From your terminal session, change directories and navigate into the *Worker- folder. Use the `dotnet run` command to start the app.
+The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that, when run, logs a message every second. From your terminal session, change directories and navigate into the *Worker* folder. Use the `dotnet run` command to start the app.
 
 ```dotnetcli
 dotnet run
@@ -224,7 +224,7 @@ The `ContainerLabel` node has two attributes:
 ```xml
 <ItemGroup>
     <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
-<ItemGroup>
+</ItemGroup>
 ```
 
 For a list of labels that are created by default, see [default container labels](#default-container-labels).

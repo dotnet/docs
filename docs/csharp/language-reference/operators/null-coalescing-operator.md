@@ -1,7 +1,7 @@
 ---
-title: "?? and ??= operators - C# reference"
-description: "Learn about ?? and ??= which are the C# null-coalescing operators."
-ms.date: 09/10/2019
+title: "?? and ??= operators - null-coalescing operators"
+description: "The `??` and `??=` operators are the C# null-coalescing operators. They return the value of the left-hand operand if it isn't null. Otherwise, they return the value of the right-hand operand"
+ms.date: 11/28/2022
 f1_keywords:
   - "??_CSharpKeyword"
   - "??=_CSharpKeyword"
@@ -12,17 +12,19 @@ helpviewer_keywords:
   - "??= operator [C#]"
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 ---
-# ?? and ??= operators (C# reference)
+# ?? and ??= operators - the null-coalescing operators
 
-The null-coalescing operator `??` returns the value of its left-hand operand if it isn't `null`; otherwise, it evaluates the right-hand operand and returns its result. The `??` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
+<!-- 
+  Note: All the remaining acrolinx issues in this article are because of the `??` and `??=` operator. Acrolinx believes it's a misspelling of the ? mark.
+-->
 
-The null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
+The null-coalescing operator `??` returns the value of its left-hand operand if it isn't `null`; otherwise, it evaluates the right-hand operand and returns its result. The `??` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null. The null-coalescing assignment operator `??=` assigns the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. The `??=` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 
 [!code-csharp[null-coalescing assignment](snippets/shared/NullCoalescingOperator.cs#Assignment)]
 
 The left-hand operand of the `??=` operator must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md), or an [indexer](../../programming-guide/indexers/index.md) element.
 
-The type of the left-hand operand of the `??` and `??=` operators cannot be a non-nullable value type. In particular, you can use the null-coalescing operators with unconstrained type parameters:
+The type of the left-hand operand of the `??` and `??=` operators can't be a non-nullable value type. In particular, you can use the null-coalescing operators with unconstrained type parameters:
 
 [!code-csharp[unconstrained type parameter](snippets/shared/NullCoalescingOperator.cs#UnconstrainedType)]
 
@@ -44,7 +46,7 @@ d ??= (e ??= f)
 
 The `??` and `??=` operators can be useful in the following scenarios:
 
-- In expressions with the [null-conditional operators ?. and ?[]](member-access-operators.md#null-conditional-operators--and-), you can use the `??` operator to provide an alternative expression to evaluate in case the result of the expression with null-conditional operations is `null`:
+- In expressions with the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), you can use the `??` operator to provide an alternative expression to evaluate in case the result of the expression with null-conditional operations is `null`:
 
   [!code-csharp-interactive[with null-conditional](snippets/shared/NullCoalescingOperator.cs#WithNullConditional)]
 
@@ -77,7 +79,7 @@ The `??` and `??=` operators can be useful in the following scenarios:
 
 ## Operator overloadability
 
-The operators `??` and `??=` cannot be overloaded.
+The operators `??` and `??=` can't be overloaded.
 
 ## C# language specification
 

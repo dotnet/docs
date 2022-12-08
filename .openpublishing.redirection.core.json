@@ -58,6 +58,10 @@
             "redirect_url": "/dotnet/core/compatibility/6.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/iendpointmetadataprovider-changes.md",
+            "redirect_url": "/dotnet/core/compatibility/7.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/code-analysis.md",
             "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
         },
@@ -106,6 +110,10 @@
             "source_path_from_root": "/docs/core/compatibility/msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
             "redirect_url": "/dotnet/core/compatibility/sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/networking/7.0/connectasync-argumentexception.md",
+            "redirect_url": "/dotnet/core/compatibility/7.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/6.0/implicit-namespaces.md",
@@ -1105,7 +1113,7 @@
         },
         {
             "source_path_from_root": "/docs/core/whats-new/index.md",
-            "redirect_url": "/dotnet/core/whats-new/dotnet-6",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-7",
             "ms.custom": "updateeachrelease"
         },
         {

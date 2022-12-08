@@ -3,9 +3,9 @@ title: "Walkthrough: Persisting an Object using C#"
 description: This example creates a basic Loan object in C# and persist its data to a file, then creates a new object with data from the file.
 ms.date: 04/26/2018
 ---
-# Walkthrough: persisting an object using C\#
+# Walkthrough: Persisting an object using C\#
 
-You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.
+You can use binary serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.
 
 In this walkthrough, you will create a basic `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.
 
@@ -14,6 +14,8 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 
 > [!IMPORTANT]
 > This example stores data in a binary format file. These formats should not be used for sensitive data, such as passwords or credit-card information.
+
+[!INCLUDE [binary-serialization-warning](~/includes/binary-serialization-warning.md)]
 
 ## Prerequisites
 
@@ -26,7 +28,7 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 
 You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/main/csharp/serialization).
 
-## Creating the loan object
+## Create the loan object
 
 The first step is to create a `Loan` class and a console application that uses the class:
 
@@ -37,7 +39,7 @@ create a new console application in a subdirectory named `serialization`.
 
 [!code-csharp[Loan class definition](../../../../../samples/snippets/csharp/serialization/Loan.cs#1)]
 
-You will also have to create an application that uses the `Loan` class.
+You'll also have to create an application that uses the `Loan` class.
 
 ## Serialize the loan object
 
@@ -57,15 +59,15 @@ New customer value: Henry Clay
 7.1
 ```
 
-Running this application repeatedly always writes the same values. A new Loan object is created every time you run the program. In the real world, interest rates change periodically, but not necessarily every time that the application is run. Serialization code means you preserve the most recent interest rate between instances of the application. In the next step, you will do just that by adding serialization to the Loan class.
+Running this application repeatedly always writes the same values. A new `Loan` object is created every time you run the program. In the real world, interest rates change periodically, but not necessarily every time that the application is run. Serialization code means you preserve the most recent interest rate between instances of the application. In the next step, you will do just that by adding serialization to the `Loan` class.
 
 ## Using Serialization to Persist the Object
 
-In order to persist the values for the Loan class, you must first mark the class with the `Serializable` attribute. Add the following code above the Loan class definition:
+In order to persist the values for the Loan class using binary serialization, you must first mark the class with the `Serializable` attribute. Add the following code above the `Loan` class definition:
 
 [!code-csharp[Loan class definition](../../../../../samples/snippets/csharp/serialization/Loan.cs#2)]
 
-The <xref:System.SerializableAttribute> tells the compiler that everything in the class can be persisted to a file. Because the `PropertyChanged` event does not represent part of the object graph that should be stored, it should not be serialized. Doing so would serialize all objects that are attached to that event. You can add the <xref:System.NonSerializedAttribute> to the field declaration for the `PropertyChanged` event handler.
+The <xref:System.SerializableAttribute> tells the compiler that everything in the class can be persisted to a file using binary serialization. Because the `PropertyChanged` event does not represent part of the object graph that should be stored, it should not be serialized. Doing so would serialize all objects that are attached to that event. You can add the <xref:System.NonSerializedAttribute> to the field declaration for the `PropertyChanged` event handler.
 
 [!code-csharp[Disable serialization for the event handler](../../../../../samples/snippets/csharp/serialization/Loan.cs#3)]
 

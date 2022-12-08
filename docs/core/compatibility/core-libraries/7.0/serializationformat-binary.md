@@ -22,7 +22,7 @@ Starting in .NET 7, if you attempt to serialize or deserialize <xref:System.Data
 
 ## Version introduced
 
-.NET 7 Preview 2
+.NET 7
 
 ## Type of breaking change
 

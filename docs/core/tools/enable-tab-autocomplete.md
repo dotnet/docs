@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.date: 10/13/2022
 ---
 
-# How to enable TAB completion for the .NET CLI
+# How to enable tab completion for the .NET CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-This article describes how to configure tab completion for four shells, PowerShell, Bash, zsh, and fish. For other shells, refer to their documentation on how to configure tab completion.
+This article describes how to configure tab completion for four shells: PowerShell, Bash, zsh, and fish. For other shells, refer to their documentation on how to configure tab completion.
 
-Once set up, tab completion for the .NET CLI is triggered by typing a `dotnet` command in the shell, and then pressing the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
+Once set up, tab completion for the .NET CLI is triggered by entering a `dotnet` command in the shell and then pressing the <kbd>Tab</kbd> key. The current command line is sent to the `dotnet complete` command, and the results are processed by the shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
 ```console
 > dotnet complete "dotnet a"
@@ -24,9 +24,9 @@ migrate
 pack
 ```
 
-If that command doesn't work, make sure that .NET Core 2.0 SDK or above is installed. If it's installed, but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK and above. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
+If that command doesn't work, make sure that .NET Core 2.0 SDK or above is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK and above. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
 
-### Examples
+## Examples
 
 Here are some examples of what tab completion provides:
 
@@ -92,7 +92,7 @@ _dotnet_zsh_complete()
     return
   fi
 
-  # This is not a variable assigment, don't remove spaces!
+  # This is not a variable assignment, don't remove spaces!
   _values = "${(ps:\n:)completions}"
 }
 

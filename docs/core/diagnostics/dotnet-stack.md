@@ -55,10 +55,11 @@ The `dotnet-stack` tool:
 
 ## Commands
 
-| Command                                     | Description                                                        |
-|---------------------------------------------|--------------------------------------------------------------------|
-| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process.      |
-| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that stack traces can be collected from.|
+| Command                                               | Description                                                             |
+|-------------------------------------------------------|-------------------------------------------------------------------------|
+| [dotnet-stack report](#dotnet-stack-report)           | Prints the stack trace for each thread in the target process.           |
+| [dotnet-stack ps](#dotnet-stack-ps)                   | Lists the dotnet processes that stack traces can be collected from.     |
+| [dotnet-stack symbolicate](#dotnet-stack-symbolicate) | Get the line number from the Method Token and IL Offset in a stacktrace.|
 
 ## dotnet-stack report
 
@@ -76,11 +77,11 @@ dotnet-stack report -p|--process-id <pid>
 
 - **`-n, --name <name>`**
 
-  The name of the process to collect the trace from.
+  The name of the process to report the stack from.
 
 - **`-p|--process-id <PID>`**
 
-  The process ID to collect the trace from.
+  The process ID to report the stack from.
 
 ## dotnet-stack ps
 
@@ -102,6 +103,52 @@ Suppose you start a long-running app using the command ```dotnet run --configura
   
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
   36656 dotnet     C:\Program Files\dotnet\dotnet.exe
+```
+
+## dotnet-stack symbolicate
+
+Get the line number from the Method Token and IL Offset in a stacktrace.
+
+### Synopsis
+
+```console
+dotnet-stack symbolicate <input-path> [-d|--search-dir] [-o|--output] [-c|--stdout] [-h|--help]
+```
+
+### Options
+
+- **`-d, --search-dir <directory1 directory2 ...>`**
+
+  Path of multiple directories with assembly and pdb.
+
+- **`-o, --output <output-path>`**
+
+  Output directly to a file.
+
+- **`-c, --stdout`**
+
+  Output directly to a console.
+
+### Example
+
+```console
+> cat stack.trace
+
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotnetStackSymbolicate.App.MethodA() in DotnetStackSymbolicate.dll:token 0x6000002+0x6
+   at DotnetStackSymbolicate.App..ctor() in DotnetStackSymbolicate.dll:token 0x6000003+0x51
+   at DotnetStackSymbolicate.Program.OnCreate() in DotnetStackSymbolicate.Tizen.dll:token 0x6000001+0x8
+onSigabrt called
+>
+> dotnet-stack symbolicate stack.trace --stdout
+
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotnetStackSymbolicate.App.MethodA() in C:\DotnetStackSymbolicate\DotnetStackSymbolicate.cs:line 19
+   at DotnetStackSymbolicate.App..ctor() in C:\DotnetStackSymbolicate\DotnetStackSymbolicate.cs:line 38
+   at DotnetStackSymbolicate.Program.OnCreate() in C:\DotnetStackSymbolicate.Tizen\DotnetStackSymbolicate.Tizen.cs:line 12
+onSigabrt called
+
+Output: stack.trace.symbolicated
 ```
 
 ## Report managed stacks with dotnet-stack

@@ -45,8 +45,8 @@ The features that have been implemented in C# versions after 6.0, including thos
  [C# 7.0 Specification Proposals](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)  
  There are a number of new features implemented in C# 7.0. They include pattern matching, local functions, out variable declarations, throw expressions, binary literals, and digit separators. This folder contains the specifications for each of those features.
   
- [C# 7.1 Specification Proposals](~/_csharplang/proposals/csharp-7.1/async-main.md)  
- There are new features added in C# 7.1. First, you can write a `Main` method that returns `Task` or `Task<int>`. This enables you to add the `async` modifier to `Main`. The `default` expression can be used without a type in locations where the type can be inferred. Also, tuple member names can be inferred. Finally, pattern matching can be used with generics.
+ [C# 7.1 Specification Proposals](~/_csharplang/proposals/csharp-7.1/target-typed-default.md)  
+ There are new features added in C# 7.1. The `default` expression can be used without a type in locations where the type can be inferred. Also, tuple member names can be inferred. Finally, pattern matching can be used with generics.
 
  [C# 7.2 Specification Proposals](~/_csharplang/proposals/csharp-7.2/readonly-ref.md)  
  C# 7.2 added a number of small features. You can pass arguments by readonly reference using the `in` keyword. There are a number of low-level changes to support compile-time safety for `Span` and related types. You can use named arguments where later arguments are positional, in some situations. The `private protected` access modifier enables you to specify that callers are limited to derived types implemented in the same assembly. The `?:` operator can resolve to a reference to a variable. You can also format hexadecimal and binary numbers using a leading digit separator.
@@ -63,10 +63,13 @@ The features that have been implemented in C# versions after 6.0, including thos
 [C# 10 Specification Proposals](~/_csharplang/proposals/csharp-10.0/record-structs.md)\
 C# 10 is available with .NET 6. The features include record structs, parameterless struct constructors, global using directives, file-scoped namespaces, extended property patterns, improved interpolated strings, constant interpolated strings, lambda improvements, caller-argument expression, enhanced `#line` directives, generic attributes, improved definite assignment analysis, and `AsyncMethodBuilder` override.
 
+[C# 11 Specification Proposals](/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md)\
+C# 11 is available with .NET 7. The new features include static abstract members in interfaces, checked user-defined operators, unsigned right shift operator, relaxing shift operator, numeric `IntPtr`, raw string literals, interpolated string newline, UTF-8 string literals, pattern match span, list patterns, required members, auto-default struct, low-level struct improvements, extended `nameof` scope, and file local types.
+
 ## Related sections  
 
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
- Provides links to conceptual and task topics that describe the IDE and Editor.  
+ Provides links to conceptual and task topics that describe the IDE and editor.  
   
  [C# Programming Guide](../programming-guide/index.md)  
  Includes information about how to use the C# programming language.

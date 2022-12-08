@@ -28,6 +28,9 @@ dotnet nuget verify -h|--help
 
 The `dotnet nuget verify` command verifies a signed NuGet package.
 
+  > [!NOTE]
+  > This command requires a certificate root store that is valid for both code signing and timestamping.  See [NuGet signed package verification](nuget-signed-package-verification.md) for details.
+
 ## Arguments
 
 - **`package-path(s)`**

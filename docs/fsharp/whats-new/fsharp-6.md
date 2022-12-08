@@ -368,7 +368,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 ## Resumable code
 
-The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
+The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 ## Additional collection functions
 
@@ -505,7 +505,7 @@ This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design
 
 ## F# tooling: .NET 6 the default for scripting in Visual Studio
 
-If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analyzed and executed using .NET 6 with 64-bit execution. This functionality has been in preview in the later releases of Visual Studio 2019 and is now enabled by default.
+If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analyzed and executed using .NET 6 with 64-bit execution. This functionality was in preview in the later releases of Visual Studio 2019 and is now enabled by default.
 
 To enable .NET Framework scripting, select **Tools** > **Options** > **F# Tools** > **F# Interactive**. Set **Use .NET Core Scripting** to **false**, and then restart the F# Interactive window. This setting affects both script editing and script execution. To enable 32-bit execution for .NET Framework scripting, also set **64-bit F# Interactive** to **false**. There is no 32-bit option for .NET Core scripting.
 

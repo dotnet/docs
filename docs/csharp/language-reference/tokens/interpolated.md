@@ -1,7 +1,7 @@
 ---
-title: "$ - string interpolation - C# reference"
-description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 04/15/2022
+title: "$ - string interpolation - format string output"
+description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
+ms.date: 11/29/2022
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -12,7 +12,7 @@ helpviewer_keywords:
 author: pkulikov
 ---
 
-# $ - string interpolation (C# reference)
+# String interpolation using `$`
 
 The `$` special character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
 

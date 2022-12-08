@@ -62,7 +62,7 @@ JsonConverter converter = MyContext.Default.Options.GetConverter(typeof(Poco2));
 
 ## Version introduced
 
-.NET 7 Preview 7
+.NET 7
 
 ## Type of breaking change
 
@@ -102,7 +102,7 @@ options.GetConverter(typeof(Poco2)); // Returns the reflection-based converter.
 
 ### Use an AppContext switch
 
-Starting in .NET 7 RC 2, you can re-enable reflection fallback globally using the provided AppContext compatibility switch. Add the following entry to your application's project file to re-enable reflection fallback for all source-generated contexts in your app. For more information on using AppContext switches, see the article on [.NET runtime configuration settings](../../../runtime-config/index.md).
+Starting in .NET 7, you can re-enable reflection fallback globally using the provided AppContext compatibility switch. Add the following entry to your application's project file to re-enable reflection fallback for all source-generated contexts in your app. For more information on using AppContext switches, see the article on [.NET runtime configuration settings](../../../runtime-config/index.md).
 
 ```xml
 <ItemGroup>

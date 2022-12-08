@@ -3,7 +3,7 @@ title: Channels
 description: Learn how to use System.Threading.Channels in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/03/2022
+ms.date: 11/09/2022
 ---
 
 # System.Threading.Channels library

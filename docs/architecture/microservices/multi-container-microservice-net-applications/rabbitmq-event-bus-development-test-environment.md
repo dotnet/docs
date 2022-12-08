@@ -114,7 +114,7 @@ A production-ready solution with support for RabbitMQ.
 
 - **NServiceBus** - Fully-supported commercial service bus with advanced management and monitoring tooling for .NET \
   <https://particular.net/>
-  
+
 - **EasyNetQ** - Open Source .NET API client for RabbitMQ \
   <https://easynetq.com/>
 

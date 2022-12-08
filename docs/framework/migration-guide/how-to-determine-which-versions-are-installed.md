@@ -72,7 +72,7 @@ The **Release** REG_DWORD value in the registry represents the version of .NET F
 | .NET Framework 4.7     | On Windows 10 Creators Update: 460798<br />On all other Windows operating systems (including other Windows 10 operating systems): 460805 |
 | .NET Framework 4.7.1   | On Windows 10 Fall Creators Update and Windows Server, version 1709: 461308<br/>On all other Windows operating systems (including other Windows 10 operating systems): 461310 |
 | .NET Framework 4.7.2   | On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On all Windows operating systems other than Windows 10 April 2018 Update and Windows Server, version 1803: 461814 |
-| .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: 528040<br/>On Windows 10 May 2020 Update and Windows 10 October 2020 Update and Windows 10 May 2021 Update: 528372<br/>On Windows 11 and Windows Server 2022: 528449<br/>On all other Windows operating systems (including other Windows 10 operating systems): 528049 |
+| .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: 528040<br/>On Windows 10 May 2020 Update, October 2020 Update, May 2021 Update, November 2021 Update, and 2022 Update: 528372<br/>On Windows 11 and Windows Server 2022: 528449<br/>On all other Windows operating systems (including other Windows 10 operating systems): 528049 |
 | .NET Framework 4.8.1   | On Windows 11 2022 Update: 533320<br/>All other Windows operating systems: 533325 |
 
 ### Minimum version

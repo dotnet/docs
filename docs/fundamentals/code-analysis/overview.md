@@ -2,9 +2,10 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 11/08/2022
+ms.date: 12/07/2022
 ms.topic: overview
 ms.custom: updateeachrelease
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - code analysis
   - code analyzers
@@ -28,6 +29,8 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 > If you're using Visual Studio, many analyzer rules have associated *code fixes* that you can apply to correct the problem. Code fixes are shown in the light bulb icon menu.
 
 ### Enabled rules
+
+::: zone pivot="dotnet-7-0"
 
 The following rules are enabled, by default, in .NET 7.
 
@@ -53,6 +56,31 @@ The following rules are enabled, by default, in .NET 7.
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
 | [CA2259](quality-rules/ca2259.md) | Usage | `ThreadStatic` only affects static fields |
 | [CA2260](quality-rules/ca2260.md) | Usage | Use correct type parameter |
+::: zone-end
+
+::: zone pivot="dotnet-6-0"
+
+The following rules are enabled, by default, in .NET 6.
+
+| Diagnostic ID | Category | Severity | Description |
+| - | - | - | - |
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | Platform compatibility analyzer |
+| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | Use valid platform string |
+| [CA1831](quality-rules/ca1831.md) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | Do not use `ReferenceEquals` with value types |
+| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | Do not use `stackalloc` in loops |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | Parameter count mismatch |
+| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
+| [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
+| [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
+| [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+::: zone-end
 
 You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
 
@@ -61,29 +89,19 @@ You can change the severity of these rules to disable them or elevate them to er
 
 ### Enable additional rules
 
-*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
+*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode (`Default`), only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
-:::row:::
-    :::column:::
-        `None`
-    :::column-end:::
-    :::column:::
-        `Default`
-    :::column-end:::
-    :::column:::
-        `Minimum`
-    :::column-end:::
-    :::column:::
-        `Recommended`
-    :::column-end:::
-    :::column:::
-        `All`
-    :::column-end:::
-:::row-end:::
+| Value | Description |
+| - | - |
+| `None` | No rules are enabled. |
+| `Default` | The default set of rules are enabled. These rules are listed at [Enabled rules](#enabled-rules). |
+| `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_minimum.editorconfig* file. |
+| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_recommended.editorconfig* file. |
+| `All` | All rules are enabled. |
 
-Starting in .NET 6, you can omit [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the \<AnalysisLevel> property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel).
+Starting in .NET 6, you can omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).
 
-To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+To find the default severity for each available rule and whether or not the rule is enabled in `Default` analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
 ### Treat warnings as errors
 

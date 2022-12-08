@@ -232,7 +232,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Current releases and long-term support releases](../releases-and-support.md)
+- [Releases and support for .NET](../releases-and-support.md)
 
 ## Next steps
 

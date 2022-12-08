@@ -5,7 +5,6 @@ description: Learn about source code analysis in the .NET SDK.
 ms.date: 12/07/2022
 ms.topic: overview
 ms.custom: updateeachrelease
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - code analysis
   - code analyzers
@@ -30,7 +29,7 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ### Enabled rules
 
-::: zone pivot="dotnet-7-0"
+# [.NET 7](#tab/net-7)
 
 The following rules are enabled, by default, in .NET 7.
 
@@ -56,9 +55,8 @@ The following rules are enabled, by default, in .NET 7.
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
 | [CA2259](quality-rules/ca2259.md) | Usage | `ThreadStatic` only affects static fields |
 | [CA2260](quality-rules/ca2260.md) | Usage | Use correct type parameter |
-::: zone-end
 
-::: zone pivot="dotnet-6-0"
+# [.NET 6](#tab/net-6)
 
 The following rules are enabled, by default, in .NET 6.
 
@@ -80,7 +78,8 @@ The following rules are enabled, by default, in .NET 6.
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-::: zone-end
+
+---
 
 You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
 

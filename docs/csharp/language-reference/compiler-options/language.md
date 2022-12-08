@@ -72,7 +72,8 @@ The following values are valid:
 
 The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
 
-> [!IMPORTANT] The `latest` value is generally not recommended. With it, the compiler enables the latest features, even if those features depend on updates not included in the configured target framework. Without this setting, your project uses the compiler version recommended for your target framework. You can update the target framework to access newer language features.
+> [!IMPORTANT]
+> The `latest` value is generally not recommended. With it, the compiler enables the latest features, even if those features depend on updates not included in the configured target framework. Without this setting, your project uses the compiler version recommended for your target framework. You can update the target framework to access newer language features.
 
 Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
 

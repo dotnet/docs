@@ -163,7 +163,7 @@ IDataView data = loader.Load(dbSource);
 ```
 ## Load data from images files
 
-Create a model that hold image path and a lebel . `ImagesPath` is the aboslute path of the image in datasource doirectory. `Label` is the class or cataegory of the actual imge file.
+Create a model that hold image path and a lebel . `ImagePath` is the absolute path of the image in data source directory. `Label` is the class or category of the actual image file..
 
 ```csharp
  public class ImageData

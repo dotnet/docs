@@ -5,7 +5,7 @@ using Orleans.Storage;
 
 namespace GrainStorage;
 
-public class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecycle>
+public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecycle>
 {
     private readonly string _storageName;
     private readonly FileGrainStorageOptions _options;
@@ -21,12 +21,13 @@ public class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecy
         _clusterOptions = clusterOptions.Value;
     }
 
+    // <clearstateasync>
     public Task ClearStateAsync<T>(
         string stateName,
         GrainId grainId,
         IGrainState<T> grainState)
     {
-        var fName = grainId.Key.ToString();
+        var fName = GetKeyString(stateName, grainId);
         var path = Path.Combine(_options.RootDirectory, fName!);
         var fileInfo = new FileInfo(path);
         if (fileInfo.Exists)
@@ -48,13 +49,14 @@ public class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecy
 
         return Task.CompletedTask;
     }
-
+    // </clearstateasync>
+    // <readstateasync>
     public async Task ReadStateAsync<T>(
         string stateName,
         GrainId grainId,
         IGrainState<T> grainState)
     {
-        var fName = grainId.Key.ToString();
+        var fName = GetKeyString(stateName, grainId);
         var path = Path.Combine(_options.RootDirectory, fName!);        
         var fileInfo = new FileInfo(path);
         if (fileInfo is { Exists: false })
@@ -69,14 +71,15 @@ public class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecy
         grainState.State = _options.GrainStorageSerializer.Deserialize<T>(new BinaryData(storedData));
         grainState.ETag = fileInfo.LastWriteTimeUtc.ToString();
     }
-
+    // </readstateasync>
+    // <writestateasync>
     public async Task WriteStateAsync<T>(
         string stateName,
         GrainId grainId,
         IGrainState<T> grainState)
     {
         var storedData = _options.GrainStorageSerializer.Serialize(grainState.State);
-        var fName = grainId.Key.ToString();
+        var fName = GetKeyString(stateName, grainId);
         var path = Path.Combine(_options.RootDirectory, fName!);
         var fileInfo = new FileInfo(path);
         if (fileInfo.Exists && fileInfo.LastWriteTimeUtc.ToString() != grainState.ETag)
@@ -93,14 +96,20 @@ public class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecy
         fileInfo.Refresh();
         grainState.ETag = fileInfo.LastWriteTimeUtc.ToString();
     }
-
+    // </writestateasync>
+    // <participate>
     public void Participate(ISiloLifecycle lifecycle) =>
         lifecycle.Subscribe(
-            OptionFormattingUtilities.Name<FileGrainStorage>(_storageName),
-            ServiceLifecycleStage.ApplicationServices,
-            (ct) =>
+            observerName: OptionFormattingUtilities.Name<FileGrainStorage>(_storageName),
+            stage: ServiceLifecycleStage.ApplicationServices,
+            onStart: (ct) =>
             {
                 Directory.CreateDirectory(_options.RootDirectory);
                 return Task.CompletedTask;
             });
+    // </participate>
+    // <getkeystring>
+    private string GetKeyString(string grainType, GrainId grainId) =>
+        $"{_clusterOptions.ServiceId}.{grainId.Key}.{grainType}";
+    // </getkeystring>
 }

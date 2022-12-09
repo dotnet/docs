@@ -1,15 +1,18 @@
 ﻿using GrainStorage;
 using Microsoft.Extensions.Hosting;
 
-var host = new HostBuilder()
+using IHost host = new HostBuilder()
     .UseOrleans(builder =>
     {
         builder.UseLocalhostClustering()
             .AddFileGrainStorage("File", options =>
             {
-                options.RootDirectory = "C:/TestFiles";
+                string path = Environment.GetFolderPath(
+                    Environment.SpecialFolder.ApplicationData);
+
+                options.RootDirectory = Path.Combine(path, "Orleans/GrainState/v1");
             });
     })
     .Build();
 
-host.Run();
+await host.RunAsync();

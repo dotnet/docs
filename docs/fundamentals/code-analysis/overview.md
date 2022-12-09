@@ -53,8 +53,8 @@ The following rules are enabled, by default, in .NET 7.
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-| [CA2259](quality-rules/ca2259.md) | Usage | `ThreadStatic` only affects static fields |
-| [CA2260](quality-rules/ca2260.md) | Usage | Use correct type parameter |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Warning | Use correct type parameter |
 
 # [.NET 6](#tab/net-6)
 
@@ -94,8 +94,8 @@ You can change the severity of these rules to disable them or elevate them to er
 | - | - |
 | `None` | No rules are enabled. |
 | `Default` | The default set of rules are enabled. These rules are listed at [Enabled rules](#enabled-rules). |
-| `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_minimum.editorconfig* file. |
-| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_recommended.editorconfig* file. |
+| `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *analysislevel_\[level]_minimum.editorconfig* file in the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config* directory. |
+| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *analysislevel_\[level]_recommended.editorconfig* file in the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config* directory. |
 | `All` | All rules are enabled. |
 
 Starting in .NET 6, you can omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).

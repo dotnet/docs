@@ -163,7 +163,9 @@ IDataView data = loader.Load(dbSource);
 ```
 ## Load data from images files
 
-Create a model that hold image path and a lebel . `ImagePath` is the absolute path of the image in data source directory. `Label` is the class or category of the actual image file..
+Load the Image Data from input directory.
+
+Create a model that hold image path and a lebel . `ImagePath` is the absolute path of the image in data source directory. `Label` is the class or category of the actual image file.
 
 ```csharp
  public class ImageData
@@ -175,7 +177,7 @@ Create a model that hold image path and a lebel . `ImagePath` is the absolute pa
             public string Label;
         }
 ```
-## Load the Image Data from input directory.
+
 
 ```csharp
 
@@ -224,7 +226,94 @@ MLContext mlContext = new MLContext();
 
  // Shuffle images.
  IDataView shuffledFullImagesDataset = mlContext.Data.ShuffleRows(mlContext.Data.LoadFromEnumerable(images));               
+
+
+// Load In memory raw images from directory.
+        public static IEnumerable<InMemoryImageData>
+            LoadInMemoryImagesFromDirectory(string folder,
+                bool useFolderNameAsLabel = true)
+        {
+            var files = Directory.GetFiles(folder, "*",
+                searchOption: SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                if (Path.GetExtension(file) != ".jpg")
+                    continue;
+
+                var label = Path.GetFileName(file);
+                if (useFolderNameAsLabel)
+                    label = Directory.GetParent(file).Name;
+                else
+                {
+                    for (int index = 0; index < label.Length; index++)
+                    {
+                        if (!char.IsLetter(label[index]))
+                        {
+                            label = label.Substring(0, index);
+                            break;
+                        }
+                    }
+                }
+
+                yield return new InMemoryImageData()
+                {
+                    Image = File.ReadAllBytes(file),
+                    Label = label
+                };
+
+            }
+        }
 ```
+## Load In memory raw images from directory.
+Create a model holding the raw image byte array and label.
+
+ ```csharp
+public class InMemoryImageData
+        {
+            [LoadColumn(0)]
+            public byte[] Image;
+
+            [LoadColumn(1)]
+            public string Label;
+        }
+
+
+         static IEnumerable<InMemoryImageData>
+                LoadInMemoryImagesFromDirectory(string folder,
+                    bool useFolderNameAsLabel = true)
+            {
+                var files = Directory.GetFiles(folder, "*",
+                    searchOption: SearchOption.AllDirectories);
+                foreach (var file in files)
+                {
+                    if (Path.GetExtension(file) != ".jpg")
+                        continue;
+
+                    var label = Path.GetFileName(file);
+                    if (useFolderNameAsLabel)
+                        label = Directory.GetParent(file).Name;
+                    else
+                    {
+                        for (int index = 0; index < label.Length; index++)
+                        {
+                            if (!char.IsLetter(label[index]))
+                            {
+                                label = label.Substring(0, index);
+                                break;
+                            }
+                        }
+                    }
+
+                    yield return new InMemoryImageData()
+                    {
+                        Image = File.ReadAllBytes(file),
+                        Label = label
+                    };
+
+                }
+            }
+ ```
+
 ## Load data from other sources
 
 In addition to loading data stored in files, ML.NET supports loading data from sources that include but are not limited to:

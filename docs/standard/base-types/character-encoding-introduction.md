@@ -281,7 +281,7 @@ A better approach is to break the string by counting grapheme clusters, or text 
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
-As noted earlier, however, in implementations of .NET other than .NET 5+, the `StringInfo` class might handle some grapheme clusters incorrectly due to a bug in the `StringInfo` class.
+As noted earlier, prior to .NET 5, the `StringInfo` class had a bug causing some grapheme clusters to be handled incorrectly.
 
 ## UTF-8 and UTF-32
 

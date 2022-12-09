@@ -161,7 +161,70 @@ Use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.I
 ```csharp
 IDataView data = loader.Load(dbSource);
 ```
+## Load data from images files
 
+Create a model that hold image path and a lebel . `ImagesPath` is the aboslute path of the image in datasource doirectory. `Label` is the class or cataegory of the actual imge file.
+
+```csharp
+ public class ImageData
+        {
+            [LoadColumn(0)]
+            public string ImagePath;
+
+            [LoadColumn(1)]
+            public string Label;
+        }
+```
+## Load the Image Data from input directory.
+
+```csharp
+
+public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder,
+            bool useFolderNameAsLabel = true)
+        {
+            var files = Directory.GetFiles(folder, "*",
+                searchOption: SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                if (Path.GetExtension(file) != ".jpg")
+                    continue;
+
+                var label = Path.GetFileName(file);
+                if (useFolderNameAsLabel)
+                    label = Directory.GetParent(file).Name;
+                else
+                {
+                    for (int index = 0; index < label.Length; index++)
+                    {
+                        if (!char.IsLetter(label[index]))
+                        {
+                            label = label.Substring(0, index);
+                            break;
+                        }
+                    }
+                }
+
+                yield return new ImageData()
+                {
+                    ImagePath = file,
+                    Label = label
+                };
+
+            }
+        }
+ ```
+
+ Load image
+ ```csharp
+ //Create MLContext
+MLContext mlContext = new MLContext();
+
+ IEnumerable<ImageData> images = LoadImagesFromDirectory(
+                folder: pathe, useFolderNameAsLabel: true);
+
+ // Shuffle images.
+ IDataView shuffledFullImagesDataset = mlContext.Data.ShuffleRows(mlContext.Data.LoadFromEnumerable(images));               
+```
 ## Load data from other sources
 
 In addition to loading data stored in files, ML.NET supports loading data from sources that include but are not limited to:

@@ -15,6 +15,14 @@ Learn how to load data for processing and training into ML.NET using the API. Th
 
 If you're using Model Builder, see [Load training data into Model Builder](load-data-model-builder.md).
 
+## Load image data
+
+This is how you load image data
+
+```csharp
+var ctx = new MLContext();
+```
+
 ## Create the data model
 
 ML.NET enables you to define data models via classes. For example, given the following input data:

@@ -1,7 +1,7 @@
 ---
 title: Grain persistence
 description: Learn about persistence in .NET Orleans.
-ms.date: 12/07/2022
+ms.date: 12/09/2022
 zone_pivot_groups: orleans-version
 ---
 
@@ -11,7 +11,7 @@ Grains can have multiple named persistent data objects associated with them. The
 
 :::image type="content" source="media/grain-state-diagram.png" alt-text="Grain persistence diagram" lightbox="media/grain-state-diagram.png":::
 
-In the above diagram, UserGrain has a *Profile- state and a*Cart- state, each of which is stored in a separate storage system.
+In the above diagram, UserGrain has a *Profile* state and a *Cart* state, each of which is stored in a separate storage system.
 
 ## Goals
 
@@ -91,7 +91,7 @@ public async Task SetNameAsync(string name)
 }
 ```
 
-Conceptually, the Orleans Runtime will take a deep copy of the grain state data object for its use during any write operations. Under the covers, the runtime *may- use optimization rules and heuristics to avoid performing some or all of the deep copy in some circumstances, provided that the expected logical isolation semantics are preserved.
+Conceptually, the Orleans Runtime will take a deep copy of the grain state data object for its use during any write operations. Under the covers, the runtime *may* use optimization rules and heuristics to avoid performing some or all of the deep copy in some circumstances, provided that the expected logical isolation semantics are preserved.
 
 See the [Failure Modes](#FailureModes) section below for details of error handling mechanisms.
 
@@ -203,7 +203,7 @@ public class UserGrain : Grain, IUserGrain
 
 ### Failure modes for read operations
 
-Failures returned by the storage provider during the initial read of state data for that particular grain will fail the activate operation for that grain; in such case, there will *not- be any call to that grain's `OnActivateAsync()` life cycle callback method. The original request to the grain which caused the activation will be faulted back to the caller, the same way as any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain will result in an exception from `ReadStateAsync()` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
+Failures returned by the storage provider during the initial read of state data for that particular grain will fail the activate operation for that grain; in such case, there will *not* be any call to that grain's `OnActivateAsync()` life cycle callback method. The original request to the grain which caused the activation will be faulted back to the caller, the same way as any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain will result in an exception from `ReadStateAsync()` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
 
 Any attempt to send a message to a grain that failed to load at silo startup time due to a missing/bad storage provider config will return the permanent error <xref:Orleans.Storage.BadProviderConfigException>.
 
@@ -211,18 +211,18 @@ Any attempt to send a message to a grain that failed to load at silo startup tim
 
 Failures encountered by the storage provider when writing state data for a particular grain will result in an exception thrown by `WriteStateAsync()` `Task`. Usually, this means that the grain call exception will be thrown back to the client caller, provided the `WriteStateAsync()` `Task` is correctly chained into the final return `Task` for this grain method. However, it is possible in certain advanced scenarios to write grain code to specifically handle such write errors, just like they can handle any other faulted `Task`.
 
-Grains that execute error-handling / recovery code *must- catch exceptions / faulted `WriteStateAsync()` `Task`s and not re-throw them, to signify that they have successfully handled the write error.
+Grains that execute error-handling / recovery code *must* catch exceptions / faulted `WriteStateAsync()` `Task`s and not re-throw them, to signify that they have successfully handled the write error.
 
 ## Recommendations
 
 ### Use JSON serialization or another version-tolerant serialization format
 
-Code evolves and this often includes storage types, too. To accommodate these changes, an appropriate serializer should be configured. For most storage providers, a `UseJson` option or similar is available to use JSON as a serialization format. Ensure that when evolving data contracts that already-stored data will still be loadable.
+Code evolves and this often includes storage types, too. To accommodate these changes, an appropriate serializer should be configured. For most storage providers, a `UseJson` option or similar is available to use JSON as a serialization format. Ensure that when evolving data contracts already-stored data will still be loadable.
 
 ## Using Grain&lt;TState&gt; to add storage to a grain
 
 > [!IMPORTANT]
-> Using `Grain<T>` to add storage to a grain is considered *legacy- functionality: grain storage should be added using `IPersistentState<T>` as previously described.
+> Using `Grain<T>` to add storage to a grain is considered *legacy* functionality: grain storage should be added using `IPersistentState<T>` as previously described.
 
 Grain classes that inherit from `Grain<T>` (where `T` is an application-specific state data type that needs to be persisted) will have their state loaded automatically from specified storage.
 
@@ -286,9 +286,9 @@ Create a custom storage provider by implementing this interface and [registering
 
 ### Storage provider semantics
 
-An opaque provider-specific <xref:Orleans.GrainState.Etag%2A> value (`string`) *may- be set by a storage provider as part of the grain state metadata populated when the state was read. Some providers may choose to leave this as `null` if they do not use `Etag`s.
+An opaque provider-specific <xref:Orleans.GrainState.Etag%2A> value (`string`) *may* be set by a storage provider as part of the grain state metadata populated when the state was read. Some providers may choose to leave this as `null` if they do not use `Etag`s.
 
-Any attempt to perform a write operation when the storage provider detects an `Etag` constraint violation *should- cause the write `Task` to be faulted with transient error <xref:Orleans.Storage.InconsistentStateException> and wrapping the underlying storage exception.
+Any attempt to perform a write operation when the storage provider detects an `Etag` constraint violation *should* cause the write `Task` to be faulted with transient error <xref:Orleans.Storage.InconsistentStateException> and wrapping the underlying storage exception.
 
 ```csharp
 public class InconsistentStateException : OrleansException
@@ -320,7 +320,7 @@ public class InconsistentStateException : OrleansException
 }
 ```
 
-Any other failure conditions from a storage operation *must- cause the returned `Task` to be broken with an exception indicating the underlying storage issue. In many cases, this exception may be thrown back to the caller which triggered the storage operation by calling a method on the grain. It is important to consider whether or not the caller will be able to deserialize this exception. For example, the client might not have loaded the specific persistence library containing the exception type. For this reason, it is advisable to convert exceptions into exceptions that can be propagated back to the caller.
+Any other failure conditions from a storage operation *must* cause the returned `Task` to be broken with an exception indicating the underlying storage issue. In many cases, this exception may be thrown back to the caller which triggered the storage operation by calling a method on the grain. It is important to consider whether or not the caller will be able to deserialize this exception. For example, the client might not have loaded the specific persistence library containing the exception type. For this reason, it is advisable to convert exceptions into exceptions that can be propagated back to the caller.
 
 ### Data mapping
 

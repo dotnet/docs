@@ -35,10 +35,10 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
             if (fileInfo.LastWriteTimeUtc.ToString() != grainState.ETag)
             {
                 throw new InconsistentStateException($$"""
-                Version conflict (ClearState): ServiceId={{_clusterOptions.ServiceId}}
-                ProviderName={{_storageName}} GrainType={{typeof(T)}} 
-                GrainReference={{grainId}}.
-                """);
+                    Version conflict (ClearState): ServiceId={{_clusterOptions.ServiceId}}
+                    ProviderName={{_storageName}} GrainType={{typeof(T)}} 
+                    GrainReference={{grainId}}.
+                    """);
             }
 
             grainState.ETag = null;

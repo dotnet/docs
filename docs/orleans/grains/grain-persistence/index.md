@@ -32,16 +32,55 @@ Orleans grain storage providers can be found on [NuGet](https://www.nuget.org/pa
 
 Grains interact with their persistent state using <xref:Orleans.Runtime.IPersistentState%601> where `TState` is the serializable state type:
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+public interface IPersistentState<TState> : IStorage<TState>
+{
+}
+
+public interface IStorage<TState> : IStorage
+{
+    TState State { get; set; }
+}
+
+public interface IStorage
+{
+    string Etag { get; }
+
+    bool RecordExists { get; }
+
+    Task ClearStateAsync();
+
+    Task WriteStateAsync();
+
+    Task ReadStateAsync();
+}
+```
+
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 public interface IPersistentState<TState> where TState : new()
 {
     TState State { get; set; }
+
     string Etag { get; }
+
     Task ClearStateAsync();
+
     Task WriteStateAsync();
+
     Task ReadStateAsync();
 }
 ```
+
+:::zone-end
 
 Instances of `IPersistentState<TState>` are injected into the grain as constructor parameters. These parameters can be annotated with a <xref:Orleans.Runtime.PersistentStateAttribute> attribute to identify the name of the state being injected and the name of the storage provider which provides it. The following example demonstrates this by injecting two named states into the `UserGrain` constructor:
 
@@ -105,6 +144,39 @@ Before a grain can use persistence, a storage provider must be configured on the
 
 First, configure storage providers, one for profile state and one for cart state:
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+using IHost host = new HostBuilder()
+    .UseOrleans(siloBuilder =>
+    {
+        siloBuilder.AddAzureTableGrainStorage(
+            name: "profileStore",
+            configureOptions: options =>
+            {
+                // Configure the storage connection key
+                options.ConfigureTableServiceClient(
+                    "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
+            })
+            .AddAzureBlobGrainStorage(
+                name: "cartStore",
+                configureOptions: options =>
+                {
+                    // Configure the storage connection key
+                    options.ConfigureTableServiceClient(
+                        "DefaultEndpointsProtocol=https;AccountName=data2;AccountKey=SOMETHING2");
+                });
+    })
+    .Build();
+```
+
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 var host = new HostBuilder()
     .UseOrleans(siloBuilder =>
@@ -134,6 +206,8 @@ var host = new HostBuilder()
     })
     .Build();
 ```
+
+:::zone-end
 
 Now that a storage provider has been configured with the name `"profileStore"`, we can access this provider from a grain.
 
@@ -179,7 +253,7 @@ Now that the grain has a persistent state, we can add methods to read and write 
 
 ```csharp
 public class UserGrain : Grain, IUserGrain
-    {
+{
     private readonly IPersistentState<ProfileState> _profile;
 
     public UserGrain(
@@ -203,7 +277,7 @@ public class UserGrain : Grain, IUserGrain
 
 ### Failure modes for read operations
 
-Failures returned by the storage provider during the initial read of state data for that particular grain will fail the activate operation for that grain; in such case, there will *not* be any call to that grain's `OnActivateAsync()` life cycle callback method. The original request to the grain which caused the activation will be faulted back to the caller, the same way as any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain will result in an exception from `ReadStateAsync()` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
+Failures returned by the storage provider during the initial read of state data for that particular grain will fail the activate operation for that grain; in such case, there will *not* be any call to that grain's `OnActivateAsync` life cycle callback method. The original request to the grain which caused the activation will be faulted back to the caller, the same way as any other failure during grain activation. Failures encountered by the storage provider when reading state data for a particular grain will result in an exception from `ReadStateAsync` `Task`. The grain can choose to handle or ignore the `Task` exception, just like any other `Task` in Orleans.
 
 Any attempt to send a message to a grain that failed to load at silo startup time due to a missing/bad storage provider config will return the permanent error <xref:Orleans.Storage.BadProviderConfigException>.
 

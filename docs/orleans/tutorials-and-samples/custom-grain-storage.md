@@ -5,7 +5,7 @@ ms.date: 12/08/2022
 zone_pivot_groups: orleans-version
 ---
 
-# Custom Grain Storage
+# Custom grain storage
 
 In the tutorial on declarative actor storage, we looked at allowing grains to store their state in an Azure table using one of the built-in storage providers. While Azure is a great place to squirrel away your data, there are many alternatives. There are so many that there was no way to support them all. Instead, Orleans is designed to let you easily add support for your form of storage by writing a grain storage.
 
@@ -20,6 +20,13 @@ An Orleans grain storage is a class that implements `IGrainStorage` which is inc
 <!-- markdownlint-enable MD044 -->
 
 ```csharp
+using Microsoft.Extensions.Options;
+using Orleans.Configuration;
+using Orleans.Runtime;
+using Orleans.Storage;
+
+namespace GrainStorage;
+
 public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecycle>
 {
     private readonly string _storageName;
@@ -121,7 +128,7 @@ After that, you will create a factory that will allow you to scope the options t
 
 Lastly, to register the grain storage, you create an extension on the `ISiloBuilder` which internally registers the grain storage as a named service using <xref:Orleans.Runtime.KeyedServiceExtensions.AddSingletonNamedService%2A>, an extension provided by `Orleans.Core`.
 
-:::code source="snippets/custom-grain-storage/FileGrainStorageExtensions.cs":::
+:::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs":::
 
 Our `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>` therefore we need to register two named services for each interface:
 
@@ -135,7 +142,9 @@ This enables you to add the file storage using the extension on the `ISiloBuilde
 
 :::code source="snippets/custom-grain-storage/Program.cs":::
 
-Now you will be able to decorate your grains with the provider `[StorageProvider(ProviderName = "File")]` and it will store in the grain state in the root directory set in the options.
+Now you will be able to decorate your grains with the provider `[StorageProvider(ProviderName = "File")]` and it will store in the grain state in the root directory set in the options. Consider the full implementation of the `FileGrainStorage`:
+
+:::code source="snippets/custom-grain-storage/FileGrainStorage.cs":::
 
 :::zone-end
 

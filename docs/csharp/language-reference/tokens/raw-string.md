@@ -20,7 +20,7 @@ The following rules govern the interpretation of a multi-line raw string literal
 - Whitespace following the opening quote on the same line is ignored.
 - Whitespace only lines following the opening quote are included in the string literal.
 
-You may need to create a raw string literal that has three or consecutive double-quote characters. Raw string literals can start and end with a sequence of at least three double-quote characters. When you string literal contains three consecutive double-quotes, you start and end the raw string literal with four double quote characters:
+You may need to create a raw string literal that has three or more consecutive double-quote characters. Raw string literals can start and end with a sequence of at least three double-quote characters. When your string literal contains three consecutive double-quotes, you start and end the raw string literal with four double quote characters:
 
 :::code language="csharp" source="./snippets/raw-string-literal.cs" id="MoarQuotes":::
 

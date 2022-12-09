@@ -13,7 +13,7 @@ In this tutorial, we'll walk through how to write simple file-based grain storag
 
 ## Get started
 
-An Orleans grain storage is a class that implements `IGrainStorage` which is included in [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. It will also inherit from `ILifecycleParticipant<ISiloLifecycle>` which will allow you to subscribe to a particular event in the lifecycle of the silo. You start by creating a class named `FileGrainStorage`.
+An Orleans grain storage is a class that implements `IGrainStorage`, which is included in [Microsoft.Orleans.Core](https://www.nuget.org/packages/Microsoft.Orleans.Core) NuGet package. It will also inherit from `ILifecycleParticipant<ISiloLifecycle>`, which will allow you to subscribe to a particular event in the lifecycle of the silo. You start by creating a class named `FileGrainStorage`.
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
@@ -110,7 +110,7 @@ Writing the state is similar to reading the state.
 
 :::code source="snippets/custom-grain-storage/FileGrainStorage.cs" id="writestateasync":::
 
-Similar to reading state, you use the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer?displayProperty=nameWithType> to write the state. The current `ETag` is used to check against the last updated time in the UTC of the file. If the date is different, it means that another activation of the same grain changed the state concurrently. In this situation, you'll throw an `InconsistentStateException` which will result in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
+Similar to reading state, you use the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer?displayProperty=nameWithType> to write the state. The current `ETag` is used to check against the last updated time in the UTC of the file. If the date is different, it means that another activation of the same grain changed the state concurrently. In this situation, you'll throw an `InconsistentStateException`, which will result in the current activation being killed to prevent overwriting the state previously saved by the other activated grain.
 
 ## Clear state
 
@@ -118,7 +118,7 @@ Clearing the state would be deleting the file if the file exists.
 
 :::code source="snippets/custom-grain-storage/FileGrainStorage.cs" id="clearstateasync":::
 
-For the same reason as `WriteState`, you check for inconsistency before proceeding to delete the file and reset the `ETag`, you check if the current `ETag` is the same as the last write time UTC.
+For the same reason as `WriteState`, you check for inconsistency. Before proceeding to delete the file and reset the `ETag`, you check if the current `ETag` is the same as the last write time UTC.
 
 ## Put it all together
 
@@ -130,7 +130,7 @@ Lastly, to register the grain storage, you create an extension on the `ISiloBuil
 
 :::code source="snippets/custom-grain-storage/FileSiloBuilderExtensions.cs":::
 
-Our `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>` therefore we need to register two named services for each interface:
+Our `FileGrainStorage` implements two interfaces, `IGrainStorage` and `ILifecycleParticipant<ISiloLifecycle>`, therefore we need to register two named services for each interface:
 
 ```csharp
 return services.AddSingletonNamedService(providerName, FileGrainStorageFactory.Create)

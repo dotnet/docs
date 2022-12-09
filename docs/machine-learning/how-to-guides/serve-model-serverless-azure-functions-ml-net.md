@@ -26,14 +26,14 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 
 ## Create Azure Functions project
 
-1. In Visual Studio 2022 open the **Create a new project** dialog. 
+1. In Visual Studio 2022 open the **Create a new project** dialog.  
 1. In the "Create a new project" dialog, select the **Azure Functions** project template.
 1. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and select the **Next** button.
 1. In the "Additional information dialog", leave all the defaults as is and select the **Create** button.
 1. Install the **Microsoft.ML NuGet Package**
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    
+
     Follow the same steps to install the **Microsoft.Extensions.ML**, **Microsoft.Extensions.DependencyInjection**, and **Microsoft.Azure.Functions.Extensions** NuGet packages.
 
 ## Add pre-trained model to project

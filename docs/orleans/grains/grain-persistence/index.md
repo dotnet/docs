@@ -324,6 +324,50 @@ The behavior of these methods corresponds to their counterparts on `IPersistentS
 
 There are two parts to the state persistence APIs: the API exposed to the grain via `IPersistentState<T>` or `Grain<T>`, and the storage provider API, which is centered around `IGrainStorage` — the interface which storage providers must implement:
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+/// <summary>
+/// Interface to be implemented for a storage able to read and write Orleans grain state data.
+/// </summary>
+public interface IGrainStorage
+{
+    /// <summary>Read data function for this storage instance.</summary>
+    /// <param name="stateName">Name of the state for this grain</param>
+    /// <param name="grainId">Grain ID</param>
+    /// <param name="grainState">State data object to be populated for this grain.</param>
+    /// <typeparam name="T">The grain state type.</typeparam>
+    /// <returns>Completion promise for the Read operation on the specified grain.</returns>
+    Task ReadStateAsync<T>(
+        string stateName, GrainId grainId, IGrainState<T> grainState);
+
+    /// <summary>Write data function for this storage instance.</summary>
+    /// <param name="stateName">Name of the state for this grain</param>
+    /// <param name="grainId">Grain ID</param>
+    /// <param name="grainState">State data object to be written for this grain.</param>
+    /// <typeparam name="T">The grain state type.</typeparam>
+    /// <returns>Completion promise for the Write operation on the specified grain.</returns>
+    Task WriteStateAsync<T>(
+        string stateName, GrainId grainId, IGrainState<T> grainState);
+
+    /// <summary>Delete / Clear data function for this storage instance.</summary>
+    /// <param name="stateName">Name of the state for this grain</param>
+    /// <param name="grainId">Grain ID</param>
+    /// <param name="grainState">Copy of last-known state data object for this grain.</param>
+    /// <typeparam name="T">The grain state type.</typeparam>
+    /// <returns>Completion promise for the Delete operation on the specified grain.</returns>
+    Task ClearStateAsync<T>(
+        string stateName, GrainId grainId, IGrainState<T> grainState);
+}
+```
+
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 /// <summary>
 /// Interface to be implemented for a storage able to read and write Orleans grain state data.
@@ -355,6 +399,8 @@ public interface IGrainStorage
         string grainType, GrainReference grainReference, IGrainState grainState);
 }
 ```
+
+:::zone-end
 
 Create a custom storage provider by implementing this interface and [registering](#register-a-storage-provider) that implementation. For an example of an existing storage provider implementation, see [`AzureBlobGrainStorage`](https://github.com/dotnet/orleans/blob/af974d37864f85bfde5dc02f2f60bba997f2162d/src/Azure/Orleans.Persistence.AzureStorage/Providers/Storage/AzureBlobStorage.cs).
 

@@ -289,7 +289,7 @@ Console.WriteLine(value is WeatherForecastWithCity); // True
 ```
 
 > [!NOTE]
-> The type discriminator must be the first property in the JSON for deserialization to succeed.
+> The type discriminator must be placed at the start of the JSON object, grouped together with other metadata properties like `$id` and `$ref`.
 
 ```vb
 Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)

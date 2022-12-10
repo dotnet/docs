@@ -82,7 +82,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
-    [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
+    [--profile <profile-name>] [--providers <list-of-semicolon-separated-providers>]
     [--show-child-io]
     [-- <command>] (for target applications running .NET 5 or later)
 ```
@@ -178,9 +178,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
  |`gc-verbose`|Tracks GC collections and samples object allocations.|
  |`gc-collect`|Tracks GC collections only at very low overhead.|
 
-- **`--providers <list-of-comma-separated-providers>`**
+- **`--providers <list-of-semicolon-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profile.
+  A semicolon-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profile.
 
   This list of providers is in the form:
 

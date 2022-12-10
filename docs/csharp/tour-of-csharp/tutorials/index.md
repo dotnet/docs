@@ -11,7 +11,7 @@ that you can run in your browser. You can learn the basics of C# from the
 [C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
 
 <!--markdownlint-disable-next-line MD034 -->
-> [!VIDEO https://learn.microsoft.com/shows/CSharp-101/What-is-C/player]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=csharp-101&ep=what-is-c]
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,

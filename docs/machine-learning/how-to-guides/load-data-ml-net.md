@@ -179,41 +179,39 @@ Create a model that hold image path and a lebel . `ImagePath` is the absolute pa
 
 
 ```csharp
-
 public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder,
             bool useFolderNameAsLabel = true)
+{
+    var files = Directory.GetFiles(folder, "*", searchOption: SearchOption.AllDirectories);
+
+    foreach (var file in files)
+    {
+        if (Path.GetExtension(file) != ".jpg")
+            continue;
+        
+        var label = Path.GetFileName(file);
+        
+        if (useFolderNameAsLabel)
+            label = Directory.GetParent(file).Name;
+        else
         {
-            var files = Directory.GetFiles(folder, "*",
-                searchOption: SearchOption.AllDirectories);
-            foreach (var file in files)
+            for (int index = 0; index < label.Length; index++)
             {
-                if (Path.GetExtension(file) != ".jpg")
-                    continue;
-
-                var label = Path.GetFileName(file);
-                if (useFolderNameAsLabel)
-                    label = Directory.GetParent(file).Name;
-                else
+                if (!char.IsLetter(label[index]))
                 {
-                    for (int index = 0; index < label.Length; index++)
-                    {
-                        if (!char.IsLetter(label[index]))
-                        {
-                            label = label.Substring(0, index);
-                            break;
-                        }
-                    }
+                    label = label.Substring(0, index);
+                    break;
                 }
-
-                yield return new ImageData()
-                {
-                    ImagePath = file,
-                    Label = label
-                };
-
             }
         }
- ```
+        
+        yield return new ImageData()
+        {
+            ImagePath = file,
+            Label = label
+        };
+    }
+}
 
  Load image
  ```csharp

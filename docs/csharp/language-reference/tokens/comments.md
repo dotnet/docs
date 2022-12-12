@@ -5,7 +5,7 @@ ms.date: 12/12/2022
 ---
 # Code comments - `//` and `/*`. `*/`
 
-C# supports two different forms of comments. Single line comments start with `//` and end at the end of that line of code. Multiline comments start with `/*` and end with `*/`. The following example shows an example of each:
+C# supports two different forms of comments. Single line comments start with `//` and end at the end of that line of code. Multiline comments start with `/*` and end with `*/`. The following code shows an example of each:
 
 :::code language="csharp" source="./snippets/comments.cs" id="ExampleComments":::
 

@@ -169,14 +169,13 @@ Create a model that hold image path and a lebel . `ImagePath` is the absolute pa
 
 ```csharp
  public class ImageData
-        {
-            [LoadColumn(0)]
-            public string ImagePath;
-
-            [LoadColumn(1)]
-            public string Label;
-        }
-```
+ {
+     [LoadColumn(0)]
+     public string ImagePath;
+     
+     [LoadColumn(1)]
+     public string Label;
+}
 
 
 ```csharp

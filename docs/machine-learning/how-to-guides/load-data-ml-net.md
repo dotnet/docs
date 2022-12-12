@@ -161,7 +161,7 @@ Use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.I
 ```csharp
 IDataView data = loader.Load(dbSource);
 ```
-## Load data from images files
+## Load images from files
 
 Load the Image Data from input directory.
 

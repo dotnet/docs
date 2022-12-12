@@ -221,7 +221,7 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder,
 MLContext mlContext = new MLContext();
 
  IEnumerable<ImageData> images = LoadImagesFromDirectory(
-                folder: pathe, useFolderNameAsLabel: true);
+                folder: "your-image-directory-path", useFolderNameAsLabel: true);
 
  // Shuffle images.
  IDataView shuffledFullImagesDataset = mlContext.Data.ShuffleRows(mlContext.Data.LoadFromEnumerable(images));               

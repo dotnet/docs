@@ -20,11 +20,11 @@ The new serializer requires that you are explicit about which types and members 
 
 By default, Orleans will serialize your type by encoding its full name. You can override this by adding an <xref:Orleans.AliasAttribute?displayProperty=nameWithType>. Doing so will result in your type being serialized using a name which is resistant to renaming the underlying class or moving it between assemblies. Type aliases are globally scoped and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyGenericType<T, U>` could have the alias <code>[Alias("mytype\`2")]</code>.
 
-### Serializing `record` types
+## Serializing `record` types
 
 Members defined in a record's primary constructor have implicit ids by default. In other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that will break compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
-### Serialization best practices
+## Serialization best practices
 
 - ✅ **Do** give your types aliases using the `[Alias("my-type")]` attribute. Types with aliases can be renamed without breaking compatibility.
 - ❌ **Do not** change a `record` to a regular `class` or vice-versa. Records and classes are not represented in an identical fashion since records have primary constructor members in addition to regular members and therefore the two are not interchangeable.
@@ -52,7 +52,7 @@ Members defined in a record's primary constructor have implicit ids by default. 
   - You can narrow numeric member types but it will result in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value were encountered.
 - ❌ **Do not** change the signedness of a numeric type member. You must not change a member's type from `uint` to `int` or an `int` to a `uint`, for example.
 
-#### Surrogates for serializing foreign types
+### Surrogates for serializing foreign types
 
 Sometimes you may need to pass types between grains which you don't have full control over. In these cases, it may be impractical to convert to and from some custom-defined type in your application code manually. Orleans offers a solution for these situations in the form of surrogate types. Surrogates are serialized in place of their target type and have functionality to convert to and from the target type. Consider the following example of a foreign type and a corresponding surrogate and converter:
 
@@ -188,11 +188,11 @@ public sealed class DerivedFromMyForeignLibraryType : MyForeignLibraryType
 }
 ```
 
-#### Custom serialization
+### Custom serialization
 
 For sending data between hosts, <xref:Orleans.Serialization?displayProperty=fullName> supports delegating to other serializers, such as [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) and [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). You can add support for other serializers by following the pattern set by those implementations. For grain storage it is preferential to use <xref:Orleans.Storage.IGrainStorageSerializer> to configure a custom serializer.
 
-##### Configure Orleans to use `System.Text.Json`
+#### Configure Orleans to use `System.Text.Json`
 
 Configuring Orleans to use `System.Text.Json` to serialize a subset of types is similar to configuring Orleans to serialize types using `Newtonsoft.Json`, except that the package and configuration methods are different:
 
@@ -209,7 +209,7 @@ siloBuilder.Services.AddSerializer(serializerBuilder =>
 });
 ```
 
-##### Configure Orleans to use `Newtonsoft.Json`
+#### Configure Orleans to use `Newtonsoft.Json`
 
 To configure Orleans to serialize certain types using `Newtonsoft.Json`, you must first reference the [Microsoft.Orleans.Serialization.NewtonsoftJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson) NuGet package. Then, configure the serializer, specifying which types it will be responsible for. In the following example, we will specify that the `Newtonsoft.Json` serializer will be responsible for all types in the `Example.Namespace` namespace.
 
@@ -225,7 +225,7 @@ In the preceding example, the call to <xref:Orleans.Serialization.SerializationH
 
 For types which Orleans has generated a serializer (types marked with <xref:Orleans.GenerateSerializerAttribute>), Orleans will prefer the generated serializer over the `Newtonsoft.Json` serializer.
 
-#### Immutability enhancements
+### Immutability enhancements
 
 Orleans opts for safety by default. To ensure that values sent between grains are not modified after the call site or during transmission, these values are copied immediately when making a grain call or returning a response from a grain.
 In cases where a developer knows that a type will not be modified, Orleans can be instructed to skip this copy process.
@@ -260,7 +260,7 @@ public sealed class MyType
 }
 ```
 
-### Grain storage serializers
+## Grain storage serializers
 
 Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain%601.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState%601> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there is now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, which offers a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern which involves setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer%2A?displayProperty=nameWithType> property on the provider's options class, for example:
 
@@ -269,7 +269,7 @@ Orleans includes a provider-backed persistence model for grains, accessed via th
 - <xref:Orleans.Configuration.AzureTableStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
 - <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer>
 
-This currently defaults to an implementation which uses `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this, using [OptionsBuilder\<TOptions\>](../core/extensions/options.md#optionsbuilder-api):
+This currently defaults to an implementation which uses `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this, using [OptionsBuilder\<TOptions\>](../../../core/extensions/options.md#optionsbuilder-api):
 
 ```csharp
 siloBuilder.AddAzureBlobGrainStorage(
@@ -281,7 +281,7 @@ siloBuilder.AddAzureBlobGrainStorage(
     });
 ```
 
-For more information, see [OptionsBuilder API](../core/extensions/options.md#optionsbuilder-api).
+For more information, see [OptionsBuilder API](../../../core/extensions/options.md#optionsbuilder-api).
 
 :::zone-end
 

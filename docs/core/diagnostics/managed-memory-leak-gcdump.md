@@ -196,4 +196,3 @@ All \*.nettrace files can be analyzed in Visual Studio. To analyze a Linux \*.ne
 
 > [!div class="nextstepaction"]
 > [Debug a deadlock in .NET Core](debug-deadlock.md)
-

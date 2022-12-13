@@ -17,6 +17,8 @@ New outline:
   - Pointers are unsafe
   - Structs > 3 words increase copying while decreasing allocations
 - What's happened
+  - Define *ref assignment* (contrast with assignment), `ref readonly`, `readonly ref`, and `readonly ref readonly`
+  - Define *safe to escape* and *ref safe to escape*
   - Pass by reference
   - Return by reference
   - Ref fields

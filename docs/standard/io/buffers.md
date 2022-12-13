@@ -110,8 +110,6 @@ The following example parses a 4-byte big-endian integer length from the start o
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet5)]
 
-[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
-
 ##### Process text data
 
 The following example:

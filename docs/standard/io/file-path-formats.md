@@ -44,8 +44,6 @@ The following example illustrates the difference between absolute and relative p
 [!code-csharp[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/cs/paths.cs)]
 [!code-vb[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/vb/paths.vb)]
 
-[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
-
 ## UNC paths
 
 Universal naming convention (UNC) paths, which are used to access network resources, have the following format:

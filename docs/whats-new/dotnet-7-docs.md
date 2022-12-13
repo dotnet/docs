@@ -241,7 +241,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Access Modifiers (C# Reference)](../csharp/language-reference/keywords/access-modifiers.md) - Language reference updates for `file` scoped types
 - [ref (C# Reference)](../csharp/language-reference/keywords/ref.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
 - [Assignment operators (C# reference)](../csharp/language-reference/operators/assignment-operator.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Write safe and efficient C# code](../csharp/write-safe-efficient-code.md)
+- [Avoid allocations](../csharp//advanced-topics/performance/index.md)
   - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
   - Add updates for numeric IntPtr
 - [+ and += operators (C# reference)](../csharp/language-reference/operators/addition-operator.md) - Write content for UTF-8 string literals for C# 11.

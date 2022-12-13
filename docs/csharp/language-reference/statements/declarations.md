@@ -126,7 +126,7 @@ The `scoped` modifier is implicitly added to `this` in methods declared in a `st
 ## See also
 
 - [ref keyword](../keywords/ref.md)
-- [Write safe efficient code](../../write-safe-efficient-code.md)
+- [Avoid allocations](../../advanced-topics/performance/index.md)
 - ['var' preferences (style rules IDE0007 and IDE0008)](../../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md)
 - [C# reference](../index.md)
 - [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)

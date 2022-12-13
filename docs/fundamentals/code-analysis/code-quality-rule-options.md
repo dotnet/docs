@@ -1,7 +1,7 @@
 ---
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
-ms.date: 06/09/2022
+ms.date: 12/07/2022
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options
@@ -169,3 +169,9 @@ This section lists some of the available options. To see the full list of availa
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
 | Names of symbols that are disallowed in the context of the analysis | Allowed symbol name formats (separated by \|):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1031](quality-rules/ca1031.md) |
+
+### exclude_ordefault_methods
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Excludes FirstOrDefault and LastOrDefault methods from analysis. | `true` or `false` | `false` | [CA1826](quality-rules/ca1826.md) |

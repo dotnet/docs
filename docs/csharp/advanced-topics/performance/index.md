@@ -7,6 +7,32 @@ ms.custom: mvc
 ---
 # Write safe and efficient C# code
 
+New outline:
+
+- Preface: performance means profiling. These recommendations are guidelines, not hard and fast rules.
+- Lots of weasel words here, measure yourself.
+
+- Problem statement
+  - Minimize allocations to increase performance
+  - Pointers are unsafe
+  - Structs > 3 words increase copying while decreasing allocations
+- What's happened
+  - Pass by reference
+  - Return by reference
+  - Ref fields
+  - With lifetime management safety rules
+- Result
+  - Wisely using struct types, `ref` variables and assignment gives the perf of pointers, but safely
+  - Unsafe code should be a thing of the past
+
+Other articles can reference techniques;
+
+- converting classes to structs
+- preserving class (e.g. reference) semantics
+- sharing internal data (memory, fields)
+
+## Old stuff starts here.
+
 C# provides features that enable you to write verifiable safe code with better performance. If you carefully apply these techniques, fewer scenarios require unsafe code. These features make it easier to use references to value types as method arguments and method returns. When done safely, these techniques minimize copying value types. By using value types, you can minimize the number of allocations and garbage collection passes.
 
 One advantage to using value types is that they often avoid heap allocations. The disadvantage is that they're copied by value. This trade-off makes it harder to optimize algorithms that operate on large amounts of data. The language features highlighted in this article provide mechanisms that enable safe efficient code using references to value types. Use these features wisely to minimize both allocations and copy operations.
@@ -27,11 +53,11 @@ These techniques balance two competing goals:
 
 - Minimize allocations on the heap.
 
-  Variables that are [reference types](./fundamentals/types/index.md#reference-types) hold a reference to a location in memory and are allocated on the managed heap. Only the reference is copied when a reference type is passed as an argument to a method or returned from a method. Each new object requires a new allocation, and later must be reclaimed. Garbage collection takes time.
+  Variables that are [reference types](../../fundamentals/types/index.md#reference-types) hold a reference to a location in memory and are allocated on the managed heap. Only the reference is copied when a reference type is passed as an argument to a method or returned from a method. Each new object requires a new allocation, and later must be reclaimed. Garbage collection takes time.
 
 - Minimize the copying of values.
 
-  Variables that are [value types](./fundamentals/types/index.md#value-types) directly contain their value, and the value is typically copied when passed to a method or returned from a method. This behavior includes copying the value of `this` when calling iterators and async instance methods of structs. The copy operation takes time, depending on the size of the type.
+  Variables that are [value types](../../fundamentals/types/index.md#value-types) directly contain their value, and the value is typically copied when passed to a method or returned from a method. This behavior includes copying the value of `this` when calling iterators and async instance methods of structs. The copy operation takes time, depending on the size of the type.
 
 This article uses the following example concept of the 3D-point structure to explain its recommendations:
 
@@ -48,7 +74,7 @@ Different examples use different implementations of this concept.
 
 ## Declare immutable structs as `readonly`
 
-Declare a [`readonly struct`](language-reference/builtin-types/struct.md#readonly-struct) to indicate that a type is **immutable**. The `readonly` modifier informs the compiler that your intent is to create an immutable type. The compiler enforces that design decision with the following rules:
+Declare a [`readonly struct`](../../language-reference/builtin-types/struct.md#readonly-struct) to indicate that a type is **immutable**. The `readonly` modifier informs the compiler that your intent is to create an immutable type. The compiler enforces that design decision with the following rules:
 
 - All field members must be read-only.
 - All properties must be read-only, including auto-implemented properties.
@@ -75,7 +101,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 
 ## Declare `readonly` members for mutable structs
 
-When a struct type is mutable, declare members that don't modify state as [`readonly` members](language-reference/builtin-types/struct.md#readonly-instance-members).
+When a struct type is mutable, declare members that don't modify state as [`readonly` members](../../language-reference/builtin-types/struct.md#readonly-instance-members).
 
 Consider a different application that needs a 3D point structure, but must support mutability. The following version of the 3D point structure adds the `readonly` modifier only to those members that don't modify the structure. Follow this example when your design must support modifications to the struct by some members, but you still want the benefits of enforcing `readonly` on some members:
 
@@ -122,7 +148,7 @@ Adding the `readonly` modifier to members that don't mutate state provides two r
 
 ## Use `ref readonly return` statements
 
-Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when both of the following conditions are true:
+Use a [`ref readonly`](../../language-reference/keywords/ref.md#reference-return-values) return when both of the following conditions are true:
 
 - The return value is a `struct` larger than <xref:System.IntPtr.Size%2A?displayProperty=nameWithType>.
 - The storage lifetime is greater than the method returning the value.
@@ -164,7 +190,7 @@ Returning `ref readonly` enables you to save copying larger structures and prese
 
 At the call site, callers make the choice to use the `Origin` property as a `ref readonly` or as a value:
 
-[!code-csharp[AssignRefReadonly](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
+[!code-csharp[AssignRefReadonly](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
 The first assignment in the preceding code makes a copy of the `Origin` constant and assigns that copy. The second assigns a reference. Notice that the `readonly` modifier must be part of the declaration of the variable. The reference to which it refers can't be modified. Attempts to do so result in a compile-time error.
 
@@ -207,7 +233,7 @@ You can apply the `in` modifier to any `readonly struct` parameter, but this pra
 
 The following code shows an example of a method that calculates the distance between two points in 3D space.
 
-[!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
+[!code-csharp[InArgument](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
 
 The arguments are two structures that each contain three doubles. A double is 8 bytes, so each argument is 24 bytes. By specifying the `in` modifier, you pass a 4-byte or 8-byte reference to those arguments, depending on the architecture of the machine. The difference in size is small, but it can add up when your application calls this method in a tight loop using many different values.
 
@@ -217,7 +243,7 @@ However, the impact of any low-level optimizations like using the `in` modifier 
 
 Unlike a `ref` or `out` parameter, you don't need to apply the `in` modifier at the call site. The following code shows two examples of calling the `CalculateDistance` method. The first uses two local variables passed by reference. The second includes a temporary variable created as part of the method call.
 
-[!code-csharp[UseInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#UseInArgument "Specifying an In argument")]
+[!code-csharp[UseInArgument](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#UseInArgument "Specifying an In argument")]
 
 Omitting the `in` modifier at the call site informs the compiler that it's allowed to make a copy of the argument for any of the following reasons:
 
@@ -230,11 +256,11 @@ method that uses by-value parameters. In those instances, a copy of the `in` par
 
 Because the compiler may create a temporary variable for any `in` parameter, you can also specify default values for any `in` parameter. The following code specifies the origin (point 0,0,0) as the default value for the second point:
 
-[!code-csharp[InArgumentDefault](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
+[!code-csharp[InArgumentDefault](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
 To force the compiler to pass read-only arguments by reference, specify the `in` modifier on the arguments at the call site, as shown in the following code:
 
-[!code-csharp[UseInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ExplicitInArgument "Specifying an In argument")]
+[!code-csharp[UseInArgument](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ExplicitInArgument "Specifying an In argument")]
 
 This behavior makes it easier to adopt `in` parameters over time in large codebases where performance gains are possible. You add the `in` modifier to method signatures first. Then you can add the `in` modifier at call sites and create `readonly struct` types to enable the compiler to avoid creating defensive copies of `in` parameters in more locations.
 
@@ -242,7 +268,7 @@ This behavior makes it easier to adopt `in` parameters over time in large codeba
 
 Pass a `struct` as the argument for an `in` parameter only if it's declared with the `readonly` modifier or the method accesses only `readonly` members of the struct. Otherwise, the compiler must create *defensive copies* in many situations to ensure that arguments are not mutated. Consider the following example that calculates the distance of a 3D point from the origin:
 
-[!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
+[!code-csharp[InArgument](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
 
 The `Point3D` structure is *not* a read-only struct. There are six different property access calls in the body of this method. On first examination, you may think these accesses are safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state.
 
@@ -250,7 +276,7 @@ Without some language guarantee, the compiler must create a temporary copy of th
 
 If the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects aren't needed:
 
-[!code-csharp[readonlyInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
+[!code-csharp[readonlyInArgument](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
 
 The compiler generates more efficient code when you call members of a `readonly struct`. The `this` reference, instead of a copy of the receiver,
 is always an `in` parameter passed by reference to the member method. This optimization saves copying when you use a `readonly struct` as an `in` argument.
@@ -261,15 +287,15 @@ You can see an example program that demonstrates the performance differences usi
 
 ## Use `ref struct` types
 
-Use a [`ref struct`](language-reference/builtin-types/ref-struct.md) or a `readonly ref struct`, such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601>, to work with blocks of memory as a sequence of bytes. The memory used by the span is constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
+Use a [`ref struct`](../../language-reference/builtin-types/ref-struct.md) or a `readonly ref struct`, such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601>, to work with blocks of memory as a sequence of bytes. The memory used by the span is constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
 
 Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations. The memory used by the readonly span is restricted to a single stack frame, and the memory used by the readonly span can't be modified.
 
-You may have similar requirements working with memory created using [`stackalloc`](language-reference/operators/stackalloc.md) or when using memory from interop APIs. You can define your own `ref struct` types for those needs.
+You may have similar requirements working with memory created using [`stackalloc`](../../language-reference/operators/stackalloc.md) or when using memory from interop APIs. You can define your own `ref struct` types for those needs.
 
 ## Use `nint` and `nuint` types
 
-[Native-sized integer types](language-reference/builtin-types/integral-numeric-types.md#native-sized-integers) are 32-bit integers in a 32-bit process or 64-bit integers in a 64-bit process. Use them for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
+[Native-sized integer types](../../language-reference/builtin-types/integral-numeric-types.md#native-sized-integers) are 32-bit integers in a 32-bit process or 64-bit integers in a 64-bit process. Use them for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
 
 ## Conclusions
 
@@ -293,7 +319,7 @@ These enhancements to the C# language are designed for performance critical algo
 
 ## See also
 
-- [in parameter modifier (C# Reference)](language-reference/keywords/in-parameter-modifier.md)
-- [ref keyword](language-reference/keywords/ref.md)
-- [Ref returns](language-reference/statements/jump-statements.md#ref-returns)
-- [Ref locals](language-reference/statements/declarations.md#ref-locals)
+- [in parameter modifier (C# Reference)](../../language-reference/keywords/in-parameter-modifier.md)
+- [ref keyword](../../language-reference/keywords/ref.md)
+- [Ref returns](../../language-reference/statements/jump-statements.md#ref-returns)
+- [Ref locals](../../language-reference/statements/declarations.md#ref-locals)

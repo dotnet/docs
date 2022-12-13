@@ -77,7 +77,7 @@ Different examples use different implementations of this concept.
 Declare a [`readonly struct`](../../language-reference/builtin-types/struct.md#readonly-struct) to indicate that a type is **immutable**. The `readonly` modifier informs the compiler that your intent is to create an immutable type. The compiler enforces that design decision with the following rules:
 
 - All field members must be read-only.
-- All properties must be read-only, including auto-implemented properties.
+- All properties must be read-only or init-only, including auto-implemented properties.
 
 These two rules are sufficient to ensure that no member of a `readonly struct` modifies the state of that struct. The `struct` is immutable. The `Point3D` structure could be defined as an immutable struct as shown in the following example:
 
@@ -142,7 +142,7 @@ public struct Point3D
 }
 ```
 
-The preceding sample shows many of the locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the auto-implemented property declarations for properties with only a `get` accessor.
+The preceding sample shows many of the locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the auto-implemented property declarations for properties with only a `get` accessor. For init only properties, the compiler adds the <xref:System.Runtime.CompilerServices.IsReadOnlyAttribute?displayProperty=fullName> to the property declaration. Adding that attribute enables the compiler to avoid defensive copies because property is readonly after initialization.
 
 Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state. Second, the compiler won't create [defensive copies](#avoid-defensive-copies) of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
 
@@ -192,11 +192,7 @@ At the call site, callers make the choice to use the `Origin` property as a `ref
 
 [!code-csharp[AssignRefReadonly](../../../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
-The first assignment in the preceding code makes a copy of the `Origin` constant and assigns that copy. The second assigns a reference. Notice that the `readonly` modifier must be part of the declaration of the variable. The reference to which it refers can't be modified. Attempts to do so result in a compile-time error.
-
-The `readonly` modifier is required on the declaration of `originReference`.
-
-The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a [defensive copy](#avoid-defensive-copies) unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a defensive copy when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
+The first assignment in the preceding code makes a copy of the `Origin` constant and assigns that copy. The second assigns a reference. Notice that the `readonly` modifier must be part of the declaration of the variable. The reference to which it refers can't be modified. Attempts to do so result in a compile-time error. The `readonly` modifier is required on the declaration of `originReference`.
 
 ## Use the `in` parameter modifier
 
@@ -217,7 +213,7 @@ With the addition of the `in` keyword, C# provides a full vocabulary to express 
 - `ref`: This method may modify the value of the argument used as this parameter.
 - `in`: This method doesn't modify the value of the argument used as this parameter.
 
-Add the `in` modifier to pass an argument by reference and declare your design intent to pass arguments by reference to avoid unnecessary copying. You don't intend to modify the object used as that argument.
+Add the `in` modifier to pass an argument by reference and declare your design intent to preserve the current argument state. You don't intend to modify the object used as that argument.
 
 The `in` modifier complements `out` and `ref` in other ways as well. You can't create overloads of a method that differ only in the presence of
 `in`, `out`, or `ref`. These new rules extend the same behavior that had always been defined for `out` and `ref` parameters. Like the `out` and `ref` modifiers, value types aren't boxed because the `in` modifier is applied. Another feature of `in` parameters is that you can use literal values or constants for the argument to an `in` parameter.
@@ -225,7 +221,7 @@ The `in` modifier complements `out` and `ref` in other ways as well. You can't c
 The `in` modifier can also be used with reference types or numeric values. However, the benefits in those cases are minimal, if any.
 
 There are several ways in which the compiler enforces the read-only nature of an `in` argument.  First of all, the called method can't directly assign to an `in` parameter. It can't directly assign to any field of an `in` parameter when that value is a `struct` type. In addition, you can't pass an `in` parameter to any method using the `ref` or `out` modifier. These rules apply to any field of an `in` parameter, provided the
-field is a `struct` type and the parameter is also a `struct` type. In fact, these rules apply for multiple layers of member access provided the types at all levels of member access are `structs`. The compiler enforces that `struct` types passed as `in` arguments and their `struct` members are read-only variables when used as arguments to other methods.
+field is a `struct` type and the parameter is also a `struct` type. In fact, these rules apply for multiple layers of field access provided the types at all levels of member access are `structs`.
 
 ### Use `in` parameters for large structs
 
@@ -251,8 +247,7 @@ Omitting the `in` modifier at the call site informs the compiler that it's allow
 - The argument is an expression but doesn't have a known storage variable.
 - An overload exists that differs by the presence or absence of `in`. In that case, the by value overload is a better match.
 
-These rules are useful as you update existing code to use read-only reference arguments. Inside the called method, you can call any instance
-method that uses by-value parameters. In those instances, a copy of the `in` parameter is created.
+Omitting the `in` modifier at the call site makes it easier to update existing code to use read-only reference arguments. Inside the called method, you can call any instance method that uses by-value parameters. In those instances, a copy of the `in` parameter is created.
 
 Because the compiler may create a temporary variable for any `in` parameter, you can also specify default values for any `in` parameter. The following code specifies the origin (point 0,0,0) as the default value for the second point:
 
@@ -281,7 +276,9 @@ If the distance calculation uses the immutable struct, `ReadonlyPoint3D`, tempor
 The compiler generates more efficient code when you call members of a `readonly struct`. The `this` reference, instead of a copy of the receiver,
 is always an `in` parameter passed by reference to the member method. This optimization saves copying when you use a `readonly struct` as an `in` argument.
 
-Don't pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type isn't declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
+For auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor. For auto-implemented properties that only declare a `get` accessor, the compiler adds the `readonly` modifier to the property declaration.
+
+Be careful when passing a nullable value type as an `in` argument. The <xref:System.Nullable%601> type isn't declared as a read-only struct. That means the compiler may generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
 
 You can see an example program that demonstrates the performance differences using [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/main/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
 

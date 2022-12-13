@@ -1207,10 +1207,15 @@ items:
     - name: Overview
       displayName: special characters
       href: language-reference/tokens/index.md
+    - name: Comments
+      displayName: /* */, //
+      href: language-reference/tokens/comments.md
     - name: $ -- string interpolation
       href: language-reference/tokens/interpolated.md
     - name: "@ -- verbatim identifier"
       href: language-reference/tokens/verbatim.md
+    - name: "\"\"\" -- raw string literal"
+      href: language-reference/tokens/raw-string.md
   - name: Attributes read by the compiler
     items:
     - name: Global attributes

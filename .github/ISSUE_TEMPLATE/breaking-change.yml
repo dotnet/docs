@@ -47,7 +47,7 @@ body:
     id: change-type
     attributes:
       label: Type of breaking change
-      description: This information will be used to label the issue appropriately.
+      description: This information will be used to label the issue appropriately. [(How do I decide?)](https://learn.microsoft.com/dotnet/core/compatibility/categories)
       options:
         - label: "**Binary incompatible**: Existing binaries may encounter a breaking change in behavior, such as failure to load or execute, and if so, require recompilation."
         - label:  "**Source incompatible**: When recompiled using the new SDK or component or to target the new runtime, existing source code may require source changes to compile successfully."

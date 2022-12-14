@@ -5,8 +5,8 @@ namespace BroadcastChannel.Grains;
 public sealed class GlobalQuote
 {
     [JsonPropertyName("01. symbol")]
-    public required string Symbol { get; set; }
-    
+    public string Symbol { get; set; } = null!;
+
     [JsonPropertyName("02. open")]
     public decimal Open { get; set; }
     
@@ -30,7 +30,7 @@ public sealed class GlobalQuote
     
     [JsonPropertyName("09. change")]
     public decimal Change { get; set; }
-    
+
     [JsonPropertyName("10. change percent")]
-    public required string ChangePercent { get; set; }
+    public string ChangePercent { get; set; } = null!;
 }

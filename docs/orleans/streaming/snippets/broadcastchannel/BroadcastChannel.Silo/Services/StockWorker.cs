@@ -2,22 +2,20 @@
 using BroadcastChannel.Grains;
 using Microsoft.Extensions.Hosting;
 using Orleans.BroadcastChannel;
-using Orleans.Runtime;
 
 namespace BroadcastChannel.Silo.Services;
 
 internal sealed class StockWorker : BackgroundService
 {
-    private readonly StockClient _client;
+    private readonly StockClient _stockClient;
     private readonly IBroadcastChannelProvider _provider;
     private readonly List<string> _symbols =
         new() { "MSFT", "GOOG", "AAPL", "AMZN", "TSLA" };
 
-    public StockWorker(StockClient client, IServiceProvider provider)
+    public StockWorker(StockClient stockClient, IClusterClient clusterClient)
     {
-        _client = client;
-        _provider =
-            provider.GetRequiredServiceByName<IBroadcastChannelProvider>(
+        _stockClient = stockClient;
+        _provider = clusterClient.GetBroadcastChannelProvider(
                 "live-stock-ticker");
     }
 
@@ -30,7 +28,7 @@ internal sealed class StockWorker : BackgroundService
 
             // Get all updated stock values.
             var stocks = await Task.WhenAll(
-                tasks: _symbols.Select(selector: _client.GetStockAsync));
+                tasks: _symbols.Select(selector: _stockClient.GetStockAsync));
 
             // Get the live stock ticker broadcast channel.
             var channelId = ChannelId.Create("live-stock-ticker", Guid.Empty);

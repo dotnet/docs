@@ -1,19 +1,22 @@
-﻿using BroadcastChannel.Silo.Services;
+﻿using BroadcastChannel.Silo.Options;
+using BroadcastChannel.Silo.Services;
+
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
 using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
+    .UseOrleans((context, silo) =>
     {
-        services.AddHttpClient<StockClient>(client =>
+        silo.Services.AddOptions<AlphaVantageOptions>()
+            .Bind(context.Configuration.GetSection(nameof(AlphaVantageOptions)));
+        silo.Services.AddTransient<StockClient>();
+        silo.Services.AddHttpClient<StockClient>(client =>
         {
             client.BaseAddress = new("https://www.alphavantage.co/");
         });
-        services.AddTransient<StockClient>();
-        services.AddHostedService<StockWorker>();
-    })
-    .UseOrleans(silo =>
-    {
+        silo.Services.AddHostedService<StockWorker>();
+        silo.UseLocalhostClustering();
         silo.AddBroadcastChannel(
             "live-stock-ticker",
             options => options.FireAndForgetDelivery = false);

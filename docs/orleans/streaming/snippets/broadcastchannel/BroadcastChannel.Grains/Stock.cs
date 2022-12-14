@@ -5,5 +5,5 @@ namespace BroadcastChannel.Grains;
 public sealed class Stock
 {
     [JsonPropertyName("Global Quote")]
-    public required GlobalQuote GlobalQuote { get; set; }
+    public GlobalQuote GlobalQuote { get; set; } = null!;
 }

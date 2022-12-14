@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 
 namespace BroadcastChannel.Silo.Services;
 
-public sealed class StockClient : IDisposable
+internal sealed class StockClient : IDisposable
 {
     private readonly HttpClient _client;
     private readonly AlphaVantageOptions _options;

@@ -9,6 +9,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
         {
             client.BaseAddress = new("https://www.alphavantage.co/");
         });
+        services.AddTransient<StockClient>();
+        services.AddHostedService<StockWorker>();
     })
     .UseOrleans(silo =>
     {

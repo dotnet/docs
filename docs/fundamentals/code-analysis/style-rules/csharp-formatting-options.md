@@ -40,15 +40,15 @@ csharp_new_line_between_query_expression_clauses = true
 
 This option concerns whether an open brace `{` should be placed on the same line as the preceding code, or on a new line. For this rule, you specify **all**, **none**, or one or more code elements such as **methods** or **properties**, to define when this rule should be applied. To specify multiple code elements, separate them with a comma (,).
 
-| Property                 | Value                                                                                                                                                                                                   | Description                                                                         |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **Option name**          | csharp_new_line_before_open_brace                                                                                                                                                                       |                                                                                     |
-| **Applicable languages** | C#                                                                                                                                                                                                      |                                                                                     |
-| **Introduced version**   | Visual Studio 2017 version 15.3                                                                                                                                                                         |                                                                                     |
-| **Option values**        | `all`                                                                                                                                                                                                   | Require braces to be on a new line for all expressions ("Allman" style).            |
-|                          | `none`                                                                                                                                                                                                  | Require braces to be on the same line for all expressions ("K&R").                  |
+| Property                 | Value                             | Description                                                              |
+|--------------------------|-----------------------------------|--------------------------------------------------------------------------|
+| **Option name**          | csharp_new_line_before_open_brace |                                                                          |
+| **Applicable languages** | C#                                |                                                                          |
+| **Introduced version**   | Visual Studio 2017 version 15.3   |                                                                          |
+| **Option values**        | `all`                             | Require braces to be on a new line for all expressions ("Allman" style). |
+|                          | `none`                            | Require braces to be on the same line for all expressions ("K&R").       |
 |                          | `accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`,</br>`lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` | Require braces to be on a new line for the specified code element ("Allman" style). |
-| **Default value**        | `all`                                                                                                                                                                                                   |                                                                                     |
+| **Default value**        | `all`                             |                                                                          |
 
 Code examples:
 
@@ -711,14 +711,14 @@ return x  *  (x-y);
 
 ### csharp_space_between_method_declaration_parameter_list_parentheses
 
-| Property                 | Value                                                              | Description                                                                                                                     |
-| ------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Option name**          | csharp_space_between_method_declaration_parameter_list_parentheses |                                                                                                                                 |
-| **Applicable languages** | C#                                                                 |                                                                                                                                 |
-| **Introduced version**   | Visual Studio 2017 version 15.3                                    |                                                                                                                                 |
-| **Option values**        | `true`                                                             | Place a space character after the opening parenthesis and before the closing parenthesis of a method declaration parameter list |
-|                          | `false`                                                            | Remove space characters after the opening parenthesis and before the closing parenthesis of a method declaration parameter list |
-| **Default value**        | `false`                                                            |                                                                                                                                 |
+| Property                 | Value                                                              | Description |
+|--------------------------|--------------------------------------------------------------------|-------------|
+| **Option name**          | csharp_space_between_method_declaration_parameter_list_parentheses |             |
+| **Applicable languages** | C#                                                                 |             |
+| **Introduced version**   | Visual Studio 2017 version 15.3                                    |             |
+| **Option values**        | `true` | Place a space character after the opening parenthesis and before the closing parenthesis of a method declaration parameter list |
+|                          | `false` | Remove space characters after the opening parenthesis and before the closing parenthesis of a method declaration parameter list |
+| **Default value**        | `false`                                                            |             |
 
 Code examples:
 
@@ -732,14 +732,14 @@ void Bark(int x) { ... }
 
 ### csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
-| Property                 | Value                                                                    | Description                                                                   |
-| ------------------------ | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| **Option name**          | csharp_space_between_method_declaration_empty_parameter_list_parentheses |                                                                               |
-| **Applicable languages** | C#                                                                       |                                                                               |
-| **Introduced version**   | Visual Studio 2017 version 15.7                                          |                                                                               |
-| **Option values**        | `true`                                                                   | Insert space within empty parameter list parentheses for a method declaration |
-|                          | `false`                                                                  | Remove space within empty parameter list parentheses for a method declaration |
-| **Default value**        | `false`                                                                  |                                                                               |
+| Property                 | Value                                                                    | Description  |
+|--------------------------|--------------------------------------------------------------------------|--------------|
+| **Option name**          | csharp_space_between_method_declaration_empty_parameter_list_parentheses |              |
+| **Applicable languages** | C#                                                                       |              |
+| **Introduced version**   | Visual Studio 2017 version 15.7                                          |              |
+| **Option values**        | `true` | Insert space within empty parameter list parentheses for a method declaration  |
+|                          | `false` | Remove space within empty parameter list parentheses for a method declaration |
+| **Default value**        | `false`                                                                  |              |
 
 Code examples:
 
@@ -769,13 +769,13 @@ void Goo(int x)
 
 ### csharp_space_between_method_declaration_name_and_open_parenthesis
 
-| Property                 | Value                                                             | Description                                                                                       |
-| ------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| **Option name**          | csharp_space_between_method_declaration_name_and_open_parenthesis |                                                                                                   |
-| **Applicable languages** | C#                                                                |                                                                                                   |
-| **Option values**        | `true`                                                            | Place a space character between the method name and opening parenthesis in the method declaration |
-|                          | `false`                                                           | Remove space characters between the method name and opening parenthesis in the method declaration |
-| **Default value**        | `false`                                                           |                                                                                                   |
+| Property                 | Value                                                             | Description |
+|--------------------------|-------------------------------------------------------------------|-------------|
+| **Option name**          | csharp_space_between_method_declaration_name_and_open_parenthesis |             |
+| **Applicable languages** | C#                                                                |             |
+| **Option values**        | `true` | Place a space character between the method name and opening parenthesis in the method declaration |
+|                          | `false` | Remove space characters between the method name and opening parenthesis in the method declaration |
+| **Default value**        | `false` |                                                                                                   |
 
 Code examples:
 
@@ -789,14 +789,14 @@ void M() { }
 
 ### csharp_space_between_method_call_parameter_list_parentheses
 
-| Property                 | Value                                                       | Description                                                                                               |
-| ------------------------ | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Option name**          | csharp_space_between_method_call_parameter_list_parentheses |                                                                                                           |
-| **Applicable languages** | C#                                                          |                                                                                                           |
-| **Introduced version**   | Visual Studio 2017 version 15.3                             |                                                                                                           |
-| **Option values**        | `true`                                                      | Place a space character after the opening parenthesis and before the closing parenthesis of a method call |
-|                          | `false`                                                     | Remove space characters after the opening parenthesis and before the closing parenthesis of a method call |
-| **Default value**        | `false`                                                     |                                                                                                           |
+| Property                 | Value                                                       | Description |
+|--------------------------|-------------------------------------------------------------|-------------|
+| **Option name**          | csharp_space_between_method_call_parameter_list_parentheses |             |
+| **Applicable languages** | C#                                                          |             |
+| **Introduced version**   | Visual Studio 2017 version 15.3                             |             |
+| **Option values**        | `true` | Place a space character after the opening parenthesis and before the closing parenthesis of a method call |
+|                          | `false` | Remove space characters after the opening parenthesis and before the closing parenthesis of a method call |
+| **Default value**        | `false` |                                                                                                           |
 
 Code examples:
 

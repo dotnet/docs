@@ -10,7 +10,7 @@ ms.date: 10/25/2022
 
 TLS (Transport Layer Security) is a cryptographic protocol designed to secure communication between two computers over the internet. The TLS protocol is exposed in .NET via the <xref:System.Net.Security.SslStream> class.
 
-This article presents best practices for setting up secure communication between client and server and assumes .NET Core version 3.1 or later. For best practices for .NET Framework, see [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls).
+This article presents best practices for setting up secure communication between client and server and assumes use of .NET Core. For best practices for .NET Framework, see [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls).
 
 ## Selecting TLS version
 
@@ -22,11 +22,13 @@ Deferring the decision to the OS automatically uses the most recent version of T
 
 SslStream allows users to specify which cipher suites can be negotiated by the TLS handshake via the <xref:System.Net.Security.CipherSuitesPolicy> class. As with TLS versions, we recommend letting the operating system decide which are the best cipher suites to negotiate with and, therefore, we recommend avoiding the use of <xref:System.Net.Security.CipherSuitesPolicy>.
 
-Note that <xref:System.Net.Security.CipherSuitesPolicy> is not available on all platforms supported by .NET.
+Note that <xref:System.Net.Security.CipherSuitesPolicy> is not supported on Windows and attempts to instantiate it will cause <xref:System.NotSupportedException> to be thrown.
 
 ## Specifying a Server Certificate
 
-When authenticating as a server, <xref:System.Net.Security.SslStream> requires an <xref:System.Security.Cryptography.X509Certificates.X509Certificate> instance to use. There are multiple ways how the server certificate can be passed to <xref:System.Net.Security.SslStream>:
+When authenticating as a server, <xref:System.Net.Security.SslStream> requires an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> instance. It is recommended to always use an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> instance which also contains the private key.
+
+There are multiple ways how the server certificate can be passed to <xref:System.Net.Security.SslStream>:
 
 - Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
 - From a selection callback in <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback?displayProperty=nameWithType> property
@@ -38,7 +40,25 @@ Reusing <xref:System.Net.Security.SslStreamCertificateContext> instances also en
 
 ## Custom X509Certificate validation
 
-There are certain scenarios in which the default certificate validation procedure is not adequate and some custom validation logic is required. This custom logic can be provided via the <System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> property. As an illustration, following sections provide some examples.
+There are certain scenarios in which the default certificate validation procedure is not adequate and some custom validation logic is required. Parts of the validation logic can be customized by specifying <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateChainPolicy?displayProperty=nameWithType> or <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateChainPolicy?displayProperty=nameWithType> (available since .NET 7). Alternatively, completely custom logic can be provided via the <System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> property. As an illustration, following sections provide some examples.
+
+### Custom Certificate Trust
+
+When encountering a certificate which was not issued by any of the certificate authorities trusted by the machine (including self-signed certificates), the default certificate validation procedure will fail. One possible way to resolve this is add the necessary issuer certificates to the machine trusted store. That, however, might affect other applications on the system and is not always possible.
+
+The alternative solution is to specify custom trusted root certificates via an <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy>.
+
+```csharp
+SslClientAuthenticationOptions clientOptions = new();
+
+clientOptions.CertificateChainPolicy = new X509ChainPolicy()
+{
+    TrustMode = X509ChainTrustMode.CustomRootTrust,
+    CustomTrustStore = {
+        customIssuerCert
+    }
+};
+```
 
 ### Ignoring specific validation errors
 
@@ -102,6 +122,6 @@ static bool CustomCertificateValidationCallback(
 
 ## Considerations for client certificate validation
 
-Server applications need to be careful when requiring and validating client certificates. Instead of sending the entire certificate chain, clients can configure the [AIA (Authority Information Access)](http://www.pkiglobe.org/auth_info_access.html) extension which specifies where the issuer certificate can be downloaded. The server will then download the issuer certificate when building the <xref:System.Security.Cryptography.X509Certificates.X509Chain> for the client certificate. Similarly, servers may need to contact external servers to ensure that the client certificate has not been revoked.
+Server applications need to be careful when requiring and validating client certificates. Certificates may contain the [AIA (Authority Information Access)](http://www.pkiglobe.org/auth_info_access.html) extension which specifies where the issuer certificate can be downloaded. The server may therefore attempt to download the issuer certificate from external server when building the <xref:System.Security.Cryptography.X509Certificates.X509Chain> for the client certificate. Similarly, servers may need to contact external servers to ensure that the client certificate has not been revoked.
 
 The need to contact external servers when building and validating the <xref:System.Security.Cryptography.X509Certificates.X509Chain> may expose the application to denial of service attacks if the external servers are slow to respond. Therefore, server applications should configure the <xref:System.Security.Cryptography.X509Certificates.X509Chain> building behavior using the <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateChainPolicy> (available since .NET 7).

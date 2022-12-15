@@ -23,7 +23,6 @@ The following commands are installed by default:
 - [`new`](dotnet-new.md)
 - [`restore`](dotnet-restore.md)
 - [`build`](dotnet-build.md)
-- [`build-server`](dotnet-build-server.md)
 - [`publish`](dotnet-publish.md)
 - [`run`](dotnet-run.md)
 - [`test`](dotnet-test.md)
@@ -76,6 +75,7 @@ The following commands are installed by default:
 
 - [`sdk check`](dotnet-sdk-check.md)
 - [`msbuild`](dotnet-msbuild.md)
+- [`build-server`](dotnet-build-server.md)
 - [`dev-certs`](dotnet-dev-certs.md)
 - [`dotnet install script`](dotnet-install-script.md)
 

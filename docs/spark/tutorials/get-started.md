@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your .NET for Apache Spark application
 
-[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Prepare your environment
 

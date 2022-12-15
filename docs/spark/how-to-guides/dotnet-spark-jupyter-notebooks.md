@@ -13,7 +13,7 @@ ms.custom: mvc, how-to
 
 In this article, you learn how to run .NET for Apache Spark jobs interactively in Jupyter Notebook and Visual Studio Code (VS Code) with .NET Interactive.
 
-[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## About Jupyter
 

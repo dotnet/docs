@@ -17,7 +17,7 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you ne
 > [!NOTE]
 > This feature is *experimental* and is not supported by the HDInsight Spark team.
 
-[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

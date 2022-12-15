@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 > [!IMPORTANT]
 > [.NET for Apache Spark](https://github.com/dotnet/spark) is an open source project under the [.NET Foundation](https://dotnetfoundation.org/) and does not come with Microsoft Support unless otherwise noted. For issues with or questions about .NET for Apache Spark, please [create an issue in its GitHub repository](https://github.com/dotnet/spark/issues). The community is active and is monitoring submissions.
 
-[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

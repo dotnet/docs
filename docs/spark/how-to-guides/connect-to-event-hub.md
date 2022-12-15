@@ -12,7 +12,7 @@ ms.custom: mvc,how-to
 
 In this article, you will learn how to connect your [.NET for Apache Spark](https://github.com/dotnet/spark) application with Azure Event Hubs to read and write Apache Kafka streams.
 
-[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 You can run your .NET for Apache Spark jobs on Databricks clusters, but it is not available out-of-the-box. There are two ways to deploy your .NET for Apache Spark job to Databricks: `spark-submit` and Set Jar.
 
-[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Deploy using spark-submit
 

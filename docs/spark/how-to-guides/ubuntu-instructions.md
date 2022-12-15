@@ -1,7 +1,7 @@
 ---
 title: Build a .NET for Apache Spark application on Ubuntu
 description: Learn how to build your .NET for Apache Spark application on Ubuntu
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -10,6 +10,8 @@ ms.custom: mvc,how-to
 # Learn how to build your .NET for Apache Spark application on Ubuntu
 
 This article teaches you how to build your .NET for Apache Spark applications on Ubuntu.
+
+[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

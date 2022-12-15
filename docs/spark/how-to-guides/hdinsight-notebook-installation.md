@@ -1,7 +1,7 @@
 ---
 title: Install .NET for Apache Spark on Jupyter Notebooks on Azure HDInsight Spark clusters
 description: Learn how to install .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks.
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -16,6 +16,8 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you ne
 
 > [!NOTE]
 > This feature is *experimental* and is not supported by the HDInsight Spark team.
+
+[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Azure HDInsight
 description: Discover how to deploy a .NET for Apache Spark application to HDInsight.
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -21,6 +21,8 @@ In this tutorial, you learn how to:
 > * Publish your .NET for Apache Spark app.
 > * Create and run an HDInsight script action.
 > * Run a .NET for Apache Spark app on an HDInsight cluster.
+
+[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

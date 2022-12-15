@@ -89,7 +89,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 - **`--prerelease`**
 
-  Include pre-release packages.
+  Include pre-release versions.
 
 - **`--tool-manifest <PATH>`**
 

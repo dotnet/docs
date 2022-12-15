@@ -32,12 +32,13 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 1. In the "Additional information dialog", leave all the defaults as is and select the **Create** button.
 1. Install the **Microsoft.ML NuGet Package**
 
-    1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. 
-    1. Choose "nuget.org" as the Package source
-    1. Select the "Browse" tab, 
+    1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    1. Choose "nuget.org" as the Package source.
+    1. Select the "Browse" tab.
     1. Search for **Microsoft.ML**.
-    1. Select that package in the list, and select the **Install** button. 
-    1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    1. Select that package in the list, and select the **Install** button.
+    1. Select the **OK** button on the **Preview Changes** dialog
+    1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
     Follow the same steps to install the **Microsoft.Extensions.ML**, **Microsoft.Extensions.DependencyInjection**, and **Microsoft.Azure.Functions.Extensions** NuGet packages.
 

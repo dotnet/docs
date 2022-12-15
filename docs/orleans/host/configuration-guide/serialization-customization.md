@@ -8,7 +8,7 @@ zone_pivot_groups: orleans-version
 
 # Serialization customization in Orleans
 
-One important aspect of Orleans is its support for customization of serialization, which is the process of converting an object or data structure into a format that can be stored or transmitted, and reconstructed later. This allows developers to control how data is encoded and decoded when it is sent between different parts of the system and can be useful for optimizing performance, interoperability, and security.
+One important aspect of Orleans is its support for customization of serialization, which is the process of converting an object or data structure into a format that can be stored or transmitted, and reconstructed later. This allows developers to control how data is encoded and decoded when it is sent between different parts of the system. Serialization customization can be useful for optimizing performance, interoperability, and security.
 
 ## Serialization providers
 
@@ -25,13 +25,13 @@ To configure either of these packages, see [Serialization configuration in Orlea
 
 ## Custom serializer implementation
 
-To create a custom serializer implementation, there are a few common steps involved. You'l have to implement several interfaces, and then register your serializer with the Orleans runtime. The following sections describe the steps in more detail.
+To create a custom serializer implementation, there are a few common steps involved. You have to implement several interfaces and then register your serializer with the Orleans runtime. The following sections describe the steps in more detail.
 
 Start by implementing the following Orleans serialization interfaces:
 
 - <xref:Orleans.Serialization.Serializers.IGeneralizedCodec>: A codec which supports multiple types.
 - <xref:Orleans.Serialization.Cloning.IGeneralizedCopier>: Provides functionality for copying objects of multiple types.
-- <xref:Orleans.Serialization.ITypeFilter>: Functionality for allowing types to be loaded and to participate in serialization, and deserialization.
+- <xref:Orleans.Serialization.ITypeFilter>: Functionality for allowing types to be loaded and to participate in serialization and deserialization.
 
 Consider the following example of a custom serializer implementation:
 
@@ -66,7 +66,7 @@ In the preceding example implementation:
 - Each interface is explicitly implemented to avoid conflicts with method name resolution.
 - Each method throws a <xref:System.NotImplementedException> to indicate that the method is not implemented. You'll need to implement each method to provide the desired functionality.
 
-The next step involved is to register your serializer with the Orleans runtime. This is typically achieved by extending the <xref:Orleans.Serialization.ISerializerBuilder> and exposing a custom `AddCustomSerializer` extension method. The following example demonstrates the typical pattern:
+The next step is to register your serializer with the Orleans runtime. This is typically achieved by extending <xref:Orleans.Serialization.ISerializerBuilder> and exposing a custom `AddCustomSerializer` extension method. The following example demonstrates the typical pattern:
 
 ```csharp
 public static class SerializationHostingExtensions
@@ -86,7 +86,7 @@ public static class SerializationHostingExtensions
 }
 ```
 
-Additional considerations would be to expose an overload that accepts custom serialization options specific to your custom implementation. These options could be configured along with the registration in the builder. These options could them be dependency injected into your custom serializer implementation.
+Additional considerations would be to expose an overload that accepts custom serialization options specific to your custom implementation. These options could be configured along with the registration in the builder. These options could be dependency injected into your custom serializer implementation.
 
 :::zone-end
 
@@ -94,17 +94,17 @@ Additional considerations would be to expose an overload that accepts custom ser
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the <xref:Orleans.Serialization.IExternalSerializer> type described in the custom serialization section of this document. Integrations for some common serializers are maintained alongside Orleans, for example:
+Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the <xref:Orleans.Serialization.IExternalSerializer> type described in the custom serialization section of this article. Integrations for some common serializers are maintained alongside Orleans, for example:
 
 * [Protocol Buffers](https://developers.google.com/protocol-buffers/): <xref:Orleans.Serialization.ProtobufSerializer?displayProperty=fullName> from the [Microsoft.Orleans.OrleansGoogleUtils](https://www.nuget.org/packages/Microsoft.Orleans.OrleansGoogleUtils/) NuGet package.
 * [Bond](https://github.com/microsoft/bond/): <xref:Orleans.Serialization.BondSerializer?displayProperty=fullName> from the [Microsoft.Orleans.Serialization.Bond](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Bond/) NuGet package.
-* [Newtonsoft.Json AKA Json.NET](https://www.newtonsoft.com/json): <xref:Orleans.Serialization.OrleansJsonSerializer?displayProperty=fullName> from the core Orleans library.
+* [Newtonsoft.Json](https://www.newtonsoft.com/json): <xref:Orleans.Serialization.OrleansJsonSerializer?displayProperty=fullName> from the core Orleans library.
 
 Custom implementation of `IExternalSerializer` is described in the following section.
 
 ## Custom external serializers
 
-In addition to automatic serialization generation, app code can provide custom serialization for the types it chooses. Orleans recommends using the automatic serialization generation for the majority of your app types and only writing custom serializers in rare cases when you believe it is possible to get improved performance by hand-coding serializers. This note describes how to do so, and identifies some specific cases when it might be helpful.
+In addition to automatic serialization generation, app code can provide custom serialization for the types it chooses. Orleans recommends using the automatic serialization generation for the majority of your app types and only writing custom serializers in rare cases when you believe it is possible to get improved performance by hand-coding serializers. This note describes how to do so and identifies some specific cases when it might be helpful.
 
 There are three ways in which apps can customize serialization:
 
@@ -112,11 +112,17 @@ There are three ways in which apps can customize serialization:
 1. Implement `IExternalSerializer` and register it during configuration time. This method is useful for integrating an external serialization library.
 1. Write a separate static class annotated with an `[Serializer(typeof(YourType))]` with the 3 serialization methods in it and the same attributes as above. This method is useful for types that the app does not own, for example, types defined in other libraries your app has no control over.
 
-Each of these serialization methods is detailed later.
+Each of these serialization methods is detailed in the following sections.
 
 ### Custom serialization introduction
 
-Orleans serialization happens in three stages: objects are immediately deep copied to ensure isolation; before being put on the wire; objects are serialized to a message byte stream; and when delivered to the target activation, objects are recreated (deserialized) from the received byte stream. Data types that may be sent in messages&mdash;that is, types that may be passed as method arguments or return values&mdash;must have associated routines that perform these three steps. We refer to these routines collectively as the serializers for a data type.
+Orleans serialization happens in three stages:
+
+ * Objects are immediately deep copied to ensure isolation.
+ * Before being put on the wire, objects are serialized to a message byte stream.
+ * When delivered to the target activation, objects are recreated (deserialized) from the received byte stream.
+ 
+Data types that may be sent in messages&mdash;that is, types that may be passed as method arguments or return values&mdash;must have associated routines that perform these three steps. We refer to these routines collectively as the serializers for a data type.
 
 The copier for a type stands alone, while the serializer and deserializer are a pair that work together. You can provide just a custom copier, or just a custom serializer and a custom deserializer, or you can provide custom implementations of all three.
 
@@ -124,9 +130,9 @@ Serializers are registered for each supported data type at silo start-up and whe
 
 ### When to write a custom serializer
 
-A hand-crafted serializer routine will rarely perform meaningfully better than the generated versions. If you are tempted to do so, you should first consider the following options:
+A hand-crafted serializer routine will rarely perform better than the generated versions. If you are tempted to write one, you should first consider the following options:
 
-- If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the <xref:System.NonSerializedAttribute>. This will cause the generated code to skip these fields when copying and serializing. Use <xref:Orleans.Concurrency.ImmutableAttribute> and <xref:Orleans.Concurrency.Immutable%601> where possible to avoid copying immutable data. The section on *Optimizing Copying* below for details. If you're avoiding using the standard generic collection types, don't. The Orleans runtime contains custom serializers for the generic collections that use the semantics of the collections to optimize copying, serializing, and deserializing. These collections also have special "abbreviated" representations in the serialized byte stream, resulting in even more performance advantages. For instance, a `Dictionary<string, string>` will be faster than a `List<Tuple<string, string>>`.
+- If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the <xref:System.NonSerializedAttribute>. This will cause the generated code to skip these fields when copying and serializing. Use <xref:Orleans.Concurrency.ImmutableAttribute> and <xref:Orleans.Concurrency.Immutable%601> where possible to avoid copying immutable data. See the section on *Optimizing Copying* later in this article for details. If you're avoiding using the standard generic collection types, don't. The Orleans runtime contains custom serializers for the generic collections that use the semantics of the collections to optimize copying, serializing, and deserializing. These collections also have special "abbreviated" representations in the serialized byte stream, resulting in even more performance advantages. For instance, a `Dictionary<string, string>` will be faster than a `List<Tuple<string, string>>`.
 
 - The most common case where a custom serializer can provide a noticeable performance gain is when there is significant semantic information encoded in the data type that is not available by simply copying field values. For instance, arrays that are sparsely populated may often be more efficiently serialized by treating the array as a collection of index/value pairs, even if the app keeps the data as a fully realized array for speed of operation.
 
@@ -136,7 +142,7 @@ A hand-crafted serializer routine will rarely perform meaningfully better than t
 
 All serializer routines should be implemented as static members of the class or struct they operate on. The names shown here are not required; registration is based on the presence of the respective attributes, not on method names. Note that serializer methods need not be public.
 
-Unless you implement all three serialization routines, you should mark your type with the <xref:System.SerializableAttribute>so that the missing methods will be generated for you.
+Unless you implement all three serialization routines, you should mark your type with the <xref:System.SerializableAttribute> so that the missing methods will be generated for you.
 
 #### Copier
 
@@ -159,7 +165,7 @@ var fooCopy = SerializationManager.DeepCopyInner(foo, context);
 ```
 
 > [!IMPORTANT]
-> It is important to use <xref:Orleans.Serialization.SerializationManager.DeepCopyInner%2A?displayProperty=nameWithType>, instead of <xref:Orleans.Serialization.SerializationManager.DeepCopy%2A?displayProperty=nameWithType>`DeepCopy`, to maintain the object identity context for the full copy operation.
+> It is important to use <xref:Orleans.Serialization.SerializationManager.DeepCopyInner%2A?displayProperty=nameWithType>, instead of <xref:Orleans.Serialization.SerializationManager.DeepCopy%2A?displayProperty=nameWithType>, to maintain the object identity context for the full copy operation.
 
 #### Maintain object identity
 

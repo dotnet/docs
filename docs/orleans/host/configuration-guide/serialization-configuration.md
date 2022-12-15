@@ -12,7 +12,7 @@ zone_pivot_groups: orleans-version
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-The configuration of serialization in Orleans is a crucial part of the overall system design. While Orleans provides reasonalble defaults, you can configure serialization to suit your apps' needs. For sending data between hosts, <xref:Orleans.Serialization?displayProperty=fullName> supports delegating to other serializers, such as [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) and [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). You can add support for other serializers by following the pattern set by those implementations. For grain storage it is preferential to use <xref:Orleans.Storage.IGrainStorageSerializer> to configure a custom serializer.
+The configuration of serialization in Orleans is a crucial part of the overall system design. While Orleans provides reasonalble defaults, you can configure serialization to suit your apps' needs. For sending data between hosts, <xref:Orleans.Serialization?displayProperty=fullName> supports delegating to other serializers, such as [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) and [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). You can add support for other serializers by following the pattern set by those implementations. For grain storage it's best to use <xref:Orleans.Storage.IGrainStorageSerializer> to configure a custom serializer.
 
 ## Configure Orleans to use `Newtonsoft.Json`
 
@@ -26,9 +26,9 @@ siloBuilder.Services.AddSerializer(serializerBuilder =>
 });
 ```
 
-In the preceding example, the call to <xref:Orleans.Serialization.SerializationHostingExtensions.AddNewtonsoftJsonSerializer%2A> adds support for serializing and deserializing values using `Newtonsoft.Json.JsonSerializer`. Similar configuration must be performed on all client which need to handle those types.
+In the preceding example, the call to <xref:Orleans.Serialization.SerializationHostingExtensions.AddNewtonsoftJsonSerializer%2A> adds support for serializing and deserializing values using `Newtonsoft.Json.JsonSerializer`. Similar configuration must be performed on all clients that need to handle those types.
 
-For types which Orleans has generated a serializer (types marked with <xref:Orleans.GenerateSerializerAttribute>), Orleans will prefer the generated serializer over the `Newtonsoft.Json` serializer.
+For types that are marked with <xref:Orleans.GenerateSerializerAttribute>), Orleans will prefer the generated serializer over the `Newtonsoft.Json` serializer.
 
 ## Configure Orleans to use `System.Text.Json`
 
@@ -55,9 +55,9 @@ siloBuilder.Services.AddSerializer(serializerBuilder =>
 
 ## External serializer providers
 
-It is important to ensure that serialization configuration is identical on all clients and silos. If configurations are inconsistent, serialization errors may occur.
+It's important to ensure that serialization configuration is identical on all clients and silos. If configurations are inconsistent, serialization errors may occur.
 
-Serialization providers, which implement `IExternalSerializer`, can be specified using the <xref:Orleans.Configuration.SerializationProviderOptions.SerializationProviders?displayProperty=nameWithType> property of <xref:Orleans.Runtime.Configuration.ClientConfiguration> and <xref:Orleans.Runtime.Configuration.GlobalConfiguration> in code:
+Serialization providers that implement `IExternalSerializer` can be specified using the <xref:Orleans.Configuration.SerializationProviderOptions.SerializationProviders?displayProperty=nameWithType> property of <xref:Orleans.Runtime.Configuration.ClientConfiguration> and <xref:Orleans.Runtime.Configuration.GlobalConfiguration> in code:
 
 ```csharp
 // Client configuration

@@ -34,6 +34,7 @@ The following commands are installed by default:
 - [`sln`](dotnet-sln.md)
 - [`help`](dotnet-help.md)
 - [`store`](dotnet-store.md)
+- [`watch`](dotnet-watch.md)
 - [`format`](dotnet-format.md) (Available since .NET 6 SDK)
 
 ### Project modification commands
@@ -50,34 +51,33 @@ The following commands are installed by default:
 - [`nuget delete`](dotnet-nuget-delete.md)
 - [`nuget locals`](dotnet-nuget-locals.md)
 - [`nuget push`](dotnet-nuget-push.md)
-- [`nuget add source`](dotnet-nuget-add-source.md)
-- [`nuget disable source`](dotnet-nuget-disable-source.md)
-- [`nuget enable source`](dotnet-nuget-enable-source.md)
-- [`nuget list source`](dotnet-nuget-list-source.md)
-- [`nuget remove source`](dotnet-nuget-remove-source.md)
-- [`nuget update source`](dotnet-nuget-update-source.md)
-- [`nuget verify`](dotnet-nuget-verify.md)
-- [`nuget trust`](dotnet-nuget-trust.md)
-- [`nuget sign`](dotnet-nuget-sign.md)
+- [`nuget add source`](dotnet-nuget-add-source.md) (Available since .NET Core 3.1.200 SDK)
+- [`nuget disable source`](dotnet-nuget-disable-source.md) (Available since .NET Core 3.1.200 SDK)
+- [`nuget enable source`](dotnet-nuget-enable-source.md) (Available since .NET Core 3.1.200 SDK)
+- [`nuget list source`](dotnet-nuget-list-source.md) (Available since .NET Core 3.1.200 SDK)
+- [`nuget remove source`](dotnet-nuget-remove-source.md) (Available since .NET Core 3.1.200 SDK)
+- [`nuget update source`](dotnet-nuget-update-source.md) (Available since .NET Core 3.1.200 SDK)
+- [`nuget verify`](dotnet-nuget-verify.md) (Available since .NET 5 SDK)
+- [`nuget trust`](dotnet-nuget-trust.md) (Available since .NET 5 SDK)
+- [`nuget sign`](dotnet-nuget-sign.md) (Available since .NET 6 SDK)
+
+### Workload management commands
+
+- [`workload`](dotnet-workload.md) (Available since .NET 7 SDK)
+- [`workload install`](dotnet-workload-install.md) (Available since .NET 6 SDK)
+- [`workload list`](dotnet-workload-list.md) (Available since .NET 6 SDK)
+- [`workload update`](dotnet-workload-update.md) (Available since .NET 6 SDK)
+- [`workload restore`](dotnet-workload-restore.md) (Available since .NET 6 SDK)
+- [`workload repair`](dotnet-workload-repair.md) (Available since .NET 6 SDK)
+- [`workload uninstall`](dotnet-workload-uninstall.md) (Available since .NET 6 SDK)
+- [`workload search`](dotnet-workload-search.md) (Available since .NET 6 SDK)
 
 ### Advanced commands
 
-- [`watch`](dotnet-watch.md)
 - [`sdk check`](dotnet-sdk-check.md)
 - [`msbuild`](dotnet-msbuild.md)
 - [`dev-certs`](dotnet-dev-certs.md)
 - [`dotnet install script`](dotnet-install-script.md)
-
-### Workload management commands
-
-- [`workload`](dotnet-workload.md)
-- [`workload install`](dotnet-workload-install.md)
-- [`workload list`](dotnet-workload-list.md)
-- [`workload update`](dotnet-workload-update.md)
-- [`workload restore`](dotnet-workload-restore.md)
-- [`workload repair`](dotnet-workload-repair.md)
-- [`workload uninstall`](dotnet-workload-uninstall.md)
-- [`workload search`](dotnet-workload-search.md)
 
 ### Tool management commands
 

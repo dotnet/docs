@@ -17,19 +17,22 @@ ms.date: 07/08/2020
 dotnet tool update <PACKAGE_ID> -g|--global
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive] 
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
@@ -83,6 +86,10 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 - **`--no-cache`**
 
   Do not cache packages and HTTP requests.
+
+- **`--prerelease`**
+
+  Include pre-release packages.
 
 - **`--tool-manifest <PATH>`**
 

@@ -136,6 +136,8 @@ items:
             items:
             - name: Overview
               href: host/configuration-guide/serialization.md
+            - name: Serialization of immutable types
+              href: host/configuration-guide/serialization-immutability.md
             - name: Configure serialization
               href: host/configuration-guide/serialization-configuration.md
             - name: Customize serialization

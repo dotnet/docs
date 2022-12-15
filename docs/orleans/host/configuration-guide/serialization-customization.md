@@ -2,7 +2,7 @@
 title: Serialization customization in Orleans
 description: Learn how to customize serialization in .NET Orleans.
 ms.date: 12/15/2022
-uid: serialization
+uid: orleans-serialization-customization
 zone_pivot_groups: orleans-version
 ---
 
@@ -10,17 +10,19 @@ zone_pivot_groups: orleans-version
 
 One important aspect of Orleans is its support for customization of serialization, which is the process of converting an object or data structure into a format that can be stored or transmitted, and reconstructed later. This allows developers to control how data is encoded and decoded when it is sent between different parts of the system and can be useful for optimizing performance, interoperability, and security.
 
+## Serialization providers
+
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
+
+
 
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
-
-## Serialization providers
 
 Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the <xref:Orleans.Serialization.IExternalSerializer> type described in the custom serialization section of this document. Integrations for some common serializers are maintained alongside Orleans, for example:
 

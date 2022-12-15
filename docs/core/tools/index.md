@@ -3,7 +3,7 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 07/15/2022
+ms.date: 12/14/2022
 ms.custom: devdivchpfy22
 ---
 # .NET CLI overview
@@ -23,6 +23,7 @@ The following commands are installed by default:
 - [`new`](dotnet-new.md)
 - [`restore`](dotnet-restore.md)
 - [`build`](dotnet-build.md)
+- [`build-server`](dotnet-build-server.md)
 - [`publish`](dotnet-publish.md)
 - [`run`](dotnet-run.md)
 - [`test`](dotnet-test.md)
@@ -33,6 +34,7 @@ The following commands are installed by default:
 - [`sln`](dotnet-sln.md)
 - [`help`](dotnet-help.md)
 - [`store`](dotnet-store.md)
+- [`format`](dotnet-format.md) (Available since .NET 6 SDK)
 
 ### Project modification commands
 
@@ -40,15 +42,42 @@ The following commands are installed by default:
 - [`add reference`](dotnet-add-reference.md)
 - [`remove package`](dotnet-remove-package.md)
 - [`remove reference`](dotnet-remove-reference.md)
+- [`list package`](dotnet-list-package.md)
 - [`list reference`](dotnet-list-reference.md)
 
-### Advanced commands
+### NuGet commands
 
 - [`nuget delete`](dotnet-nuget-delete.md)
 - [`nuget locals`](dotnet-nuget-locals.md)
 - [`nuget push`](dotnet-nuget-push.md)
+- [`nuget add source`](dotnet-nuget-add-source.md)
+- [`nuget disable source`](dotnet-nuget-disable-source.md)
+- [`nuget enable source`](dotnet-nuget-enable-source.md)
+- [`nuget list source`](dotnet-nuget-list-source.md)
+- [`nuget remove source`](dotnet-nuget-remove-source.md)
+- [`nuget update source`](dotnet-nuget-update-source.md)
+- [`nuget verify`](dotnet-nuget-verify.md)
+- [`nuget trust`](dotnet-nuget-trust.md)
+- [`nuget sign`](dotnet-nuget-sign.md)
+
+### Advanced commands
+
+- [`watch`](dotnet-watch.md)
+- [`sdk check`](dotnet-sdk-check.md)
 - [`msbuild`](dotnet-msbuild.md)
+- [`dev-certs`](dotnet-dev-certs.md)
 - [`dotnet install script`](dotnet-install-script.md)
+
+### Workload management commands
+
+- [`workload`](dotnet-workload.md)
+- [`workload install`](dotnet-workload-install.md)
+- [`workload list`](dotnet-workload-list.md)
+- [`workload update`](dotnet-workload-update.md)
+- [`workload restore`](dotnet-workload-restore.md)
+- [`workload repair`](dotnet-workload-repair.md)
+- [`workload uninstall`](dotnet-workload-uninstall.md)
+- [`workload search`](dotnet-workload-search.md)
 
 ### Tool management commands
 
@@ -58,6 +87,7 @@ The following commands are installed by default:
 - [`tool restore`](global-tools.md#install-a-local-tool)
 - [`tool run`](global-tools.md#invoke-a-local-tool)
 - [`tool uninstall`](dotnet-tool-uninstall.md)
+- [`tool search`](dotnet-tool-search.md)
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
 

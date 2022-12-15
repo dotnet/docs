@@ -118,10 +118,10 @@ Each of these serialization methods is detailed in the following sections.
 
 Orleans serialization happens in three stages:
 
- * Objects are immediately deep copied to ensure isolation.
- * Before being put on the wire, objects are serialized to a message byte stream.
- * When delivered to the target activation, objects are recreated (deserialized) from the received byte stream.
- 
+* Objects are immediately deep copied to ensure isolation.
+* Before being put on the wire, objects are serialized to a message byte stream.
+* When delivered to the target activation, objects are recreated (deserialized) from the received byte stream.
+
 Data types that may be sent in messages&mdash;that is, types that may be passed as method arguments or return values&mdash;must have associated routines that perform these three steps. We refer to these routines collectively as the serializers for a data type.
 
 The copier for a type stands alone, while the serializer and deserializer are a pair that work together. You can provide just a custom copier, or just a custom serializer and a custom deserializer, or you can provide custom implementations of all three.
@@ -132,7 +132,7 @@ Serializers are registered for each supported data type at silo start-up and whe
 
 A hand-crafted serializer routine will rarely perform better than the generated versions. If you are tempted to write one, you should first consider the following options:
 
-- If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the <xref:System.NonSerializedAttribute>. This will cause the generated code to skip these fields when copying and serializing. Use <xref:Orleans.Concurrency.ImmutableAttribute> and <xref:Orleans.Concurrency.Immutable%601> where possible to avoid copying immutable data. See the section on *Optimizing Copying* later in this article for details. If you're avoiding using the standard generic collection types, don't. The Orleans runtime contains custom serializers for the generic collections that use the semantics of the collections to optimize copying, serializing, and deserializing. These collections also have special "abbreviated" representations in the serialized byte stream, resulting in even more performance advantages. For instance, a `Dictionary<string, string>` will be faster than a `List<Tuple<string, string>>`.
+- If there are fields or properties within your data types that don't have to be serialized or copied, you can mark them with the <xref:System.NonSerializedAttribute>. This will cause the generated code to skip these fields when copying and serializing. Use <xref:Orleans.Concurrency.ImmutableAttribute> and <xref:Orleans.Concurrency.Immutable%601> where possible to avoid copying immutable data. For more information, see [Optimize copying](serialization-immutability.md#optimize-copying). If you're avoiding using the standard generic collection types, don't. The Orleans runtime contains custom serializers for the generic collections that use the semantics of the collections to optimize copying, serializing, and deserializing. These collections also have special "abbreviated" representations in the serialized byte stream, resulting in even more performance advantages. For instance, a `Dictionary<string, string>` will be faster than a `List<Tuple<string, string>>`.
 
 - The most common case where a custom serializer can provide a noticeable performance gain is when there is significant semantic information encoded in the data type that is not available by simply copying field values. For instance, arrays that are sparsely populated may often be more efficiently serialized by treating the array as a collection of index/value pairs, even if the app keeps the data as a fully realized array for speed of operation.
 
@@ -248,9 +248,9 @@ The <xref:Orleans.Serialization.BinaryTokenStreamReader> class provides a wide v
 
 ## Write a serializer provider
 
-In this method, you implement <xref:Orleans.Serialization.IExternalSerializer?displayProperty=fullName> and add it to the <xref:Orleans.Configuration.SerializationProviderOptions.SerializationProviders?displayProperty=nameWithType> property on both <xref:Orleans.Runtime.Configuration.ClientConfiguration> on the client and <xref:Orleans.Runtime.Configuration.GlobalConfiguration> on the silos. Configuration is detailed in the Serialization Providers section above.
+In this method, you implement <xref:Orleans.Serialization.IExternalSerializer?displayProperty=fullName> and add it to the <xref:Orleans.Configuration.SerializationProviderOptions.SerializationProviders?displayProperty=nameWithType> property on both <xref:Orleans.Runtime.Configuration.ClientConfiguration> on the client and <xref:Orleans.Runtime.Configuration.GlobalConfiguration> on the silos. For information on configuration, see [Serialization providers](#serialization-providers).
 
-Implementation of `IExternalSerializer` follows the pattern described for serialization methods from `Method 1` above with the addition of an `Initialize` method and an `IsSupportedType` method which Orleans uses to determine if the serializer supports a given type. This is the interface definition:
+Implementations of `IExternalSerializer` follows the pattern previously described for serialization with the addition of an `Initialize` method and an `IsSupportedType` method which Orleans uses to determine if the serializer supports a given type. This is the interface definition:
 
 ```csharp
 public interface IExternalSerializer
@@ -296,7 +296,7 @@ public interface IExternalSerializer
 
 ## Write a serializer for an individual type
 
-In this method, you write a new class annotated with an attribute `[SerializerAttribute(typeof(TargetType))]`, where `TargetType` is the type that is being serialized, and implement the 3 serialization routines. The rules for how to write those routines are identical to method 1. Orleans uses the `[SerializerAttribute(typeof(TargetType))]` to determine that this class is a serializer for `TargetType` and this attribute can be specified multiple times on the same class if it's able to serialize multiple types. Below is an example for such a class:
+In this method, you write a new class annotated with an attribute `[SerializerAttribute(typeof(TargetType))]`, where `TargetType` is the type that is being serialized, and implement the 3 serialization routines. The rules for how to write those routines are identical to that when implementing the `IExternalSerializer`. Orleans uses the `[SerializerAttribute(typeof(TargetType))]` to determine that this class is a serializer for `TargetType` and this attribute can be specified multiple times on the same class if it's able to serialize multiple types. Below is an example for such a class:
 
 ```csharp
 public class User
@@ -381,7 +381,7 @@ internal class UserSerializer
 
 ### Serialize generic types
 
-The `TargetType` parameter of `[Serializer(typeof(TargetType))]` can be an open-generic type, for example, `MyGenericType<>`. In that case, the serializer class must have the same generic parameters as the target type. Orleans will create a concrete version of the serializer at runtime for every concrete `MyGenericType<T>` type which is serialized, for example, one for each of `MyGenericType<int>` and `MyGenericType<string>`.
+The `TargetType` parameter of `[Serializer(typeof(TargetType))]` can be an open-generic type, for example, `MyGenericType<T>`. In that case, the serializer class must have the same generic parameters as the target type. Orleans will create a concrete version of the serializer at runtime for every concrete `MyGenericType<T>` type which is serialized, for example, one for each of `MyGenericType<int>` and `MyGenericType<string>`.
 
 ## Hints for writing serializers and deserializers
 

@@ -200,17 +200,17 @@ Sometimes, you may not have control over the object, for example, it may be a `L
 
 1. Individual properties and fields can be marked as <xref:Orleans.ImmutableAttribute> to prevent copies being made when instances of the containing type are copied.
 
-```csharp
-[GenerateSerializer]
-public sealed class MyType
-{
-    [Id(0), Immutable]
-    public List<int> ReferenceData { get; set; }
-    
-    [Id(1)]
-    public List<int> RunningTotals { get; set; }
-}
-```
+    ```csharp
+    [GenerateSerializer]
+    public sealed class MyType
+    {
+        [Id(0), Immutable]
+        public List<int> ReferenceData { get; set; }
+        
+        [Id(1)]
+        public List<int> RunningTotals { get; set; }
+    }
+    ```
 
 ## Grain storage serializers
 
@@ -221,7 +221,7 @@ Orleans includes a provider-backed persistence model for grains, accessed via th
 - <xref:Orleans.Configuration.AzureTableStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
 - <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer>
 
-This currently defaults to an implementation which uses `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this, using [OptionsBuilder\<TOptions\>](../../../core/extensions/options.md#optionsbuilder-api):
+Grain storage serialization currently defaults to `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this, using [OptionsBuilder\<TOptions\>](../../../core/extensions/options.md#optionsbuilder-api):
 
 ```csharp
 siloBuilder.AddAzureBlobGrainStorage(

@@ -52,7 +52,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 The `net5.0`, `net6.0`, and `net7.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net6.0` TFM.
 
-.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 and later versions have additional OS-specific TFMs.
+.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 and later versions have additional OS-specific TFMs, for example, `net6.0-ios`.
 
 The following table shows the compatibility of the .NET 5+ TFMs.
 
@@ -75,7 +75,7 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net7.0-tvos        | (subsequent version of `net6.0-tvos`)                                                                                   |
 | net7.0-windows     | (subsequent version of `net6.0-windows`)                                                                                |
 
-To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives.
+To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives. For a list of the available symbols, see [Preprocessor symbols](#preprocessor-symbols).
 
 #### Suggested targets
 

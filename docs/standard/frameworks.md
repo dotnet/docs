@@ -133,7 +133,7 @@ Target frameworks are specified in a project file. When a single target framewor
 </Project>
 ```
 
-When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using preprocessor symbols with *if-then-else* logic.
+When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using [preprocessor symbols](#preprocessor-symbols) with *if-then-else* logic.
 
 The following library project targets APIs of .NET Standard (`netstandard1.4`) and .NET Framework (`net40` and `net45`). Use the plural [TargetFrameworks element](../core/project-sdk/msbuild-props.md#targetframeworks) with multiple target frameworks. The `Condition` attributes include implementation-specific packages when the library is compiled for the two .NET Framework TFMs:
 
@@ -176,7 +176,11 @@ public class MyClass
 }
 ```
 
-The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. When using a symbol that represents a .NET Standard, .NET Core, or .NET 5+ TFM, replace dots and hyphens with an underscore, and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`). You can disable generation of these symbols via the `DisableImplicitFrameworkDefines` property. For more information about this property, see [DisableImplicitFrameworkDefines](../core/project-sdk/msbuild-props.md#disableimplicitframeworkdefines).
+## Preprocessor symbols
+
+The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. To convert a .NET Standard, .NET Core, or .NET 5+ TFM to a preprocessor symbol, replace dots and hyphens with an underscore, and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+
+You can disable generation of these symbols via the `DisableImplicitFrameworkDefines` property. For more information about this property, see [DisableImplicitFrameworkDefines](../core/project-sdk/msbuild-props.md#disableimplicitframeworkdefines).
 
 The complete list of preprocessor symbols for .NET target frameworks is:
 

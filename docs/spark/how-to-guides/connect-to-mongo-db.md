@@ -12,7 +12,7 @@ ms.custom: mvc,how-to
 
 In this article, you learn how to connect to a MongoDB instance from your .NET for Apache Spark application.
 
-[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

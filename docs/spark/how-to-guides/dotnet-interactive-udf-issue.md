@@ -12,7 +12,7 @@ ms.custom: mvc,how-to
 
 In this article, you will learn how to use user-defined functions (UDFs) in a .NET for Apache Spark interactive environment.
 
-[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

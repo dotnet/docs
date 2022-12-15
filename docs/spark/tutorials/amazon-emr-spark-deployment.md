@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 > [!Note]
 > AWS EMR Spark is Linux-based. Therefore, if you are interested in deploying your app to AWS EMR Spark, make sure your app is .NET Standard compatible and that you use .NET Core compiler to compile your app.
 
-[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

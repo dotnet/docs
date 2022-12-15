@@ -10,7 +10,7 @@ ms.custom: how-to
 
 This article teaches you how to build your .NET for Apache Spark applications on Windows.
 
-[!INCLUDE [.NET Core 3.1 Warning](../../includes/net-core-31-spark.md)]
+[!INCLUDE [.NET Core 3.1 Warning](./includes/net-core-31-spark.md)]
 
 ## Prerequisites
 

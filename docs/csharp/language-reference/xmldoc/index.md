@@ -1,6 +1,6 @@
 ---
 title: "Documentation comments - document APIs using /// comments"
-description: Learn about XML documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
+description: Learn about documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
 ms.date: 06/17/2021
 f1_keywords:
   - "cs.xml"

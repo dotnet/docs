@@ -14,7 +14,7 @@ This article presents best practices for setting up secure communication between
 
 ## Selecting TLS version
 
-While it is possible to specify the version of the TLS protocol to be used via the SslProtocols property, it is recommended to defer to the operating system settings by using <xref:System.Net.Security.SslProtocols.None> value (this is the default).
+While it is possible to specify the version of the TLS protocol to be used via the SslProtocols property, it is recommended to defer to the operating system settings by using <xref:System.Security.Authentication.SslProtocols.None> value (this is the default).
 
 Deferring the decision to the OS automatically uses the most recent version of TLS available and lets the application pick up changes after OS upgrades. The operating system may also prevent use of TLS versions which are no longer considered secure.
 
@@ -30,7 +30,7 @@ When authenticating as a server, <xref:System.Net.Security.SslStream> requires a
 
 There are multiple ways how the server certificate can be passed to <xref:System.Net.Security.SslStream>:
 
-- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
+- Directly as a parameter to <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync%2A?displayProperty=nameWithType> or via <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate?displayProperty=nameWithType> property
 - From a selection callback in <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback?displayProperty=nameWithType> property
 - By passing a <xref:System.Net.Security.SslStreamCertificateContext> in the <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType> property
 

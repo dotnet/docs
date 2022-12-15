@@ -30,8 +30,8 @@ On Windows, you may encounter error message `(0x8009030E): No credentials are av
 
 ## Client and server do not possess a common algorithm
 
-When inspecting the `ClientHello` and `ServerHello` messages, you may find out that there is no cipher suite offered by both client and server or even that some ciphers are not offered even if explicitly configured via <xref:System.Net.Security.CipherSuitePolicy> (available on Linux only). The underlying TLS library may disable TLS versions and cipher suites which are considered insecure.
+When inspecting the `ClientHello` and `ServerHello` messages, you may find out that there is no cipher suite offered by both client and server or even that some ciphers are not offered even if explicitly configured via <xref:System.Net.Security.CipherSuitesPolicy> (available on Linux only). The underlying TLS library may disable TLS versions and cipher suites which are considered insecure.
 
 On many Linux distributions, the relevant configuration file is located at `/etc/ssl/openssl.cnf`.
 
-On Windows, the [`Enable-TlsCipherSuite`](/powershell/module/tls/enable-tlsciphersuite?view=windowsserver2022-ps) and [`Disable-TlsCipherSuite`](/powershell/module/tls/disable-tlsciphersuite?view=windowsserver2022-ps) PowerShell cmdlets can be used to configure cipher suites. Individual TLS versions can be enabled/disable by configuring the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS <version>\{Client|Server}\Enabled` registry key.
+On Windows, the [`Enable-TlsCipherSuite`](/powershell/module/tls/enable-tlsciphersuite) and [`Disable-TlsCipherSuite`](/powershell/module/tls/disable-tlsciphersuite) PowerShell cmdlets can be used to configure cipher suites. Individual TLS versions can be enabled/disable by configuring the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS <version>\{Client|Server}\Enabled` registry key.

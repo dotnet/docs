@@ -3,7 +3,7 @@ title: Use broadcast variables in .NET for Apache Spark
 description: Learn how to use broadcast variables in .NET for Apache Spark applications.
 ms.author: nidutta
 author: Niharikadutta
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -13,6 +13,8 @@ ms.custom: mvc,how-to
 In this article, you learn how to use broadcast variables in .NET for Apache Spark. [Broadcast variables in Apache Spark](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) are mechanisms for sharing variables across executors that are meant to be read-only. Broadcast variables allow you to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks. You can use broadcast variables to give every node a copy of a large input dataset in an efficient manner.
 
 Because the data is sent only once, broadcast variables have performance benefits when compared to local variables that are shipped to the executors with each task. Refer to the [official broadcast variable documentation](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) to get a deeper understanding of broadcast variables and why they are used.
+
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Create broadcast variables
 

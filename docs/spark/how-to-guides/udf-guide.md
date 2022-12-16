@@ -3,7 +3,7 @@ title: Create user-defined functions (UDF) in .NET for Apache Spark
 description: Learn how to implement user-defined functions (UDF) in .NET for Apache Spark applications.
 ms.author: nidutta
 author: Niharikadutta
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -11,6 +11,8 @@ ms.custom: mvc,how-to
 # Create user-defined functions (UDF) in .NET for Apache Spark
 
 In this article, you learn how to use user-defined functions (UDF) in .NET for Apache Spark. [UDFs)](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/expressions/UserDefinedFunction.html) are a Spark feature that allow you to use custom functions to extend the system's built-in functionality. UDFs transform values from a single row within a table to produce a single corresponding output value per row based on the logic defined in the UDF.
+
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Define UDFs
 

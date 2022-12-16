@@ -13,7 +13,7 @@ Grain Services exist to support cases where responsibility for servicing grains 
 
 Grain Services are configured on silos and are initialized when the silo starts, before the silo completes initialization. They are not collected when idle and instead have lifetimes which extend for the lifetime of the silo itself.
 
-# Create a GrainService
+## Create a GrainService
 
 A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable identity, and runs in every silo from startup to shutdown. There are several steps involved when implementing an <xref:Orleans.Services.IGrainService> interface.
 

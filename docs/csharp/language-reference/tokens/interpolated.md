@@ -22,7 +22,7 @@ String interpolation provides a more readable, convenient syntax to format strin
 
 ## Structure of an interpolated string
 
-To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can't have any white space between the `$` and the `"` that starts a string literal. To concatenate multiple interpolated strings, add the `$` special character to each string literal.
+To identify a string literal as an interpolated string, prepend it with the `$` symbol. You cannot have any white space between the `$` and the `"` that starts a string literal. To concatenate multiple interpolated strings, add the `$` special character to each string literal.
 
 The structure of an item with an interpolation expression is as follows:
 

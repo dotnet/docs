@@ -19,7 +19,7 @@ All source code used in this tutorial is available in the [dotnet/samples reposi
 
 ## Overview of the `LibraryImport` source generator
 
-The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. This has historically been done using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;see [P/Invoke source generation][pinvoke_source_generation] for more details. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
+The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. Entry points have historically been specified using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;for more information, see [P/Invoke source generation][pinvoke_source_generation]. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
 
 To express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types are used throughout this tutorial:
 
@@ -54,7 +54,7 @@ extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintString(char32_t* chars);
 extern "C" DLL_EXPORT void STDMETHODCALLTYPE PrintErrorData(error_data data);
 ```
 
-The preceding code contains the two types of interest, `char32_t*` and `error_data`. `char32_t*` represents a string that's encoded in UTF-32, which is not a string encoding that .NET historically marshals. `error_data` is a user-defined type that contains a 32-bit integer field, a C++ Boolean field, and a UTF-32 encoded string field. Both of these types require you to provide a way for the source generator to generate marshalling code.
+The preceding code contains the two types of interest, `char32_t*` and `error_data`. `char32_t*` represents a string that's encoded in UTF-32, which isn't a string encoding that .NET historically marshals. `error_data` is a user-defined type that contains a 32-bit integer field, a C++ Boolean field, and a UTF-32 encoded string field. Both of these types require you to provide a way for the source generator to generate marshalling code.
 
 ## Customize marshalling for a built-in type
 
@@ -215,7 +215,7 @@ internal static partial ErrorData GetFatalErrorIfNegative(int code);
 internal static partial ErrorData[] GetErrors(int[] codes, int len);
 ```
 
-Returning a single instance type, non-collection, from a P/Invoke is categorized as a `MarshalMode.ManagedToUnmanagedOut`. Typically, you use a collection to return multiple elements, and in this case, an `Array` is used. The marshaller for a collection scenario, corresponding to the `MarshalMode.ElementOut` mode, will return multiple elements and is described below.
+A P/Invoke that returns a single instance type, non-collection, is categorized as a `MarshalMode.ManagedToUnmanagedOut`. Typically, you use a collection to return multiple elements, and in this case, an `Array` is used. The marshaller for a collection scenario, corresponding to the `MarshalMode.ElementOut` mode, will return multiple elements and is described later.
 
 ```csharp
 namespace CustomMarshalling

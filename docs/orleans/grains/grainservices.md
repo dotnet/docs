@@ -1,7 +1,7 @@
 ---
 title: Create a GrainService
 description: Learn how to create a GrainService in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 12/16/2022
 zone_pivot_groups: orleans-version
 ---
 
@@ -88,10 +88,12 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
         public Task MyMethod() => GrainService.MyMethod();
     }
     ```
+    
 :::zone-end
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
+
 1. Create the actual grain service client. It pretty much just acts as a proxy for the data service. Unfortunately, you have to manually type in all the method mappings, which are just simple one-liners.
 
     ```csharp
@@ -147,7 +149,7 @@ The silo fetches `IGrainService` types from the service provider when starting: 
 var grainServices = this.Services.GetServices<IGrainService>();
 ```
 
-The [Microsoft.Orleans.OrleansRuntime NuGet package](https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime) should be referenced by the `GrainService` project.
+The [Microsoft.Orleans.OrleansRuntime](https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime) NuGet package should be referenced by the `GrainService` project.
 
 In order for this to work you have to register both the service and its client. The code looks something like this:
 

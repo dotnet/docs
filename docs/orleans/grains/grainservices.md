@@ -150,7 +150,16 @@ The silo fetches `IGrainService` types from the service provider when starting: 
 var grainServices = this.Services.GetServices<IGrainService>();
 ```
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+The [Microsoft.Orleans.Runtime](https://www.nuget.org/packages/Microsoft.Orleans.Runtime) NuGet package should be referenced by the `GrainService` project.
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 The [Microsoft.Orleans.OrleansRuntime](https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime) NuGet package should be referenced by the `GrainService` project.
+:::zone-end
 
 In order for this to work you have to register both the service and its client. The code looks something like this:
 

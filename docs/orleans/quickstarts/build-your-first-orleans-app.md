@@ -9,6 +9,8 @@ ms.service: orleans
 ms.devlang: csharp
 ---
 
+## Quickstart: Build your first Orleans app with ASP.NET Core
+
 In this quickstart, you'll use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users can submit a full URL to the app, which will return a shortened version they can share with others, who will then be redirected to the full site. The app will use Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
 
 At the end of the quickstart, you'll have an app that creates and handles redirects using short, friendly URLs. You'll learn how to:
@@ -38,23 +40,17 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 1. Start Visual Studio 2022 and select **Create a new project**.
 
-   ![Create a new project from the start window](~/tutorials/razor-pages/razor-pages-start/_static/6/start-window-create-new-project.png)
-
 1. In the **Create a new project** dialog, select **ASP.NET Core Web App**, and then select **Next**.
 
-    ![Create an ASP.NET Core Web App](~/tutorials/razor-pages/razor-pages-start/_static/6/np.png)
-
-1. In the **Configure your new project** dialog, enter `SignalRChat` for **Project name**. It's important to name the project *SignalRChat*, including matching the capitalization, so the namespaces will match when you copy and paste example code.
+1. In the **Configure your new project** dialog, enter `OrleansURLShortener` for **Project name**.
 
 1. Select **Next**.
 
 1. In the **Additional information** dialog, select **.NET 7.0 (Standard support)** and then select **Create**.
 
-    ![Additional information](~/tutorials/razor-pages/razor-pages-start/_static/6/additional-info.png)
-
 # [Visual Studio Code](#tab/visual-studio-code)
 
-1. Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
+1. Inside Visual Studio Code, open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 
 1. Change to the directory (`cd`) that will contain the project.
 1. Run the following commands:
@@ -68,15 +64,15 @@ At the end of the quickstart, you'll have an app that creates and handles redire
     * The checkbox **trust the authors of all files in the parent folder**
     * **Yes, I trust the authors** (because dotnet generated the files).
 
-   The `dotnet new` command creates a new Razor Pages project in the *SignalRChat* folder.
+   The `dotnet new` command creates a new Minimal API project in the *OrleansURLShortener* folder.
 
-   The `code` command opens the *SignalRChat* folder in the current instance of Visual Studio Code.
+   The `code` command opens the *OrleansURLShortener* folder in the current instance of Visual Studio Code.
 
 ---
 
 ## Add Orleans to the project
 
-Orleans is available through a collection of NuGet packages, which provide access to various features. For this quickstart, add the Orleans.Server package to the app using the steps below below:
+Orleans is available through a collection of NuGet packages, which each provide access to various features. For this quickstart, add the Orleans.Server package to the app using the steps below below:
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -109,9 +105,9 @@ app.Run();
 
 ## Configure the silos
 
-[Silos](/dotnet/orleans/overview#what-are-silos) are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process. You can organize your data by storing different types of grains in different silos. Your application can retrieve individual grains without having to worry about the details of how they're managed within the cluster.
+[Silos](/dotnet/orleans/overview#what-are-silos) are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process. 
 
-At the top of the Program class, refactor the builder code to use Orleans. The code uses a `SiloBuilder` class to create a cluster with a silo that can store grains. [In this scenario, you'll use a localhost cluster, but in a production app you can configure more scalable clusters using services like Azure Table Storage. The `SiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory.
+At the top of the Program class, refactor the builder code to use Orleans. The following code uses a `SiloBuilder` class to create a localhost cluster with a silo that can store grains. The `SiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
 ```csharp
 var builder = WebApplication.CreateBuilder();
@@ -137,12 +133,14 @@ app.Run();
 - IGrainWithGuidCompoundKey
 - IGrainWithIntegerCompoundKey
 
-For this quickstart, you'll use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes. Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
+For this quickstart, you'll use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
+
+Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
 
 - A `SetUrl` method to persist the original and shortened URL.
 - A `GetUrl` method to retrieve the original URL using the shortened URL.
 
-1. Inside of the `Program` class, add the following interface definition to the bottom of the file. Grains can implement different interfaces that .
+1. Inside of the `Program` class, append the following interface definition to the bottom of the file. Grains can implement different interfaces that .
 
     ```csharp
     public interface IUrlShortenerGrain : IGrainWithStringKey

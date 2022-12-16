@@ -320,8 +320,10 @@ items:
   items:
   - name: Performance engineering
     items:
-    - name: overview
-      href: ./write-safe-efficient-code.md
+    - name: Overview
+      href: advanced-concepts/performance/index.md
+    - name: Tutorial - reduce allocations
+      href: advanced-concepts/performance/ref-tutorial.md
   - name: The .NET Compiler Platform SDK (Roslyn APIs)
     items:
     - name: The .NET Compiler Platform SDK (Roslyn APIs) overview

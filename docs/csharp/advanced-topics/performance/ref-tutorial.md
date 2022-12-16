@@ -1,8 +1,23 @@
-Other articles can reference techniques;
+---
+title: "Tutorial: Reduce memory allocations using struct data types and ref language features."
+description: Learn to remove allocations from your code. Make use of `struct` types for fewer allocations. Use the `ref` and `in` modifiers to avoid copies and enable or disable modification. Use `ref struct` types like `Span<T>` to directly use memory efficiently.
+ms.date: 12/18/2022
+ms.technology: csharp-advanced-concepts
+---
+# Tutorial: Reduce memory allocations
 
-- converting classes to structs
-- preserving class (e.g. reference) semantics
-- sharing internal data (memory, fields)
+I need to ponder the scenario, but here's the gist:
+
+- Start with an app that processes a bunch of objects for some statistics. All the data structures are classes. Some are nested inside others.
+- Make some struct types for temporary objects to avoid obvious allocations.
+- Update one or more `class` types to `struct` types.
+- Modify some APIs using those types to include `ref` parameters. Maybe a factory that builds the containing objects?
+- Modify other APIs to use `in` to restrict modifications
+- Make one of the structs used for temporaries `readonly`. Leverage deconstruction & `with` expressions for copies.
+- In one if the other `struct` types, make some members `readonly`.
+- Use `Span<T>` to sample or iterate a sequence of these new types.
+
+
 
 ## Old stuff starts here.
 

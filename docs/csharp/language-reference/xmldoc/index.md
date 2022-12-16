@@ -1,6 +1,6 @@
 ---
-title: "XML documentation comments - document APIs using /// comments"
-description: Learn about XML documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
+title: "Documentation comments - document APIs using /// comments"
+description: Learn about documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
 ms.date: 06/17/2021
 f1_keywords:
   - "cs.xml"
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "XML documentation comments [C#]"
 ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
 ---
-# XML documentation comments
+# Documentation comments
 
 C# source files can have structured comments that produce API documentation for the types defined in those files. The C# compiler produces an *XML* file that contains structured data representing the comments and the API signatures. Other tools can process that XML output to create human-readable documentation in the form of web pages or PDF files, for example.
 

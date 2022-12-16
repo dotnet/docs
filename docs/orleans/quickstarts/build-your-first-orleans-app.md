@@ -13,11 +13,10 @@ In this quickstart, you'll use Orleans and ASP.NET Core 7.0 Minimal APIs to buil
 
 At the end of the quickstart, you'll have an app that creates and handles redirects using short, friendly URLs. You'll learn how to:
 
-> [!div class="checklist"]
-> * Add Orleans to an ASP.NET Core app
-> * Work with grains and silos
-> * Configure state management
-> * Integrate Orleans with API endpoints
+* Add Orleans to an ASP.NET Core app
+* Work with grains and silos
+* Configure state management
+* Integrate Orleans with API endpoints
 
 ## Prerequisites
 
@@ -44,7 +43,7 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 1. In the **Create a new project** dialog, select **ASP.NET Core Web App**, and then select **Next**.
 
     ![Create an ASP.NET Core Web App](~/tutorials/razor-pages/razor-pages-start/_static/6/np.png)
-	
+
 1. In the **Configure your new project** dialog, enter `SignalRChat` for **Project name**. It's important to name the project *SignalRChat*, including matching the capitalization, so the namespaces will match when you copy and paste example code.
 
 1. Select **Next**.
@@ -64,9 +63,10 @@ At the end of the quickstart, you'll have an app that creates and handles redire
    dotnet new webapp -o OrleansURLShortener
    code -r OrleansURLShortener
    ```
+
    Visual Studio Code displays a dialog box that asks **Do you trust the authors of the files in this folder**.  Select:
     * The checkbox **trust the authors of all files in the parent folder**
-   * **Yes, I trust the authors** (because dotnet generated the files).
+    * **Yes, I trust the authors** (because dotnet generated the files).
 
    The `dotnet new` command creates a new Razor Pages project in the *SignalRChat* folder.
 
@@ -235,4 +235,4 @@ The core functionality of the app should now work as expected, so now you can te
 
 2) In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 
-3) Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to *https://microsoft.com*. 
+3) Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).

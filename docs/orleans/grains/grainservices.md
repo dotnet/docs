@@ -88,7 +88,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
         public Task MyMethod() => GrainService.MyMethod();
     }
     ```
-    
+
 :::zone-end
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
@@ -107,6 +107,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
         public Task MyMethod() => GrainService.MyMethod();
     }
     ```
+
 :::zone-end
 
 1. Inject the grain service client into the other grains that need it. The `GrainServiceClient` is not guaranteed to access the `GrainService` on the local silo. Your command could potentially be sent to the `GrainService` on any silo in the cluster.

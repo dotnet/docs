@@ -7,14 +7,14 @@ public sealed class ExampleSubscriberGrain : Grain, IOnBroadcastChannelSubscribe
 {
     public Task OnSubscribed(IBroadcastChannelSubscription streamSubscription)
     {
-        streamSubscription.Attach<int>(
+        streamSubscription.Attach<Stock>(
             item => OnPublished(streamSubscription.ChannelId, item),
             ex => OnError(streamSubscription.ChannelId, ex));
 
         return Task.CompletedTask;
 
         // Called when an item is published to the channel
-        static Task OnPublished(ChannelId id, int item)
+        static Task OnPublished(ChannelId id, Stock item)
         {
             // Do something
             return Task.CompletedTask;

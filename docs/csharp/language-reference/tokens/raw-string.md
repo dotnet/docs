@@ -1,5 +1,5 @@
 ---
-description: "Raw string literals can contain any arbitrary text without the need for special escape sequences.You begin and end a raw string literal with a minimum of three double-quote characters."
+description: "Raw string literals can contain any arbitrary text without the need for special escape sequences. You begin and end a raw string literal with a minimum of three double-quote characters."
 title: "Raw string literals - \"\"\""
 f1_keywords: 
   - "RawStringLiteral_CSharpKeyword"
@@ -30,7 +30,7 @@ If you need to start or end a raw string literal with quote characters, use the 
 
 :::code language="csharp" source="./snippets/raw-string-literal.cs" id="InitialQuotes":::
 
-Raw strings can also be combined with [interpolated strings](./interpolated.md#special-characters) to embed ther `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
+Raw strings can also be combined with [interpolated strings](./interpolated.md#special-characters) to embed the `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
 
 ## See also
 

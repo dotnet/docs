@@ -10,7 +10,7 @@ ms.devlang: csharp
 
 # Quickstart: Build your first Orleans app with ASP.NET Core
 
-In this quickstart, you'll use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users can submit a full URL to the app, which will return a shortened version they can share with others, who will then be redirected to the full site. The app will use Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
+In this quickstart, you'll use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users can submit a full URL to the app, which will return a shortened version they can share with others, who will then be redirected to the original site. The app will use Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
 
 At the end of the quickstart, you'll have an app that creates and handles redirects using short, friendly URLs. You'll learn how to:
 
@@ -39,13 +39,15 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 1. Start Visual Studio 2022 and select **Create a new project**.
 
-1. In the **Create a new project** dialog, select **ASP.NET Core Web App**, and then select **Next**.
+1. In the **Create a new project** dialog, select **ASP.NET Core Web API**, and then select **Next**.
 
 1. In the **Configure your new project** dialog, enter `OrleansURLShortener` for **Project name**.
 
 1. Select **Next**.
 
-1. In the **Additional information** dialog, select **.NET 7.0 (Standard support)** and then select **Create**.
+1. In the **Additional information** dialog, select **.NET 7.0 (Standard support)** and make sure **Use controllers** is unchecked.
+
+1. Select **Create**.
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
@@ -81,7 +83,7 @@ Orleans is available through a collection of NuGet packages, each of which provi
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-- In the Visual Studio code terminal, run the following command:
+In the Visual Studio code terminal, run the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.Orleans.Server
@@ -89,7 +91,7 @@ dotnet add package Microsoft.Orleans.Server
 
 ---
 
-Open the *program.cs* file and replace the existing content with the following code:
+Open the _Program.cs_ file and replace the existing content with the following code:
 
 ```csharp
 using Microsoft.AspNetCore.Http.Extensions;
@@ -106,7 +108,7 @@ app.Run();
 
 [Silos](/dotnet/orleans/overview#what-are-silos) are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
 
-At the top of the Program class, refactor the builder code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
+At the top of the _Program.cs_ file, refactor the builder code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
 ```csharp
 var builder = WebApplication.CreateBuilder();
@@ -136,10 +138,10 @@ For this quickstart, you'll use the `IGrainWithStringKey`, since strings are a l
 
 Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
 
-- A `SetUrl` method to persist the original and shortened URL.
+- A `SetUrl` method to persist the original and shortened URLs.
 - A `GetUrl` method to retrieve the original URL using the shortened URL.
 
-1. Inside of the `Program` class, append the following interface definition to the bottom of the file. Grains can implement different interfaces that .
+1. Inside of the _Program.cs_ file, append the following interface definition to the bottom of the file.
 
     ```csharp
     public interface IUrlShortenerGrain : IGrainWithStringKey
@@ -185,7 +187,7 @@ Next, create two endpoints to utilize the Orleans grain and silo configurations:
 - A `/shorten/{*url}` endpoint to handle creating and storing a shortened version of the URL. The original, full URL is provided as a path parameter, and the shortened URL is returned to the user for later use.
 - A `/go/{*shortenedUrl}` endpoint to handle redirecting users to the original URL using the shortened URL that is supplied as a parameter.
 
-Append the following code to the end of the _Program.cs_ file:
+Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the end of the _Program.cs_ file:
 
 ```csharp
 app.MapGet("/shorten/{*path}",
@@ -222,14 +224,24 @@ app.MapGet("/go/{shortenedRouteSegment}",
 
 The core functionality of the app should now work as expected, so now you can test your code.
 
-1) Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app.
+# [Visual Studio](#tab/visual-studio)
 
-    ```dotnetcli
-    dotnet run
-    ```
+Start the app using the run button at the top of Visual Studio. The app should launch in the browser and display the familiar `Hello world!` text.
 
-    The app should launch in the browser and display the familiar `Hello world!` text.
+# [Visual Studio Code](#tab/visual-studio-code)
 
-2) In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
+Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app.
 
-3) Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
+```dotnetcli
+dotnet run
+```
+
+The app should launch in the browser and display the familiar `Hello world!` text.
+
+---
+
+1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
+
+:::image type="content" source="../media/orleans-url-shortener.png" alt-text="A screenshot showing the result of the URL shortener.":::
+
+1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).

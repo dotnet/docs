@@ -17,8 +17,8 @@ public sealed class LiveStockGrain :
             ? new ValueTask<Stock>(Task.FromException<Stock>(new KeyNotFoundException()))
             : new ValueTask<Stock>(stock);
 
-    public Task OnSubscribed(IBroadcastChannelSubscription streamSubscription) =>
-        streamSubscription.Attach<Stock>(OnStockUpdated, OnError);
+    public Task OnSubscribed(IBroadcastChannelSubscription subscription) =>
+        subscription.Attach<Stock>(OnStockUpdated, OnError);
 
     private Task OnStockUpdated(Stock stock)
     {

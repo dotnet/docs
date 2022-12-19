@@ -71,7 +71,7 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 ## Add Orleans to the project
 
-Orleans is available through a collection of NuGet packages, which each provide access to various features. For this quickstart, add the Orleans.Server package to the app using the steps below below:
+Orleans is available through a collection of NuGet packages, each of which provide access to various features. For this quickstart, add the `Orleans.Server` package to the app using the steps below:
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -104,9 +104,9 @@ app.Run();
 
 ## Configure the silos
 
-[Silos](/dotnet/orleans/overview#what-are-silos) are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process. 
+[Silos](/dotnet/orleans/overview#what-are-silos) are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
 
-At the top of the Program class, refactor the builder code to use Orleans. The following code uses a `SiloBuilder` class to create a localhost cluster with a silo that can store grains. The `SiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
+At the top of the Program class, refactor the builder code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
 ```csharp
 var builder = WebApplication.CreateBuilder();
@@ -154,7 +154,7 @@ Orleans grains can also use a custom interface to define their methods and prope
     ```csharp
     public class UrlShortenerGrain : Grain, IUrlShortenerGrain
     {
-        private IPersistentState<KeyValuePair<string, string>> _cache;
+        private readonly IPersistentState<KeyValuePair<string, string>> _cache;
     
         public UrlShortenerGrain(
             [PersistentState(
@@ -185,7 +185,7 @@ Next, create two endpoints to utilize the Orleans grain and silo configurations:
 - A `/shorten/{*url}` endpoint to handle creating and storing a shortened version of the URL. The original, full URL is provided as a path parameter, and the shortened URL is returned to the user for later use.
 - A `/go/{*shortenedUrl}` endpoint to handle redirecting users to the original URL using the shortened URL that is supplied as a parameter.
 
-Append the following code to the end of the `Program.cs` file:
+Append the following code to the end of the _Program.cs_ file:
 
 ```csharp
 app.MapGet("/shorten/{*path}",

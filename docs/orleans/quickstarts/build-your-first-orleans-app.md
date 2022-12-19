@@ -5,11 +5,10 @@ author: alexwolfmsft
 ms.author: alexwolf
 ms.date: 12/16/2022
 ms.topic: quickstart
-ms.service: orleans
 ms.devlang: csharp
 ---
 
-## Quickstart: Build your first Orleans app with ASP.NET Core
+# Quickstart: Build your first Orleans app with ASP.NET Core
 
 In this quickstart, you'll use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users can submit a full URL to the app, which will return a shortened version they can share with others, who will then be redirected to the full site. The app will use Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
 
@@ -24,13 +23,13 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 # [Visual Studio](#tab/visual-studio)
 
-- .NET 7.0 SDK
-- Visual Studio 2022 with the ASP.NET and web development workload
+- [.NET 7.0 SDK](https://dotnet.microsoft.com/download)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) with the ASP.NET and web development workload
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-- .NET 7.0 SDK
-- Visual Studio Code
+- [.NET 7.0 SDK](https://dotnet.microsoft.com/download)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
 

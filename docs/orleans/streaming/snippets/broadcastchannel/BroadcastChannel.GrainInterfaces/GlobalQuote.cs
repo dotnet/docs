@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace BroadcastChannel.Grains;
+namespace BroadcastChannel.GrainsInterfaces;
 
 public sealed class GlobalQuote
 {

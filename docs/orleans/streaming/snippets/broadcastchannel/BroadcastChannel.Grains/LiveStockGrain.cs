@@ -1,17 +1,16 @@
-﻿using Orleans.BroadcastChannel;
+﻿using BroadcastChannel.GrainsInterfaces;
+using Orleans.BroadcastChannel;
 
 namespace BroadcastChannel.Grains;
 
 [ImplicitChannelSubscription]
-public sealed class ExampleSubscriberGrain : Grain, IOnBroadcastChannelSubscribed
+public sealed class LiveStockGrain : Grain, IOnBroadcastChannelSubscribed
 {
     public Task OnSubscribed(IBroadcastChannelSubscription streamSubscription)
     {
-        streamSubscription.Attach<Stock>(
+        return streamSubscription.Attach<Stock>(
             item => OnPublished(streamSubscription.ChannelId, item),
             ex => OnError(streamSubscription.ChannelId, ex));
-
-        return Task.CompletedTask;
 
         // Called when an item is published to the channel
         static Task OnPublished(ChannelId id, Stock item)

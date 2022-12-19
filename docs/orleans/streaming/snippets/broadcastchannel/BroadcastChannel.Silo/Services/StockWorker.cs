@@ -12,12 +12,10 @@ internal sealed class StockWorker : BackgroundService
     private readonly List<string> _symbols =
         new() { "MSFT", "GOOG", "AAPL", "AMZN", "TSLA" };
 
-    public StockWorker(StockClient stockClient, IClusterClient clusterClient)
-    {
-        _stockClient = stockClient;
-        _provider = clusterClient.GetBroadcastChannelProvider(
-                "live-stock-ticker");
-    }
+    public StockWorker(
+        StockClient stockClient, IClusterClient clusterClient) =>
+        (_stockClient, _provider) =
+        (stockClient, clusterClient.GetBroadcastChannelProvider("live-stock-ticker"));
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {

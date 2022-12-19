@@ -79,6 +79,7 @@ As the preceding image shows, the published output includes the following files:
 - [.NET application deployment](../deploying/index.md)
 - [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
 - [`dotnet publish`](../tools/dotnet-publish.md)
+- [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
 - [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
 
 ## Next steps

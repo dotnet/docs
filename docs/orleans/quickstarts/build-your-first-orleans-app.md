@@ -39,15 +39,11 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 1. Start Visual Studio 2022 and select **Create a new project**.
 
-1. In the **Create a new project** dialog, select **ASP.NET Core Web API**, and then select **Next**.
+1. On the **Create a new project** dialog, select **ASP.NET Core Web API**, and then select **Next**.
 
-1. In the **Configure your new project** dialog, enter `OrleansURLShortener` for **Project name**.
+1. On the **Configure your new project** dialog, enter `OrleansURLShortener` for **Project name**, and then select **Next**.
 
-1. Select **Next**.
-
-1. In the **Additional information** dialog, select **.NET 7.0 (Standard support)** and make sure **Use controllers** is unchecked.
-
-1. Select **Create**.
+1. On the **Additional information** dialog, select **.NET 7.0 (Standard support)** and uncheck **Use controllers**, and then select **Create**.
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
@@ -61,13 +57,11 @@ At the end of the quickstart, you'll have an app that creates and handles redire
    code -r OrleansURLShortener
    ```
 
+   The `dotnet new` command creates a new Minimal API project in the *OrleansURLShortener* folder. The `code` command opens the *OrleansURLShortener* folder in the current instance of Visual Studio Code.
+
    Visual Studio Code displays a dialog box that asks **Do you trust the authors of the files in this folder**.  Select:
     * The checkbox **trust the authors of all files in the parent folder**
     * **Yes, I trust the authors** (because dotnet generated the files).
-
-   The `dotnet new` command creates a new Minimal API project in the *OrleansURLShortener* folder.
-
-   The `code` command opens the *OrleansURLShortener* folder in the current instance of Visual Studio Code.
 
 ---
 
@@ -77,9 +71,9 @@ Orleans is available through a collection of NuGet packages, each of which provi
 
 # [Visual Studio](#tab/visual-studio)
 
-- Right click on the **OrleansURLShortener** project node in the solution explorer and select **Manage NuGet Packages**.
+- Right-click on the **OrleansURLShortener** project node in the solution explorer and select **Manage NuGet Packages**.
 - In the package manager window, search for *Orleans*.
-- Select the **Orleans.Server** package from the search results and select **Install**.
+- Choose the **Orleans.Server** package from the search results and then select **Install**.
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
@@ -108,7 +102,7 @@ app.Run();
 
 ## Configure the silos
 
-[Silos](/dotnet/orleans/overview#what-are-silos) are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
+[Silos](/dotnet/orleans/overview#what-are-silos) are a core building block of Orleans responsible for storing and managing grains. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
 
 At the top of the _Program.cs_ file, refactor the builder code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
@@ -145,7 +139,7 @@ Orleans grains can also use a custom interface to define their methods and prope
 - A `SetUrl` method to persist the original and shortened URLs.
 - A `GetUrl` method to retrieve the original URL using the shortened URL.
 
-1. Inside of the _Program.cs_ file, append the following interface definition to the bottom of the file.
+1. Append the following interface definition to the bottom of the _Program.cs_ file.
 
     ```csharp
     public interface IUrlShortenerGrain : IGrainWithStringKey
@@ -226,7 +220,7 @@ app.MapGet("/go/{shortenedRouteSegment}",
 
 ## Test the completed app
 
-The core functionality of the app is now complete and ready to be tested. The final app code should match the following:
+The core functionality of the app is now complete and ready to be tested. The final app code should match the following example:
 
 ```csharp
 using Microsoft.AspNetCore.Http.Extensions;

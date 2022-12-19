@@ -37,7 +37,7 @@ The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the te
 
 ### Using the PEReader class
 
-1. When targeting .NET Standard or .NET Framework, install the [System.Reflection.Metadata](https://www.nuget.org/packages/System.Reflection.Metadata/) NuGet package. When targeting .NET Core or .NET 5+, this step is not required, because this library is included in the shared framework.
+1. When targeting .NET Standard or .NET Framework, install the [System.Reflection.Metadata](https://www.nuget.org/packages/System.Reflection.Metadata/) NuGet package. When targeting .NET Core or .NET 5+, this step isn't required because this library is included in the shared framework.
 
 2. Create a <xref:System.IO.FileStream?displayProperty=nameWithType> instance to read data from the file you're testing.
 

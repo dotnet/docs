@@ -226,7 +226,7 @@ app.MapGet("/go/{shortenedRouteSegment}",
 
 ## Test the completed app
 
-The core functionality of the app is now complete and ready to be tested. The final example should match the following code:
+The core functionality of the app is now complete and ready to be tested. The final app code should match the following:
 
 ```csharp
 using Microsoft.AspNetCore.Http.Extensions;
@@ -302,24 +302,30 @@ public class UrlShortenerGrain : Grain, IUrlShortenerGrain
 
 ```
 
+Test the application in the browser using the following steps:
+
 # [Visual Studio](#tab/visual-studio)
 
-Start the app using the run button at the top of Visual Studio. The app should launch in the browser and display the familiar `Hello world!` text.
-
-# [Visual Studio Code](#tab/visual-studio-code)
-
-Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app.
-
-```dotnetcli
-dotnet run
-```
-
-The app should launch in the browser and display the familiar `Hello world!` text.
-
----
+1. Start the app using the run button at the top of Visual Studio. The app should launch in the browser and display the familiar `Hello world!` text.
 
 1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 
-    :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener.":::
+    :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio.":::
 
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
+
+# [Visual Studio Code](#tab/visual-studio-code)
+
+1. Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app. The app should launch in the browser and display the familiar `Hello world!` text.
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
+
+    :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio Code.":::
+
+1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
+
+---

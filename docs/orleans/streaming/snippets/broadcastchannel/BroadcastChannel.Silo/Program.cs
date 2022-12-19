@@ -1,8 +1,9 @@
-﻿using BroadcastChannel.Silo.Options;
+﻿using BroadcastChannel.GrainInterfaces;
+using BroadcastChannel.Silo.Options;
 using BroadcastChannel.Silo.Services;
 
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using IHost host = Host.CreateDefaultBuilder(args)
@@ -18,7 +19,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         silo.Services.AddHostedService<StockWorker>();
         silo.UseLocalhostClustering();
         silo.AddBroadcastChannel(
-            "live-stock-ticker",
+            ChannelNames.LiveStockTicker,
             options => options.FireAndForgetDelivery = false);
     })
     .Build();

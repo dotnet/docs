@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BroadcastChannel.GrainInterfaces\BroadcastChannel.GrainInterfaces.csproj" />
     <ProjectReference Include="..\BroadcastChannel.Grains\BroadcastChannel.Grains.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,6 @@
 ﻿using System.Net.Http.Json;
-using BroadcastChannel.Grains;
+
+using BroadcastChannel.GrainInterfaces;
 using BroadcastChannel.Silo.Options;
 using Microsoft.Extensions.Options;
 
@@ -13,7 +14,7 @@ internal sealed class StockClient : IDisposable
     public StockClient(HttpClient client, IOptions<AlphaVantageOptions> options) =>
         (_client, _options) = (client, options.Value);
     
-    public Task<Stock> GetStockAsync(string symbol) =>
+    public Task<Stock> GetStockAsync(StockSymbol symbol) =>
         _client.GetFromJsonAsync<Stock>(
             $"query?function=GLOBAL_QUOTE&symbol={symbol}&apikey={_options.ApiKey}")!;
 

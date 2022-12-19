@@ -1,6 +1,6 @@
 ﻿namespace BroadcastChannel.GrainInterfaces;
 
-public interface ILiveStockGrain
+public interface ILiveStockGrain : IGrainWithGuidKey
 {
-    
+    ValueTask<Stock> GetStock(StockSymbol symbol);
 }

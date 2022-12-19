@@ -1,11 +1,11 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace BroadcastChannel.GrainsInterfaces;
+namespace BroadcastChannel.GrainInterfaces;
 
 public sealed class GlobalQuote
 {
     [JsonPropertyName("01. symbol")]
-    public string Symbol { get; set; } = null!;
+    public StockSymbol Symbol { get; set; }
 
     [JsonPropertyName("02. open")]
     public decimal Open { get; set; }

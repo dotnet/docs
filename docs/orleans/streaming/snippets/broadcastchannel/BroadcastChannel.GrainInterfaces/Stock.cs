@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace BroadcastChannel.GrainsInterfaces;
+namespace BroadcastChannel.GrainInterfaces;
 
 public sealed class Stock
 {

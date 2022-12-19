@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
-using BroadcastChannel.Grains;
+
+using BroadcastChannel.GrainInterfaces;
 using Microsoft.Extensions.Hosting;
 using Orleans.BroadcastChannel;
 
@@ -9,13 +10,12 @@ internal sealed class StockWorker : BackgroundService
 {
     private readonly StockClient _stockClient;
     private readonly IBroadcastChannelProvider _provider;
-    private readonly List<string> _symbols =
-        new() { "MSFT", "GOOG", "AAPL", "AMZN", "TSLA" };
+    private readonly List<StockSymbol> _symbols = Enum.GetValues<StockSymbol>().ToList();
 
     public StockWorker(
         StockClient stockClient, IClusterClient clusterClient) =>
         (_stockClient, _provider) =
-        (stockClient, clusterClient.GetBroadcastChannelProvider("live-stock-ticker"));
+        (stockClient, clusterClient.GetBroadcastChannelProvider(ChannelNames.LiveStockTicker));
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -29,7 +29,7 @@ internal sealed class StockWorker : BackgroundService
                 tasks: _symbols.Select(selector: _stockClient.GetStockAsync));
 
             // Get the live stock ticker broadcast channel.
-            var channelId = ChannelId.Create("live-stock-ticker", Guid.Empty);
+            var channelId = ChannelId.Create(ChannelNames.LiveStockTicker, Guid.Empty);
             var channelWriter = _provider.GetChannelWriter<Stock>(channelId);
 
             // Broadcast all stock updates on this channel.

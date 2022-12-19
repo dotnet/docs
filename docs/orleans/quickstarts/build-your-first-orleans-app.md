@@ -124,13 +124,13 @@ app.Run();
 
 ## Create the URL shortener grain
 
-[Grains](/dotnet/orleans/overview#what-are-grains) are the most essential primitives and building blocks of Orleans applications. A grain is a class that inherits from the Grain base class, which manages various internal behaviors and integration points with the Orleans framework. Grains should also implement one of the interfaces listed below to define the type of grain key identifier. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a string or integer.
+[Grains](../overview.md) are the most essential primitives and building blocks of Orleans applications. A grain is a class that inherits from the Grain base class, which manages various internal behaviors and integration points with the Orleans framework. Grains should also implement one of the interfaces listed below to define the type of grain key identifier. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a string or integer.
 
-- IGrainWithGuidKey
-- IGrainWithIntegerKey
-- IGrainWithStringKey
-- IGrainWithGuidCompoundKey
-- IGrainWithIntegerCompoundKey
+- `IGrainWithGuidKey`
+- `IGrainWithIntegerKey`
+- `IGrainWithStringKey`
+- `IGrainWithGuidCompoundKey`
+- `IGrainWithIntegerCompoundKey`
 
 For this quickstart, you'll use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
 

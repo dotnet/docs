@@ -101,6 +101,8 @@ var builder = WebApplication.CreateBuilder();
 
 var app = builder.Build();
 
+app.MapGet("/", () => "Hello World!");
+
 app.Run();
 ```
 
@@ -120,6 +122,8 @@ builder.Host.UseOrleans(siloBuilder =>
 });
 
 var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
 
 app.Run();
 ```
@@ -187,7 +191,7 @@ Next, create two endpoints to utilize the Orleans grain and silo configurations:
 - A `/shorten/{*url}` endpoint to handle creating and storing a shortened version of the URL. The original, full URL is provided as a path parameter, and the shortened URL is returned to the user for later use.
 - A `/go/{*shortenedUrl}` endpoint to handle redirecting users to the original URL using the shortened URL that is supplied as a parameter.
 
-Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the end of the _Program.cs_ file:
+Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the end of the _Program.cs_ file before the `app.Run()` method call:
 
 ```csharp
 app.MapGet("/shorten/{*path}",
@@ -220,9 +224,83 @@ app.MapGet("/go/{shortenedRouteSegment}",
     });
 ```
 
-## Test the app
+## Test the completed app
 
-The core functionality of the app should now work as expected, so now you can test your code.
+The core functionality of the app is now complete and ready to be tested. The final example should match the following code:
+
+```csharp
+using Microsoft.AspNetCore.Http.Extensions;
+using Orleans.Runtime;
+
+var builder = WebApplication.CreateBuilder();
+
+builder.Host.UseOrleans(siloBuilder =>
+{
+    siloBuilder.UseLocalhostClustering();
+    siloBuilder.AddMemoryGrainStorage("urls");
+});
+
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.MapGet("/shorten/{*path}",
+    async (IGrainFactory grains, HttpRequest request, string path) =>
+    {
+        var shortenedRouteSegment = Guid.NewGuid().GetHashCode().ToString("X");
+        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
+        await shortenerGrain.SetUrl(shortenedRouteSegment, path);
+        var resultBuilder = new UriBuilder(request.GetEncodedUrl())
+        {
+            Path = $"/go/{shortenedRouteSegment}"
+        };
+
+        return Results.Ok(resultBuilder.Uri);
+    });
+
+app.MapGet("/go/{shortenedRouteSegment}",
+    async (IGrainFactory grains, string shortenedRouteSegment) =>
+    {
+        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
+        var url = await shortenerGrain.GetUrl();
+
+        return Results.Redirect(url);
+    });
+
+app.Run();
+
+public interface IUrlShortenerGrain : IGrainWithStringKey
+{
+    Task SetUrl(string shortenedRouteSegment, string fullUrl);
+    Task<string> GetUrl();
+}
+
+public class UrlShortenerGrain : Grain, IUrlShortenerGrain
+{
+    private IPersistentState<KeyValuePair<string, string>> _cache;
+
+    public UrlShortenerGrain(
+        [PersistentState(
+            stateName: "url",
+            storageName: "urls")]
+            IPersistentState<KeyValuePair<string, string>> state)
+    {
+        _cache = state;
+    }
+
+    public async Task SetUrl(string shortenedRouteSegment, string fullUrl)
+    {
+        _cache.State = new KeyValuePair<string, string>(shortenedRouteSegment, fullUrl);
+        await _cache.WriteStateAsync();
+    }
+
+    public Task<string> GetUrl()
+    {
+        return Task.FromResult(_cache.State.Value);
+    }
+}
+
+```
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -242,6 +320,6 @@ The app should launch in the browser and display the familiar `Hello world!` tex
 
 1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 
-:::image type="content" source="../media/orleans-url-shortener.png" alt-text="A screenshot showing the result of the URL shortener.":::
+    :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener.":::
 
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).

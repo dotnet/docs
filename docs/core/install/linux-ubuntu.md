@@ -235,26 +235,22 @@ When you install with a package manager, these libraries are installed for you. 
 - libgcc1
 - libgcc-s1 (for 22.x)
 - libgssapi-krb5-2
-- libicu52 (for 14.x)
 - libicu55 (for 16.x)
 - libicu60 (for 18.x)
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
 - libicu71 (for 22.10)
 - liblttng-ust1 (for 22.x)
-- libssl1.0.0 (for 14.x, 16.x)
+- libssl1.0.0 (for 16.x)
 - libssl1.1 (for 18.x, 20.x)
 - libssl3 (for 22.x)
 - libstdc++6
 - libunwind8 (for 22.x)
 - zlib1g
 
-For .NET apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-- libgdiplus (version 6.0.1 or later)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ## Next steps
 

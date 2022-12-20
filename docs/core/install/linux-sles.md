@@ -83,12 +83,7 @@ If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
-For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
 ## Next steps
 

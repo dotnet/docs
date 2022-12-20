@@ -68,12 +68,9 @@ If your distribution wasn't previously listed, and is debian-based, you may need
 
 ### Common dependencies
 
-For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-- [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+You can usually install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin).
 
 ## Scripted install
 

@@ -143,7 +143,7 @@ The compiler observes the following rules when it generates the ID strings:
 - For conversion operators only (`op_Implicit` and `op_Explicit`), the return value of the method is encoded as a `~` followed by the return type. For example:
      `<member name="M:System.Decimal.op_Explicit(System.Decimal arg)~System.Int32">` is the tag for the cast operator `public static explicit operator int (decimal value);` declared in the `System.Decimal` class.
 - For generic types, the name of the type is followed by a backtick and then a number that indicates the number of generic type parameters. For example:
-     `<member name="T:SampleClass``2">` is the tag for a type that is defined as `public class SampleClass<T, U>`.
+     `<member name="T:SampleClass`2">` is the tag for a type that is defined as `public class SampleClass<T, U>`.
      For methods that take generic types as parameters, the generic type parameters are specified as numbers prefaced with backticks (for example \`0,\`1). Each number represents a zero-based array notation for the type's generic parameters.
   - `ELEMENT_TYPE_PINNED` is represented as a '^' following the modified type. The C# compiler never generates this encoding.
   - `ELEMENT_TYPE_CMOD_REQ` is represented as a '&#124;' and the fully qualified name of the modifier class, following the modified type. The C# compiler never generates this encoding.

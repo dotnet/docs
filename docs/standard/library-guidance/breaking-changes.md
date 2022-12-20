@@ -92,7 +92,7 @@ public class Document
 
 > Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
 
-For more information about what .NET API changes break binary compatibility, see [.NET public contract compatibility](../../compatibility/library-change-rules.md#modifications-to-the-public-contract).
+For more information about what .NET API changes break binary compatibility, see [.NET public contract compatibility](../../core/compatibility/library-change-rules.md#modifications-to-the-public-contract).
 
 ## See also
 

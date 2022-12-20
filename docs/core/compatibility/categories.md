@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # How code changes can affect compatibility
 
-*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A [particular change](index.md) can affect compatibility in six different ways:
+*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A particular change can affect compatibility in six different ways:
 
 - [Behavioral change](#behavioral-change)
 - [Binary compatibility](#binary-compatibility)

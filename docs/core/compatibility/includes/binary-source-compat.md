@@ -1,4 +1,4 @@
 This article indicates whether each breaking change is *binary compatible* or *source compatible*:
 
-- **Binary compatible** - Existing binaries won't encounter a breaking change in behavior, such as failure to load or execute, or exhibit different run-time behavior.
+- **Binary compatible** - Existing binaries will load and execute successfully without recompilation, and the run-time behavior won't change.
 - **Source compatible** - Source code will compile successfully without changes when targeting the new runtime or using the new SDK or component.

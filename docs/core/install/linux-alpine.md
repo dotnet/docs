@@ -10,7 +10,7 @@ ms.date: 11/22/2022
 
 .NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
 
-If you're using Docker, consider using [official .NET Docker images](../docker/introduction.md#net-core-images) instead of installing .NET yourself.
+If you're using Docker, consider using [official .NET Docker images](../docker/introduction.md#net-images) instead of installing .NET yourself.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 

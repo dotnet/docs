@@ -17,19 +17,19 @@ Before upgrading major versions, check the breaking changes documentation for ch
 
 There are several types of breaking changes...
 
-- modifications to the public contract
-- behavioral changes
+- Modifications to the public contract
+- Behavioral changes
 - Platform support
 - Internal implementation changes
 - Code changes
 
-For more information about what is allowed or disallowed, see [Changes that affect compatibility](../compatibility/index.md)
+For more information about what is allowed or disallowed, see [Change rules for compatibility](../compatibility/library-change-rules.md).
 
 ## Types of compatibility
 
 Compatibility refers to the ability to compile or run code on a .NET implementation other than the one with which the code was originally developed.
 
-There are six different ways a change can affect compatibility...
+There are six different ways a change can affect compatibility:
 
 - Behavioral changes
 - Binary compatibility
@@ -38,10 +38,10 @@ There are six different ways a change can affect compatibility...
 - Backwards compatibility
 - Forward compatibility
 
-For more information, see [How code changes can affect compatibility](../compatibility/categories.md)
+For more information, see [How code changes can affect compatibility](../compatibility/categories.md).
 
 ## Find breaking changes
 
 Changes that affect compatibility are documented and should be reviewed before porting from .NET Framework to .NET or when upgrading to a newer version of .NET.
 
-For more information, see [Breaking changes reference overview](../compatibility/breaking-changes.md)
+For more information, see [Breaking changes in .NET](../compatibility/breaking-changes.md)

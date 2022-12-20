@@ -1,10 +1,10 @@
 ---
-title: Breaking changes reference overview
+title: .NET breaking changes reference
 description: Learn how to navigate the .NET breaking changes reference.
 ms.date: 11/16/2020
 ms.topic: conceptual
 ---
-# Breaking changes reference overview
+# Breaking changes in .NET
 
 Use this reference section to find breaking changes that might apply to you if you're upgrading your app to a newer version of .NET. You can navigate the table of contents either by .NET version or by technology area.
 

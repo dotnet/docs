@@ -1,10 +1,10 @@
 ---
-title: Types of breaking changes
+title: .NET API changes that affect compatibility
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 05/12/2021
 ms.topic: conceptual
 ---
-# Changes that affect compatibility
+# Change rules for compatibility
 
 Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across implementations of .NET. Although .NET 5 (and .NET Core) and later versions can be considered as a new technology compared to .NET Framework, two major factors limit the ability of this implementation of .NET to diverge from .NET Framework:
 
@@ -14,14 +14,14 @@ Throughout its history, .NET has attempted to maintain a high level of compatibi
 
 Along with compatibility across .NET implementations, developers expect a high level of compatibility across versions of a given implementation of .NET. In particular, code written for an earlier version of .NET Core should run seamlessly on .NET 5 or a later version. In fact, many developers expect that the new APIs found in newly released versions of .NET should also be compatible with the pre-release versions in which those APIs were introduced.
 
-This article outlines changes that affect compatibility and the way in which the .NET team evaluates each type of change. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests that modify the behavior of [existing .NET APIs](https://github.com/dotnet/runtime).
+This article outlines changes that affect compatibility and the way in which the .NET team evaluates each type of change. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests that modify the behavior of existing .NET APIs.
 
-The following sections describe the categories of changes made to .NET APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
+The following sections describe the categories of changes made to .NET APIs and their impact on application compatibility. Changes are either allowed (✔️), disallowed (❌), or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was (❓).
 
 > [!NOTE]
 >
 > - In addition to serving as a guide to how changes to .NET libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
-> - For information about the compatibility categories, for example, forward and backwards compatibility, see [Compatibility](categories.md).
+> - For information about the compatibility categories, for example, forward and backwards compatibility, see [How code changes can affect compatibility](categories.md).
 
 ## Modifications to the public contract
 
@@ -331,4 +331,6 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 ## See also
 
+- [Breaking changes in .NET](../compatibility/breaking-changes.md)
 - [Library design guidelines - breaking changes](../../standard/library-guidance/breaking-changes.md)
+- [.NET breaking change rules](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/breaking-change-rules.md)

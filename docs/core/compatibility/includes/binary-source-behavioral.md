@@ -1,7 +1,7 @@
 This article categorizes each breaking change as *binary incompatible*, *source incompatible*, or a *behavioral change*:
 
-- **Binary incompatible** - When run against the new runtime or component, existing binaries exhibit breaking behavior changes, such as failure to load or execute, and always require recompilation. For example, removing a method from an API is a binary-incompatible change because it causes a <xref:System.MissingMethodException> to be thrown at run time.
+- **Binary incompatible** - When run against the new runtime or component, existing binaries may encounter a breaking change in behavior, such as failure to load or execute, and if so, require recompilation.
 
-- **Source incompatible** - When recompiled using the new SDK or component or to target the new runtime, existing source code requires source changes. That is, there are new compiler errors or warnings that must be addressed.
+- **Source incompatible** - When recompiled using the new SDK or component or to target the new runtime, existing source code may require source changes to compile successfully.
 
-- **Behavioral change** - Existing code and binaries may experience different run-time behavior. If the new behavior is undesirable, existing binaries would need to be recompiled.
+- **Behavioral change** - Existing code and binaries may behave differently at run time. If the new behavior is undesirable, existing code would need to be updated and recompiled.

@@ -6,13 +6,13 @@ Due to internal changes to the type, <xref:System.Collections.Concurrent.Concurr
 
 #### Suggestion
 
-If it is necessary to serialize and deserialize a <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName> between the .NET Framework 4.5 and .NET Framework 4.5.1/4.5.2, an alternate serializer like the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> or <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName> serializer should be used instead of the <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=fullName>.Alternatively, because this issue is addressed in the .NET Framework 4.6, it may be solved by upgrading to that version of the .NET Framework.
+If it is necessary to serialize and deserialize a <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName> between the .NET Framework 4.5 and .NET Framework 4.5.1/4.5.2, a different serializer like the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> should be used instead of the <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=fullName>. Alternatively, because this issue is addressed in the .NET Framework 4.6, it may be solved by upgrading to that version of the .NET Framework.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5.1|
-|Type|Runtime|
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Minor   |
+| Version | 4.5.1   |
+| Type    | Runtime |
 
 #### Affected APIs
 

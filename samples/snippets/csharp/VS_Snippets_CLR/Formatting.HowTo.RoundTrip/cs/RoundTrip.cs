@@ -2,7 +2,6 @@
 using System.Globalization;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 public class Class1
 {
@@ -83,67 +82,6 @@ public class Class1
       //    Wrote 2008-06-12T18:45:15.0000000+07:00 to .\DateOff.txt.
       //    Read 6/12/2008 6:45:15 PM +07:00 from .\DateOff.txt.
       // </Snippet2>
-   }
-
-   private static void RoundTripTimeWithTimeZone()
-   {
-      // <Snippet4>
-      const string fileName = @".\DateWithTz.dat";
-
-      DateTime tempDate = new DateTime(2008, 9, 3, 19, 0, 0);
-      TimeZoneInfo tempTz = TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time");
-      DateInTimeZone dateWithTz = new DateInTimeZone(new DateTimeOffset(tempDate,
-                                      tempTz.GetUtcOffset(tempDate)),
-                                      tempTz);
-
-      // Store DateInTimeZone value to a file
-      FileStream outFile = new FileStream(fileName, FileMode.Create);
-      try
-      {
-         BinaryFormatter formatter = new BinaryFormatter();
-         formatter.Serialize(outFile, dateWithTz);
-         Console.WriteLine("Saving {0} {1} to {2}", dateWithTz.DateAndTime,
-                           dateWithTz.TimeZone.IsDaylightSavingTime(dateWithTz.DateAndTime) ?
-                           dateWithTz.TimeZone.DaylightName : dateWithTz.TimeZone.DaylightName,
-                           fileName);
-      }
-      catch (SerializationException)
-      {
-         Console.WriteLine("Unable to serialize time data to {0}.", fileName);
-      }
-      finally
-      {
-         outFile.Close();
-      }
-
-      // Retrieve DateInTimeZone value
-      if (File.Exists(fileName))
-      {
-         FileStream inFile = new FileStream(fileName, FileMode.Open);
-         DateInTimeZone dateWithTz2 = new DateInTimeZone();
-         try
-         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            dateWithTz2 = formatter.Deserialize(inFile) as DateInTimeZone;
-            Console.WriteLine("Restored {0} {1} from {2}", dateWithTz2.DateAndTime,
-                              dateWithTz2.TimeZone.IsDaylightSavingTime(dateWithTz2.DateAndTime) ?
-                              dateWithTz2.TimeZone.DaylightName : dateWithTz2.TimeZone.DaylightName,
-                              fileName);
-         }
-         catch (SerializationException)
-         {
-            Console.WriteLine("Unable to retrieve date and time information from {0}",
-                              fileName);
-         }
-         finally
-         {
-            inFile.Close();
-         }
-      }
-      // This example displays the following output to the console:
-      //    Saving 9/3/2008 7:00:00 PM -05:00 Central Daylight Time to .\DateWithTz.dat
-      //    Restored 9/3/2008 7:00:00 PM -05:00 Central Daylight Time from .\DateWithTz.dat
-      // </Snippet4>
    }
 }
 

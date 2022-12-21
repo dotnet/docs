@@ -1,29 +1,18 @@
 ﻿'<snippetUsingSerialization> 
 '<snippetUsing> 
-Imports System.Linq
-Imports System.Collections.Generic
-Imports System.Text
-Imports System.Data
-Imports System.Data.Common
-Imports System.Data.Objects
-Imports System.Data.Objects.DataClasses
-
-'</snippetUsing> 
-Imports System.Runtime.Serialization
-Imports System.Runtime.Serialization.Formatters.Binary
-Imports System.IO
-
-'</snippetUsingSerialization> 
-Imports System.Xml.Serialization
-Imports System.Data.Common.CommandTrees
-Imports System.Data.Metadata.Edm
-Imports System.Data.EntityClient
-
 '<snippetUsingEvents> 
 Imports System.ComponentModel
-
+Imports System.Data.Common
+Imports System.Data.EntityClient
+Imports System.Data.Metadata.Edm
+Imports System.Data.Objects
+Imports System.Data.Objects.DataClasses
 '</snippetUsingEvents> 
 Imports System.Data.SqlClient
+'</snippetUsing> 
+Imports System.IO
+'</snippetUsingSerialization> 
+Imports System.Xml.Serialization
 
 Class Source1
     '<snippetExecuteStoreCommandAndQueryForNewEntity> 
@@ -1202,80 +1191,6 @@ Class Source1
             Console.WriteLine(writer.ToString())
         End Using
     End Sub
-#Region "StreamToBinary"
-    '<snippetStreamToBinary> 
-    Public Shared Sub ReadFromBinaryStream()
-        Dim formatter As New BinaryFormatter()
-        Using context As New AdventureWorksEntities()
-            Try
-                ' Get the object graph for the selected customer 
-                ' as a binary stream. 
-                Dim stream As MemoryStream = SerializeToBinaryStream("Adams")
-
-                ' Read from the begining of the stream. 
-                stream.Seek(0, SeekOrigin.Begin)
-
-                ' Deserialize the customer graph from the binary stream 
-                ' and attach to an ObjectContext. 
-                Dim contact As Contact = DirectCast(formatter.Deserialize(stream), Contact)
-                context.Attach(contact)
-
-                ' Display information for each item 
-                ' in the orders that belong to the first contact. 
-                For Each order As SalesOrderHeader In contact.SalesOrderHeaders
-                    Console.WriteLine(String.Format("PO Number: {0}", order.PurchaseOrderNumber))
-                    Console.WriteLine(String.Format("Order Date: {0}", order.OrderDate.ToString()))
-                    Console.WriteLine("Order items:")
-                    For Each item As SalesOrderDetail In order.SalesOrderDetails
-                        Console.WriteLine(String.Format("Product: {0}, Quantity: {1}", _
-                                                          item.ProductID.ToString(), item.OrderQty.ToString()))
-                    Next
-                Next
-            Catch ex As SerializationException
-                Console.WriteLine("The object graph could not be deserialized from " & _
-                                  "the binary stream because of the following error:")
-                Console.WriteLine(ex.ToString())
-            End Try
-        End Using
-    End Sub
-    Private Shared Function SerializeToBinaryStream(ByVal lastName As String) As MemoryStream
-        Dim formatter As New BinaryFormatter()
-        Dim stream As New MemoryStream()
-
-        Using context As New AdventureWorksEntities()
-            '<snippetQueryTimeout> 
-            ' Specify a timeout for queries in this context, in seconds. 
-            context.CommandTimeout = 120
-            '</snippetQueryTimeout> 
-
-            ' Define a customer contact. 
-            Dim customer As Contact
-
-            ' Create a Contact query with a path that returns 
-            ' orders and items for a contact. 
-            Dim query As ObjectQuery(Of Contact) = context.Contacts.Include("SalesOrderHeaders.SalesOrderDetails")
-
-            Try
-                ' Return the first contact with the specified last name 
-                ' along with its related orders and items. 
-                customer = query.Where("it.LastName = @lastname", New ObjectParameter("lastname", lastName)).First()
-
-                ' Serialize the customer object graph. 
-                formatter.Serialize(stream, customer)
-            Catch ex As EntitySqlException
-                Throw New InvalidOperationException("The object query failed", ex)
-            Catch ex As EntityCommandExecutionException
-                Throw New InvalidOperationException("The object query failed", ex)
-            Catch ex As SerializationException
-                Throw New InvalidOperationException("The object graph could not be serialized", ex)
-            End Try
-
-            ' Return the streamed object graph. 
-            Return stream
-        End Using
-    End Function
-    '</snippetStreamToBinary> 
-#End Region
 
     Public Shared Function CleanupOrders() As Boolean
         Using context As New AdventureWorksEntities()
@@ -2918,8 +2833,8 @@ Class Source1
     Public Shared Sub DDLTest()
         '<snippetDDL>
         ' Initialize the connection string.
-        Dim connectionString As String = _
-            "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" & _
+        Dim connectionString As String =
+            "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" &
             "provider connection string=""Data Source=.;Initial Catalog=School;Integrated Security=True;MultipleActiveResultSets=True"""
 
         Using context As New SchoolEntities(connectionString)
@@ -2956,45 +2871,6 @@ Class Source1
         End Using
         '</snippetDDL>
     End Sub
-    ' 
-    ' public static void ObjectQueryTablePerHierarchy() 
-    ' { 
-    ' Console.WriteLine("Starting method 'ObjectQueryTablePerHierarchy'"); 
-    ' //<snippetObjectQueryTablePerHierarchy> 
-    ' try 
-    ' { 
-    ' using (SchoolEntities context = 
-    ' new SchoolEntities()) 
-    ' { 
-    ' int courseId = 1045; 
-    ' // Get all people for the supplied CourseID 
-    ' Course instructorQuery = context.Courses.Where( 
-    ' "it.CourseID = @courseID", new ObjectParameter 
-    ' ("courseID", courseId)).Include("People"). 
-    ' FirstOrDefault(); 
-    ' 
-    ' 
-    ' // Display instructors for the specified course. 
-    ' foreach (Instructor instructor in instructorQuery.People. 
-    ' OfType<Instructor>()) 
-    ' { 
-    ' Console.WriteLine("Instructor: " + instructor. 
-    ' LastName + ", " + instructor.FirstName); 
-    ' } 
-    ' } 
-    ' 
-    ' } 
-    ' catch (System.Data.MappingException e) 
-    ' { 
-    ' Console.WriteLine(e.ToString()); 
-    ' } 
-    ' catch (System.Data.EntityException e) 
-    ' { 
-    ' Console.WriteLine(e.ToString()); 
-    ' } 
-    ' //</snippetObjectQueryTablePerHierarchy> 
-    ' } 
-    ' 
 
 End Class
 

@@ -537,6 +537,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/orleans/deployment/snippets/service-fabric/stateless" #Orleans.ServiceFabric.Stateless.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/orleans/grains/snippets/transactions/Abstractions" #Abstractions.csproj
     schedule:
       interval: "weekly"
@@ -556,6 +562,54 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/orleans/grains/snippets/transactions/Server" #Server.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/host/configuration-guide/snippets/best-practices" #best-practices.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/host/configuration-guide/snippets/configuration" #configuration.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/host/configuration-guide/snippets/custom-serialization" #custom.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/tutorials-and-samples/snippets/custom-grain-storage" #GrainStorage.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/tutorials-and-samples/snippets/minimal/Client" #Client.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/tutorials-and-samples/snippets/minimal/GrainInterfaces" #GrainInterfaces.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/tutorials-and-samples/snippets/minimal/Grains" #Grains.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/tutorials-and-samples/snippets/minimal/Silo" #Silo.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1144,12 +1198,6 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb" #encryptxml.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementX509/vb" #encryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

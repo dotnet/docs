@@ -288,6 +288,9 @@ WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>(json
 Console.WriteLine(value is WeatherForecastWithCity); // True
 ```
 
+> [!NOTE]
+> The type discriminator must be placed at the start of the JSON object, grouped together with other metadata properties like `$id` and `$ref`.
+
 ```vb
 Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)
 Console.WriteLine(value is WeatherForecastWithCity) // True
@@ -328,7 +331,7 @@ Console.WriteLine(json)
 '  }
 ```
 
-While the API supports mixing and matching type discriminator configurations, it is not recommended. The general recommendation is to use either all `string` type discriminators, all `int` type discriminators, or no discriminators at all. The following example shows how to mix and match type discriminator configurations:
+While the API supports mixing and matching type discriminator configurations, it's not recommended. The general recommendation is to use either all `string` type discriminators, all `int` type discriminators, or no discriminators at all. The following example shows how to mix and match type discriminator configurations:
 
 ```csharp
 [JsonDerivedType(typeof(ThreeDimensionalPoint), typeDiscriminator: 3)]
@@ -485,7 +488,7 @@ Console.WriteLine(json)
 ```
 
 > [!TIP]
-> Avoid a <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType> if it conflicts with a property in your type hierarchy.
+> Avoid using a <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType> that conflicts with a property in your type hierarchy.
 
 ### Handle unknown derived types
 

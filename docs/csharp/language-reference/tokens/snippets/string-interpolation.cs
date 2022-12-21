@@ -14,6 +14,8 @@ public class StringInterpolation
         Console.WriteLine();
         MultiLineExpression();
         Console.WriteLine();
+        RawStrings.Examples();
+        Console.WriteLine();
     }
 
     private static void CompareWithCompositeFormatting()
@@ -125,6 +127,5 @@ public class StringInterpolation
         Console.WriteLine(pointMessage);
         // output:  The point {2, 3} is 3.605551275463989 from the origin.
         // </RawInterpolatedLiteralStringWithBraces>
-
     }
 }

@@ -246,4 +246,4 @@ For more information, see the following resources:
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
-- [ILLInk.Tasks](../deploying/trimming/trim-self-contained.md)
+- [Trim self-contained deployments](../deploying/trimming/trim-self-contained.md)

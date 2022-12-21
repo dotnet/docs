@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/08/2022
+ms.date: 12/08/2022
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -456,6 +456,7 @@ Numerous MSBuild properties are available to fine tune trimming, which is a feat
 
 The following MSBuild properties are documented in this section:
 
+- [ContinuousIntegrationBuild](#continuousintegrationbuild)
 - [CopyDebugSymbolFilesFromPackages](#copydebugsymbolfilesfrompackages)
 - [CopyDocumentationFilesFromPackages](#copydocumentationfilesfrompackages)
 - [DisableImplicitFrameworkDefines](#disableimplicitframeworkdefines)
@@ -468,6 +469,26 @@ The following MSBuild properties are documented in this section:
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
+
+### ContinuousIntegrationBuild
+
+The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger won't be able to find local source files if file paths are normalized.
+
+You can use your CI system's variable to conditionally set the `ContinuousIntegrationBuild` property. For example, the variable name for Azure Pipelines is `TF_BUILD`:
+
+```xml
+<PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
+  <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+</PropertyGroup>
+```
+
+For GitHub Actions, the variable name is `GITHUB_ACTIONS`:
+
+```xml
+<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+  <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+</PropertyGroup>
+```
 
 ### CopyDebugSymbolFilesFromPackages
 
@@ -784,8 +805,8 @@ The following table shows the available option values in .NET 5 and later versio
 |-|-|-|
 | `None` | `AllDisabledByDefault` | All rules are disabled. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
 | `Default` | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `Minimum` | N/A | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
-| `Recommended` | N/A | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
+| `Minimum` | N/A | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_minimum.editorconfig* file. |
+| `Recommended` | N/A | More aggressive mode than `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_recommended.editorconfig* file. |
 | `All` | `AllEnabledByDefault` | All rules are enabled as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 
 > [!NOTE]
@@ -999,6 +1020,7 @@ The following MSBuild properties are documented in this section:
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [DisableTransitiveFrameworkReferenceDownloads](#disabletransitiveframeworkreferencedownloads)
 - [DisableTransitiveProjectReferences](#disabletransitiveprojectreferences)
+- [ManagePackageVersionsCentrally](#managepackageversionscentrally)
 - [Restore-related properties](#restore-related-properties)
 - [UseMauiEssentials](#usemauiessentials)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
@@ -1050,6 +1072,32 @@ If you set this property to `true`, you can add explicit references to just the 
   <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
 </PropertyGroup>
 ```
+
+### ManagePackageVersionsCentrally
+
+The `ManagePackageVersionsCentrally` property was introduced in .NET 7. By setting it to `true` in a *Directory.Packages.props* file in the root of your repository, you can manage common dependencies in your projects from one location. Add versions for common package dependencies using `PackageVersion` items in the *Directory.Packages.props* file. Then, in the individual project files, you can omit `Version` attributes from any [`PackageReference`](#packagereference) items that refer to centrally managed packages.
+
+Example *Directory.Packages.props* file:
+
+```xml
+<PropertyGroup>
+  <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+</PropertyGroup>
+...
+<ItemGroup>
+  <PackageVersion Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+</ItemGroup>
+```
+
+Individual project file:
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.Configuration" />
+</ItemGroup>
+```
+
+For more information, see [central package management (CPM)](/nuget/consume-packages/central-package-management).
 
 ### Restore-related properties
 

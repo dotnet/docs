@@ -1,6 +1,6 @@
 ---
-title: "XML documentation comments - document APIs using /// comments"
-description: Learn about XML documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
+title: "Documentation comments - document APIs using /// comments"
+description: Learn about documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
 ms.date: 06/17/2021
 f1_keywords:
   - "cs.xml"
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "XML documentation comments [C#]"
 ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
 ---
-# XML documentation comments
+# Documentation comments
 
 C# source files can have structured comments that produce API documentation for the types defined in those files. The C# compiler produces an *XML* file that contains structured data representing the comments and the API signatures. Other tools can process that XML output to create human-readable documentation in the form of web pages or PDF files, for example.
 
@@ -143,7 +143,7 @@ The compiler observes the following rules when it generates the ID strings:
 - For conversion operators only (`op_Implicit` and `op_Explicit`), the return value of the method is encoded as a `~` followed by the return type. For example:
      `<member name="M:System.Decimal.op_Explicit(System.Decimal arg)~System.Int32">` is the tag for the cast operator `public static explicit operator int (decimal value);` declared in the `System.Decimal` class.
 - For generic types, the name of the type is followed by a backtick and then a number that indicates the number of generic type parameters. For example:
-     `<member name="T:SampleClass``2">` is the tag for a type that is defined as `public class SampleClass<T, U>`.
+     ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.
      For methods that take generic types as parameters, the generic type parameters are specified as numbers prefaced with backticks (for example \`0,\`1). Each number represents a zero-based array notation for the type's generic parameters.
   - `ELEMENT_TYPE_PINNED` is represented as a '^' following the modified type. The C# compiler never generates this encoding.
   - `ELEMENT_TYPE_CMOD_REQ` is represented as a '&#124;' and the fully qualified name of the modifier class, following the modified type. The C# compiler never generates this encoding.

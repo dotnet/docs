@@ -40,7 +40,7 @@ private static void EvaluateText(string text)
 You can now rewrite the previous code as follows:
 
 ```csharp
-[GeneratedRegex("abc|def", RegexOptions.IgnoreCase | RegexOptions.Compiled, "en-US")]
+[GeneratedRegex("abc|def", RegexOptions.IgnoreCase, "en-US")]
 private static partial Regex AbcOrDefGeneratedRegex();
 
 private static void EvaluateText(string text)
@@ -53,6 +53,9 @@ private static void EvaluateText(string text)
 ```
 
 The generated implementation of `AbcOrDefGeneratedRegex()` similarly caches a singleton `Regex` instance, so no additional caching is needed to consume code.
+
+> [!TIP]
+> The `RegexOptions.Compiled` flag is ignored by the source generator, thus making it no longer needed in the source generated version.
 
 :::image type="content" source="media/regular-expression-source-generators/cached-instance.png" alt-text="Cached regex static field":::
 

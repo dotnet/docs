@@ -282,8 +282,8 @@ The rules are:
 
 Orleans supports transmission of arbitrary types at runtime and therefore the in-built code generator cannot determine the entire set of types that will be transmitted ahead of time. Additionally, certain types cannot have serializers generated for them because they are inaccessible (for example, `private`) or have inaccessible fields (for example, `readonly`). Therefore, there is a need for just-in-time serialization of types that were unexpected or could not have serializers generated ahead of time. The serializer responsible for these types is called the *fallback serializer*. Orleans ships with two fallback serializers:
 
-* <xref:Orleans.Serialization.BinaryFormatterSerializer?displayProperty=fullName> which uses .NET's <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>; and
-* <xref:Orleans.Serialization.ILBasedSerializer?displayProperty=fullName> which emits [CIL](../../../standard/glossary.md#il) instructions at runtime to create serializers that leverage Orleans' serialization framework to serialize each field. This means that if an inaccessible type `MyPrivateType` contains a field `MyType` which has a custom serializer, that custom serializer will be used to serialize it.
+* <xref:Orleans.Serialization.BinaryFormatterSerializer?displayProperty=fullName>, which uses .NET's <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>; and
+* <xref:Orleans.Serialization.ILBasedSerializer?displayProperty=fullName>, which emits [CIL](../../../standard/glossary.md#il) instructions at runtime to create serializers that leverage Orleans' serialization framework to serialize each field. This means that if an inaccessible type `MyPrivateType` contains a field `MyType` which has a custom serializer, that custom serializer will be used to serialize it.
 
 The fallback serializer can be configured using the <xref:Orleans.Configuration.SerializationProviderOptions.FallbackSerializationProvider> property on both <xref:Orleans.Runtime.Configuration.ClientConfiguration> on the client and <xref:Orleans.Runtime.Configuration.GlobalConfiguration> on the silos.
 

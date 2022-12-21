@@ -3,8 +3,6 @@ Option Strict On
 
 Imports System.Globalization
 Imports System.IO
-Imports System.Runtime.Serialization
-Imports System.Runtime.Serialization.Formatters.Binary
 
 Module modMain
 
@@ -13,7 +11,6 @@ Module modMain
         Console.WriteLine()
         RoundTripDateTimeOffset()
         Console.WriteLine()
-        RoundTripTimeWithTimeZone()
     End Sub
 
     Private Sub RoundTripDateTime()
@@ -77,55 +74,6 @@ Module modMain
         '    Read 6/12/2008 6:45:15 PM +07:00 from .\DateOff.txt.
         ' </Snippet2>
     End Sub
-
-    Private Sub RoundTripTimeWithTimeZone()
-        ' <Snippet4>
-        Const fileName As String = ".\DateWithTz.dat"
-
-        Dim tempDate As Date = #9/3/2008 7:00:00 PM#
-        Dim tempTz As TimeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time")
-        Dim dateWithTz As New DateInTimeZone(New DateTimeOffset(tempDate, _
-                                                 tempTz.GetUtcOffset(tempDate)), _
-                                             tempTz)
-
-        ' Store DateInTimeZone value to a file
-        Dim outFile As New FileStream(fileName, FileMode.Create)
-        Try
-            Dim formatter As New BinaryFormatter()
-            formatter.Serialize(outFile, dateWithTz)
-            Console.WriteLine("Saving {0} {1} to {2}", dateWithTz.DateAndTime, _
-                    IIf(dateWithTz.TimeZone.IsDaylightSavingTime(dateWithTz.DateAndTime), _
-                        dateWithTz.TimeZone.DaylightName, dateWithTz.TimeZone.DaylightName), _
-                    fileName)
-        Catch e As SerializationException
-            Console.WriteLine("Unable to serialize time data to {0}.", fileName)
-        Finally
-            outFile.Close()
-        End Try
-
-        ' Retrieve DateInTimeZone value
-        If File.Exists(fileName) Then
-            Dim inFile As New FileStream(fileName, FileMode.Open)
-            Dim dateWithTz2 As New DateInTimeZone()
-            Try
-                Dim formatter As New BinaryFormatter()
-                dateWithTz2 = DirectCast(formatter.Deserialize(inFile), DateInTimeZone)
-                Console.WriteLine("Restored {0} {1} from {2}", dateWithTz2.DateAndTime, _
-                                  IIf(dateWithTz2.TimeZone.IsDaylightSavingTime(dateWithTz2.DateAndTime), _
-                                  dateWithTz2.TimeZone.DaylightName, dateWithTz2.TimeZone.DaylightName), _
-                                  fileName)
-            Catch e As SerializationException
-                Console.WriteLine("Unable to retrieve date and time information from {0}", _
-                                  fileName)
-            Finally
-                inFile.Close
-            End Try
-        End If
-        ' This example displays the following output to the console:
-        '    Saving 9/3/2008 7:00:00 PM -05:00 Central Daylight Time to .\DateWithTz.dat
-        '    Restored 9/3/2008 7:00:00 PM -05:00 Central Daylight Time from .\DateWithTz.dat      
-        ' </Snippet4>
-    End Sub
 End Module
 
 ' <Snippet3>
@@ -138,7 +86,7 @@ End Module
 
     Public Sub New(date1 As DateTimeOffset, timeZone As TimeZoneInfo)
         If timeZone Is Nothing Then
-            Throw New ArgumentNullException("The time zone cannot be null.")
+            Throw New ArgumentNullException("timeZone", "The time zone cannot be null.")
         End If
         Me.thisDate = date1
         Me.tz = timeZone

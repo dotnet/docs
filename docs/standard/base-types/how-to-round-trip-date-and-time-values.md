@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: How to: Round-trip Date and Time Values"
 title: "How to: Round-trip Date and Time Values"
+description: "Learn how to round-trip date and time values"
 ms.date: 11/15/2022
 dev_langs:
   - "csharp"
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "formatting strings [.NET], round-trip values"
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
 ---
-# How to: Round-trip Date and Time Values
+# How to: Round-trip Date and time values
 
 In many applications, a date and time value is intended to unambiguously identify a single point in time. This article shows how to save and restore a <xref:System.DateTime> value, a <xref:System.DateTimeOffset> value, and a date and time value with time zone information so that the restored value identifies the same time as the saved value.
 

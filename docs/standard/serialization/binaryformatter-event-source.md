@@ -14,7 +14,7 @@ This functionality is not a substitute for a <xref:System.Runtime.Serialization.
 
 ## Description of events
 
-The `BinaryFormatter` event source has the well-known name `System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource`. Listeners may subscribe to 6 events.
+The `BinaryFormatter` event source has the well-known name `System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource`. Listeners can subscribe to six events.
 
 ### SerializationStart event (id = `10`)
 

@@ -808,7 +808,89 @@ let pascalsTriangle =
        [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |] |]
 ```
 
-And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
+As with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier:
+
+```fsharp
+// ✔️ OK
+let pascalsTriangle =
+    [| 
+        [| 1 |]
+        [| 1; 1 |]
+        [| 1; 2; 1 |]
+        [| 1; 3; 3; 1 |]
+        [| 1; 4; 6; 4; 1 |]
+        [| 1; 5; 10; 10; 5; 1 |]
+        [| 1; 6; 15; 20; 15; 6; 1 |]
+        [| 1; 7; 21; 35; 35; 21; 7; 1 |]
+        [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |] 
+    |]
+```
+
+If a list or array expression is the right-hand side of a binding, you may prefer to use "Stroustrup" style:
+
+```fsharp
+// ✔️ OK
+let pascalsTriangle = [| 
+   [| 1 |]
+   [| 1; 1 |]
+   [| 1; 2; 1 |]
+   [| 1; 3; 3; 1 |]
+   [| 1; 4; 6; 4; 1 |]
+   [| 1; 5; 10; 10; 5; 1 |]
+   [| 1; 6; 15; 20; 15; 6; 1 |]
+   [| 1; 7; 21; 35; 35; 21; 7; 1 |]
+   [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |] 
+|]
+```
+
+However, when a list or array expression is _not_ the right-hand side of a binding, such as when it's inside of another list or array, if that inner expression needs to span multiple lines, the brackets should go on their own lines:
+
+```fsharp
+// ✔️ OK - The outer list follows "Stroustrup" style, while the inner lists place their brackets on separate lines
+let fn a b = [ 
+    [
+        someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+        a
+    ]
+    [ 
+        b
+        someReallyLongValueThatWouldForceThisListToSpanMultipleLines 
+    ]
+]
+
+// ❌ Not okay
+let fn a b = [ [
+    someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+    a
+]; [
+    b
+    someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+] ]
+```
+
+The same rule applies for record types inside of arrays/lists:
+```fsharp
+// ✔️ OK - The outer list follows "Stroustrup" style, while the inner lists place their brackets on separate lines
+let fn a b = [ 
+    {
+        Foo = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+        Bar = a
+    }
+    { 
+        Foo = b
+        Bar = someReallyLongValueThatWouldForceThisListToSpanMultipleLines 
+    }
+]
+
+// ❌ Not okay
+let fn a b = [ {
+    Foo = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+    Bar = a
+}; {
+    Foo = b
+    Bar = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+} ]
+```
 
 When generating arrays and lists programmatically, prefer `->` over `do ... yield` when a value is always generated:
 
@@ -883,18 +965,7 @@ Long record field expressions should use a new line and have one indent from the
   C = c }
 ```
 
-Placing the starting `{` on the same line as the binding, with the `}` on its own line (similar to the `Stroustrup` style commonly seen in other languages) after the members is possible: 
-
-```fsharp
-let rainbow = {
-    Boss1 = "Jeffrey"
-    Boss2 = "Jeffrey"
-    Boss3 = "Jeffrey"
-    Lackeys = [ "Zippy"; "George"; "Bungle" ]
-}
-```
-
-Placing the `{` and `}` on new lines with contents indented is also possible:
+As with array and list expressions, placing the `{` and `}` on their own lines will make moving code around and piping into functions easier:
 
 ```fsharp
 // ✔️ OK
@@ -905,6 +976,18 @@ let rainbow =
         Boss3 = "Jeffrey"
         Lackeys = ["Zippy"; "George"; "Bungle"]
     }
+```
+
+Placing the starting `{` on the same line as the binding, with the `}` on its own line (referred to here as `Stroustrup` style) after the members is also possible when the record is the right-hand side of a binding expression:
+
+```fsharp
+// ✔️ OK
+let rainbow = {
+    Boss1 = "Jeffrey"
+    Boss2 = "Jeffrey"
+    Boss3 = "Jeffrey"
+    Lackeys = [ "Zippy"; "George"; "Bungle" ]
+}
 ```
 
 The same rules apply for list and array elements.
@@ -938,10 +1021,11 @@ let newState =
     {
         state with
             Foo =
-                Some {
-                    F1 = 0
-                    F2 = ""
-                }
+                Some 
+                    {
+                        F1 = 0
+                        F2 = ""
+                    }
     }
 ```
 
@@ -956,10 +1040,7 @@ let newState =
                 F2 = ""
             }
     }
-
-
 ```
-
 
 ### Formatting pattern matching
 
@@ -1327,15 +1408,22 @@ let d = while f do
     printfn "%A" x
 ```
 
-You may also prefer to use "Stroustrup" style for some bindings:
+Record type instantiations may also place the brackets on their own lines:
 
 ```fsharp
-type File =
-    member this.SaveAsync(path: string) : Async<unit> = async {
-        // IO operation
-        return ()
+// ✔️ OK
+let c =
+    { 
+        Name = "Bilbo"
+        Age = 111
+        Region = "The Shire" 
     }
+```
 
+You may also prefer to use "Stroustrup" style, with the opening `{` on the same line as the binding name:
+
+```fsharp
+// ✔️ OK
 let c = {
     Name = "Bilbo"
     Age = 111
@@ -1469,7 +1557,40 @@ For any custom operator that starts with `*` and that has more than one characte
 
 ### Formatting record declarations
 
-For record declarations, indent `{` in type definition by four spaces, start the field list on the same line and align any members with the `{` token:
+For record declarations, by default you should indent `{` in type definition by four spaces, start the field list on the same line and align any members with the `{` token:
+
+```fsharp
+// ✔️ OK
+type PostalAddress =
+    { Address: string
+      City: string
+      Zip: string }
+```
+
+It is also common to prefer putting brackets on their own line, with members indented by an additional four spaces:
+
+```fsharp
+// ✔️ OK
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string 
+    }
+```
+
+You may also put the `{` at the end of the type declaration line like ("stroustrup" style):
+
+```fsharp
+// ✔️ OK
+type PostalAddress = {
+    Address: string
+    City: string
+    Zip: string
+}
+```
+
+If additional members are needed, whenever possible, don't use `with`/`end`:.
 
 ```fsharp
 // ✔️ OK
@@ -1478,22 +1599,56 @@ type PostalAddress =
       City: string
       Zip: string }
     member x.ZipAndCity = $"{x.Zip} {x.City}"
+
+// ❌ Not OK, code formatters will reformat to the above by default
+type PostalAddress =
+    { Address: string
+      City: string
+      Zip: string }
+  with
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+  end
+  
+// ✔️ OK
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string 
+    }
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+    
+// ❌ Not OK, code formatters will reformat to the above by default
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string 
+    }
+    with
+        member x.ZipAndCity = $"{x.Zip} {x.City}"
+    end
 ```
 
-Don't place the `{` at the end of the type declaration line, and don't use `with`/`end` for members, which are redundant.
+The exception to this style rule is if you format records according to the "Stroustrup" style. In this situation, the `with` keyword is required if you want to implement an interface or add additional members: 
 
 ```fsharp
-// ❌ Not OK, code formatters will reformat to the above by default
+// ✔️ OK
 type PostalAddress = {
     Address: string
     City: string
     Zip: string
-  }
-  with
+} with
     member x.ZipAndCity = $"{x.Zip} {x.City}"
-  end
+   
+// ❌ Not OK, this is currently invalid F# code
+type PostalAddress = {
+    Address: string
+    City: string
+    Zip: string
+} 
+member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
-
 When XML documentation is added for record fields, it becomes normal to indent and add whitespace:
 
 ```fsharp
@@ -1540,6 +1695,9 @@ type MyRecord =
     }
     interface IMyInterface
 ```
+
+These same rules apply for anonymous record type aliases:
+
 
 ### Formatting discriminated union declarations
 
@@ -1739,6 +1897,25 @@ let myNumber =
 The domain that's being modeled should ultimately drive the naming convention.
 If it's idiomatic to use a different convention, that convention should be used instead.
 
+If the return value of an expression is a computation expression, prefer putting the computation expression keyword name on its own line
+
+```fsharp
+// ✔️ OK
+let foo () = 
+    async {
+        let! value = getValue()
+        do! somethingElse()
+        return! anotherOperation value 
+    }
+    
+// ❌ Not OK, but formatters may allow this if preferred // TODO Should these just both be acceptable styles?
+let foo () = async {
+    let! value = getValue()
+    do! somethingElse()
+    return! anotherOperation value 
+}
+```
+
 ## Formatting types and type annotations
 
 This section discusses formatting types and type annotations. This includes formatting signature files with the `.fsi` extension.
@@ -1834,6 +2011,18 @@ type Sample
     ) =
     class
     end
+```
+
+// TODO: Should Stroustroup be allowed for inline anonymous record types here, and if so should there be any restrictions/exceptions?
+
+```fsharp
+let f
+    (x : {|
+        x : int
+        y : AReallyLongTypeThatIsMuchLongerThan40Characters
+     |})
+    =
+    x
 ```
 
 ### Formatting return type annotations

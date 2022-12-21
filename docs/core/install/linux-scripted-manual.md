@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/08/2022
+ms.date: 12/21/2022
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries
@@ -23,8 +23,9 @@ The following table lists the support status of each version of .NET (and .NET C
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
 | 7 (STS)     | 5             |
-| 6 (LTS)     | 3.0           |
-| 3.1 (LTS)   | 2.2           |
+| 6 (LTS)     | 3.1           |
+|             | 3.0           |
+|             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |

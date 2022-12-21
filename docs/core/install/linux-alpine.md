@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/22/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -33,13 +33,15 @@ The following table is a list of currently supported .NET releases and the versi
 | Alpine | .NET      |
 |--------|-----------|
 | 3.17   | 7, 6      |
-| 3.16   | 7, 6, 3.1 |
-| 3.15   | 7, 6, 3.1 |
-| 3.14   | 6, 3.1    |
+| 3.16   | 7, 6      |
+| 3.15   | 7, 6      |
+| 3.14   | 6         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Supported architectures
+
+The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
 | Architecture     | .NET 6  | .NET 7  |
 |------------------|---------|---------|
@@ -48,8 +50,8 @@ The following table is a list of currently supported .NET releases and the versi
 | aarch64          | ✔️ 3.16 | ✔️ 3.17 |
 | armv7            | ✔️ 3.16 | ✔️ 3.17 |
 | armhf            | ❌      | ❌      |
-| s390x            | ✔️ 3.17 | ❌      |
-| ppc64le          | ❌      | ❌      |
+| s390x            | ✔️ 3.17 | ✔️ 3.17 |
+| ppc64le          | ❌      | ✔️ edge |
 | riscv64          | ❌      | ❌      |
 
 ## Install preview versions

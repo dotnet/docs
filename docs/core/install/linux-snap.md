@@ -3,7 +3,7 @@ title: Install .NET on Linux with Snap
 description: Demonstrates how to install either the .NET SDK or the .NET Runtime on Linux with Snap.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime with Snap
@@ -31,8 +31,9 @@ The following table lists the support status of each version of .NET (and .NET C
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
 | 7 (STS)     | 5             |
-| 6 (LTS)     | 3.0           |
-| 3.1 (LTS)   | 2.2           |
+| 6 (LTS)     | 3.1           |
+|             | 3.0           |
+|             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |

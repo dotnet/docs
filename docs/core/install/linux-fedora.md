@@ -3,7 +3,7 @@ title: Install .NET on Fedora
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -25,8 +25,8 @@ The following table is a list of currently supported .NET releases and the versi
 | Fedora | .NET      |
 |--------|-----------|
 | 37     | 6         |
-| 36     | 6, 3.1    |
-| 35     | 6, 3.1    |
+| 36     | 6         |
+| 35     | 6         |
 
 > [!IMPORTANT]
 > .NET 7 isn't yet ready for Fedora. This article will be updated when it's available.
@@ -36,10 +36,6 @@ The following table is a list of currently supported .NET releases and the versi
 ## Install .NET 6
 
 [!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
-
-## Install .NET Core 3.1
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## Install preview versions
 
@@ -79,7 +75,7 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
     sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
     ```
 
-[!INCLUDE [linux-dnf-install-31](./includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-dnf-install-60](./includes/linux-install-60-dnf.md)]
 
 ## How to install other versions
 

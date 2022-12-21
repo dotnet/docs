@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Globalization;
 using System.IO;
-using System.Runtime.Serialization;
 
 public class Class1
 {
@@ -11,7 +10,6 @@ public class Class1
       Console.WriteLine();
       RoundTripDateTimeOffset();
       Console.WriteLine();
-      RoundTripTimeWithTimeZone();
    }
 
    private static void RoundTripDateTime()
@@ -96,7 +94,7 @@ public class Class1
    public DateInTimeZone(DateTimeOffset date, TimeZoneInfo timeZone)
    {
       if (timeZone == null)
-         throw new ArgumentNullException("The time zone cannot be null.");
+         throw new ArgumentNullException("timeZone", "The time zone cannot be null.");
 
       this.thisDate = date;
       this.tz = timeZone;

@@ -3,7 +3,6 @@ Option Strict On
 
 Imports System.Globalization
 Imports System.IO
-Imports System.Runtime.Serialization
 
 Module modMain
 
@@ -12,7 +11,6 @@ Module modMain
         Console.WriteLine()
         RoundTripDateTimeOffset()
         Console.WriteLine()
-        RoundTripTimeWithTimeZone()
     End Sub
 
     Private Sub RoundTripDateTime()
@@ -88,7 +86,7 @@ End Module
 
     Public Sub New(date1 As DateTimeOffset, timeZone As TimeZoneInfo)
         If timeZone Is Nothing Then
-            Throw New ArgumentNullException("The time zone cannot be null.")
+            Throw New ArgumentNullException("timeZone", "The time zone cannot be null.")
         End If
         Me.thisDate = date1
         Me.tz = timeZone

@@ -3,7 +3,7 @@ title: Breaking changes can affect porting your app
 description: Breaking changes can occur when porting your code from .NET framework to .NET and between versions of .NET. This article describes categories of breaking changes, ways a change can affect compatibility and how to find breaking changes.
 author: StephenBonikowsky
 ms.author: stebon
-ms.date: 06/14/2021
+ms.date: 12/22/2022
 ---
 # Breaking changes may occur when porting code
 
@@ -13,9 +13,9 @@ Microsoft strives to maintain a high level of compatibility between .NET version
 
 Before upgrading major versions, check the breaking changes documentation for changes that might affect you.
 
-## Categories of breaking changes
+## Changes that affect compatibility
 
-There are several types of breaking changes...
+There are several types of changes that library authors can make that affect compatibility, including:
 
 - Modifications to the public contract
 - Behavioral changes
@@ -23,7 +23,7 @@ There are several types of breaking changes...
 - Internal implementation changes
 - Code changes
 
-For more information about what is allowed or disallowed, see [Change rules for compatibility](../compatibility/library-change-rules.md).
+For more information about what kind of changes are allowed or disallowed, see [Change rules for compatibility](../compatibility/library-change-rules.md).
 
 ## Types of compatibility
 
@@ -42,6 +42,4 @@ For more information, see [How code changes can affect compatibility](../compati
 
 ## Find breaking changes
 
-Changes that affect compatibility are documented and should be reviewed before porting from .NET Framework to .NET or when upgrading to a newer version of .NET.
-
-For more information, see [Breaking changes in .NET](../compatibility/breaking-changes.md)
+Changes that affect compatibility are documented and should be reviewed before porting from .NET Framework to .NET or when upgrading to a newer version of .NET. For a list of these breaking changes, see [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md).

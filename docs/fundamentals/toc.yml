@@ -1792,7 +1792,7 @@ items:
     - name: .NET version selection
       href: ../core/versions/selection.md
     - name: Compatibility
-      href: ../core/compatibility/library-change-rules.md
+      href: ../core/compatibility/breaking-changes.md
   - name: Configure .NET Runtime
     items:
     - name: Settings
@@ -3219,9 +3219,17 @@ items:
       - name: Telemetry
         href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
-      displayName: app compatibility
-      href: ../core/porting/breaking-changes.md
-  - name: Pre-Migration
+      items:
+      - name: Overview
+        displayName: app compatibility
+        href: ../core/porting/breaking-changes.md
+      - name: Breaking changes
+        href: ../core/compatibility/fx-core.md
+      - name: Unavailable technologies
+        href: ../core/porting/net-framework-tech-unavailable.md
+      - name: APIs that always throw
+        href: ../core/compatibility/unsupported-apis.md
+  - name: Pre-migration
     items:
     - name: Assess the portability of your project
       items:
@@ -3243,11 +3251,11 @@ items:
         href: ../core/porting/porting-approaches.md
       - name: Project structure
         href: ../core/porting/project-structure.md
-    - name: Application Porting Guides
+    - name: Application porting guides
       items:
       - name: Windows Forms
         href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false
       - name: Windows Presentation Foundation
         href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false
-      - name: Port C++/CLI projects
+      - name: C++/CLI projects
         href: ../core/porting/cpp-cli.md

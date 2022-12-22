@@ -1356,15 +1356,9 @@ items:
         href: core-libraries/6.0/xmlresolver-nullable.md
       - name: XNodeReader.GetAttribute behavior for invalid index
         href: core-libraries/6.0/xnodereader-getattribute.md
-- name: Changes from .NET Framework
-  items:
-  - name: Breaking changes
-    href: fx-core.md
-  - name: Unavailable technologies
-    href: ../porting/net-framework-tech-unavailable.md
-  - name: APIs that always throw
-    href: unsupported-apis.md
 - name: Resources
   items:
   - name: Compatibility definitions
     href: categories.md
+  - name: Rules for .NET library changes
+    href: library-change-rules.md

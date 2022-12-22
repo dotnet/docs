@@ -952,18 +952,46 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-Long record field expressions should use a new line and have one indent from the opening `{`:
+#### Multiline bracket formatting styles
 
-```fsharp
-{ A = a
-  B =
-    someFunctionCall
-        arg1
-        arg2
-        // ...
-        argX
-  C = c }
-```
+For records that span multiple lines, there are three commonly used formatting styles: `Cramped`, `Aligned`, and `Stroustrup`. The `Cramped` style has been the default style for F# code, as it tends to favor styles that allow the compiler to easily parse code. Both `Aligned` and `Stroustrup` styles allow for easier reordering of members, leading to code that may be easier to refactor, with the drawback that certain situations may result in slightly more verbose code.
+
+- `Cramped` Record style:
+The historical standard, and default F# record format. Opening brackets go on the same line as the first member, closing bracket on the same line as the last member.
+
+    ```fsharp
+    // "Cramped" style:
+    let rainbow = 
+        { Boss1 = "Jeffrey"
+          Boss2 = "Jeffrey"
+          Boss3 = "Jeffrey"
+          Lackeys = [ "Zippy"; "George"; "Bungle" ] }
+    ```
+
+- `Aligned`: Brackets each get their own line, aligned on the same column.
+
+    ```fsharp
+    // "Aligned" style:
+    let rainbow =
+        {
+            Boss1 = "Jeffrey"
+            Boss2 = "Jeffrey"
+            Boss3 = "Jeffrey"
+            Lackeys = ["Zippy"; "George"; "Bungle"]
+        }
+    ```
+
+- `Stroustrup`: Opening bracket goes on the same line as the binding, closing bracket gets its own line.
+
+    ```fsharp
+    // "Stroustrup" style:
+    let rainbow = {
+        Boss1 = "Jeffrey"
+        Boss2 = "Jeffrey"
+        Boss3 = "Jeffrey"
+        Lackeys = [ "Zippy"; "George"; "Bungle" ]
+    }
+    ```
 
 As with array and list expressions, placing the `{` and `}` on their own lines will make moving code around and piping into functions easier:
 
@@ -978,19 +1006,7 @@ let rainbow =
     }
 ```
 
-Placing the starting `{` on the same line as the binding, with the `}` on its own line (referred to here as `Stroustrup` style) after the members is also possible when the record is the right-hand side of a binding expression:
-
-```fsharp
-// ✔️ OK
-let rainbow = {
-    Boss1 = "Jeffrey"
-    Boss2 = "Jeffrey"
-    Boss3 = "Jeffrey"
-    Lackeys = [ "Zippy"; "George"; "Bungle" ]
-}
-```
-
-The same rules apply for list and array elements.
+The same formatting style rules apply for list and array elements.
 
 ### Formatting copy-and-update record expressions
 
@@ -1029,8 +1045,7 @@ let newState =
     }
 ```
 
-You may also prefer the "Stroustrup" style of keeping the opening brace on the same line as the binding: 
-
+You may also prefer the "Stroustrup" style of keeping the opening brace on the same line as the binding:
 ```fsharp
 let newState =
     { state with
@@ -1040,6 +1055,26 @@ let newState =
                 F2 = ""
             }
     }
+```
+
+**Note**: If using `Stroustrup` style, members _must_ be indented further than the copied record name
+
+```fsharp
+// ✔️ OK
+let bilbo = {
+    hobbit with 
+        Name = "Bilbo"
+        Age = 111
+        Region = "The Shire" 
+}
+
+// ❌ Not OK - Results in compiler error: "Possible incorrect indentation: this token is offside of context started at position"
+let bilbo = {
+    hobbit with 
+    Name = "Bilbo"
+    Age = 111
+    Region = "The Shire" 
+}
 ```
 
 ### Formatting pattern matching
@@ -1259,14 +1294,13 @@ let comparer =
 You may also prefer to use "Stroustrup" style:
 
 ```fsharp
-let comparer =
-    { new IComparer<string> with
+let comparer = { 
+    new IComparer<string> with
         member x.Compare(s1, s2) =
             let rev (s: String) = new String(Array.rev (s.ToCharArray()))
             let reversed = rev s1
             reversed.CompareTo(rev s2)
-    }
-
+}
 ```
 
 ### Formatting index/slice expressions
@@ -1412,7 +1446,7 @@ Record type instantiations may also place the brackets on their own lines:
 
 ```fsharp
 // ✔️ OK
-let c =
+let bilbo =
     { 
         Name = "Bilbo"
         Age = 111
@@ -1424,7 +1458,7 @@ You may also prefer to use "Stroustrup" style, with the opening `{` on the same 
 
 ```fsharp
 // ✔️ OK
-let c = {
+let bilbo = {
     Name = "Bilbo"
     Age = 111
     Region = "The Shire"
@@ -1897,7 +1931,7 @@ let myNumber =
 The domain that's being modeled should ultimately drive the naming convention.
 If it's idiomatic to use a different convention, that convention should be used instead.
 
-If the return value of an expression is a computation expression, prefer putting the computation expression keyword name on its own line
+If the return value of an expression is a computation expression, prefer putting the computation expression keyword name on its own line:
 
 ```fsharp
 // ✔️ OK
@@ -1907,14 +1941,19 @@ let foo () =
         do! somethingElse()
         return! anotherOperation value 
     }
-    
-// ❌ Not OK, but formatters may allow this if preferred // TODO Should these just both be acceptable styles?
+```
+
+You may also prefer to put the computation expression on the same line as the binding name:
+```fsharp
+// ✔️ OK
 let foo () = async {
     let! value = getValue()
     do! somethingElse()
     return! anotherOperation value 
 }
 ```
+
+Whichever your preference, you should aim to remain consistent throughout your codebase.
 
 ## Formatting types and type annotations
 
@@ -2013,7 +2052,7 @@ type Sample
     end
 ```
 
-// TODO: Should Stroustroup be allowed for inline anonymous record types here, and if so should there be any restrictions/exceptions?
+For inline anonymous record types, you may also use `Stroustrup` style:
 
 ```fsharp
 let f

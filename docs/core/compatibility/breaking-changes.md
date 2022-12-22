@@ -1,12 +1,14 @@
 ---
 title: .NET breaking changes reference
 description: Learn how to navigate the .NET breaking changes reference.
-ms.date: 11/16/2020
+ms.date: 12/22/2022
 ms.topic: conceptual
 ---
 # Breaking changes in .NET
 
 Use this reference section to find breaking changes that might apply to you if you're upgrading your app to a newer version of .NET. You can navigate the table of contents either by .NET version or by technology area.
+
+If you're looking for breaking changes from .NET Framework to .NET (Core), see .
 
 ## GitHub issues and announcements
 
@@ -19,3 +21,4 @@ You can also view individual issues that detail the breaking changes introduced 
 ## See also
 
 - [Migrate from .NET Framework to .NET Core](../porting/index.md)
+- [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)

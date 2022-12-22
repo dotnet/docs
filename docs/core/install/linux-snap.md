@@ -51,8 +51,6 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 |--------------|--------------------------|
 | 7 (STS)      | `7.0` or `latest/stable` |
 | 6 (LTS)      | `6.0` or `lts/stable`    |
-| 5            | `5.0` |
-| 3.1 (LTS)    | `3.1` |
 
 Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `7.0` is specified:
 
@@ -77,7 +75,7 @@ Snap packages for the .NET Runtime are each published under their own package id
 | 7 (STS)           | `dotnet-runtime-70` |
 | 6 (LTS)           | `dotnet-runtime-60` |
 | 5                 | `dotnet-runtime-50` |
-| 3.1 (LTS)         | `dotnet-runtime-31` |
+| 3.1               | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |
 | 2.1               | `dotnet-runtime-21` |

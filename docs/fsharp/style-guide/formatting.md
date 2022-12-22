@@ -626,8 +626,8 @@ list[..^1]
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
 Write them on one line when:
 
-- `cond`, `e1`, and `e2` are short
-- `e1` and `e2` are not `if/then/else` expressions themselves.
+* `cond`, `e1`, and `e2` are short
+* `e1` and `e2` are not `if/then/else` expressions themselves.
 
 ```fsharp
 // ✔️ OK
@@ -843,7 +843,7 @@ let pascalsTriangle = [|
 |]
 ```
 
-However, when a list or array expression is _not_ the right-hand side of a binding, such as when it's inside of another list or array, if that inner expression needs to span multiple lines, the brackets should go on their own lines:
+However, when a list or array expression is *not* the right-hand side of a binding, such as when it's inside of another list or array, if that inner expression needs to span multiple lines, the brackets should go on their own lines:
 
 ```fsharp
 // ✔️ OK - The outer list follows "Stroustrup" style, while the inner lists place their brackets on separate lines
@@ -869,6 +869,7 @@ let fn a b = [ [
 ```
 
 The same rule applies for record types inside of arrays/lists:
+
 ```fsharp
 // ✔️ OK - The outer list follows "Stroustrup" style, while the inner lists place their brackets on separate lines
 let fn a b = [ 
@@ -956,7 +957,7 @@ let rainbow =
 
 For records that span multiple lines, there are three commonly used formatting styles: `Cramped`, `Aligned`, and `Stroustrup`. The `Cramped` style has been the default style for F# code, as it tends to favor styles that allow the compiler to easily parse code. Both `Aligned` and `Stroustrup` styles allow for easier reordering of members, leading to code that may be easier to refactor, with the drawback that certain situations may result in slightly more verbose code.
 
-- `Cramped` Record style:
+* `Cramped` Record style:
 The historical standard, and default F# record format. Opening brackets go on the same line as the first member, closing bracket on the same line as the last member.
 
     ```fsharp
@@ -968,7 +969,7 @@ The historical standard, and default F# record format. Opening brackets go on th
           Lackeys = [ "Zippy"; "George"; "Bungle" ] }
     ```
 
-- `Aligned`: Brackets each get their own line, aligned on the same column.
+* `Aligned`: Brackets each get their own line, aligned on the same column.
 
     ```fsharp
     // "Aligned" style:
@@ -981,7 +982,7 @@ The historical standard, and default F# record format. Opening brackets go on th
         }
     ```
 
-- `Stroustrup`: Opening bracket goes on the same line as the binding, closing bracket gets its own line.
+* `Stroustrup`: Opening bracket goes on the same line as the binding, closing bracket gets its own line.
 
     ```fsharp
     // "Stroustrup" style:
@@ -1046,6 +1047,7 @@ let newState =
 ```
 
 You may also prefer the "Stroustrup" style of keeping the opening brace on the same line as the binding:
+
 ```fsharp
 let newState =
     { state with
@@ -1057,7 +1059,7 @@ let newState =
     }
 ```
 
-**Note**: If using `Stroustrup` style, members _must_ be indented further than the copied record name
+**Note**: If using `Stroustrup` style, members *must* be indented further than the copied record name
 
 ```fsharp
 // ✔️ OK
@@ -1430,7 +1432,7 @@ let d =
         printfn "%A" x
 ```
 
-These are non-compliant: 
+These are non-compliant:
 
 ```fsharp
 // ❌ Not OK, code formatters will reformat to the above by default
@@ -1664,7 +1666,7 @@ type PostalAddress =
     end
 ```
 
-The exception to this style rule is if you format records according to the "Stroustrup" style. In this situation, the `with` keyword is required if you want to implement an interface or add additional members: 
+The exception to this style rule is if you format records according to the "Stroustrup" style. In this situation, the `with` keyword is required if you want to implement an interface or add additional members:
 
 ```fsharp
 // ✔️ OK
@@ -1683,6 +1685,7 @@ type PostalAddress = {
 } 
 member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
+
 When XML documentation is added for record fields, it becomes normal to indent and add whitespace:
 
 ```fsharp
@@ -1731,7 +1734,6 @@ type MyRecord =
 ```
 
 These same rules apply for anonymous record type aliases:
-
 
 ### Formatting discriminated union declarations
 
@@ -1944,6 +1946,7 @@ let foo () =
 ```
 
 You may also prefer to put the computation expression on the same line as the binding name:
+
 ```fsharp
 // ✔️ OK
 let foo () = async {

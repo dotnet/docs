@@ -180,7 +180,7 @@ A stock price application that fetches prices from a remote service using an HTT
 
 ## [Transport Layer Security](/samples/dotnet/samples/orleans-transport-layer-security-tls)
 
-:::image type="content" source="https://github.com/dotnet/samples/blob/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
 
 A *Hello, World!* application configured to use mutual [*Transport Layer Security*](https://en.wikipedia.org/wiki/Transport_Layer_Security) to secure network communication between every server.
 

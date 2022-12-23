@@ -119,6 +119,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0090](ide0090.md) | Simplify `new` expression | [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent) |
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
+> | [IDE0130](ide0130.md) | Namespace does not match folder structure | [dotnet_style_namespace_match_folder](ide0130.md#dotnet_style_namespace_match_folder) |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
 > | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |
 > | [IDE0160](ide0160-ide0161.md) | Use block-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |

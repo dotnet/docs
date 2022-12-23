@@ -166,7 +166,7 @@ They include an interactive counter, a TODO list, and a Weather service.
 * How to integrate ASP.NET Core Blazor Server with Orleans
 * How to integrate ASP.NET Core Blazor WebAssembly (WASM) with Orleans
 
-## [Stocks](/samples/dotnet/samples/orleans-streaming-samples)
+## [Stocks](/samples/dotnet/samples/orleans-stocks-sample-app)
 
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Stocks/screenshot.png" alt-text="Output from the running Stocks client sample Orleans app.":::
 

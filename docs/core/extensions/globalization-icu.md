@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 # .NET globalization and ICU
 
-Before .NET 5, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](http://site.icu-project.org/home), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
+Before .NET 5, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](https://icu.unicode.org/), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
 
 - Cultures and culture data
 - String casing

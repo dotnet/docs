@@ -31,7 +31,7 @@ step is to create a type for the comparison delegate:
 // From the .NET Core library
 
 // Define the delegate type:
-public delegate int Comparison<in T>(T left, T right);
+public delegate int Comparison<int T>(T left, T right);
 ```
 
 The compiler generates a class, derived from `System.Delegate`

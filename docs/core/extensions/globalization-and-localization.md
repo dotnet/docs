@@ -45,7 +45,7 @@ Discusses the first stage of creating a world-ready application, which involves 
 
 [.NET globalization and ICU](globalization-icu.md)
 
-Describes how .NET globalization uses [International Components for Unicode (ICU)](http://site.icu-project.org/home).
+Describes how .NET globalization uses [International Components for Unicode (ICU)](https://icu.unicode.org/).
 
 [Localizability review](localizability-review.md)
 

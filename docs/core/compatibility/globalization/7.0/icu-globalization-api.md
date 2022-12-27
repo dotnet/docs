@@ -5,7 +5,7 @@ ms.date: 09/01/2022
 ---
 # Globalization APIs use ICU libraries on Windows Server
 
-.NET 7 and later versions use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries for globalization functionality when running on Windows Server 2019 or later. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md).)
+.NET 7 and later versions use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries for globalization functionality when running on Windows Server 2019 or later. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md).)
 
 ## Previous behavior
 
@@ -13,7 +13,7 @@ In .NET 5 and .NET 6, the .NET libraries used [National Language Support (NLS)](
 
 ## New behavior
 
-Starting in .NET 7, if an app is running on Windows Server 2019 or later, .NET libraries use [ICU](http://site.icu-project.org/home) globalization APIs, by default. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md), so there is no change for these versions.)
+Starting in .NET 7, if an app is running on Windows Server 2019 or later, .NET libraries use [ICU](https://icu.unicode.org/) globalization APIs, by default. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md), so there is no change for these versions.)
 
 ## Behavioral differences
 

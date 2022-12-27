@@ -725,7 +725,7 @@ public class AsyncCache<TKey, TValue>
 
     public AsyncCache(Func<TKey, Task<TValue>> valueFactory)
     {
-        if (valueFactory == null) throw new ArgumentNullException("loader");
+        if (valueFactory == null) throw new ArgumentNullException("valueFactory");
         _valueFactory = valueFactory;
         _map = new ConcurrentDictionary<TKey, Lazy<Task<TValue>>>();
     }

@@ -109,7 +109,7 @@ When you install with a package manager, these libraries are installed for you. 
 - libgssapi-krb5-2
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)
-- libssl1.1 (for 10.x-11.x)
+- libssl1.1
 - libstdc++6
 - zlib1g
 

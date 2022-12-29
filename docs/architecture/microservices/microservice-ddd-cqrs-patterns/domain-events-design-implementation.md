@@ -360,9 +360,6 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 - **Jimmy Bogard. Strengthening your domain: Domain Events** \
   <https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/>
 
-- **Tony Truong. Domain Events Pattern Example** \
-  <https://www.tonytruong.net/domain-events-pattern-example/>
-
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 

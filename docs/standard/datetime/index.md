@@ -30,7 +30,7 @@ Starting with .NET 6, the following types are available:
 
 * <xref:System.DateOnly>
 
-  Use this structure when working with a value that only represents a date. The date represents the entire day, from the start of the day to the end. `DateOnly` has a range of `0001-01-01` through `9999-12-31`. And, this type represents the month, day, and year combination without a specific time. If you previously used a `DateTime` type in your code to represent a date that disregarded the time, use this type in its place.
+  Use this structure when working with a value that only represents a date. The date represents the entire day, from the start of the day to the end. `DateOnly` has a range of `0001-01-01` through `9999-12-31`. And, this type represents the month, day, and year combination without a specific time. If you previously used a `DateTime` type in your code to represent a date that disregarded the time, use this type in its place. For more information, see 
 
 * <xref:System.TimeOnly>
 

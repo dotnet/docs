@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # How to use the DateOnly and TimeOnly structures
 
-The <xref:System.DateOnly> and <xref:System.TimeOnly> structures were introduced with .NET 6, and represent either the date or time portion of a <xref:System.DateTime> structure. Prior to .NET 6, and always in .NET Framework, the <xref:System.DateTime> structure was used to represent one of the following:
+The <xref:System.DateOnly> and <xref:System.TimeOnly> structures were introduced with .NET 6, and represent either a specific date and time-of-day, respectively. Prior to .NET 6, and always in .NET Framework, the <xref:System.DateTime> type (or some other alternative) was used to represent one of the following:
 
 - A whole date and time.
 - A date, disregarding the time.
@@ -22,7 +22,7 @@ The <xref:System.DateOnly> and <xref:System.TimeOnly> structures were introduced
 `DateOnly` and `TimeOnly` are types that represent those particular portions of a `DateTime` type.
 
 > [!IMPORTANT]
-> <xref:System.DateOnly> and <xref:System.TimeOnly> structures aren't available in .NET Framework.
+> <xref:System.DateOnly> and <xref:System.TimeOnly> types aren't available in .NET Framework.
 
 ## The DateOnly structure
 
@@ -78,15 +78,15 @@ There are three methods used to adjust a <xref:System.DateOnly> structure: <xref
 
 ## The TimeOnly structure
 
-The <xref:System.TimeOnly> structure represents a time-of-day value, such as an alarm for when to wake up a daily wake up time or what time you eat lunch each day. `TimeOnly` is limited to range of **00:00:00.0000000** to **23:59:59.9999999**, a specific time of day.
+The <xref:System.TimeOnly> structure represents a time-of-day value, such as a daily alarm clock or what time you eat lunch each day. `TimeOnly` is limited to the range of **00:00:00.0000000** - **23:59:59.9999999**, a specific time of day.
 
-Prior to the `TimeOnly` type being introduced, programmers typically used either the <xref:System.DateTime> structure or the <xref:System.TimeSpan> structure to represent a specific time. However, using these structures to simulate a "time only" structure may introduce some problems, which `TimeOnly` solves:
+Prior to the `TimeOnly` type being introduced, programmers typically used either the <xref:System.DateTime> type or the <xref:System.TimeSpan> type to represent a specific time. However, using these structures to simulate a time without a date may introduce some problems, which `TimeOnly` solves:
 
 - `TimeSpan` represents elapsed time, such as time measured with a stopwatch. The upper range is more than 29,000 years, and its value can be negative to indicate moving backwards in time. A negative `TimeSpan` doesn't indicate a specific time of the day.
 
 - If `TimeSpan` is used as a time of day, there's a risk that it could be manipulated to a value outside of the 24-hour day. `TimeOnly` doesn't have this risk. For example, if an employee's work shift starts at 18:00 and lasts for 8 hours, adding 8 hours to the `TimeOnly` structure rolls over to 2:00
 
-- Using `DateTime` for a time of day, requires that an arbitrary date be associated with the time, and later disregarded. It's common practice to choose `DateTime.MinValue` (0001-01-01) as the date, however, if hours are subtracted from the `DateTime` value, an `OutOfRange` exception may occur. `TimeOnly` doesn't have this problem as the time rolls forwards and backwards around the 24-hour time span.
+- Using `DateTime` for a time of day, requires that an arbitrary date be associated with the time, and later disregarded. It's common practice to choose `DateTime.MinValue` (0001-01-01) as the date, however, if hours are subtracted from the `DateTime` value, an `OutOfRange` exception may occur. `TimeOnly` doesn't have this problem as the time rolls forwards and backwards around the 24-hour timeframe.
 
 - Serializing a `DateTime` structure includes the date component, which may obscure the intent of the data. Also, `TimeOnly` serializes less data.
 
@@ -125,7 +125,7 @@ Because `TimeOnly` only represents a 24-hour period, it rolls over forwards or b
 
 <xref:System.TimeOnly> can be created from and converted to, a <xref:System.TimeSpan>. Also, `TimeOnly` can be used with a <xref:System.DateTime>, either to create the `TimeOnly` instance, or to create a `DateTime` instance as long as a date is provided.
 
-The following example creates a `TimeOnly` object from a `TimeSpan` and then converts it back:
+The following example creates a `TimeOnly` object from a `TimeSpan`, and then converts it back:
 
 :::code language="csharp" source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="time_timespan":::
 :::code language="vb" source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="time_timespan":::
@@ -141,7 +141,3 @@ Two <xref:System.TimeOnly> instances can be compared with one another, and the <
 
 :::code language="csharp" source="./snippets/how-to-use-dateonly-timeonly/csharp/Program.cs" id="time_between":::
 :::code language="vb" source="./snippets/how-to-use-dateonly-timeonly/vb/Program.vb" id="time_between":::
-
-## See also
-
-- [Dates, times, and time zones](index.md)

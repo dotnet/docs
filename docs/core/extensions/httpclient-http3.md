@@ -33,7 +33,7 @@ HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 us
 
 ### Windows
 
-- Windows 11 Build 22000 (version 21H2) or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
+- Windows 11, Windows Server 2022, or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
 
 On Windows, msquic.dll is distributed as part of the .NET runtime, and no additional steps are required to install it.
 

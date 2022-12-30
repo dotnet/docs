@@ -155,7 +155,7 @@ void Time_ChangeTime()
     var daysBehind = theTime.AddHours(-222, out int wrappedDaysFromHours);
 
     Console.WriteLine($"Time: {theTime}");
-    Console.WriteLine($" Hour later: {hourLater}");
+    Console.WriteLine($" Hours later: {hourLater}");
     Console.WriteLine($" Minutes before: {minutesBefore}");
     Console.WriteLine($" Seconds after: {secondsAfter}");
     Console.WriteLine($" {daysLater} is the time, which is {wrappedDays} days later");
@@ -164,7 +164,7 @@ void Time_ChangeTime()
     /* This example produces the following output:
      * 
      * Time: 7:23 AM
-     *  Hour later: 8:23 AM
+     *  Hours later: 8:23 AM
      *  Minutes before: 7:11 AM
      *  Seconds after: 7:23 AM
      *  7:44 AM is the time, which is 1 days later 

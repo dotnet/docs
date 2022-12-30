@@ -1,6 +1,6 @@
 ---
-title: Compare DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
-description: Learn about differences between the DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo types to represent date and time information in .NET.
+title: Compare types related to date and time
+description: Learn about differences between the DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly and TimeZoneInfo types to represent date and time information in .NET.
 ms.date: "04/10/2017"
 dev_langs: 
   - "csharp"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "DateTime structure"
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 ---
-# Choose between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
+# Choose between DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly, and TimeZoneInfo
 
 .NET applications can use date and time information in several ways. The more common uses of date and time information include:
 
@@ -32,7 +32,7 @@ ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 
 - To perform date and time arithmetic, possibly with a result that uniquely and unambiguously identifies a single point in time.
 
-.NET includes the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, and <xref:System.TimeZoneInfo> types, all of which can be used to build applications that work with dates and times.
+.NET includes the <xref:System.DateTime>, <xref:System.DateOnly>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.TimeOnly>, and <xref:System.TimeZoneInfo> types, all of which can be used to build applications that work with dates and times.
 
 > [!NOTE]
 > This topic doesn't discuss <xref:System.TimeZone> because its functionality is almost entirely incorporated in the <xref:System.TimeZoneInfo> class. Whenever possible, use the <xref:System.TimeZoneInfo> class instead of the <xref:System.TimeZone> class.

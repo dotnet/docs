@@ -25,7 +25,7 @@ In this walkthrough, you'll create a basic `Loan` object and persist its data to
 
 You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/main/csharp/serialization).
 
-## Create the loan object
+## Define the loan type
 
 The first step is to create a `Loan` class and a console application that uses the class:
 
@@ -35,17 +35,17 @@ The first step is to create a `Loan` class and a console application that uses t
 
 [!code-csharp[Loan class definition](../../../../../samples/snippets/csharp/serialization/Loan.cs#1)]
 
-## Serialize the loan object
+## Instantiate a loan object
 
-1. Open `Program.cs`. Add the following code:
+1. Open *Program.cs* and add the following code:
 
-[!code-csharp[Create a loan object](../../../../../samples/snippets/csharp/serialization/Program.cs#1)]
+   [!code-csharp[Create a loan object](../../../../../samples/snippets/csharp/serialization/Program.cs#1)]
 
-Add an event handler for the `PropertyChanged` event, and a few lines to modify the `Loan` object and display the changes. You can see the additions in the following code:
+2. Add an event handler for the `PropertyChanged` event, and a few lines to modify the `Loan` object and display the changes. You can see the additions in the following code:
 
-[!code-csharp[Listening for the PropertyChanged event](../../../../../samples/snippets/csharp/serialization/Program.cs#2)]
+   [!code-csharp[Listening for the PropertyChanged event](../../../../../samples/snippets/csharp/serialization/Program.cs#2)]
 
-At this point, you can run the code, and see the current output:
+At this point, you can run the code and see the current output:
 
 ```console
 New customer value: Henry Clay
@@ -63,21 +63,21 @@ The following code adds a `TimeLastLoaded` property and marks it with the <xref:
 
 [!code-csharp[Disable serialization for an auto-implemented property](../../../../../samples/snippets/csharp/serialization/Loan.cs#2)]
 
-The next step is to add the serialization code to the application. To serialize the class and write it to a file, you use the <xref:System.IO?displayProperty=fullName> and <xref:System.Text.Json?displayProperty=fullName> namespaces. To avoid typing the fully qualified names, you can add references to the necessary namespaces as shown in the following code:
+1. To serialize the class and write it to a file, you use the <xref:System.IO?displayProperty=fullName> and <xref:System.Text.Json?displayProperty=fullName> namespaces. To avoid typing the fully qualified names, you can add references to the necessary namespaces as shown in the following code:
 
-[!code-csharp[Adding namespaces for serialization](../../../../../samples/snippets/csharp/serialization/Program.cs#3)]
+   [!code-csharp[Adding namespaces for serialization](../../../../../samples/snippets/csharp/serialization/Program.cs#3)]
 
-The next step is to add code to deserialize the object from the file when the object is created. Add a constant to the class for the serialized data's file name as shown in the following code:
+2. Add code to deserialize the object from the file when the object is created. Add a constant to the class for the serialized data's file name as shown in the following code:
 
-[!code-csharp[Define the name of the saved file](../../../../../samples/snippets/csharp/serialization/Program.cs#4)]
+   [!code-csharp[Define the name of the saved file](../../../../../samples/snippets/csharp/serialization/Program.cs#4)]
 
-Next, add the following code after the line that creates the `TestLoan` object. This code first checks that the file exists. If it exists, it reads the text from the file, and then deserialize it using the <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method.
+   Next, add the following code after the line that creates the `TestLoan` object. This code first checks that the file exists. If it exists, it reads the text from the file, and then deserialize it using the <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method.
 
-[!code-csharp[Read from a file if it exists](../../../../../samples/snippets/csharp/serialization/Program.cs#5)]
+   [!code-csharp[Read from a file if it exists](../../../../../samples/snippets/csharp/serialization/Program.cs#5)]
 
-Next you'll add code to serialize the class to a file using the <xref:System.Text.Json.JsonSerializer.Serialize%60%601(%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method. Add the following code to the end of the file:
+3. Next, add code to serialize the class to a file using the <xref:System.Text.Json.JsonSerializer.Serialize%60%601(%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method. Add the following code to the end of the file:
 
-[!code-csharp[Save the existing Loan object](../../../../../samples/snippets/csharp/serialization/Program.cs#6)]
+   [!code-csharp[Save the existing Loan object](../../../../../samples/snippets/csharp/serialization/Program.cs#6)]
 
 At this point, you can again build and run the application. The first time it runs, notice that the interest rates starts at 7.5, and then changes to 7.1. Close the application and then run it again. Now, the application prints the message that it has read the saved file, and the interest rate is 7.1 even before the code that changes it.
 

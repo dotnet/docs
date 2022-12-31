@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.ComponentModel;
+using System.Text.Json.Serialization;
 
 namespace serialization
 {
-    // <Snippet2>
-    [Serializable()]
-    // </Snippet2>
     // <Snippet1>
-   public class Loan : INotifyPropertyChanged
+    public class Loan : INotifyPropertyChanged
     {
         public double LoanAmount { get; set; }
-        public double InterestRatePercent { get; set; }
+        public double InterestRate { get; set; }
 
-        // <Snippet4>
-        [field:NonSerialized()]
+        // <Snippet2>
+        [JsonIgnore]
         public DateTime TimeLastLoaded { get; set; }
-        // </Snippet4>
+        // </Snippet2>
 
         public int Term { get; set; }
 
@@ -33,10 +28,7 @@ namespace serialization
             }
         }
 
-        // <Snippet3>
-        [field: NonSerialized()]
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        // </Snippet3>
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public Loan(double loanAmount,
                     double interestRate,
@@ -44,7 +36,7 @@ namespace serialization
                     string customer)
         {
             this.LoanAmount = loanAmount;
-            this.InterestRatePercent = interestRate;
+            this.InterestRate = interestRate;
             this.Term = term;
             this.customer = customer;
         }

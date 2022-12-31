@@ -1,13 +1,13 @@
 ---
 title: "Walkthrough: Persisting an Object using C#"
-description: This example creates a basic Loan object in C# and persist its data to a file, then creates a new object with data from the file.
+description: This example creates a basic Loan object in C# and persists its data to a file, then creates a new object with data from the file.
 ms.date: 12/30/2022
 ---
 # Walkthrough: Persist an object using C\#
 
 You can use JSON serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.
 
-In this walkthrough, you'll create a basic `Loan` object and persist its data to a JSON file. You will then retrieve the data from the file when you re-create the object.
+In this walkthrough, you'll create a basic `Loan` object and persist its data to a JSON file. You'll then retrieve the data from the file when you re-create the object.
 
 > [!IMPORTANT]
 > This example creates a new file if the file does not already exist. If an application must create a file, that application must have `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it's more secure to create the file during deployment and only grant `Read` permissions to a single file (instead of `Create` permissions for a folder). Also, it's more secure to write data to user folders than to the root folder or the *Program Files* folder.
@@ -20,8 +20,8 @@ In this walkthrough, you'll create a basic `Loan` object and persist its data to
 - To build and run, install the [.NET SDK](https://dotnet.microsoft.com/download).
 - Install your favorite code editor, if you haven't already.
 
-> [!TIP]
-> Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
+  > [!TIP]
+  > Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
 
 You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/main/csharp/serialization).
 
@@ -53,9 +53,11 @@ New customer value: Henry Clay
 7.1
 ```
 
-Running this application repeatedly always writes the same values. A new `Loan` object is created every time you run the program. In the real world, interest rates change periodically, but not necessarily every time that the application is run. Serialization code means you preserve the most recent interest rate between instances of the application. In the next step, you will do just that by adding serialization to the `Loan` class.
+Running this application repeatedly always writes the same values. A new `Loan` object is created every time you run the program. In the real world, interest rates change periodically, but not necessarily every time that the application is run. Serialization code means you preserve the most recent interest rate between instances of the application. In the next step, you'll do just that by adding serialization to the `Loan` class.
 
 ## Use serialization to persist the object
+
+To serialize an object using <xref:System.Text.Json?displayProperty=fullName> serialization, you don't need to add any special attributes to the type. By default, all public properties are serialized and all fields are ignored. However, you can annotate properties to ignore or specify that fields should be included.
 
 The following code adds a `TimeLastLoaded` property and marks it with the <xref:System.Text.Json.Serialization.JsonIgnoreAttribute> attribute to exclude it from serialization:
 
@@ -69,13 +71,11 @@ The next step is to add code to deserialize the object from the file when the ob
 
 [!code-csharp[Define the name of the saved file](../../../../../samples/snippets/csharp/serialization/Program.cs#4)]
 
-Next, add the following code after the line that creates the `TestLoan` object:
+Next, add the following code after the line that creates the `TestLoan` object. This code first checks that the file exists. If it exists, it reads the text from the file, and then deserialize it using the <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method.
 
 [!code-csharp[Read from a file if it exists](../../../../../samples/snippets/csharp/serialization/Program.cs#5)]
 
-You first must check that the file exists. If it exists, read the text from the file and then deserialize it using the <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method.
-
-Next you'll add code to serialize the class to a file. Add the following code after the existing code in the file:
+Next you'll add code to serialize the class to a file using the <xref:System.Text.Json.JsonSerializer.Serialize%60%601(%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> method. Add the following code to the end of the file:
 
 [!code-csharp[Save the existing Loan object](../../../../../samples/snippets/csharp/serialization/Program.cs#6)]
 

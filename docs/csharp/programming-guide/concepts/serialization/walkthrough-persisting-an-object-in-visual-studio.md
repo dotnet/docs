@@ -33,7 +33,7 @@ The first step is to create a `Loan` class and a console application that uses t
 1. Open the application in your editor, and add a new class named `Loan.cs`.
 1. Add the following code to your `Loan` class:
 
-[!code-csharp[Loan class definition](../../../../../samples/snippets/csharp/serialization/Loan.cs#1)]
+   [!code-csharp[Loan class definition](../../../../../samples/snippets/csharp/serialization/Loan.cs#1)]
 
 ## Instantiate a loan object
 

@@ -14,12 +14,12 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .UseConsoleLifetime()
     .Build();
 
-var client = host.Services.GetRequiredService<IClusterClient>();
-var liveStocks = client.GetGrain<ILiveStockGrain>(Guid.Empty);
+IGrainFactory factory = host.Services.GetRequiredService<IGrainFactory>();
+ILiveStockGrain liveStocks = factory.GetGrain<ILiveStockGrain>(primaryKey: Guid.Empty);
 
-foreach (var symbol in Enum.GetValues<StockSymbol>())
+foreach (StockSymbol symbol in Enum.GetValues<StockSymbol>())
 {
-    var stock = await liveStocks.GetStock(symbol);
+    Stock stock = await liveStocks.GetStock(symbol);
     Console.WriteLine($"{symbol}: {stock.GlobalQuote.Price:C}");
 }
 

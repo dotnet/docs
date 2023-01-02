@@ -10,7 +10,7 @@ using Microsoft.Extensions.Hosting;
 
 using Orleans.Serialization;
 
-using IHost host = Host.CreateDefaultBuilder(args)
+await Host.CreateDefaultBuilder(args)
     .UseOrleans((context, silo) =>
     {
         silo.Services.AddOptions<AlphaVantageOptions>()
@@ -32,6 +32,4 @@ using IHost host = Host.CreateDefaultBuilder(args)
             builder => builder.Configure(
                 options => options.FireAndForgetDelivery = false));
     })
-    .Build();
-
-await host.RunAsync();
+    .RunConsoleAsync();

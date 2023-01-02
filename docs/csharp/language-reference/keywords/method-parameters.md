@@ -86,7 +86,7 @@ Methods can store the values of parameters in fields. When parameters are passed
 - The *safe_to_escape* scope defines the scope where any expression can be safely accessed.
 - The *ref_safe_to_escape* scope defines the scope where a *reference* to any expression can be safely accessed or modified.
 
-Informally, you can think of these scopes as the mechanism to ensure your code never accesses or modifies a reference that's no longer valid. A reference is valid as long as it refers to a valid object or struct. The *safe_to_escape* scope defines when a variable can be assigned or reassigned. The *ref_safe_to_escape* scope defines when a variable can *ref* assigned or *ref* reassigned. Assignment assigns a variable to a new value; *ref assignment* assigns the variable to *refer to* a different storage location.
+Informally, you can think of these scopes as the mechanism to ensure your code never accesses or modifies a reference that's no longer valid. A reference is valid as long as it refers to a valid object or struct. The *safe_to_escape* scope defines when a variable can be assigned or reassigned. The *ref_safe_to_escape* scope defines when a variable can be *ref* assigned or *ref* reassigned. Assignment assigns a variable to a new value; *ref assignment* assigns the variable to *refer to* a different storage location.
 
 ## Modifiers
 

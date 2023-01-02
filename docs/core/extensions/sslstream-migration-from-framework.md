@@ -2,7 +2,7 @@
 title: Migrating from .NET Framework to .NET
 description: How to migrate code using SslStream from .NET Framework to .NET
 author: rzikm
-ms.author: rzikm
+ms.author: radekzikmund
 ms.date: 11/04/2022
 ---
 

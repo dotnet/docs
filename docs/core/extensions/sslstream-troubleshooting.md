@@ -2,7 +2,7 @@
 title: Troubleshoot SslStream authentication issues
 description: Learn how to troubleshoot and investigate issues when performing authentication with SslStream in .NET
 author: rzikm
-ms.author: rzikm
+ms.author: radekzikmund
 ms.date: 10/25/2022
 ---
 

@@ -4,7 +4,10 @@ namespace BroadcastChannel.GrainInterfaces;
 
 public sealed class GlobalQuote
 {
-    [JsonPropertyName("01. symbol")]
+    [
+        JsonConverter(typeof(JsonStringEnumConverter)),
+        JsonPropertyName("01. symbol")
+    ]
     public StockSymbol Symbol { get; set; }
 
     [JsonPropertyName("02. open")]

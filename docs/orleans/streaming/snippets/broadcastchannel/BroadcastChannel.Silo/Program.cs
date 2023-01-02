@@ -1,10 +1,14 @@
-﻿using BroadcastChannel.GrainInterfaces;
+﻿using System.Text.Json;
+
+using BroadcastChannel.GrainInterfaces;
 using BroadcastChannel.Silo.Options;
 using BroadcastChannel.Silo.Services;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+
+using Orleans.Serialization;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .UseOrleans((context, silo) =>
@@ -16,11 +20,17 @@ using IHost host = Host.CreateDefaultBuilder(args)
         {
             client.BaseAddress = new("https://www.alphavantage.co/");
         });
+        silo.Services.AddSerializer(
+            serializer => serializer.AddJsonSerializer(
+                isSupported: type => type?.Namespace?.StartsWith(
+                        nameof(BroadcastChannel)) ?? false,
+                jsonSerializerOptions: new(JsonSerializerDefaults.Web)));
         silo.Services.AddHostedService<StockWorker>();
         silo.UseLocalhostClustering();
         silo.AddBroadcastChannel(
             ChannelNames.LiveStockTicker,
-            options => options.FireAndForgetDelivery = false);
+            builder => builder.Configure(
+                options => options.FireAndForgetDelivery = false));
     })
     .Build();
 

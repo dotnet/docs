@@ -8,7 +8,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
         client.UseLocalhostClustering();
         client.AddBroadcastChannel(
             ChannelNames.LiveStockTicker,
-            options => options.FireAndForgetDelivery = false);
+            builder => builder.Configure(
+                options => options.FireAndForgetDelivery = false));
     })
     .UseConsoleLifetime()
     .Build();

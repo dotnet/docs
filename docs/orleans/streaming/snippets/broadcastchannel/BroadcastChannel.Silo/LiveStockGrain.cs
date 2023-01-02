@@ -3,7 +3,7 @@
 using BroadcastChannel.GrainInterfaces;
 using Orleans.BroadcastChannel;
 
-namespace BroadcastChannel.Grains;
+namespace BroadcastChannel.Silo;
 
 [ImplicitChannelSubscription]
 public sealed class LiveStockGrain :

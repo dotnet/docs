@@ -12,11 +12,11 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
     <PackageReference Include="Microsoft.Orleans.Server" Version="7.0.0" />
     <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Serialization.SystemTextJson" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BroadcastChannel.GrainInterfaces\BroadcastChannel.GrainInterfaces.csproj" />
-    <ProjectReference Include="..\BroadcastChannel.Grains\BroadcastChannel.Grains.csproj" />
   </ItemGroup>
 
 </Project>

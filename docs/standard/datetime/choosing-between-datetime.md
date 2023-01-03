@@ -1,6 +1,6 @@
 ---
 title: Compare types related to date and time
-description: Learn about differences between the DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly and TimeZoneInfo types to represent date and time information in .NET.
+description: Learn about differences between the DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly, and TimeZoneInfo types to represent date and time information in .NET.
 ms.date: "04/10/2017"
 dev_langs: 
   - "csharp"

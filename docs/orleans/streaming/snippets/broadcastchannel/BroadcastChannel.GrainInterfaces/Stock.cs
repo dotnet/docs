@@ -2,8 +2,9 @@
 
 namespace BroadcastChannel.GrainInterfaces;
 
+[GenerateSerializer]
 public sealed class Stock
 {
-    [JsonPropertyName("Global Quote")]
+    [Id(0), JsonPropertyName("Global Quote")]
     public GlobalQuote GlobalQuote { get; set; } = null!;
 }

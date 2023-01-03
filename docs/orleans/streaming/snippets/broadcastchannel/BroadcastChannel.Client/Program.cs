@@ -14,6 +14,9 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .UseConsoleLifetime()
     .Build();
 
+await host.StartAsync();
+await Task.Delay(3_000);
+
 IGrainFactory factory = host.Services.GetRequiredService<IGrainFactory>();
 ILiveStockGrain liveStocks = factory.GetGrain<ILiveStockGrain>(primaryKey: Guid.Empty);
 
@@ -23,4 +26,4 @@ foreach (StockSymbol symbol in Enum.GetValues<StockSymbol>())
     Console.WriteLine($"{symbol}: {stock.GlobalQuote.Price:C}");
 }
 
-await host.RunAsync();
+await host.WaitForShutdownAsync();

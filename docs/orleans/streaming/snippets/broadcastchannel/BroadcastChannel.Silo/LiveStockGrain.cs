@@ -24,7 +24,10 @@ public sealed class LiveStockGrain :
 
     private Task OnStockUpdated(Stock stock)
     {
-        _stockCache[stock.GlobalQuote.Symbol] = stock;
+        if (stock is { GlobalQuote: { } })
+        {
+            _stockCache[stock.GlobalQuote.Symbol] = stock;
+        }
 
         return Task.CompletedTask;
     }

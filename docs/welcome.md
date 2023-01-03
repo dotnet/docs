@@ -6,7 +6,9 @@ ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
-Test link: <xref:System.String.Substring(System.Int32)#exceptions>
+Link to specific overload: <xref:System.String.Substring(System.Int32)>
+Exception link to specific overload: <xref:System.String.Substring(System.Int32)#exceptions>
+Exception link with no overloads: <xref:System.String.Insert(System.Int32,System.String)#exceptions>
 
 See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 

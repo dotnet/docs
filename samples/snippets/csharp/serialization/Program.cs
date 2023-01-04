@@ -9,7 +9,7 @@ const string fileName = @"../../../SavedLoan.json";
 // </Snippet4>
 
 // <Snippet1>
-Loan testLoan = new(10000.0, 7.5, 36, "Neil Black");
+Loan testLoan = new(10_000.0, 7.5, 36, "Neil Black");
 // </Snippet1>
 
 // <Snippet5>
@@ -33,6 +33,6 @@ Console.WriteLine(testLoan.InterestRate);
 
 // <Snippet6>
 // Serialize it.
-string jsonString = JsonSerializer.Serialize(testLoan);
-File.WriteAllText(fileName, jsonString);
+string json = JsonSerializer.Serialize(testLoan);
+File.WriteAllText(fileName, json);
 // </Snippet6>

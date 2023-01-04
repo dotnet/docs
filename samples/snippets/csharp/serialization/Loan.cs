@@ -16,13 +16,13 @@ namespace serialization
 
         public int Term { get; set; }
 
-        private string customer;
+        private string _customer;
         public string Customer
         {
-            get { return customer; }
+            get { return _customer; }
             set
             {
-                customer = value;
+                _customer = value;
                 PropertyChanged?.Invoke(this,
                   new PropertyChangedEventArgs(nameof(Customer)));
             }
@@ -35,10 +35,10 @@ namespace serialization
                     int term,
                     string customer)
         {
-            this.LoanAmount = loanAmount;
-            this.InterestRate = interestRate;
-            this.Term = term;
-            this.customer = customer;
+            LoanAmount = loanAmount;
+            InterestRate = interestRate;
+            Term = term;
+            _customer = customer;
         }
     }
     // </Snippet1>

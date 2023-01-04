@@ -71,13 +71,23 @@ static bool CustomCertificateValidationCallback(
     X509Chain? chain,
     SslPolicyErrors sslPolicyErrors)
 {
-    if (chain is null)
+    // Anything that would have been accepted by default is OK
+    if (sslPolicyErrors == SslPolicyErrors.None)
+    {
+        return true;
+    }
+    
+    // If there is something wrong other than a chain processing error, don't trust it.
+    if (sslPolicyErrors != SslPolicyErrors.RemoteCertificateChainErrors)
     {
         return false;
     }
-
+    
+    Debug.Assert(chain is not null);
+    
     foreach (X509ChainStatus status in chain.ChainStatus)
     {
+        // If an error other than `NotTimeValid` (or `NoError`) is present, don't trust it.
         if ((status.Status & ~X509ChainStatusFlags.NotTimeValid) != X509ChainStatusFlags.NoError)
         {
             return false;

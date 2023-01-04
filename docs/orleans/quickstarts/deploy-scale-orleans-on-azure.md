@@ -10,7 +10,7 @@ ms.devlang: csharp
 
 # Quickstart: Host and scale an Orleans app on Azure
 
-In this quickstart, you'll deploy and scale an Orleans URL shortener app on Azure Container Apps. The app allows users to submit a full URL to the app, which will return a shortened version they can share with others to direct them to the original site. Orleans and Azure provide the scalability features necessary to host potentially high traffic utility apps like URL shorteners. Orleans is also compatible with any other hosting service that supports .NET.
+In this quickstart, you'll deploy and scale an Orleans URL shortener app on Azure Container Apps. The app allows users to submit a full URL to the app, which will return a shortened version they can share with others to direct them to the original site. Orleans and Azure provide the scalability features necessary to host high traffic apps like URL shorteners. Orleans is also compatible with any other hosting service that supports .NET.
 
 At the end of this quickstart, you'll have a scalable app running in Azure to provide URL shortener functionality. Along the way you'll learn to:
 
@@ -35,42 +35,42 @@ git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetco
 
 ## Configure the sample app
 
-The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table Storage. Update the configuration code in the `Program.cs` file to match the example below, which implements these key concepts:
+The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table and Blob Storage. Update the `builder` configuration code in the `Program.cs` file to match the example below, which implements these key concepts:
 
 * A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios
-* The `UseAzureStorageClustering` method configures Orleans to store cluster data in Azure Table Storage and authenticates using the connection string.
+* The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using the connection string.
 * Use the `Configure` method to assign IDs for the Orleans cluster. The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another. The `ClusterID` can change across deployments. The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
 
-```csharp
-var builder = WebApplication.CreateBuilder();
-
-if (builder.Environment.IsDevelopment())
-{
-    builder.Host.UseOrleans(builder =>
+    ```csharp
+    var builder = WebApplication.CreateBuilder();
+    
+    if (builder.Environment.IsDevelopment())
     {
-        builder.UseLocalhostClustering();
-        builder.AddMemoryGrainStorage("urls");
-    });
-} else
-{
-    builder.Host.UseOrleans(builder =>
-    {
-        var connectionString = "your_storage_connection_string";
-        
-        builder.UseAzureStorageClustering(options =>
-            options.ConfigureTableServiceClient(connectionString))
-            .AddAzureTableGrainStorage("urls",
-                            options => options.ConfigureTableServiceClient(connectionString));
-        builder.Configure<ClusterOptions>(options =>
+        builder.Host.UseOrleans(builder =>
         {
-            options.ClusterId = "url-shortener";
-            options.ServiceId = "urls";
+            builder.UseLocalhostClustering();
+            builder.AddMemoryGrainStorage("urls");
         });
-    });
-}
-
-var app = builder.Build();
-```
+    } else
+    {
+        builder.Host.UseOrleans(builder =>
+        {
+            var connectionString = "your_storage_connection_string";
+            
+            builder.UseAzureStorageClustering(options =>
+                options.ConfigureTableServiceClient(connectionString))
+                .AddAzureTableGrainStorage("urls",
+                                options => options.ConfigureTableServiceClient(connectionString));
+            builder.Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "url-shortener";
+                options.ServiceId = "urls";
+            });
+        });
+    }
+    
+    var app = builder.Build();
+    ```
 
 ## Create the Azure Storage account
 
@@ -80,18 +80,28 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 1. On the **Storage accounts** listing page, select **Create**.
 1. On the **Create a storage account** page, enter the following values:
     * **Subscription**: Select the subscription you plan to use.
-    * **Resource group**: Select **Create new** and then enter a name of msdocs-url-shortener.
-    * **Storage account name**: Enter a name of *OrleansUrlShortener*.
+    * **Resource group**: Select **Create new** and then enter a name of *msdocs-orleans-url-shortener*.
+    * **Storage account name**: Enter a name of *OrleansUrlShortenerXXX* where XXX are unique numbers. Storage account names must be unique across Azure.
     * **Region**: Select a region that is near your location.
     * Leave the rest of the options at their defaults, and then select **Review**.
     * Select **Create** after Azure validates your settings.
+
+        :::image type="content" source="../media/create-storage-account-small.png" alt-text="A screenshot showing how to create a storage account." lightbox="../media/create-storage-account.png":::
+
 1. Select **Go to resource** after the storage account is created.
 
 ## Configure the connection to Azure Storage
 
 1. On the storage account overview page, select **Access keys** on the left navigation.
-1. On the Access keys page, select **Show** for the **Connection string**, and then copy the value.
-1. Inside of Visual Studio, replace the storageConnectionString placeholder with the value you copied from the storage account.
+1. On the Access keys page, next to **Connection string** select **Show**, and then copy the value.
+
+    :::image type="content" source="../media/storage-connection-string.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
+
+1. Inside of Visual Studio, replace the `your_storage_connection_string` placeholder with the value you copied from the storage account.
+
+```csharp
+var connectionString = "your_storage_connection_string";
+```
 
 ## Deploy to Azure Container Apps
 
@@ -105,7 +115,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 
     * **Container app name**: Leave the default value.
     * **Subscription name**: Select the subscription to deploy to.
-    * **Resource group**: Select the **msdocs-url-shortener** group you created earlier.
+    * **Resource group**: Select the **msdocs-orleans-url-shortener** group you created earlier.
     * **Container apps environment**: Select **New** to open the container apps environment dialog and enter the following values:
         * **Environment name**: Keep the default value.
         * **Location**: Select a location near you.
@@ -126,16 +136,25 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 
 When the deployment finishes, Visual Studio will launch the application in the browser.
 
-## Test the app
+## Test and verify the app behavior
 
 1. In the browser address bar, test the `shorten` endpoint by adding a URL path such as `/shorten/www.microsoft.com`. The page should reload and provide a URL with a shortened path at the end. Copy the shortened URL to your clipboard.
 
-    :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio.":::
-
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
 
-> [!NOTE]
-> By default, Azure Container Apps have lengthy domain names, so the shortened URL is still quite long. In a production app you can assign a custom domain name to improve this setup.
+    > [!NOTE]
+    > By default, Azure Container Apps have lengthy domain names, so the shortened URL is still quite long. In a production app you can assign a custom domain name to improve this setup.
+
+You can optionally verify the cluster and state data is stored as expected in the storage account you created.
+
+1. In the Azure portal, navigate to the overview page of the `UrlShortenerXXX` storage account.
+1. On the left navigation, select **Storage Browser**.
+1. Expand the **Tables** navigation item to discover two tables created by Orleans:
+    * **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
+    * **OrleansSiloInstances**: This table tracks the state data associated with the silos in the Orleans cluster.
+1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
+
+    :::image type="content" source="../media/orleans-table-storage.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
 
 ## Scale the app
 

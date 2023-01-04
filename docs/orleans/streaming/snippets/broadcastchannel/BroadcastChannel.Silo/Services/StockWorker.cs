@@ -22,22 +22,23 @@ internal sealed class StockWorker : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             // Capture the starting timestamp.
-            var startingTimetstamp = Stopwatch.GetTimestamp();
+            long startingTimetstamp = Stopwatch.GetTimestamp();
 
             // Get all updated stock values.
-            var stocks = await Task.WhenAll(
+            Stock[] stocks = await Task.WhenAll(
                 tasks: _symbols.Select(selector: _stockClient.GetStockAsync));
 
             // Get the live stock ticker broadcast channel.
-            var channelId = ChannelId.Create(ChannelNames.LiveStockTicker, Guid.Empty);
-            var channelWriter = _provider.GetChannelWriter<Stock>(channelId);
+            ChannelId channelId = ChannelId.Create(ChannelNames.LiveStockTicker, Guid.Empty);
+            IBroadcastChannelWriter<Stock> channelWriter = _provider.GetChannelWriter<Stock>(channelId);
 
             // Broadcast all stock updates on this channel.
-            await Task.WhenAll(stocks.Select(channelWriter.Publish));
+            await Task.WhenAll(
+                stocks.Where(s => s is not null).Select(channelWriter.Publish));
 
             // Use the elapsed time to calculate a 15 second delay.
-            var elapsed = Stopwatch.GetElapsedTime(startingTimetstamp).Milliseconds;
-            var remaining = Math.Max(0, 15_000 - elapsed);
+            int elapsed = Stopwatch.GetElapsedTime(startingTimetstamp).Milliseconds;
+            int remaining = Math.Max(0, 15_000 - elapsed);
 
             await Task.Delay(remaining, stoppingToken);
         }

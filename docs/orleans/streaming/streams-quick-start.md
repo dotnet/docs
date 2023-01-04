@@ -14,7 +14,29 @@ To learn more about the details of the streaming features, read other parts of t
 
 In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
 
-On the silo, where hostBuilder is an ISiloHostBuilder
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+On the silo, where `hostBuilder` is an `ISiloHostBuilder`:
+
+```csharp
+hostBuilder.AddMemoryStreams("StreamProvider")
+           .AddMemoryGrainStorage("PubSubStore");
+```
+
+On the cluster client, where `clientBuilder` is an `IClientBuilder`.
+
+```csharp
+clientBuilder.AddMemoryStreams("StreamProvider");
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+On the silo, where `hostBuilder` is an `ISiloHostBuilder`:
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
@@ -37,7 +59,9 @@ siloBuilder
         options => options.OptimizeForImmutableData = false);
 ```
 
-Now we can create streams, send data using them as producers and also receive data as subscribers.
+:::zone-end
+
+You can create streams, send data using them as producers and also receive data as subscribers.
 
 ## Producing events
 

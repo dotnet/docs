@@ -152,7 +152,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default, it's pushed to the local Docker daemon (`docker://`), ut you can also specify a remote registry. For example, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default, it's pushed to the local Docker daemon (`docker://`), but you can also specify a remote registry. For example, consider the following XML example:
 
 ```xml
 <ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>

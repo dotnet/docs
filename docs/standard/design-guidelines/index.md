@@ -37,7 +37,7 @@ This section provides guidelines for designing libraries that extend and interac
  [Usage Guidelines](usage-guidelines.md)\
  Describes guidelines for using common types such as arrays, attributes, and collections, supporting serialization, and overloading equality operators.  
   
- [Common Design Patterns](common-design-patterns.md)  
+ [Common Design Patterns](common-design-patterns.md)\
  Provides guidelines for choosing and implementing dependency properties and the dispose pattern.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  

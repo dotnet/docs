@@ -46,7 +46,7 @@ There are certain scenarios in which the default certificate validation procedur
 
 When encountering a certificate which was not issued by any of the certificate authorities trusted by the machine (including self-signed certificates), the default certificate validation procedure will fail. One possible way to resolve this is add the necessary issuer certificates to the machine trusted store. That, however, might affect other applications on the system and is not always possible.
 
-The alternative solution is to specify custom trusted root certificates via an <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy>.
+The alternative solution is to specify custom trusted root certificates via an <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy>. The example below specifies custom trust list which will be used instead of the system trust list during validation.
 
 ```csharp
 SslClientAuthenticationOptions clientOptions = new();
@@ -59,6 +59,8 @@ clientOptions.CertificateChainPolicy = new X509ChainPolicy()
     }
 };
 ```
+
+Note that clients configured with the policy above would accept *only* certificates trusted by `customIssuerCert`.
 
 ### Ignoring specific validation errors
 
@@ -109,10 +111,13 @@ static bool CustomCertificateValidationCallback(
     X509Chain? chain,
     SslPolicyErrors sslPolicyErrors)
 {
-    if (certificate == null)
+    // If there is something wrong other than a chain processing error, don't trust it.
+    if (sslPolicyErrors != SslPolicyErrors.RemoteCertificateChainErrors)
     {
         return false;
     }
+    
+    Debug.Assert(certificate is not null);
 
     const string ExpectedPublicKey =
         "3082010A0282010100C204ECF88CEE04C2B3D850D57058CC9318EB5C" +

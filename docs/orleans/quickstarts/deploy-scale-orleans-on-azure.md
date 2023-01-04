@@ -27,7 +27,7 @@ At the end of this quickstart, you'll have a scalable app running in Azure to pr
 
 ## Setup the sample app
 
-This quickstart builds on the sample app from the [Build your first Orleans app][build-your-first-orleans-app.md] quickstart, which can be cloned from GitHub using the command below. You can download the app directly. Completing the previous quickstart is not a prerequisite for the steps ahead.
+This quickstart builds on the sample app from the [Build your first Orleans app](build-your-first-orleans-app.md) quickstart, which can be cloned from GitHub using the command below. You can download the app directly. Completing the previous quickstart is not a prerequisite for the steps ahead.
 
 ```bash
 git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore
@@ -80,7 +80,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 1. On the **Storage accounts** listing page, select **Create**.
 1. On the **Create a storage account** page, enter the following values:
     * **Subscription**: Select the subscription you plan to use.
-    * **Resource group**: Select **Create new** and then enter a name of msdocs-orleans.
+    * **Resource group**: Select **Create new** and then enter a name of msdocs-url-shortener.
     * **Storage account name**: Enter a name of *OrleansUrlShortener*.
     * **Region**: Select a region that is near your location.
     * Leave the rest of the options at their defaults, and then select **Review**.
@@ -105,7 +105,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 
     * **Container app name**: Leave the default value.
     * **Subscription name**: Select the subscription to deploy to.
-    * **Resource group**: Select **New** and create a new resource group called *msdocs-orleans*.
+    * **Resource group**: Select the **msdocs-url-shortener** group you created earlier.
     * **Container apps environment**: Select **New** to open the container apps environment dialog and enter the following values:
         * **Environment name**: Keep the default value.
         * **Location**: Select a location near you.
@@ -115,7 +115,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
         * Select **Ok** to close the container apps environment dialog.
     * Select **Create** to close the original container apps dialog. Visual Studio creates the container app resource in Azure.
 1. Once the resource is created, make sure it's selected in the list of container apps, and then select **Next**.
-1. You'll need to create an Azure Container Registry to store the published image artifact for your app. Select the green **+** icon on the container registry screen. 
+1. You'll need to create an Azure Container Registry to store the published image artifact for your app. Select the green **+** icon on the container registry screen.
 
     :::image type="content" source="../media/deploy-container-apps.png" alt-text="A screenshot showing how to create a new container registry.":::
 
@@ -146,4 +146,3 @@ Orleans is designed for distributed applications. Even an app as simple as the U
 1. Use the slider control to set the min and max replica values to 3. This will ensure the app is running on multiple instances.
 1. Select **Create** to deploy the new revision.
 1. After the deployment is finished, repeat the testing steps from the previous section. The app will continue to work as expected.
-1. 

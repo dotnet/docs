@@ -1,16 +1,28 @@
 ---
 title: Orleans stream providers
 description: Learn about the available stream providers for .NET Orleans.
-ms.date: 03/21/2022
+ms.date: 01/04/2023
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans stream providers
 
-Streams can come in different shapes and forms. Some streams may deliver events over direct TCP links, while others deliver events via durable queues. Different stream types may use different batching strategies, different caching algorithms, or different backpressure procedures. To avoid constraining streaming applications to only a subset of those behavioral choices, stream providers are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream. This extensibility point is similar in spirit to Orleans Storage Providers. Orleans currently ships with many stream providers, including [Simple message stream provider](xref:Orleans.Providers.Streams.SimpleMessageStream.SimpleMessageStreamProvider) and [Azure Queue stream provider](xref:Orleans.Providers.Streams.AzureQueue).
+Streams can come in different shapes and forms. Some streams may deliver events over direct TCP links, while others deliver events via durable queues. Different stream types may use different batching strategies, different caching algorithms, or different backpressure procedures. To avoid constraining streaming applications to only a subset of those behavioral choices, stream providers are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream. This extensibility point is similar in spirit to Orleans Storage providers.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 ## Simple message stream provider
 
 The simple message stream provider, also known as the SMS provider, delivers events over TCP by utilizing regular Orleans grain messaging. Since events in SMS are delivered over unreliable TCP links, SMS does _not_ guarantee reliable event delivery and does not automatically resend failed messages for SMS streams. By default, the producer's call to <xref:Orleans.Streams.IAsyncObserver%601.OnNextAsync%2A> returns a `Task` that represents the processing status of the stream consumer, which tells the producer whether the consumer successfully received and processed the event. If this task fails, the producer can decide to send the same event again, thus achieving reliability on the application level. Although stream message delivery is the best effort, SMS streams themselves are reliable. That is, the subscriber-to-producer binding performed by Pub-Sub is fully reliable.
+
+:::zone-end
 
 ## Azure Queue (AQ) stream provider
 

@@ -33,7 +33,7 @@ clientBuilder.AddMemoryStreams("StreamProvider");
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
+:::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
 On the silo, where `hostBuilder` is an `ISiloHostBuilder`:

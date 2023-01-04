@@ -35,7 +35,7 @@ All programs acquire one or more system resources, such as memory, system handle
   
  The main motivation for the pattern is to reduce the complexity of the implementation of the <xref:System.Object.Finalize%2A> and the <xref:System.IDisposable.Dispose%2A> methods. The complexity stems from the fact that the methods share some but not all code paths (the differences are described later in the chapter). In addition, there are historical reasons for some elements of the pattern related to the evolution of language support for deterministic resource management.  
   
- **✓ DO** implement the Basic Dispose Pattern on types containing instances of disposable types. See the [Basic Dispose Pattern](#basic_pattern) section for details on the basic pattern.  
+ **✓ DO** implement the Basic Dispose Pattern on types containing instances of disposable types. See the [Basic Dispose Pattern](#basic-dispose-pattern) section for details on the basic pattern.  
   
  If a type is responsible for the lifetime of other disposable objects, developers need a way to dispose of them, too. Using the container’s `Dispose` method is a convenient way to make this possible.  
   
@@ -47,7 +47,6 @@ All programs acquire one or more system resources, such as memory, system handle
   
  A great example of this is the <xref:System.IO.Stream?displayProperty=nameWithType> class. Although it is an abstract base class that doesn’t hold any resources, most of its subclasses do and because of this, it implements this pattern.  
   
-<a name="basic_pattern"></a>   
 ## Basic Dispose Pattern
 
  The basic implementation of the pattern involves implementing the `System.IDisposable` interface and declaring the `Dispose(bool)` method that implements all resource cleanup logic to be shared between the `Dispose` method and the optional finalizer.  

@@ -24,9 +24,11 @@ Looking for some quick help on using the CLI? The following table shows some exa
 |                                                                   | 3.1         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
 |                                                                   | 5.0         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
 |                                                                   | 6.0         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
+|                                                                   | 7.0         | `dotnet publish -c Release -p:UseAppHost=false`                                            |
 | [Framework-dependent executable](#framework-dependent-executable) | 3.1         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 |                                                                   | 5.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 |                                                                   | 6.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
+|                                                                   | 7.0         | `dotnet publish -c Release -r <RID> --self-contained false`<br>`dotnet publish -c Release` |
 | [Self-contained deployment](#self-contained-deployment)           | 2.1         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
 |                                                                   | 3.1         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |
 |                                                                   | 5.0         | `dotnet publish -c Release -r <RID> --self-contained true`                                 |

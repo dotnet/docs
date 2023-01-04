@@ -1,41 +1,31 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 08/16/2022
+ms.date: 11/21/2022
 ---
 # What's new in C# 11
 
-> [!IMPORTANT]
-> These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
+The following features were added in C# 11:
 
-The following feature is available in Visual Studio 2022 version 17.4:
-
-- [File-scoped types](#file-scoped-types)
-
-The following features are available in Visual Studio 2022 version 17.3:
-
+- [Raw string literals](#raw-string-literals)
 - [Generic math support](#generic-math-support)
+- [Generic attributes](#generic-attributes)
+- [UTF-8 string literals](#utf-8-string-literals)
+- [Newlines in string interpolation expressions](#newlines-in-string-interpolations)
+- [List patterns](#list-patterns)
+- [File-local types](#file-local-types)
+- [Required members](#required-members)
 - [Auto-default structs](#auto-default-struct)
 - [Pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
-- [UTF-8 string literals](#utf-8-string-literals)
-- [Required members](#required-members)
 - [`ref` fields and `scoped ref`](#ref-fields-and-ref-scoped-variables)
-
-The following features are available in Visual Studio 2022 version 17.2:
-
-- [Raw string literals](#raw-string-literals)
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
-The following features are available in Visual Studio 2022 version 17.1:
+You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the .NET 7 SDK, which can be downloaded from the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
-- [Generic attributes](#generic-attributes)
-- [Newlines in string interpolation expressions](#newlines-in-string-interpolations)
-- [List patterns](#list-patterns)
-
-You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
 ## Generic attributes
 
@@ -73,7 +63,7 @@ public string Method() => default;
 ```
 
 You must supply all type parameters when you apply the attribute. In other words, the generic type must be [fully constructed](~/_csharpstandard/standard/types.md#84-constructed-types).
-In the example above, the empty parentheses (`(` and `)`) can be ommitted as the attribute does not have any arguments.
+In the example above, the empty parentheses (`(` and `)`) can be omitted as the attribute does not have any arguments.
 
 ```csharp
 public class GenericType<T>
@@ -195,7 +185,7 @@ You can declare `ref` fields inside a [`ref struct`](../language-reference/built
 
 You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#scope-of-references-and-values) where the reference can escape to.
 
-## File scoped types
+## File local types
 
 Beginning in C# 11, you can use the `file` access modifier to create a type whose visibility is scoped to the source file in which it is declared. This feature helps source generator authors avoid naming collisions. You can learn more about this feature in the article on [file-scoped types](../language-reference/keywords/file.md) in the language reference.
 

@@ -133,7 +133,15 @@ items:
           - name: ADO.NET database configuration
             href: host/configuration-guide/adonet-configuration.md
           - name: Serialization
-            href: host/configuration-guide/serialization.md
+            items:
+            - name: Overview
+              href: host/configuration-guide/serialization.md
+            - name: Serialization of immutable types
+              href: host/configuration-guide/serialization-immutability.md
+            - name: Configure serialization
+              href: host/configuration-guide/serialization-configuration.md
+            - name: Customize serialization
+              href: host/configuration-guide/serialization-customization.md
           - name: Startup tasks
             href: host/configuration-guide/startup-tasks.md
           - name: Orleans graceful shut down

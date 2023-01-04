@@ -33,7 +33,7 @@ The example shows a typical XML Plug and Play configuration file.
 </PointOfServiceConfig>
 ```
 
-## Hardeware ID Precedence
+## Hardware ID Precedence
 
 If the **Override** attribute on the **ServiceObject** node is set, then the device association specified in the XML takes precedence, and any **HardwareId** attribute on the Service Object will be discarded.
 

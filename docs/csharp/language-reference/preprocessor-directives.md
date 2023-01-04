@@ -97,7 +97,7 @@ A conditional directive beginning with an `#if` directive must explicitly be ter
 ```csharp
 #define VC7
 //...
-#if debug
+#if DEBUG
     Console.WriteLine("Debug build");
 #elif VC7
     Console.WriteLine("Visual Studio 7");

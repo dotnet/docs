@@ -17,17 +17,7 @@ Check the [Visual Studio platform compatibility](/visualstudio/releases/2022/com
 
 The compiler determines a default based on these rules:
 
-| Target framework | version | C# language version default |
-|------------------|---------|-----------------------------|
-| .NET             | 7.x | C# 11                       |
-| .NET             | 6.x     | C# 10                       |
-| .NET             | 5.x     | C#  9.0                     |
-| .NET Core        | 3.x     | C#  8.0                     |
-| .NET Core        | 2.x     | C#  7.3                     |
-| .NET Standard    | 2.1     | C#  8.0                     |
-| .NET Standard    | 2.0     | C#  7.3                     |
-| .NET Standard    | 1.x     | C#  7.3                     |
-| .NET Framework   | all     | C#  7.3                     |
+[!INCLUDE [langversion-table](includes/default-langversion-table.md)]
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 

@@ -1,7 +1,7 @@
 ---
-title: "Member access operators and expressions - C# reference"
-description: "Learn about C# operators that you can use to access type members."
-ms.date: 09/16/2022
+title: "Member access operators and expressions"
+description: "C# operators that you use to access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
+ms.date: 11/28/2022
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -33,9 +33,9 @@ helpviewer_keywords:
   - ".. operator [C#]"
   - "range operator [C#]"
 ---
-# Member access operators and expressions (C# reference)
+# Member access operators and expressions - the dot, indexer, and invocation operators.
 
-You can use the following operators and expressions when you access a type member:
+You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`).
 
 - [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -44,7 +44,7 @@ You can use the following operators and expressions when you access a type membe
 - [`^` (index from end)](#index-from-end-operator-): to indicate that the element position is from the end of a sequence
 - [`..` (range)](#range-operator-): to specify a range of indices that you can use to obtain a range of sequence elements
 
-## Member access expression .
+## Member access expression `.`
 
 You use the `.` token to access a member of a namespace or a type, as the following examples demonstrate:
 
@@ -101,7 +101,7 @@ You also use square brackets to specify [attributes](../../programming-guide/con
 void TraceMethod() {}
 ```
 
-## Null-conditional operators ?. and ?[]
+## Null-conditional operators `?.` and `?[]`
 
 A null-conditional operator applies a [member access](#member-access-expression-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
 
@@ -111,20 +111,20 @@ A null-conditional operator applies a [member access](#member-access-expression-
   > [!NOTE]
   > If `a.x` or `a[x]` throws an exception, `a?.x` or `a?[x]` would throw the same exception for non-null `a`. For example, if `a` is a non-null array instance and `x` is outside the bounds of `a`, `a?[x]` would throw an <xref:System.IndexOutOfRangeException>.
 
-The null-conditional operators are short-circuiting. That is, if one operation in a chain of conditional member or element access operations returns `null`, the rest of the chain doesn't execute. In the following example, `B` is not evaluated if `A` evaluates to `null` and `C` is not evaluated if `A` or `B` evaluates to `null`:
+The null-conditional operators are short-circuiting. That is, if one operation in a chain of conditional member or element access operations returns `null`, the rest of the chain doesn't execute. In the following example, `B` isn't evaluated if `A` evaluates to `null` and `C` isn't evaluated if `A` or `B` evaluates to `null`:
 
 ```csharp
 A?.B?.Do(C);
 A?.B?[C];
 ```
 
-If `A` might be null but `B` and `C` would not be null if A is not null, you only need to apply the null-conditional operator to `A`:
+If `A` might be null but `B` and `C` wouldn't be null if A isn't null, you only need to apply the null-conditional operator to `A`:
 
 ```csharp
 A?.B.C();
 ```
 
-In the preceding example, `B` is not evaluated and `C()` is not called if `A` is null. However, if the chained member access is interrupted, for example by parentheses as in `(A?.B).C()`, short-circuiting doesn't happen.
+In the preceding example, `B` isn't evaluated and `C()` isn't called if `A` is null. However, if the chained member access is interrupted, for example by parentheses as in `(A?.B).C()`, short-circuiting doesn't happen.
 
 The following examples demonstrate the usage of the `?.` and `?[]` operators:
 
@@ -162,7 +162,7 @@ if (handler != null)
 }
 ```
 
-That is a thread-safe way to ensure that only a non-null `handler` is invoked. Because delegate instances are immutable, no thread can change the object referenced by the `handler` local variable. In particular, if the code executed by another thread unsubscribes from the `PropertyChanged` event and `PropertyChanged` becomes `null` before `handler` is invoked, the object referenced by `handler` remains unaffected.
+The preceding example is a thread-safe way to ensure that only a non-null `handler` is invoked. Because delegate instances are immutable, no thread can change the object referenced by the `handler` local variable. In particular, if the code executed by another thread unsubscribes from the `PropertyChanged` event and `PropertyChanged` becomes `null` before `handler` is invoked, the object referenced by `handler` remains unaffected.
 
 ## Invocation expression ()
 
@@ -190,7 +190,7 @@ As the preceding example shows, expression `^e` is of the <xref:System.Index?dis
 
 You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
-## Range operator ..
+## Range operator `..`
 
 The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
 
@@ -230,7 +230,7 @@ For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md
 
 ## Operator overloadability
 
-The `.`, `()`, `^`, and `..` operators cannot be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
+The `.`, `()`, `^`, and `..` operators can't be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
 
 ## C# language specification
 

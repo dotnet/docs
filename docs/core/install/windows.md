@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about the different ways you can install .NET and which versions of Windows support .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/08/2022
+ms.date: 12/21/2022
 ---
 
 # Install .NET on Windows
@@ -28,8 +28,8 @@ The following table lists the support status of each version of .NET (and .NET C
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
 | 7 (STS)     | 5             |
-| 6 (LTS)     | 3.0           |
-| 3.1 (LTS)   | 2.2           |
+| 6 (LTS)     | 3.1           |
+|             | 3.0           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
@@ -186,19 +186,19 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 > [!TIP]
 > A `+` symbol represents the minimum version.
 
-| Operating System                             | .NET 7 | .NET 6 | .NET Core 3.1 |
-|----------------------------------------------|--------|--------|---------------|
-| Windows 11                                   | ✔️      | ✔️      | ✔️             |
-| Windows Server 2022                          | ✔️      | ✔️      | ✔️             |
-| Windows Server, Version 1903 or later        | ✔️      | ✔️      | ✔️             |
-| Windows 10, Version 1607 or later            | ✔️      | ✔️      | ✔️             |
-| Windows 8.1                                  | ✔️      | ✔️      | ✔️             |
-| Windows 7 SP1 [ESU][esu]                     | ✔️      | ✔️      | ✔️             |
-| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            | ✔️    |
-| Windows Server Core 2012 R2                  | ✔️      | ✔️      | ✔️    |
-| Windows Server Core 2012                     | ✔️      | ✔️      | ✔️    |
-| Nano Server, Version 1809+                   | ✔️      | ✔️      | ✔️    |
-| Nano Server, Version 1803                    | ❌      | ❌      | ✔️    |
+| Operating System                             | .NET 7 | .NET 6 |
+|----------------------------------------------|--------|--------|
+| Windows 11                                   | ✔️      | ✔️      |
+| Windows Server 2022                          | ✔️      | ✔️      |
+| Windows Server, Version 1903 or later        | ✔️      | ✔️      |
+| Windows 10, Version 1607 or later            | ✔️      | ✔️      |
+| Windows 8.1                                  | ❌      | ✔️      |
+| Windows 7 SP1 [ESU][esu]                     | ❌      | ✔️      |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️            |
+| Windows Server Core 2012 R2                  | ✔️      | ✔️      |
+| Windows Server Core 2012                     | ✔️      | ✔️      |
+| Nano Server, Version 1809+                   | ✔️      | ✔️      |
+| Nano Server, Version 1803                    | ❌      | ❌      |
 
 For more information about .NET 7 supported operating systems, distributions, and lifecycle policy, see [.NET 7 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md).
 
@@ -249,8 +249,6 @@ The following table describes which versions of .NET are supported on an Arm-bas
 | 6            | x64          | Yes | Yes     | No                               |
 | 5            | Arm64        | Yes | Yes     | [Yes](#path-conflicts)           |
 | 5            | x64          | No  | Yes     | [Yes](#path-conflicts)           |
-| 3.1          | Arm64        | No  | No      | N/A                              |
-| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
 
 Starting with .NET 6, the x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
 
@@ -303,23 +301,6 @@ The following Windows versions are supported with .NET 6:
 | Nano Server         | 1809+         | x64             |
 
 For more information about .NET 6 supported operating systems, distributions, and lifecycle policy, see [.NET 6 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md).
-
-# [.NET Core 3.1](#tab/netcore31)
-
-The following Windows versions are supported with .NET Core 3.1:
-
-> [!NOTE]
-> A `+` symbol represents a minimum version. For specific OS version requirements, see the [Supported releases](#supported-releases) section.
-
-| OS                            | Version                        | Architectures   |
-| ----------------------------- | ------------------------------ | --------------- |
-| Windows 11                    | 21H2                           | x64, Arm64      |
-| Windows 10 Client             | 1607+                          | x64, x86        |
-| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
-| Windows Server                | 2012+                          | x64, x86        |
-| Nano Server                   | 1803+                          | x64, Arm32      |
-
-For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
 
 ### Offline install for Windows 7
 

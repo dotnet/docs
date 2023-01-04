@@ -154,6 +154,9 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 12 Monterey
   - `osx.12-x64`
   - `osx.12-arm64`
+- macOS 13 Ventura
+  - `osx.13-x64`
+  - `osx.13-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
 

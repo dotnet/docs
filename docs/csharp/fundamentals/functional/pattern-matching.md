@@ -58,7 +58,7 @@ The preceding code also demonstrates another important feature the compiler prov
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern2":::
 
-The key lesson in this, and any other refactoring or reordering is that the compiler validates that you've covered all inputs.
+The key lesson in this, and any other refactoring or reordering, is that the compiler validates that you've covered all inputs.
 
 ## Multiple inputs
 

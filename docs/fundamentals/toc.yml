@@ -205,6 +205,8 @@ items:
       href: ../core/tools/global-json.md
     - name: Telemetry
       href: ../core/tools/telemetry.md
+    - name: Signed-package verification
+      href: ../core/tools/nuget-signed-package-verification.md
     - name: Error messages
       items:
       - name: List of all SDK errors
@@ -1171,8 +1173,16 @@ items:
             href: code-analysis/quality-rules/ca1850.md
           - name: CA1851
             href: code-analysis/quality-rules/ca1851.md
+          - name: CA1852
+            href: code-analysis/quality-rules/ca1852.md
+          - name: CA1853
+            href: code-analysis/quality-rules/ca1853.md
           - name: CA1854
             href: code-analysis/quality-rules/ca1854.md
+          - name: CA1855
+            href: code-analysis/quality-rules/ca1855.md
+          - name: CA1858
+            href: code-analysis/quality-rules/ca1858.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1672,6 +1682,10 @@ items:
             items:
             - name: IDE0073
               href: code-analysis/style-rules/ide0073.md
+          - name: Namespace naming preferences
+            items:
+            - name: IDE0130
+              href: code-analysis/style-rules/ide0130.md
         - name: Unnecessary code rules
           items:
           - name: Overview
@@ -2460,8 +2474,6 @@ items:
         href: ../standard/serialization/serialization-guidelines.md
       - name: "How to: Chunk serialized data"
         href: ../standard/serialization/how-to-chunk-serialized-data.md
-      - name: "How to: Determine if a .NET Standard object is serializable"
-        href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
     - name: XML and SOAP serialization
       items:
       - name: Overview

@@ -3,7 +3,7 @@ title: Install .NET on openSUSE
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -18,13 +18,9 @@ ms.date: 08/07/2022
 
 The following table is a list of currently supported .NET releases on openSUSE 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
 
-- A ✔️ indicates that the version of openSUSE or .NET is still supported.
-- A ❌ indicates that the version of openSUSE or .NET isn't supported on that openSUSE release.
-- When both a version of openSUSE and a version of .NET have ✔️, that OS and .NET combination is supported.
-
-| openSUSE                   | .NET Core 3.1 | .NET 6         |
-|----------------------------|---------------|----------------|
-| ✔️ [15](#opensuse-15-)     | ✔️ 3.1        | ✔️ 6.0         |
+| openSUSE   | .NET      |
+|------------|-----------|
+| 15         | 7, 6,     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -36,7 +32,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## openSUSE 15 ✔️
+## openSUSE 15
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -48,7 +44,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
+[!INCLUDE [linux-zyp-install-70](includes/linux-install-70-zyp.md)]
 
 ## How to install other versions
 

@@ -27,6 +27,8 @@ C# 10 is supported on **.NET 6**. For more information, see [C# language version
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
 
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
 ## Record structs
 
 You can declare value type records using the [`record struct` or `readonly record struct` declarations](../language-reference/builtin-types/record.md). You can now clarify that a `record` is a reference type with the `record class` declaration.

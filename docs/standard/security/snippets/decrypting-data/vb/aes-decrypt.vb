@@ -29,11 +29,11 @@ Module Module1
                         numBytesToRead -= n
                     End While
 
-                    ' Create an instance of the CryptoStream class, pass it the file stream, and decrypt
-                    ' it with the Rijndael class using the key and IV.
                     Using cryptoStream As New CryptoStream(fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 
-                        ' Read the stream.
+                        ' By default, the StreamReader uses UTF-8 encoding.
+                        ' To change the text encoding, pass the desired encoding as the second parameter.
+                        ' For example, New StreamReader(cryptoStream, Encoding.Unicode).
                         Using decryptReader As New StreamReader(cryptoStream)
 
                             ' Display the message.

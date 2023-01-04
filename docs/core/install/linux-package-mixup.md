@@ -1,14 +1,14 @@
 ---
-title: Troubleshoot .NET Package Mix ups on Linux
-description: Learn about how to troubleshoot strange .NET package errors on Linux.
+title: Troubleshoot .NET package mix ups on Linux
+description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
-ms.date: 10/31/2022
+ms.date: 12/21/2022
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
-# Troubleshoot _fxr_, _libhostfxr.so_, and _FrameworkList.xml_ errors
+# Troubleshoot .NET errors related to missing files on Linux
 
-When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `dotnet run` may fail with a message related to something not being found. Some of the error messages may be similar to the following:
+When you try to use .NET on Linux, commands such as `dotnet new` and `dotnet run` may fail with a message related to a file not being found, such as _fxr_, _libhostfxr.so_, or _FrameworkList.xml_. Some of the error messages may be similar to the following:
 
 - **System.IO.FileNotFoundException**
 
@@ -20,11 +20,11 @@ When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `
 
   or
 
-  > A fatal error occurred. The folder [/usr/share/dotnet/host/fxr] does not exist.
+  > A fatal error occurred. The folder \[/usr/share/dotnet/host/fxr] does not exist.
 
   or
 
-  > A fatal error occurred, the folder [/usr/share/dotnet/host/fxr] does not contain any version-numbered child folders.
+  > A fatal error occurred, the folder \[/usr/share/dotnet/host/fxr] does not contain any version-numbered child folders.
 
 - **Generic messages about dotnet not found**
 
@@ -36,6 +36,7 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 
 This generally happens when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages, such as:
 
+- Alpine Linux
 - Arch
 - CentOS
 - CentOS Stream
@@ -94,18 +95,14 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
     For Ubuntu (or any other distribution that uses apt):
 
-    01. Remove the .NET packages if you previously installed them.
+    01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
     01. Create `/etc/apt/preferences` if it doesn't already exist.
     01. Add the following config to the preferences file, which prevents packages that start with `dotnet` or `aspnetcore` from being sourced by the Microsoft feed:
 
         ```bash
-        Package: dotnet*
+        Package: dotnet* aspnet* netstandard*
         Pin: origin "packages.microsoft.com"
-        Pin-Priority: -1
-
-        Package: aspnetcore*
-        Pin: origin "packages.microsoft.com"
-        Pin-Priority: -1
+        Pin-Priority: -10
         ```
 
     01. Install .NET.
@@ -128,10 +125,21 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
     For Ubuntu (or any other distribution that uses apt) make sure you've installed the Microsoft repository feeds and then install the package.
 
-    ```bash
-    sudo apt remove dotnet* aspnetcore*
-    sudo apt install dotnet-sdk-7.0
-    ```
+    01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
+    01. Create `/etc/apt/preferences` if it doesn't already exist.
+    01. Add the following config to the preferences file, adding the specific package you want to pin as a high priority, which will be sourced by the Microsoft Feed. For example, use the following example to pin .NET SDK 7.0:
+
+        ```bash
+        Package: dotnet-sdk-7.0
+        Pin: origin "packages.microsoft.com"
+        Pin-Priority: 999
+        ```
+
+    01. Install .NET.
+
+        ```bash
+        sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+        ```
 
 04. **I've encountered a bug in the Linux distribution version of .NET, I need the latest Microsoft version.**
 

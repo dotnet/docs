@@ -18,7 +18,7 @@ namespace Keywords
             Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");
             TestClassAndStruct.Main();
             ParameterModifiers.PassValueByValue();
-            ParameterModifiers.PassingValueByReferemce();
+            ParameterModifiers.PassingValueByReference();
             ParameterModifiers.PassingReferenceByValue();
             ParameterModifiers.PassingReferenceByReference();
 
@@ -27,7 +27,7 @@ namespace Keywords
 
     // <ShadowsFileScopedType>
     // In File2.cs:
-    // Doesn't conflict with HiddenWidget 
+    // Doesn't conflict with HiddenWidget
     // declared in File1.cs
     public class HiddenWidget
     {

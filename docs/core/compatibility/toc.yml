@@ -27,6 +27,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: ASPNET-prefixed environment variable precedence
+          href: aspnet-core/7.0/environment-variable-precedence.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Authentication in WebAssembly apps
@@ -61,6 +63,8 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
           href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        - name: BrotliStream no longer allows undefined CompressionLevel values
+          href: core-libraries/7.0/brotlistream-ctor.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
@@ -145,10 +149,14 @@ items:
           href: networking/7.0/socket-end-closed-sockets.md
       - name: SDK and MSBuild
         items:
+        - name: Automatic RuntimeIdentifier for certain projects
+          href: sdk/7.0/automatic-runtimeidentifier.md
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
         - name: Serialization of custom types in .NET 7
           href: sdk/7.0/custom-serialization.md
+        - name: Side-by-side SDK installations
+          href: sdk/7.0/side-by-side-install.md
       - name: Serialization
         items:
         - name: DataContractSerializer retains sign when deserializing -0
@@ -671,6 +679,8 @@ items:
         items:
         - name: API controller actions try to infer parameters from DI
           href: aspnet-core/7.0/api-controller-action-parameters-di.md
+        - name: ASPNET-prefixed environment variable precedence
+          href: aspnet-core/7.0/environment-variable-precedence.md
         - name: AuthenticateAsync for remote auth providers
           href: aspnet-core/7.0/authenticateasync-anonymous-request.md
         - name: Authentication in WebAssembly apps
@@ -869,6 +879,8 @@ items:
           href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
         - name: BinaryFormatter serialization APIs produce compiler errors
           href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        - name: BrotliStream no longer allows undefined CompressionLevel values
+          href: core-libraries/7.0/brotlistream-ctor.md
         - name: C++/CLI projects in Visual Studio
           href: core-libraries/7.0/cpluspluscli-compiler-version.md
         - name: Collectible Assembly in non-collectible AssemblyLoadContext
@@ -1173,10 +1185,14 @@ items:
       items:
       - name: .NET 7
         items:
+        - name: Automatic RuntimeIdentifier for certain projects
+          href: sdk/7.0/automatic-runtimeidentifier.md
         - name: Version requirements for .NET 7 SDK
           href: sdk/7.0/vs-msbuild-version.md
         - name: Serialization of custom types in .NET 7
           href: sdk/7.0/custom-serialization.md
+        - name: Side-by-side SDK installations
+          href: sdk/7.0/side-by-side-install.md
       - name: .NET 6
         items:
         - name: -p option for `dotnet run` is deprecated

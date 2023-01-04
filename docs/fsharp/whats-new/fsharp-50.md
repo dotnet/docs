@@ -554,4 +554,4 @@ let password =
 
 Prior to this change, you could write the `InputBuilder` type as it is, but you couldn't use it the way it's used in the example. Since overloads, optional parameters, and now `System.ParamArray` types are allowed, everything just works as you'd expect it to.
 
-This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1056-allow-custom-operation-overloads.md).
+This feature implements [F# RFC FS-1056](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).

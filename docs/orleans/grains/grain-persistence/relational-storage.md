@@ -134,7 +134,7 @@ This is the case so that you can choose a serialization format, e.g. [Simple Bin
 - <xref:Orleans.Storage.OrleansStorageDefaultBinarySerializer>
 - <xref:Orleans.Storage.OrleansStorageDefaultBinaryDeserializer>
 
-When the serializers have been implemented, they need to be added to the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. Here is an implementation of [IStorageSerializationPicker](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs). By default, `StorageSerializationPicker` will be used. An example of changing the data storage format or using serializers can be seen at [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
+When the serializers have been implemented, they need to be added to the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. Here is an implementation of `IStorageSerializationPicker`. By default, `StorageSerializationPicker` will be used. An example of changing the data storage format or using serializers can be seen at [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
 
 Currently, there is no method to expose the serialization picker to the Orleans application as there is no method to access the framework-created `AdoNetGrainStorage`.
 

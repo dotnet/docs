@@ -49,7 +49,7 @@ The result of this statement depends on whether `SomeType` is a value type or a 
 
 You can retrieve the data of an array by using an index. For example:
 
-:::code language="csharp" source="snippets/RetrevingArrayElements.cs" id="RetrevingDataArray" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/RetrievingArrayElements.cs" id="RetrievingDataArray" interactive="try-dotnet-method":::
   
 ## See also
 

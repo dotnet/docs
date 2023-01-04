@@ -69,11 +69,11 @@ When installed, .NET consists of several components that are laid out as follows
 
 While there's a single host, most of the other components are in versioned directories (2,3,5,6). This means multiple versions can be present on the system since they're installed side by side.
 
-- (2) **host/fxr/\<fxr version>** contains the framework resolution logic used by the host. The host uses the latest hostfxr that is installed. The hostfxr is responsible for selecting the appropriate runtime when executing a .NET application. For example, an application built for .NET Core 2.0.0 uses the 2.0.5 runtime when it's available. Similarly, hostfxr selects the appropriate SDK during development.
+- (2) **host/fxr/\<fxr version>** contains the framework resolution logic used by the host. The host uses the latest hostfxr that is installed. The hostfxr is responsible for selecting the appropriate runtime when executing a .NET application. For example, an application built for .NET 7.0.0 uses the 7.0.5 runtime when it's available. Similarly, hostfxr selects the appropriate SDK during development.
 
 - (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET libraries and applications. The SDK includes the .NET CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
-- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. The folder name is the feature band version of the SDK. So for an SDK version such as 6.0.102, this folder would still be named 6.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *library-packs*, *metadata*, and *template-packs*. A distribution can create an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
+- (4) **sdk-manifests/\<sdk feature band version>** The names and versions of the assets that an optional workload installation requires are maintained in workload manifests stored in this folder. The folder name is the feature band version of the SDK. So for an SDK version such as 7.0.102, this folder would still be named 7.0.100. When a workload is installed, the following folders are created as needed for the workload's assets: *library-packs*, *metadata*, and *template-packs*. A distribution can create an empty */metadata/workloads/\<sdkfeatureband>/userlocal* file if workloads should be installed under a user path rather than in the *dotnet* folder. For more information, see GitHub issue [dotnet/installer#12104](https://github.com/dotnet/installer/issues/12104).
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 
@@ -105,39 +105,39 @@ The folders marked with `(*)` are used by multiple packages. Some package format
 
 .NET versioning is based on the runtime component `[major].[minor]` version numbers.
 The SDK version uses the same `[major].[minor]` and has an independent `[patch]` that combines feature and patch semantics for the SDK.
-For example: SDK version 2.2.302 is the second patch release of the third feature release of the SDK that supports the 2.2 runtime. For more information about how versioning works, see [.NET versioning overview](./versions/index.md).
+For example: SDK version 7.0.302 is the second patch release of the third feature release of the SDK that supports the 7.0 runtime. For more information about how versioning works, see [.NET versioning overview](./versions/index.md).
 
 Some of the packages include part of the version number in their name. This allows you to install a specific version.
 The rest of the version isn't included in the version name. This allows the OS package manager to update the packages (for example, automatically installing security fixes). Supported package managers are Linux specific.
 
 The following lists the recommended packages:
 
-- `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
+- `dotnet-sdk-[major].[minor]` - Installs the latest SDK for specific runtime
   - **Version:** \<sdk version>
-  - **Example:** dotnet-sdk-2.1
+  - **Example:** dotnet-sdk-7.0
   - **Contains:** (3),(4)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>
-  - **Example:** aspnetcore-runtime-2.1
+  - **Example:** aspnetcore-runtime-7.0
   - **Contains:** (6)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`
 
 - `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
   - **Version:** \<runtime version>
-  - **Example:** dotnet-runtime-deps-2.1
+  - **Example:** dotnet-runtime-deps-7.0
   - **Dependencies:** _distribution-specific dependencies_
 
 - `dotnet-runtime-[major].[minor]` - Installs a specific runtime
   - **Version:** \<runtime version>
-  - **Example:** dotnet-runtime-2.1
+  - **Example:** dotnet-runtime-7.0
   - **Contains:** (5)
   - **Dependencies:** `dotnet-hostfxr-[major].[minor]`, `dotnet-runtime-deps-[major].[minor]`
 
 - `dotnet-hostfxr-[major].[minor]` - dependency
   - **Version:** \<runtime version>
-  - **Example:** dotnet-hostfxr-3.0
+  - **Example:** dotnet-hostfxr-7.0
   - **Contains:** (2)
   - **Dependencies:** `dotnet-host`
 
@@ -166,11 +166,23 @@ The following lists the recommended packages:
   - **Version:** \<sdk version>
   - **Contains:** (15)
 
+The following two meta packages are optional. They bring value for end users in that they abstract the top-level package (dotnet-sdk), which simplifies the installation of the full set of .NET packages. These meta packages reference a specific .NET SDK version.
+
+- `dotnet[major]` - Installs the specified SDK version
+  - **Version:** \<sdk version>
+  - **Example:** dotnet7
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
+- `dotnet` - Installs a specific SDK version determined by distros to be the primary version&mdash;usually the latest available
+  - **Version:** \<sdk version>
+  - **Example:** dotnet
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro-specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
 When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, this also matches with the .NET version.
 
-Dependencies between packages should use an _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (for example, `dnf update dotnet-sdk-2.2`).
+Dependencies between packages should use an _equal or greater than_ version requirement. For example, `dotnet-sdk-7.0:7.0.401` requires `aspnetcore-runtime-7.0 >= 7.0.6`. This makes it possible for the user to upgrade their installation via a root package (for example, `dnf update dotnet-sdk-7.0`).
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

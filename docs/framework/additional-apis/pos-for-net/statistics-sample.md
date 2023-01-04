@@ -139,11 +139,11 @@ namespace Statistics
             // the user has entered a statistic name.
             if (txtStatisticName.TextLength > 0)
             {
-                btnRetreiveStatistic.Enabled = true;
+                btnRetrieveStatistic.Enabled = true;
             }
             else
             {
-                btnRetreiveStatistic.Enabled = false;
+                btnRetrieveStatistic.Enabled = false;
             }
         }
 
@@ -258,18 +258,18 @@ namespace Statistics
 
             DisplayStatistics(statistics, IsXml);
             txtStatisticName.Clear();
-            btnRetreiveStatistic.Enabled = false;
+            btnRetrieveStatistic.Enabled = false;
         }
 
         private void StatisticSizeChanged(object sender, EventArgs e)
         {
             if (txtStatisticName.TextLength > 0)
             {
-                btnRetreiveStatistic.Enabled = true;
+                btnRetrieveStatistic.Enabled = true;
             }
             else
             {
-                btnRetreiveStatistic.Enabled = false;
+                btnRetrieveStatistic.Enabled = false;
             }
         }
 
@@ -358,7 +358,7 @@ namespace Statistics
             this.btnRetrieveStatistics = new System.Windows.Forms.Button();
             this.txtStatisticName = new System.Windows.Forms.TextBox();
             this.txtRetrievedStatistics = new System.Windows.Forms.TextBox();
-            this.btnRetreiveStatistic = new System.Windows.Forms.Button();
+            this.btnRetrieveStatistic = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -412,19 +412,19 @@ namespace Statistics
             this.txtRetrievedStatistics.Size = new System.Drawing.Size(476, 247);
             this.txtRetrievedStatistics.TabIndex = 5;
             //
-            // btnRetreiveStatistic
+            // btnRetrieveStatistic
             //
-            this.btnRetreiveStatistic.Location = new System.Drawing.Point(16, 30);
-            this.btnRetreiveStatistic.Name = "btnRetreiveStatistic";
-            this.btnRetreiveStatistic.Size = new System.Drawing.Size(133, 23);
-            this.btnRetreiveStatistic.TabIndex = 6;
-            this.btnRetreiveStatistic.Text = "Retrieve Statistic";
-            this.btnRetreiveStatistic.UseVisualStyleBackColor = true;
-            this.btnRetreiveStatistic.Click += new System.EventHandler(this.RetrieveOneStatistic);
+            this.btnRetrieveStatistic.Location = new System.Drawing.Point(16, 30);
+            this.btnRetrieveStatistic.Name = "btnRetrieveStatistic";
+            this.btnRetrieveStatistic.Size = new System.Drawing.Size(133, 23);
+            this.btnRetrieveStatistic.TabIndex = 6;
+            this.btnRetrieveStatistic.Text = "Retrieve Statistic";
+            this.btnRetrieveStatistic.UseVisualStyleBackColor = true;
+            this.btnRetrieveStatistic.Click += new System.EventHandler(this.RetrieveOneStatistic);
             //
             // groupBox1
             //
-            this.groupBox1.Controls.Add(this.btnRetreiveStatistic);
+            this.groupBox1.Controls.Add(this.btnRetrieveStatistic);
             this.groupBox1.Controls.Add(this.txtStatisticName);
             this.groupBox1.Location = new System.Drawing.Point(219, 35);
             this.groupBox1.Name = "groupBox1";
@@ -460,7 +460,7 @@ namespace Statistics
         private System.Windows.Forms.Button btnRetrieveStatistics;
         private System.Windows.Forms.TextBox txtStatisticName;
         private System.Windows.Forms.TextBox txtRetrievedStatistics;
-        private System.Windows.Forms.Button btnRetreiveStatistic;
+        private System.Windows.Forms.Button btnRetrieveStatistic;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

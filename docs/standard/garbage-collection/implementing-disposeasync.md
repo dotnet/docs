@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/30/2022
+ms.date: 01/02/2023
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -49,10 +49,8 @@ public async ValueTask DisposeAsync()
     // Dispose of unmanaged resources.
     Dispose(false);
 
-#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
     // Suppress finalization.
     GC.SuppressFinalize(this);
-#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
 }
 ```
 

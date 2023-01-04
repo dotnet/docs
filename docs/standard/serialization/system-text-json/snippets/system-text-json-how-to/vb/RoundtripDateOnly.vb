@@ -6,6 +6,7 @@ Namespace SystemTextJsonSamples
             Console.WriteLine(
                 "Serialize SeriesDataPoint class to a JSON string, then deserialize it back object.")
 
+            ' <RoundtripDateOnly>
             Dim originalData As New SeriesDataPoint With {
                 .Id = Guid.NewGuid(),
                 .Value = 3.791D,
@@ -25,6 +26,7 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine(
                 $"Original record is the same as the deserialized record: {valuesAreTheSame}")
+            ' </RoundtripDateOnly>
         End Sub
     End Class
 

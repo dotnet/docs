@@ -41,7 +41,7 @@ All programs acquire one or more system resources, such as memory, system handle
   
  **✓ DO** implement the Basic Dispose Pattern and provide a finalizer on types holding resources that need to be freed explicitly and that do not have finalizers.  
   
- For example, the pattern should be implemented on types storing unmanaged memory buffers. The [Finalizable Types](#finalizable_types) section discusses guidelines related to implementing finalizers.  
+ For example, the pattern should be implemented on types storing unmanaged memory buffers. The [Finalizable Types](#finalizable-types) section discusses guidelines related to implementing finalizers.  
   
  **✓ CONSIDER** implementing the Basic Dispose Pattern on classes that themselves don’t hold unmanaged resources or disposable objects but are likely to have subtypes that do.  
   
@@ -183,8 +183,8 @@ public class Stream : IDisposable {
 }  
 ```  
   
-<a name="finalizable_types"></a>   
-## Finalizable Types  
+## Finalizable Types
+
  Finalizable types are types that extend the Basic Dispose Pattern by overriding the finalizer and providing finalization code path in the `Dispose(bool)` method.  
   
  Finalizers are notoriously difficult to implement correctly, primarily because you cannot make certain (normally valid) assumptions about the state of the system during their execution. The following guidelines should be taken into careful consideration.  

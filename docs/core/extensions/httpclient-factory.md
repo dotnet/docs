@@ -3,7 +3,7 @@ title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/07/2022
+ms.date: 01/04/2023
 ---
 
 # IHttpClientFactory with .NET
@@ -211,23 +211,13 @@ Keeping a single `HttpClient` instance alive for a long duration is a common pat
 
 ## Configure the `HttpMessageHandler`
 
-It may be necessary to control the configuration of the inner `HttpMessageHandler` used by a client.
+It may be necessary to control the configuration of the inner <xref:System.Net.Http.HttpMessageHandler> used by a client.
 
 An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate on the `IServiceCollection`. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
 
-```csharp
-services.AddHttpClient("Named.Client")
-    .ConfigurePrimaryHttpMessageHandler(() =>
-    {
-        return new HttpClientHandler
-        {
-            AllowAutoRedirect = false,
-            UseDefaultCredentials = true
-        };
-    });
-```
+:::code source="snippets/http/configurehandler/Program.cs" id="configurehandler":::
 
-Configuring the `HttClientHandler` lets you specify a proxy for the `HttpClient` instance. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#http-proxy).
+Configuring the `HttClientHandler` lets you specify a proxy for the `HttpClient` instance among various other properties of the handler. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#http-proxy).
 
 ### Additional configuration
 

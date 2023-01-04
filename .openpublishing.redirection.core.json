@@ -83,6 +83,11 @@
             "redirect_url": "/dotnet/core/compatibility/fx-core"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/index.md",
+            "redirect_url": "/dotnet/core/compatibility/library-change-rules",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/interop.md",
             "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
         },

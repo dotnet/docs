@@ -42,4 +42,4 @@ For more information, see [How code changes can affect compatibility](../compati
 
 ## Find breaking changes
 
-Changes that affect compatibility are documented and should be reviewed before porting from .NET Framework to .NET or when upgrading to a newer version of .NET. For a list of these breaking changes, see [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md).
+Changes that affect compatibility are documented. Review these changes before you port your code from .NET Framework to .NET or upgrade it to a newer version of .NET. For a list of these breaking changes, see [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md).

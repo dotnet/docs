@@ -54,14 +54,14 @@ For types that are immutable because all their property setters are non-public, 
 ## Non-public property accessors
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
+`System.Text.Json` doesn't support serialization of non-public properties. However, you can enable use of a non-public property *accessor* by using the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="10,13":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/NonPublicAccessors.vb" :::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Non-public property accessors are not supported in .NET Core 3.1. For more information, see [the Migrate from Newtonsoft.Json article](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
+Non-public property accessors aren't supported in .NET Core 3.1. For more information, see [Migrate from Newtonsoft.Json](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
 ::: zone-end
 
 ## See also

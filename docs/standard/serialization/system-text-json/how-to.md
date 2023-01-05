@@ -87,12 +87,12 @@ The preceding examples use type inference for the type being serialized. An over
 
 With .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
 
-:::code source="snippets/system-text-json-how-to/cs/RoundtripDateOnly.cs" id="SeriesDataPoint":::
+:::code source="snippets/system-text-json-how-to/csharp/RoundtripDateOnly.cs" id="SeriesDataPoint":::
 :::code source="snippets/system-text-json-how-to/vb/RoundtripDateOnly.vb" id="SeriesDataPoint":::
 
 The following example serializes the `SeriesDataPoint` object, displays the resulting JSON, and then deserializes it back into a new instance of the `SeriesDataPoint` type. Finally, the original and newly deserialized instances are compared for equality and the results are written to the console:
 
-:::code source="snippets/system-text-json-how-to/cs/RoundtripDateOnly.cs" id="RoundtripDateOnly":::
+:::code source="snippets/system-text-json-how-to/csharp/RoundtripDateOnly.cs" id="RoundtripDateOnly":::
 :::code source="snippets/system-text-json-how-to/vb/RoundtripDateOnly.vb" id="RoundtripDateOnly":::
 
 ### Serialization example

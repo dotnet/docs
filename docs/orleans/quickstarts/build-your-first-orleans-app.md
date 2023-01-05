@@ -106,7 +106,7 @@ app.Run();
 
 At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
-:::code language="csharp" source="snippets/orleans-url-shortener/orleansurlshortener/program.cs" id="Configuration" :::
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Configuration" :::
 
 ## Create the URL shortener grain
 
@@ -127,11 +127,11 @@ Orleans grains can also use a custom interface to define their methods and prope
 
 1. Append the following interface definition to the bottom of the _Program.cs_ file.
 
-:::code language="csharp" source="snippets/orleans-url-shortener/orleansurlshortener/program.cs" id="GrainInterface" :::
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="GrainInterface" :::
 
 1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the `IPersistentState` interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
-:::code language="csharp" source="snippets/orleans-url-shortener/orleansurlshortener/program.cs" id="Grain" :::
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Grain" :::
 
 ## Create the endpoints
 
@@ -142,13 +142,13 @@ Next, create two endpoints to utilize the Orleans grain and silo configurations:
 
 Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the _Program.cs_ file before the `app.Run()` method call:
 
-:::code language="csharp" source="snippets/orleans-url-shortener/orleansurlshortener/program.cs" id="Endpoints" :::
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Endpoints" :::
 
 ## Test the completed app
 
 The core functionality of the app is now complete and ready to be tested. The final app code should match the following example:
 
-:::code language="csharp" source="snippets/orleans-url-shortener/orleansurlshortener/program.cs" :::
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" :::
 
 Test the application in the browser using the following steps:
 

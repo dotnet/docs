@@ -127,15 +127,15 @@ conceptualContent:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
+        - url: core/compatibility/breaking-changes.md
+          itemType: concept
+          text: .NET breaking changes
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker
-        - url: core/compatibility/breaking-changes.md
-          itemType: concept
-          text: .NET breaking changes
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
           itemType: tutorial
           text: Create .NET desktop apps for Windows
@@ -160,6 +160,24 @@ conceptualContent:
         - url: architecture/modernize-with-azure-containers/index.md
           itemType: architecture
           text: Modernize .NET apps with Azure
+        - url: architecture/maui/index.md
+          itemType: architecture
+          text: Enterprise application patterns using .NET MAUI
+        - url: architecture/blazor-for-web-forms-developers/index.md
+          itemType: architecture
+          text: Blazor for ASP.NET Web Forms developers
+        - url: architecture/devops-for-aspnet-developers/index.md
+          itemType: architecture
+          text: DevOps for ASP.NET Core developers
+        - url: architecture/grpc-for-wcf-developers/index.md
+          itemType: architecture
+          text: ASP.NET Core gRPC for WCF developers
+        - url: architecture/modernize-desktop/index.md
+          itemType: architecture
+          text: Modernizing desktop apps on Windows with .NET 6
+        - url: architecture/porting-existing-aspnet-apps/index.md
+          itemType: architecture
+          text: Porting existing ASP.NET apps to .NET 6
       # footerLink (optional)
       footerLink:
         url: architecture/index.yml

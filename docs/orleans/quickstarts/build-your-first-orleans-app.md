@@ -127,11 +127,11 @@ Orleans grains can also use a custom interface to define their methods and prope
 
 1. Append the following interface definition to the bottom of the _Program.cs_ file.
 
-:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="GrainInterface" :::
+    :::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="GrainInterface" :::
 
 1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the `IPersistentState` interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
-:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Grain" :::
+    :::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Grain" :::
 
 ## Create the endpoints
 

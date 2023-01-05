@@ -58,7 +58,7 @@ public static class NullCoalescingOperator
         int? a = null;
 
         Console.WriteLine((numbers is null)); // expected: true
-        // if numbers is null add 5 to numbers
+        // if numbers is null, initialize it. Then, add 5 to numbers
         (numbers ??= new List<int>()).Add(5);
         Console.WriteLine(string.Join(" ", numbers));  // output: 5
         Console.WriteLine((numbers is null)); // expected: false        

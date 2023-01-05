@@ -1,34 +1,33 @@
 ---
 title: Orleans streaming quickstart
 description: Learn from the streaming quickstart in .NET Orleans.
-ms.date: 12/06/2022
+ms.date: 01/05/2023
 zone_pivot_groups: orleans-version
 ---
 
 # Orleans streaming quickstart
 
-This guide will show you a quick way to set up and use Orleans Streams.
-To learn more about the details of the streaming features, read other parts of this documentation.
+This guide will show you a quick way to set up and use Orleans Streams. To learn more about the details of the streaming features, read other parts of this documentation.
 
 ## Required configurations
-
-In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-On the silo, where `hostBuilder` is an `ISiloHostBuilder`:
+In this guide, we'll use a memory-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
+
+On the silo, where `silo` is an <xref:Orleans.Hosting.ISiloBuilder> call <xref:Orleans.Hosting.SiloBuilderExtensions.AddMemoryStreams%2A>:
 
 ```csharp
-hostBuilder.AddMemoryStreams("StreamProvider")
-           .AddMemoryGrainStorage("PubSubStore");
+silo.AddMemoryStreams("StreamProvider")
+    .AddMemoryGrainStorage("PubSubStore");
 ```
 
-On the cluster client, where `clientBuilder` is an `IClientBuilder`.
+On the cluster client, where `client` is an <xref:Orleans.Hosting.IClientBuilder> call <xref:Orleans.Hosting.ClientBuilderStreamingExtensions.AddMemoryStreams%2A>.
 
 ```csharp
-clientBuilder.AddMemoryStreams("StreamProvider");
+client.AddMemoryStreams("StreamProvider");
 
 :::zone-end
 
@@ -36,14 +35,16 @@ clientBuilder.AddMemoryStreams("StreamProvider");
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-On the silo, where `hostBuilder` is an `ISiloHostBuilder`:
+In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
+
+On the silo, where `hostBuilder` is an `ISiloHostBuilder` call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
            .AddMemoryGrainStorage("PubSubStore");
 ```
 
-On the cluster client, where `clientBuilder` is an `IClientBuilder`.
+On the cluster client, where `clientBuilder` is an `IClientBuilder` call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
 
 ```csharp
 clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");

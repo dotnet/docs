@@ -112,7 +112,7 @@ static bool CustomCertificateValidationCallback(
     SslPolicyErrors sslPolicyErrors)
 {
     // If there is something wrong other than a chain processing error, don't trust it.
-    if (sslPolicyErrors != SslPolicyErrors.RemoteCertificateChainErrors)
+    if ((sslPolicyErrors & ~SslPolicyErrors.RemoteCertificateChainErrors) != 0)
     {
         return false;
     }

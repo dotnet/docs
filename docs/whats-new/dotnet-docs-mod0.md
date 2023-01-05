@@ -21,14 +21,11 @@ Welcome to what's new in the .NET docs for December 2022. This article lists som
 
 ### New articles
 
-- [CA1858: Use StartsWith instead of IndexOf](../fundamentals/code-analysis/quality-rules/ca1858.md)
-- [Automatic RuntimeIdentifier for certain projects](../core/compatibility/sdk/7.0/automatic-runtimeidentifier.md)
-- [Side-by-side SDK installations](../core/compatibility/sdk/7.0/side-by-side-install.md)
 - [Namespace does not match folder structure (IDE0130)](../fundamentals/code-analysis/style-rules/ide0130.md)
-- [ASPNET-prefixed environment variable precedence](../core/compatibility/aspnet-core/7.0/environment-variable-precedence.md)
 - [CA1852: Seal internal types](../fundamentals/code-analysis/quality-rules/ca1852.md)
 - [CA1853: Unnecessary call to 'Dictionary.ContainsKey(key)'](../fundamentals/code-analysis/quality-rules/ca1853.md)
 - [CA1855: Use Span\<T>.Clear() instead of Span\<T>.Fill()](../fundamentals/code-analysis/quality-rules/ca1855.md)
+- [CA1858: Use StartsWith instead of IndexOf](../fundamentals/code-analysis/quality-rules/ca1858.md)
 
 ## C# language
 

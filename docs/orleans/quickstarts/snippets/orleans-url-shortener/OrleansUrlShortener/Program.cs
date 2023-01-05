@@ -1,3 +1,4 @@
+// <Configuration>
 using Microsoft.AspNetCore.Http.Extensions;
 using Orleans.Runtime;
 
@@ -10,7 +11,9 @@ builder.Host.UseOrleans(siloBuilder =>
 });
 
 var app = builder.Build();
+// </Configuration>
 
+// <Endpoints>
 app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/shorten/{*path}",
@@ -43,13 +46,17 @@ app.MapGet("/go/{shortenedRouteSegment}",
     });
 
 app.Run();
+// </Endpoints>
 
+// <GrainInterface>
 public interface IUrlShortenerGrain : IGrainWithStringKey
 {
     Task SetUrl(string fullUrl);
     Task<string> GetUrl();
 }
+// </GrainInterface>
 
+// <Grain>
 public class UrlShortenerGrain : Grain, IUrlShortenerGrain
 {
     private readonly IPersistentState<UrlDetails> _state;
@@ -81,3 +88,4 @@ public record UrlDetails
     public string FullUrl { get; set; }
     public string ShortenedRouteSegment { get; set; }
 }
+// </grain>

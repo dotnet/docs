@@ -35,7 +35,7 @@ Welcome to what's new in the .NET docs for December 2022. This article lists som
 ### New articles
 
 - [Code comments - `//` and `/*`. `*/`](../csharp/language-reference/tokens/comments.md)
-- [Raw string literal text - `` in string literals](../csharp/language-reference/tokens/raw-string.md)
+- [Raw string literal text - repeated backticks in string literals](../csharp/language-reference/tokens/raw-string.md)
 
 ### Updated articles
 

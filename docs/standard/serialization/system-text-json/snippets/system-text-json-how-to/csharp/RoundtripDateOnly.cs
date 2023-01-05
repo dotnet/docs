@@ -26,14 +26,14 @@ public class RoundtripDateOnly
 
         bool valuesAreTheSame = originalData == deserializedData;
         Console.WriteLine($"""
-            Original record is the same as the deserialized record: {valuesAreTheSame}
+            Original record has the same values as the deserialized record: {valuesAreTheSame}
             """);
         // </RoundtripDateOnly>
     }
 }
 
 // <SeriesDataPoint>
-sealed file record class SeriesDataPoint(
+sealed file record SeriesDataPoint(
     Guid Id,
     decimal Value,
     DateOnly Date,

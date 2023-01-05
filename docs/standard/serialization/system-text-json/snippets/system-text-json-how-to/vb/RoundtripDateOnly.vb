@@ -25,7 +25,7 @@ Namespace SystemTextJsonSamples
                 originalData.Value = deserializedData.Value)
 
             Console.WriteLine(
-                $"Original record is the same as the deserialized record: {valuesAreTheSame}")
+                $"Original object has the same values as the deserialized object: {valuesAreTheSame}")
             ' </RoundtripDateOnly>
         End Sub
     End Class

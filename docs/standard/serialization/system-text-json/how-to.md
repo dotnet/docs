@@ -95,8 +95,6 @@ The following example serializes the `SeriesDataPoint` object, displays the resu
 :::code source="snippets/system-text-json-how-to/cs/RoundtripDateOnly.cs" id="RoundtripDateOnly":::
 :::code source="snippets/system-text-json-how-to/vb/RoundtripDateOnly.vb" id="RoundtripDateOnly":::
 
-The preceding example shows an object with `DateOnly` and `TimeOnly` properties being round-tripped serialized.
-
 ### Serialization example
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:

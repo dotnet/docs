@@ -96,7 +96,7 @@ The `ServiceLifetimeReporter` defines a constructor that requires each of the af
 
 Update *Program.cs* with the following code:
 
-:::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="9-12":::
+:::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="8-11":::
 
 Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
 

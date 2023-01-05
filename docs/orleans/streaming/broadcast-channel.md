@@ -6,11 +6,11 @@ ms.date: 01/02/2023
 
 # Broadcast channels in Orleans
 
-Broadcast channels are a special type of broadcasting mechanism that can be used to send messages to all subscribers. Unlike streaming providers, broadcast channels are not persistent and do not store messages, and they're not a replacement for persistent streams. With broadcast channels, a grain subscribes to the broadcast channel and receives broadcast messages from a producer. This decouples the sender and receiver of the message, which is useful for scenarios where the sender and receiver are not known in advance.
+Broadcast channels are a special type of broadcasting mechanism that can be used to send messages to all subscribers. Unlike str[streaming providers](stream-providers.md), broadcast channels are not persistent and don't store messages, and they're not a replacement for persistent streams. With broadcast channels, grains are implicitly subscribed to the broadcast channel and receive broadcast messages from a producer. This decouples the sender and receiver of the message, which is useful for scenarios where the sender and receiver are not known in advance.
 
 ## Example scenario
 
-Consider a scenario where you have a grain that needs to receive stock price updates from a stock price provider. The stock price provider is a background service that publishes stock price updates to a broadcast channel. The grain subscribes to the broadcast channel and receives updated stock prices. The following diagram shows the scenario:
+Consider a scenario where you have a grain that needs to receive stock price updates from a stock price provider. The stock price provider is a background service that publishes stock price updates to a broadcast channel. Grains are implicitly subscribed to the broadcast channel and receive updated stock prices. The following diagram shows the scenario:
 
 :::image type="content" source="snippets/media/broadcastchannel-diagram.png" lightbox="snippets/media/broadcastchannel-diagram.png" alt-text="Stock prices diagram depicting a silo, a stock grain and consuming client in a simple broadcast channel architecture.":::
 

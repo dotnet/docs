@@ -35,7 +35,7 @@ Your new console app project file should resemble the following:
 :::code language="xml" source="snippets/configuration/console-di/console-di.csproj":::
 
 > [!IMPORTANT]
-> In this example, the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package is required to build and run the app. Some metapackages might contain the `Microsoft.Extensions.Hosting` package, in those scenarios and explicit package reference isn't required.
+> In this example, the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package is required to build and run the app. Some metapackages might contain the `Microsoft.Extensions.Hosting` package, in which case an explicit package reference isn't required.
 
 ## Add interfaces
 
@@ -48,7 +48,7 @@ In this sample app, you'll learn how dependency injection handles service lifeti
 The `IReportServiceLifetime` interface defines:
 
 - A `Guid Id` property that represents the unique identifier of the service.
-- The <xref:Microsoft.Extensions.DependencyInjection.ServiceLifetime> property that represents the service lifetime.
+- A <xref:Microsoft.Extensions.DependencyInjection.ServiceLifetime> property that represents the service lifetime.
 
 *IExampleTransientService.cs*
 
@@ -90,7 +90,7 @@ Add the following service lifetime reporter class, which acts as a service to th
 
 :::code source="snippets/configuration/console-di/ServiceLifetimeReporter.cs":::
 
-The `ServiceLifetimeReporter` defines a constructor that requires each of the aforementioned marker interfaces, that is, `IExampleTransientService`, `IExampleScopedService`, and `IExampleSingletonService`. The object exposes a single method that allows the consumer to report on the service with a given `lifetimeDetails` parameter. When invoked, the `ReportServiceLifetimeDetails` method logs each service's unique identifier with the service lifetime message.
+The `ServiceLifetimeReporter` defines a constructor that requires each of the aforementioned service interfaces, that is, `IExampleTransientService`, `IExampleScopedService`, and `IExampleSingletonService`. The object exposes a single method that allows the consumer to report on the service with a given `lifetimeDetails` parameter. When invoked, the `ReportServiceLifetimeDetails` method logs each service's unique identifier with the service lifetime message. The log messages help to visualize the service lifetime.
 
 ## Register services for DI
 
@@ -112,9 +112,9 @@ The app:
 
 ## Conclusion
 
-In this sample app, you created several interfaces and corresponding implementations. Each of these services is uniquely identified and paired with a <xref:Microsoft.Extensions.DependencyInjection.ServiceLifetime>. The sample app demonstrates registering service implementations against an interface, and how to register pure classes without backing interfaces. The sample app then demonstrates how dependencies defined as constructor parameters are resolved during runtime.
+In this sample app, you created several interfaces and corresponding implementations. Each of these services is uniquely identified and paired with a <xref:Microsoft.Extensions.DependencyInjection.ServiceLifetime>. The sample app demonstrates registering service implementations against an interface, and how to register pure classes without backing interfaces. The sample app then demonstrates how dependencies defined as constructor parameters are resolved at run time.
 
-When the app is ran, it will display output similar to the following:
+When you run the app, it displays output similar to the following:
 
 :::code source="snippets/configuration/console-di/Program.cs" id="Output":::
 

@@ -52,8 +52,9 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 > <sup>3</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >
 > <sup>4</sup> 6.0.300 and newer SDKs require a minimum Visual Studio version of 17.0.
-> 
+>
 > <sup>5</sup> 7.0.200 and newer SDKs require a minimum Visual Studio version of 17.4.
+
 ## Targeting and support rules
 
 Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into place regarding which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in. The policy is:

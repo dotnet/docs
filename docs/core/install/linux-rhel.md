@@ -3,7 +3,7 @@ title: Install .NET on RHEL and CentOS Stream
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on RHEL and CentOS Stream
@@ -26,10 +26,10 @@ The following table is a list of currently supported .NET releases on both RHEL 
 | Distribution           | .NET      |
 | ---------------------- | --------- |
 | RHEL 9 (9.1)           | 7, 6      |
-| RHEL 8 (8.7)           | 7, 6, 3.1 |
-| RHEL 7                 | 6, 3.1    |
+| RHEL 8 (8.7)           | 7, 6      |
+| RHEL 7                 | 6         |
 | CentOS Stream 9        | 7, 6      |
-| CentOS Stream 8        | 7, 6, 3.1 |
+| CentOS Stream 8        | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -94,50 +94,6 @@ source scl_source enable rh-dotnet60
 ```
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet60-aspnetcore-runtime-6.0` in the preceding command with `rh-dotnet60-dotnet-runtime-6.0`.
-
-## RHEL 7 ✔️ .NET Core 3.1
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-The following command installs the `scl-utils` package:
-
-```bash
-sudo yum install scl-utils
-```
-
-### Install the SDK
-
-.NET SDK allows you to develop apps with .NET Core. If you install .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
-
-```bash
-subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet31 -y
-scl enable rh-dotnet31 bash
-```
-
-Red Hat does not recommend permanently enabling `rh-dotnet31` because it may affect other programs. For example, `rh-dotnet31` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet` permanently, add the following line to your _~/.bashrc_ file.
-
-```bash
-source scl_source enable rh-dotnet31
-```
-
-### Install the runtime
-
-The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
-
-```bash
-subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet31-aspnetcore-runtime-3.1 -y
-scl enable rh-dotnet31 bash
-```
-
-Red Hat does not recommend permanently enabling `rh-dotnet31` because it may affect other programs. For example, `rh-dotnet31` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet31` permanently, add the following line to your _~/.bashrc_ file.
-
-```bash
-source scl_source enable rh-dotnet31
-```
-
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime which doesn't include ASP.NET Core support. To install .NET Core Runtime, replace `rh-dotnet31-aspnetcore-runtime-3.1` in the commands above with `rh-dotnet31-dotnet-runtime-3.1`.
 
 ## CentOS Stream 9 ✔️
 

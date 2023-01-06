@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/29/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -22,9 +22,9 @@ The following table is a list of currently supported .NET releases and the versi
 |------------------------|------------|
 | [22.10](#2210)         | 7, 6       |
 | [22.04 (LTS)](#2204)   | 7, 6       |
-| [20.04 (LTS)](#2004)   | 7, 6, 3.1  |
-| [18.04 (LTS)](#1804)   | 7, 6, 3.1  |
-| [16.04 (LTS)](#1604)   | 6, 3.1    |
+| [20.04 (LTS)](#2004)   | 7, 6       |
+| [18.04 (LTS)](#1804)   | 7, 6       |
+| [16.04 (LTS)](#1604)   | 6          |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

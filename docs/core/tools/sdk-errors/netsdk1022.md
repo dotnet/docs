@@ -3,7 +3,7 @@ title: "NETSDK1022: Duplicate items were included."
 description: How to resolve the duplicate item message based on default includes.
 author: marcpopMSFT
 ms.topic: error-reference
-ms.date: 10/9/2020
+ms.date: 12/19/2022
 f1_keywords:
 - NETSDK1022
 ---
@@ -22,3 +22,13 @@ Example for `Compile` items:
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 </PropertyGroup>
 ```
+
+Example for `Page` items in a WPF project:
+
+```xml
+<PropertyGroup>
+  <EnableDefaultPageItems>false</EnableDefaultPageItems>
+</PropertyGroup>
+```
+
+For more information, see [Errors related to "duplicate" items](../../project-sdk/msbuild-props-desktop.md#errors-related-to-duplicate-items).

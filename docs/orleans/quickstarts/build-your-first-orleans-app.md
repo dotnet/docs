@@ -67,7 +67,7 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 ## Add Orleans to the project
 
-Orleans is available through a collection of NuGet packages, each of which provide access to various features. For this quickstart, add the `Orleans.Server` package to the app using the steps below:
+Orleans is available through a collection of NuGet packages, each of which provides access to various features. For this quickstart, add the [Orleans.Server](https://www.nuget.org/packages/Orleans.Server) NuGet package to the app using the steps below:
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -104,23 +104,9 @@ app.Run();
 
 [Silos](/dotnet/orleans/overview#what-are-silos) are a core building block of Orleans responsible for storing and managing grains. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process.
 
-At the top of the _Program.cs_ file, refactor the builder code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
+At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
-```csharp
-var builder = WebApplication.CreateBuilder();
-
-builder.Host.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseLocalhostClustering();
-    siloBuilder.AddMemoryGrainStorage("urls");
-});
-
-var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
-```
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Configuration" :::
 
 ## Create the URL shortener grain
 
@@ -141,42 +127,11 @@ Orleans grains can also use a custom interface to define their methods and prope
 
 1. Append the following interface definition to the bottom of the _Program.cs_ file.
 
-    ```csharp
-    public interface IUrlShortenerGrain : IGrainWithStringKey
-    {
-        Task SetUrl(string shortenedRouteSegment, string fullUrl);
-        Task<string> GetUrl();
-    }
-    ```
+    :::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="GrainInterface" :::
 
 1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the `IPersistentState` interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
-    ```csharp
-    public class UrlShortenerGrain : Grain, IUrlShortenerGrain
-    {
-        private readonly IPersistentState<KeyValuePair<string, string>> _cache;
-    
-        public UrlShortenerGrain(
-            [PersistentState(
-                stateName: "url",
-                storageName: "urls")]
-                IPersistentState<KeyValuePair<string, string>> state)
-        {
-            _cache = state;
-        }
-    
-        public async Task SetUrl(string shortenedRouteSegment, string fullUrl)
-        {
-            _cache.State = new KeyValuePair<string, string>(shortenedRouteSegment, fullUrl);
-            await _cache.WriteStateAsync();
-        }
-    
-        public Task<string> GetUrl()
-        {
-            return Task.FromResult(_cache.State.Value);
-        }
-    }
-    ```
+    :::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Grain" :::
 
 ## Create the endpoints
 
@@ -185,116 +140,15 @@ Next, create two endpoints to utilize the Orleans grain and silo configurations:
 - A `/shorten/{*url}` endpoint to handle creating and storing a shortened version of the URL. The original, full URL is provided as a path parameter, and the shortened URL is returned to the user for later use.
 - A `/go/{*shortenedUrl}` endpoint to handle redirecting users to the original URL using the shortened URL that is supplied as a parameter.
 
-Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the end of the _Program.cs_ file before the `app.Run()` method call:
+Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the _Program.cs_ file before the `app.Run()` method call:
 
-```csharp
-app.MapGet("/shorten/{*path}",
-    async (IGrainFactory grains, HttpRequest request, string path) =>
-    {
-        // Create a unique, short ID
-        var shortenedRouteSegment = Guid.NewGuid().GetHashCode().ToString("X");
-
-        // Create and persist a grain with the shortened ID and full URL
-        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
-        await shortenerGrain.SetUrl(shortenedRouteSegment, path);
-
-        // Return the shortened URL for later use
-        var resultBuilder = new UriBuilder(request.GetEncodedUrl())
-        {
-            Path = $"/go/{shortenedRouteSegment}"
-        };
-    
-        return Results.Ok(resultBuilder.Uri);
-    });
-
-app.MapGet("/go/{shortenedRouteSegment}",
-    async (IGrainFactory grains, string shortenedRouteSegment) =>
-    {
-        // Retrieve the grain using the shortened ID and redirect to the original URL        
-        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
-        var url = await shortenerGrain.GetUrl();
-    
-        return Results.Redirect(url);
-    });
-```
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Endpoints" :::
 
 ## Test the completed app
 
 The core functionality of the app is now complete and ready to be tested. The final app code should match the following example:
 
-```csharp
-using Microsoft.AspNetCore.Http.Extensions;
-using Orleans.Runtime;
-
-var builder = WebApplication.CreateBuilder();
-
-builder.Host.UseOrleans(siloBuilder =>
-{
-    siloBuilder.UseLocalhostClustering();
-    siloBuilder.AddMemoryGrainStorage("urls");
-});
-
-var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
-
-app.MapGet("/shorten/{*path}",
-    async (IGrainFactory grains, HttpRequest request, string path) =>
-    {
-        var shortenedRouteSegment = Guid.NewGuid().GetHashCode().ToString("X");
-        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
-        await shortenerGrain.SetUrl(shortenedRouteSegment, path);
-        var resultBuilder = new UriBuilder(request.GetEncodedUrl())
-        {
-            Path = $"/go/{shortenedRouteSegment}"
-        };
-
-        return Results.Ok(resultBuilder.Uri);
-    });
-
-app.MapGet("/go/{shortenedRouteSegment}",
-    async (IGrainFactory grains, string shortenedRouteSegment) =>
-    {
-        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
-        var url = await shortenerGrain.GetUrl();
-
-        return Results.Redirect(url);
-    });
-
-app.Run();
-
-public interface IUrlShortenerGrain : IGrainWithStringKey
-{
-    Task SetUrl(string shortenedRouteSegment, string fullUrl);
-    Task<string> GetUrl();
-}
-
-public class UrlShortenerGrain : Grain, IUrlShortenerGrain
-{
-    private IPersistentState<KeyValuePair<string, string>> _cache;
-
-    public UrlShortenerGrain(
-        [PersistentState(
-            stateName: "url",
-            storageName: "urls")]
-            IPersistentState<KeyValuePair<string, string>> state)
-    {
-        _cache = state;
-    }
-
-    public async Task SetUrl(string shortenedRouteSegment, string fullUrl)
-    {
-        _cache.State = new KeyValuePair<string, string>(shortenedRouteSegment, fullUrl);
-        await _cache.WriteStateAsync();
-    }
-
-    public Task<string> GetUrl()
-    {
-        return Task.FromResult(_cache.State.Value);
-    }
-}
-
-```
+:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" :::
 
 Test the application in the browser using the following steps:
 

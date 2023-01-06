@@ -7,6 +7,9 @@
         End Sub
 
         Private Async Function Main1(_0 As String()) As Task
+            Console.WriteLine(vbCrLf & "============================= Roundtrip to DateOnly and TimeOnly props" & vbCrLf)
+            RoundTripDateOnly.Run()
+
             Console.WriteLine(vbCrLf & "============================= Roundtrip to string" & vbCrLf)
             RoundtripToString.Run()
 

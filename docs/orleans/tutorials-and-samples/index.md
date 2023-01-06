@@ -157,8 +157,8 @@ Simulates bank accounts, using ACID transactions to transfer random amounts betw
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Blazor/BlazorServer/screenshot.jpeg" alt-text="Blazor Orleans sample app screen capture":::
 
 These two Blazor samples are based on the [Blazor introductory tutorials](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro), adapted for use with Orleans.
-The [Blazor WebAssembly](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorWasm/#readme) sample uses the [Blazor WebAssembly hosting model](/aspnet/core/blazor/hosting-models#blazor-webassembly).
-The [Blazor Server](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorServer/#readme) sample uses the [Blazor Server hosting model](/aspnet/core/blazor/hosting-models#blazor-server).
+The [Blazor WebAssembly](https://github.com/dotnet/samples/tree/main/orleans/Blazor/BlazorWasm) sample uses the [Blazor WebAssembly hosting model](/aspnet/core/blazor/hosting-models#blazor-webassembly).
+The [Blazor Server](https://github.com/dotnet/samples/tree/main/orleans/Blazor/BlazorServer) sample uses the [Blazor Server hosting model](/aspnet/core/blazor/hosting-models#blazor-server).
 They include an interactive counter, a TODO list, and a Weather service.
 
 ### Blazor sample apps demonstrate
@@ -166,7 +166,7 @@ They include an interactive counter, a TODO list, and a Weather service.
 * How to integrate ASP.NET Core Blazor Server with Orleans
 * How to integrate ASP.NET Core Blazor WebAssembly (WASM) with Orleans
 
-## [Stocks](/samples/dotnet/samples/orleans-streaming-samples)
+## [Stocks](/samples/dotnet/samples/orleans-stocks-sample-app)
 
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Stocks/screenshot.png" alt-text="Output from the running Stocks client sample Orleans app.":::
 
@@ -180,7 +180,7 @@ A stock price application that fetches prices from a remote service using an HTT
 
 ## [Transport Layer Security](/samples/dotnet/samples/orleans-transport-layer-security-tls)
 
-:::image type="content" source="https://github.com/dotnet/samples/blob/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
 
 A *Hello, World!* application configured to use mutual [*Transport Layer Security*](https://en.wikipedia.org/wiki/Transport_Layer_Security) to secure network communication between every server.
 
@@ -188,7 +188,7 @@ A *Hello, World!* application configured to use mutual [*Transport Layer Securit
 
 * How to configure mutual-TLS (mTLS) authentication for Orleans
 
-## [Visual Basic Hello World](/samples/dotnet/samples/orleans-vb-samplee)
+## [Visual Basic Hello World](/samples/dotnet/samples/orleans-vb-sample/)
 
 A *Hello, World!* application using Visual Basic.
 

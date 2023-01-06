@@ -5,13 +5,13 @@ ms.date: 02/15/2022
 ---
 # Globalization APIs use ICU libraries on Windows 10
 
-.NET 5 and later versions use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries for globalization functionality when running on Windows 10 May 2019 Update or later.
+.NET 5 and later versions use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries for globalization functionality when running on Windows 10 May 2019 Update or later.
 
 ## Change description
 
 In .NET Core 1.0 - 3.1 and .NET Framework 4 and later, .NET libraries use [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture.
 
-Starting in .NET 5, if an app is running on Windows 10 May 2019 Update or later, .NET libraries use [ICU](http://site.icu-project.org/home) globalization APIs, by default.
+Starting in .NET 5, if an app is running on Windows 10 May 2019 Update or later, .NET libraries use [ICU](https://icu.unicode.org/) globalization APIs, by default.
 
 > [!NOTE]
 > Windows 10 May 2019 Update and later versions ship with the ICU native library. If the .NET runtime can't load ICU, it uses NLS instead.

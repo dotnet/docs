@@ -56,7 +56,7 @@ C# [***string interpolation***](../language-reference/tokens/interpolated.md) en
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="StringInterpolation":::
 
-An interpolated string is declared using the `$` token. String interpolation evaluates the expressions between `{` and `}`, then converts the result to a `string`, and replaces the text between the brackets with the string result of the expression. The `:` in the first expression, `{weatherData.Date:MM-DD-YYYY}` specifies the *format string*. In the preceding example, it specifies that the date should be printed in "MM-DD-YYYY" format.
+An interpolated string is declared using the `$` token. String interpolation evaluates the expressions between `{` and `}`, then converts the result to a `string`, and replaces the text between the brackets with the string result of the expression. The `:` in the first expression, `{weatherData.Date:MM-dd-yyyy}` specifies the *format string*. In the preceding example, it specifies that the date should be printed in "MM-dd-yyyy" format.
 
 ## Pattern matching
 

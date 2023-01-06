@@ -1177,6 +1177,8 @@ items:
             href: code-analysis/quality-rules/ca1854.md
           - name: CA1855
             href: code-analysis/quality-rules/ca1855.md
+          - name: CA1858
+            href: code-analysis/quality-rules/ca1858.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1676,6 +1678,10 @@ items:
             items:
             - name: IDE0073
               href: code-analysis/style-rules/ide0073.md
+          - name: Namespace naming preferences
+            items:
+            - name: IDE0130
+              href: code-analysis/style-rules/ide0130.md
         - name: Unnecessary code rules
           items:
           - name: Overview
@@ -1791,6 +1797,8 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
+    - name: Compatibility
+      href: ../core/compatibility/breaking-changes.md
   - name: Configure .NET Runtime
     items:
     - name: Settings
@@ -2464,8 +2472,6 @@ items:
         href: ../standard/serialization/serialization-guidelines.md
       - name: "How to: Chunk serialized data"
         href: ../standard/serialization/how-to-chunk-serialized-data.md
-      - name: "How to: Determine if a .NET Standard object is serializable"
-        href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
     - name: XML and SOAP serialization
       items:
       - name: Overview
@@ -3187,6 +3193,8 @@ items:
       items:
       - name: Dependency properties
         href: ../standard/design-guidelines/dependency-properties.md
+      - name: Dispose pattern
+        href: ../standard/design-guidelines/dispose-pattern.md
 - name: Migration guide
   items:
   - name: Overview
@@ -3217,9 +3225,17 @@ items:
       - name: Telemetry
         href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
-      displayName: app compatibility
-      href: ../core/porting/breaking-changes.md
-  - name: Pre-Migration
+      items:
+      - name: Overview
+        displayName: app compatibility
+        href: ../core/porting/breaking-changes.md
+      - name: Breaking changes
+        href: ../core/compatibility/fx-core.md
+      - name: Unavailable technologies
+        href: ../core/porting/net-framework-tech-unavailable.md
+      - name: APIs that always throw
+        href: ../core/compatibility/unsupported-apis.md
+  - name: Pre-migration
     items:
     - name: Assess the portability of your project
       items:
@@ -3241,11 +3257,11 @@ items:
         href: ../core/porting/porting-approaches.md
       - name: Project structure
         href: ../core/porting/project-structure.md
-    - name: Application Porting Guides
+    - name: Application porting guides
       items:
       - name: Windows Forms
         href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false
       - name: Windows Presentation Foundation
         href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false
-      - name: Port C++/CLI projects
+      - name: C++/CLI projects
         href: ../core/porting/cpp-cli.md

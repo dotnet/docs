@@ -99,9 +99,9 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 
 1. Inside of Visual Studio, replace the `your_storage_connection_string` placeholder with the value you copied from the storage account.
 
-```csharp
-var connectionString = "your_storage_connection_string";
-```
+    ```csharp
+    var connectionString = "your_storage_connection_string";
+    ```
 
 ## Deploy to Azure Container Apps
 
@@ -110,9 +110,6 @@ var connectionString = "your_storage_connection_string";
 1. In the publishing dialog, select **Azure** as the deployment target, and then select **Next**.
 1. For the specific target, select **Azure Container Apps (Linux)**, and then select **Next**.
 1. Create a new container app to deploy to. Select the **+ Create new** button to open a new dialog and enter the following values:
-
-    :::image type="content" source="../media/deploy-container-apps.png" alt-text="A screenshot showing how to create a container app.":::
-
     * **Container app name**: Leave the default value.
     * **Subscription name**: Select the subscription to deploy to.
     * **Resource group**: Select the **msdocs-orleans-url-shortener** group you created earlier.
@@ -124,6 +121,9 @@ var connectionString = "your_storage_connection_string";
             * **Location**: Select a location near you and then select **Ok** to close the dialog.
         * Select **Ok** to close the container apps environment dialog.
     * Select **Create** to close the original container apps dialog. Visual Studio creates the container app resource in Azure.
+
+        :::image type="content" source="../media/deploy-container-apps.png" alt-text="A screenshot showing how to create a container app.":::
+
 1. Once the resource is created, make sure it's selected in the list of container apps, and then select **Next**.
 1. You'll need to create an Azure Container Registry to store the published image artifact for your app. Select the green **+** icon on the container registry screen.
 
@@ -145,7 +145,7 @@ When the deployment finishes, Visual Studio will launch the application in the b
     > [!NOTE]
     > By default, Azure Container Apps have lengthy domain names, so the shortened URL is still quite long. In a production app you can assign a custom domain name to improve this setup.
 
-You can optionally verify the cluster and state data is stored as expected in the storage account you created.
+Optionally, you can verify that the cluster and state data is stored as expected in the storage account you created.
 
 1. In the Azure portal, navigate to the overview page of the `UrlShortenerXXX` storage account.
 1. On the left navigation, select **Storage Browser**.
@@ -164,4 +164,5 @@ Orleans is designed for distributed applications. Even an app as simple as the U
 1. Select **Edit and deploy**, and then switch to the **Scale** tab.
 1. Use the slider control to set the min and max replica values to 3. This will ensure the app is running on multiple instances.
 1. Select **Create** to deploy the new revision.
-1. After the deployment is finished, repeat the testing steps from the previous section. The app will continue to work as expected.
+
+After the deployment is finished, repeat the testing steps from the previous section. The app will continue to work as expected.

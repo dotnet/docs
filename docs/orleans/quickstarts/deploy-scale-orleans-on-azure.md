@@ -95,7 +95,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 1. On the storage account overview page, select **Access keys** on the left navigation.
 1. On the Access keys page, next to **Connection string** select **Show**, and then copy the value.
 
-    :::image type="content" source="../media/storage-connection-string.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
+    :::image type="content" source="../media/storage-connection-string.png" alt-text="A screenshot showing how to retrieve the storage connection string.":::
 
 1. Inside of Visual Studio, replace the `your_storage_connection_string` placeholder with the value you copied from the storage account.
 

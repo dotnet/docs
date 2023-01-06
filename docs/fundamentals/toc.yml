@@ -2788,25 +2788,23 @@ items:
       href: ../standard/parallel-programming/task-parallel-library-tpl.md
       items:
       - name: Data parallelism
+        href: ../standard/parallel-programming/data-parallelism-task-parallel-library.md
         items:
-        - name: Overview
-          displayName: data parallelism
-          href: ../standard/parallel-programming/data-parallelism-task-parallel-library.md
-        - name: Write a simple Parallel.For loop
+        - name: "How to: Write a Simple Parallel.For Loop"
           href: ../standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md
-        - name: Write a simple Parallel.ForEach loop
+        - name: "How to: Write a Simple Parallel.ForEach Loop"
           href: ../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
-        - name: Write a Parallel.For loop with thread-local variables
+        - name: "How to: Write a Parallel.For Loop with Thread-Local Variables"
           href: ../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
-        - name: Write a Parallel.ForEach loop with partition-local variables
+        - name: "How to: Write a Parallel.ForEach Loop with Partition-Local Variables"
           href: ../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
-        - name: Cancel a Parallel.For or ForEach loop
+        - name: "How to: Cancel a Parallel.For or ForEach Loop"
           href: ../standard/parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
-        - name: Handle exceptions in parallel loops
+        - name: "How to: Handle Exceptions in Parallel Loops"
           href: ../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
-        - name: Speed up small loop bodies
+        - name: "How to: Speed Up Small Loop Bodies"
           href: ../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
-        - name: Iterate file directories with the Parallel class
+        - name: "How to: Iterate File Directories with the Parallel Class"
           href: ../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
       - name: Task-based asynchronous programming
         href: ../standard/parallel-programming/task-based-asynchronous-programming.md
@@ -2870,37 +2868,37 @@ items:
         href: ../standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
     - name: Parallel LINQ (PLINQ)
       items:
-      - name: Introduction
+      - name: Introduction to PLINQ
         href: ../standard/parallel-programming/introduction-to-plinq.md
-      - name: Optimize queries for speedup
+      - name: Understanding Speedup in PLINQ
         href: ../standard/parallel-programming/understanding-speedup-in-plinq.md
-      - name: Order preservation
+      - name: Order Preservation in PLINQ
         href: ../standard/parallel-programming/order-preservation-in-plinq.md
-      - name: Merge options
+      - name: Merge Options in PLINQ
         href: ../standard/parallel-programming/merge-options-in-plinq.md
-      - name: Potential pitfalls
+      - name: Potential Pitfalls with PLINQ
         href: ../standard/parallel-programming/potential-pitfalls-with-plinq.md
-      - name:  Create and Execute a Simple Query
+      - name: "How to: Create and Execute a Simple PLINQ Query"
         href: ../standard/parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
-      - name:  Control Ordering in a Query
+      - name: "How to: Control Ordering in a PLINQ Query"
         href: ../standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md
-      - name:  Combine Parallel and Sequential LINQ Queries
+      - name: "How to: Combine Parallel and Sequential LINQ Queries"
         href: ../standard/parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
-      - name:  Handle Exceptions in a Query
+      - name: "How to: Handle Exceptions in a PLINQ Query"
         href: ../standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
-      - name:  Cancel a Query
+      - name: "How to: Cancel a PLINQ Query"
         href: ../standard/parallel-programming/how-to-cancel-a-plinq-query.md
-      - name:  Write a Custom Aggregate Function
+      - name: "How to: Write a Custom PLINQ Aggregate Function"
         href: ../standard/parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
-      - name:  Specify the Execution Mode
+      - name: "How to: Specify the Execution Mode in PLINQ"
         href: ../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
-      - name:  Specify Merge Options
+      - name: "How to: Specify Merge Options in PLINQ"
         href: ../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
-      - name:  Iterate File Directories
+      - name: "How to: Iterate File Directories with PLINQ"
         href: ../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
-      - name: Measure Query Performance
+      - name: "How to: Measure PLINQ Query Performance"
         href: ../standard/parallel-programming/how-to-measure-plinq-query-performance.md
-      - name: Data Sample
+      - name: PLINQ Data Sample
         href: ../standard/parallel-programming/plinq-data-sample.md
     - name: Data structures for parallel programming
       href: ../standard/parallel-programming/data-structures-for-parallel-programming.md

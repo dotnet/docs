@@ -9,15 +9,13 @@ helpviewer_keywords:
   - "PLINQ queries, performance tuning"
 ms.assetid: 53706c7e-397d-467a-98cd-c0d1fd63ba5e
 ---
-# Speedup in PLINQ
+# Understanding Speedup in PLINQ
 
-This article provides information that will help you write PLINQ queries that are as efficient as possible while still yielding correct results.
-
-The primary purpose of PLINQ is to speed up the execution of LINQ to Objects queries by executing the query delegates in parallel on multi-core computers. PLINQ performs best when the processing of each element in a source collection is independent, with no shared state involved among the individual delegates. Such operations are common in LINQ to Objects and PLINQ, and are often called "*delightfully parallel*" because they lend themselves easily to scheduling on multiple threads. However, not all queries consist entirely of delightfully parallel operations. In most cases, a query involves some operators that either cannot be parallelized, or that slow down parallel execution. And even with queries that are entirely delightfully parallel, PLINQ must still partition the data source and schedule the work on the threads, and usually merge the results when the query completes. All these operations add to the computational cost of parallelization; these costs of adding parallelization are called *overhead*. To achieve optimum performance in a PLINQ query, the goal is to maximize the parts that are delightfully parallel and minimize the parts that require overhead.
+The primary purpose of PLINQ is to speed up the execution of LINQ to Objects queries by executing the query delegates in parallel on multi-core computers. PLINQ performs best when the processing of each element in a source collection is independent, with no shared state involved among the individual delegates. Such operations are common in LINQ to Objects and PLINQ, and are often called "*delightfully parallel*" because they lend themselves easily to scheduling on multiple threads. However, not all queries consist entirely of delightfully parallel operations; in most cases, a query involves some operators that either cannot be parallelized, or that slow down parallel execution. And even with queries that are entirely delightfully parallel, PLINQ must still partition the data source and schedule the work on the threads, and usually merge the results when the query completes. All these operations add to the computational cost of parallelization; these costs of adding parallelization are called *overhead*. To achieve optimum performance in a PLINQ query, the goal is to maximize the parts that are delightfully parallel and minimize the parts that require overhead. This article provides information that will help you write PLINQ queries that are as efficient as possible while still yielding correct results.  
   
 ## Factors that Impact PLINQ Query Performance  
 
- The following sections lists some of the most important factors that impact parallel query performance. These are general statements that by themselves are not sufficient to predict query performance in all cases. As always, it's important to measure actual performance of specific queries on computers with a range of representative configurations and loads.  
+ The following sections lists some of the most important factors that impact parallel query performance. These are general statements that by themselves are not sufficient to predict query performance in all cases. As always, it is important to measure actual performance of specific queries on computers with a range of representative configurations and loads.  
   
 1. Computational cost of the overall work.  
   

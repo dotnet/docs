@@ -32,6 +32,11 @@
                 "dest": "csharp/language-reference/language-specification"
             },
             {
+                "files": ["**/*.md"],
+                "src": "redirections/proposals",
+                "dest": "csharp/language-reference/proposals"
+            },
+            {
                 "files": [
                     "csharp-7.0/*.md",
                     "csharp-7.1/*.md",

@@ -80,7 +80,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 1. On the **Storage accounts** listing page, select **Create**.
 1. On the **Create a storage account** page, enter the following values:
     * **Subscription**: Select the subscription you plan to use.
-    * **Resource group**: Select **Create new** and then enter a name of *msdocs-orleans-url-shortener*.
+    * **Resource group**: Select **Create new** and then enter a name of *msdocs-url-shortener*.
     * **Storage account name**: Enter a name of *OrleansUrlShortenerXXX* where XXX are unique numbers. Storage account names must be unique across Azure.
     * **Region**: Select a region that is near your location.
     * Leave the rest of the options at their defaults, and then select **Review**.
@@ -112,7 +112,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 1. Create a new container app to deploy to. Select the **+ Create new** button to open a new dialog and enter the following values:
     * **Container app name**: Leave the default value.
     * **Subscription name**: Select the subscription to deploy to.
-    * **Resource group**: Select the **msdocs-orleans-url-shortener** group you created earlier.
+    * **Resource group**: Select the **msdocs-url-shortener** group you created earlier.
     * **Container apps environment**: Select **New** to open the container apps environment dialog and enter the following values:
         * **Environment name**: Keep the default value.
         * **Location**: Select a location near you.
@@ -154,7 +154,7 @@ Optionally, you can verify that the cluster and state data is stored as expected
     * **OrleansSiloInstances**: This table tracks the state data associated with the silos in the Orleans cluster.
 1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
 
-    :::image type="content" source="../media/orleans-table-storage.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
+    :::image type="content" source="../media/table-storage.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
 
 ## Scale the app
 

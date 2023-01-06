@@ -139,46 +139,7 @@ conceptualContent:
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
           itemType: tutorial
           text: Create .NET desktop apps for Windows
-    # Card
-    - title: .NET architectural guides
-      links:
-        - url: architecture/dapr-for-net-developers/index.md
-          itemType: architecture
-          text: Dapr for .NET developers
-        - url: architecture/microservices/index.md
-          itemType: architecture
-          text: .NET microservices architecture guidance
-        - url: architecture/modern-web-apps-azure/index.md
-          itemType: architecture
-          text: Modern web apps with ASP.NET Core and Azure
-        - url: architecture/containerized-lifecycle/index.md
-          itemType: architecture
-          text: Containerized Docker app lifecycle
-        - url: architecture/cloud-native/index.md
-          itemType: architecture
-          text: Cloud native .NET apps for Azure
-        - url: architecture/modernize-with-azure-containers/index.md
-          itemType: architecture
-          text: Modernize .NET apps with Azure
-        - url: architecture/maui/index.md
-          itemType: architecture
-          text: Enterprise application patterns using .NET MAUI
-        - url: architecture/blazor-for-web-forms-developers/index.md
-          itemType: architecture
-          text: Blazor for ASP.NET Web Forms developers
-        - url: architecture/devops-for-aspnet-developers/index.md
-          itemType: architecture
-          text: DevOps for ASP.NET Core developers
-        - url: architecture/grpc-for-wcf-developers/index.md
-          itemType: architecture
-          text: ASP.NET Core gRPC for WCF developers
-        - url: architecture/modernize-desktop/index.md
-          itemType: architecture
-          text: Modernizing desktop apps on Windows with .NET 6
-        - url: architecture/porting-existing-aspnet-apps/index.md
-          itemType: architecture
-          text: Porting existing ASP.NET apps to .NET 6
-
+          
 # tools section (optional)
 ## Languages: C#, F#, and Visual Basic
 tools:

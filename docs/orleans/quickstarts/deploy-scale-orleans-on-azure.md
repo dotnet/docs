@@ -164,9 +164,9 @@ Orleans is designed for distributed applications. Even an app as simple as the U
 
 1. On the container app overview page, select **Scale** on the left navigation.
 1. Select **Edit and deploy**, and then switch to the **Scale** tab.
-1. Use the slider control to set the min and max replica values to 3. This will ensure the app is running on multiple instances.
+1. Use the slider control to set the min and max replica values to 4. This will ensure the app is running on multiple instances.
 1. Select **Create** to deploy the new revision.
 
     :::image type="content" source="../media/scale-containers.png" alt-text="A screenshot showing how to scale the container app.":::
 
-After the deployment is finished, repeat the testing steps from the previous section. The app will continue to work as expected.
+After the deployment is finished, repeat the testing steps from the previous section. The app will continue to work as expected across several instances and can now handle a higher number of requests.

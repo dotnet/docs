@@ -27,7 +27,7 @@ At the end of this quickstart, you'll have a scalable app running in Azure to pr
 
 ## Setup the sample app
 
-This quickstart builds on the sample app from the [Build your first Orleans app](build-your-first-orleans-app.md) quickstart, which can be cloned from GitHub using the command below. Completing the previous quickstart is not a prerequisite for the steps ahead. You can also [download the app directly](https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore/archive/refs/heads/main.zip). 
+This quickstart builds on the sample app from the [Build your first Orleans app](build-your-first-orleans-app.md) quickstart, which can be cloned from GitHub using the command below. Completing the previous quickstart is not a prerequisite for the steps ahead. You can also [download the app directly](https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore/archive/refs/heads/main.zip).
 
 ```bash
 git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore
@@ -35,7 +35,7 @@ git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetco
 
 ## Configure the sample app
 
-The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table Storage and Azure Blob Storage. 
+The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table Storage and Azure Blob Storage.
 
 Update the `builder` configuration code in the `Program.cs` file to match the example below, which implements these key concepts:
 

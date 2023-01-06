@@ -27,7 +27,7 @@ At the end of this quickstart, you'll have a scalable app running in Azure to pr
 
 ## Setup the sample app
 
-This quickstart builds on the sample app from the [Build your first Orleans app](build-your-first-orleans-app.md) quickstart, which can be cloned from GitHub using the command below. You can download the app directly. Completing the previous quickstart is not a prerequisite for the steps ahead.
+This quickstart builds on the sample app from the [Build your first Orleans app](build-your-first-orleans-app.md) quickstart, which can be cloned from GitHub using the command below. Completing the previous quickstart is not a prerequisite for the steps ahead. You can also [download the app directly](https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore/archive/refs/heads/main.zip). 
 
 ```bash
 git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore
@@ -35,10 +35,12 @@ git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetco
 
 ## Configure the sample app
 
-The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table and Blob Storage. Update the `builder` configuration code in the `Program.cs` file to match the example below, which implements these key concepts:
+The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table Storage and Azure Blob Storage. 
 
-* A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios
-* The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using the connection string.
+Update the `builder` configuration code in the `Program.cs` file to match the example below, which implements these key concepts:
+
+* A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
+* The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using a connection string.
 * Use the `Configure` method to assign IDs for the Orleans cluster. The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another. The `ClusterID` can change across deployments. The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
 
     ```csharp
@@ -74,14 +76,14 @@ The sample app is currently configured to create a localhost cluster and persist
 
 ## Create the Azure Storage account
 
-Create an Azure Storage Account to hold the cluster and persistent state data you configured in the previous step.
+Create an Azure Storage account to hold the cluster and persistent state data you configured in the previous step.
 
-1. In the Azure Portal, select **Storage accounts** from the left navigation.
+1. In the Azure portal, select **Storage accounts** from the left navigation.
 1. On the **Storage accounts** listing page, select **Create**.
 1. On the **Create a storage account** page, enter the following values:
     * **Subscription**: Select the subscription you plan to use.
     * **Resource group**: Select **Create new** and then enter a name of *msdocs-url-shortener*.
-    * **Storage account name**: Enter a name of *OrleansUrlShortenerXXX* where XXX are unique numbers. Storage account names must be unique across Azure.
+    * **Storage account name**: Enter the name *OrleansUrlShortenerXXX* where XXX are unique numbers. Storage account names must be unique across Azure.
     * **Region**: Select a region that is near your location.
     * Leave the rest of the options at their defaults, and then select **Review**.
     * Select **Create** after Azure validates your settings.
@@ -106,7 +108,7 @@ Create an Azure Storage Account to hold the cluster and persistent state data yo
 ## Deploy to Azure Container Apps
 
 1. In the Visual Studio solution explorer, right click on the top level project node and select **Add > Dockerfile**. Visual Studio creates a Dockerfile at the root of your project. This will enable containerization for your app and allow it to run on Azure container apps.
-1. In Visual Studio solution explorer, right-click on the top level project node and select **Publish**.
+1. In the Visual Studio solution explorer, right-click on the top level project node and select **Publish**.
 1. In the publishing dialog, select **Azure** as the deployment target, and then select **Next**.
 1. For the specific target, select **Azure Container Apps (Linux)**, and then select **Next**.
 1. Create a new container app to deploy to. Select the **+ Create new** button to open a new dialog and enter the following values:
@@ -138,7 +140,7 @@ When the deployment finishes, Visual Studio will launch the application in the b
 
 ## Test and verify the app behavior
 
-1. In the browser address bar, test the `shorten` endpoint by adding a URL path such as `/shorten/www.microsoft.com`. The page should reload and provide a URL with a shortened path at the end. Copy the shortened URL to your clipboard.
+1. In the browser address bar, test the `shorten` endpoint by adding a URL path such as `/shorten/www.microsoft.com`. The page should reload and provide a new URL with a shortened path at the end. Copy the new URL to your clipboard.
 
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
 
@@ -148,10 +150,10 @@ When the deployment finishes, Visual Studio will launch the application in the b
 Optionally, you can verify that the cluster and state data is stored as expected in the storage account you created.
 
 1. In the Azure portal, navigate to the overview page of the `UrlShortenerXXX` storage account.
-1. On the left navigation, select **Storage Browser**.
+1. On the left navigation, select **Storage browser**.
 1. Expand the **Tables** navigation item to discover two tables created by Orleans:
     * **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
-    * **OrleansSiloInstances**: This table tracks the state data associated with the silos in the Orleans cluster.
+    * **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
 1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
 
     :::image type="content" source="../media/table-storage.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
@@ -164,5 +166,7 @@ Orleans is designed for distributed applications. Even an app as simple as the U
 1. Select **Edit and deploy**, and then switch to the **Scale** tab.
 1. Use the slider control to set the min and max replica values to 3. This will ensure the app is running on multiple instances.
 1. Select **Create** to deploy the new revision.
+
+    :::image type="content" source="../media/scale-containers.png" alt-text="A screenshot showing how to scale the container app.":::
 
 After the deployment is finished, repeat the testing steps from the previous section. The app will continue to work as expected.

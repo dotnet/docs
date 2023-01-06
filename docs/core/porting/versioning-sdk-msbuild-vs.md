@@ -22,7 +22,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 | SDK Version      | MSBuild/Visual Studio version | Ship date    | Lifecycle |
 |------------------|--------------------|--------------|-----------|
-| 2.1.5xx          | 15.9               | Nov '18      | Aug '21<sup>1</sup>  |
+| 2.1.5xx          | 15.9               | Nov '18      | Aug '21   |
 | 2.1.8xx          | 16.2 (No VS)       | July '19     | Aug '21   |
 | 3.1.1xx          | 16.4               | Dec '19      | Oct '21   |
 | 3.1.4xx          | 16.7               | Aug '20      | Dec '22   |
@@ -30,12 +30,13 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 5.0.2xx          | 16.9               | March '21    | May '22<sup>1</sup>  |
 | 5.0.3xx          | 16.10              | May '21      | Aug '21   |
 | 5.0.4xx          | 16.11              | Aug '21      | May '22<sup>1</sup>  |
-| 6.0.100          | 17.0<sup>2</sup>   | Nov '21      | Jul '23   |
+| 6.0.100          | 17.0<sup>3</sup>   | Nov '21      | Jul '23   |
 | 6.0.200          | 17.1               | Feb '22      | May '22   |
-| 6.0.300          | 17.2<sup>3</sup>   | May '22      | Oct '22   |
+| 6.0.300          | 17.2<sup>3</sup>   | May '22      | Oct '23   |
 | 6.0.400          | 17.3               | Aug '22      | Nov '24<sup>2</sup>   |
-| 7.0.100          | 17.4               | Nov '22      | TBD       |
-| 7.0.200          | 17.5               | TBD          | TBD       |
+| 7.0.100          | 17.4               | Nov '22      | Jul '23   |
+| 7.0.200          | 17.5<sup>5</sup>   | Feb '23      | May '23   |
+| 7.0.300          | 17.6               | May '23      | TBD       |
 
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.
@@ -48,10 +49,11 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > [Visual Studio 2022 Lifecycle](/lifecycle/products/visual-studio-2022)
 
-> <sup>2</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
+> <sup>3</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >
-> <sup>3</sup> 6.0.300 and newer SDKs require a minimum Visual Studio version of 17.0.
-
+> <sup>4</sup> 6.0.300 and newer SDKs require a minimum Visual Studio version of 17.0.
+> 
+> <sup>5</sup> 7.0.200 and newer SDKs require a minimum Visual Studio version of 17.4.
 ## Targeting and support rules
 
 Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into place regarding which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in. The policy is:
@@ -92,6 +94,7 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | RC 1 | 17.4 Preview 2 |
 | RC 2 | 17.4 Preview 3 |
 | 7.0.100 | 17.4.0 |
+| 8.0.100 Preview 1 | 17.6 Preview 1 |
 
 ## Reference
 

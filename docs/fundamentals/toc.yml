@@ -93,10 +93,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio.md
         displayName: tutorials, visual studio, vs
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio, vs
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio, vs
     - name: Use Visual Studio Code
       items:
@@ -116,10 +116,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, cli
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials
     - name: Use Visual Studio for Mac
       items:
@@ -139,7 +139,7 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio-mac.md
         displayName: tutorials, visual studio for mac, vs for mac
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio for mac, vs for mac
     - name: More tutorials
       href: ../core/tutorials/index.md
@@ -636,10 +636,10 @@ items:
     items:
     - name: Visual Studio
       displayName: ide,integrated development environment,vs
-      href: /visualstudio/windows/
+      href: /visualstudio/windows/?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Visual Studio for Mac
       displayName: ide,integrated development environment,vs for mac,macOS,Mac
-      href: /visualstudio/mac/
+      href: /visualstudio/mac/?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Visual Studio Code
       displayName: ide,integrated development environment,code,vs code,oss ide,
       href: https://code.visualstudio.com/docs
@@ -841,9 +841,9 @@ items:
         href: ../core/diagnostics/debug-highcpu.md
       - name: Debug deadlock
         href: ../core/diagnostics/debug-deadlock.md
-      - name: Debug ThreadPool starvation
+      - name: Debug thread-pool starvation
         href: ../core/diagnostics/debug-threadpool-starvation.md
-      - name: Debug a StackOverflow
+      - name: Debug a stack overflow
         href: ../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
     items:
@@ -1790,15 +1790,13 @@ items:
       - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
       - name: How to use and debug assembly unloadability
-        href: ../core/../standard/assembly/unloadability.md
+        href: ../standard/assembly/unloadability.md
   - name: Versioning
     items:
     - name: Overview
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-    - name: Compatibility
-      href: ../core/compatibility/breaking-changes.md
   - name: Configure .NET Runtime
     items:
     - name: Settings
@@ -2103,7 +2101,7 @@ items:
     - name: Publish app as container image
       href: ../core/docker/publish-as-container.md
     - name: Container tools in Visual Studio
-      href: /visualstudio/containers/overview
+      href: /visualstudio/containers/overview?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: DevOps
   items:
   - name: GitHub Actions and .NET
@@ -2777,7 +2775,7 @@ items:
   - name: Microsoft.Data.Sqlite
     href: ../standard/data/sqlite/
   - name: Entity Framework Core
-    href: "/ef/core/"
+    href: /ef/core/?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Parallel processing, concurrency, and async
   items:
   - name: Asynchronous programming patterns
@@ -2964,7 +2962,7 @@ items:
   - name: Unit test published output
     href: ../core/testing/unit-testing-published-output.md
   - name: Live unit test .NET projects with Visual Studio
-    href: /visualstudio/test/live-unit-testing-start
+    href: /visualstudio/test/live-unit-testing-start?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Security
   href: ../standard/security/
 - name: Advanced topics
@@ -3231,20 +3229,16 @@ items:
         href: ../core/porting/breaking-changes.md
       - name: Breaking changes
         href: ../core/compatibility/fx-core.md
-      - name: Unavailable technologies
-        href: ../core/porting/net-framework-tech-unavailable.md
-      - name: APIs that always throw
-        href: ../core/compatibility/unsupported-apis.md
   - name: Pre-migration
     items:
     - name: Assess the portability of your project
       items:
-      - name: Unsupported Dependencies
+      - name: Unsupported dependencies
         href: ../core/porting/third-party-deps.md
       - name: Use the Windows Compatibility Pack
         href: ../core/porting/windows-compat-pack.md
       - name: Unavailable technologies
-        href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../core/porting/net-framework-tech-unavailable.md
       - name: Unsupported APIs
         href: ../core/porting/unsupported-apis.md
     - name: Needed changes before porting code
@@ -3260,8 +3254,8 @@ items:
     - name: Application porting guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: C++/CLI projects
         href: ../core/porting/cpp-cli.md

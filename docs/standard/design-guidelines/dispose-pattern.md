@@ -1,5 +1,6 @@
 ---
 title: "Dispose Pattern"
+description: Learn about the Dispose Pattern, which standardizes the usage and implementation of finalizers and the `IDisposable` interface to release unmanaged resources.  
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

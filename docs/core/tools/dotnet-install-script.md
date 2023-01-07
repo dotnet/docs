@@ -145,7 +145,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   If set with `ProxyAddress`, provides a list of comma-separated urls that will bypass the proxy. (Only valid for Windows.)
 
-- **`ProxyUseDefaultCredentials`**
+- **`-ProxyUseDefaultCredentials`**
 
   If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
 

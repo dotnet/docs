@@ -34,9 +34,9 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 - Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
   
-- Use only one statement per line. Don't use the Visual Basic line separator character (:).  
+- Use only one statement per line. Don't use the Visual Basic line separator character (`:`).  
   
-- Avoid using the explicit line continuation character "_" in favor of implicit line continuation wherever the language allows it.  
+- Avoid using the explicit line continuation character "` _`" in favor of implicit line continuation wherever the language allows it.  
   
 - Use only one declaration per line.  
   
@@ -55,7 +55,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 - Start comment text with an uppercase letter, and end comment text with a period.  
   
-- Insert one space between the comment delimiter (') and the comment text.  
+- Insert one space between the comment delimiter (`'`) and the comment text.  
   
      [!code-vb[VbVbalrGuidelines#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#2)]  
   
@@ -83,7 +83,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### Relaxed Delegates in Event Handlers  
 
- Do not explicitly qualify the arguments (Object and EventArgs) to event handlers. If you are not using the event arguments that are passed to an event (for example, sender as Object, e as EventArgs), use relaxed delegates, and leave out the event arguments in your code:  
+ Do not explicitly qualify the arguments (`Object` and `EventArgs`) to event handlers. If you are not using the event arguments that are passed to an event (for example, `sender As Object, e As EventArgs`), use relaxed delegates, and leave out the event arguments in your code:  
   
  [!code-vb[VbVbalrGuidelines#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#7)]  
   
@@ -129,7 +129,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### Use the IsNot Keyword  
 
- Use the `IsNot` keyword instead of `Not...Is Nothing`.  
+ Use `... IsNot Nothing` instead of `Not ... Is Nothing`.  
   
 ### New Keyword  
   

@@ -83,7 +83,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### Relaxed Delegates in Event Handlers  
 
- Do not explicitly qualify the arguments (`Object` and `EventArgs`) to event handlers. If you are not using the event arguments that are passed to an event (for example, `sender As Object, e As EventArgs`), use relaxed delegates, and leave out the event arguments in your code:  
+ Do not explicitly qualify the arguments (`Object` and `EventArgs`) to event handlers. If you are not using the event arguments that are passed to an event (for example, `sender As Object`, `e As EventArgs`), use relaxed delegates, and leave out the event arguments in your code:  
   
  [!code-vb[VbVbalrGuidelines#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#7)]  
   

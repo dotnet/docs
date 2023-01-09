@@ -36,7 +36,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 - Use only one statement per line. Don't use the Visual Basic line separator character (`:`).  
   
-- Avoid using the explicit line continuation character "` _`" in favor of implicit line continuation wherever the language allows it.  
+- Avoid using the explicit line continuation character "`_`" in favor of implicit line continuation wherever the language allows it.  
   
 - Use only one declaration per line.  
   

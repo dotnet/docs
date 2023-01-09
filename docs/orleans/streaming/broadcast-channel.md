@@ -5,7 +5,7 @@ ms.date: 01/02/2023
 ---
 
 # Broadcast channels in Orleans
-
+ 
 Broadcast channels are a special type of broadcasting mechanism that can be used to send messages to all subscribers. Unlike [streaming providers](stream-providers.md), broadcast channels are not persistent and don't store messages, and they're not a replacement for persistent streams. With broadcast channels, grains are implicitly subscribed to the broadcast channel and receive broadcast messages from a producer. This decouples the sender and receiver of the message, which is useful for scenarios where the sender and receiver are not known in advance.
 
 ## Example scenario

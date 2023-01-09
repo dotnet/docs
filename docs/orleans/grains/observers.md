@@ -100,7 +100,7 @@ var friend = _grainFactory.GetGrain<IHello>(0);
 Chat c = new Chat();
 
 //Create a reference for chat, usable for subscribing to the observable grain.
-var obj = await _grainFactory.CreateObjectReference<IChat>(c);
+var obj = _grainFactory.CreateObjectReference<IChat>(c);
 
 //Subscribe the instance to receive messages.
 await friend.Subscribe(obj);

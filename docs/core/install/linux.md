@@ -14,7 +14,7 @@ ms.date: 11/08/2022
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-This article details how to install .NET on various Linux distributions either manually, via a package manager, or via a [container](../docker/introduction.md#net-core-images).
+This article details how to install .NET on various Linux distributions either manually, via a package manager, or via a [container](../docker/introduction.md#net-images).
 
 ## Manual installation
 

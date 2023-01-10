@@ -19,8 +19,8 @@ available to diagnose application issues when needed. See
 
 [OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the
 [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
-cloud-native software. In these examples, you'll collect and display distributed trace information on the console, though
-OpenTelemetry can be configured to send it elsewhere. For more information, see the
+cloud-native software. In these examples, you'll collect and display distributed trace information on the console. To learn how to
+configure OpenTelemetry to send information elsewhere, see the
 [OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md).
 
 ### ASP.NET example
@@ -123,7 +123,7 @@ Resource associated with Activity:
 All of the OpenTelemetry configuration occurs in the new source lines that start with `builder.Services.AddOpenTelemetry()`. You used
 `.WithTracing(...)` to enable distributed tracing. `AddAspNetCoreInstrumentation()` enabled OpenTelemetry to collect all the
 distributed trace Activities that are produced by the ASP.NET Core web server, and `AddConsoleExporter()` instructs OpenTelemetry
-to send that information to the console. For a less trivial app, you might add more instrumentation libraries to also collect
+to send that information to the console. For a less trivial app, you could add more instrumentation libraries to also collect
 tracing for database queries or outbound HTTP requests. You'd also replace the console exporter with an exporter for Jaeger, Zipken, or
 another monitoring service you've chosen to use.
 

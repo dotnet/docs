@@ -53,7 +53,7 @@ class CancelByPolling
 
       if (token.IsCancellationRequested) {
          // Cleanup or undo here if necessary...
-         Console.WriteLine("\r\nCancelling before column {0}.", col);
+         Console.WriteLine("\r\nOperation canceled");
          Console.WriteLine("Press any key to exit.");
 
          // If using Task:

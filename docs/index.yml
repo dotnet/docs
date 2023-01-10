@@ -28,10 +28,6 @@ highlightedContent:
       itemType: learn
       url: /training/paths/build-dotnet-applications-csharp
     # Card
-    - title: Create your first console app
-      itemType: tutorial
-      url: core/get-started.md
-    # Card
     - title: Create your first web app
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
@@ -44,13 +40,17 @@ highlightedContent:
       itemType: get-started
       url: csharp/tour-of-csharp/tutorials/hello-world.yml
     # Card
-    - title: "What's new in .NET docs"
-      itemType: whats-new
-      url: whats-new/index.yml
+    - title: ".NET architecture documentation"
+      itemType: architecture
+      url: architecture/index.yml
     # Card
     - title: "Azure for .NET developers"
       itemType: overview
       url: azure/index.yml
+    # Card
+    - title: "What's new in .NET docs"
+      itemType: whats-new
+      url: whats-new/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:

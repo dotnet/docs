@@ -38,6 +38,18 @@ conceptualContent:
             itemType: get-started
             url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
 
+    - title: Develop mobile and desktop apps
+      links:
+          - text: Modernizing desktop apps on Windows with .NET 6
+            itemType: architecture
+            url: modernize-desktop/index.md
+          - text: Enterprise Application Patterns Using .NET MAUI
+            itemType: architecture
+            url: maui/index.md
+          - text: Build mobile and desktop apps with .NET MAUI
+            itemType: learn
+            url: /training/paths/build-apps-with-dotnet-maui
+
     - title: Develop cloud-native .NET apps for Azure
       links:
           - text: Architecting cloud-native .NET apps for Azure
@@ -65,7 +77,7 @@ conceptualContent:
             itemType: learn
             url: /training/modules/microservices-resiliency-aspnet-core
 
-    - title: Understand DevOps for .NET
+    - title: Learn about DevOps for .NET
       links:
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
             itemType: architecture
@@ -73,15 +85,3 @@ conceptualContent:
           - text: DevOps for ASP.NET Core Developers
             itemType: architecture
             url: devops-for-aspnet-developers/index.md
-
-    - title: Mobile and desktop apps
-      links:
-          - text: Modernizing desktop apps on Windows with .NET 6
-            itemType: architecture
-            url: modernize-desktop/index.md
-          - text: Enterprise Application Patterns Using .NET MAUI
-            itemType: architecture
-            url: maui/index.md
-          - text: Build mobile and desktop apps with .NET MAUI
-            itemType: learn
-            url: /training/paths/build-apps-with-dotnet-maui

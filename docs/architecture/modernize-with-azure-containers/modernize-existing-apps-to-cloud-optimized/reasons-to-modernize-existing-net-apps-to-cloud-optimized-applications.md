@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Reasons to modernize existing .NET apps to Cloud-Optimized applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 With a Cloud-Optimized application, you can rapidly and repeatedly deliver reliable applications to your customers. You gain essential agility and reliability by deferring much of the operational complexity of your app to the platform.
 
 If you can't get your applications to market quickly, by the time you ship your app, the market you were targeting will have evolved. You might be too late, no matter how well the application was architected or engineered. You might be failing or not reaching your full potential because you can't sync app delivery with the needs of the market.

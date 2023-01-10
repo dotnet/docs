@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # Traffic Control sample application
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks. The application targets .NET 6 and uses the latest C# 10 language features.
 
 > [!NOTE]

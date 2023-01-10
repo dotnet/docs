@@ -1,4 +1,12 @@
-﻿using System;
+﻿// Snippets 5000 Note:  
+// The container used for building our samples doesn't include the Office assemblies.
+// This sample will generate a few errors in the CI build. Those are expected,
+// so the build passes.
+//
+// If you update this sample, make sure to build it locally.
+// Then, make sure no new errors are added.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -77,59 +85,6 @@ namespace OfficeProgrammingWalkthrough
             wordApp.Selection.PasteSpecial( Link: true, DisplayAsIcon: true);
         }
         //</Snippet9>
-
-        //<Snippet10>
-        static void CreateIconInWordDoc2008()
-        {
-            var wordApp = new Word.Application();
-            wordApp.Visible = true;
-
-            // The Add method has four parameters, all of which are optional.
-            // In Visual C# 2008 and earlier versions, an argument has to be sent
-            // for every parameter. Because the parameters are reference
-            // parameters of type object, you have to create an object variable
-            // for the arguments that represents 'no value'.
-
-            object useDefaultValue = Type.Missing;
-
-            wordApp.Documents.Add(ref useDefaultValue, ref useDefaultValue,
-                ref useDefaultValue, ref useDefaultValue);
-
-            // PasteSpecial has seven reference parameters, all of which are
-            // optional. In this example, only two of the parameters require
-            // specified values, but in Visual C# 2008 an argument must be sent
-            // for each parameter. Because the parameters are reference parameters,
-            // you have to contruct variables for the arguments.
-            object link = true;
-            object displayAsIcon = true;
-
-            wordApp.Selection.PasteSpecial( ref useDefaultValue,
-                                            ref link,
-                                            ref useDefaultValue,
-                                            ref displayAsIcon,
-                                            ref useDefaultValue,
-                                            ref useDefaultValue,
-                                            ref useDefaultValue);
-        }
-        //</Snippet10>
-
-        static void Parts()
-        {
-            var excelApp = new Excel.Application();
-            excelApp.Workbooks.Add();
-
-            //<Snippet17>
-            // The AutoFormat method has seven optional value parameters. The
-            // following call specifies a value for the first parameter, and uses
-            // the default values for the other six.
-
-            // Call to AutoFormat in Visual C# 2008. This code is not part of the
-            // current solution.
-            excelApp.get_Range("A1", "B4").AutoFormat(Excel.XlRangeAutoFormat.xlRangeAutoFormatTable3,
-                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-                Type.Missing);
-            //</Snippet17>
-        }
 
         static void DisplayInExcelFull(IEnumerable<Account> accounts)
         {

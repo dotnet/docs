@@ -1,7 +1,7 @@
 ---
 title: How to define commands in System.CommandLine
 description: "Learn how to define commands, options, and arguments by using the System.Commandline library."
-ms.date: 03/08/2022
+ms.date: 04/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -132,9 +132,11 @@ If the command line for this example app doesn't include `--endpoint`, an error 
 Option '--endpoint' is required.
 ```
 
+If a required option has a default value, the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
+
 ## Hidden commands, options, and arguments
 
-You might want to support a a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the `IsHidden` property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
+You might want to support a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the <xref:System.CommandLine.Symbol.IsHidden> property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="hiddenoption" :::
 
@@ -146,6 +148,16 @@ Options:
   -?, -h, --help          Show help and usage information
 ```
 
+## Set argument arity
+
+You can explicitly set argument [arity](syntax.md#argument-arity) by using the `Arity` property, but in most cases that is not necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:
+
+| Argument type    | Default arity              |
+|------------------|----------------------------|
+| `Boolean`        | `ArgumentArity.ZeroOrOne`  |
+| Collection types | `ArgumentArity.ZeroOrMore` |
+| Everything else  | `ArgumentArity.ExactlyOne` |
+
 ## Multiple arguments
 
 By default, when you call a command, you can repeat an option name to specify multiple arguments for an option that has maximum [arity](syntax.md#argument-arity) greater than one.
@@ -154,7 +166,7 @@ By default, when you call a command, you can repeat an option name to specify mu
 myapp --items one --items two --items three
 ```
 
-To allow multiple arguments without repeating the option name, set `Option.AllowMultipleArgumentsPerToken` to `true`. This setting lets you enter the following command line.
+To allow multiple arguments without repeating the option name, set <xref:System.CommandLine.Option.AllowMultipleArgumentsPerToken?displayProperty=nameWithType> to `true`. This setting lets you enter the following command line.
 
 ```console
 myapp --items one two three
@@ -168,7 +180,7 @@ myapp --item one --item two --item three
 
 ## List valid argument values
 
-To specify a list of valid values for an option or argument, specify an enum as the option type or use `FromAmong`, as shown in the following example:
+To specify a list of valid values for an option or argument, specify an enum as the option type or use <xref:System.CommandLine.OptionExtensions.FromAmong%2A>, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="staticlist" :::
 
@@ -198,7 +210,7 @@ Options:
 
 ## Option and argument validation
 
-For information about argument validation and how to customize it, see the following sections in the [Model binding](model-binding.md) article:
+For information about argument validation and how to customize it, see the following sections in the [Parameter binding](model-binding.md) article:
 
 * [Built-in type and arity argument validation](model-binding.md#built-in-argument-validation)
 * [Custom validation and binding](model-binding.md#custom-validation-and-binding)
@@ -206,4 +218,4 @@ For information about argument validation and how to customize it, see the follo
 ## See also
 
 * [System.CommandLine overview](index.md)
-* [Model binding](model-binding.md)
+* [Parameter binding](model-binding.md)

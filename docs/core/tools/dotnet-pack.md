@@ -5,7 +5,7 @@ ms.date: 08/23/2021
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -42,13 +42,8 @@ By default, `dotnet pack` builds the project first. If you wish to avoid this be
 
 You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild `-p` switch for a couple of different scenarios.
 
-Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
-
-```xml
-<PropertyGroup>
-   <IsPackable>true</IsPackable>
-</PropertyGroup>
-```
+> [!NOTE]
+> Web projects aren't packable.
 
 ### Implicit restore
 
@@ -63,8 +58,6 @@ Web projects aren't packable by default. To override the default behavior, add t
   The project or solution to pack. It's either a path to a csproj, vbproj, or fsproj file, or to a solution file or directory. If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -98,7 +91,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 

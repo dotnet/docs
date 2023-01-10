@@ -1,9 +1,9 @@
 ---
-title: Install .NET on Linux with Snap - .NET
+title: Install .NET on Linux with Snap
 description: Demonstrates how to install either the .NET SDK or the .NET Runtime on Linux with Snap.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/26/2021
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime with Snap
@@ -12,23 +12,32 @@ Use a Snap package to install the .NET SDK or .NET Runtime. Snaps are a great al
 
 A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
 
+> [!IMPORTANT]
+> Snap packages aren't supported in WSL2 on Windows. As an alternative, use the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular WSL2 distribution. It's not recommended but you can try to enable snap with an [unsupported workaround from the snapcraft forums](https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033).
+
 > [!CAUTION]
-> Snap packages aren't supported in WSL2 on Windows 10. As an alternative, use the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular WSL2 distribution. It's not recommended but you can try to enable snap with an [unsupported workaround from the snapcraft forums](https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033).
+> Snap installations of .NET may have problems running [.NET tools](../tools/global-tools.md). If you wish to use .NET tools, we recommend that you install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular Linux distribution.
+>
+> It's a known issue that the `dotnet watch` command doesn't work when .NET is installed via Snap.
+>
+> If you're going to use .NET tools or the `dotnet watch` command, we recommend that you install .NET using the [`dotnet-install` script](linux-scripted-manual.md#scripted-install).
 
 ## .NET releases
 
-Only ✔️ supported versions of .NET SDK are available through Snap. All versions of the .NET Runtime are available through snap starting with version 2.1. The following table lists the .NET (and .NET Core) releases:
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
+The following table lists the support status of each version of .NET (and .NET Core):
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 6 (LTS)     | 3.0           |
-| 5           | 2.2           |
-| 3.1 (LTS)   | 2.1           |
+| 7 (STS)     | 5             |
+| 6 (LTS)     | 3.1           |
+|             | 3.0           |
+|             | 2.2           |
+|             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
-
-For more information about the life cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## SDK or Runtime
 
@@ -40,14 +49,13 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
 
 | .NET version | Snap package or channel  |
 |--------------|--------------------------|
-| 6 (LTS)      | `6.0` or `latest/stable` or `lts/stable` |
-| 5            | `5.0` |
-| 3.1 (LTS)    | `3.1` |
+| 7 (STS)      | `7.0` or `latest/stable` |
+| 6 (LTS)      | `6.0` or `lts/stable`    |
 
-Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `6.0` is specified:
+Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `7.0` is specified:
 
 ```bash
-sudo snap install dotnet-sdk --classic --channel=6.0
+sudo snap install dotnet-sdk --classic --channel=7.0
 ```
 
 Next, register the `dotnet` command for the system with the `snap alias` command:
@@ -56,7 +64,7 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
-This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet60`. When you use the command `dotnet60`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet70`. When you use the command `dotnet70`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
 
 ## Install the runtime
 
@@ -64,26 +72,27 @@ Snap packages for the .NET Runtime are each published under their own package id
 
 | .NET version      | Snap package        |
 |-------------------|---------------------|
+| 7 (STS)           | `dotnet-runtime-70` |
 | 6 (LTS)           | `dotnet-runtime-60` |
 | 5                 | `dotnet-runtime-50` |
-| 3.1 (LTS)         | `dotnet-runtime-31` |
+| 3.1               | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |
 | 2.1               | `dotnet-runtime-21` |
 
-Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 6 is installed:
+Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 7 is installed:
 
 ```bash
-sudo snap install dotnet-runtime-60 --classic
+sudo snap install dotnet-runtime-70 --classic
 ```
 
 Next, register the `dotnet` command for the system with the `snap alias` command:
 
 ```bash
-sudo snap alias dotnet-runtime-60.dotnet dotnet
+sudo snap alias dotnet-runtime-70.dotnet dotnet
 ```
 
-The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-60.dotnet dotnet60`. When you use the command `dotnet60`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-70.dotnet dotnet70`. When you use the command `dotnet70`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
 ## Export the install location
 

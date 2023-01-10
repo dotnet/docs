@@ -3,7 +3,6 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.Runtime.Serialization
-Imports System.Security.Permissions
 
 Namespace SerializationGuidelines
 
@@ -223,7 +222,6 @@ Namespace SerializationGuidelines
     '<Snippet11>
     <Serializable()> Public Class Person_Runtime_Serializable2
         Implements ISerializable
-        <SecurityPermission(SecurityAction.LinkDemand, Flags:=SecurityPermissionFlag.SerializationFormatter)> _
         Private Sub GetObjectData(ByVal info As System.Runtime.Serialization.SerializationInfo, _
                                  ByVal context As System.Runtime.Serialization.StreamingContext) _
                              Implements System.Runtime.Serialization.ISerializable.GetObjectData

@@ -9,7 +9,7 @@ ms.author: adegeo
 
 # Tutorial: Create a template package
 
-With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+With .NET, you can create and deploy templates that generate projects, files, and even resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
@@ -80,6 +80,7 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -90,22 +91,26 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
 </Project>
 ```
 
-The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings such as `<Title>` and `<PackageTags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
+The settings under `<PropertyGroup>` in the XML snippet are broken into three groups.
+
+The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 > [!NOTE]
 > To ensure that the template package appears in `dotnet new --search` results, set `<PackageType>` to `Template`.
 
-The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
+In the second group, the `<TargetFramework>` setting ensures that MSBuild executes properly when you run the pack command to compile and pack the project.
 
-The next three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
+The third group includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet pack when it's created:
 
-The last setting suppresses a warning message that doesn't apply to template package projects.
+* The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
 
-The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template package from trying to compile the code in the _templates_ folder hierarchy.
+* The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The *default* behavior of NuGet packages is to ignore those files and folders.
+
+`<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
 
 ## Build and install
 
-Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following:
+Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following hierarchy:
 
 ```console
 working
@@ -135,10 +140,10 @@ Copyright (C) Microsoft Corporation. All rights reserved.
   Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 
-Next, install the template package with the `dotnet new --install PATH_TO_NUPKG_FILE` command.
+Next, install the template package with the `dotnet new install` command.
 
 ```console
-C:\working> dotnet new -i C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+C:\working> dotnet new install C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 The following template packages will be installed:
    C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 
@@ -149,33 +154,15 @@ Example templates: string extensions              stringext                [C#] 
 Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 ```
 
-If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new --install PACKAGEID` command where `PACKAGEID` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
+If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new install <PACKAGE_ID>` command where `<PACKAGE_ID>` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
 
 ## Uninstall the template package
 
-No matter how you installed the template package, either with the _.nupkg_ file directly or by NuGet feed, removing a template package is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new --uninstall` command.
+No matter how you installed the template package, either with the _.nupkg_ file directly or by NuGet feed, removing a template package is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new uninstall` command.
 
 ```dotnetcli
-C:\working> dotnet new --uninstall
-
-Template Instantiation Commands for .NET CLI
-
+C:\working> dotnet new uninstall
 Currently installed items:
-  Microsoft.DotNet.Common.ProjectTemplates.2.2
-    Details:
-      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
-      Version: 1.0.2-beta4
-      Author: Microsoft
-    Templates:
-      Class library (classlib) C#
-      Class library (classlib) F#
-      Class library (classlib) VB
-      Console Application (console) C#
-      Console Application (console) F#
-      Console Application (console) VB
-    Uninstall Command:
-      dotnet new --uninstall  Microsoft.DotNet.Common.ProjectTemplates.2.2
-
 ... cut to save space ...
 
   AdatumCorporation.Utility.Templates
@@ -187,12 +174,12 @@ Currently installed items:
       Example templates: async project (consoleasync) C#
       Example templates: string extensions (stringext) C#
     Uninstall Command:
-      dotnet new --uninstall AdatumCorporation.Utility.Templates
+      dotnet new uninstall AdatumCorporation.Utility.Templates
 ```
 
-Run `dotnet new --uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
+Run `dotnet new uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
 
-Congratulations! you've installed and uninstalled a template package.
+Congratulations! You've installed and uninstalled a template package.
 
 ## Next steps
 

@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > Vision: As a first step, to reduce your on-premises investment and total cost of hardware and networking maintenance, simply rehost your existing applications in the cloud.
 
 Before getting into *how* to migrate your existing applications to the Azure infrastructure as a service (IaaS) platform, it's important to analyze the reasons *why* you'd want to migrate directly to IaaS in Azure. The scenario at this modernization maturity level essentially is to start using VMs in the cloud, instead of continuing to use your current, on-premises infrastructure.
@@ -89,15 +91,15 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 - **Migrate to Azure with Site Recovery**
 
-    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure](/azure/site-recovery/site-recovery-migrate-to-azure)
+    [https://learn.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure](/azure/site-recovery/site-recovery-migrate-to-azure)
 
 - **Azure Site Recovery service overview**
 
-    [https://docs.microsoft.com/azure/site-recovery/site-recovery-overview](/azure/site-recovery/site-recovery-overview)
+    [https://learn.microsoft.com/azure/site-recovery/site-recovery-overview](/azure/site-recovery/site-recovery-overview)
 
 - **Migrating VMs in AWS to Azure VMs**
 
-    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](/azure/site-recovery/site-recovery-migrate-aws-to-azure)
+    [https://learn.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](/azure/site-recovery/site-recovery-migrate-aws-to-azure)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

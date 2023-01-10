@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # gRPC overview
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 After looking at the genesis of both Windows Communication Foundation (WCF) and gRPC in the last chapter, this chapter considers some of the key features of gRPC and how they compare to WCF.
 
 ASP.NET Core 3.0 is the first release of ASP.NET that natively supports gRPC as a first-class citizen, with Microsoft teams contributing to the official .NET implementation of gRPC. It's recommended for building distributed applications with .NET that can interoperate with all other major programming languages and frameworks.

@@ -81,7 +81,7 @@ The `enabled` attribute for the `<loadFromRemoteSources>` element is effective o
 
 If `enabled` is not set to `true`, a <xref:System.IO.FileLoadException> is thrown under the either of the following conditions:
 
-- The sandboxing behavior of the current domain is different from its behavior in the .NET Framework 3.5. This requires CAS policy to be disabled, and the current domain not to be sandboxed.
+- The sandboxing behavior of the current domain is different from its behavior in .NET Framework 3.5. This requires CAS policy to be disabled, and the current domain not to be sandboxed.
 
 - The assembly being loaded is not from the `MyComputer` zone.
 
@@ -113,6 +113,7 @@ The following example shows how to grant full trust to assemblies loaded from re
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [More Implicit Uses of CAS Policy: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
 - [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox)
 - [Runtime Settings Schema](index.md)

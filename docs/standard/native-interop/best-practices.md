@@ -23,20 +23,22 @@ The guidance in this section applies to all interop scenarios.
 
 | Setting | Default | Recommendation | Details |
 |---------|---------|----------------|---------|
-| <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>   | `true` |  keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into exceptions (and the return value in the definition becomes null as a result).|
-| <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> | `false`  | depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
+| <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>   | `true` |  Keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into exceptions (and the return value in the definition becomes null as a result).|
+| <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> | `false`  | Depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
 | <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> | Compiler-defined (specified in the [charset documentation](./charset.md))  | Explicitly  use `CharSet.Unicode` or `CharSet.Ansi` when strings or characters are present in the definition | This specifies marshalling behavior of strings and what `ExactSpelling` does when `false`. Note that `CharSet.Ansi` is actually UTF8 on Unix. _Most_ of the time Windows uses Unicode while Unix uses UTF8. See more information on the [documentation on charsets](./charset.md). |
-| <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> | `false` | `true`             | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
+| <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> | `false` | `true` | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
 
 ## String parameters
 
 When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` _and_ the string is passed by value (not `ref` or `out`), the string will be pinned and used directly by native code (rather than copied).
 
-Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly want ANSI treatment of your strings.
-
 ❌ DO NOT use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
-❌ AVOID `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
+✔️ CONSIDER setting the `CharSet` property in `[DllImport]` so the runtime knows the expected string encoding.
+
+✔️ CONSIDER `char[]` or `byte[]` arrays from an `ArrayPool` when native code is expected to fill a character buffer. This requires passing the argument as `[Out]`.
+
+✔️ CONSIDER avoiding `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
 
 1. Create a `StringBuilder` of the desired capacity (allocates managed capacity) **{1}**.
 2. Invoke:
@@ -45,18 +47,16 @@ Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly wa
    3. Copies the native buffer into a newly allocated managed array if `[Out]` **{3}** _(also the default for `StringBuilder`)_.
 3. `ToString()` allocates yet another managed array **{4}**.
 
-That is *{4}* allocations to get a string out of native code. The best you can do to limit this is to reuse the `StringBuilder`
-in another call, but this still only saves *1* allocation. It's much better to use and cache a character buffer from `ArrayPool`. You can then get down to just the allocation for the `ToString()` on subsequent calls.
+That's **{4}** allocations to get a string out of native code. The best you can do to limit this is to reuse the `StringBuilder`
+in another call, but this still only saves one allocation. It's much better to use and cache a character buffer from `ArrayPool`. You can then get down to just the allocation for the `ToString()` on subsequent calls.
 
 The other issue with `StringBuilder` is that it always copies the return buffer back up to the first null. If the passed back string isn't terminated or is a double-null-terminated string, your P/Invoke is incorrect at best.
 
 If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not** include a hidden null, which is always accounted for in interop. It's common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshalling to minimize copies.
 
-✔️ CONSIDER using `char[]`s from an `ArrayPool`.
-
 For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshalling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
 
-> __Windows Specific__
+> **Windows Specific**
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
 as `UnmanagedType.BSTR`.
 > **For most APIs with an output string buffer:**
@@ -130,7 +130,7 @@ You can see if a type is blittable or contains blittable contents by attempting 
 
 ### Blittable types when runtime marshalling is disabled
 
-When [runtime marshalling is disabled](disabled-marshalling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types and do not have any fields that are marked with `[StructLayout(LayoutKind.Auto)]` are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of types with blittable contents, such as arrays or strings, does not apply when runtime marshalling is disabled. Any type that is not considered blittable by the aforementioned rule is unsupported when runtime marshalling is disabled.
+When [runtime marshalling is disabled](disabled-marshalling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types and don't have any fields that are marked with `[StructLayout(LayoutKind.Auto)]` are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of types with blittable contents, such as arrays or strings, does not apply when runtime marshalling is disabled. Any type that is not considered blittable by the aforementioned rule is unsupported when runtime marshalling is disabled.
 
 These rules differ from the built-in system primarily in situations where `bool` and `char` are used. When marshalling is disabled, `bool` is passed as a 1-byte value and not normalized and `char` is always passed as a 2-byte value. When runtime marshalling is enabled, `bool` can map to a 1, 2, or 4-byte value and is always normalized, and `char` maps to either a 1 or 2-byte value depending on the [`CharSet`](charset.md).
 

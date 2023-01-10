@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet clean
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -34,8 +34,6 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
 * **`-f|--framework <FRAMEWORK>`**
@@ -48,7 +46,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 

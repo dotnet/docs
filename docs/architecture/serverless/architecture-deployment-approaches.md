@@ -9,6 +9,8 @@ ms.contributors: jeliknes-03262021
 ---
 # Architecture deployment approaches
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Regardless of the architecture approach used to design a business application, the implementation, or deployment of those applications may vary. Businesses host applications on everything from physical hardware to serverless functions.
 
 ## N-Tier applications

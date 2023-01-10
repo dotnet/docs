@@ -1,18 +1,18 @@
 ---
 description: "Learn more about: CloseCLREnumeration Function"
 title: "CloseCLREnumeration Function"
-ms.date: "03/30/2017"
+ms.date: "03/21/2022"
 api_name: 
   - "CloseCLREnumeration"
 api_location: 
   - "dbgshim.dll"
-api_type: 
-  - "COM"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CloseCLREnumeration"
 helpviewer_keywords: 
-  - "debugging API [Silverlight]"
-  - "Silverlight, debugging"
+  - "debugging API [.NET Core]"
+  - ".NET Core, debugging"
   - "CloseCLR Enumeration function"
 ms.assetid: 5e3c3958-80bb-43b1-a96b-dd3e6dbd9cd7
 topic_type: 
@@ -34,13 +34,13 @@ HRESULT CloseCLREnumeration (
   
 ## Parameters  
 
- `pHandleArray`  
+ `pHandleArray`\
  [in] Pointer to the array of event handles returned from the [EnumerateCLRs function](enumerateclrs-function.md).  
   
- `pStringArray`  
+ `pStringArray`\
  [in] Pointer to the array of CLR string paths returned from the [EnumerateCLRs function](enumerateclrs-function.md).  
   
- `dwArrayLength`  
+ `dwArrayLength`\
  [in] DWORD that contains the size (length) of either `pHandleArray` or `pStringArray` (they are the same).  
   
 ## Return Value  
@@ -56,10 +56,10 @@ HRESULT CloseCLREnumeration (
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
- **.NET Framework Versions:** 3.5 SP1
+ **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

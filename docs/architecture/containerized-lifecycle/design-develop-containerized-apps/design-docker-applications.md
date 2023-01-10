@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Design Docker applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Chapter 1 introduced the fundamental concepts regarding containers and Docker. That information is the basic level of information you need to get started. But, enterprise applications can be complex and composed of multiple services instead of a single service or container. For those optional use cases, you need to know additional approaches to design, such as Service-Oriented Architecture (SOA) and the more advanced microservices concepts and container orchestration concepts. The scope of this document is not limited to microservices but to any Docker application life cycle, therefore, it does not explore microservices architecture in depth because you can also use containers and Docker with regular SOA, background tasks or jobs, or even with monolithic application deployment approaches.
 
 **More info** To learn more about enterprise applications and microservices architecture in depth, read the guide [NET Microservices: Architecture for Containerized .NET Applications](../../microservices/index.md) that you can also download from <https://aka.ms/MicroservicesEbook>.

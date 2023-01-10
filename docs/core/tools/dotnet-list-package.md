@@ -1,11 +1,11 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 01/31/2022
+ms.date: 04/13/2022
 ---
 # dotnet list package
 
-**This article applies to:** ✔️ .NET Core 2.2 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -20,6 +20,8 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--vulnerable]
+    [--format <console|json>]
+    [--output-version <VERSION>]
 
 dotnet list package -h|--help
 ```
@@ -40,7 +42,9 @@ Project 'SentimentAnalysis' has the following package references
 
 The **Requested** column refers to the package version specified in the project file and can be a range. The **Resolved** column lists the version that the project is currently using and is always a single value. The packages displaying an `(A)` right next to their names represent implicit package references that are inferred from your project settings (`Sdk` type, or `<TargetFramework>` or `<TargetFrameworks>` property).
 
-Use the `--outdated` option to find out if there are newer versions available of the packages you're using in your projects. By default, `--outdated` lists the latest stable packages unless the resolved version is also a prerelease version. To include prerelease versions when listing newer versions, also specify the `--include-prerelease` option. The following examples shows the output of the `dotnet list package --outdated --include-prerelease` command for the same project as the previous example:
+Use the `--outdated` option to find out if there are newer versions available of the packages you're using in your projects. By default, `--outdated` lists the latest stable packages unless the resolved version is also a prerelease version. To include prerelease versions when listing newer versions, also specify the `--include-prerelease` option. To update a package to the latest version, use [dotnet add package](dotnet-add-package.md).
+
+The following example shows the output of the `dotnet list package --outdated --include-prerelease` command for the same project as the previous example:
 
 ```output
 The following sources were used:
@@ -70,8 +74,6 @@ The project or solution file to operate on. If not specified, the command search
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--config <SOURCE>`**
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
@@ -82,7 +84,7 @@ The project or solution file to operate on. If not specified, the command search
   
 - **`--framework <FRAMEWORK>`**
 
-  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
+  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -118,6 +120,14 @@ The project or solution file to operate on. If not specified, the command search
 
   Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options. Nuget.org is the source of information about vulnerabilities. For more information, see [Vulnerabilities](/nuget/api/registration-base-url-resource) and [How to Scan NuGet Packages for Security Vulnerabilities](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/).
 
+- **`--format <console|json>`**
+
+  Sets the report output format. Allowed values are `console`, `json`.  Defaults to `console`.
+
+- **`--output-version <VERSION>`**
+
+  Sets the report output version. Allowed value is `1`. Defaults to `1`. Requires the `--format json` option. When a new JSON version is available, the command will produce the new format by default. This option will let you specify that the command should produce an earlier format.
+
 ## Examples
 
 - List package references of a specific project:
@@ -136,4 +146,28 @@ The project or solution file to operate on. If not specified, the command search
 
   ```dotnetcli
   dotnet list package --framework netcoreapp3.0
+  ```
+
+- List package references in machine readable json output format:
+
+  ```dotnetcli
+  dotnet list package --format json
+  ```
+
+- List package references for a specific target framework in machine readable json output format:
+
+  ```dotnetcli
+   dotnet list package --framework netcoreapp3.0 --format json
+  ```
+
+- Save machine readable json output of package references, including transitive dependency and vulnerability details into a file:
+
+  ```dotnetcli
+  dotnet list package --include-transitive --vulnerable --format json >> dependencyReport.json
+  ```
+
+- List package references in machine readable json output format with output version 1:
+
+  ```dotnetcli
+  dotnet list package --format json --output-version 1
   ```

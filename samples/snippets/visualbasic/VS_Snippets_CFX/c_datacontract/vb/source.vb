@@ -2,7 +2,6 @@
 Imports System.Security.Permissions
 Imports System.Runtime.Serialization
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Example
     '<snippet1>
     <ServiceContract()> _

@@ -1,7 +1,7 @@
 ---
-title: "+ and += operators - C# reference"
-description: "Learn about the C# addition operator and how it works with operands of numeric, string, or delegate types."
-ms.date: 06/30/2021
+title: "Addition operators - + and +="
+description: "The C# addition operators (`+`, and `+=`) work with operands of numeric, string, or delegate types."
+ms.date: 11/29/2022
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -13,9 +13,8 @@ helpviewer_keywords:
   - "addition assignment operator [C#]"
   - "event subscription [C#]"
   - "+= operator [C#]"
-ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
-# + and += operators (C# reference)
+# Addition operators - `+` and `+=`
 
 The `+` and `+=` operators are supported by the built-in [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types, the [string](../builtin-types/reference-types.md#the-string-type) type, and [delegate](../builtin-types/reference-types.md#the-delegate-type) types.
 
@@ -27,11 +26,13 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 
 [!code-csharp-interactive[string concatenation](snippets/shared/AdditionOperator.cs#AddStrings)]
 
-Beginning with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
+[String interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
 [!code-csharp-interactive[string interpolation](snippets/shared/AdditionOperator.cs#UseStringInterpolation)]
 
 Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
+
+Beginning with C# 11, the `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
 
 ## Delegate combination
 
@@ -67,7 +68,7 @@ You also use the `+=` operator to specify an event handler method when you subsc
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type cannot explicitly overload the `+=` operator.
+A user-defined type can [overload](operator-overloading.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type can't explicitly overload the `+=` operator.
 
 ## C# language specification
 

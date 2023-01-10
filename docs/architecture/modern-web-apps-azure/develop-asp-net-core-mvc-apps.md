@@ -8,6 +8,8 @@ no-loc: [Blazor, WebAssembly]
 ---
 # Develop ASP.NET Core MVC apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "It's not important to get it right the first time. It's vitally important to get it right the last time."
 > _- Andrew Hunt and David Thomas_
 
@@ -75,7 +77,7 @@ public class ProductsController : Controller
 }
 ```
 
-Razor Pages doesn't use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
+Razor Pages don't use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
 
 ```csharp
 @page "{id:int}"
@@ -162,15 +164,15 @@ The end result of this approach is for controllers to be much smaller and focuse
 > ### References – Mapping Requests to Responses
 >
 > - **Routing to Controller Actions**\
- > [https://docs.microsoft.com/aspnet/core/mvc/controllers/routing](/aspnet/core/mvc/controllers/routing)
+ > [https://learn.microsoft.com/aspnet/core/mvc/controllers/routing](/aspnet/core/mvc/controllers/routing)
 > - **Model Binding**\
- > [https://docs.microsoft.com/aspnet/core/mvc/models/model-binding](/aspnet/core/mvc/models/model-binding)
+ > [https://learn.microsoft.com/aspnet/core/mvc/models/model-binding](/aspnet/core/mvc/models/model-binding)
 > - **Model Validation**\
- > [https://docs.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
+ > [https://learn.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
 > - **Filters**\
- > [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
+ > [https://learn.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **ApiController Attribute**\
- > [https://docs.microsoft.com/aspnet/core/web-api/](/aspnet/core/web-api/)
+ > [https://learn.microsoft.com/aspnet/core/web-api/](/aspnet/core/web-api/)
 
 ## Working with dependencies
 
@@ -230,7 +232,7 @@ public void Configure(IApplicationBuilder app,
 }
 ```
 
-The ConfigureServices method is the exception to this behavior; it must take just one parameter of type `IServiceCollection`. It doesn't really need to support dependency injection, since on the one hand it is responsible for adding objects to the services container, and on the other it has access to all currently configured services via the IServiceCollection parameter. Thus, you can work with dependencies defined in the ASP.NET Core services collection in every part of the `Startup` class, either by requesting the needed service as a parameter or by working with the `IServiceCollection` in `ConfigureServices`.
+The ConfigureServices method is the exception to this behavior; it must take just one parameter of type `IServiceCollection`. It doesn't really need to support dependency injection, since on the one hand it is responsible for adding objects to the services container, and on the other it has access to all currently configured services via the `IServiceCollection` parameter. Thus, you can work with dependencies defined in the ASP.NET Core services collection in every part of the `Startup` class, either by requesting the needed service as a parameter or by working with the `IServiceCollection` in `ConfigureServices`.
 
 > [!NOTE]
 > If you need to ensure certain services are available to your `Startup` class, you can configure them using an `IWebHostBuilder` and its `ConfigureServices` method inside the `CreateDefaultBuilder` call.
@@ -320,7 +322,7 @@ ASP.NET Core MVC also uses a convention to locate views. You can override it wit
 
 ### APIs and Blazor applications
 
-If your application includes a set of web APIs, which must be secured, these apis should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
+If your application includes a set of web APIs, which must be secured, these APIs should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
 
 Additionally, Blazor applications, whether using Blazor Server or Blazor WebAssembly, should be built as separate projects. The applications have different runtime characteristics as well as security models. They're likely to share common types with the server-side web application (or API project), and these types should be defined in a common shared project.
 
@@ -338,7 +340,7 @@ As applications grow, it becomes increasingly important to factor out cross-cutt
 
 **Figure 7-2**. Request execution through filters and request pipeline.
 
-Filters are usually implemented as attributes, so you can apply them to controllers or actions (or even globally). When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
+Filters are usually implemented as attributes, so you can apply them to controllers or actions (or even globally). When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the `[Route]` attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
 
 ```csharp
 [Authorize]
@@ -350,9 +352,9 @@ public class AccountController : Controller
 }
 ```
 
-The first method, Login, uses the AllowAnonymous filter (attribute) to override the Authorize filter set at the controller level. The ForgotPassword action (and any other action in the class that doesn't have an AllowAnonymous attribute) will require an authenticated request.
+The first method, Login, uses the `[AllowAnonymous]` filter (attribute) to override the Authorize filter set at the controller level. The `ForgotPassword` action (and any other action in the class that doesn't have an AllowAnonymous attribute) will require an authenticated request.
 
-Filters can be used to eliminate duplication in the form of common error handling policies for APIs. For example, a typical API policy is to return a NotFound response to requests referencing keys that do not exist, and a BadRequest response if model validation fails. The following example demonstrates these two policies in action:
+Filters can be used to eliminate duplication in the form of common error handling policies for APIs. For example, a typical API policy is to return a NotFound response to requests referencing keys that do not exist, and a `BadRequest` response if model validation fails. The following example demonstrates these two policies in action:
 
 ```csharp
 [HttpPut("{id}")]
@@ -403,18 +405,18 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 
 You can read more about implementing filters and download a working sample from the MSDN Magazine article, [Real-World ASP.NET Core MVC Filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters).
 
-If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint would use a filter to translate these into IActionResults.
+If you find that you have a number of common responses from APIs based on common scenarios like validation errors (Bad Request), resource not found, and server errors, you might consider using a *result* abstraction. The result abstraction would be returned by services consumed by API endpoints, and the controller action or endpoint would use a filter to translate these into `IActionResults`.
 
 > ### References – Structuring applications
 >
 > - **Areas**\
->   [https://docs.microsoft.com/aspnet/core/mvc/controllers/areas](/aspnet/core/mvc/controllers/areas)
+>   [https://learn.microsoft.com/aspnet/core/mvc/controllers/areas](/aspnet/core/mvc/controllers/areas)
 > - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**\
->   [https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
+>   [https://learn.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
 > - **Filters**\
->   [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
+>   [https://learn.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
->   [https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
+>   [https://learn.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
 > - **Result in eShopOnWeb**\
 >   [https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result)
 
@@ -578,15 +580,15 @@ Blazor Server applications can leverage the same authentication features as any 
 > - **Authentication Actions and Defaults**\
 >   <https://stackoverflow.com/a/52493428>
 > - **Authentication and Authorization for SPAs**\
->   [https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization](/aspnet/core/security/authentication/identity-api-authorization)
+>   [https://learn.microsoft.com/aspnet/core/security/authentication/identity-api-authorization](/aspnet/core/security/authentication/identity-api-authorization)
 > - **ASP.NET Core Blazor Authentication and Authorization**\
->   [https://docs.microsoft.com/aspnet/core/blazor/security/](/aspnet/core/blazor/security/)
+>   [https://learn.microsoft.com/aspnet/core/blazor/security/](/aspnet/core/blazor/security/)
 > - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
->   [https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](../blazor-for-web-forms-developers/security-authentication-authorization.md)
+>   [https://learn.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](../blazor-for-web-forms-developers/security-authentication-authorization.md)
 
 ### Authorization
 
-The simplest form of authorization involves restricting access to anonymous users. This functionality can be achieved by applying the \[Authorize\] attribute to certain controllers or actions. If roles are being used, the attribute can be further extended to restrict access to users who belong to certain roles, as shown:
+The simplest form of authorization involves restricting access to anonymous users. This functionality can be achieved by applying the `[Authorize]` attribute to certain controllers or actions. If roles are being used, the attribute can be further extended to restrict access to users who belong to certain roles, as shown:
 
 ```csharp
 [Authorize(Roles = "HRManager,Finance")]
@@ -598,7 +600,7 @@ public class SalaryController : Controller
 
 In this case, users belonging to either the `HRManager` or `Finance` roles (or both) would have access to the SalaryController. To require that a user belong to multiple roles (not just one of several), you can apply the attribute multiple times, specifying a required role each time.
 
-Specifying certain sets of roles as strings in many different controllers and actions can lead to undesirable repetition. At a minimum, define constants for these string literals and use the constants anywhere you need to specify the string. You can also configure authorization policies, which encapsulate authorization rules, and then specify the policy instead of individual roles when applying the \[Authorize\] attribute:
+Specifying certain sets of roles as strings in many different controllers and actions can lead to undesirable repetition. At a minimum, define constants for these string literals and use the constants anywhere you need to specify the string. You can also configure authorization policies, which encapsulate authorization rules, and then specify the policy instead of individual roles when applying the `[Authorize]` attribute:
 
 ```csharp
 [Authorize(Policy = "CanViewPrivateReport")]
@@ -608,11 +610,11 @@ public IActionResult ExecutiveSalaryReport()
 }
 ```
 
-Using policies in this way, you can separate the kinds of actions being restricted from the specific roles or rules that apply to it. Later, if you create a new role that needs to have access to certain resources, you can just update a policy, rather than updating every list of roles on every \[Authorize\] attribute.
+Using policies in this way, you can separate the kinds of actions being restricted from the specific roles or rules that apply to it. Later, if you create a new role that needs to have access to certain resources, you can just update a policy, rather than updating every list of roles on every `[Authorize]` attribute.
 
 #### Claims
 
-Claims are name value pairs that represent properties of an authenticated user. For example, you might store users' employee number as a claim. Claims can then be used as part of authorization policies. You could create a policy called "EmployeeOnly" that requires the existence of a claim called "EmployeeNumber", as shown in this example:
+Claims are name value pairs that represent properties of an authenticated user. For example, you might store users' employee number as a claim. Claims can then be used as part of authorization policies. You could create a policy called "EmployeeOnly" that requires the existence of a claim called `"EmployeeNumber"`, as shown in this example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -625,7 +627,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-This policy could then be used with the \[Authorize\] attribute to protect any controller and/or action, as described above.
+This policy could then be used with the `[Authorize]` attribute to protect any controller and/or action, as described above.
 
 #### Securing web APIs
 
@@ -662,15 +664,15 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 > ### References – Security
 >
 > - **Security Docs Overview**\
->   [https://docs.microsoft.com/aspnet/core/security/](/aspnet/core/security/)
+>   [https://learn.microsoft.com/aspnet/core/security/](/aspnet/core/security/)
 > - **Enforcing SSL in an ASP.NET Core App**\
->   [https://docs.microsoft.com/aspnet/core/security/enforcing-ssl](/aspnet/core/security/enforcing-ssl)
+>   [https://learn.microsoft.com/aspnet/core/security/enforcing-ssl](/aspnet/core/security/enforcing-ssl)
 > - **Introduction to Identity**\
->   [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
+>   [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 > - **Introduction to Authorization**\
->   [https://docs.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
+>   [https://learn.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
 > - **Authentication and Authorization for API Apps in Azure App Service**\
->   [https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication](/azure/app-service-api/app-service-api-authentication)
+>   [https://learn.microsoft.com/azure/app-service-api/app-service-api-authentication](/azure/app-service-api/app-service-api-authentication)
 > - **Identity Server**\
 >   <https://github.com/IdentityServer>
 
@@ -823,13 +825,13 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 > ### References – Deployment
 >
 > - **Hosting and Deployment Overview**\
->   [https://docs.microsoft.com/aspnet/core/publishing/](/aspnet/core/publishing/)
+>   [https://learn.microsoft.com/aspnet/core/publishing/](/aspnet/core/publishing/)
 > - **When to use Kestrel with a reverse proxy**\
->   [https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy](/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
+>   [https://learn.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy](/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
 > - **Host ASP.NET Core apps in Docker**\
->   [https://docs.microsoft.com/aspnet/core/publishing/docker](/aspnet/core/publishing/docker)
+>   [https://learn.microsoft.com/aspnet/core/publishing/docker](/aspnet/core/publishing/docker)
 > - **Introducing Azure Application Gateway**\
->   [https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction](/azure/application-gateway/application-gateway-introduction)
+>   [https://learn.microsoft.com/azure/application-gateway/application-gateway-introduction](/azure/application-gateway/application-gateway-introduction)
 
 >[!div class="step-by-step"]
 >[Previous](common-client-side-web-technologies.md)

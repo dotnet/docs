@@ -6,6 +6,8 @@ ms.date: 12/29/2020
 
 # Windows 10 migration
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Consider the following situation: You have a working desktop application that was developed in the Windows 7 days. It's using WPF technology available at that time and working fine but it has an outdated UI and behaviors when you run it on Windows 10. It is like when you watch a futuristic movie like Matrix and you see Neo using the Nokia 8110 device. The film works great after 20 years but it would rather benefit from a device modernization.
 
 With the release of Windows 10, Microsoft introduced many innovations to support scenarios like tablets and touch devices and to provide the best experience for users for a Microsoft operating system ever. For example, you can:
@@ -52,7 +54,7 @@ You can check which APIs need a packaged application identity by inspecting if t
 [DualApiPartition](xref:Windows.Foundation.Metadata.DualApiPartitionAttribute) attribute. If it is, you can call if from an unpackaged traditional desktop app. Otherwise, you must convert your classic desktop app to a UWP with the help
 of a packaging project.
 
-[https://docs.microsoft.com/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app](/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app)
+[https://learn.microsoft.com/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app](/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app)
 
 #### Benefits of packaging
 
@@ -102,9 +104,9 @@ All writes are kept during package upgrade and only deleted when the application
 When the user uninstalls a package, all files and folders located under `C:\Program Files\WindowsApps\package_name` are removed, as well as any redirected writes to AppData or the registry that were captured during the process.
 
 For details about how a packaged application handles installation, file access, registry, and uninstallation, see
-[https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-behind-the-scenes](/windows/msix/desktop/desktop-to-uwp-behind-the-scenes).
+[https://learn.microsoft.com/windows/msix/desktop/desktop-to-uwp-behind-the-scenes](/windows/msix/desktop/desktop-to-uwp-behind-the-scenes).
 
-You can get a complete list of things to check on [https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-prepare](/windows/msix/desktop/desktop-to-uwp-prepare).
+You can get a complete list of things to check on [https://learn.microsoft.com/windows/msix/desktop/desktop-to-uwp-prepare](/windows/msix/desktop/desktop-to-uwp-prepare).
 
 ## How to add WinRT APIs to your desktop project
 
@@ -116,7 +118,7 @@ Let's take an existing WPF sample app that reads files and shows its contents on
 
 First, you should check in the following link whether the Windows 10 API that you'll use requires a Package Identity:
 
-[https://docs.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-supported-api](/windows/apps/desktop/modernize/desktop-to-uwp-supported-api)
+[https://learn.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-supported-api](/windows/apps/desktop/modernize/desktop-to-uwp-supported-api)
 
 Our sample will use the <xref:Windows.UI.Notifications.Notification?displayProperty=nameWithType> API that requires a packaged identity:
 
@@ -266,7 +268,7 @@ One of the core features of XAML is binding and it works between your Win32 code
 
 To see a walkthrough about how to use XAML Islands, see:
 
-[https://docs.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands)
+[https://learn.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands)
 
 #### Adding UWP XAML custom controls
 
@@ -282,7 +284,7 @@ The custom UWP XAML control can be included on this UWP app or in an independent
 
 You can check a detailed step-by-step process description at:
 
-[https://docs.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands](/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands)
+[https://learn.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands](/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands)
 
 #### The Windows UI Library (WinUI 2)
 
@@ -290,7 +292,7 @@ Besides the inbox Windows 10 controls that comes with the OS, the same UWP XAML 
 
 WinUI 2 is open source and you can find information at <https://github.com/microsoft/microsoft-ui-xaml>.
 
-The following article demonstrates how to host a UWP XAML control from the WinUI 2 library: [https://docs.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands](/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands)
+The following article demonstrates how to host a UWP XAML control from the WinUI 2 library: [https://learn.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands](/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands)
 
 ### Do you need XAML Islands
 

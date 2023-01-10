@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Implement HTTP call retries with exponential backoff with IHttpClientFactory and Polly policies
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The recommended approach for retries with exponential backoff is to take advantage of more advanced .NET libraries like the open-source [Polly library](https://github.com/App-vNext/Polly).
 
 Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET Framework 4.x and .NET Standard 1.0, 1.1, and 2.0 (which supports .NET Core and later).
@@ -14,11 +16,11 @@ The following steps show how you can use Http retries with Polly integrated into
 
 **Reference the .NET 6 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly's Retry policy, in Startup**
 
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard Startup.ConfigureServices(...) method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard `Startup.ConfigureServices(...)` method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
 
 ```csharp
 //ConfigureServices()  - Startup.cs
@@ -60,7 +62,7 @@ var retryPolicy = Policy
 ## Additional resources
 
 - **Retry pattern**  
-  [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
+  [https://learn.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
 - **Polly and IHttpClientFactory**  
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>

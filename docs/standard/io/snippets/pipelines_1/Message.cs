@@ -1,6 +1,5 @@
-﻿namespace Pipes
+﻿namespace Pipes;
+
+internal class Message
 {
-    internal class Message
-    {
-    }
 }

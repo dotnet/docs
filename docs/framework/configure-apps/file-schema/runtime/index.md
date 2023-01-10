@@ -1,16 +1,16 @@
 ---
-description: "Learn more about: Run-time settings schema"
+description: "Learn more about: Runtime settings schema"
 title: "Runtime Settings Schema"
-ms.date: "03/30/2017"
+ms.date: 04/20/2022
 helpviewer_keywords:
   - "schema runtime settings"
   - "configuration schema [.NET Framework], runtime settings"
   - "runtime settings schema"
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 ---
-# Run-time settings schema
+# Runtime settings schema
 
-Run-time settings are used by the common language runtime to configure applications that target the .NET Framework.
+Runtime settings are used by the common language runtime to configure applications that target .NET Framework. This article shows the schema for runtime settings in an [application configuration file](../../index.md).
 
 ## The \<runtime> section and its parent and child elements
 
@@ -36,6 +36,7 @@ Run-time settings are used by the common language runtime to configure applicati
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<disableStackOverflowProbing>](disablestackoverflowprobing-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<EnableAmPmParseAdjustment>](enableampmparseadjustment-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<enforceFIPSPolicy>](enforcefipspolicy-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<etwEnable>](etwenable-element.md)\
@@ -90,9 +91,10 @@ Run-time settings are used by the common language runtime to configure applicati
 |[\<CompatSortNLSVersion>](compatsortnlsversion-element.md)|Specifies that the runtime should use legacy sorting behavior when performing string comparisons|
 |[\<dependentAssembly>](dependentassembly-element.md)|Encapsulates binding policy and assembly location for each assembly.|
 |[\<developmentMode>](developmentmode-element.md)|Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.|
-|[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Specifies whether the caching of binding failures, which is the default behavior in the .NET Framework 2.0, is disabled.|
+|[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Specifies whether the caching of binding failures, which is the default behavior in .NET Framework 2.0, is disabled.|
 |[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)|Specifies whether the full thread stack is committed when a thread starts.|
 |[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)|Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.|
+|[\<disableStackOverflowProbing>](disablestackoverflowprobing-element.md)|Specifies whether stack-overflow probing is disabled.|
 |[\<EnableAmPmParseAdjustment>](enableampmparseadjustment-element.md)|Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain only a day, month, hour, and AM/PM designator.|
 |[\<enforceFIPSPolicy>](enforcefipspolicy-element.md)|Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).|
 |[\<etwEnable>](etwenable-element.md)|Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.|

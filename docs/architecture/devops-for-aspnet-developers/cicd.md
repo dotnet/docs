@@ -10,6 +10,8 @@ uid: azure/devops/cicd
 ---
 # Continuous integration and deployment with Azure DevOps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > [!NOTE]
 > This section details continuous integration and deployment with Azure DevOps. You can achieve that with GitHub Actions as well. GitHub Actions is a workflow engine built into GitHub that can also be used for continuous integration and deployment. To follow the guide for building and deploying to Azure using GitHub, complete the **Publish the app's code to GitHub** and **Disconnect local Git deployment** sections below and then proceed to the [GitHub Actions section](actions-index.md).
 
@@ -224,7 +226,7 @@ There are three distinct steps to complete. Completing the steps in the followin
 
 1. Open *SimpleFeedReader.sln* in Visual Studio.
 1. In Solution Explorer, open *Pages\Index.cshtml*. Change `<h2>Simple Feed Reader - V3</h2>` to `<h2>Simple Feed Reader - V4</h2>`.
-1. Press **Ctrl**+**Shift**+**B** to build the app.
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the app.
 1. Commit the file to the GitHub repository. Use either the **Changes** page in Visual Studio's *Team Explorer* tab, or execute the following using the local machine's command shell:
 
     ```console

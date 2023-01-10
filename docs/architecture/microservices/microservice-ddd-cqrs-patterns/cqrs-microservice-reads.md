@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Implement reads/queries in a CQRS microservice
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 For reads/queries, the ordering microservice from the eShopOnContainers reference application implements the queries independently from the DDD model and transactional area. This implementation was done primarily because the demands for queries and for transactions are drastically different. Writes execute transactions that must be compliant with the domain logic. Queries, on the other hand, are idempotent and can be segregated from the domain rules.
 
 The approach is simple, as shown in Figure 7-3. The API interface is implemented by the Web API controllers using any infrastructure, such as a micro Object Relational Mapper (ORM) like Dapper, and returning dynamic ViewModels depending on the needs of the UI applications.
@@ -39,7 +41,7 @@ Dapper is an open-source project (original created by Sam Saffron), and is part 
 
 You also need to add a `using` directive so your code has access to the Dapper extension methods.
 
-When you use Dapper in your code, you directly use the <xref:System.Data.SqlClient.SqlConnection> class available in the <xref:System.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:System.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
+When you use Dapper in your code, you directly use the <xref:Microsoft.Data.SqlClient.SqlConnection> class available in the <xref:Microsoft.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:Microsoft.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
 
 ## Dynamic versus static ViewModels
 
@@ -183,10 +185,10 @@ The image shows some example values based on the ViewModel types and the possibl
  <https://github.com/StackExchange/dapper-dot-net>
 
 - **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN magazine article)**  
-  [https://docs.microsoft.com/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps)
+  [https://learn.microsoft.com/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps)
 
 - **ASP.NET Core Web API Help Pages using Swagger**  
-  [https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio](/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
+  [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio](/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
 
 >[!div class="step-by-step"]
 >[Previous](eshoponcontainers-cqrs-ddd-microservice.md)

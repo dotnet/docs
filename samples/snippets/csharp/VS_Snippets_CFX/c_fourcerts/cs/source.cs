@@ -11,8 +11,6 @@ using System.ServiceModel.Security.Tokens;
 using System.ServiceModel.Channels;
 using System.IdentityModel.Policy;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.ServiceModel.Samples
 {
     //<snippet1>

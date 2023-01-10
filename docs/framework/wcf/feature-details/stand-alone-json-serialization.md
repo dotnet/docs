@@ -4,10 +4,10 @@ title: "Stand-Alone JSON Serialization using DataContractJsonSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
 ---
-# Stand-Alone JSON Serialization using DataContractJsonSerializer
+# Stand-alone JSON serialization using DataContractJsonSerializer
 
 > [!NOTE]
-> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the APIs in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md).
+> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the APIs in the [System.Text.Json namespace](../../../standard/serialization/system-text-json/overview.md).
 
 JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in Windows Communication Foundation (WCF).
 
@@ -17,26 +17,26 @@ Finally, if you require JSON support but are not creating an AJAX service, the <
 
 When working with JSON, the same .NET types are supported, with a few exceptions, as are supported by the <xref:System.Runtime.Serialization.DataContractSerializer>. For a list of the types supported, see [Types Supported by the Data Contract Serializer](types-supported-by-the-data-contract-serializer.md). This includes most primitive types, most array and collection types, as well as complex types that use the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute>.
 
-## Mapping .NET types to JSON Types
+## Map .NET types to JSON types
 
 The following table shows the correspondence between .NET types and JSON/JavaScript types when mapped by serialization and deserialization procedures.
 
 |.NET Types|JSON/JavaScript|Notes|
 |----------------|----------------------|-----------|
 |All numeric types, for example <xref:System.Int32>, <xref:System.Decimal> or <xref:System.Double>|Number|Special values such as  `Double.NaN`, `Double.PositiveInfinity` and `Double.NegativeInfinity` are not supported and result in invalid JSON.|
-|<xref:System.Enum>|Number|See "Enumerations and JSON" later in this topic.|
-|<xref:System.Boolean>|Boolean|--|
-|<xref:System.String>, <xref:System.Char>|String|--|
+|<xref:System.Enum>|Number|See "Enumerations and JSON" later in this article.|
+|<xref:System.Boolean>|Boolean||
+|<xref:System.String>, <xref:System.Char>|String||
 |<xref:System.TimeSpan>, <xref:System.Guid>, <xref:System.Uri>|String|The format of these types in JSON is the same as in XML (essentially, TimeSpan in the ISO 8601 Duration format, GUID in the "12345678-ABCD-ABCD-ABCD-1234567890AB" format and URI in its natural string form like "http://www.example.com"). For precise information, see [Data Contract Schema Reference](data-contract-schema-reference.md).|
 |<xref:System.Xml.XmlQualifiedName>|String|The format is "name:namespace" (anything before the first colon is the name). Either the name or the namespace can be missing. If there is no namespace the colon can be omitted as well.|
 |<xref:System.Array> of type <xref:System.Byte>|Array of numbers|Each number represents the value of one byte.|
-|<xref:System.DateTime>|DateTime or String|See Dates/Times and JSON later in this topic.|
-|<xref:System.DateTimeOffset>|Complex type|See Dates/Times and JSON later in this topic.|
-|XML and ADO.NET types (<xref:System.Xml.XmlElement>,<br /><br /> <xref:System.Xml.Linq.XElement>. Arrays of <xref:System.Xml.XmlNode>,<br /><br /> <xref:System.Runtime.Serialization.ISerializable>,<br /><br /> <xref:System.Data.DataSet>).|String|See the XML Types and JSON section of this topic.|
+|<xref:System.DateTime>|DateTime or String|See Dates/Times and JSON later in this article.|
+|<xref:System.DateTimeOffset>|Complex type|See Dates/Times and JSON later in this article.|
+|XML and ADO.NET types (<xref:System.Xml.XmlElement>,<br /><br /> <xref:System.Xml.Linq.XElement>. Arrays of <xref:System.Xml.XmlNode>,<br /><br /> <xref:System.Runtime.Serialization.ISerializable>,<br /><br /> <xref:System.Data.DataSet>).|String|See the XML Types and JSON section of this article.|
 |<xref:System.DBNull>|Empty complex type|--|
 |Collections, dictionaries, and arrays|Array|See the Collections, Dictionaries, and Arrays section of this topic.|
 |Complex types (with the <xref:System.Runtime.Serialization.DataContractAttribute> or <xref:System.SerializableAttribute> applied)|Complex type|Data members become members of the JavaScript complex type.|
-|Complex types implementing the <xref:System.Runtime.Serialization.ISerializable> interface)|Complex type|Same as other complex types but some <xref:System.Runtime.Serialization.ISerializable> types are not supported – see the ISerializable Support part of the Advanced Information section of this topic.|
+|Complex types implementing the <xref:System.Runtime.Serialization.ISerializable> interface)|Complex type|Same as other complex types but some <xref:System.Runtime.Serialization.ISerializable> types are not supported – see [ISerializable Support](#iserializable-support).|
 |`Null` value for any type|Null|Nullable value types are also supported and map to JSON in the same way as non-nullable value types.|
 
 ### Enumerations and JSON
@@ -51,7 +51,7 @@ Enumeration member values are treated as numbers in JSON, which is different fro
 
 - A flags `enum` is not special and is treated the same as any other `enum`.
 
-### Dates/Times and JSON
+### Dates/times and JSON
 
 The JSON format does not directly support dates and times. However, they are very commonly used and ASP.NET AJAX provides special support for these types. When using ASP.NET AJAX proxies, the <xref:System.DateTime> type in .NET fully corresponds to the `DateTime` type in JavaScript.
 
@@ -62,17 +62,17 @@ The JSON format does not directly support dates and times. However, they are ver
   > [!NOTE]
   > <xref:System.DateTime> and <xref:System.DateTimeOffset> objects, when serialized to JSON, only preserve information to millisecond precision. Sub-millisecond values (micro/nanoseconds) are lost during serialization.
 
-### XML Types and JSON
+### XML types and JSON
 
 XML types become JSON strings.
 
 - For example, if a data member "q" of type XElement contains \<abc/>, the JSON is {"q":"\<abc/>"}.
 
-- There are some special rules that specify how XML is wrapped - for more information, see the Advanced Information section later in this topic.
+- There are some special rules that specify how XML is wrapped - for more information, see the Advanced Information section later in this article.
 
 - If you are using ASP.NET AJAX and do not want to use strings in the JavaScript, but want the XML DOM instead, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> property to XML on <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to XML on the <xref:System.ServiceModel.Web.WebInvokeAttribute>.
 
-### Collections, Dictionaries and Arrays
+### Collections, dictionaries, and arrays
 
 All collections, dictionaries, and arrays are represented in JSON as arrays.
 
@@ -88,7 +88,7 @@ All collections, dictionaries, and arrays are represented in JSON as arrays.
 
   - Consider working with the [Mapping Between JSON and XML](mapping-between-json-and-xml.md) instead of using a serializer.
 
-  - *Polymorphism* in the context of serialization refers to the ability to serialize a derived type where its base type is expected. There are special JSON-specific rules when using collections polymorphically, when, for example, assigning a collection to an <xref:System.Object>. This issue is more fully discussed in the Advanced Information section later in this topic.
+  - *Polymorphism* in the context of serialization refers to the ability to serialize a derived type where its base type is expected. There are special JSON-specific rules when using collections polymorphically, when, for example, assigning a collection to an <xref:System.Object>. This issue is more fully discussed in the Advanced Information section later in this article.
 
 ## Additional Details
 
@@ -110,7 +110,7 @@ When deserializing into an interface type, the <xref:System.Runtime.Serializatio
 
 When working with your own base and derived types, using the <xref:System.Runtime.Serialization.KnownTypeAttribute>, <xref:System.ServiceModel.ServiceKnownTypeAttribute> or an equivalent mechanism is normally required. For example, if you have an operation that has an `Animal` return value and it actually returns an instance of `Cat` (derived from `Animal`), you should either apply the <xref:System.Runtime.Serialization.KnownTypeAttribute>, to the `Animal` type or the <xref:System.ServiceModel.ServiceKnownTypeAttribute> to the operation and specify the `Cat` type in these attributes. For more information, see [Data Contract Known Types](data-contract-known-types.md).
 
-For details of how polymorphic serialization works and a discussion of some of the limitations that must be respected when using it, see the Advanced Information section later in this topic.
+For details of how polymorphic serialization works and a discussion of some of the limitations that must be respected when using it, see the Advanced Information section later in this article.
 
 ### Versioning
 
@@ -178,7 +178,7 @@ The conversion only takes place if the "/" characters are escaped (that is, the 
 
 "Content" and "DataSet" types are serialized similar to <xref:System.Array> objects of <xref:System.Xml.XmlNode> discussed in the previous section. They are wrapped in an element whose name and namespace corresponds to the data contract name and namespace of the type in question.
 
-"Element" types such as <xref:System.Xml.Linq.XElement> are serialized as is, similar to <xref:System.Xml.XmlElement> previously discussed in this topic.
+"Element" types such as <xref:System.Xml.Linq.XElement> are serialized as is, similar to <xref:System.Xml.XmlElement> previously discussed in this article.
 
 ### Polymorphism
 
@@ -204,7 +204,7 @@ To reduce the size of JSON messages, the default data contract namespace prefix 
 {"__type":"Circle:#MyApp.Shapes","x":50,"y":70,"radius":10}
 ```
 
-Both the truncated (#MyApp.Shapes) and the full (<http://schemas.datacontract.org/2004/07/MyApp.Shapes>) names is understood on deserialization.
+Both the truncated (#MyApp.Shapes) and the full (`http://schemas.datacontract.org/2004/07/MyApp.Shapes`) names are understood on deserialization.
 
 #### Type Hint Position in JSON Objects
 

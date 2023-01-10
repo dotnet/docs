@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Resources;
 
 namespace ca1810
@@ -16,6 +17,11 @@ namespace ca1810
                new ResourceManager("strings", Assembly.GetExecutingAssembly());
             resourceString = stringManager.GetString("string");
         }
+
+        public void Print()
+        {
+            Console.WriteLine(someInteger);
+        }
     }
 
     public class NoStaticConstructor
@@ -28,6 +34,11 @@ namespace ca1810
             ResourceManager stringManager =
                new ResourceManager("strings", Assembly.GetExecutingAssembly());
             return stringManager.GetString("string");
+        }
+
+        public void Print()
+        {
+            Console.WriteLine(someInteger);
         }
     }
     //</snippet1>

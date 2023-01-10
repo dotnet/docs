@@ -1,7 +1,7 @@
 ---
-title: "Pointer related operators - C# reference"
-description: "Learn about C# operators that you can use when working with pointers."
-ms.date: 05/20/2019
+title: "Pointer related operators - access memory and dereference memory locations"
+description: "Learn about C# operators that you can use when working with pointers. You use these operators to access memory, index memory locations and dereference the storage at a memory location"
+ms.date: 11/28/2022
 author: pkulikov
 f1_keywords: 
   - "->_CSharpKeyword"
@@ -21,9 +21,11 @@ helpviewer_keywords:
   - "pointer decrement [C#]"
   - "pointer comparison [C#]"
 ---
-# Pointer related operators (C# reference)
+# Pointer related operators - take the address of variables, dereference storage locations, and access memory locations
 
-You can use the following operators to work with pointers:
+The pointer operators enable you to take the address of a variable (`&`), dereference a pointer (`*`), compare pointer values, and add or subtract pointers and integers.
+
+You use the following operators to work with pointers:
 
 - Unary [`&` (address-of)](#address-of-operator-) operator: to get the address of a variable
 - Unary [`*` (pointer indirection)](#pointer-indirection-operator-) operator: to obtain the variable pointed by a pointer
@@ -42,7 +44,7 @@ The unary `&` operator returns the address of its operand:
 
 [!code-csharp[address of local](snippets/shared/PointerOperators.cs#AddressOf)]
 
-The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with a [`fixed` statement](../keywords/fixed-statement.md). The obtained address is valid only inside the block of a `fixed` statement. The following example shows how to use a `fixed` statement and the `&` operator:
+The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with a [`fixed` statement](../statements/fixed.md). The obtained address is valid only inside the block of a `fixed` statement. The following example shows how to use a `fixed` statement and the `&` operator:
 
 [!code-csharp[address of fixed](snippets/shared/PointerOperators.cs#AddressOfFixed)]
 
@@ -58,7 +60,7 @@ The unary pointer indirection operator `*` obtains the variable to which its ope
 
 [!code-csharp[pointer indirection](snippets/shared/PointerOperators.cs#PointerIndirection)]
 
-You cannot apply the `*` operator to an expression of type `void*`.
+You can't apply the `*` operator to an expression of type `void*`.
 
 The binary `*` operator computes the [product](arithmetic-operators.md#multiplication-operator-) of its numeric operands.
 
@@ -80,7 +82,7 @@ The following example demonstrates the usage of the `->` operator:
 
 [!code-csharp[pointer member access](snippets/shared/PointerOperators.cs#MemberAccess)]
 
-You cannot apply the `->` operator to an expression of type `void*`.
+You can't apply the `->` operator to an expression of type `void*`.
 
 ## Pointer element access operator []
 
@@ -95,7 +97,7 @@ In the preceding example, a [`stackalloc` expression](stackalloc.md) allocates a
 > [!NOTE]
 > The pointer element access operator doesn't check for out-of-bounds errors.
 
-You cannot use `[]` for pointer element access with an expression of type `void*`.
+You can't use `[]` for pointer element access with an expression of type `void*`.
 
 You can also use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
 
@@ -107,7 +109,7 @@ You can perform the following arithmetic operations with pointers:
 - Subtract two pointers
 - Increment or decrement a pointer
 
-You cannot perform those operations with pointers of type `void*`.
+You can't perform those operations with pointers of type `void*`.
 
 For information about supported arithmetic operations with numeric types, see [Arithmetic operators](arithmetic-operators.md).
 
@@ -144,7 +146,7 @@ The following example demonstrates the behavior of both postfix and prefix incre
 
 ## Pointer comparison operators
 
-You can use the `==`, `!=`, `<`, `>`, `<=`, and `>=` operators to compare operands of any pointer type, including `void*`. Those operators compare the addresses given by the two operands as if they were unsigned integers.
+You can use the `==`, `!=`, `<`, `>`, `<=`, and `>=` operators to compare operands of any pointer type, including `void*`. Those operators compare the addresses given by the two operands as if they're unsigned integers.
 
 For information about the behavior of those operators for operands of other types, see the [Equality operators](equality-operators.md) and [Comparison operators](comparison-operators.md) articles.
 
@@ -164,7 +166,7 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 ## Operator overloadability
 
-A user-defined type cannot overload the pointer related operators `&`, `*`, `->`, and `[]`.
+A user-defined type can't overload the pointer related operators `&`, `*`, `->`, and `[]`.
 
 ## C# language specification
 
@@ -183,8 +185,8 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Pointer types](../unsafe-code.md#pointer-types)
+- [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
 - [unsafe keyword](../keywords/unsafe.md)
-- [fixed keyword](../keywords/fixed-statement.md)
-- [stackalloc](stackalloc.md)
+- [fixed statement](../statements/fixed.md)
+- [stackalloc expression](stackalloc.md)
 - [sizeof operator](sizeof.md)

@@ -37,7 +37,7 @@ The following example shows a partial method defined in two parts of a partial c
 Partial methods can also be useful in combination with source generators. For example a regex could be defined using the following pattern:
 
 ```csharp
-[RegexGenerated("(dog|cat|fish)")]
+[GeneratedRegex("(dog|cat|fish)")]
 partial bool IsPetMatch(string input);
 ```
 

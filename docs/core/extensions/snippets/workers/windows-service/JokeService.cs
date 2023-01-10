@@ -1,6 +1,6 @@
 ﻿namespace App.WindowsService;
 
-public class JokeService
+public sealed class JokeService
 {
     public string GetJoke()
     {
@@ -12,7 +12,7 @@ public class JokeService
 
     // Programming jokes borrowed from:
     // https://github.com/eklavyadev/karljoke/blob/main/source/jokes.json
-    readonly HashSet<Joke> _jokes = new()
+    private readonly HashSet<Joke> _jokes = new()
     {
         new Joke("What's the best thing about a Boolean?", "Even if you're wrong, you're only off by a bit."),
         new Joke("What's the object-oriented way to become wealthy?", "Inheritance"),
@@ -40,4 +40,4 @@ public class JokeService
     };
 }
 
-public record Joke(string Setup, string Punchline);
+readonly record struct Joke(string Setup, string Punchline);

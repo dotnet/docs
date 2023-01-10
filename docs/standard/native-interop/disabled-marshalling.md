@@ -6,7 +6,7 @@ ms.date: 01/12/2022
 
 # Disabled runtime marshalling
 
-When the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to an assembly, the runtime disables most built-in support for data marshalling between managed and native representations. This document describes the features that are disabled and how .NET types map to native types when marshalling is disabled.
+When the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to an assembly, the runtime disables most built-in support for data marshalling between managed and native representations. This article describes the features that are disabled and how .NET types map to native types when marshalling is disabled.
 
 ## Scenarios where marshalling is disabled
 
@@ -16,7 +16,7 @@ When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, it affe
 
 When the `DisableRuntimeMarshallingAttribute` is applied to an assembly, the following attributes will have no effect or throw an exception:
 
-- [`LCIDConversionAttribute`](xref:System.Runtime.InteropServices.LCIDConversionAttribute) on a P/Invoke or a delegate
+- <xref:System.Runtime.InteropServices.LCIDConversionAttribute> on a P/Invoke or a delegate
 - `SetLastError=true` on a P/Invoke
 - `ThrowOnUnmappableChar=true` on a P/Invoke
 - `BestFitMapping=true` on a P/Invoke

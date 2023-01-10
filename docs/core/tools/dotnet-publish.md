@@ -5,7 +5,7 @@ ms.date: 12/02/2021
 ---
 # dotnet publish
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -20,9 +20,9 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--no-self-contained]
-     [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
-    [--version-suffix <VERSION_SUFFIX>]
+    [--sc|--self-contained [true|false]] [--no-self-contained]
+    [-s|--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
+    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
 ```
@@ -50,7 +50,7 @@ Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-
 
 The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
 
-You can also set publish-related properties by referring to a *.pubxml* file (available since .NET Core 3.1 SDK). For example:
+You can also set publish-related properties by referring to a *.pubxml* file. For example:
 
 ```dotnetcli
 dotnet publish -p:PublishProfile=FolderProfile
@@ -62,7 +62,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishReadyToRun`
 
-  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
+  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md).
 
   To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarnings=true`.
 
@@ -70,7 +70,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishSingleFile`
 
-  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md). Available since .NET Core 3.0 SDK.
+  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -96,11 +96,9 @@ For more information, see the following resources:
 
   * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. Available since .NET Core 3.0 SDK.
+  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
@@ -132,7 +130,7 @@ For more information, see the following resources:
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`--no-restore`**
 
@@ -164,7 +162,7 @@ For more information, see the following resources:
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`--self-contained [true|false]`**
+- **`--sc|--self-contained [true|false]`**
 
   Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified and the project is an executable project (not a library project). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
 
@@ -172,7 +170,7 @@ For more information, see the following resources:
 
 - **`--no-self-contained`**
 
-  Equivalent to `--self-contained false`. Available since .NET Core 3.0 SDK.
+  Equivalent to `--self-contained false`.
 
 - **`--source <SOURCE>`**
 
@@ -183,6 +181,10 @@ For more information, see the following resources:
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -238,9 +240,10 @@ For more information, see the following resources:
 - [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime Identifier (RID) catalog](../rid-catalog.md)
+- [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
-- [ILLInk.Tasks](../deploying/trimming/trim-self-contained.md)
+- [Trim self-contained deployments](../deploying/trimming/trim-self-contained.md)

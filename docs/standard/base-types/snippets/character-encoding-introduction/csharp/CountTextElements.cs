@@ -9,7 +9,7 @@ namespace RuneSamples
         public static void Run()
         {
             // <SnippetCallCountMethod>
-            PrintTextElementCount("á");
+            PrintTextElementCount("a");
             // Number of chars: 1
             // Number of runes: 1
             // Number of text elements: 1
@@ -41,8 +41,8 @@ namespace RuneSamples
                 }
 
                 Console.WriteLine($"Number of text elements: {textElementCount}");
-                // </SnippetCountMethod>
             }
+            // </SnippetCountMethod>
         }
     }
 }

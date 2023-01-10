@@ -5,9 +5,9 @@ ms.date: 09/25/2020
 author: gewarren
 ms.author: gewarren
 ---
-# Code style rule options
+# Code-style rule options
 
-You can define and maintain consistent *code style* in your codebase by defining .NET code style rule options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) file. These rules are surfaced by various development IDEs, such as Visual Studio, as you edit your code. For .NET projects, these rules can also be [enforced at build time](overview.md#code-style-analysis). You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
+You can define and maintain consistent *code style* in your codebase by defining .NET code-style rules and their associated options in a [configuration file](configuration-files.md). These rules are surfaced by various development IDEs, such as Visual Studio, as you edit your code. For .NET projects, these rules can also be [enforced at build time](overview.md#code-style-analysis). You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
 
 > [!TIP]
 >
@@ -21,18 +21,28 @@ Code style rules are divided into following subcategories:
 
 - [Unnecessary code rules](style-rules/unnecessary-code-rules.md)
 
-- [Formatting rules](style-rules/formatting-rules.md)
+- [Formatting rules](style-rules/ide0055.md)
 
 - [Naming rules](style-rules/naming-rules.md)
 
-Each of these subcategories defines its own syntax for specifying options. For more information about these rules and the corresponding options, see [Code style rule reference](style-rules/index.md).
+Each of these subcategories defines its own syntax for specifying options. For more information about these rules and the corresponding options, see [Code-style rule reference](style-rules/index.md).
 
 ## Example EditorConfig file
 
-To help you get started, here is an example *.editorconfig* file with the default options.
+To help you get started, here's an example *.editorconfig* file with the default options.
+
+> [!NOTE]
+> The concise syntax seen in this file, where the severity is specified after the option value for language rules, for example, `dotnet_style_readonly_field = true:suggestion`, is only fully understood by Visual Studio. Compilers don't understand the `:<severity-level>` suffix and it is ignored if you compile your code from the command line. To set severity in a way that's understood by both Visual Studio and the C# and Visual Basic compilers, set the severity on the rule that contains the option by using the following syntax:
+>
+> `dotnet_diagnostic.<rule-ID>.severity = <severity-level>`
+>
+> For more information, see [Option format](style-rules/language-rules.md#option-format).
 
 > [!TIP]
-> In Visual Studio, you can add the following default .NET .editorconfig file to your project from the **Add New Item** dialog box.
+>
+> - In Visual Studio, you can add the following default .NET .editorconfig file to your project from the **Add New Item** dialog box. For detailed steps, see [Add and remove EditorConfig files](/visualstudio/ide/create-portable-custom-editor-options?#add-and-remove-editorconfig-files).
+> - For information about using .editorconfig files in Visual Studio for Mac, see [Creating and editing a custom EditorConfig file](/visualstudio/mac/editorconfig).
+> - For Visual Studio Code, you can use the [EditorConfig for VS Code plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) to override user/workspace settings with settings found in .editorconfig files.
 
 ```ini
 ###############################
@@ -95,7 +105,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:silent
 ###############################
 # Style Definitions
 dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
-# Use PascalCase for constant fields  
+# Use PascalCase for constant fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
@@ -129,7 +139,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 csharp_prefer_braces = true:silent
 csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_prefer_simple_default_expression = true:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_prefer_local_over_anonymous_function = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
 ###############################
 # C# Formatting Rules         #

@@ -1,7 +1,7 @@
 ---
 title: Build a .NET for Apache Spark application on Windows
 description: Learn how to build your .NET for Apache Spark application on Windows.
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: how-to
 ---
@@ -9,6 +9,8 @@ ms.custom: how-to
 # Learn how to build your .NET for Apache Spark application on Windows
 
 This article teaches you how to build your .NET for Apache Spark applications on Windows.
+
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 
@@ -65,7 +67,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
         </details>
 
   6. Install **[WinUtils](https://github.com/steveloughran/winutils)**.
-     - Download `winutils.exe` binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with. For exammple, use hadoop-2.7.1 for Spark 3.0.1.
+     - Download `winutils.exe` binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with. For example, use hadoop-2.7.1 for Spark 3.0.1.
      - Save `winutils.exe` binary to a directory of your choice. For example, *C:\hadoop\bin*.
      - Set `HADOOP_HOME` to reflect the directory with winutils.exe (without bin). For instance, using command-line:
 

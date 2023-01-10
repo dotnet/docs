@@ -5,6 +5,8 @@ ms.date: 09/20/2018
 ---
 # Manage state and data in Docker applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 In most cases, you can think of a container as an instance of a process. A process doesn't maintain persistent state. While a container can write to its local storage, assuming that an instance will be around indefinitely would be like assuming that a single location in memory will be durable. You should assume that container images, like processes, have multiple instances or will eventually be killed. If they're managed with a container orchestrator, you should assume that they might get moved from one node or VM to another.
 
 The following solutions are used to manage data in Docker applications:

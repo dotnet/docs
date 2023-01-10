@@ -5,7 +5,7 @@ dev_langs:
   - "csharp"
 author: adegeo
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 07/07/2022
 ---
 
 # What's new in .NET Core 3.1
@@ -22,15 +22,16 @@ For more information about the release, see the [.NET Core 3.1 announcement](htt
 
 ## Long-term support
 
-.NET Core 3.1 is an LTS release with support from Microsoft for the next three years. It's highly recommended that you move your apps to .NET Core 3.1. The current lifecycle of other major releases is as follows:
+.NET Core 3.1 is an LTS release with support from Microsoft for three years after its release. It's highly recommended that you move your apps to the latest LTS release. See the [.NET and .NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page for a list of supported releases.
 
-| Release | Note |
-| ------- | ---- |
+| Release | End of life date |
+| ------- | ---------------- |
+| .NET Core 3.1 | End of life on December 13, 2022.     |
 | .NET Core 3.0 | End of life on March 3, 2020.     |
 | .NET Core 2.2 | End of life on December 23, 2019. |
 | .NET Core 2.1 | End of life on August 21, 2021.    |
 
-For more information, see the [.NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information, see the [.NET and .NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## macOS appHost and notarization
 

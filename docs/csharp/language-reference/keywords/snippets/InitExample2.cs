@@ -1,4 +1,4 @@
-class InitExampleAutoProperty
+class Person_InitExampleAutoProperty
 {
-    public double Hours { get; init; }
+    public int YearOfBirth { get; init; }
 }

@@ -51,10 +51,12 @@ This article details the settings you can use to configure .NET debugging and pr
 | **Environment variable** | `CORECLR_PROFILER_PATH_32` | *string-path* |
 | **Environment variable** | `CORECLR_PROFILER_PATH_64` | *string-path* |
 
-## Write perf map
+## Export perf maps
 
-- Enables or disables writing */tmp/perf-$pid.map* on Linux systems.
+- Enables or disables emitting perf maps to */tmp/perf-$pid.map*. Perf maps allow third party tools, such as perf, to identify call sites from precompiled ReadyToRun (R2R) modules.
 - If you omit this setting, writing the perf map is disabled. This is equivalent to setting the value to `0`.
+- When perf maps are disabled, not all managed callsites will be properly resolved.
+- Enabling perf maps causes a 10-20% overhead.
 
 | | Setting name | Values |
 | - | - | - |
@@ -72,4 +74,4 @@ This article details the settings you can use to configure .NET debugging and pr
 | **Environment variable** | `COMPlus_PerfMapIgnoreSignal` or `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
 
 > [!NOTE]
-> This setting is ignored if [DOTNET_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).
+> This setting is ignored if [DOTNET_PerfMapEnabled](#export-perf-maps) is omitted or set to `0` (that is, disabled).

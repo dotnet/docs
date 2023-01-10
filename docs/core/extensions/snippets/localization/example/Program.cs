@@ -37,11 +37,13 @@ ILogger logger =
 MessageService messageService =
     services.GetRequiredService<MessageService>();
 logger.LogWarning(
+    "{Msg}",
     messageService.GetGreetingMessage());
 
 ParameterizedMessageService parameterizedMessageService =
     services.GetRequiredService<ParameterizedMessageService>();
 logger.LogWarning(
+    "{Msg}",
     parameterizedMessageService.GetFormattedMessage(
         DateTime.Today.AddDays(-3), 37.63));
 

@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet add reference
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -43,8 +43,6 @@ The `dotnet add reference` command provides a convenient option to add project r
   Project-to-project (P2P) references to add. Specify one or more projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux-based systems.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 - **`-f|--framework <FRAMEWORK>`**
 

@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Use a database server running as a container
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you don't have any external dependency and simply running the `docker-compose up` command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
 
 ## SQL Server running as a container with a microservice-related database
@@ -42,10 +44,10 @@ Having SQL Server running as a container is not just useful for a demo where you
 ### Additional resources
 
 - **Run the SQL Server Docker image on Linux, Mac, or Windows** \
-  [https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker](/sql/linux/sql-server-linux-setup-docker)
+  [https://learn.microsoft.com/sql/linux/sql-server-linux-setup-docker](/sql/linux/sql-server-linux-setup-docker)
 
 - **Connect and query SQL Server on Linux with sqlcmd** \
-  [https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd](/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
+  [https://learn.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd](/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
 
 ## Seeding with test data on Web application startup
 

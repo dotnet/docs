@@ -1,7 +1,7 @@
 ---
 title: ".NET 6 breaking change: FileStream.Position updated after ReadAsync or WriteAsync completion"
 description: Learn about the .NET 6 breaking change in core .NET libraries where FileStream.Position is updated after ReadAsync or WriteAsync completion.
-ms.date: 05/05/2021
+ms.date: 10/04/2022
 ---
 # FileStream.Position updates after ReadAsync or WriteAsync completes
 
@@ -68,18 +68,9 @@ Now, when buffering is enabled (that is, the `bufferSize` argument that's passed
   set DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM=1
   ```
 
+  > [!NOTE]
+  > This switch is only available in .NET 6. It was [removed in .NET 7](../7.0/filestream-compat-switch.md).
+
 ## Affected APIs
 
 - <xref:System.IO.FileStream.Position?displayProperty=fullName>
-
-<!--
-
-### Category
-
-- Core .NET libraries
-
-### Affected APIs
-
-- `P:System.IO.FileStream.Position`
-
--->

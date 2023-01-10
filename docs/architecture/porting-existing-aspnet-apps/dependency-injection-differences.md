@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Dependency injection differences between ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Although dependency injection (DI) isn't built into ASP.NET MVC or Web API, many apps enable it by adding a NuGet package with an inversion of control (IOC) container. These are sometimes referred to as DI containers, for dependency injection (or inversion). Some of the most popular containers used in ASP.NET MVC apps include:
 
 - [Autofac](https://www.autofac.org/)

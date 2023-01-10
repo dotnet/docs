@@ -5,7 +5,7 @@ let toPigLatin (word: string) =
         | 'A' | 'E' | 'I' | 'O' | 'U' -> true
         |_ -> false
     
-    if isVowel word.[0] then
+    if isVowel word[0] then
         word + "yay"
     else
-        word.[1..] + string(word.[0]) + "ay"
+        word[1..] + string(word[0]) + "ay"

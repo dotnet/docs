@@ -1,23 +1,21 @@
 ---
 title: Deploy new version of grains
 description: Learn how to deploy new version of grains in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Deploy new version of grains
 
-In this article, you'll learn how to deploy new version of grains in .NET Orleans.
+In this article, you'll learn how to deploy new versions of grains in .NET Orleans.
 
 ### Rolling upgrade
 
-In this method you deploy newer silos directly on your environment.
-This is the simplest method, but it can be difficult to interrupt an ongoing deployment
-and to rollback.
+With the rolling upgrade methodology, you deploy newer silos directly on your environment. This is the simplest method, but it can be difficult to interrupt an ongoing deployment and rollback.
 
 Recommended configuration:
 
-- `DefaultCompatibilityStrategy` set to `BackwardCompatible`
-- `DefaultVersionSelectorStrategy` set to `AllCompatibleVersions`
+- <xref:Orleans.Configuration.GrainVersioningOptions.DefaultCompatibilityStrategy> set to <xref:Orleans.Versions.Compatibility.BackwardCompatible>.
+- <xref:Orleans.Configuration.GrainVersioningOptions.DefaultVersionSelectorStrategy> set to <xref:Orleans.Versions.Selector.AllCompatibleVersions>.
 
 ```csharp
 var silo = new HostBuilder()
@@ -40,15 +38,12 @@ on newer silos.
 
 ### Use a staging environment
 
-In this method you will need a second environment (Staging environment),
-on which you will deploy newer silos before stopping the Production environment.
-The Production and the Staging silos and clients will be __part of the same
-cluster__. It is important that silos from both environment can talk to each other.
+With the staging environment methodology, you will need a second environment (Staging environment), on which you will deploy newer silos before stopping the Production environment. The Production and the Staging silos and clients will be **part of the same cluster**. Silos from both environments must have the ability to talk to each other.
 
 Recommended configuration:
 
-- `DefaultCompatibilityStrategy` set to `BackwardCompatible`
-- `DefaultVersionSelectorStrategy` set to `MinimumVersion`
+- <xref:Orleans.Configuration.GrainVersioningOptions.DefaultCompatibilityStrategy> set to <xref:Orleans.Versions.Compatibility.BackwardCompatible>.
+- <xref:Orleans.Configuration.GrainVersioningOptions.DefaultVersionSelectorStrategy> set to <xref:Orleans.Versions.Selector.MinimumVersion>.
 
 ```csharp
 var silo = new HostBuilder()
@@ -61,7 +56,7 @@ var silo = new HostBuilder()
         })
     })
     .Build();
-    
+
 ```
 
 Suggested deployment steps:
@@ -74,7 +69,7 @@ some traffic to the V2 clients (smoke tests, targeted beta users, etc.). This wi
 create V2 activations, but since Grains are backward compatible and all silos
 are in the same cluster, no duplicate activations will be created.
 4. If the validation is successful, proceed to VIP swap.
-  If not, you can safely shutdown the Staging cluster: existing V2 activations will be
+  If not, you can safely shut down the Staging cluster: existing V2 activations will be
   destroyed and V1 activations will be created if needed.
 5. V1 activations will naturally "migrate" to V2 silos eventually. You can safely shutdown
 V1 silos.

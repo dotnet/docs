@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # What OS to target with .NET containers
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Given the diversity of operating systems supported by Docker and the differences between .NET Framework and .NET 6, you should target a specific OS and specific versions depending on the framework you are using.
 
 For Windows, you can use Windows Server Core or Windows Nano Server. These Windows versions provide different characteristics (IIS in Windows Server Core versus a self-hosted web server like Kestrel in Nano Server) that might be needed by .NET Framework or .NET 6, respectively.
@@ -18,7 +20,7 @@ In Figure 3-1, you can see the possible OS version depending on the .NET framewo
 
 **Figure 3-1.** Operating systems to target depending on versions of the .NET framework
 
-When deploying legacy .NET Framework applications you have to target Windows Server Core, compatible with legacy apps and IIS, but it has a larger image. When deploying .NET 6 applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine, and others. Also uses Kestrel, is smaller, and starts faster.
+When deploying legacy .NET Framework applications you have to target Windows Server Core, compatible with legacy apps and IIS, but it has a larger image. When deploying .NET 6 applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine, and others.
 
 You can also create your own Docker image in cases where you want to use a different Linux distro or where you want an image with versions not provided by Microsoft. For example, you might create an image with ASP.NET Core running on the traditional .NET Framework and Windows Server Core, which is a not-so-common scenario for Docker.
 

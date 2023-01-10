@@ -72,7 +72,7 @@ For more information about the different ways to express queries, see [Query syn
 
 #### Explicit and implicit typing of query variables
 
-This documentation usually provides the explicit type of the query variable in order to show the type relationship between the query variable and the [select clause](../language-reference/keywords/select-clause.md). However, you can also use the [var](../language-reference/keywords/var.md) keyword to instruct the compiler to infer the type of a query variable (or any other local variable) at compile time. For example, the query example that was shown previously in this topic can also be expressed by using implicit typing:
+This documentation usually provides the explicit type of the query variable in order to show the type relationship between the query variable and the [select clause](../language-reference/keywords/select-clause.md). However, you can also use the [var](../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword to instruct the compiler to infer the type of a query variable (or any other local variable) at compile time. For example, the query example that was shown previously in this topic can also be expressed by using implicit typing:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Basics.cs" id="basics8":::
 

@@ -1,3 +1,4 @@
+items:
 - name: Windows Communication Foundation Samples
   href: index.md
   items:
@@ -175,8 +176,6 @@
           href: object-references.md
         - name: POCO Support
           href: poco-support.md
-        - name: Usage of Serialization Binder
-          href: usage-of-serialization-binder.md
       - name: Message Contracts
         href: message-contracts.md
         items:

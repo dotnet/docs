@@ -1,9 +1,9 @@
 ---
-title: Logging providers in .NET
+title: Logging providers
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 03/28/2022
 ---
 
 # Logging providers in .NET
@@ -45,7 +45,7 @@ For additional providers, see:
 
 ## Configure a service that depends on ILogger
 
-To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there is no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
+To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there's no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
 
 ```csharp
 .ConfigureServices(services =>
@@ -78,12 +78,7 @@ The `Console` provider logs output to the console.
 
 ### Debug
 
-The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, which are implementations of the `ILogger` interface.
-
-On Linux, the `Debug` provider log location is distribution-dependent and may be one of the following:
-
-- */var/log/message*
-- */var/log/syslog*
+The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method and only when the debugger is attached. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, which are implementations of the `ILogger` interface.
 
 ### Event Source
 
@@ -148,41 +143,34 @@ The provider package isn't included in the runtime libraries. To use the provide
 To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions> and <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions>, as shown in the following example:
 
 ```csharp
-class Program
-{
-    static async Task Main(string[] args)
-    {
-        using IHost host = CreateHostBuilder(args).Build();
+using Microsoft.Extensions.Logging.AzureAppServices;
 
-        // Application code should start here.
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureLogging(logging =>
+        logging.AddAzureWebAppDiagnostics())
+    .ConfigureServices(services =>
+        services.Configure<AzureFileLoggerOptions>(options =>
+        {
+            options.FileName = "azure-diagnostics-";
+            options.FileSizeLimit = 50 * 1024;
+            options.RetainedFileCountLimit = 5;
+        })
+        .Configure<AzureBlobLoggerOptions>(options =>
+        {
+            options.BlobName = "log.txt";
+        })).Build();
 
-        await host.RunAsync();
-    }
+// Application code should start here.
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-                logging.AddAzureWebAppDiagnostics())
-            .ConfigureServices(services =>
-                services.Configure<AzureFileLoggerOptions>(options =>
-                {
-                    options.FileName = "azure-diagnostics-";
-                    options.FileSizeLimit = 50 * 1024;
-                    options.RetainedFileCountLimit = 5;
-                })
-                .Configure<AzureBlobLoggerOptions>(options =>
-                {
-                    options.BlobName = "log.txt";
-                }));
-}
+await host.RunAsync();
 ```
 
 When deployed to Azure App Service, the app uses the settings in the [App Service logs](/azure/app-service/web-sites-enable-diagnostic-log/#enable-application-logging-windows) section of the **App Service** page of the Azure portal. When the following settings are updated, the changes take effect immediately without requiring a restart or redeployment of the app.
 
-- **Application Logging (Filesystem)**
-- **Application Logging (Blob)**
+The default location for log files is in the *D:\\home\\LogFiles\\Application* folder. Additional defaults vary by provider:
 
-The default location for log files is in the *D:\\home\\LogFiles\\Application* folder, and the default file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2. The default blob name is *{app-name}{timestamp}/yyyy/mm/dd/hh/{guid}-applicationLog.txt*.
+- **Application Logging (Filesystem)**: The default filesystem file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2.
+- **Application Logging (Blob)**: The default blob name is *{app-name}/yyyy/mm/dd/hh/{guid}_applicationLog.txt*.
 
 This provider only logs when the project runs in the Azure environment.
 
@@ -211,7 +199,7 @@ For more information, see the following resources:
 - [Application Insights overview](/azure/application-insights/app-insights-overview)
 - [ApplicationInsightsLoggerProvider for .NET Core ILogger logs](/azure/azure-monitor/app/ilogger) - Start here if you want to implement the logging provider without the rest of Application Insights telemetry.
 - [Application Insights logging adapters](/azure/azure-monitor/app/asp-net-trace-logs).
-- [Install, configure, and initialize the Application Insights SDK](/learn/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
+- [Install, configure, and initialize the Application Insights SDK](/training/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
 
 ## Logging provider design considerations
 
@@ -229,7 +217,7 @@ For more information, see [Implement a custom logging provider in .NET](custom-l
 Here are some third-party logging frameworks that work with various .NET workloads:
 
 - [elmah.io](https://elmah.io) ([GitHub repo](https://github.com/elmahio/Elmah.Io.Extensions.Logging))
-- [Gelf](https://docs.graylog.org/en/2.3/pages/gelf.html) ([GitHub repo](https://github.com/mattwcole/gelf-extensions-logging))
+- [Gelf](https://go2docs.graylog.org/5-0/getting_in_log_data/ingest_gelf.html) ([GitHub repo](https://github.com/mattwcole/gelf-extensions-logging))
 - [JSNLog](http://jsnlog.com) ([GitHub repo](https://github.com/mperdeck/jsnlog))
 - [KissLog.net](https://kisslog.net) ([GitHub repo](https://github.com/catalingavan/KissLog-net))
 - [Log4Net](https://logging.apache.org/log4net) ([GitHub repo](https://github.com/apache/logging-log4net))

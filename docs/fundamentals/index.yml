@@ -50,6 +50,8 @@ landingContent:
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
+          - text: What's new in .NET 7
+            url: ../core/whats-new/dotnet-7.md
           - text: What's new in .NET 6
             url: ../core/whats-new/dotnet-6.md
           - text: What's new in .NET 5
@@ -152,8 +154,8 @@ landingContent:
             url: ../core/extensions/workers.md
           - text: Caching in .NET
             url: ../core/extensions/caching.md
-          - text: HTTP with .NET
-            url: ../core/extensions/http-client.md
+          - text: HTTP in .NET
+            url: networking/http/httpclient-guidelines.md
           - text: Localization in .NET
             url: ../core/extensions/localization.md
           - text: File globbing in .NET
@@ -193,15 +195,15 @@ landingContent:
       - linkListType: concept
         links:
           - text: Serialize and deserialize JSON
-            url: ../standard/serialization/system-text-json-overview.md
+            url: ../standard/serialization/system-text-json/overview.md
       - linkListType: how-to-guide
         links:
           - text: Serialize and deserialize JSON using C#
-            url: ../standard/serialization/system-text-json-how-to.md
+            url: ../standard/serialization/system-text-json/how-to.md
           - text: Migrate from Newtonsoft.Json to System.Text.Json
-            url: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+            url: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
           - text: Write custom converters for JSON serialization
-            url: ../standard/serialization/system-text-json-converters-how-to.md
+            url: ../standard/serialization/system-text-json/converters-how-to.md
       - linkListType: sample
         links:
           - text: Examples of XML serialization

@@ -31,10 +31,10 @@ HRESULT DynamicMethodJITCompilationFinished(
 `functionId`  
 [in] The identifier of the in-memory function for which JIT compilation is started.
 
-`hrStatus`
+`hrStatus`\
 [in] A value that indicates whether the JIT compilation was successful.
 
-`fIsSafeToBlock`
+`fIsSafeToBlock`\
 [in] `true` to indicate that blocking may cause the runtime to wait for the calling thread to return from this callback; `false` to indicate that blocking will not affect the operation of the runtime.  
 
 ## Remarks  

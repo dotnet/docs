@@ -21,7 +21,7 @@ topic_type:
 
 Allocates a new array of the specified element type and dimensions.  
   
- This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) instead.  
+ This method is obsolete in .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) instead.  
   
 ## Syntax  
   
@@ -44,7 +44,7 @@ HRESULT NewArray (
  [in] A pointer to a ICorDebugClass object that specifies the class of the element. This value may be null if the element type is a primitive type.  
   
  `rank`  
- [in] The number of dimensions of the array. In the .NET Framework 2.0, this value must be 1.  
+ [in] The number of dimensions of the array. In .NET Framework 2.0, this value must be 1.  
   
  `dims`  
  [in] The size, in bytes, of each dimension of the array.  

@@ -1,7 +1,7 @@
 ---
 title: Startup tasks
 description: Learn how to configure and manage startup tasks in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Startup tasks
@@ -19,7 +19,7 @@ This fail-fast approach is the standard way that Orleans handles silo start-up i
 
 ## Configure startup tasks
 
-Startup tasks can be configured using the `ISiloHostBuilder` either by registering a delegate to be invoked during startup or by registering an implementation of `IStartupTask`.
+Startup tasks can be configured using the <xref:Orleans.Hosting.ISiloHostBuilder> either by registering a delegate to be invoked during startup or by registering an implementation of <xref:Orleans.Runtime.IStartupTask>.
 
 ### Register a delegate
 

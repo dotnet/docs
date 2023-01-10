@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Security in gRPC applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In any real-world scenario, securing applications and services are essential. Security covers three key areas:
 
 * Encrypting network traffic to prevent malicious hackers from intercepting it.

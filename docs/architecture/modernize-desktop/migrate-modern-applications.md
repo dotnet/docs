@@ -6,6 +6,8 @@ ms.date: 10/25/2021
 
 # Migrating Modern Desktop applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In this chapter, we're exploring the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
 If you just want to update your application to the latest .NET version using a tool and not get into the details of what's happening behind the scenes, feel free to skip this chapter and find step-by-step instructions in the [Example of migrating to .NET](example-migration.md) chapter.
@@ -162,7 +164,7 @@ Second, you'll need to regenerate the service client with the new tools present 
 
 After the migration, if you find that there are libraries you need that aren't present on .NET, you can add a reference to the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) NuGet package and see if the missing functions are there.
 
-If you're using the <xref:System.Net.WebRequest> class to perform web service calls, you may find some differences on .NET. The recommendation is to use the System.Net.Http.HttpClient instead.
+If you're using the <xref:System.Net.WebRequest> class to perform web service calls, you may find some differences on .NET. The recommendation is to use <xref:System.Net.Http.HttpClient> instead.
 
 ## Consuming a COM Object
 
@@ -190,7 +192,7 @@ Several technologies available to .NET Framework libraries aren't available for 
 The [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md) provides access to APIs that were previously available only for .NET Framework. It can be used on .NET Core and .NET Standard projects.
 
 For more information on API compatibility, you can find documentation about breaking changes and deprecated/legacy APIs at
-[https://docs.microsoft.com/dotnet/core/compatibility/fx-core](../../core/compatibility/fx-core.md).
+[https://learn.microsoft.com/dotnet/core/compatibility/fx-core](../../core/compatibility/fx-core.md).
 
 ### AppDomains
 
@@ -210,13 +212,13 @@ Across machines, use a network-based solution as an alternative. Preferably, use
 
 Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, isn't supported on .NET.
 
-Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts for running processes with the minimum set of privileges.
+Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the minimum set of privileges.
 
 ### Security Transparency
 
 Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is no longer supported as a security boundary.
 
-Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
+Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts, for running processes with the least set of privileges.
 
 >[!div class="step-by-step"]
 >[Previous](whats-new-dotnet.md )

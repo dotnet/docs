@@ -7,28 +7,31 @@ using System.Xml;
 public class VerifyXML
 {
 
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         try
         {
             // Create a new CspParameters object to specify
             // a key container.
             // <snippet2>
-            CspParameters cspParams = new CspParameters();
-            cspParams.KeyContainerName = "XML_DSIG_RSA_KEY";
+            CspParameters cspParams = new()
+            {
+                KeyContainerName = "XML_DSIG_RSA_KEY"
+            };
             // </snippet2>
 
             // Create a new RSA signing key and save it in the container.
             // <snippet3>
-            RSACryptoServiceProvider rsaKey = new RSACryptoServiceProvider(cspParams);
+            RSACryptoServiceProvider rsaKey = new(cspParams);
             // </snippet3>
 
             // Create a new XML document.
             // <snippet4>
-            XmlDocument xmlDoc = new XmlDocument();
-
-            // Load an XML file into the XmlDocument object.
-            xmlDoc.PreserveWhitespace = true;
+            XmlDocument xmlDoc = new()
+            {
+                // Load an XML file into the XmlDocument object.
+                PreserveWhitespace = true
+            };
             xmlDoc.Load("test.xml");
             // </snippet4>
 
@@ -55,18 +58,18 @@ public class VerifyXML
 
     // Verify the signature of an XML file against an asymmetric
     // algorithm and return the result.
-    public static Boolean VerifyXml(XmlDocument xmlDoc, RSA key)
+    public static bool VerifyXml(XmlDocument xmlDoc, RSA key)
     {
         // Check arguments.
         if (xmlDoc == null)
-             throw new ArgumentException("xmlDoc");
+             throw new ArgumentException(null, nameof(xmlDoc));
         if (key == null)
-            throw new ArgumentException("key");
+            throw new ArgumentException(null, nameof(key));
 
         // Create a new SignedXml object and pass it
         // the XML document class.
         // <snippet5>
-        SignedXml signedXml = new SignedXml(xmlDoc);
+        SignedXml signedXml = new(xmlDoc);
         // </snippet5>
 
         // Find the "Signature" node and create a new

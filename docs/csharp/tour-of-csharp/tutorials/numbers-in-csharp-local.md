@@ -1,16 +1,21 @@
 ---
 title: Numbers in C# - Introduction to C# tutorial
 description: Learn C# by exploring numeric types, their uses, properties, and methods.
-ms.date: 02/05/2021
+ms.date: 03/23/2022
 ---
 
-# Manipulate integral and floating point numbers in C\#
+# How to use integer and floating point numbers in C\#
 
-This tutorial teaches you about the numeric types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+This tutorial teaches you about the numeric types in C#. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+
+> [!TIP]
+> To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac or Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
+
+If you don't want to set up a local environment, see the [interactive-in-browser version of this tutorial](numbers-in-csharp.yml).
 
 ## Explore integer math
 
@@ -60,7 +65,7 @@ Run this code by typing `dotnet run` in your command window.
 You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
 > [!TIP]
-> As you explore C# (or any programming language), you'll make mistakes when you write code. The **compiler** will find those errors and report them to you. When the contains error messages, look closely at the example code and the code in your window to see what to fix. That exercise will help you learn the structure of C# code.
+> As you explore C# (or any programming language), you'll make mistakes when you write code. The **compiler** will find those errors and report them to you. When the output contains error messages, look closely at the example code and the code in your window to see what to fix. That exercise will help you learn the structure of C# code.
 
 You've finished the first step. Before you start the next section, let's move the current code into a separate *method*. A method is a series of statements grouped together and given a name. You call a method by writing the method's name followed by `()`. Organizing your code into methods makes it easier to start working with a new example. When you finish, your code should look like this:
 

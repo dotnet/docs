@@ -1,7 +1,7 @@
 ---
 title: "Serialization guidelines"
-description: This document provides guidelines to consider when designing an API to be serialized and a summary of the three main serialization technologies .NET offers.
-ms.date: "03/30/2017"
+description: This document provides guidelines to consider when designing an API to be serialized and a summary of the different serialization technologies .NET offers.
+ms.date: 11/15/2022
 dev_langs:
   - "csharp"
   - "vb"
@@ -16,13 +16,14 @@ This article lists the guidelines to consider when designing an API to be serial
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
- .NET offers three main serialization technologies that are optimized for various serialization scenarios. The following table lists these technologies and the main .NET types related to these technologies.
+ .NET offers the following serialization technologies that are optimized for various serialization scenarios. The following table lists these technologies and the main .NET types related to these technologies.
 
-|Technology|Relevant Classes|Notes|
-|----------------|----------------------|-----------|
-|Data Contract Serialization|<xref:System.Runtime.Serialization.DataContractAttribute><br /><br /> <xref:System.Runtime.Serialization.DataMemberAttribute><br /><br /> <xref:System.Runtime.Serialization.DataContractSerializer><br /><br /> <xref:System.Runtime.Serialization.NetDataContractSerializer><br /><br /> <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer><br /><br /> <xref:System.Runtime.Serialization.ISerializable>|General persistence<br /><br /> Web Services<br /><br /> JSON|
-|XML Serialization|<xref:System.Xml.Serialization.XmlSerializer>|XML format <br />with full control|
-|Runtime -Serialization (Binary and SOAP)|<xref:System.SerializableAttribute><br /><br /> <xref:System.Runtime.Serialization.ISerializable><br /><br /> <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter><br /><br /> <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>|.NET Remoting|
+| Technology | Relevant classes | Notes |
+|------------|------------------|-------|
+| JSON serialization | <xref:System.Text.Json.JsonSerializer> | Introduced in .NET Core 3.0, this is the modern way to serialize to and from JSON. For more information, see [JSON serialization and deserialization](system-text-json/overview.md). |
+| Data contract serialization |<xref:System.Runtime.Serialization.DataContractAttribute><br /><xref:System.Runtime.Serialization.DataMemberAttribute><br /><xref:System.Runtime.Serialization.DataContractSerializer><br /><xref:System.Runtime.Serialization.NetDataContractSerializer><br /><xref:System.Runtime.Serialization.Json.DataContractJsonSerializer><br /><xref:System.Runtime.Serialization.ISerializable>|General persistence<br />Web Services<br />JSON|
+| XML serialization |<xref:System.Xml.Serialization.XmlSerializer>|XML format <br />with full control|
+| Runtime serialization (binary and SOAP) |<xref:System.SerializableAttribute><br /><xref:System.Runtime.Serialization.ISerializable><br /><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter><br /><xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>| .NET Remoting<br />**Warning**: Binary serialization can be dangerous. For more information, see [BinaryFormatter security guide](binaryformatter-security-guide.md). |
 
  When you design new types, you should decide which, if any, of these technologies those types need to support. The following guidelines describe how to make that choice and how to provide such support. These guidelines are not meant to help you choose which serialization technology you should use in the implementation of your application or library. Such guidelines are not directly related to API design and thus are not within the scope of this topic.
 
@@ -133,11 +134,6 @@ This article lists the guidelines to consider when designing an API to be serial
      [!code-csharp[SerializationGuidelines#10](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#10)]
      [!code-vb[SerializationGuidelines#10](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#10)]
 
-5. DO apply a link demand to **ISerializable.GetObjectData** implementation. This ensures that only fully trusted core and the runtime serializer have access to the member.
-
-     [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
-     [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]
-
 ## See also
 
 - [Using Data Contracts](../../framework/wcf/feature-details/using-data-contracts.md)
@@ -146,4 +142,3 @@ This article lists the guidelines to consider when designing an API to be serial
 - [Binary Serialization](binary-serialization.md)
 - [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)

@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 ---
 # Make secure .NET Microservices and Web Applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 There are so many aspects about security in microservices and web applications that the topic could easily take several books like this one. So, in this section, we'll focus on authentication, authorization, and application secrets.
 
 ## Implement authentication in .NET microservices and web applications
@@ -300,16 +302,16 @@ The JWT bearer authentication middleware can also support more advanced scenario
 ## Additional resources
 
 - **Sharing cookies between applications** \
-  [https://docs.microsoft.com/aspnet/core/security/cookie-sharing](/aspnet/core/security/cookie-sharing)
+  [https://learn.microsoft.com/aspnet/core/security/cookie-sharing](/aspnet/core/security/cookie-sharing)
 
 - **Introduction to Identity** \
-  [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
+  [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 
 - **Rick Anderson. Two-factor authentication with SMS** \
-  [https://docs.microsoft.com/aspnet/core/security/authentication/2fa](/aspnet/core/security/authentication/2fa)
+  [https://learn.microsoft.com/aspnet/core/security/authentication/2fa](/aspnet/core/security/authentication/2fa)
 
 - **Enabling authentication using Facebook, Google and other external providers** \
-  [https://docs.microsoft.com/aspnet/core/security/authentication/social/](/aspnet/core/security/authentication/social/)
+  [https://learn.microsoft.com/aspnet/core/security/authentication/social/](/aspnet/core/security/authentication/social/)
 
 - **Michell Anicas. An Introduction to OAuth 2** \
   <https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2>

@@ -3,7 +3,7 @@ title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/17/2021
+ms.date: 04/20/2022
 ms.topic: tutorial
 ---
 

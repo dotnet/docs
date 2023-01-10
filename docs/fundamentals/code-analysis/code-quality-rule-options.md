@@ -1,12 +1,21 @@
 ---
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
-ms.date: 09/24/2020
+ms.date: 12/07/2022
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options
 
 The *code quality* rules have additional configuration options, besides just [configuring their severity](configuration-options.md#severity-level). For example, each code quality analyzer can be configured to only apply to specific parts of your codebase. You specify these options by adding key-value pairs to the same [EditorConfig](https://editorconfig.org) file where you specify rule severities and general editor preferences.
+
+> [!NOTE]
+> This article does not detail how to configure a rule's severity. The *.editorconfig* option to set a rule's severity has a different prefix (`dotnet_diagnostic`) to the options described here (`dotnet_code_quality`). In addition, the options described here pertain to code quality rules only, whereas the severity option applies to code style rules as well. As a quick reference, you can configure a rule's severity using the following option syntax:
+>
+> ```ini
+> dotnet_diagnostic.<rule ID>.severity = <severity value>
+> ```
+>
+> However, for detailed information about configuring rule severity, see [Severity level](configuration-options.md#severity-level).
 
 ## Option scopes
 
@@ -34,20 +43,20 @@ The following table lists the available values for `<RuleCategory>`.
 
 :::row:::
     :::column:::
-        Design
-        Documentation
-        Globalization
+        Design\
+        Documentation\
+        Globalization\
         Interoperability
     :::column-end:::
     :::column:::
-        Maintainability
-        Naming
-        Performance
+        Maintainability\
+        Naming\
+        Performance\
         SingleFile
     :::column-end:::
     :::column:::
-        Reliability
-        Security
+        Reliability\
+        Security\
         Usage
     :::column-end:::
 :::row-end:::
@@ -147,16 +156,22 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of types, such that the type and all its derived types are excluded for analysis | Allowed symbol name formats (separated by \|):<br/> - Type name only (includes all types with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `T:` prefix | None | [CA1303](quality-rules/ca1303.md) |
+| Names of types, such that the type and all its derived types are excluded for analysis | Allowed symbol name formats (separated by \|):<br/> - Type name only (includes all types with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `T:` prefix | None | [CA1001](quality-rules/ca1001.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md)] [CA1056](quality-rules/ca1056.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md)<br/>[CA1304](quality-rules/ca1304.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md)<br/>[CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md)<br/>[CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md)<br/>[CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md)<br/>[CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md)<br/>[CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md)<br/>[CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md)<br/>[CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md)<br/>[CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md)<br/>[CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) [CA5399](quality-rules/ca5399.md) [CA5400](quality-rules/ca5400.md) |
 
 ### excluded_symbol_names
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of symbols that are excluded for analysis | Allowed symbol name formats (separated by \|):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1001](quality-rules/ca1001.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md)<br/>[CA1304](quality-rules/ca1304.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md)<br/>[CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md)<br/>[CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md)<br/>[CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md)<br/>[CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md)<br/>[CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md)<br/>[CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md)<br/>[CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md)<br/>[CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md)<br/>[CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) |
+| Names of symbols that are excluded for analysis | Allowed symbol name formats (separated by \|):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1001](quality-rules/ca1001.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md)] [CA1056](quality-rules/ca1056.md) [CA1062](quality-rules/ca1062.md) [CA1068](quality-rules/ca1068.md) [CA1303](quality-rules/ca1303.md)<br/>[CA1304](quality-rules/ca1304.md) [CA1508](quality-rules/ca1508.md) [CA2000](quality-rules/ca2000.md) [CA2100](quality-rules/ca2100.md)<br/>[CA2301](quality-rules/ca2301.md) [CA2302](quality-rules/ca2302.md) [CA2311](quality-rules/ca2311.md) [CA2312](quality-rules/ca2312.md)<br/>[CA2321](quality-rules/ca2321.md) [CA2322](quality-rules/ca2322.md) [CA2327](quality-rules/ca2327.md) [CA2328](quality-rules/ca2328.md)<br/>[CA2329](quality-rules/ca2329.md) [CA2330](quality-rules/ca2330.md) [CA3001](quality-rules/ca3001.md) [CA3002](quality-rules/ca3002.md)<br/>[CA3003](quality-rules/ca3003.md) [CA3004](quality-rules/ca3004.md) [CA3005](quality-rules/ca3005.md) [CA3006](quality-rules/ca3006.md)<br/>[CA3007](quality-rules/ca3007.md) [CA3008](quality-rules/ca3008.md) [CA3009](quality-rules/ca3009.md) [CA3010](quality-rules/ca3010.md)<br/>[CA3011](quality-rules/ca3011.md) [CA3012](quality-rules/ca3012.md) [CA5361](quality-rules/ca5361.md) [CA5376](quality-rules/ca5376.md)<br/>[CA5377](quality-rules/ca5377.md) [CA5378](quality-rules/ca5378.md) [CA5380](quality-rules/ca5380.md) [CA5381](quality-rules/ca5381.md)<br/>[CA5382](quality-rules/ca5382.md) [CA5383](quality-rules/ca5383.md) [CA5384](quality-rules/ca5384.md) [CA5387](quality-rules/ca5387.md)<br/>[CA5388](quality-rules/ca5388.md) [CA5389](quality-rules/ca5389.md) [CA5390](quality-rules/ca5390.md) [CA5399](quality-rules/ca5399.md) [CA5400](quality-rules/ca5400.md) |
 
 ### disallowed_symbol_names
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
 | Names of symbols that are disallowed in the context of the analysis | Allowed symbol name formats (separated by \|):<br/> - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format). Each symbol name requires a symbol kind prefix, such as `M:` prefix for methods, `T:` prefix for types, and `N:` prefix for namespaces.<br/> - `.ctor` for constructors and `.cctor` for static constructors | None | [CA1031](quality-rules/ca1031.md) |
+
+### exclude_ordefault_methods
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Excludes FirstOrDefault and LastOrDefault methods from analysis. | `true` or `false` | `false` | [CA1826](quality-rules/ca1826.md) |

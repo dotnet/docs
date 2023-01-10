@@ -5,6 +5,8 @@ ms.date: 09/20/2018
 ---
 # Logical architecture versus physical architecture
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 It's useful at this point to stop and discuss the distinction between logical architecture and physical architecture, and how this applies to the design of microservice-based applications.
 
 To begin, building microservices doesn't require the use of any specific technology. For instance, Docker containers aren't mandatory to create a microservice-based architecture. Those microservices could also be run as plain processes. Microservices is a logical architecture.

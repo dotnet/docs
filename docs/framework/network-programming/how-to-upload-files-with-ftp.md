@@ -1,7 +1,7 @@
 ---
 title: "How to: Upload files with FTP"
 description: "This article shows a sample of how to upload a file to an FTP server."
-ms.date: "06/26/2018"
+ms.date: 05/13/2022
 dev_langs: 
   - "csharp"
   - "vb"
@@ -11,12 +11,16 @@ ms.assetid: e40f17c5-dd12-4c62-9dbf-00ab491382dc
 
 This sample shows how to upload a file to an FTP server.
 
+> [!NOTE]
+> This article is specific to projects that target .NET Framework. For projects that target .NET 6 and later versions, [FTP is no longer supported](../../core/compatibility/networking/6.0/webrequest-deprecated.md).
+
 ## Example
 
 ```csharp
 using System;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace Examples.System.Net
 {
@@ -32,12 +36,17 @@ namespace Examples.System.Net
             request.Credentials = new NetworkCredential("anonymous", "janeDoe@contoso.com");
 
             // Copy the contents of the file to the request stream.
-            await using FileStream fileStream = File.Open("testfile.txt", FileMode.Open, FileAccess.Read);
-            await using Stream requestStream = request.GetRequestStream();
-            await fileStream.CopyToAsync(requestStream);
-
-            using FtpWebResponse response = (FtpWebResponse)request.GetResponse();
-            Console.WriteLine($"Upload File Complete, status {response.StatusDescription}");
+            using (FileStream fileStream = File.Open("testfile.txt", FileMode.Open, FileAccess.Read))
+            {
+                using (Stream requestStream = request.GetRequestStream())
+                {
+                    await fileStream.CopyToAsync(requestStream);
+                    using (FtpWebResponse response = (FtpWebResponse)request.GetResponse())
+                    {
+                        Console.WriteLine($"Upload File Complete, status {response.StatusDescription}");
+                    }
+                }
+           }
         }
     }
 }

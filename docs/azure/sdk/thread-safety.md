@@ -2,7 +2,6 @@
 title: Thread safety with the Azure SDK for .NET
 description: Learn about thread safety in Azure SDK client objects and how this design impacts client lifetime management.
 ms.date: 05/24/2021
-ms.author: pakrym
 author: pakrym
 ---
 

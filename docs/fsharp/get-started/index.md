@@ -17,11 +17,11 @@ There are multiple guides on how to install and use F# for the first time on you
 | macOS | [Get started with VS for Mac](get-started-with-visual-studio-for-mac.md) | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
 | Linux | N/A | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
 
-In general, there is no specific that is better than the rest. We recommend trying all ways to use F# on your machine to see what you like the best!
+In general, there is no specific way that is better than the rest. We recommend trying all ways to use F# on your machine to see what you like the best!
 
 ## Get started online
 
 If you'd rather not install F# and .NET on your machine, you can also get started with F# in the browser:
 
-* [Introduction to F# on Binder](https://mybinder.org/v2/gh/dotnet/interactive/main?urlpath=lab) is a [Jupyter notebook](https://jupyter.org/) on hosted via the free [Binder](https://mybinder.org/) service. No sign-up needed!
+* [Introduction to F# on Binder](https://mybinder.org/v2/gh/dotnet/interactive/main?urlpath=lab) is a [Jupyter notebook](https://jupyter.org/) hosted via the free [Binder](https://mybinder.org/) service. No sign-up needed!
 * [The Fable REPL](https://fable.io/repl/) is an interactive, in-browser REPL that uses [Fable](https://fable.io/) to translate F# code into JavaScript. Check out the numerous samples that range from F# basics to a fully fledged video game all executing in your browser!

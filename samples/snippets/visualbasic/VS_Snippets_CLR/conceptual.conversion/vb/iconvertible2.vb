@@ -227,7 +227,7 @@ Public Class TemperatureFahrenheit : Inherits Temperature : Implements IConverti
 End Class
 ' </Snippet10>
 
-Module Example
+Module ConvertibleExampleTwo
     Public Sub Main()
         ' <Snippet11>
         Dim tempC1 As New TemperatureCelsius(0)

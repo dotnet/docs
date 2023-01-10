@@ -1,10 +1,8 @@
 ﻿
+Imports System.Security.Cryptography.X509Certificates
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
-Imports System.ServiceModel.Channels
-Imports System.Security.Cryptography.X509Certificates
-Imports System.Runtime.Serialization
-Imports ClientCalculator
+Imports Project.ClientCalculator
 
 Namespace BasicAuthentication
 
@@ -625,7 +623,7 @@ Namespace SecuredUsingMessageSecurityWithInteroperableCertClient
             ' Create the binding. 
             Dim binding As New WSHttpBinding()
             binding.Security.Mode = SecurityMode.Message
-            binding.Security.Message.ClientCredentialType = _
+            binding.Security.Message.ClientCredentialType =
             MessageCredentialType.Certificate
             binding.Security.Message.NegotiateServiceCredential = False
             binding.Security.Message.EstablishSecurityContext = False
@@ -690,9 +688,9 @@ Namespace SecuredUsingMessageSecurityWithInteroperableCertClient
 End Namespace
 
 Namespace ServiceModel
-    <ServiceContract()> _
+    <ServiceContract()>
     Interface ICalculator
-        <OperationContract()> _
+        <OperationContract()>
         Function Add(ByVal a As Double, ByVal b As Double) As Double
     End Interface
 
@@ -721,16 +719,16 @@ Namespace ServiceModel
 End Namespace 'ServiceModel
 
 Namespace ClientCalculator
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), System.ServiceModel.ServiceContractAttribute(ConfigurationName:="ICalculator")> _
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), System.ServiceModel.ServiceContractAttribute(ConfigurationName:="ICalculator")>
     Public Interface ICalculator
 
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ICalculator/Add", ReplyAction:="http://tempuri.org/ICalculator/AddResponse")> _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ICalculator/Add", ReplyAction:="http://tempuri.org/ICalculator/AddResponse")>
         Function Add(ByVal a As Double, ByVal b As Double) As Double
     End Interface 'ICalculator
 
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")>
     Public Interface ICalculatorChannel
-        : Inherits ICalculator, System.ServiceModel.IClientChannel
+        Inherits ICalculator, System.ServiceModel.IClientChannel
     End Interface 'ICalculatorChannel
 End Namespace 'ClientCalculator
 

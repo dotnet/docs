@@ -5,6 +5,8 @@ ms.date: 01/30/2020
 ---
 # Implement resilient applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Your microservice and cloud-based applications must embrace the partial failures that will certainly occur eventually. You must design your application to be resilient to those partial failures.*
 
 Resiliency is the ability to recover from failures and continue to function. It isn't about avoiding failures but accepting the fact that failures will happen and responding to them in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state after a failure.

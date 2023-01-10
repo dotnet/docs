@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Protobuf messages
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 This section covers how to declare Protocol Buffer (Protobuf) messages in `.proto` files. It explains the fundamental concepts of field numbers and types, and it looks at the C# code that the `protoc` compiler generates.
 
 The rest of the chapter will look in more detail at how different types of data are represented in Protobuf.

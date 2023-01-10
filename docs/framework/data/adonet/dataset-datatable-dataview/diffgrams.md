@@ -79,13 +79,13 @@ A DiffGram is an XML format that identifies current and original versions of dat
   
  The following table describes the DiffGram annotations that are defined in the DiffGram namespace **urn:schemas-microsoft-com:xml-diffgram-v1**.  
   
-|Annotation|Description|  
-|----------------|-----------------|  
-|**id**|Used to pair the elements in the **\<diffgr:before>** and **\<diffgr:errors>** blocks to elements in the **\<** ***DataInstance*** **>** block. Values with the **diffgr:id** annotation are in the form *[TableName][RowIdentifier]*. For example: `<Customers diffgr:id="Customers1">`.|  
-|**parentId**|Identifies which element from the **\<** ***DataInstance*** **>** block is the parent element of the current element. Values with the **diffgr:parentId** annotation are in the form *[TableName][RowIdentifier]*. For example: `<Orders diffgr:parentId="Customers1">`.|  
-|**hasChanges**|Identifies a row in the **\<** ***DataInstance*** **>** block as modified. The **hasChanges** annotation can have one of the following two values:<br /><br /> **inserted**<br /> Identifies an **Added** row.<br /><br /> **modified**<br /> Identifies a **Modified** row that contains an **Original** row version in the **\<diffgr:before>** block. Note that **Deleted** rows will have an **Original** row version in the **\<diffgr:before>** block, but there will be no annotated element in the **\<** ***DataInstance*** **>** block.|  
-|**hasErrors**|Identifies a row in the **\<** ***DataInstance*** **>** block with a **RowError**. The error element is placed in the **\<diffgr:errors>** block.|  
-|**Error**|Contains the text of the **RowError** for a particular element in the **\<diffgr:errors>** block.|  
+| Annotation     | Description |
+|----------------|-------------|
+| **id**         | Used to pair the elements in the **\<diffgr:before>** and **\<diffgr:errors>** blocks to elements in the **\<** ***DataInstance*** **>** block. Values with the **diffgr:id** annotation are in the form `[TableName][RowIdentifier]`. For example: `<Customers diffgr:id="Customers1">`. |
+| **parentId**   | Identifies which element from the **\<** ***DataInstance*** **>** block is the parent element of the current element. Values with the **diffgr:parentId** annotation are in the form `[TableName][RowIdentifier]`. For example: `<Orders diffgr:parentId="Customers1">`. |
+| **hasChanges** | Identifies a row in the **\<** ***DataInstance*** **>** block as modified. The **hasChanges** annotation can have one of the following two values:<br /><br /> **inserted**<br /> Identifies an **Added** row.<br /><br /> **modified**<br /> Identifies a **Modified** row that contains an **Original** row version in the **\<diffgr:before>** block. Note that **Deleted** rows will have an **Original** row version in the **\<diffgr:before>** block, but there will be no annotated element in the **\<** ***DataInstance*** **>** block. |
+| **hasErrors**  | Identifies a row in the **\<** ***DataInstance*** **>** block with a **RowError**. The error element is placed in the **\<diffgr:errors>** block. |
+| **Error**      | Contains the text of the **RowError** for a particular element in the **\<diffgr:errors>** block. |
   
  The <xref:System.Data.DataSet> includes additional annotations when reading or writing its contents as a DiffGram. The following table describes these additional annotations, which are defined in the namespace **urn:schemas-microsoft-com:xml-msdata**.  
   

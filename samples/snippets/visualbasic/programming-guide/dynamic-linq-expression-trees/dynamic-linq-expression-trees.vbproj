@@ -3,13 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>dynamic_linq_expression_trees</RootNamespace>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExpressionTreeToString" Version="3.2.54" />
-    <PackageReference Include="LinqKit.Core" Version="1.1.23" />
-    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.7" />
+    <PackageReference Include="ExpressionTreeToString" Version="3.4.71" />
+    <PackageReference Include="LinqKit.Core" Version="1.2.3" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.24" />
   </ItemGroup>
 
   <ItemGroup>

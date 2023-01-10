@@ -4,7 +4,6 @@ description: Azure has over 100 services, but this article focuses on the ~8 or 
 ms.date: 06/01/2021
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
-ms.author: daberry
 author: DavidCBerry13
 ---
 

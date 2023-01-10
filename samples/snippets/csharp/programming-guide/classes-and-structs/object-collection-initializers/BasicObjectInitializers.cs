@@ -94,14 +94,14 @@ namespace object_collection_initializers
             };
             // </SnippetListInitializer>
 
-            // <SnippetListInitialerWithNull>
+            // <SnippetListInitializerWithNull>
             List<Cat> moreCats = new List<Cat>
             {
                 new Cat{ Name = "Furrytail", Age=5 },
                 new Cat{ Name = "Peaches", Age=4 },
                 null
             };
-            // </SnippetListInitialerWithNull>
+            // </SnippetListInitializerWithNull>
 
             // <SnippetDictionaryIndexerInitializer>
             var numbers = new Dictionary<int, string>

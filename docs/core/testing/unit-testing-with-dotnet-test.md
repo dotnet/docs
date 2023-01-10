@@ -13,7 +13,7 @@ This tutorial shows how to build a solution containing a unit test project and s
 
 In this section, a solution is created that contains the source and test projects. The completed solution has the following directory structure:
 
-```
+```txt
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -104,7 +104,7 @@ The following instructions provide the steps to create the test solution. See [C
 
 This section summarizes all the commands in the previous section. Skip this section if you've completed the steps in the previous section.
 
-The following commands create the test solution on a windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
+The following commands create the test solution on a Windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
 
 ```dotnetcli
 dotnet new sln -o unit-testing-using-dotnet-test

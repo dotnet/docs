@@ -102,21 +102,21 @@ Supported compilation targets are described in the table below when targeting .N
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |
-| Windows X64  | Windows (X86, X64, ARM64), Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
-| Windows X86  | Windows (X86), Linux (ARM32) |
-| Linux X64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
-| Linux ARM32  | Linux ARM32 |
-| Linux ARM64  | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
-| macOS X64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
-| macOS ARM64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
+| Windows X64  | Windows (X86, X64, Arm64), Linux (X64, Arm32, Arm64), macOS (X64, Arm64) |
+| Windows X86  | Windows (X86), Linux (Arm32) |
+| Linux X64    | Linux (X64, Arm32, Arm64), macOS (X64, Arm64) |
+| Linux Arm32  | Linux Arm32 |
+| Linux Arm64  | Linux (X64, Arm32, Arm64), macOS (X64, Arm64) |
+| macOS X64    | Linux (X64, Arm32, Arm64), macOS (X64, Arm64) |
+| macOS Arm64    | Linux (X64, Arm32, Arm64), macOS (X64, Arm64) |
 
 Supported compilation targets are described in the table below when targeting .NET 5 and below.
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |
-| Windows X64  | Windows X86, Windows X64, Windows ARM64 |
-| Windows X86  | Windows X86, Windows ARM32 |
-| Linux X64    | Linux X86, Linux X64, Linux ARM32, Linux ARM64 |
-| Linux ARM32  | Linux ARM32 |
-| Linux ARM64  | Linux ARM64 |
+| Windows X64  | Windows X86, Windows X64, Windows Arm64 |
+| Windows X86  | Windows X86, Windows Arm32 |
+| Linux X64    | Linux X86, Linux X64, Linux Arm32, Linux Arm64 |
+| Linux Arm32  | Linux Arm32 |
+| Linux Arm64  | Linux Arm64 |
 | macOS X64    | macOS X64 |

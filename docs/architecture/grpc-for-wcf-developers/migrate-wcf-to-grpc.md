@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Migrate a WCF solution to gRPC
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 This chapter will describe how to work with ASP.NET Core 6.0 gRPC projects and demonstrate migrating different types of Windows Communication Foundation (WCF) services to the gRPC equivalent:
 
 - Create an ASP.NET Core 6.0 gRPC project.

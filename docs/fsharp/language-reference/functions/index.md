@@ -66,7 +66,7 @@ The function creates a tuple from one argument of any type. Because the type is 
 
 ## Function Bodies
 
-A function body can contain definitions of local variables and functions. Such variables and functions are in scope in the body of the current function but not outside it. When you have the lightweight syntax option enabled, you must use indentation to indicate that a definition is in a function body, as shown in the following example:
+A function body can contain definitions of local variables and functions. Such variables and functions are in scope in the body of the current function but not outside it. You must use indentation to indicate that a definition is in a function body, as shown in the following example:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet103.fs)]
 
@@ -74,9 +74,9 @@ For more information, see [Code Formatting Guidelines](../../style-guide/formatt
 
 ## Return Values
 
-The compiler uses the final expression in a function body to determine the return value and type. The compiler might infer the type of the final expression from previous expressions. In the function `cylinderVolume`, shown in the previous section, the type of `pi` is determined from the type of the literal `3.14159` to be `float`. The compiler uses the type of `pi` to determine the type of the expression `h * pi * r * r` to be `float`. Therefore, the overall return type of the function is `float`.
+The compiler uses the final expression in a function body to determine the return value and type. The compiler might infer the type of the final expression from previous expressions. In the function `cylinderVolume`, shown in the previous section, the type of `pi` is determined from the type of the literal `3.14159` to be `float`. The compiler uses the type of `pi` to determine the type of the expression `length * pi * radius * radius` to be `float`. Therefore, the overall return type of the function is `float`.
 
-To specify the return value explicitly, write the code as follows:
+To specify the return type explicitly, write the code as follows:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet105.fs)]
 
@@ -100,7 +100,7 @@ If you supply fewer than the specified number of arguments, you create a new fun
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet106.fs)]
 
-You would then supply the additional argument as needed for various lengths of pipe of the two different sizes:
+You would then supply the final argument as needed for various lengths of pipe of the two different sizes:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet107.fs)]
 
@@ -110,7 +110,7 @@ You would then supply the additional argument as needed for various lengths of p
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet108.fs)]
 
-Some recursive functions might overflow the program stack or perform inefficiently if you do not write them with care and with awareness of special techniques, such as the use of accumulators and continuations.
+Some recursive functions might overflow the program stack or perform inefficiently if you do not write them with care and with awareness of special techniques, such as the use of tail recursion, accumulators, and continuations.
 
 ## Function Values
 
@@ -140,13 +140,13 @@ You define lambda expressions by using the `fun` keyword. A lambda expression re
 
 ## Pipelines
 
-The pipe operator `|>` is used extensively when processing data in F#. This operator allow you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
+The pipe operator `|>` is used extensively when processing data in F#. This operator allows you to establish "pipelines" of functions in a flexible manner. Pipelining enables function calls to be chained together as successive operations:
 
 ```fsharp
 let result = 100 |> function1 |> function2
 ```
 
-The result is again 202. The following sample walks through how you can use these operators to build a simple functional pipeline:
+The following sample walks through how you can use these operators to build a simple functional pipeline:
 
 ```fsharp
 
@@ -169,13 +169,13 @@ let (|>) x f = f x
 
 ## Function composition
 
-Functions in F# can be composed from other functions. The composition of two functions **function1** and **function2** is another function that represents the application of **function1** followed the application of **function2**:
+Functions in F# can be composed from other functions. The composition of two functions **function1** and **function2** is another function that represents the application of **function1** followed by the application of **function2**:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet113.fs)]
 
 The result is 202.
 
-The composition operators take two functions and return a function; by contrast, the pipeline operators take a function and an argument and return a value. The following code example shows the difference between the pipeline and composition operators by showing the differences in the function signatures and usage.
+The composition operator `>>` takes two functions and returns a function; by contrast, the pipeline operator `|>` takes a value and a function and returns a value. The following code example shows the difference between the pipeline and composition operators by showing the differences in the function signatures and usage.
 
 ```fsharp
 // Function composition and pipeline operators compared.

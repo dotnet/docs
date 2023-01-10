@@ -71,12 +71,10 @@
 - name: Reference
   items:
   - name: API Reference
-    href: ../../api/index.md?view=spark-dotnet
+    href: ../../api/index.md?view=spark-dotnet&preserve-view=true
 - name: Resources
   items:
   - name: Resources overview
     href: resources/index.md
   - name: .NET for Apache Spark GitHub
     href: https://github.com/dotnet/spark
-  - name: Stack Overflow
-    href: https://stackoverflow.com/questions/tagged/.net-spark

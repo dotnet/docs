@@ -16,10 +16,12 @@ When the .NET SDK issues error NETSDK1005 or NETSDK1047, the project's assets fi
 
 Here are some actions you can take that may resolve the error:
 
-* Make sure that you're using MSBuild version 16.8 or later and NuGet version 5.8 or later, and restore the project after updating your tools. When you're using NuGet version 5.8 or later, you should be using Visual Studio 2019 version 16.8 or later, MSBuild version 16.8 or later, and .NET 5 SDK or later.
+* Make sure that you're using MSBuild version 16.8 or later and NuGet version 5.8 or later, and restore the project (run `dotnet restore`) after updating your tools. When you're using NuGet version 5.8 or later, you should be using Visual Studio 2019 version 16.8 or later, MSBuild version 16.8 or later, and .NET 5 SDK or later.
 
 * If you get the error while building a project in Visual Studio 2019 for the first time after installing version 16.8 or after changing the project's target framework, build the project a second time.
 
 * Delete the *obj* folder before building the project.
 
 * Make sure that the missing target value is included in the `TargetFrameworks` property of your project.
+
+* If you're building a Docker image, make sure the *.dockerignore* file ignores the *bin* and *obj* directories. For more information, see GitHub pull request [dotnet/docs #29530](https://github.com/dotnet/docs/pull/29530).

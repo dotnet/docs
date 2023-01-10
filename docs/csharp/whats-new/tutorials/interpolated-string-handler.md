@@ -1,7 +1,7 @@
 ---
 title: Explore string interpolation handlers
 description: This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.
-ms.date: 12/16/2021
+ms.date: 03/24/2022
 ---
 # Tutorial: Write a custom string interpolation handler
 

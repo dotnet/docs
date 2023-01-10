@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Heap analysis tool (dotnet-gcdump)
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ `dotnet-gcdump` version 3.1.57502 and later versions
 
 ## Install
 
@@ -26,9 +26,9 @@ There are two ways to download and install `dotnet-gcdump`:
 
   | OS  | Platform |
   | --- | -------- |
-  | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [arm](https://aka.ms/dotnet-gcdump/win-arm) \| [arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
+  | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [Arm](https://aka.ms/dotnet-gcdump/win-arm) \| [Arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
-  | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
+  | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [Arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [Arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
 
 > [!NOTE]
 > To use `dotnet-gcdump` on an x86 app, you need a corresponding x86 version of the tool.
@@ -49,7 +49,7 @@ The `dotnet-gcdump` global tool collects GC (Garbage Collector) dumps of live .N
 
 ### View the GC dump captured from dotnet-gcdump
 
-On Windows, `.gcdump` files can be viewed in [PerfView](https://github.com/microsoft/perfview) for analysis or in Visual Studio. Currently, There is no way of opening a `.gcdump` on non-Windows platforms.
+On Windows, `.gcdump` files can be viewed in [PerfView](https://github.com/microsoft/perfview) for analysis or in Visual Studio. Currently, there is no way of opening a `.gcdump` on non-Windows platforms.
 
 You can collect multiple `.gcdump`s and open them simultaneously in Visual Studio to get a comparison experience.
 
@@ -62,6 +62,14 @@ You can collect multiple `.gcdump`s and open them simultaneously in Visual Studi
 - **`-h|--help`**
 
   Shows command-line help.
+  
+## Commands
+
+| Command                                                        |
+|------------------------------------------------                |
+| [dotnet-gcdump collect](#dotnet-gcdump-collect)                |
+| [dotnet-gcdump ps](#dotnet-gcdump-ps)                          |
+| [dotnet-gcdump report](#dotnet-gcdump-report-gcdump_filename)  |
 
 ## `dotnet-gcdump collect`
 
@@ -110,12 +118,23 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 ## `dotnet-gcdump ps`
 
-Lists the dotnet processes that GC dumps can be collected for.
+Lists the dotnet processes that GC dumps can be collected for. dotnet-gcdump 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
 ```console
-dotnet-gcdump ps
+dotnet-gcdump ps [-h|--help]
+```
+
+### Example
+
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-gcdump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown using `dotnet-gcdump` version 6.0.320703 and later.
+
+```console
+> dotnet-gcdump ps
+  
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe     run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```
 
 ## `dotnet-gcdump report <gcdump_filename>`
@@ -150,4 +169,12 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - COM and static types aren't in the GC dump.
 
-   Prior to .NET Core 3.1-preview2, there was an issue where static and COM types weren't sent when the GC dump was invoked via EventPipe. This has been fixed in .NET Core 3.1-preview2.
+   Prior to .NET Core 3.1, there was an issue where static and COM types weren't sent when the GC dump was invoked via EventPipe. This has been fixed in .NET Core 3.1.
+
+- `dotnet-gcdump` is unable to generate a `.gcdump` file due to missing information, for example, **[Error] Exception during gcdump: System.ApplicationException: ETL file shows the start of a heap dump but not its completion.**. Or, the `.gcdump` file doesn't include the entire heap.
+
+   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. If the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace may be dropped. In this case, to diagnose issues with the heap, it's recommended to collect a dump of the process.
+
+- `dotnet-gcdump` appears to cause an Out Of Memory issue in a memory constrained environment.
+
+   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. The buffer for event collection is owned by the target application and can grow up to 256 MB. `dotnet-gcdump` itself also uses memory. If your environment is memory constrained, be sure to account for these factors when collecting a gcdump to prevent errors.

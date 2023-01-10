@@ -34,5 +34,5 @@ Describes how to set code access security for applications that use Internet con
   
 ## Related sections
 
-[Network Programming in the .NET Framework](index.md)  
+[Network programming in .NET](../../fundamentals/networking/overview.md)  
 Introduces the classes in the <xref:System.Net> and <xref:System.Net.Sockets> namespaces.

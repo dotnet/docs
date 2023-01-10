@@ -2,7 +2,7 @@
 description: "using directive - C# Reference"
 title: "using directive - C# Reference"
 ms.date: 08/19/2021
-f1_keywords: 
+f1_keywords:
   - "using_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
@@ -19,7 +19,7 @@ using System.Text;
 You can apply two modifiers to a `using` directive:
 
 - The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.
-- The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace. This modifier was introduced in C# 6.0.
+- The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace.
 
 You can combine both modifiers to import the static members from a type in all source files in your project.
 
@@ -74,7 +74,7 @@ You can also globally include a namespace by adding a `<Using>` item to your pro
 
 ## static modifier
 
-The `using static` directive names a type whose static members and nested types you can access without specifying a type name. The `using static` directive was introduced in C# 6. Its syntax is:
+The `using static` directive names a type whose static members and nested types you can access without specifying a type name. Its syntax is:
 
 ```csharp
 using static <fully-qualified-type-name>;
@@ -176,6 +176,8 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
+- [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)
+- [Style rule IDE0065 - 'using' directive placement](../../../fundamentals/code-analysis/style-rules/ide0065.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

@@ -1,7 +1,7 @@
 ---
 title: Orleans architecture design principles
 description: Explore the architecture design principles for .NET Orleans.
-ms.date: 02/03/2022
+ms.date: 03/21/2022
 ---
 
 # Orleans architecture design principles
@@ -28,7 +28,7 @@ We supplemented this goal with a set of architectural principles:
 
 The above has led us to certain practices:
 
-* API-first design: if we don't know how we're going to expose a feature to the developer, then we don't build it. Of course, the best way is for a feature to have no developer exposure at all...
+* API-first design: if we don't know how we're going to expose a feature to the developer, then we don't build it. Of course, the best way is for a feature to have no developer exposure at all.
 
 * Make it easy to do the right thing: keep things as simple as possible (but no simpler), don't provide a hammer if a screwdriver is a right tool. As one of our early adopters put it, we try to help our customers "fall into the pit of success". If there is a standard pattern that will work well for 80% of the applications out there, then don't worry about enabling every possible alternative. Orleans' embrace of asynchrony is a good example of this.
 

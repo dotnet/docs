@@ -30,7 +30,7 @@ You can do either one of these or both of them, and if you do both, the order do
 
 ## Prerequisites
 
-* [Visual Studio 2019 version 16.9 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET desktop development** workload installed. The .NET 5 SDK is automatically installed when you select this workload.
+* [Visual Studio 2019 version 16.9 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET desktop development** workload installed. The .NET 5 SDK is automatically installed when you select this workload.
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 

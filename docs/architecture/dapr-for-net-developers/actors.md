@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr actors building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The actor model originated in 1973. It was proposed by Carl Hewitt as a conceptual model of concurrent computation, a form of computing in which several computations are executed at the same time. Highly parallel computers weren't yet available at that time, but the more recent advancements of multi-core CPUs and distributed systems have made the actor model popular.
 
 In the actor model, the *actor* is an independent unit of compute and state. Actors are completely isolated from each other and they will never share memory. Actors communicate with each other using messages. When an actor receives a message, it can change its internal state, and send messages to other (possibly new) actors.
@@ -130,7 +132,7 @@ public async Task<int> IncrementAsync()
 
 Actors can use timers and reminders to schedule calls to themselves. Both concepts support the configuration of a due time. The difference lies in the lifetime of the callback registrations:
 
-- Timers will only stay active as long as the the actor is activated. Timers *will not* reset the idle-timer, so they cannot keep an actor active on their own.
+- Timers will only stay active as long as the actor is activated. Timers *will not* reset the idle-timer, so they cannot keep an actor active on their own.
 - Reminders outlive actor activations. If an actor is deactivated, a reminder will re-activate the actor. Reminders *will* reset the idle-timer.
 
 Timers are registered by making a call to the actor API. In the following example, a timer is registered with a due time of 0 and a period of 10 seconds.

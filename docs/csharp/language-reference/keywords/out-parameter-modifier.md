@@ -41,7 +41,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
   
 - Async methods, which you define by using the [async](./async.md) modifier.  
   
-- Iterator methods, which include a [yield return](./yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.  
 
 In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
 
@@ -51,17 +51,17 @@ In addition, [extension methods](../../programming-guide/classes-and-structs/ext
 
 ## Declaring `out` parameters
 
-Declaring a method with `out` arguments is a classic workaround to return multiple values. Beginning with C# 7.0, consider [value tuples](../builtin-types/value-tuples.md) for similar scenarios. The following example uses `out` to return three variables with a single method call. The third argument is assigned to null. This enables methods to return values optionally.  
+Declaring a method with `out` arguments is a classic workaround to return multiple values. Consider [value tuples](../builtin-types/value-tuples.md) for similar scenarios. The following example uses `out` to return three variables with a single method call. The third argument is assigned to null. This enables methods to return values optionally.  
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 
 ## Calling a method with an `out` argument
 
-In C# 6 and earlier, you must declare a variable in a separate statement before you pass it as an `out` argument. The following example declares a variable named `number` before it is passed to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method, which attempts to convert a string to a number.
+You can declare a variable in a separate statement before you pass it as an `out` argument. The following example declares a variable named `number` before it is passed to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method, which attempts to convert a string to a number.
 
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#4)]  
 
-Starting with C# 7.0, you can declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. This produces more compact, readable code, and also prevents you from inadvertently assigning a value to the variable before the method call. The following example is like the previous example, except that it defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
+You can also declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. This produces more compact, readable code, and also prevents you from inadvertently assigning a value to the variable before the method call. The following example is like the previous example, except that it defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
 
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#5)]  
 
@@ -75,6 +75,7 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
   
 ## See also
 
+- [Inline variable declaration (style rule IDE0018)](../../../fundamentals/code-analysis/style-rules/ide0018.md)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)

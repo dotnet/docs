@@ -1,10 +1,12 @@
 ---
 title: Leveraging serverless functions
 description: Leveraging Serverless and Azure Functions in Cloud-Native Applications
-ms.date: 12/01/2021
+ms.date: 04/06/2022
 ---
 
 # Leveraging serverless functions
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 In the spectrum from managing physical machines to leveraging cloud capabilities, serverless lives at the extreme end. Your only responsibility is your code, and you only pay when your code runs. Azure Functions provides a way to build serverless capabilities into your cloud-native applications.
 

@@ -14,25 +14,29 @@ Beginning with macOS Catalina (version 10.15), all software built after June 1, 
 
 The installers for .NET (both runtime and SDK) have been notarized since February 18, 2020. Prior released versions aren't notarized. You can manually install a non-notarized version of .NET by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](./macos.md#download-and-manually-install).
 
-## appHost is disabled by default
+## Native appHost
 
-.NET doesn't produce an **appHost** version of your app, a native Mach-O executable. The executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file invoked by .NET directly. You can turn on **appHost** generation with the [`UseAppHost`](../project-sdk/msbuild-props.md#useapphost) boolean setting in the project file. You can also toggle the appHost with the `-p:UseAppHost` parameter on the command line for the specific `dotnet` command you run:
+In .NET SDK 7 and later versions, an **appHost**, which is a native Mach-O executable, is produced for your app. This executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file that can be invoked by the `dotnet <app.dll>` command.
+
+When run locally, the SDK signs the apphost using [ad hoc signing](https://developer.apple.com/documentation/security/seccodesignatureflags/1397793-adhoc), which allows the app to run locally. When distributing your app, you'll need to properly sign your app according to Apple guidance.
+
+You can also distribute your app without the apphost and rely on users to run your app using `dotnet`. To turn off **appHost** generation, add the [`UseAppHost`](../project-sdk/msbuild-props.md#useapphost) boolean setting in the project file and set it to `false`. You can also toggle the appHost with the `-p:UseAppHost` parameter on the command line for the specific `dotnet` command you run:
 
 - Project file
 
   ```xml
   <PropertyGroup>
-    <UseAppHost>true</UseAppHost>
+    <UseAppHost>false</UseAppHost>
   </PropertyGroup>
   ```
 
 - Command-line parameter
 
   ```dotnetcli
-  dotnet run -p:UseAppHost=true
+  dotnet run -p:UseAppHost=false
   ```
 
-An **appHost** is always created when you publish your app [self-contained](../deploying/index.md#publish-self-contained). You would notarize this version of your app prior to distribution.
+An **appHost** is required when you publish your app [self-contained](../deploying/index.md#publish-self-contained) and you cannot disable it.
 
 For more information about the `UseAppHost` setting, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#useapphost).
 
@@ -48,7 +52,7 @@ More information about this scenario is provided in the [ASP.NET Core and macOS 
 
 .NET provides the ability to manage certificates in the macOS Keychain with the <xref:System.Security.Cryptography.X509Certificates> class. Access to the macOS Keychain uses the applications identity as the primary key when deciding which partition to consider. For example, unsigned applications store secrets in the unsigned partition, but signed applications store their secrets in partitions only they can access. The source of execution that invokes your app decides which partition to use.
 
-.NET provides three sources of execution: [appHost](#apphost-is-disabled-by-default), default host (the `dotnet` command), and a custom host. Each execution model may have different identities, either signed or unsigned, and has access to different partitions within the Keychain. Certificates imported by one mode may not be accessible from another. For example, the notarized versions of .NET have a default host that is signed. Certificates are imported into a secure partition based on its identity. These certificates aren't accessible from a generated appHost, as the appHost is unsigned.
+.NET provides three sources of execution: [appHost](#native-apphost), default host (the `dotnet` command), and a custom host. Each execution model may have different identities, either signed or unsigned, and has access to different partitions within the Keychain. Certificates imported by one mode may not be accessible from another. For example, the notarized versions of .NET have a default host that is signed. Certificates are imported into a secure partition based on its identity. These certificates aren't accessible from a generated appHost, as the appHost is ad-hoc signed.
 
 Another example, by default, ASP.NET Core imports a default SSL certificate through the default host. ASP.NET Core applications that use an appHost won't have access to this certificate and will receive an error when .NET detects the certificate isn't accessible. The error message provides instructions on how to fix this problem.
 
@@ -58,7 +62,7 @@ For more information on how to troubleshoot ASP.NET Core certificate issues, see
 
 ## Default entitlements
 
-.NET's default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#apphost-is-disabled-by-default) and then add the necessary entitlements locally.
+.NET's default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#native-apphost) and then add the necessary entitlements locally.
 
 Default set of entitlements for .NET:
 

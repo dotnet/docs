@@ -13,21 +13,24 @@ public class SignXML
             // Create a new CspParameters object to specify
             // a key container.
             // <snippet2>
-            CspParameters cspParams = new CspParameters();
-            cspParams.KeyContainerName = "XML_DSIG_RSA_KEY";
+            CspParameters cspParams = new()
+            {
+                KeyContainerName = "XML_DSIG_RSA_KEY"
+            };
             // </snippet2>
 
             // Create a new RSA signing key and save it in the container.
             // <snippet3>
-            RSACryptoServiceProvider rsaKey = new RSACryptoServiceProvider(cspParams);
+            RSACryptoServiceProvider rsaKey = new(cspParams);
             // </snippet3>
 
             // Create a new XML document.
             // <snippet4>
-            XmlDocument xmlDoc = new XmlDocument();
-
-            // Load an XML file into the XmlDocument object.
-            xmlDoc.PreserveWhitespace = true;
+            XmlDocument xmlDoc = new()
+            {
+                // Load an XML file into the XmlDocument object.
+                PreserveWhitespace = true
+            };
             xmlDoc.Load("test.xml");
             // </snippet4>
 
@@ -54,29 +57,33 @@ public class SignXML
     {
         // Check arguments.
         if (xmlDoc == null)
-            throw new ArgumentException(nameof(xmlDoc));
+            throw new ArgumentException(null, nameof(xmlDoc));
         if (rsaKey == null)
-            throw new ArgumentException(nameof(rsaKey));
+            throw new ArgumentException(null, nameof(rsaKey));
 
         // Create a SignedXml object.
         // <snippet5>
-        SignedXml signedXml = new SignedXml(xmlDoc);
-        // </snippet5>
+        SignedXml signedXml = new(xmlDoc)
+        {
+            // </snippet5>
 
-        // Add the key to the SignedXml document.
-        // <snippet6>
-        signedXml.SigningKey = rsaKey;
+            // Add the key to the SignedXml document.
+            // <snippet6>
+            SigningKey = rsaKey
+        };
         // </snippet6>
 
         // <snippet7>
         // Create a reference to be signed.
-        Reference reference = new Reference();
-        reference.Uri = "";
+        Reference reference = new()
+        {
+            Uri = ""
+        };
         // </snippet7>
 
         // Add an enveloped transformation to the reference.
         // <snippet8>
-        XmlDsigEnvelopedSignatureTransform env = new XmlDsigEnvelopedSignatureTransform();
+        XmlDsigEnvelopedSignatureTransform env = new();
         reference.AddTransform(env);
         // </snippet8>
 

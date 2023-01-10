@@ -93,7 +93,7 @@ conventions for HTTP.
 
 Instrumented code can create <xref:System.Diagnostics.Activity> objects
 as part of a distributed trace, but the information in these objects needs to be transmitted
-and serialized in a centralized persistant store so that the entire trace can be usefully reviewed
+and serialized in a centralized persistent store so that the entire trace can be usefully reviewed
 later. There are several telemetry collection libraries that can do this task such as
 [Application Insights](/azure/azure-monitor/app/distributed-tracing),
 [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md),
@@ -101,7 +101,7 @@ or a library provided by a third-party telemetry or APM vendor. Alternately deve
 their own custom Activity telemetry collection by using
 <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> or
 <xref:System.Diagnostics.DiagnosticListener?displayProperty=nameWithType>. ActivityListener
-supports observing any Activity regardless whether the developer has any prior knowledge about it.
+supports observing any Activity regardless of whether the developer has any prior knowledge about it.
 This makes ActivityListener a simple and flexible general purpose solution. By contrast using
 DiagnosticListener is a more complex scenario that requires the instrumented code to opt in by
 invoking <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> and

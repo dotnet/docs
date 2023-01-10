@@ -1,15 +1,17 @@
 ---
-title: Work with collections - Introduction to C# tutorial
-description: Learn C# by exploring the List collection in this tutorial.
-ms.date: 02/05/2021
+title: Work with List\<T> - Introduction to C# tutorial
+description: Learn C# by exploring the generic List collection type in this tutorial.
+ms.date: 03/23/2022
 ---
-# Learn to manage data collections using the generic list type
+# Learn to manage data collections using List\<T> in C\#
 
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601> class.
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac and Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. See [Set up your local environment](local-environment.md) for installation instructions and an overview of application development in .NET.
+
+If you prefer to run the code without having to set up a local environment, see the [interactive-in-browser version of this tutorial](list-collection.yml).
 
 ## A basic list example
 

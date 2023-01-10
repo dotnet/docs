@@ -9,6 +9,8 @@ ms.date: 12/12/2021
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "Atwood's Law: Any application that can be written in JavaScript, will eventually be written in JavaScript."  
 > _\- Jeff Atwood_
 

@@ -1,18 +1,18 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Develop a grain
 
-Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .Net Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference `Microsoft.Orleans.Core.Abstractions` and `Microsoft.Orleans.CodeGenerator.MSBuild` NuGet packages.
+Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .Net Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference [Microsoft.Orleans.Core.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Core.Abstractions) and [Microsoft.Orleans.CodeGenerator.MSBuild](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild) NuGet packages.
 
 For more thorough instructions, see the [Project Setup](../tutorials-and-samples/tutorial-1.md#project-setup) section of [Tutorial One – Orleans Basics](../tutorials-and-samples/tutorial-1.md).
 
 ## Grain interfaces and classes
 
-Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a `Task` (for `void` methods), a `Task<T>` or a `ValueTask<T>`(for methods returning values of type `T`).
+Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
 
 The following is an excerpt from the Orleans version 1.5 Presence Service sample:
 
@@ -70,9 +70,7 @@ public Task<SomeType> GrainMethod1()
 }
 ```
 
-A grain method that returns no value, effectively a void method, is defined in a grain interface as returning a `Task`.
-The returned `Task` indicates asynchronous execution and completion of the method.
-For grain methods not marked with the `async` keyword, when a "void" method completes its execution, it needs to return the special value of `Task.CompletedTask`:
+A grain method that returns no value, effectively a void method, is defined in a grain interface as returning a `Task`. The returned `Task` indicates asynchronous execution and completion of the method. For grain methods not marked with the `async` keyword, when a "void" method completes its execution, it needs to return the special value of <xref:System.Threading.Tasks.Task.CompletedTask?displayProperty=nameWithType>:
 
 ```csharp
 public Task GrainMethod2()
@@ -120,7 +118,7 @@ public Task GrainMethod6()
 }
 ```
 
-`ValueTask<T>` can be used instead of `Task<T>`
+`ValueTask<T>` can be used instead of `Task<T>`.
 
 ## Grain reference
 
@@ -128,7 +126,7 @@ A Grain Reference is a proxy object that implements the same grain interface as 
 
 Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
-A grain reference can be obtained by passing the identity of a grain to the `GrainFactory.GetGrain<T>(key)` method, where `T` is the grain interface and `key` is the unique key of the grain within the type.
+A grain reference can be obtained by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within the type.
 
 The following are examples of how to obtain a grain reference of the `IPlayerGrain` interface defined above.
 
@@ -186,5 +184,5 @@ await joinedTask;
 
 ### Virtual methods
 
-A grain class can optionally override `OnActivateAsync` and `OnDeactivateAsync` virtual methods; these are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
-While `OnActivateAsync`, if overridden, is always called as part of the grain activation process, `OnDeactivateAsync` is not guaranteed to get called in all situations, for example, in case of a server failure or other abnormal event. Because of that, applications should not rely on `OnDeactivateAsync` for performing critical operations such as persistence of state changes. They should use it only for best-effort operations.
+A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; these are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+While `OnActivateAsync`, if overridden, is always called as part of the grain activation process, `OnDeactivateAsync` is not guaranteed to get called in all situations, for example, in case of a server failure or other abnormal event. Because of that, applications should not rely on `OnDeactivateAsync` for performing critical operations such as the persistence of state changes. They should use it only for best-effort operations.

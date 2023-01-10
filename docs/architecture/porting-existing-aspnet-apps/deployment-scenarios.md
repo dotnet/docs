@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Deployment scenarios when migrating to ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Existing ASP.NET MVC and Web API apps run on IIS and Windows. Large apps may require a phased or side-by-side approach when porting to ASP.NET Core. In previous chapters, you learned a number of strategies for migrating large .NET Framework apps to ASP.NET Core in phases. In this chapter, you will see how different deployment scenarios can be achieved when there is a need to maintain the original app in production while migrating portions of it.
 
 ## Split a large web app
@@ -19,7 +21,7 @@ Fortunately, IIS is a feature-rich web server, and two features it has are [URL 
 
 ```xml
 <rule name="NetCoreProxy">
-  <match url="(.*)> />
+  <match url="(.*)>" />
   <action type="Rewrite" url="http://servername/{R:1}" />
 </rule>
 ```
@@ -41,7 +43,7 @@ Figure 5-1 shows how the ASP.NET Core 2.1 *api* app appears in IIS Manager as a 
 
 **Figure 5-1**. .NET Framework Site with .NET Core app in IIS.
 
-The *DotNetMvcApp* site is hosted as an MVC 5 app running on .NET Framework 4.7.2. It has its own IIS app pool configured in integrated mode and running .NET CLR version 4.0.30319. The *api* app is an ASP.NET Core app running on .NET Framework 4.6.1 (`net461`). It was added to the *DotNetMvcApp* as a new IIS app and configured to use its own Application Pool. Its Application Pool is also running in integrated mode but is configured with a .NET CLR version of **No Managed Code** since it will be executed using the [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1). The version of the ASP.NET Core app is just an example. It could also be configured to run on .NET Core 3.1 or .NET 5. Though at that point, it would no longer be able to target .NET Framework libraries (see [Choose the Right .NET Core Version](choose-net-core-version.md))
+The *DotNetMvcApp* site is hosted as an MVC 5 app running on .NET Framework 4.7.2. It has its own IIS app pool configured in integrated mode and running .NET CLR version 4.0.30319. The *api* app is an ASP.NET Core app running on .NET Framework 4.6.1 (`net461`). It was added to the *DotNetMvcApp* as a new IIS app and configured to use its own Application Pool. Its Application Pool is also running in integrated mode but is configured with a .NET CLR version of **No Managed Code** since it will be executed using the [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1). The version of the ASP.NET Core app is just an example. It could also be configured to run on NET 5+. Though at that point, it would no longer be able to target .NET Framework libraries (see [Choose the Right .NET Core Version](choose-net-core-version.md))
 
 Configured in this manner, the only change that must be made in order for the ASP.NET Core app's APIs to be routed properly is to change its default route template from `[Route("[api/controller]")]` to `[Route("[controller]")]`.
 
@@ -65,7 +67,7 @@ A common approach to porting large apps from .NET Framework to ASP.NET Core is t
 - [URL Rewrite module and Application Request Routing](/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing)
 - [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
 - [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1)
-- [Share authentication cookies among ASP.NET apps](/aspnet/core/host-and-deploy/iis/)
+- [Share authentication cookies among ASP.NET apps](/aspnet/core/security/cookie-sharing)
 - [Samples used in this section](https://github.com/ardalis/MigrateDotNetWithIIS)
 
 >[!div class="step-by-step"]

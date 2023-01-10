@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Modernize your apps with monitoring and telemetry
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 When you run an application in production, it's critical that you have insights about how your application is performing. Is it performing at a high level? Are users getting errors, or is the application stable and reliable? You need rich performance monitoring, powerful alerting, and dashboards to help ensure that your application is available and performing as expected. You also need to be able to see quickly if there's a problem, determine how many customers are affected, and perform a root-cause analysis to find and fix the issue.
 
 ## Monitor your application with Application Insights
@@ -59,27 +61,27 @@ You can use the Log Analytics Container Monitoring solution to:
 
 - **Overview of monitoring in Microsoft Azure**
 
-[https://docs.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
+[https://learn.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
 
 - **What is Application Insights?**
 
-[https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview](/azure/azure-monitor/app/app-insights-overview)
+[https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview](/azure/azure-monitor/app/app-insights-overview)
 
 - **What is Log Analytics?**
 
-[https://docs.microsoft.com/azure/log-analytics/log-analytics-overview](/azure/log-analytics/log-analytics-overview)
+[https://learn.microsoft.com/azure/log-analytics/log-analytics-overview](/azure/log-analytics/log-analytics-overview)
 
 - **Container Monitoring solution in Azure Monitor**
 
-[https://docs.microsoft.com/azure/azure-monitor/insights/containers](/azure/azure-monitor/insights/containers)
+[https://learn.microsoft.com/azure/azure-monitor/insights/containers](/azure/azure-monitor/insights/containers)
 
 - **Overview of Azure Monitor**
 
-[https://docs.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
+[https://learn.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
 
 - **What is Operations Management Suite (OMS)?**
 
-[https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview](/azure/operations-management-suite/operations-management-suite-overview)
+[https://learn.microsoft.com/azure/operations-management-suite/operations-management-suite-overview](/azure/operations-management-suite/operations-management-suite-overview)
 
 >[!div class="step-by-step"]
 >[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

@@ -1,15 +1,12 @@
 ---
 title: Compatible grains
 description: Learn about compatible grains in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/15/2022
 ---
 
 # Compatible grains
 
-When an existing grain activation is about to process a request, the runtime will check if the version
-in the request and the actual version of the grain are compatible.
-__Orleans does not infer at runtime which policy to use__,
-The default behavior to determine if two versions are compatible is determined by `GrainVersioningOptions.CompatibilityStrategy`
+When an existing grain activation is about to process a request, the runtime will check if the version in the request and the actual version of the grain are compatible. Orleans does not infer at runtime which policy to use. The default behavior to determine if two versions are compatible is determined by <xref:Orleans.Versions.Compatibility.CompatibilityStrategy?displayProperty=nameWithType>.
 
 ## Backward compatible (default)
 
@@ -17,11 +14,11 @@ The default behavior to determine if two versions are compatible is determined b
 
 A grain interface version Vn can be backward compatible with Vm if:
 
-- The name of the interface didn't change (or the overridden typecode)
-- All public methods present in the Vm version are in the Vn version. __It is important that
-    the signatures of the methods inherited from Vm are not modified__: since Orleans use
-    an internal built-in serializer, modifying/renaming a field (even private) can make the
-    serialization to break.
+- The name of the interface didn't change (or the overridden typecode).
+- All public methods present in the Vm version are in the Vn version.
+  **It is important that the signatures of the methods inherited from Vm are not modified**: since Orleans use
+  an internal built-in serializer, modifying/renaming a field (even private) can make the
+  serialization to break.
 
 Since Vn can have added methods compared to Vm, Vm is not compatible with Vn.
 

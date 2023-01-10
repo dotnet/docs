@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # Get started with Dapr
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In the first two chapters, you learned basic concepts about Dapr. It's time to take it for a *test drive*. This chapter will guide you through preparing your local development environment and building two Dapr .NET applications.
 
 ## Install Dapr into your local environment
@@ -20,7 +22,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
    > [!NOTE]
    > By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a *slim* initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
 
-1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
+1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr-selfhost/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
 1. Install the [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
 
@@ -306,7 +308,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
         @foreach (var forecast in (IEnumerable<WeatherForecast>)ViewData["WeatherForecastData"]!)
         {
             <p>The forecast for @forecast.Date is @forecast.Summary!</p>

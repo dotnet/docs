@@ -22,7 +22,7 @@ topic_type:
 Sets the segment size and the maximum size for generation 0.  
   
 > [!IMPORTANT]
-> Starting with the .NET Framework 4.5, you can set segment size and maximum generation 0 size to values greater than `DWORD` by using the [IGCHost2::SetGCStartupLimitsEx](igchost2-setgcstartuplimitsex-method.md) method.  
+> Starting with .NET Framework 4.5, you can set segment size and maximum generation 0 size to values greater than `DWORD` by using the [IGCHost2::SetGCStartupLimitsEx](igchost2-setgcstartuplimitsex-method.md) method.  
   
 ## Syntax  
   

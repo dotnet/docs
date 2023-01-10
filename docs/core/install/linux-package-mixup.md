@@ -1,14 +1,14 @@
 ---
-title: Troubleshoot .NET Package Mix ups on Linux
-description: Learn about how to troubleshoot strange .NET package errors on Linux.
+title: Troubleshoot .NET package mix ups on Linux
+description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
-ms.date: 05/12/2021
+ms.date: 12/21/2022
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
-# Troubleshoot _fxr_, _libhostfxr.so_, and _FrameworkList.xml_ errors
+# Troubleshoot .NET errors related to missing files on Linux
 
-When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `dotnet run` may fail with a message related to something not being found. Some of the error messages may be similar to the following:
+When you try to use .NET on Linux, commands such as `dotnet new` and `dotnet run` may fail with a message related to a file not being found, such as _fxr_, _libhostfxr.so_, or _FrameworkList.xml_. Some of the error messages may be similar to the following:
 
 - **System.IO.FileNotFoundException**
 
@@ -20,11 +20,11 @@ When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `
 
   or
 
-  > A fatal error occurred. The folder [/usr/share/dotnet/host/fxr] does not exist.
+  > A fatal error occurred. The folder \[/usr/share/dotnet/host/fxr] does not exist.
 
   or
 
-  > A fatal error occurred, the folder [/usr/share/dotnet/host/fxr] does not contain any version-numbered child folders.
+  > A fatal error occurred, the folder \[/usr/share/dotnet/host/fxr] does not contain any version-numbered child folders.
 
 - **Generic messages about dotnet not found**
 
@@ -36,10 +36,13 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 
 This generally happens when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages, such as:
 
+- Alpine Linux
 - Arch
 - CentOS
+- CentOS Stream
 - Fedora
 - RHEL
+- Ubuntu 22.04+
 
 Mixing .NET packages from two different sources will most likely lead to issues since the packages may place things at different paths, and may be compiled differently.
 
@@ -53,33 +56,60 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
     If you only use the Microsoft repository for .NET packages and not for any other Microsoft package such as `mdatp`, `powershell`, or `mssql`, then:
 
-    01. Remove the Microsoft repository
-    01. Remove the .NET related packages from your OS
-    01. Install the .NET packages from the distribution repository
+    01. Remove the Microsoft repository.
+    01. Remove the .NET related packages from your OS.
+    01. Install the .NET packages from the distribution repository.
 
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
 
     ```bash
     sudo dnf remove packages-microsoft-prod
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
-    sudo dnf install dotnet-sdk-5.0
+    sudo dnf install dotnet-sdk-7.0
+    ```
+
+    For Ubuntu (or any other apt-based distribution) use the following bash commands
+
+    ```bash
+    sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
+    sudo rm /etc/apt/sources.list.d/microsoft-prod.list
+    sudo apt update
+    sudo apt install dotnet-sdk-7.0
     ```
 
 02. **I want to use the distribution provided .NET packages, but I also use the Microsoft repository for other packages.**
 
     If you use the Microsoft repository for Microsoft packages such as `mdatp`, `powershell`, or `mssql`, but you don't want to use the repository for .NET, then:
 
-    01. Configure the Microsoft repository to exclude any .NET package
-    01. Remove the .NET related packages from your OS
-    01. Install the .NET packages from the distribution repository
+    01. Configure the Microsoft repository to exclude any .NET package.
+    01. Remove the .NET related packages from your OS.
+    01. Install the .NET packages from the distribution repository.
 
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
 
     ```bash
     echo 'excludepkgs=dotnet*,aspnet*,netstandard*' | sudo tee -a /etc/yum.repos.d/microsoft-prod.repo
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
-    sudo dnf install dotnet-sdk-5.0
+    sudo dnf install dotnet-sdk-7.0
     ```
+
+    For Ubuntu (or any other distribution that uses apt):
+
+    01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
+    01. Create `/etc/apt/preferences` if it doesn't already exist.
+    01. Add the following config to the preferences file, which prevents packages that start with `dotnet` or `aspnetcore` from being sourced by the Microsoft feed:
+
+        ```bash
+        Package: dotnet* aspnet* netstandard*
+        Pin: origin "packages.microsoft.com"
+        Pin-Priority: -10
+        ```
+
+    01. Install .NET.
+
+        ```bash
+        sudo apt-get update && sudo apt-get install -y dotnet7
+        ```
 
 03. **I need a recent version of .NET that's not provided by the Linux distribution repositories.**
 
@@ -90,8 +120,26 @@ If your distribution provides .NET packages, it's recommended that you use that 
     ```bash
     echo 'priority=50' | sudo tee -a /etc/yum.repos.d/microsoft-prod.repo
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
-    sudo dnf install dotnet-sdk-5.0
+    sudo dnf install dotnet-sdk-7.0
     ```
+
+    For Ubuntu (or any other distribution that uses apt) make sure you've installed the Microsoft repository feeds and then install the package.
+
+    01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
+    01. Create `/etc/apt/preferences` if it doesn't already exist.
+    01. Add the following config to the preferences file, adding the specific package you want to pin as a high priority, which will be sourced by the Microsoft Feed. For example, use the following example to pin .NET SDK 7.0:
+
+        ```bash
+        Package: dotnet-sdk-7.0
+        Pin: origin "packages.microsoft.com"
+        Pin-Priority: 999
+        ```
+
+    01. Install .NET.
+
+        ```bash
+        sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+        ```
 
 04. **I've encountered a bug in the Linux distribution version of .NET, I need the latest Microsoft version.**
 

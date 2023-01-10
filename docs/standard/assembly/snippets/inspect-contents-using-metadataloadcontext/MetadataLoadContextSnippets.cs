@@ -56,5 +56,29 @@ namespace AssemblySnippets
             }
             //</SnippetCreateContext>
         }
+        
+        public static void SnippetsAssignability()
+        {
+            var resolver = new PathAssemblyResolver(new string[] { "ExampleAssembly.dll", typeof(object).Assembly.Location});
+            var mlc = new MetadataLoadContext(resolver);
+            
+            using (mlc)
+            {
+                Assembly assembly = mlc.LoadFromAssemblyPath("ExampleAssembly.dll");
+                Type testedType = assembly.GetType("ExampleType")!;
+                
+                //<SnippetAssignability>
+                Assembly matchAssembly = mlc.LoadFromAssemblyPath(typeof(MyType).Assembly.Location);
+                Type matchType = assembly.GetType(typeof(MyType).FullName!)!;
+                
+                if (matchType.IsAssignableFrom(testedType))
+                {
+                    Console.WriteLine($"{nameof(matchType)} is assignable from {nameof(testedType)}");
+                }
+                //</SnippetAssignability>
+            }
+        }
+        
+        class MyType{}
     }
 }

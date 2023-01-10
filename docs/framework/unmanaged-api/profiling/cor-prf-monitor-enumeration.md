@@ -124,7 +124,7 @@ typedef enum {
 |`COR_PRF_MONITOR_ALL`|Enables all callback events.|  
 |`COR_PRF_MONITOR_APPDOMAIN_LOADS`|Controls the `AppDomainCreation*` and `AppDomainShutdown*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.|  
 |`COR_PRF_MONITOR_ASSEMBLY_LOADS`|Controls the `AssemblyLoad*` and `AssemblyUnload*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.|  
-|`COR_PRF_MONITOR_CACHE_SEARCHES`|Controls the `JITCachedFunctionSearch*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.<br /><br /> The behavior of this flag is changed in the .NET Framework version 2.0.|  
+|`COR_PRF_MONITOR_CACHE_SEARCHES`|Controls the `JITCachedFunctionSearch*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.<br /><br /> The behavior of this flag is changed in .NET Framework version 2.0.|  
 |`COR_PRF_MONITOR_CCW`|Controls the `COMClassicVTable*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.|  
 |`COR_PRF_MONITOR_CLASS_LOADS`|Controls the `ClassLoad*` and `ClassUnload*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.|  
 |`COR_PRF_MONITOR_CLR_EXCEPTIONS`|Controls the `ExceptionCLRCatcher*` callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.|  
@@ -152,7 +152,7 @@ typedef enum {
 |`COR_PRF_ENABLE_FUNCTION_ARGS`|Enables argument tracing using the [FunctionEnter2](functionenter2-function.md) callback or the [FunctionEnter3WithInfo](functionenter3withinfo-function.md) callback and the [GetFunctionEnter3Info](icorprofilerinfo3-getfunctionenter3info-method.md) method.|  
 |`COR_PRF_ENABLE_FUNCTION_RETVAL`|Enables tracing of return values by using the [FunctionLeave2](functionleave2-function.md) callback or the [FunctionLeave3WithInfo](functionleave3withinfo-function.md) callback and [GetFunctionLeave3Info](icorprofilerinfo3-getfunctionleave3info-method.md) method.|  
 |`COR_PRF_ENABLE_INPROC_DEBUGGING`|Deprecated.<br /><br /> In process debugging is not supported. This flag has no effect.|  
-|`COR_PRF_ENABLE_JIT_MAPS`|Deprecated.<br /><br /> Allows the profiler to obtain IL-to-native maps by using [GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md). Starting with the .NET Framework 2.0, the runtime always tracks IL-to-native maps; therefore, this flag is always considered to be set.|  
+|`COR_PRF_ENABLE_JIT_MAPS`|Deprecated.<br /><br /> Allows the profiler to obtain IL-to-native maps by using [GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md). Starting with .NET Framework 2.0, the runtime always tracks IL-to-native maps; therefore, this flag is always considered to be set.|  
 |`COR_PRF_ENABLE_OBJECT_ALLOCATED`|Informs the runtime that the profiler may want object allocation notifications. This flag must be set during initialization. It allows the profiler to subsequently use the `COR_PRF_MONITOR_OBJECT_ALLOCATED` flag to receive [ObjectAllocated](icorprofilercallback-objectallocated-method.md) callbacks.|  
 |`COR_PRF_ENABLE_REJIT`|Enables calls to the [RequestReJIT](icorprofilerinfo4-requestrejit-method.md) and [RequestRevert](icorprofilerinfo4-requestrevert-method.md) methods. The profiler must set this flag on startup.  If the profiler specifies this flag, it must also specify `COR_PRF_DISABLE_ALL_NGEN_IMAGES`.|  
 |`COR_PRF_ENABLE_STACK_SNAPSHOT`|Enables calls to the [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.|  

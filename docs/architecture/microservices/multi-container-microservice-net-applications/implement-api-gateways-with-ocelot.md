@@ -6,6 +6,8 @@ ms.date: 06/23/2021
 
 # Implement API Gateways with Ocelot
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 > [!IMPORTANT]
 > The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is currently using features provided by [Envoy](https://www.envoyproxy.io/) to implement the API Gateway instead of the earlier referenced [Ocelot](https://github.com/ThreeMammals/Ocelot).
 > We made this design choice because of Envoy's built-in support for the WebSocket protocol, required by the new gRPC inter-service communications implemented in eShopOnContainers.
@@ -570,6 +572,9 @@ There are other important features to research and use, when using an Ocelot API
 
 - **Rate limiting** \
   [https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html](https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html )
+  
+- **Swagger for Ocelot** \
+  [https://github.com/Burgyn/MMLib.SwaggerForOcelot](https://github.com/Burgyn/MMLib.SwaggerForOcelot)
 
 > [!div class="step-by-step"]
 > [Previous](background-tasks-with-ihostedservice.md)

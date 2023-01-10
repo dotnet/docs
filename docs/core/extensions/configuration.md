@@ -1,15 +1,15 @@
 ---
-title: Configuration in .NET
+title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/19/2021
+ms.date: 11/09/2022
 ms.topic: overview
 ---
 
 # Configuration in .NET
 
-Configuration in .NET is performed using one or more [configuration providers](#configuration-providers). Configuration providers read configuration data from key-value pairs using a variety of configuration sources:
+Configuration in .NET is performed using one or more [configuration providers](#configuration-providers). Configuration providers read configuration data from key-value pairs using various configuration sources:
 
 - Settings files, such as *appsettings.json*
 - Environment variables
@@ -24,32 +24,76 @@ Configuration in .NET is performed using one or more [configuration providers](#
 > [!NOTE]
 > For information about configuring the .NET runtime itself, see [.NET Runtime configuration settings](../runtime-config/index.md).
 
+## Concepts and abstractions
+
+Given one or more configuration sources, the <xref:Microsoft.Extensions.Configuration.IConfiguration> type provides a unified view of the configuration data. Configuration is read-only, and the configuration pattern isn't designed to be programmatically writable. The `IConfiguration` interface is a single representation of all the configuration sources, as shown in the following diagram:
+
+:::image type="content" source="media/configuration-sources.svg" lightbox="media/configuration-sources.svg" alt-text="The `IConfiguration` interface is a single representation of all the configuration sources.":::
+
 ## Configure console apps
 
-New .NET console applications created using [dotnet new](../tools/dotnet-new.md) or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
 
-The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order:
+The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order, from highest to lowest priority:
 
-1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
-1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
-1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
-1. [App secrets](/aspnet/core/security/app-secrets) when the app runs in the `Development` environment.
-1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
+1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
+1. [App secrets](/aspnet/core/security/app-secrets) when the app runs in the `Development` environment.
+1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
+1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
+1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
 
-Configuration providers that are added later override previous key settings. For example, if `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used. Using the default configuration providers, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all other providers.
+Adding a configuration provider overrides previous configuration values. For example, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all values from other providers because it's added last. If `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used because it was added after *appsettings.json*.
 
 ### Binding
 
 One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), which uses classes to provide strongly typed access to groups of related settings. .NET configuration provides various abstractions. Consider the following interfaces:
 
 - <xref:Microsoft.Extensions.Configuration.IConfiguration>: Represents a set of key/value application configuration properties.
-- <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an IConfiguration hierarchy.
+- <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an `IConfiguration` hierarchy.
 - <xref:Microsoft.Extensions.Configuration.IConfigurationSection>: Represents a section of application configuration values.
 
 These abstractions are agnostic to their underlying configuration provider (<xref:Microsoft.Extensions.Configuration.IConfigurationProvider>). In other words, you can use an `IConfiguration` instance to access any configuration value from multiple providers.
+
+The binder can use different approaches to process configuration values:​
+
+- Direct deserialization (using built-in converters) for primitive types​.
+- The <xref:System.ComponentModel.TypeConverter> for a complex type when the type has one​.
+- Reflection for a complex type that has properties.
+
+> [!NOTE]
+> The binder has a few limitations:
+>
+> - Properties are ignored if they have private setters or their type can't be converted.
+> - Properties without corresponding configuration keys are ignored.
+
+#### Binding hierarchies
+
+Configuration values can contain hierarchical data. Hierarchical objects are represented with the use of the `:` delimiter in the configuration keys. To access a configuration value, use the `:` character to delimit a hierarchy. For example, consider the following configuration values:
+
+```json
+{
+  "Parent": {
+    "FavoriteNumber": 7,
+    "Child": {
+      "Name": "Example",
+      "GrandChild": {
+        "Age": 3
+      }
+    }
+  }
+}
+```
+
+The following table represents example keys and their corresponding values for the preceding example JSON:
+
+| Key                             | Value       |
+|---------------------------------|-------------|
+| `"Parent:FavoriteNumber"`       | `7`         |
+| `"Parent:Child:Name"`           | `"Example"` |
+| `"Parent:Child:GrandChild:Age"` | `3`         |
 
 ### Basic example
 
@@ -72,7 +116,7 @@ Consider an example _appsettings.json_ file:
 
 :::code language="json" source="snippets/configuration/console-raw/appsettings.json":::
 
-Now, given this JSON file here is an example consumption pattern using the configuration builder directly:
+Now, given this JSON file, here's an example consumption pattern using the configuration builder directly:
 
 :::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
 
@@ -95,11 +139,11 @@ To access the `IConfiguration` value, you can rely again on the [`Microsoft.Exte
 
 :::code language="xml" source="snippets/configuration/console-basic/console-basic.csproj" highlight="4,11-13,17":::
 
-The preceding project file defines:
+The preceding project file defines that:
 
-- That the application is an executable.
-- That an _appsettings.json_ file is to be copied to the output directory when the project is compiled.
-- That the `Microsoft.Extensions.Hosting` NuGet package reference is added.
+- The application is an executable.
+- An _appsettings.json_ file is to be copied to the output directory when the project is compiled.
+- The `Microsoft.Extensions.Hosting` NuGet package reference is added.
 
 Add the _appsettings.json_ file at the root of the project with the following contents:
 
@@ -113,6 +157,18 @@ When you run this application, the `Host.CreateDefaultBuilder` defines the behav
 
 > [!TIP]
 > Using the raw `IConfiguration` instance in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more complex, we recommend that you use the [_options pattern_](options.md) as an alternative.
+
+### Basic example with hosting and using the indexer API
+
+Consider the same _appsettings.json_ file contents from the previous example:
+
+:::code language="json" source="snippets/configuration/console-indexer/appsettings.json":::
+
+Replace the contents of the _Program.cs_ file with the following C# code:
+
+:::code language="csharp" source="snippets/configuration/console-indexer/Program.cs" highlight="11-15,17-22":::
+
+The values are accessed using the indexer API where each key is a string, and the value is a string. Configuration supports properties, objects, arrays, and dictionaries.
 
 ## Configuration providers
 
@@ -130,10 +186,14 @@ The following table shows the configuration providers available to .NET Core app
 | [Memory configuration provider](configuration-providers.md#memory-configuration-provider)                              | In-memory collections              |
 | [App secrets (Secret Manager)](/aspnet/core/security/app-secrets)                                                      | File in the user profile directory |
 
+> [!TIP]
+> The order in which configuration providers are added matters. When multiple configuration providers are used and more than one provided specifies the same key, the last one added is used.
+
 For more information on various configuration providers, see [Configuration providers in .NET](configuration-providers.md).
 
 ## See also
 
 - [Configuration providers in .NET](configuration-providers.md)
 - [Implement a custom configuration provider](custom-configuration-provider.md)
-- Configuration bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo
+- Configuration bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime/issues) repo
+- [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

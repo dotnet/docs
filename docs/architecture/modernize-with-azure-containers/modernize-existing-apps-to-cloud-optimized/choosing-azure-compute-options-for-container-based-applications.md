@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Choosing Azure compute platforms for container-based applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 As you have noticed after reading the previous sections, Azure is an open cloud that offers multiple choices. You can use the best fit for your needs, however, it also surfaces questions about what product/technology you should use for your containerized applications.
 
 As a *by-default* recommendation, the following is the main criteria recommended in this guidance:
@@ -23,7 +25,7 @@ After a deeper analysis of the application's needs, the product selected could b
 
 - **Choose an Azure compute service for your application**
 
-    [https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree](/azure/architecture/guide/technology-choices/compute-decision-tree)
+    [https://learn.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree](/azure/architecture/guide/technology-choices/compute-decision-tree)
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

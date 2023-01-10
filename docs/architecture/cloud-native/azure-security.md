@@ -1,10 +1,12 @@
 ---
 title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Azure security for cloud-native apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Cloud-native applications can be both easier and more difficult to secure than traditional applications. On the downside, you need to secure more smaller applications and dedicate more energy to build out the security infrastructure. The heterogeneous nature of programming languages and styles in most service deployments also means you need to pay more attention to security bulletins from many different providers.
 

@@ -20,7 +20,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
   
 ### Example  
 
- The following example uses the <xref:System.Linq.Enumerable.Skip%2A> method to get all but the first five contacts of the Contact table.  
+ The following example uses the <xref:System.Linq.Enumerable.Skip%2A> method to get all but the first three contacts of the Contact table.  
   
  [!code-csharp[DP L2E Examples#SkipSimple](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#skipsimple)]
  [!code-vb[DP L2E Examples#SkipSimple](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#skipsimple)]  

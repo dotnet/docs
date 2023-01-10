@@ -11,11 +11,11 @@ description: "A .NET Core WPF application that contains the example method from 
 ---
 # Async Sample: Asynchronous Programming with Async and Await in Visual Basic
 
-This sample is a WPF application that contains the example method from [Asynchronous Progamming with Async and Await in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/concepts/async/). The topic gives an overview of asynchronous programming, including when to use it and how to write an Async method. This sample contains an Async function that is used as an illustration.
+This sample is a WPF application that contains the example method from [Asynchronous Progamming with Async and Await in Visual Basic](https://learn.microsoft.com/dotnet/visual-basic/programming-guide/concepts/async/). The topic gives an overview of asynchronous programming, including when to use it and how to write an Async method. This sample contains an Async function that is used as an illustration.
 
-[Async](https://docs.microsoft.com/dotnet/visual-basic/language-reference/modifiers/async) and [Await](https://docs.microsoft.com/dotnet/visual-basic/language-reference/operators/await-operator) provide all the advantages of traditional asynchronous programming, but with much less effort from the developer. The compiler does the difficult work that the developer used to do, yet the code retains a logical structure that resembles synchronous code.
+[Async](https://learn.microsoft.com/dotnet/visual-basic/language-reference/modifiers/async) and [Await](https://learn.microsoft.com/dotnet/visual-basic/language-reference/operators/await-operator) provide all the advantages of traditional asynchronous programming, but with much less effort from the developer. The compiler does the difficult work that the developer used to do, yet the code retains a logical structure that resembles synchronous code.
 
-The example Async function in this sample (named `GetStringAsync`) uses an [HttpClient](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient) method to download the contents of a website.
+The example Async function in this sample (named `GetStringAsync`) uses an [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient) method to download the contents of a website.
 
 The code for the *MainWindow.xaml.vb* file from this sample is included in the article.
 
@@ -35,7 +35,7 @@ To download and run the sample, follow these steps:
 
     2. Navigate to the folder that holds the unzipped sample code, and open the Visual Basic project (*.vbproj*) file.
 
-    3. Choose the **F5** key, or **Ctrl**+**F5** keys, to run the project.
+    3. Choose the <kbd>F5</kbd> key, or <kbd>Ctrl</kbd>+<kbd>F5</kbd> keys, to run the project.
 
 3. From the command line:
 
@@ -45,4 +45,4 @@ To download and run the sample, follow these steps:
 
 ## More information
 
-- <https://docs.microsoft.com/dotnet/visual-basic/programming-guide/concepts/async/index>
+- <https://learn.microsoft.com/dotnet/visual-basic/programming-guide/concepts/async/index>

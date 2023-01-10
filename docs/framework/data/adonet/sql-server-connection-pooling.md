@@ -51,7 +51,7 @@ using (SqlConnection connection = new SqlConnection(
     }  
 ```  
   
- If `MinPoolSize` is either not specified in the connection string or is specified as zero, the connections in the pool will be closed after a period of inactivity. However, if the specified `MinPoolSize` is greater than zero, the connection pool is not destroyed until the `AppDomain` is unloaded and the process ends. Maintenance of inactive or empty pools involves minimal system overhead.  
+ If `Min Pool Size` is either not specified in the connection string or is specified as zero, the connections in the pool will be closed after a period of inactivity. However, if the specified `Min Pool Size` is greater than zero, the connection pool is not destroyed until the `AppDomain` is unloaded and the process ends. Maintenance of inactive or empty pools involves minimal system overhead.  
   
 > [!NOTE]
 > The pool is automatically cleared when a fatal error occurs, such as a failover.  

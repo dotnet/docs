@@ -19,9 +19,7 @@ Docker containers and networking models were designed to run mostly stateless an
 
 Docker clustering consists of putting together multiple hosts to work as a single pool of resources, managed using a _Container Orchestrator_. _Docker Inc._ provide **Swarm** as their option for Container Orchestration while _Google_ has **Kubernetes** (aka **K8s**). There are other Orchestrators like **DC/OS**, **Mesos**, but in this document, we will talk about Swarm and K8s as they are more widely used.
 
-The same grain interfaces and implementation which run anywhere Orleans is already supported will run on Docker containers as well, so no special considerations are needed to be able to run your application in Docker containers.
-
-The [Orleans-Docker](https://github.com/dotnet/orleans/tree/main/Samples/Orleans-Docker) sample provides a working example of how to run two Console applications. One as Orleans Client and another as Silo, and the details are described below.
+The same grain interfaces and implementation that run anywhere Orleans is already supported will run on Docker containers as well. No special considerations are needed to be able to run your application in Docker containers.
 
 The concepts discussed here can be used on both .NET Core and .NET 4.6.1 flavors of Orleans but to illustrate the cross-platform nature of Docker and .NET Core, we are going to focus on the example considering you are using .NET Core. Platform-specific (Windows/Linux/OSX) details may be provided in this article.
 
@@ -68,7 +66,7 @@ dotnet add src/OrleansGrains/OrleansGrains.csproj reference src/OrleansGrainInte
 dotnet add src/OrleansSilo/OrleansSilo.csproj reference src/OrleansGrains/OrleansGrains.csproj
 ```
 
-What we did so far was just boilerplate code to create the solution structure, projects, and add references between projects. Nothing different than a regular Orleans project.
+What we did so far was just boilerplate code to create the solution structure and projects, and add references between projects. Nothing different than a regular Orleans project.
 
 By the time this article was written, Orleans 2.0 (which is the only version that supports .NET Core and cross-platform) is in Technology Preview so its NuGet packages are hosted in a MyGet feed and not published to Nuget.org official feed. To install the preview NuGet packages, we will use `dotnet` CLI forcing the source feed and version from MyGet:
 
@@ -365,7 +363,7 @@ The `docker-compose.yml` file, essentially defines (within a project) a set of s
 For an Orleans deployment, a common use case is to have a `docker-compose.yml` which contains two services. One for Orleans Silo, and the other for Orleans Client. The Client would have a dependency on the Silo and that means, it will only start after the Silo service is up. Another case is to add a storage/database service/container, like for example SQL Server, which should start first before the client and the silo, so both services should take a dependency on it.
 
 > [!NOTE]
-> Before you read further (and eventually get crazy with it), please note that _indentation_ **matters** in `docker-compose` files. So pay attention to it if you have any problems.
+> Before you read further, please note that _indentation_ **matters** in `docker-compose` files. So pay attention to it if you have any problems.
 
 Here is how we will describe our services for this article:
 

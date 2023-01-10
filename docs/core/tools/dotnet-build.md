@@ -5,7 +5,7 @@ ms.date: 08/12/2021
 ---
 # dotnet build
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -19,7 +19,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
     [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
     [-o|--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--source <SOURCE>]
+    [--self-contained [true|false]] [--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -78,15 +78,13 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md).
+  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
 
 - **`--force`**
 
@@ -110,7 +108,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`--no-self-contained`**
 
@@ -124,7 +122,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also.
+  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
 
 - **`--self-contained [true|false]`**
 
@@ -135,6 +133,10 @@ The project or solution file to build. If a project or solution file isn't speci
   The URI of the NuGet package source to use during the restore operation.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

@@ -1,8 +1,0 @@
-<Project DefaultTargets="WPFAquariumObjects;WPFAquarium" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Target Name="WPFAquariumObjects">
-    <MSBuild Projects="WPFAquariumObjects\WPFAquariumObjects.csproj" />
-  </Target>
-  <Target Name="WPFAquarium">
-    <MSBuild Projects="WPFAquarium\WPFAquarium.csproj" />
-  </Target>
-</Project>

@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Call credentials
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Call credentials are all based on a token passed in metadata with each request.
 
 ## WS-Federation

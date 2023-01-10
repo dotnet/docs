@@ -1,5 +1,5 @@
 ---
-title: Localization in .NET
+title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
@@ -40,7 +40,7 @@ Where:
 
 ### Specifying locales
 
-The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country or region. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 ### Culture fallback scenarios
 

@@ -3,7 +3,7 @@ title: Deploy .NET apps to Raspberry Pi
 description: Learn how to deploy .NET apps to Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 03/04/2022
+ms.date: 10/07/2022
 ms.topic: how-to
 ms.prod: dotnet
 ---
@@ -22,11 +22,11 @@ To deploy your app as a framework-dependent app, complete the following steps:
     1. Run the following command to install .NET:
 
         ```bash
-        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel Current
+        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS
         ```
 
         > [!NOTE]
-        > This installs the latest version. If you need a specific version, replace the `--channel Current` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version.
+        > This installs the latest version. If you need a specific version, replace the `--channel STS` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version.
 
     1. To simplify path resolution, add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH` with the following commands:
 
@@ -64,11 +64,14 @@ To deploy your app as a self-contained app, complete the following steps:
 
 1. Publish the app on the development computer as follows, depending on development environment.
     - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Self-contained* and **Target runtime** is set to *linux-arm*.
-    - If using the **.NET CLI**, use the [dotnet publish](../core/tools/dotnet-publish.md) command with the `-r linux-arm` argument:
+    - If using the **.NET CLI**, use the [dotnet publish](../core/tools/dotnet-publish.md) command with the `--runtime linux-arm` and `--self-contained` arguments:
 
         ```dotnetcli
-        dotnet publish -r linux-arm
+        dotnet publish --runtime linux-arm --self-contained
         ```
+
+    > [!IMPORTANT]
+    > If you're using a 64-bit version of Raspberry Pi OS, you need to target the `linux-arm64` runtime.
 
 1. [!INCLUDE [sftp-client](includes/sftp-client.md)]
 

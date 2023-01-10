@@ -6,6 +6,8 @@ ms.date: 03/04/2021
 ---
 # Deploy a .NET web app using GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > [!WARNING]
 > Please complete the [Build](actions-build.md) tutorial before starting this lab.
 
@@ -147,7 +149,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
         steps:
         - name: Download a Build Artifact
-          uses: actions/download-artifact@v2.0.8
+          uses: actions/download-artifact@v3
           with:
             name: website
             path: website
@@ -401,15 +403,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: 'Print manual run reason'
       if: ${{ github.event_name == 'workflow_dispatch' }}
       run: |
         echo 'Reason: ${{ github.event.inputs.reason }}'
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 2.1.x
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -419,7 +421,7 @@ jobs:
     - name: Publish
       run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.2.2
+      uses: actions/upload-artifact@v3
       with:
         name: website
         path: SimpleFeedReader/website/**
@@ -435,7 +437,7 @@ jobs:
 
     steps:
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.0.8
+      uses: actions/download-artifact@v3
       with:
         name: website
         path: website

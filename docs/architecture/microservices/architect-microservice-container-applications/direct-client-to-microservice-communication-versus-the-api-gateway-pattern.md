@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # The API gateway pattern versus the Direct client-to-microservice communication
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 In a microservices architecture, each microservice exposes a set of (typically) fine-grained endpoints. This fact can impact the client-to-microservice communication, as explained in this section.
 
 ## Direct client-to-microservice communication
@@ -168,7 +170,7 @@ After the initial architecture and patterns explanation sections, the next secti
   <https://microservices.io/patterns/apigateway.html>
 
 - **API Gateway pattern** \
-  [https://docs.microsoft.com/azure/architecture/microservices/gateway](/azure/architecture/microservices/gateway)
+  [https://learn.microsoft.com/azure/architecture/microservices/gateway](/azure/architecture/microservices/gateway)
 
 - **Aggregation and composition pattern** \
   <https://microservices.io/patterns/data/api-composition.html>

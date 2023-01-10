@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr state management building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an e-Commerce site. If the service can't track state, the customer could lose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
 To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).
@@ -238,23 +240,29 @@ At the time of this writing, Dapr provides support for the following transaction
 
 - Azure CosmosDB
 - Azure SQL Server
+- CockroachDB
+- In Memory
 - MongoDB
+- MySQL
+- Oracle Database
 - PostgreSQL
 - Redis
+- RethinkDB
 
 Dapr also includes support for state stores that support CRUD operations, but not transactional capabilities:
 
 - Aerospike
+- Apache Cassandra
+- AWS DynamoDB
 - Azure Blob Storage
 - Azure Table Storage
-- Cassandra
-- Cloudstate
 - Couchbase
-- etcd
-- Google Cloud Firestore
+- GCP Firestore
 - Hashicorp Consul
 - Hazelcast
+- JetStream KV
 - Memcached
+- Oracle Object Storage
 - Zookeeper
 
 ### Configuration
@@ -425,7 +433,7 @@ In the Dapr Traffic Control sample application, the benefits of using Dapr state
 
 ### References
 
-- [Dapr supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/)
+- [Dapr supported state stores](https://docs.dapr.io/reference/components-reference/supported-state-stores/)
 
 > [!div class="step-by-step"]
 > [Previous](sample-application.md)

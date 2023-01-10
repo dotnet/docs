@@ -9,6 +9,8 @@ ms.contributors: jeliknes-07302021
 ---
 # Telemetry with Application Insights
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [Application Insights](/azure/application-insights) is a serverless diagnostics platform that enables developers to detect, triage, and diagnose issues in web apps, mobile apps, desktop apps, and microservices. You can turn on Application Insights for function apps simply by flipping a switch in the portal. Application Insights provides all of these capabilities without you having to configure a server or set up your own database. All of Application Insights' capabilities are provided as a service that automatically integrates with your apps.
 
 ![Application Insights logo](./media/application-insights-logo.png)

@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Example migration of eShop to ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. The chapter examines a sample online store app written for ASP.NET MVC 5. The app will use many of the concepts and tools described earlier in this book. You'll find the starting point app in the [*eShopModernizing* GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps. This chapter focuses on the *eShopLegacyMVCSolution*.
 
 The initial version of the project is shown in Figure 4-1. It's a fairly standard ASP.NET MVC 5 app.
@@ -88,8 +90,8 @@ The next dialog will ask you to choose which template to use. Select the **Empty
 Since the built-in migration tool for migrating *packages.config* to `<PackageReference>` doesn't work on ASP.NET projects, you can use a community tool instead, or migrate by hand. A [community tool I've used](https://gist.github.com/tomkuijsten/2d75074d9a3c19c04ee8ea19a6289ddf) uses an XSL file to transform from one format to the other. To use it, first copy the *packages.config* file to the newly created ASP.NET Core project folder. Make a backup of your files, as this script removes the *packages.config* file from all folders under where you run the script. Then run these commands from the project folder (or for the entire solution if you prefer):
 
 ```powershell
-iwr https://git.io/vdKaV -OutFile Convert-ToPackageReference.ps1
-iwr https://git.io/vdKar -OutFile  Convert-ToPackageReference.xsl
+iwr https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/778953f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.ps1 -OutFile Convert-ToPackageReference.ps1
+iwr https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/778953f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.xsl -OutFile  Convert-ToPackageReference.xsl
 ./Convert-ToPackageReference.ps1 | Out-Null
 ```
 

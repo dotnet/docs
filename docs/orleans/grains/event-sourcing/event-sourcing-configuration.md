@@ -1,7 +1,7 @@
 ---
 title: Event sourcing configuration
 description: Learn about event sourcing configuration in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/15/2022
 ---
 
 # Event sourcing configuration
@@ -16,7 +16,7 @@ As before, interfaces depend only on the `Microsoft.Orleans.Core` package, becau
 
 ### Grain implementations
 
-JournaledGrains need to derive from `JournaledGrain<S,E>` or `JournaledGrain<S>`, which is defined in the `Microsoft.Orleans.EventSourcing` package.
+JournaledGrains need to derive from <xref:Orleans.EventSourcing.JournaledGrain%602> or <xref:Orleans.EventSourcing.JournaledGrain%601>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
 
 ### Log-consistency providers
 
@@ -24,8 +24,7 @@ We currently include three log-consistency providers (for state storage, log sto
 
 ## Cluster configuration
 
-Log-consistency providers are configured just like any other Orleans providers.
-For example, to include all three providers (of course, you probably won't need all three), add this to the `<Globals>` element of the configuration file:
+Log-consistency providers are configured just like any other Orleans providers. For example, to include all three providers (of course, you probably won't need all three), add this to the `<Globals>` element of the configuration file:
 
 ```xml
 <LogConsistencyProviders>
@@ -38,7 +37,7 @@ For example, to include all three providers (of course, you probably won't need 
 </LogConsistencyProviders>
 ```
 
-The same can be achieved programmatically. Moving forward to 2.0.0 stable, ClientConfiguration and ClusterConfiguration no longer exist! It has now been replaced by a ClientBuilder and a SiloBuilder (notice there is no cluster builder).
+The same can be achieved programmatically. Moving forward to 2.0.0 stable, ClientConfiguration and ClusterConfiguration no longer exist! It has now been replaced by a <xref:Orleans.ClientBuilder> and a `SiloBuilder` (notice there is no cluster builder).
 
 ```csharp
 builder.AddLogStorageBasedLogConsistencyProvider("LogStorage")
@@ -46,7 +45,7 @@ builder.AddLogStorageBasedLogConsistencyProvider("LogStorage")
 
 ## Grain class attributes
 
-Each journaled grain class must have a `LogConsistencyProvider` attribute to specify the log-consistency provider. Some providers additionally require a `StorageProvider` attribute, for example:
+Each journaled grain class must have a <xref:Orleans.Providers.LogConsistencyProviderAttribute> to specify the log-consistency provider. Some providers additionally require a <xref:Orleans.Providers.StorageProviderAttribute>, for example:
 
 ```csharp
 [StorageProvider(ProviderName = "OrleansLocalStorage")]
@@ -58,7 +57,7 @@ public class EventSourcedBankAccountGrain :
 }
 ```
 
-So here "`OrleansLocalStorage`" is being used for storing the grain state, where was "`LogStorage`" is the in-memory storage provider for EventSourcing events.
+So here `"OrleansLocalStorage"` is being used for storing the grain state, where was `"LogStorage"` is the in-memory storage provider for EventSourcing events.
 
 ### `LogConsistencyProvider` attributes
 

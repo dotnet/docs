@@ -7,6 +7,8 @@ ms.date: 03/04/2021
 
 # Secure .NET Code with CodeQL and GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a static code analysis engine that can automate security and quality checks. With CodeQL, you can perform *variant analysis*, which uses known vulnerabilities as seeds to find similar issues. CodeQL is part of [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) that includes:
 
 > [!div class="checklist"]
@@ -86,7 +88,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1

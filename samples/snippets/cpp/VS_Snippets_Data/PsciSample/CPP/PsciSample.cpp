@@ -31,8 +31,8 @@ public:
         //Compile the schema which validates the schema and
         // if valid will place the PSCI values in certain properties.
         XmlSchemaSet^ schemaSet = gcnew XmlSchemaSet();
-		ValidationEventHandler^ eventHanlder = gcnew ValidationEventHandler(ValidationCallbackOne);
-        schemaSet->ValidationEventHandler += eventHanlder;
+		ValidationEventHandler^ eventHandler = gcnew ValidationEventHandler(ValidationCallbackOne);
+        schemaSet->ValidationEventHandler += eventHandler;
         schemaSet->Add(schema);
         schemaSet->Compile();
 

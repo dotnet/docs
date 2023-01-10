@@ -2,20 +2,29 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 12/09/2021
+ms.date: 04/13/2022
 ms.custom: "updateeachrelease"
 ---
 # global.json overview
 
-**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-The *global.json* file allows you to define which .NET SDK version is used when you run .NET CLI commands. Selecting the .NET SDK is independent from specifying the runtime your project targets. The .NET SDK version indicates which versions of the .NET CLI is used.
+The *global.json* file allows you to define which .NET SDK version is used when you run .NET CLI commands. Selecting the .NET SDK version is independent from specifying the runtime version a project targets. The .NET SDK version indicates which version of the .NET CLI is used. This article explains how to select the SDK version by using *global.json*.
 
-In general, you want to use the latest version of the SDK tools, so no *global.json* file is needed. In some advanced scenarios, you might want to control the version of the SDK tools, and this article explains how to do that.
+If you always want to use the latest SDK version that is installed on your machine, no *global.json* file is needed. In CI (continuous integration) scenarios, however, you typically want to specify an acceptable range for the SDK version that is used. The *global.json* file has a `rollForward` feature that provides flexible ways to specify an acceptable range of versions. For example, the following *global.json* file selects 6.0.300 or any later [feature band or patch](../releases-and-support.md) for 6.0 that is installed on the machine:
 
-For more information about specifying the runtime instead, see [Target frameworks](../../standard/frameworks.md).
+```json
+{
+  "sdk": {
+    "version": "6.0.300",
+    "rollForward": "latestFeature"
+  }
+}
+```
 
 The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
+
+For information about specifying the runtime version instead of the SDK version, see [Target frameworks](../../standard/frameworks.md).
 
 ## global.json schema
 
@@ -82,6 +91,21 @@ The following table shows the possible values for the `rollForward` key:
 Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
+
+### Comments in appsettings.json
+
+Comments in *global.json* files are supported using JavaScript or C# style comments. For example:
+
+```json
+{
+   // This is a comment.
+  "sdk": {
+    "version": "7.0.100" /* This is comment 2*/
+  /* This is a
+  multiline comment.*/
+  }
+}
+```
 
 ## Examples
 
@@ -156,9 +180,7 @@ dotnet new globaljson --sdk-version 6.0.100
 > [!NOTE]
 > The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET installed runtimes. The matching rules for the latest installed version of the .NET Runtime are used when you have multiple runtimes installed side-by-side or if or you're using a *global.json* file.
 
-## [.NET Core 3.x and .NET 5+](#tab/netcore3x)
-
-Starting with .NET Core 3.0, the following rules apply when determining which version of the SDK to use:
+The following rules apply when determining which version of the SDK to use:
 
 - If no *global.json* file is found, or *global.json* doesn't specify an SDK version nor an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether prerelease SDK versions are considered depends on how `dotnet` is being invoked.
   - If you're **not** in Visual Studio, prerelease versions are considered.
@@ -168,28 +190,6 @@ Starting with .NET Core 3.0, the following rules apply when determining which ve
 
   - If no `rollForward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
   - Whether prerelease versions are considered and what's the default behavior when `allowPrerelease` isn't set is described in the [allowPrerelease](#allowprerelease) section.
-
-## [.NET Core 2.x](#tab/netcore2x)
-
-In .NET Core 2.x SDK, the following rules apply when determining which version of the SDK to use:
-
-- If no *global.json* file is found or *global.json* doesn't specify an SDK version, the latest installed SDK version is used. Latest SDK version can be either release or prerelease - the highest version number wins.
-- If *global.json* does specify an SDK version:
-  - If the specified SDK version is found on the machine, that exact version is used.
-  - If the specified SDK version can't be found on the machine, the latest installed SDK **patch version** of that version is used. Latest installed SDK **patch version** can be either release or prerelease - the highest version number wins. In .NET Core 2.1 and higher, the **patch versions** lower than the **patch version** specified are ignored in the SDK selection.
-  - If the specified SDK version and an appropriate SDK **patch version** can't be found, an error is thrown.
-
-The SDK version is composed of the following parts:
-
-`[.NET Core major version].[.NET Core minor version].[xyz][-optional preview name]`
-
-The **feature release** of the .NET Core SDK is represented by the first digit (`x`) in the last portion of the number (`xyz`) for SDK versions 2.1.100 and higher. In general, the .NET Core SDK has a faster release cycle than .NET Core.
-
-The **patch version** is defined by the last two digits (`yz`) in the last portion of the number (`xyz`) for SDK versions 2.1.100 and higher. For example, if you specify `2.1.300` as the SDK version, SDK selection finds up to `2.1.399` but `2.1.400` isn't considered a patch version for `2.1.300`.
-
-.NET Core SDK versions `2.1.100` through `2.1.201` were released during the transition between version number schemes and don't correctly handle the `xyz` notation. We highly recommend if you specify these versions in the *global.json* file, that you ensure the specified versions are on the target machines.
-
----
 
 ## Troubleshoot build warnings
 

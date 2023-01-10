@@ -11,6 +11,8 @@ class Program
         var sequence = new List<int> {1,2,3,4,5,6,7};
         var middle = MidPoint(sequence);
         Console.WriteLine(middle);
+
+        ListPattern.Example();
     }
 
     // <MidPoint>

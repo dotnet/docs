@@ -1,16 +1,14 @@
 ---
 title: Heterogeneous silos overview
 description: Learn an overview of the supported heterogeneous silos in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Heterogeneous silos overview
 
 On a given cluster, silos can support a different set of grain types:
 
-<!-- TODO:
-![](~/images/heterogeneous.png)
--->
+:::image type="content" source="media/heterogeneous.png" alt-text="Heterogeneous silos overview diagram.":::
 
 In this example the cluster supports grains of type `A`, `B`, `C`, `D`, `E`:
 
@@ -47,15 +45,14 @@ public class C: Grain, IMyGrainInterface, IMyOtherGrainInterface
 
 ## Configuration
 
-No configuration is needed, you can deploy different binaries on each silo in your cluster.
-However, if necessary, you can change the interval that silos and clients check for changes in types supported with the property `TypeMapRefreshInterval` from `TypeManagementOptions`
+No configuration is needed, you can deploy different binaries on each silo in your cluster. However, if necessary, you can change the interval that silos and clients check for changes in types supported with the <xref:Orleans.Configuration.TypeManagementOptions.TypeMapRefreshInterval?displayProperty=nameWithType> property.
 
-For testing purposes, you can use the property `ExcludedGrainTypes` in `GrainClassOptions`, which is a list of names of the types you want to exclude on the silos.
+For testing purposes, you can use the property <xref:Orleans.Configuration.GrainClassOptions.ExcludedGrainTypes?displayProperty=nameWithType>, which is a list of names of the types you want to exclude on the silos.
 
 ## Limitations
 
 * Connected clients will not be notified if the set of supported Grain Types changed. In the previous example:
-  * If Silo 4 leaves the cluster, the client will still try to make calls to the grain of type `E`. It will fail at runtime with an `OrleansException`.
-  * If the client was connected to the cluster before Silo 4 joined it, the client will not be able to make calls to the grain of type `E`. It will fail with an `ArgumentException`
+  * If Silo 4 leaves the cluster, the client will still try to make calls to the grain of type `E`. It will fail at runtime with an <xref:Orleans.Runtime.OrleansException>.
+  * If the client was connected to the cluster before Silo 4 joined it, the client will not be able to make calls to the grain of type `E`. It will fail with an <xref:System.ArgumentException>.
 * Stateless grains are not supported: all silos in the cluster must support the same set of stateless grains.
-* `ImplicitStreamSubscription` are not supported and thus only [Explicit subscriptions](../streaming/streams-programming-apis.md) can be used in Orleans Streams.
+* <xref:Orleans.ImplicitStreamSubscriptionAttribute> are not supported and thus only [Explicit subscriptions](../streaming/streams-programming-apis.md) can be used in Orleans Streams.

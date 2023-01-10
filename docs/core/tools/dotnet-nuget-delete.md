@@ -6,7 +6,7 @@ ms.date: 06/26/2019
 ---
 # dotnet nuget delete
 
-**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -38,8 +38,6 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 * **`--force-english-output`**
 
   Forces the application to run using an invariant, English-based culture.
@@ -54,7 +52,7 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 * **`--no-service-endpoint`**
 
-  Doesn't append "api/v2/package" to the source URL. Option available since .NET Core 2.1 SDK.
+  Doesn't append "api/v2/package" to the source URL.
 
 * **`--non-interactive`**
 

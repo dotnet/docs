@@ -1,7 +1,7 @@
 ---
 title: Code generation in Orleans
 description: Learn about codegen with .NET Orleans.
-ms.date: 02/02/2022
+ms.date: 03/21/2022
 ---
 
 # Code generation in Orleans

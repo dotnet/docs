@@ -1,12 +1,12 @@
 ---
 title: Migration from Orleans 1.5 to 2.0 when using Azure
 description: Learn how to migrate forward from Orleans 1.5 to 2.0 when using Azure.
-ms.date: 02/02/2022
+ms.date: 03/21/2022
 ---
 
 # Migration from Orleans 1.5 to 2.0 when using Azure
 
-In Orleans 2.0, the configuration of silos and clients has changed. In Orleans 1.5 we used to have a monolith object that handled all the configuration pieces. Providers were added to that configuration object too. In Orleans 2.0, the configuration process is organized around `SiloHostBuilder`, similar to how it is done in ASP.NET Core with the `WebHostBuilder`.
+In Orleans 2.0, the configuration of silos and clients has changed. In Orleans 1.5 we used to have a monolith object that handled all the configuration pieces. Providers were added to that configuration object too. In Orleans 2.0, the configuration process is organized around <xref:Orleans.Hosting.SiloHostBuilder>, similar to how it is done in ASP.NET Core with the <xref:Microsoft.AspNetCore.Hosting.WebHostBuilder>.
 
 In Orleans 1.5, the configuration for Azure looked like this:
 
@@ -99,7 +99,7 @@ public class WorkerRole : RoleEntryPoint
 }
 ```
 
-Orleans 2.0 provides a more flexible and modular API for configuring and hosting a silo via `SiloHostBuilder` and `ISiloHost`.
+Orleans 2.0 provides a more flexible and modular API for configuring and hosting a silo via <xref:Orleans.Hosting.SiloHostBuilder> and <xref:Orleans.Hosting.ISiloHost>.
 
 ```csharp
 public class WorkerRole : RoleEntryPoint

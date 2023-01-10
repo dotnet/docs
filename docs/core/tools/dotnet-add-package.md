@@ -1,15 +1,15 @@
 ---
 title: dotnet add package command
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 11/11/2020
+ms.date: 04/13/2022
 ---
 # dotnet add package
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet add package` - Adds a package reference to a project file.
+`dotnet add package` - Adds or updates a package reference in a project file.
 
 ## Synopsis
 
@@ -24,27 +24,31 @@ dotnet add package -h|--help
 
 ## Description
 
-The `dotnet add package` command provides a convenient option to add a package reference to a project file. After running the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a `<PackageReference>` element is added to the project file and [dotnet restore](dotnet-restore.md) is run.
+The `dotnet add package` command provides a convenient option to add or update a package reference in a project file. When you run the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes and the package isn't referenced in the project file, a `<PackageReference>` element is added to the project file. If the check passes and the package is already referenced in the project file, the `<PackageReference>` element is updated to the latest compatible version. After the project file is updated, [dotnet restore](dotnet-restore.md) is run.
 
-For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following example:
+For example, adding `Microsoft.EntityFrameworkCore` to *ToDo.csproj* produces output similar to the following example:
 
 ```console
-Writing C:\Users\me\AppData\Local\Temp\tmp95A8.tmp
-info : Adding PackageReference for package 'Newtonsoft.Json' into project 'C:\projects\ToDo\ToDo.csproj'.
-log  : Restoring packages for C:\Temp\projects\consoleproj\consoleproj.csproj...
-info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json
-info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json 79ms
-info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg
-info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg 232ms
-log  : Installing Newtonsoft.Json 12.0.1.
-info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks in project 'C:\projects\ToDo\ToDo.csproj'.
-info : PackageReference for package 'Newtonsoft.Json' version '12.0.1' added to file 'C:\projects\ToDo\ToDo.csproj'.
+  Determining projects to restore...
+  Writing C:\Users\username\AppData\Local\Temp\tmp24A8.tmp
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'C:\ToDo\ToDo.csproj'.
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json
+info :   GET https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/516521bf-6417-457e-9a9c-0a4bdfde03e7/nuget/v3/registrations2-semver2/microsoft.entityframeworkcore/index.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.3.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.4/7.0.0-preview.2.22153.1.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.0-preview.3.22175.1/7.0.0-preview.3.22175.1.json
+info :   NotFound https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/516521bf-6417-457e-9a9c-0a4bdfde03e7/nuget/v3/registrations2-semver2/microsoft.entityframeworkcore/index.json 257ms
+info : Restoring packages for C:\ToDo\ToDo.csproj...
+info : Package 'Microsoft.EntityFrameworkCore' is compatible with all the specified frameworks in project 'C:\ToDo\ToDo.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore' version '6.0.4' added to file 'C:\ToDo\ToDo.csproj'.
+info : Writing assets file to disk. Path: C:\ToDo\obj\project.assets.json
+log  : Restored C:\ToDo\ToDo.csproj (in 171 ms).
 ```
 
 The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) element for the referenced package.
 
 ```xml
-<PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
 ```
 
 ### Implicit restore
@@ -62,8 +66,6 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
   The package reference to add.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -95,10 +97,10 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 ## Examples
 
-- Add `Newtonsoft.Json` NuGet package to a project:
+- Add `Microsoft.EntityFrameworkCore` NuGet package to a project:
 
   ```dotnetcli
-  dotnet add package Newtonsoft.Json
+  dotnet add package Microsoft.EntityFrameworkCore
   ```
 
 - Add a specific version of a package to a project:

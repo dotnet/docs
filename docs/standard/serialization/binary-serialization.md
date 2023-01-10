@@ -1,7 +1,7 @@
 ---
 title: "Binary serialization"
 description: This article describes binary serialization and types for which .NET Core supports it. Be aware of the dangers of binary serialization and alternatives to it.
-ms.date: "01/02/2018"
+ms.date: 03/18/2022
 helpviewer_keywords: 
   - "binary serialization"
   - "serialization, about serialization"
@@ -14,9 +14,9 @@ author: "ViktorHofer"
 ---
 # Binary serialization
 
-Serialization can be defined as the process of storing the state of an object to a storage medium. During this process, the public and private fields of the object and the name of the class, including the assembly containing the class, are converted to a stream of bytes, which is then written to a data stream. When the object is subsequently deserialized, an exact clone of the original object is created.
+Serialization is the process of storing the state of an object to a storage medium. In binary serialization, the public and private fields of the object and the name of the class, including the assembly containing the class, are converted to a stream of bytes, which is then written to a data stream. When the object is subsequently deserialized, an exact clone of the original object is created.
 
-When implementing a serialization mechanism in an object-oriented environment, you have to make a number of tradeoffs between ease of use and flexibility. The process can be automated to a large extent, provided you are given sufficient control over the process. For example, situations may arise where simple binary serialization is not sufficient, or there might be a specific reason to decide which fields in a class need to be serialized. The following sections examine the robust serialization mechanism provided with .NET and highlight a number of important features that allow you to customize the process to meet your needs.
+When implementing a serialization mechanism in an object-oriented environment, you often need to make tradeoffs between ease of use and flexibility. The process can be automated to a large extent, provided you are given sufficient control over the process. For example, situations may arise where simple binary serialization is not sufficient, or there might be a specific reason to decide which fields in a class need to be serialized. The following sections examine the robust serialization mechanism provided with .NET and highlight a number of important features that allow you to customize the process to meet your needs.
 
 > [!NOTE]
 > The state of a UTF-8 or UTF-7 encoded object is not preserved if the object is serialized and deserialized using different .NET versions.
@@ -168,7 +168,11 @@ Binary serialization allows modifying private members inside an object and there
 > | <xref:System.DivideByZeroException?displayProperty=nameWithType> | Starting in .NET Core 2.0.4. |
 > | <xref:System.DllNotFoundException?displayProperty=nameWithType> | Starting in .NET Core 2.0.4. |
 > | <xref:System.Double?displayProperty=nameWithType> | |
+> | <xref:System.Drawing.Bitmap?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
 > | <xref:System.Drawing.Color?displayProperty=nameWithType> | |
+> | <xref:System.Drawing.Icon?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
+> | <xref:System.Drawing.Image?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
+> | <xref:System.Drawing.Imaging.Metafile?displayProperty=nameWithType> | Starting in .NET Core 3.0 |
 > | <xref:System.Drawing.Point?displayProperty=nameWithType> | |
 > | <xref:System.Drawing.PointF?displayProperty=nameWithType> | |
 > | <xref:System.Drawing.Rectangle?displayProperty=nameWithType> | |
@@ -340,12 +344,3 @@ Contains classes that can be used for serializing and deserializing objects.
 
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)\
 Describes the XML serialization mechanism that is included with the common language runtime.
-
-- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)\
-Describes the secure coding guidelines to follow when writing code that performs serialization.
-
-- [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
-Describes the various methods in .NET Framework for remote communications.
-
-- [XML Web Services Created Using ASP.NET and XML Web Service Clients](/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))\
-Articles that describe and explain how to program XML Web services created using ASP.NET.

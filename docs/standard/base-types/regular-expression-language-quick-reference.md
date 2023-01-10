@@ -77,7 +77,7 @@ Anchors, or atomic zero-width assertions, cause a match to succeed or fail depen
 |`\A`|The match must occur at the start of the string.|`\A\d{3}`|`"901"` in `"901-333-"`|
 |`\Z`|The match must occur at the end of the string or before `\n` at the end of the string.|`-\d{3}\Z`|`"-333"` in `"-901-333"`|
 |`\z`|The match must occur at the end of the string.|`-\d{3}\z`|`"-333"` in `"-901-333"`|
-|`\G`|The match must occur at the point where the previous match ended.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
+|`\G`|The match must occur at the point where the previous match ended, or if there was no previous match, at the position in the string where matching started.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|
 |`\b`|The match must occur on a boundary between a `\w` (alphanumeric) and a `\W` (nonalphanumeric) character.|`\b\w+\s\w+\b`|`"them theme"`, `"them them"` in `"them theme them them"`|
 |`\B`|The match must not occur on a `\b` boundary.|`\Bend\w*\b`|`"ends"`, `"ender"` in `"end sends endure lender"`|
 
@@ -118,15 +118,15 @@ A quantifier specifies how many instances of the previous element (which can be 
 
 |Quantifier|Description|Pattern|Matches|
 |----------------|-----------------|-------------|-------------|
-|`*`|Matches the previous element zero or more times.|`\d*\.\d`|`".0"`, `"19.9"`, `"219.9"`|
+|`*`|Matches the previous element zero or more times.|`a.*c`|`"abcbc"` in `"abcbc"`|
 |`+`|Matches the previous element one or more times.|`"be+"`|`"bee"` in `"been"`, `"be"` in `"bent"`|
-|`?`|Matches the previous element zero or one time.|`"rai?n"`|`"ran"`, `"rain"`|
+|`?`|Matches the previous element zero or one time.|`"rai?"`|`"rai"` in `"rain"`|
 |`{` *n* `}`|Matches the previous element exactly *n* times.|`",\d{3}"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|
 |`{` *n* `,}`|Matches the previous element at least *n* times.|`"\d{2,}"`|`"166"`, `"29"`, `"1930"`|
 |`{` *n* `,` *m* `}`|Matches the previous element at least *n* times, but no more than *m* times.|`"\d{3,5}"`|`"166"`, `"17668"`<br /><br /> `"19302"` in `"193024"`|
-|`*?`|Matches the previous element zero or more times, but as few times as possible.|`\d*?\.\d`|`".0"`, `"19.9"`, `"219.9"`|
+|`*?`|Matches the previous element zero or more times, but as few times as possible.|`a.*?c`|`"abc"` in `"abcbc"`|
 |`+?`|Matches the previous element one or more times, but as few times as possible.|`"be+?"`|`"be"` in `"been"`, `"be"` in `"bent"`|
-|`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??n"`|`"ran"`, `"rain"`|
+|`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??"`|`"ra"` in `"rain"`|
 |`{` *n* `}?`|Matches the preceding element exactly *n* times.|`",\d{3}?"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|
 |`{` *n* `,}?`|Matches the previous element at least *n* times, but as few times as possible.|`"\d{2,}?"`|`"166"`, `"29"`, `"1930"`|
 |`{` *n* `,` *m* `}?`|Matches the previous element between *n* and *m* times, but as few times as possible.|`"\d{3,5}?"`|`"166"`, `"17668"`<br /><br /> `"193"`, `"024"` in `"193024"`|

@@ -1,12 +1,12 @@
 ---
 title: Backward compatibility guidelines
 description: Learn the backward compatibility guidelines in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/15/2022
 ---
 
 # Backward compatibility guidelines
 
-Writing backward compatible code can be hard and difficult to test.
+Writing backward compatible code can be hard and difficult to test. This article discusses the guidelines for writing backward compatible code in .NET Orleans. This article covers the usage of <xref:Orleans.CodeGeneration.VersionAttribute>, and <xref:System.ObsoleteAttribute>.
 
 ## Never change the signature of existing methods
 
@@ -64,7 +64,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 public interface IMyGrain : IGrainWithIntegerKey
 {
     // return a - b
-    Task<int> Substract(int a, int b);
+    Task<int> Subtract(int a, int b);
 }
 ```
 
@@ -72,8 +72,8 @@ public interface IMyGrain : IGrainWithIntegerKey
 [Version(2)]
 public interface IMyGrain : IGrainWithIntegerKey
 {
-    // return y - x
-    Task<int> Substract(int y, int x);
+    // return a - b
+    Task<int> Subtract(int b, int a);
 }
 ```
 
@@ -82,7 +82,7 @@ handled by a V2 activation:
 
 ```csharp
 var grain = client.GetGrain<IMyGrain>(0);
-var result = await grain.Substract(5, 4); // Will return "-1" instead of expected "1"
+var result = await grain.Subtract(5, 4); // Will return "-1" instead of expected "1"
 ```
 
 This is due to how the internal Orleans serializer works.

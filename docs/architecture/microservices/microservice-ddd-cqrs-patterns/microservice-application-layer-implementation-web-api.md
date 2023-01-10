@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Implement the microservice application layer using the Web API
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 ## Use Dependency Injection to inject infrastructure objects into your application layer
 
 As mentioned previously, the application layer can be implemented as part of the artifact (assembly) you are building, such as within a Web API project or an MVC web app project. In the case of a microservice built with ASP.NET Core, the application layer will usually be your Web API library. If you want to separate what is coming from ASP.NET Core (its infrastructure plus your controllers) from your custom application layer code, you could also place your application layer in a separate class library, but that is optional.
@@ -166,7 +168,7 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 - **Introduction to Dependency Injection in ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
+  [https://learn.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
 
 - **Autofac.** Official documentation. \
   <https://docs.autofac.org/en/latest/>
@@ -216,7 +218,7 @@ The following example shows the simplified `CreateOrderCommand` class. This is a
 // http://cqrs.nu/Faq
 // https://docs.spine3.org/motivation/immutability.html
 // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
-// https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
+// https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
 
 [DataContract]
 public class CreateOrderCommand

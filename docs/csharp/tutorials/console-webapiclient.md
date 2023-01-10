@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Make HTTP requests in a .NET console app using C#"
 description: Learn how to make HTTP requests to a REST web service and deserialize JSON responses. This tutorial creates a .NET console and uses C#.
-ms.date: 04/21/2021
+ms.date: 10/28/2022
 ---
 
 # Tutorial: Make HTTP requests in a .NET console app using C\#
@@ -20,9 +20,8 @@ If you prefer to follow along with the [final sample](/samples/dotnet/samples/co
 
 ## Prerequisites
 
-* [.NET SDK 5.0 or later](https://dotnet.microsoft.com/download/dotnet/5.0)
-* A code editor such as [Visual Studio Code](https://code.visualstudio.com/), which is an open
-source, cross platform editor. You can run the sample app on Windows, Linux, or macOS, or in a Docker container.
+* [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download/dotnet/6.0)
+* A code editor such as [Visual Studio [Code](https://code.visualstudio.com/) (an open-source, cross-platform editor). You can run the sample app on Windows, Linux, or macOS, or in a Docker container.
 
 ## Create the client app
 
@@ -47,7 +46,7 @@ directory.
    dotnet run
    ```
 
-   [`dotnet run`](../../core/tools/dotnet-run.md) automatically runs [`dotnet restore`](../../core/tools/dotnet-restore.md) to restore any dependencies that the app needs. It also runs [`dotnet build`](../../core/tools/dotnet-build.md) if needed.
+   [`dotnet run`](../../core/tools/dotnet-run.md) automatically runs [`dotnet restore`](../../core/tools/dotnet-restore.md) to restore any dependencies that the app needs. It also runs [`dotnet build`](../../core/tools/dotnet-build.md) if needed. You should see the app output `"Hello, World!"`. In your terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 ## Make HTTP requests
 
@@ -56,69 +55,38 @@ This app calls the [GitHub API](https://developer.github.com/v3/) to get informa
 
 Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:System.Net.Http.HttpClient> supports only async methods for its long-running APIs. So the following steps create an async method and call it from the Main method.
 
-1. Open the `Program.cs` file in your project directory and add the following async method to the `Program` class:
+1. Open the `Program.cs` file in your project directory and replace its contents with the following:
 
-   ```csharp
-   private static async Task ProcessRepositories()
-   {
-   }
-   ```
+    ```csharp
+    await ProcessRepositoriesAsync();
 
-1. Add a `using` directive at the top of the *Program.cs* file so that the C# compiler recognizes the <xref:System.Threading.Tasks.Task> type:
-
-   ```csharp
-   using System.Threading.Tasks;
-   ```
-
-   If you run `dotnet build` at this point, the compile succeeds but warns that this method doesn't contain any `await` operators and so runs synchronously. You'll add `await` operators later as you fill in the method.
-
-1. Replace the `Main` method with the following code:
-
-   ```csharp
-   static async Task Main(string[] args)
-   {
-       await ProcessRepositories();
-   }
-   ```
+    static async Task ProcessRepositoriesAsync(HttpClient client)
+    {
+    }
+    ```
 
    This code:
 
-   * Changes the signature of `Main` by adding the `async` modifier and changing the return type to `Task`.
-   * Replaces the `Console.WriteLine` statement with a call to `ProcessRepositories` that uses the `await` keyword.
+   * Replaces the `Console.WriteLine` statement with a call to `ProcessRepositoriesAsync` that uses the `await` keyword.
+   * Defines an empty `ProcessRepositoriesAsync` method.
 
-1. In the `Program` class, create a static instance of <xref:System.Net.Http.HttpClient> to handle requests and responses.
+1. In the `Program` class, use an <xref:System.Net.Http.HttpClient> to handle requests and responses, by replacing the content with the following C#.
 
-   ```csharp
-   namespace WebAPIClient
-   {
-       class Program
-       {
-           private static readonly HttpClient client = new HttpClient();
+    ```csharp
+    using System.Net.Http.Headers;
 
-           static async Task Main(string[] args)
-           {
-               //...
-           }
-       }
-   }
-   ```
+    using HttpClient client = new();
+    client.DefaultRequestHeaders.Accept.Clear();
+    client.DefaultRequestHeaders.Accept.Add(
+        new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
+    client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
 
-1. In the `ProcessRepositories` method, call the GitHub endpoint that returns a list of all repositories under the .NET foundation organization:
+    await ProcessRepositoriesAsync(client);
 
-   ```csharp
-   private static async Task ProcessRepositories()
-   {
-       client.DefaultRequestHeaders.Accept.Clear();
-       client.DefaultRequestHeaders.Accept.Add(
-           new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-       client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-
-       var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
-
-       var msg = await stringTask;
-       Console.Write(msg);
-   }
-   ```
+    static async Task ProcessRepositoriesAsync(HttpClient client)
+    {
+    }
+    ```
 
    This code:
 
@@ -126,15 +94,23 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
      * An [`Accept`](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept) header to accept JSON responses
      * A [`User-Agent`](https://developer.mozilla.org/docs/Web/HTTP/Headers/User-Agent) header.
      These headers are checked by the GitHub server code and are necessary to retrieve information from GitHub.
-   * Calls <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> to make a web request and retrieve the response. This method starts a task that makes the web request. When the request returns, the task reads the response stream and extracts the content from the stream. The body of the response is returned as a <xref:System.String>, which is available when the task completes.
-   * Awaits the task for the response string and prints the response to the console.
 
-1. Add two `using` directives at the top of the file:
+1. In the `ProcessRepositoriesAsync` method, call the GitHub endpoint that returns a list of all repositories under the .NET foundation organization:
 
    ```csharp
-   using System.Net.Http;
-   using System.Net.Http.Headers;
+    static async Task ProcessRepositoriesAsync(HttpClient client)
+    {
+        var json = await client.GetStringAsync(
+            "https://api.github.com/orgs/dotnet/repos");
+    
+        Console.Write(json);
+    }
    ```
+
+   This code:
+
+   * Awaits the task returned from calling <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> method. This method sends an HTTP GET request to the specified URI. The body of the response is returned as a <xref:System.String>, which is available when the task completes.
+   * The response string `json` is printed to the console.
 
 1. Build the app and run it.
 
@@ -142,26 +118,16 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
    dotnet run
    ```
 
-   There is no build warning because the `ProcessRepositories` now contains an `await` operator.
-
-   The output is a long display of JSON text.
+   There is no build warning because the `ProcessRepositoriesAsync` now contains an `await` operator. The output is a long display of JSON text.
 
 ## Deserialize the JSON Result
 
 The following steps convert the JSON response into C# objects. You use the <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> class to deserialize JSON into objects.
 
-1. Create a file named *repo.cs* and add the following code:
+1. Create a file named *Repository.cs* and add the following code:
 
    ```csharp
-   using System;
-
-   namespace WebAPIClient
-   {
-       public class Repository
-       {
-           public string name { get; set; }
-       }
-   }
+   public record class Repository(string name);
    ```
 
    The preceding code defines a class to represent the JSON object returned from the GitHub API. You'll use this class to display a list of repository names.
@@ -171,39 +137,40 @@ The following steps convert the JSON response into C# objects. You use the <xref
    The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md), but the `name` property here starts with a lowercase letter because that matches exactly what's in the JSON. Later you'll see how to use C# property names that don't match the JSON property names.
 
 1. Use the serializer to convert JSON into C# objects. Replace the call to
-<xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositories` method with the following lines:
+<xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
 
-   ```csharp
-   var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-   var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-   ```
+    ```csharp
+    await using Stream stream =
+        await client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+    var repositories =
+        await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
+    ```
 
    The updated code replaces <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> with <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)>. This serializer method uses a stream instead of a string as its source.
 
    The first argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> is an `await` expression. `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement. The other two parameters, `JsonSerializerOptions` and `CancellationToken`, are optional and are omitted in the code snippet.
 
-   The `DeserializeAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` class, because the JSON text represents a collection of repository objects.
+   The `DeserializeAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` record, because the JSON text represents a collection of repository objects.
 
 1. Add code to display the name of each repository. Replace the lines that read:
 
-   ```csharp
-   var msg = await stringTask;
-   Console.Write(msg);
-   ```
+    ```csharp
+    Console.Write(json);
+    ```
 
-   with the following code:
+    with the following code:
 
-   ```csharp
-   foreach (var repo in repositories)
-       Console.WriteLine(repo.name);
-   ```
+    ```csharp
+    foreach (var repo in repositories ?? Enumerable.Empty<Repository>())
+        Console.Write(repo.name);
+    ```
 
-1. Add the following `using` directives at the top of the file:
+1. The following `using` directives should be present at the top of the file:
 
-   ```csharp
-   using System.Collections.Generic;
-   using System.Text.Json;
-   ```
+    ```csharp
+    using System.Net.Http.Headers;
+    using System.Text.Json;
+    ```
 
 1. Run the app.
 
@@ -215,23 +182,25 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
 ## Configure deserialization
 
-1. In *repo.cs*, change the `name` property to `Name` and add a `[JsonPropertyName]` attribute to specify how this property appears in the JSON.
+1. In *Repository.cs*, replace the file contents with the following C#.
 
-   ```csharp
-   [JsonPropertyName("name")]
-   public string Name { get; set; }
-   ```
+    ```csharp
+    using System.Text.Json.Serialization;
 
-1. Add the <xref:System.Text.Json.Serialization> namespace to the `using` directives:
+    public record class Repository(
+        [property: JsonPropertyName("name")] string Name);
+    ```
 
-   ```csharp
-   using System.Text.Json.Serialization;
-   ```
+    This code:
+
+    * Changes the name of the `name` property to `Name`.
+    * Adds the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> to specify how this property appears in the JSON.
 
 1. In *Program.cs*, update the code to use the new capitalization of the `Name` property:
 
    ```csharp
-   Console.WriteLine(repo.Name);
+   foreach (var repo in repositories)
+      Console.Write(repo.Name);
    ```
 
 1. Run the app.
@@ -240,35 +209,34 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
 ## Refactor the code
 
-The `ProcessRepositories` method can do the async work and return a collection of the repositories. Change that method to return `List<Repository>`, and move the code that writes the information into the `Main` method.
+The `ProcessRepositoriesAsync` method can do the async work and return a collection of the repositories. Change that method to return `Task<List<Repository>>`, and move the code that writes to the console near its caller.
 
-1. Change the signature of `ProcessRepositories` to return a task whose result is a list of `Repository` objects:
+1. Change the signature of `ProcessRepositoriesAsync` to return a task whose result is a list of `Repository` objects:
 
    ```csharp
-   private static async Task<List<Repository>> ProcessRepositories()
+   static async Task<List<Repository>> ProcessRepositoriesAsync()
    ```
 
 1. Return the repositories after processing the JSON response:
 
-   ```csharp
-   var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-   var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-   return repositories;
-   ```
+    ```csharp
+    await using Stream stream =
+        await client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+    var repositories =
+        await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
+    return repositories ?? new();
+    ```
 
    The compiler generates the `Task<T>` object for the return value because you've marked this method as `async`.
 
-1. Modify the `Main` method to capture the results and write each repository name to the console. The `Main` method now looks like this:
+1. Modify the *Program.cs* file, replacing the call to `ProcessRepositoriesAsync` with the following to capture the results and write each repository name to the console.
 
-   ```csharp
-   public static async Task Main(string[] args)
-   {
-       var repositories = await ProcessRepositories();
+    ```csharp
+    var repositories = await ProcessRepositoriesAsync(client);
 
-       foreach (var repo in repositories)
-           Console.WriteLine(repo.Name);
-   }
-   ```
+    foreach (var repo in repositories)
+        Console.Write(repo.Name);
+    ```
 
 1. Run the app.
 
@@ -276,39 +244,36 @@ The `ProcessRepositories` method can do the async work and return a collection o
 
 ## Deserialize more properties
 
-The following steps add code to process more of the properties in the  received JSON packet. You probably won't want to process every property, but adding a few more demonstrates other features of C#.
+The following steps add code to process more of the properties in the received JSON packet. You probably won't want to process every property, but adding a few more demonstrates other features of C#.
 
-1. Add the following properties to the `Repository` class definition:
+1. Replace the contents of `Repository` class, with the following `record` definition:
 
-   ```csharp
-   [JsonPropertyName("description")]
-   public string Description { get; set; }
+    ```csharp
+    using System.Text.Json.Serialization;
 
-   [JsonPropertyName("html_url")]
-   public Uri GitHubHomeUrl { get; set; }
-
-   [JsonPropertyName("homepage")]
-   public Uri Homepage { get; set; }
-
-   [JsonPropertyName("watchers")]
-   public int Watchers { get; set; }
-   ```
+    public record class Repository(
+        [property: JsonPropertyName("name")] string Name,
+        [property: JsonPropertyName("description")] string Description,
+        [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
+        [property: JsonPropertyName("homepage")] Uri Homepage,
+        [property: JsonPropertyName("watchers")] int Watchers);
+    ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 
-1. Update the `Main` method to display the property values:
+1. Update the `foreach` loop in the *Program.cs* file to display the property values:
 
-   ```csharp
-   foreach (var repo in repositories)
-   {
-       Console.WriteLine(repo.Name);
-       Console.WriteLine(repo.Description);
-       Console.WriteLine(repo.GitHubHomeUrl);
-       Console.WriteLine(repo.Homepage);
-       Console.WriteLine(repo.Watchers);
-       Console.WriteLine();
-   }
-   ```
+    ```csharp
+    foreach (var repo in repositories)
+    {
+        Console.WriteLine($"Name: {repo.Name}");
+        Console.WriteLine($"Homepage: {repo.Homepage}");
+        Console.WriteLine($"GitHub: {repo.GitHubHomeUrl}");
+        Console.WriteLine($"Description: {repo.Description}");
+        Console.WriteLine($"Watchers: {repo.Watchers:#,0}");
+        Console.WriteLine();
+    }
+    ```
 
 1. Run the app.
 
@@ -326,23 +291,22 @@ This format is for Coordinated Universal Time (UTC), so the result of deserializ
 
 To get a date and time represented in your time zone, you have to write a custom conversion method.
 
-1. In *repo.cs*, add a `public` property for the UTC representation of the date and time and a `LastPush` `readonly` property that returns the date converted to local time:
+1. In *Repository.cs*, add a property for the UTC representation of the date and time and a readonly `LastPush` property that returns the date converted to local time, the file should look like the following:
 
-   ```csharp
-   [JsonPropertyName("pushed_at")]
-   public DateTime LastPushUtc { get; set; }
+    :::code source="snippets/WebAPIClient/Repository.cs":::
 
-   public DateTime LastPush => LastPushUtc.ToLocalTime();
-   ```
-
-   The `LastPush` property is defined using an *expression-bodied member* for the `get` accessor. There's no `set` accessor. Omitting the `set`  accessor is one way to define a *read-only* property in C#. (Yes, you can create *write-only* properties in C#, but their value is limited.)
+   The `LastPush` property is defined using an *expression-bodied member* for the `get` accessor. There's no `set` accessor. Omitting the `set` accessor is one way to define a *read-only* property in C#. (Yes, you can create *write-only* properties in C#, but their value is limited.)
 
 1. Add another output statement in *Program.cs*:
 again:
 
    ```csharp
-   Console.WriteLine(repo.LastPush);
+   Console.WriteLine($"Last push: {repo.LastPush}");
    ```
+
+1. The complete app should resemble the following *Program.cs* file:
+
+    :::code source="snippets/WebAPIClient/Program.cs":::
 
 1. Run the app.
 
@@ -352,4 +316,4 @@ again:
 
 In this tutorial, you created an app that makes web requests and parses the results. Your version of the app should now match the [finished sample](/samples/dotnet/samples/console-webapiclient/).
 
-Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json-how-to.md).
+Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json/how-to.md).

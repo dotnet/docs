@@ -1,7 +1,10 @@
 name: ".NET breaking change"
 description: Report a change in .NET that breaks something that worked in a previous version. Intended mostly for product-team use.
 title: "[Breaking change]: "
-labels: breaking-change,Pri1,doc-idea
+labels:
+  - breaking-change
+  - Pri1
+  - doc-idea
 assignees:
  - gewarren
 body:
@@ -18,9 +21,11 @@ body:
       label: Version
       description: What version of .NET introduced the breaking change?
       options:
-        - .NET 7 Preview 1
-        - .NET 7 Preview 2
-        - .NET 7 Preview 3
+        - .NET 7
+        - .NET 8 Preview 1
+        - .NET 8 Preview 2
+        - .NET 8 Preview 3
+        - .NET 8 (other)
         - Other (please put exact version in description textbox)
     validations:
       required: true
@@ -42,12 +47,11 @@ body:
     id: change-type
     attributes:
       label: Type of breaking change
-      description: This information will be used to label the issue appropriately.
+      description: This information will be used to label the issue appropriately. [(How do I decide?)](https://learn.microsoft.com/dotnet/core/compatibility/categories)
       options:
-        - label: "**Binary incompatible**: Existing binaries may encounter a breaking change in behavior, such as failure to load/execute or different run-time behavior."
-        - label:  "**Source incompatible**: Source code may encounter a breaking change in behavior when targeting the new runtime/component/SDK, such as compile errors or different run-time behavior."
-    validations:
-      required: true
+        - label: "**Binary incompatible**: Existing binaries may encounter a breaking change in behavior, such as failure to load or execute, and if so, require recompilation."
+        - label:  "**Source incompatible**: When recompiled using the new SDK or component or to target the new runtime, existing source code may require source changes to compile successfully."
+        - label:  "**Behavioral change**: Existing binaries may behave differently at run time."
   - type: textarea
     id: reason
     attributes:
@@ -81,11 +85,13 @@ body:
         - Interop
         - JIT
         - LINQ
+        - .NET MAUI
         - Networking
         - SDK
         - Security
         - Serialization
         - Visual Basic
+        - WCF Client
         - Windows Forms
         - Windows Presentation Foundation (WPF)
         - XML, XSLT

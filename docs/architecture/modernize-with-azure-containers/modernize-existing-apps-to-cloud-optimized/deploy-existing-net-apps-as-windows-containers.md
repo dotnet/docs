@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Deploy existing .NET apps as Windows containers
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
 However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don't need to rearchitect your application.
@@ -117,11 +119,11 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 - **Windows Containers documentation**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/](/virtualization/windowscontainers/)
+    [https://learn.microsoft.com/virtualization/windowscontainers/](/virtualization/windowscontainers/)
 
 - **Windows Containers fundamentals**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/about/](/virtualization/windowscontainers/about/)
+    [https://learn.microsoft.com/virtualization/windowscontainers/about/](/virtualization/windowscontainers/about/)
 
 - **Infographic: Microsoft and containers**
 

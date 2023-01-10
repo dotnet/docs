@@ -17,7 +17,7 @@ One of the features of object-oriented frameworks is that developers can extend 
 
  ❌ DO NOT seal classes without having a good reason to do so.
 
- Sealing a class because you cannot think of an extensibility scenario is not a good reason. Framework users like to inherit from classes for various nonobvious reasons, like adding convenience members. See [Unsealed Classes](unsealed-classes.md) for examples of nonobvious reasons users want to inherit from a type.
+ Sealing a class because you cannot think of an extensibility scenario is not a good reason. Framework users like to inherit from classes for various non-obvious reasons, like adding convenience members. See [Unsealed Classes](unsealed-classes.md) for examples of non-obvious reasons users want to inherit from a type.
 
  Good reasons for sealing a class include the following:
 

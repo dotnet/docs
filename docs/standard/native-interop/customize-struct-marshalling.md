@@ -21,9 +21,9 @@ Sometimes the default marshalling rules for structures aren't exactly what you n
 
 ❌ AVOID using `LayoutKind.Explicit` when marshalling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
-## Customizing boolean field marshalling
+## Customizing Boolean field marshalling
 
-Native code has many different boolean representations. On Windows alone, there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. The .NET runtime provides a way to indicate how to marshal your boolean field. The following examples show how to marshal .NET `bool` to different native boolean types.
+Native code has many different Boolean representations. On Windows alone, there are three ways to represent Boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your Boolean values. The .NET runtime provides a way to indicate how to marshal your Boolean field. The following examples show how to marshal .NET `bool` to different native Boolean types.
 
 Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](/windows/desktop/winprog/windows-data-types#BOOL) value as shown in the following example:
 
@@ -75,7 +75,7 @@ struct CBool
 };
 ```
 
-On Windows, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType> value to tell the runtime to marshal your boolean value to a 2-byte `VARIANT_BOOL` value:
+On Windows, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType> value to tell the runtime to marshal your Boolean value to a 2-byte `VARIANT_BOOL` value:
 
 ```csharp
 public struct VariantBool

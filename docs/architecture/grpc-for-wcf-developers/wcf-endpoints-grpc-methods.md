@@ -6,6 +6,8 @@ ms.date: 09/02/2019
 
 # WCF endpoints and gRPC methods
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In Windows Communication Foundation (WCF), when you're writing your application code, you use one of the following methods:
 
 - You write the application code in a class and decorate methods with the [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute.

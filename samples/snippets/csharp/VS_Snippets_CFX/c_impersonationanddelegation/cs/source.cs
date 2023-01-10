@@ -5,8 +5,6 @@ using System.ServiceModel;
 using System.Security.Principal;
 using System.Security.Permissions;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace SnippetsPart1
 {
     interface IHelloService

@@ -9,6 +9,8 @@ ms.contributors: jeliknes-01302020
 ---
 # Azure Functions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Azure Functions provide a serverless compute experience. A function is invoked by a *trigger* (such as access to an HTTP endpoint or a timer) and executes a block of code or business logic. Functions also support specialized *bindings* that connect to resources like storage and queues.
 
 ![Azure functions logo](./media/azure-functions-logo.png)

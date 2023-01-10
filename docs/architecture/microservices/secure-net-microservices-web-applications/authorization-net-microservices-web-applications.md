@@ -6,6 +6,8 @@ ms.date: 01/30/2020
 ---
 # About authorization in .NET microservices and web applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 After authentication, ASP.NET Core Web APIs need to authorize access. This process allows a service to make APIs available to some authenticated users, but not to all. [Authorization](/aspnet/core/security/authorization/introduction) can be done based on users' roles or based on custom policy, which might include inspecting claims or other heuristics.
 
 Restricting access to an ASP.NET Core MVC route is as easy as applying an Authorize attribute to the action method (or to the controller's class if all the controller's actions require authorization), as shown in following example:
@@ -109,16 +111,16 @@ An example of a custom authorization requirement and handler for checking a user
 ## Additional resources
 
 - **ASP.NET Core Authentication** \
-  [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
+  [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 
 - **ASP.NET Core Authorization** \
-  [https://docs.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
+  [https://learn.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
 
 - **Role-based Authorization** \
-  [https://docs.microsoft.com/aspnet/core/security/authorization/roles](/aspnet/core/security/authorization/roles)
+  [https://learn.microsoft.com/aspnet/core/security/authorization/roles](/aspnet/core/security/authorization/roles)
 
 - **Custom Policy-Based Authorization** \
-  [https://docs.microsoft.com/aspnet/core/security/authorization/policies](/aspnet/core/security/authorization/policies)
+  [https://learn.microsoft.com/aspnet/core/security/authorization/policies](/aspnet/core/security/authorization/policies)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

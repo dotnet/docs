@@ -35,7 +35,7 @@ To create an array in which all the elements are initialized to zero, use `Array
 
 ## Access elements
 
-You can access array elements by using a dot operator (`.`) and brackets (`[` and `]`).
+You can access array elements by using brackets (`[` and `]`). The original dot syntax (`.[index]`) is still supported but no longer recommended as of F# 6.0.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet5.fs)]
 
@@ -137,13 +137,6 @@ The output of the preceding code is as follows.
 [`Array.concat`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html#concat) takes a sequence of arrays and combines them into a single array. The following code demonstrates `Array.concat`.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet16.fs)]
-
-The output of the preceding code is as follows.
-
-```console
-[|(1, 1, 1); (1, 2, 2); (1, 3, 3); (2, 1, 2); (2, 2, 4); (2, 3, 6); (3, 1, 3);
-(3, 2, 6); (3, 3, 9)|]
-```
 
 [`Array.filter`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html#filter) takes a Boolean condition function and generates a new array that contains only those elements from the input array for which the condition is true. The following code demonstrates `Array.filter`.
 

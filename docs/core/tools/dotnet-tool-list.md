@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool list
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -33,11 +33,7 @@ The `dotnet tool list` command provides a way for you to list all .NET global, t
 * To list global tools installed in a custom location, use the `--tool-path` option.
 * To list local tools, use the `--local` option or omit the `--global`, `--tool-path`, and `--local` options.
 
-**Local tools are available starting with .NET Core SDK 3.0.**
-
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 - **`-g|--global`**
 

@@ -6,6 +6,8 @@ ms.date: 09/02/2019
 
 # Types of RPC
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 As a Windows Communication Foundation (WCF) developer, you're probably used to dealing with the following types of remote procedure call (RPC):
 
 - Request/reply

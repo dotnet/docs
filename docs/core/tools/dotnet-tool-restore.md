@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool restore
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -28,8 +28,6 @@ dotnet tool restore -h|--help
 The `dotnet tool restore` command finds the tool manifest file that is in scope for the current directory and installs the tools that are listed in it. For information about manifest files, see [Install a local tool](global-tools.md#install-a-local-tool) and [Invoke a local tool](global-tools.md#invoke-a-local-tool).
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 

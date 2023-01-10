@@ -13,7 +13,7 @@ ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 ---
 # Default Marshalling Behavior
 
-Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the m marshallerrovides performance optimizations.  
+Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the marshaller provides performance optimizations.  
   
  This section identifies the default behavioral characteristics of the interop marshalling service. It presents detailed information on marshalling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   
@@ -350,7 +350,7 @@ interface _Graphics {
 }  
 ```  
   
- The same rules used to marshal values and references to platform invoke calls are used when marshalling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop  marshallerdoes not support higher levels of indirection (**Point** \*\*) in either direction.  
+ The same rules used to marshal values and references to platform invoke calls are used when marshalling through COM interfaces. For example, when an instance of the `Point` value type is passed from the .NET Framework to COM, the `Point` is passed by value. If the `Point` value type is passed by reference, a pointer to a `Point` is passed on the stack. The interop marshaller does not support higher levels of indirection (**Point** \*\*) in either direction.  
   
 > [!NOTE]
 > Structures having the <xref:System.Runtime.InteropServices.LayoutKind> enumeration value set to **Explicit** cannot be used in COM interop because the exported type library cannot express an explicit layout.  

@@ -10,6 +10,8 @@ uid: azure/devops/deploy-to-app-service
 ---
 # Deploy an app to App Service
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [Azure App Service](/azure/app-service/) is Azure's web hosting platform. Deploying a web app to Azure App Service can be done manually or by an automated process. This section of the guide discusses deployment methods that can be triggered manually or by script using the command line, or triggered manually using Visual Studio.
 
 In this section, you'll accomplish the following tasks:
@@ -65,7 +67,7 @@ From a command shell, download the code, build the project, and run it as follow
 
      ![The app displaying the contents of an RSS feed](./media/deploying-to-app-service/app-in-browser.png)
 
-6. Once you're satisfied the app is working correctly, shut it down by pressing **Ctrl**+**C** in the command shell.
+6. Once you're satisfied the app is working correctly, shut it down by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the command shell.
 
 ## Create the Azure App Service Web App
 
@@ -152,7 +154,7 @@ The app has already been deployed from the command shell. Let's use Visual Studi
 
 1. Open *SimpleFeedReader.sln* in Visual Studio.
 2. In Solution Explorer, open *Pages\Index.cshtml*. Change `<h2>Simple Feed Reader</h2>` to `<h2>Simple Feed Reader - V2</h2>`.
-3. Press **Ctrl**+**Shift**+**B** to build the app.
+3. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the app.
 4. In Solution Explorer, right-click on the project and click **Publish**.
 
     ![Screenshot showing Right-click, Publish](./media/deploying-to-app-service/publish.png)

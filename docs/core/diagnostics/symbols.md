@@ -32,7 +32,7 @@ Portable PDBs can be read on any operating systems and is the recommended symbol
 
 * Using .NET decompilers such as ildasm or .NET reflector and expecting to see source line mappings or local parameter names.
 
-* The latest versions of [DIA](/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk) and tools using it for reading symbols, such as WinDBG support Portable PDBs, but older version do not.
+* The latest versions of [DIA](/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk) and tools using it for reading symbols, such as WinDBG support Portable PDBs, but older versions do not.
 
 * There may be older versions of profilers that do not support portable PDBs.
 

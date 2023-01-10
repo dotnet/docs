@@ -8,7 +8,6 @@ Imports System.Security.Permissions
 
 '</snippet1>
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 

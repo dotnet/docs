@@ -75,10 +75,10 @@ When you specify [**DebugType**](code-generation.md#debugtype), the compiler wil
 
 ## PathMap
 
-The **PathMap** compiler option specifies how to map physical paths to source path names output by the compiler. This option maps each physical path on the machine where the compiler runs to a corresponding path that should be written in the output files. In the following example, `path1` is the full path to the source files in the current environment, and `sourcePath1` is the source path substituted for `path1` in any output files. To specify multiple mapped source paths, separate each with a semicolon.
+The **PathMap** compiler option specifies how to map physical paths to source path names output by the compiler. This option maps each physical path on the machine where the compiler runs to a corresponding path that should be written in the output files. In the following example, `path1` is the full path to the source files in the current environment, and `sourcePath1` is the source path substituted for `path1` in any output files. To specify multiple mapped source paths, separate each with a comma.
 
 ```xml
-<PathMap>path1=sourcePath1;path2=sourcePath2</PathMap>
+<PathMap>path1=sourcePath1,path2=sourcePath2</PathMap>
 ```
 
 The compiler writes the source path into its output for the following reasons:

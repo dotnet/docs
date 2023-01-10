@@ -45,7 +45,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           </endpoint>  
         </client>  
   
-//The bindings section references by the bindingConfiguration endpoint attribute.  
+<!-- The bindings section references by the bindingConfiguration endpoint attribute.   -->
     <bindings>  
       <wsHttpBinding>  
         <binding name="WSHttpBinding_IHello"
@@ -55,7 +55,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           <reliableSession ordered="true"
                            enabled="false" />  
           <security mode="Message">  
-           //Security settings go here.  
+           <!-- Security settings go here.   -->
           </security>  
         </binding>  
         <binding name="Another Binding"  
@@ -64,7 +64,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           </wsHttpBinding>  
      </bindings>  
   
-//The behavior section references by the behaviorConfiguration endpoint attribute.  
+<!-- The behavior section references by the behaviorConfiguration endpoint attribute.   -->
         <behaviors>  
             <endpointBehaviors>  
                 <behavior name=" IHello_Behavior ">  

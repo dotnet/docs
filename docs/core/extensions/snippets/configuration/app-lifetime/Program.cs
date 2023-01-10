@@ -1,19 +1,14 @@
 ﻿// <Program>
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AppLifetime.Example;
 
-namespace AppLifetime.Example;
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((_, services) =>
+        services.AddHostedService<ExampleHostedService>())
+    .Build();
 
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
-
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) =>
-                services.AddHostedService<ExampleHostedService>());
-}
+await host.RunAsync();
 // </Program>
 // <Output>
 // Sample output:
@@ -26,7 +21,7 @@ class Program
 //     info: Microsoft.Hosting.Lifetime[0]
 //           Hosting environment: Production
 //     info: Microsoft.Hosting.Lifetime[0]
-//           Content root path: ..\app-lifetime\bin\Debug\net5.0
+//           Content root path: ..\app-lifetime\bin\Debug\net6.0
 //     info: ExampleHostedService[0]
 //           3. OnStopping has been called.
 //     info: Microsoft.Hosting.Lifetime[0]

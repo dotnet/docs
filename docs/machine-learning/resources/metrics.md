@@ -1,7 +1,7 @@
 ---
 title: ML.NET metrics
 description: Understand the metrics that are used to evaluate the performance of an ML.NET model
-ms.date: 12/17/2019
+ms.date: 11/10/2022
 ---
 # Evaluate your ML.NET model with metrics
 
@@ -26,7 +26,7 @@ For further details on binary classification metrics read the following articles
 - [Binary Classification Metrics class](xref:Microsoft.ML.Data.BinaryClassificationMetrics)
 - [The Relationship Between Precision-Recall and ROC Curves](http://pages.cs.wisc.edu/~jdavis/davisgoadrichcamera2.pdf)
 
-## Evaluation metrics for Multi-class Classification
+## Evaluation metrics for Multi-class Classification and text classification
 
 | Metrics   |      Description      |  Look for |
 |-----------|-----------------------|-----------|

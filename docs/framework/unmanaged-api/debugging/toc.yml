@@ -1,3 +1,4 @@
+items:
 - name: Debugging
   href: index.md
   items:
@@ -72,6 +73,18 @@
       items:
       - name: ProvideLibrary Method
         href: iclrdebugginglibraryprovider-providelibrary-method.md
+    - name: ICLRDebuggingLibraryProvider2 Interface
+      href: iclrdebugginglibraryprovider2-interface.md
+      items:
+      - name: ProvideLibrary2 Method
+        href: iclrdebugginglibraryprovider2-providelibrary2-method.md
+    - name: ICLRDebuggingLibraryProvider3 Interface
+      href: iclrdebugginglibraryprovider3-interface.md
+      items:
+      - name: ProvideWindowsLibrary Method
+        href: iclrdebugginglibraryprovider3-providewindowslibrary-method.md
+      - name: ProvideUnixLibrary Method
+        href: iclrdebugginglibraryprovider3-provideunixlibrary-method.md
     - name: ICLRMetadataLocator Interface
       href: iclrmetadatalocator-interface.md
       items:
@@ -853,6 +866,11 @@
       items:
       - name: "ICorDebugModule3::CreateReaderForInMemorySymbols Method"
         href: icordebugmodule3-createreaderforinmemorysymbols-method.md
+    - name: ICorDebugModule4 Interface
+      href: icordebugmodule4-interface.md
+      items:
+      - name: "ICorDebugModule4::IsMappedLayout Method"
+        href: icordebugmodule4-ismappedlayout-method.md
     - name: ICorDebugModuleBreakpoint Interface
       href: icordebugmodulebreakpoint-interface.md
       items:
@@ -1050,6 +1068,11 @@
       items:
       - name: EnableExceptionCallbacksOutsideOfMyCode Method
         href: icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
+    - name: ICorDebugProcess11 Interface
+      href: icordebugprocess11-interface.md
+      items:
+      - name: EnumerateLoaderHeapMemoryRegions Method
+        href: icordebugprocess11-enumerateloaderheapmemoryregions-method.md
     - name: ICorDebugProcessEnum Interface
       href: icordebugprocessenum-interface.md
       items:
@@ -1480,6 +1503,8 @@
       href: clrdatacreateinstance-function.md
     - name: PFN_CLRDataCreateInstance Function Pointer
       href: pfn-clrdatacreateinstance-function-pointer.md
+    - name: PSTARTUP_CALLBACK Function Pointer
+      href: pstartup_callback-function-pointer.md
   - name: Debugging Enumerations
     href: debugging-enumerations.md
     items:
@@ -1557,6 +1582,8 @@
       href: corgcreferencetype-enumeration.md
     - name: ILCodeKind Enumeration
       href: ilcodekind-enumeration.md
+    - name: LIBRARY_PROVIDER_INDEX_TYPE Enumeration
+      href: libraryproviderindextype-enumeration.md
     - name: LoggingLevelEnum Enumeration
       href: logginglevelenum-enumeration.md
     - name: LogSwitchCallReason Enumeration
@@ -1623,17 +1650,53 @@
       href: dacprejitdata-structure.md
     - name: StackTrace_SimpleContext Structure
       href: stacktrace-simplecontext-structure.md
+  - name: .NET Core Debugging
+    href: dotnet-debugging.md
+    items:
+    - name: CLRCreateInstance Function
+      href: clrcreateinstance-function.md
+    - name: CloseCLREnumeration Function
+      href: closeclrenumeration-function.md
+    - name: CloseResumeHandle Function
+      href: closeresumehandle-function.md
+    - name: CreateVersionStringFromModule Function
+      href: createversionstringfrommodule-function.md
+    - name: CreateDebuggingInterfaceFromVersion Function
+      href: createdebugginginterfacefromversion-function.md
+    - name: CreateDebuggingInterfaceFromVersionEx Function
+      href: createdebugginginterfacefromversionex-function.md
+    - name: CreateDebuggingInterfaceFromVersion2 Function
+      href: createdebugginginterfacefromversion2-function.md
+    - name: CreateDebuggingInterfaceFromVersion3 Function
+      href: createdebugginginterfacefromversion3-function.md
+    - name: CreateProcessForLaunch Function
+    - name: CreateProcessForLaunch Function
+      href: createprocessforlaunch-function.md
+    - name: EnumerateCLRs Function
+      href: enumerateclrs-function.md
+    - name: GetStartupNotificationEvent Function
+      href: getstartupnotificationevent-function.md
+    - name: RegisterForRuntimeStartup Function
+      href: registerforruntimestartup-function.md
+    - name: RegisterForRuntimeStartupEx Function
+      href: registerforruntimestartupex-function.md
+    - name: RegisterForRuntimeStartup3 Function
+      href: registerforruntimestartup3-function.md
+    - name: ResumeProcess Function
+      href: resumeprocess-function.md
+    - name: UnregisterForRuntimeStartup Function
+      href: unregisterforruntimestartup-function.md
   - name: Silverlight Debugging
     href: silverlight-debugging.md
     items:
     - name: CloseCLREnumeration Function
-      href: closeclrenumeration-function.md
+      href: closeclrenumeration-function-for-silverlight.md
     - name: CreateCoreClrDebugTarget Function
       href: createcoreclrdebugtarget-function.md
     - name: CreateCordbObject Function
       href: createcordbobject-function.md
     - name: CreateVersionStringFromModule Function
-      href: createversionstringfrommodule-function.md
+      href: createversionstringfrommodule-function-for-silverlight.md
     - name: CreateDebuggingInterfaceFromVersion Function
       href: createdebugginginterfacefromversion-function-for-silverlight.md
     - name: CoreClrDebugProcInfo Structure
@@ -1641,9 +1704,9 @@
     - name: CoreClrDebugRuntimeInfo Structure
       href: coreclrdebugruntimeinfo-structure.md
     - name: EnumerateCLRs Function
-      href: enumerateclrs-function.md
+      href: enumerateclrs-function-for-silverlight.md
     - name: GetStartupNotificationEvent Function
-      href: getstartupnotificationevent-function.md
+      href: getstartupnotificationevent-function-for-silverlight.md
     - name: ICoreClrDebugTarget Interface
       href: icoreclrdebugtarget-interface.md
       items:

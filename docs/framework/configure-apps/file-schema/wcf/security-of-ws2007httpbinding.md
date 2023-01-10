@@ -31,7 +31,7 @@ Represents the security settings used with the [\<ws2007HttpBinding>](ws2007http
       </binding>
     </ws2007HttpBinding>
   </bindings>
-</system.ServiceModel>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

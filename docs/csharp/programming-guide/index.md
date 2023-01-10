@@ -1,7 +1,7 @@
 ---
 title: "C# Programming Guide"
 description: Use these resources for detailed information on key C# language features and features accessible to C# through .NET.
-ms.date: 05/02/2017
+ms.date: 03/25/2022
 f1_keywords: 
   - "cs.langref"
 helpviewer_keywords: 
@@ -27,7 +27,13 @@ This section provides detailed information on key C# language features and featu
 
 ## Language Sections
 
-[Statements, Expressions, and Operators](./statements-expressions-operators/index.md)  
+ [Statements](statements-expressions-operators/statements.md)
+
+ [Operators and expressions](../language-reference/operators/index.md)
+
+ [Expression-bodied members](statements-expressions-operators/expression-bodied-members.md)
+
+ [Equality Comparisons](statements-expressions-operators/equality-comparisons.md)
 
  [Types](../fundamentals/types/index.md)  
 

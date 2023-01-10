@@ -1,10 +1,12 @@
 ---
 title: IdentityServer for Cloud Native Apps
 description: Architecting Cloud Native .NET Apps for Azure | IdentityServer
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # IdentityServer for cloud-native applications
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 IdentityServer is an authentication server that implements OpenID Connect (OIDC) and OAuth 2.0 standards for ASP.NET Core. It's designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign-in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization and/or set of applications' needs.
 
@@ -24,7 +26,7 @@ Typically, applications need to support some or all of the following scenarios:
 
 In each of these scenarios, the exposed functionality needs to be secured against unauthorized use. At a minimum, this typically requires authenticating the user or principal making a request for a resource. This authentication may use one of several common protocols such as SAML2p, WS-Fed, or OpenID Connect. Communicating with APIs typically uses the OAuth2 protocol and its support for security tokens. Separating these critical cross-cutting security concerns and their implementation details from the applications themselves ensures consistency and improves security and maintainability. Outsourcing these concerns to a dedicated product like IdentityServer helps the requirement for every application to solve these problems itself.
 
-IdentityServer provides middleware that runs within an ASP.NET Core application and adds support for OpenID Connect and OAuth2 (see [supported specifications](https://docs.identityserver.io/en/latest/intro/specs.html)). Organizations would create their own ASP.NET Core app using IdentityServer middleware to act as the STS for all of their token-based security protocols. The IdentityServer middleware exposes endpoints to support standard functionality, including:
+IdentityServer provides middleware that runs within an ASP.NET Core application and adds support for OpenID Connect and OAuth2 (see [supported specifications](https://docs.duendesoftware.com/identityserver/v6/overview/specs/)). Organizations would create their own ASP.NET Core app using IdentityServer middleware to act as the STS for all of their token-based security protocols. The IdentityServer middleware exposes endpoints to support standard functionality, including:
 
 - Authorize (authenticate the end user)
 - Token (request a token programmatically)
@@ -39,12 +41,12 @@ IdentityServer provides middleware that runs within an ASP.NET Core application 
 
 IdentityServer4 is available under dual license:  
 
-* RPL - let's you use the IdentityServer4 free if used in open source work
-* Paid - let's you use the IdentityServer4 in a commercial scenario
+* RPL - lets you use the IdentityServer4 free if used in open-source work
+* Paid - lets you use the IdentityServer4 in a commercial scenario
 
-Please reach out to official [Product's pricing](https://duendesoftware.com/products/identityserver) page.
+For more information about pricing, see the official product's [pricing page](https://duendesoftware.com/products/identityserver).
 
-You can add it to your applications using its NuGet packages. The main package is [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/) that has been downloaded over four million times. The base package doesn't include any user interface code and only supports in memory configuration. To use it with a database, you'll also want a data provider like [IdentityServer4.EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework) that uses Entity Framework Core to store configuration and operational data for IdentityServer. For user interface, you can copy files from the [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign out using IdentityServer middleware.
+You can add it to your applications using its NuGet packages. The main package is [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/), which has been downloaded over four million times. The base package doesn't include any user interface code and only supports in-memory configuration. To use it with a database, you'll also want a data provider like [IdentityServer4.EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework), which uses Entity Framework Core to store configuration and operational data for IdentityServer. For user interface, you can copy files from the [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign out using IdentityServer middleware.
 
 ## Configuration
 
@@ -93,17 +95,15 @@ public class Startup
 
 **Figure 8-2**. Configuring IdentityServer.
 
-IdentityServer also hosts a public demo site that can be used to test various protocols and configurations. It's located at [https://demo.identityserver.io/](https://demo.identityserver.io/) and includes information on how to configure its behavior based on the `client_id` provided to it.
-
 ## JavaScript clients
 
-Many cloud-native applications leverage server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](https://docs.identityserver.io/en/latest/quickstarts/4_javascript_client.html) (`oidc-client.js`) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
+Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](https://docs.duendesoftware.com/identityserver/v6/quickstarts/js_clients/) (`oidc-client.js`) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
 
 ## References
 
-- [IdentityServer documentation](https://docs.identityserver.io/en/latest/)
+- [IdentityServer documentation](https://docs.duendesoftware.com/identityserver/v6/)
 - [Application types](/azure/active-directory/develop/app-types)
-- [JavaScript OIDC client](https://docs.identityserver.io/en/latest/quickstarts/4_javascript_client.html)
+- [JavaScript OIDC client](https://docs.duendesoftware.com/identityserver/v6/quickstarts/js_clients/)
 
 >[!div class="step-by-step"]
 >[Previous](azure-active-directory.md)

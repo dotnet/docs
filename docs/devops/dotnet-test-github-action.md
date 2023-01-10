@@ -36,14 +36,14 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="11-12":::
 
-  - The environment variable `DOTNET_VERSION` is assigned the value `'5.0.301'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v1` GitHub Action.
+  - The environment variable `DOTNET_VERSION` is assigned the value `'6.0.401'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v3` GitHub Action.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
   :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="14-37" highlight="2,4-8,13-15,18,21,24":::
 
   - There is a single job, named `build-<os>` where the `<os>` is the operating system name from the `strategy/matrix`. The `name` and `runs-on` elements are dynamic for each value in the `matrix/os`. This will run on the latest versions of Ubuntu, Windows, and macOS.
-  - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
+  - The `actions/setup-dotnet@v3` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
   - The [`dotnet restore`](../core/tools/dotnet-restore.md) command is called.
   - The [`dotnet build`](../core/tools/dotnet-build.md) command is called.
   - The [`dotnet test`](../core/tools/dotnet-test.md) command is called.

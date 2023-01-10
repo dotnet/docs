@@ -8,6 +8,8 @@ no-loc: [Blazor, WebAssembly]
 ---
 # Working with Data in ASP.NET Core Apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "Data is a precious thing and will last longer than the systems themselves."
 >
 > Tim Berners-Lee
@@ -32,7 +34,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory
 
 ### The DbContext
 
-To work with EF Core, you need a subclass of <xref:Microsoft.EntityFrameworkCore.DbContext>. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a CatalogContext with collections for items, brands, and types:
+To work with EF Core, you need a subclass of <xref:Microsoft.EntityFrameworkCore.DbContext>. This class holds properties representing collections of the entities your application will work with. The eShopOnWeb sample includes a `CatalogContext` with collections for items, brands, and types:
 
 ```csharp
 public class CatalogContext : DbContext
@@ -48,11 +50,11 @@ public class CatalogContext : DbContext
 }
 ```
 
-Your DbContext must have a constructor that accepts DbContextOptions and pass this argument to the base DbContext constructor. If you have only one DbContext in your application, you can pass an instance of DbContextOptions, but if you have more than one you must use the generic DbContextOptions\<T> type, passing in your DbContext type as the generic parameter.
+Your DbContext must have a constructor that accepts `DbContextOptions` and pass this argument to the base `DbContext` constructor. If you have only one DbContext in your application, you can pass an instance of `DbContextOptions`, but if you have more than one you must use the generic `DbContextOptions<T>` type, passing in your DbContext type as the generic parameter.
 
 ### Configuring EF Core
 
-In your ASP.NET Core application, you'll typically configure EF Core in your ConfigureServices method. EF Core uses a DbContextOptionsBuilder, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code to ConfigureServices:
+In your ASP.NET Core application, you'll typically configure EF Core in your `ConfigureServices` method. EF Core uses a `DbContextOptionsBuilder`, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code to `ConfigureServices`:
 
 ```csharp
 services.AddDbContext<CatalogContext>(options => options.UseSqlServer (Configuration.GetConnectionString("DefaultConnection")));
@@ -65,7 +67,7 @@ services.AddDbContext<CatalogContext>(options =>
     options.UseInMemoryDatabase());
 ```
 
-Once you have installed EF Core, created a DbContext child type, and configured it in ConfigureServices, you are ready to use EF Core. You can request an instance of your DbContext type in any service that needs it, and start working with your persisted entities using LINQ as if they were simply in a collection. EF Core does the work of translating your LINQ expressions into SQL queries to store and retrieve your data.
+Once you have installed EF Core, created a DbContext child type, and configured it in `ConfigureServices`, you are ready to use EF Core. You can request an instance of your DbContext type in any service that needs it, and start working with your persisted entities using LINQ as if they were simply in a collection. EF Core does the work of translating your LINQ expressions into SQL queries to store and retrieve your data.
 
 You can see the queries EF Core is executing by configuring a logger and ensuring its level is set to at least Information, as shown in Figure 8-1.
 
@@ -75,7 +77,7 @@ You can see the queries EF Core is executing by configuring a logger and ensurin
 
 ### Fetching and storing Data
 
-To retrieve data from EF Core, you access the appropriate property and use LINQ to filter the result. You can also use LINQ to perform projection, transforming the result from one type to another. The following example would retrieve CatalogBrands, ordered by name, filtered by their Enabled property, and projected onto a SelectListItem type:
+To retrieve data from EF Core, you access the appropriate property and use LINQ to filter the result. You can also use LINQ to perform projection, transforming the result from one type to another. The following example would retrieve CatalogBrands, ordered by name, filtered by their Enabled property, and projected onto a `SelectListItem` type:
 
 ```csharp
 var brandItems = await _context.CatalogBrands
@@ -86,9 +88,9 @@ var brandItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-It's important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable\<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at run time, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, List\<T>) as the result.
+It's important in the above example to add the call to `ToListAsync` in order to execute the query immediately. Otherwise, the statement will assign an `IQueryable<SelectListItem>` to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning `IQueryable` results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at run time, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, `List<T>`) as the result.
 
-EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the SaveChanges method on the DbContext, making sure it's the same DbContext instance that was used to fetch the entity. Adding and removing entities is directly done on the appropriate DbSet property, again with a call to SaveChanges to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
+EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the `SaveChangesAsync` method on the DbContext, making sure it's the same DbContext instance that was used to fetch the entity. Adding and removing entities is directly done on the appropriate DbSet property, again with a call to `SaveChangesAsync` to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
 
 ```csharp
 // create
@@ -108,6 +110,8 @@ await _context.SaveChangesAsync();
 ```
 
 EF Core supports both synchronous and async methods for fetching and saving. In web applications, it's recommended to use the async/await pattern with the async methods, so that web server threads are not blocked while waiting for data access operations to complete.
+
+For more information, see [Buffering and Streaming](/ef/core/performance/efficient-querying#buffering-and-streaming).
 
 ### Fetching related data
 
@@ -157,7 +161,8 @@ public class Basket : BaseEntity
 
   public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
   {
-    if (!Items.Any(i => i.CatalogItemId == catalogItemId))
+    var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
+    if (existingItem == null)
     {
       _items.Add(new BasketItem()
       {
@@ -165,10 +170,8 @@ public class Basket : BaseEntity
         Quantity = quantity,
         UnitPrice = unitPrice
       });
-      return;
-    }
-    var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
-    existingItem.Quantity += quantity;
+    } 
+    else existingItem.Quantity += quantity;
   }
 }
 ```
@@ -222,11 +225,11 @@ builder.Services.AddDbContext<OrderingContext>(options =>
 
 #### Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
 
-When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retryable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
+When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retryable operation. Each query and each call to `SaveChangesAsync` will be retried as a unit if a transient failure occurs.
 
-However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit; everything inside the transaction has to be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several SaveChanges from multiple DbContexts in it.
+However, if your code initiates a transaction using BeginTransaction, you are defining your own group of operations that need to be treated as a unit; everything inside the transaction has to be rolled back if a failure occurs. You will see an exception like the following if you attempt to execute that transaction when using an EF execution strategy (retry policy) and you include several `SaveChangesAsync` from multiple DbContexts in it.
 
-System.InvalidOperationException: The configured execution strategy 'SqlServerRetryingExecutionStrategy' does not support user initiated transactions. Use the execution strategy returned by 'DbContext.Database.CreateExecutionStrategy()' to execute all the operations in the transaction as a retryable unit.
+System.InvalidOperationException: The configured execution strategy `SqlServerRetryingExecutionStrategy` does not support user initiated transactions. Use the execution strategy returned by `DbContext.Database.CreateExecutionStrategy()` to execute all the operations in the transaction as a retryable unit.
 
 The solution is to manually invoke the EF execution strategy with a delegate representing everything that needs to be executed. If a transient failure occurs, the execution strategy will invoke the delegate again. The following code shows how to implement this approach:
 
@@ -234,7 +237,7 @@ The solution is to manually invoke the EF execution strategy with a delegate rep
 // Use of an EF Core resiliency strategy when using multiple DbContexts
 // within an explicit transaction
 // See:
-// https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
+// https://learn.microsoft.com/ef/core/miscellaneous/connection-resiliency
 var strategy = _catalogContext.Database.CreateExecutionStrategy();
 await strategy.ExecuteAsync(async () =>
 {
@@ -255,14 +258,14 @@ await strategy.ExecuteAsync(async () =>
 });
 ```
 
-The first DbContext is the \_catalogContext and the second DbContext is within the \_integrationEventLogService object. Finally, the Commit action would be performed multiple DbContexts and using an EF Execution Strategy.
+The first DbContext is the `_catalogContext` and the second DbContext is within the `_integrationEventLogService` object. Finally, the Commit action would be performed multiple DbContexts and using an EF Execution Strategy.
 
 > ### References – Entity Framework Core
 >
 > - **EF Core Docs**
->   [https://docs.microsoft.com/ef/](/ef/)
+>   [https://learn.microsoft.com/ef/](/ef/)
 > - **EF Core: Related Data**
->   [https://docs.microsoft.com/ef/core/querying/related-data](/ef/core/querying/related-data)
+>   [https://learn.microsoft.com/ef/core/querying/related-data](/ef/core/querying/related-data)
 > - **Avoid Lazy Loading Entities in ASPNET Applications**
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
@@ -343,7 +346,7 @@ The Azure Cosmos DB query language is a simple yet powerful interface for queryi
 **References – Azure Cosmos DB**
 
 - Azure Cosmos DB Introduction
-  [https://docs.microsoft.com/azure/cosmos-db/introduction](/azure/cosmos-db/introduction)
+  [https://learn.microsoft.com/azure/cosmos-db/introduction](/azure/cosmos-db/introduction)
 
 ## Other persistence options
 
@@ -360,7 +363,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 **References – Azure Storage**
 
 - Azure Storage Introduction
-  [https://docs.microsoft.com/azure/storage/common/storage-introduction](/azure/storage/common/storage-introduction)
+  [https://learn.microsoft.com/azure/storage/common/storage-introduction](/azure/storage/common/storage-introduction)
 
 ## Caching
 
@@ -387,7 +390,7 @@ The previous example will result in the following header being added to the resp
 Cache-Control: public,max-age=60
 ```
 
-In order to add server-side in-memory caching to the application, you must reference the Microsoft.AspNetCore.ResponseCaching NuGet package, and then add the Response Caching middleware. This middleware is configured with services and middleware during app startup:
+In order to add server-side in-memory caching to the application, you must reference the `Microsoft.AspNetCore.ResponseCaching` NuGet package, and then add the Response Caching middleware. This middleware is configured with services and middleware during app startup:
 
 ```csharp
 builder.Services.AddResponseCaching();
@@ -403,7 +406,7 @@ The Response Caching Middleware will automatically cache responses based on a se
 
 Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this functionality, you can use in memory caching on the web server, or use [a distributed cache](/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
 
-You add support for memory (or distributed) caching in ConfigureServices:
+You add support for memory (or distributed) caching in `ConfigureServices`:
 
 ```csharp
 builder.Services.AddMemoryCache();
@@ -462,7 +465,7 @@ public class CachedCatalogService : ICatalogService
 }
 ```
 
-To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in ConfigureServices:
+To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in `ConfigureServices`:
 
 ```csharp
 builder.Services.AddMemoryCache();
@@ -524,7 +527,7 @@ _httpClient.DefaultRequestHeaders.Authorization =
 
 This activity can be done from any component that has the `HttpClient` injected into it, provided that `HttpClient` wasn't added to the application's services with a `Transient` lifetime. Every reference to `HttpClient` in the application references the same instance, so changes to it in one component flow through the entire application. A good place to perform this authentication check (followed by specifying the token) is in a shared component like the main navigation for the site. Learn more about this approach in the `BlazorAdmin` project in the [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb).
 
-One benefit of Blazor WebAssembly over traditional JavaScript SPAs is that you don't need to keep to copies of your data transfer objects(DTOs) synchronized. Your Blazor WebAssembly project and your web API project can both share the same DTOs in a common shared project. This approach eliminates some of the friction involved in developing SPAs.
+One benefit of Blazor WebAssembly over traditional JavaScript SPAs is that you don't need to keep copies of your data transfer objects(DTOs) synchronized. Your Blazor WebAssembly project and your web API project can both share the same DTOs in a common shared project. This approach eliminates some of the friction involved in developing SPAs.
 
 To quickly get data from an API endpoint, you can use the built-in helper method, `GetFromJsonAsync`. There are similar methods for POST, PUT, etc. The following shows how to get a CatalogItem from an API endpoint using a configured `HttpClient` in a Blazor WebAssembly app:
 
@@ -537,7 +540,7 @@ Once you have the data you need, you'll typically track changes locally. When yo
 **References – Blazor Data**
 
 - Call a web API from ASP.NET Core Blazor
-  [https://docs.microsoft.com/aspnet/core/blazor/call-web-api](/aspnet/core/blazor/call-web-api)
+  [https://learn.microsoft.com/aspnet/core/blazor/call-web-api](/aspnet/core/blazor/call-web-api)
 
 >[!div class="step-by-step"]
 >[Previous](develop-asp-net-core-mvc-apps.md)

@@ -67,7 +67,7 @@ The `client` element defines a list of endpoints that a client can connect to.
     <addressProperties actingAs="http://www.microsoft.com/TestActor"
                        identityData="BasicReadWrite"
                        identityType="Spn"
-                       isAddressPrivate="false">
+                       isAddressPrivate="false" />
   </endpoint>
 </client>
 ```

@@ -11,6 +11,9 @@ ms.assetid: 892548b8-954a-4f6a-9bca-2ae620c3700f
 
 This sample shows how to download a file from an FTP server.
 
+> [!NOTE]
+> This article is specific to projects that target .NET Framework. For projects that target .NET 6 and later versions, [FTP is no longer supported](../../core/compatibility/networking/6.0/webrequest-deprecated.md).
+
 ## Example
 
 ```csharp

@@ -1,7 +1,7 @@
 ---
 title: System.CommandLine overview
 description: "Learn how to develop and use command-line apps that are based on the System.CommandLine library"
-ms.date: 02/03/2022
+ms.date: 04/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -51,3 +51,4 @@ To learn more, see the following resources:
 * [How to customize help](customize-help.md)
 * [How to handle termination](handle-termination.md)
 * [How to write middleware and directives](use-middleware.md)
+* [System.CommandLine API reference](xref:System.CommandLine)

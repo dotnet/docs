@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Development process for Docker-based applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Develop containerized .NET applications the way you like, either Integrated Development Environment (IDE) focused with Visual Studio and Visual Studio tools for Docker or CLI/Editor focused with Docker CLI and Visual Studio Code.*
 
 ## Development environment for Docker apps
@@ -24,7 +26,7 @@ By installing [Docker Desktop](https://hub.docker.com/search/?type=edition&offer
 ### Additional resources
 
 - **Visual Studio**. Official site. \
-  [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
+  [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)
 
 - **Visual Studio Code**. Official site. \
   <https://code.visualstudio.com/download>

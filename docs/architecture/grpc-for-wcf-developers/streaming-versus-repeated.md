@@ -6,6 +6,8 @@ ms.date: 09/02/2019
 
 # gRPC streaming services vs. repeated fields
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 gRPC services provide two ways of returning datasets, or lists of objects. The Protocol Buffers message specification uses the `repeated` keyword for declaring lists or arrays of messages within another message. The gRPC service specification uses the `stream` keyword to declare a long-running persistent connection. Over that connection, multiple messages are sent, and can be processed, individually.
 
 You can also use the `stream` feature for long-running temporal data such as notifications or log messages. But this chapter will consider its use for returning a single dataset.

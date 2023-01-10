@@ -1,0 +1,27 @@
+name: Close stale issues
+
+on:
+  schedule: # Run 5 minutes after midnight daily.
+  - cron: '5 0 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+    - uses: actions/stale@6f05e4244c9a0b2ed3401882b05d701dd0a7289b
+      with:
+        start-date: '2022-03-01T00:00:00Z' # ISO 8601 or RFC 2822
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        days-before-stale: 180
+        days-before-close: 14
+        stale-issue-label: stale
+        close-issue-message: >
+            This issue has been automatically closed due to lack of activity.
+            If you feel this issue is still important, please reopen it and leave a comment.
+        exempt-issue-labels: 'breaking-change,Pri0,:watch: Not Triaged,:checkered_flag: Release: .NET 7,:checkered_flag: Release: .NET 8'
+        operations-per-run: 50
+        debug-only: true

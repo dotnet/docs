@@ -29,7 +29,7 @@ Provides information about [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]. 
 Provides links to topics about how to create a [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) object model in applications.
 
 [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
-Provides links to topics about how to create multitiered data applications.
+Provides links to topics about how to create multi-tiered data applications.
 
 [Add new connections](/visualstudio/data-tools/add-new-connections)  
 Provides links to pages on connecting your application to data with design-time tools and ADO.NET connection objects, using Visual Studio.

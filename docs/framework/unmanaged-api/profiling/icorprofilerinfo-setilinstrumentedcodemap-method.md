@@ -22,7 +22,7 @@ topic_type:
 Sets a code map for the specified function using the specified Microsoft intermediate language (MSIL) map entries.
 
 > [!NOTE]
-> In the .NET Framework version 2.0, calling `SetILInstrumentedCodeMap` on a `FunctionID` that represents a generic function in a particular application domain will affect all instances of that function in the application domain.
+> In .NET Framework version 2.0, calling `SetILInstrumentedCodeMap` on a `FunctionID` that represents a generic function in a particular application domain will affect all instances of that function in the application domain.
 
 ## Syntax
 
@@ -36,16 +36,16 @@ HRESULT SetILInstrumentedCodeMap(
 
 ## Parameters
 
-`functionId`
+`functionId`\
 [in] The ID of the function for which to set the code map.
 
-`fStartJit`
+`fStartJit`\
 [in] A Boolean value that indicates whether the call to the `SetILInstrumentedCodeMap` method is the first for a particular `FunctionID`. Set `fStartJit` to `true` in the first call to `SetILInstrumentedCodeMap` for a given `FunctionID`, and to `false` thereafter.
 
-`cILMapEntries`
+`cILMapEntries`\
 [in] The number of elements in the `cILMapEntries` array.
 
-`rgILMapEntries`
+`rgILMapEntries`\
 [in] An array of COR_IL_MAP structures, each of which specifies an MSIL offset.
 
 ## Remarks

@@ -1,12 +1,12 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 01/31/2022
+ms.date: 09/07/2022
 ---
 
 # .NET environment variables
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 In this article, you'll learn about the environment variables used by .NET SDK, .NET CLI, and .NET runtime. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all.
 
@@ -82,12 +82,12 @@ Socket continuations are dispatched to the <xref:System.Threading.ThreadPool?dis
 > [!NOTE]
 > This setting can make performance worse if there is expensive work that will end up holding onto the IO thread for longer than needed. Test to make sure this setting helps performance.
 
-Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, a single socket engine is capable of keeping busy up to thirty x64 and eight ARM64 CPU cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second),
+Using TechEmpower benchmarks that generate a lot of small socket reads and writes under a very high load, a single socket engine is capable of keeping busy up to thirty x64 and eight Arm64 CPU cores. The vast majority of real-life scenarios will never generate such a huge load (hundreds of thousands of requests per second),
 and having a single producer is almost always enough. However, to be sure that extreme loads can be handled, you can use `DOTNET_SYSTEM_NET_SOCKETS_THREAD_COUNT` to override the calculated value. When not overridden, the following value is used:
 
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is `1`, the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> value is used.
 - When `DOTNET_SYSTEM_NET_SOCKETS_INLINE_COMPLETIONS` is not `1`, <xref:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture?displayProperty=nameWithType> is evaluated:
-  - When ARM or ARM64 the cores per engine value is set to `8`, otherwise `30`.
+  - When Arm or Arm64 the cores per engine value is set to `8`, otherwise `30`.
 - Using the determined cores per engine, the maximum value of either `1` or <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> over the cores per engine.
 
 ### `DOTNET_SYSTEM_NET_DISABLEIPV6`
@@ -107,6 +107,9 @@ AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
 The `AppContext` switch can also be set by a config file. For more information configuring switches, see [AppContext for library consumers](/dotnet/api/system.appcontext?#appcontext-for-library-consumers).
 
 The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`. To opt-out, set the value to either `false` or `0`.
+
+> [!NOTE]
+> Starting in .NET 5, this setting to use <xref:System.Net.Http.HttpClientHandler> is no longer available.
 
 ### `DOTNET_Jit*` and `DOTNET_GC*`
 
@@ -134,7 +137,7 @@ For more information, see [Investigating JIT and GC Hole stress](https://github.
 
 #### JIT memory barriers
 
-The code generator for ARM64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
+The code generator for Arm64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
 
 ### `DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`
 
@@ -156,23 +159,29 @@ When <xref:System.Console.IsOutputRedirected?displayProperty=nameWithType> is `t
 
 ### `DOTNET_DiagnosticPorts`
 
-Configures .NET processes to connect to [dotnet monitor](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/configuration.md#connection-mode) when dotnet monitor is in Listen mode.
+Configures alternate endpoints where diagnostic tools can communicate with the .NET runtime. See the [Diagnostic Port documentation](../diagnostics/diagnostic-port.md) for more information.
 
-### Mono-specific variables
+### `DOTNET_DefaultDiagnosticPortSuspend`
 
-- `DOTNET_DefaultDiagnosticPortSuspend`: Configures the runtime to pause during startup and wait for the _Diagnostics IPC ResumeStartup_ command from the specified diagnostic port.
-- `DOTNET_EnableDiagnostics`: When set to `1`, enables Mono diagnostics.
-- `DOTNET_EnableEventPipe`: When set to `1`, enables the Mono event pipe.
-- `DOTNET_EventPipeOutputPath`: The output path for the Mono event pipe.
-- `DOTNET_EventPipeOutputStreaming`: When set to `1`, enables Mono event pipe output streaming.
+Configures the runtime to pause during startup and wait for the _Diagnostics IPC ResumeStartup_ command from the specified diagnostic port when set to 1. Defaults to 0. See the [Diagnostic Port documentation](../diagnostics/diagnostic-port.md) for more information.
 
-For more information, see [.NET runtime: Mono diagnostics and tracing](https://github.com/dotnet/runtime/blob/main/docs/design/mono/diagnostics-tracing.md).
+### `DOTNET_EnableDiagnostics`
+
+When set to `1`, enables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
+
+### EventPipe variables
+
+See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables) for more information.
+
+- `DOTNET_EnableEventPipe`: When set to `1`, enables tracing via EventPipe.
+- `DOTNET_EventPipeOutputPath`: The output path where the trace will be written.
+- `DOTNET_EventPipeOutputStreaming`: When set to `1`, enables streaming to the output file while the app is running. By default trace information is accumulated in a circular buffer and the contents are written at app shutdown.
 
 ## .NET SDK and CLI environment variables
 
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
 
-Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
+Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/local/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
 ### `NUGET_PACKAGES`
 
@@ -196,7 +205,7 @@ Specifies whether to generate an ASP.NET Core certificate. The default value is 
 
 ### `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`
 
-Specifies whether to add global tools to the `PATH` environment variable. the default is `true`. To not add global tools to the path, set to `0`, `false`, or `no`.
+Specifies whether to add global tools to the `PATH` environment variable. The default is `true`. To not add global tools to the path, set to `0`, `false`, or `no`.
 
 ### `DOTNET_CLI_TELEMETRY_OPTOUT`
 
@@ -208,23 +217,24 @@ If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolde
 
 ### `DOTNET_MULTILEVEL_LOOKUP`
 
-Specifies whether .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+Specifies whether the .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set the value to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+
+> [!NOTE]
+> This environment variable only applies to applications that target .NET 6 and earlier versions. Starting in .NET 7, .NET only looks for frameworks in one location. For more information, see [Multi-level lookup is disabled](../compatibility/deployment/7.0/multilevel-lookup.md).
 
 ### `DOTNET_ROLL_FORWARD`
 
-Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.  **Available starting with .NET Core 3.x.**
+Determines roll forward behavior. For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward).
 
 ### `DOTNET_ROLL_FORWARD_TO_PRERELEASE`
 
-If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions. **Available starting with .NET Core 3.x.**
+If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
-For more information, see [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
+For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward)
 
 ### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 
-Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
-
-This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
+Disables minor version roll forward, if set to `0`. This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
 
 ### `DOTNET_CLI_UI_LANGUAGE`
 
@@ -252,7 +262,7 @@ List of assemblies to load and execute startup hooks from.
 
 ### `DOTNET_BUNDLE_EXTRACT_BASE_DIR`
 
-Specifies a directory to which a single-file application is extracted before it is executed. **Available starting with .NET Core 3.x.**
+Specifies a directory to which a single-file application is extracted before it is executed.
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
 
@@ -274,8 +284,8 @@ Specifies the minimum number of hours between background downloads of advertisin
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
 * `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
-* `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`. **Available starting with .NET Core 3.x.**
-* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`. **Available starting with .NET Core 3.x.**
+* `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
+* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`.
 
   * `4` - all tracing information is written
   * `3` - only informational, warning, and error messages are written
@@ -287,26 +297,6 @@ The typical way to get detailed trace information about application startup is t
 ### `SuppressNETCoreSdkPreviewMessage`
 
 If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK is being used.
-
-### `DOTNET_WATCH_*`
-
-The following .NET watch settings are available as environment variables:
-
-- `DOTNET_WATCH`: The `dotnet watch` command sets this variable to `1` on all child processes launched.
-- `DOTNET_WATCH_ITERATION`: The `dotnet watch` command sets this variable to `1` and increments by one each time
-  a file is changed and the command is restarted.
-- `DOTNET_WATCH_SUPPRESS_STATIC_FILE_HANDLING`: If set to `1`, or `true`, `dotnet watch` will _not_ perform special handling for static content file.
-- `DOTNET_WATCH_SUPPRESS_MSBUILD_INCREMENTALISM`: By default, `dotnet watch` optimizes the build by avoiding certain operations such as running `restore` or re-evaluating the set of watched files on every file change. If set to `1` or `true`, these optimizations are disabled.
-- `DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER`: The `dotnet watch run` command will attempt to launch browsers for web apps with `launchBrowser` configured in the _launchSettings.json_ file. If set to `1` or `true`, this behavior is suppressed.
-- `DOTNET_WATCH_SUPPRESS_BROWSER_REFRESH`
-- `DOTNET_WATCH_AUTO_RELOAD_WS_HOSTNAME`: As part of `dotnet watch`, the browser refresh server mechanism reads this value to determine the WebSocket host environment. The value `127.0.0.1` is replaced by `localhost`, and the `http://` and `https://` schemes are replaced with `ws://` and `wss://` respectively.
-- `DOTNET_HOTRELOAD_NAMEDPIPE_NAME`: This value is configured by `dotnet watch` when the app is to be launched, and it specifies the named pipe.
-
-For more information, see [GitHub: .NET SDK dotnet-watch](https://github.com/dotnet/sdk/blob/main/src/BuiltInTools/dotnet-watch/README.md).
-
-#### `DOTNET_USE_POLLING_FILE_WATCHER`
-
-When set to `1` or `true`, `dotnet watch` will poll the file system for changes. This is required for some file systems, such as network shares, Docker mounted volumes, and other virtual file systems. The <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider> class uses `DOTNET_USE_POLLING_FILE_WATCHER` to determine whether the <xref:Microsoft.Extensions.FileProviders.PhysicalFileProvider.Watch%2A?displayProperty=nameWithType> method will rely on the <xref:Microsoft.Extensions.FileProviders.Physical.PollingFileChangeToken>.
 
 ### Configure MSBuild in the .NET CLI
 
@@ -323,6 +313,10 @@ These are overrides that are used to force the resolved SDK tasks and targets to
 ### `DOTNET_NEW_PREFERRED_LANG`
 
 Configures the default programming language for the `dotnet new` command when the `-lang|--language` switch is omitted. The default value is `C#`. Valid values are `C#`, `F#`, or `VB`. For more information, see [dotnet new](dotnet-new.md).
+
+### `dotnet watch` environment variables
+
+For information about `dotnet watch` settings that are available as environment variables, see [dotnet watch environment variables](dotnet-watch.md#environment-variables).
 
 ## See also
 

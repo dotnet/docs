@@ -1686,6 +1686,10 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee358724(v=vs.100)"
         },
         {
+            "source_path_from_root": "/docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md",
+            "redirect_url": "/dotnet/framework/wcf/feature-details/data-transfer-and-serialization"
+        },
+        {
             "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729672(v=vs.100)"
         },
@@ -1797,6 +1801,10 @@
         {
             "source_path_from_root": "/docs/framework/wcf/samples/transacted-batching.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/aa395219(v%3dvs.100)"
+        },
+        {
+            "source_path_from_root": "/docs/framework/wcf/samples/usage-of-serialization-binder.md",
+            "redirect_url": "/dotnet/framework/wcf/samples/"
         },
         {
             "source_path_from_root": "/docs/framework/wcf/samples/web-extensibility.md",
@@ -2388,6 +2396,250 @@
         {
             "source_path_from_root": "/docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
             "redirect_url": "/dotnet/desktop/xaml-services/escape-sequence-markup-extension"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/index.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/introducing-pluggable-protocols.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/network-programming-how-to-topics.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/requesting-data.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/creating-internet-requests.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-send-data-using-the-webrequest-class.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-streams-on-the-network.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/making-asynchronous-requests.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/handling-errors.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-response-errors"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/programming-pluggable-protocols.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-register-a-custom-protocol-using-webrequest.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/deriving-from-webrequest.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/deriving-from-webresponse.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-application-protocols.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/http.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-access-http-specific-properties.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/managing-connections.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/connection-grouping.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-assign-user-information-to-group-connections.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/tcp-udp.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-tcp-services.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/sockets.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-client-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-a-synchronous-server-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-client-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-an-asynchronous-server-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/synchronous-client-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/synchronous-server-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/asynchronous-client-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/asynchronous-server-socket-example.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/listening-with-sockets.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/socket-code-examples.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/socket-performance-enhancements-in-version-3-5.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/sockets-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/network-programming-samples.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/network-isolation-for-windows-store-apps.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/understanding-webrequest-problems-and-exceptions.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-response-errors"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/using-client-sockets.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services#create-a-socket-client"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-create-a-socket.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/socket-services"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/internet-protocol-version-6.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/ipv6-addressing.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-addressing"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/ipv6-routing.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-routing"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/ipv6-auto-configuration.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#ipv6-auto-configuration"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/enabling-and-disabling-ipv6.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#disable-or-enable-ipv6"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview#disable-or-enable-ipv6"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/networkinformation.md",
+            "redirect_url": "/dotnet/fundamentals/networking/network-info"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-detect-network-availability-and-address-changes.md",
+            "redirect_url": "/dotnet/fundamentals/networking/network-info#network-change-events"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-get-interface-and-protocol-information.md",
+            "redirect_url": "/dotnet/fundamentals/networking/network-info#network-statistics-and-properties"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-ping-a-host.md",
+            "redirect_url": "/dotnet/fundamentals/networking/network-info#determine-if-a-remote-host-is-reachable"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/accessing-the-internet-through-a-proxy.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/automatic-proxy-detection.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-override-a-global-proxy-selection.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#global-default-proxy"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/international-resource-identifier-support-in-system-uri.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview#identifying-resources"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/nat-traversal-using-ipv6-and-teredo.md",
+            "redirect_url": "/dotnet/fundamentals/networking/ipv6-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/proxy-configuration.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/changes-to-the-system-uri-namespace-in-version-2-0.md",
+            "redirect_url": "/dotnet/fundamentals/networking/overview#identifying-resources"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/changes-to-ntlm-authentication-for-httpwebrequest-in-version-3-5-sp1.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
+        },
+        {
+            "source_path_from_root": "/docs/framework/network-programming/how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
         }
     ]
 }

@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Introduction to the Microsoft platform and tools for containerized apps
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Vision: Create an adaptable, enterprise-grade, containerized application life cycle that spans your development, IT operations, and production management.*
 
 Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by the type of work delivered by multiple teams (app-development, DevOps infrastructure processes, and IT management and operations). Usually, in the enterprise, the profiles of "the persona" responsible for each area are different. So are their skills.

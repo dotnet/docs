@@ -1,6 +1,4 @@
-﻿// snippet
-// C:\sdtree\snippets\indigo\c_Collection_Types_in_Data_Contracts\CS\Program.cs
-using System;
+﻿using System;
 using System.Collections;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -9,7 +7,6 @@ using System.ComponentModel;
 using System.Security.Permissions;
 using System.Collections.Generic;
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.Security.Samples
 {
     // <Snippet8>

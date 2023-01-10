@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading;
-using Microsoft.Extensions.Primitives;
+﻿using Microsoft.Extensions.Primitives;
 
 internal static partial class Example
 {
@@ -25,7 +23,8 @@ internal static partial class Example
                     thirdCancellationChangeToken
                 });
 
-        Action<object?> callback = state => Console.WriteLine($"The {state} callback was invoked.");
+        static void callback(object? state) =>
+            Console.WriteLine($"The {state} callback was invoked.");
 
         // 1st, 2nd, 3rd, and 4th.
         compositeChangeToken.RegisterChangeCallback(callback, "1st");

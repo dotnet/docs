@@ -4,14 +4,12 @@ Imports System.IdentityModel.Claims
 Imports System.IdentityModel.Policy
 Imports System.IdentityModel.Tokens
 Imports System.Security.Cryptography.X509Certificates
-Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security.Tokens
 Imports System.Text
 '</snippet0>
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum)>
 Namespace Federation_Conceptual
     Friend Class Program
         Shared Sub Main()

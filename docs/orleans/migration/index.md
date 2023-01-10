@@ -1,7 +1,7 @@
 ---
 title: Migration guide
 description: Learn how to migrate forward from older versions of .NET Orleans.
-ms.date: 02/02/2022
+ms.date: 03/21/2022
 ---
 
 # Orleans migration guide
@@ -22,7 +22,7 @@ See more details in the [Configuration](../host/configuration-guide/index.md) se
 * Explicit programmatic specification of application assemblies that replaces automatic scanning of folders by the Orleans runtime upon silo or client initialization.
 
 Orleans will still automatically find relevant types, such as grain interfaces and classes, serializers, etc. in the specified assemblies, but it will no longer try to load every assembly it can find in the folder.
-An optional helper method for loading all assemblies in the folder is provided for backward compatibility: `IApplicationPartManager.AddFromApplicationBaseDirectory()`.
+An optional helper method for loading all assemblies in the folder is provided for backward compatibility: <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory%2A?displayProperty=nameWithType>.
 
 See [Configuration](../host/configuration-guide/index.md) and [Migration](migration-1.5.md) sections for more details.
 
@@ -38,7 +38,7 @@ Grain code would most likely need to reference only these abstractions, whereas 
 
 * Add support for Scoped services.
 
-This means that each grain activation gets its own scoped service provider, and Orleans registers a contextual `IGrainActivationContext` object that can be injected into a *Transient* or *Scoped* service to get access to activation specific information and grain activation lifecycle events. This is similar to how ASP.NET Core 2.0 creates a scoped context for each Request, but in the case of Orleans, it applies to the entire lifetime of a grain activation. For more information, see [Dependency Injection in .NET: Service lifetimes](../../core/extensions/dependency-injection.md#service-lifetimes).
+This means that each grain activation gets its own scoped service provider, and Orleans registers a contextual <xref:Orleans.Runtime.IGrainActivationContext> object that can be injected into a *Transient* or *Scoped* service to get access to activation specific information and grain activation lifecycle events. This is similar to how ASP.NET Core 2.0 creates a scoped context for each Request, but in the case of Orleans, it applies to the entire lifetime of a grain activation. For more information, see [Dependency Injection in .NET: Service lifetimes](../../core/extensions/dependency-injection.md#service-lifetimes).
 
 * Migrated the logging infrastructure to use `Microsoft.Extensions.Logging` (same abstractions as ASP.NET Core 2.0).
 

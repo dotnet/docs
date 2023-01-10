@@ -28,7 +28,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 
  The following examples show how to use `TryParse` with string representations of `long`, `byte`, and `decimal` values.  
   
- [!code-csharp[csProgGuideStrings#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#14)]  
+:::code language="csharp" source="./snippets/StringParsing.cs" id="ParseNumbers":::
   
 ## Robust Programming  
 

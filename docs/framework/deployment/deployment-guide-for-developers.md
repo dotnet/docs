@@ -13,6 +13,7 @@ This article provides information for developers who want to install any version
 
 You can download the redistributable packages and language packs for .NET Framework from the download pages:
 
+- [.NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
 - [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471)
@@ -228,6 +229,7 @@ The .NET Framework installer writes registry keys when installation is successfu
 
 | Version                                                                                                                                                                    | Value of the Release DWORD |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| .NET Framework 4.8.1                                                                                                                                                       | 533325                     |
 | .NET Framework 4.8 installed on Windows 10 May 2020 Update and Windows 10 October 2020 Update                                                                              | 528372                     |
 | .NET Framework 4.8 installed on Windows 10 May 2019 Update and Windows 10 November 2019 Update                                                                             | 528040                     |
 | .NET Framework 4.8 installed on all OS versions other than the listed Windows 10 Update versions                                                                           | 528049                     |
@@ -268,6 +270,7 @@ To determine whether the final release version of a language pack is installed f
 
 .NET Framework provides a set of stand-alone language pack executable files that contain localized resources for specific cultures. The language packs are available from the .NET Framework download pages:
 
+- [.NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
 - [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471)
@@ -330,7 +333,7 @@ See the following content:
 Starting with Windows 8, you can uninstall .NET Framework 4.5 or later versions by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall .NET Framework 4.5 or later versions by using **Add or Remove Programs** in Control Panel.
 
 > [!IMPORTANT]
-> For Windows 7 and earlier operating systems, uninstalling .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 doesn't restore .NET Framework 4.5 files, and uninstalling .NET Framework 4.5 doesn't restore .NET Framework 4 files. If you want to go back to the older version, you must reinstall it and any updates to it.
+> For Windows 7 and earlier operating systems, uninstalling .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, or 4.8.1 doesn't restore .NET Framework 4.5 files, and uninstalling .NET Framework 4.5 doesn't restore .NET Framework 4 files. If you want to go back to the older version, you must reinstall it and any updates to it.
 
 ## Appendix
 

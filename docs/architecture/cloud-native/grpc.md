@@ -3,16 +3,18 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 12/06/2021
+ms.date: 04/06/2022
 ---
 
 # gRPC
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 So far in this book, we've focused on [REST-based](/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against entity resources. Clients interact with resources across HTTP with a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
 
 ## What is gRPC?
 
-gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. At the application level, gRPC streamlines messaging between clients and back-end services. Originating from Google, gRPC is open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem of cloud-native offerings. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). Incubating means end users are using the technology in production applications, and the project has a healthy number of contributors.
+gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. At the application level, gRPC streamlines messaging between clients and back-end services. Originating from Google, gRPC is open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem of cloud-native offerings. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md). Incubating means end users are using the technology in production applications, and the project has a healthy number of contributors.
 
 A typical gRPC client app will expose a local, in-process function that implements a business operation. Under the covers, that local function invokes another function on a remote machine. What appears to be a local call essentially becomes a transparent out-of-process call to a remote service. The RPC plumbing abstracts the point-to-point networking communication, serialization, and execution between computers.
 
@@ -52,7 +54,7 @@ gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support
 
 - Visual Studio 2022 with the ASP.NET and web development workload installed
 - Visual Studio Code
-- the dotnet CLI
+- The `dotnet` CLI
 
 The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2022 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
 

@@ -6,7 +6,7 @@ ms.assetid: 48a8bc1b-128b-4cf1-a421-8cc73223c340
 ---
 # Transaction Models
 
-This topic describes the relationship between the transaction programming models and the infrastructure components Microsoft provides.  
+This article describes the relationship between the transaction programming models and the infrastructure components Microsoft provides.  
   
  When using transactions in Windows Communication Foundation (WCF), it is important to understand that you are not selecting between different transactional models, but rather operating at different layers of an integrated and consistent model.  
   
@@ -22,7 +22,7 @@ This topic describes the relationship between the transaction programming models
 
  The <xref:System.Transactions> namespace provides both an explicit programming model based on the <xref:System.Transactions.Transaction> class, as well as an implicit programming model using the <xref:System.Transactions.TransactionScope> class, in which the infrastructure automatically manages transactions.  
   
- For more information about how to create a transactional application using these two models, see [Writing a Transactional Application](https://go.microsoft.com/fwlink/?LinkId=94947).  
+ For more information about how to create a transactional application using these two models, see [Writing a Transactional Application](../../data/transactions/writing-a-transactional-application.md).  
   
  In a WCF service or application, <xref:System.Transactions> provides the programming model for creating transactions within a client application and for explicitly interacting with a transaction, when required, within a service.  
   

@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # More migration scenarios
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 This section describes several different ASP.NET app scenarios, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app, and evaluate which techniques will work for your app and its hosting environment.
 
 ## Migrate ASP.NET MVC 5 and WebApi 2 to ASP.NET Core MVC
@@ -40,7 +42,7 @@ protected IContainer RegisterContainer()
 }
 ```
 
-When upgrading these apps to use ASP.NET Core, this duplicate effort and the confusion that sometimes accompanies it is eliminated. ASP.NET Core MVC is a unified framework with one set of rules for routing, filters, and more. Dependency injection is built into .NET Core itself. All of this can can be configured in `Startup.cs`, as is shown in the `eShopPorted` app in the sample.
+When upgrading these apps to use ASP.NET Core, this duplicate effort and the confusion that sometimes accompanies it is eliminated. ASP.NET Core MVC is a unified framework with one set of rules for routing, filters, and more. Dependency injection is built into .NET Core itself. All of this can be configured in `Startup.cs`, as is shown in the `eShopPorted` app in the sample.
 
 ## Migrate HttpResponseMessage to ASP.NET Core
 
@@ -237,7 +239,7 @@ ASP.NET Core uses route constraints to help ensure requests are routed properly 
 [Route("/customer/{id:int}")]
 ```
 
-The `:int` after the `id` route parameter constrains the value to match the the `int` type. One benefit of using route constraints is that they allow for two otherwise-identical routes to exist where the parameters differ only by their type. This allows for the equivalent of [method overloading](../../standard/design-guidelines/member-overloading.md) of routes based solely on parameter type.
+The `:int` after the `id` route parameter constrains the value to match the `int` type. One benefit of using route constraints is that they allow for two otherwise-identical routes to exist where the parameters differ only by their type. This allows for the equivalent of [method overloading](../../standard/design-guidelines/member-overloading.md) of routes based solely on parameter type.
 
 The set of route constraints, their syntax, and usage is very similar between all three approaches. Custom route constraints are fairly rare in customer applications. If your app uses a custom route constraint and needs to port to ASP.NET Core, the docs include examples showing [how to create custom route constraints in ASP.NET Core](/aspnet/core/fundamentals/routing#custom-route-constraints). Essentially all that's required is to implement `IRouteConstraint` and its `Match` method, and then add the custom constraint when configuring routing for the app:
 

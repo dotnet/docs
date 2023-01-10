@@ -1,5 +1,5 @@
 ---
-title: High-performance logging in .NET
+title: High-performance logging
 author: IEvangelist
 description: Learn how to use LoggerMessage to create cacheable delegates that require fewer object allocations for high-performance logging scenarios.
 ms.author: dapine
@@ -12,8 +12,11 @@ The <xref:Microsoft.Extensions.Logging.LoggerMessage> class exposes functionalit
 
 <xref:Microsoft.Extensions.Logging.LoggerMessage> provides the following performance advantages over Logger extension methods:
 
-- Logger extension methods require "boxing" (converting) value types, such as `int`, into `object`. The <xref:Microsoft.Extensions.Logging.LoggerMessage> pattern avoids boxing by using static <xref:System.Action> fields and extension methods with strongly-typed parameters.
+- Logger extension methods require "boxing" (converting) value types, such as `int`, into `object`. The <xref:Microsoft.Extensions.Logging.LoggerMessage> pattern avoids boxing by using static <xref:System.Action> fields and extension methods with strongly typed parameters.
 - Logger extension methods must parse the message template (named format string) every time a log message is written. <xref:Microsoft.Extensions.Logging.LoggerMessage> only requires parsing a template once when the message is defined.
+
+> [!IMPORTANT]
+> Instead of using the [LoggerMessage class](xref:Microsoft.Extensions.Logging.LoggerMessage) to create high-performance logs, you can use the [LoggerMessage attribute](xref:Microsoft.Extensions.Logging.LoggerMessageAttribute) in .NET 6.0. The `LoggerMessageAttribute` provides source-generation logging support designed to deliver a highly usable and highly performant logging solution for modern .NET applications. For more information, see [Compile-time logging source generation (.NET Fundamentals)](./logger-message-generator.md).
 
 The sample app demonstrates <xref:Microsoft.Extensions.Logging.LoggerMessage> features with a priority queue processing worker service. The app processes work items in priority order. As these operations occur, log messages are generated using the <xref:Microsoft.Extensions.Logging.LoggerMessage> pattern.
 
@@ -35,19 +38,19 @@ For the <xref:System.Action>, specify:
 - A unique event identifier (<xref:Microsoft.Extensions.Logging.EventId>) with the name of the static extension method.
 - The message template (named format string).
 
-As work items are dequeued for processing the worker service app sets the:
+As work items are dequeued for processing, the worker service app sets the:
 
 - Log level to <xref:Microsoft.Extensions.Logging.LogLevel.Critical?displayProperty=nameWithType>.
-- Event id to `13` with the name of the `FailedToProcessWorkItem` method.
+- Event ID to `13` with the name of the `FailedToProcessWorkItem` method.
 - Message template (named format string) to a string.
 
 :::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
 
-The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method is used to configure and define a <xref:System.Action> delegate, that represents a log message.
+The <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> method is used to configure and define an <xref:System.Action> delegate, which represents a log message.
 
-Structured logging stores may use the event name when it's supplied with the event id to enrich logging. For example, [Serilog](https://github.com/serilog/serilog-extensions-logging) uses the event name.
+Structured logging stores may use the event name when it's supplied with the event ID to enrich logging. For example, [Serilog](https://github.com/serilog/serilog-extensions-logging) uses the event name.
 
-The <xref:System.Action> is invoked through a strongly-typed extension method. The `PriorityItemProcessed` method logs a message every time a work item is being processed. Whereas, `FailedToProcessWorkItem` is called when (and if) an exception occurs:
+The <xref:System.Action> is invoked through a strongly typed extension method. The `PriorityItemProcessed` method logs a message every time a work item is processed. `FailedToProcessWorkItem` is called if and when an exception occurs:
 
 :::code language="csharp" source="snippets/logging/worker-service-options/Worker.cs" range="13-34" highlight="15-18":::
 
@@ -144,9 +147,9 @@ info: WorkerServiceOptions.Example.Worker[1]
 
 ## Log level guarded optimizations
 
-An additional performance optimization can be made by checking the <xref:Microsoft.Extensions.Logging.LogLevel>, with <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)?displayProperty=nameWithType> before an invocation to the corresponding `Log*` method. When logging isn't configured for the given `LogLevel`, the following statements are true:
+Another performance optimization can be made by checking the <xref:Microsoft.Extensions.Logging.LogLevel>, with <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)?displayProperty=nameWithType> before an invocation to the corresponding `Log*` method. When logging isn't configured for the given `LogLevel`, the following statements are true:
 
-- <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> is not called.
+- <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> isn't called.
 - An allocation of `object[]` representing the parameters is avoided.
 - Value type boxing is avoided.
 

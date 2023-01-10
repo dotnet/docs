@@ -1,7 +1,7 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
+Module ExplicitExample
     Public Sub Main()
         PerformIntegerConversion()
         Console.WriteLine("-----")

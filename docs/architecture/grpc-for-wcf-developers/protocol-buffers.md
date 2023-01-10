@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Protocol buffers
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 gRPC services send and receive data as *Protocol Buffer (Protobuf) messages*, similar to data contracts in Windows Communication Foundation (WCF). Protobuf is an efficient way of serializing structured data for machines to read and write, without the overhead that human-readable formats like XML or JSON incur.
 
 This chapter covers how Protobuf works, and how to define your own Protobuf messages.

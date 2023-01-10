@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Migrate to hybrid cloud scenarios
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Some organizations and enterprises can't migrate some of their applications to public clouds like Microsoft Azure or any other public cloud due to regulations or their own policies. However, it's likely that any organization might benefit from having some of their applications in the public cloud and other applications on-premises. But a mixed environment can lead to excessive complexity in environments due to different platforms and technologies used in public clouds versus on-premises environments.
 
 Microsoft provides the best hybrid cloud solution, one in which you can optimize your existing assets on-premises and in the public cloud, while you ensure consistency in an Azure hybrid cloud. You can maximize existing skills, and get a flexible, unified approach to building apps that can run in the cloud or on-premises, thanks to Azure Stack (on-premises) and Azure (public cloud).
@@ -49,11 +51,11 @@ Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack
 
 - **Active Directory Service Accounts for Windows Containers**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/manage-serviceaccounts](/virtualization/windowscontainers/manage-containers/manage-serviceaccounts)
+    [https://learn.microsoft.com/virtualization/windowscontainers/manage-containers/manage-serviceaccounts](/virtualization/windowscontainers/manage-containers/manage-serviceaccounts)
 
 - **Create a container with Active Directory support**
 
-    [https://docs.microsoft.com/archive/blogs/containerstuff/create-a-container-with-active-directory-support](/archive/blogs/containerstuff/create-a-container-with-active-directory-support)
+    [https://learn.microsoft.com/archive/blogs/containerstuff/create-a-container-with-active-directory-support](/archive/blogs/containerstuff/create-a-container-with-active-directory-support)
 
 - **Azure Hybrid Benefit licensing**
 

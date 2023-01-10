@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr publish & subscribe building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The [Publish-Subscribe pattern](/azure/architecture/patterns/publisher-subscriber) (often referred to as "pub/sub") is a well-known and widely used messaging pattern. Architects commonly embrace it in distributed applications. However, the plumbing to implement it can be complex. There are often subtle feature differences across different messaging products. Dapr offers a building block that significantly simplifies implementing pub/sub functionality.
 
 ## What it solves
@@ -214,13 +216,15 @@ The call to `MapSubscribeHandler` in the endpoint routing configuration will add
 Dapr [pub/sub components](https://github.com/dapr/components-contrib/tree/master/pubsub) handle the actual transport of the messages. Several are available. Each encapsulates a specific message broker product to implement the pub/sub functionality. At the time of writing, the following pub/sub components were available:
 
 - Apache Kafka
+- AWS SNS/SQS
 - Azure Event Hubs
 - Azure Service Bus
-- AWS SNS/SQS
 - GCP Pub/Sub
 - Hazelcast
+- In Memory
+- JetStream
 - MQTT
-- NATS
+- NATS Streaming
 - Pulsar
 - RabbitMQ
 - Redis Streams
@@ -368,6 +372,10 @@ Through Dapr pub/sub, you can publish messages to a specific *topic*. As well, t
 You can use Dapr pub/sub natively over HTTP or by using one of the language-specific SDKs, such as the .NET SDK for Dapr. The .NET SDK tightly integrates with the ASP.NET core platform.
 
 With Dapr, you can plug a supported message broker product into your application. You can then swap message brokers without requiring code changes to your application.
+
+### References
+
+- [Dapr supported pub/sub brokers](https://docs.dapr.io/reference/components-reference/supported-pubsub/)
 
 > [!div class="step-by-step"]
 > [Previous](service-invocation.md)

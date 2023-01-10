@@ -1,7 +1,7 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Orleans clients
@@ -25,7 +25,7 @@ Despite these detractors, co-hosting client code with grain code is a popular op
 
 If hosting using the [.NET Generic Host](../../core/extensions/generic-host.md), the client will be available in the host's [dependency injection](../../core/extensions/dependency-injection.md) container automatically and can be injected into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
 
-Alternatively, a client interface such as `IGrainFactory` or `IClusterClient` can be obtained from either `IHost` or `ISiloHost`:
+Alternatively, a client interface such as <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> can be obtained from either <xref:Microsoft.Extensions.Hosting.IHost> or <xref:Orleans.Hosting.ISiloHost>:
 
 ```csharp
 var client = host.Services.GetService<IClusterClient>();
@@ -34,20 +34,13 @@ await client.GetGrain<IMyGrain>(0).Ping();
 
 ## External clients
 
-Client code can run outside of the Orleans cluster where grain code is hosted.
-Hence, an external client acts as a connector or conduit to the cluster and all grains of the application.
-
-<!-- TODO:
-![](~/images/frontend_cluster.png)
--->
-
-Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
+Client code can run outside of the Orleans cluster where grain code is hosted. Hence, an external client acts as a connector or conduit to the cluster and all grains of the application. Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
 In a typical setup, a frontend webserver:
 
 * Receives a web request
 * Performs necessary authentication and authorization validation
 * Decides which grain(s) should process the request
-* Uses Grain Client to make one or more method call to the grain(s)
+* Uses <xref:Orleans.GrainClient> to make one or more method call to the grain(s)
 * Handles successful completion or failures of the grain calls and any returned values
 * Sends a response for the web request
 
@@ -55,7 +48,7 @@ In a typical setup, a frontend webserver:
 
 Before a grain client can be used for making calls to grains hosted in an Orleans cluster, it needs to be configured, initialized, and connected to the cluster.
 
-Configuration is provided via  `ClientBuilder` and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
+Configuration is provided via <xref:Orleans.ClientBuilder> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
 Example of a client configuration:
 
@@ -81,7 +74,7 @@ await client.Connect();
 
 ### Make calls to grains
 
-Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same `GetGrain<T>(key)` method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The slight difference is in through what factory object we invoke `GetGrain`. In client code, we do that through the connected client object as the following example shows:
+Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The slight difference is in through what factory object we invoke <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, we do that through the connected client object as the following example shows:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
@@ -90,8 +83,7 @@ Task joinGameTask = player.JoinGame(game)
 await joinGameTask;
 ```
 
-A call to a grain method returns a `Task` or a`Task<T>` as required by the [grain interface rules](../grains/index.md).
-The client can use the `await` keyword to asynchronously await the returned `Task` without blocking the thread or in some cases the `Wait()` method to block the current thread of execution.
+A call to a grain method returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task%601> as required by the [grain interface rules](../grains/index.md). The client can use the `await` keyword to asynchronously await the returned `Task` without blocking the thread or in some cases the `Wait()` method to block the current thread of execution.
 
 The major difference between making calls to grains from client code and from within another grain is the single-threaded execution model of grains. Grains are constrained to be single-threaded by the Orleans runtime, while clients may be multi-threaded. Orleans does not provide any such guarantee on the client-side, and so it is up to the client to manage its concurrency using whatever synchronization constructs are appropriate for its environment&mdash;locks, events, and `Tasks`.
 
@@ -107,12 +99,12 @@ Another mechanism that can be used for delivering asynchronous messages to clien
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
-* When the `IClusterClient.Connect` method is called initially.
+* When the <xref:Orleans.IClusterClient.Connect?displayProperty=nameWithType> method is called initially.
 * When making calls on grain references that were obtained from a connected cluster client.
 
-In the first case, the `Connect` method will throw an exception to indicate what went wrong. This is typically (but not necessarily) a `SiloUnavailableException`. If this happens, the cluster client instance is unusable and should be disposed of. A retry filter function can optionally be provided to the `Connect` method which could, for instance, wait for a specified duration before making another attempt. If no retry filter is provided, or if the retry filter returns `false`, the client gives up for good.
+In the first case, the `Connect` method will throw an exception to indicate what went wrong. This is typically (but not necessarily) a <xref:Orleans.Runtime.SiloUnavailableException>. If this happens, the cluster client instance is unusable and should be disposed of. A retry filter function can optionally be provided to the `Connect` method which could, for instance, wait for a specified duration before making another attempt. If no retry filter is provided, or if the retry filter returns `false`, the client gives up for good.
 
-If `Connect` returns successfully, the cluster client is guaranteed to be usable until it is disposed of. This means that even if the client experiences connection issues, it will attempt to recover indefinitely. The exact recovery behavior can be configured on a `GatewayOptions` object provided by the `ClientBuilder`, e.g.:
+If `Connect` returns successfully, the cluster client is guaranteed to be usable until it is disposed of. This means that even if the client experiences connection issues, it will attempt to recover indefinitely. The exact recovery behavior can be configured on a <xref:Orleans.Configuration.GatewayOptions> object provided by the <xref:Orleans.ClientBuilder>, e.g.:
 
 ```csharp
 var client = new ClientBuilder()
@@ -123,7 +115,7 @@ var client = new ClientBuilder()
     .Build();
 ```
 
-In the second case, where a connection issue occurs during a grain call, a `SiloUnavailableException` will be thrown on the client-side. This could be handled like so:
+In the second case, where a connection issue occurs during a grain call, a <xref:Orleans.Runtime.SiloUnavailableException> will be thrown on the client-side. This could be handled like so:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
@@ -142,7 +134,7 @@ The grain reference is not invalidated in this situation; the call could be retr
 
 ### Dependency injection
 
-The recommended way to create an external client in a program that uses the .NET Generic Host is to inject an `IClusterClient` singleton instance via dependency injection, which can then be accepted as a constructor parameter in hosted services, ASP.NET controllers, and so on.
+The recommended way to create an external client in a program that uses the .NET Generic Host is to inject an <xref:Orleans.IClusterClient> singleton instance via dependency injection, which can then be accepted as a constructor parameter in hosted services, ASP.NET controllers, and so on.
 
 > [!NOTE]
 > When co-hosting an Orleans silo in the same process that will be connecting to it, it is *not* necessary to manually create a client; Orleans will automatically provide one and manage its lifetime appropriately.
@@ -184,9 +176,12 @@ await new HostBuilder()
     .ConfigureServices(services =>
     {
         services.AddSingleton<ClusterClientHostedService>();
-        services.AddSingleton<IHostedService>(sp => sp.GetService<ClusterClientHostedService>());
-        services.AddSingleton<IClusterClient>(sp => sp.GetService<ClusterClientHostedService>().Client);
-        services.AddSingleton<IGrainFactory>(sp => sp.GetService<ClusterClientHostedService>().Client);
+        services.AddSingleton<IHostedService>(
+            sp => sp.GetService<ClusterClientHostedService>());
+        services.AddSingleton<IClusterClient>(
+            sp => sp.GetService<ClusterClientHostedService>().Client);
+        services.AddSingleton<IGrainFactory>(
+            sp => sp.GetService<ClusterClientHostedService>().Client);
     })
     .ConfigureLogging(builder => builder.AddConsole())
     .RunConsoleAsync();
@@ -216,94 +211,80 @@ public class HomeController : Controller
 Here is an extended version of the example given above of a client application that connects to Orleans, finds the player account, subscribes for updates to the game session the player is part of with an observer, and prints out notifications until the program is manually terminated.
 
 ```csharp
-namespace PlayerWatcher
+await RunWatcherAsync();
+
+// Block the main thread so that the process doesn't exit.
+// Updates arrive on thread pool threads.
+Console.ReadLine();
+
+static async Task RunWatcherAsync()
 {
-    class Program
+    try
     {
-        /// <summary>
-        /// Simulates a companion application that connects to the game
-        /// that a particular player is currently part of, and subscribes
-        /// to receive live notifications about its progress.
-        /// </summary>
-        static async Task Main(string[] args)
-        {
-            await RunWatcherAsync();
-
-            // Block the main thread so that the process doesn't exit.
-            // Updates arrive on thread pool threads.
-            Console.ReadLine();
-        }
-
-        static async Task RunWatcherAsync()
-        {
-            try
+        var client = new ClientBuilder()
+            .Configure<ClusterOptions>(options =>
             {
-                var client = new ClientBuilder()
-                    .Configure<ClusterOptions>(options =>
-                    {
-                        options.ClusterId = "my-first-cluster";
-                        options.ServiceId = "MyOrleansService";
-                    })
-                    .UseAzureStorageClustering(
-                        options => options.ConnectionString = connectionString)
-                    .ConfigureApplicationParts(
-                        parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
-                    .Build();
+                options.ClusterId = "my-first-cluster";
+                options.ServiceId = "MyOrleansService";
+            })
+            .UseAzureStorageClustering(
+                options => options.ConnectionString = connectionString)
+            .ConfigureApplicationParts(
+                parts => parts.AddApplicationPart(typeof(IValueGrain).Assembly))
+            .Build();
 
-                    // Hardcoded player ID
-                    Guid playerId = new("{2349992C-860A-4EDA-9590-000000000006}");
-                    IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
-                    IGameGrain game = null;
-                    while (game is null)
-                    {
-                        Console.WriteLine(
-                            $"Getting current game for player {playerId}...");
+            // Hardcoded player ID
+            Guid playerId = new("{2349992C-860A-4EDA-9590-000000000006}");
+            IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
+            IGameGrain game = null;
+            while (game is null)
+            {
+                Console.WriteLine(
+                    $"Getting current game for player {playerId}...");
 
-                        try
-                        {
-                            game = await player.GetCurrentGame();
-                            if (game is null) // Wait until the player joins a game
-                            {
-                                await Task.Delay(TimeSpan.FromMilliseconds(5_000));
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"Exception: {ex.GetBaseException()}");
-                        }
-                    }
-
-                    Console.WriteLine(
-                        $"Subscribing to updates for game {game.GetPrimaryKey()}...");
-
-                    // Subscribe for updates
-                    var watcher = new GameObserver();
-                    await game.SubscribeForGameUpdates(
-                        await client.CreateObjectReference<IGameObserver>(watcher));
-
-                    Console.WriteLine(
-                        "Subscribed successfully. Press <Enter> to stop.");
-                }
-                catch (Exception e)
+                try
                 {
-                    Console.WriteLine(
-                        $"Unexpected Error: {e.GetBaseException()}");
+                    game = await player.GetCurrentGame();
+                    if (game is null) // Wait until the player joins a game
+                    {
+                        await Task.Delay(TimeSpan.FromMilliseconds(5_000));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Exception: {ex.GetBaseException()}");
                 }
             }
-        }
 
-        /// <summary>
-        /// Observer class that implements the observer interface.
-        /// Need to pass a grain reference to an instance of
-        /// this class to subscribe for updates.
-        /// </summary>
-        class GameObserver : IGameObserver
-        {
-            public void UpdateGameScore(string score)
-            {
-                Console.WriteLine("New game score: {0}", score);
-            }
+            Console.WriteLine(
+                $"Subscribing to updates for game {game.GetPrimaryKey()}...");
+
+            // Subscribe for updates
+            var watcher = new GameObserver();
+            await game.SubscribeForGameUpdates(
+                await client.CreateObjectReference<IGameObserver>(watcher));
+
+            Console.WriteLine(
+                "Subscribed successfully. Press <Enter> to stop.");
         }
+        catch (Exception e)
+        {
+            Console.WriteLine(
+                $"Unexpected Error: {e.GetBaseException()}");
+        }
+    }
+}
+
+/// <summary>
+/// Observer class that implements the observer interface.
+/// Need to pass a grain reference to an instance of
+/// this class to subscribe for updates.
+/// </summary>
+class GameObserver : IGameObserver
+{
+    public void UpdateGameScore(string score)
+    {
+        Console.WriteLine("New game score: {0}", score);
     }
 }
 ```

@@ -5,7 +5,9 @@ ms.date: 01/13/2021
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 
-We should start by saying that if you create your custom event bus based on RabbitMQ running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus. A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
+We should start by saying that if you create your custom event bus based on [RabbitMQ](https://www.rabbitmq.com/) running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus as described in the [Additional resources section below](rabbitmq-event-bus-development-test-environment.md#additional-resources). A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
 One of the event bus custom implementations in eShopOnContainers is basically a library using the RabbitMQ API. (There's another implementation based on Azure Service Bus.)
 
@@ -110,13 +112,16 @@ For production scenarios check the additional resources below, specific for Rabb
 
 A production-ready solution with support for RabbitMQ.
 
+- **NServiceBus** - Fully-supported commercial service bus with advanced management and monitoring tooling for .NET \
+  <https://particular.net/>
+
 - **EasyNetQ** - Open Source .NET API client for RabbitMQ \
   <https://easynetq.com/>
 
-- **MassTransit** \
+- **MassTransit** - Free, open-source distributed application framework for .NET \
   <https://masstransit-project.com/>
   
-- **Rebus** - Open source .NET Service Bus
+- **Rebus** - Open source .NET Service Bus \
   <https://github.com/rebus-org/Rebus>
 
 > [!div class="step-by-step"]

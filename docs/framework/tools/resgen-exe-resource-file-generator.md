@@ -68,7 +68,7 @@ resgen filename.extension [outputDirectory]
 
 |Parameter or switch|Description|
 |-------------------------|-----------------|
-|`/define:` *symbol1*[, *symbol2*,...]|Starting with the .NET Framework 4.5, supports conditional compilation in text-based (.txt or .restext) resource files. If *symbol* corresponds to a symbol included in the input text file within a `#ifdef` construct, the associated string resource is included in the .resources file. If the input text file includes an `#if !` statement with a symbol that is not defined by the `/define` switch, the associated string resource is included in the resources file.<br /><br /> `/define` is ignored if it is used with non-text files. Symbols are case-sensitive.<br /><br /> For more information about this option, see [Conditionally Compiling Resources](#Conditional) later in this topic.|
+|`/define:` *symbol1*[, *symbol2*,...]|Starting with .NET Framework 4.5, supports conditional compilation in text-based (.txt or .restext) resource files. If *symbol* corresponds to a symbol included in the input text file within a `#ifdef` construct, the associated string resource is included in the .resources file. If the input text file includes an `#if !` statement with a symbol that is not defined by the `/define` switch, the associated string resource is included in the resources file.<br /><br /> `/define` is ignored if it is used with non-text files. Symbols are case-sensitive.<br /><br /> For more information about this option, see [Conditionally Compiling Resources](#Conditional) later in this topic.|
 |`useSourcePath`|Specifies that the input file's current directory is to be used to resolve relative file paths.|
 |`/compile`|Enables you to specify multiple .resx or text files to convert to multiple .resources files in a single bulk operation. If you do not specify this option, you can specify only one input file argument. Output files are named *filename*.resources.<br /><br /> This option cannot be used with the `/str:` option.<br /><br /> For more information about this option, see [Compiling or Converting Multiple Files](#Multiple) later in this topic.|
 |`/r:` `assembly`|References metadata from the specified assembly. It is used when converting .resx files and allows Resgen.exe to serialize or deserialize object resources. It is similar to the `/reference:` or `/r:` options for the C# and Visual Basic compilers.|
@@ -254,7 +254,7 @@ resgen MyApp.exe Win8Resources
 
 ### Conditionally Compiling Resources
 
- Starting with the .NET Framework 4.5, Resgen.exe supports conditional compilation of string resources in text (.txt and .restext) files. This enables you to use a single text-based resource file in multiple build configurations.
+ Starting with .NET Framework 4.5, Resgen.exe supports conditional compilation of string resources in text (.txt and .restext) files. This enables you to use a single text-based resource file in multiple build configurations.
 
  In a .txt or .restext file, you use the `#ifdef`…`#endif` construct to include a resource in the binary .resources file if a symbol is defined, and you use the `#if !`... `#endif` construct to include a resource if a symbol is not defined. At compile time, you then define symbols by using the `/define:` option followed by a comma-delimited list of symbols. The comparison is cased-sensitive; the case of symbols defined by `/define` must match the case of symbols in the text files to be compiled.
 

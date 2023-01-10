@@ -5,6 +5,8 @@ ms.date: 12/29/2020
 ---
 # Why modern desktop applications
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 ## Introduction
 
 ### A story of one company

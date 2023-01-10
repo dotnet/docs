@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Logging differences between ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Application logging provides important diagnostic information, especially for apps running in production. ASP.NET Core introduces a new system for adding standardized logging to any app. Existing ASP.NET MVC and Web API apps most likely use third-party logging solutions, which likely continue to be supported on ASP.NET Core.
 
 ## ASP.NET MVC logging

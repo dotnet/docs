@@ -4,7 +4,6 @@ Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
 Imports System.ServiceModel.Description
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Public Class Test
 
     Private Sub New()

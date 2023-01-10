@@ -34,15 +34,16 @@ Throwing <xref:System.ArgumentNullException> conforms to .NET Runtime behavior. 
 
 ## Affected APIs
 
-The following table lists the affected APIs and specific parameters in .NET 7 Preview 1:
+The following table lists the affected APIs and specific parameters.
 
-| Method/property | Parameter name |
-|-|-|
-| <xref:System.Windows.Forms.ComboBox.ChildAccessibleObject.%23ctor(System.Windows.Forms.ComboBox,System.IntPtr)> | `owner` |
-| <xref:System.Windows.Forms.ControlPaint.CreateHBitmap16Bit(System.Drawing.Bitmap,System.Drawing.Color)?displayProperty=nameWithType> | `bitmap` |
-| <xref:System.Windows.Forms.ControlPaint.CreateHBitmapColorMask(System.Drawing.Bitmap,System.IntPtr)?displayProperty=nameWithType> | `bitmap` |
-| <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.%23ctor(System.Windows.Forms.Control,System.Windows.Forms.DataGridViewCellStyle)> | `control` or `cellStyle` |
-| <xref:System.Windows.Forms.ToolStripArrowRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem,System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.ArrowDirection)> | `g` |
-| <xref:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripContentPanel)> | `g` or `contentPanel` |
-| <xref:System.Windows.Forms.ToolStripItemRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem)> | `g` or `item` |
-| <xref:System.Windows.Forms.ToolStripPanelRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripPanel)> | `g` or `toolStripPanel` |
+| Method/property | Parameter name | Change version |
+|-|-|-|
+| <xref:System.Windows.Forms.ComboBox.ChildAccessibleObject.%23ctor(System.Windows.Forms.ComboBox,System.IntPtr)> | `owner` | Preview 1 |
+| <xref:System.Windows.Forms.ControlPaint.CreateHBitmap16Bit(System.Drawing.Bitmap,System.Drawing.Color)?displayProperty=nameWithType> | `bitmap` | Preview 1 |
+| <xref:System.Windows.Forms.ControlPaint.CreateHBitmapColorMask(System.Drawing.Bitmap,System.IntPtr)?displayProperty=nameWithType> | `bitmap` | Preview 1 |
+| <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.%23ctor(System.Windows.Forms.Control,System.Windows.Forms.DataGridViewCellStyle)> | `control` or `cellStyle` | Preview 1 |
+| <xref:System.Windows.Forms.ToolStripArrowRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem,System.Drawing.Rectangle,System.Drawing.Color,System.Windows.Forms.ArrowDirection)> | `g` | Preview 1 |
+| <xref:System.Windows.Forms.ToolStripContentPanelRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripContentPanel)> | `g` or `contentPanel` | Preview 1 |
+| <xref:System.Windows.Forms.ToolStripItemRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem)> | `g` or `item` | Preview 1 |
+| <xref:System.Windows.Forms.ToolStripPanelRenderEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripPanel)> | `g` or `toolStripPanel` | Preview 1 |
+| <xref:System.Windows.Forms.ListView.CheckedIndexCollection.%23ctor(System.Windows.Forms.ListView)> | `owner` | Preview 5 |

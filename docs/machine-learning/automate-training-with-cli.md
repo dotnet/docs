@@ -32,8 +32,8 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 - regression
 - recommendation
 - image classification
-- train
 - forecasting
+- train
 
 The ML.NET CLI can be installed based on your operating system and its architecture with the following command:
 
@@ -47,7 +47,7 @@ For example, the x64 version of Windows can be installed with:
 dotnet tool install --global mlnet-win-x64
 ```
 
-More information on installing the ML.NET CLI can be found [here](./how-to-guides/install-ml-net-cli.md).
+For more information, see the [Install the ML.NET CLI](./how-to-guides/install-ml-net-cli.md) how-to guide.
 
 An example of usage (classification scenario):
 

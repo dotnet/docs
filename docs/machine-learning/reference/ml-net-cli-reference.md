@@ -1,7 +1,7 @@
 ---
 title: ML.NET CLI Command Reference
 description: Overview, samples, and reference for the auto-train command in the ML.NET CLI tool.
-ms.date: 06/03/2020
+ms.date: 06/12/2022
 ms.custom: mlnet-tooling
 ---
 
@@ -20,7 +20,7 @@ Example usage:
 mlnet regression --dataset "cars.csv" --label-col price
 ```
 
-The `mlnet` ML task commands (`classification`, `regression`, and `recommendation`) generate the following assets:
+The `mlnet` ML task commands (`classification`, `regression`, `recommendation`, and `forecasting`) generate the following assets:
 
 - A serialized model .zip ("best model") ready to use.
 - C# code to run/score that generated model.
@@ -52,7 +52,7 @@ mlnet classification --dataset "/MyDataSets/Population-Training.csv" --test-data
 
 ## Command options
 
-The `mlnet` ML task commands (`classification`, `regression`, and `recommendation`) train multiple models based on the provided dataset and ML.NET CLI options. These commands also select the best model, save the model as a serialized .zip file, and generate related C# code for scoring and training.
+The `mlnet` ML task commands (`classification`, `regression`, `recommendation`, `forecasting`, and `train`) train multiple models based on the provided dataset and ML.NET CLI options. These commands also select the best model, save the model as a serialized .zip file, and generate related C# code for scoring and training.
 
 ### Classification options
 
@@ -162,6 +162,51 @@ mlnet recommendation
 ```
 
 Invalid input options cause the CLI tool to emit a list of valid inputs and an error message.
+
+### Forecasting options
+
+Running `mlnet forecasting` will train a time series forecasting model. Choose this command if you want an ML Model to forecast a value based on historical data (for example, sales forecasting).
+
+```console
+mlnet forecasting
+
+--dataset <dataset> (REQUIRED)
+
+--horizon <horizon> (REQUIRED)
+
+--label-col <label-col> (REQUIRED)
+
+--time-col <time-col> (REQUIRED)
+
+--cache <Auto|Off|On>
+
+--has-header
+
+--log-file-path <log-file-path>
+
+--name <name>
+
+-o, --output <output>
+
+--test-dataset <test-dataset>
+
+--train-time <train-time>
+
+-v, --verbosity <verbosity>
+
+```
+
+### Train options
+
+Running `mlnet train` will train a model based on an "mbconfig" file generated from Model Builder. For this command to work, the training data must be in the same directory as the "mbconfig" file.
+
+```console
+-training-config <training-config> (REQUIRED)
+
+--log-file-path <log-file-path>
+
+-v, --verbosity <verbosity>
+```
 
 ## Dataset
 

@@ -1,7 +1,7 @@
 ---
 title: "Built-in reference types - C# reference"
 description: "Learn about reference types that have C# keywords you can use to declare them."
-ms.date: 04/15/2022
+ms.date: 08/16/2022
 f1_keywords: 
   - "object_CSharpKeyword"
   - "object"
@@ -10,6 +10,7 @@ f1_keywords:
   - "dynamic_CSharpKeyword"
   - "string"
   - "string_CSharpKeyword"
+  - "Utf8StringLiteral_CSharpKeyword"
 helpviewer_keywords: 
   - "object keyword [C#]"
   - "delegate keyword [C#]"
@@ -44,7 +45,7 @@ Console.WriteLine(a == b);
 Console.WriteLine(object.ReferenceEquals(a, b));
 ```
 
-The previous example displays "True" and then "False" because the content of the strings are equivalent, but `a` and `b` don't refer to the same string instance.
+The previous example displays "True" and then "False" because the content of the strings is equivalent, but `a` and `b` don't refer to the same string instance.
 
 The [+ operator](../operators/addition-operator.md#string-concatenation) concatenates strings:
 
@@ -54,7 +55,7 @@ string a = "good " + "morning";
 
 The preceding code creates a string object that contains "good morning".
 
-Strings are *immutable*--the contents of a string object can't be changed after the object is created, although the syntax makes it appear as if you can. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to `b`. The memory that had been allocated for `b` (when it contained the string "h") is then eligible for garbage collection.
+Strings are *immutable*--the contents of a string object can't be changed after the object is created. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to `b`. The memory that had been allocated for `b` (when it contained the string "h") is then eligible for garbage collection.
 
 ```csharp
 string b = "h";
@@ -115,7 +116,7 @@ Console.WriteLine(message);
 // output: "This is a very important message."
 ```
 
-When the starting and ending quotes are on separate lines, the newlines following the opening quote and preceding the ending quote are not included in the final content. The closing quote sequence dictates the leftmost column for the string literal. You can indent a raw string literal to match the overall code format:
+When the starting and ending quotes are on separate lines, the newlines following the opening quote and preceding the ending quote aren't included in the final content. The closing quote sequence dictates the leftmost column for the string literal. You can indent a raw string literal to match the overall code format:
 
 ```csharp
 var message = """
@@ -126,7 +127,7 @@ Console.WriteLine(message);
 // The leftmost whitespace is not part of the raw string literal
 ```
 
-Columns to the right of the ending quote sequence are preserved. This enables raw strings for data formats such as JSON, YAML, or XML, as shown in the following example:
+Columns to the right of the ending quote sequence are preserved. This behavior enables raw strings for data formats such as JSON, YAML, or XML, as shown in the following example:
 
 ```csharp
 var json= """
@@ -181,6 +182,23 @@ To include a double quotation mark in an @-quoted string, double it:
 @"""Ahoy!"" cried the captain." // "Ahoy!" cried the captain.
 ```
 
+### UTF-8 string literals
+
+Strings in .NET are stored using UTF-16 encoding. UTF-8 is the standard for Web protocols and other important libraries. Beginning in C# 11, you can add the `u8` suffix to a string literal to specify UTF-8 encoding. UTF-8 literals are stored as `ReadOnlySpan<byte>` objects. The natural type of a UTF-8 string literal is `ReadOnlySpan<byte>`. Using a UTF-8 string literal creates a more clear declaration than declaring the equivalent <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as shown in the following code:
+
+```csharp
+ReadOnlySpan<byte> AuthWithTrailingSpace = new byte[] { 0x41, 0x55, 0x54, 0x48, 0x20 };
+ReadOnlySpan<byte> AuthStringLiteral = "AUTH "u8;
+```
+
+To store a UTF-8 string literal as an array requires the use of <xref:System.ReadOnlySpan%601.ToArray?displayProperty=nameWithType> to copy the bytes containing the literal to the mutable array:
+
+```csharp
+byte[] AuthStringLiteral = "AUTH "u8.ToArray();
+```
+
+UTF-8 string literals aren't compile time constants; they're runtime constants. Therefore, they can't be used as the default value for an optional parameter. UTF-8 string literals can't be combined with string interpolation. You can't use the `$` token and the `u8` suffix on the same string expression.
+
 ## The delegate type
 
 The declaration of a delegate type is similar to a method signature. It has a return value and any number of parameters of any type:
@@ -196,7 +214,7 @@ A `delegate` is a reference type that can be used to encapsulate a named or an a
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
-Delegate combination and removal fails with a runtime exception when the delegate types involved at run time are different due to variant conversion. The following example demonstrates a situation that fails:
+Delegate combination or removal fails with a runtime exception when the delegate types involved at run time are different due to variant conversion. The following example demonstrates a situation that fails:
 
 ```csharp
 Action<string> stringAction = str => {};
@@ -252,6 +270,17 @@ obj = obj + 3;
 The following example uses `dynamic` in several declarations. The `Main` method also contrasts compile-time type checking with run-time type checking.
 
 [!code-csharp[csrefKeywordsTypes#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic2.cs#25)]
+
+### C# language specification
+
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
+
+- [§8.2.3 The object type](~/_csharpstandard/standard/types.md#823-the-object-type)
+- [§8.2.4 The dynamic type](~/_csharpstandard/standard/types.md#824-the-dynamic-type)
+- [§8.2.5 The string type](~/_csharpstandard/standard/types.md#825-the-string-type)
+- [§8.2.8 Delegate types](~/_csharpstandard/standard/types.md#828-delegate-types)
+- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
+- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
 
 ### See also
 

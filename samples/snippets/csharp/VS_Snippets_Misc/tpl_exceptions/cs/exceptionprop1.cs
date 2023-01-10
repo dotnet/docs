@@ -1,27 +1,24 @@
-﻿using System;
+﻿// <Snippet7>
 
-// <Snippet7>
-using System.Threading;
-using System.Threading.Tasks;
-
-public class Example
+public static partial class Program
 {
-   public static void Main()
-   {
-      var task1 = Task.Run(() =>
-                           { throw new CustomException("task1 faulted.");
-      }).ContinueWith( t => { Console.WriteLine("{0}: {1}",
-                                                t.Exception.InnerException.GetType().Name,
-                                                t.Exception.InnerException.Message);
-                            }, TaskContinuationOptions.OnlyOnFaulted);
-      Thread.Sleep(500);
-   }
-}
+    public static void ExceptionPropagation()
+    {
+        _ = Task.Run(
+            () => throw new CustomException("task1 faulted."))
+            .ContinueWith(_ =>
+            {
+                if (_.Exception?.InnerException is { } inner)
+                {
+                    Console.WriteLine("{0}: {1}",
+                        inner.GetType().Name,
+                        inner.Message);
+                }
+            },
+            TaskContinuationOptions.OnlyOnFaulted);
 
-public class CustomException : Exception
-{
-   public CustomException(String message) : base(message)
-   {}
+        Thread.Sleep(500);
+    }
 }
 // The example displays output like the following:
 //        CustomException: task1 faulted.

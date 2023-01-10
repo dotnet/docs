@@ -19,7 +19,7 @@ public class Program
 
         var lastNameOption = new Option<string>(
               name: "--last-name",
-              description: "Person.FirstName");
+              description: "Person.LastName");
 
         var rootCommand = new RootCommand();
         rootCommand.Add(fileOption);
@@ -27,17 +27,17 @@ public class Program
         rootCommand.Add(lastNameOption);
 
         // <sethandler>
-        rootCommand.SetHandler((FileInfo fileOptionValue, Person person) =>
-        {
-            DoRootCommand(fileOptionValue, person);
-        },
-        fileOption, new PersonBinder(firstNameOption, lastNameOption));
+        rootCommand.SetHandler((fileOptionValue, person) =>
+            {
+                DoRootCommand(fileOptionValue, person);
+            },
+            fileOption, new PersonBinder(firstNameOption, lastNameOption));
         // </sethandler>
 
         await rootCommand.InvokeAsync(args);
     }
 
-    public static void DoRootCommand(FileInfo aFile, Person aPerson)
+    public static void DoRootCommand(FileInfo? aFile, Person aPerson)
     {
         Console.WriteLine($"File = {aFile?.FullName}");
         Console.WriteLine($"Person = {aPerson?.FirstName} {aPerson?.LastName}");

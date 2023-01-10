@@ -8,7 +8,7 @@ ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
 ---
 # Using Constructors (C# Programming Guide)
 
-When a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.  
+When a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is instantiated, its constructor is called. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.  
   
  In the following example, a class named `Taxi` is defined by using a simple constructor. This class is then instantiated with the [new](../../language-reference/operators/new-operator.md) operator. The `Taxi` constructor is invoked by the `new` operator immediately after memory is allocated for the new object.  
   
@@ -24,7 +24,7 @@ When a [class](../../language-reference/keywords/class.md) or [struct](../../lan
   
  For more information, see [Private Constructors](./private-constructors.md).  
 
-Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors, but `structs` cannot contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the [default value](../../language-reference/builtin-types/default-values.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
+Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors, but `structs` can't contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the [default value](../../language-reference/builtin-types/default-values.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you're assured that the integer is initialized:  
   
 ```csharp  
 int i = new int();  
@@ -32,9 +32,9 @@ Console.WriteLine(i);
 ```  
 
 > [!NOTE]
-> Beginning with C# 10, a structure type can contain an explicit parameterless constructor. For more information, see the [Parameterless constructors and field initializers](../../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+> Beginning with C# 10, a structure type can contain an explicit parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
 
-The following code, however, causes a compiler error because it does not use `new`, and because it tries to use an object that has not been initialized:  
+The following code, however, causes a compiler error because it doesn't use `new`, and because it tries to use an object that hasn't been initialized:  
   
 ```csharp  
 int i;  
@@ -50,7 +50,7 @@ b = 33;      // Or assign it before using it.
 Console.WriteLine("{0}, {1}", a, b);  
 ```  
   
- So calling the parameterless constructor for a value type is not required.  
+ So calling the parameterless constructor for a value type isn't required.  
   
  Both classes and `structs` can define constructors that take parameters. Constructors that take parameters must be called through a `new` statement or a [base](../../language-reference/keywords/base.md) statement. Classes and `structs` can also define multiple constructors, and neither is required to define a parameterless constructor. For example:  
   
@@ -66,13 +66,13 @@ Console.WriteLine("{0}, {1}", a, b);
   
  In this example, the constructor for the base class is called before the block for the constructor is executed. The `base` keyword can be used with or without parameters. Any parameters to the constructor can be used as parameters to `base`, or as part of an expression. For more information, see [base](../../language-reference/keywords/base.md).  
   
- In a derived class, if a base-class constructor is not called explicitly by using the `base` keyword, the parameterless constructor, if there is one, is called implicitly. This means that the following constructor declarations are effectively the same:  
+ In a derived class, if a base-class constructor isn't called explicitly by using the `base` keyword, the parameterless constructor, if there's one, is called implicitly. This means that the following constructor declarations are effectively the same:  
   
  [!code-csharp[ManagerImplicitlyCallingParameterlessBaseConstructor#6](snippets/using-constructors/Program.cs#6)]
   
  [!code-csharp[ManagerExplicitlyCallingParameterlessBaseConstructor#7](snippets/using-constructors/Program.cs#7)]
   
- If a base class does not offer a parameterless constructor, the derived class must make an explicit call to a base constructor by using `base`.  
+ If a base class doesn't offer a parameterless constructor, the derived class must make an explicit call to a base constructor by using `base`.  
   
  A constructor can invoke another constructor in the same object by using the [this](../../language-reference/keywords/this.md) keyword. Like `base`, `this` can be used with or without parameters, and any parameters in the constructor are available as parameters to `this`, or as part of an expression. For example, the second constructor in the previous example can be rewritten using `this`:  
   

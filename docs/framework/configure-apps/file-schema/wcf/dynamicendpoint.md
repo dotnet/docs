@@ -27,7 +27,7 @@ This configuration element defines a standard endpoint that contains information
             <contractTypeNames>
               <add name="String"
                    namespace="String" />
-            <contractTypeNames>
+            </contractTypeNames>
             <extensions />
             <scopes>
               <add scope="URI" />

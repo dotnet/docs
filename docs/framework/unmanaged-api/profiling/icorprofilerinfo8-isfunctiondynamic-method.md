@@ -26,10 +26,10 @@ HRESULT IsFunctionDynamic( [in]  FunctionID  functionId,
 
 ## Parameters
 
-`functionId`
+`functionId`\
 [in]  The `FunctionID` that identifies the function in question.
 
-`isDynamic`
+`isDynamic`\
 [out] A pointer to a `BOOL` that will contain a value indicating if the function has no metadata.
 
 ## Remarks

@@ -240,23 +240,29 @@ At the time of this writing, Dapr provides support for the following transaction
 
 - Azure CosmosDB
 - Azure SQL Server
+- CockroachDB
+- In Memory
 - MongoDB
+- MySQL
+- Oracle Database
 - PostgreSQL
 - Redis
+- RethinkDB
 
 Dapr also includes support for state stores that support CRUD operations, but not transactional capabilities:
 
 - Aerospike
+- Apache Cassandra
+- AWS DynamoDB
 - Azure Blob Storage
 - Azure Table Storage
-- Cassandra
-- Cloudstate
 - Couchbase
-- etcd
-- Google Cloud Firestore
+- GCP Firestore
 - Hashicorp Consul
 - Hazelcast
+- JetStream KV
 - Memcached
+- Oracle Object Storage
 - Zookeeper
 
 ### Configuration
@@ -427,7 +433,7 @@ In the Dapr Traffic Control sample application, the benefits of using Dapr state
 
 ### References
 
-- [Dapr supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/)
+- [Dapr supported state stores](https://docs.dapr.io/reference/components-reference/supported-state-stores/)
 
 > [!div class="step-by-step"]
 > [Previous](sample-application.md)

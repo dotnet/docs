@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 11/11/2021
+ms.date: 12/06/2022
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -258,11 +258,11 @@ IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderName
 
 Model training consists of a couple of steps. First, Image Classification API is used to train the model. Then, the encoded labels in the `PredictedLabel` column are converted back to their original categorical value using the `MapKeyToValue` transform.
 
-1. Create a new variable to store a set of required and optional parameters for an `ImageClassificationTrainer`.
+1. Create a new variable to store a set of required and optional parameters for an <xref:Microsoft.ML.Vision.ImageClassificationTrainer>.
 
     [!code-csharp [ClassifierOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L47-L57)]
 
-    An `ImageClassificationTrainer` takes several optional parameters:
+    An <xref:Microsoft.ML.Vision.ImageClassificationTrainer> takes several optional parameters:
 
     - `FeatureColumnName` is the column that is used as input for the model.
     - `LabelColumnName` is the column for the value to predict.
@@ -274,7 +274,7 @@ Model training consists of a couple of steps. First, Image Classification API is
     - `ReuseValidationSetBottleneckCachedValues` is similar to `ReuseTrainSetBottleneckCachedValues` only that in this case it's for the validation dataset.
     - `WorkspacePath` defines the directory where to store the computed bottleneck values and `.pb` version of the model.
 
-1. Define the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) training pipeline that consists of both the `mapLabelEstimator` and the `ImageClassificationTrainer`.
+1. Define the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) training pipeline that consists of both the `mapLabelEstimator` and the <xref:Microsoft.ML.Vision.ImageClassificationTrainer>.
 
     [!code-csharp [TrainingPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/Program.cs#L59-L60)]
 

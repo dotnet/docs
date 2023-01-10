@@ -22,6 +22,8 @@ In this tutorial, you learn how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your .NET for Apache Spark application
 
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
+
 ## Prepare your environment
 
 Before you begin writing your app, you need to set up some prerequisite dependencies. If you can run `dotnet`, `java`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, do the following steps.
@@ -50,7 +52,7 @@ Apache Spark is downloaded as a compressed .tgz file. Use an extraction program,
 
 ### 4. Install Apache Spark
 
-[Download and install Apache Spark](https://spark.apache.org/downloads.html). You'll need to select from version 2.3.* or 2.4.0, 2.4.1, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 3.0.0, or 3.0.1 (.NET for Apache Spark is not compatible with other versions of Apache Spark).
+[Download and install Apache Spark](https://spark.apache.org/downloads.html). You'll need to select from version 2.3.* or 2.4.0, 2.4.1, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 3.0.0, 3.0.1, 3.0.2, 3.1.1, 3.1.2, 3.2.0, or 3.2.1 (.NET for Apache Spark is not compatible with other versions of Apache Spark). See the [.NET Spark Release Notes](https://github.com/dotnet/spark/tree/main/docs/release-notes) for more information on compatible versions.
 
 The commands used in the following steps assume you have [downloaded and installed Apache Spark 3.0.1](https://spark.apache.org/downloads.html). If you wish to use a different version, replace **3.0.1** with the appropriate version number. Then, extract the **.tar** file and the Apache Spark files.
 

@@ -41,6 +41,18 @@ class Simulation
        };
     // </PerformStringOperation>
 
+    // <PerformSpanOperation>
+    public State PerformOperation(ReadOnlySpan<char> command) =>
+       command switch
+       {
+           "SystemTest" => RunDiagnostics(),
+           "Start" => StartSystem(),
+           "Stop" => StopSystem(),
+           "Reset" => ResetToReady(),
+           _ => throw new ArgumentException("Invalid string value for command", nameof(command)),
+       };
+    // </PerformSpanOperation>
+
     // <RelationalPattern>
     string WaterState(int tempInFahrenheit) =>
         tempInFahrenheit switch

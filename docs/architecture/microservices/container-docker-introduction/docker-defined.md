@@ -72,7 +72,7 @@ So, simplifying, that's the core idea of Docker.
 
 In Docker, each layer is the resulting set of changes that happen to the filesystem after executing a command, such as, installing a program.
 
-So, when you "look" at the filesystem after the layer has been copied, you see all the files, included the layer when the program was installed.
+So, when you "look" at the filesystem after the layer has been copied, you see all the files, included in the layer when the program was installed.
 
 You can think of an image as an auxiliary read-only hard disk ready to be installed in a "computer" where the operating system is already installed.
 

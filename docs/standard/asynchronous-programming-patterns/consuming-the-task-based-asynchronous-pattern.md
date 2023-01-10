@@ -90,7 +90,8 @@ var cts = new CancellationTokenSource();
     cts.Cancel();
 ```
 
- Cancellation requests may be initiated from any thread.
+> [!IMPORTANT]
+> Cancellation requests may be initiated from any thread.
 
  You can pass the <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType> value to any method that accepts a cancellation token to indicate that cancellation will never be requested.  This causes the <xref:System.Threading.CancellationToken.CanBeCanceled%2A?displayProperty=nameWithType> property to return `false`, and the called method can optimize accordingly.  For testing purposes, you can also pass in a pre-canceled cancellation token that is instantiated by using the constructor that accepts a Boolean value to indicate whether the token should start in an already-canceled or not-cancelable state.
 
@@ -142,7 +143,7 @@ public async void button1_Click(object sender, EventArgs e)
 }
 ```
 
- Some of these <xref:System.Threading.Tasks.Task.Run%2A> methods, such as the <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> overload, exist as shorthand for the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method.  Other overloads, such as <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType>, enable you to use await within the offloaded work, for example:
+ Some of these <xref:System.Threading.Tasks.Task.Run%2A> methods, such as the <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> overload, exist as shorthand for the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method. This overload enable you to use await within the offloaded work, for example:
 
 ```csharp
 public async void button1_Click(object sender, EventArgs e)
@@ -724,7 +725,7 @@ public class AsyncCache<TKey, TValue>
 
     public AsyncCache(Func<TKey, Task<TValue>> valueFactory)
     {
-        if (valueFactory == null) throw new ArgumentNullException("loader");
+        if (valueFactory == null) throw new ArgumentNullException("valueFactory");
         _valueFactory = valueFactory;
         _map = new ConcurrentDictionary<TKey, Lazy<Task<TValue>>>();
     }

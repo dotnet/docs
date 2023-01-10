@@ -1,16 +1,15 @@
 ---
-title: "Lambda expressions - C# reference"
-description: Learn about C# lambda expressions that are used to create anonymous functions.
-ms.date: 11/08/2021
-helpviewer_keywords: 
+title: "Lambda expressions - Lambda expressions and anonymous functions"
+description: C# lambda expressions that are used to create anonymous functions and expression bodied members.
+ms.date: 11/28/2022
+helpviewer_keywords:
   - "lambda expressions [C#]"
   - "outer variables [C#]"
   - "statement lambda [C#]"
   - "expression lambda [C#]"
   - "expressions [C#], lambda"
-ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
 ---
-# Lambda expressions (C# reference)
+# Lambda expressions and anonymous functions
 
 You use a *lambda expression* to create an anonymous function. Use the [lambda declaration operator `=>`](lambda-operator.md) to separate the lambda's parameter list from its body. A lambda expression can be of any of the following two forms:
 
@@ -22,7 +21,7 @@ You use a *lambda expression* to create an anonymous function. Use the [lambda d
 
 - [Statement lambda](#statement-lambdas) that has a statement block as its body:
 
-  ```csharp  
+  ```csharp
   (input-parameters) => { <sequence-of-statements> }
   ```
 
@@ -41,7 +40,7 @@ You can use lambda expressions in any code that requires instances of delegate t
 [!code-csharp-interactive[lambda is argument in LINQ](snippets/lambda-expressions/Introduction.cs#Argument)]
 
 When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). In both cases, you can use the same lambda expression to specify the parameter value. That makes the two `Select` calls to look similar although in fact the type of objects created from the lambdas is different.
-  
+
 ## Expression lambdas
 
 A lambda expression with an expression on the right side of the `=>` operator is called an *expression lambda*. An expression lambda returns the result of the expression and takes the following basic form:
@@ -56,7 +55,7 @@ The body of an expression lambda can consist of a method call. However, if you'r
 
 A statement lambda resembles an expression lambda except that its statements are enclosed in braces:
 
-```csharp  
+```csharp
 (input-parameters) => { <sequence-of-statements> }
 ```
 
@@ -68,7 +67,7 @@ You can't use statement lambdas to create expression trees.
 
 ## Input parameters of a lambda expression
 
-You enclose input parameters of a lambda expression in parentheses. Specify zero input parameters with empty parentheses:  
+You enclose input parameters of a lambda expression in parentheses. Specify zero input parameters with empty parentheses:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetZeroParameters":::
 
@@ -149,7 +148,7 @@ For more information about how to create and use async methods, see [Asynchronou
 
 ## Lambda expressions and tuples
 
-Starting with C# 7.0, the C# language provides built-in support for [tuples](../builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
+The C# language provides built-in support for [tuples](../builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with three components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with three components that contains the result of the multiplications.
 
@@ -163,7 +162,7 @@ For more information about C# tuples, see [Tuple types](../../language-reference
 
 ## Lambdas with the standard query operators
 
-LINQ to Objects, among other implementations, have an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%602> delegate type:  
+LINQ to Objects, among other implementations, has an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%602> delegate type:
 
 ```csharp
 public delegate TResult Func<in T, out TResult>(T arg)
@@ -174,7 +173,7 @@ The delegate can be instantiated as a `Func<int, bool>` instance where `int` is 
 [!code-csharp-interactive[Func example](snippets/lambda-expressions/LambdasWithQueryMethods.cs#Func)]
 
 You can also supply a lambda expression when the argument type is an <xref:System.Linq.Expressions.Expression%601>, for example in the standard query operators that are defined in the <xref:System.Linq.Queryable> type. When you specify an <xref:System.Linq.Expressions.Expression%601> argument, the lambda is compiled to an expression tree.
-  
+
 The following example uses the <xref:System.Linq.Enumerable.Count%2A> standard query operator:
 
 [!code-csharp-interactive[Count example](snippets/lambda-expressions/LambdasWithQueryMethods.cs#Count)]
@@ -195,7 +194,7 @@ You don't use lambda expressions directly in [query expressions](../keywords/que
 
 ## Type inference in lambda expressions
 
-When writing lambdas, you often don't have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter types, and other factors as described in the C# language specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. If you're querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:  
+When writing lambdas, you often don't have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter types, and other factors as described in the C# language specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. If you're querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:
 
 ```csharp
 customers.Where(c => c.City == "London");
@@ -206,7 +205,7 @@ The general rules for type inference for lambdas are as follows:
 - The lambda must contain the same number of parameters as the delegate type.
 - Each input parameter in the lambda must be implicitly convertible to its corresponding delegate parameter.
 - The return value of the lambda (if any) must be implicitly convertible to the delegate's return type.
-  
+
 ## Natural type of a lambda expression
 
 A lambda expression in itself doesn't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
@@ -252,7 +251,7 @@ Func<string, int> parse = s => int.Parse(s);
 
 ## Explicit return type
 
-Typically, the return type of a lambda expression is obvious and inferred. For some expressions, that doesn't work:
+Typically, the return type of a lambda expression is obvious and inferred. For some expressions that doesn't work:
 
 ```csharp
 var choose = (bool b) => b ? 1 : "two"; // ERROR: Can't infer return type
@@ -269,15 +268,14 @@ var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
 Beginning with C# 10, you can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
 
 ```csharp
-Func<string, int> parse = [Example(1)] (s) => int.Parse(s);
-var choose = [Example(2)][Example(3)] object (bool b) => b ? 1 : "two";
+Func<string?, int?> parse = [ProvidesNullCheck] (s) => (s is not null) ? int.Parse(s) : null;
 ```
 
 You can also add attributes to the input parameters or return value, as the following example shows:
 
 ```csharp
-var sum = ([Example(1)] int a, [Example(2), Example(3)] int b) => a + b;
-var inc = [return: Example(1)] (int s) => s++;
+var concat = ([DisallowNull] string a, [DisallowNull] string b) => a + b;
+var inc = [return: NotNullifNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : null;
 ```
 
 As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.
@@ -287,11 +285,11 @@ As the preceding examples show, you must parenthesize the input parameters when 
 
 ## Capture of outer variables and variable scope in lambda expressions
 
-Lambdas can refer to *outer variables*. These are the variables that are in scope in the method that defines the lambda expression, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:
+Lambdas can refer to *outer variables*. These *outer variables* are the variables that are in scope in the method that defines the lambda expression, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:
 
 [!code-csharp[variable scope](snippets/lambda-expressions/VariableScopeWithLambdas.cs#VariableScope)]
 
-The following rules apply to variable scope in lambda expressions:  
+The following rules apply to variable scope in lambda expressions:
 
 - A variable that is captured won't be garbage-collected until the delegate that references it becomes eligible for garbage collection.
 - Variables introduced within a lambda expression aren't visible in the enclosing method.
@@ -307,7 +305,7 @@ A static lambda can't capture local variables or instance state from enclosing s
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1116-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1117-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about features added in C# 9.0 and later, see the following feature proposal notes:
 
@@ -317,6 +315,7 @@ For more information about features added in C# 9.0 and later, see the following
 
 ## See also
 
+- [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)

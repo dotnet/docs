@@ -23,7 +23,7 @@ Public Class CounterSample
     Private counterValue As Integer = 0
 
     ''' <summary>
-    ''' Resets the value the <c>Counter</c> field.
+    ''' Resets the value of the <c>Counter</c> field.
     ''' </summary>
     ''' <remarks>
     ''' This method sets the value of 
@@ -76,7 +76,7 @@ Public Class Test
 
     ' <snippet1>
     ''' <summary>
-    ''' Resets the value the <c>Counter</c> field.
+    ''' Resets the value of the <c>Counter</c> field.
     ''' </summary>
     Public Sub ResetCounter()
         counterValue = 0

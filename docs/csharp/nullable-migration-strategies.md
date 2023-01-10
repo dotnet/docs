@@ -16,8 +16,8 @@ Regardless of how you update your codebase, the goal is that nullable warnings a
 
 The first choice is setting the default for the project. Your choices are:
 
-1. ***Nullable disable as the default***: *disable* is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase. The main activity is to update the library to use nullable reference types. Using this default means you add a nullable preprocessor directives to each file as you update its code.
-1. ***Nullable enable as the default***: Set this default when you're actively developing new features. You want all new code to benefit nullable reference types and nullable static analysis. Using this default means you must add a `#nullable disable` to the top of each file. You'll remove that preprocessor directives as you begin addressing the warnings in that file.
+1. ***Nullable disable as the default***: *disable* is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase. The main activity is to update the library to use nullable reference types. Using this default means you add a nullable preprocessor directive to each file as you update its code.
+1. ***Nullable enable as the default***: Set this default when you're actively developing new features. You want all new code to benefit from nullable reference types and nullable static analysis. Using this default means you must add a `#nullable disable` to the top of each file. You'll remove these preprocessor directives as you address the warnings in each file.
 1. ***Nullable warnings as the default***: Choose this default for a two-phase migration. In the first phase, address warnings. In the second phase, turn on annotations for declaring a variable's expected *null-state*. Using this default means you must add a `#nullable disable` to the top of each file.
 1. ***Nullable annotations*** as the default. Annotate code before addressing warnings.
 
@@ -61,7 +61,7 @@ Before you enable nullable reference types, all declarations in your codebase ar
 
 If your project uses Entity Framework Core, you should read their guidance on [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
 
-When you start your migration, you should start by enabling warnings only. All declarations remain *nullable oblivious*, but you'll see warnings when you dereference a value after its *null-state* changes to *maybe-null*. As you address these warnings, you'll be checking against null in more locations, and your codebase becomes more resilient. To learn specific techniques for different situations, see the article on [Techniques to resolve nullable warnings](nullable-warnings.md).
+When you start your migration, you should start by enabling warnings only. All declarations remain *nullable oblivious*, but you'll see warnings when you dereference a value after its *null-state* changes to *maybe-null*. As you address these warnings, you'll be checking against null in more locations, and your codebase becomes more resilient. To learn specific techniques for different situations, see the article on [Techniques to resolve nullable warnings](language-reference/compiler-messages/nullable-warnings.md).
 
 You can address warnings and enable annotations in each file or class before continuing with other code. However, it's often more efficient to address the warnings generated while the context is *warnings* before enabling the type annotations. That way, all types are *oblivious* until you've addressed the first set of warnings.
 
@@ -77,4 +77,4 @@ Several attributes have been added to express additional information about the n
 
 Once you've addressed all warnings after enabling annotations, you can set the default context for your project to *enabled*. If you added any pragmas in your code for the nullable annotation or warning context, you can remove them. Over time, you may see new warnings. You may write code that introduces warnings. A library dependency may be  updated for nullable reference types. Those updates will change the types in that library from *nullable oblivious* to either *nonnullable* or *nullable*.
 
-You can also explore these concepts in our learn module on [Nullable safety in C#](/learn/modules/csharp-null-safety).
+You can also explore these concepts in our Learn module on [Nullable safety in C#](/training/modules/csharp-null-safety).

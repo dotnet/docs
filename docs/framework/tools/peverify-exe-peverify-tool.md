@@ -41,11 +41,11 @@ peverify filename [options]
 |**/il**|Performs MSIL type safety verification checks for methods implemented in the assembly specified by *filename*. The tool returns detailed descriptions for each problem found unless you specify the **/quiet** option.|  
 |**/md**|Performs metadata validation checks on the assembly specified by *filename*. This option walks the full metadata structure within the file and reports all validation problems encountered.|  
 |**/nologo**|Suppresses the display of product version and copyright information.|  
-|**/nosymbols**|In the .NET Framework version 2.0, suppresses line numbers for backward compatibility.|  
+|**/nosymbols**|In .NET Framework version 2.0, suppresses line numbers for backward compatibility.|  
 |**/quiet**|Specifies quiet mode; suppresses output of the verification problem reports. Peverify.exe still reports whether the file is type safe, but does not report information on problems preventing type safety verification.|  
 |`/transparent`|Verify only the transparent methods.|  
 |**/unique**|Ignores repeating error codes.|  
-|**/verbose**|In the .NET Framework version 2.0, displays additional information in MSIL verification messages.|  
+|**/verbose**|In .NET Framework version 2.0, displays additional information in MSIL verification messages.|  
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  

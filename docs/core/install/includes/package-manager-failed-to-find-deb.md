@@ -4,7 +4,7 @@ If you receive an error message similar to **Unable to locate package {dotnet-pa
 There are two placeholders in the following set of commands.
 
 - `{dotnet-package}`\
-This represents the .NET package you're installing, such as `aspnetcore-runtime-3.1`. This is used in the following `sudo apt-get install` command.
+This represents the .NET package you're installing, such as `aspnetcore-runtime-7.0`. This is used in the following `sudo apt-get install` command.
 
 - `{os-version}`\
 This represents the distribution version you're on. This is used in the `wget` command below. The distribution version is the numerical value, such as `20.04` on Ubuntu or `10` on Debian.

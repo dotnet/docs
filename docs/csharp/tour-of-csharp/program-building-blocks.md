@@ -81,7 +81,7 @@ A *reference parameter* is used for passing arguments by reference. The argument
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="RefExample":::
 
-An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters using the syntax introduced in C# 7.
+An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="OutExample":::
 
@@ -131,7 +131,7 @@ The `SetNextSerialNo` and `GetNextSerialNo` static methods are invoked on the cl
 
 ### Virtual, override, and abstract methods
 
-You use virtual, override, and abstract methods to define the behavior for a hierarchy of class types. Because a class can derive from a base class, those derived class may need to modify the behavior implemented in the base class. A ***virtual*** method is one declared and implemented in a base class where any derived class may provide a more specific implementation. An ***override*** method is a method implemented in a derived class that modifies the behavior of the base class' implementation. An ***abstract*** method is a method declared in a base class that *must* be overridden in all derived classes. In fact, abstract methods don't define an implementation in the base class.
+You use virtual, override, and abstract methods to define the behavior for a hierarchy of class types. Because a class can derive from a base class, those derived classes may need to modify the behavior implemented in the base class. A ***virtual*** method is one declared and implemented in a base class where any derived class may provide a more specific implementation. An ***override*** method is a method implemented in a derived class that modifies the behavior of the base class' implementation. An ***abstract*** method is a method declared in a base class that *must* be overridden in all derived classes. In fact, abstract methods don't define an implementation in the base class.
 
 Method calls to instance methods may resolve to either base class or derived class implementations. The type of a variable determines its *compile-time type*. The *compile-time type* is the type the compiler uses to determine its members. However, a variable may be assigned to an instance of any type derived from its *compile-time type*. The *run-time type* is the type of the actual instance a variable refers to.
 
@@ -217,7 +217,7 @@ An *event* is a member that enables a class or object to provide notifications. 
 
 Within a class that declares an event member, the event behaves just like a field of a delegate type (provided the event isn't abstract and doesn't declare accessors). The field stores a reference to a delegate that represents the event handlers that have been added to the event. If no event handlers are present, the field is `null`.
 
-The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event. There are no special language constructs for raising events.
+The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list or a list item has been changed using the indexer set accessor. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event. There are no special language constructs for raising events.
 
 Clients react to events through *event handlers*. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `MyList<string>`.
 

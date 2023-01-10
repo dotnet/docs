@@ -1,10 +1,8 @@
 ---
 title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET 5+ (including .NET Core) and later versions.
-ms.date: 03/18/2022
+ms.date: 12/08/2022
 ms.topic: overview
-ms.author: tdykstra
-author: tdykstra
 ---
 # Releases and support for .NET (.NET 5+ and .NET Core)
 
@@ -16,13 +14,13 @@ Information about the type of each release is encoded in the version number in t
 
 For example:
 
-* .NET 5 and NET 6 are major releases.
+* .NET 6 and .NET 7 are major releases.
 * .NET Core 3.1 is the first minor release after the .NET Core 3.0 major release.
 * .NET Core 5.0.15 is the fifteenth patch for .NET 5.
 
 ### Major releases
 
-Major releases include new features, new public API surface area, and bug fixes. Examples include .NET 5 and .NET 6.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
+Major releases include new features, new public API surface area, and bug fixes. Examples include .NET 6 and .NET 7.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
 
 ### Minor releases
 
@@ -30,7 +28,7 @@ Minor releases also include new features, public API surface area, and bug fixes
 
 ### Servicing updates
 
-Servicing updates (patches) ship almost every month, and these updates carry both security and non-security bug fixes. For example, .NET 5.0.8 is the eighth update for .NET 5. When these updates include security fixes, they're released on "patch Tuesday", which is always the second Tuesday of the month. Servicing updates are expected to maintain compatibility. Starting with .NET Core 3.1, servicing updates are upgrades that remove the preceding update. For example, the latest servicing update for 3.1 removes the previous 3.1 update upon successful installation.
+Servicing updates (patches) ship almost every month, and these updates carry both security and non-security bug fixes. For example, .NET 5.0.8 was the eighth update for .NET 5. When these updates include security fixes, they're released on "patch Tuesday", which is always the second Tuesday of the month. Servicing updates are expected to maintain compatibility. Starting with .NET Core 3.1, servicing updates are upgrades that remove the preceding update. For example, the latest servicing update for 3.1 removes the previous 3.1 update upon successful installation.
 
 ### Feature bands (SDK only)
 
@@ -52,14 +50,16 @@ Servicing updates are treated differently from major and minor releases. An appl
 
 There are two support tracks for releases:
 
-* *Current* releases
+* *Short Term Support* (STS) releases
 
   These versions are supported until six months after the next major or minor release ships. Previously (.NET Core 3.0 and earlier), these releases were supported for only three months after the next major or minor release shipped.
 
   Example:
 
-  * .NET Core 3.0 shipped in September  2019 and was followed by .NET Core 3.1 in December 2019.
+  * .NET Core 3.0 shipped in September 2019 and was followed by .NET Core 3.1 in December 2019.
   * .NET Core 3.0 support ended in March 2020, 3 months after 3.1 shipped.
+  * .NET 5 is an STS release and was released in November 2020. It was supported for 18 months, until May 2022.
+  * .NET 7 is an STS release and was released in November 2022. It's supported for 18 months, until May 2024.
 
 * *Long Term Support* (LTS) releases
 
@@ -67,21 +67,20 @@ There are two support tracks for releases:
 
   Example:
 
-  * .NET Core 3.1 is an LTS release and was released in December 2019. It's supported for 3 years, until December, 2022.
-  * .NET 5 is a Current release and was released in November 2020. It's supported for 18 months, until May, 2022.
-  * .NET 6 is an LTS release and was released in November, 2021. It's supported for 3 years, until November, 2024.
+  * .NET Core 3.1 is an LTS release and was released in December 2019. It was supported for 3 years, until December 2022.
+  * .NET 6 is an LTS release and was released in November, 2021. It's supported for 3 years, until November 2024.
 
-Releases alternate between LTS and Current, so it's possible for an earlier release to be supported longer than a later release. For example, .NET Core 3.1 is an LTS release with support through December 2022. The .NET 5 release shipped almost a year later but goes out of support earlier, in May 2022.
+Releases alternate between LTS and STS, so it's possible for an earlier release to be supported longer than a later release. For example, .NET Core 3.1 is an LTS release with support through December 2022. The .NET 5 release shipped almost a year later but went out of support earlier, in May 2022.
 
 Servicing updates ship monthly and include both security and non-security (reliability, compatibility, and stability) fixes. Servicing updates are supported until the next servicing update is released. Servicing updates have runtime roll forward behavior. That means that applications default to running on the latest installed runtime servicing update.
 
 ## How to choose a release
 
-If you're building a service and expect to continue updating it on a regular basis, then a Current release like .NET 5 may be your best option to stay up to date with the latest features .NET has to offer.
+If you're building a service and expect to continue updating it on a regular basis, then an STS release like .NET 7 may be your best option to stay up to date with the latest features .NET has to offer.
 
 If you're building a client application that will be distributed to consumers, stability may be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like .NET 6 might be the right option.
 
-### Servicing updates
+### Support for servicing updates
 
 .NET servicing updates are supported until the next servicing update is released. The release cadence is monthly.
 

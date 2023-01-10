@@ -1,6 +1,6 @@
 ---
 title: dotnet new search
-description: The dotnet new --search option searches for templates on NuGet.org.
+description: The dotnet new search command searches for templates on NuGet.org.
 ms.date: 04/29/2021
 ---
 # dotnet new search
@@ -9,38 +9,32 @@ ms.date: 04/29/2021
 
 ## Name
 
-`dotnet new --search` - searches for the templates supported by `dotnet new` on NuGet.org.
+`dotnet new search` - searches for the templates supported by `dotnet new` on NuGet.org.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet new <TEMPLATE_NAME> --search
+dotnet new search <TEMPLATE_NAME>
 
-dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
+dotnet new search [<TEMPLATE_NAME>] [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
     [--package <PACKAGE>] [--tag <TAG>] [--type <TYPE>]
     [--columns <COLUMNS>] [--columns-all]
+    [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
 ## Description
 
-The `dotnet new --search` option searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
+The `dotnet new search` command searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
 
-<!-- markdownlint-disable MD012 -->
 > [!NOTE]
 > [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
 >
-> Examples of the new syntax:
->
-> - Show help for the `search` subcommand.
->
->   ```dotnetcli
->   dotnet new search --help
->   ```
+> Examples of the old syntax:
 >
 > - Search for all templates available on NuGet.org matching the "we" substring and supporting the F# language
 >
 >   ```dotnetcli
->   dotnet new search we --language "F#"
+>   dotnet new we --search --language "F#"
 >   ```
 
 ## Arguments
@@ -74,6 +68,14 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 
   Displays all columns in the output.
 
+- **`-d|--diagnostics`**
+
+  Enables diagnostic output. Available since .NET SDK 7.0.100.
+
+- **`-h|--help`**
+
+  Prints out help for the search command. Available since .NET SDK 7.0.100.
+
 - **`-lang|--language {C#|F#|VB}`**
 
   Filters templates based on language supported by the template. The language accepted varies by the template. Not valid for some templates.
@@ -93,51 +95,41 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 
   Filters templates based on template type. Predefined values are `project`, `item`, and `solution`.
 
-  > [!NOTE]
-  > To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+
+> [!NOTE]
+> To ensure that the template package appears in `dotnet new --search` result, set [the NuGet package type](/nuget/create-packages/set-package-type) to `Template`.
 
 ## Examples
 
 - Search for all templates available on NuGet.org matching the *spa* substring.
-  - since .NET SDK 6.0.100
 
   ```dotnetcli
-  dotnet new --search spa
-  ```
-
-  - before .NET SDK 6.0.100
-
-  ```dotnetcli
-  dotnet new spa --search
+  dotnet new search spa
   ```
 
 - Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
-  - since .NET SDK 6.0.100
 
   ```dotnetcli
-  dotnet new --search we --language "F#"
-  ```
-
-  - before .NET SDK 6.0.100
-  
-  ```dotnetcli
-  dotnet new we --search --language "F#"
+  dotnet new search we --language "F#"
   ```
 
 - Search for item templates.
 
   ```dotnetcli
-  dotnet new --search --type item
+  dotnet new search --type item
   ```
 
 - Search for all C# templates, showing the type and tags in the output.
 
   ```dotnetcli
-  dotnet new --search --language "C#" --columns "type,tags"
+  dotnet new search --language "C#" --columns "type,tags"
   ```
 
 ## See also
 
 - [dotnet new command](dotnet-new.md)
-- [dotnet new --list option](dotnet-new-list.md)
+- [dotnet new list command](dotnet-new-list.md)
 - [Custom templates for dotnet new](custom-templates.md)

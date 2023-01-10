@@ -5,7 +5,7 @@ ms.date: 08/18/2021
 ---
 # dotnet run
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -53,8 +53,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--`**
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
@@ -81,7 +79,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--no-build`**
 
-  Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
+  Doesn't build the project before running. It also implicitly sets the `--no-restore` flag.
 
 - **`--no-dependencies`**
 
@@ -122,7 +120,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). `-r` short option available since .NET Core 3.0 SDK.
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

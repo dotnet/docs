@@ -10,7 +10,7 @@ ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 ---
 # Runtime settings schema
 
-Runtime settings are used by the common language runtime to configure applications that target .NET Framework.
+Runtime settings are used by the common language runtime to configure applications that target .NET Framework. This article shows the schema for runtime settings in an [application configuration file](../../index.md).
 
 ## The \<runtime> section and its parent and child elements
 
@@ -91,7 +91,7 @@ Runtime settings are used by the common language runtime to configure applicatio
 |[\<CompatSortNLSVersion>](compatsortnlsversion-element.md)|Specifies that the runtime should use legacy sorting behavior when performing string comparisons|
 |[\<dependentAssembly>](dependentassembly-element.md)|Encapsulates binding policy and assembly location for each assembly.|
 |[\<developmentMode>](developmentmode-element.md)|Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.|
-|[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Specifies whether the caching of binding failures, which is the default behavior in the .NET Framework 2.0, is disabled.|
+|[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Specifies whether the caching of binding failures, which is the default behavior in .NET Framework 2.0, is disabled.|
 |[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)|Specifies whether the full thread stack is committed when a thread starts.|
 |[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)|Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.|
 |[\<disableStackOverflowProbing>](disablestackoverflowprobing-element.md)|Specifies whether stack-overflow probing is disabled.|

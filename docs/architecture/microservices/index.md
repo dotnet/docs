@@ -21,7 +21,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 
-- Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
+- Watch the [introductory video](https://aka.ms/microservices-video)
 
 - Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 
@@ -72,9 +72,7 @@ The eShopOnContainers application is an open-source reference app for .NET and m
 
 The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it's also used to test new potentially interesting technologies as they show up.
 
-## Send us your feedback!
-
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 ## Credits
 

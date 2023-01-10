@@ -59,7 +59,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 |**/e\[lement\]:**_element_|Specifies the element in the schema to generate code for. By default all elements are typed. You can specify this argument more than once.|
 |**/enableDataBinding**|Implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all generated types to enable data binding. The short form is `/edb`.|
 |**/enableLinqDataSet**|(Short form: `/eld`.) Specifies that the generated DataSet can be queried against using LINQ to DataSet. This option is used when the /dataset option is also specified. For more information, see [LINQ to DataSet Overview](../../framework/data/adonet/linq-to-dataset-overview.md) and [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md). For general information about using LINQ, see [Language-Integrated Query (LINQ) - C#](../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../visual-basic/programming-guide/concepts/linq/index.md).|
-|**/f\[ields\]**|Generates fields instead of properties. By default, properties are generated.|
+|**/f\[ields\]**|Generates fields only. By default, [properties with backing fields](../../csharp/programming-guide/classes-and-structs/properties.md#properties-with-backing-fields) are generated.|
 |**/l\[anguage\]:**_language_|Specifies the programming language to use. Choose from `CS` (C#, which is the default), `VB` (Visual Basic), `JS` (JScript), or `VJS` (Visual J#). You can also specify a fully qualified name for a class implementing <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|
 |**/n\[amespace\]:**_namespace_|Specifies the runtime namespace for the generated types. The default namespace is `Schemas`.|
 |**/nologo**|Suppresses the banner.|
@@ -100,7 +100,7 @@ By using the `/parameters` switch, you can specify a single XML file that sets v
 </xsd>
 ```
 
-If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing **Enter**:
+If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing <kbd>Enter</kbd>:
 
 ```console
  xsd /p:GenerateSchemas.xml

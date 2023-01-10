@@ -10,37 +10,6 @@ items:
     - name: .NET API browser
       tocHref: /dotnet/api/
       topicHref: /dotnet/api/index
-    - name: .NET application architecture guide
-      tocHref: /dotnet/architecture/
-      topicHref: /dotnet/architecture/index
-      items:
-      - name: Modern ASP.NET web applications e-book
-        tocHref: /dotnet/architecture/modern-web-apps-azure/
-        topicHref: /dotnet/architecture/modern-web-apps-azure/index
-      - name: .NET microservices - Architecture e-book
-        tocHref: /dotnet/architecture/microservices/
-        topicHref: /dotnet/architecture/microservices/index
-      - name: Cloud native
-        tocHref: /dotnet/architecture/cloud-native/
-        topicHref: /dotnet/architecture/cloud-native/index
-      - name: Modernizing .NET apps e-book
-        tocHref: /dotnet/architecture/modernize-with-azure-containers/
-        topicHref: /dotnet/architecture/modernize-with-azure-containers/index
-      - name: .NET microservices - DevOps e-book
-        tocHref: /dotnet/architecture/containerized-lifecycle/
-        topicHref: /dotnet/architecture/containerized-lifecycle/index
-      - name: Serverless apps e-book
-        tocHref: /dotnet/architecture/serverless/
-        topicHref: /dotnet/architecture/serverless/index
-      - name: Blazor for ASP.NET Web Forms developers e-book
-        tocHref: /dotnet/architecture/blazor-for-web-forms-developers/
-        topicHref: /dotnet/architecture/blazor-for-web-forms-developers/index
-      - name: ASP.NET Core gRPC for WCF developers
-        tocHref: /dotnet/architecture/grpc-for-wcf-developers/
-        topicHref: /dotnet/architecture/grpc-for-wcf-developers/index
-      - name: Modernizing desktop apps
-        tocHref: /dotnet/architecture/modernize-desktop/
-        topicHref: /dotnet/architecture/modernize-desktop/index
     - name: .NET fundamentals
       tocHref: /dotnet/fundamentals/
       topicHref: /dotnet/fundamentals/index
@@ -82,6 +51,13 @@ items:
       - name: Security in .NET
         tocHref: /dotnet/standard/security/
         topicHref: /dotnet/standard/security/index
+      - name: Serialization
+        tocHref: /dotnet/standard/serialization/
+        topicHref: /dotnet/standard/serialization/index
+        items:
+        - name: JSON serialization
+          tocHref: /dotnet/standard/serialization/system-text-json/
+          topicHref: /dotnet/standard/serialization/system-text-json/overview
       - name: Managed threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index
@@ -91,17 +67,18 @@ items:
       items:
       - name: Breaking changes
         tocHref: /dotnet/core/compatibility/
-        topicHref: /dotnet/core/compatibility/index
+        topicHref: /dotnet/core/compatibility/breaking-changes
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index
       items:
-      - name: Add-ins and extensibility
-        tocHref: /dotnet/framework/add-ins/
-        topicHref: /dotnet/framework/add-ins/index
       - name: Additional APIs
         tocHref: /dotnet/framework/additional-apis/
         topicHref: /dotnet/framework/additional-apis/index
+        items:
+        - name: Point of Service for .NET
+          tocHref: /dotnet/framework/additional-apis/pos-for-net/
+          topicHref: /dotnet/framework/additional-apis/pos-for-net/index
       - name: Application domains and assemblies
         tocHref: /dotnet/framework/app-domains/
         topicHref: /dotnet/framework/app-domains/index
@@ -338,9 +315,6 @@ items:
         tocHref: /dotnet/csharp/programming-guide/
         topicHref: /dotnet/csharp/programming-guide/index
         items:
-        - name: Inside a C# program
-          tocHref: /dotnet/csharp/programming-guide/inside-a-program/
-          topicHref: /dotnet/csharp/programming-guide/inside-a-program/index
         - name: Arrays
           tocHref: /dotnet/csharp/programming-guide/arrays/
           topicHref: /dotnet/csharp/programming-guide/arrays/index
@@ -353,9 +327,6 @@ items:
         - name: Events
           tocHref: /dotnet/csharp/programming-guide/events/
           topicHref: /dotnet/csharp/programming-guide/events/index
-        - name: Exceptions and exception handling
-          tocHref: /dotnet/csharp/programming-guide/exceptions/
-          topicHref: /dotnet/csharp/programming-guide/exceptions/index
         - name: File system and the registry
           tocHref: /dotnet/csharp/programming-guide/file-system/
           topicHref: /dotnet/csharp/programming-guide/file-system/index
@@ -371,12 +342,6 @@ items:
         - name: Interoperability
           tocHref: /dotnet/csharp/programming-guide/interop/
           topicHref: /dotnet/csharp/programming-guide/interop/index
-        - name: Main() and command-line arguments
-          tocHref: /dotnet/csharp/programming-guide/main-and-command-args/
-          topicHref: /dotnet/csharp/programming-guide/main-and-command-args/index
-        - name: Namespaces
-          tocHref: /dotnet/csharp/programming-guide/namespaces/
-          topicHref: /dotnet/csharp/programming-guide/namespaces/index
         - name: Programming concepts
           tocHref: /dotnet/csharp/programming-guide/concepts/
           topicHref: /dotnet/csharp/programming-guide/concepts/index
@@ -411,12 +376,6 @@ items:
         - name: Types
           tocHref: /dotnet/csharp/programming-guide/types/
           topicHref: /dotnet/csharp/programming-guide/types/index
-        - name: Unsafe code and pointers
-          tocHref: /dotnet/csharp/programming-guide/unsafe-code-pointers/
-          topicHref: /dotnet/csharp/programming-guide/unsafe-code-pointers/index
-        - name: XML documentation
-          tocHref: /dotnet/csharp/programming-guide/xmldoc/
-          topicHref: /dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments
       - name: Language reference
         tocHref: /dotnet/csharp/language-reference/
         topicHref: /dotnet/csharp/language-reference/index
@@ -424,7 +383,7 @@ items:
         - name: Keywords
           tocHref: /dotnet/csharp/language-reference/keywords/
           topicHref: /dotnet/csharp/language-reference/keywords/index
-        - name: Operators
+        - name: Operators and expressions
           tocHref: /dotnet/csharp/language-reference/operators/
           topicHref: /dotnet/csharp/language-reference/operators/index
         - name: Special characters
@@ -444,7 +403,7 @@ items:
           topicHref: /dotnet/csharp/language-reference/compiler-messages/index
       - name: Specification
         items:
-        - name: C# 6.0 draft specification
+        - name: C# 7.0 draft specification
           tocHref: /dotnet/csharp/language-reference/language-specification/
           topicHref: /dotnet/csharp/language-reference/language-specification/index
         - name: C# 7.0 feature specifications
@@ -452,7 +411,7 @@ items:
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/index
         - name: C# 7.1 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/
-          topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/index
+          topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/infer-tuple-names
         - name: C# 7.2 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/index
@@ -464,7 +423,13 @@ items:
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/index
         - name: C# 9.0 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/
-          topicHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/records
+          topicHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/index
+        - name: C# 10 feature specifications
+          tocHref: /dotnet/csharp/language-reference/proposals/csharp-10.0/
+          topicHref: /dotnet/csharp/language-reference/proposals/csharp-10.0/index
+        - name: C# 11 feature specifications
+          tocHref: /dotnet/csharp/language-reference/proposals/csharp-11.0/
+          topicHref: /dotnet/csharp/language-reference/proposals/csharp-11.0/index
     - name: F# guide
       tocHref: /dotnet/fsharp/
       topicHref: /dotnet/fsharp/index
@@ -630,3 +595,34 @@ items:
     - name: What's new
       tocHref: /dotnet/whats-new/
       topicHref: /dotnet/whats-new/index
+  - name: .NET architecture
+    tocHref: /dotnet/architecture/
+    topicHref: /dotnet/architecture/index
+    items:
+    - name: Modern ASP.NET web applications e-book
+      tocHref: /dotnet/architecture/modern-web-apps-azure/
+      topicHref: /dotnet/architecture/modern-web-apps-azure/index
+    - name: .NET microservices - Architecture e-book
+      tocHref: /dotnet/architecture/microservices/
+      topicHref: /dotnet/architecture/microservices/index
+    - name: Cloud native
+      tocHref: /dotnet/architecture/cloud-native/
+      topicHref: /dotnet/architecture/cloud-native/index
+    - name: Modernizing .NET apps e-book
+      tocHref: /dotnet/architecture/modernize-with-azure-containers/
+      topicHref: /dotnet/architecture/modernize-with-azure-containers/index
+    - name: .NET microservices - DevOps e-book
+      tocHref: /dotnet/architecture/containerized-lifecycle/
+      topicHref: /dotnet/architecture/containerized-lifecycle/index
+    - name: Serverless apps e-book
+      tocHref: /dotnet/architecture/serverless/
+      topicHref: /dotnet/architecture/serverless/index
+    - name: Blazor for ASP.NET Web Forms developers e-book
+      tocHref: /dotnet/architecture/blazor-for-web-forms-developers/
+      topicHref: /dotnet/architecture/blazor-for-web-forms-developers/index
+    - name: ASP.NET Core gRPC for WCF developers
+      tocHref: /dotnet/architecture/grpc-for-wcf-developers/
+      topicHref: /dotnet/architecture/grpc-for-wcf-developers/index
+    - name: Modernizing desktop apps
+      tocHref: /dotnet/architecture/modernize-desktop/
+      topicHref: /dotnet/architecture/modernize-desktop/index

@@ -112,13 +112,6 @@ namespace Coding_Conventions_Examples
             //<snippet13b>
             var vowels2 = new string[] { "a", "e", "i", "o", "u" };
             //</snippet13b>
-            //<snippet13c>
-            var vowels3 = new string[5];
-            vowels3[0] = "a";
-            vowels3[1] = "e";
-            // And so on.
-            //</snippet13c>
-
 
             //<snippet15a>
             ActionExample1("string for x");

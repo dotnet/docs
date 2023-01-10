@@ -65,10 +65,10 @@ Next, the `SumPageSizesAsync` method is awaited. If processing all of the URLs o
 ```console
 Application started.
 
-https://docs.microsoft.com                                       37,357
-https://docs.microsoft.com/aspnet/core                           85,589
-https://docs.microsoft.com/azure                                398,939
-https://docs.microsoft.com/azure/devops                          73,663
+https://learn.microsoft.com                                       37,357
+https://learn.microsoft.com/aspnet/core                           85,589
+https://learn.microsoft.com/azure                                398,939
+https://learn.microsoft.com/azure/devops                          73,663
 
 Tasks cancelled: timed out.
 

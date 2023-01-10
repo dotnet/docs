@@ -5,7 +5,7 @@ ms.date: 02/27/2020
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -37,6 +37,9 @@ The `dotnet restore` command uses NuGet to restore dependencies as well as proje
 - [`dotnet pack`](dotnet-pack.md)
 
 Sometimes, it might be inconvenient to run the implicit NuGet restore with these commands. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent the implicit NuGet restore, you can use the `--no-restore` flag with any of these commands to disable implicit restore.
+
+  > [!NOTE]
+  > Signed package verification during restore operations requires a certificate root store that is valid for both code signing and timestamping.  See [NuGet signed package verification](nuget-signed-package-verification.md) for details.
 
 ### Specify feeds
 
@@ -85,8 +88,6 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
@@ -131,7 +132,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Provide multiple RIDs by specifying this option multiple times.
+  Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
 - **`-s|--source <SOURCE>`**
 

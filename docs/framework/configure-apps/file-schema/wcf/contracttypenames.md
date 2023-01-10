@@ -31,7 +31,7 @@ A configuration section that specifies a list of contract type names, which are 
             <contractTypeNames>
               <add name="String"
                    namespace="String" />
-            <contractTypeNames>
+            </contractTypeNames>
             <extensions />
             <scopes>
               <add scope="URI"/>

@@ -24,10 +24,10 @@ using IHost host = Host.CreateDefaultBuilder(args)
         string key10 = "section:section1:key:key0";
         string key11 = "section:section1:key:key1";
 
-        string val00 = configurationRoot[key00];
-        string val01 = configurationRoot[key01];
-        string val10 = configurationRoot[key10];
-        string val11 = configurationRoot[key11];
+        string? val00 = configurationRoot[key00];
+        string? val01 = configurationRoot[key01];
+        string? val10 = configurationRoot[key10];
+        string? val11 = configurationRoot[key11];
 
         Console.WriteLine($"{key00} = {val00}");
         Console.WriteLine($"{key01} = {val01}");

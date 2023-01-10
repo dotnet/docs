@@ -33,7 +33,7 @@ Learn how to use functions to execute server-side logic and build serverless arc
 - Monitoring
 - Development, testing, and deployment
 
-[Create serverless applications](/learn/paths/create-serverless-applications/)
+[Create serverless applications](/training/paths/create-serverless-applications/)
 
 ## Customer reviews
 
@@ -92,7 +92,7 @@ This sample shows how to utilize Durable Functions' fan-out pattern to load an a
 ## Recommended resources
 
 - [Big Data Processing: Serverless MapReduce on Azure](/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
-- [Create serverless applications](/learn/paths/create-serverless-applications/)
+- [Create serverless applications](/training/paths/create-serverless-applications/)
 - [Customer Reviews App with Cognitive Services](/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
 - [File processing and validation using Azure Functions, Logic Apps, and Durable Functions](/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
 - [Implementing a simple Azure Function with a Xamarin.Forms client](/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using Microsoft.Extensions.Primitives;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-[SimpleJob(RuntimeMoniker.Net60)]
+[SimpleJob(RuntimeMoniker.Net70)]
 public partial class Example
 {
     #region Fifty Paragraphs of Lorem Ipsum: https://loremipsum.io/generator

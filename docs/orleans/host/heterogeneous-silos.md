@@ -8,9 +8,7 @@ ms.date: 03/16/2022
 
 On a given cluster, silos can support a different set of grain types:
 
-<!-- TODO:
-![](~/images/heterogeneous.png)
--->
+:::image type="content" source="media/heterogeneous.png" alt-text="Heterogeneous silos overview diagram.":::
 
 In this example the cluster supports grains of type `A`, `B`, `C`, `D`, `E`:
 

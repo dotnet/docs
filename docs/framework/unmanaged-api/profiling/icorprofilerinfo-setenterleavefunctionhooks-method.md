@@ -43,7 +43,7 @@ HRESULT SetEnterLeaveFunctionHooks(
   
 ## Remarks  
 
- In the .NET Framework version 1.0, each function pointer can be null to disable that corresponding callback.  
+ In .NET Framework version 1.0, each function pointer can be null to disable that corresponding callback.  
   
  Only one set of callbacks can be active at a time. Thus, if a profiler calls both `SetEnterLeaveFunctionHooks` and [ICorProfilerInfo2::SetEnterLeaveFunctionHooks2](icorprofilerinfo2-setenterleavefunctionhooks2-method.md), then `SetEnterLeaveFunctionHooks2` takes precedence.  
   

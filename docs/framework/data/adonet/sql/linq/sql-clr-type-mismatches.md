@@ -198,9 +198,9 @@ Operators and functions that are essentially comparable have subtly different se
     create table T4 (
         Col1      nvarchar (256)
     )
-    insert into T4 values (‘Food’)
-    insert into T4 values (‘FOOD’)
-    select * from T4 where Col1 = ‘food’
+    insert into T4 values ('Food')
+    insert into T4 values ('FOOD')
+    select * from T4 where Col1 = 'food'
     -- Both the rows are returned because of case-insensitive matching.
     ```
 
@@ -249,7 +249,7 @@ create table T5 (
     Col1      nvarchar(10),
     Col2      nvarchar(10)
 )
-Insert into T5(col1, col2) values (‘3’, ‘2’);
+Insert into T5(col1, col2) values ('3', '2');
 ```
 
 [!code-csharp[DLinqMismatch#8](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqMismatch/cs/Program.cs#8)]

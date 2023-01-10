@@ -1,6 +1,6 @@
-﻿public class Settings
+﻿public sealed class Settings
 {
-    public int KeyOne { get; set; }
-    public bool KeyTwo { get; set; }
-    public NestedSettings KeyThree { get; set; } = null!;
+    public required int KeyOne { get; set; }
+    public required bool KeyTwo { get; set; }
+    public required NestedSettings KeyThree { get; set; } = null!;
 }

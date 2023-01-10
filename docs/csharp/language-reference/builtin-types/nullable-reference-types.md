@@ -8,7 +8,10 @@ ms.date: 09/08/2021
 > [!NOTE]
 > This article covers nullable reference types. You can also declare [nullable value types](nullable-value-types.md).
 
-Nullable reference types are available beginning with C# 8.0, in code that has opted in to a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
+Nullable reference types are available in code that has opted in to a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
+
+> [!IMPORTANT]
+> All project templates starting with .NET 6 (C# 10) enable the *nullable context* for the project. Projects created with earlier templates don't include this element, and these features are off unless you enable them in the project file or use pragmas.
 
  In a nullable aware context:
 
@@ -48,7 +51,7 @@ In a nullable enabled context, the compiler performs static analysis on variable
 Non-nullable reference types should always be safe to dereference because their *null-state* is *not-null*. To enforce that rule, the compiler issues warnings if a non-nullable reference type isn't initialized to a non-null value. Local variables must be assigned where they're declared. Every field must be assigned a *not-null* value, in a field initializer or every constructor. The compiler issues warnings when a non-nullable reference is assigned to a reference whose state is *maybe-null*. Generally, a non-nullable reference is *not-null* and no warnings are issued when those variables are dereferenced.
 
 > [!NOTE]
-> If you assign a *maybe-null* expression to a non-nullable reference type, the compiler generates a warnings. The compiler then generates warnings for that variable until it's assigned to a *not-null* expression.
+> If you assign a *maybe-null* expression to a non-nullable reference type, the compiler generates a warning. The compiler then generates warnings for that variable until it's assigned to a *not-null* expression.
 
 Nullable reference types may be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not-null* before it's dereferenced. If a nullable reference is determined to be *maybe-null*, assigning to a non-nullable reference variable generates a compiler warning. The following class shows examples of these warnings:
 

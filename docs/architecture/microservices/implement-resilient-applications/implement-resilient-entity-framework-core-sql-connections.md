@@ -97,7 +97,7 @@ public class CatalogIntegrationEventService : ICatalogIntegrationEventService
     {
         // Use of an EF Core resiliency strategy when using multiple DbContexts
         // within an explicit BeginTransaction():
-        // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
+        // https://learn.microsoft.com/ef/core/miscellaneous/connection-resiliency
         await ResilientTransaction.New(_catalogContext).ExecuteAsync(async () =>
         {
             // Achieving atomicity between original catalog database
@@ -126,7 +126,7 @@ public class ResilientTransaction
     {
         // Use of an EF Core resiliency strategy when using multiple DbContexts
         // within an explicit BeginTransaction():
-        // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
+        // https://learn.microsoft.com/ef/core/miscellaneous/connection-resiliency
         var strategy = _context.Database.CreateExecutionStrategy();
         await strategy.ExecuteAsync(async () =>
         {
@@ -141,7 +141,7 @@ public class ResilientTransaction
 ## Additional resources
 
 - **Connection Resiliency and Command Interception with EF in an ASP.NET MVC Application** \
-  [https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
+  [https://learn.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
 
 - **Cesar de la Torre. Using Resilient Entity Framework Core SQL Connections and Transactions** \
   <https://devblogs.microsoft.com/cesardelatorre/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>

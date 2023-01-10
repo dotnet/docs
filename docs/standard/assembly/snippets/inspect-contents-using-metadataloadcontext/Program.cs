@@ -8,6 +8,7 @@ namespace AssemblySnippets
         {
             MetadataLoadContextSnippets.SnippetsResolver();
             MetadataLoadContextSnippets.SnippetsMetadataLoadContext();
+            MetadataLoadContextSnippets.SnippetsAssignability();
         }
     }
 }

@@ -31,7 +31,7 @@ A configuration element that specifies the contract name of the services being s
                         scopeMatchBy="Uri">
             <contractTypeNames>
               <add name="String" namespace="String" />
-            <contractTypeNames>
+            </contractTypeNames>
             <extensions />
             <scopes>
               <add scope="URI"/>

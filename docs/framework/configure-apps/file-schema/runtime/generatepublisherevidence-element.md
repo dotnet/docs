@@ -15,6 +15,8 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<generatePublisherEvidence>**
 
+[!INCLUDE [cas-deprecated](../../../../../includes/cas-deprecated.md)]
+
 ## Syntax
 
 ```xml
@@ -78,5 +80,6 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorProfilerInfo::GetInprocInspectionInterface Method
 
-Gets an object that can be queried for an "ICorDebugProcess" interface. This method is obsolete in the .NET Framework version 2.0.  
+Gets an object that can be queried for an "ICorDebugProcess" interface. This method is obsolete in .NET Framework version 2.0.  
   
 ## Syntax  
   
@@ -35,7 +35,7 @@ HRESULT GetInprocInspectionInterface(
   
 ## Remarks  
 
- The common language runtime (CLR) debugging API supported limited in-process debugging in the .NET Framework version 1.0. In-process debugging enabled a profiler to use the inspection portions of the debugging API. As a result of customer feedback, in-process debugging has been removed from the .NET Framework in version 2.0, and replaced with a set of functionality that is more in line with the profiling API.  
+ The common language runtime (CLR) debugging API supported limited in-process debugging in .NET Framework version 1.0. In-process debugging enabled a profiler to use the inspection portions of the debugging API. As a result of customer feedback, in-process debugging has been removed from the .NET Framework in version 2.0, and replaced with a set of functionality that is more in line with the profiling API.  
   
 ## Requirements  
 

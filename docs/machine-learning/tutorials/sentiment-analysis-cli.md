@@ -1,9 +1,9 @@
 ---
 title: Analyze sentiment using the ML.NET CLI
 description: Automatically generate an ML model and related C# code from a sample dataset
-author: cesardl
-ms.author: cesardl
-ms.date: 06/03/2020
+author: luisquintanilla
+ms.author: luquinta
+ms.date: 07/22/2022
 ms.custom: mvc,mlnet-tooling
 ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
@@ -31,8 +31,8 @@ You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) to gen
 
 ## Pre-requisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1) or later
-- (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+- [.NET Core 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or later
+- (Optional) [Visual Studio](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 
 You can either run the generated C# code projects from Visual Studio or with `dotnet run` (.NET CLI).
@@ -125,7 +125,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
 ## Explore the generated C# code to use for running the model to make predictions
 
-1. In Visual Studio (2017 or 2019) open the solution generated in the folder named `SampleClassification` within your original destination folder (in the tutorial was named `/cli-test`). You should see a solution similar to:
+1. In Visual Studio open the solution generated in the folder named `SampleClassification` within your original destination folder (in the tutorial was named `/cli-test`). You should see a solution similar to:
 
     > [!NOTE]
     > In the tutorial we suggest to use Visual Studio, but you can also explore the generated C# code (two projects) with any text editor and run the generated console app with the `dotnet CLI` on macOS, Linux or Windows machine.
@@ -155,7 +155,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
         Console.WriteLine("Using model to make single prediction -- Comparing actual Col1 with predicted Col1 from sample data...\n\n");
         Console.WriteLine($"Col0: {sampleData.Col0}");
-        Console.WriteLine($"\n\nPredicted Col1 value {predictionResult.Prediction} \nPredicted Col1 scores: [{String.Join(",", predictionResult.Score)}]\n\n");
+        Console.WriteLine($"\n\nPredicted Col1 value {predictionResult.PredictedLabel} \nPredicted Col1 scores: [{String.Join(",", predictionResult.Score)}]\n\n");
         Console.WriteLine("=============== End of process, hit any key to finish ===============");
         Console.ReadKey();
     }

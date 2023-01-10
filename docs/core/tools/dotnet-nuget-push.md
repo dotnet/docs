@@ -6,7 +6,7 @@ ms.date: 02/14/2020
 ---
 # dotnet nuget push
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -38,8 +38,6 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`-d|--disable-buffering`**
 
   Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
@@ -62,8 +60,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--no-service-endpoint`**
 
-  Doesn't append "api/v2/package" to the source URL. Option available since .NET Core 2.1 SDK.
-
+  Doesn't append "api/v2/package" to the source URL.
 - **`-s|--source <SOURCE>`**
 
   Specifies the server URL. NuGet identifies a UNC or local folder source and simply copies the file there instead of pushing it using HTTP.
@@ -72,7 +69,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--skip-duplicate`**
 
-  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
+  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that other pushes can continue.
 
 - **`-sk|--symbol-api-key <API_KEY>`**
 
@@ -100,7 +97,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://api.nuget.org/v3/index.json
   ```
   
-  * Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
+- Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
@@ -149,5 +146,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   ```dotnetcli
   dotnet nuget push "*.nupkg" -s c:\mydir
   ```
+  
+- For pushing to Azure Artifacts, [see Azure Artifacts' push documentation](/azure/devops/artifacts/nuget/dotnet-exe#publish-packages).
 
   This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

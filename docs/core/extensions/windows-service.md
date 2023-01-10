@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/01/2022
+ms.date: 06/30/2022
 ms.topic: tutorial
 ---
 
@@ -24,6 +24,8 @@ In this tutorial, you'll learn how to:
 
 [!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
+[!INCLUDE [worker-template-workloads](includes/worker-template-workloads.md)]
+
 ## Prerequisites
 
 - The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
@@ -36,7 +38,7 @@ In this tutorial, you'll learn how to:
 
 ## Install NuGet package
 
-In order to interop with native Windows Services from .NET <xref:Microsoft.Extensions.Hosting.IHostedService> implementations, you'll need to install the [`Microsoft.Extensions.Hosting.WindowsServices` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices).
+To interop with native Windows Services from .NET <xref:Microsoft.Extensions.Hosting.IHostedService> implementations, you'll need to install the [`Microsoft.Extensions.Hosting.WindowsServices` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices).
 
 To install this from Visual Studio, use the **Manage NuGet Packages...** dialog. Search for "Microsoft.Extensions.Hosting.WindowsServices", and install it. If you'd rather use the .NET CLI, run the `dotnet add package` command:
 
@@ -44,7 +46,7 @@ To install this from Visual Studio, use the **Manage NuGet Packages...** dialog.
 dotnet add package Microsoft.Extensions.Hosting.WindowsServices
 ```
 
-For more information on the .NET CLI add package command, see [`dotnet add package`](../tools/dotnet-add-package.md).
+For more information on the .NET CLI add package command, see [dotnet add package](../tools/dotnet-add-package.md).
 
 After successfully adding the packages, your project file should now contain the following package references:
 
@@ -78,10 +80,18 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 > By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.
 >
 > ```json
-> "Logging": {
->   "EventLog": {
+> {
+>   "Logging": {
 >     "LogLevel": {
->       "Default": "Information"
+>       "Default": "Warning"
+>     },
+>     "EventLog": {
+>       "SourceName": "The Joke Service",
+>       "LogName": "Application",
+>       "LogLevel": {
+>         "Microsoft": "Information",
+>         "Microsoft.Hosting.Lifetime": "Information"
+>       }
 >     }
 >   }
 > }
@@ -93,7 +103,7 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
+:::code source="snippets/workers/windows-service/Program.cs" highlight="6-9,15-16":::
 
 The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 
@@ -220,6 +230,19 @@ SERVICE_NAME: .NET Joke Service
 You will see the configured restart values.
 
 :::image type="content" source="media/windows-service-recovery-properties-configured.png" alt-text="The Windows Service recovery configuration properties dialog with restart enabled.":::
+
+#### Service recovery options and .NET `BackgroundService` instances
+
+With .NET 6, [new hosting exception handling behaviors](../compatibility/core-libraries/6.0/hosting-exception-handling.md) have been added to .NET. The <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior> enum was added to the `Microsoft.Extensions.Hosting` namespace, and is used to specify the behavior of the service when an exception is thrown. The following table lists the available options:
+
+| Option     | Description                                                        |
+|------------|--------------------------------------------------------------------|
+| `Ignore`   | Ignore exceptions thrown in `BackgroundService`.                   |
+| `StopHost` | The `IHost` will be stopped when an unhandled exception is thrown. |
+
+The default behavior before .NET 6 is `Ignore`, which resulted in _zombie processes_ (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
+
+:::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
 
 ## Verify service functionality
 

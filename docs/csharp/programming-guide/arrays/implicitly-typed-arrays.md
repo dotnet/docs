@@ -34,5 +34,5 @@ When you create an anonymous type that contains an array, the array must be impl
 - [Arrays](./index.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)
 - [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
-- [var](../../language-reference/keywords/var.md)
+- [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables)
 - [LINQ in C#](../../linq/index.md)

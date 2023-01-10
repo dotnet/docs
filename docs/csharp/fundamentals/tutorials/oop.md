@@ -93,15 +93,15 @@ The override applies the monthly deposit set in the constructor. Add the followi
 
 Verify the results. Now, add a similar set of test code for the `LineOfCreditAccount`:
 
-```
-    var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
-    // How much is too much to borrow?
-    lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
-    lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
-    lineOfCredit.MakeWithdrawal(5000m, DateTime.Now, "Emergency funds for repairs");
-    lineOfCredit.MakeDeposit(150m, DateTime.Now, "Partial restoration on repairs");
-    lineOfCredit.PerformMonthEndTransactions();
-    Console.WriteLine(lineOfCredit.GetAccountHistory());
+```csharp
+var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+// How much is too much to borrow?
+lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
+lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
+lineOfCredit.MakeWithdrawal(5000m, DateTime.Now, "Emergency funds for repairs");
+lineOfCredit.MakeDeposit(150m, DateTime.Now, "Partial restoration on repairs");
+lineOfCredit.PerformMonthEndTransactions();
+Console.WriteLine(lineOfCredit.GetAccountHistory());
  ```
 
 When you add the preceding code and run the program, you'll see something like the following error:
@@ -119,7 +119,7 @@ Unhandled exception. System.ArgumentOutOfRangeException: Amount of deposit must 
 
 This code fails because the `BankAccount` assumes that the initial balance must be greater than 0. Another assumption baked into the `BankAccount` class is that the balance can't go negative. Instead, any withdrawal that overdraws the account is rejected. Both of those assumptions need to change. The line of credit account starts at 0, and generally will have a negative balance. Also, if a customer borrows too much money, they incur a fee. The transaction is accepted, it just costs more. The first rule can be implemented by adding an optional argument to the `BankAccount` constructor that specifies the minimum balance. The default is `0`. The second rule requires a mechanism that enables derived classes to modify the default algorithm. In a sense, the base class "asks" the derived type what should happen when there's an overdraft. The default behavior is to reject the transaction by throwing an exception.
 
-Let's start by adding a second constructor that includes an optional `minimumBalance` parameter. This new constructor does all the actions done by the existing constructor. Also, it sets the minimum balance property. You could copy the body of the existing constructor. but that means two locations to change in the future. Instead, you can use *constructor chaining* to have one constructor call another. The following code shows the two constructors and the new additional field:
+Let's start by adding a second constructor that includes an optional `minimumBalance` parameter. This new constructor does all the actions done by the existing constructor. Also, it sets the minimum balance property. You could copy the body of the existing constructor, but that means two locations to change in the future. Instead, you can use *constructor chaining* to have one constructor call another. The following code shows the two constructors and the new additional field:
 
  :::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" ID="ConstructorModifications":::
 
@@ -152,7 +152,7 @@ public void MakeWithdrawal(decimal amount, DateTime date, string note)
     {
         throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
     }
-    if (Balance - amount < minimumBalance)
+    if (Balance - amount < _minimumBalance)
     {
         throw new InvalidOperationException("Not sufficient funds for this withdrawal");
     }
@@ -177,7 +177,7 @@ Run the program, and check the results.
 
 ## Summary
 
-If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/fundamentals/object-oriented/snippets/objects).
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/fundamentals/tutorials/snippets/object-oriented-programming).
 
 This tutorial demonstrated many of the techniques used in Object-Oriented programming:
 

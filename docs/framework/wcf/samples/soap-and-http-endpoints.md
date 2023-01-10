@@ -36,7 +36,7 @@ The sample consists of a Web-hosted service and a console application. As the co
 
 1. Open the solution for the SOAP and HTTP Endpoints Sample.
 
-2. Press **Ctrl**+**Shift**+**B** to build the solution.
+2. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution.
 
 3. If it is not already open, press CTRL+W, S to open the **Solution Explorer** window.
 

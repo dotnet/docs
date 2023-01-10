@@ -20,7 +20,7 @@ topic_type:
 ---
 # LIBRARY_PROVIDER_INDEX_TYPE Enumeration
 
-The type of index information passed to the library provider is either the identity of the requested module or the runtime (coreclr) module's.
+The type of index information passed to the library provider is either the identity of the requested module or of the runtime (coreclr) module.
   
 ## Syntax  
   

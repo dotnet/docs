@@ -16,11 +16,11 @@ The following steps show how you can use Http retries with Polly integrated into
 
 **Reference the .NET 6 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly's Retry policy, in Startup**
 
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard Startup.ConfigureServices(...) method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard `Startup.ConfigureServices(...)` method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
 
 ```csharp
 //ConfigureServices()  - Startup.cs
@@ -62,7 +62,7 @@ var retryPolicy = Policy
 ## Additional resources
 
 - **Retry pattern**  
-  [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
+  [https://learn.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
 - **Polly and IHttpClientFactory**  
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>

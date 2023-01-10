@@ -3,7 +3,7 @@ title: Connect .NET for Apache Spark to SQL Server
 description: Learn how to connect to a SQL Server instance from your .NET for Apache Spark application.
 ms.author: nidutta
 author: Niharikadutta
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -11,6 +11,8 @@ ms.custom: mvc,how-to
 # Connect .NET for Apache Spark to SQL Server
 
 In this article, you learn how to connect to an SQL server instance from your [.NET for Apache Spark](https://github.com/dotnet/spark) application.
+
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Configure SQL Server to grant your application access
 

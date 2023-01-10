@@ -26,7 +26,7 @@ By installing [Docker Desktop](https://hub.docker.com/search/?type=edition&offer
 ### Additional resources
 
 - **Visual Studio**. Official site. \
-  [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
+  [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)
 
 - **Visual Studio Code**. Official site. \
   <https://code.visualstudio.com/download>

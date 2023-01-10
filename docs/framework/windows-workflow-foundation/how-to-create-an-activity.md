@@ -42,7 +42,7 @@ Activities are the core unit of behavior in WF. The execution logic of an activi
 
 ## Create the Prompt activity
 
-1. Press **Ctrl**+**Shift**+**B** to build the project. Building the project enables the `ReadInt` activity in this project to be used to build the custom activity from this step.
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the project. Building the project enables the `ReadInt` activity in this project to be used to build the custom activity from this step.
 
 2. Choose **Add New Item** from the **Project** menu.
 
@@ -56,15 +56,15 @@ Activities are the core unit of behavior in WF. The execution logic of an activi
 
 7. Click **Create Argument**.
 
-8. Type `BookmarkName` into the **Name** box, select **In** from the **Direction** drop-down list, select **String** from the **Argument type** drop-down list, and then press **Enter** to save the argument.
+8. Type `BookmarkName` into the **Name** box, select **In** from the **Direction** drop-down list, select **String** from the **Argument type** drop-down list, and then press <kbd>Enter</kbd> to save the argument.
 
 9. Click **Create Argument**.
 
-10. Type `Result` into the **Name** box that is underneath the newly added `BookmarkName` argument, select **Out** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press **Enter**.
+10. Type `Result` into the **Name** box that is underneath the newly added `BookmarkName` argument, select **Out** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press <kbd>Enter</kbd>.
 
 11. Click **Create Argument**.
 
-12. Type `Text` into the **Name** box, select **In** from the **Direction** drop-down list, select **String** from the **Argument type** drop-down list, and then press **Enter** to save the argument.
+12. Type `Text` into the **Name** box, select **In** from the **Direction** drop-down list, select **String** from the **Argument type** drop-down list, and then press <kbd>Enter</kbd> to save the argument.
 
      These three arguments are bound to the corresponding arguments of the <xref:System.Activities.Statements.WriteLine> and `ReadInt` activities that are added to the `Prompt` activity in the following steps.
 
@@ -88,7 +88,7 @@ Activities are the core unit of behavior in WF. The execution logic of an activi
 
 19. Bind the **Result** argument of the **ReadInt** activity to the **Result** argument of the **Prompt** activity by typing `Result` into the **Enter a VB expression** box to the right of the **Result** argument in the **Properties Window**, and then press the **Tab** key two times.
 
-20. Press **Ctrl**+**Shift**+**B** to build the solution.
+20. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to build the solution.
 
 ## Next steps
 

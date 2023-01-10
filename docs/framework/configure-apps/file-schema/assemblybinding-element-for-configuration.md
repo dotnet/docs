@@ -14,7 +14,7 @@ ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
 
 Specifies assembly binding policy at the configuration level.
 
-[**\<configuration>**](configuration-element.md)
+[**\<configuration>**](configuration-element.md)\
 &nbsp;&nbsp;**\<assemblyBinding>**
 
 ## Syntax

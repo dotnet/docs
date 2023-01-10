@@ -1,6 +1,6 @@
 ﻿namespace ConsoleDI.IEnumerableExample;
 
-public class ConsoleMessageWriter : IMessageWriter
+public sealed class ConsoleMessageWriter : IMessageWriter
 {
     public void Write(string message) =>
         Console.WriteLine(

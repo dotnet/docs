@@ -5,7 +5,7 @@ ms.date: 11/04/2021
 ---
 # Compiler options
 
-This topic describes compiler command-line options for the F# compiler, fsc.exe.
+This article describes compiler command-line options for the F# compiler. The command `dotnet build` invokes the F# compiler on F# project files. F# project files are noted with the `.fsproj` extension.
 
 The compilation environment can also be controlled by setting the project properties. For projects targeting .NET Core, the "Other flags" property, `<OtherFlags>...</OtherFlags>` in `.fsproj`, is used for specifying extra command-line options.
 
@@ -40,8 +40,8 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--nologo`|Doesn't show the banner text when launching the compiler.|
 |`--nooptimizationdata`|Instructs the compiler to only include optimization essential for implementing inlined constructs. Inhibits cross-module inlining but improves binary compatibility.|
 |`--nowin32manifest`|Instructs the compiler to omit the default Win32 manifest.|
-|`--nowarn:warning-number-list`|Disables specific warnings listed by number. Separate each warning number by a comma. You can discover the warning number for any warning from the compilation output.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;nowarn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#disabledwarnings).|
-|<code>--optimize[+&#124;-][optimization-option-list]</code><br /><br /><code>-O[+&#124;-] [optimization-option-list]</code>|Enables or disables optimizations. Some optimization options can be disabled or enabled selectively by listing them. These are: `nojitoptimize`, `nojittracking`, `nolocaloptimize`, `nocrossoptimize`, `notailcalls`.|
+|`--nowarn:warning-number-list`|Disables specific warnings listed by number. Separate each warning number by a comma. You can discover the warning number for any warning from the compilation output.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;nowarn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn).|
+|<code>--optimize[+&#124;-] [optimization-option-list]</code><br /><br /><code>-O[+&#124;-] [optimization-option-list]</code>|Enables or disables optimizations. Some optimization options can be disabled or enabled selectively by listing them. These are: `nojitoptimize`, `nojittracking`, `nolocaloptimize`, `nocrossoptimize`, `notailcalls`.|
 |`--out:output-filename`<br /><br />`-o:output-filename`|Specifies the name of the compiled assembly or module.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;out &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/output.md#outputassembly).|
 |`--pathmap:path=sourcePath,...`|Specifies how to map physical paths to source path names output by the compiler.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;pathmap &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#pathmap).|
 |`--pdb:pdb-filename`|Names the output debug PDB (program database) file. This option only applies when `--debug` is also enabled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;pdb &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#pdbfile).|

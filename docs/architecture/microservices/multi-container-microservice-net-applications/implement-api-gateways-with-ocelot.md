@@ -572,6 +572,9 @@ There are other important features to research and use, when using an Ocelot API
 
 - **Rate limiting** \
   [https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html](https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html )
+  
+- **Swagger for Ocelot** \
+  [https://github.com/Burgyn/MMLib.SwaggerForOcelot](https://github.com/Burgyn/MMLib.SwaggerForOcelot)
 
 > [!div class="step-by-step"]
 > [Previous](background-tasks-with-ihostedservice.md)

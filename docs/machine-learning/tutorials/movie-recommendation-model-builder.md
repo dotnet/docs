@@ -25,9 +25,6 @@ In this tutorial, you:
 > - Evaluate the model
 > - Consume the model
 
-> [!NOTE]
-> Model Builder is currently in Preview.
-
 ## Prerequisites
 
 For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
@@ -62,11 +59,11 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ## Choose a scenario
 
-![Model Builder Scenarios](../media/model-builder-scenarios.png)
+:::image type="content" source="../media/model-builder-scenarios-2-0.png" alt-text="Model Builder Scenario Screen" lightbox="../media/model-builder-scenarios-2-0.png":::
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Recommendation** scenario.
+For this sample, the task is recommendation. In the scenario step of the Model Builder tool, select the **Recommendation** scenario.
 
 ## Select an environment
 

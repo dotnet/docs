@@ -1,7 +1,7 @@
 ---
 title: ".NET 6 breaking change: Exception handling in hosting"
 description: Learn about the .NET 6 breaking change in core .NET libraries where unhandled exceptions from a BackgroundService are logged instead of lost.
-ms.date: 04/23/2021
+ms.date: 05/06/2022
 ---
 # Unhandled exceptions from a BackgroundService
 
@@ -23,7 +23,7 @@ The new behavior is consistent with the way other app models behave when unhandl
 
 ## Recommended action
 
-If you prefer to keep the previous behavior of allowing an unhandled exception in a <xref:Microsoft.Extensions.Hosting.BackgroundService> to not stop the Host, you can set `HostOptions.BackgroundServiceExceptionBehavior` to `BackgroundServiceExceptionBehavior.Ignore`.
+If you prefer to keep the previous behavior of allowing an unhandled exception in a <xref:Microsoft.Extensions.Hosting.BackgroundService> to not stop the Host, you can set <xref:Microsoft.Extensions.Hosting.HostOptions.BackgroundServiceExceptionBehavior?displayProperty=nameWithType> to <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.Ignore?displayProperty=nameWithType>.
 
 ```csharp
 Host.CreateBuilder(args)

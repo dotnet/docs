@@ -2,10 +2,13 @@
     "outOfSupportWithinDays": 60,
     "ignore":[
         "samples/**/*.*",
-        "**/docs/csharp/roslyn-sdk/tutorials/snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Vsix/MakeConst.Vsix.csproj",
+        "**/docs/csharp/roslyn-sdk/tutorials/snippets/how-to-write-csharp-analyzer-code-fix/**/*.csproj",
         "**/docs/csharp/programming-guide/concepts/async/snippets/multiple-tasks/MultipleTasks.csproj",
-        "**/docs/framework/migration-guide/snippets/csharp/FrameworkVersions.csproj",
-        "**/docs/framework/migration-guide/snippets/visual-basic/FrameworkVersions.vbproj",
-        "**/docs/framework/migration-guide/snippets/csharp/FrameworkVersions.csproj"
+        "**/docs/framework/migration-guide/snippets/**/*.csproj",
+        "**/docs/framework/migration-guide/snippets/**/*.vbproj",
+        "**/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample/**/*.csproj",
+        "**/docs/core/whats-new/snippets/**/*.csproj",
+        "**/docs/core/whats-new/snippets/**/*.vbproj",
+        "**/docs/core/whats-new/snippets/**/*.fsproj"
     ]
 }

@@ -179,33 +179,34 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
       <wscoor:CoordinationType>...</wscoor:CoordinationType>  
     </wscoor:CreateCoordinationContext>  
   </s:Body>  
-</s11:Envelope>  
+</s:Envelope>  
 ```  
   
 #### CreateCoordinationContext with WSCoor 1.1  
   
 ```xml  
 <s:Envelope>
-<s:Header>  
-<a:Action>http://docs.oasis-open.org/ws-tx/wscoor/2006/06/CreateCoordinationContext</Action>  
-<a:MessageID>urn:uuid:069f5104-fd88-4264-9f99-60032a82854e</MessageID>  
-<a:ReplyTo>
-<Address>https://...</a:Address>
-</a:ReplyTo>
-<a:To>https://...</a:To>
-<wsse:Security>  
- <u:Timestamp>  
-<wsu:Created>2005-12-15T23:36:09.921Z</wsu:Created>  
-<wsu:Expires>2005-12-15T23:41:09.921Z</wsu:Expires>  
-</u:Timestamp>
-</wsse:Security>
-</s:Header>
-<s:Body xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
-<wscoor:CreateCoordinationContext>  
-<wscoor:CoordinationType>...</wscoor:CoordinationType>  
-</wscoor:CreateCoordinationContext>  
- </s:Body>  
-</s11:Envelope>  
+  <s:Header>  
+    <a:Action>http://docs.oasis-open.org/ws-tx/wscoor/2006/06/CreateCoordinationContext
+    </a:Action>  
+    <a:MessageID>urn:uuid:069f5104-fd88-4264-9f99-60032a82854e</MessageID>  
+    <a:ReplyTo>
+      <Address>https://...</a:Address>
+    </a:ReplyTo>
+    <a:To>https://...</a:To>
+    <wsse:Security>  
+      <u:Timestamp>  
+        <wsu:Created>2005-12-15T23:36:09.921Z</wsu:Created>  
+        <wsu:Expires>2005-12-15T23:41:09.921Z</wsu:Expires>  
+      </u:Timestamp>
+    </wsse:Security>
+  </s:Header>
+  <s:Body xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
+    <wscoor:CreateCoordinationContext>  
+      <wscoor:CoordinationType>...</wscoor:CoordinationType>  
+    </wscoor:CreateCoordinationContext>  
+  </s:Body>  
+</s:Envelope>  
 ```  
   
 #### CreateCoordinationContextResponse with Trust Pre-1.3 and WSCoor 1.0  

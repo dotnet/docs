@@ -80,16 +80,8 @@ Namespace ca1060
         Private Sub New()
         End Sub
 
-        ' Callers do not require Unmanaged permission, however,         
-        ' they do require UIPermission.AllWindows       
         Public Shared Sub Hide()
-            ' Need to demand an appropriate permission                   
-            ' in  place of UnmanagedCode permission as                    
-            ' ShowCursor is not considered a safe method                   
-            Dim permission As New UIPermission(UIPermissionWindow.AllWindows)
-            permission.Demand()
             UnsafeNativeMethods.ShowCursor(False)
-
         End Sub
 
     End Class

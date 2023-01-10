@@ -57,8 +57,6 @@ Microsoft.WindowsDesktop.App      5.0.7                         Up to date.
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples

@@ -11,7 +11,7 @@
         },
         {
             "source_path_from_root": "/docs/standard/application-essentials.md",
-            "redirect_url": "/dotnet/standard/index"
+            "redirect_url": "/dotnet/fundamentals/"
         },
         {
             "source_path_from_root": "/docs/standard/assembly-format.md",
@@ -376,10 +376,6 @@
             "redirect_url": "/dotnet/standard/base-types/choosing-between-anonymous-and-tuple"
         },
         {
-            "source_path_from_root": "/docs/standard/design-guidelines/dispose-pattern.md",
-            "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
-        },
-        {
             "source_path_from_root": "/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md",
             "redirect_url": "/aspnet/web-forms/overview/how-to-consume-events"
         },
@@ -508,6 +504,10 @@
             "redirect_url": "/dotnet/architecture/index"
         },
         {
+            "source_path_from_root": "/docs/standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md",
+            "redirect_url": "/dotnet/standard/serialization/binaryformatter-security-guide"
+        },
+        {
             "source_path_from_root": "/docs/standard/index.yml",
             "redirect_url": "/dotnet/fundamentals/"
         },
@@ -627,7 +627,97 @@
         },
         {
             "source_path_from_root": "/docs/standard/serialization/write-custom-serializer-deserializer.md",
-            "redirect_url": "/dotnet/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter"
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter"
+        },        
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-character-casing.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/character-casing",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-character-encoding.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/character-encoding",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-configure-options.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/configure-options",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-converters-how-to.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/converters-how-to",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-customize-properties.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/customize-properties",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-handle-overflow.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/handle-overflow",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-how-to.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/how-to",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-ignore-properties.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/ignore-properties",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-immutability.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/immutability",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-invalid-json.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/invalid-json",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/migrate-from-newtonsoft",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-overview.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-polymorphism.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/polymorphism",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-preserve-references.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/preserve-references",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-source-generation-modes.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/source-generation-modes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-source-generation.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/source-generation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-supported-collection-types.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-collection-types",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/standard/threading/autoresetevent.md",

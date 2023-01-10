@@ -283,7 +283,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
   <https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks>
 
 - **Introduction to Service Fabric health monitoring** \
-  [https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
+  [https://learn.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
 
 - **Azure Monitor** \
   <https://azure.microsoft.com/services/monitor/>

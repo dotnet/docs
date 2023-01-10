@@ -1,6 +1,6 @@
 
 > [!IMPORTANT]
-> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **ARM**, must install .NET by some other means such as with Snap, an installer script, or through a manual binary installation.
+> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with Snap, an installer script, or through a manual binary installation.
 
 For more information on installing .NET **without a package manager**, see one of the following articles:
 

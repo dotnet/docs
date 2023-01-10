@@ -1,6 +1,6 @@
 ---
 title: SYSLIB0043 warning - ECDiffieHellmanPublicKey.ToByteArray is obsolete
-description: Learn about the obsoletion of ECDiffieHellmanPublicKey.ToByteArray() and the associated constructor that generates compile-time warning SYSLIB0042.
+description: Learn about the obsoletion of ECDiffieHellmanPublicKey.ToByteArray() and the associated constructor that generates compile-time warning SYSLIB0043.
 ms.date: 04/08/2022
 ---
 # SYSLIB0043: ECDiffieHellmanPublicKey.ToByteArray is obsolete
@@ -20,4 +20,32 @@ For new derived types (or existing derived types that don't currently call the <
 
 For existing derived types that already call the protected <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.%23ctor(System.Byte[])> constructor, continue calling the constructor and suppress the `SYSLIB0043` warning.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
+## Suppress a warning
+
+If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+
+To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB0043
+
+// Code that uses obsolete API.
+// ...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB0043
+```
+
+To suppress all the `SYSLIB0043` warnings in your project, add a `<NoWarn>` property to your project file.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   ...
+   <NoWarn>$(NoWarn);SYSLIB0043</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
+For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).

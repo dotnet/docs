@@ -26,7 +26,6 @@ Specifies the security options for a custom binding.
           keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"
           messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"
           messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"
-          requireDerivedKeys="Boolean"
           requireSecurityContextCancellation="Boolean"
           requireSignatureConfirmation="Boolean"
           securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast">

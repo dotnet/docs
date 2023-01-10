@@ -2,7 +2,7 @@
     "redirections": [
     {
         "source_path_from_root": "/docs/about/index.md",
-        "redirect_url": "/dotnet/standard/index"
+        "redirect_url": "/dotnet/fundamentals/"
     },
     {
         "source_path_from_root": "/docs/about/products.md",
@@ -66,7 +66,7 @@
     },
     {
         "source_path_from_root": "/docs/standard/about.md",
-        "redirect_url": "/dotnet/standard/index"
+        "redirect_url": "/dotnet/fundamentals/"
     },
     {
         "source_path_from_root": "/docs/tutorials/getting-started-with-csharp/microservices.md",
@@ -81,8 +81,16 @@
         "redirect_url": "/dotnet/samples-and-tutorials/"
     },
     {
-        "source_path_from_root": "/docs/orleans/whats-new/whats-new-in-orleans.md",
-        "redirect_url": "https://github.com/dotnet/orleans/releases"
+        "source_path_from_root": "/docs/whats-new/dotnet-docs-2022-08-01.md",
+        "redirect_url": "/dotnet/whats-new/dotnet-docs-mod2"
+    },
+    {
+        "source_path_from_root": "/docs/whats-new/dotnet-docs-2022-09-01.md",
+        "redirect_url": "/dotnet/whats-new/dotnet-docs-mod0"
+    },
+    {
+        "source_path_from_root": "/docs/whats-new/dotnet-docs-2022-10-01.md",
+        "redirect_url": "/dotnet/whats-new/dotnet-docs-mod1"
     }
     ]
 }

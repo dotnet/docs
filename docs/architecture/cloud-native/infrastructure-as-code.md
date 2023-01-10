@@ -74,7 +74,7 @@ provider "azurerm" {
   version = "=1.28.0"
 }
 
-resource "azurerm_resource_group" "test" {
+resource "azurerm_resource_group" "testrg" {
   name     = "production"
   location = "West US"
 }

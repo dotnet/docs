@@ -9,7 +9,6 @@ namespace Properties
         private int _age = 0;
 
         // Declare a Name property of type string:
-        //<Snippet2>
         public string Name
         {
             get
@@ -23,7 +22,6 @@ namespace Properties
                 //</Snippet4>
             }
         }
-        //</Snippet2>
 
         // Declare an Age property of type int:
         public int Age
@@ -45,6 +43,27 @@ namespace Properties
             return "Name = " + Name + ", Age = " + Age;
         }
         //</Snippet6>
+    }
+
+    public class Wrapper
+    {
+        private string _name = "N/A";
+        //<Snippet2>
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            private set
+            {
+                //<Snippet4>
+                _name = value;
+                //</Snippet4>
+            }
+        }
+        //</Snippet2>
+
     }
 
     class TestPerson

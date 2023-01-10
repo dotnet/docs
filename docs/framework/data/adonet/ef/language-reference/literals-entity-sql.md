@@ -66,8 +66,8 @@ DATETIME'2006-12-25 01:01:00.0000000' -- same as DATETIME'2006-12-25 01:01'
  There can be any number of spaces between the TIME symbol and the literal payload, but no new lines.
 
 ```sql
-TIME‘23:11’
-TIME‘01:01:00.1234567’
+TIME'23:11'
+TIME'01:01:00.1234567'
 ```
 
 ## DateTimeOffset
@@ -77,8 +77,8 @@ TIME‘01:01:00.1234567’
  There can be any number of spaces between the DATETIMEOFFSET symbol and the literal payload, but no new lines.
 
 ```sql
-DATETIMEOFFSET‘2006-10-1 23:11 +02:00’
-DATETIMEOFFSET‘2006-12-25 01:01:00.0000000 -08:30’
+DATETIMEOFFSET'2006-10-1 23:11 +02:00'
+DATETIMEOFFSET'2006-12-25 01:01:00.0000000 -08:30'
 ```
 
 > [!NOTE]

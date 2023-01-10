@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet remove reference
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -35,8 +35,6 @@ Target project file. If not specified, the command searches the current director
 Project-to-project (P2P) references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

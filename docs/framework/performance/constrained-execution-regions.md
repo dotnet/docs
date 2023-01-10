@@ -40,7 +40,7 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
 - Calling methods with a weak or nonexistent reliability contract.  
   
- In the .NET Framework version 2.0, these constraints are guidelines. Diagnostics are provided through code analysis tools.  
+ In .NET Framework version 2.0, these constraints are guidelines. Diagnostics are provided through code analysis tools.  
   
 ## Reliability Contracts  
 
@@ -80,7 +80,7 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
 
  The reliability `try/catch/finally` is an exception handling mechanism with the same level of predictability guarantees as the unmanaged version. The `catch/finally` block is the CER. Methods in the block require advance preparation and must be noninterruptible.  
   
- In the .NET Framework version 2.0, code informs the runtime that a try is reliable by calling <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> immediately preceding a try block. <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> is a member of <xref:System.Runtime.CompilerServices.RuntimeHelpers>, a compiler support class. Call <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> directly pending its availability through compilers.  
+ In .NET Framework version 2.0, code informs the runtime that a try is reliable by calling <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> immediately preceding a try block. <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> is a member of <xref:System.Runtime.CompilerServices.RuntimeHelpers>, a compiler support class. Call <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> directly pending its availability through compilers.  
   
 ## Noninterruptible Regions  
 

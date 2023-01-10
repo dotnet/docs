@@ -10,7 +10,7 @@ class Program
         await ReadText.Example.ProcessReadAsync();
         await ReadText.Example.SimpleReadAsync();
 
-        await ParallelWriteText.Example.ProcessMulitpleWritesAsync();
+        await ParallelWriteText.Example.ProcessMultipleWritesAsync();
         await ParallelWriteText.Example.SimpleParallelWriteAsync();
     }
 }
@@ -78,7 +78,7 @@ class ReadText
                 string text = await ReadTextAsync(filePath);
                 Console.WriteLine(text);
             }
-            else 
+            else
             {
                 Console.WriteLine($"file not found: {filePath}");
             }
@@ -136,7 +136,7 @@ class ParallelWriteText
     // </SimpleParallelWrite>
 
     // <ParallelWriteText>
-    public async Task ProcessMulitpleWritesAsync()
+    public async Task ProcessMultipleWritesAsync()
     {
         IList<FileStream> sourceStreams = new List<FileStream>();
 
@@ -153,7 +153,7 @@ class ParallelWriteText
                 string text = $"In file {index}{Environment.NewLine}";
                 byte[] encodedText = Encoding.Unicode.GetBytes(text);
 
-                var sourceStream = 
+                var sourceStream =
                     new FileStream(
                         filePath,
                         FileMode.Create, FileAccess.Write, FileShare.None,

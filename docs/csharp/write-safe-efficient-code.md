@@ -9,8 +9,6 @@ ms.custom: mvc
 
 C# provides features that enable you to write verifiable safe code with better performance. If you carefully apply these techniques, fewer scenarios require unsafe code. These features make it easier to use references to value types as method arguments and method returns. When done safely, these techniques minimize copying value types. By using value types, you can minimize the number of allocations and garbage collection passes.
 
-Much of the sample code in this article uses features added in C# 7.2. To use those features, make sure your project isn't configured to use an earlier version. For more information, see [configure the language version](language-reference/configure-language-version.md).
-
 One advantage to using value types is that they often avoid heap allocations. The disadvantage is that they're copied by value. This trade-off makes it harder to optimize algorithms that operate on large amounts of data. The language features highlighted in this article provide mechanisms that enable safe efficient code using references to value types. Use these features wisely to minimize both allocations and copy operations.
 
 Some of the guidance in this article refers to coding practices that are always advisable, not only for the performance benefit. Use the `readonly` keyword when it accurately expresses design intent:
@@ -77,7 +75,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 
 ## Declare `readonly` members for mutable structs
 
-In C# 8.0 and later, when a struct type is mutable, declare members that don't modify state as [`readonly` members](language-reference/builtin-types/struct.md#readonly-instance-members).
+When a struct type is mutable, declare members that don't modify state as [`readonly` members](language-reference/builtin-types/struct.md#readonly-instance-members).
 
 Consider a different application that needs a 3D point structure, but must support mutability. The following version of the 3D point structure adds the `readonly` modifier only to those members that don't modify the structure. Follow this example when your design must support modifications to the struct by some members, but you still want the benefits of enforcing `readonly` on some members:
 
@@ -263,7 +261,7 @@ You can see an example program that demonstrates the performance differences usi
 
 ## Use `ref struct` types
 
-Use a [`ref struct`](language-reference/builtin-types/struct.md#ref-struct) or a `readonly ref struct`, such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601>, to work with blocks of memory as a sequence of bytes. The memory used by the span is constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
+Use a [`ref struct`](language-reference/builtin-types/ref-struct.md) or a `readonly ref struct`, such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601>, to work with blocks of memory as a sequence of bytes. The memory used by the span is constrained to a single stack frame. This restriction enables the compiler to make several optimizations. The primary motivation for this feature was <xref:System.Span%601> and related structures. You'll achieve performance improvements from these enhancements by using new and updated .NET APIs that make use of the <xref:System.Span%601> type.
 
 Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations. The memory used by the readonly span is restricted to a single stack frame, and the memory used by the readonly span can't be modified.
 
@@ -271,7 +269,7 @@ You may have similar requirements working with memory created using [`stackalloc
 
 ## Use `nint` and `nuint` types
 
-[Native-sized integer types](language-reference/builtin-types/nint-nuint.md) are 32-bit integers in a 32-bit process or 64-bit integers in a 64-bit process. Use them for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
+[Native-sized integer types](language-reference/builtin-types/integral-numeric-types.md#native-sized-integers) are 32-bit integers in a 32-bit process or 64-bit integers in a 64-bit process. Use them for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
 
 ## Conclusions
 
@@ -297,4 +295,5 @@ These enhancements to the C# language are designed for performance critical algo
 
 - [in parameter modifier (C# Reference)](language-reference/keywords/in-parameter-modifier.md)
 - [ref keyword](language-reference/keywords/ref.md)
-- [Ref returns and ref locals](programming-guide/classes-and-structs/ref-returns.md)
+- [Ref returns](language-reference/statements/jump-statements.md#ref-returns)
+- [Ref locals](language-reference/statements/declarations.md#ref-locals)

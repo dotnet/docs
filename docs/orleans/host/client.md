@@ -34,14 +34,7 @@ await client.GetGrain<IMyGrain>(0).Ping();
 
 ## External clients
 
-Client code can run outside of the Orleans cluster where grain code is hosted.
-Hence, an external client acts as a connector or conduit to the cluster and all grains of the application.
-
-<!-- TODO:
-![](~/images/frontend_cluster.png)
--->
-
-Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
+Client code can run outside of the Orleans cluster where grain code is hosted. Hence, an external client acts as a connector or conduit to the cluster and all grains of the application. Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
 In a typical setup, a frontend webserver:
 
 * Receives a web request

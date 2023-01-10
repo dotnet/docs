@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.FileSystemGlobbing;
+﻿using Microsoft.Extensions.FileSystemGlobbing;
 
 static partial class Example
 {

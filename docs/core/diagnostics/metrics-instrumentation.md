@@ -138,17 +138,27 @@ in two ways:
 
 Types of instruments currently available:
 
-- **Counter** (<xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A>) - This instrument conceptually tracks a value that increases over time and the caller reports the
+- **Counter** (<xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A>) - This instrument tracks a value that increases over time and the caller reports the
   increments using <xref:System.Diagnostics.Metrics.Counter%601.Add%2A>. Most tools will calculate the total and the rate of change in the total. For tools that only show
   one thing, the rate of change is recommended. For example, assume that the caller invokes `Add()` once each second with successive values 1, 2, 4, 5, 4, 3. If the collection
   tool updates every three seconds, then the total after three seconds is 1+2+4=7 and the total after six seconds is 1+2+4+5+4+3=19. The rate of change is the
   (current_total - previous_total), so at three seconds the tool reports 7-0=7, and after six seconds, it reports 19-7=12.
 
+- **UpDownCounter** (<xref:System.Diagnostics.Metrics.Meter.CreateUpDownCounter%2A>) - This instrument tracks a value that may increase or decrease over time. The caller reports the
+  increments and decrements using <xref:System.Diagnostics.Metrics.UpDownCounter%601.Add%2A>. For example, assume that the caller invokes `Add()` once each second with successive
+  values 1, 5, -2, 3, -1, -3. If the collection tool updates every three seconds, then the total after three seconds is 1+5-2=4 and the total after six seconds is 1+5-2+3-1-3=3.
+
 - **ObservableCounter** (<xref:System.Diagnostics.Metrics.Meter.CreateObservableCounter%2A>) - This instrument is similar to Counter except that the caller is now responsible
   for maintaining the aggregated total. The caller provides a callback delegate when the ObservableCounter is created and the callback is invoked whenever tools need to observe
-  the current total. For example, if a collection tool updates every three seconds, then the callback will also be invoked every three seconds. Most tools will have both the total and
-  rate of change in the total available. If only one can be shown, rate of change is recommended. If the callback returns 0, 7, and 19 at 0, 3, and 6 seconds respectively, then the
-  tool will report those values as the totals. For rate of change, the tool will show 7-0=7 after three seconds and 19-7=12 after six seconds.
+  the current total. For example, if a collection tool updates every three seconds, then the callback function will also be invoked every three seconds. Most tools will have both
+  the total and rate of change in the total available. If only one can be shown, rate of change is recommended. If the callback returns 0 on the initial call, 7 when it is called
+  again after three seconds, and 19 when called after six seconds, then the tool will report those values unchanged as the totals. For rate of change, the tool will show 7-0=7
+  after three seconds and 19-7=12 after six seconds.
+
+- **ObservableUpDownCounter** (<xref:System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter%2A>) - This instrument is similar to UpDownCounter except that the caller is now responsible
+  for maintaining the aggregated total. The caller provides a callback delegate when the ObservableUpDownCounter is created and the callback is invoked whenever tools need to observe
+  the current total. For example, if a collection tool updates every three seconds, then the callback function will also be invoked every three seconds. Whatever value is returned by
+  the callback will be shown in the collection tool unchanged as the total.
 
 - **ObservableGauge** (<xref:System.Diagnostics.Metrics.Meter.CreateObservableGauge%2A>) - This instrument allows the caller to provide a callback where the measured value
   is passed through directly as the metric. Each time the collection tool updates, the callback is invoked, and whatever value is returned by the callback is displayed in
@@ -169,11 +179,13 @@ Types of instruments currently available:
 - For timing things, Histogram is usually preferred. Often it's useful to understand the tail of these distributions (90th, 95th, 99th percentile) rather than averages or
   totals.
 
-- Other common cases, such as business metrics, physical sensors, cache hit rates, or sizes of caches, queues, and files are usually well suited for `ObservableGauge`.
+- Other common cases, such as cache hit rates or sizes of caches, queues, and files are usually well suited for `UpDownCounter` or `ObservableUpDownCounter`.
+  Choose between them depending on which is easier to add to the existing code: either an API call for each increment and decrement operation or a callback that will read the current value from
+  a variable the code maintains.
 
 > [!NOTE]
-> OpenTelemetry also defines an UpDownCounter not currently present in the .NET API. ObservableGauge can usually be substituted by defining a variable to store the running
-> total and reporting the value of that variable in the ObservableGauge callback.
+> If you're using an older version of .NET or a DiagnosticSource NuGet package that doesn't support `UpDownCounter` and `ObservableUpDownCounter` (before version 7), `ObservableGauge` is
+> often a good substitute.
 
 ### Example of different instrument types
 
@@ -458,4 +470,4 @@ Press p to pause, r to resume, q to quit.
   the performance overhead of these calls increases as more tags are used.
 
 > [!NOTE]
-> OpenTelemetry refers to tags as 'attributes'. Despite the name, the functionality is the same.
+> OpenTelemetry refers to tags as 'attributes'. These are two different names for the same functionality.

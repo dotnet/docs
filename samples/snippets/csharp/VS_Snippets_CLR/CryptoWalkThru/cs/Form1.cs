@@ -92,10 +92,10 @@ namespace CryptoWalkThru
             else
             {
                 // Display a dialog box to select the encrypted file.
-                _decryptOpeFileDialog.InitialDirectory = EncrFolder;
-                if (_decryptOpeFileDialog.ShowDialog() == DialogResult.OK)
+                _decryptOpenFileDialog.InitialDirectory = EncrFolder;
+                if (_decryptOpenFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string fName = _decryptOpeFileDialog.FileName;
+                    string fName = _decryptOpenFileDialog.FileName;
                     if (fName != null)
                     {
                         DecryptFile(new FileInfo(fName));

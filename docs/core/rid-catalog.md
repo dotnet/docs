@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
-ms.date: 04/13/2022
+ms.date: 07/11/2022
 ms.topic: reference
 ---
 # .NET RID Catalog
@@ -10,7 +10,7 @@ RID is short for *Runtime Identifier*. RID values are used to identify target pl
 They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
-A single RID can be set in the `<RuntimeIdentifier>` element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's `<RuntimeIdentifiers>` element. They're also used via the `--runtime` option with the following [.NET CLI commands](./tools/index.md):
+A single RID can be set in the [`<RuntimeIdentifier>`](project-sdk/msbuild-props.md#runtimeidentifier) element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's [`<RuntimeIdentifiers>`](project-sdk/msbuild-props.md#runtimeidentifiers) element. They're also used via the `--runtime` option with the following [.NET CLI commands](./tools/index.md):
 
 - [dotnet build](./tools/dotnet-build.md)
 - [dotnet clean](./tools/dotnet-clean.md)
@@ -26,7 +26,7 @@ RIDs that represent concrete operating systems usually follow this pattern: `[os
 
 - `[version]` is the operating system version in the form of a dot-separated (`.`) version number. For example, `15.10`.
 
-  - The version **shouldn't** be marketing versions, as they often represent multiple discrete versions of the operating system with varying platform API surface area.
+  The version **shouldn't** be a marketing version, as marketing versions often represent multiple discrete versions of the operating system with varying platform API surface area.
 
 - `[architecture]` is the processor architecture. For example: `x86`, `x64`, `arm`, or `arm64`.
 
@@ -68,9 +68,11 @@ All RIDs eventually map back to the root `any` RID.
 There are some considerations about RIDs that you have to keep in mind when working with them:
 
 - Don't try to parse RIDs to retrieve component parts.
-- Don't build RIDs programmatically.
 - Use RIDs that are already defined for the platform.
 - The RIDs need to be specific, so don't assume anything from the actual RID value.
+- Don't build RIDs programmatically unless absolutely necessary.
+
+  Some apps need to compute RIDs programmatically. If so, the computed RIDs must match the catalog exactly, including in casing. RIDs with different casing would cause problems when the OS is case sensitive, for example, Linux, because the value is often used when constructing things like output paths. For example, consider a custom publishing wizard in Visual Studio that relies on information from the solution configuration manager and project properties. If the solution configuration passes an invalid value, for example, `ARM64` instead of `arm64`, it could result in an invalid RID, such as `win-ARM64`.
 
 ## Using RIDs
 
@@ -112,8 +114,8 @@ Only common values are listed. For the latest and complete version, see the [run
 - Linux, not distribution-specific
   - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
   - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
-  - `linux-arm` (Linux distributions running on ARM like Raspbian on Raspberry Pi Model 2+)
-  - `linux-arm64` (Linux distributions running on 64-bit ARM like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
+  - `linux-arm` (Linux distributions running on Arm like Raspbian on Raspberry Pi Model 2+)
+  - `linux-arm64` (Linux distributions running on 64-bit Arm like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
 - Red Hat Enterprise Linux
   - `rhel-x64` (Superseded by `linux-x64` for RHEL above version 6)
   - `rhel.6-x64`
@@ -121,6 +123,10 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen`
   - `tizen.4.0.0`
   - `tizen.5.0.0`
+  - `tizen.5.5.0`
+  - `tizen.6.0.0`
+  - `tizen.6.5.0`
+  - `tizen.7.0.0`
 
 For more information, see [.NET dependencies and requirements](./install/linux.md).
 
@@ -148,8 +154,61 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 12 Monterey
   - `osx.12-x64`
   - `osx.12-arm64`
+- macOS 13 Ventura
+  - `osx.13-x64`
+  - `osx.13-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
+
+## iOS RIDs
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+
+- iOS, not version-specific
+  - `ios-arm64`
+- iOS 10
+  - `ios.10-arm64`
+- iOS 11
+  - `ios.11-arm64`
+- iOS 12
+  - `ios.12-arm64`
+- iOS 13
+  - `ios.13-arm64`
+- iOS 14
+  - `ios.14-arm64`
+- iOS 15
+  - `ios.15-arm64`
+
+## Android RIDs
+
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+
+- Android, not version-specific
+  - `android-arm64`
+- Android 21
+  - `android.21-arm64`
+- Android 22
+  - `android.22-arm64`
+- Android 23
+  - `android.23-arm64`
+- Android 24
+  - `android.24-arm64`
+- Android 25
+  - `android.25-arm64`
+- Android 26
+  - `android.26-arm64`
+- Android 27
+  - `android.27-arm64`
+- Android 28
+  - `android.28-arm64`
+- Android 29
+  - `android.29-arm64`
+- Android 30
+  - `android.30-arm64`
+- Android 31
+  - `android.31-arm64`
+- Android 32
+  - `android.32-arm64`
 
 ## See also
 

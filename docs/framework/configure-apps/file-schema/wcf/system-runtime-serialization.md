@@ -25,7 +25,7 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
           </knownType>
         </add>
       </declaredTypes>
-    <dataContractSerializer>
+    </dataContractSerializer>
   </system.runtime.serialization>
 </configuration>
 ```  

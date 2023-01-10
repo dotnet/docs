@@ -3,7 +3,7 @@ title: Prepare data for building a model
 description: Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/05/2021
+ms.date: 11/06/2022
 ms.custom: mvc, how-to, title-hack-0625
 ms.topic: how-to
 #Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET
@@ -15,6 +15,62 @@ Learn how to use ML.NET to prepare data for additional processing or building a 
 
 Data is often unclean and sparse. ML.NET machine learning algorithms expect input or features to be in a single numerical vector. Similarly, the value to predict (label), especially when it's categorical data, has to be encoded. Therefore one of the goals of data preparation is to get the data into the format expected by ML.NET algorithms.
 
+## Split data into training & test sets
+
+The following section outlines common problems when training a model known as overfitting and underfitting. Splitting your data and validation your models using a held out set can help you identify and mitigate these problems.
+
+### Overfitting & underfitting
+
+Overfitting and underfitting are the two most common problems you encounter when training a model. Underfitting means the selected trainer is not capable enough to fit training dataset and usually result in a high loss during training and low score/metric on test dataset. To resolve this you need to either select a more powerful model or perform more feature engineering. Overfitting is the opposite, which happens when model learns the training data too well. This usually results in low loss metric during training but high loss on test dataset.
+
+A good analogy for these concepts is studying for an exam. Let's say you knew the questions and answers ahead of time. After studying, you take the test and get a perfect score. Great news! However, when you're given the exam again with the questions rearranged and with slightly different wording you get a lower score. That suggests you memorized the answers and didn't actually learn the concepts you were being tested on. This is an example of overfitting. Underfitting is the opposite where the study materials you were given don't accurately represent what you're evaluated on for the exam. As a result, you resort to guessing the answers since you don't have enough knowledge to answer correctly.
+
+### Split data
+
+Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
+
+```csharp
+var homeDataList = new HomeData[]
+{
+    new()
+    {
+        NumberOfBedrooms = 1f,
+        Price = 100_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 2f,
+        Price = 300_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 6f,
+        Price = 600_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 3f,
+        Price = 300_000f
+    },
+    new()
+    {
+        NumberOfBedrooms = 2f,
+        Price = 200_000f
+    }
+};
+```
+
+To split data into train / test sets, use the <xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit(Microsoft.ML.IDataView,System.Double,System.String,System.Nullable{System.Int32})> method.
+
+```csharp
+// Apply filter
+TrainTestData dataSplit = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
+```
+
+The `testFraction` parameter is used to take 0.2 or 20% of the dataset for testing. The remaining 80% is used for training.
+
+The result is <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData> with two IDataViews which you can access via <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData.TrainSet> and <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData.TestSet>.
+
 ## Filter data
 
 Sometimes, not all data in a dataset is relevant for analysis. An approach to remove irrelevant data is filtering. The [`DataOperationsCatalog`](xref:Microsoft.ML.DataOperationsCatalog) contains a set of filter operations that take in an [`IDataView`](xref:Microsoft.ML.IDataView) containing all of the data and return an [IDataView](xref:Microsoft.ML.IDataView) containing only the data points of interest. It's important to note that because filter operations are not an [`IEstimator`](xref:Microsoft.ML.IEstimator%601) or [`ITransformer`](xref:Microsoft.ML.ITransformer) like those in the [`TransformsCatalog`](xref:Microsoft.ML.TransformsCatalog), they cannot be included as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) or [`TransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601) data preparation pipeline.
@@ -24,17 +80,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=600000f
@@ -60,17 +116,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=float.NaN
@@ -109,12 +165,12 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms = 2f,
         Price = 200000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms = 1f,
         Price = 100000f
@@ -147,17 +203,17 @@ Take the following input data and load it into an [`IDataView`](xref:Microsoft.M
 ```csharp
 HomeData[] homeDataList = new HomeData[]
 {
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=1f,
         Price=100000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=2f,
         Price=300000f
     },
-    new HomeData
+    new ()
     {
         NumberOfBedrooms=6f,
         Price=600000f

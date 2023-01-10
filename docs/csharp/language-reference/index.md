@@ -38,15 +38,15 @@ This section provides reference material about C# keywords, operators, special c
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
  [C# Language Specification](~/_csharpstandard/standard/README.md)  
- The C# 6.0 language specification. This is a draft proposal for the C# 6.0 language. This document will be refined through work with the ECMA C# standards committee. Version 5.0 has been released in December 2017 as the [Standard ECMA-334 5th Edition](https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf) document.
+ The C# 7.0 draft language specification. This is a draft proposal for the C# 7.0 language. This document will be refined through work with the ECMA C# standards committee. Version 6.0 has been released in June 2022 as the [Standard ECMA-334 6th Edition](https://www.ecma-international.org/wp-content/uploads/ECMA-334_6th_edition_june_2022.pdf) document.
 
-The features that have been implemented in C# versions after 6.0 are represented in language specification proposals. These documents describe the deltas to the language spec in order to add these new features. These are in draft proposal form. These specifications will be refined and submitted to the ECMA standards committee for formal review and incorporation into a future version of the C# Standard.
+The features that have been implemented in C# versions after 6.0, including those not yet incorporated into the 7.0 draft standard, are represented in language specification proposals. These documents describe the deltas to the language spec in order to add these new features. These are in draft proposal form. These specifications will be refined and submitted to the ECMA standards committee for formal review and incorporation into a future version of the C# Standard.
 
  [C# 7.0 Specification Proposals](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)  
  There are a number of new features implemented in C# 7.0. They include pattern matching, local functions, out variable declarations, throw expressions, binary literals, and digit separators. This folder contains the specifications for each of those features.
   
- [C# 7.1 Specification Proposals](~/_csharplang/proposals/csharp-7.1/async-main.md)  
- There are new features added in C# 7.1. First, you can write a `Main` method that returns `Task` or `Task<int>`. This enables you to add the `async` modifier to `Main`. The `default` expression can be used without a type in locations where the type can be inferred. Also, tuple member names can be inferred. Finally, pattern matching can be used with generics.
+ [C# 7.1 Specification Proposals](~/_csharplang/proposals/csharp-7.1/infer-tuple-names.md)  
+ There are new features added in C# 7.1. The `default` expression can be used without a type in locations where the type can be inferred. Also, tuple member names can be inferred. Finally, pattern matching can be used with generics.
 
  [C# 7.2 Specification Proposals](~/_csharplang/proposals/csharp-7.2/readonly-ref.md)  
  C# 7.2 added a number of small features. You can pass arguments by readonly reference using the `in` keyword. There are a number of low-level changes to support compile-time safety for `Span` and related types. You can use named arguments where later arguments are positional, in some situations. The `private protected` access modifier enables you to specify that callers are limited to derived types implemented in the same assembly. The `?:` operator can resolve to a reference to a variable. You can also format hexadecimal and binary numbers using a leading digit separator.
@@ -63,10 +63,13 @@ The features that have been implemented in C# versions after 6.0 are represented
 [C# 10 Specification Proposals](~/_csharplang/proposals/csharp-10.0/record-structs.md)\
 C# 10 is available with .NET 6. The features include record structs, parameterless struct constructors, global using directives, file-scoped namespaces, extended property patterns, improved interpolated strings, constant interpolated strings, lambda improvements, caller-argument expression, enhanced `#line` directives, generic attributes, improved definite assignment analysis, and `AsyncMethodBuilder` override.
 
+[C# 11 Specification Proposals](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md)\
+C# 11 is available with .NET 7. The new features include static abstract members in interfaces, checked user-defined operators, unsigned right shift operator, relaxing shift operator, numeric `IntPtr`, raw string literals, interpolated string newline, UTF-8 string literals, pattern match span, list patterns, required members, auto-default struct, low-level struct improvements, extended `nameof` scope, and file local types.
+
 ## Related sections  
 
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
- Provides links to conceptual and task topics that describe the IDE and Editor.  
+ Provides links to conceptual and task topics that describe the IDE and editor.  
   
  [C# Programming Guide](../programming-guide/index.md)  
  Includes information about how to use the C# programming language.

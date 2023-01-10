@@ -1,3 +1,4 @@
+items:
 - name: Debugging
   href: index.md
   items:
@@ -865,6 +866,11 @@
       items:
       - name: "ICorDebugModule3::CreateReaderForInMemorySymbols Method"
         href: icordebugmodule3-createreaderforinmemorysymbols-method.md
+    - name: ICorDebugModule4 Interface
+      href: icordebugmodule4-interface.md
+      items:
+      - name: "ICorDebugModule4::IsMappedLayout Method"
+        href: icordebugmodule4-ismappedlayout-method.md
     - name: ICorDebugModuleBreakpoint Interface
       href: icordebugmodulebreakpoint-interface.md
       items:
@@ -1062,6 +1068,11 @@
       items:
       - name: EnableExceptionCallbacksOutsideOfMyCode Method
         href: icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
+    - name: ICorDebugProcess11 Interface
+      href: icordebugprocess11-interface.md
+      items:
+      - name: EnumerateLoaderHeapMemoryRegions Method
+        href: icordebugprocess11-enumerateloaderheapmemoryregions-method.md
     - name: ICorDebugProcessEnum Interface
       href: icordebugprocessenum-interface.md
       items:
@@ -1492,6 +1503,8 @@
       href: clrdatacreateinstance-function.md
     - name: PFN_CLRDataCreateInstance Function Pointer
       href: pfn-clrdatacreateinstance-function-pointer.md
+    - name: PSTARTUP_CALLBACK Function Pointer
+      href: pstartup_callback-function-pointer.md
   - name: Debugging Enumerations
     href: debugging-enumerations.md
     items:
@@ -1569,6 +1582,8 @@
       href: corgcreferencetype-enumeration.md
     - name: ILCodeKind Enumeration
       href: ilcodekind-enumeration.md
+    - name: LIBRARY_PROVIDER_INDEX_TYPE Enumeration
+      href: libraryproviderindextype-enumeration.md
     - name: LoggingLevelEnum Enumeration
       href: logginglevelenum-enumeration.md
     - name: LogSwitchCallReason Enumeration

@@ -21,8 +21,6 @@ Namespace ca2237
 
         End Sub
 
-        <SecurityPermissionAttribute(SecurityAction.Demand,
-          SerializationFormatter:=True)>
         Overridable Sub GetObjectData(
          info As SerializationInfo, context As StreamingContext) _
          Implements ISerializable.GetObjectData

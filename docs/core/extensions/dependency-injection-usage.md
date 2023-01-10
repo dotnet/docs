@@ -1,16 +1,16 @@
 ---
-title: Use dependency injection in .NET
+title: Use dependency injection
 description: Learn how to use dependency injection in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/17/2021
+ms.date: 01/05/2023
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
 
 # Tutorial: Use dependency injection in .NET
 
-This tutorial shows how to use [dependency injection (DI) in .NET](dependency-injection.md). With *Microsoft Extensions*, DI is a first-class citizen where services are added and configured in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
+This tutorial shows how to use [dependency injection (DI) in .NET](dependency-injection.md). With *Microsoft Extensions*, DI is managed by adding services and configuring them in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
 
 In this tutorial, you learn how to:
 
@@ -30,57 +30,75 @@ In this tutorial, you learn how to:
 
 Using either the [dotnet new](../tools/dotnet-new.md) command or an IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
 
+Your new console app project file should resemble the following:
+
+:::code language="xml" source="snippets/configuration/console-di/console-di.csproj":::
+
+> [!IMPORTANT]
+> In this example, the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package is required to build and run the app. Some metapackages might contain the `Microsoft.Extensions.Hosting` package, in which case an explicit package reference isn't required.
+
 ## Add interfaces
 
-Add the following interfaces to the project root directory:
+In this sample app, you'll learn how dependency injection handles service lifetime. You'll create several interfaces that represent different service lifetimes. Add the following interfaces to the project root directory:
 
-*IOperation.cs*
+*IReportServiceLifetime.cs*
 
-:::code language="csharp" source="snippets/configuration/console-di/IOperation.cs":::
+:::code source="snippets/configuration/console-di/IReportServiceLifetime.cs":::
 
-The `IOperation` interface defines a single `OperationId` property.
+The `IReportServiceLifetime` interface defines:
 
-*ITransientOperation.cs*
+- A `Guid Id` property that represents the unique identifier of the service.
+- A <xref:Microsoft.Extensions.DependencyInjection.ServiceLifetime> property that represents the service lifetime.
 
-:::code language="csharp" source="snippets/configuration/console-di/ITransientOperation.cs":::
+*IExampleTransientService.cs*
 
-*IScopedOperation.cs*
+:::code source="snippets/configuration/console-di/IExampleTransientService.cs":::
 
-:::code language="csharp" source="snippets/configuration/console-di/IScopedOperation.cs":::
+*IExampleScopedService.cs*
 
-*ISingletonOperation.cs*
+:::code source="snippets/configuration/console-di/IExampleScopedService.cs":::
 
-:::code language="csharp" source="snippets/configuration/console-di/ISingletonOperation.cs":::
+*IExampleSingletonService.cs*
 
-All of the subinterfaces of `IOperation` name their intended service lifetime. For example, "Transient" or "Singleton".
+:::code source="snippets/configuration/console-di/IExampleSingletonService.cs":::
 
-## Add default implementation
+All of the subinterfaces of `IReportServiceLifetime` explicitly implement the `IReportServiceLifetime.Lifetime` with a default. For example, `IExampleTransientService` explicitly implements `IReportServiceLifetime.Lifetime` with the `ServiceLifetime.Transient` value.
 
-Add the following default implementation for the various operations:
+## Add default implementations
 
-*DefaultOperation.cs*
+The example implementations all initialize their `Id` property with the result of <xref:System.Guid.NewGuid?displayProperty=nameWithType>. Add the following default implementation classes for the various services to the project root directory:
 
-:::code language="csharp" source="snippets/configuration/console-di/DefaultOperation.cs":::
+*ExampleTransientService.cs*
 
-The `DefaultOperation` implements all of the named marker interfaces and initializes the `OperationId` property to the last four characters of a new globally unique identifier (GUID).
+:::code source="snippets/configuration/console-di/ExampleTransientService.cs":::
 
-## Add service that requires DI
+*ExampleScopedService.cs*
 
-Add the following operation logger object, which acts as a service to the console app:
+:::code source="snippets/configuration/console-di/ExampleScopedService.cs":::
 
-*OperationLogger.cs*
+*ExampleSingletonService.cs*
 
-:::code language="csharp" source="snippets/configuration/console-di/OperationLogger.cs":::
+:::code source="snippets/configuration/console-di/ExampleSingletonService.cs":::
 
-The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is; `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method logs each operation's unique identifier with the scope string and message.
+Each implementation is defined as `internal sealed` and implements its corresponding interface. For example, `ExampleSingletonService` implements `IExampleSingletonService`.
+
+## Add a service that requires DI
+
+Add the following service lifetime reporter class, which acts as a service to the console app:
+
+*ServiceLifetimeReporter.cs*
+
+:::code source="snippets/configuration/console-di/ServiceLifetimeReporter.cs":::
+
+The `ServiceLifetimeReporter` defines a constructor that requires each of the aforementioned service interfaces, that is, `IExampleTransientService`, `IExampleScopedService`, and `IExampleSingletonService`. The object exposes a single method that allows the consumer to report on the service with a given `lifetimeDetails` parameter. When invoked, the `ReportServiceLifetimeDetails` method logs each service's unique identifier with the service lifetime message. The log messages help to visualize the service lifetime.
 
 ## Register services for DI
 
 Update *Program.cs* with the following code:
 
-:::code language="csharp" source="snippets/configuration/console-di/Program.cs" id="Program" highlight="6-10":::
+:::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="8-11":::
 
-Each `services.Add{SERVICE_NAME}` extension method adds (and potentially configures) services. We recommended that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
+Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
 
 - Allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks.
 - Prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
@@ -94,31 +112,17 @@ The app:
 
 ## Conclusion
 
-The app displays output similar to the following example:
+In this sample app, you created several interfaces and corresponding implementations. Each of these services is uniquely identified and paired with a <xref:Microsoft.Extensions.DependencyInjection.ServiceLifetime>. The sample app demonstrates registering service implementations against an interface, and how to register pure classes without backing interfaces. The sample app then demonstrates how dependencies defined as constructor parameters are resolved at run time.
 
-```console
-Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ 80f4...Always different        ]
-Scope 1-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
-Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-...
-Scope 1-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ f3c0...Always different        ]
-Scope 1-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
-Scope 1-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
+When you run the app, it displays output similar to the following:
 
-Scope 2-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ f9af...Always different        ]
-Scope 2-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
-Scope 2-Call 1 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-...
-Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ fa65...Always different        ]
-Scope 2-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
-Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
-```
+:::code source="snippets/configuration/console-di/Program.cs" id="Output":::
 
 From the app output, you can see that:
 
-- Transient operations are always different, a new instance is created with every retrieval of the service.
-- Scoped operations change only with a new scope, but are the same instance within a scope.
-- Singleton operations are always the same, a new instance is only created once.
+- Transient services are always different, a new instance is created with every retrieval of the service.
+- Scoped services change only with a new scope, but are the same instance within a scope.
+- Singleton services are always the same, a new instance is only created once.
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
-title: "Operator overloading - C# reference"
-description: "Learn how to overload a C# operator and which C# operators are overloadable."
-ms.date: 07/05/2019
+title: "Operator overloading - Define unary, arithmetic, equality, and comparison operators."
+description: "Learn how to overload a C# operator and which C# operators are overloadable. In general, the unary, arithmetic, equality and comparison operators are overloadable."
+ms.date: 11/28/2022
 f1_keywords: 
   - "operator_CSharpKeyword"
   - operator
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "operator keyword [C#]"
   - "operator overloading [C#]"
 ---
-# Operator overloading (C# reference)
+# Operator overloading - predefined unary, arithmetic, equality and comparison operators
 
 A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation in case one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
 
@@ -28,24 +28,25 @@ You also use the `operator` keyword to define a custom type conversion. For more
 
 ## Overloadable operators
 
-The following table provides information about overloadability of C# operators:
+The following table shows the operators that can be overloaded:
 
-| Operators | Overloadability |
-| --------- | --------------- |
-|[+x](arithmetic-operators.md#unary-plus-and-minus-operators), [-x](arithmetic-operators.md#unary-plus-and-minus-operators), [!x](boolean-logical-operators.md#logical-negation-operator-), [~x](bitwise-and-shift-operators.md#bitwise-complement-operator-), [++](arithmetic-operators.md#increment-operator-), [--](arithmetic-operators.md#decrement-operator---), [true](true-false-operators.md), [false](true-false-operators.md)|These unary operators can be overloaded.|
-|[x + y](addition-operator.md), [x - y](subtraction-operator.md), [x \* y](arithmetic-operators.md#multiplication-operator-), [x / y](arithmetic-operators.md#division-operator-), [x % y](arithmetic-operators.md#remainder-operator-), [x & y](boolean-logical-operators.md#logical-and-operator-), [x &#124; y](boolean-logical-operators.md#logical-or-operator-), [x ^ y](boolean-logical-operators.md#logical-exclusive-or-operator-), [x \<\< y](bitwise-and-shift-operators.md#left-shift-operator-), [x >> y](bitwise-and-shift-operators.md#right-shift-operator-), [x == y](equality-operators.md#equality-operator-), [x != y](equality-operators.md#inequality-operator-), [x \< y](comparison-operators.md#less-than-operator-), [x > y](comparison-operators.md#greater-than-operator-), [x \<= y](comparison-operators.md#less-than-or-equal-operator-), [x >= y](comparison-operators.md#greater-than-or-equal-operator-)|These binary operators can be overloaded. Certain operators must be overloaded in pairs; for more information, see the note that follows this table.|
-|[x && y](boolean-logical-operators.md#conditional-logical-and-operator-), [x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-)|Conditional logical operators cannot be overloaded. However, if a type with the overloaded [`true` and `false` operators](true-false-operators.md) also overloads the `&` or <code>&#124;</code> operator in a certain way, the `&&` or <code>&#124;&#124;</code> operator, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#11133-user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).|
-|[a&#91;i&#93;](member-access-operators.md#indexer-operator-), [`a?[i]`](member-access-operators.md#null-conditional-operators--and-)|Element access is not considered an overloadable operator, but you can define an [indexer](../../programming-guide/indexers/index.md).|
-|[(T)x](type-testing-and-cast.md#cast-expression)|The cast operator cannot be overloaded, but you can define custom type conversions that can be performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).|
-|[+=](arithmetic-operators.md#compound-assignment), [-=](arithmetic-operators.md#compound-assignment), [\*=](arithmetic-operators.md#compound-assignment), [/=](arithmetic-operators.md#compound-assignment), [%=](arithmetic-operators.md#compound-assignment), [&=](boolean-logical-operators.md#compound-assignment), [&#124;=](boolean-logical-operators.md#compound-assignment), [^=](boolean-logical-operators.md#compound-assignment), [\<\<=](bitwise-and-shift-operators.md#compound-assignment), [>>=](bitwise-and-shift-operators.md#compound-assignment)|Compound assignment operators cannot be explicitly overloaded. However, when you overload a binary operator, the corresponding compound assignment operator, if any, is also implicitly overloaded. For example, `+=` is evaluated using `+`, which can be overloaded.|
-|[^x](member-access-operators.md#index-from-end-operator-), [x = y](assignment-operator.md), [x.y](member-access-operators.md#member-access-expression-), [`x?.y`](member-access-operators.md#null-conditional-operators--and-), [c ? t : f](conditional-operator.md), [x ?? y](null-coalescing-operator.md), [x ??= y](null-coalescing-operator.md), [x..y](member-access-operators.md#range-operator-), [x->y](pointer-related-operators.md#pointer-member-access-operator--), [=>](lambda-operator.md), [f(x)](member-access-operators.md#invocation-expression-), [as](type-testing-and-cast.md#as-operator), [await](await.md), [checked](../keywords/checked.md), [unchecked](../keywords/unchecked.md), [default](default.md), [delegate](delegate-operator.md), [is](type-testing-and-cast.md#is-operator), [nameof](nameof.md), [new](new-operator.md), [sizeof](sizeof.md), [stackalloc](stackalloc.md), [switch](switch-expression.md), [typeof](type-testing-and-cast.md#typeof-operator), [with](with-expression.md)|These operators cannot be overloaded.|
+| Operators | Notes |
+| :--------------------: | ------------- |
+|[`+x`](arithmetic-operators.md#unary-plus-and-minus-operators), [`-x`](arithmetic-operators.md#unary-plus-and-minus-operators), [`!x`](boolean-logical-operators.md#logical-negation-operator-), [`~x`](bitwise-and-shift-operators.md#bitwise-complement-operator-), [`++`](arithmetic-operators.md#increment-operator-), [`--`](arithmetic-operators.md#decrement-operator---), [`true`](true-false-operators.md), [`false`](true-false-operators.md)|The `true` and `false` operators must be overloaded together.|
+|[`x + y`](arithmetic-operators.md#addition-operator-), [`x - y`](arithmetic-operators.md#subtraction-operator--), [`x * y`](arithmetic-operators.md#multiplication-operator-), [`x / y`](arithmetic-operators.md#division-operator-), [`x % y`](arithmetic-operators.md#remainder-operator-), <br /> [`x & y`](boolean-logical-operators.md#logical-and-operator-), [<code>x &#124; y</code>](boolean-logical-operators.md#logical-or-operator-), [`x ^ y`](boolean-logical-operators.md#logical-exclusive-or-operator-), <br /> [`x << y`](bitwise-and-shift-operators.md#left-shift-operator-), [`x >> y`](bitwise-and-shift-operators.md#right-shift-operator-), [`x >>> y`](bitwise-and-shift-operators.md#unsigned-right-shift-operator-) | |
+|[`x == y`](equality-operators.md#equality-operator-), [`x != y`](equality-operators.md#inequality-operator-), [`x < y`](comparison-operators.md#less-than-operator-), [`x > y`](comparison-operators.md#greater-than-operator-), [`x <= y`](comparison-operators.md#less-than-or-equal-operator-), [`x >= y`](comparison-operators.md#greater-than-or-equal-operator-)|Must be overloaded in pairs as follows:  `==` and `!=`, `<` and `>`, `<=` and `>=`.|
 
-> [!NOTE]
-> The comparison operators must be overloaded in pairs. That is, if either operator of a pair is overloaded, the other operator must be overloaded as well. Such pairs are as follows:
->
-> - `==` and `!=` operators
-> - `<` and `>` operators
-> - `<=` and `>=` operators
+## Non overloadable operators
+
+The following table shows the operators that can't be overloaded:
+
+| Operators | Alternatives |
+| :---------: | --------------- |
+|[`x && y`](boolean-logical-operators.md#conditional-logical-and-operator-), [<code>x &#124;&#124; y</code>](boolean-logical-operators.md#conditional-logical-or-operator-)| Overload both the [`true`](true-false-operators.md) and [`false`](true-false-operators.md) operators and the [`&`](boolean-logical-operators.md#logical-and-operator-) or [<code>&#124;</code>](boolean-logical-operators.md#logical-or-operator-) operators. For more information, see [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#11133-user-defined-conditional-logical-operators).|
+|[<code>a&#91;i&#93;</code>](member-access-operators.md#indexer-operator-), [`a?[i]`](member-access-operators.md#null-conditional-operators--and-)|Define an [indexer](../../programming-guide/indexers/index.md).|
+|[`(T)x`](type-testing-and-cast.md#cast-expression)|Define custom type conversions that can be performed by a cast expression. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).|
+|[`+=`](arithmetic-operators.md#compound-assignment), [`-=`](arithmetic-operators.md#compound-assignment), [`*=`](arithmetic-operators.md#compound-assignment), [`/=`](arithmetic-operators.md#compound-assignment), [`%=`](arithmetic-operators.md#compound-assignment), [`&=`](boolean-logical-operators.md#compound-assignment), [<code>&#124;=</code>](boolean-logical-operators.md#compound-assignment), [`^=`](boolean-logical-operators.md#compound-assignment), [`<<=`](bitwise-and-shift-operators.md#compound-assignment), [`>>=`](bitwise-and-shift-operators.md#compound-assignment), [`>>>=`](bitwise-and-shift-operators.md#compound-assignment)|Overload the corresponding binary operator. For example, when you overload the binary `+` operator, `+=` is implicitly overloaded.|
+|[`^x`](member-access-operators.md#index-from-end-operator-), [`x = y`](assignment-operator.md), [`x.y`](member-access-operators.md#member-access-expression-), [`x?.y`](member-access-operators.md#null-conditional-operators--and-), [`c ? t : f`](conditional-operator.md), [`x ?? y`](null-coalescing-operator.md), [`??= y`](null-coalescing-operator.md),<br />[`x..y`](member-access-operators.md#range-operator-), [`x->y`](pointer-related-operators.md#pointer-member-access-operator--), [`=>`](lambda-operator.md), [`f(x)`](member-access-operators.md#invocation-expression-), [`as`](type-testing-and-cast.md#as-operator), [`await`](await.md), [`checked`](../statements/checked-and-unchecked.md), [`unchecked`](../statements/checked-and-unchecked.md), [`default`](default.md), [`delegate`](delegate-operator.md), [`is`](type-testing-and-cast.md#is-operator), [`nameof`](nameof.md), [`new`](new-operator.md), <br />[`sizeof`](sizeof.md), [`stackalloc`](stackalloc.md), [`switch`](switch-expression.md), [`typeof`](type-testing-and-cast.md#typeof-operator), [`with`](with-expression.md)|None.|
 
 ## C# language specification
 

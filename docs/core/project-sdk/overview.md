@@ -2,7 +2,7 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 11/03/2021
+ms.date: 06/30/2022
 ms.topic: conceptual
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
@@ -20,7 +20,7 @@ The following SDKs are available:
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly](/aspnet/core/blazor#blazor-webassembly) SDK |
 | `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
-| `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
+| `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service](../extensions/workers.md) SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
@@ -136,12 +136,12 @@ Starting in .NET 6, implicit [`global using` directives](../../csharp/language-r
 
 Implicit `global using` directives are added for projects that use one of the following SDKs:
 
-- Microsoft.NET.Sdk
-- Microsoft.NET.Sdk.Web
-- Microsoft.NET.Sdk.Worker
-- Microsoft.NET.Sdk.WindowsDesktop
+- `Microsoft.NET.Sdk`
+- `Microsoft.NET.Sdk.Web`
+- `Microsoft.NET.Sdk.Worker`
+- `Microsoft.NET.Sdk.WindowsDesktop`
 
-A `global using` directive is added for each namespaces in a set of default namespaces that's based on the project's SDK. These default namespaces are shown in the following table.
+A `global using` directive is added for each namespace in a set of default namespaces that are based on the project's SDK. These default namespaces are shown in the following table.
 
 | SDK | Default namespaces |
 | - | - |

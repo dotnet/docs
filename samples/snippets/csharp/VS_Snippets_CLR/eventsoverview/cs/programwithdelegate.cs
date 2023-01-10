@@ -1,9 +1,9 @@
 ﻿// <snippet7>
 using System;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication4
 {
-    class Program
+    class ProgramFour
     {
         static void Main(string[] args)
         {

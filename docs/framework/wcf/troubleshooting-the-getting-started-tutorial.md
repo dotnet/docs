@@ -90,7 +90,7 @@ To turn off security:
     ```xml
     <binding name="WSHttpBinding_ICalculator">
       <security mode="None" />
-    </binding
+    </binding>
     ```  
 
 ## See also  

@@ -1,9 +1,9 @@
 ---
-title: Options pattern in .NET
+title: Options pattern
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 03/10/2022
+ms.date: 11/30/2022
 ---
 
 # Options pattern in .NET
@@ -11,7 +11,7 @@ ms.date: 03/10/2022
 The options pattern uses classes to provide strongly-typed access to groups of related settings. When [configuration settings](configuration.md) are isolated by scenario into separate classes, the app adheres to two important software engineering principles:
 
 - The [Interface Segregation Principle (ISP) or Encapsulation](../../architecture/modern-web-apps-azure/architectural-principles.md#encapsulation): Scenarios (classes) that depend on configuration settings depend only on the configuration settings that they use.
-- [Separation of Concerns](../../architecture/modern-web-apps-azure/architectural-principles.md#separation-of-concerns): Settings for different parts of the app aren't dependent or coupled to one another.
+- [Separation of Concerns](../../architecture/modern-web-apps-azure/architectural-principles.md#separation-of-concerns): Settings for different parts of the app aren't dependent or coupled with one another.
 
 Options also provide a mechanism to validate configuration data. For more information, see the [Options validation](#options-validation) section.
 
@@ -40,7 +40,7 @@ The following code is part of the _Program.cs_ C# file and:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="16-23" range="1-29":::
 
-In the preceding code, changes to the JSON configuration file after the app has started are read.
+In the preceding code, the JSON configuration file has its `"TransientFaultHandlingOptions"` section bound to the `TransientFaultHandlingOptions` instance. This hydrates the C# objects properties with those corresponding values from the configuration.
 
 [`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` may be more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
 
@@ -55,7 +55,7 @@ Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 ```
 
-In the preceding code, changes to the JSON configuration file after the app has started are read.
+In the preceding code, the `ConfigurationBinder.Get<T>` is used to acquire an instance of the `TransientFaultHandlingOptions` object with its property values populated from the underlying configuration.
 
 > [!IMPORTANT]
 > The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** constrained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
@@ -87,7 +87,7 @@ Using the preceding code, the following code reads the position options:
 
 :::code language="csharp" source="snippets/configuration/console-json/ExampleService.cs":::
 
-In the preceding code, changes to the JSON configuration file after the app has started are ***not*** read. To read changes after the app has started, use [IOptionsSnapshot](#use-ioptionssnapshot-to-read-updated-data).
+In the preceding code, changes to the JSON configuration file after the app has started are ***not*** read. To read changes after the app has started, use [IOptionsSnapshot](#use-ioptionssnapshot-to-read-updated-data) or [IOptionsMonitor](#ioptionsmonitor) to monitor changes as they occur, and react accordingly.
 
 ## Options interfaces
 
@@ -147,7 +147,7 @@ services.Configure<TransientFaultHandlingOptions>(
         nameof(TransientFaultHandlingOptions)));
 ```
 
-In the preceding code, changes to the JSON configuration file after the app has started are read.
+In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
 
 ## IOptionsMonitor
 

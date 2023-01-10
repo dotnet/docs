@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ `dotnet-dump` version 3.0.47001 and later versions
 
 > [!NOTE]
 > `dotnet-dump` for macOS is only supported with .NET 5 and later versions.
@@ -29,9 +29,9 @@ There are two ways to download and install `dotnet-dump`:
 
   | OS  | Platform |
   | --- | -------- |
-  | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [arm](https://aka.ms/dotnet-dump/win-arm) \| [arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
+  | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [Arm](https://aka.ms/dotnet-dump/win-arm) \| [Arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
-  | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [arm](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
+  | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [Arm](https://aka.ms/dotnet-dump/linux-arm) \| [Arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
 
 > [!NOTE]
 > To use `dotnet-dump` on an x86 app, you need a corresponding x86 version of the tool.
@@ -44,7 +44,7 @@ dotnet-dump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux dumps without any native debugger involved like `lldb` on Linux. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
+The `dotnet-dump` global tool is a way to collect and analyze dumps on Windows, Linux, and macOS without any native debugger involved. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
 
 ## Options
 
@@ -62,6 +62,7 @@ The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux 
 | ------------------------------------------- |
 | [dotnet-dump collect](#dotnet-dump-collect) |
 | [dotnet-dump analyze](#dotnet-dump-analyze) |
+| [dotnet-dump ps](#dotnet-dump-ps)           |
 
 ## dotnet-dump collect
 
@@ -70,7 +71,7 @@ Captures a dump from a process.
 ### Synopsis
 
 ```console
-dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag]
+dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag] [--crashreport]
 ```
 
 ### Options
@@ -99,12 +100,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
 - **`-o|--output <output_dump_path>`**
 
-  The full path and file name where the collected dump should be written.
+  The full path and file name where the collected dump should be written. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.
 
   If not specified:
 
   - Defaults to *.\dump_YYYYMMDD_HHMMSS.dmp* on Windows.
-  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux.
+  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux and macOS.
 
   YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second.
 
@@ -186,6 +187,28 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 > [!NOTE]
 > Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md).
 
+## dotnet-dump ps
+
+ Lists the dotnet processes that dumps can be collected from.
+ `dotnet-dump` version 6.0.320703 and later versions also display the command-line arguments that each process was started with, if available.
+
+### Synopsis
+
+```console
+dotnet-dump ps [-h|--help]
+```
+
+### Example
+
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-dump ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-dump` version 6.0.320703 and later.
+
+```console
+> dotnet-dump ps
+  
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
+```
+
 ## Using `dotnet-dump`
 
 The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.
@@ -244,15 +267,9 @@ StackTraceString: <none>
 HResult: 80131604
 ```
 
-## Special instructions for Docker
+## Troubleshooting dump collection issues
 
-If you're running under Docker, dump collection requires `SYS_PTRACE` capabilities (`--cap-add=SYS_PTRACE` or `--privileged`).
-
-On Microsoft .NET SDK Linux Docker images, some `dotnet-dump` commands can throw the following exception:
-
-> Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception.
-
-To work around this problem, install the "libc6-dev" package.
+Dump collection requires the process to be able to call `ptrace`. If you are facing issues collecting dumps, the environment you are running on may be configured to restrict such calls. See our [Dumps: FAQ](faq-dumps.yml) for troubleshooting tips and potential solutions to common issues.
 
 ## See also
 

@@ -363,7 +363,7 @@ The `docker-compose.yml` file, essentially defines (within a project) a set of s
 For an Orleans deployment, a common use case is to have a `docker-compose.yml` which contains two services. One for Orleans Silo, and the other for Orleans Client. The Client would have a dependency on the Silo and that means, it will only start after the Silo service is up. Another case is to add a storage/database service/container, like for example SQL Server, which should start first before the client and the silo, so both services should take a dependency on it.
 
 > [!NOTE]
-> Before you read further (and eventually get crazy with it), please note that _indentation_ **matters** in `docker-compose` files. So pay attention to it if you have any problems.
+> Before you read further, please note that _indentation_ **matters** in `docker-compose` files. So pay attention to it if you have any problems.
 
 Here is how we will describe our services for this article:
 

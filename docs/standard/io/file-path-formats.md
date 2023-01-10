@@ -28,7 +28,7 @@ If all three components are present, the path is absolute. If no volume or drive
 |Path  |Description  |
 | -- | -- |
 | `C:\Documents\Newsletters\Summer2018.pdf` | An absolute file path from the root of drive `C:`. |
-| `\Program Files\Custom Utilities\StringFinder.exe` | An absolute path from the root of the current drive. |
+| `\Program Files\Custom Utilities\StringFinder.exe` | A relative path from the root of the current drive. |
 | `2018\January.xlsx` | A relative path to a file in a subdirectory of the current directory. |
 | `..\Publications\TravelBrochure.pdf` | A relative path to a file in a directory starting from the current directory. |
 | `C:\Projects\apilibrary\apilibrary.sln` | An absolute path to a file from the root of drive `C:`. |
@@ -37,14 +37,12 @@ If all three components are present, the path is absolute. If no volume or drive
 > [!IMPORTANT]
 > Note the difference between the last two paths. Both specify the optional volume specifier (`C:` in both cases), but the first begins with the root of the specified volume, whereas the second does not. As result, the first is an absolute path from the root directory of drive `C:`, whereas the second is a relative path from the current directory of drive `C:`. Use of the second form when the first is intended is a common source of bugs that involve Windows file paths.
 
-You can determine whether a file path is fully qualified (that is, it the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWithType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
+You can determine whether a file path is fully qualified (that is, if the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWithType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
 
 The following example illustrates the difference between absolute and relative paths. It assumes that the directory `D:\FY2018\` exists, and that you haven't set any current directory for `D:\` from the command prompt before running the example.
 
 [!code-csharp[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/cs/paths.cs)]
 [!code-vb[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/vb/paths.vb)]
-
-[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
 ## UNC paths
 

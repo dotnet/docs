@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace keywords
+namespace Keywords
 {
     // <SnippetReadonlyField>
     class Age

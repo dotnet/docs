@@ -1,7 +1,0 @@
-<Page x:Class="UsingPageFunctionsSample.CallingPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="CallingPage"
-    >
-    <Hyperlink Name="callPageFunctionHyperlink" Click="callPageFunctionHyperlink_Click">Call Page Function</Hyperlink>
-</Page>

@@ -81,7 +81,7 @@ You can set the following properties for symbol groups, to limit which symbols a
 
 1. Tuple members aren't currently supported in `applicable_kinds`.
 2. The symbol group matches _all_ the modifiers in the `required_modifiers` property.  If you omit this property, no specific modifiers are required for a match. This means a symbol's modifiers have no effect on whether or not this rule is applied.
-3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`.
+3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`. The new rule will take precedence according to the [rule order](#rule-order).
 4. `class` includes [C# records](../../../csharp/language-reference/builtin-types/record.md).
 
 ### Naming style properties
@@ -122,10 +122,30 @@ All naming rule properties are required for a rule to take effect.
 
 ## Rule order
 
-The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definition of the rules themselves. The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
+The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definitions of the rules themselves. More specific rules regarding accessibilities, modifiers, and symbols take precedence over less specific rules. If there's overlap between rules or if the rule ordering causes problems, you can break out the intersection of the two rules into a new rule that takes precedence over the broader rules from which it was derived. For examples, see [Example: Overlapping naming strategies](#example-overlapping-naming-strategies) and [Example: `const` modifier includes `static` and `readonly`](#example-const-modifier-includes-static-and-readonly).
+
+The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
 
 > [!NOTE]
 > If you're using a version of Visual Studio earlier than Visual Studio 2019 version 16.2, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
+
+### Example: Overlapping naming strategies
+
+Consider the following two naming rules:
+
+1. Public methods are PascalCase.
+2. Asynchronous methods end with `"Async"`.
+
+For `public async` methods, it's not obvious which rule takes precedence. You can create a new rule for `public async` methods and specify the naming exactly.
+
+### Example: `const` modifier includes `static` and `readonly`
+
+Consider the following two naming rules:
+
+1. Constant fields are PascalCase.
+2. Non-public `static` fields are s_camelCase.
+
+Rule 2 is more specific and takes precedence, so all non-public constant fields are s_camelCase. To resolve the issue, you can define an intersection rule: non-public constant fields are PascalCase.
 
 ## Default naming styles
 
@@ -210,6 +230,6 @@ This example also demonstrates that entity definitions can be reused. The `under
 ## See also
 
 - [Language rules](language-rules.md)
-- [Formatting rules](formatting-rules.md)
+- [Formatting rules](ide0055.md)
 - [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/main/.editorconfig#L63)
 - [.NET code style rules reference](index.md)

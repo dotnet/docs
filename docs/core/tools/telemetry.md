@@ -74,15 +74,25 @@ The telemetry feature collects the following data:
 | >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [Crash exception telemetry](#crash-exception-telemetry). |
 | >=5.0.100     | Hashed TargetFrameworkVersion used for build (MSBuild property) |
 | >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
-| >=5.0.100     | Hashed SelfContained used for build  (MSBuild property) |
-| >=5.0.100     | Hashed UseApphost used for build  (MSBuild property) |
+| >=5.0.100     | Hashed SelfContained used for build (MSBuild property) |
+| >=5.0.100     | Hashed UseApphost used for build (MSBuild property) |
 | >=5.0.100     | Hashed OutputType used for build (MSBuild property  |
+| >=5.0.201     | Hashed PublishReadyToRun used for build (MSBuild property) |
+| >=5.0.201     | Hashed PublishTrimmed used for build (MSBuild property) |
+| >=5.0.201     | Hashed PublishSingleFile used for build (MSBuild property) |
 | >=5.0.202     | Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup. |
 | >=5.0.202     | Elapsed time for the step that adds .NET Tools to the path on first run. |
 | >=5.0.202     | Elapsed time to display first time use notice on first run. |
 | >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
 | >=5.0.202     | Elapsed time to parse the CLI input. |
 | >=6.0.100     | OS architecture |
+| >=6.0.104     | Hashed PublishReadyToRunUseCrossgen2 used for build (MSBuild property) |
+| >=6.0.104     | Hashed Crossgen2PackVersion used for build (MSBuild property) |
+| >=6.0.104     | Hashed CompileListCount used for build (MSBuild property) |
+| >=6.0.104     | Hashed _ReadyToRunCompilationFailures used for build (MSBuild property) |
+| >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
+| >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
+| >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
 
 ### Collected options
 
@@ -144,6 +154,26 @@ at Microsoft.DotNet.Tools.Run.RunCommand.Run(String[] args)
 at Microsoft.DotNet.Cli.Program.ProcessArgs(String[] args, ITelemetry telemetryClient)
 at Microsoft.DotNet.Cli.Program.Main(String[] args)
 ```
+
+## Continuous Integration Detection
+
+In order to detect if the .NET CLI is running in a Continuous Integration environment, the .NET CLI probes for the presence and values of several well-known environment variables that common CI providers set.
+
+The full list of environment variables, and what is done with their values, is shown below.  Note that in every case, the value of the environment variable is never collected, only used to set a boolean flag.
+
+| Variable(s) | Provider | Action |
+| ----------- | -------- | ------ |
+| TF_BUILD    | Azure Pipelines | Parse boolean value |
+| GITHUB_ACTIONS | GitHub Actions | Parse boolean value |
+| APPVEYOR | Appveyor | Parse boolean value |
+| CI | Many/Most | Parse boolean value |
+| TRAVIS | Travis CI | Parse boolean value |
+| CIRCLECI | Circle CI | Parse boolean value |
+| CODEBUILD_BUILD_ID, AWS_REGION | Amazon Web Services CodeBuild | Check if all are present and non-null |
+| BUILD_ID, BUILD_URL | Jenkins | Check if all are present and non-null |
+| BUILD_ID, PROJECT_ID | Google Cloud Build | Check if all are present and non-null |
+| TEAMCITY_VERSION | TeamCity | Check if present and non-null |
+| JB_SPACE_API_URL | JetBrains Space | Check if present and non-null |
 
 ## Avoid inadvertent disclosure of information
 

@@ -29,7 +29,7 @@ Repeats a block of statements while a `Boolean` condition is `True` or until the
 ## Syntax
 
 ```vb
-Do { While | Until } condition
+Do [ { While | Until } condition ]
     [ statements ]
     [ Continue Do ]
     [ statements ]
@@ -43,7 +43,7 @@ Do
     [ statements ]
     [ Exit Do ]
     [ statements ]
-Loop { While | Until } condition
+Loop [ { While | Until } condition ]
 ```
 
 ## Parts
@@ -51,8 +51,8 @@ Loop { While | Until } condition
 |Term|Definition|
 |---|---|
 |`Do`|Required. Starts the definition of the `Do` loop.|
-|`While`|Required unless `Until` is used. Repeat the loop until `condition` is `False`.|
-|`Until`|Required unless `While` is used. Repeat the loop until `condition` is `True`.|
+|`While`|Cannot be given if `Until` is used. Repeat the loop until `condition` is `False`.|
+|`Until`|Cannot be given if `While` is used. Repeat the loop until `condition` is `True`.|
 |`condition`|Optional. `Boolean` expression. If `condition` is `Nothing`, Visual Basic treats it as `False`.|
 |`statements`|Optional. One or more statements that are repeated while, or until, `condition` is `True`.|
 |`Continue Do`|Optional. Transfers control to the next iteration of the `Do` loop.|
@@ -63,7 +63,7 @@ Loop { While | Until } condition
 
  Use a `Do...Loop` structure when you want to repeat a set of statements an indefinite number of times, until a condition is satisfied. If you want to repeat the statements a set number of times, the [For...Next Statement](for-next-statement.md) is usually a better choice.
 
- You can use either `While` or `Until` to specify `condition`, but not both.
+ You can use either `While` or `Until` to specify `condition`, but not both. If you give neither, the loop continues until an [`Exit`](exit-statement.md) transfer control out of the loop.
 
  You can test `condition` only one time, at either the start or the end of the loop. If you test `condition` at the start of the loop (in the `Do` statement), the loop might not run even one time. If you test at the end of the loop (in the `Loop` statement), the loop always runs at least one time.
 

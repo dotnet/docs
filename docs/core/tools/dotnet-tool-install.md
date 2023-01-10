@@ -1,11 +1,11 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 02/14/2020
+ms.date: 06/24/2022
 ---
 # dotnet tool install
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -17,19 +17,22 @@ ms.date: 02/14/2020
 dotnet tool install <PACKAGE_NAME> -g|--global
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--prerelease]
+    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--prerelease]
+    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--prerelease]
+    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install -h|--help
@@ -42,8 +45,6 @@ The `dotnet tool install` command provides a way for you to install .NET tools o
 * To install a global tool in the default location, use the `--global` option.
 * To install a global tool in a custom location,  use the `--tool-path` option.
 * To install a local tool, omit the `--global` and `--tool-path` options.
-
-**Local tools are available starting with .NET Core SDK 3.0.**
 
 Global tools are installed in the following directories by default when you specify the `-g` or `--global` option:
 
@@ -67,8 +68,6 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   Name/ID of the NuGet package that contains the .NET tool to install.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
@@ -101,6 +100,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`--no-cache`**
 
   Do not cache packages and HTTP requests.
+
+- **`--prerelease`**
+
+  Include prerelease packages.
 
 - **`--tool-manifest <PATH>`**
 

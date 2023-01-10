@@ -48,7 +48,7 @@ public class Chat : IChat
 ```
 
 On the server, we should next have a Grain that sends these chat messages to clients. The Grain should also have a mechanism for clients to subscribe and unsubscribe themselves for notifications. For subscriptions, the grain can use an instance of the utility class <xref:Orleans.Utilities.ObserverManager%601>.
-    
+
 > [!NOTE]
 > <xref:Orleans.Utilities.ObserverManager%601> is part of Orleans since version 7.0. For older versions, the following [implementation](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12) can be copied.
 

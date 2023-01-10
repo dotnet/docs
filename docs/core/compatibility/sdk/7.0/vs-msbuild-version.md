@@ -13,7 +13,7 @@ Certain .NET SDK versions require newer versions of Visual Studio and MSBuild.
 
 ## Change description
 
-The following table shows the minimum version of Visual Studio and MSBuild you'll need to use the .NET 7.0.100 and 7.0.200 SDKs.
+The following table shows the minimum version of Visual Studio and MSBuild you need to use the .NET 7.0.100 or 7.0.200 SDK.
 
 | NET SDK version   | Minimum Visual Studio and MSBuild version |
 | ----------------- | ----------------------------------------- |

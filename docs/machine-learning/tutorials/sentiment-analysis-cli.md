@@ -138,7 +138,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
         - The **consumption** file contains the code to consume the model.
         - The **zip** file that is the generated model from the CLI.
 
-1. Open the **SampleClassification.consumption.cs** file within the **mbconfig** file. You will see that there input and output classes classes which are 'data classes' or POCO classes used to hold data. It is 'boilerplate code' but useful to have it generated if your dataset has tens or even hundreds of columns.
+1. Open the **SampleClassification.consumption.cs** file within the **mbconfig** file. You'll see that there are input and output classes. These are data classes, or POCO classes, used to hold data. The classes contain boilerplate code that's useful if your dataset has tens or even hundreds of columns.
     - The `ModelInput` class is used when reading data from the dataset.
     - The `ModelOutput` class is used to get the prediction result (prediction data).
 
@@ -205,7 +205,7 @@ However, things got a lot easier for you than what's explained in that blog post
 
 For more advanced learning purposes, you can also explore the generated C# code that was used by the CLI tool to train the generated model.
 
-That 'training model code' is currently generated in the file generated named `SampleClassification.training.cs` so you can investigate that training code.
+That training model code is generated in the file named `SampleClassification.training.cs`, so you can investigate that training code.
 
 More importantly, for this particular scenario (Sentiment Analysis model) you can also compare that generated training code with the code explained in the following tutorial:
 

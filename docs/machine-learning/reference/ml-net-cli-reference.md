@@ -165,7 +165,7 @@ Invalid input options cause the CLI tool to emit a list of valid inputs and an e
 
 ### Forecasting options
 
-Running `mlnet forecasting` will train a time series forecasting model. Choose this command if you want an ML Model to forecast a value based on historical data (e.g. sales forecasting).
+Running `mlnet forecasting` will train a time series forecasting model. Choose this command if you want an ML Model to forecast a value based on historical data (for example, sales forecasting).
 
 ```console
 mlnet forecasting
@@ -198,7 +198,7 @@ mlnet forecasting
 
 ### Train options
 
-Running `mlnet train` will train a model based on an "mbconfig" file generated from Model Builder. For this command to work the training data will need to be in the same directory as the "mbconfig" file.
+Running `mlnet train` will train a model based on an "mbconfig" file generated from Model Builder. For this command to work, the training data must be in the same directory as the "mbconfig" file.
 
 ```console
 -training-config <training-config> (REQUIRED)

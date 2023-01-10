@@ -16,6 +16,9 @@ items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+    
+    > [!TIP]
+    > To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 - title: Run your first C# program
   durationInMinutes: 2
   content: |
@@ -60,6 +63,9 @@ items:
     the name to one of your friends. Add these two lines in the interactive window
     following the code you've already added.  Make sure you keep the declaration
     of the `aFriend` variable and its initial assignment.
+    
+    > [!IMPORTANT]
+    > Don't delete the declaration of `aFriend`. Add the code below following the existing declaration.
 
     ```csharp
     aFriend = "Maira";

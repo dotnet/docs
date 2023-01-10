@@ -76,9 +76,7 @@ This book is an introduction to Blazor, not a comprehensive migration guide. Whi
 
 You can find the official Blazor home page and documentation at <https://blazor.net>.
 
-## Send your feedback
-
-This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

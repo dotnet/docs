@@ -3,15 +3,12 @@ using System;
 using System.ServiceModel;
 using System.Net.Security;
 using System.ServiceModel.Description;
-using System.Security.Permissions;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.Serialization;
 //</snippet0>
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum)]
 namespace Microsoft.WCF.Samples1
 {
-
     //<snippet2>
     //<snippet1>
     // Set the ProtectionLevel on the whole service to Sign.
@@ -19,7 +16,6 @@ namespace Microsoft.WCF.Samples1
     public interface ICalculator
     //</snippet1>
     {
-
         // Set the ProtectionLevel on this operation to None.
         [OperationContract(ProtectionLevel = ProtectionLevel.Sign)]
         double Add(double a, double b);

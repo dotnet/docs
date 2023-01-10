@@ -35,10 +35,10 @@ HRESULT DefineScope (
 ## Parameters  
 
  `rclsid`  
- [in] The CLSID of the version of metadata structures to be created. This value must be CLSID_CorMetaDataRuntime for the .NET Framework version 2.0.  
+ [in] The CLSID of the version of metadata structures to be created. This value must be CLSID_CorMetaDataRuntime for .NET Framework version 2.0.  
   
  `dwCreateFlags`  
- [in] Flags that specify options. This value must be zero for the .NET Framework 2.0.  
+ [in] Flags that specify options. This value must be zero for .NET Framework 2.0.  
   
  `riid`  
  [in] The IID of the desired metadata interface to be returned; the caller will use the interface to create the new metadata.  

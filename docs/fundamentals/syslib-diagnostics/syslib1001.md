@@ -6,7 +6,7 @@ ms.date: 05/07/2021
 
 # SYSLIB1001: Logging method names can't start with an underscore
 
-The name a of method annotated with the `LoggerMessageAttribute` starts with an underscore character. This is not allowed, as it may result in conflicting symbol names with respect to the automatically generated code.
+The name of a method annotated with the `LoggerMessageAttribute` starts with an underscore character. This is not allowed, as it may result in conflicting symbol names with respect to the automatically generated code.
 
 ## Workarounds
 

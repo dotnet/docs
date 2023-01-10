@@ -13,14 +13,15 @@ ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
 
 # Work with .resx files programmatically
 
-> ![NOTE] This article applies to .NET Framework. For information that applies to .NET 5+ (including .NET Core), see [Resources in .resx files](create-resource-files.md#resources-in-resx-files).
+> [!NOTE]
+> This article applies to .NET Framework. For information that applies to .NET 5+ (including .NET Core), see [Resources in .resx files](create-resource-files.md#resources-in-resx-files).
 
 Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This article explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
 
 This article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see <xref:System.Resources.ResourceManager>.
 
 > [!WARNING]
-> There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
+> There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
 
 ## Create a .resx file
 
@@ -43,7 +44,7 @@ The following example creates a .resx file named CarResources.resx that stores s
 [!code-vb[Conceptual.Resources.ResX#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/create1.vb#1)]
 
 > [!TIP]
-> You can also use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
+> You can also use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
 
 You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Create resource files](create-resource-files.md).
 

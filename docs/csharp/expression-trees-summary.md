@@ -15,18 +15,18 @@ create dynamic programs that interpret code as data and build
 new functionality based on that code.
 
 You can examine expression trees to understand the intent of
-an algorithm. You can not only examine that code. You can build new
+an algorithm. Not only can you examine the code, but you can build new
 expression trees that represent modified versions of the original code.
 
-You can also use expression trees to look at an algorithm, and
+You can also use expression trees to look at an algorithm and
 translate that algorithm into another language or environment.
 
 ## Limitations
 
 There are some newer C# language elements that don't translate
-well into expression trees. Expression trees cannot contain
+well into expression trees. Expression trees can't contain
 `await` expressions, or `async` lambda expressions. Many of the
-features added in the C# 6 release don't appear exactly as written
+features added in C# 6 and later don't appear exactly as written
 in expression trees. Instead, newer features will be exposed
 in expressions trees in the equivalent, earlier syntax. This
 may not be as much of a limitation as you might think. In fact,

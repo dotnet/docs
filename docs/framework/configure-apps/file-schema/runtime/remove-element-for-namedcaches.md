@@ -54,4 +54,5 @@ Removes a named cache entry from the `namedCaches` collection for a memory cache
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<namedCaches> Element (Cache Settings)](namedcaches-element-cache-settings.md)

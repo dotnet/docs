@@ -62,7 +62,7 @@ HRESULT LoadLibraryShim (
  This function is used to load DLLs that are included in the .NET Framework redistributable package. It does not load user-generated DLLs.  
   
 > [!NOTE]
-> Beginning with the .NET Framework version 2.0, loading Fusion.dll causes the CLR to be loaded. This is because the functions in Fusion.dll are now wrappers whose implementations are provided by the runtime.  
+> Beginning with .NET Framework version 2.0, loading Fusion.dll causes the CLR to be loaded. This is because the functions in Fusion.dll are now wrappers whose implementations are provided by the runtime.  
   
 ## Requirements  
 

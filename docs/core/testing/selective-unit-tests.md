@@ -44,7 +44,7 @@ dotnet test --filter <Expression>
 
 ## Character escaping
 
-To use an exclamation mark (`!`) in a filter expression on Linux or macOS, escape it by putting a backslash in front of it (`\!`). For example, the following filter skips all tests in a namespace that contains `IntegrationTests`:
+To use an exclamation mark (`!`) in a filter expression, you have to escape it in some Linux or macOS shells by putting a backslash in front of it (`\!`). For example, the following filter skips all tests in a namespace that contains `IntegrationTests`:
 
 ```dotnetcli
 dotnet test --filter FullyQualifiedName\!~IntegrationTests

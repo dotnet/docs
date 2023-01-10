@@ -77,7 +77,7 @@ The runtime's unmanaged library probing algorithm is identical on all platforms.
 
     - Append it to each path supplied in the `NATIVE_DLL_SEARCH_DIRECTORIES` property and attempt to load.
 
-    - If `DllImportSearchPath.AssemblyDirectory` is defined on the calling assembly, use it directly and attempt to load relative to the calling assembly.
+    - If <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute> is either not defined on the calling assembly or p/invoke or is defined and includes `DllImportSearchPath.AssemblyDirectory`, append the name or combination to the calling assembly's directory and attempt to load.
 
     - Use it directly to load the library.
 

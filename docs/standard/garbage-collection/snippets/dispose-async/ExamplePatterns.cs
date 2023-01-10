@@ -1,6 +1,4 @@
 ﻿// <one>
-using System;
-using System.Threading.Tasks;
 
 class ExampleOneProgram
 {

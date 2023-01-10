@@ -2,116 +2,110 @@
 using System.IO;
 using System.Web.Services;
 using System.Web.Services.Protocols;
-using System.Runtime.Serialization;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Xml.Schema;
-using System.Security.Permissions;
 
 public class Test
 {
+    public class DownloadAuthorization { }
 
-public class DownloadAuthorization{}
+    static void Main()
+    {
+        Console.WriteLine("Hello");
+    }
 
-static void Main()
-{
-    Console.WriteLine("Hello");
-}
-
-//<snippet1>
+    //<snippet1>
     [WebMethod]
-    [System.Web.Services.Protocols.SoapDocumentMethodAttribute
-    (ParameterStyle= SoapParameterStyle.Bare)]
+    [SoapDocumentMethod(ParameterStyle = SoapParameterStyle.Bare)]
     public SongStream DownloadSong(DownloadAuthorization Authorization, string filePath)
     {
-
-    // Turn off response buffering.
-    System.Web.HttpContext.Current.Response.Buffer = false;
-    // Return a song.
-    SongStream song = new SongStream(filePath);
-    return song;
+        // Turn off response buffering.
+        System.Web.HttpContext.Current.Response.Buffer = false;
+        // Return a song.
+        SongStream song = new SongStream(filePath);
+        return song;
     }
-//</snippet1>
+    //</snippet1>
 }
 
 //<snippet2>
 [XmlSchemaProvider("MySchema")]
 public class SongStream : IXmlSerializable
 {
-
     private const string ns = "http://demos.Contoso.com/webservices";
     private string filePath;
 
-    public SongStream(){ }
+    public SongStream() { }
 
     public SongStream(string filePath)
     {
-     this.filePath = filePath;
+        this.filePath = filePath;
     }
 
     // This is the method named by the XmlSchemaProviderAttribute applied to the type.
     public static XmlQualifiedName MySchema(XmlSchemaSet xs)
     {
-     // This method is called by the framework to get the schema for this type.
-     // We return an existing schema from disk.
+        // This method is called by the framework to get the schema for this type.
+        // We return an existing schema from disk.
 
-     XmlSerializer schemaSerializer = new XmlSerializer(typeof(XmlSchema));
-     string xsdPath = null;
-     // NOTE: replace the string with your own path.
-     xsdPath = System.Web.HttpContext.Current.Server.MapPath("SongStream.xsd");
-     XmlSchema s = (XmlSchema)schemaSerializer.Deserialize(
-         new XmlTextReader(xsdPath), null);
-     xs.XmlResolver = new XmlUrlResolver();
-     xs.Add(s);
+        XmlSerializer schemaSerializer = new XmlSerializer(typeof(XmlSchema));
+        string xsdPath = null;
+        // NOTE: replace the string with your own path.
+        xsdPath = System.Web.HttpContext.Current.Server.MapPath("SongStream.xsd");
+        XmlSchema s = (XmlSchema)schemaSerializer.Deserialize(
+            new XmlTextReader(xsdPath), null);
+        xs.XmlResolver = new XmlUrlResolver();
+        xs.Add(s);
 
-     return new XmlQualifiedName("songStream", ns);
+        return new XmlQualifiedName("songStream", ns);
     }
 
     void IXmlSerializable.WriteXml(System.Xml.XmlWriter writer)
     {
-       // This is the chunking code.
-       // ASP.NET buffering must be turned off for this to work.
+        // This is the chunking code.
+        // ASP.NET buffering must be turned off for this to work.
 
-     int bufferSize = 4096;
-     char[] songBytes = new char[bufferSize];
-     FileStream inFile = File.Open(this.filePath, FileMode.Open, FileAccess.Read);
+        int bufferSize = 4096;
+        char[] songBytes = new char[bufferSize];
+        FileStream inFile = File.Open(this.filePath, FileMode.Open, FileAccess.Read);
 
-     long length = inFile.Length;
+        long length = inFile.Length;
 
-     // Write the file name.
-     writer.WriteElementString("fileName", ns, Path.GetFileNameWithoutExtension(this.filePath));
+        // Write the file name.
+        writer.WriteElementString("fileName", ns, Path.GetFileNameWithoutExtension(this.filePath));
 
-     // Write the size.
-     writer.WriteElementString("size", ns, length.ToString());
+        // Write the size.
+        writer.WriteElementString("size", ns, length.ToString());
 
-     // Write the song bytes.
-     writer.WriteStartElement("song", ns);
+        // Write the song bytes.
+        writer.WriteStartElement("song", ns);
 
-     StreamReader sr = new StreamReader(inFile, true);
-     int readLen = sr.Read(songBytes, 0, bufferSize);
+        StreamReader sr = new StreamReader(inFile, true);
+        int readLen = sr.Read(songBytes, 0, bufferSize);
 
-     while (readLen > 0)
-     {
-         writer.WriteStartElement("chunk", ns);
-         writer.WriteChars(songBytes, 0, readLen);
-         writer.WriteEndElement();
+        while (readLen > 0)
+        {
+            writer.WriteStartElement("chunk", ns);
+            writer.WriteChars(songBytes, 0, readLen);
+            writer.WriteEndElement();
 
-         writer.Flush();
-         readLen = sr.Read(songBytes, 0, bufferSize);
-     }
+            writer.Flush();
+            readLen = sr.Read(songBytes, 0, bufferSize);
+        }
 
-     writer.WriteEndElement();
-     inFile.Close();
+        writer.WriteEndElement();
+        inFile.Close();
     }
 
-    System.Xml.Schema.XmlSchema IXmlSerializable.GetSchema()
+    XmlSchema IXmlSerializable.GetSchema()
     {
-     throw new System.NotImplementedException();
+        throw new NotImplementedException();
     }
 
     void IXmlSerializable.ReadXml(System.Xml.XmlReader reader)
     {
-     throw new System.NotImplementedException();
+        throw new NotImplementedException();
     }
 }
 //</snippet2>
@@ -160,26 +154,26 @@ public class SongFile : IXmlSerializable
         string songBase64;
         byte[] songBytes;
         reader.ReadStartElement("song", ns);
-        double totalRead=0;
-        while(true)
+        double totalRead = 0;
+        while (true)
         {
             if (reader.IsStartElement("chunk", ns))
             {
-                  songBase64 = reader.ReadElementString();
-                  totalRead += songBase64.Length;
-                  songBytes = Convert.FromBase64String(songBase64);
-                  outFile.Write(songBytes, 0, songBytes.Length);
-                  outFile.Flush();
+                songBase64 = reader.ReadElementString();
+                totalRead += songBase64.Length;
+                songBytes = Convert.FromBase64String(songBase64);
+                outFile.Write(songBytes, 0, songBytes.Length);
+                outFile.Flush();
 
-                  if (OnProgress != null)
-                  {
-                      OnProgress(100 * (totalRead / size));
-                  }
+                if (OnProgress != null)
+                {
+                    OnProgress(100 * (totalRead / size));
+                }
             }
 
             else
             {
-                  break;
+                break;
             }
         }
 
@@ -187,20 +181,19 @@ public class SongFile : IXmlSerializable
         reader.ReadEndElement();
     }
 
-    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
     public void Play()
     {
         System.Diagnostics.Process.Start(this.filePath);
     }
 
-    System.Xml.Schema.XmlSchema IXmlSerializable.GetSchema()
+    XmlSchema IXmlSerializable.GetSchema()
     {
-        throw new System.NotImplementedException();
+        throw new NotImplementedException();
     }
 
     public void WriteXml(XmlWriter writer)
     {
-        throw new System.NotImplementedException();
+        throw new NotImplementedException();
     }
 }
 //</snippet3>

@@ -7,11 +7,14 @@ dev_langs:
   - "vb"
 ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
 ---
-# How to: Perform an XSLT Transformation by Using an Assembly
+# How to: Perform an XSLT transformation by using an assembly
 
-The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The assembly can be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method.  
+> [!NOTE]
+> Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
+
+The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The assembly can be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load(System.Type)?displayProperty=nameWithType> method.  
   
-### To copy the XML and XSLT files to your local computer  
+## To copy the XML and XSLT files to your local computer  
   
 - Copy the XSLT file to your local computer and name it Transform.xsl.  
   
@@ -123,21 +126,21 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
     </catalog>  
     ```  
   
-### To compile the style sheet with the script enabled.  
+## To compile the style sheet with the script enabled
   
-1. Executing the following command from the command line creates two assemblies named `Transform.dll` and `Transform_Script1.dll` (This is the default behavior. Unless otherwise specified, the name of the class and the assembly defaults to the name of the main style sheet):  
+The following command creates two assemblies named `Transform.dll` and `Transform_Script1.dll`. This is the default behavior. Unless otherwise specified, the name of the class and the assembly defaults to the name of the main style sheet.  
   
-    ```console  
-    xsltc /settings:script+ Transform.xsl  
-    ```
+```console
+xsltc /settings:script+ Transform.xsl  
+```
   
-    The following command explicitly sets the class name to Transform:  
+The following command explicitly sets the class name to Transform:  
+
+```console  
+xsltc /settings:script+ /class:Transform Transform.xsl  
+```  
   
-    ```console  
-    xsltc /settings:script+ /class:Transform Transform.xsl  
-    ```  
-  
-### To include the compiled assembly as a reference when you compile your code.  
+## To include the compiled assembly as a reference when you compile your code
   
 1. You can include an assembly in Visual Studio by adding a reference in the Solution Explorer, or from the command line.  
   
@@ -153,7 +156,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
     vbc myCode.vb /r:system.dll;system.xml.dll;Transform.dll  
     ```  
   
-### To use the compiled assembly in your code.  
+## To use the compiled assembly in your code
   
 The following example shows how to execute the XSLT transformation by using the compiled style sheet.  
   
@@ -172,7 +175,7 @@ with
 xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"));  
 ```
   
-in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>.  
+For more information on the `Assembly.Load` method, see <xref:System.Reflection.Assembly.Load%2A>.  
   
 ## See also
 

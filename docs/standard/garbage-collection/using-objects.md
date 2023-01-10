@@ -36,7 +36,7 @@ The following example uses the `using` statement to create and release a <xref:S
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/UsingStatement.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/UsingStatement.vb":::
 
-With C# 8, a [`using` declaration](../../csharp/whats-new/csharp-8.md#using-declarations) is an alternative syntax available where the braces are removed, and scoping is implicit.
+A [`using` declaration](../../csharp/language-reference/keywords/using-statement.md) is an alternative syntax available where the braces are removed, and scoping is implicit.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/UsingDeclaration.cs":::
 

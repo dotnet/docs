@@ -53,7 +53,7 @@ typedef enum CorUnmanagedCallingConvention {
   
 ## Remarks  
 
- The CLR does not support the "fast" calling convention in the .NET Framework version 1.0.  
+ The CLR does not support the "fast" calling convention in .NET Framework version 1.0.  
   
 ## Requirements  
 

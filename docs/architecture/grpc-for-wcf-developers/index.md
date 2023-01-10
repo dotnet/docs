@@ -60,12 +60,14 @@ This is a short introduction to building gRPC Services in ASP.NET Core 6.0, with
 
 Feel free to forward this guide to your team to help ensure a common understanding of these considerations and opportunities. Having everybody working from a common set of terms and underlying principles helps ensure consistent application of architectural patterns and practices.
 
+[!INCLUDE [feedback](../includes/feedback.md)]
+
 ## References
 
 - **gRPC website**
   <https://grpc.io>
 - **Choosing between .NET 5 and .NET Framework for server apps**
-  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
+  [https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

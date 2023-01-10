@@ -76,6 +76,7 @@ Providing a `ComWrappers` subclass means giving enough information to the .NET r
 To extend the `ComWrappers` type, you must implement the following three methods. Each of these methods represents the user's participation in the creation or deletion of a type of wrapper. The [`ComputeVtables()`](xref:System.Runtime.InteropServices.ComWrappers.ComputeVtables%2A) and [`CreateObject()`](xref:System.Runtime.InteropServices.ComWrappers.CreateObject%2A) methods create a Managed Object Wrapper and Native Object Wrapper, respectively. The [`ReleaseObjects()`](xref:System.Runtime.InteropServices.ComWrappers.ReleaseObjects%2A) method is used by the runtime to make a request for the supplied collection of wrappers to be "released" from the underlying native object. In most cases, the body of the `ReleaseObjects()` method can simply throw <xref:System.NotImplementedException>, since it's only called in an advanced scenario involving the [Reference Tracker framework][api_referencetracker].
 
 ```csharp
+// See referenced sample for implementation.
 class DemoComWrappers : ComWrappers
 {
     protected override unsafe ComInterfaceEntry* ComputeVtables(object obj, CreateComInterfaceFlags flags, out int count) =>
@@ -206,6 +207,7 @@ Constructing a Native Object Wrapper has more implementation options and a great
 Let's look at the static implementation first. The static Native Object Wrapper involves defining a managed type that implements the .NET interfaces and can forward the calls on the managed type to the COM instance. A rough outline of the static wrapper follows.
 
 ```csharp
+// See referenced sample for implementation.
 class DemoNativeStaticWrapper
     : IDemoGetType
     , IDemoStoreType
@@ -246,6 +248,7 @@ return new DemoNativeStaticWrapper()
 Dynamic wrappers are more flexible because they provide a way for types to be queried at run time instead of statically. In order to provide this support, you'll utilize [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable] &ndash; further details can be found [here][doc_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance to determine what type is supported at run time. The source for this tutorial does a static check during creation but that is simply for code sharing since the check could be deferred until a call is made to `DemoNativeDynamicWrapper.IsInterfaceImplemented()`.
 
 ```csharp
+// See referenced sample for implementation.
 internal class DemoNativeDynamicWrapper
     : IDynamicInterfaceCastable
 {
@@ -462,7 +465,6 @@ Aside from the lifetime, type system, and functional features that are discussed
 [api_comwrappers_getiunknownimpl]:/dotnet/api/system.runtime.interopservices.comwrappers.getiunknownimpl
 [api_comwrappers_getorregisterobjectforcominstance]:/dotnet/api/system.runtime.interopservices.comwrappers.getorregisterobjectforcominstance
 [api_cominterfaceentry]:/dotnet/api/system.runtime.interopservices.comwrappers.cominterfaceentry
-[api_dynamicinterfacecastableimplementation]:/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
 [api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
 [api_iunknown]:/windows/win32/api/unknwn/nn-unknwn-iunknown
 [api_marshalqueryinterface]:/dotnet/api/system.runtime.interopservices.marshal.queryinterface
@@ -476,9 +478,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 [doc_garbage_collection]:../garbage-collection/index.md
 [doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
 [doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown
-[doc_nullable]:../../csharp/nullable-references.md
 [doc_unloadability]:../assembly/unloadability.md
-[doc_unsafekeyword]:../../csharp/language-reference/keywords/unsafe.md
 
 [repo_cswinrt]:https://github.com/microsoft/CsWinRT
 

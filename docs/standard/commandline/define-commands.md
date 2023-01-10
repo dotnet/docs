@@ -210,7 +210,7 @@ Options:
 
 ## Option and argument validation
 
-For information about argument validation and how to customize it, see the following sections in the [Model binding](model-binding.md) article:
+For information about argument validation and how to customize it, see the following sections in the [Parameter binding](model-binding.md) article:
 
 * [Built-in type and arity argument validation](model-binding.md#built-in-argument-validation)
 * [Custom validation and binding](model-binding.md#custom-validation-and-binding)
@@ -218,4 +218,4 @@ For information about argument validation and how to customize it, see the follo
 ## See also
 
 * [System.CommandLine overview](index.md)
-* [Model binding](model-binding.md)
+* [Parameter binding](model-binding.md)

@@ -6,7 +6,6 @@ Imports System.Security.Permissions
 Imports System.ServiceModel.Description
 Imports System.Configuration
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 Namespace Windows.Communication.Foundation.Samples
 

@@ -8,7 +8,7 @@ ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 
 An *iterator* can be used to step through collections such as lists and arrays.
 
-An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
+An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/statements/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
 
 You consume an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement or by using a LINQ query.
 
@@ -354,6 +354,5 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
-- [yield](../../language-reference/keywords/yield.md)
 - [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
 - [Generics](../../fundamentals/types/generics.md)

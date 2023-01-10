@@ -52,7 +52,7 @@ The preceding source code example:
 The preceding source code example:
 
 - Instantiates a string array with three values.
-- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations).
+- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../language-reference/keywords/using-statement.md).
 - Iterates through all the lines.
 - Conditionally awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the line to the file when the line doesn't contain `"Second"`.
 
@@ -63,7 +63,7 @@ The preceding source code example:
 The preceding source code example:
 
 - Instantiates a string array with three values.
-- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations), passing in `true` to append.
+- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../language-reference/keywords/using-statement.md), passing in `true` to append.
 - Awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the string to the file as an appended line.
 
 ## Exceptions

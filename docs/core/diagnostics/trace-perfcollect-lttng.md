@@ -71,6 +71,13 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > export DOTNET_EnableEventLog=1
     > ```
 
+    > [!NOTE]
+    > When executing the app with .NET 7, you must also set `DOTNET_EnableWriteXorExecute=0` in addition to the preceding environment variables.  For example:
+    >
+    > ```bash
+    > export DOTNET_EnableWriteXorExecute=0
+    > ```
+
    [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
@@ -158,6 +165,9 @@ For more information on how to interpret views in PerfView, see help links in th
 
 > [!NOTE]
 > Events written via <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> API (including the events from Framework) won't show up under their provider name. Instead, they are written as `EventSourceEvent` events under `Microsoft-Windows-DotNETRuntime` provider and their payloads are JSON serialized.
+
+> [!NOTE]
+> If you observe `[unknown] /memfd:doublemapper` frames in method names and callstacks, set `DOTNET_EnableWriteXorExecute=0` before running the app that you're tracing with perfcollect.
 
 ### Use TraceCompass to open the trace file
 

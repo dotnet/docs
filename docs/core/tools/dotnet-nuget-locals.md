@@ -6,7 +6,7 @@ ms.date: 02/14/2020
 ---
 # dotnet nuget locals
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -36,8 +36,6 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
   * `temp` - Indicates that the specified operation is applied only to the temporary cache. The other cache locations aren't affected.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 - **`--force-english-output`**
 

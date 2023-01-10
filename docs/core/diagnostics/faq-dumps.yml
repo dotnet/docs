@@ -1,0 +1,35 @@
+### YamlMime:FAQ
+metadata:
+  title: .NET dumps FAQ
+  description: Get answers to frequently asked questions about dumps in .NET.
+  ms.topic: faq
+  ms.date: 10/07/2022
+title: FAQ for dumps
+summary: This article answers commonly asked questions about collecting dumps in .NET.
+ 
+sections: 
+  - name: Collecting dumps on macOS and Linux 
+    questions: 
+      - question: |
+          Why do I only get dumps on Linux if [dotnet-dump](dotnet-dump.md) or my [crashing process](dumps.md#collect-dumps-on-crash) is running elevated?
+        answer: | 
+          On Linux-based systems, `/proc/sys/kernel/ptrace_scope` controls who can call `ptrace` and what processes they can trace. We recommend it being set to `1` - meaning only processes in the same ancestry chain can use traced. Any value higher than this requires elevation or might disable `ptrace` altogether.  
+
+      - question: |
+          Why can't I collect dumps when running inside a container?
+        answer: |
+          For applications running under any Open Container Initiative technology, the `seccomp` profile must allow for calls to `ptrace`. For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing the runtime, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified.
+           
+      - question: |
+           Why can't I collect dumps on macOS?
+        answer: |
+            On macOS the use of `ptrace` requires the host of the target process to be properly entitled. For information about the minimum required entitlements, see [Default entitlements](../install/macos-notarization-issues.md#default-entitlements).
+      
+      - question: |
+          Where can I learn more about how I can leverage dumps to help diagnose problems in my .NET application?
+        answer: | 
+          Here are some additional resources:
+
+          * [Debug Linux dumps](debug-linux-dumps.md) 
+          * [Debug a deadlock in a .NET app](debug-deadlock.md) 
+       

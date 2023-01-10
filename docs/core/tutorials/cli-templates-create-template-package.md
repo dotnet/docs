@@ -140,10 +140,10 @@ Copyright (C) Microsoft Corporation. All rights reserved.
   Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 
-Next, install the template package with the `dotnet new --install PATH_TO_NUPKG_FILE` command.
+Next, install the template package with the `dotnet new install` command.
 
 ```console
-C:\working> dotnet new -i C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+C:\working> dotnet new install C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 The following template packages will be installed:
    C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 
@@ -154,33 +154,15 @@ Example templates: string extensions              stringext                [C#] 
 Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 ```
 
-If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new --install PACKAGEID` command where `PACKAGEID` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
+If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new install <PACKAGE_ID>` command where `<PACKAGE_ID>` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
 
 ## Uninstall the template package
 
-No matter how you installed the template package, either with the _.nupkg_ file directly or by NuGet feed, removing a template package is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new --uninstall` command.
+No matter how you installed the template package, either with the _.nupkg_ file directly or by NuGet feed, removing a template package is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new uninstall` command.
 
 ```dotnetcli
-C:\working> dotnet new --uninstall
-
-Template Instantiation Commands for .NET CLI
-
+C:\working> dotnet new uninstall
 Currently installed items:
-  Microsoft.DotNet.Common.ProjectTemplates.2.2
-    Details:
-      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
-      Version: 1.0.2-beta4
-      Author: Microsoft
-    Templates:
-      Class library (classlib) C#
-      Class library (classlib) F#
-      Class library (classlib) VB
-      Console Application (console) C#
-      Console Application (console) F#
-      Console Application (console) VB
-    Uninstall Command:
-      dotnet new --uninstall  Microsoft.DotNet.Common.ProjectTemplates.2.2
-
 ... cut to save space ...
 
   AdatumCorporation.Utility.Templates
@@ -192,10 +174,10 @@ Currently installed items:
       Example templates: async project (consoleasync) C#
       Example templates: string extensions (stringext) C#
     Uninstall Command:
-      dotnet new --uninstall AdatumCorporation.Utility.Templates
+      dotnet new uninstall AdatumCorporation.Utility.Templates
 ```
 
-Run `dotnet new --uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
+Run `dotnet new uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
 
 Congratulations! You've installed and uninstalled a template package.
 

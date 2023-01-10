@@ -3,8 +3,6 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Xml;
 using System.Security.Permissions;
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 //<snippet1>
 namespace DataContractAttributeExample
 {

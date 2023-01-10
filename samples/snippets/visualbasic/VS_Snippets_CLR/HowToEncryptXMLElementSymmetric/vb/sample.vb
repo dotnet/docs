@@ -3,9 +3,6 @@ Imports System.Xml
 Imports System.Security.Cryptography
 Imports System.Security.Cryptography.Xml
 
-
-
-
 Module Program
 
     Sub Main(ByVal args() As String)
@@ -26,13 +23,11 @@ Module Program
             Encrypt(xmlDoc, "creditcard", key)
 
             Console.WriteLine("The element was encrypted")
-
             Console.WriteLine(xmlDoc.InnerXml)
 
             Decrypt(xmlDoc, key)
 
             Console.WriteLine("The element was decrypted")
-
             Console.WriteLine(xmlDoc.InnerXml)
 
 
@@ -50,15 +45,10 @@ Module Program
 
     Sub Encrypt(ByVal Doc As XmlDocument, ByVal ElementName As String, ByVal Key As SymmetricAlgorithm)
         ' Check the arguments.  
-        If Doc Is Nothing Then
-            Throw New ArgumentNullException("Doc")
-        End If
-        If ElementName Is Nothing Then
-            Throw New ArgumentNullException("ElementToEncrypt")
-        End If
-        If Key Is Nothing Then
-            Throw New ArgumentNullException("Alg")
-        End If
+        ArgumentNullException.ThrowIfNull(Doc)
+        ArgumentNullException.ThrowIfNull(ElementName)
+        ArgumentNullException.ThrowIfNull(Key)
+
         ''''''''''''''''''''''''''''''''''''''''''''''''''
         ' Find the specified element in the XmlDocument
         ' object and create a new XmlElemnt object.

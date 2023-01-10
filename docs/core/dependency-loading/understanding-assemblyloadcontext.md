@@ -1,10 +1,10 @@
 ---
-title: Understanding AssemblyLoadContext - .NET
+title: About AssemblyLoadContext - .NET
 description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET.
-ms.date: 08/09/2019
+ms.date: 08/18/2022
 author: sdmaclea
 ---
-# Understanding System.Runtime.Loader.AssemblyLoadContext
+# About System.Runtime.Loader.AssemblyLoadContext
 
 The <xref:System.Runtime.Loader.AssemblyLoadContext> class was introduced in .NET Core and is not available in .NET Framework. This article supplements the <xref:System.Runtime.Loader.AssemblyLoadContext> API documentation with conceptual information.
 
@@ -15,27 +15,28 @@ This article is relevant to developers implementing dynamic loading, especially 
 Every .NET 5+ and .NET Core application implicitly uses <xref:System.Runtime.Loader.AssemblyLoadContext>.
 It's the runtime's provider for locating and loading dependencies. Whenever a dependency is loaded, an <xref:System.Runtime.Loader.AssemblyLoadContext> instance is invoked to locate it.
 
-- It provides a service of locating, loading, and caching managed assemblies and other dependencies.
-
+- AssemblyLoadContext provides a service of locating, loading, and caching managed assemblies and other dependencies.
 - To support dynamic code loading and unloading, it creates an isolated context for loading code and its dependencies in their own <xref:System.Runtime.Loader.AssemblyLoadContext> instance.
+
+## Versioning rules
+
+A single <xref:System.Runtime.Loader.AssemblyLoadContext> instance is limited to loading exactly one version of an <xref:System.Reflection.Assembly> per [simple assembly name](xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType). When an assembly reference is resolved against an <xref:System.Runtime.Loader.AssemblyLoadContext> instance that already has an assembly of that name loaded, the requested version is compared to the loaded version. The resolution will succeed only if the loaded version is equal or higher to the requested version.
 
 ## When do you need multiple AssemblyLoadContext instances?
 
-A single <xref:System.Runtime.Loader.AssemblyLoadContext> instance is limited to loading exactly one version of an <xref:System.Reflection.Assembly> per simple assembly name, <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType>.
+The restriction that a single <xref:System.Runtime.Loader.AssemblyLoadContext> instance can load only one version of an assembly can become a problem when loading code modules dynamically. Each module is independently compiled, and the modules may depend on different versions of an <xref:System.Reflection.Assembly>. This is often a problem when different modules depend on different versions of a commonly used library.
 
-This restriction can become a problem when loading code modules dynamically. Each module is independently compiled and may depend on different versions of an <xref:System.Reflection.Assembly>. This problem commonly occurs when different modules depend on different versions of a commonly used library.
-
-To support dynamically loading code, the <xref:System.Runtime.Loader.AssemblyLoadContext> API provides for loading conflicting versions of an <xref:System.Reflection.Assembly> in the same application. Each <xref:System.Runtime.Loader.AssemblyLoadContext> instance provides a unique dictionary mapping each <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> to a specific <xref:System.Reflection.Assembly> instance.
+To support dynamically loading code, the <xref:System.Runtime.Loader.AssemblyLoadContext> API provides for loading conflicting versions of an <xref:System.Reflection.Assembly> in the same application. Each <xref:System.Runtime.Loader.AssemblyLoadContext> instance provides a unique dictionary that maps each <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> to a specific <xref:System.Reflection.Assembly> instance.
 
 It also provides a convenient mechanism for grouping dependencies related to a code module for later unload.
 
-## What is special about the AssemblyLoadContext.Default instance?
+## The AssemblyLoadContext.Default instance
 
 The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance is automatically populated by the runtime at startup. It uses [default probing](default-probing.md) to locate and find all static dependencies.
 
 It solves the most common dependency loading scenarios.
 
-## How does AssemblyLoadContext support dynamic dependencies?
+## Dynamic dependencies
 
 <xref:System.Runtime.Loader.AssemblyLoadContext> has various events and virtual functions that can be overridden.
 
@@ -65,7 +66,7 @@ In each <xref:System.Runtime.Loader.AssemblyLoadContext>:
 - <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> may refer to a different <xref:System.Reflection.Assembly> instance.
 - <xref:System.Type.GetType%2A?displayProperty=nameWithType> may return a different type instance for the same type `name`.
 
-## How are dependencies shared?
+## Shared dependencies
 
 Dependencies can easily be shared between <xref:System.Runtime.Loader.AssemblyLoadContext> instances. The general model is for one <xref:System.Runtime.Loader.AssemblyLoadContext> to load a dependency.  The other shares the dependency by using a reference to the loaded assembly.
 
@@ -75,9 +76,7 @@ It's recommended that shared dependencies be loaded into <xref:System.Runtime.Lo
 
 Sharing is implemented in the coding of the custom <xref:System.Runtime.Loader.AssemblyLoadContext> instance. <xref:System.Runtime.Loader.AssemblyLoadContext> has various events and virtual functions that can be overridden. When any of these functions return a reference to an <xref:System.Reflection.Assembly> instance that was loaded in another <xref:System.Runtime.Loader.AssemblyLoadContext> instance, the <xref:System.Reflection.Assembly> instance is shared. The standard load algorithm defers to <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> for loading to simplify the common sharing pattern. For more information, see [Managed assembly loading algorithm](loading-managed.md).
 
-## Complications
-
-### Type conversion issues
+## Type-conversion issues
 
 When two <xref:System.Runtime.Loader.AssemblyLoadContext> instances contain type definitions with the same `name`, they're not the same type. They're the same type if and only if they come from the same <xref:System.Reflection.Assembly> instance.
 
@@ -85,7 +84,7 @@ To complicate matters, exception messages about these mismatched types can be co
 
 > Object of type 'IsolatedType' cannot be converted to type 'IsolatedType'.
 
-### Debugging type conversion issues
+### Debug type-conversion issues
 
 Given a pair of mismatched types, it's important to also know:
 
@@ -103,10 +102,10 @@ System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(a.GetType().Assembly)
 System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(b.GetType().Assembly)
 ```
 
-### Resolving type conversion issues
+### Resolve type-conversion issues
 
 There are two design patterns for solving these type conversion issues.
 
-1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. For more information, read about [how dependencies are shared](#how-are-dependencies-shared).
+1. Use common shared types. This shared type can either be a primitive runtime type, or it can involve creating a new shared type in a shared assembly.  Often the shared type is an [interface](../../csharp/language-reference/keywords/interface.md) defined in an application assembly. For more information, read about [how dependencies are shared](#shared-dependencies).
 
 2. Use marshalling techniques to convert from one type to another.

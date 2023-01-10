@@ -15,19 +15,32 @@ ms.date: 03/17/2022
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
-    [-a|--test-adapter-path <ADAPTER_PATH>] [--arch <ARCHITECTURE>]
-    [--blame] [--blame-crash]
-    [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
-    [--blame-hang] [--blame-hang-dump-type <DUMP_TYPE>]
+    [--test-adapter-path <ADAPTER_PATH>] 
+    [-a|--arch <ARCHITECTURE>]
+    [--blame]
+    [--blame-crash]
+    [--blame-crash-dump-type <DUMP_TYPE>]
+    [--blame-crash-collect-always]
+    [--blame-hang]
+    [--blame-hang-dump-type <DUMP_TYPE>]
     [--blame-hang-timeout <TIMESPAN>]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_NAME>]
-    [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
-    [--filter <EXPRESSION>] [--interactive]
-    [-l|--logger <LOGGER>] [--no-build]
-    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
-    [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
-    [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
+    [-d|--diag <LOG_FILE>]
+    [-f|--framework <FRAMEWORK>]
+    [-e|--environment <NAME="VALUE">]
+    [--filter <EXPRESSION>]
+    [--interactive]
+    [-l|--logger <LOGGER>]
+    [--no-build]
+    [--nologo]
+    [--no-restore]
+    [-o|--output <OUTPUT_DIRECTORY>]
+    [--os <OS>]
+    [--results-directory <RESULTS_DIR>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--settings <SETTINGS_FILE>]
+    [-t|--list-tests]
     [-v|--verbosity <LEVEL>]
     [<args>...]
     [[--] <RunSettings arguments>]
@@ -67,17 +80,25 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
+> [!WARNING]
+> Breaking changes in options:
+>
+> - Starting in .NET 7: switch `-a` to alias `--arch` instead of `--test-adapter-path`
+> - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-directory`
 
-- **`-a|--test-adapter-path <ADAPTER_PATH>`**
+- **`--test-adapter-path <ADAPTER_PATH>`**
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
+
+  Short form `-a` available in .NET SDK versions earlier than 7.
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
 - **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
+  
+  This option does not create a memory dump and is not helpful when the test is hanging.
 
 - **`--blame-crash`** (Available since .NET 5.0 SDK)
 
@@ -91,7 +112,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
 
-  The type of crash dump to be collected. Implies `--blame-crash`.
+  The type of crash dump to be collected. Supported dump types are `full` (default), and `mini`. Implies `--blame-crash`.
 
 - **`--blame-crash-collect-always`** (Available since .NET 5.0 SDK)
 
@@ -114,7 +135,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   - 5400s, 5400sec, 5400second, 5400seconds
   - 5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds
 
-  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
+  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit, NUnit. and MSTest 2.2.4+, the timeout is renewed after every test case. For MSTest before version 2.2.4, the timeout is used for all test cases. This option is supported on Windows with `netcoreapp2.1` and later, on Linux with `netcoreapp3.1` and later, and on macOS with `net5.0` or later. Implies `--blame` and `--blame-hang`.
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -122,21 +143,25 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
   
-  To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) and use the `--collect:"XPlat Code Coverage"` option.
+  For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).  
 
-  On Windows, you can collect code coverage by using the `--collect "Code Coverage"` option. This option generates a *.coverage* file, which can be opened in Visual Studio 2019 Enterprise. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).
+  To collect code coverage you can also use [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) by using the `--collect "XPlat Code Coverage"` option.
 
 - **`-d|--diag <LOG_FILE>`**
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
+- **`-e|--environment <NAME="VALUE">`**
+
+  Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
+  
 - **`-f|--framework <FRAMEWORK>`**
 
   The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
 
 - **`--filter <EXPRESSION>`**
 
-  Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+  Filters tests in the current project using the given expression. Only tests that match the filter expression are run. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -144,11 +169,20 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results. Unlike MSBuild, `dotnet test` doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
+  Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
+  
+  In order to pass command-line switches to the logger:
+  
+  * Use the full name of the switch, not the abbreviated form (for example, `verbosity` instead of `v`).
+  * Omit any leading dashes.
+  * Replace the space separating each switch with a semicolon `;`.
+  * If the switch has a value, replace the colon separator between that switch and its value with the equals sign `=`.
+  
+  For example, `-v:detailed --consoleLoggerParameters:ErrorsOnly` would become `verbosity=detailed;consoleLoggerParameters=ErrorsOnly`.
 
 - **`--no-build`**
 
-  Doesn't build the test project before running it. It also implicitly sets the - `--no-restore` flag.
+  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
 
 - **`--nologo`**
 
@@ -164,13 +198,17 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`-r|--results-directory <RESULTS_DIR>`**
+- **`--results-directory <RESULTS_DIR>`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
 
-- **`--runtime <RUNTIME_IDENTIFIER>`**
+  Short form `-r` available in .NET SDK versions earlier than 7.
+
+- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   The target runtime to test for.
+  
+  Short form `-r` available starting in .NET SDK 7.
 
 - **`-s|--settings <SETTINGS_FILE>`**
 

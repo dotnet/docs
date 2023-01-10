@@ -5,7 +5,6 @@ Imports System.Collections.Generic
 Imports System.IdentityModel.Claims
 Imports System.Security.Permissions
 '</snippet1>
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
     Friend Class Program
 

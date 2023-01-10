@@ -47,7 +47,7 @@ None.
   
 ## Remarks  
 
- Using this element in your application configuration file enables arrays that are larger than 2 GB in size, but does not change other limits on object size or array size:  
+ Using this element in your [application configuration file](../../index.md) enables arrays that are larger than 2 GB in size, but does not change other limits on object size or array size:  
   
 - The maximum number of elements in an array is <xref:System.UInt32.MaxValue?displayProperty=nameWithType>.  
   
@@ -60,7 +60,7 @@ None.
   
 ## Example  
 
- The following example shows how to enable this feature for an application.  
+ The following *app.config* file snippet shows how to enable this feature for a .NET Framework application.  
   
 ```xml  
 <configuration>  
@@ -76,5 +76,6 @@ None.
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

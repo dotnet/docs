@@ -1,7 +1,8 @@
 ---
 title: "How to: Compress and extract files"
 description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
-ms.date: "01/14/2019"
+ms.date: "08/10/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +14,7 @@ ms.assetid: e9876165-3c60-4c84-a272-513e47acf579
 ---
 # How to: Compress and extract files
 
-The <xref:System.IO.Compression> namespace contains the following types for compressing and decompressing files and streams. You can also use these types to read and modify the contents of a compressed file.
+The <xref:System.IO.Compression> namespace contains the following classes for compressing and decompressing files and streams. You also can use these types to read and modify the contents of a compressed file:
 
 - <xref:System.IO.Compression.ZipFile>
 - <xref:System.IO.Compression.ZipArchive>
@@ -33,7 +34,7 @@ If you're using .NET Framework, add references to these two libraries to your pr
 
 ## Example 1: Create and extract a .zip file
 
-The following example shows how to create and extract a compressed *.zip* file by using the <xref:System.IO.Compression.ZipFile> class. The example compresses the contents of a folder into a new *.zip* file, and then extracts the zip to a new folder.
+The following example shows how to create and extract a compressed *.zip* file by using the <xref:System.IO.Compression.ZipFile> class. The example compresses the contents of a folder into a new *.zip* file, and then extracts the file to a new folder.
 
 To run the sample, create a *start* folder in your program folder and populate it with files to zip.
 
@@ -42,19 +43,19 @@ To run the sample, create a *start* folder in your program folder and populate i
 
 ## Example 2: Extract specific file extensions
 
-The next example iterates through the contents of an existing *.zip* file and extracts files that have a *.txt* extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access the zip, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries. The extension method <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A> for the <xref:System.IO.Compression.ZipArchiveEntry> object is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=nameWithType> class.
+The following example iterates through the contents of an existing *.zip* file and extracts files with a *.txt* extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access the *.zip* file, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries. The extension method <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A> for the <xref:System.IO.Compression.ZipArchiveEntry> object is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=nameWithType> class.
 
 To run the sample, place a *.zip* file called *result.zip* in your program folder. When prompted, provide a folder name to extract to.
 
 > [!IMPORTANT]
-> When unzipping files, you must look for malicious file paths, which can escape out of the directory you unzip into. This is known as a path traversal attack. The following example demonstrates how to check for malicious file paths and provides a safe way to unzip.
+> When unzipping files, you must look for malicious file paths, which can escape from the directory you unzip into. This is known as a path traversal attack. The following example demonstrates how to check for malicious file paths and provides a safe way to unzip.
 
 [!code-csharp[System.IO.Compression.ZipArchive#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
 [!code-vb[System.IO.Compression.ZipArchive#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]
 
-## Example 3: Add a file to an existing zip
+## Example 3: Add a file to an existing .zip file
 
-The following example uses the <xref:System.IO.Compression.ZipArchive> class to access an existing *.zip* file, and adds a file to it. The new file gets compressed when you add it to the existing zip.
+The following example uses the <xref:System.IO.Compression.ZipArchive> class to access an existing *.zip* file, and adds a file to it. The new file gets compressed when you add it to the existing *.zip* file.
 
 [!code-csharp[System.IO.Compression.ZipArchiveMode#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchivemode/cs/program1.cs#1)]
 [!code-vb[System.IO.Compression.ZipArchiveMode#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchivemode/vb/program1.vb#1)]

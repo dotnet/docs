@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Default TLS cipher suites for .NET on Linux"
 description: Learn about the breaking change in .NET 5 where .NET, on Linux, now respects the OpenSSL configuration for default cipher suites when doing TLS/SSL.
-ms.date: 10/16/2020
+ms.date: 12/01/2022
 ---
 # Default TLS cipher suites for .NET on Linux
 
@@ -37,38 +37,70 @@ Users running .NET on Linux requested that the default configuration for <xref:S
 
 ## Recommended action
 
-The new defaults are likely to work when communicating with modern clients or servers. If you need to expand the default cipher suite list to accept legacy clients (or to contact legacy servers), either specify a `CipherSuitePolicy` value or change the OpenSSL configuration file. On many Linux distributions, the OpenSSL configuration file is at */etc/ssl/openssl.cnf*.
+The new defaults are likely to work when communicating with modern clients or servers. If you need to expand the default cipher suite list to accept legacy clients (or to contact legacy servers), use one of the following workarounds:
 
-This sample *openssl.cnf* file is a minimal file that's equivalent to the default cipher suites policy for .NET 5 and later on Linux. Instead of replacing the system file, merge these concepts with the file that's present on your system.
+- Specify a cryptography policy by configuring the <xref:System.Net.Security.CipherSuitesPolicy> type as it pertains to <xref:System.Net.Security.SslServerAuthenticationOptions.CipherSuitesPolicy?displayProperty=nameWithType> or <xref:System.Net.Security.SslClientAuthenticationOptions.CipherSuitesPolicy?displayProperty=nameWithType>.
 
-```ini
-openssl_conf = default_conf
+  ```csharp
+  var clientOpts = new SslClientAuthenticationOptions
+  {
+      // ...
+      CipherSuitesPolicy = new CipherSuitesPolicy(
+          new[]
+          {
+              TlsCipherSuite.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
+              TlsCipherSuite.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
+          }),
+  };
 
-[default_conf]
-ssl_conf = ssl_sect
+  using (SslStream sslStream = new SslStream(networkStream))
+  {
+      sslStream.AuthenticateAsClient(clientOptions);
+      // ...
+  }
+  ```
 
-[ssl_sect]
-system_default = system_default_sect
+  Or, for <xref:System.Net.Http.HttpClient>:
 
-[system_default_sect]
-CipherString = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256
-```
+  ```csharp
+  var handler = new SocketsHttpHandler
+  {
+      SslOptions =
+      {
+          CipherSuitesPolicy = new CipherSuitesPolicy(
+              new[]
+              {
+                  TlsCipherSuite.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
+                  TlsCipherSuite.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
+              }),
+      },
+  };
 
-On the Red Hat Enterprise Linux, CentOS, and Fedora distributions, .NET applications default to the cipher suites permitted by the system-wide cryptographic policies. On these distributions, use the crypto-policies configuration instead of *openssl.cnf*.
+  using (var httpClient = new HttpClient(handler))
+  {
+      // ...
+  }
+  ```
+
+- Change the OpenSSL configuration file. On many Linux distributions, the OpenSSL configuration file is at */etc/ssl/openssl.cnf*.
+
+  This sample *openssl.cnf* file is a minimal file that's equivalent to the default cipher suites policy for .NET 5 and later on Linux. Instead of replacing the system file, merge these concepts with the file that's present on your system.
+
+  ```ini
+  openssl_conf = default_conf
+
+  [default_conf]
+  ssl_conf = ssl_sect
+
+  [ssl_sect]
+  system_default = system_default_sect
+
+  [system_default_sect]
+  CipherString = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256
+  ```
+
+On the Red Hat Enterprise Linux, CentOS, and Fedora distributions, .NET applications default to the cipher suites permitted by the system-wide cryptographic policies. On these distributions, use the crypto-policies configuration instead of changing the OpenSSL configuration file.
 
 ## Affected APIs
 
-Not detectible via API analysis.
-
-<!--
-
-### Affected APIs
-
-- Not detectible via API analysis.
-
-### Category
-
-- Cryptography
-- Security
-
--->
+N/A

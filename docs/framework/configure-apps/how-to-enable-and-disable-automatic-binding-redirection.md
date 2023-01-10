@@ -31,7 +31,7 @@ If you have Visual Studio 2017 version 15.7 or later, you can disable autogenera
 
    If you don't see the option, you'll need to [manually disable](#disable-manually-in-the-project-file) the feature in the project file.
 
-3. Press **Ctrl**+**S** to save the change.
+3. Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the change.
 
 ### Disable manually in the project file
 
@@ -96,7 +96,7 @@ To add binding redirects to a **web.config** file:
 
    ![Build warning for assembly reference conflicts.](./media/clr-assemblyrefwarning.png)
 
-2. If there are assembly binding conflicts, a warning appears. Double-click the warning, or select the warning and press **Enter**.
+2. If there are assembly binding conflicts, a warning appears. Double-click the warning, or select the warning and press <kbd>Enter</kbd>.
 
    A dialog box that enables you to automatically add the necessary binding redirects to the source **web.config** file appears.
 

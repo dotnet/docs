@@ -20,7 +20,7 @@ To write queries effectively, you should understand how types of the variables i
   
  LINQ query operations are strongly typed in the data source, in the query itself, and in the query execution. The type of the variables in the query must be compatible with the type of the elements in the data source and with the type of the iteration variable in the `foreach` statement. This strong typing guarantees that type errors are caught at compile time when they can be corrected before users encounter them.  
   
- In order to demonstrate these type relationships, most of the examples that follow use explicit typing for all variables. The last example shows how the same principles apply even when you use implicit typing by using [var](../../../language-reference/keywords/var.md).  
+ In order to demonstrate these type relationships, most of the examples that follow use explicit typing for all variables. The last example shows how the same principles apply even when you use implicit typing by using [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables).  
   
 ## Queries that do not Transform the Source Data  
 
@@ -58,7 +58,7 @@ To write queries effectively, you should understand how types of the variables i
   
 ## Letting the compiler infer type information  
 
- Although you should understand the type relationships in a query operation, you have the option to let the compiler do all the work for you. The keyword [var](../../../language-reference/keywords/var.md) can be used for any local variable in a query operation. The following illustration is similar to example number 2 that was discussed earlier. However, the compiler supplies the strong type for each variable in the query operation.  
+ Although you should understand the type relationships in a query operation, you have the option to let the compiler do all the work for you. The keyword [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables) can be used for any local variable in a query operation. The following illustration is similar to example number 2 that was discussed earlier. However, the compiler supplies the strong type for each variable in the query operation.  
   
  ![Diagram that shows the type flow with implicit typing.](./media/type-relationships-in-linq-query-operations/linq-type-flow-implicit-typing.png)  
   

@@ -67,8 +67,6 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`-f|--framework <FRAMEWORK>`**
 
   Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).

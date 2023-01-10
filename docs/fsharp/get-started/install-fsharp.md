@@ -9,7 +9,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio
 
-1. If you're downloading [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for the first time, it will first install Visual Studio Installer. Install the appropriate edition of Visual Studio from the installer.
+1. If you're downloading [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for the first time, it will first install Visual Studio Installer. Install the appropriate edition of Visual Studio from the installer.
 
    If you already have Visual Studio installed, choose **Modify** next to the edition you want to add F# to.
 
@@ -21,7 +21,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio Code
 
-1. Ensure you have [git](https://git-scm.com/download) installed and available on your PATH. You can verify that it's installed correctly by entering `git --version` at a command prompt and pressing **Enter**.
+1. Ensure you have [git](https://git-scm.com/download) installed and available on your PATH. You can verify that it's installed correctly by entering `git --version` at a command prompt and pressing <kbd>Enter</kbd>.
 
 2. Install the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com).
 
@@ -31,7 +31,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio for Mac
 
-F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link), no matter which configuration you choose.
+F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link), no matter which configuration you choose.
 
 After the install completes, choose **Start Visual Studio**. You can also open Visual Studio through Finder on macOS.
 

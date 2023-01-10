@@ -1,7 +1,7 @@
 ---
 title: Dependency loading - .NET
 description: Overview of managed and unmanaged dependency loading in .NET 5+ and .NET Core
-ms.date: 08/09/2019
+ms.date: 08/18/2022
 author: sdmaclea
 ms.topic: overview
 ---
@@ -9,7 +9,7 @@ ms.topic: overview
 
 Every .NET application has dependencies. Even the simple `hello world` app has dependencies on portions of the .NET class libraries.
 
-Understanding .NET default assembly loading logic can help you troubleshoot typical deployment issues.
+Understanding the default assembly loading logic in .NET can help you troubleshoot typical deployment issues.
 
 In some applications, dependencies are dynamically determined at run time. In these situations, it's critical to understand how managed assemblies and unmanaged dependencies are loaded.
 
@@ -28,11 +28,11 @@ The loading algorithm details are covered briefly in several articles:
 
 ## Create an app with plugins
 
-The tutorial [Create a .NET Core application with plugins](../tutorials/creating-app-with-plugin-support.md) describes how to create a custom AssemblyLoadContext. It uses an <xref:System.Runtime.Loader.AssemblyDependencyResolver> to resolve the dependencies of the plugin. The tutorial correctly isolates the plugin's dependencies from the hosting application.
+The tutorial [Create a .NET application with plugins](../tutorials/creating-app-with-plugin-support.md) describes how to create a custom AssemblyLoadContext. It uses an <xref:System.Runtime.Loader.AssemblyDependencyResolver> to resolve the dependencies of the plugin. The tutorial correctly isolates the plugin's dependencies from the hosting application.
 
 ## Assembly unloadability
 
-The [How to use and debug assembly unloadability in .NET Core](../../standard/assembly/unloadability.md) article is a step-by-step tutorial. It shows how to load a .NET Core application, execute it, and then unload it. The article also provides debugging tips.
+The [How to use and debug assembly unloadability in .NET](../../standard/assembly/unloadability.md) article is a step-by-step tutorial. It shows how to load a .NET application, execute it, and then unload it. The article also provides debugging tips.
 
 ## Collect detailed assembly loading information
 

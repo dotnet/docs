@@ -9,7 +9,6 @@ Imports System.Net.Security
 Imports System.Runtime.Serialization
 Imports System.Xml.Schema
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Public Class Test
     Public Shared Sub Main()
         Try

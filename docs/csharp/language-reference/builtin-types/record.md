@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 02/25/2022
+ms.date: 07/23/2022
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -45,7 +45,7 @@ The preceding examples show some distinctions between records that are reference
 - A `record` or a `record class` declares a reference type. The `class` keyword is optional, but can add clarity for readers. A `record struct` declares a value type.
 - Positional properties are *immutable* in a `record class` and a `readonly record struct`. They're *mutable* in a `record struct`.
 
-The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively. The `record` type were introduced in C# 9; `record struct` types were introduced in C# 10.
+The remainder of this article discusses both `record class` and `record struct` types. The differences are detailed in each section. You should decide between a `record class` and a `record struct` similar to deciding between a `class` and a `struct`. The term *record* is used to describe behavior that applies to all record types. Either `record struct` or `record class` is used to describe behavior that applies to only struct or class types, respectively. The `record` type was introduced in C# 9; `record struct` types were introduced in C# 10.
 
 ## Positional syntax for property definition
 
@@ -93,7 +93,7 @@ The features unique to record types are implemented by compiler-synthesized meth
 
 ## Value equality
 
-For any type you define, you can override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>, and overload [`operator ==`](../operators/equality-operators.md#equality-operator-). If you don't override `Equals` or overload `operator ==`, the type you declare governs how equality is defined:
+If you don't override or replace equality methods, the type you declare governs how equality is defined:
 
 - For `class` types, two objects are equal if they refer to the same object in memory.
 - For `struct` types, two objects are equal if they are of the same type and store the same values.
@@ -107,21 +107,23 @@ The following example illustrates value equality of record types:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="Equality":::
 
-To implement value equality, the compiler synthesizes the following methods:
+To implement value equality, the compiler synthesizes several methods, including:
 
-* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>.
+* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It is an error if the override is declared explicitly.
 
   This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
-* A virtual `Equals` method whose parameter is the record type. This method implements <xref:System.IEquatable%601>.
+* A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. This method can be declared explicitly.
 
-* An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>.
+* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It is an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
 
-* Overrides of operators `==` and `!=`.
+* An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
 
-You can write your own implementations to replace any of these synthesized methods. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method.
+* Overrides of operators `==` and `!=`. It is an error if the operators are declared explicitly.
 
-If you provide your own implementation of `Equals` in a record type, provide an implementation of `GetHashCode` also.
+* If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. This property can be declared explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
+
+If a record type has a method that matches the signature of a synthesized method allowed to be declared explicitly, the compiler doesn't synthesize that method.
 
 ## Nondestructive mutation
 
@@ -145,7 +147,7 @@ Record types have a compiler-generated <xref:System.Object.ToString%2A> method t
 
 > \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
 
-The string printed for `<value>` is the string returned by the <xref:System.Object.ToString> for the type of the property. In the following example, `ChildNames`is a <xref:System.Array?displayProperty=nameWithType>, where `ToString` returns `System.String[]`:
+The string printed for `<value>` is the string returned by the <xref:System.Object.ToString> for the type of the property. In the following example, `ChildNames` is a <xref:System.Array?displayProperty=nameWithType>, where `ToString` returns `System.String[]`:
 
 ```
 Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] }

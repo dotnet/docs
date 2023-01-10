@@ -113,10 +113,12 @@ This guide has been condensed into a relatively small document that focuses on b
 
 Feel free to forward this guide to your team to help ensure a common understanding of these considerations and opportunities. Having everybody working from a common set of terminology and underlying principles helps ensure consistent application of architectural patterns and practices.
 
+[!INCLUDE [feedback](../includes/feedback.md)]
+
 ## References
 
 - **Choosing between .NET 6 and .NET Framework for server apps**  
-  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
+  [https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[Next](modern-web-applications-characteristics.md)

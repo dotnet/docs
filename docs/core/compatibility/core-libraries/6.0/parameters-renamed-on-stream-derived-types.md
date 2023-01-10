@@ -23,7 +23,7 @@ There are several reasons for the change:
 
 - If an invalid argument was passed and an exception was thrown, that exception might have contained the base parameter's name or the derived parameter's name, depending on the implementation. Since the caller may have been using a reference typed as the base or as the derived type, it's impossible for the argument name in the exception to always be correct.
 - Having different parameter names makes it harder to consistently validate behavior across all <xref:System.IO.Stream> implementations.
-- .NET 6 adds a public method on <xref:System.IO.Stream> for validating arguments, and that methods needs to have a consistent parameter name to use.
+- .NET 6 adds a public method on <xref:System.IO.Stream> for validating arguments, and that method needs to have a consistent parameter name to use.
 
 ## Recommended action
 

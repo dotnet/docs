@@ -12,7 +12,7 @@ ms.assetid: 0d07090c-9b47-4ecc-81d1-29d539603c9b
 ---
 # Reflection in the .NET Framework for Windows Store Apps
 
-Starting with the .NET Framework 4.5, the .NET Framework includes a set of reflection types and members for use in Windows 8.x Store apps. These types and members are available in the full .NET Framework as well as in the .NET for Windows Store apps. This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  
+Starting with .NET Framework 4.5, the .NET Framework includes a set of reflection types and members for use in Windows 8.x Store apps. These types and members are available in the full .NET Framework as well as in the .NET for Windows Store apps. This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  
   
  If you are creating a Windows 8.x Store app, you must use the reflection types and members in the .NET for Windows 8.x Store apps. These types and members are also available, but not required, for use in desktop apps, so you can use the same code for both types of apps.  
   

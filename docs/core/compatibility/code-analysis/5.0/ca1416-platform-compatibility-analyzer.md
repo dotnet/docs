@@ -88,7 +88,7 @@ public void PlayCMajor()
 
 If you don't want to fix all your call sites, you can choose one of the following options to suppress the warning:
 
-- To suppress rule CA1416, you can do so using `#pragma` or the [**DisabledWarnings**](../../../../csharp/language-reference/compiler-options/errors-warnings.md#disabledwarnings) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
+- To suppress rule CA1416, you can do so using `#pragma` or the [**NoWarn**](../../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
 
   ```csharp
   public void PlayCMajor()

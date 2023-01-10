@@ -1,15 +1,11 @@
 ﻿'<snippet0>
 Imports System.Collections.Generic
 Imports System.Text
-Imports System.Security.Permissions
 Imports System.Runtime.Serialization
 Imports System.ServiceModel
 Imports System.IO
 Imports System.Xml
-
 '</snippet0>
-
-<assembly: SecurityPermission(SecurityAction.RequestMinimum)>
 
 <DataContract()> _
 Public Class MyCar

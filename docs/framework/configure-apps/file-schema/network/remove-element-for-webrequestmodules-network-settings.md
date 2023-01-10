@@ -67,7 +67,7 @@ The following example removes the existing Web request module for HTTP and then 
 <configuration>  
   <system.net>  
     <webRequestModules>  
-      <remove prefix="http">  
+      <remove prefix="http" />  
       <add prefix="http"  
            type="System.Net.HttpRequestCreator, System, Version=2.0.3600.0,  
            Culture=neutral, PublicKeyToken=b77a5c561934e089"  

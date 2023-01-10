@@ -13,21 +13,23 @@
     items:
     - name: The ML.NET API
       href: how-does-mldotnet-work.md
+    - name: What is Automated Machine Learning (AutoML)?
+      href: automated-machine-learning-mlnet.md
 - name: Tutorials
   items:
   - name: Model Builder & CLI
     items:
-    - name: Predict prices (Model Builder & regression)
+    - name: Predict prices (Model Builder value prediction)
       href: tutorials/predict-prices-with-model-builder.md
     - name: Analyze sentiment using the ML.NET CLI
       href: tutorials/sentiment-analysis-cli.md
-    - name: Analyze sentiment in Razor Pages (Model Builder & binary classification)
+    - name: Analyze sentiment in Razor Pages (Model Builder text classification)
       href: tutorials/sentiment-analysis-model-builder.md
-    - name: Categorize health violations (Model Builder & multiclass classification)
+    - name: Categorize health violations (Model Builder data classification)
       href: tutorials/health-violation-classification-model-builder.md
-    - name: Categorize land use from satellite images (Model Builder & image classification)
+    - name: Categorize land use from satellite images (Model Builder image classification)
       href: tutorials/image-classification-model-builder.md
-    - name: Detect traffic signs (Model Builder & object detection)
+    - name: Detect traffic signs (Model Builder object detection)
       href: tutorials/object-detection-model-builder.md
     - name: Train a recommendation model using Model Builder
       href: tutorials/movie-recommendation-model-builder.md
@@ -67,10 +69,12 @@
   items:
   - name: ML.NET tasks
     href: resources/tasks.md
-  - name: Algorithms
-    href: how-to-choose-an-ml-net-algorithm.md
   - name: Data transforms
     href: resources/transforms.md
+  - name: Algorithms
+    href: how-to-choose-an-ml-net-algorithm.md
+  - name: Deep learning overview
+    href: deep-learning-overview.md
   - name: Model evaluation metrics
     href: resources/metrics.md
   - name: Improve model accuracy
@@ -89,8 +93,6 @@
       href: how-to-guides/install-gpu-model-builder.md
     - name: Install the CLI
       href: how-to-guides/install-ml-net-cli.md
-    - name: Use the automated ML API
-      href: how-to-guides/how-to-use-the-automl-api.md
   - name: API
     items:
     - name: Install extra dependencies
@@ -103,6 +105,8 @@
       items:
       - name: Train and evaluate a model
         href: how-to-guides/train-machine-learning-model-ml-net.md
+      - name: Use the automated ML API
+        href: how-to-guides/how-to-use-the-automl-api.md        
       - name: Train a model using cross-validation
         href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
       - name: Inspect intermediate pipeline data values

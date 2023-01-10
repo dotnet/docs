@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ServiceModel;
-using System.Security.Permissions;
 using System.Security.Cryptography.X509Certificates;
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
+
 namespace Samples
 {
     public class Test

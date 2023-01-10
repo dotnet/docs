@@ -15,11 +15,11 @@ class Program
         rootCommand.Add(fileOption);
 
         // <sethandler>
-        rootCommand.SetHandler(async (FileInfo fileOptionValue, ILogger logger) =>
-        {
-            await DoRootCommand(fileOptionValue, logger);
-        },
-        fileOption, new MyCustomBinder());
+        rootCommand.SetHandler(async (fileOptionValue, logger) =>
+            {
+                await DoRootCommand(fileOptionValue!, logger);
+            },
+            fileOption, new MyCustomBinder());
         // </sethandler>
 
         await rootCommand.InvokeAsync("--file scl.runtimeconfig.json");
@@ -40,7 +40,7 @@ class Program
 
         ILogger GetLogger(BindingContext bindingContext)
         {
-            var loggerFactory = LoggerFactory.Create(
+            ILoggerFactory loggerFactory = LoggerFactory.Create(
                 builder => builder.AddConsole());
             ILogger logger = loggerFactory.CreateLogger("LoggerCategory");
             return logger;

@@ -8,14 +8,14 @@ no-loc: ["EditorConfig"]
 
 Code analysis rules have various configuration options. Some of these options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`. Other options, which configure code analysis as a whole, are available as properties in your project file.
 
-The most common option you'll configure is a [rule's severity](#severity-level). You can configure the severity level for any rule, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md). For example, to enable a rule as a warning, add the following key-value pair to an [analyzer configuration file](configuration-files.md) file:
+The most common option you'll configure is a [rule's severity](#severity-level). You can configure the severity level for any rule, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md). For example, to enable a rule as a warning, add the following key-value pair to an [analyzer configuration file](configuration-files.md):
 
 `dotnet_diagnostic.<rule ID>.severity = warning`
 
 You can also configure additional options to customize rule behavior:
 
 - Code quality rules have [options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
-- Code style rules have [custom code style options](code-style-rule-options.md).
+- Code style rules have [options](code-style-rule-options.md) to define style preferences, such as where new lines are desirable.
 - Third-party analyzer rules can define their own configuration options, with custom key names and value formats.
 
 ## General options
@@ -94,7 +94,7 @@ The following table shows the different rule severities that you can configure f
 
 - **Category of rules**
 
-  To set the default rule severity for a category of rules, use the following syntax.
+  To set the default rule severity for a category of rules, use the following syntax. However, this severity setting only affects rules in that category that are enabled by default.
 
   ```ini
   dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
@@ -104,7 +104,7 @@ The following table shows the different rule severities that you can configure f
 
 - **All rules**
 
-  To set the default rule severity for all analyzer rules, use the following syntax.
+  To set the default rule severity for all analyzer rules, use the following syntax. However, this severity setting only affects rules that are enabled by default.
 
   ```ini
   dotnet_analyzer_diagnostic.severity = <severity value>
@@ -116,6 +116,9 @@ The following table shows the different rule severities that you can configure f
 > - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
 > - In .NET 6+, enable a category of rules by setting [\<AnalysisMode\<Category>>](../../core/project-sdk/msbuild-props.md#analysismodecategory) to `All`.
 > - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `All` or by setting [\<AnalysisLevel>](../../core/project-sdk/msbuild-props.md#analysislevel) to `latest-All`.
+
+> [!NOTE]
+> The prefix for setting severity for a single rule, `dotnet_diagnostic`, is slightly different than the prefix for configuring severity via category or for all rules, `dotnet_analyzer_diagnostic`.
 
 #### Precedence
 

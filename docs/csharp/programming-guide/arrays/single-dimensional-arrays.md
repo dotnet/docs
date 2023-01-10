@@ -45,11 +45,11 @@ Consider the following array declaration:
 
 The result of this statement depends on whether `SomeType` is a value type or a reference type. If it's a value type, the statement creates an array of 10 elements, each of which has the type `SomeType`. If `SomeType` is a reference type, the statement creates an array of 10 elements, each of which is initialized to a null reference. In both instances, the elements are initialized to the default value for the element type. For more information about value types and reference types, see [Value types](../../language-reference/builtin-types/value-types.md) and [Reference types](../../language-reference/keywords/reference-types.md).
 
-## Retreving data from Array
+## Retrieving data from Array
 
 You can retrieve the data of an array by using an index. For example:
 
-:::code language="csharp" source="snippets/RetrevingArrayElements.cs" id="RetrevingDataArray" interactive="try-dotnet-method":::
+:::code language="csharp" source="snippets/RetrievingArrayElements.cs" id="RetrievingDataArray" interactive="try-dotnet-method":::
   
 ## See also
 

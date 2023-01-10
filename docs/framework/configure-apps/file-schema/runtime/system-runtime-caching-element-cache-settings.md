@@ -73,4 +73,5 @@ The `cacheMemoryLimitMegabytes` attribute and the `physicalMemoryPercentage` att
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<memoryCache> Element (Cache Settings)](memorycache-element-cache-settings.md)

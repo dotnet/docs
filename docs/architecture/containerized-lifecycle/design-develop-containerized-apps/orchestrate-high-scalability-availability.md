@@ -59,7 +59,7 @@ Figure 4-7 shows the structure of a Kubernetes cluster where a master node (VM) 
 
 ## Development environment for Kubernetes
 
-In the development environment that [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes can also run in a single development machine (Windows 10 or macOS) by just installing [Docker Desktop](https://www.docker.com/products/docker-desktop). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-8.
+In the development environment that Docker announced in July 2018, Kubernetes can also run in a single development machine (Windows 10 or macOS) by just installing [Docker Desktop](https://www.docker.com/products/docker-desktop). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-8.
 
 ![Diagram showing Kubernetes on a dev machine then deployed to AKS.](./media/orchestrate-high-scalability-availability/kubernetes-development-environment.png)
 
@@ -84,7 +84,7 @@ For further implementation information on Helm charts and Kubernetes, see the se
 ## Additional resources
 
 - **Getting started with Azure Kubernetes Service (AKS)** \
-  [https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
+  [https://learn.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
 
 - **Kubernetes.** The official site. \
   <https://kubernetes.io/>

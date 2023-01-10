@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 
 Or
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed.
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed.
 
 ## Create the app
 
@@ -390,7 +390,7 @@ Build the project, and then try the following commands.
 Submit a nonexistent file to `--file` with the `read` command, and you get an error message instead of an exception and stack trace:
 
 ```console
-scl read --file nofile
+scl quotes read --file nofile
 ```
 
 ```output

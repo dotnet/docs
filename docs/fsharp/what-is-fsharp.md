@@ -77,9 +77,9 @@ let handleWithdrawal amount =
 
     // The F# compiler enforces accounting for each case!
     match w with
-    | Success s -> printfn "Successfully withdrew %f{s.Amount}"
-    | InsufficientFunds f -> printfn "Failed: balance is %f{f.Balance}"
-    | CardExpired d -> printfn "Failed: card expired on {d}"
+    | Success s -> printfn $"Successfully withdrew %f{s.Amount}"
+    | InsufficientFunds f -> printfn $"Failed: balance is %f{f.Balance}"
+    | CardExpired d -> printfn $"Failed: card expired on {d}"
     | UndisclosedFailure -> printfn "Failed: unknown :("
 ```
 
@@ -97,8 +97,8 @@ type Set<'T when 'T: comparison>(elements: seq<'T>) =
     // ...
     // Further Implementation elided
     // ...
-    interface IEnumerable<‘T>
-    interface IReadOnlyCollection<‘T>
+    interface IEnumerable<'T>
+    interface IReadOnlyCollection<'T>
 
 module Set =
     let isEmpty (set: Set<'T>) = set.IsEmpty

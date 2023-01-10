@@ -8,7 +8,7 @@ namespace InRefOutModifier
         {
             InParameterModifier.Examples();
             OutParameterModifier.Examples();
-            RefParameterModifier.Examples();
+            // RefParameterModifier.Examples();
         }
     }
 }

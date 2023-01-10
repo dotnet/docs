@@ -151,7 +151,7 @@ As part of the sample, the Types project generates the assembly with all the typ
 
 1. Using Visual Studio, open the DCRSample.sln solution file.
 
-2. To run the solution, press **F5**.
+2. To run the solution, press <kbd>F5</kbd>.
 
 ## See also
 

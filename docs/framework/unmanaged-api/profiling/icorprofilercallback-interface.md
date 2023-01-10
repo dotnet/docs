@@ -40,7 +40,7 @@ Provides methods that are used by the common language runtime (CLR) to notify a 
 |[COMClassicVTableDestroyed Method](icorprofilercallback-comclassicvtabledestroyed-method.md)|Notifies the profiler that an RCW is being destroyed.|  
 |[ExceptionCatcherEnter Method](icorprofilercallback-exceptioncatcherenter-method.md)|Notifies the profiler that control is being passed to the appropriate `catch` block.|  
 |[ExceptionCatcherLeave Method](icorprofilercallback-exceptioncatcherleave-method.md)|Notifies the profiler that control is being passed out of the appropriate `catch` block.|  
-|[ExceptionCLRCatcherExecute Method](icorprofilercallback-exceptionclrcatcherexecute-method.md)|Obsolete in the .NET Framework version 2.0.|  
+|[ExceptionCLRCatcherExecute Method](icorprofilercallback-exceptionclrcatcherexecute-method.md)|Obsolete in .NET Framework version 2.0.|  
 |[ExceptionCLRCatcherFound Method](icorprofilercallback-exceptionclrcatcherfound-method.md)|Obsolete in the .NET Framework 2.0.|  
 |[ExceptionOSHandlerEnter Method](icorprofilercallback-exceptionoshandlerenter-method.md)|Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.|  
 |[ExceptionOSHandlerLeave Method](icorprofilercallback-exceptionoshandlerleave-method.md)|Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.|  

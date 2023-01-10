@@ -1,7 +1,7 @@
 ---
 title: .NET SDK overview
 description: Learn about the .NET SDK (formerly known as the .NET Core SDK), which is a set of libraries and tools used to create .NET projects.
-ms.date: 02/24/2022
+ms.date: 07/14/2022
 ms.technology: dotnet-cli
 ---
 # What is the .NET SDK?
@@ -9,7 +9,7 @@ ms.technology: dotnet-cli
 The .NET SDK is a set of libraries and tools that allow developers to create .NET applications and libraries. It contains the following components that are used to build and run applications:
 
 - The [.NET CLI](tools/index.md).
-- The .NET  [runtime](introduction.md#sdk-and-runtimes)and [libraries](introduction.md#runtime-libraries).
+- The [.NET runtime and libraries](introduction.md).
 - The `dotnet` [driver](tools/index.md#driver).
 
 ## How to install the .NET SDK
@@ -29,7 +29,7 @@ Install scripts, on the other hand, don't require administrative privileges. How
 prerequisites on the machine; you need to install all of the prerequisites manually. The scripts are meant mostly for
 setting up build servers or when you wish to install the tools without admin privileges (do note the prerequisites
 caveat above). You can find more information in the [install script reference](tools/dotnet-install-script.md) article. If you're
-interested in how to set up the SDK on your CI build server, see the [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md) article.
+interested in how to set up the SDK on your CI build server, see [Use the .NET SDK in Continuous Integration (CI) environments](../devops/dotnet-cli-and-continuous-integration.md).
 
 By default, the SDK installs in a "side-by-side" (SxS) manner, which means multiple versions
 can coexist at any given time on a single machine. For information about how the version gets picked when you're running CLI commands, see [Select the .NET version to use](versions/selection.md).

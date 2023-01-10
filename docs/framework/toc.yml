@@ -21,6 +21,8 @@ items:
     items:
     - name: Windows 11
       href: install/on-windows-11.md
+    - name: Windows Server 2022
+      href: install/on-server-2022.md
     - name: Windows 10 and Windows Server 2016
       href: install/on-windows-10.md
     - name: Windows 8.1 and Windows Server 2012 R2
@@ -162,6 +164,8 @@ items:
           href: migration-guide/runtime/4.7.1-4.8.md
         - name: 4.7.2 to 4.8
           href: migration-guide/runtime/4.7.2-4.8.md
+        - name: 4.8 to 4.8.1
+          href: migration-guide/runtime/4.8-4.8.1.md
       - name: Retargeting changes
         items:
         - name: 4.0 to 4.5
@@ -274,6 +278,8 @@ items:
           href: migration-guide/retargeting/4.7.1-4.8.md
         - name: 4.7.2 to 4.8
           href: migration-guide/retargeting/4.7.2-4.8.md
+        - name: 4.8 to 4.8.1
+          href: migration-guide/retargeting/4.8-4.8.1.md
     - name: Behavior mitigations
       items:
       - name: Overview
@@ -479,6 +485,8 @@ items:
       items:
       - name: SqlMoney constructor
         href: additional-apis/system.data.sqltypes.sqlmoney.-ctor.md
+      - name: ToSqlInternalRepresentation method
+        href: additional-apis/system.data.sqltypes.sqlmoney.tosqlinternalrepresentation.md
     - name: SqlStreamChars class
       items:
       - name: SqlStreamChars constructor
@@ -692,6 +700,175 @@ items:
       href: additional-apis/stdole.stdfont.md
     - name: StdPicture interface
       href: additional-apis/stdole.stdpicture.md
+  - name: Point of Service for .NET v1.14.1
+    href: additional-apis/pos-for-net/index.md
+    items:
+    - name: Copyright Information
+      href: additional-apis/pos-for-net/copyright-information-for-pos-for-net-v1141.md
+    - name: POS for .NET FAQ
+      href: additional-apis/pos-for-net/pos-for-net-faq.md
+    - name: What's New
+      href: additional-apis/pos-for-net/whats-new-in-pos-for-net-v114-and-v1141.md
+    - name: POS for .NET v1.14.1 Features
+      href: additional-apis/pos-for-net/pos-for-net-v1141-features.md
+      items:
+      - name: POS for .NET Architecture
+        href: additional-apis/pos-for-net/pos-for-net-architecture.md
+      - name: Service Object Overview
+        href: additional-apis/pos-for-net/service-object-overview.md
+      - name: Supported Device Classes
+        href: additional-apis/pos-for-net/supported-device-classes.md
+      - name: Event Management
+        href: additional-apis/pos-for-net/event-management.md
+      - name: POS Exception Handling
+        href: additional-apis/pos-for-net/pos-exception-handling.md
+      - name: POS for .NET Integration with Plug and Play
+        href: additional-apis/pos-for-net/pos-for-net-integration-with-plug-and-play.md
+      - name: Log Files
+        href: additional-apis/pos-for-net/log-files.md
+      - name: Integration of Legacy Service Objects
+        href: additional-apis/pos-for-net/integration-of-legacy-service-objects.md
+    - name: Developing a POS Application
+      href: additional-apis/pos-for-net/developing-a-pos-application.md
+      items:
+      - name: Application Compatibility with 32-bit OPOS Service Objects
+        href: additional-apis/pos-for-net/pos-for-net-application-compatibility-with-32-bit-opos-service-objects.md
+      - name: Typical POS Application Architecture
+        href: additional-apis/pos-for-net/typical-pos-application-architecture.md
+      - name: API Support
+        href: additional-apis/pos-for-net/pos-for-net-api-support.md
+        items:
+        - name: PosCommon Class
+          href: additional-apis/pos-for-net/poscommon-class.md
+        - name: PosExplorer Class
+          href: additional-apis/pos-for-net/posexplorer-class.md
+        - name: DeviceInfo Class
+          href: additional-apis/pos-for-net/deviceinfo-class.md
+        - name: Exception Classes
+          href: additional-apis/pos-for-net/exception-classes.md
+      - name: Event Handler Sample
+        href: additional-apis/pos-for-net/event-handler-sample.md
+    - name: Developing a Custom Service Object
+      href: additional-apis/pos-for-net/developing-a-custom-service-object.md
+      items:
+      - name: POS for .NET Service Object Architecture
+        href: additional-apis/pos-for-net/pos-for-net-service-object-architecture.md
+        items:
+        - name: POS for .NET Class Tree
+          href: additional-apis/pos-for-net/pos-for-net-class-tree.md
+        - name: Attributes for Identifying Service Objects and Assigning Hardware
+          href: additional-apis/pos-for-net/attributes-for-identifying-service-objects-and-assigning-hardware.md
+        - name: Hydra Devices
+          href: additional-apis/pos-for-net/hydra-devices.md
+        - name: Plug and Play Support
+          href: additional-apis/pos-for-net/plug-and-play-support.md
+        - name: PosCommon Information for Service Object Developers
+          href: additional-apis/pos-for-net/poscommon-information-for-service-object-developers.md
+        - name: POS for .NET Device Basic Classes
+          href: additional-apis/pos-for-net/pos-for-net-device-basic-classes.md
+      - name: System Configuration
+        href: additional-apis/pos-for-net/system-configuration.md
+        items:
+        - name: POS for .NET Registry Settings
+          href: additional-apis/pos-for-net/pos-for-net-registry-settings.md
+        - name: POS Device Manager Output
+          href: additional-apis/pos-for-net/pos-device-manager-output.md
+        - name: Point of Service Performance Counters
+          href: additional-apis/pos-for-net/point-of-service-performance-counters.md
+        - name: Plug and Play XML Configuration
+          href: additional-apis/pos-for-net/plug-and-play-xml-configuration.md
+      - name: 'Service Object Samples: Getting Started'
+        href: additional-apis/pos-for-net/service-object-samples-getting-started.md
+        items:
+        - name: Setting up a Service Object Project
+          href: additional-apis/pos-for-net/setting-up-a-service-object-project.md
+        - name: Creating a Basic Service Object Code Template
+          href: additional-apis/pos-for-net/creating-a-basic-service-object-code-template.md
+        - name: Adding Plug and Play Support
+          href: additional-apis/pos-for-net/adding-plug-and-play-support.md
+        - name: Creating a Service Object Sample
+          href: additional-apis/pos-for-net/creating-a-service-object-sample.md
+        - name: Introducing Service Object Reader Threads
+          href: additional-apis/pos-for-net/introducing-service-object-reader-threads.md
+        - name: Creating a Working, Multithreaded Service Object
+          href: additional-apis/pos-for-net/creating-a-working-multithreaded-service-object.md
+      - name: Developing Service Objects Using Base Classes
+        href: additional-apis/pos-for-net/developing-service-objects-using-base-classes.md
+        items:
+        - name: Scanner Implementation
+          href: additional-apis/pos-for-net/scanner-implementation.md
+          items:
+          - name: Data Decoding
+            href: additional-apis/pos-for-net/data-decoding.md
+          - name: Scanner Events
+            href: additional-apis/pos-for-net/scanner-events.md
+        - name: CashDrawer Implementation
+          href: additional-apis/pos-for-net/cashdrawer-implementation.md
+        - name: LineDisplay Implementation
+          href: additional-apis/pos-for-net/linedisplay-implementation.md
+          items:
+          - name: LineDisplay Capabilities
+            href: additional-apis/pos-for-net/linedisplay-capabilities.md
+          - name: LineDisplay Sample
+            href: additional-apis/pos-for-net/linedisplay-sample.md
+        - name: PinPad Implementation
+          href: additional-apis/pos-for-net/pinpad-implementation.md
+          items:
+          - name: PinPad Capabilities
+            href: additional-apis/pos-for-net/pinpad-capabilities.md
+          - name: PinPad Sample
+            href: additional-apis/pos-for-net/pinpad-sample.md
+        - name: PosKeyboard Implementation
+          href: additional-apis/pos-for-net/poskeyboard-implementation.md
+        - name: Using Impl Methods for Synchronous or Asynchronous Output
+          href: additional-apis/pos-for-net/using-impl-methods-for-synchronous-or-asynchronous-output.md
+      - name: Device Input and Events
+        href: additional-apis/pos-for-net/device-input-and-events.md
+      - name: Device Output Models
+        href: additional-apis/pos-for-net/device-output-models.md
+      - name: Asynchronous Output Sample
+        href: additional-apis/pos-for-net/asynchronous-output-sample.md
+      - name: Statistics Sample
+        href: additional-apis/pos-for-net/statistics-sample.md
+      - name: Base Class DirectIO Method
+        href: additional-apis/pos-for-net/base-class-directio-method.md
+      - name: Capability Properties
+        href: additional-apis/pos-for-net/capability-properties.md
+    - name: Manually manage your POS for .NET devices
+      href: additional-apis/pos-for-net/manually-manage-your-pos-for-net-devices.md
+    - name: POS Device Manager
+      href: additional-apis/pos-for-net/pos-device-manager.md
+      items:
+      - name: Configure a device for remote management
+        href: additional-apis/pos-for-net/configure-a-device-for-remote-management.md
+      - name: Using the WMI API to Manage Devices
+        href: additional-apis/pos-for-net/using-the-wmi-api-to-manage-devices.md
+        items:
+        - name: ServiceObject Class
+          href: additional-apis/pos-for-net/serviceobject-class.md
+        - name: PosDevice Class
+          href: additional-apis/pos-for-net/posdevice-class.md
+        - name: LogicalDevice Class
+          href: additional-apis/pos-for-net/logicaldevice-class.md
+        - name: DeviceProperty Class
+          href: additional-apis/pos-for-net/deviceproperty-class.md
+        - name: Using VBScript to Manage Devices
+          href: additional-apis/pos-for-net/using-vbscript-to-manage-devices.md
+      - name: Using Visual Studio .NET Management Extensions and the POS for .NET WMI Management Classes
+        href: additional-apis/pos-for-net/using-visual-studio-net-management-extensions-and-the-pos-for-net-wmi-management-classes.md
+      - name: Using the POS Device Manager Command-Line Tool
+        href: additional-apis/pos-for-net/using-the-pos-device-manager-command-line-tool.md
+        items:
+        - name: Command-Line Help for POSDM
+          href: additional-apis/pos-for-net/command-line-help-for-posdm.md
+        - name: General POSDM Switches
+          href: additional-apis/pos-for-net/general-posdm-switches.md
+        - name: POSDM Commands
+          href: additional-apis/pos-for-net/posdm-commands.md
+        - name: POSDM Command Arguments
+          href: additional-apis/pos-for-net/posdm-command-arguments.md
+    - name: POS for .NET Reference
+      href: /dotnet/api/?view=point-of-service-1.14&preserve-view=true
 - name: What's new and obsolete
   items:
   - name: What's new

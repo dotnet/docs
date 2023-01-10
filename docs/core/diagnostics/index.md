@@ -11,23 +11,29 @@ Software doesn't always behave as you would expect, but .NET Core has tools and 
 
 This article helps you find the various tools you need.
 
-## Managed debuggers
+## Debuggers
 
-[Managed debuggers](managed-debuggers.md) allow you to interact with your program. Pausing, incrementally executing, examining,  and resuming gives you insight into the behavior of your code. A debugger is the first choice for diagnosing functional problems that can be easily reproduced.
-
-## Logging and tracing
-
-[Logging and tracing](logging-tracing.md) are related techniques. They refer to instrumenting code to create log files. The files record the details of what a program does. These details can be used to diagnose the most complex problems. When combined with time stamps, these techniques are also valuable in performance investigations.
-
-## Metrics
-
-[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to
-generate alerts when potential problems are detected. In normal use, metrics have very low performance overhead and are configured as
-'always-on' telemetry. The .NET runtime and libraries publish many built-in metrics, and you can create new ones using metric APIs.
+[Debuggers](managed-debuggers.md) allow you to interact with your program. Pausing, incrementally executing, examining,  and resuming gives you insight into the behavior of your code. A debugger is a good choice for diagnosing functional problems that can be easily reproduced.
 
 ## Unit testing
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
+
+## Instrumentation for observability
+
+.NET supports industry standard instrumentation techniques using metrics, logs, and distributed traces. Instrumentation is code that is added to a software project to record what it is doing. This information can then be collected in files, databases, or in-memory and analyzed to understand how a software program is operating. This is often used in production environments to monitor for problems and diagnose them. The .NET runtime has built-in instrumentation that can be optionally enabled and APIs that allow you to add custom instrumentation specialized for your application.
+
+### Metrics
+
+[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to generate alerts when potential problems are detected. Metrics have very low performance overhead and many services configure them as always-on telemetry.
+
+### Logs
+
+[Logging](logging-tracing.md) is a technique where code is instrumented to produce a log, a record of interesting events that occurred while the program was running. Often a baseline set of log events are configured on by default and more extensive logging can be enabled on-demand to diagnose particular problems. Performance overhead is variable depending on how much data is being logged.
+
+### Distributed traces
+
+[Distributed Tracing](./distributed-tracing.md) is a specialized form of logging that helps you localize failures and performance issues within applications distributed across multiple machines or processes. This technique tracks requests through an application correlating together work done by different application components and separating it from other work the application may be doing for concurrent requests. It is possible to trace every request and sampling can be optionally employed to bound the performance overhead.
 
 ## Dumps
 
@@ -54,6 +60,10 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 ### dotnet-gcdump
 
 The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Collector) dumps of live .NET processes.
+
+### dotnet-monitor
+
+The [dotnet-monitor](dotnet-monitor.md) tool is a way to monitor .NET applications in production environments and to collect diagnostic artifacts (for example, dumps, traces, logs, and metrics) on-demand or using automated rules for collecting under specified conditions.
 
 ### dotnet-trace
 
@@ -92,6 +102,10 @@ The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed
 ### Debug deadlock
 
 [Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+
+### Debug ThreadPool Starvation
+
+[Tutorial: Debug threadPool starvation](debug-threadpool-starvation.md) shows you how to use the [dotnet-counters](dotnet-counters.md) and [dotnet-stack](dotnet-stack.md) tools to investigate ThreadPool starvation.
 
 ### Debug a StackOverflow
 

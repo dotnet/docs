@@ -33,6 +33,7 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Project Orleans - Actor Model framework](https://www.slideshare.net/nmackenzie/project-orleans)
 - [A look at Microsoft Orleans through Erlang-tinted glasses](https://theburningmonk.com/2014/12/a-look-at-microsoft-orleans-through-erlang-tinted-glasses/)
 - [Using Codename "Orleans" in Enterprise Applications](https://blogs.msdn.com/b/msarchitecture/archive/2014/06/09/using-codename-orleans-in-enterprise-applications.aspx)
+- [Intro to Virtual Actors By Microsoft Orleans](https://bogdan-dina03.medium.com/intro-to-virtual-actors-by-microsoft-orleans-6ae3264f138d)
 
 ### Beyond the introduction
 
@@ -49,3 +50,4 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Using Project "Orleans" in Halo](https://hoopsomuah.com/2014/04/06/using-project-orleans-in-halo/)
 - [Orleans & Thinking Outside the Box](https://msdevshow.com/2014/05/orleans-and-thinking-outside-the-box/)
 - [John Azariah & Mahesh Krishnan - Immutability, State and Scale - Functional, Distributed Applications in Azure](https://vimeo.com/97315938)
+- [Running a cluster of Microsoft Orleans Virtual Actors](https://bogdan-dina03.medium.com/running-a-cluster-of-microsoft-orleans-virtual-actors-e755ace1750)

@@ -112,7 +112,7 @@ var fixedQry = companyNames.OrderBy(x => x);
 
 {
     // <Factory_method_expression_tree_parameter>
-    ParameterExpression x = Parameter(typeof(string), "x");
+    ParameterExpression x = Expression.Parameter(typeof(string), "x");
     // </Factory_method_expression_tree_parameter>
 
     // <Factory_method_expression_tree_body>

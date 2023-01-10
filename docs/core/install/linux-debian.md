@@ -3,7 +3,7 @@ title: Install .NET on Debian
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/25/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -18,16 +18,10 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-- A ✔️ indicates that the version of Debian or .NET is still supported.
-- A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
-- When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
-
-| Debian                   | .NET Core 3.1 | .NET 5   | .NET 6 |
-|--------------------------|---------------|----------|----------|
-| ✔️ [11](#debian-11-)     | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
-| ✔️ [10](#debian-10-)     | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
-| ✔️ [9](#debian-9-)       | ✔️ 3.1        | ✔️ 5.0   | ✔️ 6.0   |
-| ❌ [8](#debian-8-)       | ❌ 3.1        | ❌ 5.0   | ❌ 6.0   |
+| Debian  | .NET      |
+|---------|-----------|
+| 11      | 7, 6      |
+| 10      | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -39,7 +33,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## Debian 11 ✔️
+## Debian 11
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -49,9 +43,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 
-## Debian 10 ✔️
+## Debian 10
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -61,39 +55,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
-## Debian 9 ✔️
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/debian/9/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-```
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
-## Debian 8 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-debian.md)]
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/debian/8/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-```
-
-[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
+[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 
 ## How to install other versions
 
@@ -110,7 +72,7 @@ sudo apt-get upgrade
 
 If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
-## APT troubleshooting
+## Troubleshooting
 
 This section provides information on common errors you may get while using APT to install .NET.
 
@@ -130,9 +92,7 @@ wget https://packages.microsoft.com/config/debian/{os-version}/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt-get update; \
-  sudo apt-get install -y apt-transport-https && \
-  sudo apt-get update && \
+sudo apt-get update && \
   sudo apt-get install -y {dotnet-package}
 ```
 
@@ -142,26 +102,20 @@ sudo apt-get update; \
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
 - libgcc-s1
 - libgssapi-krb5-2
-- libicu52 (for 8.x)
-- libicu57 (for 9.x)
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)
-- libssl1.0.0 (for 8.x)
-- libssl1.1 (for 9.x-11.x)
+- libssl1.1
 - libstdc++6
 - zlib1g
 
-For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-- libgdiplus (version 6.0.1 or later)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-debian).
 
 ## Next steps
 

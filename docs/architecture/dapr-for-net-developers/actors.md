@@ -132,7 +132,7 @@ public async Task<int> IncrementAsync()
 
 Actors can use timers and reminders to schedule calls to themselves. Both concepts support the configuration of a due time. The difference lies in the lifetime of the callback registrations:
 
-- Timers will only stay active as long as the the actor is activated. Timers *will not* reset the idle-timer, so they cannot keep an actor active on their own.
+- Timers will only stay active as long as the actor is activated. Timers *will not* reset the idle-timer, so they cannot keep an actor active on their own.
 - Reminders outlive actor activations. If an actor is deactivated, a reminder will re-activate the actor. Reminders *will* reset the idle-timer.
 
 Timers are registered by making a call to the actor API. In the following example, a timer is registered with a due time of 0 and a period of 10 seconds.

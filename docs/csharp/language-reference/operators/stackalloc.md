@@ -1,7 +1,7 @@
 ---
-title: "stackalloc expression - C# reference"
-description: "Learn about the C# stackalloc expression that allocates a block of memory on the stack."
-ms.date: 03/13/2020
+title: "stackalloc expression - Allocate variable storage on the stack instead of the heap"
+description: "The C# stackalloc expression allocates a block of memory on the stack. Stackalloc memory is automatically discarded when that method returns."
+ms.date: 11/28/2022
 f1_keywords: 
   - "stackalloc_CSharpKeyword"
 helpviewer_keywords: 
@@ -9,11 +9,11 @@ helpviewer_keywords:
 ---
 # stackalloc expression (C# reference)
 
-A `stackalloc` expression allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You cannot explicitly free the memory allocated with `stackalloc`. A stack allocated memory block is not subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../keywords/fixed-statement.md).
+A `stackalloc` expression allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
 
 You can assign the result of a `stackalloc` expression to a variable of one of the following types:
 
-- Beginning with C# 7.2, <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as the following example shows:
+- <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as the following example shows:
 
   [!code-csharp[stackalloc span](snippets/shared/StackallocOperator.cs#AssignToSpan)]
 
@@ -23,7 +23,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   [!code-csharp[stackalloc expression](snippets/shared/StackallocOperator.cs#AsExpression)]
 
-  Beginning with C# 8.0, you can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
+  You can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
 
   [!code-csharp[stackalloc in nested expressions](snippets/shared/StackallocOperator.cs#Nested)]
 
@@ -51,7 +51,7 @@ The amount of memory available on the stack is limited. If you allocate too much
 
 The content of the newly allocated memory is undefined. You should initialize it before the use. For example, you can use the <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> method that sets all the items to the default value of type `T`.
 
-Beginning with C# 7.3, you can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
+You can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
 
 [!code-csharp[stackalloc initialization](snippets/shared/StackallocOperator.cs#StackallocInit)]
 

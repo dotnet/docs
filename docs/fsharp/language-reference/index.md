@@ -18,7 +18,7 @@ The following table shows reference articles related to organizing your F# code.
 |[`open` Declarations](import-declarations-the-open-keyword.md)|Learn about how `open` works. An `open` declaration specifies a module, namespace, or type whose elements you can reference without using a fully qualified name.|
 |[Signatures](signature-files.md)|Learn about signatures and signature files. A signature file contains information about the public signatures of a set of F# program elements, such as types, namespaces, and modules. It can be used to specify the accessibility of these program elements.|
 |[Access Control](access-control.md)|Learn about access control in F#. Access control means declaring what clients are able to use certain program elements, such as types, methods, functions, and so on.|
-|[XML Documentation](xml-documentation.md)|Learn about support for generating documentation files for XML doc comments, also known as triple slash comments. You can produce documentation from code comments in F# as in other .NET languages.|
+|[XML Documentation](xml-documentation.md)|Learn about support for generating documentation files from XML doc comments, also known as triple slash comments. You can produce documentation from code comments in F# as in other .NET languages.|
 
 ## Literals and Strings
 

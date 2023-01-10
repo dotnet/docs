@@ -224,7 +224,7 @@ namespace ElementProvider
         {
             const int WM_GETOBJECT = 0x003D;
 
-            if ((m.Msg == WM_GETOBJECT) && (m.LParam.ToInt32() ==
+            if ((m.Msg == WM_GETOBJECT) && ((int)(long)m.LParam ==
                 AutomationInteropProvider.RootObjectId))
             {
                 m.Result = AutomationInteropProvider.ReturnRawElementProvider(

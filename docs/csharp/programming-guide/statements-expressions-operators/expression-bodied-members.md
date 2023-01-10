@@ -2,7 +2,7 @@
 title: "Expression-bodied members - C# Programming Guide"
 description: Learn about expression-bodied members. See code examples that use expression body definition for properties, constructors, finalizers, and more.
 ms.date: 02/06/2019
-helpviewer_keywords: 
+helpviewer_keywords:
   - "expression-bodied members[C#]"
   - "C# language, expression-bodied members"
 ---
@@ -16,16 +16,14 @@ member => expression;
 
 where *expression* is a valid expression.
 
-Support for expression body definitions was introduced for methods and read-only properties in C# 6 and was expanded in C# 7.0. Expression body definitions can be used with the type members listed in the following table:
+Expression body definitions can be used with the following type members:
 
-|Member  |Supported as of... |
-|---------|---------|
-|[Method](#methods)  |C# 6 |
-|[Read-only property](#read-only-properties)   |C# 6  |
-|[Property](#properties)  |C# 7.0 |
-|[Constructor](#constructors)   |C# 7.0 |
-|[Finalizer](#finalizers)     |C# 7.0 |
-|[Indexer](#indexers)       |C# 7.0 |
+- [Method](#methods)
+- [Read-only property](#read-only-properties)
+- [Property](#properties)
+- [Constructor](#constructors)
+- [Finalizer](#finalizers)
+- [Indexer](#indexers)
 
 ## Methods
 
@@ -33,13 +31,13 @@ An expression-bodied method consists of a single expression that returns a value
 
 The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
 
-[!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]  
+[!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]
 
 For more information, see [Methods (C# Programming Guide)](../classes-and-structs/methods.md).
 
 ## Read-only properties
 
-Starting with C# 6, you can use expression body definition to implement a read-only property. To do that, use the following syntax:
+You can use expression body definition to implement a read-only property. To do that, use the following syntax:
 
 ```csharp
 PropertyType PropertyName => expression;
@@ -47,13 +45,13 @@ PropertyType PropertyName => expression;
 
 The following example defines a `Location` class whose read-only `Name` property is implemented as an expression body definition that returns the value of the private `locationName` field:
 
-[!code-csharp[expression-bodied-read-only-property](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]  
+[!code-csharp[expression-bodied-read-only-property](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 
 ## Properties
 
-Starting with C# 7.0, you can use expression body definitions to implement property `get` and `set` accessors. The following example demonstrates how to do that:
+You can use expression body definitions to implement property `get` and `set` accessors. The following example demonstrates how to do that:
 
 [!code-csharp[expression-bodied-property-get-set](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
 
@@ -65,7 +63,7 @@ An expression body definition for a constructor typically consists of a single a
 
 The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
 
-[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
+[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
 
 For more information, see [Constructors (C# Programming Guide)](../classes-and-structs/constructors.md).
 
@@ -75,7 +73,7 @@ An expression body definition for a finalizer typically contains cleanup stateme
 
 The following example defines a finalizer that uses an expression body definition to indicate that the finalizer has been called.
 
-[!code-csharp[expression-bodied-finalizer](../classes-and-structs/snippets/finalizers/expr-bodied-finalizer.cs#1)]  
+[!code-csharp[expression-bodied-finalizer](../classes-and-structs/snippets/finalizers/expr-bodied-finalizer.cs#1)]
 
 For more information, see [Finalizers (C# Programming Guide)](../classes-and-structs/finalizers.md).
 
@@ -88,3 +86,7 @@ The following example defines a class named `Sports` that includes an internal <
 [!code-csharp[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-indexers.cs#1)]
 
 For more information, see [Indexers (C# Programming Guide)](../indexers/index.md).
+
+## See also
+
+- [.NET code style rules for expression-bodied-members](../../../fundamentals/code-analysis/style-rules/expression-bodied-members.md)

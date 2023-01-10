@@ -40,7 +40,7 @@ enum ValidatorFlags {
 |`VALIDATOR_CHECK_PEFORMAT_ONLY`|Specifies that only the format of the executable file should be validated.|  
 |`VALIDATOR_EXTRA_VERBOSE`|Specifies that all types of validation should be performed and reported on.|  
 |`VALIDATOR_NOCHECK_PEFORMAT`|Specifies that the format of the executable file should not be validated.|  
-|`VALIDATOR_SHOW_SOURCE_LINES`|Specifies that validation error messages should include the lines of source code that raise validation errors. This field value is not valid in the .NET Framework version 2.0.|  
+|`VALIDATOR_SHOW_SOURCE_LINES`|Specifies that validation error messages should include the lines of source code that raise validation errors. This field value is not valid in .NET Framework version 2.0.|  
   
 ## Requirements  
 

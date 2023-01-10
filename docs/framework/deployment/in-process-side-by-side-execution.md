@@ -52,7 +52,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
   
      What to do: In this scenario, do nothing. The COM components will run with the version of the .NET Framework they were registered with.  
   
-- **Scenario 2**: Managed application built with the .NET Framework 2.0 SP1 that you would prefer to run with the .NET Framework 2.0, but are willing to run on the .NET Framework 4 if version 2.0 is not present.  
+- **Scenario 2**: Managed application built with the .NET Framework 2.0 SP1 that you would prefer to run with .NET Framework 2.0, but are willing to run on the .NET Framework 4 if version 2.0 is not present.  
   
      .NET Framework versions installed: An earlier version of the .NET Framework and the .NET Framework 4.  
   
@@ -85,7 +85,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
 
  The following example demonstrates an unmanaged COM host that is running a managed COM component by using the version of the .NET Framework that the component was compiled to use.  
   
- To run the following example, compile and register the following managed COM component using the .NET Framework 3.5. To register the component, on the **Project** menu, click **Properties**, click the **Build** tab, and then select the **Register for COM interop** check box.  
+ To run the following example, compile and register the following managed COM component using .NET Framework 3.5. To register the component, on the **Project** menu, click **Properties**, click the **Build** tab, and then select the **Register for COM interop** check box.  
   
 ```csharp
 using System;  

@@ -115,9 +115,10 @@ A configuration element that contains all queries for a specific workflow identi
 ```xml  
 <system.serviceModel>  
   <tracking>
-    <trackingProfile name="Sample Tracking Profile">  
-      <workflow activityDefinitionId="*">  
-         <workflowInstanceQueries>  
+    <profiles>
+      <trackingProfile name="Sample Tracking Profile">  
+        <workflow activityDefinitionId="*">  
+          <workflowInstanceQueries>  
             <workflowInstanceQuery>  
             <states>  
               <state name="Started"/>  

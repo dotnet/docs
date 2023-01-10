@@ -3,7 +3,7 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET.
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 11/09/2022
 ---
 
 # Options pattern guidance for .NET library authors
@@ -14,7 +14,7 @@ As a .NET library author, you'll learn general guidance on how to correctly expo
 
 ## Naming conventions
 
-By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. Depending on the package, the registration of services may be accompanied by `Use{Service}` extension methods. The `Use{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet).
+By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. `Add{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet).
 
 ✔️ CONSIDER names that disambiguate your service from other offerings.
 
@@ -59,7 +59,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 
-:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="21-22":::
+:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="7-8":::
 
 The call to `.AddMyLibraryService` is made in the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method. The same is true when using a `Startup` class, the addition of services being registered occurs in `ConfigureServices`.
 
@@ -89,7 +89,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
 
-:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="21-25":::
+:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="7-11":::
 
 ## Options instance parameter
 
@@ -105,7 +105,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
-:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="21-25":::
+:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="7-11":::
 
 ## Post configuration
 
@@ -121,7 +121,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 
-:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="21-25":::
+:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="7-11":::
 
 ## See also
 

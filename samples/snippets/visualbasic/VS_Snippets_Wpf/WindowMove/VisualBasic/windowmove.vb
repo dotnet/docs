@@ -60,8 +60,6 @@ Imports System.IO
 Imports System.Text
 Imports System.Diagnostics
 Imports System.ComponentModel
-Imports System.Security.Permissions
-
 
 Namespace SDKSample
 
@@ -346,7 +344,6 @@ Namespace SDKSample
         '' <param name="sender">The object that raised the event.</param>
         '' <param name="e">Event arguments.</param>
         '' <returns>The target automation element.</returns>
-        <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)> _
         Private Function StartTargetApp(ByVal app As String) As AutomationElement
             Try
                 ' Start application.

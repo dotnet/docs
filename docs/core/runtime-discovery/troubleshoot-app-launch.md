@@ -8,11 +8,13 @@ zone_pivot_groups: operating-systems-set-one
 
 # Troubleshoot app launch failures
 
-This article describes some common reasons and possible solutions for application launch failures.
+This article describes some common reasons and possible solutions for application launch failures. It relates to [framework-dependent applications](../deploying/index.md#publish-framework-dependent), which rely on a .NET installation on your machine.
+
+If you already know which .NET version you need, you can download it from [.NET downloads](https://dotnet.microsoft.com/download/dotnet).
 
 ## .NET installation not found
 
-[Framework-dependent applications](../deploying/index.md#publish-framework-dependent) rely on a .NET installation on your machine. If a .NET installation is not found, the application will fail to launch with a message similar to:
+If a .NET installation is not found, the application fails to launch with a message similar to:
 
 ::: zone pivot="os-windows"
 
@@ -40,17 +42,23 @@ Host version: 7.0.0
 
 ::: zone-end
 
-The error indicates the required architecture and host version. To run the application, you must [install the corresponding version of the .NET Runtime](#install-net).
+The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. You can also pick the .NET version (specified by `Host version`) from [.NET downloads](https://dotnet.microsoft.com/download/dotnet).
 
-### Install .NET
+::: zone pivot="os-windows,os-macos"
+On the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You can then install it by downloading and running an **Installer**.
+::: zone-end
 
-The error message includes a link to download .NET. You can follow this link to get to the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all available versions of .NET. Select the version that matches the host version listed in the error message.
+::: zone pivot="os-linux"
+.NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. Note that preview versions of .NET are typically not available through package managers.
 
-On the download page for the required .NET version, find the **.NET Runtime** download that matches the architecture listed in the error message. You can then install it by [running an installer](#run-an-installer).
+You need to install the .NET Runtime package for the appropriate version, like `dotnet-runtime6`.
+::: zone-end
+
+Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.
 
 ## Required framework not found
 
-[Framework-dependent applications](../deploying/index.md#publish-framework-dependent) rely on a .NET installation on your machine. If a required framework is not found or is not compatible with the required version, the application will fail to launch with a message similar to:
+If a required framework or compatible version is not found, the application fails to launch with a message similar to:
 
 ::: zone pivot="os-windows"
 
@@ -100,23 +108,44 @@ The following frameworks were found:
 
 ::: zone-end
 
-The error indicates the name, version, and architecture of the missing framework and the location at which it is expected to be installed. To run the application, you can [install a compatible framework](#install-a-compatible-framework) at the specified ".NET location". If the application is targeting a lower version than one you have installed and you would like to run it on a higher version, you can also [configure roll-forward behavior](#configure-roll-forward-behavior) for the application.
+The error indicates the name, version, and architecture of the missing framework and the location at which it is expected to be installed. To run the application, you can [install a compatible runtime](#install-a-compatible-runtime) at the specified ".NET location". If the application is targeting a lower version than one you have installed and you would like to run it on a higher version, you can also [configure roll-forward behavior](#configure-roll-forward-behavior) for the application.
 
-### Install a compatible framework
+### Install a compatible runtime
 
-The error message includes a link to download the missing framework. You can follow this link to get the appropriate download page. Alternately, the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page offers all available versions of .NET. Select the version matching the one listed in the error message.
+The error message includes a link to download the missing framework. You can follow this link to get to the appropriate download page.
 
-Every version of .NET offers three different runtime downloads. The following table shows the frameworks that each contains.
+Alternately, you can download a runtime from the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page. There are multiple .NET runtime downloads.
 
-| Download name        | Included frameworks |
+The following table shows the frameworks that each runtime contains.
+
+::: zone pivot="os-windows"
+| Runtime download     | Included frameworks |
 | -------------------- | ------------------- |
 | ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App |
 | .NET Desktop Runtime | Microsoft.NETCore.App<br/>Microsoft.WindowsDesktop.App |
 | .NET Runtime         | Microsoft.NETCore.App |
+::: zone-end
 
-To install a compatible framework, on the download page for the required .NET version, find a runtime download containing the missing framework. Once you have found the appropriate runtime download, you can then either install it using an [installer](#run-an-installer) or [script](#run-the-dotnet-install-script). You can also [download the binaries](#download-binaries) and extract them to the desired location.
+::: zone pivot="os-linux,os-macos"
+| Runtime download     | Included frameworks |
+| -------------------- | ------------------- |
+| ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App |
+| .NET Runtime         | Microsoft.NETCore.App |
+::: zone-end
 
-If your existing installation of .NET was installed through an installer or package manager, then the recommended option is to also install the required framework [through an installer](#run-an-installer) or package manager. Otherwise, you can [run the install script](#run-the-dotnet-install-script) or [download the binaries](#download-binaries).
+Select a runtime download containing the missing framework, and install it.
+
+::: zone pivot="os-windows,os-macos"
+On the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, find the runtime download that matches the architecture listed in the error message. You likely want to download an **Installer**.
+::: zone-end
+
+::: zone pivot="os-linux"
+.NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. Note that preview versions of .NET are typically not available through package managers.
+
+You need to install the .NET runtime package for the appropriate version, like `dotnet-runtime6` or `dotnet-aspnet6`.
+::: zone-end
+
+Alternatively, on the [download page](https://dotnet.microsoft.com/download/dotnet) for the required .NET version, you can download [**Binaries**](#download-binaries) for the specified architecture.
 
 In most cases, when the application that failed to launch is using such an installation, the ".NET location" in the error message points to:
 ::: zone pivot="os-windows"
@@ -129,14 +158,9 @@ In most cases, when the application that failed to launch is using such an insta
 `/usr/local/share/dotnet/`
 ::: zone-end
 
-#### Run an installer
+## Other options
 
-::: zone pivot="os-windows,os-macos"
-From the **Installers** column of the runtime download, download the installer matching the required architecture. Run the downloaded installer.
-::: zone-end
-::: zone pivot="os-linux"
-Different Linux distributions provide .NET through different package managers. See [Install .NET on Linux](../install/linux.md) for details. Note that preview versions of .NET are not available through package managers.
-::: zone-end
+There are other installation and workaround options to consider.
 
 #### Run the dotnet-install script
 
@@ -196,10 +220,10 @@ For more details on installation using the script, see [Install with bash automa
 
 #### Download binaries
 
-From the **Binaries** column of the runtime download, download the binary release matching the required architecture. Extract the downloaded archive to the ".NET location" specified in the error message.
+You can download a binary archive of .NET from the [download page](https://dotnet.microsoft.com/download/dotnet). From the **Binaries** column of the runtime download, download the binary release matching the required architecture. Extract the downloaded archive to the ".NET location" specified in the error message.
 
 ::: zone pivot="os-windows"
-For more details on manual installation, see [Install .NET on Windows](../install/windows.md#download-and-manually-install)
+For more details on manual installation, see [Install .NET on Windows](../install/windows.md#install-with-powershell-automation)
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -214,7 +238,7 @@ For more details on manual installation, see [Install .NET on macOS](../install/
 
 If you already have a higher version of the required framework installed, you can make the application run on that higher version by configuring its roll-forward behavior.
 
-When running the application, you can specify the [`--roll-forward` command line option](../tools/dotnet.md#runtime-options) or set the [`DOTNET_ROLL_FORWARD` environment variable](../tools/dotnet-environment-variables.md#dotnet_roll_forward).
+When running the application, you can specify the [`--roll-forward` command line option](../tools/dotnet.md#rollforward) or set the [`DOTNET_ROLL_FORWARD` environment variable](../tools/dotnet-environment-variables.md#dotnet_roll_forward).
 By default, an application requires a framework that matches the same major version that the application targets, but can use a higher minor or patch version. However, application developers may have specified a different behavior. For more details, see [Framework-dependent apps roll-forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 > [!NOTE]

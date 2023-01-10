@@ -35,7 +35,7 @@ When you upgrade and recompile existing code, using an obsolete type or member t
 
 - Review the documentation for this technology area to determine how to respond to the deprecation.
 
-You may choose not to recompile existing code against a later version of the .NET Framework. Instead, you can specify the version of the .NET Framework against which your existing compiled code runs. For example, suppose that you have an application named app1.exe that was compiled against the .NET Framework 3.5, but you want the application to run against the .NET Framework 4.5. This requires the following steps:
+You may choose not to recompile existing code against a later version of the .NET Framework. Instead, you can specify the version of the .NET Framework against which your existing compiled code runs. For example, suppose that you have an application named app1.exe that was compiled against .NET Framework 3.5, but you want the application to run against .NET Framework 4.5. This requires the following steps:
 
 1. Create a configuration file for your main executable and name it *appName*.exe.config, where *appName* is the name of the application executable. For the application named *app1.exe* in our example, you would create a configuration file named *app1.exe.config*.
 
@@ -53,7 +53,7 @@ To target a specific version of .NET Framework, assign one of the following stri
 
 |.NET Framework version|`version` string|
 |-|-|
-|4.8|v4.0|
+|4.8 (including 4.8.1)|v4.0|
 |4.7 (including 4.7.1 and 4.7.2)|v4.0|
 |4.6 (including 4.6.1 and 4.6.2)|v4.0|
 |4.5 (including 4.5.1 and 4.5.2)|v4.0|

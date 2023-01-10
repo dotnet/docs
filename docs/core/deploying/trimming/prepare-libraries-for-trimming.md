@@ -8,39 +8,28 @@ ms.date: 04/16/2021
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), which removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis [warnings](trimming-options.md#analysis-warnings) to detect patterns that may break trimmed apps. This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
-
-## Trim warnings in apps
-
-In .NET 6+, when publishing an app, the `PublishTrimmed` project file element produces trim analysis warnings for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
-
-You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns that are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming. In order to view warnings for your code and all of its dependencies, set the `TrimmerSingleWarn` property to `false` and the full list of warnings will be displayed. The property can also be set from the command line, `/p:TrimmerSingleWarn=false`.
-
-To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](#enable-library-trim-warnings).
-
-If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) if it's not already being trimmed. By enabling trimming, .NET only produces warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#show-detailed-warnings) for the library to see which parts of it are problematic.)
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), which removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis warnings to detect patterns that may break trimmed apps. To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
 
 ## Enable library trim warnings
-
-These instructions show how to enable and resolve static analysis warnings to prepare a library for trimming. Follow these steps if you are authoring a library and either want to proactively make your library trimmable, or have been contacted by app authors who encountered trim warnings from your library.
 
 > [!TIP]
 > Ensure you're using the .NET 6 SDK or later for these steps. They will not work correctly in previous versions.
 
-### Enable the Roslyn analyzer
+There are two ways to find trim warnings in your library:
 
-The quickest and easiest way to see trim warnings is to enable the Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE and catches many issues, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that your library depends on. Because the analysis is incomplete, it's important to follow the steps outlined in the [Show all warnings](#show-all-warnings-with-sample-application) to ensure that your library is fully compatible with trimming.
+  1. Enable project-specific trimming using the `IsTrimmable` property.
+  2. Add your library as a reference to a sample app, and trim the sample app.
+
+Consider doing both. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible in order to see all warnings. Trimming a sample app is more work, but will always show all warnings.
+
+### Enable project-specific trimming
 
 > [!TIP]
-> To use the latest version of the analyzer with the most coverage, consider using the [.Net 7 preview SDK.](https://dotnet.microsoft.com/en-us/download/dotnet). Note this will only update the tooling used to build your app, this does not require you to target the .Net 7 runtime.
+> To get the latest version of the analyzer with the most coverage, use the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet). Note this will only update the tooling used to build your app and doesn't require you to target the .NET 7 runtime.
 
-#### Set `IsTrimmable`
+Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag in your library project file. This will mark your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly will have its unused members trimmed in the final output.
 
-Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in a `<PropertyGroup>` tag your library project file. This will mark your assembly as "trimmable". Being "trimmable" means when your library is used in a trimmed application, the assembly can have its unused members trimmed in the final output. Otherwise, the entire assembly will be kept.
-
-#### Set `EnableTrimAnalyzer`
-
-You can set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in a `<PropertyGroup>` tag in your library project file. This will not have any effect on the output (it will not have metadata indicating it is trimmable), but it will enable trim analysis during build via the Roslyn analyzer.
+If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.
 
 ### Show all warnings with sample application
 
@@ -218,7 +207,7 @@ class TypeCollection
 {
     Type[] types;
 
-    // Ensure that only types with ctors are stored in the array
+    // Ensure that only types with preserved constructors are stored in the array
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
     public Type this[int i]
     {
@@ -257,6 +246,27 @@ public Type this[int i]
         Justification = "The list only contains types stored through the annotated setter.")]
     get => types[i];
     set => types[i] = value;
+}
+```
+
+It is important to underline that it is only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It is not sufficient that the member was simply a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that are not visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that will break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
+
+```csharp
+[UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
+    // Invalid justification and suppression: property being non-reflectively
+    // used by the app doesn't guarantee that the property will be available
+    // for reflection. Properties that are not visible targets of reflection
+    // are already optimized away with Native AOT trimming and may be
+    // optimized away for non-native deployment in the future as well.
+    Justification = "*INVALID* Only need to serialize properties that are used by the app. *INVALID*")]
+public string Serialize(object o)
+{
+    StringBuilder sb = new StringBuilder();
+    foreach (var property in o.GetType().GetProperties())
+    {
+        AppendProperty(sb, property, o);
+    }
+    return sb.ToString();
 }
 ```
 

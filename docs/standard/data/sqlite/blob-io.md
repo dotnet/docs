@@ -18,6 +18,6 @@ After inserting the row, open a stream to write the large object using <xref:Mic
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/StreamingSample/Program.cs?name=snippet_Write)]
 
-To stream the large object out of the database, you must select the rowid or one of its aliases as show here in addition to the large object's column. If you don't select the rowid, the entire object will be loaded into memory. The object returned by `GetStream()` will be a `SqliteBlob` when done correctly.
+To stream the large object out of the database, you must select the rowid or one of its aliases as shown here in addition to the large object's column. If you don't select the rowid, the entire object will be loaded into memory. The object returned by `GetStream()` will be a `SqliteBlob` when done correctly.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/StreamingSample/Program.cs?name=snippet_Read)]

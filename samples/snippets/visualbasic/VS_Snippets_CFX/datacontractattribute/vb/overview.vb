@@ -3,7 +3,6 @@ Imports System.Runtime.Serialization
 Imports System.Xml
 Imports System.Security.Permissions
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 '<snippet1>
 Namespace DataContractAttributeExample
     ' Set the Name and Namespace properties to new values.

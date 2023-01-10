@@ -1,7 +1,0 @@
-<Page
-  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-  WindowTitle="Page That Navigates To Fragment" >
-  <Hyperlink NavigateUri="PageWithFragments.xaml#Fragment1">
-    Navigate To pack Fragment
-  </Hyperlink>
-</Page>

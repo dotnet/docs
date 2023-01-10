@@ -55,7 +55,7 @@ Specifies that the Windows identity always flows across asynchronous points, reg
   
 ## Remarks  
 
- In the .NET Framework versions 1.0 and 1.1, the Windows identity does not flow across asynchronous points. In the .NET Framework version 2.0, there is an <xref:System.Threading.ExecutionContext> object that contains information about the currently executing thread, and flows it across asynchronous points within an application domain. The <xref:System.Security.Principal.WindowsIdentity> also flows as part of the information that flows across the asynchronous points, provided the impersonation was achieved using managed methods such as <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> and not through other means such as platform invoke to native methods. This element is used to specify that the Windows identity does flow across asynchronous points, regardless of how the impersonation was achieved.  
+ In the .NET Framework versions 1.0 and 1.1, the Windows identity does not flow across asynchronous points. In .NET Framework version 2.0, there is an <xref:System.Threading.ExecutionContext> object that contains information about the currently executing thread, and flows it across asynchronous points within an application domain. The <xref:System.Security.Principal.WindowsIdentity> also flows as part of the information that flows across the asynchronous points, provided the impersonation was achieved using managed methods such as <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> and not through other means such as platform invoke to native methods. This element is used to specify that the Windows identity does flow across asynchronous points, regardless of how the impersonation was achieved.  
   
  You can alter this default behavior in two other ways:  
   
@@ -109,6 +109,7 @@ Specifies that the Windows identity always flows across asynchronous points, reg
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [\<legacyImpersonationPolicy> Element](legacyimpersonationpolicy-element.md)

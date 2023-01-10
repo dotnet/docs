@@ -7,7 +7,7 @@ ms.date: 03/18/2022
 
 <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType> is obsolete for <xref:System.Data.DataTable> and <xref:System.Data.DataSet>. Binary serialization relies on <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, which is insecure. If you use <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType> in your code, obsoletion warning [SYSLIB0038](../../../../fundamentals/syslib-diagnostics/syslib0038.md) will be generated at compile time.
 
-In addition, a <xref:System.ComponentModel.InvalidEnumArgumentException> is thrown at run time if you:
+In addition, an <xref:System.ComponentModel.InvalidEnumArgumentException> is thrown at run time if you:
 
 - Set <xref:System.Data.DataSet.RemotingFormat?displayProperty=nameWithType> or <xref:System.Data.DataTable.RemotingFormat?displayProperty=nameWithType> to <xref:System.Data.SerializationFormat.Binary?displayProperty=nameWithType>.
 - Call one of the deserialization constructors for <xref:System.Data.DataTable> or <xref:System.Data.DataSet> with binary data.
@@ -22,7 +22,7 @@ Starting in .NET 7, if you attempt to serialize or deserialize <xref:System.Data
 
 ## Version introduced
 
-.NET 7 Preview 2
+.NET 7
 
 ## Type of breaking change
 

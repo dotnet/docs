@@ -2,12 +2,10 @@
 Imports System.ServiceModel
 Imports System.Net.Security
 Imports System.ServiceModel.Description
-Imports System.Security.Permissions
 Imports System.Security.Cryptography.X509Certificates
 Imports System.Runtime.Serialization
 '</snippet0>
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum)>
 Namespace Samples1
 
     <ServiceContract(ProtectionLevel:=ProtectionLevel.EncryptAndSign)> _

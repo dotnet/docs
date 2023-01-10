@@ -4,16 +4,18 @@
   href: intro.md
 - name: Quickstart (Sense HAT)
   href: quickstarts/sensehat.md
-- name: Microsoft Learn
+- name: Training
   expanded: true
   items:
   - name: Construct Internet of Things devices using the .NET IoT Libraries
-    href: /learn/modules/create-iot-device-dotnet/
+    href: /training/modules/create-iot-device-dotnet/
 - name: Tutorials
   expanded: true
   items:
   - name: Blink an LED
     href: tutorials/blink-led.md
+  - name: Read binary input using GPIO
+    href: tutorials/gpio-input.md
   - name: Read environmental conditions from a sensor
     href: tutorials/temp-sensor.md
   - name: Display text on an LCD
@@ -28,4 +30,4 @@
   - name: Debugging
     href: debugging.md
 - name: API Reference
-  href: ../../api/index.md?view=iot-dotnet-1.1&preserve-view=false
+  href: ../../api/index.md?view=iot-dotnet-latest&preserve-view=true

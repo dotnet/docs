@@ -20,7 +20,7 @@ Object initializers let you assign values to any accessible fields or properties
 
 The object initializers syntax allows you to create an instance, and after that it assigns the newly created object, with its assigned properties, to the variable in the assignment.
 
-Starting with C# 6, object initializers can set indexers, in addition to assigning fields and properties. Consider this basic `Matrix` class:
+Object initializers can set indexers, in addition to assigning fields and properties. Consider this basic `Matrix` class:
 
 [!code-csharp[ObjectInitializer2](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#MatrixDeclaration)]  
 
@@ -97,7 +97,7 @@ You can specify [null](../../language-reference/keywords/null.md) as an element 
   
 [!code-csharp[DictionaryInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#DictionaryIndexerInitializer)]  
 
-The preceding sample generates code that calls the <xref:System.Collections.Generic.Dictionary%602.Item(%600)> to set the values. Before C# 6, you could initialize dictionaries and other associative containers using the following syntax. Notice that instead of indexer syntax, with parentheses and an assignment, it uses an object with multiple values:
+The preceding sample generates code that calls the <xref:System.Collections.Generic.Dictionary%602.Item(%600)> to set the values. You could also initialize dictionaries and other associative containers using the following syntax. Notice that instead of indexer syntax, with parentheses and an assignment, it uses an object with multiple values:
 
 [!code-csharp[DictionaryAddInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#DictionaryAddInitializer)]  
 
@@ -147,6 +147,8 @@ The following example shows an object that implements <xref:System.Collections.I
 
 ## See also
 
+- [Use object initializers (style rule IDE0017)](../../../fundamentals/code-analysis/style-rules/ide0017.md)
+- [Use collection initializers (style rule IDE0028)](../../../fundamentals/code-analysis/style-rules/ide0028.md)
 - [C# Programming Guide](../index.md)
 - [LINQ in C#](../../linq/index.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)

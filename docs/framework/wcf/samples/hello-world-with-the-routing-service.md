@@ -12,10 +12,10 @@ The [HelloRoutingService sample](https://github.com/dotnet/samples/tree/main/fra
 
 1. Using Visual Studio, open HelloRoutingService.sln.
 
-2. press **F5** or **Ctrl**+**Shift**+**B**.
+2. press <kbd>F5</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
     > [!NOTE]
-    > If you press **F5**, the Calculator Client automatically starts. If you press **Ctrl**+**Shift**+**B** (build), you must start following applications yourself.
+    > If you press <kbd>F5</kbd>, the Calculator Client automatically starts. If you press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (build), you must start following applications yourself.
     >
     > 1. Calculator client (./CalculatorClient/bin/client.exe
     > 2. Calculator service (./CalculatorService/bin/service.exe)

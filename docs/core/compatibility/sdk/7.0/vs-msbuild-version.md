@@ -5,7 +5,7 @@ ms.date: 01/09/2023
 ---
 # Version requirements for .NET 7 SDK
 
-Certain .NET SDK preview and release candidate versions require newer versions of Visual Studio and MSBuild.
+Certain .NET SDK versions require newer versions of Visual Studio and MSBuild.
 
 ## Version introduced
 

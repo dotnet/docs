@@ -10,6 +10,8 @@ ms.date: 12/21/2022
 
 .NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
 
+If you're using Docker, consider using [official .NET Docker images](../docker/introduction.md#net-images) instead of installing .NET yourself.
+
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 The Alpine package manager supports installing some versions of .NET. If the .NET package is unavailable, you'll need to install .NET in one of the following alternative ways:
@@ -64,15 +66,14 @@ The following table is a list of currently supported .NET releases and the archi
 
 ## Dependencies
 
-.NET on Alpine Linux requires the following dependencies installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - icu-libs
 - krb5-libs
 - libgcc
 - libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
-- libssl1.1 (Alpine v3.9 or greater)
-- libssl1.0 (Alpine v3.8 or lower)
+- libssl1.1
 - libstdc++
 - zlib
 
@@ -82,10 +83,12 @@ To install the needed requirements, run the following command:
 apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
 ```
 
-To install **libgdiplus**, you may need to specify a repository:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+To install libgdiplus on Alpine 3.16 or newer (older versions don't include the package), run:
 
 ```bash
-apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+apk add libgdiplus
 ```
 
 ## Next steps

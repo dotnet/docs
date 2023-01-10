@@ -21,7 +21,7 @@ The following options control code generation by the compiler. The new MSBuild s
 
 ## DebugType
 
-The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information is added by default for the *Debug* build configuration. It is off by default for the *Release* build configuration.
+The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information is added by default.
 
 ```xml
 <DebugType>pdbonly</DebugType>

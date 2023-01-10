@@ -213,6 +213,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/http/configurehandler" #configurehandler.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/http/generated" #generated.csproj
     schedule:
       interval: "weekly"
@@ -585,6 +591,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/orleans/quickstarts/snippets/url-shortener/orleansurlshortener" #orleansurlshortener.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/orleans/tutorials-and-samples/snippets/custom-grain-storage" #GrainStorage.csproj
     schedule:
       interval: "weekly"
@@ -891,12 +903,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/VS_Snippets_CLR/generatingahash/cs" #generatingahash.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/cs" #decryptxml.csproj
     schedule:
       interval: "weekly"
@@ -1168,12 +1174,6 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB" #LINQtoDataSetExamplesVB.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/generatingahash" #generatingahash.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

@@ -1,5 +1,6 @@
 ﻿Imports System
 Imports System.Globalization
+Imports System.Text.Json
 
 Module Program
     Sub Main(args As String())
@@ -28,6 +29,9 @@ Module Program
         Time_DateTime()
         Console.WriteLine(vbCrLf + "---------- Time Use TimeSpan")
         Time_TimeSpan()
+
+        Console.WriteLine(vbCrLf + "---------- DateOnly and TimeOnly Serialization")
+        DateOnlyAndTimeOnlySerialization()
     End Sub
 
     Sub Date_HebrewCalendar()
@@ -202,7 +206,7 @@ Module Program
 
         '<time_now>
         Dim now = TimeOnly.FromDateTime(DateTime.Now)
-        Console.WriteLine($"It is {Now} right now")
+        Console.WriteLine($"It is {now} right now")
 
         ' This example produces output similar to the following
         ' 
@@ -283,5 +287,43 @@ Module Program
         '</time_datetime>
 
     End Sub
+
+    Sub DateOnlyAndTimeOnlySerialization()
+        '<serialization>
+        Dim originalAppointment As New Appointment With {
+            .Id = Guid.NewGuid(),
+            .Description = "Take dog to veterinarian.",
+            .DateValue = New DateOnly(2002, 1, 13),
+            .StartTime = New TimeOnly(5, 3, 1),
+            .EndTime = New TimeOnly(5, 3, 1)
+}
+        Dim serialized As String = JsonSerializer.Serialize(originalAppointment)
+
+        Console.WriteLine($"Resulting JSON: {serialized}")
+
+        Dim deserializedAppointment As Appointment =
+            JsonSerializer.Deserialize(Of Appointment)(serialized)
+
+        Dim valuesAreTheSame As Boolean =
+            (originalAppointment.DateValue = deserializedAppointment.DateValue AndAlso
+            originalAppointment.StartTime = deserializedAppointment.StartTime AndAlso
+            originalAppointment.EndTime = deserializedAppointment.EndTime AndAlso
+            originalAppointment.Id = deserializedAppointment.Id AndAlso
+            originalAppointment.Description = deserializedAppointment.Description)
+
+        Console.WriteLine(
+            $"Original object has the same values as the deserialized object: {valuesAreTheSame}")
+        '</serialization>
+    End Sub
+
+    '<appointment>
+    Public NotInheritable Class Appointment
+        Public Property Id As Guid
+        Public Property Description As String
+        Public Property DateValue As DateOnly?
+        Public Property StartTime As TimeOnly?
+        Public Property EndTime As TimeOnly?
+    End Class
+    '</appointment>
 
 End Module

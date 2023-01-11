@@ -125,7 +125,7 @@ You declare a `PrintMembers` method in the `DegreeDays` record that doesn't prin
 
 The signature declares a `virtual protected` method to match the compiler's version. Don't worry if you get the accessors wrong; the language enforces the correct signature. If you forget the correct modifiers for any synthesized method, the compiler issues warnings or errors that help you get the right signature.
 
-In C# 10 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would do seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
+In C# 10 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
 
 ## Non-destructive mutation
 

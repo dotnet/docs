@@ -16,12 +16,12 @@ Module Example
         Dim taskArray(9) As Task
         For i As Integer = 0 To taskArray.Length - 1
             taskArray(i) = Task.Factory.StartNew(Sub(obj As Object)
-                                                     Dim data As CustomData = TryCast(obj, CustomData)
-                                                     If data Is Nothing Then Return
+                Dim data As CustomData = TryCast(obj, CustomData)
+                If data Is Nothing Then Return
 
-                                                     data.ThreadNum = Thread.CurrentThread.ManagedThreadId
-                                                 End Sub,
-                                                 New CustomData With {.Name = i, .CreationTime = DateTime.Now.Ticks})
+                data.ThreadNum = Thread.CurrentThread.ManagedThreadId
+            End Sub,
+            New CustomData With {.Name = i, .CreationTime = DateTime.Now.Ticks})
         Next
         Task.WaitAll(taskArray)
 
@@ -35,14 +35,14 @@ Module Example
     End Sub
 End Module
 ' The example displays output like the following:
-'    Task #0 created at 635116451245250515, ran on thread #3, RanToCompletion
-'    Task #1 created at 635116451245270515, ran on thread #4, RanToCompletion
-'    Task #2 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #3 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #4 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #5 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #6 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #7 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #8 created at 635116451245270515, ran on thread #3, RanToCompletion
-'    Task #9 created at 635116451245270515, ran on thread #3, RanToCompletion
+'     Task #0 created at 635116412924597583, ran on thread #3.
+'     Task #1 created at 635116412924607584, ran on thread #4.
+'     Task #2 created at 635116412924607584, ran on thread #4.
+'     Task #3 created at 635116412924607584, ran on thread #4.
+'     Task #4 created at 635116412924607584, ran on thread #3.
+'     Task #5 created at 635116412924607584, ran on thread #3.
+'     Task #6 created at 635116412924607584, ran on thread #4.
+'     Task #7 created at 635116412924607584, ran on thread #4.
+'     Task #8 created at 635116412924607584, ran on thread #3.
+'     Task #9 created at 635116412924607584, ran on thread #4.
 ' </Snippet23>

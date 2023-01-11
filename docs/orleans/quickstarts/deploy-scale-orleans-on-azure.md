@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.devlang: csharp
 ---
 
-# Quickstart: Host and scale an Orleans app on Azure
+# Quickstart: Deploy and scale an Orleans app on Azure
 
 In this quickstart, you'll deploy and scale an Orleans URL shortener app on Azure Container Apps. The app allows users to submit a full URL to the app, which will return a shortened version they can share with others to direct them to the original site. Orleans and Azure provide the scalability features necessary to host high traffic apps like URL shorteners. Orleans is also compatible with any other hosting service that supports .NET.
 

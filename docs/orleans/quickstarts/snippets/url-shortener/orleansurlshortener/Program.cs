@@ -24,7 +24,7 @@ app.MapGet("/shorten",
 
         // Create and persist a grain with the shortened ID and full URL
         var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
-        await shortenerGrain.SetUrl(shortenedRouteSegment, redirect);
+        await shortenerGrain.SetUrl(redirect);
 
         // Return the shortened URL for later use
         var resultBuilder = new UriBuilder($"{ request.Scheme }://{ request.Host.Value}")

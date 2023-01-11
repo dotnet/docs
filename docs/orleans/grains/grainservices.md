@@ -36,7 +36,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
 
         public DataService(
             IServiceProvider services,
-            IGrainIdentity id,
+            GrainId id,
             Silo silo,
             ILoggerFactory loggerFactory,
             IGrainFactory grainFactory)

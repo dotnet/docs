@@ -85,6 +85,8 @@ The preceding examples use type inference for the type being serialized. An over
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
+[!INCLUDE [dateonly-and-timeonly-serialization](../../datetime/includes/dateonly-and-timeonly-serialization.md)]
+
 ### Serialization example
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:

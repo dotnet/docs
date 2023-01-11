@@ -6,7 +6,7 @@ ms.date: 01/11/2023
 
 # Debug Windows dumps
 
-**This article applies to: ✔️** .NET Core 3.0 SDK and later versions
+**This article applies to: ✔️** .NET Core 3.1 and later versions
 
 ## Analyze dumps on Windows
 

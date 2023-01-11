@@ -1,7 +1,7 @@
 ---
 title: Dumps - .NET
 description: An introduction to dumps in .NET.
-ms.date: 12/13/2022
+ms.date: 01/11/2023
 ---
 
 # Dumps
@@ -18,33 +18,19 @@ Dumps can be collected in a variety of ways depending on which platform your app
 > [!TIP]
 > For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
 
-### Collect dumps on crash
+* You can use environment variables to configure your application to [collect a dump on a crash](collect-dumps-crash.md).
 
-You can use environment variables to configure your application to [collect a dump on a crash](collect-dumps-crash.md).
+* You may want to collect a dump when the app hasn't crashed yet. For example, if you want to examine the state of an application that seems to be in a deadlock, configuring the environment variables to collect dumps on crash will not be helpful because the app is still running.
 
-### Collect dumps at a specific point in time
+* [dotnet-dump](dotnet-dump.md) is a simple cross-platform command line tool to collect a dump. [dotnet-monitor] is an alternative if you need to collect a dump remotely or with automated triggering conditions. Several other debugger tools such as [Visual Studio](/visualstudio-docs/docs/debugger/using-dump-files) or [windbg](/windows-hardware/drivers/debugger/-dump--create-dump-file-) also have dump collection features.
 
-You may want to collect a dump when the app hasn't crashed yet. For example, if you want to examine the state of an application that seems to be in a deadlock, configuring the environment variables to collect dumps on crash will not be helpful because the app is still running.
-
-To collect a dump at any given point of time, you can use `dotnet-dump`, a CLI tool for collecting and analyzing dumps. For more information on how to use it to collect dumps, see [Dump collection and analysis utility (dotnet-dump)](dotnet-dump.md).
-
-### Collect dumps in a production environment or distributed system
-
-If you are running your app in production or you are running it in a distributed manner (several services, replicas), [dotnet-monitor](dotnet-monitor.md) provides support for many common scenarios and ad-hoc diagnostic investigations, including dump collection and egress.
-
-### Collect dumps on Windows under a debugger
-
-Dumps can be collected on [Visual Studio](/visualstudio-docs/docs/debugger/using-dump-files) under the debugger and on [WinDbg](/windows-hardware/drivers/debugger/-dump--create-dump-file-).
+* If you are running your app in production or you are running it in a distributed manner (several services, replicas), [dotnet-monitor](dotnet-monitor.md) provides support for many common scenarios and ad-hoc diagnostic investigations, including dump collection and egress.
 
 ## Analyze dumps
 
-### Analyze dumps collected on Linux
+* Navigate to [Debug Linux dumps](debug-linux-dumps.md) for information regarding analyzing dumps collected on Linux.
 
-Navigate to [Debug Linux dumps](debug-linux-dumps.md) for information regarding analyzing dumps collected on Linux.
-
-### Analyze dumps collected on Windows
-
-Navigate to [Debug Windows Dumps](debug-windows-dumps.md) for information regarding analyzing dumps collected on Windows.
+* Navigate to [Debug Windows Dumps](debug-windows-dumps.md) for information regarding analyzing dumps collected on Windows.
 
 ### Memory Analysis
 

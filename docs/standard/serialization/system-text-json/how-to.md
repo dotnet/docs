@@ -85,16 +85,6 @@ The preceding examples use type inference for the type being serialized. An over
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
-With .NET 7, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:
-
-:::code source="snippets/system-text-json-how-to/csharp/RoundtripDateOnly.cs" id="SeriesDataPoint":::
-:::code source="snippets/system-text-json-how-to/vb/RoundtripDateOnly.vb" id="SeriesDataPoint":::
-
-The following example serializes the `SeriesDataPoint` object, displays the resulting JSON, and then deserializes it back into a new instance of the `SeriesDataPoint` type. Finally, the original and newly deserialized instances are compared for equality and the results are written to the console:
-
-:::code source="snippets/system-text-json-how-to/csharp/RoundtripDateOnly.cs" id="RoundtripDateOnly":::
-:::code source="snippets/system-text-json-how-to/vb/RoundtripDateOnly.vb" id="RoundtripDateOnly":::
-
 ### Serialization example
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:

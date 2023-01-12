@@ -55,7 +55,7 @@ Class CancelByPolling
 
         If token.IsCancellationRequested = True Then
             ' Cleanup or undo here if necessary...
-            Console.WriteLine(vbCrLf + "Cancelling before column 0'.", col)
+            Console.WriteLine(vbCrLf + "Operation canceled")
             Console.WriteLine("Press any key to exit.")
 
             ' If using Task:

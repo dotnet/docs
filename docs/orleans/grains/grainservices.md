@@ -28,9 +28,9 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
 
 1. Create the `DataService` grain service. It's good to know that you can also inject an <xref:Orleans.IGrainFactory> so you can make grain calls from your `GrainService`.
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
+    <!-- markdownlint-disable MD044 -->
+    :::zone target="docs" pivot="orleans-7-0"
+    <!-- markdownlint-enable MD044 -->
 
     ```csharp
     [Reentrant]
@@ -64,11 +64,11 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
     }
     ```
 
-:::zone-end
+    :::zone-end
 
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
+    <!-- markdownlint-disable MD044 -->
+    :::zone target="docs" pivot="orleans-3-x"
+    <!-- markdownlint-enable MD044 -->
 
     ```csharp
     [Reentrant]
@@ -102,7 +102,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
     }
     ```
 
-:::zone-end
+    :::zone-end
 
 1. Create an interface for the <xref:Orleans.Runtime.Services.GrainServiceClient%601>`GrainServiceClient` to be used by other grains to connect to the `GrainService`.
 

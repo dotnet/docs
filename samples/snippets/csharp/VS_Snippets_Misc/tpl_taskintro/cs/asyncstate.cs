@@ -3,6 +3,8 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
+namespace TaskIntro;
+
 class CustomData
 {
     public long CreationTime;
@@ -10,7 +12,7 @@ class CustomData
     public int ThreadNum;
 }
 
-public class Example
+public class AsyncState
 {
     public static void Main()
     {

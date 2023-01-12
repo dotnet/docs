@@ -28,6 +28,48 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
 
 1. Create the `DataService` grain service. It's good to know that you can also inject an <xref:Orleans.IGrainFactory> so you can make grain calls from your `GrainService`.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+    ```csharp
+    [Reentrant]
+    public class DataService : GrainService, IDataService
+    {
+        readonly IGrainFactory _grainFactory;
+
+        public DataService(
+            IServiceProvider services,
+            GrainId id,
+            Silo silo,
+            ILoggerFactory loggerFactory,
+            IGrainFactory grainFactory)
+            : base(id, silo, loggerFactory)
+        {
+            _grainFactory = grainFactory;
+        }
+
+        public override Task Init(IServiceProvider serviceProvider) =>
+            base.Init(serviceProvider);
+
+        public override Task Start() => base.Start();
+
+        public override Task Stop() => base.Stop();
+
+        public Task MyMethod()
+        {
+            // TODO: custom logic here.
+            return Task.CompletedTask;
+        }
+    }
+    ```
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
     ```csharp
     [Reentrant]
     public class DataService : GrainService, IDataService
@@ -59,6 +101,8 @@ A <xref:Orleans.Runtime.GrainService> is a special grain; one that has no stable
         }
     }
     ```
+
+:::zone-end
 
 1. Create an interface for the <xref:Orleans.Runtime.Services.GrainServiceClient%601>`GrainServiceClient` to be used by other grains to connect to the `GrainService`.
 

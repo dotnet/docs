@@ -3,8 +3,9 @@ title: DateTime and DateTimeOffset support in System.Text.Json
 description: An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
 author: layomia
 ms.author: laakinri
-ms.date: 08/09/2022
+ms.date: 01/11/2023
 ms.custom: devdivchpfy22
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON, Serializer, Utf8"
   - "JSON DateTime, JSON DateTimeOffset"
@@ -20,6 +21,8 @@ The `System.Text.Json` library parses and writes <xref:System.DateTime> and <xre
 [Converters](xref:System.Text.Json.Serialization.JsonConverter%601) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>. You can also use <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to implement custom support.
 
 ## Support for the ISO 8601-1:2019 format
+
+::: zone pivot="dotnet-6-0,dotnet-7-0,dotnet-5-0,dotnet-core-3-1"
 
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>,
 and <xref:System.Text.Json.JsonElement> types parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset>
@@ -59,6 +62,15 @@ The lower level <xref:System.Text.Json.Utf8JsonWriter> writes <xref:System.DateT
 Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonReader> will cause it to throw a <xref:System.FormatException>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error/Program.cs":::
+
+::: zone-end
+::: zone pivot="dotnet-7-0"
+
+## Serialize DateOnly and TimeOnly properties
+
+[!INCLUDE [dateonly-and-timeonly-serialization-cs](includes/dateonly-and-timeonly-serialization-cs.md)]
+
+::: zone-end
 
 ## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset>
 

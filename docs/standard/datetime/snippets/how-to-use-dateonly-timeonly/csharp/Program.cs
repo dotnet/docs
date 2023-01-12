@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text.Json;
 
 Console.WriteLine("---------- Date Hebrew Calendar");
 Date_HebrewCalendar();
@@ -25,6 +26,9 @@ Console.WriteLine("\n---------- Time Convert DateTime");
 Time_DateTime();
 Console.WriteLine("\n---------- Time Use TimeSpan");
 Time_TimeSpan();
+
+Console.WriteLine("\n---------- DateOnly and TimeOnly Serialization");
+DateOnlyAndTimeOnlySerialization();
 
 
 void Date_HebrewCalendar()
@@ -277,3 +281,35 @@ void Time_DateTime()
     */
     //</time_datetime>
 }
+
+void DateOnlyAndTimeOnlySerialization()
+{
+    // <serialization>
+    Appointment originalAppointment = new(
+        Id: Guid.NewGuid(),
+        Description: "Take dog to veterinarian.",
+        Date: new DateOnly(2002, 1, 13),
+        StartTime: new TimeOnly(5,15),
+        EndTime: new TimeOnly(5, 45));
+    string serialized = JsonSerializer.Serialize(originalAppointment);
+
+    Console.WriteLine($"Resulting JSON: {serialized}");
+
+    Appointment deserializedAppointment =
+        JsonSerializer.Deserialize<Appointment>(serialized)!;
+
+    bool valuesAreTheSame = originalAppointment == deserializedAppointment;
+    Console.WriteLine($"""
+        Original record has the same values as the deserialized record: {valuesAreTheSame}
+        """);
+    // </serialization>
+}
+
+// <appointment>
+sealed file record Appointment(
+    Guid Id,
+    string Description,
+    DateOnly Date,
+    TimeOnly StartTime,
+    TimeOnly EndTime);
+// </appointment>

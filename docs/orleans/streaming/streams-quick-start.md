@@ -1,27 +1,50 @@
 ---
 title: Orleans streaming quickstart
 description: Learn from the streaming quickstart in .NET Orleans.
-ms.date: 12/06/2022
+ms.date: 01/05/2023
 zone_pivot_groups: orleans-version
 ---
 
 # Orleans streaming quickstart
 
-This guide will show you a quick way to set up and use Orleans Streams.
-To learn more about the details of the streaming features, read other parts of this documentation.
+This guide will show you a quick way to set up and use Orleans Streams. To learn more about the details of the streaming features, read other parts of this documentation.
 
 ## Required configurations
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+In this guide, you'll use a memory-based stream that uses grain messaging to send stream data to subscribers. You will use the in-memory storage provider to store lists of subscriptions. Using memory-based mechanisms for streaming and storage is only intended for local development and testing, and isn't intended for production environments.
+
+On the silo, where `silo` is an <xref:Orleans.Hosting.ISiloBuilder>, call <xref:Orleans.Hosting.SiloBuilderExtensions.AddMemoryStreams%2A>:
+
+```csharp
+silo.AddMemoryStreams("StreamProvider")
+    .AddMemoryGrainStorage("PubSubStore");
+```
+
+On the cluster client, where `client` is an <xref:Orleans.Hosting.IClientBuilder>, call <xref:Orleans.Hosting.ClientBuilderStreamingExtensions.AddMemoryStreams%2A>.
+
+```csharp
+client.AddMemoryStreams("StreamProvider");
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
 
-On the silo, where hostBuilder is an ISiloHostBuilder
+On the silo, where `hostBuilder` is an `ISiloHostBuilder`, call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
            .AddMemoryGrainStorage("PubSubStore");
 ```
 
-On the cluster client, where `clientBuilder` is an `IClientBuilder`.
+On the cluster client, where `clientBuilder` is an `IClientBuilder`, call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
 
 ```csharp
 clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");
@@ -37,7 +60,9 @@ siloBuilder
         options => options.OptimizeForImmutableData = false);
 ```
 
-Now we can create streams, send data using them as producers and also receive data as subscribers.
+:::zone-end
+
+You can create streams, send data using them as producers and also receive data as subscribers.
 
 ## Producing events
 

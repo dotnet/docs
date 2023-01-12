@@ -15,16 +15,16 @@ This guide will show you a quick way to set up and use Orleans Streams. To learn
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-In this guide, we'll use a memory-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
+In this guide, you'll use a memory-based stream that uses grain messaging to send stream data to subscribers. You will use the in-memory storage provider to store lists of subscriptions. Using memory-based mechanisms for streaming and storage is only intended for local development and testing, and isn't intended for production environments.
 
-On the silo, where `silo` is an <xref:Orleans.Hosting.ISiloBuilder> call <xref:Orleans.Hosting.SiloBuilderExtensions.AddMemoryStreams%2A>:
+On the silo, where `silo` is an <xref:Orleans.Hosting.ISiloBuilder>, call <xref:Orleans.Hosting.SiloBuilderExtensions.AddMemoryStreams%2A>:
 
 ```csharp
 silo.AddMemoryStreams("StreamProvider")
     .AddMemoryGrainStorage("PubSubStore");
 ```
 
-On the cluster client, where `client` is an <xref:Orleans.Hosting.IClientBuilder> call <xref:Orleans.Hosting.ClientBuilderStreamingExtensions.AddMemoryStreams%2A>.
+On the cluster client, where `client` is an <xref:Orleans.Hosting.IClientBuilder>, call <xref:Orleans.Hosting.ClientBuilderStreamingExtensions.AddMemoryStreams%2A>.
 
 ```csharp
 client.AddMemoryStreams("StreamProvider");
@@ -37,14 +37,14 @@ client.AddMemoryStreams("StreamProvider");
 
 In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
 
-On the silo, where `hostBuilder` is an `ISiloHostBuilder` call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
+On the silo, where `hostBuilder` is an `ISiloHostBuilder`, call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
            .AddMemoryGrainStorage("PubSubStore");
 ```
 
-On the cluster client, where `clientBuilder` is an `IClientBuilder` call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
+On the cluster client, where `clientBuilder` is an `IClientBuilder`, call <xref:Orleans.Hosting.ClientStreamExtensions.AddSimpleMessageStreamProvider%2A>.
 
 ```csharp
 clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");

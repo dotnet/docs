@@ -322,7 +322,7 @@ To use streams you need to enable stream providers via the silo host or cluster 
 <!-- markdownlint-enable MD044 -->
 
 ```csharp
-hostBuilder.AddMemoryStreams("SMSProvider")
+hostBuilder.AddMemoryStreams("StreamProvider")
     .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
         optionsBuilder => optionsBuilder.Configure(
             options => options.ConfigureTableServiceClient("<Secret>")))

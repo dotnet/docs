@@ -57,3 +57,7 @@ A majority of .NET projects fail to publish using the mentioned properties witho
 If your project is impacted, you can disable the automatic `RuntimeIdentifier` by adding `<UseCurrentRuntimeIdentifier>false</UseCurrentRuntimeIdentifier>` to your project file.
 
 If you encounter a break due to the output path changing, add `<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>` to your project file.
+
+## See also
+
+- [Automatic RuntimeIdentifier for publish only](automatic-rid-publish-only.md)

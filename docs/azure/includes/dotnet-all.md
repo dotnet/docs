@@ -239,7 +239,7 @@
 | Resource Management - Workload Monitor | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadMonitor/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadMonitor_1.0.0-beta.1/sdk/workloadmonitor/Azure.ResourceManager.WorkloadMonitor/) |
 | Resource Management - Workloads | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Workloads/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Workloads_1.0.0-beta.1/sdk/workloads/Azure.ResourceManager.Workloads/) |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Azure.Communication.Calling | NuGet [1.0.0-beta.34](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.34) |  |  |
+| Azure.Communication.Calling | NuGet [1.0.0-beta.35](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.35) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
@@ -262,7 +262,7 @@
 | Microsoft.Azure.Functions.Worker.Core | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.8.0)<br>NuGet [1.9.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.9.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [3.0.9](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/3.0.9)<br>NuGet [4.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.DurableTask | NuGet [1.0.0-rc.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.0-rc.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.2.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.1.0) |  |  |
@@ -477,10 +477,10 @@
 | Service Bus | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.ServiceBus-readme) | GitHub [5.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ServiceBus_5.2.0/sdk/servicebus/Microsoft.Azure.ServiceBus/) |
 | Service Bus | NuGet [6.2.2](https://www.nuget.org/packages/WindowsAzure.ServiceBus/6.2.2) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
-| SignalR | NuGet [1.20.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.20.0) |  | GitHub [1.20.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
-| SignalR - ASP.NET | NuGet [1.20.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.20.0) |  | GitHub [1.20.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
+| SignalR | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.21.0) |  | GitHub [1.21.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
+| SignalR - ASP.NET | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.21.0) |  | GitHub [1.21.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
-| SignalR - Protocols | NuGet [1.20.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.20.0) |  | GitHub [1.20.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
+| SignalR - Protocols | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.21.0) |  | GitHub [1.21.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.9.0) |  | GitHub [1.9.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
 | Speech | NuGet [1.24.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.24.2) |  |  |
 | Speech Remote Conversation | NuGet [1.24.2](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.24.2) |  |  |
@@ -734,7 +734,7 @@
 | Resource Management - Service Bus | NuGet [0.19.0-preview](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.ServiceBus/0.19.0-preview) |  |  |
 | Resource Management - Workload Monitor | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.WorkloadMonitor/1.0.0-preview) |  |  |
 | Security Insights | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityInsights/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityInsights_2.0.0/sdk/securityinsights/Microsoft.Azure.Management.SecurityInsights/) |
-| SignalR Management | NuGet [1.20.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.20.0) |  | GitHub [1.20.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
+| SignalR Management | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.21.0) |  | GitHub [1.21.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
 | SQL Server Mangement - Key Vault Provider | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider/2.4.0) |  |  |
 | WindowsAzure Management | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management/4.1.3) |  |  |
 | WindowsAzure Management - Automation | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Automation/1.0.3) |  |  |

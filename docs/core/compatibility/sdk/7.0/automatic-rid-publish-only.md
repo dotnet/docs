@@ -1,5 +1,5 @@
 ---
-title: "Breaking change: "
+title: "Breaking change: Automatic RuntimeIdentifier for publish only"
 description: Learn about a breaking change in the .NET 7 SDK where a RuntimeIdentifier is automatically added to projects only for the dotnet publish command.
 ms.date: 01/12/2023
 ---

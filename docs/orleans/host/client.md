@@ -144,6 +144,8 @@ There are two scenarios in which a cluster client can experience connectivity is
 
 In the first case, the client will attempt to connect to a silo. If the client is unable to connect to any silo, it will throw an exception to indicate what went wrong. You can register an <xref:Orleans.IClientConnectionRetryFilter> to handle the exception and decide whether to retry or not. If no retry filter is provided, or if the retry filter returns `false`, the client gives up for good.
 
+:::code source="snippets/ClientConnectRetryFilter.cs" id="siloexc":::
+
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->

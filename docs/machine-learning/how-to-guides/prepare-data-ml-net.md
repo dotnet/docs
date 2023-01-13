@@ -3,7 +3,7 @@ title: Prepare data for building a model
 description: Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 11/06/2022
+ms.date: 01/13/2023
 ms.custom: mvc, how-to, title-hack-0625
 ms.topic: how-to
 #Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET
@@ -336,3 +336,7 @@ Using the first entry as an example, the following is a detailed description of 
 |4. MapValueToKey | Maps the values to keys (categories) based on the input data |  [1,2]
 |5. ProduceNGrams | Transforms text into sequence of consecutive words | [1,1,1,0,0]
 |6. NormalizeLpNorm | Scale inputs by their lp-norm | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ]
+
+## Custom Data Transforms
+
+Lorem ....

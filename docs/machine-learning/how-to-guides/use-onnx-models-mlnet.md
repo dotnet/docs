@@ -1,7 +1,7 @@
 ---
 title: How to use ONNX models in ML.NET
 description: Learn how to use ONNX models in ML.NET
-ms.date: 01/14/2023
+ms.date: 01/18/2023
 ms.custom: mvc,how-to
 author: luisquintanilla
 ms.author: luquinta
@@ -137,10 +137,21 @@ The `VectorType` attribute tells ML.NET that this field is a vector of the speci
 
 For more information on defining input and output schemas with classes, see the [load data in ML.NET guide](./load-data-ml-net.md#create-the-data-model).
 
-#### Use ShapeDictionary
+#### Use shape dictionary
 
-If you prefer not to use classes to define your model schema, you can use the ShapeDictionary. 
+If you prefer not to use classes to define your model schema, you can use a shape dictionary. 
 
+The inputs and outputs of a ResNet50 v2 model could be represented as follows: 
+
+```csharp
+var shapeDictionary = new Dictionary<string, int[]>()
+{
+    {"data", new int[] {1,3,224,224}}
+    {"resnetv24_dense0_fwd", new int[] {1,1000}}    
+}
+```
+
+Note that with this approach you lost some type information in comparison to using classes. 
 
 #### Working with unknown dimensions
 
@@ -148,4 +159,9 @@ ML.NET supports up to one unknown dimension. Unknown dimensions can be specified
 
 ### Create ONNX model pipeline
 
+#### Preprocessing
+
+#### Postprocessing
+
+#### Use GPU
 

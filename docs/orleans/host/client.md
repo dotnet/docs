@@ -1,7 +1,8 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 03/16/2022
+ms.date: 01/13/2023
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans clients
@@ -48,6 +49,39 @@ In a typical setup, a frontend webserver:
 
 Before a grain client can be used for making calls to grains hosted in an Orleans cluster, it needs to be configured, initialized, and connected to the cluster.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+Configuration is provided via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A>> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
+
+Consider the following example of a client configuration:
+
+```csharp
+// Alternatively, use Host.CreateDefaultBuilder(args)
+using IHost host = new HostBuilder()
+    .UseOrleansClient(clientBuilder =>
+    {
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "my-first-cluster";
+            options.ServiceId = "MyOrleansService";
+        });
+
+        clientBuilder.UseAzureStorageClustering(
+            options => options.ConfigureTableServiceClient(connectionString))
+    })
+    .Build();
+```
+
+When the `host` is started, the client will be configured and is available through it's constructed service provider instance.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 Configuration is provided via <xref:Orleans.ClientBuilder> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
 Example of a client configuration:
@@ -71,6 +105,8 @@ Lastly, we need to call `Connect()` method on the constructed client object to m
 ```csharp
 await client.Connect();
 ```
+
+:::zone-end
 
 ### Make calls to grains
 

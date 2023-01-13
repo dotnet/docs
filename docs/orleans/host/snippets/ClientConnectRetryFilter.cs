@@ -3,21 +3,21 @@ using Orleans.Runtime;
 internal sealed class ClientConnectRetryFilter : IClientConnectionRetryFilter
 {
     private int _retryCount = 0;
-    private readonly int _maxRetry = 5;
-    private readonly int _delay = 1_000;
+    private const int MaxRetry = 5;
+    private const int Delay = 1_500;
 
     public async Task<bool> ShouldRetryConnectionAttempt(
         Exception exception,
         CancellationToken cancellationToken)
     {
-        if (_retryCount >= _retryCount)
+        if (_retryCount >= MaxRetry)
         {
             return false;
         }
 
         if (exception is SiloUnavailableException siloUnavailableException)
         {
-            await Task.Delay(++ _retryCount * _delay, cancellationToken);
+            await Task.Delay(++ _retryCount * Delay, cancellationToken);
             return true;
         }
 

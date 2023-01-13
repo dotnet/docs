@@ -1308,8 +1308,7 @@ builder
     .WithLogger(
         fun loggerConfiguration ->
         // ...
-        ()
-    )
+        ())
 ```
 
 ## Formatting declarations

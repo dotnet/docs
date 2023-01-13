@@ -17,7 +17,7 @@ Issues and tasks for all but the API reference repository are tracked here. We h
 
 ## :purple_heart: Contribute
 
-We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository. If you contribution includes 3rd party dependencies, see our guidance on using [3rd party dependencies](styleguide/3rdPartyDependencies.md).
+We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository. If your contribution includes third-party dependencies, see our guidance on using [third-party dependencies](styleguide/3rdPartyDependencies.md).
 
 To contribute, see:
 

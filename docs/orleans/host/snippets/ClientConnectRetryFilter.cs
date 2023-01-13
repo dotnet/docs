@@ -15,7 +15,8 @@ internal sealed class ClientConnectRetryFilter : IClientConnectionRetryFilter
             return false;
         }
 
-        if (exception is SiloUnavailableException siloUnavailableException)
+        if (!cancellationToken.IsCancellationRequested &&
+            exception is SiloUnavailableException siloUnavailableException)
         {
             await Task.Delay(++ _retryCount * Delay, cancellationToken);
             return true;

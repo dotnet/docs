@@ -74,7 +74,7 @@ using IHost host = new HostBuilder()
     .Build();
 ```
 
-When the `host` is started, the client will be configured and is available through it's constructed service provider instance.
+When the `host` is started, the client will be configured and is available through its constructed service provider instance.
 
 :::zone-end
 
@@ -127,11 +127,28 @@ The major difference between making calls to grains from client code and from wi
 
 There are situations in which a simple request-response pattern is not enough, and the client needs to receive asynchronous notifications. For example, a user might want to be notified when a new message has been published by someone that she is following.
 
-The use of [Observers](../grains/observers.md) is one such mechanism that enables exposing client-side objects as grain-like targets to get invoked by grains. Calls to observers do not provide any indication of success or failure, as they are sent as a one-way best effort message. So it is the responsibility of the application code to build a higher level reliability mechanism on top of observers where necessary.
+The use of [Observers](../grains/observers.md) is one such mechanism that enables exposing client-side objects as grain-like targets to get invoked by grains. Calls to observers do not provide any indication of success or failure, as they are sent as a one-way best effort message. So it is the responsibility of the application code to build a higher-level reliability mechanism on top of observers where necessary.
 
 Another mechanism that can be used for delivering asynchronous messages to clients is [Streams](../streaming/index.md). Streams expose indications of success or failure of delivery of individual messages, and hence enable reliable communication back to the client.
 
 ### Client connectivity
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+There are two scenarios in which a cluster client can experience connectivity issues:
+
+* When the client attempts to connect to a silo.
+* When making calls on grain references that were obtained from a connected cluster client.
+
+In the first case, the client will attempt to connect to a silo. If the client is unable to connect to any silo, it will throw an exception to indicate what went wrong. You can register an <xref:Orleans.IClientConnectionRetryFilter> to handle the exception and decide whether to retry or not. If no retry filter is provided, or if the retry filter returns `false`, the client gives up for good.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
@@ -151,20 +168,11 @@ var client = new ClientBuilder()
     .Build();
 ```
 
+:::zone-end
+
 In the second case, where a connection issue occurs during a grain call, a <xref:Orleans.Runtime.SiloUnavailableException> will be thrown on the client-side. This could be handled like so:
 
-```csharp
-IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
-
-try
-{
-    await player.JoinGame(game);
-}
-catch (SiloUnavailableException)
-{
-    // Lost connection to the cluster...
-}
-```
+:::code source="snippets/Prgoram.cs" id="siloexc":::
 
 The grain reference is not invalidated in this situation; the call could be retried on the same reference later when a connection might have been re-established.
 

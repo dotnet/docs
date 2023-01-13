@@ -71,9 +71,7 @@ The YOLO model takes an image `3(RGB) x 416px x 416px`. The model takes this inp
 
 ### What is an ONNX model?
 
-The Open Neural Network Exchange (ONNX) is an open source format for AI models. ONNX supports interoperability between frameworks. This means you can train a model in one of the many popular machine learning frameworks like PyTorch, convert it into ONNX format and consume the ONNX model in a different framework like ML.NET. To learn more, visit the [ONNX website](https://onnx.ai/).
-
-![Diagram of ONNX supported formats being used.](./media/object-detection-onnx/onnx-supported-formats.png)
+The Open Neural Network Exchange (ONNX) is an open source format for AI models. ONNX supports interoperability between frameworks. For more information, see the [ONNX model guide](../how-to-guides/use-onnx-models-mlnet.md).
 
 The pre-trained Tiny YOLOv2 model is stored in ONNX format, a serialized representation of the layers and learned patterns of those layers. In ML.NET, interoperability with ONNX is achieved with the [`ImageAnalytics`](xref:Microsoft.ML.Transforms.Image) and [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) NuGet packages. The [`ImageAnalytics`](xref:Microsoft.ML.Transforms.Image) package contains a series of transforms that take an image and encode it into numerical values that can be used as input into a prediction or training pipeline. The [`OnnxTransformer`](xref:Microsoft.ML.Transforms.Onnx.OnnxTransformer) package leverages the ONNX Runtime to load an ONNX model and use it to make predictions based on input provided.
 

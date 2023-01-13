@@ -165,3 +165,6 @@ ML.NET supports up to one unknown dimension. Unknown dimensions can be specified
 
 #### Use GPU
 
+## Next Steps
+
+- [Detect Objects using YOLO ONNX model in ML.NET](../tutorials/object-detection-onnx.md)

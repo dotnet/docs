@@ -172,7 +172,7 @@ var client = new ClientBuilder()
 
 In the second case, where a connection issue occurs during a grain call, a <xref:Orleans.Runtime.SiloUnavailableException> will be thrown on the client-side. This could be handled like so:
 
-:::code source="snippets/Prgoram.cs" id="siloexc":::
+:::code source="snippets/Program.cs" id="siloexc":::
 
 The grain reference is not invalidated in this situation; the call could be retried on the same reference later when a connection might have been re-established.
 

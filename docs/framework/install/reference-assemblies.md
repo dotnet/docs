@@ -7,7 +7,7 @@ helpviewer_keywords:
 ---
 # Build apps against Microsoft.NETFramework.ReferenceAssemblies
 
-When you target a particular version of .NET Framework, by default your application is built by using the reference assemblies that are included with that version's developer pack. In scenarios where the matching developer pack cannot be installed on the computer, you can alternatively build against reference assemblies distributed via a NuGet package.
+When you target a particular version of .NET Framework in a traditional, non-SDK-style project, by default your application is built by using the reference assemblies that are included with that version's developer pack. In scenarios where the matching developer pack cannot be installed on the computer, you can alternatively build against reference assemblies distributed via a NuGet package.
 
 ## Update project files
 
@@ -23,6 +23,9 @@ This can be done with the NuGet Package Manager UI in Visual Studio, with [dotne
 
 > [!NOTE]
 > Projects that contain a project reference need to be restored before they can be built. When building with Visual Studio, either in the IDE or on the command line with *MSBuild.exe*, make sure to explicitly execute the *restore* target prior to building the project. This is done on the Developer Command Prompt by executing `msbuild /t:restore` in the project directory.
+
+> [!NOTE]
+> SDK-style projects include a reference to Microsoft.NETFramework.ReferenceAssemblies by default.
 
 ## References
 

@@ -22,6 +22,9 @@ The following projects might be affected by this change:
 
 There are other potential nuances that could break individual situations that we're not yet aware of.
 
+> [!NOTE]
+> This change was restricted to the `dotnet publish` command in .NET 7.0.200 SDK. For more information, see [Automatic RuntimeIdentifier for publish only](automatic-rid-publish-only.md).
+
 ## Version introduced
 
 .NET 7
@@ -57,3 +60,7 @@ A majority of .NET projects fail to publish using the mentioned properties witho
 If your project is impacted, you can disable the automatic `RuntimeIdentifier` by adding `<UseCurrentRuntimeIdentifier>false</UseCurrentRuntimeIdentifier>` to your project file.
 
 If you encounter a break due to the output path changing, add `<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>` to your project file.
+
+## See also
+
+- [Automatic RuntimeIdentifier for publish only](automatic-rid-publish-only.md)

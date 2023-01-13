@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects using an ONNX deep learning model'
 description: This tutorial illustrates how to use a pre-trained ONNX deep learning model in ML.NET to detect objects in images.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 03/07/2022
+ms.date: 01/13/2023
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false

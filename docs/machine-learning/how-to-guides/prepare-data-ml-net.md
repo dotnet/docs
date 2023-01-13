@@ -336,7 +336,3 @@ Using the first entry as an example, the following is a detailed description of 
 |4. MapValueToKey | Maps the values to keys (categories) based on the input data |  [1,2]
 |5. ProduceNGrams | Transforms text into sequence of consecutive words | [1,1,1,0,0]
 |6. NormalizeLpNorm | Scale inputs by their lp-norm | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ]
-
-## Custom Data Transforms
-
-Lorem ....

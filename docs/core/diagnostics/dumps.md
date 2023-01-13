@@ -34,7 +34,10 @@ Dumps can be collected in a variety of ways depending on which platform your app
 
 ### Memory Analysis
 
-You can perform memory analysis on your application if your app's memory continues to grow, but you are unsure why that is the case. For tutorials and more information on memory analysis, see [Memory Analysis](memory-analysis.md).
+You can perform memory analysis on your application if your app's memory continues to grow, but you are unsure why that is the case. [debug memory leak tutorial](debug-memory-leak.md) shows how to debug a memory leak using the dotnet CLI tools with the dotnet-sos commands dumpheap and gcroot.
+
+>[!NOTE]
+> [Visual Studio Memory Analysis](/visualstudio-docs/docs/profiling/analyze-memory-usage.md) can be used to diagnose a memory leak.
 
 ## See also
 

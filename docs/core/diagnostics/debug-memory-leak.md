@@ -132,6 +132,9 @@ Once the dump is collected, you should have sufficient information to diagnose t
 
 In this tutorial, you're now done with the [Sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) and you can close it. Navigate to the terminal that started the server, and press <kbd>Ctrl+C</kbd>.
 
+> [!NOTE]
+> After restarting the failed process and letting it run for around one minute, you could collect another dump in the same way explained above. You would then have two dumps over a period of time, and could compare them to assist in seeing where the memory is growing.
+
 ### Analyze the core dump
 
 Now that you have a core dump generated, use the [dotnet-dump](dotnet-dump.md) tool to analyze the dump:

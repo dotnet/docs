@@ -16,7 +16,7 @@ ms.date: 01/11/2023
 The two recommended ways of collecting dumps on Linux are:
 
 * [`dotnet-dump`](dotnet-dump.md) CLI tool
-* [Environment variables](dumps.md#collect-dumps-on-crash) that collect dumps on crashes
+* [Environment variables](collect-dumps-crash.md) that collect dumps on crashes
 
 ## Analyze dumps on Linux
 
@@ -40,6 +40,9 @@ lldb --core <dump-file> <host-program>
 In the above command line, `<dump-file>` is the path of the dump to analyze and `<host-program>` is the native program that started the .NET Core application. This is typically the `dotnet` binary unless the app is self-contained, in which case it is the name of the application without the dll extension.
 
 Once LLDB starts, it may be necessary to use the `setsymbolserver` command to point at the correct symbol location (`setsymbolserver -ms` to use Microsoft's symbol server or `setsymbolserver -directory <path>` to specify a local path). Native symbols can be loaded by running `loadsymbols`. At this point, [SOS commands](https://github.com/dotnet/diagnostics/blob/main/documentation/sos-debugging-extension.md) can be used to analyze the dump.
+
+> [!NOTE]
+> LLDB can be installed with the command `sudo apt-get install lldb`
 
 ## Analyze dumps on Windows
 

@@ -15,7 +15,7 @@ In the 7.0.100 SDK, there was [a change](automatic-runtimeidentifier.md) to auto
 
 However, all of these properties except for `SelfContained` are only used for publishing. Yet the implicit `<RuntimeIdentifier>` was added for any [`dotnet` operation](../../../tools/dotnet.md) if these properties were in the project file or specified as part of the `dotnet` command.
 
-Now, the automatic RID for these properties is limited to only be added during publish. In addition, the automatic RID is only added when using the `dotnet publish` CLI command. It's not added when you publish from Visual Studio or `msbuild`, as those are separate mechanisms, and Visual Studio should provide its own RID.
+Now, the automatic RID for these properties is only added during publish. In addition, the automatic RID is only added when using the `dotnet publish` CLI command. It's not added when you publish from Visual Studio or `msbuild`, as those are separate mechanisms, and Visual Studio should provide its own RID.
 
 ## Version introduced
 
@@ -29,7 +29,7 @@ Previously, if you specified any of the mentioned properties, the RID was automa
 
 The RID is only automatically added for the `dotnet publish` command.
 
-If you performed a restore without an RID in .NET 7 and use it to restore for a `publish --no-restore` command on a project with one of the mentioned properties, you'll need to specify an RID using `restore -r <RID>`.
+If you performed a restore without an RID in .NET 7 and use it to restore for a `publish --no-restore` command on a project with one of the mentioned properties, you'll need to specify an RID using `dotnet restore -r <RID>`.
 
 ## Type of breaking change
 

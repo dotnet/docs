@@ -13,6 +13,7 @@ metadata:
   ms.collection: collection
 
 conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     - title: Develop ASP.NET Core apps
       links:
@@ -85,3 +86,12 @@ conceptualContent:
           - text: DevOps for ASP.NET Core Developers
             itemType: architecture
             url: devops-for-aspnet-developers/index.md
+
+    - title: Design guidelines
+      links:
+        - text: Framework design guidelines
+          itemType: concept
+          url: ../standard/design-guidelines/index.md
+        - text: Library design guidelines
+          itemType: concept
+          url: ../standard/library-guidance/index.md

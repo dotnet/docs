@@ -13,9 +13,9 @@ helpviewer_keywords:
 
 The following options control miscellaneous compiler behavior. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
-- **ResponseFiles** / `@`: Read response file for more options.
+- **ResponseFiles** / <code>@&lt;<i>rsp_file</i>&gt;</code> : Read the specified response file for more options.
 - **NoLogo** / `-nologo` : Suppress compiler copyright message.
-- **NoConfig** / `-noconfig`: Don't auto include *CSC.RSP* file.
+- **NoConfig** / `-noconfig` : Don't auto include *CSC.RSP* file.
 
 ## ResponseFiles
 

@@ -955,13 +955,12 @@ let rainbow =
 
 #### Multiline bracket formatting styles
 
-For records that span multiple lines, there are three commonly used formatting styles: `Cramped`, `Aligned`, and `Stroustrup`. The `Cramped` style has been the default style for F# code, as it tends to favor styles that allow the compiler to easily parse code. Both `Aligned` and `Stroustrup` styles allow for easier reordering of members, leading to code that may be easier to refactor, with the drawback that certain situations may result in slightly more verbose code.
+For records that span multiple lines, there are three commonly used formatting styles: `Cramped`, `Aligned`, and `Stroustrup`. The `Cramped` style has been the default style for F# code, as it tends to favor styles that allow the compiler to easily parse code. Both `Aligned` and `Stroustrup` styles allow for easier reordering of members, leading to code that may be easier to refactor, with the drawback that certain situations may require slightly more verbose code.
 
 * `Cramped` Record style:
 The historical standard, and default F# record format. Opening brackets go on the same line as the first member, closing bracket on the same line as the last member.
 
     ```fsharp
-    // "Cramped" style:
     let rainbow = 
         { Boss1 = "Jeffrey"
           Boss2 = "Jeffrey"
@@ -972,7 +971,6 @@ The historical standard, and default F# record format. Opening brackets go on th
 * `Aligned`: Brackets each get their own line, aligned on the same column.
 
     ```fsharp
-    // "Aligned" style:
     let rainbow =
         {
             Boss1 = "Jeffrey"
@@ -985,7 +983,6 @@ The historical standard, and default F# record format. Opening brackets go on th
 * `Stroustrup`: Opening bracket goes on the same line as the binding, closing bracket gets its own line.
 
     ```fsharp
-    // "Stroustrup" style:
     let rainbow = {
         Boss1 = "Jeffrey"
         Boss2 = "Jeffrey"
@@ -993,19 +990,6 @@ The historical standard, and default F# record format. Opening brackets go on th
         Lackeys = [ "Zippy"; "George"; "Bungle" ]
     }
     ```
-
-As with array and list expressions, placing the `{` and `}` on their own lines will make moving code around and piping into functions easier:
-
-```fsharp
-// ✔️ OK
-let rainbow =
-    {
-        Boss1 = "Jeffrey"
-        Boss2 = "Jeffrey"
-        Boss3 = "Jeffrey"
-        Lackeys = ["Zippy"; "George"; "Bungle"]
-    }
-```
 
 The same formatting style rules apply for list and array elements.
 
@@ -1020,46 +1004,41 @@ Short expressions can fit on one line:
 let point2 = { point with X = 1; Y = 2 }
 ```
 
-Longer expressions should use new lines:
+Longer expressions should use new lines, and format based on one of the above-named conventions:
 
 ```fsharp
-// ✔️ OK
-let rainbow2 =
-    { rainbow with
-        Boss = "Jeffrey"
-        Lackeys = [ "Zippy"; "George"; "Bungle" ] }
-```
-
-You may want to dedicate separate lines for the braces and indent one scope to the right with the expression:
-
-```fsharp
-// ✔️ OK
+// ✔️ OK - Cramped
 let newState =
+    { state with
+        Foo =
+            Some
+                { F1 = 0
+                  F2 = "" } }
+        
+// ✔️ OK - Aligned
+let newState = 
     {
         state with
             Foo =
-                Some 
+                Some
                     {
                         F1 = 0
                         F2 = ""
                     }
     }
-```
 
-You may also prefer the "Stroustrup" style of keeping the opening brace on the same line as the binding:
-
-```fsharp
-let newState =
-    { state with
+// ✔️ OK - Stroustrup
+let newState = { 
+    state with
         Foo =
-            Some { // TODO: Fantomas doesn't respect this yet
+            Some { 
                 F1 = 0
                 F2 = ""
             }
-    }
+}
 ```
 
-**Note**: If using `Stroustrup` style, members *must* be indented further than the copied record name
+**Note**: If using `Stroustrup` style for copy-and-update expressions, members *must* be indented further than the copied record name
 
 ```fsharp
 // ✔️ OK
@@ -1666,7 +1645,7 @@ type PostalAddress =
     end
 ```
 
-The exception to this style rule is if you format records according to the "Stroustrup" style. In this situation, the `with` keyword is required if you want to implement an interface or add additional members:
+The exception to this style rule is if you format records according to the "Stroustrup" style. In this situation, due to compiler rules, the `with` keyword is required if you want to implement an interface or add additional members:
 
 ```fsharp
 // ✔️ OK
@@ -1686,7 +1665,7 @@ type PostalAddress = {
 member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
 
-When XML documentation is added for record fields, it becomes normal to indent and add whitespace:
+When XML documentation is added for record fields, it becomes normal to indent and add additional whitespace between members:
 
 ```fsharp
 // ✔️ OK
@@ -1956,7 +1935,7 @@ let foo () = async {
 }
 ```
 
-Whichever your preference, you should aim to remain consistent throughout your codebase.
+Whichever your preference, you should aim to remain consistent throughout your codebase. Formatters may allow you to specify this preference to remain consistent.
 
 ## Formatting types and type annotations
 

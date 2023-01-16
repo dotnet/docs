@@ -34,11 +34,11 @@ HttpClient httpClient = new HttpClient(
     });
 ```
 
-Following table show how use of individual <xref:System.Net.ServicePointManager> properties related to SSL/TLS should be migrated.
+Following table show how to migrate individual <xref:System.Net.ServicePointManager> properties related to SSL/TLS.
 
 || Migration instructions |
 | -------- | ---------------------- |
-|  **<xref:System.Net.ServicePointManager.CheckCertificateRevocationList>**| Set appropriate <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> on <xref:System.Net.Security.SslClientAuthenticationOptions?displayProperty.CertificateRevocationCheckMode=nameWithType>. |
+|  **<xref:System.Net.ServicePointManager.CheckCertificateRevocationList>**| Set appropriate <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> on <xref:System.Net.Security.SslClientAuthenticationOptions?displayProperty.CertificateRevocationCheckMode?displayProperty=nameWithType>. |
 |  **<xref:System.Net.ServicePointManager.EncryptionPolicy>**| Use <xref:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy?displayProperty=nameWithType>. |
 |  **<xref:System.Net.ServicePointManager.SecurityProtocol>**| Use <xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols?displayProperty=nameWithType>. |
 |  **<xref:System.Net.ServicePointManager.ServerCertificateValidationCallback>**| Use <xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback?displayProperty=nameWithType>. |

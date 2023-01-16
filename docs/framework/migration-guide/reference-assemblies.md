@@ -25,7 +25,7 @@ SDK-style projects include this reference by default. For traditional, non-SDK-s
 
 Projects that contain a project reference need to be restored before they can be built.
 
-When building with Visual Studio, either in the IDE or on the command line with *MSBuild.exe*, make sure to explicitly run the *restore* target prior to building the project. This is done on the Developer Command Prompt with the `msbuild /t:restore` command from the project directory. When building with the .NET SDK, make sure to run the `dotnet restore` command from the project directory.
+When building with Visual Studio, either in the IDE or on the command line with *MSBuild.exe*, make sure to explicitly run the *restore* target prior to building the project. This is done on the Developer Command Prompt with the `msbuild /t:restore` command from the project directory. When building with the .NET SDK, make sure to run the [dotnet restore](../../core/tools/dotnet-restore.md) command from the project directory.
 
 ## References
 

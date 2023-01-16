@@ -45,7 +45,7 @@ There's no need to first uninstall the .NET SDK when upgrading it using a packag
 If you installed .NET using a package manager, use that same package manager to uninstall the .NET SDK or runtime. .NET installations support most popular package managers. Consult the documentation for your distribution's package manager for the precise syntax in your environment:
 
 - [apt-get(8)](https://linux.die.net/man/8/apt-get) is used by Debian based systems, including Ubuntu.
-- [yum(8)](https://linux.die.net/man/8/yum) is used on Fedora, CentOS, and Oracle Linux.
+- [yum(8)](https://linux.die.net/man/8/yum) is used on Fedora, CentOS, Oracle Linux and RHEL.
 - [zypper(8)](https://en.opensuse.org/SDB:Zypper_manual_(plain)) is used on openSUSE and SUSE Linux Enterprise System (SLES).
 - [dnf(8)](https://dnf.readthedocs.io/en/latest/command_ref.html) is used on Fedora.
 

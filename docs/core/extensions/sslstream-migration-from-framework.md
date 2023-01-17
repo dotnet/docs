@@ -12,7 +12,7 @@ ms.date: 1/9/2023
 
 Since .NET, allowed SSL/TLS protocols and certificate validation callbacks must be configured separately for each <xref:System.Net.Security.SslStream> instance via the <xref:System.Net.Security.SslServerAuthenticationOptions> or <xref:System.Net.Security.SslClientAuthenticationOptions>. In order to configure network security options used in HTTPS in <xref:System.Net.Http.HttpClient>, you need to configure the security options in the underlying handler. The default handler used by <xref:System.Net.Http.HttpClient> is <xref:System.Net.Http.SocketsHttpHandler> which has <xref:System.Net.Http.SocketsHttpHandler.SslOptions> property accepting <xref:System.Net.Security.SslClientAuthenticationOptions>.
 
-Following example demonstrates how to create an <xref:System.Net.Http.HttpClient> with custom certificate validation callback.
+Consider the following example, as it demonstrates how to create an <xref:System.Net.Http.HttpClient> with a custom certificate validation callback:
 
 ```csharp
 bool CustomCertificateValidator(
@@ -21,10 +21,12 @@ bool CustomCertificateValidator(
     X509Chain? chain,
     SslPolicyErrors sslPolicyErrors)
 {
-    // logic omitted for brevity
+    // TODO: Always returns false. 
+    // Need to implement certificate evaluation logic.
+    return false;
 }
 
-HttpClient httpClient = new HttpClient(
+HttpClient httpClient = new(
     new SocketsHttpHandler
     {
         SslOptions =
@@ -36,9 +38,9 @@ HttpClient httpClient = new HttpClient(
 
 Following table show how to migrate individual <xref:System.Net.ServicePointManager> properties related to SSL/TLS.
 
-|| Migration instructions |
-| -------- | ---------------------- |
-|  **<xref:System.Net.ServicePointManager.CheckCertificateRevocationList>**| Set appropriate <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> on <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType>. |
-|  **<xref:System.Net.ServicePointManager.EncryptionPolicy>**| Use <xref:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy?displayProperty=nameWithType>. |
-|  **<xref:System.Net.ServicePointManager.SecurityProtocol>**| Use <xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols?displayProperty=nameWithType>. |
-|  **<xref:System.Net.ServicePointManager.ServerCertificateValidationCallback>**| Use <xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback?displayProperty=nameWithType>. |
+| Source API | Target API |
+|---|---|
+| <xref:System.Net.ServicePointManager.CheckCertificateRevocationList> | Set appropriate <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> on <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType>. |
+| <xref:System.Net.ServicePointManager.EncryptionPolicy> | Use <xref:System.Net.Security.SslClientAuthenticationOptions.EncryptionPolicy?displayProperty=nameWithType>. |
+| <xref:System.Net.ServicePointManager.SecurityProtocol> | Use <xref:System.Net.Security.SslClientAuthenticationOptions.EnabledSslProtocols?displayProperty=nameWithType>. |
+| <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback> | Use <xref:System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback?displayProperty=nameWithType>. |

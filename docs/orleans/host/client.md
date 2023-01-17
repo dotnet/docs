@@ -13,7 +13,7 @@ A client allows non-grain code to interact with an Orleans cluster. Clients allo
 
 If the client code is hosted in the same process as the grain code, then the client can be directly obtained from the hosting application's dependency injection container. In this case, the client communicates directly with the silo it is attached to and can take advantage of the extra knowledge that the silo has about the cluster.
 
-This provides several benefits, including reducing network and CPU overhead as well as decreasing latency and increasing throughput and reliability. The client utilizes the silo's knowledge of the cluster topology and state and does not need to use a separate gateway. This avoids a network hop and serialization/deserialization round trip. This therefore also increases reliability, since the number of required nodes in between the client and the grain is minimized. If the grain is a [stateless worker grain](../grains/stateless-worker-grains.md) or otherwise happens to be activated on the silo which the client is hosted in, then no serialization or network communication needs to be performed at all and the client can reap the additional performance and reliability gains. Co-hosting client and grain code also simplifies deployment and application topology by eliminating the need for two distinct application binaries to be deployed and monitored.
+This provides several benefits, including reducing network and CPU overhead as well as decreasing latency and increasing throughput and reliability. The client utilizes the silo's knowledge of the cluster topology and state and does not need to use a separate gateway. This avoids a network hop and serialization/deserialization round trip. This therefore also increases reliability, since the number of required nodes in between the client and the grain is minimized. If the grain is a [stateless worker grain](../grains/stateless-worker-grains.md) or otherwise happens to be activated on the silo where the client is hosted, then no serialization or network communication needs to be performed at all and the client can reap the additional performance and reliability gains. Co-hosting client and grain code also simplifies deployment and application topology by eliminating the need for two distinct application binaries to be deployed and monitored.
 
 There are also detractors to this approach, primarily that the grain code is no longer isolated from the client process. Therefore, issues in client code, such as blocking IO or lock contention causing thread starvation can affect the performance of grain code. Even without code defects like the aforementioned, *noisy neighbor* effects can result simply by having the client code execute on the same processor as grain code, putting additional strain on CPU cache and additional contention for local resources in general. Additionally, identifying the source of these issues is now more difficult because monitoring systems cannot distinguish what is logically client code from grain code.
 
@@ -26,7 +26,21 @@ Despite these detractors, co-hosting client code with grain code is a popular op
 
 If hosting using the [.NET Generic Host](../../core/extensions/generic-host.md), the client will be available in the host's [dependency injection](../../core/extensions/dependency-injection.md) container automatically and can be injected into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
 
-Alternatively, a client interface such as <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> can be obtained from either <xref:Microsoft.Extensions.Hosting.IHost> or <xref:Orleans.Hosting.ISiloHost>:
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+Alternatively, a client interface such as <xref:Orleans.IGrainFactory> can be obtained from <xref:Microsoft.Extensions.Hosting.IHost> (or the <xref:Orleans.IClusterClient.ServiceProvider?displayProperty=nameWithType>):
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
+Alternatively, a client interface such as <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> can be obtained from <xref:Orleans.Hosting.ISiloHost>:
+
+:::zone-end
 
 ```csharp
 var client = host.Services.GetService<IClusterClient>();
@@ -36,14 +50,15 @@ await client.GetGrain<IMyGrain>(0).Ping();
 ## External clients
 
 Client code can run outside of the Orleans cluster where grain code is hosted. Hence, an external client acts as a connector or conduit to the cluster and all grains of the application. Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
+
 In a typical setup, a frontend webserver:
 
-* Receives a web request
-* Performs necessary authentication and authorization validation
-* Decides which grain(s) should process the request
-* Uses <xref:Orleans.GrainClient> to make one or more method call to the grain(s)
-* Handles successful completion or failures of the grain calls and any returned values
-* Sends a response for the web request
+* Receives a web request.
+* Performs necessary authentication and authorization validation.
+* Decides which grain(s) should process the request.
+* Uses the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package to make one or more method call to the grain(s).
+* Handles successful completion or failures of the grain calls and any returned values.
+* Sends a response to the web request.
 
 ### Initialization of grain client
 
@@ -58,7 +73,8 @@ Configuration is provided via <xref:Microsoft.Extensions.Hosting.OrleansClientGe
 Consider the following example of a client configuration:
 
 ```csharp
-// Alternatively, use Host.CreateDefaultBuilder(args)
+// Alternatively, call Host.CreateDefaultBuilder(args) if using the 
+// Microsoft.Extensions.Hosting NuGet package.
 using IHost host = new HostBuilder()
     .UseOrleansClient(clientBuilder =>
     {

@@ -1,6 +1,7 @@
-using Orleans.Runtime;
+﻿using Orleans.Runtime;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Client;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .UseOrleansClient((_, client) =>

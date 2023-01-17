@@ -90,7 +90,7 @@ using IHost host = new HostBuilder()
     .Build();
 ```
 
-When the `host` is started, the client will be configured and is available through its constructed service provider instance.
+When the `host` is started, the client will be configured and available through its constructed service provider instance.
 
 :::zone-end
 
@@ -116,7 +116,7 @@ var client = new ClientBuilder()
     .Build();
 ```
 
-Lastly, we need to call `Connect()` method on the constructed client object to make it connect to the Orleans cluster. It's an asynchronous method that returns a `Task`. So we need to wait for its completion with an `await` or `.Wait()`.
+Lastly, you need to call `Connect()` method on the constructed client object to make it connect to the Orleans cluster. It's an asynchronous method that returns a `Task`. So you need to wait for its completion with an `await` or `.Wait()`.
 
 ```csharp
 await client.Connect();
@@ -126,7 +126,7 @@ await client.Connect();
 
 ### Make calls to grains
 
-Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The slight difference is in through what factory object we invoke <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, we do that through the connected client object as the following example shows:
+Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The difference is in what factory object is invoked <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do that through the connected client object as the following example shows:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
@@ -272,6 +272,18 @@ public class HomeController : Controller
 
 Here is an extended version of the example given above of a client application that connects to Orleans, finds the player account, subscribes for updates to the game session the player is part of with an observer, and prints out notifications until the program is manually terminated.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+:::code source="snippets/ExampleExternalProgram.cs" id="program":::
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 await RunWatcherAsync();
 
@@ -350,3 +362,5 @@ class GameObserver : IGameObserver
     }
 }
 ```
+
+:::zone-end

@@ -68,7 +68,7 @@ Before a grain client can be used for making calls to grains hosted in an Orlean
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-Configuration is provided via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A>> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
+Configuration is provided via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
 Consider the following example of a client configuration:
 

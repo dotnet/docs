@@ -5,7 +5,7 @@ ms.date: 01/17/2023
 ---
 # WCF Client doesn't support .NET Standard
 
-The WCF Client 6.0 library targets .NET 6. and no longer supports .NET Standard 2.0.
+The WCF Client 6.0 library targets .NET 6 and no longer supports .NET Standard 2.0.
 
 ## Previous behavior
 
@@ -27,13 +27,13 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-WCF Client releases previously supported .NET Standard 2.0 to support both .NET (Core) and .NET Framework. This support helped developers modernize and migrate their existing WCF apps from .NET Framework to .NET Core. The change to remove support for .NET Standard was made so that WCF Client and WCF Client apps can take advantage of the new features and APIs available in .NET 6 and later versions. In addition, removing .NET Standard support reduces the size of the WCF Client NuGet packages, so the footprint is smaller during deployment.
+WCF Client releases previously targeted .NET Standard 2.0 to support both .NET (Core) and .NET Framework. This support helped developers modernize and migrate their existing WCF apps from .NET Framework to .NET. The change to remove support for .NET Standard was made so that WCF Client and WCF Client apps can take advantage of the new features and APIs available in .NET 6 and later versions. In addition, removing .NET Standard support reduces the size of the WCF Client NuGet packages, so the footprint is smaller during deployment.
 
 ## Recommended action
 
 - If your WCF project targets .NET 6 or later, no change is needed. If it targets .NET Standard 2.0, you'll need to multi-target your WCF libraries. Add a conditional assembly reference to *System.ServiceModel.dll* for .NET Framework and conditionally add package references to WCF Client packages for .NET.
 
-- Remove references to `System.ServiceModel.Duplex` or `System.ServiceModel.Security`, because these packages are no longer needed.
+- Remove references to the [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex) and [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security) packages, because they're are no longer needed.
 
 ## Affected APIs
 

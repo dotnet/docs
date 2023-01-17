@@ -1292,8 +1292,10 @@ items:
       href: visualbasic.md
   - name: WCF Client
     items:
-    - name: .NET Standard 2.0 no longer supported
-      href: wcf-client/6.0/net-standard-2-support.md
+    - name: "6.0"
+      items:
+      - name: .NET Standard 2.0 no longer supported
+        href: wcf-client/6.0/net-standard-2-support.md
   - name: Windows Forms
     items:
     - name: .NET 7

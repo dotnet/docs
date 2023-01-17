@@ -4,6 +4,7 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 04/16/2021
+zone_pivot_groups: dotnet-version
 ---
 
 # Prepare .NET libraries for trimming
@@ -24,9 +25,6 @@ Consider doing both. Project-specific trimming is convenient and shows trim warn
 
 ### Enable project-specific trimming
 
-> [!TIP]
-> To use the latest version of the analyzer with the most coverage, consider using the [.NET 7 preview SDK](https://dotnet.microsoft.com/en-us/download/dotnet). Note this will only update the tooling used to build your app, this does not require you to target the .NET 7 runtime.
-
 Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag in your library project file. This will mark your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly will have its unused members trimmed in the final output.
 
 If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.
@@ -35,20 +33,36 @@ If you want to see trim warnings, but don't want to mark your library as trim-co
 
 To show all analysis warnings for your library, including warnings about dependencies, you need the trimmer to analyze the implementation of your library and the implementations of dependencies your library uses. When building and publishing a library, the implementations of the dependencies are not available, and the reference assemblies that are available do not have enough information for the trimmer to determine if they are compatible with trimming. Because of this, you'll need to create and publish a self-contained sample application which produces an executable that includes your library and the dependencies it relies on. This executable includes all the information the trimmer requires to warn you about all trim incompatibilities in your library code, as well as the code that your library references from its dependencies.
 
+> [!NOTE]
+> If your library has significantly different behavior or uses different API's depending on the target framework of the consumer (for example, using `#if NET5_0_OR_GREATER`) which might impact trimming, you will need to create a new sample app for each of the target frameworks you want to support trimming for.
+
+:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+
 To create your sample app, first create a separate application project with `dotnet new` and modify the project file to look like the following. No changes to the source code are necessary. You'll need to add the following to your project file:
 
 - Set the PublishTrimmed property to `true` with `<PublishTrimmed>true</PublishTrimmed>` in a `<PropertyGroup>` tag.
 - A reference to your library with `<PublishTrimmed>true</PublishTrimmed>` in an `<ItemGroup>` tag.
 - Specify your library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />` in an `<ItemGroup>` tag.
   - This ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root" which means the trimmer will analyze the assembly as if everything will be used, and traverses all possible code paths that originate from that assembly. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
-- Set the TrimmerDefaultAction property to `trim` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag.
+:::zone-end
+:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+- If your app is targeting .Net 6, set the TrimmerDefaultAction property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag.
+:::zone-end
+:::zone pivot="dotnet-7-0"
+- The default behavior for TrimMode is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
+:::zone-end
+:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
   - This ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that is not part of a "root" can be trimmed if it is unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <!-- Replace with net5.0, or netcoreapp3.1 if testing for those frameworks -->
     <TargetFramework>net6.0</TargetFramework>
     <PublishTrimmed>true</PublishTrimmed>
     <!-- Prevent warnings from unused code in dependencies -->
@@ -63,6 +77,32 @@ To create your sample app, first create a separate application project with `dot
 
 </Project>
 ```
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <PublishTrimmed>true</PublishTrimmed>
+    <!-- Prevent warnings from unused code in dependencies -->
+    <TrimMode>full</TrimMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="path/to/MyLibrary.csproj" />
+    <!-- Analyze the whole library, even if attributed with "IsTrimmable" -->
+    <TrimmerRootAssembly Include="MyLibrary" />
+  </ItemGroup>
+
+</Project>
+```
+
+:::zone-end
 
 Once your project file is updated, run `dotnet publish` with the [runtime identifier (RID)](../../rid-catalog.md) you want to target.
 

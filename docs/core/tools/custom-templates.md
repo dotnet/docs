@@ -91,6 +91,67 @@ The *template.json* file looks like the following:
 
 The *mytemplate* folder is an installable template package. Once the package is installed, the `shortName` can be used with the `dotnet new` command. For example, `dotnet new adatumconsole` would output the `console.cs` and `readme.txt` files to the current folder.
 
+## Template localization
+
+The .NET templates are localizable. If a template is localized for the language matching the current locale, its elements will appear in the same language as the CLI. Localization is optional when creating new templates.
+
+The localizable elements on a template are:
+
+- Name
+- Author
+- Description
+- Symbols
+  - Description
+  - Display Name
+  - Descriptions and Display name of choices for choice parameters
+- Post actions
+  - Description
+  - Manual instructions
+
+Localization files have a JSON format, and just one file per culture should exist. The naming convention is: `templatestrings.<lang code>.json`, where `lang code` corresponds to one of the [CultureInfo](/dotnet/api/system.globalization.cultureinfo.name) options. All localization files should be inside the `.template-config\localize` folder.
+
+The localization JSON consists of key value pairs:
+
+- The key is the reference to an element of `template.json` to be localized. If the element is a child, use the full path with a `/` delimiter.
+- The value is the localization string of the element given by the key.
+
+For more information about localizing templates, see the [dotnet templating wiki's localization page](https://github.com/dotnet/templating/wiki/Localization).
+
+### Example
+
+For example, here's *template.json* file with some localizable fields:
+
+```JSON
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Microsoft",
+  "classifications": "Config",
+  "name": "EditorConfig file",
+  "description": "Creates an .editorconfig file for configuring code style preferences.",
+  "symbols": {
+    "Empty": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Empty",
+      "description": "Creates empty .editorconfig instead of the defaults for .NET."
+    }
+  }
+}
+```
+
+And some fields are to be localized to Brazilian Portuguese. The filename will be `templatestrings.pt-BR.json` to match the culture, and it would look like:
+
+```JSON
+{
+  "author": "Microsoft",
+  "name": "Arquivo EditorConfig",
+  "description": "Cria um arquivo .editorconfig para configurar as preferências de estilo de código.",
+  "symbols/Empty/displayName": "Vazio",
+  "symbols/Empty/description": "Cria .editorconfig vazio em vez dos padrões para .NET."
+}
+```
+
 ## Pack a template into a NuGet package (nupkg file)
 
 A custom template is packed with the [dotnet pack](dotnet-pack.md) command and a *.csproj* file. Alternatively, [NuGet](/nuget/tools/nuget-exe-cli-reference) can be used with the [nuget pack](/nuget/tools/cli-ref-pack) command along with a *.nuspec* file. However, NuGet requires the .NET Framework on Windows and [Mono](https://www.mono-project.com/) on Linux and macOS.

@@ -235,7 +235,8 @@ In the preceding C# code:
   - Loops while the app is running.
   - Makes an HTTP request to `"https://jsonplaceholder.typicode.com/photos"`, and maps the response as an array of `Photo` objects.
   - The array of photos is placed in the `IMemoryCache` under the `"Photos"` key.
-    - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
+  - The `_cacheSignal.Release()` is called, releasing any consumers who were waiting for the signal.
+  - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
   - After delaying for three hours, the cache is again updated.
 
 Consumers in the same process could ask the `IMemoryCache` for the photos, but the `CacheWorker` is responsible for updating the cache.

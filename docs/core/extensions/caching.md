@@ -217,6 +217,12 @@ In the preceding C# code:
 
 Consumers of this service are free to call `GetPhotosAsync` method, and handle photos accordingly. No `HttpClient` is required as the cache contains the photos.
 
+The asynchronous signal is based on an encapsulated <xref:System.Threading.SemaphoreSlim> instance, within a generic-type constrained singleton. The `CacheSignal<T>` relies on an instance of `SemaphoreSlim`:
+
+:::code source="snippets/caching/memory-worker/CacheSignal.cs":::
+
+In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
+
 The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
 
 :::code source="snippets/caching/memory-worker/CacheWorker.cs":::

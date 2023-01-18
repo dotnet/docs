@@ -91,31 +91,36 @@ The *template.json* file looks like the following:
 
 The *mytemplate* folder is an installable template package. Once the package is installed, the `shortName` can be used with the `dotnet new` command. For example, `dotnet new adatumconsole` would output the `console.cs` and `readme.txt` files to the current folder.
 
-### Template localization
+## Template localization
+
 The .NET templates are localizable. If a template is localized for the language matching the current locale, its elements will appear in the same language as the CLI. Localization is optional when creating new templates.
 
 The localizable elements on a template are:
+
 - Name
 - Author
 - Description
 - Symbols
   - Description
   - Display Name
-  - Descriptions and Diplay name of choices for choice paramemters 
+  - Descriptions and Display name of choices for choice parameters
 - Post actions
-  - description
+  - Description
   - Manual instructions
 
 Localization files have a JSON format, and just one file per culture should exist. The naming convention is: `templatestrings.<lang code>.json`, where `lang code` corresponds to one of the [CultureInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.name) options. All localization files should be inside the `.template-config\localize` folder.
 
 The localization JSON consists of key value pairs:
+
 - The key is the reference to an element of `template.json` to be localized. If the element is a child, use the full path with a `/` delimiter.
 - The value is the localization string of the element given by the key.
 
 For more information about localizing templates, see the [dotnet templating wiki's localization page](https://github.com/dotnet/templating/wiki/Localization).
 
-#### Example
-For example, here's *template.json* file with some localiable fields:
+### Example
+
+For example, here's *template.json* file with some localizable fields:
+
 ```JSON
 {
   "$schema": "http://json.schemastore.org/template",
@@ -135,7 +140,7 @@ For example, here's *template.json* file with some localiable fields:
 }
 ```
 
-And some fields are to be localizes to Brazilian Portuguese. The filename will be `templatestrings.pt-BR.json` to match the culture, and it would look like:
+And some fields are to be localized to Brazilian Portuguese. The filename will be `templatestrings.pt-BR.json` to match the culture, and it would look like:
 
 ```JSON
 {

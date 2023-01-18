@@ -53,10 +53,10 @@ public sealed class CacheWorker : BackgroundService
             }
             finally
             {
-                if (initialRun)
+                if (initialCaching)
                 {
                     _cacheSignal.Release();
-                    initialRun = false;
+                    initialCaching = false;
                 }
             }
 

@@ -1764,7 +1764,11 @@ items:
       href: package-validation/diagnostic-ids.md
 - name: Execution model
   items:
-  - name: Common Language Runtime (CLR)
+  - name: Custom Articles
+  items:
+  - name: New Article
+    href: new-article.md
+- name: Common Language Runtime (CLR)
     href: ../standard/clr.md
   - name: Managed execution process
     href: ../standard/managed-execution-process.md

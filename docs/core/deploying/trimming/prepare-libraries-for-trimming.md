@@ -41,10 +41,10 @@ To show all analysis warnings for your library, including warnings about depende
 
 :::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 
-To create your sample app, first create a separate console application project with `dotnet new console` and modify the project file to look like the following. No changes to the source code are necessary. You'll need to add the following to your project file:
+To create your sample app, first create a separate console application project with `dotnet new console` and modify the project file to look like the following. No changes to the source code are necessary. You'll need to do the following in your project file:
 
 - Set the PublishTrimmed property to `true` with `<PublishTrimmed>true</PublishTrimmed>` in a `<PropertyGroup>` tag.
-- A reference to your library with `<PublishTrimmed>true</PublishTrimmed>` in an `<ItemGroup>` tag.
+- Add a reference to your library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />` inside of an `<ItemGroup>` tag.
 - Specify your library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />` in an `<ItemGroup>` tag.
   - This ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root" which means the trimmer will analyze the assembly as if everything will be used, and traverses all possible code paths that originate from that assembly. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
 :::zone-end
@@ -52,7 +52,7 @@ To create your sample app, first create a separate console application project w
 - Set the TrimmerDefaultAction property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag.
 :::zone-end
 :::zone pivot="dotnet-7-0"
-- The default behavior for TrimMode is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
+- The default behavior for the `TrimMode` property is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
 :::zone-end
 :::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
   - This ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that is not part of a "root" can be trimmed if it is unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.

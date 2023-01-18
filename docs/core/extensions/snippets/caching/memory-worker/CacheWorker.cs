@@ -28,6 +28,7 @@ public sealed class CacheWorker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        var initialCaching = true;
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogInformation("Updating cache.");
@@ -52,7 +53,11 @@ public sealed class CacheWorker : BackgroundService
             }
             finally
             {
-                _cacheSignal.Release();
+                if (initialRun)
+                {
+                    _cacheSignal.Release();
+                    initialRun = false;
+                }
             }
 
             try

@@ -92,13 +92,11 @@ To create your sample app, first create a separate application project with `dot
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <PublishTrimmed>true</PublishTrimmed>
-    <!-- Prevent warnings from unused code in dependencies -->
-    <TrimMode>full</TrimMode>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="path/to/MyLibrary.csproj" />
-    <!-- Analyze the whole library, even if attributed with "IsTrimmable" -->
+    <!-- Analyze the whole library -->
     <TrimmerRootAssembly Include="MyLibrary" />
   </ItemGroup>
 

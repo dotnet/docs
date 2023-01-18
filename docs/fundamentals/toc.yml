@@ -1766,7 +1766,30 @@ items:
   items:
   - name: Common Language Runtime (CLR)
     href: ../standard/clr.md
-  - name: Managed execution process
+  toc_title: Custom Articles
+childPath: ""
+children:
+  - toc_title: New Article 2
+    href: new-article.md
+    childPath: ""
+    parentPath: dotnet/docs/docs/standard/
+    id: b9b04b77-dcaa-40b0-9dae-c3dfd2dc8cc6
+    url:
+      external: false
+      origin: https://review.learn.microsoft.com
+      pathname: /en-us/dotnet/fundamentals/new-article.md
+      search: ""
+      hash: ""
+    articleUrl: https://review.learn.microsoft.com/en-us/dotnet/fundamentals/new-article.md
+    refUrl: https://review.learn.microsoft.com/en-us/dotnet/standard/clr
+    isNewArticle: true
+    filePath: docs/standard/new-article.md
+    insideNavigationNode: true
+    navigationNodeName: Custom Articles
+    selected: true
+parentPath: dotnet/docs/docs/standard/
+id: c123bc61-b02d-4e9c-98dc-a6e7d74a0d7c
+- name: Managed execution process
     href: ../standard/managed-execution-process.md
   - name: Assemblies
     href: ../standard/assembly/

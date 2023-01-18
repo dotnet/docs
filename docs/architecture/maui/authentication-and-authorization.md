@@ -195,7 +195,7 @@ This configuration specifies data for the following properties:
 
 The authentication flow between a client and IdentityServer can be configured by specifying the grant types in the `Client.AllowedGrantTypes` property. The OpenID Connect and OAuth 2.0 specifications define several authentication flows, including:
 
-| Authention Flow | Description |
+| Authentication Flow | Description |
 |---------|---------|
 | Implicit | This flow is optimized for browser-based applications and should be used either for user authentication-only, or authentication and access token requests. All tokens are transmitted via the browser, and therefore advanced features like refresh tokens are not permitted. |
 | Authorization code | This flow provides the ability to retrieve tokens on a back channel, as opposed to the browser front channel, while also supporting client authentication. |

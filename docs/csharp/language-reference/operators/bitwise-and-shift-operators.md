@@ -1,7 +1,7 @@
 ---
-title: "Bitwise and shift operators - C# reference"
-description: "Learn about C# operators that perform bitwise logical or shift operations with operands of integral types."
-ms.date: 06/10/2022
+title: "Bitwise and shift operators - perform boolean (AND, NOT, OR, XOR) and shift operations on individual bits in integral types"
+description: "Learn about C# operators that perform bitwise logical (AND - `&`, NOT - `~`, OR - `|`, XOR - `^`) or shift operations( `<<`, and `>>`) with operands of integral types. "
+ms.date: 11/29/2022
 author: pkulikov
 f1_keywords: 
   - "~_CSharpKeyword"
@@ -38,7 +38,7 @@ helpviewer_keywords:
 ---
 # Bitwise and shift operators (C# reference)
 
-The following operators perform bitwise or shift operations with operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type:
+The bitwise and shift operators include unary bitwise complement, binary left and right shift, unsigned right shift, amd the binary logical AND, OR, and exclusive OR operators. These operands take operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type.
 
 - Unary [`~` (bitwise complement)](#bitwise-complement-operator-) operator
 - Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-), and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators
@@ -199,8 +199,10 @@ For more information, see the following sections of the [C# language specificati
 - [Bitwise complement operator](~/_csharpstandard/standard/expressions.md#1185-bitwise-complement-operator)
 - [Shift operators](~/_csharpstandard/standard/expressions.md#1110-shift-operators)
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#11183-compound-assignment)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#11193-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
+- [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
+- [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
 
 ## See also
 

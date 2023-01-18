@@ -15,10 +15,10 @@ When an existing grain activation is about to process a request, the runtime wil
 A grain interface version Vn can be backward compatible with Vm if:
 
 - The name of the interface didn't change (or the overridden typecode).
-- All public methods present in the Vm version are in the Vn version. __It is important that
-    the signatures of the methods inherited from Vm are not modified__: since Orleans use
-    an internal built-in serializer, modifying/renaming a field (even private) can make the
-    serialization to break.
+- All public methods present in the Vm version are in the Vn version.
+  **It is important that the signatures of the methods inherited from Vm are not modified**: since Orleans use
+  an internal built-in serializer, modifying/renaming a field (even private) can make the
+  serialization to break.
 
 Since Vn can have added methods compared to Vm, Vm is not compatible with Vn.
 

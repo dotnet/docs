@@ -13,34 +13,34 @@ jobs:
       IS_TRY_FIX: true # differentiates /tryfix from the validation-only run.
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - uses: actions/github-script@v3
-      id: get-pr
-      with:
-        script: |
-          const request = {
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            pull_number: context.issue.number
-          }
-          core.info(`Getting PR #${request.pull_number} from ${request.owner}/${request.repo}`)
-          try {
-            const result = await github.pulls.get(request)
-            return result.data
-          } catch (err) {
-            core.setFailed(`Request failed with error ${err}`)
-          }
-    - name: Checkout the repository
-      uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+      - uses: actions/github-script@d556feaca394842dc55e4734bf3bb9f685482fa0
+        id: get-pr
+        with:
+          script: |
+            const request = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number
+            }
+            core.info(`Getting PR #${request.pull_number} from ${request.owner}/${request.repo}`)
+            try {
+              const result = await github.pulls.get(request)
+              return result.data
+            } catch (err) {
+              core.setFailed(`Request failed with error ${err}`)
+            }
+      - name: Checkout the repository
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
 
-    - name: Checkout Pull Request
-      run: |
-        hub pr checkout ${{ github.event.issue.number }}
+      - name: Checkout Pull Request
+        run: |
+          hub pr checkout ${{ github.event.issue.number }}
 
-    - name: Tryfix
-      uses: dotnet/docs-actions/actions/docs-verifier@main
+      - name: Tryfix
+        uses: dotnet/docs-actions/actions/docs-verifier@main
 
-    - name: Push changes
-      run: |
+      - name: Push changes
+        run: |
           git config --global user.name github-actions
           git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
           git remote add fork https://github.com/${{ fromJSON(steps.get-pr.outputs.result).head.repo.full_name }}

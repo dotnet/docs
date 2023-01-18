@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 07/21/2022
+ms.date: 11/08/2022
 ms.prod: "dotnet"
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard
@@ -24,6 +24,7 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target framework | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 |:----------------:|:---------------------------:|:------------------------------:|:---------------------------------------:|
+| .NET 7           | 7                           | net7.0                         | 2.1                                     |
 | .NET 6           | 6                           | net6.0                         | 2.1                                     |
 | .NET 5           | 5                           | net5.0                         | 2.1                                     |
 | .NET Standard    | 2.1                         | netstandard2.1                 | N/A                                     |
@@ -51,7 +52,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 The `net5.0`, `net6.0`, and `net7.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net6.0` TFM.
 
-.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 introduces further OS-specific TFMs.
+.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 and later versions have additional OS-specific TFMs, for example, `net6.0-ios`.
 
 The following table shows the compatibility of the .NET 5+ TFMs.
 
@@ -74,7 +75,7 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net7.0-tvos        | (subsequent version of `net6.0-tvos`)                                                                                   |
 | net7.0-windows     | (subsequent version of `net6.0-windows`)                                                                                |
 
-To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives.
+To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives. For a list of the available symbols, see [Preprocessor symbols](#preprocessor-symbols).
 
 #### Suggested targets
 
@@ -132,7 +133,7 @@ Target frameworks are specified in a project file. When a single target framewor
 </Project>
 ```
 
-When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using preprocessor symbols with *if-then-else* logic.
+When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using [preprocessor symbols](#preprocessor-symbols) with *if-then-else* logic.
 
 The following library project targets APIs of .NET Standard (`netstandard1.4`) and .NET Framework (`net40` and `net45`). Use the plural [TargetFrameworks element](../core/project-sdk/msbuild-props.md#targetframeworks) with multiple target frameworks. The `Condition` attributes include implementation-specific packages when the library is compiled for the two .NET Framework TFMs:
 
@@ -175,7 +176,11 @@ public class MyClass
 }
 ```
 
-The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. When using a symbol that represents a .NET Standard, .NET Core, or .NET 5+ TFM, replace dots and hyphens with an underscore, and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`). You can disable generation of these symbols via the `DisableImplicitFrameworkDefines` property. For more information about this property, see [DisableImplicitFrameworkDefines](../core/project-sdk/msbuild-props.md#disableimplicitframeworkdefines).
+## Preprocessor symbols
+
+The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. To convert a .NET Standard, .NET Core, or .NET 5+ TFM to a preprocessor symbol, replace dots and hyphens with an underscore, and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+
+You can disable generation of these symbols via the `DisableImplicitFrameworkDefines` property. For more information about this property, see [DisableImplicitFrameworkDefines](../core/project-sdk/msbuild-props.md#disableimplicitframeworkdefines).
 
 The complete list of preprocessor symbols for .NET target frameworks is:
 

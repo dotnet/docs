@@ -1686,6 +1686,10 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee358724(v=vs.100)"
         },
         {
+            "source_path_from_root": "/docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md",
+            "redirect_url": "/dotnet/framework/wcf/feature-details/data-transfer-and-serialization"
+        },
+        {
             "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729672(v=vs.100)"
         },
@@ -1797,6 +1801,10 @@
         {
             "source_path_from_root": "/docs/framework/wcf/samples/transacted-batching.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/aa395219(v%3dvs.100)"
+        },
+        {
+            "source_path_from_root": "/docs/framework/wcf/samples/usage-of-serialization-binder.md",
+            "redirect_url": "/dotnet/framework/wcf/samples/"
         },
         {
             "source_path_from_root": "/docs/framework/wcf/samples/web-extensibility.md",
@@ -2483,11 +2491,11 @@
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/tcp-udp.md",
-            "redirect_url": "/dotnet/fundamentals/networking/tcp/tcp-overview"
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/using-tcp-services.md",
-            "redirect_url": "/dotnet/fundamentals/networking/tcp/tcp-services"
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/sockets.md",

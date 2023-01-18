@@ -2,7 +2,7 @@
 
 namespace WorkerServiceOptions.Example;
 
-public class Worker : BackgroundService
+public sealed class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
     private readonly PriorityQueue _priorityQueue;
@@ -29,7 +29,7 @@ public class Worker : BackgroundService
                 _logger.FailedToProcessWorkItem(ex);
             }
 
-            await Task.Delay(1000, stoppingToken);
+            await Task.Delay(1_000, stoppingToken);
         }
     }
 }

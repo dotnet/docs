@@ -1,6 +1,6 @@
 ---
-title: "Selective serialization"
-description: This article shows you how to mark fields with the NonSerialized attribute, which prevents that field from being serialized.
+title: "Selective binary serialization"
+description: This article shows you how to mark fields with the NonSerialized attribute, which prevents that field from being binary serialized.
 ms.date: "08/07/2017"
 dev_langs: 
   - "CSharp"
@@ -9,9 +9,9 @@ helpviewer_keywords:
   - "binary serialization, selective serialization"
 ms.topic: how-to
 ---
-# Selective serialization
+# Selective binary serialization
 
-A class often contains fields that shouldn't be serialized. For example, assume a class stores a thread ID in a member variable. When the class is deserialized, the thread stored the ID for when the class was serialized might no longer be running; so serializing this value doesn't make sense. You can prevent member variables from being serialized by marking them with the [NonSerialized](xref:System.NonSerializedAttribute) attribute as follows.  
+A class often contains fields that shouldn't be serialized using binary serialization. For example, assume a class stores a thread ID in a member variable. When the class is deserialized, the thread stored the ID for when the class was serialized might no longer be running; so serializing this value doesn't make sense. You can prevent member variables from being serialized by marking them with the [NonSerialized](xref:System.NonSerializedAttribute) attribute as follows.  
   
 ```csharp  
 [Serializable]  
@@ -31,4 +31,3 @@ If possible, make an object that could contain security-sensitive data nonserial
 
 - [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)

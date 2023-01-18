@@ -33,8 +33,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--advertising-manifests-only`**
 
   Downloads [advertising manifests](dotnet-workload-install.md#advertising-manifests) but doesn't update any workloads.

@@ -1,7 +1,7 @@
 ---
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
-ms.date: 07/14/2022
+ms.date: 11/08/2022
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
@@ -56,7 +56,7 @@ recommendations: false
 
 ## Using .NET
 
-.NET apps and libraries are built from source code and a project file, using the .[NET CLI](tools/index.md) or an Integrated Development Environment (IDE) like [Visual Studio](https://visualstudio.microsoft.com/).
+.NET apps and libraries are built from source code and a project file, using the [.NET CLI](tools/index.md) or an Integrated Development Environment (IDE) like [Visual Studio](https://visualstudio.microsoft.com/).
 
 The following example is a minimal .NET app:
 
@@ -66,7 +66,7 @@ Project file:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 </Project>
 ```
@@ -105,7 +105,7 @@ You can download .NET from:
 
 ## Free and open source
 
-.NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) [project](https://dotnetfoundation.org/projects/netcore/). .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
+.NET is free, open source, and is a [.NET Foundation](https://dotnetfoundation.org/) project. .NET is maintained by Microsoft and the community on GitHub in [several repositories](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
 .NET source and binaries are licensed with the [MIT license](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). Additional [licenses apply on Windows](https://github.com/dotnet/core/blob/main/license-information-windows.md) for binary distributions.
 
@@ -113,7 +113,7 @@ You can download .NET from:
 
 [Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 architectures. It's also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
 
-New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Short-term Support (STS) releases and are supported for 18 months. The quality level, breaking change policies, and all other aspects of the releases are the same. For more information, see [Releases and support](releases-and-support.md).
+New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-Term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Standard-Term Support (STS) releases and are supported for 18 months. The quality level, breaking change policies, and all other aspects of the releases are the same. For more information, see [Releases and support](releases-and-support.md).
 
 The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.
 
@@ -154,7 +154,7 @@ The runtime is designed to support multiple programming languages. C#, F#, and V
 
 IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models.
 
-* On Android, Linux, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
+* On Android, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
 * On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
 * In WebAssembly (Wasm) environments, AOT is mandatory.
 

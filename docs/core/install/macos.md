@@ -3,7 +3,7 @@ title: Install .NET on macOS
 description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 12/21/2022
 ---
 
 # Install .NET on macOS
@@ -16,25 +16,25 @@ ms.date: 08/07/2022
 
 In this article, you'll learn how to install .NET on macOS. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and may or may not be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
 
-The latest version of .NET is 6.0.
+The latest version of .NET is 7.
 
 > [!div class="button"]
 > [Download .NET Core](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
-The following table is a list of currently supported .NET releases and the versions of macOS they're supported on. These versions remain supported until the version of .NET reaches [end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
-- A ✔️ indicates that the version of .NET is still supported.
-- A ❌ indicates that the version of .NET isn't supported.
+The following table is a list of currently supported .NET releases and the versions of macOS they're supported on:
 
-| Operating System          | .NET Core 3.1 | .NET 6         |
-|---------------------------|---------------|----------------|
-| macOS 12.0 "Monterey"     | ✔️ 3.1        | ✔️ 6.0         |
-| macOS 11.0 "Big Sur"      | ✔️ 3.1        | ✔️ 6.0         |
-| macOS 10.15 "Catalina"    | ✔️ 3.1        | ✔️ 6.0         |
+| Operating System       | .NET 7 (STS) | .NET 6 (LTS) |
+|------------------------|--------------|--------------|
+| macOS 13.0 "Ventura"   | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 12.0 "Monterey"  | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 11.0 "Big Sur"   | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 10.15 "Catalina" | ✔️ 7.0        | ✔️ 6.0        |
 
-For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For a full list of .NET versions and their support life cycle, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Unsupported releases
 
@@ -82,9 +82,9 @@ brew install mono-libgdiplus
 
 ## Install with an installer
 
-macOS has standalone installers that can be used to install the .NET 6 SDK:
+macOS has standalone installers that can be used to install .NET 7:
 
-- [x64 and Arm64 CPUs](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [x64 and Arm64 CPUs](https://dotnet.microsoft.com/download/dotnet/7.0)
 
 ## Download and manually install
 
@@ -94,6 +94,7 @@ As an alternative to the macOS installers for .NET, you can download and manuall
 
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
+- ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
@@ -103,7 +104,7 @@ Next, extract the downloaded file and use the `export` command to set `DOTNET_RO
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. This will also make the .NET CLI commands available at the terminal and set the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
 ```bash
-DOTNET_FILE=dotnet-sdk-6.0.100-osx-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-7.0.100-osx-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
@@ -138,20 +139,20 @@ The following table describes which versions of .NET are supported on an Arm-bas
 
 | .NET Version | Architecture | SDK | Runtime | [Path conflict](#path-conflicts) |
 |--------------|--------------|-----|---------|----------------------------------|
-| 6.0          | Arm64        | Yes | Yes     | No                               |
-| 6.0          | x64          | Yes | Yes     | No                               |
-| 3.1          | Arm64        | No  | No      | N/A                              |
-| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
+| 7            | Arm64        | Yes | Yes     | No                               |
+| 7            | x64          | Yes | Yes     | No                               |
+| 6            | Arm64        | Yes | Yes     | No                               |
+| 6            | x64          | Yes | Yes     | No                               |
 
-The x64 and Arm64 versions of the .NET 6 SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
+Starting with .NET 6, the x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
 
 ### Path differences
 
-On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET 6 SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
+On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET 7 SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
 
 ### Path conflicts
 
-The **x64** .NET 6 SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET 6 SDK to exist on the same machine. However, any **x64** SDK prior to 6.0 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the Arm64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the Arm64 version.
+Starting with .NET 6, the **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to .NET 6 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you'll need to first uninstall the Arm64 version. The opposite is also true, you'll need to uninstall the unsupported x64 SDK to install the Arm64 version.
 
 ### Path variables
 
@@ -163,6 +164,7 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 
 | .NET SDK version      | Visual Studio version                                |
 | --------------------- | ---------------------------------------------------- |
+| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.           |
 | 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
 | 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher.    |
 
@@ -182,14 +184,13 @@ While Visual Studio Code doesn't come with an automated .NET installer like Visu
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6.0. You can choose a specific release by specifying the `current` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the [SDK](./windows.md).
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. You can choose a specific release by specifying the `channel` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the SDK.
+
+The following command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ```bash
-./dotnet-install.sh --channel 6.0 --runtime aspnetcore
+./dotnet-install.sh --channel 7.0 --runtime aspnetcore
 ```
-
-> [!NOTE]
-> The previous command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ## Docker
 

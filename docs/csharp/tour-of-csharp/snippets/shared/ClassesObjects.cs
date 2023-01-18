@@ -205,8 +205,10 @@ namespace TourOfCsharp
             get => _items[index];
             set
             {
-                _items[index] = value;
-                OnChanged();
+                if (!object.Equals(_items[index], value)) {
+                    _items[index] = value;
+                    OnChanged();
+                }
             }
         }
 
@@ -290,16 +292,16 @@ namespace TourOfCsharp
         // </RefExample>
 
         // <OutExample>
-        static void Divide(int x, int y, out int result, out int remainder)
+        static void Divide(int x, int y, out int quotient, out int remainder)
         {
-            result = x / y;
+            quotient = x / y;
             remainder = x % y;
         }
         
         public static void OutUsage()
         {
-            Divide(10, 3, out int res, out int rem);
-            Console.WriteLine($"{res} {rem}");	// "3 1"
+            Divide(10, 3, out int quo, out int rem);
+            Console.WriteLine($"{quo} {rem}");	// "3 1"
         }
         // </OutExample>
 

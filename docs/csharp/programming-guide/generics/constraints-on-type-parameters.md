@@ -2,6 +2,10 @@
 title: "Constraints on type parameters - C# Programming Guide"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
 ms.date: 07/08/2022
+f1_keywords:
+  - "defaultconstraint_CSharpKeyword"
+  - "notnull_CSharpKeyword"
+  - "unmanaged_CSharpKeyword"
 helpviewer_keywords: 
   - "generics [C#], type constraints"
   - "type constraints [C#]"
@@ -15,16 +19,16 @@ Constraints inform the compiler about the capabilities a type argument must have
 |Constraint|Description|
 |----------------|-----------------|
 |`where T : struct`|The type argument must be a non-nullable [value type](../../language-reference/builtin-types/value-types.md). For information about nullable value types, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md). Because all value types have an accessible parameterless constructor, the `struct` constraint implies the `new()` constraint and can't be combined with the `new()` constraint. You can't combine the `struct` constraint with the `unmanaged` constraint.|
-|`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type. In a nullable context in C# 8.0 or later, `T` must be a non-nullable reference type. |
+|`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type. In a nullable context, `T` must be a non-nullable reference type. |
 |`where T : class?`|The type argument must be a reference type, either nullable or non-nullable. This constraint applies also to any class, interface, delegate, or array type.|
-|`where T : notnull`|The type argument must be a non-nullable type. The argument can be a non-nullable reference type in C# 8.0 or later, or a non-nullable value type. |
+|`where T : notnull`|The type argument must be a non-nullable type. The argument can be a non-nullable reference type or a non-nullable value type. |
 |`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md#default-constraint) spec proposal.|
 |`where T : unmanaged`|The type argument must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint implies the `struct` constraint and can't be combined with either the `struct` or `new()` constraints.|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last. The `new()` constraint can't be combined with the `struct` and `unmanaged` constraints.|
-|`where T :` *\<base class name>*|The type argument must be or derive from the specified base class. In a nullable context in C# 8.0 and later, `T` must be a non-nullable reference type derived from the specified base class. |
-|`where T :` *\<base class name>?*|The type argument must be or derive from the specified base class. In a nullable context in C# 8.0 and later, `T` may be either a nullable or non-nullable type derived from the specified base class. |
-|`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context in C# 8.0 and later, `T` must be a non-nullable type that implements the specified interface.|
-|`where T :` *\<interface name>?*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context in C# 8.0, `T` may be a nullable reference type, a non-nullable reference type, or a value type. `T` may not be a nullable value type.|
+|`where T :` *\<base class name>*|The type argument must be or derive from the specified base class. In a nullable context, `T` must be a non-nullable reference type derived from the specified base class. |
+|`where T :` *\<base class name>?*|The type argument must be or derive from the specified base class. In a nullable context, `T` may be either a nullable or non-nullable type derived from the specified base class. |
+|`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` must be a non-nullable type that implements the specified interface.|
+|`where T :` *\<interface name>?*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` may be a nullable reference type, a non-nullable reference type, or a value type. `T` may not be a nullable value type.|
 |`where T : U`|The type argument supplied for `T` must be or derive from the argument supplied for `U`. In a nullable context, if `U` is a non-nullable reference type, `T` must be non-nullable reference type. If `U` is a nullable reference type, `T` may be either nullable or non-nullable. |
 
 ## Why use constraints
@@ -75,23 +79,23 @@ The usefulness of type parameters as constraints with generic classes is limited
 
 ## `notnull` constraint
 
-Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. Unlike most other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error.
+You can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. Unlike most other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error.
 
 The `notnull` constraint has an effect only when used in a nullable context. If you add the `notnull` constraint in a nullable oblivious context, the compiler doesn't generate any warnings or errors for violations of the constraint.
 
 ## `class` constraint
 
-Beginning with C# 8.0, the `class` constraint in a nullable context specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type argument is a nullable reference type, the compiler generates a warning.
+The `class` constraint in a nullable context specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type argument is a nullable reference type, the compiler generates a warning.
 
 ## `default` constraint
 
-The addition of nullable reference types complicates the use of `T?` in a generic type or method. Prior to C# 8, `T?` could only be used when the `struct` constraint applied to `T`. In that context, `T?` refers to the <xref:System.Nullable%601> type for `T`. Beginning with C# 8, `T?` could be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted the same as in C# 8 for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
+The addition of nullable reference types complicates the use of `T?` in a generic type or method. `T?` can be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted as `T?` for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
 
 Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. That's when the derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` nor `struct` constraint.
 
 ## Unmanaged constraint
 
-Beginning with C# 7.3, you can use the `unmanaged` constraint to specify that the type parameter must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
+You can use the `unmanaged` constraint to specify that the type parameter must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet15":::
 
@@ -101,7 +105,7 @@ The `unmanaged` constraint implies the `struct` constraint and can't be combined
 
 ## Delegate constraints
 
-Also beginning with C# 7.3, you can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
+You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet16":::
 
@@ -113,7 +117,7 @@ If you uncomment the last line, it won't compile. Both `first` and `test` are de
 
 ## Enum constraints
 
-Beginning in C# 7.3, you can also specify the <xref:System.Enum?displayProperty=nameWithType> type as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. Generics using `System.Enum` provide type-safe programming to cache results from using the static methods in `System.Enum`. The following sample finds all the valid values for an enum type, and then builds a dictionary that maps those values to its string representation.
+You can also specify the <xref:System.Enum?displayProperty=nameWithType> type as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. Generics using `System.Enum` provide type-safe programming to cache results from using the static methods in `System.Enum`. The following sample finds all the valid values for an enum type, and then builds a dictionary that maps those values to its string representation.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet18":::
 

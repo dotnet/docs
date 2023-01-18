@@ -25,6 +25,9 @@ Consider doing both. Project-specific trimming is convenient and shows trim warn
 
 ### Enable project-specific trimming
 
+> [!TIP]
+> To get the latest version of the analyzer with the most coverage, use the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet). Note this will only update the tooling used to build your app and doesn't require you to target the .NET 7 runtime.
+
 Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag in your library project file. This will mark your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly will have its unused members trimmed in the final output.
 
 If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.

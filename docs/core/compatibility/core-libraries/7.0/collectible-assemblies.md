@@ -17,7 +17,7 @@ Returning a collectible <xref:System.Type.Assembly> in the <xref:System.Runtime.
 
 ## Version introduced
 
-.NET 7 Preview 5
+.NET 7
 
 ## Type of breaking change
 

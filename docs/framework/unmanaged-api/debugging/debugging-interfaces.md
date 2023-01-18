@@ -318,7 +318,7 @@ This section describes the unmanaged interfaces that handle the debugging of a p
  Logically extends the [ICorDebugProcess](icordebugprocess-interface.md) interface to enable or disable certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.  
 
  [ICorDebugProcess11 Interface](icordebugprocess11-interface.md)\
- Provides a method that configures the debugger to handle in-memory metadata updates in the target process.  
+ Provides a method that enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap -loader` command.  
   
  [ICorDebugProcessEnum Interface](icordebugprocessenum-interface.md)\
  Implements `ICorDebugEnum` methods, and enumerates `ICorDebugProcess` arrays.  

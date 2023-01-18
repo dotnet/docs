@@ -1,31 +1,34 @@
 ---
 title: "Breaking change: Version requirements for .NET 7 SDK"
-description: Learn about the breaking change in the .NET 7 SDK where version 17.0 or newer of Visual Studio and MSBuild is required.
-ms.date: 03/25/2022
+description: Learn about the breaking change in the .NET 7 SDK where specific versions of Visual Studio and MSBuild are required.
+ms.date: 01/09/2023
 ---
 # Version requirements for .NET 7 SDK
 
-The NET 7.0.100 SDK no longer loads in version 16.11 or earlier of Visual Studio or MSBuild.
+Certain .NET SDK versions require newer versions of Visual Studio and MSBuild.
 
 ## Version introduced
 
-.NET SDK 7.0.100 (.NET 7 Preview 3)
+.NET SDK 7
 
-## Old behavior
+## Change description
 
-.NET SDK 7.0.100 would load in the 16.10 and 16.11 versions of Visual Studio and MSBuild.
+The following table shows the minimum version of Visual Studio and MSBuild you need to use the .NET 7.0.100 or 7.0.200 SDK.
 
-## New behavior
+| NET SDK version   | Minimum Visual Studio and MSBuild version |
+| ----------------- | ----------------------------------------- |
+| 7.0.100           | 17.4                                      |
+| 7.0.200           | 17.4                                      |
 
-.NET SDK 7.0.100 can only be used with version 17.0 or later of Visual Studio and MSBuild. In addition, any scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
+<sup>1</sup>In addition, scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
 
 ## Reason for change
 
-Changes were made to features within the SDK that aren't compatible with Visual Studio version 16.11.
+Changes were made to features within the SDK that aren't compatible with previous Visual Studio versions. In addition, it enables .NET SDK partners to have a reliable minimum version of Visual Studio that they can expect to work against.
 
 ## Recommended action
 
-Upgrade to Visual Studio 2022 version 17.0 or later. It's recommended that you use version 17.2 preview builds.
+Upgrade your Visual Studio version to the required version. Alternatively, you can use a [global.json](../../../tools/global-json.md) file to pin to an older standalone SDK install.
 
 ## Affected APIs
 

@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 08/26/2022
+ms.date: 11/11/2022
 ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
@@ -118,7 +118,13 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 Using the Azure Service Bus library as an example, complete the following steps:
 
-1. Register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method:
+1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) NuGet package:
+
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
+
+1. In *Program.cs*, register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method:
 
     ```csharp
     using Azure.Identity;
@@ -141,7 +147,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
       - Azure Service Bus client
     - Sets the default token credential to be used for all registered clients.
 
-1. In the ASP.NET Core project's *appsettings.json* file, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+1. In *appsettings.json*, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
     :::code language="json" source="snippets/logging/appsettings.Development.json" highlight="9":::
 
@@ -152,14 +158,20 @@ Using the Azure Service Bus library as an example, complete the following steps:
 There are scenarios in which [registering an Azure SDK library's client with the DI container](dependency-injection.md#register-client) is either impossible or unnecessary:
 
 - The Azure SDK library doesn't include an `IServiceCollection` extension method to register a client in the DI container.
-- Your app uses ASP.NET extension libraries that depend on other Azure SDK libraries. Examples of such ASP.NET extension libraries include:
+- Your app uses Azure extension libraries that depend on other Azure SDK libraries. Examples of such Azure extension libraries include:
   - [Azure Key Vault key encryptor for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme)
   - [Azure Key Vault secrets configuration provider](/dotnet/api/overview/azure/Extensions.AspNetCore.Configuration.Secrets-readme)
   - [Azure Blob Storage key store for DataProtection](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme)
 
 In these scenarios, complete the following steps:
 
-1. Register the log forwarder service as a singleton in the DI container:
+1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) NuGet package:
+
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
+
+1. In *Program.cs*, register the log forwarder service as a singleton in the DI container:
 
     :::code language="csharp" source="snippets/logging/Program.cs" id="RegisterServiceWithDI" highlight="8":::
 
@@ -167,7 +179,7 @@ In these scenarios, complete the following steps:
 
     :::code language="csharp" source="snippets/logging/Pages/Index.cshtml.cs" id="FetchServiceAndStart" highlight="6-7":::
 
-1. In the ASP.NET Core project's *appsettings.json* file, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
+1. In *appsettings.json*, change the Azure Core library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Core` key as follows:
 
     :::code language="json" source="snippets/logging/appsettings.json" highlight="6":::
 

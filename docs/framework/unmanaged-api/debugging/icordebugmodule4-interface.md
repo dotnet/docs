@@ -50,8 +50,8 @@ interface ICorDebugModule4 : IUnknown
  **Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** 4.5, 4, 3.5 SP1
+
+ **.NET Versions:** [!INCLUDE[net-core-50-plus](../../../../includes/net-core-50-md.md)]  
   
 ## See also
 

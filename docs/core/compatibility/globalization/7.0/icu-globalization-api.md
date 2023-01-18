@@ -5,7 +5,7 @@ ms.date: 09/01/2022
 ---
 # Globalization APIs use ICU libraries on Windows Server
 
-.NET 7 and later versions use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries for globalization functionality when running on Windows Server 2019 or later. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md).)
+.NET 7 and later versions use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries for globalization functionality when running on Windows Server 2019 or later. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md).)
 
 ## Previous behavior
 
@@ -13,7 +13,7 @@ In .NET 5 and .NET 6, the .NET libraries used [National Language Support (NLS)](
 
 ## New behavior
 
-Starting in .NET 7, if an app is running on Windows Server 2019 or later, .NET libraries use [ICU](http://site.icu-project.org/home) globalization APIs, by default. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md), so there is no change for these versions.)
+Starting in .NET 7, if an app is running on Windows Server 2019 or later, .NET libraries use [ICU](https://icu.unicode.org/) globalization APIs, by default. (Non-server Windows versions have already been [using ICU since .NET 5](../5.0/icu-globalization-api.md), so there is no change for these versions.)
 
 ## Behavioral differences
 
@@ -21,7 +21,7 @@ You might see changes in your app even if you don't realize you're using globali
 
 ### Currency symbol
 
-Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country.
+Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country or region.
 
 ```csharp
 System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");
@@ -39,7 +39,7 @@ string text = string.Format("{0:C}", 100);
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Recommended action
 

@@ -1,7 +1,7 @@
 ---
 title: Dumps - .NET
 description: An introduction to dumps in .NET.
-ms.date: 10/12/2020
+ms.date: 10/31/2022
 ---
 
 # Dumps
@@ -13,9 +13,10 @@ A dump is a file that contains a snapshot of the process at the time it was crea
 Dumps can be collected in a variety of ways depending on which platform you are running your app on.
 
 > [!NOTE]
-> Collecting a dump inside a container requires PTRACE capability, which can be added via `--cap-add=SYS_PTRACE` or `--privileged`.
-> [!NOTE]
 > Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
+
+> [!TIP]
+> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
 
 ### Collect dumps on crash
 
@@ -27,9 +28,9 @@ The following table shows the environment variables you can configure for collec
 |-------|---------|---|
 |`COMPlus_DbgEnableMiniDump` or `DOTNET_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
 |`COMPlus_DbgMiniDumpType` or `DOTNET_DbgMiniDumpType`|Type of dump to be collected. For more information, see the table below|2 (`MiniDumpWithPrivateReadWriteMemory`)|
-|`COMPlus_DbgMiniDumpName` or `DOTNET_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
-|`COMPlus_CreateDumpDiagnostics` or `DOTNET_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
-|`COMPlus_EnableCrashReport` or `DOTNET_EnableCrashReport`|(Requires .NET 6 or later) If set to 1, the runtime generates a JSON-formatted crash report thta includes information about the threads and stack frames of the crashing application. The crash report name is the dump path/name with *.crashreport.json* appended.
+|`COMPlus_DbgMiniDumpName` or `DOTNET_DbgMiniDumpName`|Path to a file to write the dump to. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.|`/tmp/coredump.<pid>`|
+|`COMPlus_CreateDumpDiagnostics` or `DOTNET_CreateDumpDiagnostics`|If set to 1, enables diagnostic logging of dump process.|0|
+|`COMPlus_EnableCrashReport` or `DOTNET_EnableCrashReport`|(Requires .NET 6 or later, not supported on Windows) If set to 1, the runtime generates a JSON-formatted crash report that includes information about the threads and stack frames of the crashing application. The crash report name is the dump path or name with *.crashreport.json* appended.
 |`COMPlus_CreateDumpVerboseDiagnostics` or `DOTNET_CreateDumpVerboseDiagnostics`|(Requires .NET 7 or later) If set to 1, enables verbose diagnostic logging of the dump process.|0|
 |`COMPlus_CreateDumpLogToFile` or `DOTNET_CreateDumpLogToFile`|(Requires .NET 7 or later) The path of the file to which the diagnostic messages should be written. If unset, the diagnostic messages are written to the console of the crashing application.|
 

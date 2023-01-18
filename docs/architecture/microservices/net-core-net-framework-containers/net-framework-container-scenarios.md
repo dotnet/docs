@@ -48,13 +48,13 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 ### Additional resources
 
 - **.NET fundamentals** \
-  [https://docs.microsoft.com/dotnet/fundamentals](../../../fundamentals/index.yml)
+  [https://learn.microsoft.com/dotnet/fundamentals](../../../fundamentals/index.yml)
 
 - **Porting Projects to .NET 5** \
-  [https://docs.microsoft.com/events/dotnetconf-2020/porting-projects-to-net-5](/Events/dotnetConf/2020/Porting-Projects-to-NET-5)
+  [https://learn.microsoft.com/events/dotnetconf-2020/porting-projects-to-net-5](/Events/dotnetConf/2020/Porting-Projects-to-NET-5)
 
 - **.NET on Docker Guide** \
-  [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
+  [https://learn.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
 
 >[!div class="step-by-step"]
 >[Previous](net-core-container-scenarios.md)

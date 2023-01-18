@@ -10,12 +10,11 @@ This article describes best practices when running Windows Communication Foundat
 
 ## Serialization
 
-Apply the following practices when using the <xref:System.Runtime.Serialization.DataContractSerializer> in a partially trusted application.
+Apply these practices when using the <xref:System.Runtime.Serialization.DataContractSerializer> in a partially trusted application.
 
-- All serializable types must be explicitly marked with the `[DataContract]` attribute. The following techniques aren't supported in a partial trust environment:
+All serializable types must be explicitly marked with the `[DataContract]` attribute. The following techniques aren't supported in a partial trust environment:
 
 - Marking classes to be serialized with the <xref:System.SerializableAttribute>.
-
 - Implementing the <xref:System.Runtime.Serialization.ISerializable> interface to allow a class to control its serialization process.
 
 ### Using DataContractSerializer

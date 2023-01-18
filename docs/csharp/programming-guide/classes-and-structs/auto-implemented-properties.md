@@ -20,7 +20,7 @@ The following example shows a simple class that has some auto-implemented proper
 
 You can't declare auto-implemented properties in interfaces. Auto-implemented properties declare a private instance backing field, and interfaces may not declare instance fields. Declaring a property in an interface without defining a body declares a property with accessors that must be implemented by each type that implements that interface.
 
-In C# 6 and later, you can initialize auto-implemented properties similarly to fields:
+You can initialize auto-implemented properties similarly to fields:
 
 ```csharp
 public string FirstName { get; set; } = "Jane";

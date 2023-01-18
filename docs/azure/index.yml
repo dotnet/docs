@@ -34,7 +34,7 @@ highlightedContent:
       url: /azure/app-service/app-service-web-tutorial-auth-aad
     - itemType: learn
       title: Secure custom APIs with Microsoft Identity
-      url: /learn/modules/identity-secure-custom-api/
+      url: /training/modules/identity-secure-custom-api/
     - itemType: get-started
       title: Azure SDK for .NET
       url: sdk/azure-sdk-for-dotnet.md
@@ -54,13 +54,13 @@ conceptualContent:
           url: /azure/azure-functions/functions-overview
         - itemType: learn
           text: Host a web app with Azure App Service
-          url: /learn/modules/host-a-web-app-with-azure-app-service/
+          url: /training/modules/host-a-web-app-with-azure-app-service/
         - itemType: learn
           text: Develop, test, and deploy an Azure Function with Visual Studio
-          url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
+          url: /training/modules/develop-test-deploy-azure-functions-with-visual-studio/
         - itemType: learn
           text: Publish and manage your APIs with Azure API Management
-          url: /learn/modules/publish-manage-apis-with-azure-api-management/
+          url: /training/modules/publish-manage-apis-with-azure-api-management/
         - itemType: tutorial
           text: ASP.NET Core web app with App Service and Azure SQL Database
           url: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
@@ -77,7 +77,7 @@ conceptualContent:
           url: /azure/dev-spaces/quickstart-netcore-visualstudio
         - itemType: learn
           text: Create and deploy a cloud-native ASP.NET Core microservice
-          url: /learn/modules/microservices-aspnet-core/
+          url: /training/modules/microservices-aspnet-core/
         - itemType: tutorial
           text: Deploy and debug multiple containers in AKS
           url: /azure/dev-spaces/multi-service-netcore-visualstudio
@@ -91,7 +91,7 @@ conceptualContent:
       links:
         - itemType: learn
           text: Consume REST services from Azure in Xamarin apps
-          url: /learn/modules/consume-rest-services/
+          url: /training/modules/consume-rest-services/
         - itemType: quickstart
           text: Create a Xamarin.Forms app with .NET SDK and Azure Cosmos DB's API for MongoDB
           url: /azure/cosmos-db/create-mongodb-xamarin
@@ -110,7 +110,7 @@ conceptualContent:
           text: Choose the right data storage option
           url: /azure/architecture/guide/technology-choices/data-store-overview
         - itemType: quickstart
-          text: Use .NET to query a Azure SQL Database or Azure SQL Managed Instance
+          text: Use .NET to query an Azure SQL Database or Azure SQL Managed Instance
           url: /azure/azure-sql/database/connect-query-dotnet-core
         - itemType: quickstart
           text: Use .NET to query Azure PostgreSQL
@@ -123,13 +123,13 @@ conceptualContent:
           url: /azure/postgresql/connect-csharp
         - itemType: learn
           text: Persist and retrieve relational data with Entity Framework Core
-          url: /learn/modules/persist-data-ef-core/
+          url: /training/modules/persist-data-ef-core/
         - itemType: learn
           text: Build a .NET Core app with Azure Cosmos DB in Visual Studio Code
-          url: /learn/modules/build-cosmos-db-app-with-vscode/
+          url: /training/modules/build-cosmos-db-app-with-vscode/
         - itemType: learn
           text: Store application data with Azure Blob storage
-          url: /learn/modules/store-app-data-with-azure-blob-storage/
+          url: /training/modules/store-app-data-with-azure-blob-storage/
     - title: Authentication and security
       links:
         - itemType: overview
@@ -137,13 +137,13 @@ conceptualContent:
           url: /azure/active-directory/develop/
         - itemType: learn
           text: Secure your application by using OpenID Connect and Azure AD
-          url: /learn/modules/secure-app-with-oidc-and-azure-ad/
+          url: /training/modules/secure-app-with-oidc-and-azure-ad/
         - itemType: learn
           text: Secure custom APIs with Microsoft Identity
-          url: /learn/modules/identity-secure-custom-api/
+          url: /training/modules/identity-secure-custom-api/
         - itemType: learn
           text: Secure an ASP.NET Core web app with the ASP.NET Identity framework
-          url: /learn/modules/secure-aspnet-core-identity/
+          url: /training/modules/secure-aspnet-core-identity/
         - itemType: tutorial
           text: Add sign-in to Microsoft to an ASP.NET web app
           url: /azure/active-directory/develop/tutorial-v2-asp-webapp
@@ -192,7 +192,7 @@ conceptualContent:
           url: /azure/azure-monitor/app/dotnet-quickstart
         - itemType: learn
           text: Capture and view page load times in your Azure web app
-          url: /learn/modules/capture-page-load-times-application-insights/
+          url: /training/modules/capture-page-load-times-application-insights/
         - itemType: how-to-guide
           text: Troubleshoot ASP.NET Core on Azure App Service and IIS
           url: /aspnet/core/test/troubleshoot-azure-iis
@@ -238,7 +238,7 @@ conceptualContent:
           url: dotnet-dev-env-checklist.md
         - itemType: reference
           text: API reference
-          url: /dotnet/api/overview/azure/?view=azure-dotnet
+          url: /dotnet/api/azure
 
 additionalContent:
   sections:

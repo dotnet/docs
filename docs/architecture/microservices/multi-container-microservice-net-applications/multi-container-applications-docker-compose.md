@@ -467,10 +467,10 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 #### Additional resources
 
 - **Building Optimized Docker Images with ASP.NET Core**
-  [https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core](/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)
+  [https://learn.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core](/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)
 
 - **Building Docker Images for .NET Applications**
-  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
+  [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 > [!div class="step-by-step"]
 > [Previous](data-driven-crud-microservice.md)

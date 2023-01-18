@@ -1,7 +1,7 @@
 ---
-title: "+ and += operators - C# reference"
-description: "Learn about the C# addition operator and how it works with operands of numeric, string, or delegate types."
-ms.date: 06/30/2021
+title: "Addition operators - + and +="
+description: "The C# addition operators (`+`, and `+=`) work with operands of numeric, string, or delegate types."
+ms.date: 11/29/2022
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -13,9 +13,8 @@ helpviewer_keywords:
   - "addition assignment operator [C#]"
   - "event subscription [C#]"
   - "+= operator [C#]"
-ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
-# + and += operators (C# reference)
+# Addition operators - `+` and `+=`
 
 The `+` and `+=` operators are supported by the built-in [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types, the [string](../builtin-types/reference-types.md#the-string-type) type, and [delegate](../builtin-types/reference-types.md#the-delegate-type) types.
 
@@ -27,7 +26,7 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 
 [!code-csharp-interactive[string concatenation](snippets/shared/AdditionOperator.cs#AddStrings)]
 
-Beginning with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
+[String interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
 [!code-csharp-interactive[string interpolation](snippets/shared/AdditionOperator.cs#UseStringInterpolation)]
 

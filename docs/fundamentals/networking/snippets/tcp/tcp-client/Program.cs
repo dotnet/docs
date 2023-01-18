@@ -5,10 +5,10 @@ Console.WriteLine("TCP client starting...");
 var ipAddress = await NetworkDiscovery.GetLocalhostIPAddressAsync();
 
 // <tcpclient>
-var endPoint = new IPEndPoint(ipAddress, 13);
+var ipEndPoint = new IPEndPoint(ipAddress, 13);
 
 using TcpClient client = new();
-await client.ConnectAsync(endPoint);
+await client.ConnectAsync(ipEndPoint);
 await using NetworkStream stream = client.GetStream();
 
 var buffer = new byte[1_024];

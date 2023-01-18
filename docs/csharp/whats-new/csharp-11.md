@@ -1,36 +1,31 @@
 ---
 title: What's new in C# 11 - C# Guide
 description: Get an overview of the new features coming in C# 11.
-ms.date: 08/16/2022
+ms.date: 11/21/2022
 ---
 # What's new in C# 11
 
-> [!IMPORTANT]
-> These are currently preview features. You must [set `<LangVersion>` to `preview`](../language-reference/compiler-options/language.md#langversion) to enable these features. Any feature may change before its final release. These features may not all be released in C# 11. Some may remain in a preview phase for longer based on feedback on the feature.
+The following features were added in C# 11:
 
-The following features are available in Visual Studio 2022 version 17.3:
-
-- [generic math support](#generic-math-support).
-- [auto-default structs](#auto-default-struct)
-- [pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
+- [Raw string literals](#raw-string-literals)
+- [Generic math support](#generic-math-support)
+- [Generic attributes](#generic-attributes)
+- [UTF-8 string literals](#utf-8-string-literals)
+- [Newlines in string interpolation expressions](#newlines-in-string-interpolations)
+- [List patterns](#list-patterns)
+- [File-local types](#file-local-types)
+- [Required members](#required-members)
+- [Auto-default structs](#auto-default-struct)
+- [Pattern match `Span<char>` on a constant `string`](#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
 - [Extended `nameof` scope](#extended-nameof-scope)
 - [Numeric IntPtr](#numeric-intptr-and-uintptr)
-- [UTF-8 string literals](#utf-8-string-literals)
-- [Required members](#required-members)
-
-The following features are available in Visual Studio 2022 version 17.2:
-
-- [Raw string literals](#raw-string-literals).
+- [`ref` fields and `scoped ref`](#ref-fields-and-ref-scoped-variables)
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
-The following features are available in Visual Studio 2022 version 17.1:
+You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the .NET 7 SDK, which can be downloaded from the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
-- [Generic attributes](#generic-attributes).
-- [Newlines in string interpolation expressions](#newlines-in-string-interpolations).
-- [List patterns](#list-patterns).
-
-You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the preview release of the .NET 7 SDK, which can be downloaded from the [all .NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
 ## Generic attributes
 
@@ -68,6 +63,7 @@ public string Method() => default;
 ```
 
 You must supply all type parameters when you apply the attribute. In other words, the generic type must be [fully constructed](~/_csharpstandard/standard/types.md#84-constructed-types).
+In the example above, the empty parentheses (`(` and `)`) can be omitted as the attribute does not have any arguments.
 
 ```csharp
 public class GenericType<T>
@@ -130,7 +126,7 @@ The C# standard on [Method group conversions](~/_csharpstandard/standard/convers
 
 > - The conversion is permitted (but not required) to use an existing delegate instance that already contains these references.
 
-Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature is first available in Visual Studio 17.2 as a preview feature. It's first available in .NET 7 preview 2.
+Previous versions of the standard prohibited the compiler from reusing the delegate object created for a method group conversion. The C# 11 compiler caches the delegate object created from a method group conversion and reuses that single delegate object. This feature was first available in Visual Studio 2022 version 17.2 as a preview feature, and in .NET 7 Preview 2.
 
 ## Raw string literals
 
@@ -182,3 +178,17 @@ You can learn more about UTF-8 string literals in the string literal section of 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
 For more information on required members, See the [init-only](../properties.md#init-only) section of the properties article.
+
+## `ref` fields and `ref scoped` variables
+
+You can declare `ref` fields inside a [`ref struct`](../language-reference/builtin-types/ref-struct.md). This supports types such as <xref:System.Span%601?displayProperty=nameWithType> without special attributes or hidden internal types.
+
+You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#scope-of-references-and-values) where the reference can escape to.
+
+## File local types
+
+Beginning in C# 11, you can use the `file` access modifier to create a type whose visibility is scoped to the source file in which it is declared. This feature helps source generator authors avoid naming collisions. You can learn more about this feature in the article on [file-scoped types](../language-reference/keywords/file.md) in the language reference.
+
+## See also
+
+- [What's new in .NET 7](../../core/whats-new/dotnet-7.md)

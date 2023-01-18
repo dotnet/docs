@@ -36,7 +36,7 @@ Starting in .NET 7, <xref:System.Xml.XmlSecureResolver.GetEntity(System.Uri,Syst
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Type of breaking change
 
@@ -48,7 +48,7 @@ This change improves the security of the .NET ecosystem. This obsoletion moves t
 
 ## Recommended action
 
-Consider instead using the newly introduced static property `XmlResolver.ThrowingResolver`. This property provides an <xref:System.Xml.XmlResolver> instance that forbids external resource resolution.
+Consider instead using the newly introduced static property <xref:System.Xml.XmlResolver.ThrowingResolver?displayProperty=nameWithType>. This property provides an <xref:System.Xml.XmlResolver> instance that forbids external resource resolution.
 
 ```csharp
 using System.Xml;

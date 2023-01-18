@@ -21,7 +21,7 @@ Assigning a value to the `X509ChainPolicy.VerificationTime` property automatical
 
 ## Version introduced
 
-.NET 7 Preview 7
+.NET 7
 
 ## Type of breaking change
 

@@ -46,7 +46,8 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
-| Windows 11<br/> (version 21H2) | 64-bit | .NET Framework 4.8 | .NET Framework 4.8.1 |
+| Windows 11 | 64-bit | .NET Framework 4.8 | .NET Framework 4.8.1 |
+| Windows 10 2022 Update<br/> (version 22H2) | 32-bit and 64-bit | .NET Framework 4.8 | .NET Framework 4.8.1 |
 | Windows 10 November 2021 Update<br/> (version 21H2) | 32-bit and 64-bit | .NET Framework 4.8 | .NET Framework 4.8.1 |
 | Windows 10 May 2021 Update<br/> (version 21H1) | 32-bit and 64-bit | .NET Framework 4.8 | .NET Framework 4.8.1 |
 | Windows 10 October 2020 Update<br/> (version 20H2) | 32-bit and 64-bit | .NET Framework 4.8 | .NET Framework 4.8.1 |

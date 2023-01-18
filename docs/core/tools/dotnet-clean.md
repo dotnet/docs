@@ -34,8 +34,6 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
 * **`-f|--framework <FRAMEWORK>`**

@@ -1,7 +1,7 @@
 ---
-title: "?: operator - C# reference"
-description: "Learn about the C# ternary conditional operator that returns the result of one of the two expressions based on a Boolean expression's result."
-ms.date: "09/17/2020"
+title: "?: operator - the ternary conditional operator"
+description: "Learn about the C# ternary conditional operator, (`?:`), that returns the result of one of the two expressions based on a Boolean expression's result."
+ms.date: "11/29/2022"
 f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
@@ -9,9 +9,8 @@ f1_keywords:
 helpviewer_keywords:
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
-ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 ---
-# ?: operator (C# reference)
+# ?: operator - the ternary conditional operator
 
 The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`, as the following example shows:
 
@@ -29,7 +28,7 @@ Beginning with C# 9.0, conditional expressions are target-typed. That is, if a t
 
 [!code-csharp[target-typed conditional](snippets/shared/ConditionalOperator.cs#TargetTyped)]
 
-If a target type of a conditional expression is unknown (for example, when you use the [`var`](../keywords/var.md) keyword) or in C# 8.0 and earlier, the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
+If a target type of a conditional expression is unknown (for example, when you use the [`var`](../statements/declarations.md#implicitly-typed-local-variables) keyword) or the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
 
 [!code-csharp[not target-typed conditional](snippets/shared/ConditionalOperator.cs#NotTargetTyped)]
 
@@ -54,7 +53,7 @@ a ? b : (c ? d : e)
 
 ## Conditional ref expression
 
-Beginning with C# 7.2, a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable can be assigned conditionally with a conditional ref expression. You can also use a conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
+A [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable can be assigned conditionally with a conditional ref expression. You can also use a conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
 
 The syntax for a conditional ref expression is as follows:
 
@@ -64,7 +63,7 @@ condition ? ref consequent : ref alternative
 
 Like the original conditional operator, a conditional ref expression evaluates only one of the two expressions: either `consequent` or `alternative`.
 
-In the case of a conditional ref expression, the type of `consequent` and `alternative` must be the same. Conditional ref expressions are not target-typed.
+In a conditional ref expression, the type of `consequent` and `alternative` must be the same. Conditional ref expressions aren't target-typed.
 
 The following example demonstrates the usage of a conditional ref expression:
 
@@ -78,13 +77,13 @@ Use of the conditional operator instead of an [`if` statement](../statements/sel
 
 ## Operator overloadability
 
-A user-defined type cannot overload the conditional operator.
+A user-defined type can't overload the conditional operator.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharpstandard/standard/expressions.md#1115-conditional-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Conditional operator](~/_csharpstandard/standard/expressions.md#1116-conditional-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about features added in C# 7.2 and later, see the following feature proposal notes:
+Specifications for newer features are:
 
 - [Conditional ref expressions (C# 7.2)](~/_csharplang/proposals/csharp-7.2/conditional-ref.md)
 - [Target-typed conditional expression (C# 9.0)](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)

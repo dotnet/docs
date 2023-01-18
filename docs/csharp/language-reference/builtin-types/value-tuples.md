@@ -7,7 +7,7 @@ helpviewer_keywords:
 ---
 # Tuple types (C# reference)
 
-Available in C# 7.0 and later, the *tuples* feature provides concise syntax to group multiple data elements in a lightweight data structure. The following example shows how you can declare a tuple variable, initialize it, and access its data members:
+The *tuples* feature provides concise syntax to group multiple data elements in a lightweight data structure. The following example shows how you can declare a tuple variable, initialize it, and access its data members:
 
 [!code-csharp-interactive[tuple intro](snippets/shared/ValueTuples.cs#Introduction)]
 
@@ -15,7 +15,7 @@ As the preceding example shows, to define a tuple type, you specify types of all
 
 [!code-csharp-interactive[tuple methods](snippets/shared/ValueTuples.cs#MethodOnTuples)]
 
-Beginning with C# 7.3, tuple types support [equality operators](../operators/equality-operators.md) `==` and `!=`. For more information, see the [Tuple equality](#tuple-equality) section.
+Tuple types support [equality operators](../operators/equality-operators.md) `==` and `!=`. For more information, see the [Tuple equality](#tuple-equality) section.
 
 Tuple types are [value types](value-types.md); tuple elements are public fields. That makes tuples *mutable* value types.
 
@@ -44,7 +44,7 @@ You can explicitly specify the names of tuple fields either in a tuple initializ
 
 [!code-csharp-interactive[explicit field names](snippets/shared/ValueTuples.cs#ExplicitFieldNames)]
 
-Beginning with C# 7.1, if you don't specify a field name, it may be inferred from the name of the corresponding variable in a tuple initialization expression, as the following example shows:
+If you don't specify a field name, it may be inferred from the name of the corresponding variable in a tuple initialization expression, as the following example shows:
 
 [!code-csharp-interactive[inferred field names](snippets/shared/ValueTuples.cs#InferFieldNames)]
 
@@ -95,7 +95,7 @@ For more information about deconstruction of tuples and other types, see [Decons
 
 ## Tuple equality
 
-Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators compare members of the left-hand operand with the corresponding members of the right-hand operand following the order of tuple elements.
+Tuple types support the `==` and `!=` operators. These operators compare members of the left-hand operand with the corresponding members of the right-hand operand following the order of tuple elements.
 
 [!code-csharp-interactive[tuple equality](snippets/shared/ValueTuples.cs#TupleEquality)]
 

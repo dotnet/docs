@@ -129,7 +129,7 @@ This final version evaluates the `FullName` property only when needed. If the pr
 
 ## Attaching attributes to auto-implemented properties
 
-Beginning with C# 7.3, field attributes can be attached to the compiler generated backing field in auto-implemented properties. For example, consider a revision to the `Person` class that adds a unique integer `Id` property. You write the `Id` property using an auto-implemented property, but your design doesn't call for persisting the `Id` property. The <xref:System.NonSerializedAttribute> can only be attached to fields, not properties. You can attach the <xref:System.NonSerializedAttribute> to the backing field for the `Id` property by using the `field:` specifier on the attribute, as shown in the following example:
+Field attributes can be attached to the compiler generated backing field in auto-implemented properties. For example, consider a revision to the `Person` class that adds a unique integer `Id` property. You write the `Id` property using an auto-implemented property, but your design doesn't call for persisting the `Id` property. The <xref:System.NonSerializedAttribute> can only be attached to fields, not properties. You can attach the <xref:System.NonSerializedAttribute> to the backing field for the `Id` property by using the `field:` specifier on the attribute, as shown in the following example:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Snippet14":::
 

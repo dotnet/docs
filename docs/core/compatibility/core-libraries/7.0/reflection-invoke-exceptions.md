@@ -9,7 +9,7 @@ The exceptions thrown when calling reflection invoke APIs have changed.
 
 ## Previous behavior
 
-- Previously, when an invoked method that [returns a value by reference](../../../../csharp/programming-guide/classes-and-structs/ref-returns.md) returned `null`, a <xref:System.NullReferenceException> was thrown.
+- Previously, when an invoked method that [returns a value by reference](../../../../csharp/language-reference/statements/jump-statements.md#ref-returns) returned `null`, a <xref:System.NullReferenceException> was thrown.
 
 - For constructors, the following exceptions were thrown:
 
@@ -28,7 +28,7 @@ Starting in .NET 7:
 
 ## Version introduced
 
-.NET 7 Preview 4
+.NET 7
 
 ## Type of breaking change
 

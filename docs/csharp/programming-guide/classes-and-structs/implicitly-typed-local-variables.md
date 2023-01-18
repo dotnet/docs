@@ -92,7 +92,7 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 - [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)
-- [var](../../language-reference/keywords/var.md)
+- [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables)
 - [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)

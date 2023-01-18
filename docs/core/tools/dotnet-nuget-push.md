@@ -38,8 +38,6 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`-d|--disable-buffering`**
 
   Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
@@ -71,7 +69,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`--skip-duplicate`**
 
-  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue.
+  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that other pushes can continue.
 
 - **`-sk|--symbol-api-key <API_KEY>`**
 

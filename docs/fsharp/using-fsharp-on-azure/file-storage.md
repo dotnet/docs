@@ -1,13 +1,13 @@
 ---
-title: Get started with Azure File Storage using F#
-description: Store file data in the cloud with Azure File Storage, and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
+title: Get started with Azure Files using F#
+description: Store file data in the cloud with Azure Files and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
 author: sylvanc
 ms.date: 08/26/2021
 ms.custom: "devx-track-fsharp"
 ---
-# Get started with Azure File Storage using F\#
+# Get started with Azure Files using F\#
 
-Azure File Storage is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) Protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure File Storage, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the File storage share simultaneously.
+Azure Files is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure Files, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the file storage share simultaneously.
 
 For a conceptual overview of file storage, see [the .NET guide for file storage](/azure/storage/storage-dotnet-how-to-use-files).
 
@@ -133,12 +133,12 @@ You can enable metrics for File storage from the [Azure portal](https://portal.a
 
 ## Next steps
 
-For more information about Azure File Storage, see these links.
+For more information about Azure Files, see these links.
 
 ### Conceptual articles and videos
 
 - [Azure Files Storage: a frictionless cloud SMB file system for Windows and Linux](https://azure.microsoft.com/resources/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/)
-- [How to use Azure File Storage with Linux](/azure/storage/storage-how-to-use-files-linux)
+- [How to use Azure Files with Linux](/azure/storage/storage-how-to-use-files-linux)
 
 ### Tooling support for File storage
 
@@ -153,7 +153,7 @@ For more information about Azure File Storage, see these links.
 
 ### Blog posts
 
-- [Azure File Storage is now generally available](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
-- [Inside Azure File Storage](https://azure.microsoft.com/blog/inside-azure-file-storage/)
+- [Azure Files storage is now generally available](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
+- [Inside Azure Files Storage](https://azure.microsoft.com/blog/inside-azure-file-storage/)
 - [Introducing Azure File Service](/archive/blogs/windowsazurestorage/introducing-microsoft-azure-file-service)
 - [Persisting connections to Azure Files](/archive/blogs/windowsazurestorage/persisting-connections-to-microsoft-azure-files)

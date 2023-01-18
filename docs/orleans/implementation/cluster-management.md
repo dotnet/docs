@@ -119,7 +119,7 @@ As already mentioned, `IMembershipTable` is used as a rendezvous point for silos
 
 1. [Consul IO](https://www.consul.io) - we used [Consul's Key/Value store](https://www.consul.io/intro/getting-started/kv.html) to implement the membership table. Refer to [Consul-Deployment](../deployment/consul-deployment.md) for more details.
 
-1. [AWS DynamoDB](https://aws.amazon.com/dynamodb/) - In this implementation, we use the cluster Deployment ID as the Partition Key and  Silo Identity (`ip-port-generation`) as the RangeKey making the record unity. The optimistic concurrency is made by the `ETag` attribute by making conditional writes on DynamoDB. The implementation logic is quite similar to Azure Table Storage. We only implemented the basic membership protocol (and not the extended protocol).
+1. [AWS DynamoDB](https://aws.amazon.com/dynamodb/) - In this implementation, we use the cluster Deployment ID as the Partition Key and  Silo Identity (`ip-port-generation`) as the RangeKey making the record unity. The optimistic concurrency is made by the `ETag` attribute by making conditional writes on DynamoDB. The implementation logic is quite similar to Azure Table Storage.
 
 1. In-memory emulation for development setup. We use a special system grain, called <xref:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.MembershipTableGrain>, for that implementation. This grain lives on a designated primary silo, which is only used for a **development setup**. In any real production usage primary silo **is not required**.
 

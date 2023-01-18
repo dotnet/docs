@@ -1,7 +1,7 @@
 ﻿static partial class Program
 {
     // <post>
-    static async Task PostAsync(HttpClient client)
+    static async Task PostAsync(HttpClient httpClient)
     {
         using StringContent jsonContent = new(
             JsonSerializer.Serialize(new
@@ -14,7 +14,7 @@
             Encoding.UTF8,
             "application/json");
 
-        using HttpResponseMessage response = await client.PostAsync(
+        using HttpResponseMessage response = await httpClient.PostAsync(
             "todos",
             jsonContent);
 

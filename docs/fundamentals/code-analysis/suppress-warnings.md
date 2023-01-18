@@ -19,7 +19,7 @@ This article covers the various ways you can suppress warnings from code analysi
 
 ## Disable the rule
 
-By disabling the code analysis rule that's causing the warning, you disable the rule for your entire file or project (depending on the scope of the [configuration file](configuration-files.md) that you use). To disable the rule, set its severity to `none` in the configuration file.
+You can disable a rule that's causing a warning by setting its severity to `none` in an EditorConfig or AnalyzerConfig [configuration file](configuration-files.md). This action disables the rule for your entire file or project, depending on the scope of the configuration file that you use.
 
 ```ini
 [*.{cs,vb}]
@@ -79,7 +79,7 @@ If you add the attribute to the global suppressions file, you [scope](xref:Syste
 [assembly: SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.", Scope = "member", Target = "~M:MyApp.Program.IgnorableCharacters")]
 ```
 
-Use the *documentation ID* for the API you want to reference in the `Target` attribute. For information about documentation IDs, see [Documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format).
+Use the *documentation ID* for the API you want to reference in the `Target` attribute. For information about documentation IDs, see [Documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#d42-id-string-format).
 
 To suppress warnings for compiler-generated code that doesn't map to explicitly provided user source, you must put the suppression attribute in a global suppressions file. For example, the following code suppresses a violation against a compiler-emitted constructor:
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet watch command
-description: The dotnet watch command is a file watcher that restarts or hot reloads the specified application when changes in the source code are detected.
-ms.date: 05/11/2022
+description: The dotnet watch command is a file watcher that runs a dotnet command when changes in source code are detected.
+ms.date: 11/09/2022
 ---
 # dotnet watch
 
@@ -9,12 +9,13 @@ ms.date: 05/11/2022
 
 ## Name
 
-`dotnet watch` - Restarts or [hot reloads](#hot-reload) the specified application when changes in the source code are detected.
+`dotnet watch` - Restarts or [hot reloads](#hot-reload) the specified application, or runs a specified dotnet command, when changes in source code are detected.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet watch [--list]
+dotnet watch [<command>]
+  [--list]
   [--no-hot-reload] [--non-interactive]
   [--project <PROJECT>]
   [-q|--quiet] [-v|--verbose]
@@ -26,17 +27,36 @@ dotnet watch -?|-h|--help
 
 ## Description
 
-The `dotnet watch` command is a file watcher. When it detects a change that is supported for [hot reload](#hot-reload), it hot reloads the specified application. When it detects an unsupported change, it restarts the application. This process enables fast iterative development from the command line.
+The `dotnet watch` command is a file watcher. When it detects a change, it runs the `dotnet run` command or a specified `dotnet` command. If it runs `dotnet run`, and the change is supported for [hot reload](#hot-reload), it hot reloads the specified application. If the change isn't supported, it restarts the application. This process enables fast iterative development from the command line.
 
 While running `dotnet watch`, you can force the app to rebuild and restart by pressing Ctrl+R in the command shell. This feature is available only while the app is running. For example, if you run `dotnet watch` on a console app that ends before you press Ctrl+R, pressing Ctrl+R has no effect. However, in that case `dotnet watch` is still watching files and will restart the app if a file is updated.
 
+### Response compression
+
+If `dotnet watch` runs for an app that uses [response compression](/aspnet/core/performance/response-compression), the tool can't inject the browser refresh script. The  .NET 7 and later version of the tool displays a warning message like the following:
+
+> warn: Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware[4]
+>
+> Unable to configure browser refresh script injection on the response. This may have been caused by the response's Content-Encoding: 'br'. Consider disabling response compression.
+
+As an alternative to disabling response compression, manually add the browser refresh JavaScript reference to the app's pages:
+
+```javascript
+@if (Environment.GetEnvironmentVariable("__ASPNETCORE_BROWSER_TOOLS") is not null)
+{
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+}
+```
+
 ## Arguments
 
-<!-- markdownlint-disable MD012 -->
+- **`command`**
+
+  `dotnet watch` can run any command that is dispatched via the `dotnet` executable, such as built-in CLI commands and global tools. If you can run `dotnet <command>`, you can run `dotnet watch <command>`. If the child command isn't specified, the default is `run` for `dotnet run`.
 
 - **`forwarded arguments`**
 
-  Arguments to pass to the child `dotnet` process. For example: `run` with options for [dotnet run](dotnet-run.md) or `test` with options for [dotnet test](dotnet-test.md). If the child command isn't specified, the default is `run` for `dotnet run`.
+  Arguments provided after a double dash (` -- `) are passed to the child `dotnet` process. If you're running `dotnet watch run`, these arguments are options for [dotnet run](dotnet-run.md). If you're running `dotnet watch test`, these arguments are options for [dotnet test](dotnet-test.md).
 
 ## Options
 
@@ -50,7 +70,7 @@ While running `dotnet watch`, you can force the app to rebuild and restart by pr
 
 - **`--non-interactive`**
 
-  Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being requested. When hot reload is enabled and a [rude edit](#rude-edits) is detected, dotnet watch restarts the app.
+  Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being requested. When hot reload is enabled and a [rude edit](#rude-edits) is detected, dotnet watch restarts the app. Available since .NET 7 SDK.
 
 - **`--project <PATH>`**
 

@@ -106,7 +106,7 @@ class SystemTime {
     public ushort Hour;
     public ushort Minute;
     public ushort Second;
-    public ushort Milsecond;
+    public ushort Millisecond;
 }
 
 public static void Main(string[] args) {

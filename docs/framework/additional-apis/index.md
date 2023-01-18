@@ -32,6 +32,7 @@ Some libraries target specific platforms. For example, the <xref:System.Text.Cod
 | Project | Description |
 | ------- | ----------- |
 | <xref:System.Text.CodePagesEncodingProvider> | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |
+| [Point of Service for .NET](pos-for-net/index.md) | Provides a set of classes that enable you to develop applications that interact with POS devices. |
 
 ## Private APIs
 

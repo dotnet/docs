@@ -1,9 +1,9 @@
 ﻿static partial class Program
 {
     // <delete>
-    static async Task DeleteAsync(HttpClient client)
+    static async Task DeleteAsync(HttpClient httpClient)
     {
-        using HttpResponseMessage response = await client.DeleteAsync("todos/1");
+        using HttpResponseMessage response = await httpClient.DeleteAsync("todos/1");
         
         response.EnsureSuccessStatusCode()
             .WriteRequestToConsole();

@@ -8,12 +8,12 @@ ms.topic: include
 > [!TIP]
 > :::row:::
 > :::column span="3":::
-> This content is an excerpt from the eBook, Architecting Cloud Native .NET Applications for Azure, available on [.NET Docs](/dotnet/architecture/cloud-native) or as a free downloadable PDF that can be read offline.
+> This content is an excerpt from the eBook, gRPC for WCF developers, available on [.NET Docs](/dotnet/architecture/grpc-for-wcf-developers) or as a free downloadable PDF that can be read offline.
 >
 > > [!div class="nextstepaction"]
-> > [Download PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
+> > [Download PDF](https://dotnet.microsoft.com/download/e-book/grpc-for-wcf-devs/pdf)
 > :::column-end:::
 > :::column:::
-> :::image type="content" source="../media/cover-thumbnail.png" alt-text="Cloud Native .NET apps for Azure eBook cover thumbnail.":::
+> :::image type="content" source="../media/cover-thumbnail.png" alt-text="gRPC for WCF developers eBook cover thumbnail.":::
 > :::column-end:::
 > :::row-end:::

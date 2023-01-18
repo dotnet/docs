@@ -26,11 +26,7 @@ highlightedContent:
     # Card
     - title: "Build .NET apps with C#"
       itemType: learn
-      url: /learn/paths/build-dotnet-applications-csharp
-    # Card
-    - title: Create your first console app
-      itemType: tutorial
-      url: core/get-started.md
+      url: /training/paths/build-dotnet-applications-csharp
     # Card
     - title: Create your first web app
       itemType: learn
@@ -38,19 +34,23 @@ highlightedContent:
     # Card
     - title: "Browse .NET learning paths"
       itemType: learn
-      url: /learn/dotnet/
+      url: /training/dotnet/
     # Card
     - title: "Interactive introduction to C#"
       itemType: get-started
       url: csharp/tour-of-csharp/tutorials/hello-world.yml
     # Card
-    - title: "What's new in .NET docs"
-      itemType: whats-new
-      url: whats-new/index.yml
+    - title: ".NET architecture docs"
+      itemType: architecture
+      url: architecture/index.yml
     # Card
     - title: "Azure for .NET developers"
       itemType: overview
       url: azure/index.yml
+    # Card
+    - title: "What's new in .NET docs"
+      itemType: whats-new
+      url: whats-new/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -67,9 +67,9 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: .NET tutorials
-        - url: core/whats-new/dotnet-6.md
+        - url: core/whats-new/dotnet-7.md
           itemType: whats-new
-          text: What's new in .NET 6
+          text: What's new in .NET 7
         - url: core/deploying/index.md
           itemType: deploy
           text: Deploy .NET apps
@@ -79,9 +79,9 @@ conceptualContent:
         - url: https://dotnet.microsoft.com/platform/community
           itemType: whats-new
           text: .NET developer community
-        - url: standard/library-guidance/index.md
-          itemType: concept
-          text: Library guidance
+        - url: /dotnet/communitytoolkit/
+          itemType: overview
+          text: Community Toolkits
     # Card
     - title: .NET concepts
       links:
@@ -124,44 +124,19 @@ conceptualContent:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
+        - url: core/compatibility/breaking-changes.md
+          itemType: concept
+          text: .NET breaking changes
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker
-        - url: core/compatibility/index.md
-          itemType: concept
-          text: .NET breaking changes
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
           itemType: tutorial
           text: Create .NET desktop apps for Windows
-    # Card
-    - title: .NET architectural guides
-      links:
-        - url: architecture/dapr-for-net-developers/index.md
-          itemType: architecture
-          text: Dapr for .NET developers
-        - url: architecture/microservices/index.md
-          itemType: architecture
-          text: .NET microservices architecture guidance
-        - url: architecture/modern-web-apps-azure/index.md
-          itemType: architecture
-          text: Modern web apps with ASP.NET Core and Azure
-        - url: architecture/containerized-lifecycle/index.md
-          itemType: architecture
-          text: Containerized Docker app lifecycle
-        - url: architecture/cloud-native/index.md
-          itemType: architecture
-          text: Cloud native .NET apps for Azure
-        - url: architecture/modernize-with-azure-containers/index.md
-          itemType: architecture
-          text: Modernize .NET apps with Azure
-      # footerLink (optional)
-      footerLink:
-        url: architecture/index.yml
-        text: All architecture guides
-
+          
 # tools section (optional)
 ## Languages: C#, F#, and Visual Basic
 tools:
@@ -278,7 +253,7 @@ additionalContent:
       # Card
       - title: Game development
         links:
-          - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
+          - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link
             text: Game development with Visual Studio
           - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
             text: Learn how to use CRYENGINE to build games with C#
@@ -304,7 +279,7 @@ additionalContent:
       # Card
       - title: ".NET API reference"
         summary: API reference documentation for .NET
-        url: ../api/index.md?view=net-6.0
+        url: ../api/index.md?view=net-7.0
       # Card
       - title: ".NET Framework API reference"
         summary: API reference documentation for .NET Framework

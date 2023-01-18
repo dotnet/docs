@@ -186,7 +186,7 @@ The following sections describe practices that the C# team follows to prepare co
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet8":::
 
-- Don't use [var](../../language-reference/keywords/var.md) when the type is not apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator or an explicit cast.
+- Don't use [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) when the type is not apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator or an explicit cast.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet9":::
 
@@ -263,7 +263,7 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17b":::
 
-  In C# 8 and later versions, use the new [`using` syntax](../../language-reference/keywords/using-statement.md) that doesn't require braces:
+  Use the new [`using` syntax](../../language-reference/keywords/using-statement.md) that doesn't require braces:
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17c":::
 

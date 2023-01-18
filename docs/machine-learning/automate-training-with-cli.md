@@ -1,7 +1,7 @@
 ---
 title: Automate model training with the ML.NET CLI
 description: Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
-ms.date: 06/03/2020
+ms.date: 11/10/2022
 ms.custom: how-to, mlnet-tooling
 #Customer intent: As a developer, I want to use ML.NET CLI to automatically train the "best model" from the command-prompt. I also want to understand the output provided by the tool (metrics and output assets)
 ---
@@ -32,8 +32,24 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 - regression
 - recommendation
 - image classification
+- forecasting
+- train
 
-Example of usage (classification scenario):
+The ML.NET CLI can be installed based on your operating system and its architecture with the following command:
+
+```console
+dotnet tool install --global mlnet-<OS>-<ARCH>
+```
+
+For example, the x64 version of Windows can be installed with:
+
+```console
+dotnet tool install --global mlnet-win-x64
+```
+
+For more information, see the [Install the ML.NET CLI](./how-to-guides/install-ml-net-cli.md) how-to guide.
+
+An example of usage (classification scenario):
 
 ```console
 mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
@@ -71,7 +87,7 @@ The following image displays the classification metrics list for the top five mo
 
  Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification-and-text-classification).
 
 ### Metrics for Regression and Recommendation models
 

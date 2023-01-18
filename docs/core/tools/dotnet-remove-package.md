@@ -35,8 +35,6 @@ The package reference to remove.
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples

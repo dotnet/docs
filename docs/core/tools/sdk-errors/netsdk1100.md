@@ -26,4 +26,8 @@ To resolve this error, set the `EnableWindowsTargeting` property to true. You ca
 
 If you want to apply this setting to your whole solution or repository, you can set it in a *Directory.Build.props* file.
 
-By default, .NET downloads all targeting packs (and runtime packs for self-contained builds) for the current target framework whether they're needed or not, because they might be brought in by a transitive framework reference. We didn't want to ship the Windows targeting packs with the non-Windows SDK builds, but we also didn't want a vanilla Console or ASP.NET Core app to automatically download these targeting and runtime packs the first time you build. The `EnableWindowsTargeting` property enables them to only be downloaded if you opt in.
+By default, .NET downloads all targeting packs (and runtime packs for self-contained builds) for the current target framework whether they're needed or not, because they might be brought in by a transitive framework reference. We didn't want to ship the Windows targeting packs with the non-Windows SDK builds, but we also didn't want a vanilla Console or ASP.NET Core app to automatically download these targeting and runtime packs the first time you build. The `EnableWindowsTargeting` property enables them to be downloaded only if you opt in.
+
+## See also
+
+- [EnableWindowsTargeting property](../../project-sdk/msbuild-props.md#enablewindowstargeting)

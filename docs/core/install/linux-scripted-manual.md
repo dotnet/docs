@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 12/21/2022
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries
@@ -16,19 +16,20 @@ You can also install .NET with snap. For more information, see [Install the .NET
 
 ## .NET releases
 
-The following table lists the .NET (and .NET Core) releases:
+There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
+The following table lists the support status of each version of .NET (and .NET Core):
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 6 (LTS)     | 5             |
-| 3.1 (LTS)   | 3.0           |
+| 7 (STS)     | 5             |
+| 6 (LTS)     | 3.1           |
+|             | 3.0           |
 |             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
-
-For more information about the life cycle of .NET releases, see [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Dependencies
 
@@ -68,12 +69,9 @@ If your distribution wasn't previously listed, and is debian-based, you may need
 
 ### Common dependencies
 
-For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-- [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+You can usually install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin).
 
 ## Scripted install
 
@@ -88,22 +86,22 @@ Before running this script, you'll need to grant permission for this script to r
 sudo chmod +x ./dotnet-install.sh
 ```
 
-The script defaults to installing the latest SDK [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. To install the current release, which may not be an (LTS) version, use the `-c Current` parameter.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 6. To install the latest release, which may not be an (LTS) version, use the `--version latest` parameter.
 
 ```bash
-./dotnet-install.sh -c Current
+./dotnet-install.sh --version latest
 ```
 
 To install .NET Runtime instead of the SDK, use the `--runtime` parameter.
 
 ```bash
-./dotnet-install.sh -c Current --runtime aspnetcore
+./dotnet-install.sh --version latest --runtime aspnetcore
 ```
 
-You can install a specific version by altering the `-c` parameter to indicate the specific version. The following command installs .NET SDK 6.0.
+You can install a specific major version with the `--channel` parameter to indicate the specific version. The following command installs .NET 7.0 SDK.
 
 ```bash
-./dotnet-install.sh -c 6.0
+./dotnet-install.sh --channel 7.0
 ```
 
 For more information, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
@@ -116,8 +114,8 @@ As an alternative to the package managers, you can download and manually install
 
 First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
+- ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal.
@@ -125,7 +123,7 @@ Next, extract the downloaded file and use the `export` command to set `DOTNET_RO
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. This will also make the .NET CLI commands available at the terminal and set the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
 ```bash
-DOTNET_FILE=dotnet-sdk-6.0.100-linux-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-7.0.100-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"

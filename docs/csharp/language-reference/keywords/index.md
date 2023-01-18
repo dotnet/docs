@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords"
 title: "C# Keywords"
-ms.date: 12/15/2021
+ms.date: 09/15/2022
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -13,9 +13,9 @@ ms.custom: "updateeachrelease"
 ---
 # C# Keywords
 
-Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier, but `if` is not because `if` is a keyword.
+Keywords are predefined, reserved identifiers that have special meanings to the compiler. They can't be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier, but `if` isn't because `if` is a keyword.
 
-The first table in this topic lists keywords that are reserved identifiers in any part of a C# program. The second table in this topic lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they are added as contextual keywords in order to avoid breaking programs written in earlier versions.
+The first table in this article lists keywords that are reserved identifiers in any part of a C# program. The second table in this article lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they're added as contextual keywords in order to avoid breaking programs written in earlier versions.
 
 :::row:::
     :::column:::
@@ -107,7 +107,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
 
 ## Contextual keywords
 
-A contextual keyword is used to provide a specific meaning in the code, but it is not a reserved word in C#. Some contextual keywords, such as `partial` and `where`, have special meanings in two or more contexts.
+A contextual keyword is used to provide a specific meaning in the code, but it isn't a reserved word in C#. Some contextual keywords, such as `partial` and `where`, have special meanings in two or more contexts.
 
 :::row:::
     :::column:::
@@ -122,6 +122,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
+        [`file`](file.md)  
         [`from`](from-clause.md)  
     :::column-end:::
     :::column:::
@@ -148,19 +149,20 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  
-        [`select`](select-clause.md)  
+        [`scoped`](../statements/declarations.md#scoped-ref)  
     :::column-end:::
     :::column:::
+        [`select`](select-clause.md)  
         [`set`](set.md)  
         [`unmanaged` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`unmanaged` (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)  
         [`value`](value.md)  
-        [`var`](var.md)  
+        [`var`](../statements/declarations.md#implicitly-typed-local-variables)  
         [`when` (filter condition)](when.md)  
         [`where` (generic type constraint)](where-generic-type-constraint.md)  
         [`where` (query clause)](where-clause.md)  
         [`with`](../operators/with-expression.md)  
-        [`yield`](yield.md)  
+        [`yield`](../statements/yield.md)  
     :::column-end:::
 :::row-end:::
 

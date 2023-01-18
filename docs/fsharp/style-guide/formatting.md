@@ -478,6 +478,43 @@ let printListWithOffsetPiped list1 =
     printfn $"A very long line to format the value: %d{elem}")
 ```
 
+In case the arguments of a lambda do not fit on a single line, or are multiline themselves, put them on the next line, indented by one level.
+
+```fsharp
+// ✔️ OK
+fun
+    (aVeryLongParameterName: AnEquallyLongTypeName)
+    (anotherVeryLongParameterName: AnotherLongTypeName)
+    (yetAnotherLongParameterName: LongTypeNameAsWell)
+    (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    // code starts here
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above to respect the maximum line length.
+fun (aVeryLongParameterName: AnEquallyLongTypeName) (anotherVeryLongParameterName: AnotherLongTypeName) (yetAnotherLongParameterName: LongTypeNameAsWell) (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    ()
+
+// ✔️ OK
+let useAddEntry () =
+    fun
+        (input:
+            {| name: string
+               amount: Amount
+               isIncome: bool
+               created: string |}) ->
+         // foo
+         bar ()
+
+// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+let useAddEntry () =
+    fun (input: {| name: string
+                   amount: Amount
+                   isIncome: bool
+                   created: string |}) ->
+        // foo
+        bar ()
+```
+
 ### Formatting arithmetic and binary expressions
 
 Always use white space around binary arithmetic expressions:
@@ -1179,6 +1216,101 @@ In single-line expressions the delimiter symbols should be placed on the same li
 @>
 ```
 
+### Formatting chained expressions
+
+When chained expressions (function applications intertwined with `.`) are long, put each application invocation on the next line.
+Indent the subsequent links in the chain by one level after the leading link.
+
+```fsharp
+// ✔️ OK
+Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(fun webBuilder -> webBuilder.UseStartup<Startup>())
+
+// ✔️ OK
+Cli
+    .Wrap("git")
+    .WithArguments(arguments)
+    .WithWorkingDirectory(__SOURCE_DIRECTORY__)
+    .ExecuteBufferedAsync()
+    .Task
+```
+
+The leading link can be composed out of multiple links if they are simple identifiers.
+For example, the addition of a fully qualified namespace.
+
+```fsharp
+// ✔️ OK
+Microsoft.Extensions.Hosting.Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(fun webBuilder -> webBuilder.UseStartup<Startup>())
+```
+
+Subsequent links should also contain simple identifiers.
+
+```fsharp
+// ✔️ OK
+configuration.MinimumLevel
+    .Debug()
+    // Notice how `.WriteTo` does not need its own line.
+    .WriteTo.Logger(fun loggerConfiguration ->
+        loggerConfiguration.Enrich
+            .WithProperty("host", Environment.MachineName)
+            .Enrich.WithProperty("user", Environment.UserName)
+            .Enrich.WithProperty("application", context.HostingEnvironment.ApplicationName))
+```
+
+When the arguments inside a function application don't fit on the rest of the line, put each argument on the next line.
+
+```fsharp
+// ✔️ OK
+WebHostBuilder()
+    .UseKestrel()
+    .UseUrls("http://*:5000/")
+    .UseCustomCode(
+        longArgumentOne,
+        longArgumentTwo,
+        longArgumentThree,
+        longArgumentFour
+    )
+    .UseContentRoot(Directory.GetCurrentDirectory())
+    .UseStartup<Startup>()
+    .Build()
+
+// ✔️ OK
+Cache.providedTypes
+    .GetOrAdd(cacheKey, addCache)
+    .Value
+
+// ❌ Not OK, formatting tools will reformat to the above
+Cache
+    .providedTypes
+    .GetOrAdd(
+        cacheKey,
+        addCache
+    )
+    .Value
+```
+
+Lambda arguments inside a function application should start on the same line as the opening `(`.
+
+```fsharp
+// ✔️ OK
+builder
+    .WithEnvironment()
+    .WithLogger(fun loggerConfiguration ->
+        // ...
+        ())
+
+// ❌ Not OK, formatting tools will reformat to the above
+builder
+    .WithEnvironment()
+    .WithLogger(
+        fun loggerConfiguration ->
+        // ...
+        ())
+```
+
 ## Formatting declarations
 
 This section discusses formatting declarations of different kinds.
@@ -1720,6 +1852,54 @@ let simpleValuePoorlyAnnotated1:int = 1
 let simpleValuePoorlyAnnotated2 :int = 2
 ```
 
+### Formatting multiline type annotations
+
+When a type annotation is long or multiline, put them on the next line, indented by one level.
+
+```fsharp
+type ExprFolder<'State> =
+    { exprIntercept: 
+        ('State -> Expr -> 'State) -> ('State -> Expr -> 'State -> 'State -> Exp -> 'State }
+        
+let UpdateUI
+    (model:
+#if NETCOREAPP2_1
+        ITreeModel
+#else
+        TreeModel
+#endif
+    )
+    (info: FileInfo) =
+    // code
+    ()
+
+let f
+    (x:
+        {|
+            a: Second
+            b: Metre
+            c: Kilogram
+            d: Ampere
+            e: Kelvin
+            f: Mole
+            g: Candela
+        |})
+    =
+    x.a
+
+type Sample
+    (
+        input: 
+            LongTupleItemTypeOneThing * 
+            LongTupleItemTypeThingTwo * 
+            LongTupleItemTypeThree * 
+            LongThingFour * 
+            LongThingFiveYow
+    ) =
+    class
+    end
+```
+
 ### Formatting return type annotations
 
 In function or member return type annotations, use white space before and after the `:` symbol:
@@ -1889,6 +2069,78 @@ Json.serialize<
        newParent: {| id: string; displayName: string |}
        requiresApproval: bool |}>
     myObj
+```
+
+### Formatting inheritance
+
+The arguments for the base class constructor appear in the argument list in the `inherit` clause.
+Put the `inherit` clause on a new line, indented by one level.
+
+```fsharp
+type MyClassBase(x: int) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: int) =
+   inherit MyClassBase(y * 2)
+
+// ❌ Not OK
+type MyClassDerived(y: int) = inherit MyClassBase(y * 2)
+```
+
+When the constructor is long or multiline, put them on the next line, indented by one level.  
+Format this multiline constructor according to the rules of multiline function applications.
+
+```fsharp
+type MyClassBase(x: string) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: string) =
+    inherit 
+        MyClassBase(
+            """
+            very long
+            string example
+            """
+        )
+        
+// ❌ Not OK
+type MyClassDerived(y: string) =
+    inherit MyClassBase(
+        """
+        very long
+        string example
+        """)
+```
+
+#### Multiple constructors
+
+When the `inherit` clause is part of a record, put it on the same line if it is short.
+And put it on the next line, indented by one level, if it is long or multiline.
+
+```fsharp
+type BaseClass =
+    val string1 : string
+    new () = { string1 = "" }
+    new (str) = { string1 = str }
+
+type DerivedClass =
+    inherit BaseClass
+
+    val string2 : string
+    new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
+    new () = 
+        { inherit 
+            BaseClass(
+                """
+                very long
+                string example
+                """
+            )
+          string2 = str2 }
 ```
 
 ## Formatting attributes

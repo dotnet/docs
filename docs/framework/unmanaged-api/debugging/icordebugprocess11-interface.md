@@ -14,15 +14,15 @@ topic_type:
 ---
 # ICorDebugProcess11 Interface
 
-[Supported in .NET Framework 4.5.2 and later versions.]  
+[Supported in .NET 5 and later versions.]  
   
- Provides a method that configures the debugger to handle in-memory metadata updates in the target process.  
-  
+Provides a method that enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The returned information is the same information that would be shown by using the SOS `eeheap -loader` command.
+
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateLoaderHeapMemoryRegions Method](icordebugprocess11-enumerateloaderheapmemoryregions-method.md)|Sets a value that determines how the debugger handles in-memory updates to metadata within the target process.|  
+|[EnumerateLoaderHeapMemoryRegions Method](icordebugprocess11-enumerateloaderheapmemoryregions-method.md)|Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap -loader` command. |  
   
 ## Remarks  
   
@@ -33,8 +33,8 @@ topic_type:
  **Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+
+ **.NET Versions:** [!INCLUDE[net-core-50-plus](../../../../includes/net-core-50-md.md)]  
   
 ## See also
 

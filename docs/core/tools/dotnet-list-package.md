@@ -72,8 +72,6 @@ The project or solution file to operate on. If not specified, the command search
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 - **`--config <SOURCE>`**
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.

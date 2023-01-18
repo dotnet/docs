@@ -21,8 +21,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained [true|false]] [--no-self-contained]
-    [-s|--source <SOURCE>] [-v|--verbosity <LEVEL>]
-    [--version-suffix <VERSION_SUFFIX>]
+    [-s|--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
+    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
 ```
@@ -99,8 +99,6 @@ For more information, see the following resources:
   * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
@@ -184,6 +182,10 @@ For more information, see the following resources:
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+
 - **`--version-suffix <VERSION_SUFFIX>`**
 
   Defines the version suffix to replace the asterisk (`*`) in the version field of the project file.
@@ -238,9 +240,10 @@ For more information, see the following resources:
 - [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime Identifier (RID) catalog](../rid-catalog.md)
+- [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
-- [ILLInk.Tasks](../deploying/trimming/trim-self-contained.md)
+- [Trim self-contained deployments](../deploying/trimming/trim-self-contained.md)

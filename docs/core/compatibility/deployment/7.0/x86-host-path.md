@@ -21,7 +21,7 @@ Going forward, the x86 host location is only added to the `PATH` environment var
 
 ## Version introduced
 
-.NET 7 Preview 6
+.NET 7
 
 ## Reason for change
 

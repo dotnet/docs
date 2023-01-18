@@ -3,7 +3,7 @@ title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/24/2022
+ms.date: 10/13/2022
 ---
 
 # Make HTTP requests with the HttpClient class
@@ -25,11 +25,11 @@ HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not a
 
 Most of the following examples reuse the same `HttpClient` instance, and therefore only need to be configured once. To create an `HttpClient`, use the `HttpClient` class constructor. For more information, see [Guidelines for using HttpClient](httpclient-guidelines.md).
 
-:::code language="csharp" source="../snippets/httpclient/Program.cs" id="todoclient":::
+:::code language="csharp" source="../snippets/httpclient/Program.cs" id="sharedclient":::
 
 The preceding code:
 
-- Instantiates a new `HttpClient` instance with the object initializer syntax, and as a [using declaration](../../../csharp/whats-new/csharp-8.md#using-declarations).
+- Instantiates a new `HttpClient` instance as a `static` variable. As per the [guidelines](httpclient-guidelines.md), it's strongly recommended to reuse `HttpClient` instances during the application's lifecycle.
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
 This `HttpClient` instance will always use the base address when making subsequent requests. To apply additional configuration consider:
@@ -45,7 +45,7 @@ This `HttpClient` instance will always use the base address when making subseque
 
 To make an HTTP request, you call any of the following APIs:
 
-| HTTP verb                    | API                                                                                 |
+| HTTP method                  | API                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------|
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType>          |
 | `GET`                        | <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> |
@@ -64,7 +64,7 @@ To make an HTTP request, you call any of the following APIs:
 
 ### HTTP content
 
-The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP verbs (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but additional subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP methods (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but additional subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 - <xref:System.Net.Http.ByteArrayContent>: Provides HTTP content based on a byte array.
 - <xref:System.Net.Http.FormUrlEncodedContent>: Provides HTTP content for name/value tuples encoded using `"application/x-www-form-urlencoded"` MIME type.
@@ -79,7 +79,7 @@ The `HttpContent` class is also used to represent the response body of the <xref
 
 ### HTTP Get
 
-A `GET` request shouldn't send a body and is used (as the verb indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
+A `GET` request shouldn't send a body and is used (as the method name indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="../snippets/httpclient/Program.Get.cs" id="get":::
 
@@ -239,7 +239,7 @@ The `TRACE` request can be useful for debugging as it provides application-level
 :::code language="csharp" source="../snippets/httpclient/Program.Trace.cs" id="trace":::
 
 > [!CAUTION]
-> The `TRACE` HTTP verb is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [Open Web Application Security Project (OWASP): Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
+> The `TRACE` HTTP method is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [Open Web Application Security Project (OWASP): Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
 
 ## Handle an HTTP response
 
@@ -260,12 +260,6 @@ If you need to have the framework throw the <xref:System.Net.Http.HttpRequestExc
 :::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
 
 This code will throw an `HttpRequestException` if the response status code is not within the 200-299 range.
-
-### HTTP response errors
-
-The HTTP response object (<xref:System.Net.Http.HttpResponseMessage>), when not successful, contains information about the error. The <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property can be used to evaluate the error code.
-
-For more information, see [Client error status codes](http-overview.md#client-error-status-codes) and [Server error status codes](http-overview.md#server-error-status-codes).
 
 ### HTTP valid content responses
 
@@ -288,6 +282,39 @@ Finally, when you know an HTTP endpoint returns JSON, you can deserialize the re
 :::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="json":::
 
 In the preceding code, `result` is the response body deserialized as the type `T`.
+
+## HTTP error handling
+
+When an HTTP request fails, the <xref:System.Net.Http.HttpRequestException> is thrown. Catching that exception alone may not be sufficient, as there are other potential exceptions thrown that you might want to consider handling. For example, the calling code may have used a cancellation token that was canceled before the request was completed. In this scenario, you'd catch the <xref:System.Threading.Tasks.TaskCanceledException>:
+
+:::code language="csharp" source="../snippets/httpclient/Program.Cancellation.cs" id="cancellation":::
+
+Likewise, when making an HTTP request, if the server doesn't respond before the <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType> is exceeded the same exception is thrown. However, in this scenario, you can distinguish that the timeout occurred by evaluating the <xref:System.Exception.InnerException?displayProperty=nameWithType> when catching the <xref:System.Threading.Tasks.TaskCanceledException>:
+
+:::code language="csharp" source="../snippets/httpclient/Program.CancellationInnerTimeout.cs" id="innertimeout":::
+
+In the preceding code, when the inner exception is a <xref:System.TimeoutException> the timeout occurred, and the request wasn't canceled by the cancellation token.
+
+To evaluate the HTTP status code when catching an <xref:System.Net.Http.HttpRequestException>, you can evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property:
+
+:::code language="csharp" source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
+
+In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response is not successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following APIs:
+
+- <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType>
+- <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>
+- <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType>
+
+> [!TIP]
+> All `HttpClient` methods used to make HTTP requests that don't return an `HttpResponseMessage` implicitly call `EnsureSuccessStatusCode` on your behalf.
+
+When calling these methods, you can handle the `HttpRequestException` and evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property to determine the HTTP status code of the response:
+
+:::code language="csharp" source="../snippets/httpclient/Program.CancellationStream.cs" id="helpers":::
+
+There might be scenarios in which you need to throw the <xref:System.Net.Http.HttpRequestException> in your code. The <xref:System.Net.Http.HttpRequestException.%23ctor> constructor is public, and you can use it to throw an exception with a custom message:
+
+:::code language="csharp" source="../snippets/httpclient/Program.ThrowHttpException.cs" id="throw":::
 
 ## HTTP proxy
 

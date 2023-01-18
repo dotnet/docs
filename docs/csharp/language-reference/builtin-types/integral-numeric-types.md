@@ -73,7 +73,7 @@ Integer literals can be
 
 - *decimal*: without any prefix
 - *hexadecimal*: with the `0x` or `0X` prefix
-- *binary*: with the `0b` or `0B` prefix (available in C# 7.0 and later)
+- *binary*: with the `0b` or `0B` prefix
 
 The following code demonstrates an example of each:
 
@@ -83,7 +83,7 @@ var hexLiteral = 0x2A;
 var binaryLiteral = 0b_0010_1010;
 ```
 
-The preceding example also shows the use of `_` as a *digit separator*, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
+The preceding example also shows the use of `_` as a *digit separator*. You can use the digit separator with all kinds of numeric literals.
 
 The type of an integer literal is determined by its suffix as follows:
 
@@ -152,6 +152,8 @@ For more information, see the following sections of the [C# language specificati
 
 - [Integral types](~/_csharpstandard/standard/types.md#836-integral-types)
 - [Integer literals](~/_csharpstandard/standard/lexical-structure.md#6453-integer-literals)
+- [C# 9 - Native sized integral types](~/_csharplang/proposals/csharp-9.0/native-integers.md)
+- [C# 11 - Numeric `IntPtr` and `UIntPtr](~/_csharplang/proposals/csharp-11.0/numeric-intptr.md)
 
 ## See also
 

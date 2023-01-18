@@ -8,46 +8,49 @@ ms.date: 09/01/2022
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading an existing WCF Server-side project on .NET Framework to use CoreWCF services on .NET 6. This article provides:
 
-- Things to know before starting
-- A demonstration of how to run the tool against a WCF Server-side project on .NET Framework
-- Troubleshooting tips
+- Things to know before starting.
+- A demonstration of how to run the tool against a WCF Server-side project on .NET Framework.
+- Troubleshooting tips.
 
 For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 ## Things to know before starting
 
-This tool currently supports C# projects, and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side project to .NET 6.
+This tool currently supports C# projects and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side projects to .NET 6.
 
-For the WCF project to be applicable for this upgrade, it must meet the following requirements:
+For a WCF project to be applicable for this upgrade, it must meet the following requirements:
 
 1. Includes a .cs file that references `System.ServiceModel` and creates new `ServiceHost`.
-    - If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
-2. Includes a .config file that stores `System.ServiceModel` properties
 
-This current version of the tool does not support WCF projects hosted via .svc file(s).
+   If the WCF project has multiple `ServiceHost`, all hosts need to be created in the same method.
+
+1. Includes a .config file that stores `System.ServiceModel` properties.
+
+The current version of the tool does not support WCF projects hosted via .svc files.
+
 > [!NOTE]
-> If your project is not applicable for this tool, we recommend you to check out the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF/blob/main/Documentation/Walkthrough.md) and
+> If your project is not applicable for this tool, we recommend you take a look at the [CoreWCF walkthrough guide](https://github.com/CoreWCF/CoreWCF/blob/main/Documentation/Walkthrough.md) and
 [BeanTrader Sample demo](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/) and manually update the project.
 
 ## Demo app
 
 You can use the [Basic Calculator Sample][wcf-sample] project to test upgrading with the Upgrade Assistant, which is also the demo used in this documentation.
 
-If you want to try out a more complicated sample, please check out the [BeanTrader Sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
+If you want to try out a more complicated sample, see the [BeanTrader sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
 
 ## Run upgrade-assistant
 
-If you have not installed the tool, please follow the [instructions here](https://github.com/dotnet/upgrade-assistant#installation) to install the upgrade assistant.
+If you haven't installed the .NET Upgrade Assistant tool, follow the [installation instructions](https://github.com/dotnet/upgrade-assistant#installation).
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
-When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the upgrade entrypoint. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
+When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you'll select which project you normally run, known as the upgrade entry point. Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
 
 ```console
 upgrade-assistant upgrade .\CalculatorSample.sln
 ```
 
-The tool runs and shows you a list of the steps it will do. As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step or some other option such as:
+The tool runs and shows you a list of the steps it will perform. As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step or some other option such as:
 
 - Get more information about the step.
 - Change projects.
@@ -58,11 +61,11 @@ Pressing <kbd>Enter</kbd> without choosing a number selects the first item in th
 
 As each step initializes, it may provide information about what it thinks will happen if you apply the step.
 
-### Select the entrypoint and project to upgrade
+### Select the entry point and project to upgrade
 
-The first step in upgrading the [Basic Calculator Sample][wcf-sample] is choosing which project in the solution serves as the entrypoint project.
+The first step in upgrading the [Basic Calculator Sample][wcf-sample] is choosing which project in the solution serves as the entry-point project.
 
-```
+```output
 Upgrade Steps
 
 1. [Next step] Select an entrypoint
@@ -78,14 +81,14 @@ Choose a command:
 
 Choose **command 1** to start that step. The results are displayed:
 
-```
+```output
 [10:25:42 INF] Applying upgrade step Select an entrypoint
 Please select the project you run. We will then analyze the dependencies and identify the recommended order to upgrade projects.
    1. CalculatorClient
    2. CalculatorService
 ```
 
-There are 2 projects listed. Because our tool upgrades the server-side project, we will choose **command 2** to select the service project as the entrypoint.
+There are two projects listed. Because our tool upgrades the server-side project, we will choose **command 2** to select the service project as the entry point.
 
 ### Upgrade the project
 
@@ -96,7 +99,7 @@ Once a project is selected, a list of upgrade steps the tool will take is listed
 
 The following output describes the steps involved in upgrading the project:
 
-```
+```output
 Upgrade Steps
 
 Entrypoint: C:\Users\Desktop\CalculatorSample\CalculatorService\CalculatorService.csproj
@@ -154,7 +157,7 @@ Choose a command:
 
 In this example of upgrading the CalculatorService project, you'll apply each step. The first step, **command 1**, is backing up the project:
 
-```
+```output
 [10:25:52 INF] Applying upgrade step Back up project
 Please choose a backup path
    1. Use default path [C:\Users\Desktop\CalculatorSample.backup]
@@ -163,7 +166,7 @@ Please choose a backup path
 
 The tool chooses a default backup path named after the current folder, but with `.backup` appended to it. You can choose a custom path as an alternative to the default path. For each upgraded project, the folder of the project is copied to the backup folder. In this example, the `CalculatorService` folder is copied from _CalculatorSample\CalculatorService_ to _CalculatorSample.backup\CalculatorService_ during the backup step:
 
-```
+```output
 [10:25:53 INF] Backing up C:\Users\Desktop\CalculatorSample\CalculatorService to C:\Users\t-simonaliao\OneDrive - Microsoft\Desktop\CalculatorSample.backup\CalculatorService
 [10:25:53 INF] Project backed up to C:\Users\Desktop\CalculatorSample.backup\CalculatorService
 [10:25:53 INF] Upgrade step Back up project applied successfully
@@ -174,7 +177,7 @@ Please press enter to continue...
 
 The project is upgraded from the .NET Framework project format to the .NET SDK project format.
 
-```
+```output
 [10:25:56 INF] Applying upgrade step Convert project file to SDK style
 [10:25:56 INF] Converting project file format with try-convert, version 0.4.0-dev
 [10:25:56 INF] Recommending executable TFM net6.0 because the project builds to an executable
@@ -196,7 +199,7 @@ Once the project format has been updated, the next step is to clean up the NuGet
 
 In addition to the packages referenced by your app, the _packages.config_ file contains references to the dependencies of those packages. For example, if you added reference to package **A** which depends on package **B**, both packages would be referenced in the _packages.config_ file. In the new project system, only the reference to package **A** is required. This step analyzes the package references and removes those that aren't required.
 
-```
+```output
 [10:26:01 INF] Initializing upgrade step Clean up NuGet package references
 [10:26:01 INF] Initializing upgrade step Duplicate reference analyzer
 [10:26:01 INF] No package updates needed
@@ -261,7 +264,7 @@ In this example, the package updater detects the CalculatorService as a server-o
 
 The tool next changes the [TFM](../../standard/frameworks.md) from .NET Framework to the suggested SDK. In this example, it's `net6.0-windows`.
 
-```
+```output
 [10:26:17 INF] Applying upgrade step Update TFM
 [10:26:17 INF] Recommending executable TFM net6.0 because the project builds to an executable
 [10:26:19 INF] Updated TFM to net6.0
@@ -272,7 +275,7 @@ The tool next changes the [TFM](../../standard/frameworks.md) from .NET Framewor
 
 Next, the tool updates the project's NuGet packages to the versions that support the updated TFM, `net6.0-windows`.
 
-```
+```output
 [10:26:20 INF] Initializing upgrade step Update NuGet Packages
 [10:26:20 INF] Initializing upgrade step Duplicate reference analyzer
 [10:26:20 INF] No package updates needed
@@ -300,7 +303,7 @@ Next, the tool updates the project's NuGet packages to the versions that support
 
 Once the packages are updated, the next step is to update any template files. In this example, there are no template files that need to be updated or added to the project. This step is skipped and the next step is automatically started.
 
-```
+```output
 [10:26:20 INF] Initializing upgrade step Add template files
 [10:26:20 INF] 0 expected template items needed
 ```
@@ -311,7 +314,7 @@ Once the packages are updated, the next step is to update any template files. In
 
 The upgrade assistant will first initialize the WCF Updater step and check if the project is applicable for WCF update.
 
-```
+```output
 [10:26:20 INF] Initializing upgrade step Update WCF service to CoreWCF (Preview)
 [10:26:20 INF] This config file is applicable for upgrade: C:\Users\Desktop\CalculatorSample\CalculatorService\App.config. System.serviceModel/services elements were found.
 [10:26:20 INF] This  file is applicable for upgrade: C:\Users\Desktop\CalculatorSample\CalculatorService\service.cs. ServiceHost object was found.
@@ -332,7 +335,7 @@ The step checks the configuration file, source code, and project file separately
 
 In this sample, CalculatorSample is applicable for WCF update, and we will choose **command 1** to apply the step.
 
-```
+```output
 [10:26:23 INF] Applying upgrade step Update WCF service to CoreWCF (Preview)
 [10:26:23 INF] Finish updating project file.
 [10:26:23 WRN] The mex endpoint is removed from .config file, and service metadata behavior is configured in the source code instead.
@@ -346,7 +349,7 @@ In this sample, CalculatorSample is applicable for WCF update, and we will choos
 [10:26:23 INF] Upgrade step Update WCF service to CoreWCF (Preview) applied successfully
 ```
 
-This step creates the updates and writes them into the original files individually. Pay attention to the output which may notify you about removal from original files or manual updates to complete after the upgrade.
+This step creates the updates and writes them into the original files individually. Pay attention to the output, which may notify you about removal from original files or manual updates to complete after the upgrade.
 
 #### Config and code files update
 
@@ -354,7 +357,7 @@ These steps may be skipped automatically by the tool if the tool determines ther
 
 After the WCF update is complete, the next step is to update app config files. In this example, there is not anything needs to be upgraded in the app config files. The WCF step already updated the configuration files so this step will not complain about the usage of unsupported `system.serviceModel`. This step is skipped and the next step is automatically started.
 
-```
+```output
 [10:26:43 INF] Initializing upgrade step Upgrade app config files
 [10:26:43 INF] Found 0 app settings for upgrade:
 [10:26:43 INF] Found 0 connection strings for upgrade:
@@ -363,7 +366,7 @@ After the WCF update is complete, the next step is to update app config files. I
 
 The final step before this project's upgrade is completed, is to update any out-of-date code references. Based on the type of project you're upgrading, a list of known code fixes is displayed for this step. Some of the fixes may not apply to your project.
 
-```
+```output
 9. Update source code
     a. Apply fix for UA0002: Types should be upgraded
     b. Apply fix for UA0012: 'UnsafeDeserialize()' does not exist
@@ -373,7 +376,7 @@ The final step before this project's upgrade is completed, is to update any out-
 
 In this case, none of the suggested fixes apply to the example project, and this step automatically completes immediately after the previous step was completed.
 
-```
+```output
 [10:26:44 INF] Initializing upgrade step Update source code
 [10:26:44 INF] Running analyzers on CalculatorService
 [10:26:48 INF] Identified 0 diagnostics in project CalculatorService
@@ -384,7 +387,7 @@ In this case, none of the suggested fixes apply to the example project, and this
 
 If there are any more projects to migrate, the tool lets you select which project to upgrade next. When there are no more projects to upgrade, the tool brings you to the "Finalize upgrade" step:
 
-```
+```output
 1. [Next step] Finalize upgrade
 
 Choose a command:
@@ -400,9 +403,9 @@ Choose a command:
 
 Ideally, after successfully running the tool, these changes should appear in the original files.
 
-In `service.cs` file, the `using System.ServiceModel` was replaced with references to CoreWCF. The `ServiceHost` instance was also removed and the service was hosted on ASP .NET Core.
+In `service.cs` file, the `using System.ServiceModel` was replaced with references to CoreWCF. The `ServiceHost` instance was also removed and the service was hosted on ASP.NET Core.
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using CoreWCF;
@@ -414,8 +417,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 ```
 
-```
- public static async Task Main()
+```csharp
+    public static async Task Main()
     {
         var builder = WebApplication.CreateBuilder();
 
@@ -467,7 +470,7 @@ For the configuration files, the `system.serviceModel` section in `App.config` w
 
 `App.config`
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <!-- system.serviceModel section is moved to a separate wcf.config file located at the same directory as this file.-->
@@ -476,7 +479,7 @@ For the configuration files, the `system.serviceModel` section in `App.config` w
 
 `wcf.config`
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <system.serviceModel>
@@ -509,9 +512,9 @@ For the configuration files, the `system.serviceModel` section in `App.config` w
 </configuration>
 ```
 
-Lastly, in the project file, `CalculatorService.csproj`, the SDK was updated to `Microsoft.NET.Sdk.Web` to enable ASP .NET Core host and CoreWCF package references were added.
+Lastly, in the project file, `CalculatorService.csproj`, the SDK was updated to `Microsoft.NET.Sdk.Web` to enable ASP.NET Core host and CoreWCF package references were added.
 
-```
+```xml
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.336902">
@@ -525,7 +528,7 @@ Lastly, in the project file, `CalculatorService.csproj`, the SDK was updated to 
   </ItemGroup>
 ```
 
-Notice that in the CalculatorSample, there is not a project-to-project dependency and the sample can run successfully after only updating the CalculatorService. But in other cases with different dependencies, you might need to update other projects in the same solution as well.
+Notice that in the CalculatorSample, there isn't a project-to-project dependency and the sample can run successfully after only updating the CalculatorService. But in other cases with different dependencies, you might need to update other projects in the same solution as well.
 
 ## After upgrading
 
@@ -544,4 +547,4 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 - Docs: [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
-[wcf-sample]: https://github.com/dotnet/docs/tree/main/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample
+[wcf-sample]: https://github.com/dotnet/samples/tree/main/core/porting/upgrade-assistant-wcf-framework/CalculatorSample

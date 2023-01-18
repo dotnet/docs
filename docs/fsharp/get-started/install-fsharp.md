@@ -9,7 +9,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio
 
-1. If you're downloading [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for the first time, it will first install Visual Studio Installer. Install the appropriate edition of Visual Studio from the installer.
+1. If you're downloading [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for the first time, it will first install Visual Studio Installer. Install the appropriate edition of Visual Studio from the installer.
 
    If you already have Visual Studio installed, choose **Modify** next to the edition you want to add F# to.
 
@@ -31,7 +31,7 @@ You can install F# in multiple ways, depending on your environment.
 
 ## Install F# with Visual Studio for Mac
 
-F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link), no matter which configuration you choose.
+F# is installed by default in [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link), no matter which configuration you choose.
 
 After the install completes, choose **Start Visual Studio**. You can also open Visual Studio through Finder on macOS.
 

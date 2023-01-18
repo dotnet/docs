@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/11/2022
+ms.date: 11/16/2022
 ms.topic: tutorial
 recommendations: false
 ---
@@ -90,7 +90,7 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 > The .NET app in this tutorial relies on the .NET SDK as part of its functionality. The _Dockerfile_ creates a new set of Docker layers, independent from the previous ones. It starts from scratch with the SDK image, and adds the build output from the previous set of layers. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
-> FROM mcr.microsoft.com/dotnet/runtime:6.0
+> FROM mcr.microsoft.com/dotnet/runtime:7.0
 > ```
 
 > [!WARNING]
@@ -98,11 +98,11 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/sdk:6.0` as the alias `build-env`.
+- Setting the base image from `mcr.microsoft.com/dotnet/sdk:7.0` as the alias `build-env`.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../core/tools/dotnet-publish.md) command.
 - Applying labels to the container.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:6.0`
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/sdk:7.0`
 - Copying the published build output from the `build-env`.
 - Defining the entry point, which delegates to [`dotnet /DotNet.GitHubAction.dll`](../core/tools/dotnet.md).
 

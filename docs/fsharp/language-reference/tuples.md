@@ -89,7 +89,7 @@ type StructTupleAlias = (struct (string * float))
 
 ## Interoperation with C# Tuples
 
-C# 7.0 introduced tuples to the language.  Tuples in C# are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C#, you must use struct tuples.
+Tuples in C# are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C#, you must use struct tuples.
 
 This is easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
 
@@ -131,7 +131,7 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 
 ### Compiled Form of Struct Tuples
 
-Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7.0 Tuples](../../csharp/language-reference/builtin-types/value-tuples.md) and [Visual Basic 2017 Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
+Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# Tuples](../../csharp/language-reference/builtin-types/value-tuples.md) and [Visual Basic Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
 
 ## See also
 

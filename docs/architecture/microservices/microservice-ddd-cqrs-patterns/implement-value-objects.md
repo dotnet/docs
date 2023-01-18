@@ -317,8 +317,6 @@ public class Address
 
 - Table splitting is optional, that is, they can optionally be mapped to a separate table and still be owned types.
 
-- They can reference other entities (that is, they can act as the dependent side on relationships to other non-owned types).
-
 ## Additional resources
 
 - **Martin Fowler. ValueObject pattern** \
@@ -331,10 +329,10 @@ public class Address
   <https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/>
 
 - **Owned Entity Types** \
-  [https://docs.microsoft.com/ef/core/modeling/owned-entities](/ef/core/modeling/owned-entities)
+  [https://learn.microsoft.com/ef/core/modeling/owned-entities](/ef/core/modeling/owned-entities)
 
 - **Shadow Properties** \
-  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
+  [https://learn.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
 
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/dotnet/efcore/issues/246>

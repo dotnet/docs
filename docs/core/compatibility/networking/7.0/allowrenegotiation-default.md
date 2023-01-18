@@ -17,7 +17,7 @@ Starting in .NET 7, client-side renegotiation must be explicitly enabled on the 
 
 ## Version introduced
 
-.NET 7 Preview 3
+.NET 7
 
 ## Type of breaking change
 

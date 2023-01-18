@@ -1,7 +1,7 @@
 ---
-title: "Operator overloading - C# reference"
-description: "Learn how to overload a C# operator and which C# operators are overloadable."
-ms.date: 07/05/2019
+title: "Operator overloading - Define unary, arithmetic, equality, and comparison operators."
+description: "Learn how to overload a C# operator and which C# operators are overloadable. In general, the unary, arithmetic, equality and comparison operators are overloadable."
+ms.date: 11/28/2022
 f1_keywords: 
   - "operator_CSharpKeyword"
   - operator
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "operator keyword [C#]"
   - "operator overloading [C#]"
 ---
-# Operator overloading (C# reference)
+# Operator overloading - predefined unary, arithmetic, equality and comparison operators
 
 A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation in case one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
 
@@ -38,7 +38,7 @@ The following table shows the operators that can be overloaded:
 
 ## Non overloadable operators
 
-The following table shows the operators that cannot be overloaded:
+The following table shows the operators that can't be overloaded:
 
 | Operators | Alternatives |
 | :---------: | --------------- |

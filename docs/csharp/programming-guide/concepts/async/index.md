@@ -199,7 +199,7 @@ You'll notice quite a few tasks are completed between when the toaster catches f
 
 There are two important mechanisms to understand: how an exception is stored in a faulted task, and how an exception is unpackaged and rethrown when code awaits a faulted task.
 
-When code running asynchronously throws an exception, that exception is stored in the `Task`. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is an <xref:System.AggregateException?displayProperty=nameWithType> because more than one exception may be thrown during asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If that `Exception` property is null, a new `AggregateException` is created and the thrown exception is the first item in the collection.
+When code running asynchronously throws an exception, that exception is stored in the `Task`. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is a <xref:System.AggregateException?displayProperty=nameWithType> because more than one exception may be thrown during asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If that `Exception` property is null, a new `AggregateException` is created and the thrown exception is the first item in the collection.
 
 The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When code `awaits` a faulted task, the first exception in the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection is rethrown. That's why the output from this example shows an `InvalidOperationException` instead of an `AggregateException`. Extracting the first inner exception makes working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario may generate multiple exceptions.
 
@@ -241,7 +241,7 @@ while (breakfastTasks.Count > 0)
     {
         Console.WriteLine("Toast is ready");
     }
-    await finishedTask;    
+    await finishedTask;
     breakfastTasks.Remove(finishedTask);
 }
 ```

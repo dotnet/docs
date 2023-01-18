@@ -1,4 +1,12 @@
-﻿//<snippet5>
+﻿// Snippets 5000 Note:  
+// The container used for building our samples doesn't include the Office assemblies.
+// This sample will generate a few errors in the CI build. Those are expected,
+// so the build passes.
+//
+// If you update this sample, make sure to build it locally.
+// Then, make sure no new errors are added.
+
+//<snippet5>
 // You must add a reference to Microsoft.Office.Interop.Excel to run
 // this example.
 using System;
@@ -11,7 +19,6 @@ namespace IndexedProperties
         static void Main(string[] args)
         {
             CSharp2010();
-            //CSharp2008();
         }
 
         static void CSharp2010()
@@ -52,12 +59,6 @@ namespace IndexedPieces
             Excel.Range targetRange = excelApp.get_Range("A1", Type.Missing);
             //</snippet1>
 
-            //<snippet3>
-            // Visual C# 2008.
-            targetRange.set_Value(Type.Missing, "Name");
-            // Or
-            targetRange.Value2 = "Name";
-            //</snippet3>
         }
 
         public void Snippets2010()

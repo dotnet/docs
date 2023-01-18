@@ -1,4 +1,12 @@
-﻿using System;
+﻿// Snippets 5000 Note:  
+// The container used for building our samples doesn't include the Office assemblies.
+// This sample will generate a few errors in the CI build. Those are expected,
+// so the build passes.
+//
+// If you update this sample, make sure to build it locally.
+// Then, make sure no new errors are added.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +28,8 @@ namespace NamedAndOptionalSnippets
             // Named arguments mixed with positional arguments are valid
             // as long as they are used in their correct position.
             PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
-            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");    // C# 7.2 onwards
-            PrintOrderDetails("Gift Shop", orderNum: 31, "Red Mug");                   // C# 7.2 onwards
+            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug"); 
+            PrintOrderDetails("Gift Shop", orderNum: 31, "Red Mug");
 
             // However, mixed arguments are invalid if used out-of-order.
             // The following statements will cause a compiler error.

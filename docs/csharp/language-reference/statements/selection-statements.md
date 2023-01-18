@@ -1,7 +1,7 @@
 ---
-title: "Selection statements - C# reference"
-description: "Learn about C# selection statements: if and switch."
-ms.date: 08/09/2021
+title: "if and switch statements - select execution path among branches."
+description: "The `if` and `switch` statements provide branching logic in C#. You use `if, `else` and `switch` to choose the path your program follows."
+ms.date: 11/22/2022
 f1_keywords:
   - "if_CSharpKeyword"
   - "else_CSharpKeyword"
@@ -17,12 +17,9 @@ helpviewer_keywords:
   - "case keyword [C#]"
   - "default keyword [C#]"
 ---
-# Selection statements (C# reference)
+# Selection statements - `if`, `else` and `switch`
 
-The following statements select statements to execute from a number of possible statements based on the value of an expression:
-
-- The [`if` statement](#the-if-statement): selects a statement to execute based on the value of a Boolean expression.
-- The [`switch` statement](#the-switch-statement): selects a statement list to execute based on a pattern match with an expression.
+The `if`, `else` and `switch` statements select statements to execute from many possible paths based on the value of an expression. The `if` [statement](#the-if-statement) selects a statement to execute based on the value of a Boolean expression. An `if` statement can be combined with `else` to choose two distinct paths based on the Boolean expression. The `switch` [statement](#the-switch-statement) selects a statement list to execute based on a pattern match with an expression.
 
 ## The `if` statement
 
@@ -51,23 +48,23 @@ The `switch` statement selects a statement list to execute based on a pattern ma
 At the preceding example, the `switch` statement uses the following patterns:
 
 - A [relational pattern](../operators/patterns.md#relational-patterns) (available in C# 9.0 and later): to compare an expression result with a constant.
-- A [constant pattern](../operators/patterns.md#constant-pattern) (available in C# 7.0 and later): to test if an expression result equals a constant.
+- A [constant pattern](../operators/patterns.md#constant-pattern): test if an expression result equals a constant.
 
 > [!IMPORTANT]
 > For information about the patterns supported by the `switch` statement, see [Patterns](../operators/patterns.md).
 
-The preceding example also demonstrates the `default` case. The `default` case specifies statements to execute when a match expression doesn't match any other case pattern. If a match expression doesn't match any case pattern and there is no `default` case, control falls through a `switch` statement.
+The preceding example also demonstrates the `default` case. The `default` case specifies statements to execute when a match expression doesn't match any other case pattern. If a match expression doesn't match any case pattern and there's no `default` case, control falls through a `switch` statement.
 
 A `switch` statement executes the *statement list* in the first *switch section* whose *case pattern* matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That is a case that is already handled by an upper case or whose pattern is impossible to match.
 
 > [!NOTE]
-> The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is always evaluated last and only if all other case patterns aren't matched.
+> The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is always evaluated last and only if all other case patterns aren't matched, except if `goto default` is encountered.
 
 You can specify multiple case patterns for one section of a `switch` statement, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="MultipleCases":::
 
-Within a `switch` statement, control cannot fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](../keywords/throw.md) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
+Within a `switch` statement, control can't fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](../keywords/throw.md) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.
 
@@ -79,15 +76,6 @@ A case pattern may be not expressive enough to specify the condition for the exe
 
 The preceding example uses [positional patterns](../operators/patterns.md#positional-pattern) with nested [relational patterns](../operators/patterns.md#relational-patterns).
 
-### Language version support
-
-The `switch` statement supports pattern matching beginning with C# 7.0. Since then, each major C# version adds new kinds of patterns. For more information, see [Patterns](../operators/patterns.md).
-
-In C# 6 and earlier, you use the `switch` statement with the following limitations:
-
-- A match expression must be of one of the following types: [char](../builtin-types/char.md), [string](../builtin-types/reference-types.md), [bool](../builtin-types/bool.md), an [integral numeric](../builtin-types/integral-numeric-types.md) type, or an [enum](../builtin-types/enum.md) type.
-- Only constant expressions are allowed in `case` labels.
-
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
@@ -95,9 +83,9 @@ For more information, see the following sections of the [C# language specificati
 - [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
 - [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
 
-For more information about features introduced in C# 7.0 and later, see the following feature proposal notes:
+For more information about pattern matching `switch` statement, see the following feature proposal notes:
 
-- [Switch statement (Pattern matching for C# 7.0)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
+- [Switch statement (Pattern matching)](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#switch-statement)
 
 ## See also
 

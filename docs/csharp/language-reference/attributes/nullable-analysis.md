@@ -14,7 +14,7 @@ These states enable the compiler to provide warnings when you may dereference a 
 
 This article provides a brief description of each of the nullable reference type attributes and how to use them.
 
-Let's start with an example. Imagine your library has the following API to retrieve a resource string. This method was originally written before C# 8.0 and nullable annotations:
+Let's start with an example. Imagine your library has the following API to retrieve a resource string. This method was originally compiled in a *nullable oblivious* context:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="TryGetExample" :::
 
@@ -24,7 +24,7 @@ The preceding example follows the familiar `Try*` pattern in .NET. There are two
 - Callers can pass a variable whose value is `null` as the argument for `message`.
 - If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` is null.
 
-The rule for `key` can be expressed succinctly in C# 8.0: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
+The rule for `key` can be expressed succinctly: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
 
 > [!NOTE]
 > Adding these attributes gives the compiler more information about the rules for your API. When calling code is compiled in a nullable enabled context, the compiler will warn callers when they violate those rules. These attributes don't enable more checks on your implementation.
@@ -147,7 +147,7 @@ Another use for these attributes is the `Try*` pattern. The postconditions for `
 
 The preceding method follows a typical .NET idiom: the return value indicates if `message` was set to the found value or, if no message is found, to the default value. If the method returns `true`, the value of `message` isn't null; otherwise, the method sets `message` to null.
 
-In a nullable enabled context, You can communicate that idiom using the `NotNullWhen` attribute. When you annotate parameters for nullable reference types, make `message` a `string?` and add an attribute:
+In a nullable enabled context, you can communicate that idiom using the `NotNullWhen` attribute. When you annotate parameters for nullable reference types, make `message` a `string?` and add an attribute:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NotNullWhenTryGet" :::
 

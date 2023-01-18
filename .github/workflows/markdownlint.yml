@@ -6,31 +6,30 @@ on:
       - main
     paths:
       - "**/*.md"
-      - ".markdownlint.json"
+      - ".markdownlint-cli2.jsonc"
       - ".github/workflows/markdownlint.yml"
       - ".github/workflows/markdownlint-problem-matcher.json"
   pull_request:
     paths:
       - "**/*.md"
-      - ".markdownlint.json"
+      - ".markdownlint-cli2.jsonc"
       - ".github/workflows/markdownlint.yml"
       - ".github/workflows/markdownlint-problem-matcher.json"
 
 jobs:
   lint:
-
     runs-on: ubuntu-latest
     permissions:
-        statuses: write
+      statuses: write
 
     steps:
-    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
-    - name: Use Node.js
-      uses: actions/setup-node@56899e050abffc08c2b3b61f3ec6a79a9dc3223d #@v1
-      with:
-        node-version: 12.x
-    - name: Run Markdownlint
-      run: |
-        echo "::add-matcher::.github/workflows/markdownlint-problem-matcher.json"
-        npm i -g markdownlint-cli
-        markdownlint "**/*.md"
+      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
+      - name: Use Node.js
+        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c
+        with:
+          node-version: 16.x
+      - name: Run Markdownlint
+        run: |
+          echo "::add-matcher::.github/workflows/markdownlint-problem-matcher.json"
+          npm i -g markdownlint-cli2
+          markdownlint-cli2 "**/*.md"

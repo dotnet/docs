@@ -1,9 +1,9 @@
 ﻿static partial class Program
 {
     // <get>
-    static async Task GetAsync(HttpClient client)
+    static async Task GetAsync(HttpClient httpClient)
     {
-        using HttpResponseMessage response = await client.GetAsync("todos/3");
+        using HttpResponseMessage response = await httpClient.GetAsync("todos/3");
         
         response.EnsureSuccessStatusCode()
             .WriteRequestToConsole();

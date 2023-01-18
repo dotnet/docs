@@ -23,31 +23,31 @@ Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources fro
 
 The request methods are differentiated via several factors, first by their _verb_ but also by the following characteristics:
 
-- A request method is **_idempotent_** if it can be successfully processed multiple times without changing the result. For more information, see [RFC 7231: Section 4.2.2 Idempotent Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
-- A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 7231: Section 4.2.3 Cacheable Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3).
-- A request method is considered a **_safe method_** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 7231: Section 4.2.1 Safe Methods](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1).
+- A request method is **_idempotent_** if it can be successfully processed multiple times without changing the result. For more information, see [RFC 9110: 9.2.2. Idempotent Methods](https://www.rfc-editor.org/rfc/rfc9110.html#name-idempotent-methods).
+- A request method is **_cacheable_** when its corresponding response can be stored for reuse. For more information, see [RFC 9110: Section 9.2.3. Methods and Caching](https://www.rfc-editor.org/rfc/rfc9110.html#name-methods-and-caching).
+- A request method is considered a **_safe method_** if it doesn't modify the state of a resource. All _safe methods_ are also _idempotent_, but not all _idempotent_ methods are considered _safe_. For more information, see [RFC 9110: Section 9.2.1. Safe Methods](https://www.rfc-editor.org/rfc/rfc9110.html#name-safe-methods).
 
-| HTTP verb | Is idempotent | Is cacheable         | Is safe |
-|-----------|---------------|----------------------|---------|
-| `GET`     | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
-| `POST`    | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
-| `PUT`     | ✔️ Yes       | ❌ No                 | ❌ No   |
-| `PATCH`   | ❌ No         | ❌ No                 | ❌ No   |
-| `DELETE`  | ✔️ Yes       | ❌ No                 | ❌ No   |
-| `HEAD`    | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
-| `OPTIONS` | ✔️ Yes       | ❌ No                 | ✔️ Yes |
-| `TRACE`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
-| `CONNECT` | ❌ No         | ❌ No                 | ❌ No   |
+| HTTP method | Is idempotent | Is cacheable         | Is safe |
+|-------------|---------------|----------------------|---------|
+| `GET`       | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `POST`      | ❌ No         | ⚠️ <sup>†</sup>Rarely | ❌ No   |
+| `PUT`       | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `PATCH`     | ❌ No         | ❌ No                 | ❌ No   |
+| `DELETE`    | ✔️ Yes       | ❌ No                 | ❌ No   |
+| `HEAD`      | ✔️ Yes       | ✔️ Yes               | ✔️ Yes |
+| `OPTIONS`   | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `TRACE`     | ✔️ Yes       | ❌ No                 | ✔️ Yes |
+| `CONNECT`   | ❌ No         | ❌ No                 | ❌ No   |
 
 > <sup>†</sup>The `POST` method is only cacheable when the appropriate `Cache-Control` or `Expires` response headers are present. This is very uncommon in practice.
 
 ## HTTP status codes
 
-.NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> set to a corresponding <xref:System.Net.HttpStatusCode>. The <xref:System.Net.Http.HttpResponseMessage> contains a <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property that can be used to determine non-error status codes. For more information, see [RFC 9110, HTTP Semantics: Status Codes](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes).
+.NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException>. HTTP status codes are either reported in <xref:System.Net.Http.HttpResponseMessage> with the <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> or in <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> in case the called method doesn't return a response message. For more information about error handling, see [HTTP error handling](httpclient.md#http-error-handling), and for more information about status codes, see [RFC 9110, HTTP Semantics: Status Codes](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes).
 
 ### Informational status codes
 
-The informational status codes reflect an interim response. The client should continue to use the same request and discard the response.
+The informational status codes reflect an interim response. Most of the interim responses, for example <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType>, are handled internally by <xref:System.Net.Http.HttpClient> and are never surfaced to the user.
 
 | HTTP status code | `HttpStatusCode`                                                                 |
 |------------------|----------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ The successful status codes indicate that the client's request was successfully 
 
 ### Redirection status codes
 
-Redirection status codes require the user agent to take action in order to fulfill the request. With the appropriate headers, automatic redirection is possible.
+Redirection status codes require the user agent to take action in order to fulfill the request. Automatic redirection is turned on by default, it can be changed with <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect?displayProperty=nameWithType> or <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect?displayProperty=nameWithType>.
 
 | HTTP status code | `HttpStatusCode`                                                                                                                                                  |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

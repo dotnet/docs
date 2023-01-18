@@ -3,7 +3,7 @@ title: Channels
 description: Learn how to use System.Threading.Channels in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/03/2022
+ms.date: 11/09/2022
 ---
 
 # System.Threading.Channels library
@@ -140,7 +140,7 @@ An alternative producer might use the `WriteAsync` method:
 
 :::code language="csharp" source="snippets/channels/Program.Producer.cs" id="whilewrite":::
 
-Again, the `Channel<Coordinates>.Writer` is used within a `while` loop. But this time, the <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A> method is called. The method will continue only after the coordinates have been written. When the `while` loop exits, a call to <xref:System.Threading.Channels.ChannelWriter%601.Complete%2A>is made, which signals that no more data will be written to the channel.
+Again, the `Channel<Coordinates>.Writer` is used within a `while` loop. But this time, the <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A> method is called. The method will continue only after the coordinates have been written. When the `while` loop exits, a call to <xref:System.Threading.Channels.ChannelWriter%601.Complete%2A> is made, which signals that no more data will be written to the channel.
 
 Another producer pattern is to use the <xref:System.Threading.Channels.ChannelWriter%601.WaitToWriteAsync%2A> method, consider the following code:
 

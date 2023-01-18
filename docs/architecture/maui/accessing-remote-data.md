@@ -82,9 +82,7 @@ public async Task<TResult> GetAsync<TResult>(string uri, string token = "")
     HttpResponseMessage response = await httpClient.GetAsync(uri);
 
     await HandleResponse(response);
-    string serialized = await response.Content.ReadAsStringAsync();
-
-    TResult result = JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings);
+    TResult result = await response.Content.ReadFromJsonAsync<TResult>();
 
     return result;
 }
@@ -202,15 +200,13 @@ public async Task<TResult> PostAsync<TResult>(
 {
     HttpClient httpClient = GetOrCreateHttpClient(token);
 
-    var content = new StringContent(JsonConvert.SerializeObject(data));
+    var content = new StringContent(JsonSerializer.Serialize(data));
     content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
     HttpResponseMessage response = await httpClient.PostAsync(uri, content);
 
     await HandleResponse(response);
-    string serialized = await response.Content.ReadAsStringAsync();
-
-    TResult result = JsonConvert.DeserializeObject<TResult>(serialized, _serializerSettings);
-
+    TResult result = await response.Content.ReadFromJsonAsync<TResult>();
+    
     return result;
 }
 ```

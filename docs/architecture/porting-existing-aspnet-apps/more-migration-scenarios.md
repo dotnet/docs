@@ -42,7 +42,7 @@ protected IContainer RegisterContainer()
 }
 ```
 
-When upgrading these apps to use ASP.NET Core, this duplicate effort and the confusion that sometimes accompanies it is eliminated. ASP.NET Core MVC is a unified framework with one set of rules for routing, filters, and more. Dependency injection is built into .NET Core itself. All of this can can be configured in `Startup.cs`, as is shown in the `eShopPorted` app in the sample.
+When upgrading these apps to use ASP.NET Core, this duplicate effort and the confusion that sometimes accompanies it is eliminated. ASP.NET Core MVC is a unified framework with one set of rules for routing, filters, and more. Dependency injection is built into .NET Core itself. All of this can be configured in `Startup.cs`, as is shown in the `eShopPorted` app in the sample.
 
 ## Migrate HttpResponseMessage to ASP.NET Core
 

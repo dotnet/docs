@@ -1,9 +1,9 @@
 ﻿static partial class Program
 {
     // <getfromjson>
-    static async Task GetFromJsonAsync(HttpClient client)
+    static async Task GetFromJsonAsync(HttpClient httpClient)
     {
-        var todos = await client.GetFromJsonAsync<List<Todo>>(
+        var todos = await httpClient.GetFromJsonAsync<List<Todo>>(
             "todos?userId=1&completed=false");
 
         WriteLine("GET https://jsonplaceholder.typicode.com/todos?userId=1&completed=false HTTP/1.1");

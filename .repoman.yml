@@ -43,19 +43,6 @@ issues:
       pass:
         - labels-add: ["source incompatible"]
 
-    # Checks breaking change version and adds a label
-    - check:
-        - type: query
-          value: "contains(Issue.body, '.NET 6 Preview') == `true` || contains(Issue.body, '.NET 6 RC') == `true` || contains(Issue.body, '.NET 6 GA') == `true`"
-      pass:
-        - labels-add: [":checkered_flag: Release: .NET 6"]
-        
-    - check:
-        - type: query
-          value: "contains(Issue.body, '.NET 7 Preview') == `true` || contains(Issue.body, '.NET 7 RC') == `true` || contains(Issue.body, '.NET 7 GA') == `true`"
-      pass:
-        - labels-add: [":checkered_flag: Release: .NET 7"]
-
     # Add to .NET 6 project if .NET 6 label added
     - check:
         - type: query
@@ -308,6 +295,12 @@ pull_request:
             - path: "(?i).*docs\/framework\/network-programming.*"
               run:
                 - labels-add: [ "dotnet-framework/prod", "dotnet-networking/tech" ]
+            - path: "(?i).*docs\/fundamentals\/networking.*"
+              run:
+                - labels-add: [ "dotnet-fundamentals/prod", "dotnet-networking/tech" ]
+            - path: "(?i).*docs\/core\/extensions\/http.*"
+              run:
+                - labels-add: [ "dotnet-fundamentals/prod", "dotnet-networking/tech" ]
             - path: "(?i).*docs\/framework\/wcf.*"
               run:
                 - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]

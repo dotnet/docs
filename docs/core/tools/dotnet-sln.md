@@ -53,8 +53,6 @@ dotnet new sln --output MySolution
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands
@@ -137,7 +135,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If is left unspecified, the command searches the current directory for one and fails if there are multiple solution files.
+  The solution file to use. If it is unspecified, the command searches the current directory for one and fails if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 

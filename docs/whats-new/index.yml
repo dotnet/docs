@@ -5,19 +5,25 @@ summary: Welcome to what's new in .NET docs. Use this page to quickly find the l
 metadata:
   title: .NET documentation what's new?
   description: Learn about new and updated content in .NET docs.
-  ms.date: 09/01/2022
+  ms.date: 01/05/2023
   ms.topic: landing-page
 landingContent:
-- title: Find .NET updates
+- title: .NET release updates
   linkLists:
   - linkListType: whats-new
     links:
-    - text: August 2022
-      url: dotnet-docs-2022-08-01.md
-    - text: July 2022
-      url: dotnet-docs-2022-07-01.md
-    - text: June 2022
-      url: dotnet-docs-2022-06-01.md
+    - text: .NET 7 updates
+      url: dotnet-7-docs.md
+- title: Latest documentation updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: December 2022
+      url: dotnet-docs-mod0.md
+    - text: November 2022
+      url: dotnet-docs-mod2.md
+    - text: October 2022
+      url: dotnet-docs-mod1.md
 - title: Find language updates
   linkLists:
   - linkListType: whats-new

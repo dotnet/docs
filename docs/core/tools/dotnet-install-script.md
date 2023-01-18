@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 10/26/2021
+ms.date: 11/08/2021
 ---
 # dotnet-install scripts reference
 
@@ -100,8 +100,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   Specifies the source channel for the installation. The possible values are:
 
-  - `Current` - Most current release.
-  - `LTS` - Long-Term Support channel (most current supported release).
+  - `STS` - the most recent Standard Term Support release
+  - `LTS` - the most recent Long Term Support release
   - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
   - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 
@@ -145,13 +145,13 @@ The install scripts do not update the registry on Windows. They just download th
 
   If set with `ProxyAddress`, provides a list of comma-separated urls that will bypass the proxy. (Only valid for Windows.)
 
-- **`ProxyUseDefaultCredentials`**
+- **`-ProxyUseDefaultCredentials`**
 
   If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for STS and LTS channels and will be ignored if one of those channels is used.
 
   For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
   For a runtime installation, use `channel` in `A.B` format.
@@ -278,7 +278,7 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 
 - `PATH`
 
-  This variable should include both the the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
+  This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
 
 > [!TIP]
 > For Linux and macOS, use the `echo` command to set the variables in your shell profile, such as _.bashrc_:

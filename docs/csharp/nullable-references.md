@@ -1,12 +1,12 @@
 ---
 title: Nullable reference types
-description: This article provides an overview of nullable reference types, added in C# 8.0. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
+description: This article provides an overview of nullable reference types. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
 ms.technology: csharp-null-safety
 ms.date: 09/01/2021
 ---
 # Nullable reference types
 
-Prior to C# 8.0, all reference types were nullable. *Nullable reference types* refers to a group of features introduced in C# 8.0 that you can use to minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. *Nullable reference types* includes three features that help you avoid these exceptions, including the ability to explicitly mark a reference type as *nullable*:
+In a nullable oblivious context, all reference types were nullable. *Nullable reference types* refers to a group of features enabled in a nullable aware context that  minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. *Nullable reference types* includes three features that help you avoid these exceptions, including the ability to explicitly mark a reference type as *nullable*:
 
 - Improved static flow analysis that determines if a variable may be `null` before dereferencing it.
 - Attributes that annotate APIs so that the flow analysis determines *null-state*.
@@ -23,7 +23,7 @@ int length = message.Length; // dereferencing "message"
 
 When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
-You can also explore these concepts in our Learn module on [Nullable safety in C#](/learn/modules/csharp-null-safety).
+You can also explore these concepts in our Learn module on [Nullable safety in C#](/training/modules/csharp-null-safety).
 
 ## Null state analysis
 
@@ -145,8 +145,6 @@ Nullable reference types are a compile time feature. That means it's possible fo
 
 Generics require detailed rules to handle `T?` for any type parameter `T`. The rules are necessarily detailed because of history and the different implementation for a nullable value type and a nullable reference type. [Nullable value types](language-reference/builtin-types/nullable-value-types.md) are implemented using the <xref:System.Nullable%601?displayProperty=nameWithType> struct. [Nullable reference types](language-reference/builtin-types/nullable-reference-types.md) are implemented as type annotations that provide semantic rules to the compiler.
 
-In C# 8.0, using `T?` without constraining `T` to be a `struct` or a `class` did not compile. That enabled the compiler to interpret `T?` clearly. That restriction was removed in C# 9.0, by defining the following rules for an unconstrained type parameter `T`:
-
 - If the type argument for `T` is a reference type, `T?` references the corresponding nullable reference type. For example, if `T` is a `string`, then `T?` is a `string?`.
 - If the type argument for `T` is a value type, `T?` references the same value type, `T`. For example, if `T` is an `int`, the `T?` is also an `int`.
 - If the type argument for `T` is a nullable reference type, `T?` references that same nullable reference type. For example, if `T` is a `string?`, then `T?` is also a `string?`.
@@ -172,7 +170,7 @@ The new features that protect against throwing a <xref:System.NullReferenceExcep
 
 You must explicitly opt in to use these features in your existing projects. That provides a migration path and preserves backwards compatibility. Nullable contexts enable fine-grained control for how the compiler interprets reference type variables. The **nullable annotation context** determines the compiler's behavior. There are four values for the **nullable annotation context**:
 
-- *disable*: The compiler behaves similarly to C# 7.3 and earlier:
+- *disable*: The code is *nullable oblivious*.
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
   - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
@@ -202,7 +200,7 @@ The nullable annotation context and nullable warning context can be set for a pr
 | `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
 | `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
 
-Reference type variables in code compiled before C# 8, or in a *disabled* context is *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
+Reference type variables in code compiled in a *disabled* context are *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
 
 You can choose which setting is best for your project:
 
@@ -342,5 +340,5 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 - [Nullable reference types proposal](~/_csharplang/proposals/csharp-8.0/nullable-reference-types.md)
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
 - [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
-- [Intro to nullable references tutorial](whats-new/tutorials/nullable-reference-types.md)
+- [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)

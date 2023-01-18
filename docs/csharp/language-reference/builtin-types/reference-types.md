@@ -10,7 +10,6 @@ f1_keywords:
   - "dynamic_CSharpKeyword"
   - "string"
   - "string_CSharpKeyword"
-  - "RawStringLiteral_CSharpKeyword"
   - "Utf8StringLiteral_CSharpKeyword"
 helpviewer_keywords: 
   - "object keyword [C#]"
@@ -271,6 +270,17 @@ obj = obj + 3;
 The following example uses `dynamic` in several declarations. The `Main` method also contrasts compile-time type checking with run-time type checking.
 
 [!code-csharp[csrefKeywordsTypes#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic2.cs#25)]
+
+### C# language specification
+
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
+
+- [§8.2.3 The object type](~/_csharpstandard/standard/types.md#823-the-object-type)
+- [§8.2.4 The dynamic type](~/_csharpstandard/standard/types.md#824-the-dynamic-type)
+- [§8.2.5 The string type](~/_csharpstandard/standard/types.md#825-the-string-type)
+- [§8.2.8 Delegate types](~/_csharpstandard/standard/types.md#828-delegate-types)
+- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
+- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
 
 ### See also
 

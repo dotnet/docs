@@ -19,7 +19,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
     [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
     [-o|--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--source <SOURCE>]
+    [--self-contained [true|false]] [--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -78,15 +78,13 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md).
+  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
 
 - **`--force`**
 
@@ -135,6 +133,10 @@ The project or solution file to build. If a project or solution file isn't speci
   The URI of the NuGet package source to use during the restore operation.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

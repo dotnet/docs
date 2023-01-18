@@ -1,7 +1,7 @@
 ---
-title: "$ - string interpolation - C# reference"
-description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 04/15/2022
+title: "$ - string interpolation - format string output"
+description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
+ms.date: 11/29/2022
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -12,9 +12,9 @@ helpviewer_keywords:
 author: pkulikov
 ---
 
-# $ - string interpolation (C# reference)
+# String interpolation using `$`
 
-The `$` special character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results. This feature is available starting with C# 6.
+The `$` special character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
 
 String interpolation provides a more readable, convenient syntax to format strings. It's easier to read than [string composite formatting](../../../standard/base-types/composite-formatting.md). Compare the following example that uses both features to produce the same output:
 
@@ -22,7 +22,7 @@ String interpolation provides a more readable, convenient syntax to format strin
 
 ## Structure of an interpolated string
 
-To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can't have any white space between the `$` and the `"` that starts a string literal. To concantenate multiple interpolated strings, add the `$` special character to each string literal.
+To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can't have any white space between the `$` and the `"` that starts a string literal. To concatenate multiple interpolated strings, add the `$` special character to each string literal.
 
 The structure of an item with an interpolation expression is as follows:
 
@@ -70,10 +70,7 @@ The following example shows how to include a brace in a result string. It also s
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="Snippet3":::
 
-An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
-
-> [!NOTE]
-> Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.
+An interpolated verbatim string starts with the `$` character followed by the `@` character. You can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) articles.
 
 ## Implicit conversions and how to specify `IFormatProvider` implementation
 
@@ -112,7 +109,7 @@ Beginning with C# 10, when an interpolated string is used, the compiler checks i
 
 ## C# language specification
 
-For more information, see the [Interpolated strings](~/_csharpstandard/standard/expressions.md#1173-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Interpolated strings](~/_csharpstandard/standard/expressions.md#1173-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md), the [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md) feature specification and the [C# 11 - Newlines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md) feature specification.
 
 ## See also
 

@@ -3,7 +3,7 @@ title: Read values from an analog-to-digital converter
 description: Learn how to read variable voltage values using an analog-to-digital converter.
 author: camsoper
 ms.author: casoper
-ms.date: 03/04/2022
+ms.date: 12/05/2022
 ms.topic: tutorial
 ms.prod: dotnet
 recommendations: false
@@ -64,9 +64,10 @@ Complete the following steps in your preferred development environment:
 
     ```dotnetcli
     dotnet new console -o AdcTutorial
+    cd AdcTutorial
     ```
 
-1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]
+1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-iot-package.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
     :::code language="csharp" source="~/iot-samples/tutorials/AdcTutorial/Program.cs" :::
@@ -74,7 +75,7 @@ Complete the following steps in your preferred development environment:
     In the preceding code:
 
     - `hardwareSpiSettings` is set to a new instance of `SpiConnectionSettings`. The constructor sets the `busId` parameter to 0 and the `chipSelectLine` parameter to 0.
-    - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
     - A `while` loop runs indefinitely. Each iteration:
         1. Reads the value of CH0 on the ADC by calling `mcp.Read(0)`.
@@ -93,7 +94,7 @@ Complete the following steps in your preferred development environment:
 
     Observe the output as you rotate the potentiometer dial. This is due to the potentiometer varying the voltage supplied to CH0 on the ADC. The ADC compares the input voltage on CH0 to the reference voltage supplied to V<sub>REF</sub> to generate a value.
 
-1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
+1. Terminate the program by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 Congratulations! You've used SPI to read values from an analog-to-digital converter.
 

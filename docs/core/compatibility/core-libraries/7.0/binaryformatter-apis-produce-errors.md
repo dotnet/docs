@@ -32,7 +32,7 @@ Starting in .NET 7, using any of the [affected APIs](#affected-apis) in code pro
 
 ## Version introduced
 
-.NET 7 RC 1
+.NET 7
 
 ## Type of breaking change
 

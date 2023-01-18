@@ -24,7 +24,7 @@ The following prerequisites need to be installed before publishing .NET projects
 
 On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
 
-On Linux, install clang and developer packages for libraries that .NET runtime depends on.
+On Linux, install compiler toolchain and developer packages for libraries that .NET runtime depends on.
 
 - Ubuntu (18.04+)
 
@@ -35,7 +35,7 @@ On Linux, install clang and developer packages for libraries that .NET runtime d
 - Alpine (3.15+)
 
     ```sh
-    sudo apk add clang gcc lld musl-dev build-base zlib-dev
+    sudo apk add clang build-base zlib-dev
     ```
 
 ## Publish Native AOT - CLI
@@ -62,7 +62,7 @@ On Linux, install clang and developer packages for libraries that .NET runtime d
 
 The app will be available in the publish directory and will contain all the code needed to run in it, including a stripped-down version of the coreclr runtime.
 
-Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples includes [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
+Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples include [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
 
 ### Native Debug Information
 
@@ -78,7 +78,7 @@ Set the `StripSymbols` property to `true` to produce the debug information in a 
 
 ## Limitations of Native AOT deployment
 
-Native AOT applications comes with a few fundamental limitations and compatibility issues. The key limitations include:
+Native AOT applications come with a few fundamental limitations and compatibility issues. The key limitations include:
 
 - No dynamic loading (for example, `Assembly.LoadFile`)
 - No runtime code generation (for example, `System.Reflection.Emit`)
@@ -95,6 +95,12 @@ The first release of native AOT in .NET 7 has additional limitations. These incl
 - Should be targeted for console type applications (not ASP.NET Core).
 - Not all the runtime libraries are fully annotated to be native AOT compatible (that is, some warnings in the runtime libraries are not actionable by end developers).
 - Limited diagnostic support (debugging and profiling).
+
+## Build native libraries
+
+Publishing .NET class libraries as native AOT allows creating libraries that can be consumed from non-.NET programming languages. The produced native library is self-contained and doesn't require a .NET runtime to be installed.
+
+Publishing a class library as native AOT creates a native library that exposes methods of the class library annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-null `EntryPoint` field. See the [native library sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary) available in the dotnet/samples repository on GitHub.
 
 ## Platform/architecture restrictions
 

@@ -10,7 +10,7 @@ class XmlSchemaSetExample
         XmlReaderSettings booksSettings = new XmlReaderSettings();
         booksSettings.Schemas.Add("http://www.contoso.com/books", "books.xsd");
         booksSettings.ValidationType = ValidationType.Schema;
-        booksSettings.ValidationEventHandler += new ValidationEventHandler(booksSettingsValidationEventHandler);
+        booksSettings.ValidationEventHandler += booksSettingsValidationEventHandler;
 
         XmlReader books = XmlReader.Create("books.xml", booksSettings);
 

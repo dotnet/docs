@@ -118,7 +118,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 ## References
 
 - **Choosing between .NET 6 and .NET Framework for server apps**  
-  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
+  [https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server](../../standard/choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[Next](modern-web-applications-characteristics.md)

@@ -61,7 +61,7 @@ This change was made to reduce boilerplate when configuring authentication and t
 
 The change only impacts applications that have a single scheme registered. For those scenarios, it's recommended to ensure that your application is prepared to handle the assumption that a single scheme is the default. For example, ensure that the options associated with that scheme are configured correctly.
 
-Alternatively, you can disable the new behavior by setting the `SuppressAutoDefaultScheme` app context flag.
+Alternatively, you can disable the new behavior by setting the `Microsoft.AspNetCore.Authentication.SuppressAutoDefaultScheme` app context flag.
 
 ## Affected APIs
 

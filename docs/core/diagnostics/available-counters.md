@@ -90,11 +90,13 @@ The following counters are published by the HTTP stack.
 | :::no-loc text="Requests Started Rate"::: (`requests-started-rate`) | The number of requests started per update interval | .NET 5 |
 | :::no-loc text="Requests Failed"::: (`requests-failed`) | The number of failed requests since the process started | .NET 5 |
 | :::no-loc text="Requests Failed Rate"::: (`requests-failed-rate`) | The number of failed requests per update interval | .NET 5 |
-| :::no-loc text="Current Requests"::: (`current-requests`) | Current number of active HTTP requests that have started but not yet completed or failed | .NET 5 |
+| :::no-loc text="Current Requests"::: (`current-requests`) | The current number of active HTTP requests that have started but not yet completed or failed | .NET 5 |
 | :::no-loc text="Current HTTP 1.1 Connections"::: (`http11-connections-current-total`) | The current number of HTTP 1.1 connections that have started but not yet completed or failed | .NET 5 |
 | :::no-loc text="Current HTTP 2.0 Connections"::: (`http20-connections-current-total`) | The current number of HTTP 2.0 connections that have started but not yet completed or failed | .NET 5 |
+| :::no-loc text="Current HTTP 3.0 Connections"::: (`http30-connections-current-total`) | The current number of HTTP 3.0 connections that have started but not yet completed or failed | .NET 7 |
 | :::no-loc text="HTTP 1.1 Requests Queue Duration"::: (`http11-requests-queue-duration`) | The average duration of the time HTTP 1.1 requests spent in the request queue | .NET 5 |
 | :::no-loc text="HTTP 2.0 Requests Queue Duration"::: (`http20-requests-queue-duration`) | The average duration of the time HTTP 2.0 requests spent in the request queue | .NET 5 |
+| :::no-loc text="HTTP 3.0 Requests Queue Duration"::: (`http30-requests-queue-duration`) | The average duration of the time HTTP 3.0 requests spent in the request queue | .NET 7 |
 
 ## System.Net.NameResolution counters
 
@@ -104,6 +106,7 @@ The following counters track metrics related to DNS lookups.
 |--|--|--|
 | :::no-loc text="DNS Lookups Requested"::: (`dns-lookups-requested`) | The number of DNS lookups requested since the process started | .NET 5 |
 | :::no-loc text="Average DNS Lookup Duration"::: (`dns-lookups-duration`) | The average time taken for a DNS lookup | .NET 5 |
+| :::no-loc text="Current DNS Lookups"::: (`current-dns-lookups`) | The current number of DNS lookups that have started but not yet completed or failed | .NET 6 |
 
 ## System.Net.Security counters
 
@@ -134,6 +137,7 @@ The following counters track metrics related to <xref:System.Net.Sockets.Socket>
 |--|--|--|
 | :::no-loc text="Outgoing Connections Established"::: (`outgoing-connections-established`) | The total number of outgoing connections established since the process started | .NET 5 |
 | :::no-loc text="Incoming Connections Established"::: (`incoming-connections-established`) | The total number of incoming connections established since the process started | .NET 5 |
+| :::no-loc text="Current Outgoing Connect Attempts"::: (`current-outgoing-connect-attempts`) | The current number of outgoing connect attempts that have started but not yet completed or failed | .NET 7 |
 | :::no-loc text="Bytes Received"::: (`bytes-received`) | The total number of bytes received since the process started | .NET 5 |
 | :::no-loc text="Bytes Sent"::: (`bytes-sent`) | The total number of bytes sent since the process started | .NET 5 |
 | :::no-loc text="Datagrams Received"::: (`datagrams-received`) | The total number of datagrams received since the process started | .NET 5 |

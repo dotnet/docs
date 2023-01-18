@@ -7,7 +7,7 @@ helpviewer_keywords:
 ---
 # Local functions (C# Programming Guide)
 
-Starting with C# 7.0, C# supports *local functions*. Local functions are private methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
+*Local functions* are methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
 
 - Methods, especially iterator methods and async methods
 - Constructors
@@ -37,8 +37,8 @@ You can use the following modifiers with a local function:
 
 - [`async`](../../language-reference/keywords/async.md)
 - [`unsafe`](../../language-reference/keywords/unsafe.md)
-- [`static`](../../language-reference/keywords/static.md) (in C# 8.0 and later). A static local function can't capture local variables or instance state.
-- [`extern`](../../language-reference/keywords/extern.md) (in C# 9.0 and later). An external local function must be `static`.
+- [`static`](../../language-reference/keywords/static.md) A static local function can't capture local variables or instance state.
+- [`extern`](../../language-reference/keywords/extern.md) An external local function must be `static`.
 
 All local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
 
@@ -133,7 +133,7 @@ The closure for this lambda expression contains the `address`, `index` and `name
 
 The instantiation necessary for lambda expressions means extra memory allocations, which may be a performance factor in time-critical code paths. Local functions do not incur this overhead. In the example above, the local functions version has two fewer allocations than the lambda expression version.
 
-If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function. Note that this feature is available in C# 8.0 and newer.
+If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function.
 
 > [!TIP]
 > Enable .NET code style rule [IDE0062](../../../fundamentals/code-analysis/style-rules/ide0062.md) to ensure that local functions are always marked `static`.

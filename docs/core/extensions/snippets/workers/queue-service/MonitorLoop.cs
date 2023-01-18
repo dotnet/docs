@@ -1,6 +1,6 @@
 ﻿namespace App.QueueService;
 
-public class MonitorLoop
+public sealed class MonitorLoop
 {
     private readonly IBackgroundTaskQueue _taskQueue;
     private readonly ILogger<MonitorLoop> _logger;

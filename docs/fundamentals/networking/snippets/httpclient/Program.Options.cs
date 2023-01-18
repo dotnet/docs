@@ -1,13 +1,13 @@
 ﻿static partial class Program
 {
     // <options>
-    static async Task OptionsAsync(HttpClient client)
+    static async Task OptionsAsync(HttpClient httpClient)
     {
         using HttpRequestMessage request = new(
             HttpMethod.Options, 
             "https://www.example.com");
 
-        using HttpResponseMessage response = await client.SendAsync(request);
+        using HttpResponseMessage response = await httpClient.SendAsync(request);
 
         response.EnsureSuccessStatusCode()
             .WriteRequestToConsole();

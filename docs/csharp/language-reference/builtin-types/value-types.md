@@ -34,7 +34,7 @@ A value type can be one of the two following kinds:
 
 A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You cannot assign `null` to a variable of a value type, unless it's a nullable value type.
 
-You can use the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and enumeration types satisfy the `struct` constraint. Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (that is known as the [enum constraint](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)) to specify that a type parameter is an enumeration type.
+You can use the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and enumeration types satisfy the `struct` constraint. You can use `System.Enum` in a base class constraint (that is known as the [enum constraint](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)) to specify that a type parameter is an enumeration type.
 
 ## Built-in value types
 
@@ -53,7 +53,7 @@ All simple types are structure types and differ from other structure types in th
 
 - Constant expressions, whose operands are all constants of the simple types, are evaluated at compile time.
 
-Beginning with C# 7.0, C# supports [value tuples](value-tuples.md). A value tuple is a value type, but not a simple type.
+A [value tuple](value-tuples.md) is a value type, but not a simple type.
 
 ## C# language specification
 

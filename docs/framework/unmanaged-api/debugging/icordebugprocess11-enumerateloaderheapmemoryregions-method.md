@@ -16,9 +16,9 @@ topic_type:
 ---
 # ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method
 
-[Supported in .NET Framework 4.5.2 and later versions.]  
+[Supported in .NET 5 and later versions.]  
   
- Configures how the debugger handles in-memory updates to metadata within the target process.  
+ Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap-loader` command.
   
 ## Syntax  
   
@@ -42,7 +42,7 @@ HRESULT EnumerateLoaderHeapMemoryRegions(
 
  **Library:** CorGuids.lib  
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Versions:** [!INCLUDE[net-core-50-plus](../../../../includes/net-core-50-md.md)]  
 
 ## See also
 

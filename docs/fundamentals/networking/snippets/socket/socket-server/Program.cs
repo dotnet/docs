@@ -2,15 +2,15 @@
 Console.OutputEncoding = Encoding.UTF8;
 Console.WriteLine("Socket server starting...");
 
-var endPoint = await NetworkDiscovery.GetSocketEndPointAsync();
+var ipEndPoint = await NetworkDiscovery.GetSocketEndPointAsync();
 
 // <socketserver>
 using Socket listener = new(
-    endPoint.AddressFamily,
+    ipEndPoint.AddressFamily,
     SocketType.Stream,
     ProtocolType.Tcp);
 
-listener.Bind(endPoint);
+listener.Bind(ipEndPoint);
 listener.Listen(100);
 
 var handler = await listener.AcceptAsync();

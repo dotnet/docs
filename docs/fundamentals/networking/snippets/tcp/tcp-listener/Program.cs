@@ -3,8 +3,8 @@ Console.OutputEncoding = Encoding.UTF8;
 Console.WriteLine("TCP listener starting...");
 
 // <tcplistener>
-var endPoint = new IPEndPoint(IPAddress.Any, 13);
-TcpListener listener = new(endPoint);
+var ipEndPoint = new IPEndPoint(IPAddress.Any, 13);
+TcpListener listener = new(ipEndPoint);
 
 try
 {    

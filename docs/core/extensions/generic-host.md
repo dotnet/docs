@@ -203,4 +203,4 @@ to exit gracefully.
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)
-- Generic host bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo
+- Generic host bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime/issues) repo

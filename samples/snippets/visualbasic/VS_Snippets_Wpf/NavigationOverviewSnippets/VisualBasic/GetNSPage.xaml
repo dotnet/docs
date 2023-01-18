@@ -1,9 +1,0 @@
-<Page x:Class="SDKSample.GetNSPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="GetNSPage"
-    >
-  <StackPanel>
-    <Hyperlink Click="hyperlink_Click">Click Me</Hyperlink>
-  </StackPanel>
-</Page>

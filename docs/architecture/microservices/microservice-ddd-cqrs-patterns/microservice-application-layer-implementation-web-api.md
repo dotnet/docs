@@ -168,7 +168,7 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 - **Introduction to Dependency Injection in ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
+  [https://learn.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
 
 - **Autofac.** Official documentation. \
   <https://docs.autofac.org/en/latest/>
@@ -218,7 +218,7 @@ The following example shows the simplified `CreateOrderCommand` class. This is a
 // http://cqrs.nu/Faq
 // https://docs.spine3.org/motivation/immutability.html
 // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
-// https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
+// https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
 
 [DataContract]
 public class CreateOrderCommand

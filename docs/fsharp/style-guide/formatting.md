@@ -957,7 +957,7 @@ let rainbow =
 
 For records that span multiple lines, there are three commonly used formatting styles: `Cramped`, `Aligned`, and `Stroustrup`. The `Cramped` style has been the default style for F# code, as it tends to favor styles that allow the compiler to easily parse code. Both `Aligned` and `Stroustrup` styles allow for easier reordering of members, leading to code that may be easier to refactor, with the drawback that certain situations may require slightly more verbose code.
 
-* `Cramped` Record style:
+* `Cramped`:
 The historical standard, and default F# record format. Opening brackets go on the same line as the first member, closing bracket on the same line as the last member.
 
     ```fsharp
@@ -1665,9 +1665,23 @@ type PostalAddress = {
 member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
 
-When XML documentation is added for record fields, it becomes normal to indent and add additional whitespace between members:
+When XML documentation is added for record fields, `Aligned` or `Stroustrup` style is preferred, and additional whitespace should be added between members:
 
 ```fsharp
+// ❌ Not OK - putting { and comments on the same line should be avoided
+type PostalAddress =
+    { /// The address
+      Address: string
+
+      /// The city
+      City: string
+
+      /// The zip code
+      Zip: string }
+
+    /// Format the zip code and the city
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+
 // ✔️ OK
 type PostalAddress =
     {
@@ -1681,6 +1695,20 @@ type PostalAddress =
         Zip: string
     }
 
+    /// Format the zip code and the city
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+
+// ✔️ OK - Stroustrup Style
+type PostalAddress = {
+    /// The address
+    Address: string
+
+    /// The city
+    City: string
+
+    /// The zip code
+    Zip: string
+} with
     /// Format the zip code and the city
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
@@ -1704,6 +1732,7 @@ type PostalAddress =
 
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 
+// ✔️ OK
 type MyRecord =
     {
         /// The record field

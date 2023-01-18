@@ -1,4 +1,27 @@
 items:
+toc_title: Custom Articles
+childPath: ""
+children:
+  - toc_title: New Article
+    href: new-article.md
+    childPath: ""
+    parentPath: dotnet/docs/docs/standard/
+    id: 69f88264-5611-4952-90f0-158872a683e1
+    url:
+      external: false
+      origin: https://review.learn.microsoft.com
+      pathname: /en-us/dotnet/fundamentals/new-article.md
+      search: ""
+      hash: ""
+    articleUrl: https://review.learn.microsoft.com/en-us/dotnet/fundamentals/new-article.md
+    refUrl: https://review.learn.microsoft.com/en-us/dotnet/standard/clr
+    isNewArticle: true
+    filePath: docs/standard/new-article.md
+    insideNavigationNode: true
+    navigationNodeName: Custom Articles
+    selected: true
+parentPath: dotnet/docs/docs/standard/
+id: d42f9628-41d7-4f9a-8073-224a933844d2
 - name: .NET documentation
   href: index.yml
 - name: Get started

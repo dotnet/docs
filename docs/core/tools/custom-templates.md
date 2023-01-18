@@ -108,7 +108,7 @@ The localizable elements on a template are:
   - Description
   - Manual instructions
 
-Localization files have a JSON format, and just one file per culture should exist. The naming convention is: `templatestrings.<lang code>.json`, where `lang code` corresponds to one of the [CultureInfo](https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo.name) options. All localization files should be inside the `.template-config\localize` folder.
+Localization files have a JSON format, and just one file per culture should exist. The naming convention is: `templatestrings.<lang code>.json`, where `lang code` corresponds to one of the [CultureInfo](/dotnet/api/system.globalization.cultureinfo.name) options. All localization files should be inside the `.template-config\localize` folder.
 
 The localization JSON consists of key value pairs:
 

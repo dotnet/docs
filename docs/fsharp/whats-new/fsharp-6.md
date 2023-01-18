@@ -368,7 +368,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 ## Resumable code
 
-The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
+The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 ## Additional collection functions
 

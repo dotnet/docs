@@ -1,3 +1,4 @@
+items:
 - name: WCF Feature Details
   href: index.md
   items:
@@ -159,8 +160,6 @@
           href: importing-schema-to-generate-classes.md
         - name: Exporting Schemas from Classes
           href: exporting-schemas-from-classes.md
-        - name: Controlling Serialization and Deserialization with SerializationBinder
-          href: controlling-serialization-and-deserialization-with-serializationbinder.md
       - name: Using a Data Contract Resolver
         href: using-a-data-contract-resolver.md
     - name: Using the XmlSerializer Class

@@ -1216,6 +1216,101 @@ In single-line expressions the delimiter symbols should be placed on the same li
 @>
 ```
 
+### Formatting chained expressions
+
+When chained expressions (function applications intertwined with `.`) are long, put each application invocation on the next line.
+Indent the subsequent links in the chain by one level after the leading link.
+
+```fsharp
+// ✔️ OK
+Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(fun webBuilder -> webBuilder.UseStartup<Startup>())
+
+// ✔️ OK
+Cli
+    .Wrap("git")
+    .WithArguments(arguments)
+    .WithWorkingDirectory(__SOURCE_DIRECTORY__)
+    .ExecuteBufferedAsync()
+    .Task
+```
+
+The leading link can be composed out of multiple links if they are simple identifiers.
+For example, the addition of a fully qualified namespace.
+
+```fsharp
+// ✔️ OK
+Microsoft.Extensions.Hosting.Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(fun webBuilder -> webBuilder.UseStartup<Startup>())
+```
+
+Subsequent links should also contain simple identifiers.
+
+```fsharp
+// ✔️ OK
+configuration.MinimumLevel
+    .Debug()
+    // Notice how `.WriteTo` does not need its own line.
+    .WriteTo.Logger(fun loggerConfiguration ->
+        loggerConfiguration.Enrich
+            .WithProperty("host", Environment.MachineName)
+            .Enrich.WithProperty("user", Environment.UserName)
+            .Enrich.WithProperty("application", context.HostingEnvironment.ApplicationName))
+```
+
+When the arguments inside a function application don't fit on the rest of the line, put each argument on the next line.
+
+```fsharp
+// ✔️ OK
+WebHostBuilder()
+    .UseKestrel()
+    .UseUrls("http://*:5000/")
+    .UseCustomCode(
+        longArgumentOne,
+        longArgumentTwo,
+        longArgumentThree,
+        longArgumentFour
+    )
+    .UseContentRoot(Directory.GetCurrentDirectory())
+    .UseStartup<Startup>()
+    .Build()
+
+// ✔️ OK
+Cache.providedTypes
+    .GetOrAdd(cacheKey, addCache)
+    .Value
+
+// ❌ Not OK, formatting tools will reformat to the above
+Cache
+    .providedTypes
+    .GetOrAdd(
+        cacheKey,
+        addCache
+    )
+    .Value
+```
+
+Lambda arguments inside a function application should start on the same line as the opening `(`.
+
+```fsharp
+// ✔️ OK
+builder
+    .WithEnvironment()
+    .WithLogger(fun loggerConfiguration ->
+        // ...
+        ())
+
+// ❌ Not OK, formatting tools will reformat to the above
+builder
+    .WithEnvironment()
+    .WithLogger(
+        fun loggerConfiguration ->
+        // ...
+        ())
+```
+
 ## Formatting declarations
 
 This section discusses formatting declarations of different kinds.

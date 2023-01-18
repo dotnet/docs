@@ -3,7 +3,7 @@ title: Use Sockets to send and receive data over TCP
 description: Learn how the Socket class exposes socket network communication functionality in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/15/2022
+ms.date: 11/30/2022
 helpviewer_keywords:
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -60,6 +60,30 @@ The preceding C# code:
   - Calls <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=nameWithType> to receive data from the client.
   - When the data is received, it's decoded and written to the console.
   - If the `response` message ends with `<|EOM|>`, an acknowledgment is sent to the client using the <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=nameWithType>.
+
+## Run the sample client and server
+
+Start the server application first, and then start the client application.
+
+```dotnetcli
+dotnet run --project socket-server
+Socket server starting...
+Found: 172.23.64.1 available on port 9000.
+Socket server received message: "Hi friends 👋!"
+Socket server sent acknowledgment: "<|ACK|>"
+Press ENTER to continue...
+```
+
+The client application will send a message to the server, and the server will respond with an acknowledgment.
+
+```dotnetcli
+dotnet run --project socket-client
+Socket client starting...
+Found: 172.23.64.1 available on port 9000.
+Socket client sent message: "Hi friends 👋!<|EOM|>"
+Socket client received acknowledgment: "<|ACK|>"
+Press ENTER to continue...
+```
 
 ## See also
 

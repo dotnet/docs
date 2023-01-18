@@ -1,7 +1,7 @@
 ---
-title: "Assignment operators - C# reference"
-description: "Learn about various C# assignment operators."
-ms.date: 09/14/2022
+title: "Assignment operators - assign an expression to a variable"
+description: "C# assignment operators assign an expression to a variable. Assignment sets the value of the expression. `ref` assignment sets the reference of a `ref` variable."
+ms.date: 11/29/2022
 f1_keywords:
   - "=_CSharpKeyword"
 helpviewer_keywords:

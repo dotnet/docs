@@ -1,13 +1,13 @@
 ---
-title: "default value expressions - C# reference"
-description: "Use the default value expressions to obtain the default value of a type."
-ms.date: 03/13/2020
+title: "default value expressions - produce the default value for any type"
+description: "Use the default value expressions to obtain the default, uninitialized value of a type. The default value expression can be used with generic type parameters in addition to other types."
+ms.date: 11/29/2022
 f1_keywords:
   - "default_CSharpKeyword"
 helpviewer_keywords:
   - "default keyword [C#]"
 ---
-# default value expressions (C# reference)
+# default value expressions - produce the default value
 
 A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: the [default operator](#default-operator) call and a [default literal](#default-literal).
 
@@ -38,8 +38,6 @@ The following example shows the usage of the `default` literal:
 ## C# language specification
 
 For more information, see the [Default value expressions](~/_csharpstandard/standard/expressions.md#11719-default-value-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
-
-For more information about the `default` literal, see the [feature proposal note](~/_csharplang/proposals/csharp-7.1/target-typed-default.md).
 
 ## See also
 

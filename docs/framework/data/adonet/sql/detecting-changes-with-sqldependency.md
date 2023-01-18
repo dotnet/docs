@@ -51,7 +51,7 @@ Sub SomeMethod()
 
         ' Create a dependency and associate it with the SqlCommand.
         Dim dependency As New SqlDependency(command)
-        ' Maintain the refernce in a class member.
+        ' Maintain the reference in a class member.
         ' Subscribe to the SqlDependency event.
         AddHandler dependency.OnChange, AddressOf OnDependencyChange
 

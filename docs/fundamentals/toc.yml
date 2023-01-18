@@ -93,10 +93,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio.md
         displayName: tutorials, visual studio, vs
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio, vs
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio, vs
     - name: Use Visual Studio Code
       items:
@@ -116,10 +116,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, cli
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials
     - name: Use Visual Studio for Mac
       items:
@@ -139,7 +139,7 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio-mac.md
         displayName: tutorials, visual studio for mac, vs for mac
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio for mac, vs for mac
     - name: More tutorials
       href: ../core/tutorials/index.md
@@ -205,6 +205,8 @@ items:
       href: ../core/tools/global-json.md
     - name: Telemetry
       href: ../core/tools/telemetry.md
+    - name: Signed-package verification
+      href: ../core/tools/nuget-signed-package-verification.md
     - name: Error messages
       items:
       - name: List of all SDK errors
@@ -264,139 +266,141 @@ items:
     - name: Overview
       displayName: '.net cli,command-line interface,cli,tool'
       href: ../core/tools/index.md
-    - name: dotnet
-      href: ../core/tools/dotnet.md
-    - name: dotnet add/list/remove package
+    - name: dotnet command reference
       items:
-      - name: dotnet add package
-        href: ../core/tools/dotnet-add-package.md
-      - name: dotnet list package
-        href: ../core/tools/dotnet-list-package.md
-      - name: dotnet remove package
-        href: ../core/tools/dotnet-remove-package.md
-    - name: dotnet add/list/remove reference
-      items:
-      - name: dotnet add reference
-        href: ../core/tools/dotnet-add-reference.md
-      - name: dotnet list reference
-        href: ../core/tools/dotnet-list-reference.md
-      - name: dotnet remove reference
-        href: ../core/tools/dotnet-remove-reference.md
-    - name: dotnet build
-      href: ../core/tools/dotnet-build.md
-    - name: dotnet build-server
-      href: ../core/tools/dotnet-build-server.md
-    - name: dotnet clean
-      href: ../core/tools/dotnet-clean.md
-    - name: dotnet dev-certs
-      href: ../core/tools/dotnet-dev-certs.md
-    - name: dotnet format
-      href: ../core/tools/dotnet-format.md
-    - name: dotnet help
-      href: ../core/tools/dotnet-help.md
-    - name: dotnet migrate
-      href: ../core/tools/dotnet-migrate.md
-    - name: dotnet msbuild
-      href: ../core/tools/dotnet-msbuild.md
-    - name: dotnet new
-      items:
-      - name: dotnet new <TEMPLATE>
-        href: ../core/tools/dotnet-new.md
-      - name: dotnet new list
-        href: ../core/tools/dotnet-new-list.md
-      - name: dotnet new search
-        href: ../core/tools/dotnet-new-search.md
-      - name: dotnet new install
-        href: ../core/tools/dotnet-new-install.md
-      - name: dotnet new uninstall
-        href: ../core/tools/dotnet-new-uninstall.md
-      - name: dotnet new update
-        href: ../core/tools/dotnet-new-update.md
-      - name: .NET default templates
-        href: ../core/tools/dotnet-new-sdk-templates.md
-      - name: Custom templates
-        href: ../core/tools/custom-templates.md
-    - name: dotnet nuget
-      items:
-      - name: dotnet nuget delete
-        href: ../core/tools/dotnet-nuget-delete.md
-      - name: dotnet nuget locals
-        href: ../core/tools/dotnet-nuget-locals.md
-      - name: dotnet nuget push
-        href: ../core/tools/dotnet-nuget-push.md
-      - name: dotnet nuget add source
-        href: ../core/tools/dotnet-nuget-add-source.md
-      - name: dotnet nuget disable source
-        href: ../core/tools/dotnet-nuget-disable-source.md
-      - name: dotnet nuget enable source
-        href: ../core/tools/dotnet-nuget-enable-source.md
-      - name: dotnet nuget list source
-        href: ../core/tools/dotnet-nuget-list-source.md
-      - name: dotnet nuget remove source
-        href: ../core/tools/dotnet-nuget-remove-source.md
-      - name: dotnet nuget update source
-        href: ../core/tools/dotnet-nuget-update-source.md
-      - name: dotnet nuget verify
-        href: ../core/tools/dotnet-nuget-verify.md
-      - name: dotnet nuget trust
-        href: ../core/tools/dotnet-nuget-trust.md
-      - name: dotnet nuget sign
-        href: ../core/tools/dotnet-nuget-sign.md
-    - name: dotnet pack
-      href: ../core/tools/dotnet-pack.md
-    - name: dotnet publish
-      href: ../core/tools/dotnet-publish.md
-    - name: dotnet restore
-      href: ../core/tools/dotnet-restore.md
-    - name: dotnet run
-      href: ../core/tools/dotnet-run.md
-    - name: dotnet sdk check
-      href: ../core/tools/dotnet-sdk-check.md
-    - name: dotnet sln
-      href: ../core/tools/dotnet-sln.md
-    - name: dotnet store
-      href: ../core/tools/dotnet-store.md
-    - name: dotnet test
-      href: ../core/tools/dotnet-test.md
-    - name: dotnet tool
-      items:
-      - name: dotnet tool install
-        href: ../core/tools/dotnet-tool-install.md
-      - name: dotnet tool list
-        href: ../core/tools/dotnet-tool-list.md
-      - name: dotnet tool restore
-        href: ../core/tools/dotnet-tool-restore.md
-      - name: dotnet tool run
-        href: ../core/tools/dotnet-tool-run.md
-      - name: dotnet tool search
-        href: ../core/tools/dotnet-tool-search.md
-      - name: dotnet tool uninstall
-        href: ../core/tools/dotnet-tool-uninstall.md
-      - name: dotnet tool update
-        href: ../core/tools/dotnet-tool-update.md
-    - name: dotnet vstest
-      href: ../core/tools/dotnet-vstest.md
-    - name: dotnet watch
-      displayName: hot reload
-      href: ../core/tools/dotnet-watch.md
-    - name: dotnet workload
-      items:
+      - name: dotnet
+        href: ../core/tools/dotnet.md
+      - name: dotnet add/list/remove package
+        items:
+        - name: dotnet add package
+          href: ../core/tools/dotnet-add-package.md
+        - name: dotnet list package
+          href: ../core/tools/dotnet-list-package.md
+        - name: dotnet remove package
+          href: ../core/tools/dotnet-remove-package.md
+      - name: dotnet add/list/remove reference
+        items:
+        - name: dotnet add reference
+          href: ../core/tools/dotnet-add-reference.md
+        - name: dotnet list reference
+          href: ../core/tools/dotnet-list-reference.md
+        - name: dotnet remove reference
+          href: ../core/tools/dotnet-remove-reference.md
+      - name: dotnet build
+        href: ../core/tools/dotnet-build.md
+      - name: dotnet build-server
+        href: ../core/tools/dotnet-build-server.md
+      - name: dotnet clean
+        href: ../core/tools/dotnet-clean.md
+      - name: dotnet dev-certs
+        href: ../core/tools/dotnet-dev-certs.md
+      - name: dotnet format
+        href: ../core/tools/dotnet-format.md
+      - name: dotnet help
+        href: ../core/tools/dotnet-help.md
+      - name: dotnet migrate
+        href: ../core/tools/dotnet-migrate.md
+      - name: dotnet msbuild
+        href: ../core/tools/dotnet-msbuild.md
+      - name: dotnet new
+        items:
+        - name: dotnet new <TEMPLATE>
+          href: ../core/tools/dotnet-new.md
+        - name: dotnet new list
+          href: ../core/tools/dotnet-new-list.md
+        - name: dotnet new search
+          href: ../core/tools/dotnet-new-search.md
+        - name: dotnet new install
+          href: ../core/tools/dotnet-new-install.md
+        - name: dotnet new uninstall
+          href: ../core/tools/dotnet-new-uninstall.md
+        - name: dotnet new update
+          href: ../core/tools/dotnet-new-update.md
+        - name: .NET default templates
+          href: ../core/tools/dotnet-new-sdk-templates.md
+        - name: Custom templates
+          href: ../core/tools/custom-templates.md
+      - name: dotnet nuget
+        items:
+        - name: dotnet nuget delete
+          href: ../core/tools/dotnet-nuget-delete.md
+        - name: dotnet nuget locals
+          href: ../core/tools/dotnet-nuget-locals.md
+        - name: dotnet nuget push
+          href: ../core/tools/dotnet-nuget-push.md
+        - name: dotnet nuget add source
+          href: ../core/tools/dotnet-nuget-add-source.md
+        - name: dotnet nuget disable source
+          href: ../core/tools/dotnet-nuget-disable-source.md
+        - name: dotnet nuget enable source
+          href: ../core/tools/dotnet-nuget-enable-source.md
+        - name: dotnet nuget list source
+          href: ../core/tools/dotnet-nuget-list-source.md
+        - name: dotnet nuget remove source
+          href: ../core/tools/dotnet-nuget-remove-source.md
+        - name: dotnet nuget update source
+          href: ../core/tools/dotnet-nuget-update-source.md
+        - name: dotnet nuget verify
+          href: ../core/tools/dotnet-nuget-verify.md
+        - name: dotnet nuget trust
+          href: ../core/tools/dotnet-nuget-trust.md
+        - name: dotnet nuget sign
+          href: ../core/tools/dotnet-nuget-sign.md
+      - name: dotnet pack
+        href: ../core/tools/dotnet-pack.md
+      - name: dotnet publish
+        href: ../core/tools/dotnet-publish.md
+      - name: dotnet restore
+        href: ../core/tools/dotnet-restore.md
+      - name: dotnet run
+        href: ../core/tools/dotnet-run.md
+      - name: dotnet sdk check
+        href: ../core/tools/dotnet-sdk-check.md
+      - name: dotnet sln
+        href: ../core/tools/dotnet-sln.md
+      - name: dotnet store
+        href: ../core/tools/dotnet-store.md
+      - name: dotnet test
+        href: ../core/tools/dotnet-test.md
+      - name: dotnet tool
+        items:
+        - name: dotnet tool install
+          href: ../core/tools/dotnet-tool-install.md
+        - name: dotnet tool list
+          href: ../core/tools/dotnet-tool-list.md
+        - name: dotnet tool restore
+          href: ../core/tools/dotnet-tool-restore.md
+        - name: dotnet tool run
+          href: ../core/tools/dotnet-tool-run.md
+        - name: dotnet tool search
+          href: ../core/tools/dotnet-tool-search.md
+        - name: dotnet tool uninstall
+          href: ../core/tools/dotnet-tool-uninstall.md
+        - name: dotnet tool update
+          href: ../core/tools/dotnet-tool-update.md
+      - name: dotnet vstest
+        href: ../core/tools/dotnet-vstest.md
+      - name: dotnet watch
+        displayName: hot reload
+        href: ../core/tools/dotnet-watch.md
       - name: dotnet workload
-        href: ../core/tools/dotnet-workload.md
-      - name: dotnet workload install
-        href: ../core/tools/dotnet-workload-install.md
-      - name: dotnet workload list
-        href: ../core/tools/dotnet-workload-list.md
-      - name: dotnet workload repair
-        href: ../core/tools/dotnet-workload-repair.md
-      - name: dotnet workload restore
-        href: ../core/tools/dotnet-workload-restore.md
-      - name: dotnet workload search
-        href: ../core/tools/dotnet-workload-search.md
-      - name: dotnet workload uninstall
-        href: ../core/tools/dotnet-workload-uninstall.md
-      - name: dotnet workload update
-        href: ../core/tools/dotnet-workload-update.md
+        items:
+        - name: dotnet workload
+          href: ../core/tools/dotnet-workload.md
+        - name: dotnet workload install
+          href: ../core/tools/dotnet-workload-install.md
+        - name: dotnet workload list
+          href: ../core/tools/dotnet-workload-list.md
+        - name: dotnet workload repair
+          href: ../core/tools/dotnet-workload-repair.md
+        - name: dotnet workload restore
+          href: ../core/tools/dotnet-workload-restore.md
+        - name: dotnet workload search
+          href: ../core/tools/dotnet-workload-search.md
+        - name: dotnet workload uninstall
+          href: ../core/tools/dotnet-workload-uninstall.md
+        - name: dotnet workload update
+          href: ../core/tools/dotnet-workload-update.md
     - name: Elevated access
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion
@@ -634,10 +638,10 @@ items:
     items:
     - name: Visual Studio
       displayName: ide,integrated development environment,vs
-      href: /visualstudio/windows/
+      href: /visualstudio/windows/?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Visual Studio for Mac
       displayName: ide,integrated development environment,vs for mac,macOS,Mac
-      href: /visualstudio/mac/
+      href: /visualstudio/mac/?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Visual Studio Code
       displayName: ide,integrated development environment,code,vs code,oss ide,
       href: https://code.visualstudio.com/docs
@@ -839,9 +843,9 @@ items:
         href: ../core/diagnostics/debug-highcpu.md
       - name: Debug deadlock
         href: ../core/diagnostics/debug-deadlock.md
-      - name: Debug ThreadPool starvation
+      - name: Debug thread-pool starvation
         href: ../core/diagnostics/debug-threadpool-starvation.md
-      - name: Debug a StackOverflow
+      - name: Debug a stack overflow
         href: ../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
     items:
@@ -1003,6 +1007,8 @@ items:
             href: code-analysis/quality-rules/ca1309.md
           - name: CA1310
             href: code-analysis/quality-rules/ca1310.md
+          - name: CA1311
+            href: code-analysis/quality-rules/ca1311.md
           - name: CA2101
             href: code-analysis/quality-rules/ca2101.md
         - name: Portability and interoperability rules
@@ -1022,6 +1028,8 @@ items:
             href: code-analysis/quality-rules/ca1419.md
           - name: CA1420
             href: code-analysis/quality-rules/ca1420.md
+          - name: CA1421
+            href: code-analysis/quality-rules/ca1421.md
           - name: CA1422
             href: code-analysis/quality-rules/ca1422.md
         - name: Maintainability rules
@@ -1167,8 +1175,16 @@ items:
             href: code-analysis/quality-rules/ca1850.md
           - name: CA1851
             href: code-analysis/quality-rules/ca1851.md
+          - name: CA1852
+            href: code-analysis/quality-rules/ca1852.md
+          - name: CA1853
+            href: code-analysis/quality-rules/ca1853.md
           - name: CA1854
             href: code-analysis/quality-rules/ca1854.md
+          - name: CA1855
+            href: code-analysis/quality-rules/ca1855.md
+          - name: CA1858
+            href: code-analysis/quality-rules/ca1858.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1668,6 +1684,10 @@ items:
             items:
             - name: IDE0073
               href: code-analysis/style-rules/ide0073.md
+          - name: Namespace naming preferences
+            items:
+            - name: IDE0130
+              href: code-analysis/style-rules/ide0130.md
         - name: Unnecessary code rules
           items:
           - name: Overview
@@ -1776,7 +1796,7 @@ items:
       - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
       - name: How to use and debug assembly unloadability
-        href: ../core/../standard/assembly/unloadability.md
+        href: ../standard/assembly/unloadability.md
   - name: Versioning
     items:
     - name: Overview
@@ -2087,7 +2107,7 @@ items:
     - name: Publish app as container image
       href: ../core/docker/publish-as-container.md
     - name: Container tools in Visual Studio
-      href: /visualstudio/containers/overview
+      href: /visualstudio/containers/overview?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: DevOps
   items:
   - name: GitHub Actions and .NET
@@ -2456,8 +2476,6 @@ items:
         href: ../standard/serialization/serialization-guidelines.md
       - name: "How to: Chunk serialized data"
         href: ../standard/serialization/how-to-chunk-serialized-data.md
-      - name: "How to: Determine if a .NET Standard object is serializable"
-        href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
     - name: XML and SOAP serialization
       items:
       - name: Overview
@@ -2689,6 +2707,14 @@ items:
       items:
       - name: WebSockets support
         href: networking/websockets.md
+    - name: Security
+      items:
+        - name: TLS/SSL best practices
+          href: ../core/extensions/sslstream-best-practices.md
+        - name: Troubleshoot SslStream authentication issues
+          href: ../core/extensions/sslstream-troubleshooting.md
+        - name: Migrate from .NET Framework to .NET
+          href: ../core/extensions/sslstream-migration-from-framework.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library
@@ -2763,7 +2789,7 @@ items:
   - name: Microsoft.Data.Sqlite
     href: ../standard/data/sqlite/
   - name: Entity Framework Core
-    href: "/ef/core/"
+    href: /ef/core/?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Parallel processing, concurrency, and async
   items:
   - name: Asynchronous programming patterns
@@ -2776,117 +2802,119 @@ items:
       href: ../standard/parallel-programming/task-parallel-library-tpl.md
       items:
       - name: Data parallelism
-        href: ../standard/parallel-programming/data-parallelism-task-parallel-library.md
         items:
-        - name: "How to: Write a Simple Parallel.For Loop"
+        - name: Overview
+          displayName: data parallelism
+          href: ../standard/parallel-programming/data-parallelism-task-parallel-library.md
+        - name: Write a Parallel.For loop
           href: ../standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md
-        - name: "How to: Write a Simple Parallel.ForEach Loop"
+        - name: Write a Parallel.ForEach loop
           href: ../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
-        - name: "How to: Write a Parallel.For Loop with Thread-Local Variables"
+        - name: Write a Parallel.For loop with thread-local variables
           href: ../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
-        - name: "How to: Write a Parallel.ForEach Loop with Partition-Local Variables"
+        - name: Write a Parallel.ForEach loop with partition-local variables
           href: ../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
-        - name: "How to: Cancel a Parallel.For or ForEach Loop"
+        - name: Cancel a parallel loop
           href: ../standard/parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
-        - name: "How to: Handle Exceptions in Parallel Loops"
+        - name: Handle exceptions in parallel loops
           href: ../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
-        - name: "How to: Speed Up Small Loop Bodies"
+        - name: Speed up small loop bodies
           href: ../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
-        - name: "How to: Iterate File Directories with the Parallel Class"
+        - name: Iterate file directories with the Parallel class
           href: ../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
       - name: Task-based asynchronous programming
         href: ../standard/parallel-programming/task-based-asynchronous-programming.md
         items:
-        - name: Chaining Tasks by Using Continuation Tasks
+        - name: Chain tasks by using continuation tasks
           href: ../standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md
-        - name: Attached and Detached Child Tasks
+        - name: Attached and detached child tasks
           href: ../standard/parallel-programming/attached-and-detached-child-tasks.md
-        - name: Task Cancellation
+        - name: Task cancellation
           href: ../standard/parallel-programming/task-cancellation.md
-        - name: Exception Handling
+        - name: Exception handling
           href: ../standard/parallel-programming/exception-handling-task-parallel-library.md
-        - name: "How to: Use Parallel.Invoke to Execute Parallel Operations"
+        - name: Use Parallel.Invoke to execute parallel operations
           href: ../standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
-        - name: "How to: Return a Value from a Task"
+        - name: Return a value from a task
           href: ../standard/parallel-programming/how-to-return-a-value-from-a-task.md
-        - name: "How to: Cancel a Task and Its Children"
+        - name: Cancel a task and its children
           href: ../standard/parallel-programming/how-to-cancel-a-task-and-its-children.md
-        - name: "How to: Create Pre-Computed Tasks"
+        - name: Create pre-computed tasks
           href: ../standard/parallel-programming/how-to-create-pre-computed-tasks.md
-        - name: "How to: Traverse a Binary Tree with Parallel Tasks"
+        - name: Traverse a binary tree with parallel tasks
           href: ../standard/parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
-        - name: "How to: Unwrap a Nested Task"
+        - name: Unwrap a nested task
           href: ../standard/parallel-programming/how-to-unwrap-a-nested-task.md
-        - name: "How to: Prevent a Child Task from Attaching to its Parent"
+        - name: Prevent a child task from attaching to its parent
           href: ../standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
       - name: Dataflow
         href: ../standard/parallel-programming/dataflow-task-parallel-library.md
         items:
-        - name: "How to: Write Messages to and Read Messages from a Dataflow Block"
+        - name: Write messages to and read messages from a dataflow block
           href: ../standard/parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
-        - name: "How to: Implement a Producer-Consumer Dataflow Pattern"
+        - name: Implement a producer-consumer dataflow pattern
           href: ../standard/parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
-        - name: "How to: Perform Action When a Dataflow Block Receives Data"
+        - name: Perform an action when a dataflow block receives data
           href: ../standard/parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
-        - name: "Walkthrough: Creating a Dataflow Pipeline"
+        - name: Create a dataflow pipeline
           href: ../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
-        - name: "How to: Unlink Dataflow Blocks"
+        - name: Unlink dataflow blocks
           href: ../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
-        - name: "Walkthrough: Using Dataflow in a Windows Forms Application"
+        - name: Use dataflow in a Windows Forms app
           href: ../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
-        - name: "How to: Cancel a Dataflow Block"
+        - name: Cancel a dataflow block
           href: ../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
-        - name: "Walkthrough: Creating a Custom Dataflow Block Type"
+        - name: Create a custom dataflow block type
           href: ../standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
-        - name: "How to: Use JoinBlock to Read Data From Multiple Sources"
+        - name: Use JoinBlock to read data from multiple sources
           href: ../standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
-        - name: "How to: Specify the Degree of Parallelism in a Dataflow Block"
+        - name: Specify the degree of parallelism in a dataflow block
           href: ../standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
-        - name: "How to: Specify a Task Scheduler in a Dataflow Block"
+        - name: Specify a task scheduler in a dataflow block
           href: ../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
-        - name: "Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency"
+        - name: Use BatchBlock and BatchedJoinBlock to improve efficiency
           href: ../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
-      - name: Use TPL with Other Asynchronous Patterns
+      - name: Use TPL with other asynchronous patterns
         items:
-        - name: TPL and Traditional .NET Asynchronous Programming
+        - name: TPL and traditional .NET asynchronous programming
           href: ../standard/parallel-programming/tpl-and-traditional-async-programming.md
-        - name: "How to: Wrap EAP Patterns in a Task"
+        - name: Wrap EAP patterns in a task
           href: ../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
-      - name: Potential Pitfalls in Data and Task Parallelism
+      - name: Potential pitfalls in data and task parallelism
         href: ../standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
     - name: Parallel LINQ (PLINQ)
       items:
-      - name: Introduction to PLINQ
+      - name: Introduction
         href: ../standard/parallel-programming/introduction-to-plinq.md
-      - name: Understanding Speedup in PLINQ
+      - name: Optimize queries for speedup
         href: ../standard/parallel-programming/understanding-speedup-in-plinq.md
-      - name: Order Preservation in PLINQ
+      - name: Order preservation
         href: ../standard/parallel-programming/order-preservation-in-plinq.md
-      - name: Merge Options in PLINQ
+      - name: Merge options
         href: ../standard/parallel-programming/merge-options-in-plinq.md
-      - name: Potential Pitfalls with PLINQ
+      - name: Potential pitfalls
         href: ../standard/parallel-programming/potential-pitfalls-with-plinq.md
-      - name: "How to: Create and Execute a Simple PLINQ Query"
+      - name: Create and execute a query
         href: ../standard/parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
-      - name: "How to: Control Ordering in a PLINQ Query"
+      - name: Control ordering in a query
         href: ../standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md
-      - name: "How to: Combine Parallel and Sequential LINQ Queries"
+      - name: Combine parallel and sequential LINQ queries
         href: ../standard/parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
-      - name: "How to: Handle Exceptions in a PLINQ Query"
+      - name: Handle exceptions in a query
         href: ../standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
-      - name: "How to: Cancel a PLINQ Query"
+      - name: Cancel a query
         href: ../standard/parallel-programming/how-to-cancel-a-plinq-query.md
-      - name: "How to: Write a Custom PLINQ Aggregate Function"
+      - name: Write a custom aggregate function
         href: ../standard/parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
-      - name: "How to: Specify the Execution Mode in PLINQ"
+      - name: Specify the execution mode
         href: ../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
-      - name: "How to: Specify Merge Options in PLINQ"
+      - name: Specify merge options
         href: ../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
-      - name: "How to: Iterate File Directories with PLINQ"
+      - name: Iterate file directories
         href: ../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
-      - name: "How to: Measure PLINQ Query Performance"
+      - name: Measure query performance
         href: ../standard/parallel-programming/how-to-measure-plinq-query-performance.md
-      - name: PLINQ Data Sample
+      - name: Data sample
         href: ../standard/parallel-programming/plinq-data-sample.md
     - name: Data structures for parallel programming
       href: ../standard/parallel-programming/data-structures-for-parallel-programming.md
@@ -2897,9 +2925,9 @@ items:
       - name: Overview
         href: ../standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md
         displayName: custom partitioners
-      - name: "How to: Implement Dynamic Partitions"
+      - name: Implement dynamic partitions
         href: ../standard/parallel-programming/how-to-implement-dynamic-partitions.md
-      - name: "How to: Implement a Partitioner for Static Partitioning"
+      - name: Implement a partitioner for static partitioning
         href: ../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
     - name: Lambda expressions in PLINQ and TPL
       href: ../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
@@ -2950,7 +2978,7 @@ items:
   - name: Unit test published output
     href: ../core/testing/unit-testing-published-output.md
   - name: Live unit test .NET projects with Visual Studio
-    href: /visualstudio/test/live-unit-testing-start
+    href: /visualstudio/test/live-unit-testing-start?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Security
   href: ../standard/security/
 - name: Advanced topics
@@ -3072,113 +3100,6 @@ items:
       href: ../standard/native-interop/exceptions-interoperability.md
   - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
-  - name: Open-source library guidance
-    href: ../standard/library-guidance/
-  - name: Framework design guidelines
-    items:
-    - name: Overview
-      href: ../standard/design-guidelines/index.md
-    - name: Naming guidelines
-      href: ../standard/design-guidelines/naming-guidelines.md
-      items:
-      - name: Capitalization conventions
-        href: ../standard/design-guidelines/capitalization-conventions.md
-      - name: General naming conventions
-        href: ../standard/design-guidelines/general-naming-conventions.md
-      - name: Names of assemblies and DLLs
-        href: ../standard/design-guidelines/names-of-assemblies-and-dlls.md
-      - name: Names of namespaces
-        href: ../standard/design-guidelines/names-of-namespaces.md
-      - name: Names of classes, structs, and interfaces
-        href: ../standard/design-guidelines/names-of-classes-structs-and-interfaces.md
-      - name: Names of type members
-        href: ../standard/design-guidelines/names-of-type-members.md
-      - name: Naming parameters
-        href: ../standard/design-guidelines/naming-parameters.md
-      - name: Naming resources
-        href: ../standard/design-guidelines/naming-resources.md
-    - name: Type design guidelines
-      href: ../standard/design-guidelines/type.md
-      items:
-      - name: Choose between class and struct
-        href: ../standard/design-guidelines/choosing-between-class-and-struct.md
-      - name: Abstract class design
-        href: ../standard/design-guidelines/abstract-class.md
-      - name: Static class design
-        href: ../standard/design-guidelines/static-class.md
-      - name: Interface design
-        href: ../standard/design-guidelines/interface.md
-      - name: Struct design
-        href: ../standard/design-guidelines/struct.md
-      - name: Enum design
-        href: ../standard/design-guidelines/enum.md
-      - name: Nested types
-        href: ../standard/design-guidelines/nested-types.md
-    - name: Member design guidelines
-      href: ../standard/design-guidelines/member.md
-      items:
-      - name: Member overloading
-        href: ../standard/design-guidelines/member-overloading.md
-      - name: Property design
-        href: ../standard/design-guidelines/property.md
-      - name: Constructor design
-        href: ../standard/design-guidelines/constructor.md
-      - name: Event design
-        href: ../standard/design-guidelines/event.md
-      - name: Field design
-        href: ../standard/design-guidelines/field.md
-      - name: Extension methods
-        href: ../standard/design-guidelines/extension-methods.md
-      - name: Operator overloads
-        href: ../standard/design-guidelines/operator-overloads.md
-      - name: Parameter design
-        href: ../standard/design-guidelines/parameter-design.md
-    - name: Design for extensibility
-      href: ../standard/design-guidelines/designing-for-extensibility.md
-      items:
-      - name: Unsealed classes
-        href: ../standard/design-guidelines/unsealed-classes.md
-      - name: Protected members
-        href: ../standard/design-guidelines/protected-members.md
-      - name: Events and callbacks
-        href: ../standard/design-guidelines/events-and-callbacks.md
-      - name: Virtual members
-        href: ../standard/design-guidelines/virtual-members.md
-      - name: Abstractions (abstract types and interfaces)
-        href: ../standard/design-guidelines/abstractions-abstract-types-and-interfaces.md
-      - name: Base classes for implementing abstractions
-        href: ../standard/design-guidelines/base-classes-for-implementing-abstractions.md
-      - name: Sealing
-        href: ../standard/design-guidelines/sealing.md
-    - name: Exception design guidelines
-      href: ../standard/design-guidelines/exceptions.md
-      items:
-      - name: Exception throwing
-        href: ../standard/design-guidelines/exception-throwing.md
-      - name: Use standard exception types
-        href: ../standard/design-guidelines/using-standard-exception-types.md
-      - name: Exceptions and performance
-        href: ../standard/design-guidelines/exceptions-and-performance.md
-    - name: Usage guidelines
-      href: ../standard/design-guidelines/usage-guidelines.md
-      items:
-      - name: Arrays
-        href: ../standard/design-guidelines/arrays.md
-      - name: Attributes
-        href: ../standard/design-guidelines/attributes.md
-      - name: Collections
-        href: ../standard/design-guidelines/guidelines-for-collections.md
-      - name: Serialization
-        href: ../standard/design-guidelines/serialization.md
-      - name: System.Xml usage
-        href: ../standard/design-guidelines/system-xml-usage.md
-      - name: Equality operators
-        href: ../standard/design-guidelines/equality-operators.md
-    - name: Common design patterns
-      href: ../standard/design-guidelines/common-design-patterns.md
-      items:
-      - name: Dependency properties
-        href: ../standard/design-guidelines/dependency-properties.md
 - name: Migration guide
   items:
   - name: Overview
@@ -3209,18 +3130,22 @@ items:
       - name: Telemetry
         href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
-      displayName: app compatibility
-      href: ../core/porting/breaking-changes.md
-  - name: Pre-Migration
+      items:
+      - name: Overview
+        displayName: app compatibility
+        href: ../core/porting/breaking-changes.md
+      - name: Breaking changes
+        href: ../core/compatibility/fx-core.md
+  - name: Pre-migration
     items:
     - name: Assess the portability of your project
       items:
-      - name: Unsupported Dependencies
+      - name: Unsupported dependencies
         href: ../core/porting/third-party-deps.md
       - name: Use the Windows Compatibility Pack
         href: ../core/porting/windows-compat-pack.md
       - name: Unavailable technologies
-        href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../core/porting/net-framework-tech-unavailable.md
       - name: Unsupported APIs
         href: ../core/porting/unsupported-apis.md
     - name: Needed changes before porting code
@@ -3233,11 +3158,11 @@ items:
         href: ../core/porting/porting-approaches.md
       - name: Project structure
         href: ../core/porting/project-structure.md
-    - name: Application Porting Guides
+    - name: Application porting guides
       items:
       - name: Windows Forms
-        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Windows Presentation Foundation
-        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false
-      - name: Port C++/CLI projects
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: C++/CLI projects
         href: ../core/porting/cpp-cli.md

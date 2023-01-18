@@ -27,7 +27,7 @@ This article shows how to use immutable types, public parameterized constructors
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="12":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/ImmutableTypes.vb" :::
 
-The parameter names of a parameterized constructor must match the property names. Matching is case-insensitive, and the constructor parameter must match the actual property name even if you use [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) to rename a property. In the following example, the name for the `TemperatureC` property is changed to `celsius` in the JSON, but the constructor parameter is still named `temperatureC`:
+The parameter names of a parameterized constructor must match the property names and types. Matching is case-insensitive, and the constructor parameter must match the actual property name even if you use [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) to rename a property. In the following example, the name for the `TemperatureC` property is changed to `celsius` in the JSON, but the constructor parameter is still named `temperatureC`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypesCtorParms.cs" highlight="9,13-15":::
 
@@ -54,14 +54,14 @@ For types that are immutable because all their property setters are non-public, 
 ## Non-public property accessors
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
+`System.Text.Json` doesn't support serialization of non-public properties. However, you can enable use of a non-public property *accessor* by using the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="10,13":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/NonPublicAccessors.vb" :::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Non-public property accessors are not supported in .NET Core 3.1. For more information, see [the Migrate from Newtonsoft.Json article](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
+Non-public property accessors aren't supported in .NET Core 3.1. For more information, see [Migrate from Newtonsoft.Json](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
 ::: zone-end
 
 ## See also

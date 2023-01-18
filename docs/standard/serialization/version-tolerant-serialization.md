@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "serialization, version tolerant"
   - "serialization, controlling"
   - "versions and serialization"
-  - "BinaryFormatter class, samples"
   - "serialization, attributes"
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
 ---
@@ -255,7 +254,7 @@ End Class
 
 ## SerializationBinder
 
-Some users may need to control which class to serialize and deserialize because a different version of the class is required on the server and client. <xref:System.Runtime.Serialization.SerializationBinder> is an abstract class used to control the actual types used during serialization and deserialization. To use this class, derive a class from <xref:System.Runtime.Serialization.SerializationBinder> and override the <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> and <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> methods. For more information, see [Controlling Serialization and Deserialization with SerializationBinder](../../framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).
+Some users may need to control which class to serialize and deserialize because a different version of the class is required on the server and client. <xref:System.Runtime.Serialization.SerializationBinder> is an abstract class used to control the actual types used during serialization and deserialization. To use this class, derive a class from <xref:System.Runtime.Serialization.SerializationBinder> and override the <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> and <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> methods.
 
 ## Best practices
 

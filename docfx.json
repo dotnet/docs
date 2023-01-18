@@ -32,6 +32,11 @@
                 "dest": "csharp/language-reference/language-specification"
             },
             {
+                "files": ["**/*.md"],
+                "src": "redirections/proposals",
+                "dest": "csharp/language-reference/proposals"
+            },
+            {
                 "files": [
                     "csharp-7.0/*.md",
                     "csharp-7.1/*.md",
@@ -58,12 +63,17 @@
                     "csharp-7.0/tuples.md",
                     "csharp-7.0/value-task.md",
                     "csharp-7.1/async-main.md",
+                    "csharp-7.1/target-typed-default.md",
                     "csharp-7.2/leading-separator.md",
                     "csharp-7.2/readonly-struct.md",
-                    "csharp-7.2/ref-extension-methods.md",
                     "csharp-7.2/ref-struct-and-span.md",
+                    "csharp-7.2/ref-extension-methods.md",
+                    "csharp-7.2/non-trailing-named-arguments.md",
                     "csharp-7.2/private-protected.md",
+                    "csharp-7.2/private-protected.md",
+                    "csharp-7.3/auto-prop-field-attrs.md",
                     "csharp-7.3/enum-delegate-constraints.md",
+                    "csharp-7.3/improved-overload-candidates.md",
                     "csharp-7.3/ref-loops.md",
                     "csharp-8.0/alternative-interpolated-verbatim.md",
                     "csharp-8.0/async-using.md",
@@ -115,8 +125,10 @@
                 "exclude": [
                     "_csharplang/proposals/csharp-7.0/local-functions.md",
                     "_csharplang/proposals/csharp-7.0/throw-expression.md",
-                    "_csharplang/proposals/csharp-7.2/private-protected.md",
+                    "_csharplang/proposals/csharp-7.0/throw-expression.md",
+                    "_csharplang/proposals/csharp-7.1/target-typed-default.md",
                     "_csharplang/proposals/csharp-7.2/readonly-struct.md",
+                    "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md",
                     "_csharplang/proposals/csharp-7.3/blittable.md"
                 ]
             }
@@ -630,10 +642,8 @@
                 "_csharplang/proposals/csharp-7.3/pattern-based-fixed.md": "Pattern-based fixed statement",
                 "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "Ref local reassignment",
                 "_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md": "Stackalloc array initializers",
-                "_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md": "Auto-implemented property field-targeted attributes",
                 "_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md": "Expression variables in initializers",
                 "_csharplang/proposals/csharp-7.3/tuple-equality.md": "Tuple equality (==) and inequality (!=)",
-                "_csharplang/proposals/csharp-7.3/improved-overload-candidates.md": "Improved overload candidates",
 
                 "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "Null reference types - proposal",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
@@ -767,10 +777,8 @@
                 "_csharplang/proposals/csharp-7.3/pattern-based-fixed.md": "This feature specification describes syntax enhancements to enable more types to be the target of a fixed statement.",
                 "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "This feature specification describes syntax enhancements that enable ref local variables to be assigned to refer to different storage after being initialized.",
                 "_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md": "This feature specification describes the syntax that enables arrays to be declared using the 'stackalloc' keyword.",
-                "_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md": "This feature specification describes syntax enhancements to declare attributes that target either the property or the field in an auto-implemented property declaration.",
                 "_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md": "This feature specification enables declarations of 'out' variables in more locations.",
                 "_csharplang/proposals/csharp-7.3/tuple-equality.md": "This feature specification describes the rules governing tuple equality (==) and inequality (!=).",
-                "_csharplang/proposals/csharp-7.3/improved-overload-candidates.md": "This feature specification describes updates to improve overload candidates for overload resolution.",
 
                 "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "This feature specification describes nullable reference types.",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "This feature specification describes recursive pattern matching, where patterns can nest inside other patterns.",

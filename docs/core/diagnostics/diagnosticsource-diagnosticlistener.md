@@ -226,7 +226,7 @@ if (httpLogger.IsEnabled("RequestStart", aRequest, anActivity))
 The next code example demonstrates that consumers can use such properties to filter events more precisely.
 
 ```csharp
-    // Create a predicate (asks only for Requests for certains URIs)
+    // Create a predicate (asks only for Requests for certain URIs)
     Func<string, object, object, bool> predicate = (string eventName, object context, object activity) =>
     {
         if (eventName == "RequestStart")

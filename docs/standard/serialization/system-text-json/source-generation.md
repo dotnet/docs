@@ -52,7 +52,7 @@ Then `boolean` and `int` have to be declared as `[JsonSerializable]`:
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/ObjectProperties.cs" id="JsonSerializable":::
 
-To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast))]`.
+To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast>))]`.
 
 ### `JsonSerializer` methods that use source generation
 

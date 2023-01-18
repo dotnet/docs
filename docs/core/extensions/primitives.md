@@ -107,7 +107,7 @@ Both methods look similar on the API surface area, and they're both capable of s
 - Ratio standard deviation: Standard deviation of the ratio distribution (Current/Baseline)
 - 1 ms: 1 Millisecond (0.001 sec)
 
-For more information on benchmarking with .NET, see [BenchmarkDotNet](https://dotnetfoundation.org/projects/benchmarkdotnet).
+For more information on benchmarking with .NET, see [BenchmarkDotNet](https://old.dotnetfoundation.org/projects/benchmarkdotnet).
 
 ### The `StringValues` type
 

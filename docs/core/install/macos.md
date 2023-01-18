@@ -3,7 +3,7 @@ title: Install .NET on macOS
 description: Learn about what versions of macOS you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/08/2022
+ms.date: 12/21/2022
 ---
 
 # Install .NET on macOS
@@ -27,12 +27,12 @@ There are two types of supported releases, Long Term Support (LTS) releases or S
 
 The following table is a list of currently supported .NET releases and the versions of macOS they're supported on:
 
-| Operating System       | .NET 7 (STS) | .NET 6 (LTS) | .NET Core 3.1 (LTS) |
-|------------------------|---------------|---------------|----------------------|
-| macOS 13.0 "Ventura"   | ✔️          | ✔️           | ✔️                 |
-| macOS 12.0 "Monterey"  | ✔️          | ✔️           | ✔️                 |
-| macOS 11.0 "Big Sur"   | ✔️          | ✔️           | ✔️                 |
-| macOS 10.15 "Catalina" | ✔️          | ✔️           | ✔️                 |
+| Operating System       | .NET 7 (STS) | .NET 6 (LTS) |
+|------------------------|--------------|--------------|
+| macOS 13.0 "Ventura"   | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 12.0 "Monterey"  | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 11.0 "Big Sur"   | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 10.15 "Catalina" | ✔️ 7.0        | ✔️ 6.0        |
 
 For a full list of .NET versions and their support life cycle, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -143,8 +143,6 @@ The following table describes which versions of .NET are supported on an Arm-bas
 | 7            | x64          | Yes | Yes     | No                               |
 | 6            | Arm64        | Yes | Yes     | No                               |
 | 6            | x64          | Yes | Yes     | No                               |
-| 3.1          | Arm64        | No  | No      | N/A                              |
-| 3.1          | x64          | No  | Yes     | [Yes](#path-conflicts)           |
 
 Starting with .NET 6, the x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
 
@@ -166,7 +164,7 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 
 | .NET SDK version      | Visual Studio version                                |
 | --------------------- | ---------------------------------------------------- |
-| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher. |
+| 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.           |
 | 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
 | 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher.    |
 

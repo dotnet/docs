@@ -95,7 +95,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [eduardopelitti](https://github.com/eduardopelitti) - Eduardo Pelitti ![There were 1 pull requests merged by Eduardo Pelitti.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [eNeRGy164](https://github.com/eNeRGy164) - Michaël Hompus ![There were 1 pull requests merged by Michaël Hompus.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [ign3u5](https://github.com/ign3u5) - Chris Farmer ![There were 1 pull requests merged by Chris Farmer.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [itsbadr](https://github.com/itsbadr) - Badr ![There were 1 pull requests merged by Badr.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- itsbadr - Badr ![There were 1 pull requests merged by Badr.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [j-d-b](https://github.com/j-d-b) - Jacob Brady ![There were 1 pull requests merged by Jacob Brady.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [JiaqiWang18](https://github.com/JiaqiWang18) - Jiaqi (Jacky) Wang ![There were 1 pull requests merged by Jiaqi (Jacky) Wang.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [jonathlan](https://github.com/jonathlan) - Jonathan ![There were 1 pull requests merged by Jonathan.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

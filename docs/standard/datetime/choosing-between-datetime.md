@@ -1,6 +1,6 @@
 ---
-title: Compare DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
-description: Learn about differences between the DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo types to represent date and time information in .NET.
+title: Compare types related to date and time
+description: Learn about differences between the DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly, and TimeZoneInfo types to represent date and time information in .NET.
 ms.date: "04/10/2017"
 dev_langs: 
   - "csharp"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "DateTime structure"
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 ---
-# Choose between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
+# Choose between DateTime, DateOnly, DateTimeOffset, TimeSpan, TimeOnly, and TimeZoneInfo
 
 .NET applications can use date and time information in several ways. The more common uses of date and time information include:
 
@@ -32,7 +32,7 @@ ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 
 - To perform date and time arithmetic, possibly with a result that uniquely and unambiguously identifies a single point in time.
 
-.NET includes the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, and <xref:System.TimeZoneInfo> types, all of which can be used to build applications that work with dates and times.
+.NET includes the <xref:System.DateTime>, <xref:System.DateOnly>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.TimeOnly>, and <xref:System.TimeZoneInfo> types, all of which can be used to build applications that work with dates and times.
 
 > [!NOTE]
 > This topic doesn't discuss <xref:System.TimeZone> because its functionality is almost entirely incorporated in the <xref:System.TimeZoneInfo> class. Whenever possible, use the <xref:System.TimeZoneInfo> class instead of the <xref:System.TimeZone> class.
@@ -84,6 +84,23 @@ Unless a particular <xref:System.DateTime> value represents UTC, that date and t
 > [!IMPORTANT]
 > When saving or sharing <xref:System.DateTime> data, UTC should be used and the <xref:System.DateTime> value's <xref:System.DateTime.Kind%2A> property should be set to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.
 
+## The DateOnly structure
+
+The <xref:System.DateOnly> structure represents a specific date, without time. Since it has no time component, it represents a date from the start of the day to the end of the day. This structure is ideal for storing specific dates, such as a birth date, an anniversary date, or business-related dates.
+
+Although you could use `DateTime` while ignoring the time component, there are a few benefits to using `DateOnly` over `DateTime`:
+
+- The `DateTime` structure may roll into the previous or next day if it's offset by a time zone. `DateOnly` can't be offset by a time zone, and it always represents the date that was set.
+
+- Serializing a `DateTime` structure includes the time component, which may obscure the intent of the data. Also, `DateOnly` serializes less data.
+
+- When code interacts with a database, such as SQL Server, whole dates are generally stored as the `date` data type, which doesn't include a time. `DateOnly` matches the database type better.
+
+For more information about `DateOnly`, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
+
+> [!IMPORTANT]
+> `DateOnly` isn't available in .NET Framework.
+
 ## The TimeSpan structure
 
 The <xref:System.TimeSpan> structure represents a time interval. Its two typical uses are:
@@ -103,6 +120,25 @@ The `StoreInfo` structure can then be used by client code like the following.
 
 [!code-csharp[Conceptual.ChoosingDates#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.choosingdates/cs/datetimereplacement1.cs#2)]
 [!code-vb[Conceptual.ChoosingDates#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.choosingdates/vb/datetimereplacement1.vb#2)]
+
+## The TimeOnly structure
+
+The <xref:System.TimeOnly> structure represents a time-of-day value, such as a daily alarm clock or what time you eat lunch each day. `TimeOnly` is limited to the range of **00:00:00.0000000** - **23:59:59.9999999**, a specific time of day.
+
+Prior to the `TimeOnly` type being introduced, programmers typically used either the <xref:System.DateTime> type or the <xref:System.TimeSpan> type to represent a specific time. However, using these structures to simulate a time without a date may introduce some problems, which `TimeOnly` solves:
+
+- `TimeSpan` represents elapsed time, such as time measured with a stopwatch. The upper range is more than 29,000 years, and its value can be negative to indicate moving backwards in time. A negative `TimeSpan` doesn't indicate a specific time of the day.
+
+- If `TimeSpan` is used as a time of day, there's a risk that it could be manipulated to a value outside of the 24-hour day. `TimeOnly` doesn't have this risk. For example, if an employee's work shift starts at 18:00 and lasts for 8 hours, adding 8 hours to the `TimeOnly` structure rolls over to 2:00
+
+- Using `DateTime` for a time of day requires that an arbitrary date be associated with the time, and then later disregarded. It's common practice to choose `DateTime.MinValue` (0001-01-01) as the date, however, if hours are subtracted from the `DateTime` value, an `OutOfRange` exception might occur. `TimeOnly` doesn't have this problem as the time rolls forwards and backwards around the 24-hour timeframe.
+
+- Serializing a `DateTime` structure includes the date component, which may obscure the intent of the data. Also, `TimeOnly` serializes less data.
+
+For more information about `TimeOnly`, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
+
+> [!IMPORTANT]
+> `TimeOnly` isn't available in .NET Framework.
 
 ## The TimeZoneInfo class
 

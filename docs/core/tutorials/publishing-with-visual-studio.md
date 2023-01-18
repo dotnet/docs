@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
-ms.date: 11/11/2022
+ms.date: 12/19/2022
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -110,6 +110,10 @@ In the following steps, you'll look at the files created by the publish process.
 ## Additional resources
 
 - [.NET application deployment](../deploying/index.md)
+- [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
+- [`dotnet publish`](../tools/dotnet-publish.md)
+- [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+- [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
 
 ## Next steps
 
@@ -217,6 +221,10 @@ In the following steps, you'll look at the files created by the publish process.
 ## Additional resources
 
 - [.NET application deployment](../deploying/index.md)
+- [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
+- [`dotnet publish`](../tools/dotnet-publish.md)
+- [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+- [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)
 
 ## Next steps
 

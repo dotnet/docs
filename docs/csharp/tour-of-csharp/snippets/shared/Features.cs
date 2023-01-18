@@ -72,7 +72,7 @@ class Features
 
         var weatherData = (Date: DateTime.Now, LowTemp: 5, HighTemp: 30);
         // <StringInterpolation>
-        Console.WriteLine($"The low and high temperature on {weatherData.Date:MM-DD-YYYY}");
+        Console.WriteLine($"The low and high temperature on {weatherData.Date:MM-dd-yyyy}");
         Console.WriteLine($"    was {weatherData.LowTemp} and {weatherData.HighTemp}.");
         // Output (similar to):
         // The low and high temperature on 08-11-2020

@@ -15,8 +15,6 @@ This deployment model has been available since .NET Core 3.0 and has been enhanc
 
 The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
-Single file deployment isn't compatible with Windows 7.
-
 ## Sample project file
 
 Here's a sample project file that specifies single file publishing:

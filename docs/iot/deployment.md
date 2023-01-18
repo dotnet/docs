@@ -22,11 +22,11 @@ To deploy your app as a framework-dependent app, complete the following steps:
     1. Run the following command to install .NET:
 
         ```bash
-        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel Current
+        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS
         ```
 
         > [!NOTE]
-        > This installs the latest version. If you need a specific version, replace the `--channel Current` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version.
+        > This installs the latest version. If you need a specific version, replace the `--channel STS` parameter with `--version <VERSION>`, where `<VERSION>` is the specific build version.
 
     1. To simplify path resolution, add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH` with the following commands:
 

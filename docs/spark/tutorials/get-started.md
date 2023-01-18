@@ -22,6 +22,8 @@ In this tutorial, you learn how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your .NET for Apache Spark application
 
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
+
 ## Prepare your environment
 
 Before you begin writing your app, you need to set up some prerequisite dependencies. If you can run `dotnet`, `java`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, do the following steps.

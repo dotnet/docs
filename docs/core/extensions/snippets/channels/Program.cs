@@ -4,7 +4,7 @@ Channel<Coordinates> gps = isBounded
     : CreateUnbounded();
 
 string producer = args?.Length > 0 ? args[0] : "whilewrite";
-Func<ChannelWriter<Coordinates>, Coordinates, ValueTask> produceCooridnatesAsync = producer switch
+Func<ChannelWriter<Coordinates>, Coordinates, ValueTask> produceCoordinatesAsync = producer switch
 {
     "whilewrite" => ProduceWithWhileWriteAsync,
     "waittowrite" => ProduceWithWaitToWriteAsync,
@@ -30,6 +30,6 @@ Coordinates initialCoordinates = new(
 using (LoggingStopwatch.WriteDurationToConsole())
 {
     await Task.WhenAll(
-        produceCooridnatesAsync(gps.Writer, initialCoordinates).AsTask(),
+        produceCoordinatesAsync(gps.Writer, initialCoordinates).AsTask(),
         consumeCoordinatesAsync(gps.Reader).AsTask());
 }

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
 ---
+
 # Managed Execution Process
 
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:
@@ -27,10 +28,10 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
 
      At execution time, a just-in-time (JIT) compiler translates the MSIL into native code. During this compilation, code must pass a verification process that examines the MSIL and metadata to find out whether the code can be determined to be type safe.
 
-4. [Running code](#running_code).
+1. 4. [Running code](#running_code).
 
-     The common language runtime provides the infrastructure that enables execution to take place and services that can be used during execution.
-
+     The common language runtime provides the infrastructure that enables execution to take place and services that can be used during execution. Test Text.
+   
 <a name="choosing_a_compiler"></a>
 
 ## Choosing a Compiler
@@ -122,3 +123,4 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
 - [Deployment](../framework/deployment/net-framework-applications.md)
 - [Assemblies in .NET](assembly/index.md)
 - [Application Domains](../framework/app-domains/application-domains.md)
+

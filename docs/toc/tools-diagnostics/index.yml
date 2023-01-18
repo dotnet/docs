@@ -1,0 +1,100 @@
+### YamlMime:Landing
+
+title: .NET tools and diagnostics documentation
+summary: Learn about .NET tools, including the SDK and .NET CLI, diagnostics and instrumentation, code analysis, and package validation.
+
+metadata:
+  title: .NET tools and diagnostics documentation
+  description: Learn about .NET tools, including the SDK and .NET CLI, diagnostics and instrumentation, code analysis, and package validation.
+  ms.topic: landing-page
+  ms.date: 01/17/2023
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: .NET SDK
+    linkLists:
+      - linkListType: download
+        links:
+        - text: Download .NET SDK
+          url: https://dotnet.microsoft.com/download
+      - linkListType: overview
+        links:
+          - text: .NET SDK overview
+            url: ../../core/sdk.md
+      - linkListType: reference
+        links:
+          - text: .NET SDK error messages
+            url: ../../core/tools/sdk-errors/index.md
+
+  # Card
+  - title: .NET CLI
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: .NET CLI overview
+            url: ../../core/tools/index.md
+      - linkListType: reference
+        links:
+          - text: dotnet build command
+            url: ../../core/tools/dotnet-build.md
+
+  # Card
+  - title: SYSLIB diagnostics
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Obsoletion warnings
+            url: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
+          - text: Source-generated code warnings
+            url: ../../fundamentals/syslib-diagnostics/source-generator-overview.md
+
+  # Card
+  - title: MSBuild and project files
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Project SDKs
+            url: ../../core/project-sdk/overview.md
+      - linkListType: reference
+        links:
+          - text: Microsoft.NET.Sdk property reference
+            url: ../../core/project-sdk/msbuild-props.md
+      - linkListType: concept
+        links:
+          - text: Target frameworks
+            url: ../../standard/frameworks.md
+
+  # Card
+  - title: Global and local tools
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../core/tools/global-tools.md
+
+  # Card
+  - title: Diagnostics and instrumentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: .NET diagnostics tools
+            url: ../../core/diagnostics/index.md
+
+  # Card
+  - title: Code analysis
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../fundamentals/code-analysis/overview.md
+
+  # Card
+  - title: Package validation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../fundamentals/package-validation/overview.md

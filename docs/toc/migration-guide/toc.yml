@@ -1,0 +1,65 @@
+items:
+- name: Migration guide
+  href: ../../core/porting/index.md
+- name: General information
+  items:
+  - name: About .NET
+    items:
+    - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
+      href: ../../core/porting/versioning-sdk-msbuild-vs.md
+    - name: Choose between .NET 5 and .NET Framework for server apps
+      href: ../standard/choosing-core-framework-server.md
+  - name: .NET Upgrade Assistant tool
+    items:
+    - name: Overview
+      href: ../../core/porting/upgrade-assistant-overview.md
+      displayName: upgrade assistant
+    - name: Windows Communication Foundation
+      href: ../../core/porting/upgrade-assistant-wcf.md
+    - name: Windows Presentation Foundation
+      href: ../../core/porting/upgrade-assistant-wpf-framework.md
+    - name: Windows Forms
+      href: ../../core/porting/upgrade-assistant-winforms-framework.md
+    - name: Universal Windows Platform
+      href:  ../core/porting/upgrade-assistant-uwp-framework.md
+    - name: ASP.NET Core
+      href: ../../core/porting/upgrade-assistant-aspnetmvc.md
+    - name: Telemetry
+      href: ../../core/porting/upgrade-assistant-telemetry.md
+  - name: Breaking changes
+    items:
+    - name: Overview
+      displayName: app compatibility
+      href: ../../core/porting/breaking-changes.md
+    - name: Breaking changes
+      href: ../../core/compatibility/fx-core.md
+- name: Pre-migration
+  items:
+  - name: Assess the portability of your project
+    items:
+    - name: Unsupported dependencies
+      href: ../../core/porting/third-party-deps.md
+    - name: Use the Windows Compatibility Pack
+      href: ../../core/porting/windows-compat-pack.md
+    - name: Unavailable technologies
+      href: ../../core/porting/net-framework-tech-unavailable.md
+    - name: Unsupported APIs
+      href: ../../core/porting/unsupported-apis.md
+  - name: Needed changes before porting code
+    href: ../../core/porting/premigration-needed-changes.md
+- name: Migration
+  items:
+  - name: Create a porting plan
+    items:
+    - name: Approaches
+      href: ../../core/porting/porting-approaches.md
+    - name: Project structure
+      href: ../../core/porting/project-structure.md
+  - name: Application porting guides
+    items:
+    - name: Windows Forms
+      href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/toc/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Windows Presentation Foundation
+      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/toc/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: C++/CLI projects
+      href: ../../core/porting/cpp-cli.md

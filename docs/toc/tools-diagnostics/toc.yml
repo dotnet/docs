@@ -1,0 +1,1574 @@
+items:
+- name: Tools and diagnostics
+  href: index.yml
+  displayName: productivity,instrumentation
+- name: .NET SDK
+  items:
+  - name: Overview
+    displayName: '.net sdk,software development kit,software dev kit,tool'
+    href: ../../core/sdk.md
+  - name: Environment variables
+    href: ../../core/tools/dotnet-environment-variables.md
+  - name: dotnet-install scripts
+    href: ../../core/tools/dotnet-install-script.md
+  - name: global.json overview
+    href: ../../core/tools/global-json.md
+  - name: Telemetry
+    href: ../../core/tools/telemetry.md
+  - name: Signed-package verification
+    href: ../../core/tools/nuget-signed-package-verification.md
+  - name: Error messages
+    items:
+    - name: List of all SDK errors
+      href: ../../core/tools/sdk-errors/index.md
+    - name: NETSDK1004
+      href: ../../core/tools/sdk-errors/netsdk1004.md
+    - name: NETSDK1005 and NETSDK1047
+      href: ../../core/tools/sdk-errors/netsdk1005.md
+    - name: NETSDK1013
+      href: ../../core/tools/sdk-errors/netsdk1013.md
+    - name: NETSDK1022
+      href: ../../core/tools/sdk-errors/netsdk1022.md
+    - name: NETSDK1045
+      href: ../../core/tools/sdk-errors/netsdk1045.md
+    - name: NETSDK1059
+      href: ../../core/tools/sdk-errors/netsdk1059.md
+    - name: NETSDK1064
+      href: ../../core/tools/sdk-errors/netsdk1064.md
+    - name: NETSDK1071
+      href: ../../core/tools/sdk-errors/netsdk1071.md
+    - name: NETSDK1073
+      href: ../../core/tools/sdk-errors/netsdk1073.md
+    - name: NETSDK1079
+      href: ../../core/tools/sdk-errors/netsdk1079.md
+    - name: NETSDK1080
+      href: ../../core/tools/sdk-errors/netsdk1080.md
+    - name: NETSDK1082
+      href: ../../core/tools/sdk-errors/netsdk1082.md
+    - name: NETSDK1100
+      href: ../../core/tools/sdk-errors/netsdk1100.md
+    - name: NETSDK1112
+      href: ../../core/tools/sdk-errors/netsdk1112.md
+    - name: NETSDK1130
+      href: ../../core/tools/sdk-errors/netsdk1130.md
+    - name: NETSDK1135
+      href: ../../core/tools/sdk-errors/netsdk1135.md
+    - name: NETSDK1136
+      href: ../../core/tools/sdk-errors/netsdk1136.md
+    - name: NETSDK1137
+      href: ../../core/tools/sdk-errors/netsdk1137.md
+    - name: NETSDK1138
+      href: ../../core/tools/sdk-errors/netsdk1138.md
+    - name: NETSDK1141
+      href: ../../core/tools/sdk-errors/netsdk1141.md
+    - name: NETSDK1145
+      href: ../../core/tools/sdk-errors/netsdk1145.md
+    - name: NETSDK1147
+      href: ../../core/tools/sdk-errors/netsdk1147.md
+    - name: NETSDK1149
+      href: ../../core/tools/sdk-errors/netsdk1149.md
+    - name: NETSDK1174
+      href: ../../core/tools/sdk-errors/netsdk1174.md
+    - name: NETSDK1182
+      href: ../../core/tools/sdk-errors/netsdk1182.md
+- name: .NET CLI
+  items:
+  - name: Overview
+    displayName: '.net cli,command-line interface,cli,tool'
+    href: ../../core/tools/index.md
+  - name: dotnet command reference
+    items:
+    - name: dotnet
+      href: ../../core/tools/dotnet.md
+    - name: dotnet add/list/remove package
+      items:
+      - name: dotnet add package
+        href: ../../core/tools/dotnet-add-package.md
+      - name: dotnet list package
+        href: ../../core/tools/dotnet-list-package.md
+      - name: dotnet remove package
+        href: ../../core/tools/dotnet-remove-package.md
+    - name: dotnet add/list/remove reference
+      items:
+      - name: dotnet add reference
+        href: ../../core/tools/dotnet-add-reference.md
+      - name: dotnet list reference
+        href: ../../core/tools/dotnet-list-reference.md
+      - name: dotnet remove reference
+        href: ../../core/tools/dotnet-remove-reference.md
+    - name: dotnet build
+      href: ../../core/tools/dotnet-build.md
+    - name: dotnet build-server
+      href: ../../core/tools/dotnet-build-server.md
+    - name: dotnet clean
+      href: ../../core/tools/dotnet-clean.md
+    - name: dotnet dev-certs
+      href: ../../core/tools/dotnet-dev-certs.md
+    - name: dotnet format
+      href: ../../core/tools/dotnet-format.md
+    - name: dotnet help
+      href: ../../core/tools/dotnet-help.md
+    - name: dotnet migrate
+      href: ../../core/tools/dotnet-migrate.md
+    - name: dotnet msbuild
+      href: ../../core/tools/dotnet-msbuild.md
+    - name: dotnet new
+      items:
+      - name: dotnet new <TEMPLATE>
+        href: ../../core/tools/dotnet-new.md
+      - name: dotnet new list
+        href: ../../core/tools/dotnet-new-list.md
+      - name: dotnet new search
+        href: ../../core/tools/dotnet-new-search.md
+      - name: dotnet new install
+        href: ../../core/tools/dotnet-new-install.md
+      - name: dotnet new uninstall
+        href: ../../core/tools/dotnet-new-uninstall.md
+      - name: dotnet new update
+        href: ../../core/tools/dotnet-new-update.md
+      - name: .NET default templates
+        href: ../../core/tools/dotnet-new-sdk-templates.md
+      - name: Custom templates
+        href: ../../core/tools/custom-templates.md
+    - name: dotnet nuget
+      items:
+      - name: dotnet nuget delete
+        href: ../../core/tools/dotnet-nuget-delete.md
+      - name: dotnet nuget locals
+        href: ../../core/tools/dotnet-nuget-locals.md
+      - name: dotnet nuget push
+        href: ../../core/tools/dotnet-nuget-push.md
+      - name: dotnet nuget add source
+        href: ../../core/tools/dotnet-nuget-add-source.md
+      - name: dotnet nuget disable source
+        href: ../../core/tools/dotnet-nuget-disable-source.md
+      - name: dotnet nuget enable source
+        href: ../../core/tools/dotnet-nuget-enable-source.md
+      - name: dotnet nuget list source
+        href: ../../core/tools/dotnet-nuget-list-source.md
+      - name: dotnet nuget remove source
+        href: ../../core/tools/dotnet-nuget-remove-source.md
+      - name: dotnet nuget update source
+        href: ../../core/tools/dotnet-nuget-update-source.md
+      - name: dotnet nuget verify
+        href: ../../core/tools/dotnet-nuget-verify.md
+      - name: dotnet nuget trust
+        href: ../../core/tools/dotnet-nuget-trust.md
+      - name: dotnet nuget sign
+        href: ../../core/tools/dotnet-nuget-sign.md
+    - name: dotnet pack
+      href: ../../core/tools/dotnet-pack.md
+    - name: dotnet publish
+      href: ../../core/tools/dotnet-publish.md
+    - name: dotnet restore
+      href: ../../core/tools/dotnet-restore.md
+    - name: dotnet run
+      href: ../../core/tools/dotnet-run.md
+    - name: dotnet sdk check
+      href: ../../core/tools/dotnet-sdk-check.md
+    - name: dotnet sln
+      href: ../../core/tools/dotnet-sln.md
+    - name: dotnet store
+      href: ../../core/tools/dotnet-store.md
+    - name: dotnet test
+      href: ../../core/tools/dotnet-test.md
+    - name: dotnet tool
+      items:
+      - name: dotnet tool install
+        href: ../../core/tools/dotnet-tool-install.md
+      - name: dotnet tool list
+        href: ../../core/tools/dotnet-tool-list.md
+      - name: dotnet tool restore
+        href: ../../core/tools/dotnet-tool-restore.md
+      - name: dotnet tool run
+        href: ../../core/tools/dotnet-tool-run.md
+      - name: dotnet tool search
+        href: ../../core/tools/dotnet-tool-search.md
+      - name: dotnet tool uninstall
+        href: ../../core/tools/dotnet-tool-uninstall.md
+      - name: dotnet tool update
+        href: ../../core/tools/dotnet-tool-update.md
+    - name: dotnet vstest
+      href: ../../core/tools/dotnet-vstest.md
+    - name: dotnet watch
+      displayName: hot reload
+      href: ../../core/tools/dotnet-watch.md
+    - name: dotnet workload
+      items:
+      - name: dotnet workload
+        href: ../../core/tools/dotnet-workload.md
+      - name: dotnet workload install
+        href: ../../core/tools/dotnet-workload-install.md
+      - name: dotnet workload list
+        href: ../../core/tools/dotnet-workload-list.md
+      - name: dotnet workload repair
+        href: ../../core/tools/dotnet-workload-repair.md
+      - name: dotnet workload restore
+        href: ../../core/tools/dotnet-workload-restore.md
+      - name: dotnet workload search
+        href: ../../core/tools/dotnet-workload-search.md
+      - name: dotnet workload uninstall
+        href: ../../core/tools/dotnet-workload-uninstall.md
+      - name: dotnet workload update
+        href: ../../core/tools/dotnet-workload-update.md
+  - name: Elevated access
+    href: ../../core/tools/elevated-access.md
+  - name: Enable Tab completion
+    href: ../../core/tools/enable-tab-autocomplete.md
+  - name: Develop libraries with the CLI
+    href: ../../core/tutorials/libraries.md
+  - name: Create templates for the CLI
+    items:
+    - name: 1 - Create an item template
+      href: ../../core/tutorials/cli-templates-create-item-template.md
+      displayName: tutorials, cli
+    - name: 2 - Create a project template
+      href: ../../core/tutorials/cli-templates-create-project-template.md
+      displayName: tutorials, cli
+    - name: 3 - Create a template package
+      href: ../../core/tutorials/cli-templates-create-template-package.md
+      displayName: tutorials, cli
+- name: SYSLIB diagnostics
+  items:
+  - name: Obsoletions
+    items:
+    - name: Overview
+      displayName: syslib, obsolete, obsoletion
+      href: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
+    - name: SYSLIB0001
+      href: ../../fundamentals/syslib-diagnostics/syslib0001.md
+    - name: SYSLIB0002
+      href: ../../fundamentals/syslib-diagnostics/syslib0002.md
+    - name: SYSLIB0003
+      href: ../../fundamentals/syslib-diagnostics/syslib0003.md
+    - name: SYSLIB0004
+      href: ../../fundamentals/syslib-diagnostics/syslib0004.md
+    - name: SYSLIB0005
+      href: ../../fundamentals/syslib-diagnostics/syslib0005.md
+    - name: SYSLIB0006
+      href: ../../fundamentals/syslib-diagnostics/syslib0006.md
+    - name: SYSLIB0007
+      href: ../../fundamentals/syslib-diagnostics/syslib0007.md
+    - name: SYSLIB0008
+      href: ../../fundamentals/syslib-diagnostics/syslib0008.md
+    - name: SYSLIB0009
+      href: ../../fundamentals/syslib-diagnostics/syslib0009.md
+    - name: SYSLIB0010
+      href: ../../fundamentals/syslib-diagnostics/syslib0010.md
+    - name: SYSLIB0011
+      href: ../../fundamentals/syslib-diagnostics/syslib0011.md
+    - name: SYSLIB0012
+      href: ../../fundamentals/syslib-diagnostics/syslib0012.md
+    - name: SYSLIB0013
+      href: ../../fundamentals/syslib-diagnostics/syslib0013.md
+    - name: SYSLIB0014
+      href: ../../fundamentals/syslib-diagnostics/syslib0014.md
+    - name: SYSLIB0015
+      href: ../../fundamentals/syslib-diagnostics/syslib0015.md
+    - name: SYSLIB0016
+      href: ../../fundamentals/syslib-diagnostics/syslib0016.md
+    - name: SYSLIB0017
+      href: ../../fundamentals/syslib-diagnostics/syslib0017.md
+    - name: SYSLIB0018
+      href: ../../fundamentals/syslib-diagnostics/syslib0018.md
+    - name: SYSLIB0019
+      href: ../../fundamentals/syslib-diagnostics/syslib0019.md
+    - name: SYSLIB0020
+      href: ../../fundamentals/syslib-diagnostics/syslib0020.md
+    - name: SYSLIB0021
+      href: ../../fundamentals/syslib-diagnostics/syslib0021.md
+    - name: SYSLIB0022
+      href: ../../fundamentals/syslib-diagnostics/syslib0022.md
+    - name: SYSLIB0023
+      href: ../../fundamentals/syslib-diagnostics/syslib0023.md
+    - name: SYSLIB0024
+      href: ../../fundamentals/syslib-diagnostics/syslib0024.md
+    - name: SYSLIB0025
+      href: ../../fundamentals/syslib-diagnostics/syslib0025.md
+    - name: SYSLIB0026
+      href: ../../fundamentals/syslib-diagnostics/syslib0026.md
+    - name: SYSLIB0027
+      href: ../../fundamentals/syslib-diagnostics/syslib0027.md
+    - name: SYSLIB0028
+      href: ../../fundamentals/syslib-diagnostics/syslib0028.md
+    - name: SYSLIB0029
+      href: ../../fundamentals/syslib-diagnostics/syslib0029.md
+    - name: SYSLIB0030
+      href: ../../fundamentals/syslib-diagnostics/syslib0030.md
+    - name: SYSLIB0031
+      href: ../../fundamentals/syslib-diagnostics/syslib0031.md
+    - name: SYSLIB0032
+      href: ../../fundamentals/syslib-diagnostics/syslib0032.md
+    - name: SYSLIB0033
+      href: ../../fundamentals/syslib-diagnostics/syslib0033.md
+    - name: SYSLIB0034
+      href: ../../fundamentals/syslib-diagnostics/syslib0034.md
+    - name: SYSLIB0035
+      href: ../../fundamentals/syslib-diagnostics/syslib0035.md
+    - name: SYSLIB0036
+      href: ../../fundamentals/syslib-diagnostics/syslib0036.md
+    - name: SYSLIB0037
+      href: ../../fundamentals/syslib-diagnostics/syslib0037.md
+    - name: SYSLIB0038
+      href: ../../fundamentals/syslib-diagnostics/syslib0038.md
+    - name: SYSLIB0039
+      href: ../../fundamentals/syslib-diagnostics/syslib0039.md
+    - name: SYSLIB0040
+      href: ../../fundamentals/syslib-diagnostics/syslib0040.md
+    - name: SYSLIB0041
+      href: ../../fundamentals/syslib-diagnostics/syslib0041.md
+    - name: SYSLIB0042
+      href: ../../fundamentals/syslib-diagnostics/syslib0042.md
+    - name: SYSLIB0043
+      href: ../../fundamentals/syslib-diagnostics/syslib0043.md
+    - name: SYSLIB0044
+      href: ../../fundamentals/syslib-diagnostics/syslib0044.md
+    - name: SYSLIB0045
+      href: ../../fundamentals/syslib-diagnostics/syslib0045.md
+    - name: SYSLIB0046
+      href: ../../fundamentals/syslib-diagnostics/syslib0046.md
+    - name: SYSLIB0047
+      href: ../../fundamentals/syslib-diagnostics/syslib0047.md
+  - name: Source-generated code
+    items:
+    - name: Overview
+      displayName: syslib, diagnostic, diagnostics, source generator
+      href: ../../fundamentals/syslib-diagnostics/source-generator-overview.md
+    - name: SYSLIB1001
+      href: ../../fundamentals/syslib-diagnostics/syslib1001.md
+    - name: SYSLIB1002
+      href: ../../fundamentals/syslib-diagnostics/syslib1002.md
+    - name: SYSLIB1003
+      href: ../../fundamentals/syslib-diagnostics/syslib1003.md
+    - name: SYSLIB1005
+      href: ../../fundamentals/syslib-diagnostics/syslib1005.md
+    - name: SYSLIB1006
+      href: ../../fundamentals/syslib-diagnostics/syslib1006.md
+    - name: SYSLIB1007
+      href: ../../fundamentals/syslib-diagnostics/syslib1007.md
+    - name: SYSLIB1008
+      href: ../../fundamentals/syslib-diagnostics/syslib1008.md
+    - name: SYSLIB1009
+      href: ../../fundamentals/syslib-diagnostics/syslib1009.md
+    - name: SYSLIB1010
+      href: ../../fundamentals/syslib-diagnostics/syslib1010.md
+    - name: SYSLIB1011
+      href: ../../fundamentals/syslib-diagnostics/syslib1011.md
+    - name: SYSLIB1012
+      href: ../../fundamentals/syslib-diagnostics/syslib1012.md
+    - name: SYSLIB1013
+      href: ../../fundamentals/syslib-diagnostics/syslib1013.md
+    - name: SYSLIB1014
+      href: ../../fundamentals/syslib-diagnostics/syslib1014.md
+    - name: SYSLIB1015
+      href: ../../fundamentals/syslib-diagnostics/syslib1015.md
+    - name: SYSLIB1016
+      href: ../../fundamentals/syslib-diagnostics/syslib1016.md
+    - name: SYSLIB1017
+      href: ../../fundamentals/syslib-diagnostics/syslib1017.md
+    - name: SYSLIB1018
+      href: ../../fundamentals/syslib-diagnostics/syslib1018.md
+    - name: SYSLIB1019
+      href: ../../fundamentals/syslib-diagnostics/syslib1019.md
+    - name: SYSLIB1020
+      href: ../../fundamentals/syslib-diagnostics/syslib1020.md
+    - name: SYSLIB1021
+      href: ../../fundamentals/syslib-diagnostics/syslib1021.md
+    - name: SYSLIB1022
+      href: ../../fundamentals/syslib-diagnostics/syslib1022.md
+    - name: SYSLIB1023
+      href: ../../fundamentals/syslib-diagnostics/syslib1023.md
+    - name: SYSLIB1030
+      href: ../../fundamentals/syslib-diagnostics/syslib1030.md
+    - name: SYSLIB1031
+      href: ../../fundamentals/syslib-diagnostics/syslib1031.md
+    - name: SYSLIB1032
+      href: ../../fundamentals/syslib-diagnostics/syslib1032.md
+    - name: SYSLIB1033
+      href: ../../fundamentals/syslib-diagnostics/syslib1033.md
+    - name: SYSLIB1035
+      href: ../../fundamentals/syslib-diagnostics/syslib1035.md
+    - name: SYSLIB1036
+      href: ../../fundamentals/syslib-diagnostics/syslib1036.md
+    - name: SYSLIB1037
+      href: ../../fundamentals/syslib-diagnostics/syslib1037.md
+    - name: SYSLIB1038
+      href: ../../fundamentals/syslib-diagnostics/syslib1038.md
+    - name: SYSLIB1040
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1041
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1042
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1043
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1044
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1045
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1050
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1051
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1052
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1053
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1054
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1055
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1056
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1057
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1058
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1059
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1060
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1061
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1062
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1070
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1071
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1072
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1073
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1074
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1075
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+- name: Integrated development environments (IDEs)
+  items:
+  - name: Visual Studio
+    displayName: ide,integrated development environment,vs
+    href: /visualstudio/windows/?toc=/dotnet/toc/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Visual Studio for Mac
+    displayName: ide,integrated development environment,vs for mac,macOS,Mac
+    href: /visualstudio/mac/?toc=/dotnet/toc/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Visual Studio Code
+    displayName: ide,integrated development environment,code,vs code,oss ide,
+    href: https://code.visualstudio.com/docs
+- name: MSBuild and project files
+  items:
+  - name: Project SDKs
+    items:
+    - name: Overview
+      href: ../../core/project-sdk/overview.md
+    - name: Reference
+      items:
+      - name: Microsoft.NET.Sdk
+        displayName: msbuild, msbuild properties
+        href: ../../core/project-sdk/msbuild-props.md
+      - name: Microsoft.NET.Sdk.Web
+        href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/toc/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Microsoft.NET.Sdk.Razor
+        href: /aspnet/core/razor-pages/sdk?toc=/dotnet/toc/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Microsoft.NET.Sdk.Desktop
+        href: ../../core/project-sdk/msbuild-props-desktop.md
+  - name: Target frameworks
+    href: ../../standard/frameworks.md
+  - name: Dependency management
+    href: ../../core/tools/dependencies.md
+- name: Global and local tools
+  items:
+  - name: Manage tools
+    displayName: global tool,local tool
+    href: ../../core/tools/global-tools.md
+  - name: Troubleshoot tools
+    displayName: global tool troubleshooting,local tool troubleshooting,
+    href: ../../core/tools/troubleshoot-usage-issues.md
+  - name: Create tools for the CLI
+    items:
+    - name: 1 - Create a tool
+      displayName: tools,tutorials,cli,create global tool,create local tool
+      href: ../../core/tools/global-tools-how-to-create.md
+    - name: 2 - Use a global tool
+      displayName: tools,tutorials,cli,understand global tool
+      href: ../../core/tools/global-tools-how-to-use.md
+    - name: 3 - Use a local tool
+      href: ../../core/tools/local-tools-how-to-use.md
+      displayName: tools,tutorials,cli,local tool
+- name: Additional tools
+  items:
+  - name: Overview
+    href: ../../core/additional-tools/index.md
+  - name: .NET uninstall tool
+    href: ../../core/additional-tools/uninstall-tool.md
+  - name: .NET install tool for extension authors
+    href: ../../core/additional-tools/vscode-dotnet-runtime.md
+  - name: Generate self-signed certificates
+    href: ../../core/additional-tools/self-signed-certificates-guide.md
+  - name: WCF web service reference provider
+    href: ../../core/additional-tools/wcf-web-service-reference-guide.md
+  - name: WCF service utility
+    displayName: dotnet-svcutil
+    href: ../../core/additional-tools/dotnet-svcutil-guide.md
+  - name: WCF service XML serializer
+    displayName: dotnet-svcutil.xmlserializer
+    href: ../../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
+  - name: XML serializer generator
+    displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
+    href: ../../core/additional-tools/xml-serializer-generator.md
+- name: Diagnostics and instrumentation
+  items:
+  - name: Overview
+    href: ../../core/diagnostics/index.md
+  - name: Managed debuggers
+    href: ../../core/diagnostics/managed-debuggers.md
+  - name: Diagnostic port
+    href: ../../core/diagnostics/diagnostic-port.md
+  - name: Dumps
+    items:
+    - name: Overview
+      displayName: dumps
+      href: ../../core/diagnostics/dumps.md
+    - name: Linux dumps
+      href: ../../core/diagnostics/debug-linux-dumps.md
+    - name: SOS debugger extension
+      href: ../../core/diagnostics/sos-debugging-extension.md
+    - name: Dumps FAQ - .NET
+      href: ../../core/diagnostics/faq-dumps.yml
+  - name: Logging and tracing
+    items:
+    - name: Overview
+      displayName: logging tracing
+      href: ../../core/diagnostics/logging-tracing.md
+    - name: Well-known event providers
+      href: ../../core/diagnostics/well-known-event-providers.md
+    - name: Event Source
+      items:
+      - name: Overview
+        href: ../../core/diagnostics/eventsource.md
+      - name: Getting started
+        href: ../../core/diagnostics/eventsource-getting-started.md
+      - name: Instrumentation
+        href: ../../core/diagnostics/eventsource-instrumentation.md
+      - name: Collection
+        href: ../../core/diagnostics/eventsource-collect-and-view-traces.md
+      - name: Activity IDs
+        href: ../../core/diagnostics/eventsource-activity-ids.md
+    - name: DiagnosticSource and DiagnosticListener
+      items:
+      - name: Getting started
+        href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md
+    - name: EventPipe
+      href: ../../core/diagnostics/eventpipe.md
+  - name: Metrics
+    items:
+    - name: Overview
+      displayName: metrics
+      href: ../../core/diagnostics/metrics.md
+    - name: Instrumentation
+      href: ../../core/diagnostics/metrics-instrumentation.md
+    - name: Collection
+      href: ../../core/diagnostics/metrics-collection.md
+    - name: EventCounters
+      items:
+      - name: Overview
+        displayName: eventcounter
+        href: ../../core/diagnostics/event-counters.md
+      - name: Well-known counters
+        href: ../../core/diagnostics/available-counters.md
+      - name: "Tutorial: Measure performance with EventCounters"
+        href: ../../core/diagnostics/event-counter-perf.md
+    - name: Compare metric APIs
+      href: ../../core/diagnostics/compare-metric-apis.md
+  - name: Distributed tracing
+    items:
+    - name: Overview
+      href: ../../core/diagnostics/distributed-tracing.md
+    - name: Concepts
+      href: ../../core/diagnostics/distributed-tracing-concepts.md
+    - name: Instrumentation
+      href: ../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+    - name: Collection
+      href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+  - name: Symbols
+    href: ../../core/diagnostics/symbols.md
+  - name: Microsoft.Diagnostics.NETCore.Client library
+    items:
+    - name: Overview and examples
+      displayName: diagnostics client library
+      href: ../../core/diagnostics/diagnostics-client-library.md
+    - name: API reference
+      href: ../../core/diagnostics/microsoft-diagnostics-netcore-client.md
+  - name: Runtime events
+    items:
+    - name: Overview
+      href: ../fundamentals/diagnostics/runtime-events.md
+    - name: Contention events
+      href: ../fundamentals/diagnostics/runtime-contention-events.md
+    - name: Exception events
+      href: ../fundamentals/diagnostics/runtime-exception-events.md
+    - name: Garbage collection events
+      href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+    - name: Interop events
+      href: ../fundamentals/diagnostics/runtime-interop-events.md
+    - name: Loader and binder events
+      href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+    - name: Method events
+      href: ../fundamentals/diagnostics/runtime-method-events.md
+    - name: ThreadPool events
+      href: ../fundamentals/diagnostics/runtime-thread-events.md
+    - name: Type-system events
+      href: ../fundamentals/diagnostics/runtime-type-events.md
+  - name: Collect diagnostics in containers
+    href: ../../core/diagnostics/diagnostics-in-containers.md
+  - name: .NET CLI global tools
+    items:
+    - name: dotnet-counters
+      href: ../../core/diagnostics/dotnet-counters.md
+    - name: dotnet-coverage
+      href: ../../core/additional-tools/dotnet-coverage.md
+    - name: dotnet-dump
+      href: ../../core/diagnostics/dotnet-dump.md
+    - name: dotnet-gcdump
+      href: ../../core/diagnostics/dotnet-gcdump.md
+    - name: dotnet-monitor
+      href: ../../core/diagnostics/dotnet-monitor.md
+    - name: dotnet-trace
+      href: ../../core/diagnostics/dotnet-trace.md
+    - name: dotnet-stack
+      href: ../../core/diagnostics/dotnet-stack.md
+    - name: dotnet-symbol
+      href: ../../core/diagnostics/dotnet-symbol.md
+    - name: dotnet-sos
+      href: ../../core/diagnostics/dotnet-sos.md
+    - name: dotnet-dsrouter
+      href: ../../core/diagnostics/dotnet-dsrouter.md
+  - name: .NET diagnostics tutorials
+    items:
+    - name: Collect performance trace in Linux with PerfCollect
+      href: ../../core/diagnostics/trace-perfcollect-lttng.md
+    - name: Debug a memory leak
+      href: ../../core/diagnostics/debug-memory-leak.md
+    - name: Debug high CPU usage
+      href: ../../core/diagnostics/debug-highcpu.md
+    - name: Debug deadlock
+      href: ../../core/diagnostics/debug-deadlock.md
+    - name: Debug thread-pool starvation
+      href: ../../core/diagnostics/debug-threadpool-starvation.md
+    - name: Debug a stack overflow
+      href: ../../core/diagnostics/debug-stackoverflow.md
+- name: Code analysis
+  items:
+  - name: Overview
+    href: ../../fundamentals/code-analysis/overview.md
+    displayName: code analysis, analyzers
+  - name: Configuration
+    items:
+    - name: General options
+      href: ../../fundamentals/code-analysis/configuration-options.md
+    - name: Configuration files
+      href: ../../fundamentals/code-analysis/configuration-files.md
+    - name: How to suppress warnings
+      href: ../../fundamentals/code-analysis/suppress-warnings.md
+    - name: Code quality rules
+      items:
+      - name: Rule options
+        href: ../../fundamentals/code-analysis/code-quality-rule-options.md
+      - name: Predefined configurations
+        href: ../../fundamentals/code-analysis/predefined-configurations.md
+    - name: Code style rules
+      items:
+      - name: Rule options
+        href: ../../fundamentals/code-analysis/code-style-rule-options.md
+  - name: Rule reference
+    items:
+    - name: Categories
+      href: ../../fundamentals/code-analysis/categories.md
+    - name: Code quality rules
+      items:
+      - name: Overview
+        href: ../../fundamentals/code-analysis/quality-rules/index.md
+      - name: Design rules
+        items:
+        - name: Overview
+          displayName: "design rules"
+          href: ../../fundamentals/code-analysis/quality-rules/design-warnings.md
+        - name: CA1000
+          href: ../../fundamentals/code-analysis/quality-rules/ca1000.md
+        - name: CA1001
+          href: ../../fundamentals/code-analysis/quality-rules/ca1001.md
+        - name: CA1002
+          href: ../../fundamentals/code-analysis/quality-rules/ca1002.md
+        - name: CA1003
+          href: ../../fundamentals/code-analysis/quality-rules/ca1003.md
+        - name: CA1005
+          href: ../../fundamentals/code-analysis/quality-rules/ca1005.md
+        - name: CA1008
+          href: ../../fundamentals/code-analysis/quality-rules/ca1008.md
+        - name: CA1010
+          href: ../../fundamentals/code-analysis/quality-rules/ca1010.md
+        - name: CA1012
+          href: ../../fundamentals/code-analysis/quality-rules/ca1012.md
+        - name: CA1014
+          href: ../../fundamentals/code-analysis/quality-rules/ca1014.md
+        - name: CA1016
+          href: ../../fundamentals/code-analysis/quality-rules/ca1016.md
+        - name: CA1017
+          href: ../../fundamentals/code-analysis/quality-rules/ca1017.md
+        - name: CA1018
+          href: ../../fundamentals/code-analysis/quality-rules/ca1018.md
+        - name: CA1019
+          href: ../../fundamentals/code-analysis/quality-rules/ca1019.md
+        - name: CA1021
+          href: ../../fundamentals/code-analysis/quality-rules/ca1021.md
+        - name: CA1024
+          href: ../../fundamentals/code-analysis/quality-rules/ca1024.md
+        - name: CA1027
+          href: ../../fundamentals/code-analysis/quality-rules/ca1027.md
+        - name: CA1028
+          href: ../../fundamentals/code-analysis/quality-rules/ca1028.md
+        - name: CA1030
+          href: ../../fundamentals/code-analysis/quality-rules/ca1030.md
+        - name: CA1031
+          href: ../../fundamentals/code-analysis/quality-rules/ca1031.md
+        - name: CA1032
+          href: ../../fundamentals/code-analysis/quality-rules/ca1032.md
+        - name: CA1033
+          href: ../../fundamentals/code-analysis/quality-rules/ca1033.md
+        - name: CA1034
+          href: ../../fundamentals/code-analysis/quality-rules/ca1034.md
+        - name: CA1036
+          href: ../../fundamentals/code-analysis/quality-rules/ca1036.md
+        - name: CA1040
+          href: ../../fundamentals/code-analysis/quality-rules/ca1040.md
+        - name: CA1041
+          href: ../../fundamentals/code-analysis/quality-rules/ca1041.md
+        - name: CA1043
+          href: ../../fundamentals/code-analysis/quality-rules/ca1043.md
+        - name: CA1044
+          href: ../../fundamentals/code-analysis/quality-rules/ca1044.md
+        - name: CA1045
+          href: ../../fundamentals/code-analysis/quality-rules/ca1045.md
+        - name: CA1046
+          href: ../../fundamentals/code-analysis/quality-rules/ca1046.md
+        - name: CA1047
+          href: ../../fundamentals/code-analysis/quality-rules/ca1047.md
+        - name: CA1050
+          href: ../../fundamentals/code-analysis/quality-rules/ca1050.md
+        - name: CA1051
+          href: ../../fundamentals/code-analysis/quality-rules/ca1051.md
+        - name: CA1052
+          href: ../../fundamentals/code-analysis/quality-rules/ca1052.md
+        - name: CA1053
+          href: ../../fundamentals/code-analysis/quality-rules/ca1053.md
+        - name: CA1054
+          href: ../../fundamentals/code-analysis/quality-rules/ca1054.md
+        - name: CA1055
+          href: ../../fundamentals/code-analysis/quality-rules/ca1055.md
+        - name: CA1056
+          href: ../../fundamentals/code-analysis/quality-rules/ca1056.md
+        - name: CA1058
+          href: ../../fundamentals/code-analysis/quality-rules/ca1058.md
+        - name: CA1060
+          href: ../../fundamentals/code-analysis/quality-rules/ca1060.md
+        - name: CA1061
+          href: ../../fundamentals/code-analysis/quality-rules/ca1061.md
+        - name: CA1062
+          href: ../../fundamentals/code-analysis/quality-rules/ca1062.md
+        - name: CA1063
+          href: ../../fundamentals/code-analysis/quality-rules/ca1063.md
+        - name: CA1064
+          href: ../../fundamentals/code-analysis/quality-rules/ca1064.md
+        - name: CA1065
+          href: ../../fundamentals/code-analysis/quality-rules/ca1065.md
+        - name: CA1066
+          href: ../../fundamentals/code-analysis/quality-rules/ca1066.md
+        - name: CA1067
+          href: ../../fundamentals/code-analysis/quality-rules/ca1067.md
+        - name: CA1068
+          href: ../../fundamentals/code-analysis/quality-rules/ca1068.md
+        - name: CA1069
+          href: ../../fundamentals/code-analysis/quality-rules/ca1069.md
+        - name: CA1070
+          href: ../../fundamentals/code-analysis/quality-rules/ca1070.md
+      - name: Documentation rules
+        items:
+        - name: Overview
+          displayName: "documentation rules"
+          href: ../../fundamentals/code-analysis/quality-rules/documentation-warnings.md
+        - name: CA1200
+          href: ../../fundamentals/code-analysis/quality-rules/ca1200.md
+      - name: Globalization rules
+        items:
+        - name: Overview
+          displayName: "globalization rules"
+          href: ../../fundamentals/code-analysis/quality-rules/globalization-warnings.md
+        - name: CA1303
+          href: ../../fundamentals/code-analysis/quality-rules/ca1303.md
+        - name: CA1304
+          href: ../../fundamentals/code-analysis/quality-rules/ca1304.md
+        - name: CA1305
+          href: ../../fundamentals/code-analysis/quality-rules/ca1305.md
+        - name: CA1307
+          href: ../../fundamentals/code-analysis/quality-rules/ca1307.md
+        - name: CA1308
+          href: ../../fundamentals/code-analysis/quality-rules/ca1308.md
+        - name: CA1309
+          href: ../../fundamentals/code-analysis/quality-rules/ca1309.md
+        - name: CA1310
+          href: ../../fundamentals/code-analysis/quality-rules/ca1310.md
+        - name: CA1311
+          href: ../../fundamentals/code-analysis/quality-rules/ca1311.md
+        - name: CA2101
+          href: ../../fundamentals/code-analysis/quality-rules/ca2101.md
+      - name: Portability and interoperability rules
+        items:
+        - name: Overview
+          displayName: "portability and interoperability rules"
+          href: ../../fundamentals/code-analysis/quality-rules/interoperability-warnings.md
+        - name: CA1401
+          href: ../../fundamentals/code-analysis/quality-rules/ca1401.md
+        - name: CA1416
+          href: ../../fundamentals/code-analysis/quality-rules/ca1416.md
+        - name: CA1417
+          href: ../../fundamentals/code-analysis/quality-rules/ca1417.md
+        - name: CA1418
+          href: ../../fundamentals/code-analysis/quality-rules/ca1418.md
+        - name: CA1419
+          href: ../../fundamentals/code-analysis/quality-rules/ca1419.md
+        - name: CA1420
+          href: ../../fundamentals/code-analysis/quality-rules/ca1420.md
+        - name: CA1421
+          href: ../../fundamentals/code-analysis/quality-rules/ca1421.md
+        - name: CA1422
+          href: ../../fundamentals/code-analysis/quality-rules/ca1422.md
+      - name: Maintainability rules
+        items:
+        - name: Overview
+          displayName: "maintainability rules"
+          href: ../../fundamentals/code-analysis/quality-rules/maintainability-warnings.md
+        - name: CA1501
+          href: ../../fundamentals/code-analysis/quality-rules/ca1501.md
+        - name: CA1502
+          href: ../../fundamentals/code-analysis/quality-rules/ca1502.md
+        - name: CA1505
+          href: ../../fundamentals/code-analysis/quality-rules/ca1505.md
+        - name: CA1506
+          href: ../../fundamentals/code-analysis/quality-rules/ca1506.md
+        - name: CA1507
+          href: ../../fundamentals/code-analysis/quality-rules/ca1507.md
+        - name: CA1508
+          href: ../../fundamentals/code-analysis/quality-rules/ca1508.md
+        - name: CA1509
+          href: ../../fundamentals/code-analysis/quality-rules/ca1509.md
+      - name: Naming rules
+        items:
+        - name: Overview
+          displayName: "naming rules"
+          href: ../../fundamentals/code-analysis/quality-rules/naming-warnings.md
+        - name: CA1700
+          href: ../../fundamentals/code-analysis/quality-rules/ca1700.md
+        - name: CA1707
+          href: ../../fundamentals/code-analysis/quality-rules/ca1707.md
+        - name: CA1708
+          href: ../../fundamentals/code-analysis/quality-rules/ca1708.md
+        - name: CA1710
+          href: ../../fundamentals/code-analysis/quality-rules/ca1710.md
+        - name: CA1711
+          href: ../../fundamentals/code-analysis/quality-rules/ca1711.md
+        - name: CA1712
+          href: ../../fundamentals/code-analysis/quality-rules/ca1712.md
+        - name: CA1713
+          href: ../../fundamentals/code-analysis/quality-rules/ca1713.md
+        - name: CA1714
+          href: ../../fundamentals/code-analysis/quality-rules/ca1714.md
+        - name: CA1715
+          href: ../../fundamentals/code-analysis/quality-rules/ca1715.md
+        - name: CA1716
+          href: ../../fundamentals/code-analysis/quality-rules/ca1716.md
+        - name: CA1717
+          href: ../../fundamentals/code-analysis/quality-rules/ca1717.md
+        - name: CA1720
+          href: ../../fundamentals/code-analysis/quality-rules/ca1720.md
+        - name: CA1721
+          href: ../../fundamentals/code-analysis/quality-rules/ca1721.md
+        - name: CA1724
+          href: ../../fundamentals/code-analysis/quality-rules/ca1724.md
+        - name: CA1725
+          href: ../../fundamentals/code-analysis/quality-rules/ca1725.md
+        - name: CA1727
+          href: ../../fundamentals/code-analysis/quality-rules/ca1727.md
+      - name: Performance rules
+        items:
+        - name: Overview
+          displayName: "performance rules"
+          href: ../../fundamentals/code-analysis/quality-rules/performance-warnings.md
+        - name: CA1802
+          href: ../../fundamentals/code-analysis/quality-rules/ca1802.md
+        - name: CA1805
+          href: ../../fundamentals/code-analysis/quality-rules/ca1805.md
+        - name: CA1806
+          href: ../../fundamentals/code-analysis/quality-rules/ca1806.md
+        - name: CA1810
+          href: ../../fundamentals/code-analysis/quality-rules/ca1810.md
+        - name: CA1812
+          href: ../../fundamentals/code-analysis/quality-rules/ca1812.md
+        - name: CA1813
+          href: ../../fundamentals/code-analysis/quality-rules/ca1813.md
+        - name: CA1814
+          href: ../../fundamentals/code-analysis/quality-rules/ca1814.md
+        - name: CA1815
+          href: ../../fundamentals/code-analysis/quality-rules/ca1815.md
+        - name: CA1819
+          href: ../../fundamentals/code-analysis/quality-rules/ca1819.md
+        - name: CA1820
+          href: ../../fundamentals/code-analysis/quality-rules/ca1820.md
+        - name: CA1821
+          href: ../../fundamentals/code-analysis/quality-rules/ca1821.md
+        - name: CA1822
+          href: ../../fundamentals/code-analysis/quality-rules/ca1822.md
+        - name: CA1823
+          href: ../../fundamentals/code-analysis/quality-rules/ca1823.md
+        - name: CA1824
+          href: ../../fundamentals/code-analysis/quality-rules/ca1824.md
+        - name: CA1825
+          href: ../../fundamentals/code-analysis/quality-rules/ca1825.md
+        - name: CA1826
+          href: ../../fundamentals/code-analysis/quality-rules/ca1826.md
+        - name: CA1827
+          href: ../../fundamentals/code-analysis/quality-rules/ca1827.md
+        - name: CA1828
+          href: ../../fundamentals/code-analysis/quality-rules/ca1828.md
+        - name: CA1829
+          href: ../../fundamentals/code-analysis/quality-rules/ca1829.md
+        - name: CA1830
+          href: ../../fundamentals/code-analysis/quality-rules/ca1830.md
+        - name: CA1831
+          href: ../../fundamentals/code-analysis/quality-rules/ca1831.md
+        - name: CA1832
+          href: ../../fundamentals/code-analysis/quality-rules/ca1832.md
+        - name: CA1833
+          href: ../../fundamentals/code-analysis/quality-rules/ca1833.md
+        - name: CA1834
+          href: ../../fundamentals/code-analysis/quality-rules/ca1834.md
+        - name: CA1835
+          href: ../../fundamentals/code-analysis/quality-rules/ca1835.md
+        - name: CA1836
+          href: ../../fundamentals/code-analysis/quality-rules/ca1836.md
+        - name: CA1837
+          href: ../../fundamentals/code-analysis/quality-rules/ca1837.md
+        - name: CA1838
+          href: ../../fundamentals/code-analysis/quality-rules/ca1838.md
+        - name: CA1839
+          href: ../../fundamentals/code-analysis/quality-rules/ca1839.md
+        - name: CA1840
+          href: ../../fundamentals/code-analysis/quality-rules/ca1840.md
+        - name: CA1841
+          href: ../../fundamentals/code-analysis/quality-rules/ca1841.md
+        - name: CA1842
+          href: ../../fundamentals/code-analysis/quality-rules/ca1842.md
+        - name: CA1843
+          href: ../../fundamentals/code-analysis/quality-rules/ca1843.md
+        - name: CA1844
+          href: ../../fundamentals/code-analysis/quality-rules/ca1844.md
+        - name: CA1845
+          href: ../../fundamentals/code-analysis/quality-rules/ca1845.md
+        - name: CA1846
+          href: ../../fundamentals/code-analysis/quality-rules/ca1846.md
+        - name: CA1847
+          href: ../../fundamentals/code-analysis/quality-rules/ca1847.md
+        - name: CA1848
+          href: ../../fundamentals/code-analysis/quality-rules/ca1848.md
+        - name: CA1849
+          href: ../../fundamentals/code-analysis/quality-rules/ca1849.md
+        - name: CA1850
+          href: ../../fundamentals/code-analysis/quality-rules/ca1850.md
+        - name: CA1851
+          href: ../../fundamentals/code-analysis/quality-rules/ca1851.md
+        - name: CA1852
+          href: ../../fundamentals/code-analysis/quality-rules/ca1852.md
+        - name: CA1853
+          href: ../../fundamentals/code-analysis/quality-rules/ca1853.md
+        - name: CA1854
+          href: ../../fundamentals/code-analysis/quality-rules/ca1854.md
+        - name: CA1855
+          href: ../../fundamentals/code-analysis/quality-rules/ca1855.md
+        - name: CA1858
+          href: ../../fundamentals/code-analysis/quality-rules/ca1858.md
+      - name: SingleFile rules
+        items:
+        - name: Overview
+          displayName: "singlefile rules"
+          href: ../../core/deploying/single-file/warnings/overview.md
+        - name: IL3000
+          href: ../../core/deploying/single-file/warnings/il3000.md
+        - name: IL3001
+          href: ../../core/deploying/single-file/warnings/il3001.md
+        - name: IL3002
+          href: ../../core/deploying/single-file/warnings/il3002.md
+        - name: IL3003
+          href: ../../core/deploying/single-file/warnings/il3003.md
+      - name: Reliability rules
+        items:
+        - name: Overview
+          displayName: "reliability rules"
+          href: ../../fundamentals/code-analysis/quality-rules/reliability-warnings.md
+        - name: CA2000
+          href: ../../fundamentals/code-analysis/quality-rules/ca2000.md
+        - name: CA2002
+          href: ../../fundamentals/code-analysis/quality-rules/ca2002.md
+        - name: CA2007
+          href: ../../fundamentals/code-analysis/quality-rules/ca2007.md
+        - name: CA2008
+          href: ../../fundamentals/code-analysis/quality-rules/ca2008.md
+        - name: CA2009
+          href: ../../fundamentals/code-analysis/quality-rules/ca2009.md
+        - name: CA2011
+          href: ../../fundamentals/code-analysis/quality-rules/ca2011.md
+        - name: CA2012
+          href: ../../fundamentals/code-analysis/quality-rules/ca2012.md
+        - name: CA2013
+          href: ../../fundamentals/code-analysis/quality-rules/ca2013.md
+        - name: CA2014
+          href: ../../fundamentals/code-analysis/quality-rules/ca2014.md
+        - name: CA2015
+          href: ../../fundamentals/code-analysis/quality-rules/ca2015.md
+        - name: CA2016
+          href: ../../fundamentals/code-analysis/quality-rules/ca2016.md
+        - name: CA2017
+          href: ../../fundamentals/code-analysis/quality-rules/ca2017.md
+        - name: CA2018
+          href: ../../fundamentals/code-analysis/quality-rules/ca2018.md
+        - name: CA2019
+          href: ../../fundamentals/code-analysis/quality-rules/ca2019.md
+        - name: CA2020
+          href: ../../fundamentals/code-analysis/quality-rules/ca2020.md
+      - name: Security rules
+        items:
+        - name: Overview
+          displayName: "security rules"
+          href: ../../fundamentals/code-analysis/quality-rules/security-warnings.md
+        - name: CA2100
+          href: ../../fundamentals/code-analysis/quality-rules/ca2100.md
+        - name: CA2109
+          href: ../../fundamentals/code-analysis/quality-rules/ca2109.md
+        - name: CA2119
+          href: ../../fundamentals/code-analysis/quality-rules/ca2119.md
+        - name: CA2153
+          href: ../../fundamentals/code-analysis/quality-rules/ca2153.md
+        - name: CA2300
+          href: ../../fundamentals/code-analysis/quality-rules/ca2300.md
+        - name: CA2301
+          href: ../../fundamentals/code-analysis/quality-rules/ca2301.md
+        - name: CA2302
+          href: ../../fundamentals/code-analysis/quality-rules/ca2302.md
+        - name: CA2305
+          href: ../../fundamentals/code-analysis/quality-rules/ca2305.md
+        - name: CA2310
+          href: ../../fundamentals/code-analysis/quality-rules/ca2310.md
+        - name: CA2311
+          href: ../../fundamentals/code-analysis/quality-rules/ca2311.md
+        - name: CA2312
+          href: ../../fundamentals/code-analysis/quality-rules/ca2312.md
+        - name: CA2315
+          href: ../../fundamentals/code-analysis/quality-rules/ca2315.md
+        - name: CA2321
+          href: ../../fundamentals/code-analysis/quality-rules/ca2321.md
+        - name: CA2322
+          href: ../../fundamentals/code-analysis/quality-rules/ca2322.md
+        - name: CA2326
+          href: ../../fundamentals/code-analysis/quality-rules/ca2326.md
+        - name: CA2327
+          href: ../../fundamentals/code-analysis/quality-rules/ca2327.md
+        - name: CA2328
+          href: ../../fundamentals/code-analysis/quality-rules/ca2328.md
+        - name: CA2329
+          href: ../../fundamentals/code-analysis/quality-rules/ca2329.md
+        - name: CA2330
+          href: ../../fundamentals/code-analysis/quality-rules/ca2330.md
+        - name: CA2350
+          href: ../../fundamentals/code-analysis/quality-rules/ca2350.md
+        - name: CA2351
+          href: ../../fundamentals/code-analysis/quality-rules/ca2351.md
+        - name: CA2352
+          href: ../../fundamentals/code-analysis/quality-rules/ca2352.md
+        - name: CA2353
+          href: ../../fundamentals/code-analysis/quality-rules/ca2353.md
+        - name: CA2354
+          href: ../../fundamentals/code-analysis/quality-rules/ca2354.md
+        - name: CA2355
+          href: ../../fundamentals/code-analysis/quality-rules/ca2355.md
+        - name: CA2356
+          href: ../../fundamentals/code-analysis/quality-rules/ca2356.md
+        - name: CA2361
+          href: ../../fundamentals/code-analysis/quality-rules/ca2361.md
+        - name: CA2362
+          href: ../../fundamentals/code-analysis/quality-rules/ca2362.md
+        - name: CA3001
+          href: ../../fundamentals/code-analysis/quality-rules/ca3001.md
+        - name: CA3002
+          href: ../../fundamentals/code-analysis/quality-rules/ca3002.md
+        - name: CA3003
+          href: ../../fundamentals/code-analysis/quality-rules/ca3003.md
+        - name: CA3004
+          href: ../../fundamentals/code-analysis/quality-rules/ca3004.md
+        - name: CA3005
+          href: ../../fundamentals/code-analysis/quality-rules/ca3005.md
+        - name: CA3006
+          href: ../../fundamentals/code-analysis/quality-rules/ca3006.md
+        - name: CA3007
+          href: ../../fundamentals/code-analysis/quality-rules/ca3007.md
+        - name: CA3008
+          href: ../../fundamentals/code-analysis/quality-rules/ca3008.md
+        - name: CA3009
+          href: ../../fundamentals/code-analysis/quality-rules/ca3009.md
+        - name: CA3010
+          href: ../../fundamentals/code-analysis/quality-rules/ca3010.md
+        - name: CA3011
+          href: ../../fundamentals/code-analysis/quality-rules/ca3011.md
+        - name: CA3012
+          href: ../../fundamentals/code-analysis/quality-rules/ca3012.md
+        - name: CA3061
+          href: ../../fundamentals/code-analysis/quality-rules/ca3061.md
+        - name: CA3075
+          href: ../../fundamentals/code-analysis/quality-rules/ca3075.md
+        - name: CA3076
+          href: ../../fundamentals/code-analysis/quality-rules/ca3076.md
+        - name: CA3077
+          href: ../../fundamentals/code-analysis/quality-rules/ca3077.md
+        - name: CA3147
+          href: ../../fundamentals/code-analysis/quality-rules/ca3147.md
+        - name: CA5350
+          href: ../../fundamentals/code-analysis/quality-rules/ca5350.md
+        - name: CA5351
+          href: ../../fundamentals/code-analysis/quality-rules/ca5351.md
+        - name: CA5358
+          href: ../../fundamentals/code-analysis/quality-rules/ca5358.md
+        - name: CA5359
+          href: ../../fundamentals/code-analysis/quality-rules/ca5359.md
+        - name: CA5360
+          href: ../../fundamentals/code-analysis/quality-rules/ca5360.md
+        - name: CA5361
+          href: ../../fundamentals/code-analysis/quality-rules/ca5361.md
+        - name: CA5362
+          href: ../../fundamentals/code-analysis/quality-rules/ca5362.md
+        - name: CA5363
+          href: ../../fundamentals/code-analysis/quality-rules/ca5363.md
+        - name: CA5364
+          href: ../../fundamentals/code-analysis/quality-rules/ca5364.md
+        - name: CA5365
+          href: ../../fundamentals/code-analysis/quality-rules/ca5365.md
+        - name: CA5366
+          href: ../../fundamentals/code-analysis/quality-rules/ca5366.md
+        - name: CA5367
+          href: ../../fundamentals/code-analysis/quality-rules/ca5367.md
+        - name: CA5368
+          href: ../../fundamentals/code-analysis/quality-rules/ca5368.md
+        - name: CA5369
+          href: ../../fundamentals/code-analysis/quality-rules/ca5369.md
+        - name: CA5370
+          href: ../../fundamentals/code-analysis/quality-rules/ca5370.md
+        - name: CA5371
+          href: ../../fundamentals/code-analysis/quality-rules/ca5371.md
+        - name: CA5372
+          href: ../../fundamentals/code-analysis/quality-rules/ca5372.md
+        - name: CA5373
+          href: ../../fundamentals/code-analysis/quality-rules/ca5373.md
+        - name: CA5374
+          href: ../../fundamentals/code-analysis/quality-rules/ca5374.md
+        - name: CA5375
+          href: ../../fundamentals/code-analysis/quality-rules/ca5375.md
+        - name: CA5376
+          href: ../../fundamentals/code-analysis/quality-rules/ca5376.md
+        - name: CA5377
+          href: ../../fundamentals/code-analysis/quality-rules/ca5377.md
+        - name: CA5378
+          href: ../../fundamentals/code-analysis/quality-rules/ca5378.md
+        - name: CA5379
+          href: ../../fundamentals/code-analysis/quality-rules/ca5379.md
+        - name: CA5380
+          href: ../../fundamentals/code-analysis/quality-rules/ca5380.md
+        - name: CA5381
+          href: ../../fundamentals/code-analysis/quality-rules/ca5381.md
+        - name: CA5382
+          href: ../../fundamentals/code-analysis/quality-rules/ca5382.md
+        - name: CA5383
+          href: ../../fundamentals/code-analysis/quality-rules/ca5383.md
+        - name: CA5384
+          href: ../../fundamentals/code-analysis/quality-rules/ca5384.md
+        - name: CA5385
+          href: ../../fundamentals/code-analysis/quality-rules/ca5385.md
+        - name: CA5386
+          href: ../../fundamentals/code-analysis/quality-rules/ca5386.md
+        - name: CA5387
+          href: ../../fundamentals/code-analysis/quality-rules/ca5387.md
+        - name: CA5388
+          href: ../../fundamentals/code-analysis/quality-rules/ca5388.md
+        - name: CA5389
+          href: ../../fundamentals/code-analysis/quality-rules/ca5389.md
+        - name: CA5390
+          href: ../../fundamentals/code-analysis/quality-rules/ca5390.md
+        - name: CA5391
+          href: ../../fundamentals/code-analysis/quality-rules/ca5391.md
+        - name: CA5392
+          href: ../../fundamentals/code-analysis/quality-rules/ca5392.md
+        - name: CA5393
+          href: ../../fundamentals/code-analysis/quality-rules/ca5393.md
+        - name: CA5394
+          href: ../../fundamentals/code-analysis/quality-rules/ca5394.md
+        - name: CA5395
+          href: ../../fundamentals/code-analysis/quality-rules/ca5395.md
+        - name: CA5396
+          href: ../../fundamentals/code-analysis/quality-rules/ca5396.md
+        - name: CA5397
+          href: ../../fundamentals/code-analysis/quality-rules/ca5397.md
+        - name: CA5398
+          href: ../../fundamentals/code-analysis/quality-rules/ca5398.md
+        - name: CA5399
+          href: ../../fundamentals/code-analysis/quality-rules/ca5399.md
+        - name: CA5400
+          href: ../../fundamentals/code-analysis/quality-rules/ca5400.md
+        - name: CA5401
+          href: ../../fundamentals/code-analysis/quality-rules/ca5401.md
+        - name: CA5402
+          href: ../../fundamentals/code-analysis/quality-rules/ca5402.md
+        - name: CA5403
+          href: ../../fundamentals/code-analysis/quality-rules/ca5403.md
+        - name: CA5404
+          href: ../../fundamentals/code-analysis/quality-rules/ca5404.md
+        - name: CA5405
+          href: ../../fundamentals/code-analysis/quality-rules/ca5405.md
+      - name: Usage rules
+        items:
+        - name: Overview
+          displayName: "usage rules"
+          href: ../../fundamentals/code-analysis/quality-rules/usage-warnings.md
+        - name: CA1801
+          href: ../../fundamentals/code-analysis/quality-rules/ca1801.md
+        - name: CA1816
+          href: ../../fundamentals/code-analysis/quality-rules/ca1816.md
+        - name: CA2200
+          href: ../../fundamentals/code-analysis/quality-rules/ca2200.md
+        - name: CA2201
+          href: ../../fundamentals/code-analysis/quality-rules/ca2201.md
+        - name: CA2207
+          href: ../../fundamentals/code-analysis/quality-rules/ca2207.md
+        - name: CA2208
+          href: ../../fundamentals/code-analysis/quality-rules/ca2208.md
+        - name: CA2211
+          href: ../../fundamentals/code-analysis/quality-rules/ca2211.md
+        - name: CA2213
+          href: ../../fundamentals/code-analysis/quality-rules/ca2213.md
+        - name: CA2214
+          href: ../../fundamentals/code-analysis/quality-rules/ca2214.md
+        - name: CA2215
+          href: ../../fundamentals/code-analysis/quality-rules/ca2215.md
+        - name: CA2216
+          href: ../../fundamentals/code-analysis/quality-rules/ca2216.md
+        - name: CA2217
+          href: ../../fundamentals/code-analysis/quality-rules/ca2217.md
+        - name: CA2218
+          href: ../../fundamentals/code-analysis/quality-rules/ca2218.md
+        - name: CA2219
+          href: ../../fundamentals/code-analysis/quality-rules/ca2219.md
+        - name: CA2224
+          href: ../../fundamentals/code-analysis/quality-rules/ca2224.md
+        - name: CA2225
+          href: ../../fundamentals/code-analysis/quality-rules/ca2225.md
+        - name: CA2226
+          href: ../../fundamentals/code-analysis/quality-rules/ca2226.md
+        - name: CA2227
+          href: ../../fundamentals/code-analysis/quality-rules/ca2227.md
+        - name: CA2229
+          href: ../../fundamentals/code-analysis/quality-rules/ca2229.md
+        - name: CA2231
+          href: ../../fundamentals/code-analysis/quality-rules/ca2231.md
+        - name: CA2234
+          href: ../../fundamentals/code-analysis/quality-rules/ca2234.md
+        - name: CA2235
+          href: ../../fundamentals/code-analysis/quality-rules/ca2235.md
+        - name: CA2237
+          href: ../../fundamentals/code-analysis/quality-rules/ca2237.md
+        - name: CA2241
+          href: ../../fundamentals/code-analysis/quality-rules/ca2241.md
+        - name: CA2242
+          href: ../../fundamentals/code-analysis/quality-rules/ca2242.md
+        - name: CA2243
+          href: ../../fundamentals/code-analysis/quality-rules/ca2243.md
+        - name: CA2244
+          href: ../../fundamentals/code-analysis/quality-rules/ca2244.md
+        - name: CA2245
+          href: ../../fundamentals/code-analysis/quality-rules/ca2245.md
+        - name: CA2246
+          href: ../../fundamentals/code-analysis/quality-rules/ca2246.md
+        - name: CA2247
+          href: ../../fundamentals/code-analysis/quality-rules/ca2247.md
+        - name: CA2248
+          href: ../../fundamentals/code-analysis/quality-rules/ca2248.md
+        - name: CA2249
+          href: ../../fundamentals/code-analysis/quality-rules/ca2249.md
+        - name: CA2250
+          href: ../../fundamentals/code-analysis/quality-rules/ca2250.md
+        - name: CA2251
+          href: ../../fundamentals/code-analysis/quality-rules/ca2251.md
+        - name: CA2252
+          href: ../../fundamentals/code-analysis/quality-rules/ca2252.md
+        - name: CA2253
+          href: ../../fundamentals/code-analysis/quality-rules/ca2253.md
+        - name: CA2254
+          href: ../../fundamentals/code-analysis/quality-rules/ca2254.md
+        - name: CA2255
+          href: ../../fundamentals/code-analysis/quality-rules/ca2255.md
+        - name: CA2256
+          href: ../../fundamentals/code-analysis/quality-rules/ca2256.md
+        - name: CA2257
+          href: ../../fundamentals/code-analysis/quality-rules/ca2257.md
+        - name: CA2258
+          href: ../../fundamentals/code-analysis/quality-rules/ca2258.md
+        - name: CA2259
+          href: ../../fundamentals/code-analysis/quality-rules/ca2259.md
+        - name: CA2260
+          href: ../../fundamentals/code-analysis/quality-rules/ca2260.md
+    - name: Code style rules
+      items:
+      - name: Overview
+        href: ../../fundamentals/code-analysis/style-rules/index.md
+      - name: Language rules
+        items:
+        - name: Overview
+          displayName: "language rules"
+          href: ../../fundamentals/code-analysis/style-rules/language-rules.md
+        - name: this and Me preferences
+          items:
+          - name: IDE0003 and IDE0009
+            href: ../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md
+        - name: Use language keywords for types
+          items:
+          - name: IDE0049
+            href: ../../fundamentals/code-analysis/style-rules/ide0049.md
+        - name: Modifier preferences
+          items:
+          - name: Overview
+            href: ../../fundamentals/code-analysis/style-rules/modifier-preferences.md
+          - name: IDE0036
+            href: ../../fundamentals/code-analysis/style-rules/ide0036.md
+          - name: IDE0040
+            href: ../../fundamentals/code-analysis/style-rules/ide0040.md
+          - name: IDE0044
+            href: ../../fundamentals/code-analysis/style-rules/ide0044.md
+          - name: IDE0062
+            href: ../../fundamentals/code-analysis/style-rules/ide0062.md
+          - name: IDE0064
+            href: ../../fundamentals/code-analysis/style-rules/ide0064.md
+        - name: Parentheses preferences
+          items:
+          - name: IDE0047 and IDE0048
+            href: ../../fundamentals/code-analysis/style-rules/ide0047-ide0048.md
+        - name: Expression-level preferences
+          items:
+          - name: Overview
+            href: ../../fundamentals/code-analysis/style-rules/expression-level-preferences.md
+          - name: IDE0010
+            href: ../../fundamentals/code-analysis/style-rules/ide0010.md
+          - name: IDE0017
+            href: ../../fundamentals/code-analysis/style-rules/ide0017.md
+          - name: IDE0018
+            href: ../../fundamentals/code-analysis/style-rules/ide0018.md
+          - name: IDE0028
+            href: ../../fundamentals/code-analysis/style-rules/ide0028.md
+          - name: IDE0032
+            href: ../../fundamentals/code-analysis/style-rules/ide0032.md
+          - name: IDE0033
+            href: ../../fundamentals/code-analysis/style-rules/ide0033.md
+          - name: IDE0034
+            href: ../../fundamentals/code-analysis/style-rules/ide0034.md
+          - name: IDE0037
+            href: ../../fundamentals/code-analysis/style-rules/ide0037.md
+          - name: IDE0039
+            href: ../../fundamentals/code-analysis/style-rules/ide0039.md
+          - name: IDE0042
+            href: ../../fundamentals/code-analysis/style-rules/ide0042.md
+          - name: IDE0045
+            href: ../../fundamentals/code-analysis/style-rules/ide0045.md
+          - name: IDE0046
+            href: ../../fundamentals/code-analysis/style-rules/ide0046.md
+          - name: IDE0050
+            href: ../../fundamentals/code-analysis/style-rules/ide0050.md
+          - name: IDE0054
+            href: ../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md
+          - name: IDE0056
+            href: ../../fundamentals/code-analysis/style-rules/ide0056.md
+          - name: IDE0057
+            href: ../../fundamentals/code-analysis/style-rules/ide0057.md
+          - name: IDE0070
+            href: ../../fundamentals/code-analysis/style-rules/ide0070.md
+          - name: IDE0071
+            href: ../../fundamentals/code-analysis/style-rules/ide0071.md
+          - name: IDE0072
+            href: ../../fundamentals/code-analysis/style-rules/ide0072.md
+          - name: IDE0074
+            href: ../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md
+          - name: IDE0075
+            href: ../../fundamentals/code-analysis/style-rules/ide0075.md
+          - name: IDE0082
+            href: ../../fundamentals/code-analysis/style-rules/ide0082.md
+          - name: IDE0090
+            href: ../../fundamentals/code-analysis/style-rules/ide0090.md
+          - name: IDE0180
+            href: ../../fundamentals/code-analysis/style-rules/ide0180.md
+        - name: Namespace declaration preferences
+          items:
+          - name: IDE0160 and IDE0161
+            href: ../../fundamentals/code-analysis/style-rules/ide0160-ide0161.md
+        - name: Null-checking preferences
+          items:
+          - name: Overview
+            href: ../../fundamentals/code-analysis/style-rules/null-checking-preferences.md
+          - name: IDE0016
+            href: ../../fundamentals/code-analysis/style-rules/ide0016.md
+          - name: IDE0029 and IDE0030
+            href: ../../fundamentals/code-analysis/style-rules/ide0029-ide0030.md
+          - name: IDE0031
+            href: ../../fundamentals/code-analysis/style-rules/ide0031.md
+          - name: IDE0041
+            href: ../../fundamentals/code-analysis/style-rules/ide0041.md
+          - name: IDE0150
+            href: ../../fundamentals/code-analysis/style-rules/ide0150.md
+          - name: IDE1005
+            href: ../../fundamentals/code-analysis/style-rules/ide1005.md
+        - name: var preferences
+          items:
+          - name: IDE0007 and IDE0008
+            href: ../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md
+        - name: Expression-bodied members
+          items:
+          - name: Overview
+            href: ../../fundamentals/code-analysis/style-rules/expression-bodied-members.md
+          - name: IDE0021
+            href: ../../fundamentals/code-analysis/style-rules/ide0021.md
+          - name: IDE0022
+            href: ../../fundamentals/code-analysis/style-rules/ide0022.md
+          - name: IDE0023 and IDE0024
+            href: ../../fundamentals/code-analysis/style-rules/ide0023-ide0024.md
+          - name: IDE0025
+            href: ../../fundamentals/code-analysis/style-rules/ide0025.md
+          - name: IDE0026
+            href: ../../fundamentals/code-analysis/style-rules/ide0026.md
+          - name: IDE0027
+            href: ../../fundamentals/code-analysis/style-rules/ide0027.md
+          - name: IDE0053
+            href: ../../fundamentals/code-analysis/style-rules/ide0053.md
+          - name: IDE0061
+            href: ../../fundamentals/code-analysis/style-rules/ide0061.md
+        - name: Pattern matching preferences
+          items:
+          - name: Overview
+            href: ../../fundamentals/code-analysis/style-rules/pattern-matching-preferences.md
+          - name: IDE0019
+            href: ../../fundamentals/code-analysis/style-rules/ide0019.md
+          - name: IDE0020 and IDE0038
+            href: ../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md
+          - name: IDE0066
+            href: ../../fundamentals/code-analysis/style-rules/ide0066.md
+          - name: IDE0078
+            href: ../../fundamentals/code-analysis/style-rules/ide0078.md
+          - name: IDE0083
+            href: ../../fundamentals/code-analysis/style-rules/ide0083.md
+          - name: IDE0084
+            href: ../../fundamentals/code-analysis/style-rules/ide0084.md
+          - name: IDE0170
+            href: ../../fundamentals/code-analysis/style-rules/ide0170.md
+        - name: Code block preferences
+          items:
+          - name: Overview
+            href: ../../fundamentals/code-analysis/style-rules/code-block-preferences.md
+          - name: IDE0011
+            href: ../../fundamentals/code-analysis/style-rules/ide0011.md
+          - name: IDE0063
+            href: ../../fundamentals/code-analysis/style-rules/ide0063.md
+        - name: using directive preferences
+          items:
+          - name: IDE0065
+            href: ../../fundamentals/code-analysis/style-rules/ide0065.md
+        - name: File header preferences
+          items:
+          - name: IDE0073
+            href: ../../fundamentals/code-analysis/style-rules/ide0073.md
+        - name: Namespace naming preferences
+          items:
+          - name: IDE0130
+            href: ../../fundamentals/code-analysis/style-rules/ide0130.md
+      - name: Unnecessary code rules
+        items:
+        - name: Overview
+          href: ../../fundamentals/code-analysis/style-rules/unnecessary-code-rules.md
+        - name: IDE0001
+          href: ../../fundamentals/code-analysis/style-rules/ide0001.md
+        - name: IDE0002
+          href: ../../fundamentals/code-analysis/style-rules/ide0002.md
+        - name: IDE0004
+          href: ../../fundamentals/code-analysis/style-rules/ide0004.md
+        - name: IDE0005
+          href: ../../fundamentals/code-analysis/style-rules/ide0005.md
+        - name: IDE0035
+          href: ../../fundamentals/code-analysis/style-rules/ide0035.md
+        - name: IDE0051
+          href: ../../fundamentals/code-analysis/style-rules/ide0051.md
+        - name: IDE0052
+          href: ../../fundamentals/code-analysis/style-rules/ide0052.md
+        - name: IDE0058
+          href: ../../fundamentals/code-analysis/style-rules/ide0058.md
+        - name: IDE0059
+          href: ../../fundamentals/code-analysis/style-rules/ide0059.md
+        - name: IDE0060
+          href: ../../fundamentals/code-analysis/style-rules/ide0060.md
+        - name: IDE0079
+          href: ../../fundamentals/code-analysis/style-rules/ide0079.md
+        - name: IDE0080
+          href: ../../fundamentals/code-analysis/style-rules/ide0080.md
+        - name: IDE0081
+          href: ../../fundamentals/code-analysis/style-rules/ide0081.md
+        - name: IDE0100
+          href: ../../fundamentals/code-analysis/style-rules/ide0100.md
+        - name: IDE0110
+          href: ../../fundamentals/code-analysis/style-rules/ide0110.md
+        - name: IDE0140
+          href: ../../fundamentals/code-analysis/style-rules/ide0140.md
+      - name: Miscellaneous rules
+        items:
+        - name: Overview
+          href: ../../fundamentals/code-analysis/style-rules/miscellaneous-rules.md
+        - name: IDE0076
+          href: ../../fundamentals/code-analysis/style-rules/ide0076.md
+        - name: IDE0077
+          href: ../../fundamentals/code-analysis/style-rules/ide0077.md
+      - name: Formatting rules
+        items:
+        - name: IDE0055
+          items:
+          - name: Overview
+            displayName: formatting rule, ide0055
+            href: ../../fundamentals/code-analysis/style-rules/ide0055.md
+          - name: .NET formatting options
+            href: ../../fundamentals/code-analysis/style-rules/dotnet-formatting-options.md
+          - name: C# formatting options
+            href: ../../fundamentals/code-analysis/style-rules/csharp-formatting-options.md
+      - name: Naming rules
+        href: ../../fundamentals/code-analysis/style-rules/naming-rules.md
+  - name: Platform compatibility analyzer
+    href: ../standard/analyzers/platform-compat-analyzer.md
+  - name: Portability analyzer
+    href: ../standard/analyzers/portability-analyzer.md
+- name: Package validation
+  items:
+  - name: Get started
+    displayName: package validation
+    href: ../../fundamentals/package-validation/overview.md
+  - name: Baseline package validator
+    href: ../../fundamentals/package-validation/baseline-version-validator.md
+  - name: Compatible framework in package validator
+    href: ../../fundamentals/package-validation/compatible-framework-in-package-validator.md
+  - name: Compatible framework validator
+    href: ../../fundamentals/package-validation/compatible-framework-validator.md
+  - name: Diagnostic IDs
+    href: ../../fundamentals/package-validation/diagnostic-ids.md

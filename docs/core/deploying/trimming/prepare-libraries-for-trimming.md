@@ -37,7 +37,7 @@ If you want to see trim warnings, but don't want to mark your library as trim-co
 To show all analysis warnings for your library, including warnings about dependencies, you need the trimmer to analyze the implementation of your library and the implementations of dependencies your library uses. When building and publishing a library, the implementations of the dependencies are not available, and the reference assemblies that are available do not have enough information for the trimmer to determine if they are compatible with trimming. Because of this, you'll need to create and publish a self-contained sample application which produces an executable that includes your library and the dependencies it relies on. This executable includes all the information the trimmer requires to warn you about all trim incompatibilities in your library code, as well as the code that your library references from its dependencies.
 
 > [!NOTE]
-> If your library has significantly different behavior or uses different API's depending on the target framework of the consumer (for example, using `#if NET5_0_OR_GREATER`) which might impact trimming, you will need to create a new sample app for each of the target frameworks you want to support trimming for.
+> If your library has significantly different behavior or uses different APIs depending on the target framework of the consumer (for example, using `#if NET5_0_OR_GREATER`) which might impact trimming, you will need to create a new sample app for each of the target frameworks you want to support trimming for.
 
 :::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 

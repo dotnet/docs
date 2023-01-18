@@ -32,8 +32,8 @@ Assemblies have the following properties:
 
 - You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/programming-guide/concepts/reflection.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
-- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods.
-
+- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods. Hello.
+   
 ## Assemblies in the common language runtime
 
 Assemblies provide the common language runtime with the information it needs to be aware of type implementations. To the runtime, a type doesn't exist outside the context of an assembly.
@@ -117,3 +117,4 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 - [How to: Use and debug assembly unloadability in .NET Core](unloadability.md)
 - [How to: Determine if a file is an assembly](identify.md)
 - [How to: Inspect assembly contents using MetadataLoadContext](inspect-contents-using-metadataloadcontext.md)
+

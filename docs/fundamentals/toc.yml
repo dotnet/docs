@@ -15,7 +15,9 @@ items:
       items:
         - name: New Article
           href: new-article.md
-    - name: Overview
+           - name: New Article 2
+          href: new-article-2.md
+ - name: Overview
       href: ../core/install/index.yml
     - name: Install on Windows
       href: ../core/install/windows.md

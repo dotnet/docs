@@ -19,7 +19,7 @@ Each project that should build against the reference assemblies NuGet package ne
 </ItemGroup>
 ```
 
-SDK-style projects include this reference by default. For traditional, non-SDK-style projects, the reference can be added with the NuGet Package Manager UI in Visual Studio or by manually editing the project file. The package contains reference assemblies for many versions of .NET Framework. The version to be actually used is determined by the TargetFramework (TargetFrameworks) property.
+SDK-style projects include this reference by default. For typical .NET Framework projects that were created with Visual Studio, the reference can be added with the NuGet Package Manager UI in Visual Studio or by manually editing the project file. The package contains reference assemblies for many versions of .NET Framework. The version to be actually used is determined by the TargetFramework (TargetFrameworks) property.
 
 ## Run restore on the command line
 

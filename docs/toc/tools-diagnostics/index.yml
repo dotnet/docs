@@ -54,16 +54,6 @@ landingContent:
             url: ../../core/deploying/deploy-with-cli.md
 
   # Card
-  - title: SYSLIB diagnostics
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Obsoletion warnings
-            url: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
-          - text: Source-generated code warnings
-            url: ../../fundamentals/syslib-diagnostics/source-generator-overview.md
-
-  # Card
   - title: MSBuild and project files
     linkLists:
       - linkListType: overview
@@ -118,6 +108,16 @@ landingContent:
             url: ../../fundamentals/code-analysis/quality-rules/index.md
           - text: Code style rules
             url: ../../fundamentals/code-analysis/style-rules/index.md
+
+  # Card
+  - title: SYSLIB diagnostics
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Obsoletion warnings
+            url: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
+          - text: Source-generated code warnings
+            url: ../../fundamentals/syslib-diagnostics/source-generator-overview.md
 
   # Card
   - title: Package validation

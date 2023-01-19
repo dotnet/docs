@@ -11,7 +11,11 @@ items:
     href: https://dotnet.microsoft.com/live
   - name: How to install
     items:
-    - name: Overview
+   - name: Custom Articles
+   items:
+    - name: New Article
+      href: new-article.md
+  - name: Overview
       href: ../core/install/index.yml
     - name: Install on Windows
       href: ../core/install/windows.md

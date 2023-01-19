@@ -13,7 +13,7 @@ Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimma
 
 ## New behavior
 
-Starting in .NET 7, the property `TrimmerDefaultAction` is ignored and publishing behaves as if it was set to `link` all the time. This means all assemblies will be fully trimmed, whether they opt in or not. As a result, applications with trim warnings may see changes in behavior or runtime exceptions. See [All assemblies trimmed by default](./trim-all-assemblies.md) for more information and instructions for restoring the previous behavior.
+Starting in .NET 7, the property `TrimmerDefaultAction` is ignored and publishing behaves as if it was set to `link` all the time. This means all assemblies are fully trimmed, whether they opt in or not. As a result, applications with trim warnings may see changes in behavior or run-time exceptions. For more information and instrutions for restoring the previous behavior, see [All assemblies trimmed by default](./trim-all-assemblies.md).
 
 ## Version introduced
 

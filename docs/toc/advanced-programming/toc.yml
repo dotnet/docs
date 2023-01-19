@@ -63,286 +63,286 @@ items:
 - name: Parallel programming
   items:
   - name: Overview
-    href: ../parallel-programming/index.md
+    href: ../../standard/parallel-programming/index.md
   - name: Task Parallel Library (TPL)
-    href: ../parallel-programming/task-parallel-library-tpl.md
+    href: ../../standard/parallel-programming/task-parallel-library-tpl.md
     items:
     - name: Data parallelism
       items:
       - name: Overview
         displayName: data parallelism
-        href: ../parallel-programming/data-parallelism-task-parallel-library.md
+        href: ../../standard/parallel-programming/data-parallelism-task-parallel-library.md
       - name: Write a Parallel.For loop
-        href: ../parallel-programming/how-to-write-a-simple-parallel-for-loop.md
+        href: ../../standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md
       - name: Write a Parallel.ForEach loop
-        href: ../parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
+        href: ../../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
       - name: Write a Parallel.For loop with thread-local variables
-        href: ../parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
+        href: ../../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
       - name: Write a Parallel.ForEach loop with partition-local variables
-        href: ../parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
+        href: ../../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
       - name: Cancel a parallel loop
-        href: ../parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
+        href: ../../standard/parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
       - name: Handle exceptions in parallel loops
-        href: ../parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
+        href: ../../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
       - name: Speed up small loop bodies
-        href: ../parallel-programming/how-to-speed-up-small-loop-bodies.md
+        href: ../../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
       - name: Iterate file directories with the Parallel class
-        href: ../parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
+        href: ../../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
     - name: Task-based asynchronous programming
-      href: ../parallel-programming/task-based-asynchronous-programming.md
+      href: ../../standard/parallel-programming/task-based-asynchronous-programming.md
       items:
       - name: Chain tasks by using continuation tasks
-        href: ../parallel-programming/chaining-tasks-by-using-continuation-tasks.md
+        href: ../../standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md
       - name: Attached and detached child tasks
-        href: ../parallel-programming/attached-and-detached-child-tasks.md
+        href: ../../standard/parallel-programming/attached-and-detached-child-tasks.md
       - name: Task cancellation
-        href: ../parallel-programming/task-cancellation.md
+        href: ../../standard/parallel-programming/task-cancellation.md
       - name: Exception handling
-        href: ../parallel-programming/exception-handling-task-parallel-library.md
+        href: ../../standard/parallel-programming/exception-handling-task-parallel-library.md
       - name: Use Parallel.Invoke to execute parallel operations
-        href: ../parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
+        href: ../../standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
       - name: Return a value from a task
-        href: ../parallel-programming/how-to-return-a-value-from-a-task.md
+        href: ../../standard/parallel-programming/how-to-return-a-value-from-a-task.md
       - name: Cancel a task and its children
-        href: ../parallel-programming/how-to-cancel-a-task-and-its-children.md
+        href: ../../standard/parallel-programming/how-to-cancel-a-task-and-its-children.md
       - name: Create pre-computed tasks
-        href: ../parallel-programming/how-to-create-pre-computed-tasks.md
+        href: ../../standard/parallel-programming/how-to-create-pre-computed-tasks.md
       - name: Traverse a binary tree with parallel tasks
-        href: ../parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
+        href: ../../standard/parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
       - name: Unwrap a nested task
-        href: ../parallel-programming/how-to-unwrap-a-nested-task.md
+        href: ../../standard/parallel-programming/how-to-unwrap-a-nested-task.md
       - name: Prevent a child task from attaching to its parent
-        href: ../parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
+        href: ../../standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
     - name: Dataflow
-      href: ../parallel-programming/dataflow-task-parallel-library.md
+      href: ../../standard/parallel-programming/dataflow-task-parallel-library.md
       items:
       - name: Write messages to and read messages from a dataflow block
-        href: ../parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
+        href: ../../standard/parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
       - name: Implement a producer-consumer dataflow pattern
-        href: ../parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
+        href: ../../standard/parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
       - name: Perform an action when a dataflow block receives data
-        href: ../parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
+        href: ../../standard/parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
       - name: Create a dataflow pipeline
-        href: ../parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
+        href: ../../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
       - name: Unlink dataflow blocks
-        href: ../parallel-programming/how-to-unlink-dataflow-blocks.md
+        href: ../../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
       - name: Use dataflow in a Windows Forms app
-        href: ../parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
+        href: ../../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
       - name: Cancel a dataflow block
-        href: ../parallel-programming/how-to-cancel-a-dataflow-block.md
+        href: ../../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
       - name: Create a custom dataflow block type
-        href: ../parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
+        href: ../../standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
       - name: Use JoinBlock to read data from multiple sources
-        href: ../parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
+        href: ../../standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
       - name: Specify the degree of parallelism in a dataflow block
-        href: ../parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
+        href: ../../standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
       - name: Specify a task scheduler in a dataflow block
-        href: ../parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
+        href: ../../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
       - name: Use BatchBlock and BatchedJoinBlock to improve efficiency
-        href: ../parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
+        href: ../../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
     - name: Use TPL with other asynchronous patterns
       items:
       - name: TPL and traditional .NET asynchronous programming
-        href: ../parallel-programming/tpl-and-traditional-async-programming.md
+        href: ../../standard/parallel-programming/tpl-and-traditional-async-programming.md
       - name: Wrap EAP patterns in a task
-        href: ../parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
+        href: ../../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
     - name: Potential pitfalls in data and task parallelism
-      href: ../parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
+      href: ../../standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
   - name: Parallel LINQ (PLINQ)
     items:
     - name: Introduction
-      href: ../parallel-programming/introduction-to-plinq.md
+      href: ../../standard/parallel-programming/introduction-to-plinq.md
     - name: Optimize queries for speedup
-      href: ../parallel-programming/understanding-speedup-in-plinq.md
+      href: ../../standard/parallel-programming/understanding-speedup-in-plinq.md
     - name: Order preservation
-      href: ../parallel-programming/order-preservation-in-plinq.md
+      href: ../../standard/parallel-programming/order-preservation-in-plinq.md
     - name: Merge options
-      href: ../parallel-programming/merge-options-in-plinq.md
+      href: ../../standard/parallel-programming/merge-options-in-plinq.md
     - name: Potential pitfalls
-      href: ../parallel-programming/potential-pitfalls-with-plinq.md
+      href: ../../standard/parallel-programming/potential-pitfalls-with-plinq.md
     - name: Create and execute a query
-      href: ../parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
+      href: ../../standard/parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
     - name: Control ordering in a query
-      href: ../parallel-programming/how-to-control-ordering-in-a-plinq-query.md
+      href: ../../standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md
     - name: Combine parallel and sequential LINQ queries
-      href: ../parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
+      href: ../../standard/parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
     - name: Handle exceptions in a query
-      href: ../parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
+      href: ../../standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
     - name: Cancel a query
-      href: ../parallel-programming/how-to-cancel-a-plinq-query.md
+      href: ../../standard/parallel-programming/how-to-cancel-a-plinq-query.md
     - name: Write a custom aggregate function
-      href: ../parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
+      href: ../../standard/parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
     - name: Specify the execution mode
-      href: ../parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
+      href: ../../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
     - name: Specify merge options
-      href: ../parallel-programming/how-to-specify-merge-options-in-plinq.md
+      href: ../../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
     - name: Iterate file directories
-      href: ../parallel-programming/how-to-iterate-file-directories-with-plinq.md
+      href: ../../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
     - name: Measure query performance
-      href: ../parallel-programming/how-to-measure-plinq-query-performance.md
+      href: ../../standard/parallel-programming/how-to-measure-plinq-query-performance.md
     - name: Data sample
-      href: ../parallel-programming/plinq-data-sample.md
+      href: ../../standard/parallel-programming/plinq-data-sample.md
   - name: Data structures for parallel programming
-    href: ../parallel-programming/data-structures-for-parallel-programming.md
+    href: ../../standard/parallel-programming/data-structures-for-parallel-programming.md
   - name: Parallel diagnostic tools
-    href: ../parallel-programming/parallel-diagnostic-tools.md
+    href: ../../standard/parallel-programming/parallel-diagnostic-tools.md
   - name: Custom partitioners for PLINQ and TPL
     items:
     - name: Overview
-      href: ../parallel-programming/custom-partitioners-for-plinq-and-tpl.md
+      href: ../../standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md
       displayName: custom partitioners
     - name: Implement dynamic partitions
-      href: ../parallel-programming/how-to-implement-dynamic-partitions.md
+      href: ../../standard/parallel-programming/how-to-implement-dynamic-partitions.md
     - name: Implement a partitioner for static partitioning
-      href: ../parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
+      href: ../../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
   - name: Lambda expressions in PLINQ and TPL
-    href: ../parallel-programming/lambda-expressions-in-plinq-and-tpl.md
+    href: ../../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
   - name: Further reading
-    href: ../parallel-programming/for-further-reading-parallel-programming.md
+    href: ../../standard/parallel-programming/for-further-reading-parallel-programming.md
 - name: Threading
   items:
   - name: Managed threading basics
     items:
     - name: Overview
       displayName: threading
-      href: ../threading/managed-threading-basics.md
+      href: ../../standard/threading/managed-threading-basics.md
     - name: Threads and threading
-      href: ../threading/threads-and-threading.md
+      href: ../../standard/threading/threads-and-threading.md
     - name: Exceptions in managed threads
-      href: ../threading/exceptions-in-managed-threads.md
+      href: ../../standard/threading/exceptions-in-managed-threads.md
     - name: Synchronize data for multithreading
-      href: ../threading/synchronizing-data-for-multithreading.md
+      href: ../../standard/threading/synchronizing-data-for-multithreading.md
     - name: Foreground and background threads
-      href: ../threading/foreground-and-background-threads.md
+      href: ../../standard/threading/foreground-and-background-threads.md
     - name: Managed and unmanaged threading in windows
-      href: ../threading/managed-and-unmanaged-threading-in-windows.md
+      href: ../../standard/threading/managed-and-unmanaged-threading-in-windows.md
     - name: "Thread local storage: Thread-relative static fields and data slots"
-      href: ../threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md
+      href: ../../standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md
   - name: Using threads and threading
     items:
     - name: Overview
-      href: ../threading/using-threads-and-threading.md
+      href: ../../standard/threading/using-threads-and-threading.md
     - name: Create threads and pass data at start time
-      href: ../threading/creating-threads-and-passing-data-at-start-time.md
+      href: ../../standard/threading/creating-threads-and-passing-data-at-start-time.md
     - name: Pause and interrupt threads
-      href: ../threading/pausing-and-resuming-threads.md
+      href: ../../standard/threading/pausing-and-resuming-threads.md
     - name: Schedule threads
-      href: ../threading/scheduling-threads.md
+      href: ../../standard/threading/scheduling-threads.md
     - name: Cancel threads
       items:
       - name: Overview
-        href: ../threading/cancellation-in-managed-threads.md
+        href: ../../standard/threading/cancellation-in-managed-threads.md
       - name: Cancel threads cooperatively
-        href: ../threading/canceling-threads-cooperatively.md
+        href: ../../standard/threading/canceling-threads-cooperatively.md
       - name: How-tos
         items:
         - name: Listen for cancellation requests by polling
-          href: ../threading/how-to-listen-for-cancellation-requests-by-polling.md
+          href: ../../standard/threading/how-to-listen-for-cancellation-requests-by-polling.md
         - name: Register callbacks for cancellation requests
-          href: ../threading/how-to-register-callbacks-for-cancellation-requests.md
+          href: ../../standard/threading/how-to-register-callbacks-for-cancellation-requests.md
         - name: Listen for cancellation requests that have wait handles
-          href: ../threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md
+          href: ../../standard/threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md
         - name: Listen for multiple cancellation requests
-          href: ../threading/how-to-listen-for-multiple-cancellation-requests.md
+          href: ../../standard/threading/how-to-listen-for-multiple-cancellation-requests.md
     - name: Destroy threads
-      href: ../threading/destroying-threads.md
+      href: ../../standard/threading/destroying-threads.md
   - name: Best practices
-    href: ../threading/managed-threading-best-practices.md
+    href: ../../standard/threading/managed-threading-best-practices.md
   - name: Threading objects and features
     items:
     - name: Overview
-      href: ../threading/threading-objects-and-features.md
+      href: ../../standard/threading/threading-objects-and-features.md
     - name: The managed thread pool
-      href: ../threading/the-managed-thread-pool.md
+      href: ../../standard/threading/the-managed-thread-pool.md
     - name: Timers
-      href: ../threading/timers.md
+      href: ../../standard/threading/timers.md
     - name: Overview of synchronization primitives
-      href: ../threading/overview-of-synchronization-primitives.md
+      href: ../../standard/threading/overview-of-synchronization-primitives.md
     - name: EventWaitHandle
-      href: ../threading/eventwaithandle.md
+      href: ../../standard/threading/eventwaithandle.md
     - name: CountdownEvent
-      href: ../threading/countdownevent.md
+      href: ../../standard/threading/countdownevent.md
     - name: Mutexes
-      href: ../threading/mutexes.md
+      href: ../../standard/threading/mutexes.md
     - name: Semaphore and SemaphoreSlim
-      href: ../threading/semaphore-and-semaphoreslim.md
+      href: ../../standard/threading/semaphore-and-semaphoreslim.md
     - name: Barrier
       items:
       - name: Overview
-        href: ../threading/barrier.md
+        href: ../../standard/threading/barrier.mdnative-interop
       - name: Synchronize concurrent operations with a Barrier
-        href: ../threading/how-to-synchronize-concurrent-operations-with-a-barrier.md
+        href: ../../standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md
     - name: SpinLock
       items:
       - name: Overview
         displayName: spinlock
-        href: ../threading/spinlock.md
+        href: ../../standard/threading/spinlock.md
       - name: Use SpinLock for low-level synchronization
-        href: ../threading/how-to-use-spinlock-for-low-level-synchronization.md
+        href: ../../standard/threading/how-to-use-spinlock-for-low-level-synchronization.md
       - name: Enable thread-tracking mode in SpinLock
-        href: ../threading/how-to-enable-thread-tracking-mode-in-spinlock.md
+        href: ../../standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md
     - name: SpinWait
       items:
       - name: Overview
-        href: ../threading/spinwait.md
+        href: ../../standard/threading/spinwait.md
       - name: Use SpinWait to implement a two-phase wait operation
-        href: ../threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md
+        href: ../../standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md
 - name: Native interoperability
   items:
   - name: Overview
-    href: ../native-interop/index.md
+    href: ../../standard/native-interop/index.md
     displayName: Native interop
   - name: P/Invoke
     items:
     - name: Overview
-      href: ../native-interop/pinvoke.md
+      href: ../../standard/native-interop/pinvoke.md
       displayName: P/Invoke
     - name: Cross-platform P/Invoke
-      href: ../native-interop/cross-platform.md
+      href: ../../standard/native-interop/cross-platform.md
     - name: Source generation
-      href: ../native-interop/pinvoke-source-generation.md
+      href: ../../standard/native-interop/pinvoke-source-generation.md
   - name: Type marshalling
     items:
     - name: Overview
-      href: ../native-interop/type-marshalling.md
+      href: ../../standard/native-interop/type-marshalling.md
       displayName: Type marshalling
     - name: Charsets and marshalling
-      href: ../native-interop/charset.md
+      href: ../../standard/native-interop/charset.md
     - name: Disabled marshalling
-      href: ../native-interop/disabled-marshalling.md
+      href: ../../standard/native-interop/disabled-marshalling.md
     - name: Customize structure marshalling
-      href: ../native-interop/customize-struct-marshalling.md
+      href: ../../standard/native-interop/customize-struct-marshalling.md
     - name: Customize parameter marshalling
-      href: ../native-interop/customize-parameter-marshalling.md
+      href: ../../standard/native-interop/customize-parameter-marshalling.md
     - name: Source generation
-      href: ../native-interop/custom-marshalling-source-generation.md
+      href: ../../standard/native-interop/custom-marshalling-source-generation.md
     - name: "Tutorial: Use custom marshallers in source generation"
-      href: ../native-interop/tutorial-custom-marshaller.md
+      href: ../../standard/native-interop/tutorial-custom-marshaller.md
   - name: Interop guidance
-    href: ../native-interop/best-practices.md
+    href: ../../standard/native-interop/best-practices.md
   - name: Expose .NET components to COM
-    href: ../core/native-interop/expose-components-to-com.md
+    href: ../../core/native-interop/expose-components-to-com.md
   - name: Host .NET from native code
-    href: ../core/tutorials/netcore-hosting.md
+    href: ../../core/tutorials/netcore-hosting.md
   - name: COM interop
     items:
     - name: Overview
-      href: ../native-interop/cominterop.md
+      href: ../../standard/native-interop/cominterop.md
       displayName: COM interop
     - name: COM wrappers
       items:
       - name: Overview
-        href: ../native-interop/com-wrappers.md
+        href: ../../standard/native-interop/com-wrappers.md
         displayName: COM wrappers
       - name: Runtime-callable wrapper
-        href: ../native-interop/runtime-callable-wrapper.md
+        href: ../../standard/native-interop/runtime-callable-wrapper.md
       - name: COM-callable wrapper
-        href: ../native-interop/com-callable-wrapper.md
+        href: ../../standard/native-interop/com-callable-wrapper.md
       - name: "Tutorial: Use the ComWrappers API"
-        href: ../native-interop/tutorial-comwrappers.md
+        href: ../../standard/native-interop/tutorial-comwrappers.md
     - name: Qualify .NET types for COM interop
-      href: ../native-interop/qualify-net-types-for-interoperation.md
+      href: ../../standard/native-interop/qualify-net-types-for-interoperation.md
   - name: Apply interop attributes
-    href: ../native-interop/apply-interop-attributes.md
+    href: ../../standard/native-interop/apply-interop-attributes.md
   - name: Exceptions
-    href: ../native-interop/exceptions-interoperability.md
+    href: ../../standard/native-interop/exceptions-interoperability.md

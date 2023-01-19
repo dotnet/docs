@@ -39,19 +39,19 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Get started using the CLI
-            url: ../core/tutorials/with-visual-studio-code.md
+            url: ../../core/tutorials/with-visual-studio-code.md
       - linkListType: reference
         links:
           - text: dotnet build command
             url: ../../core/tools/dotnet-build.md
           - text: dotnet new command
-            url: ../core/tools/dotnet-new.md
+            url: ../../core/tools/dotnet-new.md
           - text: dotnet publish command
-            url: ../core/tools/dotnet-publish.md
+            url: ../../core/tools/dotnet-publish.md
       - linkListType: deploy
         links:
           - text: Publish apps
-            url: ../core/deploying/deploy-with-cli.md
+            url: ../../core/deploying/deploy-with-cli.md
 
   # Card
   - title: SYSLIB diagnostics
@@ -101,7 +101,7 @@ landingContent:
           - text: Metrics
             url: ../../core/diagnostics/metrics.md
           - text: Runtime events
-            url: ../fundamentals/diagnostics/runtime-events.md
+            url: ../../fundamentals/diagnostics/runtime-events.md
 
   # Card
   - title: Code analysis

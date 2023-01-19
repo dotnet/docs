@@ -602,23 +602,23 @@ items:
   - name: Runtime events
     items:
     - name: Overview
-      href: ../fundamentals/diagnostics/runtime-events.md
+      href: ../../fundamentals/diagnostics/runtime-events.md
     - name: Contention events
-      href: ../fundamentals/diagnostics/runtime-contention-events.md
+      href: ../../fundamentals/diagnostics/runtime-contention-events.md
     - name: Exception events
-      href: ../fundamentals/diagnostics/runtime-exception-events.md
+      href: ../../fundamentals/diagnostics/runtime-exception-events.md
     - name: Garbage collection events
-      href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+      href: ../../fundamentals/diagnostics/runtime-garbage-collection-events.md
     - name: Interop events
-      href: ../fundamentals/diagnostics/runtime-interop-events.md
+      href: ../../fundamentals/diagnostics/runtime-interop-events.md
     - name: Loader and binder events
-      href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+      href: ../../fundamentals/diagnostics/runtime-loader-binder-events.md
     - name: Method events
-      href: ../fundamentals/diagnostics/runtime-method-events.md
+      href: ../../fundamentals/diagnostics/runtime-method-events.md
     - name: ThreadPool events
-      href: ../fundamentals/diagnostics/runtime-thread-events.md
+      href: ../../fundamentals/diagnostics/runtime-thread-events.md
     - name: Type-system events
-      href: ../fundamentals/diagnostics/runtime-type-events.md
+      href: ../../fundamentals/diagnostics/runtime-type-events.md
   - name: Collect diagnostics in containers
     href: ../../core/diagnostics/diagnostics-in-containers.md
   - name: .NET CLI global tools

@@ -187,66 +187,6 @@ items:
     href: ../core/whats-new/dotnet-core-2-0.md
   - name: .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
-- name: Execution model
-  items:
-  - name: Common Language Runtime (CLR)
-    href: ../standard/clr.md
-  - name: Managed execution process
-    href: ../standard/managed-execution-process.md
-  - name: Assemblies
-    href: ../standard/assembly/
-  - name: Metadata and self-describing components
-    href: ../standard/metadata-and-self-describing-components.md
-  - name: Dependency loading
-    items:
-    - name: Overview
-      displayName: dependency loading
-      href: ../core/dependency-loading/overview.md
-    - name: Understand AssemblyLoadContext
-      href: ../core/dependency-loading/understanding-assemblyloadcontext.md
-    - name: Dependency loading details
-      items:
-      - name: Default dependency probing
-        href: ../core/dependency-loading/default-probing.md
-      - name: Load managed assemblies
-        href: ../core/dependency-loading/loading-managed.md
-      - name: Load satellite assemblies
-        href: ../core/dependency-loading/loading-resources.md
-      - name: Load unmanaged libraries
-        href: ../core/dependency-loading/loading-unmanaged.md
-      - name: Collect detailed assembly loading information
-        href: ../core/dependency-loading/collect-details.md
-    - name: Tutorials
-      items:
-      - name: Create a .NET application with plugins
-        href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability
-        href: ../standard/assembly/unloadability.md
-  - name: Versioning
-    items:
-    - name: Overview
-      href: ../core/versions/index.md
-    - name: .NET version selection
-      href: ../core/versions/selection.md
-  - name: Configure .NET Runtime
-    items:
-    - name: Settings
-      displayName: runtime configuration, configure runtime, configuration settings
-      href: ../core/runtime-config/index.md
-    - name: Compilation settings
-      href: ../core/runtime-config/compilation.md
-    - name: Debugging and profiling settings
-      href: ../core/runtime-config/debugging-profiling.md
-    - name: Garbage collector settings
-      href: ../core/runtime-config/garbage-collector.md
-    - name: Globalization settings
-      href: ../core/runtime-config/globalization.md
-    - name: Networking settings
-      href: ../core/runtime-config/networking.md
-    - name: Threading settings
-      href: ../core/runtime-config/threading.md
-  - name: Troubleshoot app launch failures
-    href: ../core/runtime-discovery/troubleshoot-app-launch.md
 - name: Fundamental coding components
   items:
   - name: Base types overview
@@ -889,3 +829,63 @@ items:
     href: ../core/extensions/caching.md
   - name: Channels
     href: ../core/extensions/channels.md
+- name: Execution model
+  items:
+  - name: Common Language Runtime (CLR)
+    href: ../standard/clr.md
+  - name: Managed execution process
+    href: ../standard/managed-execution-process.md
+  - name: Assemblies
+    href: ../standard/assembly/
+  - name: Metadata and self-describing components
+    href: ../standard/metadata-and-self-describing-components.md
+  - name: Dependency loading
+    items:
+    - name: Overview
+      displayName: dependency loading
+      href: ../core/dependency-loading/overview.md
+    - name: Understand AssemblyLoadContext
+      href: ../core/dependency-loading/understanding-assemblyloadcontext.md
+    - name: Dependency loading details
+      items:
+      - name: Default dependency probing
+        href: ../core/dependency-loading/default-probing.md
+      - name: Load managed assemblies
+        href: ../core/dependency-loading/loading-managed.md
+      - name: Load satellite assemblies
+        href: ../core/dependency-loading/loading-resources.md
+      - name: Load unmanaged libraries
+        href: ../core/dependency-loading/loading-unmanaged.md
+      - name: Collect detailed assembly loading information
+        href: ../core/dependency-loading/collect-details.md
+    - name: Tutorials
+      items:
+      - name: Create a .NET application with plugins
+        href: ../core/tutorials/creating-app-with-plugin-support.md
+      - name: How to use and debug assembly unloadability
+        href: ../standard/assembly/unloadability.md
+  - name: Versioning
+    items:
+    - name: Overview
+      href: ../core/versions/index.md
+    - name: .NET version selection
+      href: ../core/versions/selection.md
+  - name: Configure .NET Runtime
+    items:
+    - name: Settings
+      displayName: runtime configuration, configure runtime, configuration settings
+      href: ../core/runtime-config/index.md
+    - name: Compilation settings
+      href: ../core/runtime-config/compilation.md
+    - name: Debugging and profiling settings
+      href: ../core/runtime-config/debugging-profiling.md
+    - name: Garbage collector settings
+      href: ../core/runtime-config/garbage-collector.md
+    - name: Globalization settings
+      href: ../core/runtime-config/globalization.md
+    - name: Networking settings
+      href: ../core/runtime-config/networking.md
+    - name: Threading settings
+      href: ../core/runtime-config/threading.md
+  - name: Troubleshoot app launch failures
+    href: ../core/runtime-discovery/troubleshoot-app-launch.md

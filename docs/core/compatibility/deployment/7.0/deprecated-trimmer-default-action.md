@@ -9,7 +9,7 @@ The value of the `TrimmerDefaultAction` property is now ignored by the publish p
 
 ## Previous behavior
 
-Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimmable>` in the library project file were trimmed with the action specified by the `TrimmerDefaultAction`. The default value for that property was `copy` in .NET 6. While apps with trim warnings were more likely to work with this behavior, it still couldn't be guaranteed that trimming would not affect behavior. In addition, this caused apps to be larger than if the entire app was trimmed.
+Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimmable>` in the library project file were trimmed with the action specified by the `TrimmerDefaultAction`. In .NET 6, the default value for that property was `copy`. While apps with trim warnings were more likely to work with this default, run-time behavior could still be affected. In addition, the `copy` action caused apps to be larger than if the entire app was trimmed.
 
 ## New behavior
 

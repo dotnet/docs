@@ -25,16 +25,6 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
           - text: Introduction to .NET
             url: ../core/introduction.md
-      - linkListType: get-started
-        links:
-          - text: Get started with .NET Core
-            url: ../core/get-started.md
-          - text: Get started with ASP.NET Core
-            url: /aspnet/core/
-          - text: .NET on Q&A
-            url: /answers/products/dotnet
-          - text: .NET tech community forums
-            url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
       - linkListType: concept
         links:
           - text: .NET Standard
@@ -79,14 +69,18 @@ landingContent:
             url: ../core/install/windows.md
 
   # Card
-  - title: Get started with .NET Core
+  - title: Get started with .NET
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
-          - text: Port from .NET Framework to .NET Core
-            url: ../core/porting/index.md
-          - text: Upgrade Assistant
-            url: ../core/porting/upgrade-assistant-overview.md
+          - text: Get started with .NET
+            url: ../core/get-started.md
+          - text: Get started with ASP.NET Core
+            url: /aspnet/core/
+          - text: .NET on Q&A
+            url: /answers/products/dotnet
+          - text: .NET tech community forums
+            url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
       - linkListType: video
         links:
           - text: "Tutorial: Hello World in 10 minutes"
@@ -99,12 +93,36 @@ landingContent:
             url: ../core/tutorials/with-visual-studio.md
           - text: Containerize a .NET Core app
             url: ../core/docker/build-container.md
+      - linkListType: concept
+        links:
+          - text: Port from .NET Framework to .NET
+            url: ../core/porting/index.md
       - linkListType: deploy
         links:
           - text: App publishing
             url: ../core/deploying/index.md
           - text: Publish .NET apps with GitHub Actions
             url: ../devops/dotnet-publish-github-action.md
+
+  # Card
+  - title: Serialize data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Serialize and deserialize JSON
+            url: ../standard/serialization/system-text-json/overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Serialize and deserialize JSON using C#
+            url: ../standard/serialization/system-text-json/how-to.md
+          - text: Migrate from Newtonsoft.Json to System.Text.Json
+            url: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
+          - text: Write custom converters for JSON serialization
+            url: ../standard/serialization/system-text-json/converters-how-to.md
+      - linkListType: sample
+        links:
+          - text: Examples of XML serialization
+            url: ../standard/serialization/examples-of-xml-serialization.md
 
   # Card
   - title: Runtime libraries
@@ -141,26 +159,6 @@ landingContent:
             url: ../core/extensions/logger-message-generator.md
           - text: Create a Windows Service using BackgroundService
             url: ../core/extensions/windows-service.md
-
-  # Card
-  - title: Serialize data
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Serialize and deserialize JSON
-            url: ../standard/serialization/system-text-json/overview.md
-      - linkListType: how-to-guide
-        links:
-          - text: Serialize and deserialize JSON using C#
-            url: ../standard/serialization/system-text-json/how-to.md
-          - text: Migrate from Newtonsoft.Json to System.Text.Json
-            url: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
-          - text: Write custom converters for JSON serialization
-            url: ../standard/serialization/system-text-json/converters-how-to.md
-      - linkListType: sample
-        links:
-          - text: Examples of XML serialization
-            url: ../standard/serialization/examples-of-xml-serialization.md
 
   # Card
   - title: Format and convert dates, numbers, and strings

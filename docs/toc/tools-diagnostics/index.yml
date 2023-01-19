@@ -36,10 +36,22 @@ landingContent:
         links:
           - text: .NET CLI overview
             url: ../../core/tools/index.md
+      - linkListType: tutorial
+        links:
+          - text: Get started using the CLI
+            url: ../core/tutorials/with-visual-studio-code.md
       - linkListType: reference
         links:
           - text: dotnet build command
             url: ../../core/tools/dotnet-build.md
+          - text: dotnet new command
+            url: ../core/tools/dotnet-new.md
+          - text: dotnet publish command
+            url: ../core/tools/dotnet-publish.md
+      - linkListType: deploy
+        links:
+          - text: Publish apps
+            url: ../core/deploying/deploy-with-cli.md
 
   # Card
   - title: SYSLIB diagnostics
@@ -82,6 +94,14 @@ landingContent:
         links:
           - text: .NET diagnostics tools
             url: ../../core/diagnostics/index.md
+          - text: Dumps
+            url: ../../core/diagnostics/dumps.md
+          - text: Logging and tracing
+            url: ../../core/diagnostics/logging-tracing.md
+          - text: Metrics
+            url: ../../core/diagnostics/metrics.md
+          - text: Runtime events
+            url: ../fundamentals/diagnostics/runtime-events.md
 
   # Card
   - title: Code analysis
@@ -90,6 +110,14 @@ landingContent:
         links:
           - text: Overview
             url: ../../fundamentals/code-analysis/overview.md
+      - linkListType: reference
+        links:
+          - text: Configuration options
+            url: ../../fundamentals/code-analysis/configuration-options.md
+          - text: Code quality rules
+            url: ../../fundamentals/code-analysis/quality-rules/index.md
+          - text: Code style rules
+            url: ../../fundamentals/code-analysis/style-rules/index.md
 
   # Card
   - title: Package validation

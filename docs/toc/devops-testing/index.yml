@@ -8,3 +8,25 @@ metadata:
   description: Learn about DevOps, GitHub Actions, testing, and deployment in .NET.
   ms.topic: landing-page
   ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: Unit test with .NET
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Unit testing in .NET
+            url: ../../core/testing/index.md
+      - linkListType: tutorial
+        links:
+          - text: Test C# code using dotnet test and xUnit
+            url: ../../core/testing/unit-testing-with-dotnet-test.md
+          - text: Unit test with NUnit
+            url: ../../core/testing/unit-testing-with-nunit.md
+          - text: Unit test with MSTest
+            url: ../../core/testing/unit-testing-with-mstest.md
+      - linkListType: concept
+        links:
+          - text: Best practices
+            url: ../../core/testing/unit-testing-best-practices.md

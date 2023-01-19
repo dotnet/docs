@@ -8,3 +8,17 @@ metadata:
   description: Learn about security and performance features of .NET.
   ms.topic: landing-page
   ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: Manage memory use
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Garbage collection fundamentals
+            url: ../../standard/garbage-collection/fundamentals.md
+          - text: Implement a Dispose method
+            url: ../../standard/garbage-collection/implementing-dispose.md
+          - text: Implement a DisposeAsync method
+            url: ../../standard/garbage-collection/implementing-disposeasync.md

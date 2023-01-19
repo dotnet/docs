@@ -4,7 +4,6 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 04/16/2021
-zone_pivot_groups: dotnet-version
 ---
 
 # Prepare .NET libraries for trimming
@@ -37,9 +36,7 @@ If you want to see trim warnings, but don't want to mark your library as trim-co
 To show all analysis warnings for your library, including warnings about dependencies, you need the trimmer to analyze the implementation of your library and the implementations of dependencies your library uses. When building and publishing a library, the implementations of the dependencies are not available, and the reference assemblies that are available do not have enough information for the trimmer to determine if they are compatible with trimming. Because of this, you'll need to create and publish a self-contained sample application which produces an executable that includes your library and the dependencies it relies on. This executable includes all the information the trimmer requires to warn you about all trim incompatibilities in your library code, as well as the code that your library references from its dependencies.
 
 > [!NOTE]
-> If your library has significantly different behavior or uses different APIs depending on the target framework of the consumer (for example, using `#if NET5_0_OR_GREATER`) which might impact trimming, you will need to create a new sample app for each of the target frameworks you want to support trimming for.
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
+> If your library has significantly different behavior or uses different APIs depending on the target framework of the consumer (for example, using `#if NET7_0`) which might impact trimming, you will need to create a new sample app for each of the target frameworks you want to support trimming for.
 
 To create your sample app, first create a separate console application project with `dotnet new console` and modify the project file to look like the following. No changes to the source code are necessary. You'll need to do the following in your project file:
 
@@ -47,18 +44,11 @@ To create your sample app, first create a separate console application project w
 - Add a reference to your library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />` inside of an `<ItemGroup>` tag.
 - Specify your library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />` in an `<ItemGroup>` tag.
   - This ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root" which means the trimmer will analyze the assembly as if everything will be used, and traverses all possible code paths that originate from that assembly. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
-:::zone-end
-:::zone pivot="dotnet-6-0"
-- Set the TrimmerDefaultAction property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag.
-:::zone-end
-:::zone pivot="dotnet-7-0"
-- The default behavior for the `TrimMode` property is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
-:::zone-end
-:::zone pivot="dotnet-7-0,dotnet-6-0"
+- If your app targets .Net 6, set the TrimmerDefaultAction property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag.
+- If your app targets .Net 7, the default behavior is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
   - This ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that is not part of a "root" can be trimmed if it is unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
-:::zone-end
 
-:::zone pivot="dotnet-6-0"
+##### .Net 6 .csproj
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -81,9 +71,7 @@ To create your sample app, first create a separate console application project w
 </Project>
 ```
 
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
+##### .Net 7 .csproj
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -102,8 +90,6 @@ To create your sample app, first create a separate console application project w
 
 </Project>
 ```
-
-:::zone-end
 
 Once your project file is updated, run `dotnet publish` with the [runtime identifier (RID)](../../rid-catalog.md) you want to target.
 

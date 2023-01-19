@@ -1852,7 +1852,10 @@ items:
       href: ../core/deploying/trimming/prepare-libraries-for-trimming.md
     - name: Trim warnings
       items:
-        - name: IL2001
+        - name: Custom Articles
+          items:
+            - name: New Article
+              href: new-article.md        - name: IL2001
           href: ../core/deploying/trimming/trim-warnings/il2001.md
         - name: IL2002
           href: ../core/deploying/trimming/trim-warnings/il2002.md

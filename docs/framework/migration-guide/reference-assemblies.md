@@ -33,7 +33,7 @@ SDK-style projects include this reference by default. For typical .NET Framework
 
 ## Run restore on the command line
 
-Projects that contain a project reference need to be restored before they can be built.
+Projects that contain a package reference need to be restored before they can be built.
 
 When building with Visual Studio, either in the IDE or on the command line with *MSBuild.exe*, make sure to explicitly restore packages prior to building the project. For projects using _packages.config_, this done with [nuget restore](/nuget/reference/cli-reference/cli-ref-restore). For projects using `<PackageReference>`, this is done on the Developer Command Prompt with the `msbuild /t:restore` command from the project directory.
 

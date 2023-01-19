@@ -7,22 +7,19 @@ items:
     tocHref: /dotnet/
     topicHref: /dotnet/index
     items:
-    - name: .NET API browser
+    - name: API browser
       tocHref: /dotnet/api/
       topicHref: /dotnet/api/index
-    - name: .NET fundamentals
+    - name: Fundamentals
       tocHref: /dotnet/fundamentals/
       topicHref: /dotnet/fundamentals/index
-    - name: .NET fundamentals
+    - name: Fundamentals
       tocHref: /dotnet/standard/
       topicHref: /dotnet/fundamentals/index
       items:
       - name: Assemblies in .NET
         tocHref: /dotnet/standard/assembly
         topicHref: /dotnet/standard/assembly/index
-      - name: Asynchronous programming patterns
-        tocHref: /dotnet/standard/asynchronous-programming-patterns/
-        topicHref: /dotnet/standard/asynchronous-programming-patterns/index
       - name: Collections and data structures
         tocHref: /dotnet/standard/collections/
         topicHref: /dotnet/standard/collections/index
@@ -30,24 +27,12 @@ items:
         - name: Thread-safe collections
           tocHref: /dotnet/standard/collections/thread-safe/
           topicHref: /dotnet/standard/collections/thread-safe/index
-      - name: Microsoft.Data.Sqlite
-        tocHref: /dotnet/standard/data/sqlite/
-        topicHref: /dotnet/standard/data/sqlite/index
-      - name: XML documents and data
-        tocHref: /dotnet/standard/data/xml/
-        topicHref: /dotnet/standard/data/xml/index
       - name: Dates, times, and time zones
         tocHref: /dotnet/standard/datetime/
         topicHref: /dotnet/standard/datetime/index
       - name: Globalization and localization
         tocHref: /dotnet/standard/globalization-localization/
         topicHref: /dotnet/standard/globalization-localization/index
-      - name: LINQ
-        tocHref: /dotnet/standard/linq/
-        topicHref: /dotnet/standard/linq/index
-      - name: Security in .NET
-        tocHref: /dotnet/standard/security/
-        topicHref: /dotnet/standard/security/index
       - name: Serialization
         tocHref: /dotnet/standard/serialization/
         topicHref: /dotnet/standard/serialization/index
@@ -55,16 +40,12 @@ items:
         - name: JSON serialization
           tocHref: /dotnet/standard/serialization/system-text-json/
           topicHref: /dotnet/standard/serialization/system-text-json/overview
-      - name: Managed threading
-        tocHref: /dotnet/standard/threading/
-        topicHref: /dotnet/standard/threading/index
-    - name: .NET fundamentals
+    - name: Fundamentals
       tocHref: /dotnet/core/
       topicHref: /dotnet/fundamentals/index
-      items:
-      - name: Breaking changes
-        tocHref: /dotnet/core/compatibility/
-        topicHref: /dotnet/core/compatibility/breaking-changes
+    - name: Breaking changes
+      tocHref: /dotnet/core/compatibility/
+      topicHref: /dotnet/core/compatibility/breaking-changes
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index
@@ -586,7 +567,7 @@ items:
       - name: Streaming
         tocHref: /dotnet/orleans/streaming
         topicHref: /dotnet/orleans/streaming/index
-    - name: .NET IoT Libraries
+    - name: .NET IoT libraries
       tocHref: /dotnet/iot/
       topicHref: /dotnet/iot/index
     - name: What's new
@@ -629,3 +610,86 @@ items:
       - name: Library guidance
         tocHref: /dotnet/standard/library-guidance/
         topicHref: /dotnet/standard/library-guidance/index
+    - name: Advanced programming
+      tocHref: /dotnet/toc/advanced-programming/
+      topicHref: /dotnet/toc/advanced-programming/index
+      items:
+      - name: Asynchronous programming patterns
+        tocHref: /dotnet/standard/asynchronous-programming-patterns/
+        topicHref: /dotnet/standard/asynchronous-programming-patterns/index
+      - name: Managed threading
+        tocHref: /dotnet/standard/threading/
+        topicHref: /dotnet/standard/threading/index
+      - name: Parallel programming
+        tocHref: /dotnet/standard/parallel-programming/
+        topicHref: /dotnet/standard/parallel-programming/index
+      - name: Native interop
+        tocHref: /dotnet/standard/native-interop/
+        topicHref: /dotnet/standard/native-interop/index
+    - name: Data access
+      tocHref: /dotnet/toc/data-access/
+      topicHref: /dotnet/toc/data-access/index
+      items:
+      - name: LINQ
+        tocHref: /dotnet/standard/linq/
+        topicHref: /dotnet/standard/linq/index
+      - name: Microsoft.Data.Sqlite
+        tocHref: /dotnet/standard/data/sqlite/
+        topicHref: /dotnet/standard/data/sqlite/index
+      - name: XML documents and data
+        tocHref: /dotnet/standard/data/xml/
+        topicHref: /dotnet/standard/data/xml/index
+    - name: DevOps and testing
+      tocHref: /dotnet/toc/devops-testing/
+      topicHref: /dotnet/toc/devops-testing/index
+      items:
+      - name: DevOps
+        tocHref: /dotnet/devops/
+        topicHref: /dotnet/devops/github-actions-overview
+      - name: Testing
+        tocHref: /dotnet/core/testing/
+        topicHref: /dotnet/core/testing/index
+      - name: Deployment models
+        tocHref: /dotnet/core/deploying/
+        topicHref: /dotnet/core/deploying/index
+    - name: Migration guide
+      tocHref: /dotnet/core/porting/
+      topicHref: /dotnet/toc/migration-guide/index
+    - name: Performance and security
+      tocHref: /dotnet/toc/performance-security/
+      topicHref: /dotnet/toc/performance-security/index
+      items:
+      - name: Memory management
+        tocHref: /dotnet/standard/garbage-collection/
+        topicHref: /dotnet/standard/managed-code
+      - name: Security
+        tocHref: /dotnet/standard/security/
+        topicHref: /dotnet/standard/security/index
+    - name: Tools and diagnostics
+      tocHref: /dotnet/toc/tools-diagnostics/
+      topicHref: /dotnet/toc/tools-diagnostics/index
+      items:
+      - name: Tools
+        tocHref: /dotnet/core/tools/
+        topicHref: /dotnet/core/tools/index
+      - name: SYSLIB diagnostics
+        tocHref: /dotnet/fundamentals/syslib-diagnostics/
+        topicHref: /dotnet/fundamentals/syslib-diagnostics/obsoletions-overview
+      - name: Project SDKs
+        tocHref: /dotnet/core/project-sdk/
+        topicHref: /dotnet/core/project-sdk/overview
+      - name: Additional tools
+        tocHref: /dotnet/core/additional-tools/
+        topicHref: /dotnet/core/additional-tools/index
+      - name: Diagnostics
+        tocHref: /dotnet/core/diagnostics/
+        topicHref: /dotnet/core/diagnostics/index
+      - name: Diagnostics
+        tocHref: /dotnet/fundamentals/diagnostics/
+        topicHref: /dotnet/core/diagnostics/index
+      - name: Code analysis
+        tocHref: /dotnet/fundamentals/code-analysis/
+        topicHref: /dotnet/fundamentals/code-analysis/overview
+      - name: Package validation
+        tocHref: /dotnet/fundamentals/package-validation/
+        topicHref: /dotnet/fundamentals/package-validation/overview

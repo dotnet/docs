@@ -1781,7 +1781,11 @@ items:
       href: ../core/dependency-loading/understanding-assemblyloadcontext.md
     - name: Dependency loading details
       items:
-      - name: Default dependency probing
+     - name: Custom Articles
+   items:
+    - name: New Article
+      href: new-file.md
+  - name: Default dependency probing
         href: ../core/dependency-loading/default-probing.md
       - name: Load managed assemblies
         href: ../core/dependency-loading/loading-managed.md

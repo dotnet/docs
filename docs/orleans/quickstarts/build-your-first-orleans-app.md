@@ -67,13 +67,13 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 ## Add Orleans to the project
 
-Orleans is available through a collection of NuGet packages, each of which provides access to various features. For this quickstart, add the [Orleans.Server](https://www.nuget.org/packages/Orleans.Server) NuGet package to the app using the steps below:
+Orleans is available through a collection of NuGet packages, each of which provides access to various features. For this quickstart, add the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package to the app using the steps below:
 
 # [Visual Studio](#tab/visual-studio)
 
 - Right-click on the **OrleansURLShortener** project node in the solution explorer and select **Manage NuGet Packages**.
 - In the package manager window, search for *Orleans*.
-- Choose the **Orleans.Server** package from the search results and then select **Install**.
+- Choose the **Microsoft.Orleans.Server** package from the search results and then select **Install**.
 
 # [Visual Studio Code](#tab/visual-studio-code)
 

@@ -31,7 +31,6 @@ Projects using [`<PackageReference>`](/nuget/consume-packages/package-references
 
 SDK-style projects include this reference by default. For typical .NET Framework projects that were created with Visual Studio, the reference can be added with the NuGet Package Manager UI in Visual Studio. The package contains reference assemblies for many versions of .NET Framework. The version to be actually used is determined by the `TargetFrameworkVersion` or `TargetFramework` (`TargetFrameworks`) property, as already defined in the project file.
 
-
 ## Restore the project
 
 Projects that contain a package reference must be restored before they can be built.

@@ -19,6 +19,16 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+    - name: .NET 8
+      items:
+      - name: Overview
+        href: 8.0.md
+      - name: Windows Forms
+        items:
+        - name: Anchor layout changes
+          href: windows-forms/8.0/anchor-layout.md
+        - name: Top-level forms scale size to DPI
+          href: windows-forms/8.0/forms-scale-size-to-dpi.md
     - name: .NET 7
       items:
       - name: Overview
@@ -1303,6 +1313,12 @@ items:
         href: visualbasic.md
     - name: Windows Forms
       items:
+      - name: .NET 8
+        items:
+        - name: Anchor layout changes
+          href: windows-forms/8.0/anchor-layout.md
+        - name: Top-level forms scale size to DPI
+          href: windows-forms/8.0/forms-scale-size-to-dpi.md
       - name: .NET 7
         items:
         - name: APIs throw ArgumentNullException

@@ -1,7 +1,7 @@
 ---
 title: "Build apps against Microsoft.NETFramework.ReferenceAssemblies"
-description: "Developers can target .NET Framework by referencing the official reference assemblies NuGet package."
-ms.date: 11/25/2022
+description: "Learn how to reference the .NET Framework Reference Assemblies in your project, when you can't install a matching developer pack."
+ms.date: 01/19/2023
 helpviewer_keywords:
   - ".NET Framework, targeting"
 ---

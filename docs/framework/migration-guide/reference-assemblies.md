@@ -31,14 +31,24 @@ Projects using [`<PackageReference>`](/nuget/consume-packages/package-references
 
 SDK-style projects include this reference by default. For typical .NET Framework projects that were created with Visual Studio, the reference can be added with the NuGet Package Manager UI in Visual Studio. The package contains reference assemblies for many versions of .NET Framework. The version to be actually used is determined by the `TargetFrameworkVersion` or `TargetFramework` (`TargetFrameworks`) property, as already defined in the project file.
 
-## Run restore on the command line
 
-Projects that contain a package reference need to be restored before they can be built.
+## Restore the project
 
-When building with Visual Studio, either in the IDE or on the command line with *MSBuild.exe*, make sure to explicitly restore packages prior to building the project. For projects using _packages.config_, this done with [nuget restore](/nuget/reference/cli-reference/cli-ref-restore). For projects using `<PackageReference>`, this is done on the Developer Command Prompt with the `msbuild /t:restore` command from the project directory.
+Projects that contain a package reference must be restored before they can be built.
 
-When building with the .NET SDK, make sure to run the [dotnet restore](../../core/tools/dotnet-restore.md) command from the project directory.
+After adding the **Microsoft.NETFramework.ReferenceAssemblies** NuGet package to your project, you must explicitly run the restore action in one of the following ways:
 
-## References
+- If your project is a non SDK-style project and uses the _packages.config_ file to reference NuGet packages:
 
-- [.NET Framework Targeting Pack Nuget Packages](https://github.com/microsoft/dotnet/tree/main/releases/reference-assemblies)
+  01. Install the [NuGet CLI tool](https://learn.microsoft.com/en-us/nuget/install-nuget-client-tools#nugetexe-cli), making sure _nuget.exe_ is in the PATH variable.
+  01. Open a command prompt.
+  01. Navigate to the directory that contains your project file.
+  01. Run _nuget.exe restore_.
+
+- If your project is a non SDK-style project and uses `<PackageReference>` settings in the project file to reference NuGet packages:
+
+  01. Open **Developer Command Prompt for VS 2022**. The name of this app may be different based on which version of Visual Studio you've installed.
+  01. Navigate to the directory that contains your project file.
+  01. Run _msbuild /t:restore_.
+
+- If your project is an SDK-style project, you don't need to do anything. The NuGet restore action is automatically run when the project is built.

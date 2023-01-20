@@ -39,7 +39,7 @@ After adding the **Microsoft.NETFramework.ReferenceAssemblies** NuGet package to
 
 - If your project is a non SDK-style project and uses the _packages.config_ file to reference NuGet packages:
 
-  01. Install the [NuGet CLI tool](https://learn.microsoft.com/en-us/nuget/install-nuget-client-tools#nugetexe-cli), making sure _nuget.exe_ is in the PATH variable.
+  01. Install the [NuGet CLI tool](/nuget/install-nuget-client-tools#nugetexe-cli), making sure _nuget.exe_ is in the PATH variable.
   01. Open a command prompt.
   01. Navigate to the directory that contains your project file.
   01. Run _nuget.exe restore_.

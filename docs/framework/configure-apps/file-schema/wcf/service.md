@@ -51,7 +51,7 @@ The `service` element contains the settings for a Windows Communication Foundati
   
  The `behaviorConfiguration` element is also optional. It identifies the behavior the service uses. The behavior specified in this attribute must link to a behavior in scope in the same configuration file.  
   
- Each service exposes one or more endpoints, which has its own address and binding. All bindings used within the configuration file must be defined in the scope of the file. Binding are linked to endpoints through the combination of the attributes `name` and `bindingConfiguration`. The `name` attribute describes the section the binding is defined in. The `bindingConfiguration` attribute defines which configuration within the binding section is used. A binding section can define several configurations.  
+ Each service exposes one or more endpoints, which has its own address and binding. All bindings used within the configuration file must be defined in the scope of the file. Bindings are linked to endpoints through the combination of the attributes `name` and `bindingConfiguration`. The `name` attribute describes the section the binding is defined in. The `bindingConfiguration` attribute defines which configuration within the binding section is used. A binding section can define several configurations.  
   
 ## Example  
 

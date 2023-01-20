@@ -2,7 +2,7 @@
 title: Troubleshoot .NET package mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
-ms.date: 10/31/2022
+ms.date: 12/21/2022
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
@@ -36,6 +36,7 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 
 This generally happens when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages, such as:
 
+- Alpine Linux
 - Arch
 - CentOS
 - CentOS Stream

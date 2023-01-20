@@ -3,7 +3,7 @@ title: Install .NET on CentOS
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on CentOS
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on both CentO
 
 | CentOS  | .NET      |
 |---------|-----------|
-| 7       | 7, 6, 3.1 |
+| 7       | 7, 6      |
 
 > [!WARNING]
 > \*CentOS 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET 6 and later versions won't be supported on CentOS Linux 8.

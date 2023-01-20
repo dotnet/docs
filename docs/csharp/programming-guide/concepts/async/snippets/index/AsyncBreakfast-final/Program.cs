@@ -38,6 +38,7 @@ namespace AsyncBreakfast
                 {
                     Console.WriteLine("toast is ready");
                 }
+                await finishedTask;
                 breakfastTasks.Remove(finishedTask);
             }
 

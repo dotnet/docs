@@ -3,12 +3,14 @@ title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/22/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
 
 .NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
+
+If you're using Docker, consider using [official .NET Docker images](../docker/introduction.md#net-images) instead of installing .NET yourself.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -33,13 +35,15 @@ The following table is a list of currently supported .NET releases and the versi
 | Alpine | .NET      |
 |--------|-----------|
 | 3.17   | 7, 6      |
-| 3.16   | 7, 6, 3.1 |
-| 3.15   | 7, 6, 3.1 |
-| 3.14   | 6, 3.1    |
+| 3.16   | 7, 6      |
+| 3.15   | 7, 6      |
+| 3.14   | 6         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 ## Supported architectures
+
+The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
 | Architecture     | .NET 6  | .NET 7  |
 |------------------|---------|---------|
@@ -48,8 +52,8 @@ The following table is a list of currently supported .NET releases and the versi
 | aarch64          | ✔️ 3.16 | ✔️ 3.17 |
 | armv7            | ✔️ 3.16 | ✔️ 3.17 |
 | armhf            | ❌      | ❌      |
-| s390x            | ✔️ 3.17 | ❌      |
-| ppc64le          | ❌      | ❌      |
+| s390x            | ✔️ 3.17 | ✔️ 3.17 |
+| ppc64le          | ❌      | ✔️ edge |
 | riscv64          | ❌      | ❌      |
 
 ## Install preview versions
@@ -62,15 +66,14 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Dependencies
 
-.NET on Alpine Linux requires the following dependencies installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - icu-libs
 - krb5-libs
 - libgcc
 - libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
-- libssl1.1 (Alpine v3.9 or greater)
-- libssl1.0 (Alpine v3.8 or lower)
+- libssl1.1
 - libstdc++
 - zlib
 
@@ -80,10 +83,12 @@ To install the needed requirements, run the following command:
 apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
 ```
 
-To install **libgdiplus**, you may need to specify a repository:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+To install libgdiplus on Alpine 3.16 or newer (older versions don't include the package), run:
 
 ```bash
-apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+apk add libgdiplus
 ```
 
 ## Next steps

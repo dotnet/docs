@@ -213,6 +213,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/http/configurehandler" #configurehandler.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/http/generated" #generated.csproj
     schedule:
       interval: "weekly"
@@ -567,6 +573,48 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/orleans/host/configuration-guide/snippets/best-practices" #best-practices.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/host/configuration-guide/snippets/configuration" #configuration.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/host/configuration-guide/snippets/custom-serialization" #custom.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/quickstarts/snippets/url-shortener/orleansurlshortener" #orleansurlshortener.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.Client" #BroadcastChannel.Client.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.GrainInterfaces" #BroadcastChannel.GrainInterfaces.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.Silo" #BroadcastChannel.Silo.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/orleans/tutorials-and-samples/snippets/custom-grain-storage" #GrainStorage.csproj
     schedule:
       interval: "weekly"
@@ -873,12 +921,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/VS_Snippets_CLR/generatingahash/cs" #generatingahash.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/cs" #decryptxml.csproj
     schedule:
       interval: "weekly"
@@ -1155,19 +1197,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/generatingahash" #generatingahash.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb" #decryptxml.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb" #decryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1198,6 +1228,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb" #verifyxml.vbproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" #cancellationwinforms.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

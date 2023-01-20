@@ -10,37 +10,6 @@ items:
     - name: .NET API browser
       tocHref: /dotnet/api/
       topicHref: /dotnet/api/index
-    - name: .NET application architecture guide
-      tocHref: /dotnet/architecture/
-      topicHref: /dotnet/architecture/index
-      items:
-      - name: Modern ASP.NET web applications e-book
-        tocHref: /dotnet/architecture/modern-web-apps-azure/
-        topicHref: /dotnet/architecture/modern-web-apps-azure/index
-      - name: .NET microservices - Architecture e-book
-        tocHref: /dotnet/architecture/microservices/
-        topicHref: /dotnet/architecture/microservices/index
-      - name: Cloud native
-        tocHref: /dotnet/architecture/cloud-native/
-        topicHref: /dotnet/architecture/cloud-native/index
-      - name: Modernizing .NET apps e-book
-        tocHref: /dotnet/architecture/modernize-with-azure-containers/
-        topicHref: /dotnet/architecture/modernize-with-azure-containers/index
-      - name: .NET microservices - DevOps e-book
-        tocHref: /dotnet/architecture/containerized-lifecycle/
-        topicHref: /dotnet/architecture/containerized-lifecycle/index
-      - name: Serverless apps e-book
-        tocHref: /dotnet/architecture/serverless/
-        topicHref: /dotnet/architecture/serverless/index
-      - name: Blazor for ASP.NET Web Forms developers e-book
-        tocHref: /dotnet/architecture/blazor-for-web-forms-developers/
-        topicHref: /dotnet/architecture/blazor-for-web-forms-developers/index
-      - name: ASP.NET Core gRPC for WCF developers
-        tocHref: /dotnet/architecture/grpc-for-wcf-developers/
-        topicHref: /dotnet/architecture/grpc-for-wcf-developers/index
-      - name: Modernizing desktop apps
-        tocHref: /dotnet/architecture/modernize-desktop/
-        topicHref: /dotnet/architecture/modernize-desktop/index
     - name: .NET fundamentals
       tocHref: /dotnet/fundamentals/
       topicHref: /dotnet/fundamentals/index
@@ -51,9 +20,6 @@ items:
       - name: Assemblies in .NET
         tocHref: /dotnet/standard/assembly
         topicHref: /dotnet/standard/assembly/index
-      - name: Library guidance
-        tocHref: /dotnet/standard/library-guidance/
-        topicHref: /dotnet/standard/library-guidance/index
       - name: Asynchronous programming patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
@@ -98,14 +64,11 @@ items:
       items:
       - name: Breaking changes
         tocHref: /dotnet/core/compatibility/
-        topicHref: /dotnet/core/compatibility/index
+        topicHref: /dotnet/core/compatibility/breaking-changes
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index
       items:
-      - name: Add-ins and extensibility
-        tocHref: /dotnet/framework/add-ins/
-        topicHref: /dotnet/framework/add-ins/index
       - name: Additional APIs
         tocHref: /dotnet/framework/additional-apis/
         topicHref: /dotnet/framework/additional-apis/index
@@ -445,7 +408,7 @@ items:
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/index
         - name: C# 7.1 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/
-          topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/index
+          topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/infer-tuple-names
         - name: C# 7.2 feature specifications
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/index
@@ -629,3 +592,40 @@ items:
     - name: What's new
       tocHref: /dotnet/whats-new/
       topicHref: /dotnet/whats-new/index
+    - name: .NET architecture
+      tocHref: /dotnet/architecture/
+      topicHref: /dotnet/architecture/index
+      items:
+      - name: Modern ASP.NET web applications e-book
+        tocHref: /dotnet/architecture/modern-web-apps-azure/
+        topicHref: /dotnet/architecture/modern-web-apps-azure/index
+      - name: .NET microservices - Architecture e-book
+        tocHref: /dotnet/architecture/microservices/
+        topicHref: /dotnet/architecture/microservices/index
+      - name: Cloud native
+        tocHref: /dotnet/architecture/cloud-native/
+        topicHref: /dotnet/architecture/cloud-native/index
+      - name: Modernizing .NET apps e-book
+        tocHref: /dotnet/architecture/modernize-with-azure-containers/
+        topicHref: /dotnet/architecture/modernize-with-azure-containers/index
+      - name: .NET microservices - DevOps e-book
+        tocHref: /dotnet/architecture/containerized-lifecycle/
+        topicHref: /dotnet/architecture/containerized-lifecycle/index
+      - name: Serverless apps e-book
+        tocHref: /dotnet/architecture/serverless/
+        topicHref: /dotnet/architecture/serverless/index
+      - name: Blazor for ASP.NET Web Forms developers e-book
+        tocHref: /dotnet/architecture/blazor-for-web-forms-developers/
+        topicHref: /dotnet/architecture/blazor-for-web-forms-developers/index
+      - name: ASP.NET Core gRPC for WCF developers
+        tocHref: /dotnet/architecture/grpc-for-wcf-developers/
+        topicHref: /dotnet/architecture/grpc-for-wcf-developers/index
+      - name: Modernizing desktop apps
+        tocHref: /dotnet/architecture/modernize-desktop/
+        topicHref: /dotnet/architecture/modernize-desktop/index
+      - name: Framework design guidelines
+        tocHref: /dotnet/standard/design-guidelines/
+        topicHref: /dotnet/standard/design-guidelines/index
+      - name: Library guidance
+        tocHref: /dotnet/standard/library-guidance/
+        topicHref: /dotnet/standard/library-guidance/index

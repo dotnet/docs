@@ -205,8 +205,10 @@ namespace TourOfCsharp
             get => _items[index];
             set
             {
-                _items[index] = value;
-                OnChanged();
+                if (!object.Equals(_items[index], value)) {
+                    _items[index] = value;
+                    OnChanged();
+                }
             }
         }
 

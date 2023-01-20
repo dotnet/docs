@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 10/18/2022
+ms.date: 01/04/2023
 ms.topic: tutorial
 ---
 
@@ -152,7 +152,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default, it's pushed to the local Docker daemon (`docker://`), but for this release you can specify any _unauthenticated_ registry. For example, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default, it's pushed to the local Docker daemon (`docker://`), but you can also specify a remote registry. For example, consider the following XML example:
 
 ```xml
 <ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>
@@ -169,7 +169,7 @@ The container image name controls the name of the image itself, e.g `dotnet/runt
 <ContainerImageName>my-app</ContainerImageName>
 ```
 
-Image names can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
+Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
 
 ### `ContainerImageTags`
 

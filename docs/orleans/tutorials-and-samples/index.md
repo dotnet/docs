@@ -54,7 +54,7 @@ It's the inspiration for this sample.
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Chirper/screenshot.png" alt-text="Sample code for the Chirper Orleans app.":::
 
 A social network pub/sub system, with short text messages being sent between users.
-Publishers send out short *"Chirp"* messages (not to be confused with *"Tweets"*, for a variety of legal reasons) to any other users that are following them.
+Publishers send out short *"Chirp"* messages (not to be confused with *"Tweets"*, for various legal reasons) to any other users that are following them.
 
 ### Chirper demonstrates
 
@@ -91,7 +91,7 @@ An English-Mandarin dictionary Web application demonstrating deployment to Kuber
 * How to implement leaky-bucket request throttling
 * How to load and query data from a database
 * How to cache results lazily and temporarily
-* How to fan-out requests to many grains and collect the results
+* How to fan out requests to many grains and collect the results
 
 ## [Presence Service](/samples/dotnet/samples/orleans-gaming-presence-service-sample)
 
@@ -157,8 +157,8 @@ Simulates bank accounts, using ACID transactions to transfer random amounts betw
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Blazor/BlazorServer/screenshot.jpeg" alt-text="Blazor Orleans sample app screen capture":::
 
 These two Blazor samples are based on the [Blazor introductory tutorials](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro), adapted for use with Orleans.
-The [Blazor WebAssembly](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorWasm/#readme) sample uses the [Blazor WebAssembly hosting model](/aspnet/core/blazor/hosting-models#blazor-webassembly).
-The [Blazor Server](https://github.com/dotnet/orleans/raw/main/samples/Blazor/BlazorServer/#readme) sample uses the [Blazor Server hosting model](/aspnet/core/blazor/hosting-models#blazor-server).
+The [Blazor WebAssembly](https://github.com/dotnet/samples/tree/main/orleans/Blazor/BlazorWasm) sample uses the [Blazor WebAssembly hosting model](/aspnet/core/blazor/hosting-models#blazor-webassembly).
+The [Blazor Server](https://github.com/dotnet/samples/tree/main/orleans/Blazor/BlazorServer) sample uses the [Blazor Server hosting model](/aspnet/core/blazor/hosting-models#blazor-server).
 They include an interactive counter, a TODO list, and a Weather service.
 
 ### Blazor sample apps demonstrate
@@ -166,21 +166,21 @@ They include an interactive counter, a TODO list, and a Weather service.
 * How to integrate ASP.NET Core Blazor Server with Orleans
 * How to integrate ASP.NET Core Blazor WebAssembly (WASM) with Orleans
 
-## [Stocks](/samples/dotnet/samples/orleans-streaming-samples)
+## [Stocks](/samples/dotnet/samples/orleans-stocks-sample-app)
 
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/Stocks/screenshot.png" alt-text="Output from the running Stocks client sample Orleans app.":::
 
-A stock price application that fetches prices from a remote service using an HTTP call and caches prices temporarily in a grain. A [BackgroundService](../../core/extensions/workers.md) periodically polls for updated stock prices from various `StockGrain` grains which correspond to a set of stock symbols.
+A stock price application that fetches prices from a remote service using an HTTP call and caches prices temporarily in a grain. A [BackgroundService](../../core/extensions/workers.md) periodically polls for updated stock prices from various `StockGrain` grains that correspond to a set of stock symbols.
 
 ### Stocks sample app demonstrates
 
 * How to use Orleans from within a [BackgroundService](../../core/extensions/workers.md).
-* How to use timers within a grain
+* How to use timers within a grain.
 * How to make external service calls using .NET's `HttpClient` and cache the results within a grain.
 
 ## [Transport Layer Security](/samples/dotnet/samples/orleans-transport-layer-security-tls)
 
-:::image type="content" source="https://github.com/dotnet/samples/blob/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
+:::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/TransportLayerSecurity/screenshot.png" alt-text="Output from the running TLS sample Orleans app.":::
 
 A *Hello, World!* application configured to use mutual [*Transport Layer Security*](https://en.wikipedia.org/wiki/Transport_Layer_Security) to secure network communication between every server.
 
@@ -188,7 +188,7 @@ A *Hello, World!* application configured to use mutual [*Transport Layer Securit
 
 * How to configure mutual-TLS (mTLS) authentication for Orleans
 
-## [Visual Basic Hello World](/samples/dotnet/samples/orleans-vb-samplee)
+## [Visual Basic Hello World](/samples/dotnet/samples/orleans-vb-sample/)
 
 A *Hello, World!* application using Visual Basic.
 
@@ -211,16 +211,16 @@ An application using Orleans Streams with [Azure Event Hubs](https://azure.micro
 ### Pub/Sub Streams demonstrates
 
 * How to use [Orleans Streams](https://dotnet.github.io/orleans/docs/streaming/index.html)
-* How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding id
+* How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding ID
 * How to configure Orleans Streams for use with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 
 ## [Streaming: Custom Data Adapter](/samples/dotnet/samples/orleans-streaming-samples)
 
-An application using Orleans Streams with a non-Orleans publisher pushing to a stream which a grain consumes via a *custom data adapter* which tells Orleans how to interpret stream messages.
+An application using Orleans Streams with a non-Orleans publisher pushing to a stream that a grain consumes via a *custom data adapter* that tells Orleans how to interpret stream messages.
 
 ### Custom Data Adapter demonstrates
 
-* How to use i[Orleans Streams](../streaming/index.md)
-* How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding id
+* How to use [Orleans Streams](../streaming/index.md)
+* How to use the `[ImplicitStreamSubscription(namespace)]` attribute to implicitly subscribe a grain to the stream with the corresponding ID
 * How to configure Orleans Streams for use with [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 * How to consume stream messages published by non-Orleans publishers by providing a custom `EventHubDataAdapter` implementation (a custom data adapter)

@@ -1,4 +1,4 @@
-This article categorizes each breaking change as *binary incompatible*, *source incompatible*, or a *behavioral change*:
+This article categorizes each breaking change as *binary incompatible* or *source incompatible*, or as a *behavioral change*:
 
 - **Binary incompatible** - When run against the new runtime or component, existing binaries may encounter a breaking change in behavior, such as failure to load or execute, and if so, require recompilation.
 

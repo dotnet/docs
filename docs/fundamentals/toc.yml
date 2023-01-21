@@ -311,11 +311,11 @@ items:
     - name: Memory and span-related types
       items:
       - name: Overview
-        href: ../../standard/memory-and-spans/index.md
+        href: ../standard/memory-and-spans/index.md
       - name: Memory<T> and Span<T> usage guidelines
-        href: ../../standard/memory-and-spans/memory-t-usage-guidelines.md
+        href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
     - name: SIMD-enabled types
-      href: ../../standard/simd.md
+      href: ../standard/simd.md
 - name: Runtime libraries
   items:
   - name: Overview

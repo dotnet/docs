@@ -626,6 +626,9 @@ items:
               - name: Native interop
                 tocHref: /dotnet/standard/native-interop/
                 topicHref: /dotnet/standard/native-interop/index
+              - name: Memory management
+                tocHref: /dotnet/standard/garbage-collection/
+                topicHref: /dotnet/standard/managed-code
           - name: Data access
             tocHref: /dotnet/toc/data-access/
             topicHref: /dotnet/toc/data-access/index
@@ -655,13 +658,10 @@ items:
           - name: Migration guide
             tocHref: /dotnet/core/porting/
             topicHref: /dotnet/toc/migration-guide/index
-          - name: Performance and security
+          - name: Security
             tocHref: /dotnet/toc/security/
             topicHref: /dotnet/toc/security/index
             items:
-              - name: Memory management
-                tocHref: /dotnet/standard/garbage-collection/
-                topicHref: /dotnet/standard/managed-code
               - name: Security
                 tocHref: /dotnet/standard/security/
                 topicHref: /dotnet/standard/security/index

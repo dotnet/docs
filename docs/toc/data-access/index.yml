@@ -60,3 +60,11 @@ landingContent:
         links:
           - text: Entity Framework Core
             url: /ef/core/
+
+  # Card
+  - title: Azure Storage
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Azure Storage client libraries for .NET
+            url: /dotnet/api/overview/azure/storage/

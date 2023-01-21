@@ -346,3 +346,50 @@ items:
     href: ../../standard/native-interop/apply-interop-attributes.md
   - name: Exceptions
     href: ../../standard/native-interop/exceptions-interoperability.md
+- name: Memory management
+  items:
+  - name: What is "managed code"?
+    href: ../../standard/managed-code.md
+  - name: Automatic memory management
+    href: ../../standard/automatic-memory-management.md
+  - name: Clean up unmanaged resources
+    items:
+    - name: Overview
+      href: ../../standard/garbage-collection/unmanaged.md
+      displayName: unmanaged resources, memory management
+    - name: Implement a Dispose method
+      href: ../../standard/garbage-collection/implementing-dispose.md
+      displayName: "using, Dispose, dispose pattern, IDisposable"
+    - name: Implement a DisposeAsync method
+      href: ../../standard/garbage-collection/implementing-disposeasync.md
+      displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
+    - name: Use objects that implement IDisposable
+      href: ../../standard/garbage-collection/using-objects.md
+  - name: Garbage collection
+    items:
+    - name: Overview
+      href: ../../standard/garbage-collection/index.md
+      displayName: garbage collection
+    - name: Fundamentals
+      href: ../../standard/garbage-collection/fundamentals.md
+    - name: Workstation and server GC
+      href: ../../standard/garbage-collection/workstation-server-gc.md
+    - name: Background GC
+      href: ../../standard/garbage-collection/background-gc.md
+    - name: The large object heap
+      href: ../../standard/garbage-collection/large-object-heap.md
+    - name: Garbage collection and performance
+      href: ../../standard/garbage-collection/performance.md
+    - name: Induced collections
+      href: ../../standard/garbage-collection/induced.md
+    - name: Latency modes
+      href: ../../standard/garbage-collection/latency.md
+    - name: Optimization for shared web hosting
+      href: ../../standard/garbage-collection/optimization-for-shared-web-hosting.md
+    - name: Garbage collection notifications
+      href: ../../standard/garbage-collection/notifications.md
+    - name: Application domain resource monitoring
+      href: ../../standard/garbage-collection/app-domain-resource-monitoring.md
+    - name: Weak references
+      href: ../../standard/garbage-collection/weak-references.md
+

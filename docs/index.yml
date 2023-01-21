@@ -94,9 +94,6 @@ conceptualContent:
         - url: /aspnet/core/
           itemType: overview
           text: ASP.NET Core
-        - url: /ef/core/
-          itemType: overview
-          text: Entity Framework Core
         - url: fundamentals/implementations.md
           itemType: concept
           text: .NET implementations
@@ -136,7 +133,34 @@ conceptualContent:
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
           itemType: tutorial
           text: Create .NET desktop apps for Windows
-          
+    # Card
+    - title: .NET security
+      links:
+        - url: standard/security/index.md
+          itemType: overview
+          text: Security documentation
+    # Card
+    - title: Data access in .NET
+      links:
+        - url: linq/index.md
+          itemType: overview
+          text: LINQ overview
+        - url: /ef/core/
+          itemType: overview
+          text: Entity Framework Core
+        - url: /dotnet/api/overview/azure/storage/
+          itemType: overview
+          text: Azure Storage
+        - url: standard/data/xml/index.md
+          itemType: overview
+          text: XML data
+    # Card
+    - title: Asynchronous programming
+      links:
+        - url: standard/asynchronous-programming-patterns/index.md
+          itemType: overview
+          text: Async programming patterns overview
+
 # tools section (optional)
 ## Languages: C#, F#, and Visual Basic
 tools:

@@ -506,6 +506,8 @@ items:
         href: ../../standard/data/xml/schema-validation-using-xpathnavigator.md
     - name: Process XML Data Using LINQ to XML
       href: ../../standard/data/xml/process-xml-data-using-linq-to-xml.md
+    - name: XML serialization
+      href: ../../standard/serialization/xml-and-soap-serialization.md?toc=/dotnet/toc/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: XSLT Transformations
     href: ../../standard/data/xml/xslt-transformations.md
     items:
@@ -663,3 +665,7 @@ items:
         href: ../../standard/data/sqlite/xamarin.md
 - name: Entity Framework
   href: /ef/core/?toc=/dotnet/toc/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
+- name: Azure Storage
+  href: /dotnet/api/overview/azure/storage/?toc=/dotnet/toc/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
+- name: Azure Cosmos DB .NET SDK
+  href: /azure/cosmos-db/nosql/sdk-dotnet-v3/?toc=/dotnet/toc/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json

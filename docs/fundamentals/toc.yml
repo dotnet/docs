@@ -306,6 +306,16 @@ items:
       href: ../standard/attributes/writing-custom-attributes.md
     - name: Retrieve information stored in attributes
       href: ../standard/attributes/retrieving-information-stored-in-attributes.md
+  - name: Performance-related types
+    items:
+    - name: Memory and span-related types
+      items:
+      - name: Overview
+        href: ../../standard/memory-and-spans/index.md
+      - name: Memory<T> and Span<T> usage guidelines
+        href: ../../standard/memory-and-spans/memory-t-usage-guidelines.md
+    - name: SIMD-enabled types
+      href: ../../standard/simd.md
 - name: Runtime libraries
   items:
   - name: Overview

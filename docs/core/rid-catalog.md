@@ -90,7 +90,6 @@ Only common values are listed. For the latest and complete version, see the [run
 - Windows, not version-specific
   - `win-x64`
   - `win-x86`
-  - `win-arm`
   - `win-arm64`
 - Windows 7 / Windows Server 2008 R2
   - `win7-x64`
@@ -98,11 +97,9 @@ Only common values are listed. For the latest and complete version, see the [run
 - Windows 8.1 / Windows Server 2012 R2
   - `win81-x64`
   - `win81-x86`
-  - `win81-arm`
 - Windows 11 / Windows Server 2022 / Windows 10 / Windows Server 2016
   - `win10-x64`
   - `win10-x86`
-  - `win10-arm`
   - `win10-arm64`
 
 There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).

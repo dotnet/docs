@@ -48,7 +48,8 @@ End Sub
 ```
 
 ```csharp
-private void SerializeDataSet(string filename){
+private void SerializeDataSet(string filename)
+{
     XmlSerializer ser = new XmlSerializer(typeof(DataSet));
 
     // Creates a DataSet; adds a table, column, and ten rows.
@@ -58,11 +59,13 @@ private void SerializeDataSet(string filename){
     t.Columns.Add(c);
     ds.Tables.Add(t);
     DataRow r;
-    for(int i = 0; i<10;i++){
+
+    for (int i = 0; i < 10; i++) {
         r = t.NewRow();
         r[0] = "Thing " + i;
         t.Rows.Add(r);
     }
+
     TextWriter writer = new StreamWriter(filename);
     ser.Serialize(writer, ds);
     writer.Close();
@@ -97,7 +100,8 @@ End Sub
 ```
 
 ```csharp
-private void SerializeElement(string filename){
+private void SerializeElement(string filename)
+{
     XmlSerializer ser = new XmlSerializer(typeof(XmlElement));
     XmlElement myElement=
     new XmlDocument().CreateElement("MyElement", "ns");
@@ -107,7 +111,8 @@ private void SerializeElement(string filename){
     writer.Close();
 }
 
-private void SerializeNode(string filename){
+private void SerializeNode(string filename)
+{
     XmlSerializer ser = new XmlSerializer(typeof(XmlNode));
     XmlNode myNode= new XmlDocument().
     CreateNode(XmlNodeType.Element, "MyNode", "ns");
@@ -137,7 +142,8 @@ public class PurchaseOrder
 {
     public Address MyAddress;
 }
-public class Address
+
+public record Address
 {
     public string FirstName;
 }
@@ -301,13 +307,16 @@ using System.Collections;
 using System.IO;
 using System.Xml.Serialization;
 
-public class Test {
-    static void Main(){
+public class Test
+{
+    static void Main()
+    {
         Test t = new Test();
         t.SerializeCollection("coll.xml");
     }
 
-    private void SerializeCollection(string filename){
+    private void SerializeCollection(string filename)
+    {
         Employees Emps = new Employees();
         // Note that only the collection is serialized -- not the
         // CollectionName or any other public property of the class.
@@ -319,40 +328,42 @@ public class Test {
         x.Serialize(writer, Emps);
     }
 }
-public class Employees:ICollection {
+
+public class Employees : ICollection
+{
     public string CollectionName;
     private ArrayList empArray = new ArrayList();
 
-    public Employee this[int index]{
-        get{return (Employee) empArray[index];}
-    }
+    public Employee this[int index] => (Employee) empArray[index];
 
-    public void CopyTo(Array a, int index){
+    public void CopyTo(Array a, int index)
+    {
         empArray.CopyTo(a, index);
     }
-    public int Count{
-        get{return empArray.Count;}
-    }
-    public object SyncRoot{
-        get{return this;}
-    }
-    public bool IsSynchronized{
-        get{return false;}
-    }
-    public IEnumerator GetEnumerator(){
-        return empArray.GetEnumerator();
-    }
+    
+    public int Count => empArray.Count;
+    
+    public object SyncRoot => this;
+    
+    public bool IsSynchronized => false;
+    
+    public IEnumerator GetEnumerator() => empArray.GetEnumerator();
 
-    public void Add(Employee newEmployee){
+    public void Add(Employee newEmployee)
+    {
         empArray.Add(newEmployee);
     }
 }
 
-public class Employee {
+public class Employee
+{
     public string EmpName;
     public string EmpID;
-    public Employee(){}
-    public Employee(string empName, string empID){
+    
+    public Employee() {}
+    
+    public Employee(string empName, string empID)
+    {
         EmpName = empName;
         EmpID = empID;
     }

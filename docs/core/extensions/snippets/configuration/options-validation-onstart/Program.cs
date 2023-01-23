@@ -6,17 +6,29 @@ using Microsoft.Extensions.Options;
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddMyLibraryService("LibraryOptions");
+        services.AddMyLibraryService("Support");
     })
     .Build();
 
-LibraryOptions options =
-    host.Services
-        .GetRequiredService<IOptions<LibraryOptions>>()
-        .Value;
+IOptionsMonitor<SupportOptions> options = host.Services
+        .GetRequiredService<IOptionsMonitor<SupportOptions>>();
 
-Console.WriteLine($"Support URL: {options.SupportUrl}");
-Console.WriteLine($"Support Email: {options.SupportEmail}");
-Console.WriteLine($"Support Phone: {options.SupportPhoneNumber}");
+WriteSupportOptions(options.CurrentValue);
 
-await host.RunAsync();
+using (options.OnChange(
+    listener: static (SupportOptions changedSupportOptions, string? _) =>
+        WriteSupportOptions(changedSupportOptions)))
+{
+    // While this is running, update the appsettings.json file in the Debug folder.
+    await host.RunAsync();
+}
+
+static void WriteSupportOptions(SupportOptions support)
+{
+    Console.WriteLine();
+    Console.WriteLine("Support options:");
+    Console.WriteLine("  URL: {0}", support.Url);
+    Console.WriteLine("  Email: {0}", support.Email);
+    Console.WriteLine("  Phone number: {0}", support.PhoneNumber);
+    Console.WriteLine();
+}

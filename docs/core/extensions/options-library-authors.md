@@ -74,6 +74,32 @@ As the library author, specifying default values is up to you.
 >         (options, configuration) =>
 >             configuration.GetSection("LibraryOptions").Bind(options));
 > ```
+>
+> Instead, you should use the <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> extension method. This extension method binds the configuration to the options instance, and also registers a change token source for the configuration section. This allows consumers to use the [IOptionsMonitor](options.md#ioptionsmonitor) interface.
+
+## Configuration section path parameter
+
+Consumers of your library may want to specify the configuration section path to bind your underlying `TOptions` type. In this scenario, you define a `string` parameter in your extension method.
+
+:::code source="snippets/configuration/options-validation-onstart/ServiceCollectionExtensions.cs" highlight="9":::
+
+In the preceding code, the `AddMyLibraryService`:
+
+- Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
+- Defines a `string` parameter `configSectionPath`
+- Calls:
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> with the generic type parameter of `SupportOptions`
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> with the given `configSectionPath` parameter
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.ValidateDataAnnotations%2A> to enable data annotation validation
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart%2A> to enforce validation on start rather than in runtime
+
+In this example, the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package is used to enable data annotation validation. The `SupportOptions` class is defined as follows:
+
+:::code source="snippets/configuration/options-validation-onstart/SupportOptions.cs":::
+
+Imagine that the following JSON _appsettings.json_ file is used:
+
+:::code source="snippets/configuration/options-validation-onstart/appsettings.json":::
 
 ## `Action<TOptions>` parameter
 

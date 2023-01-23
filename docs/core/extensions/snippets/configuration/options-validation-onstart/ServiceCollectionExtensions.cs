@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace ExampleLibrary.Extensions.DependencyInjection;
 
@@ -7,14 +6,10 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddMyLibraryService(
       this IServiceCollection services,
-      string configurationSectionName)
+      string configSectionPath)
     {
-        services.AddOptions<LibraryOptions>()
-            .BindConfiguration(configurationSectionName)
-            .Configure(options =>
-            {
-                // Override values here if desired.
-            })
+        services.AddOptions<SupportOptions>()
+            .BindConfiguration(configSectionPath)
             .ValidateDataAnnotations()
             .ValidateOnStart();
 

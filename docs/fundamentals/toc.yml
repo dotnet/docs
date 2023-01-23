@@ -294,7 +294,60 @@ items:
   - name: Numeric types
     href: ../standard/numerics.md
   - name: Dates, times, and time zones
-    href: ../standard/datetime/
+    items:
+    - name: Overview
+      displayName:  dates,times,time zones
+      href: index.md
+    - name: Choose which date and time type to use
+      href: choosing-between-datetime.md
+    - name: Work with calendars
+      href: working-with-calendars.md
+    - name: Use the DateOnly and TimeOnly types
+      href: how-to-use-dateonly-timeonly.md
+    - name: Perform arithmetic operations
+      href: performing-arithmetic-operations.md
+    - name: "DateTime and DateTimeOffset support in System.Text.Json"
+      href: system-text-json-support.md
+    - name: Time zones
+      items:
+      - name: Overview
+        href: time-zone-overview.md
+      - name: Use time zones in date and time arithmetic
+        href: use-time-zones-in-arithmetic.md
+      - name: Convert between DateTime and DateTimeOffset
+        href: converting-between-datetime-and-offset.md
+      - name: Convert times between time zones
+        href: converting-between-time-zones.md
+      - name: "How to: Resolve ambiguous times"
+        href: resolve-ambiguous-times.md
+      - name: "How to: Let users resolve ambiguous times"
+        href: let-users-resolve-ambiguous-times.md
+      - name: Instantiate a DateTimeOffset object
+        items:
+        - name: Overview
+          href: instantiating-a-datetimeoffset-object.md
+        - name: Create time zones without adjustment rules
+          href: create-time-zones-without-adjustment-rules.md
+        - name: Create time zones with adjustment rules
+          href: create-time-zones-with-adjustment-rules.md
+      - name: Time zones defined by the OS
+        items:
+        - name: Overview
+          href: finding-the-time-zones-on-local-system.md
+        - name: Enumerate time zones present on a computer
+          href: enumerate-time-zones.md
+        - name: Access predefined UTC and local time zone objects
+          href: access-utc-and-local.md
+        - name: Instantiate a TimeZoneInfo object
+          href: instantiate-time-zone-info.md
+      - name: Save and restore time zones
+        items:
+        - name: Overview
+          href: saving-and-restoring-time-zones.md
+        - name: Save time zones to an embedded resource
+          href: save-time-zones-to-an-embedded-resource.md
+        - name: Restore time zones from an embedded resource
+          href: restore-time-zones-from-an-embedded-resource.md
   - name: Attributes
     items:
     - name: Overview

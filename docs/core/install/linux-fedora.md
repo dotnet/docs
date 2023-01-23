@@ -99,7 +99,7 @@ For more information on installing .NET without a package manager, see one of th
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-### Errors related to missing `fxr`, `libhostfxr.so`, `FrameworkList.xml` or `/usr/share/dotnet`
+### Errors related to missing `fxr`, `libhostfxr.so`, `FrameworkList.xml`, or `/usr/share/dotnet`
 
 For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
 

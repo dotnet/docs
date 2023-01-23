@@ -61,7 +61,7 @@ class HelloGrain : Grain, IHello
     {
         _subsManager =
             new ObserverManager<IChat>(
-                TimeSpan.FromMinutes(5), logger, "subs");
+                TimeSpan.FromMinutes(5), logger);
     }
 
     // Clients call this to subscribe.

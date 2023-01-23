@@ -26,6 +26,18 @@ landingContent:
             url: ../../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md
 
   # Card
+  - title: Threading
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../standard/threading/managed-threading-basics.md
+      - linkListType: concept
+        links:
+          - text: Managed thread pool
+            url: ../../standard/threading/the-managed-thread-pool.md
+
+  # Card
   - title: Parallel programming
     linkLists:
       - linkListType: overview
@@ -46,18 +58,6 @@ landingContent:
             url: ../../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
           - text: Return a value from a task
             url: ../../standard/parallel-programming/how-to-return-a-value-from-a-task.md
-
-  # Card
-  - title: Threading
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: ../../standard/threading/managed-threading-basics.md
-      - linkListType: concept
-        links:
-          - text: Managed thread pool
-            url: ../../standard/threading/the-managed-thread-pool.md
 
   # Card
   - title: Native interoperability

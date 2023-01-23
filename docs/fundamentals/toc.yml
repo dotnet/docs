@@ -241,7 +241,27 @@ items:
     - name: Hashtable and Dictionary types
       href: ../standard/collections/hashtable-and-dictionary-collection-types.md
     - name: Thread-safe collections
-      href: ../standard/collections/thread-safe/
+      items:
+      - name: Overview
+        displayName: thread-safe collections
+        href: index.md
+        items:
+        - name: BlockingCollection overview
+          href: blockingcollection-overview.md
+        - name: When to use a thread-safe collection
+          href: when-to-use-a-thread-safe-collection.md
+        - name: Add and take items from a BlockingCollection
+          href: how-to-add-and-take-items.md
+        - name: Use ForEach to remove items in a BlockingCollection
+          href: how-to-use-foreach-to-remove.md
+        - name: Add and remove items from a ConcurrentDictionary
+          href: how-to-add-and-remove-items.md
+        - name: Add bounding and blocking functionality
+          href: how-to-add-bounding-and-blocking.md
+        - name: Use arrays of blocking collections in a pipeline
+          href: how-to-use-arrays-of-blockingcollections.md
+        - name: Create an object pool using a ConcurrentBag
+          href: how-to-create-an-object-pool.md
   - name: Delegates and lambdas
     href: ../standard/delegates-lambdas.md
   - name: Events
@@ -297,57 +317,57 @@ items:
     items:
     - name: Overview
       displayName:  dates,times,time zones
-      href: index.md
+      href: ../standard/datetime/index.md
     - name: Choose which date and time type to use
-      href: choosing-between-datetime.md
+      href: ../standard/datetime/choosing-between-datetime.md
     - name: Work with calendars
-      href: working-with-calendars.md
+      href: ../standard/datetime/working-with-calendars.md
     - name: Use the DateOnly and TimeOnly types
-      href: how-to-use-dateonly-timeonly.md
+      href: ../standard/datetime/how-to-use-dateonly-timeonly.md
     - name: Perform arithmetic operations
-      href: performing-arithmetic-operations.md
+      href: ../standard/datetime/performing-arithmetic-operations.md
     - name: "DateTime and DateTimeOffset support in System.Text.Json"
-      href: system-text-json-support.md
+      href: ../standard/datetime/system-text-json-support.md
     - name: Time zones
       items:
       - name: Overview
-        href: time-zone-overview.md
+        href: ../standard/datetime/time-zone-overview.md
       - name: Use time zones in date and time arithmetic
-        href: use-time-zones-in-arithmetic.md
+        href: ../standard/datetime/use-time-zones-in-arithmetic.md
       - name: Convert between DateTime and DateTimeOffset
-        href: converting-between-datetime-and-offset.md
+        href: ../standard/datetime/converting-between-datetime-and-offset.md
       - name: Convert times between time zones
-        href: converting-between-time-zones.md
+        href: ../standard/datetime/converting-between-time-zones.md
       - name: "How to: Resolve ambiguous times"
-        href: resolve-ambiguous-times.md
+        href: ../standard/datetime/resolve-ambiguous-times.md
       - name: "How to: Let users resolve ambiguous times"
-        href: let-users-resolve-ambiguous-times.md
+        href: ../standard/datetime/let-users-resolve-ambiguous-times.md
       - name: Instantiate a DateTimeOffset object
         items:
         - name: Overview
-          href: instantiating-a-datetimeoffset-object.md
+          href: ../standard/datetime/instantiating-a-datetimeoffset-object.md
         - name: Create time zones without adjustment rules
-          href: create-time-zones-without-adjustment-rules.md
+          href: ../standard/datetime/create-time-zones-without-adjustment-rules.md
         - name: Create time zones with adjustment rules
-          href: create-time-zones-with-adjustment-rules.md
+          href: ../standard/datetime/create-time-zones-with-adjustment-rules.md
       - name: Time zones defined by the OS
         items:
         - name: Overview
-          href: finding-the-time-zones-on-local-system.md
+          href: ../standard/datetime/finding-the-time-zones-on-local-system.md
         - name: Enumerate time zones present on a computer
-          href: enumerate-time-zones.md
+          href: ../standard/datetime/enumerate-time-zones.md
         - name: Access predefined UTC and local time zone objects
-          href: access-utc-and-local.md
+          href: ../standard/datetime/access-utc-and-local.md
         - name: Instantiate a TimeZoneInfo object
-          href: instantiate-time-zone-info.md
+          href: ../standard/datetime/instantiate-time-zone-info.md
       - name: Save and restore time zones
         items:
         - name: Overview
-          href: saving-and-restoring-time-zones.md
+          href: ../standard/datetime/saving-and-restoring-time-zones.md
         - name: Save time zones to an embedded resource
-          href: save-time-zones-to-an-embedded-resource.md
+          href: ../standard/datetime/save-time-zones-to-an-embedded-resource.md
         - name: Restore time zones from an embedded resource
-          href: restore-time-zones-from-an-embedded-resource.md
+          href: ../standard/datetime/restore-time-zones-from-an-embedded-resource.md
   - name: Attributes
     items:
     - name: Overview
@@ -899,7 +919,77 @@ items:
   - name: Managed execution process
     href: ../standard/managed-execution-process.md
   - name: Assemblies
-    href: ../standard/assembly/
+    items:
+      - name: Overview
+        displayName: assembly,assemblies
+        href: ../standard/assembly/index.md
+      - name: Assembly contents
+        href: ../standard/assembly/contents.md
+      - name: Manifest
+        href: ../standard/assembly/manifest.md
+      - name: Security considerations
+        href: ../standard/assembly/security-considerations.md
+      - name: Versioning
+        href: ../standard/assembly/versioning.md
+      - name: Side-by-side execution
+        href: ../standard/assembly/side-by-side-execution.md
+      - name: Assembly file format
+        href: ../standard/assembly/file-format.md
+      - name: Unloadability in .NET Core
+        href: ../standard/assembly/unloadability.md
+      - name: Learn about reference assemblies
+        href: ../standard/assembly/reference-assemblies.md
+      - name: Resolve assembly loads
+        href: ../standard/assembly/resolve-loads.md
+      - name: Create assemblies
+        href: ../standard/assembly/create.md
+      - name: Assembly names
+        href: ../standard/assembly/names.md
+      - name: Find an assembly's fully qualified name
+        href: ../standard/assembly/find-fully-qualified-name.md
+      - name: Assembly location
+        href: ../standard/assembly/location.md
+      - name: Set assembly attributes
+        href: ../standard/assembly/set-attributes.md
+      - name: Strong-named assemblies
+        items:
+        - name: Overview
+          href: ../standard/assembly/strong-named.md
+        - name: Create and use strong-named assemblies
+          href: ../standard/assembly/create-use-strong-named.md
+        - name: Create a public-private key pair
+          href: ../standard/assembly/create-public-private-key-pair.md
+        - name: Sign an assembly with a strong name
+          href: ../standard/assembly/sign-strong-name.md
+        - name: Enhanced strong naming
+          href: ../standard/assembly/enhanced-strong-naming.md
+        - name: Reference a strong-named assembly
+          href: ../standard/assembly/reference-strong-named.md
+        - name: Disable strong-name bypass
+          href: ../standard/assembly/disable-strong-name-bypass-feature.md
+      - name: Delay-sign an assembly
+        href: ../standard/assembly/delay-sign.md
+      - name: View assembly contents
+        href: ../standard/assembly/view-contents.md
+      - name: Type forwarding in the CLR
+        href: ../standard/assembly/type-forwarding.md
+      - name: Friend assemblies
+        items:
+        - name: Overview
+          displayName: friend assembly,friend assemblies
+          href: ../standard/assembly/friend.md
+        - name: Create unsigned friend assemblies
+          href: ../standard/assembly/create-unsigned-friend.md
+        - name: Create signed friend assemblies
+          href: ../standard/assembly/create-signed-friend.md
+      - name: Determine if a file is an assembly
+        href: ../standard/assembly/identify.md
+      - name: Load and unload assemblies
+        href: ../standard/assembly/load-unload.md
+      - name: Embed types from managed assemblies in Visual Studio
+        href: ../standard/assembly/embed-types-visual-studio.md
+      - name: Inspect assembly contents using MetadataLoadContext
+        href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
   - name: Metadata and self-describing components
     href: ../standard/metadata-and-self-describing-components.md
   - name: Dependency loading

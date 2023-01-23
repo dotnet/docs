@@ -287,6 +287,28 @@ items:
         href: ../../standard/threading/spinwait.md
       - name: Use SpinWait to implement a two-phase wait operation
         href: ../../standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md
+    - name: Thread-safe collections
+      items:
+      - name: Overview
+        displayName: thread-safe collections
+        href: ../../standard/collections/thread-safe/index.md
+        items:
+        - name: BlockingCollection overview
+          href: ../../standard/collections/thread-safe/blockingcollection-overview.md
+        - name: When to use a thread-safe collection
+          href: ../../standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md
+        - name: Add and take items from a BlockingCollection
+          href: ../../standard/collections/thread-safe/how-to-add-and-take-items.md
+        - name: Use ForEach to remove items in a BlockingCollection
+          href: ../../standard/collections/thread-safe/how-to-use-foreach-to-remove.md
+        - name: Add and remove items from a ConcurrentDictionary
+          href: ../../standard/collections/thread-safe/how-to-add-and-remove-items.md
+        - name: Add bounding and blocking functionality
+          href: ../../standard/collections/thread-safe/how-to-add-bounding-and-blocking.md
+        - name: Use arrays of blocking collections in a pipeline
+          href: ../../standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md
+        - name: Create an object pool using a ConcurrentBag
+          href: ../../standard/collections/thread-safe/how-to-create-an-object-pool.md
 - name: Native interoperability
   items:
   - name: Overview

@@ -241,27 +241,7 @@ items:
     - name: Hashtable and Dictionary types
       href: ../standard/collections/hashtable-and-dictionary-collection-types.md
     - name: Thread-safe collections
-      items:
-      - name: Overview
-        displayName: thread-safe collections
-        href: index.md
-        items:
-        - name: BlockingCollection overview
-          href: blockingcollection-overview.md
-        - name: When to use a thread-safe collection
-          href: when-to-use-a-thread-safe-collection.md
-        - name: Add and take items from a BlockingCollection
-          href: how-to-add-and-take-items.md
-        - name: Use ForEach to remove items in a BlockingCollection
-          href: how-to-use-foreach-to-remove.md
-        - name: Add and remove items from a ConcurrentDictionary
-          href: how-to-add-and-remove-items.md
-        - name: Add bounding and blocking functionality
-          href: how-to-add-bounding-and-blocking.md
-        - name: Use arrays of blocking collections in a pipeline
-          href: how-to-use-arrays-of-blockingcollections.md
-        - name: Create an object pool using a ConcurrentBag
-          href: how-to-create-an-object-pool.md
+      href: ../standard/collections/thread-safe/index.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Delegates and lambdas
     href: ../standard/delegates-lambdas.md
   - name: Events

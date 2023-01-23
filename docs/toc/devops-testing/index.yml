@@ -1,0 +1,64 @@
+### YamlMime:Landing
+
+title: .NET DevOps, testing, and deployment documentation
+summary: Learn about DevOps, GitHub Actions, testing, and deployment in .NET.
+
+metadata:
+  title: .NET DevOps, testing, and deployment documentation
+  description: Learn about DevOps, GitHub Actions, testing, and deployment in .NET.
+  ms.topic: landing-page
+  ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: GitHub Actions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../../devops/github-actions-overview.md
+      - linkListType: quickstart
+        links:
+          - text: Create a build GitHub workflow
+            url: ../../devops/dotnet-build-github-action.md
+
+  # Card
+  - title: Unit test with .NET
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Unit testing in .NET
+            url: ../../core/testing/index.md
+      - linkListType: tutorial
+        links:
+          - text: Test C# code using dotnet test and xUnit
+            url: ../../core/testing/unit-testing-with-dotnet-test.md
+          - text: Unit test with NUnit
+            url: ../../core/testing/unit-testing-with-nunit.md
+          - text: Unit test with MSTest
+            url: ../../core/testing/unit-testing-with-mstest.md
+      - linkListType: concept
+        links:
+          - text: Best practices
+            url: ../../core/testing/unit-testing-best-practices.md
+
+  # Card
+  - title: Deploy .NET apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Publish overview
+            url: ../../core/deploying/index.md
+          - text: ReadyToRun
+            url: ../../core/deploying/ready-to-run.md
+          - text: Trimming
+            url: ../../core/deploying/trimming/trim-self-contained.md
+          - text: Native AOT deployment
+            url: ../../core/deploying/native-aot/index.md
+          - text: Docker and .NET
+            url: ../../core/docker/introduction.md
+      - linkListType: reference
+        links:
+          - text: RID catalog
+            url: ../../core/rid-catalog.md

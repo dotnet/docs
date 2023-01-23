@@ -30,6 +30,22 @@ landingContent:
             url: ../../core/tools/sdk-errors/index.md
 
   # Card
+  - title: MSBuild and project files
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Project SDKs
+            url: ../../core/project-sdk/overview.md
+      - linkListType: reference
+        links:
+          - text: Microsoft.NET.Sdk property reference
+            url: ../../core/project-sdk/msbuild-props.md
+      - linkListType: concept
+        links:
+          - text: Target frameworks
+            url: ../../standard/frameworks.md
+
+  # Card
   - title: .NET CLI
     linkLists:
       - linkListType: overview
@@ -52,22 +68,6 @@ landingContent:
         links:
           - text: Publish apps
             url: ../../core/deploying/deploy-with-cli.md
-
-  # Card
-  - title: MSBuild and project files
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Project SDKs
-            url: ../../core/project-sdk/overview.md
-      - linkListType: reference
-        links:
-          - text: Microsoft.NET.Sdk property reference
-            url: ../../core/project-sdk/msbuild-props.md
-      - linkListType: concept
-        links:
-          - text: Target frameworks
-            url: ../../standard/frameworks.md
 
   # Card
   - title: Global and local tools

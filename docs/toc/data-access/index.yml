@@ -22,6 +22,14 @@ landingContent:
             url: ../../standard/linq/index.md
 
   # Card
+  - title: Entity Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Entity Framework Core
+            url: /ef/core/
+
+  # Card
   - title: XML documents and data
     linkLists:
       - linkListType: overview
@@ -52,14 +60,6 @@ landingContent:
             url: ../../../api/index.md?view=msdata-sqlite-3.1.0&preserve-view=false
           - text: SQL syntax
             url: https://www.sqlite.org/lang.html
-
-  # Card
-  - title: Entity Framework
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Entity Framework Core
-            url: /ef/core/
 
   # Card
   - title: Azure Storage

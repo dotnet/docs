@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 11/11/2022
+ms.date: 01/23/2023
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -81,7 +81,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
-   A console window opens with the text "Hello World!" printed on the screen.
+   A console window opens with the text "Hello World!" printed on the screen ("Hello, World!" with a comma in the C# project template).
 
    :::image type="content" source="./media/with-visual-studio/hello-world-console-net6.png" alt-text="Console window showing Hello World Press any key to continue":::
 

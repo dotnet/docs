@@ -29,9 +29,9 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The <xref:System.Security.Cryptography.AesGcm> class on macOS previously relied on OpenSSL for underlying support. OpenSSL is an external dependency that needed to be installed and configured separately from .NET. <xref:System.Security.Cryptography.AesGcm> now uses Apple's CryptoKit to provide an implementation of AES-GCM so that OpenSSL is no longer a dependency for using <xref:System.Security.Cryptography.AesGcm>.
+The <xref:System.Security.Cryptography.AesGcm> class on macOS previously relied on OpenSSL for underlying support. OpenSSL is an external dependency that needed to be installed and configured separately from .NET. <xref:System.Security.Cryptography.AesGcm> now uses Apple's CryptoKit to provide an implementation of Advanced Encryption Standard with Galois/Counter Mode (AES-GCM) so that OpenSSL is no longer a dependency for using <xref:System.Security.Cryptography.AesGcm>.
 
-The CryptoKit implementation of Advanced Encryption Standard with Galois/Counter Mode (AES-GCM) does not support authentication tag sizes other than 128-bits (16-bytes).
+The CryptoKit implementation of AES-GCM does not support authentication tag sizes other than 128-bits (16-bytes).
 
 ## Recommended action
 

@@ -19,6 +19,8 @@ Sometimes the default marshalling rules for structures aren't exactly what you n
 
 ✔️ DO only use `LayoutKind.Explicit` in marshalling when your native struct also has an explicit layout, such as a union.
 
+❌ AVOID using classes to express complex native types through inheritance.
+
 ❌ AVOID using `LayoutKind.Explicit` when marshalling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
 ## Customizing Boolean field marshalling
@@ -111,7 +113,7 @@ public struct DefaultArray
 ```cpp
 struct DefaultArray
 {
-    int* values;
+    int32_t* values;
 };
 ```
 
@@ -327,6 +329,67 @@ struct Currency
 {
     CY dec;
 };
+```
+
+
+### Unions
+
+A union is a data type that can contain different types of data atop the same memory. It is a common form of data in C. A union can be expressed in .NET using `LayoutKind.Explicit`. It recommended to use structs when defining a union in .NET. Using classes can cause issues with layout and produce unpredictable behavior.
+
+```cpp
+struct device1_config
+{
+    void* a;
+    void* b;
+    void* c;
+};
+struct device2_config
+{
+    int32_t a;
+    int32_t b;
+};
+struct config
+{
+    int32_t type;
+
+    union
+    {
+        device1_config dev1;
+        device2_config dev2;
+    };
+};
+```
+
+```csharp
+public unsafe struct Device1Config
+{
+    void* a;
+    void* b;
+    void* c;
+}
+
+public struct Device2Config
+{
+    int a;
+    int b;
+}
+
+public struct Config
+{
+    public int Type;
+
+    public _Union Anonymous;
+
+    [StructLayout(LayoutKind.Explicit)]
+    public struct _Union
+    {
+        [FieldOffset(0)]
+        public Device1Config Dev1;
+
+        [FieldOffset(0)]
+        public Device2Config Dev2;
+    }
+}
 ```
 
 ## Marshal `System.Object`

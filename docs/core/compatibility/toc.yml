@@ -1006,6 +1006,10 @@ items:
       href: corefx.md
   - name: Cryptography
     items:
+    - name: .NET 8
+      items:
+      - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
+        href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
     - name: .NET 7
       items:
       - name: Dynamic X509ChainPolicy verification time

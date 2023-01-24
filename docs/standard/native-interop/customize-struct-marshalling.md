@@ -333,7 +333,7 @@ struct Currency
 
 ### Unions
 
-A union is a data type that can contain different types of data atop the same memory. It is a common form of data in C. A union can be expressed in .NET using `LayoutKind.Explicit`. It recommended to use structs when defining a union in .NET. Using classes can cause issues with layout and produce unpredictable behavior.
+A union is a data type that can contain different types of data atop the same memory. It's a common form of data in the C language. A union can be expressed in .NET using `LayoutKind.Explicit`. It's recommended to use structs when defining a union in .NET. Using classes can cause layout issues and produce unpredictable behavior.
 
 ```cpp
 struct device1_config

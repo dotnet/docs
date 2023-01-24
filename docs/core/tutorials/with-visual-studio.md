@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
 ms.date: 01/23/2023
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-6-7
 dev_langs:
   - "csharp"
   - "vb"
@@ -47,7 +47,7 @@ Create a .NET console app project named "HelloWorld".
    * Select **Do not use top-level statements**.
    * Select **Create**.
 
-   The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
+   The template creates a simple application that displays "Hello, World!" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 
    ```csharp
    namespace HelloWorld;
@@ -81,7 +81,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
-   A console window opens with the text "Hello World!" printed on the screen ("Hello, World!" with a comma in the C# project template).
+   A console window opens with the text "Hello, World!" printed on the screen. ("Hello World!" without a comma in the Visual Basic project template.)
 
    :::image type="content" source="./media/with-visual-studio/hello-world-console-net6.png" alt-text="Console window showing Hello World Press any key to continue":::
 
@@ -240,11 +240,5 @@ In this tutorial, you created a .NET console application. In the next tutorial, 
 
 > [!div class="nextstepaction"]
 > [Debug a .NET console application using Visual Studio](debugging-with-visual-studio.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

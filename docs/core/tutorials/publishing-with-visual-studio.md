@@ -2,7 +2,7 @@
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
 ms.date: 12/19/2022
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-6-7
 dev_langs:
   - "csharp"
   - "vb"
@@ -232,11 +232,5 @@ In this tutorial, you published a console app. In the next tutorial, you create 
 
 > [!div class="nextstepaction"]
 > [Create a .NET class library using Visual Studio](library-with-visual-studio.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
 
 ::: zone-end

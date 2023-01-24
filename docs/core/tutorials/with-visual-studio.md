@@ -81,7 +81,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
-   A console window opens with the text "Hello, World!" printed on the screen. ("Hello World!" without a comma in the Visual Basic project template.)
+   A console window opens with the text "Hello, World!" printed on the screen. (Or "Hello World!" without a comma in the Visual Basic project template.)
 
    :::image type="content" source="./media/with-visual-studio/hello-world-console-net6.png" alt-text="Console window showing Hello World Press any key to continue":::
 

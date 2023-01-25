@@ -42,7 +42,7 @@ If you have a preview installed of the requested .NET SDK version, you also need
 
 ## Visual Studio version
 
-For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads) or later to build your project.
+For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads) or later to build your project. For information about which Visual Studio for Mac 2022 versions support which .NET versions, see [Supported versions of .NET](https://learn.microsoft.com/visualstudio/mac/supported-versions-net?view=vsmac-2022).
 
 ## PATH environment variable
 

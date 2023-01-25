@@ -22,8 +22,8 @@ The following tables show how the returned path value changes for each Unix oper
 
 | SpecialFolder value | Path (.NET 7 and earlier) | Path (.NET 8 and later) |
 |-|-|-|
-| `MyDocuments` | `$HOME` | [NSDocumentDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsdocumentdirectory)] (`$HOME/Documents`) |
-| `Personal` | `$HOME` | [NSDocumentDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsdocumentdirectory)] (`$HOME/Documents`) |
+| `MyDocuments` | `$HOME` | [NSDocumentDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsdocumentdirectory) (`$HOME/Documents`) |
+| `Personal` | `$HOME` | [NSDocumentDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsdocumentdirectory) (`$HOME/Documents`) |
 | `ApplicationData` | `$HOME/.config` | [NSApplicationSupportDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsapplicationsupportdirectory) (Library/Application Support) |
 | `LocalApplicationData` | `$HOME/.local/share` | [NSApplicationSupportDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsapplicationsupportdirectory) (Library/Application Support) |
 | `MyVideos` | `$HOME/Videos` | [NSMoviesDirectory](https://developer.apple.com/documentation/foundation/nssearchpathdirectory/nsmoviesdirectory) (`$HOME/Movies`) |
@@ -45,11 +45,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The previous behavior was incorrect and not consistent with Linux, macOS, and Android users' expectations.
+The previous behavior was incorrect and didn't meet user expectations for Linux, macOS, and Android.
 
 ## Recommended action
 
-The most common break is calling `Environment.GetFolderPath(Environment.SpecialFolder.Personal)` on Unix to get the `$HOME` directory. <xref:System.Environment.SpecialFolder.Personal?displayProperty=fullName> and <xref:System.Environment.SpecialFolder.MyDocuments?displayProperty=fullName> are aliases for the same underlying enumeration value. If you're using <xref:System.Environment.SpecialFolder.Personal?displayProperty=nameWithType> in this way, change your code to `Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)` instead.
+The most common break is if you're passing <xref:System.Environment.SpecialFolder.Personal?displayProperty=fullName> to <xref:System.Environment.GetFolderPath(System.Environment.SpecialFolder)?displayProperty=nameWithType> on Unix to get the `$HOME` directory (`Environment.GetFolderPath(Environment.SpecialFolder.Personal)`). <xref:System.Environment.SpecialFolder.Personal?displayProperty=nameWithType> and <xref:System.Environment.SpecialFolder.MyDocuments?displayProperty=nameWithType> are aliases for the same underlying enumeration value. If you're using <xref:System.Environment.SpecialFolder.Personal?displayProperty=nameWithType> in this way, change your code to pass <xref:System.Environment.SpecialFolder.UserProfile?displayProperty=nameWithType> instead (`Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)`).
 
 For other breaks, the recommended action is to do one of the following:
 

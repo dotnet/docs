@@ -126,14 +126,14 @@ Writing minidump with heap to ./core_20190430_185145
 Complete
 ```
 
+> [!NOTE]
+> For a comparison over time, let the original process continue running after collected the first dump and collect a second dump, as explained above, prior to restarting the app. You would then have two dumps over a period of time, and could compare them to assist in seeing where the memory is growing.
+
 ### Restart the failed process
 
 Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now it's the ideal time for short-term remediation by restarting the process.
 
 In this tutorial, you're now done with the [Sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) and you can close it. Navigate to the terminal that started the server, and press <kbd>Ctrl+C</kbd>.
-
-> [!NOTE]
-> After restarting the failed process and letting it run for around one minute, you could collect another dump in the same way explained above. You would then have two dumps over a period of time, and could compare them to assist in seeing where the memory is growing.
 
 ### Analyze the core dump
 

@@ -8,6 +8,10 @@ items:
     items:
     - name: Overview
       href: 8.0.md
+    - name: Core .NET libraries
+      items:
+      - name: GetFolderPath behavior on Unix
+        href: core-libraries/8.0/getfolderpath-unix.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -874,6 +878,10 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
   - name: Core .NET libraries
     items:
+    - name: .NET 8
+      items:
+      - name: GetFolderPath behavior on Unix
+        href: core-libraries/8.0/getfolderpath-unix.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID

@@ -14,6 +14,7 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ DO use the same naming and capitalization for your methods and parameters as the native method you want to call.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
+- ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
 - ✔️ DO only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
@@ -327,6 +328,8 @@ Pointers to structs in definitions must either be passed by `ref` or use `unsafe
 ✔️ DO match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
 
 ✔️ DO use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
+
+❌ AVOID using classes to express complex native types through inheritance.
 
 ❌ AVOID using `System.Delegate` or `System.MulticastDelegate` fields to represent function pointer fields in structures.
 

@@ -2,7 +2,7 @@
 title: Test a .NET class library using Visual Studio
 description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-6-7
 dev_langs:
   - "csharp"
   - "vb"
@@ -214,11 +214,5 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 
 > [!div class="nextstepaction"]
 > [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 11/23/2021
+ms.date: 01/24/2023
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
@@ -271,6 +271,10 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSA.FromXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |

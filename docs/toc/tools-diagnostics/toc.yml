@@ -228,222 +228,6 @@ items:
     - name: 3 - Create a template package
       href: ../../core/tutorials/cli-templates-create-template-package.md
       displayName: tutorials, cli
-- name: SYSLIB diagnostics
-  items:
-  - name: Obsoletions
-    items:
-    - name: Overview
-      displayName: syslib, obsolete, obsoletion
-      href: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
-    - name: SYSLIB0001
-      href: ../../fundamentals/syslib-diagnostics/syslib0001.md
-    - name: SYSLIB0002
-      href: ../../fundamentals/syslib-diagnostics/syslib0002.md
-    - name: SYSLIB0003
-      href: ../../fundamentals/syslib-diagnostics/syslib0003.md
-    - name: SYSLIB0004
-      href: ../../fundamentals/syslib-diagnostics/syslib0004.md
-    - name: SYSLIB0005
-      href: ../../fundamentals/syslib-diagnostics/syslib0005.md
-    - name: SYSLIB0006
-      href: ../../fundamentals/syslib-diagnostics/syslib0006.md
-    - name: SYSLIB0007
-      href: ../../fundamentals/syslib-diagnostics/syslib0007.md
-    - name: SYSLIB0008
-      href: ../../fundamentals/syslib-diagnostics/syslib0008.md
-    - name: SYSLIB0009
-      href: ../../fundamentals/syslib-diagnostics/syslib0009.md
-    - name: SYSLIB0010
-      href: ../../fundamentals/syslib-diagnostics/syslib0010.md
-    - name: SYSLIB0011
-      href: ../../fundamentals/syslib-diagnostics/syslib0011.md
-    - name: SYSLIB0012
-      href: ../../fundamentals/syslib-diagnostics/syslib0012.md
-    - name: SYSLIB0013
-      href: ../../fundamentals/syslib-diagnostics/syslib0013.md
-    - name: SYSLIB0014
-      href: ../../fundamentals/syslib-diagnostics/syslib0014.md
-    - name: SYSLIB0015
-      href: ../../fundamentals/syslib-diagnostics/syslib0015.md
-    - name: SYSLIB0016
-      href: ../../fundamentals/syslib-diagnostics/syslib0016.md
-    - name: SYSLIB0017
-      href: ../../fundamentals/syslib-diagnostics/syslib0017.md
-    - name: SYSLIB0018
-      href: ../../fundamentals/syslib-diagnostics/syslib0018.md
-    - name: SYSLIB0019
-      href: ../../fundamentals/syslib-diagnostics/syslib0019.md
-    - name: SYSLIB0020
-      href: ../../fundamentals/syslib-diagnostics/syslib0020.md
-    - name: SYSLIB0021
-      href: ../../fundamentals/syslib-diagnostics/syslib0021.md
-    - name: SYSLIB0022
-      href: ../../fundamentals/syslib-diagnostics/syslib0022.md
-    - name: SYSLIB0023
-      href: ../../fundamentals/syslib-diagnostics/syslib0023.md
-    - name: SYSLIB0024
-      href: ../../fundamentals/syslib-diagnostics/syslib0024.md
-    - name: SYSLIB0025
-      href: ../../fundamentals/syslib-diagnostics/syslib0025.md
-    - name: SYSLIB0026
-      href: ../../fundamentals/syslib-diagnostics/syslib0026.md
-    - name: SYSLIB0027
-      href: ../../fundamentals/syslib-diagnostics/syslib0027.md
-    - name: SYSLIB0028
-      href: ../../fundamentals/syslib-diagnostics/syslib0028.md
-    - name: SYSLIB0029
-      href: ../../fundamentals/syslib-diagnostics/syslib0029.md
-    - name: SYSLIB0030
-      href: ../../fundamentals/syslib-diagnostics/syslib0030.md
-    - name: SYSLIB0031
-      href: ../../fundamentals/syslib-diagnostics/syslib0031.md
-    - name: SYSLIB0032
-      href: ../../fundamentals/syslib-diagnostics/syslib0032.md
-    - name: SYSLIB0033
-      href: ../../fundamentals/syslib-diagnostics/syslib0033.md
-    - name: SYSLIB0034
-      href: ../../fundamentals/syslib-diagnostics/syslib0034.md
-    - name: SYSLIB0035
-      href: ../../fundamentals/syslib-diagnostics/syslib0035.md
-    - name: SYSLIB0036
-      href: ../../fundamentals/syslib-diagnostics/syslib0036.md
-    - name: SYSLIB0037
-      href: ../../fundamentals/syslib-diagnostics/syslib0037.md
-    - name: SYSLIB0038
-      href: ../../fundamentals/syslib-diagnostics/syslib0038.md
-    - name: SYSLIB0039
-      href: ../../fundamentals/syslib-diagnostics/syslib0039.md
-    - name: SYSLIB0040
-      href: ../../fundamentals/syslib-diagnostics/syslib0040.md
-    - name: SYSLIB0041
-      href: ../../fundamentals/syslib-diagnostics/syslib0041.md
-    - name: SYSLIB0042
-      href: ../../fundamentals/syslib-diagnostics/syslib0042.md
-    - name: SYSLIB0043
-      href: ../../fundamentals/syslib-diagnostics/syslib0043.md
-    - name: SYSLIB0044
-      href: ../../fundamentals/syslib-diagnostics/syslib0044.md
-    - name: SYSLIB0045
-      href: ../../fundamentals/syslib-diagnostics/syslib0045.md
-    - name: SYSLIB0046
-      href: ../../fundamentals/syslib-diagnostics/syslib0046.md
-    - name: SYSLIB0047
-      href: ../../fundamentals/syslib-diagnostics/syslib0047.md
-  - name: Source-generated code
-    items:
-    - name: Overview
-      displayName: syslib, diagnostic, diagnostics, source generator
-      href: ../../fundamentals/syslib-diagnostics/source-generator-overview.md
-    - name: SYSLIB1001
-      href: ../../fundamentals/syslib-diagnostics/syslib1001.md
-    - name: SYSLIB1002
-      href: ../../fundamentals/syslib-diagnostics/syslib1002.md
-    - name: SYSLIB1003
-      href: ../../fundamentals/syslib-diagnostics/syslib1003.md
-    - name: SYSLIB1005
-      href: ../../fundamentals/syslib-diagnostics/syslib1005.md
-    - name: SYSLIB1006
-      href: ../../fundamentals/syslib-diagnostics/syslib1006.md
-    - name: SYSLIB1007
-      href: ../../fundamentals/syslib-diagnostics/syslib1007.md
-    - name: SYSLIB1008
-      href: ../../fundamentals/syslib-diagnostics/syslib1008.md
-    - name: SYSLIB1009
-      href: ../../fundamentals/syslib-diagnostics/syslib1009.md
-    - name: SYSLIB1010
-      href: ../../fundamentals/syslib-diagnostics/syslib1010.md
-    - name: SYSLIB1011
-      href: ../../fundamentals/syslib-diagnostics/syslib1011.md
-    - name: SYSLIB1012
-      href: ../../fundamentals/syslib-diagnostics/syslib1012.md
-    - name: SYSLIB1013
-      href: ../../fundamentals/syslib-diagnostics/syslib1013.md
-    - name: SYSLIB1014
-      href: ../../fundamentals/syslib-diagnostics/syslib1014.md
-    - name: SYSLIB1015
-      href: ../../fundamentals/syslib-diagnostics/syslib1015.md
-    - name: SYSLIB1016
-      href: ../../fundamentals/syslib-diagnostics/syslib1016.md
-    - name: SYSLIB1017
-      href: ../../fundamentals/syslib-diagnostics/syslib1017.md
-    - name: SYSLIB1018
-      href: ../../fundamentals/syslib-diagnostics/syslib1018.md
-    - name: SYSLIB1019
-      href: ../../fundamentals/syslib-diagnostics/syslib1019.md
-    - name: SYSLIB1020
-      href: ../../fundamentals/syslib-diagnostics/syslib1020.md
-    - name: SYSLIB1021
-      href: ../../fundamentals/syslib-diagnostics/syslib1021.md
-    - name: SYSLIB1022
-      href: ../../fundamentals/syslib-diagnostics/syslib1022.md
-    - name: SYSLIB1023
-      href: ../../fundamentals/syslib-diagnostics/syslib1023.md
-    - name: SYSLIB1030
-      href: ../../fundamentals/syslib-diagnostics/syslib1030.md
-    - name: SYSLIB1031
-      href: ../../fundamentals/syslib-diagnostics/syslib1031.md
-    - name: SYSLIB1032
-      href: ../../fundamentals/syslib-diagnostics/syslib1032.md
-    - name: SYSLIB1033
-      href: ../../fundamentals/syslib-diagnostics/syslib1033.md
-    - name: SYSLIB1035
-      href: ../../fundamentals/syslib-diagnostics/syslib1035.md
-    - name: SYSLIB1036
-      href: ../../fundamentals/syslib-diagnostics/syslib1036.md
-    - name: SYSLIB1037
-      href: ../../fundamentals/syslib-diagnostics/syslib1037.md
-    - name: SYSLIB1038
-      href: ../../fundamentals/syslib-diagnostics/syslib1038.md
-    - name: SYSLIB1040
-      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-    - name: SYSLIB1041
-      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-    - name: SYSLIB1042
-      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-    - name: SYSLIB1043
-      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-    - name: SYSLIB1044
-      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-    - name: SYSLIB1045
-      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-    - name: SYSLIB1050
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1051
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1052
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1053
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1054
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1055
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1056
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1057
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1058
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1059
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1060
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1061
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1062
-      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-    - name: SYSLIB1070
-      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-    - name: SYSLIB1071
-      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-    - name: SYSLIB1072
-      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-    - name: SYSLIB1073
-      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-    - name: SYSLIB1074
-      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-    - name: SYSLIB1075
-      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
 - name: Integrated development environments (IDEs)
   items:
   - name: Visual Studio
@@ -1559,6 +1343,224 @@ items:
     href: ../../standard/analyzers/platform-compat-analyzer.md
   - name: Portability analyzer
     href: ../../standard/analyzers/portability-analyzer.md
+- name: SYSLIB diagnostics
+  items:
+  - name: Obsoletions
+    items:
+    - name: Overview
+      displayName: syslib, obsolete, obsoletion
+      href: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
+    - name: SYSLIB0001
+      href: ../../fundamentals/syslib-diagnostics/syslib0001.md
+    - name: SYSLIB0002
+      href: ../../fundamentals/syslib-diagnostics/syslib0002.md
+    - name: SYSLIB0003
+      href: ../../fundamentals/syslib-diagnostics/syslib0003.md
+    - name: SYSLIB0004
+      href: ../../fundamentals/syslib-diagnostics/syslib0004.md
+    - name: SYSLIB0005
+      href: ../../fundamentals/syslib-diagnostics/syslib0005.md
+    - name: SYSLIB0006
+      href: ../../fundamentals/syslib-diagnostics/syslib0006.md
+    - name: SYSLIB0007
+      href: ../../fundamentals/syslib-diagnostics/syslib0007.md
+    - name: SYSLIB0008
+      href: ../../fundamentals/syslib-diagnostics/syslib0008.md
+    - name: SYSLIB0009
+      href: ../../fundamentals/syslib-diagnostics/syslib0009.md
+    - name: SYSLIB0010
+      href: ../../fundamentals/syslib-diagnostics/syslib0010.md
+    - name: SYSLIB0011
+      href: ../../fundamentals/syslib-diagnostics/syslib0011.md
+    - name: SYSLIB0012
+      href: ../../fundamentals/syslib-diagnostics/syslib0012.md
+    - name: SYSLIB0013
+      href: ../../fundamentals/syslib-diagnostics/syslib0013.md
+    - name: SYSLIB0014
+      href: ../../fundamentals/syslib-diagnostics/syslib0014.md
+    - name: SYSLIB0015
+      href: ../../fundamentals/syslib-diagnostics/syslib0015.md
+    - name: SYSLIB0016
+      href: ../../fundamentals/syslib-diagnostics/syslib0016.md
+    - name: SYSLIB0017
+      href: ../../fundamentals/syslib-diagnostics/syslib0017.md
+    - name: SYSLIB0018
+      href: ../../fundamentals/syslib-diagnostics/syslib0018.md
+    - name: SYSLIB0019
+      href: ../../fundamentals/syslib-diagnostics/syslib0019.md
+    - name: SYSLIB0020
+      href: ../../fundamentals/syslib-diagnostics/syslib0020.md
+    - name: SYSLIB0021
+      href: ../../fundamentals/syslib-diagnostics/syslib0021.md
+    - name: SYSLIB0022
+      href: ../../fundamentals/syslib-diagnostics/syslib0022.md
+    - name: SYSLIB0023
+      href: ../../fundamentals/syslib-diagnostics/syslib0023.md
+    - name: SYSLIB0024
+      href: ../../fundamentals/syslib-diagnostics/syslib0024.md
+    - name: SYSLIB0025
+      href: ../../fundamentals/syslib-diagnostics/syslib0025.md
+    - name: SYSLIB0026
+      href: ../../fundamentals/syslib-diagnostics/syslib0026.md
+    - name: SYSLIB0027
+      href: ../../fundamentals/syslib-diagnostics/syslib0027.md
+    - name: SYSLIB0028
+      href: ../../fundamentals/syslib-diagnostics/syslib0028.md
+    - name: SYSLIB0029
+      href: ../../fundamentals/syslib-diagnostics/syslib0029.md
+    - name: SYSLIB0030
+      href: ../../fundamentals/syslib-diagnostics/syslib0030.md
+    - name: SYSLIB0031
+      href: ../../fundamentals/syslib-diagnostics/syslib0031.md
+    - name: SYSLIB0032
+      href: ../../fundamentals/syslib-diagnostics/syslib0032.md
+    - name: SYSLIB0033
+      href: ../../fundamentals/syslib-diagnostics/syslib0033.md
+    - name: SYSLIB0034
+      href: ../../fundamentals/syslib-diagnostics/syslib0034.md
+    - name: SYSLIB0035
+      href: ../../fundamentals/syslib-diagnostics/syslib0035.md
+    - name: SYSLIB0036
+      href: ../../fundamentals/syslib-diagnostics/syslib0036.md
+    - name: SYSLIB0037
+      href: ../../fundamentals/syslib-diagnostics/syslib0037.md
+    - name: SYSLIB0038
+      href: ../../fundamentals/syslib-diagnostics/syslib0038.md
+    - name: SYSLIB0039
+      href: ../../fundamentals/syslib-diagnostics/syslib0039.md
+    - name: SYSLIB0040
+      href: ../../fundamentals/syslib-diagnostics/syslib0040.md
+    - name: SYSLIB0041
+      href: ../../fundamentals/syslib-diagnostics/syslib0041.md
+    - name: SYSLIB0042
+      href: ../../fundamentals/syslib-diagnostics/syslib0042.md
+    - name: SYSLIB0043
+      href: ../../fundamentals/syslib-diagnostics/syslib0043.md
+    - name: SYSLIB0044
+      href: ../../fundamentals/syslib-diagnostics/syslib0044.md
+    - name: SYSLIB0045
+      href: ../../fundamentals/syslib-diagnostics/syslib0045.md
+    - name: SYSLIB0046
+      href: ../../fundamentals/syslib-diagnostics/syslib0046.md
+    - name: SYSLIB0047
+      href: ../../fundamentals/syslib-diagnostics/syslib0047.md
+    - name: SYSLIB0048
+      href: ../../fundamentals/syslib-diagnostics/syslib0048.md
+  - name: Source-generated code
+    items:
+    - name: Overview
+      displayName: syslib, diagnostic, diagnostics, source generator
+      href: ../../fundamentals/syslib-diagnostics/source-generator-overview.md
+    - name: SYSLIB1001
+      href: ../../fundamentals/syslib-diagnostics/syslib1001.md
+    - name: SYSLIB1002
+      href: ../../fundamentals/syslib-diagnostics/syslib1002.md
+    - name: SYSLIB1003
+      href: ../../fundamentals/syslib-diagnostics/syslib1003.md
+    - name: SYSLIB1005
+      href: ../../fundamentals/syslib-diagnostics/syslib1005.md
+    - name: SYSLIB1006
+      href: ../../fundamentals/syslib-diagnostics/syslib1006.md
+    - name: SYSLIB1007
+      href: ../../fundamentals/syslib-diagnostics/syslib1007.md
+    - name: SYSLIB1008
+      href: ../../fundamentals/syslib-diagnostics/syslib1008.md
+    - name: SYSLIB1009
+      href: ../../fundamentals/syslib-diagnostics/syslib1009.md
+    - name: SYSLIB1010
+      href: ../../fundamentals/syslib-diagnostics/syslib1010.md
+    - name: SYSLIB1011
+      href: ../../fundamentals/syslib-diagnostics/syslib1011.md
+    - name: SYSLIB1012
+      href: ../../fundamentals/syslib-diagnostics/syslib1012.md
+    - name: SYSLIB1013
+      href: ../../fundamentals/syslib-diagnostics/syslib1013.md
+    - name: SYSLIB1014
+      href: ../../fundamentals/syslib-diagnostics/syslib1014.md
+    - name: SYSLIB1015
+      href: ../../fundamentals/syslib-diagnostics/syslib1015.md
+    - name: SYSLIB1016
+      href: ../../fundamentals/syslib-diagnostics/syslib1016.md
+    - name: SYSLIB1017
+      href: ../../fundamentals/syslib-diagnostics/syslib1017.md
+    - name: SYSLIB1018
+      href: ../../fundamentals/syslib-diagnostics/syslib1018.md
+    - name: SYSLIB1019
+      href: ../../fundamentals/syslib-diagnostics/syslib1019.md
+    - name: SYSLIB1020
+      href: ../../fundamentals/syslib-diagnostics/syslib1020.md
+    - name: SYSLIB1021
+      href: ../../fundamentals/syslib-diagnostics/syslib1021.md
+    - name: SYSLIB1022
+      href: ../../fundamentals/syslib-diagnostics/syslib1022.md
+    - name: SYSLIB1023
+      href: ../../fundamentals/syslib-diagnostics/syslib1023.md
+    - name: SYSLIB1030
+      href: ../../fundamentals/syslib-diagnostics/syslib1030.md
+    - name: SYSLIB1031
+      href: ../../fundamentals/syslib-diagnostics/syslib1031.md
+    - name: SYSLIB1032
+      href: ../../fundamentals/syslib-diagnostics/syslib1032.md
+    - name: SYSLIB1033
+      href: ../../fundamentals/syslib-diagnostics/syslib1033.md
+    - name: SYSLIB1035
+      href: ../../fundamentals/syslib-diagnostics/syslib1035.md
+    - name: SYSLIB1036
+      href: ../../fundamentals/syslib-diagnostics/syslib1036.md
+    - name: SYSLIB1037
+      href: ../../fundamentals/syslib-diagnostics/syslib1037.md
+    - name: SYSLIB1038
+      href: ../../fundamentals/syslib-diagnostics/syslib1038.md
+    - name: SYSLIB1040
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1041
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1042
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1043
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1044
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1045
+      href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
+    - name: SYSLIB1050
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1051
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1052
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1053
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1054
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1055
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1056
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1057
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1058
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1059
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1060
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1061
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1062
+      href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
+    - name: SYSLIB1070
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1071
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1072
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1073
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1074
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+    - name: SYSLIB1075
+      href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
 - name: Package validation
   items:
   - name: Get started

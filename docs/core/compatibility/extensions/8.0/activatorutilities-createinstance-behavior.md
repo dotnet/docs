@@ -37,7 +37,7 @@ For this class definition, and when `IServiceProviderIsService` is present, `Act
 - If it finds more than one constructor, it throws an <xref:System.InvalidOperationException>.
 
 > [!NOTE]
-> If <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService> is configured incorrectly or doesn't exist, the API may function incorrectly or ambiguously.
+> If <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService> is configured incorrectly or doesn't exist, `CreateInstance` may function incorrectly or ambiguously.
 
 ## Type of breaking change
 
@@ -45,7 +45,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was introduced to fix a bug where the behavior was dependent on the order of constructor overload definitions.
+This change was introduced to fix a bug where the behavior depended on the order of constructor overload definitions.
 
 ## Recommended action
 

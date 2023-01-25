@@ -200,10 +200,10 @@ The general ("G") format specifier converts a number to the more compact of eith
 |<xref:System.Int64>                        |19 digits|
 |<xref:System.UInt64>                       |20 digits|
 |<xref:System.Numerics.BigInteger>          |Unlimited (same as ["R"](#RFormatString))|
-|<xref:System.Half>                         |5 digits|
-|<xref:System.Single>                       |9 digits (7 digits in .NET Framework)|
-|<xref:System.Double>                       |17 digits (15 digits in .NET Framework)|
-|<xref:System.Decimal>                      |29 digits|
+|<xref:System.Half>                         |Smallest round-trippable number of digits to represent the number|
+|<xref:System.Single>                       |Smallest round-trippable number of digits to represent the number (in .NET Framework, G7 is the default)|
+|<xref:System.Double>                       |Smallest round-trippable number of digits to represent the number (in .NET Framework, G15 is the default)|
+|<xref:System.Decimal>                      |Smallest round-trippable number of digits to represent the number|
 
 Fixed-point notation is used if the exponent that would result from expressing the number in scientific notation is greater than -5 and less than the precision specifier; otherwise, scientific notation is used. The result contains a decimal point if required, and trailing zeros after the decimal point are omitted. If the precision specifier is present and the number of significant digits in the result exceeds the specified precision, the excess trailing digits are removed by rounding.
 

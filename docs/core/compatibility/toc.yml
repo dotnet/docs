@@ -4,6 +4,22 @@ items:
 - name: Breaking changes by version
   expanded: true
   items:
+  - name: .NET 8
+    items:
+    - name: Overview
+      href: 8.0.md
+    - name: Cryptography
+      items:
+      - name: AesGcm authentication tag size on macOS
+        href: cryptography/8.0/aesgcm-auth-tag-size.md
+      - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
+        href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
+    - name: Windows Forms
+      items:
+      - name: Anchor layout changes
+        href: windows-forms/8.0/anchor-layout.md
+      - name: Top-level forms scale size to DPI
+        href: windows-forms/8.0/forms-scale-size-to-dpi.md
   - name: .NET 7
     items:
     - name: Overview
@@ -662,16 +678,6 @@ items:
   items:
   - name: ASP.NET Core
     items:
-    - name: .NET 8
-      items:
-      - name: Overview
-        href: 8.0.md
-      - name: Windows Forms
-        items:
-        - name: Anchor layout changes
-          href: windows-forms/8.0/anchor-layout.md
-        - name: Top-level forms scale size to DPI
-          href: windows-forms/8.0/forms-scale-size-to-dpi.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI
@@ -1016,6 +1022,12 @@ items:
       href: corefx.md
   - name: Cryptography
     items:
+    - name: .NET 8
+      items:
+      - name: AesGcm authentication tag size on macOS
+        href: cryptography/8.0/aesgcm-auth-tag-size.md
+      - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
+        href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
     - name: .NET 7
       items:
       - name: Dynamic X509ChainPolicy verification time

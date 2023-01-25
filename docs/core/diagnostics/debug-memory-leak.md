@@ -127,7 +127,7 @@ Complete
 ```
 
 > [!NOTE]
-> For a comparison over time, let the original process continue running after collected the first dump and collect a second dump, as explained above, prior to restarting the app. You would then have two dumps over a period of time, and could compare them to assist in seeing where the memory is growing.
+> For a comparison over time, let the original process continue running after collecting the first dump and collect a second dump the same way. You would then have two dumps over a period of time that you can compare to see where the memory usage is growing.
 
 ### Restart the failed process
 

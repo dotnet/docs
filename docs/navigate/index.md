@@ -11,7 +11,7 @@ Use one of the following mechanisms to find other .NET documentation that you mi
 
 - The drop-down menus on the header.
 
-  <!--Add header image here once the new drop-down is added.-->
+  :::image type="content" source="media/l2-header.png" alt-text=".NET L2 header on learn.microsoft.com":::
 
 - The breadcrumb trail. From any article, select an entry in the breadcrumb trail. The ".NET" breadcrumb navigates to the [.NET documentation](../index.yml) page where you can find another area that interests you. Or, select a different breadcrumb to see an overview for that topic.
 

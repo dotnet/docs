@@ -13,6 +13,6 @@ Use of the following mechanisms to find other .NET documentation that you might 
 
   <!--Add header image here once the new drop-down is added.-->
 
-- The breadcrumb trail. From any article, click on the ".NET" level and then find another area that interests you from the [.NET documentation](../index.yml) page you're taken to.
+- The breadcrumb trail. From any article, click on the ".NET" breadcrumb and then find another area that interests you from the [.NET documentation](../index.yml) page you're taken to.
 
   :::image type="content" source="breadcrumb.png" alt-text=".NET docs breadcrumb":::

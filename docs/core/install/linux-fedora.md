@@ -24,16 +24,13 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Fedora | .NET      |
 |--------|-----------|
-| 37     | 6         |
-| 36     | 6         |
-| 35     | 6         |
-
-> [!IMPORTANT]
-> .NET 7 isn't yet ready for Fedora. This article will be updated when it's available.
+| 37     | 7         |
+| 36     | 7         |
+| 35     | 7         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-## Install .NET 6
+## Install .NET 7
 
 [!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 

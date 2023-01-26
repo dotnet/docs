@@ -89,15 +89,15 @@ conceptualContent:
         - url: fundamentals/index.yml
           itemType: concept
           text: .NET fundamentals
-        - url: /aspnet/core/
-          itemType: overview
-          text: ASP.NET Core
         - url: fundamentals/implementations.md
           itemType: concept
           text: .NET implementations
         - url: framework/index.yml
           itemType: overview
-          text: .NET Framework (Windows) apps
+          text: .NET Framework (for Windows)
+        - url: standard/net-standard.md
+          itemType: overview
+          text: .NET Standard
         - url: /answers/products/dotnet
           itemType: get-started
           text: .NET Q&A
@@ -111,18 +111,18 @@ conceptualContent:
     # Card
     - title: Develop .NET apps
       links:
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
+          itemType: tutorial
+          text: Create .NET desktop apps for Windows
+        - url: /aspnet/core/
+          itemType: overview
+          text: Create web apps with ASP.NET Core
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
-          itemType: tutorial
-          text: Create .NET desktop apps for Windows
-        - url: standard/net-standard.md
-          itemType: overview
-          text: .NET Standard
 
     # Card
     - title: .NET tools and diagnostics
@@ -158,6 +158,9 @@ conceptualContent:
         - url: core/compatibility/breaking-changes.md
           itemType: concept
           text: .NET breaking changes
+        - url: https://dotnet.microsoft.com/download
+          itemType: download
+          text: Download .NET
 
     # Card
     - title: DevOps and testing

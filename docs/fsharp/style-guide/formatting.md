@@ -646,6 +646,23 @@ if a then
 if a then ()
 ```
 
+If any of the expressions are multi-line, each conditional branch should be multi-line.
+
+```fsharp
+// ✔️ OK
+if cond then
+    let e1 = something()
+    e1
+else
+    e2
+    
+// ❌ Not OK
+if cond then
+    let e1 = something()
+    e1
+else e2
+```
+
 Multiple conditionals with `elif` and `else` are indented at the same scope as the `if` when they follow the rules of the one line `if/then/else` expressions.
 
 ```fsharp
@@ -669,6 +686,14 @@ elif cond3 then
     e3
 else
     e4
+
+// ❌ Not OK
+if cond1 then
+    let e1 = something()
+    e1
+elif cond2 then e2
+elif cond3 then e3
+else e4
 ```
 
 If a condition is multiline or exceeds the default tolerance of the single-line, the condition expression should use one indentation and a new line.

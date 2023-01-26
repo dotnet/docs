@@ -3,17 +3,12 @@ namespace RefSafety;
 public class EscapeScopes
 {
     // <SafeToEscapeScope>
-    public static int OuterMethod()
-    {
-        int n; // The safe to escape scope of n is the entire OuterMethod
-        n = InnerMethod();
-        return n; // n is safe to return
-    }
+    private string longMessage = "This is a long message";
 
-    private static int InnerMethod()
+    public ReadOnlySpan<char> Safe()
     {
-        int m = 5; // The safe to escape scope of m is the entire InnerMethod
-        return m; // m is safe to return
+        var span = longMessage.AsSpan();
+        return span;
     }
     // </SafeToEscapeScope>
 
@@ -23,6 +18,14 @@ public class EscapeScopes
     public ref int RetrieveIndexRef()
     {
         return ref anIndex;
+    }
+
+    public ref int RefMin(ref int left, ref int right)
+    {
+        if (left < right)
+            return ref left;
+        else
+            return ref right;
     }
     // </RefSafeToEscapeScopes>
 }

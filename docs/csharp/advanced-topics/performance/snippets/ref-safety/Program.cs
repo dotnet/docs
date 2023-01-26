@@ -1,7 +1,5 @@
 ﻿using RefSafety;
 
-var i = EscapeScopes.OuterMethod();
-Console.WriteLine(i);
 
 ref int value = ref (new EscapeScopes().RetrieveIndexRef());
 Console.WriteLine(value);

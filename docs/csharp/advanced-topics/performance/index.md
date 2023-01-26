@@ -1,7 +1,7 @@
 ---
 title: Avoid memory allocations and data copies
 description: Performance work in .NET means removing allocations from your code. One technique is to change critical data structures from `class` to `struct`. That changes semantics and means more data is being copied. Learn how to minimize allocations while preserving semantics and avoid extra copies.
-ms.date: 01/24/2023
+ms.date: 01/27/2023
 ms.technology: csharp-advanced-concepts
 ---
 # Reduce memory allocations using new C# features
@@ -33,28 +33,9 @@ When you *assign* a variable, you change its *value*. When you *ref assign* a va
 
 You can work directly with the storage for values using `ref` variables, pass by reference, and ref assignment. Scope rules enforced by the compiler ensure safety when working directly with storage.
 
-## Safe to escape scopes
+## Ref safe to escape scope
 
-An expression can be safely accessed in its *safe to escape* scope. The *safe to escape* scope for an expression is the scope where that expression can be accessed. When the scope of an expression is the entire method, that expression is safe to return. This definition is sufficient for all value expressions. When an expression is returned from a method, it's copied. The copied value is assigned in the enclosing scope. The copy now has its own *safe to escape* scope. The following example shows how a value safely escapes a method:
-
-:::code language="csharp" source="./snippets/ref-safety/EscapeScopes.cs" id="SafeToEscapeScope":::
-
-In the preceding example, the *safe to escape* scopes for both `m` and `n` are the entire method. Both can be returned from the current method. Contrast the previous sample with the following method:
-
-```csharp
-private static int SumSome()
-{
-    for (int n = 0; n < 10; n++)
-    {
-        int m = n; // The safe to escape scope of 'm' is the `for` loop
-    }
-    return m; // Error. m is not in scope.
-}
-```
-
-The *safe to escape* scope for a value is generally the enclosing scope where the variable is defined.
-
-A variable expression can be safely accessed or assigned in its *ref safe to escape* scope. The *ref safe to escape* scope is the scope where that expression can be accessed or assigned. You can think of it informally as where the storage for that expression is valid. The *ref safe to escape* scope for a variable is often the scope in which it's declared. The following example shows that a local variable's *ref safe to escape* scope is the body of the method:
+C# includes rules for `ref` expressions to ensure that a `ref` expression can't be accessed where the storage it refers to is no longer valid. Consider the following example:
 
 ```csharp
 public ref int CantEscape()
@@ -64,11 +45,37 @@ public ref int CantEscape()
 }
 ```
 
-For a variable to have a *ref safe to escape* scope of the entire method, it must be accessible and assignable outside the method. For example, a field can be accessed from the scope calling a method, so a class or struct field's *ref safe to escape* is the entire method. It can be `ref` returned from a member method:
+The compiler reports an error because you can't return a reference to a local variable from a method. The caller can't access the storage being referred to. The *ref safe to escape scope* defines the scope in which a `ref` expression is safe to access or modify. For non-ref locals, the *ref safe to escape* scope is the body of the method. In other words, a non-ref local can't be returned as a `ref` expression. For a variable to have a *ref safe to escape scope* of the entire method, it must be accessible and assignable outside the method. The following snippet shows two examples. A member field can be accessed from the scope calling a method, so a class or struct field's *ref safe to escape scope* is the entire method. The *ref safe to escape scope* for a parameter with the `ref`, `in`, or `out` modifiers is also the entire method. Both can be `ref` returned from a member method:
 
 :::code language="csharp" source="./snippets/ref-safety/EscapeScopes.cs" id="RefSafeToEscapeScopes":::
 
-The compiler ensures that a reference can't escape its *ref safe to escape* scope. Those rules provide safety. A reference can be accessed or assigned safely in its *ref to escape* scope. If the reference is visible outside that scope, accessing it could result in accessing already freed memory or unallocated memory. Assigning it could overwrite memory currently used for other variables.
+> [!NOTE]
+> When the `in` modifier is applied to a parameter, that parameter can be returned by `ref readonly`, not `ref`.
+
+The compiler ensures that a reference can't escape its *ref safe to escape scope*. You can use `ref` parameters, `ref return` and `ref` local variables safely because the compiler detects if you've accidentally written code where a `ref` expression could be accessed when its storage isn't valid.
+
+## Safe to escape scope and ref structs
+
+`ref struct` types require more rules to ensure they can be used safely. A `ref struct` type may include `ref` fields. That requires the introduction of a *safe to escape scope*. For most types, the *safe to escape scope* is the entire method. In other words, a value that's not a `ref struct` can always be returned from a method.
+
+Informally, the *safe to escape scope* for a `ref struct` is the scope where all of its `ref` fields can be accessed. In other words, it's the intersection of the *ref safe to escape scopes* of all its `ref` fields. The following method returns a `ReadOnlySpan<char>` to a member field, so its *safe to escape scope* is the method:
+
+:::code language="csharp" source="./snippets/ref-safety/EscapeScopes.cs" id="SafeToEscapeScope":::
+
+In contrast, the following code emits an error because the `ref field` member of the `Span<int>` refers to the stack allocated array of integers. It can't escape the method:
+
+```csharp
+public Span<int> M()
+{
+    int length = 3;
+    Span<int> numbers = stackalloc int[length];
+    for (var i = 0; i < length; i++)
+    {
+        numbers[i] = i;
+    }
+    return numbers; // Error! numbers can't escape this method.
+}
+```
 
 ## Unify memory types
 
@@ -84,4 +91,4 @@ Using these features to improve performance involves these tasks:
 - *Restrict modifications*: When a `struct` type is passed by reference, the called method could modify the state of the struct. You can replace the `ref` modifier with the `in` modifier to indicate that the argument can't be modified. You can also create `readonly struct` types or `struct` types with `readonly` members to provide more control over what members of a `struct` can be modified.
 - *Directly manipulate memory*: Some algorithms are most efficient when treating data structures as a block of memory containing a sequence of elements. The `Span` and `Memory` types provide safe access to blocks of memory.
 
-None of these techniques require `unsafe` code. Used wisely, you can get performance characteristics from safe code that was previously only possible by using unsafe techniques. You can try the techniques yourself in the tutorial on [reducing memory allocaitons](ref-tutorial.md)
+None of these techniques require `unsafe` code. Used wisely, you can get performance characteristics from safe code that was previously only possible by using unsafe techniques. You can try the techniques yourself in the tutorial on [reducing memory allocations](ref-tutorial.md)

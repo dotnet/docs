@@ -626,7 +626,7 @@ list[..^1]
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
 Write them on one line when:
 
-* `cond`, `e1`, and `e2` are short
+* `cond`, `e1`, and `e2` are short.
 * `e1` and `e2` are not `if/then/else` expressions themselves.
 
 ```fsharp
@@ -646,16 +646,6 @@ if a then
 if a then ()
 ```
 
-If any of the expressions are multi-line or `if/then/else` expressions.
-
-```fsharp
-// ✔️ OK
-if cond then
-    e1
-else
-    e2
-```
-
 Multiple conditionals with `elif` and `else` are indented at the same scope as the `if` when they follow the rules of the one line `if/then/else` expressions.
 
 ```fsharp
@@ -671,6 +661,7 @@ If any of the conditions or expressions is multi-line, the entire `if/then/else`
 ```fsharp
 // ✔️ OK
 if cond1 then
+    let e1 = something()
     e1
 elif cond2 then
     e2
@@ -826,7 +817,7 @@ let pascalsTriangle =
     |]
 ```
 
-If a list or array expression is the right-hand side of a binding, you may prefer to use "Stroustrup" style:
+If a list or array expression is the right-hand side of a binding, you may prefer to use `Stroustrup` style:
 
 ```fsharp
 // ✔️ OK
@@ -846,7 +837,7 @@ let pascalsTriangle = [|
 However, when a list or array expression is *not* the right-hand side of a binding, such as when it's inside of another list or array, if that inner expression needs to span multiple lines, the brackets should go on their own lines:
 
 ```fsharp
-// ✔️ OK - The outer list follows "Stroustrup" style, while the inner lists place their brackets on separate lines
+// ✔️ OK - The outer list follows `Stroustrup` style, while the inner lists place their brackets on separate lines
 let fn a b = [ 
     [
         someReallyLongValueThatWouldForceThisListToSpanMultipleLines
@@ -871,7 +862,7 @@ let fn a b = [ [
 The same rule applies for record types inside of arrays/lists:
 
 ```fsharp
-// ✔️ OK - The outer list follows "Stroustrup" style, while the inner lists place their brackets on separate lines
+// ✔️ OK - The outer list follows `Stroustrup` style, while the inner lists place their brackets on separate lines
 let fn a b = [ 
     {
         Foo = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
@@ -1038,7 +1029,7 @@ let newState = {
 }
 ```
 
-**Note**: If using `Stroustrup` style for copy-and-update expressions, members *must* be indented further than the copied record name
+**Note**: If using `Stroustrup` style for copy-and-update expressions, you *must* indent members further than the copied record name:
 
 ```fsharp
 // ✔️ OK
@@ -1272,7 +1263,7 @@ let comparer =
               reversed.CompareTo (rev s2) }
 ```
 
-You may also prefer to use "Stroustrup" style:
+You may also prefer to use `Stroustrup` style:
 
 ```fsharp
 let comparer = { 
@@ -1477,7 +1468,7 @@ let thisFunction() =
 
 When formatting `let` and `member` declarations, typically the right-hand side of a binding either goes on one line, or (if it's too long) goes on a new line indented one level.
 
-For example, the following are compliant:
+For example, the following examples are compliant:
 
 ```fsharp
 // ✔️ OK
@@ -1530,7 +1521,7 @@ let bilbo =
     }
 ```
 
-You may also prefer to use "Stroustrup" style, with the opening `{` on the same line as the binding name:
+You may also prefer to use `Stroustrup` style, with the opening `{` on the same line as the binding name:
 
 ```fsharp
 // ✔️ OK
@@ -1667,7 +1658,7 @@ For any custom operator that starts with `*` and that has more than one characte
 
 ### Formatting record declarations
 
-For record declarations, by default you should indent `{` in type definition by four spaces, start the field list on the same line and align any members with the `{` token:
+For record declarations, by default you should indent `{` in type definitions by four spaces, start the field list on the same line, and align any members with the `{` token:
 
 ```fsharp
 // ✔️ OK
@@ -1689,7 +1680,7 @@ type PostalAddress =
     }
 ```
 
-You may also put the `{` at the end of the type declaration line like ("stroustrup" style):
+You may also put the `{` at the end of the type declaration line like (`Stroustrup` style):
 
 ```fsharp
 // ✔️ OK
@@ -1700,7 +1691,7 @@ type PostalAddress = {
 }
 ```
 
-If additional members are needed, whenever possible, don't use `with`/`end`:.
+If additional members are needed, don't use `with`/`end` whenever possible:
 
 ```fsharp
 // ✔️ OK
@@ -1740,7 +1731,7 @@ type PostalAddress =
     end
 ```
 
-The exception to this style rule is if you format records according to the "Stroustrup" style. In this situation, due to compiler rules, the `with` keyword is required if you want to implement an interface or add additional members:
+The exception to this style rule is if you format records according to the `Stroustrup` style. In this situation, due to compiler rules, the `with` keyword is required if you want to implement an interface or add additional members:
 
 ```fsharp
 // ✔️ OK
@@ -1836,7 +1827,7 @@ type MyRecord =
     interface IMyInterface
 ```
 
-These same rules apply for anonymous record type aliases:
+These same rules apply for anonymous record type aliases.
 
 ### Formatting discriminated union declarations
 

@@ -67,15 +67,15 @@ For example, the <xref:System.String.IndexOf%2A> method, which returns the index
 We recommend that you select an overload that does not use default values, for the following reasons:
 
 - Some overloads with default parameters (those that search for a <xref:System.Char> in the string instance) perform an ordinal comparison, whereas others (those that search for a string in the string instance) are culture-sensitive. It is difficult to remember which method uses which default value, and easy to confuse the overloads.
-- The intent of the code that relies on default values for method calls is not clear. In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between `protocol` and "http" might cause the test for equality to return `false`.
+- The intent of the code that relies on default values for method calls is not clear. In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between `url.Scheme` and "https" might cause the test for equality to return `false`.
 
-     [!code-csharp[Conceptual.Strings.BestPractices#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/explicitargs1.cs#1)]
-     [!code-vb[Conceptual.Strings.BestPractices#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/explicitargs1.vb#1)]
+  :::code language="csharp" source="./snippets/best-practices-strings/csharp/explicitargs/Program.cs" id="default":::
+  :::code language="vb" source="./snippets/best-practices-strings/vb/explicitargs/Program.vb" id="default":::
 
 In general, we recommend that you call a method that does not rely on defaults, because it makes the intent of the code unambiguous. This, in turn, makes the code more readable and easier to debug and maintain. The following example addresses the questions raised about the previous example. It makes it clear that ordinal comparison is used and that differences in case are ignored.
 
-[!code-csharp[Conceptual.Strings.BestPractices#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/explicitargs1.cs#2)]
-[!code-vb[Conceptual.Strings.BestPractices#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/explicitargs1.vb#2)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/explicitargs/Program.cs" id="explicit":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/explicitargs/Program.vb" id="explicit":::
 
 ## The details of string comparison
 
@@ -94,8 +94,8 @@ One criterion involves using the conventions of the current culture when compari
 
 However, comparison and casing behavior in .NET changes when the culture changes. This happens when an application executes on a computer that has a different culture than the computer on which the application was developed, or when the executing thread changes its culture. This behavior is intentional, but it remains non-obvious to many developers. The following example illustrates differences in sort order between the U.S. English ("en-US") and Swedish ("sv-SE") cultures. Note that the words "ångström", "Windows", and "Visual Studio" appear in different positions in the sorted string arrays.
 
-[!code-csharp[Conceptual.Strings.BestPractices#3](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison1.cs#3)]
-[!code-vb[Conceptual.Strings.BestPractices#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison1.vb#3)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/comparison1/Program.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/comparison1/Program.vb":::
 
 Case-insensitive comparisons that use the current culture are the same as culture-sensitive comparisons, except that they ignore case as dictated by the thread's current culture. This behavior may manifest itself in sort orders as well.
 
@@ -116,18 +116,18 @@ For nearly all Latin alphabets, including U.S. English, the character "i" (\u006
 
 Therefore, assumptions made about capitalizing "i" or lowercasing "I" are not valid among all cultures. If you use the default overloads for string comparison routines, they will be subject to variance between cultures. If the data to be compared is non-linguistic, using the default overloads can produce undesirable results, as the following attempt to perform a case-insensitive comparison of the strings "file" and "FILE" illustrates.
 
-[!code-csharp[Conceptual.Strings.BestPractices#11](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/turkish1.cs#11)]
-[!code-vb[Conceptual.Strings.BestPractices#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/turkish1.vb#11)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/turkish/Program.cs" id="main":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/turkish/Program.vb" id="main":::
 
 This comparison could cause significant problems if the culture is inadvertently used in security-sensitive settings, as in the following example. A method call such as `IsFileURI("file:")` returns `true` if the current culture is U.S. English, but `false` if the current culture is Turkish. Thus, on Turkish systems, someone could circumvent security measures that block access to case-insensitive URIs that begin with "FILE:".
 
-[!code-csharp[Conceptual.Strings.BestPractices#12](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/turkish1.cs#12)]
-[!code-vb[Conceptual.Strings.BestPractices#12](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/turkish1.vb#12)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/turkish/Program.cs" id="culture-sensitive":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/turkish/Program.vb" id="sensitive":::
 
 In this case, because "file:" is meant to be interpreted as a non-linguistic, culture-insensitive identifier, the code should instead be written as shown in the following example:
 
-[!code-csharp[Conceptual.Strings.BestPractices#13](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/turkish1.cs#13)]
-[!code-vb[Conceptual.Strings.BestPractices#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/turkish1.vb#13)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/turkish/Program.cs" id="ordinal":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/turkish/Program.vb" id="ordinal":::
 
 ### Ordinal string operations
 
@@ -142,23 +142,23 @@ Strings in .NET can contain embedded null characters. One of the clearest differ
 
 The following example performs a culture-sensitive comparison of the string "Aa" with a similar string that contains several embedded null characters between "A" and "a", and shows how the two strings are considered equal:
 
-[!code-csharp[Conceptual.Strings.BestPractices#19](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/embeddednulls1.cs#19)]
- [!code-vb[Conceptual.Strings.BestPractices#19](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/embeddednulls1.vb#19)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/embeddednulls1/Program.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/embeddednulls1/Program.vb":::
 
 However, the strings are not considered equal when you use ordinal comparison, as the following example shows:
 
-[!code-csharp[Conceptual.Strings.BestPractices#20](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/embeddednulls2.cs#20)]
-[!code-vb[Conceptual.Strings.BestPractices#20](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/embeddednulls2.vb#20)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/embeddednulls2/Program.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/embeddednulls2/Program.vb":::
 
 Case-insensitive ordinal comparisons are the next most conservative approach. These comparisons ignore most casing; for example, "windows" matches "Windows". When dealing with ASCII characters, this policy is equivalent to <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>, except that it ignores the usual ASCII casing. Therefore, any character in [A, Z] (\u0041-\u005A) matches the corresponding character in [a,z] (\u0061-\007A). Casing outside the ASCII range uses the invariant culture's tables. Therefore, the following comparison:
 
-[!code-csharp[Conceptual.Strings.BestPractices#4](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison2.cs#4)]
-[!code-vb[Conceptual.Strings.BestPractices#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison2.vb#4)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/comparison2/Program.cs" id="OrdinalIgnoreCase":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/comparison2/Program.vb" id="OrdinalIgnoreCase":::
 
 is equivalent to (but faster than) this comparison:
 
-[!code-csharp[Conceptual.Strings.BestPractices#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison2.cs#5)]
-[!code-vb[Conceptual.Strings.BestPractices#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison2.vb#5)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/comparison2/Program.cs" id="Ordinal":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/comparison2/Program.vb" id="Ordinal":::
 
 These comparisons are still very fast.
 
@@ -178,8 +178,8 @@ InvariantCulture: a + ̊ = å
 
 The LATIN SMALL LETTER A character "a"  (\u0061), when it is next to the COMBINING RING ABOVE character "+ " ̊" (\u030a), is interpreted as the LATIN SMALL LETTER A WITH RING ABOVE character "å" (\u00e5). As the following example shows, this behavior differs from ordinal comparison.
 
-[!code-csharp[Conceptual.Strings.BestPractices#15](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison3.cs#15)]
-[!code-vb[Conceptual.Strings.BestPractices#15](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison3.vb#15)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/comparison3/Program.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/comparison3/Program.vb":::
 
 When interpreting file names, cookies, or anything else where a combination such as "å" can appear, ordinal comparisons still offer the most transparent and fitting behavior.
 
@@ -216,8 +216,8 @@ This method does not currently offer an overload that specifies a <xref:System.S
 
 Types that implement the <xref:System.IComparable> and <xref:System.IComparable%601> interfaces implement this method. Because it does not offer the option of a <xref:System.StringComparison> parameter, implementing types often let the user specify a <xref:System.StringComparer> in their constructor. The following example defines a `FileName` class whose class constructor includes a <xref:System.StringComparer> parameter. This <xref:System.StringComparer> object is then used in the `FileName.CompareTo` method.
 
-[!code-csharp[Conceptual.Strings.BestPractices#6](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/api1.cs#6)]
-[!code-vb[Conceptual.Strings.BestPractices#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/api1.vb#6)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/api/Program.cs" id="class":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/api/Program.vb" id="class":::
 
 ### String.Equals
 
@@ -272,18 +272,18 @@ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProp
 
 When you store any data in a collection, or read persisted data from a file or database into a collection, switching the current culture can invalidate the invariants in the collection. The <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> method assumes that the elements in the array to be searched are already sorted. To sort any string element in the array, the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method calls the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to order individual elements. Using a culture-sensitive comparer can be dangerous if the culture changes between the time that the array is sorted and its contents are searched. For example, in the following code, storage and retrieval operate on the comparer that is provided implicitly by the `Thread.CurrentThread.CurrentCulture` property. If the culture can change between the calls to `StoreNames` and `DoesNameExist`, and especially if the array contents are persisted somewhere between the two method calls, the binary search may fail.
 
-[!code-csharp[Conceptual.Strings.BestPractices#7](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect1.cs#7)]
- [!code-vb[Conceptual.Strings.BestPractices#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect1.vb#7)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/binarysearch.cs" id="no-compare" highlight="11,15":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/binarysearch.vb" id="no-compare" highlight="10,14":::
 
 A recommended variation appears in the following example, which uses the same ordinal (culture-insensitive) comparison method both to sort and to search the array. The change code is reflected in the lines labeled `Line A` and `Line B` in the two examples.
 
-[!code-csharp[Conceptual.Strings.BestPractices#8](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect1.cs#8)]
-[!code-vb[Conceptual.Strings.BestPractices#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect1.vb#8)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/binarysearch.cs" id="ordinal" highlight="11,15":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/binarysearch.vb" id="ordinal" highlight="10,14":::
 
 If this data is persisted and moved across cultures, and sorting is used to present this data to the user, you might consider using <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType>, which operates linguistically for better user output but is unaffected by changes in culture. The following example modifies the two previous examples to use the invariant culture for sorting and searching the array.
 
-[!code-csharp[Conceptual.Strings.BestPractices#9](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect1.cs#9)]
-[!code-vb[Conceptual.Strings.BestPractices#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect1.vb#9)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/binarysearch.cs" id="invariant" highlight="11,15":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/binarysearch.vb" id="invariant" highlight="10,14":::
 
 ### Collections example: Hashtable constructor
 
@@ -291,8 +291,8 @@ Hashing strings provides a second example of an operation that is affected by th
 
 The following example instantiates a <xref:System.Collections.Hashtable> object by passing it the <xref:System.StringComparer> object that is returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=nameWithType> property. Because a class <xref:System.StringComparer> that is derived from <xref:System.StringComparer> implements the <xref:System.Collections.IEqualityComparer> interface, its <xref:System.Collections.IEqualityComparer.GetHashCode%2A> method is used to compute the hash code of strings in the hash table.
 
-[!code-csharp[Conceptual.Strings.BestPractices#10](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect2.cs#10)]
-[!code-vb[Conceptual.Strings.BestPractices#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect2.vb#10)]
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/Program.cs":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/Program.vb":::
 
 ## See also
 

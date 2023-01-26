@@ -13,11 +13,11 @@ Date parsing is the functionality that's most affected by this change.
 
 ## Previous behavior
 
-In .NET 6 and .NET 7, if you didn't specify a value for <xref:System.Globalization.Calendar.TwoDigitYearMax>, parsing a string like "12/10/35" with the Gregorian calendar produced the date "December 12th, 1935".
+In .NET 6 and .NET 7, if you didn't specify a value for <xref:System.Globalization.Calendar.TwoDigitYearMax>, parsing a string like "12/10/35" with the Gregorian calendar produced the date "December 10th, 1935".
 
 ## New behavior
 
-Starting in .NET 8, parsing a string like "12/10/35" with the Gregorian calendar produces the date "December 12th, 2035".
+Starting in .NET 8, parsing a string like "12/10/35" with the Gregorian calendar produces the date "December 10th, 2035".
 
 ## Version introduced
 

@@ -28,8 +28,8 @@ To explicitly specify that a string should be formatted by using the conventions
 
 - For string concatenation, do not allow the compiler to perform any implicit conversions. Instead, perform an explicit conversion by calling a `ToString` overload that has a `provider` parameter. For example, the compiler implicitly uses the current culture when converting a <xref:System.Double> value to a string in the following code:
 
-  [!code-csharp[Implicit String Conversion](./snippets/best-practices-strings/csharp/tostring/Program.cs#1)]
-  [!code-vb[Implicit String Conversion](./snippets/best-practices-strings/vb/tostring/Program.vb#1)]
+  [!code-csharp[Implicit String Conversion](./snippets/best-practices-display-data/csharp/tostring/Program.cs#1)]
+  [!code-vb[Implicit String Conversion](./snippets/best-practices-display-data/vb/tostring/Program.vb#1)]
 
   Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following code does:
 

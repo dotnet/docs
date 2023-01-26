@@ -40,4 +40,4 @@ public class SensorMeasurement
                 CO2 (ppm): {CO2:F3}
             """;
 }
-// <SensorMeasurementClass>
+// </SensorMeasurementClass>

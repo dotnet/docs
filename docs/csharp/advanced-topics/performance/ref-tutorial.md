@@ -122,7 +122,7 @@ The other three compiler errors are all in the method that repeatedly takes meas
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-starter/Room.cs" id="InitialTakeMeasurement":::
 
-In the previous method, the local variable for the `SensorMeasurement` is a *nullable reference*: 
+In the previous method, the local variable for the `SensorMeasurement` is a *nullable reference*:
 
 ```csharp
 SensorMeasurement? measure = default;
@@ -157,7 +157,7 @@ We'll leave this one as is, returning by value. If you tried to return by ref, y
 
 Next, let's look again at the `DebounceMeasurement` method. You should add the `in` modifier to the `measurement` parameter:
 
-:::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-starter/DebounceMeasurement.cs" id="InArgument":::
+:::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/DebounceMeasurement.cs" id="InArgument":::
 
 That saves one copy operation. The `in` parameter is a reference to the copy already created by the caller. You can also save a copy with the `TakeMeasurement` method in the `Room` type. This method illustrates how the compiler provides safety when you pass arguments by `ref`. The initial `TakeMeasurement` method in the `Room` type takes an argument of `Func<SensorMeasurement, bool>`. If you try to add the `in` or `ref` modifier to that declaration, the compiler reports an error. You can't pass a `ref` argument to a lambda expression. The compiler can't guarantee that the called expression doesn't copy the reference. If the lambda expression *captures* the reference, the reference could have a lifetime longer than the value it refers to. That could result in memory corruption. The `ref` safety rules don't allow it.
 

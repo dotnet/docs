@@ -1,7 +1,7 @@
 ---
 title: Avoid memory allocations and data copies
 description: Performance work in .NET means removing allocations from your code. One technique is to change critical data structures from `class` to `struct`. That changes semantics and means more data is being copied. Learn how to minimize allocations while preserving semantics and avoid extra copies.
-ms.date: 12/18/2022
+ms.date: 01/24/2023
 ms.technology: csharp-advanced-concepts
 ---
 # Reduce memory allocations using new C# features

@@ -5,7 +5,7 @@
         _storedNames = Array.Empty<string>();
     }
 
-    // <no-compare>
+    // <no_compare>
     // Incorrect
     string[] _storedNames;
 
@@ -21,7 +21,7 @@
 
     public bool DoesNameExist(string name) =>
         Array.BinarySearch(_storedNames, name) >= 0; // Line B
-    // </no-compare>
+    // </no_compare>
 }
 
 public class Class2

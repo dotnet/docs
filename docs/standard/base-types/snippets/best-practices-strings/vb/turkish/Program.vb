@@ -32,11 +32,11 @@ End Module
 '</main>
 
 Class Example2
-    '<culture-sensitive>
+    '<culture_sensitive>
     Public Shared Function IsFileURI(path As String) As Boolean
         Return path.StartsWith("FILE:", True, Nothing)
     End Function
-    '</culture-sensitive>
+    '</culture_sensitive>
 End Class
 
 Class Example3

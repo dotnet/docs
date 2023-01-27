@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Comparing Strings in .NET"
 description: Learn how to compare strings effectively in .NET applications.
-ms.date: "05/01/2019"
+ms.date: 01/26/2023
 ms.topic: conceptual
 dev_langs:
   - "csharp"
@@ -121,8 +121,8 @@ Therefore, assumptions made about capitalizing "i" or lowercasing "I" are not va
 
 This comparison could cause significant problems if the culture is inadvertently used in security-sensitive settings, as in the following example. A method call such as `IsFileURI("file:")` returns `true` if the current culture is U.S. English, but `false` if the current culture is Turkish. Thus, on Turkish systems, someone could circumvent security measures that block access to case-insensitive URIs that begin with "FILE:".
 
-:::code language="csharp" source="./snippets/best-practices-strings/csharp/turkish/Program.cs" id="culture-sensitive":::
-:::code language="vb" source="./snippets/best-practices-strings/vb/turkish/Program.vb" id="sensitive":::
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/turkish/Program.cs" id="culture_sensitive":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/turkish/Program.vb" id="culture_sensitive":::
 
 In this case, because "file:" is meant to be interpreted as a non-linguistic, culture-insensitive identifier, the code should instead be written as shown in the following example:
 
@@ -216,8 +216,8 @@ This method does not currently offer an overload that specifies a <xref:System.S
 
 Types that implement the <xref:System.IComparable> and <xref:System.IComparable%601> interfaces implement this method. Because it does not offer the option of a <xref:System.StringComparison> parameter, implementing types often let the user specify a <xref:System.StringComparer> in their constructor. The following example defines a `FileName` class whose class constructor includes a <xref:System.StringComparer> parameter. This <xref:System.StringComparer> object is then used in the `FileName.CompareTo` method.
 
-:::code language="csharp" source="./snippets/best-practices-strings/csharp/api/Program.cs" id="class":::
-:::code language="vb" source="./snippets/best-practices-strings/vb/api/Program.vb" id="class":::
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/stringcomparer/Program.cs" id="class":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/stringcomparer/Program.vb" id="class":::
 
 ### String.Equals
 
@@ -272,8 +272,8 @@ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProp
 
 When you store any data in a collection, or read persisted data from a file or database into a collection, switching the current culture can invalidate the invariants in the collection. The <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> method assumes that the elements in the array to be searched are already sorted. To sort any string element in the array, the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method calls the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to order individual elements. Using a culture-sensitive comparer can be dangerous if the culture changes between the time that the array is sorted and its contents are searched. For example, in the following code, storage and retrieval operate on the comparer that is provided implicitly by the `Thread.CurrentThread.CurrentCulture` property. If the culture can change between the calls to `StoreNames` and `DoesNameExist`, and especially if the array contents are persisted somewhere between the two method calls, the binary search may fail.
 
-:::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/binarysearch.cs" id="no-compare" highlight="11,15":::
-:::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/binarysearch.vb" id="no-compare" highlight="10,14":::
+:::code language="csharp" source="./snippets/best-practices-strings/csharp/indirect1/binarysearch.cs" id="no_compare" highlight="11,15":::
+:::code language="vb" source="./snippets/best-practices-strings/vb/indirect1/binarysearch.vb" id="no_compare" highlight="10,14":::
 
 A recommended variation appears in the following example, which uses the same ordinal (culture-insensitive) comparison method both to sort and to search the array. The change code is reflected in the lines labeled `Line A` and `Line B` in the two examples.
 

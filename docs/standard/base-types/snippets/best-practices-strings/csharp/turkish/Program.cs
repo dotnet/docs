@@ -27,10 +27,10 @@ Console.WriteLine($"   Does 'Bill' start with 'BILL'? {name.StartsWith("BILL", t
 
 public class Example2
 {
-    // <culture-sensitive>
+    // <culture_sensitive>
     public static bool IsFileURI(string path) =>
         path.StartsWith("FILE:", true, null);
-    // </culture-sensitive>
+    // </culture_sensitive>
 }
 
 public class Example3

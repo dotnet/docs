@@ -70,9 +70,6 @@ conceptualContent:
         - url: core/whats-new/dotnet-7.md
           itemType: whats-new
           text: What's new in .NET 7
-        - url: core/deploying/index.md
-          itemType: deploy
-          text: Deploy .NET apps
         - url: https://dotnetfoundation.org
           itemType: overview
           text: .NET Foundation
@@ -82,6 +79,7 @@ conceptualContent:
         - url: /dotnet/communitytoolkit/
           itemType: overview
           text: Community Toolkits
+
     # Card
     - title: .NET concepts
       links:
@@ -91,23 +89,43 @@ conceptualContent:
         - url: fundamentals/index.yml
           itemType: concept
           text: .NET fundamentals
-        - url: /aspnet/core/
-          itemType: overview
-          text: ASP.NET Core
         - url: fundamentals/implementations.md
           itemType: concept
           text: .NET implementations
         - url: framework/index.yml
           itemType: overview
-          text: .NET Framework (Windows) apps
+          text: .NET Framework (for Windows)
+        - url: standard/net-standard.md
+          itemType: overview
+          text: .NET Standard
         - url: /answers/products/dotnet
           itemType: get-started
           text: .NET Q&A
         - url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
           itemType: concept
           text: .NET tech community forums
+        - url: standard/security/index.md
+          itemType: overview
+          text: Security in .NET
+
     # Card
     - title: Develop .NET apps
+      links:
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
+          itemType: tutorial
+          text: Create .NET desktop apps for Windows
+        - url: /aspnet/core/
+          itemType: overview
+          text: Create web apps with ASP.NET Core
+        - url: orleans/index.yml
+          itemType: overview
+          text: Build cloud-native .NET apps with Orleans
+        - url: core/docker/build-container.md
+          itemType: tutorial
+          text: Containerize .NET apps with Docker
+
+    # Card
+    - title: .NET tools and diagnostics
       links:
         - url: core/sdk.md
           itemType: overview
@@ -115,30 +133,48 @@ conceptualContent:
         - url: core/tools/index.md
           itemType: overview
           text: .NET CLI overview
-        - url: standard/net-standard.md
+        - url: core/project-sdk/msbuild-props.md
+          itemType: reference
+          text: MSBuild property reference
+        - url: core/tools/global-tools.md
           itemType: overview
-          text: .NET Standard
+          text: Global and local tools
+        - url: core/diagnostics/index.md
+          itemType: overview
+          text: Diagnostics tools
+        - url: fundamentals/code-analysis/overview.md
+          itemType: overview
+          text: Code analysis
+        - url: fundamentals/package-validation/overview.md
+          itemType: overview
+          text: Package validation
+          
+    # Card
+    - title: Migrate and upgrade
+      links:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
         - url: core/compatibility/breaking-changes.md
           itemType: concept
           text: .NET breaking changes
-        - url: orleans/index.yml
-          itemType: overview
-          text: Build cloud-native .NET apps with Orleans
-        - url: core/docker/build-container.md
-          itemType: tutorial
-          text: Containerize .NET apps with Docker
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
-          itemType: tutorial
-          text: Create .NET desktop apps for Windows
+        - url: https://dotnet.microsoft.com/download
+          itemType: download
+          text: Download .NET
+
     # Card
-    - title: .NET security
+    - title: DevOps and testing
       links:
-        - url: standard/security/index.md
+        - url: core/deploying/index.md
+          itemType: deploy
+          text: Deploy .NET apps
+        - url: core/testing/index.md
           itemType: overview
-          text: Security documentation
+          text: Unit test .NET apps
+        - url: devops/github-actions-overview.md
+          itemType: overview
+          text: GitHub Actions and .NET
+
     # Card
     - title: Data access in .NET
       links:
@@ -154,12 +190,25 @@ conceptualContent:
         - url: standard/data/xml/index.md
           itemType: overview
           text: XML data
+
     # Card
-    - title: Asynchronous programming
+    - title: Advanced .NET programming
       links:
         - url: standard/asynchronous-programming-patterns/index.md
           itemType: overview
           text: Async programming patterns overview
+        - url: standard/threading/managed-threading-basics.md
+          itemType: overview
+          text: Threading overview
+        - url: standard/parallel-programming/index.md
+          itemType: overview
+          text: Parallel programming overview
+        - url: standard/native-interop/index.md
+          itemType: overview
+          text: Native interoperability
+        - url: standard/garbage-collection/index.md
+          itemType: overview
+          text: Garbage collection
 
 # tools section (optional)
 ## Languages: C#, F#, and Visual Basic

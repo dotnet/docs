@@ -20,6 +20,10 @@ items:
         href: cryptography/8.0/aesgcm-auth-tag-size.md
       - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
         href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
+    - name: Globalization
+      items:
+      - name: TwoDigitYearMax default is 2049
+        href: globalization/8.0/twodigityearmax-default.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
@@ -1114,6 +1118,10 @@ items:
         href: extensions/6.0/service-provider-disposed.md
   - name: Globalization
     items:
+    - name: .NET 8
+      items:
+      - name: TwoDigitYearMax default is 2049
+        href: globalization/8.0/twodigityearmax-default.md
     - name: .NET 7
       items:
       - name: Globalization APIs use ICU libraries on Windows Server

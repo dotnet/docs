@@ -5,7 +5,7 @@ ms.date: 01/26/2023
 ---
 # Activity operation name when null
 
-A `null` operation name in an <xref:System.Diagnostics.Activity> object can have an undesirable effect on backend trace collectors. In most cases, trace collectors assume non-null operation names. Starting in .NET 8, if you create an `Activity` object using `null` for the operation name, the operation name will be stored as an empty string (`""`) instead of `null`.
+Starting in .NET 8, if you create an `Activity` object using `null` for the operation name, the operation name will be stored as an empty string (`""`) instead of `null`.
 
 ## Previous behavior
 
@@ -33,6 +33,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
+A `null` operation name in an <xref:System.Diagnostics.Activity> object can have an undesirable effect on backend trace collectors, which usually assume non-null operation names.
 To avoid crashes, trace collectors have to special case `null` operation names inside an <xref:System.Diagnostics.Activity> object. This change removes the special case requirement.
 
 ## Recommended action

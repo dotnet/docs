@@ -38,7 +38,7 @@ To avoid crashes, trace collectors have to special case `null` operation names i
 
 ## Recommended action
 
-This change is unlikely to cause breaks as using `null` when creating `Activity` objects is rare. If for any reason your code depends on the `null` value for the operation name, you'll need to adjust the code to either not use `null` or expect that the operation name will be stored as an empty string when you specify `null`.
+This change is unlikely to cause breaks as using `null` when creating `Activity` objects is rare. If for any reason your code depended on the `null` value for the operation name, adjust the code to either not use `null` or expect that the operation name will be stored as an empty string when you specify `null`.
 
 ## Affected APIs
 

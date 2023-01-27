@@ -153,7 +153,6 @@ Run the app using the profiler and look at the updated table for allocations. Yo
 
 :::image type="content" source="media/ref-tutorial/final-allocations.png" alt-text="Allocation graph for running the intruder alert app after modifications.":::
 
-
 Now, it's doing extra working copying the `SensorMeasurement` structure every time it's used as a parameter or a return value. The `SensorMeasurement` struct contains four doubles, a <xref:System.DateTime> and a `string`. That structure is measurably larger than a reference. Let's add the `ref` or `in` modifiers to places where the `SensorMeasurement` type is used.
 
 The next step is to find methods that return a measurement, or take a measurement as an argument, and use references where possible. Start in the `SensorMeasurement` struct. The static `TakeMeasurement` method creates and returns a new `SensorMeasurement`:

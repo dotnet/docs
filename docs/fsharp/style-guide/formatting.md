@@ -1683,7 +1683,7 @@ For any custom operator that starts with `*` and that has more than one characte
 
 ### Formatting record declarations
 
-For record declarations, by default you should indent `{` in type definitions by four spaces, start the field list on the same line, and align any members with the `{` token:
+For record declarations, by default you should indent the `{` in the type definition by four spaces, start the label list on the same line, and align members, if any, with the `{` token:
 
 ```fsharp
 // ✔️ OK
@@ -1693,7 +1693,7 @@ type PostalAddress =
       Zip: string }
 ```
 
-It is also common to prefer putting brackets on their own line, with members indented by an additional four spaces:
+It is also common to prefer putting brackets on their own line, with labels indented by an additional four spaces:
 
 ```fsharp
 // ✔️ OK
@@ -1705,7 +1705,7 @@ type PostalAddress =
     }
 ```
 
-You may also put the `{` at the end of the type declaration line like (`Stroustrup` style):
+You can also put the `{` at the end of the first line of the type definition (`Stroustrup` style):
 
 ```fsharp
 // ✔️ OK

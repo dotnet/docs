@@ -149,9 +149,7 @@ The compiler enforces the `readonly` nature of the `SensorMeasurement` struct. I
 
 ## Avoid making copies
 
-Run the app using the profiler and look at the updated table for allocations. You've removed a large number of unnecessary allocations from your app. The `SensorMeasurement` type doesn't appear in the table anywhere.
-
-:::image type="content" source="media/ref-tutorial/final-allocations.png" alt-text="Allocation graph for running the intruder alert app after modifications.":::
+You've removed a large number of unnecessary allocations from your app. The `SensorMeasurement` type doesn't appear in the table anywhere.
 
 Now, it's doing extra working copying the `SensorMeasurement` structure every time it's used as a parameter or a return value. The `SensorMeasurement` struct contains four doubles, a <xref:System.DateTime> and a `string`. That structure is measurably larger than a reference. Let's add the `ref` or `in` modifiers to places where the `SensorMeasurement` type is used.
 
@@ -198,6 +196,12 @@ There's one final change to improve performance. The main program is printing st
 The call to the generated `ToString` boxes the enum value. You can avoid that by writing an override in the `Room` class that formats the string based on the value of estimated risk:
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/Room.cs" id="RoomToString":::
+
+Run the app using the profiler and look at the updated table for allocations.
+
+:::image type="content" source="media/ref-tutorial/final-allocations.png" alt-text="Allocation graph for running the intruder alert app after modifications.":::
+
+You've removed numerous allocations, and provided your app with a performance boost.
 
 ## Using ref safety in your application
 

@@ -88,7 +88,7 @@ GitHub Actions are evolving rapidly and provide features such as triggers for al
 
 ### Feature comparison
 
-The following table is current as of November 2021.
+The following table is current as of January 2023 and is not an exhaustive list of features.
 
 |Feature|Description|GitHub Actions|Azure Pipelines|
 |-------|-----------|--------------|---------------|

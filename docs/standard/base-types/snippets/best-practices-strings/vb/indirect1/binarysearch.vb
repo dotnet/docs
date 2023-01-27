@@ -4,7 +4,7 @@
         _storedNames = Array.Empty(Of String)
     End Sub
 
-    '<no-compare>
+    '<no_compare>
     ' Incorrect
     Dim _storedNames As String()
 
@@ -20,7 +20,7 @@
     Function DoesNameExist(name As String) As Boolean
         Return Array.BinarySearch(_storedNames, name) >= 0 ' Line B
     End Function
-    '</no-compare>
+    '</no_compare>
 
 End Class
 

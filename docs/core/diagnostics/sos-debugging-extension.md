@@ -117,7 +117,7 @@ Windbg should load the SOS extension automatically whenever the process being de
 
 For instructions on configuring SOS for LLDB, see [dotnet-sos](dotnet-sos.md). SOS commands can be used on live processes or dumps.
 
-By default you can reach all the SOS commands by entering: `sos [command\_name]`. However, the common commands have been aliased so that you don't need the `sos` prefix:
+By default you can reach all the SOS commands by entering: `sos [command_name]`. However, the common commands have been aliased so that you don't need the `sos` prefix:
 
 | Command                               | Function
 | ------------------------------------- | ---------------------------------------------------------------------------------------------

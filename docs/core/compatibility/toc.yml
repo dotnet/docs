@@ -10,6 +10,8 @@ items:
       href: 8.0.md
     - name: Core .NET libraries
       items:
+      - name: Activity operation name when null
+        href: core-libraries/8.0/activity-operation-name.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
     - name: Cryptography
@@ -884,6 +886,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: Activity operation name when null
+        href: core-libraries/8.0/activity-operation-name.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
     - name: .NET 7

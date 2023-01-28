@@ -12,10 +12,12 @@ items:
       items:
       - name: Activity operation name when null
         href: core-libraries/8.0/activity-operation-name.md
-      - name: FileStream write to disposed pipe
+      - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: Legacy Console.ReadKey removed
+        href: core-libraries/8.0/console-readkey-legacy.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -890,10 +892,12 @@ items:
       items:
       - name: Activity operation name when null
         href: core-libraries/8.0/activity-operation-name.md
-      - name: FileStream write to disposed pipe
+      - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: Legacy Console.ReadKey removed
+        href: core-libraries/8.0/console-readkey-legacy.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID

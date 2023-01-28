@@ -60,6 +60,7 @@ Your folder tree will look like the following:
 The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
 
 ```dotnetcli
+cd App
 dotnet run
 Hello World!
 ```

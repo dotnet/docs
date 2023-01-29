@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 01/23/2023
+ms.date: 01/28/2023
 zone_pivot_groups: dotnet-version-6-7
 dev_langs:
   - "csharp"
@@ -31,7 +31,7 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="./media/with-visual-studio/start-window-2022.png" alt-text="Create a new project button selected on the Visual Studio start page":::
 
-1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console Application** template, and then choose **Next**.
+1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console App** template, and then choose **Next**.
 
    :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Create a new project window with filters selected":::
 

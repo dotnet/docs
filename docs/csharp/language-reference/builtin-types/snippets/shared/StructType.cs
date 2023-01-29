@@ -75,12 +75,7 @@ namespace builtin_types
         public struct Example
         {
             // <SnippetReadonlyProperty>
-            private int counter;
-            public int Counter
-            {
-                readonly get => counter;
-                set => counter = value;
-            }
+            public readonly int Counter;
             // </SnippetReadonlyProperty>
 
             // <ReadonlyWithInit>

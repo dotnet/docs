@@ -30,8 +30,6 @@ If hosting using the [.NET Generic Host](../../core/extensions/generic-host.md),
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-Alternatively, a client interface such as <xref:Orleans.IGrainFactory> can be obtained from <xref:Microsoft.Extensions.Hosting.IHost> (or the <xref:Orleans.IClusterClient.ServiceProvider?displayProperty=nameWithType>):
-
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->

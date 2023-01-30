@@ -26,7 +26,7 @@ ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 
 .NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
   
-Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. This functionality is available in .NET Framework, .NET Core, and .NET 5+.  You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
+Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
   
 ## Encrypt data to a file or stream using data protection  
   

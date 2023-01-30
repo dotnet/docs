@@ -21,7 +21,9 @@ There are several actions that are part of initializing a new instance. Those ac
 1. *Object initializers run*. If the expression includes any object initializers, those run after the instance constructor runs. Object initializers run in the textual order.
 
 The preceding actions take place when a new instance is initialized. If a new instance of a `struct` is set to its `default` value, all instance fields are set to 0.
- 
+
+If the [static constructor](static-constructors.md) hasn't run, the static constructor runs before any of the instance constructor actions take place.
+
 ## Constructor syntax
 
 A constructor is a method whose name is the same as the name of its type. Its method signature includes only an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.

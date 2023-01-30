@@ -37,7 +37,7 @@ namespace SystemTextJsonSamples
                 if (!reader.Read())
                 {
                     // Not enough of the JSON is in the buffer to complete a read.
-                    GetMoreBytesFromStream(stream, buffer, reader);
+                    GetMoreBytesFromStream(stream, buffer, ref reader);
                 }
             }
 

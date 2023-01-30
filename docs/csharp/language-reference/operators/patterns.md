@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 11/28/2022
+ms.date: 01/30/2023
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"

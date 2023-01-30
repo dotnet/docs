@@ -25,7 +25,7 @@ The following table shows the predefined implicit conversions between the built-
 |[short](integral-numeric-types.md)|`int`, `long`, `float`, `double`, or `decimal`, or `nint`|
 |[ushort](integral-numeric-types.md)|`int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`, `nint`, or `nuint`|
 |[int](integral-numeric-types.md)|`long`, `float`, `double`, or `decimal`, `nint`|
-|[uint](integral-numeric-types.md)|`long`, `ulong`, `float`, `double`, or `decimal`, or `nuint`|
+|[uint](integral-numeric-types.md)|`long`, `ulong`, `float`, `double`, or `decimal`, `nint`, or `nuint`|
 |[long](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[ulong](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[float](floating-point-numeric-types.md)|`double`|

@@ -114,7 +114,7 @@ Subtle and not so subtle bugs can emerge when non-linguistic string data is inte
 
 For nearly all Latin alphabets, including U.S. English, the character "i" (\u0069) is the lowercase version of the character "I" (\u0049). This casing rule quickly becomes the default for someone programming in such a culture. However, the Turkish ("tr-TR") alphabet includes an "I with a dot" character "İ" (\u0130), which is the capital version of "i". Turkish also includes a lowercase "i without a dot" character, "ı" (\u0131), which capitalizes to "I". This behavior occurs in the Azerbaijani ("az") culture as well.
 
-Therefore, assumptions made about capitalizing "i" or lowercasing "I" aren't valid among all cultures. If you use the default overloads for string comparison routines, they will be subject to variance between cultures. If the data to be compared is non-linguistic, using the default overloads can produce undesirable results, as the following attempt to perform a case-insensitive comparison of the strings "file" and "FILE" illustrates.
+Therefore, assumptions made about capitalizing "i" or lowercasing "I" aren't valid among all cultures. If you use the default overloads for string comparison routines, they will be subject to variance between cultures. If the data to be compared is non-linguistic, using the default overloads can produce undesirable results, as the following attempt to perform a case-insensitive comparison of the strings "bill" and "BILL" illustrates.
 
 :::code language="csharp" source="./snippets/best-practices-strings/csharp/turkish/Program.cs" id="main":::
 :::code language="vb" source="./snippets/best-practices-strings/vb/turkish/Program.vb" id="main":::

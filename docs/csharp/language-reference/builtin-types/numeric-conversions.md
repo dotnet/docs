@@ -25,7 +25,7 @@ The following table shows the predefined implicit conversions between the built-
 |[short](integral-numeric-types.md)|`int`, `long`, `float`, `double`, or `decimal`, or `nint`|
 |[ushort](integral-numeric-types.md)|`int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`, `nint`, or `nuint`|
 |[int](integral-numeric-types.md)|`long`, `float`, `double`, or `decimal`, `nint`|
-|[uint](integral-numeric-types.md)|`long`, `ulong`, `float`, `double`, or `decimal`, `nint`, or `nuint`|
+|[uint](integral-numeric-types.md)|`long`, `ulong`, `float`, `double`, or `decimal`, or `nuint`|
 |[long](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[ulong](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[float](floating-point-numeric-types.md)|`double`|
@@ -63,7 +63,7 @@ The following table shows the predefined explicit conversions between the built-
 |[short](integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint`|
 |[ushort](integral-numeric-types.md)|`sbyte`, `byte`, or `short`|
 |[int](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint`|
-|[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, or `int`|
+|[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `nint`|
 |[long](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint`|
 |[ulong](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint`|
 |[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint`|

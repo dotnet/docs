@@ -267,11 +267,11 @@ As the preceding example shows, a list pattern is matched when each nested patte
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="MatchAnyElement":::
 
-The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or/and the end of an input sequence, use the *slice pattern* `..` within a list pattern, as the following example shows:
+The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or/and the end of an input sequence, use the *slice pattern* `..`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="UseSlice":::
 
-A slice pattern matches zero or more elements. You can use at most one slice pattern in a list pattern.
+A slice pattern matches zero or more elements. You can use at most one slice pattern in a list pattern. The slice pattern can only appear in a list pattern.
 
 You can also nest a subpattern within a slice pattern, as the following example shows:
 

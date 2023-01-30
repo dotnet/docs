@@ -65,9 +65,10 @@ Here you specify two options:
 - Set the `ClusterId` to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silos that use this ID will be able to talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
 - Set the `ServiceId` to `"SampleApp"`: this is a unique ID for your application that will be used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-By default, Orleans will use a value of `"default"` for both the `ServiceId` and the `ClusterId`. These values do not need to be changed in most cases. `ServiceId` is the more significant of the two, and is used to distinguish different logical services from each other so that they can share backend storage systems without interfering with each other. `ClusterId` is used to determine which hosts will connect to each other and form a cluster.
-Within each cluster, all hosts must use the same `ServiceId`.
-Multiple clusters can share a `ServiceId`, however. This enables blue/green deployment scenarios where a new deployment (cluster) is started before another is shutdown. This is typical for systems hosted in Azure App Service.
+By default, Orleans will use a value of `"default"` for both the `ServiceId` and the `ClusterId`. These values don't need to be changed in most cases. `ServiceId` is the more significant of the two, and is used to distinguish different logical services from each other so that they can share backend storage systems without interfering with each other. `ClusterId` is used to determine which hosts will connect to each other and form a cluster.
+
+Within each cluster, all hosts must use the same `ServiceId`. Multiple clusters can share a `ServiceId`, however. This enables blue/green deployment scenarios where a new deployment (cluster) is started before another is shut down. This is typical for systems hosted in Azure App Service.
+
 The more common case is that `ServiceId` and `ClusterId` remain fixed for the lifetime of the application and a rolling deployment strategy is used. This is typical for systems hosted in Kubernetes and Service Fabric.
 
 ## Endpoints
@@ -176,9 +177,10 @@ Here we do two things:
 - Set the `ClusterId` to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silos that use this ID will be able to talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
 - Set the `ServiceId` to `"AspNetSampleApp"`: this is a unique ID for your application that will be used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-By default, Orleans will use a value of `"default"` for both the `ServiceId` and the `ClusterId`. These values do not need to be changed in most cases. `ServiceId` is the more significant of the two, and is used to distinguish different logical services from each other so that they can share backend storage systems without interfering with each other. `ClusterId` is used to determine which hosts will connect to each other and form a cluster.
-Within each cluster, all hosts must use the same `ServiceId`.
-Multiple clusters can share a `ServiceId`, however. This enables blue/green deployment scenarios where a new deployment (cluster) is started before another is shutdown. This is typical for systems hosted in Azure App Service.
+By default, Orleans will use a value of `"default"` for both the `ServiceId` and the `ClusterId`. These values don't need to be changed in most cases. `ServiceId` is the more significant of the two, and is used to distinguish different logical services from each other so that they can share backend storage systems without interfering with each other. `ClusterId` is used to determine which hosts will connect to each other and form a cluster.
+
+Within each cluster, all hosts must use the same `ServiceId`. Multiple clusters can share a `ServiceId`, however. This enables blue/green deployment scenarios where a new deployment (cluster) is started before another is shut down. This is typical for systems hosted in Azure App Service.
+
 The more common case is that `ServiceId` and `ClusterId` remain fixed for the lifetime of the application and a rolling deployment strategy is used. This is typical for systems hosted in Kubernetes and Service Fabric.
 
 ## Endpoints

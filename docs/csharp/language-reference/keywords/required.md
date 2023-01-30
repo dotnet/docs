@@ -1,7 +1,7 @@
 ---
 description: "required modifier - C# Reference"
 title: "required modifier - C# Reference"
-ms.date: 07/20/2022
+ms.date: 01/30/2023
 f1_keywords: 
   - "required_CSharpKeyword"
 helpviewer_keywords: 

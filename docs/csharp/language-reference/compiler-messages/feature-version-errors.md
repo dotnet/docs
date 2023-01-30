@@ -140,7 +140,7 @@ You may have an older target framework selected in your project file. If you rem
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
 
-You can learn more about the language versions supported for each framework version in the article on [Configure langage version](../configure-language-version.md) in the language reference section.
+You can learn more about the language versions supported for each framework version in the article on [Configure language version](../configure-language-version.md) in the language reference section.
 
 ## Avoid the updated feature
 

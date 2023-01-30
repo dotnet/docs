@@ -1,17 +1,27 @@
 ---
 title: "Constructors - C# programming guide"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
-ms.date: 09/27/2021
+ms.date: 01/30/2023
 helpviewer_keywords: 
   - "constructors [C#]"
   - "classes [C#], constructors"
   - "C# language, constructors"
-ms.assetid: df2e2e9d-7998-418b-8e7d-890c17ff6c95
 ---
 # Constructors (C# programming guide)
 
-Whenever a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
+Whenever an instance of a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
 
+There are several actions that are part of initializing a new instance. Those actions take place in the following order:
+
+1. *Instance fields are set to 0*. This is typically done by the runtime.
+1. *Field initializers run*. The field initializers in the most derived type run.
+1. *Base type field initializers run*. Field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
+1. *Base instance constructors run*. Any instance constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
+1. *The instance constructor runs*. The instance constructor for the type runs.
+1. *Object initializers run*. If the expression includes any object initializers, those run after the instance constructor runs. Object initializers run in the textual order.
+
+The preceding actions take place when a new instance is initialized. If a new instance of a `struct` is set to its `default` value, all instance fields are set to 0.
+ 
 ## Constructor syntax
 
 A constructor is a method whose name is the same as the name of its type. Its method signature includes only an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.

@@ -93,7 +93,7 @@ In the preceding code, the `AddMyLibraryService`:
   - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%2A> to enable data annotation validation
   - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart%2A> to enforce validation on start rather than in runtime
 
-In this example, the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package is used to enable data annotation validation. The `SupportOptions` class is defined as follows:
+In the next example, the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package is used to enable data annotation validation. The `SupportOptions` class is defined as follows:
 
 :::code source="snippets/configuration/options-validation-onstart/SupportOptions.cs":::
 

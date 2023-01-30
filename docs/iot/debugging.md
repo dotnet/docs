@@ -11,12 +11,10 @@ zone_pivot_groups: ide-set-one
 
 # Debug .NET apps on Raspberry Pi
 
-Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the Visual Studio Code extension for C# is not compatible with 32-bit ARM devices, so debugging locally from Visual Studio Code is not supported on 32-bit operating systems.
-
-In addition, even in a 64-bit environment, the device's performance is such that debugging locally is not recommended. Accordingly, this article describes how to debug .NET apps on Raspberry Pi and similar devices remotely from a development computer.
+Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the Visual Studio Code extension for C# is not compatible with 32-bit operating systems, so debugging locally from Visual Studio Code is not supported in these environments. In addition, even in a 64-bit environment, the device's performance is such that debugging locally is not recommended. Accordingly, this article describes how to debug .NET apps on Raspberry Pi and similar devices remotely from a development computer.
 
 > [!TIP]
-> It is **strongly** recommended that you develop and debug your app on a development computer, and then deploy the app to the device for testing. If you wish to develop and debug locally on the device, the following is recommended:
+> For the reasons described above, it is **strongly** recommended that you develop your app on a development computer and then deploy the app to the device for debugging. If you wish to develop and debug locally on the device, the following is required:
 >
 > - A 64-bit OS, such as Raspberry Pi OS (64-bit).
 > - [Visual Studio Code](https://code.visualstudio.com/docs/setup/raspberry-pi) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).

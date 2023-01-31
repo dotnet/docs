@@ -9,11 +9,11 @@ ms.date: 01/31/2023
 
 ## Previous behavior
 
-Previously, the [affected properties](#affected-apis) were annotated as not being nullable. You could consume their values and assume they couldn't be null without any compile-time warnings.
+Previously, the [affected properties](#affected-apis) were annotated as not being nullable. You could consume their values and assume they weren't `null` without any compile-time warnings.
 
 ## New behavior
 
-Starting in .NET 8, the [affected properties](#affected-apis) are annotated as being nullable. If you consume their values without null checks, you'll get warnings at compile time.
+Starting in .NET 8, the [affected properties](#affected-apis) are annotated as being nullable. If you consume their values without `null` checks, you'll get warnings at compile time.
 
 ## Version introduced
 
@@ -25,11 +25,11 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-The previous annotations of these properties were incorrect. This change applies the appropriate behavior for the properties and ensures callers understand that the values can be null.
+The previous annotations of these properties were incorrect. This change applies the appropriate annotations for the properties and ensures callers understand that the values can be `null`.
 
 ## Recommended action
 
-Update calling code to guard against null for these properties.
+Update calling code to guard against `null` for these properties.
 
 ## Affected APIs
 

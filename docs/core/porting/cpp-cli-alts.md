@@ -15,13 +15,13 @@ The C++/CLI language has been around since 2005 and has enabled users to easily 
 
 - Limited functional support for the latest ISO C++.
 
-- Limited support for newer .NET types and patterns (for example, [`Span<T>`](https://learn.microsoft.com/dotnet/api/system.span-1) and [default interface methods](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-8.0/default-interface-methods)).
+- Limited support for newer .NET types and patterns (for example, [`Span<T>`](/dotnet/api/system.span-1) and [default interface methods](/dotnet/csharp/language-reference/proposals/csharp-8.0/default-interface-methods)).
 
 If the above limitations are a concern then this document is intended to provide options on how to transtition from C++/CLI to ISO C++ and/or .NET. The approaches described represent a preference for cross-platform and access to the respective language's entire feature set.
 
 ## Expose C++ as C exports
 
-.NET has supported directly calling C code since .NET Framework 1.0 through the [Platform Invoke](https://learn.microsoft.com/dotnet/standard/native-interop/pinvoke) (P/Invokes) mechanism. All C++ APIs that are expected to be called from .NET could be wrapped in a C-style function. This approach has always worked with .NET but prior to .NET 7, the recommendation was to use [`DllImportAttribute`](https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.dllimportattribute). Since .NET 7, the [`LibraryImportAttribute`](https://learn.microsoft.com/dotnet/standard/native-interop/pinvoke-source-generation?source=recommendations) should be prefered in all cases. As it relates to C++/CLI, the `LibraryImportAttribute` mechanism provides a higher performance solution to calling C exports than previously available. Furthermore, the extensibility provided by `LibraryImportAttribute` enables developers to create customized marshalling schemes where they are in full control of how and when data is marshalled across the interop boundary. This is in stark contrast to using `DllImportAttribute` that imposes significant performance penalties if custom marshalling is needed.
+.NET has supported directly calling C code since .NET Framework 1.0 through the [Platform Invoke](/dotnet/standard/native-interop/pinvoke) (P/Invokes) mechanism. All C++ APIs that are expected to be called from .NET could be wrapped in a C-style function. This approach has always worked with .NET but prior to .NET 7, the recommendation was to use [`DllImportAttribute`](/dotnet/api/system.runtime.interopservices.dllimportattribute). Since .NET 7, the [`LibraryImportAttribute`](/dotnet/standard/native-interop/pinvoke-source-generation?source=recommendations) should be prefered in all cases. As it relates to C++/CLI, the `LibraryImportAttribute` mechanism provides a higher performance solution to calling C exports than previously available. Furthermore, the extensibility provided by `LibraryImportAttribute` enables developers to create customized marshalling schemes where they are in full control of how and when data is marshalled across the interop boundary. This is in stark contrast to using `DllImportAttribute` that imposes significant performance penalties if custom marshalling is needed.
 
 Tooling, such as [ClangSharp](https://github.com/dotnet/ClangSharp), exists to help with generating callable native signatures and projecting data types into C#. The [Paint.NET](https://www.getpaint.net/) product successfully transitioned away from C++/CLI using ClangSharp.
 
@@ -79,7 +79,7 @@ The wrapping of complex or large C++ APIs to C is tedious and error prone. Sourc
 
 ## Expose C++ as `IUnknown` based APIs
 
-Instead of reducing object-oriented concepts down to what can be expressed in C, using [COM interop](https://learn.microsoft.com/dotnet/standard/native-interop/cominterop) permits keeping some aspects of C++. The .NET platform has a long history of reducing friction when using COM style interfaces. There is existing tools that can help generate COM interface definitions and [cross-platform support](https://learn.microsoft.com/dotnet/standard/native-interop/tutorial-comwrappers) through the [`ComWrappers`](https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comwrappers) API for `IUnknown` interop was enabled in .NET 6.
+Instead of reducing object-oriented concepts down to what can be expressed in C, using [COM interop](/dotnet/standard/native-interop/cominterop) permits keeping some aspects of C++. The .NET platform has a long history of reducing friction when using COM style interfaces. There is existing tools that can help generate COM interface definitions and [cross-platform support](/dotnet/standard/native-interop/tutorial-comwrappers) through the [`ComWrappers`](/dotnet/api/system.runtime.interopservices.comwrappers) API for `IUnknown` interop was enabled in .NET 6.
 
 ### Example
 
@@ -119,7 +119,7 @@ public:
         return S_OK;
     }
 
-    // See https://learn.microsoft.com/windows/win32/com/using-and-implementing-iunknown
+    // See /windows/win32/com/using-and-implementing-iunknown
     HRESULT QueryInterface() override;
     ULONG AddRef() override;
     ULONG Release() override;
@@ -168,7 +168,7 @@ Porting code from one language to another is time consuming and error prone. It 
 
 Converting a C++/CLI project into ISO C++ may be more appropriate if the majority of the code is using ISO C++ rather than managed code. Since C++/CLI is closer to ISO C++ than C# it is potentially an easier path and tools exist to help with creating the boilerplate needed to call .NET code from C++.
 
-A [tutorial exists](https://learn.microsoft.com//dotnet/core/tutorials/netcore-hosting) for using the .NET unmanaged hosting layer, which can be used to manually activate a .NET runtime instance. An example of tooling that uses this API to create exports callable by C or C++ is [DNNE](https://github.com/AaronRobinsonMSFT/DNNE). An alternative to using the unmanaged hosting API, is to use [NativeAOT](https://learn.microsoft.com/dotnet/core/deploying/native-aot/) to create a library with unmanaged exports&mdash;see [sample](https://github.com/dotnet/samples/blob/main/core/nativeaot/NativeLibrary/README.md).
+A [tutorial exists](/dotnet/core/tutorials/netcore-hosting) for using the .NET unmanaged hosting layer, which can be used to manually activate a .NET runtime instance. An example of tooling that uses this API to create exports callable by C or C++ is [DNNE](https://github.com/AaronRobinsonMSFT/DNNE). An alternative to using the unmanaged hosting API, is to use [NativeAOT](/dotnet/core/deploying/native-aot/) to create a library with unmanaged exports&mdash;see [sample](https://github.com/dotnet/samples/blob/main/core/nativeaot/NativeLibrary/README.md).
 
 ## Conclusion
 

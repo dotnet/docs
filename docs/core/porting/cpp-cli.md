@@ -1,13 +1,16 @@
 ---
-title: Migrating C++/CLI projects to .NET Core and .NET 5+
-description: Learn about porting C++/CLI projects to .NET Core and .NET 5 and later versions.
+title: Migrating C++/CLI projects to .NET Core and .NET
+description: Learn about porting C++/CLI projects to .NET Core and the latest .NET versions.
 author: mjrousos
 ms.date: 03/29/2022
 ---
 
-# How to port a C++/CLI project to .NET Core or .NET 5
+> [!NOTE]
+> C++/CLI is a fully supported language, however, we do not expect any future improvements. For example, we do not expect to add support for new .NET features like `Span<T>` or for new C++ standard versions. C++/CLI users should consider if this level of support is sufficient or if transitioning to ISO C++ and another .NET language, for example, C#, is a better approach for their needs. Migration approaches can be found [here](./cpp-cli-alts.md).
 
-Beginning with .NET Core 3.1 and Visual Studio 2019, [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core/.NET 5+. This article describes how to port C++/CLI projects from .NET Framework to .NET Core 3.1.
+# How to port a C++/CLI project to .NET Core or the latest .NET
+
+Beginning with .NET Core 3.1 and Visual Studio 2019, [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core/.NET. This article describes how to port C++/CLI projects from .NET Framework to the latest .NET.
 
 ## C++/CLI .NET Core limitations
 
@@ -24,7 +27,7 @@ There are some important limitations to porting C++/CLI projects to .NET Core co
 To port a C++/CLI project to .NET Core, make the following changes to the *.vcxproj* file. These migration steps differ from the steps needed for other project types because C++/CLI projects don't use SDK-style project files.
 
 1. Replace `<CLRSupport>true</CLRSupport>` properties with `<CLRSupport>NetCore</CLRSupport>`. This property is often in configuration-specific property groups, so you may need to replace it in multiple places.
-2. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>netcoreapp3.1</TargetFramework>`.
+2. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>net7.0</TargetFramework>`.
 3. Remove any .NET Framework references (like `<Reference Include="System" />`). .NET Core SDK assemblies are automatically referenced when using `<CLRSupport>NetCore</CLRSupport>`.
 4. Update API usage in *.cpp* files, as necessary, to remove APIs unavailable to .NET Core. Because C++/CLI projects tend to be fairly thin interop layers, there are often not many changes needed. You can use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to identify unsupported .NET APIs used by C++/CLI binaries just as with purely managed binaries.
 
@@ -68,7 +71,7 @@ It's also possible to build C++/CLI projects without using MSBuild. Follow these
 
 ## Known issues
 
-There are a few known issues to look out for when working with C++/CLI projects that target .NET Core 3.1 or .NET 5+:
+There are a few known issues to look out for when working with C++/CLI projects that target .NET Core:
 
 * A WPF framework reference in .NET Core C++/CLI projects currently causes some extraneous warnings about being unable to import symbols. These warnings can be safely ignored and should be fixed soon.
 * If the application has a native entry point, the C++/CLI library that first executes managed code needs a [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) file. This config file is used when the .NET Core runtime starts. C++/CLI projects don't create `runtimeconfig.json` files automatically at build time yet, so the file must be generated manually. If a C++/CLI library is called from a managed entry point, then the C++/CLI library doesn't need a `runtimeconfig.json` file (since the entry point assembly will have one that is used when starting the runtime). A simple sample `runtimeconfig.json` file is shown below. For more information, see the [spec on GitHub](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md).

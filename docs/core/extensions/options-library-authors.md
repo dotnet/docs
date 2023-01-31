@@ -3,18 +3,18 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET.
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 01/23/2023
 ---
 
 # Options pattern guidance for .NET library authors
 
-With the help of dependency injection, registering your services and their corresponding configurations can make use of the *options pattern*. The options pattern enables consumers of your library (and your services) to require instances of [options interfaces](options.md#options-interfaces) where `TOptions` is your options class. Consuming configuration options through strongly-typed objects helps to ensure consistent value representation, and removes the burden of manually parsing string values. There are many [configuration providers](configuration-providers.md) for consumers of your library to use. With these providers, consumers can configure your library in many ways.
+With the help of dependency injection, registering your services and their corresponding configurations can make use of the *options pattern*. The options pattern enables consumers of your library (and your services) to require instances of [options interfaces](options.md#options-interfaces) where `TOptions` is your options class. Consuming configuration options through strongly-typed objects helps to ensure consistent value representation, enables validation with data annotations, and removes the burden of manually parsing string values. There are many [configuration providers](configuration-providers.md) for consumers of your library to use. With these providers, consumers can configure your library in many ways.
 
 As a .NET library author, you'll learn general guidance on how to correctly expose the options pattern to consumers of your library. There are various ways to achieve the same thing, and several considerations to make.
 
 ## Naming conventions
 
-By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. `Add{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet).
+By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. `Add{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet) and .NET alike.
 
 ✔️ CONSIDER names that disambiguate your service from other offerings.
 
@@ -74,6 +74,32 @@ As the library author, specifying default values is up to you.
 >         (options, configuration) =>
 >             configuration.GetSection("LibraryOptions").Bind(options));
 > ```
+>
+> Instead, you should use the <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> extension method. This extension method binds the configuration to the options instance, and also registers a change token source for the configuration section. This allows consumers to use the [IOptionsMonitor](options.md#ioptionsmonitor) interface.
+
+## Configuration section path parameter
+
+Consumers of your library may want to specify the configuration section path to bind your underlying `TOptions` type. In this scenario, you define a `string` parameter in your extension method.
+
+:::code source="snippets/configuration/options-validation-onstart/ServiceCollectionExtensions.cs" highlight="9":::
+
+In the preceding code, the `AddMyLibraryService`:
+
+- Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
+- Defines a `string` parameter `configSectionPath`
+- Calls:
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> with the generic type parameter of `SupportOptions`
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> with the given `configSectionPath` parameter
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%2A> to enable data annotation validation
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart%2A> to enforce validation on start rather than in runtime
+
+In the next example, the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package is used to enable data annotation validation. The `SupportOptions` class is defined as follows:
+
+:::code source="snippets/configuration/options-validation-onstart/SupportOptions.cs":::
+
+Imagine that the following JSON _appsettings.json_ file is used:
+
+:::code source="snippets/configuration/options-validation-onstart/appsettings.json":::
 
 ## `Action<TOptions>` parameter
 

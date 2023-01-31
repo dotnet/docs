@@ -11,6 +11,8 @@ public sealed class CacheWorker : BackgroundService
     private readonly IMemoryCache _cache;
     private readonly TimeSpan _updateInterval = TimeSpan.FromHours(3);
 
+    private bool _isCacheInitialized = false;
+
     private const string Url = "https://jsonplaceholder.typicode.com/photos";
 
     public CacheWorker(
@@ -52,7 +54,11 @@ public sealed class CacheWorker : BackgroundService
             }
             finally
             {
-                _cacheSignal.Release();
+                if (!_isCacheInitialized)
+                {
+                    _cacheSignal.Release();
+                    _isCacheInitialized = true;
+                }
             }
 
             try

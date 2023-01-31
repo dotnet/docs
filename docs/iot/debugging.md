@@ -11,7 +11,16 @@ zone_pivot_groups: ide-set-one
 
 # Debug .NET apps on Raspberry Pi
 
-Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. It is possible to develop .NET apps on ARM devices. However, OmniSharp, which is required for debugging .NET apps outside of Visual Studio, is not compatible with ARM devices. As a result, apps must be debugged remotely from a compatible platform.
+Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the Visual Studio Code extension for C# is not compatible with 32-bit operating systems, so debugging locally from Visual Studio Code is not supported in these environments. In addition, even in a 64-bit environment, the device's performance is such that debugging locally is not recommended. Accordingly, this article describes how to debug .NET apps on Raspberry Pi and similar devices remotely from a development computer.
+
+> [!TIP]
+> For the reasons described above, it's **strongly** recommended that you develop your app on a development computer and then deploy the app to the device for remote debugging. If you wish to develop and debug locally on the device, the following is required:
+>
+> - A 64-bit OS, such as Raspberry Pi OS (64-bit).
+> - [Visual Studio Code](https://code.visualstudio.com/docs/setup/raspberry-pi) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+>   - Disable the [hardware acceleration](https://code.visualstudio.com/docs/setup/raspberry-pi#_workaround-for-poor-performance).
+> - .NET SDK 6.0 or later.
+>   - Install using the *dotnet-install* script [as in a framework-dependent deployment](deployment.md#deploying-a-framework-dependent-app). Be sure to add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH`.
 
 ::: zone pivot="vscode"
 

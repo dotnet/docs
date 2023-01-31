@@ -83,7 +83,7 @@ helpviewer_keywords:
   - "CS9016"
   - "CS9017"
   - "CS8967"
-ms.date: 11/22/2022
+ms.date: 01/30/2023
 ---
 # Resolve warnings related to language features and versions
 
@@ -139,6 +139,8 @@ If your selected framework doesn't match the language version required, you can 
 You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will use the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
+
+You can learn more about the language versions supported for each framework version in the article on [Configure language version](../configure-language-version.md) in the language reference section.
 
 ## Avoid the updated feature
 

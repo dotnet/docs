@@ -160,7 +160,7 @@ public Task InitializeAsync()
 {
     return NavigateToAsync(string.IsNullOrEmpty(_settingsService.AuthAccessToken)
         ? "//Login"
-        : "//Main/Catalog";
+        : "//Main/Catalog");
 }
 ```
 

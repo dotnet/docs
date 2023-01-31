@@ -15,11 +15,13 @@ The WFDEV002 obsoletion has been promoted from a warning to an error in .NET 8. 
 
 Previously, if you referenced the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject> type, you got compile-time warning [WFDEV002](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev002).
 
-<xref:System.Windows.Forms.DomainUpDown.CreateAccessibilityInstance?displayProperty=nameWithType> also returned an object of type <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject>.
+Also, <xref:System.Windows.Forms.DomainUpDown.CreateAccessibilityInstance?displayProperty=nameWithType> returned an object of type <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject>.
 
 ## New behavior
 
-If you reference the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject> type, you'll get a compile-time error with the same diagnostic ID ([WFDEV002](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev002)). In addition, since the type has been removed, <xref:System.Windows.Forms.DomainUpDown.CreateAccessibilityInstance?displayProperty=nameWithType> now returns an object of type `UpDownBase.UpDownBaseAccessibleObject` (which is an internal type).
+If you reference the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject> type, you'll get a compile-time error with the same diagnostic ID ([WFDEV002](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev002)).
+
+In addition, since the type has been removed, <xref:System.Windows.Forms.DomainUpDown.CreateAccessibilityInstance?displayProperty=nameWithType> now returns an object of type `UpDownBase.UpDownBaseAccessibleObject` (which is an internal type).
 
 ## Change category
 

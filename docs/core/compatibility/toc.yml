@@ -14,6 +14,8 @@ items:
         href: core-libraries/8.0/activity-operation-name.md
       - name: AnonymousPipeServerStream.Dispose behavior
         href: core-libraries/8.0/anonymouspipeserverstream-dispose.md
+      - name: Backslash mapping in Unix file paths
+        href: core-libraries/8.0/file-path-backslash.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GetFolderPath behavior on Unix
@@ -36,6 +38,8 @@ items:
         href: windows-forms/8.0/anchor-layout.md
       - name: Top-level forms scale size to DPI
         href: windows-forms/8.0/forms-scale-size-to-dpi.md
+      - name: WFDEV002 obsoletion is now an error
+        href: windows-forms/8.0/domainupdownaccessibleobject.md
   - name: .NET 7
     items:
     - name: Overview
@@ -896,6 +900,8 @@ items:
         href: core-libraries/8.0/activity-operation-name.md
       - name: AnonymousPipeServerStream.Dispose behavior
         href: core-libraries/8.0/anonymouspipeserverstream-dispose.md
+      - name: Backslash mapping in Unix file paths
+        href: core-libraries/8.0/file-path-backslash.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GetFolderPath behavior on Unix
@@ -1358,6 +1364,8 @@ items:
         href: windows-forms/8.0/anchor-layout.md
       - name: Top-level forms scale size to DPI
         href: windows-forms/8.0/forms-scale-size-to-dpi.md
+      - name: WFDEV002 obsoletion is now an error
+        href: windows-forms/8.0/domainupdownaccessibleobject.md
     - name: .NET 7
       items:
       - name: APIs throw ArgumentNullException

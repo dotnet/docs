@@ -5,7 +5,7 @@ author: AaronRobinsonMSFT
 ms.date: 01/30/2023
 ---
 
-# Migration from C++/CLI to ISO C++ and/or C#
+# Migration from C++/CLI to ISO C++ and/or C\#
 
 The C++/CLI language has been around since 2005 and has enabled users to easily integrate C++ and a .NET language into a single binary. The utility of C++/CLI remains as an innovative way to integrate C++ with the .NET runtime on the Windows platform. There are however limitations to using C++/CLI and as ISO C++ and .NET platforms evolve these limitations are expected to grow.
 
@@ -154,7 +154,7 @@ static unsafe partial IMyClass get_myclass();
 
 Defining COM interfaces for a C++ API can be daunting and expensive. There is a lot of boilerplate code for COM interop and does represent an older C++ style that would be pushed into codebases that are forward looking. COM and by extension, COM interop, carry opinionated design considerations and behavior which may make adoption difficult in some scenarios.
 
-## Port C++/CLI to C#
+## Port C++/CLI to C\#
 
 Converting a C++/CLI project into C# where possible and then calling system APIs via P/Invoke is a common option and the preferred mechanism for the .NET runtime team. This means converting as much C++/CLI as possible into C# and then calling C exports that group logical units of C++. This approach is similar to providing a C API for the entire C++ API previously mentioned.
 

@@ -243,7 +243,8 @@
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
-| Azure.FX | NuGet [0.0.6-alpha](https://www.nuget.org/packages/Azure.FX/0.0.6-alpha) |  |  |
+| Azure.FX | NuGet [0.0.7-alpha](https://www.nuget.org/packages/Azure.FX/0.0.7-alpha) |  |  |
+| Azure.FX.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Azure.FX.Templates/1.0.0) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.1) |  |  |
@@ -367,7 +368,7 @@
 | Content Moderator | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.ContentModerator/2.0.0) |  |  |
 | Cosmos DB | NuGet [3.31.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.31.2) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.31.2](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.30.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.30.1) |  | GitHub [3.30.1](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.30.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.30.2) |  | GitHub [3.30.2](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.1) |  | GitHub [2.0.1](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | Custom Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomSearch/2.0.0) |  |  |

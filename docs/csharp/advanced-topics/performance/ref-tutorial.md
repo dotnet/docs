@@ -159,7 +159,7 @@ The next step is to find methods that return a measurement, or take a measuremen
 
 We'll leave this one as is, returning by value. If you tried to return by `ref`, you'd get a compiler error. You can't return a `ref` to a new structure locally created in the method. The design of the immutable struct means you can only set the values of the measurement at construction. This method must create a new measurement struct.
 
-Let's look again at the `DebounceMeasurement` method. You should add the `in` modifier to the `measurement` parameter:
+Let's look again at `DebounceMeasurement.AddMeasurement`. You should add the `in` modifier to the `measurement` parameter:
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/DebounceMeasurement.cs" id="InArgument":::
 
@@ -173,7 +173,7 @@ The final sets of changes won't have a major impact on this application's perfor
 
 This type contains several properties. Some are `class` types. Creating a `Room` object involves multiple allocations. One for the `Room` itself, and one for each of the members of a `class` type that it contains. You can convert two of these properties from `class` types to `struct` types: the `DebounceMeasurement` and `AverageMeasurement` types. Let's work through that transformation with both types.
 
-Change the `DebounceMeasurement` type from a `class` to `struct`. The <xref:System.Object.ToString?displayProperty=nameWithType> override doesn't modify any of the values of the struct. You can add the `readonly` modifier to that method declaration. The `DebounceMeasurement` type is *mutable*, so you'll need to take care that modifications don't affect copies that are discarded. The `AddMeasurement` method does modify the state of the object. It's called from the `Room` class, in the `TakeMeasurements` method. You want those changes to persist after calling the method. You can change the `Debounce` property to return a *reference* to a single instance of the `DebounceMeasurement` type:
+Change the `DebounceMeasurement` type from a `class` to `struct`. The <xref:System.Object.ToString?displayProperty=nameWithType> override doesn't modify any of the values of the struct. You can add the `readonly` modifier to that method declaration. The `DebounceMeasurement` type is *mutable*, so you'll need to take care that modifications don't affect copies that are discarded. The `AddMeasurement` method does modify the state of the object. It's called from the `Room` class, in the `TakeMeasurements` method. You want those changes to persist after calling the method. You can change the `Room.Debounce` property to return a *reference* to a single instance of the `DebounceMeasurement` type:
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/Room.cs" id="DebounceAsReference":::
 

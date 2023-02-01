@@ -10,7 +10,9 @@ public struct DebounceMeasurement
     public double Temperature { get; private set; }
     public double Humidity { get; private set; }
 
+    // <ParameterlessCtor>
     public DebounceMeasurement() { }
+    // </ParameterlessCtor>
 
     // <InArgument>
     public void AddMeasurement(in SensorMeasurement datum)

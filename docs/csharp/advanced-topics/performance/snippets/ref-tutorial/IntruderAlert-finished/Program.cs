@@ -34,7 +34,9 @@ room.TakeMeasurements(
             _ => 0
         };
 
+        // <RoomStatsFinished>
         Console.WriteLine(room.ToString());
+        // </RoomStatsFinished>
         Console.WriteLine();
         counter++;
         return counter < 200000;

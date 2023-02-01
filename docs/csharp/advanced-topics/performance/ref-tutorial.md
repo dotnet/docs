@@ -173,7 +173,13 @@ The final sets of changes won't have a major impact on this application's perfor
 
 This type contains several properties. Some are `class` types. Creating a `Room` object involves multiple allocations. One for the `Room` itself, and one for each of the members of a `class` type that it contains. You can convert two of these properties from `class` types to `struct` types: the `DebounceMeasurement` and `AverageMeasurement` types. Let's work through that transformation with both types.
 
-Change the `DebounceMeasurement` type from a `class` to `struct`. The <xref:System.Object.ToString?displayProperty=nameWithType> override doesn't modify any of the values of the struct. You can add the `readonly` modifier to that method declaration. The `DebounceMeasurement` type is *mutable*, so you'll need to take care that modifications don't affect copies that are discarded. The `AddMeasurement` method does modify the state of the object. It's called from the `Room` class, in the `TakeMeasurements` method. You want those changes to persist after calling the method. You can change the `Room.Debounce` property to return a *reference* to a single instance of the `DebounceMeasurement` type:
+Change the `DebounceMeasurement` type from a `class` to `struct`. That introduces a compiler error `CS8983: A 'struct' with field initializers must include an explicitly declared constructor`. You can fix this by adding an empty parameterless contructor:
+
+:::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/DebounceMeasurement.cs" id="ParameterlessCtor":::
+
+You can learn more about this requirement in the language reference article on [structs](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).
+
+ The <xref:System.Object.ToString?displayProperty=nameWithType> override doesn't modify any of the values of the struct. You can add the `readonly` modifier to that method declaration. The `DebounceMeasurement` type is *mutable*, so you'll need to take care that modifications don't affect copies that are discarded. The `AddMeasurement` method does modify the state of the object. It's called from the `Room` class, in the `TakeMeasurements` method. You want those changes to persist after calling the method. You can change the `Room.Debounce` property to return a *reference* to a single instance of the `DebounceMeasurement` type:
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/Room.cs" id="DebounceAsReference":::
 
@@ -196,6 +202,10 @@ There's one final change to improve performance. The main program is printing st
 The call to the generated `ToString` boxes the enum value. You can avoid that by writing an override in the `Room` class that formats the string based on the value of estimated risk:
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/Room.cs" id="RoomToString":::
+
+Then, modify the code in the main program to call this new `ToString` method:
+
+:::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/Program.cs" id="RoomStatsFinished":::
 
 Run the app using the profiler and look at the updated table for allocations.
 

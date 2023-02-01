@@ -13,6 +13,7 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 
 ### New articles
 
+- [Breaking changes in .NET 8](../core/compatibility/8.0.md)
 - [Backslash mapping in Unix file paths](../core/compatibility/core-libraries/8.0/file-path-backslash.md)
 - [WFDEV002 obsoletion is now an error](../core/compatibility/windows-forms/8.0/domainupdownaccessibleobject.md)
 - [AnonymousPipeServerStream.Dispose behavior for HandleInheritability.Inheritable](../core/compatibility/core-libraries/8.0/anonymouspipeserverstream-dispose.md)
@@ -23,7 +24,6 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 - [GetFolderPath behavior on Unix](../core/compatibility/core-libraries/8.0/getfolderpath-unix.md)
 - [AesGcm authentication tag size on macOS](../core/compatibility/cryptography/8.0/aesgcm-auth-tag-size.md)
 - [RSA.EncryptValue and RSA.DecryptValue are obsolete](../core/compatibility/cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md)
-- [Breaking changes in .NET 8](../core/compatibility/8.0.md)
 - [Anchor layout changes](../core/compatibility/windows-forms/8.0/anchor-layout.md)
 - [Top-level forms scale minimum and maximum size to DPI](../core/compatibility/windows-forms/8.0/forms-scale-size-to-dpi.md)
 - [WCF Client doesn't support .NET Standard](../core/compatibility/wcf-client/6.0/net-standard-2-support.md)
@@ -39,22 +39,7 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 
 ### New articles
 
-- [Backslash mapping in Unix file paths](../core/compatibility/core-libraries/8.0/file-path-backslash.md)
-- [WFDEV002 obsoletion is now an error](../core/compatibility/windows-forms/8.0/domainupdownaccessibleobject.md)
-- [AnonymousPipeServerStream.Dispose behavior for HandleInheritability.Inheritable](../core/compatibility/core-libraries/8.0/anonymouspipeserverstream-dispose.md)
-- [Legacy Console.ReadKey removed](../core/compatibility/core-libraries/8.0/console-readkey-legacy.md)
-- [FileStream writes when pipe is closed](../core/compatibility/core-libraries/8.0/filestream-disposed-pipe.md)
-- [Activity operation name when null](../core/compatibility/core-libraries/8.0/activity-operation-name.md)
-- [TwoDigitYearMax default is 2049](../core/compatibility/globalization/8.0/twodigityearmax-default.md)
-- [GetFolderPath behavior on Unix](../core/compatibility/core-libraries/8.0/getfolderpath-unix.md)
-- [AesGcm authentication tag size on macOS](../core/compatibility/cryptography/8.0/aesgcm-auth-tag-size.md)
-- [RSA.EncryptValue and RSA.DecryptValue are obsolete](../core/compatibility/cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md)
 - [SYSLIB0048: RSA.EncryptValue and DecryptValue are obsolete](../fundamentals/syslib-diagnostics/syslib0048.md)
-- [Breaking changes in .NET 8](../core/compatibility/8.0.md)
-- [Anchor layout changes](../core/compatibility/windows-forms/8.0/anchor-layout.md)
-- [Top-level forms scale minimum and maximum size to DPI](../core/compatibility/windows-forms/8.0/forms-scale-size-to-dpi.md)
-- [WCF Client doesn't support .NET Standard](../core/compatibility/wcf-client/6.0/net-standard-2-support.md)
-- [Automatic RuntimeIdentifier for publish only](../core/compatibility/sdk/7.0/automatic-rid-publish-only.md)
 - [Dispose Pattern](../standard/design-guidelines/dispose-pattern.md)
 - [How to use the DateOnly and TimeOnly structures](../standard/datetime/how-to-use-dateonly-timeonly.md)
 - [CA1311: Specify a culture or use an invariant version](../fundamentals/code-analysis/quality-rules/ca1311.md)
@@ -73,8 +58,8 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 ### Updated articles
 
 - [F# code formatting guidelines](../fsharp/style-guide/formatting.md)
-  - FSharp: Add chained expressions guidance.
-  - Fsharp Stroustrup style guide
+  - Add chained expressions guidance
+  - Stroustrup style guide
 
 ## Microsoft Orleans
 
@@ -85,7 +70,7 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 
 ### Updated articles
 
-- [Orleans clients](../orleans/host/client.md) - Orleans client
+- [Orleans clients](../orleans/host/client.md)
 
 ## Community contributors
 

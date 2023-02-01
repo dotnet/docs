@@ -1,18 +1,18 @@
 ---
-title: Migrate from .NET Framework to .NET
-description: Learn how to migrate code using SslStream in .NET Framework to .NET.
+title: Migrate SSL code from .NET Framework to .NET
+description: Learn how to migrate code that uses SslStream in .NET Framework to .NET.
 author: rzikm
 ms.author: radekzikmund
 ms.date: 1/9/2023
 ---
 
-# Migrate from .NET Framework to .NET
+# Migrate SSL code from .NET Framework to .NET
 
 .NET Core brought many improvements as well as breaking changes to how <xref:System.Net.Security.SslStream> works. The most important change related to network security is that the <xref:System.Net.ServicePointManager> class has been mostly obsoleted and affects only the legacy <xref:System.Net.WebRequest> interface.
 
-Since .NET, allowed SSL/TLS protocols and certificate validation callbacks must be configured separately for each <xref:System.Net.Security.SslStream> instance via the <xref:System.Net.Security.SslServerAuthenticationOptions> or <xref:System.Net.Security.SslClientAuthenticationOptions>. In order to configure network security options used in HTTPS in <xref:System.Net.Http.HttpClient>, you need to configure the security options in the underlying handler. The default handler used by <xref:System.Net.Http.HttpClient> is <xref:System.Net.Http.SocketsHttpHandler> which has <xref:System.Net.Http.SocketsHttpHandler.SslOptions> property accepting <xref:System.Net.Security.SslClientAuthenticationOptions>.
+For each <xref:System.Net.Security.SslStream> instance, you must configure the allowed SSL/TLS protocols and certificate validation callbacks separately via <xref:System.Net.Security.SslServerAuthenticationOptions> or <xref:System.Net.Security.SslClientAuthenticationOptions>. To configure network security options used in HTTPS in <xref:System.Net.Http.HttpClient>, you need to configure the security options in the underlying handler. The default handler used by <xref:System.Net.Http.HttpClient> is <xref:System.Net.Http.SocketsHttpHandler>, which has an <xref:System.Net.Http.SocketsHttpHandler.SslOptions> property that accepts <xref:System.Net.Security.SslClientAuthenticationOptions>.
 
-Consider the following example, as it demonstrates how to create an <xref:System.Net.Http.HttpClient> with a custom certificate validation callback:
+Consider the following example that demonstrates how to create an <xref:System.Net.Http.HttpClient> with a custom certificate validation callback:
 
 ```csharp
 bool CustomCertificateValidator(
@@ -36,7 +36,7 @@ HttpClient httpClient = new(
     });
 ```
 
-Following table show how to migrate individual <xref:System.Net.ServicePointManager> properties related to SSL/TLS.
+The following table show how to migrate individual <xref:System.Net.ServicePointManager> properties related to SSL/TLS.
 
 | Source API | Target API |
 |---|---|

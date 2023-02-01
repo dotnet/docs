@@ -45,7 +45,7 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 - [CA1311: Specify a culture or use an invariant version](../fundamentals/code-analysis/quality-rules/ca1311.md)
 - [CA1421: Method uses runtime marshalling when DisableRuntimeMarshallingAttribute is applied](../fundamentals/code-analysis/quality-rules/ca1421.md)
 - [TLS/SSL best practices](../core/extensions/sslstream-best-practices.md)
-- [Migrate from .NET Framework to .NET](../core/extensions/sslstream-migration-from-framework.md)
+- [Migrate SSL code from .NET Framework to .NET](../core/extensions/sslstream-migration-from-framework.md)
 - [Troubleshoot `SslStream` authentication issues](../core/extensions/sslstream-troubleshooting.md)
 
 ### Updated articles

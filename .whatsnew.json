@@ -47,6 +47,47 @@
             "heading": ".NET breaking changes"
         },
         {
+            "names": [ "standard/linq", "standard/data" ],
+            "heading": "Data access in .NET"
+        },
+        {
+            "names": [ "devops",
+                       "core/testing",
+                       "core/deploying",
+                       "core/docker"
+                     ],
+            "heading": "DevOps and testing in .NET"
+        },
+        {
+            "names": [ "core/porting" ],
+            "heading": "Migration to .NET"
+        },
+        {
+            "names": [ "standard/security" ],
+            "heading": ".NET security"
+        },
+        {
+            "names": [ "core/tools",
+                       "core/additional-tools",
+                       "core/diagnostics",
+                       "fundamentals/code-analysis",
+                       "standard/analyzers",
+                       "fundamentals/syslib-diagnostics",
+                       "fundamentals/package-validation"
+                     ],
+            "heading": ".NET tools and diagnostics"
+        },
+        {
+            "names": [ "standard/asynchronous-programming-patterns",
+                       "standard/parallel-programming",
+                       "standard/threading",
+                       "standard/collections/thread-safe",
+                       "standard/native-interop",
+                       "standard/garbage-collection"
+                     ],
+            "heading": "Advanced .NET programming"
+        },
+        {
             "names": [ "core", "fundamentals", "standard" ],
             "heading": ".NET fundamentals"
         },

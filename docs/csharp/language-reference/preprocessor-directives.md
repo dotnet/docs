@@ -1,7 +1,7 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "C# preprocessor directives"
-ms.date: 03/17/2021
+ms.date: 01/30/2023
 f1_keywords: 
   - "cs.preprocessor"
   - "#nullable"
@@ -268,7 +268,7 @@ The `#line filename` directive specifies the file name you want to appear in the
 Beginning with C# 10, you can use a new form of the `#line` directive:
 
 ```csharp
-#line (1, 1) - (5, 60) 10 "partial-class.g.cs"
+#line (1, 1) - (5, 60) 10 "partial-class.cs"
 /*34567*/int b = 0;
 ```
 
@@ -277,17 +277,40 @@ The components of this form are:
 - `(1, 1)`:  The start line and column for the first character on the line that follows the directive. In this example, the next line would be reported as line 1, column 1.
 - `(5, 60)`: The end line and column for the marked region.
 - `10`: The column offset for the `#line` directive to take effect. In this example, the 10th column would be reported as column one. That's where the declaration `int b = 0;` begins. This field is optional. If omitted, the directive takes effect on the first column.
-- `"partial-class.g.cs"`: The name of the output file.
+- `"partial-class.cs"`: The name of the output file.
 
 The preceding example would generate the following warning:
 
 ```dotnetcli
-partial-class.g.cs(1,5,1,6): warning CS0219: The variable 'b' is assigned but its value is never used
+partial-class.cs(1,5,1,6): warning CS0219: The variable 'b' is assigned but its value is never used
 ```
 
-After remapping, the variable, `b`, is on the first line, at character six.
+After remapping, the variable, `b`, is on the first line, at character six, of the file `partial-class.cs`.
 
-Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
+Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. The most common use of this extended `#line` directive is to re-map warnings or errors that appear in a generated file to the original source.  For example, consider this razor page:
+
+```razor
+@page "/"
+Time: @DateTime.NowAndThen
+```
+
+The property `DateTime.Now` was typed incorrectly as `DateTime.NowAndThen`.  The generated C# for this razor snippet looks like the following, in `page.g.cs`:
+
+```csharp
+  _builder.Add("Time: ");
+#line (2, 6) (2, 27) 15 "page.razor"
+  _builder.Add(DateTime.NowAndThen);
+```
+
+The compiler output for the preceding snippet is:
+
+```dotnetcli
+page.razor(2, 2, 2, 27)error CS0117: 'DateTime' does not contain a definition for 'NowAndThen'
+```
+
+Line 2, column 6 in `page.razor` is where the text `@DateTime.NowAndThen` begins. That's noted by `(2, 6)` in the directive. That span of `@DateTime.NowAndThen` ends at line 2, column 27. That's noted by the `(2, 27)` in the directive. The text for `DateTime.NowAndThen` begins in column 15 of `page.g.cs`. That's noted by the `15` in the directive. Putting all the arguments together, and the compiler reports the error in its location in `page.razor`. The developer can navigate directly to the error in their source code, not the generated source.
+
+To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
 
 ## Pragmas
 

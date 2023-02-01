@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
@@ -14,7 +15,7 @@ namespace SystemTextJsonSamples
             // <Serialize>
             var options = new JsonSerializerOptions
             {
-                IgnoreNullValues = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);

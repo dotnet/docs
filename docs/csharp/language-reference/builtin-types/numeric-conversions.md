@@ -1,7 +1,7 @@
 ---
 description: Learn about the implicit and explicit conversions between the built-in numeric types in C#
 title: "Built-in numeric conversions - C# reference"
-ms.date: 03/17/2021
+ms.date: 01/30/2023
 helpviewer_keywords: 
   - "implicit numeric conversions [C#]"
   - "explicit numeric conversion [C#]"
@@ -63,7 +63,7 @@ The following table shows the predefined explicit conversions between the built-
 |[short](integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint`|
 |[ushort](integral-numeric-types.md)|`sbyte`, `byte`, or `short`|
 |[int](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint`|
-|[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, or `int`|
+|[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `nint`|
 |[long](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint`|
 |[ulong](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint`|
 |[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint`|

@@ -2,7 +2,7 @@
 ms.custom: "updateeachrelease"
 ---
 
-| Target framework | version | C# language version default |
+| Target           | Version | C# language version default |
 |------------------|---------|-----------------------------|
 | .NET             | 7.x     | C# 11                       |
 | .NET             | 6.x     | C# 10                       |

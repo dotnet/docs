@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio for Mac
 description: Learn how to debug a .NET console app using Visual Studio Mac.
-ms.date: 11/30/2020
+ms.date: 01/28/2023
 recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio for Mac
@@ -32,13 +32,13 @@ By default, Visual Studio for Mac uses the Debug build configuration, so you don
 
 A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
 
-1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press <kbd>⌘</kbd><kbd>\\</kbd> (<kbd>command</kbd>+<kbd>\\</kbd>). Another way to set a breakpoint is by selecting **Run** > **Toggle Breakpoint** from the menu.
+1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press <kbd>⌘</kbd><kbd>\\</kbd> (<kbd>command</kbd>+<kbd>\\</kbd>). Another way to set a breakpoint is by selecting **Debug** > **Toggle Breakpoint** from the menu.
 
    Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
 
-1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to start the program in debugging mode. Another way to start debugging is by choosing **Run** > **Start Debugging** from the menu.
+1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to start the program in debugging mode. Another way to start debugging is by choosing **Debug** > **Start Debugging** from the menu.
 
 1. Enter a string in the terminal window when the program prompts for a name, and then press <kbd>enter</kbd>.
 
@@ -50,7 +50,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 The **Immediate** window lets you interact with the application you're debugging. You can interactively change the value of variables to see how it affects your program.
 
-1. If the **Immediate** window is not visible, display it by choosing **View** > **Debug Pads** > **Immediate**.
+1. If the **Immediate** window is not visible, display it by choosing **View** > **Debug Windows** > **Immediate**.
 
 1. Enter `name = "Gracie"` in the **Immediate** window and press <kbd>enter</kbd>.
 
@@ -112,7 +112,7 @@ The program displays a string that the user enters. What happens if the user doe
 
 1. Close the terminal window.
 
-1. Clear the breakpoint by clicking on the red dot in the left margin of the code window. Another way to clear a breakpoint is by choosing **Run > Toggle Breakpoint** while the line of code is selected.
+1. Clear the breakpoint by clicking on the red dot in the left margin of the code window. Another way to clear a breakpoint is by choosing **Debug > Toggle Breakpoint** while the line of code is selected.
 
 ## Step through a program
 
@@ -124,7 +124,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio stops on the line with the breakpoint.
 
-1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>) or select **Run** > **Step Into** to advance one line.
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>) or select **Debug** > **Step Into** to advance one line.
 
    Visual Studio highlights and displays an arrow beside the next line of execution.
 

@@ -1,0 +1,75 @@
+items:
+- name: .NET security
+  href: ../../standard/security/index.md
+- name: Key security concepts
+  href: ../../standard/security/key-security-concepts.md
+- name: .NET Core FIPS compliance
+  href: ../../standard/security/fips-compliance.md
+- name: Role-based security
+  href: ../../standard/security/role-based-security.md
+  items:
+  - name: Principal and Identity Objects
+    href: ../../standard/security/principal-and-identity-objects.md
+  - name: "How to: Create a WindowsPrincipal Object"
+    href: ../../standard/security/how-to-create-a-windowsprincipal-object.md
+  - name: "How to: Create GenericPrincipal and GenericIdentity Objects"
+    href: ../../standard/security/how-to-create-genericprincipal-and-genericidentity-objects.md
+  - name: Replacing a Principal Object
+    href: ../../standard/security/replacing-a-principal-object.md
+  - name: Impersonating and Reverting
+    href: ../../standard/security/impersonating-and-reverting.md
+- name: Cryptography model
+  items:
+  - name: Overview
+    href: ../../standard/security/cryptography-model.md
+  - name: Cross-platform cryptography
+    href: ../../standard/security/cross-platform-cryptography.md
+  - name: Cryptographic Services
+    href: ../../standard/security/cryptographic-services.md
+  - name: Generating Keys for Encryption and Decryption
+    href: ../../standard/security/generating-keys-for-encryption-and-decryption.md
+  - name: "How to: Store Asymmetric Keys in a Key Container"
+    href: ../../standard/security/how-to-store-asymmetric-keys-in-a-key-container.md
+  - name: Encrypting Data
+    href: ../../standard/security/encrypting-data.md
+  - name: Decrypting Data
+    href: ../../standard/security/decrypting-data.md
+  - name: Cryptographic Signatures
+    href: ../../standard/security/cryptographic-signatures.md
+  - name: Ensuring Data Integrity with Hash Codes
+    href: ../../standard/security/ensuring-data-integrity-with-hash-codes.md
+  - name: "How to: Encrypt XML Elements with Symmetric Keys"
+    href: ../../standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md
+  - name: "How to: Decrypt XML Elements with Symmetric Keys"
+    href: ../../standard/security/how-to-decrypt-xml-elements-with-symmetric-keys.md
+  - name: "How to: Encrypt XML Elements with Asymmetric Keys"
+    href: ../../standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md
+  - name: "How to: Decrypt XML Elements with Asymmetric Keys"
+    href: ../../standard/security/how-to-decrypt-xml-elements-with-asymmetric-keys.md
+  - name: "How to: Encrypt XML Elements with X.509 Certificates"
+    href: ../../standard/security/how-to-encrypt-xml-elements-with-x-509-certificates.md
+  - name: "How to: Decrypt XML Elements with X.509 Certificates"
+    href: ../../standard/security/how-to-decrypt-xml-elements-with-x-509-certificates.md
+  - name: "How to: Sign XML Documents with Digital Signatures"
+    href: ../../standard/security/how-to-sign-xml-documents-with-digital-signatures.md
+  - name: "How to: Verify the Digital Signatures of XML Documents"
+    href: ../../standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md
+  - name: "How to: Use Data Protection"
+    href: ../../standard/security/how-to-use-data-protection.md
+  - name: "How to: Access Hardware Encryption Devices"
+    href: ../../standard/security/how-to-access-hardware-encryption-devices.md
+  - name: "Walkthrough: Creating a Cryptographic Application"
+    href: ../../standard/security/walkthrough-creating-a-cryptographic-application.md
+- name: Secure coding guidelines
+  href: ../../standard/security/secure-coding-guidelines.md
+  items:
+  - name: Securing State Data
+    href: ../../standard/security/securing-state-data.md
+  - name: Security and User Input
+    href: ../../standard/security/security-and-user-input.md
+  - name: Security and Race Conditions
+    href: ../../standard/security/security-and-race-conditions.md
+  - name: Security and On-the-Fly Code Generation
+    href: ../../standard/security/security-and-on-the-fly-code-generation.md
+  - name: Timing vulnerabilities with CBC-mode symmetric decryption using padding
+    href: ../../standard/security/vulnerabilities-cbc-mode.md

@@ -3,7 +3,7 @@ title: Install .NET on SLES
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/07/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
@@ -18,8 +18,8 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 | SLES   | .NET |
 |--------|------|
-| 15     | 7, 6, 3.1 |
-| 12 SP2 | 7, 6, 3.1 |
+| 15     | 7, 6 |
+| 12 SP2 | 7, 6 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -83,12 +83,7 @@ If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
-For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
 ## Next steps
 

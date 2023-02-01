@@ -167,7 +167,7 @@ The severity value must be `warning` or `error` to be [enforced on build](../ove
 
 ## Example: Public member capitalization
 
-The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates must be capitalized. Notice that this naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
+The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates that are marked `readonly` must be capitalized. This naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
 
 ```ini
 [*.{cs,vb}]

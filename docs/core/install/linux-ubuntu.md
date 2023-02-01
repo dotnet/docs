@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/29/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -22,9 +22,9 @@ The following table is a list of currently supported .NET releases and the versi
 |------------------------|------------|
 | [22.10](#2210)         | 7, 6       |
 | [22.04 (LTS)](#2204)   | 7, 6       |
-| [20.04 (LTS)](#2004)   | 7, 6, 3.1  |
-| [18.04 (LTS)](#1804)   | 7, 6, 3.1  |
-| [16.04 (LTS)](#1604)   | 6, 3.1    |
+| [20.04 (LTS)](#2004)   | 7, 6       |
+| [18.04 (LTS)](#1804)   | 7, 6       |
+| [16.04 (LTS)](#1604)   | 6          |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -235,26 +235,22 @@ When you install with a package manager, these libraries are installed for you. 
 - libgcc1
 - libgcc-s1 (for 22.x)
 - libgssapi-krb5-2
-- libicu52 (for 14.x)
 - libicu55 (for 16.x)
 - libicu60 (for 18.x)
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
 - libicu71 (for 22.10)
 - liblttng-ust1 (for 22.x)
-- libssl1.0.0 (for 14.x, 16.x)
+- libssl1.0.0 (for 16.x)
 - libssl1.1 (for 18.x, 20.x)
 - libssl3 (for 22.x)
 - libstdc++6
 - libunwind8 (for 22.x)
 - zlib1g
 
-For .NET apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-- libgdiplus (version 6.0.1 or later)
-
-  > [!WARNING]
-  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
+You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ## Next steps
 

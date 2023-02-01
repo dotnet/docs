@@ -1101,7 +1101,7 @@ items:
     - name: Comparison operators
       href: language-reference/operators/comparison-operators.md
       displayName: ">, <, >=, <=, greater, less"
-    - name: Member access operators and expressions
+    - name: Member access and null-conditional operators and expressions
       href: language-reference/operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
     - name: Type-testing operators and cast expression
@@ -1207,10 +1207,15 @@ items:
     - name: Overview
       displayName: special characters
       href: language-reference/tokens/index.md
+    - name: Comments
+      displayName: /* */, //
+      href: language-reference/tokens/comments.md
     - name: $ -- string interpolation
       href: language-reference/tokens/interpolated.md
     - name: "@ -- verbatim identifier"
       href: language-reference/tokens/verbatim.md
+    - name: "\"\"\" -- raw string literal"
+      href: language-reference/tokens/raw-string.md
   - name: Attributes read by the compiler
     items:
     - name: Global attributes
@@ -1372,14 +1377,10 @@ items:
         href: ../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
       - name: Stackalloc array initializers
         href: ../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
-      - name: Auto-implemented property field-targeted attributes
-        href: ../../_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md
       - name: Expression variables in initializers
         href: ../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md
       - name: Tuple equality (==) and inequality (!=)
         href: ../../_csharplang/proposals/csharp-7.3/tuple-equality.md
-      - name: Improved overload candidates
-        href: ../../_csharplang/proposals/csharp-7.3/improved-overload-candidates.md
     - name: C# 8.0 features
       items:
       - name: Nullable reference types - proposal

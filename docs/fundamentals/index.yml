@@ -1,49 +1,34 @@
 ### YamlMime:Landing
 
-title: .NET documentation
-summary: Learn about .NET, an open-source developer platform for building many different types of applications.
+title: .NET fundamentals documentation
+summary: Learn the fundamentals of .NET, an open-source developer platform for building many different types of applications.
 
 metadata:
   title: .NET documentation
   description: Learn about .NET, an open-source developer platform for building many different types of applications.
   ms.topic: landing-page
-  ms.date: 02/17/2022
+  ms.date: 01/18/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
-
   # Card
   - title: Learn about .NET
     linkLists:
       - linkListType: download
         links:
-        - text: Download .NET
-          url: https://dotnet.microsoft.com/download
+          - text: Download .NET
+            url: https://dotnet.microsoft.com/download
       - linkListType: overview
         links:
           - text: What is .NET?
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
           - text: Introduction to .NET
             url: ../core/introduction.md
-          - text: .NET SDK overview
-            url: ../core/sdk.md
-      - linkListType: get-started
-        links:
-          - text: Get started with .NET Core
-            url: ../core/get-started.md
-          - text: Get started with ASP.NET Core
-            url: /aspnet/core/
-          - text: .NET on Q&A
-            url: /answers/products/dotnet
-          - text: .NET tech community forums
-            url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
       - linkListType: concept
         links:
           - text: .NET Standard
             url: ../standard/net-standard.md
-          - text: Target frameworks
-            url: ../standard/frameworks.md
           - text: Common Language Runtime (CLR)
             url: ../standard/clr.md
           - text: .NET Core support policy
@@ -66,11 +51,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Select which .NET version to use 
+          - text: Select which .NET version to use
             url: ../core/versions/selection.md
       - linkListType: how-to-guide
         links:
-          - text: Install .NET SDK 
+          - text: Install .NET SDK
             url: ../core/install/windows.md
           - text: Install .NET runtime
             url: ../core/install/windows.md
@@ -84,26 +69,34 @@ landingContent:
             url: ../core/install/windows.md
 
   # Card
-  - title: Get started with .NET Core
+  - title: Get started with .NET
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
-          - text: Port from .NET Framework to .NET Core
-            url: ../core/porting/index.md
-          - text: Upgrade Assistant
-            url: ../core/porting/upgrade-assistant-overview.md
+          - text: Get started with .NET
+            url: ../core/get-started.md
+          - text: Get started with ASP.NET Core
+            url: /aspnet/core/
+          - text: .NET on Q&A
+            url: /answers/products/dotnet
+          - text: .NET tech community forums
+            url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
       - linkListType: video
         links:
           - text: "Tutorial: Hello World in 10 minutes"
-            url: https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro 
+            url: https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro
       - linkListType: tutorial
         links:
           - text: Create a Hello World app in Visual Studio Code
             url: ../core/tutorials/with-visual-studio-code.md
-          - text: Create a Hello World app in Visual Studio 
+          - text: Create a Hello World app in Visual Studio
             url: ../core/tutorials/with-visual-studio.md
           - text: Containerize a .NET Core app
             url: ../core/docker/build-container.md
+      - linkListType: concept
+        links:
+          - text: Port from .NET Framework to .NET
+            url: ../core/porting/index.md
       - linkListType: deploy
         links:
           - text: App publishing
@@ -112,26 +105,24 @@ landingContent:
             url: ../devops/dotnet-publish-github-action.md
 
   # Card
-  - title: Use .NET from the command line
+  - title: Serialize data
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
-          - text: .NET CLI
-            url: ../core/tools/index.md
-      - linkListType: tutorial
+          - text: Serialize and deserialize JSON
+            url: ../standard/serialization/system-text-json/overview.md
+      - linkListType: how-to-guide
         links:
-          - text: Get started using the CLI
-            url: ../core/tutorials/with-visual-studio-code.md
-      - linkListType: deploy
+          - text: Serialize and deserialize JSON using C#
+            url: ../standard/serialization/system-text-json/how-to.md
+          - text: Migrate from Newtonsoft.Json to System.Text.Json
+            url: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
+          - text: Write custom converters for JSON serialization
+            url: ../standard/serialization/system-text-json/converters-how-to.md
+      - linkListType: sample
         links:
-          - text: Publish apps
-            url: ../core/deploying/deploy-with-cli.md
-      - linkListType: reference
-        links:
-          - text: dotnet new
-            url: ../core/tools/dotnet-new.md
-          - text: dotnet publish
-            url: ../core/tools/dotnet-publish.md
+          - text: Examples of XML serialization
+            url: ../standard/serialization/examples-of-xml-serialization.md
 
   # Card
   - title: Runtime libraries
@@ -168,46 +159,6 @@ landingContent:
             url: ../core/extensions/logger-message-generator.md
           - text: Create a Windows Service using BackgroundService
             url: ../core/extensions/windows-service.md
-
-  # Card
-  - title: Unit test with .NET Core
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Unit testing in .NET Core and .NET Standard
-            url: ../core/testing/index.md
-      - linkListType: tutorial
-        links:
-          - text: Test C# code using dotnet test and xUnit 
-            url: ../core/testing/unit-testing-with-dotnet-test.md
-          - text: Unit test with NUnit
-            url: ../core/testing/unit-testing-with-nunit.md
-          - text: Unit test with MSTest
-            url: ../core/testing/unit-testing-with-mstest.md
-      - linkListType: concept
-        links:
-          - text: Best practices for writing unit tests 
-            url: ../core/testing/unit-testing-best-practices.md
-
-  # Card
-  - title: Serialize data
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Serialize and deserialize JSON
-            url: ../standard/serialization/system-text-json/overview.md
-      - linkListType: how-to-guide
-        links:
-          - text: Serialize and deserialize JSON using C#
-            url: ../standard/serialization/system-text-json/how-to.md
-          - text: Migrate from Newtonsoft.Json to System.Text.Json
-            url: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
-          - text: Write custom converters for JSON serialization
-            url: ../standard/serialization/system-text-json/converters-how-to.md
-      - linkListType: sample
-        links:
-          - text: Examples of XML serialization
-            url: ../standard/serialization/examples-of-xml-serialization.md
 
   # Card
   - title: Format and convert dates, numbers, and strings
@@ -275,36 +226,3 @@ landingContent:
           - text: Open and append to a log file
             url: ../standard/io/how-to-open-and-append-to-a-log-file.md
 
-  # Card
-  - title: Manage memory use
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Garbage collection fundamentals
-            url: ../standard/garbage-collection/fundamentals.md
-          - text: Implement a Dispose method
-            url: ../standard/garbage-collection/implementing-dispose.md
-          - text: Implement a DisposeAsync method
-            url: ../standard/garbage-collection/implementing-disposeasync.md
-
-  # Card
-  - title: Learn about parallel programming
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Parallel Programming in .NET
-            url: ../standard/parallel-programming/index.md
-      - linkListType: concept
-        links:
-          - text: Task Parallel Library (TPL)
-            url: ../standard/parallel-programming/task-parallel-library-tpl.md
-          - text: Task-based asynchronous programming 
-            url: ../standard/parallel-programming/task-based-asynchronous-programming.md
-          - text: Task cancellation
-            url: ../standard/parallel-programming/task-cancellation.md
-      - linkListType: how-to-guide
-        links:
-          - text: Write a simple parallel program using Parallel.ForEach 
-            url: ../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
-          - text: Return a value from a task
-            url: ../standard/parallel-programming/how-to-return-a-value-from-a-task.md

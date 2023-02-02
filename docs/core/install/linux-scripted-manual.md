@@ -120,7 +120,7 @@ Download a **binary** release for either the SDK or the runtime from one of the 
 
 Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal.
 
-Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. This also makes the .NET CLI commands available at the terminal and sets the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
+Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. Running the following commands makes the .NET CLI commands available at the terminal and sets the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
 ```bash
 DOTNET_FILE=dotnet-sdk-7.0.100-linux-x64.tar.gz

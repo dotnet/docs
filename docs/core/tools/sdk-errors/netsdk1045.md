@@ -42,7 +42,15 @@ If you have a preview installed of the requested .NET SDK version, you also need
 
 ## Visual Studio version
 
-For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads) or later to build your project. For information about which Visual Studio for Mac 2022 versions support which .NET versions, see [Supported versions of .NET](/visualstudio/mac/supported-versions-net).
+For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads) or later to build your project.
+
+## Visual Studio for Mac
+
+VS for Mac supports both `dotnet msbuild` and MSBuild on Mono. But the .NET SDK version is downgraded when MSBuild on Mono is used, and this can result in the NETSDK1045 error.
+
+Open the **Solution Properties** window (ctrl-click the solution in the **Solution** window and select **Properties**), select **Build - General**, and uncheck **Build with MSBuild on Mono**. This **Build with MSBuild on Mono** option will be checked if there are any classic projects in the solution, and this can cause problems since Mono does not support the later .NET SDKs.
+
+For more information about which Visual Studio for Mac 2022 versions support which .NET versions, see [Supported versions of .NET](/visualstudio/mac/supported-versions-net).
 
 ## PATH environment variable
 

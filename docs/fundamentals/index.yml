@@ -7,7 +7,7 @@ metadata:
   title: .NET documentation
   description: Learn about .NET, an open-source developer platform for building many different types of applications.
   ms.topic: landing-page
-  ms.date: 01/18/2023
+  ms.date: 02/02/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -35,6 +35,8 @@ landingContent:
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
+          - text: What's new in .NET 8
+            url: ../core/whats-new/dotnet-8.md
           - text: What's new in .NET 7
             url: ../core/whats-new/dotnet-7.md
           - text: What's new in .NET 6
@@ -225,4 +227,3 @@ landingContent:
             url: ../standard/io/how-to-compress-and-extract-files.md
           - text: Open and append to a log file
             url: ../standard/io/how-to-open-and-append-to-a-log-file.md
-

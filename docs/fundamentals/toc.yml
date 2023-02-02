@@ -145,6 +145,12 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
+  - name: .NET 8
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-8.md
+    - name: Breaking changes
+      href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 7
     items:
     - name: What's new

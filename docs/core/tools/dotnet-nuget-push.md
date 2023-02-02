@@ -30,6 +30,17 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 The command pushes an existing package. It doesn't create a package. To create a package, use [`dotnet pack`](dotnet-pack.md).
 
+### Hierarchical folder structure
+
+This command can store packages in a hierarchical folder structure, which is recommended to optimize performance. It stores packages in a hierarchical folder structure when publishing to a local folder (feed), like `nuget add` does, if there already is at least one package in the feed that is in a hierarchical folder structure. If the feed has a hierarchical folder structured package already in it, `dotnet nuget push` respects that structure. So, if you want to publish to a local feed using the .NET CLI instead of the NuGet CLI:
+
+* Before you publish the first package, go to the local cache folder, that is, global packages at *%userprofile%.nuget\packages*, and select the root folder of a package id. It can be any package that is not part of a framework, like .NET standard or ASP.NET.d
+* Copy the selected package folder into the root folder of the local feed.
+* Use `dotnet nuget push` to publish your package to the local feed.
+* You can now delete the folder you previously copied in, and you can freely use `dotnet nuget push` to publish to your local feed.
+
+Alternatively, use the NuGet CLI for the first package, then you can use `dotnet nuget push` for the rest. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  
+
 ## Arguments
 
 - **`ROOT`**
@@ -148,5 +159,3 @@ The command pushes an existing package. It doesn't create a package. To create a
   ```
   
 - For pushing to Azure Artifacts, [see Azure Artifacts' push documentation](/azure/devops/artifacts/nuget/dotnet-exe#publish-packages).
-
-  This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

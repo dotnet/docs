@@ -23,7 +23,9 @@ The following table shows the environment variables you can configure for collec
 > [!NOTE]
 > .NET 7 standardizes on the prefix `DOTNET_` instead of `COMPlus_` for these environment variables. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix for environment variables.
 
-Starting in .NET 5, `DOTNET_MiniDumpName` may also include formatting template specifiers that will be filled in dynamically:
+## File path templates
+
+Starting in .NET 5, `DOTNET_DbgMiniDumpName` can also include formatting template specifiers that will be filled in dynamically:
 
 |Specifier|Value|
 |---------|-----|

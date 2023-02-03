@@ -35,6 +35,8 @@ Starting in .NET 5, `DOTNET_DbgMiniDumpName` can also include formatting templat
 |%h|Host name return by `gethostname()`|
 |%t|Time of dump, expressed as seconds since the Epoch, 1970-01-01 00:00:00 +0000 (UTC)|
 
+## Types of mini dumps
+
 The following table shows all the values you can use for `DOTNET_DbgMiniDumpType`. For example, setting `DOTNET_DbgMiniDumpType` to 1 means `MiniDumpNormal` type dump will be collected on a crash.
 
 |Value|Name|Description|

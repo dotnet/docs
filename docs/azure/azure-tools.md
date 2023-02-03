@@ -22,7 +22,7 @@ Azure PowerShell is a PowerShell module of cmdlets for managing Azure resource d
 
 ## Azure Developer CLI (preview)
 
-Azure Developer CLI (`azd`) is an open-source tool that accelerates the process of building cloud apps on Azure. The CLI provides best practice, developer-friendly commands that map to key stages in your workflow, whether you’re working in the terminal, your editor or integrated development environment (IDE), or DevOps.
+Azure Developer CLI (`azd`) is an open-source tool that accelerates the process of building cloud apps on Azure. The CLI provides best practice, developer-friendly commands that map to key stages in your workflow, whether you're working in the terminal, your editor or integrated development environment (IDE), or DevOps.
 
 You can use `azd` with extensible templates that include everything you need to get an application up and running in Azure. These templates include application code, and reusable infrastructure as code assets.
 

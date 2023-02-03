@@ -1,7 +1,7 @@
 ---
 title: Avoid memory allocations and data copies
 description: Performance work in .NET means removing allocations from your code. One technique is to change critical data structures from `class` to `struct`. That changes semantics and means more data is being copied. Learn how to minimize allocations while preserving semantics and avoid extra copies.
-ms.date: 01/27/2023
+ms.date: 02/03/2023
 ms.technology: csharp-advanced-concepts
 ---
 # Reduce memory allocations using new C# features
@@ -41,11 +41,23 @@ C# includes rules for `ref` expressions to ensure that a `ref` expression can't 
 public ref int CantEscape()
 {
     int index = 42;
-    return ref index; // Error: error's ref safe to escape scope is the body of CantEscape
+    return ref index; // Error: index's ref safe to escape scope is the body of CantEscape
 }
 ```
 
-The compiler reports an error because you can't return a reference to a local variable from a method. The caller can't access the storage being referred to. The *ref safe to escape scope* defines the scope in which a `ref` expression is safe to access or modify. For non-ref locals, the *ref safe to escape* scope is the body of the method. In other words, a non-ref local can't be returned as a `ref` expression. For a variable to have a *ref safe to escape scope* of the entire method, it must be accessible and assignable outside the method. The following snippet shows two examples. A member field can be accessed from the scope calling a method, so a class or struct field's *ref safe to escape scope* is the entire method. The *ref safe to escape scope* for a parameter with the `ref`, `in`, or `out` modifiers is also the entire method. Both can be `ref` returned from a member method:
+The compiler reports an error because you can't return a reference to a local variable from a method. The caller can't access the storage being referred to. The *ref safe to escape scope* defines the scope in which a `ref` expression is safe to access or modify. The following table lists the *ref safe to escape scopes* for variable types. `ref` fields can't be declared in a `class` or a non-ref `struct`, so those those rows aren't in the table:
+
+| Declaration                 | *ref safe to escape scope*    |
+|-----------------------------|-------------------------------|
+| non-ref local               | block where local is declared |
+| non-ref parameter           | current method                |
+| `ref`, `in` parameter       | calling method                |
+| `out` parameter             | current method                |
+| `class` field               | calling method                |
+| non-ref `struct` field      | current method                |
+| `ref` field of `ref struct` | calling method                |
+
+A variable can be `ref` returned if its *ref safe to escape scope* is the calling method. If its *ref safe to escape scope* is the current method or a block, `ref` return is disallowed. The following snippet shows two examples. A member field can be accessed from the scope calling a method, so a class or struct field's *ref safe to escape scope* is the entire method. The *ref safe to escape scope* for a parameter with the `ref`, or `in` modifiers is the entire method. Both can be `ref` returned from a member method:
 
 :::code language="csharp" source="./snippets/ref-safety/EscapeScopes.cs" id="RefSafeToEscapeScopes":::
 
@@ -56,7 +68,7 @@ The compiler ensures that a reference can't escape its *ref safe to escape scope
 
 ## Safe to escape scope and ref structs
 
-`ref struct` types require more rules to ensure they can be used safely. A `ref struct` type may include `ref` fields. That requires the introduction of a *safe to escape scope*. For most types, the *safe to escape scope* is the entire method. In other words, a value that's not a `ref struct` can always be returned from a method.
+`ref struct` types require more rules to ensure they can be used safely. A `ref struct` type may include `ref` fields. That requires the introduction of a *safe to escape scope*. For most types, the *safe to escape scope* is the calling method. In other words, a value that's not a `ref struct` can always be returned from a method.
 
 Informally, the *safe to escape scope* for a `ref struct` is the scope where all of its `ref` fields can be accessed. In other words, it's the intersection of the *ref safe to escape scopes* of all its `ref` fields. The following method returns a `ReadOnlySpan<char>` to a member field, so its *safe to escape scope* is the method:
 
@@ -79,7 +91,7 @@ public Span<int> M()
 
 ## Unify memory types
 
-The introduction of <xref:System.Span%601?displayProperty=fullName> and <xref:System.Memory%601?displayProperty=fullName> provide a unified model for working with memory. <xref:System.ReadOnlySpan%601?displayProperty=fullName> and <xref:System.ReadOnlyMemory%601?displayProperty=fullName> provide readonly versions for accessing memory. They all provide an abstraction over a block of memory storing an array of similar elements. The difference is that `Span<T>` and `ReadOnlySpan<T>` are `ref struct` types whereas `Memory<T>` and `ReadOnlyMemory<T>` are `struct` types. Spans contain a `ref field`. Therefore instances of a span can't leave its *ref safe to escape* context. The implementation of `Memory<T>` and `ReadOnlyMemory<T>` remove this restriction. You use these types to directly access memory buffers.
+The introduction of <xref:System.Span%601?displayProperty=fullName> and <xref:System.Memory%601?displayProperty=fullName> provide a unified model for working with memory. <xref:System.ReadOnlySpan%601?displayProperty=fullName> and <xref:System.ReadOnlyMemory%601?displayProperty=fullName> provide readonly versions for accessing memory. They all provide an abstraction over a block of memory storing an array of similar elements. The difference is that `Span<T>` and `ReadOnlySpan<T>` are `ref struct` types whereas `Memory<T>` and `ReadOnlyMemory<T>` are `struct` types. Spans contain a `ref field`. Therefore instances of a span can't leave its *safe to escape scope*. The *safe to escape* scope of a `ref struct` is the *ref safe to escape scope* of its `ref field`. The implementation of `Memory<T>` and `ReadOnlyMemory<T>` remove this restriction. You use these types to directly access memory buffers.
 
 ## Improve performance with ref safety
 

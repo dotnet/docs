@@ -86,7 +86,7 @@ using Azure.ResourceManager.ServiceBus;
 var armClient = new ArmClient(new DefaultAzureCredential());
 SubscriptionResource subscription = armClient.GetDefaultSubscription();
 ResourceGroupResource resourceGroupResource = 
-    client.GetDefaultSubscription().GetResourceGroup(resourceGroupName);
+    armClient.GetDefaultSubscription().GetResourceGroup(resourceGroupName);
 ```
 
 1. Find the corresponding method to manage your Azure resource.

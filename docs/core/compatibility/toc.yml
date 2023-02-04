@@ -32,6 +32,12 @@ items:
       items:
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
+    - name: SDK
+      items:
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
@@ -1234,6 +1240,12 @@ items:
         href: networking.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 8
+      items:
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects

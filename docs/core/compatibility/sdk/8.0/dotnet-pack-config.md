@@ -19,11 +19,13 @@ If you're developing with the .NET 8 SDK or a later version, `dotnet pack` uses 
 
 `dotnet pack` can pack for multiple target framework monikers (TFM) at the same time. If your project targets multiple versions and you have different `PackRelease` values for different targets, you can have a conflict where some TFMs pack the `Release` configuration and others pack the `Debug` configuration.
 
-### Projects in a solution
+For projects in a solution:
 
-`dotnet pack` can pack all the projects in a Visual Studio solution if given a solution file. For each project in the solution, the value of `PackRelease` is implicitly set to `true` if it's undefined. In order for `dotnet pack` to determine the correct configuration to use, all projects in the solution must agree on their value of `PackRelease`.
+- `dotnet pack` can pack all the projects in a Visual Studio solution if given a solution file. For each project in the solution, the value of `PackRelease` is implicitly set to `true` if it's undefined. In order for `dotnet pack` to determine the correct configuration to use, all projects in the solution must agree on their value of `PackRelease`.
 
-The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized. By default, the executable project's `PackRelease` value takes precedence and is flowed to other projects in the solution.
+- This change might cause the performance of `dotnet pack` to regress, especially for solutions that contain many projects. To address this, a new environment variable `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` has been introduced.
+
+- The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized. By default, the executable project's `PackRelease` value takes precedence and is flowed to other projects in the solution.
 
 ## Version introduced
 
@@ -41,7 +43,7 @@ The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable was remo
 
 ## Recommended action
 
-- To disable the new behavior entirely, you can set the `DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE` environment variable to `true` (or any other value). This environment variable affects both `dotnet publish` and `dotnet pack`.
+- To disable the new behavior entirely, you can set the `DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE` environment variable to `true` (or any other value). This variable affects both `dotnet publish` and `dotnet pack`.
 
 - To explicitly specify the `Debug` configuration for packing, use the `-c` or `--configuration` option with `dotnet pack`.
 
@@ -55,7 +57,7 @@ The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable was remo
   </PropertyGroup>
   ```
 
-- If you're packing a solution and the performance has regressed, you can set the `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` environment variable to `true` (or any other value) to remove the regression.
+- If you're packing a solution and the performance has regressed, you can set the `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` environment variable to `true` (or any other value) to remove the regression. This variable affects both `dotnet publish` and `dotnet pack`.
 
 ## See also
 

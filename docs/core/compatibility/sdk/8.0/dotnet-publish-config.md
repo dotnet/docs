@@ -19,13 +19,13 @@ If you're developing with the .NET 8 SDK or a later version, `dotnet publish` us
 
 If your project targets multiple versions, the new behavior only applies if you specify a target framework of .NET 8 or later when you publish (for example, using `dotnet publish -f net8.0`).
 
-### Projects in a solution
+For projects in a solution:
 
-`dotnet publish` can publish all the projects in a Visual Studio solution if given a solution file. For the solution projects that target .NET 8 or later, the value of `PublishRelease` is implicitly set to `true` if it's undefined. However, in order for `dotnet publish` to determine the correct configuration to use for the solution, all projects in the solution must agree on their value of `PublishRelease`. If an older project in the solution has `PublishRelease` set to `false`, you should explicitly set the property to `false` for any new .NET 8+ projects as well.
+- `dotnet publish` can publish all the projects in a Visual Studio solution if given a solution file. For the solution projects that target .NET 8 or later, the value of `PublishRelease` is implicitly set to `true` if it's undefined. However, in order for `dotnet publish` to determine the correct configuration to use for the solution, all projects in the solution must agree on their value of `PublishRelease`. If an older project in the solution has `PublishRelease` set to `false`, you should explicitly set the property to `false` for any new .NET 8+ projects as well.
 
-This change might cause the performance of `dotnet publish` to regress, especially for solutions that contain many projects. To address this, a new environment variable `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` has been introduced.
+- This change might cause the performance of `dotnet publish` to regress, especially for solutions that contain many projects. To address this, a new environment variable `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` has been introduced.
 
-The `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized. By default, the executable project's `PublishRelease` value takes precedence and is flowed to other projects in the solution.
+- The `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized. By default, the executable project's `PublishRelease` value takes precedence and is flowed to other projects in the solution.
 
 ## Version introduced
 
@@ -43,7 +43,7 @@ The `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` environment variable was r
 
 ## Recommended action
 
-- To disable the new behavior entirely, you can set the `DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE` environment variable to `true` (or any other value). This environment variable affects both `dotnet publish` and `dotnet pack`.
+- To disable the new behavior entirely, you can set the `DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE` environment variable to `true` (or any other value). This variable affects both `dotnet publish` and `dotnet pack`.
 
 - To explicitly specify the `Debug` configuration for publishing, use the `-c` or `--configuration` option with `dotnet publish`.
 
@@ -59,7 +59,7 @@ The `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` environment variable was r
 
   Alternatively, you can specify the property in a *Directory.Build.Props* file. However, if you set it `false` in this file, you'll still need to explicitly set the property to `false` in the .NET 8+ projects in the solution. Similarly, if some projects explicitly set a value that's different from the value in the *Directory.Build.Props* file, publish will fail.
 
-- If you're publishing a solution and the performance has regressed, you can set the `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` environment variable to `true` (or any other value) to remove the regression. However, if you set this variable and your solution contains a .NET 8+ project and a project that targets .NET 7 or earlier, publishing will fail until all projects define `PublishRelease`.
+- If you're publishing a solution and the performance has regressed, you can set the `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` environment variable to `true` (or any other value) to remove the regression. However, if you set this variable and your solution contains a .NET 8+ project and a project that targets .NET 7 or earlier, publishing will fail until all projects define `PublishRelease`. This variable affects both `dotnet publish` and `dotnet pack`.
 
 ## See also
 

@@ -75,6 +75,7 @@
                     "csharp-7.3/enum-delegate-constraints.md",
                     "csharp-7.3/improved-overload-candidates.md",
                     "csharp-7.3/ref-loops.md",
+                    "csharp-7.3/blittable.md",
                     "csharp-8.0/alternative-interpolated-verbatim.md",
                     "csharp-8.0/async-using.md",
                     "csharp-8.0/constraints-in-overrides.md",
@@ -128,8 +129,7 @@
                     "_csharplang/proposals/csharp-7.0/throw-expression.md",
                     "_csharplang/proposals/csharp-7.1/target-typed-default.md",
                     "_csharplang/proposals/csharp-7.2/readonly-struct.md",
-                    "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md",
-                    "_csharplang/proposals/csharp-7.3/blittable.md"
+                    "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md"
                 ]
             }
         },
@@ -637,7 +637,6 @@
                 "_csharplang/proposals/csharp-7.2/conditional-ref.md": "Conditional ref",
                 "_csharplang/proposals/csharp-7.2/leading-separator.md": "Leading digit separator",
 
-                "_csharplang/proposals/csharp-7.3/blittable.md": "Unmanaged generic type constraints",
                 "_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md": "Indexing fixed fields without pinning regardless of context",
                 "_csharplang/proposals/csharp-7.3/pattern-based-fixed.md": "Pattern-based fixed statement",
                 "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "Ref local reassignment",
@@ -772,7 +771,6 @@
                 "_csharplang/proposals/csharp-7.2/conditional-ref.md": "This feature specification describes the syntax enhancements for using 'ref' with '?:' expressions",
                 "_csharplang/proposals/csharp-7.2/leading-separator.md": "This feature specification describes syntax enhancements to support a leading digit separator in numeric literals.",
 
-                "_csharplang/proposals/csharp-7.3/blittable.md": "This feature specification describes the 'unmanaged' generic type constraint. That forces the type argument to be an unmanaged type.",
                 "_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md": "This feature specification describes syntax enhancement to support indexing fixed fields without pinning the memory, regardless of context.",
                 "_csharplang/proposals/csharp-7.3/pattern-based-fixed.md": "This feature specification describes syntax enhancements to enable more types to be the target of a fixed statement.",
                 "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "This feature specification describes syntax enhancements that enable ref local variables to be assigned to refer to different storage after being initialized.",

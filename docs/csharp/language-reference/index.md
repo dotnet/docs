@@ -51,7 +51,7 @@ The features that have been implemented in C# versions after 6.0, including thos
  [C# 7.2 Specification Proposals](~/_csharplang/proposals/csharp-7.2/readonly-ref.md)  
  C# 7.2 added a number of small features. You can pass arguments by readonly reference using the `in` keyword. There are a number of low-level changes to support compile-time safety for `Span` and related types. You can use named arguments where later arguments are positional, in some situations. The `private protected` access modifier enables you to specify that callers are limited to derived types implemented in the same assembly. The `?:` operator can resolve to a reference to a variable. You can also format hexadecimal and binary numbers using a leading digit separator.
 
- [C# 7.3 Specification Proposals](~/_csharplang/proposals/csharp-7.3/blittable.md)  
+ [C# 7.3 Specification Proposals](~/_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md)  
  C# 7.3 is another point release that includes several small updates. You can use new constraints on generic type parameters. Other changes make it easier to work with `fixed` fields, including using [`stackalloc`](./operators/stackalloc.md) allocations. Local variables declared with the `ref` keyword may be reassigned to refer to new storage. You can place attributes on auto-implemented properties that target the compiler-generated backing field. Expression variables can be used in initializers. Tuples can be compared for equality (or inequality). There have also been some improvements to overload resolution.
   
  [C# 8.0 Specification Proposals](~/_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  

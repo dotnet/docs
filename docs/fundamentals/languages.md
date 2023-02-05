@@ -32,7 +32,7 @@ You can read more about how this strategy guides us in the [F# guide](../fsharp/
 
 ## Visual Basic
 
-Visual Basic (VB) has a long history as an approachable language favoring clarity over brevity. Its hundreds of thousands of developers are concentrated around the traditional Windows-based client [workloads](../standard/glossary#workload) where VB has long pioneered great tooling and ease of use.  Today’s VB developers benefit from a stable and mature object-oriented language paired with a growing .NET ecosystem and ongoing tooling improvements. Some .NET workloads are not supported in VB, and it is common for VB developers to use C# for those scenarios.
+Visual Basic (VB) has a long history as an approachable language favoring clarity over brevity. Its hundreds of thousands of developers are concentrated around the traditional Windows-based client [workloads](../standard/glossary.md#workload) where VB has long pioneered great tooling and ease of use.  Today’s VB developers benefit from a stable and mature object-oriented language paired with a growing .NET ecosystem and ongoing tooling improvements. Some .NET workloads are not supported in VB, and it is common for VB developers to use C# for those scenarios.
 
 ### Our strategy for Visual Basic
 

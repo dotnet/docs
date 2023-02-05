@@ -9,7 +9,7 @@ ms.date: 02/06/2023
 
 ## How strategy guides Visual Basic
 
-The Visual Basic strategy guides our decisions about VB evolution, and these annotations provide insight into how we think about key statements. 
+The Visual Basic strategy guides our decisions about VB evolution, and these annotations provide insight into how we think about key statements.
 
 > "Visual Basic remains a straightforward and approachable language"
 

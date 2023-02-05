@@ -7,7 +7,7 @@ ms.date: 02/06/2023
 
 [!INCLUDE [csharp](../../../includes/csharp-strategy.md)]
 
-## How strategy guides C#
+## How strategy guides C\#
 
 The C# strategy guides our decisions about C# evolution, and these annotations provide insight into how we think about key statements.
 

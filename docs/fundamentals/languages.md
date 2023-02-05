@@ -10,21 +10,21 @@ ms.topic: conceptual
 
 Microsoft offers 3 languages on the .NET platform – C#, F# and Visual Basic. In this article, you’ll learn about our strategy for each language. Look for links to additional articles on how these strategies guide us and ways to learn more about each language.
 
-## C#
+## C\#
 
 C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET [workloads](../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
 
-### Our strategy for C#
+### Our strategy for C\#
 
 [!INCLUDE [csharp](../../includes/csharp-strategy.md)]
 
 You can read more about how this strategy guides us in the [C# guide](../csharp/tour-of-csharp/strategy.md).
 
-## F#
+## F\#
 
 F# is a succinct, robust and performant language that is expression-based and immutable by default. It focuses on expressive power, simplicity and elegance and is used by many thousands of developers that appreciate its pragmatic function-first approach to .NET. F# offers the full power of .NET and works well with C# for mixed language solutions. The community makes significant contributions to the compiler and runtime, as well as a broad array of F# tools and frameworks.
 
-### Our strategy for F#
+### Our strategy for F\#
 
 [!INCLUDE [fsharp](../../includes/fsharp-strategy.md)]
 
@@ -32,7 +32,7 @@ You can read more about how this strategy guides us in the [F# guide](../fsharp/
 
 ## Visual Basic
 
-Visual Basic (VB) has a long history as an approachable language favoring clarity over brevity. Its hundreds of thousands of developers are concentrated around the traditional Windows-based client [workloads](https://learn.microsoft.com/dotnet/standard/glossary#workload) where VB has long pioneered great tooling and ease of use.  Today’s VB developers benefit from a stable and mature object-oriented language paired with a growing .NET ecosystem and ongoing tooling improvements. Some .NET workloads are not supported in VB, and it is common for VB developers to use C# for those scenarios.
+Visual Basic (VB) has a long history as an approachable language favoring clarity over brevity. Its hundreds of thousands of developers are concentrated around the traditional Windows-based client [workloads](../standard/glossary#workload) where VB has long pioneered great tooling and ease of use.  Today’s VB developers benefit from a stable and mature object-oriented language paired with a growing .NET ecosystem and ongoing tooling improvements. Some .NET workloads are not supported in VB, and it is common for VB developers to use C# for those scenarios.
 
 ### Our strategy for Visual Basic
 

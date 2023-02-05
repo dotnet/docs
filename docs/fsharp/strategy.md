@@ -5,9 +5,9 @@ ms.date: 02/06/2023
 ---
 # Annotated F# strategy
 
-[!INCLUDE [Fsharp](../../../includes/fsharp-strategy.md)]
+[!INCLUDE [Fsharp](../../includes/fsharp-strategy.md)]
 
-## How strategy guides F#
+## How strategy guides F\#
 
 The F# strategy guides our decisions about F# evolution, and these annotations provide insight into how we think about key statements.
 
@@ -17,7 +17,7 @@ The F# community makes significant contributions to F#. We support this by doing
 
 > "rely on community to provide important libraries, developer tools and workload support"
 
-The F# community provides many libraries and tools that solve a variety of developer challenges. Offerings include libraries for .NET front end applications and JavaScript transpilers that enable you to write full stack applications in F#. The community also provides developer tools for editing, code formatting, and linting. 
+The F# community provides many libraries and tools that solve a variety of developer challenges. Offerings include libraries for .NET front end applications and JavaScript transpilers that enable you to write full stack applications in F#. The community also provides developer tools for editing, code formatting, and linting.
 
 > "F# will support .NET platform improvements and maintain interoperability with new C# features"
 

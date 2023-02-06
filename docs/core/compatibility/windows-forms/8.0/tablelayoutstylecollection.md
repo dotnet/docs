@@ -33,6 +33,6 @@ For most scenarios, this change should not have a significant impact. However, i
 
 ## Affected APIs
 
-- <xref:System.Windows.Forms.TableLayoutStyleCollection.Item(System.Int32)?displayProperty=fullName>
 - <xref:System.Windows.Forms.TableLayoutStyleCollection.System%23Collections%23IList%23Add(System.Object)?displayProperty=fullName>
+- <xref:System.Windows.Forms.TableLayoutStyleCollection.System%23Collections%23IList%23Insert(System.Int32,System.Object)?displayProperty=fullName>
 - <xref:System.Windows.Forms.TableLayoutStyleCollection.System%23Collections%23IList%23Remove(System.Object)?displayProperty=fullName>

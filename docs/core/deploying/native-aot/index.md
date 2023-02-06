@@ -22,7 +22,7 @@ There are some limitations in the .NET native AOT deployment model, with the mai
 
 The following prerequisites need to be installed before publishing .NET projects with native AOT.
 
-On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
+On Windows, install Windows SDK and [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including Desktop development with C++ workload.
 
 On Linux, install compiler toolchain and developer packages for libraries that .NET runtime depends on.
 

@@ -14,6 +14,8 @@ Deployment of .NET apps to Raspberry Pi is identical to that of any other platfo
 
 ## Deploying a framework-dependent app
 
+:::image type="content" source="media/framework-dependent-animation.gif" alt-text="Animated GIF showing a diagram of framework-dependent deployment. The SDK creates the assemblies, which require the .NET runtime on the target device.":::
+
 To deploy your app as a framework-dependent app, complete the following steps:
 
 1. [!INCLUDE [ensure-ssh](includes/ensure-ssh.md)]
@@ -57,6 +59,8 @@ To deploy your app as a framework-dependent app, complete the following steps:
     ```
 
 ## Deploying a self-contained app
+
+:::image type="content" source="media/self-contained-animation.gif" alt-text="Animated GIF showing a diagram of self-contained deployment. The SDK creates the assemblies bundled with the .NET runtime. Consequently, there are no dependencies required on the target device.":::
 
 To deploy your app as a self-contained app, complete the following steps:
 

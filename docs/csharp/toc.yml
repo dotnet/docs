@@ -11,6 +11,8 @@ items:
     href: tour-of-csharp/program-building-blocks.md
   - name: Major language areas
     href: tour-of-csharp/features.md
+  - name: C# language strategy
+    href: tour-of-csharp/strategy.md
   - name: Tutorials
     items:
     - name: Choose your first lesson
@@ -1367,8 +1369,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features
       items:
-      - name: Unmanaged generic type constraints
-        href: ../../_csharplang/proposals/csharp-7.3/blittable.md
       - name: Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context
         href: ../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
       - name: Pattern-based `fixed` statement

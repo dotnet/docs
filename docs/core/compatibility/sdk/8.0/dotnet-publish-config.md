@@ -15,7 +15,7 @@ The [`PublishRelease` property](../../../project-sdk/msbuild-props.md#publishrel
 
 ## New behavior
 
-If you're developing with the .NET 8 SDK or a later version, `dotnet publish` uses the `Release` configuration by default for projects whose [`TargetFramework`](../../../project-sdk/msbuild-props.md#targetframework) is set to `net8.0` or a later version. If you have a CI/CD script where you've hardcoded `Debug` into an output path, this change may break your workflow.
+If you're developing with the .NET 8 SDK or a later version, `dotnet publish` uses the `Release` configuration by default for projects whose [`TargetFramework`](../../../project-sdk/msbuild-props.md#targetframework) is set to `net8.0` or a later version. If you have a CI/CD script, tests, or code where you've hardcoded `Debug` into an output path, this change may break your workflow.
 
 If your project targets multiple versions, the new behavior only applies if you specify a target framework of .NET 8 or later when you publish (for example, using `dotnet publish -f net8.0`).
 
@@ -25,7 +25,7 @@ For projects in a solution:
 
 - This change might cause the performance of `dotnet publish` to regress, especially for solutions that contain many projects. To address this, a new environment variable `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` has been introduced.
 
-- The `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized. By default, the executable project's `PublishRelease` value takes precedence and is flowed to other projects in the solution.
+- The `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized.
 
 ## Version introduced
 

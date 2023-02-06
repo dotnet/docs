@@ -15,7 +15,7 @@ The [`PackRelease` property](../../../project-sdk/msbuild-props.md#packrelease) 
 
 ## New behavior
 
-If you're developing with the .NET 8 SDK or a later version, `dotnet pack` uses the `Release` configuration by default for *all* projects. If you have a CI/CD script where you've hardcoded `Debug` into an output path, this change may break your workflow. Also, you won't be able to debug a packed app unless the `Debug` configuration was explicitly specified (for example, using `dotnet pack --configuration Debug`.
+If you're developing with the .NET 8 SDK or a later version, `dotnet pack` uses the `Release` configuration by default for *all* projects. If you have a CI/CD script, tests, or code where you've hardcoded `Debug` into an output path, this change may break your workflow. Also, you won't be able to debug a packed app unless the `Debug` configuration was explicitly specified (for example, using `dotnet pack --configuration Debug`.
 
 `dotnet pack` can pack for multiple target framework monikers (TFM) at the same time. If your project targets multiple versions and you have different `PackRelease` values for different targets, you can have a conflict where some TFMs pack the `Release` configuration and others pack the `Debug` configuration.
 
@@ -25,7 +25,7 @@ For projects in a solution:
 
 - This change might cause the performance of `dotnet pack` to regress, especially for solutions that contain many projects. To address this, a new environment variable `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` has been introduced.
 
-- The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized. By default, the executable project's `PackRelease` value takes precedence and is flowed to other projects in the solution.
+- The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable is no longer recognized.
 
 ## Version introduced
 
@@ -57,7 +57,7 @@ The `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` environment variable was remo
   </PropertyGroup>
   ```
 
-- If you're packing a solution and the performance has regressed, you can set the `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` environment variable to `true` (or any other value) to remove the regression. This variable affects both `dotnet publish` and `dotnet pack`.
+- If you're packing a solution and the performance has regressed, you can set the `DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS` environment variable to `true` (or any other value) to remove the regression. If you use this variable and any project defines `PackRelease`, all projects must define it, or you can use a *Directory.Build.Props* file. This variable affects both `dotnet publish` and `dotnet pack`.
 
 ## See also
 

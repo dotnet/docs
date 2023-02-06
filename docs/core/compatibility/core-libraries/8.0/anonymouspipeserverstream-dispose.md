@@ -21,7 +21,7 @@ Starting in .NET 8, the client handle owned by a server that was created for out
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

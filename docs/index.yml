@@ -211,11 +211,15 @@ conceptualContent:
           text: Garbage collection
 
 # tools section (optional)
-## Languages: C#, F#, and Visual Basic
+## Languages: strategy, C#, F#, and Visual Basic
 tools:
   title: Programming languages # < 60 chars (optional)
-  summary: "You can write .NET apps in C#, F#, or Visual Basic."
+  summary: "Write your app in your favorite language"
   items:
+    # Card
+    - title: "Write .NET apps in C#, F#, or Visual Basic"
+      imageSrc: /media/logos/logo_net.svg
+      url: fundamentals/languages.md
     # Card
     - title: "A modern, object-oriented, and type-safe language"
       imageSrc: /media/logos/logo_Csharp.svg

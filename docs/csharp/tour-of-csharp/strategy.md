@@ -14,6 +14,7 @@ The C# strategy guides our decisions about C# evolution, and these annotations p
 > "we will innovate eagerly and broadly"
 
 The C# community continues to grow, and the C# language continues to evolve to meet the community's needs and expectations. We draw inspiration from a variety of sources to select features that benefit a large segment of C# developers, and that provide consistent improvements in productivity, readability, and performance.
+
 > "being careful to stay within the spirit of the language"
 
 We evaluate new ideas in the spirit and history of the C# language. We prioritize innovations that make sense to the majority of existing C# developers.

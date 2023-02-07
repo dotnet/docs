@@ -263,8 +263,8 @@
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
 | Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.0.0-preview3) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.8.0)<br>NuGet [1.9.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.9.0-preview2) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.1.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.8.0)<br>NuGet [1.10.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.10.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.1.0)<br>NuGet [1.2.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.2.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.2.1) |  |  |
@@ -284,11 +284,11 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0)<br>NuGet [1.7.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.7.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0)<br>NuGet [1.8.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.8.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2408) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.0.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0-preview1) |  |  |
 | Microsoft.Azure.IoT.Edge.Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.2.0) |  |  |
 | Microsoft.Azure.Management.ChangeAnalysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
@@ -455,8 +455,8 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.10.0)<br>NuGet [1.11.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.11.0-preview2) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.7.0)<br>NuGet [1.8.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.8.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.10.0)<br>NuGet [1.12.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.12.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.7.0)<br>NuGet [1.9.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.9.0-preview1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |
@@ -602,7 +602,7 @@
 | Management - Data Box | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DataBox/2.0.1) |  | GitHub [2.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.DataBox_2.0.1/sdk/databox/Microsoft.Azure.Management.DataBox/) |
 | Management - Data Box Edge | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.DataBoxEdge/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.DataBoxEdge_1.1.0/sdk/databoxedge/Microsoft.Azure.Management.DataBoxEdge/) |
 | Management - Data Factories | NuGet [4.13.3](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories/4.13.3) | [docs](/dotnet/api/overview/azure/data-factory) |  |
-| Management - Data Factory | NuGet [9.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactory/9.0.0) | [docs](/dotnet/api/overview/azure/data-factory) | GitHub [9.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.DataFactory_9.0.0/sdk/datafactory/Microsoft.Azure.Management.DataFactory/) |
+| Management - Data Factory | NuGet [9.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactory/9.1.0) | [docs](/dotnet/api/overview/azure/data-factory) | GitHub [9.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.DataFactory_9.1.0/sdk/datafactory/Microsoft.Azure.Management.DataFactory/) |
 | Management - Data Lake Analytics | NuGet [3.5.3-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Analytics/3.5.3-preview) | [docs](/dotnet/api/overview/azure/data-lake-analytics) | GitHub [3.5.3-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/datalake-analytics/Microsoft.Azure.Management.DataLake.Analytics) |
 | Management - Data Lake Storage | NuGet [2.4.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store/2.4.2-preview) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [2.4.2-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/datalake-store/Microsoft.Azure.Management.DataLake.Store) |
 | Management - Data Lake Storage Uploader | NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.StoreUploader/1.0.1-preview) |  |  |

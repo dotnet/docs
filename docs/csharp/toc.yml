@@ -279,8 +279,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Write safe, efficient code
-    href: write-safe-efficient-code.md
   - name: Expression trees
     items:
     - name: Introduction to expression trees
@@ -320,53 +318,61 @@ items:
     href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
-- name: The .NET Compiler Platform SDK (Roslyn APIs)
+- name: Advanced topics
   items:
-  - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
-    href: roslyn-sdk/index.md
-  - name: Understand the compiler API model
-    href: roslyn-sdk/compiler-api-model.md
-  - name: Work with syntax
-    href: roslyn-sdk/work-with-syntax.md
-  - name: Work with semantics
-    href: roslyn-sdk/work-with-semantics.md
-  - name: Work with a workspace
-    href: roslyn-sdk/work-with-workspace.md
-  - name: Explore code with the syntax visualizer
-    href: roslyn-sdk/syntax-visualizer.md
-  - name: Source Generators
-    href: roslyn-sdk/source-generators-overview.md
-  - name: Quick starts
+  - name: Performance engineering
     items:
-    - name: Syntax analysis
-      href: roslyn-sdk/get-started/syntax-analysis.md
-    - name: Semantic analysis
-      href: roslyn-sdk/get-started/semantic-analysis.md
-    - name: Syntax Transformation
-      href: roslyn-sdk/get-started/syntax-transformation.md
-  - name: Tutorials
+    - name: Overview
+      href: advanced-topics/performance/index.md
+    - name: Tutorial - reduce allocations
+      href: advanced-topics/performance/ref-tutorial.md
+  - name: The .NET Compiler Platform SDK (Roslyn APIs)
     items:
-    - name: Build your first analyzer and code fix
-      href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
-# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-#    - name: Get started writing custom analyzers and code fixes
-#  - name: Tutorials
-#    items:
-#    - name: Build your first analyzer
-#    - name: Build your first code fix
-#    - name: Deploy your analyzer as a VSIX
-#    - name: Deploy your analyzer as a NuGet package
-#- name: Samples
-# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-#  items:
-#    - name: Async packages
-#    - name: Console classifier
-#    - name: Convert to auto property
-#    - name: Format solution
-#    - name: Implement notify property changed
-#    - name: Make const
-#    - name: How to guides
-# Look at the samples, and determine which are "How To" vs. Samples.
+    - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
+      href: roslyn-sdk/index.md
+    - name: Understand the compiler API model
+      href: roslyn-sdk/compiler-api-model.md
+    - name: Work with syntax
+      href: roslyn-sdk/work-with-syntax.md
+    - name: Work with semantics
+      href: roslyn-sdk/work-with-semantics.md
+    - name: Work with a workspace
+      href: roslyn-sdk/work-with-workspace.md
+    - name: Explore code with the syntax visualizer
+      href: roslyn-sdk/syntax-visualizer.md
+    - name: Source Generators
+      href: roslyn-sdk/source-generators-overview.md
+    - name: Quick starts
+      items:
+      - name: Syntax analysis
+        href: roslyn-sdk/get-started/syntax-analysis.md
+      - name: Semantic analysis
+        href: roslyn-sdk/get-started/semantic-analysis.md
+      - name: Syntax Transformation
+        href: roslyn-sdk/get-started/syntax-transformation.md
+    - name: Tutorials
+      items:
+      - name: Build your first analyzer and code fix
+        href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+  #    - name: Get started writing custom analyzers and code fixes
+  #  - name: Tutorials
+  #    items:
+  #    - name: Build your first analyzer
+  #    - name: Build your first code fix
+  #    - name: Deploy your analyzer as a VSIX
+  #    - name: Deploy your analyzer as a NuGet package
+  #- name: Samples
+  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+  #  items:
+  #    - name: Async packages
+  #    - name: Console classifier
+  #    - name: Convert to auto property
+  #    - name: Format solution
+  #    - name: Implement notify property changed
+  #    - name: Make const
+  #    - name: How to guides
+  # Look at the samples, and determine which are "How To" vs. Samples.
 - name: C# programming guide
   items:
   - name: Overview

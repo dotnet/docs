@@ -330,6 +330,8 @@ items:
   - name: Async return types
     displayName: Task, Task<T>, ValueTask<T>
     href: asynchronous-programming/async-return-types.md
+  - name: Process asynchronous tasks as they complete
+    href: asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md
 
 - name: Advanced topics
   items:
@@ -405,8 +407,6 @@ items:
           href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
         - name: Cancel tasks after a period of time
           href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
-      - name: Process asynchronous tasks as they complete
-        href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
       - name: Asynchronous file access
         href: programming-guide/concepts/async/using-async-for-file-access.md
     - name: Attributes

@@ -23,7 +23,7 @@ You can follow this tutorial by using one of the following options:
 
 ## Create example application
 
-Create a new .NET Core console application that targets .NET 6.0. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio.
+Create a new .NET Core console application that targets .NET 6.0. You can create one by using the [dotnet new console](../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio.
 
 Open the *Program.cs* file in your code editor, and replace the existing code with this code:
 
@@ -85,7 +85,7 @@ The main entry point into the console application is the `Main` method. Replace 
 static Task Main() => SumPageSizesAsync();
 ```
 
-The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It is expressed as a call to `SumPageSizesAsync`.
+The updated `Main` method is now considered an [Async main](../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It is expressed as a call to `SumPageSizesAsync`.
 
 ## Create the asynchronous sum page sizes method
 
@@ -125,7 +125,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
     select ProcessUrlAsync(url, s_client);
 ```
 
-Due to [deferred execution](../../../../standard/linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> to start each task.
+Due to [deferred execution](../../standard/linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> to start each task.
 
 ```csharp
 List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
@@ -200,7 +200,7 @@ You can follow this tutorial by using one of the following options:
 
 ## Create example application
 
-Create a new .NET Core console application that targets .NET 5.0 or .NET Core 3.1. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio. Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application that targets .NET 5.0 or .NET Core 3.1. You can create one by using the [dotnet new console](../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio. Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 
@@ -259,7 +259,7 @@ The main entry point into the console application is the `Main` method. Replace 
 static Task Main() => SumPageSizesAsync();
 ```
 
-The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It is expressed a call to `SumPageSizesAsync`.
+The updated `Main` method is now considered an [Async main](../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It is expressed a call to `SumPageSizesAsync`.
 
 ## Create the asynchronous sum page sizes method
 
@@ -299,7 +299,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
     select ProcessUrlAsync(url, s_client);
 ```
 
-Due to [deferred execution](../../../../standard/linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> to start each task.
+Due to [deferred execution](../../standard/linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> to start each task.
 
 ```csharp
 List<Task<int>> downloadTasks = downloadTasksQuery.ToList();

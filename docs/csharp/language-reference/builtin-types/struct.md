@@ -71,7 +71,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
 You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
 
-The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
+The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Avoiding allocations](../../advanced-topics/performance/index.md).
 
 ## Nondestructive mutation
 
@@ -127,7 +127,7 @@ Structs have most of the capabilities of a [class](../keywords/class.md) type. T
 
 ## Passing structure-type variables by reference
 
-When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
+When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Avoid allocations](../../advanced-topics/performance/index.md).
 
 ## struct constraint
 

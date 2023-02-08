@@ -117,7 +117,7 @@ static async Task SumPageSizesAsync()
 }
 ```
 
-The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then includes a query that, when executed, creates a collection of tasks. Each call to `ProcessUrlAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
+The `while` loop removes one of the tasks in each iteration. After every task has completed, the loop ends. The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then includes a query that, when executed, creates a collection of tasks. Each call to `ProcessUrlAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
 
 ```csharp
 IEnumerable<Task<int>> downloadTasksQuery =

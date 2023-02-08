@@ -2,9 +2,8 @@
 title: Asynchronous programming - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: BillWagner
-ms.date: 05/20/2020
+ms.date: 02/08/2023
 ms.technology: csharp-async
-ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 ---
 # Asynchronous programming
 
@@ -23,7 +22,7 @@ The `await` keyword is where the magic happens. It yields control to the caller 
 
 ### I/O-bound example: Download data from a web service
 
-You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this:
+You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this, using the <xref:System.Net.Http.HttpClient?displayProperty=fullName> class:
 
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();
@@ -194,12 +193,12 @@ public async Task<User> GetUserAsync(int userId)
 
 public static async Task<User[]> GetUsersAsync(IEnumerable<int> userIds)
 {
-    var getUserTasks = userIds.Select(id => GetUserAsync(id));
+    var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
     return await Task.WhenAll(getUserTasks);
 }
 ```
 
-Although it's less code, use caution when mixing LINQ with asynchronous code. Because LINQ uses deferred (lazy) execution, async calls won't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to `.ToList()` or `.ToArray()`.
+Although it's less code, use caution when mixing LINQ with asynchronous code. Because LINQ uses deferred (lazy) execution, async calls won't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to `.ToList()` or `.ToArray()`. The above example uses <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> to perform the query eagerly and store the results in an array. That forces the code `id => GetUserAsync(id)` to run and start the task.
 
 ## Important info and advice
 

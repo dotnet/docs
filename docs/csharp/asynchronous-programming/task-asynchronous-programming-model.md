@@ -1,8 +1,7 @@
 ---
-title: The Task Asynchronous Programming (TAP) model with async and await (C#)"
+title: The Task Asynchronous Programming (TAP) model with async and await"
 description: Learn when and how to use Task-based async programming, a simplified approach to asynchronous programming in C#.
-ms.date: 03/02/2022
-ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
+ms.date: 02/08/2023
 ---
 
 # Task asynchronous programming model
@@ -24,7 +23,7 @@ The following table shows typical areas where asynchronous programming improves 
 | Web access | <xref:System.Net.Http.HttpClient> | <xref:Windows.Web.Http.HttpClient?displayProperty=nameWithType> <br> <xref:Windows.Web.Syndication.SyndicationClient> |
 | Working with files | <xref:System.Text.Json.JsonSerializer> <br> <xref:System.IO.StreamReader> <br> <xref:System.IO.StreamWriter> <br> <xref:System.Xml.XmlReader> <br> <xref:System.Xml.XmlWriter> | <xref:Windows.Storage.StorageFile> |
 | Working with images |  | <xref:Windows.Media.Capture.MediaCapture> <br> <xref:Windows.Graphics.Imaging.BitmapEncoder> <br> <xref:Windows.Graphics.Imaging.BitmapDecoder> |
-| WCF programming | [Synchronous and Asynchronous Operations](../../../../framework/wcf/synchronous-and-asynchronous-operations.md) |  |
+| WCF programming | [Synchronous and Asynchronous Operations](../../framework/wcf/synchronous-and-asynchronous-operations.md) |  |
 
 Asynchrony proves especially valuable for applications that access the UI thread because all UI-related activity usually shares one thread. If any process is blocked in a synchronous application, all are blocked. Your application stops responding, and you might conclude that it has failed when instead it's just waiting.
 
@@ -34,7 +33,7 @@ The async-based approach adds the equivalent of an automatic transmission to the
 
 ## <a name="BKMK_HowtoWriteanAsyncMethod"></a> Async methods are easy to write
 
-The [async](../../../language-reference/keywords/async.md) and [await](../../../language-reference/operators/await.md) keywords in C# are the heart of async programming. By using those two keywords, you can use resources in .NET Framework, .NET Core, or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using the `async` keyword are referred to as *async methods*.
+The [async](../language-reference/keywords/async.md) and [await](../language-reference/operators/await.md) keywords in C# are the heart of async programming. By using those two keywords, you can use resources in .NET Framework, .NET Core, or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using the `async` keyword are referred to as *async methods*.
 
 The following example shows an async method. Almost everything in the code should look familiar to you.
 
@@ -76,7 +75,7 @@ The following characteristics summarize what makes the previous example an async
 
 In async methods, you use the provided keywords and types to indicate what you want to do, and the compiler does the rest, including keeping track of what must happen when control returns to an await point in a suspended method. Some routine processes, such as loops and exception handling, can be difficult to handle in traditional asynchronous code. In an async method, you write these elements much as you would in a synchronous solution, and the problem is solved.
 
-For more information about asynchrony in previous versions of .NET Framework, see [TPL and traditional .NET Framework asynchronous programming](../../../../standard/parallel-programming/tpl-and-traditional-async-programming.md).
+For more information about asynchrony in previous versions of .NET Framework, see [TPL and traditional .NET Framework asynchronous programming](../../standard/parallel-programming/tpl-and-traditional-async-programming.md).
 
 ## <a name="BKMK_WhatHappensUnderstandinganAsyncMethod"></a> What happens in an async method
 
@@ -128,9 +127,9 @@ The async-based approach to asynchronous programming is preferable to existing a
 
 ## <a name="BKMK_AsyncandAwait"></a> async and await
 
-If you specify that a method is an async method by using the [async](../../../language-reference/keywords/async.md) modifier, you enable the following two capabilities.
+If you specify that a method is an async method by using the [async](../language-reference/keywords/async.md) modifier, you enable the following two capabilities.
 
-- The marked async method can use [await](../../../language-reference/operators/await.md) to designate suspension points. The `await` operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
+- The marked async method can use [await](../language-reference/operators/await.md) to designate suspension points. The `await` operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
 
      The suspension of an async method at an `await` expression doesn't constitute an exit from the method, and `finally` blocks don't run.
 
@@ -140,14 +139,14 @@ An async method typically contains one or more occurrences of an `await` operato
 
 `async` and `await` are contextual keywords. For more information and examples, see the following topics:
 
-- [async](../../../language-reference/keywords/async.md)
-- [await](../../../language-reference/operators/await.md)
+- [async](../language-reference/keywords/async.md)
+- [await](../language-reference/operators/await.md)
 
 ## <a name="BKMK_ReturnTypesandParameters"></a> Return types and parameters
 
 An async method typically returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task%601>. Inside an async method, an `await` operator is applied to a task that's returned from a call to another async method.
 
-You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../../../language-reference/statements/jump-statements.md#the-return-statement) statement that specifies an operand of type `TResult`.
+You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../language-reference/statements/jump-statements.md#the-return-statement) statement that specifies an operand of type `TResult`.
 
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 
@@ -188,9 +187,9 @@ An async method can also have a `void` return type. This return type is used pri
 
 An async method that has a `void` return type can't be awaited, and the caller of a void-returning method can't catch any exceptions that the method throws.
 
-An async method can't declare [in](../../../language-reference/keywords/in-parameter-modifier.md), [ref](../../../language-reference/keywords/ref.md) or [out](../../../language-reference/keywords/out-parameter-modifier.md) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values.
+An async method can't declare [in](../language-reference/keywords/in-parameter-modifier.md), [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values.
 
-For more information and examples, see [Async return types (C#)](async-return-types.md). For more information about how to catch exceptions in async methods, see [try-catch](../../../language-reference/keywords/try-catch.md).
+For more information and examples, see [Async return types (C#)](async-return-types.md). For more information about how to catch exceptions in async methods, see [try-catch](../language-reference/keywords/try-catch.md).
 
 Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:
 
@@ -213,11 +212,11 @@ You can ignore the convention where an event, base class, or interface contract 
 | [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |
 | Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |
 | [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |
-| [Task-based asynchronous pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes an asynchronous pattern, the pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types. |
+| [Task-based asynchronous pattern (TAP)](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes an asynchronous pattern, the pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types. |
 | [Async Videos on Channel 9](/shows/browse?terms=async) | Provides links to a variety of videos about async programming. |
 
 ## See also
 
 - [Asynchronous programming with async and await](index.md)
-- [async](../../../language-reference/keywords/async.md)
-- [await](../../../language-reference/operators/await.md)
+- [async](../language-reference/keywords/async.md)
+- [await](../language-reference/operators/await.md)

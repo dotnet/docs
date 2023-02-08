@@ -1,8 +1,7 @@
 ---
-title: Async return types (C#)
+title: Async return types
 description: Learn about the return types that async methods can have in C# with code examples for each type.
-ms.date: 07/02/2021
-ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
+ms.date: 02/08/2023
 ---
 
 # Async return types (C#)
@@ -43,13 +42,13 @@ The following code separates calling the `WaitAndApologizeAsync` method from awa
 
 ## Task\<TResult\> return type
 
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/statements/jump-statements.md#the-return-statement) statement in which the operand is `TResult`.
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../language-reference/statements/jump-statements.md#the-return-statement) statement in which the operand is `TResult`.
 
 In the following example, the `GetLeisureHoursAsync` method contains a `return` statement that returns an integer. The method declaration must specify a return type of `Task<int>`. The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a <xref:System.DateTime.DayOfWeek>.
 
 :::code language="csharp" source="snippets/async-return-types/async-returns1.cs" ID="LeisureHours":::
 
-When `GetLeisureHoursAsync` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../../../language-reference/operators/await.md).
+When `GetLeisureHoursAsync` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../language-reference/operators/await.md).
 
 You can better understand how `await` retrieves the result from a `Task<T>` by separating the call to `GetLeisureHoursAsync` from the application of `await`, as the following code shows. A call to method `GetLeisureHoursAsync` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `getLeisureHoursTask` variable in the example. Because `getLeisureHoursTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, `TResult` represents an integer type. When `await` is applied to `getLeisureHoursTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `getLeisureHoursTask`. The value is assigned to the `ret` variable.
 
@@ -66,7 +65,7 @@ You use the `void` return type in asynchronous event handlers, which require a `
 
 The caller of a void-returning async method can't catch exceptions thrown from the method. Such unhandled exceptions are likely to cause your application to fail. If a method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> throws an exception, the exception is stored in the returned task. The exception is rethrown when the task is awaited. Make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.
 
-For more information about how to catch exceptions in async methods, see the [Exceptions in async methods](../../../language-reference/keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch](../../../language-reference/keywords/try-catch.md) article.
+For more information about how to catch exceptions in async methods, see the [Exceptions in async methods](../language-reference/keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch](../language-reference/keywords/try-catch.md) article.
 
 The following example shows the behavior of an async event handler. In the example code, an async event handler must let the main thread know when it finishes. Then the main thread can wait for an async event handler to complete before exiting the program.
 
@@ -74,7 +73,7 @@ The following example shows the behavior of an async event handler. In the examp
 
 ## Generalized async return types and ValueTask\<TResult\>
 
-An async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../../../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the feature spec for [Task like return types](~/_csharplang/proposals/csharp-7.0/task-types.md).
+An async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the feature spec for [Task like return types](~/_csharplang/proposals/csharp-7.0/task-types.md).
 
 This feature is the complement to [awaitable expressions](~/_csharpstandard/standard/expressions.md#11882-awaitable-expressions), which describes the requirements for the operand of `await`. Generalized async return types enable the compiler to generate `async` methods that return different types. Generalized async return types enabled performance improvements in the .NET libraries. Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
 
@@ -99,5 +98,5 @@ The preceding example reads lines from a string asynchronously. Once each line i
 - <xref:System.Threading.Tasks.Task.FromResult%2A>
 - [Process asynchronous tasks as they complete](start-multiple-async-tasks-and-process-them-as-they-complete.md)
 - [Asynchronous programming with async and await (C#)](index.md)
-- [async](../../../language-reference/keywords/async.md)
-- [await](../../../language-reference/operators/await.md)
+- [async](../language-reference/keywords/async.md)
+- [await](../language-reference/operators/await.md)

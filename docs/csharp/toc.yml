@@ -327,6 +327,9 @@ items:
     href: asynchronous-programming/async-scenarios.md
   - name: Task asynchronous programming model
     href: asynchronous-programming/task-asynchronous-programming-model.md
+  - name: Async return types
+    displayName: Task, Task<T>, ValueTask<T>
+    href: asynchronous-programming/async-return-types.md
 
 - name: Advanced topics
   items:
@@ -396,8 +399,6 @@ items:
     - name: Asynchronous programming
       displayName: async, await, asynchronous programming, task, cancellation
       items:
-      - name: Async return types
-        href: programming-guide/concepts/async/async-return-types.md
       - name: Cancel tasks
         items:
         - name: Cancel a list of tasks

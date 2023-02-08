@@ -93,7 +93,7 @@ Console.WriteLine("Oj is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-Next, you can move the `await` statements for the bacon and eggs to the end of the method, before serving breakfast:
+The preceding code won't get your breakfast ready any faster. The tasks are all `await`ed as soon as they are started. Next, you can move the `await` statements for the bacon and eggs to the end of the method, before serving breakfast:
 
 ```csharp
 Coffee cup = PourCoffee();
@@ -245,6 +245,8 @@ while (breakfastTasks.Count > 0)
     breakfastTasks.Remove(finishedTask);
 }
 ```
+
+Near the end, you see the line `await finishedTask;`. The line `await Task.WhenAny` doesn't await the finished task. It `await`s the `Task` returned by `Task.WhenAny`. The result of `Task.WhenAny` is the task that has completed (or faulted). You should `await` that task again, even though you know it's finished running. That's how you retrieve its result, or ensure that the exception causing it to fault gets thrown.
 
 After all those changes, the final version of the code looks like this:
 <a id="final-version"></a>

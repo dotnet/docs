@@ -1,7 +1,7 @@
 ---
 title: Process asynchronous tasks as they complete
 description: Learn how to use Task.WhenAny in C# to start multiple tasks and process their results as they finish, rather than process them in the order started.
-ms.date: 10/27/2021
+ms.date: 02/08/2023
 zone_pivot_groups: dotnet-version
 ms.topic: tutorial
 ---

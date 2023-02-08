@@ -1,9 +1,8 @@
 ---
 title: Asynchronous file access (C#)
 description: Learn how to use the async feature to access files in C#. You can call into asynchronous methods without using callbacks or splitting your code across methods.
-ms.date: 08/19/2020
+ms.date: 02/08/2023
 ms.topic: tutorial
-ms.assetid: bb018fea-5313-4c80-ab3f-7c24b2145bd9
 ---
 
 # Asynchronous file access (C#)
@@ -79,7 +78,7 @@ Any performance boost is almost entirely from the parallel processing and not th
 
 :::code language="csharp" source="snippets/file-access/Program.cs" id="ParallelWriteText":::
 
-When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Cancellation in managed threads](../../../../standard/threading/cancellation-in-managed-threads.md).
+When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md).
 
 ## See also
 

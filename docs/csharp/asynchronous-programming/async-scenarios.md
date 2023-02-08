@@ -258,4 +258,4 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ## Other resources
 
-* [The Task asynchronous programming model (C#)](../programming-guide/concepts/async/task-asynchronous-programming-model.md).
+* [The Task asynchronous programming model (C#)](task-asynchronous-programming-model.md).

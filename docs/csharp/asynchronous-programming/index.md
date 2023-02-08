@@ -1,12 +1,11 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
-ms.date: 05/17/2022
-recommendations: false
+ms.date: 02/08/2023
 ---
 # Asynchronous programming with async and await
 
-The [Task asynchronous programming model (TAP)](task-asynchronous-programming-model.md) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs many transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
+The [Task asynchronous programming model (TAP)](../programming-guide/concepts/async/task-asynchronous-programming-model.md) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs many transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
 
 That's the goal of this syntax: enable code that reads like a sequence of statements, but executes in a much more complicated order based on external resource allocation and when tasks are complete. It's analogous to how people give instructions for processes that include asynchronous tasks. Throughout this article, you'll use an example of instructions for making breakfast to see how the `async` and `await` keywords make it easier to reason about code that includes a series of asynchronous instructions. You'd write the instructions something like the following list to explain how to make a breakfast:
 
@@ -261,4 +260,4 @@ This final code is asynchronous. It more accurately reflects how a person would 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Explore real world scenarios for asynchronous programs](../../../async.md)
+> [Explore real world scenarios for asynchronous programs](async-scenarios.md)

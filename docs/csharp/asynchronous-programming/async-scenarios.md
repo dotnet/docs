@@ -9,7 +9,7 @@ ms.technology: csharp-async
 
 If you have any I/O-bound needs (such as requesting data from a network, accessing a database, or reading and writing to a file system), you'll want to utilize asynchronous programming. You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
 
-C# has a language-level asynchronous programming model, which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library that supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
+C# has a language-level asynchronous programming model, which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library that supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
 ## Overview of the asynchronous model
 
@@ -18,7 +18,7 @@ The core of async programming is the `Task` and `Task<T>` objects, which model a
 - For I/O-bound code, you await an operation that returns a `Task` or `Task<T>` inside of an `async` method.
 - For CPU-bound code, you await an operation that is started on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
 
-The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic. While [there are ways](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach async code other than `async` and `await`, this article focuses on the language-level constructs.
+The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic. While [there are ways](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach async code other than `async` and `await`, this article focuses on the language-level constructs.
 
 ### I/O-bound example: Download data from a web service
 
@@ -96,7 +96,7 @@ Here are two questions you should ask before you write any code:
 
 If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library.
 
-If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await`, but spawn off the work on another thread *with* `Task.Run`. If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await`, but spawn off the work on another thread *with* `Task.Run`. If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl.md).
 
 Additionally, you should always measure the execution of your code. For example, you may find yourself in a situation where your CPU-bound work is not costly enough compared with the overhead of context switches when multithreading. Every choice has its tradeoff, and you should pick the correct tradeoff for your situation.
 
@@ -237,7 +237,7 @@ With async programming, there are some details to keep in mind that can prevent 
 
 * **Consider using** `ValueTask` **where possible**
 
-  Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](language-reference/keywords/async.md#return-types).
+  Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](../language-reference/keywords/async.md#return-types).
 
 * **Consider using** `ConfigureAwait(false)`
 
@@ -258,4 +258,4 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ## Other resources
 
-* [The Task asynchronous programming model (C#)](./programming-guide/concepts/async/task-asynchronous-programming-model.md).
+* [The Task asynchronous programming model (C#)](../programming-guide/concepts/async/task-asynchronous-programming-model.md).

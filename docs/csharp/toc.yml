@@ -320,6 +320,9 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Asynchronous programming
   items:
+  - name: Overview
+    displayName: asynchronous programming, async, await
+    href: asynchronous-programming/index.md
   - name: Asynchronous programming scenarios
     href: asynchronous-programming/async-scenarios.md
 
@@ -391,9 +394,6 @@ items:
     - name: Asynchronous programming
       displayName: async, await, asynchronous programming, task, cancellation
       items:
-      - name: Overview
-        displayName: asynchronous programming
-        href: programming-guide/concepts/async/index.md
       - name: Task asynchronous programming model
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
       - name: Async return types

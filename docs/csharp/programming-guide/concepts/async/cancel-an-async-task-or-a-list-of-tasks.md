@@ -103,15 +103,25 @@ static async Task Main()
         s_cts.Cancel();
     });
 
-    Task sumPageSizesTask = SumPageSizesAsync();
-
-    await Task.WhenAny(new[] { cancelTask, sumPageSizesTask });
-
+        Task finishedTask = await Task.WhenAny(new[] { cancelTask, sumPageSizesTask });
+        if (finishedTask == cancelTask)
+        {
+            // wait for the cancellation to take place:
+            try {
+                await sumPageSizesTask;
+                Console.WriteLine("Download task completed before cancel request was processed.");
+            } catch (TaskCanceledException)
+            {
+                Console.WriteLine("Download task has been cancelled.");
+            }
+        }
     Console.WriteLine("Application ending.");
 }
 ```
 
 The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask`, which will read console key strokes. If the <kbd>Enter</kbd> key is pressed, a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
+
+The next block of code ensures that the application doesn't exit until the cancellation has been processed. If the first task to complete is the `cancelTask`, the `sumPageSizeTask` is awaited. If it was cancelled, when awaited it throws a <xref:System.Threading.Tasks.TaskCanceledException?displayProperty=nameWithType>. The block catches that exception, and prints a message.
 
 ## Create the asynchronous sum page sizes method
 

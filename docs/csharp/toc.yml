@@ -318,6 +318,11 @@ items:
     href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
+- name: Asynchronous programming
+  items:
+  - name: Asynchronous programming scenarios
+    href: asynchronous-programming/async-scenarios.md
+
 - name: Advanced topics
   items:
   - name: Performance engineering
@@ -389,8 +394,6 @@ items:
       - name: Overview
         displayName: asynchronous programming
         href: programming-guide/concepts/async/index.md
-      - name: Asynchronous programming scenarios
-        href: async.md
       - name: Task asynchronous programming model
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
       - name: Async return types

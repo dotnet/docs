@@ -208,4 +208,4 @@ The following APIs are supported with limitations:
 - <xref:System.String.Normalize(System.Text.NormalizationForm)?displayProperty=nameWithType> and <xref:System.String.IsNormalized(System.Text.NormalizationForm)?displayProperty=nameWithType> don't support the rarely used <xref:System.Text.NormalizationForm.FormKC> and <xref:System.Text.NormalizationForm.FormKD> forms.
 - <xref:System.Globalization.RegionInfo.CurrencyNativeName?displayProperty=nameWithType> returns the same value as <xref:System.Globalization.RegionInfo.CurrencyEnglishName?displayProperty=nameWithType>.
 
-In addition, a list of supported locales is reduced and can be found on the [dotnet/icu repo](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_wasm.json#L7-L195).
+In addition, fewer locales are supported. The supported list can be found in the [dotnet/icu repo](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_wasm.json#L7-L195).

@@ -15,17 +15,16 @@ Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents 
 
 For these reasons, it's strongly recommended that you develop your app on a development computer and then deploy the app to the device for remote debugging. If you wish to develop and debug locally on the device, the following is required:
 
- - A 64-bit OS, such as Raspberry Pi OS (64-bit).
- - [Visual Studio Code](https://code.visualstudio.com/docs/setup/raspberry-pi) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
-   - Disable the [hardware acceleration](https://code.visualstudio.com/docs/setup/raspberry-pi#_workaround-for-poor-performance).
- - .NET SDK 6.0 or later.
-   - Install using the *dotnet-install* script [as in a framework-dependent deployment](deployment.md#deploying-a-framework-dependent-app). Be sure to add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH`.
+- A 64-bit OS, such as Raspberry Pi OS (64-bit).
+- [Visual Studio Code](https://code.visualstudio.com/docs/setup/raspberry-pi) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+  - Disable the [hardware acceleration](https://code.visualstudio.com/docs/setup/raspberry-pi#_workaround-for-poor-performance).
+- .NET SDK 6.0 or later.
+  - Install using the *dotnet-install* script [as in a framework-dependent deployment](deployment.md#deploying-a-framework-dependent-app). Be sure to add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH`.
 
 The rest of this article describes how to debug .NET apps on Raspberry Pi and similar devices remotely from a development computer.
 
 > [!IMPORTANT]
 > As of this writing, remotely debugging .NET 7 apps in `linux-arm` environments is unreliable and may cause the process to exit prematurely. This issue is under investigation. .NET 6 apps that target `linux-arm` and .NET 7 apps that target `linux-arm64` remain unaffected by this issue.
-
 
 ::: zone pivot="vscode"
 
@@ -100,9 +99,8 @@ Notice the following:
         "console": "internalConsole",
         "pipeTransport": {
             "pipeCwd": "${workspaceRoot}",
-            "pipeProgram": "C:\\Program Files\\PuTTY\\PLINK.EXE",
+            "pipeProgram": "ssh",
             "pipeArgs": [
-                "-pw", "raspberry",
                 "pi@raspberrypi"
             ],
             "debuggerPath": "~/vsdbg/vsdbg"
@@ -117,17 +115,14 @@ Notice the following:
 - `cwd` is the working directory to use when launching the app on the Pi.
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `pi` user in the format `<user>@<hostname>`.
- 
+
 ---
+
 ### Deploy the app
 
 Deploy the app as described in [Deploy .NET apps to Raspberry Pi](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
 
 ### Launch the debugger
-
-On the **Run** tab, select the configuration you added to *launch.json* and select **Start Debugging**. The app launches on the Raspberry Pi. The debugger may be used to set breakpoints, inspect locals, and more.
-
-### Attach the debugger
 
 In Visual Studio Code, on the **Run and Debug** tab, select the configuration you added to *launch.json* and select **Start Debugging**. The app launches on the Raspberry Pi. The debugger may be used to set breakpoints, inspect locals, and more.
 

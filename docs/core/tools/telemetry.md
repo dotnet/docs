@@ -24,7 +24,7 @@ Telemetry *is collected* when using any of the [.NET CLI commands](index.md), su
 
 ## How to opt out
 
-The .NET SDK telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
+The .NET SDK telemetry feature is enabled by default for Microsoft distributions of the SDK. To opt out of the telemetry feature, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
 
 A single telemetry entry is also sent by the .NET SDK installer when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
 

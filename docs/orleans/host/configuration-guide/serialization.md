@@ -36,6 +36,18 @@ By default, Orleans will serialize your type by encoding its full name. You can 
 
 Members defined in a record's primary constructor have implicit ids by default. In other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that breaks compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
+```cs
+[GenerateSerializer]
+public record MyRecord(string A, string B)
+{
+    // ID 0 won't clash with A in primary constructor as they don't share identities
+    [Id(0)]
+    public string C { get; init; }
+}
+```
+
+If you don't want the primary constructor parameters to be automatically included as Serializable fields, you can use `[GenerateSerializer(IncludePrimaryConstructorParameters = false)]`.
+
 ## Surrogates for serializing foreign types
 
 Sometimes you may need to pass types between grains which you don't have full control over. In these cases, it may be impractical to convert to and from some custom-defined type in your application code manually. Orleans offers a solution for these situations in the form of surrogate types. Surrogates are serialized in place of their target type and have functionality to convert to and from the target type. Consider the following example of a foreign type and a corresponding surrogate and converter:

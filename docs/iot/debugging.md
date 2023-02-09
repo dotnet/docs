@@ -24,7 +24,7 @@ For these reasons, it's strongly recommended that you develop your app on a deve
 The rest of this article describes how to debug .NET apps on Raspberry Pi and similar devices remotely from a development computer.
 
 > [!IMPORTANT]
-> As of this writing, remotely debugging .NET 7 apps in `linux-arm` environments is unreliable and may cause the process to exit prematurely. This issue is under investigation. .NET 6 apps that target `linux-arm` and .NET 7 apps that target `linux-arm64` remain unaffected by this issue.
+> As of this writing, remotely debugging .NET 7 apps in `linux-arm` environments is unreliable and may cause the process to exit prematurely. This issue is under investigation. .NET 6 apps that target `linux-arm` and .NET 7 apps that target `linux-arm64` are unaffected.
 
 ::: zone pivot="vscode"
 

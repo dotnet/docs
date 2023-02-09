@@ -41,7 +41,7 @@ SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in t
 
 ### Install the Visual Studio Remote Debugger on the Raspberry Pi
 
-Within a Bash console on the Raspberry Pi (either in a local session or via SSH), execute the following command. This command downloads and installs the Visual Studio Remote Debugger on the Raspberry Pi:
+Within a Bash console on the Raspberry Pi (either in a local session or via SSH), run the following command. This command downloads and installs the Visual Studio Remote Debugger on the Raspberry Pi:
 
 ```bash
 curl -sSL https://aka.ms/getvsdbgsh | /bin/sh /dev/stdin -v latest -l ~/vsdbg

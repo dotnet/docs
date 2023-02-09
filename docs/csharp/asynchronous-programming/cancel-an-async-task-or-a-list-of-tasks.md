@@ -1,13 +1,11 @@
 ---
-title: Cancel a list of tasks (C#)
+title: Cancel a list of tasks
 description: Learn how to use cancellation tokens to signal a cancellation request to a list of tasks.
-ms.date: 02/03/2021
+ms.date: 02/09/2023
 ms.topic: tutorial
-ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
-recommendations: false
 ---
 
-# Cancel a list of tasks (C#)
+# Cancel a list of tasks
 
 You can cancel an async console application if you don't want to wait for it to finish. By following the example in this topic, you can add a cancellation to an application that downloads the contents of a list of websites. You can cancel many tasks by associating the <xref:System.Threading.CancellationTokenSource> instance with each task. If you select the <kbd>Enter</kbd> key, you cancel all tasks that aren't yet complete.
 
@@ -29,7 +27,7 @@ This tutorial requires the following:
 
 ### Create example application
 
-Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 
@@ -119,7 +117,7 @@ static async Task Main()
 }
 ```
 
-The updated `Main` method is now considered an [Async main](../../../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask`, which will read console key strokes. If the <kbd>Enter</kbd> key is pressed, a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
+The updated `Main` method is now considered an [Async main](../fundamentals/program-structure/main-command-line.md#async-main-return-values), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask`, which will read console key strokes. If the <kbd>Enter</kbd> key is pressed, a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
 
 The next block of code ensures that the application doesn't exit until the cancellation has been processed. If the first task to complete is the `cancelTask`, the `sumPageSizeTask` is awaited. If it was cancelled, when awaited it throws a <xref:System.Threading.Tasks.TaskCanceledException?displayProperty=nameWithType>. The block catches that exception, and prints a message.
 
@@ -197,7 +195,7 @@ Application ending.
 
 The following code is the complete text of the *Program.cs* file for the example.
 
-:::code language="csharp" source="snippets/cancel-tasks/cancel-tasks/Program.cs":::
+:::code language="csharp" source="snippets/cancel-tasks/Program.cs":::
 
 ## See also
 

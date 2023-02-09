@@ -1,12 +1,11 @@
 ---
-title: Cancel async tasks after a period of time (C#)"
+title: Cancel async tasks after a period of time"
 description: Learn how to schedule cancellation of any associated tasks that are not completed within a period of time.
-ms.date: 02/03/2021
+ms.date: 02/09/2023
 ms.topic: tutorial
-ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 ---
 
-# Cancel async tasks after a period of time (C#)
+# Cancel async tasks after a period of time
 
 You can cancel an asynchronous operation after a period of time by using the <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish. This method schedules the cancellation of any associated tasks that aren't complete within the period of time that's designated by the `CancelAfter` expression.
 
@@ -56,7 +55,7 @@ static async Task Main()
 }
 ```
 
-The updated `Main` method writes a few instructional messages to the console. Within the [try catch](../../../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> schedules a cancellation. This will signal cancellation after a period of time.
+The updated `Main` method writes a few instructional messages to the console. Within the [try catch](../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> schedules a cancellation. This will signal cancellation after a period of time.
 
 Next, the `SumPageSizesAsync` method is awaited. If processing all of the URLs occurs faster than the scheduled cancellation, the application ends. However, if the scheduled cancellation is triggered before all of the URLs are processed, a <xref:System.OperationCanceledException> is thrown.
 
@@ -79,7 +78,7 @@ Application ending.
 
 The following code is the complete text of the *Program.cs* file for the example.
 
-:::code language="csharp" source="snippets/cancel-tasks/cancel-task-after-period-of-time/Program.cs":::
+:::code language="csharp" source="snippets/cancel-task-after-period-of-time/Program.cs":::
 
 ## See also
 

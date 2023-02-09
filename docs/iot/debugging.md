@@ -15,7 +15,7 @@ Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents 
 
 For these reasons, it's strongly recommended that you develop your app on a development computer and then deploy the app to the device for remote debugging. If you wish to develop and debug locally on the device, the following is required:
 
-- A 64-bit OS, such as Raspberry Pi OS (64-bit).
+- A 64-bit OS with a desktop environment, such as Raspberry Pi OS (64-bit).
 - [Visual Studio Code](https://code.visualstudio.com/docs/setup/raspberry-pi) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
   - Disable the [hardware acceleration](https://code.visualstudio.com/docs/setup/raspberry-pi#_workaround-for-poor-performance).
 - .NET SDK 6.0 or later.

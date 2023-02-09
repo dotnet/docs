@@ -146,3 +146,5 @@ Run the application again. Contrast its behavior with the behavior of the starte
 You can see improvements in memory use by examining the code. You no longer need to allocate a collection to store all the results before they're enumerated. The caller can determine how to consume the results and if a storage collection is needed.
 
 Run both the starter and finished applications and you can observe the differences between the implementations for yourself. You can delete the GitHub access token you created when you started this tutorial after you've finished. If an attacker gained access to that token, they could access GitHub APIs using your credentials.
+
+In this tutorial, you used async streams to read a individual items from a network API that returns pages of data. Async streams can also read from "never ending streams" like a stock ticker, or sensor device. The call to `MoveNextAsync` returns the next item as soon as it's available.

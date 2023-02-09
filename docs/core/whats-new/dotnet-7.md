@@ -44,7 +44,7 @@ For information about these and other updates, see the [What's new in System.Tex
 
 .NET's [regular expression](../../standard/base-types/regular-expressions.md) library has seen significant functional and performance improvements in .NET 7:
 
-- The new option <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> enables matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. The nonbacktracking engine can't be used in a right-to-left search and a has a few other restrictions, but is fast for all regular expressions and inputs.
+- The new option <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> enables matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. The nonbacktracking engine can't be used in a right-to-left search and has a few other restrictions, but is fast for all regular expressions and inputs.
 
 - Regular expression source generators are new. Source generators build an engine that's optimized for *your* pattern at compile time, providing throughput performance benefits. The source that's emitted is part of your project, so you can view and debug it. In addition, a new source-generator diagnostic `SYSLIB1045` alerts you to places you use <xref:System.Text.RegularExpressions.Regex> that could be converted to the source generator. For more information, see [.NET regular expression source generators](../../standard/base-types/regular-expression-source-generators.md).
 

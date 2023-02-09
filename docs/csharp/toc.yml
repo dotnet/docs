@@ -189,8 +189,6 @@ items:
     href: tutorials/ranges-indexes.md
   - name: Work with nullable reference types
     href: tutorials/nullable-reference-types.md
-  - name: Generate and consume asynchronous streams
-    href: tutorials/generate-consume-asynchronous-stream.md
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -225,6 +223,8 @@ items:
     href: asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks.md
   - name: Cancel tasks after a period of time
     href: asynchronous-programming/cancel-async-tasks-after-a-period-of-time.md
+  - name: Generate and consume asynchronous streams
+    href: asynchronous-programming/generate-consume-asynchronous-stream.md
 - name: C# concepts
   items:
   - name: Nullable reference types

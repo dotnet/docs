@@ -154,7 +154,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
   
-## Place the using directives outside the namespace declaration.
+## Place the using directives outside the namespace declaration
 
 When a `using` directive is outside a namespace declaration, that imported namespace is its fully qualified name. That's more clear. When the `using` directive is inside the namespace, it could be either relative to that namespace or it's fully qualified name. That's ambiguous.
 

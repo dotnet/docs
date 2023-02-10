@@ -18,11 +18,12 @@ helpviewer_keywords:
   - "code, runtime functionality"
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 ---
+
 # Common Language Runtime (CLR) overview
 
 .NET provides a run-time environment called the common language runtime that runs the code and provides services that make the development process easier.
 
-Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from the managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code. Managed code benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.
+Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from the managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code. Managed code benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services. Test change.
 
 > [!NOTE]
 > Compilers and tools can produce output that the common language runtime can consume because the type system, the format of metadata, and the run-time environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).
@@ -69,3 +70,4 @@ However, the .NET Framework version number doesn't necessarily correspond to the
 |[Automatic Memory Management](automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|
 |[Overview of .NET Framework](../framework/get-started/overview.md)|Describes key .NET Framework concepts, such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|
 |[Common Type System](./base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|
+

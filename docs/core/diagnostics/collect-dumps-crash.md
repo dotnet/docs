@@ -16,9 +16,9 @@ The following table shows the environment variables you can configure for collec
 |`COMPlus_DbgMiniDumpType` or `DOTNET_DbgMiniDumpType`|Type of dump to be collected. For more information, see [Types of mini dumps](#types-of-mini-dumps).|2 (`Heap`)|
 |`COMPlus_DbgMiniDumpName` or `DOTNET_DbgMiniDumpName`|Path to a file to write the dump to. Ensure that the user under which the dotnet process is running has write permissions to the specified directory.|`/tmp/coredump.<pid>`|
 |`COMPlus_CreateDumpDiagnostics` or `DOTNET_CreateDumpDiagnostics`|If set to 1, enables diagnostic logging of dump process.|0|
-|`COMPlus_EnableCrashReport` or `DOTNET_EnableCrashReport`|(Requires .NET 6 or later, not supported on Windows) If set to 1, the runtime generates a JSON-formatted crash report that includes information about the threads and stack frames of the crashing application. The crash report name is the dump path or name with *.crashreport.json* appended.
-|`COMPlus_CreateDumpVerboseDiagnostics` or `DOTNET_CreateDumpVerboseDiagnostics`|(Requires .NET 7 or later) If set to 1, enables verbose diagnostic logging of the dump process.|0|
-|`COMPlus_CreateDumpLogToFile` or `DOTNET_CreateDumpLogToFile`|(Requires .NET 7 or later) The path of the file to which the diagnostic messages should be written. If unset, the diagnostic messages are written to the console of the crashing application.|
+|`COMPlus_EnableCrashReport` or `DOTNET_EnableCrashReport`|(Requires .NET 6 or later; not supported on Windows.)<br/>If set to 1, the runtime generates a JSON-formatted crash report that includes information about the threads and stack frames of the crashing application. The crash report name is the dump path or name with *.crashreport.json* appended.
+|`COMPlus_CreateDumpVerboseDiagnostics` or `DOTNET_CreateDumpVerboseDiagnostics`|(Requires .NET 7 or later.)<br/>If set to 1, enables verbose diagnostic logging of the dump process.|0|
+|`COMPlus_CreateDumpLogToFile` or `DOTNET_CreateDumpLogToFile`|(Requires .NET 7 or later.)<br/>The path of the file to which the diagnostic messages should be written. If unset, the diagnostic messages are written to the console of the crashing application.|
 
 > [!NOTE]
 > .NET 7 standardizes on the prefix `DOTNET_` instead of `COMPlus_` for these environment variables. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix for environment variables.
@@ -37,7 +37,7 @@ Starting in .NET 5, `DOTNET_DbgMiniDumpName` can also include formatting templat
 
 ## Types of mini dumps
 
-The following table shows all the values you can use for `DOTNET_DbgMiniDumpType`. For example, setting `DOTNET_DbgMiniDumpType` to 1 means `MiniDumpNormal` type dump will be collected on a crash.
+The following table shows all the values you can use for `DOTNET_DbgMiniDumpType`. For example, setting `DOTNET_DbgMiniDumpType` to 1 means `Mini` type dump will be collected on a crash.
 
 |Value|Name|Description|
 |-----|----|-----------|

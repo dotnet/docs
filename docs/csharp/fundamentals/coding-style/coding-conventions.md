@@ -200,7 +200,7 @@ And it compiles today.  And tomorrow.  But then sometime next week this (untouch
 - error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
 - error CS0103: The name 'WaitUntil' does not exist in the current context
 
-Why?  Because one of the dependencies has introduced this class:
+One of the dependencies has introduced this class:
 
 ```csharp
 namespace CoolStuff.Azure

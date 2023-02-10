@@ -13,6 +13,18 @@ In .NET 5, .NET 6, and all versions of .NET Core, <xref:System.Text.RegularExpre
 
 Use the `RegexGeneratorAttribute` feature, which invokes a regular expression source generator. At compile time, the source generator produces an API specific to a regular expression pattern and its options.
 
+  ```csharp
+  // This will cause the regular expression pattern to be compiled into your assembly,
+  // which enables it to start up and run more quickly
+  [GeneratedRegex("abc|def", RegexOptions.IgnoreCase)]
+  private static partial Regex MyRegex();
+  
+  // ...
+  
+  // Use the regular expression 
+  if (MyRegex().IsMatch(text) { ... }
+  ```
+
 ## Suppress a warning
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.

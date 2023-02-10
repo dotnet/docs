@@ -10,7 +10,7 @@ ms.date: 03/29/2022
 Beginning with .NET Core 3.1 and Visual Studio 2019, [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core/.NET. This article describes how to port C++/CLI projects from .NET Framework to the latest .NET.
 
 > [!NOTE]
-> C++/CLI is a fully supported language, however, we do not expect any future improvements. For example, we do not expect to add support for new .NET features like `Span<T>` or for new C++ standard versions. C++/CLI users should consider if this level of support is sufficient or if transitioning to ISO C++ and another .NET language, for example, C#, is a better approach for their needs. Migration approaches can be found [here](./cpp-cli-alts.md).
+> C++/CLI is a fully supported language, however, we do not expect any future improvements. For example, we do not expect to add support for new .NET features like `Span<T>` or for new C++ standard versions. C++/CLI users should consider if this level of support is sufficient or if transitioning to ISO C++ and C# is a better approach for their needs. Migration approaches can be found [here](./cpp-cli-alts.md).
 
 ## C++/CLI .NET Core limitations
 

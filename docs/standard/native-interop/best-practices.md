@@ -227,37 +227,68 @@ There are rare instances when built-in support for a type is removed.
 The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
 
 ```csharp
-static class HSTRING
+public sealed class HStringMarshaler : ICustomMarshaler
 {
-    public static IntPtr FromString(string s)
+    public static readonly HStringMarshaler Instance = new HStringMarshaler();
+
+    public static ICustomMarshaler GetInstance(string _) => Instance;
+
+    public void CleanUpManagedData(object ManagedObj) { }
+
+    public void CleanUpNativeData(IntPtr pNativeData)
     {
-        Marshal.ThrowExceptionForHR(WindowsCreateString(s, s.Length, out IntPtr h));
-        return h;
+        if (pNativeData != IntPtr.Zero)
+        {
+            Marshal.ThrowExceptionForHR(WindowsDeleteString(pNativeData));
+        }
     }
 
-    public static void Delete(IntPtr s)
+    public int GetNativeDataSize() => -1;
+
+    public IntPtr MarshalManagedToNative(object ManagedObj)
     {
-        Marshal.ThrowExceptionForHR(WindowsDeleteString(s));
+        if (ManagedObj is null)
+            return IntPtr.Zero;
+
+        var str = (string)ManagedObj;
+        Marshal.ThrowExceptionForHR(WindowsCreateString(str, str.Length, out var ptr));
+        return ptr;
     }
 
-    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
-    private static extern int WindowsCreateString(
-        [MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+    public object MarshalNativeToManaged(IntPtr pNativeData)
+    {
+        if (pNativeData == IntPtr.Zero)
+            return null;
 
-    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
-    private static extern int WindowsDeleteString(IntPtr hstring);
+        var ptr = WindowsGetStringRawBuffer(pNativeData, out var length);
+        if (ptr == IntPtr.Zero)
+            return null;
+
+        if (length == 0)
+            return string.Empty;
+
+        return Marshal.PtrToStringUni(ptr, length);
+    }
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern int WindowsCreateString([MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr @string);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern int WindowsDeleteString(IntPtr @string);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern IntPtr WindowsGetStringRawBuffer(IntPtr @string, out int length);
 }
 
-// Usage example
-IntPtr hstring = HSTRING.FromString("HSTRING from .NET to WinRT API");
-try
-{
-    // Pass hstring to WinRT or Win32 API.
-}
-finally
-{
-    HSTRING.Delete(hstring);
-}
+// Example usage:
+[DllImport("combase.dll", PreserveSig = true)]
+internal static extern int RoGetActivationFactory(
+    /*[MarshalAs(UnmanagedType.HString)]*/[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(HStringMarshaler))] string activatableClassId,
+    [In] ref Guid iid,
+    [Out, MarshalAs(UnmanagedType.IInspectable)] out Object factory);
 ```
 
 ## Cross-platform data type considerations

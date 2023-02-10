@@ -173,7 +173,7 @@ namespace CoolStuff.AwesomeFeature
 }
 ```
 
-Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/en-us/dotnet/api/azure.waituntil?view=azure-dotnet) class. 
+Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/dotnet/api/azure.waituntil?view=azure-dotnet) class. 
 
 Now, let’s change it slightly:
 

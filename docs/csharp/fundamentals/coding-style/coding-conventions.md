@@ -196,6 +196,7 @@ namespace CoolStuff.AwesomeFeature
 
 And it compiles today.  And tomorrow.  But then sometime next week this (untouched) code fails with two errors:
 
+```console
 - error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
 - error CS0103: The name 'WaitUntil' does not exist in the current context
 

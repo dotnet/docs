@@ -218,9 +218,7 @@ The “inside” using-import-statement is complicatedly context-sensitive.  In 
 - `CoolStuff.Azure`
 - `Azure`
 
-As long as nothing ever gets inserted at a higher search order, the code is fine.  But it’s a bit unstable.
-
-This can be fixed by inside-using-import to be unambiguous by prefixing the namespace with `global::`, but at that point, it seems better to just move it to the outside.
+Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would be match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. It's easier to place `using` declarations outside the namespace instead.
 
 ```csharp
 namespace CoolStuff.AwesomeFeature

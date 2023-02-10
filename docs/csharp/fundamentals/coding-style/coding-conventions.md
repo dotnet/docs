@@ -156,7 +156,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
   
 ## Place the using directives outside the namespace declaration.
 
-When the using-import directive is outside the namespace everyone understands what it’s doing.  When it’s inside it becomes context-sensitive, and therefore, ambiguous.
+When a `using` directive is outside a namespace declaration, that imported namespace is its fully qualified name. That's more clear. When the `using` directive is inside the namespace, it could be either relative to that namespace or it's fully qualified name. That's ambiguous.
 
 ```csharp
 using Azure;

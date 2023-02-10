@@ -126,6 +126,9 @@ Writing minidump with heap to ./core_20190430_185145
 Complete
 ```
 
+> [!NOTE]
+> For a comparison over time, let the original process continue running after collecting the first dump and collect a second dump the same way. You would then have two dumps over a period of time that you can compare to see where the memory usage is growing.
+
 ### Restart the failed process
 
 Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now it's the ideal time for short-term remediation by restarting the process.

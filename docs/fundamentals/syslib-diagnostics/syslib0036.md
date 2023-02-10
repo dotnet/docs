@@ -11,7 +11,7 @@ In .NET 5, .NET 6, and all versions of .NET Core, <xref:System.Text.RegularExpre
 
 ## Workaround
 
-Use the `RegexGeneratorAttribute` feature, which invokes a regular expression source generator. At compile time, the source generator produces an API specific to a regular expression pattern and its options.
+Use the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute, which invokes a regular expression source generator. At compile time, the source generator produces an API specific to a regular expression pattern and its options.
 
   ```csharp
   // This will cause the regular expression pattern to be compiled into your assembly,

@@ -288,7 +288,7 @@ public sealed class HStringMarshaler : ICustomMarshaler
 internal static extern int RoGetActivationFactory(
     /*[MarshalAs(UnmanagedType.HString)]*/[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(HStringMarshaler))] string activatableClassId,
     [In] ref Guid iid,
-    [Out, MarshalAs(UnmanagedType.IInspectable)] out Object factory);
+    [Out, MarshalAs(UnmanagedType.IUnknown)] out Object factory);
 ```
 
 ## Cross-platform data type considerations

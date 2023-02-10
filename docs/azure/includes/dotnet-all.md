@@ -277,14 +277,14 @@
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [1.0.84-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/1.0.84-preview) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.0.1) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.0.1)<br>NuGet [5.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.1.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.0.1)<br>NuGet [5.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.1.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables/1.0.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0)<br>NuGet [1.8.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.8.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0)<br>NuGet [1.8.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.8.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
@@ -325,6 +325,7 @@
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.4) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
 | Purview Share | NuGet [1.0.3-beta.20](https://www.nuget.org/packages/Azure.Analytics.Purview.Share/1.0.3-beta.20) |  |  |
+| Active Directory Authentication Library | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Configuration Provider | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.2.0)<br>NuGet [5.3.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.3.0-preview) |  | GitHub [5.2.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
@@ -334,9 +335,8 @@
 | Application Insights - Query | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights.Query/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/applicationinsights/Microsoft.Azure.ApplicationInsights.Query) |
 | Attestation | NuGet [0.10.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Attestation/0.10.0-preview) |  | GitHub [0.10.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Attestation_0.10.0-preview/sdk/attestation/Microsoft.Azure.Attestation/) |
 | Auto Suggest | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.AutoSuggest/2.0.0) |  |  |
+| Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
-| Autosuggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
-| Azure Active Directory - App Authentication | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
 | Batch | NuGet [15.4.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/15.4.0) |  | GitHub [15.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_15.4.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
@@ -449,7 +449,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.10.0)<br>NuGet [1.12.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.12.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.10.0)<br>NuGet [1.12.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.12.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.7.0)<br>NuGet [1.9.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.9.0-preview1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
@@ -481,9 +481,6 @@
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |
-| SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
-| SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
-| SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
 | Storage - Blobs | NuGet [11.2.3](https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/11.2.3) |  | GitHub [11.2.3](https://github.com/Azure/azure-storage-net/tree/master/Blob) |
 | Storage - Files Data Lake | NuGet [1.2.5-alpha](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/1.2.5-alpha) | [docs](/dotnet/api/overview/azure/data-lake-store) | GitHub [1.2.5-alpha](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
 | Storage - Files Share | NuGet [11.2.3](https://www.nuget.org/packages/Microsoft.Azure.Storage.File/11.2.3) |  | GitHub [11.2.3](https://github.com/Azure/azure-storage-net/tree/master/File) |
@@ -536,6 +533,9 @@
 | WindowsAzure Storage - Preview | NuGet [3.2.0-preview](https://www.nuget.org/packages/WindowsAzure.Storage-Preview/3.2.0-preview) |  | GitHub [3.2.0-preview](https://github.com/Azure/azure-storage-net) |
 | WindowsAzure Storage - Table Preview | NuGet [3.2.0-preview](https://www.nuget.org/packages/WindowsAzure.Storage.Table-Preview/3.2.0-preview) |  | GitHub [3.2.0-preview](https://github.com/Azure/azure-storage-net) |
 | Core - Client - Newtonsoft Json | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/1.0.0) |  |  |
+| SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
+| SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
+| SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
 | AzureStack Management - Azure Bridge Admin | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.AzureStack.Management.AzureBridge.Admin/0.1.0-preview) |  | GitHub [0.1.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/azurestack/Microsoft.AzureStack.Management.AzureBridge.Admin) |
 | AzureStack Management - Backup Admin | NuGet [0.3.2-preview](https://www.nuget.org/packages/Microsoft.AzureStack.Management.Backup.Admin/0.3.2-preview) |  | GitHub [0.3.2-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.AzureStack.Management.Backup.Admin_0.3.2-preview/sdk/azurestack/Microsoft.AzureStack.Management.Backup.Admin/) |
 | AzureStack Management - Commerce Admin | NuGet [0.2.0-preview](https://www.nuget.org/packages/Microsoft.AzureStack.Management.Commerce.Admin/0.2.0-preview) |  | GitHub [0.2.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/azurestack/Microsoft.AzureStack.Management.Commerce.Admin) |

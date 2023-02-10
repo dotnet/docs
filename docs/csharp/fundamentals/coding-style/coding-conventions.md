@@ -212,7 +212,7 @@ namespace CoolStuff.Azure
 }
 ```
 
-The “inside” using-import-statement is complicatedly context-sensitive.  In the case above, it is the FIRST one that it finds out of
+The "inside" using-import-statement is complicatedly context-sensitive.  In the case above, it is the **first** one that it finds out.
 
 - `CoolStuff.AwesomeFeature.Azure`
 - `CoolStuff.Azure`

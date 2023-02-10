@@ -284,7 +284,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0)<br>NuGet [1.8.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.8.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.6.0)<br>NuGet [1.8.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.8.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
@@ -449,7 +449,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.10.0)<br>NuGet [1.12.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.12.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.10.0)<br>NuGet [1.12.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.12.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.7.0)<br>NuGet [1.9.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.9.0-preview1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |

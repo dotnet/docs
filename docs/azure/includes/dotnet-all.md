@@ -245,7 +245,7 @@
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
-| Azure.FX | NuGet [0.0.7-alpha](https://www.nuget.org/packages/Azure.FX/0.0.7-alpha) |  |  |
+| Azure.FX | NuGet [0.0.8-alpha](https://www.nuget.org/packages/Azure.FX/0.0.8-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Azure.FX.Templates/1.0.0) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
@@ -370,7 +370,8 @@
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Movement | NuGet [2.0.4](https://www.nuget.org/packages/Microsoft.Azure.Storage.DataMovement/2.0.4) |  | GitHub [2.0.4](https://github.com/Azure/azure-storage-net-data-movement/tree/v1.3.0) |
 | DCAP | NuGet [1.11.2](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.11.2) |  | GitHub [1.11.2](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
-| Devices Client | NuGet [1.41.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.2)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview002) |  |  |
+| Digital Twins Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
+| Digital Twins Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |
 | Document DB | NuGet [2.18.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.18.0) |  | GitHub [2.18.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
 | Document DB - Change Feed Processor | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/2.4.0) |  | GitHub [2.4.0](https://github.com/Azure/azure-documentdb-changefeedprocessor-dotnet/tree/master) |
 | Document DB - Core | NuGet [2.18.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core/2.18.0) |  | GitHub [2.18.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
@@ -416,6 +417,7 @@
 | Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.ImageSearch/2.0.0) |  |  |
 | Information Protection | NuGet [1.7.147](https://www.nuget.org/packages/Microsoft.InformationProtection.File/1.7.147) |  |  |
 | Insights | NuGet [0.16.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Insights/0.16.0-preview) |  |  |
+| IoT Plug and Play - Devices Client | NuGet [1.41.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.2)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview002) |  |  |
 | Jobs | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
 | Jobs - Core | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs.Core/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
 | Jobs - Service Bus | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs.ServiceBus/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
@@ -437,8 +439,6 @@
 | Microsoft.Azure.Amqp | NuGet [2.6.1](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.6.1) |  |  |
 | Microsoft.Azure.Devices | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.38.1)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices/2.0.0-preview002) |  |  |
 | Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
-| Microsoft.Azure.Devices.DigitalTwin.Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.DigitalTwin.Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.ProtocolGateway.Core | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Core/2.0.1) |  |  |
 | Microsoft.Azure.Devices.ProtocolGateway.IotHubClient | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.IotHubClient/2.0.1) |  |  |
 | Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage/2.0.1) |  |  |
@@ -462,7 +462,7 @@
 | OpenTelemetry Exporter | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.OpenTelemetry.Exporter.AzureMonitor/1.0.0-beta.1) |  |  |
 | Personalizer | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Personalizer/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Personalizer_1.0.0/sdk/cognitiveservices/Personalizer) |
 | Power BI | NuGet [3.20.1](https://www.nuget.org/packages/Microsoft.PowerBI.Api/3.20.1) |  | GitHub [3.20.1](https://github.com/Microsoft/PowerBI-CSharp) |
-| QnA Maker | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker/2.0.1)<br>NuGet [3.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker/3.0.0-preview.1) |  | GitHub [2.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker_2.0.1/sdk/cognitiveservices/Knowledge.QnAMaker) |
+| Question Answering | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker/2.0.1)<br>NuGet [3.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker/3.0.0-preview.1) |  | GitHub [2.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Knowledge.QnAMaker_2.0.1/sdk/cognitiveservices/Knowledge.QnAMaker) |
 | Relay | NuGet [2.0.15596](https://www.nuget.org/packages/Microsoft.Azure.Relay/2.0.15596)<br>NuGet [3.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.0.0-preview) | [docs](/dotnet/api/overview/azure/service-bus-relay) | GitHub [2.0.15596](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |
 | Search | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search_10.1.0/sdk/search/Microsoft.Azure.Search/) |
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |

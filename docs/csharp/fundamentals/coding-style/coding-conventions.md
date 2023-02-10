@@ -155,6 +155,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
   
 ## Place the using directives outside the namespace declaration.
+
 When the using-import directive is outside the namespace everyone understands what it’s doing.  When it’s inside it becomes context-sensitive, and therefore, ambiguous.
 
 ```csharp
@@ -173,7 +174,7 @@ namespace CoolStuff.AwesomeFeature
 }
 ```
 
-Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/dotnet/api/azure.waituntil?view=azure-dotnet) class. 
+Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/dotnet/api/azure.waituntil?view=azure-dotnet) class.
 
 Now, let’s change it slightly:
 

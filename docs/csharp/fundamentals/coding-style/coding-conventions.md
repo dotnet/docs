@@ -153,6 +153,88 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 - Use parentheses to make clauses in an expression apparent, as shown in the following code.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
+  
+## Place the using directives outside the namespace declaration.
+When the using-import directive is outside the namespace everyone understands what it’s doing.  When it’s inside it becomes context-sensitive, and therefore, ambiguous.
+
+```csharp
+using Azure;
+
+namespace CoolStuff.AwesomeFeature
+{
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/en-us/dotnet/api/azure.waituntil?view=azure-dotnet) class. 
+
+Now, let’s change it slightly:
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+And it compiles today.  And tomorrow.  But then sometime next week this (untouched) code fails with two errors:
+
+- error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
+- error CS0103: The name 'WaitUntil' does not exist in the current context
+
+Why?  Because one of the dependencies has introduced this class:
+
+```csharp
+namespace CoolStuff.Azure
+{
+    public class SecretsManagement
+    {
+        public string FetchFromKeyVault(string vaultId, string secretId) { return null; }
+    }
+}
+```
+
+The “inside” using-import-statement is complicatedly context-sensitive.  In the case above, it is the FIRST one that it finds out of
+
+- CoolStuff.AwesomeFeature.Azure
+- CoolStuff.Azure
+- Azure
+
+As long as nothing ever gets inserted at a higher search order, the code is fine.  But it’s a bit unstable.
+
+This can be fixed by inside-using-import to be unambiguous by prefixing the namespace with `global::`, but at that point, it seems better to just move it to the outside.
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using global::Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
 
 ## Commenting conventions
 

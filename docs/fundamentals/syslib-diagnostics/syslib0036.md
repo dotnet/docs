@@ -15,7 +15,7 @@ Use the <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attribute,
 
   ```csharp
   // This attribute causes the regular expression pattern to be compiled into your assembly,
-  // which enables it to start up and run more quickly
+  // which enables it to start up and run more quickly.
   [GeneratedRegex("abc|def", RegexOptions.IgnoreCase)]
   private static partial Regex MyRegex();
   

@@ -74,7 +74,7 @@ codebases.
 
 You have one final pattern to learn: How to correctly write event
 subscribers that call async code. The challenge is described in
-the article on [async and await](async.md). Async methods can
+the article on [async and await](asynchronous-programming/index.md). Async methods can
 have a void return type, but that is strongly discouraged. When your
 event subscriber code calls an async method, you have no choice but
 to create an `async void` method. The event handler signature requires

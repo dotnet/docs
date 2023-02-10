@@ -57,7 +57,7 @@ jobs:
       - name: Locate projects for PR
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
-          LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.vcxproj;.sln"
+          LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.vcxproj;.sln;makefile"
         run: |
           ./.github/workflows/dependencies/Get-MSBuildResults.ps1 "${{ github.workspace }}" -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }}
 

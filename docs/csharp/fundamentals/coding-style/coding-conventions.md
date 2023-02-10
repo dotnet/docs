@@ -214,9 +214,9 @@ namespace CoolStuff.Azure
 
 The “inside” using-import-statement is complicatedly context-sensitive.  In the case above, it is the FIRST one that it finds out of
 
-- CoolStuff.AwesomeFeature.Azure
-- CoolStuff.Azure
-- Azure
+- `CoolStuff.AwesomeFeature.Azure`
+- `CoolStuff.Azure`
+- `Azure`
 
 As long as nothing ever gets inserted at a higher search order, the code is fine.  But it’s a bit unstable.
 

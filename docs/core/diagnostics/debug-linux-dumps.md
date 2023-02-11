@@ -23,7 +23,7 @@ The two recommended ways of collecting dumps on Linux are:
 After a dump is collected, it can be analyzed using the [`dotnet-dump`](dotnet-dump.md) tool with the `dotnet-dump analyze` command. This analysis step needs to be run on a machine that has the same architecture and Linux distro as the environment the dump was captured in.
 The `dotnet-dump` tool supports displaying information about .NET code, but is not useful for understanding code issues for other languages like C and C++.
 
-Alternatively, [LLDB](https://lldb.llvm.org/) can be used to analyze dumps on Linux, which allows analysis of both managed and native code. LLDB uses the SOS extension to debug managed code. The [`dotnet-sos`](dotnet-sos.md) CLI tool can be used to install SOS, which has [many useful commands](https://github.com/dotnet/diagnostics/blob/main/documentation/sos-debugging-extension.md) for debugging managed code. In order to analyze .NET Core dumps, LLDB and SOS require the following .NET Core binaries from the environment the dump was created in:
+Alternatively, [LLDB](https://lldb.llvm.org/) can be used to analyze dumps on Linux, which allows analysis of both managed and native code. LLDB uses the SOS extension to debug managed code. The [`dotnet-sos`](dotnet-sos.md) CLI tool can be used to install SOS, which has [many useful commands](sos-debugging-extension.md) for debugging managed code. In order to analyze .NET Core dumps, LLDB and SOS require the following .NET Core binaries from the environment the dump was created in:
 
 1. libmscordaccore.so
 2. libcoreclr.so
@@ -37,9 +37,9 @@ Once the necessary files are available, the dump can be loaded in LLDB by specif
 lldb --core <dump-file> <host-program>
 ```
 
-In the above command line, `<dump-file>` is the path of the dump to analyze and `<host-program>` is the native program that started the .NET Core application. This is typically the `dotnet` binary unless the app is self-contained, in which case it is the name of the application without the dll extension.
+In the previous command, `<dump-file>` is the path of the dump to analyze and `<host-program>` is the native program that started the .NET Core application. This is typically the `dotnet` binary unless the app is self-contained, in which case it is the name of the application without the *.dll* extension.
 
-Once LLDB starts, it may be necessary to use the `setsymbolserver` command to point at the correct symbol location (`setsymbolserver -ms` to use Microsoft's symbol server or `setsymbolserver -directory <path>` to specify a local path). Native symbols can be loaded by running `loadsymbols`. At this point, [SOS commands](https://github.com/dotnet/diagnostics/blob/main/documentation/sos-debugging-extension.md) can be used to analyze the dump.
+Once LLDB starts, it may be necessary to use the `setsymbolserver` command to point at the correct symbol location (`setsymbolserver -ms` to use Microsoft's symbol server or `setsymbolserver -directory <path>` to specify a local path). To load native symbols, run `loadsymbols`. At this point, you can use [SOS commands](sos-debugging-extension.md) to analyze the dump.
 
 > [!NOTE]
 > LLDB can be installed with the command `sudo apt-get install lldb`

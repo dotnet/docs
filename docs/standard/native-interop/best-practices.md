@@ -224,7 +224,7 @@ A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or
 
 There are rare instances when built-in support for a type is removed.
 
-The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) and [`UnmanagedType.IInspectable`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
 
 ```csharp
 public sealed class HStringMarshaler : ICustomMarshaler
@@ -284,11 +284,11 @@ public sealed class HStringMarshaler : ICustomMarshaler
 }
 
 // Example usage:
-[DllImport("combase.dll", PreserveSig = true)]
+[DllImport("api-ms-win-core-winrt-l1-1-0.dll", PreserveSig = true)]
 internal static extern int RoGetActivationFactory(
     /*[MarshalAs(UnmanagedType.HString)]*/[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(HStringMarshaler))] string activatableClassId,
     [In] ref Guid iid,
-    [Out, MarshalAs(UnmanagedType.IUnknown)] out Object factory);
+    [Out, MarshalAs(UnmanagedType.IUnknown)] out object factory);
 ```
 
 ## Cross-platform data type considerations

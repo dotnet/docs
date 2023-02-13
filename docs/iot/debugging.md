@@ -11,7 +11,7 @@ zone_pivot_groups: ide-set-one
 
 # Debug .NET apps on Raspberry Pi
 
-Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the device's performance is such that coding and debugging locally is not recommended. Additionally, the Visual Studio Code extension for C# is not compatible with 32-bit operating systems. Consequently, functionality like IntelliSense and debugging in Visual Studio Code on these devices is only supported in 64-bit systems.
+Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the device's performance is such that coding and debugging locally is not recommended. Additionally, the Visual Studio Code extension for C# is not compatible with 32-bit ARM operating systems. Consequently, functionality like IntelliSense and debugging in Visual Studio Code on ARM devices is only supported in 64-bit systems.
 
 For these reasons, it's strongly recommended that you develop your app on a development computer and then deploy the app to the device for remote debugging. If you wish to develop and debug locally on the device, the following is required:
 

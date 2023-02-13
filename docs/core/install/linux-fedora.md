@@ -27,9 +27,15 @@ The following table is a list of currently supported .NET releases and the versi
 | 37     | 7, 6      |
 | 36     | 7, 6      |
 
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
 ## Install .NET 7
 
 [!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+
+## Install .NET 6
+
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Install preview versions
 
@@ -57,6 +63,8 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
 
     | Fedora Version | Package repository |
     | -------------- | ------- |
+    | 35             | `https://packages.microsoft.com/config/fedora/35/prod.repo` |
+    | 34             | `https://packages.microsoft.com/config/fedora/34/prod.repo` |
     | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
     | 32             | `https://packages.microsoft.com/config/fedora/32/prod.repo` |
     | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
@@ -69,7 +77,7 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
     sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
     ```
 
-[!INCLUDE [linux-dnf-install-60](./includes/linux-install-60-dnf.md)]
+[!INCLUDE [linux-dnf-install-70](./includes/linux-install-70-dnf.md)]
 
 ## How to install other versions
 
@@ -91,7 +99,7 @@ For more information on installing .NET without a package manager, see one of th
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-### Errors related to missing `fxr`, `libhostfxr.so`, or `FrameworkList.xml`
+### Errors related to missing `fxr`, `libhostfxr.so`, `FrameworkList.xml`, or `/usr/share/dotnet`
 
 For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
 

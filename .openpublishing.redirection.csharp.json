@@ -57,6 +57,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-11.0/generic-attributes"
         },
         {
+            "source_path_from_root": "/docs/csharp/async.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
+        },
+        {
             "source_path_from_root": "/docs/csharp/basic-types.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types"
         },
@@ -1224,35 +1228,63 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
-            "redirect_url": "/dotnet/csharp/async/"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/control-flow-in-async-programs.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#BKMK_WhatHappensUnderstandinganAsyncMethod"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model#BKMK_WhatHappensUnderstandinganAsyncMethod"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/async-return-types.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/async-return-types"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/cancel-async-tasks-after-a-period-of-time"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/index.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/async-scenarios"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/task-asynchronous-programming-model.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/using-async-for-file-access.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/using-async-for-file-access"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/attributeusage.md",
@@ -2779,6 +2811,10 @@
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/top-level-statements.md",
             "redirect_url": "/dotnet/csharp/whats-new/tutorials/top-level-statements"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/generate-consume-asynchronous-stream.md",
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/index.md",

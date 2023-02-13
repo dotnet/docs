@@ -1,7 +1,7 @@
 ---
 title: Grain lifecycle overview
 description: Learn about grain lifecycles in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 02/13/2023
 ---
 
 # Grain lifecycle overview
@@ -22,10 +22,10 @@ public static class GrainLifecycleStage
 }
 ```
 
-- `First` - First stage in grain's lifecycle
-- `SetupState` – Setup grain state, prior to activation. For stateful grains, this is the stage where state is loaded from storage.
-- `Activate` – Stage where <xref:Orleans.Grain.OnActivateAsync%2A?displayProperty=nameWithType> and <xref:Orleans.Grain.OnDeactivateAsync%2A?displayProperty=nameWithType> are called
-- `Last` - Last stage in grain's lifecycle
+- `First`: First stage in a grain's lifecycle.
+- `SetupState`: Setup grain state, before activation. For stateful grains, this is the stage where <xref:Orleans.Core.IStorage%601.State?displayProperty=nameWithType> is loaded from storage, when <xref:Orleans.Core.IStorage.RecordExists?displayProperty=nameWithType> return `true`.
+- `Activate`: Stage where <xref:Orleans.Grain.OnActivateAsync%2A?displayProperty=nameWithType> and <xref:Orleans.Grain.OnDeactivateAsync%2A?displayProperty=nameWithType> are called.
+- `Last`: Last stage in a grain's lifecycle.
 
 While the grain lifecycle will be used during grain activation, since grains are not always deactivated during some error cases (such as silo crashes), applications should not rely on the grain lifecycle always being executed during grain deactivations.
 

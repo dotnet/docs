@@ -18,12 +18,12 @@ The following example uses a query to create a collection of tasks. Each task do
 
 You can follow this tutorial by using one of the following options:
 
-* [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
-* The [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) with a code editor of your choice, such as [Visual Studio Code](https://code.visualstudio.com/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
+* The [.NET SDK](https://dotnet.microsoft.com/download/) with a code editor of your choice, such as [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Create example application
 
-Create a new .NET Core console application that targets .NET 6.0. You can create one by using the [dotnet new console](../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio.
+Create a new .NET Core console application. You can create one by using the [dotnet new console](../../core/tools/dotnet-new-sdk-templates.md#console) command or from Visual Studio.
 
 Open the *Program.cs* file in your code editor, and replace the existing code with this code:
 

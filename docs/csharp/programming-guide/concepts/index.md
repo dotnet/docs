@@ -12,7 +12,6 @@ This section explains programming concepts in the C# language.
 |Title|Description|  
 |-----------|-----------------|  
 |[Assemblies in .NET](../../../standard/assembly/index.md)|Describes how to create and use assemblies.|  
-|[Asynchronous Programming with async and await (C#)](./async/index.md)|Describes how to write asynchronous solutions by using the [async](../../language-reference/keywords/async.md) and [await](../../language-reference/operators/await.md) keywords in C#. Includes a walkthrough.|  
 |[Attributes (C#)](./attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
 |[Collections (C#)](./collections.md)|Describes some of the types of collections provided by .NET. Demonstrates how to use simple collections and collections of key/value pairs.|  
 |[Covariance and Contravariance (C#)](./covariance-contravariance/index.md)|Shows how to enable implicit conversion of generic type parameters in interfaces and delegates.|  

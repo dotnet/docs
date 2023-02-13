@@ -153,6 +153,89 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 - Use parentheses to make clauses in an expression apparent, as shown in the following code.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
+  
+## Place the using directives outside the namespace declaration
+
+When a `using` directive is outside a namespace declaration, that imported namespace is its fully qualified name. That's more clear. When the `using` directive is inside the namespace, it could be either relative to that namespace or it's fully qualified name. That's ambiguous.
+
+```csharp
+using Azure;
+
+namespace CoolStuff.AwesomeFeature
+{
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/dotnet/api/azure.waituntil?view=azure-dotnet) class.
+
+Now, let’s change it slightly:
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+And it compiles today.  And tomorrow.  But then sometime next week this (untouched) code fails with two errors:
+
+```console
+- error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
+- error CS0103: The name 'WaitUntil' does not exist in the current context
+```
+
+One of the dependencies has introduced this class:
+
+```csharp
+namespace CoolStuff.Azure
+{
+    public class SecretsManagement
+    {
+        public string FetchFromKeyVault(string vaultId, string secretId) { return null; }
+    }
+}
+```
+
+The "inside" using-import-statement is complicatedly context-sensitive.  In the case above, it is the **first** one that it finds out.
+
+- `CoolStuff.AwesomeFeature.Azure`
+- `CoolStuff.Azure`
+- `Azure`
+
+Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would be match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. It's easier to place `using` declarations outside the namespace instead.
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using global::Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
 
 ## Commenting conventions
 

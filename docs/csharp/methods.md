@@ -252,7 +252,7 @@ In the following example, `DelayAsync` is an async method that has a return stat
 
 An async method can't declare any [in](language-reference/keywords/in-parameter-modifier.md), [ref](language-reference/keywords/ref.md), or [out](language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.
 
- For more information about async methods, see [Asynchronous programming with async and await](async.md) and [Async return types](programming-guide/concepts/async/async-return-types.md).
+ For more information about async methods, see [Asynchronous programming with async and await](asynchronous-programming/index.md) and [Async return types](asynchronous-programming/async-return-types.md).
 
 <a name="expr"></a>
 

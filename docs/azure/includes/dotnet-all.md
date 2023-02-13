@@ -245,7 +245,7 @@
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
-| Azure.FX | NuGet [0.0.8-alpha](https://www.nuget.org/packages/Azure.FX/0.0.8-alpha) |  |  |
+| Azure.FX | NuGet [0.0.9-alpha](https://www.nuget.org/packages/Azure.FX/0.0.9-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Azure.FX.Templates/1.0.0) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
@@ -319,6 +319,7 @@
 | Microsoft.Azure.Management.VideoAnalyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Microsoft.Azure.ServiceBus.EventProcessorHost | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.1.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
+| Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.0) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.1-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.1-Preview) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.4) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |

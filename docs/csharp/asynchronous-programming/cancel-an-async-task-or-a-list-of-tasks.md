@@ -105,10 +105,12 @@ static async Task Main()
         if (finishedTask == cancelTask)
         {
             // wait for the cancellation to take place:
-            try {
+            try
+            {
                 await sumPageSizesTask;
                 Console.WriteLine("Download task completed before cancel request was processed.");
-            } catch (TaskCanceledException)
+            }
+            catch (TaskCanceledException)
             {
                 Console.WriteLine("Download task has been cancelled.");
             }

@@ -213,7 +213,7 @@ items:
   - name: Task asynchronous programming model
     href: asynchronous-programming/task-asynchronous-programming-model.md
   - name: Async return types
-    displayName: Task, Task<T>, ValueTask<T>
+    displayName: Task, Task<T>, ValueTask, ValueTask<T>
     href: asynchronous-programming/async-return-types.md
   - name: Process asynchronous tasks as they complete
     href: asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md

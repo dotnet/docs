@@ -1,7 +1,5 @@
 ---
-/*
-Required metadata
-*/
+# YAML Comments here
 
 title:New Article 2
 description:New Article 2

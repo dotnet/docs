@@ -246,7 +246,7 @@ public class UserGrain : Grain, IUserGrain
 }
 ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > The profile state will not be loaded at the time it is injected into the constructor, so accessing it is invalid at that time. The state will be loaded before <xref:Orleans.Grain.OnActivateAsync%2A> is called.
 
 Now that the grain has a persistent state, we can add methods to read and write the state:

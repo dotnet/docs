@@ -73,7 +73,7 @@ In the above example, <xref:Orleans.Grain%601> overrides the <xref:Orleans.Grain
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-Components created during a grain's construction can take part in the lifecycle as well, without any special grain logic being added. Since the grain's context (<xref:Orleans.Runtime.IGrainnContext>), including the grain's lifecycle (<xref:Orleans.Runtime.IGrainContext.ObservableLifecycle?displayProperty=nameWithType>), is created before the grain is created, any component injected into the grain by the container can participate in the grain's lifecycle.
+Components created during a grain's construction can take part in the lifecycle as well, without any special grain logic being added. Since the grain's context (<xref:Orleans.Runtime.IGrainContext>), including the grain's lifecycle (<xref:Orleans.Runtime.IGrainContext.ObservableLifecycle?displayProperty=nameWithType>), is created before the grain is created, any component injected into the grain by the container can participate in the grain's lifecycle.
 
 :::zone-end
 

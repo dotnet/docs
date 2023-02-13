@@ -264,33 +264,30 @@ dotnet counters monitor -n MyApp --counters Microsoft.Orleans
 Similarly, OpenTelemetry metrics can add the `Microsoft.Orleans` meters, as shown in the following code:
 
 ```csharp
-builder.Services.AddOpenTelemetryMetrics(metrics =>
-{
-    metrics
-        .AddPrometheusExporter()
-        .AddMeter("Microsoft.Orleans");
-});
+builder.Services.AddOpenTelemetry()
+        .WithMetrics(metrics => metrics
+            .AddPrometheusExporter()
+            .AddMeter("Microsoft.Orleans"));
 ```
 
 To enable distributed tracing, you configure OpenTelemetry as shown in the following code:
 
 ```csharp
-builder.Services.AddOpenTelemetryTracing(tracing =>
-{
-    // Set a service name
-    tracing.SetResourceBuilder(
-        ResourceBuilder.CreateDefault()
-            .AddService(serviceName: "ExampleService", serviceVersion: "1.0"));
+builder.Services.AddOpenTelemetry()
+        .WithTracing(tracing =>
+        {
+            tracing.SetResourceBuilder(ResourceBuilder.CreateDefault()
+                .AddService(serviceName: "ExampleService", serviceVersion: "1.0"));
 
-    tracing.AddAspNetCoreInstrumentation();
-    tracing.AddSource("Microsoft.Orleans.Runtime");
-    tracing.AddSource("Microsoft.Orleans.Application");
+            tracing.AddAspNetCoreInstrumentation();
+            tracing.AddSource("Microsoft.Orleans.Runtime");
+            tracing.AddSource("Microsoft.Orleans.Application");
 
-    tracing.AddZipkinExporter(zipkin =>
-    {
-        zipkin.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
-    });
-});
+            tracing.AddZipkinExporter(options =>
+            {
+                options.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
+            });
+        });
 ```
 
 In the preceding code, OpenTelemetry is configured to monitor:

@@ -61,6 +61,6 @@ public class MyClass
 
 ## See also
 
-- [C# - Asynchronous programming with async and await](../../csharp/programming-guide/concepts/async/index.md)
+- [C# - Asynchronous programming with async and await](../../csharp/asynchronous-programming/index.md)
 - [Visual Basic - Asynchronous Programming with Async and Await](../../visual-basic/programming-guide/concepts/async/index.md)
 - [F# - Asynchronous Programming](../../fsharp/tutorials/async.md)

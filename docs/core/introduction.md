@@ -39,7 +39,7 @@ recommendations: false
 
 .NET features allow developers to productively write reliable and performant code.
 
-* [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
+* [Asynchronous code](../csharp/asynchronous-programming/index.md)
 * [Attributes](../standard/attributes/index.md)
 * [Reflection](../csharp/programming-guide/concepts/reflection.md)
 * [Code analyzers](../fundamentals/code-analysis/overview.md)

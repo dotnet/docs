@@ -29,4 +29,4 @@ We respect that there is a massive amount of C# code in use today. Any potential
 
 > "maintaining stewardship"
 
-[C# language design](https://github.com/dotnet/csharplang/tree/main/meetings) takes place in the open with community participation. Anyone can propose new C# features in our [GitHub repos](https://github.com/dotnet/csharplang). The [Language Design Team](https://github.com/orgs/dotnet/teams/ldm) makes the final decisions after weighing community input.
+[C# language design](https://github.com/dotnet/csharplang/tree/main/meetings) takes place in the open with community participation. Anyone can propose new C# features in our [GitHub repos](https://github.com/dotnet/csharplang). The [Language Design Team](https://github.com/dotnet/csharplang/tree/main/meetings) makes the final decisions after weighing community input.

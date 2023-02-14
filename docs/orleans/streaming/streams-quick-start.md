@@ -1,7 +1,7 @@
 ---
 title: Orleans streaming quickstart
 description: Learn from the streaming quickstart in .NET Orleans.
-ms.date: 01/05/2023
+ms.date: 02/14/2023
 zone_pivot_groups: orleans-version
 ---
 
@@ -66,17 +66,17 @@ You can create streams, send data using them as producers and also receive data 
 
 ## Producing events
 
-Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`"SMSProvider"`) and then choose a stream and push data to it.
-
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
+
+Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`"StreamProvider"`) and then choose a stream and push data to it.
 
 ```csharp
 // Pick a GUID for a chat room grain and chat room stream
 var guid = new Guid("some guid identifying the chat room");
 // Get one of the providers which we defined in our config
-var streamProvider = GetStreamProvider("SMSProvider");
+var streamProvider = GetStreamProvider("StreamProvider");
 // Get the reference to a stream
 var streamId = StreamId.Create("RANDOMDATA", guid);
 var stream = streamProvider.GetStream<int>(streamId);
@@ -87,6 +87,8 @@ var stream = streamProvider.GetStream<int>(streamId);
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
+
+Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`"SMSProvider"`) and then choose a stream and push data to it.
 
 ```csharp
 // Pick a GUID for a chat room grain and chat room stream
@@ -115,7 +117,7 @@ TimeSpan.FromMilliseconds(1_000));
 
 ## Subscribing and receiving streaming data
 
-For receiving data, we can use implicit/explicit subscriptions, which are fully described in other pages of the manual. Here we use implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription (namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
+For receiving data, we can use implicit/explicit subscriptions, which are fully described in other pages of the manual. Here we use implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
 
 For our case we'll define a `ReceiverGrain` like this:
 
@@ -137,7 +139,7 @@ For this to work, we need to complete the subscription process by setting our `O
 var guid = this.GetPrimaryKey();
 
 // Get one of the providers which we defined in config
-var streamProvider = GetStreamProvider("SMSProvider");
+var streamProvider = GetStreamProvider("StreamProvider");
 
 // Get the reference to a stream
 var streamId = StreamId.Create("RANDOMDATA", guid);

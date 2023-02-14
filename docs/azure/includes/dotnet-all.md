@@ -245,7 +245,7 @@
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
-| Azure.FX | NuGet [0.0.9-alpha](https://www.nuget.org/packages/Azure.FX/0.0.9-alpha) |  |  |
+| Azure.FX | NuGet [0.0.10-alpha](https://www.nuget.org/packages/Azure.FX/0.0.10-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Azure.FX.Templates/1.0.0) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |

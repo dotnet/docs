@@ -23,7 +23,7 @@ If the application you're trying to run is developed for .NET Framework, the err
 
 If so, follow the steps in this article to try to fix the problem.
 
-If you still can't run the application after completing all the steps, then the issue may be caused by some other reason, like a corrupted file system, missing dependencies, or a problem with the application. In that case, you can try contacting the app publisher or post a question to [Microsoft Support Community](https://answers.microsoft.com/) or [Microsoft Q&A](https://learn.microsoft.com/answers/tags/97/dotnet) for more help.
+If you still can't run the application after completing all the steps, then the issue may be caused by some other reason, like a corrupted file system, missing dependencies, or a problem with the application. In that case, you can try contacting the app publisher or post a question to [Microsoft Support Community](https://answers.microsoft.com/) or [Microsoft Q&A](/answers/tags/97/dotnet) for more help.
 
 ## How to fix the error
 

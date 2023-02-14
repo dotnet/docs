@@ -5,25 +5,11 @@ ms.date: 02/13/2023
 ---
 # "This application could not be started" error when running a .NET Framework application
 
-When you attempt to run a .NET Framework application, you may receive the "This application could not be started" error message. This error may be caused by several factors, such as:
-
-- Missing or corrupted .NET framework installation.
-- Missing dependencies.
-- A corrupted file system.
-- Some other problem.
+When you attempt to run a .NET Framework application, you may receive the "This application could not be started" error message. When this error is caused by an installed version of .NET Framework not being detected, or by .NET Framework being corrupted, use this article to try to solve that problem.
 
 :::image type="content" source="media/application-not-started/app-could-not-be-started.png" alt-text="This application could not be started dialog box.":::
 
-## Error causes
-
-If the application you're trying to run is developed for .NET Framework, the error message may be caused by one of the following conditions:
-
-- A .NET Framework installation on your system has become corrupted.
-- The version of .NET Framework needed by the application can't be detected.
-
-If so, follow the steps in this article to try to fix the problem.
-
-If you still can't run the application after completing all the steps, then the issue may be caused by some other reason, like a corrupted file system, missing dependencies, or a problem with the application. In that case, you can try contacting the app publisher or post a question to [Microsoft Support Community](https://answers.microsoft.com/) or [Microsoft Q&A](/answers/tags/97/dotnet) for more help.
+If you still can't run the application after completing all the steps in this article, then the issue may be caused by some other reason, like a corrupted file system, missing dependencies, or a problem with the application. In that case, you can try contacting the app publisher or post a question to [Microsoft Support Community](https://answers.microsoft.com/) or [Microsoft Q&A](/answers/tags/97/dotnet) for more help.
 
 ## How to fix the error
 

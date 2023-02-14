@@ -3,7 +3,7 @@ title: Fix .NET Framework 'This application could not be started'
 description: Learn what to do if you see a 'This application could not be started' dialog box when running a .NET Framework application.
 ms.date: 02/13/2023
 ---
-# "This application could not be started" error when running .NET Framework application
+# "This application could not be started" error when running a .NET Framework application
 
 When you attempt to run a .NET Framework application, you may receive the "This application could not be started" error message. This error may be caused by several factors, such as:
 

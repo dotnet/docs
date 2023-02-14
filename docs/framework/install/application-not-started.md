@@ -12,7 +12,7 @@ When you attempt to run a .NET Framework application, you may receive the "This 
 - A corrupted file system.
 - Some other problem.
 
-![This application could not be started](media/application-not-started/app-could-not-be-started.png)
+:::image type="content" source="media/application-not-started/app-could-not-be-started.png" alt-text="This application could not be started dialog box.":::
 
 ## Error causes
 
@@ -33,17 +33,17 @@ To address this issue so that you can run your application, do the following:
 
 1. If the .NET Framework Repair Tool recommends any additional action, such as those shown in the following figure, select **Next**.
 
-   ![Repair tool recommended changes](media/application-not-started/repair-tool-recommended-changes.png)
+   :::image type="content" source="media/application-not-started/repair-tool-recommended-changes.png" alt-text="Repair tool recommended changes.":::
 
 1. The .NET Framework Repair Tools displays a dialog box shown in the following figure to indicate that changes are complete. Leave the dialog box open while you to try rerun your application. This should succeed if the .NET Framework Repair Tool has identified and corrected a corrupted .NET Framework installation.
 
-   ![Repair tool changes complete](media/application-not-started/repair-tool-changes-complete.png)
+   :::image type="content" source="media/application-not-started/repair-tool-changes-complete.png" alt-text="Repair tool changes complete.":::
 
 1. If your application runs successfully, select the **Finish** button. Otherwise, select the **Next** button.
 
 1. If you selected the **Next** button, the .NET Framework Repair Tool displays a dialog box like the following. Select the **Finish** button to send diagnostic information to Microsoft.
 
-   ![Unable to resolve the problem](media/application-not-started/repair-tool-no-resolution.png)
+   :::image type="content" source="media/application-not-started/repair-tool-no-resolution.png" alt-text="Unable to resolve the problem with the repair tool.":::
 
 1. If you still cannot run the application, install the latest version of .NET Framework that's supported by your version of Windows, as shown in the following table.
 
@@ -63,7 +63,7 @@ To address this issue so that you can run your application, do the following:
 
 1. In some cases, you may see a dialog box like the following, which asks you to install .NET Framework 3.5. Select **Download and install this feature** to install .NET Framework 3.5, then launch the application again.
 
-   ![Windows Features dialog box suggesting to install .NET Framework 3.5](media/application-not-started/install-3-5.png)
+   :::image type="content" source="media/application-not-started/install-3-5.png" alt-text="Windows Features dialog box suggesting to install .NET Framework 3.5.":::
 
 ## See also
 

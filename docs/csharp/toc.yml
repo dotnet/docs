@@ -342,11 +342,13 @@ items:
     items:
     - name: Overview
       href: advanced-topics/interop/index.md
+    - name: "Walkthrough: Office Programming"
+      href: programming-guide/interop/walkthrough-office-programming.md
     - name: "How to use platform invoke to play a WAV file"
       href: advanced-topics/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
     - name: "How to use indexed properties in COM interop programming"
       href: advanced-topics/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
-    - name: "How to access Office interop objects by using C# features"
+    - name: "How to access Office interop objects"
       href: advanced-topics/interop/how-to-access-office-interop-objects.md
   - name: Performance engineering
     items:
@@ -837,8 +839,6 @@ items:
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
   - name: Interoperability
     items:
-    - name: "Walkthrough: Office Programming (C# and Visual Basic)"
-      href: programming-guide/interop/walkthrough-office-programming.md
     - name: Example COM Class
       href: programming-guide/interop/example-com-class.md
 - name: Language reference

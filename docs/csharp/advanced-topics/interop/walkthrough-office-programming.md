@@ -1,20 +1,16 @@
 ---
-title: "Walkthrough: Office Programming (C# and Visual Basic)"
-description: Learn about the features Visual Studio offers in C# and Visual Basic that improve Microsoft Office programming. 
-ms.date: 07/20/2015
+title: "Walkthrough: Office Programming - C#"
+description: Learn about the features Visual Studio offers that improve Microsoft Office programming. 
+ms.date: 02/15/2023
 ms.topic: tutorial
 dev_langs:
   - "csharp"
-  - "vb"
 helpviewer_keywords:
-  - "Office, programming in Visual Basic and C#"
   - "Office programming [C#]"
-  - "Office programming [Visual Basic]"
-ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
 ---
-# Walkthrough: Office Programming (C# and Visual Basic)
+# Walkthrough: Office Programming in C\#
 
-Visual Studio offers features in C# and Visual Basic that improve Microsoft Office programming. Helpful C# features include named and optional arguments and return values of type `dynamic`. In COM programming, you can omit the `ref` keyword and gain access to indexed properties. Features in Visual Basic include auto-implemented properties, statements in lambda expressions, and collection initializers.
+Visual Studio offers features in C# that improve Microsoft Office programming. Helpful C# features include named and optional arguments and return values of type `dynamic`. In COM programming, you can omit the `ref` keyword and gain access to indexed properties.
 
 Both languages enable embedding of type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
 
@@ -29,54 +25,41 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 ### To set up an Excel Add-in application
 
 1. Start Visual Studio.
-
-2. On the **File** menu, point to **New**, and then click **Project**.
-
-3. In the **Installed Templates** pane, expand **Visual Basic** or **Visual C#**, expand **Office**, and then click the version year of the Office product.
-
-4. In the **Templates** pane, click **Excel \<version> Add-in**.
-
-5. Look at the top of the **Templates** pane to make sure that **.NET Framework 4**, or a later version, appears in the **Target Framework** box.
-
-6. Type a name for your project in the **Name** box, if you want to.
-
-7. Click **OK**.
-
-8. The new project appears in **Solution Explorer**.
+1. On the **File** menu, point to **New**, and then click **Project**.
+1. In the **Installed Templates** pane, expand **Visual C#**, expand **Office**, and then click the version year of the Office product.
+1. In the **Templates** pane, click **Excel \<version> Add-in**.
+1. Look at the top of the **Templates** pane to make sure that **.NET Framework 4**, or a later version, appears in the **Target Framework** box.
+1. Type a name for your project in the **Name** box, if you want to.
+1. Click **OK**.
+1. The new project appears in **Solution Explorer**.
 
 ### To add references
 
 1. In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.
 
-2. On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version `<version>.0.0.0` (for a key to the Office product version numbers, see [Microsoft Versions](https://en.wikipedia.org/wiki/Microsoft_Office#Versions)), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, `version <version>.0.0.0`. If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies)).
+1. On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version `<version>.0.0.0` (for a key to the Office product version numbers, see [Microsoft Versions](https://en.wikipedia.org/wiki/Microsoft_Office#Versions)), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, `version <version>.0.0.0`. If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies)).
 
-3. Click **OK**.
+1. Click **OK**.
 
 ### To add necessary Imports statements or using directives
 
-1. In **Solution Explorer**, right-click the **ThisAddIn.vb** or **ThisAddIn.cs** file and then click **View Code**.
+1. In **Solution Explorer**, right-click the **ThisAddIn.cs** file and then click **View Code**.
 
-2. Add the following `Imports` statements (Visual Basic) or `using` directives (C#) to the top of the code file if they are not already present.
+1. Add the following `using` directives (C#) to the top of the code file if they are not already present.
 
      [!code-csharp[csOfficeWalkthrough#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csofficewalkthrough/cs/thisaddin.cs#1)]
 
-     [!code-vb[csOfficeWalkthrough#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#1)]
-
 ### To create a list of bank accounts
 
-1. In **Solution Explorer**, right-click your project's name, click **Add**, and then click **Class**. Name the class Account.vb if you are using Visual Basic or Account.cs if you are using C#. Click **Add**.
+1. In **Solution Explorer**, right-click your project's name, click **Add**, and then click **Class**. Name the class Account.cs. Click **Add**.
 
-2. Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).
+1. Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*.
 
      [!code-csharp[csOfficeWalkthrough#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csofficewalkthrough/cs/account.cs#2)]
 
-     [!code-vb[csOfficeWalkthrough#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/account.vb#2)]
-
-3. To create a `bankAccounts` list that contains two accounts, add the following code to the `ThisAddIn_Startup` method in *ThisAddIn.vb* or *ThisAddIn.cs*. The list declarations use *collection initializers*. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).
+1. To create a `bankAccounts` list that contains two accounts, add the following code to the `ThisAddIn_Startup` method in *ThisAddIn.cs*. The list declarations use *collection initializers*.
 
      [!code-csharp[csOfficeWalkthrough#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csofficewalkthrough/cs/thisaddin.cs#3)]
-
-     [!code-vb[csOfficeWalkthrough#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#3)]
 
 ### To export data to Excel
 
@@ -84,9 +67,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
      [!code-csharp[csOfficeWalkthrough#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csofficewalkthrough/cs/thisaddin.cs#4)]
 
-     [!code-vb[csOfficeWalkthrough#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#4)]
-
-     Two new C# features are used in this method. Both of these features already exist in Visual Basic.
+     Two C# features are used in this method.
 
     - Method [Add](<xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A>) has an *optional parameter* for specifying a particular template. Optional parameters enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the previous example, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `excelApp.Workbooks.Add(Type.Missing)`.
 
@@ -107,8 +88,6 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 2. Add the following code at the end of `DisplayInExcel` to adjust the column widths to fit the content.
 
      [!code-csharp[csOfficeWalkthrough#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csofficewalkthrough/cs/thisaddin.cs#7)]
-
-     [!code-vb[csOfficeWalkthrough#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#7)]
 
      These additions demonstrate another feature in C#: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../language-reference/builtin-types/reference-types.md). This happens automatically when **Embed Interop Types** is set to its default value, `True`, or, equivalently, when the assembly is referenced by the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option.
 
@@ -136,7 +115,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
      [!code-vb[csOfficeWalkthrough#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#10)]
 
-     This code demonstrates several of the new features in C#: the ability to omit the `ref` keyword in COM programming, named arguments, and optional arguments. These features already exist in Visual Basic. The [PasteSpecial](<xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>) method has seven parameters, all of which are defined as optional reference parameters. Named and optional arguments enable you to designate the parameters you want to access by name and to send arguments to only those parameters. In this example, arguments are sent to indicate that a link to the workbook on the Clipboard should be created (parameter `Link`) and that the link is to be displayed in the Word document as an icon (parameter `DisplayAsIcon`). Visual C# also enables you to omit the `ref` keyword for these arguments.
+     This code demonstrates several of the features in C#: the ability to omit the `ref` keyword in COM programming, named arguments, and optional arguments.The [PasteSpecial](<xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>) method has seven parameters, all of which are defined as optional reference parameters. Named and optional arguments enable you to designate the parameters you want to access by name and to send arguments to only those parameters. In this example, arguments are sent to indicate that a link to the workbook on the Clipboard should be created (parameter `Link`) and that the link is to be displayed in the Word document as an icon (parameter `DisplayAsIcon`). Visual C# also enables you to omit the `ref` keyword for these arguments.
 
 ### To run the application
 
@@ -187,7 +166,6 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 ## See also
 
-- [Auto-Implemented Properties (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
 - [Auto-Implemented Properties (C#)](../classes-and-structs/auto-implemented-properties.md)
 - [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
 - [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
@@ -197,7 +175,6 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 - [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
-- [Lambda Expressions (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Lambda Expressions (C#)](../../language-reference/operators/lambda-expressions.md)
 - [How to use indexed properties in COM interop programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md)
 - [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))

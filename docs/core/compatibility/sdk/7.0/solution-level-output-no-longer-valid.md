@@ -31,7 +31,7 @@ The `dotnet` CLI will error if the `--output`/`-o` option is used with a solutio
 
 ## Type of breaking change
 
-This breaking change may require modifications to build scripts and continuous integration pipelines.
+This breaking change may require modifications to build scripts and continuous integration pipelines. As a result it affects both binary and source compatibility.
 
 ## Reason for change
 

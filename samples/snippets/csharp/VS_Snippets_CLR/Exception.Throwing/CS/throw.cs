@@ -8,7 +8,7 @@ namespace Example
         public static void Main()
         {
             // <Snippet1>
-            FileStream? fs = null;
+            var fs = default(FileStream);
             try
             {
                 // Opens a text tile.

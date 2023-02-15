@@ -82,6 +82,16 @@ Preview versions have a `-preview.[number].[build]` appended to the version numb
 
 After a release goes out, the release branches generally stop producing daily builds and instead start producing servicing builds. Servicing versions have a `-servicing-[number]` appended to the version. For example, `5.0.1-servicing-006924`.
 
+## .NET Runtime Compatibility
+
+.NET runtime maintains a high level of compatibility between versions. .NET applications should by and large, continue to work after upgrade to a new major .NET runtime version.
+
+Each major .NET runtime version contains intentional, carefully vetted and documented [breaking changes](https://learn.microsoft.com/en-us/dotnet/core/compatibility/breaking-changes). The documented breaking changes are not the only potential source of issues affecting the application after upgrade. For example, a performance improvement in .NET runtime (that is not considered to be a breaking change) can expose latent application threading bugs resulting in an application no longer working on a new .NET runtime major version. It is expected for very large applications to require a few fixes after upgrade to a new .NET runtime major version.
+
+The .NET runtime applications are configured to run on a given .NET runtime major version by default and recompilation is required to upgrade the application to run on a new .NET runtime major version. It is strongly recommended to re-test the application after upgrade to identify issues affecting the application.
+
+If upgrading via app recompilation is not feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable application to run on a higher major .NET runtime version than the version application was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version and it is still strongly recommended to retest the application after upgrade.
+
 ## See also
 
 - [Target frameworks](../../standard/frameworks.md)

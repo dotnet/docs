@@ -52,6 +52,10 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
   The directory that contains the build artifacts to clean. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option the CLI will emit an error due to the unclear semantics of the output path (as described below).
+
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.

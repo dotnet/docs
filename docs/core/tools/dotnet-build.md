@@ -118,6 +118,10 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option the CLI will emit an error due to the unclear semantics of the output path (as described below).
+
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**

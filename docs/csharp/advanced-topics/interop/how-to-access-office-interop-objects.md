@@ -2,7 +2,7 @@
 title: "How to access Office interop objects - C# Programming Guide"
 description: Learn about C# features that simplify access to Office API objects. Use the new features to write code that creates and displays an Excel worksheet.
 ms.topic: how-to
-ms.date: 07/20/2015
+ms.date: 02/15/2023
 helpviewer_keywords:
   - "optional parameters [C#], Office programming"
   - "named and optional arguments [C#], Office programming"
@@ -10,9 +10,8 @@ helpviewer_keywords:
   - "optional arguments [C#], Office programming"
   - "named arguments [C#], Office programming"
   - "Office programming [C#]"
-ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
 ---
-# How to access Office interop objects (C# Programming Guide)
+# How to access Office interop objects
 
 C# has features that simplify access to Office API objects. The new features include named and optional arguments, a new type called `dynamic`, and the ability to pass arguments to reference parameters in COM methods as if they were value parameters.
 
@@ -25,28 +24,20 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 ## To create a new console application
 
 1. Start Visual Studio.
+1. On the **File** menu, point to **New**, and then click **Project**. The **New Project** dialog box appears.
+1. In the **Installed Templates** pane, expand **Visual C#**, and then click **Windows**.
+1. Look at the top of the **New Project** dialog box to make sure that **.NET Framework 4** (or later version) is selected as a target framework.
+1. In the **Templates** pane, click **Console Application**.
+1. Type a name for your project in the **Name** field.
+1. Click **OK**.
 
-2. On the **File** menu, point to **New**, and then click **Project**. The **New Project** dialog box appears.
-
-3. In the **Installed Templates** pane, expand **Visual C#**, and then click **Windows**.
-
-4. Look at the top of the **New Project** dialog box to make sure that **.NET Framework 4** (or later version) is selected as a target framework.
-
-5. In the **Templates** pane, click **Console Application**.
-
-6. Type a name for your project in the **Name** field.
-
-7. Click **OK**.
-
-     The new project appears in **Solution Explorer**.
+The new project appears in **Solution Explorer**.
 
 ## To add references
 
 1. In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.
-
-2. On the **Assemblies**  page, select **Microsoft.Office.Interop.Word** in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Excel**.  If you do not see the assemblies, you may need to ensure they are installed and displayed. See [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies).
-
-3. Click **OK**.
+1. On the **Assemblies**  page, select **Microsoft.Office.Interop.Word** in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Excel**.  If you do not see the assemblies, you may need to ensure they are installed and displayed. See [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies).
+1. Click **OK**.
 
 ## To add necessary using directives
 
@@ -62,7 +53,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
      [!code-csharp[csProgGuideOfficeHowTo#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#2)]
 
-2. Add the following code to the `Main` method to create a `bankAccounts` list that contains two accounts.
+1. Add the following code to the `Main` method to create a `bankAccounts` list that contains two accounts.
 
      [!code-csharp[csProgGuideOfficeHowTo#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#3)]
 
@@ -70,61 +61,61 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 1. Add the following method to the `Program` class to set up an Excel worksheet.
 
-     Method <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> has an optional parameter for specifying a particular template. Optional parameters enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the following code, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `ExcelApp.Workbooks.Add(Type.Missing)`.
+   Method <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> has an optional parameter for specifying a particular template. Optional parameters enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the following code, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `ExcelApp.Workbooks.Add(Type.Missing)`.
 
-     [!code-csharp[csProgGuideOfficeHowTo#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#4)]
+   [!code-csharp[csProgGuideOfficeHowTo#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#4)]
 
-2. Add the following code at the end of `DisplayInExcel`. The code inserts values into the first two columns of the first row of the worksheet.
+1. Add the following code at the end of `DisplayInExcel`. The code inserts values into the first two columns of the first row of the worksheet.
 
-     [!code-csharp[csProgGuideOfficeHowTo#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#5)]
+   [!code-csharp[csProgGuideOfficeHowTo#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#5)]
 
-3. Add the following code at the end of `DisplayInExcel`. The `foreach` loop puts the information from the list of accounts into the first two columns of successive rows of the worksheet.
+1. Add the following code at the end of `DisplayInExcel`. The `foreach` loop puts the information from the list of accounts into the first two columns of successive rows of the worksheet.
 
-     [!code-csharp[csProgGuideOfficeHowTo#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#7)]
+   [!code-csharp[csProgGuideOfficeHowTo#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#7)]
 
-4. Add the following code at the end of `DisplayInExcel` to adjust the column widths to fit the content.
+1. Add the following code at the end of `DisplayInExcel` to adjust the column widths to fit the content.
 
-     [!code-csharp[csProgGuideOfficeHowTo#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#13)]
+   [!code-csharp[csProgGuideOfficeHowTo#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#13)]
 
-     Earlier versions of C# require explicit casting for these operations because `ExcelApp.Columns[1]` returns an `Object`, and `AutoFit` is an Excel <xref:Microsoft.Office.Interop.Excel.Range> method. The following lines show the casting.
+   Earlier versions of C# require explicit casting for these operations because `ExcelApp.Columns[1]` returns an `Object`, and `AutoFit` is an Excel <xref:Microsoft.Office.Interop.Excel.Range> method. The following lines show the casting.
 
-     [!code-csharp[csProgGuideOfficeHowTo#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#14)]
+   [!code-csharp[csProgGuideOfficeHowTo#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#14)]
 
-     C# converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
+C# converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
 
 ## To run the project
 
 1. Add the following line at the end of `Main`.
 
-     [!code-csharp[csProgGuideOfficeHowTo#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#8)]
+   [!code-csharp[csProgGuideOfficeHowTo#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#8)]
 
-2. Press CTRL+F5.
+1. Press CTRL+F5.
 
-     An Excel worksheet appears that contains the data from the two accounts.
+   An Excel worksheet appears that contains the data from the two accounts.
 
 ## To add a Word document
 
 1. To illustrate additional ways in which C# enhances Office programming, the following code opens a Word application and creates an icon that links to the Excel worksheet.
 
-     Paste method `CreateIconInWordDoc`, provided later in this step, into the `Program` class. `CreateIconInWordDoc` uses named and optional arguments to reduce the complexity of the method calls to <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> and <xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>. These calls incorporate two other features that simplify calls to COM methods that have reference parameters. First, you can send arguments to the reference parameters as if they were value parameters. That is, you can send values directly, without creating a variable for each reference parameter. The compiler generates temporary variables to hold the argument values, and discards the variables when you return from the call. Second, you can omit the `ref` keyword in the argument list.
+   Paste method `CreateIconInWordDoc`, provided later in this step, into the `Program` class. `CreateIconInWordDoc` uses named and optional arguments to reduce the complexity of the method calls to <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> and <xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>. These calls incorporate two other features that simplify calls to COM methods that have reference parameters. First, you can send arguments to the reference parameters as if they were value parameters. That is, you can send values directly, without creating a variable for each reference parameter. The compiler generates temporary variables to hold the argument values, and discards the variables when you return from the call. Second, you can omit the `ref` keyword in the argument list.
 
-     The `Add` method has four reference parameters, all of which are optional. You can omit arguments for any or all of the parameters if you want to use their default values.
+   The `Add` method has four reference parameters, all of which are optional. You can omit arguments for any or all of the parameters if you want to use their default values.
 
-     The `PasteSpecial` method inserts the contents of the Clipboard. The method has seven reference parameters, all of which are optional. The following code specifies arguments for two of them: `Link`, to create a link to the source of the Clipboard contents, and `DisplayAsIcon`, to display the link as an icon. You can use named arguments for those two and omit the others. Although these are reference parameters, you do not have to use the `ref` keyword, or to create variables to send in as arguments. You can send the values directly.
+   The `PasteSpecial` method inserts the contents of the Clipboard. The method has seven reference parameters, all of which are optional. The following code specifies arguments for two of them: `Link`, to create a link to the source of the Clipboard contents, and `DisplayAsIcon`, to display the link as an icon. You can use named arguments for those two and omit the others. Although these are reference parameters, you do not have to use the `ref` keyword, or to create variables to send in as arguments. You can send the values directly.
 
-     [!code-csharp[csProgGuideOfficeHowTo#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#9)]
+   [!code-csharp[csProgGuideOfficeHowTo#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#9)]
 
-2. Add the following statement at the end of `Main`.
+1. Add the following statement at the end of `Main`.
 
-     [!code-csharp[csProgGuideOfficeHowTo#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#11)]
+   [!code-csharp[csProgGuideOfficeHowTo#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#11)]
 
-3. Add the following statement at the end of `DisplayInExcel`. The `Copy` method adds the worksheet to the Clipboard.
+1. Add the following statement at the end of `DisplayInExcel`. The `Copy` method adds the worksheet to the Clipboard.
 
-     [!code-csharp[csProgGuideOfficeHowTo#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#12)]
+   [!code-csharp[csProgGuideOfficeHowTo#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#12)]
 
-4. Press CTRL+F5.
+1. Press CTRL+F5.
 
-     A Word document appears that contains an icon. Double-click the icon to bring the worksheet to the foreground.
+   A Word document appears that contains an icon. Double-click the icon to bring the worksheet to the foreground.
 
 ## To set the Embed Interop Types property
 

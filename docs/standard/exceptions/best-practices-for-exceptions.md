@@ -244,7 +244,7 @@ File name: 'C:\temp\file.txt'
    at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
    at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
    at System.IO.File.ReadAllText(String path, Encoding encoding)
-   at Example.ProcessFile.Main() in C:\epos\ConsoleApp1\Program.cs:line 12
+   at Example.ProcessFile.Main() in C:\repos\ConsoleApp1\Program.cs:line 12
 --- End of stack trace from previous location ---
    at Example.ProcessFile.Main() in C:\repos\ConsoleApp1\Program.cs:line 24
 ```

@@ -196,6 +196,8 @@ items:
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
+      - name: --output option no longer is valid for solution-level commands
+        href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: Serialization
       items:
       - name: DataContractSerializer retains sign when deserializing -0
@@ -1266,6 +1268,8 @@ items:
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
+      - name: --output option no longer is valid for solution-level commands
+        href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: .NET 6
       items:
       - name: -p option for `dotnet run` is deprecated

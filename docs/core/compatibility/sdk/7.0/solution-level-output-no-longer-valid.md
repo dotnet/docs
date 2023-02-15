@@ -7,13 +7,13 @@ ms.date: 02/15/2023
 
 In the 7.0.200 SDK, there was [a change](https://github.com/dotnet/sdk/pull/29065) to no longer accept the `--output`/`-o` option when using a solution file with the following commands:
 
-* build
-* clean
-* pack
-* publish
-* store
-* test
-* vstest
+* `build`
+* `clean`
+* `pack`
+* `publish`
+* `store`
+* `test`
+* `vstest`
 
 This is because the semantics of the `OutputPath` property, which is controlled by the `--output`/`-o` option, aren't well defined for solutions. Projects built in this way will have their output placed in the same directory, which is inconsistent and has led to a number of user-reported issues.
 

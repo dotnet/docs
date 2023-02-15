@@ -198,7 +198,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   - .NET 7.0.200 SDK and later
 
-    If you specify the `--output` option the CLI will emit an error due to the unclear semantics of the output path (as described below).
+    If you specify the `--output` option the CLI will emit an error due to the unclear semantics of the output path. All outputs of all built projects will be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies.
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 

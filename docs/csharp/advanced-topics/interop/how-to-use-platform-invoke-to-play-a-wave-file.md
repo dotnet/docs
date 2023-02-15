@@ -1,16 +1,15 @@
 ---
-title: "How to use platform invoke to play a WAV file - C# Programming Guide"
+title: "How to use platform invoke to play a WAV file"
 description: This C# code example illustrates how to use platform invoke services to play a WAV sound file on the Windows operating system.
 ms.topic: how-to
-ms.date: 07/20/2015
+ms.date: 02/15/2023
 helpviewer_keywords:
   - "platform invoke, sound files"
   - "interoperability [C#], playing WAV files using pinvoke"
   - "wav files"
   - ".wav files"
-ms.assetid: f7f62f53-e026-4c40-b221-3a26adb0c2c5
 ---
-# How to use platform invoke to play a WAV file (C# Programming Guide)
+# How to use platform invoke to play a WAV file
 
 The following C# code example illustrates how to use platform invoke services to play a WAV sound file on the Windows operating system.
 
@@ -28,17 +27,16 @@ The **Open Files** dialog box is filtered to show only files that have a .wav ex
 
 1. Create a new C# Windows Forms Application project in Visual Studio and name it **WinSound**.
 
-2. Copy the code above, and paste it over the contents of the *Form1.cs* file.
+1. Copy the code above, and paste it over the contents of the *Form1.cs* file.
 
-3. Copy the following code, and paste it in the *Form1.Designer.cs* file, in the `InitializeComponent()` method, after any existing code.
+1. Copy the following code, and paste it in the *Form1.Designer.cs* file, in the `InitializeComponent()` method, after any existing code.
 
      [!code-csharp[csProgGuideInterop#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#4)]
 
-4. Compile and run the code.
+1. Compile and run the code.
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Interoperability Overview](interoperability-overview.md)
 - [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
 - [Marshalling Data with Platform Invoke](../../../framework/interop/marshalling-data-with-platform-invoke.md)

@@ -317,8 +317,6 @@ items:
       href: expression-trees-translating.md
     - name: Summary
       href: expression-trees-summary.md
-  - name: Native interoperability
-    href: programming-guide/interop/index.md
   - name: Versioning
     href: versioning.md
 - name: How-to C# articles
@@ -340,6 +338,10 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Native interoperability
+    items:
+    - name: Overview
+      href: advanced-topics/interop/index.md
   - name: Performance engineering
     items:
     - name: Overview
@@ -829,10 +831,6 @@ items:
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
   - name: Interoperability
     items:
-    - name: .NET Interoperability
-      href: programming-guide/interop/index.md
-    - name: Interoperability Overview
-      href: programming-guide/interop/interoperability-overview.md
     - name: "How to access Office interop objects by using C# features"
       href: programming-guide/interop/how-to-access-office-onterop-objects.md
     - name: "How to use indexed properties in COM interop programming"

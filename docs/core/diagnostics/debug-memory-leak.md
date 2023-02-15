@@ -10,11 +10,11 @@ recommendations: false
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-A memory leak may happen when your app references objects that it no longer needs to perform the desired task. Referencing said objects makes the garbage collector to be unable to reclaim the memory used, often resulting in performance degradation and potentially end up throwing an <xref:System.OutOfMemoryException>.
+A memory leak may happen when your app references objects that it no longer needs to perform the desired task. Referencing said objects prevents the garbage collector from reclaiming the memory used, often resulting in performance degradation and potentially ending up throwing an <xref:System.OutOfMemoryException>.
 
 This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you are on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
 
-This tutorial uses a sample app, which is designed to intentionally leak memory. The sample is provided as an exercise. You can analyze an app that is unintentionally leaking memory too.
+This tutorial uses a sample app, which intentionally leaks memory, as an exercise. You can also analyze apps that unintentionally leak memory.
 
 In this tutorial, you will:
 
@@ -33,11 +33,11 @@ The tutorial uses:
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
 - A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.
 
-The tutorial assumes the sample and tools are installed and ready to use.
+The tutorial assumes the sample apps and tools are installed and ready to use.
 
 ## Examine managed memory usage
 
-Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
+Before you start collecting diagnostic data to help root cause this scenario, make sure you're actually seeing a memory leak (growth in memory usage). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
 
 Open a console window and navigate to the directory where you downloaded and unzipped the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/). Run the target:
 
@@ -99,7 +99,7 @@ Focusing on this line:
 
 You can see that the managed heap memory is 4 MB right after startup.
 
-Now, hit the URL `https://localhost:5001/api/diagscenario/memleak/20000`.
+Now, go to the URL `https://localhost:5001/api/diagscenario/memleak/20000`.
 
 Observe that the memory usage has grown to 30 MB.
 
@@ -111,7 +111,7 @@ By watching the memory usage, you can safely say that memory is growing or leaki
 
 ### Generate memory dump
 
-When analyzing possible memory leaks, you need access to the app's memory heap. Then you can analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET Core application, you can use the [dotnet-dump](dotnet-dump.md) tool.
+When analyzing possible memory leaks, you need access to the app's memory heap to analyze the memory contents. Looking at relationships between objects, you create theories as to why memory isn't being freed. A common diagnostic data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET Core application, you can use the [dotnet-dump](dotnet-dump.md) tool.
 
 Using the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) previously started, run the following command to generate a Linux core dump:
 

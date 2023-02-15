@@ -43,4 +43,13 @@ For examples of how this presents in practice, see the discussion on [dotnet/sdk
 
 The general recommendation is to perform the action that you previously took _without_ the `--output`/`-o` option, and then move the output to the desired location after the command has completed. It's also possible to perform the action at a specific project and still apply the `--output`/`-o` option, as that has more well-defined semantics.
 
-If you were using `dotnet pack` with a solution file, you can workaround this issue by using `-p PackageOutputPath=DESIRED_PATH` instead of `--output`/`-o`.
+If you want to maintain the existing behavior exactly, then you can use the `--property` flag to set a MSBuild property to the desired directory. The property to use varies based on the command:
+
+| Command | Property | Example |
+| -- | -- | -- |
+| `build` | `OutputPath` | `dotnet build --property OutputPath=DESIRED_PATH` |
+| `clean` | `OutputPath` | `dotnet clean --property OutputPath=DESIRED_PATH` |
+| `pack` | `PackageOutputPath` | `dotnet pack --property PackageOutputPath=DESIRED_PATH` |
+| `publish` | `PublishDir` | `dotnet publish --property PublishDir=DESIRED_PATH` |
+| `store` | `OutputPath` | `dotnet store --property OutputPath=DESIRED_PATH` |
+| `test` | `TestResultsDirectory` | `dotnet test --property OutputPath=DESIRED_PATH` |

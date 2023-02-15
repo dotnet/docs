@@ -342,6 +342,8 @@ items:
     items:
     - name: Overview
       href: advanced-topics/interop/index.md
+    - name: Example COM Class
+      href: programming-guide/interop/example-com-class.md
     - name: "Walkthrough: Office Programming"
       href: programming-guide/interop/walkthrough-office-programming.md
     - name: "How to use platform invoke to play a WAV file"
@@ -837,10 +839,6 @@ items:
       href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
     - name: "How to create a key in the registry"
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
-  - name: Interoperability
-    items:
-    - name: Example COM Class
-      href: programming-guide/interop/example-com-class.md
 - name: Language reference
   items:
   - name: Overview

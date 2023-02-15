@@ -64,13 +64,13 @@ siloBuilder
 
 You can create streams, send data using them as producers and also receive data as subscribers.
 
-## Producing events
+## Produce events
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`"StreamProvider"`) and then choose a stream and push data to it.
+It's relatively easy to produce events for streams. You should first get access to the stream provider that you defined in the config previously (`"StreamProvider"`), and then choose a stream and push data to it.
 
 ```csharp
 // Pick a GUID for a chat room grain and chat room stream
@@ -88,7 +88,7 @@ var stream = streamProvider.GetStream<int>(streamId);
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-Producing events for streams is relatively easy. You should first get access to the stream provider which you defined in the config above (`"SMSProvider"`) and then choose a stream and push data to it.
+It's relatively easy to produce events for streams. You should first get access to the stream provider that you defined in the config previously (`"SMSProvider"`), and then choose a stream and push data to it.
 
 ```csharp
 // Pick a GUID for a chat room grain and chat room stream
@@ -115,11 +115,11 @@ TimeSpan.FromMilliseconds(1_000),
 TimeSpan.FromMilliseconds(1_000));
 ```
 
-## Subscribing and receiving streaming data
+## Subscribe to and receive streaming data
 
-For receiving data, we can use implicit/explicit subscriptions, which are fully described in other pages of the manual. Here we use implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
+For receiving data, you can use implicit/explicit subscriptions, which are fully described in other pages of the docs. This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
 
-For our case we'll define a `ReceiverGrain` like this:
+For your case, define a `ReceiverGrain` like this:
 
 ```csharp
 [ImplicitStreamSubscription("RANDOMDATA")]

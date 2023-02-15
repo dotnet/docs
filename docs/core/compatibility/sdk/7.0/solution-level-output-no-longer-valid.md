@@ -5,7 +5,7 @@ ms.date: 02/15/2023
 ---
 # Solution-level `--output` option no longer valid for build-related commands
 
-In the 7.0.200 SDK, there was [a change]([automatic-runtimeidentifier.md](https://github.com/dotnet/sdk/pull/29065)) to no longer accept the `--output`/`-o` option when using a solution file with the following commands:
+In the 7.0.200 SDK, there was [a change](https://github.com/dotnet/sdk/pull/29065) to no longer accept the `--output`/`-o` option when using a solution file with the following commands:
 
 * build
 * clean

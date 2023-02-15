@@ -1,4 +1,7 @@
-﻿namespace Example
+﻿using System;
+using System.IO;
+
+namespace Example
 {
     public class ProcessFile
     {

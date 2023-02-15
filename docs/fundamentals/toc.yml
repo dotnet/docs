@@ -886,6 +886,9 @@ items:
       href: ../core/extensions/scoped-service.md
     - name: Create a Windows Service using BackgroundService
       href: ../core/extensions/windows-service.md
+    - name: Create a Windows Service installer
+      href: ../core/extensions/windows-service-with-installer.md
+      displayName: msi,windows service installer,setup.exe
     - name: Implement the IHostedService interface
       href: ../core/extensions/timer-service.md
     - name: Deploy a Worker Service to Azure

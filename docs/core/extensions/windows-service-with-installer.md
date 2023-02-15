@@ -97,7 +97,7 @@ When no installation switches are present, the app behaves as it did before, but
 
 ## Add new Setup Project
 
-To add a new Setup Project, right-click on the solution in the **Solution Explorer** and select **Add > New Project...**:
+To add a new Setup Project, right-click on the solution in the **Solution Explorer** and select **Add > New Project**:
 
 :::image type="content" source="media/workers/new-setup-project.png" alt-text="Add new project dialog: New Setup Project.":::
 
@@ -135,14 +135,28 @@ With these updates, the Setup Project has been configured to delegate its *Insta
 
 ## Test installation
 
-Expand the **Solution Configurations** dropdown in Visual Studio, and select **Release** (assuming **Debug** was selected). Build the solution and then right-click on the Setup Project, then select **Build**. By default, the Setup Projects are not part of the build.
+To test the installer, expand the **Solution Configurations** dropdown in Visual Studio, and select **Release** (assuming **Debug** was selected). Build the solution and then right-click on the Setup Project, then select **Build**. By default, the Setup Projects are not part of the build.
 
-Select **View > Output**, and ensure that the **Show output from** dropdown has **Build** selected. The Microsoft Installer (MSI) file path is displayed. Copy the path, and open the installer.
+Select **View > Output**, and ensure that the **Show output from** dropdown has **Build** selected. The Microsoft Installer (MSI) file path is displayed. Copy the path, and open the installer. Run the installer:
 
-:::image type="content" source="media/workers/installer-welcome.png" alt-text="Installer welcome dialog.":::
+:::row:::
+    :::column:::
+        **1) Installer welcome dialog**
+        :::image type="content" source="media/workers/installer-welcome.png" lightbox=source="media/workers/installer-welcome.png" alt-text="Installer welcome dialog.":::
+    :::column-end:::
+    :::column:::
+        **2) Installer select folder dialog.**
+        :::image type="content" source="media/workers/installer-select-folder.png" lightbox="media/workers/installer-select-folder.png" alt-text="Installer select folder dialog.":::
+    :::column-end:::
+:::row-end:::
 
-:::image type="content" source="media/workers/installer-select-folder.png" alt-text="Installer select folder dialog.":::
-
-:::image type="content" source="media/workers/installer-confirm.png" alt-text="Installer confirm dialog.":::
-
-:::image type="content" source="media/workers/installer-complete.png" alt-text="Installer complete dialog.":::
+:::row:::
+    :::column:::
+        **3) Installer confirm dialog**
+        :::image type="content" source="media/workers/installer-confirm.png" lightbox="media/workers/installer-confirm.png" alt-text="Installer confirm dialog.":::
+    :::column-end:::
+    :::column:::
+        **4) Installer complete dialog.**
+        :::image type="content" source="media/workers/installer-complete.png" lightbox="media/workers/installer-complete.png" alt-text="Installer complete dialog.":::
+    :::column-end:::
+:::row-end:::

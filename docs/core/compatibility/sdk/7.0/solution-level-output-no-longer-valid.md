@@ -42,3 +42,5 @@ For examples of how this presents in practice, see the discussion on [dotnet/sdk
 ## Recommended action
 
 The general recommendation is to perform the action that you previously took _without_ the `--output`/`-o` option, and then move the output to the desired location after the command has completed. It's also possible to perform the action at a specific project and still apply the `--output`/`-o` option, as that has more well-defined semantics.
+
+If you were using `dotnet pack` with a solution file, you can workaround this issue by using `-p PackageOutputPath=DESIRED_PATH` instead of `--output`/`-o`.

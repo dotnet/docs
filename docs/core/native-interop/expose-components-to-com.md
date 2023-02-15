@@ -104,7 +104,7 @@ For example, the following code block adds the `Server.tlb` type library at inde
 
 During activation, the assembly containing the COM component is loaded in a separate <xref:System.Runtime.Loader.AssemblyLoadContext> based on the assembly path. If there is one assembly providing multiple COM servers, the `AssemblyLoadContext` is reused such that all of the servers from that assembly reside in the same load context. If there are multiple assemblies providing COM servers, a new `AssemblyLoadContext` is created for each assembly, and each server resides in the load context that corresponds to its assembly.
 
-In .NET 8 and later versions, the assembly can specify that it should be loaded in the default `AssemblyLoadContext`. To enable loading in the default context, add the following [RuntimeHostConfigurationOption](../runtime-config/index.md#msbuild-properties) to the project:
+In .NET 8 and later versions, the assembly can specify that it should be loaded in the default `AssemblyLoadContext`. To enable loading in the default context, add the following [RuntimeHostConfigurationOption](../runtime-config/index.md#msbuild-properties) item to the project:
 
 ```xml
 <ItemGroup>

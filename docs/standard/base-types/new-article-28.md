@@ -1,7 +1,7 @@
 ---
 # Required metadata 
-# For more information, see <a href="https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main">https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main</a>
-# For valid values of ms.service, ms.prod, and ms.topic, see <a href="https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main">https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main</a>
+# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
+# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
 title:       # Add a title for the browser tab
 description: # Add a meaningful description for search results

@@ -228,7 +228,7 @@ catch (FileNotFoundException e)
 
 Console.WriteLine("I was here.");
 
-if (edi != null)
+if (edi is not null)
     edi.Throw();
 ```
 

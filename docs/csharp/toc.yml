@@ -342,6 +342,8 @@ items:
     items:
     - name: Overview
       href: advanced-topics/interop/index.md
+    - name: "How to use indexed properties in COM interop programming"
+      href: advanced-topics/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
     - name: "How to access Office interop objects by using C# features"
       href: advanced-topics/interop/how-to-access-office-interop-objects.md
   - name: Performance engineering
@@ -833,8 +835,6 @@ items:
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
   - name: Interoperability
     items:
-    - name: "How to use indexed properties in COM interop programming"
-      href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
     - name: "How to use platform invoke to play a WAV file"
       href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
     - name: "Walkthrough: Office Programming (C# and Visual Basic)"

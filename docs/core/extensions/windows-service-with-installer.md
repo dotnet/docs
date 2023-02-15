@@ -142,7 +142,7 @@ Select **View > Output**, and ensure that the **Show output from** dropdown has 
 :::row:::
     :::column:::
         **1) Installer welcome dialog**
-        :::image type="content" source="media/workers/installer-welcome.png" lightbox=source="media/workers/installer-welcome.png" alt-text="Installer welcome dialog.":::
+        :::image type="content" source="media/workers/installer-welcome.png" lightbox="media/workers/installer-welcome.png" alt-text="Installer welcome dialog.":::
     :::column-end:::
     :::column:::
         **2) Installer select folder dialog.**

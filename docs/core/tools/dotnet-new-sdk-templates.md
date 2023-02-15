@@ -43,7 +43,6 @@ The following table shows the templates that come pre-installed with the .NET SD
 | ASP.NET Core Web App                         | [`webapp, razor`](#web-options)       | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0         |
 | ASP.NET Core with Angular                    | [`angular`](#spa)                     | [C#]         | Web/MVC/SPA                           | 2.0              |
 | ASP.NET Core with React.js                   | [`react`](#spa)                       | [C#]         | Web/MVC/SPA                           | 2.0              |
-| ASP.NET Core with React.js and Redux         | [`reactredux`](#reactredux)           | [C#]         | Web/MVC/SPA                           | 2.0              |
 | Razor Class Library                          | [`razorclasslib`](#razorclasslib)     | [C#]         | Web/Razor/Library/Razor Class Library | 2.1              |
 | ASP.NET Core Web API                         | [`webapi`](#webapi)                   | [C#], F#     | Web/WebAPI                            | 1.0              |
 | ASP.NET Core gRPC Service                    | [`grpc`](#web-others)                 | [C#]         | Web/gRPC                              | 3.0              |

@@ -34,10 +34,24 @@ items:
       items:
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
+    - name: SDK
+      items:
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
+      - name: ExceptionCollection ctor throws ArgumentException
+        href: windows-forms/8.0/exceptioncollection.md
+      - name: Forms scale according to AutoScaleMode
+        href: windows-forms/8.0/top-level-window-scaling.md
+      - name: ImageList.ColorDepth default is Depth32Bit
+        href: windows-forms/8.0/imagelist-colordepth.md
+      - name: TableLayoutStyleCollection throws ArgumentException
+        href: windows-forms/8.0/tablelayoutstylecollection.md
       - name: Top-level forms scale size to DPI
         href: windows-forms/8.0/forms-scale-size-to-dpi.md
       - name: WFDEV002 obsoletion is now an error
@@ -92,6 +106,8 @@ items:
         href: core-libraries/7.0/cpluspluscli-compiler-version.md
       - name: Collectible Assembly in non-collectible AssemblyLoadContext
         href: core-libraries/7.0/collectible-assemblies.md
+      - name: DateTime addition methods precision change
+        href: core-libraries/7.0/datetime-add-precision.md
       - name: Equals method behavior change for NaN
         href: core-libraries/7.0/equals-nan.md
       - name: Generic type constraint on PatternContext<T>
@@ -926,6 +942,8 @@ items:
         href: core-libraries/7.0/cpluspluscli-compiler-version.md
       - name: Collectible Assembly in non-collectible AssemblyLoadContext
         href: core-libraries/7.0/collectible-assemblies.md
+      - name: DateTime addition methods precision change
+        href: core-libraries/7.0/datetime-add-precision.md
       - name: Equals method behavior change for NaN
         href: core-libraries/7.0/equals-nan.md
       - name: Generic type constraint on PatternContext<T>
@@ -1234,6 +1252,12 @@ items:
         href: networking.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 8
+      items:
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects
@@ -1366,6 +1390,14 @@ items:
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
+      - name: ExceptionCollection ctor throws ArgumentException
+        href: windows-forms/8.0/exceptioncollection.md
+      - name: Forms scale according to AutoScaleMode
+        href: windows-forms/8.0/top-level-window-scaling.md
+      - name: ImageList.ColorDepth default is Depth32Bit
+        href: windows-forms/8.0/imagelist-colordepth.md
+      - name: TableLayoutStyleCollection throws ArgumentException
+        href: windows-forms/8.0/tablelayoutstylecollection.md
       - name: Top-level forms scale size to DPI
         href: windows-forms/8.0/forms-scale-size-to-dpi.md
       - name: WFDEV002 obsoletion is now an error

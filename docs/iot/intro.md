@@ -51,7 +51,9 @@ Some commonly used device bindings include:
 `System.Device.Gpio` is supported on any operating system that supports .NET, including most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
-> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)  (formerly Raspbian) is recommended.
+> For Raspberry Pi, [Raspberry Pi OS (64-bit)](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system) is recommended. No desktop is required, so Raspberry Pi OS Lite can be used to reduce the size of the operating system.
+>
+> :::image type="content" source="media/rpi-imager-64bit.gif" alt-text="Animated GIF showing the Raspberry Pi Imager tool. The user selects 'RASPBERRY PI OS LITE (64-BIT) from the list of available operating systems.":::
 
 ## Supported hardware platforms
 

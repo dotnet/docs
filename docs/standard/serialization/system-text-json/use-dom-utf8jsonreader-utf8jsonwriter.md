@@ -324,7 +324,7 @@ The preceding example sets no limit to how large the buffer can grow. If the tok
 
 ### Utf8JsonReader is a ref struct
 
-Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations](../../../csharp/language-reference/builtin-types/ref-struct.md). For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. For more information about how to use ref structs, see [Write safe and efficient C# code](../../../csharp/write-safe-efficient-code.md).
+Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations](../../../csharp/language-reference/builtin-types/ref-struct.md). For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. For more information about how to use ref structs, see [Avoid allocations](../../../csharp/advanced-topics/performance/index.md).
 
 ### Read UTF-8 text
 

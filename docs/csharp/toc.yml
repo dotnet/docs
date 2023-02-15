@@ -11,6 +11,8 @@ items:
     href: tour-of-csharp/program-building-blocks.md
   - name: Major language areas
     href: tour-of-csharp/features.md
+  - name: C# language strategy
+    href: tour-of-csharp/strategy.md
   - name: Tutorials
     items:
     - name: Choose your first lesson
@@ -187,8 +189,6 @@ items:
     href: tutorials/ranges-indexes.md
   - name: Work with nullable reference types
     href: tutorials/nullable-reference-types.md
-  - name: Generate and consume asynchronous streams
-    href: tutorials/generate-consume-asynchronous-stream.md
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -203,6 +203,28 @@ items:
     href: tutorials/working-with-linq.md
   - name: Use Attributes
     href: tutorials/attributes.md
+- name: Asynchronous programming
+  items:
+  - name: Overview
+    displayName: asynchronous programming, async, await
+    href: asynchronous-programming/index.md
+  - name: Asynchronous programming scenarios
+    href: asynchronous-programming/async-scenarios.md
+  - name: Task asynchronous programming model
+    href: asynchronous-programming/task-asynchronous-programming-model.md
+  - name: Async return types
+    displayName: Task, Task<T>, ValueTask, ValueTask<T>
+    href: asynchronous-programming/async-return-types.md
+  - name: Process asynchronous tasks as they complete
+    href: asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md
+  - name: Asynchronous file access
+    href: asynchronous-programming/using-async-for-file-access.md
+  - name: Cancel a list of tasks
+    href: asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks.md
+  - name: Cancel tasks after a period of time
+    href: asynchronous-programming/cancel-async-tasks-after-a-period-of-time.md
+  - name: Generate and consume asynchronous streams
+    href: asynchronous-programming/generate-consume-asynchronous-stream.md
 - name: C# concepts
   items:
   - name: Nullable reference types
@@ -277,8 +299,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Write safe, efficient code
-    href: write-safe-efficient-code.md
   - name: Expression trees
     items:
     - name: Introduction to expression trees
@@ -318,53 +338,61 @@ items:
     href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
-- name: The .NET Compiler Platform SDK (Roslyn APIs)
+- name: Advanced topics
   items:
-  - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
-    href: roslyn-sdk/index.md
-  - name: Understand the compiler API model
-    href: roslyn-sdk/compiler-api-model.md
-  - name: Work with syntax
-    href: roslyn-sdk/work-with-syntax.md
-  - name: Work with semantics
-    href: roslyn-sdk/work-with-semantics.md
-  - name: Work with a workspace
-    href: roslyn-sdk/work-with-workspace.md
-  - name: Explore code with the syntax visualizer
-    href: roslyn-sdk/syntax-visualizer.md
-  - name: Source Generators
-    href: roslyn-sdk/source-generators-overview.md
-  - name: Quick starts
+  - name: Performance engineering
     items:
-    - name: Syntax analysis
-      href: roslyn-sdk/get-started/syntax-analysis.md
-    - name: Semantic analysis
-      href: roslyn-sdk/get-started/semantic-analysis.md
-    - name: Syntax Transformation
-      href: roslyn-sdk/get-started/syntax-transformation.md
-  - name: Tutorials
+    - name: Overview
+      href: advanced-topics/performance/index.md
+    - name: Tutorial - reduce allocations
+      href: advanced-topics/performance/ref-tutorial.md
+  - name: The .NET Compiler Platform SDK (Roslyn APIs)
     items:
-    - name: Build your first analyzer and code fix
-      href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
-# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-#    - name: Get started writing custom analyzers and code fixes
-#  - name: Tutorials
-#    items:
-#    - name: Build your first analyzer
-#    - name: Build your first code fix
-#    - name: Deploy your analyzer as a VSIX
-#    - name: Deploy your analyzer as a NuGet package
-#- name: Samples
-# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-#  items:
-#    - name: Async packages
-#    - name: Console classifier
-#    - name: Convert to auto property
-#    - name: Format solution
-#    - name: Implement notify property changed
-#    - name: Make const
-#    - name: How to guides
-# Look at the samples, and determine which are "How To" vs. Samples.
+    - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
+      href: roslyn-sdk/index.md
+    - name: Understand the compiler API model
+      href: roslyn-sdk/compiler-api-model.md
+    - name: Work with syntax
+      href: roslyn-sdk/work-with-syntax.md
+    - name: Work with semantics
+      href: roslyn-sdk/work-with-semantics.md
+    - name: Work with a workspace
+      href: roslyn-sdk/work-with-workspace.md
+    - name: Explore code with the syntax visualizer
+      href: roslyn-sdk/syntax-visualizer.md
+    - name: Source Generators
+      href: roslyn-sdk/source-generators-overview.md
+    - name: Quick starts
+      items:
+      - name: Syntax analysis
+        href: roslyn-sdk/get-started/syntax-analysis.md
+      - name: Semantic analysis
+        href: roslyn-sdk/get-started/semantic-analysis.md
+      - name: Syntax Transformation
+        href: roslyn-sdk/get-started/syntax-transformation.md
+    - name: Tutorials
+      items:
+      - name: Build your first analyzer and code fix
+        href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+  #    - name: Get started writing custom analyzers and code fixes
+  #  - name: Tutorials
+  #    items:
+  #    - name: Build your first analyzer
+  #    - name: Build your first code fix
+  #    - name: Deploy your analyzer as a VSIX
+  #    - name: Deploy your analyzer as a NuGet package
+  #- name: Samples
+  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+  #  items:
+  #    - name: Async packages
+  #    - name: Console classifier
+  #    - name: Convert to auto property
+  #    - name: Format solution
+  #    - name: Implement notify property changed
+  #    - name: Make const
+  #    - name: How to guides
+  # Look at the samples, and determine which are "How To" vs. Samples.
 - name: C# programming guide
   items:
   - name: Overview
@@ -375,28 +403,6 @@ items:
     - name: Overview
       displayName: programming concepts
       href: programming-guide/concepts/index.md
-    - name: Asynchronous programming
-      displayName: async, await, asynchronous programming, task, cancellation
-      items:
-      - name: Overview
-        displayName: asynchronous programming
-        href: programming-guide/concepts/async/index.md
-      - name: Asynchronous programming scenarios
-        href: async.md
-      - name: Task asynchronous programming model
-        href: programming-guide/concepts/async/task-asynchronous-programming-model.md
-      - name: Async return types
-        href: programming-guide/concepts/async/async-return-types.md
-      - name: Cancel tasks
-        items:
-        - name: Cancel a list of tasks
-          href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
-        - name: Cancel tasks after a period of time
-          href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
-      - name: Process asynchronous tasks as they complete
-        href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
-      - name: Asynchronous file access
-        href: programming-guide/concepts/async/using-async-for-file-access.md
     - name: Attributes
       items:
       - name: Overview
@@ -1367,8 +1373,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features
       items:
-      - name: Unmanaged generic type constraints
-        href: ../../_csharplang/proposals/csharp-7.3/blittable.md
       - name: Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context
         href: ../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
       - name: Pattern-based `fixed` statement

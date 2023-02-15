@@ -5,7 +5,7 @@ namespace GenericsExample1
 {
     //<snippet2>
     generic<typename T>
-    public ref class Generics
+    public ref class SimpleGenericClass
     {
     public:
         T Field;
@@ -18,17 +18,17 @@ namespace GenericsExample1
         //<snippet3>
         static void Main()
         {
-            Generics<String^>^ g = gcnew Generics<String^>();
+            SimpleGenericClass<String^>^ g = gcnew SimpleGenericClass<String^>();
             g->Field = "A string";
             //...
-            Console::WriteLine("Generics.Field           = \"{0}\"", g->Field);
-            Console::WriteLine("Generics.Field.GetType() = {0}", g->Field->GetType()->FullName);
+            Console::WriteLine("SimpleGenericClass.Field           = \"{0}\"", g->Field);
+            Console::WriteLine("SimpleGenericClass.Field.GetType() = {0}", g->Field->GetType()->FullName);
         }
         //</snippet3>
 
        //<snippet4>
         generic<typename T>
-        T Generic(T arg)
+        T MyGenericMethod(T arg)
         {
             T temp = arg;
             //...
@@ -53,7 +53,7 @@ namespace GenericsExample2
         }
     };
     generic<typename T>
-    ref class Generic
+    ref class MyGenericClass
     {
         T M(T arg)
         {

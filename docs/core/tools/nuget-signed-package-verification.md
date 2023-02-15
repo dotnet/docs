@@ -28,9 +28,7 @@ NuGet uses the default root store on Windows, which already supports general-pur
 
 ## Linux
 
-Prior to .NET 8 SDK, verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
-
-Starting with .NET 8 SDK, verification is enabled by default. To opt out, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
+Verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
 
 NuGet uses .NET SDK fallback certificate bundles by default. You can override the code signing fallback certificate bundle by providing a certificate bundle valid for code signing at the following probe path:
 

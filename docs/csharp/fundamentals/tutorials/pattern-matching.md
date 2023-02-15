@@ -271,7 +271,7 @@ In the preceding sample, using a recursive expression means you don't repeat the
 
 ## Add peak pricing
 
-For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time. You could use a series if `if` and `else` statements to express this using the following code:
+For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time. You could use a series of `if` and `else` statements to express this using the following code:
 
 [!code-csharp[FullTuplePattern](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#SnippetPremiumWithoutPattern)]
 

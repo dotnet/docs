@@ -141,22 +141,31 @@ Select **View > Output**, and ensure that the **Show output from** dropdown has 
 
 :::row:::
     :::column:::
-        **1) Installer welcome dialog**
+        **1. Installer welcome dialog**
         :::image type="content" source="media/workers/installer-welcome.png" lightbox="media/workers/installer-welcome.png" alt-text="Installer welcome dialog.":::
     :::column-end:::
     :::column:::
-        **2) Installer select folder dialog.**
+        **2. Installer select folder dialog**
         :::image type="content" source="media/workers/installer-select-folder.png" lightbox="media/workers/installer-select-folder.png" alt-text="Installer select folder dialog.":::
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        **3) Installer confirm dialog**
+        **3. Installer confirm dialog**
         :::image type="content" source="media/workers/installer-confirm.png" lightbox="media/workers/installer-confirm.png" alt-text="Installer confirm dialog.":::
     :::column-end:::
     :::column:::
-        **4) Installer complete dialog.**
+        **4. Installer complete dialog**
         :::image type="content" source="media/workers/installer-complete.png" lightbox="media/workers/installer-complete.png" alt-text="Installer complete dialog.":::
     :::column-end:::
 :::row-end:::
+
+Once the service is installed, you can open **Services** to start the service. You can use the **Windows Add or remove programs** feature to call the installer to uninstall the service when needed.
+
+## See also
+
+- [Worker Services in .NET](workers.md)
+- [Create a Queue Service](queue-service.md)
+- [Use scoped services within a `BackgroundService`](scoped-service.md)
+- [Implement the `IHostedService` interface](timer-service.md)

@@ -343,3 +343,8 @@ For more information, see [sc.exe delete](/windows-server/administration/windows
 - [Create a Queue Service](queue-service.md)
 - [Use scoped services within a `BackgroundService`](scoped-service.md)
 - [Implement the `IHostedService` interface](timer-service.md)
+
+## Next
+
+> [!div class="nextstepaction"]
+> [Create a Windows Service installer](windows-service-with-installer.md)

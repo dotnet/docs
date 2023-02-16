@@ -10,7 +10,7 @@ ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
 ---
 # Application compatibility in the .NET Framework
 
-Compatibility is an important goal of each .NET release. Compatibility ensures that each version is additive, so previous versions will continue to work. On the other hand, changes to previous functionality (for example, to improve performance, address security issues, or fix bugs) can cause compatibility problems in existing code or existing applications that run under a later version.
+Compatibility is an important goal of each .NET Framework release. Compatibility ensures that each version is additive, so previous versions will continue to work. On the other hand, changes to previous functionality (for example, to improve performance, address security issues, or fix bugs) can cause compatibility problems in existing code or existing applications that run under a later version.
 
 Each app targets a specific version of the .NET Framework by:
 

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OptionalNamespace.OptionalExample</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="NamedAndOptCOM.cs" />
     <Compile Include="Optional.cs" />

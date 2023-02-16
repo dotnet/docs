@@ -88,9 +88,9 @@ After a release goes out, the release branches generally stop producing daily bu
 
 Each major .NET runtime version contains intentional, carefully vetted and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes are not the only potential source of issues affecting the application after upgrade. For example, a performance improvement in .NET runtime (that is not considered to be a breaking change) can expose latent application threading bugs resulting in an application no longer working on a new .NET runtime major version. It is expected for very large applications to require a few fixes after upgrade to a new .NET runtime major version.
 
-The .NET runtime applications are configured to run on a given .NET runtime major version by default and recompilation is required to upgrade the application to run on a new .NET runtime major version. It is strongly recommended to re-test the application after upgrade to identify issues affecting the application.
+The .NET runtime applications are configured to run on a given .NET runtime major version by default and recompilation is highly recommended to upgrade the application to run on a new .NET runtime major version. It is required to re-test the application after upgrade to identify issues affecting the application.
 
-If upgrading via app recompilation is not feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable application to run on a higher major .NET runtime version than the version application was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version and it is still strongly recommended to retest the application after upgrade.
+If upgrading via app recompilation is not feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable application to run on a higher major .NET runtime version than the version application was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version and it is still required to retest the application after upgrade.
 
 ## See also
 

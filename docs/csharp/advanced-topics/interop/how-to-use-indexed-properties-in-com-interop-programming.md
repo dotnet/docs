@@ -14,17 +14,17 @@ helpviewer_keywords:
 
 In earlier versions of C#, methods are accessible as properties only if the `get` method has no parameters and the `set` method has one and only one value parameter. However, not all COM properties meet those restrictions. For example, the Excel <xref:Microsoft.Office.Interop.Excel.Range.Range%2A> property has a `get` accessor that requires a parameter for the name of the range. In the past, because you could not access the `Range` property directly, you had to use the `get_Range` method instead, as shown in the following example.
 
-[!code-csharp[csProgGuideIndexedProperties#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#1)]
+:::code language="{language}" source="snippets/IndexedProperties/Program.cs" id="Snippet1":::
 
 Indexed properties enable you to write the following instead:
 
-[!code-csharp[csProgGuideIndexedProperties#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#2)]
+:::code language="{language}" source="snippets/IndexedProperties/Program.cs" id="Snippet2":::
 
 The previous example also uses the [optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md) feature, which enables you to omit `Type.Missing`.
 
 Indexed properties enable you to write the following code.
 
-[!code-csharp[csProgGuideIndexedProperties#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#4)]
+:::code language="{language}" source="snippets/IndexedProperties/Program.cs" id="Snippet4":::
 
 You cannot create indexed properties of your own. The feature only supports consumption of existing indexed properties.
   
@@ -32,7 +32,7 @@ You cannot create indexed properties of your own. The feature only supports cons
 
 The following code shows a complete example. For more information about how to set up a project that accesses the Office API, see [How to access Office interop objects by using C# features](./how-to-access-office-interop-objects.md).
 
-[!code-csharp[csProgGuideIndexedProperties#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#5)]
+:::code language="{language}" source="snippets/IndexedProperties/Program.cs" id="Snippet5":::
 
 ## See also
 

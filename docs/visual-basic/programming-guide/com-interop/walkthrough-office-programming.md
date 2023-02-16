@@ -84,7 +84,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 ### To invoke DisplayInExcel
 
-1. Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero. For more information, see [Lambda Expressions](../../language-reference/operators/lambda-expressions.md).
+1. Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero.
 
      [!code-vb[csOfficeWalkthrough#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#9)]
 
@@ -140,7 +140,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 ## See also
 
 - [Auto-Implemented Properties (Visual Basic)](../language-features/procedures/auto-implemented-properties.md)
-- [Collection Initializers](..language-features/collection-initializers/index.md)
+- [Collection Initializers](../language-features/collection-initializers/index.md)
 - [Optional Parameters](../language-features/procedures/optional-parameters.md)
 - [Passing Arguments by Position and by Name](../language-features/procedures/passing-arguments-by-position-and-by-name.md)
 - [Early and Late Binding](../language-features/early-late-binding/index.md)

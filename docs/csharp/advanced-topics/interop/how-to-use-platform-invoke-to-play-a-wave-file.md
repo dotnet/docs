@@ -37,6 +37,5 @@ The **Open Files** dialog box is filtered to show only files that have a .wav ex
 
 ## See also
 
-- [Interoperability Overview](interoperability-overview.md)
 - [A Closer Look at Platform Invoke](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
 - [Marshalling Data with Platform Invoke](../../../framework/interop/marshalling-data-with-platform-invoke.md)

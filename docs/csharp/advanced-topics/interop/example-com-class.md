@@ -24,7 +24,7 @@ The class implements the class interface; it can implement more than one interfa
 
 ## Example
 
-[!code-csharp[csProgGuideInterop#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/ExampleCOM.cs#8)]
+:::code language="csharp" source="./snippets/ExampleCOMClass/ExampleCOM.cs":::
 
 ## See also
 

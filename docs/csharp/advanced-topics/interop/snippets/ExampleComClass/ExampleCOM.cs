@@ -1,5 +1,4 @@
-﻿//<Snippet8>
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 namespace project_name
 {
@@ -21,4 +20,3 @@ namespace project_name
     {
     }
 }
-//</Snippet8>

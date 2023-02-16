@@ -82,17 +82,17 @@ Preview versions have a `-preview.[number].[build]` appended to the version numb
 
 After a release goes out, the release branches generally stop producing daily builds and instead start producing servicing builds. Servicing versions have a `-servicing-[number]` appended to the version. For example, `5.0.1-servicing-006924`.
 
-## .NET Runtime Compatibility
+## .NET runtime compatibility
 
-.NET runtime maintains a high level of compatibility between versions. .NET applications should by and large, continue to work after upgrade to a new major .NET runtime version.
+The .NET runtime maintains a high level of compatibility between versions. .NET applications should, by and large, continue to work after upgrading to a new major .NET runtime version.
 
-Each major .NET runtime version contains intentional, carefully vetted and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes are not the only potential source of issues affecting the application after upgrade. For example, a performance improvement in .NET runtime (that is not considered to be a breaking change) can expose latent application threading bugs resulting in an application no longer working on a new .NET runtime major version. It is expected for very large applications to require a few fixes after upgrade to a new .NET runtime major version.
+Each major .NET runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an application after upgrade. For example, a performance improvement in the .NET runtime (that's not considered to be a breaking change) can expose latent application threading bugs that cause the app not to work on that version. It's expected for large applications to require a few fixes after upgrading to a new .NET runtime major version.
 
-The .NET runtime applications are configured to run on a given .NET runtime major version by default and recompilation is highly recommended to upgrade the application to run on a new .NET runtime major version. It is required to re-test the application after upgrade to identify issues affecting the application.
+.NET apps are configured to run on a given .NET runtime major version by default, so recompilation is highly recommended to upgrade the application to run on a new .NET runtime major version. Then retest the application after upgrading to identify any issues.
 
-If upgrading via application recompilation is not feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable application to run on a higher major .NET runtime version than the version application was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version and it is still required to retest the application after upgrade.
+If upgrading via application recompilation isn't feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an application to run on a higher major .NET runtime version than the version it was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version, and it's still required to retest the app after upgrade.
 
-.NET runtime supports loading libraries that target older .NET runtime versions. Application upgraded to newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It is not necessary to upgrade target runtime version of all libraries and NuGet packages that the application is composed from at the same time.
+The .NET runtime supports loading libraries that target older .NET runtime versions. Applications upgraded to newer major .NET runtime versions can reference libraries and NuGet packages that target older .NET runtime versions. It is not necessary to upgrade the target runtime version of all libraries and NuGet packages that the application is composed from at the same time.
 
 ## See also
 

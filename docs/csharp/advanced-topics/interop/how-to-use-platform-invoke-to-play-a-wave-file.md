@@ -17,23 +17,17 @@ The following C# code example illustrates how to use platform invoke services to
 
 This example code uses <xref:System.Runtime.InteropServices.DllImportAttribute> to import `winmm.dll`'s `PlaySound` method entry point as `Form1 PlaySound()`. The example has a simple Windows Form with a button. Clicking the button opens a standard windows <xref:System.Windows.Forms.OpenFileDialog> dialog box so that you can open a file to play. When a wave file is selected, it is played by using the `PlaySound()` method of the *winmm.dll* library. For more information about this method, see [Using the PlaySound function with Waveform-Audio Files](/windows/desktop/multimedia/using-playsound-to-play-waveform-audio-files). Browse and select a file that has a .wav extension, and then click **Open** to play the wave file by using platform invoke. A text box shows the full path of the file selected.
 
-The **Open Files** dialog box is filtered to show only files that have a .wav extension through the filter settings:
+:::code language="csharp" source="snippets/WinSound/Form1.cs":::
 
-[!code-csharp[csProgGuideInterop#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#5)]
-
-[!code-csharp[csProgGuideInterop#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#3)]
+The **Open Files** dialog box is filtered to show only files that have a .wav extension through the filter settings.
 
 ## Compiling the code
 
-1. Create a new C# Windows Forms Application project in Visual Studio and name it **WinSound**.
+Create a new C# Windows Forms Application project in Visual Studio and name it **WinSound**. Copy the preceding code above, and paste it over the contents of the *Form1.cs* file. Copy the following code, and paste it in the *Form1.Designer.cs* file, in the `InitializeComponent()` method, after any existing code.
 
-1. Copy the code above, and paste it over the contents of the *Form1.cs* file.
+:::code language="csharp" source="snippets/WinSound/Form1.Designer.cs" id="Initialization":::
 
-1. Copy the following code, and paste it in the *Form1.Designer.cs* file, in the `InitializeComponent()` method, after any existing code.
-
-     [!code-csharp[csProgGuideInterop#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#4)]
-
-1. Compile and run the code.
+Compile and run the code.
 
 ## See also
 

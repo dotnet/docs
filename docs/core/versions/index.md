@@ -90,7 +90,9 @@ Each major .NET runtime version contains intentional, carefully vetted and docum
 
 The .NET runtime applications are configured to run on a given .NET runtime major version by default and recompilation is highly recommended to upgrade the application to run on a new .NET runtime major version. It is required to re-test the application after upgrade to identify issues affecting the application.
 
-If upgrading via app recompilation is not feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable application to run on a higher major .NET runtime version than the version application was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version and it is still required to retest the application after upgrade.
+If upgrading via application recompilation is not feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable application to run on a higher major .NET runtime version than the version application was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version and it is still required to retest the application after upgrade.
+
+.NET runtime supports loading libraries that target older .NET runtime versions. Application upgraded to newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It is not necessary to upgrade target runtime version of all libraries and NuGet packages that the application is composed from at the same time.
 
 ## See also
 

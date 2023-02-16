@@ -1,3 +1,11 @@
 {
-    "host": "visualstudio"
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "docs/csharp/advanced-topics/interop/snippets/OfficeWalkthrough/OfficeWalkthrough.csproj",
+            "line": 211,
+            "column": 3,
+            "error": "MSB4019"
+        }
+    ]
 }

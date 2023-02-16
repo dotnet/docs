@@ -3,7 +3,7 @@ title: Implement a custom logging provider
 description: Learn how to implement a custom logging provider in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/15/2022
+ms.date: 02/16/2023
 ms.topic: how-to
 ---
 
@@ -31,7 +31,9 @@ The `ILogger` implementation category name is typically the logging source. For 
 The preceding code:
 
 - Creates a logger instance per category name.
-- Checks `_getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel)` in `IsEnabled`, so each `logLevel` has a unique logger. In this implementation, each log level requires an explicit configuration entry in order to log.
+- Checks `_getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel)` in `IsEnabled`, so each `logLevel` has a unique logger. In this implementation, each log level requires an explicit configuration entry to log.
+
+Calling <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled?displayProperty=nameWithType> within <xref:Microsoft.Extensions.Logging.ILogger.Log?displayProperty=nameWithType> implementations is a good practice since `Log` can be called by any consumer, and there are no guarantees that it was previously checked. The `IsEnabled` method should be very fast in most implementations.
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="15-16":::
 

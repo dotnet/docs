@@ -155,6 +155,10 @@ For more information, see the following resources:
   <DefaultItemExcludes>$(DefaultItemExcludes);publishoutput**</DefaultItemExcludes>
   ```
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit an error due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies.
+
   - .NET Core 3.x SDK and later
 
     If you specify a relative path when publishing a project, the generated output directory is relative to the current working directory, not to the project file location.

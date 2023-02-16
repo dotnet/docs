@@ -16,7 +16,7 @@ In this tutorial, you'll learn how to:
 > [!div class="checklist"]
 >
 > - Install the Visual Studio Installer Projects extension.
-> - Create a Setup Project.
+> - Create a setup project.
 > - Update an existing .NET Worker project to support installation.
 > - Automate the installation and uninstallation with the Windows Service Control Manager.
 
@@ -42,9 +42,9 @@ Open the solution in Visual Studio, and select <kbd>F5</kbd> to ensure that the 
 
 ### Handle installation switches
 
-The Windows Service app needs to handle installation switches. The Setup Project will call into the Windows Service app with `/Install` and `/Uninstall` switches that are called during installation and uninstallation respectively. When these switches are present the app will behave differently, in that it will only perform installation or uninstallation using the Windows Service Control Manager executable (_sc.exe_).
+The Windows Service app needs to handle installation switches. The setup project will call into the Windows Service app with `/Install` and `/Uninstall` switches during installation and uninstallation respectively. When these switches are present, the app will behave differently, in that it will only perform installation or uninstallation using the Windows Service Control Manager executable (_sc.exe_).
 
-For the app to call a separate process, you'll install the [CliWrap](https://www.nuget.org/packages/CliWrap) NuGet package as a convenience. To install the `CliWrap` package, call the `dotnet add package`:
+For the app to call a separate process, install the [CliWrap](https://www.nuget.org/packages/CliWrap) NuGet package as a convenience. To install the `CliWrap` package, use the `dotnet add package` command:
 
 ```dotnetcli
 dotnet add App.WindowsService.csproj package CliWrap
@@ -95,9 +95,9 @@ The preceding code:
 
 When no installation switches are present, the app behaves as it did before, but it now includes installation functionality.
 
-## Add new Setup Project
+## Add new setup project
 
-To add a new Setup Project, right-click on the solution in the **Solution Explorer** and select **Add > New Project**:
+To add a new setup project, right-click on the solution in the **Solution Explorer** and select **Add > New Project**:
 
 :::image type="content" source="media/workers/new-setup-project.png" alt-text="Add new project dialog: New Setup Project.":::
 
@@ -105,15 +105,15 @@ Select **Setup Project** from the available templates, then select **Next**. Pro
 
 ### Configure installer project
 
-To configure the install project, select the project in the **Solution Explorer** and select <kbd>F4</kbd>. This will open the project properties pane. You can configure the app's add and remove icons, author, manufacturer, product name, title, target platform, and so on.
+To configure the install project, select the project in the **Solution Explorer**. Select <kbd>F4</kbd> to open the project properties pane. You can configure the app's "add" and "remove" icons, author, manufacturer, product name, title, target platform, and so on.
 
 :::image type="content" source="media/workers/f4-installer-properties.png" alt-text="Installer project properties pane.":::
 
-The installer project needs to define two custom actions for installation behavior. Right-click the project in the **Solution Explorer** then **View > Custom Actions**.
+The installer project needs to define two custom actions for installation behavior. Right-click the project in the **Solution Explorer**, and then select **View > Custom Actions**.
 
 :::image type="content" source="media/workers/custom-actions.png" alt-text="Installer project Custom Actions context menu.":::
 
-From the **Custom Actions** window select **Install > Add Custom Action**.
+From the **Custom Actions** window, select **Install > Add Custom Action**.
 
 :::image type="content" source="media/workers/select-item.png" alt-text="Custom Actions properties dialog: select item.":::
 
@@ -131,11 +131,11 @@ Once you've done both, you should see the following:
 
 :::image type="content" source="media/workers/custom-actions-added.png" alt-text="Custom Actions with Install and Uninstall actions defined.":::
 
-With these updates, the Setup Project has been configured to delegate its *Install* and *Uninstall* actions to call into the Windows Service app with appropriate arguments.
+With these updates, the setup project has been configured to delegate its *Install* and *Uninstall* actions to call into the Windows Service app with appropriate arguments.
 
 ## Test installation
 
-To test the installer, expand the **Solution Configurations** dropdown in Visual Studio, and select **Release** (assuming **Debug** was selected). Build the solution and then right-click on the Setup Project, then select **Build**. By default, the Setup Projects are not part of the build.
+To test the installer, expand **Solution Configurations** in Visual Studio, and select **Release** (assuming **Debug** was selected). Build the solution and then right-click on the setup project and select **Build**. By default, setup projects are not part of the build.
 
 Select **View > Output**, and ensure that the **Show output from** dropdown has **Build** selected. The Microsoft Installer (MSI) file path is displayed. Copy the path, and open the installer. Run the installer:
 
@@ -161,7 +161,7 @@ Select **View > Output**, and ensure that the **Show output from** dropdown has 
     :::column-end:::
 :::row-end:::
 
-Once the service is installed, you can open **Services** to start the service. You can use the **Windows Add or remove programs** feature to call the installer to uninstall the service when needed.
+Once the service is installed, you can open **Services** to start the service. To uninstall the service, use the **Windows Add or Remove Programs** feature to call the installer.
 
 ## See also
 

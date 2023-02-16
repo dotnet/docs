@@ -92,7 +92,7 @@ Each major .NET runtime version contains intentional, carefully vetted, and docu
 
 If upgrading via application recompilation isn't feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an application to run on a higher major .NET runtime version than the version it was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version, and it's still required to retest the app after upgrade.
 
-The .NET runtime supports loading libraries that target older .NET runtime versions. Applications upgraded to newer major .NET runtime versions can reference libraries and NuGet packages that target older .NET runtime versions. It is not necessary to upgrade the target runtime version of all libraries and NuGet packages that the application is composed from at the same time.
+The .NET runtime supports loading libraries that target older .NET runtime versions. An application upgraded to newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It isn't necessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the application.
 
 ## See also
 

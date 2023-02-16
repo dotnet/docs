@@ -1,9 +1,6 @@
 ﻿//
 //<Snippet12>
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 //<Snippet4>
 using Word = Microsoft.Office.Interop.Word;
 //</Snippet4>

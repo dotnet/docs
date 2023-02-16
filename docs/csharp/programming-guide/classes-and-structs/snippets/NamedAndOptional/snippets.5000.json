@@ -1,0 +1,11 @@
+{
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "docs/csharp/programming-guide/classes-and-structs/snippets/NamedAndOptional/Program.cs",
+            "line": 6,
+            "column": 25,
+            "error": "CS0234"
+        }
+    ]
+}

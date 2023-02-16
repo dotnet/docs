@@ -1,8 +1,5 @@
 ﻿//
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 //<Snippet2>
 namespace OptionalNamespace
@@ -59,7 +56,7 @@ namespace OptionalNamespace
         //<Snippet15>
         public void ExampleMethod(int required, string optionalstr = "default string",
             int optionalint = 10)
-            //</Snippet15>
+        //</Snippet15>
         {
             Console.WriteLine(
                 $"{_name}: {required}, {optionalstr}, and {optionalint}.");

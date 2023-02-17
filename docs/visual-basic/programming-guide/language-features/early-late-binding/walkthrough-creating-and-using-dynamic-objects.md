@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating and Using Dynamic Objects - Visual Basic"
-description: Learn how to create and use dynamic objects in this walkthrough. Create a custom dynamic object and a project that uses an 'IronPython' library.
+description: Learn how to create and use dynamic late binding objects in this walkthrough. Create a custom dynamic object and a project that uses an 'IronPython' library.
 ms.date: 02/17/2023
 dev_langs:
   - "vb"
@@ -14,7 +14,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
 
  Dynamic objects also provide convenient access to dynamic languages such as IronPython and IronRuby. You can use a dynamic object to refer to a dynamic script that is interpreted at run time.
 
- You reference a dynamic object by using late binding. You specify the type of a late-bound object as `Object`. For more information, see [[Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md).
+ You reference a dynamic object by using late binding. You specify the type of a late-bound object as `Object`. For more information, see [[Early and Late Binding](./index.md).
 
  You can create custom dynamic objects by using the classes in the <xref:System.Dynamic?displayProperty=nameWithType> namespace. For example, you can create an <xref:System.Dynamic.ExpandoObject> and specify the members of that object at run time. You can also create your own type that inherits the <xref:System.Dynamic.DynamicObject> class. You can then override the members of the <xref:System.Dynamic.DynamicObject> class to provide run-time dynamic functionality.
 

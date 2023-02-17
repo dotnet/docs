@@ -2,6 +2,7 @@
 title: What's new in C# 9.0 - C# Guide
 description: Get an overview of the new features available in C# 9.0.
 ms.date: 04/07/2021
+ms.custom: UpdateFrequency1
 ---
 # What's new in C# 9.0
 

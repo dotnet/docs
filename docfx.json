@@ -897,7 +897,8 @@
                 "docs/standard/design-guidelines/**.md": false
             },
             "ms.custom": {
-                "docs/framework/**/*.md": "UpdateFrequency5"
+                "docs/framework/**/*.md": "UpdateFrequency5",
+                "docs/visual-basic/**/*.md": "UpdateFrequency5"
             }
         },
         "dest": "_site",

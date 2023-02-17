@@ -38,4 +38,4 @@ The following code shows a complete example. For more information about how to s
 
 - [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
-- [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)
+- [Using Type dynamic](using-type-dynamic.md)

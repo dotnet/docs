@@ -72,7 +72,7 @@ Add the following code at the end of `DisplayInExcel` to adjust the column width
 
 :::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="AutoFit":::
 
-These additions demonstrate another feature in C#: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../language-reference/builtin-types/reference-types.md). This happens automatically when **Embed Interop Types** is set to its default value, `True`, or, equivalently, when the assembly is referenced by the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option. For more information about embedding interop types, see procedures "To find the PIA reference" and "To restore the PIA dependency" later in this topic. For more information about `dynamic`, see [dynamic](../../language-reference/builtin-types/reference-types.md) or [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md).
+These additions demonstrate another feature in C#: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../language-reference/builtin-types/reference-types.md). This happens automatically when **Embed Interop Types** is set to its default value, `True`, or, equivalently, when the assembly is referenced by the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option. For more information about embedding interop types, see procedures "To find the PIA reference" and "To restore the PIA dependency" later in this topic. For more information about `dynamic`, see [dynamic](../../language-reference/builtin-types/reference-types.md) or [Using Type dynamic](using-type-dynamic.md).
 
 ### To invoke DisplayInExcel
 
@@ -124,7 +124,7 @@ In Visual Studio, click **Clean Solution** on the **Build** menu. Otherwise, the
 - [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 - [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
-- [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)
+- [Using Type dynamic](using-type-dynamic.md)
 - [Lambda Expressions (C#)](../../language-reference/operators/lambda-expressions.md)
 - [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
 - [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md)

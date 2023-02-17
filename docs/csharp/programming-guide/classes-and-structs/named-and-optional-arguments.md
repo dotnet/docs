@@ -121,7 +121,7 @@ However, you can greatly simplify the call to `AutoFormat` by using named and op
 
 :::code language="csharp" source="./snippets/NamedAndOptional/namedandoptcom.cs" id="Snippet13":::
 
-For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../interop/how-to-access-office-onterop-objects.md).
+For more information and examples, see [How to use named and optional arguments in Office programming](../../advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../../advanced-topics/interop/how-to-access-office-interop-objects.md).
   
 ## Overload resolution
 

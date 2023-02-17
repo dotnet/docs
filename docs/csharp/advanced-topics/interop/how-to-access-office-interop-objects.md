@@ -111,7 +111,7 @@ Press CTRL+F5. A Word document appears that contains an icon. Double-click the i
 
 Additional enhancements are possible when you call a COM type that does not require a primary interop assembly (PIA) at run time. Removing the dependency on PIAs results in version independence and easier deployment. For more information about the advantages of programming without PIAs, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
 
-In addition, programming is easier because the types that are required and returned by COM methods can be represented by using the type `dynamic` instead of `Object`. Variables that have type `dynamic` are not evaluated until run time, which eliminates the need for explicit casting. For more information, see [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md).
+In addition, programming is easier because the types that are required and returned by COM methods can be represented by using the type `dynamic` instead of `Object`. Variables that have type `dynamic` are not evaluated until run time, which eliminates the need for explicit casting. For more information, see [Using Type dynamic](using-type-dynamic.md).
 
 Embedding type information instead of using PIAs is default behavior. Because of that default, several of the previous examples are simplified because explicit casting is not required. For example, the declaration of `worksheet` in `DisplayInExcel` is written as `Excel._Worksheet workSheet = excelApp.ActiveSheet` rather than `Excel._Worksheet workSheet = (Excel.Worksheet)excelApp.ActiveSheet`. The calls to `AutoFit` in the same method also would require explicit casting without the default, because `ExcelApp.Columns[1]` returns an `Object`, and `AutoFit` is an Excel  method. The following code shows the casting.
 
@@ -142,4 +142,4 @@ The following code shows the complete example.
 - <xref:System.Type.Missing?displayProperty=nameWithType>
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
-- [How to use named and optional arguments in Office programming](../../programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to use named and optional arguments in Office programming](how-to-use-named-and-optional-arguments-in-office-programming.md)

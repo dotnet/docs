@@ -117,7 +117,7 @@ Embedding type information instead of using PIAs is default behavior. Because of
 
 :::code language="csharp" source="./snippets/OfficeInterop/program.cs" id="Snippet14":::
 
-To change the default and use PIAs instead of embedding type information, expand the References node in Solution Explorer,** and then select **Microsoft.Office.Interop.Excel** or **Microsoft.Office.Interop.Word**. If you can't see the **Properties** window, press **F4**. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [**References**](../../language-reference/compiler-options/inputs.md#references) compiler option instead of [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) at a command prompt.
+To change the default and use PIAs instead of embedding type information, expand the References node in Solution Explorer, and then select **Microsoft.Office.Interop.Excel** or **Microsoft.Office.Interop.Word**. If you can't see the **Properties** window, press **F4**. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [**References**](../../language-reference/compiler-options/inputs.md#references) compiler option instead of [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) at a command prompt.
 
 ## To add additional formatting to the table
 

@@ -73,7 +73,6 @@ let doubleR = double r
 
 Starting with F# 7.0, you can use `'a.Zero()` instead of having to repeat the constraint as in the example below.
 
-
 Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures. In previous versions of the language, the type name was inferred by the compiler, but could not be specified in the signature. As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example (please not that in this example, `^` must still be used because the simplification to use `'` is not supported):
 
 ```fsharp

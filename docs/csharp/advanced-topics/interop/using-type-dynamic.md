@@ -57,7 +57,7 @@ The dynamic language runtime (DLR) is an API that was introduced in .NET Framewo
 
 ## COM interop
 
-Many COM methods allow for variation in argument types and return type by designating the types as `object`. This has necessitated explicit casting of the values to coordinate with strongly typed variables in C#. If you compile by using the [**EmbedInteropTypes** (C# Compiler Options)](../../language-reference/compiler-options/inputs.md#embedinteroptypes) option, the introduction of the `dynamic` type enables you to treat the occurrences of `object` in COM signatures as if they were of type `dynamic`, and thereby to avoid much of the casting. See the article on [How to access Office interop objects by using C# features](../interop/how-to-access-office-onterop-objects.md) for more information on using the `dynamic` type with COM objects.
+Many COM methods allow for variation in argument types and return type by designating the types as `object`. This has necessitated explicit casting of the values to coordinate with strongly typed variables in C#. If you compile by using the [**EmbedInteropTypes** (C# Compiler Options)](../../language-reference/compiler-options/inputs.md#embedinteroptypes) option, the introduction of the `dynamic` type enables you to treat the occurrences of `object` in COM signatures as if they were of type `dynamic`, and thereby to avoid much of the casting. See the article on [How to access Office interop objects by using C# features](./how-to-access-office-interop-objects.md) for more information on using the `dynamic` type with COM objects.
 
 ## Related topics
 

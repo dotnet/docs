@@ -8,11 +8,13 @@ ms.date: 05/16/2016
 A *statically resolved type parameter* is a type parameter that is replaced with an actual type at compile time instead of at run time.
 
 ## Syntax
+
 ```fsharp
 'type-parameter
 ```
 
 Up to version 7.0 of F#, one had to use the following syntax
+
 ```fsharp
 ^type-parameter
 ```
@@ -55,6 +57,7 @@ The output is as follows.
 ```
 
 The following example illustrates the usage of SRTPs with methods and static methods:
+
 ```fsharp
 type Record =
     { Number: int }
@@ -64,6 +67,7 @@ type Record =
 let inline double<'a when 'a:(member Double: unit -> 'a)> (x: 'a) = x.Double()    
 let inline zero<'a when 'a:(static member Zero: unit -> 'a)> () = 'a.Zero()
 ```
+
 Starting with F# 7.0, you can use `'a.Zero()` instead of having to repeat the constraint as in the example below.
 
 

@@ -62,10 +62,13 @@ The following example illustrates the usage of SRTPs with methods and static met
 type Record =
     { Number: int }
     member this.Double() = { Number = this.Number * 2 }
-    static member Zero = { Number = 0 }
+    static member Zero() = { Number = 0 }
     
 let inline double<'a when 'a:(member Double: unit -> 'a)> (x: 'a) = x.Double()    
 let inline zero<'a when 'a:(static member Zero: unit -> 'a)> () = 'a.Zero()
+
+let r: Record = zero ()
+let doubleR = double r
 ```
 
 Starting with F# 7.0, you can use `'a.Zero()` instead of having to repeat the constraint as in the example below.

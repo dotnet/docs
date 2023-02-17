@@ -8,8 +8,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 //<Snippet1>
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;

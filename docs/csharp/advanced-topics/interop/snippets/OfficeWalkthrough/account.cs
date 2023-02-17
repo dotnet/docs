@@ -1,10 +1,4 @@
-﻿//
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace OfficeWalkthrough
+﻿namespace OfficeWalkthrough
 {
     //<AccountClass>
     class Account

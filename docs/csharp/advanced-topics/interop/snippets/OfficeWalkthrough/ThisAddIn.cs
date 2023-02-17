@@ -4,11 +4,6 @@ using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
 //</Usings>
-using System.Linq;
-using System.Text;
-using System.Xml.Linq;
-using Office = Microsoft.Office.Core;
-using Microsoft.Office.Tools.Excel;
 
 namespace OfficeWalkthrough
 {

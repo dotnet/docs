@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TestDynamicSnippets
+﻿namespace TestDynamicSnippets
 {
     class UsingDynamic
     {
@@ -29,7 +24,6 @@ namespace TestDynamicSnippets
         //</Snippet50>
     }
 
-    //<Snippet56>
     class ExampleClass
     {
         public ExampleClass() { }
@@ -39,7 +33,6 @@ namespace TestDynamicSnippets
 
         public void exampleMethod2(string str) { }
     }
-    //</Snippet56>
 
     class OtherExamples
     {

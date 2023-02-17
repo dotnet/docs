@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 //<Snippet1>
 using System.Linq;
 using Microsoft.Scripting.Hosting;

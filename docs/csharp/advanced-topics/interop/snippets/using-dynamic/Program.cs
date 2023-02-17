@@ -24,6 +24,7 @@
         //</Snippet50>
     }
 
+    // <Snippet56>
     class ExampleClass
     {
         public ExampleClass() { }
@@ -33,6 +34,7 @@
 
         public void exampleMethod2(string str) { }
     }
+    // </Snippet56>
 
     class OtherExamples
     {

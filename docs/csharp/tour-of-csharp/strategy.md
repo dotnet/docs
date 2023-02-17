@@ -2,6 +2,7 @@
 title: C# language strategy
 description: We will keep evolving C# to meet the changing needs of developers and remain a state-of-the-art programming language. We will innovate eagerly and broadly in collaboration with C# developers
 ms.date: 02/06/2023
+ms.custom: UpdateFrequency5
 ---
 # Annotated C# strategy
 

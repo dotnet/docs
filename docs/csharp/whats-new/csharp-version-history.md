@@ -3,7 +3,7 @@ title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
 author: erikdietrich
 ms.date: 06/18/2021
-ms.custom: updateeachrelease
+ms.custom: "updateeachrelease, UpdateFrequency1"
 ---
 
 # The history of C\#

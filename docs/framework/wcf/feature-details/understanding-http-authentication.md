@@ -31,7 +31,7 @@ Authentication is the process of identifying who the client is, typically to det
   
 - If the resource needs to be protected, consider which authentication schemes provide the required level of security. The weakest standard authentication scheme discussed here's Basic authentication. Basic authentication doesn't protect the user's credentials. The strongest standard authentication scheme is Negotiate authentication, resulting in the Kerberos protocol.  
   
-- A server shouldn't present (in the WWW-Authentication headers) any scheme that it isn't prepared to accept or that doesn't adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
+- A server shouldn't present, for example, in the WWW-Authentication headers), any scheme that it isn't prepared to accept or that doesn't adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
   
 ## See also
 

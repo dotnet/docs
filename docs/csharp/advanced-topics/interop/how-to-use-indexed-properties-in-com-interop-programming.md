@@ -1,6 +1,6 @@
 ---
 title: "How to use indexed properties in COM interop programming"
-description: Learn how indexed properties improve the way in which COM properties that have parameters are consumed in this C# example.
+description: Learn how indexed properties improve the way C# objects consume COM properties that have parameters.
 ms.date: 02/15/2023
 ms.topic: how-to
 helpviewer_keywords: 
@@ -8,11 +8,11 @@ helpviewer_keywords:
   - "Office programming [C#], indexed properties"
   - "properties [C#], indexed"
 ---
-# How to use indexed properties in COM interop programming (C# Programming Guide)
+# How to use indexed properties in COM interop programming
 
-*Indexed properties* improve the way in which COM properties that have parameters are consumed in C# programming. Indexed properties work together with other features in Visual C#, such as [named and optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md), a new type ([dynamic](../../language-reference/builtin-types/reference-types.md)), and [embedded type information](../../../standard/assembly/embed-types-visual-studio.md), to enhance Microsoft Office programming.
+Indexed properties work together with other features in C#, such as [named and optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md), a new type ([dynamic](../../language-reference/builtin-types/reference-types.md)), and [embedded type information](../../../standard/assembly/embed-types-visual-studio.md), to enhance Microsoft Office programming.
 
-In earlier versions of C#, methods are accessible as properties only if the `get` method has no parameters and the `set` method has one and only one value parameter. However, not all COM properties meet those restrictions. For example, the Excel <xref:Microsoft.Office.Interop.Excel.Range.Range%2A> property has a `get` accessor that requires a parameter for the name of the range. In the past, because you could not access the `Range` property directly, you had to use the `get_Range` method instead, as shown in the following example.
+In earlier versions of C#, methods are accessible as properties only if the `get` method has no parameters and the `set` method has one and only one value parameter. However, not all COM properties meet those restrictions. For example, the Excel <xref:Microsoft.Office.Interop.Excel.Range.Range%2A> property has a `get` accessor that requires a parameter for the name of the range. In the past, because you couldn't access the `Range` property directly, you had to use the `get_Range` method instead, as shown in the following example.
 
 :::code language="{language}" source="snippets/IndexedProperties/Program.cs" id="Snippet1":::
 
@@ -26,7 +26,7 @@ Indexed properties enable you to write the following code.
 
 :::code language="{language}" source="snippets/IndexedProperties/Program.cs" id="Snippet4":::
 
-You cannot create indexed properties of your own. The feature only supports consumption of existing indexed properties.
+You can't create indexed properties of your own. The feature only supports consumption of existing indexed properties.
   
 ## Example
 

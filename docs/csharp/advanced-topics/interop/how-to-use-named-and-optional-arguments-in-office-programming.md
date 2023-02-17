@@ -12,7 +12,7 @@ ms.topic: how-to
 
 Named arguments and optional arguments enhance convenience, flexibility, and readability in C# programming. In addition, these features greatly facilitate access to COM interfaces such as the Microsoft Office automation APIs.
 
-In the following example, method [ConvertToTable](<xref:Microsoft.Office.Interop.Word.Range.ConvertToTable%2A>) has sixteen parameters that represent characteristics of a table, such as number of columns and rows, formatting, borders, fonts, and colors. All sixteen parameters are optional, because most of the time you do not want to specify particular values for all of them. However, without named and optional arguments, a value or a placeholder value has to be provided for each parameter. With named and optional arguments, you specify values only for the parameters that are required for your project.
+In the following example, method [ConvertToTable](<xref:Microsoft.Office.Interop.Word.Range.ConvertToTable%2A>) has 16 parameters that represent characteristics of a table, such as number of columns and rows, formatting, borders, fonts, and colors. All 16 parameters are optional, because most of the time you don't want to specify particular values for all of them. However, without named and optional arguments, you must provide a value or a placeholder value. With named and optional arguments, you specify values only for the parameters required for your project.
 
 You must have Microsoft Office Word installed on your computer to complete these procedures.
 
@@ -20,15 +20,15 @@ You must have Microsoft Office Word installed on your computer to complete these
 
 ## Create a new console application
 
-Start Visual Studio. On the **File** menu, point to **New**, and then click **Project**. In the **Templates Categories** pane, expand **Visual C#**, and then click **Windows**. Look in the top of the **Templates** pane to make sure that **.NET Framework 4** appears in the **Target Framework** box. In the **Templates** pane, click **Console Application**. Type a name for your project in the **Name** field. Click **OK**. The new project appears in **Solution Explorer**.
+Start Visual Studio. On the **File** menu, point to **New**, and then select **Project**. In the **Templates Categories** pane, expand **C#**, and then select **Windows**. Look in the top of the **Templates** pane to make sure that **.NET Framework 4** appears in the **Target Framework** box. In the **Templates** pane, select **Console Application**. Type a name for your project in the **Name** field. Select **OK**. The new project appears in **Solution Explorer**.
 
 ## Add a reference
 
-In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears. On the **.NET** page, select **Microsoft.Office.Interop.Word** in the **Component Name** list. Click **OK**.
+In **Solution Explorer**, right-click your project's name and then select **Add Reference**. The **Add Reference** dialog box appears. On the **.NET** page, select **Microsoft.Office.Interop.Word** in the **Component Name** list. Select **OK**.
 
 ## Add necessary using directives
 
-In **Solution Explorer**, right-click the *Program.cs* file and then click **View Code**. Add the following `using` directives to the top of the code file:
+In **Solution Explorer**, right-click the *Program.cs* file and then select **View Code**. Add the following `using` directives to the top of the code file:
 
 :::code language="csharp" source="./snippets/NamedAndOptional/wordprogram.cs" id="Snippet4":::
 
@@ -52,11 +52,11 @@ Press <kbd>CTRL</kbd>+<kbd>F5</kbd> to run the project. A Word document appears 
 
 ## Change the text to a table
   
-Use the `ConvertToTable` method to enclose the text in a table. The method has sixteen optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration.
+Use the `ConvertToTable` method to enclose the text in a table. The method has 16 optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration.
 
 ![List of parameters for ConvertToTable method](./media/how-to-use-named-and-optional-arguments-in-office-programming/convert-table-parameters.png)
 
-Named and optional arguments enable you to specify values for only the parameters that you want to change. Add the following code to the end of method `DisplayInWord` to create a simple table. The argument specifies that the commas in the text string in `range` separate the cells of the table.
+Named and optional arguments enable you to specify values for only the parameters that you want to change. Add the following code to the end of method `DisplayInWord` to create a table. The argument specifies that the commas in the text string in `range` separate the cells of the table.
 
 :::code language="csharp" source="./snippets/NamedAndOptional/wordprogram.cs" id="Snippet9":::
 

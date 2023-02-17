@@ -3,7 +3,7 @@ title: POS for .NET FAQ (POS for .NET v1.14 SDK Documentation)
 description: POS for .NET FAQ (POS for .NET v1.14 SDK Documentation)
 ms.date: 04/01/2017
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # POS for .NET FAQ (POS for .NET v1.14 SDK Documentation)

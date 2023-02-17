@@ -3,7 +3,7 @@ title: Base Class DirectIO Method
 description: Base Class DirectIO Method (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # Base Class DirectIO Method (POS for .NET v1.14 SDK Documentation)

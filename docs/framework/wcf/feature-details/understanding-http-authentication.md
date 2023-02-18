@@ -23,7 +23,7 @@ Authentication is the process of identifying who the client is, typically to det
 |Negotiate|Negotiate authentication automatically selects between the Kerberos protocol and NTLM authentication, depending on availability. The Kerberos protocol is used if it's available; otherwise, NTLM is tried. Kerberos authentication significantly improves upon NTLM. Kerberos authentication is both faster than NTLM and allows the use of mutual authentication and delegation of credentials to remote machines.|  
 |Windows Live ID|The underlying Windows HTTP service includes authentication using federated protocols. However, the standard HTTP transports in WCF doesn't support the use of federated authentication schemes, such as Microsoft Windows Live ID. Support for this feature is currently available by using message security. For more information, see [Federation and Issued Tokens](federation-and-issued-tokens.md).|  
   
-## Choosing an Authentication Scheme  
+## Choose an Authentication Scheme  
 
  When selecting the potential authentication schemes for an HTTP server, a few items to consider include the following:  
   

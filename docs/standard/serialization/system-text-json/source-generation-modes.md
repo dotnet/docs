@@ -3,7 +3,7 @@ title: How to choose reflection or source generation in System.Text.Json
 description: "Learn how to choose reflection or source generation in System.Text.Json."
 ms.date: 02/21/2023
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"

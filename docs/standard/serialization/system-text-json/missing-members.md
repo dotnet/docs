@@ -3,7 +3,6 @@ title: Handle missing members during deserialization
 description: "Learn how to configure the JSON deserialization behavior when properties are present in the JSON payload that aren't present in the POCO type."
 ms.date: 02/21/2023
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
 ---

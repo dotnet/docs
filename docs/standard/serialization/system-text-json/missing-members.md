@@ -26,4 +26,4 @@ By default, if the JSON payload you're deserializing contains properties that do
   ```
 
 - Set `JsonSerializerOptions.JsonUnmappedMemberHandling` to either `JsonUnmappedMemberHandling.Skip` or `JsonUnmappedMemberHandling.Disallow`.
-- Customize the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> contract for the relevant type. (For information about customizing a contract, see [Customize a JSON contract](../../standard/serialization/system-text-json/custom-contracts.md).)
+- Customize the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> contract for the relevant type. (For information about customizing a contract, see [Customize a JSON contract](custom-contracts.md).)

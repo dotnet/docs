@@ -9,7 +9,7 @@ author: gewarren
 ---
 # What's new in .NET 8
 
-.NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for 3 years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release.
+.NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release.
 
 This article has been updated for .NET 8 Preview 1.
 
@@ -42,8 +42,8 @@ For more information, see ['dotnet pack' uses Release config](../compatibility/s
 
 Various improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality.
 
-- Performance and reliability enhancements of the [source generator](../../standard/serialization/system-text-json/source-generation.md) when used in conjunction with ASP.NET Core in Native AOT apps.
-- The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
+- Performance and reliability enhancements of the [source generator](../../standard/serialization/system-text-json/source-generation.md) when used with ASP.NET Core in Native AOT apps.
+- The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - [Customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - Support for serializing properties from interface hierarchies. The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
   
@@ -80,6 +80,8 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
 ## Methods for working with randomness
+
+The <xref:System.Random?displayProperty=fullName> and <xref:System.Security.Cryptography.RandomNumberGenerator?displayProperty=fullName> types introduce two new methods for working with randomness.
 
 ### GetItems\<T>()
 
@@ -133,7 +135,7 @@ IDataView predictions = model.Transform(split.TestSet);
   }
   ```
 
-- The new `IndexOfAnyValues<T>` type is designed to be passed to methods that look for the first occurrence of any value in the passed collection. For example, <xref:System.String.IndexOfAny(System.Char[])?displayProperty=nameWithType> looks for the first occurrence of any character in the specified array in the `string` its called on. NET 8 adds new overloads of methods like <xref:System.String.IndexOfAny%2A?displayProperty=nameWithType> and <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of `IndexOfAnyValues<T>`, all the data that's necessary to optimize subsequent searches is derived, so the work is done up front.
+- The new `IndexOfAnyValues<T>` type is designed to be passed to methods that look for the first occurrence of any value in the passed collection. For example, <xref:System.String.IndexOfAny(System.Char[])?displayProperty=nameWithType> looks for the first occurrence of any character in the specified array in the `string` it's called on. NET 8 adds new overloads of methods like <xref:System.String.IndexOfAny%2A?displayProperty=nameWithType> and <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of `IndexOfAnyValues<T>`, all the data that's necessary to optimize subsequent searches is derived, so the work is done up front.
 - The new `CompositeFormat` type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 
   ```csharp
@@ -160,7 +162,7 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 
 .NET 8 adds support for the x64 and Arm64 architectures on *macOS*.
 
-Also, the size of native AOT apps on Linux are now up to 50% smaller. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
+Also, the sizes of native AOT apps on Linux are now up to 50% smaller. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
 | Operating system                      | .NET 7  | .NET 8 Preview 1 |
 | ------------------------------------- | ------- | ---------------- |

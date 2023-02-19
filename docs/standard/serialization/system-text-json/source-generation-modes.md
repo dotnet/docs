@@ -30,7 +30,7 @@ This article explains the options and provides guidance on how to choose the bes
 
 :::zone-end
 
-:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
+:::zone pivot="dotnet-8-0"
 
 ## Overview
 
@@ -40,8 +40,8 @@ Choose reflection or source generation modes based on the following benefits tha
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
 | Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
-| Supports required properties.                        | ✔️        | ✔️*                 | ✔️*                       |
-| Supports init-only properties.                       | ✔️        | ✔️*                 | ✔️*                       |
+| Supports required properties.                        | ✔️        | ✔️                  | ✔️                        |
+| Supports init-only properties.                       | ✔️        | ✔️                  | ✔️                        |
 | Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |
 | Reduces start-up time.                               | ❌        | ✔️                  | ❌                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
@@ -49,7 +49,30 @@ Choose reflection or source generation modes based on the following benefits tha
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
 
-* Supported starting in .NET 8.
+:::zone-end
+
+:::zone pivot="dotnet-7-0,dotnet-6-0"
+
+## Overview
+
+Choose reflection or source generation modes based on the following benefits that each one offers:
+
+| Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
+|------------------------------------------------------|------------|---------------------|----------------------------|
+| Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
+| Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
+| Supports required properties.                        | ✔️        | ❌                  | ❌                        |
+| Supports init-only properties.                       | ✔️        | ❌                  | ❌                        |
+| Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |
+| Reduces start-up time.                               | ❌        | ✔️                  | ❌                        |
+| Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
+| Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
+| Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
+| Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
 
 The following sections explain these options and their relative benefits.
 

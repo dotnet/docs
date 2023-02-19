@@ -168,7 +168,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.2.0-beta1
 > to the application.
 
 > [!NOTE]
-> This tutorial is using a pre-release build of OpenTelemetry's Prometheus support available at the time of writing. The OpenTelemetry
+> This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing. The OpenTelemetry
 > project maintainers might make changes prior to the official release.
 
 Modify the code of `Program.cs` so that it contains the extra code to configure OpenTelemetry at the beginning of Main():

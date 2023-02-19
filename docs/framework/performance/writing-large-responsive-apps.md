@@ -368,7 +368,7 @@ public Symbol FindMatchingSymbol(string name)
   
 ### Async method caching  
 
-The next example shows a common problem when you try to use cached results in an [async](../../csharp/programming-guide/concepts/async/index.md) method.
+The next example shows a common problem when you try to use cached results in an [async](../../csharp/asynchronous-programming/index.md) method.
   
  **Example 6: caching in async methods**  
   

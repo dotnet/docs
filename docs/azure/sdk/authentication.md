@@ -1,7 +1,7 @@
 ---
 title: How to authenticate .NET applications with Azure services
 description: How to acquire the necessary credential objects to authenticate a .NET application with Azure services by using the Azure .NET SDK
-ms.date: 05/05/2022
+ms.date: 02/14/2023
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ---
@@ -65,9 +65,7 @@ When an application is run on a developer's workstation during local development
 
 Internally, `DefaultAzureCredential` implements a chain of credential providers for authenticating applications to Azure resources.  Each credential provider is able to detect if credentials of that type are configured for the app.  `DefaultAzureCredential` sequentially checks each provider in order and uses the credentials from the first provider that has credentials configured.
 
-The order in which `DefaultAzureCredential` looks for credentials is shown in the diagram and table below.  
-
-:::image type="content" source="./media/authentication-defaultazurecredential.png" alt-text="A diagram showing the `DefaultAzureCredential` sequence checks to see what authentication source is configured for an application." lightbox="./media/default-azure-credential-sequence-diagram.png":::
+The order and locations in which `DefaultAzureCredential` looks for credentials is found at [DefaultAzureCredential](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#defaultazurecredential).
 
 | Credential type               | Description |
 |-------------------------------|-------------|

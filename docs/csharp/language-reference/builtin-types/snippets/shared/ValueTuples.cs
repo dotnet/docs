@@ -83,7 +83,11 @@ namespace builtin_types
                     throw new ArgumentException("Cannot find minimum and maximum of a null or empty array.");
                 }
 
+                // Initialize min to MaxValue so every value in the input 
+                // is less than this initial value.
                 var min = int.MaxValue;
+                // Initialze max to MinValue so every value in the input
+                // is greater than this initial value.
                 var max = int.MinValue;
                 foreach (var i in input)
                 {

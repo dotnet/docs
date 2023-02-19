@@ -46,7 +46,11 @@ items:
           - name: Unavailable technologies
             href: ../../core/porting/net-framework-tech-unavailable.md
           - name: Unsupported APIs
-            href: ../../core/porting/unsupported-apis.md
+            items:
+            - name: Tools to find unsupported APIs
+              href: ../../core/porting/unsupported-apis.md
+            - name: Unsupported API list
+              href: ../../core/compatibility/unsupported-apis.md
       - name: Needed changes before porting code
         href: ../../core/porting/premigration-needed-changes.md
   - name: Migration

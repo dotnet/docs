@@ -33,7 +33,7 @@ WCF Client releases previously targeted .NET Standard 2.0 to support both .NET (
 
 - If your WCF project targets .NET 6 or later, no change is needed. If it targets .NET Standard 2.0, you'll need to multi-target your WCF libraries. Add a conditional assembly reference to *System.ServiceModel.dll* for .NET Framework and conditionally add package references to WCF Client packages for .NET.
 
-- Remove references to the [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex) and [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security) packages, because they're are no longer needed.
+- Remove references to the [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex) and [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security) packages, because they're no longer needed.
 
 ## Affected APIs
 

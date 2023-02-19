@@ -1,7 +1,7 @@
 ---
 title: How to choose reflection or source generation in System.Text.Json
 description: "Learn how to choose reflection or source generation in System.Text.Json."
-ms.date: 10/18/2021
+ms.date: 02/21/2023
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -14,10 +14,10 @@ ms.topic: how-to
 
 # How to choose reflection or source generation in System.Text.Json
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
 By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
-You can use version 6.0 of System.Text.Json in projects that target earlier frameworks. For more information, see [How to get the library](overview.md#how-to-get-the-library).
+You can use version 6.0+ of `System.Text.Json` in projects that target earlier frameworks. For more information, see [How to get the library](overview.md#how-to-get-the-library).
 
 This article explains the options and provides guidance on how to choose the best approach for your scenario.
 :::zone-end
@@ -30,7 +30,7 @@ This article explains the options and provides guidance on how to choose the bes
 
 :::zone-end
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
 
 ## Overview
 
@@ -40,13 +40,16 @@ Choose reflection or source generation modes based on the following benefits tha
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
 | Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
-| Supports init-only properties.                       | ✔️        | ❌                  | ❌                        |
+| Supports required properties.                        | ✔️        | ✔️*                 | ✔️*                       |
+| Supports init-only properties.                       | ✔️        | ✔️*                 | ✔️*                       |
 | Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |
 | Reduces start-up time.                               | ❌        | ✔️                  | ❌                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
 | Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
+
+* Supported starting in .NET 8.
 
 The following sections explain these options and their relative benefits.
 
@@ -72,8 +75,6 @@ The performance improvements provided by source generation can be substantial. F
 ### Known issues
 
 Only `public` properties and fields are supported by default<sup>\*</sup> in either serialization mode. However, reflection mode supports the use of `private` *accessors* while source-generation mode does not. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
-
-Reflection mode also supports deserialization to [init-only properties](../../../csharp/language-reference/keywords/init.md). Source generation doesn't support this, because the metadata-only mode required for deserialization can't express the required initialization statically in source code. The reflection serializer uses run-time reflection to set properties after construction.
 
 In both reflection and source generation modes:
 

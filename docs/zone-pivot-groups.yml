@@ -42,6 +42,8 @@ groups:
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-8-0
+      title: .NET 8
     - id: dotnet-7-0
       title: .NET 7
     - id: dotnet-6-0

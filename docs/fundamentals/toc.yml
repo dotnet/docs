@@ -543,6 +543,8 @@ items:
           href: ../standard/serialization/system-text-json/required-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json/invalid-json.md
+        - name: Handle missing members
+          href: ../standard/serialization/system-text-json/missing-members.md
         - name: Handle overflow JSON, use JsonElement or JsonNode
           href: ../standard/serialization/system-text-json/handle-overflow.md
         - name: Preserve references, handle circular references

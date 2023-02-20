@@ -54,20 +54,20 @@ Your DbContext must have a constructor that accepts `DbContextOptions` and pass 
 
 ### Configuring EF Core
 
-In your ASP.NET Core application, you'll typically configure EF Core in your `ConfigureServices` method. EF Core uses a `DbContextOptionsBuilder`, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code to `ConfigureServices`:
+In your ASP.NET Core application, you'll typically configure EF Core in `Program.cs` with your application's other dependencies. EF Core uses a `DbContextOptionsBuilder`, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code:
 
 ```csharp
-services.AddDbContext<CatalogContext>(options => options.UseSqlServer (Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<CatalogContext>(options => options.UseSqlServer (builder.Configuration.GetConnectionString("DefaultConnection")));
 ```
 
 To use the in-memory database:
 
 ```csharp
-services.AddDbContext<CatalogContext>(options =>
+builder.Services.AddDbContext<CatalogContext>(options =>
     options.UseInMemoryDatabase());
 ```
 
-Once you have installed EF Core, created a DbContext child type, and configured it in `ConfigureServices`, you are ready to use EF Core. You can request an instance of your DbContext type in any service that needs it, and start working with your persisted entities using LINQ as if they were simply in a collection. EF Core does the work of translating your LINQ expressions into SQL queries to store and retrieve your data.
+Once you have installed EF Core, created a DbContext child type, and added the type to the application's services, you are ready to use EF Core. You can request an instance of your DbContext type in any service that needs it and start working with your persisted entities using LINQ as if they were simply in a collection. EF Core does the work of translating your LINQ expressions into SQL queries to store and retrieve your data.
 
 You can see the queries EF Core is executing by configuring a logger and ensuring its level is set to at least Information, as shown in Figure 8-1.
 
@@ -147,6 +147,8 @@ Another option for loading related data is to use _explicit loading_. Explicit l
 _Lazy loading_ is a feature that automatically loads related data as it is referenced by the application. EF Core has added support for lazy loading in version 2.1. Lazy loading is not enabled by default and requires installing the `Microsoft.EntityFrameworkCore.Proxies`. As with explicit loading, lazy loading should typically be disabled for web applications, since its use will result in additional database queries being made within each web request. Unfortunately, the overhead incurred by lazy loading often goes unnoticed at development time, when the latency is small and often the data sets used for testing are small. However, in production, with more users, more data, and more latency, the additional database requests can often result in poor performance for web applications that make heavy use of lazy loading.
 
 [Avoid Lazy Loading Entities in Web Applications](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
+
+It's a good idea to test your application while examining the actual database queries it makes. Under certain circumstances, EF Core may make many more queries or a more expensive query than is optimal for the application. One such problem is known as a [Cartesian Explosion](https://learn.microsoft.com/en-us/ef/core/querying/single-split-queries#cartesian-explosion). The EF Core team makes available the [`AsSplitQuery` method](https://learn.microsoft.com/en-us/ef/core/querying/single-split-queries#split-queries) as one of several ways to tune runtime behavior.
 
 ### Encapsulating data
 
@@ -406,7 +408,7 @@ The Response Caching Middleware will automatically cache responses based on a se
 
 Rather than (or in addition to) caching full web responses, you can cache the results of individual data queries. For this functionality, you can use in memory caching on the web server, or use [a distributed cache](/aspnet/core/performance/caching/distributed). This section will demonstrate how to implement in memory caching.
 
-You add support for memory (or distributed) caching in `ConfigureServices`:
+Add support for memory (or distributed) caching with the following code:
 
 ```csharp
 builder.Services.AddMemoryCache();
@@ -465,7 +467,7 @@ public class CachedCatalogService : ICatalogService
 }
 ```
 
-To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in `ConfigureServices`:
+To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in `Program.cs`:
 
 ```csharp
 builder.Services.AddMemoryCache();

@@ -89,7 +89,7 @@ There might be a few cases where you still need to migrate to SQL Server as a re
 
 ## Use Azure Database Migration Service to migrate your relational databases to Azure
 
-You can use Azure Database Migration Service to migrate relational databases like SQL Server, Oracle, and MySQL to Azure, whether your target database is Azure SQL Database, Azure SQL Database Managed Instance, or SQL Server on an Azure VM.
+You can use Azure Database Migration Service to migrate relational databases like SQL Server, and MySQL to Azure, whether your target database is Azure SQL Database, Azure SQL Database Managed Instance, or SQL Server on an Azure VM.
 
 The automated workflow, with assessment reporting, guides you through the changes you need to make before you migrate the database. When you are ready, the service migrates the source database to Azure.
 

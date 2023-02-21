@@ -3,7 +3,7 @@ title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
 author: erikdietrich
 ms.date: 06/18/2021
-ms.custom: updateeachrelease
+ms.custom: "updateeachrelease, UpdateFrequency1"
 ---
 
 # The history of C\#
@@ -276,7 +276,7 @@ They did one other thing along with this version, though it's not a traditional 
 
 C# version 5.0, released with Visual Studio 2012, was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming.  Here's the major features list:
 
-- [Asynchronous members](../async.md)
+- [Asynchronous members](../asynchronous-programming/index.md)
 - [Caller info attributes](../language-reference/attributes/caller-information.md)
 - [Code Project: Caller Info Attributes in C# 5.0](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 

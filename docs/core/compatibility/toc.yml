@@ -20,6 +20,8 @@ items:
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: ITypeDescriptorContext nullable annotations
+        href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
     - name: Cryptography
@@ -32,10 +34,24 @@ items:
       items:
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
+    - name: SDK
+      items:
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
+      - name: ExceptionCollection ctor throws ArgumentException
+        href: windows-forms/8.0/exceptioncollection.md
+      - name: Forms scale according to AutoScaleMode
+        href: windows-forms/8.0/top-level-window-scaling.md
+      - name: ImageList.ColorDepth default is Depth32Bit
+        href: windows-forms/8.0/imagelist-colordepth.md
+      - name: TableLayoutStyleCollection throws ArgumentException
+        href: windows-forms/8.0/tablelayoutstylecollection.md
       - name: Top-level forms scale size to DPI
         href: windows-forms/8.0/forms-scale-size-to-dpi.md
       - name: WFDEV002 obsoletion is now an error
@@ -90,6 +106,8 @@ items:
         href: core-libraries/7.0/cpluspluscli-compiler-version.md
       - name: Collectible Assembly in non-collectible AssemblyLoadContext
         href: core-libraries/7.0/collectible-assemblies.md
+      - name: DateTime addition methods precision change
+        href: core-libraries/7.0/datetime-add-precision.md
       - name: Equals method behavior change for NaN
         href: core-libraries/7.0/equals-nan.md
       - name: Generic type constraint on PatternContext<T>
@@ -180,6 +198,8 @@ items:
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
+      - name: --output option no longer is valid for solution-level commands
+        href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: Serialization
       items:
       - name: DataContractSerializer retains sign when deserializing -0
@@ -906,6 +926,8 @@ items:
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: ITypeDescriptorContext nullable annotations
+        href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
     - name: .NET 7
@@ -922,6 +944,8 @@ items:
         href: core-libraries/7.0/cpluspluscli-compiler-version.md
       - name: Collectible Assembly in non-collectible AssemblyLoadContext
         href: core-libraries/7.0/collectible-assemblies.md
+      - name: DateTime addition methods precision change
+        href: core-libraries/7.0/datetime-add-precision.md
       - name: Equals method behavior change for NaN
         href: core-libraries/7.0/equals-nan.md
       - name: Generic type constraint on PatternContext<T>
@@ -1230,6 +1254,12 @@ items:
         href: networking.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 8
+      items:
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects
@@ -1242,6 +1272,8 @@ items:
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
+      - name: --output option no longer is valid for solution-level commands
+        href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: .NET 6
       items:
       - name: -p option for `dotnet run` is deprecated
@@ -1362,6 +1394,14 @@ items:
       items:
       - name: Anchor layout changes
         href: windows-forms/8.0/anchor-layout.md
+      - name: ExceptionCollection ctor throws ArgumentException
+        href: windows-forms/8.0/exceptioncollection.md
+      - name: Forms scale according to AutoScaleMode
+        href: windows-forms/8.0/top-level-window-scaling.md
+      - name: ImageList.ColorDepth default is Depth32Bit
+        href: windows-forms/8.0/imagelist-colordepth.md
+      - name: TableLayoutStyleCollection throws ArgumentException
+        href: windows-forms/8.0/tablelayoutstylecollection.md
       - name: Top-level forms scale size to DPI
         href: windows-forms/8.0/forms-scale-size-to-dpi.md
       - name: WFDEV002 obsoletion is now an error

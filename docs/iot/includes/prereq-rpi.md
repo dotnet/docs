@@ -1,1 +1,1 @@
- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)
+ Raspberry Pi (2 or greater) with [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system). Raspberry Pi OS Lite (64-bit) is recommended.

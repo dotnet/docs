@@ -41,8 +41,8 @@ namespace builtin_types
         // <ImmutableRecord>
         public record Person
         {
-            public string FirstName { get; init; } = default!;
-            public string LastName { get; init; } = default!;
+            public required string FirstName { get; init; }
+            public required string LastName { get; init; }
         };
         // </ImmutableRecord>
 
@@ -61,8 +61,8 @@ namespace builtin_types
         // <MutableRecord>
         public record Person
         {
-            public string FirstName { get; set; } = default!;
-            public string LastName { get; set; } = default!;
+            public required string FirstName { get; set; }
+            public required string LastName { get; set; }
         };
         // </MutableRecord>
 

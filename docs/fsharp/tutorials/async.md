@@ -330,7 +330,7 @@ What to watch out for:
 
 ### Interoperate with .NET
 
-If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../csharp/programming-guide/concepts/async/index.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
+If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../csharp/language-reference/keywords/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
 
 One option is to switch to writing .NET tasks directly using `task { }`. Alternatively, you can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
 

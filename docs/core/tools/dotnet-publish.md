@@ -58,6 +58,13 @@ dotnet publish -p:PublishProfile=FolderProfile
 
 The preceding example uses the *FolderProfile.pubxml* file that is found in the *\<project_folder>/Properties/PublishProfiles* folder. If you specify a path and file extension when setting the `PublishProfile` property, they are ignored. MSBuild by default looks in the *Properties/PublishProfiles* folder and assumes the *pubxml* file extension. To specify the path and filename including extension, set the `PublishProfileFullPath` property instead of the `PublishProfile` property.
 
+In the *.pubxml* file:
+
+* `PublishUrl` is used by Visual Studio to denote the Publish target.
+* `PublishDir` is used by the CLI to denote the Publish target.
+
+If you want the scenario to work in all places, you can initialize both these properties to the same value in the *.pubxml* file. When GitHub issue [dotnet/sdk#20931](https://github.com/dotnet/sdk/issues/20931) is resolved, only one of these properties will need to be set.
+
 The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishReadyToRun`
@@ -147,6 +154,10 @@ For more information, see the following resources:
   ```xml
   <DefaultItemExcludes>$(DefaultItemExcludes);publishoutput**</DefaultItemExcludes>
   ```
+
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit an error due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies.
 
   - .NET Core 3.x SDK and later
 

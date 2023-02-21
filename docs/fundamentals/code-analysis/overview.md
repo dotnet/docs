@@ -176,9 +176,6 @@ Follow these steps to enable code-style analysis on build:
    dotnet_diagnostic.IDE0040.severity = silent
    ```
 
-> [!NOTE]
-> The code-style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
-
 ## Suppress a warning
 
 One way to suppress a rule violation is to set the severity option for that rule ID to `none` in an EditorConfig file. For example:

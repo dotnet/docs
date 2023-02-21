@@ -161,7 +161,7 @@ The `Span<T>` type stores a reference through which it accesses the consecutive 
   
 ## See also
 
-- [Write safe efficient code](../../write-safe-efficient-code.md)
+- [Avoid allocations](../../advanced-topics/performance/index.md)
 - [Ref locals](../statements/declarations.md#ref-locals)
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
 - [Method Parameters](method-parameters.md)

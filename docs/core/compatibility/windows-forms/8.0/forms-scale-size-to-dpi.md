@@ -62,3 +62,7 @@ If the new behavior is problematic for you, you can opt out by setting `System.W
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [Forms scale according to AutoScaleMode](top-level-window-scaling.md)

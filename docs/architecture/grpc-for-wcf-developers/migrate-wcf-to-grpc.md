@@ -8,9 +8,9 @@ ms.date: 12/14/2021
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-This chapter will describe how to work with ASP.NET Core 6.0 gRPC projects and demonstrate migrating different types of Windows Communication Foundation (WCF) services to the gRPC equivalent:
+This chapter will describe how to work with ASP.NET Core 7.0 gRPC projects and demonstrate migrating different types of Windows Communication Foundation (WCF) services to the gRPC equivalent:
 
-- Create an ASP.NET Core 6.0 gRPC project.
+- Create an ASP.NET Core 7.0 gRPC project.
 - Simple request-reply operations to gRPC unary RPC.
 - One-way operations to gRPC client streaming RPC.
 - Full-duplex services to gRPC bidirectional streaming RPC.

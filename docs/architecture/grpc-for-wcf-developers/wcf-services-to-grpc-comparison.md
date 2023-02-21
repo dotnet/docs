@@ -19,7 +19,7 @@ The previous chapter gave you a good look at Protobuf and how gRPC handles messa
 
 ## gRPC example
 
-When you create a new ASP.NET Core 6.0 gRPC project from Visual Studio 2022 or the command line, the gRPC equivalent of "Hello World" is generated for you. It consists of a `greeter.proto` file that defines the service and its messages, and a `GreeterService.cs` file with an implementation of the service.
+When you create a new ASP.NET Core 7.0 gRPC project from Visual Studio 2022 or the command line, the gRPC equivalent of "Hello World" is generated for you. It consists of a `greeter.proto` file that defines the service and its messages, and a `GreeterService.cs` file with an implementation of the service.
 
 ```protobuf
 syntax = "proto3";

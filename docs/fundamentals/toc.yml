@@ -147,6 +147,12 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new in .NET
   items:
+  - name: .NET 8
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-8.md
+    - name: Breaking changes
+      href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET 7
     items:
     - name: What's new
@@ -539,6 +545,8 @@ items:
           href: ../standard/serialization/system-text-json/required-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json/invalid-json.md
+        - name: Handle missing members
+          href: ../standard/serialization/system-text-json/missing-members.md
         - name: Handle overflow JSON, use JsonElement or JsonNode
           href: ../standard/serialization/system-text-json/handle-overflow.md
         - name: Preserve references, handle circular references

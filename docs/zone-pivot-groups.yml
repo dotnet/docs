@@ -38,6 +38,20 @@ groups:
       title: Visual Studio Code
     - id: cli
       title: Command line interface
+- id: dotnet-preview-version
+  title: .NET version
+  prompt: Choose a .NET version
+  pivots:
+    - id: dotnet-8-0
+      title: .NET 8 Preview
+    - id: dotnet-7-0
+      title: .NET 7
+    - id: dotnet-6-0
+      title: .NET 6
+    - id: dotnet-5-0
+      title: .NET 5
+    - id: dotnet-core-3-1
+      title: .NET Core 3.1
 - id: dotnet-version
   title: .NET version
   prompt: Choose a .NET version

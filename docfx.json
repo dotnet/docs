@@ -235,12 +235,11 @@
                 "docs/core/tutorials/**.md": "tutorial",
                 "docs/csharp/getting-started/**/*.md": "overview",
                 "docs/csharp/how-to/**/*.md": "how-to",
-                "docs/csharp/language-reference/**/*.md": "reference",
+                "docs/csharp/language-reference/**/*.md": "language-reference",
                 "docs/csharp/language-reference/compiler-messages/*.md": "error-reference",
                 "docs/csharp/linq/*.md": "how-to",
                 "docs/csharp/misc/*.md": "error-reference",
                 "docs/csharp/programming-guide/**": "conceptual",
-                "docs/csharp/programming-guide/xmldoc/**": "reference",
                 "docs/csharp/roslyn-sdk/get-started/*.md": "tutorial",
                 "docs/csharp/roslyn-sdk/tutorials/*.md": "tutorial",
                 "docs/csharp/tour-of-csharp/tutorials/**": "tutorial",
@@ -271,8 +270,8 @@
                 "docs/standard/**/*how-to*.md": "how-to",
                 "docs/standard/base-types/*.md": "how-to",
                 "docs/standard/data/sqlite/*.md": "reference",
-                "docs/visual-basic/language-reference/**/*.md": "reference",
-                "docs/visual-basic/reference/**/*.md": "reference",
+                "docs/visual-basic/language-reference/**/*.md": "language-reference",
+                "docs/visual-basic/reference/**/*.md": "language-reference",
                 "docs/visual-basic/misc/bc*.md": "error-reference",
                 "docs/visual-basic/**/troubleshooting*.md": "troubleshooting",
                 "docs/whats-new/**/**.md": "reference",
@@ -896,6 +895,10 @@
             },
             "open_to_public_contributors": {
                 "docs/standard/design-guidelines/**.md": false
+            },
+            "ms.custom": {
+                "docs/framework/**/*.md": "UpdateFrequency5",
+                "docs/visual-basic/**/*.md": "UpdateFrequency5"
             }
         },
         "dest": "_site",

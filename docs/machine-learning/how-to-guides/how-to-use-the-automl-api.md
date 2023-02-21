@@ -721,5 +721,5 @@ To determine feature importance using AutoML:
     ```csharp
     var featureImportance = 
         pfi.Select(x => Tuple.Create(x.Key, x.Value.Regression.RSquared))
-            .OrderByDescending(x => x.Item2)    
+            .OrderByDescending(x => x.Item2);    
     ```

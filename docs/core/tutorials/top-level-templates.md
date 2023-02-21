@@ -140,7 +140,3 @@ class Program
 > The content of the `Program.cs` file might be different to match the code style defined in the global Visual Studio text editor settings or the `EditorConfig` file.
 >
 > For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) and [Options, Text Editor, C#, Advanced](/visualstudio/ide/reference/options-text-editor-csharp-advanced).
-
-## Template feedback
-
-[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) was introduced in .NET 6. Add an up or down vote in [GitHub issue #27420](https://github.com/dotnet/docs/issues/27420) to let us know if you support the use of this feature in project templates.

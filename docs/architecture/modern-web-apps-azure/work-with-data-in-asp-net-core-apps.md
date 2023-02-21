@@ -54,10 +54,12 @@ Your DbContext must have a constructor that accepts `DbContextOptions` and pass 
 
 ### Configuring EF Core
 
-In your ASP.NET Core application, you'll typically configure EF Core in `Program.cs` with your application's other dependencies. EF Core uses a `DbContextOptionsBuilder`, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code:
+In your ASP.NET Core application, you'll typically configure EF Core in _Program.cs_ with your application's other dependencies. EF Core uses a `DbContextOptionsBuilder`, which supports several helpful extension methods to streamline its configuration. To configure CatalogContext to use a SQL Server database with a connection string defined in Configuration, you would add the following code:
 
 ```csharp
-builder.Services.AddDbContext<CatalogContext>(options => options.UseSqlServer (builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<CatalogContext>(
+    options => options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
 ```
 
 To use the in-memory database:
@@ -148,7 +150,7 @@ _Lazy loading_ is a feature that automatically loads related data as it is refer
 
 [Avoid Lazy Loading Entities in Web Applications](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
 
-It's a good idea to test your application while examining the actual database queries it makes. Under certain circumstances, EF Core may make many more queries or a more expensive query than is optimal for the application. One such problem is known as a [Cartesian Explosion](https://learn.microsoft.com/en-us/ef/core/querying/single-split-queries#cartesian-explosion). The EF Core team makes available the [`AsSplitQuery` method](https://learn.microsoft.com/en-us/ef/core/querying/single-split-queries#split-queries) as one of several ways to tune runtime behavior.
+It's a good idea to test your application while examining the actual database queries it makes. Under certain circumstances, EF Core may make many more queries or a more expensive query than is optimal for the application. One such problem is known as a [Cartesian Explosion](/ef/core/querying/single-split-queries#cartesian-explosion). The EF Core team makes available the [AsSplitQuery method](/ef/core/querying/single-split-queries#split-queries) as one of several ways to tune runtime behavior.
 
 ### Encapsulating data
 
@@ -467,7 +469,7 @@ public class CachedCatalogService : ICatalogService
 }
 ```
 
-To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in `Program.cs`:
+To configure the application to use the cached version of the service, but still allow the service to get the instance of CatalogService it needs in its constructor, you would add the following lines in _Program.cs_:
 
 ```csharp
 builder.Services.AddMemoryCache();

@@ -90,3 +90,9 @@ For further details on regression metrics, read the following articles:
 |----------|-----------------------|-----------|
 |**Area Under ROC Curve**|Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories|
 |**Detection Rate At False Positive Count**|Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item.|**Values closer to 1 are better**. If there are no false positives, then this value is 1|
+
+## Evaluation metrics for Sentence Similarity
+
+| Metric   |      Description      |  Look for |
+|----------|-----------------------|-----------|
+| **Pearson Correlation** |  [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) also known as correlation coefficient measures the dependence or relationship between two sets of data. | **Values closer to 1 are most similar**. This metric ranges from -1 to 1. An absolute value of 1 implies both datasets are identical. A value of 0 implies there is no relationship between the two sets of data.  |

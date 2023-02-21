@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.WindowsService", "windo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.CloudService", "cloud-service\App.CloudService.csproj", "{D27DBD6D-3E1D-4A3F-9653-5EBFABA22123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.SignalCompletionService", "signal-completion-service\App.SignalCompletionService\App.SignalCompletionService.csproj", "{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.SignalCompletionService", "signal-completion-service\App.SignalCompletionService\App.SignalCompletionService.csproj", "{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "App.WindowsService.Installer", "windows-service-installer\App.WindowsService.Installer\App.WindowsService.Installer.vdproj", "{D0114B0A-E567-4B3D-BF56-398381706B0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,8 @@ Global
 		{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Debug|Any CPU.ActiveCfg = Debug
+		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,18 +31,17 @@ Imagine that you're running the [Orleans GPS Tracker sample app](/samples/dotnet
 
 ```dotnetcli
 Press p to pause, r to resume, q to quit.
-    Status: Running                                                    5,113
-
+    Status: Running
 [Microsoft.Orleans]
-    orleans-app-requests-latency-bucket (Count / 1 sec)
+    orleans-app-requests-latency-bucket (Count / 1 sec)                    0
         duration=10000ms                                                   0
         duration=1000ms                                                    0
         duration=100ms                                                     0
         duration=10ms                                                      0
         duration=15000ms                                                   0
         duration=1500ms                                                    0
-        duration=1ms                                                       0
-        duration=2000ms                                                2,530
+        duration=1ms                                                   2,530
+        duration=2000ms                                                    0
         duration=200ms                                                     0
         duration=2ms                                                       0
         duration=400ms                                                     0
@@ -53,30 +52,29 @@ Press p to pause, r to resume, q to quit.
         duration=800ms                                                     0
         duration=8ms                                                       0
         duration=9223372036854775807ms                                     0
-    orleans-app-requests-latency-count (Count / 1 sec)                     0
-    orleans-app-requests-latency-sum (Count / 1 sec)                   2,530
-    orleans-catalog-activation-working-set                                 0
-    orleans-catalog-activations                                           36
-    orleans-consistent-ring-range-percentage-average                      38
+    orleans-app-requests-latency-count (Count / 1 sec)                 2,530
+    orleans-app-requests-latency-sum (Count / 1 sec)                       0
+    orleans-catalog-activation-working-set                                36
+    orleans-catalog-activations                                           38
+    orleans-consistent-ring-range-percentage-average                     100
     orleans-consistent-ring-range-percentage-local                       100
-    orleans-consistent-ring-size                                         100
-    orleans-directory-cache-size                                           1
-    orleans-directory-partition-size                                      27
-    orleans-directory-ring-local-portion-average-percentage               26
-    orleans-directory-ring-local-portion-distance                        100
+    orleans-consistent-ring-size                                           1
+    orleans-directory-cache-size                                          27
+    orleans-directory-partition-size                                      26
+    orleans-directory-ring-local-portion-average-percentage              100
+    orleans-directory-ring-local-portion-distance                          0
     orleans-directory-ring-local-portion-percentage                        0
-    orleans-directory-ring-size                                            0
-    orleans-gateway-received (Count / 1 sec)                           1,295
-    orleans-gateway-sent (Count / 1 sec)                               1,291
-    orleans-messaging-processing-activation-data                       2,582
+    orleans-directory-ring-size                                        1,295
+    orleans-gateway-received (Count / 1 sec)                           1,291
+    orleans-gateway-sent (Count / 1 sec)                               2,582
+    orleans-messaging-processing-activation-data                           0
     orleans-messaging-processing-dispatcher-forwarded (Count / 1           0
-    orleans-messaging-processing-dispatcher-processed (Count / 1           0
-        Direction=Request,Status=Ok                                    2,543
-    orleans-messaging-processing-dispatcher-received (Count / 1        2,582
-        Context=Grain,Direction=Request                                1,271
+    orleans-messaging-processing-dispatcher-processed (Count / 1       2,543
+        Direction=Request,Status=Ok                                    2,582
+    orleans-messaging-processing-dispatcher-received (Count / 1        1,271
+        Context=Grain,Direction=Request                                1,291
         Context=None,Direction=Request                                 1,291
-    orleans-messaging-processing-ima-enqueued (Count / 1 sec)          1,291
-                                                                       5,113
+    orleans-messaging-processing-ima-enqueued (Count / 1 sec)          5,113
 ```
 
 For more information, see [Investigate performance counters (dotnet-counters)](../../../core/diagnostics/dotnet-counters.md).
@@ -107,8 +105,6 @@ After the exporter has been configured, and your app has been built, you must ca
 ```csharp
 WebApplication app = builder.Build();
 
-// omitted for brevity
-
 app.MapPrometheusScrapingEndpoint();
 app.Run();
 ```
@@ -119,8 +115,8 @@ Distributed tracing is a set of tools and practices to monitor and troubleshoot 
 
 Regardless of the distributed tracing exporter you choose, you'll call:
 
-- <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: To enable distributed tracing for the silo (on the <xref:Orleans.Hosting.ISiloBuilder>).
-<xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: To enable distributed tracing for the client (on the <xref:Orleans.Hosting.IClientBuilder>).
+- <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: To enable distributed tracing for the silo.
+<xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: To enable distributed tracing for the client.
 
 Relying again on the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
 

@@ -8,13 +8,9 @@ ms.date: 11/19/2021
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-The Official .NET Docker images are Docker images created and optimized by Microsoft. They are publicly available in the Microsoft repositories on [Docker Hub](https://hub.docker.com/u/microsoft/). Each repository can contain multiple images, depending on .NET versions, and depending on the OS and versions (Linux Debian, Linux Alpine, Windows Nano Server, Windows Server Core, etc.).
+The Official .NET Docker images are Docker images created and optimized by Microsoft. They are publicly available on [Microsoft Artifact Registry](https://mcr.microsoft.com/). You can search over the catalog to find all .NET image repositories, for example [.NET SDK](https://mcr.microsoft.com/product/dotnet/sdk/about) repository. 
 
-Since .NET Core 2.1, all the .NET Core or later images, including for ASP.NET Core are available at Docker Hub at the .NET image repository: <https://hub.docker.com/_/microsoft-dotnet/>.
-
-Since May 2018, Microsoft images are being [syndicated in the Microsoft Container Registry](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/). The official catalog is still only available in Docker Hub, and there you'll find the updated address to pull the image.
-
-Most image repositories provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distribution or Windows version).
+Each repository can contain multiple images, depending on .NET versions, and depending on the OS and versions (Linux Debian, Linux Alpine, Windows Nano Server, Windows Server Core, etc.). Image repositories provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distribution or Windows version).
 
 ## .NET and Docker image optimizations for development versus production
 
@@ -40,7 +36,7 @@ In this optimized image, you put only the binaries and other content needed to r
 
 Although there are multiple versions of the .NET and ASP.NET Core images, they all share one or more layers, including the base layer. Therefore, the amount of disk space needed to store an image is small; it consists only of the delta between your custom image and its base image. The result is that it is quick to pull the image from your registry.
 
-When you explore the .NET image repositories at Docker Hub, you will find multiple image versions classified or marked with tags. These tags help to decide which one to use, depending on the version you need, like those in the following table:
+When you explore the .NET image repositories at Microsoft Artifact Registry, you will find multiple image versions classified or marked with tags. These tags help to decide which one to use, depending on the version you need, like those in the following table:
 
 | Image | Comments |
 |-------|----------|

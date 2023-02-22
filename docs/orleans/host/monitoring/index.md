@@ -116,7 +116,7 @@ Distributed tracing is a set of tools and practices to monitor and troubleshoot 
 Regardless of the distributed tracing exporter you choose, you'll call:
 
 - <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: To enable distributed tracing for the silo.
-<xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: To enable distributed tracing for the client.
+- <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: To enable distributed tracing for the client.
 
 Relying again on the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
 

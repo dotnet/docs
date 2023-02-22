@@ -8,9 +8,7 @@ ms.date: 02/17/2023
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
-
-[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
+This article describes how to install .NET on Ubuntu. When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
@@ -42,11 +40,11 @@ I want to install .NET because...
 
   - **I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0:**
 
-    Install .NET through the Ubuntu feed. For more information, see [Install the .NET SDK or the .NET Runtime on Ubuntu](linux-ubuntu-2204.md).
+    Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md) and [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
 
   - **I'm using Ubuntu 22.04, and I only need .NET 6.0:**
 
-    Install .NET through the Ubuntu feed. For more information, see [Install the .NET SDK or the .NET Runtime on Ubuntu](linux-ubuntu-2204.md)
+    Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
 
   - **I'm using a different Ubuntu version or I need an out-of-support .NET version:**
 
@@ -103,6 +101,9 @@ After you've [registered the Microsoft package repository](#register-the-microso
 
 If you want to install an unsupported version of .NET, check the [Supported distributions](#supported-distributions) section to see if that version of .NET is available. Then, substitute the **version** of .NET you want to install. For example, to install ASP.NET Core 2.1, use the package name `aspnetcore-runtime-2.1`.
 
+> [!TIP]
+> If you're not creating .NET apps, install the ASP.NET Core runtime as it includes the .NET runtime as well.
+
 ## Uninstall .NET
 
 If you installed .NET through a package manager, uninstall in the same way with the `apt-get remove` command:
@@ -111,7 +112,7 @@ If you installed .NET through a package manager, uninstall in the same way with 
 sudo apt-get remove dotnet-sdk-6.0
 ```
 
-For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md#uninstall-net?pivots=os-linux).
+For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots=os-linux#uninstall-net).
 
 ## Install preview versions
 

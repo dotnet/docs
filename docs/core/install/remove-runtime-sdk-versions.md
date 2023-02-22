@@ -37,8 +37,16 @@ Select any versions you want to remove from your computer and click **Uninstall*
 
 The best way for you to uninstall .NET is to mirror the action you used to install .NET. The specifics depend on your chosen Linux distribution and the installation method.
 
+Preview releases are manually installed, and must be manually uninstalled. For more information, see the [Scripted or manual](#scripted-or-manual) section.
+
 > [!IMPORTANT]
 > For Red Hat installations, consult the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/6.0/).
+
+You can remove the following types if .NET installations:
+
+- [Package manager](#package-manager)
+- [Manually or scripted installs](#scripted-or-manual)
+- [Snap installs](#snap)
 
 ### Package manager
 
@@ -91,6 +99,10 @@ sudo rm -rf /usr/share/dotnet/sdk/6.0.406
 
 > [!IMPORTANT]
 > The version directories may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release may have different versions. For example, you may have installed ASP.NET Core 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. Each has a different versioned directory. For more information, see [Overview of how .NET is versioned](../versions/index.md).
+
+### Snap
+
+TODO
 
 ### Prior to .NET Core 2.0
 

@@ -28,7 +28,11 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-## Deciding how to install .NET
+## Decide how to install .NET
+
+For each version of Ubuntu, the Microsoft package repository contains every version of .NET that is currently, or was previously, supported. Some versions of Ubuntu contain .NET in the Ubuntu package feed. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
+
+It's recommended that you use either the Microsoft feed or the Ubuntu feed, to manage .NET. Mixing the package feeds for .NET is an advanced scenario, and is covered in the TODO section.
 
 Because .NET is available in the Ubuntu feed, but not every version of .NET nor every version of Ubuntu supports the feed for .NET, you may find that you need to use the Microsoft package repository. It's recommended that you avoid using both feeds for .NET, as this leads to problems when apps try to resolve a specific version of .NET.
 
@@ -86,7 +90,7 @@ sudo apt update
 
 ## Install .NET
 
-After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), you can install .NET through the package manager with the `apt install` command. Use the name of the package you want to install, as a parameter to that command. For example, to install .NET SDK 7.0, use the command `apt install dotnet-sdk-7.0`. The following table lists the currently supported .NET packages:
+After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or your version of Ubuntu's default feed supports the .NET package, you can install .NET through the package manager with the `apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 7.0, use the command `apt install dotnet-sdk-7.0`. The following table lists the currently supported .NET packages:
 
 || Product      | Type    | Package                  |
 |---------|--------------|---------|--------------------------|
@@ -97,11 +101,17 @@ After you've [registered the Microsoft package repository](#register-the-microso
 | **6.0**    | .NET         | Runtime | `dotnet-runtime-6.0`     |
 | **6.0**    | .NET         | SDK     | `dotnet-sdk-6.0`         |
 
-If you want to install an unsupported version of .NET, check the [Supported distributions](#supported-distributions) section to make sure that the specific version of .NET is available in the version of Ubuntu you're using. Then, substitute the version of .NET you want to install. For example, to install ASP.NET Core 2.1, use the package name `aspnetcore-runtime-2.1`.
+If you want to install an unsupported version of .NET, check the [Supported distributions](#supported-distributions) section to see if that version of .NET is available. Then, substitute the **version** of .NET you want to install. For example, to install ASP.NET Core 2.1, use the package name `aspnetcore-runtime-2.1`.
 
 ## Uninstall .NET
 
-TODO
+If you installed .NET through a package manager, uninstall in the same way with the `apt-get remove` command:
+
+```bash
+sudo apt-get remove dotnet-sdk-6.0
+```
+
+For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md#uninstall-net?pivots=os-linux).
 
 ## Install preview versions
 

@@ -75,7 +75,7 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
   JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
   ```
 
-  - JsonSerializer.MakeReadOnly() gives you explicit control over when a JsonSerializerOptions instance is frozen. (Also check it with IsReadOnly.)
+- `JsonSerializer.MakeReadOnly()` gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (Also check it with `IsReadOnly`.)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 

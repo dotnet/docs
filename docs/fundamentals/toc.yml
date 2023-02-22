@@ -22,7 +22,19 @@ items:
       - name: Overview
         href: ../core/install/linux.md
       - name: Ubuntu
-        href: ../core/install/linux-ubuntu.md
+        items:
+        - name: Overview
+          href: ../core/install/linux-ubuntu.md
+        - name: "22.10"
+          href: ../core/install/linux-ubuntu-2210.md
+        - name: "22.04"
+          href: ../core/install/linux-ubuntu-2204.md
+        - name: "20.04"
+          href: ../core/install/linux-ubuntu-2004.md
+        - name: "18.04"
+          href: ../core/install/linux-ubuntu-1604.md
+        - name: "16.04"
+          href: ../core/install/linux-ubuntu-1604.md
       - name: Alpine
         href: ../core/install/linux-alpine.md
       - name: CentOS

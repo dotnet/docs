@@ -21,10 +21,10 @@ Orleans leverages [Microsoft.Extensions.Logging](https://www.nuget.org/packages/
 
 Metrics are numerical measurements reported over time, most often used to monitor the health of an application and generate alerts. For more information, see [Metrics in .NET](../../../core/diagnostics/metrics.md). Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. The metrics are exposed to the [OpenTelemetry](https://opentelemetry.io) project, which exports the metrics to various monitoring systems.
 
-To monitor your app without making any code changes at all, you can use the `dotnet counters` .NET diagnostic tool. To monitor Orleans <xref:System.Diagnostics.ActivitySource> counters, given your desired `{NameSpace}` to monitor, use the `dotnet counters monitor` command as shown:
+To monitor your app without making any code changes at all, you can use the `dotnet counters` .NET diagnostic tool. To monitor Orleans <xref:System.Diagnostics.ActivitySource> counters, given your desired `{ProcessName}` to monitor, use the `dotnet counters monitor` command as shown:
 
 ```dotnetcli
-dotnet counters monitor -n {NameSpace} --counters Microsoft.Orleans
+dotnet counters monitor -n {ProcessName} --counters Microsoft.Orleans
 ```
 
 Imagine that you're running the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), and in a separate terminal, you're monitoring it with the `dotnet counters monitor` command. The following output is typical:
@@ -102,9 +102,25 @@ builder.Services.AddOpenTelemetry()
 
 The `AddPrometheusExporter` method ensures that the `PrometheusExporter` is added to the `builder`. Orleans makes use of a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. The `AddMeter` method is used to specify the name of the meter to subscribe to, in this case `"Microsoft.Orleans"`.
 
+After the exporter has been configured, and your app has been built, you must call `MapPrometheusScrapingEndpoint` on the `IEndpointRouteBuilder` (the `app` instance) to expose the metrics to Prometheus. For example:
+
+```csharp
+WebApplication app = builder.Build();
+
+// omitted for brevity
+
+app.MapPrometheusScrapingEndpoint();
+app.Run();
+```
+
 ## Distributed tracing
 
 Distributed tracing is a set of tools and practices to monitor and troubleshoot distributed applications. Distributed tracing is a key component of observability, and it's a critical tool for developers to understand the behavior of their apps. Orleans also supports distributed tracing with [OpenTelemetry](https://opentelemetry.io).
+
+Regardless of the distributed tracing exporter you choose, you'll call:
+
+- <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: To enable distributed tracing for the silo (on the <xref:Orleans.Hosting.ISiloBuilder>).
+<xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: To enable distributed tracing for the client (on the <xref:Orleans.Hosting.IClientBuilder>).
 
 Relying again on the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
 
@@ -190,3 +206,10 @@ clientBuilder.AddApplicationInsightsTelemetryConsumer(telemetryConfiguration);
 ```
 
 :::zone-end
+
+## See also
+
+- [Logging in .NET](../../../core/extensions/logging.md)
+- [.NET metrics](../../../core/diagnostics/metrics.md)
+- [Investigate performance counters (dotnet-counters)](../../../core/diagnostics/dotnet-counters.md)
+- [.NET distributed tracing](../../../core/diagnostics/distributed-tracing.md)

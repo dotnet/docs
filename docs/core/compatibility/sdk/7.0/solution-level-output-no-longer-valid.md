@@ -29,7 +29,7 @@ Previously, if you specified `--output`/`-o` when using a solution file, the out
 
 ## New behavior
 
-The `dotnet` CLI will error if the `--output`/`-o` option is used with a solution file. Starting in the 7.0.201 SDK, a warning will be emitted instead, and in the case of `dotnet pack` no behavior change at all will occur.
+The `dotnet` CLI will error if the `--output`/`-o` option is used with a solution file. Starting in the 7.0.201 SDK, a warning will be emitted instead, and in the case of `dotnet pack` no warning or error will be generated.
 
 ## Type of breaking change
 
@@ -39,7 +39,7 @@ This breaking change may require modifications to build scripts and continuous i
 
 This change was made because the semantics of the `OutputPath` property, which is controlled by the `--output`/`-o` option, aren't well defined for solutions. Projects built in this way will have their output placed in the same directory, which is inconsistent and has led to a number of user-reported issues.
 
-When a solution is built, any properties passed in (either explicitly via the `--property` option to MSBuild or implicitly via `dotnet` CLI options like `-r` or `-c`, which are translated to MSBuild properties) are applied globally to all projects that are part of that solution's chosen build configuration. This means that the `OutputPath` property is set to the same value for all projects, which means that all projects will have their output placed in the same directory. Depending on the complexity of the projects in the solution, different and inconsistent results may occur. Let's take a look at some examples of different project shapes and how they are affected by a shared `OutputPath`.
+When a solution is built with the `--output` option, the `OutputPath` property is set to the same value for all projects, which means that all projects will have their output placed in the same directory. Depending on the complexity of the projects in the solution, different and inconsistent results may occur. Let's take a look at some examples of different solution shapes and how they are affected by a shared `OutputPath`.
 
 ### Single project, single TargetFramework
 
@@ -59,9 +59,9 @@ Now take the same chain of projects and add a `net6.0` `TargetFramework` build t
 
 ### Multiple apps
 
-So far we have been looking at scenarios with a linear dependency graph - but many solutions may contain multiple related applications. This raises a new way to get inconsistent outputs in the `OutputPath` - inconsistent resolution of `PackageReference`s across projects.  NuGet helps ensure that within a project and its' `ProjectReference`s, any `PackageReference`s and transitive dependencies (meaning dependencies of `PackageReference`s declared in a project file) are unified to the same version. Because the unification is done within the context of a single project and its dependent projects, this means it is possible to resolve different versions of a package when two separate top-level projects are built. If the versions resolved in this case are different enough, then runtime errors can occur.
+So far we have been looking at scenarios with a linear dependency graph - but many solutions may contain multiple related applications.  This means that multiple apps may be built concurrently to the same output folder.  If the apps include a dependency file with the same name, then the build may intermittently fail when multiple projects try to write to that file in the output path concurrently.
 
-This can also happen if you have different explicit versions of `PackageReference`s in the top-level projects of the solution. Because a solution-level build or publish will copy all assets into a single directory, whatever project was copied last will decide what version of the `PackageReference` is actually in use, especially if the entire `OutputPath` is then deployed to a production environment.
+If multiple apps depend on different versions of a file, then even if the build succeeds, which version of the file is copied to the output path may be non-deterministic.  This can happen when the projects depend (possibly transitively) on different versions of a NuGet package.  Within a single project, NuGet helps ensure that its dependencies (including any transitive dependencies through NuGet packages and/or project references) are unified to the same version.  Because the unification is done within the context of a single project and its dependent projects, this means it is possible to resolve different versions of a package when two separate top-level projects are built.  If the project that depends on the higher version copies the dependency last, then often the apps will run successfully.  However, if the lower version is copied last, then the app that was compiled against the higher version will fail to load the assembly at runtime.  Because the version that is copied can be non-deterministic, this can lead to sporadic, unreliable builds where it is very difficult to diagnose the issue.
 
 ## Other examples
 

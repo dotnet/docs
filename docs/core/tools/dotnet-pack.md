@@ -99,7 +99,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   - .NET 7.0.200 SDK
 
-    If you specify the `--output` option when running this command on a solution, the CLI will emit an error due to the unclear semantics of the output path. This is a regression and was removed in 7.0.201 and above versions of the .NET SDK.
+    In the 7.0.200 SDK, if you specify the `--output` option when running this command on a solution, the CLI will emit an error. This is a regression and was fixed in 7.0.201 and later versions of the .NET SDK.
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 

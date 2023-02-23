@@ -29,7 +29,7 @@
 | Event Grid | NuGet [4.13.0](https://www.nuget.org/packages/Azure.Messaging.EventGrid/4.13.0) | [docs](/dotnet/api/overview/azure/Messaging.EventGrid-readme) | GitHub [4.13.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventGrid_4.13.0/sdk/eventgrid/Azure.Messaging.EventGrid/) |
 | Event Hubs | NuGet [5.7.5](https://www.nuget.org/packages/Azure.Messaging.EventHubs/5.7.5) | [docs](/dotnet/api/overview/azure/Messaging.EventHubs-readme) | GitHub [5.7.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventHubs_5.7.5/sdk/eventhub/Azure.Messaging.EventHubs/) |
 | Event Hubs - Event Processor | NuGet [5.7.5](https://www.nuget.org/packages/Azure.Messaging.EventHubs.Processor/5.7.5) | [docs](/dotnet/api/overview/azure/Messaging.EventHubs.Processor-readme) | GitHub [5.7.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventHubs.Processor_5.7.5/sdk/eventhub/Azure.Messaging.EventHubs.Processor/) |
-| FarmBeats | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Verticals.AgriFood.Farming/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Verticals.AgriFood.Farming_1.0.0-beta.1/sdk/farmbeats/Azure.Verticals.AgriFood.Farming/) |
+| FarmBeats | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Verticals.AgriFood.Farming/1.0.0-beta.2) |  | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Verticals.AgriFood.Farming_1.0.0-beta.2/sdk/farmbeats/Azure.Verticals.AgriFood.Farming/) |
 | Form Recognizer | NuGet [4.0.0](https://www.nuget.org/packages/Azure.AI.FormRecognizer/4.0.0) | [docs](/dotnet/api/overview/azure/AI.FormRecognizer-readme) | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.FormRecognizer_4.0.0/sdk/formrecognizer/Azure.AI.FormRecognizer/) |
 | Identity | NuGet [1.8.2](https://www.nuget.org/packages/Azure.Identity/1.8.2)<br>NuGet [1.9.0-beta.2](https://www.nuget.org/packages/Azure.Identity/1.9.0-beta.2) | [docs](/dotnet/api/overview/azure/Identity-readme) | GitHub [1.8.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.8.2/sdk/identity/Azure.Identity/)<br>GitHub [1.9.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.9.0-beta.2/sdk/identity/Azure.Identity/) |
 | Key Vault - Administration | NuGet [4.2.0](https://www.nuget.org/packages/Azure.Security.KeyVault.Administration/4.2.0)<br>NuGet [4.3.0-beta.1](https://www.nuget.org/packages/Azure.Security.KeyVault.Administration/4.3.0-beta.1) | [docs](/dotnet/api/overview/azure/Security.KeyVault.Administration-readme) | GitHub [4.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.KeyVault.Administration_4.2.0/sdk/keyvault/Azure.Security.KeyVault.Administration/)<br>GitHub [4.3.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.KeyVault.Administration_4.3.0-beta.1/sdk/keyvault/Azure.Security.KeyVault.Administration/) |
@@ -255,7 +255,7 @@
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Management - Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.2-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.2-Preview) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.3-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.3-Preview) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.2.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce/1.0.0) |  |  |
@@ -272,7 +272,7 @@
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites/1.0.0) |  |  |
 | Microsoft.Azure.Management.StoragePool | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StoragePool/1.0.0) |  |  |
-| Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.1) |  |  |
+| Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.4) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
 | Purview Share | NuGet [1.0.3-beta.20](https://www.nuget.org/packages/Azure.Analytics.Purview.Share/1.0.3-beta.20) |  |  |
@@ -303,7 +303,7 @@
 | Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
-| Azure.FX | NuGet [0.0.10-alpha](https://www.nuget.org/packages/Azure.FX/0.0.10-alpha) |  |  |
+| Azure.FX | NuGet [0.0.13-alpha](https://www.nuget.org/packages/Azure.FX/0.0.13-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Azure.FX.Templates/1.0.0) |  |  |
 | Batch | NuGet [15.4.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/15.4.0) |  | GitHub [15.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_15.4.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
@@ -367,7 +367,7 @@
 | Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
 | Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Functions project template pack for Microsoft Template Engine | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2408) |  | GitHub [4.0.2408](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
-| Functions runtime assemblies for App Insights logging | NuGet [3.0.33](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.33) |  | GitHub [3.0.33](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
+| Functions runtime assemblies for App Insights logging | NuGet [3.0.34](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.34) |  | GitHub [3.0.34](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
 | Functions runtime assemblies for logging | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.2) |  | GitHub [4.0.2](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.36](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.36) |  | GitHub [3.0.36](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
 | Functions timers and file triggers | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/4.0.1)<br>NuGet [5.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/5.0.0-beta.1) |  | GitHub [4.0.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/dev/src/WebJobs.Extensions) |
@@ -535,8 +535,8 @@
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0-preview1) |  |  |
-| Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.1) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.2-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.2-Preview) |  |  |
+| Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.2) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.3-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.3-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |

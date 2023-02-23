@@ -269,11 +269,11 @@ dotnet-coverage snapshot
 
 * **`-tn|--tag-name <tag-name>`**
 
-  Creates a snapshot tag name in the coverage file with current coverage information. Tag-name and tag-identifier should be provided together.
+  Creates a snapshot tag name in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
 
 * **`-tid|--tag-identifier <tag-identifier>`**
 
-  Creates a snapshot tag identifier in the coverage file with current coverage information. Tag-name and tag-identifier should be provided together.
+  Creates a snapshot tag identifier in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
 
 * **`-t|--timeout`**
 

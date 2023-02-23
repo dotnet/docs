@@ -1,7 +1,7 @@
 ---
 title: Custom grain storage sample project
 description: Explore a custom grain storage sample project written with .NET Orleans.
-ms.date: 12/08/2022
+ms.date: 02/23/2023
 zone_pivot_groups: orleans-version
 ---
 
@@ -71,6 +71,14 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
         throw new NotImplementedException();
 }
 ```
+
+Each method implements the corresponding method in the [IGrainStorage](xref:Orleans.Storage.IGrainStorage) interface, accepting a generic-type parameter for the underlying state type. The methods are:
+
+- <xref:Orleans.Storage.IGrainStorage.ReadStateAsync%2A?displayProperty=nameWithType>: to read the state of a grain.
+- <xref:Orleans.Storage.IGrainStorage.WriteStateAsync%2A?displayProperty=nameWithType>: to write the state of a grain.
+- <xref:Orleans.Storage.IGrainStorage.ClearStateAsync%2A?displayProperty=nameWithType>: to clear the state of a grain.
+
+The <xref:Orleans.ILifecycleParticipant%601.Participate%2A?displayProperty=nameWithType> method is used to subscribe to the lifecycle of the silo.
 
 Before starting the implementation, you'll create an options class containing the root directory where the grain state files are persisted. For that you'll create an options file named `FileGrainStorageOptions` containing the following:
 

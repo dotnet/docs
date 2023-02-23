@@ -8,7 +8,7 @@ ms.date: 11/19/2021
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-The Official .NET Docker images are Docker images created and optimized by Microsoft. They are publicly available on [Microsoft Artifact Registry](https://mcr.microsoft.com/). You can search over the catalog to find all .NET image repositories, for example [.NET SDK](https://mcr.microsoft.com/product/dotnet/sdk/about) repository. 
+The Official .NET Docker images are Docker images created and optimized by Microsoft. They are publicly available on [Microsoft Artifact Registry](https://mcr.microsoft.com/). You can search over the catalog to find all .NET image repositories, for example [.NET SDK](https://mcr.microsoft.com/product/dotnet/sdk/about) repository.
 
 Each repository can contain multiple images, depending on .NET versions, and depending on the OS and versions (Linux Debian, Linux Alpine, Windows Nano Server, Windows Server Core, and so on). Image repositories provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distribution or Windows version).
 

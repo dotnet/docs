@@ -2,7 +2,7 @@
 title: ".NET docs: What's new for January 2023"
 description: "What's new in the .NET docs for January 2023."
 ms.custom: January-2023
-ms.date: 02/01/2023
+ms.date: 02/24/2023
 ---
 
 # .NET docs: What's new for January 2023
@@ -13,7 +13,6 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 
 ### New articles
 
-- [Breaking changes in .NET 8](../core/compatibility/8.0.md)
 - [Backslash mapping in Unix file paths](../core/compatibility/core-libraries/8.0/file-path-backslash.md)
 - [WFDEV002 obsoletion is now an error](../core/compatibility/windows-forms/8.0/domainupdownaccessibleobject.md)
 - [AnonymousPipeServerStream.Dispose behavior for HandleInheritability.Inheritable](../core/compatibility/core-libraries/8.0/anonymouspipeserverstream-dispose.md)
@@ -24,6 +23,7 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 - [GetFolderPath behavior on Unix](../core/compatibility/core-libraries/8.0/getfolderpath-unix.md)
 - [AesGcm authentication tag size on macOS](../core/compatibility/cryptography/8.0/aesgcm-auth-tag-size.md)
 - [RSA.EncryptValue and RSA.DecryptValue are obsolete](../core/compatibility/cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md)
+- [Breaking changes in .NET 8](../core/compatibility/8.0.md)
 - [Anchor layout changes](../core/compatibility/windows-forms/8.0/anchor-layout.md)
 - [Top-level forms scale minimum and maximum size to DPI](../core/compatibility/windows-forms/8.0/forms-scale-size-to-dpi.md)
 - [WCF Client doesn't support .NET Standard](../core/compatibility/wcf-client/6.0/net-standard-2-support.md)
@@ -39,14 +39,19 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 
 ### New articles
 
-- [SYSLIB0048: RSA.EncryptValue and DecryptValue are obsolete](../fundamentals/syslib-diagnostics/syslib0048.md)
 - [Dispose Pattern](../standard/design-guidelines/dispose-pattern.md)
 - [How to use the DateOnly and TimeOnly structures](../standard/datetime/how-to-use-dateonly-timeonly.md)
+- [TLS/SSL best practices](../core/extensions/sslstream-best-practices.md)
+- [Migrate SslStream code from .NET Framework to .NET](../core/extensions/sslstream-migration-from-framework.md)
+- [Troubleshoot `SslStream` authentication issues](../core/extensions/sslstream-troubleshooting.md)
+
+## .NET tools and diagnostics
+
+### New articles
+
+- [SYSLIB0048: RSA.EncryptValue and DecryptValue are obsolete](../fundamentals/syslib-diagnostics/syslib0048.md)
 - [CA1311: Specify a culture or use an invariant version](../fundamentals/code-analysis/quality-rules/ca1311.md)
 - [CA1421: Method uses runtime marshalling when DisableRuntimeMarshallingAttribute is applied](../fundamentals/code-analysis/quality-rules/ca1421.md)
-- [TLS/SSL best practices](../core/extensions/sslstream-best-practices.md)
-- [Migrate SSL code from .NET Framework to .NET](../core/extensions/sslstream-migration-from-framework.md)
-- [Troubleshoot `SslStream` authentication issues](../core/extensions/sslstream-troubleshooting.md)
 
 ### Updated articles
 
@@ -58,8 +63,8 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 ### Updated articles
 
 - [F# code formatting guidelines](../fsharp/style-guide/formatting.md)
-  - Add chained expressions guidance
-  - Stroustrup style guide
+  - FSharp: Add chained expressions guidance.
+  - Fsharp Stroustrup style guide
 
 ## Microsoft Orleans
 
@@ -70,23 +75,23 @@ Welcome to what's new in the .NET docs for January 2023. This article lists some
 
 ### Updated articles
 
-- [Orleans clients](../orleans/host/client.md)
+- [Orleans clients](../orleans/host/client.md) - Orleans client
 
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [dawei-wang](https://github.com/dawei-wang) ![There were 5 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
+- [dawei-wang](https://github.com/dawei-wang) -  ![There were 5 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
 - [rogeriomc](https://github.com/rogeriomc) - Rogério Moraes de Carvalho ![There were 5 pull requests merged by Rogério Moraes de Carvalho.](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
 - [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![There were 2 pull requests merged by Bartosz Klonowski.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [bjorkstromm](https://github.com/bjorkstromm) - Martin Björkström ![There were 2 pull requests merged by Martin Björkström.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [josh-degraw](https://github.com/josh-degraw) - Josh DeGraw ![There were 2 pull requests merged by Josh DeGraw.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
-- [minsouk](https://github.com/minsouk) ![There were 2 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [minsouk](https://github.com/minsouk) -  ![There were 2 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [surfmuggle](https://github.com/surfmuggle) - surfmuggle ![There were 2 pull requests merged by surfmuggle.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [svick](https://github.com/svick) - Petr Onderka ![There were 2 pull requests merged by Petr Onderka.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [alexrp](https://github.com/alexrp) - Alex Rønne Petersen ![There were 1 pull requests merged by Alex Rønne Petersen.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [amirhosseinsaloot](https://github.com/amirhosseinsaloot) - AmirhosseinSaloot ![There were 1 pull requests merged by AmirhosseinSaloot.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [ap0r](https://github.com/ap0r) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [ap0r](https://github.com/ap0r) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Benshi](https://github.com/Benshi) - OHSAWA Masashi ![There were 1 pull requests merged by OHSAWA Masashi.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [colindembovsky](https://github.com/colindembovsky) - Colin Dembovsky ![There were 1 pull requests merged by Colin Dembovsky.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [dkj468](https://github.com/dkj468) - Deepak Kumar Jain ![There were 1 pull requests merged by Deepak Kumar Jain.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
@@ -99,7 +104,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [linkdotnet](https://github.com/linkdotnet) - Steven Giesel ![There were 1 pull requests merged by Steven Giesel.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [lukehammer](https://github.com/lukehammer) - Luke Hammer ![There were 1 pull requests merged by Luke Hammer.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [mahab339](https://github.com/mahab339) - Muhab Abdelreheem ![There were 1 pull requests merged by Muhab Abdelreheem.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [michaelmcneilnet](https://github.com/michaelmcneilnet) - Michael ![There were 1 pull requests merged by Michael.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [michaelmcneilnet](https://github.com/michaelmcneilnet) - Michael McNeil ![There were 1 pull requests merged by Michael McNeil.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [mycomycul](https://github.com/mycomycul) - Michael Strunk ![There were 1 pull requests merged by Michael Strunk.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Niravprajapati1](https://github.com/Niravprajapati1) - Nirav_Prajapati ![There were 1 pull requests merged by Nirav_Prajapati.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [nojaf](https://github.com/nojaf) - Florian Verdonck ![There were 1 pull requests merged by Florian Verdonck.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
@@ -109,7 +114,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [sdavis3](https://github.com/sdavis3) - Shane Davis ![There were 1 pull requests merged by Shane Davis.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [syohex](https://github.com/syohex) - Shohei YOSHIDA ![There were 1 pull requests merged by Shohei YOSHIDA.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [TSanzo-BLE](https://github.com/TSanzo-BLE) - TSanzo_BLE ![There were 1 pull requests merged by TSanzo_BLE.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [ValentinBilla](https://github.com/ValentinBilla) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [ValentinBilla](https://github.com/ValentinBilla) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [xp44mm](https://github.com/xp44mm) - xp44mm ![There were 1 pull requests merged by xp44mm.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Youssef1313](https://github.com/Youssef1313) - Youssef Victor ![There were 1 pull requests merged by Youssef Victor.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [zipperer](https://github.com/zipperer) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [zipperer](https://github.com/zipperer) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

@@ -22,7 +22,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 
-### To set up an Excel Add-in application
+## Set up an Excel Add-in application
 
 1. Start Visual Studio.
 1. On the **File** menu, point to **New**, and then select **Project**.
@@ -33,19 +33,19 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 1. Select **OK**.
 1. The new project appears in **Solution Explorer**.
 
-### To add references
+## Add references
 
 1. In **Solution Explorer**, right-click your project's name and then select **Add Reference**. The **Add Reference** dialog box appears.
 1. On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version `<version>.0.0.0` (for a key to the Office product version numbers, see [Microsoft Versions](https://en.wikipedia.org/wiki/Microsoft_Office#Versions)), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, `version <version>.0.0.0`. If you don't see the assemblies, you may need to install them (see [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies)).
 1. Select **OK**.
 
-### To add necessary Imports statements or using directives
+## Add necessary Imports statements or using directives
 
 In **Solution Explorer**, right-click the **ThisAddIn.cs** file and then select **View Code**. Add the following `using` directives (C#) to the top of the code file if they aren't already present.
 
 :::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="Usings":::
 
-### To create a list of bank accounts
+## Create a list of bank accounts
 
 In **Solution Explorer**, right-click your project's name, select **Add**, and then select **Class**. Name the class Account.cs. Select **Add**. Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*.
 
@@ -55,7 +55,7 @@ To create a `bankAccounts` list that contains two accounts, add the following co
 
 :::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="CreateAccount":::
 
-### To export data to Excel
+## Export data to Excel
 
 In the same file, add the following method to the `ThisAddIn` class. The method sets up an Excel workbook and exports data to it.
 
@@ -74,7 +74,7 @@ Add the following code at the end of `DisplayInExcel` to adjust the column width
 
 These additions demonstrate another feature in C#: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../language-reference/builtin-types/reference-types.md). COM objects are treated as `dynamic` automatically when **Embed Interop Types** has its default value, `True`, or, equivalently, when you reference the assembly with the [**EmbedInteropTypes**](../../language-reference/compiler-options/inputs.md#embedinteroptypes) compiler option. For more information about embedding interop types, see procedures "To find the PIA reference" and "To restore the PIA dependency" later in this article. For more information about `dynamic`, see [dynamic](../../language-reference/builtin-types/reference-types.md) or [Using Type dynamic](using-type-dynamic.md).
 
-### To invoke DisplayInExcel
+## Invoke DisplayInExcel
 
 Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts processed. The second argument is a multiline lambda expression defining how to process the data. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero. For more information, see [Lambda Expressions](../../language-reference/operators/lambda-expressions.md).
 
@@ -82,7 +82,7 @@ Add the following code at the end of the `ThisAddIn_StartUp` method. The call to
 
 To run the program, press F5. An Excel worksheet appears that contains the data from the accounts.
 
-### To add a Word document
+## Add a Word document
 
 Add the following code at the end of the `ThisAddIn_StartUp` method to create a Word document that contains a link to the Excel workbook.
 
@@ -90,15 +90,15 @@ Add the following code at the end of the `ThisAddIn_StartUp` method to create a 
 
 This code demonstrates several of the features in C#: the ability to omit the `ref` keyword in COM programming, named arguments, and optional arguments.The [PasteSpecial](<xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>) method has seven parameters, all of which are optional reference parameters. Named and optional arguments enable you to designate the parameters you want to access by name and to send arguments to only those parameters. In this example, arguments indicate creating a link to the workbook on the Clipboard (parameter `Link`) and displaying that the link in the Word document as an icon (parameter `DisplayAsIcon`). C# also enables you to omit the `ref` keyword for these arguments.
 
-### To run the application
+## Run the application
 
 Press F5 to run the application. Excel starts and displays a table that contains the information from the two accounts in `bankAccounts`. Then a Word document appears that contains a link to the Excel table.
 
-### To clean up the completed project
+## Clean up the completed project
 
 In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, the add-in runs every time that you open Excel on your computer.
 
-### To find the PIA reference
+## Find the PIA reference
 
 1. Run the application again, but don't select **Clean Solution**.
 1. Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.
@@ -107,7 +107,7 @@ In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, th
 1. Double-click the **MANIFEST** icon. A window appears that contains a list of assemblies that contain items referenced by the project. `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` aren't in the list. Because you imported the types your project needs into your assembly, you aren't required to install references to a PIA. Importing the types into your assembly makes deployment easier. The PIAs don't have to be present on the user's computer. An application doesn't require deployment of a specific version of a PIA. Applications can work with multiple versions of Office, provided that the necessary APIs exist in all versions. Because deployment of PIAs is no longer necessary, you can create an application in advanced scenarios that works with multiple versions of Office, including earlier versions. Your code can't use any APIs that aren't available in the version of Office you're working with. It isn't always clear whether a particular API was available in an earlier version. Working with earlier versions of Office isn't recommended.
 1. Close the manifest window and the assembly window.
 
-### To restore the PIA dependency
+## Restore the PIA dependency
 
 1. In **Solution Explorer**, select the **Show All Files** button. Expand the **References** folder and select **Microsoft.Office.Interop.Excel**. Press F4 to display the **Properties** window.
 1. In the **Properties** window, change the **Embed Interop Types** property from **True** to **False**.

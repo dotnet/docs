@@ -20,7 +20,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 
-### To set up an Excel Add-in application
+## Set up an Excel Add-in application
 
 1. Start Visual Studio.
 
@@ -38,7 +38,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 8. The new project appears in **Solution Explorer**.
 
-### To add references
+## Add references
 
 1. In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.
 
@@ -46,7 +46,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 3. Click **OK**.
 
-### To add necessary Imports statements or using directives
+## Add necessary Imports statements or using directives
 
 1. In **Solution Explorer**, right-click the **ThisAddIn.vb** or **ThisAddIn.cs** file and then click **View Code**.
 
@@ -54,7 +54,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
      [!code-vb[csOfficeWalkthrough#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#1)]
 
-### To create a list of bank accounts
+## Create a list of bank accounts
 
 1. In **Solution Explorer**, right-click your project's name, click **Add**, and then click **Class**. Name the class Account.vb. Click **Add**.
 
@@ -66,7 +66,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
      [!code-vb[csOfficeWalkthrough#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/thisaddin.vb#3)]
 
-### To export data to Excel
+## Export data to Excel
 
 1. In the same file, add the following method to the `ThisAddIn` class. The method sets up an Excel workbook and exports data to it.
 
@@ -82,7 +82,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
      For more information about embedding interop types, see procedures "To find the PIA reference" and "To restore the PIA dependency" later in this article.
 
-### To invoke DisplayInExcel
+## Invoke DisplayInExcel
 
 1. Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero.
 
@@ -90,7 +90,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 2. To run the program, press F5. An Excel worksheet appears that contains the data from the accounts.
 
-### To add a Word document
+## Add a Word document
 
 1. Add the following code at the end of the `ThisAddIn_StartUp` method to create a Word document that contains a link to the Excel workbook.
 
@@ -98,15 +98,15 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
      The [PasteSpecial](<xref:Microsoft.Office.Interop.Word.Selection.PasteSpecial%2A>) method has seven parameters, all of which are defined as optional reference parameters. Named and optional arguments enable you to designate the parameters you want to access by name and to send arguments to only those parameters. In this example, arguments are sent to indicate that a link to the workbook on the Clipboard should be created (parameter `Link`) and that the link is to be displayed in the Word document as an icon (parameter `DisplayAsIcon`).
 
-### To run the application
+## Run the application
 
 1. Press F5 to run the application. Excel starts and displays a table that contains the information from the two accounts in `bankAccounts`. Then a Word document appears that contains a link to the Excel table.
 
-### To clean up the completed project
+## Clean up the completed project
 
 1. In Visual Studio, click **Clean Solution** on the **Build** menu. Otherwise, the add-in will run every time that you open Excel on your computer.
 
-### To find the PIA reference
+## Find the PIA reference
 
 1. Run the application again, but do not click **Clean Solution**.
 
@@ -127,7 +127,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 6. Close the manifest window and the assembly window.
 
-### To restore the PIA dependency
+## Restore the PIA dependency
 
 1. In **Solution Explorer**, click the **Show All Files** button. Expand the **References** folder and select **Microsoft.Office.Interop.Excel**. Press F4 to display the **Properties** window.
 1. In the **Properties** window, change the **Embed Interop Types** property from **True** to **False**.

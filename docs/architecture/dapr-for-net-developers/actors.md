@@ -284,7 +284,7 @@ app.MapActorsHandlers();
 The actors endpoints are necessary because the Dapr sidecar calls the application to host and interact with actor instances.
 
 > [!IMPORTANT]
-> Make sure your `Startup` class does not contain an `app.UseHttpsRedirection` call to redirect clients to the HTTPS endpoint. This will not work with actors. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
+> Make sure your `Program` (or `Startup`) class does not contain an `app.UseHttpsRedirection` call to redirect clients to the HTTPS endpoint. This will not work with actors. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
 
 The `Program` file is also the place to register the specific actor types. The following example registers the `ScoreActor` using the `AddActors` extension method:
 

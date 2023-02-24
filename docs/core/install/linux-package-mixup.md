@@ -52,7 +52,7 @@ The solution to these problems is to use .NET from one package repository. Which
 
 If your distribution provides .NET packages, it's recommended that you use that package repository instead of Microsoft's.
 
-01. **<a name="pin_ms">I only use .NET and no other packages from the Microsoft repository, and my distribution provides .NET packages.</a>**
+01. **I only use .NET and no other packages from the Microsoft repository, and my distribution provides .NET packages.**
 
     If you only use the Microsoft repository for .NET packages and not for any other Microsoft package such as `mdatp`, `powershell`, or `mssql`, then:
 
@@ -111,7 +111,7 @@ If your distribution provides .NET packages, it's recommended that you use that 
         sudo apt-get update && sudo apt-get install -y dotnet7
         ```
 
-03. **I need a recent version of .NET that's not provided by the Linux distribution repositories.**
+03. **I need a recent version of .NET that's not provided by the Linux distribution repositories.**<a name="pin_ms"></a>
 
     In this case, keep the Microsoft repository, but configure it so .NET packages from the Microsoft repository are considered a higher priority. Then, remove the already-installed .NET packages and then re-install the .NET packages from the Microsoft repository.
   

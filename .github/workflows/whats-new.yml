@@ -24,7 +24,7 @@ jobs:
         run: |
           echo "Reason: ${{ github.event.inputs.reason }}"
 
-      - uses: docs-tools/WhatsNew.Cli@main
+      - uses: dotnet/docs-tools/WhatsNew.Cli@main
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
           OspoKey: ${{ secrets.OSPO_KEY }}

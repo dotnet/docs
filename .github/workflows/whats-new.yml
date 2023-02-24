@@ -2,7 +2,7 @@ name: "generate what's new article"
 
 on:
   schedule:
-    - cron: "0 0 1 * *" # The first of every month
+    - cron: "0 2 1 * *" # The first of every month at 2 AM
   workflow_dispatch:
     inputs:
       reason:

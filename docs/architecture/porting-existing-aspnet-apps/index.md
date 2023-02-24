@@ -1,11 +1,11 @@
 ---
-title: Porting Existing ASP.NET Apps to .NET 6
-description: A free guide to converting ASP.NET MVC and Web API apps to ASP.NET Core 6.
+title: Porting Existing ASP.NET Apps to .NET 7
+description: A free guide to converting ASP.NET MVC and Web API apps to ASP.NET Core 7.
 author: ardalis
 ms.date: 01/20/2022
 ---
 
-# Porting Existing ASP.NET Apps to .NET 6
+# Porting Existing ASP.NET Apps to .NET 7
 
 ![cover image](./media/index/porting-existing-aspnet-apps.png)
 
@@ -19,7 +19,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2022 by Microsoft Corporation
+Copyright &copy; 2023 by Microsoft Corporation
 
 All rights reserved. No part of this book's contents may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -51,7 +51,7 @@ Participants and Reviewers:
 
 ## Version
 
-This guide covers **.NET 6* and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET 6 release. This book covers migration of apps that are currently running on .NET Framework 4.x. Migrating from .NET Framework 4.x to .NET 6 is similar to migrating to .NET 6, which is discussed as a potential intermediate step later in the book. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
+This guide covers **.NET 7** and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET 7 release. This book covers migration of apps that are currently running on .NET Framework 4.x. Migrating from .NET Framework 4.x to .NET 7 is similar to migrating to .NET 6, which is discussed as a potential intermediate step later in the book. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
 
 ## Who should use this guide
 

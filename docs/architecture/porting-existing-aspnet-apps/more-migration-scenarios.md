@@ -1,6 +1,6 @@
 ---
 title: More migration scenarios
-description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 6.
+description: This section describes additional migration scenarios and techniques for upgrading .NET Framework apps to .NET Core / .NET 7.
 author: ardalis
 ms.date: 12/10/2021
 ---
@@ -153,16 +153,13 @@ public static class WebApiConfig
 }
 ```
 
-When migrating [custom model providers to ASP.NET Core](/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample), the Web API pattern is closer to the ASP.NET Core approach than the ASP.NET MVC 5. The main differences between ASP.NET Core's `IModelBinder` interface and Web API's is that the ASP.NET Core method is async (`BindModelAsync`) and it only requires a single `BindingModelContext` parameter instead of two parameters like Web API's version required. In ASP.NET Core, you can use a `[ModelBinder]` attribute on individual action method parameters or their associated types. You can also create a `ModelBinderProvider` that will be used globally within the app where appropriate. To configure such a provider, you would add code to `Startup` in `ConfigureServices`:
+When migrating [custom model providers to ASP.NET Core](/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample), the Web API pattern is closer to the ASP.NET Core approach than the ASP.NET MVC 5. The main differences between ASP.NET Core's `IModelBinder` interface and Web API's is that the ASP.NET Core method is async (`BindModelAsync`) and it only requires a single `BindingModelContext` parameter instead of two parameters like Web API's version required. In ASP.NET Core, you can use a `[ModelBinder]` attribute on individual action method parameters or their associated types. You can also create a `ModelBinderProvider` that will be used globally within the app where appropriate. To configure such a provider, you would add code to _Program.cs_:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddControllers(options =>
 {
-    services.AddControllers(options =>
-    {
-        options.ModelBinderProviders.Insert(0, new CustomModelBinderProvider());
-    });
-}
+    options.ModelBinderProviders.Insert(0, new CustomModelBinderProvider());
+});
 ```
 
 ## Media formatters
@@ -178,17 +175,14 @@ public static void ConfigureApis(HttpConfiguration config)
 }
 ```
 
-In ASP.NET Core, the process is similar. ASP.NET Core supports both input formatters (used by model binding) and output formatters (used to format responses). Adding a custom formatter to output responses in a specific way involves inheriting from an appropriate base class and adding the formatter to MVC in `Startup`:
+In ASP.NET Core, the process is similar. ASP.NET Core supports both input formatters (used by model binding) and output formatters (used to format responses). Adding a custom formatter to output responses in a specific way involves inheriting from an appropriate base class and adding the formatter to MVC in _Program.cs_:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddControllers(options =>
 {
-    services.AddControllers(options =>
-    {
-        options.InputFormatters.Insert(0, new CustomInputFormatter());
-        options.OutputFormatters.Insert(0, new CustomOutputFormatter());
-    });
-}
+    options.InputFormatters.Insert(0, new CustomInputFormatter());
+    options.OutputFormatters.Insert(0, new CustomOutputFormatter());
+});
 ```
 
 You'll find a complete list of base classes in the <xref:Microsoft.AspNetCore.Mvc.Formatters?displayProperty=fullName> namespace.
@@ -244,15 +238,12 @@ The `:int` after the `id` route parameter constrains the value to match the `int
 The set of route constraints, their syntax, and usage is very similar between all three approaches. Custom route constraints are fairly rare in customer applications. If your app uses a custom route constraint and needs to port to ASP.NET Core, the docs include examples showing [how to create custom route constraints in ASP.NET Core](/aspnet/core/fundamentals/routing#custom-route-constraints). Essentially all that's required is to implement `IRouteConstraint` and its `Match` method, and then add the custom constraint when configuring routing for the app:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddControllers();
+builder.Services.AddControllers();
 
-    services.AddRouting(options =>
-    {
-        options.ConstraintMap.Add("customName", typeof(MyCustomConstraint));
-    });
-}
+builder.Services.AddRouting(options =>
+{
+    options.ConstraintMap.Add("customName", typeof(MyCustomConstraint));
+});
 ```
 
 This is very similar to how custom constraints are used in ASP.NET Web API, which uses `IHttpRouteConstraint` and configures it using a resolver and a call to `HttpConfiguration.MapHttpAttributeRoutes`:

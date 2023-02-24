@@ -16,9 +16,9 @@ This article describes how to install .NET on Ubuntu. For each version of Ubuntu
 | Method | Pros | Cons |
 |--------|------|------|
 | [Package manager<br>(Microsoft feed)*](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Preview releases are available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Requires registering the Microsoft package repository.</li><li>Only supports x64 Ubuntu.</li></ul> |
-| [Package manager<br>(Ubuntu feed)]() | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
-| [Snap]() | <ul><li>Dependencies are included.</li><li>All supported CPU architectures available.</li><li>Easy to update to the latest patch version.</li><li>Easy removal.</li></ul> | <ul><li>Cumbersome to install and enable multiple runtimes.</li></ul> |
-| [Script \ Manual extraction]() | <ul><li>Control where .NET is installed.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
+| [Package manager<br>(Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
+| [Snap](../linux-snap.md) | <ul><li>Dependencies are included.</li><li>All supported CPU architectures available.</li><li>Easy to update to the latest patch version.</li><li>Easy removal.</li></ul> | <ul><li>Cumbersome to install and enable multiple runtimes.</li></ul> |
+| [Script \ Manual extraction](../linux-scripted-manual.md) | <ul><li>Control where .NET is installed.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
 
 \* This is the recommended installation method for end-users and developers.
 
@@ -82,11 +82,9 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
-
 ## Register the Microsoft package repository
 
-Based on your version of Ubuntu, the Microsoft package repository contains all versions of .NET that were previously, or currently are, supported. For more information, see [Supported distributions](#supported-distributions). If the version of .NET you want to install is either unsupported or not available in the Ubuntu feed, use the Microsoft package repository or [install manually](linux-scripted-manual.md).
+The Microsoft package repository contains all versions of .NET that were previously, or currently are, supported with your version of Ubuntu. For more information, see [Supported distributions](#supported-distributions). If the version of .NET you want to install is either unsupported or not available in the Ubuntu feed, use the Microsoft package repository or [install manually](linux-scripted-manual.md).
 
 > [!IMPORTANT]
 > Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with [Snap](../linux-snap.md), an [installer script](../linux-scripted-manual.md#scripted-install), or through a [manual binary installation](../linux-scripted-manual.md#manual-install).
@@ -111,6 +109,8 @@ rm packages-microsoft-prod.deb
 # Update packages
 sudo apt update
 ```
+
+If you're using an Ubuntu version that contains .NET in the built-in package feed, you'll need to pin the Microsoft repository. For more information, see [Troubleshoot .NET package mix ups on Linux](linux-package-mixup.md#pin_ms). For a list of Ubuntu versions, see [Supported distributions](#supported-distributions).
 
 ## Install .NET
 

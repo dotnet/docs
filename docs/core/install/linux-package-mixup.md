@@ -52,12 +52,12 @@ The solution to these problems is to use .NET from one package repository. Which
 
 If your distribution provides .NET packages, it's recommended that you use that package repository instead of Microsoft's.
 
-01. **I only use .NET and no other packages from the Microsoft repository, and my distribution provides .NET packages.**
+01. **<a name="pin_ms">I only use .NET and no other packages from the Microsoft repository, and my distribution provides .NET packages.</a>**
 
     If you only use the Microsoft repository for .NET packages and not for any other Microsoft package such as `mdatp`, `powershell`, or `mssql`, then:
 
-    01. Remove the Microsoft repository.
     01. Remove the .NET related packages from your OS.
+    01. Remove the Microsoft repository.
     01. Install the .NET packages from the distribution repository.
 
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
@@ -81,8 +81,8 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
     If you use the Microsoft repository for Microsoft packages such as `mdatp`, `powershell`, or `mssql`, but you don't want to use the repository for .NET, then:
 
-    01. Configure the Microsoft repository to exclude any .NET package.
     01. Remove the .NET related packages from your OS.
+    01. Configure the Microsoft repository to exclude any .NET package.
     01. Install the .NET packages from the distribution repository.
 
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:

@@ -36,6 +36,7 @@ jobs:
       - name: create-pull-request
         uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
         with:
+          branch: create-whatsnew-pull-request/patch
           title: "What's new article"
           commit-message: 'Bot 🤖 generated "What''s new article"'
           body: "Automated creation of What's new article."

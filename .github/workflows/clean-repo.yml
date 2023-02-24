@@ -17,7 +17,7 @@ jobs:
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: docs-tools/cleanrepo/CleanRepo@main
+        uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
         with:
           start-directory: '.'
           docset-root: './docs'

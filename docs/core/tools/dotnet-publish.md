@@ -67,7 +67,7 @@ In the *.pubxml* file:
 
 If you want the scenario to work in all places, you can initialize both these properties to the same value in the *.pubxml* file. When GitHub issue [dotnet/sdk#20931](https://github.com/dotnet/sdk/issues/20931) is resolved, only one of these properties will need to be set.
 
-Some properties in the *.pubxml* file are honored only by Visual Studio and have no effect on `dotnet publish`. There's some effort in [dotnet/sdk#29817](https://github.com/dotnet/sdk/pull/29817) to bring the CLI more into alignment with Visual Studio's behavior, but some properties, such as `LastUsedBuildConfiguration`, may never be used by the CLI. The CLI and Visual Studio both do the packaging aspect of publishing, and properties related to that should be supported. But the CLI doesn't do the deployment automation aspect of publishing, and properties related to that are not supported.
+Some properties in the *.pubxml* file are honored only by Visual Studio and have no effect on `dotnet publish`. We're working to bring the CLI more into alignment with Visual Studio's behavior. But some properties, such as `LastUsedBuildConfiguration`, may never be used by the CLI. The CLI and Visual Studio both do the packaging aspect of publishing, and [dotnet/sdk#29817](https://github.com/dotnet/sdk/pull/29817) plans to add support for more properties related to that. But the CLI doesn't do the deployment automation aspect of publishing, and properties related to that are not supported.
 
 ### MSBuild properties
 

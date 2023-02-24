@@ -26,8 +26,6 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
-
 ## How to install other versions
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]

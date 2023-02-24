@@ -8,33 +8,27 @@ ms.date: 02/17/2023
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-This article describes how to install .NET on Ubuntu. When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+This article describes how to install .NET on Ubuntu. For each version of Ubuntu, the Microsoft package repository contains every version of .NET that is currently, or was previously, supported. Some versions of Ubuntu contain .NET in the Ubuntu package feed. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+> [!WARNING]
+> It's recommended that you avoid using both feeds for .NET, as this leads to problems when apps try to resolve a specific version of .NET. Mixing the package feeds for .NET is an advanced scenario, and is covered in the TODO section.
 
-## Supported distributions
+| Method | Pros | Cons |
+|--------|------|------|
+| [Package manager<br>(Microsoft feed)*](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Preview releases are available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Requires registering the Microsoft package repository.</li><li>Only supports x64 Ubuntu.</li></ul> |
+| [Package manager<br>(Ubuntu feed)]() | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
+| [Snap]() | <ul><li>Dependencies are included.</li><li>All supported CPU architectures available.</li><li>Easy to update to the latest patch version.</li><li>Easy removal.</li></ul> | <ul><li>Cumbersome to install and enable multiple runtimes.</li></ul> |
+| [Script \ Manual extraction]() | <ul><li>Control where .NET is installed.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
 
-The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on.
-
-| Ubuntu               | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
-|----------------------|-------------------------|-----------------------------|---------------------------------------------------------------------------|
-| [22.10](linux-ubuntu-2210)       | 7.0, 6.0  | 7.0, 6.0 | 7.0, 6.0, 3.1                                                             |
-| [22.04 (LTS)](linux-ubuntu-2204) | 7.0, 6.0  | 6.0      | 7.0, 6.0, 5.0, 3.1                                                        |
-| [20.04 (LTS)](linux-ubuntu-2004) | 7.0, 6.0  | None     | 7.0. 6.0, 5.0, 3.1, 2.1                                                   |
-| [18.04 (LTS)](linux-ubuntu-1804) | 7.0, 6.0  | None     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1                                              |
-| [16.04 (LTS)](linux-ubuntu-1604) | 6.0       | None     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0                                         |
-
-[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+\* This is the recommended installation method for end-users and developers.
 
 ## Decide how to install .NET
 
-For each version of Ubuntu, the Microsoft package repository contains every version of .NET that is currently, or was previously, supported. Some versions of Ubuntu contain .NET in the Ubuntu package feed. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
-
-It's recommended that you use either the Microsoft feed or the Ubuntu feed, to manage .NET. Mixing the package feeds for .NET is an advanced scenario, and is covered in the TODO section.
-
-Because .NET is available in the Ubuntu feed, but not every version of .NET nor every version of Ubuntu supports the feed for .NET, you may find that you need to use the Microsoft package repository. It's recommended that you avoid using both feeds for .NET, as this leads to problems when apps try to resolve a specific version of .NET.
-
 I want to install .NET because...
+
+- **I want to create a .NET app:**
+
+  We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
 - **I want to run a .NET app in a container, cloud, or continuous-integration scenario, and...**
 
@@ -48,19 +42,51 @@ I want to install .NET because...
 
   - **I'm using a different Ubuntu version or I need an out-of-support .NET version:**
 
-    [Register and install with the Microsoft package repository.](#register-the-microsoft-package-repository)
-
-- **I want to create a .NET app:**
-
-  [Register and install with the Microsoft package repository.](#register-the-microsoft-package-repository)
+    We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
 - **I want to install a preview version:**
 
-  [Register and install with the Microsoft package repository.](#register-the-microsoft-package-repository)
+  We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+
+- **I don't want to use APT:**
+
+  - **I do want an automated install:**
+
+    There are two ways to install .NET, use the [Snap packages](linux-snap.md#install-the-net-sdk-or-the-net-runtime-with-snap) or use the [Linux installation script](linux-scripted-manual.md#scripted-install).
+
+  - **I want full control:**
+
+    Download a tarball and manually install .NET. For more information, see [Manual install](linux-scripted-manual.md#manual-install).
+
+- **I'm using an Arm-based CPU:**
+
+  Use one of the following ways to install .NET:
+
+  - [Install .NET with Snap.](../linux-snap.md)
+  - [Install .NET with `install-dotnet` script.](../linux-scripted-manual.md#scripted-install)
+  - [Manually install .NET](../linux-scripted-manual.md#manual-install)
+
+## Supported distributions
+
+The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. Each link goes to the specific Ubuntu version page with specific instructions on how to install .NET for that version of Ubuntu.
+
+| Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
+|-------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+| [22.04 (LTS)](linux-ubuntu-2204.md) | 7.0, 6.0                | 6.0                      | 7.0, 6.0, 5.0, 3.1                |
+| [20.04 (LTS)](linux-ubuntu-2004.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.1           |
+| [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
+| [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
 ## Register the Microsoft package repository
 
-Based on your version of Ubuntu, the Microsoft package repository contains all versions of .NET that were previously, or currently are, supported. For more information, see [Supported distributions](#supported-distributions). If you want to install a version of .NET that is either unsupported or not available in the Ubuntu feed, you must either use the Microsoft package repository or [install manually](linux-scripted-manual.md).
+Based on your version of Ubuntu, the Microsoft package repository contains all versions of .NET that were previously, or currently are, supported. For more information, see [Supported distributions](#supported-distributions). If the version of .NET you want to install is either unsupported or not available in the Ubuntu feed, use the Microsoft package repository or [install manually](linux-scripted-manual.md).
 
 > [!IMPORTANT]
 > Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with [Snap](../linux-snap.md), an [installer script](../linux-scripted-manual.md#scripted-install), or through a [manual binary installation](../linux-scripted-manual.md#manual-install).
@@ -124,7 +150,7 @@ For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots
 
 ## Use APT to update .NET
 
-When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
+When a new patch release is available for .NET, you can upgrade it through APT with the following commands:
 
 ```bash
 sudo apt-get update
@@ -170,7 +196,7 @@ sudo apt-get update && \
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must install these dependencies to run your app:
 
 - libc6
 - libgcc1

@@ -31,7 +31,7 @@ jobs:
         with:
           owner: dotnet
           repo: docs
-          save-dir: './docs/whats-new'
+          savedir: './docs/whats-new'
 
       - name: create-pull-request
         uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04

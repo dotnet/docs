@@ -35,7 +35,7 @@ Once installed, you configure it from the **Analyze** > **Portability Analyzer S
 
 The analyzer produces a detailed report for each assembly. The report:
 
-* Describes how compatible each project is with a given target framework, such as .NET 6 or .NET Standard 2.0.
+* Describes how compatible each project is with a given target framework, such as .NET 7 or .NET Standard 2.0.
 * Helps teams assess the effort required to port a particular project to a particular target framework.
 
 The details of this analysis are covered in the next section.
@@ -62,7 +62,7 @@ Watch an overview of how to employ this approach in this [dotNetConf presentatio
 - Migrate apps to use new *.csproj* file format
 - Update internal NuGet dependencies to .NET Standard
 - Migrate apps to ASP.NET Core (targeting .NET Framework)
-- Update all apps to target .NET 6
+- Update all apps to target .NET 7
 
 When automating a large suite of apps, it helps significantly if they follow consistent coding guidelines and project organization. Automation efforts rely on this consistency to be effective. In addition to parsing and migrating project files, common code patterns can be migrated automatically. Some code pattern examples include differences in how controller actions are declared or how they return results.
 

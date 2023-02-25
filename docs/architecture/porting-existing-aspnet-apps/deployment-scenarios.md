@@ -57,6 +57,8 @@ As an example, the same ASP.NET Core app used in Figure 5-1 can be deployed to a
 
 If your app requires single sign-on between different sites or apps within IIS, refer to the documentation on [how to share authentication cookies among ASP.NET apps](/aspnet/core/host-and-deploy/iis/) for detailed instructions on supporting this scenario.
 
+Another alternative to IIS Rewrite rules is the use of a reverse proxy like [YARP](https://microsoft.github.io/reverse-proxy/), which can facilitate [incremental ASP.NET to ASP.NET Core Migration](https://devblogs.microsoft.com/dotnet/incremental-asp-net-to-asp-net-core-migration/).
+
 ## Summary
 
 A common approach to porting large apps from .NET Framework to ASP.NET Core is to choose individual portions of the app to migrate one by one. As each piece of the app is ported, the entire app remains running and usable, with some parts of it running in its original configuration and other parts running on some version of .NET Core. By following this approach, a large app migration can be performed incrementally. This approach results in limiting risk by providing more rapid feedback and reducing total surface area involved in testing. It also allows for more rapid realization of benefits of .NET Core, such as performance increases. Although ASP.NET Core apps are no longer required to be hosted on IIS, IIS remains a very flexible and powerful web server that can be configured to support a variety of hosting scenarios involving both .NET Framework and ASP.NET Core apps on the same IIS instance or even hosted on different servers.
@@ -69,6 +71,7 @@ A common approach to porting large apps from .NET Framework to ASP.NET Core is t
 - [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1)
 - [Share authentication cookies among ASP.NET apps](/aspnet/core/security/cookie-sharing)
 - [Samples used in this section](https://github.com/ardalis/MigrateDotNetWithIIS)
+- [Incremental ASP.NET to ASP.NET Core Migration](https://devblogs.microsoft.com/dotnet/incremental-asp-net-to-asp-net-core-migration/)
 
 >[!div class="step-by-step"]
 >[Previous](more-migration-scenarios.md)

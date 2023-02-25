@@ -584,7 +584,7 @@ if (violation > 0)
 
 The code above uses two external dependencies. The `_speedingViolationCalculator` encapsulates the business logic for determining whether or not a vehicle has driven too fast. The `_daprClient` allows the actor to publish messages using the Dapr pub/sub building block.
 
-Both dependencies are registered in the `Startup` class and injected into the actor using constructor dependency injection:
+Both dependencies are registered in the _Program.cs_ class and injected into the actor using constructor dependency injection:
 
 ```csharp
 private readonly DaprClient _daprClient;

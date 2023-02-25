@@ -37,6 +37,10 @@ If you don't specify member names in the anonymous type, the compiler gives the 
 > [!TIP]
 > You can use .NET style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to enforce whether inferred or explicit member names are preferred.
 
+It is also possible to define a field by object of another type: class, struct or even another anonymous type. It is done by using the variable holding this object just like in the following example, where two anonymous types are created using already instantiated user-defined types. In both cases the `product` field in the anonymous type `shipment` and `shipmentWithBonus` will be of type `Product` containing it's default values of each field. And the `bonus` field will be of anonymous type created by the compiler.
+
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet03":::
+
 Typically, when you use an anonymous type to initialize a variable, you declare the variable as an implicitly typed local variable by using [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables). The type name cannot be specified in the variable declaration because only the compiler has access to the underlying name of the anonymous type. For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 You can create an array of anonymously typed elements by combining an implicitly typed local variable and an implicitly typed array, as shown in the following example.

@@ -38,6 +38,13 @@ namespace anonymous_types
             Console.WriteLine(apple);
             Console.WriteLine(onSale);
             // </Snippet02>
+
+            // <Snippet03>
+            var product = new Product();
+            var bonus = new { note = "You won!" };
+            var shipment = new { address = "Nowhere St.", product };
+            var shipmentWithBonus = new { address = "Somewhere St.", product, bonus };
+            // </Snippet03>
         }
     }
 }

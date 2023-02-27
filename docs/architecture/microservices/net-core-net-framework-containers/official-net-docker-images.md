@@ -40,8 +40,8 @@ When you explore the .NET image repositories at Microsoft Artifact Registry, you
 
 | Image | Comments |
 |-------|----------|
-| mcr.microsoft.com/dotnet/aspnet:**6.0** | ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch) |
-| mcr.microsoft.com/dotnet/sdk:**6.0** | .NET 6, with SDKs included, on Linux and Windows (multi-arch) |
+| mcr.microsoft.com/dotnet/aspnet:**7.0** | ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch) |
+| mcr.microsoft.com/dotnet/sdk:**7.0** | .NET 7, with SDKs included, on Linux and Windows (multi-arch) |
 
 You can find all the available docker images in [dotnet-docker](https://github.com/dotnet/dotnet-docker) and also refer to the latest preview releases by using nightly build `mcr.microsoft.com/dotnet/nightly/*`
 

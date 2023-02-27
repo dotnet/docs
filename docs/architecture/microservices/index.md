@@ -7,7 +7,7 @@ ms.date: 01/10/2022
 
 ![Book cover](./media/cover-large.png)
 
-**EDITION v6.0** - Updated to ASP.NET Core 6.0
+**EDITION v7.0** - Updated to ASP.NET Core 7.0
 
 Refer [changelog](https://aka.ms/MicroservicesEbookChangelog) for the book updates and community contributions.
 
@@ -43,7 +43,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 6** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 6 release. That’s why the book version has also been updated to version **6.0**.
+This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release. That’s why the book version has also been updated to version **7.0**.
 
 ## What this guide does not cover
 
@@ -154,7 +154,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2022 by Microsoft Corporation
+Copyright © 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

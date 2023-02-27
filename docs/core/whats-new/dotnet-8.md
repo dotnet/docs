@@ -61,7 +61,7 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
       public int Derived { get; set; }
   }
 
-  public class Derived : IDerived
+  public class DerivedImplement : IDerived
   {
       public int Base { get; set; }
       public int Derived { get; set; }

@@ -72,9 +72,11 @@ Some properties in the *.pubxml* file are honored only by Visual Studio and have
 * `LastUsedBuildConfiguration`
 * `Configuration`
 * `Platform`
+* `LastUsedPlatform`
 * `TargetFramework`
 * `TargetFrameworks`
 * `RuntimeIdentifier`
+*  `RuntimeIdentifiers` 
 
 ### MSBuild properties
 

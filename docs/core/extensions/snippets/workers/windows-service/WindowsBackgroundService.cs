@@ -22,6 +22,11 @@ public sealed class WindowsBackgroundService : BackgroundService
                 await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
             }
         }
+        catch (TaskCanceledException)
+        {
+            // When the stopping token is cancelled, for example; a call made from services.msc,
+            // we shouldn't exit with a non-zero exit code. In other words, this is expected...
+        }
         catch (Exception ex)
         {
             _logger.LogError(ex, "{Message}", ex.Message);

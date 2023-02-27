@@ -1,7 +1,7 @@
 ---
 title: Custom grain storage sample project
 description: Explore a custom grain storage sample project written with .NET Orleans.
-ms.date: 02/23/2023
+ms.date: 02/27/2023
 zone_pivot_groups: orleans-version
 ---
 
@@ -9,7 +9,7 @@ zone_pivot_groups: orleans-version
 
 In the tutorial on declarative actor storage, we looked at allowing grains to store their state in an Azure table using one of the built-in storage providers. While Azure is a great place to squirrel away your data, there are many alternatives. There are so many that there was no way to support them all. Instead, Orleans is designed to let you easily add support for your form of storage by writing a grain storage.
 
-In this tutorial, we'll walk through how to write simple file-based grain storage. A file system is not the best place to store grains states as it is local, there can be issues with file locks and the last update date is not sufficient to prevent inconsistency. But it's an easy example to help us illustrate the implementation of a `Grain Storage`.
+In this tutorial, we'll walk through how to write simple file-based grain storage. A file system is not the best place to store grains states as it is local, there can be issues with file locks and the last update date is not sufficient to prevent inconsistency. But it's an easy example to help us illustrate the implementation of a _grain storage_.
 
 ## Get started
 

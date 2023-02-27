@@ -84,15 +84,15 @@ After a release goes out, the release branches generally stop producing daily bu
 
 ## .NET runtime compatibility
 
-The .NET runtime maintains a high level of compatibility between versions. .NET applications should, by and large, continue to work after upgrading to a new major .NET runtime version.
+The .NET runtime maintains a high level of compatibility between versions. .NET apps should, by and large, continue to work after upgrading to a new major .NET runtime version.
 
-Each major .NET runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an application after upgrade. For example, a performance improvement in the .NET runtime (that's not considered to be a breaking change) can expose latent application threading bugs that cause the app not to work on that version. It's expected for large applications to require a few fixes after upgrading to a new .NET runtime major version.
+Each major .NET runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an app after upgrade. For example, a performance improvement in the .NET runtime (that's not considered to be a breaking change) can expose latent app threading bugs that cause the app to not work on that version. It's expected for large apps to require a few fixes after upgrading to a new .NET runtime major version.
 
-.NET apps are configured to run on a given .NET runtime major version by default, so recompilation is highly recommended to upgrade the application to run on a new .NET runtime major version. Then retest the application after upgrading to identify any issues.
+By default, .NET apps are configured to run on a given .NET runtime major version, so recompilation is highly recommended to upgrade the application to run on a new .NET runtime major version. Then retest the application after upgrading to identify any issues.
 
-If upgrading via application recompilation isn't feasible, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an application to run on a higher major .NET runtime version than the version it was compiled for. These setting do not change the risks involved in upgrading the application to a higher major .NET runtime version, and it's still required to retest the app after upgrade.
+Suppose upgrading via app recompilation isn't feasible. In that case, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an application to run on a higher major .NET runtime version than the version it was compiled for. These settings don't change the risks involved in upgrading the app to a higher major .NET runtime version, and it's still required to retest the app post upgrade.
 
-The .NET runtime supports loading libraries that target older .NET runtime versions. An application upgraded to newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It isn't necessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the application.
+The .NET runtime supports loading libraries that target older .NET runtime versions. An app upgraded to newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It isn't necessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the application.
 
 ## See also
 

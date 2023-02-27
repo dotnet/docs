@@ -36,6 +36,7 @@ jobs:
       - name: create-pull-request
         uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
         with:
+          branch: create-cleanrepo-pull-request/patch
           title: "Monthly chores: automated clean repo tool"
           commit-message: 'Bot 🤖 generated "Clean repo tool run"'
           body: "Automated creation of Clean repo updates."

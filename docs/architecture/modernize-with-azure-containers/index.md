@@ -7,7 +7,7 @@ ms.date: 01/10/2022
 
 ![Cover image of the Modernize .NET applications guide.](./media/index/web-application-guide-cover-image.png)
 
-**EDITION v6.0**
+**EDITION v7.0**
 
 Refer [changelog](https://aka.ms/modernize-ebook-changelog) for the book updates and community contributions.
 
@@ -17,7 +17,7 @@ Divisions of Microsoft Corporation
 One Microsoft Way
 Redmond, Washington 98052-6399
 
-Copyright © 2022 by Microsoft Corporation
+Copyright © 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced in any form or by any means without the written permission of the publisher.
 
@@ -192,7 +192,7 @@ The last chapter of this guide introduces multiple walkthroughs that focus on sp
 
 ## Sample apps for modernizing legacy apps: eShopModernizing
 
-The [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) repo on GitHub offers two sample applications that simulate legacy monolithic web applications. One web app is developed by using ASP.NET MVC; the second web app is developed by using ASP.NET Web Forms and the third app is an N-Tier app with a WinForms client desktop app consuming a WCF service backend. All these apps are based on the traditional .NET Framework. These sample apps don't use .NET Core/.NET 6 or ASP.NET Core as they are supposed to be existing/legacy .NET Framework applications to be modernized.
+The [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) repo on GitHub offers two sample applications that simulate legacy monolithic web applications. One web app is developed by using ASP.NET MVC; the second web app is developed by using ASP.NET Web Forms and the third app is an N-Tier app with a WinForms client desktop app consuming a WCF service backend. All these apps are based on the traditional .NET Framework. These sample apps don't use .NET Core/.NET 7 or ASP.NET Core as they are supposed to be existing/legacy .NET Framework applications to be modernized.
 
 These sample apps have a second version, with modernized code, and which are fairly straightforward. The most important difference between the app versions is that the second versions use Windows Containers as the deployment choice. There also are a few additions to the second versions, like Azure Storage Blobs for managing images, Azure Active Directory for managing security, and Azure Application Insights for monitoring and auditing the applications.
 

@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: ActivatorUtilities.CreateInstance behaves consistently"
 description: Learn about the .NET 8 breaking change in .NET extensions where ActivatorUtilities.CreateInstance behaves consistently regardless of the order of constructor overloads.
-ms.date: 01/25/2023
+ms.date: 02/28/2023
 ---
 # ActivatorUtilities.CreateInstance behaves consistently
 
@@ -45,7 +45,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was introduced to fix a bug where the behavior depended on the order of constructor overload definitions.
+This change was introduced to fix a bug where the behavior changed depending on the order of constructor overload definitions.
 
 ## Recommended action
 
@@ -53,4 +53,9 @@ If your app starts behaving differently or throwing an exception after upgrading
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A?displayProperty=fullName>
+- <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%60%601(System.IServiceProvider,System.Object[])?displayProperty=fullName>
+- <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(System.IServiceProvider,System.Type,System.Object[])?displayProperty=fullName>
+
+## See also
+
+- [ActivatorUtilities.CreateInstance requires non-null provider](activatorutilities-createinstance-null-provider.md)

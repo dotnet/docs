@@ -25,7 +25,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-We fixed various the parameter validation along with [constructor-matching issues](activatorutilities-createinstance-behavior.md) to better represent the intended purpose of <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A>. The `CreateInstance()` methods have a non-nullable `provider` parameter, so it was generally expected that a `null` provider wasn't allowed.
+We fixed various the parameter validation along with [constructor-matching issues](activatorutilities-createinstance-behavior.md) to align with the intended purpose of <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance%2A>. The `CreateInstance()` methods have a non-nullable `provider` parameter, so it was generally expected that a `null` provider wasn't allowed.
 
 ## Recommended action
 

@@ -192,7 +192,7 @@ The image shows some example values based on the ViewModel types and the possibl
 - **ASP.NET Core Web API Help Pages using Swagger**  
   [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio](/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
 
-- ** Create record types ** [https://learn.microsoft.com/dotnet/csharp/whats-new/tutorials/records](/dotnet/csharp/whats-new/tutorials/records)
+- **Create record types** [https://learn.microsoft.com/dotnet/csharp/whats-new/tutorials/records](/dotnet/csharp/whats-new/tutorials/records)
 
 >[!div class="step-by-step"]
 >[Previous](eshoponcontainers-cqrs-ddd-microservice.md)

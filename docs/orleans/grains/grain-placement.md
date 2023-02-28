@@ -36,7 +36,7 @@ This placement strategy is configured by adding the <xref:Orleans.Placement.Acti
 
 ## Stateless worker placement
 
-This is a special placement strategy used by [*stateless worker* grains](../grains/stateless-worker-grains.md). This operates almost identically to <xref:Orleans.Runtime.PreferLocalPlacement> except that each server can have multiple activations of the same grain and the grain is not registered in the grain directory since there is no need.
+Stateless worker placement is a special placement strategy used by [*stateless worker* grains](../grains/stateless-worker-grains.md). This placement operates almost identically to <xref:Orleans.Runtime.PreferLocalPlacement> except that each server can have multiple activations of the same grain and the grain is not registered in the grain directory since there's no need.
 
 This placement strategy is configured by adding the <xref:Orleans.Concurrency.StatelessWorkerAttribute> to a grain.
 
@@ -50,16 +50,16 @@ Choosing the appropriate grain placement strategy, beyond the defaults that Orle
 
 Random placement relies on the [Law of Large Numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers), so it's usually a good default when there is an unpredictable load spread across a large number of grains (10,000 plus).
 
-Activation-count-based placement also has a random element to it, relying on the Power of Two Choices principle, which is a commonly used algorithm for distributed load balancing and is used in popular load balancers. Silos frequently publish runtime statistics to other silos in the cluster, including:
+Activation-count-based placement also has a random element to it, relying on the Power of Two Choices principle, which is a commonly used algorithm for distributed load balancing and is used in popular load balancers. Silos frequently publish run-time statistics to other silos in the cluster, including:
 
 - Available memory, total physical memory, and memory usage.
-- CPU Usage.
+- CPU usage.
 - Total activation count and recent active activation count.
   - A sliding window of activations that were active in the last few seconds, sometimes referred to as the activation working set.
 
 From these statistics, only the activation counts are currently used to determine the load on a given silo.
 
-Ultimately, developers should experiment with different strategies and monitor performance metrics to determine the best fit. By selecting the right grain placement strategy, developers can optimize the performance, scalability, and cost-effectiveness of their Orleans apps.
+Ultimately, you should experiment with different strategies and monitor performance metrics to determine the best fit. By selecting the right grain placement strategy, you can optimize the performance, scalability, and cost-effectiveness of your Orleans apps.
 
 ## Configure the default placement strategy
 

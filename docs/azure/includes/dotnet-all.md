@@ -272,7 +272,7 @@
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites/1.0.0) |  |  |
 | Microsoft.Azure.Management.StoragePool | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StoragePool/1.0.0) |  |  |
-| Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.2) |  |  |
+| Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.3) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.4) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
 | Purview Share | NuGet [1.0.3-beta.20](https://www.nuget.org/packages/Azure.Analytics.Purview.Share/1.0.3-beta.20) |  |  |
@@ -379,7 +379,7 @@
 | Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.ImageSearch/2.0.0) |  |  |
 | Information Protection | NuGet [1.7.147](https://www.nuget.org/packages/Microsoft.InformationProtection.File/1.7.147) |  |  |
 | Insights | NuGet [0.16.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Insights/0.16.0-preview) |  |  |
-| IoT Plug and Play - Devices Client | NuGet [1.41.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.2)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview002) |  |  |
+| IoT Plug and Play - Devices Client | NuGet [1.41.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.2)<br>NuGet [2.0.0-preview003](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview003) |  |  |
 | Jobs | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
 | Jobs - Core | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs.Core/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
 | Jobs - Service Bus | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs.ServiceBus/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
@@ -399,14 +399,14 @@
 | LUIS Runtime | NuGet [3.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/3.1.0-preview.1) |  | GitHub [3.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime_3.1.0-preview.1/sdk/cognitiveservices/Language.LUIS.Runtime) |
 | Media Live Video Analytics Edge | NuGet [1.0.4-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Media.LiveVideoAnalytics.Edge/1.0.4-preview.1) |  | GitHub [1.0.4-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Media.LiveVideoAnalytics.Edge_1.0.4-preview.1/sdk/mediaservices/Microsoft.Azure.Media.LiveVideoAnalytics.Edge) |
 | Microsoft.Azure.Amqp | NuGet [2.6.1](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.6.1) |  |  |
-| Microsoft.Azure.Devices | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.38.1)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices/2.0.0-preview002) |  |  |
+| Microsoft.Azure.Devices | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.38.1)<br>NuGet [2.0.0-preview003](https://www.nuget.org/packages/Microsoft.Azure.Devices/2.0.0-preview003) |  |  |
 | Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
 | Microsoft.Azure.Devices.ProtocolGateway.Core | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Core/2.0.1) |  |  |
 | Microsoft.Azure.Devices.ProtocolGateway.IotHubClient | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.IotHubClient/2.0.1) |  |  |
 | Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage/2.0.1) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Client | NuGet [1.19.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Client/1.19.1)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Client/2.0.0-preview002) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Client | NuGet [1.19.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Client/1.19.1)<br>NuGet [2.0.0-preview003](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Client/2.0.0-preview003) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Security.Tpm | NuGet [1.14.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Security.Tpm/1.14.1)<br>NuGet [1.15.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Security.Tpm/1.15.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Service | NuGet [1.18.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/1.18.1)<br>NuGet [2.0.0-preview002](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/2.0.0-preview002) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Service | NuGet [1.18.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/1.18.1)<br>NuGet [2.0.0-preview003](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/2.0.0-preview003) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Amqp | NuGet [1.16.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Amqp/1.16.1)<br>NuGet [1.17.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Amqp/1.17.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
@@ -535,7 +535,7 @@
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2408](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2408) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0-preview1) |  |  |
-| Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.2) |  |  |
+| Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.3) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.3-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.3-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
@@ -661,7 +661,7 @@
 | Management - Monitor Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor.Fluent/1.38.1) |  |  |
 | Management - MySQL | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.MySQL/1.0.0) |  |  |
 | Management - NetApp Files | NuGet [1.16.0](https://www.nuget.org/packages/Microsoft.Azure.Management.NetApp/1.16.0) |  | GitHub [1.16.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.NetApp_1.16.0/sdk/netapp/Microsoft.Azure.Management.NetApp/) |
-| Management - Network | NuGet [25.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/25.0.0) |  | GitHub [25.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_25.0.0/sdk/network/Microsoft.Azure.Management.Network/) |
+| Management - Network | NuGet [26.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/26.0.0) |  | GitHub [26.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_26.0.0/sdk/network/Microsoft.Azure.Management.Network/) |
 | Management - Network Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent/1.38.1) | [docs](/dotnet/api/overview/azure/virtual-network) |  |
 | Management - Notification Hubs | NuGet [2.3.4-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs/2.3.4-preview) | [docs](/dotnet/api/overview/azure/notification-hubs) | GitHub [2.3.4-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/notificationhubs/Microsoft.Azure.Management.NotificationHubs) |
 | Management - Notification Hubs Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs.Fluent/1.9.1-beta) |  |  |

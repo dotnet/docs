@@ -41,19 +41,16 @@ SignalR is one example of an artifact using hosted services, but you can also us
 
 You can basically offload any of those actions to a background task that implements `IHostedService`.
 
-The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension method in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost.
+The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension method in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within application startup in _Program.cs_.
 
 ```csharp
-public IServiceProvider ConfigureServices(IServiceCollection services)
-{
-    //Other DI registrations;
+//Other DI registrations;
 
-    // Register Hosted Services
-    services.AddHostedService<GracePeriodManagerService>();
-    services.AddHostedService<MyHostedServiceB>();
-    services.AddHostedService<MyHostedServiceC>();
-    //...
-}
+// Register Hosted Services
+builder.Services.AddHostedService<GracePeriodManagerService>();
+builder.Services.AddHostedService<MyHostedServiceB>();
+builder.Services.AddHostedService<MyHostedServiceC>();
+//...
 ```
 
 In that code, the `GracePeriodManagerService` hosted service is real code from the Ordering business microservice in eShopOnContainers, while the other two are just two additional samples.
@@ -66,7 +63,7 @@ Without using `IHostedService`, you could always start a background thread to ru
 
 When you register an `IHostedService`, .NET will call the `StartAsync()` and `StopAsync()` methods of your `IHostedService` type during application start and stop respectively. For more details, refer [IHostedService interface](/aspnet/core/fundamentals/host/hosted-services?tabs=visual-studio&view=aspnetcore-3.1&preserve-view=false#ihostedservice-interface)
 
-As you can imagine, you can create multiple implementations of IHostedService and register them at the `ConfigureService()` method into the DI container, as shown previously. All those hosted services will be started and stopped along with the application/microservice.
+As you can imagine, you can create multiple implementations of IHostedService and register each of them in _Program.cs_, as shown previously. All those hosted services will be started and stopped along with the application/microservice.
 
 As a developer, you are responsible for handling the stopping action of your services when `StopAsync()` method is triggered by the host.
 

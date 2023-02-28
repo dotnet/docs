@@ -4,8 +4,6 @@ description: This article describes how to authenticate your application to Azur
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 2/28/2023
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Authenticate NET apps to Azure services during local development using service principals

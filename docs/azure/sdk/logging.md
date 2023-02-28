@@ -3,8 +3,6 @@ title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
 ms.date: 2/28/2023
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.author: casoper
-author: camsoper
 ms.topic: how-to
 ---
 

@@ -4,8 +4,6 @@ description: Listing of the package names, NuGet links, docs links, and source c
 ms.topic: reference
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 2/28/2023
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Azure SDK for .NET package index

@@ -4,8 +4,6 @@ description: This article covers how to configure authentication for apps to Azu
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 2/28/2023
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Authenticating Azure-hosted apps to Azure resources with the Azure SDK for .NET

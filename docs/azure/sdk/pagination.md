@@ -3,8 +3,6 @@ title: Pagination with the Azure SDK for .NET
 description: Learn how to use pagination with the Azure SDK for .NET.
 ms.date: 02/28/2023
 ms.custom: devx-track-dotnet
-ms.author: dapine
-author: IEvangelist
 ---
 
 # Pagination with the Azure SDK for .NET

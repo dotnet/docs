@@ -4,8 +4,6 @@ description: This article describes additional, less common methods you can use 
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 2/28/2023
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Additional methods to authenticate to Azure resources from .NET apps

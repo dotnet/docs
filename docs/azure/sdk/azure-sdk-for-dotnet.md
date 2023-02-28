@@ -4,8 +4,6 @@ description: Provides an overview of what the Azure SDK for .NET is and the basi
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 2/28/2023
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Azure SDK for .NET overview

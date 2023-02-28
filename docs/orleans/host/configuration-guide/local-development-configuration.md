@@ -18,7 +18,7 @@ For a working sample application that targets Orleans 7.0, see [Orleans: Hello W
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run the silo. Also, when developing an Orleans silo you'll need the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. For local Orleans silo development, you'll configure localhost clustering, which is configured to use the loopback address. To use localhost clustering, call the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering%2A> extension method, consider the example _Program.cs_ file of the silo host:
+It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run the silo. Also, when developing an Orleans silo you'll need the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. For local Orleans silo development, you'll configure localhost clustering, which is configured to use the loopback address. To use localhost clustering, call the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file of the silo host:
 
 ```csharp
 using Microsoft.Extensions.Hosting;
@@ -35,7 +35,7 @@ The preceding code:
 
 - Creates a default host builder.
 - Calls the `UseOrleans` extension method to configure the silo.
-- Given the <xref:Orleans.Hosting.ISiloBuilder> calls the `UseLocalhostClustering` extension method to configure the silo to use localhost clustering.
+- Calls the `UseLocalhostClustering` extension method on the given <xref:Orleans.Hosting.ISiloBuilder> to configure the silo to use localhost clustering.
 - Chains the `RunConsoleAsync` method to run the silo as a console application.
 
 :::zone-end
@@ -106,7 +106,7 @@ static async Task<ISiloHost> BuildAndStartSiloAsync()
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-It's also recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run clients. You'll also need the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. To use localhost clustering on the consuming client, call the <xref:Orleans.Hosting.ClientBuilderExtensions.UseLocalhostClustering%2A> extension method, consider the example _Program.cs_ file of the client host:
+It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run clients (in addition to the silo). You'll also need the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. To use localhost clustering on the consuming client, call the <xref:Orleans.Hosting.ClientBuilderExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file of the client host:
 
 ```csharp
 using Microsoft.Extensions.Hosting;
@@ -126,9 +126,9 @@ The preceding code:
 
 - Creates a default host builder.
 - Calls the `UseOrleansClient` extension method to configure the client.
-- Given the <xref:Orleans.Hosting.IClientBuilder> calls the `UseLocalhostClustering` extension method to configure the client to use localhost clustering.
+- Calls the `UseLocalhostClustering` extension method on the given <xref:Orleans.Hosting.IClientBuilder> to configure the client to use localhost clustering.
 - Calls the `UseConsoleLifetime` extension method to configure the client to use the console lifetime.
-- The `host` variable calls the `StartAsync` method to start the client.
+- Calls the `StartAsync` method on the `host` variable to start the client.
 
 :::zone-end
 

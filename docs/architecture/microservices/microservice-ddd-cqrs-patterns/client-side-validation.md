@@ -34,13 +34,15 @@ The implementation of client-side validation depends on what kind of client appl
 - **Rick Anderson. Adding validation** \
   [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](/aspnet/core/tutorials/first-mvc-app/validation)
 
-### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)
+### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript, Blazor WebAssembly)
 
 - **Form Validation** \
   <https://angular.io/guide/form-validation>
 
 - **Validation.** Breeze documentation. \
   <https://breeze.github.io/doc-js/validation.html>
+
+- **ASP.NET Core Blazor forms and input components** \ </aspnet/core/blazor/forms-and-input-components>
 
 In summary, these are the most important concepts in regards to validation:
 

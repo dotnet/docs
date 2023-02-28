@@ -118,7 +118,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
 
-<xref:Microsoft.Extensions.Options.IOptionsChangeTokenSource%601> is used to fetch the <xref:Microsoft.Extensions.Primitives.IChangeToken> used for tracking changes to the underlying `TOptions` instance. For more information on change token primitives, see [Change notifications](primitives.md).
+<xref:Microsoft.Extensions.Options.IOptionsChangeTokenSource%601> is used to fetch the <xref:Microsoft.Extensions.Primitives.IChangeToken> that tracks changes to the underlying `TOptions` instance. For more information on change-token primitives, see [Change notifications](primitives.md).
 
 ### Options interfaces benefits
 

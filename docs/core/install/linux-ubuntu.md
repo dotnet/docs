@@ -32,13 +32,17 @@ I want to install .NET because...
 
 - **I want to run a .NET app in a container, cloud, or continuous-integration scenario, and...**
 
-  - **I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0:**
+  - **I'm using Ubuntu 22.10, and I need .NET 6.0 or .NET 7.0:**
 
     Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md) and [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
 
-  - **I'm using Ubuntu 22.04, and I only need .NET 6.0:**
+  - **I'm using Ubuntu 22.04, and I need .NET 6.0:**
 
     Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
+
+  - **I'm using Ubuntu 22.04, and I need .NET 7.0:**
+
+    We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
   - **I'm using a different Ubuntu version or I need an out-of-support .NET version:**
 
@@ -73,7 +77,7 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
 |-------------------------------------|-------------------------|--------------------------|-----------------------------------|
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-| [22.04 (LTS)](linux-ubuntu-2204.md) | 7.0, 6.0                | 6.0                      | 7.0, 6.0, 5.0, 3.1                |
+| [22.04 (LTS)](linux-ubuntu-2204.md) | 7.0, 6.0                | 6.0                      | 7.0, 6.0, 3.1                     |
 | [20.04 (LTS)](linux-ubuntu-2004.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.1           |
 | [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
 | [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
@@ -84,7 +88,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ## Register the Microsoft package repository
 
-The Microsoft package repository contains all versions of .NET that were previously, or currently are, supported with your version of Ubuntu. For more information, see [Supported distributions](#supported-distributions). If the version of .NET you want to install is either unsupported or not available in the Ubuntu feed, use the Microsoft package repository or [install manually](linux-scripted-manual.md).
+The Microsoft package repository contains all versions of .NET that were previously, or currently are, [supported with your version of Ubuntu](#supported-distributions). If the version of .NET you want to install is either unsupported or not available in the Ubuntu feed, use the Microsoft package repository or [install manually](linux-scripted-manual.md).
 
 > [!IMPORTANT]
 > Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with [Snap](../linux-snap.md), an [installer script](../linux-scripted-manual.md#scripted-install), or through a [manual binary installation](../linux-scripted-manual.md#manual-install).
@@ -114,7 +118,7 @@ If you're using an Ubuntu version that contains .NET in the built-in package fee
 
 ## Install .NET
 
-After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or your version of Ubuntu's default feed supports the .NET package, you can install .NET through the package manager with the `apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 7.0, use the command `apt install dotnet-sdk-7.0`. The following table lists the currently supported .NET packages:
+After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or if your version of Ubuntu's default feed supports the .NET package, you can install .NET through the package manager with the `apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 7.0, use the command `apt install dotnet-sdk-7.0`. The following table lists the currently supported .NET packages:
 
 || Product      | Type    | Package                  |
 |---------|--------------|---------|--------------------------|
@@ -150,18 +154,21 @@ For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots
 
 ## Use APT to update .NET
 
-When a new patch release is available for .NET, you can upgrade it through APT with the following commands:
+If you installed .NET through a package manager, you can upgrade it with the following commands:
 
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
+> [!TIP]
+> If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## Troubleshooting
 
-Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` the SDK isn't listed. This can be related to using two different package sources. The official Ubuntu 22.04 and Ubuntu 22.10 package feeds include .NET, but you may have also installed .NET from the Microsoft feeds. For more information about how to fix this problem, see [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md).
+Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` the SDK isn't listed but the runtime is. This can be related to using two different package sources. The official Ubuntu 22.04 and Ubuntu 22.10 package feeds include some versions of .NET, but you may have also installed .NET from the Microsoft feeds. For more information about how to fix this problem, see [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md).
+
+Use the 
 
 ### APT problems
 

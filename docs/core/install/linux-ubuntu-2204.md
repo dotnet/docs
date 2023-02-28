@@ -14,9 +14,19 @@ This article discusses how to install .NET on Ubuntu 22.04; .NET 6 and .NET 7 ar
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-.NET is available in the Ubuntu package manager feeds, as well as the Microsoft repository. However, you should only one use or the other to install .NET. If you want to use the Microsoft repository, see [TODO]().
+.NET is available in the Ubuntu package manager feeds, as well as the Microsoft package repository. However, you should only one use or the other to install .NET. If you want to use the Microsoft package repository, see [TODO]().
 
-## Install .NET 7 SDK
+## Install .NET 7
+
+.NET 7 packages aren't available in the Ubuntu package manager feeds. You must use the Microsoft package repository. If you've previously installed .NET 6 with the Ubuntu feed, you'll run into a conflict trying to install .NET 7. Instead, do the following:
+
+01. Remove the .NET packages from your system.
+01. Add the Microsoft package repository.
+01. Install .NET
+
+## Install .NET 6 SDK
+
+The only version of .NET available in the default Ubuntu package feed is .NET 6. If you want to use other .NET version in addition to .NET 6, you should install .NET 6 and any other version you want, from the Microsoft package repository.
 
 While .NET 7 is supported on Ubuntu 22.04, it's not available in the Ubuntu package manager feeds. You can only install it through the Microsoft package repository.
 
@@ -25,20 +35,20 @@ While .NET 7 is supported on Ubuntu 22.04, it's not available in the Ubuntu pack
 
 For more information about installing .NET from the Microsoft package repository, see [TODO]().
 
-## Install .NET 7 Runtime
+## Install .NET 6 Runtime
 
-While .NET 7 is supported on Ubuntu 22.04, it's not available in the Ubuntu package manager feeds. You can only install it through the Microsoft package repository.
+While .NET 6 is supported on Ubuntu 22.04, it's not available in the Ubuntu package manager feeds. You can only install it through the Microsoft package repository.
 
 > [!WARNING]
 > If you've previously installed .NET 6 from the Ubuntu feed, you'll run into issues installing .NET 7 from the Microsoft package repository. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall .NET 6 and then install with the Microsoft package repository.
 
 For more information about installing .NET from the Microsoft package repository, see [TODO]().
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## How to install other versions
 
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+Other versions of .NET aren't supported in the Ubuntu feeds. Instead, use the Microsoft package repository.
 
 ## Troubleshooting
 

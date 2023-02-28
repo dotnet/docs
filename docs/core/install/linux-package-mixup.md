@@ -50,7 +50,7 @@ Mixing .NET packages from two different sources will most likely lead to issues 
 
 The solution to these problems is to use .NET from one package repository. Which repository to pick, and how to do it, varies by use-case and the Linux distribution.
 
-If your distribution provides .NET packages, it's recommended that you use that package repository instead of Microsoft's.
+If your distribution provides .NET packages, and you only need those packages, it's recommended that you use that package repository instead of Microsoft's.
 
 01. **I only use .NET and no other packages from the Microsoft repository, and my distribution provides .NET packages.**
 
@@ -113,13 +113,13 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
 03. **I need a recent version of .NET that's not provided by the Linux distribution repositories.**<a name="pin_ms"></a>
 
-    In this case, keep the Microsoft repository, but configure it so .NET packages from the Microsoft repository are considered a higher priority. Then, remove the already-installed .NET packages and then re-install the .NET packages from the Microsoft repository.
+    In this case, first, remove the .NET packages from your system. Reference the [Install .NET on Linux](linux.md) article and navigate to your distribution's instructions. Add the Microsoft repository, but configure it so .NET packages from the Microsoft repository are considered a higher priority. Now you can reinstall the .NET packages, which will be sourced from the Microsoft repository.
   
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
 
     ```bash
-    echo 'priority=50' | sudo tee -a /etc/yum.repos.d/microsoft-prod.repo
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
+    echo 'priority=50' | sudo tee -a /etc/yum.repos.d/microsoft-prod.repo
     sudo dnf install dotnet-sdk-7.0
     ```
 

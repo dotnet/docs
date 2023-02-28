@@ -54,7 +54,7 @@ As previously mentioned, the project files for .NET use a different format than 
 </PropertyGroup>
 ```
 
-The SDK-style project uses a different property to identify the target framework, the `<TargetFramework>` property. When targeting .NET Framework, the moniker used starts with `net` and ends with the version of .NET Framework without any periods. The moniker to target .NET Framework 4.7.2 is `net472`:
+An SDK-style project uses a different property to identify the target framework, the `<TargetFramework>` property. When targeting .NET Framework, the moniker starts with `net` and ends with the version of .NET Framework without any periods. For example, the moniker to target .NET Framework 4.7.2 is `net472`:
 
 ```xml
 <PropertyGroup>

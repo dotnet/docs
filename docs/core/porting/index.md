@@ -46,7 +46,7 @@ The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The c
 
 ## Target framework changes in SDK-style projects
 
-As previously mentioned, the project files for .NET use a different format than .NET Framework, known as the SDK-style project format. Even if you're not moving from .NET Framework to .NET, you should still upgrade the project file to the latest format. Specifying a target framework in has changed in SDK-style projects. In .NET Framework, the `<TargetFrameworkVersion>` property is used with a moniker that specified the version of .NET Framework. For example, .NET Framework 4.7.2 looks like the following snippet:
+As previously mentioned, the project files for .NET use a different format than .NET Framework, known as the SDK-style project format. Even if you're not moving from .NET Framework to .NET, you should still upgrade the project file to the latest format. The way to specify a target framework is different in SDK-style projects. In .NET Framework, the `<TargetFrameworkVersion>` property is used with a moniker that specifies the version of .NET Framework. For example, .NET Framework 4.7.2 looks like the following snippet:
 
 ```xml
 <PropertyGroup>

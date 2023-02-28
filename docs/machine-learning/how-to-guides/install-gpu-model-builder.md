@@ -1,7 +1,7 @@
 ---
 title: How to install GPU support in Model Builder
 description: Learn how to install GPU support in Model Builder
-ms.date: 02/21/2023
+ms.date: 02/28/2023
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: how-to

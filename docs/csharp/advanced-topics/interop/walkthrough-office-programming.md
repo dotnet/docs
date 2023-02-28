@@ -16,6 +16,8 @@ Both languages enable embedding of type information, which allows deployment of 
 
 This walkthrough demonstrates these features in the context of Office programming, but many of these features are also useful in general programming. In the walkthrough, you use an Excel Add-in application to create an Excel workbook. Next, you create a Word document that contains a link to the workbook. Finally, you see how to enable and disable the PIA dependency.
 
+[!INCLUDE[vsto_framework](../../includes/vsto-framework.md)]
+
 ## Prerequisites
 
 You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.

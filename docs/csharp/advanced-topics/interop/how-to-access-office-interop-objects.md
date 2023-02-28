@@ -21,6 +21,8 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 
+[!INCLUDE[vsto_framework](../../includes/vsto-framework.md)]
+
 ## To create a new console application
 
 1. Start Visual Studio.

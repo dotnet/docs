@@ -291,8 +291,8 @@
 | Resource Management - Service Fabric Managed Clusters | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabricManagedClusters/1.0.0) |  |  |
 | Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.0) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.0) |  |  |
+| Unknown Display Name | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.1) |  |  |
+| Unknown Display Name | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.1) |  |  |
 | Active Directory Authentication Library | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Configuration Provider | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.2.0)<br>NuGet [5.3.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.3.0-preview) |  | GitHub [5.2.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |

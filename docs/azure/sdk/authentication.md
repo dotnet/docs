@@ -1,9 +1,11 @@
 ---
 title: How to authenticate .NET applications with Azure services
 description: How to acquire the necessary credential objects to authenticate a .NET application with Azure services by using the Azure .NET SDK
-ms.date: 05/05/2022
 ms.topic: conceptual
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 2/28/2023
+author: alexwolfmsft
+ms.author: alexwolf
 ---
 
 # How to authenticate .NET apps to Azure services using the .NET Azure SDK

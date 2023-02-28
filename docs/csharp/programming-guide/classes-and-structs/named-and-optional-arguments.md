@@ -2,7 +2,6 @@
 title: "Named and Optional Arguments - C# Programming Guide"
 description: Named arguments in C# specify arguments by name, not position. Optional arguments can be omitted.
 ms.date: 09/25/2020
-ms.custom: contperf-fy21q1
 f1_keywords: 
   - "namedParameter_CSharpKeyword"
   - "optionalParameter_CSharpKeyword"
@@ -67,7 +66,7 @@ PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
 
 The following code implements the examples from this section along with some additional ones.  
 
-[!code-csharp[csProgGuideNamedAndOptional#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/program.cs#1)]
+:::code language="csharp" source="./snippets/NamedAndOptional/program.cs" id="Snippet1":::
 
 ## Optional arguments
 
@@ -81,7 +80,7 @@ Each optional parameter has a default value as part of its definition. If no arg
 
 Optional parameters are defined at the end of the parameter list, after any required parameters. If the caller provides an argument for any one of a succession of optional parameters, it must provide arguments for all preceding optional parameters. Comma-separated gaps in the argument list aren't supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.
 
-[!code-csharp[csProgGuideNamedAndOptional#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/optional.cs#15)]
+:::code language="csharp" source="./snippets/NamedAndOptional/optional.cs" id="Snippet15":::
 
 The following call to `ExampleMethod` causes a compiler error, because an argument is provided for the third parameter but not for the second.
 
@@ -106,7 +105,7 @@ IntelliSense uses brackets to indicate optional parameters, as shown in the foll
 
 In the following example, the constructor for `ExampleClass` has one parameter, which is optional. Instance method `ExampleMethod` has one required parameter, `required`, and two optional parameters, `optionalstr` and `optionalint`. The code in `Main` shows the different ways in which the constructor and method can be invoked.
 
-[!code-csharp[csProgGuideNamedAndOptional#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/optional.cs#2)]
+:::code language="csharp" source="./snippets/NamedAndOptional/optional.cs" id="Snippet2":::
 
 The preceding code shows a number of examples where optional parameters aren't applied correctly. The first illustrates that an argument must be supplied for the first parameter, which is required.
   
@@ -120,9 +119,9 @@ For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> metho
 
 However, you can greatly simplify the call to `AutoFormat` by using named and optional arguments. Named and optional arguments enable you to omit the argument for an optional parameter if you don't want to change the parameter's default value. In the following call, a value is specified for only one of the seven parameters.
 
-[!code-csharp[csProgGuideNamedAndOptional#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#13)]
+:::code language="csharp" source="./snippets/NamedAndOptional/namedandoptcom.cs" id="Snippet13":::
 
-For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../interop/how-to-access-office-onterop-objects.md).
+For more information and examples, see [How to use named and optional arguments in Office programming](../../advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../../advanced-topics/interop/how-to-access-office-interop-objects.md).
   
 ## Overload resolution
 

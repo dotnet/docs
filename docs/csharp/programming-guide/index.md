@@ -79,8 +79,6 @@ This section provides detailed information on key C# language features and featu
   
  [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
   
- [Interoperability](./interop/index.md)  
-  
  [Reflection](./concepts/reflection.md)  
   
 ## See also

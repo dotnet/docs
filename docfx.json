@@ -508,7 +508,6 @@
                 "docs/csharp/programming-guide/strings/**/**.md": "csharp-fundamentals",
                 "docs/csharp/programming-guide/types/**/**.md": "csharp-fundamentals",
                 "docs/csharp/programming-guide/statements-expressions-operators/**/**.md": "csharp-fundamentals",
-                "docs/csharp/programming-guide/interop/**/**.md": "csharp-advanced-concepts",
                 "docs/csharp/programming-guide/exceptions/**/**.md": "csharp-fundamentals",
                 "docs/csharp/programming-guide/namespaces/**/**.md": "csharp-fundamentals",
                 "docs/csharp/programming-guide/arrays/**/**.md": "csharp-fundamentals",
@@ -895,6 +894,10 @@
             },
             "open_to_public_contributors": {
                 "docs/standard/design-guidelines/**.md": false
+            },
+            "ms.custom": {
+                "docs/framework/**/*.md": "UpdateFrequency5",
+                "docs/visual-basic/**/*.md": "UpdateFrequency5"
             }
         },
         "dest": "_site",

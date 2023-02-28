@@ -3,7 +3,7 @@ title: POS for .NET Service Object Architecture
 description: POS for .NET Service Object Architecture (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
 ms.topic: how-to
-ms.custom: pos-restored-from-archive
+ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---
 
 # POS for .NET Service Object Architecture (POS for .NET v1.14 SDK Documentation)

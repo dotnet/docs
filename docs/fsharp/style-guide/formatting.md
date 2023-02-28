@@ -2178,9 +2178,9 @@ For inline anonymous record types, you may also use `Stroustrup` style:
 
 ```fsharp
 let f
-    (x : {|
-        x : int
-        y : AReallyLongTypeThatIsMuchLongerThan40Characters
+    (x: {|
+        x: int
+        y: AReallyLongTypeThatIsMuchLongerThan40Characters
      |})
     =
     x
@@ -2307,7 +2307,7 @@ If both generic type arguments/constraints and function parameters don’t fit, 
 
 ```fsharp
 // ✔️ OK
-let f<'T1, 'T2 when 'T1 : equality and 'T2 : comparison>
+let f<'T1, 'T2 when 'T1: equality and 'T2: comparison>
     param
     =
     // function body
@@ -2318,9 +2318,9 @@ If the type parameters or constraints are too long, break and align them as show
 ```fsharp
 // ✔️ OK
 let inline f< ^T1, ^T2
-    when ^T1 : (static member Foo1: unit -> ^T2)
-    and ^T2 : (member Foo2: unit -> int)
-    and ^T2 : (member Foo3: string -> ^T1 option)>
+    when ^T1: (static member Foo1: unit -> ^T2)
+    and ^T2: (member Foo2: unit -> int)
+    and ^T2: (member Foo3: string -> ^T1 option)>
     arg1
     arg2
     =
@@ -2331,10 +2331,10 @@ If the type parameters/constraints are broken up, but there are no normal functi
 
 ```f#
 // ✔️ OK
-let inline f<^T1, ^T2
-    when ^T1 : (static member Foo1: unit -> ^T2)
-    and ^T2 : (member Foo2: unit -> int)
-    and ^T2 : (member Foo3: string -> ^T1 option)>
+let inline f< ^T1, ^T2
+    when ^T1: (static member Foo1: unit -> ^T2)
+    and ^T2: (member Foo2: unit -> int)
+    and ^T2: (member Foo3: string -> ^T1 option)>
     =
     // function body
 ```
@@ -2409,14 +2409,14 @@ And put it on the next line, indented by one level, if it is long or multiline.
 
 ```fsharp
 type BaseClass =
-    val string1 : string
+    val string1: string
     new () = { string1 = "" }
     new (str) = { string1 = str }
 
 type DerivedClass =
     inherit BaseClass
 
-    val string2 : string
+    val string2: string
     new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
     new () = 
         { inherit 

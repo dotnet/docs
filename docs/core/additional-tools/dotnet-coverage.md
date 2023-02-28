@@ -243,7 +243,10 @@ Creates a coverage file for existing code coverage collection.
 
 ```console
 dotnet-coverage snapshot
-    [-r|--reset] [-o|--output <output>]  [-t|--timeout]
+    [-r|--reset]
+    [-o|--output <output>]
+    [-tn|--tag-name <tag-name>] [-tid|--tag-identifier <tag-identifier>]
+    [-t|--timeout]
     [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>
 ```
@@ -263,6 +266,14 @@ dotnet-coverage snapshot
 * **`-o|--output <output>`**
 
   Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
+
+* **`-tn|--tag-name <tag-name>`**
+
+  Creates a snapshot tag name in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
+
+* **`-tid|--tag-identifier <tag-identifier>`**
+
+  Creates a snapshot tag identifier in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
 
 * **`-t|--timeout`**
 
@@ -383,6 +394,12 @@ A code coverage file for session `serverdemo` can be generated with current cove
 
 ```console
 dotnet-coverage snapshot --output after_first_test.coverage serverdemo
+```
+
+Also, a snapshot tag can be added to the coverage file using tag options as follows:
+
+```console
+dotnet-coverage snapshot --tag-name after_first_test --tag-identifier after_first_test serverdemo
 ```
 
 Finally, session `serverdemo` and the server can be closed as follows:

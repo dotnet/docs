@@ -3,9 +3,9 @@ title: Native AOT deployment overview
 description: Learn what native AOT deployments are and why you should consider using it as part of the publishing your app with .NET 7 and later.
 author: lakshanf
 ms.author: lakshanf
-ms.date: 06/09/2022
+ms.date: 02/21/2023
 ---
-# Native AOT Deployment
+# Native AOT deployment
 
 Publishing your app as *native AOT* produces an app that is [self-contained](../index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
 
@@ -16,7 +16,7 @@ The native AOT deployment model uses an ahead of time compiler to compile IL to 
 There are some limitations in the .NET native AOT deployment model, with the main one being that run-time code generation is not possible. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment). The support in the .NET 7 release is targeted towards console-type applications.
 
 > [!WARNING]
-> Native AOT is supported in .NET 7 but only a limited number of libraries are fully compatible with native AOT in .NET 7.
+> In .NET 7, only a limited number of libraries are fully compatible with native AOT.
 
 ## Prerequisites
 
@@ -38,7 +38,9 @@ On Linux, install compiler toolchain and developer packages for libraries that .
     sudo apk add clang build-base zlib-dev
     ```
 
-## Publish Native AOT - CLI
+<!--Add info for macOS-->
+
+## Publish native AOT - CLI
 
 01. Add `<PublishAot>true</PublishAot>` to your project file.
 
@@ -64,7 +66,7 @@ The app will be available in the publish directory and will contain all the code
 
 Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples include [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publishing .NET projects with native AOT using containers.
 
-### Native Debug Information
+### Native debug information
 
 The native AOT publishing follows platform conventions for native toolchains. The default behavior of native toolchains on Windows is to produce debug information in a separate _.pdb_ file. The default behavior of native toolchains on Linux is to include the debug information in the native binary which makes the native binary significantly larger.
 
@@ -76,7 +78,7 @@ Set the `StripSymbols` property to `true` to produce the debug information in a 
 </PropertyGroup>
 ```
 
-## Limitations of Native AOT deployment
+## Limitations of native AOT deployment
 
 Native AOT applications come with a few fundamental limitations and compatibility issues. The key limitations include:
 
@@ -86,9 +88,9 @@ Native AOT applications come with a few fundamental limitations and compatibilit
 - No built-in COM (only applies to Windows)
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md)
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility)
-- Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size, as compared to framework-dependent apps)
+- Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps)
 
-The publish process will analyze the entire project and its dependencies and produce warnings whenever the limitations could potentially be hit by the published application at runtime.
+The publish process analyzes the entire project and its dependencies and produces warnings whenever the limitations could potentially be hit by the published application at run time.
 
 The first release of native AOT in .NET 7 has additional limitations. These include:
 
@@ -104,9 +106,12 @@ Publishing a class library as native AOT creates a native library that exposes m
 
 ## Platform/architecture restrictions
 
-The following table shows supported compilation targets when targeting .NET 7.
+The following table shows supported compilation targets.
 
 | Platform | Supported architecture |
-| ------------ | --------------------------- |
-| Windows  | x64, Arm64 |
-| Linux    | x64, Arm64 |
+| -------- | ---------------------- |
+| Windows  | x64, Arm64             |
+| Linux    | x64, Arm64             |
+| macOS*   | x64, Arm64             |
+
+* Supported starting in .NET 8.

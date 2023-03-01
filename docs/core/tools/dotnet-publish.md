@@ -76,7 +76,7 @@ Some properties in the *.pubxml* file are honored only by Visual Studio and have
 * `TargetFramework`
 * `TargetFrameworks`
 * `RuntimeIdentifier`
-*  `RuntimeIdentifiers` 
+* `RuntimeIdentifiers`
 
 ### MSBuild properties
 

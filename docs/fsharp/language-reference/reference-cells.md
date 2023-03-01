@@ -49,7 +49,12 @@ The following table shows the features that are available on the reference cell.
 |--------------------------|-----------|----|----------|
 |`ref` (operator)|Encapsulates a value into a new reference cell.|`'a -> 'a ref`|`let ref x = { contents = x }`|
 |`Value` (property)|Gets or sets the underlying value.|`unit -> 'a`|`member x.Value = x.contents`|
-|`contents` (record field)|Gets or sets the underlying value.|`'a`|`let ref x = { contents = x }`|
+
+C# programmers should know that `ref` in C# is not the same thing as `ref` in F#. The equivalent constructs in F# are [byrefs](byrefs.md), which are a different concept from reference cells.
+
+Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](./values/index.md).
+
+## Deprecated constructs
 
 Since F# 6.0, the following operators are deprecated and their use gives informational warnings:
 
@@ -57,14 +62,11 @@ Since F# 6.0, the following operators are deprecated and their use gives informa
 |--------------------------|-----------|----|----------|
 |`!` (dereference operator, deprecated)|Returns the underlying value.|`'a ref -> 'a`|`let (!) r = r.contents`|
 |`:=` (assignment operator, deprecated)|Changes the underlying value.|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
+|`contents` (record field)|Gets or sets the underlying value.|`'a`|`let ref x = { contents = x }`|
 
 The direct use of `.Value` is preferred instead, see [F# RFC FS-1111](https://aka.ms/fsharp-refcell-ops).
 
 The field `contents` is provided for compatibility with other versions of ML and will produce a warning during compilation. To disable the warning, use the `--mlcompatibility` compiler option. For more information, see [Compiler Options](compiler-options.md).
-
-C# programmers should know that `ref` in C# is not the same thing as `ref` in F#. The equivalent constructs in F# are [byrefs](byrefs.md), which are a different concept from reference cells.
-
-Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](./values/index.md).
 
 ## See also
 

@@ -15,17 +15,18 @@ ref expression
 
 ## Remarks
 
-You use the `ref` operator before an expression to create a new reference cell that encapsulates the value of the expression. You can then change the underlying value because it is mutable.
-
-A reference cell holds an actual value; it is not just an address. When you create a reference cell by using the `ref` operator, you create a copy of the underlying value as an encapsulated mutable value.
-
-You can dereference a reference cell by using the `!` (bang) operator.
+You use the `ref` function to create a new reference cell with an initial value. You can then change the underlying value because it is mutable. A reference cell holds an actual value; it is not just an address.
 
 The following code example illustrates the declaration and use of reference cells.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2201.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2203.fs)]
 
-The output is `50`.
+The output is as follows.
+
+```console
+10
+11
+```
 
 Reference cells are instances of the `Ref` generic record type, which is declared as follows.
 
@@ -50,19 +51,6 @@ The following table shows the features that are available on the reference cell.
 |`Value` (property)|Gets or sets the underlying value.|`unit -> 'a`|`member x.Value = x.contents`|
 |`contents` (record field)|Gets or sets the underlying value.|`'a`|`let ref x = { contents = x }`|
 
-Both the `Value` property and the `contents` field are assignable values. Therefore, you can use these to either access or change the underlying value, as shown in the following code.
-
-[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2203.fs)]
-
-The output is as follows.
-
-```console
-10
-10
-11
-12
-```
-
 Since F# 6.0, the following operators are deprecated and their use gives informational warnings:
 
 |Operator, member, or field|Description|Type|Definition|
@@ -84,3 +72,4 @@ Values marked as `mutable`may be automatically promoted to `'a ref` if captured 
 - [Parameters and Arguments](parameters-and-arguments.md)
 - [Symbol and Operator Reference](./symbol-and-operator-reference/index.md)
 - [Values](./values/index.md)
+- [F# RFC FS-1111](https://aka.ms/fsharp-refcell-ops)

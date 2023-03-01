@@ -52,7 +52,7 @@ The following table shows the features that are available on the reference cell.
 
 C# programmers should know that `ref` in C# is not the same thing as `ref` in F#. The equivalent constructs in F# are [byrefs](byrefs.md), which are a different concept from reference cells.
 
-Values marked as `mutable`may be automatically promoted to `'a ref` if captured by a closure; see [Values](./values/index.md).
+Values marked as `mutable` may be automatically promoted to `'a ref` if captured by a closure; see [Values](./values/index.md).
 
 ## Deprecated constructs
 

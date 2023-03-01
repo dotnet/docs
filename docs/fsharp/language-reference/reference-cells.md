@@ -15,7 +15,7 @@ ref expression
 
 ## Remarks
 
-You use the `ref` operator before a value to create a new reference cell that encapsulates the value. You can then change the underlying value because it is mutable.
+You use the `ref` operator before an expression to create a new reference cell that encapsulates the value of the expression. You can then change the underlying value because it is mutable.
 
 A reference cell holds an actual value; it is not just an address. When you create a reference cell by using the `ref` operator, you create a copy of the underlying value as an encapsulated mutable value.
 
@@ -63,12 +63,14 @@ The output is as follows.
 12
 ```
 
-The following operators are deprecated and the direct use of `.Value` is preferred instead:
+Since F# 6.0, the following operators are deprecated and their use gives informational warnings:
 
 |Operator, member, or field|Description|Type|Definition|
 |--------------------------|-----------|----|----------|
 |`!` (dereference operator, deprecated)|Returns the underlying value.|`'a ref -> 'a`|`let (!) r = r.contents`|
 |`:=` (assignment operator, deprecated)|Changes the underlying value.|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
+
+The direct use of `.Value` is preferred instead, see [F# RFC FS-1111](https://aka.ms/fsharp-refcell-ops).
 
 The field `contents` is provided for compatibility with other versions of ML and will produce a warning during compilation. To disable the warning, use the `--mlcompatibility` compiler option. For more information, see [Compiler Options](compiler-options.md).
 

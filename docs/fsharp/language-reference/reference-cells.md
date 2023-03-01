@@ -64,7 +64,7 @@ Since F# 6.0, the following operators are deprecated and their use gives informa
 |`:=` (assignment operator, deprecated)|Changes the underlying value.|`'a ref -> 'a -> unit`|`let (:=) r x = r.contents <- x`|
 |`contents` (record field)|Gets or sets the underlying value.|`'a`|`let ref x = { contents = x }`|
 
-The direct use of `.Value` is preferred instead, see [F# RFC FS-1111](https://aka.ms/fsharp-refcell-ops).
+Instead, the direct use of `.Value` is preferred; see [F# RFC FS-1111](https://aka.ms/fsharp-refcell-ops).
 
 The field `contents` is provided for compatibility with other versions of ML and will produce a warning during compilation. To disable the warning, use the `--mlcompatibility` compiler option. For more information, see [Compiler Options](compiler-options.md).
 

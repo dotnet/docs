@@ -85,7 +85,7 @@ The HTTP request will end up running that kind of C# code accessing the microser
 Regarding the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice's container always has an internal port (usually port 80) specified in its dockerfile, as in the following dockerfile:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
 EXPOSE 80
 ```
@@ -138,7 +138,7 @@ However, direct-access communication to the microservice, in this case through t
 
 Ocelot is basically a set of middleware that you can apply in a specific order.
 
-Ocelot is designed to work with ASP.NET Core only. The latest version of the package targets `.NETCoreApp 3.1` and hence it is not suitable for .NET Framework applications.
+Ocelot is designed to work with ASP.NET Core only. The latest version of the package is 18.0 which targets .NET 6 and hence is not suitable for .NET Framework applications.
 
 You install Ocelot and its dependencies in your ASP.NET Core project with [Ocelot's NuGet package](https://www.nuget.org/packages/Ocelot/), from Visual Studio.
 

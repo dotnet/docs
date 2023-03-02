@@ -50,6 +50,8 @@ Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-
 
 The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
 
+### .pubxml files
+
 You can also set publish-related properties by referring to a *.pubxml* file. For example:
 
 ```dotnetcli
@@ -64,6 +66,19 @@ In the *.pubxml* file:
 * `PublishDir` is used by the CLI to denote the Publish target.
 
 If you want the scenario to work in all places, you can initialize both these properties to the same value in the *.pubxml* file. When GitHub issue [dotnet/sdk#20931](https://github.com/dotnet/sdk/issues/20931) is resolved, only one of these properties will need to be set.
+
+Some properties in the *.pubxml* file are honored only by Visual Studio and have no effect on `dotnet publish`. We're working to bring the CLI more into alignment with Visual Studio's behavior. But some properties will never be used by the CLI. The CLI and Visual Studio both do the packaging aspect of publishing, and [dotnet/sdk#29817](https://github.com/dotnet/sdk/pull/29817) plans to add support for more properties related to that. But the CLI doesn't do the deployment automation aspect of publishing, and properties related to that are not supported. The most notable *.pubxml* properties that are not supported by `dotnet publish` are the following ones that impact the build:
+
+* `LastUsedBuildConfiguration`
+* `Configuration`
+* `Platform`
+* `LastUsedPlatform`
+* `TargetFramework`
+* `TargetFrameworks`
+* `RuntimeIdentifier`
+* `RuntimeIdentifiers`
+
+### MSBuild properties
 
 The following MSBuild properties change the output of `dotnet publish`.
 

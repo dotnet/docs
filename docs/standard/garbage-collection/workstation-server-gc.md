@@ -40,7 +40,7 @@ The following are threading and performance considerations for workstation garba
 
 The following are threading and performance considerations for server garbage collection:
 
-- The collection occurs on multiple dedicated threads that are running at `THREAD_PRIORITY_HIGHEST` priority level.
+- The collection occurs on multiple dedicated threads. On Windows, these threads run at `THREAD_PRIORITY_HIGHEST` priority level.
 
 - A heap and a dedicated thread to perform garbage collection are provided for each logical CPU, and the heaps are collected at the same time. Each heap contains a small object heap and a large object heap, and all heaps can be accessed by user code. Objects on different heaps can refer to each other.
 

@@ -40,12 +40,6 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 .NET is [supported by Microsoft](https://github.com/dotnet/core/blob/main/microsoft-support.md) when downloaded from a Microsoft source. Best effort support is offered from Microsoft when downloaded from elsewhere. You can open issues at [dotnet/core](https://github.com/dotnet/core) if you run into problems.
 
-## Important environment settings
-
-The `DOTNET_ROOT` environment variable helps apps discover where .NET SDKs and runtimes are installed. This variable isn't required when .NET is installed to the default directory, for example, `/usr/lib/dotnet` on Ubuntu. When multiple versions of .NET are installed to different directories, set `DOTNET_ROOT` to the .NET folder you want to use. Additionally, if you want to use that version's `dotnet` command, ensure that there's a symbolic link in the `/usr/bin/` folder for the `dotnet` command, or the folder is included in the `PATH` variable.
-
-For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
-
 ## Next steps
 
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-linux).

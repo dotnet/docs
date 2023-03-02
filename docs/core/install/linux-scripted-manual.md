@@ -108,6 +108,8 @@ For more information, see [dotnet-install scripts reference](../tools/dotnet-ins
 
 ## Manual install
 
+## Important environment settings
+
 <!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
 
 As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual installation is commonly used as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's better to use a package manager.
@@ -118,7 +120,7 @@ Download a **binary** release for either the SDK or the runtime from one of the 
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal.
+Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. Running the following commands makes the .NET CLI commands available at the terminal and sets the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 

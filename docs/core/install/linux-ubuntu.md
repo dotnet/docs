@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 02/17/2023
+ms.date: 03/02/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -24,57 +24,78 @@ This article describes how to install .NET on Ubuntu. For each version of Ubuntu
 
 ## Decide how to install .NET
 
-I want to install .NET because...
+When your version of Ubuntu supports .NET through the built-in Ubuntu feed, support for that feed is provided by Canonical and the builds may be optimized for different workloads. Microsoft provides support for packages in the Microsoft package repository feed.
 
-- **I want to create a .NET app:**
+Use the following sections to determine how you should install .NET:
 
-  We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+- [I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0](#im-using-ubuntu-2210-and-i-only-need-net-60-or-net-70)
+- [I'm using Ubuntu 22.04, and I only need .NET 6.0](#im-using-ubuntu-2204-and-i-only-need-net-60)
+- [I'm using Ubuntu 22.04, and I need .NET 7.0](#im-using-ubuntu-2204-and-i-need-net-70)
+- [I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`](#im-using-other-microsoft-packages-such-as-powershell-mdatp-or-mssql)
+- [I want to create a .NET app](#i-want-to-create-a-net-app)
+- [I want to run a .NET app in a container, cloud, or continuous-integration scenario](#i-want-to-run-a-net-app-in-a-container-cloud-or-continuous-integration-scenario)
+- [My Ubuntu distribution doesn't include .NET, or I need an out-of-support .NET version](#my-ubuntu-distribution-doesnt-include-net-or-i-need-an-out-of-support-net-version)
+- [I want to install a preview version](#i-want-to-install-a-preview-version)
+- [I don't want to use APT](#i-dont-want-to-use-apt)
+- [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
 
-- **I want to run a .NET app in a container, cloud, or continuous-integration scenario:**
+### I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0
 
-  If your Ubuntu version provides the .NET version you require, install it from the built-in feed. Otherwise, [register the Microsoft package repository](#register-the-microsoft-package-repository) and install .NET from that repository. Review the information in the [supported distributions](#supported-distributions) section.
+Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
 
-  If the version of .NET you want isn't available, try using [dotnet-install script](linux-scripted-manual.md#scripted-install) or a [Snap](linux-snap.md) package.
+If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For more information, see the section [Use the Microsoft feed for non .NET-related packages](#use-the-microsoft-feed-for-non-net-related-packages).
 
-- **I want to run a .NET app, and...**
+### I'm using Ubuntu 22.04, and I only need .NET 6.0
 
-  - **I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0:**
+Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
 
-    Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md) and [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
+If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For more information, see the section [Use the Microsoft feed for non .NET-related packages](#use-the-microsoft-feed-for-non-net-related-packages).
 
-  - **I'm using Ubuntu 22.04, and I only need .NET 6.0:**
+### I'm using Ubuntu 22.04, and I need .NET 7.0
 
-    Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
+.NET 7 isn't provided in the default Ubuntu package feed. You'll need to add the Microsoft package repository and then install .NET. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
-  - **I'm using Ubuntu 22.04, and I need .NET 7.0:**
+### I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`
 
-    We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+If your Ubuntu version supports .NET through the built-in Ubuntu feed, you must decide which feed should install .NET. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available the package feeds.
 
-  - **I'm using a different Ubuntu version or I need an out-of-support .NET version:**
+If you're not using the other Microsoft packages, and thus don't need the Microsoft repository, 
 
-    We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+### I want to create a .NET app
 
-- **I want to install a preview version:**
+We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
-  We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+### I want to run a .NET app in a container, cloud, or continuous-integration scenario
 
-- **I don't want to use APT:**
+If your Ubuntu version provides the .NET version you require, install it from the built-in feed. Otherwise, [register the Microsoft package repository](#register-the-microsoft-package-repository) and install .NET from that repository. Review the information in the [Supported distributions](#supported-distributions) section.
 
-  - **I want an automated install:**
+If the version of .NET you want isn't available, try using [dotnet-install script](linux-scripted-manual.md#scripted-install) or a [Snap](linux-snap.md) package.
 
-    There are two ways to install .NET, use the [Snap packages](linux-snap.md) or use the [Linux installation script](linux-scripted-manual.md#scripted-install).
+### My Ubuntu distribution doesn't include .NET, or I need an out-of-support .NET version
 
-  - **I want full control:**
+We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
-    Download a tarball and manually install .NET. For more information, see [Manual install](linux-scripted-manual.md#manual-install).
+### I want to install a preview version
 
-- **I'm using an Arm-based CPU:**
+Use one of the following ways to install .NET:
 
-  Use one of the following ways to install .NET:
+- [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
+- [Manually install .NET](linux-scripted-manual.md#manual-install)
+- [Install .NET with Snap.](linux-snap.md)
 
-  - [Install .NET with Snap.](linux-snap.md)
-  - [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
-  - [Manually install .NET](linux-scripted-manual.md#manual-install)
+### I don't want to use APT
+
+If you want an automated installation, use the [Linux installation script](linux-scripted-manual.md#scripted-install) or use the [Snap packages](linux-snap.md).
+
+If you want full control over the .NET installation experience, download a tarball and manually install .NET. For more information, see [Manual install](linux-scripted-manual.md#manual-install).
+
+### I'm using an Arm-based CPU
+
+Use one of the following ways to install .NET:
+
+- [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
+- [Manually install .NET](linux-scripted-manual.md#manual-install)
+- [Install .NET with Snap.](linux-snap.md)
 
 ## Supported distributions
 
@@ -163,15 +184,69 @@ For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots
 
 ## Use APT to update .NET
 
-If you installed .NET through a package manager, you can upgrade it with the following commands:
+If you installed .NET through a package manager, you can upgrade the package with the `apt upgrade` command. For example, the following commands upgrade the `dotnet-sdk-7.0` package with the latest version:
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade dotnet-sdk-7.0
 ```
 
 > [!TIP]
 > If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
+
+## Use both the Ubuntu feed and the Microsoft feed
+
+Some versions of .NET are available in the built-in Ubuntu package feed. You may find that you want both feeds, such as when you want to use .NET from the Ubuntu feed but still use other packages provided in the Microsoft feed. The [Supported distributions](#supported-distributions) section lists which versions of .NET are available the package feeds.
+
+### Use the Microsoft feed for non .NET-related packages
+
+If you're using the Ubuntu feed for .NET, and the Microsoft feed for other packages, de-prioritize the Microsoft feed for .NET-related packages, pin the packages as a lower priority:
+
+01. If you previously installed .NET packages from the Microsoft repository, remove them:
+
+    ```bash
+    sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
+    ```
+
+01. Create `/etc/apt/preferences` if it doesn't already exist:
+
+    ```bash
+    sudo touch /etc/apt/preferences
+    ```
+
+01. Open the preferences file in an editor of your choice, and add the following settings, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced by the Microsoft feed:
+
+    ```bash
+    Package: dotnet* aspnet* netstandard*
+    Pin: origin "packages.microsoft.com"
+    Pin-Priority: -10
+    ```
+
+01. Install the .NET packages from the Ubuntu feed. Reference the [Ubuntu-specific articles](#supported-distributions) for instructions.
+
+### Use the Microsoft feed for a specific .NET package
+
+If you want to use the Microsoft feed for a specific .NET package, even though that package is provided by the Ubuntu feed, You'll need to pin that specific package as a higher priority:
+
+01. Create `/etc/apt/preferences` if it doesn't already exist:
+
+    ```bash
+    sudo touch /etc/apt/preferences
+    ```
+
+01. Open the preferences file in an editor of your choice, and pin the package as a high priority, which will be sourced by the Microsoft Feed. For example, use the following snippet to pin .NET SDK 7.0:
+
+    ```bash
+    Package: dotnet-sdk-7.0
+    Pin: origin "packages.microsoft.com"
+    Pin-Priority: 999
+    ```
+
+01. Save the file and then Install .NET.
+
+    ```bash
+    sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+    ```
 
 ## Troubleshooting
 

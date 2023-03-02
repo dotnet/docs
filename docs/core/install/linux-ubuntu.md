@@ -80,6 +80,8 @@ I want to install .NET because...
 
 The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. Each link goes to the specific Ubuntu version page with specific instructions on how to install .NET for that version of Ubuntu.
 
+<!-- This table is replicated in each individual Ubuntu article, but with only that specific version row listed. Make sure to update those tables. -->
+
 | Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
 |-------------------------------------|-------------------------|--------------------------|-----------------------------------|
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |

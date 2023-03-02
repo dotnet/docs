@@ -8,7 +8,7 @@ ms.date: 02/17/2022
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-This article discusses how to install .NET on Ubuntu 22.10; .NET 6 and .NET 7 are supported.
+This article discusses how to install .NET on Ubuntu 22.10; .NET 6 and .NET 7 are both supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -18,6 +18,20 @@ This article discusses how to install .NET on Ubuntu 22.10; .NET 6 and .NET 7 ar
 
 > [!WARNING]
 > Don't use both repositories to manage .NET. If you've previously installed .NET from the Ubuntu feed or the Microsoft feed, you'll run into issues using the other feed. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall previously installed versions of .NET and then install with the Microsoft package repository. For more information, see [How to register the Microsoft package repository](linux-ubuntu.md#register-the-microsoft-package-repository).
+
+## Supported versions
+
+The following versions of .NET are supported or available for Ubuntu 22.10:
+
+| Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------|-----------------------------------|
+| 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+## Install .NET
 
 [!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 

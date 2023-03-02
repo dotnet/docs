@@ -14,6 +14,18 @@ This article discusses how to install .NET on Ubuntu 16.04; Only .NET 6 is suppo
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
+## Supported versions
+
+The following versions of .NET are supported or available for Ubuntu 16.04:
+
+| Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------|-----------------------------------|
+| 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+[!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
 ## Add the Microsoft package repository
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]

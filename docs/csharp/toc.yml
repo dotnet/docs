@@ -462,8 +462,6 @@ items:
         href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
       - name: "How to modify expression trees"
         href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
-      - name: "How to use expression trees to build dynamic queries"
-        href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
       - name: Debugging Expression Trees in Visual Studio
         href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
       - name: DebugView Syntax
@@ -561,6 +559,8 @@ items:
             href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
           - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+          - name: "How to use expression trees to build dynamic queries"
+            href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
         - name: LINQ and Reflection
           href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: "How to query an assembly's metadata with Reflection (LINQ)"

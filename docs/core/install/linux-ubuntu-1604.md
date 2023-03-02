@@ -3,10 +3,10 @@ title: Install .NET on Ubuntu 16.04
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 16.04.
 author: adegeo
 ms.author: adegeo
-ms.date: 02/17/2022
+ms.date: 03/01/2023
 ---
 
-# Install the .NET SDK or the .NET Runtime on Ubuntu
+# Install .NET SDK or .NET Runtime on Ubuntu 16.04
 
 This article discusses how to install .NET on Ubuntu 16.04; Only .NET 6 is supported.
 

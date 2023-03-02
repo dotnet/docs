@@ -1,5 +1,5 @@
 
-All versions of .NET are available for download at <https://dotnet.microsoft.com/download/dotnet>, but require [manual installation](../linux-scripted-manual.md). You can try and use the package manager to install a different version of .NET. However, the requested version may not be available. Usually, the [Microsoft repository]() contains all .NET versions, while the official Ubuntu feeds only contain what is currently supported.
+All versions of .NET are available for download at <https://dotnet.microsoft.com/download/dotnet>, but require [manual installation](../linux-scripted-manual.md). You can try and use the package manager to install a different version of .NET. However, the requested version may not be available.
 
 The packages added to package manager feeds are named in a hackable format, for example: `{product}-{type}-{version}`.
 

@@ -2,7 +2,7 @@
 title: Troubleshoot .NET package mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
-ms.date: 12/21/2022
+ms.date: 03/01/2023
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
@@ -63,12 +63,12 @@ If your distribution provides .NET packages, and you only need those packages, i
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
 
     ```bash
-    sudo dnf remove packages-microsoft-prod
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
+    sudo dnf remove packages-microsoft-prod
     sudo dnf install dotnet-sdk-7.0
     ```
 
-    For Ubuntu (or any other apt-based distribution) use the following bash commands
+    For Ubuntu (or any other apt-based distribution) use the following bash commands:
 
     ```bash
     sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
@@ -96,8 +96,13 @@ If your distribution provides .NET packages, and you only need those packages, i
     For Ubuntu (or any other distribution that uses apt):
 
     01. Remove the .NET packages if you previously installed them. For more information, see scenario #1.
+
+       ```bash
+       sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
+       ```
+
     01. Create `/etc/apt/preferences` if it doesn't already exist.
-    01. Add the following config to the preferences file, which prevents packages that start with `dotnet` or `aspnetcore` from being sourced by the Microsoft feed:
+    01. Add the following config to the preferences file, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced by the Microsoft feed:
 
         ```bash
         Package: dotnet* aspnet* netstandard*
@@ -111,7 +116,10 @@ If your distribution provides .NET packages, and you only need those packages, i
         sudo apt-get update && sudo apt-get install -y dotnet7
         ```
 
-03. **I need a recent version of .NET that's not provided by the Linux distribution repositories.**<a name="pin_ms"></a>
+03. **I need a recent version of .NET that's not provided by the Linux distribution repositories and I still want to use the distribution repository for supported .NET packages.**
+
+    > [!CAUTION]
+    > Mixing .NET installations from different repositories is an advanced scenario. We recommend that you use a single distribution repository for all of your .NET installs.
 
     In this case, first, remove the .NET packages from your system. Reference the [Install .NET on Linux](linux.md) article and navigate to your distribution's instructions. Add the Microsoft repository, but configure it so .NET packages from the Microsoft repository are considered a higher priority. Now you can reinstall the .NET packages, which will be sourced from the Microsoft repository.
   
@@ -141,9 +149,36 @@ If your distribution provides .NET packages, and you only need those packages, i
         sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
         ```
 
+    When .NET is installed to different folders, set the `DOTNET_ROOT` environment variable to the .NET directory required by your apps. For more information, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
+
 04. **I've encountered a bug in the Linux distribution version of .NET, I need the latest Microsoft version.**
 
     Use solution 3 to solve this problem.
+
+05. **I need multiple versions of .NET, which aren't available in the Linux distribution repositories.**
+
+    We recommend you remove all .NET packages and use the Microsoft repository to install .NET.
+
+    01. Remove the .NET related packages from your OS.
+    01. Add the Microsoft repository. The instructions on adding the Microsoft repository are provided by the Linux distribution-specific article. For more information, see [Install .NET on Linux](linux.md).
+    01. Install the .NET packages from the Microsoft repository.
+
+    For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
+
+    ```bash
+    sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
+    # Follow your distro-specific instructions to install the Microsoft package repository at https://learn.microsoft.com/dotnet/core/install/linux
+    sudo dnf install dotnet-sdk-7.0
+    ```
+
+    For Ubuntu (or any other apt-based distribution) use the following bash commands:
+
+    ```bash
+    sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
+    # Follow your distro-specific instructions to install the Microsoft package repository at https://learn.microsoft.com/dotnet/core/install/linux
+    sudo apt update
+    sudo apt install dotnet-sdk-7.0
+    ```
 
 ## Online references
 

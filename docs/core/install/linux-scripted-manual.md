@@ -131,7 +131,7 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-The preceeding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
+The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
 
 ### Set environment variables system-wide
 

@@ -17,7 +17,7 @@ This article discusses how to install .NET on Ubuntu 22.10; .NET 6 and .NET 7 ar
 .NET is available in the Ubuntu package manager feeds, as well as the Microsoft repository. However, you should only one use or the other to install .NET. Review the [Decide how to install .NET](linux-ubuntu.md#decide-how-to-install-net) section to determine which feed you should use.
 
 > [!WARNING]
-> Don't use both repositories to manage .NET. If you've previously installed .NET from the Ubuntu feed or the Microsoft feed, you'll run into issues using the other feed. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall previously installed versions of .NET and then install with the Microsoft package repository. For more information, see [TODO]().
+> Don't use both repositories to manage .NET. If you've previously installed .NET from the Ubuntu feed or the Microsoft feed, you'll run into issues using the other feed. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall previously installed versions of .NET and then install with the Microsoft package repository. For more information, see [How to register the Microsoft package repository](linux-ubuntu.md#register-the-microsoft-package-repository).
 
 [!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 
@@ -29,7 +29,7 @@ This article discusses how to install .NET on Ubuntu 22.10; .NET 6 and .NET 7 ar
 
 ## Troubleshooting
 
-If you run into issues installing or even running .NET, see [TODO]().
+If you run into issues installing or even running .NET, see [Troubleshooting](linux-ubuntu.md#troubleshooting).
 
 ## Dependencies
 

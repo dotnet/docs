@@ -32,7 +32,7 @@ rm packages-microsoft-prod.deb
 
 ## Troubleshooting
 
-If you run into issues installing or even running .NET, see [TODO]().
+If you run into issues installing or even running .NET, see [Troubleshooting](linux-ubuntu.md#troubleshooting).
 
 ## Dependencies
 

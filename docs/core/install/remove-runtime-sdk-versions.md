@@ -69,9 +69,9 @@ For machines that have installed only the runtime, and not the SDK, the package 
 
 If you installed .NET using the [dotnet-install script](linux-scripted-manual.md#scripted-install), or by [extracting a tarball](linux-scripted-manual.md#manual-install), you must remove .NET using the manual method.
 
-When you manually install .NET, it's generally installed to the `/usr/share/dotnet/` directory. The SDK, runtime, and .NET host, are installed into separate directories within that directory. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
+When you manually install .NET, it's generally installed to the `/usr/share/dotnet/` or `/usr/lib/dotnet/` directory. The SDK, runtime, and .NET host, are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
 
-There are three commands you can use to discover where .NET is installed: `dotnet --list-sdks` for SDKs, `dotnet --list-runtimes` for runtimes, and `dotnet --info` for everything. These commands don't list the .NET host. To determine which hosts are installed, check the **.NET host** directory. The following list represents the directories of a specific version of .NET, where the `$version` variable represents the version of the .NET:
+There are three commands you can use to discover where .NET is installed: `dotnet --list-sdks` for SDKs, `dotnet --list-runtimes` for runtimes, and `dotnet --info` for everything. These commands don't list the .NET host. To determine which hosts are installed, check the `/usr/share/dotnet/host/fxr/` directory. The following list represents the directories of a specific version of .NET, where the `$version` variable represents the version of the .NET:
 
 - **SDK**:
 
@@ -102,7 +102,7 @@ sudo rm -rf /usr/share/dotnet/sdk/6.0.406
 
 ### Snap
 
-TODO
+To remove a Snap package, use the `snap remove <package>` command. For example, to remove .NET Runtime 3.1, use `snap remove dotnet-runtime-31`.
 
 ### Prior to .NET Core 2.0
 

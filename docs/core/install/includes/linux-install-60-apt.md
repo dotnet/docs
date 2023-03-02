@@ -14,7 +14,6 @@ sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-6.0
 ```
 
-#TODO
 > [!IMPORTANT]
 > If you receive an error message similar to **Unable to locate package dotnet-sdk-6.0**, see the [troubleshooting](#troubleshooting) section.
 

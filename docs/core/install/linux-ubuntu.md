@@ -59,7 +59,7 @@ If you're going to use other Microsoft repository packages, such as `powershell`
 
 If your Ubuntu version supports .NET through the built-in Ubuntu feed, you must decide which feed should install .NET. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available the package feeds.
 
-If you're not using the other Microsoft packages, and thus don't need the Microsoft repository, 
+If you want to source the .NET packages from the Ubuntu feed, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For more information, see the section [Use the Microsoft feed for non .NET-related packages](#use-the-microsoft-feed-for-non-net-related-packages).
 
 ### I want to create a .NET app
 

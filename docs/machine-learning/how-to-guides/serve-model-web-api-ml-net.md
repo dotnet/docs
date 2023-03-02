@@ -21,14 +21,19 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 
 ## Create ASP.NET Core Web API project
 
-1. Start Visual Studio 2022 and select **Create a new project**. 
+1. Start Visual Studio 2022 and select **Create a new project**.
 1. In the **Create a new project** dialog:
+
   - Enter `Web API` in the search box.
   - Select the **ASP.NET Core Web API** template and selsect **Next**.
+
 1. In the **Configure your project** dialog:
+
   - Name your project **SentimentAnalysisWebAPI**.
   - Select **Next**.
+
 1. In the **Additional information** dialog:
+
     - Uncheck **Do not use top-level statements**
     - Select **Create**. 
 
@@ -41,10 +46,10 @@ For more details on installing NuGet packages in Visual Studio, see the [Install
 
 ### Add model to ASP.NET Core Web API project
 
-1. Copy your pre-built model to your *SentimentAnalysisWebAPI* project directory. 
-1. Configure your project to copy your model file to the output directory. In Solution Explorer: 
+1. Copy your pre-built model to your *SentimentAnalysisWebAPI* project directory.
+1. Configure your project to copy your model file to the output directory. In Solution Explorer:
 
-- Right-click the model zip file and select **Properties**. 
+- Right-click the model zip file and select **Properties**.
 - Under Advanced, change the value of Copy to Output Directory to **Copy if newer**.
 
 ## Create data models

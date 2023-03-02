@@ -24,18 +24,18 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 1. Start Visual Studio 2022 and select **Create a new project**.
 1. In the **Create a new project** dialog:
 
-  - Enter `Web API` in the search box.
-  - Select the **ASP.NET Core Web API** template and selsect **Next**.
+- Enter `Web API` in the search box.
+- Select the **ASP.NET Core Web API** template and selsect **Next**.
 
 1. In the **Configure your project** dialog:
 
-  - Name your project **SentimentAnalysisWebAPI**.
-  - Select **Next**.
+- Name your project **SentimentAnalysisWebAPI**.
+- Select **Next**.
 
 1. In the **Additional information** dialog:
 
-    - Uncheck **Do not use top-level statements**
-    - Select **Create**. 
+- Uncheck **Do not use top-level statements**
+- Select **Create**. 
 
 1. Install the following NuGet packages:
 
@@ -54,7 +54,7 @@ For more details on installing NuGet packages in Visual Studio, see the [Install
 
 ## Create data models
 
-You need to create some classes to define the schema of your model input and output. 
+You need to create some classes to define the schema of your model input and output.
 
 > [!NOTE]
 > The properties of your input and output schema classes depend on the dataset columns used to train your model as well as the machine learning task (regression, classification, etc.).
@@ -72,7 +72,7 @@ In your *Program.cs* file:
 
 **Model input**
 
-For this model, the input contains a single property `SentimentText` which is a string that represents a user comment. 
+For this model, the input contains a single property `SentimentText` which is a string that represents a user comment.
 
 ```csharp
 public class ModelInput

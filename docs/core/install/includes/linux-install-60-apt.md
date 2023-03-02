@@ -5,7 +5,7 @@ ms.date: 10/26/2021
 ms.topic: include
 ---
 
-## Install .NET 6 SDK
+### Install .NET 6 SDK
 
 The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
 
@@ -17,7 +17,7 @@ sudo apt-get update && \
 > [!IMPORTANT]
 > If you receive an error message similar to **Unable to locate package dotnet-sdk-6.0**, see the [troubleshooting](#troubleshooting) section.
 
-## Install .NET 6 Runtime
+### Install .NET 6 Runtime
 
 The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
 

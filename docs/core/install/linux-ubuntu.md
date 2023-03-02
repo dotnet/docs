@@ -62,7 +62,7 @@ I want to install .NET because...
 
   - **I want an automated install:**
 
-    There are two ways to install .NET, use the [Snap packages](linux-snap.md#install-the-net-sdk-or-the-net-runtime-with-snap) or use the [Linux installation script](linux-scripted-manual.md#scripted-install).
+    There are two ways to install .NET, use the [Snap packages](linux-snap.md) or use the [Linux installation script](linux-scripted-manual.md#scripted-install).
 
   - **I want full control:**
 

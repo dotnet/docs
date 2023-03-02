@@ -24,33 +24,33 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 1. Start Visual Studio 2022 and select **Create a new project**.
 1. In the **Create a new project** dialog:
 
-- Enter `Web API` in the search box.
-- Select the **ASP.NET Core Web API** template and selsect **Next**.
+    - Enter `Web API` in the search box.
+    - Select the **ASP.NET Core Web API** template and selsect **Next**.
 
 1. In the **Configure your project** dialog:
 
-- Name your project **SentimentAnalysisWebAPI**.
-- Select **Next**.
+    - Name your project **SentimentAnalysisWebAPI**.
+    - Select **Next**.
 
 1. In the **Additional information** dialog:
 
-- Uncheck **Do not use top-level statements**
-- Select **Create**. 
+    - Uncheck **Do not use top-level statements**
+    - Select **Create**. 
 
 1. Install the following NuGet packages:
 
-- [Microsoft.ML](https://www.nuget.org/packages/Microsoft.ML)
-- [Microsoft.Extensions.ML](https://www.nuget.org/packages/Microsoft.Extensions.ML/)
+    - [Microsoft.ML](https://www.nuget.org/packages/Microsoft.ML)
+    - [Microsoft.Extensions.ML](https://www.nuget.org/packages/Microsoft.Extensions.ML/)
 
-For more details on installing NuGet packages in Visual Studio, see the [Install and use a NuGet package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio#nuget-package-manager) guide.
+    For more details on installing NuGet packages in Visual Studio, see the [Install and use a NuGet package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio#nuget-package-manager) guide.
 
 ### Add model to ASP.NET Core Web API project
 
 1. Copy your pre-built model to your *SentimentAnalysisWebAPI* project directory.
 1. Configure your project to copy your model file to the output directory. In Solution Explorer:
 
-- Right-click the model zip file and select **Properties**.
-- Under Advanced, change the value of Copy to Output Directory to **Copy if newer**.
+    - Right-click the model zip file and select **Properties**.
+    - Under Advanced, change the value of Copy to Output Directory to **Copy if newer**.
 
 ## Create data models
 
@@ -70,32 +70,32 @@ In your *Program.cs* file:
 
 1. At the bottom of the file, add the following classes:
 
-**Model input**
+    **Model input**
 
-For this model, the input contains a single property `SentimentText` which is a string that represents a user comment.
+    For this model, the input contains a single property `SentimentText` which is a string that represents a user comment.
 
-```csharp
-public class ModelInput
-{
-    public string SentimentText;
-}
-```
+    ```csharp
+    public class ModelInput
+    {
+        public string SentimentText;
+    }
+    ```
 
-**Model output**
+    **Model output**
 
-Once the model evaluates the input, it outputs a prediction with three properties: `Sentiment`, `Probability`, and `Score`. In this case, the `Sentiment` is the predicted sentiment of the user comment and the `Probability` and `Score` are confidence measures for the prediction.  
+    Once the model evaluates the input, it outputs a prediction with three properties: `Sentiment`, `Probability`, and `Score`. In this case, the `Sentiment` is the predicted sentiment of the user comment and the `Probability` and `Score` are confidence measures for the prediction.  
 
-```csharp
-public class ModelOutput
-{
-    [ColumnName("PredictedLabel")]
-    public bool Sentiment { get; set; }
+    ```csharp
+    public class ModelOutput
+    {
+        [ColumnName("PredictedLabel")]
+        public bool Sentiment { get; set; }
 
-    public float Probability { get; set; }
+        public float Probability { get; set; }
 
-    public float Score { get; set; }
-}
-```
+        public float Score { get; set; }
+    }
+    ```
 
 ## Register PredictionEnginePool for use in the application
 
@@ -103,12 +103,12 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 
 The following link provides more information if you want to learn more about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
 
-1. Add the following code to your *Program.cs* file:
+Add the following code to your *Program.cs* file:
 
-    ```csharp
-    builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
-        .FromFile(modelName: "SentimentAnalysisModel", filePath: "sentiment_model.zip", watchForChanges: true);
-    ```
+```csharp
+builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
+    .FromFile(modelName: "SentimentAnalysisModel", filePath: "sentiment_model.zip", watchForChanges: true);
+```
 
 At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it.
 
@@ -145,7 +145,7 @@ app.MapPost("/predict", predictionHandler);
 
 The `/predict` endpoint accepts HTTP POST requests and uses the prediction engine pool to return a prediction using the provided input.  
 
-Once you're done, your *Program.cs* should look like the following:
+When finished, your *Program.cs* should look like the following:
 
 ```csharp
 using Microsoft.ML.Data;

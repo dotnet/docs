@@ -23,6 +23,7 @@ jobs:
           start-directory: '.'
           docset-root: './docs'
           repo-root: '.'
+          base-path: '/dotnet'
           delete: true
           orphaned-topics: true
           orphaned-images: true

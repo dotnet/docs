@@ -65,9 +65,20 @@ The package name for the .NET SDK installation for most package managers is `dot
 
 For machines that have installed only the runtime, and not the SDK, the package name is `dotnet-runtime-<version>` for the .NET runtime, and `aspnetcore-runtime-<version>` for the entire runtime stack.
 
+### Snap
+
+To remove a Snap package, use the `snap remove <package>` command. For example, to remove .NET Runtime 3.1, use `snap remove dotnet-runtime-31`.
+
+::: zone-end
+
+::: zone pivot="os-linux, os-macos"
+
 ### Scripted or manual
 
 If you installed .NET using the [dotnet-install script](linux-scripted-manual.md#scripted-install), or by [extracting a tarball](linux-scripted-manual.md#manual-install), you must remove .NET using the manual method.
+
+> [!IMPORTANT]
+> This information is written for Linux, but also applies to macOS. On macOS, the root directory is most likely `/usr/local/share/dotnet/`. Substitute the directories accordingly.
 
 When you manually install .NET, it's generally installed to the `/usr/share/dotnet/` or `/usr/lib/dotnet/` directory. The SDK, runtime, and .NET host, are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
 
@@ -100,9 +111,12 @@ sudo rm -rf /usr/share/dotnet/sdk/6.0.406
 > [!IMPORTANT]
 > The version directories may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release may have different versions. For example, you may have installed ASP.NET Core 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. Each has a different versioned directory. For more information, see [Overview of how .NET is versioned](../versions/index.md).
 
-### Snap
+> [!IMPORTANT]
+> If you're using an Arm-based Mac, such as one with an M1 chip, review the directory paths described in [Install .NET on Arm-based Macs](macos.md#arm-based-macs).
 
-To remove a Snap package, use the `snap remove <package>` command. For example, to remove .NET Runtime 3.1, use `snap remove dotnet-runtime-31`.
+::: zone-end
+
+::: zone pivot="os-linux"
 
 ### Prior to .NET Core 2.0
 
@@ -113,29 +127,6 @@ apt-get remove dotnet-host
 ```
 
 There's no version attached to `dotnet-host`.
-
-::: zone-end
-
-::: zone pivot="os-macos"
-
-On Mac, you must remove the SDKs and runtimes separately, by removing the versioned directories. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
-
-```bash
-version="1.0.1"
-sudo rm -rf /usr/local/share/dotnet/sdk/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
-```
-
-> [!IMPORTANT]
-> The version directories may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with .NET may have different versions. For example, you may have installed .NET 5 Runtime, which installed the 5.0.2 ASP.NET Core runtime and the 5.0.8 .NET runtime. For more information, see [Overview of how .NET is versioned](../versions/index.md).
-
-> [!IMPORTANT]
-> If you're using an Arm-based Mac, such as one with an M1 chip, review the directory paths described in [Install .NET on Arm-based Macs](macos.md#arm-based-macs).
-
-The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
 ::: zone-end
 

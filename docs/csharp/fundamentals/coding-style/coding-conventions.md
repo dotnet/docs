@@ -174,9 +174,9 @@ namespace CoolStuff.AwesomeFeature
 }
 ```
 
-Assuming there is a reference (direct, or indirect) to Azure.Core.dll [WaitUntil](https://learn.microsoft.com/dotnet/api/azure.waituntil?view=azure-dotnet) class.
+Assuming there is a reference (direct, or indirect) to the <xref:Azure.WaitUntil> class.
 
-Now, let’s change it slightly:
+Now, let's change it slightly:
 
 ```csharp
 namespace CoolStuff.AwesomeFeature
@@ -194,14 +194,14 @@ namespace CoolStuff.AwesomeFeature
 }
 ```
 
-And it compiles today.  And tomorrow.  But then sometime next week this (untouched) code fails with two errors:
+And it compiles today. And tomorrow. But then sometime next week this (untouched) code fails with two errors:
 
 ```console
 - error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
 - error CS0103: The name 'WaitUntil' does not exist in the current context
 ```
 
-One of the dependencies has introduced this class:
+One of the dependencies has introduced this class in a namespace then ends with `.Azure`:
 
 ```csharp
 namespace CoolStuff.Azure
@@ -213,13 +213,13 @@ namespace CoolStuff.Azure
 }
 ```
 
-The "inside" using-import-statement is complicatedly context-sensitive.  In the case above, it is the **first** one that it finds out.
+A `using` directive placed inside a namespace is context-sensitive and complicates name resolution. In this example, it's the first namespace that it finds.
 
 - `CoolStuff.AwesomeFeature.Azure`
 - `CoolStuff.Azure`
 - `Azure`
 
-Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would be match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. It's easier to place `using` declarations outside the namespace instead.
+Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. However, it's easier to place `using` declarations outside the namespace instead.
 
 ```csharp
 namespace CoolStuff.AwesomeFeature
@@ -277,7 +277,7 @@ The following sections describe practices that the C# team follows to prepare co
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet10":::
 
-- Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../../programming-guide/types/using-type-dynamic.md).
+- Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../../advanced-topics/interop/using-type-dynamic.md).
 
 - Use implicit typing to determine the type of the loop variable in [`for`](../../language-reference/statements/iteration-statements.md#the-for-statement) loops.
 

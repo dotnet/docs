@@ -1,9 +1,9 @@
 ---
 title: Additional methods to authenticate to Azure resources from .NET apps
 description: This article describes additional, less common methods you can use to authenticate your .NET app to Azure resources. 
-ms.date: 05/05/2022
 ms.topic: how-to
-ms.custom: devx-track-dotnet
+ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 2/28/2023
 ---
 
 # Additional methods to authenticate to Azure resources from .NET apps

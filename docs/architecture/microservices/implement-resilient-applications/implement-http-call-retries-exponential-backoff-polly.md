@@ -14,24 +14,24 @@ Polly is a .NET library that provides resilience and transient-fault handling ca
 
 The following steps show how you can use Http retries with Polly integrated into `IHttpClientFactory`, which is explained in the previous section.
 
-**Reference the .NET 6 packages**
+**Reference the .NET 7 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 7 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
-**Configure a client with Polly's Retry policy, in Startup**
+**Configure a client with Polly's Retry policy, in app startup**
 
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard `Startup.ConfigureServices(...)` method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
 
 ```csharp
-//ConfigureServices()  - Startup.cs
-services.AddHttpClient<IBasketService, BasketService>()
+// Program.cs
+builder.Services.AddHttpClient<IBasketService, BasketService>()
         .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
         .AddPolicyHandler(GetRetryPolicy());
 ```
 
 The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly's policy for Http Retries with exponential backoff.
 
-To have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as shown in the following code:
+To have a more modular approach, the Http Retry Policy can be defined in a separate method within the _Program.cs_ file, as shown in the following code:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()

@@ -1,6 +1,6 @@
 `DefaultAzureCredential` supports multiple authentication methods and determines the authentication method being used at runtime.  In this way, your app can use different authentication methods in different environments without implementing environment specific code.
 
-The order and locations in which `DefaultAzureCredential` looks for credentials is found at [DefaultAzureCredential](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#defaultazurecredential).
+The order and locations in which `DefaultAzureCredential` looks for credentials is found at [DefaultAzureCredential](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true#defaultazurecredential).
 
 To implement `DefaultAzureCredential`, first add the [`Azure.Identity`](/dotnet/api/azure.identity) and optionally the [`Microsoft.Extensions.Azure`](/dotnet/api/microsoft.extensions.azure) packages to your application. You can do this using either the command line or the NuGet Package Manager.
 

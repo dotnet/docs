@@ -97,9 +97,9 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   Places the built packages in the directory specified.
 
-  - .NET 7.0.200 SDK and later
+  - .NET 7.0.200 SDK
 
-    If you specify the `--output` option when running this command on a solution, the CLI will emit an error due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies.
+    In the 7.0.200 SDK, if you specify the `--output` option when running this command on a solution, the CLI will emit an error. This is a regression and was fixed in 7.0.201 and later versions of the .NET SDK.
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 

@@ -27,23 +27,20 @@ In this section, you'll learn how to implement the HealthChecks feature in a sam
 
 To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, we define the microservice is healthy if its API is accessible via HTTP and its related SQL Server database is also available.
 
-In .NET 6, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
+In .NET 7, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
 
 ```csharp
-// Startup.cs from .NET 6 Web API sample
-//
-public void ConfigureServices(IServiceCollection services)
-{
-    //...
-    // Registers required services for health checks
-    services.AddHealthChecks()
-        // Add a health check for a SQL Server database
-        .AddCheck(
-            "OrderingDB-check",
-            new SqlConnectionHealthCheck(Configuration["ConnectionString"]),
-            HealthStatus.Unhealthy,
-            new string[] { "orderingdb" });
-}
+// Program.cs from .NET 7 Web API sample
+
+//...
+// Registers required services for health checks
+builder.Services.AddHealthChecks()
+    // Add a health check for a SQL Server database
+    .AddCheck(
+        "OrderingDB-check",
+        new SqlConnectionHealthCheck(builder.Configuration["ConnectionString"]),
+        HealthStatus.Unhealthy,
+        new string[] { "orderingdb" });
 ```
 
 In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with "Healthy".  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database's health.
@@ -105,19 +102,9 @@ Note that in the previous code, `Select 1` is the query used to check the Health
 Finally, add a middleware that responds to the url path `/hc`:
 
 ```csharp
-// Startup.cs from .NET 6 Web Api sample
-//
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    //…
-    app.UseEndpoints(endpoints =>
-    {
-        //...
-        endpoints.MapHealthChecks("/hc");
-        //...
-    });
-    //…
-}
+// Program.cs from .NET 7 Web Api sample
+
+app.MapHealthChecks("/hc");
 ```
 
 When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health checks that are configured in the `AddHealthChecks()` method in the Startup class and shows the result.
@@ -137,7 +124,7 @@ For instance, in the `Catalog.API` microservice, the following NuGet packages we
 In the following code, the health check implementations are added for each dependent service and then the middleware is configured:
 
 ```csharp
-// Startup.cs from Catalog.api microservice
+// Extension method from Catalog.api microservice
 //
 public static IServiceCollection AddCustomHealthCheck(this IServiceCollection services, IConfiguration configuration)
 {
@@ -237,24 +224,15 @@ Sample configuration file for health check UI:
 }
 ```
 
-*Startup.cs* file that adds HealthChecksUI:
+_Program.cs_ file that adds HealthChecksUI:
 
 ```csharp
-// Startup.cs from WebStatus(Watch Dog) service
+// Program.cs from WebStatus(Watch Dog) service
 //
-public void ConfigureServices(IServiceCollection services)
-{
-    //…
-    // Registers required services for health checks
-    services.AddHealthChecksUI();
-}
-//…
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    //…
-    app.UseHealthChecksUI(config => config.UIPath = "/hc-ui");
-    //…
-}
+// Registers required services for health checks
+builder.Services.AddHealthChecksUI();
+// build the app, register other middleware
+app.UseHealthChecksUI(config => config.UIPath = "/hc-ui");
 ```
 
 ## Health checks when using orchestrators

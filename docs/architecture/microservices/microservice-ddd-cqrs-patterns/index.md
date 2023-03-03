@@ -65,7 +65,7 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 ##### DDD training
 
 - **Julie Lerman and Steve Smith. Domain-Driven Design Fundamentals** \
-  <https://bit.ly/PS-DDD>
+  <https://www.pluralsight.com/courses/fundamentals-domain-driven-design>
 
 >[!div class="step-by-step"]
 >[Previous](../multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)

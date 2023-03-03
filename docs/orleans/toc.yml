@@ -152,10 +152,11 @@ items:
             href: host/configuration-guide/startup-tasks.md
           - name: Orleans graceful shut down
             href: host/configuration-guide/shutting-down-orleans.md
-      - name: Monitoring
+      - name: Observability
         items:
-          - name: Runtime monitoring
+          - name: Overview
             href: host/monitoring/index.md
+            displayName: zipkin,jaeger,open telemetry,opentelemetry,meter,counter,activity source,observability,monitoring,logging,metrics,telemetry,distributed tracing
           - name: Silo error code monitoring
             href: host/monitoring/silo-error-code-monitoring.md
           - name: Client error code monitoring

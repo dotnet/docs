@@ -27,7 +27,7 @@ jobs:
           delete: true
           orphaned_topics: true
           orphaned_images: true
-          orphaned_snippet: true
+          orphaned_snippets: true
           orphaned_includes: true
           replace_redirects: true
           relative_links: true

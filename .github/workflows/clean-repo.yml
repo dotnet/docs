@@ -3,6 +3,7 @@ name: "clean repo"
 on:
   schedule:
     - cron: "0 1 1 * *" # Runs at 01:00, on day 1 of the month
+  workflow_dispatch:
 
 jobs:
   clean-repo:

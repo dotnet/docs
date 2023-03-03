@@ -187,7 +187,7 @@
 | Resource Management - Marketplace | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.Marketplace/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Marketplace-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Marketplace_1.0.1/sdk/marketplace/Azure.ResourceManager.Marketplace/) |
 | Resource Management - Marketplace Ordering | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MarketplaceOrdering/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MarketplaceOrdering-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MarketplaceOrdering_1.0.1/sdk/marketplaceordering/Azure.ResourceManager.MarketplaceOrdering/) |
 | Resource Management - Media | NuGet [1.1.0](https://www.nuget.org/packages/Azure.ResourceManager.Media/1.1.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Media-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Media_1.1.0/sdk/mediaservices/Azure.ResourceManager.Media/) |
-| Resource Management - MixedReality | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MixedReality/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MixedReality-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MixedReality_1.0.1/sdk/mixedreality/Azure.ResourceManager.MixedReality/) |
+| Resource Management - Mixed Reality | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MixedReality/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MixedReality-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MixedReality_1.0.1/sdk/mixedreality/Azure.ResourceManager.MixedReality/) |
 | Resource Management - Mobilenetwork | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.MobileNetwork/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MobileNetwork_1.0.0-beta.1/sdk/mobilenetwork/Azure.ResourceManager.MobileNetwork/) |
 | Resource Management - Monitor | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.Monitor/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Monitor-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Monitor_1.0.1/sdk/monitor/Azure.ResourceManager.Monitor/) |
 | Resource Management - MySQL | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MySql/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MySql-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MySql_1.0.1/sdk/mysql/Azure.ResourceManager.MySql/) |
@@ -249,7 +249,6 @@
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
-| Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.1) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
@@ -291,8 +290,9 @@
 | Resource Management - Service Fabric Managed Clusters | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabricManagedClusters/1.0.0) |  |  |
 | Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
-| Unknown Display Name | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.1) |  |  |
-| Unknown Display Name | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.1) |  |  |
+| Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
+| Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Active Directory Authentication Library | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Configuration Provider | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.2.0)<br>NuGet [5.3.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.3.0-preview) |  | GitHub [5.2.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |
@@ -327,7 +327,7 @@
 | Configuration Manager | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.ConfigurationManager/4.0.0) |  |  |
 | Container Registry | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.ContainerRegistry/1.0.0-preview.2) |  | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ContainerRegistry_1.0.0-preview.2/sdk/containerregistry/Microsoft.Azure.ContainerRegistry/) |
 | Content Moderator | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.ContentModerator/2.0.0) |  |  |
-| Cosmos DB | NuGet [3.32.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.32.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.32.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.1) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.32.1](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB | NuGet [2.18.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.18.0) |  | GitHub [2.18.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
 | Custom Image Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingCustomImageSearch) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
@@ -435,10 +435,10 @@
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
 | Service Bus | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.ServiceBus-readme) | GitHub [5.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ServiceBus_5.2.0/sdk/servicebus/Microsoft.Azure.ServiceBus/) |
 | Service Bus | NuGet [6.2.2](https://www.nuget.org/packages/WindowsAzure.ServiceBus/6.2.2) |  |  |
-| SignalR | NuGet [1.21.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.21.1) |  | GitHub [1.21.1](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
-| SignalR - ASP.NET | NuGet [1.21.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.21.1) |  | GitHub [1.21.1](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
+| SignalR | NuGet [1.21.2](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.21.2) |  | GitHub [1.21.2](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
+| SignalR - ASP.NET | NuGet [1.21.2](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.21.2) |  | GitHub [1.21.2](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
-| SignalR - Protocols | NuGet [1.21.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.21.1) |  | GitHub [1.21.1](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
+| SignalR - Protocols | NuGet [1.21.2](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.21.2) |  | GitHub [1.21.2](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.9.0) |  | GitHub [1.9.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
 | Speech | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.25.0)<br>NuGet [1.25.1-beta.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.25.1-beta.1) |  |  |
 | Speech Remote Conversation | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.25.0)<br>NuGet [1.25.1-beta.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.25.1-beta.1) |  |  |
@@ -456,7 +456,6 @@
 | Synapse Analytics | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Synapse/0.1.0-preview) |  | GitHub [0.1.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Synapse_0.1.0-preview/sdk/synapse/Microsoft.Azure.Synapse/) |
 | Tables | NuGet [2.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table/2.0.0-preview) |  |  |
 | Tables | NuGet [2.1.2](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table/2.1.2) |  |  |
-| Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |
 | Text Analytics | NuGet [4.1.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.TextAnalytics/4.1.0-preview.2) |  | GitHub [4.1.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.TextAnalytics_4.1.0-preview.2/sdk/cognitiveservices/Language.TextAnalytics) |
 | Video Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingVideoSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingVideoSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingVideoSearch) |
 | Video Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.VideoSearch/2.0.0) |  |  |
@@ -522,7 +521,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.1.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [1.0.122-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/1.0.122-preview) |  |  |
@@ -742,7 +741,7 @@
 | Resource Management - Service Bus | NuGet [0.19.0-preview](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.ServiceBus/0.19.0-preview) |  |  |
 | Resource Management - Workload Monitor | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.WorkloadMonitor/1.0.0-preview) |  |  |
 | Security Insights | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityInsights/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityInsights_2.0.0/sdk/securityinsights/Microsoft.Azure.Management.SecurityInsights/) |
-| SignalR Management | NuGet [1.21.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.21.1) |  | GitHub [1.21.1](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
+| SignalR Management | NuGet [1.21.2](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.21.2) |  | GitHub [1.21.2](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
 | SQL Server Mangement - Key Vault Provider | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider/2.4.0) |  |  |
 | WindowsAzure Management | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management/4.1.3) |  |  |
 | WindowsAzure Management - Automation | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Automation/1.0.3) |  |  |
@@ -767,3 +766,4 @@
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.1.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
+| Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

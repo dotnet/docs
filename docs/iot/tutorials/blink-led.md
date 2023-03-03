@@ -52,7 +52,7 @@ Complete the following steps in your preferred development environment:
     cd BlinkTutorial
     ```
 
-1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-iot-package.md)]
+1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-gpio-package.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
     :::code language="csharp" source="~/iot-samples/tutorials/BlinkTutorial/Program.cs" :::

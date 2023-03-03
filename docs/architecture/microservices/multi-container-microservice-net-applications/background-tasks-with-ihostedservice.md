@@ -167,7 +167,12 @@ public class GracePeriodManagerService : BackgroundService
             // and publishing events into the Event Bus (RabbitMQ / ServiceBus)
             CheckConfirmedGracePeriodOrders();
 
-            await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
+            try {
+                    await Task.Delay(_settings.CheckUpdateTime, stoppingToken);
+                }
+            catch (TaskCanceledException exception) {
+                    _logger.LogCritical(exception, "TaskCanceledException Error", exception.Message);
+                }
         }
 
         _logger.LogDebug($"GracePeriod background task is stopping.");

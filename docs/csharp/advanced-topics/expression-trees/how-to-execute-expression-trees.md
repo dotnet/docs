@@ -2,8 +2,6 @@
 title: "How to execute expression trees (C#)"
 description: Learn how to execute an expression tree to return a value or perform an action like calling a method.
 ms.date: 07/20/2015
-ms.topic: how-to
-ms.assetid: b8c40db5-2464-4bb9-9001-8c2bc7f006c5
 ---
 # How to execute expression trees (C#)
 
@@ -15,7 +13,33 @@ This topic shows you how to execute an expression tree. Executing an expression 
 > If the type of the delegate is not known, that is, the lambda expression is of type <xref:System.Linq.Expressions.LambdaExpression> and not <xref:System.Linq.Expressions.Expression%601>, you must call the <xref:System.Delegate.DynamicInvoke%2A> method on the delegate instead of invoking it directly.  
   
  If an expression tree does not represent a lambda expression, you can create a new lambda expression that has the original expression tree as its body, by calling the <xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Collections.Generic.IEnumerable%7BSystem.Linq.Expressions.ParameterExpression%7D%29> method. Then, you can execute the lambda expression as described earlier in this section.  
+
+## Compiling expression trees
   
+The <xref:System.Linq.Expressions.Expression%601> type provides the <xref:System.Linq.Expressions.Expression%601.Compile%2A> method that compiles the code represented by an expression tree into an executable delegate.
+
+The following code example demonstrates how to compile an expression tree and run the resulting code.
+
+```csharp
+// Creating an expression tree.
+Expression<Func<int, bool>> expr = num => num < 5;
+
+// Compiling the expression tree into a delegate.
+Func<int, bool> result = expr.Compile();
+
+// Invoking the delegate and writing the result to the console.
+Console.WriteLine(result(4));
+
+// Prints True.
+
+// You can also use simplified syntax
+// to compile and run an expression tree.
+// The following line can replace two previous statements.
+Console.WriteLine(expr.Compile()(4));
+
+// Also prints True.
+```
+
 ## Example  
 
  The following code example demonstrates how to execute an expression tree that represents raising a number to a power by creating a lambda expression and executing it. The result, which represents the number raised to the power, is displayed.  

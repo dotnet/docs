@@ -2,14 +2,37 @@
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 06/20/2016
-ms.technology: csharp-advanced-concepts
-
-ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 
 # Interpreting Expressions
 
 [Previous -- Executing Expressions](expression-trees-execution.md)
+
+## Parsing expression trees
+
+The following code example demonstrates how the expression tree that represents the lambda expression `num => num < 5` can be decomposed into its parts.
+
+```csharp
+// Add the following using directive to your code file:
+// using System.Linq.Expressions;
+
+// Create an expression tree.
+Expression<Func<int, bool>> exprTree = num => num < 5;
+
+// Decompose the expression tree.
+ParameterExpression param = (ParameterExpression)exprTree.Parameters[0];
+BinaryExpression operation = (BinaryExpression)exprTree.Body;
+ParameterExpression left = (ParameterExpression)operation.Left;
+ConstantExpression right = (ConstantExpression)operation.Right;
+
+Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
+                  param.Name, left.Name, operation.NodeType, right.Value);
+
+// This code produces the following output:
+
+// Decomposed expression: num => num LessThan 5
+```
+
 
 Now, let's write some code to examine the structure of an
 *expression tree*. Every node in an expression tree will be

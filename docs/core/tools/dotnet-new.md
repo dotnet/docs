@@ -47,7 +47,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-  You can run [`dotnet new list`](dotnet-new-list.md) to see a list of all installed templates.
+  You can run [`dotnet new --list`](dotnet-new-list.md) to see a list of all installed templates.
 
   Starting with .NET Core 3.0 SDK and ending with .NET SDK 5.0.300, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
 

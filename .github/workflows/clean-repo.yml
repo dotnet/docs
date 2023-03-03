@@ -20,18 +20,18 @@ jobs:
         id: clean-repo-step
         uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
         with:
-          start-directory: '.'
-          docset-root: './docs'
-          repo-root: '.'
-          base-path: '/dotnet'
+          start_directory: '.'
+          docset_root: './docs'
+          repo_root: '.'
+          base_path: '/dotnet'
           delete: true
-          orphaned-topics: true
-          orphaned-images: true
-          orphaned-snippet: true
-          orphaned-includes: true
-          replace-redirects: true
-          relative-links: true
-          remove-hops: true
+          orphaned_topics: true
+          orphaned_images: true
+          orphaned_snippet: true
+          orphaned_includes: true
+          replace_redirects: true
+          relative_links: true
+          remove_hops: true
         
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request

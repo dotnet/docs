@@ -291,6 +291,7 @@
 | Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Active Directory Authentication Library | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |

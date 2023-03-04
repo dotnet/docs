@@ -36,6 +36,8 @@ items:
         href: globalization/8.0/twodigityearmax-default.md
     - name: SDK
       items:
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -192,6 +194,8 @@ items:
         href: sdk/7.0/automatic-runtimeidentifier.md
       - name: Automatic RuntimeIdentifier for publish only
         href: sdk/7.0/automatic-rid-publish-only.md
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
       - name: Version requirements for .NET 7 SDK
         href: sdk/7.0/vs-msbuild-version.md
       - name: Serialization of custom types in .NET 7
@@ -1256,6 +1260,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -1266,6 +1272,8 @@ items:
         href: sdk/7.0/automatic-runtimeidentifier.md
       - name: Automatic RuntimeIdentifier for publish only
         href: sdk/7.0/automatic-rid-publish-only.md
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
       - name: Version requirements for .NET 7 SDK
         href: sdk/7.0/vs-msbuild-version.md
       - name: Serialization of custom types in .NET 7

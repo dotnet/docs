@@ -1,0 +1,44 @@
+name: "clean repo"
+
+on:
+  schedule:
+    - cron: "0 1 1 * *" # Runs at 01:00, on day 1 of the month
+  workflow_dispatch:
+
+jobs:
+  clean-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
+
+      # Call clean repo
+      - name: Clean repo
+        id: clean-repo-step
+        uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
+        with:
+          start_directory: '.'
+          docset_root: './docs'
+          repo_root: '.'
+          base_path: '/dotnet'
+          delete: true
+          orphaned_topics: true
+          orphaned_images: true
+          orphaned_snippets: true
+          orphaned_includes: true
+          replace_redirects: true
+          relative_links: true
+          remove_hops: true
+        
+      # Create the PR for the work done by the "clean repo" tool
+      - name: create-pull-request
+        uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
+        with:
+          branch: create-cleanrepo-pull-request/patch
+          title: "Monthly chores: automated clean repo tool"
+          commit-message: 'Bot 🤖 generated "Clean repo tool run"'
+          body: "Automated creation of Clean repo updates."

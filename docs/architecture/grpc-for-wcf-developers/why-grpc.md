@@ -14,7 +14,7 @@ Before we dive deeply into the language and techniques of gRPC, it's worth discu
 
 Although the implementation and approach are different for gRPC, the experience of developing and consuming services with gRPC should be intuitive for WCF developers. The underlying goal is the same: make it possible to code as though the client and server are on the same platform, without needing to worry about networking.
 
-Both platforms share the principle of declaring and then implementing an interface, even though the process for declaring that interface is different. And as you'll see in chapter 5, the different types of RPC calls that gRPC supports map well to the bindings available to WCF services.
+Both platforms share the principle of declaring and then implementing an interface, even though the process for declaring that interface is different. And as you'll see in [chapter 5](migrate-wcf-to-grpc.md), the different types of RPC calls that gRPC supports map well to the bindings available to WCF services.
 
 ## Benefits of gRPC
 

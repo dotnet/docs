@@ -23,7 +23,6 @@ jobs:
           echo "Reason: ${{ github.event.inputs.reason }}"
 
       - name: bulk-sequester
-        if: ${{ github.event_name == 'workflow_dispatch' }}
         id: bulk-sequester
         uses: dotnet/docs-tools/actions/sequester@main
         env:

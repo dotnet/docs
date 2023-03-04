@@ -441,8 +441,8 @@
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
 | SignalR - Protocols | NuGet [1.21.2](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.21.2) |  | GitHub [1.21.2](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.9.0) |  | GitHub [1.9.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
-| Speech | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.25.0)<br>NuGet [1.25.1-beta.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.25.1-beta.1) |  |  |
-| Speech Remote Conversation | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.25.0)<br>NuGet [1.25.1-beta.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.25.1-beta.1) |  |  |
+| Speech | NuGet [1.26.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.26.0) |  |  |
+| Speech Remote Conversation | NuGet [1.26.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.26.0) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |

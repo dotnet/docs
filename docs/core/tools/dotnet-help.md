@@ -36,5 +36,5 @@ The `dotnet help` command opens up the reference page for more detailed informat
 - Opens the documentation page for the [dotnet new](dotnet-new.md) command:
 
   ```dotnetcli
-  dotnet help new
+  dotnet help new -h
   ```

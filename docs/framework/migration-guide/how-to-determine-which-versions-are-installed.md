@@ -112,7 +112,7 @@ Use PowerShell commands to check the value of the **Release** entry of the **HKE
 The following examples check the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
 ```powershell
-(Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802
+(Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release) -ge 394802
 ```
 
 ### Query the registry using code
@@ -124,7 +124,7 @@ The following examples check the value of the **Release** entry to determine whe
 
 01. Check the **Release** REG_DWORD value to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 
-The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed.
+The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8.1 that are installed.
 
 > [!TIP]
 > Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
@@ -139,7 +139,35 @@ The example displays output like the following:
 .NET Framework Version: 4.6.1
 ```
 
-This example follows the recommended practice for version checking:
+## Query the registry using code PowerShell
+
+The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8.1 that are installed using PowerShell:
+
+```powershell
+$release = Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release
+switch ($release) {
+    { $_ -ge 533320 } { $version = '4.8.1 or later'; break }
+    { $_ -ge 528040 } { $version = '4.8'; break }
+    { $_ -ge 461808 } { $version = '4.7.2'; break }
+    { $_ -ge 461308 } { $version = '4.7.1'; break }
+    { $_ -ge 460798 } { $version = '4.7'; break }
+    { $_ -ge 394802 } { $version = '4.6.2'; break }
+    { $_ -ge 394254 } { $version = '4.6.1'; break }
+    { $_ -ge 393295 } { $version = '4.6'; break }
+    { $_ -ge 379893 } { $version = '4.5.2'; break }
+    { $_ -ge 378675 } { $version = '4.5.1'; break }
+    { $_ -ge 378389 } { $version = '4.5'; break }
+    default { $version = $null; break }
+}
+
+if ($version) {
+    Write-Host -Object ".NET Framework Version: $version"
+} else {
+    Write-Host -Object '.NET Framework Version 4.5 or later is not detected.'
+}
+```
+
+These examples follows the recommended practice for version checking:
 
 - It checks whether the value of the **Release** entry is *greater than or equal to* the value of the known release keys.
 - It checks in order from most recent version to earliest version.
@@ -199,6 +227,51 @@ v3.0  3.0.30729.4926  SP2
 v3.5  3.5.30729.4926  SP1
 v4.0
   Client  4.0.0.0
+```
+
+## Query the registry using PowerShell (older framework versions)
+
+The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8.1 that are installed using PowerShell:
+
+```powershell
+Get-ChildItem -Path 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP' |
+Where-Object { ($_.PSChildName -ne "v4") -and ($_.PSChildName -like 'v*') } |
+ForEach-Object {
+    $name = $_.Version
+    $sp = $_.SP
+    $install = $_.Install
+    if (-not $install) {
+        Write-Host -Object "$($_.PSChildName)  $($name)"
+    }
+    elseif ($intall -eq '1') {
+        if (-not $sp) {
+            Write-Host -Object "$($_.PSChildName)  $($name)"
+        }
+        else {
+            Write-Host -Object "$($_.PSChildName)  $($name) SP$($sp)"
+        }
+}
+    if (-not $name) {
+        $parentName = $_.PSChildName
+        Get-ChildItem -LiteralPath $_.PSPath |
+        Where-Object {
+            if ($_.Property -contains 'Version') { $name = Get-ItemPropertyValue -Path $_.PSPath -Name Version }
+            if ($name -and ($_.Property -contains 'SP')) { $sp = Get-ItemPropertyValue -Path $_.PSPath -Name SP }
+            if ($_.Property -contains 'Install') { $install = Get-ItemPropertyValue -Path $_.PSPath -Name Install }
+            if (-not $install) {
+                Write-Host -Object "  $($parentName)  $($name)"
+            }
+            elseif ($install -eq '1') {
+                if (-not $sp) {
+                    Write-Host -Object "  $($_.PSChildName)  $($name)"
+                }
+                else {
+                    Write-Host -Object "  $($_.PSChildName)  $($name) SP$($sp)"
+                }
+            }
+        }
+    }
+}
 ```
 
 ## Find CLR versions

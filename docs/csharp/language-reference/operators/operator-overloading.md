@@ -38,7 +38,7 @@ The following table shows the operators that can be overloaded:
 
 ## Non overloadable operators
 
-The following table shows the operators that can't be overloaded:
+The following table shows the operators that cannot be overloaded:
 
 | Operators | Alternatives |
 | :---------: | --------------- |

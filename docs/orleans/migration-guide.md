@@ -1,6 +1,6 @@
 ---
 title: Migrate from Orleans 3.x to 7.0
-description: Learn about the various new features introduced in Orleans 7.0.
+description: Learn the various new features introduced in Orleans 7.0, and how to migrate from 3.x versions.
 ms.date: 03/06/2023
 ---
 

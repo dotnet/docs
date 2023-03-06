@@ -1,7 +1,7 @@
 ---
 title: Determine which .NET Framework versions are installed
 description: Use code, regedit.exe, or PowerShell to detect which versions of .NET Framework are installed on a machine by querying the Windows registry.
-ms.date: 09/29/2022
+ms.date: 03/06/2023
 dev_langs:
   - "csharp"
   - "vb"
@@ -139,9 +139,9 @@ The example displays output like the following:
 .NET Framework Version: 4.6.1
 ```
 
-## Query the registry using code PowerShell
+### Query the registry using code PowerShell
 
-The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8.1 that are installed using PowerShell:
+The following example uses PowerShell to check the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8.1 that are installed:
 
 ```powershell
 $release = Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release
@@ -167,7 +167,7 @@ if ($version) {
 }
 ```
 
-These examples follows the recommended practice for version checking:
+This example follows the recommended practice for version checking:
 
 - It checks whether the value of the **Release** entry is *greater than or equal to* the value of the known release keys.
 - It checks in order from most recent version to earliest version.
@@ -229,9 +229,9 @@ v4.0
   Client  4.0.0.0
 ```
 
-## Query the registry using PowerShell (older framework versions)
+### Query the registry using PowerShell (older framework versions)
 
-The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8.1 that are installed using PowerShell:
+The following example uses PowerShell to check the value of the **Release** entry in the registry to find the versions of .NET Framework 1-4 that are installed:
 
 ```powershell
 Get-ChildItem -Path 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP' |

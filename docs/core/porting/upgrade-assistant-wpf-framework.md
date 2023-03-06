@@ -58,7 +58,11 @@ If any errors or warnings are reported, take care of them before you start an up
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
-When a project is provided, the upgrade process starts on that project immediately. If a solution is provided, you select which project you normally run, known as the [upgrade entrypoint](#select-the-entrypoint). Based on that project, a dependency graph is created and a suggestion as to which order you should upgrade the projects is provided.
+When you upgrade a solution that contains multiple projects, you must select which project in the solution is the **entrypoint**. Based on the **entrypoint** project, a dependency graph is created to determine which projects to upgrade and in what order. If the solution contains projects that aren't a part of the dependency graph, they're ignored and you'll need to upgrade these projects separately.
+
+Dependencies are upgraded first, then the **entrypoint** project.
+
+Using the [Basic WPF Sample][wpf-sample] app, upgrade the solution file:
 
 ```console
 upgrade-assistant upgrade .\WebSiteRatings.sln
@@ -92,15 +96,9 @@ Choose a command:
 > [!TIP]
 > Pay attention to the output of each step, as it may contain information about something the tool can't upgrade. Depending on the complexity of your app, you may have more upgrade work to do after the tool is finished.
 
-## Select the entrypoint project
-
-When you upgrade a solution that contains multiple projects, you must select which project in the solution is the **entrypoint**. The **entrypoint** project is analyzed to build a dependency graph, to determine which projects to upgrade and in what order. If the solution contains projects that aren't a part of the dependency graph, they're ignored. You need to upgrade these projects separately.
-
-Dependency projects are upgraded first, then the **entrypoint** project.
-
 ## Select a project to upgrade
 
-After the entrypoint is determined, the next step is to choose which project to upgrade. With the [Basic WPF Sample][wpf-sample], the tool determined that the **StarVoteControl** project first, since the **WebSiteRatings** project depends on it. It's best to follow the recommended upgrade path.
+After the entrypoint is determined, the next step is to choose which project to upgrade. With the [Basic WPF Sample][wpf-sample] app, the tool determined that the **StarVoteControl** project first, since the **WebSiteRatings** project depends on it. It's best to follow the recommended upgrade path.
 
 ```
 [15:45:52 INF] Applying upgrade step Select project to upgrade

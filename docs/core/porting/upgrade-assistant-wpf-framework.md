@@ -162,7 +162,7 @@ Choose a command:
    6. Exit
 ```
 
-Each step details first what it's going to do, then prompts you to do it. For example, the previous snippet was at step 1: **1. [Next step] Back up project**. Any step that doesn't apply, is skipped. For example, if the tool processes **7. Update WCF service to CoreWCF (Preview)**, but your app doesn't define a WCF service, it's skipped and step 8 is processed. In turn, if step 8 doesn't apply, it's skipped too. You may see many steps skipped as the tool tries to find the next step that applies.
+Each step details first what it's going to do, then prompts you to do it. For example, the previous snippet was at step **1. [Next step] Back up project**. Any step that doesn't apply, is skipped. For example, if the tool processes **7. Update WCF service to CoreWCF (Preview)**, but your app doesn't define a WCF service, it's skipped and step 8 is processed. In turn, if step 8 doesn't apply, it's skipped too. You may see many steps skipped as the tool tries to find the next step that applies.
 
 ## Complete the upgrade
 

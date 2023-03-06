@@ -465,8 +465,8 @@
 | Visual Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.VisualSearch/2.0.0) |  |  |
 | Wastorage | NuGet [4.0.0](https://www.nuget.org/packages/wastorage/4.0.0) |  |  |
 | Wastorage - Redist | NuGet [2.0.0](https://www.nuget.org/packages/wastorage.redist/2.0.0) |  |  |
-| Web - Redis Output Cache Provider | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/3.0.1) |  | GitHub [3.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
-| Web - Redis Session State Provider | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
+| Web - Redis Output Cache Provider | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
+| Web - Redis Session State Provider | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
 | Web Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingWebSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingWebSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingWebSearch) |
 | Web Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.WebSearch/2.0.0) |  |  |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |

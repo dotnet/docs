@@ -68,7 +68,7 @@ Replace the existing `Program` contents with the following C# code:
 
 :::code source="snippets/workers/queue-service/Program.cs" highlight="4-14":::
 
-The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method. `MonitorLoop` is started in *Program.cs* top-level statement:
+The services are registered in (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method. `MonitorLoop` is started in *Program.cs* top-level statement:
 
 :::code source="snippets/workers/queue-service/Program.cs" range="18-19":::
 

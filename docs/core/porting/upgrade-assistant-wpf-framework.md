@@ -33,7 +33,7 @@ For example, running the analyze mode with the [Basic WPF Sample][wpf-sample] ap
 [15:39:00 INF] Loaded 9 extensions
 [15:39:02 INF] Using MSBuild from C:\Program Files\dotnet\sdk\7.0.201\
 [15:39:02 INF] Using Visual Studio install from C:\Program Files\Microsoft Visual Studio\2022\Preview [v17]
-[15:39:05 INF] Writing output to C:\code\Work\temp\migration\framework\csharp\AnalysisReport.sarif
+[15:39:05 INF] Writing output to C:\code\migration\AnalysisReport.sarif
 [15:39:06 INF] Recommending Windows TFM net7.0-windows for project WebSiteRatings.csproj because the project either has Windows-specific dependencies or builds to a WinExe
 [15:39:06 INF] Marking assembly reference System.Configuration for removal based on package mapping configuration System.Configuration
 [15:39:06 INF] Adding package System.Configuration.ConfigurationManager based on package mapping configuration System.Configuration
@@ -47,7 +47,7 @@ For example, running the analyze mode with the [Basic WPF Sample][wpf-sample] ap
 [15:39:14 INF] Identified 0 diagnostics in project WebSiteRatings
 [15:39:14 INF] Running analyzers on StarVoteControl
 [15:39:15 INF] Identified 0 diagnostics in project StarVoteControl
-[15:39:15 INF] Analysis Complete, the report is available at C:\code\Work\temp\migration\framework\csharp\AnalysisReport.sarif
+[15:39:15 INF] Analysis Complete, the report is available at C:\code\migration\AnalysisReport.sarif
 ```
 
 There's quite a bit of internal diagnostic information in the output, but some information is helpful. Notice that the analyze mode indicates that the upgrade recommends that the project target the `net7.0-windows` target framework moniker ([TFM](../../standard/frameworks.md)). This recommendation is made because the projects referenced by the solution are WPF projects, a Windows-only technology. A console application would probably get the recommendation to upgrade to TFM `net7.0` directly, unless it used some Windows-specific libraries.
@@ -116,8 +116,8 @@ Once a project is selected, a list of upgrade steps the tool takes is listed. Th
 
 Upgrade Steps
 
-Entrypoint: C:\code\Work\temp\migration\framework\csharp\WebSiteRatings\WebSiteRatings.csproj
-Current Project: C:\code\Work\temp\migration\framework\csharp\WebSiteRatings\WebSiteRatings.csproj
+Entrypoint: C:\code\migration\WebSiteRatings\WebSiteRatings.csproj
+Current Project: C:\code\migration\WebSiteRatings\WebSiteRatings.csproj
 
 1. [Next step] Back up project
 2. Convert project file to SDK style

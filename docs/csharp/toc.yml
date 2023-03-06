@@ -325,16 +325,10 @@ items:
     - name: Overview
       displayName: expression trees
       href: advanced-topics/expression-trees/index.md
-    - name: "How to execute expression trees"
-      href: advanced-topics/expression-trees/how-to-execute-expression-trees.md
-    - name: "How to modify expression trees"
-      href: advanced-topics/expression-trees/how-to-modify-expression-trees.md
-    - name: Debugging Expression Trees in Visual Studio
-      href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
-    - name: DebugView Syntax
-      href: advanced-topics/expression-trees/debugview-syntax.md
     - name: Introduction to expression trees
       href: advanced-topics/expression-trees/expression-trees.md
+    - name: Summary
+      href: advanced-topics/expression-trees/expression-trees-summary.md
     - name: Expression Trees Explained
       href: advanced-topics/expression-trees/expression-trees-explained.md
     - name: Framework Types Supporting Expression Trees
@@ -347,8 +341,12 @@ items:
       href: advanced-topics/expression-trees/expression-trees-building.md
     - name: Translating Expressions
       href: advanced-topics/expression-trees/expression-trees-translating.md
-    - name: Summary
-      href: advanced-topics/expression-trees/expression-trees-summary.md
+    - name: "How to modify expression trees"
+      href: advanced-topics/expression-trees/how-to-modify-expression-trees.md
+    - name: Debugging Expression Trees in Visual Studio
+      href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
+    - name: DebugView Syntax
+      href: advanced-topics/expression-trees/debugview-syntax.md
   - name: Native interoperability
     items:
     - name: Overview

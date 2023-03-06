@@ -4,9 +4,7 @@ description: Learn about executing expression trees by converting them into exec
 ms.date: 03/06/2023
 ---
 
-# Executing Expression Trees
-
-[Previous -- Framework Types Supporting Expression Trees](expression-classes.md)
+# Execute expression trees
 
 An *expression tree* is a data structure that represents some code. It isn't compiled and executable code. If you want to execute
 the .NET code represented by an expression tree, you must convert it into executable IL instructions. Executing an expression tree may return a value, or it may just perform an action such as calling a method.
@@ -18,7 +16,7 @@ Only expression trees that represent lambda expressions can be executed. Express
 
 If an expression tree doesn't represent a lambda expression, you can create a new lambda expression that has the original expression tree as its body, by calling the <xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Collections.Generic.IEnumerable%7BSystem.Linq.Expressions.ParameterExpression%7D%29> method. Then, you can execute the lambda expression as described earlier in this section.
 
-## Lambda Expressions to Functions
+## Lambda expressions to functions
 
 You can convert any LambdaExpression, or any type derived from LambdaExpression into executable IL. Other expression types can't be directly converted into code. This restriction has little effect in practice. Lambda expressions are the only types of expressions that you would want to execute by converting to executable intermediate language (IL). (Think about what it would mean to directly execute a <xref:System.Linq.Expressions.ConstantExpression?displayProperty=nameWithType>. Would it mean anything useful?) Any expression tree that is a <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType>, or a type derived from `LambdaExpression` can be converted to IL. The expression type <xref:System.Linq.Expressions.Expression%601?displayProperty=nameWithType> is the only concrete example in the .NET Core libraries. It's used to represent an expression that maps to any delegate type. Because this type maps to a delegate type, .NET can examine the expression, and generate IL for an appropriate delegate that matches the signature of the lambda expression. The delegate type is based on the expression type. You must know the return type and the argument list if you want to use the delegate object in a strongly typed manner. The `LambdaExpression.Compile()` method returns the `Delegate` type. You have to cast it to the correct delegate type to have any compile-time tools check the argument list or return type.
 
@@ -43,7 +41,7 @@ The following code example demonstrates how to execute an expression tree that r
 
 :::code language="csharp" source="snippets/RunExpressionTrees.cs" id="ConvertToFund":::
 
-## Execution and Lifetimes
+## Execution and lifetimes
 
 You execute the code by invoking the delegate created when you called `LambdaExpression.Compile()`. The preceding code, `add.Compile()`, returns a delegate. You invoke that delegate by calling `func()`, which execute the code.
 
@@ -87,5 +85,3 @@ The code in your expression may reference methods or properties in other assembl
 Expression Trees that represent lambda expressions can be compiled to create a delegate that you can execute. Expression trees provide one mechanism to execute the code represented by an expression tree.
 
 The Expression Tree does represent the code that would execute for any given construct you create. As long as the environment where you compile and execute the code matches the environment where you create the expression, everything works as expected. When that doesn't happen, the errors are predictable, and they're caught in your first tests of any code using the expression trees.
-
-[Next -- Interpreting Expressions](expression-trees-interpreting.md)

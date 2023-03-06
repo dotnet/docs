@@ -29,6 +29,7 @@ The `dotnet sdk check` command makes it easier to track when new versions of the
 Here's an example of output from the command:
 
 ```output
+.NET SDKs:
 3.1.426      .NET 3.1 is out of support.
 7.0.103      Up to date.
 7.0.200      Patch 7.0.201 is available.

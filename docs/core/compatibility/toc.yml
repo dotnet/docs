@@ -30,6 +30,14 @@ items:
         href: cryptography/8.0/aesgcm-auth-tag-size.md
       - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
         href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
+    - name: Extensions
+      items:
+      - name: ActivatorUtilities.CreateInstance behaves consistently
+        href: extensions/8.0/activatorutilities-createinstance-behavior.md
+      - name: ActivatorUtilities.CreateInstance requires non-null provider
+        href: extensions/8.0/activatorutilities-createinstance-null-provider.md
+      - name: ConfigurationBinder throws for mismatched value
+        href: extensions/8.0/configurationbinder-exceptions.md
     - name: Globalization
       items:
       - name: TwoDigitYearMax default is 2049
@@ -1146,6 +1154,14 @@ items:
       href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Extensions
     items:
+    - name: .NET 8
+      items:
+      - name: ActivatorUtilities.CreateInstance behaves consistently
+        href: extensions/8.0/activatorutilities-createinstance-behavior.md
+      - name: ActivatorUtilities.CreateInstance requires non-null provider
+        href: extensions/8.0/activatorutilities-createinstance-null-provider.md
+      - name: ConfigurationBinder throws for mismatched value
+        href: extensions/8.0/configurationbinder-exceptions.md
     - name: .NET 7
       items:
       - name: ContentRootPath for apps launched by Windows Shell

@@ -280,7 +280,7 @@ public sealed class HStringMarshaler : ICustomMarshaler
 
     [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
     [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
-    private static extern IntPtr WindowsGetStringRawBuffer(IntPtr @string, out int length);
+    private static extern IntPtr WindowsGetStringRawBuffer(IntPtr hstring, out int length);
 }
 
 // Example usage:

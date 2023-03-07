@@ -93,7 +93,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
     "Message": "",
     "name": "Liana",
     "city": "Seattle",
-    "{OriginalFormat}": ""
+    "{OriginalFormat}": "{name} lives in {city}."
   }
 }
 ```

@@ -272,7 +272,7 @@ public sealed class HStringMarshaler : ICustomMarshaler
 
     [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
     [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
-    private static extern int WindowsCreateString([MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr @string);
+    private static extern int WindowsCreateString([MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
 
     [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
     [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]

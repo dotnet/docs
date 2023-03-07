@@ -193,15 +193,23 @@ We have some recommendations for fixing common scenarios:
 
 - To avoid shipping loose files entirely, consider using [embedded resources](../../extensions/create-resource-files.md).
 
-### Attach a debugger
+### Post-processing binaries before bundling
 
-On Linux, the only debugger that can attach to self-contained single file processes or debug crash dumps is [SOS with LLDB](../../diagnostics/dotnet-sos.md).
+Some workflows require post-processing of binaries before bundling. A common example is signing. The dotnet SDK provides MSBuild extension points to allow processing binaries just before single-file bundling. The available APIs are:
 
-On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single file executable requires an extra file: _mscordbi.{dll,so}_.
+* A target `PrepareForBundle` that will be called before `GenerateSingleFileBundle`
+* An ItemGroup `FilesToBundle` containing all files that will be bundled
+* A Property `AppHostFile` that will specify the apphost template. Post-processing might want to exclude the apphost from processing.
 
-Without this file, Visual Studio might produce the error: "Unable to attach to the process. A debug component is not installed." VS Code might produce the error: "Failed to attach to process: Unknown Error: 0x80131c3c."
+The way to plug into this would typically involve creating a target that will be executed between PrepareForBundle and GenerateSingleFileBundle
 
-To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if you publish a self-contained single file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_.
+Example:
+
+```xml
+<Target Name="MySignedBundledFile" BeforeTargets="GenerateSingleFileBundle" DependsOnTargets="PrepareForBundle">
+```
+
+It is possible that tooling will need to copy files in the process of signing. That could happen if the original file is a shared item not owned by the build, for example the file comes from a nuget cache. In such case it is expected that the tool will modify the path of the corresponding FilesToBundle item to point to the modified copy.
 
 ### Include native libraries
 

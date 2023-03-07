@@ -276,7 +276,7 @@ public sealed class HStringMarshaler : ICustomMarshaler
 
     [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
     [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
-    private static extern int WindowsDeleteString(IntPtr @string);
+    private static extern int WindowsDeleteString(IntPtr hstring);
 
     [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
     [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]

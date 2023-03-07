@@ -1,4 +1,6 @@
-﻿RunExpressionTrees.ConvertToDelegate();
+﻿using ExpressionTreeExample;
+
+RunExpressionTrees.ConvertToDelegate();
 RunExpressionTrees.CreateExpressionTree();
 RunExpressionTrees.BuildExpressionTree();
 
@@ -9,3 +11,6 @@ InterpretExpressions.AdditionExamples();
 InterpretExpressions.VariableAddition();
 InterpretExpressions.VariableParensAddition();
 InterpretExpressions.FactorialVisitor();
+
+TranslateExpressions.TraverseAndCreate();
+TranslateExpressions.ModifyExpression();

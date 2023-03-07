@@ -59,7 +59,7 @@ public static class TranslateExpressions
 
         var theSum = aggregate(sum);
         Console.WriteLine(theSum);
-        // <TraverseAndCreateNode>
+        // </TraverseAndCreateNode>
 
         Aggregate(sum);
 

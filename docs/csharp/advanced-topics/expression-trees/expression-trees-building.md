@@ -93,4 +93,4 @@ For more information, see [Generating Dynamic Methods with Expression Trees in V
 
 The expression tree APIs are some of the more difficult to navigate in .NET Core, but that's fine. Their purpose is a rather complex undertaking: writing code that generates code at run time. They're necessarily complicated to provide a balance between supporting all the control structures available in the C# language and keeping the surface area of the APIs as small as reasonable. This balance means that many control structures aren't represented by their C# constructs, but by constructs that represent the underlying logic that the compiler generates from these higher level constructs.
 
-Also, at this time, there are C# expressions that can't be built directly using `Expression` class methods. The list is included in the Overview article in the section on [restrictions on language syntax](./index.md#restrictions-on-language-syntax).
+Also, at this time, there are C# expressions that can't be built directly using `Expression` class methods. The list is included in the Overview article in the section on [limitations](./index.md#limitations).

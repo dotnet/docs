@@ -48,6 +48,7 @@ For information on installing NuGet packages, see the following options:
 
 | NuGet package | Description |
 |---|---|
+| [Microsoft.Orleans.Reminders](https://www.nuget.org/packages/Microsoft.Orleans.Reminders) | Reminders library for Microsoft Orleans used on the server. |
 | [Microsoft.Orleans.Reminders.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AzureStorage) | Orleans reminders provider backed by Azure Table Storage. |
 | [Microsoft.Orleans.Reminders.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.AdoNet) | Orleans reminders provider backed by ADO.NET. |
 | [Microsoft.Orleans.Reminders.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Reminders.DynamoDB) | Orleans reminders provider backed by AWS DynamoDB. |
@@ -98,16 +99,16 @@ For information on installing NuGet packages, see the following options:
 | [Microsoft.Orleans.Serialization.FSharp](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.FSharp) | F# core type support for `Microsoft.Orleans.Serialization`. |
 | [Microsoft.Orleans.Serialization.NewtonsoftJson](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson) | `Newtonsoft.Json` integration for `Microsoft.Orleans.Serialization`. |
 
-## Tools
-
-One popular Orleans tool, is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
-
 ## Transactions
 
 | NuGet package | Description |
 |---|---|
 | [Microsoft.Orleans.Transactions](https://www.nuget.org/packages/Microsoft.Orleans.Transactions) | Core transaction library of Orleans used on the server. |
 | [Microsoft.Orleans.Transactions.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Transactions.AzureStorage) | Orleans transactions storage provider backed by Azure Storage. |
+
+## Tools
+
+One popular Orleans tool, is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
 
 :::zone-end
 
@@ -441,16 +442,6 @@ Install-Package Microsoft.Orleans.OrleansTelemetryConsumers.NewRelic
 
 Includes the telemetry consumer for NewRelic.
 
-## Tools
-
-### [Orleans Performance Counter Tool](https://www.nuget.org/packages/Microsoft.Orleans.CounterControl/)
-
-```powershell
-Install-Package Microsoft.Orleans.CounterControl
-```
-
-Includes `OrleansCounterControl.exe`, which registers Windows performance counter categories for Orleans statistics and for deployed grain classes. Requires elevation. Can be executed in Azure as part of a role startup task.
-
 ## Transactions
 
 ### [Orleans Transactions support](https://www.nuget.org/packages/Microsoft.Orleans.Transactions/)
@@ -468,5 +459,15 @@ Install-Package Microsoft.Orleans.Transactions.AzureStorage
 ```
 
 Includes a plugin for persisting transaction log in Azure Table (beta).
+
+## Tools
+
+### [Orleans Performance Counter Tool](https://www.nuget.org/packages/Microsoft.Orleans.CounterControl/)
+
+```powershell
+Install-Package Microsoft.Orleans.CounterControl
+```
+
+Includes `OrleansCounterControl.exe`, which registers Windows performance counter categories for Orleans statistics and for deployed grain classes. Requires elevation. Can be executed in Azure as part of a role startup task.
 
 :::zone-end

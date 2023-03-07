@@ -30,12 +30,12 @@ public class MyModelContainingArray
 public void SilentlySwallowsInvalidItems()
 {
     var dictionary = new Dictionary<string, string>
-        {
-            {"Section:Enums:0", "Option1"},
-            {"Section:Enums:1", "Option3"}, // invalid - ignored
-            {"Section:Enums:2", "Option4"}, // invalid - ignored
-            {"Section:Enums:3", "Option2"},
-        };
+    {
+        ["Section:Enums:0"] = "Option1",
+        ["Section:Enums:1"] = "Option3", // invalid - ignored
+        ["Section:Enums:2"] = "Option4", // invalid - ignored
+        ["Section:Enums:3"] = "Option2",
+    };
 
     var configurationBuilder = new ConfigurationBuilder();
     configurationBuilder.AddInMemoryCollection(dictionary);

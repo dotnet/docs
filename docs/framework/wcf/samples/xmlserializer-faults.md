@@ -6,7 +6,7 @@ ms.assetid: c6b80f14-64f4-4162-ae76-71664cf42fd3
 ---
 # XmlSerializer Faults
 
-The [XmlSerializerFaults sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to communicate error information from a service to a client using the <xref:System.Xml.Serialization.XmlSerializer>. The sample is based on the [Getting Started](getting-started-sample.md), with some additional code added to the service to convert an internal exception to a fault. The client attempts to perform division by zero to force an error condition on the service.
+The [XmlSerializerFaults sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Contract/Service/XmlSerializerFaults/CS) demonstrates how to communicate error information from a service to a client using the <xref:System.Xml.Serialization.XmlSerializer>. The sample is based on the [Getting Started](getting-started-sample.md), with some additional code added to the service to convert an internal exception to a fault. The client attempts to perform division by zero to force an error condition on the service.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.

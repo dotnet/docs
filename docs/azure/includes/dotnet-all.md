@@ -247,7 +247,7 @@
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Azure.Communication.Calling | NuGet [1.0.0-beta.35](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.35) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
-| Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
+| Azure.Communication.Email | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.2) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.1) |  |  |

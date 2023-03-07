@@ -34,8 +34,8 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 
 1. In the **Additional information** dialog:
 
-    - Uncheck **Do not use top-level statements**
-    - Select **Create**. 
+    - Uncheck **Do not use top-level statements**.
+    - Select **Create**.
 
 1. Install the following NuGet packages:
 

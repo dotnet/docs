@@ -243,11 +243,11 @@
 | Resource Management - Voiceservices | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.VoiceServices/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.VoiceServices_1.0.0-beta.1/sdk/voiceservices/Azure.ResourceManager.VoiceServices/) |
 | Resource Management - Web PubSub | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.WebPubSub/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.WebPubSub-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WebPubSub_1.0.1/sdk/webpubsub/Azure.ResourceManager.WebPubSub/) |
 | Resource Management - Workload Monitor | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadMonitor/1.0.0-beta.2) |  | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadMonitor_1.0.0-beta.2/sdk/workloadmonitor/Azure.ResourceManager.WorkloadMonitor/) |
-| Resource Management - Workloads | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.ResourceManager.Workloads/1.0.0-beta.2) |  | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Workloads_1.0.0-beta.2/sdk/workloads/Azure.ResourceManager.Workloads/) |
+| Resource Management - Workloads | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.ResourceManager.Workloads/1.0.0-beta.3) |  | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Workloads_1.0.0-beta.3/sdk/workloads/Azure.ResourceManager.Workloads/) |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Azure.Communication.Calling | NuGet [1.0.0-beta.35](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.35) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
-| Azure.Communication.Email | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.1) |  |  |
+| Azure.Communication.Email | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Email/1.0.0-beta.2) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.1) |  |  |
@@ -291,6 +291,8 @@
 | Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [0.9.0-beta.1](https://www.nuget.org/packages/Azure.AI.Vision.Core/0.9.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [0.9.0-beta.1](https://www.nuget.org/packages/Azure.AI.Vision.ImageAnalysis/0.9.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
@@ -465,8 +467,8 @@
 | Visual Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.VisualSearch/2.0.0) |  |  |
 | Wastorage | NuGet [4.0.0](https://www.nuget.org/packages/wastorage/4.0.0) |  |  |
 | Wastorage - Redist | NuGet [2.0.0](https://www.nuget.org/packages/wastorage.redist/2.0.0) |  |  |
-| Web - Redis Output Cache Provider | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/3.0.1) |  | GitHub [3.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
-| Web - Redis Session State Provider | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
+| Web - Redis Output Cache Provider | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
+| Web - Redis Session State Provider | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
 | Web Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingWebSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingWebSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingWebSearch) |
 | Web Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.WebSearch/2.0.0) |  |  |
 | WebJobs - Script | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script/1.0.0-beta3) |  | GitHub [1.0.0-beta3](https://github.com/Azure/azure-functions-host/tree/dev/src/WebJobs.Script) |

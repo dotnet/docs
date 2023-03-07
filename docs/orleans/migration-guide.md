@@ -30,7 +30,7 @@ If you're upgrading a project to Orleans 7.0, you'll need to perform the followi
 - Remove all references to `Microsoft.Orleans.OrleansRuntime`.
   - The [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server) packages reference its replacement, `Microsoft.Orleans.Runtime`.
 - Remove calls to `ConfigureApplicationParts`.
-Application parts have been removed. The C# Source Generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of application parts automatically.
+_Application Parts_ has been removed. The C# Source Generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of _Application Parts_ automatically.
 - Replace references to `Microsoft.Orleans.OrleansServiceBus` with [Microsoft.Orleans.Streaming.EventHubs](https://nuget.org/packages/Microsoft.Orleans.Streaming.EventHubs)
 - If you are using reminders, add a reference to [Microsoft.Orleans.Reminders](https://nuget.org/packages/Microsoft.Orleans.Reminders)
 - If you are using streams, add a reference to [Microsoft.Orleans.Streaming](https://nuget.org/packages/Microsoft.Orleans.Streaming)

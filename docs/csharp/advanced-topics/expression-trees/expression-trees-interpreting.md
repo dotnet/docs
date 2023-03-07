@@ -39,7 +39,8 @@ Let's start with the addition sample from the introduction to this section.
 Expression<Func<int>> sum = () => 1 + 2;
 ```
 
-> [!NOTE] Don't use`var` to declare this expression tree, because the natural type of the delegate is `Func<int>`, not `Expression<Func<int>>`.
+> [!NOTE]
+> Don't use`var` to declare this expression tree, because the natural type of the delegate is `Func<int>`, not `Expression<Func<int>>`.
 
 The root node is a `LambdaExpression`. In order to get the interesting code on the right-hand side of the `=>` operator, you need to find one of the children of the `LambdaExpression`. We do that with all the expressions in this section. The parent node does help us find the return type of the `LambdaExpression`.
 

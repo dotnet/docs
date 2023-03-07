@@ -59,8 +59,7 @@ In this more complicated example, you see a couple more techniques that you ofte
 
 First, you need to create the objects that represent parameters or local variables before you use them. Once you've created those objects, you can use them in your expression tree wherever you need.
 
-Second, you need to use a subset of the Reflection APIs to create a `MethodInfo` object so that you can create an expression tree to access that method. You must limit
-yourself to the subset of the Reflection APIs that are available on the .NET Core platform. Again, these techniques extend to other expression trees.
+Second, you need to use a subset of the Reflection APIs to create a <xref:System.Reflection.MethodInfo?displayProperty=nameWithType> object so that you can create an expression tree to access that method. You must limit yourself to the subset of the Reflection APIs that are available on the .NET Core platform. Again, these techniques extend to other expression trees.
 
 ## Build code in depth
 

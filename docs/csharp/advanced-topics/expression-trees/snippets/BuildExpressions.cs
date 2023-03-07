@@ -37,7 +37,7 @@ public static class BuildExpressions
                 Expression.Constant(2, typeof(int))
             )
         );
-        // </SingleExpression
+        // </SingleExpression>
     }
 
     public static void SquareRootLambda()

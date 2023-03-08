@@ -8,7 +8,7 @@ ms.custom: mvc, how-to, title-hack-0625
 ms.topic: how-to
 ---
 
-# What is the DataFrame?
+# Getting started with DataFrames
 
 Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning.
 
@@ -68,13 +68,13 @@ dataFrame.Description();
 
 There are a variety of transformative options for data. The [DataFrame](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe?view=ml-dotnet-preview) and [DataFrameColumn](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframecolumn?view=ml-dotnet-preview) classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
 
-For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can easily apply a computation to all of the values.
+For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can apply a computation to all of the values and save the results in a new column.
 
 ```csharp
 dataFrame["ComputedPrices"] = dataFrame["HistoricalPrice"].Multiply(2);
 ```
 
-Data can be sorted into groups.
+Data can be sorted into groups from the values in a specific column.
 
 ```csharp
 var sortedDataFrame = dataFrame.GroupBy("Size");
@@ -97,6 +97,9 @@ Id, Bedrooms
 4, 2
 5, 3
 6, 1
+```
+
+DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data above.
 
 ```csharp
 var ids = new List<Single>() {1,2,3,4,5,6};
@@ -123,5 +126,5 @@ DataFrame.SaveCsv(dataFrame, "result.csv", ',');
 
 ## Use DataFrame with ML.NET
 
-DataFrames can also be easily used by ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used directly to train a model.
+DataFrames work directly with ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used to train a model.
 

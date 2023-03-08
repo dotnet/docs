@@ -16,7 +16,7 @@ You can use the `ref` modifier in the declaration of a [structure type](struct.m
 - A `ref struct` variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - A `ref struct` variable can't be used in [iterators](../../iterators.md).
 
-You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance or extension `Dispose` method, which is accessible, parameterless and has a `void` return type.
+You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
 
 Typically, you define a `ref struct` type when you need a type that also includes data members of `ref struct` types:
 

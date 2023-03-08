@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
         statuses: write
-        issues: write
+        pull-requests: write
     steps:
     - uses: dotnet/docs-actions/actions/status-checker@main
       with:

@@ -48,7 +48,9 @@ gRPC is implicitly secure when it's using HTTP/2 over a TLS end-to-end encrypted
 
 A notable alternative to gRPC for replacing WCF services when migrating to .NET is [CoreWCF](https://github.com/corewcf/corewcf). Both gRPC and CoreWCF are Microsoft endorsed paths forward for WCF applications and each comes with its own benefits and drawbacks.
 
-CoreWCF is a community-owned .NET Foundation project supported by Microsoft that implements many WCF server APIs for .NET. Although CoreWCF is now adding new modern features, it began as an effort to allow existing WCF services to work with minimal changes on .NET. Patterns for starting WCF services are different in CoreWCF and not all configuration options are available (some configuration must now be done in code), but most other WCF APIs are available in CoreWCF. Services and interfaces can often migrate with few changes. Because of this, a key benefit of CoreWCF is its very similar surface area and programming model compared to WCF.
+CoreWCF is a community-owned .NET Foundation project supported by Microsoft that implements WCF server APIs for .NET. CoreWCF is an effort to allow existing WCF services to work with minimal changes on .NET. Your Data Contracts for WCF are unchanged with CoreWCF, and it supports many of the bindings and APIs from WCF. The main differences are around the patterns for starting WCF services, and not all configuration options are available (some configuration must now be done in code). 
+
+Services and interfaces can often migrate with few changes. Because of this, a key benefit of CoreWCF is its very high compatibility with WCF. Where changes have been made, they are to adapt to the programming style of modern .NET, for example hosting now through ASP.NET Core, and APIs now use the `Task` based async patterns usable with `await` rather than the older BeginXXX / EndXXX pattern.  
 
 On the other hand, gRPC is a modern remote communication solution with a number of features, as discussed previously. Benefits of using gRPC include its interoperability across languages, its relatively simple modern API, and a broad community ecosystem.
 

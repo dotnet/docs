@@ -12,7 +12,7 @@ ms.topic: how-to
 
 Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning. 
 
-# Install Microsoft.Data.Analysis
+## Install Microsoft.Data.Analysis
 
 In most cases, accessing DataFrame is as simple as referencing the [Microsoft.Data.Analysis](https://www.nuget.org/packages/Microsoft.Data.Analysis/) NuGet package.
 
@@ -20,7 +20,7 @@ In most cases, accessing DataFrame is as simple as referencing the [Microsoft.Da
 dotnet add package Microsoft.Data.Analysis
 ```
 
-# Load data
+## Load data
 
 DataFrames make it easy to load tabular data. Create a comma-separated file called *housing-prices.csv* with the following data.
 
@@ -48,7 +48,7 @@ var dataPath = Path.GetFullPath(@"housing-prices.csv");
 var dataFrame = DataFrame.LoadCsv(dataPath);
 ```
 
-# Inspect Data (Info/Describe)
+## Inspect Data (Info/Describe)
 
 DataFrames store data as a collection of columns. This makes it easy to interact with the data.
 
@@ -63,7 +63,7 @@ To get a preview of what the data looks like, run `Description()`.
 ```csharp
 dataFrame.Description()
 ```
-# Transform Data
+## Transform Data
 
 There are a variety of transformative options for data. The [DataFrame](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe?view=ml-dotnet-preview) and [DataFrameColumn](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframecolumn?view=ml-dotnet-preview) classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
 
@@ -86,7 +86,7 @@ PrimitiveDataFrameColumn<bool> boolFilter = dataFrame["CurrentPrice"].Elementwis
 DataFrame filteredDataFrame = dataFrame.Filter(boolFilter);
 ```
 
-# Combine Data Sources
+## Combine Data Sources
 
 ```text
 Id, Bedrooms	
@@ -122,7 +122,7 @@ Results can be saved back into a .csv format.
 DataFrame.WriteCsv(dataFrame, "result.csv", ',');
 ```
 
-# Use DataFrame with ML.NET
+## Use DataFrame with ML.NET
 
-DataFrames can also be easily used by ML.NET. DataFrame implements the IDataView and can be used directly to train a model. 
+DataFrames can also be easily used by ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used directly to train a model. 
 

@@ -1,7 +1,7 @@
 ---
 title: Getting started with DataFrames
 description: Learn how to use DataFrame to manipulate and prepare data.
-author: beccam
+author: beccamc
 ms.author: beccam
 ms.date: 3/10/2023
 ms.custom: mvc, how-to, title-hack-0625
@@ -48,17 +48,17 @@ var dataPath = Path.GetFullPath(@"housing-prices.csv");
 var dataFrame = DataFrame.LoadCsv(dataPath);
 ```
 
-## Inspect Data (Info/Describe)
+## Inspect Data
 
 DataFrames store data as a collection of columns. This makes it easy to interact with the data.
 
-To get a preview of the column datatypes, run `Info()`.
+To get a preview of the column datatypes, run [Info()](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe.info?view=ml-dotnet-preview).
 
 ```csharp
 dataFrame.Info();
 ```
 
-To get a preview of what the data looks like, run `Description()`.
+To get a summary of the data, run [Description()](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe.description?view=ml-dotnet-preview).
 
 ```csharp
 dataFrame.Description()

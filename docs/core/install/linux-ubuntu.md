@@ -34,7 +34,7 @@ Use the following sections to determine how you should install .NET:
 - [I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`](#im-using-other-microsoft-packages-such-as-powershell-mdatp-or-mssql)
 - [I want to create a .NET app](#i-want-to-create-a-net-app)
 - [I want to run a .NET app in a container, cloud, or continuous-integration scenario](#i-want-to-run-a-net-app-in-a-container-cloud-or-continuous-integration-scenario)
-- [My Ubuntu distribution doesn't include .NET, or I need an out-of-support .NET version](#my-ubuntu-distribution-doesnt-include-net-or-i-need-an-out-of-support-net-version)
+- [My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version](#my-ubuntu-distribution-doesnt-include-the-net-version-i-want-or-i-need-an-out-of-support-net-version)
 - [I want to install a preview version](#i-want-to-install-a-preview-version)
 - [I don't want to use APT](#i-dont-want-to-use-apt)
 - [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
@@ -71,7 +71,7 @@ If your Ubuntu version provides the .NET version you require, install it from th
 
 If the version of .NET you want isn't available, try using [dotnet-install script](linux-scripted-manual.md#scripted-install) or a [Snap](linux-snap.md) package.
 
-### My Ubuntu distribution doesn't include .NET, or I need an out-of-support .NET version
+### My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version
 
 We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 

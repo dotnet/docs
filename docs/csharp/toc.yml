@@ -299,24 +299,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Expression trees
-    items:
-    - name: Introduction to expression trees
-      href: expression-trees.md
-    - name: Expression Trees Explained
-      href: expression-trees-explained.md
-    - name: Framework Types Supporting Expression Trees
-      href: expression-classes.md
-    - name: Executing Expressions
-      href: expression-trees-execution.md
-    - name: Interpreting Expressions
-      href: expression-trees-interpreting.md
-    - name: Building Expressions
-      href: expression-trees-building.md
-    - name: Translating Expressions
-      href: expression-trees-translating.md
-    - name: Summary
-      href: expression-trees-summary.md
   - name: Versioning
     href: versioning.md
 - name: How-to C# articles
@@ -338,6 +320,27 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Expression trees
+    items:
+    - name: Overview
+      displayName: expression trees
+      href: advanced-topics/expression-trees/index.md
+    - name: Expression Trees Explained
+      href: advanced-topics/expression-trees/expression-trees-explained.md
+    - name: Framework Types Supporting Expression Trees
+      href: advanced-topics/expression-trees/expression-classes.md
+    - name: Execute expressions
+      href: advanced-topics/expression-trees/expression-trees-execution.md
+    - name: Interpret expressions
+      href: advanced-topics/expression-trees/expression-trees-interpreting.md
+    - name: Build expressions
+      href: advanced-topics/expression-trees/expression-trees-building.md
+    - name: Translate expressions
+      href: advanced-topics/expression-trees/expression-trees-translating.md
+    - name: Debug txpression trees in Visual Studio
+      href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
+    - name: DebugView Syntax
+      href: advanced-topics/expression-trees/debugview-syntax.md
   - name: Native interoperability
     items:
     - name: Overview
@@ -364,53 +367,53 @@ items:
       href: advanced-topics/performance/index.md
     - name: Tutorial - reduce allocations
       href: advanced-topics/performance/ref-tutorial.md
-  - name: The .NET Compiler Platform SDK (Roslyn APIs)
+- name: The .NET Compiler Platform SDK (Roslyn APIs)
+  items:
+  - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
+    href: roslyn-sdk/index.md
+  - name: Understand the compiler API model
+    href: roslyn-sdk/compiler-api-model.md
+  - name: Work with syntax
+    href: roslyn-sdk/work-with-syntax.md
+  - name: Work with semantics
+    href: roslyn-sdk/work-with-semantics.md
+  - name: Work with a workspace
+    href: roslyn-sdk/work-with-workspace.md
+  - name: Explore code with the syntax visualizer
+    href: roslyn-sdk/syntax-visualizer.md
+  - name: Source Generators
+    href: roslyn-sdk/source-generators-overview.md
+  - name: Quick starts
     items:
-    - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
-      href: roslyn-sdk/index.md
-    - name: Understand the compiler API model
-      href: roslyn-sdk/compiler-api-model.md
-    - name: Work with syntax
-      href: roslyn-sdk/work-with-syntax.md
-    - name: Work with semantics
-      href: roslyn-sdk/work-with-semantics.md
-    - name: Work with a workspace
-      href: roslyn-sdk/work-with-workspace.md
-    - name: Explore code with the syntax visualizer
-      href: roslyn-sdk/syntax-visualizer.md
-    - name: Source Generators
-      href: roslyn-sdk/source-generators-overview.md
-    - name: Quick starts
-      items:
-      - name: Syntax analysis
-        href: roslyn-sdk/get-started/syntax-analysis.md
-      - name: Semantic analysis
-        href: roslyn-sdk/get-started/semantic-analysis.md
-      - name: Syntax Transformation
-        href: roslyn-sdk/get-started/syntax-transformation.md
-    - name: Tutorials
-      items:
-      - name: Build your first analyzer and code fix
-        href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
-  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-  #    - name: Get started writing custom analyzers and code fixes
-  #  - name: Tutorials
-  #    items:
-  #    - name: Build your first analyzer
-  #    - name: Build your first code fix
-  #    - name: Deploy your analyzer as a VSIX
-  #    - name: Deploy your analyzer as a NuGet package
-  #- name: Samples
-  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-  #  items:
-  #    - name: Async packages
-  #    - name: Console classifier
-  #    - name: Convert to auto property
-  #    - name: Format solution
-  #    - name: Implement notify property changed
-  #    - name: Make const
-  #    - name: How to guides
-  # Look at the samples, and determine which are "How To" vs. Samples.
+    - name: Syntax analysis
+      href: roslyn-sdk/get-started/syntax-analysis.md
+    - name: Semantic analysis
+      href: roslyn-sdk/get-started/semantic-analysis.md
+    - name: Syntax Transformation
+      href: roslyn-sdk/get-started/syntax-transformation.md
+  - name: Tutorials
+    items:
+    - name: Build your first analyzer and code fix
+      href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#    - name: Get started writing custom analyzers and code fixes
+#  - name: Tutorials
+#    items:
+#    - name: Build your first analyzer
+#    - name: Build your first code fix
+#    - name: Deploy your analyzer as a VSIX
+#    - name: Deploy your analyzer as a NuGet package
+#- name: Samples
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#  items:
+#    - name: Async packages
+#    - name: Console classifier
+#    - name: Convert to auto property
+#    - name: Format solution
+#    - name: Implement notify property changed
+#    - name: Make const
+#    - name: How to guides
+# Look at the samples, and determine which are "How To" vs. Samples.
 - name: C# programming guide
   items:
   - name: Overview
@@ -453,21 +456,6 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
         - name: Use Variance for Func and Action Generic Delegates
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
-    - name: Expression trees
-      items:
-      - name: Overview
-        displayName: expression trees
-        href: programming-guide/concepts/expression-trees/index.md
-      - name: "How to execute expression trees"
-        href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
-      - name: "How to modify expression trees"
-        href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
-      - name: "How to use expression trees to build dynamic queries"
-        href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
-      - name: Debugging Expression Trees in Visual Studio
-        href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
-      - name: DebugView Syntax
-        href: programming-guide/concepts/expression-trees/debugview-syntax.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
     - name: Language-Integrated Query (LINQ)
@@ -561,6 +549,8 @@ items:
             href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
           - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+          - name: "How to use expression trees to build dynamic queries"
+            href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
         - name: LINQ and Reflection
           href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: "How to query an assembly's metadata with Reflection (LINQ)"

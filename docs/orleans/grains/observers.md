@@ -9,7 +9,7 @@ ms.date: 03/16/2022
 There are situations in which a simple message/response pattern is not enough, and the client needs to receive asynchronous notifications.
 For example, a user might want to be notified when a new instant message has been published by a friend.
 
-Client observers is a mechanism that allows notifying clients asynchronously. An observer is a one-way asynchronous interface that inherits from <xref:Orleans.IGrainObserver>, and all its methods must return `void` or <xref:System.Threading.Tasks.Task>. The grain sends a notification to the observer by invoking it like a grain interface method, except that it has no return value, and so the grain need not depend on the result. The Orleans runtime will ensure one-way delivery of the notifications. A grain that publishes such notifications should provide an API to add or remove observers. In addition, it is usually convenient to expose a method that allows an existing subscription to be cancelled.
+Client observers is a mechanism that allows notifying clients asynchronously. Observer interfaces must inherit from <xref:Orleans.IGrainObserver>, and all methods must return either `void`, <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. A grain calls a method on an observer by invoking it like any grain interface method. The Orleans runtime will ensure delivery of the requests and responses. A common use case for observers is to enlist a client to receive notifications when an event occurs in the Orleans application. A grain that publishes such notifications should provide an API to add or remove observers. In addition, it is usually convenient to expose a method that allows an existing subscription to be cancelled. [`[OneWay]`](<xref:Orleans.Concurrency.OneWayAttribute>) can be applied to observer interface methods for best-efforts notifications. Applying the [`[OneWay]`](<xref:Orleans.Concurrency.OneWayAttribute>) to an observer interface method will cause the receiver to not send a response for the method invocation and will cause the method to return immediately at the call site, without waiting for a response from the observer.
 
 Grain developers may use a utility class such as <xref:Orleans.Utilities.ObserverManager%601> to simplify development of observed grain types. Unlike grains, which are automatically reactivated as-needed after failure, clients are not fault-tolerant: a client which fails may never recover.
 For this reason, the `ObserverManager<T>` utility removes subscriptions after a configured duration. Clients which are active should resubscribe on a timer to keep their subscription active.
@@ -27,7 +27,7 @@ The interface will look like this
 ```csharp
 public interface IChat : IGrainObserver
 {
-    void ReceiveMessage(string message);
+    Task ReceiveMessage(string message);
 }
 
 ```
@@ -40,9 +40,10 @@ The simplest case would be something like this:
 ```csharp
 public class Chat : IChat
 {
-    public void ReceiveMessage(string message)
+    public Task ReceiveMessage(string message)
     {
         Console.WriteLine(message);
+        return Task.CompletedTask;
     }
 }
 ```

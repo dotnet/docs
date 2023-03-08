@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # What is the DataFrame?
 
-Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning. 
+Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning.
 
 ## Install Microsoft.Data.Analysis
 
@@ -61,25 +61,26 @@ dataFrame.Info();
 To get a summary of the data, run [Description()](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe.description?view=ml-dotnet-preview).
 
 ```csharp
-dataFrame.Description()
+dataFrame.Description();
 ```
+
 ## Transform Data
 
 There are a variety of transformative options for data. The [DataFrame](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe?view=ml-dotnet-preview) and [DataFrameColumn](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframecolumn?view=ml-dotnet-preview) classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
 
-For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can easily apply a computation to all of the values. 
+For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can easily apply a computation to all of the values.
 
 ```csharp
 dataFrame["ComputedPrices"] = dataFrame["HistoricalPrice"].Multiply(2);
 ```
 
-Data can be sorted into groups. 
+Data can be sorted into groups.
 
 ```csharp
 var sortedDataFrame = dataFrame.GroupBy("Size");
 ```
 
-Data can be filtered based on different equality metrics. This example uses a ElementWise equality function, and then filters based on the boolean result column to get a new DataFrame with only the appropriate values. 
+Data can be filtered based on different equality metrics. This example uses a ElementWise equality function, and then filters based on the boolean result column to get a new DataFrame with only the appropriate values.
 
 ```csharp
 PrimitiveDataFrameColumn<bool> boolFilter = dataFrame["CurrentPrice"].ElementwiseGreaterThan(200000);
@@ -90,11 +91,11 @@ DataFrame filteredDataFrame = dataFrame.Filter(boolFilter);
 
 ```text
 Id, Bedrooms	
-1, 1	
-2, 2	
-3, 3	
-4, 2	
-5, 3	
+1, 1
+2, 2
+3, 3
+4, 2
+5, 3
 6, 1
 ```
 DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data above. 
@@ -119,7 +120,7 @@ dataFrame = dataFrame.Merge(dataFrame2, new string[] {"Id"}, new string[] {"Id"}
 Results can be saved back into a .csv format. 
 
 ```csharp
-DataFrame.WriteCsv(dataFrame, "result.csv", ',');
+DataFrame.SaveCsv(dataFrame, "result.csv", ',');
 ```
 
 ## Use DataFrame with ML.NET

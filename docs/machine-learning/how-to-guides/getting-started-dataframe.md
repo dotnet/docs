@@ -14,7 +14,7 @@ Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.c
 
 # Install Microsoft.Data.Analysis
 
-In most cases, accessing DataFrame is as simple as referencing the Microsoft.Data.Analysis NuGet package.
+In most cases, accessing DataFrame is as simple as referencing the [Microsoft.Data.Analysis](https://www.nuget.org/packages/Microsoft.Data.Analysis/) NuGet package.
 
 ```dotnetcli
 dotnet add package Microsoft.Data.Analysis

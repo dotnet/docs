@@ -50,10 +50,18 @@ var dataFrame = DataFrame.LoadCsv(dataPath);
 
 # Inspect Data (Info/Describe)
 
-DataFrames store data as a collection of columns. This makes it easy to interact with the data. To get a preview of the column datatypes, run `Info()`.
+DataFrames store data as a collection of columns. This makes it easy to interact with the data. 
+
+To get a preview of the column datatypes, run `Info()`.
 
 ```csharp
 dataFrame.Info();
+```
+
+To get a preview of what the data looks like, run `Description()`.
+
+```csharp
+dataFrame.Description()
 ```
 # Transform Data
 

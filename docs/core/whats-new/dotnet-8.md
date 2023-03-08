@@ -48,7 +48,7 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
 - Support for serializing properties from interface hierarchies. The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
   
   ```csharp
-  IDerived value = new Derived { Base = 0, Derived =1 };
+  IDerived value = new DerivedImplement { Base = 0, Derived =1 };
   JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
 
   public interface IBase
@@ -61,7 +61,7 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
       public int Derived { get; set; }
   }
 
-  public class Derived : IDerived
+  public class DerivedImplement : IDerived
   {
       public int Base { get; set; }
       public int Derived { get; set; }

@@ -13,7 +13,6 @@ jobs:
   bulk-import:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
       issues: write
 
     steps:

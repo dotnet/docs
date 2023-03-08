@@ -90,7 +90,7 @@ DataFrame filteredDataFrame = dataFrame.Filter(boolFilter);
 ## Combine Data Sources
 
 ```text
-Id, Bedrooms	
+Id, Bedrooms
 1, 1
 2, 2
 3, 3
@@ -98,7 +98,7 @@ Id, Bedrooms
 5, 3
 6, 1
 ```
-DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data above. 
+DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data above.
 
 ```csharp
 var ids = new List<Single>() {1,2,3,4,5,6};
@@ -109,7 +109,7 @@ var bedroomColumn = new SingleDataFrameColumn("BedroomNumber", bedrooms);
 var dataFrame2 = new DataFrame(idColumn, bedroomColumn);
 ```
 
-The two DataFrames can be merged based on the Id value. The merge function will take both DataFrames, and combine rows based on their id. 
+The two DataFrames can be merged based on the Id value. The merge function will take both DataFrames, and combine rows based on their id.
 
 ```csharp
 dataFrame = dataFrame.Merge(dataFrame2, new string[] {"Id"}, new string[] {"Id"});
@@ -117,7 +117,7 @@ dataFrame = dataFrame.Merge(dataFrame2, new string[] {"Id"}, new string[] {"Id"}
 
 ## Save DataFrames
 
-Results can be saved back into a .csv format. 
+Results can be saved back into a .csv format.
 
 ```csharp
 DataFrame.SaveCsv(dataFrame, "result.csv", ',');
@@ -125,5 +125,5 @@ DataFrame.SaveCsv(dataFrame, "result.csv", ',');
 
 ## Use DataFrame with ML.NET
 
-DataFrames can also be easily used by ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used directly to train a model. 
+DataFrames can also be easily used by ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used directly to train a model.
 

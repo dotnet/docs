@@ -98,7 +98,7 @@ mlnet
 You should see the help for available commands for the mlnet tool such as the 'classification' command.
 
 > [!IMPORTANT]
-> If you are running Linux or macOS, note that if you're using a console other than Bash (for example, zsh, which is the new default for macOS), then you'll need to give `mlnet` executable permissions and include `mlnet` to the system path. In general, you can do so with the following command:  
+> If you're running Linux or macOS and using a console other than Bash (for example, zsh, which is the new default for macOS), then you'll need to give `mlnet` executable permissions and include `mlnet` to the system path. In general, you can do so with the following command:  
 >
 > ```console
 > chmod +x <PATH-TO-MLNET-CLI-EXECUTABLE>

@@ -6,15 +6,15 @@ ms.date: 03/06/2023
 
 # .NET Runtime support for expression trees
 
-There's a large list of classes in the .NET Core framework that work with Expression Trees. You can see the full list at <xref:System.Linq.Expressions>. Rather than enumerate the full list, let's understand how the framework classes have been designed.
+There's a large list of classes in the .NET runtime that work with Expression Trees. You can see the full list at <xref:System.Linq.Expressions>. Rather than enumerate the full list, let's understand how the runtime classes have been designed.
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions may be simple: the constant expression `1` returns the constant value of 1. They may be more complicated: The expression `(-B + Math.Sqrt(B*B - 4 * A * C)) / (2 * A)` returns one root for a quadratic equation (in the case where the equation has a solution).
 
 ## System.Linq.Expression and derived types
 
-One of the complexities of working with expression trees is that many different kinds of expressions are valid in many places in programs. Consider an assignment expression. The right hand side of an assignment could be a constant value, a variable, a method call expression, or others. That language flexibility means that you may encounter many different expression types anywhere in the nodes of a tree when you traverse an expression tree. Therefore, when you can work with the base expression type, that's the simplest way to work. However, sometimes you need to know more. The base Expression class contains a `NodeType` property for this purpose. It returns an `ExpressionType`, which is an enumeration of possible expression types. Once you know the type of the node, you can cast it to that type, and perform specific actions knowing the type of the expression node. You can search for certain node types, and then work with the specific properties of that kind of expression.
+One of the complexities of working with expression trees is that many different kinds of expressions are valid in many places in programs. Consider an assignment expression. The right hand side of an assignment could be a constant value, a variable, a method call expression, or others. That language flexibility means that you may encounter many different expression types anywhere in the nodes of a tree when you traverse an expression tree. Therefore, when you work with the base expression type, that's the simplest way to work. However, sometimes you need to know more. The base Expression class contains a `NodeType` property for this purpose. It returns an `ExpressionType`, which is an enumeration of possible expression types. Once you know the type of the node, you cast it to that type, and perform specific actions knowing the type of the expression node. You can search for certain node types, and then work with the specific properties of that kind of expression.
 
-For example, this code prints the name of a variable for a variable access expression. I've followed the practice of checking the node type, then casting to a variable access expression and then checking the properties of the specific expression type:
+For example, this code prints the name of a variable for a variable access expression. The following code shows the practice of checking the node type, then casting to a variable access expression and then checking the properties of the specific expression type:
 
 ```csharp
 Expression<Func<int, int>> addFive = (num) => num + 5;

@@ -73,9 +73,9 @@ The preceding code didn't build the expression tree, but simply the delegate. Us
 
 :::code language="csharp" source="snippets/BuildExpressions.cs" id="BuildFactorialFunc":::
 
-The code to build the expression tree for the factorial function is quite a bit longer, more complicated, and it's riddled with labels and break statements and other elements we'd like to avoid in our everyday coding tasks.
+The code to build the expression tree for the factorial function is quite a bit longer, more complicated, and it's riddled with labels and break statements and other elements you'd like to avoid in our everyday coding tasks.
 
-For this section, I've also updated the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/main/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples.
+For this section, you the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/main/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples.
 
 ## Map code constructs to expressions
 
@@ -88,9 +88,3 @@ The expression trees API also supports assignments and control flow expressions 
 :::code language="csharp" source="snippets/BuildExpressions.cs" id="BuildFactorial":::
 
 For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010](https://devblogs.microsoft.com/csharpfaq/generating-dynamic-methods-with-expression-trees-in-visual-studio-2010/), which also applies to later versions of Visual Studio.
-
-## Examine the APIs
-
-The expression tree APIs are some of the more difficult to navigate in .NET Core, but that's fine. Their purpose is a rather complex undertaking: writing code that generates code at run time. They're necessarily complicated to provide a balance between supporting all the control structures available in the C# language and keeping the surface area of the APIs as small as reasonable. This balance means that many control structures aren't represented by their C# constructs, but by constructs that represent the underlying logic that the compiler generates from these higher level constructs.
-
-Also, at this time, there are C# expressions that can't be built directly using `Expression` class methods. The list is included in the Overview article in the section on [limitations](./index.md#limitations).

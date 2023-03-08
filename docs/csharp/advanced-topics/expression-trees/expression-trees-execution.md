@@ -25,7 +25,7 @@ In most cases, a simple mapping between an expression and its corresponding dele
 The <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> type contains <xref:System.Linq.Expressions.LambdaExpression.Compile%2A?displayProperty=nameWithType> and <xref:System.Linq.Expressions.LambdaExpression.CompileToMethod%2A?displayProperty=nameWithType> members that you would use to convert an expression tree to executable code. The `Compile` method creates a delegate. The `CompileToMethod` method updates a <xref:System.Reflection.Emit.MethodBuilder?displayProperty=nameWithType> object with the IL that represents the compiled output of the expression tree.
 
 > [!IMPORTANT]
-> `CompileToMethod` is only available in the full desktop framework, not in the .NET Core.
+> `CompileToMethod` is only available in the full desktop framework, not in .NET Core or .NET5 and later.
 
 Optionally, you can also provide a <xref:System.Runtime.CompilerServices.DebugInfoGenerator?displayProperty=nameWithType> that receives the symbol debugging information for the generated delegate object. The `DebugInfoGenerator` provides full debugging information about the generated delegate.
 
@@ -74,7 +74,7 @@ The delegate returned from this method has closed over the `constant` object, wh
 
 Now, when you execute the delegate returned from this method, you have an `ObjectDisposedException` thrown at the point of execution.
 
-It does seem strange to have a runtime error representing a compile-time construct, but that's the world we enter when we work with expression trees.
+It does seem strange to have a runtime error representing a compile-time construct, but that's the world you enter when you work with expression trees.
 
 There are numerous permutations of this problem, so it's hard to offer general guidance to avoid it. Be careful about accessing local variables when defining expressions, and be careful about accessing state in the current object (represented by `this`) when creating an expression tree returned via a public API.
 

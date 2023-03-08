@@ -42,9 +42,9 @@ Expression<Func<int>> sum = () => 1 + 2;
 > [!NOTE]
 > Don't use`var` to declare this expression tree, because the natural type of the delegate is `Func<int>`, not `Expression<Func<int>>`.
 
-The root node is a `LambdaExpression`. In order to get the interesting code on the right-hand side of the `=>` operator, you need to find one of the children of the `LambdaExpression`. We do that with all the expressions in this section. The parent node does help us find the return type of the `LambdaExpression`.
+The root node is a `LambdaExpression`. In order to get the interesting code on the right-hand side of the `=>` operator, you need to find one of the children of the `LambdaExpression`. You do that with all the expressions in this section. The parent node does help us find the return type of the `LambdaExpression`.
 
-To examine each node in this expression, we need to recursively visit many nodes. Here's a simple first implementation:
+To examine each node in this expression, you need to recursively visit many nodes. Here's a simple first implementation:
 
 :::code language="csharp" source="snippets/InterpretExpressions.cs" id="VisitAddition":::
 
@@ -68,7 +68,7 @@ You notice much repetition in the preceding code sample. Let's clean that up and
 
 :::code language="csharp" source="snippets/Visitors.cs":::
 
-This algorithm is the basis of an algorithm that can visit any arbitrary `LambdaExpression`. The code you created only looks for a small sample of the possible sets of expression tree nodes that it may encounter. However, you can still learn quite a bit from what it produces. (The default case in the `Visitor.CreateFromExpression` method prints a message to the error console when a new node type is encountered. That way, you know to add a new expression type.)
+This algorithm is the basis of an algorithm that visits any arbitrary `LambdaExpression`. The code you created only looks for a small sample of the possible sets of expression tree nodes that it may encounter. However, you can still learn quite a bit from what it produces. (The default case in the `Visitor.CreateFromExpression` method prints a message to the error console when a new node type is encountered. That way, you know to add a new expression type.)
 
 When you run this visitor on the preceding addition expression, you get the following output:
 
@@ -144,7 +144,7 @@ The expression body is:
                 The value of the constant value is 4
 ```
 
-You can also run any of the other samples through the visitor code and see what tree it represents. Here's an example of the preceding `sum3` expression (with an additional parameter to prevent the compiler from computing the constant):
+You can run any of the other samples through the visitor code and see what tree it represents. Here's an example of the preceding `sum3` expression (with an additional parameter to prevent the compiler from computing the constant):
 
 :::code language="csharp" source="snippets/InterpretExpressions.cs" id="VariableParensAddition":::
 

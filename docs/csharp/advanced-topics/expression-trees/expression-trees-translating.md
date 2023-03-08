@@ -9,13 +9,13 @@ In this article, you learn how to visit each node in an expression tree while bu
 
 The code you build to translate an expression tree is an extension of what you've already seen to visit all the nodes in a tree. When you translate an expression tree, you visit all the nodes, and while visiting them, build the new tree. The new tree may contain references to the original nodes, or new nodes that you've placed in the tree.
 
-Let's visit an expression tree, and creating a new tree with some replacement nodes. In this example, let's replace any constant with a constant that is 10 times larger. Otherwise, we leave the expression tree intact. Rather than reading the value of the constant, and replacing it with a new constant, we make this replacement by replacing the constant node with a new node that performs the multiplication.
+Let's visit an expression tree, and creating a new tree with some replacement nodes. In this example, let's replace any constant with a constant that is 10 times larger. Otherwise, you leave the expression tree intact. Rather than reading the value of the constant, and replacing it with a new constant, you make this replacement by replacing the constant node with a new node that performs the multiplication.
 
 Here, once you find a constant node, you create a new multiplication node whose children are the original constant, and the constant `10`:
 
 :::code language="csharp" source="snippets/TranslateExpressions.cs" id="ReplaceNode":::
 
-Create a new tree by replacing the original node with the substitute. We can verify the changes by compiling and executing the replaced tree.
+Create a new tree by replacing the original node with the substitute. You verify the changes by compiling and executing the replaced tree.
 
 :::code language="csharp" source="snippets/TranslateExpressions.cs" id="TranslateNode":::
 
@@ -116,4 +116,4 @@ The code creates an expression that contains a conditional `AND` operation. It t
 
 This sample shows a small subset of the code you would build to traverse and interpret the algorithms represented by an expression tree. For information on building a general purpose library that translates expression trees into another language, read [this series](/archive/blogs/mattwar/linq-building-an-iqueryable-provider-series) by Matt Warren. It goes into great detail on how to translate any of the code you might find in an expression tree.
 
-I hope you've now seen the true power of expression trees. You can examine a set of code, make any changes you'd like to that code, and execute the changed version. Because the expression trees are immutable, you can create new trees by using the components of existing trees. Reusing nodes minimizes the amount of memory needed to create modified expression trees.
+You've now seen the true power of expression trees. You examine a set of code, make any changes you'd like to that code, and execute the changed version. Because the expression trees are immutable, you create new trees by using the components of existing trees. Reusing nodes minimizes the amount of memory needed to create modified expression trees.

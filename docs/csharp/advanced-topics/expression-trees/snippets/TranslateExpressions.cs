@@ -47,7 +47,7 @@ public static class TranslateExpressions
         var add2 = Expression.Add(three, four);
         var sum = Expression.Add(addition, add2);
 
-        // Declare the delegate, so we can call it
+        // Declare the delegate, so you can call it
         // from itself recursively:
         Func<Expression, int> aggregate = null!;
         // Aggregate, return constants, or the sum of the left and right operand.

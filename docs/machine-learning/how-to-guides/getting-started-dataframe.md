@@ -127,4 +127,3 @@ DataFrame.SaveCsv(dataFrame, "result.csv", ',');
 ## Use DataFrame with ML.NET
 
 DataFrames work directly with ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used to train a model.
-

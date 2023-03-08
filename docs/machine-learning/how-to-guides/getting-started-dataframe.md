@@ -97,8 +97,6 @@ Id, Bedrooms
 4, 2
 5, 3
 6, 1
-```
-DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data above.
 
 ```csharp
 var ids = new List<Single>() {1,2,3,4,5,6};

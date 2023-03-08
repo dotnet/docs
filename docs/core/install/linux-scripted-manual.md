@@ -108,8 +108,6 @@ For more information, see [dotnet-install scripts reference](../tools/dotnet-ins
 
 ## Manual install
 
-## Important environment settings
-
 <!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
 
 As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual installation is commonly used as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's better to use a package manager.

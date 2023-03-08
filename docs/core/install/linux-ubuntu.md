@@ -15,12 +15,10 @@ This article describes how to install .NET on Ubuntu. For each version of Ubuntu
 
 | Method | Pros | Cons |
 |--------|------|------|
-| [Package manager<br>(Microsoft feed)*](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Preview releases are available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Requires registering the Microsoft package repository.</li><li>Only supports x64 Ubuntu.</li></ul> |
+| [Package manager<br>(Microsoft feed)](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Preview releases are available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Requires registering the Microsoft package repository.</li><li>Only supports x64 Ubuntu.</li></ul> |
 | [Package manager<br>(Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
 | [Snap](linux-snap.md) | <ul><li>Dependencies are included.</li><li>All supported CPU architectures available.</li><li>Easy to update to the latest patch version.</li><li>Easy removal.</li></ul> | <ul><li>Cumbersome to install and enable multiple runtimes.</li></ul> |
 | [Script \ Manual extraction](linux-scripted-manual.md) | <ul><li>Control where .NET is installed.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
-
-\* This is the recommended installation method for end-users and developers.
 
 ## Decide how to install .NET
 
@@ -31,6 +29,7 @@ Use the following sections to determine how you should install .NET:
 - [I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0](#im-using-ubuntu-2210-and-i-only-need-net-60-or-net-70)
 - [I'm using Ubuntu 22.04, and I only need .NET 6.0](#im-using-ubuntu-2204-and-i-only-need-net-60)
 - [I'm using Ubuntu 22.04, and I need .NET 7.0](#im-using-ubuntu-2204-and-i-need-net-70)
+- [I'm using a version of Ubuntu prior to 22.04](#im-using-a-version-of-ubuntu-prior-to-2204)
 - [I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`](#im-using-other-microsoft-packages-such-as-powershell-mdatp-or-mssql)
 - [I want to create a .NET app](#i-want-to-create-a-net-app)
 - [I want to run a .NET app in a container, cloud, or continuous-integration scenario](#i-want-to-run-a-net-app-in-a-container-cloud-or-continuous-integration-scenario)
@@ -55,6 +54,16 @@ If you're going to use other Microsoft repository packages, such as `powershell`
 
 .NET 7 isn't provided in the default Ubuntu package feed. You'll need to add the Microsoft package repository and then install .NET. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
 
+### I'm using a version of Ubuntu prior to 22.04
+
+Use the instructions on the version-specific Ubuntu page.
+
+- [20.04 (LTS)](linux-ubuntu-2004.md)
+- [18.04 (LTS)](linux-ubuntu-1804.md)
+- [16.04 (LTS)](linux-ubuntu-1604.md)
+
+Review the [Supported distributions](#supported-distributions) section for more information about what versions of .NET are supported for your version of Ubuntu. If you're installing a version that isn't supported, see [Register the Microsoft package repository](#register-the-microsoft-package-repository).
+
 ### I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`
 
 If your Ubuntu version supports .NET through the built-in Ubuntu feed, you must decide which feed should install .NET. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available the package feeds.
@@ -63,7 +72,7 @@ If you want to source the .NET packages from the Ubuntu feed, you'll need to de-
 
 ### I want to create a .NET app
 
-We recommend you use APT and the Microsoft package repository. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+Use the same package sources for the SDK as you use for the runtime. For example, if you're using Ubuntu 22.04 and .NET 6, but not .NET 7, it's recommended that you install .NET through the built-in Ubuntu feed. If, however, you move to .NET 7, which isn't provided by Canonical for Ubuntu 22.04, you should [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository). Review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
 
 ### I want to run a .NET app in a container, cloud, or continuous-integration scenario
 
@@ -125,7 +134,7 @@ The Microsoft package repository contains all versions of .NET that were previou
 Preview releases are **not** available in the Microsoft package repository. For more information, see [Install preview versions](#install-preview-versions).
 
 > [!CAUTION]
-> We recommend that you only use one repository to manage all of your .NET installs. If you've previously installed .NET with the Ubuntu repository, remove those packages, add the Microsoft package repository, and then install .NET.
+> We recommend that you only use one repository to manage all of your .NET installs. If you've previously installed .NET with the Ubuntu repository, you must clean the system of .NET packages and configure the APT to ignore the Ubuntu feed. For more information about how to do this, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution?pivots=os-linux-ubuntu).
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -162,7 +171,9 @@ After you've [registered the Microsoft package repository](#register-the-microso
 If you want to install an unsupported version of .NET, check the [Supported distributions](#supported-distributions) section to see if that version of .NET is available. Then, substitute the **version** of .NET you want to install. For example, to install ASP.NET Core 2.1, use the package name `aspnetcore-runtime-2.1`.
 
 > [!TIP]
-> If you're not creating .NET apps, install the ASP.NET Core runtime as it includes the .NET runtime as well.
+> If you're not creating .NET apps, install the ASP.NET Core runtime as it includes the .NET runtime and also supports ASP.NET Core apps.
+
+Some enviornment variables affect how .NET is run after it's installed. For more information, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 ## Uninstall .NET
 

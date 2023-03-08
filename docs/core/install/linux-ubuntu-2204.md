@@ -30,14 +30,12 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ## Install .NET 7
 
-.NET 7 packages aren't available in the Ubuntu package manager feeds. You must use the Microsoft package repository. If you've previously installed .NET 6 with the Ubuntu feed, you'll run into a conflict when trying to use .NET 7 after installing it. Instead, do the following:
-
-01. Remove the .NET packages from your system.
-01. Add the Microsoft package repository.
-01. Install .NET.
+.NET 7 packages aren't available in the Ubuntu package manager feeds. You must use the Microsoft package repository.
 
 > [!WARNING]
 > If you've previously installed .NET 6 from the Ubuntu feed, you'll run into issues installing .NET 7 from the Microsoft package repository. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall .NET 6 and then install with the Microsoft package repository.
+>
+> For more information about how to clean your system and install .NET 7, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution?pivots=os-linux-ubuntu).
 
 ## Install .NET 6
 

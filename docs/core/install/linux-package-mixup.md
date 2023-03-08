@@ -54,6 +54,9 @@ Mixing .NET packages from two different sources will most likely lead to issues 
 
 The solution to these problems is to use .NET from one package repository. Which repository to pick, and how to do it, varies by use-case and the Linux distribution.
 
+- [My Linux distribution provides .NET packages, and I want to use them.](#my-linux-distribution-provides-net-packages-and-i-want-to-use-them)
+- [I need a version of .NET that isn't provided by my Linux distribution.](#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution)
+
 ### My Linux distribution provides .NET packages, and I want to use them
 
 ::: zone pivot="os-linux-redhat"
@@ -183,13 +186,15 @@ Configure your package manager to ignore the .NET packages from the distribution
     touch /etc/apt/preferences
     ```
 
-01. Open `/etc/apt/preferences` in an editor and add the following settings, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository. Make sure to replace `archive.ubuntu.com` with your distribution's package source.
+01. Open `/etc/apt/preferences` in an editor and add the following settings, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
 
     ```bash
     Package: dotnet* aspnet* netstandard*
-    Pin: origin "archive.ubuntu.com"
+    Pin: origin "your-package-source"
     Pin-Priority: -10
     ```
+
+    Make sure to replace `your-package-source` with your distribution's package source, for example, on Ubuntu you would use `archive.ubuntu.com`.
 
 01. Reinstall .NET from the Microsoft package feed. For more information, see [Install .NET on Linux](linux.md). If using Ubuntu, see [My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version](linux-ubuntu.md#my-ubuntu-distribution-doesnt-include-the-net-version-i-want-or-i-need-an-out-of-support-net-version).
 

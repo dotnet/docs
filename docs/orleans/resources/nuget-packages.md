@@ -15,7 +15,7 @@ Consumers of Orleans rely on various NuGet packages to achieve specific desired 
 
 ## Key packages
 
-There are three primary mutually exclusive NuGet packages required when writing Orleans apps used for various workloads. For example, when you write an Orleans Silo, you'll reference the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. When you write an Orleans Client app, you'll reference the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. For any other Orleans projects, such as abstractions or grain class libraries, you'll reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package.
+You reference one of two mutually exclusive NuGet packages when writing Orleans apps, depending on the chosen workload. For example, when you write an Orleans Silo, you'll reference the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. When you write an Orleans Client app, you'll reference the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. All Orleans projects, such as abstractions or grain class libraries, reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package. The `Microsoft.Orleans.Sdk` package is included with both the `Client` and `Server` packages.
 
 | NuGet package | Description |
 |---|---|
@@ -108,7 +108,7 @@ For information on installing NuGet packages, see the following options:
 
 ## Tools
 
-One popular Orleans tool, is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
+One popular Orleans tool is the [OrleansDashboard](https://www.nuget.org/packages/OrleansDashboard) NuGet package. This dashboard provides some simple metrics and insights into what is happening inside your Orleans app. For more information, see [GitHub: Orleans Dashboard](https://github.com/OrleansContrib/OrleansDashboard).
 
 :::zone-end
 

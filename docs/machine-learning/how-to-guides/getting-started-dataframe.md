@@ -1,7 +1,7 @@
 ---
 title: Getting started with DataFrames
 description: Learn how to use DataFrame to manipulate and prepare data.
-author: 
+author: beccam
 ms.author: beccam
 ms.date: 1/13/2023
 ms.custom: mvc, how-to, title-hack-0625
@@ -14,7 +14,11 @@ Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.c
 
 # Install Microsoft.Data.Analysis
 
-Add the Microsoft.Data.Analysis package.
+In most cases, accessing DataFrame is as simple as referencing the Microsoft.Data.Analysis NuGet package.
+
+```dotnetcli
+dotnet add package Microsoft.Data.Analysis
+```
 
 # Load data
 
@@ -53,7 +57,7 @@ dataFrame.Info();
 ```
 # Transform Data
 
-There are a variety of transformative options for data. The DataFrame and DataFrameColumn classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
+There are a variety of transformative options for data. The [DataFrame](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe?view=ml-dotnet-preview) and [DataFrameColumn](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframecolumn?view=ml-dotnet-preview) classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
 
 For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can easily apply a computation to all of the values. 
 
@@ -61,13 +65,13 @@ For example, this data can be edited to compare historical prices to current pri
 dataFrame["ComputedPrices"] = dataFrame["HistoricalPrice"].Multiply(2);
 ```
 
-Data can be sorted into groups 
+Data can be sorted into groups. 
 
 ```csharp
 var sortedDataFrame = dataFrame.GroupBy("Size");
 ```
 
-Data can be filtered based on different equality metrics. This uses a ElementWise equality function, and then applies the boolean result column to the DataFrame to get a new, filtered DataFrame. 
+Data can be filtered based on different equality metrics. This example uses a ElementWise equality function, and then filters based on the boolean result column to get a new DataFrame with only the appropriate values. 
 
 ```csharp
 PrimitiveDataFrameColumn<bool> boolFilter = dataFrame["CurrentPrice"].ElementwiseGreaterThan(200000);
@@ -96,7 +100,7 @@ var bedroomColumn = new SingleDataFrameColumn("BedroomNumber", bedrooms);
 var dataFrame2 = new DataFrame(idColumn, bedroomColumn);
 ```
 
-The two DataFrames can be merged based on the Id value.
+The two DataFrames can be merged based on the Id value. The merge function will take both DataFrames, and combine rows based on their id. 
 
 ```csharp
 dataFrame = dataFrame.Merge(dataFrame2, new string[] {"Id"}, new string[] {"Id"});
@@ -110,10 +114,7 @@ Results can be saved back into a .csv format.
 DataFrame.WriteCsv(dataFrame, "result.csv", ',');
 ```
 
-# Use DataFrame with ML.NEt
+# Use DataFrame with ML.NET
 
-DataFrames can also be easily used by ML.NET. 
+DataFrames can also be easily used by ML.NET. DataFrame implements the IDataView and can be used directly to train a model. 
 
-```csharp
-dataFrame.ToIDataView();
-```

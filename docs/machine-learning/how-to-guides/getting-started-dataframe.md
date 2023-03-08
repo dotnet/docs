@@ -50,7 +50,7 @@ var dataFrame = DataFrame.LoadCsv(dataPath);
 
 # Inspect Data (Info/Describe)
 
-DataFrames store data as a collection of columns. This makes it easy to interact with the data. 
+DataFrames store data as a collection of columns. This makes it easy to interact with the data.
 
 To get a preview of the column datatypes, run `Info()`.
 

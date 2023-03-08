@@ -1,10 +1,7 @@
 ﻿using App.TimerHostedService;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<TimerService>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddHostedService<TimerService>();
 
-await host.RunAsync();
+IHost host = builder.Build();
+host.Run();

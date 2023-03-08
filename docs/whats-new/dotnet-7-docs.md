@@ -256,11 +256,11 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Properties](../csharp/properties.md) - C# 11: required members
 - [Constraints on type parameters (C# Programming Guide)](../csharp/programming-guide/generics/constraints-on-type-parameters.md) - Add information on static virtual interface members
 - [Generic Interfaces (C# Programming Guide)](../csharp/programming-guide/generics/generic-interfaces.md) - Add information on static virtual interface members
-- [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md) - Add updates for numeric IntPtr
-- [Built-in numeric conversions (C# reference)](../csharp/language-reference/builtin-types/numeric-conversions.md) - Add updates for numeric IntPtr
+- [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md) - Add updates for numeric `IntPtr`
+- [Built-in numeric conversions (C# reference)](../csharp/language-reference/builtin-types/numeric-conversions.md) - Add updates for numeric `IntPtr`
 - [Arithmetic operators (C# reference)](../csharp/language-reference/operators/arithmetic-operators.md) - Operator updates to support generic math
-- [Determine caller information using attributes interpreted by the C# compiler](../csharp/language-reference/attributes/caller-information.md) - Extended nameof parameter scope
-- [Attributes for null-state static analysis interpreted by the C# compiler](../csharp/language-reference/attributes/nullable-analysis.md) - Extended nameof parameter scope
+- [Determine caller information using attributes interpreted by the C# compiler](../csharp/language-reference/attributes/caller-information.md) - Extended `nameof` parameter scope
+- [Attributes for null-state static analysis interpreted by the C# compiler](../csharp/language-reference/attributes/nullable-analysis.md) - Extended `nameof` parameter scope
 - [delegate operator (C# reference)](../csharp/language-reference/operators/delegate-operator.md) - Document new method group conversion
 - [Generics and Attributes (C# Programming Guide)](../csharp/programming-guide/generics/generics-and-attributes.md) - generic attributes are allowed in C# 11
 
@@ -268,7 +268,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 
 ### New articles
 
-- [What's new in Orleans 7.0](../orleans/whats-new-in-orleans.md)
+- [Migrate from Orleans 3.x to 7.0](../orleans/migration-guide.md)
 
 ### Updated articles
 

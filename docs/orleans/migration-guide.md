@@ -1,10 +1,10 @@
 ---
-title: What's new in Orleans
-description: Learn about the various new features introduced in Orleans 7.0.
-ms.date: 12/15/2022
+title: Migrate from Orleans 3.x to 7.0
+description: Learn the various new features introduced in Orleans 7.0, and how to migrate from 3.x versions.
+ms.date: 03/06/2023
 ---
 
-# What's new in Orleans 7.0
+# Migrate from Orleans 3.x to 7.0
 
 Orleans 7.0 introduces several beneficial changes, including improvements to hosting, custom serialization, immutability, and grain abstractions.
 
@@ -14,7 +14,7 @@ Existing applications using reminders, streams, or grain persistence cannot be e
 
 Applications running previous versions of Orleans cannot be smoothly upgraded via a rolling upgrade to Orleans 7.0. Therefore, a different upgrade strategy must be used, such as deploying a new cluster and decommissioning the previous cluster. Orleans 7.0 changes the wire protocol in an incompatible fashion, meaning that clusters cannot contain a mix of Orleans 7.0 hosts and hosts running previous versions of Orleans.
 
-We have avoided such breaking changes for many years, even across major releases, so why now? There are two major reasons: identities and serialization. Regarding identities, Grain and stream identities are now comprised of strings, allowing grains to encode generic type information properly and allowing streams to map more easily to the application domain. Grain types were previously identified using a complex data structure which could not represent generic grains, leading to corner cases. Streams were identified by a `string` namespace and a <xref:System.Guid> key, which was difficult for developers to map to their application domain, however efficient. Serialization is now version-tolerant, meaning that you can modify your types in certain compatible ways, following a set of rules, and be confident that you can upgrade your application without serialization errors. This was especially problematic when application types were persisted in streams or grain storage. The following sections detail the major changes and discuss them in more detail.
+We have avoided such breaking changes for many years, even across major releases, so why now? There are two major reasons: identities and serialization. Regarding identities, Grain and stream identities are now comprised of strings, allowing grains to encode generic type information properly and allowing streams to map more easily to the application domain. Grain types were previously identified using a complex data structure that could not represent generic grains, leading to corner cases. Streams were identified by a `string` namespace and a <xref:System.Guid> key, which was difficult for developers to map to their application domain, however efficient. Serialization is now version-tolerant, meaning that you can modify your types in certain compatible ways, following a set of rules, and be confident that you can upgrade your application without serialization errors. This was especially problematic when application types persisted in streams or grain storage. The following sections detail the major changes and discuss them in more detail.
 
 ### Packaging changes
 
@@ -28,9 +28,9 @@ If you're upgrading a project to Orleans 7.0, you'll need to perform the followi
   - Replace usages of `KnownAssembly` with <xref:Orleans.GenerateCodeForDeclaringAssemblyAttribute>.
   - The `Microsoft.Orleans.Sdk` package references the C# Source Generator package (`Microsoft.Orleans.CodeGenerator`).
 - Remove all references to `Microsoft.Orleans.OrleansRuntime`.
-  - The [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server) packages references its replacement, `Microsoft.Orleans.Runtime`.
+  - The [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server) packages reference its replacement, `Microsoft.Orleans.Runtime`.
 - Remove calls to `ConfigureApplicationParts`.
-  - Application parts has been removed. The C# Source Generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of application parts automatically.
+_Application Parts_ has been removed. The C# Source Generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of _Application Parts_ automatically.
 - Replace references to `Microsoft.Orleans.OrleansServiceBus` with [Microsoft.Orleans.Streaming.EventHubs](https://nuget.org/packages/Microsoft.Orleans.Streaming.EventHubs)
 - If you are using reminders, add a reference to [Microsoft.Orleans.Reminders](https://nuget.org/packages/Microsoft.Orleans.Reminders)
 - If you are using streams, add a reference to [Microsoft.Orleans.Streaming](https://nuget.org/packages/Microsoft.Orleans.Streaming)
@@ -48,13 +48,13 @@ For more information, see [ImplicitUsings](../core/project-sdk/msbuild-props.md#
 
 ## Hosting
 
-The <xref:Orleans.ClientBuilder> type has been replaced with a <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means that you can add an Orleans client to an existing host without having to create a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> has completed, the client will be connected automatically. Services added to the `IHostBuilder` are started in the order of registration, so calling `UseOrleansClient` before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A> will ensure Orleans is started before ASP.NET Core starts for example, allowing you to access the client from your ASP.NET Core application immediately.
+The <xref:Orleans.ClientBuilder> type has been replaced with a <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> extension method on <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `IHostBuilder` type comes from the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. This means that you can add an Orleans client to an existing host without having to create a separate dependency injection container. The client connects to the cluster during startup. Once <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A?displayProperty=nameWithType> has completed, the client will be connected automatically. Services added to the `IHostBuilder` are started in the order of registration, so call `UseOrleansClient` before calling <xref:Microsoft.Extensions.Hosting.GenericHostBuilderExtensions.ConfigureWebHostDefaults%2A> will ensure Orleans is started before ASP.NET Core starts for example, allowing you to access the client from your ASP.NET Core application immediately.
 
 If you wish to emulate the previous `ClientBuilder` behavior, you can create a separate `HostBuilder` and configure it with an Orleans client. `IHostBuilder` can have either an Orleans client or an Orleans silo configured. All silos register an instance of <xref:Orleans.IGrainFactory> and <xref:Orleans.IClusterClient> which the application can use, so configuring a client separately is unnecessary and unsupported.
 
 ## `OnActivateAsync` and `OnDeactivateAsync` signature change
 
-Orleans allows grains to execute code during activation and deactivation. This can be used to perform tasks such as read state from storage or log lifecycle messages. In Orleans 7.0, the signature of these lifecycle methods changed:
+Orleans allows grains to execute code during activation and deactivation. This can be used to perform tasks such as reading state from storage or log lifecycle messages. In Orleans 7.0, the signature of these lifecycle methods changed:
 
 - <xref:Orleans.Grain.OnActivateAsync> now accepts a <xref:System.Threading.CancellationToken> parameter. When the <xref:System.Threading.CancellationToken> is canceled, the activation process should be abandoned.
 - <xref:Orleans.Grain.OnDeactivateAsync> now accepts a <xref:Orleans.DeactivationReason> parameter and a `CancellationToken` parameter. The `DeactivationReason` indicates why the activation is being deactivated. Developers are expected to use this information for logging and diagnostics purposes. When the `CancellationToken` is canceled, the deactivation process should be completed promptly. Note that since any host can fail at any time, it is not recommended to rely on `OnDeactivateAsync` to perform important actions such as persisting critical state.
@@ -145,7 +145,7 @@ public sealed class PingGrain : IGrainBase, IPingGrain
 
 ## Serialization
 
-The most burdensome change in Orleans 7.0 is the introduction of the version-tolerant serializer. This change was made because applications tend to evolve over time and this led to a significant pitfall for developers, since the previous serializer couldn't tolerate adding properties to existing types. On the other hand, the serializer was flexible, allowing developers to represent most .NET types without modification, including features such as generics, polymorphism, and reference tracking. A replacement was long overdue, but users still need high-fidelity representation of their types. Therefore, a replacement serializer was introduced in Orleans 7.0 which supports high-fidelity representation of .NET types while also allowing types to evolve over time. The new serializer is much more efficient than the previous serializer, resulting in up to 170% higher end-to-end throughput.
+The most burdensome change in Orleans 7.0 is the introduction of the version-tolerant serializer. This change was made because applications tend to evolve and this led to a significant pitfall for developers, since the previous serializer couldn't tolerate adding properties to existing types. On the other hand, the serializer was flexible, allowing developers to represent most .NET types without modification, including features such as generics, polymorphism, and reference tracking. A replacement was long overdue, but users still need the high-fidelity representation of their types. Therefore, a replacement serializer was introduced in Orleans 7.0 which supports the high-fidelity representation of .NET types while also allowing types to evolve. The new serializer is much more efficient than the previous serializer, resulting in up to 170% higher end-to-end throughput.
 
 For more information, see the following articles as it relates to Orleans 7.0:
 
@@ -179,7 +179,7 @@ As mentioned above, overriding the default grain class and interface names for y
 
 ## Stream identities
 
-When Orleans streams was first released, streams could only be identified using a <xref:System.Guid>. This was efficient in terms of memory allocation, but it was difficult for users to create meaningful stream identities, often requiring some encoding or indirection to determine the appropriate stream identity for a given purpose.
+When Orleans streams were first released, streams could only be identified using a <xref:System.Guid>. This was efficient in terms of memory allocation, but it was difficult for users to create meaningful stream identities, often requiring some encoding or indirection to determine the appropriate stream identity for a given purpose.
 
 In Orleans 7.0, streams are now identified using strings. The <xref:Orleans.Runtime.StreamId?displayProperty=fullName> `struct` contains three properties: a <xref:Orleans.Runtime.StreamId.Namespace?displayProperty=nameWithType>, a <xref:Orleans.Runtime.StreamId.Key?displayProperty=nameWithType>, and a <xref:Orleans.Runtime.StreamId.FullKey?displayProperty=nameWithType>. These property values are encoded UTF-8 strings. For example, <xref:Orleans.Runtime.StreamId.Create(System.String,System.String)?displayProperty=nameWithType>.
 
@@ -187,7 +187,7 @@ In Orleans 7.0, streams are now identified using strings. The <xref:Orleans.Runt
 
 `SimpleMessageStreams` (also called SMS) was removed in 7.0. SMS had the same interface as <xref:Orleans.Providers.Streams.PersistentStreams?displayProperty=fullName>, but its behavior was very different, since it relied on direct grain-to-grain calls. To avoid confusion, SMS was removed, and a new replacement called <xref:Orleans.BroadcastChannel?displayProperty=fullName> was introduced.
 
-`BroadcastChannel` only supports implicit subscription and can be a direct replacement in this case. If you need explicit subscriptions or need to use the `PersistentStream` interface (for example you were using SMS in tests while using `EventHub` in production), then `MemoryStream` is the best candidate for you.
+`BroadcastChannel` only supports implicit subscriptions and can be a direct replacement in this case. If you need explicit subscriptions or need to use the `PersistentStream` interface (for example you were using SMS in tests while using `EventHub` in production), then `MemoryStream` is the best candidate for you.
 
 `BroadcastChannel` will have the same behaviors as SMS, while `MemoryStream` will behave like other stream providers. Consider the following Broadcast Channel usage example:
 
@@ -306,9 +306,9 @@ builder.Host.UseOrleans((_, clientBuilder) =>
 
 ## Refactor features from core package into separate packages
 
-In Orleans 7.0, we have made an effort to factor extensions into separate packages which don't rely on <xref:Orleans.Core?displayName=fullName>. Namely, <xref:Orleans.Streaming?displayName=fullName>, <xref:Orleans.Reminders?displayName=fullName>, and <xref:Orleans.Transactions?displayName=fullName> have been separated from the core. This means that these packages are entirely *pay for what you use* and there is no code in the core of Orleans which is dedicated to these features. This slims down the core API surface and assembly size, simplifies the core, and improves performance. Regarding performance, Transactions in Orleans previously required some code which was executed for every method to coordinate potential transactions. That has since been moved to per-method.
+In Orleans 7.0, we have made an effort to factor extensions into separate packages which don't rely on <xref:Orleans.Core?displayName=fullName>. Namely, <xref:Orleans.Streaming?displayName=fullName>, <xref:Orleans.Reminders?displayName=fullName>, and <xref:Orleans.Transactions?displayName=fullName> have been separated from the core. This means that these packages are entirely *pay* for what you _use_ and no code in the core of Orleans is dedicated to these features. This slims down the core API surface and assembly size, simplifies the core, and improves performance. Regarding performance, Transactions in Orleans previously required some code which was executed for every method to coordinate potential transactions. That has since been moved to per-method.
 
-This is a compilation breaking change. You may have existing code which interacts with reminders or streams by calling into methods which were previously defined on the <xref:Orleans.Grain> base class but are now extension methods. Such calls which do not specify `this` (for example <xref:Orleans.GrainReminderExtensions.GetReminders%2A>) will need to be updated to include `this` (for example `this.GetReminders()`) because extension methods must be qualified. There will be a compilation error if you do not update those calls and the required code change may not be obvious if you do not know what has changed.
+This is a compilation-breaking change. You may have existing code that interacts with reminders or streams by calling into methods which were previously defined on the <xref:Orleans.Grain> base class but are now extension methods. Such calls which do not specify `this` (for example <xref:Orleans.GrainReminderExtensions.GetReminders%2A>) will need to be updated to include `this` (for example `this.GetReminders()`) because extension methods must be qualified. There will be a compilation error if you do not update those calls and the required code change may not be obvious if you do not know what has changed.
 
 ## Transaction client
 
@@ -330,7 +330,7 @@ The [BankAccount](https://github.com/dotnet/samples/tree/main/orleans/BankAccoun
 
 ## Call chain reentrancy
 
-Grains are single-threaded and process requests one-by-one from beginning to completion by default. In other words, grains are not reentrant by default. Adding the <xref:Orleans.Concurrency.ReentrantAttribute> to a grain class allows for multiple requests  be processed concurrently, in an interleaving fashion, while still being single-threaded. This can be useful for grains which hold no internal state or perform a lot of asynchronous operations, such as issuing HTTP calls or writing to a database. Extra care needs to be taken when requests can interleave: it's possible that the state of a grain observed before an `await` statement has changed by the time the asynchronous operation completes and the method resumes execution.
+Grains are single-threaded and process requests one by one from beginning to completion by default. In other words, grains are not reentrant by default. Adding the <xref:Orleans.Concurrency.ReentrantAttribute> to a grain class allows for multiple requests be processed concurrently, in an interleaving fashion, while still being single-threaded. This can be useful for grains that hold no internal state or perform a lot of asynchronous operations, such as issuing HTTP calls or writing to a database. Extra care needs to be taken when requests can interleave: it's possible that the state of a grain is observed before an `await` statement has changed by the time the asynchronous operation completes and the method resumes execution.
 
 For example, the following grain represents a counter. It has been marked `Reentrant`, allowing multiple calls to interleave. The `Increment()` method should increment the internal counter and return the observed value. However, since the `Increment()` method body observes the grain's state before an `await` point and updates it afterwards, it is possible that multiple interleaving executions of `Increment()` can result in a `_value` less than the total number of `Increment()` calls received. This is an error introduced by improper use of reentrancy.
 
@@ -356,12 +356,12 @@ public sealed class CounterGrain : Grain, ICounterGrain
 }
 ```
 
-To prevent such errors, grains are non-reentrant by default. The downside to this is reduced throughput for grains which perform asynchronous operations in their implementation, since other requests cannot be processed while the grain is waiting for an asynchronous operation to complete. To alleviate this, Orleans offers several options to allow reentrancy in certain cases:
+To prevent such errors, grains are non-reentrant by default. The downside to this is reduced throughput for grains that perform asynchronous operations in their implementation, since other requests cannot be processed while the grain is waiting for an asynchronous operation to complete. To alleviate this, Orleans offers several options to allow reentrancy in certain cases:
 
 - For an entire class: placing the <xref:Orleans.Concurrency.ReentrantAttribute> on the grain allows any request to the grain to interleave with any other request.
 - For a subset of methods: placing the <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> on the grain *interface* method allows requests to that method to interleave with any other request and for requests to that method to be interleaved by any other request.
 - For a subset of methods: placing the <xref:Orleans.Concurrency.ReadOnlyAttribute> on the grain *interface* method allows requests to that method to interleave with any other `ReadOnly` request and for requests to that method to be interleaved by any other `ReadOnly` request. In this sense, it is a more restricted form of `AlwaysInterleave`.
-- For any request within a call chain: <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy?displayProperty=nameWithType> and <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy?displayProperty=nameWithType> allow opting in and out of allowing downstream requests to reenter back into the grain. The calls both return a value which *must* be disposed on exiting the request. Therefore, the proper usage is as follows:
+- For any request within a call chain: <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy?displayProperty=nameWithType> and <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy?displayProperty=nameWithType allows opting in and out of allowing downstream requests to reenter back into the grain. The calls both return a value that _must_ be disposed of while exiting the request. Therefore, the proper usage is as follows:
 
 ``` csharp
 public Task<int> OuterCall(IMyGrain other)

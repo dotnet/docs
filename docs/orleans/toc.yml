@@ -8,8 +8,8 @@ items:
         href: overview.md
       - name: Benefits
         href: benefits.md
-      - name: What's new
-        href: whats-new-in-orleans.md
+      - name: "Migrate from Orleans 3.x to 7.0"
+        href: migration-guide.md
   - name: Quickstarts
     items:
       - name: Build your first Orleans app
@@ -140,14 +140,14 @@ items:
             href: host/configuration-guide/adonet-configuration.md
           - name: Serialization
             items:
-            - name: Overview
-              href: host/configuration-guide/serialization.md
-            - name: Serialization of immutable types
-              href: host/configuration-guide/serialization-immutability.md
-            - name: Configure serialization
-              href: host/configuration-guide/serialization-configuration.md
-            - name: Customize serialization
-              href: host/configuration-guide/serialization-customization.md
+              - name: Overview
+                href: host/configuration-guide/serialization.md
+              - name: Serialization of immutable types
+                href: host/configuration-guide/serialization-immutability.md
+              - name: Configure serialization
+                href: host/configuration-guide/serialization-configuration.md
+              - name: Customize serialization
+                href: host/configuration-guide/serialization-customization.md
           - name: Startup tasks
             href: host/configuration-guide/startup-tasks.md
           - name: Orleans graceful shut down

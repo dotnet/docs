@@ -81,7 +81,7 @@ DLR architecture
 
  The DLR adds a set of services to the CLR for better supporting dynamic languages. These services include the following:
 
-- Expression trees. The DLR uses expression trees to represent language semantics. For this purpose, the DLR has extended LINQ expression trees to include control flow, assignment, and other language-modeling nodes. For more information, see [Expression Trees (C#)](../../csharp/programming-guide/concepts/expression-trees/index.md) or [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md).
+- Expression trees. The DLR uses expression trees to represent language semantics. For this purpose, the DLR has extended LINQ expression trees to include control flow, assignment, and other language-modeling nodes. For more information, see [Expression Trees (C#)](../../csharp/advanced-topics/expression-trees/index.md) or [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md).
 
 - Call site caching. A *dynamic call site* is a place in the code where you perform an operation like `a + b` or `a.b()` on dynamic objects. The DLR caches the characteristics of `a` and `b` (usually the types of these objects) and information about the operation. If such an operation has been performed previously, the DLR retrieves all the necessary information from the cache for fast dispatch.
 
@@ -98,6 +98,6 @@ The DLR uses binders in call sites to communicate not only with the .NET Framewo
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>
 - [Common Language Runtime](../../standard/clr.md)
-- [Expression Trees (C#)](../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [Expression Trees (C#)](../../csharp/advanced-topics/expression-trees/index.md)
 - [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md)
 - [Walkthrough: Creating and Using Dynamic Objects](../../csharp/advanced-topics/interop/walkthrough-creating-and-using-dynamic-objects.md)

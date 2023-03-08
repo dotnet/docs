@@ -22,7 +22,7 @@ dotnet add package Microsoft.Data.Analysis
 
 # Load data
 
-DataFrames make it easy to load tabular data. Create a comma-separated file called housing-prices.csv with the following data. 
+DataFrames make it easy to load tabular data. Create a comma-separated file called *housing-prices.csv* with the following data.
 
 ```text
 Id,Size,HistoricalPrice,CurrentPrice

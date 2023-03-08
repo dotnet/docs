@@ -205,60 +205,6 @@ sudo apt upgrade dotnet-sdk-7.0
 > [!TIP]
 > If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
-## Use both the Ubuntu feed and the Microsoft feed
-
-Some versions of .NET are available in the built-in Ubuntu package feed. You may find that you want both feeds, such as when you want to use .NET from the Ubuntu feed but still use other packages provided in the Microsoft feed. The [Supported distributions](#supported-distributions) section lists which versions of .NET are available the package feeds.
-
-### Use the Microsoft feed for non .NET-related packages
-
-If you're using the Ubuntu feed for .NET, and the Microsoft feed for other packages, de-prioritize the Microsoft feed for .NET-related packages, pin the packages as a lower priority:
-
-01. If you previously installed .NET packages from the Microsoft repository, remove them:
-
-    ```bash
-    sudo apt remove 'dotnet*' 'aspnet*' 'netstandard*'
-    ```
-
-01. Create `/etc/apt/preferences` if it doesn't already exist:
-
-    ```bash
-    sudo touch /etc/apt/preferences
-    ```
-
-01. Open the preferences file in an editor of your choice, and add the following settings, which prevents packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced by the Microsoft feed:
-
-    ```bash
-    Package: dotnet* aspnet* netstandard*
-    Pin: origin "packages.microsoft.com"
-    Pin-Priority: -10
-    ```
-
-01. Install the .NET packages from the Ubuntu feed. Reference the [Ubuntu-specific articles](#supported-distributions) for instructions.
-
-### Use the Microsoft feed for a specific .NET package
-
-If you want to use the Microsoft feed for a specific .NET package, even though that package is provided by the Ubuntu feed, You'll need to pin that specific package as a higher priority:
-
-01. Create `/etc/apt/preferences` if it doesn't already exist:
-
-    ```bash
-    sudo touch /etc/apt/preferences
-    ```
-
-01. Open the preferences file in an editor of your choice, and pin the package as a high priority, which will be sourced by the Microsoft Feed. For example, use the following snippet to pin .NET SDK 7.0:
-
-    ```bash
-    Package: dotnet-sdk-7.0
-    Pin: origin "packages.microsoft.com"
-    Pin-Priority: 999
-    ```
-
-01. Save the file and then Install .NET.
-
-    ```bash
-    sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
-    ```
-
 ## Troubleshooting
 
 Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` only the runtime is listed. This can be related to using two different package sources. The built-in Ubuntu 22.04 and Ubuntu 22.10 package feeds include some versions of .NET, but not all, but you may have also installed .NET from the Microsoft feeds. For more information about how to fix this problem, see [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md).

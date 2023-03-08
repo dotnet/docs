@@ -35,7 +35,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 > [!WARNING]
 > If you've previously installed .NET 6 from the Ubuntu feed, you'll run into issues installing .NET 7 from the Microsoft package repository. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall .NET 6 and then install with the Microsoft package repository.
 >
-> For more information about how to clean your system and install .NET 7, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution?pivots=os-linux-ubuntu).
+> For more information about how to clean your system and install .NET 7, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
 
 ## Install .NET 6
 

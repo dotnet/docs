@@ -34,7 +34,7 @@ Id,Size,HistoricalPrice,CurrentPrice
 6,550f,99000,180000
 ```
 
-Start by loading the data into a DataFrame. 
+Start by loading the data into a DataFrame.
 
 ```csharp
 using System.IO;

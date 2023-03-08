@@ -20,7 +20,7 @@ Object Get(string key)
 
 The preceding API is used to retrieve a value from the current request context.
 
-The backing storage for `RequestContext` is thread-static. When a thread (whether client-side or within Orleans) sends a request, the contents of the sending thread's `RequestContext` are included with the Orleans message for the request; when the grain code receives the request, that metadata is accessible from the local `RequestContext`. If the grain code does not modify the `RequestContext`, then any grain it requests to will receive the same metadata, and so on.
+The backing storage for `RequestContext` is async-local. When a caller (whether client-side or within Orleans) sends a request, the contents of the caller's `RequestContext` are included with the Orleans message for the request; when the grain code receives the request, that metadata is accessible from the local `RequestContext`. If the grain code does not modify the `RequestContext`, then any grain it requests to will receive the same metadata, and so on.
 
 Application metadata also is maintained when you schedule a future computation using <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> or <xref:System.Threading.Tasks.Task.ContinueWith%2A>; in both cases, the continuation will execute with the same metadata as the scheduling code had at the moment the computation was scheduled (that is, the system makes a copy of the current metadata and passes it to the continuation, so changes after the call to `StartNew` or `ContinueWith` will not be seen by the continuation).
 

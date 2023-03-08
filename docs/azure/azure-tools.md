@@ -1,16 +1,17 @@
 ---
 title: Additional Azure Tools
 description: This article describes additional tools and utilities for working with Azure and how you can install them.
-ms.date: 1/1/2021
 ms.topic: conceptual
-ms.custom: devx-track-dotnet
-author: DavidCBerry13
+ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 1/26/2023
+author: alexwolfmsft
+ms.author: alexwolf
 recommendations: false
 ---
 
 # Additional Tools for Azure Developers
 
-In addition to configuring your IDE and installing the Azure CLI, multiple other tools and utilities are available to help you be more productive with Azure.  
+In addition to configuring your IDE and installing the Azure CLI, multiple other tools and utilities are available to help you be more productive with Azure.
 
 ## Azure PowerShell
 
@@ -18,6 +19,15 @@ Azure PowerShell is a PowerShell module of cmdlets for managing Azure resource d
 
 > [!div class="nextstepaction"]
 > [Install Azure PowerShell](/powershell/azure/install-az-ps)
+
+## Azure Developer CLI (preview)
+
+Azure Developer CLI (`azd`) is an open-source tool that accelerates the process of building cloud apps on Azure. The CLI provides best practice, developer-friendly commands that map to key stages in your workflow, whether you're working in the terminal, your editor or integrated development environment (IDE), or DevOps.
+
+You can use `azd` with extensible templates that include everything you need to get an application up and running in Azure. These templates include application code, and reusable infrastructure as code assets.
+
+> [!div class="nextstepaction"]
+> [Install Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)  
 
 ## Azure Storage Explorer
 

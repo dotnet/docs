@@ -50,9 +50,9 @@ When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called,
 
 Replace the existing `Program` contents with the following C# code:
 
-:::code source="snippets/workers/timer-service/Program.cs" highlight="6":::
+:::code source="snippets/workers/timer-service/Program.cs" highlight="4":::
 
-The service is registered in `IHostBuilder.ConfigureServices` (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
+The service is registered in (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 

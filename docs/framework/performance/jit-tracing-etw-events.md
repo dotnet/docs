@@ -31,7 +31,7 @@ These events collect information relating to the success or failure of just-in-t
   
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
-|MethodBeingCompiledNameSpace|win:UnicodeString|Namespace of the method that is being compiled.|  
+|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method that is being compiled.|  
 |MethodBeingCompiledName|win:UnicodeString|Name of the method that is being compiled.|  
 |MethodBeingCompiledNameSignature|win:UnicodeString|Signature of the method that is being compiled.|  
 |InlinerNamespace|win:UnicodeString|The namespace of the method the JIT compiler is trying to generate code for.|  
@@ -62,7 +62,7 @@ These events collect information relating to the success or failure of just-in-t
   
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
-|MethodBeingCompiledNameSpace|win:UnicodeString|The namespace of the method that is being compiled.|  
+|MethodBeingCompiledNamespace|win:UnicodeString|The namespace of the method that is being compiled.|  
 |MethodBeingCompiledName|win:UnicodeString|The name of the method being that is compiled.|  
 |MethodBeingCompiledNameSignature|win:UnicodeString|The signature of the method that is being compiled.|  
 |InlinerNamespace|win:UnicodeString|The namespace of the method the JIT compiler is attempting to generate code for.|  
@@ -93,7 +93,7 @@ These events collect information relating to the success or failure of just-in-t
   
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
-|MethodBeingCompiledNameSpace|win:UnicodeString|Namespace of the method that is being compiled.|  
+|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method that is being compiled.|  
 |MethodBeingCompiledName|win:UnicodeString|Name of the method that is being compiled.|  
 |MethodBeingCompiledNameSignature|win:UnicodeString|Signature of the method that is being compiled.|  
 |CallerNamespace|win:UnicodeString|The namespace of the method the JIT compiler is attempting to generate code for.|  
@@ -124,7 +124,7 @@ These events collect information relating to the success or failure of just-in-t
   
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
-|MethodBeingCompiledNameSpace|win:UnicodeString|Namespace of the method that is being compiled.|  
+|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method that is being compiled.|  
 |MethodBeingCompiledName|win:UnicodeString|Name of the method that is being compiled.|  
 |MethodBeingCompiledNameSignature|win:UnicodeString|Signature of the method that is being compiled.|  
 |CallerNamespace|win:UnicodeString|The namespace of the method the JIT compiler is attempting to generate code for.|  

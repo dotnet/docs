@@ -1,12 +1,12 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
-description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
+description: Learn about the runtime identifier (RID) and how RIDs are used in .NET.
 ms.date: 07/11/2022
 ms.topic: reference
 ---
 # .NET RID Catalog
 
-RID is short for *Runtime Identifier*. RID values are used to identify target platforms where the application runs.
+RID is short for *runtime identifier*. RID values are used to identify target platforms where the application runs.
 They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
@@ -90,7 +90,6 @@ Only common values are listed. For the latest and complete version, see the [run
 - Windows, not version-specific
   - `win-x64`
   - `win-x86`
-  - `win-arm`
   - `win-arm64`
 - Windows 7 / Windows Server 2008 R2
   - `win7-x64`
@@ -98,11 +97,9 @@ Only common values are listed. For the latest and complete version, see the [run
 - Windows 8.1 / Windows Server 2012 R2
   - `win81-x64`
   - `win81-x86`
-  - `win81-arm`
 - Windows 11 / Windows Server 2022 / Windows 10 / Windows Server 2016
   - `win10-x64`
   - `win10-x86`
-  - `win10-arm`
   - `win10-arm64`
 
 There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).

@@ -236,6 +236,10 @@ Starting with .NET 6, single file apps can be created with compression enabled o
 
 Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The impact can vary significantly between different applications.
 
+### Inspect a single-file app
+
+Single file apps can be inspected using the [ILSpy tool](https://ilspy.net/). The tool can show all of the files bundled into the application and can inspect the contents of managed assemblies.
+
 ## See also
 
 - [.NET Core application deployment](../index.md)

@@ -62,7 +62,7 @@ Causes the compiler to produce an assembly whose byte-for-byte output is identic
 <Deterministic>true</Deterministic>
 ```
 
-By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID that is generated from random numbers. You use the `<Deterministic>` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same. In such a build, the timestamp and MVID fields will be replaced with values derived from a hash of all the compilation inputs. The compiler considers the following inputs that affect determinism:
+By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID (a <xref:System.Reflection.Module.ModuleVersionId%2A?displayProperty=nameWithType>. Basically it is a GUID that uniquely identifies the module and version.) that is generated from random numbers. You use the `<Deterministic>` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same. In such a build, the timestamp and MVID fields will be replaced with values derived from a hash of all the compilation inputs. The compiler considers the following inputs that affect determinism:
 
 - The sequence of command-line parameters.
 - The contents of the compiler's .rsp response file.

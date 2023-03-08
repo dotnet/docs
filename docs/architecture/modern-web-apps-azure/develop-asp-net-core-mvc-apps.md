@@ -33,7 +33,7 @@ A Razor Page's page model combines the responsibilities of an MVC controller and
 
 ### When to use MVC
 
-If you're building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it's easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you're migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you've made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration. For more information about porting .NET 4.x apps to .NET 6, see [Porting Existing ASP.NET Apps to ASP.NET Core eBook](/dotnet/architecture/porting-existing-aspnet-apps/).
+If you're building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it's easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you're migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you've made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration. For more information about porting .NET 4.x apps to .NET 7, see [Porting Existing ASP.NET Apps to ASP.NET Core eBook](/dotnet/architecture/porting-existing-aspnet-apps/).
 
 Whether you choose to build your web app using Razor Pages or MVC views, your app will have similar performance and will include support for dependency injection, filters, model binding, validation, and so on.
 
@@ -187,7 +187,7 @@ Many developers understand the risks of static cling and global state, but will 
 ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in _Program.cs_ or in a `Startup` class.
 
 > [!NOTE]
-> Configuring apps completely in _Program.cs_ is the default approach for .NET 6 and Visual Studio 2022 apps. Project templates have been updated to help you get started with this new approach. ASP.NET Core projects can still use a `Startup` class, if desired.
+> Configuring apps completely in _Program.cs_ is the default approach for .NET 6 (and later) and Visual Studio 2022 apps. Project templates have been updated to help you get started with this new approach. ASP.NET Core projects can still use a `Startup` class, if desired.
 
 #### Configure services in _Program.cs_
 

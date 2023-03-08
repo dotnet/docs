@@ -1,4 +1,4 @@
-﻿namespace BroadcastChannel.GrainInterfaces;
+namespace BroadcastChannel.GrainInterfaces;
 
 public interface ILiveStockGrain : IGrainWithGuidKey
 {

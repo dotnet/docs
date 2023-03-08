@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-6-7
 recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
@@ -245,11 +245,5 @@ In this tutorial, you created a .NET console application. In the next tutorial, 
 
 > [!div class="nextstepaction"]
 > [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

@@ -6,15 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Client" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Orleans.Client" Version="7.1.0" />
+    <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="7.1.0" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\BroadcastChannel.GrainInterfaces\BroadcastChannel.GrainInterfaces.csproj" />
   </ItemGroup>
-  
+
 </Project>

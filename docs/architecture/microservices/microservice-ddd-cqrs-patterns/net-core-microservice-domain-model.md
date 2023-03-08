@@ -176,6 +176,8 @@ For example, in the preceding OrderAggregate code example, there are several pri
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
+- **Steve Smith. What is the difference between a DTO and a POCO?** \ <https://ardalis.com/dto-or-poco/>
+
 > [!div class="step-by-step"]
 > [Previous](microservice-domain-model.md)
 > [Next](seedwork-domain-model-base-classes-interfaces.md)

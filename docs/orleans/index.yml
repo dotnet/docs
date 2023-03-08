@@ -9,7 +9,7 @@ metadata:
     description: Samples, tutorials, and education for .NET Orleans. Microsoft's cloud native and distributed systems platform.
     ms.topic: hub-page
     ms.prod: dotnet-orleans
-    ms.date: 10/26/2022
+    ms.date: 03/06/2023
 
 highlightedContent:
     # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -21,8 +21,8 @@ highlightedContent:
           title: Deploy Orleans apps
           url: deployment/index.md
         - itemType: whats-new
-          title: What's new in Orleans
-          url: whats-new-in-orleans.md
+          title: "Migrate from Orleans 3.x to 7.0"
+          url: migration-guide.md
         - itemType: concept
           title: Why Orleans?
           url: benefits.md
@@ -104,7 +104,7 @@ conceptualContent:
                 text: Host configuration
                 url: host/configuration-guide/index.md
               - itemType: get-started
-                text: Host monitoring
+                text: Observability
                 url: host/monitoring/index.md
               - itemType: how-to-guide
                 text: Orleans clients

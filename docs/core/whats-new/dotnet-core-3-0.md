@@ -27,7 +27,7 @@ C# 8.0 is also part of this release, which includes the [nullable reference type
 Tutorials related to C# 8.0 language features:
 
 - [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
-- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/fundamentals/tutorials/pattern-matching.md)
 
 Language enhancements were added to support the following API features detailed below:
@@ -463,7 +463,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
-For more information, see the [async streams tutorial](../../csharp/tutorials/generate-consume-asynchronous-stream.md).
+For more information, see the [async streams tutorial](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md).
 
 ### IEEE Floating-point
 

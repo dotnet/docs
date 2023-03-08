@@ -14,6 +14,7 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ DO use the same naming and capitalization for your methods and parameters as the native method you want to call.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
+- ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
 - ✔️ DO only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
@@ -223,40 +224,71 @@ A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or
 
 There are rare instances when built-in support for a type is removed.
 
-The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) and [`UnmanagedType.IInspectable`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
 
 ```csharp
-static class HSTRING
+public sealed class HStringMarshaler : ICustomMarshaler
 {
-    public static IntPtr FromString(string s)
+    public static readonly HStringMarshaler Instance = new HStringMarshaler();
+
+    public static ICustomMarshaler GetInstance(string _) => Instance;
+
+    public void CleanUpManagedData(object ManagedObj) { }
+
+    public void CleanUpNativeData(IntPtr pNativeData)
     {
-        Marshal.ThrowExceptionForHR(WindowsCreateString(s, s.Length, out IntPtr h));
-        return h;
+        if (pNativeData != IntPtr.Zero)
+        {
+            Marshal.ThrowExceptionForHR(WindowsDeleteString(pNativeData));
+        }
     }
 
-    public static void Delete(IntPtr s)
+    public int GetNativeDataSize() => -1;
+
+    public IntPtr MarshalManagedToNative(object ManagedObj)
     {
-        Marshal.ThrowExceptionForHR(WindowsDeleteString(s));
+        if (ManagedObj is null)
+            return IntPtr.Zero;
+
+        var str = (string)ManagedObj;
+        Marshal.ThrowExceptionForHR(WindowsCreateString(str, str.Length, out var ptr));
+        return ptr;
     }
 
-    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
-    private static extern int WindowsCreateString(
-        [MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+    public object MarshalNativeToManaged(IntPtr pNativeData)
+    {
+        if (pNativeData == IntPtr.Zero)
+            return null;
 
-    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
+        var ptr = WindowsGetStringRawBuffer(pNativeData, out var length);
+        if (ptr == IntPtr.Zero)
+            return null;
+
+        if (length == 0)
+            return string.Empty;
+
+        return Marshal.PtrToStringUni(ptr, length);
+    }
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern int WindowsCreateString([MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
     private static extern int WindowsDeleteString(IntPtr hstring);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern IntPtr WindowsGetStringRawBuffer(IntPtr hstring, out int length);
 }
 
-// Usage example
-IntPtr hstring = HSTRING.FromString("HSTRING from .NET to WinRT API");
-try
-{
-    // Pass hstring to WinRT or Win32 API.
-}
-finally
-{
-    HSTRING.Delete(hstring);
-}
+// Example usage:
+[DllImport("api-ms-win-core-winrt-l1-1-0.dll", PreserveSig = true)]
+internal static extern int RoGetActivationFactory(
+    /*[MarshalAs(UnmanagedType.HString)]*/[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(HStringMarshaler))] string activatableClassId,
+    [In] ref Guid iid,
+    [Out, MarshalAs(UnmanagedType.IUnknown)] out object factory);
 ```
 
 ## Cross-platform data type considerations
@@ -327,6 +359,8 @@ Pointers to structs in definitions must either be passed by `ref` or use `unsafe
 ✔️ DO match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
 
 ✔️ DO use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
+
+❌ AVOID using classes to express complex native types through inheritance.
 
 ❌ AVOID using `System.Delegate` or `System.MulticastDelegate` fields to represent function pointer fields in structures.
 

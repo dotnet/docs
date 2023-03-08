@@ -169,6 +169,7 @@ The patterns that are specified in the `AddExclude` and `AddInclude` methods can
     | Value | Description |
     | --- | --- |
     | `**/*` | All files in any subdirectory. |
+    | `dir/` | All files in any subdirectory under 'dir/'. |
     | `dir/**/*` | All files in any subdirectory under 'dir/'. |
 
 - Relative paths.

@@ -4,6 +4,68 @@ items:
 - name: Breaking changes by version
   expanded: true
   items:
+  - name: .NET 8
+    items:
+    - name: Overview
+      href: 8.0.md
+    - name: Core .NET libraries
+      items:
+      - name: Activity operation name when null
+        href: core-libraries/8.0/activity-operation-name.md
+      - name: AnonymousPipeServerStream.Dispose behavior
+        href: core-libraries/8.0/anonymouspipeserverstream-dispose.md
+      - name: Backslash mapping in Unix file paths
+        href: core-libraries/8.0/file-path-backslash.md
+      - name: FileStream writes when pipe is closed
+        href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: GetFolderPath behavior on Unix
+        href: core-libraries/8.0/getfolderpath-unix.md
+      - name: ITypeDescriptorContext nullable annotations
+        href: core-libraries/8.0/itypedescriptorcontext-props.md
+      - name: Legacy Console.ReadKey removed
+        href: core-libraries/8.0/console-readkey-legacy.md
+    - name: Cryptography
+      items:
+      - name: AesGcm authentication tag size on macOS
+        href: cryptography/8.0/aesgcm-auth-tag-size.md
+      - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
+        href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
+    - name: Extensions
+      items:
+      - name: ActivatorUtilities.CreateInstance behaves consistently
+        href: extensions/8.0/activatorutilities-createinstance-behavior.md
+      - name: ActivatorUtilities.CreateInstance requires non-null provider
+        href: extensions/8.0/activatorutilities-createinstance-null-provider.md
+      - name: ConfigurationBinder throws for mismatched value
+        href: extensions/8.0/configurationbinder-exceptions.md
+    - name: Globalization
+      items:
+      - name: TwoDigitYearMax default is 2049
+        href: globalization/8.0/twodigityearmax-default.md
+    - name: SDK
+      items:
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
+    - name: Windows Forms
+      items:
+      - name: Anchor layout changes
+        href: windows-forms/8.0/anchor-layout.md
+      - name: ExceptionCollection ctor throws ArgumentException
+        href: windows-forms/8.0/exceptioncollection.md
+      - name: Forms scale according to AutoScaleMode
+        href: windows-forms/8.0/top-level-window-scaling.md
+      - name: ImageList.ColorDepth default is Depth32Bit
+        href: windows-forms/8.0/imagelist-colordepth.md
+      - name: TableLayoutStyleCollection throws ArgumentException
+        href: windows-forms/8.0/tablelayoutstylecollection.md
+      - name: Top-level forms scale size to DPI
+        href: windows-forms/8.0/forms-scale-size-to-dpi.md
+      - name: WFDEV002 obsoletion is now an error
+        href: windows-forms/8.0/domainupdownaccessibleobject.md
   - name: .NET 7
     items:
     - name: Overview
@@ -54,6 +116,8 @@ items:
         href: core-libraries/7.0/cpluspluscli-compiler-version.md
       - name: Collectible Assembly in non-collectible AssemblyLoadContext
         href: core-libraries/7.0/collectible-assemblies.md
+      - name: DateTime addition methods precision change
+        href: core-libraries/7.0/datetime-add-precision.md
       - name: Equals method behavior change for NaN
         href: core-libraries/7.0/equals-nan.md
       - name: Generic type constraint on PatternContext<T>
@@ -136,12 +200,18 @@ items:
       items:
       - name: Automatic RuntimeIdentifier for certain projects
         href: sdk/7.0/automatic-runtimeidentifier.md
+      - name: Automatic RuntimeIdentifier for publish only
+        href: sdk/7.0/automatic-rid-publish-only.md
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
       - name: Version requirements for .NET 7 SDK
         href: sdk/7.0/vs-msbuild-version.md
       - name: Serialization of custom types in .NET 7
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
+      - name: --output option no longer is valid for solution-level commands
+        href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: Serialization
       items:
       - name: DataContractSerializer retains sign when deserializing -0
@@ -856,6 +926,22 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
   - name: Core .NET libraries
     items:
+    - name: .NET 8
+      items:
+      - name: Activity operation name when null
+        href: core-libraries/8.0/activity-operation-name.md
+      - name: AnonymousPipeServerStream.Dispose behavior
+        href: core-libraries/8.0/anonymouspipeserverstream-dispose.md
+      - name: Backslash mapping in Unix file paths
+        href: core-libraries/8.0/file-path-backslash.md
+      - name: FileStream writes when pipe is closed
+        href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: GetFolderPath behavior on Unix
+        href: core-libraries/8.0/getfolderpath-unix.md
+      - name: ITypeDescriptorContext nullable annotations
+        href: core-libraries/8.0/itypedescriptorcontext-props.md
+      - name: Legacy Console.ReadKey removed
+        href: core-libraries/8.0/console-readkey-legacy.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID
@@ -870,6 +956,8 @@ items:
         href: core-libraries/7.0/cpluspluscli-compiler-version.md
       - name: Collectible Assembly in non-collectible AssemblyLoadContext
         href: core-libraries/7.0/collectible-assemblies.md
+      - name: DateTime addition methods precision change
+        href: core-libraries/7.0/datetime-add-precision.md
       - name: Equals method behavior change for NaN
         href: core-libraries/7.0/equals-nan.md
       - name: Generic type constraint on PatternContext<T>
@@ -1004,6 +1092,12 @@ items:
       href: corefx.md
   - name: Cryptography
     items:
+    - name: .NET 8
+      items:
+      - name: AesGcm authentication tag size on macOS
+        href: cryptography/8.0/aesgcm-auth-tag-size.md
+      - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
+        href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
     - name: .NET 7
       items:
       - name: Dynamic X509ChainPolicy verification time
@@ -1060,6 +1154,14 @@ items:
       href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Extensions
     items:
+    - name: .NET 8
+      items:
+      - name: ActivatorUtilities.CreateInstance behaves consistently
+        href: extensions/8.0/activatorutilities-createinstance-behavior.md
+      - name: ActivatorUtilities.CreateInstance requires non-null provider
+        href: extensions/8.0/activatorutilities-createinstance-null-provider.md
+      - name: ConfigurationBinder throws for mismatched value
+        href: extensions/8.0/configurationbinder-exceptions.md
     - name: .NET 7
       items:
       - name: ContentRootPath for apps launched by Windows Shell
@@ -1078,6 +1180,10 @@ items:
         href: extensions/6.0/service-provider-disposed.md
   - name: Globalization
     items:
+    - name: .NET 8
+      items:
+      - name: TwoDigitYearMax default is 2049
+        href: globalization/8.0/twodigityearmax-default.md
     - name: .NET 7
       items:
       - name: Globalization APIs use ICU libraries on Windows Server
@@ -1168,16 +1274,30 @@ items:
         href: networking.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 8
+      items:
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
+      - name: "'dotnet pack' uses Release configuration"
+        href: sdk/8.0/dotnet-pack-config.md
+      - name: "'dotnet publish' uses Release configuration"
+        href: sdk/8.0/dotnet-publish-config.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects
         href: sdk/7.0/automatic-runtimeidentifier.md
+      - name: Automatic RuntimeIdentifier for publish only
+        href: sdk/7.0/automatic-rid-publish-only.md
+      - name: CLI console output uses UTF-8
+        href: sdk/8.0/console-encoding.md
       - name: Version requirements for .NET 7 SDK
         href: sdk/7.0/vs-msbuild-version.md
       - name: Serialization of custom types in .NET 7
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
+      - name: --output option no longer is valid for solution-level commands
+        href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: .NET 6
       items:
       - name: -p option for `dotnet run` is deprecated
@@ -1286,8 +1406,30 @@ items:
     items:
     - name: .NET Core 3.0
       href: visualbasic.md
+  - name: WCF Client
+    items:
+    - name: "6.0"
+      items:
+      - name: .NET Standard 2.0 no longer supported
+        href: wcf-client/6.0/net-standard-2-support.md
   - name: Windows Forms
     items:
+    - name: .NET 8
+      items:
+      - name: Anchor layout changes
+        href: windows-forms/8.0/anchor-layout.md
+      - name: ExceptionCollection ctor throws ArgumentException
+        href: windows-forms/8.0/exceptioncollection.md
+      - name: Forms scale according to AutoScaleMode
+        href: windows-forms/8.0/top-level-window-scaling.md
+      - name: ImageList.ColorDepth default is Depth32Bit
+        href: windows-forms/8.0/imagelist-colordepth.md
+      - name: TableLayoutStyleCollection throws ArgumentException
+        href: windows-forms/8.0/tablelayoutstylecollection.md
+      - name: Top-level forms scale size to DPI
+        href: windows-forms/8.0/forms-scale-size-to-dpi.md
+      - name: WFDEV002 obsoletion is now an error
+        href: windows-forms/8.0/domainupdownaccessibleobject.md
     - name: .NET 7
       items:
       - name: APIs throw ArgumentNullException

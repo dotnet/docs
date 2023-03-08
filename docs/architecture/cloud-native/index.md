@@ -9,7 +9,7 @@ ms.date: 01/10/2022
 
 ![cover image](./media/cover.png)
 
-**EDITION v1.0.2**
+**EDITION v1.0.3**
 
 Refer [changelog](https://aka.ms/cn-ebook-changelog) for the book updates and community contributions.
 
@@ -23,7 +23,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2022 by Microsoft Corporation
+Copyright &copy; 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -65,7 +65,7 @@ Editors:
 
 ## Version
 
-This guide has been written to cover **.NET 6** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 6 release.
+This guide has been written to cover **.NET 7** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release.
 
 ## Who should use this guide
 

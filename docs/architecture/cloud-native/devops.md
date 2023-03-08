@@ -198,7 +198,7 @@ variables:
   buildConfiguration: release
 
 pool:
-  name: Hosted VS2017
+  name: Hosted VisualStudio
   demands:
   - msbuild
   - visualstudio

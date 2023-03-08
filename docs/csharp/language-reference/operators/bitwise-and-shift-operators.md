@@ -38,7 +38,7 @@ helpviewer_keywords:
 ---
 # Bitwise and shift operators (C# reference)
 
-The bitwise and shift operators include unary bitwise complement, binary left and right shift, unsigned right shift, amd the binary logical AND, OR, and exclusive OR operators. These operands take operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type.
+The bitwise and shift operators include unary bitwise complement, binary left and right shift, unsigned right shift, and the binary logical AND, OR, and exclusive OR operators. These operands take operands of the [integral numeric types](../builtin-types/integral-numeric-types.md) or the [char](../builtin-types/char.md) type.
 
 - Unary [`~` (bitwise complement)](#bitwise-complement-operator-) operator
 - Binary [`<<` (left shift)](#left-shift-operator-), [`>>` (right shift)](#right-shift-operator-), and [`>>>` (unsigned right shift)](#unsigned-right-shift-operator-) operators

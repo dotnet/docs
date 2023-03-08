@@ -42,13 +42,13 @@ Use the following sections to determine how you should install .NET:
 
 Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
 
-If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For more information, see the section [Use the Microsoft feed for non .NET-related packages](#use-the-microsoft-feed-for-non-net-related-packages).
+If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For instructions on how to de-prioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md#my-linux-distribution-provides-net-packages-and-i-want-to-use-them?pivots=os-linux-ubuntu).
 
 ### I'm using Ubuntu 22.04, and I only need .NET 6.0
 
 Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
 
-If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For more information, see the section [Use the Microsoft feed for non .NET-related packages](#use-the-microsoft-feed-for-non-net-related-packages).
+If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For instructions on how to de-prioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md#my-linux-distribution-provides-net-packages-and-i-want-to-use-them?pivots=os-linux-ubuntu).
 
 ### I'm using Ubuntu 22.04, and I need .NET 7.0
 
@@ -68,7 +68,7 @@ Review the [Supported distributions](#supported-distributions) section for more 
 
 If your Ubuntu version supports .NET through the built-in Ubuntu feed, you must decide which feed should install .NET. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available the package feeds.
 
-If you want to source the .NET packages from the Ubuntu feed, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For more information, see the section [Use the Microsoft feed for non .NET-related packages](#use-the-microsoft-feed-for-non-net-related-packages).
+If you want to source the .NET packages from the Ubuntu feed, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For instructions on how to de-prioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md#my-linux-distribution-provides-net-packages-and-i-want-to-use-them?pivots=os-linux-ubuntu).
 
 ### I want to create a .NET app
 
@@ -126,7 +126,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ## Register the Microsoft package repository
 
-The Microsoft package repository contains all versions of .NET that were previously, or currently are, [supported with your version of Ubuntu](#supported-distributions).
+The Microsoft package repository contains all versions of .NET that were previously, or currently are, [supported with your version of Ubuntu](#supported-distributions). If your version of Ubuntu provides .NET packages, you'll need to de-prioritize the Ubuntu packages and use the Microsoft repository. For instructions on how to de-prioritize the packages, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution?pivots=os-linux-ubuntu).
 
 > [!IMPORTANT]
 > Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with [Snap](linux-snap.md), an [installer script](linux-scripted-manual.md#scripted-install), or through a [manual binary installation](linux-scripted-manual.md#manual-install).

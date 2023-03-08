@@ -576,6 +576,9 @@ Library authors who intend to ship preview assemblies should set this property t
 
 Set the `EnableWindowsTargeting` property to `true` to build Windows apps (for example, Windows Forms or Windows Presentation Foundation apps) on a non-Windows platform. If you don't set this property to `true`, you'll get build warning [NETSDK1100](../tools/sdk-errors/netsdk1100.md). This error occurs because targeting and runtime packs aren't automatically downloaded on platforms that aren't supported. By setting this property, those packs are downloaded when cross-targeting.
 
+> [!NOTE]
+> This property is currently recommended to allow development on non-Windows platforms. But when the application is ready to be released, it should be built on Windows. When building on a non-Windows platform, the output may not be the same as when building on Windows. In particular, the executable is not marked as a Windows application (which means that it will always launch a console window) and won't have an icon embedded.
+
 ```xml
 <PropertyGroup>
   <EnableWindowsTargeting>true</EnableWindowsTargeting>

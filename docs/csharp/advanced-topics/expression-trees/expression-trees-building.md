@@ -51,7 +51,7 @@ Next, you need to create a method call expression for the call to `Math.Sqrt`.
 
 :::code language="csharp" source="snippets/BuildExpressions.cs" id="DistanceMethod":::
 
-The `GetMethod` call could return `null` if the method isn't found. Most likely that's because you've mis-spelled the method name. Otherwise, it could mean the required assembly isn't loaded. Finally, you put the method call into a lambda expression, and make sure to define the arguments to the lambda expression:
+The `GetMethod` call could return `null` if the method isn't found. Most likely that's because you've misspelled the method name. Otherwise, it could mean the required assembly isn't loaded. Finally, you put the method call into a lambda expression, and make sure to define the arguments to the lambda expression:
 
 :::code language="csharp" source="snippets/BuildExpressions.cs" id="CreateLambda":::
 

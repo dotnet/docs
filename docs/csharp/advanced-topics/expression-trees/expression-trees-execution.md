@@ -12,7 +12,7 @@ the .NET code represented by an expression tree, you must convert it into execut
 Only expression trees that represent lambda expressions can be executed. Expression trees that represent lambda expressions are of type <xref:System.Linq.Expressions.LambdaExpression> or <xref:System.Linq.Expressions.Expression%601>. To execute these expression trees, call the <xref:System.Linq.Expressions.LambdaExpression.Compile%2A> method to create an executable delegate, and then invoke the delegate.
 
 > [!NOTE]
-> If the type of the delegate is not known, that is, the lambda expression is of type <xref:System.Linq.Expressions.LambdaExpression> and not <xref:System.Linq.Expressions.Expression%601>, you must call the <xref:System.Delegate.DynamicInvoke%2A> method on the delegate instead of invoking it directly.
+> If the type of the delegate is not known, that is, the lambda expression is of type <xref:System.Linq.Expressions.LambdaExpression> and not <xref:System.Linq.Expressions.Expression%601>, call the <xref:System.Delegate.DynamicInvoke%2A> method on the delegate instead of invoking it directly.
 
 If an expression tree doesn't represent a lambda expression, you can create a new lambda expression that has the original expression tree as its body, by calling the <xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Collections.Generic.IEnumerable%7BSystem.Linq.Expressions.ParameterExpression%7D%29> method. Then, you can execute the lambda expression as described earlier in this section.
 
@@ -25,7 +25,7 @@ In most cases, a simple mapping between an expression and its corresponding dele
 The <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> type contains <xref:System.Linq.Expressions.LambdaExpression.Compile%2A?displayProperty=nameWithType> and <xref:System.Linq.Expressions.LambdaExpression.CompileToMethod%2A?displayProperty=nameWithType> members that you would use to convert an expression tree to executable code. The `Compile` method creates a delegate. The `CompileToMethod` method updates a <xref:System.Reflection.Emit.MethodBuilder?displayProperty=nameWithType> object with the IL that represents the compiled output of the expression tree.
 
 > [!IMPORTANT]
-> `CompileToMethod` is only available in the full desktop framework, not in .NET Core or .NET5 and later.
+> `CompileToMethod` is only available in .NET Framework, not in .NET Core or .NET 5 and later.
 
 Optionally, you can also provide a <xref:System.Runtime.CompilerServices.DebugInfoGenerator?displayProperty=nameWithType> that receives the symbol debugging information for the generated delegate object. The `DebugInfoGenerator` provides full debugging information about the generated delegate.
 
@@ -43,12 +43,12 @@ The following code example demonstrates how to execute an expression tree that r
 
 ## Execution and lifetimes
 
-You execute the code by invoking the delegate created when you called `LambdaExpression.Compile()`. The preceding code, `add.Compile()`, returns a delegate. You invoke that delegate by calling `func()`, which execute the code.
+You execute the code by invoking the delegate created when you called `LambdaExpression.Compile()`. The preceding code, `add.Compile()`, returns a delegate. You invoke that delegate by calling `func()`, which executes the code.
 
 That delegate represents the code in the expression tree. You can retain the handle to that delegate and invoke it later. You don't need to compile the expression tree each time you want to execute the code it represents. (Remember that expression trees are immutable, and compiling the same expression tree later creates a delegate that executes the same code.)
 
 > [!CAUTION]
-> Don't create any more sophisticated caching mechanisms to increase performance by avoiding unnecessary compile calls. Comparing two arbitrary expression trees to determine if they represent the same algorithm is a time consuming operation. The compute time you save avoiding any extra calls to `LambdaExpression.Compile()` are likely more than consumed by the time executing code that determines of two different expression trees result in the same executable code.
+> Don't create any more sophisticated caching mechanisms to increase performance by avoiding unnecessary compile calls. Comparing two arbitrary expression trees to determine if they represent the same algorithm is a time consuming operation. The compute time you save avoiding any extra calls to `LambdaExpression.Compile()` are likely more than consumed by the time executing code that determines if two different expression trees result in the same executable code.
 
 ## Caveats
 
@@ -66,7 +66,7 @@ However, consider the following (rather contrived) class that implements <xref:S
 
 :::code language="csharp" source="snippets/RunExpressionTrees.cs" id="ResourceClass":::
 
-If you use it in an expression as shown in the following code, you get an <xref:System.ObjectDisposedException?displayProperty=nameWithType> when you execute the code referenced by the `Resource.Argument` property:
+If you use it in an expression as shown in the following code, you get a <xref:System.ObjectDisposedException?displayProperty=nameWithType> when you execute the code referenced by the `Resource.Argument` property:
 
 :::code language="csharp" source="snippets/RunExpressionTrees.cs" id="CreateBoundResource":::
 

@@ -41,7 +41,7 @@ The preceding expression is also a variable declaration with an assignment. In t
 Despite this perceived complexity, the preceding expression creates a tree structure navigated as easily as the first sample. You keep traversing child nodes to find leaf nodes in the expression. Parent nodes have references to their children, and each node has a property that describes what kind of node it is.
 
 The structure of an expression tree is very consistent. Once you've learned the basics, you understand even the most complex code when it's represented
-as an expression tree. The elegance in the data structure explains how the C# compiler analyzes the most complex C# programs and create proper output from that complicated source code.
+as an expression tree. The elegance in the data structure explains how the C# compiler analyzes the most complex C# programs and creates proper output from that complicated source code.
 
 Once you become familiar with the structure of expression trees, you find that knowledge you've gained quickly enables you to work with many more advanced scenarios. There's incredible power to expression trees.
 

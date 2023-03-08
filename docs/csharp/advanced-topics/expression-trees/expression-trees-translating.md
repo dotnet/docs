@@ -9,9 +9,9 @@ In this article, you learn how to visit each node in an expression tree while bu
 
 The code you build to translate an expression tree is an extension of what you've already seen to visit all the nodes in a tree. When you translate an expression tree, you visit all the nodes, and while visiting them, build the new tree. The new tree may contain references to the original nodes, or new nodes that you've placed in the tree.
 
-Let's visit an expression tree, and creating a new tree with some replacement nodes. In this example, let's replace any constant with a constant that is 10 times larger. Otherwise, you leave the expression tree intact. Rather than reading the value of the constant, and replacing it with a new constant, you make this replacement by replacing the constant node with a new node that performs the multiplication.
+Let's visit an expression tree, and creating a new tree with some replacement nodes. In this example, let's replace any constant with a constant that is 10 times larger. Otherwise, you leave the expression tree intact. Rather than reading the value of the constant and replacing it with a new constant, you make this replacement by replacing the constant node with a new node that performs the multiplication.
 
-Here, once you find a constant node, you create a new multiplication node whose children are the original constant, and the constant `10`:
+Here, once you find a constant node, you create a new multiplication node whose children are the original constant and the constant `10`:
 
 :::code language="csharp" source="snippets/TranslateExpressions.cs" id="ReplaceNode":::
 
@@ -23,7 +23,7 @@ Building a new tree is a combination of visiting the nodes in the existing tree,
 
 ## Traverse and execute an addition
 
-Let's verify the new tree by building a second visitor that walks the tree of addition nodes and computes the result. Make a couple modifications to the visitor that you've seen so far. In this new version, the visitor returns the partial sum of the addition operation up to this point. For a constant expression it's simply the value of, the constant expression. For an addition expression, the result is the sum of the left and right operands, once those trees have been traversed.
+Let's verify the new tree by building a second visitor that walks the tree of addition nodes and computes the result. Make a couple modifications to the visitor that you've seen so far. In this new version, the visitor returns the partial sum of the addition operation up to this point. For a constant expression it's simply the value of the constant expression. For an addition expression, the result is the sum of the left and right operands, once those trees have been traversed.
 
 :::code language="csharp" source="snippets/TranslateExpressions.cs" id="TraverseAndCreateNode":::
 
@@ -33,7 +33,7 @@ Let's make it easier to trace how the nodes are analyzed and how the sum is comp
 
 :::code language="csharp" source="snippets/TranslateExpressions.cs" id="Aggregate":::
 
-Running it on the `sum`` expression yields the following output:
+Running it on the `sum` expression yields the following output:
 
 ```output
 10

@@ -1,5 +1,5 @@
 ---
-title: Interpreting Expressions
+title: Interpret Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 03/06/2023
 ---
@@ -11,7 +11,7 @@ The following code example demonstrates how the expression tree that represents 
 
 Now, let's write some code to examine the structure of an *expression tree*. Every node in an expression tree is an object of a class that is derived from `Expression`.
 
-That design makes visiting all the nodes in an expression tree a relatively straight forward recursive operation. The general strategy is to start at the root node and determine what kind of node it is.
+That design makes visiting all the nodes in an expression tree a relatively straightforward recursive operation. The general strategy is to start at the root node and determine what kind of node it is.
 
 If the node type has children, recursively visit the children. At each child node, repeat the process used at the root node: determine the type, and if the type has children, visit each of the children.
 
@@ -24,7 +24,7 @@ Let's start by visiting each node in a simple expression tree. Here's the code t
 The preceding code prints the following output:
 
 ```output
-This is an Constant expression type
+This is a/an Constant expression type
 The type of the constant value is System.Int32
 The value of the constant value is 24
 ```

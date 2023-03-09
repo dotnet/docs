@@ -28,7 +28,7 @@ jobs:
           includes_directory: './includes'
           url_base_path: '/dotnet'
           delete: true
-          orphaned_topics: true
+          orphaned_articles: true
           orphaned_images: true
           orphaned_snippets: true
           orphaned_includes: true

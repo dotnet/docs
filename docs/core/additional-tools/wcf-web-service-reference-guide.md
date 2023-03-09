@@ -27,7 +27,7 @@ The screenshots in this article are from Visual Studio 2022.
 
 Using the **ASP.NET Core Web Application** project template as an example, this article walks you through adding a WCF service reference to the project.
 
-1. In Solution Explorer, double-click the **Connected Services** node of the project. (For a .NET Core or .NET Standard project, this option is available when you right-click on the project, select Add option and choose **Manage Connected Services**.)
+1. In Solution Explorer, double-click the **Connected Services** node of the project. (For a .NET Core or .NET Standard project, right-click on the project and select **Add** > **Connected Service**.)
 
    The **Connected Services** page appears as shown in the following image:
 

@@ -15,7 +15,7 @@ groups:
   prompt: Choose a Linux distribution
   pivots:
   - id: os-linux-redhat
-    title: 'Fedora, CentoS, or RHEL'
+    title: 'Fedora, CentOS, or RHEL'
   - id: os-linux-ubuntu
     title: Ubuntu
   - id: os-linux-other

@@ -2,25 +2,21 @@
 using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.Extensions.Logging.EventLog;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .UseWindowsService(options =>
-    {
-        options.ServiceName = ".NET Joke Service";
-    })
-    .ConfigureServices(services =>
-    {
-        LoggerProviderOptions.RegisterProviderOptions<
-            EventLogSettings, EventLogLoggerProvider>(services);
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddWindowsService(options =>
+{
+    options.ServiceName = ".NET Joke Service";
+});
 
-        services.AddSingleton<JokeService>();
-        services.AddHostedService<WindowsBackgroundService>();
-    })
-    .ConfigureLogging((context, logging) =>
-    {
-        // See: https://github.com/dotnet/runtime/issues/47303
-        logging.AddConfiguration(
-            context.Configuration.GetSection("Logging"));
-    })
-    .Build();
+LoggerProviderOptions.RegisterProviderOptions<
+    EventLogSettings, EventLogLoggerProvider>(builder.Services);
 
-await host.RunAsync();
+builder.Services.AddSingleton<JokeService>();
+builder.Services.AddHostedService<WindowsBackgroundService>();
+
+// See: https://github.com/dotnet/runtime/issues/47303
+builder.Logging.AddConfiguration(
+    builder.Configuration.GetSection("Logging"));
+
+IHost host = builder.Build();
+host.Run();

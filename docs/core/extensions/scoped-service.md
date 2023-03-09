@@ -3,7 +3,7 @@ title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 03/06/2023
 ms.topic: tutorial
 ---
 
@@ -55,9 +55,9 @@ In the preceding code, an explicit scope is created and the `IScopedProcessingSe
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/scoped-service/Program.cs" highlight="6-7":::
+:::code source="snippets/workers/scoped-service/Program.cs" highlight="4-5":::
 
-The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
+The services are registered in (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 

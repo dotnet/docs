@@ -3,7 +3,7 @@ title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/20/2022
+ms.date: 03/06/2023
 ms.topic: overview
 ---
 
@@ -39,8 +39,8 @@ The Worker Service template is available to the .NET CLI, and Visual Studio. For
 
 The preceding `Program` class:
 
-- Creates the default <xref:Microsoft.Extensions.Hosting.IHostBuilder>.
-- Calls <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> to add the `Worker` class as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>.
+- Creates a <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>.
+- Calls <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> to register the `Worker` as a hosted service.
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
 
@@ -54,25 +54,6 @@ The preceding `Program` class:
 > ```
 >
 > For more information regarding performance considerations, see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
-
-The *Program.cs* file from the template can be rewritten using top-level statements:
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using App.WorkerService;
-
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((hostContext, services) =>
-    {
-        services.AddHostedService<Worker>();
-    })
-    .Build();
-
-await host.RunAsync();
-```
-
-This is functionally equivalent to the original template. For more information on C# 9 features, see [What's new in C# 9.0](../../csharp/whats-new/csharp-9.md).
 
 As for the `Worker`, the template provides a simple implementation.
 
@@ -102,13 +83,13 @@ With most modern .NET workloads, containers are a viable option. When creating a
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/runtime:6.0` as the alias `base`.
+- Setting the base image from `mcr.microsoft.com/dotnet/runtime:7.0` as the alias `base`.
 - Changing the working directory to */app*.
-- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:6.0` image.
+- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:7.0` image.
 - Changing the working directory to */src*.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:6.0` (the `base` alias).
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:7.0` (the `base` alias).
 - Copying the published build output from the */publish*.
 - Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 

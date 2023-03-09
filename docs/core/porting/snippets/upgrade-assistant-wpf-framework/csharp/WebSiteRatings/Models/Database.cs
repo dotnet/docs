@@ -16,7 +16,7 @@ namespace WebSiteRatings.Models
             using (SqliteConnection connection =  OpenConnection())
             {
                 connection.Open();
-                
+
                 using (SqliteCommand readCmd = connection.CreateCommand())
                 {
                     readCmd.CommandText = @"SELECT * FROM Sites";

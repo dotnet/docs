@@ -91,7 +91,7 @@ For more information, see:
 
 - [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md)
 
-- [Expression Trees (C#)](../expression-trees/index.md)
+- [Expression Trees (C#)](../../../advanced-topics/expression-trees/index.md)
 
 ## See also
 

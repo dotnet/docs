@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 03/08/2023
 ---
 
 # Caching in .NET

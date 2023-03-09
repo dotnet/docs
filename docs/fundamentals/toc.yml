@@ -783,88 +783,115 @@ items:
       displayName: custom configuration,custom config,custom configuration provider,custom config provider
     - name: Options pattern
       href: ../core/extensions/options.md
+      displayName: options pattern,options,configuration options,config options
     - name: Options pattern guidance for library authors
       href: ../core/extensions/options-library-authors.md
+      displayName: options pattern guidance,options guidance,configuration options guidance,config options guidance
   - name: Logging
     items:
     - name: Overview
       href: ../core/extensions/logging.md
+      displayName: logging,logger,log,loggers
     - name: Logging providers
       href: ../core/extensions/logging-providers.md
+      displayName: logging providers,log providers
     - name: Compile-time logging source generation
       href: ../core/extensions/logger-message-generator.md
       displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
     - name: Implement a custom logging provider
       href: ../core/extensions/custom-logging-provider.md
+      displayName: custom logging,custom log,custom logging provider,custom log provider
     - name: High-performance logging
       href: ../core/extensions/high-performance-logging.md
+      displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
     - name: Console log formatting
       href: ../core/extensions/console-log-formatter.md
+      displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
     - name: Network programming
       href: networking/overview.md
+      displayName: networking,sockets,socket,socket programming,socket client,socket server,socket client server,socket client-server,socket client-server,socket client/server,socket client/server,socket client-serve
     - name: Network availability
       href: networking/network-info.md
+      displayName: network availability,network info,network information,network availability info,network availability information,network info availability,network information availability,network availability info
     - name: IPv6 overview
       href: networking/ipv6-overview.md
+      displayName: ipv6,ipv
     - name: Telemetry
       href: networking/networking-telemetry.md
+      displayName: networking telemetry
     - name: HTTP
       items:
       - name: HTTP support
         href: networking/http/http-overview.md
+        displayName: networking,http,web services,httpclient
       - name: HTTP client guidelines
-        displayName: networking, httpclient
         href: networking/http/httpclient-guidelines.md
+        displayName: networking, httpclient
       - name: Make HTTP requests
-        displayName: networking,http,web services,client
         href: networking/http/httpclient.md
+        displayName: networking,http,web services,client
       - name: IHttpClientFactory
-        displayName: networking,httpclient,http,dependency injection,client,factory
         href: ../core/extensions/httpclient-factory.md
+        displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
+        displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net
       - name: Rate limit an HTTP handler
         href: ../core/extensions/http-ratelimiter.md
+        displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler
     - name: Sockets
       items:
       - name: Sockets support
         href: networking/sockets/sockets-overview.md
+        displayName: networking,sockets,socket,socket programming,socket client,socket server
       - name: Use Sockets to send and receive data over TCP
         href: networking/sockets/socket-services.md
+        displayName: networking,sockets,socket,socket programming,socket client,socket server
       - name: Use TcpClient and TcpListener
         href: networking/sockets/tcp-classes.md
+        displayName: networking,tcp,tcp listener,tcp client
     - name: WebSockets
       items:
       - name: WebSockets support
         href: networking/websockets.md
+        displayName: websockets,websocket,websocket programming,websocket client,websocket server
     - name: Security
       items:
         - name: TLS/SSL best practices
           href: ../core/extensions/sslstream-best-practices.md
+          displayName: tls,ssl,sslstream,sslstream best practices,tls best practices,ssl best practices
         - name: Troubleshoot SslStream authentication issues
           href: ../core/extensions/sslstream-troubleshooting.md
+          displayName: tls,ssl,sslstream,sslstream troubleshooting,tls troubleshooting,ssl troubleshooting
         - name: Migrate from .NET Framework to .NET
           href: ../core/extensions/sslstream-migration-from-framework.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
+    displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing
   - name: Primitives library
     href: ../core/extensions/primitives.md
+    displayName: primitives,primitive types,ichangetoken,change notifications,string tokenizers,StringSegment,StringTokenizer,StringValues
   - name: Globalization and localization
     items:
     - name: Overview
       href: ../core/extensions/globalization-and-localization.md
+      displayName: globalization,localization,culture,localization and globalization
     - name: Globalization
       href: ../core/extensions/globalization.md
+      displayName: globalization,culture
     - name: Globalization and ICU
       href: ../core/extensions/globalization-icu.md
+      displayName: globalization,icu,culture
     - name: Localizability review
       href: ../core/extensions/localizability-review.md
+      displayName: localizability,localization,localization review,localizability review
     - name: Localization
       href: ../core/extensions/localization.md
+      displayName: localization,localization review,localizability review
     - name: Culture-insensitive string operations
       items:
       - name: Overview

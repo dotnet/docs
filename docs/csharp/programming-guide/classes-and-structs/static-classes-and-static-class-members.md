@@ -49,7 +49,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  Creating a static class is therefore basically the same as creating a class that contains only static members and a private constructor. A private constructor prevents the class from being instantiated. The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added. The compiler will guarantee that instances of this class cannot be created.  
   
- Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class except <xref:System.Object>. Static classes cannot contain an instance constructor. However, they can contain a static constructor. Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization. For more information, see [Static Constructors](./static-constructors.md).  
+ Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class or interface except <xref:System.Object>. Static classes cannot contain an instance constructor. However, they can contain a static constructor. Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization. For more information, see [Static Constructors](./static-constructors.md).  
   
 ## Example  
 

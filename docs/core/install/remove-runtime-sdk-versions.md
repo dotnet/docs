@@ -90,7 +90,7 @@ There are three commands you can use to discover where .NET is installed: `dotne
 
 - **Runtime**:
 
-  The runtime is based on specific .NET product runtimes, such as ASP.NET Core or NETCore (the .NET runtime specifically). These are installed to the `/usr/share/dotnet/shared/$product/$version` directory, where `$product` is the product runtime. For example, you may see the following directories:
+  The runtime is based on specific .NET product runtimes, such as `Microsoft.AspNetCore.All` or `Microsoft.NETCore.App` (the .NET runtime specifically). These are installed to the `/usr/share/dotnet/shared/$product/$version` directory, where `$product` is the product runtime. For example, you may see the following directories:
 
   ```
   /usr/share/dotnet/shared/Microsoft.NETCore.App/$version/

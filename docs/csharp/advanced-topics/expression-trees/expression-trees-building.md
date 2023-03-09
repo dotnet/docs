@@ -75,7 +75,7 @@ The preceding code didn't build the expression tree, but simply the delegate. Us
 
 The code to build the expression tree for the factorial function is quite a bit longer, more complicated, and it's riddled with labels and break statements and other elements you'd like to avoid in our everyday coding tasks.
 
-For this section, you the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/main/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples.
+For this section, you wrote code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/main/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples.
 
 ## Map code constructs to expressions
 

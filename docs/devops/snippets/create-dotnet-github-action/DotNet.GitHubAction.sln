@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.GitHubAction", "DotNet.GitHubAction\DotNet.GitHubAction.csproj", "{275510EF-3B60-4F10-863F-3F081873CE52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76895B6C-05D9-4B5C-808E-4F81BDCF381E}"
+	ProjectSection(SolutionItems) = preProject
+		action.yml = action.yml
+		Dockerfile = Dockerfile
+		workflow.yml = workflow.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{275510EF-3B60-4F10-863F-3F081873CE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275510EF-3B60-4F10-863F-3F081873CE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275510EF-3B60-4F10-863F-3F081873CE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275510EF-3B60-4F10-863F-3F081873CE52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72DC86E4-729D-4EE3-BF32-ABC99E53C366}
+	EndGlobalSection
+EndGlobal

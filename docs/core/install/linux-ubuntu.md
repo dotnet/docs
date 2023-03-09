@@ -17,7 +17,6 @@ This article describes how to install .NET on Ubuntu. The Microsoft package repo
 |--------|------|------|
 | [Package manager<br>(Microsoft feed)](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Requires registering the Microsoft package repository.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
 | [Package manager<br>(Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
-| [Snap](linux-snap.md) | <ul><li>Dependencies are included.</li><li>All supported CPU architectures available.</li><li>Easy to update to the latest patch version.</li><li>Preview releases are available.</li><li>Easy removal.</li></ul> | <ul><li>Cumbersome to install and enable multiple runtimes.</li></ul> |
 | [Script \ Manual extraction](linux-scripted-manual.md) | <ul><li>Control where .NET is installed.</li><li>Preview releases are available.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
 
 ## Decide how to install .NET
@@ -78,7 +77,7 @@ Use the same package sources for the SDK as you use for the runtime. For example
 
 If your Ubuntu version provides the .NET version you require, install it from the built-in feed. Otherwise, [register the Microsoft package repository](#register-the-microsoft-package-repository) and install .NET from that repository. Review the information in the [Supported distributions](#supported-distributions) section.
 
-If the version of .NET you want isn't available, try using [dotnet-install script](linux-scripted-manual.md#scripted-install) or a [Snap](linux-snap.md) package.
+If the version of .NET you want isn't available, try using the [dotnet-install script](linux-scripted-manual.md#scripted-install).
 
 ### My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version
 
@@ -90,11 +89,10 @@ Use one of the following ways to install .NET:
 
 - [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
 - [Manually install .NET](linux-scripted-manual.md#manual-install)
-- [Install .NET with Snap.](linux-snap.md)
 
 ### I don't want to use APT
 
-If you want an automated installation, use the [Linux installation script](linux-scripted-manual.md#scripted-install) or use the [Snap packages](linux-snap.md).
+If you want an automated installation, use the [Linux installation script](linux-scripted-manual.md#scripted-install).
 
 If you want full control over the .NET installation experience, download a tarball and manually install .NET. For more information, see [Manual install](linux-scripted-manual.md#manual-install).
 
@@ -104,7 +102,6 @@ Use one of the following ways to install .NET:
 
 - [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
 - [Manually install .NET](linux-scripted-manual.md#manual-install)
-- [Install .NET with Snap.](linux-snap.md)
 
 ## Supported distributions
 
@@ -129,7 +126,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 The Microsoft package repository contains all versions of .NET that were previously, or currently are, [supported with your version of Ubuntu](#supported-distributions). If your version of Ubuntu provides .NET packages, you'll need to de-prioritize the Ubuntu packages and use the Microsoft repository. For instructions on how to de-prioritize the packages, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
 
 > [!IMPORTANT]
-> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with [Snap](linux-snap.md), an [installer script](linux-scripted-manual.md#scripted-install), or through a [manual binary installation](linux-scripted-manual.md#manual-install).
+> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with the [installer script](linux-scripted-manual.md#scripted-install) or by [manual installation](linux-scripted-manual.md#manual-install).
 
 Preview releases are **not** available in the Microsoft package repository. For more information, see [Install preview versions](#install-preview-versions).
 

@@ -310,7 +310,7 @@
 | Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
-| Azure.FX | NuGet [0.0.16-alpha](https://www.nuget.org/packages/Azure.FX/0.0.16-alpha) |  |  |
+| Azure.FX | NuGet [0.0.17-alpha](https://www.nuget.org/packages/Azure.FX/0.0.17-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.2.0](https://www.nuget.org/packages/Azure.FX.Templates/1.2.0) |  |  |
 | Batch | NuGet [15.4.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/15.4.0) |  | GitHub [15.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_15.4.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |

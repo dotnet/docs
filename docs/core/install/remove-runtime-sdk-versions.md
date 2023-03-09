@@ -80,7 +80,7 @@ If you installed .NET using the [dotnet-install script](linux-scripted-manual.md
 > [!IMPORTANT]
 > This information is written for Linux, but also applies to macOS. On macOS, the root directory is most likely `/usr/local/share/dotnet/`. Substitute the directories accordingly.
 
-When you manually install .NET, it's generally installed to the `/usr/share/dotnet/` or `/usr/lib/dotnet/` directory. The SDK, runtime, and .NET host, are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
+When you manually install .NET, it's generally installed to the `/usr/share/dotnet/`, `/usr/lib/dotnet/`, or the `$HOME/.dotnet` directory. The SDK, runtime, and .NET host, are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
 
 There are three commands you can use to discover where .NET is installed: `dotnet --list-sdks` for SDKs, `dotnet --list-runtimes` for runtimes, and `dotnet --info` for everything. These commands don't list the .NET host. To determine which hosts are installed, check the `/usr/share/dotnet/host/fxr/` directory. The following list represents the directories of a specific version of .NET, where the `$version` variable represents the version of the .NET:
 
@@ -154,7 +154,7 @@ Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its
 
 ## Remove the NuGet fallback directory
 
-Before .NET Core 3.0 SDK, the .NET Core SDK installers used a directory named *NuGetFallbackFolder* to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The *NuGetFallbackFolder* is located at *C:\Program Files\dotnet\sdk* on Windows and at */usr/local/share/dotnet/sdk* on macOS.
+Before .NET Core 3.0 SDK, the .NET Core SDK installers used a directory named *NuGetFallbackFolder* to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The *NuGetFallbackFolder* was located under the *sdk* folder where .NET is installed. For example it could be at *C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder* on Windows and at */usr/local/share/dotnet/sdk/NuGetFallbackFolder* on macOS.
 
 You may want to remove this directory, if:
 

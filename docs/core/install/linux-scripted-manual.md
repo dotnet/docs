@@ -73,10 +73,16 @@ You can usually install a recent version of *libgdiplus* by [adding the Mono rep
 
 ## Scripted install
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you'll need to install dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
 
 > [!IMPORTANT]
 > Bash is required to run the script.
+
+You can download the script with `wget`:
+
+```bash
+wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+```
 
 Before running this script, you'll need to grant permission for this script to run as an executable:
 
@@ -103,6 +109,8 @@ You can install a specific major version with the `--channel` parameter to indic
 ```
 
 For more information, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
+
+To enable .NET on the command line, see [Set environment variables system-wide](#set-environment-variables-system-wide).
 
 ## Manual install
 
@@ -131,7 +139,7 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
 
-### Set environment variables system-wide
+## Set environment variables system-wide
 
 If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:
 

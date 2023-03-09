@@ -19,7 +19,7 @@ sudo apt-get update && \
 
 ### Install .NET 6 Runtime
 
-The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
+Both .NET Runtime and the ASP.NET Core Runtime allow you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
 
 ```bash
 sudo apt-get update && \

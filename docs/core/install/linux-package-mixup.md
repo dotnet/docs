@@ -160,11 +160,13 @@ Configure your package manager to ignore the .NET packages from the distribution
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
     ```
 
-01. Configure the Microsoft repository to ignore .NET packages.
+01. Configure the Linux repository to ignore .NET packages.
 
     ```bash
-    echo 'excludepkgs=dotnet*,aspnet*,netstandard*' | sudo tee -a /etc/yum.repos.d/ <TODO>WHAT IS THE REPO NAME HERE??</TODO> 
+    echo 'excludepkgs=dotnet*,aspnet*,netstandard*' | sudo tee -a /etc/yum.repos.d/<your-package-source>.repo
     ```
+
+    Make sure to replace `<your-package-source>` with your distribution's package source.
 
 01. Reinstall .NET from the distribution's package feed. For more information, see [Install .NET on Linux](linux.md).
 
@@ -190,11 +192,11 @@ Configure your package manager to ignore the .NET packages from the distribution
 
     ```bash
     Package: dotnet* aspnet* netstandard*
-    Pin: origin "your-package-source"
+    Pin: origin "<your-package-source>"
     Pin-Priority: -10
     ```
 
-    Make sure to replace `your-package-source` with your distribution's package source, for example, on Ubuntu you would use `archive.ubuntu.com`.
+    Make sure to replace `<your-package-source>` with your distribution's package source, for example, on Ubuntu you would use `archive.ubuntu.com`.
 
 01. Reinstall .NET from the Microsoft package feed. For more information, see [Install .NET on Linux](linux.md). If using Ubuntu, see [My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version](linux-ubuntu.md#my-ubuntu-distribution-doesnt-include-the-net-version-i-want-or-i-need-an-out-of-support-net-version).
 

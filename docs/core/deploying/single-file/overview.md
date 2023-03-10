@@ -156,25 +156,25 @@ Managed C++ components aren't well suited for single file deployment. We recomme
 
 ### Native libraries
 
-Only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a folder. This approach means that the managed binaries are embedded in the single file bundle, but the native binaries of the core runtime itself are separate files.
+Only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a folder. With this approach, the managed binaries are embedded in the single file bundle, but the native binaries of the core runtime itself are separate files.
 
-To embed those files for extraction and get one output file, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#include-native-libraries).
+To embed those files for extraction and get one output file, set the property `IncludeNativeLibrariesForSelfExtract` to `true`.
 
 Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems.
 
- [!NOTE]
+ [!IMPORTANT]
 > If extraction is used, the files are extracted to disk before the app starts:
 >
-> - If environment variable `DOTNET_BUNDLE_EXTRACT_BASE_DIR` is set to a path, the files are extracted to a directory under that path.
-> - Otherwise, if running on Linux or MacOS, the files are extracted to a directory under `$HOME/.net`.
+> - If the `DOTNET_BUNDLE_EXTRACT_BASE_DIR` environment variable is set to a path, the files are extracted to a directory under that path.
+> - Otherwise, if running on Linux or macOS, the files are extracted to a directory under `$HOME/.net`.
 > - If running on Windows, the files are extracted to a directory under `%TEMP%/.net`.
 >
-> To prevent tampering, these directories should not be writable by users or services with different privileges. Don't use _/tmp_ or _/var/tmp_ on most Linux and MacOS systems.
+> To prevent tampering, these directories shouldn't be writable by users or services with different privileges. Don't use _/tmp_ or _/var/tmp_ on most Linux and macOS systems.
 
 > [!NOTE]
-> In some Linux environments, such as under `systemd`, the default extraction does not work because `$HOME` is not defined. In such cases, we recommend that you set `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` explicitly.
+> In some Linux environments, such as under `systemd`, the default extraction doesn't work because `$HOME` isn't defined. In such cases, it's recommended that you set `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` explicitly.
 >
-> For `systemd`, a good alternative seems to be defining `DOTNET_BUNDLE_EXTRACT_BASE_DIR` in your service's unit file as `%h/.net`, which `systemd` expands correctly to `$HOME/.net` for the account running the service.
+> For `systemd`, a good alternative is to define `DOTNET_BUNDLE_EXTRACT_BASE_DIR` in your service's unit file as `%h/.net`, which `systemd` expands correctly to `$HOME/.net` for the account running the service.
 >
 > ```text
 > [Service]
@@ -213,23 +213,23 @@ We have some recommendations for fixing common scenarios:
 
 Some workflows require post-processing of binaries before bundling. A common example is signing. The dotnet SDK provides MSBuild extension points to allow processing binaries just before single-file bundling. The available APIs are:
 
-* A target `PrepareForBundle` that will be called before `GenerateSingleFileBundle`
-* An ItemGroup `FilesToBundle` containing all files that will be bundled
-* A Property `AppHostFile` that will specify the apphost template. Post-processing might want to exclude the apphost from processing.
+- A target `PrepareForBundle` that will be called before `GenerateSingleFileBundle`
+- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that will be bundled
+- A Property `AppHostFile` that will specify the apphost template. Post-processing might want to exclude the apphost from processing.
 
-The way to plug into this would typically involve creating a target that will be executed between PrepareForBundle and GenerateSingleFileBundle
+To plug into this involves creating a target that will be executed between `PrepareForBundle` and `GenerateSingleFileBundle`.
 
-Example:
+Consider the following .NET project `Target` node example:
 
 ```xml
 <Target Name="MySignedBundledFile" BeforeTargets="GenerateSingleFileBundle" DependsOnTargets="PrepareForBundle">
 ```
 
-It is possible that tooling will need to copy files in the process of signing. That could happen if the original file is a shared item not owned by the build, for example the file comes from a nuget cache. In such case it is expected that the tool will modify the path of the corresponding FilesToBundle item to point to the modified copy.
+It's possible that tooling will need to copy files in the process of signing. That could happen if the original file is a shared item not owned by the build, for example, the file comes from a NuGet cache. In such a case, it's expected that the tool will modify the path of the corresponding `FilesToBundle` item to point to the modified copy.
 
 ### Compress assemblies in single-file apps
 
-Single file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced will have all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
+Single-file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced will have all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
 
 Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The impact can vary significantly between different applications.
 

@@ -236,5 +236,5 @@ Many other users have reported these problems. The following is a list of those 
 ## See also
 
 - [How to check that .NET is already installed](how-to-detect-installed-versions.md?pivots=os-linux)
-- [Install .NET on Linux](linux.md)
 - [How to remove the .NET Runtime and SDK](remove-runtime-sdk-versions.md?pivots=os-linux)
+- [Install .NET on Linux](linux.md)

@@ -5,7 +5,7 @@ ms.date: 03/09/2023
 ---
 # Runtime-specific apps no longer self-contained
 
-Runtime-specific apps, or .NET apps with a `RuntimeIdentifier`, are no longer [self-contained](../../../deploying/index.md#publish-self-contained) by default, and instead [framework-dependent](../../../deploying/index.md#publish-framework-dependent) by default.
+Runtime-specific apps, or .NET apps with a `RuntimeIdentifier`, are no longer [self-contained](../../../deploying/index.md#publish-self-contained) by default. Instead, they are [framework-dependent](../../../deploying/index.md#publish-framework-dependent) by default.
 
 This is a break in the following situations:
 
@@ -36,17 +36,15 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
+- The new .NET SDK behavior aligns with Visual Studio behavior.
+- Framework-dependent apps are now smaller by default, since there aren't copies of .NET stored in each app.
+- Ideally, command-line options are orthogonal. In this case, the tooling supports both RID-specific self-contained deployment (SCD) and RID-specific framework-dependent deployment (FDD). So it didn't make sense that no RID defaulted to FDD and RID defaulted to SCD. This behavior was often confusing for users.
+
 .NET 6 alerted users to this breaking change with the following warning:
 
 **warning NETSDK1179: One of '--self-contained' or '--no-self-contained' options are required when '--runtime' is used.**
 
 Now that customers have had time to add `SelfContained` explicitly, we felt we could introduce the break.
-
-As for why the change is being made:
-
-- The new .NET SDK behavior aligns with Visual Studio behavior.
-- Framework-dependent apps are now smaller by default, since there aren't copies of .NET stored in each app.
-- Ideally, command-line options are orthogonal. In this case, the tooling supports both RID-specific self-contained deployment (SCD) and RID-specific framework-dependent deployment (FDD). So it didn't make sense that no RID defaulted to FDD and RID defaulted to SCD. This behavior was often confusing for users.
 
 ## Recommended action
 

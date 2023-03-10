@@ -162,7 +162,7 @@ To embed those files for extraction and get one output file, set the property `I
 
 Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems.
 
- [!IMPORTANT]
+> [!IMPORTANT]
 > If extraction is used, the files are extracted to disk before the app starts:
 >
 > - If the `DOTNET_BUNDLE_EXTRACT_BASE_DIR` environment variable is set to a path, the files are extracted to a directory under that path.

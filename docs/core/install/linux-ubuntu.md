@@ -204,7 +204,7 @@ sudo apt upgrade dotnet-sdk-7.0
 
 ## Troubleshooting
 
-Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` only the runtime is listed. This can be related to using two different package sources. The built-in Ubuntu 22.04 and Ubuntu 22.10 package feeds include some versions of .NET, but not all, and you may have also installed .NET from the Microsoft feeds. For more information about how to fix this problem, see [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.mdpivots=os-linux-ubuntu#solutions).
+Starting with Ubuntu 22.04 you may run into a situation where it seems only a piece of .NET is available. For example, when you've installed the runtime and the SDK, but when running `dotnet --info` only the runtime is listed. This can be related to using two different package sources. The built-in Ubuntu 22.04 and Ubuntu 22.10 package feeds include some versions of .NET, but not all, and you may have also installed .NET from the Microsoft feeds. For more information about how to fix this problem, see [Troubleshoot .NET errors related to missing files on Linux](linux-package-mixup.md?pivots=os-linux-ubuntu#solutions).
 
 ### APT problems
 

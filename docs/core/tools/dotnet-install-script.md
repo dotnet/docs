@@ -288,6 +288,10 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 > echo 'export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools' >> ~/.bashrc
 > ```
 
+## Uninstall
+
+There is no uninstall script. For more information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
+
 ## See also
 
 - [.NET releases](https://github.com/dotnet/core/releases)

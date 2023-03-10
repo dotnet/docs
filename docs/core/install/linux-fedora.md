@@ -14,7 +14,6 @@ ms.date: 12/21/2022
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
@@ -51,7 +50,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Install on older distributions
 
-Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with [snap](linux-snap.md), through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
+Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
 
 01. First, add the Microsoft signing key to your list of trusted keys.
 
@@ -91,7 +90,6 @@ This section provides information on common errors you may get while using the p
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 

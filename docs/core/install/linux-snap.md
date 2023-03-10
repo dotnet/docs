@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 12/21/2022
 ---
 
-# Install the .NET SDK or the .NET Runtime with Snap
+# Install .NET SDK or .NET Runtime with Snap
 
 Use a Snap package to install the .NET SDK or .NET Runtime. Snaps are a great alternative to the package manager built into your Linux distribution. This article describes how to install .NET through [Snap](https://snapcraft.io/dotnet-sdk).
 

@@ -12,9 +12,9 @@ let (|Cube|_|) (x : int) =
 
 let findSquareCubes x =
    match x with
-       | Cube x & Square _ -> printfn "%d is a cube and a square" x
-       | Cube x -> printfn "%d is a cube" x
-       | _ -> ()
-         
+   | Cube x & Square _ -> printfn "%d is a cube and a square" x
+   | Cube x -> printfn "%d is a cube" x
+   | _ -> ()
+   
 
 [ 1 .. 1000 ] |> List.iter (fun elem -> findSquareCubes elem)

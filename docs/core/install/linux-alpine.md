@@ -16,7 +16,6 @@ If you're using Docker, consider using [official .NET Docker images](../docker/i
 
 The Alpine package manager supports installing some versions of .NET. If the .NET package is unavailable, you'll need to install .NET in one of the following alternative ways:
 
-- [Install with Snap.](linux-snap.md)
 - [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
 - [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
 

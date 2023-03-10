@@ -12,7 +12,7 @@ The type of .NET product to install. Valid options are:
 - **type**\
 Chooses the SDK or the runtime. Valid options are:
 
-  - sdk
+  - sdk (only available for the **dotnet** product)
   - runtime
 
 - **version**\

@@ -15,13 +15,13 @@ let (|ParseRegex|_|) regex str =
 // date is provided, it is an abbreviation, not a year in the first century.
 let parseDate str =
    match str with
-     | ParseRegex "(\d{1,2})/(\d{1,2})/(\d{1,2})$" [Integer m; Integer d; Integer y]
+   | ParseRegex "(\d{1,2})/(\d{1,2})/(\d{1,2})$" [Integer m; Integer d; Integer y]
           -> new System.DateTime(y + 2000, m, d)
-     | ParseRegex "(\d{1,2})/(\d{1,2})/(\d{3,4})" [Integer m; Integer d; Integer y]
+   | ParseRegex "(\d{1,2})/(\d{1,2})/(\d{3,4})" [Integer m; Integer d; Integer y]
           -> new System.DateTime(y, m, d)
-     | ParseRegex "(\d{1,4})-(\d{1,2})-(\d{1,2})" [Integer y; Integer m; Integer d]
+   | ParseRegex "(\d{1,4})-(\d{1,2})-(\d{1,2})" [Integer y; Integer m; Integer d]
           -> new System.DateTime(y, m, d)
-     | _ -> new System.DateTime()
+   | _ -> new System.DateTime()
 
 let dt1 = parseDate "12/22/08"
 let dt2 = parseDate "1/1/2009"

@@ -11,7 +11,7 @@ jobs:
     permissions:
         statuses: write
         issues: write
-        pull-requests: read
+        pull-requests: write
     steps:
     - uses: dotnet/docs-actions/actions/status-checker@main
       with:

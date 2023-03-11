@@ -12,7 +12,6 @@ f1_keywords:
   - "CS8607" # WRN_DisallowNullAttributeForbidsMaybeNullAssignment: A possible null value may not be used for a type marked with [NotNull] or [DisallowNull]
   - "CS8608" # WRN_NullabilityMismatchInTypeOnOverride: Nullability of reference types in type doesn't match overridden member.
   - "CS8609" # WRN_NullabilityMismatchInReturnTypeOnOverride: Nullability of reference types in return type doesn't match overridden member.
-  - "CS8819" # WRN_NullabilityMismatchInReturnTypeOnPartial: Nullability of reference types in return type doesn't match partial method declaration.
   - "CS8610" # WRN_NullabilityMismatchInParameterTypeOnOverride: Nullability of reference types in type of parameter '{0}' doesn't match overridden member.
   - "CS8611" # WRN_NullabilityMismatchInParameterTypeOnPartial: Nullability of reference types in type of parameter '{0}' doesn't match partial method declaration.
   - "CS8612" # WRN_NullabilityMismatchInTypeOnImplicitImplementation: Nullability of reference types in type of '{0}' doesn't match implicitly implemented member '{1}'.
@@ -52,6 +51,7 @@ f1_keywords:
   - "CS8776" # WRN_MemberNotNullBadMember:  Member '{0}' cannot be used in this attribute.
   - "CS8775" # WRN_MemberNotNullWhen: Member '{0}' must have a non-null value when exiting with '{1}'.
   - "CS8777" # WRN_ParameterDisallowsNull: Parameter '{0}' must have a non-null value when exiting.
+  - "CS8819" # WRN_NullabilityMismatchInReturnTypeOnPartial: Nullability of reference types in return type doesn't match partial method declaration.
   - "CS8824" # WRN_ParameterNotNullIfNotNull: Parameter '{0}' must have a non-null value when exiting because parameter '{1}' is non-null.
   - "CS8825" # WRN_ReturnNotNullIfNotNull: Return value must be non-null because parameter '{0}' is non-null.
   - "CS8847" # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
@@ -60,6 +60,7 @@ helpviewer_keywords:
   - "CS8600"
   - "CS8601"
   - "CS8602"
+  - "CS8603"
   - "CS8604"
   - "CS8605"
   - "CS8607"
@@ -82,22 +83,22 @@ helpviewer_keywords:
   - "CS8625"
   - "CS8629"
   - "CS8631"
-  - "CS8634"
-  - "CS8655"
   - "CS8633"
+  - "CS8634"
   - "CS8643"
   - "CS8644"
   - "CS8645"
+  - "CS8655"
+  - "CS8667"
+  - "CS8670"
+  - "CS8714"
   - "CS8762"
   - "CS8763"
   - "CS8764"
   - "CS8765"
   - "CS8766"
-  - "CS8667"
-  - "CS8768"
-  - "CS8670"
-  - "CS8714"
   - "CS8767"
+  - "CS8768"
   - "CS8769"
   - "CS8770"
   - "CS8774"

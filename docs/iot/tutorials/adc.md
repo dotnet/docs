@@ -75,7 +75,7 @@ Complete the following steps in your preferred development environment:
     In the preceding code:
 
     - `hardwareSpiSettings` is set to a new instance of `SpiConnectionSettings`. The constructor sets the `busId` parameter to 0 and the `chipSelectLine` parameter to 0.
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
     - A `while` loop runs indefinitely. Each iteration:
         1. Reads the value of CH0 on the ADC by calling `mcp.Read(0)`.

@@ -33,7 +33,7 @@ The `var` keyword may be used in the following contexts:
     foreach (var item in list) {...}
     ```
 
-- In a [using](../../language-reference/keywords/using-statement.md) statement.
+- In a [using](../../language-reference/statements/using.md) statement.
 
     ```csharp
     using (var file = new StreamReader("C:\\myfile.txt")) {...}
@@ -96,4 +96,4 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 - [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)
-- [using Statement](../../language-reference/keywords/using-statement.md)
+- [using statement](../../language-reference/statements/using.md)

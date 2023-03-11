@@ -998,14 +998,8 @@ items:
       items:
       - name: namespace
         href: language-reference/keywords/namespace.md
-      - name: using
-        items:
-        - name: Contexts for using
-          href: language-reference/keywords/using.md
-        - name: using Directive
-          href: language-reference/keywords/using-directive.md
-        - name: using Statement
-          href: language-reference/keywords/using-statement.md
+      - name: using directive
+        href: language-reference/keywords/using-directive.md
       - name: extern alias
         href: language-reference/keywords/extern-alias.md
     - name: Generic Type Constraint Keywords
@@ -1201,6 +1195,9 @@ items:
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
+    - name: using statement
+      displayName: dispose, disposable, await using, using declaration
+      href: language-reference/statements/using.md
     - name: yield statement
       displayName: iterator, yield break, yield return
       href: language-reference/statements/yield.md

@@ -87,13 +87,13 @@ Consider the example logging output when using the `JsonConsole` formatter.
 {
   "EventId": 23,
   "LogLevel": "Information",
-  "Category": "SampleObject",
-  "Message": "",
+  "Category": "\u003CProgram\u003EF...9CB42__SampleObject",
+  "Message": "Liana lives in Seattle.",
   "State": {
-    "Message": "",
+    "Message": "Liana lives in Seattle.",
     "name": "Liana",
     "city": "Seattle",
-    "{OriginalFormat}": ""
+    "{OriginalFormat}": "{name} lives in {city}."
   }
 }
 ```

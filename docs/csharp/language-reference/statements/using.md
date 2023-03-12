@@ -27,6 +27,8 @@ You can also use a `using` *declaration* that doesn't require braces:
 
 When declared in a `using` declaration, a local variable is disposed at the end of the scope in which it's declared. In the preceding example, disposal happens at the end of a method.
 
+A variable declared by the `using` statement or declaration is readonly. You cannot reassign it or pass it as a [`ref`](../keywords/ref.md) or [`out`](../keywords/out-parameter-modifier.md) parameter.
+
 You can declare several instances of the same type in one `using` statement, as the following example shows:
 
 :::code language="csharp" source="snippets/using/Program.cs" id="MultipleResources":::

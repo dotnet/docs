@@ -51,7 +51,7 @@ where `expression` produces a disposable instance. The following example demonst
 :::code language="csharp" source="snippets/using/Program.cs" id="UsingWithExpression":::
 
 > [!WARNING]
-> In the preceding example, a disposable instance remains in scope after the `using` statement while it's already disposed. If you use that instance further, you might encounter an exception, for example, <xref:System.ObjectDisposedException>. That's why we recommend declaring a disposable variable within the `using` statement or using the `using` declaration.
+> In the preceding example, after control leaves the `using` statement, a disposable instance remains in scope while it's already disposed. If you use that instance further, you might encounter an exception, for example, <xref:System.ObjectDisposedException>. That's why we recommend declaring a disposable variable within the `using` statement or with the `using` declaration.
 
 ## C# language specification
 

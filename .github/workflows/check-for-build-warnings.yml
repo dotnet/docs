@@ -17,4 +17,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         docs-path: "docs"
-        vanity-slug: "dotnet"
+        url-base-path: "dotnet"

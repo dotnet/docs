@@ -44,7 +44,7 @@ Because a source breaking change is only harmful when developers recompile their
 
 ### Behavior breaking change
 
-Behavior changes are the most common type of breaking change: almost any change in behavior could break someone. Changes to your library, such as method signatures, exceptions thrown or input or output data formats, could all negatively impact your library consumers. Even a bug fix can qualify as a breaking change if users relied on the previously broken behavior.
+Behavior changes are the most common type of breaking change: almost any change in behavior could cause a logic error for a consumer. Changes to your library, such as method signatures, exceptions thrown or input or output data formats, could all negatively impact your library consumers. Even a bug fix can qualify as a breaking change if users relied on the previously broken behavior.
 
 Adding features and improving bad behaviors is a good thing, but without care it can make it very hard for existing users to upgrade. One approach to helping developers deal with behavior breaking changes is to hide them behind settings. Settings let developers update to the latest version of your library while at the same time choosing to opt in or opt out of breaking changes. This strategy lets developers stay up to date while letting their consuming code adapt over time.
 

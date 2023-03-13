@@ -15,7 +15,7 @@
 
 <sup>2</sup> .NET Framework doesn't support .NET Standard 2.1. For more information, see the [announcement of .NET Standard 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-standard-2-1/).
 
-<sup>3</sup> UWP does not support .NET Standard 2.1.
+<sup>3</sup> UWP doesn't support .NET Standard 2.1.
 
 For more information, see [.NET Standard 2.1][2.1]. For an interactive table, see [.NET Standard versions](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 

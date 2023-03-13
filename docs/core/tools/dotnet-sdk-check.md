@@ -30,29 +30,26 @@ Here's an example of output from the command:
 
 ```output
 .NET SDKs:
-Version                         Status
------------------------------------------------------------
-2.1.816                         Up to date.
-2.2.401                         .NET 2.2 is out of support.
-3.1.410                         Up to date.
-5.0.204                         Up to date.
-5.0.301                         Up to date.
+Version      Status
+----------------------------------------
+3.1.426      .NET 3.1 is out of support.
+7.0.103      Up to date.
+7.0.200      Patch 7.0.201 is available.
 
 .NET Runtimes:
-Name                              Version                       Status
--------------------------------------------------------------------------------------------
-Microsoft.AspNetCore.All          2.1.28                        Up to date.
-Microsoft.AspNetCore.App          2.1.28                        Up to date.
-Microsoft.NETCore.App             2.1.28                        Up to date.
-Microsoft.AspNetCore.All          2.2.6                         .NET 2.2 is out of support.
-Microsoft.AspNetCore.App          2.2.6                         .NET 2.2 is out of support.
-Microsoft.NETCore.App             2.2.6                         .NET 2.2 is out of support.
-Microsoft.AspNetCore.App          3.1.16                        Up to date.
-Microsoft.NETCore.App             3.1.16                        Up to date.
-Microsoft.WindowsDesktop.App      3.1.16                        Up to date.
-Microsoft.AspNetCore.App          5.0.7                         Up to date.
-Microsoft.NETCore.App             5.0.7                         Up to date.
-Microsoft.WindowsDesktop.App      5.0.7                         Up to date.
+Name                              Version      Status
+--------------------------------------------------------------------------
+Microsoft.AspNetCore.App          5.0.17       .NET 5.0 is out of support.
+Microsoft.NETCore.App             5.0.17       .NET 5.0 is out of support.
+Microsoft.WindowsDesktop.App      5.0.17       .NET 5.0 is out of support.
+Microsoft.NETCore.App             6.0.10       Patch 6.0.14 is available.
+Microsoft.NETCore.App             6.0.11       Patch 6.0.14 is available.
+Microsoft.NETCore.App             6.0.13       Patch 6.0.14 is available.
+Microsoft.AspNetCore.App          7.0.3        Up to date.
+Microsoft.NETCore.App             7.0.3        Up to date.
+Microsoft.WindowsDesktop.App      7.0.3        Up to date.
+
+The latest versions of .NET can be installed from https://aka.ms/dotnet-core-download. For more information about .NET lifecycles, see https://aka.ms/dotnet-core-support.
 ```
 
 ## Options

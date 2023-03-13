@@ -25,11 +25,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The behavior of ignoring <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.Args?displayProperty=nameWithType> was unexpected, even when <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.DisableDefaults?displayProperty=nameWithType> was set to `true`. That's because if the caller didn't want the command-line arguments applied to the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>, they wouldn't have set them on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings> object. Since the caller did pass the command-line arguments on the settings, those arguments should be respected.
+The behavior of ignoring <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.Args?displayProperty=nameWithType> was unexpected, even when <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.DisableDefaults?displayProperty=nameWithType> was set to `true`. That's because if the caller didn't want the command-line arguments applied to the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>, they wouldn't have set them on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings> object. Since the caller *did* pass the command-line arguments on the settings, those arguments should be respected.
 
 ## Recommended action
 
-If you don't want the command line Args value to be added to the HostApplicationBuilder.Configuration, then leave the Args property set to null.
+If you don't want the command-line arguments to be added to the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> configuration, leave the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.Args?displayProperty=nameWithType> property set to `null`.
 
 ## Affected APIs
 

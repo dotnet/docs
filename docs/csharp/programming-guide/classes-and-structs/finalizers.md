@@ -68,7 +68,7 @@ For more information about cleaning up resources, see the following articles:
 - [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
 - [Implementing a DisposeAsync Method](../../../standard/garbage-collection/implementing-disposeasync.md)
-- [using Statement](../../language-reference/keywords/using-statement.md)
+- [using statement](../../language-reference/statements/using.md)
 
 ## Example
 

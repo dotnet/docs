@@ -49,7 +49,7 @@ The `LogException` method always returns `false`, no `catch` clause using this e
 
 A `finally` block enables you to clean up actions that are performed in a `try` block. If present, the `finally` block executes last, after the `try` block and any matched `catch` block. A `finally` block always runs, whether an exception is thrown or a `catch` block matching the exception type is found.
 
-The `finally` block can be used to release resources such as file streams, database connections, and graphics handles without waiting for the garbage collector in the runtime to finalize the objects. For more information See the [using Statement](../../language-reference/keywords/using-statement.md).
+The `finally` block can be used to release resources such as file streams, database connections, and graphics handles without waiting for the garbage collector in the runtime to finalize the objects. For more information, see the [using statement](../../language-reference/statements/using.md).
 
 In the following example, the `finally` block is used to close a file that is opened in the `try` block. Notice that the state of the file handle is checked before the file is closed. If the `try` block can't open the file, the file handle still has the value `null` and the `finally` block doesn't try to close it. Instead, if the file is opened successfully in the `try` block, the `finally` block closes the open file.
 
@@ -65,4 +65,4 @@ For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md)
 - [try-catch](../../language-reference/keywords/try-catch.md)
 - [try-finally](../../language-reference/keywords/try-finally.md)
 - [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)
-- [using Statement](../../language-reference/keywords/using-statement.md)
+- [using statement](../../language-reference/statements/using.md)

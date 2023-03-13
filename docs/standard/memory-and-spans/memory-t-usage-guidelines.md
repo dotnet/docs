@@ -71,7 +71,7 @@ You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> 
 
 [!code-csharp[ownership](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
 
-We can also write this example with the [`using`](../../csharp/language-reference/keywords/using-statement.md):
+We can also write this example with the [`using`](../../csharp/language-reference/statements/using.md):
 
 [!code-csharp[ownership-using](~/samples/snippets/standard/buffers/memory-t/owner-using/owner-using.cs)]
 

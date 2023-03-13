@@ -109,7 +109,7 @@ Provide a static extension method for the log message. Include any type paramete
 
 :::code language="csharp" source="snippets/logging/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkMethod":::
 
-The scope wraps the logging extension calls in a [using](../../csharp/language-reference/keywords/using-statement.md) block:
+The scope wraps the logging extension calls in a [using](../../csharp/language-reference/statements/using.md) block:
 
 :::code language="csharp" source="snippets/logging/worker-service-options/Worker.cs" range="13-349" highlight="4":::
 

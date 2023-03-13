@@ -30,7 +30,7 @@ In the following example, an exception from the `TryCast` method is caught in a 
 
 For more information about `finally`, see [try-catch-finally](try-catch-finally.md).
 
-C# also contains the [using statement](using-statement.md), which provides similar functionality for <xref:System.IDisposable> objects in a convenient syntax.
+C# also contains the [using statement](../statements/using.md), which provides similar functionality for <xref:System.IDisposable> objects in a convenient syntax.
 
 ## C# language specification
 

@@ -116,7 +116,7 @@ The preceding code:
 * Assumes the JSON to analyze is in a string named `jsonString`.
 * Calculates an average grade for objects in a `Students` array that have a `Grade` property.
 * Assigns a default grade of 70 for students who don't have a grade.
-* Creates the `JsonDocument` instance in a [`using` statement](../../../csharp/language-reference/keywords/using-statement.md) because `JsonDocument` implements `IDisposable`. After a `JsonDocument` instance is disposed, you lose access to all of its `JsonElement` instances also. To retain access to a `JsonElement` instance, make a copy of it before the parent `JsonDocument` instance is disposed. To make a copy, call <xref:System.Text.Json.JsonElement.Clone%2A?displayProperty=nameWithType>. For more information, see [JsonDocument is IDisposable](migrate-from-newtonsoft.md#jsondocument-is-idisposable).
+* Creates the `JsonDocument` instance in a [`using` statement](../../../csharp/language-reference/statements/using.md) because `JsonDocument` implements `IDisposable`. After a `JsonDocument` instance is disposed, you lose access to all of its `JsonElement` instances also. To retain access to a `JsonElement` instance, make a copy of it before the parent `JsonDocument` instance is disposed. To make a copy, call <xref:System.Text.Json.JsonElement.Clone%2A?displayProperty=nameWithType>. For more information, see [JsonDocument is IDisposable](migrate-from-newtonsoft.md#jsondocument-is-idisposable).
 
 The preceding example code counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 

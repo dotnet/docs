@@ -10,8 +10,6 @@ ms.date: 12/21/2022
 
 This article demonstrates how to install the .NET SDK or the .NET Runtime on Linux by using the install script or by extracting the binaries. For a list of distributions that support the built-in package manager, see [Install .NET on Linux](linux.md).
 
-You can also install .NET with snap. For more information, see [Install the .NET SDK or the .NET Runtime with Snap](linux-snap.md).
-
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## .NET releases
@@ -75,10 +73,16 @@ You can usually install a recent version of *libgdiplus* by [adding the Mono rep
 
 ## Scripted install
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you'll need to install dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
 
 > [!IMPORTANT]
 > Bash is required to run the script.
+
+You can download the script with `wget`:
+
+```bash
+wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+```
 
 Before running this script, you'll need to grant permission for this script to run as an executable:
 
@@ -106,6 +110,8 @@ You can install a specific major version with the `--channel` parameter to indic
 
 For more information, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
 
+To enable .NET on the command line, see [Set environment variables system-wide](#set-environment-variables-system-wide).
+
 ## Manual install
 
 <!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
@@ -118,7 +124,7 @@ Download a **binary** release for either the SDK or the runtime from one of the 
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal.
+Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. Running the following commands makes the .NET CLI commands available at the terminal and sets the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
@@ -131,9 +137,9 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-The preceeding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
+The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
 
-### Set environment variables system-wide
+## Set environment variables system-wide
 
 If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:
 

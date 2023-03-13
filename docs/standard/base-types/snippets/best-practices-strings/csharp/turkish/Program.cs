@@ -20,7 +20,7 @@ Console.WriteLine($"   Does 'Bill' start with 'BILL'? {name.StartsWith("BILL", t
 //'        Is 'Bill' the same as 'BILL'? True
 //'        Does 'Bill' start with 'BILL'? True
 //'     
-//'     Culture = Turkish (Turkey)
+//'     Culture = Turkish (Türkiye)
 //'        Is 'Bill' the same as 'BILL'? True
 //'        Does 'Bill' start with 'BILL'? False
 //</main>

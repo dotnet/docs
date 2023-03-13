@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Text.RegularExpressions;
 
 static partial class Program
@@ -60,3 +60,4 @@ static file partial class Program
     [GeneratedRegex(pattern: "(\\w)\\1")]
     private static partial Regex WordWithBacktrackingRegex();
 }
+	

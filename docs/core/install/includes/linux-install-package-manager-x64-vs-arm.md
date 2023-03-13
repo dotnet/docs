@@ -4,6 +4,5 @@
 
 For more information on installing .NET **without a package manager**, see one of the following articles:
 
-- [Alternatively install .NET with Snap.](../linux-snap.md)
 - [Alternatively install .NET with `install-dotnet` script.](../linux-scripted-manual.md#scripted-install)
 - [Manually install .NET](../linux-scripted-manual.md#manual-install)

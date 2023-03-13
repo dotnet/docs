@@ -97,6 +97,38 @@
             "redirect_url": "/dotnet/csharp/fundamentals/functional/discards"
         },
         {
+            "source_path_from_root": "/docs/csharp/expression-trees.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-classes.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-classes"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-trees-building.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-building"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-trees-explained.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-explained"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-trees-execution.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-execution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-trees-interpreting.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-interpreting"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-trees-summary.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/expression-trees-translating.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-translating"
+        },
+        {
             "source_path_from_root": "/docs/csharp/features.md",
             "redirect_url": "/dotnet/csharp/programming-guide/concepts"
         },
@@ -784,6 +816,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/using-statement.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/using"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/using-static.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/using-directive"
         },
@@ -1141,6 +1177,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/classes-and-structs/index.md",
             "redirect_url": "/dotnet/csharp/fundamentals/object-oriented"
         },
@@ -1297,6 +1337,30 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/caller-information.md",
             "redirect_url": "/dotnet/csharp/language-reference/attributes/caller-information"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/index.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/index"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-execution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-translating"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/debugview-syntax.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/debugview-syntax"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/adding-elements-attributes-and-nodes-to-an-xml-tree.md",
@@ -2262,8 +2326,32 @@
             "redirect_url": "/dotnet/csharp/fundamentals/types/interfaces"
         },
         {
-            "source_path_from_root": "/docs/csharp/programming-guide/interop/interoperability.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/example-com-class.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/example-com-class"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/how-to-access-office-onterop-objects.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/how-to-access-office-interop-objects"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/how-to-use-indexed-properties-in-com-interop-programming"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/how-to-use-platform-invoke-to-play-a-wave-file"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/index.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/index"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/interoperability-overview.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/index"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/interop/walkthrough-office-programming.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/walkthrough-office-programming"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md",
@@ -2506,6 +2594,14 @@
             "redirect_url": "/dotnet/csharp/fundamentals/types"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/types/using-type-dynamic.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/using-type-dynamic"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/walkthrough-creating-and-using-dynamic-objects"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/unsafe-code-pointers/arithmetic-operations-on-pointers.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-arithmetic-operators"
         },
@@ -2726,7 +2822,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/reference-semantics-with-value-types.md",
-            "redirect_url": "/dotnet/csharp/write-safe-efficient-code"
+            "redirect_url": "/dotnet/csharp/advanced-topics/performance"
         },
         {
             "source_path_from_root": "/docs/csharp/reflection.md",
@@ -2940,7 +3036,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md",
-            "redirect_url": "/dotnet/csharp/tutorials/generate-consume-asynchronous-stream"
+            "redirect_url": "/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/mixins-with-default-interface-methods.md",

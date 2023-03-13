@@ -1,0 +1,46 @@
+name: "clean repo"
+
+on:
+  schedule:
+    - cron: "0 1 1 * *" # Runs at 01:00, on day 1 of the month
+  workflow_dispatch:
+
+jobs:
+  clean-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
+
+      # Call clean repo
+      - name: Clean repo
+        id: clean-repo-step
+        uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
+        with:
+          docfx_directory: '.'
+          articles_directory: './docs'
+          media_directory: './docs'
+          snippets_directory: '.' # This includes the ./samples and ./docs directories, which both contain snippets.
+          includes_directory: './includes'
+          url_base_path: '/dotnet'
+          delete: true
+          orphaned_articles: true
+          orphaned_images: true
+          orphaned_snippets: true
+          orphaned_includes: true
+          replace_redirects: true
+          relative_links: true
+          remove_hops: true
+        
+      # Create the PR for the work done by the "clean repo" tool
+      - name: create-pull-request
+        uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
+        with:
+          branch: create-cleanrepo-pull-request/patch
+          title: "Monthly chores: Automated repo cleanup"
+          commit-message: 'Bot 🤖 generated CleanRepo tool run'
+          body: "Find and delete orphaned articles, images, snippets, and include files. Remove redirection hops, update redirected links in articles, and replace site-relative links with file-relative links. Contributes to #..."

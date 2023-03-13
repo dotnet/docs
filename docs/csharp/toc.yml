@@ -299,26 +299,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Expression trees
-    items:
-    - name: Introduction to expression trees
-      href: expression-trees.md
-    - name: Expression Trees Explained
-      href: expression-trees-explained.md
-    - name: Framework Types Supporting Expression Trees
-      href: expression-classes.md
-    - name: Executing Expressions
-      href: expression-trees-execution.md
-    - name: Interpreting Expressions
-      href: expression-trees-interpreting.md
-    - name: Building Expressions
-      href: expression-trees-building.md
-    - name: Translating Expressions
-      href: expression-trees-translating.md
-    - name: Summary
-      href: expression-trees-summary.md
-  - name: Native interoperability
-    href: programming-guide/interop/index.md
   - name: Versioning
     href: versioning.md
 - name: How-to C# articles
@@ -340,59 +320,100 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Expression trees
+    items:
+    - name: Overview
+      displayName: expression trees
+      href: advanced-topics/expression-trees/index.md
+    - name: Expression Trees Explained
+      href: advanced-topics/expression-trees/expression-trees-explained.md
+    - name: Framework Types Supporting Expression Trees
+      href: advanced-topics/expression-trees/expression-classes.md
+    - name: Execute expressions
+      href: advanced-topics/expression-trees/expression-trees-execution.md
+    - name: Interpret expressions
+      href: advanced-topics/expression-trees/expression-trees-interpreting.md
+    - name: Build expressions
+      href: advanced-topics/expression-trees/expression-trees-building.md
+    - name: Translate expressions
+      href: advanced-topics/expression-trees/expression-trees-translating.md
+    - name: Debug txpression trees in Visual Studio
+      href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
+    - name: DebugView Syntax
+      href: advanced-topics/expression-trees/debugview-syntax.md
+  - name: Native interoperability
+    items:
+    - name: Overview
+      href: advanced-topics/interop/index.md
+    - name: Example COM Class
+      href: advanced-topics/interop/example-com-class.md
+    - name: "Walkthrough: Office Programming"
+      href: advanced-topics/interop/walkthrough-office-programming.md
+    - name: "How to use platform invoke to play a WAV file"
+      href: advanced-topics/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
+    - name: "How to use indexed properties in COM interop programming"
+      href: advanced-topics/interop/how-to-use-indexed-properties-in-com-interop-programming.md
+    - name: "How to access Office interop objects"
+      href: advanced-topics/interop/how-to-access-office-interop-objects.md
+    - name: "How to use named and optional arguments in Office programming"
+      href: advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming.md
+    - name: Using Type dynamic
+      href: advanced-topics/interop/using-type-dynamic.md
+    - name: "Walkthrough: Creating and Using Dynamic Objects"
+      href: advanced-topics/interop/walkthrough-creating-and-using-dynamic-objects.md
   - name: Performance engineering
     items:
     - name: Overview
       href: advanced-topics/performance/index.md
     - name: Tutorial - reduce allocations
       href: advanced-topics/performance/ref-tutorial.md
-  - name: The .NET Compiler Platform SDK (Roslyn APIs)
+- name: The .NET Compiler Platform SDK (Roslyn APIs)
+  items:
+  - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
+    href: roslyn-sdk/index.md
+  - name: Understand the compiler API model
+    href: roslyn-sdk/compiler-api-model.md
+  - name: Work with syntax
+    href: roslyn-sdk/work-with-syntax.md
+  - name: Work with semantics
+    href: roslyn-sdk/work-with-semantics.md
+  - name: Work with a workspace
+    href: roslyn-sdk/work-with-workspace.md
+  - name: Explore code with the syntax visualizer
+    href: roslyn-sdk/syntax-visualizer.md
+  - name: Source Generators
+    href: roslyn-sdk/source-generators-overview.md
+  - name: Quick starts
     items:
-    - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
-      href: roslyn-sdk/index.md
-    - name: Understand the compiler API model
-      href: roslyn-sdk/compiler-api-model.md
-    - name: Work with syntax
-      href: roslyn-sdk/work-with-syntax.md
-    - name: Work with semantics
-      href: roslyn-sdk/work-with-semantics.md
-    - name: Work with a workspace
-      href: roslyn-sdk/work-with-workspace.md
-    - name: Explore code with the syntax visualizer
-      href: roslyn-sdk/syntax-visualizer.md
-    - name: Source Generators
-      href: roslyn-sdk/source-generators-overview.md
-    - name: Quick starts
-      items:
-      - name: Syntax analysis
-        href: roslyn-sdk/get-started/syntax-analysis.md
-      - name: Semantic analysis
-        href: roslyn-sdk/get-started/semantic-analysis.md
-      - name: Syntax Transformation
-        href: roslyn-sdk/get-started/syntax-transformation.md
-    - name: Tutorials
-      items:
-      - name: Build your first analyzer and code fix
-        href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
-  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-  #    - name: Get started writing custom analyzers and code fixes
-  #  - name: Tutorials
-  #    items:
-  #    - name: Build your first analyzer
-  #    - name: Build your first code fix
-  #    - name: Deploy your analyzer as a VSIX
-  #    - name: Deploy your analyzer as a NuGet package
-  #- name: Samples
-  # Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
-  #  items:
-  #    - name: Async packages
-  #    - name: Console classifier
-  #    - name: Convert to auto property
-  #    - name: Format solution
-  #    - name: Implement notify property changed
-  #    - name: Make const
-  #    - name: How to guides
-  # Look at the samples, and determine which are "How To" vs. Samples.
+    - name: Syntax analysis
+      href: roslyn-sdk/get-started/syntax-analysis.md
+    - name: Semantic analysis
+      href: roslyn-sdk/get-started/semantic-analysis.md
+    - name: Syntax Transformation
+      href: roslyn-sdk/get-started/syntax-transformation.md
+  - name: Tutorials
+    items:
+    - name: Build your first analyzer and code fix
+      href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#    - name: Get started writing custom analyzers and code fixes
+#  - name: Tutorials
+#    items:
+#    - name: Build your first analyzer
+#    - name: Build your first code fix
+#    - name: Deploy your analyzer as a VSIX
+#    - name: Deploy your analyzer as a NuGet package
+#- name: Samples
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#  items:
+#    - name: Async packages
+#    - name: Console classifier
+#    - name: Convert to auto property
+#    - name: Format solution
+#    - name: Implement notify property changed
+#    - name: Make const
+#    - name: How to guides
+# Look at the samples, and determine which are "How To" vs. Samples.
 - name: C# programming guide
   items:
   - name: Overview
@@ -435,21 +456,6 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
         - name: Use Variance for Func and Action Generic Delegates
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
-    - name: Expression trees
-      items:
-      - name: Overview
-        displayName: expression trees
-        href: programming-guide/concepts/expression-trees/index.md
-      - name: "How to execute expression trees"
-        href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
-      - name: "How to modify expression trees"
-        href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
-      - name: "How to use expression trees to build dynamic queries"
-        href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
-      - name: Debugging Expression Trees in Visual Studio
-        href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
-      - name: DebugView Syntax
-        href: programming-guide/concepts/expression-trees/debugview-syntax.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
     - name: Language-Integrated Query (LINQ)
@@ -543,6 +549,8 @@ items:
             href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
           - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+          - name: "How to use expression trees to build dynamic queries"
+            href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
         - name: LINQ and Reflection
           href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: "How to query an assembly's metadata with Reflection (LINQ)"
@@ -614,10 +622,6 @@ items:
       href: programming-guide/types/how-to-convert-a-string-to-a-number.md
     - name: "How to convert between hexadecimal strings and numeric types"
       href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
-    - name: Using Type dynamic
-      href: programming-guide/types/using-type-dynamic.md
-    - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
-      href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Classes, Structs, and Records
     items:
     - name: Polymorphism
@@ -680,8 +684,6 @@ items:
         href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
       - name: Named and Optional Arguments
         href: programming-guide/classes-and-structs/named-and-optional-arguments.md
-      - name: "How to use named and optional arguments in Office programming"
-        href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
     - name: Constructors
       items:
       - name: Constructors overview
@@ -827,22 +829,6 @@ items:
       href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
     - name: "How to create a key in the registry"
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
-  - name: Interoperability
-    items:
-    - name: .NET Interoperability
-      href: programming-guide/interop/index.md
-    - name: Interoperability Overview
-      href: programming-guide/interop/interoperability-overview.md
-    - name: "How to access Office interop objects by using C# features"
-      href: programming-guide/interop/how-to-access-office-onterop-objects.md
-    - name: "How to use indexed properties in COM interop programming"
-      href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
-    - name: "How to use platform invoke to play a WAV file"
-      href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
-    - name: "Walkthrough: Office Programming (C# and Visual Basic)"
-      href: programming-guide/interop/walkthrough-office-programming.md
-    - name: Example COM Class
-      href: programming-guide/interop/example-com-class.md
 - name: Language reference
   items:
   - name: Overview
@@ -1002,14 +988,8 @@ items:
       items:
       - name: namespace
         href: language-reference/keywords/namespace.md
-      - name: using
-        items:
-        - name: Contexts for using
-          href: language-reference/keywords/using.md
-        - name: using Directive
-          href: language-reference/keywords/using-directive.md
-        - name: using Statement
-          href: language-reference/keywords/using-statement.md
+      - name: using directive
+        href: language-reference/keywords/using-directive.md
       - name: extern alias
         href: language-reference/keywords/extern-alias.md
     - name: Generic Type Constraint Keywords
@@ -1205,6 +1185,9 @@ items:
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
+    - name: using statement
+      displayName: dispose, disposable, await using, using declaration
+      href: language-reference/statements/using.md
     - name: yield statement
       displayName: iterator, yield break, yield return
       href: language-reference/statements/yield.md

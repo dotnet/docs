@@ -167,7 +167,7 @@ WPF in .NET 7 includes numerous bug fixes as well as performance and accessibili
 
 ### Orleans
 
-Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [What's new in Orleans 7.0](../../orleans/whats-new-in-orleans.md).
+Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [Migrate from Orleans 3.x to 7.0](../../orleans/migration-guide.md).
 
 ### .NET Upgrade Assistant and CoreWCF
 

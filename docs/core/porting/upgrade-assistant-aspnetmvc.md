@@ -6,6 +6,8 @@ ms.date: 11/08/2021
 ---
 # Upgrade an ASP.NET MVC app to .NET 6 with the .NET Upgrade Assistant
 
+For the latest information on updating from ASP.NET Framework to ASP.NET Core, see [Upgrade from ASP.NET Framework to ASP.NET Core](/aspnet/core/migration/proper-to-2x/)
+
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework ASP.NET MVC apps to .NET 6. This article provides:
 
 - A demonstration of how to run the tool against a .NET Framework ASP.NET MVC app

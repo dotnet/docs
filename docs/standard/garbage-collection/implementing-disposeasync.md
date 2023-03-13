@@ -108,7 +108,7 @@ With the `DisposeAsyncCore()` method, the same logical approach is followed. If 
 
 ## Using async disposable
 
-To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md) and [using](../../csharp/language-reference/keywords/using-statement.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated and then wrapped in an `await using` statement.
+To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md) and [using](../../csharp/language-reference/statements/using.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated and then wrapped in an `await using` statement.
 
 :::code language="csharp" source="snippets/dispose-async/ExampleConfigureAwaitProgram.cs":::
 
@@ -119,7 +119,7 @@ For situations where the usage of `ConfigureAwait` is not needed, the `await usi
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingStatementProgram.cs":::
 
-Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/language-reference/keywords/using-statement.md).
+Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/language-reference/statements/using.md).
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingDeclarationProgram.cs":::
 

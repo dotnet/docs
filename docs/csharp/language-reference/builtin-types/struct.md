@@ -16,7 +16,7 @@ A *structure type* (or *struct type*) is a [value type](value-types.md) that can
 
 [!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
 
-`ref struct` types and `readonly ref struct` types are covered in the article on [ref struct types](ref-struct.md).
+For information about `ref struct` and `readonly ref struct` types, see the [ref structure types](ref-struct.md) article.
 
 Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. For structure-type variables, an instance of the type is copied. For more information, see [Value types](value-types.md).
 

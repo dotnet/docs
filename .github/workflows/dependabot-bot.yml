@@ -46,6 +46,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch' || github.repository_owner == 'dotnet'
         uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
         with:
+          branch: create-dependabotconfig-pull-request/patch
           title: "Update dependabot.yml - automatically."
           body: ".NET dependabot-bot automated PR. 🤖"
           commit-message: ".NET dependabot-bot automated PR."

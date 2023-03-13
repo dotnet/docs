@@ -76,7 +76,7 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - [Use null propagation (IDE0031)](ide0031.md)
   - [Use 'is null' check (IDE0041)](ide0041.md)
 - [File header preferences](ide0073.md)
-- [Namespace naming preferences](ide0130.md)
+- [Namespace naming preferences (IDE0130)](ide0130.md)
 
 ## C# style rules
 

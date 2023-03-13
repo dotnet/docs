@@ -36,7 +36,7 @@ By default, Orleans will serialize your type by encoding its full name. You can 
 
 Members defined in a record's primary constructor have implicit ids by default. In other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that breaks compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
-```cs
+```csharp
 [GenerateSerializer]
 public record MyRecord(string A, string B)
 {

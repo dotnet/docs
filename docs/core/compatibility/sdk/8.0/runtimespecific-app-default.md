@@ -16,7 +16,7 @@ This is a breaking change in the following situations:
   > [!NOTE]
   > Some publish properties, like `PublishTrimmed`, `PublishSingleFile`, and `PublishAot`, currently require `SelfContained` to work. If you use these properties, you'll need to add the `SelfContained` property.
 
-- For Blazor WebAssembly apps, because they relied on the previous behavior. However, the Blazor WASM team may side-step this breaking change in their SDK by adding `SelfContained` automatically for all apps, so Blazor customers shouldn't be affected.
+- For Blazor WebAssembly (Wasm) apps, because they relied on the previous behavior. However, due to this breaking change, the Blazor Wasm SDK might automatically add `SelfContained` for all apps. If so, these apps won't be affected.
 
 ## Previous behavior
 

@@ -27,7 +27,6 @@ There are two ways to download and install `dotnet-counters`:
   | OS  | Platform |
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [Arm](https://aka.ms/dotnet-counters/win-arm) \| [Arm-x64](https://aka.ms/dotnet-counters/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-counters/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-counters/linux-x64) \| [Arm](https://aka.ms/dotnet-counters/linux-arm) \| [Arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-counters/linux-musl-arm64) |
 
 > [!NOTE]

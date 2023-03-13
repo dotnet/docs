@@ -1,15 +1,15 @@
 ---
 title: Configuration providers
-description: Learn how the Configuration provider API is used to configure .NET applications.
+description: Discover how to configure .NET apps using the configuration provider API.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 03/13/2023
 ms.topic: reference
 ---
 
 # Configuration providers in .NET
 
-Configuration in .NET is possible with configuration providers. There are several types of providers that rely on various configuration sources. This article details all of the different configuration providers and their corresponding sources.
+Configuration in .NET is possible with configuration providers. Several types of providers rely on various configuration sources. This article details all of the different configuration providers and their corresponding sources.
 
 - [File configuration provider](#file-configuration-provider)
 - [Environment variable configuration provider](#environment-variable-configuration-provider)

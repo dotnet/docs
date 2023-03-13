@@ -3,7 +3,7 @@ title: Dependency injection guidelines
 description: Learn various dependency injection guidelines and best practices for .NET application development.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/03/2022
+ms.date: 03/13/2023
 ms.topic: conceptual
 ---
 

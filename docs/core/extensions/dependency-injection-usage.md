@@ -3,7 +3,7 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/05/2023
+ms.date: 03/13/2023
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---

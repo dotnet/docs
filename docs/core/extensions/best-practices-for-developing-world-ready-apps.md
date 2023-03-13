@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Best practices for developing world-ready applications"
 title: "Best Practices for Developing World-Ready Applications"
-ms.date: 08/11/2021
+ms.date: 03/13/2023
 helpviewer_keywords:
   - "global applications, best practices"
   - "world-ready applications, best practices"

@@ -3,7 +3,7 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET.
 ms.author: dapine
-ms.date: 01/23/2023
+ms.date: 03/13/2023
 ---
 
 # Options pattern guidance for .NET library authors

@@ -3,7 +3,7 @@ title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/06/2023
+ms.date: 03/13/2023
 ms.topic: overview
 ---
 

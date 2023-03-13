@@ -3,7 +3,7 @@ title: Logging
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 11/03/2022
+ms.date: 03/13/2023
 ---
 
 # Logging in .NET

@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 03/13/2023
 ms.topic: overview
 ---
 

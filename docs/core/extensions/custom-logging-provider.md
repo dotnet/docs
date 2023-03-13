@@ -3,7 +3,7 @@ title: Implement a custom logging provider
 description: Learn how to implement a custom logging provider in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/16/2023
+ms.date: 03/13/2023
 ms.topic: how-to
 ---
 

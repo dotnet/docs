@@ -122,7 +122,5 @@ For more information, see:
 
 ## See also
 
-- [C# Programming Guide](../../index.md)
-- [Reflection (C#)](../reflection.md)
 - [Attributes](../../../../standard/attributes/index.md)
 - [Using Attributes in C#](../../../tutorials/attributes.md)

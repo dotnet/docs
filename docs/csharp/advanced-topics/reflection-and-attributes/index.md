@@ -56,5 +56,4 @@ For more information:
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)

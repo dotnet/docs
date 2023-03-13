@@ -320,6 +320,14 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Reflection and Attributes
+    items:
+    - name: Overview
+      href: advanced-topics/reflection-and-attributes/index.md
+    - name: "How to query an assembly's metadata with Reflection and LINQ"
+      href: advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md
+    - name: Generics and Reflection
+      href: advanced-topics/reflection-and-attributes/generics-and-reflection.md
   - name: Expression trees
     items:
     - name: Overview
@@ -551,10 +559,6 @@ items:
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
           - name: "How to use expression trees to build dynamic queries"
             href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
-        - name: LINQ and Reflection
-          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
-        - name: "How to query an assembly's metadata with Reflection (LINQ)"
-          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: LINQ and File Directories
           items:
           - name: Overview
@@ -583,8 +587,6 @@ items:
         href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
       - name: Visual Studio IDE and Tools Support for LINQ
         href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
-    - name: Reflection
-      href: programming-guide/concepts/reflection.md
     - name: Serialization (C#)
       items:
       - name: Overview
@@ -802,8 +804,6 @@ items:
       href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
     - name: Generics in the Run Time
       href: programming-guide/generics/generics-in-the-run-time.md
-    - name: Generics and Reflection
-      href: programming-guide/generics/generics-and-reflection.md
     - name: Generics and Attributes
       href: programming-guide/generics/generics-and-attributes.md
   - name: File System and the Registry

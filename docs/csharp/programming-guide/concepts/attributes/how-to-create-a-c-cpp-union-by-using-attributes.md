@@ -47,7 +47,7 @@ struct TestExplicit
     [System.Runtime.InteropServices.FieldOffset(0)]
     public int i1;
 
-    [System.Runtime.InteropServices.FieldOffset(0)]
+    [System.Runtime.InteropServices.FieldOffset(4)]
     public int i2;
 
     [System.Runtime.InteropServices.FieldOffset(8)]
@@ -61,7 +61,7 @@ struct TestExplicit
 }
 ```
 
-The two integer fields, `i1` and `i2`, share the same memory locations as `lg`. This sort of control over struct layout is useful when using platform invocation.
+The two integer fields, `i1` and `i2` combined, share the same memory locations as `lg`. Either `lg` uses the first four bytes, or `i1` uses the first 2 bytes and `i2` uses the next 2 bytes. This sort of control over struct layout is useful when using platform invocation.
 
 ## See also
 

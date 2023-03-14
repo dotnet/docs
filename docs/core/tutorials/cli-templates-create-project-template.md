@@ -44,6 +44,8 @@ In this part of the series you'll learn how to:
 * Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
 * Open a terminal and navigate to the _working\templates_ folder.
 
+[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
+
 ## Create a project template
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that replaces the standard "Hello World" console output with one that runs asynchronously.

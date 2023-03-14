@@ -8,7 +8,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "lock keyword [C#]"
 ---
-# lock statement - ensure exclusive access to a shared resource.
+# lock statement - ensure exclusive access to a shared resource
 
 The `lock` statement acquires the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and waits until the lock is released. The `lock` statement ensures that a single thread has exclusive access to that object.
 

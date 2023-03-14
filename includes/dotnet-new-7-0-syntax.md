@@ -7,7 +7,7 @@ ms.topic: include
 
 Starting with the .NET 7 SDK, the `dotnet new` syntax has changed:
 
-- The `--list`, `--search`, `--install`, and `--uninstall` options became `list`, `search`, `install` and `uninstall` subcommands.
+- The `--list`, `--search`, `--install`, and `--uninstall` options became `list`, `search`, `install`, and `uninstall` subcommands.
 - The `--update-apply` option became the `update` subcommand.
 - To use `--update-check`, use the `update` subcommand with the `--check-only` option.
 

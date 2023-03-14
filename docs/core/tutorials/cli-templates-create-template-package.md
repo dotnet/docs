@@ -30,11 +30,13 @@ In this part of the series you'll learn how to:
 
 * Open a terminal and navigate to the _working\\_ folder.
 
+[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
+
 ## Create a template package project
 
 A template package is one or more templates packaged into a NuGet package. When you install or uninstall a template package, all templates contained in the package are added or removed, respectively. The previous parts of this tutorial series only worked with individual templates. To share a non-packed template, you have to copy the template folder and install via that folder. Because a template package can have more than one template in it, and is a single file, sharing is easier.
 
-Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new --install` command supports installing template package from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
+Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new install` command supports installing template package from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
@@ -96,7 +98,7 @@ The settings under `<PropertyGroup>` in the XML snippet are broken into three gr
 The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 > [!NOTE]
-> To ensure that the template package appears in `dotnet new --search` results, set `<PackageType>` to `Template`.
+> To ensure that the template package appears in `dotnet new search` results, set `<PackageType>` to `Template`.
 
 In the second group, the `<TargetFramework>` setting ensures that MSBuild executes properly when you run the pack command to compile and pack the project.
 
@@ -177,7 +179,7 @@ Currently installed items:
       dotnet new uninstall AdatumCorporation.Utility.Templates
 ```
 
-Run `dotnet new uninstall  AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
+Run `dotnet new uninstall AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
 
 Congratulations! You've installed and uninstalled a template package.
 

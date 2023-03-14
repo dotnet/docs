@@ -32,7 +32,7 @@ using Project = PC.MyCompany.Project;
 You can use the `global` modifier on a *using alias directive*.
 
 > [!NOTE]
-> The `using` keyword is also used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *using statement*, see [using Statement](using-statement.md).
+> The `using` keyword is also used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *using statement*, see [using statement](../statements/using.md).
 
 The scope of a `using` directive without the `global` modifier is the file in which it appears.
 
@@ -176,10 +176,9 @@ For more information on the *global using* modifier, see the [global usings feat
 
 ## See also
 
+- [C# reference](../index.md)
+- [C# keywords](index.md)
+- [Namespaces](../../fundamentals/types/namespaces.md)
 - [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)
 - [Style rule IDE0065 - 'using' directive placement](../../../fundamentals/code-analysis/style-rules/ide0065.md)
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Namespaces](../../fundamentals/types/namespaces.md)
-- [using Statement](using-statement.md)
+- [`using` statement](../statements/using.md)

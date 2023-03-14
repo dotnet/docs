@@ -56,7 +56,7 @@ Complete the following steps in your preferred development environment:
 
     In the preceding code:
 
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
         - `GpioController` is instantiated with no parameters, indicating that it should detect which hardware platform it's running on and use the [logical pin numbering scheme](/dotnet/api/system.device.gpio.pinnumberingscheme).
     - GPIO pin 21 is opened with `PinMode.InputPullUp`.
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.

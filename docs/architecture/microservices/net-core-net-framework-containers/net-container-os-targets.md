@@ -29,7 +29,7 @@ When you add the image name to your Dockerfile file, you can select the operatin
 | Image | Comments |
 |-------|----------|
 | mcr.microsoft.com/dotnet/runtime:7.0 | .NET 7 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. |
-| mcr.microsoft.com/dotnet/aspnet:7.0 | ASP.NET Core 6.0 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. <br/> The aspnetcore image has a few optimizations for ASP.NET Core. |
+| mcr.microsoft.com/dotnet/aspnet:7.0 | ASP.NET Core 7.0 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. <br/> The aspnetcore image has a few optimizations for ASP.NET Core. |
 | mcr.microsoft.com/dotnet/aspnet:7.0-bullseye-slim | .NET 7 runtime-only on Linux Debian distro |
 | mcr.microsoft.com/dotnet/aspnet:7.0-nanoserver-1809 | .NET 7 runtime-only on Windows Nano Server (Windows Server version 1809) |
 

@@ -30,7 +30,6 @@ There are two ways to download and install `dotnet-dump`:
   | OS  | Platform |
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [Arm](https://aka.ms/dotnet-dump/win-arm) \| [Arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [Arm](https://aka.ms/dotnet-dump/linux-arm) \| [Arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
 
 > [!NOTE]

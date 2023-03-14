@@ -67,9 +67,4 @@ The two integer fields, `i1` and `i2` combined, share the same memory locations 
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>
-- [C# Programming Guide](../../index.md)
-- [Attributes](../../../../standard/attributes/index.md)
-- [Reflection (C#)](../reflection.md)
-- [Attributes (C#)](index.md)
-- [Creating Custom Attributes (C#)](creating-custom-attributes.md)
-- [Accessing Attributes by Using Reflection (C#)](accessing-attributes-by-using-reflection.md)
+- [Attributes](../../../standard/attributes/index.md)

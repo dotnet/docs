@@ -63,9 +63,5 @@ class SampleClass
 ## See also
 
 - <xref:System.Reflection>
-- [C# Programming Guide](../../index.md)
-- [Writing Custom Attributes](../../../../standard/attributes/writing-custom-attributes.md)
-- [Reflection (C#)](../reflection.md)
-- [Attributes (C#)](./index.md)
-- [Accessing Attributes by Using Reflection (C#)](./accessing-attributes-by-using-reflection.md)
-- [AttributeUsage (C#)](../../../language-reference/attributes/general.md)
+- [Writing Custom Attributes](../../../standard/attributes/writing-custom-attributes.md)
+- [AttributeUsage (C#)](../../language-reference/attributes/general.md)

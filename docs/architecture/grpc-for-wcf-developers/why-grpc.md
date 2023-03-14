@@ -44,6 +44,18 @@ gRPC allows clients to specify a maximum time for an RPC to finish. If the speci
 
 gRPC is implicitly secure when it's using HTTP/2 over a TLS end-to-end encrypted connection. Support for client certificate authentication (see [chapter 6](security.md)) further increases security and trust between client and server.
 
+## Comparison with CoreWCF
+
+A notable alternative to gRPC for replacing WCF services when migrating to .NET is [CoreWCF](https://github.com/corewcf/corewcf). Both gRPC and CoreWCF are Microsoft endorsed paths forward for WCF applications and each comes with its own benefits and drawbacks.
+
+CoreWCF is a community-owned .NET Foundation project supported by Microsoft that implements WCF server APIs for .NET. CoreWCF is an effort to allow existing WCF services to work with minimal changes on .NET. Your Data Contracts for WCF are unchanged with CoreWCF, and it supports many of the bindings and APIs from WCF. The main differences are around the patterns for starting WCF services, and not all configuration options are available (some configuration must now be done in code).
+
+Services and interfaces can often migrate with few changes. Because of this, a key benefit of CoreWCF is its very high compatibility with WCF. Where changes have been made, they are to adapt to the programming style of modern .NET, for example hosting now through ASP.NET Core, and APIs now use the `Task` based async patterns usable with `await` rather than the older BeginXXX / EndXXX pattern.
+
+On the other hand, gRPC is a modern remote communication solution with a number of features, as discussed previously. Benefits of using gRPC include better interoperability across languages, its relatively simple modern API, and a broad community ecosystem.
+
+When deciding whether to use CoreWCF or gRPC to migrate a WCF application to .NET, CoreWCF is typically a better fit if the goal is to migrate the application with minimal changes whereas gRPC may be a better fit if the goal is to modernize the application while retargeting to .NET. The remainder of this guide focuses on that modernization with gRPC.
+
 >[!div class="step-by-step"]
 >[Previous](network-protocols.md)
 >[Next](protocol-buffers.md)

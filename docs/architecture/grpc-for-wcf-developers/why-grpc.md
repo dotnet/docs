@@ -52,7 +52,7 @@ CoreWCF is a community-owned .NET Foundation project supported by Microsoft that
 
 Services and interfaces can often migrate with few changes. Because of this, a key benefit of CoreWCF is its very high compatibility with WCF. Where changes have been made, they are to adapt to the programming style of modern .NET, for example hosting now through ASP.NET Core, and APIs now use the `Task` based async patterns usable with `await` rather than the older BeginXXX / EndXXX pattern.  
 
-On the other hand, gRPC is a modern remote communication solution with a number of features, as discussed previously. Benefits of using gRPC include its interoperability across languages, its relatively simple modern API, and a broad community ecosystem.
+On the other hand, gRPC is a modern remote communication solution with a number of features, as discussed previously. Benefits of using gRPC include better interoperability across languages, its relatively simple modern API, and a broad community ecosystem.
 
 When deciding whether to use CoreWCF or gRPC to migrate a WCF application to .NET, CoreWCF is typically a better fit if the goal is to migrate the application with minimal changes whereas gRPC may be a better fit if the goal is to modernize the application while retargeting to .NET. The remainder of this guide focuses on that modernization with gRPC.
 

@@ -24,7 +24,7 @@ We introduced QUIC implementation in .NET 5 in `System.Net.Quic` library. Howeve
 
 > [!NOTE]
 >
-> For now, the APIs are published with [preview feature](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
+> In .NET 7.0, the APIs are published with [preview feature](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
 
 From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from MsQuic and documented in [HTTP/3 Platform dependencies](https://learn.microsoft.com/dotnet/core/extensions/httpclient-http3#platform-dependencies). In short, MsQuic library is shipped as part of .NET for Windows. But for Linux, `libmsquic` must be manually installed via an appropriate package manager. For the other platforms, it is still possible to build MsQuic manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
 

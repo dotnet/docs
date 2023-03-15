@@ -7,8 +7,7 @@ ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 
 # The .NET Portability Analyzer
 
-> [!NOTE]
-> We're in the process of deprecating API Port in favor of integrating binary analysis directly into [.NET Upgrade Assistant](https://github.com/dotnet/upgrade-assistant). In the upcoming months, we're going to shut down the backend service of API Port, which will require using the tool offline. For more information, see [GitHub: .NET API Port repository](https://github.com/microsoft/dotnet-apiport/blob/dev/docs/Console/README.md#run-the-tool-in-an-offline-mode).*
+[!INCLUDE[](~/includes/deprecating-api-port.md)]
 
 Want to make your libraries support multi-platform? Want to see how much work is required to make your .NET Framework application run on .NET Core? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable on your specified targeted .NET platforms. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), which analyzes one assembly per project, and as an [ApiPort console app](https://aka.ms/apiportdownload), which analyzes assemblies by specified files or directory.
 

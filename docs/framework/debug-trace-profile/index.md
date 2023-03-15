@@ -37,10 +37,10 @@ Describes managed debugging assistants (MDAs), which are debugging aids that wor
   
 [Enhancing Debugging with the Debugger Display Attributes](enhancing-debugging-with-the-debugger-display-attributes.md)\
 Describes how the developer of a type can specify what that type will look like when it is displayed in a debugger.
- 
+
 [Runtime Profiling](runtime-profiling.md)\
 Learn how to gather information about application performance.
-  
+
 [Performance Counters](performance-counters.md)\
 Describes the counters that you can use to track the performance of an application.  
   

@@ -1,6 +1,6 @@
 ---
 title: Configuration providers
-description: Discover how to configure .NET apps using the configuration provider API.
+description: Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

@@ -90,5 +90,6 @@ Cloudflare hosts a site for HTTP/3 which can be used to test the client against 
 
 - <xref:System.Net.Http.HttpClient>
 - [HTTP/3 support in Kestrel][http3Kestrel]
+- [QUIC support in .NET](../../fundamentals/networking/quic/quic-overview.md)
 
 [http3Kestrel]: /aspnet/core/fundamentals/servers/kestrel/http3

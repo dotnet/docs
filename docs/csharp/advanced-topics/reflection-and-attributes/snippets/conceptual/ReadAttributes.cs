@@ -9,21 +9,18 @@
 ]
 public class AuthorAttribute : System.Attribute
 {
-    string name;
-    public double version;
+    string Name;
+    public double Version;
 
     public AuthorAttribute(string name)
     {
-        this.name = name;
+        Name = name;
 
         // Default value.
-        version = 1.0;
+        Version = 1.0;
     }
 
-    public string GetName()
-    {
-        return name;
-    }
+    public string GetName() => Name;
 }
 // </DefineCustomAttribute>
 
@@ -42,7 +39,7 @@ public class SecondClass
 
 // Class with multiple Author attributes.
 // <MultipleAuthors>
-[Author("P. Ackerman"), Author("R. Koch", version = 2.0)]
+[Author("P. Ackerman"), Author("R. Koch", Version = 2.0)]
 public class ThirdClass
 {
     // ...
@@ -68,10 +65,9 @@ class TestAuthorAttribute
         // Displaying output.
         foreach (System.Attribute attr in attrs)
         {
-            if (attr is AuthorAttribute)
+            if (attr is AuthorAttribute a)
             {
-                AuthorAttribute a = (AuthorAttribute)attr;
-                System.Console.WriteLine($"   {a.GetName()}, version {a.version:f}");
+                System.Console.WriteLine($"   {a.GetName()}, version {a.Version:f}");
             }
         }
     }
@@ -87,7 +83,7 @@ class TestAuthorAttribute
 // </DefineAndReadAttribute>
 
 // <SampleWithVersion>
-[Author("P. Ackerman", version = 1.1)]
+[Author("P. Ackerman", Version = 1.1)]
 class SampleClass
 {
     // P. Ackerman's code goes here...

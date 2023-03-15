@@ -7,21 +7,21 @@ ms.date: 03/15/2023
 
 # Define and read custom attributes
 
-Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to various targets. Consider the `[Obsolete]` attribute. It can be applied to classes, structs, methods, constructors, and more. It _declares_ that the element is obsolete. It's then up to the C# compiler to look for this attribute, and do some action in response.
+Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to various targets. Consider the <xref:System.ObsoleteAttribute>. It can be applied to classes, structs, methods, constructors, and more. It _declares_ that the element is obsolete. It's then up to the C# compiler to look for this attribute, and do some action in response.
 
 In this tutorial, you learn how to add attributes to your code, how to create and use your own attributes, and how to use some attributes that are built into .NET.
 
 ## Prerequisites
 
-You need to set up your machine to run .NET core. You can find the installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. You need to install your favorite code editor. The following descriptions use [Visual Studio Code](https://code.visualstudio.com/), which is an open source, cross platform editor. However, you can use whatever tools you're comfortable with.
+You need to set up your machine to run .NET. You can find the installation instructions on the [.NET Downloads](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, macOS, or in a Docker container. You need to install your favorite code editor. The following descriptions use [Visual Studio Code](https://code.visualstudio.com), which is an open-source, cross-platform editor. However, you can use whatever tools you're comfortable with.
 
-## Create the Application
+## Create the app
 
-Now that you've installed all the tools, create a new .NET Core application. To use the command line generator, execute the following command in your favorite shell:
+Now that you've installed all the tools, create a new .NET console app. To use the command line generator, execute the following command in your favorite shell:
 
 `dotnet new console`
 
-This command creates bare-bones .NET core project files. You run `dotnet restore` to restore the dependencies needed to compile this project.
+This command creates bare-bones .NET project files. You run `dotnet restore` to restore the dependencies needed to compile this project.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 

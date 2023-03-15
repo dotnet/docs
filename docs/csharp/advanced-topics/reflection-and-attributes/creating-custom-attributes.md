@@ -15,13 +15,13 @@ You can create your own custom attributes by defining an attribute class, a clas
 ]
 public class AuthorAttribute : System.Attribute
 {
-    private string name;
-    public double version;
+    private string Name;
+    public double Version;
 
     public AuthorAttribute(string name)
     {
-        this.name = name;
-        version = 1.0;
+        Name = name;
+        Version = 1.0;
     }
 }
 ```

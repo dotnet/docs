@@ -10,15 +10,17 @@ The fact that you can define custom attributes and place them in your source cod
 An attribute specification such as:
 
 ```csharp
-[Author("P. Ackerman", version = 1.1)]
-class SampleClass
+[Author("P. Ackerman", Version = 1.1)]
+class SampleClass { }
 ```
 
 is conceptually equivalent to the following code:
 
 ```csharp
-Author anonymousAuthorObject = new Author("P. Ackerman");
-anonymousAuthorObject.version = 1.1;
+var anonymousAuthorObject = new Author("P. Ackerman")
+{
+    Version = 1.1
+};
 ```
 
 However, the code isn't executed until `SampleClass` is queried for attributes. Calling `GetCustomAttributes` on `SampleClass` causes an `Author` object to be constructed and initialized. If the class has other attributes, other attribute objects are constructed similarly. `GetCustomAttributes` then returns the `Author` object and any other attribute objects in an array. You can then iterate over this array, determine what attributes were applied based on the type of each array element, and extract information from the attribute objects.

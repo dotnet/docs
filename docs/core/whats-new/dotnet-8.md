@@ -163,10 +163,10 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 | New API | Description|
 | - | - |
 | <xref:System.ComponentModel.DataAnnotations.RequiredAttribute.DisallowAllDefaultValues?displayProperty=nameWithType> | Validates that structs don't equal their default values. |
-| <xref:System.ComponentModel.DataAnnotations.RangeAttribute.MinimumIsExclusive?displayProperty=nameWithType> and <xref:System.ComponentModel.DataAnnotations.RangeAttribute.MaximumIsExclusive?displayProperty=nameWithType> | Specifies whether bounds are included in the allowable range. |
+| <xref:System.ComponentModel.DataAnnotations.RangeAttribute.MinimumIsExclusive?displayProperty=nameWithType><br/><xref:System.ComponentModel.DataAnnotations.RangeAttribute.MaximumIsExclusive?displayProperty=nameWithType> | Specifies whether bounds are included in the allowable range. |
 | <xref:System.ComponentModel.DataAnnotations.LengthAttribute?displayProperty=nameWithType> | Specifies both lower and upper bounds for strings or collections. For example, `[Length(10, 20)]` requires at least 10 elements and at most 20 elements in a collection. |
 | <xref:System.ComponentModel.DataAnnotations.Base64StringAttribute?displayProperty=nameWithType> | Validates that a string is a valid Base64 representation. |
-| <xref:System.ComponentModel.DataAnnotations.AllowedValuesAttribute?displayProperty=nameWithType> and <xref:System.ComponentModel.DataAnnotations.DeniedValuesAttribute?displayProperty=nameWithType> | Specify allow lists and deny lists, respectively. For example, `[AllowedValues("apple", "banana", "mango")]`. |
+| <xref:System.ComponentModel.DataAnnotations.AllowedValuesAttribute?displayProperty=nameWithType><br/><xref:System.ComponentModel.DataAnnotations.DeniedValuesAttribute?displayProperty=nameWithType> | Specify allow lists and deny lists, respectively. For example, `[AllowedValues("apple", "banana", "mango")]`. |
 
 ## Introspection support for function pointers
 
@@ -177,52 +177,63 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 The new functionality is currently implemented only in the CoreCLR runtime and <xref:System.Reflection.MetadataLoadContext>.
 
-New APIs have been added to <xref:System.Type?displayProperty=fullName>, such as <xref:System.Type.IsFunctionPointer>, and to the <xref:System.Reflection.PropertyInfo?displayProperty=fullName>, <xref:System.Reflection.FieldInfo?displayProperty=fullName>, and <xref:System.Reflection.ParameterInfo?displayProperty=fullName>. The following code shows how to use some of the new APIs for reflection.
+New APIs have been added to <xref:System.Type?displayProperty=fullName>, such as <xref:System.Type.IsFunctionPointer>, and to <xref:System.Reflection.PropertyInfo?displayProperty=fullName>, <xref:System.Reflection.FieldInfo?displayProperty=fullName>, and <xref:System.Reflection.ParameterInfo?displayProperty=fullName>. The following code shows how to use some of the new APIs for reflection.
 
 ```csharp
-// Sample class that contains a function pointer field:
-public unsafe class MyClass
+// Sample class that contains a function pointer field.
+public unsafe class UClass
 {
     public delegate* unmanaged[Cdecl, SuppressGCTransition]<in int, void> _fp;
 }
 
-FieldInfo fieldInfo = typeof(MyClass).GetField(nameof(MyClass._fp));
+// ...
 
-// Obtain the function pointer type from a field. This used to be the 'IntPtr' type, now it's 'Type':
+FieldInfo fieldInfo = typeof(UClass).GetField(nameof(UClass._fp));
+
+// Obtain the function pointer type from a field.
 Type fpType = fieldInfo.FieldType;
 
-// New methods to determine if a type is a function pointer:
-Console.WriteLine(fpType.IsFunctionPointer); // True
-Console.WriteLine(fpType.IsUnmanagedFunctionPointer); // True
+// New methods to determine if a type is a function pointer.
+Console.WriteLine($"IsFunctionPointer: {fpType.IsFunctionPointer}");
+Console.WriteLine($"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
 
-// New methods to obtain the return and parameter types:
-Console.WriteLine($"Return type: {fpType.GetFunctionPointerReturnType()}"); // System.Void
+// New methods to obtain the return and parameter types.
+Console.WriteLine($"Return type: {fpType.GetFunctionPointerReturnType()}");
 
 foreach (Type parameterType in fpType.GetFunctionPointerParameterTypes())
 {
-    Console.WriteLine($"Parameter type: {parameterType}"); // System.Int32&
+    Console.WriteLine($"Parameter type: {parameterType}");
 }
 
-// Access to custom modifiers and calling conventions requires a "modified type":
+// Access to custom modifiers and calling conventions requires a "modified type".
 Type modifiedType = fieldInfo.GetModifiedFieldType();
 
-// A modified type forwards most members to its underlying type which can be obtained with Type.UnderlyingSystemType:
+// A modified type forwards most members to its underlying type.
 Type normalType = modifiedType.UnderlyingSystemType;
 
-// New methods to obtain the calling conventions:
+// New method to obtain the calling conventions.
 foreach (Type callConv in modifiedType.GetFunctionPointerCallingConventions())
 {
     Console.WriteLine($"Calling convention: {callConv}");
-    // System.Runtime.CompilerServices.CallConvSuppressGCTransition
-    // System.Runtime.CompilerServices.CallConvCdecl
 }
 
-// New methods to obtain the custom modifiers:
+// New method to obtain the custom modifiers.
 foreach (Type modreq in modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers())
 {
-    Console.WriteLine($"Required modifier for first parameter: {modreq }");
-    // System.Runtime.InteropServices.InAttribute
+    Console.WriteLine($"Required modifier for first parameter: {modreq}");
 }
+```
+
+The previous example produces the following output:
+
+```txt
+IsFunctionPointer: True
+IsUnmanagedFunctionPointer: True
+Return type: System.Void
+Parameter type: System.Int32&
+Calling convention: System.Runtime.CompilerServices.CallConvSuppressGCTransition
+Calling convention: System.Runtime.CompilerServices.CallConvCdecl
+Required modifier for first parameter: System.Runtime.InteropServices.InAttribute
 ```
 
 ## Native AOT
@@ -233,10 +244,10 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 
 Also, the sizes of native AOT apps on Linux are now up to 50% smaller. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
-| Operating system                      | .NET 7  | .NET 8 Preview 1 |
-| ------------------------------------- | ------- | ---------------- |
-| Linux x64 (with -p:StripSymbols=true) | 3.76 MB | 1.84 MB          |
-| Windows x64                           | 2.85 MB | 1.77 MB          |
+| Operating system                        | .NET 7  | .NET 8 Preview 1 |
+| --------------------------------------- | ------- | ---------------- |
+| Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB          |
+| Windows x64                             | 2.85 MB | 1.77 MB          |
 
 ## Code generation
 

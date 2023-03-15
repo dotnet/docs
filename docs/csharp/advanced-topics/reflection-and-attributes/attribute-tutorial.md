@@ -19,7 +19,9 @@ You need to set up your machine to run .NET. You can find the installation instr
 
 Now that you've installed all the tools, create a new .NET console app. To use the command line generator, execute the following command in your favorite shell:
 
-`dotnet new console`
+```dotnetcli
+dotnet new console
+```
 
 This command creates bare-bones .NET project files. You run `dotnet restore` to restore the dependencies needed to compile this project.
 

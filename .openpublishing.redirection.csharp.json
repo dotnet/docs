@@ -1327,12 +1327,28 @@
             "redirect_url": "/dotnet/csharp/asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/index.md",
+            "redirect_url": "/dotnet/csharp/advanced-concepts/reflection-and-attributes"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/attributeusage.md",
             "redirect_url": "/dotnet/csharp/language-reference/attributes/general"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/common-attributes.md",
             "redirect_url": "/dotnet/csharp/language-reference/attributes/global"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/creating-custom-attributes.md",
+            "redirect_url": "/dotnet/csharp/advanced-concepts/reflection-and-attributes/creating-custom-attributes"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md",
+            "redirect_url": "/dotnet/csharp/advanced-concepts/reflection-and-attributes/accessing-attributes-by-using-reflection"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md",
+            "redirect_url": "/dotnet/csharp/advanced-concepts/reflection-and-attributes/how-to-create-a-c-cpp-union-by-using-attributes"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/caller-information.md",
@@ -1719,6 +1735,11 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-project-an-object-graph.md",
             "redirect_url": "/dotnet/standard/linq/project-object-graph",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq",
             "redirect_document_id": true
         },
         {
@@ -2205,6 +2226,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/reflection.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
             "redirect_url": "/dotnet/api/system.threading.threadpool.queueuserworkitem"
         },
@@ -2283,6 +2309,16 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/generics/benefits-of-generics.md",
             "redirect_url": "/dotnet/csharp/programming-guide/generics"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/generics/generics-and-attributes.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/generics-and-attributes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/generics/generics-and-reflection.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/generics-and-reflection",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
@@ -2883,6 +2919,10 @@
         {
             "source_path_from_root": "/docs/csharp/tuples.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-tuples"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/attributes.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/attribute-tutorial"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/default-interface-members-versions.md",

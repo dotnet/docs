@@ -1,5 +1,5 @@
 ﻿
-namespace generics;
+namespace GenericsExamples;
 
 //<CustomAttribute>
 class CustomAttribute : Attribute

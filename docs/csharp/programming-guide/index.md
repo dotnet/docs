@@ -71,7 +71,7 @@ This section provides detailed information on key C# language features and featu
   
  [Assemblies in .NET](../../standard/assembly/index.md)  
   
- [Attributes](./concepts/attributes/index.md)  
+ [Attributes](/dotnet/csharp/advanced-concepts/reflection-and-attributes)  
   
  [Collections](./concepts/collections.md)  
   
@@ -79,7 +79,7 @@ This section provides detailed information on key C# language features and featu
   
  [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
   
- [Reflection](./concepts/reflection.md)  
+ [Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/)  
   
 ## See also
 

@@ -31,11 +31,13 @@ From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https
 ## API Overview
 
 [`System.Net.Quic`](https://learn.microsoft.com/dotnet/api/system.net.quic?view=net-7.0) brings three major classes that enable usage of QUIC protocol:
+
 - `QuicListener` - server side class for accepting incoming connections.
 - `QuicConnection` - QUIC connection, corresponding to [RFC 9000 Section 5](https://www.rfc-editor.org/rfc/rfc9000#section-5).
 - `QuicStream` - QUIC stream, corresponding to [RFC 9000 Section 2](https://www.rfc-editor.org/rfc/rfc9000#section-2).
 
 But before any usage of these classes, user code should check whether QUIC is currently supported, as `libmsquic` might be missing, or TLS 1.3 might not be supported. For that, both `QuicListener` and `QuicConnection` expose a static property `IsSupported`:
+
 ```C#
 if (QuicListener.IsSupported)
 {
@@ -55,6 +57,7 @@ else
     // Fallback/Error
 }
 ```
+
 Note that, at the moment both these properties are in sync and will report the same value, but that might change in the future. So we recommend to check [`QuicListener.IsSupported`](https://learn.microsoft.com/dotnet/api/system.net.quic.quiclistener.issupported?view=net-7.0) for server-scenarios and [`QuicConnection.IsSupported`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicconnection.issupported?view=net-7.0) for the client ones.
 
 ### QuicListener
@@ -62,6 +65,7 @@ Note that, at the moment both these properties are in sync and will report the s
 [`QuicListener`](https://learn.microsoft.com/dotnet/api/system.net.quic.quiclistener?view=net-7.0) represents a server side class that accepts incoming connections from the clients. The listener is constructed and started with a static method [`QuicListener.ListenAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quiclistener.listenasync?view=net-7.0). The method accepts an instance of [`QuicListenerOptions`](https://learn.microsoft.com/dotnet/api/system.net.quic.quiclisteneroptions?view=net-7.0) class with all the settings necessary to start the listener and accept incoming connections. After that, listener is ready to hand out connections via [`AcceptConnectionAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quiclistener.acceptconnectionasync?view=net-7.0). Connections returned by this method are always fully connected, meaning that the TLS handshake is finished and the connection is ready to be used. Finally, to stop listening and release all resources, [`DisposeAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quiclistener.disposeasync?view=net-7.0) must be called.
 
 The sample usage of `QuicListener`:
+
 ```C#
 using System.Net.Quic;
 
@@ -128,6 +132,7 @@ More details about how this class was designed can be found in the `QuicListener
 When the work with the connection is done, it needs to be closed and disposed. QUIC protocol mandates using an application layer code for immediate closure, see [RFC 9000 Section 10.2](https://www.rfc-editor.org/rfc/rfc9000#section-10.2). For that, [`CloseAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicconnection.closeasync?view=net-7.0) with application layer code can be called or if not, [`DisposeAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicconnection.disposeasync?view=net-7.0) will use the code provided in [`QuicConnectionOptions.DefaultCloseErrorCode`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicconnectionoptions.defaultcloseerrorcode?view=net-7.0#system-net-quic-quicconnectionoptions-defaultcloseerrorcode). Either way, [`DisposeAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicconnection.disposeasync?view=net-7.0) must be called at the end of the work with the connection to fully release all the associated resources.
 
 The sample usage of `QuicConnection`:
+
 ```C#
 using System.Net.Quic;
 
@@ -211,6 +216,7 @@ Another particularity of QUIC stream is ability to explicitly close the writing 
 On top of these methods, `QuicStream` offers two specialized properties to get notified whenever either reading or writing side of the stream has been closed: [`ReadsClosed`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicstream.readsclosed?view=net-7.0) and [`WritesClosed`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicstream.writesclosed?view=net-7.0). Both return a `Task` that completes with its corresponding side getting closed, whether it be success or abort, in which case the `Task` will contain appropriate exception. These properties are useful when the user code needs to know about stream side getting closed without issuing call to `ReadAsync` or `WriteAsync`.
 
 Finally, when the work with the stream is done, it needs to be disposed with [`DisposeAsync`](https://learn.microsoft.com/dotnet/api/system.net.quic.quicstream.disposeasync?view=net-7.0). The dispose will make sure that both reading and/or writing side - depending on the stream type - is closed. If stream hasn't been properly read till the end, dispose will issue an equivalent of `Abort(QuicAbortDirection.Read)`. However, if stream writing side hasn't been closed, it will be gracefully closed as it would be with `CompleteWrites`. The reason for this difference is to make sure that scenarios working with an ordinary `Stream` behave as expected and lead to a successful path. Consider the following example:
+
 ```C#
 // Work done with all different types of streams.
 async Task WorkWithStream(Stream stream)
@@ -232,10 +238,10 @@ async Task WorkWithStream(Stream stream)
 // Open a QuicStream and pass to the common method.
 var quicStream = await connection.OpenOutboundStreamAsync(QuicStreamType.Bidirectional);
 await WorkWithStream(quicStream);
-
 ```
 
 The sample usage of `QuicStream` in client scenario:
+
 ```C#
 // Consider connection from the connection example, open a bidirectional stream.
 await using var stream = await connection.OpenStreamAsync(QuicStreamType.Bidirectional, cancellationToken);
@@ -259,6 +265,7 @@ while (await stream.ReadAsync(buffer, cancellationToken) > 0)
 ```
 
 And the sample usage of `QuicStream` in server scenario:
+
 ```C#
 // Consider connection from the connection example, accept a stream.
 await using var stream = await connection.AcceptStreamAsync(cancellationToken);

@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 03/01/2023
+ms.date: 03/14/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,7 +11,7 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release.
 
-This article has been updated for .NET 8 Preview 1.
+This article has been updated for .NET 8 Preview 2.
 
 > [!IMPORTANT]
 >
@@ -156,6 +156,86 @@ This section covers improvements to the <xref:System.Numerics?displayProperty=fu
 - Hardware intrinsics are now annotated with the `ConstExpected` attribute. This ensures that users are aware when the underlying hardware expects a constant and therefore when a non-constant value may unexpectedly hurt performance.
 - The <xref:System.Numerics.IFloatingPointIeee754%601.Lerp(%600,%600,%600)> `Lerp` API has been added to <xref:System.Numerics.IFloatingPointIeee754%601> and therefore to `float` (<xref:System.Single>), `double` (<xref:System.Double>), and <xref:System.Half>. This API allows a linear interpolation between two values to be performed efficiently and correctly.
 
+## Data validation attributes
+
+The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namespace includes new data validation attributes intended for validation scenarios in cloud-native services. While the pre-existing `DataAnnotations` validators are geared towards typical UI data-entry validation, such as fields on a form, the new attributes are designed to validate non-user-entry data, such as [configuration options](../extensions/options.md#options-validation). In addition to the new attributes, new properties were added to the <xref:System.ComponentModel.DataAnnotations.RangeAttribute> and <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> types.
+
+| New API | Description|
+| - | - |
+| <xref:System.ComponentModel.DataAnnotations.RequiredAttribute.DisallowAllDefaultValues?displayProperty=nameWithType> | Validates that structs don't equal their default values. |
+| <xref:System.ComponentModel.DataAnnotations.RangeAttribute.MinimumIsExclusive?displayProperty=nameWithType><br/><xref:System.ComponentModel.DataAnnotations.RangeAttribute.MaximumIsExclusive?displayProperty=nameWithType> | Specifies whether bounds are included in the allowable range. |
+| <xref:System.ComponentModel.DataAnnotations.LengthAttribute?displayProperty=nameWithType> | Specifies both lower and upper bounds for strings or collections. For example, `[Length(10, 20)]` requires at least 10 elements and at most 20 elements in a collection. |
+| <xref:System.ComponentModel.DataAnnotations.Base64StringAttribute?displayProperty=nameWithType> | Validates that a string is a valid Base64 representation. |
+| <xref:System.ComponentModel.DataAnnotations.AllowedValuesAttribute?displayProperty=nameWithType><br/><xref:System.ComponentModel.DataAnnotations.DeniedValuesAttribute?displayProperty=nameWithType> | Specify allow lists and deny lists, respectively. For example, `[AllowedValues("apple", "banana", "mango")]`. |
+
+## Introspection support for function pointers
+
+[Function pointers](../../csharp/language-reference/unsafe-code.md#function-pointers) were introduced in .NET 5, however, the corresponding support for reflection wasn't added at that time. When using `typeof` or reflection on a function pointer, for example, `typeof(delegate*<void>())` or `FieldInfo.FieldType` respectively, an <xref:System.IntPtr> was returned. Starting in .NET 8, a <xref:System.Type?displayProperty=nameWithType> object is returned instead. This type provides access to function pointer metadata, including the calling conventions, return type, and parameters.
+
+> [!NOTE]
+> A function pointer instance, which is a physical address to a function, continues to be represented as an <xref:System.IntPtr>. Only the reflection type has changed.
+
+The new functionality is currently implemented only in the CoreCLR runtime and <xref:System.Reflection.MetadataLoadContext>.
+
+New APIs have been added to <xref:System.Type?displayProperty=fullName>, such as <xref:System.Type.IsFunctionPointer>, and to <xref:System.Reflection.PropertyInfo?displayProperty=fullName>, <xref:System.Reflection.FieldInfo?displayProperty=fullName>, and <xref:System.Reflection.ParameterInfo?displayProperty=fullName>. The following code shows how to use some of the new APIs for reflection.
+
+```csharp
+// Sample class that contains a function pointer field.
+public unsafe class UClass
+{
+    public delegate* unmanaged[Cdecl, SuppressGCTransition]<in int, void> _fp;
+}
+
+// ...
+
+FieldInfo fieldInfo = typeof(UClass).GetField(nameof(UClass._fp));
+
+// Obtain the function pointer type from a field.
+Type fpType = fieldInfo.FieldType;
+
+// New methods to determine if a type is a function pointer.
+Console.WriteLine($"IsFunctionPointer: {fpType.IsFunctionPointer}");
+Console.WriteLine($"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
+
+// New methods to obtain the return and parameter types.
+Console.WriteLine($"Return type: {fpType.GetFunctionPointerReturnType()}");
+
+foreach (Type parameterType in fpType.GetFunctionPointerParameterTypes())
+{
+    Console.WriteLine($"Parameter type: {parameterType}");
+}
+
+// Access to custom modifiers and calling conventions requires a "modified type".
+Type modifiedType = fieldInfo.GetModifiedFieldType();
+
+// A modified type forwards most members to its underlying type.
+Type normalType = modifiedType.UnderlyingSystemType;
+
+// New method to obtain the calling conventions.
+foreach (Type callConv in modifiedType.GetFunctionPointerCallingConventions())
+{
+    Console.WriteLine($"Calling convention: {callConv}");
+}
+
+// New method to obtain the custom modifiers.
+foreach (Type modreq in modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers())
+{
+    Console.WriteLine($"Required modifier for first parameter: {modreq}");
+}
+```
+
+The previous example produces the following output:
+
+```txt
+IsFunctionPointer: True
+IsUnmanagedFunctionPointer: True
+Return type: System.Void
+Parameter type: System.Int32&
+Calling convention: System.Runtime.CompilerServices.CallConvSuppressGCTransition
+Calling convention: System.Runtime.CompilerServices.CallConvCdecl
+Required modifier for first parameter: System.Runtime.InteropServices.InAttribute
+```
+
 ## Native AOT
 
 The option to [publish as native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file.
@@ -164,10 +244,10 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 
 Also, the sizes of native AOT apps on Linux are now up to 50% smaller. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
-| Operating system                      | .NET 7  | .NET 8 Preview 1 |
-| ------------------------------------- | ------- | ---------------- |
-| Linux x64 (with -p:StripSymbols=true) | 3.76 MB | 1.84 MB          |
-| Windows x64                           | 2.85 MB | 1.77 MB          |
+| Operating system                        | .NET 7  | .NET 8 Preview 1 |
+| --------------------------------------- | ------- | ---------------- |
+| Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB          |
+| Windows x64                             | 2.85 MB | 1.77 MB          |
 
 ## Code generation
 

@@ -166,7 +166,7 @@ You've been able to test if a `string` had a specific constant value using patte
 
 ## Extended nameof scope
 
-Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
+Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](/dotnet/csharp/advanced-concepts/reflection-and-attributes#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
 
 ## UTF-8 string literals
 

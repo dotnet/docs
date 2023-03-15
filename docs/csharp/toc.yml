@@ -201,8 +201,6 @@ items:
     href: tutorials/console-webapiclient.md
   - name: Work with LINQ
     href: tutorials/working-with-linq.md
-  - name: Use Attributes
-    href: tutorials/attributes.md
 - name: Asynchronous programming
   items:
   - name: Overview
@@ -320,6 +318,25 @@ items:
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: Advanced topics
   items:
+  - name: Reflection and Attributes
+    items:
+    - name: Overview
+      displayName: attributes, reflection
+      href: advanced-topics/reflection-and-attributes/index.md
+    - name: Create custom attributes
+      href: advanced-topics/reflection-and-attributes/creating-custom-attributes.md
+    - name: Access attributes using reflection
+      href: advanced-topics/reflection-and-attributes/accessing-attributes-by-using-reflection.md
+    - name: "How to create a C/C++ union by using attributes"
+      href: advanced-topics/reflection-and-attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
+    - name: Generics and attributes
+      href: advanced-topics/reflection-and-attributes/generics-and-attributes.md
+    - name: "How to query an assembly's metadata with reflection and LINQ"
+      href: advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md
+    - name: Generics and reflection
+      href: advanced-topics/reflection-and-attributes/generics-and-reflection.md
+    - name: "Tutorial: Define and use attributes"
+      href: advanced-topics/reflection-and-attributes/attribute-tutorial.md
   - name: Expression trees
     items:
     - name: Overview
@@ -424,17 +441,6 @@ items:
     - name: Overview
       displayName: programming concepts
       href: programming-guide/concepts/index.md
-    - name: Attributes
-      items:
-      - name: Overview
-        displayName: attributes
-        href: programming-guide/concepts/attributes/index.md
-      - name: Creating Custom Attributes
-        href: programming-guide/concepts/attributes/creating-custom-attributes.md
-      - name: Accessing Attributes by Using Reflection
-        href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
-      - name: "How to create a C/C++ union by using attributes"
-        href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
     - name: Collections
       href: programming-guide/concepts/collections.md
     - name: Covariance and contravariance
@@ -551,10 +557,6 @@ items:
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
           - name: "How to use expression trees to build dynamic queries"
             href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
-        - name: LINQ and Reflection
-          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
-        - name: "How to query an assembly's metadata with Reflection (LINQ)"
-          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: LINQ and File Directories
           items:
           - name: Overview
@@ -583,8 +585,6 @@ items:
         href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
       - name: Visual Studio IDE and Tools Support for LINQ
         href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
-    - name: Reflection
-      href: programming-guide/concepts/reflection.md
     - name: Serialization (C#)
       items:
       - name: Overview
@@ -802,10 +802,6 @@ items:
       href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
     - name: Generics in the Run Time
       href: programming-guide/generics/generics-in-the-run-time.md
-    - name: Generics and Reflection
-      href: programming-guide/generics/generics-and-reflection.md
-    - name: Generics and Attributes
-      href: programming-guide/generics/generics-and-attributes.md
   - name: File System and the Registry
     items:
     - name: Overview

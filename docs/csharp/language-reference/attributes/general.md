@@ -201,4 +201,4 @@ To try this code yourself, set the `AllowUnsafeBlocks` compiler option in your *
 - <xref:System.Attribute>
 - <xref:System.Reflection>
 - [Attributes](../../../standard/attributes/index.md)
-- [Reflection](../../programming-guide/concepts/reflection.md)
+- [Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/)

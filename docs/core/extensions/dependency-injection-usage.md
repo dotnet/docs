@@ -1,6 +1,6 @@
 ---
 title: Use dependency injection
-description: Learn how to use dependency injection in your .NET apps.
+description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

@@ -508,7 +508,7 @@
 | Extensions - Caching Cosmos | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.4.0) |  | GitHub [1.4.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Authentication Events | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.3) |  |  |
-| Functions extension for Azure SQL and SQL Server | NuGet [1.0.122-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/1.0.122-preview) |  |  |
+| Functions extension for Azure SQL and SQL Server | NuGet [3.0.143-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.143-preview) |  |  |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.0) |  |  |
 | Functions extension for Storage Timers | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0-beta.1) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
@@ -528,7 +528,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.7.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [1.0.122-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/1.0.122-preview) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.0.143-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.0.143-preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.0.1)<br>NuGet [5.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/5.1.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.0.1)<br>NuGet [5.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.1.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.0.0) |  |  |

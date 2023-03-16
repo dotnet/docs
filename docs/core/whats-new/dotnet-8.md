@@ -9,14 +9,14 @@ author: gewarren
 ---
 # What's new in .NET 8
 
-.NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release.
+.NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
 This article has been updated for .NET 8 Preview 2.
 
 > [!IMPORTANT]
 >
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-> - Most of the other .NET documentation on <https://learn.microsoft.com> has not yet been updated for .NET 8.
+> - Much of the other .NET documentation on <https://learn.microsoft.com> has not yet been updated for .NET 8.
 
 ## 'dotnet publish' and 'dotnet pack'
 

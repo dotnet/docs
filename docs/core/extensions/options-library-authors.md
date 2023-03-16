@@ -1,7 +1,7 @@
 ---
 title: Options pattern guidance for .NET library authors
 author: IEvangelist
-description: Learn how to expose the options pattern as a library author in .NET.
+description: Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
 ms.date: 03/13/2023
 ---

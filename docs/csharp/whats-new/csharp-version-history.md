@@ -375,6 +375,6 @@ The major features of C# 1.0 included:
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
-- [Attributes](/dotnet/csharp/advanced-topics/reflections-and-attributes)
+- [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

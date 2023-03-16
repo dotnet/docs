@@ -7,7 +7,7 @@ ms.date: 03/13/2023
 ms.topic: overview
 ---
 
-# Dependency injection in .NET
+# .NET dependency injection
 
 .NET supports the dependency injection (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 

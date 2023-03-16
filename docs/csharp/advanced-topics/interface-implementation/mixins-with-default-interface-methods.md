@@ -22,11 +22,11 @@ You’ll need to set up your machine to run .NET, including the C# compiler. The
 
 ## Limitations of extension methods
 
-One way you can implement behavior that appears as part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
+One way you can implement behavior that appears as part of an interface is to define [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
 
 Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method. Another concern with extension methods is that those methods are accessible wherever the class containing the extension methods is accessible. Classes cannot declare if they should or should not provide features declared in extension methods.
 
-You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../programming-guide/classes-and-structs/extension-methods.md).
+You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
 In this article, you'll learn how default interface implementations enable new scenarios.
 
@@ -97,7 +97,7 @@ The `HalogenLight` you created earlier doesn't support blinking. So, don't add t
 
 ## Detect the light types using pattern matching
 
-Next, let's write some test code. You can make use of C#'s [pattern matching](../fundamentals/functional/pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
+Next, let's write some test code. You can make use of C#'s [pattern matching](../../fundamentals/functional/pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
 
 :::code language="csharp" source="./snippets/mixins-with-default-interface-methods/Program.cs" id="SnippetTestLightFunctions":::
 

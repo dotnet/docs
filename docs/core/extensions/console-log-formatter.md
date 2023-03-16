@@ -1,6 +1,6 @@
 ---
 title: Console log formatting
-description: Learn how to use available console log formatting, or implement custom log formatting for your .NET applications.
+description: Learn how to use and implement custom console log formatting in your .NET apps. Register and create new log formatters for better application logging.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

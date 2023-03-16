@@ -1,6 +1,6 @@
 ---
 title: Dependency injection guidelines
-description: Learn various dependency injection guidelines and best practices for .NET application development.
+description: Learn various dependency injection guidelines and best practices for .NET app development.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

@@ -1,12 +1,12 @@
 ---
-title: Logging
+title: Logging in C#
 author: IEvangelist
-description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
+description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
 ms.date: 03/13/2023
 ---
 
-# Logging in .NET
+# Logging in C# and .NET
 
 .NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with [built-in providers](logging-providers.md). The logging providers are responsible for determining where logs are written to. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
 

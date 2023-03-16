@@ -1,6 +1,6 @@
 ---
 title: Implement a custom configuration provider
-description: Learn how to implement a custom configuration provider in .NET applications.
+description: Learn how to implement a custom configuration provider in .NET apps. Explore a database configuration provider that uses Entity Framework Core.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

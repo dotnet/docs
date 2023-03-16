@@ -45,7 +45,7 @@ The preceding `Program` class:
 - Calls `Run` on the `host` instance, which runs the app.
 
 > [!TIP]
-> By default the Worker Service template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
+> By default the Worker template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
 >
 > ```xml
 > <PropertyGroup>
@@ -63,7 +63,7 @@ The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting
 
 ### The project file
 
-The Worker Service template relies on the following project file `Sdk`:
+The Worker template relies on the following project file `Sdk`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Worker">
@@ -73,11 +73,11 @@ For more information, see [.NET project SDKs](../project-sdk/overview.md).
 
 ### NuGet package
 
-An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
+An app based on the Worker template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
 
 ### Containers and cloud adaptability
 
-With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
+With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
 :::code language="dockerfile" source="snippets/workers/background-service/Dockerfile":::
 
@@ -105,7 +105,7 @@ In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `
 For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md). For more information on deploying to Azure, see [Tutorial: Deploy a Worker Service to Azure](cloud-service.md).
 
 > [!IMPORTANT]
-> If you want to leverage _User Secrets_ with the Worker Service template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
+> If you want to leverage _User Secrets_ with the Worker template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
 
 ## Hosted Service extensibility
 

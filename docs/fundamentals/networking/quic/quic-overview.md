@@ -70,7 +70,6 @@ These properties will report the same value, but that might change in the future
 
 Consider the following `QuicListener` example code:
 
-
 ```csharp
 using System.Net.Quic;
 
@@ -137,7 +136,6 @@ For more information about how the `QuicListener` was designed, see the [API pro
 When the work with the connection is done, it needs to be closed and disposed. QUIC protocol mandates using an application layer code for immediate closure, see [RFC 9000 Section 10.2](https://www.rfc-editor.org/rfc/rfc9000#section-10.2). For that, <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)> with application layer code can be called or if not, <xref:System.Net.Quic.QuicConnection.DisposeAsync> will use the code provided in <xref:System.Net.Quic.QuicConnectionOptions.DefaultCloseErrorCode>. Either way, <xref:System.Net.Quic.QuicConnection.DisposeAsync> must be called at the end of the work with the connection to fully release all the associated resources.
 
 Consider the following `QuicConnection` example code:
-
 
 ```csharp
 using System.Net.Quic;

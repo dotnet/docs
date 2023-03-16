@@ -26,12 +26,12 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine("Serialize language sets unescaped");
             // <LanguageSets>
-            options = new JsonSerializerOptions
+            var options1 = new JsonSerializerOptions
             {
                 Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                 WriteIndented = true
             };
-            jsonString = JsonSerializer.Serialize(weatherForecast, options);
+            jsonString = JsonSerializer.Serialize(weatherForecast, options1);
             // </LanguageSets>
             Console.WriteLine(jsonString);
             Console.WriteLine();
@@ -41,24 +41,24 @@ namespace SystemTextJsonSamples
             var encoderSettings = new TextEncoderSettings();
             encoderSettings.AllowCharacters('\u0436', '\u0430');
             encoderSettings.AllowRange(UnicodeRanges.BasicLatin);
-            options = new JsonSerializerOptions
+            var options2 = new JsonSerializerOptions
             {
                 Encoder = JavaScriptEncoder.Create(encoderSettings),
                 WriteIndented = true
             };
-            jsonString = JsonSerializer.Serialize(weatherForecast, options);
+            jsonString = JsonSerializer.Serialize(weatherForecast, options2);
             // </SelectedCharacters>
             Console.WriteLine(jsonString);
             Console.WriteLine();
 
             Console.WriteLine("Serialize using unsafe relaxed encoder");
             // <UnsafeRelaxed>
-            options = new JsonSerializerOptions
+            var options3 = new JsonSerializerOptions
             {
                 Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
                 WriteIndented = true
             };
-            jsonString = JsonSerializer.Serialize(weatherForecast, options);
+            jsonString = JsonSerializer.Serialize(weatherForecast, options3);
             // </UnsafeRelaxed>
             Console.WriteLine(jsonString);
         }

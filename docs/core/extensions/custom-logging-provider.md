@@ -1,6 +1,6 @@
 ---
 title: Implement a custom logging provider
-description: Discover how to implement a custom logging provider with colorized logs and custom logger in your .NET apps.
+description: Discover how to implement a custom logging provider with colorized logs, writing custom C# ILogger and ILoggerProvider implementations.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

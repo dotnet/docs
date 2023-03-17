@@ -1,6 +1,6 @@
 ---
 title: Channels
-description: Learn the official synchronization data structures with System.Threading.Channels for producers and consumers in .NET.
+description: Learn the official synchronization data structures in System.Threading.Channels for producers and consumers with .NET.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

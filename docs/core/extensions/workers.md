@@ -1,6 +1,6 @@
 ---
 title: Worker Services
-description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
+description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

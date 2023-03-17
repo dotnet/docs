@@ -1,6 +1,6 @@
 ---
 title: Dependency injection guidelines
-description: Discover effective dependency injection guidelines and best practices for developing .NET apps.
+description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023

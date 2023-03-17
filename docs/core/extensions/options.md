@@ -1,9 +1,9 @@
 ---
 title: Options pattern
 author: IEvangelist
-description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
+description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 02/27/2023
+ms.date: 03/13/2023
 ---
 
 # Options pattern in .NET

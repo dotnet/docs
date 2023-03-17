@@ -1,7 +1,7 @@
 ---
 title: Perform culture-insensitive case changes
 description: "Learn how to perform culture-insensitive case changes"
-ms.date: 06/06/2022
+ms.date: 03/13/2023
 dev_langs:
     - "csharp"
     - "vb"

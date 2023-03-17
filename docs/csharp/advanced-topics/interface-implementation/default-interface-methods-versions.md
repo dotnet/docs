@@ -1,8 +1,7 @@
 ---
 title: Safely update interfaces using default interface methods in C#
 description: This advanced tutorial explores how you can safely add new capabilities to existing interface definitions without breaking all classes and structs that implement that interface.
-ms.date: 11/01/2022
-ms.technology: csharp-advanced-concepts
+ms.date: 03/17/2023
 ---
 # Tutorial: Update interfaces with default interface methods
 
@@ -18,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) or the [.NET SDK](https://dotnet.microsoft.com/download).
+You need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) or the [.NET SDK](https://dotnet.microsoft.com/download).
 
 ## Scenario overview
 
@@ -34,7 +33,7 @@ From those interfaces, the team could build a library for their users to create 
 
 Now, it's time to upgrade the library for the next release. One of the requested features enables a loyalty discount for customers that have lots of orders. This new loyalty discount gets applied whenever a customer makes an order. The specific discount is a property of each individual customer. Each implementation of `ICustomer` can set different rules for the loyalty discount.
 
-The most natural way to add this functionality is to enhance the `ICustomer` interface with a method to apply any loyalty discount. This design suggestion caused concern among experienced developers: "Interfaces are immutable once they've been released! This is a breaking change!" *Default interface implementations* for upgrading interfaces. The library authors can add new members to the interface and provide a default implementation for those members.
+The most natural way to add this functionality is to enhance the `ICustomer` interface with a method to apply any loyalty discount. This design suggestion caused concern among experienced developers: "Interfaces are immutable once they've been released! Don't make a breaking change!" *Default interface implementations* for upgrading interfaces. The library authors can add new members to the interface and provide a default implementation for those members.
 
 Default interface implementations enable developers to upgrade an interface while still enabling any implementors to override that implementation. Users of the library can accept the default implementation as a non-breaking change. If their business rules are different, they can override.
 
@@ -42,7 +41,7 @@ Default interface implementations enable developers to upgrade an interface whil
 
 The team agreed on the most likely default implementation: a loyalty discount for customers.
 
-The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. This makes it a perfect scenario for default interface methods. You can add a method to the `ICustomer` interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
+The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. These features make it a perfect scenario for default interface methods. You can add a method to the `ICustomer` interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
 
 First, add the new method to the interface, including the body of the method:
 
@@ -60,11 +59,11 @@ That cast from `SampleCustomer` to `ICustomer` is necessary. The `SampleCustomer
 
 ## Provide parameterization
 
-That's a good start. But, the default implementation is too restrictive. Many consumers of this system may choose different thresholds for number of purchases, a different length of membership, or a different percentage discount. You can provide a better upgrade experience for more customers by providing a way to set those parameters. Let's add a static method that sets those three parameters controlling the default implementation:
+The default implementation is too restrictive. Many consumers of this system may choose different thresholds for number of purchases, a different length of membership, or a different percentage discount. You can provide a better upgrade experience for more customers by providing a way to set those parameters. Let's add a static method that sets those three parameters controlling the default implementation:
 
 :::code language="csharp" source="./snippets/default-interface-members-versions/finished/customer-relationship/ICustomer.cs" id="SnippetLoyaltyDiscountVersionTwo":::
 
-There are many new language capabilities shown in that small code fragment. Interfaces can now include static members, including fields and methods. Different access modifiers are also enabled. The additional fields are private, the new method is public. Any of the modifiers are allowed on interface members.
+There are many new language capabilities shown in that small code fragment. Interfaces can now include static members, including fields and methods. Different access modifiers are also enabled. The other fields are private, the new method is public. Any of the modifiers are allowed on interface members.
 
 Applications that use the general formula for computing the loyalty discount, but different parameters, don't need to provide a custom implementation; they can set the arguments through a static method. For example, the following code sets a "customer appreciation" that rewards any customer with more than one month's membership:
 
@@ -84,4 +83,4 @@ In an implementation of a class that implements this interface, the override can
 
 You can see the entire finished code in our [samples repo on GitHub](https://github.com/dotnet/samples/tree/main/csharp/tutorials/default-interface-members-versions/finished/customer-relationship). You can get the starter application on our [samples repo on GitHub](https://github.com/dotnet/samples/tree/main/csharp/tutorials/default-interface-members-versions/starter/customer-relationship).
 
-These new features mean that interfaces can be updated safely when there's a reasonable default implementation for those new members. Carefully design interfaces to express single functional ideas that can be implemented by multiple classes. That makes it easier to upgrade those interface definitions when new requirements are discovered for that same functional idea.
+These new features mean that interfaces can be updated safely when there's a reasonable default implementation for those new members. Carefully design interfaces to express single functional ideas implemented by multiple classes. That makes it easier to upgrade those interface definitions when new requirements are discovered for that same functional idea.

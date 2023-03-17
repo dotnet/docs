@@ -849,6 +849,10 @@ items:
           href: ../core/extensions/sslstream-troubleshooting.md
         - name: Migrate from .NET Framework to .NET
           href: ../core/extensions/sslstream-migration-from-framework.md
+    - name: QUIC
+      items:
+      - name: QUIC support
+        href: networking/quic/quic-overview.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
   - name: Primitives library

@@ -86,7 +86,7 @@ This feature implements [F# RFC FS-1039](https://github.com/fsharp/fslang-design
 
 ## Overloaded custom operations in computation expressions
 
-F# 6 lets you consume [interfaces with default implementations](../../csharp/tutorials/default-interface-methods-versions.md).
+F# 6 lets you consume [interfaces with default implementations](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md).
 
 Consider the following use of a computation expression builder `content`:
 

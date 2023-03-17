@@ -24,7 +24,7 @@ You can use a `nameof` expression to make the argument-checking code more mainta
 
 [!code-csharp[nameof and argument check](snippets/shared/NameOfOperator.cs#ExceptionMessage)]
 
-Beginning with C# 11, you can use a `nameof` expression with a method parameter inside an [attribute](/dotnet/csharp/advanced-concepts/reflection-and-attributes) on a method or its parameter. The following code shows how to do that for an attribute on a method, a local function, and the parameter of a lambda expression:
+Beginning with C# 11, you can use a `nameof` expression with a method parameter inside an [attribute](/dotnet/csharp/advanced-topics/reflection-and-attributes) on a method or its parameter. The following code shows how to do that for an attribute on a method, a local function, and the parameter of a lambda expression:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="SnippetNameOfParameter":::
 

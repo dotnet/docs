@@ -94,7 +94,7 @@ This small sample shows the major features for asynchronous programming:
 
 ## Attributes
 
-Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](/dotnet/csharp/advanced-concepts/reflection-and-attributes).
+Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](/dotnet/csharp/advanced-topics/reflection-and-attributes).
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 

@@ -94,7 +94,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
 
-You also use square brackets to specify [attributes](/dotnet/csharp/advanced-concepts/reflection-and-attributes):
+You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
 
 ```csharp
 [System.Diagnostics.Conditional("DEBUG")]

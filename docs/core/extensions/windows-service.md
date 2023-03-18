@@ -1,13 +1,13 @@
 ---
-title: Create a Windows Service using BackgroundService
+title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/06/2023
+ms.date: 03/13/2023
 ms.topic: tutorial
 ---
 
-# Create a Windows Service using `BackgroundService`
+# Create Windows Service using `BackgroundService`
 
 .NET Framework developers are probably familiar with Windows Service apps. Before .NET Core and .NET 5+, developers who relied on .NET Framework could create Windows Services to perform background tasks or execute long-running processes. This functionality is still available and you can create Worker Services that run as a Windows Service.
 

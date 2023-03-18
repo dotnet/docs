@@ -31,7 +31,7 @@ The images for these containers are created and work just the same way. The diff
 
 Figure 1-3 shows a comparison between VMs and Docker containers.
 
-![Diagram showing a comparison of VM and container environments.](./media/what-is-docker/comparison-vms-docker-conatiners.png)
+![Diagram showing a comparison of VM and container environments.](./media/what-is-docker/comparison-vms-docker-containers.png)
 
 **Figure 1-3**. Comparison of traditional virtual machines to Docker containers
 

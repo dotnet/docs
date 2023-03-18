@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Performing culture-insensitive string operations"
 title: "Performing Culture-Insensitive String Operations"
-ms.date: 08/11/2021
+ms.date: 03/13/2023
 helpviewer_keywords:
     - "case mappings"
     - "custom case mappings"

@@ -22,7 +22,7 @@ jobs:
         uses: dotnet/docs-tools/cleanrepo/CleanRepo@main
         with:
           docfx_directory: '.'
-          articles_directory: 'docs/azure'
+          articles_directory: 'docs'
           media_directory: 'docs'
           snippets_directory: '.' # This includes the ./samples and ./docs directories, which both contain snippets.
           includes_directory: 'includes'
@@ -30,6 +30,7 @@ jobs:
           delete: true
           orphaned_articles: true
           orphaned_images: true
+          catalog_images: false
           orphaned_snippets: true
           orphaned_includes: true
           replace_redirects: true

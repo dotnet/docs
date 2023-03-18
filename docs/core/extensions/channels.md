@@ -1,9 +1,9 @@
 ---
 title: Channels
-description: Learn how to use System.Threading.Channels in .NET.
+description: Learn the official synchronization data structures in System.Threading.Channels for producers and consumers with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 03/13/2023
 ---
 
 # System.Threading.Channels library

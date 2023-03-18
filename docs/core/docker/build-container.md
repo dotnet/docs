@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET application with Docker.
-ms.date: 02/13/2023
+ms.date: 03/17/2023
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET app so that I can deploy it to the cloud.
@@ -445,13 +445,13 @@ During this tutorial, you created containers and images. If you want, delete the
 02. Stop containers that are running by their name.
 
     ```console
-    docker stop counter-image
+    docker stop core-counter
     ```
 
 03. Delete the container
 
     ```console
-    docker rm counter-image
+    docker rm core-counter
     ```
 
 Next, delete any images that you no longer want on your machine. Delete the image created by your *Dockerfile* and then delete the .NET image the *Dockerfile* was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.

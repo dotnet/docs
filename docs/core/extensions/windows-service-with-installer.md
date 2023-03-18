@@ -3,7 +3,7 @@ title: Create a Windows Service installer
 description: Learn how to create a Windows Service installer project.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/21/2023
+ms.date: 03/13/2023
 ms.topic: tutorial
 ---
 

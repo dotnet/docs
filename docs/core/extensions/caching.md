@@ -1,9 +1,9 @@
 ---
 title: Caching in .NET
-description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
+description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 03/13/2023
 ---
 
 # Caching in .NET

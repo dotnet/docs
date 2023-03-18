@@ -237,7 +237,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/interop.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
+            "redirect_url": "/dotnet/csharp/advanced-topics/interop/index"
         },
         {
             "source_path_from_root": "/docs/csharp/lambda-expressions.md",
@@ -1883,7 +1883,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-and-reflection.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq"
+            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-to-xml-annotations.md",
@@ -2926,7 +2926,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/default-interface-members-versions.md",
-            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/default-interface-methods-versions.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/csharp-6.yml",
@@ -3001,6 +3005,10 @@
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/local-environment"
         },
         {
+            "source_path_from_root": "/docs/csharp/tutorials/mixins-with-default-interface-methods.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods"
+        },
+        {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md",
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local"
         },
@@ -3072,7 +3080,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/default-interface-methods-versions.md",
-            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md",

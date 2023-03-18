@@ -88,3 +88,4 @@ For more information and examples, see [Async Return Types](../../asynchronous-p
 - [await](../operators/await.md)
 - [Asynchronous programming with async and await](../../asynchronous-programming/index.md)
 - [Process asynchronous tasks as they complete](../../asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md)
+- [.NET blog: How async/await really works in C#](https://devblogs.microsoft.com/dotnet/how-async-await-really-works/)

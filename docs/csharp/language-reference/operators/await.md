@@ -50,3 +50,4 @@ For more information, see the [Await expressions](~/_csharpstandard/standard/exp
 - [Asynchronous programming](../../asynchronous-programming/index.md)
 - [Walkthrough: accessing the Web by using async and await](../../asynchronous-programming/async-scenarios.md)
 - [Tutorial: Generate and consume async streams](../../asynchronous-programming/generate-consume-asynchronous-stream.md)
+- [.NET blog: How async/await really works in C#](https://devblogs.microsoft.com/dotnet/how-async-await-really-works/)

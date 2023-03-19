@@ -71,15 +71,9 @@ This section provides detailed information on key C# language features and featu
   
  [Assemblies in .NET](../../standard/assembly/index.md)  
   
- [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)  
-  
  [Collections](./concepts/collections.md)  
   
  [Exceptions and Exception Handling](../fundamentals/exceptions/index.md)  
-  
- [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
-  
- [Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/)  
   
 ## See also
 

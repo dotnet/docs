@@ -1047,12 +1047,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/standard/data/sqlite/InMemorySample" #InMemorySample.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/standard/data/sqlite/InteropSample" #InteropSample.csproj
     schedule:
       interval: "weekly"

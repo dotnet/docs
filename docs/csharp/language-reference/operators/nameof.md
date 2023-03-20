@@ -16,19 +16,19 @@ A `nameof` expression produces the name of a variable, type, or member as the st
 
 [!code-csharp-interactive[nameof expression](snippets/shared/NameOfOperator.cs#Examples)]
 
-When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't the part of a name, as the following example shows:
-
-[!code-csharp-interactive[nameof verbatim](snippets/shared/NameOfOperator.cs#Verbatim)]
-
 You can use a `nameof` expression to make the argument-checking code more maintainable:
 
 [!code-csharp[nameof and argument check](snippets/shared/NameOfOperator.cs#ExceptionMessage)]
 
-Beginning with C# 11, you can use a `nameof` expression with a method parameter inside an [attribute](/dotnet/csharp/advanced-topics/reflection-and-attributes) on a method or its parameter. The following code shows how to do that for an attribute on a method, a local function, and the parameter of a lambda expression:
+Beginning with C# 11, you can use a `nameof` expression with a method parameter inside an [attribute](../../advanced-topics/reflection-and-attributes/index.md) on a method or its parameter. The following code shows how to do that for an attribute on a method, a local function, and the parameter of a lambda expression:
 
 :::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="SnippetNameOfParameter":::
 
 A `nameof` expression with a parameter is useful when you use the [nullable analysis attributes](../attributes/nullable-analysis.md) or the [CallerArgumentExpression attribute](../attributes/caller-information.md#argument-expressions).
+
+When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't the part of a name, as the following example shows:
+
+[!code-csharp-interactive[nameof verbatim](snippets/shared/NameOfOperator.cs#Verbatim)]
 
 ## C# language specification
 

@@ -10,4 +10,4 @@ ms.date: 01/11/2023
 
 ## Analyze dumps on Windows
 
-Windows dumps can be analyzed on Windows with [Visual Studio](/visualstudio/debugger/using-dump-files), [Windbg](https://github.com/dotnet/docs/blob/main/windows-hardware/drivers/debugger/analyzing-a-user-mode-dump-file), or the [`dotnet-dump`](dotnet-dump.md) CLI tool. Visual Studio and Windbg can access both managed and native code and are the recommended tools for a Windows environment. dotnet-dump can only access managed code.
+Windows dumps can be analyzed on Windows with [Visual Studio](/visualstudio/debugger/using-dump-files), [Windbg](https://learn.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools), or the [`dotnet-dump`](dotnet-dump.md) CLI tool. Visual Studio and Windbg can access both managed and native code and are the recommended tools for a Windows environment. dotnet-dump can only access managed code.

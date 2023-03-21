@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # with expression - Nondestructive mutation creates a new object with modified properties
 
-Available in C# 9.0 and later, a `with` expression produces a copy of its operand with the specified properties and fields modified. you use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values:
+Available in C# 9.0 and later, a `with` expression produces a copy of its operand with the specified properties and fields modified. You use the [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values:
 
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 

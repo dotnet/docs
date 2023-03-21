@@ -1,7 +1,7 @@
 ---
 title: dotnet add reference command
-description: The dotnet add reference command provides a convenient option to add project to project references.
-ms.date: 02/14/2020
+description: The dotnet add reference command provides a convenient option to add project-to-project references.
+ms.date: 03/21/2023
 ---
 # dotnet add reference
 
@@ -29,6 +29,18 @@ The `dotnet add reference` command provides a convenient option to add project r
   <ProjectReference Include="app.csproj" />
   <ProjectReference Include="..\lib2\lib2.csproj" />
   <ProjectReference Include="..\lib1\lib1.csproj" />
+</ItemGroup>
+```
+
+## Add a reference to an assembly that isn't in a project
+
+There's no CLI command to add a reference to an assembly that isn't in a project or a package. But you can do that by editing your *.csproj* file and adding markup similar to the following example:
+
+```xml
+<ItemGroup>
+  <Reference Include="MyAssembly">
+    <HintPath>".\MyDLLFolder\MyAssembly.dll</HintPath>
+  </Reference>
 </ItemGroup>
 ```
 

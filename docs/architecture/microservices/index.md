@@ -62,7 +62,7 @@ You will also find this guide useful if you are a technical decision maker, such
 
 ### How to use this guide
 
-The first part of this guide introduces Docker containers, discusses how to choose between .NET 6 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
+The first part of this guide introduces Docker containers, discusses how to choose between .NET 7 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
 
 The second part of the guide starts with the [Development process for Docker based applications](./docker-application-development-process/index.md) section. It focuses on the development and microservice patterns for implementing applications using .NET and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
 

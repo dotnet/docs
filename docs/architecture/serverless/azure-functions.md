@@ -15,7 +15,7 @@ Azure Functions provide a serverless compute experience. A function is invoked b
 
 ![Azure functions logo](./media/azure-functions-logo.png)
 
-The current runtime version 4.0 supports cross-platform .NET 6.0 applications. Additional languages besides C# such as JavaScript, F#, and Java are supported. Functions created in the portal provide a rich scripting syntax. Functions created as standalone projects can be deployed with full platform support and capabilities.
+The current runtime version 4.0 supports cross-platform .NET 7.0 applications. Additional languages besides C# such as JavaScript, F#, and Java are supported. Functions created in the portal provide a rich scripting syntax. Functions created as standalone projects can be deployed with full platform support and capabilities.
 
 For more information, see [Azure Functions documentation](/azure/azure-functions).
 

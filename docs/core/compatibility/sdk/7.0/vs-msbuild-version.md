@@ -22,6 +22,8 @@ The following table shows the minimum version of Visual Studio and MSBuild you n
 
 <sup>1</sup>In addition, scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
 
+For more information about minimum supported versions, see [Targeting and support rules](../../../porting/versioning-sdk-msbuild-vs#targeting-and-support-rules).
+
 ## Reason for change
 
 Changes were made to features within the SDK that aren't compatible with previous Visual Studio versions. In addition, it enables .NET SDK partners to have a reliable minimum version of Visual Studio that they can expect to work against.
@@ -33,3 +35,7 @@ Upgrade your Visual Studio version to the required version. Alternatively, you c
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [Targeting and support rules](../../../porting/versioning-sdk-msbuild-vs#targeting-and-support-rules)

@@ -718,7 +718,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
 
-- **`-minimal`**
+- **`-minimal|--use-minimal-apis`**
 
   Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis).
 
@@ -750,9 +750,13 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Excludes *launchSettings.json* from the generated template.
 
+- **`--no-openapi`**
+
+  Turns off OpenAPI (Swagger) support. `AddSwaggerGen`, `UseSwagger`, and `UseSwaggerUI` aren't called.
+
 - **`--no-https`**
 
-  Turns off HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `IndividualB2C` or `SingleOrg` aren't being used for authentication.
+  Turns off HTTPS. No *https* launch profile is created in `launchSettings.json`. `app.UseHsts` and `app.UseHttpsRedirection` aren't called in *Program.cs*/*Startup.cs*. This option only applies if `IndividualB2C` or `SingleOrg` aren't being used for authentication.
 
 - **`-uld|--use-local-db`**
 
@@ -766,6 +770,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |

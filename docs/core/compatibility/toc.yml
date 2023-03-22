@@ -44,6 +44,10 @@ items:
       items:
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
+    - name: Reflection
+      items:
+      - name: IntPtr no longer used for function pointer types
+        href: reflection/8.0/function-pointer-reflection.md
     - name: SDK
       items:
       - name: CLI console output uses UTF-8
@@ -1278,6 +1282,12 @@ items:
         href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: .NET Core 2.0-3.0
         href: networking.md
+  - name: Reflection
+    items:
+    - name: .NET 8
+      items:
+      - name: IntPtr no longer used for function pointer types
+        href: reflection/8.0/function-pointer-reflection.md
   - name: SDK and MSBuild
     items:
     - name: .NET 8

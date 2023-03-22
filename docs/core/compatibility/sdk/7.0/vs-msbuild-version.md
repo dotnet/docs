@@ -38,4 +38,4 @@ N/A
 
 ## See also
 
-- [Targeting and support rules](../../../porting/versioning-sdk-msbuild-vs#targeting-and-support-rules)
+- [Targeting and support rules](../../../porting/versioning-sdk-msbuild-vs.md#targeting-and-support-rules)

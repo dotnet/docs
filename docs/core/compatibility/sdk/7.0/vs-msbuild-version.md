@@ -18,7 +18,7 @@ The following table shows the minimum version of Visual Studio and MSBuild you n
 | NET SDK version   | Minimum Visual Studio and MSBuild version |
 | ----------------- | ----------------------------------------- |
 | 7.0.100           | 17.4                                      |
-| 7.0.200           | 17.4                                      |
+| 7.0.200           | 17.5                                      |
 
 <sup>1</sup>In addition, scenarios that use a source generator could fail when using a Visual Studio or MSBuild version earlier than version 17.2.
 

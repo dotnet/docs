@@ -60,7 +60,7 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 * **`-s|--source <SOURCE>`**
 
-  Specifies the server URL. The URL specified by using this option can be either V2 (`https://www.nuget.org/api/v2/`) or V3 (`https://api.nuget.org/v3/index.json`), but the actual URL used to push or delete a package is always `https://api.nuget.org/api/v2/package/PackageId/1.0.0`. For private feeds, replace the host name (for example, `%hostname%/api/v2`).
+  Specifies the server URL. The URL specified by using this option can be either V2 (`https://www.nuget.org/api/v2/`) or V3 (`https://api.nuget.org/v3/index.json`). For private feeds, replace the host name (for example, `%hostname%/api/v3/index.json`).
 
 ## Examples
 

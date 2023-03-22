@@ -85,7 +85,7 @@ This section describes the best practices to follow when developing world-ready 
 
     - In the globalization section of a _Web.config_ file. This file is external to the ASP.NET application. For more information, see [\<globalization> element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
     - In a page directive. Note that, when an application is in a page, the file has already been read. Therefore, it is too late to specify fileEncoding and requestEncoding. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in a page directive.
-    - Programmatically in application code. This setting can vary per request. As with a page directive, by the time the application's code is reached, it is too late to specify fileEncoding and requestEncoding. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in the application code.
+    - Programmatically in application code. This setting can vary per request. As with a page directive, by the time the application's code is reached, it is too late to specify `fileEncoding` and `requestEncoding`. Only `uiCulture`, `culture`, and `responseEncoding` can be specified in the application code.
 
 1. Note that the uiCulture value can be set to the browser accept language.
 

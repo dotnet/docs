@@ -57,7 +57,7 @@ public class AddProductMessage : ValueChangedMessage<int>
 }
 ```
 
-The base class is defined using `ValueChangedMessage<T>` where T can be of any type needed to pass data. Both message publishers and subscribers can expect messages of a specific type (i.e. `AddProductMessage`). This can help ensure that both parties have agreed to a messaging contract and that the data provided with that contract will be consistent. Additionally, this approach provides compile-time type safety and refactoring support.
+The base class is defined using `ValueChangedMessage<T>` where `T` can be of any type needed to pass data. Both message publishers and subscribers can expect messages of a specific type (for example, `AddProductMessage`). This can help ensure that both parties have agreed to a messaging contract and that the data provided with that contract will be consistent. Additionally, this approach provides compile-time type safety and refactoring support.
 
 ## Publishing a message
 

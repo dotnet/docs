@@ -23,7 +23,7 @@ You can create an [Azure account for free](https://azure.microsoft.com/free/dotn
 
 ## Option 3: Sign up for a pay-as-you-go account
 
-You can also create a [pay-as-you-go Azure account](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). This option includes monthly amounts of select services for free, and charges you for what you use beyond the free limits. There is no upfront commitment and you can cancel at any time.
+You can also create a [pay-as-you-go Azure account](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). This option includes monthly amounts of select services for free, and charges you for what you use beyond the free limits. There is no upfront commitment and you can cancel anytime.
 
 ## Option 4: Use a corporate account
 

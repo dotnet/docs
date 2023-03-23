@@ -106,7 +106,7 @@ WeakReferenceMessenger.Default.Unregister<Messages.AddProductMessage>(this);
 ```
 
 > [!NOTE]
-> In this example, it is not fully necessary to call `Unregister` as the `WeakReferenceMessenger` will allow unused objects to be garbage collected. If the `StrongReferenceMessenger` were used, it would be advised to call `Unregister` for any subscriptions that are no longer in use.
+> In this example, it isn't fully necessary to call `Unregister` as the `WeakReferenceMessenger` will allow unused objects to be garbage collected. If the `StrongReferenceMessenger` were used, it would be advised to call `Unregister` for any subscriptions that are no longer in use.
 
 In this example, the `Unsubscribe` method syntax specifies the type argument of the message and the recipient object that is listening for messages.
 

@@ -3,7 +3,7 @@ title: .NET Development on Azure Configuration Checklist
 description: Provides a quick summary of all the tools you should have installed to do .net development with Azure
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 3/32/2023
+ms.date: 3/23/2023
 ---
 
 # .NET on Azure development environment checklist

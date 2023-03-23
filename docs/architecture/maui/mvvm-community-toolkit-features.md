@@ -52,7 +52,7 @@ public class SampleViewModel : INotifyPropertyChanged
 
 While some optimizations could be made over time, we will still end up with a fairly verbose set of code for defining our ViewModel. This code can be difficult to maintain and becomes error-prone.
 
-The MVVM Toolkit (`CommunityToolkit.Mvvm`) package can be used to help address and simplify these common MVVM patterns. The MVVM Toolkit, along with newer features to the .NET language, allows for simplified logic, easy adoption into a project, and runtime independence. The example below shows the same ViewModel using components that come with the MVVM Toolkit:
+The [CommunityToolkit.Mvvm NuGet Package](/dotnet/communitytoolkit/mvvm/) (aka MVVM Toolkit) can be used to help address and simplify these common MVVM patterns. The MVVM Toolkit, along with newer features to the .NET language, allows for simplified logic, easy adoption into a project, and runtime independence. The example below shows the same ViewModel using components that come with the MVVM Toolkit:
 
 ```csharp
 public partial class SampleViewModel : ObservableObject

@@ -25,13 +25,13 @@ public class SampleViewModel : INotifyPropertyChanged
     public string Name
     {
         get => _name;
-        set => this.SetPropertyValue(ref _name, value);
+        set => SetPropertyValue(ref _name, value);
     }
 
     public int Value
     {
         get => _value;
-        set => this.SetPropertyValue(ref _value, value);
+        set => SetPropertyValue(ref _value, value);
     }
 
     protected bool SetPropertyValue<T>(ref T storageField, T newValue, [CallerMemberName] string propertyName = "")
@@ -40,7 +40,7 @@ public class SampleViewModel : INotifyPropertyChanged
             return false;
 
         storageField = newValue;
-        this.RaisePropertyChanged(propertyName);
+        RaisePropertyChanged(propertyName);
 
         return true;
     }
@@ -72,7 +72,7 @@ public partial class SampleViewModel : ObservableObject
 
 In comparison to the original example, we were able to drastically reduce the overall complexity and simplify the maintainability of our ViewModel. The MVVM Toolkit comes with many pre-built common components and features, such as the `ObservableObject` shown above, that simplifies and standardizes the code that we have throughout the application.
 
-## ObservableObject
+## `ObservableObject`
 
 The MVVM Toolkit provides `ObservableObject` which is intended for use as the base of our `ViewModel` objects or any object that needs to raise change notifications. It implements `INotifyPropertyChanged` and `INotifyPropertyChanging` along with helper methods for setting properties and raising changes. Below is an example of a standard ViewModel using `ObservableObject`:
 
@@ -85,13 +85,13 @@ public class SampleViewModel : ObservableObject
     public string Name
     {
         get => _name;
-        set => this.SetProperty(ref _name, value);
+        set => SetProperty(ref _name, value);
     }
 
     public int Value
     {
         get => _value;
-        set => this.SetProperty(ref _value, value);
+        set => SetProperty(ref _value, value);
     }
 }
 ```
@@ -100,26 +100,26 @@ public class SampleViewModel : ObservableObject
 
 For more detailed information on `ObservableObject`, see [ObservableObject](/dotnet/communitytoolkit/mvvm/observableobject) in the MVVM Toolkit Developer Center.
 
-## RelayCommand and AsyncRelayCommand
+## `RelayCommand` and `AsyncRelayCommand`
 
-Interaction between .NET MAUI controls (e.g. tapping a button or selecting an item from a collection) and the ViewModel is done with the `ICommand` interface. .NET MAUI comes with a default implementation of `ICommand` with the `Command` object. .NET MAUI's `Command` is fairly basic and lacks support for more advanced features, such as supporting asynchronous work and command execution status.
+Interaction between .NET MAUI controls (for example, tapping a button or selecting an item from a collection) and the ViewModel is done with the `ICommand` interface. .NET MAUI comes with a default implementation of `ICommand` with the `Command` object. .NET MAUI's `Command` is fairly basic and lacks support for more advanced features, such as supporting asynchronous work and command execution status.
 
 The MVVM Toolkit comes with two commands, `RelayCommand` and `AsyncRelayCommand`. `RelayCommand` is intended for situations where you have synchronous code to execute and has a fairly similar implementation to the .NET MAUI `Command` object.
 
 > [!NOTE]
-> Even though the.NET MAUI `Command` and `RelayCommand` are similar, using `RelayCommand` allows for decoupling your ViewModel from any direct .NET MAUI references. This means that your ViewModel is more portable which can lead to easier reuse across project.
+> Even though the .NET MAUI `Command` and `RelayCommand` are similar, using `RelayCommand` allows for decoupling your ViewModel from any direct .NET MAUI references. This means that your ViewModel is more portable, leading to easier reuse across projects.
 
 `AsyncRelayCommand` provides many additional features when working with asynchronous workflows. This is quite common in our ViewModel as we are typically communicating with repositories, APIs, databases, and other systems that utilize `async/await`. The `AsyncRelayCommand` constructor takes in an execution task defined as a `Func<Task>` or a delegate returning `Task` as part of the constructor. While the execution task is running, `AsyncRelayCommand` will monitor the state of the task and provides updates using the `IsRunning` property. The `IsRunning` property can be bound to the UI which helps manage control states such as showing loading with an `ActivityIndicator` or disabling/enabling a control. While the execution task is being executed, the `Cancel` method can be called to attempt cancellation of the execution task, if supported.
 
-By default, `AsyncRelayCommand` does not allow concurrent execution. This is very helpful in situations where a user could unintentionally tap a control multiple times to execute a long-running or costly operation. During task execution, `AsyncRelayCommand` will automatically call the `CanExecuteChanged` event. In .NET MAUI, controls that support the `Command` and `CommandParameter` properties, such as `Button`, will listen to this event and automatically enable or disable it during execution. This functionality can be overridden by using a custom `canExecute` parameter or setting the `AsyncRelayCommandOptions.AllowConcurrentExecutions` flag in the constructor.
+By default, `AsyncRelayCommand` doesn't allow concurrent execution. This is very helpful in situations where a user could unintentionally tap a control multiple times to execute a long-running or costly operation. During task execution, `AsyncRelayCommand` will automatically call the `CanExecuteChanged` event. In .NET MAUI, controls that support the `Command` and `CommandParameter` properties, such as `Button`, will listen to this event and automatically enable or disable it during execution. This functionality can be overridden by using a custom `canExecute` parameter or setting the `AsyncRelayCommandOptions.AllowConcurrentExecutions` flag in the constructor.
 
 For more detailed information on implementing commands, see the section [Implementing commands](mvvm.md#implementing-commands) in the MVVM chapter. Detailed information for the `RelayCommand` and `AsyncRelayCommand` is available in the [Commanding](/dotnet/communitytoolkit/mvvm/relaycommand) of the MVVM Toolkit Developer Center.
 
 ## Source Generators
 
-Using the MVVM Toolkit components out-of-the-box allows us to greatly simplify our ViewModel. The MVVM Toolkit allows us to simplify common code use cases even further by using [Source Generators](/dotnet/csharp/roslyn-sdk/source-generators-overview). The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
+Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify our ViewModel. The MVVM Toolkit allows you to simplify common code use cases even further by using [Source Generators](/dotnet/csharp/roslyn-sdk/source-generators-overview). The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
 
-> [!NOTE]
+> [!IMPORTANT]
 > The MVVM Toolkit Source Generators generate code that is additive to our existing objects. Because of this, any object that is leveraging a source generator will need to be marked as `partial`.
 
 The MVVM Toolkit `ObservableProperty` attribute works on classes based-off on `ObservableObject` and will wrap a private variable as a property that generates changes. The following code shows an example of using the `ObservableObject` attribute:
@@ -132,7 +132,7 @@ public partial class SampleViewModel : ObservableObject
 }
 ```
 
-With the `ObservableProperty` attribute applied to the `_name` variable, the source generator will run and generate another partial class with the following code:
+With the `ObservableProperty` attribute applied to the `_name` field, the source generator will run and generate another partial class with the following code:
 
 ```csharp
 partial class SampleViewModel
@@ -155,7 +155,7 @@ partial class SampleViewModel
 }
 ```
 
-The generated `SampleViewModel` has used our private `_name` variable and generated a new property `Name` that implements all of the logic needed for raising change notifications.
+The generated `SampleViewModel` has used the private `_name` field and generated a new `Name` property that implements all of the logic needed for raising change notifications.
 
 The MVVM Toolkit `RelayCommand` attribute can be applied to methods within an `ObservableObject` and will create a corresponding `RelayCommand` or `AsyncRelayCommand`. The following code shows examples of using the `RelayCommand` attribute:
 

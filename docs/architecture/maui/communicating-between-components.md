@@ -1,6 +1,6 @@
 ---
 title: Communicating Between Components
-description: Providing loosely-coupled messaging for a .NET MAUI application 
+description: Providing loosely-coupled messaging for a .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 03/02/2023
@@ -33,7 +33,7 @@ There are two implementations of the `IMessenger` interface that come with the `
 > [!NOTE]
 > While the `IMessenger` interface permits communication between loosely-coupled classes, it does not offer the only architectural solution to this issue. For example, communication between a view model and a view can also be achieved by the binding engine and through property change notifications. In addition, communication between two view models can also be achieved by passing data during navigation.
 
-The eShopOnContainers multi-platform app uses the `WeakReferenceMessenger` class to communicate between loosely coupled components. The app defines a single message named `AddProductMessage`. The `AddProductMessage` is published by the `CatalogViewModel` class when an item is added to the shopping basket. In return, the `CatalogView` class subscribes to the message and uses this to highlight the product adds with an animation in response.
+The eShopOnContainers multi-platform app uses the `WeakReferenceMessenger` class to communicate between loosely coupled components. The app defines a single message named `AddProductMessage`. The `AddProductMessage` is published by the `CatalogViewModel` class when an item is added to the shopping basket. In return, the `CatalogView` class subscribes to the message and uses this to highlight the product adds with animation in response.
 
 In the eShopOnContainers multi-platform app, `WeakReferenceMessenger` is used to update the UI in response to an action occurring in another class. Therefore, messages are published from the thread that the class is executing on, with subscribers receiving the message on the same thread.
 
@@ -61,7 +61,7 @@ The base class is defined using `ValueChangedMessage<T>` where T can be of any t
 
 ## Publishing a message
 
-In order to publish a message, we will need to use the `IMessenger.Send` method. This can be accessed most commonly through `WeakReferenceMessenger.Default.Send` or `StrongReferenceMessenger.Default.Send`. The message sent can be of any object type. The following code example demonstrates publishing the `AddProduct` message:
+To publish a message, we will need to use the `IMessenger.Send` method. This can be accessed most commonly through `WeakReferenceMessenger.Default.Send` or `StrongReferenceMessenger.Default.Send`. The message sent can be of any object type. The following code example demonstrates publishing the `AddProduct` message:
 
 ```csharp
 WeakReferenceMessenger.Default.Send(new Messages.AddProductMessage(BadgeCount));
@@ -106,7 +106,7 @@ WeakReferenceMessenger.Default.Unregister<Messages.AddProductMessage>(this);
 ```
 
 > [!NOTE]
-> In this example, it is not fully necessary to call `Unregister` as the `WeakReferenceMessenger` will allow unused objects to be garbage collected. If the `StrongReferenceMessenger` were used, it would be advised to call `Unregister` for any subscriptions that are no longer in use.  
+> In this example, it is not fully necessary to call `Unregister` as the `WeakReferenceMessenger` will allow unused objects to be garbage collected. If the `StrongReferenceMessenger` were used, it would be advised to call `Unregister` for any subscriptions that are no longer in use.
 
 In this example, the `Unsubscribe` method syntax specifies the type argument of the message and the recipient object that is listening for messages.
 

@@ -120,7 +120,7 @@ Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify 
 > [!IMPORTANT]
 > The MVVM Toolkit Source Generators generate code that is additive to our existing objects. Because of this, any object that is leveraging a source generator will need to be marked as `partial`.
 
-The MVVM Toolkit `ObservableProperty` attribute works on classes based-off on `ObservableObject` and will wrap a private variable as a property that generates changes. The following code shows an example of using the `ObservableObject` attribute:
+The MVVM Toolkit `ObservableProperty` attribute can be applied to fields in objects that inherit from `ObservableObject` and will wrap a private field with a property that generates changes. The following code shows an example of using the `ObservableObject` attribute on the `_name` field:
 
 ```csharp
 public partial class SampleViewModel : ObservableObject

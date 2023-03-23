@@ -34,15 +34,13 @@ public class SampleViewModel : INotifyPropertyChanged
         set => SetPropertyValue(ref _value, value);
     }
 
-    protected bool SetPropertyValue<T>(ref T storageField, T newValue, [CallerMemberName] string propertyName = "")
+    protected void SetPropertyValue<T>(ref T storageField, T newValue, [CallerMemberName] string propertyName = "")
     {
         if (Equals(storageField, newValue))
-            return false;
+            return;
 
         storageField = newValue;
         RaisePropertyChanged(propertyName);
-
-        return true;
     }
 
     protected virtual void RaisePropertyChanged([CallerMemberName] string propertyName = "")

@@ -35,7 +35,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Run the starter application
 
-You can get the code for the starter application used in this tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/whats-new/tutorials](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start) folder.
+You can get the code for the starter application used in this tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [asynchronous-programming/snippets](https://github.com/dotnet/docs/tree/main/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/start) folder.
 
 The starter application is a console application that uses the [GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [dotnet/docs](https://github.com/dotnet/docs) repository. Start by looking at the following code for the starter app `Main` method:
 
@@ -137,7 +137,7 @@ You use another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerab
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 
-You can get the code for the finished tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/whats-new/tutorials](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished) folder.
+You can get the code for the finished tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [asynchronous-programming/snippets](https://github.com/dotnet/docs/tree/main/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/finished) folder.
 
 ## Run the finished application
 

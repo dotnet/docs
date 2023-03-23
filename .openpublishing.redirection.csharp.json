@@ -97,38 +97,6 @@
             "redirect_url": "/dotnet/csharp/fundamentals/functional/discards"
         },
         {
-            "source_path_from_root": "/docs/csharp/expression-trees.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-classes.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-classes"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-trees-building.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-building"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-trees-explained.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-explained"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-trees-execution.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-execution"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-trees-interpreting.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-interpreting"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-trees-summary.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/expression-trees-translating.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-translating"
-        },
-        {
             "source_path_from_root": "/docs/csharp/features.md",
             "redirect_url": "/dotnet/csharp/programming-guide/concepts"
         },
@@ -237,7 +205,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/interop.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/interop/index"
+            "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
             "source_path_from_root": "/docs/csharp/lambda-expressions.md",
@@ -816,10 +784,6 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
         {
-            "source_path_from_root": "/docs/csharp/language-reference/keywords/using-statement.md",
-            "redirect_url": "/dotnet/csharp/language-reference/statements/using"
-        },
-        {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/using-static.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/using-directive"
         },
@@ -1327,10 +1291,6 @@
             "redirect_url": "/dotnet/csharp/asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks"
         },
         {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/index.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/"
-        },
-        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/attributeusage.md",
             "redirect_url": "/dotnet/csharp/language-reference/attributes/general"
         },
@@ -1339,44 +1299,8 @@
             "redirect_url": "/dotnet/csharp/language-reference/attributes/global"
         },
         {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/creating-custom-attributes.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/creating-custom-attributes"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/accessing-attributes-by-using-reflection"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-create-a-c-cpp-union-by-using-attributes"
-        },
-        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/caller-information.md",
             "redirect_url": "/dotnet/csharp/language-reference/attributes/caller-information"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/index.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/index"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-execution"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/expression-trees-translating"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/debugview-syntax.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/expression-trees/debugview-syntax"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/adding-elements-attributes-and-nodes-to-an-xml-tree.md",
@@ -1738,11 +1662,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq",
-            "redirect_document_id": true
-        },
-        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-query-linq-to-xml-using-xpath.md",
             "redirect_url": "/dotnet/standard/linq/query-linq-xml-xpath",
             "redirect_document_id": true
@@ -1883,7 +1802,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-and-reflection.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq"
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-to-xml-annotations.md",
@@ -2226,27 +2145,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/reflection.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/",
-            "redirect_document_id": true
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/index.md",
-            "redirect_url": "/dotnet/standard/serialization/"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md",
-            "redirect_url": "dotnet/standard/serialization/how-to-deserialize-an-object"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md",
-            "redirect_url": "/dotnet/standard/serialization/how-to-serialize-an-object"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md",
-            "redirect_url": "/dotnet/standard/serialization/system-text-json/how-to"
-        },
-        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
             "redirect_url": "/dotnet/api/system.threading.threadpool.queueuserworkitem"
         },
@@ -2323,58 +2221,8 @@
             "redirect_url": "/dotnet/csharp/fundamentals/exceptions/using-exceptions"
         },
         {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/index.md",
-            "redirect_url": "/dotnet/standard/standard/io/"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md",
-            "redirect_url": "/dotnet/standard/io/how-to-copy-directories"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-create-a-file-or-folder.md",
-            "redirect_url": "/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-create-a-key-in-the-registry.md",
-            "redirect_url": "/dotnet/api/microsoft.win32.registry"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-get-information-about-files-folders-and-drives.md",
-            "redirect_url": "/dotnet/standard/io/common-i-o-tasks"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-iterate-through-a-directory-tree.md",
-            "redirect_url": "/dotnet/standard/io/how-to-enumerate-directories-and-files"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md",
-            "redirect_url": "dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-read-from-a-text-file.md",
-            "redirect_url": "dotnet/standard/io/how-to-read-text-from-a-file"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md",
-            "redirect_url": "dotnet/standard/io/how-to-read-text-from-a-file"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-write-to-a-text-file.md",
-            "redirect_url": "dotnet/standard/io/how-to-write-text-to-a-file"
-        },
-        {
             "source_path_from_root": "/docs/csharp/programming-guide/generics/benefits-of-generics.md",
             "redirect_url": "/dotnet/csharp/programming-guide/generics"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/generics/generics-and-attributes.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/generics-and-attributes",
-            "redirect_document_id": true
-        },
-        {
-            "source_path_from_root": "/docs/csharp/programming-guide/generics/generics-and-reflection.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/generics-and-reflection",
-            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
@@ -2914,7 +2762,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/reference-semantics-with-value-types.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/performance"
+            "redirect_url": "/dotnet/csharp/write-safe-efficient-code"
         },
         {
             "source_path_from_root": "/docs/csharp/reflection.md",
@@ -2977,16 +2825,8 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-tuples"
         },
         {
-            "source_path_from_root": "/docs/csharp/tutorials/attributes.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/attribute-tutorial"
-        },
-        {
             "source_path_from_root": "/docs/csharp/tutorials/default-interface-members-versions.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
-        },
-        {
-            "source_path_from_root": "/docs/csharp/tutorials/default-interface-methods-versions.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/csharp-6.yml",
@@ -3061,10 +2901,6 @@
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/local-environment"
         },
         {
-            "source_path_from_root": "/docs/csharp/tutorials/mixins-with-default-interface-methods.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods"
-        },
-        {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md",
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local"
         },
@@ -3136,11 +2972,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/default-interface-methods-versions.md",
-            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md",
-            "redirect_url": "/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream"
+            "redirect_url": "/dotnet/csharp/tutorials/generate-consume-asynchronous-stream"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/mixins-with-default-interface-methods.md",

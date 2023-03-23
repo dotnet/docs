@@ -28,7 +28,7 @@ The `IMessenger` interface allows for multicast publish-subscribe functionality.
 
 ![Multicast publish-subscribe functionality.](./media/messaging-center.png)
 
-There are two implementations of the `IMessenger` interface that come with the `CommunityToolkit.Mvvm` package. The `WeakReferenceMessenger` uses weak references which can result in easier cleanup for message subscribers. This is a good option if your subscribers do not have a clearly defined lifecycle. The `StrongReferenceMessenger` uses strong references which can result in better performance and a more clearly controlled lifetime of the subscription. If you have a workflow with a very controlled lifetime (e.g. a subscription that is bound to a page's `OnAppearing` and `OnDisappearing` methods), the `StrongReferenceManager` may be a better option, if performance is a concern. Both of these implementations are available with default implementations ready to use by referencing either `WeakReferenceMessenger.Default` or `StrongReferenceMessenger.Default`.
+There are two implementations of the `IMessenger` interface that come with the `CommunityToolkit.Mvvm` package. The `WeakReferenceMessenger` uses weak references which can result in easier cleanup for message subscribers. This is a good option if your subscribers do not have a clearly defined lifecycle. The `StrongReferenceMessenger` uses strong references which can result in better performance and a more clearly controlled lifetime of the subscription. If you have a workflow with a very controlled lifetime (for example, a subscription that is bound to a page's `OnAppearing` and `OnDisappearing` methods), the `StrongReferenceManager` may be a better option, if performance is a concern. Both of these implementations are available with default implementations ready to use by referencing either `WeakReferenceMessenger.Default` or `StrongReferenceMessenger.Default`.
 
 > [!NOTE]
 > While the `IMessenger` interface permits communication between loosely-coupled classes, it does not offer the only architectural solution to this issue. For example, communication between a view model and a view can also be achieved by the binding engine and through property change notifications. In addition, communication between two view models can also be achieved by passing data during navigation.
@@ -57,7 +57,7 @@ public class AddProductMessage : ValueChangedMessage<int>
 }
 ```
 
-The base class is defined using `ValueChangedMessage<T>` where T can be of any type needed to pass data. Both message publishers and subscribers can expect messages of a specific type (i.e. `AddProductMessage`). This can help ensure that both parties have agreed to a messaging contract and that the data provided with that contract will be consistent. Additionally, this approach provides compile-time type safety and refactoring support.
+The base class is defined using `ValueChangedMessage<T>` where `T` can be of any type needed to pass data. Both message publishers and subscribers can expect messages of a specific type (for example, `AddProductMessage`). This can help ensure that both parties have agreed to a messaging contract and that the data provided with that contract will be consistent. Additionally, this approach provides compile-time type safety and refactoring support.
 
 ## Publishing a message
 
@@ -106,7 +106,7 @@ WeakReferenceMessenger.Default.Unregister<Messages.AddProductMessage>(this);
 ```
 
 > [!NOTE]
-> In this example, it is not fully necessary to call `Unregister` as the `WeakReferenceMessenger` will allow unused objects to be garbage collected. If the `StrongReferenceMessenger` were used, it would be advised to call `Unregister` for any subscriptions that are no longer in use.
+> In this example, it isn't fully necessary to call `Unregister` as the `WeakReferenceMessenger` will allow unused objects to be garbage collected. If the `StrongReferenceMessenger` were used, it would be advised to call `Unregister` for any subscriptions that are no longer in use.
 
 In this example, the `Unsubscribe` method syntax specifies the type argument of the message and the recipient object that is listening for messages.
 

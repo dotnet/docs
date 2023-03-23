@@ -119,7 +119,9 @@ items:
     fibonacciNumbers.Add(previous + previous2);
 
     foreach(var item in fibonacciNumbers)
+    {
         Console.WriteLine(item);
+    }
     ```
 
     Press **Run** to see the results;
@@ -145,7 +147,9 @@ items:
         fibonacciNumbers.Add(previous + previous2);
     }
     foreach(var item in fibonacciNumbers)
+    {
         Console.WriteLine(item);
+    }
     ```
 
     With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.

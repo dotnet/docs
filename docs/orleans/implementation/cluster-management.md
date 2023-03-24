@@ -179,5 +179,5 @@ A natural question that might be asked is why not rely completely on [Apache Zoo
 
 ### Acknowledgements
 
-We would to acknowledge the contribution of [Alex Kogan](https://www.linkedin.com/in/alex-kogan-3a2b52) to the design and implementation of the first version of this protocol. This work was done as part of a summer internship in Microsoft Research in the Summer of 2011.
+We would to acknowledge the contribution of Alex Kogan to the design and implementation of the first version of this protocol. This work was done as part of a summer internship in Microsoft Research in the Summer of 2011.
 The implementation of ZooKeeper based `IMembershipTable` was done by [Shay Hazor](https://github.com/shayhatsor), the implementation of SQL `IMembershipTable` was done by [Veikko Eeva](https://github.com/veikkoeeva), the implementation of AWS DynamoDB `IMembershipTable` was done by [Gutemberg Ribeiro](https://github.com/galvesribeiro/) and the implementation of Consul based `IMembershipTable` was done by [Paul North](https://github.com/PaulNorth).

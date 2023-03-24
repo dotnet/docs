@@ -3,7 +3,7 @@ using System.Diagnostics;
 MyListener TheListener = new MyListener();
 TheListener.Listening();
 HTTPClient Client = new HTTPClient();
-Client.SendWebRequest("https://docs.microsoft.com/dotnet/core/diagnostics/");
+Client.SendWebRequest("https://learn.microsoft.com/dotnet/core/diagnostics/");
 
 // <snippit4>
 class HTTPClient

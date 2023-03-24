@@ -38,7 +38,7 @@ Partial Public NotInheritable Class MainPage
                 ' Retrieve the stream. This method returns a IRandomAccessStreamWithContentType.
                 Dim stream = Await result.OpenReadAsync()
 
-                ' Convert the stream to a .NET stream using AsStreamForRead, pass to a 
+                ' Convert the stream to a .NET stream using AsStreamForRead, pass to a
                 ' StreamReader and read the stream.
                 Using sr As New StreamReader(stream.AsStream())
                     TextBlock1.Text = sr.ReadToEnd()
@@ -58,7 +58,7 @@ Partial Public NotInheritable Class MainPage
 
         ' Create an HttpClient and access an image as a stream.
         Dim client = New HttpClient()
-        Dim stream As Stream = Await client.GetStreamAsync("https://docs.microsoft.com/en-us/dotnet/images/hub/featured-1.png")
+        Dim stream As Stream = Await client.GetStreamAsync("https://learn.microsoft.com/en-us/dotnet/images/hub/featured-1.png")
         ' Create a .NET memory stream.
         Dim memStream = New MemoryStream()
 

@@ -12,7 +12,7 @@ private async void button2_Click(object sender, RoutedEventArgs e)
 {
     // Create an HttpClient and access an image as a stream.
     var client = new HttpClient();
-    Stream stream = await client.GetStreamAsync("https://docs.microsoft.com/en-us/dotnet/images/hub/featured-1.png");
+    Stream stream = await client.GetStreamAsync("https://learn.microsoft.com/en-us/dotnet/images/hub/featured-1.png");
     // Create a .NET memory stream.
     var memStream = new MemoryStream();
     // Convert the stream to the memory stream, because a memory stream supports seeking.

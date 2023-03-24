@@ -12,7 +12,7 @@ Private Async Sub button2_Click(sender As Object, e As RoutedEventArgs)
 
     ' Create an HttpClient and access an image as a stream.
     Dim client = New HttpClient()
-    Dim stream As Stream = Await client.GetStreamAsync("https://docs.microsoft.com/en-us/dotnet/images/hub/featured-1.png")
+    Dim stream As Stream = Await client.GetStreamAsync("https://learn.microsoft.com/en-us/dotnet/images/hub/featured-1.png")
     ' Create a .NET memory stream.
     Dim memStream = New MemoryStream()
 

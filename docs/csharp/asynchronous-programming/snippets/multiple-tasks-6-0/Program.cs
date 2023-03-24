@@ -7,25 +7,25 @@ HttpClient s_client = new()
 
 IEnumerable<string> s_urlList = new string[]
 {
-    "https://docs.microsoft.com",
-    "https://docs.microsoft.com/aspnet/core",
-    "https://docs.microsoft.com/azure",
-    "https://docs.microsoft.com/azure/devops",
-    "https://docs.microsoft.com/dotnet",
-    "https://docs.microsoft.com/dynamics365",
-    "https://docs.microsoft.com/education",
-    "https://docs.microsoft.com/enterprise-mobility-security",
-    "https://docs.microsoft.com/gaming",
-    "https://docs.microsoft.com/graph",
-    "https://docs.microsoft.com/microsoft-365",
-    "https://docs.microsoft.com/office",
-    "https://docs.microsoft.com/powershell",
-    "https://docs.microsoft.com/sql",
-    "https://docs.microsoft.com/surface",
-    "https://docs.microsoft.com/system-center",
-    "https://docs.microsoft.com/visualstudio",
-    "https://docs.microsoft.com/windows",
-    "https://docs.microsoft.com/xamarin"
+    "https://learn.microsoft.com",
+    "https://learn.microsoft.com/aspnet/core",
+    "https://learn.microsoft.com/azure",
+    "https://learn.microsoft.com/azure/devops",
+    "https://learn.microsoft.com/dotnet",
+    "https://learn.microsoft.com/dynamics365",
+    "https://learn.microsoft.com/education",
+    "https://learn.microsoft.com/enterprise-mobility-security",
+    "https://learn.microsoft.com/gaming",
+    "https://learn.microsoft.com/graph",
+    "https://learn.microsoft.com/microsoft-365",
+    "https://learn.microsoft.com/office",
+    "https://learn.microsoft.com/powershell",
+    "https://learn.microsoft.com/sql",
+    "https://learn.microsoft.com/surface",
+    "https://learn.microsoft.com/system-center",
+    "https://learn.microsoft.com/visualstudio",
+    "https://learn.microsoft.com/windows",
+    "https://learn.microsoft.com/xamarin"
 };
 
 await SumPageSizesAsync();
@@ -63,25 +63,25 @@ static async Task<int> ProcessUrlAsync(string url, HttpClient client)
 }
 
 // Example output:
-// https://docs.microsoft.com                                      132,517
-// https://docs.microsoft.com/powershell                            57,375
-// https://docs.microsoft.com/gaming                                33,549
-// https://docs.microsoft.com/aspnet/core                           88,714
-// https://docs.microsoft.com/surface                               39,840
-// https://docs.microsoft.com/enterprise-mobility-security          30,903
-// https://docs.microsoft.com/microsoft-365                         67,867
-// https://docs.microsoft.com/windows                               26,816
-// https://docs.microsoft.com/xamarin                               57,958
-// https://docs.microsoft.com/dotnet                                78,706
-// https://docs.microsoft.com/graph                                 48,277
-// https://docs.microsoft.com/dynamics365                           49,042
-// https://docs.microsoft.com/office                                67,867
-// https://docs.microsoft.com/system-center                         42,887
-// https://docs.microsoft.com/education                             38,636
-// https://docs.microsoft.com/azure                                421,663
-// https://docs.microsoft.com/visualstudio                          30,925
-// https://docs.microsoft.com/sql                                   54,608
-// https://docs.microsoft.com/azure/devops                          86,034
+// https://learn.microsoft.com                                      132,517
+// https://learn.microsoft.com/powershell                            57,375
+// https://learn.microsoft.com/gaming                                33,549
+// https://learn.microsoft.com/aspnet/core                           88,714
+// https://learn.microsoft.com/surface                               39,840
+// https://learn.microsoft.com/enterprise-mobility-security          30,903
+// https://learn.microsoft.com/microsoft-365                         67,867
+// https://learn.microsoft.com/windows                               26,816
+// https://learn.microsoft.com/xamarin                               57,958
+// https://learn.microsoft.com/dotnet                                78,706
+// https://learn.microsoft.com/graph                                 48,277
+// https://learn.microsoft.com/dynamics365                           49,042
+// https://learn.microsoft.com/office                                67,867
+// https://learn.microsoft.com/system-center                         42,887
+// https://learn.microsoft.com/education                             38,636
+// https://learn.microsoft.com/azure                                421,663
+// https://learn.microsoft.com/visualstudio                          30,925
+// https://learn.microsoft.com/sql                                   54,608
+// https://learn.microsoft.com/azure/devops                          86,034
 
 // Total bytes returned:    1,454,184
 // Elapsed time:            00:00:01.1290403

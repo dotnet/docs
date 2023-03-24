@@ -186,7 +186,7 @@ When training and validation data do not change often, it is good practice to ca
 
 ### Create data loading utility method
 
-The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method.
+The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method inside the `ImageData` class.
 
 ```csharp
 IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)

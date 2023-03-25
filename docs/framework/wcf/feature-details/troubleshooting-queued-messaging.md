@@ -32,8 +32,6 @@ This section contains common questions and troubleshooting help for using queues
 
 - Only MSMQ 4.0 supports remote transacted read.
 
-For more information, see [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md).
-
 **Q:** Can I use MSMQ 3.0 on one side of a queued communication and MSMQ 4.0 on the other side?
 
 **A:** Yes.

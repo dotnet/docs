@@ -63,7 +63,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    ```csharp
    using System.Reflection;
 
-   namespace TeleprompterConsole;
+   namespace microsoft.botsay;
 
    internal class Program
    {
@@ -74,6 +74,8 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    }
    ```
 
+   The `using System.Reflection;` statement is needed by code that you add in the next step.
+
 1. Replace the `Main` method with the following code to process the command-line arguments for the application.
 
    ```csharp
@@ -81,7 +83,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    {
        if (args.Length == 0)
        {
-           var versionString = Assembly.GetEntryAssembly()?
+           var versionString = System.Reflection.Assembly.GetEntryAssembly()?
                                    .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
                                    .InformationalVersion
                                    .ToString();

@@ -74,7 +74,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    }
    ```
 
-   The `using System.Reflection;` statement is needed by code that you add in the next step.
+   The `using System.Reflection;` directive is needed by code that you add in the next step.
 
 1. Replace the `Main` method with the following code to process the command-line arguments for the application.
 

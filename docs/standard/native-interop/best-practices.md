@@ -234,7 +234,7 @@ The following types, being pointers, do follow the width of the platform. Use `I
 
 A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or `UIntPtr`, but prefer `void*` when possible.
 
-[Windows Data Types](https://learn.microsoft.com/en-us/windows/win32/winprog/windows-data-types)
+[Windows Data Types](/windows/win32/winprog/windows-data-types)
 
 [Data Type Ranges](https://github.com/MicrosoftDocs/cpp-docs/blob/main/docs/cpp/data-type-ranges.md)
 
@@ -315,7 +315,7 @@ There are types in the C/C++ language that have latitude in how they are defined
 
 ### C/C++ `long`
 
-C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is not correct unless you are only targeting Windows.
+C/C++ `long` and C# `long` are not necessarily the same size.
 
 The `long` type in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum number of required bits, but platforms can choose to use more bits if desired. The following table illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
 
@@ -324,7 +324,9 @@ The `long` type in C/C++ is defined to have ["at least 32"](https://en.cpprefere
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-(This problem with C/C++ `long` does not exist for `char`, `short`, `int` and `long long` as they are 8, 16, 32 and 64 bits respectively on all of these platforms.)
+In contrast, C# `long` is always 64 bit. For this reason it is best to avoid using C# `long` to interop with C/C++ `long`.
+
+(This problem with C/C++ `long` does not exist for C/C++ `char`, `short`, `int` and `long long` as they are 8, 16, 32 and 64 bits respectively on all of these platforms.)
 
 In .NET 6 and later versions, use the [`CLong`](xref:System.Runtime.InteropServices.CLong) and [`CULong`](xref:System.Runtime.InteropServices.CULong) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 

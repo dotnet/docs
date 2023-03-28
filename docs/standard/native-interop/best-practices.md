@@ -183,20 +183,38 @@ The following types are the same size on 32-bit and 64-bit Windows, despite thei
 | 32    | `BOOL`           | `int`    | `bool`                               |
 | 8     | `BOOLEAN`        | `byte`   | `[MarshalAs(UnmanagedType.U1)] bool` |
 | 8     | `BYTE`           | `byte`   |                                      |
-| 8     | `CHAR`           | `sbyte`  |                                      |
 | 8     | `UCHAR`          | `byte`   |                                      |
-| 16    | `SHORT`          | `short`  |                                      |
+| 8     | `UINT8`          | `byte`   |                                      |
+| 8     | `CCHAR`          | `byte`   |                                      |
+| 8     | `CHAR`           | `sbyte`  |                                      |
+| 8     | `CHAR`           | `sbyte`  |                                      |
+| 8     | `INT8`           | `sbyte`  |                                      |
 | 16    | `CSHORT`         | `short`  |                                      |
+| 16    | `INT16`          | `short`  |                                      |
+| 16    | `SHORT`          | `short`  |                                      |
+| 16    | `ATOM`           | `ushort` |                                      |
+| 16    | `UINT16`         | `ushort` |                                      |
 | 16    | `USHORT`         | `ushort` |                                      |
 | 16    | `WORD`           | `ushort` |                                      |
-| 16    | `ATOM`           | `ushort` |                                      |
 | 32    | `INT`            | `int`    |                                      |
+| 32    | `INT32`          | `int`    |                                      |
 | 32    | `LONG`           | `int`    |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `LONG32`         | `int`    |                                        |
+| 32    | `CLONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `DWORD`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `DWORD32`        | `uint`   |                                      |
+| 32    | `UINT`           | `uint`   |                                      |
+| 32    | `UINT32`         | `uint`   |                                      |
 | 32    | `ULONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
-| 32    | `DWORD`          | `uint`   |                                      |
-| 64    | `QWORD`          | `long`   |                                      |
+| 32    | `ULONG32`        | `uint`   |                                      |
+| 64    | `INT64`          | `long`   |                                      |
 | 64    | `LARGE_INTEGER`  | `long`   |                                      |
+| 64    | `LONG64`         | `long`   |                                      |
 | 64    | `LONGLONG`       | `long`   |                                      |
+| 64    | `QWORD`          | `long`   |                                      |
+| 64    | `DWORD64`        | `ulong`  |                                      |
+| 64    | `UINT64`         | `ulong`  |                                      |
+| 64    | `ULONG64`        | `ulong`  |                                      |
 | 64    | `ULONGLONG`      | `ulong`  |                                      |
 | 64    | `ULARGE_INTEGER` | `ulong`  |                                      |
 | 32    | `HRESULT`        | `int`    |                                      |
@@ -297,7 +315,7 @@ There are types in the C/C++ language that have latitude in how they are defined
 
 ### C/C++ `long`
 
-C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is almost never correct.
+C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is not correct unless you are only targeting Windows.
 
 The `long` type in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum number of required bits, but platforms can choose to use more bits if desired. The following table illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
 
@@ -306,7 +324,7 @@ The `long` type in C/C++ is defined to have ["at least 32"](https://en.cpprefere
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-These differences can make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
+(This problem with C/C++ `long` does not exist for `char`, `short`, `int` and `long long` as they are 8, 16, 32 and 64 bits respectively on all of these platforms.)
 
 In .NET 6 and later versions, use the [`CLong`](xref:System.Runtime.InteropServices.CLong) and [`CULong`](xref:System.Runtime.InteropServices.CULong) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 

@@ -234,9 +234,9 @@ The following types, being pointers, do follow the width of the platform. Use `I
 
 A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or `UIntPtr`, but prefer `void*` when possible.
 
-[Windows Data Types](/windows/desktop/WinProg/windows-data-types)
+[Windows Data Types](https://learn.microsoft.com/en-us/windows/win32/winprog/windows-data-types)
 
-[Data Type Ranges](/cpp/cpp/data-type-ranges)
+[Data Type Ranges](https://github.com/MicrosoftDocs/cpp-docs/blob/main/docs/cpp/data-type-ranges.md)
 
 ### Formerly built-in supported types
 

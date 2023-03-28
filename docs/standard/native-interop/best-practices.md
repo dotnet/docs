@@ -236,7 +236,7 @@ A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or
 
 [Windows Data Types](/windows/win32/winprog/windows-data-types)
 
-[Data Type Ranges](https://github.com/MicrosoftDocs/cpp-docs/blob/main/docs/cpp/data-type-ranges.md)
+[Data Type Ranges](https://learn.microsoft.com/cpp/cpp/data-type-ranges)
 
 ### Formerly built-in supported types
 

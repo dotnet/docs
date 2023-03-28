@@ -33,10 +33,9 @@ To convert from a Windows Runtime random-access stream to a .NET Framework strea
 
 The following code example prompts you to select a file, opens it with Windows Runtime APIs, and then converts it to a .NET Framework stream. It reads the stream and outputs it to a text block. You would typically manipulate the stream with .NET Framework APIs before outputting the results.
 
-To run this example, create a UWP XAML app that contains a text block named `TextBlock1` and a button named  `Button1`. Associate the button click event with the `button1_Click` method shown in the example.
+To run this example, create a UWP XAML app that contains a text block named `TextBlock1` and a button named `Button1`. Associate the button click event with the `button1_Click` method shown in the example.
 
-  [!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/cs/mainpage1.xaml.cs)]
-  [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage1.xaml.vb)]
+[!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/MainPage.xaml.cs#snippet1)]
 
 ## Convert from a .NET Framework to a Windows Runtime stream
 
@@ -59,10 +58,9 @@ To convert from a .NET Framework stream to a Windows Runtime random-access strea
 > [!IMPORTANT]
 > Make sure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType> property to determine this.
 
-To run this example, create a UWP XAML app that targets the .NET Framework 4.5.1 and contains a text block named `TextBlock2` and a button named `Button2`. Associate the button click event with the `button2_Click` method shown in the example.
+To run this example, create a UWP XAML app that contains a text block named `TextBlock2`, a button named `Button2`, and an image named `Image1`. Associate the button click event with the `button2_Click` method shown in the example.
 
-  [!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/cs/mainpage2.xaml.cs)]
-  [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage2.xaml.vb)]
+[!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/WindowsRuntimeStreamExtensionsEx/MainPage.xaml.cs#snippet1)]
 
 ## See also
 

@@ -33,9 +33,35 @@ To convert from a Windows Runtime random-access stream to a .NET Framework strea
 
 The following code example prompts you to select a file, opens it with Windows Runtime APIs, and then converts it to a .NET Framework stream. It reads the stream and outputs it to a text block. You would typically manipulate the stream with .NET Framework APIs before outputting the results.
 
-To run this example, create a UWP XAML app that contains a text block named `TextBlock1` and a button named `Button1`. Associate the button click event with the `button1_Click` method shown in the example.
+```csharp
+// Create a file picker.
+FileOpenPicker picker = new FileOpenPicker();
+picker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+picker.ViewMode = PickerViewMode.List;
+picker.FileTypeFilter.Add(".txt");
 
-[!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/MainPage.xaml.cs#snippet1)]
+// Show picker, enabling user to pick one file.
+StorageFile result = await picker.PickSingleFileAsync();
+if (result != null)
+{
+    try
+    {
+        // Retrieve the stream. This method returns a IRandomAccessStreamWithContentType.
+        var stream = await result.OpenReadAsync();
+
+        // Convert the stream to a .NET stream using AsStream, pass to a
+        // StreamReader and read the stream.
+        using (StreamReader sr = new StreamReader(stream.AsStream()))
+        {
+            TextBlock1.Text = sr.ReadToEnd();
+        }
+    }
+    catch (Exception ex)
+    {
+        // ...
+    }
+}       
+```
 
 ## Convert from a .NET Framework to a Windows Runtime stream
 
@@ -58,9 +84,23 @@ To convert from a .NET Framework stream to a Windows Runtime random-access strea
 > [!IMPORTANT]
 > Make sure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType> property to determine this.
 
-To run this example, create a UWP XAML app that contains a text block named `TextBlock2`, a button named `Button2`, and an image named `Image1`. Associate the button click event with the `button2_Click` method shown in the example.
-
-[!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/WindowsRuntimeStreamExtensionsEx/MainPage.xaml.cs#snippet1)]
+```csharp
+// Create an HttpClient and access an image as a stream.
+var client = new HttpClient();
+Stream stream = await client.GetStreamAsync("https://learn.microsoft.com/en-us/dotnet/images/hub/featured-1.png");
+// Create a .NET memory stream.
+var memStream = new MemoryStream();
+// Convert the stream to the memory stream, because a memory stream supports seeking.
+await stream.CopyToAsync(memStream);
+// Set the start position.
+memStream.Position = 0;
+// Create a new bitmap image.
+var bitmap = new BitmapImage();
+// Set the bitmap source to the stream, which is converted to a IRandomAccessStream.
+bitmap.SetSource(memStream.AsRandomAccessStream());
+// Set the image control source to the bitmap.
+Image1.Source = bitmap;
+```
 
 ## See also
 

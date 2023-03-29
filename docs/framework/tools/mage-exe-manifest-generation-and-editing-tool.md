@@ -65,7 +65,7 @@ The following table shows the options supported by the `-New` and `-Update` comm
 |**-tr, -TrustLevel** `level`|Based on the zone in which the application URL resides.|Application manifests.|The level of trust to grant the application on client computers. Values include "Internet", "Intranet", and "FullTrust".|
 |**-um, -UseManifestForTrust** `willUseForTrust`|False|Application manifests.|Specifies whether the digital signature of the application manifest will be used for making trust decisions when the application runs on the client. Specifying "true" or "t" indicates that the application manifest will be used for trust decisions. Specifying "false" or "f" indicates that the signature of the deployment manifest will be used.|
 |**-v, -Version** `versionNumber`|1.0.0.0|Application manifests.<br /><br /> Deployment manifests.|The version of the deployment. The argument must be a valid version string of the format "*N.N.N.N*", where "*N*" is an unsigned 32-bit integer.|
-|**-wpf, -WPFBrowserApp**  `isWPFApp`|false|Application manifests.<br /><br /> Deployment manifests.|Use this flag only if the application is a Windows Presentation Foundation (WPF) application that will be hosted inside of Internet Explorer, and is not a stand-alone executable. Valid values are "true" or "t", and "false" or "f".<br /><br /> For application manifests, inserts the `hostInBrowser` attribute under the `entryPoint` element of the application manifest.<br /><br /> For deployment manifests, sets the `install` attribute on the `deployment` element to false, and saves the deployment manifest with a .xbap extension. Specifying this argument along with the **-Install** argument produces an error, because a browser-hosted application cannot be an installed, offline application.|
+|**-wpf, -WPFBrowserApp**  `isWPFApp`|false|Application manifests.<br /><br /> Deployment manifests.|Use this flag only if the application is a Windows Presentation Foundation (WPF) application that will be hosted inside a browser, and is not a stand-alone executable. Valid values are "true" or "t", and "false" or "f".<br /><br /> For application manifests, inserts the `hostInBrowser` attribute under the `entryPoint` element of the application manifest.<br /><br /> For deployment manifests, sets the `install` attribute on the `deployment` element to false, and saves the deployment manifest with a .xbap extension. Specifying this argument along with the **-Install** argument produces an error, because a browser-hosted application cannot be an installed, offline application.|
 
 ## Sign command options
 
@@ -169,7 +169,7 @@ The following example continues the previous example by specifying the deploymen
 mage -New Application -FromDirectory . -Name "Hello, World! Application" -Version 1.0.0.0 -Processor "x86" -ProviderUrl http://internalserver/HelloWorld/
 ```
 
-The following example demonstrates how to create a pair of manifests for deploying a WPF application that will be hosted in Internet Explorer.
+The following example demonstrates how to create a pair of manifests for deploying a WPF application that will be hosted in a browser.
 
 ```console
 mage -New Application -FromDirectory . -Version 1.0.0.0 -WPFBrowserApp true

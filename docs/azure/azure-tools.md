@@ -2,7 +2,7 @@
 title: Additional Azure Tools
 description: This article describes additional tools and utilities for working with Azure and how you can install them.
 ms.topic: conceptual
-ms.custom: devx-track-dotnet, engagement-fy23
+ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurepowershell
 ms.date: 1/26/2023
 author: alexwolfmsft
 ms.author: alexwolf

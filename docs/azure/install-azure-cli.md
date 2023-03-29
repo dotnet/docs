@@ -2,7 +2,7 @@
 title: Installing the Azure CLI
 description: Azure developers will need the Azure CLI installed, so this article describes why you need the CLI and where to download and install it from.
 ms.topic: conceptual
-ms.custom: devx-track-dotnet, engagement-fy23
+ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
 ms.date: 1/26/2023
 author: alexwolfmsft
 ms.author: alexwolf

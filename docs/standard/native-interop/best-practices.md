@@ -236,7 +236,7 @@ A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or
 
 [Windows Data Types](/windows/win32/winprog/windows-data-types)
 
-[Data Type Ranges](https://learn.microsoft.com/cpp/cpp/data-type-ranges)
+[Data Type Ranges](/cpp/cpp/data-type-ranges)
 
 ### Formerly built-in supported types
 
@@ -324,9 +324,9 @@ The `long` type in C/C++ is defined to have ["at least 32"](https://en.cpprefere
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-In contrast, C# `long` is always 64 bit. For this reason it is best to avoid using C# `long` to interop with C/C++ `long`.
+In contrast, C# `long` is always 64 bit. For this reason, it's best to avoid using C# `long` to interop with C/C++ `long`.
 
-(This problem with C/C++ `long` does not exist for C/C++ `char`, `short`, `int` and `long long` as they are 8, 16, 32 and 64 bits respectively on all of these platforms.)
+(This problem with C/C++ `long` does not exist for C/C++ `char`, `short`, `int`, and `long long` as they are 8, 16, 32, and 64 bits respectively on all of these platforms.)
 
 In .NET 6 and later versions, use the [`CLong`](xref:System.Runtime.InteropServices.CLong) and [`CULong`](xref:System.Runtime.InteropServices.CULong) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 

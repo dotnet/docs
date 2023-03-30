@@ -333,7 +333,7 @@
 | Configuration Manager | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.ConfigurationManager/4.0.0) |  |  |
 | Container Registry | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.ContainerRegistry/1.0.0-preview.2) |  | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ContainerRegistry_1.0.0-preview.2/sdk/containerregistry/Microsoft.Azure.ContainerRegistry/) |
 | Content Moderator | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.ContentModerator/2.0.0) |  |  |
-| Cosmos DB | NuGet [3.32.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.2) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.32.2](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.32.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.3) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.32.3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB | NuGet [2.19.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.19.0) |  | GitHub [2.19.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
 | Custom Image Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingCustomImageSearch) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |

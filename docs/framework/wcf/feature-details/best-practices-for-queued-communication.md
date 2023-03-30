@@ -63,7 +63,7 @@ This topic provides recommended practices for queued communication in Windows Co
   
  When using farms, be aware that MSMQ 3.0 does not support remote transacted reads. MSMQ 4.0 does support remote transacted reads.  
   
- For more information, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md) and [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md).  
+ For more information, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md).  
   
 ## Queuing with Unit of Work Semantics  
 
@@ -96,7 +96,6 @@ This topic provides recommended practices for queued communication in Windows Co
 - [Batching Messages in a Transaction](batching-messages-in-a-transaction.md)
 - [Using Dead-Letter Queues to Handle Message Transfer Failures](using-dead-letter-queues-to-handle-message-transfer-failures.md)
 - [Poison Message Handling](poison-message-handling.md)
-- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)
 - [Securing Messages Using Transport Security](securing-messages-using-transport-security.md)
 - [Securing Messages Using Message Security](securing-messages-using-message-security.md)
 - [Troubleshooting Queued Messaging](troubleshooting-queued-messaging.md)

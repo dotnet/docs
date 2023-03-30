@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 09/07/2022
+ms.date: 03/30/2023
 ---
 
 # .NET environment variables
@@ -181,7 +181,7 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
 
-Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 installed from the Microsoft repository is `/usr/share/dotnet`. For more information, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md?pivots=os-linux). 
+Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 installed from the Microsoft repository is `/usr/share/dotnet`. For more information, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md?pivots=os-linux).
 
 This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 

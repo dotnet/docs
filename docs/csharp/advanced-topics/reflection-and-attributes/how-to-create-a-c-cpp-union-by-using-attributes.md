@@ -16,7 +16,7 @@ The following code is another example where fields start at different explicitly
 
 :::code language="csharp" source="./snippets/conceptual/CStyleUnion.cs" id="ExplicitLayout":::
 
-The two integer fields, `i1` and `i2` combined, share the same memory locations as `lg`. Either `lg` uses the first 4 bytes, or `i1` uses the first 2 bytes and `i2` uses the next 2 bytes. This sort of control over struct layout is useful when using platform invocation.
+The two integer fields, `i1` and `i2` combined, share the same memory locations as `lg`. Either `lg` uses the first 8 bytes, or `i1` uses the first 4 bytes and `i2` uses the next 4 bytes. This sort of control over struct layout is useful when using platform invocation.
 
 ## See also
 

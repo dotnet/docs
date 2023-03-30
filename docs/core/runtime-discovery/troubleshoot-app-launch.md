@@ -157,7 +157,7 @@ On the [download page](https://dotnet.microsoft.com/download/dotnet) for the req
 ::: zone-end
 
 ::: zone pivot="os-linux"
-.NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. (Preview versions of .NET typically aren't available through package managers.)
+.NET is available through various Linux package managers. See [Install .NET on Linux](../install/linux.md) for details. (Preview versions of .NET aren't typically available through package managers.)
 
 You need to install the .NET runtime package for the appropriate version, like `dotnet-runtime6` or `dotnet-aspnet6`.
 ::: zone-end

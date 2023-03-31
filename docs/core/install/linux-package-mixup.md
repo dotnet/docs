@@ -38,7 +38,7 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 
 ## What's going on
 
-These errors usually occur when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages, such as:
+These errors usually occur when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages. These distributions include:
 
 - Alpine Linux
 - Arch
@@ -48,7 +48,7 @@ These errors usually occur when two Linux package repositories provide .NET pack
 - RHEL
 - Ubuntu 22.04+
 
-Mixing .NET packages from two different sources will most likely lead to issues since the packages may place things at different paths, and may be compiled differently.
+If you mix .NET packages from two different sources, you'll likely run into problems. The packages might place things at different paths and might be compiled differently.
 
 ## Solutions
 

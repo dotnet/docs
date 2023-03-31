@@ -92,69 +92,69 @@ items:
     - name: Use Visual Studio
       items:
       - name: Create a console app
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Debug an app
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/debugging-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Publish an app
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/publishing-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Create a library
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/library-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Unit test a library
+        displayName: tutorials, visual studio, vs
         href: ../core/tutorials/testing-library-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
       - name: Install and use a package
+        displayName: tutorials, visual studio, vs
         href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-        displayName: tutorials, visual studio, vs
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio, vs
+        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Use Visual Studio Code
       items:
       - name: Create a console app
-        href: ../core/tutorials/with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code, cli
+        href: ../core/tutorials/with-visual-studio-code.md
       - name: Debug an app
+        displayName: tutorials, visual studio code, vs code
         href: ../core/tutorials/debugging-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
       - name: Publish an app
+        displayName: tutorials, visual studio code, vs code
         href: ../core/tutorials/publishing-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
       - name: Create a library
+        displayName: tutorials, visual studio code, vs code
         href: ../core/tutorials/library-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
       - name: Unit test a library
-        href: ../core/tutorials/testing-library-with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code
+        href: ../core/tutorials/testing-library-with-visual-studio-code.md
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, cli
+        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials
+        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Use Visual Studio for Mac
       items:
       - name: Create a console app
-        href: ../core/tutorials/with-visual-studio-mac.md
         displayName: tutorials, visual studio for mac, vs for mac, cli
+        href: ../core/tutorials/with-visual-studio-mac.md
       - name: Debug an app
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/debugging-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Publish an app
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/publishing-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Create a library
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/library-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Unit test a library
+        displayName: tutorials, visual studio for mac, vs for mac
         href: ../core/tutorials/testing-library-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
       - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: tutorials, visual studio for mac, vs for mac
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: More tutorials
       href: ../core/tutorials/index.md
 - name: What's new in .NET
@@ -246,8 +246,8 @@ items:
   - name: Collections and data structures
     items:
     - name: Overview
-      href: ../standard/collections/index.md
       displayName: collections, data structures
+      href: ../standard/collections/index.md
     - name: Select a collection class
       href: ../standard/collections/selecting-a-collection-class.md
     - name: Commonly used collection types
@@ -267,8 +267,8 @@ items:
   - name: Events
     items:
     - name: Overview
-      href: ../standard/events/index.md
       displayName: events
+      href: ../standard/events/index.md
     - name: Raise and consume events
       href: ../standard/events/how-to-raise-and-consume-events.md
     - name: Handle multiple events using event properties
@@ -276,19 +276,19 @@ items:
     - name: Observer design pattern
       items:
       - name: Overview
-        href: ../standard/events/observer-design-pattern.md
         displayName: Observer design pattern
+        href: ../standard/events/observer-design-pattern.md
       - name: Best practices
         href: ../standard/events/observer-design-pattern-best-practices.md
-      - name: "How to: Implement a provider"
+      - name: 'How to: Implement a provider'
         href: ../standard/events/how-to-implement-a-provider.md
-      - name: "How to: Implement an observer"
+      - name: 'How to: Implement an observer'
         href: ../standard/events/how-to-implement-an-observer.md
   - name: Exceptions
     items:
     - name: Overview
-      href: ../standard/exceptions/index.md
       displayName: exceptions
+      href: ../standard/exceptions/index.md
     - name: Exception class and properties
       href: ../standard/exceptions/exception-class-and-properties.md
     - name: How-tos
@@ -316,7 +316,7 @@ items:
   - name: Dates, times, and time zones
     items:
     - name: Overview
-      displayName:  dates,times,time zones
+      displayName: dates,times,time zones
       href: ../standard/datetime/index.md
     - name: Choose which date and time type to use
       href: ../standard/datetime/choosing-between-datetime.md
@@ -326,7 +326,7 @@ items:
       href: ../standard/datetime/how-to-use-dateonly-timeonly.md
     - name: Perform arithmetic operations
       href: ../standard/datetime/performing-arithmetic-operations.md
-    - name: "DateTime and DateTimeOffset support in System.Text.Json"
+    - name: DateTime and DateTimeOffset support in System.Text.Json
       href: ../standard/datetime/system-text-json-support.md
     - name: Time zones
       items:
@@ -338,9 +338,9 @@ items:
         href: ../standard/datetime/converting-between-datetime-and-offset.md
       - name: Convert times between time zones
         href: ../standard/datetime/converting-between-time-zones.md
-      - name: "How to: Resolve ambiguous times"
+      - name: 'How to: Resolve ambiguous times'
         href: ../standard/datetime/resolve-ambiguous-times.md
-      - name: "How to: Let users resolve ambiguous times"
+      - name: 'How to: Let users resolve ambiguous times'
         href: ../standard/datetime/let-users-resolve-ambiguous-times.md
       - name: Instantiate a DateTimeOffset object
         items:
@@ -371,8 +371,8 @@ items:
   - name: Attributes
     items:
     - name: Overview
-      href: ../standard/attributes/index.md
       displayName: attributes
+      href: ../standard/attributes/index.md
     - name: Apply attributes
       href: ../standard/attributes/applying-attributes.md
     - name: Write custom attributes
@@ -444,8 +444,8 @@ items:
     - name: Basic string operations
       items:
       - name: Overview
-        href: ../standard/base-types/basic-string-operations.md
         displayName: string operations
+        href: ../standard/base-types/basic-string-operations.md
       - name: Create new strings
         href: ../standard/base-types/creating-new.md
       - name: Trim and remove characters
@@ -460,7 +460,7 @@ items:
         href: ../standard/base-types/divide-up-strings.md
       - name: Use the StringBuilder class
         href: ../standard/base-types/stringbuilder.md
-      - name: "How to: Perform basic string manipulations"
+      - name: 'How to: Perform basic string manipulations'
         href: ../standard/base-types/basic-manipulations.md
     - name: Parse (convert) strings
       items:
@@ -475,11 +475,11 @@ items:
   - name: Regular expressions
     items:
     - name: Overview
-      href: ../standard/base-types/regular-expressions.md
       displayName: regular expressions
+      href: ../standard/base-types/regular-expressions.md
     - name: Source generation
-      href: ../standard/base-types/regular-expression-source-generators.md
       displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
+      href: ../standard/base-types/regular-expression-source-generators.md
     - name: Language reference
       items:
       - name: Overview
@@ -537,8 +537,8 @@ items:
     - name: JSON serialization
       items:
       - name: Overview
-        href: ../standard/serialization/system-text-json/overview.md
         displayName: json serialization
+        href: ../standard/serialization/system-text-json/overview.md
       - name: Reflection vs. source generation
         href: ../standard/serialization/system-text-json/source-generation-modes.md
       - name: How to serialize and deserialize JSON
@@ -587,29 +587,8 @@ items:
           href: ../standard/serialization/system-text-json/custom-contracts.md
     - name: Binary serialization
       items:
-      - name: Overview
-        href: ../standard/serialization/binary-serialization.md
-        displayName: binary serialization
       - name: BinaryFormatter security guide
         href: ../standard/serialization/binaryformatter-security-guide.md
-      - name: BinaryFormatter event source
-        href: ../standard/serialization/binaryformatter-event-source.md
-      - name: Serialization concepts
-        href: ../standard/serialization/serialization-concepts.md
-      - name: Basic serialization
-        href: ../standard/serialization/basic-serialization.md
-      - name: Selective serialization
-        href: ../standard/serialization/selective-serialization.md
-      - name: Custom serialization
-        href: ../standard/serialization/custom-serialization.md
-      - name: Steps in the serialization process
-        href: ../standard/serialization/steps-in-the-serialization-process.md
-      - name: Version-tolerant serialization
-        href: ../standard/serialization/version-tolerant-serialization.md
-      - name: Serialization guidelines
-        href: ../standard/serialization/serialization-guidelines.md
-      - name: "How to: Chunk serialized data"
-        href: ../standard/serialization/how-to-chunk-serialized-data.md
     - name: XML and SOAP serialization
       items:
       - name: Overview
@@ -695,29 +674,29 @@ items:
     - name: Common I/O tasks
       href: ../standard/io/common-i-o-tasks.md
       items:
-      - name: "How to: Copy Directories"
+      - name: 'How to: Copy Directories'
         href: ../standard/io/how-to-copy-directories.md
-      - name: "How to: Enumerate Directories and Files"
+      - name: 'How to: Enumerate Directories and Files'
         href: ../standard/io/how-to-enumerate-directories-and-files.md
-      - name: "How to: Read and Write to a Newly Created Data File"
+      - name: 'How to: Read and Write to a Newly Created Data File'
         href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
-      - name: "How to: Open and Append to a Log File"
+      - name: 'How to: Open and Append to a Log File'
         href: ../standard/io/how-to-open-and-append-to-a-log-file.md
-      - name: "How to: Write Text to a File"
+      - name: 'How to: Write Text to a File'
         href: ../standard/io/how-to-write-text-to-a-file.md
-      - name: "How to: Read Text from a File"
+      - name: 'How to: Read Text from a File'
         href: ../standard/io/how-to-read-text-from-a-file.md
-      - name: "How to: Read Characters from a String"
+      - name: 'How to: Read Characters from a String'
         href: ../standard/io/how-to-read-characters-from-a-string.md
-      - name: "How to: Write Characters to a String"
+      - name: 'How to: Write Characters to a String'
         href: ../standard/io/how-to-write-characters-to-a-string.md
-      - name: "How to: Add or Remove Access Control List Entries"
+      - name: 'How to: Add or Remove Access Control List Entries'
         href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
-      - name: "How to: Compress and Extract Files"
+      - name: 'How to: Compress and Extract Files'
         href: ../standard/io/how-to-compress-and-extract-files.md
       - name: Composing Streams
         href: ../standard/io/composing-streams.md
-      - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
+      - name: 'How to: Convert Between .NET Framework Streams and Windows Runtime Streams'
         href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
     - name: Asynchronous file I/O
       href: ../standard/io/asynchronous-file-i-o.md
@@ -728,28 +707,28 @@ items:
       items:
       - name: Types of Isolation
         href: ../standard/io/types-of-isolation.md
-      - name: "How to: Obtain Stores for Isolated Storage"
+      - name: 'How to: Obtain Stores for Isolated Storage'
         href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
-      - name: "How to: Enumerate Stores for Isolated Storage"
+      - name: 'How to: Enumerate Stores for Isolated Storage'
         href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
-      - name: "How to: Delete Stores in Isolated Storage"
+      - name: 'How to: Delete Stores in Isolated Storage'
         href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
-      - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
+      - name: 'How to: Anticipate Out-of-Space Conditions with Isolated Storage'
         href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
-      - name: "How to: Create Files and Directories in Isolated Storage"
+      - name: 'How to: Create Files and Directories in Isolated Storage'
         href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
-      - name: "How to: Find Existing Files and Directories in Isolated Storage"
+      - name: 'How to: Find Existing Files and Directories in Isolated Storage'
         href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
-      - name: "How to: Read and Write to Files in Isolated Storage"
+      - name: 'How to: Read and Write to Files in Isolated Storage'
         href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
-      - name: "How to: Delete Files and Directories in Isolated Storage"
+      - name: 'How to: Delete Files and Directories in Isolated Storage'
         href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
     - name: Pipes
       href: ../standard/io/pipe-operations.md
       items:
-      - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
+      - name: 'How to: Use Anonymous Pipes for Local Interprocess Communication'
         href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
-      - name: "How to: Use Named Pipes for Network Interprocess Communication"
+      - name: 'How to: Use Named Pipes for Network Interprocess Communication'
         href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
     - name: Pipelines
       href: ../standard/io/pipelines.md
@@ -762,140 +741,140 @@ items:
   - name: Dependency injection
     items:
     - name: Overview
-      href: ../core/extensions/dependency-injection.md
       displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+      href: ../core/extensions/dependency-injection.md
     - name: Use dependency injection
-      href: ../core/extensions/dependency-injection-usage.md
       displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+      href: ../core/extensions/dependency-injection-usage.md
     - name: Dependency injection guidelines
-      href: ../core/extensions/dependency-injection-guidelines.md
       displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+      href: ../core/extensions/dependency-injection-guidelines.md
   - name: Configuration
     items:
     - name: Overview
-      href: ../core/extensions/configuration.md
       displayName: configuration,config,configuration sources,config sources
+      href: ../core/extensions/configuration.md
     - name: Configuration providers
-      href: ../core/extensions/configuration-providers.md
       displayName: configuration providers,config providers
+      href: ../core/extensions/configuration-providers.md
     - name: Implement a custom configuration provider
-      href: ../core/extensions/custom-configuration-provider.md
       displayName: custom configuration,custom config,custom configuration provider,custom config provider
+      href: ../core/extensions/custom-configuration-provider.md
     - name: Options pattern
-      href: ../core/extensions/options.md
       displayName: options pattern,options,configuration options,config options
+      href: ../core/extensions/options.md
     - name: Options pattern guidance for library authors
-      href: ../core/extensions/options-library-authors.md
       displayName: options pattern guidance,options guidance,configuration options guidance,config options guidance
+      href: ../core/extensions/options-library-authors.md
   - name: Logging
     items:
     - name: Overview
-      href: ../core/extensions/logging.md
       displayName: logging,logger,log,loggers
+      href: ../core/extensions/logging.md
     - name: Logging providers
-      href: ../core/extensions/logging-providers.md
       displayName: logging providers,log providers
+      href: ../core/extensions/logging-providers.md
     - name: Compile-time logging source generation
-      href: ../core/extensions/logger-message-generator.md
       displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
+      href: ../core/extensions/logger-message-generator.md
     - name: Implement a custom logging provider
-      href: ../core/extensions/custom-logging-provider.md
       displayName: custom logging,custom log,custom logging provider,custom log provider
+      href: ../core/extensions/custom-logging-provider.md
     - name: High-performance logging
-      href: ../core/extensions/high-performance-logging.md
       displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
+      href: ../core/extensions/high-performance-logging.md
     - name: Console log formatting
-      href: ../core/extensions/console-log-formatter.md
       displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
+      href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
   - name: Networking
     items:
     - name: Network programming
-      href: networking/overview.md
       displayName: networking,sockets,socket,socket programming,socket client,socket server,socket client server,socket client-server,socket client-server,socket client/server,socket client/server,socket client-serve
+      href: networking/overview.md
     - name: Network availability
-      href: networking/network-info.md
       displayName: network availability,network info,network information,network availability info,network availability information,network info availability,network information availability,network availability info
+      href: networking/network-info.md
     - name: IPv6 overview
-      href: networking/ipv6-overview.md
       displayName: ipv6,ipv
+      href: networking/ipv6-overview.md
     - name: Telemetry
-      href: networking/networking-telemetry.md
       displayName: networking telemetry
+      href: networking/networking-telemetry.md
     - name: HTTP
       items:
       - name: HTTP support
-        href: networking/http/http-overview.md
         displayName: networking,http,web services,httpclient
+        href: networking/http/http-overview.md
       - name: HTTP client guidelines
-        href: networking/http/httpclient-guidelines.md
         displayName: networking, httpclient
+        href: networking/http/httpclient-guidelines.md
       - name: Make HTTP requests
-        href: networking/http/httpclient.md
         displayName: networking,http,web services,client
+        href: networking/http/httpclient.md
       - name: IHttpClientFactory
-        href: ../core/extensions/httpclient-factory.md
         displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
+        href: ../core/extensions/httpclient-factory.md
       - name: HTTP/3 with .NET
-        href: ../core/extensions/httpclient-http3.md
         displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net
+        href: ../core/extensions/httpclient-http3.md
       - name: Rate limit an HTTP handler
-        href: ../core/extensions/http-ratelimiter.md
         displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler
+        href: ../core/extensions/http-ratelimiter.md
     - name: Sockets
       items:
       - name: Sockets support
+        displayName: networking,sockets,socket,socket programming,socket client,socket server
         href: networking/sockets/sockets-overview.md
-        displayName: networking,sockets,socket,socket programming,socket client,socket server
       - name: Use Sockets to send and receive data over TCP
-        href: networking/sockets/socket-services.md
         displayName: networking,sockets,socket,socket programming,socket client,socket server
+        href: networking/sockets/socket-services.md
       - name: Use TcpClient and TcpListener
-        href: networking/sockets/tcp-classes.md
         displayName: networking,tcp,tcp listener,tcp client
+        href: networking/sockets/tcp-classes.md
     - name: WebSockets
       items:
       - name: WebSockets support
-        href: networking/websockets.md
         displayName: websockets,websocket,websocket programming,websocket client,websocket server
+        href: networking/websockets.md
     - name: Security
       items:
-        - name: TLS/SSL best practices
-          href: ../core/extensions/sslstream-best-practices.md
-          displayName: tls,ssl,sslstream,sslstream best practices,tls best practices,ssl best practices
-        - name: Troubleshoot SslStream authentication issues
-          href: ../core/extensions/sslstream-troubleshooting.md
-          displayName: tls,ssl,sslstream,sslstream troubleshooting,tls troubleshooting,ssl troubleshooting
-        - name: Migrate from .NET Framework to .NET
-          href: ../core/extensions/sslstream-migration-from-framework.md
+      - name: TLS/SSL best practices
+        displayName: tls,ssl,sslstream,sslstream best practices,tls best practices,ssl best practices
+        href: ../core/extensions/sslstream-best-practices.md
+      - name: Troubleshoot SslStream authentication issues
+        displayName: tls,ssl,sslstream,sslstream troubleshooting,tls troubleshooting,ssl troubleshooting
+        href: ../core/extensions/sslstream-troubleshooting.md
+      - name: Migrate from .NET Framework to .NET
+        href: ../core/extensions/sslstream-migration-from-framework.md
     - name: QUIC
       items:
       - name: QUIC support
         href: networking/quic/quic-overview.md
   - name: File globbing
-    href: ../core/extensions/file-globbing.md
     displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing
+    href: ../core/extensions/file-globbing.md
   - name: Primitives library
-    href: ../core/extensions/primitives.md
     displayName: primitives,primitive types,ichangetoken,change notifications,string tokenizers,StringSegment,StringTokenizer,StringValues
+    href: ../core/extensions/primitives.md
   - name: Globalization and localization
     items:
     - name: Overview
-      href: ../core/extensions/globalization-and-localization.md
       displayName: globalization,localization,culture,localization and globalization
+      href: ../core/extensions/globalization-and-localization.md
     - name: Globalization
-      href: ../core/extensions/globalization.md
       displayName: globalization,culture
+      href: ../core/extensions/globalization.md
     - name: Globalization and ICU
-      href: ../core/extensions/globalization-icu.md
       displayName: globalization,icu,culture
+      href: ../core/extensions/globalization-icu.md
     - name: Localizability review
-      href: ../core/extensions/localizability-review.md
       displayName: localizability,localization,localization review,localizability review
+      href: ../core/extensions/localizability-review.md
     - name: Localization
-      href: ../core/extensions/localization.md
       displayName: localization,localization review,localizability review
+      href: ../core/extensions/localization.md
     - name: Culture-insensitive string operations
       items:
       - name: Overview
@@ -938,8 +917,8 @@ items:
     - name: Create a Windows Service using BackgroundService
       href: ../core/extensions/windows-service.md
     - name: Create a Windows Service installer
-      href: ../core/extensions/windows-service-with-installer.md
       displayName: msi,windows service installer,setup.exe
+      href: ../core/extensions/windows-service-with-installer.md
     - name: Implement the IHostedService interface
       href: ../core/extensions/timer-service.md
     - name: Deploy a Worker Service to Azure
@@ -956,76 +935,76 @@ items:
     href: ../standard/managed-execution-process.md
   - name: Assemblies
     items:
+    - name: Overview
+      displayName: assembly,assemblies
+      href: ../standard/assembly/index.md
+    - name: Assembly contents
+      href: ../standard/assembly/contents.md
+    - name: Manifest
+      href: ../standard/assembly/manifest.md
+    - name: Security considerations
+      href: ../standard/assembly/security-considerations.md
+    - name: Versioning
+      href: ../standard/assembly/versioning.md
+    - name: Side-by-side execution
+      href: ../standard/assembly/side-by-side-execution.md
+    - name: Assembly file format
+      href: ../standard/assembly/file-format.md
+    - name: Unloadability in .NET Core
+      href: ../standard/assembly/unloadability.md
+    - name: Learn about reference assemblies
+      href: ../standard/assembly/reference-assemblies.md
+    - name: Resolve assembly loads
+      href: ../standard/assembly/resolve-loads.md
+    - name: Create assemblies
+      href: ../standard/assembly/create.md
+    - name: Assembly names
+      href: ../standard/assembly/names.md
+    - name: Find an assembly's fully qualified name
+      href: ../standard/assembly/find-fully-qualified-name.md
+    - name: Assembly location
+      href: ../standard/assembly/location.md
+    - name: Set assembly attributes
+      href: ../standard/assembly/set-attributes.md
+    - name: Strong-named assemblies
+      items:
       - name: Overview
-        displayName: assembly,assemblies
-        href: ../standard/assembly/index.md
-      - name: Assembly contents
-        href: ../standard/assembly/contents.md
-      - name: Manifest
-        href: ../standard/assembly/manifest.md
-      - name: Security considerations
-        href: ../standard/assembly/security-considerations.md
-      - name: Versioning
-        href: ../standard/assembly/versioning.md
-      - name: Side-by-side execution
-        href: ../standard/assembly/side-by-side-execution.md
-      - name: Assembly file format
-        href: ../standard/assembly/file-format.md
-      - name: Unloadability in .NET Core
-        href: ../standard/assembly/unloadability.md
-      - name: Learn about reference assemblies
-        href: ../standard/assembly/reference-assemblies.md
-      - name: Resolve assembly loads
-        href: ../standard/assembly/resolve-loads.md
-      - name: Create assemblies
-        href: ../standard/assembly/create.md
-      - name: Assembly names
-        href: ../standard/assembly/names.md
-      - name: Find an assembly's fully qualified name
-        href: ../standard/assembly/find-fully-qualified-name.md
-      - name: Assembly location
-        href: ../standard/assembly/location.md
-      - name: Set assembly attributes
-        href: ../standard/assembly/set-attributes.md
-      - name: Strong-named assemblies
-        items:
-        - name: Overview
-          href: ../standard/assembly/strong-named.md
-        - name: Create and use strong-named assemblies
-          href: ../standard/assembly/create-use-strong-named.md
-        - name: Create a public-private key pair
-          href: ../standard/assembly/create-public-private-key-pair.md
-        - name: Sign an assembly with a strong name
-          href: ../standard/assembly/sign-strong-name.md
-        - name: Enhanced strong naming
-          href: ../standard/assembly/enhanced-strong-naming.md
-        - name: Reference a strong-named assembly
-          href: ../standard/assembly/reference-strong-named.md
-        - name: Disable strong-name bypass
-          href: ../standard/assembly/disable-strong-name-bypass-feature.md
-      - name: Delay-sign an assembly
-        href: ../standard/assembly/delay-sign.md
-      - name: View assembly contents
-        href: ../standard/assembly/view-contents.md
-      - name: Type forwarding in the CLR
-        href: ../standard/assembly/type-forwarding.md
-      - name: Friend assemblies
-        items:
-        - name: Overview
-          displayName: friend assembly,friend assemblies
-          href: ../standard/assembly/friend.md
-        - name: Create unsigned friend assemblies
-          href: ../standard/assembly/create-unsigned-friend.md
-        - name: Create signed friend assemblies
-          href: ../standard/assembly/create-signed-friend.md
-      - name: Determine if a file is an assembly
-        href: ../standard/assembly/identify.md
-      - name: Load and unload assemblies
-        href: ../standard/assembly/load-unload.md
-      - name: Embed types from managed assemblies in Visual Studio
-        href: ../standard/assembly/embed-types-visual-studio.md
-      - name: Inspect assembly contents using MetadataLoadContext
-        href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
+        href: ../standard/assembly/strong-named.md
+      - name: Create and use strong-named assemblies
+        href: ../standard/assembly/create-use-strong-named.md
+      - name: Create a public-private key pair
+        href: ../standard/assembly/create-public-private-key-pair.md
+      - name: Sign an assembly with a strong name
+        href: ../standard/assembly/sign-strong-name.md
+      - name: Enhanced strong naming
+        href: ../standard/assembly/enhanced-strong-naming.md
+      - name: Reference a strong-named assembly
+        href: ../standard/assembly/reference-strong-named.md
+      - name: Disable strong-name bypass
+        href: ../standard/assembly/disable-strong-name-bypass-feature.md
+    - name: Delay-sign an assembly
+      href: ../standard/assembly/delay-sign.md
+    - name: View assembly contents
+      href: ../standard/assembly/view-contents.md
+    - name: Type forwarding in the CLR
+      href: ../standard/assembly/type-forwarding.md
+    - name: Friend assemblies
+      items:
+      - name: Overview
+        displayName: friend assembly,friend assemblies
+        href: ../standard/assembly/friend.md
+      - name: Create unsigned friend assemblies
+        href: ../standard/assembly/create-unsigned-friend.md
+      - name: Create signed friend assemblies
+        href: ../standard/assembly/create-signed-friend.md
+    - name: Determine if a file is an assembly
+      href: ../standard/assembly/identify.md
+    - name: Load and unload assemblies
+      href: ../standard/assembly/load-unload.md
+    - name: Embed types from managed assemblies in Visual Studio
+      href: ../standard/assembly/embed-types-visual-studio.md
+    - name: Inspect assembly contents using MetadataLoadContext
+      href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
   - name: Metadata and self-describing components
     href: ../standard/metadata-and-self-describing-components.md
   - name: Dependency loading

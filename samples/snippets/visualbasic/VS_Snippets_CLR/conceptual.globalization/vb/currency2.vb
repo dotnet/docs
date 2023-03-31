@@ -1,20 +1,11 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet17>
+﻿' <Snippet17>
 Imports System.Globalization
-Imports System.IO
-Imports System.Runtime.Serialization.Formatters.Binary
+Imports System.Text.Json
 Imports System.Threading
 
-<Serializable> Friend Structure CurrencyValue
-    Public Sub New(amount As Decimal, name As String)
-        Me.Amount = amount
-        Me.CultureName = name
-    End Sub
-
-    Public Amount As Decimal
-    Public CultureName As String
+Friend Structure CurrencyValue
+    Public Property Amount As Decimal
+    Public Property CultureName As String
 End Structure
 
 Module Example2
@@ -26,11 +17,12 @@ Module Example2
         Console.WriteLine("Currency Value: {0:C2}", value)
 
         ' Serialize the currency data.
-        Dim bf As New BinaryFormatter()
-        Dim fw As New FileStream("currency.dat", FileMode.Create)
-        Dim data As New CurrencyValue(value, CultureInfo.CurrentCulture.Name)
-        bf.Serialize(fw, data)
-        fw.Close()
+        Dim data As New CurrencyValue With {
+            .Amount = value,
+            .CultureName = CultureInfo.CurrentCulture.Name
+        }
+
+        Dim serialized As String = JsonSerializer.Serialize(data)
         Console.WriteLine()
 
         ' Change the current culture.
@@ -38,11 +30,9 @@ Module Example2
         Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
 
         ' Deserialize the data.
-        Dim fr As New FileStream("currency.dat", FileMode.Open)
-        Dim restoredData As CurrencyValue = CType(bf.Deserialize(fr), CurrencyValue)
-        fr.Close()
+        Dim restoredData As CurrencyValue = JsonSerializer.Deserialize(Of CurrencyValue)(serialized)
 
-        ' Display the original value.
+        ' Display the round-tripped value.
         Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture(restoredData.CultureName)
         Console.WriteLine("Currency Value: {0}", restoredData.Amount.ToString("C2", culture))
     End Sub

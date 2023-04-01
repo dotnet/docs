@@ -27,7 +27,7 @@ The term "LINQ to Objects" refers to the use of LINQ queries with any <xref:Syst
  [LINQ and Strings (C#)](./linq-and-strings.md)  
  Explains how LINQ can be used to query and transform strings and collections of strings. Also includes links to articles that demonstrate these principles.  
   
- [LINQ and Reflection (C#)](/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq)  
+ [LINQ and Reflection (C#)](../../../advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md)  
  Links to a sample that demonstrates how LINQ uses reflection.  
   
  [LINQ and File Directories (C#)](./linq-and-file-directories.md)  

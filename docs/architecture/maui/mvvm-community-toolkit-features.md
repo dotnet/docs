@@ -115,7 +115,7 @@ For more detailed information on implementing commands, see the section [Impleme
 
 ## Source Generators
 
-Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify our ViewModel. The MVVM Toolkit allows you to simplify common code use cases even further by using [Source Generators](/dotnet/csharp/roslyn-sdk/source-generators-overview). The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
+Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify our ViewModel. The MVVM Toolkit allows you to simplify common code use cases even further by using [Source Generators](../../csharp/roslyn-sdk/source-generators-overview.md). The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
 
 > [!IMPORTANT]
 > The MVVM Toolkit Source Generators generate code that is additive to our existing objects. Because of this, any object that is leveraging a source generator will need to be marked as `partial`.

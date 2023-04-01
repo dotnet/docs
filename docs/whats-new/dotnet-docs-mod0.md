@@ -1,84 +1,148 @@
 ---
-title: ".NET docs: What's new for December 2022"
-description: "What's new in the .NET docs for December 2022."
-ms.custom: December-2022
-ms.date: 01/05/2023
+title: ".NET docs: What's new for March 2023"
+description: "What's new in the .NET docs for March 2023."
+ms.custom: March-2023
+ms.date: 04/01/2023
 ---
 
-# .NET docs: What's new for December 2022
+# .NET docs: What's new for March 2023
 
-Welcome to what's new in the .NET docs for December 2022. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for March 2023. This article lists some of the major changes to docs during this period.
 
 ## .NET breaking changes
 
 ### New articles
 
-- [Automatic RuntimeIdentifier for certain projects](../core/compatibility/sdk/7.0/automatic-runtimeidentifier.md)
-- [Side-by-side SDK installations](../core/compatibility/sdk/7.0/side-by-side-install.md)
-- [ASPNET-prefixed environment variable precedence](../core/compatibility/aspnet-core/7.0/environment-variable-precedence.md)
+- [IntPtr no longer used for function pointer types](../core/compatibility/reflection/8.0/function-pointer-reflection.md)
+- [DefaultValueAttribute removed from some properties](../core/compatibility/windows-forms/8.0/defaultvalueattribute-removal.md)
+- [HostApplicationBuilderSettings.Args respected by HostApplicationBuilder ctor](../core/compatibility/extensions/8.0/hostapplicationbuilder-ctor.md)
+- [Title not found in: #34497](../core/compatibility/sdk/8.0/runtimespecific-app-default.md)
+- [CLI console output uses UTF-8](../core/compatibility/sdk/8.0/console-encoding.md)
+- [ActivatorUtilities.CreateInstance behaves consistently](../core/compatibility/extensions/8.0/activatorutilities-createinstance-behavior.md)
+- [ActivatorUtilities.CreateInstance requires non-null provider](../core/compatibility/extensions/8.0/activatorutilities-createinstance-null-provider.md)
+- [ConfigurationBinder throws for mismatched value](../core/compatibility/extensions/8.0/configurationbinder-exceptions.md)
+
+## .NET Framework
+
+### Updated articles
+
+- [How to: Determine which .NET Framework versions are installed](../framework/migration-guide/how-to-determine-which-versions-are-installed.md) - Add PowerShell scripts to determine .NET Fx versions
 
 ## .NET fundamentals
 
 ### New articles
 
-- [Namespace does not match folder structure (IDE0130)](../fundamentals/code-analysis/style-rules/ide0130.md)
-- [CA1852: Seal internal types](../fundamentals/code-analysis/quality-rules/ca1852.md)
-- [CA1853: Unnecessary call to 'Dictionary.ContainsKey(key)'](../fundamentals/code-analysis/quality-rules/ca1853.md)
-- [CA1855: Use Span\<T>.Clear() instead of Span\<T>.Fill()](../fundamentals/code-analysis/quality-rules/ca1855.md)
-- [CA1858: Use StartsWith instead of IndexOf](../fundamentals/code-analysis/quality-rules/ca1858.md)
+- [QUIC protocol](../fundamentals/networking/quic/quic-overview.md)
+- [Install .NET SDK or .NET Runtime on Ubuntu 16.04](../core/install/linux-ubuntu-1604.md)
+- [Install .NET SDK or .NET Runtime on Ubuntu 18.04](../core/install/linux-ubuntu-1804.md)
+- [Install .NET SDK or .NET Runtime on Ubuntu 20.04](../core/install/linux-ubuntu-2004.md)
+- [Install .NET SDK or .NET Runtime on Ubuntu 22.04](../core/install/linux-ubuntu-2204.md)
+- [Install .NET SDK or .NET Runtime on Ubuntu 22.10](../core/install/linux-ubuntu-2210.md)
+
+### Updated articles
+
+- [What's new in .NET 8](../core/whats-new/dotnet-8.md) - Preview 2 updates for What's new in .NET 8
+- [Troubleshoot .NET errors related to missing files on Linux](../core/install/linux-package-mixup.md) - Updates to Ubuntu (and other related) documentation
+- [Install the .NET SDK or the .NET Runtime on Ubuntu](../core/install/linux-ubuntu.md) - Updates to Ubuntu (and other related) documentation
+
+## .NET tools and diagnostics
+
+### New articles
+
+- [CA1860: Avoid using 'Enumerable.Any()' extension method](../fundamentals/code-analysis/quality-rules/ca1860.md)
+
+## Architecture guides
+
+### New articles
+
+- [MVVM Toolkit Features](../architecture/maui/mvvm-community-toolkit-features.md)
 
 ## C# language
 
 ### New articles
 
-- [Code comments - `//` and `/*`. `*/`](../csharp/language-reference/tokens/comments.md)
-- [Raw string literal text - repeated backticks in string literals](../csharp/language-reference/tokens/raw-string.md)
-
-### Updated articles
-
-- [The history of C\#](../csharp/whats-new/csharp-version-history.md) - Reorder csharp history
+- [Access attributes using reflection](../csharp/advanced-topics/reflection-and-attributes/accessing-attributes-by-using-reflection.md)
+- [Define and read custom attributes](../csharp/advanced-topics/reflection-and-attributes/attribute-tutorial.md)
+- [Create custom attributes](../csharp/advanced-topics/reflection-and-attributes/creating-custom-attributes.md)
+- [Generics and Attributes](../csharp/advanced-topics/reflection-and-attributes/generics-and-attributes.md)
+- [Generics and reflection](../csharp/advanced-topics/reflection-and-attributes/generics-and-reflection.md)
+- [How to create a C/C++ union by using attributes in C\#](../csharp/advanced-topics/reflection-and-attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)
+- [How to query an assembly's metadata with Reflection (LINQ)](../csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md)
+- [Attributes](../csharp/advanced-topics/reflection-and-attributes/index.md)
+- [using statement - ensure the correct use of disposable objects](../csharp/language-reference/statements/using.md)
+- [.NET Runtime support for expression trees](../csharp/advanced-topics/expression-trees/expression-classes.md)
+- [Build expression trees](../csharp/advanced-topics/expression-trees/expression-trees-building.md)
+- [Execute expression trees](../csharp/advanced-topics/expression-trees/expression-trees-execution.md)
+- [Expression trees - data that defines code](../csharp/advanced-topics/expression-trees/expression-trees-explained.md)
+- [Interpret expressions](../csharp/advanced-topics/expression-trees/expression-trees-interpreting.md)
+- [Translate expression trees](../csharp/advanced-topics/expression-trees/expression-trees-translating.md)
+- [Expression Trees](../csharp/advanced-topics/expression-trees/index.md)
 
 ## Microsoft Orleans
 
 ### New articles
 
-- [Serialization configuration in Orleans](../orleans/host/configuration-guide/serialization-configuration.md)
-- [Serialization customization in Orleans](../orleans/host/configuration-guide/serialization-customization.md)
-- [Serialization of immutable types in Orleans](../orleans/host/configuration-guide/serialization-immutability.md)
+- [Quickstart: Deploy and scale an Orleans app on Azure](../orleans/quickstarts/deploy-scale-orleans-on-azure.md)
 
 ### Updated articles
 
-- [Serialization overview in Orleans](../orleans/host/configuration-guide/serialization.md) - Rewrite the Orleans serialization content with `7.0` in mind
-- [Grain persistence](../orleans/grains/grain-persistence/index.md) - Grains 7.0
-- [Custom grain storage](../orleans/tutorials-and-samples/custom-grain-storage.md) - Grains 7.0
-- [Orleans streaming APIs](../orleans/streaming/streams-programming-apis.md) - Use pivots in stream content
-- [Orleans streaming quickstart](../orleans/streaming/streams-quick-start.md) - Use pivots in stream content
-- [Server configuration](../orleans/host/configuration-guide/server-configuration.md) - Server config
+- [Orleans NuGet packages](../orleans/resources/nuget-packages.md) - Added zones and NuGet package tables
+
+## Migration to .NET
+
+### Updated articles
+
+- [Upgrade a WPF App to .NET 7 with the .NET Upgrade Assistant](../core/porting/upgrade-assistant-wpf-framework.md) - Update upgrade assistant article for WPF
+
+## ML.NET
+
+### New articles
+
+- [Getting started with DataFrames](../machine-learning/how-to-guides/getting-started-dataframe.md)
+
+### Updated articles
+
+- [Deploy a model in an ASP.NET Core Web API](../machine-learning/how-to-guides/serve-model-web-api-ml-net.md) - Update how to deploy ML.NET in Web API
 
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [Viniciusap](https://github.com/Viniciusap) - Vinicius Apolinário ![There were 4 pull requests merged by Vinicius Apolinário.](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
-- [JongHeonChoi](https://github.com/JongHeonChoi) ![There were 3 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
-- [Youssef1313](https://github.com/Youssef1313) - Youssef Victor ![There were 3 pull requests merged by Youssef Victor.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
-- [nschonni](https://github.com/nschonni) - Nick Schonning ![There were 2 pull requests merged by Nick Schonning.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
-- [abecasism](https://github.com/abecasism) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [ayakael](https://github.com/ayakael) - Antoine Martin ![There were 1 pull requests merged by Antoine Martin.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [ctstacey](https://github.com/ctstacey) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [dimabarbul](https://github.com/dimabarbul) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [james-perfectserve](https://github.com/james-perfectserve) - James Freeman ![There were 1 pull requests merged by James Freeman.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [keenan137](https://github.com/keenan137) - Keenan Du Plessis ![There were 1 pull requests merged by Keenan Du Plessis.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [klu22](https://github.com/klu22) - Kevin Lu ![There were 1 pull requests merged by Kevin Lu.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [KotM](https://github.com/KotM) - Vitaly Filatenko ![There were 1 pull requests merged by Vitaly Filatenko.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [pkulikov](https://github.com/pkulikov) - Petr Kulikov ![There were 8 pull requests merged by Petr Kulikov.](https://img.shields.io/badge/Merged%20Pull%20Requests-8-green)
+- [ardalis](https://github.com/ardalis) - Steve Smith ![There were 3 pull requests merged by Steve Smith.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![There were 3 pull requests merged by Bartosz Klonowski.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- [bribeiro-msft](https://github.com/bribeiro-msft) - Bruno Ribeiro ![There were 3 pull requests merged by Bruno Ribeiro.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- [CollinAlpert](https://github.com/CollinAlpert) - Collin Alpert ![There were 3 pull requests merged by Collin Alpert.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- [Naidile-P-N](https://github.com/Naidile-P-N) - Naidile P N ![There were 3 pull requests merged by Naidile P N.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- [HuaChan233](https://github.com/HuaChan233) - 花开花落 ![There were 2 pull requests merged by 花开花落.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [mchlstrng](https://github.com/mchlstrng) -  ![There were 2 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [michaelstonis](https://github.com/michaelstonis) - Michael Stonis ![There were 2 pull requests merged by Michael Stonis.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [64J0](https://github.com/64J0) - Vinícius Gajo ![There were 1 pull requests merged by Vinícius Gajo.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [BoldAsLove](https://github.com/BoldAsLove) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Bouke](https://github.com/Bouke) - Bouke Haarsma ![There were 1 pull requests merged by Bouke Haarsma.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [dawedawe](https://github.com/dawedawe) - dawe ![There were 1 pull requests merged by dawe.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [dawei-wang](https://github.com/dawei-wang) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [DJm00n](https://github.com/DJm00n) - Dimitriy Ryazantcev ![There were 1 pull requests merged by Dimitriy Ryazantcev.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [dtdimi](https://github.com/dtdimi) - Dimi Toulakis ![There were 1 pull requests merged by Dimi Toulakis.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Emrebener](https://github.com/Emrebener) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [erruthes](https://github.com/erruthes) - Eduardo Ruthes ![There were 1 pull requests merged by Eduardo Ruthes.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [joostas](https://github.com/joostas) - Justas ![There were 1 pull requests merged by Justas.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [just-ero](https://github.com/just-ero) - Ero ![There were 1 pull requests merged by Ero.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Lanayx](https://github.com/Lanayx) - Vladimir Shchur ![There were 1 pull requests merged by Vladimir Shchur.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [mahab339](https://github.com/mahab339) - Muhab Abdelreheem ![There were 1 pull requests merged by Muhab Abdelreheem.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [MatsM16](https://github.com/MatsM16) - Mats Dyrøy ![There were 1 pull requests merged by Mats Dyrøy.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [minicatsCB](https://github.com/minicatsCB) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [MMaxwell66](https://github.com/MMaxwell66) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [morsiu](https://github.com/morsiu) - Łukasz Mrozek ![There were 1 pull requests merged by Łukasz Mrozek.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [MSDN-WhiteKnight](https://github.com/MSDN-WhiteKnight) - MSDN.WhiteKnight ![There were 1 pull requests merged by MSDN.WhiteKnight.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [nnpcYvIVl](https://github.com/nnpcYvIVl) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Rans4ckeR](https://github.com/Rans4ckeR) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [selaskar](https://github.com/selaskar) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [YounesMDA](https://github.com/YounesMDA) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [zipperer](https://github.com/zipperer) ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [MarcoMue](https://github.com/MarcoMue) - Marco ![There were 1 pull requests merged by Marco.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [meziantou](https://github.com/meziantou) - Gérald Barré ![There were 1 pull requests merged by Gérald Barré.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [michaelmcneilnet](https://github.com/michaelmcneilnet) - Michael McNeil ![There were 1 pull requests merged by Michael McNeil.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [mojofawad](https://github.com/mojofawad) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Ninja4Code](https://github.com/Ninja4Code) - Charles Owen ![There were 1 pull requests merged by Charles Owen.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [OoLunar](https://github.com/OoLunar) - Lunar Starstrum ![There were 1 pull requests merged by Lunar Starstrum.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [patricksadowski](https://github.com/patricksadowski) - Patrick Sadowski ![There were 1 pull requests merged by Patrick Sadowski.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [PoolloverNathan](https://github.com/PoolloverNathan) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Rob-Hague](https://github.com/Rob-Hague) - Rob Hague ![There were 1 pull requests merged by Rob Hague.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [spaette](https://github.com/spaette) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [tjaz-brelih](https://github.com/tjaz-brelih) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [vaind](https://github.com/vaind) - Ivan Dlugos ![There were 1 pull requests merged by Ivan Dlugos.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [vcrobe](https://github.com/vcrobe) -  ![There were 1 pull requests merged by .](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [WeihanLi](https://github.com/WeihanLi) - Weihan Li ![There were 1 pull requests merged by Weihan Li.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [whitehorsesoft](https://github.com/whitehorsesoft) - Aaron ![There were 1 pull requests merged by Aaron.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [YoshiRulz](https://github.com/YoshiRulz) - James Groom ![There were 1 pull requests merged by James Groom.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

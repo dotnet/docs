@@ -81,6 +81,7 @@ Another scenario is where the data file is stored in cloud storage and automatic
 
 ## See also
 
+* [Binary serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization)
 * [YSoSerial.Net](https://github.com/pwntester/ysoserial.net) for research into how adversaries attack apps that utilize `BinaryFormatter`.
 * General background on deserialization vulnerabilities:
   * [OWASP: Deserialization of Untrusted Data](https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data)

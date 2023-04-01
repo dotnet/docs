@@ -585,31 +585,6 @@ items:
           href: ../standard/serialization/system-text-json/converters-how-to.md
         - name: Customize contracts
           href: ../standard/serialization/system-text-json/custom-contracts.md
-    - name: Binary serialization
-      items:
-      - name: Overview
-        href: /previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization
-        displayName: binary serialization
-      - name: BinaryFormatter security guide
-        href: ../standard/serialization/binaryformatter-security-guide.md
-      - name: BinaryFormatter event source
-        href: /previous-versions/dotnet/fundamentals/serialization/binary/binaryformatter-event-source
-      - name: Serialization concepts
-        href: /previous-versions/dotnet/fundamentals/serialization/serialization-concepts
-      - name: Basic serialization
-        href: /previous-versions/dotnet/fundamentals/serialization/basic-serialization
-      - name: Selective serialization
-        href: /previous-versions/dotnet/fundamentals/serialization/binary/selective-serialization
-      - name: Custom serialization
-        href: /previous-versions/dotnet/fundamentals/serialization/binary/custom-serialization
-      - name: Steps in the serialization process
-        href: /previous-versions/dotnet/fundamentals/serialization/binary/steps-in-the-serialization-process
-      - name: Version-tolerant serialization
-        href: /previous-versions/dotnet/fundamentals/serialization/binary/version-tolerant-serialization
-      - name: Serialization guidelines
-        href: /previous-versions/dotnet/fundamentals/serialization/serialization-guidelines
-      - name: "How to: Chunk serialized data"
-        href: ../standard/serialization/how-to-chunk-serialized-data.md
     - name: XML and SOAP serialization
       items:
       - name: Overview
@@ -646,6 +621,8 @@ items:
           href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
         - name: Override encoded SOAP XML serialization
           href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
+        - name: Chunk serialized data
+          href: ../standard/serialization/how-to-chunk-serialized-data.md
       - name: XML serialization elements
         items:
         - name: system.xml.serialization
@@ -664,6 +641,10 @@ items:
           href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
         - name: XML Schema Definition tool (Xsd.exe)
           href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+    - name: Binary serialization
+      items:
+      - name: BinaryFormatter security guide
+        href: ../standard/serialization/binaryformatter-security-guide.md
   - name: System.CommandLine
     items:
     - name: Overview

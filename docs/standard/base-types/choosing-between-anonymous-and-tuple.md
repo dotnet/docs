@@ -102,7 +102,7 @@ You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, 
 
 ### Serialization
 
-One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../../csharp/programming-guide/concepts/serialization/index.md). When serialization is important, creating a `class` or `struct` is preferred over anonymous types or tuple types.
+One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../serialization/index.md). When serialization is important, creating a `class` or `struct` is preferred over anonymous types or tuple types.
 
 ## Performance
 

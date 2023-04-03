@@ -76,11 +76,11 @@ This topic describes how to create a simple workflow service using messaging act
   
      This hosts the service defined in Service1.xamlx in the ASP.NET Development Server.  
   
-3. Press Ctrl + F5 to launch the service. The ASP.NET Development Server icon is displayed in the lower right side of the desktop as shown in the following image.  
+3. Press <kbd>Ctrl+F5</kbd> to launch the service. The ASP.NET Development Server icon is displayed in the lower right side of the desktop as shown in the following image.  
   
      ![Screenshot that shows the ASP.NET Developer Server icon.](./media/how-to-create-a-workflow-service-with-messaging-activities/asp-net-dev-server-icon.jpg)  
   
-     In addition, Internet Explorer displays the WCF Service Help Page for the service.  
+     In addition, the browser displays the WCF Service Help Page for the service.  
   
      ![Screenshot that shows the WCF Service Help Page.](./media/how-to-create-a-workflow-service-with-messaging-activities/wcf-service-help-page.jpg)  
   

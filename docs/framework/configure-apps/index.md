@@ -67,7 +67,7 @@ This article describes the syntax of configuration files and provides informatio
   
 - Executable–hosted app.  
   
-  These apps have two configuration files: a source configuration file, which is modified by the developer during development, and an output file that is distributed with the app.  
+  These apps have two configuration files: a source configuration file, which is modified by the developer during development, and an output file that's distributed with the app.  
   
   When you develop in Visual Studio, place the source configuration file for your app in the project directory and set its **Copy To Output Directory** property to **Copy always** or **Copy if newer**. By default, the name of the configuration file is *App.config*.
   
@@ -78,12 +78,6 @@ This article describes the syntax of configuration files and provides informatio
 - ASP.NET-hosted app.  
   
   For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)).
-  
-- Internet Explorer-hosted app.  
-  
-  If an app hosted in Internet Explorer has a configuration file, the location of this file is specified in a `<link>` tag with the following syntax: `<link rel="*ConfigurationFileName*" href="*location*">`
-  
-  In this tag, `location` is a URL to the configuration file. This sets the app base. The configuration file must be located on the same website as the app.
   
 ## Security configuration files  
 

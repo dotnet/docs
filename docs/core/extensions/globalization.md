@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Globalization"
 title: "Globalization"
-ms.date: 06/30/2022
+ms.date: 03/13/2023
 dev_langs:
   - "csharp"
   - "vb"
@@ -45,9 +45,7 @@ The use of Unicode ensures that the same code units always map to the same chara
 Even if you are developing an app that targets a single culture or region, you should use resource files to store strings and other resources that are displayed in the user interface. You should never add them directly to your code. Using resource files has a number of advantages:
 
 - All the strings are in a single location. You don't have to search throughout your source code to identify strings to modify for a specific language or culture.
-
-- There is no need to duplicate strings. Developers who don't use resource files often define the same string in multiple source code files. This duplication increases the probability that one or more instances will be overlooked when a string is modified.
-
+- There's no need to duplicate strings. Developers who don't use resource files often define the same string in multiple source code files. This duplication increases the probability that one or more instances will be overlooked when a string is modified.
 - You can include non-string resources, such as images or binary data, in the resource file instead of storing them in a separate standalone file, so they can be retrieved easily.
 
 Using resource files has particular advantages if you are creating a localized app. When you deploy resources in satellite assemblies, the common language runtime automatically selects a culture-appropriate resource based on the user's current UI culture as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. As long as you provide an appropriate culture-specific resource and correctly instantiate a <xref:System.Resources.ResourceManager> object or use a strongly typed resource class, the runtime handles the details of retrieving the appropriate resources.
@@ -155,9 +153,7 @@ You should never persist date and time data in a format that can vary by culture
 You can avoid this problem in any of three ways:
 
 - Serialize the date and time in binary format rather than as a string.
-
 - Save and parse the string representation of the date and time by using a custom format string that is the same regardless of the user's culture.
-
 - Save the string by using the formatting conventions of the invariant culture.
 
 The following example illustrates the last approach. It uses the formatting conventions of the invariant culture returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.
@@ -169,7 +165,11 @@ The following example illustrates the last approach. It uses the formatting conv
 
 A date and time value can have multiple interpretations, ranging from a general time ("The stores open on January 2, 2013, at 9:00 A.M.") to a specific moment in time ("Date of birth: January 2, 2013 6:32:00 A.M."). When a time value represents a specific moment in time and you restore it from a serialized value, you should ensure that it represents the same moment in time regardless of the user's geographical location or time zone.
 
-The following example illustrates this problem. It saves a single local date and time value as a string in three [standard formats](../../standard/base-types/standard-date-and-time-format-strings.md) ("G" for general date long time, "s" for sortable date/time, and "o" for round-trip date/time) as well as in binary format.
+The following example illustrates this problem. It saves a single local date and time value as a string in three [standard formats](../../standard/base-types/standard-date-and-time-format-strings.md):
+
+- "G" for general date long time.
+- "s" for sortable date/time.
+- "o" for round-trip date/time.
 
 [!code-csharp[Conceptual.Globalization#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/dates4.cs#10)]
 [!code-vb[Conceptual.Globalization#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates4.vb#10)]
@@ -180,29 +180,21 @@ When the data is restored on a system in the same time zone as the system on whi
 '3/30/2013 6:00:00 PM' --> 3/30/2013 6:00:00 PM Unspecified
 '2013-03-30T18:00:00' --> 3/30/2013 6:00:00 PM Unspecified
 '2013-03-30T18:00:00.0000000-07:00' --> 3/30/2013 6:00:00 PM Local
-
-3/30/2013 6:00:00 PM Local
 ```
 
 However, if you restore the data on a system in a different time zone, only the date and time value that was formatted with the "o" (round-trip) standard format string preserves time zone information and therefore represents the same instant in time. Here's the output when the date and time data is restored on a system in the Romance Standard Time zone:
 
 ```console
-'3/30/2013 6:00:00 PM' --> 3/30/2013 6:00:00 PM Unspecified
-'2013-03-30T18:00:00' --> 3/30/2013 6:00:00 PM Unspecified
-'2013-03-30T18:00:00.0000000-07:00' --> 3/31/2013 3:00:00 AM Local
-
-3/30/2013 6:00:00 PM Local
+'3/30/2023 6:00:00 PM' --> 3/30/2023 6:00:00 PM Unspecified
+'2023-03-30T18:00:00' --> 3/30/2023 6:00:00 PM Unspecified
+'2023-03-30T18:00:00.0000000-07:00' --> 3/31/2023 3:00:00 AM Local
 ```
 
 To accurately reflect a date and time value that represents a single moment of time regardless of the time zone of the system on which the data is deserialized, you can do any of the following:
 
 - Save the value as a string by using the "o" (round-trip) standard format string. Then deserialize it on the target system.
-
 - Convert it to UTC and save it as a string by using the "r" (RFC1123) standard format string. Then deserialize it on the target system and convert it to local time.
-
 - Convert it to UTC and save it as a string by using the "u" (universal sortable) standard format string. Then deserialize it on the target system and convert it to local time.
-
-- Convert it to UTC and save it in binary format. Then deserialize it on the target system and convert it to local time.
 
 The following example illustrates each technique.
 
@@ -212,11 +204,9 @@ The following example illustrates each technique.
 When the data is serialized on a system in the Pacific Standard Time zone and deserialized on a system in the Romance Standard Time zone, the example displays the following output:
 
 ```console
-'2013-03-30T18:00:00.0000000-07:00' --> 3/31/2013 3:00:00 AM Local
-'Sun, 31 Mar 2013 01:00:00 GMT' --> 3/31/2013 3:00:00 AM Local
-'2013-03-31 01:00:00Z' --> 3/31/2013 3:00:00 AM Local
-
-3/31/2013 3:00:00 AM Local
+'2023-03-30T18:00:00.0000000-07:00' --> 3/31/2023 3:00:00 AM Local
+'Sun, 31 Mar 2023 01:00:00 GMT' --> 3/31/2023 3:00:00 AM Local
+'2023-03-31 01:00:00Z' --> 3/31/2023 3:00:00 AM Local
 ```
 
 For more information, see [Convert times between time zones](../../standard/datetime/converting-between-time-zones.md).
@@ -233,9 +223,7 @@ For example, the transition from Pacific Standard Time to Pacific Daylight Time 
 To ensure that an arithmetic operation on date and time values produces accurate results, follow these steps:
 
 1. Convert the time in the source time zone to UTC.
-
 2. Perform the arithmetic operation.
-
 3. If the result is a date and time value, convert it from UTC to the time in the source time zone.
 
 The following example is similar to the previous example, except that it follows these three steps to correctly add 48 hours to March 9, 2013 at 10:30 A.M.
@@ -268,13 +256,11 @@ The handling of numbers depends on whether they are displayed in the user interf
 
 ### Display numeric values
 
-Typically, when numbers are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.NumberFormatInfo> object returned by the `CultureInfo.CurrentCulture.NumberFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of the following methods:
+Typically, when numbers are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.NumberFormatInfo> object returned by the `CultureInfo.CurrentCulture.NumberFormat` property. The formatting conventions of the current culture are automatically used when you format a date in the following ways:
 
-- The parameterless `ToString` method of any numeric type
-
-- The `ToString(String)` method of any numeric type, which includes a format string as an argument
-
-- The [composite formatting](../../standard/base-types/composite-formatting.md) feature, when it is used with numeric values
+- Using the parameterless `ToString` method of any numeric type.
+- Using the `ToString(String)` method of any numeric type, which includes a format string as an argument.
+- Using [composite formatting](../../standard/base-types/composite-formatting.md) with numeric values.
 
 The following example displays the average temperature per month in Paris, France. It first sets the current culture to French (France) before displaying the data, and then sets it to English (United States). In each case, the month names and temperatures are displayed in the format that is appropriate for that culture. Note that the two cultures use different decimal separators in the temperature value. Also note that the example uses the "MMMM" custom date and time format string to display the full month name, and that it allocates the appropriate amount of space for the month name in the result string by determining the length of the longest month name in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> array.
 
@@ -291,17 +277,9 @@ You should never persist numeric data in a culture-specific format. This is a co
 To avoid this problem, you can use one of these techniques:
 
 - Save and parse the string representation of the number by using a custom format string that is the same regardless of the user's culture.
-
 - Save the number as a string by using the formatting conventions of the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.
 
-- Serialize the number in binary instead of string format.
-
-The following example illustrates the last approach. It serializes the array of <xref:System.Double> values, and then deserializes and displays them by using the formatting conventions of the English (United States) and French (France) cultures.
-
-[!code-csharp[Conceptual.Globalization#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/numbers3.cs#7)]
-[!code-vb[Conceptual.Globalization#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/numbers3.vb#7)]
-
-Serializing currency values is a special case. Because a currency value depends on the unit of currency in which it is expressed; it makes little sense to treat it as an independent numeric value. However, if you save a currency value as a formatted string that includes a currency symbol, it cannot be deserialized on a system whose default culture uses a different currency symbol, as the following example shows.
+Serializing currency values is a special case. Because a currency value depends on the unit of currency in which it's expressed, it makes little sense to treat it as an independent numeric value. However, if you save a currency value as a formatted string that includes a currency symbol, it cannot be deserialized on a system whose default culture uses a different currency symbol, as the following example shows.
 
 [!code-csharp[Conceptual.Globalization#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/currency1.cs#16)]
 [!code-vb[Conceptual.Globalization#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/currency1.vb#16)]

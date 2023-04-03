@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # Getting started with DataFrames
 
-Learn how to get started with DataFrames. [DataFrames](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning.
+Learn how to get started with DataFrames. [DataFrames](/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning.
 
 ## Install Microsoft.Data.Analysis
 
@@ -52,13 +52,13 @@ var dataFrame = DataFrame.LoadCsv(dataPath);
 
 DataFrames store data as a collection of columns. This makes it easy to interact with the data.
 
-To get a preview of the column datatypes, run [Info()](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe.info?view=ml-dotnet-preview).
+To get a preview of the column datatypes, run <xref:Microsoft.Data.Analysis.DataFrame.Info>.
 
 ```csharp
 dataFrame.Info();
 ```
 
-To get a summary of the data, run [Description()](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe.description?view=ml-dotnet-preview).
+To get a summary of the data, run <xref:Microsoft.Data.Analysis.DataFrame.Description>.
 
 ```csharp
 dataFrame.Description();
@@ -66,7 +66,7 @@ dataFrame.Description();
 
 ## Transform Data
 
-There are a variety of transformative options for data. The [DataFrame](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframe?view=ml-dotnet-preview) and [DataFrameColumn](https://learn.microsoft.com/dotnet/api/microsoft.data.analysis.dataframecolumn?view=ml-dotnet-preview) classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
+There are a variety of transformative options for data. The <xref:Microsoft.Data.Analysis.DataFrame> and <xref:Microsoft.Data.Analysis.DataFrameColumn> classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
 
 For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can apply a computation to all of the values and save the results in a new column.
 
@@ -126,4 +126,4 @@ DataFrame.SaveCsv(dataFrame, "result.csv", ',');
 
 ## Use DataFrame with ML.NET
 
-DataFrames work directly with ML.NET. DataFrame implements the [IDataView](https://learn.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet) and can be used to train a model.
+DataFrames work directly with ML.NET. DataFrame implements the <xref:Microsoft.ML.IDataView> and can be used to train a model.

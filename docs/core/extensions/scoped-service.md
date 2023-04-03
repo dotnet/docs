@@ -3,7 +3,7 @@ title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/06/2023
+ms.date: 03/13/2023
 ms.topic: tutorial
 ---
 

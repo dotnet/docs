@@ -127,7 +127,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding a member to an interface**
 
-  If you [provide an implementation](../../csharp/tutorials/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support default interface members (DIMs). Also, in some scenarios, the runtime can't decide which default interface member to invoke. For these reasons, adding a member to an existing interface is considered a breaking change.
+  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support default interface members (DIMs). Also, in some scenarios, the runtime can't decide which default interface member to invoke. For these reasons, adding a member to an existing interface is considered a breaking change.
 
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 

@@ -2231,6 +2231,22 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/index.md",
+            "redirect_url": "/dotnet/standard/serialization/"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md",
+            "redirect_url": "dotnet/standard/serialization/how-to-deserialize-an-object"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md",
+            "redirect_url": "/dotnet/standard/serialization/how-to-serialize-an-object"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/how-to"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
             "redirect_url": "/dotnet/api/system.threading.threadpool.queueuserworkitem"
         },
@@ -2305,6 +2321,46 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/exceptions/using-exceptions.md",
             "redirect_url": "/dotnet/csharp/fundamentals/exceptions/using-exceptions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/index.md",
+            "redirect_url": "/dotnet/standard/io/"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md",
+            "redirect_url": "/dotnet/standard/io/how-to-copy-directories"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-create-a-file-or-folder.md",
+            "redirect_url": "/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-create-a-key-in-the-registry.md",
+            "redirect_url": "/dotnet/api/microsoft.win32.registry"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-get-information-about-files-folders-and-drives.md",
+            "redirect_url": "/dotnet/standard/io/common-i-o-tasks"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-iterate-through-a-directory-tree.md",
+            "redirect_url": "/dotnet/standard/io/how-to-enumerate-directories-and-files"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md",
+            "redirect_url": "dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-read-from-a-text-file.md",
+            "redirect_url": "dotnet/standard/io/how-to-read-text-from-a-file"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md",
+            "redirect_url": "dotnet/standard/io/how-to-read-text-from-a-file"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/file-system/how-to-write-to-a-text-file.md",
+            "redirect_url": "dotnet/standard/io/how-to-write-text-to-a-file"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/generics/benefits-of-generics.md",
@@ -2926,7 +2982,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/default-interface-members-versions.md",
-            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/default-interface-methods-versions.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/csharp-6.yml",
@@ -3001,6 +3061,10 @@
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/local-environment"
         },
         {
+            "source_path_from_root": "/docs/csharp/tutorials/mixins-with-default-interface-methods.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods"
+        },
+        {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md",
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local"
         },
@@ -3072,7 +3136,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/default-interface-methods-versions.md",
-            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md",
@@ -3080,7 +3144,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/mixins-with-default-interface-methods.md",
-            "redirect_url": "/dotnet/csharp/tutorials/mixins-with-default-interface-methods"
+            "redirect_url": "/dotnet/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/nullable-reference-types.md",

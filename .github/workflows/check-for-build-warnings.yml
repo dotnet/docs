@@ -13,7 +13,7 @@ jobs:
         issues: write
         pull-requests: write
     steps:
-    - uses: dotnet/docs-actions/actions/status-checker@main
+    - uses: dotnet/docs-tools/actions/status-checker@main
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         docs_path: "docs"

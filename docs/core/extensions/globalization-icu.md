@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: .NET globalization and ICU"
 title: "Globalization and ICU"
-ms.date: 11/14/2022
+ms.date: 03/13/2023
 helpviewer_keywords:
   - "globalization [.NET], about globalization"
   - "global applications, globalization"

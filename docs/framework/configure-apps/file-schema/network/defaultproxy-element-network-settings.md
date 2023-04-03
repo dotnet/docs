@@ -53,11 +53,11 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
+|[system.net](system-net-element-network-settings.md)|Contains settings that specify how .NET Framework connects to the network.|  
   
 ## Remarks  
 
- If the defaultProxy element is empty, the proxy settings from Internet Explorer will be used. This behavior is different from version 1.1 of the .NET Framework.  
+ If the defaultProxy element is empty, the system proxy settings are used.
   
  An exception is thrown if the [module](module-element-network-settings.md) element specifies a non-public type, the type is not deriving from the <xref:System.Net.IWebProxy> class, an exception from the parameterless constructor of this object occurred, or an exception occurred while retrieving the system-specified default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.  
   
@@ -67,7 +67,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 ## Example  
 
- The following example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access and contoso.com.  
+ The following example uses the defaults from the system proxy, specifies the proxy address, and bypasses the proxy for local access and contoso.com.  
   
 ```xml  
 <configuration>  

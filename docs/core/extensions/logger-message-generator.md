@@ -3,7 +3,7 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 03/01/2022
+ms.date: 03/13/2023
 ---
 
 # Compile-time logging source generation

@@ -89,7 +89,7 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 ## Notes
 
-- In the .NET Framework 4.5 and later versions, assemblies on local network shares (that is, [Local Intranet Security zone](deployedge/per-site-configuration-by-policy#windows-security-zones)) run in full trust by default; you do not have to enable the `<loadFromRemoteSources>` element. For Security zones other than Local Machine or Local Intranet, the value must be set to `true`.
+- In the .NET Framework 4.5 and later versions, assemblies on local network shares (that is, [Local Intranet Security zone](/deployedge/per-site-configuration-by-policy#windows-security-zones)) run in full trust by default; you do not have to enable the `<loadFromRemoteSources>` element. For Security zones other than Local Machine or Local Intranet, the value must be set to `true`.
 
 - If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom%2A> method to load a local assembly that the operating system has flagged as having been loaded from the web.
 

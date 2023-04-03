@@ -256,7 +256,7 @@ services.AddHttpClient(name)
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
 
-## Use typed clients in singleton services
+## Using typed clients in singleton services
 
 When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 
@@ -278,12 +278,27 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 
 Users are strongly advised **not to cache scope-related information** (such as data from `HttpContext`) inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
+If you require access to an application DI scope from your message handler, e.g. for authentication, you can work around that by incapsulating scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around `HttpMessageHandler` instance from the `IHttpClientFactory` cache, which you can get using `IHttpMessageHandlerFactory` by calling <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A> for any registered _named client_. In that case, you would need to create `HttpClient` instance yourself using the constructed handler.
+
+:::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to application DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
+
+The following example shows creating an `HttpClient` with a scope-aware `HttpHandler`:
+
+:::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="CreateClient":::
+
+A further workaround can follow with an extension method for registering a scope-aware `HttpHandler` and overriding default `IHttpClientFactory` registration by a transient service with access to the current application scope:
+
+:::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="AddScopeAwareHttpHandler":::
+
+For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
+
 ## See also
 
 - [Dependency injection in .NET][di]
 - [Logging in .NET][logging]
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
+- <xref:System.Net.Http.IHttpMessageHandlerFactory>
 - <xref:System.Net.Http.HttpClient>
 - [Make HTTP requests with the HttpClient][httpclient]
 - [Implement HTTP retry with exponential backoff][http-retry]

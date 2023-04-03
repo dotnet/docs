@@ -16,7 +16,6 @@ Welcome to what's new in the .NET docs for March 2023. This article lists some o
 - [IntPtr no longer used for function pointer types](../core/compatibility/reflection/8.0/function-pointer-reflection.md)
 - [DefaultValueAttribute removed from some properties](../core/compatibility/windows-forms/8.0/defaultvalueattribute-removal.md)
 - [HostApplicationBuilderSettings.Args respected by HostApplicationBuilder ctor](../core/compatibility/extensions/8.0/hostapplicationbuilder-ctor.md)
-- [Title not found in: #34497](../core/compatibility/sdk/8.0/runtimespecific-app-default.md)
 - [CLI console output uses UTF-8](../core/compatibility/sdk/8.0/console-encoding.md)
 - [ActivatorUtilities.CreateInstance behaves consistently](../core/compatibility/extensions/8.0/activatorutilities-createinstance-behavior.md)
 - [ActivatorUtilities.CreateInstance requires non-null provider](../core/compatibility/extensions/8.0/activatorutilities-createinstance-null-provider.md)

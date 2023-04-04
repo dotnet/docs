@@ -22,7 +22,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## New outline
 
-C# 10 adds support for a custom [*interpolated string handler*](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
+C# 10 adds support for a custom [*interpolated string handler*](#implement-the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
 
 You can write a handler for any scenario where you use information about the resulting string. Will it be used? What constraints are on the format? Some examples include:
 

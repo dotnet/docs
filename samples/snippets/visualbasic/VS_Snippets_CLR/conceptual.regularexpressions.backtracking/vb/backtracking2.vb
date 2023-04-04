@@ -17,6 +17,6 @@ Module Example
         End If
     End Sub
 End Module
-'    'Essential services are provided by regular expres' found at position 0
+'    'Essential services are provided by regular expressions found at position 0
 '    'es' found at position 47
 ' </Snippet2>

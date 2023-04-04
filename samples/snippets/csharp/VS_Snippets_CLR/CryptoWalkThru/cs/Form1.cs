@@ -9,7 +9,7 @@ namespace CryptoWalkThru
     {
         #region Snippet1 - Global objects
         // <Snippet1>
-        // Declare CspParmeters and RsaCryptoServiceProvider
+        // Declare CspParameters and RsaCryptoServiceProvider
         // objects with global scope of your Form class.
         readonly CspParameters _cspp = new CspParameters();
         RSACryptoServiceProvider _rsa;
@@ -107,7 +107,7 @@ namespace CryptoWalkThru
         #endregion
 
         #region Snippet5 - EncryptFile
-        
+
         // <Snippet5>
         private void EncryptFile(FileInfo file)
         {
@@ -133,12 +133,12 @@ namespace CryptoWalkThru
             // for the encrypted file (outFs):
             // - length of the key
             // - length of the IV
-            // - ecrypted key
+            // - encrypted key
             // - the IV
             // - the encrypted cipher content
 
             // Change the file's extension to ".enc"
-            string outFile = 
+            string outFile =
                 Path.Combine(EncrFolder, Path.ChangeExtension(file.Name, ".enc"));
 
             using (var outFs = new FileStream(outFile, FileMode.Create))
@@ -150,7 +150,7 @@ namespace CryptoWalkThru
 
                 // Now write the cipher text using
                 // a CryptoStream for encrypting.
-                using (var outStreamEncrypted = 
+                using (var outStreamEncrypted =
                     new CryptoStream(outFs, transform, CryptoStreamMode.Write))
                 {
                     // By encrypting a chunk at
@@ -182,7 +182,7 @@ namespace CryptoWalkThru
         #endregion
 
         #region Snippet6 - DecryptFile
-        
+
         // <Snippet6>
         private void DecryptFile(FileInfo file)
         {
@@ -214,8 +214,8 @@ namespace CryptoWalkThru
                 int lenK = BitConverter.ToInt32(LenK, 0);
                 int lenIV = BitConverter.ToInt32(LenIV, 0);
 
-                // Determine the start postition of
-                // the ciphter text (startC)
+                // Determine the start position of
+                // the cipher text (startC)
                 // and its length(lenC).
                 int startC = lenK + lenIV + 8;
                 int lenC = (int)inFs.Length - startC;
@@ -316,7 +316,7 @@ namespace CryptoWalkThru
         #endregion
 
         #region Snippet9 - buttonImportPublicKey
-        
+
         // <Snippet9>
         void buttonImportPublicKey_Click(object sender, EventArgs e)
         {

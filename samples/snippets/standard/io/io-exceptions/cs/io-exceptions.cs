@@ -35,7 +35,7 @@ class Program
             Console.WriteLine("The drive specified in 'path' is invalid.");
         }
         catch (PathTooLongException) {
-            Console.WriteLine("'path' exceeds the maxium supported path length.");
+            Console.WriteLine("'path' exceeds the maximum supported path length.");
         }
         catch (UnauthorizedAccessException) {
             Console.WriteLine("You do not have permission to create this file.");

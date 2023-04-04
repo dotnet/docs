@@ -97,7 +97,7 @@ Public Class MDIParent1
     '******************************************************************************
     '<Snippet33>
     ' Visual Basic
-    Private Sub TileVerticleToolStripMenuItem_Click(
+    Private Sub TileVerticalToolStripMenuItem_Click(
     ) Handles TileVerticalToolStripMenuItem.Click
 
         Me.LayoutMdi(MdiLayout.TileVertical)

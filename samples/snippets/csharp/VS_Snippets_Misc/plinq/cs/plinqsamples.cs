@@ -836,7 +836,7 @@
             // Using the raw string array here. See PLINQ Data Sample.
             string[] customers = GetCustomersAsStrings().ToArray();
 
-            // First, we must simulate some currupt input.
+            // First, we must simulate some corrupt input.
             customers[54] = "###";
 
             var parallelQuery = from cust in customers.AsParallel()
@@ -869,7 +869,7 @@
         {
             var customers = GetCustomersAsStrings().ToArray();
             // Using the raw string array here.
-            // First, we must simulate some currupt input
+            // First, we must simulate some corrupt input
             customers[54] = "###";
 
             // Assume that in this app, we expect malformed data

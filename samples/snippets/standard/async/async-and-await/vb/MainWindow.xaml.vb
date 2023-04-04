@@ -1,7 +1,7 @@
 ﻿
 Imports System.Net.Http
 
-' Example that demonstrates Asynchronous Progamming with Async and Await.
+' Example that demonstrates Asynchronous Programming with Async and Await.
 ' It uses HttpClient.GetStringAsync to download the contents of a website.
 ' Sample Output:
 ' Working . . . . . . .

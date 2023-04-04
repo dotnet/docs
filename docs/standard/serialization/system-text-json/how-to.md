@@ -57,7 +57,7 @@ Imports System.Text.Json.Serialization
 > [!IMPORTANT]
 >
 > - Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported by `System.Text.Json`.
-> - <xref:System.SerializableAttribute?displayProperty=fullName> and the <xref:System.Runtime.Serialization.ISerializable> interface aren't supported by `System.Text.Json`. These types are used only for [Binary and XML serialization](../binary-serialization.md).
+> - <xref:System.SerializableAttribute?displayProperty=fullName> and the <xref:System.Runtime.Serialization.ISerializable> interface aren't supported by `System.Text.Json`. These types are used only for [Binary and XML serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization).
 
 ## How to write .NET objects as JSON (serialize)
 

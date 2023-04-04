@@ -583,15 +583,15 @@
         },
         {
             "source_path_from_root": "/docs/standard/serialization/marshal-by-value.md",
-            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/serialization-concepts"
         },
         {
             "source_path_from_root": "/docs/standard/serialization/persistent-storage.md",
-            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/serialization-concepts"
         },
         {
             "source_path_from_root": "/docs/standard/serialization/samples-binary.md",
-            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization"
         },
         {
             "source_path_from_root": "/docs/standard/serialization/samples-xml.md",
@@ -599,7 +599,7 @@
         },
         {
             "source_path_from_root": "/docs/standard/serialization/schemaimporterextension-technology-sample.md",
-            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization"
         },
         {
             "source_path_from_root": "/docs/standard/serialization/serialization-how-to-topics.md",
@@ -615,11 +615,11 @@
         },
         {
             "source_path_from_root": "/docs/standard/serialization/version-tolerant-serialization-technology-sample.md",
-            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization"
         },
         {
             "source_path_from_root": "/docs/standard/serialization/web-services-generics-serialization-technology-sample.md",
-            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
+            "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization"
         },
         {
             "source_path_from_root": "/docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
@@ -628,7 +628,7 @@
         {
             "source_path_from_root": "/docs/standard/serialization/write-custom-serializer-deserializer.md",
             "redirect_url": "/dotnet/standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter"
-        },        
+        },
         {
             "source_path_from_root": "/docs/standard/serialization/system-text-json-character-casing.md",
             "redirect_url": "/dotnet/standard/serialization/system-text-json/character-casing",
@@ -718,6 +718,51 @@
             "source_path_from_root": "/docs/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md",
             "redirect_url": "/dotnet/standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter",
             "redirect_document_id": true
+        },
+        {
+          "source_path": "docs/standard/serialization/binary-serialization.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/binaryformatter-event-source.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/binaryformatter-event-source",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/serialization-concepts.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/serialization-concepts",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/basic-serialization.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/basic-serialization",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/selective-serialization.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/selective-serialization",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/custom-serialization.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/custom-serialization",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/steps-in-the-serialization-process.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/steps-in-the-serialization-process",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/version-tolerant-serialization.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/binary/version-tolerant-serialization",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/standard/serialization/serialization-guidelines.md",
+          "redirect_url": "/previous-versions/dotnet/fundamentals/serialization/serialization-guidelines",
+          "redirect_document_id": false
         },
         {
             "source_path_from_root": "/docs/standard/threading/autoresetevent.md",

@@ -585,31 +585,6 @@ items:
           href: ../standard/serialization/system-text-json/converters-how-to.md
         - name: Customize contracts
           href: ../standard/serialization/system-text-json/custom-contracts.md
-    - name: Binary serialization
-      items:
-      - name: Overview
-        href: ../standard/serialization/binary-serialization.md
-        displayName: binary serialization
-      - name: BinaryFormatter security guide
-        href: ../standard/serialization/binaryformatter-security-guide.md
-      - name: BinaryFormatter event source
-        href: ../standard/serialization/binaryformatter-event-source.md
-      - name: Serialization concepts
-        href: ../standard/serialization/serialization-concepts.md
-      - name: Basic serialization
-        href: ../standard/serialization/basic-serialization.md
-      - name: Selective serialization
-        href: ../standard/serialization/selective-serialization.md
-      - name: Custom serialization
-        href: ../standard/serialization/custom-serialization.md
-      - name: Steps in the serialization process
-        href: ../standard/serialization/steps-in-the-serialization-process.md
-      - name: Version-tolerant serialization
-        href: ../standard/serialization/version-tolerant-serialization.md
-      - name: Serialization guidelines
-        href: ../standard/serialization/serialization-guidelines.md
-      - name: "How to: Chunk serialized data"
-        href: ../standard/serialization/how-to-chunk-serialized-data.md
     - name: XML and SOAP serialization
       items:
       - name: Overview
@@ -646,6 +621,8 @@ items:
           href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
         - name: Override encoded SOAP XML serialization
           href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
+        - name: Chunk serialized data
+          href: ../standard/serialization/how-to-chunk-serialized-data.md
       - name: XML serialization elements
         items:
         - name: system.xml.serialization
@@ -664,6 +641,10 @@ items:
           href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
         - name: XML Schema Definition tool (Xsd.exe)
           href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+    - name: Binary serialization
+      items:
+      - name: BinaryFormatter security guide
+        href: ../standard/serialization/binaryformatter-security-guide.md
   - name: System.CommandLine
     items:
     - name: Overview

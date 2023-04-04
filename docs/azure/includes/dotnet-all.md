@@ -191,7 +191,7 @@
 | Resource Management - Marketplace Ordering | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MarketplaceOrdering/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MarketplaceOrdering-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MarketplaceOrdering_1.0.1/sdk/marketplaceordering/Azure.ResourceManager.MarketplaceOrdering/) |
 | Resource Management - Media | NuGet [1.2.0](https://www.nuget.org/packages/Azure.ResourceManager.Media/1.2.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Media-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Media_1.2.0/sdk/mediaservices/Azure.ResourceManager.Media/) |
 | Resource Management - Mixed Reality | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MixedReality/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MixedReality-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MixedReality_1.0.1/sdk/mixedreality/Azure.ResourceManager.MixedReality/) |
-| Resource Management - Mobilenetwork | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.MobileNetwork/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MobileNetwork_1.0.0-beta.1/sdk/mobilenetwork/Azure.ResourceManager.MobileNetwork/) |
+| Resource Management - Mobile Network | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.MobileNetwork/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MobileNetwork_1.0.0-beta.1/sdk/mobilenetwork/Azure.ResourceManager.MobileNetwork/) |
 | Resource Management - Monitor | NuGet [1.1.0](https://www.nuget.org/packages/Azure.ResourceManager.Monitor/1.1.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Monitor-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Monitor_1.1.0/sdk/monitor/Azure.ResourceManager.Monitor/) |
 | Resource Management - MySQL | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MySql/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MySql-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MySql_1.0.1/sdk/mysql/Azure.ResourceManager.MySql/) |
 | Resource Management - NetApp Files | NuGet [1.1.0](https://www.nuget.org/packages/Azure.ResourceManager.NetApp/1.1.0) | [docs](/dotnet/api/overview/azure/ResourceManager.NetApp-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.NetApp_1.1.0/sdk/netapp/Azure.ResourceManager.NetApp/) |
@@ -278,19 +278,6 @@
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0-beta.4) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
 | Purview Share | NuGet [1.0.3-beta.20](https://www.nuget.org/packages/Azure.Analytics.Purview.Share/1.0.3-beta.20) |  |  |
-| Resource Management - Change Analysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
-| Resource Management - Chaos | NuGet [0.9.15-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Chaos/0.9.15-preview.1) |  |  |
-| Resource Management - Data Protection | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.DataProtection.Backup/2.1.0) |  |  |
-| Resource Management - Device Update | NuGet [1.0.1-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DeviceUpdate/1.0.1-beta.1) |  |  |
-| Resource Management - Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Elastic/1.0.0-beta.1) |  |  |
-| Resource Management - Extended Location | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ExtendedLocation/1.0.0) |  |  |
-| Resource Management - Hybrid Kubernetes | NuGet [1.1.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Kubernetes/1.1.0-beta.1) |  |  |
-| Resource Management - Kubernetes Configuration | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.KubernetesConfiguration/2.1.0) |  |  |
-| Resource Management - Provider Hub | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ProviderHub/1.0.0-beta.1) |  |  |
-| Resource Management - Quantum | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Quantum/1.0.0-beta.2) |  |  |
-| Resource Management - Quota | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Quota/1.0.0-preview) |  |  |
-| Resource Management - Service Fabric Managed Clusters | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabricManagedClusters/1.0.0) |  |  |
-| Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.2) |  |  |
@@ -694,7 +681,6 @@
 | Management - Resource Manager Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ResourceManager.Fluent/1.38.1) | [docs](/dotnet/api/overview/azure/resource-manager) |  |
 | Management - Resource Mover | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Migrate.ResourceMover/3.0.0) |  |  |
 | Management - Resources | NuGet [2.20.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Resources/2.20.1-preview) |  |  |
-| Management - Sample Project Publish | NuGet [0.9.0-Preview](https://www.nuget.org/packages/Microsoft.Azure.Management.SampleProjectPublish/0.9.0-Preview) |  |  |
 | Management - Scheduler | NuGet [2.2.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Scheduler/2.2.0) |  | GitHub [2.2.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/scheduler/Microsoft.Azure.Management.Scheduler) |
 | Management - Scheduler Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.Scheduler.Fluent/1.9.1-beta) |  |  |
 | Management - Security | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityCenter/3.0.0) |  | GitHub [3.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityCenter_3.0.0/sdk/securitycenter/Microsoft.Azure.Management.SecurityCenter/) |
@@ -742,9 +728,22 @@
 | Profiles hybrid_2019_03_01 Management - Subscription | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2019_03_01.Subscription/0.9.0-preview) |  |  |
 | Profiles hybrid_2019_03_01 Management - WebSites | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2019_03_01.Websites/0.9.0-preview) |  |  |
 | Resource Management - Azure Stack | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.Management/0.10.8-preview) |  |  |
+| Resource Management - Change Analysis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ChangeAnalysis/1.0.0) |  |  |
+| Resource Management - Chaos | NuGet [0.9.15-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Chaos/0.9.15-preview.1) |  |  |
+| Resource Management - Data Protection | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.DataProtection.Backup/2.1.0) |  |  |
+| Resource Management - Device Update | NuGet [1.0.1-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.DeviceUpdate/1.0.1-beta.1) |  |  |
+| Resource Management - Elastic | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Elastic/1.0.0-beta.1) |  |  |
+| Resource Management - Extended Location | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ExtendedLocation/1.0.0) |  |  |
 | Resource Management - Health Bot | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Healthbot/1.0.0) |  |  |
+| Resource Management - Hybrid Kubernetes | NuGet [1.1.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Kubernetes/1.1.0-beta.1) |  |  |
+| Resource Management - Kubernetes Configuration | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.KubernetesConfiguration/2.1.0) |  |  |
+| Resource Management - Provider Hub | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ProviderHub/1.0.0-beta.1) |  |  |
+| Resource Management - Quantum | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Quantum/1.0.0-beta.2) |  |  |
+| Resource Management - Quota | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Quota/1.0.0-preview) |  |  |
 | Resource Management - Redis Enterprise | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.RedisEnterprise/3.0.0) |  |  |
 | Resource Management - Service Bus | NuGet [0.19.0-preview](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.ServiceBus/0.19.0-preview) |  |  |
+| Resource Management - Service Fabric Managed Clusters | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabricManagedClusters/1.0.0) |  |  |
+| Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Resource Management - Workload Monitor | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.WorkloadMonitor/1.0.0-preview) |  |  |
 | Security Insights | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityInsights/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityInsights_2.0.0/sdk/securityinsights/Microsoft.Azure.Management.SecurityInsights/) |
 | SignalR Management | NuGet [1.21.2](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.21.2) |  | GitHub [1.21.2](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
@@ -770,6 +769,7 @@
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
+| Management - Sample Project Publish | NuGet [0.9.0-Preview](https://www.nuget.org/packages/Microsoft.Azure.Management.SampleProjectPublish/0.9.0-Preview) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.1.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

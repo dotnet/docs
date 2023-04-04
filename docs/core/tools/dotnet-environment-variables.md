@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 03/30/2023
+ms.date: 04/04/2023
 ---
 
 # .NET environment variables
@@ -183,9 +183,9 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 is `/usr/share/dotnet` (when installed from `packages.microsoft.com`) or `/usr/lib/dotnet` (when installed from Jammy feed). For more information, see the following resources:
 
-* [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md?pivots=os-linux)
-* GitHub issue [dotnet/core#7699](https://github.com/dotnet/core/issues/7699)
-* GitHub issue [dotnet/runtime#79237](https://github.com/dotnet/runtime/issues/79237)
+- [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md?pivots=os-linux)
+- GitHub issue [dotnet/core#7699](https://github.com/dotnet/core/issues/7699)
+- GitHub issue [dotnet/runtime#79237](https://github.com/dotnet/runtime/issues/79237)
 
 This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
@@ -242,6 +242,10 @@ For more information, see [the `--roll-forward` option for the `dotnet` command]
 
 Disables minor version roll forward, if set to `0`. This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
 
+### `DOTNET_CLI_FORCE_UTF8_ENCODING`
+
+Forces the use of UTF-8 encoding in the console, even for older versions of Windows 10 that don't fully support UTF-8. For more information, see [SDK no longer changes console encoding when finished](../compatibility/sdk/8.0/console-encoding-fix.md).
+
 ### `DOTNET_CLI_UI_LANGUAGE`
 
 Sets the language of the CLI UI using a locale value such as `en-us`. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](/visualstudio/install/install-visual-studio). The .NET resource manager rules apply, so you don't have to pick an exact match&mdash;you can also pick descendants in the `CultureInfo` tree. For example, if you set it to `fr-CA`, the CLI will find and use the `fr` translations. If you set it to a language that is not supported, the CLI falls back to English.
@@ -289,14 +293,14 @@ Specifies the minimum number of hours between background downloads of advertisin
 
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
-* `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
-* `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
-* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`.
+- `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
+- `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
+- `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`.
 
-  * `4` - all tracing information is written
-  * `3` - only informational, warning, and error messages are written
-  * `2` - only warning and error messages are written
-  * `1` - only error messages are written
+  - `4` - all tracing information is written
+  - `3` - only informational, warning, and error messages are written
+  - `2` - only warning and error messages are written
+  - `1` - only error messages are written
 
 The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and`COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
 

@@ -501,6 +501,15 @@ The aforementioned Visual Studio Code extension for Bicep includes a visualizer.
 
 :::image type="content" source="media/shopping-cart-flexing.png" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-flexing.png":::
 
+### Staging environments
+
+The deployment infrastructure can deploy to staging environments, which are short-lived, test-centric, and immutable throwaway environments. These environments are very helpful for testing deployments before promoting them to production.
+
+> [!NOTE]
+> A recent change in Azure App Service on Windows impacts our guidance in this article. If you're using the vnet
+> configuration, and your App Service is running on Windows, you must also be in a separate App Service Plan.
+> If you're impacted by these changes, you could also change to App Service Linux, and this problem would be resolved.
+
 ## Summary
 
 As you update the source code and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provide the resources defined in the bicep files and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.

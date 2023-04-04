@@ -52,7 +52,7 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 * **`--no-service-endpoint`**
 
-  By default, the command appends "/api/v2/package" to the URL specified This option is for custom feeds that must use the source URL as it's specified with the `--source` option. For more information, see the `--source` option later in this article.
+  By default, the command appends "/api/v2/package" to the specified URL. This option is for custom feeds that must use the exact source URL as specified with the `--source` option. For more information, see the `--source` option later in this article.
 
 * **`--non-interactive`**
 

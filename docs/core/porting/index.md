@@ -66,7 +66,6 @@ An SDK-style project uses a different property to identify the target framework,
 
 For a list of all target monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
 
-
 ## Unavailable technologies
 
 There are a few technologies in .NET Framework that don't exist in .NET:

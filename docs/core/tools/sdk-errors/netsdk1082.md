@@ -6,7 +6,7 @@ ms.date: 07/08/2022
 f1_keywords:
 - NETSDK1082
 ---
-# NETSDK1082: PackageReference to Microsoft.AspNetCore.App is not necessary
+# NETSDK1082: There was no runtime pack available
 
 NETSDK1082 warns you that the runtime pack for your [runtime identifier](../../rid-catalog.md) (RID) could not be found in your NuGet feed. The full error message is similar to the following example:
 

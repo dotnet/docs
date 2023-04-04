@@ -1,10 +1,9 @@
 ---
 title: Get started with Azure and .NET
 description: Learn the basics you need to know about Azure and .NET.
-ms.date: 05/05/2021
+ms.date: 03/23/2023
 ms.topic: overview
-ms.custom: devx-track-dotnet
-author: DavidCBerry13
+ms.custom: devx-track-dotnet, engagement-fy23
 ---
 
 # Introduction to Azure and .NET

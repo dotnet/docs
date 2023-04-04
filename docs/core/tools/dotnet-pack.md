@@ -97,6 +97,10 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   Places the built packages in the directory specified.
 
+  - .NET 7.0.200 SDK
+
+    In the 7.0.200 SDK, if you specify the `--output` option when running this command on a solution, the CLI will emit an error. This is a regression and was fixed in 7.0.201 and later versions of the .NET SDK.
+
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).

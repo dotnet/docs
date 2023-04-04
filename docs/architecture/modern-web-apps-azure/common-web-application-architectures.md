@@ -93,7 +93,7 @@ The simplest approach to scaling a web application in Azure is to configure scal
 
 ## Clean architecture
 
-Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
+Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
 
 The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code into projects. You can find a solution template you can use as a starting point for your own ASP.NET Core solutions in the [ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture) GitHub repository or by [installing the template from NuGet](https://www.nuget.org/packages/Ardalis.CleanArchitecture.Template/).
 
@@ -270,7 +270,7 @@ networks:
 The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. The `Dockerfile` is used to specify which base container will be used and how the application will be configured on it. The `Web`' `Dockerfile`:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
 
 COPY *.sln .
@@ -280,7 +280,7 @@ RUN dotnet restore
 
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/src/Web/out ./
 
@@ -304,7 +304,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 ### References – Common web architectures
 
 - **The Clean Architecture**  
-  <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
+  <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
 - **The Onion Architecture**  
   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
 - **The Repository Pattern**  

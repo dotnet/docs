@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
         statuses: write
+        issues: write
+        pull-requests: write
     steps:
-    - uses: dotnet/docs-actions/actions/status-checker@main
+    - uses: dotnet/docs-tools/actions/status-checker@main
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        docs_path: "docs"
+        url_base_path: "dotnet"

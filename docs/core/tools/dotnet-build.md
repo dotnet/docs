@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 08/12/2021
+ms.date: 01/23/2023
 ---
 # dotnet build
 
@@ -118,6 +118,10 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
+
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
@@ -132,7 +136,9 @@ The project or solution file to build. If a project or solution file isn't speci
 
   The URI of the NuGet package source to use during the restore operation.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. By default, MSBuild displays warnings and errors at all verbosity levels. To exclude warnings, use `/property:WarningLevel=0`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity> and [WarningLevel](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).
 
 - **`--use-current-runtime, --ucr [true|false]`**
 

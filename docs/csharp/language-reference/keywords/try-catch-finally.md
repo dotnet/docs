@@ -32,4 +32,3 @@ For more information, see [The try statement](~/_csharpstandard/standard/stateme
 - [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)
 - [throw](throw.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
-- [using Statement](using-statement.md)

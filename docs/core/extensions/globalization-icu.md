@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: .NET globalization and ICU"
 title: "Globalization and ICU"
-ms.date: 11/14/2022
+ms.date: 03/13/2023
 helpviewer_keywords:
   - "globalization [.NET], about globalization"
   - "global applications, globalization"
@@ -208,4 +208,4 @@ The following APIs are supported with limitations:
 - <xref:System.String.Normalize(System.Text.NormalizationForm)?displayProperty=nameWithType> and <xref:System.String.IsNormalized(System.Text.NormalizationForm)?displayProperty=nameWithType> don't support the rarely used <xref:System.Text.NormalizationForm.FormKC> and <xref:System.Text.NormalizationForm.FormKD> forms.
 - <xref:System.Globalization.RegionInfo.CurrencyNativeName?displayProperty=nameWithType> returns the same value as <xref:System.Globalization.RegionInfo.CurrencyEnglishName?displayProperty=nameWithType>.
 
-In addition, a list of supported locales can be found on the [dotnet/icu repo](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54).
+In addition, fewer locales are supported. The supported list can be found in the [dotnet/icu repo](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_wasm.json#L7-L195).

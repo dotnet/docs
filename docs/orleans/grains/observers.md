@@ -9,9 +9,9 @@ ms.date: 03/16/2022
 There are situations in which a simple message/response pattern is not enough, and the client needs to receive asynchronous notifications.
 For example, a user might want to be notified when a new instant message has been published by a friend.
 
-Client observers is a mechanism that allows notifying clients asynchronously. An observer is a one-way asynchronous interface that inherits from <xref:Orleans.IGrainObserver>, and all its methods must be void. The grain sends a notification to the observer by invoking it like a grain interface method, except that it has no return value, and so the grain need not depend on the result. The Orleans runtime will ensure one-way delivery of the notifications. A grain that publishes such notifications should provide an API to add or remove observers. In addition, it is usually convenient to expose a method that allows an existing subscription to be cancelled.
+Client observers is a mechanism that allows notifying clients asynchronously. Observer interfaces must inherit from <xref:Orleans.IGrainObserver>, and all methods must return either `void`, <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. A return type of `void` is not recommended as it may encourage the use of `async void` on the implementation, which is a dangerous pattern since it can result in application crashes if an exception is thrown from the method. Instead, for best-effort notification scenarios, consider applying the <xref:Orleans.Concurrency.OneWayAttribute> to the observer's interface method. This will cause the receiver to not send a response for the method invocation and will cause the method to return immediately at the call site, without waiting for a response from the observer. A grain calls a method on an observer by invoking it like any grain interface method. The Orleans runtime will ensure the delivery of requests and responses. A common use case for observers is to enlist a client to receive notifications when an event occurs in the Orleans application. A grain that publishes such notifications should provide an API to add or remove observers. In addition, it is usually convenient to expose a method that allows an existing subscription to be cancelled.
 
-Grain developers may use a utility class such as [`ObserverManager<T>`](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12) to simplify development of observed grain types. Unlike grains, which are automatically reactivated as-needed after failure, clients are not fault-tolerant: a client which fails may never recover.
+Grain developers may use a utility class such as <xref:Orleans.Utilities.ObserverManager%601> to simplify development of observed grain types. Unlike grains, which are automatically reactivated as-needed after failure, clients are not fault-tolerant: a client which fails may never recover.
 For this reason, the `ObserverManager<T>` utility removes subscriptions after a configured duration. Clients which are active should resubscribe on a timer to keep their subscription active.
 
 To subscribe to a notification, the client must first create a local object that implements the observer interface. It then calls a method on the observer factory, <xref:Orleans.IGrainFactory.CreateObjectReference%2A>`, to turn the object into a grain reference, which can then be passed to the subscription method on the notifying grain.
@@ -27,7 +27,7 @@ The interface will look like this
 ```csharp
 public interface IChat : IGrainObserver
 {
-    void ReceiveMessage(string message);
+    Task ReceiveMessage(string message);
 }
 
 ```
@@ -40,14 +40,18 @@ The simplest case would be something like this:
 ```csharp
 public class Chat : IChat
 {
-    public void ReceiveMessage(string message)
+    public Task ReceiveMessage(string message)
     {
         Console.WriteLine(message);
+        return Task.CompletedTask;
     }
 }
 ```
 
-On the server, we should next have a Grain that sends these chat messages to clients. The Grain should also have a mechanism for clients to subscribe and unsubscribe themselves for notifications. For subscriptions, the grain can use a copy of the utility class [`ObserverManager<T>`](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12).
+On the server, we should next have a Grain that sends these chat messages to clients. The Grain should also have a mechanism for clients to subscribe and unsubscribe themselves for notifications. For subscriptions, the grain can use an instance of the utility class <xref:Orleans.Utilities.ObserverManager%601>.
+
+> [!NOTE]
+> <xref:Orleans.Utilities.ObserverManager%601> is part of Orleans since version 7.0. For older versions, the following [implementation](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12) can be copied.
 
 ```csharp
 class HelloGrain : Grain, IHello
@@ -58,7 +62,7 @@ class HelloGrain : Grain, IHello
     {
         _subsManager =
             new ObserverManager<IChat>(
-                TimeSpan.FromMinutes(5), logger, "subs");
+                TimeSpan.FromMinutes(5), logger);
     }
 
     // Clients call this to subscribe.
@@ -100,7 +104,7 @@ var friend = _grainFactory.GetGrain<IHello>(0);
 Chat c = new Chat();
 
 //Create a reference for chat, usable for subscribing to the observable grain.
-var obj = await _grainFactory.CreateObjectReference<IChat>(c);
+var obj = _grainFactory.CreateObjectReference<IChat>(c);
 
 //Subscribe the instance to receive messages.
 await friend.Subscribe(obj);

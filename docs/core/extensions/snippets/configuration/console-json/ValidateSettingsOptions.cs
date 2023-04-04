@@ -16,14 +16,14 @@ sealed partial class ValidateSettingsOptions : IValidateOptions<SettingsOptions>
     public ValidateOptionsResult Validate(string? name, SettingsOptions options)
     {
         StringBuilder failure = new();
-        var rx = ValidationRegex();
-        Match match = rx.Match(options.SiteTitle);
+        Regex validationRegex = ValidationRegex();
+        Match match = validationRegex.Match(options.SiteTitle);
         if (string.IsNullOrEmpty(match.Value))
         {
             failure.AppendLine($"{options.SiteTitle} doesn't match RegEx");
         }
 
-        if (options.Scale < 0 || options.Scale > 1000)
+        if (options.Scale is < 0 or > 1_000)
         {
             failure.AppendLine($"{options.Scale} isn't within Range 0 - 1000");
         }

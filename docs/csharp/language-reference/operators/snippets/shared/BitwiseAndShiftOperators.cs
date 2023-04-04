@@ -163,6 +163,12 @@
             Console.WriteLine($"{b} >> {count1} is {b >> count1}; {b} >> {count2} is {b >> count2}");
             // Output:
             // 4 >> 1 is 2; 4 >> 225 is 2
+
+            int count = -31;
+            int c = 0b_0001;
+            Console.WriteLine($"{c} << {count} is {c << count}");
+            // Output:
+            // 1 << -31 is 2
             // </SnippetShiftCount>
         }
 

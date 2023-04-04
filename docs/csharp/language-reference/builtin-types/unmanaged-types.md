@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 A type is an **unmanaged type** if it's any of the following types:
 
-- `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal`, or `bool`
+- `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `char`, `float`, `double`, `decimal`, or `bool`
 - Any [enum](enum.md) type
 - Any [pointer](../unsafe-code.md#pointer-types) type
 - Any user-defined [struct](struct.md) type that contains fields of unmanaged types only.

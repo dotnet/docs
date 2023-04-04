@@ -1,6 +1,6 @@
 ---
-title: "Member access operators and expressions"
-description: "C# operators that you use to access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
+title: "Member access and null-conditional operators and expressions:"
+description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
 ms.date: 11/28/2022
 author: pkulikov
 f1_keywords:
@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Member access operators and expressions - the dot, indexer, and invocation operators.
 
-You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`).
+You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`). These include the *null-conditional* member access (`?.`), and indexer access (`?[]`) operators.
 
 - [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -94,7 +94,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
 
-You also use square brackets to specify [attributes](../../programming-guide/concepts/attributes/index.md):
+You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
 
 ```csharp
 [System.Diagnostics.Conditional("DEBUG")]

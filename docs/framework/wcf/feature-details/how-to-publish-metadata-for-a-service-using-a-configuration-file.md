@@ -154,7 +154,7 @@ namespace Metadata.Samples
   
 9. Build and run the console application.  
   
-10. Use Internet Explorer to browse to the base address of the service (`http://localhost:8001/MetadataSample` in this sample) and verify that the metadata publishing is turned on. If not, a message at the top of the resulting page displays: "Metadata publishing for this service is currently disabled."  
+10. Browse to the base address of the service (`http://localhost:8001/MetadataSample` in this sample) and verify that the metadata publishing is turned on. If not, a message at the top of the resulting page displays: "Metadata publishing for this service is currently disabled."  
   
 ### To use default endpoints  
   

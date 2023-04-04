@@ -3,12 +3,12 @@ title: Use HTTP/3 with HttpClient
 description: Learn how to use the HttpClient to access HTTP/3 servers in .NET
 author: IEvangelist
 ms.author: samsp
-ms.date: 7/28/2022
+ms.date: 03/13/2023
 ---
 
 # Use HTTP/3 with HttpClient
 
-[HTTP/3](https://www.rfc-editor.org/rfc/rfc9114.html) is the third and recently standardized major version of HTTP. HTTP/3 uses the same semantics as HTTP/1.1 and HTTP/2: the same request methods, status codes, and message fields apply to all versions. The differences are in the underlying transport. Both HTTP/1.1 and HTTP/2 use TCP as their transport. HTTP/3 uses a new transport technology developed alongside HTTP/3 called [QUIC](https://www.rfc-editor.org/rfc/rfc9000.html).
+[HTTP/3](https://www.rfc-editor.org/rfc/rfc9114.html) is the third and recently standardized major version of HTTP. HTTP/3 uses the same semantics as HTTP/1.1 and HTTP/2: the same request methods, status codes, and message fields apply to all versions. The differences are in the underlying transport. Both HTTP/1.1 and HTTP/2 use TCP as their transport. HTTP/3 uses a transport technology developed alongside HTTP/3 called [QUIC](https://www.rfc-editor.org/rfc/rfc9000.html).
 
 HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 
@@ -90,5 +90,6 @@ Cloudflare hosts a site for HTTP/3 which can be used to test the client against 
 
 - <xref:System.Net.Http.HttpClient>
 - [HTTP/3 support in Kestrel][http3Kestrel]
+- [QUIC support in .NET](../../fundamentals/networking/quic/quic-overview.md)
 
 [http3Kestrel]: /aspnet/core/fundamentals/servers/kestrel/http3

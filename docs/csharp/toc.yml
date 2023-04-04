@@ -11,6 +11,8 @@ items:
     href: tour-of-csharp/program-building-blocks.md
   - name: Major language areas
     href: tour-of-csharp/features.md
+  - name: C# language strategy
+    href: tour-of-csharp/strategy.md
   - name: Tutorials
     items:
     - name: Choose your first lesson
@@ -179,16 +181,10 @@ items:
       href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
-  - name: Safely update interfaces with default interface methods
-    href: tutorials/default-interface-methods-versions.md
-  - name: Create mixin functionality with default interface methods
-    href: tutorials/mixins-with-default-interface-methods.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
   - name: Work with nullable reference types
     href: tutorials/nullable-reference-types.md
-  - name: Generate and consume asynchronous streams
-    href: tutorials/generate-consume-asynchronous-stream.md
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -201,8 +197,28 @@ items:
     href: tutorials/console-webapiclient.md
   - name: Work with LINQ
     href: tutorials/working-with-linq.md
-  - name: Use Attributes
-    href: tutorials/attributes.md
+- name: Asynchronous programming
+  items:
+  - name: Overview
+    displayName: asynchronous programming, async, await
+    href: asynchronous-programming/index.md
+  - name: Asynchronous programming scenarios
+    href: asynchronous-programming/async-scenarios.md
+  - name: Task asynchronous programming model
+    href: asynchronous-programming/task-asynchronous-programming-model.md
+  - name: Async return types
+    displayName: Task, Task<T>, ValueTask, ValueTask<T>
+    href: asynchronous-programming/async-return-types.md
+  - name: Process asynchronous tasks as they complete
+    href: asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md
+  - name: Asynchronous file access
+    href: asynchronous-programming/using-async-for-file-access.md
+  - name: Cancel a list of tasks
+    href: asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks.md
+  - name: Cancel tasks after a period of time
+    href: asynchronous-programming/cancel-async-tasks-after-a-period-of-time.md
+  - name: Generate and consume asynchronous streams
+    href: asynchronous-programming/generate-consume-asynchronous-stream.md
 - name: C# concepts
   items:
   - name: Nullable reference types
@@ -277,28 +293,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Write safe, efficient code
-    href: write-safe-efficient-code.md
-  - name: Expression trees
-    items:
-    - name: Introduction to expression trees
-      href: expression-trees.md
-    - name: Expression Trees Explained
-      href: expression-trees-explained.md
-    - name: Framework Types Supporting Expression Trees
-      href: expression-classes.md
-    - name: Executing Expressions
-      href: expression-trees-execution.md
-    - name: Interpreting Expressions
-      href: expression-trees-interpreting.md
-    - name: Building Expressions
-      href: expression-trees-building.md
-    - name: Translating Expressions
-      href: expression-trees-translating.md
-    - name: Summary
-      href: expression-trees-summary.md
-  - name: Native interoperability
-    href: programming-guide/interop/index.md
   - name: Versioning
     href: versioning.md
 - name: How-to C# articles
@@ -318,6 +312,80 @@ items:
     href: how-to/compare-strings.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
+- name: Advanced topics
+  items:
+  - name: Reflection and Attributes
+    items:
+    - name: Overview
+      displayName: attributes, reflection
+      href: advanced-topics/reflection-and-attributes/index.md
+    - name: Create custom attributes
+      href: advanced-topics/reflection-and-attributes/creating-custom-attributes.md
+    - name: Access attributes using reflection
+      href: advanced-topics/reflection-and-attributes/accessing-attributes-by-using-reflection.md
+    - name: "How to create a C/C++ union by using attributes"
+      href: advanced-topics/reflection-and-attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
+    - name: Generics and attributes
+      href: advanced-topics/reflection-and-attributes/generics-and-attributes.md
+    - name: "How to query an assembly's metadata with reflection and LINQ"
+      href: advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md
+    - name: Generics and reflection
+      href: advanced-topics/reflection-and-attributes/generics-and-reflection.md
+    - name: "Tutorial: Define and use attributes"
+      href: advanced-topics/reflection-and-attributes/attribute-tutorial.md
+  - name: Interface implementations
+    items:
+    - name: Safely update interfaces with default interface methods
+      href: advanced-topics/interface-implementation/default-interface-methods-versions.md
+    - name: Create mixin functionality with default interface methods
+      href: advanced-topics/interface-implementation/mixins-with-default-interface-methods.md
+  - name: Expression trees
+    items:
+    - name: Overview
+      displayName: expression trees
+      href: advanced-topics/expression-trees/index.md
+    - name: Expression Trees Explained
+      href: advanced-topics/expression-trees/expression-trees-explained.md
+    - name: Framework Types Supporting Expression Trees
+      href: advanced-topics/expression-trees/expression-classes.md
+    - name: Execute expressions
+      href: advanced-topics/expression-trees/expression-trees-execution.md
+    - name: Interpret expressions
+      href: advanced-topics/expression-trees/expression-trees-interpreting.md
+    - name: Build expressions
+      href: advanced-topics/expression-trees/expression-trees-building.md
+    - name: Translate expressions
+      href: advanced-topics/expression-trees/expression-trees-translating.md
+    - name: Debug expression trees in Visual Studio
+      href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
+    - name: DebugView Syntax
+      href: advanced-topics/expression-trees/debugview-syntax.md
+  - name: Native interoperability
+    items:
+    - name: Overview
+      href: advanced-topics/interop/index.md
+    - name: Example COM Class
+      href: advanced-topics/interop/example-com-class.md
+    - name: "Walkthrough: Office Programming"
+      href: advanced-topics/interop/walkthrough-office-programming.md
+    - name: "How to use platform invoke to play a WAV file"
+      href: advanced-topics/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
+    - name: "How to use indexed properties in COM interop programming"
+      href: advanced-topics/interop/how-to-use-indexed-properties-in-com-interop-programming.md
+    - name: "How to access Office interop objects"
+      href: advanced-topics/interop/how-to-access-office-interop-objects.md
+    - name: "How to use named and optional arguments in Office programming"
+      href: advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming.md
+    - name: Using Type dynamic
+      href: advanced-topics/interop/using-type-dynamic.md
+    - name: "Walkthrough: Creating and Using Dynamic Objects"
+      href: advanced-topics/interop/walkthrough-creating-and-using-dynamic-objects.md
+  - name: Performance engineering
+    items:
+    - name: Overview
+      href: advanced-topics/performance/index.md
+    - name: Tutorial - reduce allocations
+      href: advanced-topics/performance/ref-tutorial.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
   - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
@@ -375,39 +443,6 @@ items:
     - name: Overview
       displayName: programming concepts
       href: programming-guide/concepts/index.md
-    - name: Asynchronous programming
-      displayName: async, await, asynchronous programming, task, cancellation
-      items:
-      - name: Overview
-        displayName: asynchronous programming
-        href: programming-guide/concepts/async/index.md
-      - name: Asynchronous programming scenarios
-        href: async.md
-      - name: Task asynchronous programming model
-        href: programming-guide/concepts/async/task-asynchronous-programming-model.md
-      - name: Async return types
-        href: programming-guide/concepts/async/async-return-types.md
-      - name: Cancel tasks
-        items:
-        - name: Cancel a list of tasks
-          href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
-        - name: Cancel tasks after a period of time
-          href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
-      - name: Process asynchronous tasks as they complete
-        href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
-      - name: Asynchronous file access
-        href: programming-guide/concepts/async/using-async-for-file-access.md
-    - name: Attributes
-      items:
-      - name: Overview
-        displayName: attributes
-        href: programming-guide/concepts/attributes/index.md
-      - name: Creating Custom Attributes
-        href: programming-guide/concepts/attributes/creating-custom-attributes.md
-      - name: Accessing Attributes by Using Reflection
-        href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
-      - name: "How to create a C/C++ union by using attributes"
-        href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
     - name: Collections
       href: programming-guide/concepts/collections.md
     - name: Covariance and contravariance
@@ -429,21 +464,6 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
         - name: Use Variance for Func and Action Generic Delegates
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
-    - name: Expression trees
-      items:
-      - name: Overview
-        displayName: expression trees
-        href: programming-guide/concepts/expression-trees/index.md
-      - name: "How to execute expression trees"
-        href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
-      - name: "How to modify expression trees"
-        href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
-      - name: "How to use expression trees to build dynamic queries"
-        href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
-      - name: Debugging Expression Trees in Visual Studio
-        href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
-      - name: DebugView Syntax
-        href: programming-guide/concepts/expression-trees/debugview-syntax.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
     - name: Language-Integrated Query (LINQ)
@@ -537,10 +557,8 @@ items:
             href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
           - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
-        - name: LINQ and Reflection
-          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
-        - name: "How to query an assembly's metadata with Reflection (LINQ)"
-          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+          - name: "How to use expression trees to build dynamic queries"
+            href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
         - name: LINQ and File Directories
           items:
           - name: Overview
@@ -569,19 +587,6 @@ items:
         href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
       - name: Visual Studio IDE and Tools Support for LINQ
         href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
-    - name: Reflection
-      href: programming-guide/concepts/reflection.md
-    - name: Serialization (C#)
-      items:
-      - name: Overview
-        displayName: serialization
-        href: programming-guide/concepts/serialization/index.md
-      - name: "How to write object data to an XML file"
-        href: programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md
-      - name: "How to read object data from an XML file"
-        href: programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md
-      - name: "Walkthrough: Persisting an Object in Visual Studio"
-        href: programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md
   - name: Statements, expressions, and equality
     items:
     - name: Statements
@@ -608,10 +613,6 @@ items:
       href: programming-guide/types/how-to-convert-a-string-to-a-number.md
     - name: "How to convert between hexadecimal strings and numeric types"
       href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
-    - name: Using Type dynamic
-      href: programming-guide/types/using-type-dynamic.md
-    - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
-      href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Classes, Structs, and Records
     items:
     - name: Polymorphism
@@ -674,8 +675,6 @@ items:
         href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
       - name: Named and Optional Arguments
         href: programming-guide/classes-and-structs/named-and-optional-arguments.md
-      - name: "How to use named and optional arguments in Office programming"
-        href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
     - name: Constructors
       items:
       - name: Constructors overview
@@ -794,49 +793,6 @@ items:
       href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
     - name: Generics in the Run Time
       href: programming-guide/generics/generics-in-the-run-time.md
-    - name: Generics and Reflection
-      href: programming-guide/generics/generics-and-reflection.md
-    - name: Generics and Attributes
-      href: programming-guide/generics/generics-and-attributes.md
-  - name: File System and the Registry
-    items:
-    - name: Overview
-      displayName: file system registry
-      href: programming-guide/file-system/index.md
-    - name: "How to iterate through a directory tree"
-      href: programming-guide/file-system/how-to-iterate-through-a-directory-tree.md
-    - name: "How to get information about files, folders, and drives"
-      href: programming-guide/file-system/how-to-get-information-about-files-folders-and-drives.md
-    - name: "How to create a file or folder"
-      href: programming-guide/file-system/how-to-create-a-file-or-folder.md
-    - name: "How to copy, delete, and move files and folders"
-      href: programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md
-    - name: "How to provide a progress dialog box for file operations"
-      href: programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md
-    - name: "How to write to a text file"
-      href: programming-guide/file-system/how-to-write-to-a-text-file.md
-    - name: "How to read From a text file"
-      href: programming-guide/file-system/how-to-read-from-a-text-file.md
-    - name: "How to read a text file one line at a time"
-      href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
-    - name: "How to create a key in the registry"
-      href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
-  - name: Interoperability
-    items:
-    - name: .NET Interoperability
-      href: programming-guide/interop/index.md
-    - name: Interoperability Overview
-      href: programming-guide/interop/interoperability-overview.md
-    - name: "How to access Office interop objects by using C# features"
-      href: programming-guide/interop/how-to-access-office-onterop-objects.md
-    - name: "How to use indexed properties in COM interop programming"
-      href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
-    - name: "How to use platform invoke to play a WAV file"
-      href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
-    - name: "Walkthrough: Office Programming (C# and Visual Basic)"
-      href: programming-guide/interop/walkthrough-office-programming.md
-    - name: Example COM Class
-      href: programming-guide/interop/example-com-class.md
 - name: Language reference
   items:
   - name: Overview
@@ -996,14 +952,8 @@ items:
       items:
       - name: namespace
         href: language-reference/keywords/namespace.md
-      - name: using
-        items:
-        - name: Contexts for using
-          href: language-reference/keywords/using.md
-        - name: using Directive
-          href: language-reference/keywords/using-directive.md
-        - name: using Statement
-          href: language-reference/keywords/using-statement.md
+      - name: using directive
+        href: language-reference/keywords/using-directive.md
       - name: extern alias
         href: language-reference/keywords/extern-alias.md
     - name: Generic Type Constraint Keywords
@@ -1101,7 +1051,7 @@ items:
     - name: Comparison operators
       href: language-reference/operators/comparison-operators.md
       displayName: ">, <, >=, <=, greater, less"
-    - name: Member access operators and expressions
+    - name: Member access and null-conditional operators and expressions
       href: language-reference/operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
     - name: Type-testing operators and cast expression
@@ -1199,6 +1149,9 @@ items:
     - name: lock statement
       displayName: thread synchronization, monitor
       href: language-reference/statements/lock.md
+    - name: using statement
+      displayName: dispose, disposable, await using, using declaration
+      href: language-reference/statements/using.md
     - name: yield statement
       displayName: iterator, yield break, yield return
       href: language-reference/statements/yield.md
@@ -1367,8 +1320,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features
       items:
-      - name: Unmanaged generic type constraints
-        href: ../../_csharplang/proposals/csharp-7.3/blittable.md
       - name: Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context
         href: ../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
       - name: Pattern-based `fixed` statement
@@ -1377,14 +1328,10 @@ items:
         href: ../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
       - name: Stackalloc array initializers
         href: ../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
-      - name: Auto-implemented property field-targeted attributes
-        href: ../../_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md
       - name: Expression variables in initializers
         href: ../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md
       - name: Tuple equality (==) and inequality (!=)
         href: ../../_csharplang/proposals/csharp-7.3/tuple-equality.md
-      - name: Improved overload candidates
-        href: ../../_csharplang/proposals/csharp-7.3/improved-overload-candidates.md
     - name: C# 8.0 features
       items:
       - name: Nullable reference types - proposal

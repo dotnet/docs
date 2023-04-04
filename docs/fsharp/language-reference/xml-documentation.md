@@ -47,7 +47,7 @@ The following example shows the alternative method, without XML tags. In this ex
 ## Comments with XML tags
 
 If a comment body begins with `<` (normally `<summary>`), then it is treated as an XML formatted comment
-body using XML tags. This second enables you to specify separate notes
+body using XML tags. This second way enables you to specify separate notes
 for a short summary, additional remarks, documentation for each parameter and type parameter and exceptions thrown, and a description of the return value.
 
 The following is a typical XML documentation comment in a signature file:

@@ -127,7 +127,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding a member to an interface**
 
-  If you [provide an implementation](../../csharp/tutorials/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support default interface members (DIMs). Also, in some scenarios, the runtime can't decide which default interface member to invoke. For these reasons, adding a member to an existing interface is considered a breaking change.
+  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support default interface members (DIMs). Also, in some scenarios, the runtime can't decide which default interface member to invoke. For these reasons, adding a member to an existing interface is considered a breaking change.
 
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 
@@ -193,9 +193,13 @@ Changes in this category modify the public surface area of a type. Most of the c
 
    The return value of a method or the type of a property or field cannot be modified. For example, the signature of a method that returns an <xref:System.Object> cannot be changed to return a <xref:System.String>, or vice versa.
 
-- ❌ **DISALLOWED: Adding a field to a struct that previously had no state**
+- ❌ **DISALLOWED: Adding an instance field to a struct that has no nonpublic fields**
 
-  Definite assignment rules allow the use of uninitialized variables so long as the variable type is a stateless struct. If the struct is made stateful, code could end up with uninitialized data. This is both potentially a source breaking and a binary breaking change.
+  If a struct has only public fields or has no fields at all, callers can declare locals of that struct type without calling the struct's constructor or first initializing the local to `default(T)`, so long as all public fields are set on the struct before first use. Adding any new fields - public or nonpublic - to such a struct is a source breaking change for these callers, as the compiler will now require the additional fields to be initialized.
+
+  Additionally, adding any new fields - public or nonpublic - to a struct with no fields or only public fields is a binary breaking change to callers that have applied `[SkipLocalsInit]` to their code. Since the compiler wasn't aware of these fields at compile time, it could emit IL that doesn't fully initialize the struct, leading to the struct being created from uninitialized stack data.
+
+  If a struct has any nonpublic fields, the compiler already enforces initialization via the constructor or `default(T)`, and adding new instance fields is not a breaking change.
 
 - ❌ **DISALLOWED: Firing an existing event when it was never fired before**
 

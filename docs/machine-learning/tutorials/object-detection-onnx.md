@@ -166,7 +166,7 @@ Create your prediction class in the *DataStructures* directory.
 
     `ImageNetPrediction` is the prediction data class and has the following `float[]` field:
 
-    - `PredictedLabel` contains the dimensions, objectness score, and class probabilities for each of the bounding boxes detected in an image.
+    - `PredictedLabels` contains the dimensions, objectness score, and class probabilities for each of the bounding boxes detected in an image.
 
 ### Initialize variables
 

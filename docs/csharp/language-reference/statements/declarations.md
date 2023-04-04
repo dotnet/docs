@@ -1,7 +1,7 @@
 ---
 title: "Declaration statements - var, ref local variables, and ref fields"
 description: "Declarations introduce a new variable. These statements include `var`, `ref` locals, and `ref` fields. In addition to declaring a new variable, these statements can initialize that variable's value."
-ms.date: 11/22/2022
+ms.date: 01/30/2023
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"
@@ -45,27 +45,22 @@ The following example shows two query expressions. In the first expression, the 
 
 ## Ref locals
 
-You add the `ref` keyword before the type of a variable to declare a `ref` local. Assume the `GetContactInformation` method is declared as a [ref return](jump-statements.md#ref-returns):
+You add the `ref` keyword before the type of a variable to declare a `ref` local. A `ref` local is a variable that *refers to* other storage. Assume the `GetContactInformation` method is declared as a [ref return](jump-statements.md#ref-returns):
 
 ```csharp
 public ref Person GetContactInformation(string fname, string lname)
 ```
 
-A by-value assignment reads the value of a variable and assigns it to a new variable:
+Let's contrast these two assignments:
 
 ```csharp
 Person p = contacts.GetContactInformation("Brandie", "Best");
+ref Person p2 = ref contacts.GetContactInformation("Brandie", "Best");
 ```
 
-The preceding assignment declares `p` as a local variable. Its initial value is copied from reading the value returned by `GetContactInformation`. Any future assignments to `p` won't change the value of the variable returned by `GetContactInformation`. The variable `p` is no longer an alias to the variable returned.
+The variable `p` holds a *copy* of the return value from `GetContactInformation`. It's a separate storage location from the `ref` return from `GetContactInformation`. If you change any property of `p`, you are changing a copy of the `Person`.
 
-You declare a *ref* variable to copy the alias to the original value. In the following assignment, `p` is an alias to the variable returned from `GetContactInformation`.
-
-```csharp
-ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
-```
-
-Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable. Changes to `p` also change the variable returned from `GetContactInformation`.
+The variable `p2` *refers to* the storage location for the `ref` return from `GetContactInformation`. It's the same storage as the `ref` return from `GetContactInformation`. If you change any property of `p2`, you are changing that single instance of a `Person`.
 
 You can access a value by reference in the same way. In some cases, accessing a value by reference increases performance by avoiding a potentially expensive copy operation. For example, the following statement shows how one can define a ref local value that is used to reference a value.
 
@@ -126,7 +121,7 @@ The `scoped` modifier is implicitly added to `this` in methods declared in a `st
 ## See also
 
 - [ref keyword](../keywords/ref.md)
-- [Write safe efficient code](../../write-safe-efficient-code.md)
+- [Avoid allocations](../../advanced-topics/performance/index.md)
 - ['var' preferences (style rules IDE0007 and IDE0008)](../../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md)
 - [C# reference](../index.md)
 - [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)

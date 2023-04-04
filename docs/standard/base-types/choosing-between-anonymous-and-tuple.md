@@ -102,7 +102,7 @@ You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, 
 
 ### Serialization
 
-One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../../csharp/programming-guide/concepts/serialization/index.md). When serialization is important, creating a `class` or `struct` is preferred over anonymous types or tuple types.
+One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../serialization/index.md). When serialization is important, creating a `class` or `struct` is preferred over anonymous types or tuple types.
 
 ## Performance
 
@@ -110,12 +110,12 @@ Performance between these types depends on the scenario. The major impact involv
 
 ## Conclusion
 
-As a developer choosing between tuples and anonymous types, there are several factors to consider. Generally speaking, if you're not working with [expression trees](../../csharp/expression-trees.md), and you're comfortable with tuple syntax then choose <xref:System.ValueTuple> as they provide a value type with the flexibility to name properties. If you're working with expression trees, and you'd prefer to name properties, choose anonymous types. Otherwise, use <xref:System.Tuple>.
+As a developer choosing between tuples and anonymous types, there are several factors to consider. Generally speaking, if you're not working with [expression trees](/dotnet/csharp/advanced-topics/expression-trees), and you're comfortable with tuple syntax then choose <xref:System.ValueTuple> as they provide a value type with the flexibility to name properties. If you're working with expression trees, and you'd prefer to name properties, choose anonymous types. Otherwise, use <xref:System.Tuple>.
 
 ## See also
 
 - [Anonymous types](../../csharp/fundamentals/types/anonymous-types.md)
-- [Expression trees](../../csharp/expression-trees.md)
+- [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md)
 - [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md)
 - [Type design guidelines](../design-guidelines/type.md)

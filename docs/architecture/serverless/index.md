@@ -26,7 +26,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2018-2022 by Microsoft Corporation
+Copyright &copy; 2018-2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -56,7 +56,7 @@ Editors:
 
 Participants and reviewers:
 
-> **[Steve Smith](https://twitter.com/ardalis)**, Owner, Ardalis Services.
+> **[Steve Smith](https://twitter.com/ardalis)**, Architect/Trainer, NimblePros.
 
 ## Introduction
 

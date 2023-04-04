@@ -19,17 +19,11 @@ This section provides detailed information on key C# language features and featu
   
  For information about specific keywords, operators, and preprocessor directives, see [C# Reference](../language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](~/_csharpstandard/standard/README.md).  
   
-## Program sections
-
-[Inside a C# Program](../fundamentals/program-structure/index.md)  
-  
-[Main() and Command-Line Arguments](../fundamentals/program-structure/main-command-line.md)  
-
 ## Language Sections
 
- [Statements](statements-expressions-operators/statements.md)
+ [Programming concepts](concepts/index.md)
 
- [Operators and expressions](../language-reference/operators/index.md)
+ [Statements](statements-expressions-operators/statements.md)
 
  [Expression-bodied members](statements-expressions-operators/expression-bodied-members.md)
 
@@ -37,7 +31,7 @@ This section provides detailed information on key C# language features and featu
 
  [Types](../fundamentals/types/index.md)  
 
- [Object oriented programming](../fundamentals/object-oriented/index.md)  
+ [Classes, structs, and records](../fundamentals/object-oriented/index.md)  
   
  [Interfaces](../fundamentals/types/interfaces.md)  
 
@@ -57,31 +51,15 @@ This section provides detailed information on key C# language features and featu
   
  [Iterators](./concepts/iterators.md)
   
- [LINQ Query Expressions](../linq/index.md)  
-  
- [Namespaces](../fundamentals/types/namespaces.md)  
-  
- [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
-  
- [XML Documentation Comments](../language-reference/xmldoc/index.md)  
-  
 ## Platform Sections
 
  [Application Domains](../../framework/app-domains/application-domains.md)  
   
  [Assemblies in .NET](../../standard/assembly/index.md)  
   
- [Attributes](./concepts/attributes/index.md)  
-  
  [Collections](./concepts/collections.md)  
   
  [Exceptions and Exception Handling](../fundamentals/exceptions/index.md)  
-  
- [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
-  
- [Interoperability](./interop/index.md)  
-  
- [Reflection](./concepts/reflection.md)  
   
 ## See also
 

@@ -30,7 +30,7 @@ The new asynchronous programming feature provides a simple technique to make cod
 
 For more information about the asynchronous programming feature that was introduced in .NET Framework 4.5, see:
 
-- [Asynchronous programming in C#](../../../csharp/async.md)
+- [Asynchronous programming in C#](../../../csharp/asynchronous-programming/index.md)
 
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
 

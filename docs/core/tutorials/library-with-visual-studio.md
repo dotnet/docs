@@ -2,7 +2,7 @@
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-6-7
 dev_langs:
   - "csharp"
   - "vb"
@@ -280,11 +280,5 @@ Or learn how to publish a console app. If you publish the console app from the s
 
 > [!div class="nextstepaction"]
 > [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

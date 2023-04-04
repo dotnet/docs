@@ -11,9 +11,9 @@ After developing some new WCF services, you may decide that you want to be able 
 > [!NOTE]
 > The types defined by the WCF client assembly are never actually instantiated. The assembly is used only for metadata.  
   
-### Using the service moniker with a Mex address  
+## Using the service moniker with a Mex address  
   
-1. Build the Getting Started sample and use Internet Explorer to browse to its URL (`http://localhost/ServiceModelSamples/Service.svc`) to ensure that the service is working.  
+1. Build the Getting Started sample and use a browser to browse to its URL (`http://localhost/ServiceModelSamples/Service.svc`) to ensure that the service is working.  
   
 2. Create a Visual Basic script or Visual Basic application that contains the following code:  
   

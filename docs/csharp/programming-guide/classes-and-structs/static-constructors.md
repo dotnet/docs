@@ -1,16 +1,24 @@
 ---
 title: "Static Constructors - C# Programming Guide"
 description: A static constructor in C# initializes static data or performs an action done only once. It runs before the first instance is created or static members are referenced.
-ms.date: 12/21/2021
+ms.date: 01/30/2023
 helpviewer_keywords: 
   - "static constructors [C#]"
   - "constructors [C#], static"
 ---
 # Static Constructors (C# Programming Guide)
 
-A static constructor is used to initialize any [static](../../language-reference/keywords/static.md) data, or to perform a particular action that needs to be performed only once. It is called automatically before the first instance is created or any static members are referenced.
+A static constructor is used to initialize any [static](../../language-reference/keywords/static.md) data, or to perform a particular action that needs to be performed only once. It is called automatically before the first instance is created or any static members are referenced. A static constructor will be called at most once.
 
 [!code-csharp[SimpleClass#1](snippets/static-constructors/Program.cs#1)]
+
+There are several actions that are part of static initialization. Those actions take place in the following order:
+
+1. *Static fields are set to 0*. This is typically done by the runtime.
+1. *Static field initializers run*. The static field initializers in the most derived type run.
+1. *Base type static field initializers run*. Static field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
+1. *Base static constructors run*. Any static constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
+1. *The static constructor runs*. The static constructor for the type runs.
 
 ## Remarks
 
@@ -21,7 +29,7 @@ Static constructors have the following properties:
 - Static constructors cannot be inherited or overloaded.
 - A static constructor cannot be called directly and is only meant to be called by the common language runtime (CLR). It is invoked automatically.
 - The user has no control on when the static constructor is executed in the program.
-- A static constructor is called automatically. It initializes the [class](../../language-reference/keywords/class.md) before the first instance is created or any static members declared in that class (not its base classes) are referenced. A static constructor runs before an instance constructor. A type's static constructor is called when a static method assigned to an event or a delegate is invoked and not when it is assigned. If static field variable initializers are present in the class of the static constructor, they're executed in the textual order in which they appear in the class declaration. The initializers run immediately prior to the execution of the static constructor.
+- A static constructor is called automatically. It initializes the [class](../../language-reference/keywords/class.md) before the first instance is created or any static members declared in that class (not its base classes) are referenced. A static constructor runs before an instance constructor. If static field variable initializers are present in the class of the static constructor, they're executed in the textual order in which they appear in the class declaration. The initializers run immediately prior to the execution of the static constructor.
 - If you don't provide a static constructor to initialize static fields, all static fields are initialized to their default value as listed in [Default values of C# types](../../language-reference/builtin-types/default-values.md).
 - If a static constructor throws an exception, the runtime doesn't invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain. Most commonly, a <xref:System.TypeInitializationException> exception is thrown when a static constructor is unable to instantiate a type or for an unhandled exception occurring within a static constructor. For static constructors that aren't explicitly defined in source code, troubleshooting may require inspection of the intermediate language (IL) code.
 - The presence of a static constructor prevents the addition of the <xref:System.Reflection.TypeAttributes.BeforeFieldInit> type attribute. This limits runtime optimization.

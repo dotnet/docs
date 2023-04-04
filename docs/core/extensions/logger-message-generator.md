@@ -3,7 +3,7 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 03/01/2022
+ms.date: 03/13/2023
 ---
 
 # Compile-time logging source generation
@@ -87,13 +87,13 @@ Consider the example logging output when using the `JsonConsole` formatter.
 {
   "EventId": 23,
   "LogLevel": "Information",
-  "Category": "SampleObject",
-  "Message": "",
+  "Category": "\u003CProgram\u003EF...9CB42__SampleObject",
+  "Message": "Liana lives in Seattle.",
   "State": {
-    "Message": "",
+    "Message": "Liana lives in Seattle.",
     "name": "Liana",
     "city": "Seattle",
-    "{OriginalFormat}": ""
+    "{OriginalFormat}": "{name} lives in {city}."
   }
 }
 ```

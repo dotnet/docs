@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "case keyword [C#]"
   - "default keyword [C#]"
 ---
-# Selection statements - `if`, `else` and `switch`
+# Selection statements - `if`, `else`, and `switch`
 
 The `if`, `else` and `switch` statements select statements to execute from many possible paths based on the value of an expression. The `if` [statement](#the-if-statement) selects a statement to execute based on the value of a Boolean expression. An `if` statement can be combined with `else` to choose two distinct paths based on the Boolean expression. The `switch` [statement](#the-switch-statement) selects a statement list to execute based on a pattern match with an expression.
 

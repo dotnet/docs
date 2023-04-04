@@ -1,8 +1,8 @@
 ---
-title: Port from .NET Framework to .NET 6
+title: Port from .NET Framework to .NET 7
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
 author: adegeo
-ms.date: 07/22/2022
+ms.date: 02/28/2023
 ms.custom: devdivchpfy22
 no-loc: ["package.config", PackageReference]
 ---
@@ -25,7 +25,7 @@ Consider the following dependencies before you migrate a Windows Forms or WPF ap
 
 .NET uses the open-source versions of Windows Forms and WPF and includes enhancements over .NET Framework.
 
-For tutorials on migrating your desktop application to .NET 6, see one of the following articles:
+For tutorials on migrating your desktop application to .NET, see one of the following articles:
 
 - [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=true)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)
@@ -42,9 +42,30 @@ For more information, see [Use the Windows Compatibility Pack to port code to .N
 
 ## .NET Framework compatibility mode
 
-The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows projects to reference .NET Framework libraries as if they were compiled for the project's target framework. The .NET Framework compatibility mode is not limited to .NET Standard 2.0 but extends to any .NET runtime that implements .NET Standard 2.0, such as .NET Core. However, some .NET implementations may support a larger chunk of .NET Framework than others. For example, .NET Core 3.0 extends the .NET Framework compatibility mode to Windows Forms and WPF.
+The .NET Framework compatibility mode was introduced in .NET Standard 2.0. The compatibility mode allows .NET Standard and .NET projects to reference .NET Framework libraries as if they were compiled for the project's target framework. However, some .NET implementations may support a larger chunk of .NET Framework than others. For example, .NET Core 3.0 extends the .NET Framework compatibility mode to Windows Forms and WPF.Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses WPF APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
 
 Referencing .NET Framework libraries doesn't work in all cases, as it depends on which .NET Framework APIs were used and whether or not these APIs are supported by the project's target framework. Also, some of the .NET Framework APIs will only work on Windows. The .NET Framework compatibility mode unblocks many porting scenarios but you should test your projects to ensure that they also work at runtime. For more information, see the [Analyze your dependencies to port code from .NET Framework to](third-party-deps.md#net-framework-compatibility-mode).
+
+## Target framework changes in SDK-style projects
+
+As previously mentioned, the project files for .NET use a different format than .NET Framework, known as the SDK-style project format. Even if you're not moving from .NET Framework to .NET, you should still upgrade the project file to the latest format. The way to specify a target framework is different in SDK-style projects. In .NET Framework, the `<TargetFrameworkVersion>` property is used with a moniker that specifies the version of .NET Framework. For example, .NET Framework 4.7.2 looks like the following snippet:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+</PropertyGroup>
+```
+
+An SDK-style project uses a different property to identify the target framework, the `<TargetFramework>` property. When targeting .NET Framework, the moniker starts with `net` and ends with the version of .NET Framework without any periods. For example, the moniker to target .NET Framework 4.7.2 is `net472`:
+
+```xml
+<PropertyGroup>
+  <TargetFramework>net472</TargetFramework>
+</PropertyGroup>
+```
+
+For a list of all target monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
+
 
 ## Unavailable technologies
 
@@ -74,7 +95,7 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
   WF isn't supported in .NET. For an alternative, see [CoreWF](https://github.com/UiPath/corewf).
 
-For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](net-framework-tech-unavailable.md).
+For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET 6+](net-framework-tech-unavailable.md).
 
 ## Cross-platform
 
@@ -91,7 +112,7 @@ It's possible that your library or console-based application can be used cross-p
 
 ## The future of .NET Standard
 
-.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
+.NET Standard is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5+ and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 .NET Standard 2.0 was the last version to support .NET Framework.
 
@@ -111,7 +132,7 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - Console
 - Class libraries
 
-This tool uses the other tools listed in this article and guides the migration process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+This tool uses the other tools listed in this article, such as **try-convert**, and guides the migration process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 ### try-convert
 
@@ -147,9 +168,9 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO retarget your .NET Framework project to at least .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
-✔️ CONSIDER targeting .NET 6 which is under long-term support (LTS).
+✔️ CONSIDER targeting .NET 6, which is a long-term support (LTS) release.
 
-✔️ DO target .NET 6 for **Windows Forms and WPF** projects. .NET 6 contains many improvements for Desktop apps.
+✔️ DO target .NET 6+ for **Windows Forms and WPF** projects. .NET 6 contains many improvements for Desktop apps.
 
 ✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that might also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 

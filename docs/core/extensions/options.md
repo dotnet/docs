@@ -1,9 +1,9 @@
 ---
 title: Options pattern
 author: IEvangelist
-description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
+description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 11/30/2022
+ms.date: 03/13/2023
 ---
 
 # Options pattern in .NET
@@ -117,6 +117,8 @@ In the preceding code, changes to the JSON configuration file after the app has 
 <xref:Microsoft.Extensions.Options.IOptionsFactory%601> is responsible for creating new options instances. It has a single <xref:Microsoft.Extensions.Options.IOptionsFactory%601.Create%2A> method. The default implementation takes all registered <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601> and runs all the configurations first, followed by the post-configuration. It distinguishes between <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and only calls the appropriate interface.
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
+
+<xref:Microsoft.Extensions.Options.IOptionsChangeTokenSource%601> is used to fetch the <xref:Microsoft.Extensions.Primitives.IChangeToken> that tracks changes to the underlying `TOptions` instance. For more information on change-token primitives, see [Change notifications](primitives.md).
 
 ### Options interfaces benefits
 

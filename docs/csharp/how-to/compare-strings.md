@@ -71,7 +71,7 @@ and "de-DE" cultures.
 On Windows, prior to .NET 5, the sort order of "cop", "coop", and "co-op" changes when you
 change from a linguistic comparison to an ordinal comparison. The two
 German sentences also compare differently using the different comparison types.
-This is because prior to .NET 5, the .NET globalization APIs used [National Language Support (NLS)](/windows/win32/intl/national-language-support) libraries. In .NET 5 and later versions, the .NET globalization APIs use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries, which unifies .NET's globalization behavior across all supported operating systems.
+This is because prior to .NET 5, the .NET globalization APIs used [National Language Support (NLS)](/windows/win32/intl/national-language-support) libraries. In .NET 5 and later versions, the .NET globalization APIs use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries, which unifies .NET's globalization behavior across all supported operating systems.
 
 ## Comparisons using specific cultures
 

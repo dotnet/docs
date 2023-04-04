@@ -1,0 +1,28 @@
+### YamlMime:Landing
+
+title: .NET security documentation
+summary: Learn about security features of .NET.
+
+metadata:
+  title: .NET security documentation
+  description: Learn about security features of .NET.
+  ms.topic: landing-page
+  ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: Security
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Key security concepts
+            url: ../../standard/security/key-security-concepts.md
+          - text: Role-based security
+            url: ../../standard/security/role-based-security.md
+          - text: Secure coding guidelines
+            url: ../../standard/security/secure-coding-guidelines.md
+      - linkListType: overview
+        links:
+          - text: Cryptography model
+            url: ../../standard/security/cryptography-model.md

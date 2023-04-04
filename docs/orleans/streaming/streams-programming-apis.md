@@ -315,14 +315,14 @@ That way Pub-Sub data will be durably stored in Azure Table. For initial develop
 
 ### Configuration
 
-In order to use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream-providers.md). Sample stream provider setup:
+To use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream-providers.md). Sample stream provider setup:
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
 ```csharp
-hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
+hostBuilder.AddMemoryStreams("StreamProvider")
     .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
         optionsBuilder => optionsBuilder.Configure(
             options => options.ConfigureTableServiceClient("<Secret>")))

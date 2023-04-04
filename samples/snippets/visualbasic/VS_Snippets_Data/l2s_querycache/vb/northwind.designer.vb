@@ -10,15 +10,8 @@
 
 Option Strict On
 Option Explicit On
-
-Imports System.Collections.Generic
 Imports System.ComponentModel
-Imports System.Data
-Imports System.Data.Linq
 Imports System.Data.Linq.Mapping
-Imports System.Linq
-Imports System.Linq.Expressions
-Imports System.Reflection
 
 
 <Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="Northwind")>  _
@@ -39,8 +32,8 @@ Partial Public Class NorthwindDataContext
   #End Region
 	
 	Public Sub New()
-		MyBase.New(Global.VB.My.MySettings.Default.NorthwindConnectionString, mappingSource)
-		OnCreated
+        MyBase.New("myconnectionstring", mappingSource)
+        OnCreated()
 	End Sub
 	
 	Public Sub New(ByVal connection As String)

@@ -88,7 +88,7 @@ GitHub Actions are evolving rapidly and provide features such as triggers for al
 
 ### Feature comparison
 
-The following table is current as of November 2021.
+The following table is current as of January 2023 and is not an exhaustive list of features.
 
 |Feature|Description|GitHub Actions|Azure Pipelines|
 |-------|-----------|--------------|---------------|
@@ -102,7 +102,7 @@ The following table is current as of November 2021.
 |Deployment Groups|A logical set of target machines for deployments|No|Yes|
 |Deployment Jobs|Job that targets a deployment group|No|Yes|
 |Environments|A collection of resources to target or a logical environment|Yes|Yes|
-|Gates|Automatic collection and evaluation of signals to control continuation|No|Yes|
+|Gates/Checks|Automatic collection and evaluation of signals to control continuation|Yes|Yes|
 |Jobs|Sequence of steps that are executed on an agent|Yes|Yes|
 |Service Containers|Manage the lifecycle of a containerized service instance available during a job|Yes|Yes|
 |Service Connections|Abstract credentials to external systems|No|Yes|
@@ -115,25 +115,7 @@ The following table is current as of November 2021.
 |Variable Groups|Store values for use across multiple pipelines|No|Yes|
 
 > [!IMPORTANT]
-> GitHub Actions is rapidly evolving. Since the first version of the above table, GitHub Actions has release Composite Actions and Reusable Workflows, both of which significantly improve reusability of GitHub Actions. Passwordless deployment via OpenID Connect (OIDC) support for Azure, AWS and Hashi have also been released to beta. Be sure to check documentation carefully before deciding which platform is right for you.
-
-## Recommendation table for common scenarios
-
-The following table shows some common scenarios and platform recommendations for each. As always, there will be exceptions. Consider your exact scenario carefully.
-
-|Requirement|Platform|
-|-----------|--------|
-|I need to create reusable templates to standardize how jobs are executed across multiple teams|Both|
-|I need to have automated gates control pipeline progress|Azure Pipelines|
-|I need to define multiple stages|Azure Pipelines|
-|I need multiple jobs to target the same environment|Both|
-|I need to model multiple, complex environments|Both|
-|I need to use the same environments across multiple projects/repos|Azure Pipelines|
-|I have repos that aren't in GitHub|Azure Pipelines|
-|I need to create custom tasks that aren't open-source|Both|
-|I need a simple workflow for building and deploying open-source repositories to a small set of environments|GitHub Actions|
-|I need to model workflows for scenarios other than CI/CD. For example, custom alerts on pull requests|GitHub Actions|
-|I need to create custom tasks that are open-source|Both|
+> GitHub Actions is rapidly evolving. Be sure to check documentation carefully before deciding which platform is right for you.
 
 >[!div class="step-by-step"]
 >[Previous](actions-index.md)

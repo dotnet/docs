@@ -1,0 +1,26 @@
+### YamlMime:Landing
+
+title: .NET migration documentation
+summary: Learn about migrating apps from .NET Framework to .NET.
+
+metadata:
+  title: .NET migration documentation
+  description: Learn about migrating apps from .NET Framework to .NET.
+  ms.topic: landing-page
+  ms.date: 01/17/2023
+
+landingContent:
+
+  # Card
+  - title: Migrate from .NET Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Port from .NET Framework to .NET Core
+            url: ../../core/porting/index.md
+          - text: Upgrade Assistant
+            url: ../../core/porting/upgrade-assistant-overview.md
+      - linkListType: reference
+        links:
+          - text: Versioning info
+            url: ../../core/porting/versioning-sdk-msbuild-vs.md

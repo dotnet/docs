@@ -145,7 +145,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   If set with `ProxyAddress`, provides a list of comma-separated urls that will bypass the proxy. (Only valid for Windows.)
 
-- **`ProxyUseDefaultCredentials`**
+- **`-ProxyUseDefaultCredentials`**
 
   If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
 
@@ -287,6 +287,10 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 > echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
 > echo 'export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools' >> ~/.bashrc
 > ```
+
+## Uninstall
+
+There is no uninstall script. For more information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
 
 ## See also
 

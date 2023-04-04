@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-6-7
 recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
@@ -40,7 +40,7 @@ Create a .NET console app project named "HelloWorld".
    dotnet new console --framework net7.0
    ```
 
-   The project template creates a simple application that displays "Hello World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
+   The project template creates a simple application that displays "Hello, World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
 
    ```csharp
    Console.WriteLine("Hello, World!");
@@ -55,7 +55,7 @@ Create a .NET console app project named "HelloWorld".
        {
            static void Main(string[] args)
            {
-               Console.WriteLine("Hello World!");
+               Console.WriteLine("Hello, World!");
            }
        }
    }
@@ -81,7 +81,7 @@ Run the following command in the **Terminal**:
 dotnet run
 ```
 
-The program displays "Hello World!" and ends.
+The program displays "Hello, World!" and ends.
 
 ![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
 
@@ -164,7 +164,7 @@ Create a .NET console app project named "HelloWorld".
    dotnet new console --framework net6.0 --use-program-main
    ```
 
-   The project template creates a simple application that displays "Hello World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
+   The project template creates a simple application that displays "Hello, World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
 
    ```csharp
    namespace HelloWorld;
@@ -173,7 +173,7 @@ Create a .NET console app project named "HelloWorld".
    {
        static void Main(string[] args)
        {
-           Console.WriteLine("Hello World!");
+           Console.WriteLine("Hello, World!");
        }
    }
    ```
@@ -198,7 +198,7 @@ Run the following command in the **Terminal**:
 dotnet run
 ```
 
-The program displays "Hello World!" and ends.
+The program displays "Hello, World!" and ends.
 
 ![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
 
@@ -245,11 +245,5 @@ In this tutorial, you created a .NET console application. In the next tutorial, 
 
 > [!div class="nextstepaction"]
 > [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-This tutorial is only available for .NET 6 and .NET 7. Select one of those options at the top of the page.
 
 ::: zone-end

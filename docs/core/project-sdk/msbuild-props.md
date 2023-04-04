@@ -146,7 +146,7 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 
 ### PackRelease
 
-The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
+The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`. This property was introduced in .NET 7.
 
 ```xml
 <PropertyGroup>
@@ -155,7 +155,9 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
 ```
 
 > [!NOTE]
-> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
+>
+> - Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
+> - .NET 7 SDK only: To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). For solutions that have many projects, setting this variable increases the time required to pack.
 
 ## Publish-related properties
 
@@ -331,7 +333,7 @@ For more information, see [Write reference assemblies to intermediate output](..
 When this property is `true`, the XML documentation file for the project, if one is generated, is included in the publish output for the project. This property defaults to `true`.
 
 > [!TIP]
-> Set [GenerateDocumentationFile](#generatedocumentationfile)) to `true` to generate an XML documentation file at compile time.
+> Set [GenerateDocumentationFile](#generatedocumentationfile) to `true` to generate an XML documentation file at compile time.
 
 ### PublishDocumentationFiles
 
@@ -343,7 +345,7 @@ When this property is `true`, XML documentation files for the project's referenc
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
+The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration. This property was introduced in .NET 7.
 
 ```xml
 <PropertyGroup>
@@ -353,8 +355,9 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 
 > [!NOTE]
 >
-> - This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
-> - To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
+> - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
+> - This property does not affect the behavior of `dotnet build /t:Publish`, and it only changes the configuration only when publishing via the .NET CLI.
+> - .NET 7 SDK only: To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish. For solutions that have many projects, use of this setting increases the time required to publish.
 
 ### RollForward
 
@@ -572,6 +575,9 @@ Library authors who intend to ship preview assemblies should set this property t
 ### EnableWindowsTargeting
 
 Set the `EnableWindowsTargeting` property to `true` to build Windows apps (for example, Windows Forms or Windows Presentation Foundation apps) on a non-Windows platform. If you don't set this property to `true`, you'll get build warning [NETSDK1100](../tools/sdk-errors/netsdk1100.md). This error occurs because targeting and runtime packs aren't automatically downloaded on platforms that aren't supported. By setting this property, those packs are downloaded when cross-targeting.
+
+> [!NOTE]
+> This property is currently recommended to allow development on non-Windows platforms. But when the application is ready to be released, it should be built on Windows. When building on a non-Windows platform, the output may not be the same as when building on Windows. In particular, the executable is not marked as a Windows application (which means that it will always launch a console window) and won't have an icon embedded.
 
 ```xml
 <PropertyGroup>

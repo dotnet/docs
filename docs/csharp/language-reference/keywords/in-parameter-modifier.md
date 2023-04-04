@@ -113,7 +113,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 - The first argument of an extension method cannot have the `in` modifier unless that argument is a struct.
 - The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 
-You can learn more about the `in` modifier, how it differs from `ref` and `out` in the article on [Write safe efficient code](../../write-safe-efficient-code.md).
+You can learn more about the `in` modifier, how it differs from `ref` and `out` in the article on [allocations](../../advanced-topics/performance/index.md).
 
 ## C# Language Specification  
 

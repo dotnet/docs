@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 namespace DateTimeConverterExamples;
 
 // This converter reads and writes DateTime values according to the "R" standard format specifier:
-// https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.
+// https://learn.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.
 public class DateTimeConverterForCustomStandardFormatR : JsonConverter<DateTime>
 {
     public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

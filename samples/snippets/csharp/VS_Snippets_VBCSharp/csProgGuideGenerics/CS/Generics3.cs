@@ -21,7 +21,7 @@ static class VarianceWorkaround
 
     //<Snippet60>
     // Workaround for interface
-    // Variance in one direction only so type expressinos are natural
+    // Variance in one direction only so type expressions are natural
     public static IEnumerable<D> Convert<S, D>(IEnumerable<S> source)
         where S : D
     {

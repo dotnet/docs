@@ -14,7 +14,7 @@ Public Class Form1
 
 #Region "Snippet1 - Global Objects"
     '<Snippet1>
-    ' Declare CspParmeters and RsaCryptoServiceProvider 
+    ' Declare CspParameters and RsaCryptoServiceProvider
     ' objects with global scope of your Form class.
     ReadOnly _cspp As New CspParameters
     Dim _rsa As RSACryptoServiceProvider
@@ -112,7 +112,7 @@ Public Class Form1
         Dim aes As Aes = Aes.Create()
         Dim transform As ICryptoTransform = aes.CreateEncryptor
 
-        ' Use RSACryptoServiceProvider to 
+        ' Use RSACryptoServiceProvider to
         ' encrypt the AES key.
         Dim keyEncrypted() As Byte = _rsa.Encrypt(aes.Key, False)
 
@@ -129,7 +129,7 @@ Public Class Form1
         ' for the encrypted file (outFs):
         ' - length of the key
         ' - length of the IV
-        ' - ecrypted key
+        ' - encrypted key
         ' - the IV
         ' - the encrypted cipher content
         ' Change the file's extension to ".enc"

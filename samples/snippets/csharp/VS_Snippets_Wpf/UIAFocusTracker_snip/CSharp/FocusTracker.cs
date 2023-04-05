@@ -156,7 +156,7 @@ namespace FocusTracker
         /// <param name="sender">Object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <remarks>
-        /// runtimteIds is an ArrayList that contains the runtime IDs of all top-level windows.
+        /// runtimeIds is an ArrayList that contains the runtime IDs of all top-level windows.
         /// </remarks>
         private void WindowClosedHandler(object sender, AutomationEventArgs e)
         {
@@ -176,7 +176,7 @@ namespace FocusTracker
         /// <param name="rid">Runtime ID of the window.</param>
         /// <returns>Index of the ID in the list, or -1 if it is not listed.</returns>
         /// <remarks>
-        /// runtimteIds is an ArrayList that contains the runtime IDs of all top-level windows.
+        /// runtimeIds is an ArrayList that contains the runtime IDs of all top-level windows.
         /// </remarks>
 // <Snippet103>
         private int RuntimeIdListed(int[] runtimeId, ArrayList runtimeIds)

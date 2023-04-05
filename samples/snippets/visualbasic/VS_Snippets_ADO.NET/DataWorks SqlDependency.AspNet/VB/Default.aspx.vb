@@ -44,7 +44,7 @@ Partial Class _Default
     ' <Snippet2>
     Private Function GetConnectionString() As String
         ' To avoid storing the connection string in your code,
-        ' you can retrive it from a configuration file.
+        ' you can retrieve it from a configuration file.
 
         Return "Data Source=(local);Integrated Security=true;" & _
          "Initial Catalog=AdventureWorks;"

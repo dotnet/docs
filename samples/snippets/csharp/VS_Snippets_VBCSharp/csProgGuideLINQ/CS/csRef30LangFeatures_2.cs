@@ -347,7 +347,7 @@ namespace csrefLINQExamples
                 }
             }
 
-            //Object and collection intializers
+            //Object and collection initializers
 
             //<snippet46>
             // The following code consolidates examples from the topic.
@@ -650,7 +650,7 @@ namespace csrefLINQExamples
             //<snippet80>
             class MQ
             {
-                // QueryMethhod1 returns a query as its value.
+                // QueryMethod1 returns a query as its value.
                 IEnumerable<string> QueryMethod1(ref int[] ints)
                 {
                     var intsToStrings = from i in ints

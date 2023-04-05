@@ -25,7 +25,7 @@ Class Program
         cspParams.KeyContainerName = "XML_ENC_RSA_KEY"
         ' </snippet2>
         ' Create a new RSA key and save it in the container.  This key will encrypt
-        ' a symmetric key, which will then be encryped in the XML document.
+        ' a symmetric key, which will then be encrypted in the XML document.
         ' <snippet3>
         Dim rsaKey As New RSACryptoServiceProvider(cspParams)
         ' </snippet3>
@@ -182,7 +182,7 @@ Class Program
 
 
     Public Shared Sub Decrypt(ByVal Doc As XmlDocument, ByVal Alg As RSA, ByVal KeyName As String)
-        ' Check the arguments.  
+        ' Check the arguments.
         ArgumentNullException.ThrowIfNull(Doc)
         ArgumentNullException.ThrowIfNull(Alg)
         ArgumentNullException.ThrowIfNull(KeyName)

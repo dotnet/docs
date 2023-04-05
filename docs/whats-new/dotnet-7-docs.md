@@ -262,7 +262,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Determine caller information using attributes interpreted by the C# compiler](../csharp/language-reference/attributes/caller-information.md) - Extended `nameof` parameter scope
 - [Attributes for null-state static analysis interpreted by the C# compiler](../csharp/language-reference/attributes/nullable-analysis.md) - Extended `nameof` parameter scope
 - [delegate operator (C# reference)](../csharp/language-reference/operators/delegate-operator.md) - Document new method group conversion
-- [Generics and Attributes (C# Programming Guide)](/dotnet/csharp/advanced-topics/reflection-and-attributes/generics-and-attributes) - generic attributes are allowed in C# 11
+- [Generics and Attributes (C# Programming Guide)](../csharp/advanced-topics/reflection-and-attributes/generics-and-attributes.md) - generic attributes are allowed in C# 11
 
 ## Microsoft Orleans
 

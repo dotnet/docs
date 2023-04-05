@@ -40,7 +40,7 @@ Public Class FloatingPoint(Of T) : Inherits Number(Of T)
         End If
     End Sub
 End Class
-' The attempt to comple the example displays the following output:
+' The attempt to compile the example displays the following output:
 '    error BC32105: Type argument 'T' does not satisfy the 'Structure'
 '    constraint for type parameter 'T'.
 '    

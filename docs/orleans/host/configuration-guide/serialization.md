@@ -324,7 +324,7 @@ The <xref:Orleans.Serialization.BinaryFormatterSerializer> is the default fallba
 
 ## Exception serialization
 
-Exceptions are serialized using the [fallback serializer](serialization.md#fallback-serialization). Using the default configuration, `BinaryFormatter` is the fallback serializer and so the [ISerializable pattern](../../../standard/serialization/custom-serialization.md) must be followed in order to ensure correct serialization of all properties in an exception type.
+Exceptions are serialized using the [fallback serializer](serialization.md#fallback-serialization). Using the default configuration, `BinaryFormatter` is the fallback serializer and so the [ISerializable pattern](/previous-versions/dotnet/fundamentals/serialization/binary/custom-serialization) must be followed in order to ensure correct serialization of all properties in an exception type.
 
 Here is an example of an exception type with correctly implemented serialization:
 

@@ -13,7 +13,7 @@ This article organizes the affected APIs by namespace.
 > [!NOTE]
 >
 > - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET 5+.
-> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core).
+> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization#net-core).
 
 ## System
 
@@ -342,5 +342,5 @@ This article organizes the affected APIs by namespace.
 ## See also
 
 - [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)
-- [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core)
+- [Binary serialization in .NET Core](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization#net-core)
 - [.NET portability analyzer](../../standard/analyzers/portability-analyzer.md)

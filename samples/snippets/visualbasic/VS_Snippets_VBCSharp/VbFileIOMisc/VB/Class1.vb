@@ -2,7 +2,7 @@
 
 
 Class Class1478b6263a0c4cf388d6c34166493594
-    ' HowtoMoveaCollectionofFilesinVisualBasic
+    ' HowtoMoveACollectionOfFilesInVisualBasic
 
     Public Sub Method2()
         ' <snippet2>
@@ -19,7 +19,7 @@ Class Class1478b6263a0c4cf388d6c34166493594
 End Class
 
 Class Class1a05512e97c342248649a1c013e59ff0
-    ' HowtoDetermineaFilesLastAccessedTimeinVisualBasic
+    ' HowtoDetermineAFilesLastAccessedTimeInVisualBasic
 
     Public Sub Method3()
         ' <snippet3>
@@ -32,7 +32,7 @@ Class Class1a05512e97c342248649a1c013e59ff0
 End Class
 
 Class Class25e3b71db84442939e4ef06c5836b5cc
-    ' HowtoFindFileswithaSpecificPatterninVisualBasic
+    ' HowtoFindFilesWithASpecificPatternInVisualBasic
 
     Public Sub Method4()
         Dim Listbox1 As New System.Windows.Forms.ListBox
@@ -49,7 +49,7 @@ Class Class25e3b71db84442939e4ef06c5836b5cc
 End Class
 
 Class Class331dac55d3fa4b5094571557db00e297
-    ' HowtoMovetheContentsofaDirectoryinVisualBasic
+    ' HowtoMoveTheContentsOfADirectoryInVisualBasic
 
     Public Sub Method5()
         ' <snippet5>
@@ -67,7 +67,7 @@ Class Class331dac55d3fa4b5094571557db00e297
 End Class
 
 Class Class38c3c7d2849d4ba08209132d19636668
-    ' HowtoDetermineaDirectorysCreationTimeinVisualBasic
+    ' HowtoDetermineADirectorysCreationTimeInVisualBasic
 
     Public Sub Method6()
         ' <snippet6>
@@ -80,7 +80,7 @@ Class Class38c3c7d2849d4ba08209132d19636668
 End Class
 
 Class Class39a4caa4e5254b58884653149e21fe7e
-    ' HowtoDetermineaDrivesFormatinVisualBasic
+    ' HowtoDetermineADrivesFormatInVisualBasic
 
     Public Sub Method7()
         ' <snippet7>
@@ -93,7 +93,7 @@ Class Class39a4caa4e5254b58884653149e21fe7e
 End Class
 
 Class Class4739348a86364eabb6ed827b95e77789
-    ' HowtoDeterminetheWindowsSystemDirectoryinVisualBasic
+    ' HowtoDetermineTheWindowsSystemDirectoryInVisualBasic
 
     Public Sub Method8()
         ' <snippet8>
@@ -105,7 +105,7 @@ Class Class4739348a86364eabb6ed827b95e77789
 End Class
 
 Class Class4b7217693e454be7b7feb08dc4141b44
-    ' HowtoDeleteaFileinVisualBasic
+    ' HowtoDeleteAFileInVisualBasic
 
     Public Sub Method9()
         ' <snippet9>
@@ -127,7 +127,7 @@ Class Class4b7217693e454be7b7feb08dc4141b44
 End Class
 
 Class Class4c6769dfe9b94b69bfdfce4cfbda30ff
-    ' HowtoDeterminetheAbsolutePathofaFileinVisualBasic
+    ' HowtoDetermineTheAbsolutePathOfAFileInVisualBasic
 
     Public Sub Method11()
         ' <snippet11>
@@ -143,7 +143,7 @@ Class Class5199d1fcbf5d418b94870700e54d1dae
 
 
 
-    ' HowtoDetermineifaDirectoryExistsinVisualBasic
+    ' HowtoDetermineIfADirectoryExistsInVisualBasic
 
     Public Sub Method12()
 
@@ -155,7 +155,7 @@ Class Class5199d1fcbf5d418b94870700e54d1dae
         ' </snippet12>
     End Sub
 
-    ' HowtoDetermineifaDirectoryExistsinVisualBasic
+    ' HowtoDetermineIfADirectoryExistsInVisualBasic
 
     Public Sub Method13()
         ' <snippet13>
@@ -169,7 +169,7 @@ Class Class5199d1fcbf5d418b94870700e54d1dae
 End Class
 
 Class Class5382a4d6ee154d7bb31ed16a3c69e8d3
-    ' HowtoDetermineaDirectorysAttributesinVisualBasic
+    ' HowtoDetermineADirectorysAttributesInVisualBasic
 
     Public Sub Method14()
         ' <snippet14>
@@ -187,7 +187,7 @@ Class Class5382a4d6ee154d7bb31ed16a3c69e8d3
 End Class
 
 Class Class541da1b7b50c4e0d8bdcc5ac5515c0ea
-    ' HowtoDetermineaDrivesTypeinVisualBasic
+    ' HowtoDetermineADrivesTypeInVisualBasic
 
     Public Sub Method15()
         ' <snippet15>
@@ -200,7 +200,7 @@ Class Class541da1b7b50c4e0d8bdcc5ac5515c0ea
 End Class
 
 Class Class64cc984b9b7e4617aa6d01a74f08f331
-    ' HowtoDetermineifaFileisHiddeninVisualBasic
+    ' HowtoDetermineIfAFileIsHiddenInVisualBasic
 
     Public Sub Method16()
         If My.Computer.FileSystem.FileExists("C:\testfile.txt") Then
@@ -233,7 +233,7 @@ Class Class64cc984b9b7e4617aa6d01a74f08f331
 End Class
 
 Class Class717c90ba55d1454cac9ed034eae95c1e
-    ' HowtoDetermineaFilesExtensioninVisualBasic
+    ' HowtoDetermineAFilesExtensionInVisualBasic
 
     Public Sub Method19()
         ' <snippet19>
@@ -249,7 +249,7 @@ Class Class717c90ba55d1454cac9ed034eae95c1e
 End Class
 
 Class Class7d0622cbc48f416386557e50cdd379a4
-    ' HowtoDetermineifaDirectoryisRead-OnlyinVisualBasic
+    ' HowtoDetermineIfADirectoryIsRead-OnlyInVisualBasic
 
     Public Sub Method20()
         ' <snippet20>
@@ -277,7 +277,7 @@ Class Class7d0622cbc48f416386557e50cdd379a4
 End Class
 
 Class Class7f031720901e4b66992848a2ea9fe925
-    ' HowtoDetermineaDrivesVolumeLabelinVisualBasic
+    ' HowtoDetermineADrivesVolumeLabelInVisualBasic
 
     Public Sub Method23()
         ' <snippet23>
@@ -290,7 +290,7 @@ Class Class7f031720901e4b66992848a2ea9fe925
 End Class
 
 Class Class88e2145cd41445a5ad036f5d58ecca26
-    ' HowtoCreateaCopyofaFileinaDifferentDirectoryinVisualBasic
+    ' HowtoCreateACopyOfAFileInaDifferentDirectoryInVisualBasic
 
     Public Sub Method24()
         ' <snippet24>
@@ -318,7 +318,7 @@ Class Class88e2145cd41445a5ad036f5d58ecca26
 End Class
 
 Class Class8b1a9d47e9cb4338896a5a5b1b33bf6d
-    ' HowtoDetermineaFilesAttributesinVisualBasic
+    ' HowtoDetermineAFilesAttributesInVisualBasic
 
     Public Sub Method25()
         ' <snippet25>
@@ -343,7 +343,7 @@ Class Class8b1a9d47e9cb4338896a5a5b1b33bf6d
 End Class
 
 Class Class938e938f401e428aae1ea9210fea9085
-    ' HowtoDetermineifaFileExistsinVisualBasic
+    ' HowtoDetermineIfAFileExistsInVisualBasic
 
     Public Sub Method28()
         ' <snippet28>
@@ -358,7 +358,7 @@ Class Class938e938f401e428aae1ea9210fea9085
 End Class
 
 Class Classb78c9a1c6cbe4c1db8a9d600bb357070
-    ' HowtoDetermineaDrivesRootDirectoryinVisualBasic
+    ' HowtoDetermineADrivesRootDirectoryInVisualBasic
 
     Public Sub Method29()
         ' <snippet29>
@@ -371,7 +371,7 @@ Class Classb78c9a1c6cbe4c1db8a9d600bb357070
 End Class
 
 Class Classca0720ecf40e4c1197480ce1685c78f0
-    ' HowtoGetInformationAboutaFileinVisualBasic
+    ' HowtoGetInformationAboutAFileInVisualBasic
 
     Public Sub Method30()
         ' <snippet30>
@@ -389,7 +389,7 @@ Class Classca0720ecf40e4c1197480ce1685c78f0
 End Class
 
 Class Classccdc06ca624f4d38bbff8764f6e56c24
-    ' HowtoDetermineaFilesLastModifiedTimeinVisualBasic
+    ' HowtoDetermineAFilesLastModifiedTimeInVisualBasic
 
     Public Sub Method32()
         ' <snippet32>
@@ -402,7 +402,7 @@ Class Classccdc06ca624f4d38bbff8764f6e56c24
 End Class
 
 Class Classdb5e06eb388a451884663cbaa40a4dc0
-    ' HowtoDetermineaFilesSizeinVisualBasic
+    ' HowtoDetermineAFilesSizeInVisualBasic
 
     Public Sub Method33()
         ' <snippet33>
@@ -415,7 +415,7 @@ Class Classdb5e06eb388a451884663cbaa40a4dc0
 End Class
 
 Class Classe1e12534a14b4f6cb24f8a7f097e1cfe
-    ' HowtoDetermineaFilesCreationTimeinVisualBasic
+    ' HowtoDetermineAFilesCreationTimeInVisualBasic
 
     Public Sub Method34()
         ' <snippet34>
@@ -428,7 +428,7 @@ Class Classe1e12534a14b4f6cb24f8a7f097e1cfe
 End Class
 
 Class Classedd47f08a88a441daeb82857be1af94a
-    ' HowtoDetermineaDrivesTotalSpaceinVisualBasic
+    ' HowtoDetermineADrivesTotalSpaceInVisualBasic
 
     Public Sub Method35()
         ' <snippet35>
@@ -441,7 +441,7 @@ Class Classedd47f08a88a441daeb82857be1af94a
 End Class
 
 Class Classf205d2adbbe54d558a40acda21aa82dd
-    ' HowtoCopyFileswithaSpecificPatterntoaDirectoryinVisualBasic
+    ' HowtoCopyFilesWithASpecificPatternToADirectoryInVisualBasic
 
     Public Sub Method36()
         ' <snippet36>
@@ -466,7 +466,7 @@ Class Classf205d2adbbe54d558a40acda21aa82dd
 End Class
 
 Class Classfb3fb1d6824a4d6dab631566ed479fdc
-    ' HowtoDeleteAllFilesinaDirectoryinVisualBasic
+    ' HowtoDeleteAllFilesInADirectoryInVisualBasic
 
     Public Sub Method38()
         ' <snippet38>
@@ -484,7 +484,7 @@ Class Classfb3fb1d6824a4d6dab631566ed479fdc
 End Class
 
 Class Classff3411ed1b8d4676b85b40ce5edf96d8
-    ' HowtoDetermineifaFileisRead-OnlyinVisualBasic
+    ' HowtoDetermineIfAFileIsRead-OnlyInVisualBasic
 
     Public Sub Method39()
         ' <snippet39>

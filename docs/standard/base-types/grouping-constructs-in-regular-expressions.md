@@ -27,18 +27,18 @@ The following table lists the grouping constructs supported by the .NET regular 
 
 | Grouping construct                                                                    | Capturing or noncapturing |
 |---------------------------------------------------------------------------------------|---------------------------|
-| [Matched subexpressions](#matched_subexpression)                                      | Capturing                 |
-| [Named matched subexpressions](#named_matched_subexpression)                          | Capturing                 |
-| [Balancing group definitions](#balancing_group_definition)                            | Capturing                 |
-| [Noncapturing groups](#noncapturing_group)                                            | Noncapturing              |
-| [Group options](#group_options)                                                       | Noncapturing              |
-| [Zero-width positive lookahead assertions](#zerowidth_positive_lookahead_assertion)   | Noncapturing              |
-| [Zero-width negative lookahead assertions](#zerowidth_negative_lookahead_assertion)   | Noncapturing              |
-| [Zero-width positive lookbehind assertions](#zerowidth_positive_lookbehind_assertion) | Noncapturing              |
-| [Zero-width negative lookbehind assertions](#zerowidth_negative_lookbehind_assertion) | Noncapturing              |
-| [Atomic groups](#atomic_groups)                                                       | Noncapturing              |
+| [Matched subexpressions](#matched-subexpressions)                                      | Capturing                 |
+| [Named matched subexpressions](#named-matched-subexpression)                          | Capturing                 |
+| [Balancing group definitions](#balancing-group-definitions)                            | Capturing                 |
+| [Noncapturing groups](#noncapturing-groups)                                            | Noncapturing              |
+| [Group options](#group-options)                                                       | Noncapturing              |
+| [Zero-width positive lookahead assertions](#zerowidth-positive-lookahead-assertions)   | Noncapturing              |
+| [Zero-width negative lookahead assertions](#zerowidth-negative-lookahead-assertions)   | Noncapturing              |
+| [Zero-width positive lookbehind assertions](#zerowidth-positive-lookbehind-assertions) | Noncapturing              |
+| [Zero-width negative lookbehind assertions](#zerowidth-negative-lookbehind-assertions) | Noncapturing              |
+| [Atomic groups](#atomic-groups)                                                       | Noncapturing              |
 
-For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#Objects).
+For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#objects).
 
 ## Matched subexpressions
 
@@ -49,13 +49,13 @@ The following grouping construct captures a matched subexpression:
 Here, *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from 1. The capture that's numbered 0 is the text matched by the entire regular expression pattern.
 
 > [!NOTE]
-> By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this article), the matched subexpression is not captured.
+> By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group-options) later in this article), the matched subexpression is not captured.
 
 You can access captured groups in four ways:
 
 - By using the backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\`*number*, where *number* is the ordinal number of the captured subexpression.
 
-- By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of a capturing group, or `\k<`*number*`>`, where *number* is the ordinal number of a capturing group. A capturing group has a default name that is identical to its ordinal number. For more information, see [Named matched subexpressions](#named_matched_subexpression) later in this topic.
+- By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of a capturing group, or `\k<`*number*`>`, where *number* is the ordinal number of a capturing group. A capturing group has a default name that is identical to its ordinal number. For more information, see [Named matched subexpressions](#named-matched-subexpressions) later in this topic.
 
 - By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.
 
@@ -92,7 +92,7 @@ or:
 Here, *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.
 
 > [!NOTE]
-> If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.
+> If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group-options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.
 
 You can access named captured groups in the following ways:
 

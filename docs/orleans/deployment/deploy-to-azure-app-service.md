@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 04/04/2023
+ms.date: 04/05/2023
 ms.topic: tutorial
 ms.custom: devx-track-bicep
 no-loc: 
@@ -506,9 +506,7 @@ The aforementioned Visual Studio Code extension for Bicep includes a visualizer.
 The deployment infrastructure can deploy to staging environments, which are short-lived, test-centric, and immutable throwaway environments. These environments are very helpful for testing deployments before promoting them to production.
 
 > [!NOTE]
-> A recent change in Azure App Service on Windows impacts our guidance in this article. If you're using the vnet
-> configuration, and your App Service is running on Windows, you must also be in a separate App Service Plan.
-> If you're impacted by these changes, you could also change to App Service Linux, and this problem would be resolved.
+> If your App Service is running on Windows, each App Service must be on its own separate App Service Plan. Alternatively, to avoid such configuration, you could instead use App Service on Linux, and this problem would be resolved.
 
 ## Summary
 

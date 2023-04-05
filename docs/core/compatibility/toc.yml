@@ -52,6 +52,8 @@ items:
       items:
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
+      - name: Console encoding not UTF-8 after completion
+        href: sdk/8.0/console-encoding-fix.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -1294,6 +1296,8 @@ items:
       items:
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
+      - name: Console encoding not UTF-8 after completion
+        href: sdk/8.0/console-encoding-fix.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"

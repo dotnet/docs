@@ -407,7 +407,7 @@ Public Class Class1
 
     '********************************************************************
     '<Snippet64>
-    ' The following statement declares a variable that refers to a Button 
+    ' The following statement declares a variable that refers to a Button
     ' object, creates a new Button object, and assigns it to the variable.
     Dim switchButton As New System.Windows.Forms.Button
     '</Snippet64>
@@ -415,7 +415,7 @@ Public Class Class1
 
     '********************************************************************
     '<Snippet65>
-    ' The following statement declares a variable that can only be 
+    ' The following statement declares a variable that can only be
     ' accessed by code in the same class, structure, or module.
     Private homeTelephone As String = ""
     '</Snippet65>
@@ -437,7 +437,7 @@ Public Class Class1
         '</Snippet67>
 
         '<Snippet68>
-        ' The following statement declares and initializes an array variable 
+        ' The following statement declares and initializes an array variable
         ' that holds 4 Boolean check values.
         Dim checkValues() As Boolean = {False, False, True, False}
         '</Snippet68>
@@ -645,7 +645,7 @@ Public Class Class1
                 Return propertyValue
             End Get
             Set(ByVal value As String)
-                ' The Set property procedure is called when the value 
+                ' The Set property procedure is called when the value
                 ' of a property is modified.  The value to be assigned
                 ' is passed in the argument to Set.
                 propertyValue = value
@@ -733,7 +733,7 @@ Public Class Class1
     '<Snippet37>
     Public Class thisClass
         Inherits anotherClass
-        ' Add code to override, overload, or extend members 
+        ' Add code to override, overload, or extend members
         ' inherited from the base class.
         ' Add new variable, property, procedure, and event declarations.
     End Class
@@ -886,7 +886,7 @@ LastLine:
 
 
     '********************************************************************
-    Class WrapquoteForTheDay
+    Class WrapQuoteForTheDay
         Private quoteValue As String = "No quote assigned yet."
 
         '<Snippet29>
@@ -1077,7 +1077,7 @@ LastLine:
 
     '********************************************************************
     '<Snippet13>
-    ' The following statements declare constants. 
+    ' The following statements declare constants.
     Const maximum As Long = 459
     Public Const helpString As String = "HELP"
     Private Const startValue As Integer = 5
@@ -1241,12 +1241,12 @@ End Class
 Module Module1
 
     Sub Main()
-        ' In the following function call, CalcSum's local variables 
-        ' are assigned the following values: args(0) = 4, args(1) = 3, 
+        ' In the following function call, CalcSum's local variables
+        ' are assigned the following values: args(0) = 4, args(1) = 3,
         ' and so on. The displayed sum is 10.
         Dim returnedValue As Double = CalcSum(4, 3, 2, 1)
         Console.WriteLine("Sum: " & returnedValue)
-        ' Parameter args accepts zero or more arguments. The sum 
+        ' Parameter args accepts zero or more arguments. The sum
         ' displayed by the following statements is 0.
         returnedValue = CalcSum()
         Console.WriteLine("Sum: " & returnedValue)

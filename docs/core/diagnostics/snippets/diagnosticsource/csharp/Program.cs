@@ -5,27 +5,27 @@ TheListener.Listening();
 HTTPClient Client = new HTTPClient();
 Client.SendWebRequest("https://learn.microsoft.com/dotnet/core/diagnostics/");
 
-// <snippit4>
+// <Snippet4>
 class HTTPClient
 {
-    // <snippit1>
+    // <Snippet1>
     private static DiagnosticSource httpLogger = new DiagnosticListener("System.Net.Http");
-    // </snippit1>
+    // </Snippet1>
     public byte[] SendWebRequest(string url)
     {
-        // <snippit3>
+        // <Snippet3>
         if (httpLogger.IsEnabled("RequestStart"))
         {
             httpLogger.Write("RequestStart", new { Url = url });
         }
-        // </snippit3>
+        // </Snippet3>
         //Pretend this sends an HTTP request to the url and gets back a reply.
         byte[] reply = new byte[] { };
         return reply;
     }
 }
-// </snippit4>
-// <snippit5>
+// </Snippet4>
+// <Snippet5>
 class Observer<T> : IObserver<T>
 {
     public Observer(Action<T> onNext, Action onCompleted)
@@ -41,7 +41,7 @@ class Observer<T> : IObserver<T>
 }
 class MyListener
 {
-    // <snippit6>
+    // <Snippet6>
     IDisposable networkSubscription;
     IDisposable listenerSubscription;
     private readonly object allListeners = new();
@@ -54,7 +54,7 @@ class MyListener
         Action<DiagnosticListener> onNewListener = delegate (DiagnosticListener listener)
         {
             Console.WriteLine($"New Listener discovered: {listener.Name}");
-            //Suscribe to the specific DiagnosticListener of interest.
+            //Subscribe to the specific DiagnosticListener of interest.
             if (listener.Name == "System.Net.Http")
             {
                 //Use lock to ensure the callback code is thread safe.
@@ -75,10 +75,10 @@ class MyListener
         //When a listener is created, invoke the onNext function which calls the delegate.
         listenerSubscription = DiagnosticListener.AllListeners.Subscribe(observer);
     }
-    // </snippit6>
+    // </Snippet6>
     // Typically you leave the listenerSubscription subscription active forever.
     // However when you no longer want your callback to be called, you can
     // call listenerSubscription.Dispose() to cancel your subscription to the IObservable.
 }
-// </snippit5>
+// </Snippet5>
 // </WholeProgram>

@@ -243,7 +243,7 @@ ForEach-Object {
     if (-not $install) {
         Write-Host -Object "$($_.PSChildName)  $($name)"
     }
-    elseif ($intall -eq '1') {
+    elseif ($install -eq '1') {
         if (-not $sp) {
             Write-Host -Object "$($_.PSChildName)  $($name)"
         }

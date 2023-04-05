@@ -88,7 +88,7 @@ public class LobExample
          // (using OracleLob.Read as in the above example).  
          // However, because the OracleLob object inherits directly
          // from the .NET stream object,
-         // all the existing classes that manipluate streams can
+         // all the existing classes that manipulate streams can
          // also be used. For example, the
          // .NET StreamReader makes it easier to convert the raw bytes
          // into actual characters.  

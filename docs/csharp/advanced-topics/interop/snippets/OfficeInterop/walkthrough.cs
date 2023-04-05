@@ -1,4 +1,4 @@
-﻿// Snippets 5000 Note:  
+﻿// Snippets 5000 Note:
 // The container used for building our samples doesn't include the Office assemblies.
 // This sample will generate a few errors in the CI build. Those are expected,
 // so the build passes.
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
 
-namespace OfficeProgramminWalkthruComplete
+namespace OfficeProgrammingWalkthruComplete
 {
     class Walkthrough
     {
@@ -46,7 +46,7 @@ namespace OfficeProgramminWalkthruComplete
 
             // Create a new, empty workbook and add it to the collection returned
             // by property Workbooks. The new workbook becomes the active workbook.
-            // Add has an optional parameter for specifying a praticular template.
+            // Add has an optional parameter for specifying a particular template.
             // Because no argument is sent in this example, Add creates a new workbook.
             excelApp.Workbooks.Add();
 

@@ -148,7 +148,7 @@ Generally, when a type is resolved, one of three things happens:
 2. If the type has been registered as a singleton, the container returns the singleton instance. If this is the first time the type is called for, the container creates it if required and maintains a reference to it.
 3. If the type has been registered as transient, the container returns a new instance and doesn't maintain a reference to it.
 
-.NET MAUI offers a number of ways to resolve registered components based on your needs. The most direct way to gain acces to the dependency injection container is from an `Element` using the `Handler.MauiContext.Services`. An example of this is shown below:
+.NET MAUI offers a number of ways to resolve registered components based on your needs. The most direct way to gain access to the dependency injection container is from an `Element` using the `Handler.MauiContext.Services`. An example of this is shown below:
 
 ```csharp
 var settingsService = this.Handler.MauiContext.Services.GetServices<ISettingsService>();

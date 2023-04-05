@@ -1,16 +1,16 @@
-<Page  
+<Page
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:Class="SDKSample.GradientBrushExample"
     Title="GradientBrush Example">
-    
+
   <DockPanel Background="White">
     <Border Background="Black" DockPanel.Dock="Top">
       <TextBlock FontSize="16" Foreground="White" HorizontalAlignment="Stretch" Margin="10">
         Use a Gradient as an Opacity Mask
       </TextBlock>
     </Border>
-  
+
     <Grid Background="{StaticResource MyCheckeredBrushResource}"
       HorizontalAlignment="Center" VerticalAlignment="Center">
       <Grid.ColumnDefinitions>
@@ -24,24 +24,24 @@
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
-    
+
       <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="White"
         Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" />
       <TextBlock Margin="10" Grid.Column="0" Grid.Row="0">Without Opacity Mask</TextBlock>
       <TextBlock Margin="10" Grid.Column="1" Grid.Row="0">The Opacity Mask</TextBlock>
       <TextBlock Margin="10" Grid.Column="2" Grid.Row="0">With Opacity Mask</TextBlock>
-      
+
       <!-- Use an opacity mask on a panel containing multiple elements. -->
       <!-- Before applying the opacity mask. -->
-      <Border BorderBrush="Black" 
-          BorderThickness="6" 
-          Width="312" Height="412" 
+      <Border BorderBrush="Black"
+          BorderThickness="6"
+          Width="312" Height="412"
           Margin="10"
           HorizontalAlignment="Left"
           Grid.Column="0" Grid.Row="1">
-        <Canvas 
+        <Canvas
             Width="300" Height="400">
-            
+
           <Canvas.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                <LinearGradientBrush.GradientStops>
@@ -50,8 +50,8 @@
                 </LinearGradientBrush.GradientStops>
               </LinearGradientBrush>
             </Canvas.Background>
-            <Ellipse 
-                Height="100" 
+            <Ellipse
+                Height="100"
                 Width="100"
                 Canvas.Left="150"
                 Canvas.Top="300"
@@ -59,7 +59,7 @@
                 Stroke="Purple"
                 StrokeThickness="10"/>
             <Image
-                Width="100" Height="100" 
+                Width="100" Height="100"
                 Canvas.Left="150"
                 Canvas.Top="10"
                 Source="sampleImages\Waterlilies.jpg">
@@ -80,7 +80,7 @@
           Width="150"
           Height="200"
           Stroke="Black" StrokeThickness="3"
-          Margin="10" 
+          Margin="10"
           HorizontalAlignment="Left"
           Grid.Column="1" Grid.Row="1">
           <Rectangle.Fill>
@@ -101,7 +101,7 @@
           Grid.Column="2" Grid.Row="1">
 
           <!-- With the opacity mask: -->
-          <Canvas 
+          <Canvas
             Width="300" Height="400">
             <Canvas.Background>
               <LinearGradientBrush>
@@ -111,7 +111,7 @@
                 </LinearGradientBrush.GradientStops>
               </LinearGradientBrush>
             </Canvas.Background>
-		  <!--<SnippetAARRGGBBValueonOpacityMask>-->
+		  <!--<SnippetAARRGGBBValueOnOpacityMask>-->
             <Canvas.OpacityMask>
               <RadialGradientBrush>
                 <RadialGradientBrush.GradientStops>
@@ -120,9 +120,9 @@
               </RadialGradientBrush.GradientStops>
             </RadialGradientBrush>
             </Canvas.OpacityMask>
-		  <!--</SnippetAARRGGBBValueonOpacityMask>-->
-            <Ellipse 
-              Height="100" 
+		  <!--</SnippetAARRGGBBValueOnOpacityMask>-->
+            <Ellipse
+              Height="100"
               Width="100"
               Canvas.Left="150"
               Canvas.Top="300"
@@ -130,7 +130,7 @@
               Stroke="Purple"
               StrokeThickness="10"/>
             <Image
-              Width="100" Height="100" 
+              Width="100" Height="100"
               Canvas.Left="150"
               Canvas.Top="10"
               Source="sampleImages\Waterlilies.jpg">
@@ -145,10 +145,10 @@
             </TextBlock>
           </Canvas>
         </Border>
-    
+
       <!-- Use an opacity mask to simulate complex gradients: -->
       <!-- Before applying the opacity mask. -->
-      <Canvas Margin="10" 
+      <Canvas Margin="10"
         HorizontalAlignment="Left"
         Grid.Column="0" Grid.Row="2">
         <Rectangle
@@ -219,7 +219,7 @@
               </RadialGradientBrush>
           </Rectangle.Fill>
         </Rectangle>
-      
+
         <Rectangle
           Width="100"
           Height="30"
@@ -242,20 +242,20 @@
             </LinearGradientBrush>
           </Rectangle.OpacityMask>
         </Rectangle>
-          
+
       </Canvas>
-    
-       <!--Use an opacity mask on an image. 
-           Before applying the opacity mask.--> 
+
+       <!--Use an opacity mask on an image.
+           Before applying the opacity mask.-->
       <Image
-        Width="200" Height="150" 
+        Width="200" Height="150"
         Source="sampleImages\Waterlilies.jpg"
         Margin="10"
         HorizontalAlignment="Left"
         Grid.Column="0" Grid.Row="3">
       </Image>
 
-         <!--Uses the same brush as the opacity mask to fill the rectangle.--> 
+         <!--Uses the same brush as the opacity mask to fill the rectangle.-->
         <Rectangle
           Width="200" Height="150"
           Stroke="Black"
@@ -271,9 +271,9 @@
             </LinearGradientBrush>
           </Rectangle.Fill>
         </Rectangle>
-    
-	  <!--<SnippetLinearGradientOpacityMaskonImage>-->
-      <!--With the opacity mask:--> 
+
+	  <!--<SnippetLinearGradientOpacityMaskOnImage>-->
+      <!--With the opacity mask:-->
       <Image
         Width="200" Height="150"
         Source="sampleImages\Waterlilies.jpg"
@@ -289,8 +289,8 @@
           </LinearGradientBrush>
         </Image.OpacityMask>
       </Image>
-	  <!--</SnippetLinearGradientOpacityMaskonImage>-->
-    
+	  <!--</SnippetLinearGradientOpacityMaskOnImage>-->
+
     </Grid>
   </DockPanel>
 </Page>

@@ -34,7 +34,7 @@ await host.RunAsync();
 
 static async ValueTask StartAnalysisAsync(ActionInputs inputs, IHost host)
 {
-    // Omitted for brevity, here is the preudo code:
+    // Omitted for brevity, here is the pseudo code:
     // - Read projects
     // - Calculate code metric analytics
     // - Write the CODE_METRICS.md file

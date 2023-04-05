@@ -12,7 +12,7 @@ zone_pivot_groups: orleans-version
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-The configuration of serialization in Orleans is a crucial part of the overall system design. While Orleans provides reasonalble defaults, you can configure serialization to suit your apps' needs. For sending data between hosts, <xref:Orleans.Serialization?displayProperty=fullName> supports delegating to other serializers, such as [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) and [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). You can add support for other serializers by following the pattern set by those implementations. For grain storage it's best to use <xref:Orleans.Storage.IGrainStorageSerializer> to configure a custom serializer.
+The configuration of serialization in Orleans is a crucial part of the overall system design. While Orleans provides reasonable defaults, you can configure serialization to suit your apps' needs. For sending data between hosts, <xref:Orleans.Serialization?displayProperty=fullName> supports delegating to other serializers, such as [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) and [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). You can add support for other serializers by following the pattern set by those implementations. For grain storage it's best to use <xref:Orleans.Storage.IGrainStorageSerializer> to configure a custom serializer.
 
 ## Configure Orleans to use `Newtonsoft.Json`
 

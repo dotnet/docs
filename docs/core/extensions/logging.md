@@ -369,9 +369,9 @@ In the preceding example, the `DateTimeOffset` instance is the type that corresp
 
 For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../standard/base-types/custom-date-and-time-format-strings.md).
 
-### Log message template formatting examples
+#### Examples
 
-Log message templates allow placeholder formatting. The following examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
+The following examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
 
 ```csharp
 logger.LogInformation("Number: {Number}", 1);               // Number: 1
@@ -380,7 +380,9 @@ logger.LogInformation($"{{{{Number}}}}: {{Number}}", 5);    // {Number}: 5
 ```
 
 > [!TIP]
-> You should always use log message template formatting when logging. You should avoid string interpolation as it can cause performance issues.
+>
+> - In most cases, you should use log message template formatting when logging. Use of string interpolation can cause performance issues.
+> - Code analysis rule [CA2254: Template should be a static expression](../../fundamentals/code-analysis/quality-rules/ca2254.md) helps alert you to places where your log messages don't use proper formatting.
 
 ## Log exceptions
 

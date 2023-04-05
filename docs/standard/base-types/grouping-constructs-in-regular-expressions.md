@@ -25,20 +25,20 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 
 The following table lists the grouping constructs supported by the .NET regular expression engine and indicates whether they are capturing or noncapturing.
 
-| Grouping construct                                                                    | Capturing or noncapturing |
-|---------------------------------------------------------------------------------------|---------------------------|
-| [Matched subexpressions](#matched-subexpressions)                                      | Capturing                 |
-| [Named matched subexpressions](#named-matched-subexpression)                          | Capturing                 |
-| [Balancing group definitions](#balancing-group-definitions)                            | Capturing                 |
-| [Noncapturing groups](#noncapturing-groups)                                            | Noncapturing              |
-| [Group options](#group-options)                                                       | Noncapturing              |
-| [Zero-width positive lookahead assertions](#zerowidth-positive-lookahead-assertions)   | Noncapturing              |
-| [Zero-width negative lookahead assertions](#zerowidth-negative-lookahead-assertions)   | Noncapturing              |
-| [Zero-width positive lookbehind assertions](#zerowidth-positive-lookbehind-assertions) | Noncapturing              |
-| [Zero-width negative lookbehind assertions](#zerowidth-negative-lookbehind-assertions) | Noncapturing              |
-| [Atomic groups](#atomic-groups)                                                       | Noncapturing              |
+| Grouping construct                                                                      | Capturing or noncapturing |
+|-----------------------------------------------------------------------------------------|---------------------------|
+| [Matched subexpressions](#matched-subexpressions)                                       | Capturing                 |
+| [Named matched subexpressions](#named-matched-subexpressions)                           | Capturing                 |
+| [Balancing group definitions](#balancing-group-definitions)                             | Capturing                 |
+| [Noncapturing groups](#noncapturing-groups)                                             | Noncapturing              |
+| [Group options](#group-options)                                                         | Noncapturing              |
+| [Zero-width positive lookahead assertions](#zero-width-positive-lookahead-assertions)   | Noncapturing              |
+| [Zero-width negative lookahead assertions](#zero-width-negative-lookahead-assertions)   | Noncapturing              |
+| [Zero-width positive lookbehind assertions](#zero-width-positive-lookbehind-assertions) | Noncapturing              |
+| [Zero-width negative lookbehind assertions](#zero-width-negative-lookbehind-assertions) | Noncapturing              |
+| [Atomic groups](#atomic-groups)                                                         | Noncapturing              |
 
-For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#objects).
+For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#grouping-constructs-and-regular-expression-objects).
 
 ## Matched subexpressions
 
@@ -59,7 +59,7 @@ You can access captured groups in four ways:
 
 - By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.
 
-- Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#Objects) section.
+- Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#grouping-constructs-and-regular-expression-objects) section.
 
 The following example illustrates a regular expression that identifies duplicated words in text. The regular expression pattern's two capturing groups represent the two instances of the duplicated word. The second instance is captured to report its starting position in the input string.
 

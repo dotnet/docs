@@ -1,7 +1,5 @@
 ﻿using System.Security.Claims;
 
-var random = new Random();
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<UserContext>();
@@ -24,12 +22,12 @@ app.Use((context, next) =>
 
 static ClaimsPrincipal MakeRandomUser()
 {
-    var id = random.Next(1, 11).ToString();
+    var id = Random.Shared.Next(1, 11).ToString();
     var name = Guid.NewGuid().ToString();
     var user = new ClaimsPrincipal(
         new ClaimsIdentity(new[]
         {
-            new Claim(ClaimTypes.Name, name), 
+            new Claim(ClaimTypes.Name, name),
             new Claim(ClaimTypes.NameIdentifier, id)
         },
         "CustomAuth"));
@@ -44,7 +42,7 @@ app.MapGet("/", async (IHttpClientFactory factory, UserContext context) =>
     response.EnsureSuccessStatusCode();
 
     return Results.Stream(
-       await response.Content.ReadAsStreamAsync(), 
+       await response.Content.ReadAsStreamAsync(),
        response.Content.Headers.ContentType!.ToString());
 });
 

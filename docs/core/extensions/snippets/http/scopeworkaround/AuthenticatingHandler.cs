@@ -6,8 +6,8 @@ internal class AuthenticatingHandler : DelegatingHandler
 
     public AuthenticatingHandler(IHttpContextAccessor httpContext, UserContext userContext)
     {
-        userContext.User = httpContext.HttpContext!.User;
         _userContext = userContext;
+        _userContext.User = httpContext.HttpContext!.User;
     }
 
     protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)

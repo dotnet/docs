@@ -27,7 +27,7 @@ public class ScopeAwareHttpClientFactory : IHttpClientFactory
     {
         DelegatingHandler? scopeAwareHandler = null;
 
-        // get custom options to get scope aware handler information
+        // Get custom options to get scope aware handler information
         ScopeAwareHttpClientFactoryOptions scopeAwareOptions = _scopeAwareOptionsMonitor.Get(name);
         Type? scopeAwareHandlerType = scopeAwareOptions.HttpHandlerType;
 
@@ -37,7 +37,7 @@ public class ScopeAwareHttpClientFactory : IHttpClientFactory
             if (!typeof(DelegatingHandler).IsAssignableFrom(scopeAwareHandlerType))
             {
                 throw new ArgumentException($"""
-                    Scope aware HttpHandler {scopeAwareHandlerType.Name} should 
+                    Scope aware HttpHandler {scopeAwareHandlerType.Name} should
                     be assignable to DelegatingHandler
                     """);
             }
@@ -47,7 +47,7 @@ public class ScopeAwareHttpClientFactory : IHttpClientFactory
             if (scopeAwareHandler.InnerHandler != null)
             {
                 throw new ArgumentException($"""
-                    Inner handler of a delegating handler {scopeAwareHandlerType.Name} should be null. 
+                    Inner handler of a delegating handler {scopeAwareHandlerType.Name} should be null.
                     Scope aware HttpHandler should be registered as Transient.
                     """);
             }

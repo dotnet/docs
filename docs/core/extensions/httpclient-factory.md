@@ -122,7 +122,7 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 1. Create an instance of `TodoService`, passing in the instance of `HttpClient` to its constructor.
 
 > [!IMPORTANT]
-> Using typed clients in singleton services can be dangerous. For more information, see the [Using Typed clients in singleton services](#using-typed-clients-in-singleton-services) section.
+> Using typed clients in singleton services can be dangerous. For more information, see the [Avoid Typed clients in singleton services](#avoid-typed-clients-in-singleton-services) section.
 
 ### Generated clients
 
@@ -256,7 +256,7 @@ services.AddHttpClient(name)
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
 
-## Using typed clients in singleton services
+## Avoid typed clients in singleton services
 
 When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 
@@ -282,11 +282,11 @@ If you require access to an app DI scope from your message handler, for authenti
 
 :::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to app DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
 
-The following example shows creating an `HttpClient` with a scope-aware `HttpHandler`:
+The following example shows creating an `HttpClient` with a scope-aware `DelegatingHandler`:
 
 :::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="CreateClient":::
 
-A further workaround can follow with an extension method for registering a scope-aware `HttpHandler` and overriding default `IHttpClientFactory` registration by a transient service with access to the current application scope:
+A further workaround can follow with an extension method for registering a scope-aware `DelegatingHandler` and overriding default `IHttpClientFactory` registration by a transient service with access to the current app scope:
 
 :::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="AddScopeAwareHttpHandler":::
 

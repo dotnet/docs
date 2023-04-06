@@ -1320,10 +1320,6 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features
       items:
-      - name: Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context
-        href: ../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
-      - name: Pattern-based `fixed` statement
-        href: ../../_csharplang/proposals/csharp-7.3/pattern-based-fixed.md
       - name: Ref local reassignment
         href: ../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
       - name: Stackalloc array initializers

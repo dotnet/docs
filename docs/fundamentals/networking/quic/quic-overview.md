@@ -309,7 +309,7 @@ async ValueTask WritesClosedAsync(QuicStream stream)
 // DisposeAsync called by await using at the top.
 ```
 
-For more information about how the `QuicsStream` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/69675).
+For more information about how the `QuicStream` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/69675).
 
 ## See also
 

@@ -129,7 +129,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for CI 
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
-The following command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
+The following command installs the ASP.NET Core runtime for maximum compatibility. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ```powershell
 dotnet-install.ps1 -Channel 7.0 -Runtime aspnetcore

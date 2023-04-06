@@ -197,7 +197,7 @@ The only output when `LogLevel.Trace` was specified is the output from the const
 
 This example illustrates an important point for interpolated string handlers, especially when logging libraries are used. Any side-effects in the placeholders may not occur.  Add the following code to your main program and see this behavior in action:
 
-:::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideeffects":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideEffects":::
 
 You can see the `index` variable is incremented five times each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` doesn't match the expectation:
 

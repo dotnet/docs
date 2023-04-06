@@ -368,7 +368,7 @@
 | Functions runtime assemblies for App Insights logging | NuGet [3.0.35](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.35) |  | GitHub [3.0.35](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
 | Functions runtime assemblies for logging | NuGet [4.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.3) |  | GitHub [4.0.3](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
 | Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
-| Functions timers and file triggers | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/4.0.1)<br>NuGet [5.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/5.0.0-beta.1) |  | GitHub [4.0.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/dev/src/WebJobs.Extensions) |
+| Functions timers and file triggers | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/dev/src/WebJobs.Extensions) |
 | Gallery | NuGet [2.6.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Gallery/2.6.2-preview) |  |  |
 | Graph RBAC | NuGet [3.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Graph.RBAC/3.8.0-preview) |  | GitHub [3.8.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/graphrbac) |
 | Hadoop Client | NuGet [1.5.13](https://www.nuget.org/packages/Microsoft.Hadoop.Client/1.5.13) |  |  |
@@ -501,7 +501,7 @@
 | Functions extension for Authentication Events | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.3) |  |  |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.0.143-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.143-preview) |  |  |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.0) |  |  |
-| Functions extension for Storage Timers | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0-beta.1) |  |  |
+| Functions extension for Storage Timers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |

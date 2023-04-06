@@ -7,9 +7,9 @@ ms.date: 02/21/2023
 ---
 # Native AOT deployment
 
-Publishing your app as *native AOT* produces an app that is [self-contained](../index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps start up very quickly and use less memory. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+Publishing your app as *native AOT* produces an app that is [self-contained](../index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps have faster startup time and smaller memory footprints. These apps can run on a machine without .NET runtime installed.
 
-The benefit of native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. It is currently not supported with ASP.NET Core, but only console apps.
+The benefit of native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. Native AOT deployment is currently in [preview for ASP.NET Core 8.0](/aspnet/core/native-aot/?view=aspnetcore-8.0&preserve-view=true).
 
 The native AOT deployment model uses an ahead of time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a Just-In-Time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT is not allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-self-contained).
 

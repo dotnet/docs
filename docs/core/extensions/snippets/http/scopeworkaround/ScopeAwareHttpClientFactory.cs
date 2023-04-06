@@ -2,7 +2,8 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Http;
 using Microsoft.Extensions.Options;
 
-// overrides default IHttpClientFactory registration as a transient service with access to the current scope
+// Overrides default IHttpClientFactory registration as a transient
+// service with access to the current scope.
 public class ScopeAwareHttpClientFactory : IHttpClientFactory
 {
     private readonly IServiceProvider _scopeServiceProvider;
@@ -35,15 +36,20 @@ public class ScopeAwareHttpClientFactory : IHttpClientFactory
         {
             if (!typeof(DelegatingHandler).IsAssignableFrom(scopeAwareHandlerType))
             {
-                throw new ArgumentException($"Scope aware HttpHandler {scopeAwareHandlerType.Name} should be assignable to DelegatingHandler");
+                throw new ArgumentException($"""
+                    Scope aware HttpHandler {scopeAwareHandlerType.Name} should 
+                    be assignable to DelegatingHandler
+                    """);
             }
 
             // Create top-most delegating handler with scoped dependencies
             scopeAwareHandler = (DelegatingHandler)_scopeServiceProvider.GetRequiredService(scopeAwareHandlerType); // should be transient
             if (scopeAwareHandler.InnerHandler != null)
             {
-                throw new ArgumentException($"Inner handler of a delegating handler {scopeAwareHandlerType.Name} should be null. " +
-                    "Scope aware HttpHandler should be registered as Transient.");
+                throw new ArgumentException($"""
+                    Inner handler of a delegating handler {scopeAwareHandlerType.Name} should be null. 
+                    Scope aware HttpHandler should be registered as Transient.
+                    """);
             }
         }
 
@@ -56,7 +62,7 @@ public class ScopeAwareHttpClientFactory : IHttpClientFactory
             handler = scopeAwareHandler;
         }
 
-        HttpClient client = new HttpClient(handler);
+        HttpClient client = new(handler);
         // </CreateClient>
 
         // configure HttpClient in the same way HttpClientFactory would do
@@ -77,15 +83,18 @@ public class ScopeAwareHttpClientFactoryOptions
 public static class ScopeAwareHttpClientBuilderExtensions
 {
     // <AddScopeAwareHttpHandler>
-    public static IHttpClientBuilder AddScopeAwareHttpHandler<THandler>(this IHttpClientBuilder builder) where THandler : DelegatingHandler
+    public static IHttpClientBuilder AddScopeAwareHttpHandler<THandler>(
+        this IHttpClientBuilder builder) where THandler : DelegatingHandler
     {
         builder.Services.TryAddTransient<THandler>();
         if (!builder.Services.Any(sd => sd.ImplementationType == typeof(ScopeAwareHttpClientFactory)))
         {
-            builder.Services.AddTransient<IHttpClientFactory, ScopeAwareHttpClientFactory>(); // override default IHttpClientFactory registration
+            // Override default IHttpClientFactory registration
+            builder.Services.AddTransient<IHttpClientFactory, ScopeAwareHttpClientFactory>();
         }
 
-        builder.Services.Configure<ScopeAwareHttpClientFactoryOptions>(builder.Name, options => options.HttpHandlerType = typeof(THandler));
+        builder.Services.Configure<ScopeAwareHttpClientFactoryOptions>(
+            builder.Name, options => options.HttpHandlerType = typeof(THandler));
 
         return builder;
     }

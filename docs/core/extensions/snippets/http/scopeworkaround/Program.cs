@@ -18,24 +18,34 @@ app.Use((context, next) =>
 
     var userContext = context.RequestServices.GetRequiredService<UserContext>();
     userContext.User = context.User;
+
     return next(context);
 });
 
-ClaimsPrincipal? MakeRandomUser()
+static ClaimsPrincipal MakeRandomUser()
 {
     var id = random.Next(1, 11).ToString();
     var name = Guid.NewGuid().ToString();
-    var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, name), new Claim(ClaimTypes.NameIdentifier, id) }, "CustomAuth"));
+    var user = new ClaimsPrincipal(
+        new ClaimsIdentity(new[]
+        {
+            new Claim(ClaimTypes.Name, name), 
+            new Claim(ClaimTypes.NameIdentifier, id)
+        },
+        "CustomAuth"));
+
     return user;
 }
 
-app.MapGet("/", async (IHttpClientFactory c, UserContext context) =>
+app.MapGet("/", async (IHttpClientFactory factory, UserContext context) =>
 {
-    var client = c.CreateClient("backend");
+    var client = factory.CreateClient("backend");
     var response = await client.GetAsync($"https://jsonplaceholder.typicode.com/todos?userId={context.GetCurrentUserId()}");
     response.EnsureSuccessStatusCode();
 
-    return Results.Stream(await response.Content.ReadAsStreamAsync(), response.Content.Headers.ContentType!.ToString());
+    return Results.Stream(
+       await response.Content.ReadAsStreamAsync(), 
+       response.Content.Headers.ContentType!.ToString());
 });
 
 app.Run();

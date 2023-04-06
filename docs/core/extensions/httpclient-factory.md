@@ -278,9 +278,9 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 
 Users are strongly advised **not to cache scope-related information** (such as data from `HttpContext`) inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
-If you require access to an application DI scope from your message handler, e.g. for authentication, you can work around that by incapsulating scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around `HttpMessageHandler` instance from the `IHttpClientFactory` cache, which you can get using `IHttpMessageHandlerFactory` by calling <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A> for any registered _named client_. In that case, you would need to create `HttpClient` instance yourself using the constructed handler.
+If you require access to an app DI scope from your message handler, for authentication as an example, you'd encapsulate scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around an `HttpMessageHandler` instance from the `IHttpClientFactory` cache. To access the handler call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A?displayProperty=nameWithType> for any registered _named client_. In that case, you'd create an `HttpClient` instance yourself using the constructed handler.
 
-:::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to application DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
+:::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to app DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
 
 The following example shows creating an `HttpClient` with a scope-aware `HttpHandler`:
 

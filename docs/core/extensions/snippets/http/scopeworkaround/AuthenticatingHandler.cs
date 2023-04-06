@@ -14,7 +14,8 @@ internal class AuthenticatingHandler : DelegatingHandler
     {
         request.Headers.TryAddWithoutValidation("X-Auth", _userContext.GetCurrentUserName());
 
-        // emulate server checking auth -- this will catch scope mismatch error if ScopeAwareHttpClientFactory isn't used
+        // Emulate server checking auth: this will catch scope mismatch error
+        // when ScopeAwareHttpClientFactory isn't used.
         if (!request.RequestUri!.Query.Contains($"userId={_userContext.GetCurrentUserId()}"))
         {
             return Task.FromResult(new HttpResponseMessage(System.Net.HttpStatusCode.Unauthorized));
@@ -30,13 +31,9 @@ class UserContext
 
     public ClaimsPrincipal? User { get; set; }
 
-    public string? GetCurrentUserName()
-    {
-        return User?.Identity?.Name;
-    }
+    public string? GetCurrentUserName() =>
+        User?.Identity?.Name;
 
-    public string? GetCurrentUserId()
-    {
-        return User?.FindFirstValue(ClaimTypes.NameIdentifier);
-    }
+    public string? GetCurrentUserId() =>
+        User?.FindFirstValue(ClaimTypes.NameIdentifier);
 }

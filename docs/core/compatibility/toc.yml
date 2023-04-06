@@ -1432,6 +1432,8 @@ items:
       items:
       - name: .NET Standard 2.0 no longer supported
         href: wcf-client/6.0/net-standard-2-support.md
+      - name: Duplex contract captures synchronization context
+        href: wcf-client/6.0/duplex-synchronization-context.md
   - name: Windows Forms
     items:
     - name: .NET 8

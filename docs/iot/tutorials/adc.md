@@ -83,7 +83,7 @@ Complete the following steps in your preferred development environment:
         1. Writes the raw value to the console.
         1. Writes the value to the console formatted as a percentage.
             - To calculate the percentage, the value is divided by 10.23. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values ranging 0-1023. Dividing the value by 10.23 represents the value as a percentage.
-            - Rounds the percentage to the nearest 0.1.
+            - The percentage is rounded to the nearest 0.1.
         1. Sleeps 500 ms.
 
 1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]

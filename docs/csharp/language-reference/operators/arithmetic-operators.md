@@ -275,7 +275,7 @@ For more information, see the following sections of the [C# language specificati
 - [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#11815-postfix-increment-and-decrement-operators)
 - [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1196-prefix-increment-and-decrement-operators)
 - [Unary plus operator](~/_csharpstandard/standard/expressions.md#1192-unary-plus-operator)
-- [Unary minus operator](~/_csharpstandard/standard/expressions.md#1183-unary-minus-operator)
+- [Unary minus operator](~/_csharpstandard/standard/expressions.md#1193-unary-minus-operator)
 - [Multiplication operator](~/_csharpstandard/standard/expressions.md#11102-multiplication-operator)
 - [Division operator](~/_csharpstandard/standard/expressions.md#11103-division-operator)
 - [Remainder operator](~/_csharpstandard/standard/expressions.md#11104-remainder-operator)

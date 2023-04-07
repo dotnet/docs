@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 04/06/2023
+ms.date: 04/10/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren

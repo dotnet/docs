@@ -1,14 +1,13 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/15/2022
+ms.date: 04/05/2023
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
   - "struct keyword [C#]"
   - "struct type [C#]"
   - "structure type [C#]"
-ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 ---
 # Structure types (C# reference)
 
@@ -108,6 +107,8 @@ Beginning with C# 11, if you don't initialize all fields in a struct, the compil
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
 Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
+
+Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/constructors.md#primary-constructors) as part of its declaration. This provides a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 

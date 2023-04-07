@@ -49,7 +49,7 @@ A lambda expression with an expression on the right side of the `=>` operator is
 (input-parameters) => expression
 ```
 
-The body of an expression lambda can consist of a method call. However, if you're creating [expression trees](../../advanced-topics/expression-trees/index.md) that are evaluated outside the context of the .NET Common Language Runtime (CLR), such as in SQL Server, you shouldn't use method calls in lambda expressions. The methods will have no meaning outside the context of the .NET Common Language Runtime (CLR).
+The body of an expression lambda can consist of a method call. However, if you're creating [expression trees](../../advanced-topics/expression-trees/index.md) that are evaluated outside the context of the .NET Common Language Runtime (CLR), such as in SQL Server, you shouldn't use method calls in lambda expressions. The methods have no meaning outside the context of the .NET Common Language Runtime (CLR).
 
 ## Statement lambdas
 
@@ -93,6 +93,24 @@ Lambda discard parameters may be useful when you use a lambda expression to [pro
 
 > [!NOTE]
 > For backwards compatibility, if only a single input parameter is named `_`, then, within a lambda expression, `_` is treated as the name of that parameter.
+
+Beginning with C# 12, you can provide *default values* for parameters on lambda expressions. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once using the default and once with two explicit parameters:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDefaultParameters":::
+
+You can also declare lambda expressions with `params` arrays as parameters:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetParamsArray":::
+
+As part of these updates, when a method group that has a default parameter is assigned to a lambda expression, that lambda expression also has the same default parameter. A method group with a `params` array parameter can also be assigned to a lambda expression.
+
+Lambda expressions with default parameters or `params` arrays as parameters don't have natural types that correspond to `Func<>` or `Action<>` types. However, you can define delegate types that include default parameter values:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="DelegateDeclarations":::
+
+Or, you can use implicitly typed variables with `var` declarations to define the delegate type. The compile synthesizes the correct delegate type.
+
+For more information on see the feature spec for [default parameters on lambda expressions](~/_csharplang/proposals/lambda-method-group-defaults.md).
 
 ## Async lambdas
 

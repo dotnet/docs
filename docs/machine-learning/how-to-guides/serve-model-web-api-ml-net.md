@@ -25,7 +25,7 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 1. In the **Create a new project** dialog:
 
     - Enter `Web API` in the search box.
-    - Select the **ASP.NET Core Web API** template and selsect **Next**.
+    - Select the **ASP.NET Core Web API** template and select **Next**.
 
 1. In the **Configure your project** dialog:
 

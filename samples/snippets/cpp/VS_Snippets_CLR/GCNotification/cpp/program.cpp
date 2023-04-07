@@ -147,7 +147,7 @@ namespace GCNotify
                     GCNotificationStatus s = GC::WaitForFullGCApproach();
                     if (s == GCNotificationStatus::Succeeded)
                     {
-                        Console::WriteLine("GC Notifcation raised.");
+                        Console::WriteLine("GC Notification raised.");
                         OnFullGCApproachNotify();
                     }
                     else if (s == GCNotificationStatus::Canceled)

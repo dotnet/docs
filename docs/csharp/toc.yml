@@ -1300,14 +1300,10 @@ items:
       items:
       - name: Pattern matching
         href: ../../_csharplang/proposals/csharp-7.0/pattern-matching.md
-      - name: Out variable declarations
-        href: ../../_csharplang/proposals/csharp-7.0/out-var.md
       - name: Async task types
         href: ../../_csharplang/proposals/csharp-7.0/task-types.md
     - name: C# 7.1 features
       items:
-      - name: Infer tuple names
-        href: ../../_csharplang/proposals/csharp-7.1/infer-tuple-names.md
       - name: Pattern matching with generics
         href: ../../_csharplang/proposals/csharp-7.1/generics-pattern-match.md
     - name: C# 7.2 features
@@ -1320,18 +1316,10 @@ items:
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
     - name: C# 7.3 features
       items:
-      - name: Indexing `fixed` fields should not require pinning regardless of the movable/unmovable context
-        href: ../../_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md
-      - name: Pattern-based `fixed` statement
-        href: ../../_csharplang/proposals/csharp-7.3/pattern-based-fixed.md
       - name: Ref local reassignment
         href: ../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
       - name: Stackalloc array initializers
         href: ../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
-      - name: Expression variables in initializers
-        href: ../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md
-      - name: Tuple equality (==) and inequality (!=)
-        href: ../../_csharplang/proposals/csharp-7.3/tuple-equality.md
     - name: C# 8.0 features
       items:
       - name: Nullable reference types - proposal

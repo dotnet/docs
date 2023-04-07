@@ -115,7 +115,7 @@ Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameW
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Nullable types](~/_csharpstandard/standard/types.md#8311-nullable-value-types)
+- [Nullable types](~/_csharpstandard/standard/types.md#8312-nullable-value-types)
 - [Lifted operators](~/_csharpstandard/standard/expressions.md#1148-lifted-operators)
 - [Implicit nullable conversions](~/_csharpstandard/standard/conversions.md#1026-implicit-nullable-conversions)
 - [Explicit nullable conversions](~/_csharpstandard/standard/conversions.md#1034-explicit-nullable-conversions)

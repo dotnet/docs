@@ -1,6 +1,4 @@
-﻿Imports System.Diagnostics
-
-Public Class Class11
+﻿Public Class Class11
     ' fae3eca1-f0b2-4400-994b-7aa58a848448
     ' Dim Statement (Visual Basic)
 
@@ -9,11 +7,6 @@ Public Class Class11
         '<Snippet141>
         ' Declare and initialize a Long variable.
         Dim startingAmount As Long = 500
-
-        ' Declare a variable that refers to a Button object,
-        ' create a Button object, and assign the Button object
-        ' to the variable.
-        Dim switchButton As New System.Windows.Forms.Button
 
         ' Declare a local variable that always retains its value,
         ' even after its procedure returns to the calling code.
@@ -29,7 +22,6 @@ Public Class Class11
 
         totalSales = 50
     End Sub
-
 
     '<Snippet142>
     Public Sub ListPrimes()
@@ -50,7 +42,6 @@ Public Class Class11
         Debug.WriteLine(sb.ToString)
         ' Output: 2 3 5 7 11 13 17 19 23 29
     End Sub
-
 
     Private Function CheckIfPrime(ByVal number As Integer) As Boolean
         If number < 2 Then
@@ -76,7 +67,6 @@ Public Class Class11
     End Function
     '</Snippet142>
 
-
     Public Sub OperateCar()
         '<Snippet144>
         ' Create a new instance of a Car.
@@ -89,7 +79,6 @@ Public Class Class11
         ' Output: 45
         '</Snippet144>
     End Sub
-
 
     '<Snippet145>
     Public Class Car
@@ -108,6 +97,5 @@ Public Class Class11
         End Sub
     End Class
     '</Snippet145>
-
 
 End Class

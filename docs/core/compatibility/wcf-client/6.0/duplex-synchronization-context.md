@@ -9,11 +9,11 @@ ms.date: 04/06/2023
 
 ## Previous behavior
 
-In previous versions, the duplex contract failed to capture synchronization context when the channel factory was opened.
+In previous versions, <xref:System.ServiceModel.DuplexChannelFactory%601> failed to capture the current synchronization context when the channel factory was opened.
 
 ## New behavior
 
-Starting in WCF Client 6.0 RC, the duplex channel captures synchronization context and dispatches callbacks to the captured context. This behavior matches that of .NEt Framework.
+Starting in WCF Client 6.0 RC, <xref:System.ServiceModel.DuplexChannelFactory%601> captures the current synchronization context when opened and dispatches callbacks to the captured context. This behavior matches that of .NET Framework.
 
 ## Version introduced
 

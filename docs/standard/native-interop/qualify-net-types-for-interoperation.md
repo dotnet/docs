@@ -45,7 +45,7 @@ If you intend to expose types in an assembly to COM applications, consider the r
 
 ## Consuming COM types from .NET
 
-If you intend to consume COM types from .NET and you do not want to use tools like [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md), you must follow these guidelines:
+If you intend to consume COM types from .NET and you do not want to use tools like [Tlbimp.exe (Type Library Importer)](../../framework/tools/tlbimp-exe-type-library-importer.md), you must follow these guidelines:
 
 - Interfaces must have the <xref:System.Runtime.InteropServices.ComImportAttribute> applied.
 - Interfaces must have the <xref:System.Runtime.InteropServices.GuidAttribute> applied with the Interface ID for the COM interface.

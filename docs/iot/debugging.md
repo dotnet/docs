@@ -1,6 +1,6 @@
 ---
-title: Debug .NET apps on ARM Single Board Computers
-description: Learn how to debug .NET apps on ARM Single Board Computers (SBCs) such as Raspberry Pi.
+title: Debug .NET apps on ARM Single-Board Computers
+description: Learn how to debug .NET apps on ARM Single-Board Computers (SBCs) such as Raspberry Pi.
 author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
@@ -9,7 +9,7 @@ ms.prod: dotnet
 zone_pivot_groups: ide-set-one
 ---
 
-# Debug .NET apps on ARM Single Board Computers
+# Debug .NET apps on ARM Single-Board Computers
 
 Debugging .NET apps running on ARM-based SBCs like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the device's performance is such that coding and debugging locally is not recommended. Additionally, the Visual Studio Code extension for C# is not compatible with 32-bit ARM operating systems. Consequently, functionality like IntelliSense and debugging in Visual Studio Code on ARM devices is only supported in 64-bit systems.
 
@@ -120,7 +120,7 @@ Notice the following:
 
 ### Deploy the app
 
-Deploy the app as described in [Deploy .NET apps to ARM Single Board Computers](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
+Deploy the app as described in [Deploy .NET apps to ARM Single-Board Computers](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
 
 ### Launch the debugger
 

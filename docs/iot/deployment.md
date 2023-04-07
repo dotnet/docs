@@ -1,6 +1,6 @@
 ---
-title: Deploy .NET apps to ARM Single Board Computers
-description: Learn how to deploy .NET apps to ARM Single Board Computers (SBCs) such as Raspberry Pi.
+title: Deploy .NET apps to ARM Single-Board Computers
+description: Learn how to deploy .NET apps to ARM Single-Board Computers (SBCs) such as Raspberry Pi.
 author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.prod: dotnet
 ---
 
-# Deploy .NET apps on ARM Single Board Computers
+# Deploy .NET apps on ARM Single-Board Computers
 
 Deployment of .NET apps to Raspberry Pi is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](../core/deploying/index.md).
 

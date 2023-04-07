@@ -27,7 +27,14 @@ This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
 - Sense HAT
 
-[!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
+## Prepare the Raspberry Pi
+
+Use the `raspi-config` command to ensure your SBC is configured to support the following services:
+
+- SSH
+- I2C
+
+For more information on `raspi-config`, refer to the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html).
 
 ## Attach the Sense HAT
 

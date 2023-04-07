@@ -62,7 +62,7 @@ Some commonly used device bindings include:
 PC platforms are supported via the use of a USB to SPI/I<sup>2</sup>C bridge.
 
 > [!IMPORTANT]
-> .NET is not supported on ARMv6 architecture devices, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.
+> .NET is not supported on devices prior to ARMv7, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.
 
 ## Resources
 

@@ -17,13 +17,15 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) analog-to-digital converter
 - Three-pin potentiometer
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 [!INCLUDE [prepare-pi-spi](../includes/prepare-pi-spi.md)]
 

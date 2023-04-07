@@ -17,11 +17,13 @@ In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect th
 
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - Jumper wires
 - Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 [!INCLUDE [ensure-ssh](../includes/ensure-ssh.md)]
 

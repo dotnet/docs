@@ -1,6 +1,6 @@
 ---
-title: Debug .NET apps on Raspberry Pi 
-description: Learn how to debug .NET apps on Raspberry Pi and similar devices.
+title: Debug .NET apps on ARM Single Board Computers
+description: Learn how to debug .NET apps on ARM Single Board Computers (SBCs) such as Raspberry Pi.
 author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
@@ -9,9 +9,9 @@ ms.prod: dotnet
 zone_pivot_groups: ide-set-one
 ---
 
-# Debug .NET apps on Raspberry Pi
+# Debug .NET apps on ARM Single Board Computers
 
-Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the device's performance is such that coding and debugging locally is not recommended. Additionally, the Visual Studio Code extension for C# is not compatible with 32-bit ARM operating systems. Consequently, functionality like IntelliSense and debugging in Visual Studio Code on ARM devices is only supported in 64-bit systems.
+Debugging .NET apps running on ARM-based SBCs like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the device's performance is such that coding and debugging locally is not recommended. Additionally, the Visual Studio Code extension for C# is not compatible with 32-bit ARM operating systems. Consequently, functionality like IntelliSense and debugging in Visual Studio Code on ARM devices is only supported in 64-bit systems.
 
 For these reasons, it's strongly recommended that you develop your app on a development computer and then deploy the app to the device for remote debugging. If you wish to develop and debug locally on the device, the following is required:
 
@@ -32,16 +32,16 @@ The rest of this article describes how to debug .NET apps on Raspberry Pi and si
 
 Debugging .NET on Raspberry Pi from Visual Studio Code requires configuration steps on the Raspberry Pi and in the project's *launch.json* file.
 
-### Enable SSH on the Raspberry Pi
+### Enable SSH on the SBC
 
-SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/remote-access.html#setting-up-an-ssh-server). Ensure that you have configured [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access).
+SSH is required for remote debugging. To enable SSH on Raspberry Pi, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/remote-access.html#setting-up-an-ssh-server). Ensure that you have configured [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access).
 
 > [!IMPORTANT]
 > This example requires you to configure [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access) on your Raspberry Pi, as OpenSSH doesn't support passing passwords on the command line. If you need to use a password, consider substituting the *plink* tool included with [PuTTY](https://www.putty.org/) for *ssh*.
 
-### Install the Visual Studio Remote Debugger on the Raspberry Pi
+### Install the Visual Studio Remote Debugger on the SBCS
 
-Within a Bash console on the Raspberry Pi (either in a local session or via SSH), run the following command. This command downloads and installs the Visual Studio Remote Debugger on the Raspberry Pi:
+Within a Bash console on the SBC (either in a local session or via SSH), run the following command. This command downloads and installs the Visual Studio Remote Debugger on the device:
 
 ```bash
 curl -sSL https://aka.ms/getvsdbgsh | /bin/sh /dev/stdin -v latest -l ~/vsdbg
@@ -120,7 +120,7 @@ Notice the following:
 
 ### Deploy the app
 
-Deploy the app as described in [Deploy .NET apps to Raspberry Pi](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
+Deploy the app as described in [Deploy .NET apps to ARM Single Board Computers](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
 
 ### Launch the debugger
 

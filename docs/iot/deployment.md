@@ -1,6 +1,6 @@
 ---
-title: Deploy .NET apps to ARM Single-Board Computers
-description: Learn how to deploy .NET apps to ARM Single-Board Computers (SBCs) such as Raspberry Pi.
+title: Deploy .NET apps to ARM single-board computers
+description: Learn how to deploy .NET apps to ARM single-board computers (SBCs) such as Raspberry Pi.
 author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
@@ -8,9 +8,9 @@ ms.topic: how-to
 ms.prod: dotnet
 ---
 
-# Deploy .NET apps on ARM Single-Board Computers
+# Deploy .NET apps on ARM single-board computers
 
-Deployment of .NET apps to Raspberry Pi is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](../core/deploying/index.md).
+Deployment of .NET apps to single-board computers is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](../core/deploying/index.md).
 
 ## Deploying a framework-dependent app
 
@@ -20,7 +20,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
 1. [!INCLUDE [ensure-ssh](includes/ensure-ssh.md)]
 
-1. Install .NET on the Raspberry Pi using the [dotnet-install scripts](../core/tools/dotnet-install-script.md). Complete the following steps from a Bash prompt on the Raspberry Pi (local or SSH):
+1. Install .NET on the device using the [dotnet-install scripts](../core/tools/dotnet-install-script.md). Complete the following steps from a Bash prompt on the device (local or SSH):
     1. Run the following command to install .NET:
 
         ```bash
@@ -79,7 +79,7 @@ To deploy your app as a self-contained app, complete the following steps:
 
 1. [!INCLUDE [sftp-client](includes/sftp-client.md)]
 
-1. From a Bash prompt on the Raspberry Pi (local or SSH), run the app. To do this, set the current directory to the deployment location and complete the following steps:
+1. From a Bash prompt on the device (local or SSH), run the app. To do this, set the current directory to the deployment location and complete the following steps:
     1. Give the executable *execute* permission (where `HelloWorld` is the executable file name).
 
         ```bash

@@ -1,6 +1,6 @@
 ---
-title: Debug .NET apps on ARM Single-Board Computers
-description: Learn how to debug .NET apps on ARM Single-Board Computers (SBCs) such as Raspberry Pi.
+title: Debug .NET apps on ARM single-board computers
+description: Learn how to debug .NET apps on ARM single-board computers (SBCs) such as Raspberry Pi.
 author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
@@ -9,7 +9,7 @@ ms.prod: dotnet
 zone_pivot_groups: ide-set-one
 ---
 
-# Debug .NET apps on ARM Single-Board Computers
+# Debug .NET apps on ARM single-board computers
 
 Debugging .NET apps running on ARM-based SBCs like Raspberry Pi presents a unique challenge. If desired, you can install Visual Studio Code and the .NET SDK on the device and develop locally. However, the device's performance is such that coding and debugging locally is not recommended. Additionally, the Visual Studio Code extension for C# is not compatible with 32-bit ARM operating systems. Consequently, functionality like IntelliSense and debugging in Visual Studio Code on ARM devices is only supported in 64-bit systems.
 
@@ -39,7 +39,7 @@ SSH is required for remote debugging. To enable SSH on Raspberry Pi, [refer to *
 > [!IMPORTANT]
 > This example requires you to configure [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access) on your Raspberry Pi, as OpenSSH doesn't support passing passwords on the command line. If you need to use a password, consider substituting the *plink* tool included with [PuTTY](https://www.putty.org/) for *ssh*.
 
-### Install the Visual Studio Remote Debugger on the SBCS
+### Install the Visual Studio Remote Debugger on the SBC
 
 Within a Bash console on the SBC (either in a local session or via SSH), run the following command. This command downloads and installs the Visual Studio Remote Debugger on the device:
 
@@ -80,7 +80,7 @@ The new configuration in *launch.json* should look similar to one of the followi
 Notice the following:
 
 - `program` is the executable file created by `dotnet publish`.
-- `cwd` is the working directory to use when launching the app on the Pi.
+- `cwd` is the working directory to use when launching the app on the device.
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `pi` user in the format `<user>@<hostname>`.
 
@@ -112,7 +112,7 @@ Notice the following:
 
 - `program` is the path to the .NET runtime on the Pi.
 - `args` is the path to the assembly to debug on the Pi.
-- `cwd` is the working directory to use when launching the app on the Pi.
+- `cwd` is the working directory to use when launching the app on the device.
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `pi` user in the format `<user>@<hostname>`.
 
@@ -120,11 +120,11 @@ Notice the following:
 
 ### Deploy the app
 
-Deploy the app as described in [Deploy .NET apps to ARM Single-Board Computers](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
+Deploy the app as described in [Deploy .NET apps to ARM single-board computers](deployment.md). Ensure the deployment path is the same path specified in the `cwd` parameter in the *launch.json* configuration.
 
 ### Launch the debugger
 
-In Visual Studio Code, on the **Run and Debug** tab, select the configuration you added to *launch.json* and select **Start Debugging**. The app launches on the Raspberry Pi. The debugger may be used to set breakpoints, inspect locals, and more.
+In Visual Studio Code, on the **Run and Debug** tab, select the configuration you added to *launch.json* and select **Start Debugging**. The app launches on the device. The debugger may be used to set breakpoints, inspect locals, and more.
 
 ::: zone-end
 

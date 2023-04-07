@@ -96,7 +96,7 @@ When operators have the same precedence, associativity of the operators determin
 - *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operators, lambdas, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
 > [!IMPORTANT]
-> In an expression of the form `P?.A0?.A1`, if `P` is `null`, neither `A0` nor `A1` are evaluated. Similarly, in an expression of the form `P?.A0.A1`, because `A0` isn't evaluated when `P` is null, neither is `A0.A1`. See the [C# language specification](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access) for more details.
+> In an expression of the form `P?.A0?.A1`, if `P` is `null`, neither `A0` nor `A1` are evaluated. Similarly, in an expression of the form `P?.A0.A1`, because `A0` isn't evaluated when `P` is null, neither is `A0.A1`. See the [C# language specification](~/_csharpstandard/standard/expressions.md#1188-null-conditional-member-access) for more details.
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 

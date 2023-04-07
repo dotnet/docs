@@ -55,7 +55,7 @@ Constant expressions are evaluated by default in a checked context and a compile
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [The checked and unchecked statements](~/_csharpstandard/standard/statements.md#1212-the-checked-and-unchecked-statements)
-- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#11718-the-checked-and-unchecked-operators)
+- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#11819-the-checked-and-unchecked-operators)
 - [User defined checked and unchecked operators - C# 11](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md)
 
 ## See also

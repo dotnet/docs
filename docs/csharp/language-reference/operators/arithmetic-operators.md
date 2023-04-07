@@ -138,7 +138,7 @@ For the `float` and `double` operands, the result of `x % y` for the finite `x` 
 > [!NOTE]
 > This method of computing the remainder is analogous to that used for integer operands, but different from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.
 
-For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#1194-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharpstandard/standard/expressions.md#11104-remainder-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For the `decimal` operands, the remainder operator `%` is equivalent to the [remainder operator](<xref:System.Decimal.op_Modulus(System.Decimal,System.Decimal)>) of the <xref:System.Decimal?displayProperty=nameWithType> type.
 
@@ -272,17 +272,17 @@ You can use the `checked` modifier only when you overload any of the following o
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#11714-postfix-increment-and-decrement-operators)
-- [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1186-prefix-increment-and-decrement-operators)
-- [Unary plus operator](~/_csharpstandard/standard/expressions.md#1182-unary-plus-operator)
+- [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#11815-postfix-increment-and-decrement-operators)
+- [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1196-prefix-increment-and-decrement-operators)
+- [Unary plus operator](~/_csharpstandard/standard/expressions.md#1192-unary-plus-operator)
 - [Unary minus operator](~/_csharpstandard/standard/expressions.md#1183-unary-minus-operator)
-- [Multiplication operator](~/_csharpstandard/standard/expressions.md#1192-multiplication-operator)
-- [Division operator](~/_csharpstandard/standard/expressions.md#1193-division-operator)
-- [Remainder operator](~/_csharpstandard/standard/expressions.md#1194-remainder-operator)
-- [Addition operator](~/_csharpstandard/standard/expressions.md#1195-addition-operator)
-- [Subtraction operator](~/_csharpstandard/standard/expressions.md#1196-subtraction-operator)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#11193-compound-assignment)
-- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#11718-the-checked-and-unchecked-operators)
+- [Multiplication operator](~/_csharpstandard/standard/expressions.md#11102-multiplication-operator)
+- [Division operator](~/_csharpstandard/standard/expressions.md#11103-division-operator)
+- [Remainder operator](~/_csharpstandard/standard/expressions.md#11104-remainder-operator)
+- [Addition operator](~/_csharpstandard/standard/expressions.md#11105-addition-operator)
+- [Subtraction operator](~/_csharpstandard/standard/expressions.md#11106-subtraction-operator)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#11213-compound-assignment)
+- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#11819-the-checked-and-unchecked-operators)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1147-numeric-promotions)
 
 ## See also

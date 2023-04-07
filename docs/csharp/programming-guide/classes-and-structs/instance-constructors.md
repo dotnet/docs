@@ -37,13 +37,13 @@ A *structure* type always provides a parameterless constructor as follows:
 
 Beginning in C# 12, you can declare a *primary constructor* in classes and structs. You place any parameters in parentheses following the type name:
 
-:::code language="csharp" source="./snippets/widgets/Program.cs" id="BasePrimaryConstructor":::
+:::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="BasePrimaryConstructor":::
 
 The parameters to a primary constructor are in scope in the entire body of the declaring type. They can initialize properties or fields. They can be used as variables in methods or local functions. They can be passed to a base constructor.
 
 A primary constructor indicates that these parameters are necessary for any instance of a type. Any explicitly written constructor must use the `this(...)` initializer syntax to invoke the primary constructor. That ensures that the primary constructor parameters are definitely assigned by all constructors. For any `class` type, including `record class` types, the implicit parameterless constructor isn't emitted when a primary constructor is present. For any `struct` type, including `record struct` types, the implicit parameterless constructor is always emitted, and always initializes all fields, including primary constructor parameters, to the 0-bit pattern. If you write an explicit parameterless constructor, it must invoke the primary constructor. In that case, you can specify a different value for the primary constructor parameters. The following code shows examples of primary constructors.
 
-:::code language="csharp" source="./snippets/widgets/Program.cs" id="DerivedPrimaryConstructor":::
+:::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="DerivedPrimaryConstructor":::
 
 For non-`record` types, if a primary constructor is read or written in the body of the type, the compiler captures the parameter in a private field. This private field has a compiler generate name that is different from the primary constructor parameter. That ensures the private field name doesn't conflict with other variable names. It's also harder to find using Reflection. If a primary constructor parameter isn't used in the body of the type, no private field is captured. This prevents accidentally allocating two copies of a primary constructor parameter that is passed to a base constructor.
 

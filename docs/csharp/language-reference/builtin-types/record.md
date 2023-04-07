@@ -78,7 +78,7 @@ A record type doesn't have to declare any positional properties. You can declare
 
 If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `private`.
 
-Beginning with C# 12, you can declare primary constructors in classes and structs, as well as records. The only difference is that positional parameters in records generate properties. Positional parameters in classes and structs don't. You can learn more in the article on [constructors](../../programming-guide/classes-and-structs/constructors.md).
+Beginning with C# 12, you can declare primary constructors in classes and structs, as well as records. The only difference is that positional parameters in records generate properties. Positional parameters in classes and structs don't. You can learn more in the article on [constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
 ## Immutability
 

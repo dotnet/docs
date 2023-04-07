@@ -52,7 +52,6 @@ For more information and examples, see [Static Constructors](./static-constructo
 
 - [Using constructors](./using-constructors.md)
 - [Instance constructors](./instance-constructors.md)
-- [Primary constructors](./primary-constructors.md)
 - [Private constructors](./private-constructors.md)
 - [Static constructors](./static-constructors.md)
 - [How to write a copy constructor](./how-to-write-a-copy-constructor.md)

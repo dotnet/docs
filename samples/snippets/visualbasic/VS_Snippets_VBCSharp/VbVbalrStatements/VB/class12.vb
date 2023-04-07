@@ -19,22 +19,7 @@ Imports strbld = System.Text.StringBuilder
 Imports dirinf = System.IO.DirectoryInfo
 '</Snippet157>
 
-
 Public Class Class12
-    Public Sub Process()
-        Dim tc1 As New testClass1
-        MessageBox.Show(tc1.GetFolders())
-
-        Dim tc2 As New testClass2
-        MessageBox.Show(tc2.GetFolders())
-
-        Dim tc3 As New testClass3
-        MessageBox.Show(tc3.GetFolders())
-
-        Dim tc4 As New testClass4
-        MessageBox.Show(tc4.GetFolders())
-
-    End Sub
 
     Class testClass1
         '<Snippet152>

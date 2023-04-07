@@ -304,7 +304,7 @@
 | Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
-| Azure.FX | NuGet [0.0.20-alpha](https://www.nuget.org/packages/Azure.FX/0.0.20-alpha) |  |  |
+| Azure.FX | NuGet [0.0.21-alpha](https://www.nuget.org/packages/Azure.FX/0.0.21-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.2.0](https://www.nuget.org/packages/Azure.FX.Templates/1.2.0) |  |  |
 | Batch | NuGet [15.4.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/15.4.0) |  | GitHub [15.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_15.4.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
@@ -503,7 +503,7 @@
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Authentication Events | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.3) |  |  |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.0.143-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.143-preview) |  |  |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.0) |  |  |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.2) |  |  |
 | Functions extension for Storage Timers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |

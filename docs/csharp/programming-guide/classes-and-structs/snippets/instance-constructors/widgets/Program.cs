@@ -7,7 +7,7 @@ public class NamedItem(string name)
 {
     public string Name => name;
 }
-// <BasePrimaryConstructor>
+// </BasePrimaryConstructor>
 
 // <DerivedPrimaryConstructor>
 // name isn't captured in Widget.

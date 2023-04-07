@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: Duplex contract captures synchronization context"
-description: Learn about the breaking change in WCF Client 6.0 where the duplex contract now captures synchronization context when it's opened.
+title: "Breaking change: DuplexChannelFactory captures synchronization context"
+description: Learn about the breaking change in WCF Client 6.0 where the DuplexChannelFactory now captures the synchronization context when it's opened.
 ms.date: 04/06/2023
 ---
 # Duplex contract captures synchronization context
 
-The duplex contract now captures the synchronization context when it's opened and dispatches callbacks to the captured context.
+<xref:System.ServiceModel.DuplexChannelFactory%601> now captures the synchronization context when it's opened, and it dispatches callbacks to the captured context.
 
 ## Previous behavior
 
@@ -25,11 +25,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was made to [fix a bug](https://github.com/dotnet/wcf/issues/4946) where the client hung when making an asynchronous call followed by a synchronous call. The new behavior matches .NET Framework functionality.
+This change was made to fix a bug where callbacks were happening on the wrong thread. The new behavior matches .NET Framework functionality.
 
 ## Recommended action
 
-If the new behavior is undesirable, you can revert to version 4.x behavior by applying the <xref:System.ServiceModel.CallbackBehaviorAttribute> to your contract with the <xref:System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext> property set to `false`.
+If the new behavior is undesirable, you can revert to version 4.x behavior by applying the <xref:System.ServiceModel.CallbackBehaviorAttribute> to your callback contract with the <xref:System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext> property set to `false`.
 
 ## Affected APIs
 

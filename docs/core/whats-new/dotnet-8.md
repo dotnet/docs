@@ -53,7 +53,7 @@ For more information, see the [Simplified output paths](https://github.com/dotne
 
 ### 'dotnet workload clean' command
 
-.NET 8 Preview 3 introduces a new command to clean up workload packs that might be left over over the course of several .NET SDK or Visual Studio updates. If you encounter issues when managing workloads, consider using `workload clean` to safely restore to a known state before trying again. The command has two modes:
+.NET 8 Preview 3 introduces a new command to clean up workload packs that might be left over through several .NET SDK or Visual Studio updates. If you encounter issues when managing workloads, consider using `workload clean` to safely restore to a known state before trying again. The command has two modes:
 
 - `dotnet workload clean`
 
@@ -230,7 +230,7 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 .NET 8 Preview 3 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions%601.Validate(System.String,%600)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
 
-The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>:
+The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
 
 ```csharp
 ValidateOptionsResultBuilder builder = new();
@@ -247,9 +247,9 @@ builder.Clear();
 
 ## Source generator for configuration binding
 
-[ASP.NET Core uses configuration providers](/aspnet/core/fundamentals/configuration/) to perform app configuration. The providers read key-value pair data from different sources, such as settings files, environment variables, and Azure Key Vault. <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> is the type that maps configuration values to strongly typed objects. Previously, the mapping was performed using reflection, which can cause issues for trimming and Native AOT. Starting in .NET 8, you can opt into the use of a source generator to generate the binding implementations. The generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure(%600)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A> calls that to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
+[ASP.NET Core uses configuration providers](/aspnet/core/fundamentals/configuration/) to perform app configuration. The providers read key-value pair data from different sources, such as settings files, environment variables, and Azure Key Vault. <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> is the type that maps configuration values to strongly typed objects. Previously, the mapping was performed using reflection, which can cause issues for trimming and Native AOT. Starting in .NET 8, you can opt into the use of a source generator to generate the binding implementations. The generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure(%600)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A> calls to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
 
-To opt into the source generator, set the `EnableMicrosoftExtensionsConfigurationBinderSourceGenerator` to `true` in your project file:
+To opt into the source generator, set the `EnableMicrosoftExtensionsConfigurationBinderSourceGenerator` property to `true` in your project file:
 
 ```xml
 <PropertyGroup>

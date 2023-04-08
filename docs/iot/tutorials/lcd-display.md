@@ -19,12 +19,14 @@ In this topic, you will use .NET to display text on an LCD character display usi
 
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - [20x4 LCD Character Display with I<sup>2</sup>C interface](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)
 - Jumper wires
 - Breadboard (optional/recommended)
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 > [!NOTE]
 > There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).

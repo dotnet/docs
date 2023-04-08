@@ -15,13 +15,15 @@ General-purpose I/O (GPIO) pins can be controlled individually. This is useful f
 
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - 5 mm LED
 - 330 Ω resistor
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 [!INCLUDE [ensure-ssh](../includes/ensure-ssh.md)]
 

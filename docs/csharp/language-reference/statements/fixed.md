@@ -52,8 +52,6 @@ For more information, see the following sections of the [C# language specificati
 - [The fixed statement](~/_csharpstandard/standard/unsafe-code.md#227-the-fixed-statement)
 - [Fixed and moveable variables](~/_csharpstandard/standard/unsafe-code.md#224-fixed-and-moveable-variables)
 
-For information about the pattern-based `fixed` statement, see the [Pattern-based `fixed` statement](~/_csharplang/proposals/csharp-7.3/pattern-based-fixed.md) feature proposal note.
-
 ## See also
 
 - [C# reference](../index.md)

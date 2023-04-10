@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 07/23/2022
+ms.date: 04/05/2023
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -77,7 +77,8 @@ A record type doesn't have to declare any positional properties. You can declare
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MixedSyntax":::
 
 If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `private`.
-<!-- Todo -- Explain issues surrounding use of attributes on positional properties. -->
+
+Beginning with C# 12, you can declare primary constructors in classes and structs, as well as records. The only difference is that positional parameters in records generate properties. Positional parameters in classes and structs don't. You can learn more in the article on [constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
 ## Immutability
 

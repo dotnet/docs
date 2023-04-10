@@ -15,7 +15,7 @@ on:
         default: "Manual run"
 
 env:
-  DOTNET_INSTALLER_CHANNEL: "7.0"
+  DOTNET_INSTALLER_CHANNEL: "8.0"
   DOTNET_DO_INSTALL: "true" # True to install preview versions, False to use the pre-installed (released) SDK
   EnableNuGetPackageRestore: "True"
   repo: "docs"

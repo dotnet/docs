@@ -52,7 +52,14 @@ namespace lambda_expressions
             // </SnippetDefaultParameters>
 
             // <SnippetParamsArray>
-            var sum = (params int[] values) => { int sum = 0; foreach (var value in values) sum += value; return sum; };
+            var sum = (params int[] values) =>
+            {
+                int sum = 0;
+                foreach (var value in values) 
+                    sum += value;
+                
+                return sum;
+            };
 
             var empty = sum();
             Console.WriteLine(empty); // 0

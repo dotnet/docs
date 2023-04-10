@@ -158,6 +158,8 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
+Beginning with C# 12, you can create aliases for types that were previously restricted, including tuple types, pointer types, and other unsafe types. For more information on the udpated rules, see the [feature spec](~/_csharplang/proposals/using-alias-types.md).
+
 ## How to use the Visual Basic `My` namespace
 
 The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) provides easy and intuitive access to a number of .NET classes, enabling you to write code that interacts with the computer, application, settings, resources, and so on. Although originally designed for use with Visual Basic, the `MyServices` namespace can be used in C# applications.

@@ -148,6 +148,9 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
+  - name: C# 12
+    displayName: what's New
+    href: whats-new/csharp-12.md
   - name: C# 11
     items:
     - name: New features
@@ -679,13 +682,13 @@ items:
       items:
       - name: Constructors overview
         href: programming-guide/classes-and-structs/constructors.md
-      - name: Using Constructors
+      - name: Using constructors
         href: programming-guide/classes-and-structs/using-constructors.md
-      - name: Instance Constructors
+      - name: Instance constructors
         href: programming-guide/classes-and-structs/instance-constructors.md
-      - name: Private Constructors
+      - name: Private constructors
         href: programming-guide/classes-and-structs/private-constructors.md
-      - name: Static Constructors
+      - name: Static constructors
         href: programming-guide/classes-and-structs/static-constructors.md
       - name: "How to write a copy constructor"
         href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
@@ -1294,7 +1297,7 @@ items:
       href: ../../_csharpstandard/standard/documentation-comments.md
     - name: Bibliography
       href: ../../_csharpstandard/standard/bibliography.md
-  - name: C# 7.0 - 11.0 features
+  - name: C# 7.0 - 12 features
     items:
     - name: C# 7.0 features
       items:
@@ -1440,3 +1443,11 @@ items:
         href: ../../_csharplang/proposals/csharp-11.0/file-local-types.md
       - name: Generic attributes
         href: ../../_csharplang/proposals/csharp-11.0/generic-attributes.md
+    - name: C# Preview features
+      items:
+      - name: Primary constructors
+        href: ../../_csharplang/proposals/primary-constructors.md
+      - name: Alias any type
+        href: ../../_csharplang/proposals/using-alias-types.md
+      - name: Optional Lambda expression parameters
+        href: ../../_csharplang/proposals/lambda-method-group-defaults.md

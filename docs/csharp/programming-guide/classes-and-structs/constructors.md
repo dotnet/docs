@@ -1,7 +1,7 @@
 ---
 title: "Constructors - C# programming guide"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
-ms.date: 01/30/2023
+ms.date: 04/06/2023
 helpviewer_keywords: 
   - "constructors [C#]"
   - "classes [C#], constructors"
@@ -28,11 +28,11 @@ If the [static constructor](static-constructors.md) hasn't run, the static const
 
 A constructor is a method whose name is the same as the name of its type. Its method signature includes only an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.
 
-[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#1)]  
+[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#1)]
 
 If a constructor can be implemented as a single statement, you can use an [expression body definition](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `locationName` field.
 
-[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
+[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
 
 ## Static constructors
 
@@ -40,26 +40,22 @@ The previous examples have all shown instance constructors, which create a new o
 
 The following example uses a static constructor to initialize a static field.
 
-[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#2)]  
+[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#2)]
 
 You can also define a static constructor with an expression body definition, as the following example shows.
 
-[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#3)]  
+[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#3)]
 
-For more information and examples, see [Static Constructors](./static-constructors.md).  
-  
-## In This Section  
+For more information and examples, see [Static Constructors](./static-constructors.md).
 
- [Using Constructors](./using-constructors.md)  
-  
- [Instance Constructors](./instance-constructors.md)  
-  
- [Private Constructors](./private-constructors.md)  
-  
- [Static Constructors](./static-constructors.md)  
-  
- [How to write a copy constructor](./how-to-write-a-copy-constructor.md)  
-  
+## In This Section
+
+- [Using constructors](./using-constructors.md)
+- [Instance constructors](./instance-constructors.md)
+- [Private constructors](./private-constructors.md)
+- [Static constructors](./static-constructors.md)
+- [How to write a copy constructor](./how-to-write-a-copy-constructor.md)
+
 ## See also
 
 - [C# Programming Guide](../index.md)

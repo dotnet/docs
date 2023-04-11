@@ -27,6 +27,8 @@ Across machines, use a network-based solution as an alternative. Preferably, use
 
 For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
 
+Async delegates are not supported on .NET 6+. This is because they depend on remoting. This means that calls to `BeginInvoke` and `EndInvoke` on delegates will throw a `PlatformNotSupportedException`. For more information, see [Migrating Delegate BeginInvoke Calls For .NET Core](https://devblogs.microsoft.com/dotnet/migrating-delegate-begininvoke-calls-for-net-core/).
+
 ## Code access security (CAS)
 
 Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](/previous-versions/dotnet/framework/code-access-security/code-access-security) and therefore is also not supported on .NET 6+. CAS is no longer treated as a security boundary, because there are too many cases in .NET Framework and the runtime where an elevation of privileges occurs. Also, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.

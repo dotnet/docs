@@ -138,9 +138,9 @@ Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement tha
 
 1. Save and build the solution.
 
-2. Select the **GettingStartedLib** folder, and then select **Set as Startup Project** from the shortcut menu.
+2. Select the **GettingStartedClient** folder, and then select **Set as Startup Project** from the shortcut menu.
 
-3. From **Startup Projects**, select **GettingStartedLib** from the drop-down list, then select **Run** or press <kbd>F5</kbd>.
+3. From **Startup Projects**, select **GettingStartedClient** from the drop-down list, then select **Run** or press <kbd>F5</kbd>.
 
 ### Test the application from a command prompt
 

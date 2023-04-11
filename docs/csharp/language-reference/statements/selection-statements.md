@@ -80,8 +80,8 @@ The preceding example uses [positional patterns](../operators/patterns.md#positi
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `if` statement](~/_csharpstandard/standard/statements.md#1282-the-if-statement)
-- [The `switch` statement](~/_csharpstandard/standard/statements.md#1283-the-switch-statement)
+- [The `if` statement](~/_csharpstandard/standard/statements.md#1382-the-if-statement)
+- [The `switch` statement](~/_csharpstandard/standard/statements.md#1383-the-switch-statement)
 
 For more information about pattern matching `switch` statement, see the following feature proposal notes:
 

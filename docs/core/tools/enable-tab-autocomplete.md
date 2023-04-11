@@ -110,8 +110,8 @@ complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 ## nushell
 
 To add tab completion to your **nushell** for .NET CLI, add the following to your `config.nu` file:
-```nu
 
+```nu
 # completion for the .NET CLI
 
 def "nu-cmp dotnet" [context: string] {

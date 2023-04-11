@@ -27,7 +27,7 @@ Across machines, use a network-based solution as an alternative. Preferably, use
 
 For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
 
-Async delegates are not supported on .NET 6+. This is because they depend on remoting. This means that calls to `BeginInvoke` and `EndInvoke` on delegates will throw a `PlatformNotSupportedException`. For more information, see [Migrating Delegate BeginInvoke Calls For .NET Core](https://devblogs.microsoft.com/dotnet/migrating-delegate-begininvoke-calls-for-net-core/).
+Because remoting is not supported, calls to `BeginInvoke()` and `EndInvoke()` on delegate objects will throw `PlatformNotSupportedException`. For more information, see [Migrating Delegate BeginInvoke Calls For .NET Core](https://devblogs.microsoft.com/dotnet/migrating-delegate-begininvoke-calls-for-net-core/).
 
 ## Code access security (CAS)
 

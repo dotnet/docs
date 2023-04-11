@@ -78,7 +78,7 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
   Remoting is used for communicating across application domains, which are no longer supported. For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, consider frameworks such as [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) or [ASP.NET Core](/aspnet/core) (either using [gRPC](/aspnet/core/grpc) or [RESTful Web API services](/aspnet/core/web-api)).
 
-  Async delegates are not supported. This means that calls to `BeginInvoke()` and `EndInvoke()` on delegate objects will throw an exception.
+  Because remoting is not supported, calls to `BeginInvoke()` and `EndInvoke()` on delegate objects will throw `PlatformNotSupportedException`.
 
 - [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
 

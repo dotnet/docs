@@ -49,8 +49,8 @@ You can also use the `fixed` keyword to declare a [fixed-size buffer](../unsafe-
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The fixed statement](~/_csharpstandard/standard/unsafe-code.md#227-the-fixed-statement)
-- [Fixed and moveable variables](~/_csharpstandard/standard/unsafe-code.md#224-fixed-and-moveable-variables)
+- [The fixed statement](~/_csharpstandard/standard/unsafe-code.md#237-the-fixed-statement)
+- [Fixed and moveable variables](~/_csharpstandard/standard/unsafe-code.md#234-fixed-and-moveable-variables)
 
 ## See also
 

@@ -37,7 +37,7 @@ This example defines a base class named `Employee`, and a derived class named `S
 
 ## C# language specification
 
-For more information, see the [Override methods](~/_csharpstandard/standard/classes.md#1465-override-methods) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Override methods](~/_csharpstandard/standard/classes.md#1565-override-methods) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about covariant return types, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/covariant-returns.md).
 

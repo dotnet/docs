@@ -106,3 +106,18 @@ To add tab completion to your **fish** shell for the .NET CLI, add the following
 ```fish
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 ```
+
+## nushell
+
+To add tab completion to your **nushell** for .NET CLI, add the following to your `config.nu` file:
+```nu
+# completion for the .NET CLI
+
+def "nu-cmp dotnet" [context: string] {
+    ^dotnet complete ($context | split words | skip 1 | str join " ") | lines
+}
+
+export extern "dotnet" [ 
+    ...args: any@"nu-cmp dotnet"
+]
+```

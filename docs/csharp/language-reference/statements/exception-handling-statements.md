@@ -125,8 +125,8 @@ When an exception is handled by a `catch` block, the `finally` block is executed
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The `throw` statement](~/_csharpstandard/standard/statements.md#12106-the-throw-statement)
-- [The `try` statement](~/_csharpstandard/standard/statements.md#1211-the-try-statement)
+- [The `throw` statement](~/_csharpstandard/standard/statements.md#13106-the-throw-statement)
+- [The `try` statement](~/_csharpstandard/standard/statements.md#1311-the-try-statement)
 
 ## See also
 

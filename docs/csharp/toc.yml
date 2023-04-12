@@ -929,16 +929,6 @@ items:
       items:
       - name: Statement categories
         href: language-reference/keywords/statement-keywords.md
-      - name: Exception Handling Statements
-        items:
-        - name: throw
-          href: language-reference/keywords/throw.md
-        - name: try-catch
-          href: language-reference/keywords/try-catch.md
-        - name: try-finally
-          href: language-reference/keywords/try-finally.md
-        - name: try-catch-finally
-          href: language-reference/keywords/try-catch-finally.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1134,6 +1124,9 @@ items:
     - name: Declaration statements
       displayName: var, ref
       href: language-reference/statements/declarations.md
+    - name: Exception-handling statements
+      displayName: throw, try, catch, finally, when, error, fault, try-catch, try-finally, try-catch-finally
+      href: language-reference/statements/exception-handling-statements.md
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md

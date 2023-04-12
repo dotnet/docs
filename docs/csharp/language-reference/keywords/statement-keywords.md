@@ -16,7 +16,7 @@ Statements are program instructions. Except as described in the topics reference
 |[Selection statements](../statements/selection-statements.md)|`if`, `switch`|
 |[Iteration statements](../statements/iteration-statements.md)|`do`, `for`, `foreach`, `while`|
 |[Jump statements](../statements/jump-statements.md)|`break`, `continue`, `goto`, `return`|
-|Exception handling statements|[throw](throw.md), [try-catch](try-catch.md), [try-finally](try-finally.md), [try-catch-finally](try-catch-finally.md)|
+|[Exception-handling statements](../statements/exception-handling-statements.md)|`throw`, `try-catch`, `try-finally`, `try-catch-finally`|
 |[checked and unchecked statements](../statements/checked-and-unchecked.md)|`checked`, `unchecked`|
 |[fixed statement](../statements/fixed.md)|`fixed`|
 |[lock statement](../statements/lock.md)|`lock`|

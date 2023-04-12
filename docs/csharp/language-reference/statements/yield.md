@@ -49,7 +49,7 @@ As the preceding example shows, when you start to iterate over an iterator's res
 
 ## C# language specification
 
-For more information, see [The yield statement](~/_csharpstandard/standard/statements.md#1215-the-yield-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see [The yield statement](~/_csharpstandard/standard/statements.md#1315-the-yield-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

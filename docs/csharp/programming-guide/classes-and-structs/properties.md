@@ -74,7 +74,7 @@ To create a `SaleItem`, you must set both the `Name` and `Price` properties usin
 
 ## C# Language Specification
 
-For more information, see [Properties](~/_csharpstandard/standard/classes.md#147-properties) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Properties](~/_csharpstandard/standard/classes.md#157-properties) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

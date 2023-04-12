@@ -22,7 +22,7 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
 
 ## C# language specification
 
-For more information, see [The try statement](~/_csharpstandard/standard/statements.md#1211-the-try-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see [The try statement](~/_csharpstandard/standard/statements.md#1311-the-try-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

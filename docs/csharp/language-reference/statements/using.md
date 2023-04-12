@@ -55,7 +55,7 @@ where `expression` produces a disposable instance. The following example demonst
 
 ## C# language specification
 
-For more information, see [The using statement](~/_csharpstandard/standard/statements.md#1214-the-using-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the proposal note about ["pattern-based using" and "using declarations"](~/_csharplang/proposals/csharp-8.0/using.md).
+For more information, see [The using statement](~/_csharpstandard/standard/statements.md#1314-the-using-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the proposal note about ["pattern-based using" and "using declarations"](~/_csharplang/proposals/csharp-8.0/using.md).
 
 ## See also
 

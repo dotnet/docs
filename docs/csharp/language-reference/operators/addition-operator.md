@@ -72,7 +72,7 @@ A user-defined type can [overload](operator-overloading.md) the `+` operator. Wh
 
 ## C# language specification
 
-For more information, see the [Unary plus operator](~/_csharpstandard/standard/expressions.md#1192-unary-plus-operator) and [Addition operator](~/_csharpstandard/standard/expressions.md#11105-addition-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Unary plus operator](~/_csharpstandard/standard/expressions.md#1292-unary-plus-operator) and [Addition operator](~/_csharpstandard/standard/expressions.md#12105-addition-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

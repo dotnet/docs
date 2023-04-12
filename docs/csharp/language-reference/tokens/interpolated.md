@@ -109,7 +109,7 @@ Beginning with C# 10, when an interpolated string is used, the compiler checks i
 
 ## C# language specification
 
-For more information, see the [Interpolated strings](~/_csharpstandard/standard/expressions.md#1183-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md), the [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md) feature specification and the [C# 11 - Newlines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md) feature specification.
+For more information, see the [Interpolated strings](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md), the [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md) feature specification and the [C# 11 - Newlines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md) feature specification.
 
 ## See also
 

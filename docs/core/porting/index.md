@@ -1,6 +1,6 @@
 ---
 title: Port from .NET Framework to .NET 7
-description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 6.
+description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 7.
 author: adegeo
 ms.date: 02/28/2023
 ms.custom: devdivchpfy22

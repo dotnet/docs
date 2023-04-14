@@ -119,7 +119,7 @@ You use a `try-catch-finally` statement both to handle exceptions that might occ
 
 :::code language="csharp" source="snippets/exception-handling-statements/ExampleClass.cs" id="TryCatchFinally":::
 
-When an exception is handled by a `catch` block, the `finally` block is executed after execution of that `catch` block. For information about `catch` and `finally` blocks, see [The `try-catch` statement](#the-try-catch-statement) and [The `try-finally` statement](#the-try-finally-statement) sections, respectively.
+When an exception is handled by a `catch` block, the `finally` block is executed after execution of that `catch` block (even if an exception occurs during execution of the `catch` block). For information about `catch` and `finally` blocks, see [The `try-catch` statement](#the-try-catch-statement) and [The `try-finally` statement](#the-try-finally-statement) sections, respectively.
 
 ## C# language specification
 
@@ -127,6 +127,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [The `throw` statement](~/_csharpstandard/standard/statements.md#13106-the-throw-statement)
 - [The `try` statement](~/_csharpstandard/standard/statements.md#1311-the-try-statement)
+- [Exceptions](~/_csharpstandard/standard/exceptions.md)
 
 ## See also
 

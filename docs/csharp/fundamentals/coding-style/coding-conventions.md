@@ -336,9 +336,9 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet16":::
 
-- Simplify your code by using the C# [using statement](../../language-reference/statements/using.md). If you have a [try-finally](../../language-reference/keywords/try-finally.md) statement in which the only code in the `finally` block is a call to the <xref:System.IDisposable.Dispose%2A> method, use a `using` statement instead.
+- Simplify your code by using the C# [using statement](../../language-reference/statements/using.md). If you have a [try-finally](../../language-reference/statements/exception-handling-statements.md#the-try-finally-statement) statement in which the only code in the `finally` block is a call to the <xref:System.IDisposable.Dispose%2A> method, use a `using` statement instead.
 
-  In the following example, the `try`-`finally` statement only calls `Dispose` in the `finally` block.
+  In the following example, the `try-finally` statement only calls `Dispose` in the `finally` block.
 
    :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17a":::
 

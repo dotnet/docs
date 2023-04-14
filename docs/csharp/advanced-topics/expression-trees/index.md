@@ -54,7 +54,7 @@ Expression trees won't support new expression node types. It would be a breaking
 - [`dynamic` operations](../../language-reference/builtin-types/reference-types.md#the-dynamic-type)
 - [Coalescing operators with `null` or `default` literal left side, null coalescing assignment](../../language-reference/operators/assignment-operator.md#null-coalescing-assignment), and the [null propagating operator (`?.`)](../../language-reference/operators/null-coalescing-operator.md)
 - [Multi-dimensional array initializers](../../programming-guide/arrays/multidimensional-arrays.md), [indexed properties, and dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers)
-- [`throw` expressions](../../language-reference/keywords/throw.md#the-throw-expression)
+- [`throw` expressions](../../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 - Accessing [`static virtual` or `abstract` interface members](../../language-reference/keywords/interface.md#static-abstract-and-virtual-members)
 - Lambda expressions that have [attributes](../../language-reference/operators/lambda-expressions.md#attributes)
 - [Interpolated strings](../../language-reference/tokens/interpolated.md)

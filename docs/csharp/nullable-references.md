@@ -292,27 +292,6 @@ public static class Program
 
 In the preceding example, there's no warning in `PrintStudent(default)` while the non-nullable reference types `FirstName` and `LastName` are null.
 
-Another more common case is when you deal with generic structs. Consider the following example:
-
-```csharp
-#nullable enable
-
-public struct Foo<T>
-{
-    public T Bar { get; set; }
-}
-
-public static class Program
-{
-    public static void Main()
-    {
-        string s = default(Foo<string>).Bar;
-    }
-}
-```
-
-In the preceding example, the property `Bar` is going to be `null` at run time, and it's assigned to non-nullable string without any warnings.
-
 ### Arrays
 
 Arrays are also a known pitfall in nullable reference types. Consider the following example that doesn't produce any warnings:

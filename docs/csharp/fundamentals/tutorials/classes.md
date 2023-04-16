@@ -169,7 +169,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code before the declaration of `invalidAccount` in your `Main` method:
+You use the [`try-catch` statement](../../language-reference/statements/exception-handling-statements.md#the-try-catch-statement) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code before the declaration of `invalidAccount` in your `Main` method:
 
 ```csharp
 // Test for a negative balance.

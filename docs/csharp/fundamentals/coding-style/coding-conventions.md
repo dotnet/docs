@@ -330,9 +330,9 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet15c":::
 
-### `try`-`catch` and `using` statements in exception handling
+### `try-catch` and `using` statements in exception handling
 
-- Use a [try-catch](../../language-reference/keywords/try-catch.md) statement for most exception handling.
+- Use a [try-catch](../../language-reference/statements/exception-handling-statements.md#the-try-catch-statement) statement for most exception handling.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet16":::
 

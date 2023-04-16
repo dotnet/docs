@@ -1,7 +1,7 @@
 ---
 title: "Exception-handling statements - throw and try"
 description: "Use the C# throw statement to signal an occurrence of an exception. Use the C# try statements to catch and process exceptions occurred in a block of code."
-ms.date: 04/17/2023
+ms.date: 04/21/2023
 f1_keywords:
   - "throw_CSharpKeyword"
   - "try_CSharpKeyword"
@@ -86,13 +86,19 @@ If you want to re-throw a caught exception, use the [`throw` statement](#the-thr
 > [!NOTE]
 > `throw;` preserves the original stack trace of a re-thrown exception, which is stored in the <xref:System.Exception.StackTrace?displayProperty=nameWithType> property. Opposite to that, `throw e;` updates the <xref:System.Exception.StackTrace> property of `e`.
 
+#### A `when` exception filter
+
 Along with an exception type, you can also specify an exception filter that further examines a thrown exception and decides if the corresponding `catch` block handles that exception. An exception filter is a Boolean expression that follows the `when` keyword, as the following example shows:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="WhenFilter":::
 
 The preceding example uses an exception filter to provide a single `catch` block that handles exceptions of two specified types.
 
-For more information and examples, see [Exception handling](../../fundamentals/exceptions/exception-handling.md).
+#### Exceptions in async methods
+
+If an exception occurs in an [async function](../keywords/async.md), it propagates to the caller of the function when you [await](../operators/await.md) the result of the function, as the following example shows:
+
+:::code language="csharp" source="snippets/exception-handling-statements/ExceptionFromAsyncExample.cs" id="ExceptionFromAsync":::
 
 ### The `try-finally` statement
 

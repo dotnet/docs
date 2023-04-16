@@ -43,7 +43,7 @@ public class ExampleClass
         {
             await ProcessAsync(itemId, ct);
         }
-        catch (Exception e) when (e is not OperationCancelledException)
+        catch (Exception e) when (e is not OperationCanceledException)
         {
             LogError(e, $"Failed to process request for item ID {itemId}.");
         }

@@ -65,8 +65,6 @@ You use the `void` return type in asynchronous event handlers, which require a `
 
 The caller of a void-returning async method can't catch exceptions thrown from the method. Such unhandled exceptions are likely to cause your application to fail. If a method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> throws an exception, the exception is stored in the returned task. The exception is rethrown when the task is awaited. Make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.
 
-For more information about how to catch exceptions in async methods, see the [Exceptions in async methods](../language-reference/keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch](../language-reference/keywords/try-catch.md) article.
-
 The following example shows the behavior of an async event handler. In the example code, an async event handler must let the main thread know when it finishes. Then the main thread can wait for an async event handler to complete before exiting the program.
 
 :::code language="csharp" source="snippets/async-return-types/async-returns3.cs":::

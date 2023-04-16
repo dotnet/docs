@@ -1,4 +1,5 @@
-﻿
+﻿await ExceptionFromAsyncExample.Run();
+
 static void ProcessShapes(int shapeAmount)
 {
     // <Throw>
@@ -33,9 +34,9 @@ static void DisplayFirstNumber(string[] args)
         : throw new ArgumentException("Please supply at least one argument.");
     // </ThrowExpressionConditional>
 
-    var message = int.TryParse(arg, out var number)
+    var message = int.TryParse(first, out var number)
         ? $"You entered number {number}."
-        : $"{arg} is not an integer number.";
+        : $"{first} is not an integer number.";
     Console.WriteLine(message);
 }
 

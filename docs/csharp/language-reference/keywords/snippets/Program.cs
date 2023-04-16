@@ -11,8 +11,6 @@ namespace Keywords
             GenericWhereConstraints.Examples();
             Console.WriteLine("=================    readonly Keyword Examples ======================");
             ReadonlyKeywordExamples.Examples();
-            Console.WriteLine("=================    try-catch Keyword Examples ======================");
-            await AsyncExceptionExamples.Examples();
             Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");
             TestClassAndStruct.Main();
             ParameterModifiers.PassValueByValue();

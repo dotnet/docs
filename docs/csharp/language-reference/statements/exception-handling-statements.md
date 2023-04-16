@@ -45,7 +45,9 @@ Inside a `catch` block of the [`try` statement](#the-try-statement), you can use
 
 ### Exception propagation
 
-TODO
+TODO EDIT
+
+When an exception is thrown, the common language runtime (CLR) looks for the `catch` statement that handles this exception. If the currently executing method does not contain such a `catch` block, the CLR looks at the method that called the current method, and so on up the call stack. If no `catch` block is found, then the CLR displays an unhandled exception message to the user and stops execution of the program.
 
 ### The `throw` expression
 

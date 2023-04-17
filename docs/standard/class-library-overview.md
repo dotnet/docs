@@ -122,10 +122,10 @@ For more information about namespaces, use the [.NET API Browser](../../api/inde
 
 ## App-Model APIs
 
-There are many app-models that can be used with .NET, for example:
+There are many app models that can be used with .NET, for example:
 
-* [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - A web framework for building Web sites and services. Supported on Windows, Linux, and macOS (depends on ASP.NET version).
-* [Xamarin](https://dotnet.microsoft.com/apps/xamarin) - An app platform for building Android and iOS apps with .NET and C#. Supported on Windows and macOS.
+* [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - A web framework for building web sites and services. Supported on Windows, Linux, and macOS (depends on ASP.NET version).
+* [.NET MAUI](https://dotnet.microsoft.com/apps/maui) - An app platform for building native apps that run on Windows, macOS, iOS, and Android using C#.
 * [Windows Desktop](https://www.nuget.org/packages/Microsoft.WindowsDesktop.App.Ref/) - Includes Windows Presentation Foundation (WPF) and Windows Forms.
 
 ## See also

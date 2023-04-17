@@ -101,6 +101,33 @@ In addition to the base data types, the <xref:System> namespace contains over 10
 
 For more information about namespaces, use the [.NET API Browser](../../api/index.md) to browse the .NET Class Library. The API reference documentation provides documentation on each namespace, its types, and each of their members.
 
+## Data structures
+
+.NET includes a set of data structures that are the workhorses of many .NET apps. These are mostly collections, but also include other types.
+
+* <xref:System.Array> - Represents an array of strongly typed objects that can be accessed by index. Has a fixed size, per its construction.
+* <xref:System.Collections.Generic.List%601> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
+* <xref:System.Collections.Generic.Dictionary%602> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
+* <xref:System.Uri> - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
+* <xref:System.DateTime> - Represents an instant in time, typically expressed as a date and time of day.
+
+## Utility APIs
+
+.NET includes a set of utility APIs that provide functionality for many important tasks.
+
+* <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
+* <xref:System.Xml.Linq.XDocument> - An API for loading and querying XML documents with LINQ.
+* <xref:System.IO.StreamReader> - An API for reading files.
+* <xref:System.IO.StreamWriter> - An API for writing files.
+
+## App-Model APIs
+
+There are many app models that can be used with .NET, for example:
+
+* [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) - A web framework for building web sites and services. Supported on Windows, Linux, and macOS (depends on ASP.NET version).
+* [.NET MAUI](https://dotnet.microsoft.com/apps/maui) - An app platform for building native apps that run on Windows, macOS, iOS, and Android using C#.
+* [Windows Desktop](https://www.nuget.org/packages/Microsoft.WindowsDesktop.App.Ref/) - Includes Windows Presentation Foundation (WPF) and Windows Forms.
+
 ## See also
 
 - [Common Type System](base-types/common-type-system.md)

@@ -24,7 +24,7 @@ You may have arrived on this page after trying to run an application and seeing 
 > [!div class="button"]
 > [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
-[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) can be used to run applications built for the .NET Framework 4.0 through 4.7.2.
+[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) can be used to run applications built for the .NET Framework 4.0 through 4.8.
 
 You can install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) on:
 

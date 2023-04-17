@@ -59,7 +59,7 @@ When you install with a package manager, these libraries are installed for you. 
 - libgcc1
 - libgcc-s1
 - libgssapi-krb5-2
-- libicu71
+- libicu70
 - liblttng-ust1
 - libssl3
 - libstdc++6

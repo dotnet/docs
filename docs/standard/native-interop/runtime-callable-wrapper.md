@@ -28,7 +28,7 @@ The following image shows the process for accessing COM objects through the runt
   
 ## Marshalling selected interfaces  
 
- The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.
+ The primary goal of the runtime callable wrapper (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.
 
  The following image shows COM interfaces and the runtime callable wrapper:
   

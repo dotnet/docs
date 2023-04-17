@@ -3,9 +3,10 @@ title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
 ms.date: 03/24/2023
 ms.custom: "updateeachrelease"
-recommendations: false
+recommendations: true
 ---
-# What is .NET? Introduction and overview
+
+What is .NET? Introduction and overview
 
 [.NET is a free](https://dotnet.microsoft.com/download/), cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
@@ -240,3 +241,5 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 * [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
 * [Take a tour of C#](../csharp/tour-of-csharp/index.md)
 * [Take a tour of F#](../fsharp/tour.md)
+
+

@@ -112,7 +112,7 @@ You can also use the `finally` block to clean up allocated resources used in the
 > [!NOTE]
 > When the type of a resource implements the <xref:System.IDisposable> or <xref:System.IAsyncDisposable> interface, consider the [`using` statement](using.md). The `using` statement ensures that acquired resources are disposed when control leaves the `using` statement. The compiler transforms a `using` statement into a `try-finally` statement.
 
-In almost all cases `finally` blocks are executed. The only cases where `finally` blocks aren't executed involve immediate termination of a program. For example, such a termination might happen because of the <xref:System.Environment.FailFast?displayProperty=nameWithType> call or an <xref:System.OverflowException> or <xref:System.InvalidProgramException> exception. Most operating systems perform a reasonable resource clean-up as part of stopping and unloading the process.
+In almost all cases `finally` blocks are executed. The only cases where `finally` blocks aren't executed involve immediate termination of a program. For example, such a termination might happen because of the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> call or an <xref:System.OverflowException> or <xref:System.InvalidProgramException> exception. Most operating systems perform a reasonable resource clean-up as part of stopping and unloading the process.
 
 ### The `try-catch-finally` statement
 

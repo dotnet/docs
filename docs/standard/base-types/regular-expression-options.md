@@ -17,19 +17,19 @@ helpviewer_keywords:
 
 By default, the comparison of an input string with any literal characters in a regular expression pattern is case-sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. Some of these options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
 
-|RegexOptions member|Inline character|Effect|
-|-------------------------|----------------------|------------|
-|<xref:System.Text.RegularExpressions.RegexOptions.None>|Not available|Use default behavior. For more information, see [Default Options](#default-options).|
-|<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#case-insensitive-matching).|
-|<xref:System.Text.RegularExpressions.RegexOptions.Multiline>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#multiline-mode).|
-|<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Single-line Mode](#single-line-mode).|
-|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#explicit-captures-only).|
-|<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#compiled-regular-expressions).|
-|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore White Space](#ignore-white-space).|
-|<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#right-to-left-mode).|
-|<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ecmascript-matching-behavior).|
-|<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#compare-using-the-invariant-culture).|
-|<xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking>|Not available|Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)|
+| `RegexOptions` member | Inline character | Effect | More information |
+|-|-|-|-|
+| <xref:System.Text.RegularExpressions.RegexOptions.None> | Not available | Use default behavior. | [Default options](#default-options) |
+| <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> | `i` | Use case-insensitive matching. | [Case-insensitive matching](#case-insensitive-matching) |
+| <xref:System.Text.RegularExpressions.RegexOptions.Multiline> | `m` | Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). | [Multiline mode](#multiline-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.Singleline> | `s` | Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). | [Single-line mode](#single-line-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> | `n` | Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. | [Explicit captures only](#explicit-captures-only) |
+| <xref:System.Text.RegularExpressions.RegexOptions.Compiled> | Not available | Compile the regular expression to an assembly. | [Compiled regular expressions](#compiled-regular-expressions) |
+| <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace> | `x` | Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). | [Ignore white space](#ignore-white-space) |
+| <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> | Not available | Change the search direction. Search moves from right to left instead of from left to right. | [Right-to-left mode](#right-to-left-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript> | Not available | Enable ECMAScript-compliant behavior for the expression. | [ECMAScript matching behavior](#ecmascript-matching-behavior) |
+| <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant> | Not available | Ignore cultural differences in language. | [Comparison using the invariant culture](#compare-using-the-invariant-culture) |
+| <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking> | Not available | Match using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. (Available in .NET 7 and later versions.)| [Nonbacktracking mode](#nonbacktracking-mode) |
 
 ## Specify options
 
@@ -51,7 +51,7 @@ You can specify options for regular expressions in one of three ways:
   [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
   [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
 
-- By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
+- By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. | [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
   The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -207,11 +207,11 @@ The regular expression pattern`\b\(?((?>\w+),?\s?)+[\.!?]\)?` is defined as show
 |Pattern|Description|
 |-------------|-----------------|
 |`\b`|Begin at a word boundary.|
-|`\(?`|Match zero or one occurrences of the opening parenthesis ("(").|
+|`\(?`|Match zero or one occurrences of the opening parenthesis ("(") |
 |`(?>\w+),?`|Match one or more word characters, followed by zero or one commas. Do not backtrack when matching word characters.|
 |`\s?`|Match zero or one white-space characters.|
 |`((\w+),?\s?)+`|Match the combination of one or more word characters, zero or one commas, and zero or one white-space characters one or more times.|
-|`[\.!?]\)?`|Match any of the three punctuation symbols, followed by zero or one closing parentheses (")").|
+|`[\.!?]\)?`|Match any of the three punctuation symbols, followed by zero or one closing parentheses (")") |
 
 You can also use the `(?n)` inline element to suppress automatic captures. The following example modifies the previous regular expression pattern to use the `(?n)` inline element instead of the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> option.
 
@@ -334,7 +334,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty
 
 The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation.
 
-- Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. For more information, see [Character Classes](character-classes-in-regular-expressions.md).
+- Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. | [Character Classes](character-classes-in-regular-expressions.md).
 
   The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words.
 
@@ -384,6 +384,21 @@ The following example is identical to the previous example, except that the stat
 
 [!code-csharp[Conceptual.Regex.Language.Options#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/culture1.cs#15)]
 [!code-vb[Conceptual.Regex.Language.Options#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#15)]
+
+## Nonbacktracking mode
+
+By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down exponentially as then number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't use backtracking and avoids that worst-case scenario. While the nonbacktracking search is fast in all cases, it's not *always* faster than the default backtracking engine, and that isn't its goal.
+
+The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
+
+- Atomic groups
+- Backreferences
+- Balancing groups
+- Conditional
+- Lookarounds
+- Start anchors (`\G`)
+
+<xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> also has a subtle difference with regards to execution. If a capture group is in a loop, most (non-.NET) regex engines only provide the last matched value for that capture. However, .NET's regex engine tracks all values that are captured inside a loop and provides access to them. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option is like most other regex implementations and only supports providing the final capture.
 
 ## See also
 

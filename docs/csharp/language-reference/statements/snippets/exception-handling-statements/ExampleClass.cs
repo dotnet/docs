@@ -46,6 +46,7 @@ public class ExampleClass
         catch (Exception e) when (e is not OperationCanceledException)
         {
             LogError(e, $"Failed to process request for item ID {itemId}.");
+            throw;
         }
         finally
         {

@@ -25,23 +25,20 @@ helpviewer_keywords:
 
 You use the `throw` and `try` statements to work with exceptions. Use the [`throw` statement](#the-throw-statement) to throw an exception. Use the [`try` statement](#the-try-statement) to catch and handle exceptions that might occur during execution of a code block.
 
-> [!NOTE]
-> For more information about how to work with exceptions in C#, see [Exceptions and exception handling](../../fundamentals/exceptions/index.md).
-
 ## The `throw` statement
 
 The `throw` statement throws an exception:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="Throw":::
 
-In `throw e;` statement, the result of expression `e` must be implicitly convertible to <xref:System.Exception?displayProperty=nameWithType>. You can use the built-in exception classes, for example, <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. You can also define your own exception classes that derive from <xref:System.Exception>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
+In a `throw e;` statement, the result of expression `e` must be implicitly convertible to <xref:System.Exception?displayProperty=nameWithType>. You can use the built-in exception classes, for example, <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
 
-Inside a `catch` block of the [`try` statement](#the-try-statement), you can use a `throw;` statement to re-throw the exception that is handled by the `catch` block:
+Inside a [`catch` block](#the-try-catch-statement), you can use a `throw;` statement to re-throw the exception that is handled by the `catch` block:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="Rethrow":::
 
 > [!NOTE]
-> `throw;` preserves the original stack trace of a re-thrown exception, which is stored in the <xref:System.Exception.StackTrace?displayProperty=nameWithType> property. Opposite to that, `throw e;` updates the <xref:System.Exception.StackTrace> property of `e`.
+> `throw;` preserves the original stack trace of the exception, which is stored in the <xref:System.Exception.StackTrace?displayProperty=nameWithType> property. Opposite to that, `throw e;` updates the <xref:System.Exception.StackTrace> property of `e`.
 
 When an exception is thrown, the common language runtime (CLR) looks for the [`catch` block](#the-try-catch-statement) that can handle this exception. If the currently executed method doesn't contain such a `catch` block, the CLR looks at the method that called the current method, and so on up the call stack. If no `catch` block is found, the CLR terminates the executing thread. For more information, see the [How exceptions are handled](~/_csharpstandard/standard/exceptions.md#214-how-exceptions-are-handled) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
@@ -63,11 +60,11 @@ You can also use `throw` as an expression. This might be convenient in a number 
 
 ## The `try` statement
 
-You use the `try` statement in any of the following forms: [`try-catch`](#the-try-catch-statement) - to handle exceptions that might occur during execution of the code inside a `try` block, [`try-finally`](#the-try-finally-statement) - to specify the code that is executed when control leaves the `try` statement, and [`try-catch-finally`](#the-try-catch-finally-statement) - as a combination of the preceding two forms.
+You can use the `try` statement in any of the following forms: [`try-catch`](#the-try-catch-statement) - to handle exceptions that might occur during execution of the code inside a `try` block, [`try-finally`](#the-try-finally-statement) - to specify the code that is executed when control leaves the `try` block, and [`try-catch-finally`](#the-try-catch-finally-statement) - as a combination of the preceding two forms.
 
 ### The `try-catch` statement
 
-Use the `try-catch` statement to handle exceptions that might occur during execution of the code. Place the code where an exception might occur inside a `try` block. Use a *catch clause* to specify the base type of exceptions you want to handle in the corresponding `catch` block:
+Use the `try-catch` statement to handle exceptions that might occur during execution of a code block. Place the code where an exception might occur inside a `try` block. Use a *catch clause* to specify the base type of exceptions you want to handle in the corresponding `catch` block:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="TryCatch":::
 
@@ -82,15 +79,15 @@ If you want to re-throw a caught exception, use the [`throw` statement](#the-thr
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="RethrowInCatch":::
 
 > [!NOTE]
-> `throw;` preserves the original stack trace of a re-thrown exception, which is stored in the <xref:System.Exception.StackTrace?displayProperty=nameWithType> property. Opposite to that, `throw e;` updates the <xref:System.Exception.StackTrace> property of `e`.
+> `throw;` preserves the original stack trace of the exception, which is stored in the <xref:System.Exception.StackTrace?displayProperty=nameWithType> property. Opposite to that, `throw e;` updates the <xref:System.Exception.StackTrace> property of `e`.
 
 #### A `when` exception filter
 
-Along with an exception type, you can also specify an exception filter that further examines a thrown exception and decides if the corresponding `catch` block handles that exception. An exception filter is a Boolean expression that follows the `when` keyword, as the following example shows:
+Along with an exception type, you can also specify an exception filter that further examines an exception and decides if the corresponding `catch` block handles that exception. An exception filter is a Boolean expression that follows the `when` keyword, as the following example shows:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="WhenFilter":::
 
-The preceding example uses an exception filter to provide a single `catch` block that handles exceptions of two specified types.
+The preceding example uses an exception filter to provide a single `catch` block to handle exceptions of two specified types.
 
 #### Exceptions in async methods
 
@@ -103,19 +100,19 @@ If an exception occurs in an [async function](../keywords/async.md), it propagat
 In a `try-finally` statement, the `finally` block is executed when control leaves the `try` block. Control might leave the `try` block as a result of
 
 - normal execution,
-- execution of any [jump statement](./jump-statements.md), for example, a `return` statement, or
+- execution of a [jump statement](jump-statements.md) (that is, `return`, `break`, `continue`, or `goto`), or
 - propagation of an exception out of the `try` block.
 
 The following example uses the `finally` block to reset the state of an object before control leaves the method:
 
 :::code language="csharp" source="snippets/exception-handling-statements/ExampleClass.cs" id="TryFinally":::
 
-You can also use the `finally` block to clean up resources allocated and used in the `try` block.
+You can also use the `finally` block to clean up allocated resources used in the `try` block.
 
 > [!NOTE]
-> When the type of a resource implements <xref:System.IDisposable> or <xref:System.IAsyncDisposable> interface, consider the [`using` statement](./using.md). The `using` statement ensures that acquired resources are disposed when control leaves the `using` statement. The compiler transforms a `using` statement into a `try-finally` statement.
+> When the type of a resource implements the <xref:System.IDisposable> or <xref:System.IAsyncDisposable> interface, consider the [`using` statement](using.md). The `using` statement ensures that acquired resources are disposed when control leaves the `using` statement. The compiler transforms a `using` statement into a `try-finally` statement.
 
-In almost all cases `finally` blocks are executed. The only cases where `finally` blocks aren't executed involve a program being immediately terminated. For example, such a termination might happen because of the <xref:System.Environment.FailFast?displayProperty=nameWithType> call or an <xref:System.OverflowException> or <xref:System.InvalidProgramException> exception. Most operating systems perform a reasonable resource clean-up as part of stopping and unloading the process.
+In almost all cases `finally` blocks are executed. The only cases where `finally` blocks aren't executed involve immediate termination of a program. For example, such a termination might happen because of the <xref:System.Environment.FailFast?displayProperty=nameWithType> call or an <xref:System.OverflowException> or <xref:System.InvalidProgramException> exception. Most operating systems perform a reasonable resource clean-up as part of stopping and unloading the process.
 
 ### The `try-catch-finally` statement
 
@@ -123,7 +120,7 @@ You use a `try-catch-finally` statement both to handle exceptions that might occ
 
 :::code language="csharp" source="snippets/exception-handling-statements/ExampleClass.cs" id="TryCatchFinally":::
 
-When an exception is handled by a `catch` block, the `finally` block is executed after execution of that `catch` block (even if an exception occurs during execution of the `catch` block). For information about `catch` and `finally` blocks, see [The `try-catch` statement](#the-try-catch-statement) and [The `try-finally` statement](#the-try-finally-statement) sections, respectively.
+When an exception is handled by a `catch` block, the `finally` block is executed after execution of that `catch` block (even if another exception occurs during execution of the `catch` block). For information about `catch` and `finally` blocks, see [The `try-catch` statement](#the-try-catch-statement) and [The `try-finally` statement](#the-try-finally-statement) sections, respectively.
 
 ## C# language specification
 
@@ -141,3 +138,4 @@ For more information, see the following sections of the [C# language specificati
 - [throw preferences (style rule IDE0016)](../../../fundamentals/code-analysis/style-rules/ide0016.md)
 - <xref:System.AppDomain.FirstChanceException?displayProperty=nameWithType>
 - <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException?displayProperty=nameWithType>

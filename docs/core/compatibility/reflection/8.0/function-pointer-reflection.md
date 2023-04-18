@@ -31,7 +31,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change adds the capability to obtain function pointer metadata including parameter types, the return type, and the calling conventions. Function pointer support was added with C# 9 and .NET 6, but reflection support wasn't added at that time.
+This change adds the capability to obtain function pointer metadata including parameter types, the return type, and the calling conventions. Function pointer support was added with C# 9 and .NET 5, but reflection support wasn't added at that time.
 
 ## Recommended action
 

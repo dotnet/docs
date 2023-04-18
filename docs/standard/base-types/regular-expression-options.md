@@ -51,7 +51,7 @@ You can specify options for regular expressions in one of three ways:
   [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
   [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
 
-- By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. | [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
+- By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
   The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -207,11 +207,11 @@ The regular expression pattern`\b\(?((?>\w+),?\s?)+[\.!?]\)?` is defined as show
 |Pattern|Description|
 |-------------|-----------------|
 |`\b`|Begin at a word boundary.|
-|`\(?`|Match zero or one occurrences of the opening parenthesis ("(") |
+|`\(?`|Match zero or one occurrences of the opening parenthesis ("(").|
 |`(?>\w+),?`|Match one or more word characters, followed by zero or one commas. Do not backtrack when matching word characters.|
 |`\s?`|Match zero or one white-space characters.|
 |`((\w+),?\s?)+`|Match the combination of one or more word characters, zero or one commas, and zero or one white-space characters one or more times.|
-|`[\.!?]\)?`|Match any of the three punctuation symbols, followed by zero or one closing parentheses (")") |
+|`[\.!?]\)?`|Match any of the three punctuation symbols, followed by zero or one closing parentheses (")").|
 
 You can also use the `(?n)` inline element to suppress automatic captures. The following example modifies the previous regular expression pattern to use the `(?n)` inline element instead of the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> option.
 
@@ -334,7 +334,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty
 
 The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation.
 
-- Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. | [Character Classes](character-classes-in-regular-expressions.md).
+- Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. For more information, see [Character Classes](character-classes-in-regular-expressions.md).
 
   The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words.
 

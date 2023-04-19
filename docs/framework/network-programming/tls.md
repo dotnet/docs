@@ -120,13 +120,13 @@ We recommend you upgrade your app to .NET Framework 4.7 or later versions. If yo
 
 Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry). The .NET Framework version 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 
-If you are running on .NET Framework 3.5, you need to install a hot patch so that TLS 1.2 can be specified by your program:
+If you are running on .NET Framework 3.5, you need to install the latest Security and Quality Rollup Update so that TLS 1.2 can be specified by your program. The improvements to enable TLS 1.2 are included in the below updates and any newer updates:
 
-| [KB3154518](https://support.microsoft.com/kb/3154518) | Reliability Rollup HR-1605 - Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
 | --- | --- |
-| [KB3154519](https://support.microsoft.com/kb/3154519) | Reliability Rollup HR-1605 - Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
-| [KB3154520](https://support.microsoft.com/kb/3154520) | Reliability Rollup HR-1605 -Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
-| [KB3156421](https://support.microsoft.com/kb/3156421) | 1605 Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows |
+| [KB5022525](https://support.microsoft.com/kb/5022525) | Security and Quality Rollup for .NET Framework 3.5 on Windows Server 2012 R2 |
+| [KB5022574](https://support.microsoft.com/kb/5022574) | Security and Quality Rollup for .NET Framework 3.5 on Windows Server 2012 |
+| [KB5022523](https://support.microsoft.com/kb/5022523) | Security and Quality Rollup for .NET Framework 3.5.1 on Windows Server 2008 R2 |
+
 
 ### For WCF using .NET Framework 3.5 - 4.5.2 using TCP transport security with Certificate Credentials
 

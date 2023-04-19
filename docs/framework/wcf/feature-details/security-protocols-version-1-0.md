@@ -64,9 +64,9 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
 |Prefix|Namespace|  
 |------------|---------------|  
-|s|<http://www.w3.org/2003/05/soap-envelope/>|
-|sp|<http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/>|
-|a|<http://www.w3.org/2005/08/addressing>|  
+|s|<https://www.w3.org/2003/05/soap-envelope/>|
+|sp|<https://schemas.xmlsoap.org/ws/2005/07/securitypolicy/>|
+|a|<https://www.w3.org/2005/08/addressing>|  
 |wsse|TBD – OASIS WSS 1.0 URI|  
 |wsse11|TBD – OASIS WSS 1.1 URI|  
 |wsu|TBD – OASIS WSS 1.0 Utility URI|  
@@ -74,8 +74,8 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 |wst|TBD – WS-Trust 2005/02 URI|  
 |wssc|TBD – WS-SecureConversation 2005/02 URI|  
 |wsaw|TBD - WS-Addressing policy namespace|  
-|wsp|<http://schemas.xmlsoap.org/ws/2004/09/policy>|  
-|mssp|<http://schemas.xmlsoap.org/ws/2005/07/securitypolicy>|
+|wsp|<https://schemas.xmlsoap.org/ws/2004/09/policy>|  
+|mssp|<https://schemas.xmlsoap.org/ws/2005/07/securitypolicy>|
   
 ## 1. Token Profiles  
 

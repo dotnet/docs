@@ -46,7 +46,6 @@ Examples of languages developed by using the DLR include the following:
 
 - IronPython. Available as open-source software from the [GitHub](https://github.com/IronLanguages/ironpython2) Web site.
 
-- IronRuby. Available as open-source software from the [IronRuby](https://ironruby.net/) website.
 
 ## Primary DLR Advantages
 

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,7 +10,7 @@
     <PackageReference Include="Microsoft.ML" Version="2.0.1" />
     <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="2.0.1" />
     <PackageReference Include="Microsoft.ML.TensorFlow" Version="2.0.1" />
-    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.11.0" />
+    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.11.1" />
   </ItemGroup>
 
   <ItemGroup>

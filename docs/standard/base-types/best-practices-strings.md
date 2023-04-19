@@ -27,7 +27,7 @@ This article examines the string sorting, comparison, and casing methods in .NET
 
 ## Recommendations for string usage
 
-When you develop with .NET, follow these recommendations when you compare strings:
+When you develop with .NET, follow these recommendations when you compare strings (for example, when you use <xref:System.String.Equals%2A?displayProperty=nameWithType>, <xref:System.String.Compare%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType> <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, or related methods):
 
 - Use overloads that explicitly specify the string comparison rules for string operations. Typically, this involves calling a method overload that has a parameter of type <xref:System.StringComparison>.
 - Use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for comparisons as your safe default for culture-agnostic string matching.
@@ -135,7 +135,7 @@ Specifying the <xref:System.StringComparison.Ordinal?displayProperty=nameWithTyp
 
 Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" doesn't match "Windows". This is essentially a call to the C runtime `strcmp` function. Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy. Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.
 
-Strings in .NET can contain embedded null characters. One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.Equals%2A?displayProperty=nameWithType> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that don't.
+Strings in .NET can contain embedded null characters (and other non-printing characters). One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.Equals%2A?displayProperty=nameWithType> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, in culture-sensitive comparisons (including in the invariant culture), strings that contain embedded null characters can be considered equal to strings that don't, and embedded non-printing characters might be skipped for the purpose of <xref:System.String.StartsWith%2A?displayProperty=nameWithType>.
 
 > [!IMPORTANT]
 > Although string comparison methods disregard embedded null characters, string search methods such as <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.EndsWith%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> do not.
@@ -245,7 +245,7 @@ The <xref:System.Char.ToUpper(System.Char)?displayProperty=nameWithType> and <xr
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
-By default, both of these methods perform a culture-sensitive comparison.
+By default, both of these methods perform a culture-sensitive comparison. In particular, they may ignore non-printing characters.
 
 ### String.IndexOf and String.LastIndexOf
 

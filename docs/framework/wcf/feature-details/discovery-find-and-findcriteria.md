@@ -6,7 +6,7 @@ ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
 ---
 # Discovery Find and FindCriteria
 
-A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. For more information about discovery messages, see the [WS-Discovery specification](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf).
+A discovery find operation is initiated by a client to discover one or more services and is one of the main actions in discovery. Performing a find sends a WS-Discovery Probe message over the network. Services that match the criteria specified reply with WS-Discovery ProbeMatch messages. For more information about discovery messages, see the [WS-Discovery specification](https://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf).
 
 ## DiscoveryClient
 

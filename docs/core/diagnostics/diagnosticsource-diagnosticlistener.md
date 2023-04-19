@@ -180,7 +180,7 @@ To decode the payload more fully, you could replace the `listener.Subscribe()` c
 Note that using reflection is relatively expensive. However, using reflection is the only
 option if the payloads were generated using anonymous types. This overhead can be reduced by
 making fast, specialized property fetchers using either [PropertyInfo.GetMethod.CreateDelegate()](xref:System.Reflection.MethodInfo.CreateDelegate%2A) or
-xref<System.Reflection.Emit> namespace, but that's beyond the scope of this article.
+<xref:System.Reflection.Emit> namespace, but that's beyond the scope of this article.
 (For an example of a fast, delegate-based property fetcher, see the [PropertySpec](https://github.com/dotnet/runtime/blob/6de7147b9266d7730b0d73ba67632b0c198cb11e/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L1235)
 class used in the `DiagnosticSourceEventSource`.)
 

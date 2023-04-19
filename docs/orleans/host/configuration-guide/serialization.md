@@ -189,41 +189,6 @@ public sealed class DerivedFromMyForeignLibraryType : MyForeignLibraryType
 }
 ```
 
-### Immutability enhancements
-
-Orleans opts for safety by default. To ensure that values sent between grains are not modified after the call site or during transmission, these values are copied immediately when making a grain call or returning a response from a grain.
-In cases where a developer knows that a type will not be modified, Orleans can be instructed to skip this copy process.
-In previous version of Orleans, there were two ways to do this:
-
-1. Wrapping your value in <xref:Orleans.Concurrency.Immutable%601>, using `new Immutable<T>(myValue)`. This requires that your grain interface method parameters and return types are `Immutable<T>`, where `T` is the underlying type, so it can be quite invasive and it is extra ceremony.
-1. Marking your type with the <xref:Orleans.ImmutableAttribute>. This causes Orleans' code generator to emit code that avoids copying any object of that type.
-
-Sometimes, you may not have control over the object, for example, it may be a `List<int>` that you are sending between grains. Other times, perhaps parts of your objects are immutable and other parts are not. For these cases, Orleans 7.0 introduces additional options.
-
-1. Method signatures can include <xref:Orleans.ImmutableAttribute> on a per-parameter basis:
-
-    ```csharp
-    public interface ISummerGrain : IGrain
-    {
-      // `values` will not be copied.
-      ValueTask<int> Sum([Immutable] List<int> values);
-    }
-    ```
-
-1. Individual properties and fields can be marked as <xref:Orleans.ImmutableAttribute> to prevent copies being made when instances of the containing type are copied.
-
-    ```csharp
-    [GenerateSerializer]
-    public sealed class MyType
-    {
-        [Id(0), Immutable]
-        public List<int> ReferenceData { get; set; }
-        
-        [Id(1)]
-        public List<int> RunningTotals { get; set; }
-    }
-    ```
-
 ## Grain storage serializers
 
 Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain%601.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState%601> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there is now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, which offers a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern that involves setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer%2A?displayProperty=nameWithType> property on the provider's options class, for example:

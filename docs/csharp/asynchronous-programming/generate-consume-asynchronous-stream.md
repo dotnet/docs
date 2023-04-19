@@ -109,7 +109,7 @@ The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives
 
 ```csharp
 int num = 0;
-var enumerator = RunPagedQueryAsync(client, PagedIssueQuery, "docs").GetEnumeratorAsync();
+var enumerator = RunPagedQueryAsync(client, PagedIssueQuery, "docs").GetAsyncEnumerator();
 try
 {
     while (await enumerator.MoveNextAsync())

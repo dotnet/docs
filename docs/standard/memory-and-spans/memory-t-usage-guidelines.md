@@ -171,7 +171,7 @@ There are several ways to resolve this:
 
 This is just the async variant of Rule #3. The `Log` method from the earlier example can be written as follows to comply with this rule:
 
-[!code-csharp[task-returning-async](~/samples/snippets/standard/buffers/memory-t/void-returning-async/void-returning-async.cs#1)]
+[!code-csharp[task-returning-async](~/samples/snippets/standard/buffers/memory-t/task-returning-async/task-returning-async.cs#1)]
 
 Here, "terminal state" means that the task transitions to a completed, faulted, or canceled state. In other words, "terminal state" means "anything that would cause await to throw or to continue execution."
 

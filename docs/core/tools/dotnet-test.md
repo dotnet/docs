@@ -143,7 +143,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
   
-  For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).  
+  For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested), [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis), and [GitHub issue dotnet/docs#34479](https://github.com/dotnet/docs/issues/34479).
 
   To collect code coverage you can also use [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) by using the `--collect "XPlat Code Coverage"` option.
 

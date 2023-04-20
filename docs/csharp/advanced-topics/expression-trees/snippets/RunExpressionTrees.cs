@@ -83,12 +83,12 @@ public static class RunExpressionTrees
 // <ResourceClass>
 public class Resource : IDisposable
 {
-    private bool isDisposed = false;
+    private bool _isDisposed = false;
     public int Argument
     {
         get
         {
-            if (!isDisposed)
+            if (!_isDisposed)
                 return 5;
             else throw new ObjectDisposedException("Resource");
         }
@@ -96,7 +96,7 @@ public class Resource : IDisposable
 
     public void Dispose()
     {
-        isDisposed = true;
+        _isDisposed = true;
     }
 }
 // </ResourceClass>

@@ -122,7 +122,7 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 1. Create an instance of `TodoService`, passing in the instance of `HttpClient` to its constructor.
 
 > [!IMPORTANT]
-> Using typed clients in singleton services can be dangerous. For more information, see the [Using Typed clients in singleton services](#use-typed-clients-in-singleton-services) section.
+> Using typed clients in singleton services can be dangerous. For more information, see the [Avoid Typed clients in singleton services](#avoid-typed-clients-in-singleton-services) section.
 
 ### Generated clients
 
@@ -256,7 +256,7 @@ services.AddHttpClient(name)
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
 
-## Use typed clients in singleton services
+## Avoid typed clients in singleton services
 
 When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 
@@ -278,12 +278,27 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 
 Users are strongly advised **not to cache scope-related information** (such as data from `HttpContext`) inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
+If you require access to an app DI scope from your message handler, for authentication as an example, you'd encapsulate scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around an `HttpMessageHandler` instance from the `IHttpClientFactory` cache. To access the handler call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A?displayProperty=nameWithType> for any registered _named client_. In that case, you'd create an `HttpClient` instance yourself using the constructed handler.
+
+:::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to app DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
+
+The following example shows creating an `HttpClient` with a scope-aware `DelegatingHandler`:
+
+:::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="CreateClient":::
+
+A further workaround can follow with an extension method for registering a scope-aware `DelegatingHandler` and overriding default `IHttpClientFactory` registration by a transient service with access to the current app scope:
+
+:::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="AddScopeAwareHttpHandler":::
+
+For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
+
 ## See also
 
 - [Dependency injection in .NET][di]
 - [Logging in .NET][logging]
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
+- <xref:System.Net.Http.IHttpMessageHandlerFactory>
 - <xref:System.Net.Http.HttpClient>
 - [Make HTTP requests with the HttpClient][httpclient]
 - [Implement HTTP retry with exponential backoff][http-retry]

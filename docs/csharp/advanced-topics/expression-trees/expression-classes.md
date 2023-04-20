@@ -19,10 +19,8 @@ For example, this code prints the name of a variable for a variable access expre
 ```csharp
 Expression<Func<int, int>> addFive = (num) => num + 5;
 
-if (addFive.NodeType == ExpressionType.Lambda)
+if (addFive is LambdaExpression lambdaExp)
 {
-    var lambdaExp = (LambdaExpression)addFive;
-
     var parameter = lambdaExp.Parameters[0];  -- first
 
     Console.WriteLine(parameter.Name);

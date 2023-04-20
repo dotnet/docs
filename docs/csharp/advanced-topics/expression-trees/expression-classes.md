@@ -21,7 +21,7 @@ Expression<Func<int, int>> addFive = (num) => num + 5;
 
 if (addFive is LambdaExpression lambdaExp)
 {
-    var parameter = lambdaExp.Parameters.First();
+    var parameter = lambdaExp.Parameters[0];  -- first
 
     Console.WriteLine(parameter.Name);
     Console.WriteLine(parameter.Type);

@@ -23,7 +23,7 @@ if (addFive.NodeType == ExpressionType.Lambda)
 {
     var lambdaExp = (LambdaExpression)addFive;
 
-    var parameter = lambdaExp.Parameters.First();
+    var parameter = lambdaExp.Parameters[0];  -- first
 
     Console.WriteLine(parameter.Name);
     Console.WriteLine(parameter.Type);

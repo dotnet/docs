@@ -7,8 +7,6 @@ on:
   pull_request:
     branches: [ main ]
     types: [opened, synchronize, reopened]
-    paths-ignore:
-      - '**/*.md'
   workflow_dispatch:
     inputs:
       reason:

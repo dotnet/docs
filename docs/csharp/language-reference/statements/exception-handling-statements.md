@@ -1,5 +1,5 @@
 ---
-title: "Exception-handling statements - throw and try"
+title: "Exception-handling statements - throw and try, catch, finally"
 description: "Use the C# throw statement to signal an occurrence of an exception. Use the C# try statements to catch and process exceptions occurred in a block of code."
 ms.date: 04/21/2023
 f1_keywords:
@@ -31,7 +31,9 @@ The `throw` statement throws an exception:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="Throw":::
 
-In a `throw e;` statement, the result of expression `e` must be implicitly convertible to <xref:System.Exception?displayProperty=nameWithType>. You can use the built-in exception classes, for example, <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
+In a `throw e;` statement, the result of expression `e` must be implicitly convertible to <xref:System.Exception?displayProperty=nameWithType>.
+
+You can use the built-in exception classes, for example, <xref:System.ArgumentOutOfRangeException> or <xref:System.InvalidOperationException>. .NET also provides the helper methods to throw exceptions in certain conditions: <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType> and <xref:System.ArgumentException.ThrowIfNullOrEmpty%2A?displayProperty=nameWithType>. You can also define your own exception classes that derive from <xref:System.Exception?displayProperty=nameWithType>. For more information, see [Creating and throwing exceptions](../../fundamentals/exceptions/creating-and-throwing-exceptions.md).
 
 Inside a [`catch` block](#the-try-catch-statement), you can use a `throw;` statement to re-throw the exception that is handled by the `catch` block:
 
@@ -68,7 +70,7 @@ Use the `try-catch` statement to handle exceptions that might occur during execu
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="TryCatch":::
 
-You can use several catch clauses:
+You can provide several catch clauses:
 
 :::code language="csharp" source="snippets/exception-handling-statements/Program.cs" id="TryMultipleCatch":::
 
@@ -89,11 +91,17 @@ Along with an exception type, you can also specify an exception filter that furt
 
 The preceding example uses an exception filter to provide a single `catch` block to handle exceptions of two specified types.
 
-#### Exceptions in async methods
+You can provide several `catch` clauses for the same exception type if they distinguish by exception filters. One of those clauses might have no exception filter. If such a clause exists, it must be the last of the clauses that specify that exception type.
+
+If a `catch` clause has an exception filter, it can specify the exception type that is the same as or less derived than an exception type of a `catch` clause that appears after it. For example, if an exception filter is present, a `catch (Exception e)` clause doesn't need to be the last clause.
+
+#### Exceptions in async and iterator methods
 
 If an exception occurs in an [async function](../keywords/async.md), it propagates to the caller of the function when you [await](../operators/await.md) the result of the function, as the following example shows:
 
 :::code language="csharp" source="snippets/exception-handling-statements/ExceptionFromAsyncExample.cs" id="ExceptionFromAsync":::
+
+If an exception occurs in an [iterator method](../../iterators.md), it propagates to the caller only when the iterator advances to the next element.
 
 ### The `try-finally` statement
 

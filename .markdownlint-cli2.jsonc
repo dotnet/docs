@@ -40,6 +40,8 @@
                 "ul"
             ]
         },
+        // Allow Bare URLs. We often use them in text.
+        "MD034": false,
         "MD036": false,
         "MD040": false,
         // Cannot be enabled because of the include folder snippets

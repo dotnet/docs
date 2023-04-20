@@ -516,7 +516,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.1)<br>NuGet [4.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.1.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.2.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.2.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.8.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
@@ -584,7 +584,7 @@
 | Management - Cognitive Search Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Search.Fluent/1.38.1) |  |  |
 | Management - Cognitive Services | NuGet [8.3.0](https://www.nuget.org/packages/Microsoft.Azure.Management.CognitiveServices/8.3.0) |  | GitHub [8.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.CognitiveServices_8.3.0/sdk/cognitiveservices/Microsoft.Azure.Management.CognitiveServices/) |
 | Management - Cognitive Services Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.CognitiveServices.Fluent/1.9.1-beta) |  |  |
-| Management - Compute | NuGet [60.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Compute/60.0.0) |  | GitHub [60.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Compute_60.0.0/sdk/compute/Microsoft.Azure.Management.Compute/) |
+| Management - Compute | NuGet [61.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Compute/61.0.0) |  | GitHub [61.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Compute_61.0.0/sdk/compute/Microsoft.Azure.Management.Compute/) |
 | Management - Compute Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Compute.Fluent/1.38.1) | [docs](/dotnet/api/overview/azure/virtualmachines) |  |
 | Management - Confluent | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Confluent/1.0.1) |  |  |
 | Management - Consumption | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Consumption/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/consumption/Microsoft.Azure.Management.Consumption) |

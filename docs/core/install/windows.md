@@ -277,7 +277,6 @@ The following Windows versions are supported with .NET 7:
 |---------------------|---------------|-----------------|
 | Windows 11          | 21H2+         | x64, Arm64      |
 | Windows 10 Client   | 1607+         | x64, x86, Arm64 |
-| Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | 1809+         | x64             |

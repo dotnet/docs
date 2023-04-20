@@ -10,7 +10,7 @@ recommendations: false
 
 # Tutorial: Sentiment analysis with .NET for Apache Spark and ML.NET
 
-This tutorial teaches you how to do sentiment analysis of online reviews using ML.NET and .NET for Apache Spark. [ML.NET](http://dot.net/ml) is a free, cross-platform, open-source machine learning framework. You can use ML.NET with .NET for Apache Spark to scale the training and prediction of machine learning algorithms.
+This tutorial teaches you how to do sentiment analysis of online reviews using ML.NET and .NET for Apache Spark. [ML.NET](https://dot.net/ml) is a free, cross-platform, open-source machine learning framework. You can use ML.NET with .NET for Apache Spark to scale the training and prediction of machine learning algorithms.
 
 In this tutorial, you learn how to:
 

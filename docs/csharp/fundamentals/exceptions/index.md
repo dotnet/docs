@@ -38,10 +38,6 @@ For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md)
 
 ## See also
 
-- <xref:System.SystemException>
-- [C# Keywords](../../language-reference/keywords/index.md)
-- [throw](../../language-reference/keywords/throw.md)
-- [try-catch](../../language-reference/keywords/try-catch.md)
-- [try-finally](../../language-reference/keywords/try-finally.md)
-- [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)
+- <xref:System.Exception?displayProperty=nameWithType>
+- [Exception-handling statements](../../language-reference/statements/exception-handling-statements.md)
 - [Exceptions](../../../standard/exceptions/index.md)

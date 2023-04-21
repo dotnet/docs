@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Creating and Throwing Exceptions
 
-Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw`](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.
+Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw` statement or expression](../../language-reference/statements/exception-handling-statements.md#the-throw-statement). The runtime then searches for the most compatible exception handler.
 
 Programmers should throw exceptions when one or more of the following conditions are true:
 

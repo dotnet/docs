@@ -137,7 +137,7 @@ These rules introduce the concept of ***exceptions***. The standard way of indic
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 
-The [`throw`](../../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
+The [`throw` statement](../../language-reference/statements/exception-handling-statements.md#the-throw-statement) **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 
@@ -169,7 +169,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code before the declaration of `invalidAccount` in your `Main` method:
+You use the [`try-catch` statement](../../language-reference/statements/exception-handling-statements.md#the-try-catch-statement) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code before the declaration of `invalidAccount` in your `Main` method:
 
 ```csharp
 // Test for a negative balance.

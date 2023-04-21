@@ -19,7 +19,7 @@ The `<OptimizationPreference>` MSBuild property can be used to communicate a gen
 <OptimizationPreference>Size</OptimizationPreference>
 ```
 
-Setting `OptimizationPreference` to `Size` instructs the publishing process to favor the size of the executable instead of other performance metrics. The peak throughput of the app is expected to be lower with this setting and startup time may also be impacted.
+Setting `OptimizationPreference` to `Size` instructs the publishing process to favor the size of the executable instead of other performance metrics. The size of the app is expected to be smaller, but other performance metrics might be affected.
 
 ```xml
 <OptimizationPreference>Speed</OptimizationPreference>

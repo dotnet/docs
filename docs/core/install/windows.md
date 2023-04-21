@@ -97,11 +97,8 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
-When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
-
-```console
-dotnet-sdk-7.0.100-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
-```
+> [IMPORTANT]
+> Starting in November 2021, you can't change the installation path of .NET with the Windows Installer package. To install .NET to a different path, use the [dotnet-install scripts](../tools/dotnet-install-script.md).
 
 If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
 

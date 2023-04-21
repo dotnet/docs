@@ -107,6 +107,8 @@ The <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> specifies the b
 
 The COM interop system that uses the <xref:System.Runtime.InteropServices.ComImportAttribute> does not interact with interface inheritance, so it can cause unexpected behavior unless the some mitigating steps are taken.
 
+The COM source generator that uses the `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` does interact with interface inheritance, so it behaves more as expected.
+
 ##### COM Interface Inheritance in C++
 
 In C++, developers can declare COM interfaces that derive from other COM interfaces as follows:
@@ -224,6 +226,48 @@ interface IComInterface2 : IComInterface
 ```
 
 Each method from the base interface types must be redeclared, as at the metadata level, `IComInterface2` does not implement `IComInterface`, but only specifies that implementors of `IComInterface2` must also implement `IComInterface`.
+
+###### COM Interface Inheritance in .NET with `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` (.NET 8 Preview 4 or newer)
+
+The COM source generator triggered by the `GeneratedComInterfaceAttribute` implements C# interface inheritance as COM interface inheritance, so the virtual function tables are laid out as expected. If we take our prior example, the correct definition of these interfaces in .NET with `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` is as follows:
+
+```csharp
+[GeneratedComInterface]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+interface IComInterface
+{
+    void Method();
+    void Method2();
+}
+
+[GeneratedComInterface]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+interface IComInterface2 : IComInterface
+{
+    void Method3();
+}
+```
+
+The methods of the base interfaces do not need to be redeclared and should not be redeclared. The following table describs the resulting virtual function tables:
+
+| `IComInterface` Virtual Function Table slot | Method name |
+|-----------------------------|-------------|
+| 0 | `IUnknown::QueryInterface` |
+| 1 | `IUnknown::AddRef` |
+| 2 | `IUnknown::Release` |
+| 3 | `IComInterface::Method` |
+| 4 | `IComInterface::Method2` |
+
+| `IComInterface2` Virtual Function Table slot | Method name |
+|-----------------------------|-------------|
+| 0 | `IUnknown::QueryInterface` |
+| 1 | `IUnknown::AddRef` |
+| 2 | `IUnknown::Release` |
+| 3 | `IComInterface::Method` |
+| 4 | `IComInterface::Method2` |
+| 5 | `IComInterface2::Method3` |
+
+As you can see, these tables match the C++ example, so these interfaces will function correctly.
 
 ## See also
 

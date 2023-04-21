@@ -4,13 +4,10 @@ description: Learn about optimizing the outputs of AOT compilation for size and 
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 04/21/2023
-zone_pivot_groups: dotnet-version
 ---
 # Optimizing AOT deployments
 
 The native AOT publishing process generates a self-contained executable with a subset of the runtime libraries that are tailored specifically for your app. The compilation generally relies on static analysis of the application to generate the best possible output. However, the term "best possible" can have many meanings and sometimes the output of the compilation can be greatly improved by providing hints to the publish process.
-
-:::zone pivot="dotnet-8-0"
 
 ## Optimizing for size or speed
 
@@ -29,8 +26,6 @@ Setting `OptimizationPreference` to `Size` instructs the publishing process to f
 ```
 
 Setting `OptimizationPreference` to `Speed` instructs the publishing process to favor code execution speed. The peak througput of the app is expected to be higher, but other performance metrics might be affected.
-
-:::zone-end
 
 ## Further size optimization options
 

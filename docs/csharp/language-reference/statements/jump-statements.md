@@ -21,7 +21,7 @@ helpviewer_keywords:
 
 Four C# statements unconditionally transfer control. The `break` [statement](#the-break-statement), terminates the closest enclosing [iteration statement](iteration-statements.md) or `switch` [statement](selection-statements.md#the-switch-statement). The `continue` [statement](#the-continue-statement) starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md). The `return` [statement](#the-return-statement): terminates execution of the function in which it appears and returns control to the caller. The `ref` modifier on a `return` statement indicates the returned expression is returned *by reference*, not *by value*. The `goto` [statement](#the-goto-statement): transfers control to a statement that is marked by a label.
 
-For information about the `throw` statement that throws an exception and unconditionally transfers control as well, see [throw](../keywords/throw.md).
+For information about the `throw` statement that throws an exception and unconditionally transfers control as well, see [The `throw` statement](exception-handling-statements.md#the-throw-statement) section of the [Exception-handling statements](exception-handling-statements.md) article.
 
 ## The `break` statement
 

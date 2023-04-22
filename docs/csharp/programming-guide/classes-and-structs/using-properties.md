@@ -33,7 +33,7 @@ When you reference the property, except as the target of an assignment, the `get
 
 :::code language="csharp" source="./snippets/properties/Program.cs" id="GetAccessor":::
 
-The `get` accessor must end in a [return](../../language-reference/statements/jump-statements.md#the-return-statement) or [throw](../../language-reference/keywords/throw.md) statement, and control can't flow off the accessor body.
+The `get` accessor must end in a [return](../../language-reference/statements/jump-statements.md#the-return-statement) or [throw](../../language-reference/statements/exception-handling-statements.md#the-throw-statement) statement, and control can't flow off the accessor body.
 
 > [!WARNING]
 > It's a bad programming style to change the state of the object by using the `get` accessor.

@@ -82,7 +82,7 @@ Tuple element values are assigned following the order of tuple elements. The nam
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="Assignment":::
 
-You can also use the assignment operator `=` to *deconstruct* a tuple instance in separate variables. You can do that in one of the following ways:
+You can also use the assignment operator `=` to *deconstruct* a tuple instance in separate variables. You can do that in many ways:
 
 - Explicitly declare the type of each variable inside parentheses:
 
@@ -95,6 +95,12 @@ You can also use the assignment operator `=` to *deconstruct* a tuple instance i
 - Use existing variables:
 
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructExisting":::
+
+Any of these can be combined in a single deconstruction expression.
+
+You can also combine deconstruction with [pattern matching](../../fundamentals/functional/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem%2A?displayProperty=nameWithType> and matches against a `Remainder` of 0:
+
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructToPattern":::
 
 For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../fundamentals/functional/deconstruct.md).
 

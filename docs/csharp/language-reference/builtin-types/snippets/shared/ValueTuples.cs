@@ -22,11 +22,25 @@ public static class ValueTuples
         TupleEquality();
         TupleEvaluationForEquality();
         TupleAsOutParameter();
+        DeconstructToPattern();
 
         // <UseAliasType>
         BandPass bracket = (40, 100);
         Console.WriteLine($"The bandpass filter is {bracket.Min} to {bracket.Max}");
         // </UseAliasType>
+    }
+
+    private static void DeconstructToPattern()
+    {
+        // <DeconstructToPattern>
+        for(int i = 4; i < 20;  i++)
+        {
+            if (Math.DivRem(i, 3) is { Remainder: 0, Quotient: var q })
+            {
+                Console.WriteLine($"{i} is divisible by 3, with quotient {q}");
+            }
+        }
+        // </DeconstructToPattern>
     }
 
     private static void Intro()

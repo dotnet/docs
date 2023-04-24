@@ -99,7 +99,7 @@ For values that require explicit null, such as using `int?` in your C# code, Pro
 ```protobuf  
 syntax = "proto3"
 
-import "google/protobuf/wrappers.proto"
+import "google/protobuf/wrappers.proto";
 
 message Person {
 

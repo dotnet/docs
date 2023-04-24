@@ -43,7 +43,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
 ### Message Passing  
 
- The dataflow programming model is related to the concept of *message passing*, where independent components of a program communicate with one another by sending messages. One way to propagate messages among application components is to call the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A?displayProperty=nameWithType> methods to send messages to target dataflow blocks post (<xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> acts synchronously; <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> acts asynchronously) and the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Receive%2A>, <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A>, and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive%2A> methods to receive messages from source blocks. You can combine these methods with dataflow pipelines or networks by sending input data to the head node (a target block), and receiving output data from the terminal node of the pipeline or the terminal nodes of the network (one or more source blocks). You can also use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Choose%2A> method to read from the first of the provided sources that has data available and perform action on that data.  
+ The dataflow programming model is related to the concept of *message passing*, where independent components of a program communicate with one another by sending messages. One way to propagate messages among application components is to call the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A?displayProperty=nameWithType> methods to send messages to target dataflow blocks (<xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> acts synchronously; <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> acts asynchronously) and the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Receive%2A>, <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A>, and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive%2A> methods to receive messages from source blocks. You can combine these methods with dataflow pipelines or networks by sending input data to the head node (a target block), and receiving output data from the terminal node of the pipeline or the terminal nodes of the network (one or more source blocks). You can also use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Choose%2A> method to read from the first of the provided sources that has data available and perform action on that data.  
   
  Source blocks offer data to target blocks by calling the <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601.OfferMessage%2A?displayProperty=nameWithType> method. The target block responds to an offered message in one of three ways: it can accept the message, decline the message, or postpone the message. When the target accepts the message, the <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601.OfferMessage%2A> method returns <xref:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted>. When the target declines the message, the <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601.OfferMessage%2A> method returns <xref:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined>. When the target requires that it no longer receives any messages from the source, <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601.OfferMessage%2A> returns <xref:System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently>. The predefined source block types do not offer messages to linked targets after such a return value is received, and they automatically unlink from such targets.  
   
@@ -77,7 +77,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
 
  Buffering blocks hold data for use by data consumers. The TPL Dataflow Library provides three buffering block types: <xref:System.Threading.Tasks.Dataflow.BufferBlock%601?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601?displayProperty=nameWithType>.  
   
-#### BufferBlock(T)  
+#### BufferBlock\<T>  
 
  The <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> class represents a general-purpose asynchronous messaging structure. This class stores a first in, first out (FIFO) queue of messages that can be written to by multiple sources or read from by multiple targets. When a target receives a message from a <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> object, that message is removed from the message queue. Therefore, although a <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> object can have multiple targets, only one target will receive each message. The <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> class is useful when you want to pass multiple messages to another component, and that component must receive each message.  
   
@@ -88,7 +88,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
  For a complete example that demonstrates how to write messages to and read messages from a <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> object, see [How to: Write Messages to and Read Messages from a Dataflow Block](how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md).  
   
-#### BroadcastBlock(T)  
+#### BroadcastBlock\<T>  
 
  The <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class is useful when you must pass multiple messages to another component, but that component needs only the most recent value. This class is also useful when you want to broadcast a message to multiple components.  
   
@@ -99,7 +99,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
  For a complete example that demonstrates how to use <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> to broadcast a message to multiple target blocks, see [How to: Specify a Task Scheduler in a Dataflow Block](how-to-specify-a-task-scheduler-in-a-dataflow-block.md).  
   
-#### WriteOnceBlock(T)  
+#### WriteOnceBlock\<T>  
 
  The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class resembles the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only. You can think of <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> as being similar to the C# [readonly](../../csharp/language-reference/keywords/readonly.md) ([ReadOnly](../../visual-basic/language-reference/modifiers/readonly.md) in Visual Basic) keyword, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object becomes immutable after it receives a value instead of at construction. Like the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, when a target receives a message from a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object, that message is not removed from that object. Therefore, multiple targets receive a copy of the message. The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class is useful when you want to propagate only the first of multiple messages.  
   
@@ -114,7 +114,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
 
  Execution blocks call a user-provided delegate for each piece of received data. The TPL Dataflow Library provides three execution block types: <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602?displayProperty=nameWithType>.  
   
-#### ActionBlock(T)  
+#### ActionBlock\<T>  
 
  The <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> class is a target block that calls a delegate when it receives data. Think of a <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> object as a delegate that runs asynchronously when data becomes available. The delegate that you provide to an <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> object can be of type <xref:System.Action%601> or type `System.Func<TInput, Task>`. When you use an <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> object with <xref:System.Action%601>, processing of each input element is considered completed when the delegate returns. When you use an <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> object with `System.Func<TInput, Task>`, processing of each input element is considered completed only when the returned <xref:System.Threading.Tasks.Task> object is completed. By using these two mechanisms, you can use <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> for both synchronous and asynchronous processing of each input element.  
   
@@ -125,7 +125,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
  For complete examples that demonstrate how to use delegates with the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> class, see [How to: Perform Action When a Dataflow Block Receives Data](how-to-perform-action-when-a-dataflow-block-receives-data.md).  
   
-#### TransformBlock(TInput, TOutput)  
+#### TransformBlock\<TInput, TOutput>  
 
  The <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> class resembles the <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> class, except that it acts as both a source and as a target. The delegate that you pass to a <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> object returns a value of type `TOutput`. The delegate that you provide to a <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> object can be of type `System.Func<TInput, TOutput>` or type `System.Func<TInput, Task<TOutput>>`. When you use a <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> object with `System.Func<TInput, TOutput>`, processing of each input element is considered completed when the delegate returns. When you use a <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> object used with `System.Func<TInput, Task<TOutput>>`, processing of each input element is considered completed only when the returned <xref:System.Threading.Tasks.Task%601> object is completed. As with <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, by using these two mechanisms, you can use <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> for both synchronous and asynchronous processing of each input element.  
   
@@ -136,7 +136,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
  For complete examples that uses <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> in a network of dataflow blocks that performs image processing in a Windows Forms application, see [Walkthrough: Using Dataflow in a Windows Forms Application](walkthrough-using-dataflow-in-a-windows-forms-application.md).  
   
-#### TransformManyBlock(TInput, TOutput)  
+#### TransformManyBlock\<TInput, TOutput>  
 
  The <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> class resembles the <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> class, except that <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> produces zero or more output values for each input value, instead of only one output value for each input value. The delegate that you provide to a <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> object can be of type `System.Func<TInput, IEnumerable<TOutput>>` or type `System.Func<TInput, Task<IEnumerable<TOutput>>>`. When you use a <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> object with `System.Func<TInput, IEnumerable<TOutput>>`, processing of each input element is considered completed when the delegate returns. When you use a <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> object with `System.Func<TInput, Task<IEnumerable<TOutput>>>`, processing of each input element is considered complete only when the returned `System.Threading.Tasks.Task<IEnumerable<TOutput>>` object is completed.  
   
@@ -167,7 +167,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
 
  Grouping blocks combine data from one or more sources and under various constraints. The TPL Dataflow Library provides three join block types: <xref:System.Threading.Tasks.Dataflow.BatchBlock%601>, <xref:System.Threading.Tasks.Dataflow.JoinBlock%602>, and <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602>.  
   
-#### BatchBlock(T)  
+#### BatchBlock\<T>  
 
  The <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> class combines sets of input data, which are known as batches, into arrays of output data. You specify the size of each batch when you create a <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> object. When the <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> object receives the specified count of input elements, it asynchronously propagates out an array that contains those elements. If a <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> object is set to the completed state but does not contain enough elements to form a batch, it propagates out a final array that contains the remaining input elements.  
   
@@ -180,7 +180,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
  For a complete example that uses <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> to improve the efficiency of database insert operations, see [Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency](walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md).  
   
-#### JoinBlock(T1, T2, ...)  
+#### JoinBlock\<T1, T2, ...>  
 
  The <xref:System.Threading.Tasks.Dataflow.JoinBlock%602> and <xref:System.Threading.Tasks.Dataflow.JoinBlock%603> classes collect input elements and propagate out <xref:System.Tuple%602?displayProperty=nameWithType> or <xref:System.Tuple%603?displayProperty=nameWithType> objects that contain those elements. The <xref:System.Threading.Tasks.Dataflow.JoinBlock%602> and <xref:System.Threading.Tasks.Dataflow.JoinBlock%603> classes do not inherit from <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>. Instead, they provide properties, <xref:System.Threading.Tasks.Dataflow.JoinBlock%602.Target1%2A>, <xref:System.Threading.Tasks.Dataflow.JoinBlock%602.Target2%2A>, and <xref:System.Threading.Tasks.Dataflow.JoinBlock%603.Target3%2A>, that implement <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>.  
   
@@ -193,7 +193,7 @@ The Task Parallel Library (TPL) provides dataflow components to help increase th
   
  For a complete example that uses <xref:System.Threading.Tasks.Dataflow.JoinBlock%602> objects in non-greedy mode to cooperatively share a resource, see [How to: Use JoinBlock to Read Data From Multiple Sources](how-to-use-joinblock-to-read-data-from-multiple-sources.md).  
   
-#### BatchedJoinBlock(T1, T2, ...)  
+#### BatchedJoinBlock\<T1, T2, ...>  
 
  The <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> and <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%603> classes collect batches of input elements and propagate out `System.Tuple(IList(T1), IList(T2))` or `System.Tuple(IList(T1), IList(T2), IList(T3))` objects that contain those elements. Think of <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> as a combination of <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> and <xref:System.Threading.Tasks.Dataflow.JoinBlock%602>. Specify the size of each batch when you create a <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> object. <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> also provides properties, <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602.Target1%2A> and <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602.Target2%2A>, that implement <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>. When the specified count of input elements are received from across all targets, the <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> object asynchronously propagates out a `System.Tuple(IList(T1), IList(T2))` object that contains those elements.  
   

@@ -94,8 +94,6 @@ A standard numeric format string can be used to define the formatting of a numer
 
 The following sections provide detailed information about each of the standard numeric format strings.
 
-<a name="CFormatString"></a>
-
 ## Binary format specifier (B)
 
 The binary ("B") format specifier converts a number to a string of binary digits. This format is supported only for integral types and only on .NET 8+.
@@ -103,6 +101,8 @@ The binary ("B") format specifier converts a number to a string of binary digits
 The precision specifier indicates the minimum number of digits desired in the resulting string. If required, the number is padded with zeros to its left to produce the number of digits given by the precision specifier.
 
 The result string is not affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object.
+
+<a name="CFormatString"></a>
 
 ## Currency format specifier (C)
 

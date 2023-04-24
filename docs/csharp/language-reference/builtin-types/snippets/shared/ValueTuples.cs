@@ -1,6 +1,6 @@
 ﻿// <AliasTupleType>
 global using BandPass = (int Min, int Max);
-// <AliasTupleType>
+// </AliasTupleType>
 
 namespace builtin_types;
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 The *tuples* feature provides concise syntax to group multiple data elements in a lightweight data structure. The following example shows how you can declare a tuple variable, initialize it, and access its data members:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="Introducion":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="Introduction":::
 
 As the preceding example shows, to define a tuple type, you specify types of all its data members and, optionally, the [field names](#tuple-field-names). You can't define methods in a tuple type, but you can use the methods provided by .NET, as the following example shows:
 
@@ -90,7 +90,7 @@ You can also use the assignment operator `=` to *deconstruct* a tuple instance i
 
 - Use the `var` keyword outside the parentheses to declare implicitly typed variables and let the compiler infer their types:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DecDeconstructVaronstructExplicit":::
+  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructVar":::
 
 - Use existing variables:
 

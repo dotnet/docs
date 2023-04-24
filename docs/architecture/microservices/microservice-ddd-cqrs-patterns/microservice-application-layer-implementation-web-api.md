@@ -427,10 +427,10 @@ These are additional steps a command handler should take:
   <https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/>
 
 - **Commands and events** \
-  <https://cqrs.nu/Faq/commands-and-events>
+  <https://cqrs.nu/faq/Command%20and%20Events>
 
 - **What does a command handler do?** \
-  <https://cqrs.nu/Faq/command-handlers>
+  <https://cqrs.nu/faq/Command%20Handlers>
 
 - **Jimmy Bogard. Domain Command Patterns – Handlers** \
   <https://jimmybogard.com/domain-command-patterns-handlers/>

@@ -126,10 +126,10 @@ C# tuples, which are backed by <xref:System.ValueTuple?displayProperty=nameWithT
 
 ## C# language specification
 
-For more information, see the following feature proposal notes:
+For more information, see:
 
-- [Infer tuple names (aka. tuple projection initializers)](~/_csharplang/proposals/csharp-7.1/infer-tuple-names.md)
-- [Support for `==` and `!=` on tuple types](~/_csharplang/proposals/csharp-7.3/tuple-equality.md)
+- [Tuple types](~/csharp/language-reference/language-specification/types.md#8311-tuple-types)
+- [Tuple equality operators](~/csharp/language-reference/language-specification/expressions.md#111211-tuple-equality-operators)
 
 ## See also
 

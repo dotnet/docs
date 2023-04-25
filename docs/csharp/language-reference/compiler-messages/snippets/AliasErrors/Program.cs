@@ -4,6 +4,8 @@ using unsafe IntPointer = int*;
 using static unsafe UnsafeExamples.UnsafeType;
 // using unsafe UnsafeExamples; // not allowed
 
+using System.Text;
+
 
 //using NullableString = System.String?;
 using NullableInt = System.Int32?;
@@ -12,4 +14,7 @@ namespace UnsafeExamples;
 unsafe static class UnsafeType
 {
     public static int* field;
+
 }
+
+

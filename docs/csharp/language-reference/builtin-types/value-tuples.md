@@ -128,8 +128,8 @@ C# tuples, which are backed by <xref:System.ValueTuple?displayProperty=nameWithT
 
 For more information, see:
 
-- [Tuple types](~/csharp/language-reference/language-specification/types.md#8311-tuple-types)
-- [Tuple equality operators](~/csharp/language-reference/language-specification/expressions.md#111211-tuple-equality-operators)
+- [Tuple types](/dotnet/csharp/language-reference/language-specification/types#8311-tuple-types)
+- [Tuple equality operators](/dotnet/csharp/language-reference/language-specification/expressions#111211-tuple-equality-operators)
 
 ## See also
 

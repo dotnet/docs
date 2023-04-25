@@ -19,36 +19,36 @@ This section provides reference material about C# keywords, operators, special c
   
 ## In this section
 
-[C# Types](builtin-types/value-types.md)
+[C# types](builtin-types/value-types.md)
 
-[C# Keywords](./keywords/index.md)  
+[C# keywords](./keywords/index.md)  
 Provides links to information about C# keywords and syntax.  
   
-[C# Operators](./operators/index.md)  
+[C# operators](./operators/index.md)  
 Provides links to information about C# operators and syntax.
 
-[C# Statements](statements/declarations.md)
+[C# statements](statements/declarations.md)
 
-[C# Special Characters](./tokens/index.md)  
+[C# special characters](./tokens/index.md)  
 Provides links to information about special contextual characters in C# and their usage.
 
-[C# Attributes](attributes/global.md)
+[C# attributes](attributes/global.md)
 
-[C# Preprocessor Directives](preprocessor-directives.md)  
+[C# preprocessor directives](preprocessor-directives.md)  
 Provides links to information about compiler commands for embedding in C# source code.
   
-[C# Compiler Options](./compiler-options/index.md)  
+[C# compiler options](./compiler-options/index.md)  
 Includes information about compiler options and how to use them.
 
-[XML Documentation Comments](xmldoc/index.md)
+[XML documentation comments](xmldoc/index.md)
   
-[C# Compiler Errors](./compiler-messages/index.md)  
+[C# compiler errors](./compiler-messages/index.md)  
 Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
 
 ## Related sections  
 
- [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
+ [Using the Visual Studio development environment for C#](/visualstudio/get-started/csharp)  
  Provides links to conceptual and task topics that describe the IDE and editor.  
   
- [C# Programming Guide](../programming-guide/index.md)  
+ [C# programming guide](../programming-guide/index.md)  
  Includes information about how to use the C# programming language.

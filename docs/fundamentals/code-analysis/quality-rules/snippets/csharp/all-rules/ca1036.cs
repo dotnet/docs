@@ -32,15 +32,15 @@ namespace ca1036
             Rating = v;
         }
 
-        public int CompareTo(object obj)
+        public int CompareTo(object? obj)
         {
             if (obj == null)
             {
                 return 1;
             }
 
-            RatingInformation other = obj as RatingInformation; // avoid double casting
-            if (other == null)
+            RatingInformation? other = obj as RatingInformation; // avoid double casting
+            if (other is null)
             {
                 throw new ArgumentException("A RatingInformation object is required for comparison.", "obj");
             }
@@ -48,7 +48,7 @@ namespace ca1036
             return CompareTo(other);
         }
 
-        public int CompareTo(RatingInformation other)
+        public int CompareTo(RatingInformation? other)
         {
             if (other is null)
             {
@@ -74,9 +74,9 @@ namespace ca1036
         }
 
         // Omitting Equals violates rule: OverrideMethodsOnComparableTypes.
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            RatingInformation other = obj as RatingInformation; //avoid double casting
+            RatingInformation? other = obj as RatingInformation; //avoid double casting
             if (other is null)
             {
                 return false;

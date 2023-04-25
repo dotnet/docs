@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "COM interop, exposing COM components"
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 ---
-# Qualifying .NET Types for COM Interoperation
+# Qualify .NET types for COM interoperation
 
-## Exposing .NET Types to COM
+## Expose .NET types to COM
 
 If you intend to expose types in an assembly to COM applications, consider the requirements of COM interop at design time. Managed types (class, interface, structure, and enumeration) seamlessly integrate with COM types when you adhere to the following guidelines:  
   
@@ -43,23 +43,23 @@ If you intend to expose types in an assembly to COM applications, consider the r
   
  When exported to COM, the inheritance hierarchy of a managed type is flattened. Versioning also differs between managed and unmanaged environments. Types exposed to COM do not have the same versioning characteristics as other managed types.  
 
-## Consuming COM types from .NET
+## Consume COM types from .NET
 
-If you intend to consume COM types from .NET and you do not want to use tools like [Tlbimp.exe (Type Library Importer)](../../framework/tools/tlbimp-exe-type-library-importer.md), you must follow these guidelines:
+If you intend to consume COM types from .NET and you don't want to use tools like [Tlbimp.exe (Type Library Importer)](../../framework/tools/tlbimp-exe-type-library-importer.md), you must follow these guidelines:
 
 - Interfaces must have the <xref:System.Runtime.InteropServices.ComImportAttribute> applied.
 - Interfaces must have the <xref:System.Runtime.InteropServices.GuidAttribute> applied with the Interface ID for the COM interface.
-- Interfaces should have the <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> applied to specify the base interface type of this interface (IUnknown, IDispatch, or IInspectable).
-  - The default option is to have the base type of IDispatch and append the declared methods to the expected virtual function table for the interface.
-  - Only .NET Framework supports specifying a base type of IInspectable.
+- Interfaces should have the <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> applied to specify the base interface type of this interface (`IUnknown`, `IDispatch`, or `IInspectable`).
+  - The default option is to have the base type of `IDispatch` and append the declared methods to the expected virtual function table for the interface.
+  - Only .NET Framework supports specifying a base type of `IInspectable`.
 
-Many more customization options exist and they are mentioned in the [Applying Interop Attributes](apply-interop-attributes.md) documentation, but these guidelines provide the minimum requirements for common scenarios.
+These guidelines provide the minimum requirements for common scenarios. Many more customization options exist and are described in [Applying Interop Attributes](apply-interop-attributes.md).
 
-### Defining COM interfaces in .NET
+### Define COM interfaces in .NET
 
-When .NET code tries to call a method on a COM object through an interface with the <xref:System.Runtime.InteropServices.ComImportAttribute>, it needs to build up a virtual function table (also known as vtable or vftable) to from the .NET definition of the interface to determine the native code to call. This process is very complex, but we can look at some simple cases to see how it works.
+When .NET code tries to call a method on a COM object through an interface with the <xref:System.Runtime.InteropServices.ComImportAttribute> attribute, it needs to build up a virtual function table (also known as vtable or vftable) to form the .NET definition of the interface to determine the native code to call. This process is complex. The following examples show some simple cases.
 
-We will start with a COM interface with a few methods:
+Consider a COM interface with a few methods:
 
 ```c++
 struct IComInterface : public IUnknown
@@ -71,7 +71,7 @@ struct IComInterface : public IUnknown
 
 For this interface, the following table describes its virtual function table layout:
 
-| `IComInterface` Virtual Function Table slot | Method name |
+| `IComInterface` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |
@@ -79,9 +79,9 @@ For this interface, the following table describes its virtual function table lay
 | 3 | `IComInterface::Method` |
 | 4 | `IComInterface::Method2` |
 
-As we see, each method is added to the virtual function table in the order it was declared. The particular order is defined by the C++ compiler, but for simple cases without overloads, declaration order defines the order in the table.
+Each method is added to the virtual function table in the order it was declared. The particular order is defined by the C++ compiler, but for simple cases without overloads, declaration order defines the order in the table.
 
-To declare a .NET interface that corresponds to this interface, we would declare it as follows:
+Declare a .NET interface that corresponds to this interface as follows:
 
 ```csharp
 [ComImport]
@@ -96,20 +96,20 @@ interface IComInterface
 
 The <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> specifies the base interface. It provides a few options:
 
-| <xref:System.Runtime.InteropServices.ComInterfaceType> Value | Base Interface Type | Behavior for members on attributed interface |
+| <xref:System.Runtime.InteropServices.ComInterfaceType> Value | Base interface type | Behavior for members on attributed interface |
 |------------|---------------|------------------|
 | `InterfaceIsIUnknown` | `IUnknown` | Virtual function table first has the members of `IUnknown`, then the members of this interface in declaration order. |
-| `InterfaceIsIDispatch` | `IDispatch` | Members are not added to the virtual function table. They are only accessible through `IDispatch` |
+| `InterfaceIsIDispatch` | `IDispatch` | Members are not added to the virtual function table. They're only accessible through `IDispatch`. |
 | `InterfaceIsDual` | `IDispatch` | Virtual function table first has the members of `IDispatch`, then the members of this interface in declaration order. |
 | `InterfaceIsIInspectable` | `IInspectable` | Virtual function table first has the members of `IInspectable`, then the members of this interface in declaration order. Only supported on .NET Framework. |
 
-#### COM Interface Inheritance and .NET
+#### COM interface inheritance and .NET
 
-The COM interop system that uses the <xref:System.Runtime.InteropServices.ComImportAttribute> does not interact with interface inheritance, so it can cause unexpected behavior unless the some mitigating steps are taken.
+The COM interop system that uses the <xref:System.Runtime.InteropServices.ComImportAttribute> does not interact with interface inheritance, so it can cause unexpected behavior unless some mitigating steps are taken.
 
-The COM source generator that uses the `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` does interact with interface inheritance, so it behaves more as expected.
+The COM source generator that uses the `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` attribute does interact with interface inheritance, so it behaves more as expected.
 
-##### COM Interface Inheritance in C++
+##### COM interface inheritance in C++
 
 In C++, developers can declare COM interfaces that derive from other COM interfaces as follows:
 
@@ -126,9 +126,9 @@ struct IComInterface2 : public IComInterface
 };
 ```
 
-This declaration style is regularly as a mechanism to add methods to COM objects without changing existing interfaces, which would be a breaking change. This inheritance mechanism results in the following virtual function table layouts:
+This declaration style is regularly used as a mechanism to add methods to COM objects without changing existing interfaces, which would be a breaking change. This inheritance mechanism results in the following virtual function table layouts:
 
-| `IComInterface` Virtual Function Table slot | Method name |
+| `IComInterface` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |
@@ -136,7 +136,7 @@ This declaration style is regularly as a mechanism to add methods to COM objects
 | 3 | `IComInterface::Method` |
 | 4 | `IComInterface::Method2` |
 
-| `IComInterface2` Virtual Function Table slot | Method name |
+| `IComInterface2` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |
@@ -145,13 +145,14 @@ This declaration style is regularly as a mechanism to add methods to COM objects
 | 4 | `IComInterface::Method2` |
 | 5 | `IComInterface2::Method3` |
 
-As a result, it is very easy to call a method defined on `IComInterface` from an `IComInterface2*`. Specifically, calling a method on a base interface does not require a call to `QueryInterface` to get a pointer to the base interface. Additionally, C++ allows an implicit conversion from `IComInterface2*` to `IComInterface*`, which is well defined and allows avoiding a `QueryInterface` call again. As a result, in C or C++, you never need to call `QueryInterface` to get to the base type if you do not want to, which can allow some performance improvements.
+As a result, it's easy to call a method defined on `IComInterface` from an `IComInterface2*`. Specifically, calling a method on a base interface does not require a call to `QueryInterface` to get a pointer to the base interface. Additionally, C++ allows an implicit conversion from `IComInterface2*` to `IComInterface*`, which is well defined and lets you avoid calling a `QueryInterface` again. As a result, in C or C++, you never have to call `QueryInterface` to get to the base type if you don't want to, which can allow some performance improvements.
 
-> Note: WinRT interfaces do not follow this inheritance model. They are defined to follow the same model as the `[ComImport]`-based COM interop model in .NET.
+> [!NOTE]
+> WinRT interfaces don't follow this inheritance model. They're defined to follow the same model as the `[ComImport]`-based COM interop model in .NET.
 
-###### COM Interface Inheritance in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute>
+###### Interface inheritance with <xref:System.Runtime.InteropServices.ComImportAttribute>
 
-In .NET, C# code that looks like interface inheritance isn't actually interface inheritance. Let's look at the following code:
+In .NET, C# code that looks like interface inheritance isn't actually interface inheritance. Consider the following code:
 
 ```csharp
 interface I
@@ -164,9 +165,9 @@ interface J : I
 }
 ```
 
-This code does not say, "`J` implements `I`." The code actually says, "any type that implements `J` must also implement `I`." This difference leads to the fundamental design decision that makes interface inheritance in <xref:System.Runtime.InteropServices.ComImportAttribute>-based interop unergonomic. Interfaces are always considered on their own; an interface's base interface list has no impact on any calculations to determing a virtual function table for a given .NET interface.
+This code does not say, "`J` implements `I`." The code actually says, "any type that implements `J` must also implement `I`." This difference leads to the fundamental design decision that makes interface inheritance in <xref:System.Runtime.InteropServices.ComImportAttribute>-based interop unergonomic. Interfaces are always considered on their own; an interface's base interface list has no impact on any calculations to determine a virtual function table for a given .NET interface.
 
-As a result, the natural equivalent of the above provided C++ COM interface example leads to a different virtual function table layout.
+As a result, the natural equivalent of the previous C++ COM interface example leads to a different virtual function table layout.
 
 C# code:
 
@@ -187,9 +188,9 @@ interface IComInterface2 : IComInterface
 }
 ```
 
-Virtual Function Table layouts:
+Virtual function table layouts:
 
-| `IComInterface` Virtual Function Table slot | Method name |
+| `IComInterface` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |
@@ -197,14 +198,14 @@ Virtual Function Table layouts:
 | 3 | `IComInterface::Method` |
 | 4 | `IComInterface::Method2` |
 
-| `IComInterface2` Virtual Function Table slot | Method name |
+| `IComInterface2` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |
 | 2 | `IUnknown::Release` |
 | 3 | `IComInterface2::Method3` |
 
-As these virtual function tables differ from the C++ example, this will lead to serious problems at runtime. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
+As these virtual function tables differ from the C++ example, this will lead to serious problems at run time. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
 
 ```csharp
 [ComImport]
@@ -225,11 +226,11 @@ interface IComInterface2 : IComInterface
 }
 ```
 
-Each method from the base interface types must be redeclared, as at the metadata level, `IComInterface2` does not implement `IComInterface`, but only specifies that implementors of `IComInterface2` must also implement `IComInterface`.
+At the metadata level, `IComInterface2` doesn't implement `IComInterface` but only specifies that implementers of `IComInterface2` must also implement `IComInterface`. Thus, each method from the base interface types must be redeclared.
 
-###### COM Interface Inheritance in .NET with `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` (.NET 8 Preview 4 or newer)
+###### Interface inheritance with `GeneratedComInterfaceAttribute` (.NET 8 Preview 4 or later)
 
-The COM source generator triggered by the `GeneratedComInterfaceAttribute` implements C# interface inheritance as COM interface inheritance, so the virtual function tables are laid out as expected. If we take our prior example, the correct definition of these interfaces in .NET with `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` is as follows:
+The COM source generator triggered by the `GeneratedComInterfaceAttribute` implements C# interface inheritance as COM interface inheritance, so the virtual function tables are laid out as expected. If you take the previous example, the correct definition of these interfaces in .NET with `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` is as follows:
 
 ```csharp
 [GeneratedComInterface]
@@ -248,9 +249,9 @@ interface IComInterface2 : IComInterface
 }
 ```
 
-The methods of the base interfaces do not need to be redeclared and should not be redeclared. The following table describs the resulting virtual function tables:
+The methods of the base interfaces do not need to be redeclared and should not be redeclared. The following table describes the resulting virtual function tables:
 
-| `IComInterface` Virtual Function Table slot | Method name |
+| `IComInterface` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |
@@ -258,7 +259,7 @@ The methods of the base interfaces do not need to be redeclared and should not b
 | 3 | `IComInterface::Method` |
 | 4 | `IComInterface::Method2` |
 
-| `IComInterface2` Virtual Function Table slot | Method name |
+| `IComInterface2` virtual function table slot | Method name |
 |-----------------------------|-------------|
 | 0 | `IUnknown::QueryInterface` |
 | 1 | `IUnknown::AddRef` |

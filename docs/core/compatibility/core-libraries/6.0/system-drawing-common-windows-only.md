@@ -56,7 +56,7 @@ To use these APIs for cross-platform apps, migrate to one of the following libra
 
 - [ImageSharp](https://sixlabors.com/products/imagesharp)
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
-- [Microsoft.Maui.Graphics](https://learn.microsoft.com/dotnet/maui/user-interface/graphics/)
+- [Microsoft.Maui.Graphics](/dotnet/maui/user-interface/graphics/)
 
 Alternatively, you can enable support for non-Windows platforms in .NET 6 by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file.
 

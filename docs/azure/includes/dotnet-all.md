@@ -198,7 +198,7 @@
 | Resource Management - Media | NuGet [1.2.0](https://www.nuget.org/packages/Azure.ResourceManager.Media/1.2.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Media-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Media_1.2.0/sdk/mediaservices/Azure.ResourceManager.Media/) |
 | Resource Management - Mixed Reality | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MixedReality/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MixedReality-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MixedReality_1.0.1/sdk/mixedreality/Azure.ResourceManager.MixedReality/) |
 | Resource Management - Mobile Network | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.MobileNetwork/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MobileNetwork_1.0.0-beta.1/sdk/mobilenetwork/Azure.ResourceManager.MobileNetwork/) |
-| Resource Management - Monitor | NuGet [1.1.0](https://www.nuget.org/packages/Azure.ResourceManager.Monitor/1.1.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Monitor-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Monitor_1.1.0/sdk/monitor/Azure.ResourceManager.Monitor/) |
+| Resource Management - Monitor | NuGet [1.2.0](https://www.nuget.org/packages/Azure.ResourceManager.Monitor/1.2.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Monitor-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Monitor_1.2.0/sdk/monitor/Azure.ResourceManager.Monitor/) |
 | Resource Management - MySQL | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.MySql/1.0.1) | [docs](/dotnet/api/overview/azure/ResourceManager.MySql-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.MySql_1.0.1/sdk/mysql/Azure.ResourceManager.MySql/) |
 | Resource Management - NetApp Files | NuGet [1.1.0](https://www.nuget.org/packages/Azure.ResourceManager.NetApp/1.1.0) | [docs](/dotnet/api/overview/azure/ResourceManager.NetApp-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.NetApp_1.1.0/sdk/netapp/Azure.ResourceManager.NetApp/) |
 | Resource Management - Network | NuGet [1.1.1](https://www.nuget.org/packages/Azure.ResourceManager.Network/1.1.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Network-readme) | GitHub [1.1.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Network_1.1.1/sdk/network/Azure.ResourceManager.Network/) |
@@ -263,7 +263,7 @@
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Management - Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.5-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.5-Preview) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.7-Preview) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.2.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization/1.0.0) |  |  |
 | Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce/1.0.0) |  |  |
@@ -538,7 +538,7 @@
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0-preview2) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.6-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.6-Preview) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.7-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |

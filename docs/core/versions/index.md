@@ -31,7 +31,7 @@ The third position of the SDK version number communicates both the minor and pat
 From the preceding table you can see several policies:
 
 - The Runtime and SDK share major and minor versions. The first two numbers for a given SDK and runtime should match. All the preceding examples are part of the .NET T5.0 release stream.
-- The patch version of the runtime revs only when the runtime is updated. The SDK patch number won't update for a runtime patch.
+- The patch version of the runtime revs only when the runtime is updated. The SDK patch number doesn't update for a runtime patch.
 - The patch version of the SDK revs only when the SDK is updated. It's possible that a runtime patch doesn't require an SDK patch.
 
 NOTES:
@@ -93,7 +93,7 @@ After a release goes out, the release branches generally stop producing daily bu
 
 The .NET runtime maintains a high level of compatibility between versions. .NET apps should, by and large, continue to work after upgrading to a new major .NET runtime version.
 
-Each major .NET runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an app after upgrade. For example, a performance improvement in the .NET runtime (that's not considered to be a breaking change) can expose latent app threading bugs that cause the app to not work on that version. It's expected for large apps to require a few fixes after upgrading to a new .NET runtime major version.
+Each major .NET runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an app after upgrade. For example, a performance improvement in the .NET runtime (that's not considered a breaking change) can expose latent app threading bugs that cause the app to not work on that version. It's expected for large apps to require a few fixes after upgrading to a new .NET runtime major version.
 
 By default, .NET apps are configured to run on a given .NET runtime major version, so recompilation is highly recommended to upgrade the app to run on a new .NET runtime major version. Then retest the app after upgrading to identify any issues.
 

@@ -30,7 +30,7 @@ The third position of the SDK version number communicates both the minor and pat
 
 From the preceding table you can see several policies:
 
-- The Runtime and SDK share major and minor versions. The first two numbers for a given SDK and runtime should match. All the preceding examples are part of the .NET T5.0 release stream.
+- The Runtime and SDK share major and minor versions. The first two numbers for a given SDK and runtime should match. All the preceding examples are part of the .NET 5.0 release stream.
 - The patch version of the runtime revs only when the runtime is updated. The SDK patch number doesn't update for a runtime patch.
 - The patch version of the SDK revs only when the SDK is updated. It's possible that a runtime patch doesn't require an SDK patch.
 

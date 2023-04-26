@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "generics [C#], methods"
 ms.assetid: 673eeea2-4b48-4faa-9c4e-2e89449221b9
 ---
-# Generic Methods (C# Programming Guide)
+# Generic methods (C# programming guide)
 
 A generic method is a method that is declared with type parameters, as follows:  
   
@@ -28,7 +28,19 @@ A generic method is a method that is declared with type parameters, as follows:
   
  If you define a generic method that takes the same type parameters as the containing class, the compiler generates warning [CS0693](../../misc/cs0693.md) because within the method scope, the argument supplied for the inner `T` hides the argument supplied for the outer `T`. If you require the flexibility of calling a generic class method with type arguments other than the ones provided when the class was instantiated, consider providing another identifier for the type parameter of the method, as shown in `GenericList2<T>` in the following example.  
   
- [!code-csharp[csProgGuideGenerics#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#26)]  
+```csharp
+class GenericList<T>
+{
+    // CS0693
+    void SampleMethod<T>() { }
+}
+
+class GenericList2<T>
+{
+    //No warning
+    void SampleMethod<U>() { }
+}
+```
   
  Use constraints to enable more specialized operations on type parameters in methods. This version of `Swap<T>`, now named `SwapIfGreater<T>`, can only be used with type arguments that implement <xref:System.IComparable%601>.  
   

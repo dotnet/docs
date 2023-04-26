@@ -6,7 +6,7 @@ namespace Prime.UnitTests.Services
     [TestFixture]
     public class PrimeService_IsPrimeShould
     {
-        private PrimeService _primeService;
+        private PrimeService? _primeService;
 
         [SetUp]
         public void SetUp()
@@ -17,7 +17,7 @@ namespace Prime.UnitTests.Services
         [Test]
         public void IsPrime_InputIs1_ReturnFalse()
         {
-            var result = _primeService.IsPrime(1);
+            var result = _primeService?.IsPrime(1);
 
             Assert.IsFalse(result, "1 should not be prime");
         }
@@ -28,7 +28,7 @@ namespace Prime.UnitTests.Services
         [TestCase(1)]
         public void IsPrime_ValuesLessThan2_ReturnFalse(int value)
         {
-            var result = _primeService.IsPrime(value);
+            var result = _primeService?.IsPrime(value);
 
             Assert.IsFalse(result, $"{value} should not be prime");
         }

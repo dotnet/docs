@@ -48,7 +48,7 @@ namespace ca1019_2
 
         public string MandatoryData { get; }
 
-        public string OptionalData { get; set; }
+        public string? OptionalData { get; set; }
     }
     //</snippet2>
 
@@ -56,10 +56,10 @@ namespace ca1019_2
     {
         //<snippet3>
         [GoodCustomAttribute("ThisIsSomeMandatoryData", OptionalData = "ThisIsSomeOptionalData")]
-        public string MyProperty { get; set; }
+        public string? MyProperty { get; set; }
 
         [GoodCustomAttribute("ThisIsSomeMoreMandatoryData")]
-        public string MyOtherProperty { get; set; }
+        public string? MyOtherProperty { get; set; }
         //</snippet3>
     }
 }

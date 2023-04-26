@@ -3,10 +3,10 @@
     //<snippet1>
     public class BadClassWithWriteOnlyProperty
     {
-        string _someName;
+        string? _someName;
 
         // Violates rule PropertiesShouldNotBeWriteOnly.
-        public string Name
+        public string? Name
         {
             set
             {
@@ -17,7 +17,7 @@
 
     public class GoodClassWithReadWriteProperty
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
     //</snippet1>
 }

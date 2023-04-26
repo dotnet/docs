@@ -8,7 +8,7 @@ namespace ca1810
     public class StaticConstructor
     {
         static int someInteger;
-        static string resourceString;
+        static string? resourceString;
 
         static StaticConstructor()
         {
@@ -27,9 +27,9 @@ namespace ca1810
     public class NoStaticConstructor
     {
         static int someInteger = 3;
-        static string resourceString = InitializeResourceString();
+        static string? resourceString = InitializeResourceString();
 
-        static string InitializeResourceString()
+        static string? InitializeResourceString()
         {
             ResourceManager stringManager =
                new ResourceManager("strings", Assembly.GetExecutingAssembly());

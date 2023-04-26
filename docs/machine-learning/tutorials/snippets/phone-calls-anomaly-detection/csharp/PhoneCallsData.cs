@@ -8,7 +8,7 @@ namespace PhoneCallsAnomalyDetection
     public class PhoneCallsData
     {
         [LoadColumn(0)]
-        public string timestamp;
+        public string? timestamp;
 
         [LoadColumn(1)]
         public double value;
@@ -18,7 +18,7 @@ namespace PhoneCallsAnomalyDetection
     {
         //vector to hold anomaly detection results. Including isAnomaly, anomalyScore, magnitude, expectedValue, boundaryUnits, upperBoundary and lowerBoundary.
         [VectorType(7)]
-        public double[] Prediction { get; set; }
+        public double[]? Prediction { get; set; }
     }
     // </SnippetDeclareTypes>
 }

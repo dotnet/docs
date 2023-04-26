@@ -109,7 +109,7 @@ void ClassifySingleImage(MLContext mlContext, ITransformer model)
 
     Console.WriteLine("=============== Making single image classification ===============");
     // <SnippetDisplayPrediction>
-    Console.WriteLine($"Image: {Path.GetFileName(imageData.ImagePath)} predicted as: {prediction.PredictedLabelValue} with score: {prediction.Score.Max()} ");
+    Console.WriteLine($"Image: {Path.GetFileName(imageData.ImagePath)} predicted as: {prediction.PredictedLabelValue} with score: {prediction.Score?.Max()} ");
     // </SnippetDisplayPrediction>
 }
 
@@ -118,7 +118,7 @@ void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
     // <SnippetDisplayPredictions>
     foreach (ImagePrediction prediction in imagePredictionData)
     {
-        Console.WriteLine($"Image: {Path.GetFileName(prediction.ImagePath)} predicted as: {prediction.PredictedLabelValue} with score: {prediction.Score.Max()} ");
+        Console.WriteLine($"Image: {Path.GetFileName(prediction.ImagePath)} predicted as: {prediction.PredictedLabelValue} with score: {prediction.Score?.Max()} ");
     }
     // </SnippetDisplayPredictions>
 }
@@ -138,18 +138,18 @@ struct InceptionSettings
 public class ImageData
 {
     [LoadColumn(0)]
-    public string ImagePath;
+    public string? ImagePath;
 
     [LoadColumn(1)]
-    public string Label;
+    public string? Label;
 }
 // </SnippetDeclareImageData>
 
 // <SnippetDeclareImagePrediction>
 public class ImagePrediction : ImageData
 {
-    public float[] Score;
+    public float[]? Score;
 
-    public string PredictedLabelValue;
+    public string? PredictedLabelValue;
 }
 // </SnippetDeclareImagePrediction>

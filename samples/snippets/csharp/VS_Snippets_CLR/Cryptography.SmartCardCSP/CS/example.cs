@@ -1,9 +1,11 @@
 ﻿//<SNIPPET1>
 using System;
+using System.Runtime.Versioning;
 using System.Security.Cryptography;
 
 namespace SmartCardSign
 {
+    [SupportedOSPlatform("windows")]
     class SCSign
     {
         static void Main(string[] args)

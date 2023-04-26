@@ -6,8 +6,13 @@ using System.Threading;
 
 public class SortKeyComparer : IComparer<String>
 {
-    public int Compare(string str1, string str2)
+    public int Compare(string? str1, string? str2)
     {
+        if (str1 == null && str2 == null) return 0;
+
+        if (str1 == null) return -1;
+        if (str2 == null) return 1;
+
         SortKey sk1, sk2;
         sk1 = CultureInfo.CurrentCulture.CompareInfo.GetSortKey(str1);
         sk2 = CultureInfo.CurrentCulture.CompareInfo.GetSortKey(str2);

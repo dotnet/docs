@@ -57,9 +57,8 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   This breaks all code that uses the renamed or removed type.
 
-  .NET's policy for obsoleting APIs is as follows:
-
-  > An API that shipped in a long-term support (LTS) release must be obsoleted in the subsequent LTS release before it can be removed. In rare cases, exceptions are made to obsolete an API before the subsequent LTS release based on business needs. All obsoletions are documented and communicated to customers.
+> [!NOTE]
+> [!INCLUDE [obsoletion-policy](includes/obsoletion-policy.md)]
 
   For more information about .NET's support policy, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy).
 
@@ -332,6 +331,10 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Changing the number of times given events are called**
 
 - ❌ **DISALLOWED: Adding the <xref:System.FlagsAttribute> to an enumeration type**
+
+## API removal
+
+[!INCLUDE [obsoletion-policy](includes/obsoletion-policy.md)]
 
 ## See also
 

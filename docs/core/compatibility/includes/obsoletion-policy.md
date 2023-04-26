@@ -7,6 +7,6 @@ ms.date: 04/26/2023
 
 - Marking the API as obsolete or providing build diagnostics.
 - Blogging about it.
-- Posting in [dotnet/announcements](https://github.com/dotnet/announcements).
+- Documenting it under [Breaking changes in .NET](../breaking-changes.md).
 
 In most cases, an API that shipped in a long-term support (LTS) release must be obsoleted in the subsequent LTS release before it can be removed. In rare cases based on business needs, exceptions are made to obsolete an API before the subsequent LTS release. All obsoletions are documented and communicated to customers.

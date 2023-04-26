@@ -332,10 +332,6 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding the <xref:System.FlagsAttribute> to an enumeration type**
 
-## API removal
-
-[!INCLUDE [obsoletion-policy](includes/obsoletion-policy.md)]
-
 ## See also
 
 - [Breaking changes in .NET](../compatibility/breaking-changes.md)

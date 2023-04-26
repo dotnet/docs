@@ -15,7 +15,7 @@ ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
 .NET Framework and the common language runtime strive to support backward compatibility (allowing applications that were developed with one version of .NET Framework to run on the next version of .NET Framework). This makes it difficult to simply remove a type or a type member. Instead, .NET Framework indicated that a type or a type member should no longer be used by marking it as *obsolete* or *deprecated*. By obsoleting a type or a member, developers were aware that it would go away and had time to respond to its removal. However, existing code that uses the type or member continued to run in the new version of .NET.
 
 > [!NOTE]
-> In .NET (Core), obsoleting an API doesn't necessarily mean that the API will be removed. For more information, see [API removal in .NET](../../core/compatibility/includes/obsoletion-policy.md).
+> In .NET (Core), obsoleting an API doesn't necessarily mean that the API will be removed. For more information, see [API removal in .NET](../../core/compatibility/api-removal.md).
 
 ## The ObsoleteAttribute attribute
 

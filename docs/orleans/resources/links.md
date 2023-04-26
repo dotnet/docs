@@ -27,7 +27,6 @@ In this article, you'll discover a listing of various links from the Orleans tea
 - [Introduction To Project Orleans](https://ideasof.andersaberg.com/development/Introduction-To-Orleans)
 - [Introduction to Orleans](https://channel9.msdn.com/Events/TechDays/Techdays-2014-the-Netherlands/Introduction-to-Orleans)
 - [Project Orleans: Different Than Erlang, Designed for a Broad Group of Developers](https://thenewstack.io/project-orleans-different-than-erlang-designed-for-a-broad-group-of-developers/)
-- [Two Reasons You May Want to Use Microsoft's Project Orleans](https://www.bloggedbychris.com/2015/03/18/reasons-project-orleans/)
 - [Hatay Tuna & Christian Martinez - Applied Actor Model with Orleans](https://github.com/hataytuna/Distributed/blob/master/Applied%20Actor%20Model%20with%20Orleans%20v1.1.pdf)
 - [Actor Programming with Orleans: What's Different?](https://www.postsharp.net/blog/post/Actor-Programming-with-Orleans-Whats-Different)
 - [Project Orleans - Actor Model framework](https://www.slideshare.net/nmackenzie/project-orleans)

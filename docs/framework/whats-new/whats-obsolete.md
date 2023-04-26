@@ -12,10 +12,10 @@ ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
 
 .NET Framework changed over time. Each new version added new types and type members that provided new functionality. Existing types and their members also changed over time. For example, some types became less important as the technology they supported was replaced by a new technology, and some methods were superseded by newer methods that are superior in some way.
 
-.NET Framework and the common language runtime strive to support backward compatibility (allowing applications that were developed with one version of .NET Framework to run on the next version of .NET Framework). This makes it difficult to simply remove a type or a type member. Instead, .NET Framework indicated that a type or a type member should no longer be used by marking it as *obsolete* or *deprecated*. By deprecating a type or a member, developers were aware that it would go away and had time to respond to its removal. However, existing code that uses the type or member continued to run in the new version of .NET.
+.NET Framework and the common language runtime strive to support backward compatibility (allowing applications that were developed with one version of .NET Framework to run on the next version of .NET Framework). This makes it difficult to simply remove a type or a type member. Instead, .NET Framework indicated that a type or a type member should no longer be used by marking it as *obsolete* or *deprecated*. By obsoleting a type or a member, developers were aware that it would go away and had time to respond to its removal. However, existing code that uses the type or member continued to run in the new version of .NET.
 
 > [!NOTE]
-> The terms *obsolete* and *deprecated* have the same meaning when applied to .NET Framework types and members.
+> In .NET \[Core], obsoleting an API doesn't necessarily mean that the API will be removed. For more information, see [](../../core/compatibility/includes/obsoletion-policy.md).
 
 ## The ObsoleteAttribute attribute
 

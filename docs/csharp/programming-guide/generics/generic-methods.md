@@ -31,13 +31,13 @@ A generic method is a method that is declared with type parameters, as follows:
 ```csharp
 class GenericList<T>
 {
-    // CS0693
+    // CS0693.
     void SampleMethod<T>() { }
 }
 
 class GenericList2<T>
 {
-    //No warning
+    // No warning.
     void SampleMethod<U>() { }
 }
 ```

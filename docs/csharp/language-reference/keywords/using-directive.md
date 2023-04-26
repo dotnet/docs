@@ -41,7 +41,7 @@ The `using` directive can appear:
 - At the beginning of a source code file, before any namespace or type declarations.
 - In any namespace, but before any namespaces or types declared in that namespace, unless the `global` modifier is used, in which case the directive must appear before all namespace and type declarations.
 
-Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
+Otherwise, compiler error [CS1529](../compiler-messages/using-directive-errors.md) is generated.
 
 Create a `using` directive to use the types in a namespace without having to specify the namespace. A `using` directive doesn't give you access to any namespaces that are nested in the namespace you specify. Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 

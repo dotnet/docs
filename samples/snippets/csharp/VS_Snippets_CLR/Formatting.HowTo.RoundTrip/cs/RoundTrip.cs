@@ -37,7 +37,7 @@ public class Class1
         using StreamReader inFile = new StreamReader(fileName);
         dateString = inFile.ReadLine();
 
-        if (dateString != null)
+        if (dateString is not null)
         {
             restoredDate = DateTime.Parse(dateString, null, DateTimeStyles.RoundtripKind);
             Console.WriteLine("Read {0} ({2}) from {1}.", restoredDate.ToString(),
@@ -75,7 +75,7 @@ public class Class1
         using StreamReader inFile = new StreamReader(fileName);
         dateString = inFile.ReadLine();
 
-        if (dateString != null)
+        if (dateString is not null)
         {
             restoredDateOff = DateTimeOffset.Parse(dateString, null,
                                                    DateTimeStyles.RoundtripKind);

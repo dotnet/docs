@@ -19,8 +19,6 @@ namespace HowToStrings
 
             SortListOfStrings();
             SearchSortedList();
-
-            ReferenceEqualAndInterning();
         }
 
         private static void OrdinalDefaultComparisons()

@@ -27,7 +27,7 @@ namespace LinqFaroShuffle
             var firstIter = first.GetEnumerator();
             var secondIter = second.GetEnumerator();
 
-            while (((firstIter?.MoveNext() == true) && secondIter.MoveNext())
+            while ((firstIter?.MoveNext() == true) && secondIter.MoveNext())
             {
                 if ((firstIter.Current is not null) && !firstIter.Current.Equals(secondIter.Current))
                 {

@@ -92,7 +92,7 @@ Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
-### Comments in appsettings.json
+### Comments in global.json
 
 Comments in *global.json* files are supported using JavaScript or C# style comments. For example:
 

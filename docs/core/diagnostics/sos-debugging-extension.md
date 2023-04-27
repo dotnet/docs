@@ -204,7 +204,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 
 | Command  | Description
 | - | -
-| `!dumparray -start 2 -length 5 -detail 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+| `!dumparray -start 2 -length 5 -details 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 | `!dumpassembly 1ca248` | Displays the contents of an assembly at the address `1ca248`.
 | `!dumpheap` | Displays information about the garbage collector heap.
 | `!DumpLog` | Writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
@@ -223,7 +223,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 
 | Command  | Description
 | - | -
-| `dumparray -start 2 -length 5 -detail 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+| `dumparray -start 2 -length 5 -details 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 | `dumpassembly 1ca248` | Displays the contents of an assembly at the address `1ca248`.
 | `dumpheap` | Displays information about the garbage collector heap.
 | `dumplog` | Writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.

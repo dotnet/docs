@@ -23,7 +23,7 @@ class ExampleWithFiles
     {
         var sw = Stopwatch.StartNew();
         int count = 0;
-        string[] files = null;
+        string[]? files = null;
         try
         {
             files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
@@ -39,7 +39,7 @@ class ExampleWithFiles
         }
 
         var fileContents =
-            from FileName in files.AsParallel()
+            from FileName in files?.AsParallel()
             let extension = Path.GetExtension(FileName)
             where extension == ".txt" || extension == ".htm"
             let Text = File.ReadAllText(FileName)

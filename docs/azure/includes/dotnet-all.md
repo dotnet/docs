@@ -22,7 +22,7 @@
 | Core - Client - AMQP | NuGet [1.3.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.3.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme) | GitHub [1.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.3.0/sdk/core/Azure.Core.Amqp/) |
 | Core - Client - Core | NuGet [1.31.0](https://www.nuget.org/packages/Azure.Core/1.31.0) | [docs](/dotnet/api/overview/azure/Core-readme) | GitHub [1.31.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.31.0/sdk/core/Azure.Core/) |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
-| Data Movement | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement/12.0.0-beta.1) |  | GitHub [12.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.DataMovement_12.0.0-beta.1/sdk/storage/Azure.Storage.DataMovement/) |
+| Data Movement | NuGet [12.0.0-beta.2](https://www.nuget.org/packages/Azure.Storage.DataMovement/12.0.0-beta.2) |  | GitHub [12.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.DataMovement_12.0.0-beta.2/sdk/storage/Azure.Storage.DataMovement/) |
 | Dev Center | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Developer.DevCenter/1.0.0-beta.2) |  | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.DevCenter_1.0.0-beta.2/sdk/devcenter/Azure.Developer.DevCenter/) |
 | Device Update | NuGet [1.0.0](https://www.nuget.org/packages/Azure.IoT.DeviceUpdate/1.0.0) | [docs](/dotnet/api/overview/azure/IoT.DeviceUpdate-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.DeviceUpdate_1.0.0/sdk/deviceupdate/Azure.IoT.DeviceUpdate/) |
 | Digital Twins - Core | NuGet [1.4.0](https://www.nuget.org/packages/Azure.DigitalTwins.Core/1.4.0) | [docs](/dotnet/api/overview/azure/DigitalTwins.Core-readme) | GitHub [1.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.DigitalTwins.Core_1.4.0/sdk/digitaltwins/Azure.DigitalTwins.Core/) |
@@ -258,7 +258,7 @@
 | Azure.Communication.Calling | NuGet [1.0.0-beta.36](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.36) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.2) |  |  |
-| Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.1](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.1) |  |  |
+| Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.2](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.2) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Management - Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |

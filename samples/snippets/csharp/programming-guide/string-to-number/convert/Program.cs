@@ -11,7 +11,7 @@ public class ConvertStringExample1
         {
             Console.Write("Enter a number between −2,147,483,648 and +2,147,483,647 (inclusive): ");
 
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
 
             // ToInt32 can throw FormatException or OverflowException.
             try
@@ -36,8 +36,8 @@ public class ConvertStringExample1
             }
 
             Console.Write("Go again? Y/N: ");
-            string go = Console.ReadLine();
-            if (go.ToUpper() != "Y")
+            string? go = Console.ReadLine();
+            if (go?.ToUpper() != "Y")
             {
                 repeat = false;
             }

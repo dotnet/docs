@@ -36,18 +36,24 @@ namespace LinqFaroShuffle
     public class Program
     {
         #region snippet4
-        static IEnumerable<Suit> Suits() => Enum.GetValues(typeof(Suit)) as IEnumerable<Suit>;
+        static IEnumerable<Suit> Suits() => (Enum.GetValues(typeof(Suit)) as IEnumerable<Suit>)!;
         #endregion
 
         #region snippet5
-        static IEnumerable<Rank> Ranks() => Enum.GetValues(typeof(Rank)) as IEnumerable<Rank>;
+        static IEnumerable<Rank> Ranks() => (Enum.GetValues(typeof(Rank)) as IEnumerable<Rank>)!;
         #endregion
 
         #region snippet1
         public static void Main(string[] args)
         {
-            var startingDeck = (from s in Suits().LogQuery("Suit Generation")
-                                from r in Ranks().LogQuery("Value Generation")
+            IEnumerable<Suit>? suits = Suits();
+            IEnumerable<Rank>? ranks = Ranks();
+
+            if ((suits is null) || (ranks is null))
+                return;
+
+            var startingDeck = (from s in suits.LogQuery("Suit Generation")
+                                from r in ranks.LogQuery("Value Generation")
                                 select new { Suit = s, Rank = r })
                                 .LogQuery("Starting Deck")
                                 .ToArray();

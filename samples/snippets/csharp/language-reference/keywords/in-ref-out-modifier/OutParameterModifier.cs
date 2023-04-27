@@ -30,7 +30,7 @@ namespace InRefOutModifier
         private static void MultipleOutParameters()
         {
             // <Snippet3>
-            void Method(out int answer, out string message, out string stillNull)
+            void Method(out int answer, out string message, out string? stillNull)
             {
                 answer = 44;
                 message = "I've been returned";
@@ -38,7 +38,8 @@ namespace InRefOutModifier
             }
 
             int argNumber;
-            string argMessage, argDefault;
+            string argMessage;
+            string? argDefault;
             Method(out argNumber, out argMessage, out argDefault);
             Console.WriteLine(argNumber);
             Console.WriteLine(argMessage);

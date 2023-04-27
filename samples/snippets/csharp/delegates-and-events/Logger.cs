@@ -19,9 +19,9 @@ namespace DelegatesAndEvents
     // <SnippetLoggerFinal>
     public static class Logger
     {
-        public static Action<string> WriteMessage;
+        public static Action<string>? WriteMessage;
 
-        public static Severity LogLevel {get;set;} = Severity.Warning;
+        public static Severity LogLevel { get; set; } = Severity.Warning;
 
         public static void LogMessage(Severity s, string component, string msg)
         {
@@ -29,7 +29,8 @@ namespace DelegatesAndEvents
                 return;
 
             var outputMsg = $"{DateTime.Now}\t{s}\t{component}\t{msg}";
-            WriteMessage(outputMsg);
+            if (WriteMessage is not null)
+                WriteMessage(outputMsg);
         }
     }
     // </SnippetLoggerFinal>
@@ -40,11 +41,12 @@ namespace ImplementationOne
     // <SnippetFirstImplementation>
     public static class Logger
     {
-        public static Action<string> WriteMessage;
+        public static Action<string>? WriteMessage;
 
         public static void LogMessage(string msg)
         {
-            WriteMessage(msg);
+            if (WriteMessage is not null)
+                WriteMessage(msg);
         }
     }
     // </SnippetFirstImplementation>
@@ -57,12 +59,13 @@ namespace ImplementationTwo
     // <SnippetLoggerTwo>
     public static class Logger
     {
-        public static Action<string> WriteMessage;
+        public static Action<string>? WriteMessage;
 
         public static void LogMessage(Severity s, string component, string msg)
         {
             var outputMsg = $"{DateTime.Now}\t{s}\t{component}\t{msg}";
-            WriteMessage(outputMsg);
+            if (WriteMessage is not null)
+                WriteMessage(outputMsg);
         }
     }
     // </SnippetLoggerTwo>

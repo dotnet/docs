@@ -4,7 +4,7 @@ description: This article explains how the .NET SDK and Runtime are versioned (s
 ms.date: 04/26/2023
 ---
 
-# Overview of how .NET is versioned
+# How .NET is versioned
 
 The [.NET Runtime and the .NET SDK](../introduction.md) add new features at different frequencies. In general, the SDK is updated more frequently than the Runtime. This article explains the runtime and the SDK version numbers.
 
@@ -99,10 +99,11 @@ By default, .NET apps are configured to run on a given .NET runtime major versio
 
 Suppose upgrading via app recompilation isn't feasible. In that case, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an app to run on a higher major .NET runtime version than the version it was compiled for. These settings don't change the risks involved in upgrading the app to a higher major .NET runtime version, and it's still required to retest the app post upgrade.
 
-The .NET runtime supports loading libraries that target older .NET runtime versions. An app upgraded to newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It isn't necessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the app.
+The .NET runtime supports loading libraries that target older .NET runtime versions. An app that's upgraded to a newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It's unnecessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the app.
 
 ## See also
 
+- [Breaking changes in .NET](../compatibility/breaking-changes.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [.NET distribution packaging](../distribution-packaging.md)
 - [.NET Support Lifecycle Fact Sheet](https://dotnet.microsoft.com/platform/support/policy)

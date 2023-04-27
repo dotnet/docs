@@ -288,7 +288,7 @@
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0-beta.3) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Json/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |

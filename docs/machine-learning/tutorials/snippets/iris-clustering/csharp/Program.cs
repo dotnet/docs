@@ -41,5 +41,5 @@ var predictor = mlContext.Model.CreatePredictionEngine<IrisData, ClusterPredicti
 // <SnippetPredictionExample>
 var prediction = predictor.Predict(TestIrisData.Setosa);
 Console.WriteLine($"Cluster: {prediction.PredictedClusterId}");
-Console.WriteLine($"Distances: {string.Join(" ", prediction.Distances ?? new float[0])}");
+Console.WriteLine($"Distances: {string.Join(" ", prediction.Distances ?? Array.Empty<float>())}");
 // </SnippetPredictionExample>

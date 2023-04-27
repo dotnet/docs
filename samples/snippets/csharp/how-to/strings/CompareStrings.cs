@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace HowToStrings
@@ -305,12 +306,8 @@ namespace HowToStrings
             else
                 Console.WriteLine("a and b are not interned.");
 
-            string c = String.Copy(a);
-
-            if (String.ReferenceEquals(a, c))
-                Console.WriteLine("a and c are interned.");
-            else
-                Console.WriteLine("a and c are not interned.");
+            // This snippets outputs the following:
+            // a and b are interned.
             // </Snippet9>
         }
     }

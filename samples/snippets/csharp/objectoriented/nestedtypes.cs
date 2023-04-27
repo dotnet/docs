@@ -28,12 +28,12 @@ namespace objectoriented
         //</SnippetPublicNestedClass>
     }
 
-        //<SnippetDeclareNestedInstance>
+    //<SnippetDeclareNestedInstance>
     public class Container
     {
         public class Nested
         {
-            private Container parent;
+            private Container? parent;
 
             public Nested()
             {

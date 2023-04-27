@@ -115,7 +115,7 @@ Collection classes such as <xref:System.Collections.Hashtable?displayProperty=na
 ## Reference equality and string interning
 
 None of the samples have used <xref:System.Object.ReferenceEquals%2A>. This method determines if two strings
-are the same object, which can lead to inconsistent results in string comparisons. The following example demonstrates the _string interning_ feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are _interned_ meaning they share the same storage. The strings `a` and `c` are not.
+are the same object, which can lead to inconsistent results in string comparisons. When a program declares two or more identical string variables, the compiler stores them all in the same location. This is known as _string interning_. By calling the <xref:System.Object.ReferenceEquals%2A> method in the following example, you can see that the two strings actually refer to the same object in memory.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet9":::
 

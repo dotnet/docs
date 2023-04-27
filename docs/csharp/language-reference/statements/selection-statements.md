@@ -1,5 +1,5 @@
 ---
-title: "if and switch statements - select execution path among branches."
+title: "if and switch statements - select a code path to execute"
 description: "The `if` and `switch` statements provide branching logic in C#. You use `if, `else` and `switch` to choose the path your program follows."
 ms.date: 11/22/2022
 f1_keywords:
@@ -17,9 +17,9 @@ helpviewer_keywords:
   - "case keyword [C#]"
   - "default keyword [C#]"
 ---
-# Selection statements - `if`, `else`, and `switch`
+# Selection statements - `if`, `if-else`, and `switch`
 
-The `if`, `else` and `switch` statements select statements to execute from many possible paths based on the value of an expression. The `if` [statement](#the-if-statement) selects a statement to execute based on the value of a Boolean expression. An `if` statement can be combined with `else` to choose two distinct paths based on the Boolean expression. The `switch` [statement](#the-switch-statement) selects a statement list to execute based on a pattern match with an expression.
+The `if`, `if-else` and `switch` statements select statements to execute from many possible paths based on the value of an expression. The [`if` statement](#the-if-statement) executes a statement only if a provided Boolean expression evaluates to `true`. The [`if-else` statement](#the-if-statement) allows you to choose which of the two code paths to follow based on a Boolean expression. The [`switch` statement](#the-switch-statement) selects a statement list to execute based on a pattern match with an expression.
 
 ## The `if` statement
 
@@ -58,7 +58,7 @@ The preceding example also demonstrates the `default` case. The `default` case s
 A `switch` statement executes the *statement list* in the first *switch section* whose *case pattern* matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That is a case that is already handled by an upper case or whose pattern is impossible to match.
 
 > [!NOTE]
-> The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is always evaluated last and only if all other case patterns aren't matched, except if `goto default` is encountered.
+> The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is evaluated only if all other case patterns aren't matched or the `goto default;` statement is executed in one of the switch sections.
 
 You can specify multiple case patterns for one section of a `switch` statement, as the following example shows:
 
@@ -83,7 +83,7 @@ For more information, see the following sections of the [C# language specificati
 - [The `if` statement](~/_csharpstandard/standard/statements.md#1382-the-if-statement)
 - [The `switch` statement](~/_csharpstandard/standard/statements.md#1383-the-switch-statement)
 
-For more information about pattern matching `switch` statement, see [Pattern matching](/dotnet/csharp/language-reference/language-specification/patterns).
+For more information about patterns, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

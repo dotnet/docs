@@ -1,6 +1,6 @@
 ---
 title: "fixed statement - pin a moveable variable"
-description: "Use the C# fixed statement to pin a moveable variable for a block. Use the `fixed` statement to safely access the memory for a variable knowing that the memory location won't change."
+description: "Use the C# `fixed` statement to pin a moveable variable and declare a pointer to that variable. The address of a pinned variable doesn't change during execution of the statement."
 ms.date: 11/22/2022
 f1_keywords: 
   - "fixed_CSharpKeyword"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "fixed statement [C#]"
   - "fixed keyword [C#]"
 ---
-# fixed statement - safely access memory underlying a variable
+# fixed statement - pin a variable for pointer operations
 
 The `fixed` statement prevents the [garbage collector](../../../standard/garbage-collection/index.md) from relocating a moveable variable and declares a pointer to that variable. The address of a fixed, or pinned, variable doesn't change during execution of the statement. You can use the declared pointer only inside the corresponding `fixed` statement. The declared pointer is readonly and can't be modified:
 
@@ -56,5 +56,5 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
-- [Pointer related operators](../operators/pointer-related-operators.md)
+- [Pointer-related operators](../operators/pointer-related-operators.md)
 - [unsafe](../keywords/unsafe.md)

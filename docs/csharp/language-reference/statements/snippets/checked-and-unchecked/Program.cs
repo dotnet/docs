@@ -9,14 +9,14 @@ void MainExample()
 
     unchecked
     {
-        Console.WriteLine(a + 1);  // output: 0
+        Console.WriteLine(a + 3);  // output: 2
     }
 
     try
     {
         checked
         {
-            Console.WriteLine(a + 1);
+            Console.WriteLine(a + 3);
         }
     }
     catch (OverflowException e)

@@ -57,10 +57,8 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   This breaks all code that uses the renamed or removed type.
 
-> [!NOTE]
-> [!INCLUDE [obsoletion-policy](includes/obsoletion-policy.md)]
-
-  For more information about .NET's support policy, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy).
+  > [!NOTE]
+  > In rare cases, .NET may remove a public API. For more information, see [API removal in .NET](api-removal.md). For information about .NET's support policy, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy).
 
 - ❌ **DISALLOWED: Changing the underlying type of an enumeration**
 

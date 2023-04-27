@@ -101,7 +101,7 @@ public class DateInTimeZone
 
     public DateInTimeZone(DateTimeOffset date, TimeZoneInfo timeZone)
     {
-        if (timeZone == null)
+        if (timeZone is null)
             throw new ArgumentNullException("timeZone", "The time zone cannot be null.");
 
         this.thisDate = date;
@@ -123,9 +123,6 @@ public class DateInTimeZone
         }
     }
 
-    public TimeZoneInfo? TimeZone
-    {
-        get => tz;
-    }
+    public TimeZoneInfo? TimeZone => tz;
 }
 // </Snippet3>

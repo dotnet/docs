@@ -11,6 +11,6 @@ ms.topic: conceptual
 
 - By marking the API as obsolete or providing build diagnostics.
 - By blogging about it.
-- By documenting it under [Breaking changes in .NET](../breaking-changes.md).
+- By documenting it under [Breaking changes in .NET](breaking-changes.md).
 
 In most cases, an API that shipped in a long-term support (LTS) release is obsoleted in the subsequent LTS release before it's removed. In rare cases, based on business needs, exceptions are made to obsolete an API before the subsequent LTS release. All obsoletions are documented and communicated to customers.

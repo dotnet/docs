@@ -294,21 +294,5 @@ namespace HowToStrings
             }
             //</snippet8>
         }
-
-        private static void ReferenceEqualAndInterning()
-        {
-            // <Snippet9>
-            string a = "The computer ate my source code.";
-            string b = "The computer ate my source code.";
-
-            if (String.ReferenceEquals(a, b))
-                Console.WriteLine("a and b are interned.");
-            else
-                Console.WriteLine("a and b are not interned.");
-
-            // This snippets outputs the following:
-            // a and b are interned.
-            // </Snippet9>
-        }
     }
 }

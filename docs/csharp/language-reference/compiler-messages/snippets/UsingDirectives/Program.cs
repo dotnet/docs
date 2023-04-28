@@ -19,11 +19,6 @@ using static unsafe UnsafeExamples.UnsafeType;
 //using NullableString = System.String?;
 using NullableInt = System.Int32?;
 
-namespace UnsafeExamples;
-unsafe static class UnsafeType
-{
-    public static int* field;
-
-}
+Console.WriteLine("Using directives");
 
 

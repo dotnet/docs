@@ -20,5 +20,7 @@ You can also view individual issues that detail the breaking changes introduced 
 
 ## See also
 
+- [API removal in .NET](api-removal.md)
+- [.NET runtime compatibility](../versions/index.md#net-runtime-compatibility)
 - [Migrate from .NET Framework to .NET Core](../porting/index.md)
 - [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)

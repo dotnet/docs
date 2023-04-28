@@ -22,6 +22,8 @@ You can use an [object or collection initializer](../../programming-guide/classe
 
 [!code-csharp-interactive[constructor with initializer](snippets/shared/NewOperator.cs#ConstructorWithInitializer)]
 
+### Target-typed `new`
+
 Beginning with C# 9.0, constructor invocation expressions are target-typed. That is, if a target type of an expression is known, you can omit a type name, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/NewOperator.cs" id="SnippetTargetTyped":::

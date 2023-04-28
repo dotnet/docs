@@ -1,6 +1,6 @@
 ---
 title: "Jump statements - break, continue, return, and goto"
-description: "C# jump statements (break, continue, return, and goto), unconditionally transfer control from the current location to a different statement. These locations jump to a new location."
+description: "C# jump statements (break, continue, return, and goto) unconditionally transfer control from the current location to a different statement."
 ms.date: 11/22/2022
 f1_keywords:
   - "break_CSharpKeyword"
@@ -19,7 +19,7 @@ helpviewer_keywords:
 ---
 # Jump statements - `break`, `continue`, `return`, and `goto`
 
-Four C# statements unconditionally transfer control. The `break` [statement](#the-break-statement), terminates the closest enclosing [iteration statement](iteration-statements.md) or `switch` [statement](selection-statements.md#the-switch-statement). The `continue` [statement](#the-continue-statement) starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md). The `return` [statement](#the-return-statement): terminates execution of the function in which it appears and returns control to the caller. The `ref` modifier on a `return` statement indicates the returned expression is returned *by reference*, not *by value*. The `goto` [statement](#the-goto-statement): transfers control to a statement that is marked by a label.
+The jump statements unconditionally transfer control. The [`break` statement](#the-break-statement) terminates the closest enclosing [iteration statement](iteration-statements.md) or [`switch` statement](selection-statements.md#the-switch-statement). The [`continue` statement](#the-continue-statement) starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md). The [`return` statement](#the-return-statement) terminates execution of the function in which it appears and returns control to the caller. The [`goto` statement](#the-goto-statement) transfers control to a statement that is marked by a label.
 
 For information about the `throw` statement that throws an exception and unconditionally transfers control as well, see [The `throw` statement](exception-handling-statements.md#the-throw-statement) section of the [Exception-handling statements](exception-handling-statements.md) article.
 
@@ -59,11 +59,11 @@ If a function member computes a value, you use the `return` statement with an ex
 
 When the `return` statement has an expression, that expression must be implicitly convertible to the return type of a function member unless it's [async](../keywords/async.md). The expression returned from an `async` function must be implicitly convertible to the type argument of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>, whichever is the return type of the function. If the return type of an `async` function is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, you use the `return` statement without expression.
 
+### Ref returns
+
 By default, the `return` statement returns the value of an expression. You can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
-
-### Ref returns
 
 Return values can be returned by reference (`ref` returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#ref-locals). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
 
@@ -117,7 +117,7 @@ You can also use the `goto` statement in the [`switch` statement](selection-stat
 
 Within the `switch` statement, you can also use the statement `goto default;` to transfer control to the switch section with the `default` label.
 
-If a label with the given name doesn't exist in the current function member, or if the `goto` statement isn't within the scope of the label, a compile-time error occurs. That is, you can't use the `goto` statement to transfer control out of the current function member or into any nested scope, for example, a `try` block.
+If a label with the given name doesn't exist in the current function member, or if the `goto` statement isn't within the scope of the label, a compile-time error occurs. That is, you can't use the `goto` statement to transfer control out of the current function member or into any nested scope.
 
 ## C# language specification
 

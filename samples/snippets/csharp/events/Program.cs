@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿ using System.IO;
 
 namespace EventSampleCode
 {
@@ -64,7 +64,7 @@ namespace EventSampleCode
     public class FileSearcher
     {
         // <SnippetDeclareEvent>
-        public event EventHandler<FileFoundArgs> FileFound;
+        public event EventHandler<FileFoundArgs>? FileFound;
         // </SnippetDeclareEvent>
         // <SnippetDeclareSearchEvent>
         internal event EventHandler<SearchDirectoryArgs> DirectoryChanged
@@ -72,7 +72,7 @@ namespace EventSampleCode
             add { _directoryChanged += value; }
             remove { _directoryChanged -= value; }
         }
-        private EventHandler<SearchDirectoryArgs> _directoryChanged;
+        private EventHandler<SearchDirectoryArgs>? _directoryChanged;
         // </SnippetDeclareSearchEvent>
 
         // <SnippetFinalImplementation>
@@ -142,7 +142,7 @@ namespace VersionOne
     // <SnippetFileSearcherV1>
     public class FileSearcher
     {
-        public event EventHandler<FileFoundArgs> FileFound;
+        public event EventHandler<FileFoundArgs>? FileFound;
 
         public void Search(string directory, string searchPattern)
         {

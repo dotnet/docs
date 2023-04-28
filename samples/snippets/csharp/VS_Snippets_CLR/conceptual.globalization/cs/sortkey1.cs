@@ -6,12 +6,17 @@ using System.Threading;
 
 public class SortKeyComparer : IComparer<String>
 {
-    public int Compare(string str1, string str2)
+    public int Compare(string? str1, string? str2)
     {
-        SortKey sk1, sk2;
-        sk1 = CultureInfo.CurrentCulture.CompareInfo.GetSortKey(str1);
-        sk2 = CultureInfo.CurrentCulture.CompareInfo.GetSortKey(str2);
-        return SortKey.Compare(sk1, sk2);
+        return (str1, str2) switch
+        {
+            (null, null) => 0,
+            (null, _) => -1,
+            (_, null) => 1,
+            (var s1, var s2) => SortKey.Compare(
+                CultureInfo.CurrentCulture.CompareInfo.GetSortKey(s1),
+                CultureInfo.CurrentCulture.CompareInfo.GetSortKey(s1))
+        };
     }
 }
 

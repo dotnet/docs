@@ -6,8 +6,6 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            CsCsrefProgrammingGenerics.ConsoleApplication1.Program.Main(args);
-            GenericVariance.Program.Main(args);
         }
     }
 }

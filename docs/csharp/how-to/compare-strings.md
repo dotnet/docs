@@ -112,18 +112,6 @@ Always make sure to use the same type of comparison for sorting and searching. U
 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>.
 
-## Reference equality and string interning
-
-None of the samples have used <xref:System.Object.ReferenceEquals%2A>. This method determines if two strings
-are the same object, which can lead to inconsistent results in string comparisons. The following example demonstrates the _string interning_ feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are _interned_ meaning they share the same storage. The strings `a` and `c` are not.
-
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet9":::
-
-> [!NOTE]
-> When you test for equality of strings, you should use the methods that explicitly specify what kind of comparison you intend to perform. Your code is much more maintainable and readable. Use the overloads of the methods of the <xref:System.String?displayProperty=nameWithType> and <xref:System.Array?displayProperty=nameWithType> classes that take a <xref:System.StringComparison> enumeration parameter. You specify which type of comparison to perform. Avoid using the `==` and `!=` operators when you test for equality. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods always perform an ordinal case-sensitive comparison. They are primarily suited for ordering strings alphabetically.
-
-You can intern a string or retrieve a reference to an existing interned string by calling the <xref:System.String.Intern%2A?displayProperty=nameWithType> method. To determine whether a string is interned, call the <xref:System.String.IsInterned%2A?displayProperty=nameWithType> method.
-
 ## See also
 
 - <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>

@@ -137,6 +137,7 @@ let another = $$$"""A string with pairs of {{ and }} characters and {{{ "an F# e
 ```
 
 Number of `%` characters needed for format specifiers is affected in the same way:
+
 ```fsharp
 let percent = $$"""50% of 20 is %%.1f{{20m * 0.5m}}"""
 // "50% of 20 is 10.0"

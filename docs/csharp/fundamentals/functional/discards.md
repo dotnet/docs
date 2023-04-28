@@ -29,7 +29,7 @@ Discards are useful in working with tuples when your application code uses some 
 
 For more information on deconstructing tuples with discards, see [Deconstructing tuples and other types](deconstruct.md#tuple-elements-with-discards).
 
-The `Deconstruct` method of a class, structure, or interface also allows you to retrieve and deconstruct a specific set of data from an object. You can use discards when you're interested in working with only a subset of the deconstructed values. The following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state), but discards the last name and the state.
+The `Deconstruct` method of a class, structure, or interface also allows you to retrieve and deconstruct a specific set of data from an object. You can use discards when you're interested in working with only a subset of the deconstructed values. The following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state), but discards the middle name and the state.
 
 :::code language="csharp" source="snippets/discards/discard-class.cs" :::
 

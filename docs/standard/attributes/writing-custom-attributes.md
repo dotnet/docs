@@ -158,4 +158,4 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 - <xref:System.Attribute?displayProperty=nameWithType>
 - <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>
 - [Attributes](index.md)
-- [Attribute parameter types](~/_csharpstandard/standard/attributes.md#2124-attribute-parameter-types)
+- [Attribute parameter types](~/_csharpstandard/standard/attributes.md#2224-attribute-parameter-types)

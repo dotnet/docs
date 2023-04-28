@@ -22,6 +22,8 @@ You can use an [object or collection initializer](../../programming-guide/classe
 
 [!code-csharp-interactive[constructor with initializer](snippets/shared/NewOperator.cs#ConstructorWithInitializer)]
 
+### Target-typed `new`
+
 Beginning with C# 9.0, constructor invocation expressions are target-typed. That is, if a target type of an expression is known, you can omit a type name, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/NewOperator.cs" id="SnippetTargetTyped":::
@@ -60,7 +62,7 @@ A user-defined type can't overload the `new` operator.
 
 ## C# language specification
 
-For more information, see [The new operator](~/_csharpstandard/standard/expressions.md#11816-the-new-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see [The new operator](~/_csharpstandard/standard/expressions.md#12816-the-new-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about a target-typed `new` expression, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/target-typed-new.md).
 

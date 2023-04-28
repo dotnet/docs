@@ -10,8 +10,8 @@ namespace object_collection_initializers
     {
         class StudentName
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
+            public string? FirstName { get; set; }
+            public string? LastName { get; set; }
             public int ID { get; set; }
         }
 

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,9 +10,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
-    <PackageReference Include="Microsoft.Orleans.Server" Version="7.1.1" />
-    <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="7.1.1" />
-    <PackageReference Include="Microsoft.Orleans.Serialization.SystemTextJson" Version="7.1.1" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Orleans.Serialization.SystemTextJson" Version="7.1.2" />
   </ItemGroup>
 
   <ItemGroup>

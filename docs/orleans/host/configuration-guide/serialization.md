@@ -1,38 +1,81 @@
 ---
-title: Serialization overview in Orleans
+title: Serialization in Orleans
 description: Learn about serialization and custom serializers in .NET Orleans.
-ms.date: 12/15/2022
+ms.date: 4/19/2023
 uid: orleans-serialization
 zone_pivot_groups: orleans-version
 ---
 
-# Serialization overview in Orleans
-
-Orleans has an advanced and extensible serialization framework. Orleans serializes data types passed in grain request and response messages as well as grain persistent state objects. As part of this framework, Orleans automatically generates serialization code for those data types. In addition to generating a more efficient serialization/deserialization for types that are already .NET-serializable, Orleans also tries to generate serializers for types used in grain interfaces that are not .NET-serializable. The framework also includes a set of efficient built-in serializers for frequently used types: lists, dictionaries, strings, primitives, arrays, etc.
-
-Two important features of Orleans's serializer set it apart from a lot of other third-party serialization frameworks: dynamic types/arbitrary polymorphism and object identity.
-
-1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types that can be passed in grain calls and maintain the dynamic nature of the actual data type. That means, for example, that if the method in the grain interfaces is declared to accept <xref:System.Collections.IDictionary> but at runtime, the sender passes <xref:System.Collections.Generic.SortedDictionary%602>, the receiver will indeed get `SortedDictionary` (although the "static contract"/grain interface did not specify this behavior).
-
-1. **Maintaining object identity**: If the same object is passed multiple types in the arguments of a grain call or is indirectly pointed more than once from the arguments, Orleans will serialize it only once. On the receiver side, Orleans will restore all references correctly so that two pointers to the same object still point to the same object after deserialization as well. Object identity is important to preserve in scenarios like the following. Imagine actor A is sending a dictionary with 100 entries to actor B, and 10 of the keys in the dictionary point to the same object, obj, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of obj. With object identity-preserved, the dictionary on B's side looks exactly like on A's side with those 10 keys pointing to a single object obj.
-
-The above two behaviors are provided by the standard .NET binary serializer and it was therefore important for us to support this standard and familiar behavior in Orleans as well.
+# Serialization in Orleans
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-## Generated serializers
+There are broadly two kinds of serialization used in Orleans:
 
-Starting with Orleans 7.0 a version-tolerant serializer was introduced. This change was made because applications tend to evolve and this led to a significant pitfall for developers, since the previous serializer couldn't tolerate adding properties to existing types. On the other hand, the serializer was flexible, allowing developers to represent most .NET types without modification, including features such as generics, polymorphism, and reference tracking. A replacement was long overdue, but users still need the high-fidelity representation of their types. Therefore, a replacement serializer was introduced in Orleans 7.0 which supports the high-fidelity representation of .NET types while also allowing types to evolve. The serializer in Orleans 7.0 is much more efficient than the previous serializer, resulting in up to 170% higher end-to-end throughput.
+* **Grain call serialization** - used to serialize objects passed to and from grains.
+* **Grain storage serialization** - used to serialize objects to and from storage systems.
 
-The new serializer requires you to be explicit about which types and members are serialized. We have tried to make this as pain-free as possible. You must mark all serializable types with <xref:Orleans.CodeGeneration.GenerateSerializerAttribute?displayProperty=nameWithType> to instruct Orleans to generate serializer code for your type. Once you have done this, you can use the included code-fix to add the required <xref:Orleans.IdAttribute?displayProperty=nameWithType> to the serializable members on your types, as demonstrated here:
+The majority of this article is dedicated to grain call serialization via the serialization framework included in Orleans. The [Grain storage serializers](#grain-storage-serializers) section discusses the grain storage serialization.
+
+## Use Orleans serialization
+
+Orleans includes an advanced and extensible serialization framework which can be referred to as **Orleans.Serialization**. The serialization framework included in Orleans is designed to meet the following goals:
+
+* **High-performance** - The serializer is designed and optimized for performance. More details are available in [this presentation](https://www.youtube.com/watch?v=kgRag4E6b4c).
+* **High-fidelity** - The serializer faithfully represents the majority of .NET's type system, including support for generics, polymorphism, inheritance hierarchies, object identity, and cyclic graphs. Pointers are not supported, since they are not portable across processes.
+* **Flexibility** - The serializer can be customized to support third-party libraries by creating [*surrogates*](#surrogates-for-serializing-foreign-types) or delegating to external serialization libraries such as **System.Text.Json**, **Newtonsoft.Json**, and **Google.Protobuf**.
+* **Version-tolerance** - The serializer allows application types to evolve over time, supporting:
+  * Adding and removing members
+  * Sub-classing
+  * Numeric widening and narrowing (e.g: `int` to/from `long`, `float` to/from `double`)
+  * Renaming types
+
+High-fidelity representation of types is fairly uncommon for serializers, so some points warrant further elaboration:
+
+1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types that can be passed in grain calls and maintain the dynamic nature of the actual data type. That means, for example, that if the method in the grain interfaces is declared to accept <xref:System.Collections.IDictionary> but at runtime, the sender passes <xref:System.Collections.Generic.SortedDictionary%602>, the receiver will indeed get `SortedDictionary` (although the "static contract"/grain interface did not specify this behavior).
+
+1. **Maintaining object identity**: If the same object is passed multiple types in the arguments of a grain call or is indirectly pointed more than once from the arguments, Orleans will serialize it only once. On the receiver side, Orleans will restore all references correctly so that two pointers to the same object still point to the same object after deserialization as well. Object identity is important to preserve in scenarios like the following. Imagine grain A is sending a dictionary with 100 entries to grain B, and 10 of the keys in the dictionary point to the same object, `obj`, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of `obj`. With object identity-preserved, the dictionary on B's side looks exactly like on A's side with those 10 keys pointing to a single object `obj`. Note that because the default string hash code implementations in .NET are randomized per-process, ordering of values in dictionaries and hash sets (for example) may not be preserved.
+
+To support version tolerance, the serializer requires developers to be explicit about which types and members are serialized. We have tried to make this as pain-free as possible. You must mark all serializable types with <xref:Orleans.CodeGeneration.GenerateSerializerAttribute?displayProperty=nameWithType> to instruct Orleans to generate serializer code for your type. Once you have done this, you can use the included code-fix to add the required <xref:Orleans.IdAttribute?displayProperty=nameWithType> to the serializable members on your types, as demonstrated here:
 
 :::image type="content" source="media/generate-serializer-code-fix.gif" alt-text="An animated image of the available code fix being suggested and applied on the GenerateSerializerAttribute when the containing type doesn't contain IdAttribute's on its members." lightbox="media/generate-serializer-code-fix.gif":::
 
-By default, Orleans will serialize your type by encoding its full name. You can override this by adding an <xref:Orleans.AliasAttribute?displayProperty=nameWithType>. Doing so will result in your type being serialized using a name that is resistant to renaming the underlying class or moving it between assemblies. Type aliases are globally scoped, and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyGenericType<T, U>` could have the alias <code>[Alias("mytype\`2")]</code>.
+Here is an example of a serializable type in Orleans, demonstrating how to apply the attributes.
 
-## Serialize `record` types
+```csharp
+[GenerateSerializer]
+public class Employee
+{
+    [Id(0)]
+    public string Name { get; set; }
+}
+```
+
+Orleans supports inheritance and will serialize the individual layers in the hierarchy separately, allowing them to have distinct member ids.
+
+```csharp
+[GenerateSerializer]
+public class Publication
+{
+    [Id(0)]
+    public string Title { get; set; }
+}
+
+[GenerateSerializer]
+public class Book : Publication
+{
+    [Id(0)]
+    public string ISBN { get; set; }
+}
+```
+
+In the preceding code, note that both `Publication` and `Book` have members with `[Id(0)]` even though `Book` derives from `Publication`. This is the recommended practice in Orleans because members identifiers are scoped to the inheritance level, not the type as a whole. Members can be added and removed from `Publication` and `Book` independently, but a new base class cannot be inserted into the hierarchy once the application has been deployed without special consideration.
+
+By default, Orleans will serialize your type by encoding its full name. You can override this by adding an <xref:Orleans.AliasAttribute?displayProperty=nameWithType>. Doing so will result in your type being serialized using a name that is resilient to renaming the underlying class or moving it between assemblies. Type aliases are globally scoped, and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyGenericType<T, U>` could have the alias <code>[Alias("mytype\`2")]</code>.
+
+## Serializing `record` types
 
 Members defined in a record's primary constructor have implicit ids by default. In other words, Orleans supports serializing `record` types. This means that you cannot change the parameter order for an already deployed type, since that breaks compatibility with previous versions of your application (in the case of a rolling upgrade) and with serialized instances of that type in storage and streams. Members defined in the body of a record type don't share identities with the primary constructor parameters.
 
@@ -189,63 +232,32 @@ public sealed class DerivedFromMyForeignLibraryType : MyForeignLibraryType
 }
 ```
 
-### Immutability enhancements
+## Versioning rules
 
-Orleans opts for safety by default. To ensure that values sent between grains are not modified after the call site or during transmission, these values are copied immediately when making a grain call or returning a response from a grain.
-In cases where a developer knows that a type will not be modified, Orleans can be instructed to skip this copy process.
-In previous version of Orleans, there were two ways to do this:
+Version-tolerance is supported provided the developer follows a set of rules when modifying types. If the developer is familiar with systems such as Google Protocol Buffers (Protobuf), then these rules will be familiar.
 
-1. Wrapping your value in <xref:Orleans.Concurrency.Immutable%601>, using `new Immutable<T>(myValue)`. This requires that your grain interface method parameters and return types are `Immutable<T>`, where `T` is the underlying type, so it can be quite invasive and it is extra ceremony.
-1. Marking your type with the <xref:Orleans.ImmutableAttribute>. This causes Orleans' code generator to emit code that avoids copying any object of that type.
+### Compound types (`class` & `struct`)
 
-Sometimes, you may not have control over the object, for example, it may be a `List<int>` that you are sending between grains. Other times, perhaps parts of your objects are immutable and other parts are not. For these cases, Orleans 7.0 introduces additional options.
+* Inheritance is supported, but modifying the inheritance hierarchy of an object is not supported. The base class of a class cannot be added, changed to another class, or removed.
+* With the exception of some numeric types, described in the *Numerics* section below, field types cannot be changed.
+* Fields can be added or removed at any point in an inheritance hierarchy.
+* Field ids cannot be changed.
+* Field ids must be unique for each level in a type hierarchy, but can be reused between base-classes and sub-classes. For example, `Base` class can declare a field with id `0` and a different field can be declared by `Sub : Base` with the same id, `0`.
 
-1. Method signatures can include <xref:Orleans.ImmutableAttribute> on a per-parameter basis:
+### Numerics
 
-    ```csharp
-    public interface ISummerGrain : IGrain
-    {
-      // `values` will not be copied.
-      ValueTask<int> Sum([Immutable] List<int> values);
-    }
-    ```
+* The *signedness* of a numeric field cannot be changed.
+  * Conversions between `int` & `uint` are invalid.
+* The *width* of a numeric field can be changed.
+  * Eg: conversions from `int` to `long` or `ulong` to `ushort` are supported.
+  * Conversions which narrow the width will throw if the runtime value of a field would cause an overflow.
+    * Conversion from `ulong` to `ushort` are only supported if the value at runtime is less than `ushort.MaxValue`.
+    * Conversions from `double` to `float` are only supported if the runtime value is between `float.MinValue` and `float.MaxValue`.
+    * Similarly for `decimal`, which has a narrower range than both `double` and `float`.
 
-1. Individual properties and fields can be marked as <xref:Orleans.ImmutableAttribute> to prevent copies being made when instances of the containing type are copied.
+## Copiers
 
-    ```csharp
-    [GenerateSerializer]
-    public sealed class MyType
-    {
-        [Id(0), Immutable]
-        public List<int> ReferenceData { get; set; }
-        
-        [Id(1)]
-        public List<int> RunningTotals { get; set; }
-    }
-    ```
-
-## Grain storage serializers
-
-Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain%601.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState%601> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there is now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, which offers a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern that involves setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer%2A?displayProperty=nameWithType> property on the provider's options class, for example:
-
-- <xref:Orleans.Configuration.DynamoDBStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
-- <xref:Orleans.Configuration.AzureBlobStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
-- <xref:Orleans.Configuration.AzureTableStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
-- <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer>
-
-Grain storage serialization currently defaults to `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this, using [OptionsBuilder\<TOptions\>](../../../core/extensions/options.md#optionsbuilder-api):
-
-```csharp
-siloBuilder.AddAzureBlobGrainStorage(
-    "MyGrainStorage",
-    (OptionsBuilder<AzureBlobStorageOptions> optionsBuilder) =>
-    {
-        optionsBuilder.Configure<IMySerializer>(
-            (options, serializer) => options.GrainStorageSerializer = serializer);
-    });
-```
-
-For more information, see [OptionsBuilder API](../../../core/extensions/options.md#optionsbuilder-api).
+Orleans promotes safety by default. This includes safety from some classes of concurrency bugs. In particular, Orleans will immediately copy objects passed in grain calls by default. This copying is facilitated by Orleans.Serialization and when <xref:Orleans.CodeGeneration.GenerateSerializerAttribute?displayProperty=nameWithType> is applied to a type, Orleans will also generate copiers for that type. Orleans will avoid copying types or individual members which are marked using the <xref:Orleans.Concurrency.ImmutableAttribute>. For more details, see [Serialization of immutable types in Orleans](./serialization-immutability.md).
 
 ## Serialization best practices
 
@@ -275,11 +287,44 @@ For more information, see [OptionsBuilder API](../../../core/extensions/options.
   - You can narrow numeric member types but it will result in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value were encountered.
 - ❌ **Do not** change the signedness of a numeric type member. You must not change a member's type from `uint` to `int` or an `int` to a `uint`, for example.
 
+## Grain storage serializers
+
+Orleans includes a provider-backed persistence model for grains, accessed via the <xref:Orleans.Grain%601.State?displayName=nameWithType> property or by injecting one or more <xref:Orleans.Runtime.IPersistentState%601> values into your grain. Before Orleans 7.0, each provider had a different mechanism for configuring serialization. In Orleans 7.0, there is now a general-purpose grain state serializer interface, <xref:Orleans.Storage.IGrainStorageSerializer>, which offers a consistent way to customize state serialization for each provider. Supported storage providers implement a pattern that involves setting the <xref:Orleans.Storage.IStorageProviderSerializerOptions.GrainStorageSerializer%2A?displayProperty=nameWithType> property on the provider's options class, for example:
+
+- <xref:Orleans.Configuration.DynamoDBStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
+- <xref:Orleans.Configuration.AzureBlobStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
+- <xref:Orleans.Configuration.AzureTableStorageOptions.GrainStorageSerializer?displayProperty=nameWithType>
+- <xref:Orleans.Configuration.AdoNetGrainStorageOptions.GrainStorageSerializer>
+
+Grain storage serialization currently defaults to `Newtonsoft.Json` to serialize state. You can replace this by modifying that property at configuration time. The following example demonstrates this, using [OptionsBuilder\<TOptions\>](../../../core/extensions/options.md#optionsbuilder-api):
+
+```csharp
+siloBuilder.AddAzureBlobGrainStorage(
+    "MyGrainStorage",
+    (OptionsBuilder<AzureBlobStorageOptions> optionsBuilder) =>
+    {
+        optionsBuilder.Configure<IMySerializer>(
+            (options, serializer) => options.GrainStorageSerializer = serializer);
+    });
+```
+
+For more information, see [OptionsBuilder API](../../../core/extensions/options.md#optionsbuilder-api).
+
 :::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
+
+Orleans has an advanced and extensible serialization framework. Orleans serializes data types passed in grain request and response messages as well as grain persistent state objects. As part of this framework, Orleans automatically generates serialization code for those data types. In addition to generating a more efficient serialization/deserialization for types that are already .NET-serializable, Orleans also tries to generate serializers for types used in grain interfaces that are not .NET-serializable. The framework also includes a set of efficient built-in serializers for frequently used types: lists, dictionaries, strings, primitives, arrays, etc.
+
+Two important features of Orleans's serializer set it apart from a lot of other third-party serialization frameworks: dynamic types/arbitrary polymorphism and object identity.
+
+1. **Dynamic types and arbitrary polymorphism**: Orleans doesn't enforce restrictions on the types that can be passed in grain calls and maintain the dynamic nature of the actual data type. That means, for example, that if the method in the grain interfaces is declared to accept <xref:System.Collections.IDictionary> but at runtime, the sender passes <xref:System.Collections.Generic.SortedDictionary%602>, the receiver will indeed get `SortedDictionary` (although the "static contract"/grain interface did not specify this behavior).
+
+1. **Maintaining object identity**: If the same object is passed multiple types in the arguments of a grain call or is indirectly pointed more than once from the arguments, Orleans will serialize it only once. On the receiver side, Orleans will restore all references correctly so that two pointers to the same object still point to the same object after deserialization as well. Object identity is important to preserve in scenarios like the following. Imagine grain A is sending a dictionary with 100 entries to grain B, and 10 of the keys in the dictionary point to the same object, obj, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of obj. With object identity-preserved, the dictionary on B's side looks exactly like on A's side with those 10 keys pointing to a single object obj.
+
+The above two behaviors are provided by the standard .NET binary serializer and it was therefore important for us to support this standard and familiar behavior in Orleans as well.
 
 ## Generated serializers
 

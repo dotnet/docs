@@ -26,7 +26,9 @@ dotnet restore -h|--help
 
 ## Description
 
-The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file.  In most cases, you don't need to explicitly use the `dotnet restore` command, since a NuGet restore is run implicitly if necessary when you run the following commands:
+A .NET project typically references external libraries in [NuGet](https://www.nuget.org) packages that provide additional functionality. These external dependencies are referenced in the project file (*.csproj* or *.vbproj*). When you run the `dotnet restore` command, the .NET CLI uses NuGet to look for these dependencies and download them if necessary. It also ensures that all the dependencies required by the project are compatible with each other and that there are no conflicts between them. Once the command is completed, all the dependencies required by the project are available in a local cache and can be used by the .NET CLI to build and run the application.
+
+In most cases, you don't need to explicitly use the `dotnet restore` command, since a NuGet restore is run implicitly if necessary when you run the following commands:
 
 - [`dotnet new`](dotnet-new.md)
 - [`dotnet build`](dotnet-build.md)

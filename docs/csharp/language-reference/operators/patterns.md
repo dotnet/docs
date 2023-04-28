@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
 
-You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using boolean logic keywords `and`, `or`, and `not`.
+You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using Boolean logic keywords `and`, `or`, and `not`.
 
 The following C# expressions and statements support pattern matching:
 
@@ -281,9 +281,10 @@ For more information, see the [List patterns](~/_csharplang/proposals/csharp-11.
 
 ## C# language specification
 
-For more information, see the following feature proposal notes:
+For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-- [C# 7 - Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
+For information about features added in C# 8 and later, see the following feature proposal notes:
+
 - [C# 8 - Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [C# 9 - Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
 - [C# 10 - Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)

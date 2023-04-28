@@ -189,7 +189,7 @@ An async method that has a `void` return type can't be awaited, and the caller o
 
 An async method can't declare [in](../language-reference/keywords/in-parameter-modifier.md), [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values.
 
-For more information and examples, see [Async return types (C#)](async-return-types.md). For more information about how to catch exceptions in async methods, see [try-catch](../language-reference/keywords/try-catch.md).
+For more information and examples, see [Async return types (C#)](async-return-types.md).
 
 Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:
 

@@ -929,16 +929,6 @@ items:
       items:
       - name: Statement categories
         href: language-reference/keywords/statement-keywords.md
-      - name: Exception Handling Statements
-        items:
-        - name: throw
-          href: language-reference/keywords/throw.md
-        - name: try-catch
-          href: language-reference/keywords/try-catch.md
-        - name: try-finally
-          href: language-reference/keywords/try-finally.md
-        - name: try-catch-finally
-          href: language-reference/keywords/try-catch-finally.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1134,6 +1124,9 @@ items:
     - name: Declaration statements
       displayName: var, ref
       href: language-reference/statements/declarations.md
+    - name: Exception-handling statements
+      displayName: throw, try, catch, finally, when, error, fault
+      href: language-reference/statements/exception-handling-statements.md
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md
@@ -1263,6 +1256,8 @@ items:
       href: ../../_csharpstandard/standard/variables.md
     - name: Conversions
       href: ../../_csharpstandard/standard/conversions.md
+    - name: Patterns
+      href: ../../_csharpstandard/standard/patterns.md
     - name: Expressions
       href: ../../_csharpstandard/standard/expressions.md
     - name: Statements
@@ -1299,26 +1294,16 @@ items:
       href: ../../_csharpstandard/standard/bibliography.md
   - name: C# 7.0 - 12 features
     items:
-    - name: C# 7.0 features
+    - name: C# 7.n features
       items:
-      - name: Pattern matching
-        href: ../../_csharplang/proposals/csharp-7.0/pattern-matching.md
       - name: Async task types
         href: ../../_csharplang/proposals/csharp-7.0/task-types.md
-    - name: C# 7.1 features
-      items:
-      - name: Pattern matching with generics
-        href: ../../_csharplang/proposals/csharp-7.1/generics-pattern-match.md
-    - name: C# 7.2 features
-      items:
       - name: Readonly references
         href: ../../_csharplang/proposals/csharp-7.2/readonly-ref.md
       - name: Compile-time safety for ref-like types
         href: ../../_csharplang/proposals/csharp-7.2/span-safety.md
       - name: Conditional ref
         href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
-    - name: C# 7.3 features
-      items:
       - name: Ref local reassignment
         href: ../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
       - name: Stackalloc array initializers

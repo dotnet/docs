@@ -153,6 +153,10 @@ The `yield return` statement is not allowed in lambda expressions, see [compiler
 
 While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
 
+## C# language specification
+
+For more information, see the [Local function declarations](~/_csharpstandard/standard/statements.md#1364-local-function-declarations) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+
 ## See also
 
 - [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)

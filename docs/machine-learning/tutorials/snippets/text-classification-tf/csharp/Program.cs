@@ -110,8 +110,8 @@ void PredictSentiment(MLContext mlContext, ITransformer model)
     // </SnippetPredict>
 
     // <SnippetDisplayPredictions>
-    Console.WriteLine("Number of classes: {0}", sentimentPrediction.Prediction?.Length);
-    Console.WriteLine("Is sentiment/review positive? {0}", sentimentPrediction.Prediction?[1] > 0.5 ? "Yes." : "No.");
+    Console.WriteLine($"Number of classes: {sentimentPrediction.Prediction?.Length}");
+    Console.WriteLine($"Is sentiment/review positive? {(sentimentPrediction.Prediction?[1] > 0.5 ? "Yes." : "No.")}");
     // </SnippetDisplayPredictions>
 
     /////////////////////////////////// Expected output ///////////////////////////////////

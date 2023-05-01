@@ -52,11 +52,8 @@ namespace example
             testEntryPoint = a.EntryPoint;
 
             var oResult = a.EntryPoint?.Invoke(null, args);
-            int result = (oResult is not null) ? (int)oResult : -1;
-
             alc.Unload();
-
-            return result;
+            return (oResult is int result) ? result : -1;
         }
 
         static void Main(string[] args)

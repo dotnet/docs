@@ -12,9 +12,9 @@ namespace GitHubIssueClassification
         [LoadColumn(1)]
         public string? Area { get; set; }
         [LoadColumn(2)]
-        public string? Title { get; set; }
+        public required string Title { get; set; }
         [LoadColumn(3)]
-        public string? Description { get; set; }
+        public required string Description { get; set; }
     }
 
     public class IssuePrediction

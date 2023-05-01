@@ -27,7 +27,7 @@ The library is built-in as part of the shared framework for .NET Core 3.0 and la
 For framework versions earlier than .NET Core 3.0, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
 * .NET Standard 2.0 and later
-* .NET Framework 4.7.2 and later
+* .NET Framework 4.6.2 and later
 * .NET Core 2.1 and later
 * .NET 5 and later
 

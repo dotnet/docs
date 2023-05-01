@@ -33,9 +33,9 @@ public static class ValueTuples
     private static void DeconstructToPattern()
     {
         // <DeconstructToPattern>
-        for(int i = 4; i < 20;  i++)
+        for (int i = 4; i < 20;  i++)
         {
-            if (Math.DivRem(i, 3) is { Remainder: 0, Quotient: var q })
+            if (Math.DivRem(i, 3) is ( Quotient: var q, Remainder: 0 ))
             {
                 Console.WriteLine($"{i} is divisible by 3, with quotient {q}");
             }

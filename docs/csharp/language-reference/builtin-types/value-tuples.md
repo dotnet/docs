@@ -45,7 +45,7 @@ If you don't specify a field name, it may be inferred from the name of the corre
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="InferFieldNames":::
 
-The preceding example is called tuple projection initializers. The name of a variable isn't projected onto a tuple field name in the following cases:
+That's called tuple projection initializers. The name of a variable isn't projected onto a tuple field name in the following cases:
 
 - The candidate name is a member name of a tuple type, for example, `Item3`, `ToString`, or `Rest`.
 - The candidate name is a duplicate of another tuple field name, either explicit or implicit.
@@ -63,7 +63,7 @@ At compile time, the compiler replaces non-default field names with the correspo
 > [!TIP]
 > Enable .NET code style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to set a preference on inferred or explicit tuple field names.
 
-Beginning with C# 12, you can specify an alias for a tuple type with a [`using` statement](../keywords/using-directive.md#using-alias). The following example adds a `global using` alias for a Tuple type with two integer values for an allowed `Min` and `Max` value:
+Beginning with C# 12, you can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasTupleType":::
 

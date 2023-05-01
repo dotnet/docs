@@ -35,7 +35,7 @@ void DetectSpike(MLContext mlContext, int docSize, IDataView productSales)
 
     // STEP 2: Set the training algorithm
     // <SnippetAddSpikeTrainer>
-    var iidSpikeEstimator = mlContext.Transforms.DetectIidSpike(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95, pvalueHistoryLength: docSize / 4);
+    var iidSpikeEstimator = mlContext.Transforms.DetectIidSpike(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95d, pvalueHistoryLength: docSize / 4);
     // </SnippetAddSpikeTrainer>
 
     // STEP 3: Create the transform
@@ -62,14 +62,17 @@ void DetectSpike(MLContext mlContext, int docSize, IDataView productSales)
     // <SnippetDisplayResults1>
     foreach (var p in predictions)
     {
-        var results = $"{p.Prediction[0]}\t{p.Prediction[1]:f2}\t{p.Prediction[2]:F2}";
-
-        if (p.Prediction[0] == 1)
+        if (p.Prediction is not null)
         {
-            results += " <-- Spike detected";
-        }
+            var results = $"{p.Prediction[0]}\t{p.Prediction[1]:f2}\t{p.Prediction[2]:F2}";
 
-        Console.WriteLine(results);
+            if (p.Prediction[0] == 1)
+            {
+                results += " <-- Spike detected";
+            }
+
+            Console.WriteLine(results);
+        }
     }
     Console.WriteLine("");
     // </SnippetDisplayResults1>
@@ -81,7 +84,7 @@ void DetectChangepoint(MLContext mlContext, int docSize, IDataView productSales)
 
     //STEP 2: Set the training algorithm
     // <SnippetAddChangePointTrainer>
-    var iidChangePointEstimator = mlContext.Transforms.DetectIidChangePoint(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95, changeHistoryLength: docSize / 4);
+    var iidChangePointEstimator = mlContext.Transforms.DetectIidChangePoint(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95d, changeHistoryLength: docSize / 4);
     // </SnippetAddChangePointTrainer>
 
     //STEP 3: Create the transform
@@ -107,13 +110,16 @@ void DetectChangepoint(MLContext mlContext, int docSize, IDataView productSales)
     // <SnippetDisplayResults2>
     foreach (var p in predictions)
     {
-        var results = $"{p.Prediction[0]}\t{p.Prediction[1]:f2}\t{p.Prediction[2]:F2}\t{p.Prediction[3]:F2}";
-
-        if (p.Prediction[0] == 1)
+        if (p.Prediction is not null)
         {
-            results += " <-- alert is on, predicted changepoint";
+            var results = $"{p.Prediction[0]}\t{p.Prediction[1]:f2}\t{p.Prediction[2]:F2}\t{p.Prediction[3]:F2}";
+
+            if (p.Prediction[0] == 1)
+            {
+                results += " <-- alert is on, predicted changepoint";
+            }
+            Console.WriteLine(results);
         }
-        Console.WriteLine(results);
     }
     Console.WriteLine("");
     // </SnippetDisplayResults2>

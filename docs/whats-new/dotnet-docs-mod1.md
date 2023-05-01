@@ -19,10 +19,6 @@ Welcome to what's new in the .NET docs for April 2023. This article lists some o
 
 ## .NET fundamentals
 
-### New articles
-
-- [BinaryFormatter event source](../standard/serialization/binaryformatter-event-source.md)
-
 ### Updated articles
 
 - [What's new in .NET 8](../core/whats-new/dotnet-8.md) - What's new for Preview 3

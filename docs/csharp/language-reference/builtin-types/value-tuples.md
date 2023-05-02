@@ -71,6 +71,22 @@ After declaring the alias, you can use the `BandPass` name as an alias for that 
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="UseAliasType":::
 
+An alias doesn't introduce a new *type*, but only creates a synonym for an existing type. You can deconstruct a tuple declared with the `BandPass` alias the same as you can with its underlying tuple type:
+
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasSynonymUses":::
+
+As with tuple assignment or deconstruction, the tuple member names don't need to match; the types do.
+
+Similarly, a second alias with the same arity and member types can be used interchangeably with the original alias. You could declare a second alias:
+
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasSynonym":::
+
+You can assign a `Range` tuple to a `BandPass` tuple. As with all tuple assignment, the field names need not match, only the types and the arity.
+
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasSynonymUses":::
+
+An alias for a tuple type provides more semantic information when you use tuples. It doesn't introduce a new type. To provide nominal type safety, you should declare a positional [`record`](record.md) instead.
+
 ## Tuple assignment and deconstruction
 
 C# supports assignment between tuple types that satisfy both of the following conditions:
@@ -84,19 +100,23 @@ Tuple element values are assigned following the order of tuple elements. The nam
 
 You can also use the assignment operator `=` to *deconstruct* a tuple instance in separate variables. You can do that in many ways:
 
+- Use the `var` keyword outside the parentheses to declare implicitly typed variables and let the compiler infer their types:
+
+  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructVar":::
+
 - Explicitly declare the type of each variable inside parentheses:
 
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructExplicit":::
 
-- Use the `var` keyword outside the parentheses to declare implicitly typed variables and let the compiler infer their types:
+- Declare some explicit types and some implicit types (`var`) inside the parentheses:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructVar":::
+  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructMixed":::
 
 - Use existing variables:
 
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructExisting":::
 
-Any of these can be combined in a single deconstruction expression.
+The destination of a deconstruct expression can include both existing variables and variables declared in the deconstruction declaration.
 
 You can also combine deconstruction with [pattern matching](../../fundamentals/functional/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem%2A?displayProperty=nameWithType> and matches against a `Remainder` of 0:
 

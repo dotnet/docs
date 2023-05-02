@@ -2,6 +2,10 @@
 global using BandPass = (int Min, int Max);
 // </AliasTupleType>
 
+// <AliasSynonym>
+using Range = (int Minimum, int Maximum);
+// </AliasSynonym>
+
 namespace builtin_types;
 
 public static class ValueTuples
@@ -28,6 +32,14 @@ public static class ValueTuples
         BandPass bracket = (40, 100);
         Console.WriteLine($"The bandpass filter is {bracket.Min} to {bracket.Max}");
         // </UseAliasType>
+
+        // <AliasSynonymUses>
+        (int a , int b) = bracket;
+        Console.WriteLine($"The bracket is {a} to {b}");
+
+        Range r = bracket;
+        Console.WriteLine($"The range is {r.Minimum} to {r.Maximum}");
+        // </AliasSynonymUses>
     }
 
     private static void DeconstructToPattern()
@@ -199,6 +211,17 @@ public static class ValueTuples
         // Output:
         // Distance to post office is 3.6 kilometers.
         // </SnippetDeconstructVar>
+    }
+
+    private static void DeconstructMixed()
+    {
+        // <SnippetDeconstructMixed>
+        var t = ("post office", 3.6);
+        (var destination, double distance) = t;
+        Console.WriteLine($"Distance to {destination} is {distance} kilometers.");
+        // Output:
+        // Distance to post office is 3.6 kilometers.
+        // </SnippetDeconstructMixed>
     }
 
     private static void DeconstructExisting()

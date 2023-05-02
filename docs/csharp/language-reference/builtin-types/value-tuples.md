@@ -73,7 +73,7 @@ After declaring the alias, you can use the `BandPass` name as an alias for that 
 
 An alias doesn't introduce a new *type*, but only creates a synonym for an existing type. You can deconstruct a tuple declared with the `BandPass` alias the same as you can with its underlying tuple type:
 
-:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasSynonymUses":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructAlias":::
 
 As with tuple assignment or deconstruction, the tuple member names don't need to match; the types do.
 

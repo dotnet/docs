@@ -33,10 +33,12 @@ public static class ValueTuples
         Console.WriteLine($"The bandpass filter is {bracket.Min} to {bracket.Max}");
         // </UseAliasType>
 
-        // <AliasSynonymUses>
+        // <DeconstructAlias>
         (int a , int b) = bracket;
         Console.WriteLine($"The bracket is {a} to {b}");
+        // </DeconstructAlias>
 
+        // <AliasSynonymUses>
         Range r = bracket;
         Console.WriteLine($"The range is {r.Minimum} to {r.Maximum}");
         // </AliasSynonymUses>

@@ -5,7 +5,7 @@ ms.date: 04/04/2023
 ---
 # What's new in C# 12
 
-Some C# 12 features have been introduced in previews. The You can try these features using the latest [Visual Studio preview](https://visualstudio.microsoft.com/vs/preview/) or the latest [.NET 8 preview SDK](https://dotnet.microsoft.com/download/dotnet).
+Some C# 12 features have been introduced in previews. You can try these features using the latest [Visual Studio preview](https://visualstudio.microsoft.com/vs/preview/) or the latest [.NET 8 preview SDK](https://dotnet.microsoft.com/download/dotnet).
 
 - [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6 preview 2.
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5 preview 2.

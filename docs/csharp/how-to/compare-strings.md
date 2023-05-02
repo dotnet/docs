@@ -55,7 +55,7 @@ When performing a case-insensitive ordinal comparison, these methods use the cas
 
 ## Linguistic comparisons
 
-Unless overridden, many string comparison methods (such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>) default to using linguistic rules for the _current culture_ to order their inputs.
+Many string comparison methods (such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>) use linguistic rules for the _current culture_ by default to order their inputs.
 This is sometimes referred to as "word sort order." When you perform a
 linguistic comparison, some nonalphanumeric Unicode characters might have
 special weights assigned. For example, the hyphen "-" may have a small

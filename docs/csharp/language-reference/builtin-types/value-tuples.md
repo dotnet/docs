@@ -85,7 +85,7 @@ You can assign a `Range` tuple to a `BandPass` tuple. As with all tuple assignme
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasSynonymUses":::
 
-An alias for a tuple type provides more semantic information when you use tuples. It doesn't introduce a new type. To provide nominal type safety, you should declare a positional [`record`](record.md) instead.
+An alias for a tuple type provides more semantic information when you use tuples. It doesn't introduce a new type. To provide type safety, you should declare a positional [`record`](record.md) instead.
 
 ## Tuple assignment and deconstruction
 
@@ -108,7 +108,7 @@ You can also use the assignment operator `=` to *deconstruct* a tuple instance i
 
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructExplicit":::
 
-- Declare some explicit types and some implicit types (`var`) inside the parentheses:
+- Declare some types explicitly and other types implicitly (with `var`) inside the parentheses:
 
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructMixed":::
 

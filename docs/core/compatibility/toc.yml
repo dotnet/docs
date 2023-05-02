@@ -142,8 +142,6 @@ items:
         href: core-libraries/7.0/max-precision-numeric-format-strings.md
       - name: Reflection invoke API exceptions
         href: core-libraries/7.0/reflection-invoke-exceptions.md
-      - name: SerializationFormat.Binary is obsolete
-        href: core-libraries/7.0/serializationformat-binary.md
       - name: System.Runtime.CompilerServices.Unsafe NuGet package
         href: core-libraries/7.0/unsafe-package.md
       - name: Time fields on symbolic links
@@ -228,6 +226,8 @@ items:
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors
         href: serialization/7.0/binaryformatter-apis-produce-errors
+      - name: SerializationFormat.Binary is obsolete
+        href: serialization/7.0/serializationformat-binary
       - name: DataContractSerializer retains sign when deserializing -0
         href: serialization/7.0/datacontractserializer-negative-sign.md
       - name: Deserialize Version type with leading or trailing whitespace
@@ -982,8 +982,6 @@ items:
         href: core-libraries/7.0/max-precision-numeric-format-strings.md
       - name: Reflection invoke API exceptions
         href: core-libraries/7.0/reflection-invoke-exceptions.md
-      - name: SerializationFormat.Binary is obsolete
-        href: core-libraries/7.0/serializationformat-binary.md
       - name: System.Runtime.CompilerServices.Unsafe NuGet package
         href: core-libraries/7.0/unsafe-package.md
       - name: Time fields on symbolic links
@@ -1386,6 +1384,8 @@ items:
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors
         href: serialization/7.0/binaryformatter-apis-produce-errors
+      - name: SerializationFormat.Binary is obsolete
+        href: serialization/7.0/serializationformat-binary
       - name: DataContractSerializer retains sign when deserializing -0
         href: serialization/7.0/datacontractserializer-negative-sign.md
       - name: Deserialize Version type with leading or trailing whitespace

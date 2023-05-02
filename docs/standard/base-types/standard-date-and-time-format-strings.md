@@ -1,7 +1,7 @@
 ---
 title: "Standard date and time format strings"
 description: Learn how to use a standard date and time format string to define the text representation of a date and time value in .NET.
-ms.date: 01/25/2021
+ms.date: 04/05/2023
 dev_langs:
   - "csharp"
   - "vb"
@@ -43,7 +43,7 @@ A standard date and time format string uses a single character as the format spe
 |"G"|General date/time pattern (long time).<br /><br /> More information: [The general date long time ("G") format specifier](#GeneralDateLongTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45:30 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45:30 (zh-CN)|
 |"M", "m"|Month/day pattern.<br /><br /> More information: [The month ("M", "m") format specifier](#MonthDay).|2009-06-15T13:45:30 -> June 15 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15. juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> 15 Juni (id-ID)|
 |"O", "o"|round-trip date/time pattern.<br /><br /> More information: [The round-trip ("O", "o") format specifier](#Roundtrip).|<xref:System.DateTime> values:<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Local) --> 2009-06-15T13:45:30.0000000-07:00<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) --> 2009-06-15T13:45:30.0000000Z<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Unspecified) --> 2009-06-15T13:45:30.0000000<br /><br /> <xref:System.DateTimeOffset> values:<br /><br /> 2009-06-15T13:45:30-07:00 --> 2009-06-15T13:45:30.0000000-07:00|
-|"R", "r"|RFC1123 pattern.<br /><br /> More information: [The RFC1123 ("R", "r") format specifier](#RFC1123).|2009-06-15T13:45:30 -> Mon, 15 Jun 2009 20:45:30 GMT|
+|"R", "r"|RFC1123 pattern.<br /><br /> More information: [The RFC1123 ("R", "r") format specifier](#RFC1123).|<xref:System.DateTimeOffset> input: 2009-06-15T13:45:30 -> Mon, 15 Jun 2009 20:45:30 GMT<br/><xref:System.DateTime> input: 2009-06-15T13:45:30 -> Mon, 15 Jun 2009 13:45:30 GMT |
 |"s"|Sortable date/time pattern.<br /><br /> More information: [The sortable ("s") format specifier](#Sortable).|2009-06-15T13:45:30 (DateTimeKind.Local) -> 2009-06-15T13:45:30<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) -> 2009-06-15T13:45:30|
 |"t"|Short time pattern.<br /><br /> More information: [The short time ("t") format specifier](#ShortTime).|2009-06-15T13:45:30 -> 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45 م (ar-EG)|
 |"T"|Long time pattern.<br /><br /> More information: [The long time ("T") format specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
@@ -287,7 +287,7 @@ The following example uses the "o" format specifier to create a formatted string
 
 ### The RFC1123 ("R", "r") format specifier
 
-The "R" or "r" standard format specifier represents a custom date and time format string that is defined by the <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=nameWithType> property. The pattern reflects a defined standard, and the property is read-only. Therefore, it is always the same, regardless of the culture used or the format provider supplied. The custom format string is "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'". When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
+The "R" or "r" standard format specifier represents a custom date and time format string that's defined by the <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=nameWithType> property. The pattern reflects a defined standard, and the property is read-only. Therefore, it is always the same, regardless of the culture used or the format provider supplied. The custom format string is "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'". When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
 The result string is affected by the following properties of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo%2A?displayProperty=nameWithType> property that represents the invariant culture.
 
@@ -297,7 +297,7 @@ The result string is affected by the following properties of the <xref:System.Gl
 |<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>|Defines the abbreviated day names that can appear in the result string.|
 |<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>|Defines the abbreviated month names that can appear in the result string.|
 
-Although the RFC 1123 standard expresses a time as Coordinated Universal Time (UTC), the formatting operation does not modify the value of the <xref:System.DateTime> object that is being formatted. Therefore, you must convert the <xref:System.DateTime> value to UTC by calling the <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> method before you perform the formatting operation. In contrast, <xref:System.DateTimeOffset> values perform this conversion automatically; there is no need to call the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method before the formatting operation.
+Although the RFC 1123 standard expresses a time as Coordinated Universal Time (UTC), the formatting operation does not modify the value of the <xref:System.DateTime> object that's being formatted. Therefore, you must convert the <xref:System.DateTime> value to UTC by calling the <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> method before you perform the formatting operation. In contrast, <xref:System.DateTimeOffset> values perform this conversion automatically; there's no need to call the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method before the formatting operation.
 
 The following example uses the "r" format specifier to display a <xref:System.DateTime> and a <xref:System.DateTimeOffset> value on a system in the U.S. Pacific Time zone.
 

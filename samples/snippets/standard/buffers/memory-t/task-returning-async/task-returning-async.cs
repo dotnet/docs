@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Buffers;
 using System.IO;
 using System.Threading.Tasks;
@@ -28,7 +28,12 @@ public class Example
             var span = memory.Span;
             while (true)
             {
-                int value = Int32.Parse(Console.ReadLine());
+                string? s = Console.ReadLine();
+
+                if (s is null)
+                    return;
+
+                int value = Int32.Parse(s);
                 if (value < 0)
                     return;
 

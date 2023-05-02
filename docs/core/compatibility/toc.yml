@@ -18,6 +18,8 @@ items:
         href: core-libraries/8.0/file-path-backslash.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: GC.GetGeneration might return Int32.MaxValue
+        href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
       - name: ITypeDescriptorContext nullable annotations
@@ -946,6 +948,8 @@ items:
         href: core-libraries/8.0/file-path-backslash.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: GC.GetGeneration might return Int32.MaxValue
+        href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
       - name: ITypeDescriptorContext nullable annotations

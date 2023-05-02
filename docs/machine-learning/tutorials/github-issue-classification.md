@@ -33,17 +33,17 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Create a project
 
-1. Create a C# **Console Application** called "GitHubIssueClassification". Click the **Next** button.
+1. Create a C# **Console Application** called "GitHubIssueClassification". Select **Next**.
 
-2. Choose .NET 6 as the framework to use. Click the **Create** button.
+2. Choose .NET 7 as the framework to use. Select **Create**.
 
 3. Create a directory named *Data* in your project to save your data set files:
 
-    In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Data" and hit Enter.
+    In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Data" and press <kbd>Enter</kbd>.
 
 4. Create a directory named *Models* in your project to save your model:
 
-    In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Models" and hit Enter.
+    In **Solution Explorer**, right-click on your project and select **Add** > **New Folder**. Type "Models" and press <kbd>Enter</kbd>.
 
 5. Install the **Microsoft.ML NuGet Package**:
 
@@ -53,7 +53,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Prepare your data
 
-1. Download the [issues_train.tsv](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv) and the [issues_test.tsv](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv) data sets and save them to the *Data* folder previously created. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is.
+1. Download the [issues_train.tsv](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv) and the [issues_test.tsv](https://raw.githubusercontent.com/dotnet/samples/main/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv) data sets and save them to the *Data* folder you created previously. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is.
 
 2. In Solution Explorer, right-click each of the \*.tsv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -82,7 +82,7 @@ Create some classes for your input data and predictions. Add a new class to your
 
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *GitHubIssueData.cs*. Then, select the **Add** button.
 
-    The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` statement to the top of *GitHubIssueData.cs*:
+   The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` statement to the top of *GitHubIssueData.cs*:
 
 [!code-csharp[AddUsings](./snippets/github-issue-classification/csharp/GitHubIssueData.cs#AddUsings)]
 
@@ -101,13 +101,13 @@ Use the [LoadColumnAttribute](xref:Microsoft.ML.Data.LoadColumnAttribute) to spe
 * the third column `Title` (GitHub issue title) is the first `feature` used for predicting the `Area`
 * the fourth column  `Description` is the second `feature` used for predicting the `Area`
 
-`IssuePrediction` is the class used for prediction after the model has been trained. It has a single `string` (`Area`) and a `PredictedLabel` `ColumnName` attribute.  The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
+`IssuePrediction` is the class used for prediction after the model has been trained. It has a single `string` (`Area`) and a `PredictedLabel` `ColumnName` attribute. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
 All ML.NET operations start in the [MLContext](xref:Microsoft.ML.MLContext) class. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in `Entity Framework`.
 
 ### Initialize variables
 
-Initialize the `_mlContext` global variable  with a new instance of `MLContext` with a random seed (`seed: 0`) for repeatable/deterministic results across multiple trainings.  Replace the `Console.WriteLine("Hello World!")` line with the following code:
+Initialize the `_mlContext` global variable  with a new instance of `MLContext` with a random seed (`seed: 0`) for repeatable/deterministic results across multiple trainings. Replace the `Console.WriteLine("Hello World!")` line with the following code:
 
 [!code-csharp[CreateMLContext](./snippets/github-issue-classification/csharp/Program.cs#CreateMLContext)]
 
@@ -139,7 +139,7 @@ IEstimator<ITransformer> ProcessData()
 }
 ```
 
-## Extract Features and transform the data
+## Extract features and transform the data
 
 As you want to predict the Area GitHub label for a `GitHubIssue`, use the [MapValueToKey()](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) method to transform the `Area` column into a numeric key type `Label` column (a format accepted by classification algorithms) and add it as a new dataset column:
 
@@ -153,7 +153,7 @@ The last step in data preparation combines all of the feature columns into the *
 
 [!code-csharp[Concatenate](./snippets/github-issue-classification/csharp/Program.cs#Concatenate)]
 
- Next, append a <xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A> to cache the DataView so when you iterate over the data multiple times using the cache might get better performance, as with the following code:
+Next, append a <xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A> to cache the DataView so when you iterate over the data multiple times using the cache might get better performance, as with the following code:
 
 [!code-csharp[AppendCache](./snippets/github-issue-classification/csharp/Program.cs#AppendCache)]
 
@@ -225,7 +225,7 @@ Use the [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function 
 
 [!code-csharp[Predict](./snippets/github-issue-classification/csharp/Program.cs#Predict)]
 
-### Using the model: prediction results
+### Use the model: prediction results
 
 Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly.  Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
@@ -279,7 +279,7 @@ The following metrics are evaluated for multiclass classification:
 
 * Log-loss reduction - Ranges from [-inf, 1.00], where 1.00 is perfect predictions and 0 indicates mean predictions. You want Log-loss reduction to be as close to one as possible.
 
-### Displaying the metrics for model validation
+### Display the metrics for model validation
 
 Use the following code to display the metrics, share the results, and then act on them:
 
@@ -323,7 +323,7 @@ The `PredictIssue` method executes the following tasks:
 
 * Loads the saved model
 * Creates a single issue of test data.
-* Predicts Area based on test data.
+* Predicts area based on test data.
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
@@ -348,7 +348,7 @@ Use the `PredictionEngine` to predict the Area GitHub label by adding the follow
 
 [!code-csharp[PredictIssue](./snippets/github-issue-classification/csharp/Program.cs#PredictIssue)]
 
-### Using the loaded model for prediction
+### Use the loaded model for prediction
 
 Display `Area` in order to categorize the issue and act on it accordingly. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 

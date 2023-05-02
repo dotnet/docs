@@ -12,9 +12,9 @@ namespace complex
             _resolver = new AssemblyDependencyResolver(mainAssemblyToLoadPath);
         }
 
-        protected override Assembly Load(AssemblyName name)
+        protected override Assembly? Load(AssemblyName name)
         {
-            string assemblyPath = _resolver.ResolveAssemblyToPath(name);
+            string? assemblyPath = _resolver.ResolveAssemblyToPath(name);
             if (assemblyPath != null)
             {
                 return LoadFromAssemblyPath(assemblyPath);

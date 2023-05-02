@@ -187,7 +187,7 @@ The following table shows the configuration providers available to .NET Core app
 | [App secrets (Secret Manager)](/aspnet/core/security/app-secrets)                                                      | File in the user profile directory |
 
 > [!TIP]
-> The order in which configuration providers are added matters. When multiple configuration providers are used and more than one provided specifies the same key, the last one added is used.
+> The order in which configuration providers are added matters. When multiple configuration providers are used and more than one provider specifies the same key, the last one added is used.
 
 For more information on various configuration providers, see [Configuration providers in .NET](configuration-providers.md).
 

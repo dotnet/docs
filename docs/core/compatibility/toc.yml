@@ -1413,7 +1413,7 @@ items:
     - name: .NET 5
       items:
       - name: BinaryFormatter serialization methods are obsolete
-        href: serialization/5.0/binaryformatter-serialization-.md
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: BinaryFormatter.Deserialize rewraps exceptions
         href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
       - name: JsonSerializer.Deserialize requires single-character string

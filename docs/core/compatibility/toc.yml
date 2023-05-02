@@ -225,9 +225,9 @@ items:
     - name: Serialization
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors
-        href: serialization/7.0/binaryformatter-apis-produce-errors
+        href: serialization/7.0/binaryformatter-apis-produce-errors.md
       - name: SerializationFormat.Binary is obsolete
-        href: serialization/7.0/serializationformat-binary
+        href: serialization/7.0/serializationformat-binary.md
       - name: DataContractSerializer retains sign when deserializing -0
         href: serialization/7.0/datacontractserializer-negative-sign.md
       - name: Deserialize Version type with leading or trailing whitespace
@@ -479,7 +479,7 @@ items:
       - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
         href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: serialization/5.0/binaryformatter-serialization-obsolete
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: Resource in endpoint routing is HttpContext
         href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
       - name: Microsoft-prefixed Azure integration packages removed
@@ -693,7 +693,7 @@ items:
     - name: Serialization
       items:
       - name: BinaryFormatter serialization methods are obsolete
-        href: serialization/5.0/binaryformatter-serialization-obsolete
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: BinaryFormatter.Deserialize rewraps exceptions
         href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
       - name: JsonSerializer.Deserialize requires single-character string
@@ -835,7 +835,7 @@ items:
       - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
         href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: serialization/5.0/binaryformatter-serialization-obsolete
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: Resource in endpoint routing is HttpContext
         href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
       - name: Microsoft-prefixed Azure integration packages removed
@@ -1383,9 +1383,9 @@ items:
     - name: .NET 7
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors
-        href: serialization/7.0/binaryformatter-apis-produce-errors
+        href: serialization/7.0/binaryformatter-apis-produce-errors.md
       - name: SerializationFormat.Binary is obsolete
-        href: serialization/7.0/serializationformat-binary
+        href: serialization/7.0/serializationformat-binary.md
       - name: DataContractSerializer retains sign when deserializing -0
         href: serialization/7.0/datacontractserializer-negative-sign.md
       - name: Deserialize Version type with leading or trailing whitespace
@@ -1413,7 +1413,7 @@ items:
     - name: .NET 5
       items:
       - name: BinaryFormatter serialization methods are obsolete
-        href: serialization/5.0/binaryformatter-serialization-obsolete
+        href: serialization/5.0/binaryformatter-serialization-.md
       - name: BinaryFormatter.Deserialize rewraps exceptions
         href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
       - name: JsonSerializer.Deserialize requires single-character string

@@ -110,18 +110,21 @@ complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 ## nushell
 
 To add tab completion to your **nushell** for .NET CLI, add the following to the beginning of your `config.nu` file:
+
 ```nu
 let external_completer = { |spans|
-	{
-		dotnet: { || 
-			dotnet complete (
-				$spans | skip 1 | str join " "
-			) | lines
-		}
-	} | get $spans.0 | each { || do $in }
+    {
+        dotnet: { || 
+            dotnet complete (
+                $spans | skip 1 | str join " "
+            ) | lines
+        }
+    } | get $spans.0 | each { || do $in }
 }
 ```
+
 And then in the `config` record find the `completions` section and add the defined earlier `external_completer` to `external` like that:
+
 ```nu
 let-env config = {
     # your options here

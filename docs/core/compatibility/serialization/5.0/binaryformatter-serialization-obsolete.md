@@ -87,3 +87,4 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 
 - [SerializationFormat.Binary is obsolete (.NET 7)](../7.0/serializationformat-binary.md)
 - [BinaryFormatter serialization APIs produce compiler errors (.NET 7)](../7.0/binaryformatter-apis-produce-errors.md)
+- [BinaryFormatter disabled across most project types (.NET 8)](../8.0/binaryformatter-disabled.md)

@@ -58,6 +58,10 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+    - name: Serialization
+      items:
+      - name: BinaryFormatter disabled for most projects
+        href: serialization/8.0/binaryformatter-disabled.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
@@ -119,7 +123,7 @@ items:
       - name: API obsoletions with non-default diagnostic IDs
         href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
       - name: BinaryFormatter serialization APIs produce compiler errors
-        href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        href: /dotnet/core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors
       - name: BrotliStream no longer allows undefined CompressionLevel values
         href: core-libraries/7.0/brotlistream-ctor.md
       - name: C++/CLI projects in Visual Studio
@@ -475,7 +479,7 @@ items:
       - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
         href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        href: /dotnet/core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete
       - name: Resource in endpoint routing is HttpContext
         href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
       - name: Microsoft-prefixed Azure integration packages removed
@@ -565,7 +569,7 @@ items:
       - name: Assembly-related API changes for single-file publishing
         href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        href: /dotnet/core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete
       - name: Code access security APIs are obsolete
         href: core-libraries/5.0/code-access-security-apis-obsolete.md
       - name: CreateCounterSetInstance throws InvalidOperationException
@@ -831,7 +835,7 @@ items:
       - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
         href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        href: /dotnet/core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete
       - name: Resource in endpoint routing is HttpContext
         href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
       - name: Microsoft-prefixed Azure integration packages removed
@@ -959,7 +963,7 @@ items:
       - name: API obsoletions with non-default diagnostic IDs
         href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
       - name: BinaryFormatter serialization APIs produce compiler errors
-        href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
+        href: /dotnet/core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors
       - name: BrotliStream no longer allows undefined CompressionLevel values
         href: core-libraries/7.0/brotlistream-ctor.md
       - name: C++/CLI projects in Visual Studio
@@ -1045,7 +1049,7 @@ items:
       - name: Assembly-related API changes for single-file publishing
         href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        href: /dotnet/core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete
       - name: Code access security APIs are obsolete
         href: core-libraries/5.0/code-access-security-apis-obsolete.md
       - name: CreateCounterSetInstance throws InvalidOperationException

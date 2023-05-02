@@ -5,7 +5,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0011: BinaryFormatter serialization is obsolete
 
-Due to [security vulnerabilities](../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following APIs are marked as obsolete, starting in .NET 5. Using them in code generates warning `SYSLIB0011` at compile time.
+Due to [security vulnerabilities](../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following APIs are marked as obsolete, starting in .NET 5. Using them in code generates warning or error `SYSLIB0011` at compile time.
 
 - <xref:System.Exception.SerializeObjectState?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
@@ -23,7 +23,7 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 
 ## Suppress a warning
 
-If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+If you must use the obsolete APIs, you can suppress the warning/error in code or in your project file.
 
 To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
 
@@ -54,4 +54,6 @@ For more information, see [Suppress warnings](obsoletions-overview.md#suppress-w
 ## See also
 
 - [Resolving BinaryFormatter obsoletion and disablement errors](../../standard/serialization/binaryformatter-security-guide.md)
-- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../../core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md)
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps (.NET 5)](../../core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete.md)
+- [BinaryFormatter serialization APIs produce compiler errors (.NET 7)](../../core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md)
+- [BinaryFormatter disabled across most project types (.NET 8)](../../core/compatibility/serialization/8.0/binaryformatter-disabled.md)

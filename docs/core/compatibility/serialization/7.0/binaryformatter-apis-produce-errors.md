@@ -90,4 +90,5 @@ The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 
 
 - [dotnet/runtime issue 72132](https://github.com/dotnet/runtime/issues/72132)
 - [BinaryFormatter serialization methods are obsolete (.NET 5)](../5.0/binaryformatter-serialization-obsolete.md)
-- [SerializationFormat.Binary is obsolete](../7.0/serializationformat-binary.md)
+- [SerializationFormat.Binary is obsolete (.NET 7)](../7.0/serializationformat-binary.md)
+- [BinaryFormatter disabled across most project types (.NET 8)](../8.0/binaryformatter-disabled.md)

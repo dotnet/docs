@@ -30,6 +30,10 @@ items:
         href: cryptography/8.0/aesgcm-auth-tag-size.md
       - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
         href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
+    - name: Deployment
+      items:
+      - name: StripSymbols defaults to true
+        href: deployment/8.0/stripsymbols-default.md
     - name: Extensions
       items:
       - name: ActivatorUtilities.CreateInstance behaves consistently
@@ -1136,6 +1140,10 @@ items:
         href: cryptography.md
   - name: Deployment
     items:
+    - name: .NET 8
+      items:
+      - name: StripSymbols defaults to true
+        href: deployment/8.0/stripsymbols-default.md
     - name: .NET 7
       items:
       - name: All assemblies trimmed by default

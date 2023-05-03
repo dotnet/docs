@@ -55,12 +55,13 @@ When performing a case-insensitive ordinal comparison, these methods use the cas
 
 ## Linguistic comparisons
 
-Strings can also be ordered using linguistic rules for the current culture.
+Many string comparison methods (such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>) use linguistic rules for the _current culture_ by default to order their inputs.
 This is sometimes referred to as "word sort order." When you perform a
 linguistic comparison, some nonalphanumeric Unicode characters might have
 special weights assigned. For example, the hyphen "-" may have a small
 weight assigned to it so that "co-op" and "coop" appear next to each other
-in sort order. In addition, some Unicode characters may be equivalent to a
+in sort order, while some non-printing control characters might be completely ignored.
+In addition, some Unicode characters may be equivalent to a
 sequence of <xref:System.Char> instances. The following example uses the phrase
 "They dance in the street." in German with the "ss" (U+0073 U+0073) in one string and 'ß' (U+00DF) in another. Linguistically
 (in Windows), "ss" is equal to the German Esszet: 'ß' character in both the "en-US"

@@ -1,6 +1,6 @@
 ---
 title: Enable tab completion
-description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, and fish.
+description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, fish, and nushell.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
@@ -11,7 +11,7 @@ ms.date: 10/13/2022
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-This article describes how to configure tab completion for four shells: PowerShell, Bash, zsh, and fish. For other shells, refer to their documentation on how to configure tab completion.
+This article describes how to configure tab completion for five shells: PowerShell, Bash, zsh, fish, and nushell. For other shells, refer to their documentation on how to configure tab completion.
 
 Once set up, tab completion for the .NET CLI is triggered by entering a `dotnet` command in the shell and then pressing the <kbd>Tab</kbd> key. The current command line is sent to the `dotnet complete` command, and the results are processed by the shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
@@ -109,16 +109,31 @@ complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 
 ## nushell
 
-To add tab completion to your **nushell** for .NET CLI, add the following to your `config.nu` file:
+To add tab completion to your **nushell** for .NET CLI, add the following to the beginning of your `config.nu` file:
 
 ```nu
-# completion for the .NET CLI
-
-def "nu-cmp dotnet" [context: string] {
-    ^dotnet complete ($context | split words | skip 1 | str join " ") | lines
+let external_completer = { |spans|
+    {
+        dotnet: { || 
+            dotnet complete (
+                $spans | skip 1 | str join " "
+            ) | lines
+        }
+    } | get $spans.0 | each { || do $in }
 }
+```
 
-export extern "dotnet" [ 
-    ...args: any@"nu-cmp dotnet"
-]
+And then in the `config` record find the `completions` section and add the defined earlier `external_completer` to `external` like that:
+
+```nu
+let-env config = {
+    # your options here
+    completions: {
+        # your options here
+        external: {
+            # your options here
+            completer: $external_completer # add it here
+        }
+    }
+}
 ```

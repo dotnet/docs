@@ -4,7 +4,7 @@ description: "Learn how to create custom converters for the JSON serialization c
 ms.date: 05/12/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
-helpviewer_keywords: 
+helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
   - "serialization"
@@ -281,7 +281,7 @@ For scenarios that require type inference, the following code shows a custom con
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
 
-The example shows the converter code and a `WeatherForecast` class with `object` properties. The `Main` method deserializes a JSON string into a `WeatherForecast` instance, first without using the converter, and then using the converter. The console output shows that without the converter the run time type for the `Date` property is `JsonElement`; with the converter, the run time type is `DateTime`.
+The example shows the converter code and a `WeatherForecast` class with `object` properties. The `Main` method deserializes a JSON string into a `WeatherForecast` instance, first without using the converter, and then using the converter. The console output shows that without the converter, the run-time type for the `Date` property is `JsonElement`; with the converter, the run-time type is `DateTime`.
 
 The [unit tests folder](https://github.com/dotnet/runtime/tree/c72b54243ade2e1118ab24476220a2eba6057466/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 

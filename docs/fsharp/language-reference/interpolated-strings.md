@@ -124,10 +124,10 @@ Note that the type annotation must be on the interpolated string expression itse
 
 ## Extended syntax for string interpolation
 
-When working with text containing multiple `{`, `}` or `%` characters already, extended string interpolation syntax can be used to remove the need for escaping.
+When you work with text containing multiple `{`, `}` or `%` characters already, you can use extended string interpolation syntax to remove the need for escaping.
 
 Triple quote string literals can start with multiple `$` characters, which changes how many braces are required to open and close interpolation.
-In these string literals, `{` and `}` characters do not need to be escaped:
+In these string literals, `{` and `}` characters don't need to be escaped:
 
 ```fsharp
 let str = $$"""A string containing some {curly braces} and an {{"F#" + " " + "expression"}}."""
@@ -136,7 +136,7 @@ let another = $$$"""A string with pairs of {{ and }} characters and {{{ "an F# e
 // "A string with pairs of {{ and }} characters and an F# expression."""
 ```
 
-Number of `%` characters needed for format specifiers is affected in the same way:
+The number of `%` characters needed for format specifiers is affected in the same way:
 
 ```fsharp
 let percent = $$"""50% of 20 is %%.1f{{20m * 0.5m}}"""

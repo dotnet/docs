@@ -34,7 +34,22 @@ Console.WriteLine(details.Status); // 400
 
 ## New behavior
 
-Starting in .NET 8, the same code results in a null status for <xref:Microsoft.AspNetCore.Mvc.ValidationProblemDetails>.
+Starting in .NET 8, the same code results in a `null` status for <xref:Microsoft.AspNetCore.Mvc.ValidationProblemDetails>.
+
+```csharp
+string content = "{\"status\":400,\"detail\":\"HTTP egress is not enabled.\"}";
+using MemoryStream stream = new();
+using StreamWriter writer = new(stream);
+writer.Write(content);
+writer.Flush();
+stream.Position = 0;
+
+JsonSerializerOptions options = new();
+options.Converters.Add(new JsonStringEnumConverter());
+
+ValidationProblemDetails? details = await JsonSerializer.DeserializeAsync<ValidationProblemDetails>(stream, options);
+Console.WriteLine(details.Status); // null
+```
 
 ## Type of breaking change
 

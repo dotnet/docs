@@ -52,7 +52,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > <sup>5</sup> 7.0.200 and newer SDKs require a minimum Visual Studio version of 17.4.
 > 
-> <sup>6</sup> Starting .NET 6, .1xx SDK feature band is supported throughout the lifecycle of .NET major versions. During the extended period, support is limited to security fixes and minimal absolutely required fixes (non-security) for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
+> <sup>6</sup> Starting with .NET 6, .1xx SDK feature band is supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
 >
 > [Visual Studio 2019 Lifecycle](/lifecycle/products/visual-studio-2019)
 >

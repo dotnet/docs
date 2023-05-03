@@ -12,6 +12,8 @@ items:
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
         href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
+      - name: Custom converters for serialization removed
+        href: aspnet-core/8.0/problemdetails-custom-converters.md
     - name: Core .NET libraries
       items:
       - name: Activity operation name when null
@@ -748,6 +750,8 @@ items:
       items:
       - name: ConcurrencyLimiterMiddleware is obsolete
         href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
+      - name: Custom converters for serialization removed
+        href: aspnet-core/8.0/problemdetails-custom-converters.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI

@@ -41,6 +41,8 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.
 > Targeting `net7.0` is officially supported in Visual Studio 17.4+ only.
+> 
+> .1xx SDK feature band is supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
 >
 > <sup>1</sup> The .NET 5 SDK will be supported in Visual Studio scenarios until December 2022 when 3.1 goes out of support. MSBuild/Visual Studio supported for longer.
 >
@@ -51,8 +53,6 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 > <sup>4</sup> 6.0.300 and newer SDKs require a minimum Visual Studio version of 17.0.
 >
 > <sup>5</sup> 7.0.200 and newer SDKs require a minimum Visual Studio version of 17.4.
-> 
-> <sup>6</sup> .1xx SDK feature band is supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
 >
 > [Visual Studio 2019 Lifecycle](/lifecycle/products/visual-studio-2019)
 >

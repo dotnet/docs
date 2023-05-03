@@ -341,16 +341,14 @@ namespace LINQGettingStarted_1
             //</snippet13>
 
             //<snippet14>
-            // studentQuery2 is an IEnumerable<IGrouping<char, Student>>
-            var studentQuery2 =
+            IEnumerable<IGrouping<char, Student>> studentQuery2 =
                 from student in students
                 group student by student.Last[0];
             //</snippet14>
 
             Console.WriteLine("\nExecuting Query 2..............");
             //<snippet15>
-            // studentGroup is a IGrouping<char, Student>
-            foreach (var studentGroup in studentQuery2)
+            foreach (IGrouping<char, Student> studentGroup in studentQuery2)
             {
                 Console.WriteLine(studentGroup.Key);
                 foreach (Student student in studentGroup)

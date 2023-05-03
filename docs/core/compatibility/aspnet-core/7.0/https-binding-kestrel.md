@@ -9,7 +9,7 @@ The default HTTPS address and port have been removed from Kestrel in .NET 7. Thi
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 6
+ASP.NET Core 7.0
 
 ## Previous behavior
 

@@ -10,7 +10,7 @@ Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll have been remo
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 1
+ASP.NET Core 7.0
 
 ## Previous behavior
 

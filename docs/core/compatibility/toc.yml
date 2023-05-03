@@ -8,6 +8,10 @@ items:
     items:
     - name: Overview
       href: 8.0.md
+    - name: ASP.NET Core
+      items:
+      - name: ConcurrencyLimiterMiddleware is obsolete
+        href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
     - name: Core .NET libraries
       items:
       - name: Activity operation name when null
@@ -740,6 +744,10 @@ items:
   items:
   - name: ASP.NET Core
     items:
+    - name: .NET 8
+      items:
+      - name: ConcurrencyLimiterMiddleware is obsolete
+        href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI

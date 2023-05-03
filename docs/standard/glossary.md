@@ -22,13 +22,13 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 A [workload](#workload)-specific API. Here are some examples:
 
-* ASP.NET
-* ASP.NET Web API
-* Entity Framework (EF)
-* Windows Presentation Foundation (WPF)
-* Windows Communication Foundation (WCF)
-* Windows Workflow Foundation (WF)
-* Windows Forms (WinForms)
+- ASP.NET
+- ASP.NET Web API
+- Entity Framework (EF)
+- Windows Presentation Foundation (WPF)
+- Windows Communication Foundation (WCF)
+- Windows Workflow Foundation (WF)
+- Windows Forms (WinForms)
 
 ## ASP.NET
 
@@ -60,10 +60,10 @@ The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-
 
 The following terms often refer to the same collection of APIs that BCL refers to:
 
-* [core .NET libraries](../core/compatibility/corefx.md)
-* [framework libraries](#framework-libraries)
-* [runtime libraries](#runtime)
-* [shared framework](#shared-framework)
+- [core .NET libraries](../core/compatibility/corefx.md)
+- [framework libraries](#framework-libraries)
+- [runtime libraries](#runtime)
+- [shared framework](#shared-framework)
 
 ## CLR
 
@@ -103,7 +103,7 @@ All of the runtime software, development tools, and community resources that are
 
 The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Here's an example in a sentence:
 
-* "The motivation behind [.NET Standard](#net-standard) was to establish greater uniformity in the .NET ecosystem."
+- "The motivation behind [.NET Standard](#net-standard) was to establish greater uniformity in the .NET ecosystem."
 
 ## framework
 
@@ -111,12 +111,12 @@ In general, a comprehensive collection of APIs that facilitates development and 
 
 The word "framework" has a different meaning in the following terms:
 
-* [framework libraries](#framework-libraries)
-* [.NET Framework](#net-framework)
-* [shared framework](#shared-framework)
-* [target framework](#target-framework)
-* [TFM (target framework moniker)](#tfm)
-* [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
+- [framework libraries](#framework-libraries)
+- [.NET Framework](#net-framework)
+- [shared framework](#shared-framework)
+- [target framework](#target-framework)
+- [TFM (target framework moniker)](#tfm)
+- [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
 
 Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5+ a framework.
 
@@ -148,17 +148,17 @@ Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that 
 
 An implementation of .NET includes:
 
-* One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
-* A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
-* Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
-* Optionally, development tools. Some development tools are shared among multiple implementations.
+- One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
+- A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
+- Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
 
-* [.NET Framework](#net-framework)
-* [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
-* [Universal Windows Platform (UWP)](#uwp)
-* [Mono](#mono)
+- [.NET Framework](#net-framework)
+- [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
+- [Universal Windows Platform (UWP)](#uwp)
+- [Mono](#mono)
 
 For more information, see [.NET implementations](../fundamentals/implementations.md).
 
@@ -188,8 +188,8 @@ For more information, see [Native AOT deployment](../core/deploying/native-aot/i
 
 ## .NET
 
-* In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
-* More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+- In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
+- More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 
 For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
 
@@ -269,8 +269,8 @@ An operating system and the hardware it runs on, such as Windows, macOS, Linux, 
 
 Here are examples of usage in sentences:
 
-* ".NET Core is a cross-platform implementation of .NET."
-* "PCL profiles represent Microsoft platforms, while .NET Standard is agnostic to platform."
+- ".NET Core is a cross-platform implementation of .NET."
+- "PCL profiles represent Microsoft platforms, while .NET Standard is agnostic to platform."
 
 Legacy .NET documentation sometimes uses ".NET platform" to mean either an [implementation of .NET](#implementation-of-net) or the .NET [stack](#stack) including all implementations. Both of these usages tend to get confused with the primary (OS/hardware) meaning, so we try to avoid these usages.
 
@@ -280,9 +280,9 @@ Legacy .NET documentation sometimes uses ".NET platform" to mean either an [impl
 
 A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data structure that contains only public properties or fields. A POCO shouldn't contain any other members, such as:
 
-* methods
-* events
-* delegates
+- methods
+- events
+- delegates
 
 These objects are used primarily as data transfer objects (DTOs). A pure *POCO* will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
 
@@ -290,25 +290,25 @@ These objects are used primarily as data transfer objects (DTOs). A pure *POCO* 
 
 In general, the execution environment for a managed program. The OS is part of the runtime environment but is not part of the .NET runtime. Here are some examples of .NET runtimes in this sense of the word:
 
-* Common Language Runtime ([CLR](#clr))
-* .NET Native (for UWP)
-* Mono runtime
+- Common Language Runtime ([CLR](#clr))
+- .NET Native (for UWP)
+- Mono runtime
 
 The word "runtime" has a different meaning in some contexts:
 
-* *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
+- *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
 
   You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#publish-framework-dependent) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
 
-* *.NET runtime libraries*
+- *.NET runtime libraries*
 
   Refers to the same libraries that [BCL](#bcl) refers to. However, other runtimes, such as the ASP.NET Core runtime, have different [shared frameworks](#shared-framework), with additional libraries that build on the BCL.
 
-* [Runtime Identifier (RID)](../core/rid-catalog.md).
+- [Runtime Identifier (RID)](../core/rid-catalog.md).
 
   *Runtime* here means the OS platform and CPU architecture that a .NET app runs on, for example: `linux-x64`.
 
-* Sometimes "runtime" is used in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
+- Sometimes "runtime" is used in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
 
   - "The various .NET runtimes implement specific versions of .NET Standard. … Each .NET runtime version advertises the highest .NET Standard version it supports …"
   - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
@@ -361,7 +361,7 @@ In some contexts, *workload* refers to a collection of Visual Studio features th
 
 ## See also
 
-* [.NET fundamentals](../fundamentals/index.yml)
-* [.NET Framework Guide](../framework/index.yml)
-* [ASP.NET Overview](/aspnet/index#pivot=aspnet)
-* [ASP.NET Core Overview](/aspnet/index#pivot=core)
+- [.NET fundamentals](../fundamentals/index.yml)
+- [.NET Framework Guide](../framework/index.yml)
+- [ASP.NET Overview](/aspnet/index#pivot=aspnet)
+- [ASP.NET Core Overview](/aspnet/index#pivot=core)

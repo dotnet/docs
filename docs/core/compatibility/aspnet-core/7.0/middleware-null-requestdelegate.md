@@ -9,7 +9,7 @@ As detailed in <https://github.com/dotnet/aspnetcore/issues/42413>, the file-ser
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 7
+ASP.NET Core 7.0
 
 ## Previous behavior
 

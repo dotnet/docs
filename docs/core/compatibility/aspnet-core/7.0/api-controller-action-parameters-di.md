@@ -10,7 +10,7 @@ The mechanism to infer binding sources of API controller action parameters now m
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 2
+ASP.NET Core 7.0
 
 ## Previous behavior
 

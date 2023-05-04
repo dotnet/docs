@@ -2,13 +2,13 @@
 title: "Generics and reflection"
 description: Learn to use reflection to obtain information about generic types. View lists of terms and conditions for generic reflection.
 ms.date: 03/05/2023
-helpviewer_keywords: 
+helpviewer_keywords:
   - "generics [C#], reflection"
   - "reflection [C#], generic types"
 ---
 # Generics and reflection
 
-Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for nongeneric types. For more information, see [Generics in the Run Time](../../programming-guide/generics/generics-in-the-run-time.md).
+Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for nongeneric types. For more information, see [Generics in the Runtime](../../programming-guide/generics/generics-in-the-run-time.md).
 
 The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).
 

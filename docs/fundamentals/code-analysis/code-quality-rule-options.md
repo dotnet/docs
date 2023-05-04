@@ -43,21 +43,21 @@ The following table lists the available values for `<RuleCategory>`.
 
 :::row:::
     :::column:::
-        Design\
-        Documentation\
-        Globalization\
-        Interoperability
+        `Design`\
+        `Documentation`\
+        `Globalization`\
+        `Interoperability`
     :::column-end:::
     :::column:::
-        Maintainability\
-        Naming\
-        Performance\
-        SingleFile
+        `Maintainability`\
+        `Naming`\
+        `Performance`\
+        `SingleFile`
     :::column-end:::
     :::column:::
-        Reliability\
-        Security\
-        Usage
+        `Reliability`\
+        `Security`\
+        `Usage`
     :::column-end:::
 :::row-end:::
 
@@ -73,17 +73,18 @@ The syntax for configuring an option for a *specific* rule is as follows:
 
 This section lists some of the available options. To see the full list of available options, see [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Analyzer%20Configuration.md).
 
-- [api_surface](#api_surface)
-- [exclude_async_void_methods](#exclude_async_void_methods)
-- [exclude_single_letter_type_parameters](#exclude_single_letter_type_parameters)
-- [output_kind](#output_kind)
-- [required_modifiers](#required_modifiers)
-- [exclude_extension_method_this_parameter](#exclude_extension_method_this_parameter)
-- [null_check_validation_methods](#null_check_validation_methods)
-- [additional_string_formatting_methods](#additional_string_formatting_methods)
-- [excluded_type_names_with_derived_types](#excluded_type_names_with_derived_types)
-- [excluded_symbol_names](#excluded_symbol_names)
-- [disallowed_symbol_names](#disallowed_symbol_names)
+- [api\_surface](#api_surface)
+- [exclude\_async\_void\_methods](#exclude_async_void_methods)
+- [exclude\_single\_letter\_type\_parameters](#exclude_single_letter_type_parameters)
+- [output\_kind](#output_kind)
+- [required\_modifiers](#required_modifiers)
+- [exclude\_extension\_method\_this\_parameter](#exclude_extension_method_this_parameter)
+- [null\_check\_validation\_methods](#null_check_validation_methods)
+- [additional\_string\_formatting\_methods](#additional_string_formatting_methods)
+- [excluded\_type\_names\_with\_derived\_types](#excluded_type_names_with_derived_types)
+- [excluded\_symbol\_names](#excluded_symbol_names)
+- [disallowed\_symbol\_names](#disallowed_symbol_names)
+- [exclude\_ordefault\_methods](#exclude_ordefault_methods)
 
 ### api_surface
 

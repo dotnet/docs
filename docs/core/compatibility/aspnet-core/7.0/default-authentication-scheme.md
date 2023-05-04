@@ -23,7 +23,7 @@ This change might expose unintended behavior changes in applications, such as au
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 7
+ASP.NET Core 7.0
 
 ## Previous behavior
 

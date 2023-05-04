@@ -361,7 +361,7 @@ Includes the stream provider for GCP PubSub service.
 Install-Package Microsoft.Orleans.OrleansCodeGenerator
 ```
 
-Includes the run time code generator.
+Includes the run-time code generator.
 
 ### [Orleans Event-Sourcing](https://www.nuget.org/packages/Microsoft.Orleans.EventSourcing/)
 

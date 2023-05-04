@@ -139,6 +139,9 @@ That informs the compiler that any code where the return value is `false` doesn'
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NullCheckExample" :::
 
+> [!NOTE]
+> The preceding example is only valid in C# 11 and later. Starting with C# 11, the `[nameof` expression](../operators/nameof.md) can reference parameter and type parameter names when used in an attribute applied to a method. In C# 10 and earlier, you need to use a string literal instead of the `nameof` expression.
+
 The <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that check the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself. When you add the attribute, the compiler's static analysis knows when the tested variable has been null checked.
 
 Another use for these attributes is the `Try*` pattern. The postconditions for `ref` and `out` arguments are communicated through the return value. Consider this method shown earlier (in a nullable disabled context):

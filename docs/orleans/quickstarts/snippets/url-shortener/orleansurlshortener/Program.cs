@@ -16,7 +16,7 @@ var app = builder.Build();
 // <Endpoints>
 app.MapGet("/", () => "Hello World!");
 
-app.MapGet("/shorten",
+app.MapGet("/shorten/{redirect}",
     async (IGrainFactory grains, HttpRequest request, string redirect) =>
     {
         // Create a unique, short ID

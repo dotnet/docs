@@ -192,7 +192,7 @@ Make the following changes to the code:
 
     The service must be run with administrator privileges. Because you opened Visual Studio with administrator privileges, when you run **GettingStartedHost** in Visual Studio, the application is run with administrator privileges as well. As an alternative, you can open a new command prompt as an administrator (select **More** > **Run as administrator** from the shortcut menu) and run **GettingStartedHost.exe** within it.
 
-2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
+2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/`.
 
    > [!NOTE]
    > Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md).

@@ -34,7 +34,7 @@ This change fixes a bug where `ConvertTo` was not consistent with `ConvertFrom`.
 
 ## Recommended action
 
-If you relied on the previous behavior, pass in <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> or a custom culture for the `culture` parameter.
+If you relied on the previous behavior, pass in <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType>, `null`, or a custom culture for the `culture` parameter.
 
 ## Affected APIs
 

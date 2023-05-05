@@ -46,7 +46,7 @@ The following grouping construct captures a matched subexpression:
 
 `(` *subexpression* `)`
 
-Here, *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from 1. The capture that's numbered 0 is the text matched by the entire regular expression pattern.
+Here, *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from 1. However, [named capture groups](#named-matched-expressions) are always ordered last, after non-named capture groups. The capture that's numbered 0 is the text matched by the entire regular expression pattern.
 
 > [!NOTE]
 > By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group-options) later in this article), the matched subexpression is not captured.
@@ -108,15 +108,15 @@ You can access named captured groups in the following ways:
 
 - Programmatically, by providing the subexpression name to the <xref:System.Text.RegularExpressions.GroupCollection> object's indexer (in C#) or to its <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property (in Visual Basic).
 
-A simple regular expression pattern illustrates how numbered (unnamed) and named groups can be referenced either programmatically or by using regular expression language syntax. The regular expression `((?<One>abc)\d+)?(?<Two>xyz)(.*)` produces the following capturing groups by number and by name. The first capturing group (number 0) always refers to the entire pattern.
+A simple regular expression pattern illustrates how numbered (unnamed) and named groups can be referenced either programmatically or by using regular expression language syntax. The regular expression `((?<One>abc)\d+)?(?<Two>xyz)(.*)` produces the following capturing groups by number and by name. The first capturing group (number 0) always refers to the entire pattern. (Named groups are always ordered last.)
 
 | Number | Name             | Pattern                            |
 |--------|------------------|------------------------------------|
 | 0      | 0 (default name) | `((?<One>abc)\d+)?(?<Two>xyz)(.*)` |
 | 1      | 1 (default name) | `((?<One>abc)\d+)`                 |
-| 2      | One              | `(?<One>abc)`                      |
-| 3      | Two              | `(?<Two>xyz)`                      |
-| 4      | 4 (default name) | `(.*)`                             |
+| 2      | 2 (default name) | `(.*)`                             |
+| 3      | One              | `(?<One>abc)`                      |
+| 4      | Two              | `(?<Two>xyz)`                      |
 
 The following example illustrates a regular expression that identifies duplicated words and the word that immediately follows each duplicated word. The regular expression pattern defines two named subexpressions: `duplicateWord`, which represents the duplicated word, and `nextWord`, which represents the word that follows the duplicated word.
 

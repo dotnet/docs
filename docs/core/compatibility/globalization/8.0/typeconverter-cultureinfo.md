@@ -25,7 +25,7 @@ Console.WriteLine($"Current culture: {CultureInfo.CurrentCulture}");
 var dt1 = new DateTime(2022, 8, 1);
 
 var frCulture = new CultureInfo("fr-FR");
-frCulture.DateTimeFormat = new DateTimeFormatInfo() { ShortDatePattern = "dd MMMM yyyy" };
+frCulture.DateTimeFormat.ShortDatePattern = "dd MMMM yyyy";
 
 Console.WriteLine(TypeDescriptor.GetConverter(dt1).ConvertTo(null, frCulture, dt1, typeof(string)));
 ```

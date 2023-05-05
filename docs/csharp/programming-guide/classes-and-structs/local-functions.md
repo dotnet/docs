@@ -149,7 +149,7 @@ One final advantage not demonstrated in this sample is that local functions can 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="YieldReturn" :::
 
-The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../misc/cs1621.md).
+The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../language-reference/compiler-messages/lambda-expression-errors.md#syntax-limitations-in-lambda-expressions).
 
 While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
 

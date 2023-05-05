@@ -128,4 +128,4 @@ The following table shows supported compilation targets.
 | Linux    | x64, Arm64             |
 | macOS*   | x64, Arm64             |
 
-- Supported starting in .NET 8.
+\* Supported starting in .NET 8.

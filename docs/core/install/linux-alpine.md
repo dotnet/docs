@@ -36,7 +36,6 @@ The following table is a list of currently supported .NET releases and the versi
 | 3.17   | 7, 6      |
 | 3.16   | 7, 6      |
 | 3.15   | 7, 6      |
-| 3.14   | 6         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

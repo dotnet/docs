@@ -111,6 +111,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
 |-------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [23.04 (LTS)](linux-ubuntu-2210.md) | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0                          |
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
 | [22.04 (LTS)](linux-ubuntu-2204.md) | 7.0, 6.0                | 6.0                      | 7.0, 6.0, 3.1                     |
 | [20.04 (LTS)](linux-ubuntu-2004.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.1           |
@@ -151,6 +152,9 @@ rm packages-microsoft-prod.deb
 # Update packages
 sudo apt update
 ```
+
+> [!TIP]
+> The previous script was written for Ubuntu and it may not work if you're using a derived distribution, such as Linux Mint. Most likely, the `$repo_version` variable won't be assigned the correct value, making the URI for the `wget` command invalid. This variable maps to the specific Ubuntu version you want to get packages for, such as 22.10 or 23.04. You can also navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.
 
 ## Install .NET
 

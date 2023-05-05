@@ -1,6 +1,6 @@
 ---
 title: Lambda expression warnings
-description: Ths article helps you diagnose and correct compiler errors and warnings for lambda expression declarations and usage.
+description: This article helps you diagnose and correct compiler errors and warnings for lambda expression declarations and usage.
 f1_keywords:
   - "CS0748"
   - "CS0834"
@@ -120,7 +120,7 @@ All the following constructs are disallowed in lambda expressions:
 
 You can't use any of these constructs in a lambda expression or an anonymous method. Many are allowed in a [local function](../../programming-guide/classes-and-structs/local-functions.md).
 
-In addition, interpolated string handler types are ignored when applied to a lambda parameter. If you use one, you'll see the following warning:
+In addition, interpolated string handler types are ignored when applied to a lambda parameter. If you use one, you see the following warning:
 
 - **CS8971** - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 

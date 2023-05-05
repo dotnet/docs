@@ -46,7 +46,7 @@ The following grouping construct captures a matched subexpression:
 
 `(` *subexpression* `)`
 
-Here, *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from 1. However, [named capture groups](#named-matched-expressions) are always ordered last, after non-named capture groups. The capture that's numbered 0 is the text matched by the entire regular expression pattern.
+Here, *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from 1. However, [named capture groups](#named-matched-subexpressions) are always ordered last, after non-named capture groups. The capture that's numbered 0 is the text matched by the entire regular expression pattern.
 
 > [!NOTE]
 > By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group-options) later in this article), the matched subexpression is not captured.

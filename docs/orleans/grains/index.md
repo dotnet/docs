@@ -192,6 +192,6 @@ While `OnActivateAsync`, if overridden, is always called as part of the grain ac
 
 - [Grain extensions](grain-extensions.md)
 - [Grain identity](grain-identity.md)
-- [Grain persistence](grain-persistence.md)
+- [Grain persistence](grain-persistence/index.md)
 - [Grain lifecycle overview](grain-lifecycle.md)
 - [Grain placement](grain-placement.md)

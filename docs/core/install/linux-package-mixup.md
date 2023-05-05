@@ -199,7 +199,7 @@ Configure your package manager to ignore the .NET packages from the distribution
     Make sure to replace `<your-package-source>` with your distribution's package source, for example, on Ubuntu you may use `archive.ubuntu.com` in the US.
 
     > [!TIP]
-    > Try using the `apt-cache policy` command to find the source:
+    > Use the `apt-cache policy` command to find the source:
     >
     > ```bash
     > apt-cache policy '~ndotnet.*' | grep -v microsoft | grep '/ubuntu' | cut -d"/" -f3 | sort -u

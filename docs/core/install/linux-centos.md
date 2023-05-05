@@ -23,7 +23,7 @@ The following table is a list of currently supported .NET releases on both CentO
 | 7            | 7, 6 |
 
 > [!WARNING]
-> CentOS Linux 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET isn't officially supported on CentOS Linux 8.
+> CentOS Linux 8 reached an early End Of Life (EOL) on December 31st, 2021. For more information, see the official [CentOS Linux EOL page](https://www.centos.org/centos-linux-eol/). Because of this, .NET isn't supported on CentOS Linux 8.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

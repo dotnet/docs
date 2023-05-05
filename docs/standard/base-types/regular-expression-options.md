@@ -387,14 +387,14 @@ The following example is identical to the previous example, except that the stat
 
 ## Nonbacktracking mode
 
-By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down exponentially as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't use backtracking and avoids that worst-case scenario. While the nonbacktracking search is fast in all cases, it's not *always* faster than the default backtracking engine, and that isn't its goal.
+By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
 
 The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
 
 - Atomic groups
 - Backreferences
 - Balancing groups
-- Conditional
+- Conditionals
 - Lookarounds
 - Start anchors (`\G`)
 

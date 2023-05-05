@@ -108,7 +108,7 @@ Lambda expressions with default parameters or `params` arrays as parameters don'
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="DelegateDeclarations":::
 
-Or, you can use implicitly typed variables with `var` declarations to define the delegate type. The compile synthesizes the correct delegate type.
+Or, you can use implicitly typed variables with `var` declarations to define the delegate type. The compiler synthesizes the correct delegate type.
 
 For more information on see the feature spec for [default parameters on lambda expressions](~/_csharplang/proposals/lambda-method-group-defaults.md).
 

@@ -35,7 +35,7 @@ The following sections contain links to SQL scripts to configure your database a
 | PostgreSQL | [PostgreSQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/PostgreSQL-Persistence.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Oracle-Persistence.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |
 
-\* If you are using MS Orleans v 3.X.X use this script template: https://github.com/dotnet/orleans/blob/3.x/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql
+\* If you're using Orleans v3.x use this script template: <https://github.com/dotnet/orleans/blob/3.x/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql>
 
 ## Reminders
 

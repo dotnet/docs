@@ -89,7 +89,7 @@ For more information, see ['dotnet pack' uses Release config](../compatibility/s
 
 Various improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality.
 
-- Performance and reliability enhancements of the [source generator](../../standard/serialization/system-text-json/source-generation.md) when used with ASP.NET Core in Native AOT apps.
+- Performance and reliability enhancements of the [source generator](../../standard/serialization/system-text-json/source-generation.md) when used with ASP.NET Core in [native AOT](../../standard/glossary.md#native-aot) apps.
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - [Customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - Support for serializing properties from interface hierarchies. The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.

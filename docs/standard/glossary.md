@@ -1,12 +1,12 @@
 ---
-title: .NET Glossary
+title: .NET glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 01/24/2022
+ms.date: 05/02/2023
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
 ---
-# .NET Glossary
+# .NET glossary
 
 The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the .NET documentation.
 
@@ -22,13 +22,13 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 A [workload](#workload)-specific API. Here are some examples:
 
-* ASP.NET
-* ASP.NET Web API
-* Entity Framework (EF)
-* Windows Presentation Foundation (WPF)
-* Windows Communication Foundation (WCF)
-* Windows Workflow Foundation (WF)
-* Windows Forms (WinForms)
+- ASP.NET
+- ASP.NET Web API
+- Entity Framework (EF)
+- Windows Presentation Foundation (WPF)
+- Windows Communication Foundation (WCF)
+- Windows Workflow Foundation (WF)
+- Windows Forms (WinForms)
 
 ## ASP.NET
 
@@ -170,7 +170,7 @@ The words library and [framework](#framework) are often used synonymously.
 
 ## Mono
 
-Mono is an open source, [cross-platform](#cross-platform) [.NET implementation](#implementation-of-net) that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS, and watchOS and is focused primarily on apps that require a small footprint.
+An open source, [cross-platform](#cross-platform) [.NET implementation](#implementation-of-net) that's mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS, and watchOS and is focused primarily on apps that require a small footprint.
 
 It supports all of the currently published .NET Standard versions.
 
@@ -178,12 +178,18 @@ Historically, Mono implemented the larger API of the .NET Framework and emulated
 
 Mono is typically used with a [just-in-time compiler](#jit), but it also features a full [static compiler (ahead-of-time compilation)](#aot) that is used on platforms like iOS.
 
-See the [Mono documentation](https://www.mono-project.com/docs/).
+For more information, see the [Mono documentation](https://www.mono-project.com/docs/).
+
+## native AOT
+
+A deployment mode where the app is self-contained and has been [ahead-of-time](#aot) compiled to native code at the time of publish. Native AOT apps don't use a [JIT](#jit) compiler at run time. They can run on machines that don't have the .NET runtime installed.
+
+For more information, see [Native AOT deployment](../core/deploying/native-aot/index.md).
 
 ## .NET
 
-* In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
-* More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+- In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
+- More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 
 For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
 
@@ -245,7 +251,7 @@ The .NET Standard specification is sometimes called a library. Because a library
 
 See [.NET Standard](net-standard.md).
 
-## NGEN
+## NGen
 
 Native (image) generation.
 
@@ -278,7 +284,7 @@ A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data struct
 - events
 - delegates
 
-These objects are used primarily as data transfer objects (DTOs). A pure _POCO_ will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
+These objects are used primarily as data transfer objects (DTOs). A pure *POCO* will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
 
 ## runtime
 
@@ -290,19 +296,19 @@ In general, the execution environment for a managed program. The OS is part of t
 
 The word "runtime" has a different meaning in some contexts:
 
-* *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
+- *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
 
   You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#publish-framework-dependent) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
 
-* *.NET runtime libraries*
+- *.NET runtime libraries*
 
   Refers to the same libraries that [BCL](#bcl) refers to. However, other runtimes, such as the ASP.NET Core runtime, have different [shared frameworks](#shared-framework), with additional libraries that build on the BCL.
 
-* [Runtime Identifier (RID)](../core/rid-catalog.md).
+- [Runtime Identifier (RID)](../core/rid-catalog.md).
 
   *Runtime* here means the OS platform and CPU architecture that a .NET app runs on, for example: `linux-x64`.
 
-* Sometimes "runtime" is used in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
+- Sometimes "runtime" is used in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
 
   - "The various .NET runtimes implement specific versions of .NET Standard. … Each .NET runtime version advertises the highest .NET Standard version it supports …"
   - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)

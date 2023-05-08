@@ -59,12 +59,12 @@ helpviewer_keywords:
   - "CS9100"
 ms.date: 05/04/2023
 ---
-# Errors and warnings when declaring and using lambda expressions and anonymous functions
+# Errors and warnings when using lambda expressions and anonymous functions
 
-There are several errors related to declaring and using lambda expressions:
+There are several *errors* related to declaring and using lambda expressions:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0748**](#lambda-expression-parameters-and-returns) - *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
 - [**CS0834**](#conversion-to-expression-trees) - *A lambda expression must have an expression body to be converted to an expression tree.*
@@ -90,9 +90,9 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8971**](#syntax-limitations-in-lambda-expressions) - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 - [**CS8972**](#conversion-to-expression-trees) - *A lambda expression with attributes cannot be converted to an expression tree.*
 - [**CS8975**](#lambda-expression-parameters-and-returns) - *The contextual keyword `var` cannot be used as an explicit lambda return type.*
-- [**CS9098**](#lambda-expression-parameters-and-returns) - *Implicitly type lambda parameter '...' cannot have a default value.*
+- [**CS9098**](#lambda-expression-parameters-and-returns) - *Implicitly typed lambda parameter '...' cannot have a default value.*
 
-In addition, there are several warnings related to declaring and using lambda expressions:
+In addition, there are several *warnings* related to declaring and using lambda expressions:
 
 - [**CS8971**](#syntax-limitations-in-lambda-expressions) - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 - [**CS9099**](#lambda-expression-delegate-type) - *The default parameter value does not match in the target delegate type.*
@@ -103,7 +103,7 @@ In addition, there are several warnings related to declaring and using lambda ex
 Some C# syntax is prohibited in lambda expressions and anonymous methods. Using invalid constructs in a lambda expression causes the following errors:
 
 - **CS1621**: *The `yield` statement cannot be used inside an anonymous method or lambda expression.*
-- **CS1628**: *Cannot use `in` `ref` or `out` parameter inside an anonymous method, lambda expression, or query expression.*
+- **CS1628**: *Cannot use `in`, `ref`, or `out` parameter inside an anonymous method, lambda expression, or query expression.*
 - **CS1632**: *Control cannot leave the body of an anonymous method or lambda expression.*
 - **CS1673**: *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of `this`.*
 - **CS1686**: *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
@@ -112,9 +112,9 @@ Some C# syntax is prohibited in lambda expressions and anonymous methods. Using 
 All the following constructs are disallowed in lambda expressions:
 
 - `yield` statements (`yield return` or `yield break`)
-- call a method using `in`, `ref` or `out` parameters
+- Calling a method that has an `in`, `ref`, or `out` parameter
 - `ref` local variables
-- `break`, `goto` or `continue` statements
+- `break`, `goto`, and `continue` statements
 - `this` access when `this` is a `struct` type
 - Anonymous methods or lambda expressions inside another expression, such as an Attribute constructor.
 
@@ -129,7 +129,7 @@ In addition, interpolated string handler types are ignored when applied to a lam
 These errors indicate a problem with a parameter declaration:
 
 - **CS0748** - *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
-- **CS9098** - *Implicitly type lambda parameter '...' cannot have a default value.*
+- **CS9098** - *Implicitly typed lambda parameter '...' cannot have a default value.*
 - **CS8030** - *Anonymous function converted to a void returning delegate cannot return a value.*
 - **CS8916** - *Attributes on lambda expressions require a parenthesized parameter list.*
 - **CS8975** - *The contextual keyword 'var' cannot be used as an explicit lambda return type.*
@@ -140,7 +140,7 @@ Lambda expression parameters must follow these rules:
 - All lambda parameters with a default value must be explicitly typed.
 - If attributes are applied to any parameters, the parameter list must be enclosed in parentheses.
 
-Lambda expression return types must follow these rules:
+Return types of lambda expression must follow these rules:
 
 - A lambda expression that returns any value can't be converted to a `void` returning delegate, such as `Action`.
 - The return type is either inferred, or an explicit type. A return type declared using the keyword `var` isn't allowed.
@@ -149,7 +149,7 @@ Lambda expression return types must follow these rules:
 
 - [**CS9099**](#lambda-expression-delegate-type) - Warning: *The default parameter value does not match in the target delegate type.*
 
-When you declare a default value or add the `params` modifier with a lambda expression parameter, the delegate type isn't one of the `Func` or `Action` types. Rather, it's a custom type that includes the default parameter value or `params` modifier. The following code generates warnings because you've assigned a lambda expression that has a default parameter to an `Action` type:
+When you declare a default value or add the `params` modifier with a lambda expression parameter, the delegate type isn't one of the `Func` or `Action` types. Rather, it's a custom type that includes the default parameter value or `params` modifier. The following code generates warnings because it assigns a lambda expression that has a default parameter to an `Action` type:
 
 ```csharp
 Action<int> a1 = (int i = 2) => { };
@@ -174,10 +174,10 @@ Many legal lambda expressions can't be converted into the data structures suppor
 - **CS1951** - *An expression tree lambda may not contain an `in`, `out`, or `ref` parameter.*
 - **CS1952** - **An expression tree lambda may not contain a method with variable arguments.**
 - **CS1989** - *Async lambda expressions cannot be converted to expression trees.*
-- **CS2037** - *An expression tree lambda may not contain a COM call with ref omitted on arguments.*
+- **CS2037** - *An expression tree lambda may not contain a COM call with `ref` omitted on arguments.*
 - **CS8072** - *An expression tree lambda may not contain a null propagating operator.*
 - **CS8074** - *An expression tree lambda may not contain a dictionary initializer.*
-- **CS8075** - *An extension Add method is not supported for a collection initializer in an expression lambda.*
+- **CS8075** - *An extension `Add` method is not supported for a collection initializer in an expression lambda.*
 - **CS8153** - *An expression tree lambda may not contain a call to a method, property, or indexer that returns by reference.*
 - **CS8155** - *Lambda expressions that return by reference cannot be converted to expression trees.*
 - **CS8972** - *A lambda expression with attributes cannot be converted to an expression tree.*
@@ -188,9 +188,9 @@ The general limitations on expressions tree are:
 - t applied to the lambda expression, its parameters or return.
 - Statement lambdas aren't allowed. It must be an expression lambda.
 - The [null propagating operator](../operators/member-access-operators.md#null-conditional-operators--and-) isn't allowed.
-- [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither can extension add methods.
+- [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither are extension `Add` methods.
 - `async` lambda expressions aren't allowed.
-- `in`, `out` and `ref` parameters aren't allowed.
+- `in`, `out`, and `ref` parameters aren't allowed.
 - `ref` returns aren't allowed.
 - Calls to methods that return by `ref` aren't allowed.
 - The target expression must be a lambda expression. Constants and variables aren't allowed, but a lambda expression that returns a constant or variable is.

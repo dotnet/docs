@@ -184,8 +184,7 @@ Many legal lambda expressions can't be converted into the data structures suppor
 
 The general limitations on expressions tree are:
 
-- Attributes can
-- t applied to the lambda expression, its parameters or return.
+- Attributes can't be applied to the lambda expression, its parameters or return.
 - Statement lambdas aren't allowed. It must be an expression lambda.
 - The [null propagating operator](../operators/member-access-operators.md#null-conditional-operators--and-) isn't allowed.
 - [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither are extension `Add` methods.

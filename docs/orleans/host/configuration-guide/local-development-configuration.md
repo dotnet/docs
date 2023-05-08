@@ -1,7 +1,7 @@
 ---
 title: Local development configuration
 description: Learn how to configure .NET Orleans for local development.
-ms.date: 02/28/2023
+ms.date: 05/08/2023
 zone_pivot_groups: orleans-version
 ---
 
@@ -18,7 +18,7 @@ For a working sample application that targets Orleans 7.0, see [Orleans: Hello W
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run the silo. Also, when developing an Orleans silo you'll need the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. For local Orleans silo development, you'll configure localhost clustering, which is configured to use the loopback address. To use localhost clustering, call the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file of the silo host:
+It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run the silo. Also, when developing an Orleans silo you need the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package. For local Orleans silo development, you configure localhost clustering, which is configured to use the loopback address. To use localhost clustering, call the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file of the silo host:
 
 ```csharp
 using Microsoft.Extensions.Hosting;
@@ -44,9 +44,9 @@ The preceding code:
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-For local development, please refer to the below example of how to configure a silo for that case. It configures and starts a silo listening on the `loopback` address, `11111` and `30000` as silo and gateway ports respectively.
+For local development, refer to the below example of how to configure a silo for that case. It configures and starts a silo listening on the `loopback` address, `11111` and `30000` as silo and gateway ports respectively.
 
-Add the `Microsoft.Orleans.Server` NuGet meta-package to the project. After you get comfortable with the API, you can pick and choose which exact packages included in `Microsoft.Orleans.Server` you need, and reference them instead.
+Add the `Microsoft.Orleans.Server` NuGet meta-package to the project. After you get comfortable with the API, you can pick and choose which exact packages included in `Microsoft.Orleans.Server` your need, and reference them instead.
 
 ```powershell
 Install-Package Microsoft.Orleans.Server
@@ -56,9 +56,9 @@ You need to configure <xref:Orleans.Configuration.ClusterOptions> via <xref:Orle
 
 The <xref:Orleans.Hosting.SiloHostBuilderExtensions.ConfigureApplicationParts%2A> call explicitly adds the assembly with grain classes to the application setup. It also adds any referenced assembly due to the <xref:Orleans.ApplicationPartManagerExtensions.WithReferences%2A> extension. After these steps are completed, the silo host gets built and the silo gets started.
 
-You can create an empty console application project targeting .NET Framework 4.6.1 or higher for hosting a silo, as well as a .NET console application.
+You can create an empty console application project targeting .NET Framework 4.6.1 or higher for hosting a silo, and a .NET console application.
 
-Here is an example of how a local silo can be started:
+Here's an example of how a local silo can be started:
 
 ```csharp
 try
@@ -106,7 +106,7 @@ static async Task<ISiloHost> BuildAndStartSiloAsync()
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run clients (in addition to the silo). You'll also need the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. To use localhost clustering on the consuming client, call the <xref:Orleans.Hosting.ClientBuilderExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file of the client host:
+It's recommended to use the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to configure and run clients (in addition to the silo). You also need the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package. To use localhost clustering on the consuming client, call the <xref:Orleans.Hosting.ClientBuilderExtensions.UseLocalhostClustering%2A> extension method. Consider this example _Program.cs_ file of the client host:
 
 ```csharp
 using Microsoft.Extensions.Hosting;
@@ -136,7 +136,7 @@ The preceding code:
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-For local development, please refer to the below example of how to configure a client for that case. It configures a client that would connect to a `loopback` silo.
+For local development, refer to the below example of how to configure a client for that case. It configures a client that would connect to a `loopback` silo.
 
 Add the `Microsoft.Orleans.Client` NuGet meta-package to the project. After you get comfortable with the API, you can pick and choose which exact packages included in `Microsoft.Orleans.Client` you actually need and reference them instead.
 
@@ -152,7 +152,7 @@ After these steps are completed, we can build the client and `Connect()` method 
 
 You can create an empty console application project targeting .NET Framework 4.6.1 or higher for running a client or reuse the console application project you created for hosting a silo.
 
-Here is an example of how a client can connect to a local silo:
+Here's an example of how a client can connect to a local silo:
 
 ```csharp
 var client = new ClientBuilder()

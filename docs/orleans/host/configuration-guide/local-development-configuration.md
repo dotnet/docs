@@ -52,7 +52,7 @@ Add the `Microsoft.Orleans.Server` NuGet meta-package to the project. After you 
 Install-Package Microsoft.Orleans.Server
 ```
 
-You need to configure <xref:Orleans.Configuration.ClusterOptions> via <xref:Orleans.Hosting.ISiloBuilder> `Configure` method, specify that you want `DevelopmentClustering` as your clustering choice with this silo being the primary, and then configure silo endpoints.
+You need to configure <xref:Orleans.Configuration.ClusterOptions> via <xref:Orleans.Hosting.ISiloBuilder> `Configure` method, specify that you want `LocalhostClustering` as your clustering choice with this silo being the primary, and then configure silo endpoints.
 
 The <xref:Orleans.Hosting.SiloHostBuilderExtensions.ConfigureApplicationParts%2A> call explicitly adds the assembly with grain classes to the application setup. It also adds any referenced assembly due to the <xref:Orleans.ApplicationPartManagerExtensions.WithReferences%2A> extension. After these steps are completed, the silo host gets built and the silo gets started.
 

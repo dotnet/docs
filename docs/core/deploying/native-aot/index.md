@@ -82,7 +82,7 @@ Set the `StripSymbols` property to `true` to produce the debug information in a 
 
 ### [.NET 8+](#tab/net8plus)
 
-By default, native AOT publishing produces debug information in a separate *.pdb* file on both Windows and Linux. On Linux only, you can set the `StripSymbols` property to `false` to include the debug information in the native binary. (Including the debug information makes the native binary significantly larger.)
+By default, native AOT publishing produces debug information in a separate file on all supported platforms (*.dbg* on Linux, *.pdb* on Windows, and *.dwarf* on macOS). This file is necessary for running the app under the debugger or inspecting crash dumps. On Unix-like platforms, you can set the `StripSymbols` property to `false` to include the debug information in the native binary. (Including the debug information makes the native binary significantly larger.)
 
 ```xml
 <PropertyGroup>

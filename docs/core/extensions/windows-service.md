@@ -3,8 +3,9 @@ title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 05/08/2023
 ms.topic: tutorial
+zone_pivot_groups: dotnet-version-6-7
 ---
 
 # Create Windows Service using `BackgroundService`
@@ -28,10 +29,22 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+:::zone target="docs" pivot="dotnet-7-0"
+
+- The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 - A Windows OS
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/6.0)
+- A Windows OS
+- A .NET integrated development environment (IDE)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
+
+:::zone-end
 
 <!-- ## Create a new project -->
 [!INCLUDE [file-new-worker](includes/file-new-worker.md)]

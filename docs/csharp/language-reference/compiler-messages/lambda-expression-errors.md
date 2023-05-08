@@ -172,7 +172,7 @@ Many legal lambda expressions can't be converted into the data structures suppor
 - **CS0834** - *A lambda expression must have an expression body to be converted to an expression tree.*
 - **CS0835** - *Cannot convert lambda to an expression tree whose type argument 'type' is not a delegate type.*
 - **CS1951** - *An expression tree lambda may not contain an `in`, `out`, or `ref` parameter.*
-- **CS1952** - **An expression tree lambda may not contain a method with variable arguments.**
+- **CS1952** - *An expression tree lambda may not contain a method with variable arguments.*
 - **CS1989** - *Async lambda expressions cannot be converted to expression trees.*
 - **CS2037** - *An expression tree lambda may not contain a COM call with `ref` omitted on arguments.*
 - **CS8072** - *An expression tree lambda may not contain a null propagating operator.*

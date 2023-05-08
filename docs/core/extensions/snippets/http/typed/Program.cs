@@ -10,7 +10,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         services.AddHttpClient<TodoService>(
             client =>
             {
-                // Set the base address of the named client.
+                // Set the base address of the typed client.
                 client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
 
                 // Add a user-agent default request header.

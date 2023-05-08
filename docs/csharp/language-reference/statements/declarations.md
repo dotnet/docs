@@ -1,6 +1,6 @@
 ---
-title: "Declaration statements - var, ref local variables, and ref fields"
-description: "Declarations introduce a new variable. These statements include `var`, `ref` locals, and `ref` fields. In addition to declaring a new variable, these statements can initialize that variable's value."
+title: "Declaration statements - local variables and constants, var, ref local variables"
+description: "Declaration statements introduce a new local variable, local constant, or ref local variable. Local variables can be explicitly or implicitly typed. A declaration statement can also include initialization of a variable's value."
 ms.date: 01/30/2023
 f1_keywords: 
   - "var"
@@ -10,7 +10,23 @@ helpviewer_keywords:
 ---
 # Declaration statements
 
-A *declaration statement* declares a new variable, and optionally, initializes it. All variables have declared type. You can learn more about types in the article on the [.NET type system](../../../standard/base-types/common-type-system.md). Typically, a declaration includes a type and a variable name. It can also include an initialization: the `=` operator followed by an expression. The type may be replaced with `var`. The declaration or the expression may include the `ref` modifier to declare that the new variable refers to an existing storage location.
+A declaration statement declares a new local variable, local constant, or [ref local variable](#ref-locals). To declare a local variable, specify its type and provide its name. You can declare multiple variables of the same type in one statement, as the following example shows:
+
+:::code language="csharp" source="snippets/declarations/Declaration.cs" id="Declare":::
+
+In a declaration statement, you can also initialize a variable with its initial value:
+
+:::code language="csharp" source="snippets/declarations/Declaration.cs" id="DeclareAndInit":::
+
+The preceding examples explicitly specify the type of a variable. You can also let the compiler infer the type of a variable from its initialization expression. To do that, use the `var` keyword instead of a type's name. For more information, see the [Implicitly-typed local variables](#implicitly-typed-local-variables) section.
+
+To declare a local constant, use the [`const` keyword](../keywords/const.md), as the following example shows:
+
+:::code language="csharp" source="snippets/declarations/Declaration.cs" id="LocalConstant":::
+
+When you declare a local constant, you must also initialize it.
+
+For information about ref local variables, see the [Ref locals](#ref-locals) section.
 
 ## Implicitly typed local variables
 
@@ -118,11 +134,16 @@ You can apply `scoped` to a parameter or local variable. The `scoped` modifier m
 
 The `scoped` modifier is implicitly added to `this` in methods declared in a `struct`, `out` parameters, and `ref` parameters when the type is a `ref struct`.
 
+## C# language specification
+
+For more information, see the [Declaration statements](~/_csharpstandard/standard/statements.md#136-declaration-statements) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+
+For more information about the `scoped` modifier, see the [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) proposal note.
+
 ## See also
 
-- [ref keyword](../keywords/ref.md)
-- [Avoid allocations](../../advanced-topics/performance/index.md)
-- ['var' preferences (style rules IDE0007 and IDE0008)](../../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md)
 - [C# reference](../index.md)
-- [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)
-- [C# 11 - scoped modifier](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md)
+- [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [ref keyword](../keywords/ref.md)
+- [Reduce memory allocations using new C# features](../../advanced-topics/performance/index.md)
+- ['var' preferences (style rules IDE0007 and IDE0008)](../../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md)

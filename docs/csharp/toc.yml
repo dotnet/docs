@@ -1122,7 +1122,7 @@ items:
   - name: Statements
     items:
     - name: Declaration statements
-      displayName: var, ref
+      displayName: var, ref, const
       href: language-reference/statements/declarations.md
     - name: Exception-handling statements
       displayName: throw, try, catch, finally, when, error, fault

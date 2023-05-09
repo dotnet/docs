@@ -36,7 +36,16 @@ Many terms are mistakenly used synonymously. In this section, there are definiti
 
 The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](../tools/dotnet-new-sdk-templates.md#web-others). The template consists of a `Program` and `Worker` class.
 
-:::code language="csharp" source="snippets/workers/background-service/Program.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="csharp" source="snippets/workers/7.0/background-service/Program.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="csharp" source="snippets/workers/6.0/background-service/Program.cs":::
+
+:::zone-end
 
 The preceding `Program` class:
 
@@ -58,7 +67,16 @@ The preceding `Program` class:
 
 As for the `Worker`, the template provides a simple implementation.
 
-:::code language="csharp" source="snippets/workers/background-service/Worker.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="csharp" source="snippets/workers/7.0/background-service/Worker.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="csharp" source="snippets/workers/6.0/background-service/Worker.cs":::
+
+:::zone-end
 
 The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>, which implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.BackgroundService> is an `abstract class` and requires the subclass to implement <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. In the template implementation the `ExecuteAsync` loops once per second, logging the current date and time until the process is signaled to cancel.
 

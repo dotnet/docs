@@ -3,7 +3,7 @@ title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/08/2023
+ms.date: 05/09/2023
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-6-7
 ---
@@ -63,13 +63,31 @@ For more information on the .NET CLI add package command, see [dotnet add packag
 
 After successfully adding the packages, your project file should now contain the following package references:
 
-:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="14-17" highlight="2-3":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="xml" source="snippets/workers/7.0/windows-service/App.WindowsService.csproj" range="14-17" highlight="2-3":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="xml" source="snippets/workers/6.0/windows-service/App.WindowsService.csproj" range="14-17" highlight="2-3":::
+
+:::zone-end
 
 ## Update project file
 
 This worker project makes use of C#'s [nullable reference types](../../csharp/nullable-references.md). To enable them for the entire project, update the project file accordingly:
 
-:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="1-7,12-20" highlight="5":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="xml" source="snippets/workers/7.0/windows-service/App.WindowsService.csproj" range="1-7,12-20" highlight="5":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="xml" source="snippets/workers/6.0/windows-service/App.WindowsService.csproj" range="1-7,12-20" highlight="5":::
+
+:::zone-end
 
 The preceding project file changes add the `<Nullable>enable<Nullable>` node. For more information, see [Setting the nullable context](../../csharp/language-reference/builtin-types/nullable-reference-types.md#setting-the-nullable-context).
 
@@ -77,7 +95,16 @@ The preceding project file changes add the `<Nullable>enable<Nullable>` node. Fo
 
 Add a new class to the project named *JokeService.cs*, and replace its contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/JokeService.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/windows-service/JokeService.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/windows-service/JokeService.cs":::
+
+:::zone-end
 
 The preceding joke service source code exposes a single piece of functionality, the `GetJoke` method. This is a `string` returning method that represents a random programming joke. The class-scoped `_jokes` field is used to store the list of jokes. A random joke is selected from the list and returned.
 
@@ -85,7 +112,16 @@ The preceding joke service source code exposes a single piece of functionality, 
 
 Replace the existing `Worker` from the template with the following C# code, and rename the file to *WindowsBackgroundService.cs*:
 
-:::code source="snippets/workers/windows-service/WindowsBackgroundService.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/windows-service/WindowsBackgroundService.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/windows-service/WindowsBackgroundService.cs":::
+
+:::zone-end
 
 In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as `private readonly` fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLogger?displayProperty=nameWithType>. Logs are written to, and available for viewing in the **Event Viewer**.
 
@@ -116,9 +152,20 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/Program.cs" highlight="6-9,14-15":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/windows-service/Program.cs" highlight="6-9,14-15":::
 
 The `AddWindowsService` extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/windows-service/Program.cs" highlight="6-9,15-16":::
+
+The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
+
+:::zone-end
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
@@ -133,7 +180,16 @@ To create the .NET Worker Service app as a Windows Service, it's recommended tha
 > sc.exe create ".NET Joke Service" binpath="C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"
 > ```
 
-:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" highlight="8-11":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="xml" source="snippets/workers/7.0/windows-service/App.WindowsService.csproj" highlight="8-11":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="xml" source="snippets/workers/6.0/windows-service/App.WindowsService.csproj" highlight="8-11":::
+
+:::zone-end
 
 The preceding highlighted lines of the project file define the following behaviors:
 
@@ -246,7 +302,7 @@ You will see the configured restart values.
 
 #### Service recovery options and .NET `BackgroundService` instances
 
-With .NET 6, [new hosting exception handling behaviors](../compatibility/core-libraries/6.0/hosting-exception-handling.md) have been added to .NET. The <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior> enum was added to the `Microsoft.Extensions.Hosting` namespace, and is used to specify the behavior of the service when an exception is thrown. The following table lists the available options:
+With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-libraries/6.0/hosting-exception-handling.md) have been added to .NET. The <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior> enum was added to the `Microsoft.Extensions.Hosting` namespace, and is used to specify the behavior of the service when an exception is thrown. The following table lists the available options:
 
 | Option     | Description                                                        |
 |------------|--------------------------------------------------------------------|
@@ -255,7 +311,16 @@ With .NET 6, [new hosting exception handling behaviors](../compatibility/core-li
 
 The default behavior before .NET 6 is `Ignore`, which resulted in _zombie processes_ (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
-:::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
+
+:::zone-end
 
 ## Verify service functionality
 
@@ -328,7 +393,7 @@ SERVICE_NAME: .NET Joke Service
     WAIT_HINT          : 0x0
 ```
 
-The service **Status** will transition out of `STOP_PENDING` to **Stopped**.
+The service **Status** will transition from `STOP_PENDING` to **Stopped**.
 
 ## Delete the Windows Service
 

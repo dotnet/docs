@@ -3,8 +3,9 @@ title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 05/09/2023
 ms.topic: overview
+zone_pivot_groups: dotnet-version-6-7
 ---
 
 # Worker Services in .NET
@@ -79,7 +80,9 @@ An app based on the Worker template uses the `Microsoft.NET.Sdk.Worker` SDK and 
 
 With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/workers/background-service/Dockerfile":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="dockerfile" source="snippets/workers/7.0/background-service/Dockerfile":::
 
 The preceding *Dockerfile* steps include:
 
@@ -93,12 +96,40 @@ The preceding *Dockerfile* steps include:
 - Copying the published build output from the */publish*.
 - Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="dockerfile" source="snippets/workers/6.0/background-service/Dockerfile":::
+
+The preceding *Dockerfile* steps include:
+
+- Setting the base image from `mcr.microsoft.com/dotnet/runtime:6.0` as the alias `base`.
+- Changing the working directory to */app*.
+- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:6.0` image.
+- Changing the working directory to */src*.
+- Copying the contents and publishing the .NET app:
+  - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:6.0` (the `base` alias).
+- Copying the published build output from the */publish*.
+- Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
+
+:::zone-end
+
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
 When targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
-:::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="8,13":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="xml" source="snippets/workers/7.0/background-service/App.WorkerService.csproj" highlight="8,13":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="xml" source="snippets/workers/6.0/background-service/App.WorkerService.csproj" highlight="8,13":::
+
+:::zone-end
 
 In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `Linux` as its target. To target Windows containers, use `Windows` instead. The [`Microsoft.VisualStudio.Azure.Containers.Tools.Targets` NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets) is automatically added as a package reference when **Docker support** is selected from the template.
 
@@ -126,7 +157,16 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 In most common scenarios, you do not need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To achieve this, consider the following `Worker` class:
 
-:::code source="snippets/workers/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+
+:::zone-end
 
 In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
 

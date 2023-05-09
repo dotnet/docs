@@ -139,10 +139,6 @@ The following APIs are obsolete, starting in .NET 8. Calling them in code genera
 
   If your serialization library must remain compatible with the legacy serialization infrastructure, you can easily [suppress](#suppress-a-warning) the legacy serialization API obsoletions.
 
-<PropertyGroup>
-  <NoWarn>$(NoWarn);SYSLIB0050</NoWarn>
-</PropertyGroup>
-
 ## Suppress a warning
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.

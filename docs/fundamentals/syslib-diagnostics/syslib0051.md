@@ -83,10 +83,10 @@ The complete list of affected APIs is:
 - <xref:System.Data.SyntaxErrorException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Data.TypedTableBase%601.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Data.VersionNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Data.DbException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Data.SqlTypeException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Data.Common.DbException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Data.Common.SqlTypeException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Data.Odbc.OdbcException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Data.Odbc.OleDbException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Diagnostics.Eventing.Reader.EventLogException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Diagnostics.Eventing.Reader.EventLogException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
@@ -124,10 +124,10 @@ The complete list of affected APIs is:
 - <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Formats.Asn1.AsnContentException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Formats.Asn1.CborContentException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Formats.Cbor.CborContentException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.DriveNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.InternalBufferOverflowException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.IO.IsolatedStorageException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.IO.IsolatedStorage.IsolatedStorageException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.FileFormatException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.FileFormatException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Management.ManagementBaseObject.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
@@ -197,9 +197,6 @@ The complete list of affected APIs is:
 - <xref:System.MissingMemberException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.MissingMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.MissingMethodException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.MissingMethodException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.NonFiniteNumberException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.NonFiniteNumberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.NotImplementedException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.NotSupportedException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.NullReferenceException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
@@ -226,11 +223,9 @@ The complete list of affected APIs is:
 - <xref:System.WeakReference.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.WeakReference.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Collections.Comparer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.HashTable.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Collections.Generic.HashTable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Collections.Generic.KeyNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.IO.CultureNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.IO.CultureNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Globalization.CultureNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Globalization.CultureNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.DirectoryNotFoundException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.EndOfStreamException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.IO.FileLoadException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
@@ -299,22 +294,22 @@ The complete list of affected APIs is:
 - <xref:System.Media.SoundPlayer.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.XmlException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.XmlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XmlSchemaException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XmlSchemaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XmlSchemaInferenceException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XmlSchemaInferenceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XmlSchemaValidationException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XmlSchemaValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XsltCompileException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XsltCompileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XsltException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
-- <xref:System.Xml.XsltException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Schema.XmlSchemaException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Schema.XmlSchemaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Schema.XmlSchemaInferenceException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Schema.XmlSchemaInferenceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Schema.XmlSchemaValidationException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Schema.XmlSchemaValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Xsl.XsltCompileException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Xsl.XsltCompileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Xsl.XsltException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+- <xref:System.Xml.Xsl.XsltException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.XPath.XPathException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.XPath.XPathException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 
 ## Workaround
 
-If you've declared a type that subclasses a .NET type that's attributed with `[Serializable]` and you're getting `SYSLIB0051` warnings, follow the [guidance for custom exception types for SYSLIB0050](syslib0050.md#custom-exceptions).
+If you've declared a type that subclasses a .NET type that's attributed with `[Serializable]` and you're getting `SYSLIB0051` warnings, follow the [guidance for custom exception types for SYSLIB0050](syslib0050.md#custom-exception).
 
 > [!TIP]
 > If your `[Serializable]` custom type doesn't subclass a .NET type, you won't see `SYSLIB0051` warnings. However, we recommend against annotating your type in this manner, as modern serialization libraries like `System.Text.Json` don't require them. Consider removing the `[Serializable]` attribute and the `ISerializable` interface. Instead, rely on your serialization library to access objects of the type through its public properties rather than its private fields.

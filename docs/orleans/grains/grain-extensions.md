@@ -27,7 +27,7 @@ public interface IGrainDeactivateExtension : IGrainExtension
 
 ### Deactivate extension implementation
 
-Next, you implement the `GrainDeactivateExtension` class, which provides the implementation for the `Deactivate` method.
+Next, implement the `GrainDeactivateExtension` class, which provides the implementation for the `Deactivate` method.
 
 To access the target grain, you retrieve the `IGrainContextAccessor` from the constructor. It's injected when creating the extension with dependency injection.
 

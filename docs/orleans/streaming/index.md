@@ -74,6 +74,7 @@ Orleans provides several stream provider implementations:
 :::zone target="docs" pivot="orleans-3-x"
 
 Orleans currently includes several provider implementations:
+
 * **Simple Message** (SMS), which uses direct grain calls and no backing storage system,
 * **Azure Queues**, which uses Azure Storage Queues to store messages, and
 * **Azure EventHubs**, which uses Azure EventHubs

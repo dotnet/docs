@@ -128,8 +128,7 @@ public override Task OnActivateAsync()
         setter: value => this.Value = value);
 
     // Set the extension as a component of the target grain's context
-    var context = _contextAccessor.GrainContext;
-    context.SetComponent<IGrainStateAccessor<int>>(accessor);
+    ((IGrainBase)this).GrainContext.SetComponent<IGrainStateAccessor<int>>(accessor);
 
     return base.OnActivateAsync();
 }

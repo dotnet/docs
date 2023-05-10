@@ -46,10 +46,10 @@ The preceding code:
 
 For local development, refer to the below example of how to configure a silo for that case. It configures and starts a silo listening on the `loopback` address, `11111` and `30000` as silo and gateway ports respectively.
 
-Add the `Microsoft.Orleans.Server` NuGet meta-package to the project. After you get comfortable with the API, you can pick and choose which exact packages you need from the `Microsoft.Orleans.Server`, and reference them instead.
+Add the `Microsoft.Orleans.Server` NuGet meta-package to the project.
 
-```powershell
-Install-Package Microsoft.Orleans.Server
+```dotnetcli    
+dotnet add package Microsoft.Orleans.Server
 ```
 
 You need to configure <xref:Orleans.Configuration.ClusterOptions> via <xref:Orleans.Hosting.ISiloBuilder> `Configure` method, specify that you want `LocalhostClustering` as your clustering choice with this silo being the primary, and then configure silo endpoints.

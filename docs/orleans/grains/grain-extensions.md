@@ -12,7 +12,7 @@ In this article, you see two examples of grain extensions. The first example sho
 
 ## Deactivate extension example
 
-In this example, you learn how to add a `Deactivate` method to all grains automatically. The method can be used to deactivate the grain and accepts a string as a message parameter.
+In this example, you will learn how to add a `Deactivate` method to all grains automatically. The method can be used to deactivate the grain and accepts a string as a message parameter.
 
 ### Deactivate extension interface
 

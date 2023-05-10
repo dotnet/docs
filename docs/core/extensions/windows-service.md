@@ -313,21 +313,21 @@ You will see the configured restart values.
 
 With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-libraries/6.0/hosting-exception-handling.md) have been added to .NET. The <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior> enum was added to the `Microsoft.Extensions.Hosting` namespace, and is used to specify the behavior of the service when an exception is thrown. The following table lists the available options:
 
-| Option     | Description                                                        |
-|------------|--------------------------------------------------------------------|
-| `Ignore`   | Ignore exceptions thrown in `BackgroundService`.                   |
-| `StopHost` | The `IHost` will be stopped when an unhandled exception is thrown. |
+| Option | Description |
+|--|--|
+| <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.Ignore> | Ignore exceptions thrown in `BackgroundService`. |
+| <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.StopHost> | The `IHost` will be stopped when an unhandled exception is thrown. |
 
 The default behavior before .NET 6 is `Ignore`, which resulted in _zombie processes_ (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
 :::zone target="docs" pivot="dotnet-7-0"
 
-:::code source="snippets/workers/7.0/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
+:::code source="snippets/workers/7.0/windows-service/WindowsBackgroundService.cs" highlight="30-43":::
 
 :::zone-end
 :::zone target="docs" pivot="dotnet-6-0"
 
-:::code source="snippets/workers/6.0/windows-service/WindowsBackgroundService.cs" highlight="25-38":::
+:::code source="snippets/workers/6.0/windows-service/WindowsBackgroundService.cs" highlight="30-43":::
 
 :::zone-end
 

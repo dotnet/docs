@@ -14,7 +14,7 @@ In this chapter, we'll show how to migrate your applications to the latest versi
 
 Updating your applications to target the latest version of .NET is easy if you already are on .NET Core or .NET 5. If this is the case, then in Visual Studio, simply right click on your project in **Solution Explorer** and choose **Properties**. Under **Application** > **General** > **Target framework**, choose .NET 7.0. Save and rebuild your application. You are done! Your app now runs on the latest version of .NET. In the future when new versions become available, you can upgrade in the same way.
 
-![Migrating to .NET 6.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
+![Migrating to .NET 7.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
 
 ## Migrating from .NET Framework
 

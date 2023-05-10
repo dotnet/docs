@@ -10,7 +10,7 @@ ms.date: 05/12/2020
 
 When you develop desktop applications, one thing to consider is how your application is going to be packaged and deployed to the users' machines. The problem with packaging, deployment, and installation is that it usually falls under the umbrella of the IT professionals, who care about different things than developers.
 
-These days, we're all familiar with the DevOps concept, where developers and IT Pros work closely to move applications to their production environments. But if you've been in the desktop battle for more than 10 years, you might have seen the following story. A team of developers works together hard to meet the project deadlines. Business people are nervous since they need the system working on many user's machines to run the company. On "D-Day", the project manager checks with every developer that their code is working well and that everything is fine, so they can ship. Then, the package team comes in generating the setup for the app, distribute it to every user machine and a set of test users run the application. Well, they try, because before showing any UI, the application throws an exception that says "Method ~ of object ~ failed". Panic starts flowing through the air and a brief investigation points to a young and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
+These days, we're all familiar with the DevOps concept, where developers and IT Pros work closely to move applications to their production environments. But if you've been in the desktop battle for more than 10 years, you might have seen the following story. A team of developers works together hard to meet the project deadlines. Business people are nervous since they need the system working on many users' machines to run the company. On "D-Day", the project manager checks with every developer that their code is working well and that everything is fine, so they can ship. Then, the package team comes in generating the setup for the app, distribute it to every user machine and a set of test users run the application. Well, they try, because before showing any UI, the application throws an exception that says "Method ~ of object ~ failed". Panic starts flowing through the air and a brief investigation points to a young and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
 
 Installing desktop applications have traditionally been a nightmare for two main reasons:
 
@@ -22,9 +22,9 @@ In fact, we've been living with the fact that sometimes you regret that you inst
 - It ends up having some undesired side effects on your machine.
 - Some applications that were previously installed stop working.
 
-Additionally, you can't just restore the system to its original state by uninstalling the app. We're so used to live this situation that we've coined terms like "DLL Hell" or "Winrot".
+Additionally, you can't just restore the system to its original state by uninstalling the app. We're so used to living with this situation that we've coined terms like "DLL Hell" or "Winrot".
 
-In this chapter, we'll talk about MSIX. MSIX is the brand-new technology from Microsoft that tries to capture the best of previous technologies to provide a solid foundation for the packaging technology of the future.
+In this chapter, we'll talk about MSIX. MSIX is the new technology from Microsoft that tries to capture the best of previous technologies to provide a solid foundation for the packaging technology of the future.
 
 What does a packaging technology have to do with modernization? Well, it turns out that packaging is fundamental for the enterprise IT with lots of money invested there. Modernization isn't only related to using the latest technologies. It's also related to reducing time to market from the moment a business requirement is defined until your company delivers the feature to your client.
 
@@ -91,7 +91,7 @@ With the optional packages feature, you achieve componentization on your app dep
 
 #### Simple packaging and deployment
 
-The AppManifest declares the versioning, device targeting and identify in a standard way for every application. It also provides a way to sign your assets providing a solid security foundation.
+The AppManifest declares the versioning, device targeting and identity in a standard way for every application. It also provides a way to sign your assets providing a solid security foundation.
 
 #### OS managed
 
@@ -126,7 +126,7 @@ The Package Support Framework is an open-source kit that helps you apply fixes t
 
 #### App Installer
 
-App Installer allows Windows 10 apps to be installed by double-clicking the app package. This means that users don't need to use PowerShell or other developer tools to deploy Windows 10 apps. The App Installer can also install an app from the web, optional packages, and related sets.
+App Installer allows Windows 10 and Windows 11 apps to be installed by double-clicking the app package. This means that users don't need to use PowerShell or other developer tools to deploy Windows 10/Windows 11 apps. The App Installer can also install an app from the web, optional packages, and related sets.
 
 ## How to create an MSIX package from an existing Win32 desktop application
 
@@ -168,7 +168,7 @@ Set the packaging project as the startup project for the solution and select *Ru
 
 ![Our installed application](./media/deploy-modern-applications/our-installed-application.png)
 
-With this, you have the clean install and uninstall experience that MSIX provides fully integrated into Windows 10.
+With this, you have the clean install and uninstall experience that MSIX provides fully integrated into Windows 10/Windows 11.
 
 The final stage is about how you deploy the MSIX package to another machine.
 
@@ -184,7 +184,7 @@ The final step is to declare where you want to deploy the final installation ass
 
 ![Configure Update Settings](./media/deploy-modern-applications/configure-update-settings.png)
 
-You can choose to use a web server of a shared UNC path on your enterprise file servers. Pay attention to the settings to specify how you want to update your application. We'll cover application updates in the next section.
+You can choose to use a web server or a shared UNC path on your enterprise file servers. Pay attention to the settings to specify how you want to update your application. We'll cover application updates in the next section.
 
 For a detailed step-by-step guide, see [Package a desktop app from source code using Visual Studio](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
@@ -192,15 +192,15 @@ For a detailed step-by-step guide, see [Package a desktop app from source code u
 
 The Windows Store has a great updating mechanism using Windows Update. In most enterprise scenarios, you don't use the Store to distribute your desktop apps. So, you need a similar way to configure updates for your application and pull them to your users.
 
-Using a combination of Windows 10 features and MSIX packages, you can provide a great updating experience for your users. In fact, the user doesn't need to be technical at all but still benefit from a seamless application update experience.
+Using a combination of Windows 10/Windows 11 features and MSIX packages, you can provide a great updating experience for your users. In fact, the user doesn't need to be technical at all but still benefits from a seamless application update experience.
 
 You can configure your updates to interact with the user in two different ways:
 
-- User prompted updates: The OS shows some autogenerated nice UI to notify the user about the application is about to install. It builds this UI based on the properties you specify on your installation files.
+- User prompted updates: The OS shows some autogenerated nice UI to notify the user about the application it is about to install. It builds this UI based on the properties you specify on your installation files.
 
 - Silent updates in the background. With this option, your users don't need to be aware of the updates.
 
-You can also configure when you want to perform updates, when the application launches or on a regular basis. Thanks to the side-loading features, you can even get these updates while the application is running.
+You can also configure when you want to perform updates: either when the application launches or on a regular basis. Thanks to the side-loading features, you can even get these updates while the application is running.
 
 When you use this type of deployment, a special file is created called *.appinstaller*. This simple file contains the following sections:
 
@@ -216,7 +216,7 @@ In combination with this file, Microsoft has designed a special URL protocol to 
 <a href="ms-appinstaller:?source=http://mywebservice.azureedge.net/MyApp.msix">Install app package </a>
 ```
 
-This protocol works on all browsers and launches the installation process with a great user experience on Windows 10. Since the OS manages the installation process, it's aware of the location this application was installed from and tracks all the files affected by the process.
+This protocol works on all browsers and launches the installation process with a great user experience on Windows 10/Windows 11. Since the OS manages the installation process, it's aware of the location this application was installed from and tracks all the files affected by the process.
 
 MSIX creates a user interface for installation automatically showing some properties of the package. This allows for a common installation experience for every app.
 

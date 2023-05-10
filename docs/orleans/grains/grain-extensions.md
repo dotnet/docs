@@ -29,22 +29,22 @@ public interface IGrainDeactivateExtension : IGrainExtension
 
 Next, implement the `GrainDeactivateExtension` class, which provides the implementation for the `Deactivate` method.
 
-To access the target grain, you retrieve the `IGrainContextAccessor` from the constructor. It's injected when creating the extension with dependency injection.
+To access the target grain, you retrieve the `IGrainContext` from the constructor. It's injected when creating the extension with dependency injection.
 
 ```csharp
 public sealed class GrainDeactivateExtension : IGrainDeactivateExtension
 {
-    private IGrainContextAccessor _contextAccessor;
+    private IGrainContext _context;
 
-    public GrainDeactivateExtension(IGrainContextAccessor contextAccessor)
+    public GrainDeactivateExtension(IGrainContext context)
     {
-        _contextAccessor = contextAccessor;
+        _context = context;
     }
 
     public async Task Deactivate(string msg)
     {
         var reason = new DeactivationReason(DeactivationReasonCode.ApplicationRequested, msg);
-        await _contextAccessor.GrainContext.DeactivateAsync(reason);
+        await _context.DeactivateAsync(reason);
     }
 }
 ```

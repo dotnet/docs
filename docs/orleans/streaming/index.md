@@ -73,7 +73,10 @@ Orleans provides several stream provider implementations:
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 
-Orleans currently has implementations of two-stream providers: TCP-based **Simple Message Stream Provider** and Azure Queue-based **Azure Queue Stream Provider**.
+Orleans currently includes several provider implementations:
+* **Simple Message** (SMS), which uses direct grain calls and no backing storage system,
+* **Azure Queues**, which uses Azure Storage Queues to store messages, and
+* **Azure EventHubs**, which uses Azure EventHubs
 
 <!-- markdownlint-enable MD044 -->
 :::zone-end
@@ -88,7 +91,7 @@ Orleans Streams guarantee _Sequential Consistency_ for Stream Subscription opera
 
 **Individual Stream Events Delivery Guarantees**:
 
-Individual event delivery guarantees depend on individual stream providers. Some provide only best-effort at-most-once delivery (such as Simple Message Streams (SMS) in versions of Orleans before 7.0), while others provide at-least-once delivery (such as Azure Queue Streams). It is even possible to build a streaming provider that will guarantee exactly-once delivery.
+Individual event delivery guarantees depend on individual stream providers. Some provide only best-effort at-most-once delivery (such as Simple Message Streams (SMS) in versions of Orleans before 7.0, thereafter known as [Broadcast Channel](broadcast-channel.md)), while others provide at-least-once delivery (such as Azure Queue Streams). It is even possible to build a streaming provider that will guarantee exactly-once delivery.
 
 **Events Delivery Order**:
 

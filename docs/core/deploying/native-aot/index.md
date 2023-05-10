@@ -38,7 +38,7 @@ On Linux, install the compiler toolchain and developer packages for libraries th
   sudo apk add clang build-base zlib-dev
   ```
 
-<!--Add info for macOS-->
+On macOS, install latest [Command Line Tools for XCode](https://developer.apple.com/xcode/download/).
 
 ## Publish native AOT using the CLI
 

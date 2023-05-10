@@ -206,7 +206,16 @@ Right-click on the project in the **Solution Explorer**, and select **Publish...
 
 Leave the default **Location**, and then select **Finish**. Once the profile is created, select **Show all settings**, and verify your **Profile settings**.
 
-:::image type="content" source="media/profile-settings.png" lightbox="media/profile-settings.png" alt-text="The Visual Studio Profile settings":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::image type="content" source="media/profile-settings-7.0.png" lightbox="media/profile-settings-7.0.png" alt-text="The Visual Studio Profile settings":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::image type="content" source="media/profile-settings-6.0.png" lightbox="media/profile-settings-6.0.png" alt-text="The Visual Studio Profile settings":::
+
+:::zone-end
 
 Ensure that the following settings are specified:
 

@@ -5,11 +5,11 @@ ms.date: 05/01/2023
 ---
 # BinaryFormatter disabled across most project types
 
-The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> methods now through a <xref:System.NotSupportedException> at run time across nearly all project types, including console applications.
+The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType> methods now through a <xref:System.NotSupportedException> at run time across nearly all project types, including console applications.
 
 ## Previous behavior
 
-In .NET 7, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> methods were marked obsolete and raised an error at compile time. However, if your application suppressed the obsoletion, it could still call the methods and they functioned properly in most project types (excluding ASP.NET, WASM, and MAUI). For example, the APIs functioned correctly in a console app.
+In .NET 7, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType> methods were marked obsolete and raised an error at compile time. However, if your application suppressed the obsoletion, it could still call the methods and they functioned properly in most project types (excluding ASP.NET, WASM, and MAUI). For example, the APIs functioned correctly in a console app.
 
 ## New behavior
 
